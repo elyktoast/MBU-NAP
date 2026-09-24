@@ -26,4 +26,4 @@ function doSearch(){let x=document.getElementById('searchbox').value.trim().toLo
 function reportCurrent(){let q=session[pos],reason=prompt('Report reason: wrong answer, ambiguous, typo, explanation issue, source issue, or other');if(!reason)return;DB.reports.push({uid:q.uid,bank:q.bank,stem:q.stem,reason,date:new Date().toISOString()});save();alert('Report saved on this device.')}
 function showReports(){show('reports');document.getElementById('reportlist').innerHTML=DB.reports.map((r,i)=>`<div class="reportrow"><b>Bank ${r.bank}</b> · ${esc(r.reason)}<div>${esc(r.stem)}</div><button class="btn bad" onclick="DB.reports.splice(${i},1);save();showReports()">Delete</button></div>`).join('')||'<div class="mut">No reports saved.</div>'}
 loadBanks();
-</script><script src="../assets/calculator.js?v=3"></script><script>/* MBU_BUILD:2026-09-24-study-studio-v2 */</script><script src="../assets/auto-update.js?v=3"></script></body></html>
+</script><script src="../assets/calculator.js?v=4"></script><script>/* MBU_BUILD:2026-09-24-study-studio-v2 */</script><script src="../assets/auto-update.js?v=3"></script></body></html>
