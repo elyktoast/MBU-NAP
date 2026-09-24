@@ -66,7 +66,7 @@ td,th{padding:6px 8px;border-bottom:1px solid var(--rule);text-align:left}
 ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 @media (max-width:600px){ul.concepts{columns:1}}
 </style>
-<!-- MBU_BUILD:2026-09-24-bank-names-v13-ui-v3-navigator-v2 -->
+<!-- MBU_BUILD:2026-09-24-bank3-review-crossouts-v1 -->
 <link rel="stylesheet" href="../assets/site-nav.css?v=2">
 <script defer src="../assets/site-nav.js?v=2" data-page="bank3"></script>
 </head>
@@ -146,7 +146,6 @@ function dash(){clearTimeout(timer);window.MBUCalculator?.hide();V={mode:"dash"}
  if(Object.keys(lec).length){h+=`<div class="card" style="margin-top:16px"><h2 class="t">By lecture, all practice sets</h2><table><tr><th>Lecture</th><th>Answered</th><th>Correct</th><th>%</th></tr>${Object.entries(lec).map(([k,o])=>`<tr><td>${k}</td><td>${o.a}</td><td>${o.c}</td><td>${Math.round(100*o.c/o.a)}%</td></tr>`).join("")}</table>
  <p class="hint">Missed Questions Review draws questions missed in Practice Sets 1–5 and the Challenge Set. Repeated questions count once. A correct review answer clears a question until you miss it again in its original set.</p></div>`}
  $("#main").innerHTML=h;
- const fb=$("#mbuFlagBtn");if(fb)fb.onclick=()=>mbuToggleFlag(q);
  document.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>openExam(+b.dataset.go));
  document.querySelectorAll("[data-rev]").forEach(b=>b.onclick=()=>review(+b.dataset.rev));
  document.querySelectorAll("[data-reset]").forEach(b=>b.onclick=()=>{const n=+b.dataset.reset;if(confirm(`Reset ${NAMES[n]}? This clears its answers, score, and missed list.`)){S.ex[n]=freshExam();save();dash()}});
@@ -167,7 +166,7 @@ function openT6(){V={mode:"t6"};if(S.t6.i>=S.t6.list.length)return t6Summary();r
 function renderQ(){clearTimeout(timer);topbar();const c=ctx();
  if(c.i>=c.list.length){return V.mode==="t6"?t6Summary():examSummary(V.n)}
  const q=byId[c.list[c.i]];const prev=c.store[q.id];cur={sel:prev?prev.sel.slice():[],done:!!prev};
- const xo=(c.exam?c.exam.xo[q.id]:null)||[];
+ const xo=(c.exam?c.exam.xo[q.id]:S.t6.xo&&S.t6.xo[q.id])||[];
  let h=mbuNavigatorHTML(c)+`<div class="card"><div class="qmeta"><span>${c.label}${V.mode==="t6"?` <span class="pill">from ${NAMES[q.setn]}</span>`:""}</span><span style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><button class="ghost" id="mbuFlagBtn" type="button">${mbuIsFlagged(q)?"★ Flagged":"☆ Flag"}</button><button class="ghost" id="mbuReportBtn" type="button">Report</button><button class="ghost" id="mbuNavBtn" type="button">Navigator</button><span>${q.type==="multi"?`Select ${q.n}`:"Select 1"}</span></span></div><p class="stem">${esc(q.q)}</p>`;
  if(q.img)h+=`<div class="fig"><img src="data:image/png;base64,${IMGS[q.img]}" alt="Figure"><small>Click image to enlarge</small></div>`;
  q.c.forEach((t,i)=>{h+=`<div class="ch"><button class="opt${cur.sel.includes(i)?" sel":""}${xo.includes(i)?" x":""}" data-i="${i}"><span class="L">${L[i]}</span><span class="t">${esc(t)}</span></button><button class="xo" data-x="${i}" aria-pressed="${xo.includes(i)}" aria-label="Cross out ${L[i]}" title="Cross out (Shift+${L[i]})">✕</button></div>`});

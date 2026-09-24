@@ -28,8 +28,10 @@ function syncBankData(){
     if(b2&&b2.sets) for(let s=0;s<5;s++){const st=b2.sets[s]||{},qs=ALL.filter(q=>q.bank===2&&q.set===s+1);Object.entries(st.answered||{}).forEach(([i,ok])=>{const q=qs[+i];if(q&&!DB.ans[q.uid])DB.ans[q.uid]={ok:!!ok,at:Date.now(),topic:q.topic,bank:2}})}
   }catch(e){}
   try{
-    const raw=localStorage.getItem('mbu_bank3_progress')||localStorage.getItem('MBU_BANK3_PROGRESS');
-    const b3=raw&&JSON.parse(raw);if(b3&&b3.answered)Object.entries(b3.answered).forEach(([id,ok])=>{const q=ALL.find(x=>x.bank===3&&(String(x.uid)==='b3-'+id||String(x.uid)===id));if(q&&!DB.ans[q.uid])DB.ans[q.uid]={ok:!!ok,at:Date.now(),topic:q.topic,bank:3}})
+    const raw=localStorage.getItem('srna_equipment_dashboard_v1')||localStorage.getItem('mbu_bank3_progress')||localStorage.getItem('MBU_BANK3_PROGRESS');
+    const b3=raw&&JSON.parse(raw),questions=new Map(ALL.filter(q=>q.bank===3).map(q=>[q.uid,q]));
+    if(b3&&b3.ex)Object.values(b3.ex).forEach(exam=>Object.entries(exam.ans||{}).forEach(([id,result])=>{const q=questions.get('b3-'+id);if(q&&!DB.ans[q.uid])DB.ans[q.uid]={ok:!!result.ok,at:Date.now(),topic:q.topic,bank:3}}));
+    else if(b3&&b3.answered)Object.entries(b3.answered).forEach(([id,ok])=>{const q=questions.get('b3-'+id)||questions.get(id);if(q&&!DB.ans[q.uid])DB.ans[q.uid]={ok:!!ok,at:Date.now(),topic:q.topic,bank:3}})
   }catch(e){}
   save();
 }
@@ -50,4 +52,4 @@ function doSearch(){let x=document.getElementById('searchbox').value.trim().toLo
 function reportCurrent(){let hadAuto=!!autoTimer;clearTimeout(autoTimer);autoTimer=null;let q=session[pos],reason=prompt('Report reason: wrong answer, ambiguous, typo, explanation issue, source issue, or other');if(reason){DB.reports.push({uid:q.uid,bank:q.bank,stem:q.stem,reason,date:new Date().toISOString()});saveActive();alert('Report saved on this device.')}if(hadAuto&&graded&&DB.ans[q.uid]&&DB.ans[q.uid].ok)autoTimer=setTimeout(()=>nextQ(),650)}
 function showReports(){show('reports');document.getElementById('reportlist').innerHTML=DB.reports.map((r,i)=>`<div class="reportrow"><b>Bank ${r.bank}</b> · ${esc(r.reason)}<div>${esc(r.stem)}</div><button class="btn bad" onclick="DB.reports.splice(${i},1);save();showReports()">Delete</button></div>`).join('')||'<div class="mut">No reports saved.</div>'}
 loadBanks();
-</script><script src="../assets/calculator.js?v=7"></script><script>/* MBU_BUILD:2026-09-24-studio-bank-watch-v13-images-resume-ui-v2-navigator-v2 */</script><script src="../assets/auto-update.js?v=8"></script></body></html>
+</script><script src="../assets/calculator.js?v=7"></script><script>/* MBU_BUILD:2026-09-24-studio-bank-watch-v13-images-resume-ui-v2-navigator-v2-import-v2 */</script><script src="../assets/auto-update.js?v=8"></script></body></html>
