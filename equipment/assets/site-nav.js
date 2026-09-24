@@ -10,7 +10,10 @@
     {id:'equipment',label:'Equipment',url:equipment},
     {id:'exam',label:'Exam 1 Dashboard',short:'Exam 1',url:exam},
     {id:'studio',label:'Study Studio',short:'Studio',url:new URL('studio.html',exam)},
-    ...[1,2,3].map(n=>({id:'bank'+n,label:'Quiz Bank '+n,short:'Bank '+n,url:new URL('quiz-bank-'+n+'.html',exam)}))
+    ...[1,2,3].map(n=>({id:'bank'+n,label:'Quiz Bank '+n,short:'Bank '+n,url:new URL('quiz-bank-'+n+'.html',exam)})),
+    {id:'haz1',label:'Hazards Practice Set 1',short:'Hazards 1',url:new URL('hazards-100.html',exam)},
+    {id:'haz2',label:'Hazards Practice Set 2',short:'Hazards 2',url:new URL('hazards-bank-2.html',exam)},
+    {id:'haz3',label:'Hazards Practice Set 3',short:'Hazards 3',url:new URL('hazards-bank-3.html',exam)}
   ];
   const render = () => {
     const nav = document.createElement('nav');
