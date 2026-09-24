@@ -8618,4 +8618,9 @@ window.mbuCalcEvaluate=()=>{try{let r=ev(d().value);lastAnswer=r;d().value=Numbe
 document.addEventListener('keydown',e=>{let m=document.getElementById('mbu-calc-modal');if(!m||!m.classList.contains('open'))return;if(e.key==='Escape')mbuCalcClose();if(e.key==='Enter'){e.preventDefault();mbuCalcEvaluate()}});
 document.addEventListener('click',e=>{let m=document.getElementById('mbu-calc-modal');if(e.target===m)mbuCalcClose()})})();
 </script>
+
+<script id="mbu-auto-refresh-script">
+/* MBU_BUILD:2026-09-24-select-limit-autorefresh-v1 */
+(function(){const BUILD="2026-09-24-select-limit-autorefresh-v1";async function check(){try{const u=new URL(location.href);u.searchParams.set("_mbu_update_check",Date.now());const r=await fetch(u.toString(),{cache:"no-store"});if(!r.ok)return;const t=await r.text();const m=t.match(/MBU_BUILD:([^ *<]+)/);if(m&&m[1]!==BUILD){location.reload();}}catch(e){}}setInterval(check,60000);setTimeout(check,8000)})();
+</script>
 </body></html>
