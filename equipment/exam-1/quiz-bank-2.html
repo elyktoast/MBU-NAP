@@ -171,7 +171,7 @@ function choose(i,e){
   if(locked)return;const q=SETS[current().si][current().qi],b=[...document.querySelectorAll(".choice")][i];
   if(e && (e.altKey||e.ctrlKey||e.metaKey)){b.classList.toggle("xout");return}
   if(q.correct.length===1){selected=new Set([i]);document.querySelectorAll(".choice").forEach(x=>x.classList.remove("sel"));b.classList.add("sel");}
-  else{selected.has(i)?selected.delete(i):selected.add(i);b.classList.toggle("sel");}
+  else{if(selected.has(i)){selected.delete(i);b.classList.remove("sel");}else if(selected.size<q.correct.length){selected.add(i);b.classList.add("sel");}}
 }
 function submitAnswer(){
   if(locked){nextQuestion();return}
@@ -239,5 +239,10 @@ const r=Function('F','Math','"use strict";return ('+x+');')(F,Math);if(typeof r!
 window.mbuCalcEvaluate=()=>{try{let r=ev(d().value);lastAnswer=r;d().value=Number.isInteger(r)?String(r):String(Number(r.toPrecision(12)))}catch(e){d().value='Error'}};
 document.addEventListener('keydown',e=>{let m=document.getElementById('mbu-calc-modal');if(!m||!m.classList.contains('open'))return;if(e.key==='Escape')mbuCalcClose();if(e.key==='Enter'){e.preventDefault();mbuCalcEvaluate()}});
 document.addEventListener('click',e=>{let m=document.getElementById('mbu-calc-modal');if(e.target===m)mbuCalcClose()})})();
+</script>
+
+<script id="mbu-auto-refresh-script">
+/* MBU_BUILD:2026-09-24-select-limit-autorefresh-v1 */
+(function(){const BUILD="2026-09-24-select-limit-autorefresh-v1";async function check(){try{const u=new URL(location.href);u.searchParams.set("_mbu_update_check",Date.now());const r=await fetch(u.toString(),{cache:"no-store"});if(!r.ok)return;const t=await r.text();const m=t.match(/MBU_BUILD:([^ *<]+)/);if(m&&m[1]!==BUILD){location.reload();}}catch(e){}}setInterval(check,60000);setTimeout(check,8000)})();
 </script>
 </body></html>
