@@ -1,44 +1,41 @@
 .mbu-global-nav {
-  max-width: 1100px;
-  margin: 12px auto 16px;
-  padding: 12px 16px;
-  background: #fff;
-  border: 1px solid #cbd5e0;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, .05);
+  display: flex; align-items: center; gap: 14px;
+  max-width: 1100px; min-height: 62px;
+  margin: 12px auto 18px; padding: 9px 14px;
+  background: #fff; border: 1px solid #cbd5e0; border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.05);
   color: #1a365d;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
-.mbu-global-nav *, .mbu-global-nav *::before, .mbu-global-nav *::after { box-sizing: border-box; }
-.mbu-global-nav__row { display: flex; align-items: center; gap: 8px; }
-.mbu-global-nav__row + .mbu-global-nav__row { margin-top: 10px; padding-top: 10px; border-top: 1px solid #e2e8f0; }
-.mbu-global-nav__label { flex: 0 0 72px; color: #718096; font-size: 12px; font-weight: 750; text-transform: uppercase; letter-spacing: .04em; }
-.mbu-global-nav__links { display: flex; flex-wrap: wrap; gap: 7px; min-width: 0; }
-.mbu-global-nav a {
-  display: inline-flex; align-items: center; justify-content: center;
-  min-height: 38px; padding: 8px 12px;
-  border: 1px solid #cbd5e0; border-radius: 8px;
-  background: #fff; color: #1a365d;
-  font-size: 14px; font-weight: 700; line-height: 1.2;
-  text-decoration: none; white-space: nowrap;
+.mbu-global-nav * { box-sizing: border-box; }
+.mbu-global-nav a { text-decoration: none; white-space: nowrap; }
+.mbu-global-nav__brand { flex: none; color: #1a365d; font-weight: 850; font-size: 16px; }
+.mbu-global-nav[data-page="bank1"] { max-width: 1040px; }
+.mbu-global-nav[data-page="bank2"] { max-width: 1080px; }
+.mbu-global-nav[data-page="bank3"] { max-width: 900px; }
+.mbu-global-nav__crumb { display: flex; align-items: center; gap: 8px; color: #718096; font-size: 14px; }
+.mbu-global-nav__crumb a { color: #4a5568; font-weight: 650; }
+.mbu-global-nav__brand[aria-current="page"], .mbu-global-nav__crumb a[aria-current="page"] { color: #2b6cb0; }
+.mbu-global-nav__crumb a + a::before { content: '/'; margin-right: 8px; color: #a0aec0; }
+.mbu-global-nav__quick { display: flex; align-items: center; gap: 4px; margin-left: auto; }
+.mbu-global-nav__quick a { padding: 9px 11px; border-radius: 8px; color: #1a365d; font-size: 14px; font-weight: 700; }
+.mbu-global-nav__quick a:hover, .mbu-global-nav__crumb a:hover { background: #edf2f7; color: #1a365d; }
+.mbu-global-nav__quick a[aria-current="page"] { background: #1a365d; color: #fff; }
+.mbu-global-nav a:focus-visible, .mbu-global-nav select:focus-visible { outline: 3px solid #2b6cb0; outline-offset: 2px; }
+.mbu-global-nav__picker, .mbu-global-nav__picker-label { display: none; }
+@media (max-width: 900px) {
+  .mbu-global-nav { margin: 8px 10px 14px; min-height: 54px; padding: 8px 12px; gap: 10px; }
+  .mbu-global-nav__crumb, .mbu-global-nav__quick { display: none; }
+  .mbu-global-nav__picker-label { display: block; margin-left: auto; color: #718096; font-size: 13px; font-weight: 700; white-space: nowrap; }
+  .mbu-global-nav__picker { display: block; max-width: min(245px,55vw); min-height: 38px; padding: 6px 9px; border: 1px solid #cbd5e0; border-radius: 8px; background: #fff; color: #1a365d; font: 700 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; cursor: pointer; }
 }
-.mbu-global-nav a:hover { background: #edf2f7; border-color: #2b6cb0; }
-.mbu-global-nav a:focus-visible { outline: 3px solid #2b6cb0; outline-offset: 2px; }
-.mbu-global-nav a[aria-current="page"] { background: #1a365d; border-color: #1a365d; color: #fff; cursor: default; }
 button.mbu-return.mbu-return {
   display: inline-flex; align-items: center; justify-content: center;
   min-height: 38px; padding: 8px 12px;
   border: 1px solid #1a365d; border-radius: 8px;
   background: #fff; color: #1a365d;
-  font: 700 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font: 700 14px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   text-decoration: none; cursor: pointer;
 }
 button.mbu-return.mbu-return:hover { background: #edf2f7; border-color: #2b6cb0; }
 button.mbu-return.mbu-return:focus-visible { outline: 3px solid #2b6cb0; outline-offset: 2px; }
-@media (max-width: 600px) {
-  .mbu-global-nav { margin: 8px 10px 12px; padding: 10px; }
-  .mbu-global-nav__row { display: block; }
-  .mbu-global-nav__label { display: block; margin: 0 0 7px; }
-  .mbu-global-nav__links { flex-wrap: wrap; }
-  .mbu-global-nav a { min-height: 40px; }
-}
