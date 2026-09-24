@@ -4,150 +4,158 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Equipment | MBU-NAP</title>
+<title>MBU-NAP Study Center</title>
 
 <style>
 :root {
-    --navy:#1a365d;
-    --blue:#2b6cb0;
-    --bg:#edf2f7;
-    --card:#ffffff;
-    --text:#2d3748;
-    --muted:#718096;
-    --border:#cbd5e0;
+    --navy: #1a365d;
+    --blue: #2b6cb0;
+    --background: #edf2f7;
+    --card: #ffffff;
+    --text: #2d3748;
+    --muted: #718096;
+    --border: #cbd5e0;
 }
 
-* { box-sizing:border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
-    margin:0;
-    background:var(--bg);
-    color:var(--text);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, Helvetica, Arial, sans-serif;
 }
 
 .container {
-    max-width:1100px;
-    margin:auto;
-    padding:30px 20px;
-}
-
-.back {
-    display:inline-block;
-    color:var(--blue);
-    text-decoration:none;
-    font-weight:700;
-    margin-bottom:18px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
 }
 
 header {
-    border-bottom:2px solid var(--border);
-    padding-bottom:20px;
-    margin-bottom:28px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 20px;
 }
 
 h1 {
-    margin:0;
-    color:var(--navy);
-    font-size:32px;
+    margin: 0;
+    font-size: 32px;
+    color: var(--navy);
 }
 
 .subtitle {
-    color:var(--muted);
-    margin-top:6px;
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 16px;
 }
 
-.grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:18px;
+.section-title {
+    margin: 25px 0 15px;
+    font-size: 20px;
 }
 
-.card {
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:12px;
-    padding:22px;
-    box-shadow:0 3px 10px rgba(0,0,0,.05);
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 18px;
 }
 
-.card h2 {
-    margin:0 0 8px;
-    color:var(--navy);
+.course-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.05);
 }
 
-.card p {
-    color:var(--muted);
-    min-height:48px;
+.course-card h2 {
+    margin: 0 0 8px;
+    color: var(--navy);
 }
 
-.btn {
-    display:inline-block;
-    background:var(--navy);
-    color:white;
-    text-decoration:none;
-    padding:11px 18px;
-    border-radius:7px;
-    font-weight:700;
+.course-card p {
+    color: var(--muted);
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
-.btn:hover {
-    background:var(--blue);
+.button {
+    display: inline-block;
+    background: var(--navy);
+    color: white;
+    text-decoration: none;
+    padding: 11px 18px;
+    border-radius: 7px;
+    font-weight: 700;
 }
 
-.disabled {
-    opacity:.55;
+.button:hover {
+    background: var(--blue);
 }
 
-.disabled .btn {
-    background:#a0aec0;
-    pointer-events:none;
+footer {
+    margin-top: 40px;
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
 }
 
-@media(max-width:600px) {
-    .container { padding:20px 14px; }
-    h1 { font-size:27px; }
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 14px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
 }
 </style>
+<link rel="stylesheet" href="equipment/assets/site-nav.css?v=1">
+<script defer src="equipment/assets/site-nav.js?v=1" data-page="home"></script>
 </head>
 
 <body>
 
 <div class="container">
 
-<a class="back" href="../">← Courses</a>
-
 <header>
-    <h1>Equipment</h1>
-    <div class="subtitle">Exam preparation and question banks</div>
+    <h1>MBU-NAP</h1>
+    <div class="subtitle">Nurse Anesthesia Study Center</div>
 </header>
 
-<div class="grid">
+<div class="section-title">
+    <strong>Courses</strong>
+</div>
 
-    <div class="card">
-        <h2>Exam 1</h2>
-        <p>3 comprehensive quiz banks available.</p>
-        <a class="btn" href="exam-1/">Open Exam 1 →</a>
-    </div>
+<div class="course-grid">
 
-    <div class="card disabled">
-        <h2>Exam 2</h2>
-        <p>Quiz banks will be added here.</p>
-        <span class="btn">Coming Soon</span>
-    </div>
+    <div class="course-card">
+        <h2>Equipment</h2>
 
-    <div class="card disabled">
-        <h2>Final Exam</h2>
-        <p>Comprehensive final review banks will be added here.</p>
-        <span class="btn">Coming Soon</span>
+        <p>
+            Anesthesia equipment, monitoring, airway equipment,
+            medical gases, breathing systems, and related concepts.
+        </p>
+
+        <a class="button" href="equipment/">
+            Open Equipment →
+        </a>
     </div>
 
 </div>
 
+<footer>
+    MBU Nurse Anesthesia Program
+</footer>
+
 </div>
 
 
-<!-- MBU_BUILD:2026-09-24-dashboard-autoupdate-v2-watch8 -->
-<script src="assets/auto-update.js?v=8"></script>
+<!-- MBU_BUILD:2026-09-24-dashboard-autoupdate-v2-watch8-nav-v1 -->
+<script src="equipment/assets/auto-update.js?v=8"></script>
 </body>
 </html>
