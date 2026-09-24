@@ -60,7 +60,7 @@ h2.t{font-size:1.2rem;margin:.2rem 0 .6rem}
 table{border-collapse:collapse;width:100%;font-size:.92rem}
 td,th{padding:6px 8px;border-bottom:1px solid var(--rule);text-align:left}
 .rv{margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
-.pill{display:inline-block;font-size:.75rem;padding:1px 7px;border-radius:10px;border:1px solid var(--rule);color:var(--mute);margin-left:6px}
+.pill{display:inline-block;font-size:.75rem;padding:1px 7px;border-radius:10px;border:1px solid var(--rule);color:var(--mute);margin-left:6px}.pill.harder{background:#fffaf0;color:#975a16;border-color:#d69e2e;font-weight:700;letter-spacing:.02em}
 #lb{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;padding:16px;z-index:9}
 #lb.on{display:flex}#lb img{max-width:100%;max-height:100%;background:#fff}
 ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
@@ -128,7 +128,7 @@ function dash(){clearTimeout(timer);window.MBUCalculator?.hide();V={mode:"dash"}
  h+=`<div class="grid">`;
  const cols={1:"var(--o2)",2:"var(--n2o)",3:"var(--air)",4:"var(--wagd)",5:"var(--o2)",7:"var(--bad)"};
  for(const n of EXLIST){const s=examStats(n);const done=s.a>=s.t;
-  h+=`<section class="ex" style="--c:${cols[n]}"><h2>${NAMES[n]}${n===7?' <span class="pill">about 9/10</span>':""}</h2>
+  h+=`<section class="ex" style="--c:${cols[n]}"><h2>${NAMES[n]}${n===7?' <span class="pill harder">HARDER</span>':""}</h2>
   <div class="row"><span>Progress</span><b>${s.a} / ${s.t}</b></div><div class="mini"><i style="width:${100*s.a/s.t}%"></i></div>
   <div class="row"><span>Score</span><b>${s.a?Math.round(100*s.c/s.a)+"%":"–"}</b></div>
   <div class="row"><span>Missed</span><b>${s.missed.length}</b></div>
