@@ -25,7 +25,7 @@
 </nav><div class="wrap">
 <section id="dashboard" class="panel"><div class="hero"><div><h1>Exam Set 1</h1><p>500 board-style questions across 5 sets, with persistent missed-question review.</p></div><div class="mini" id="overall"></div></div><div id="cards" class="grid"></div><div class="missed-box"><h2 style="margin:0">Missed Question Review</h2><div class="mini">Missed questions are saved by set on this device.</div><div id="missed-review"></div></div></section>
 <section id="quiz" class="panel hidden"><div class="header"><div class="row"><span class="badge" id="set-badge"></span><button class="btn out" id="mbuFlagBtn" onclick="mbuToggleFlag(currentData[currentIndex])">☆ Flag</button><button class="btn out" onclick="mbuReportQuestion(currentData[currentIndex])">Report</button><button class="btn out" onclick="document.getElementById('mbuNavigator').classList.toggle('hidden')">Navigator</button><button class="btn out" onclick="goDashboard()">Main Dashboard</button></div><div class="progress" id="progress"></div></div><div class="stats"><div>Completed: <strong id="completed">0</strong>/<span id="total">0</span></div><div>Score: <strong id="score">0</strong>%</div><div>Missed: <strong id="missed">0</strong></div></div><div id="mbuNavigator" class="row hidden" style="flex-wrap:wrap;gap:6px;margin:8px 0 14px"></div><div class="type" id="type"></div><div class="stem" id="stem"></div><div class="image hidden" id="image"></div><div class="options" id="options"></div><div class="row" id="multi-submit-row" style="display:none;margin:4px 0 18px;justify-content:flex-end"><button class="btn" id="submit-multi" onclick="submitAnswer()">Submit Answer</button></div><div class="explain" id="explain"><div id="explain-text"></div><div class="cite" id="citation"></div></div><div class="controls"><button class="btn out" id="prev" onclick="nav(-1)">Previous</button><div class="row"><button class="btn out" onclick="resetCurrent()">Reset</button><button class="btn" id="next" onclick="nav(1)">Next</button></div></div></section>
-</div><script>
+</div><script src="../assets/studio-sync.js?v=1"></script><script src="../assets/navigator.js?v=1"></script><script>
 const SET1 = [
   {
     "id": 1,
@@ -8564,15 +8564,13 @@ const SETS={1:SET1,2:SET2,3:SET3,4:SET4,5:SET5};
 const STORE='SRNA_COMBINED_EXAM_SET_1_2026_V1';
 let db={sets:{},missed:{1:[],2:[],3:[],4:[],5:[]},test6:{answers:{},graded:{},strikes:{},current:0}};
 let mode=null,currentSet=null,currentIndex=0,currentData=[],autoTimer=null;
-const MBU_STUDIO_STORE='mbu_exam1_studio_v1';
-function mbuStudioDB(){try{return JSON.parse(localStorage.getItem(MBU_STUDIO_STORE)||'{"ans":{},"flags":{},"reports":[]}')}catch(e){return {ans:{},flags:{},reports:[]}}}
-function mbuFlagKey(q){return 'b1-'+q.id}
-function mbuIsFlagged(q){const d=mbuStudioDB();return !!d.flags[mbuFlagKey(q)]}
-function mbuToggleFlag(q){const d=mbuStudioDB(),k=mbuFlagKey(q);d.flags[k]=!d.flags[k];localStorage.setItem(MBU_STUDIO_STORE,JSON.stringify(d));mbuUpdateFlag(q)}
-
-function mbuStudioAnswer(q,ok){const d=mbuStudioDB(),k=mbuFlagKey(q);d.ans[k]={ok:!!ok,at:Date.now(),topic:q.topic||q.lec||q.concept||'Other',bank:1};localStorage.setItem(MBU_STUDIO_STORE,JSON.stringify(d))}
-function mbuReportQuestion(q){const reason=prompt('Report reason: wrong answer, ambiguous, typo, explanation issue, source issue, or other');if(!reason)return;const d=mbuStudioDB();d.reports=d.reports||[];d.reports.push({uid:mbuFlagKey(q),bank:1,stem:q.stem||q.q||'',reason,date:new Date().toISOString()});localStorage.setItem(MBU_STUDIO_STORE,JSON.stringify(d));alert('Report saved to Study Studio on this device.')}
-function mbuNavButton(i,label,active,flagged,go,result){let bg=result===true?'#c6f6d5':result===false?'#fed7d7':active?'#ebf8ff':'white',bd=result===true?'#38a169':result===false?'#e53e3e':'#cbd5e0';return '<button type="button" style="min-width:38px;height:34px;border:2px solid '+bd+';border-radius:6px;background:'+bg+';'+(flagged?'outline:2px solid #d69e2e;':'')+'" onclick="'+go+'">'+label+'</button>'}
+const MBU_STUDIO_STORE=MBUStudio.STORE;
+function mbuStudioDB(){return MBUStudio.db()}
+function mbuFlagKey(q){return MBUStudio.key(1,q)}
+function mbuIsFlagged(q){return MBUStudio.flagged(1,q)}
+function mbuToggleFlag(q){MBUStudio.toggleFlag(1,q);mbuUpdateFlag(q)}
+function mbuStudioAnswer(q,ok){MBUStudio.answer(1,q,ok)}
+function mbuReportQuestion(q){return MBUStudio.report(1,q)}
 function mbuUpdateFlag(q){const b=document.getElementById('mbuFlagBtn');if(b)b.textContent=mbuIsFlagged(q)?'★ Flagged':'☆ Flag'}
 
 function blankState(){return {answers:{},graded:{},correct:{},strikes:{},current:0}}
