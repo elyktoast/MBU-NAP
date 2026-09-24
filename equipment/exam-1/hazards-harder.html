@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Workstation Hazards | Harder Set</title>
+<title>Workstation Hazards | Challenge Set</title>
 <style>
 :root{--paper:#F2F5F4;--sheet:#fff;--ink:#17252B;--mute:#5B6B71;--rule:#D3DCD9;--o2:#1E7B4F;--o2bg:#E4F3EB;--bad:#B3261E;--badbg:#FBE7E5;--n2o:#1F4E9E;--sel:#E7EEFA;--air:#C9950C;--wagd:#7B3F8C}
 @media (prefers-color-scheme:dark){:root{--paper:#0F1719;--sheet:#172226;--ink:#E4ECEA;--mute:#9AAAB0;--rule:#2A3A3F;--o2:#4CC08A;--o2bg:#12301F;--bad:#F2877D;--badbg:#3A1714;--n2o:#7FA6EE;--sel:#1C2B45}}
@@ -57,7 +57,7 @@ ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 @media (max-width:600px){ul.concepts{columns:1}}
 </style><link rel="stylesheet" href="../assets/site-nav.css?v=2"><script defer src="../assets/site-nav.js?v=2" data-page="hazards"></script></head>
 <body><div class="wrap">
-<header><h1>Workstation Hazards · Harder Set · 50 questions</h1>
+<header><h1>Workstation Hazards · Challenge Set (Harder) · 50 questions</h1>
 <div class="stats" id="stats"></div>
 <div class="hbtns"><button class="ghost" id="bRev">Missed review</button><button class="ghost" id="bReset">Reset</button></div></header>
 <div class="bar"><i id="prog"></i></div>
@@ -127,7 +127,7 @@ function next(){clearTimeout(timer);if(view==="prac"&&S.prac){S.prac.i++}else{S.
 function renderSummary(){const v=BANK.filter(q=>S.ans[q.id]);const c=v.filter(q=>S.ans[q.id].ok).length;
  const by={};BANK.forEach(q=>{by[q.lec]=by[q.lec]||{t:0,a:0,c:0};by[q.lec].t++;if(S.ans[q.id]){by[q.lec].a++;if(S.ans[q.id].ok)by[q.lec].c++}});
  const m=missed();
- let h=`<div class="card"><h2>Hazards & safety harder practice complete</h2><p>Score: <b>${c} / ${v.length}</b> (${v.length?Math.round(100*c/v.length):0}%)</p>
+ let h=`<div class="card"><h2>Hazards & safety Challenge Set complete</h2><p>Score: <b>${c} / ${v.length}</b> (${v.length?Math.round(100*c/v.length):0}%)</p>
  <table><tr><th>Lecture</th><th>Questions</th><th>Correct</th><th>%</th></tr>${Object.entries(by).map(([k,o])=>`<tr><td>${k}</td><td>${o.t}</td><td>${o.c}</td><td>${o.a?Math.round(100*o.c/o.a):0}%</td></tr>`).join("")}</table>`;
  if(m.length){h+=`<h2 style="margin-top:16px">Missed concepts</h2><ul class="concepts">${m.map(q=>`<li>${esc(q.concept)} <span class="pill">${q.lec}</span></li>`).join("")}</ul>
  <div class="act"><button class="primary" id="bP">Practice missed questions (${m.length})</button><button class="ghost" id="bR2">Missed review</button></div>`}
@@ -158,4 +158,4 @@ document.addEventListener("keydown",e=>{if($("#lb").classList.contains("on")){if
  let k=e.key.toUpperCase();if(/^[1-6]$/.test(k))k=L[+k-1];const i=L.indexOf(k);
  if(i>=0&&i<q.c.length&&k.length===1){e.preventDefault();e.shiftKey?cross(q,i):pick(q,i)}});
 render();
-</script><!-- MBU_BUILD:2026-09-24-hazards-harder-v1 --><script src="../assets/auto-update.js?v=8"></script></body></html>
+</script><!-- MBU_BUILD:2026-09-24-hazards-challenge-v2 --><script src="../assets/auto-update.js?v=8"></script></body></html>
