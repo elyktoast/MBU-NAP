@@ -157,5 +157,5 @@ document.addEventListener("keydown",e=>{if($("#lb").classList.contains("on")){if
  if(e.key==="Enter"){e.preventDefault();cur.done?next():submit(q);return}
  let k=e.key.toUpperCase();if(/^[1-6]$/.test(k))k=L[+k-1];const i=L.indexOf(k);
  if(i>=0&&i<q.c.length&&k.length===1){e.preventDefault();e.shiftKey?cross(q,i):pick(q,i)}});
-render();
+if(new URLSearchParams(location.search).get('review')==='1'){view='review';save()}render();
 </script><!-- MBU_BUILD:2026-09-24-hazards-challenge-v2 --><script src="../assets/auto-update.js?v=8"></script></body></html>
