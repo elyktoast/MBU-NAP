@@ -1,7 +1,7 @@
 (function(){
-  const current=document.documentElement.innerHTML.match(/MBU_BUILD:([^ *<]+)/);
+  const build=html=>html.match(/(?:<!--|\/\*)\s*MBU_BUILD:([^ *<]+)/)?.[1];
+  const current=build(document.documentElement.innerHTML);
   if(!current)return;
-  const CURRENT=current[1];
   let checking=false;
   async function check(){
     if(checking)return; checking=true;
@@ -11,9 +11,19 @@
       u.searchParams.set('_mbu_update_check',Date.now());
       const r=await fetch(u.toString(),{cache:'no-store'});
       if(!r.ok)return;
-      const t=await r.text();
-      const m=t.match(/MBU_BUILD:([^ *<]+)/);
-      if(m&&m[1]!==CURRENT){
+      const latestPage=build(await r.text());
+      let changed=!!(latestPage&&latestPage!==current);
+      if(!changed){
+        for(const watch of window.MBUUpdateWatch||[]){
+          try{
+            const w=new URL(watch.url,location.href);
+            w.searchParams.set('_mbu_update_check',Date.now());
+            const wr=await fetch(w.toString(),{cache:'no-store'});
+            if(wr.ok){const latest=build(await wr.text());if(latest&&latest!==watch.build){changed=true;break}}
+          }catch(e){}
+        }
+      }
+      if(changed){
         const next=new URL(location.href);
         next.searchParams.delete('_mbu_update_check');
         next.searchParams.set('_mbu_reload',Date.now());
