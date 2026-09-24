@@ -75,7 +75,8 @@ function mbuUpdateFlag(q){const b=document.getElementById('mbuFlagBtn');if(b)b.t
 
 
 function st(si){
-  if(!state.sets[si]) state.sets[si]={answered:{},missed:[]};
+  if(!state.sets[si]) state.sets[si]={answered:{},missed:[],selections:{}};
+  state.sets[si].selections ||= {};
   return state.sets[si];
 }
 function save(){localStorage.setItem(KEY,JSON.stringify(state));}
@@ -91,7 +92,7 @@ function renderDash(){
   SETS.forEach((qs,i)=>{
     const a=stats(i);td+=a.done;tc+=a.cor;tm+=a.miss;
     const d=document.createElement("div");d.className="setcard";
-    d.innerHTML=`<h3>Practice Set ${i+1}</h3><div class="stats">${a.done}/100 answered · ${a.cor} correct<br>${a.miss} missed saved</div><div class="bar"><div style="width:${a.done}%"></div></div><div class="actions"><button class="btn primary" onclick="startSet(${i})">${a.done?"Continue":"Start"} Practice Set ${i+1}</button><button class="btn" ${a.miss?"":"disabled"} onclick="startMissed(${i})">Missed (${a.miss})</button><button class="btn danger" onclick="resetSet(${i})">Reset</button></div>`;
+    d.innerHTML=`<h3>Practice Set ${i+1}</h3><div class="stats">${a.done}/100 answered · ${a.cor} correct<br>${a.miss} missed saved</div><div class="bar"><div style="width:${a.done}%"></div></div><div class="actions"><button class="btn primary" onclick="startSet(${i})">${a.done===100?"Review Answers":a.done?"Continue":"Start Practice Set "+(i+1)}</button><button class="btn" ${a.miss?"":"disabled"} onclick="startMissed(${i})">Missed (${a.miss})</button><button class="btn danger" onclick="resetSet(${i})">Reset</button></div>`;
     g.appendChild(d);
   });
   document.getElementById("doneAll").textContent=td;document.getElementById("correctAll").textContent=tc;document.getElementById("missedAll").textContent=tm;
@@ -136,7 +137,17 @@ function showQ(){
     row.append(b,cross);box.appendChild(row);
   });
   document.getElementById("feedback").className="hidden";document.getElementById("feedback").innerHTML="";
-  document.getElementById("submitBtn").classList.remove("hidden");document.getElementById("nextBtn").classList.add("hidden");window.MBUCalculator?.besideFlag();
+  document.getElementById("submitBtn").classList.remove("hidden");document.getElementById("nextBtn").classList.add("hidden");
+  if(mode==="set" && Object.prototype.hasOwnProperty.call(st(c.si).answered,c.qi))restoreResult(c,q);
+  window.MBUCalculator?.besideFlag();
+}
+function restoreResult(c,q){
+  const saved=st(c.si),got=saved.selections[c.qi]||[],ok=!!saved.answered[c.qi];locked=true;selected=new Set(got);
+  document.querySelectorAll(".choice").forEach((b,i)=>{if(q.correct.includes(i))b.classList.add("good");else if(selected.has(i))b.classList.add("bad")});
+  document.querySelectorAll(".mbu-cross").forEach(b=>b.disabled=true);
+  const f=document.getElementById("feedback");f.className=ok?"feedback ok":"feedback bad";
+  f.innerHTML=`<b>Previously answered ${ok?"correctly":"incorrectly"}.</b> ${ok?"":esc(q.why)}<div class="source">${esc(q.src)} · slide/page ${esc(q.page)}</div>`;
+  document.getElementById("submitBtn").classList.add("hidden");document.getElementById("nextBtn").classList.remove("hidden");
 }
 function choose(i,e){
   if(locked)return;const q=SETS[current().si][current().qi],b=[...document.querySelectorAll(".choice")][i];
@@ -150,7 +161,7 @@ function submitAnswer(){
   if(q.correct.length>1 && selected.size!==q.correct.length)return;
   locked=true;document.querySelectorAll(".mbu-cross").forEach(b=>b.disabled=true);const got=[...selected].sort((a,b)=>a-b),want=[...q.correct].sort((a,b)=>a-b),ok=JSON.stringify(got)===JSON.stringify(want);
   document.querySelectorAll(".choice").forEach((b,i)=>{b.classList.remove("sel");if(want.includes(i))b.classList.add("good");else if(selected.has(i))b.classList.add("bad")});
-  const s=st(c.si);s.answered[c.qi]=ok;
+  const s=st(c.si);s.answered[c.qi]=ok;s.selections[c.qi]=got;
   if(ok)s.missed=s.missed.filter(x=>x!==c.qi);else if(!s.missed.includes(c.qi))s.missed.push(c.qi);save();
   document.getElementById("missedCount").textContent=`Missed: ${s.missed.length}`;
   mbuStudioAnswer(q,ok);if(ok){autoTimer=setTimeout(nextQuestion,650)}
@@ -161,7 +172,7 @@ function submitAnswer(){
 }
 function nextQuestion(){if(pos+1<order.length){pos++;showQ()}else{goDash()}}
 function goDash(){renderDash()}
-function resetSet(si){if(confirm(`Reset all progress for Practice Set ${si+1}?`)){state.sets[si]={answered:{},missed:[]};save();renderDash()}}
+function resetSet(si){if(confirm(`Reset all progress for Practice Set ${si+1}?`)){state.sets[si]={answered:{},missed:[],selections:{}};save();renderDash()}}
 function resetAll(){if(confirm("Reset progress for all five sets?")){state={sets:{}};save();renderDash()}}
 function showReview(si){
   window.MBUCalculator?.hide();
@@ -173,7 +184,7 @@ function showReview(si){
   arr.forEach(x=>{const q=SETS[x.si][x.qi],d=document.createElement("div");d.className="reviewrow";d.innerHTML=`<b>Practice Set ${x.si+1}, Q${x.qi+1}</b> · ${esc(q.q)}<div class="small">${esc(q.topic)}</div>`;list.appendChild(d)})
 }
 document.addEventListener("keydown",e=>{
-  if(document.getElementById("mbu-calc-modal")?.classList.contains("open")||e.target.closest("#mbu-calc-open,input,select,textarea"))return;
+  if(document.getElementById("mbu-calc-modal")?.classList.contains("open")||e.target.closest(".qhead,.mbu-cross,.mbu-global-nav,#mbu-calc-open,input,select,textarea"))return;
   if(document.getElementById("quiz").classList.contains("hidden"))return;
   if(/^[1-6]$/.test(e.key)){
     const i=Number(e.key)-1,b=document.querySelectorAll(".choice")[i];if(!b)return;
@@ -184,6 +195,6 @@ renderDash();
 </script>
 <script src="../assets/calculator.js?v=7"></script>
 
-<!-- MBU_BUILD:2026-09-24-bank2-autoupdate-v3-watch8-ui-v2 -->
+<!-- MBU_BUILD:2026-09-24-bank2-autoupdate-v3-watch8-ui-v3 -->
 <script src="../assets/auto-update.js?v=8"></script>
 </body></html>

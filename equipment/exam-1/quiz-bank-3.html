@@ -66,7 +66,7 @@ td,th{padding:6px 8px;border-bottom:1px solid var(--rule);text-align:left}
 ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 @media (max-width:600px){ul.concepts{columns:1}}
 </style>
-<!-- MBU_BUILD:2026-09-24-bank-names-v13-ui-v2 -->
+<!-- MBU_BUILD:2026-09-24-bank-names-v13-ui-v3 -->
 <link rel="stylesheet" href="../assets/site-nav.css?v=2">
 <script defer src="../assets/site-nav.js?v=2" data-page="bank3"></script>
 </head>
@@ -226,7 +226,7 @@ function review(n){clearTimeout(timer);window.MBUCalculator?.hide();const isT6=n
  if(!isT6)$("#bBack").onclick=()=>openExam(n);else $("#bT6").onclick=()=>{if(!S.t6||Object.keys(S.t6.ans).length>=S.t6.list.length){const p=missedPool();if(!p.length)return;S.t6={list:p,i:0,ans:{}}}save();openT6()};
  V={mode:"review",n};window.scrollTo(0,0)}
 $("#lb").onclick=()=>$("#lb").classList.remove("on");
-document.addEventListener("keydown",e=>{if(document.getElementById("mbu-calc-modal")?.classList.contains("open")||e.target.closest("#mbu-calc-open,input,select,textarea"))return;if($("#lb").classList.contains("on")){if(e.key==="Escape")$("#lb").classList.remove("on");return}
+document.addEventListener("keydown",e=>{if(document.getElementById("mbu-calc-modal")?.classList.contains("open")||e.target.closest("header,.qmeta,.xo,.mbu-global-nav,#mbu-calc-open,input,select,textarea"))return;if($("#lb").classList.contains("on")){if(e.key==="Escape")$("#lb").classList.remove("on");return}
  if(!(V.mode==="exam"||V.mode==="t6"))return;if(!document.querySelector(".opt[data-i]"))return;const c=ctx();if(c.i>=c.list.length)return;const q=byId[c.list[c.i]];
  if(e.key==="Enter"){e.preventDefault();cur.done?next():submit(q);return}
  let k=e.key.toUpperCase();if(/^[1-6]$/.test(k))k=L[+k-1];const i=L.indexOf(k);
