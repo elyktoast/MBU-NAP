@@ -8,7 +8,6 @@
   const pages = [
     {id:'home',label:'Study Center',short:'MBU-NAP',url:home},
     {id:'equipment',label:'Equipment',url:equipment},
-    {id:'exam',label:'Exam 1 Dashboard',short:'Exam 1',url:exam},
     {id:'studio',label:'Study Studio',short:'Studio',url:new URL('studio.html',exam)},
     ...[1,2,3].map(n=>({id:'bank'+n,label:'Quiz Bank '+n,short:'Bank '+n,creator:['ChatGPT','Gemini','Claude'][n-1],url:new URL('quiz-bank-'+n+'.html',exam)})),
     {id:'hazards',label:'Workstation Hazards',short:'Hazards',url:new URL('hazards.html',exam)}
@@ -31,10 +30,10 @@
     const crumb = document.createElement('div');
     crumb.className = 'mbu-global-nav__crumb';
     if(page==='equipment') crumb.append(link(pages[1]));
-    else if(page!=='home') crumb.append(link(pages[1]),link(pages[2],true));
+    else if(page!=='home') crumb.append(link(pages[1]));
     const quick = document.createElement('div');
     quick.className = 'mbu-global-nav__quick';
-    if(page!=='home'&&page!=='equipment') pages.slice(3).forEach(item => quick.appendChild(link(item,true)));
+    if(page!=='home'&&page!=='equipment') pages.slice(2).forEach(item => quick.appendChild(link(item,true)));
     const pickerLabel = document.createElement('label');
     pickerLabel.className = 'mbu-global-nav__picker-label';
     pickerLabel.textContent = 'Go to';
