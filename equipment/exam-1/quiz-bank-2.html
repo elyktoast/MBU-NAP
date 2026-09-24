@@ -15,36 +15,6 @@ button{font:inherit}.btn{border:1px solid var(--line);background:#fff;border-rad
 @media(max-width:700px){.summary{grid-template-columns:1fr 1fr}.wrap{padding:14px}.title{font-size:23px}.stem{font-size:18px}}
 </style>
 
-<style id="mbu-site-nav-style">
-.mbu-site-nav{
-  max-width:1080px;
-  margin:12px auto 0;
-  padding:0 14px;
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-  align-items:center;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-}
-.mbu-site-nav a{
-  display:inline-block;
-  padding:8px 12px;
-  border:1px solid #cbd5e0;
-  border-radius:8px;
-  background:#fff;
-  color:#1a365d;
-  text-decoration:none;
-  font-size:14px;
-  font-weight:700;
-  line-height:1.2;
-}
-.mbu-site-nav a:hover{background:#f7fafc;border-color:#2b6cb0}
-@media(max-width:600px){
-  .mbu-site-nav{margin-top:8px;padding:0 10px;gap:6px}
-  .mbu-site-nav a{padding:7px 10px;font-size:13px}
-}
-</style>
-
 <style id="mbu-calculator-style">
 #mbu-calc-open{position:fixed;right:18px;bottom:18px;z-index:9998;border:0;border-radius:999px;background:#1a365d;color:#fff;padding:12px 17px;font-weight:800;font-size:15px;box-shadow:0 5px 18px #0003;cursor:pointer}
 #mbu-calc-modal{display:none;position:fixed;inset:0;z-index:9999;background:#0008;align-items:center;justify-content:center;padding:14px}
@@ -55,14 +25,10 @@ button{font:inherit}.btn{border:1px solid var(--line);background:#fff;border-rad
 .mbu-calc-grid .op{background:#edf2f7;color:#1a365d}.mbu-calc-grid .eq{background:#1a365d;color:#fff}.mbu-calc-grid .danger{color:#9b2c2c}.mbu-calc-note{font-size:11px;color:#718096;margin-top:9px;text-align:center}
 @media(max-width:600px){#mbu-calc-open{right:12px;bottom:12px;padding:11px 14px}.mbu-calc{padding:12px}.mbu-calc-grid{gap:5px}.mbu-calc-grid button{min-height:43px;font-size:14px}}
 </style>
+<link rel="stylesheet" href="../assets/site-nav.css?v=1">
+<script defer src="../assets/site-nav.js?v=1" data-page="bank2"></script>
 </head>
 <body>
-<nav class="mbu-site-nav" aria-label="MBU-NAP navigation">
-  <a href="../../">MBU-NAP Home</a>
-  <a href="../">Equipment</a>
-  <a href="./">Equipment Dashboard</a>
-</nav>
-
 <div class="wrap">
 <section id="dash">
   <div class="top"><div><div class="title">Quiz Bank 2 Dashboard</div><div class="sub">Practice Sets 1–5 · 500 questions · lecture-based board-style review</div></div><button class="btn danger" onclick="resetAll()">Reset All Progress</button></div>
@@ -80,7 +46,7 @@ button{font:inherit}.btn{border:1px solid var(--line);background:#fff;border-rad
 
 <section id="quiz" class="hidden quiz">
   <div class="qhead">
-    <div style="display:flex;gap:8px;align-items:center"><button class="btn" onclick="goDash()">← Back to Quiz Bank 2 Dashboard</button><button class="btn" id="mbuFlagBtn" onclick="mbuToggleFlag(SETS[current().si][current().qi])">☆ Flag</button><button class="btn" onclick="mbuReportQuestion(SETS[current().si][current().qi])">Report</button><button class="btn" onclick="document.getElementById('mbuNavigator').classList.toggle('hidden')">Navigator</button></div>
+    <div style="display:flex;gap:8px;align-items:center"><button class="btn mbu-return" onclick="goDash()">← Quiz Bank 2 Home</button><button class="btn" id="mbuFlagBtn" onclick="mbuToggleFlag(SETS[current().si][current().qi])">☆ Flag</button><button class="btn" onclick="mbuReportQuestion(SETS[current().si][current().qi])">Report</button><button class="btn" onclick="document.getElementById('mbuNavigator').classList.toggle('hidden')">Navigator</button></div>
     <div style="display:flex;gap:8px;align-items:center"><div class="pill" id="missedCount"></div><div class="pill" id="progress"></div></div>
   </div>
   <div id="mbuNavigator" class="hidden" style="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px"></div><div class="qcard">
@@ -97,7 +63,7 @@ button{font:inherit}.btn{border:1px solid var(--line);background:#fff;border-rad
 </section>
 
 <section id="review" class="hidden">
-  <div class="top"><div><div class="title" id="reviewTitle">Missed Questions</div><div class="sub">Questions remain here until answered correctly in a quiz attempt.</div></div><button class="btn" onclick="goDash()">← Back to Quiz Bank 2 Dashboard</button></div>
+  <div class="top"><div><div class="title" id="reviewTitle">Missed Questions</div><div class="sub">Questions remain here until answered correctly in a quiz attempt.</div></div><button class="btn mbu-return" onclick="goDash()">← Quiz Bank 2 Home</button></div>
   <div class="panel" style="padding:18px" id="reviewList"></div>
 </section>
 </div>
@@ -250,6 +216,6 @@ document.addEventListener('keydown',e=>{let m=document.getElementById('mbu-calc-
 document.addEventListener('click',e=>{let m=document.getElementById('mbu-calc-modal');if(e.target===m)mbuCalcClose()})})();
 </script>
 
-<!-- MBU_BUILD:2026-09-24-bank2-autoupdate-v3-watch8 -->
+<!-- MBU_BUILD:2026-09-24-bank2-autoupdate-v3-watch8-nav-v1 -->
 <script src="../assets/auto-update.js?v=8"></script>
 </body></html>

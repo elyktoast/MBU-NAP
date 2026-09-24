@@ -66,44 +66,11 @@ td,th{padding:6px 8px;border-bottom:1px solid var(--rule);text-align:left}
 ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 @media (max-width:600px){ul.concepts{columns:1}}
 </style>
-<style id="mbu-site-nav-style">
-.mbu-site-nav{
-  max-width:1080px;
-  margin:12px auto 0;
-  padding:0 14px;
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-  align-items:center;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-}
-.mbu-site-nav a{
-  display:inline-block;
-  padding:8px 12px;
-  border:1px solid #cbd5e0;
-  border-radius:8px;
-  background:#fff;
-  color:#1a365d;
-  text-decoration:none;
-  font-size:14px;
-  font-weight:700;
-  line-height:1.2;
-}
-.mbu-site-nav a:hover{background:#f7fafc;border-color:#2b6cb0}
-@media(max-width:600px){
-  .mbu-site-nav{margin-top:8px;padding:0 10px;gap:6px}
-  .mbu-site-nav a{padding:7px 10px;font-size:13px}
-}
-</style>
-
-<!-- MBU_BUILD:2026-09-24-bank-names-v13 -->
+<!-- MBU_BUILD:2026-09-24-bank-names-v13-nav-v1 -->
+<link rel="stylesheet" href="../assets/site-nav.css?v=1">
+<script defer src="../assets/site-nav.js?v=1" data-page="bank3"></script>
 </head>
 <body>
-<nav class="mbu-site-nav" aria-label="MBU-NAP navigation">
-  <a href="../../">MBU-NAP Home</a>
-  <a href="../">Equipment</a>
-  <a href="./">Equipment Dashboard</a>
-</nav>
 <div class="wrap">
 <header><h1 id="title">Quiz Bank 3 Dashboard</h1><div class="stats" id="stats"></div><div id="hbtns" style="display:flex;gap:6px"></div></header>
 <div class="bar" id="barw"><i id="prog"></i></div>
@@ -189,7 +156,7 @@ function dash(){clearTimeout(timer);V={mode:"dash"};
 // ----- question runner (exam or test 6)
 function ctx(){if(V.mode==="t6"){const t=S.t6;return{list:t.list,i:t.i,store:t.ans,label:`Review exam · ${t.i+1} / ${t.list.length}`,exam:null}}
  const e=S.ex[V.n];const tot=EXM[V.n].ids.length;return{list:EXM[V.n].ids,i:e.idx,store:e.ans,label:`${NAMES[V.n]} · Question ${e.idx+1} / ${tot}`,exam:e}}
-function topbar(){const back=`<button class="ghost" id="bDash">← Back to Dashboard</button>`;
+function topbar(){const back=`<button class="ghost mbu-return" id="bDash">← Quiz Bank 3 Home</button>`;
  if(V.mode==="t6"){const t=S.t6;const c=Object.values(t.ans).filter(x=>x.ok).length;header(T6NAME,back);$("#stats").innerHTML=`Round progress <b>${Object.keys(t.ans).length}</b> / ${t.list.length} · Cleared <b>${c}</b>`;setBar(Object.keys(t.ans).length/t.list.length)}
  else{const s=examStats(V.n);header(NAMES[V.n],`<button class="ghost" id="bRev">Missed (${s.missed.length})</button>`+back);$("#stats").innerHTML=`Answered <b>${s.a}</b> / ${s.t} · Correct <b>${s.c}</b>${s.a?` (${Math.round(100*s.c/s.a)}%)`:""}`;setBar(s.a/s.t);const r=$("#bRev");if(r)r.onclick=()=>review(V.n)}
  $("#bDash").onclick=dash}
@@ -202,7 +169,7 @@ function renderQ(){clearTimeout(timer);topbar();const c=ctx();
  let h=mbuNavigatorHTML(c)+`<div class="card"><div class="qmeta"><span>${c.label}${V.mode==="t6"?` <span class="pill">from ${NAMES[q.setn]}</span>`:""}</span><span style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><button class="ghost" id="mbuFlagBtn" type="button">${mbuIsFlagged(q)?"★ Flagged":"☆ Flag"}</button><button class="ghost" id="mbuReportBtn" type="button">Report</button><button class="ghost" id="mbuNavBtn" type="button">Navigator</button><span>${q.type==="multi"?`Select ${q.n}`:"Select 1"}</span></span></div><p class="stem">${esc(q.q)}</p>`;
  if(q.img)h+=`<div class="fig"><img src="data:image/png;base64,${IMGS[q.img]}" alt="Figure"><small>Click image to enlarge</small></div>`;
  q.c.forEach((t,i)=>{h+=`<div class="ch"><button class="opt${cur.sel.includes(i)?" sel":""}${xo.includes(i)?" x":""}" data-i="${i}"><span class="L">${L[i]}</span><span class="t">${esc(t)}</span></button><button class="xo" data-x="${i}" aria-pressed="${xo.includes(i)}" aria-label="Cross out ${L[i]}" title="Cross out (Shift+${L[i]})">✕</button></div>`});
- h+=`<div class="act"><button class="primary" id="go">Submit</button><button class="ghost" id="backToDash" type="button">← Back to Dashboard</button><span class="hint" id="hint">${q.type==="multi"?`Choose exactly ${q.n}. `:""}Keys: A–${L[q.c.length-1]} select, Shift+letter cross out, Enter submit/next</span></div><div id="fb"></div></div>`;
+ h+=`<div class="act"><button class="primary" id="go">Submit</button><button class="ghost mbu-return" id="backToDash" type="button">← Quiz Bank 3 Home</button><span class="hint" id="hint">${q.type==="multi"?`Choose exactly ${q.n}. `:""}Keys: A–${L[q.c.length-1]} select, Shift+letter cross out, Enter submit/next</span></div><div id="fb"></div></div>`;
  $("#main").innerHTML=h;
  document.querySelectorAll(".opt").forEach(b=>b.onclick=()=>pick(q,+b.dataset.i));
  document.querySelectorAll(".xo").forEach(b=>b.onclick=()=>cross(q,+b.dataset.x));
@@ -237,18 +204,18 @@ function lecTable(ids,store){const by={};ids.forEach(id=>{const q=byId[id];by[q.
 function examSummary(n){clearTimeout(timer);V={mode:"exam",n};topbar();const s=examStats(n);const e=S.ex[n];
  let h=`<div class="card"><h2 class="t">${NAMES[n]} complete</h2><p>Score: <b>${s.c} / ${s.a}</b> (${s.a?Math.round(100*s.c/s.a):0}%)</p>${lecTable(EXM[n].ids,e.ans)}`;
  if(s.missed.length)h+=`<h2 class="t" style="margin-top:16px">Missed concepts (${s.missed.length})</h2><ul class="concepts">${s.missed.map(id=>`<li>${esc(byId[id].concept)} <span class="pill">${byId[id].lec}</span></li>`).join("")}</ul>`;
- h+=`<div class="act">${s.missed.length?`<button class="primary" id="bR">Review missed</button>`:""}<button class="ghost" id="bD">← Back to Dashboard</button></div></div>`;
+ h+=`<div class="act">${s.missed.length?`<button class="primary" id="bR">Review missed</button>`:""}<button class="ghost mbu-return" id="bD">← Quiz Bank 3 Home</button></div></div>`;
  $("#main").innerHTML=h;if(s.missed.length)$("#bR").onclick=()=>review(n);$("#bD").onclick=dash}
 function t6Summary(){clearTimeout(timer);V={mode:"t6"};const t=S.t6;const c=Object.values(t.ans).filter(x=>x.ok).length;
  if(!t.logged){S.t6hist.push({date:new Date().toISOString(),n:t.list.length,cleared:c});t.logged=true;save()}
  topbar();const pool=missedPool();
  $("#main").innerHTML=`<div class="card"><h2 class="t">${T6NAME}: round complete</h2><p><b>${c} / ${t.list.length}</b> cleared this round. <b>${pool.length}</b> questions remain in the missed pool.</p>${lecTable(t.list,t.ans)}
- <div class="act">${pool.length?`<button class="primary" id="bN">Start next round (${pool.length})</button>`:"<p>The missed pool is empty.</p>"}<button class="ghost" id="bD">← Back to Dashboard</button></div></div>`;
+ <div class="act">${pool.length?`<button class="primary" id="bN">Start next round (${pool.length})</button>`:"<p>The missed pool is empty.</p>"}<button class="ghost mbu-return" id="bD">← Quiz Bank 3 Home</button></div></div>`;
  if(pool.length)$("#bN").onclick=()=>{S.t6={list:missedPool(),i:0,ans:{}};save();openT6()};$("#bD").onclick=dash}
 function review(n){clearTimeout(timer);const isT6=n===6;let items;
  if(isT6){items=missedPool().map(id=>{const q=byId[id];return{q,r:S.ex[q.setn].ans[id]}})}
  else{items=examStats(n).missed.map(id=>({q:byId[id],r:S.ex[n].ans[id]}))}
- header(isT6?`${T6NAME}: missed pool`:`${NAMES[n]} · Missed questions`,`<button class="ghost" id="bDash">← Back to Dashboard</button>`);$("#bDash").onclick=dash;
+ header(isT6?`${T6NAME}: missed pool`:`${NAMES[n]} · Missed questions`,`<button class="ghost mbu-return" id="bDash">← Quiz Bank 3 Home</button>`);$("#bDash").onclick=dash;
  $("#stats").innerHTML=`<b>${items.length}</b> missed`;
  let h=`<div class="card"><p class="hint">Green = keyed answer. Red = your incorrect choice. Dashed green = a correct choice you didn't pick.</p><div class="act" style="margin-bottom:12px">${!isT6?`<button class="primary" id="bBack">Back to ${NAMES[n]}</button>`:`<button class="primary" id="bT6">Go to the review exam</button>`}</div>`;
  items.forEach(({q,r})=>{h+=`<div class="rv"><p class="stem">${isT6?`<span class="pill" style="margin:0 6px 0 0">${NAMES[q.setn]}</span>`:""}Q${EXM[q.setn].ids.indexOf(q.id)+1}. ${esc(q.q)}</p>${q.img?`<div class="fig"><img src="data:image/png;base64,${IMGS[q.img]}" alt=""></div>`:""}`;
