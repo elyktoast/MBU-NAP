@@ -80,10 +80,10 @@ button{font:inherit}.btn{border:1px solid var(--line);background:#fff;border-rad
 
 <section id="quiz" class="hidden quiz">
   <div class="qhead">
-    <div style="display:flex;gap:8px;align-items:center"><button class="btn" onclick="goDash()">← Main Dashboard</button><button class="btn" id="mbuFlagBtn" onclick="mbuToggleFlag(SETS[current().si][current().qi])">☆ Flag</button></div>
+    <div style="display:flex;gap:8px;align-items:center"><button class="btn" onclick="goDash()">← Main Dashboard</button><button class="btn" id="mbuFlagBtn" onclick="mbuToggleFlag(SETS[current().si][current().qi])">☆ Flag</button><button class="btn" onclick="mbuReportQuestion(SETS[current().si][current().qi])">Report</button><button class="btn" onclick="document.getElementById('mbuNavigator').classList.toggle('hidden')">Navigator</button></div>
     <div style="display:flex;gap:8px;align-items:center"><div class="pill" id="missedCount"></div><div class="pill" id="progress"></div></div>
   </div>
-  <div class="qcard">
+  <div id="mbuNavigator" class="hidden" style="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px"></div><div class="qcard">
     <div class="small" id="meta"></div>
     <div class="stem" id="stem"></div><img id="qimg" class="qimg hidden" alt="Unlabeled lecture figure for question interpretation">
     <div class="choices" id="choices"></div>
@@ -112,6 +112,10 @@ function mbuStudioDB(){try{return JSON.parse(localStorage.getItem(MBU_STUDIO_STO
 function mbuFlagKey(q){return 'b2-'+q.id}
 function mbuIsFlagged(q){const d=mbuStudioDB();return !!d.flags[mbuFlagKey(q)]}
 function mbuToggleFlag(q){const d=mbuStudioDB(),k=mbuFlagKey(q);d.flags[k]=!d.flags[k];localStorage.setItem(MBU_STUDIO_STORE,JSON.stringify(d));mbuUpdateFlag(q)}
+
+function mbuStudioAnswer(q,ok){const d=mbuStudioDB(),k=mbuFlagKey(q);d.ans[k]={ok:!!ok,at:Date.now(),topic:q.topic||q.lec||q.concept||'Other',bank:2};localStorage.setItem(MBU_STUDIO_STORE,JSON.stringify(d))}
+function mbuReportQuestion(q){const reason=prompt('Report reason: wrong answer, ambiguous, typo, explanation issue, source issue, or other');if(!reason)return;const d=mbuStudioDB();d.reports=d.reports||[];d.reports.push({uid:mbuFlagKey(q),bank:2,stem:q.stem||q.q||'',reason,date:new Date().toISOString()});localStorage.setItem(MBU_STUDIO_STORE,JSON.stringify(d));alert('Report saved to Study Studio on this device.')}
+function mbuNavButton(i,label,active,flagged,go){return '<button type="button" style="min-width:38px;height:34px;border:1px solid #cbd5e0;border-radius:6px;background:'+(active?'#ebf8ff':'white')+';'+(flagged?'outline:2px solid #d69e2e;':'')+'" onclick="'+go+'">'+label+'</button>'}
 function mbuUpdateFlag(q){const b=document.getElementById('mbuFlagBtn');if(b)b.textContent=mbuIsFlagged(q)?'★ Flagged':'☆ Flag'}
 
 
@@ -156,7 +160,7 @@ function current(){
 function showQ(){
   document.getElementById("dash").classList.add("hidden");document.getElementById("review").classList.add("hidden");document.getElementById("quiz").classList.remove("hidden");
   selected=new Set();locked=false;xmode=false;
-  const c=current(),q=SETS[c.si][c.qi];
+  const c=current(),q=SETS[c.si][c.qi];document.getElementById('mbuNavigator').innerHTML=order.map((x,i)=>{const qq=SETS[x.si??activeSet][x.qi??x];return mbuNavButton(i,i+1,i===pos,mbuIsFlagged(qq),'pos='+i+';showQ()')}).join('');
   document.getElementById("progress").textContent=`Set ${c.si+1} · Question ${c.qi+1}/100`;
   document.getElementById("missedCount").textContent=`Missed: ${st(c.si).missed.length}`;
   document.getElementById("meta").textContent=`${q.topic}${q.correct.length>1?" · Select "+(q.correct.length===2?"TWO":"THREE"):""}`;
@@ -189,7 +193,7 @@ function submitAnswer(){
   const s=st(c.si);s.answered[c.qi]=ok;
   if(ok)s.missed=s.missed.filter(x=>x!==c.qi);else if(!s.missed.includes(c.qi))s.missed.push(c.qi);save();
   document.getElementById("missedCount").textContent=`Missed: ${s.missed.length}`;
-  if(ok){setTimeout(nextQuestion,550)}
+  mbuStudioAnswer(q,ok);if(ok){setTimeout(nextQuestion,550)}
   else{
     const f=document.getElementById("feedback");f.className="feedback bad";f.innerHTML=`<b>Incorrect.</b> ${esc(q.why)}<div class="source">${esc(q.src)} · slide/page ${esc(q.page)}</div>`;
     document.getElementById("submitBtn").classList.add("hidden");document.getElementById("nextBtn").classList.remove("hidden");
