@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SRNA Equipment and Monitoring Board Prep</title>
+<title>Quiz Bank 3 | Practice Sets</title>
 <style>
 :root{--paper:#F2F5F4;--sheet:#fff;--ink:#17252B;--mute:#5B6B71;--rule:#D3DCD9;--o2:#1E7B4F;--o2bg:#E4F3EB;--bad:#B3261E;--badbg:#FBE7E5;--n2o:#1F4E9E;--sel:#E7EEFA;--air:#C9950C;--wagd:#7B3F8C}
 @media (prefers-color-scheme:dark){:root{--paper:#0F1719;--sheet:#172226;--ink:#E4ECEA;--mute:#9AAAB0;--rule:#2A3A3F;--o2:#4CC08A;--o2bg:#12301F;--bad:#F2877D;--badbg:#3A1714;--n2o:#7FA6EE;--sel:#1C2B45;--air:#E8BE45;--wagd:#C08AD2}}
@@ -96,16 +96,16 @@ ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 }
 </style>
 
-<!-- MBU_BUILD:2026-09-24-hard100-back-dashboard-v12 -->
+<!-- MBU_BUILD:2026-09-24-bank-names-v13 -->
 </head>
 <body>
 <nav class="mbu-site-nav" aria-label="MBU-NAP navigation">
   <a href="../../">MBU-NAP Home</a>
   <a href="../">Equipment</a>
-  <a href="./">Exam 1 Dashboard</a>
+  <a href="./">Equipment Dashboard</a>
 </nav>
 <div class="wrap">
-<header><h1 id="title">Board prep dashboard</h1><div class="stats" id="stats"></div><div id="hbtns" style="display:flex;gap:6px"></div></header>
+<header><h1 id="title">Quiz Bank 3 Dashboard</h1><div class="stats" id="stats"></div><div id="hbtns" style="display:flex;gap:6px"></div></header>
 <div class="bar" id="barw"><i id="prog"></i></div>
 <main id="main"></main>
 </div>
@@ -116,8 +116,8 @@ const IMGS={"flowmeter": "iVBORw0KGgoAAAANSUhEUgAAAzQAAAH+CAIAAADF/NzbAAEAAElEQV
 const KEY="srna_equipment_dashboard_v1";
 const L="ABCDEF";
 const byId=Object.fromEntries(BANK.map(q=>[q.id,q]));
-const EXLIST=[1,2,3,4,5,7];const NAMES={1:"Exam 1",2:"Exam 2",3:"Exam 3",4:"Exam 4",5:"Exam 5",7:"Harder practice"};
-const EXM=Object.fromEntries(EXLIST.map(n=>[n,{n,ids:BANK.filter(q=>q.setn===n).map(q=>q.id)}]));const TOTAL=BANK.length;const T6NAME="Missed question review exam";
+const EXLIST=[1,2,3,4,5,7];const NAMES={1:"Practice Set 1",2:"Practice Set 2",3:"Practice Set 3",4:"Practice Set 4",5:"Practice Set 5",7:"Challenge Set"};
+const EXM=Object.fromEntries(EXLIST.map(n=>[n,{n,ids:BANK.filter(q=>q.setn===n).map(q=>q.id)}]));const TOTAL=BANK.length;const T6NAME="Missed Questions Review";
 const $=s=>document.querySelector(s);
 function esc(s){return String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]))}
 function same(a,b){return a.length===b.length&&[...a].sort().join()===[...b].sort().join()}
@@ -152,10 +152,10 @@ function setBar(p){$("#prog").style.width=(100*p)+"%"}
 function dash(){clearTimeout(timer);V={mode:"dash"};
  let A=0,C=0;EXLIST.forEach(n=>{const s=examStats(n);A+=s.a;C+=s.c});
  const pool=missedPool();const cleared=Object.keys(S.cleared).filter(k=>S.cleared[k]).length;
- header("Board prep dashboard",`<button class="danger" id="resetAll">Reset everything</button>`);
+ header("Quiz Bank 3 Dashboard",`<button class="danger" id="resetAll">Reset everything</button>`);
  $("#stats").innerHTML=`Answered <b>${A}</b> / ${TOTAL} · Correct <b>${C}</b>${A?` (${Math.round(100*C/A)}%)`:""}`;setBar(A/TOTAL);
  const lec={};BANK.forEach(q=>{const r=S.ex[q.setn].ans[q.id];if(!r)return;lec[q.lec]=lec[q.lec]||{a:0,c:0};lec[q.lec].a++;if(r.ok)lec[q.lec].c++});
- let h=`<div class="overall"><div><b>${A}</b><span>questions answered</span></div><div><b>${A?Math.round(100*C/A)+"%":"–"}</b><span>overall correct</span></div><div><b>${pool.length}</b><span>in missed pool</span></div><div><b>${cleared}</b><span>cleared in review exam</span></div></div>`;
+ let h=`<div class="overall"><div><b>${A}</b><span>questions answered</span></div><div><b>${A?Math.round(100*C/A)+"%":"–"}</b><span>overall correct</span></div><div><b>${pool.length}</b><span>in missed review</span></div><div><b>${cleared}</b><span>cleared in missed review</span></div></div>`;
  h+=`<div class="grid">`;
  const cols={1:"var(--o2)",2:"var(--n2o)",3:"var(--air)",4:"var(--wagd)",5:"var(--o2)",7:"var(--bad)"};
  for(const n of EXLIST){const s=examStats(n);const done=s.a>=s.t;
@@ -168,20 +168,20 @@ function dash(){clearTimeout(timer);V={mode:"dash"};
   <button class="danger" data-reset="${n}">Reset</button></div></section>`}
  const t6=S.t6;const inRound=t6?t6.list.length:0;const t6done=t6?Object.keys(t6.ans).length:0;
  h+=`<section class="ex t6"><h2>${T6NAME}</h2>
-  <div class="row"><span>Missed pool (all exams)</span><b>${pool.length}</b></div>
+  <div class="row"><span>Missed pool (all practice sets)</span><b>${pool.length}</b></div>
   <div class="row"><span>Current round</span><b>${t6?`${t6done} / ${inRound}`:"not started"}</b></div>
   <div class="row"><span>Rounds completed</span><b>${S.t6hist.length}</b></div>
   <div class="btns"><button class="primary" id="t6go" ${(!t6&&!pool.length)?"disabled":""}>${t6&&t6done<inRound?"Continue round":"Start new round"}</button>
   <button class="ghost" id="t6list" ${pool.length?"":"disabled"}>View pool</button></div></section>`;
  h+=`</div>`;
- if(Object.keys(lec).length){h+=`<div class="card" style="margin-top:16px"><h2 class="t">By lecture, all exams</h2><table><tr><th>Lecture</th><th>Answered</th><th>Correct</th><th>%</th></tr>${Object.entries(lec).map(([k,o])=>`<tr><td>${k}</td><td>${o.a}</td><td>${o.c}</td><td>${Math.round(100*o.c/o.a)}%</td></tr>`).join("")}</table>
- <p class="hint">The missed question review exam draws every question you've missed on Exams 1–5 and Harder practice (repeats across exams counted once). Answer one correctly there and it's cleared from the pool; miss it again on its exam and it comes back.</p></div>`}
+ if(Object.keys(lec).length){h+=`<div class="card" style="margin-top:16px"><h2 class="t">By lecture, all practice sets</h2><table><tr><th>Lecture</th><th>Answered</th><th>Correct</th><th>%</th></tr>${Object.entries(lec).map(([k,o])=>`<tr><td>${k}</td><td>${o.a}</td><td>${o.c}</td><td>${Math.round(100*o.c/o.a)}%</td></tr>`).join("")}</table>
+ <p class="hint">Missed Questions Review draws questions missed in Practice Sets 1–5 and the Challenge Set. Repeated questions count once. A correct review answer clears a question until you miss it again in its original set.</p></div>`}
  $("#main").innerHTML=h;
  const fb=$("#mbuFlagBtn");if(fb)fb.onclick=()=>mbuToggleFlag(q);
  document.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>openExam(+b.dataset.go));
  document.querySelectorAll("[data-rev]").forEach(b=>b.onclick=()=>review(+b.dataset.rev));
  document.querySelectorAll("[data-reset]").forEach(b=>b.onclick=()=>{const n=+b.dataset.reset;if(confirm(`Reset ${NAMES[n]}? This clears its answers, score, and missed list.`)){S.ex[n]=freshExam();save();dash()}});
- $("#resetAll").onclick=()=>{if(confirm("Reset all exams, Harder practice, and the review exam? This can't be undone.")){S=fresh();save();dash()}};
+ $("#resetAll").onclick=()=>{if(confirm("Reset all practice sets, the Challenge Set, and Missed Questions Review? This can't be undone.")){S=fresh();save();dash()}};
  $("#t6go").onclick=()=>{if(!S.t6||Object.keys(S.t6.ans).length>=S.t6.list.length){const p=missedPool();if(!p.length){alert("No missed questions in the pool.");return}S.t6={list:p,i:0,ans:{}}}save();openT6()};
  $("#t6list").onclick=()=>review(6);
  window.scrollTo(0,0)}

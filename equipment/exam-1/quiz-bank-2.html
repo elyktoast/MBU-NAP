@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SRNA Comprehensive Exam Bank — Sets 1–5</title>
+<title>Quiz Bank 2 | Practice Sets</title>
 <style>
 :root{--bg:#f4f7fb;--card:#fff;--ink:#172033;--muted:#64748b;--line:#dbe3ef;--accent:#1d4ed8;--ok:#166534;--okbg:#dcfce7;--bad:#991b1b;--badbg:#fee2e2;--sel:#dbeafe}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink)}
@@ -60,12 +60,12 @@ button{font:inherit}.btn{border:1px solid var(--line);background:#fff;border-rad
 <nav class="mbu-site-nav" aria-label="MBU-NAP navigation">
   <a href="../../">MBU-NAP Home</a>
   <a href="../">Equipment</a>
-  <a href="./">Exam 1 Dashboard</a>
+  <a href="./">Equipment Dashboard</a>
 </nav>
 
 <div class="wrap">
 <section id="dash">
-  <div class="top"><div><div class="title">SRNA Comprehensive Exam Bank</div><div class="sub">Sets 1–5 · 500 question slots · lecture-based board-style review</div></div><button class="btn danger" onclick="resetAll()">Reset All Progress</button></div>
+  <div class="top"><div><div class="title">Quiz Bank 2 Dashboard</div><div class="sub">Practice Sets 1–5 · 500 questions · lecture-based board-style review</div></div><button class="btn danger" onclick="resetAll()">Reset All Progress</button></div>
   <div class="summary">
     <div class="metric"><b id="doneAll">0</b><span>Answered</span></div>
     <div class="metric"><b id="correctAll">0</b><span>Correct</span></div>
@@ -74,13 +74,13 @@ button{font:inherit}.btn{border:1px solid var(--line);background:#fff;border-rad
   </div>
   <div class="grid" id="setGrid"></div>
   <div class="panel" style="padding:18px;margin-top:18px">
-    <div class="top" style="margin:0"><div><b>Cumulative Missed Review</b><div class="small">Review missed questions from all five sets.</div></div><button class="btn" onclick="startAllMissed()">Review All Missed</button></div>
+    <div class="top" style="margin:0"><div><b>Missed Questions Review</b><div class="small">Review missed questions from all five practice sets.</div></div><button class="btn" onclick="startAllMissed()">Review Missed Questions</button></div>
   </div>
 </section>
 
 <section id="quiz" class="hidden quiz">
   <div class="qhead">
-    <div style="display:flex;gap:8px;align-items:center"><button class="btn" onclick="goDash()">← Main Dashboard</button><button class="btn" id="mbuFlagBtn" onclick="mbuToggleFlag(SETS[current().si][current().qi])">☆ Flag</button><button class="btn" onclick="mbuReportQuestion(SETS[current().si][current().qi])">Report</button><button class="btn" onclick="document.getElementById('mbuNavigator').classList.toggle('hidden')">Navigator</button></div>
+    <div style="display:flex;gap:8px;align-items:center"><button class="btn" onclick="goDash()">← Back to Quiz Bank 2 Dashboard</button><button class="btn" id="mbuFlagBtn" onclick="mbuToggleFlag(SETS[current().si][current().qi])">☆ Flag</button><button class="btn" onclick="mbuReportQuestion(SETS[current().si][current().qi])">Report</button><button class="btn" onclick="document.getElementById('mbuNavigator').classList.toggle('hidden')">Navigator</button></div>
     <div style="display:flex;gap:8px;align-items:center"><div class="pill" id="missedCount"></div><div class="pill" id="progress"></div></div>
   </div>
   <div id="mbuNavigator" class="hidden" style="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px"></div><div class="qcard">
@@ -97,7 +97,7 @@ button{font:inherit}.btn{border:1px solid var(--line);background:#fff;border-rad
 </section>
 
 <section id="review" class="hidden">
-  <div class="top"><div><div class="title" id="reviewTitle">Missed Questions</div><div class="sub">Questions remain here until answered correctly in a quiz attempt.</div></div><button class="btn" onclick="goDash()">← Main Dashboard</button></div>
+  <div class="top"><div><div class="title" id="reviewTitle">Missed Questions</div><div class="sub">Questions remain here until answered correctly in a quiz attempt.</div></div><button class="btn" onclick="goDash()">← Back to Quiz Bank 2 Dashboard</button></div>
   <div class="panel" style="padding:18px" id="reviewList"></div>
 </section>
 </div>
@@ -133,7 +133,7 @@ function renderDash(){
   SETS.forEach((qs,i)=>{
     const a=stats(i);td+=a.done;tc+=a.cor;tm+=a.miss;
     const d=document.createElement("div");d.className="setcard";
-    d.innerHTML=`<h3>Exam Set ${i+1}</h3><div class="stats">${a.done}/100 answered · ${a.cor} correct<br>${a.miss} missed saved</div><div class="bar"><div style="width:${a.done}%"></div></div><div class="actions"><button class="btn primary" onclick="startSet(${i})">${a.done?"Continue":"Start"} Set ${i+1}</button><button class="btn" onclick="startMissed(${i})">Missed</button><button class="btn danger" onclick="resetSet(${i})">Reset</button></div>`;
+    d.innerHTML=`<h3>Practice Set ${i+1}</h3><div class="stats">${a.done}/100 answered · ${a.cor} correct<br>${a.miss} missed saved</div><div class="bar"><div style="width:${a.done}%"></div></div><div class="actions"><button class="btn primary" onclick="startSet(${i})">${a.done?"Continue":"Start"} Practice Set ${i+1}</button><button class="btn" onclick="startMissed(${i})">Missed</button><button class="btn danger" onclick="resetSet(${i})">Reset</button></div>`;
     g.appendChild(d);
   });
   document.getElementById("doneAll").textContent=td;document.getElementById("correctAll").textContent=tc;document.getElementById("missedAll").textContent=tm;
@@ -159,7 +159,7 @@ function showQ(){
   document.getElementById("dash").classList.add("hidden");document.getElementById("review").classList.add("hidden");document.getElementById("quiz").classList.remove("hidden");
   selected=new Set();locked=false;xmode=false;
   const c=current(),q=SETS[c.si][c.qi];document.getElementById('mbuNavigator').innerHTML=order.map((x,i)=>{const qq=SETS[x.si??activeSet][x.qi??x];return mbuNavButton(i,i+1,i===pos,mbuIsFlagged(qq),'pos='+i+';showQ()',(()=>{const xx=order[i],si=xx.si??activeSet,qi=xx.qi??xx,aa=st(si).answered;return Object.prototype.hasOwnProperty.call(aa,qi)?!!aa[qi]:null})())}).join('');
-  document.getElementById("progress").textContent=`Set ${c.si+1} · Question ${c.qi+1}/100`;
+  document.getElementById("progress").textContent=`Practice Set ${c.si+1} · Question ${c.qi+1}/100`;
   document.getElementById("missedCount").textContent=`Missed: ${st(c.si).missed.length}`;
   document.getElementById("meta").textContent=`${q.topic}${q.correct.length>1?" · Select "+(q.correct.length===2?"TWO":"THREE"):""}`;
   document.getElementById("stem").textContent=q.q;
@@ -199,15 +199,15 @@ function submitAnswer(){
 }
 function nextQuestion(){if(pos+1<order.length){pos++;showQ()}else{goDash()}}
 function goDash(){renderDash()}
-function resetSet(si){if(confirm(`Reset all progress for Set ${si+1}?`)){state.sets[si]={answered:{},missed:[]};save();renderDash()}}
+function resetSet(si){if(confirm(`Reset all progress for Practice Set ${si+1}?`)){state.sets[si]={answered:{},missed:[]};save();renderDash()}}
 function resetAll(){if(confirm("Reset progress for all five sets?")){state={sets:{}};save();renderDash()}}
 function showReview(si){
   document.getElementById("dash").classList.add("hidden");document.getElementById("quiz").classList.add("hidden");document.getElementById("review").classList.remove("hidden");
   const list=document.getElementById("reviewList");list.innerHTML="";let arr=[];
-  if(si>=0){st(si).missed.forEach(qi=>arr.push({si,qi}));document.getElementById("reviewTitle").textContent=`Set ${si+1} Missed Questions`;}
-  else{SETS.forEach((_,s)=>st(s).missed.forEach(qi=>arr.push({si:s,qi})));document.getElementById("reviewTitle").textContent="Cumulative Missed Questions";}
+  if(si>=0){st(si).missed.forEach(qi=>arr.push({si,qi}));document.getElementById("reviewTitle").textContent=`Practice Set ${si+1} Missed Questions`;}
+  else{SETS.forEach((_,s)=>st(s).missed.forEach(qi=>arr.push({si:s,qi})));document.getElementById("reviewTitle").textContent="Missed Questions Review";}
   if(!arr.length){list.innerHTML='<div class="small">No missed questions saved.</div>';return}
-  arr.forEach(x=>{const q=SETS[x.si][x.qi],d=document.createElement("div");d.className="reviewrow";d.innerHTML=`<b>Set ${x.si+1}, Q${x.qi+1}</b> · ${esc(q.q)}<div class="small">${esc(q.topic)}</div>`;list.appendChild(d)})
+  arr.forEach(x=>{const q=SETS[x.si][x.qi],d=document.createElement("div");d.className="reviewrow";d.innerHTML=`<b>Practice Set ${x.si+1}, Q${x.qi+1}</b> · ${esc(q.q)}<div class="small">${esc(q.topic)}</div>`;list.appendChild(d)})
 }
 document.addEventListener("keydown",e=>{
   if(document.getElementById("quiz").classList.contains("hidden"))return;
