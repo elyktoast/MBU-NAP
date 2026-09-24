@@ -8628,8 +8628,6 @@ document.addEventListener('keydown',e=>{let m=document.getElementById('mbu-calc-
 document.addEventListener('click',e=>{let m=document.getElementById('mbu-calc-modal');if(e.target===m)mbuCalcClose()})})();
 </script>
 
-<script id="mbu-auto-refresh-script">
-/* MBU_BUILD:2026-09-24-advanced-expression-calc-v2 */
-(function(){const BUILD="2026-09-24-advanced-expression-calc-v2";async function check(){try{const u=new URL(location.href);u.searchParams.set("_mbu_update_check",Date.now());const r=await fetch(u.toString(),{cache:"no-store"});if(!r.ok)return;const t=await r.text();const m=t.match(/MBU_BUILD:([^ *<]+)/);if(m&&m[1]!==BUILD){location.reload();}}catch(e){}}setInterval(check,60000);setTimeout(check,8000)})();
-</script>
+<!-- MBU_BUILD:2026-09-24-bank1-autoupdate-v3 -->
+<script src="../assets/auto-update.js?v=6"></script>
 </body></html>
