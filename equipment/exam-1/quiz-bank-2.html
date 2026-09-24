@@ -193,7 +193,7 @@ function submitAnswer(){
   const s=st(c.si);s.answered[c.qi]=ok;
   if(ok)s.missed=s.missed.filter(x=>x!==c.qi);else if(!s.missed.includes(c.qi))s.missed.push(c.qi);save();
   document.getElementById("missedCount").textContent=`Missed: ${s.missed.length}`;
-  mbuStudioAnswer(q,ok);if(ok){setTimeout(nextQuestion,550)}
+  mbuStudioAnswer(q,ok);if(ok){setTimeout(nextQuestion,650)}
   else{
     const f=document.getElementById("feedback");f.className="feedback bad";f.innerHTML=`<b>Incorrect.</b> ${esc(q.why)}<div class="source">${esc(q.src)} · slide/page ${esc(q.page)}</div>`;
     document.getElementById("submitBtn").classList.add("hidden");document.getElementById("nextBtn").classList.remove("hidden");
