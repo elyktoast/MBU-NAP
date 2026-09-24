@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MBU-NAP Study Center</title>
+
+<style>
+:root {
+    --navy: #1a365d;
+    --blue: #2b6cb0;
+    --background: #edf2f7;
+    --card: #ffffff;
+    --text: #2d3748;
+    --muted: #718096;
+    --border: #cbd5e0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, Helvetica, Arial, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+    color: var(--navy);
+}
+
+.subtitle {
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 16px;
+}
+
+.section-title {
+    margin: 25px 0 15px;
+    font-size: 20px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 18px;
+}
+
+.course-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.05);
+}
+
+.course-card h2 {
+    margin: 0 0 8px;
+    color: var(--navy);
+}
+
+.course-card p {
+    color: var(--muted);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.button {
+    display: inline-block;
+    background: var(--navy);
+    color: white;
+    text-decoration: none;
+    padding: 11px 18px;
+    border-radius: 7px;
+    font-weight: 700;
+}
+
+.button:hover {
+    background: var(--blue);
+}
+
+footer {
+    margin-top: 40px;
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 14px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <h1>MBU-NAP</h1>
+    <div class="subtitle">Nurse Anesthesia Study Center</div>
+</header>
+
+<div class="section-title">
+    <strong>Courses</strong>
+</div>
+
+<div class="course-grid">
+
+    <div class="course-card">
+        <h2>Equipment</h2>
+
+        <p>
+            Anesthesia equipment, monitoring, airway equipment,
+            medical gases, breathing systems, and related concepts.
+        </p>
+
+        <a class="button" href="equipment/">
+            Open Course →
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    MBU Nurse Anesthesia Program
+</footer>
+
+</div>
+
+</body>
+</html>
