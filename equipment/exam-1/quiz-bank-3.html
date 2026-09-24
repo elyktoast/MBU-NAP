@@ -96,6 +96,16 @@ ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 }
 </style>
 
+<style id="mbu-calculator-style">
+#mbu-calc-open{position:fixed;right:18px;bottom:18px;z-index:9998;border:0;border-radius:999px;background:#1a365d;color:#fff;padding:12px 17px;font-weight:800;font-size:15px;box-shadow:0 5px 18px #0003;cursor:pointer}
+#mbu-calc-modal{display:none;position:fixed;inset:0;z-index:9999;background:#0008;align-items:center;justify-content:center;padding:14px}
+#mbu-calc-modal.open{display:flex}.mbu-calc{width:min(430px,100%);max-height:92vh;overflow:auto;background:#f7fafc;border-radius:14px;padding:16px;box-shadow:0 12px 35px #0006;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.mbu-calc-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.mbu-calc-head strong{font-size:18px;color:#1a365d}.mbu-calc-close{border:0;background:transparent;font-size:28px;cursor:pointer;color:#4a5568}
+#mbu-calc-display{width:100%;height:64px;border:1px solid #a0aec0;border-radius:9px;background:#fff;padding:8px 12px;text-align:right;font-size:24px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;margin-bottom:10px}
+.mbu-calc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.mbu-calc-grid button{min-height:46px;border:1px solid #cbd5e0;border-radius:8px;background:#fff;color:#1a202c;font-size:15px;font-weight:700;cursor:pointer}
+.mbu-calc-grid .op{background:#edf2f7;color:#1a365d}.mbu-calc-grid .eq{background:#1a365d;color:#fff}.mbu-calc-grid .danger{color:#9b2c2c}.mbu-calc-note{font-size:11px;color:#718096;margin-top:9px;text-align:center}
+@media(max-width:600px){#mbu-calc-open{right:12px;bottom:12px;padding:11px 14px}.mbu-calc{padding:12px}.mbu-calc-grid{gap:5px}.mbu-calc-grid button{min-height:43px;font-size:14px}}
+</style>
 </head>
 <body>
 <nav class="mbu-site-nav" aria-label="MBU-NAP navigation">
@@ -248,4 +258,35 @@ document.addEventListener("keydown",e=>{if($("#lb").classList.contains("on")){if
  let k=e.key.toUpperCase();if(/^[1-6]$/.test(k))k=L[+k-1];const i=L.indexOf(k);
  if(i>=0&&i<q.c.length&&k.length===1){e.preventDefault();e.shiftKey?cross(q,i):pick(q,i)}});
 dash();
-</script></body></html>
+</script><button id="mbu-calc-open" type="button" onclick="mbuCalcOpen()">Scientific Calculator</button>
+<div id="mbu-calc-modal" role="dialog" aria-modal="true" aria-label="Scientific calculator"><div class="mbu-calc">
+<div class="mbu-calc-head"><strong>Scientific Calculator</strong><button class="mbu-calc-close" type="button" onclick="mbuCalcClose()">&times;</button></div>
+<input id="mbu-calc-display" type="text" inputmode="decimal" autocomplete="off" spellcheck="false">
+<div class="mbu-calc-grid">
+<button class="danger" onclick="mbuCalcClear()">AC</button><button onclick="mbuCalcBack()">⌫</button><button class="op" onclick="mbuCalcInsert('(')">(</button><button class="op" onclick="mbuCalcInsert(')')">)</button><button class="op" onclick="mbuCalcInsert('/')">÷</button>
+<button class="op" onclick="mbuCalcFunc('sin')">sin</button><button class="op" onclick="mbuCalcFunc('cos')">cos</button><button class="op" onclick="mbuCalcFunc('tan')">tan</button><button class="op" onclick="mbuCalcInsert('^')">xʸ</button><button class="op" onclick="mbuCalcInsert('*')">×</button>
+<button class="op" onclick="mbuCalcFunc('asin')">sin⁻¹</button><button class="op" onclick="mbuCalcFunc('acos')">cos⁻¹</button><button class="op" onclick="mbuCalcFunc('atan')">tan⁻¹</button><button class="op" onclick="mbuCalcFunc('sqrt')">√</button><button class="op" onclick="mbuCalcInsert('-')">−</button>
+<button class="op" onclick="mbuCalcFunc('ln')">ln</button><button class="op" onclick="mbuCalcFunc('log')">log</button><button class="op" onclick="mbuCalcInsert('pi')">π</button><button class="op" onclick="mbuCalcInsert('e')">e</button><button class="op" onclick="mbuCalcInsert('+')">+</button>
+<button onclick="mbuCalcInsert('7')">7</button><button onclick="mbuCalcInsert('8')">8</button><button onclick="mbuCalcInsert('9')">9</button><button class="op" onclick="mbuCalcFunc('square')">x²</button><button class="op" onclick="mbuCalcInsert('%')">%</button>
+<button onclick="mbuCalcInsert('4')">4</button><button onclick="mbuCalcInsert('5')">5</button><button onclick="mbuCalcInsert('6')">6</button><button class="op" onclick="mbuCalcFunc('recip')">1/x</button><button class="op" onclick="mbuCalcToggleSign()">±</button>
+<button onclick="mbuCalcInsert('1')">1</button><button onclick="mbuCalcInsert('2')">2</button><button onclick="mbuCalcInsert('3')">3</button><button onclick="mbuCalcInsert('0')">0</button><button onclick="mbuCalcInsert('.')">.</button>
+<button class="op" onclick="mbuCalcInsert('EE')">EE</button><button class="op" onclick="mbuCalcFunc('exp')">eˣ</button><button class="op" onclick="mbuCalcFunc('tenpow')">10ˣ</button><button class="op" onclick="mbuCalcAns()">Ans</button><button class="eq" onclick="mbuCalcEvaluate()">=</button>
+</div><div class="mbu-calc-note">Trig functions use degrees. EE enters scientific notation.</div></div></div>
+<script id="mbu-calculator-script">
+(function(){let lastAnswer=0;const d=()=>document.getElementById('mbu-calc-display');
+window.mbuCalcOpen=()=>{document.getElementById('mbu-calc-modal').classList.add('open');setTimeout(()=>d().focus(),0)};
+window.mbuCalcClose=()=>document.getElementById('mbu-calc-modal').classList.remove('open');
+window.mbuCalcInsert=v=>{if(d().value==='Error')d().value='';d().value+=v==='EE'?'E':v;d().focus()};
+window.mbuCalcClear=()=>d().value='';window.mbuCalcBack=()=>d().value=d().value.slice(0,-1);window.mbuCalcAns=()=>d().value+=String(lastAnswer);
+window.mbuCalcToggleSign=()=>{d().value=d().value?'-('+d().value+')':'-'};
+window.mbuCalcFunc=fn=>{let x=d().value||'0';if(fn==='square')d().value='('+x+')^2';else if(fn==='recip')d().value='1/('+x+')';else if(fn==='exp')d().value='e^('+x+')';else if(fn==='tenpow')d().value='10^('+x+')';else d().value=fn+'('+x+')'};
+function ev(s){if(!s.trim())return 0;if(!/^[0-9+\-*/^().,%\sA-Za-z]+$/.test(s))throw Error();
+let x=s.replace(/\bpi\b/gi,'PI').replace(/\be\b/g,'EULER').replace(/\^/g,'**').replace(/(\d+(?:\.\d+)?|\([^()]*\))%/g,'($1/100)');
+const F={sin:v=>Math.sin(v*Math.PI/180),cos:v=>Math.cos(v*Math.PI/180),tan:v=>Math.tan(v*Math.PI/180),asin:v=>Math.asin(v)*180/Math.PI,acos:v=>Math.acos(v)*180/Math.PI,atan:v=>Math.atan(v)*180/Math.PI,sqrt:Math.sqrt,ln:Math.log,log:Math.log10};
+for(const n of Object.keys(F))x=x.replace(new RegExp('\\b'+n+'\\b','g'),'F.'+n);x=x.replace(/\bPI\b/g,'Math.PI').replace(/\bEULER\b/g,'Math.E');
+const r=Function('F','Math','"use strict";return ('+x+');')(F,Math);if(typeof r!=='number'||!Number.isFinite(r))throw Error();return r}
+window.mbuCalcEvaluate=()=>{try{let r=ev(d().value);lastAnswer=r;d().value=Number.isInteger(r)?String(r):String(Number(r.toPrecision(12)))}catch(e){d().value='Error'}};
+document.addEventListener('keydown',e=>{let m=document.getElementById('mbu-calc-modal');if(!m||!m.classList.contains('open'))return;if(e.key==='Escape')mbuCalcClose();if(e.key==='Enter'){e.preventDefault();mbuCalcEvaluate()}});
+document.addEventListener('click',e=>{let m=document.getElementById('mbu-calc-modal');if(e.target===m)mbuCalcClose()})})();
+</script>
+</body></html>
