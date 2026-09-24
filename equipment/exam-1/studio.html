@@ -52,10 +52,14 @@ function checkedValues(id){return [...document.querySelectorAll('#'+id+' input[t
 function setLabel(q){if(q.bank==='h1'||q.bank==='h2'||q.bank==='h3')return q.bankLabel;return q.set===6?'Challenge Set':'Practice Set '+q.set}
 function sourceSetKey(q){return q.bank+':'+q.set}
 function buildTopics(){
-  const groups=[...new Map(ALL.map(q=>[q.bank,q.bankLabel])).entries()];
-  document.getElementById('sourceChecks').innerHTML=groups.map(([bank,label])=>{
-    const sets=[...new Map(ALL.filter(q=>q.bank===bank).map(q=>[sourceSetKey(q),setLabel(q)])).entries()];
-    return `<div style="margin-bottom:10px"><b>${esc(label)}</b><div style="display:grid;gap:5px;margin:5px 0 0 12px">${sets.map(([key,name])=>`<label class="checkitem"><input type="checkbox" value="${esc(key)}" checked> <span>${esc(name)} <span class="mut">(${ALL.filter(q=>sourceSetKey(q)===key).length})</span></span></label>`).join('')}</div></div>`
+  const groupDefs=[
+    ...[...new Map(ALL.filter(q=>!String(q.bank).startsWith('h')).map(q=>[q.bank,q.bankLabel])).entries()].map(([bank,label])=>({label,banks:[bank]})),
+    {label:'Workstation Hazards',banks:['h1','h2','h3']}
+  ];
+  document.getElementById('sourceChecks').innerHTML=groupDefs.map(g=>{
+    const pool=ALL.filter(q=>g.banks.includes(q.bank));
+    const sets=[...new Map(pool.map(q=>[sourceSetKey(q),setLabel(q)])).entries()];
+    return `<div style="margin-bottom:14px"><b>${esc(g.label)}</b><div style="display:grid;gap:5px;margin:5px 0 0 12px">${sets.map(([key,name])=>`<label class="checkitem"><input type="checkbox" value="${esc(key)}" checked> <span>${esc(name)} <span class="mut">(${ALL.filter(q=>sourceSetKey(q)===key).length})</span></span></label>`).join('')}</div></div>`
   }).join('');
   const ts=[...new Set(ALL.map(q=>q.topic))].sort();
   document.getElementById('topicChecks').innerHTML=ts.map(x=>`<label class="checkitem"><input type="checkbox" value="${esc(x)}" checked> <span>${esc(x)} <span class="mut">(${ALL.filter(q=>q.topic===x).length})</span></span></label>`).join('')
@@ -76,4 +80,4 @@ function doSearch(){let x=document.getElementById('searchbox').value.trim().toLo
 function reportCurrent(){let hadAuto=!!autoTimer;clearTimeout(autoTimer);autoTimer=null;let q=session[pos],reason=prompt('Report reason: wrong answer, ambiguous, typo, explanation issue, source issue, or other');if(reason){DB.reports.push({uid:q.uid,bank:q.bank,bankLabel:q.bankLabel,stem:q.stem,reason,date:new Date().toISOString()});saveActive();alert('Report saved on this device.')}if(hadAuto&&graded&&DB.ans[q.uid]&&DB.ans[q.uid].ok)autoTimer=setTimeout(()=>nextQ(),650)}
 function showReports(){show('reports');document.getElementById('reportlist').innerHTML=DB.reports.map((r,i)=>`<div class="reportrow"><b>${esc(r.bankLabel||r.bank)}</b> · ${esc(r.reason)}<div>${esc(r.stem)}</div><button class="btn bad" onclick="DB.reports.splice(${i},1);save();showReports()">Delete</button></div>`).join('')||'<div class="mut">No reports saved.</div>'}
 loadBanks();
-</script><script src="../assets/calculator.js?v=7"></script><script>/* MBU_BUILD:2026-09-24-studio-practice-set-picker-v15 */</script><script src="../assets/auto-update.js?v=8"></script></body></html>
+</script><script src="../assets/calculator.js?v=7"></script><script>/* MBU_BUILD:2026-09-24-studio-hazards-grouped-v16 */</script><script src="../assets/auto-update.js?v=8"></script></body></html>
