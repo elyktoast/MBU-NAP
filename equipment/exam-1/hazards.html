@@ -9,6 +9,7 @@
 </head><body><div class="wrap"><section class="panel">
 <div class="hero"><div><h1>Workstation Hazards</h1><p>350 questions across 3 focused practice sets plus a 50-question Challenge Set.</p></div><div class="mini">Anesthesia Workstation Hazards &amp; Safety</div></div>
 <div class="grid">
+<div class="card" style="grid-column:1/-1"><h3>Missed Questions Review</h3><div class="mini">Review missed Workstation Hazards questions by practice set. <strong id="hazMissedTotal">0 missed total</strong></div><div id="hazMissedButtons" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"></div></div>
 <div class="card"><h3>Practice Set 1</h3><div class="mini"><strong>Created with ChatGPT</strong><br>100 focused board-style questions.</div><a class="btn" href="hazards-100.html?quiz=1">Open Practice Set 1 →</a></div>
 <div class="card"><h3>Practice Set 2</h3><div class="mini"><strong>Created with Gemini</strong><br>100 additional Workstation Hazards &amp; Safety questions.</div><a class="btn" href="hazards-bank-2.html?quiz=1">Open Practice Set 2 →</a></div>
 <div class="card"><h3>Practice Set 3</h3><div class="mini"><strong>Created with Claude</strong><br>100 additional questions, including figure-based items.</div><a class="btn" href="hazards-bank-3.html">Open Practice Set 3 →</a></div>
@@ -16,5 +17,22 @@
 </div>
 <div class="back"><a class="btn out" href="index.html">← Exam 1 Dashboard</a></div>
 </section></div>
-<!-- MBU_BUILD:2026-09-24-hazards-creators-v5 -->
+<!-- MBU_BUILD:2026-09-24-hazards-missed-review-v6 -->
+<script>
+(function(){
+ const defs=[
+  ['Practice Set 1','SRNA_HAZARDS_BANK_1_2026_V2','hazards-100.html?review=1','array'],
+  ['Practice Set 2','SRNA_HAZARDS_BANK_2_2026_V1','hazards-bank-2.html?review=1','array'],
+  ['Practice Set 3','hazards_practice3_progress_2026_V2','hazards-bank-3.html?review=1','answers'],
+  ['Challenge Set','srna_hazards_safety_harder_v1','hazards-harder.html?review=1','answers']
+ ];
+ let total=0,html='';
+ defs.forEach(([label,key,url,type])=>{
+   let n=0;try{const d=JSON.parse(localStorage.getItem(key)||'null');if(d)n=type==='array'?(Array.isArray(d.missed)?d.missed.length:0):Object.values(d.ans||{}).filter(x=>x&&!x.ok).length}catch(e){}
+   total+=n;html+='<a class="btn'+(n?'':' out')+'" '+(n?'href="'+url+'"':'aria-disabled="true" style="pointer-events:none;opacity:.55"')+'>'+label+' ('+n+')</a>'
+ });
+ document.getElementById('hazMissedTotal').textContent=total+' missed total';
+ document.getElementById('hazMissedButtons').innerHTML=html;
+})();
+</script>
 <script src="../assets/auto-update.js?v=8"></script></body></html>
