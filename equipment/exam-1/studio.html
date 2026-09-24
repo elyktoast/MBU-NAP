@@ -38,7 +38,7 @@ async function loadBanks(){
     ['hazards-100.html','h1','Hazards Practice Set 1'],
     ['hazards-bank-2.html','h2','Hazards Practice Set 2'],
     ['hazards-bank-3.html','h3','Hazards Practice Set 3'],
-    ['hazards-harder.html','hh','Hazards Challenge Set (Harder)']
+    ['hazards-harder.html','hh','Hazards Challenge Set']
   ];
   let done=0;studioStatus(done,sources.length,errors);
   await Promise.all(sources.map(async([url,key,label])=>{
@@ -52,6 +52,7 @@ async function loadBanks(){
         const raw=arrAfter(t,'const BANK');if(!raw)throw Error('BANK not found');const im=t.match(/const IMGS=(\{[\s\S]*?\});/),images=im?JSON.parse(im[1]):{};ALL.push(...evalArr(raw).map((q,i)=>norm({...q,img:q.img&&images[q.img]?'data:image/png;base64,'+images[q.img]:null},'b3',q.setn||1,i,'Quiz Bank 3')))
       }else{
         const raw=arrAfter(t,(key==='h3'||key==='hh')?'const BANK':'const QUESTIONS');if(!raw)throw Error('question array not found');let qs=evalArr(raw),images={};
+        if(key==='h2'&&qs.length<100){const extraRaw=arrAfter(t,'additionalHazards');if(!extraRaw)throw Error('additionalHazards not found');const extra=evalArr(extraRaw);for(let n=qs.length+1;n<=100;n++){const base=extra[(n-31)%extra.length];qs.push({id:n,type:'single',stem:base.stem,options:base.options,answer:base.answer,explanation:base.exp,citation:'Anesthesia Workstation Hazards & Safety, '+base.cit})}}
         if(key==='h3'||key==='hh'){const im=t.match(/const IMGS=(\{[\s\S]*?\});/);images=im?JSON.parse(im[1]):{}}
         ALL.push(...qs.map((q,i)=>norm({...q,img:q.img&&images[q.img]?'data:image/png;base64,'+images[q.img]:(q.imageSvg||null)},key,1,i,label,'Workstation Hazards')))
       }
@@ -63,8 +64,8 @@ async function loadBanks(){
   const loadedBanks=new Set(ALL.map(q=>q.bank)).size;
   document.getElementById('loadmsg').textContent=ALL.length+' questions loaded from '+loadedBanks+' sources'+(errors.length?' · Unavailable: '+errors.join(' | '):'');
 }
-function canonicalTopic(topic){const name=String(topic||'Other').trim();if(/^co(?:2|₂)?\s*(?:&|and)\s*scavenging/i.test(name))return 'CO₂ & Scavenging';if(/^medical gas(?:es)?/i.test(name))return 'Medical Gases';if(/^airway equipment/i.test(name))return 'Airway';if(/^intraoperative assessment|^monitoring/i.test(name))return 'Monitoring';if(/^anesthesia workstation hazards|^hazards\s*&\s*safety/i.test(name))return 'Workstation Hazards';return name}
-function inferredTopic(q){if(q.topic)return q.topic;if(q.lec)return q.lec;if(q.concept)return q.concept;const refs=Array.isArray(q.ref)?q.ref.join('; '):'';const src=String(q.citation||q.src||refs||'').trim();if(/^Medical Gas Systems in Anesthesia/i.test(src))return 'Medical Gases';if(/^Intraoperative Assessment|^Monitoring/i.test(src))return 'Monitoring';if(/^Airway Equipment/i.test(src))return 'Airway';if(/^CO2 Absorbents and Scavenging|^CO₂ & Scavenging/i.test(src))return 'CO₂ & Scavenging';if(/^Anesthesia Workstation Hazards|^Hazards & safety/i.test(src))return 'Workstation Hazards';return 'Other'}
+function canonicalTopic(topic){const name=String(topic||'Other').trim();const low=name.toLowerCase().replace(/₂/g,'2');if(low.includes('co2')&&low.includes('scaveng'))return 'CO₂ & Scavenging';if(low.includes('medical gas'))return 'Medical Gases';if(low.includes('airway equipment')||low==='airway')return 'Airway';if(low.includes('intraoperative assessment')||low.startsWith('monitoring'))return 'Monitoring';if(low.includes('workstation hazards')||low.includes('hazards & safety'))return 'Workstation Hazards';return name}
+function inferredTopic(q){if(q.topic)return q.topic;if(q.lec)return q.lec;const refs=Array.isArray(q.ref)?q.ref.join('; '):'';const src=String(q.citation||q.src||refs||'').trim();if(/^Medical Gas Systems in Anesthesia/i.test(src))return 'Medical Gases';if(/^Intraoperative Assessment|^Monitoring/i.test(src))return 'Monitoring';if(/^Airway Equipment/i.test(src))return 'Airway';if(/^CO2 Absorbents and Scavenging|^CO₂ & Scavenging/i.test(src))return 'CO₂ & Scavenging';if(/^Anesthesia Workstation Hazards|^Hazards & safety/i.test(src))return 'Workstation Hazards';return 'Other'}
 function norm(q,b,set,i,label,forcedTopic){return{uid:b+'-'+(q.id??(set+'-'+i)),bank:b,bankLabel:label||b,set,topic:canonicalTopic(forcedTopic||inferredTopic(q)),stem:q.stem||q.q||'',opts:q.options||q.c||[],ans:q.answer||q.correct||q.a||[],exp:q.explanation||q.why||q.exp||'',src:q.citation||((q.src||'')+(q.page?' · '+q.page:''))||(q.ref||[]).join('; '),img:q.imageSvg||q.img||null}}
 function syncBankData(){
   try{
@@ -85,7 +86,7 @@ function syncBankData(){
 }
 function setChecks(id,on){document.querySelectorAll('#'+id+' input[type=checkbox]').forEach(x=>x.checked=on)}
 function checkedValues(id){return [...document.querySelectorAll('#'+id+' input[type=checkbox]:checked')].map(x=>x.value)}
-function setLabel(q){if(q.bank==='hh')return 'Challenge Set (Harder)';if(q.bank==='h1'||q.bank==='h2'||q.bank==='h3')return q.bankLabel;return q.set===7?'Challenge Set':'Practice Set '+q.set}
+function setLabel(q){if(q.bank==='hh')return 'Challenge Set';if(q.bank==='h1'||q.bank==='h2'||q.bank==='h3')return q.bankLabel;return q.set===7?'Challenge Set':'Practice Set '+q.set}
 function sourceSetKey(q){return q.bank+':'+q.set}
 function buildTopics(){
   const groupDefs=[
@@ -94,7 +95,7 @@ function buildTopics(){
   ];
   document.getElementById('sourceChecks').innerHTML=groupDefs.map(g=>{
     const pool=ALL.filter(q=>g.banks.includes(q.bank));
-    const sets=[...new Map(pool.map(q=>[sourceSetKey(q),setLabel(q)])).entries()];
+    const order=g.label==='Workstation Hazards'?['h1:1','h2:1','h3:1','hh:1']:null;let sets=[...new Map(pool.map(q=>[sourceSetKey(q),setLabel(q)])).entries()];if(order)sets.sort((a,b)=>order.indexOf(a[0])-order.indexOf(b[0]));
     return `<div style="margin-bottom:14px"><b>${esc(g.label)}</b><div style="display:grid;gap:5px;margin:5px 0 0 12px">${sets.map(([key,name])=>`<label class="checkitem"><input type="checkbox" value="${esc(key)}" checked> <span>${esc(name)} <span class="mut">(${ALL.filter(q=>sourceSetKey(q)===key).length})</span></span></label>`).join('')}</div></div>`
   }).join('');
   const ts=[...new Set(ALL.map(q=>q.topic))].sort();
@@ -116,4 +117,4 @@ function doSearch(){let x=document.getElementById('searchbox').value.trim().toLo
 function reportCurrent(){let hadAuto=!!autoTimer;clearTimeout(autoTimer);autoTimer=null;let q=session[pos],reason=prompt('Report reason: wrong answer, ambiguous, typo, explanation issue, source issue, or other');if(reason){DB.reports.push({uid:q.uid,bank:q.bank,bankLabel:q.bankLabel,stem:q.stem,reason,date:new Date().toISOString()});saveActive();alert('Report saved on this device.')}if(hadAuto&&graded&&DB.ans[q.uid]&&DB.ans[q.uid].ok)autoTimer=setTimeout(()=>nextQ(),650)}
 function showReports(){show('reports');document.getElementById('reportlist').innerHTML=DB.reports.map((r,i)=>`<div class="reportrow"><b>${esc(r.bankLabel||r.bank)}</b> · ${esc(r.reason)}<div>${esc(r.stem)}</div><button class="btn bad" onclick="DB.reports.splice(${i},1);save();showReports()">Delete</button></div>`).join('')||'<div class="mut">No reports saved.</div>'}
 loadBanks();
-</script><script src="../assets/calculator.js?v=7"></script><script>/* MBU_BUILD:2026-09-24-studio-resilient-v21 */</script><script src="../assets/auto-update.js?v=8"></script></body></html>
+</script><script src="../assets/calculator.js?v=7"></script><script>/* MBU_BUILD:2026-09-24-studio-topics-hazards-v22 */</script><script src="../assets/auto-update.js?v=8"></script></body></html>
