@@ -60,11 +60,13 @@ h1 {
 
 .grid {
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    grid-template-columns:repeat(2,minmax(0,1fr));
     gap:18px;
 }
 
 .card {
+    display:flex;
+    flex-direction:column;
     background:var(--card);
     border:1px solid var(--border);
     border-radius:12px;
@@ -104,6 +106,8 @@ h1 {
     padding:11px 18px;
     border-radius:7px;
     font-weight:700;
+    align-self:flex-start;
+    margin-top:auto;
 }
 
 .btn:hover {
@@ -122,10 +126,11 @@ h1 {
 @media(max-width:600px) {
     .container { padding:20px 14px; }
     h1 { font-size:27px; }
+    .grid { grid-template-columns:1fr; }
 }
 </style>
-<link rel="stylesheet" href="../assets/site-nav.css?v=1">
-<script defer src="../assets/site-nav.js?v=1" data-page="exam"></script>
+<link rel="stylesheet" href="../assets/site-nav.css?v=2">
+<script defer src="../assets/site-nav.js?v=2" data-page="exam"></script>
 </head>
 
 <body>
@@ -146,7 +151,7 @@ h1 {
     <div class="card" style="border:2px solid var(--navy);">
         <div class="number">★</div>
         <h2>Exam 1 Study Studio</h2>
-        <p>All-bank practice, cumulative missed review, flags, topic analytics, weak-area practice, search, custom sessions, and question reports.</p>
+        <p>Mixed practice, missed review, flags, topic trends, search, and reports.</p>
         <a class="btn" href="studio.html">Open Study Studio →</a>
     </div>
 
@@ -167,7 +172,7 @@ h1 {
     <div class="card">
         <div class="number">3</div>
         <h2>Quiz Bank 3</h2>
-        <p>Approximately 500 board-style practice questions.</p>
+        <p>600 questions across five practice sets and a Challenge Set.</p>
         <a class="btn" href="quiz-bank-3.html">Open Quiz Bank 3 →</a>
     </div>
 
@@ -180,7 +185,7 @@ h1 {
 </div>
 
 
-<!-- MBU_BUILD:2026-09-24-dashboard-autoupdate-v2-watch8-nav-v1 -->
+<!-- MBU_BUILD:2026-09-24-dashboard-autoupdate-v2-watch8-ui-v2 -->
 <script src="../assets/auto-update.js?v=8"></script>
 </body>
 </html>
