@@ -209,9 +209,9 @@ document.addEventListener("keydown",e=>{
 });
 renderDash();
 </script>
-<button id="mbu-calc-open" type="button" onclick="mbuCalcOpen()">Scientific Calculator</button>
+<button id="mbu-calc-open" type="button" onclick="mbuCalcOpen()">Advanced Calculator</button>
 <div id="mbu-calc-modal" role="dialog" aria-modal="true" aria-label="Scientific calculator"><div class="mbu-calc">
-<div class="mbu-calc-head"><strong>Scientific Calculator</strong><button class="mbu-calc-close" type="button" onclick="mbuCalcClose()">&times;</button></div>
+<div class="mbu-calc-head"><strong>Advanced Calculator</strong><button class="mbu-calc-close" type="button" onclick="mbuCalcClose()">&times;</button></div>
 <input id="mbu-calc-display" type="text" inputmode="decimal" autocomplete="off" spellcheck="false">
 <div class="mbu-calc-grid">
 <button class="danger" onclick="mbuCalcClear()">AC</button><button onclick="mbuCalcBack()">⌫</button><button class="op" onclick="mbuCalcInsert('(')">(</button><button class="op" onclick="mbuCalcInsert(')')">)</button><button class="op" onclick="mbuCalcInsert('/')">÷</button>
@@ -222,7 +222,7 @@ renderDash();
 <button onclick="mbuCalcInsert('4')">4</button><button onclick="mbuCalcInsert('5')">5</button><button onclick="mbuCalcInsert('6')">6</button><button class="op" onclick="mbuCalcFunc('recip')">1/x</button><button class="op" onclick="mbuCalcToggleSign()">±</button>
 <button onclick="mbuCalcInsert('1')">1</button><button onclick="mbuCalcInsert('2')">2</button><button onclick="mbuCalcInsert('3')">3</button><button onclick="mbuCalcInsert('0')">0</button><button onclick="mbuCalcInsert('.')">.</button>
 <button class="op" onclick="mbuCalcInsert('EE')">EE</button><button class="op" onclick="mbuCalcFunc('exp')">eˣ</button><button class="op" onclick="mbuCalcFunc('tenpow')">10ˣ</button><button class="op" onclick="mbuCalcAns()">Ans</button><button class="eq" onclick="mbuCalcEvaluate()">=</button>
-</div><div class="mbu-calc-note">Trig functions use degrees. EE enters scientific notation.</div></div></div>
+</div><div class="mbu-calc-note">Full-expression calculator: use parentheses and combine operations/functions. Trig uses degrees. EE enters scientific notation.</div></div></div>
 <script id="mbu-calculator-script">
 (function(){let lastAnswer=0;const d=()=>document.getElementById('mbu-calc-display');
 window.mbuCalcOpen=()=>{document.getElementById('mbu-calc-modal').classList.add('open');setTimeout(()=>d().focus(),0)};
@@ -230,7 +230,7 @@ window.mbuCalcClose=()=>document.getElementById('mbu-calc-modal').classList.remo
 window.mbuCalcInsert=v=>{if(d().value==='Error')d().value='';d().value+=v==='EE'?'E':v;d().focus()};
 window.mbuCalcClear=()=>d().value='';window.mbuCalcBack=()=>d().value=d().value.slice(0,-1);window.mbuCalcAns=()=>d().value+=String(lastAnswer);
 window.mbuCalcToggleSign=()=>{d().value=d().value?'-('+d().value+')':'-'};
-window.mbuCalcFunc=fn=>{let x=d().value||'0';if(fn==='square')d().value='('+x+')^2';else if(fn==='recip')d().value='1/('+x+')';else if(fn==='exp')d().value='e^('+x+')';else if(fn==='tenpow')d().value='10^('+x+')';else d().value=fn+'('+x+')'};
+window.mbuCalcFunc=fn=>{if(d().value==='Error')d().value='';const ins=fn==='square'?'^2':fn==='recip'?'1/(':fn==='exp'?'e^(':fn==='tenpow'?'10^(':fn+'(';d().value+=ins;d().focus()};
 function ev(s){if(!s.trim())return 0;if(!/^[0-9+\-*/^().,%\sA-Za-z]+$/.test(s))throw Error();
 let x=s.replace(/\bpi\b/gi,'PI').replace(/\be\b/g,'EULER').replace(/\^/g,'**').replace(/(\d+(?:\.\d+)?|\([^()]*\))%/g,'($1/100)');
 const F={sin:v=>Math.sin(v*Math.PI/180),cos:v=>Math.cos(v*Math.PI/180),tan:v=>Math.tan(v*Math.PI/180),asin:v=>Math.asin(v)*180/Math.PI,acos:v=>Math.acos(v)*180/Math.PI,atan:v=>Math.atan(v)*180/Math.PI,sqrt:Math.sqrt,ln:Math.log,log:Math.log10};
@@ -242,7 +242,7 @@ document.addEventListener('click',e=>{let m=document.getElementById('mbu-calc-mo
 </script>
 
 <script id="mbu-auto-refresh-script">
-/* MBU_BUILD:2026-09-24-select-limit-autorefresh-v1 */
-(function(){const BUILD="2026-09-24-select-limit-autorefresh-v1";async function check(){try{const u=new URL(location.href);u.searchParams.set("_mbu_update_check",Date.now());const r=await fetch(u.toString(),{cache:"no-store"});if(!r.ok)return;const t=await r.text();const m=t.match(/MBU_BUILD:([^ *<]+)/);if(m&&m[1]!==BUILD){location.reload();}}catch(e){}}setInterval(check,60000);setTimeout(check,8000)})();
+/* MBU_BUILD:2026-09-24-advanced-expression-calc-v2 */
+(function(){const BUILD="2026-09-24-advanced-expression-calc-v2";async function check(){try{const u=new URL(location.href);u.searchParams.set("_mbu_update_check",Date.now());const r=await fetch(u.toString(),{cache:"no-store"});if(!r.ok)return;const t=await r.text();const m=t.match(/MBU_BUILD:([^ *<]+)/);if(m&&m[1]!==BUILD){location.reload();}}catch(e){}}setInterval(check,60000);setTimeout(check,8000)})();
 </script>
 </body></html>
