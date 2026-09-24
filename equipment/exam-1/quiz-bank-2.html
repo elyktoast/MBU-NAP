@@ -115,7 +115,7 @@ function mbuToggleFlag(q){const d=mbuStudioDB(),k=mbuFlagKey(q);d.flags[k]=!d.fl
 
 function mbuStudioAnswer(q,ok){const d=mbuStudioDB(),k=mbuFlagKey(q);d.ans[k]={ok:!!ok,at:Date.now(),topic:q.topic||q.lec||q.concept||'Other',bank:2};localStorage.setItem(MBU_STUDIO_STORE,JSON.stringify(d))}
 function mbuReportQuestion(q){const reason=prompt('Report reason: wrong answer, ambiguous, typo, explanation issue, source issue, or other');if(!reason)return;const d=mbuStudioDB();d.reports=d.reports||[];d.reports.push({uid:mbuFlagKey(q),bank:2,stem:q.stem||q.q||'',reason,date:new Date().toISOString()});localStorage.setItem(MBU_STUDIO_STORE,JSON.stringify(d));alert('Report saved to Study Studio on this device.')}
-function mbuNavButton(i,label,active,flagged,go){return '<button type="button" style="min-width:38px;height:34px;border:1px solid #cbd5e0;border-radius:6px;background:'+(active?'#ebf8ff':'white')+';'+(flagged?'outline:2px solid #d69e2e;':'')+'" onclick="'+go+'">'+label+'</button>'}
+function mbuNavButton(i,label,active,flagged,go,result){let bg=result===true?'#c6f6d5':result===false?'#fed7d7':active?'#ebf8ff':'white',bd=result===true?'#38a169':result===false?'#e53e3e':'#cbd5e0';return '<button type="button" style="min-width:38px;height:34px;border:2px solid '+bd+';border-radius:6px;background:'+bg+';'+(flagged?'outline:2px solid #d69e2e;':'')+'" onclick="'+go+'">'+label+'</button>'}
 function mbuUpdateFlag(q){const b=document.getElementById('mbuFlagBtn');if(b)b.textContent=mbuIsFlagged(q)?'★ Flagged':'☆ Flag'}
 
 
@@ -160,7 +160,7 @@ function current(){
 function showQ(){
   document.getElementById("dash").classList.add("hidden");document.getElementById("review").classList.add("hidden");document.getElementById("quiz").classList.remove("hidden");
   selected=new Set();locked=false;xmode=false;
-  const c=current(),q=SETS[c.si][c.qi];document.getElementById('mbuNavigator').innerHTML=order.map((x,i)=>{const qq=SETS[x.si??activeSet][x.qi??x];return mbuNavButton(i,i+1,i===pos,mbuIsFlagged(qq),'pos='+i+';showQ()')}).join('');
+  const c=current(),q=SETS[c.si][c.qi];document.getElementById('mbuNavigator').innerHTML=order.map((x,i)=>{const qq=SETS[x.si??activeSet][x.qi??x];return mbuNavButton(i,i+1,i===pos,mbuIsFlagged(qq),'pos='+i+';showQ()',(()=>{const xx=order[i],si=xx.si??activeSet,qi=xx.qi??xx,aa=st(si).answered;return Object.prototype.hasOwnProperty.call(aa,qi)?!!aa[qi]:null})())}).join('');
   document.getElementById("progress").textContent=`Set ${c.si+1} · Question ${c.qi+1}/100`;
   document.getElementById("missedCount").textContent=`Missed: ${st(c.si).missed.length}`;
   document.getElementById("meta").textContent=`${q.topic}${q.correct.length>1?" · Select "+(q.correct.length===2?"TWO":"THREE"):""}`;
