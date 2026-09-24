@@ -80,7 +80,7 @@ button{font:inherit}.btn{border:1px solid var(--line);background:#fff;border-rad
 
 <section id="quiz" class="hidden quiz">
   <div class="qhead">
-    <button class="btn" onclick="goDash()">← Main Dashboard</button>
+    <div style="display:flex;gap:8px;align-items:center"><button class="btn" onclick="goDash()">← Main Dashboard</button><button class="btn" id="mbuFlagBtn" onclick="mbuToggleFlag(SETS[current().si][current().qi])">☆ Flag</button></div>
     <div style="display:flex;gap:8px;align-items:center"><div class="pill" id="missedCount"></div><div class="pill" id="progress"></div></div>
   </div>
   <div class="qcard">
@@ -107,6 +107,13 @@ const SETS=[[{"id":"S1-001","topic":"Monitoring","q":"A patient receives moderat
 const KEY="srna_all5_groundup_v1";
 let state=JSON.parse(localStorage.getItem(KEY)||'{"sets":{}}');
 let mode="set", activeSet=0, order=[], pos=0, selected=new Set(), locked=false, xmode=false;
+const MBU_STUDIO_STORE='mbu_exam1_studio_v1';
+function mbuStudioDB(){try{return JSON.parse(localStorage.getItem(MBU_STUDIO_STORE)||'{"ans":{},"flags":{},"reports":[]}')}catch(e){return {ans:{},flags:{},reports:[]}}}
+function mbuFlagKey(q){return 'b2-'+q.id}
+function mbuIsFlagged(q){const d=mbuStudioDB();return !!d.flags[mbuFlagKey(q)]}
+function mbuToggleFlag(q){const d=mbuStudioDB(),k=mbuFlagKey(q);d.flags[k]=!d.flags[k];localStorage.setItem(MBU_STUDIO_STORE,JSON.stringify(d));mbuUpdateFlag(q)}
+function mbuUpdateFlag(q){const b=document.getElementById('mbuFlagBtn');if(b)b.textContent=mbuIsFlagged(q)?'★ Flagged':'☆ Flag'}
+
 
 function st(si){
   if(!state.sets[si]) state.sets[si]={answered:{},missed:[]};
