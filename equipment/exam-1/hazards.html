@@ -37,7 +37,7 @@
  const label=total+' question'+(total===1?'':'s')+' currently in the missed bank';
  document.getElementById('hazMissedTotal').textContent=label;
  const bar=document.getElementById('hazMissedBar');bar.style.width=total?Math.min(100,total/350*100)+'%':'0%';
- const btn=document.getElementById('hazMissedReviewBtn');if(total){btn.href='studio.html?mode=hazards-missed&return=hazards';btn.removeAttribute('aria-disabled');btn.style.pointerEvents='';btn.style.opacity='';}
+ const btn=document.getElementById('hazMissedReviewBtn');if(total){btn.href='hazards-review.html';btn.removeAttribute('aria-disabled');btn.style.pointerEvents='';btn.style.opacity='';}
 
 })();
 </script>
