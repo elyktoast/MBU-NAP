@@ -46,6 +46,11 @@
     picker.className = 'mbu-global-nav__picker';
     picker.setAttribute('aria-label','Go to page');
     const pickerPages=(page==='home')?[pages[0]]:(page==='equipment'?[pages[0],pages[1]]:pages);
+    if(!pickerPages.some(item=>item.id===page)){
+      const placeholder=document.createElement('option');
+      placeholder.value='';placeholder.textContent='Go to…';placeholder.selected=true;placeholder.disabled=true;
+      picker.appendChild(placeholder);
+    }
     pickerPages.forEach(item => {
       const option = document.createElement('option');
       option.value = item.url.href;
@@ -53,7 +58,7 @@
       option.selected = page === item.id;
       picker.appendChild(option);
     });
-    picker.addEventListener('change',() => { location.assign(picker.value); });
+    picker.addEventListener('change',() => { if(picker.value) location.assign(picker.value); });
     nav.append(brand,crumb,quick,pickerLabel,picker);
     document.body.prepend(nav);
   };
