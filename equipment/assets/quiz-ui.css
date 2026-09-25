@@ -96,3 +96,20 @@ html[data-mbu-page="hh"] .bar i{background:var(--mbu-pl)!important}
  html[data-mbu-page="haz3"] #main>.card .qmeta,
  html[data-mbu-page="hh"] #main>.card .qmeta{align-items:flex-start!important;flex-direction:column!important}
 }
+/* Shared Bank 1-style structural helpers used by converted quiz pages. */
+.mbu-quiz-stats{display:flex;gap:22px;flex-wrap:wrap;background:var(--mbu-soft);border:1px solid var(--mbu-b);padding:12px 16px;border-radius:7px;margin-bottom:20px;color:var(--mbu-t)}
+.mbu-quiz-type{font-size:.84rem;color:#b7791f;font-weight:800;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
+.mbu-quiz-nav{display:none;flex-wrap:wrap;gap:6px;margin:8px 0 14px;max-height:180px;overflow:auto;padding:3px}
+.mbu-quiz-nav.on{display:flex}
+.mbu-quiz-nav button{min-width:38px;height:34px;border:1px solid var(--mbu-b);background:#fff;border-radius:6px;color:var(--mbu-t);font-weight:700;cursor:pointer}
+.mbu-quiz-nav button.cur{outline:2px solid var(--mbu-pl)}
+.mbu-quiz-nav button.good{background:var(--mbu-okbg);border-color:var(--mbu-ok)}
+.mbu-quiz-nav button.bad{background:var(--mbu-badbg);border-color:var(--mbu-bad)}
+.mbu-quiz-nav button.flag{box-shadow:inset 0 0 0 2px #d69e2e}
+.mbu-quiz-bottom{display:flex;justify-content:space-between;gap:10px;align-items:center;border-top:1px solid var(--mbu-b);padding-top:16px;margin-top:24px;flex-wrap:wrap}
+.mbu-quiz-bottom .right{display:flex;gap:8px;flex-wrap:wrap}
+.mbu-qtools{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+html[data-mbu-page="haz3"] #main>.card .act,
+html[data-mbu-page="hh"] #main>.card .act,
+html[data-mbu-page="bank3"] #main>.card .act{justify-content:flex-end!important}
+@media(max-width:650px){.mbu-quiz-bottom{align-items:stretch;flex-direction:column}.mbu-quiz-bottom .right{width:100%}.mbu-quiz-bottom button{flex:1}.mbu-quiz-stats{gap:10px}}
