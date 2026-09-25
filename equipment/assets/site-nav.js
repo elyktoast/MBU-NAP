@@ -33,6 +33,86 @@
     {id:'haz3',label:'Hazards Practice Set 3',short:'Hazards 3',url:new URL('hazards-bank-3.html',exam)},
     {id:'hh',label:'Hazards Challenge Set',short:'Challenge',url:new URL('hazards-harder.html',exam)}
   ];
+  const unifyBankDashboard = () => {
+    if(!['bank1','bank2','bank3'].includes(page)) return;
+    const dash=document.querySelector('#dashboard,#dash,[data-dashboard]');
+    if(!dash) return;
+
+    // Preserve each bank's own question engine; normalize only the dashboard shell/actions.
+    let hero=dash.querySelector('.hero');
+    if(!hero){
+      const heading=dash.querySelector('h1,.title');
+      const sub=dash.querySelector('.sub,p');
+      if(heading){
+        hero=document.createElement('div');hero.className='hero';
+        const left=document.createElement('div');
+        heading.parentNode?.insertBefore(hero,heading);
+        left.appendChild(heading);
+        if(sub && sub!==heading && !hero.contains(sub)) left.appendChild(sub);
+        hero.appendChild(left);
+      }
+    }
+    if(hero){
+      const h=hero.querySelector('h1,.title');
+      if(h){h.classList.remove('title');h.textContent='Quiz Bank '+page.replace('bank','')+' Dashboard';}
+      let p=hero.querySelector('p,.sub');
+      if(!p){p=document.createElement('p');hero.firstElementChild?.appendChild(p);}
+      if(p){p.classList.remove('sub');p.textContent='500 board-style questions across 5 practice sets, with saved missed-question review.';}
+    }
+
+    const grid=dash.querySelector('#cards,#setGrid,.grid');
+    if(!grid) return;
+    grid.classList.add('grid');
+
+    const cards=[...grid.children].filter(el=>el.matches('.card,.setcard,[class*="card"]'));
+    cards.slice(0,5).forEach((card,i)=>{
+      card.classList.add('setcard');
+      const h=card.querySelector('h3,h2');
+      if(h)h.textContent='Practice Set '+(i+1);
+      const buttons=[...card.querySelectorAll('button')];
+      const primary=buttons.find(b=>/start|continue|review answers/i.test(b.textContent));
+      if(primary){
+        primary.classList.add('btn','primary');
+        const txt=primary.textContent.toLowerCase();
+        primary.textContent=txt.includes('continue')?'Continue Practice Set '+(i+1):txt.includes('review answers')?'Continue Practice Set '+(i+1):'Start Practice Set '+(i+1);
+      }
+      const missed=buttons.find(b=>/missed|review missed/i.test(b.textContent));
+      if(missed){missed.classList.add('btn');missed.classList.remove('danger');missed.textContent='Review Missed';}
+      buttons.filter(b=>/reset/i.test(b.textContent)).forEach(b=>b.classList.add('danger'));
+    });
+
+    if(page==='bank2'){
+      // Bank 2 already tracks missed questions across all five sets; expose it exactly like Bank 1.
+      let totalMissed=0,totalDone=0,totalCorrect=0;
+      try{
+        for(let i=0;i<5;i++){const x=stats(i);totalMissed+=x.miss||0;totalDone+=x.done||0;totalCorrect+=x.cor||0;}
+      }catch(e){}
+      if(hero && !hero.querySelector('#bank2Overall')){
+        const overall=document.createElement('div');overall.id='bank2Overall';overall.className='mini';hero.appendChild(overall);
+      }
+      const overall=hero?.querySelector('#bank2Overall');
+      if(overall)overall.textContent='Overall: '+totalDone+'/500 completed · '+(totalDone?Math.round(totalCorrect/totalDone*100):0)+'% score · '+totalMissed+' missed';
+      let all=grid.querySelector('.mbu-all-missed-card');
+      if(!all){
+        all=document.createElement('div');all.className='setcard mbu-all-missed-card';
+        grid.appendChild(all);
+      }
+      all.innerHTML='<h3>Missed Questions Review</h3><div class="mini">Automatically built from every question missed in Practice Sets 1–5.</div><div class="bar"><span style="width:0%"></span></div><div class="mini">'+totalMissed+' question'+(totalMissed===1?'':'s')+' currently in the missed bank</div><div class="actions"><button class="btn bad" '+(totalMissed?'':'disabled')+'>Review Missed Questions</button></div>';
+      const b=all.querySelector('button');if(b)b.onclick=()=>{if(typeof startAllMissed==='function')startAllMissed();};
+    }
+  };
+
+  const scheduleBankUnify = () => {
+    if(!['bank1','bank2','bank3'].includes(page)) return;
+    const run=()=>{try{unifyBankDashboard()}catch(e){}};
+    run();
+    // Re-apply after a bank redraws its dashboard without changing its quiz logic.
+    let queued=false;
+    const obs=new MutationObserver(()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;run();});});
+    const target=document.querySelector('#dashboard,#dash,[data-dashboard]');
+    if(target)obs.observe(target,{childList:true,subtree:true});
+  };
+
   const render = () => {
     if(document.querySelector('.mbu-global-nav')) return;
     const nav = document.createElement('nav');
@@ -79,6 +159,6 @@
     nav.append(brand,crumb,quick,pickerLabel,picker);
     document.body.prepend(nav);
   };
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded',render,{once:true});
-  else render();
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded',()=>{render();scheduleBankUnify();},{once:true});
+  else {render();scheduleBankUnify();}
 })();
