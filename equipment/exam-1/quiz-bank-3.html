@@ -103,7 +103,7 @@ function freshExam(){return{idx:0,ans:{},xo:{}}}
 function fresh(){const ex={};EXLIST.forEach(n=>ex[n]=freshExam());return{ex,cleared:{},t6:null,t6hist:[]}}
 function load(){try{const r=localStorage.getItem(KEY);if(r){const o=JSON.parse(r);if(o&&o.ex){EXLIST.forEach(n=>{if(!o.ex[n])o.ex[n]=freshExam()});return o}}}catch(e){}return fresh()}
 let S=load();
-function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+let lastSaved=JSON.stringify(S);function save(){try{const next=JSON.stringify(S);if(next===lastSaved)return;localStorage.setItem(KEY,next);lastSaved=next}catch(e){}}
 let V={mode:"dash"};let timer=null;let cur={sel:[],done:false};
 const MBU_STUDIO_STORE=window.MBUStudio?.STORE||null;
 function mbuStudioDB(){return window.MBUStudio?.db?.()||{ans:{},flags:{},reports:[]}}
@@ -170,7 +170,7 @@ function topbar(){const back=`<button class="ghost mbu-return" id="bDash">← Qu
  $("#bDash").onclick=dash}
 function openExam(n){V={mode:"exam",n};const e=S.ex[n];if(e.idx>=EXM[n].ids.length)return examSummary(n);renderQ()}
 function openT6(){V={mode:"t6"};if(S.t6.i>=S.t6.list.length)return t6Summary();renderQ()}
-function renderQ(){clearTimeout(timer);topbar();questionChrome(true);const c=ctx();
+function renderQ(){clearTimeout(timer);timer=null;topbar();questionChrome(true);const c=ctx();
  if(c.i>=c.list.length){return V.mode==="t6"?t6Summary():examSummary(V.n)}
  const q=byId[c.list[c.i]],prev=c.store[q.id];cur={sel:prev?prev.sel.slice():[],done:!!prev};
  const xo=(c.exam?c.exam.xo[q.id]:S.t6.xo&&S.t6.xo[q.id])||[];
@@ -207,9 +207,9 @@ function extra(q){return `${q.disc?`<p class="disc"><b>Lecture discrepancy:</b> 
 function showResult(q,rec,restored){cur.done=true;
  document.querySelectorAll(".opt").forEach(b=>{const i=+b.dataset.i;b.disabled=true;b.classList.remove("sel");if(q.a.includes(i))b.classList.add(rec.sel.includes(i)?"ok":"miss");else if(rec.sel.includes(i))b.classList.add("no")});
  document.querySelectorAll(".xo").forEach(b=>b.disabled=true);const g=$("#go");g.style.display="none";g.disabled=true;
- if(rec.ok){$("#fb").innerHTML=`<div class="fb good"><p><b>Correct.</b> ${esc(q.exp)}</p><p class="src">Source: ${q.ref.map(esc).join("; ")}</p></div>`;if(!restored)timer=setTimeout(next,350)}
+ if(rec.ok){$("#fb").innerHTML=`<div class="fb good"><p><b>Correct.</b> ${esc(q.exp)}</p><p class="src">Source: ${q.ref.map(esc).join("; ")}</p></div>`;if(!restored)clearTimeout(timer);timer=setTimeout(()=>{timer=null;next()},350)}
  else{$("#fb").innerHTML=`<div class="fb badf"><p><b>Incorrect.</b> Correct answer: ${keysText(q)}.</p><p>${esc(q.exp)}</p>${extra(q)}</div>`;g.focus()}}
-function next(){clearTimeout(timer);if(V.mode==="t6")S.t6.i++;else S.ex[V.n].idx++;save();renderQ()}
+function next(){clearTimeout(timer);timer=null;if(V.mode==="t6")S.t6.i++;else S.ex[V.n].idx++;save();renderQ()}
 
 // ----- summaries and review
 function lecTable(ids,store){const by={};ids.forEach(id=>{const q=byId[id];by[q.lec]=by[q.lec]||{t:0,a:0,c:0};by[q.lec].t++;const r=store[id];if(r){by[q.lec].a++;if(r.ok)by[q.lec].c++}});

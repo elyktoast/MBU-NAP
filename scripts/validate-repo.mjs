@@ -123,6 +123,12 @@ function checkCanonicalNavigators(){
   }
 }
 checkCanonicalNavigators();
+{
+ const src=read('equipment/exam-1/quiz-bank-3.html');
+ if(!src.includes('if(next===lastSaved)return'))fail('Bank 3: duplicate progress writes are not suppressed');
+ if(!src.includes('timer=setTimeout(()=>{timer=null;next()},350)'))fail('Bank 3: auto-advance timer is not self-clearing');
+ if(!src.includes('function next(){clearTimeout(timer);timer=null;'))fail('Bank 3: manual Next does not cancel pending auto-advance');
+}
 for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html']){
  const src=read(p);
  const start=src.indexOf('function loadQuestion()'),end=src.indexOf('function choose(',start);
