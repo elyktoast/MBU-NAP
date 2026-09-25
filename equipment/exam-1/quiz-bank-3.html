@@ -67,9 +67,9 @@ ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 @media (max-width:600px){ul.concepts{columns:1}}
 #go{margin-left:auto;order:99}
 </style>
-<!-- MBU_BUILD:2026-09-24-bank3-uniform-ui-v3 -->
+<!-- MBU_BUILD:2026-09-24-bank3-bank1-match-v4 -->
 <link rel="stylesheet" href="../assets/site-nav.css?v=2">
-<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=2">
+<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=3">
 <script defer src="../assets/site-nav.js?v=4" data-page="bank3"></script>
 </head>
 <body class="mbu-bank1-ui">
@@ -179,8 +179,8 @@ function renderQ(){clearTimeout(timer);topbar();questionChrome(true);const c=ctx
  let done,correct,missed,badge;
  if(V.mode==="t6"){done=Object.keys(S.t6.ans).length;correct=Object.values(S.t6.ans).filter(x=>x.ok).length;missed=Math.max(0,S.t6.list.length-correct);badge="MISSED QUESTIONS REVIEW"}
  else{const s=examStats(V.n);done=s.a;correct=s.c;missed=s.missed.length;badge=NAMES[V.n].toUpperCase()}
- let h=`<div class="card"><div class="qmeta"><span>${badge}</span><span class="mbu-qtools"><button class="ghost" id="mbuFlagBtn" type="button">${mbuIsFlagged(q)?"★ Flagged":"☆ Flag"}</button><button class="ghost" id="mbuReportBtn" type="button">Report</button><button class="ghost" id="mbuNavBtn" type="button">Navigator</button><button class="ghost mbu-return" id="backToDash" type="button">← Quiz Bank 3 Home</button><b>Question ${c.i+1} of ${c.list.length}${V.mode==="t6"?` · from ${NAMES[q.setn]}`:""}</b></span></div>
- <div class="mbu-quiz-stats"><div>Completed: <strong>${done}</strong>/${c.list.length}</div><div>Score: <strong>${done?Math.round(100*correct/done):0}</strong>%</div><div>Missed: <strong>${missed}</strong></div></div>
+ let h=`<div class="card"><div class="header"><div class="row"><span class="badge">${badge}</span><button class="btn out" id="mbuFlagBtn" type="button">${mbuIsFlagged(q)?"★ Flagged":"☆ Flag"}</button><button class="btn out" id="mbuReportBtn" type="button">Report</button><button class="btn out" id="mbuNavBtn" type="button">Navigator</button><button class="btn out mbu-return" id="backToDash" type="button">← Quiz Bank 3 Home</button></div><div class="progress">Question ${c.i+1} of ${c.list.length}${V.mode==="t6"?` · from ${NAMES[q.setn]}`:` · Q${q.num}`}</div></div>
+ <div class="stats"><div>Completed: <strong>${done}</strong>/${c.list.length}</div><div>Score: <strong>${done?Math.round(100*correct/done):0}</strong>%</div><div>Missed: <strong>${missed}</strong></div></div>
  ${mbuNavigatorHTML(c)}<div class="mbu-quiz-type">${q.type==="multi"?`Select ${q.n} Options`:"Single Best Answer"}</div><p class="stem">${esc(q.q)}</p>`;
  if(q.img)h+=`<div class="fig"><img src="data:image/png;base64,${IMGS[q.img]}" alt="Figure"><small>Click image to enlarge</small></div>`;
  q.c.forEach((t,i)=>{h+=`<div class="ch"><button class="opt${cur.sel.includes(i)?" sel":""}${xo.includes(i)?" x":""}" data-i="${i}"><span class="L">${L[i]}.</span><span class="t">${esc(t)}</span></button><button class="xo" data-x="${i}" aria-pressed="${xo.includes(i)}" aria-label="Cross out ${L[i]}" title="Cross out (Shift+${L[i]})">✕</button></div>`});
@@ -209,7 +209,7 @@ function extra(q){return `${q.disc?`<p class="disc"><b>Lecture discrepancy:</b> 
 function showResult(q,rec,restored){cur.done=true;
  document.querySelectorAll(".opt").forEach(b=>{const i=+b.dataset.i;b.disabled=true;b.classList.remove("sel");if(q.a.includes(i))b.classList.add(rec.sel.includes(i)?"ok":"miss");else if(rec.sel.includes(i))b.classList.add("no")});
  document.querySelectorAll(".xo").forEach(b=>b.disabled=true);const g=$("#go");g.style.display="none";g.disabled=true;
- if(rec.ok){$("#fb").innerHTML=`<div class="fb good"><p><b>Correct.</b> ${V.mode==="t6"?"Cleared from the missed pool. ":""}${restored?"":"Moving on…"}</p><p class="src">Source: ${q.ref.map(esc).join("; ")}</p></div>`;if(!restored)timer=setTimeout(next,650)}
+ if(rec.ok){$("#fb").innerHTML=`<div class="fb good"><p><b>Correct.</b> ${esc(q.exp)}</p><p class="src">Source: ${q.ref.map(esc).join("; ")}</p></div>`;if(!restored)timer=setTimeout(next,650)}
  else{$("#fb").innerHTML=`<div class="fb badf"><p><b>Incorrect.</b> Correct answer: ${keysText(q)}.</p><p>${esc(q.exp)}</p>${extra(q)}</div>`;g.focus()}}
 function next(){clearTimeout(timer);if(V.mode==="t6")S.t6.i++;else S.ex[V.n].idx++;save();renderQ()}
 
