@@ -2,6 +2,11 @@
 (() => {
   const script = document.currentScript;
   const page = script.dataset.page;
+  document.documentElement.dataset.mbuPage = page || '';
+  const quizPages = new Set(['bank1','bank2','bank3','haz1','haz2','haz3','hh']);
+  if(quizPages.has(page) && !document.querySelector('link[data-mbu-quiz-ui]')){
+    const ui=document.createElement('link');ui.rel='stylesheet';ui.href=new URL('quiz-ui.css?v=1',script.src);ui.dataset.mbuQuizUi='1';document.head.appendChild(ui);
+  }
   const equipment = new URL('../', script.src);
   const home = new URL('../', equipment);
   const exam = new URL('exam-1/', equipment);
