@@ -198,6 +198,8 @@ for(const token of ['mbu-crossout-hint','MBUNavigator.button','classList.add(rec
  if(!src.includes('function loadQuestion(){clearTimeout(autoTimer);autoTimer=null;'))fail(p+': render does not clear/null auto-advance timer');
  if(!src.includes('clearTimeout(autoTimer);autoTimer=null;'))fail(p+': auto-advance timer lifecycle is incomplete');
  if(src.includes('autoTimer=setTimeout(()=>{currentIndex++;'))fail(p+': auto-advance callback leaves a stale timer handle');
+ const renderStart=src.indexOf('function loadQuestion()'),renderEnd=src.indexOf('function choose(',renderStart);if(renderStart>=0&&renderEnd>renderStart&&src.slice(renderStart,renderEnd).includes('saveDB();'))fail(p+': render path still writes progress');
+ if(!src.includes('function persistPosition()'))fail(p+': navigation position is not persisted explicitly outside render');
 }
 {
  const src=read('equipment/assets/hazards-standard-engine.js');
