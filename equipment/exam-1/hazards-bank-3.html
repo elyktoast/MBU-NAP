@@ -58,7 +58,7 @@ ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 @media (max-width:600px){ul.concepts{columns:1}}
 </style></head>
 <body>
-<!-- MBU_BUILD:2026-09-24-hazards-bank3-sync-v4 -->
+<!-- MBU_BUILD:2026-09-24-hazards-bank3-tools-v5 -->
 <div class="wrap">
 <header><h1>Workstation Hazards Practice Set 3 · 100 Questions</h1>
 <div class="stats" id="stats"></div>
@@ -109,6 +109,7 @@ function render(){clearTimeout(timer);stats();
  const qFlag=$("#qFlag");qFlag.textContent=window.MBUStudio&&MBUStudio.flagged('h3',q)?'★ Flagged':'☆ Flag';
  qFlag.onclick=()=>{if(!window.MBUStudio)return;MBUStudio.toggleFlag('h3',q);qFlag.textContent=MBUStudio.flagged('h3',q)?'★ Flagged':'☆ Flag'};
  $("#qReport").onclick=()=>window.MBUStudio&&MBUStudio.report('h3',q);
+ window.MBUCalculator?.besideFlag();
  if(prev)showResult(q,prev,true);else upd(q)}
 function esc(s){return String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]))}
 function pick(q,i){if(cur.done)return;const s=cur.sel;
@@ -166,6 +167,6 @@ document.addEventListener("keydown",e=>{if($("#lb").classList.contains("on")){if
  if(i>=0&&i<q.c.length&&k.length===1){e.preventDefault();e.shiftKey?cross(q,i):pick(q,i)}});
 if(new URLSearchParams(location.search).get('review')==='1'){view='review';save()}render();
 </script><script src="../assets/site-nav.js?v=4" data-page="haz3"></script>
-<script src="../assets/calculator.js?v=7"></script>
+<script src="../assets/calculator.js?v=7"></script><script>window.MBUCalculator?.besideFlag()</script>
 <script src="../assets/auto-update.js?v=10"></script>
 </body></html>
