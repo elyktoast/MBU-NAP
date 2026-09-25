@@ -202,6 +202,14 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!src.includes('if(prior&&prior.pos===pos)return;'))fail('Studio: unchanged question renders still rewrite active session state');
 }
 
+// Standard Hazards Sets 1/2 statistics should share one single-pass implementation.
+{
+ const src=read('equipment/assets/hazards-standard-engine.js');
+ if(!src.includes('const stateStats=(base,st,missed)=>{let done=0,good=0;for(const q of base)'))fail('Standard Hazards: canonical stateStats helper is missing');
+ if(src.includes('QUESTIONS.filter(q=>db.graded[q.id]).length'))fail('Standard Hazards: dashboard still performs duplicate filter scans');
+ if(src.includes('base.filter(q=>st.graded[q.id]).length'))fail('Standard Hazards: live stats still perform duplicate filter scans');
+}
+
 // Shared Hazards 3/Challenge statistics should use one canonical scan.
 {
  const src=read('equipment/assets/hazards-quiz-engine.js');
