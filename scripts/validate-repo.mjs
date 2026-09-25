@@ -126,6 +126,7 @@ function checkStudioIndexes(){
   if(!src.includes('if(!ALL_BY_UID.size)return;'))fail('Studio: active session can be cleared before source hydration completes');
   if(!src.includes('id="studio-submit-row"')||!src.includes('class="explain"')||!src.includes('id="fbCitation" class="cite"'))fail('Studio: quiz session is not using canonical Bank 1 structure');
   if(src.includes('Studio quiz view: keep the normal question workflow within a desktop viewport.'))fail('Studio: obsolete quiz-specific compact layout remains');
+  if(!src.includes("document.body.classList.toggle('mbu-quiz-active',id==='quiz')")||!src.includes('body.mbu-quiz-active>.wrap>.top{display:none}'))fail('Studio: canonical quiz is still wrapped by the extra Studio shell');
 }
 checkStudioIndexes();
 {
