@@ -166,3 +166,9 @@
   .mbu-bank1-ui .mbu-quiz-bottom .right button{flex:1!important}
   .mbu-bank1-ui .header .progress{margin-left:0!important;text-align:left!important}
 }
+
+/* Keep the question screen as clean as Bank 1 Practice Set 1. */
+.mbu-bank1-ui .qcard>.foot>.kbd,
+.mbu-bank1-ui main>.card>.act>.hint{display:none!important}
+.mbu-bank1-ui main>.card>.act{justify-content:flex-end!important;border-top:0!important;padding-top:0!important;margin-top:4px!important}
+.mbu-bank1-ui main>.card>.act #go{margin-left:auto!important}
