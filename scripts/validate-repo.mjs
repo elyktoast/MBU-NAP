@@ -188,6 +188,13 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!studio.includes("if(q.ans.includes(i))b.classList.add('correct');else if(sel.has(i))b.classList.add('incorrect')"))fail('Studio: revisited answers do not restore correct/incorrect styling');
 }
 
+// Study Studio uses the same self-clearing auto-advance lifecycle as the canonical quiz runtimes.
+{
+ const src=read('equipment/exam-1/studio.html');
+ if(!src.includes('function showQ(){clearTimeout(autoTimer);autoTimer=null;'))fail('Studio: render does not clear/null auto-advance timer');
+ if(!src.includes('function nextQ(){clearTimeout(autoTimer);autoTimer=null;'))fail('Studio: manual/automatic Next leaves a stale timer handle');
+}
+
 // Hazards Set 3 and Challenge must share one quiz engine; no page-local renderer/state engine.
 for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
  const src=read(p);
