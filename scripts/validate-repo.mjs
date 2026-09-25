@@ -309,6 +309,7 @@ for(const token of ['mbu-crossout-hint','MBUNavigator.button','classList.add(rec
  if(src.includes('autoTimer=setTimeout(()=>{currentIndex++;'))fail(p+': auto-advance callback leaves a stale timer handle');
  const renderStart=src.indexOf('function loadQuestion()'),renderEnd=src.indexOf('function choose(',renderStart);if(renderStart>=0&&renderEnd>renderStart&&src.slice(renderStart,renderEnd).includes('saveDB();'))fail(p+': render path still writes progress');
  if(!src.includes('function persistPosition()'))fail(p+': navigation position is not persisted explicitly outside render');
+ if(!src.includes("currentIndex=0;saveDB();loadQuestion()}"))fail(p+': reset does not persist and rerender through a shared exit path');
 }
 {
  const src=read('equipment/assets/hazards-standard-engine.js');
