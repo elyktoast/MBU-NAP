@@ -1,5 +1,6 @@
 (function(){
   const STORE='mbu_exam1_studio_v1';
+  let cache=null;
 
   function empty(){return {ans:{},flags:{},reports:[]}}
 
@@ -21,6 +22,7 @@
   }
 
   function db(){
+    if(cache) return cache;
     let d;
     try{d=JSON.parse(localStorage.getItem(STORE)||'{}')}catch(e){d={}}
     d&&typeof d==='object'||(d={});
@@ -43,11 +45,13 @@
       if(uid!==x.uid||bank!==x.bank) changed=true;
       return {...x,uid,bank};
     });
+    cache=d;
     if(changed) save(d);
-    return d;
+    return cache;
   }
 
-  function save(d){try{localStorage.setItem(STORE,JSON.stringify(d))}catch(e){}}
+  function save(d){cache=d;try{localStorage.setItem(STORE,JSON.stringify(d))}catch(e){}}
+  window.addEventListener('storage',e=>{if(e.key===STORE)cache=null});
   function key(bank,q){return normalizeBank(bank)+'-'+q.id}
   function topicOf(q){
     const direct=String(q.topic||q.lec||'').trim();
