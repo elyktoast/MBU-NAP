@@ -12,11 +12,14 @@
 .mbu-bank1-ui .hidden{display:none!important}
 .mbu-bank1-ui .panel,
 .mbu-bank1-ui .quiz,
-.mbu-bank1-ui main>.card,
-.mbu-bank1-ui .qcard{
+.mbu-bank1-ui main>.card{
   background:#fff!important;border-radius:10px!important;
   box-shadow:0 4px 12px #00000012!important;padding:28px!important;
   border:0!important;max-width:none!important;
+}
+.mbu-bank1-ui .quiz>.qcard{
+  background:transparent!important;border:0!important;border-radius:0!important;
+  box-shadow:none!important;padding:0!important;max-width:none!important;
 }
 .mbu-bank1-ui header{
   background:#fff!important;border-radius:10px!important;box-shadow:0 4px 12px #00000012!important;
@@ -141,4 +144,25 @@
   .mbu-bank1-ui .header,.mbu-bank1-ui .qhead,.mbu-bank1-ui .qmeta,.mbu-bank1-ui .controls,.mbu-bank1-ui .foot,.mbu-bank1-ui .act{align-items:flex-start!important;flex-direction:column!important}
   .mbu-bank1-ui .stats,.mbu-bank1-ui .mbu-quiz-stats{gap:10px!important}
   .mbu-bank1-ui .act #go{margin-left:0!important;width:100%!important}
+}
+/* Exact Bank 1 question-runner alignment for all Exam 1 practice sets. */
+.mbu-bank1-ui .mbu-quiz-bottom{
+  display:flex!important;justify-content:space-between!important;gap:10px!important;align-items:center!important;
+  border-top:1px solid var(--b)!important;padding-top:16px!important;margin-top:24px!important;flex-wrap:wrap!important
+}
+.mbu-bank1-ui .mbu-quiz-bottom .right{display:flex!important;gap:8px!important;flex-wrap:wrap!important;margin-left:auto!important}
+.mbu-bank1-ui .header .row{display:flex!important;gap:8px!important;flex-wrap:wrap!important;align-items:center!important}
+.mbu-bank1-ui .header .badge{white-space:nowrap!important}
+.mbu-bank1-ui .header .progress{margin-left:auto!important;text-align:right!important}
+.mbu-bank1-ui #mbuNavigator.hidden,.mbu-bank1-ui .mbu-quiz-nav.hidden{display:none!important}
+.mbu-bank1-ui .qcard .foot{border-top:1px solid var(--b)!important}
+.mbu-bank1-ui .qcard .kbd{order:2;flex:1;min-width:180px}
+.mbu-bank1-ui .qcard #prevBtn{order:1}
+.mbu-bank1-ui .qcard #resetQBtn{order:3}
+.mbu-bank1-ui .qcard #submitBtn,.mbu-bank1-ui .qcard #nextBtn{order:4;margin-left:0!important}
+@media(max-width:650px){
+  .mbu-bank1-ui .mbu-quiz-bottom{align-items:stretch!important}
+  .mbu-bank1-ui .mbu-quiz-bottom .right{width:100%!important;margin-left:0!important}
+  .mbu-bank1-ui .mbu-quiz-bottom .right button{flex:1!important}
+  .mbu-bank1-ui .header .progress{margin-left:0!important;text-align:left!important}
 }
