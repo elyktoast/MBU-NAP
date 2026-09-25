@@ -202,6 +202,13 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!src.includes('if(prior&&prior.pos===pos)return;'))fail('Studio: unchanged question renders still rewrite active session state');
 }
 
+// Shared Hazards 3/Challenge statistics should use one canonical scan.
+{
+ const src=read('equipment/assets/hazards-quiz-engine.js');
+ if(!src.includes('function mainStats(){let done=0,correct=0,miss=0;for(const q of BANK)'))fail('Shared Hazards: canonical mainStats helper is missing');
+ if(src.includes('BANK.map(x=>S.ans[x.id]).filter(Boolean)'))fail('Shared Hazards: render still rebuilds answered arrays');
+}
+
 // Shared navigator should expose only the canonical API; the legacy global alias is obsolete.
 {
  const src=read('equipment/assets/navigator.js');
