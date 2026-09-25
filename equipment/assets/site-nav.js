@@ -3,7 +3,7 @@
   const script = document.currentScript;
   const page = script.dataset.page;
   document.documentElement.dataset.mbuPage = page || '';
-  const quizPages = new Set(['bank1','bank2','bank3','haz1','haz2','haz3','hh']);
+  const quizPages = new Set(['bank1','bank2','bank3','hazards','haz1','haz2','haz3','hh']);
   if(quizPages.has(page) && !document.querySelector('link[data-mbu-quiz-ui]')){
     const ui=document.createElement('link');ui.rel='stylesheet';ui.href=new URL('quiz-ui.css?v=2',script.src);ui.dataset.mbuQuizUi='1';document.head.appendChild(ui);
   }
@@ -12,7 +12,7 @@
   if(quizPages.has(page) && !document.querySelector('link[href*="bank1-quiz-ui.css"]')){
     const canonical=document.createElement('link');
     canonical.rel='stylesheet';
-    canonical.href=new URL('bank1-quiz-ui.css?v=5',script.src);
+    canonical.href=new URL('bank1-quiz-ui.css?v=6',script.src);
     canonical.dataset.mbuBank1Ui='1';
     document.head.appendChild(canonical);
     const applyCanonicalClass=()=>document.body?.classList.add('mbu-bank1-ui');
