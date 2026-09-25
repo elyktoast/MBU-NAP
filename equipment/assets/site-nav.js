@@ -13,7 +13,7 @@
   if(quizPages.has(page) && !document.querySelector('link[href*="bank1-quiz-ui.css"]')){
     const canonical=document.createElement('link');
     canonical.rel='stylesheet';
-    canonical.href=new URL('bank1-quiz-ui.css?v=6',script.src);
+    canonical.href=new URL('bank1-quiz-ui.css?v=7',script.src);
     canonical.dataset.mbuBank1Ui='1';
     document.head.appendChild(canonical);
     const applyCanonicalClass=()=>document.body?.classList.add('mbu-bank1-ui');
