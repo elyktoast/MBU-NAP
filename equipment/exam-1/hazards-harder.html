@@ -78,7 +78,8 @@ function save(){try{S.view=view;localStorage.setItem(KEY,JSON.stringify(S))}catc
 const byId=Object.fromEntries(BANK.map(q=>[q.id,q]));
 const $=s=>document.querySelector(s);
 function same(a,b){return a.length===b.length&&[...a].sort().join()===[...b].sort().join()}
-function stats(){const v=Object.values(S.ans),correct=v.filter(x=>x.ok).length,done=v.length,m=missed().length;\n $("#stats").innerHTML=`Completed <b>${done}</b> / ${BANK.length} · Score <b>${done?Math.round(100*correct/done):0}%</b> · Missed <b>${m}</b>`;
+function stats(){const v=Object.values(S.ans),correct=v.filter(x=>x.ok).length,done=v.length,m=missed().length;
+ $("#stats").innerHTML=`Completed <b>${done}</b> / ${BANK.length} · Score <b>${done?Math.round(100*correct/done):0}%</b> · Missed <b>${m}</b>`;
  $("#prog").style.width=(100*done/BANK.length)+"%";
  $("#bRev").textContent=`Missed review (${m})`}
 function missed(){return BANK.filter(q=>S.ans[q.id]&&!S.ans[q.id].ok)}
