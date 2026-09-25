@@ -93,7 +93,7 @@
       overall.textContent='0 / 500 completed';
     }
 
-    const header=title.closest('.hero,.top') || title.parentElement;
+    const header=title.closest('.hero,.top,header') || title.parentElement;
     if(!header) return;
     header.classList.add('mbu-dashboard-header');
     const titleBox=title.parentElement===header ? document.createElement('div') : title.parentElement;
@@ -102,6 +102,20 @@
       titleBox.appendChild(title);
     }
     titleBox.classList.add('mbu-dashboard-title');
+    if(page==='bank3'){
+      // Bank 3 uses a legacy <header> whose existing .stats element is laid out
+      // as a right-hand flex child. Rebuild only that header so the completion
+      // count is guaranteed to live immediately below the title.
+      const existing=[...header.querySelectorAll('.stats,.mini,.sub,div,span')]
+        .find(el=>/^\s*\d+\s*\/\s*\d+\s+completed\s*$/i.test(el.textContent||''));
+      if(existing && existing!==overall) overall=existing;
+      if(!overall){
+        overall=document.createElement('div');
+        overall.id='bank3Overall';
+        overall.textContent='0 / 500 completed';
+      }
+      [...header.children].forEach(child=>{ if(child!==titleBox && child!==overall) child.remove(); });
+    }
     if(overall && overall.parentElement!==titleBox) titleBox.appendChild(overall);
     if(overall) overall.classList.add('mbu-dashboard-overall');
   };
