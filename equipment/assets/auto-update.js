@@ -32,6 +32,10 @@
       if (!baseline) { baseline = latest; return; }
       if (latest !== baseline) {
         const reload = new URL(location.href);
+        if (reload.searchParams.get('_mbu_reload') === latest) {
+          baseline = latest;
+          return;
+        }
         reload.searchParams.set('_mbu_reload', latest);
         location.replace(reload.href);
       }
