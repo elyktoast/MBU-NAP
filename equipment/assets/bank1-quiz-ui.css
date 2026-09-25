@@ -14,7 +14,7 @@ body.mbu-bank1-ui{margin:0;padding:20px;background:var(--bg);color:var(--t);font
 .mbu-bank1-ui .grid,.mbu-bank1-ui #cards,.mbu-bank1-ui #setGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .mbu-bank1-ui .card,.mbu-bank1-ui .setcard{min-width:0;min-height:174px;display:flex;flex-direction:column;background:#fff;border:1px solid var(--b);border-radius:9px;box-shadow:none;padding:18px}
 .mbu-bank1-ui .card h3,.mbu-bank1-ui .setcard h3{margin:0 0 6px;color:var(--t);font-size:1.08rem}
-.mbu-bank1-ui .mini,.mbu-bank1-ui .setcard .stats{display:block;background:transparent;border:0;padding:0;margin:0;color:var(--mut);font-size:.9rem}
+.mbu-bank1-ui .mini,.mbu-bank1-ui .setcard .stats{display:block;height:auto;min-height:0;overflow:visible;background:transparent;border:0;padding:0;margin:0;color:var(--mut);font-size:.9rem;line-height:1.4}
 .mbu-bank1-ui .bar{height:9px;background:#e2e8f0;border-radius:20px;overflow:hidden;margin:12px 0}.mbu-bank1-ui .bar>span,.mbu-bank1-ui .bar>div,.mbu-bank1-ui .bar>i{display:block;height:100%;background:var(--pl)}
 .mbu-bank1-ui .card .row:last-child,.mbu-bank1-ui .setcard .actions{margin-top:auto;padding-top:14px}.mbu-bank1-ui .actions,.mbu-bank1-ui .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 /* Buttons */
