@@ -296,3 +296,52 @@ body.mbu-bank1-ui>main.wrap,
   body.mbu-bank1-ui>main.wrap,
   .mbu-bank1-ui .wrap{padding:0!important}
 }
+
+
+/* v8 — Bank 1 visual tokens are authoritative across every non-Studio bank. */
+body.mbu-bank1-ui,
+body.mbu-bank1-ui button,
+body.mbu-bank1-ui input,
+body.mbu-bank1-ui select,
+body.mbu-bank1-ui textarea{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif!important;
+}
+body.mbu-bank1-ui{color:#2d3748!important;font-size:16px!important}
+.mbu-bank1-ui h1,.mbu-bank1-ui h2,.mbu-bank1-ui h3,.mbu-bank1-ui h4,
+.mbu-bank1-ui .title,.mbu-bank1-ui .stem{color:#1a202c!important}
+.mbu-bank1-ui p,.mbu-bank1-ui .mini,.mbu-bank1-ui .small,.mbu-bank1-ui .muted{color:#718096!important}
+.mbu-bank1-ui .stem{font-size:1.12rem!important;font-weight:650!important;line-height:1.5!important}
+.mbu-bank1-ui .type,.mbu-bank1-ui .mbu-quiz-type{
+  color:#b7791f!important;font-size:.84rem!important;font-weight:800!important;
+  text-transform:uppercase!important;letter-spacing:.5px!important
+}
+.mbu-bank1-ui button.btn,
+.mbu-bank1-ui a.btn,
+.mbu-bank1-ui .btn.primary,
+.mbu-bank1-ui button.primary{
+  background:#1a365d!important;color:#fff!important;border:0!important;
+  border-radius:6px!important;padding:10px 16px!important;font-size:.95rem!important;
+  font-weight:700!important;line-height:1.25!important
+}
+.mbu-bank1-ui button.btn.out,
+.mbu-bank1-ui a.btn.out,
+.mbu-bank1-ui .btn.ghost,
+.mbu-bank1-ui button.ghost{
+  background:#fff!important;color:#1a365d!important;border:1.5px solid #1a365d!important
+}
+.mbu-bank1-ui button.btn.bad,.mbu-bank1-ui a.btn.bad{
+  background:#9b2c2c!important;color:#fff!important;border-color:#9b2c2c!important
+}
+.mbu-bank1-ui button.btn:disabled,.mbu-bank1-ui button.primary:disabled,
+.mbu-bank1-ui button.ghost:disabled{
+  background:#cbd5e0!important;color:#fff!important;border-color:#cbd5e0!important;opacity:1!important
+}
+.mbu-bank1-ui .badge,.mbu-bank1-ui .pill{
+  background:#1a365d!important;color:#fff!important;font-size:.85rem!important;font-weight:800!important
+}
+.mbu-bank1-ui .progress{color:#4a5568!important;font-weight:700!important}
+.mbu-bank1-ui .cite,.mbu-bank1-ui .source{color:#4a5568!important}
+.mbu-bank1-ui .opt,.mbu-bank1-ui .choice{
+  color:#2d3748!important;background:#fff!important;font-size:.98rem!important;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif!important
+}
