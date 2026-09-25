@@ -68,7 +68,7 @@ function canonicalTopic(topic){const name=String(topic||'Other').trim();const lo
 function inferredTopic(q){if(q.topic)return q.topic;if(q.lec)return q.lec;const refs=Array.isArray(q.ref)?q.ref.join('; '):'';const src=String(q.citation||q.src||refs||'').trim();if(/^Medical Gas Systems in Anesthesia/i.test(src))return 'Medical Gases';if(/^Intraoperative Assessment|^Monitoring/i.test(src))return 'Monitoring';if(/^Airway Equipment/i.test(src))return 'Airway';if(/^CO2 and Scavenging|^CO2 Absorbents and Scavenging|^CO₂ & Scavenging/i.test(src))return 'CO₂ & Scavenging';if(/^Anesthesia Workstation Hazards|^Hazards & safety/i.test(src))return 'Workstation Hazards';return 'Other'}
 function norm(q,b,set,i,label,forcedTopic){return{uid:b+'-'+(q.id??(set+'-'+i)),bank:b,bankLabel:label||b,set,seq:i,topic:canonicalTopic(forcedTopic||inferredTopic(q)),stem:q.stem||q.q||'',opts:q.options||q.c||[],ans:q.answer||q.correct||q.a||[],exp:q.explanation||q.why||q.exp||'',src:q.citation||((q.src||'')+(q.page?' · '+q.page:''))||(q.ref||[]).join('; '),img:q.imageSvg||q.img||null}}
 function syncBankData(){
-  const put=(q,ok,bank)=>{if(q&&!DB.ans[q.uid])DB.ans[q.uid]={ok:!!ok,at:Date.now(),topic:q.topic,bank}};
+  const put=(q,ok,bank,force=false)=>{if(q&&(force||!DB.ans[q.uid]))DB.ans[q.uid]={ok:!!ok,at:Date.now(),topic:q.topic,bank}};
   try{
     const b1=JSON.parse(localStorage.getItem('SRNA_COMBINED_EXAM_SET_1_2026_V1')||'null');
     if(b1&&b1.sets)for(let s=1;s<=5;s++){const st=b1.sets[s]||{},qs=ALL.filter(q=>q.bank==='b1'&&q.set===s);qs.forEach((q,i)=>{const k=String(i);if(st.graded&&st.graded[k])put(q,st.correct&&st.correct[k],'b1')})}
@@ -93,7 +93,7 @@ function syncBankData(){
       const d=JSON.parse(localStorage.getItem(key)||'null');if(!d)continue;
       const map=new Map(ALL.filter(q=>q.bank===bank).map(q=>[String(q.uid).slice(bank.length+1),q]));
       if(kind==='graded')Object.keys(d.graded||{}).forEach(id=>{if(d.graded[id])put(map.get(String(id)),d.correct&&d.correct[id],bank)});
-      else Object.entries(d.ans||{}).forEach(([id,result])=>put(map.get(String(id)),result&&result.ok,bank));
+      else Object.entries(d.ans||{}).forEach(([id,result])=>put(map.get(String(id)),result&&result.ok,bank,bank==='h3'||bank==='hh'));
     }catch(e){}
   }
   save();
@@ -131,4 +131,4 @@ function doSearch(){let x=document.getElementById('searchbox').value.trim().toLo
 function reportCurrent(){let hadAuto=!!autoTimer;clearTimeout(autoTimer);autoTimer=null;let q=session[pos],reason=prompt('Report reason: wrong answer, ambiguous, typo, explanation issue, source issue, or other');if(reason){DB.reports.push({uid:q.uid,bank:q.bank,bankLabel:q.bankLabel,stem:q.stem,reason,date:new Date().toISOString()});saveActive();alert('Report saved on this device.')}if(hadAuto&&graded&&DB.ans[q.uid]&&DB.ans[q.uid].ok)autoTimer=setTimeout(()=>nextQ(),650)}
 function showReports(){show('reports');document.getElementById('reportlist').innerHTML=DB.reports.map((r,i)=>`<div class="reportrow"><b>${esc(r.bankLabel||r.bank)}</b> · ${esc(r.reason)}<div>${esc(r.stem)}</div><button class="btn bad" onclick="DB.reports.splice(${i},1);save();showReports()">Delete</button></div>`).join('')||'<div class="mut">No reports saved.</div>'}
 loadBanks();
-</script><script src="../assets/calculator.js?v=7"></script><script>/* MBU_BUILD:2026-09-24-studio-deep-clean-v26 */</script><script src="../assets/auto-update.js?v=9"></script></body></html>
+</script><script src="../assets/calculator.js?v=7"></script><script>/* MBU_BUILD:2026-09-24-studio-sync-reconcile-v27 */</script><script src="../assets/auto-update.js?v=9"></script></body></html>
