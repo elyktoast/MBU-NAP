@@ -107,7 +107,7 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/hazards-bank-3.html');
     const answer = await page.evaluate(() => BANK[0].a);
     await clickIndexes(page.locator('#choices .opt'), answer);
-    await page.locator('#go').click();
+    if (answer.length > 1) await page.locator('#go').click();
     await page.waitForTimeout(450);
     await expect(page.locator('.progress')).toContainText('Question 2 of');
 
@@ -121,7 +121,7 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/hazards-harder.html');
     const answer = await page.evaluate(() => BANK[0].a);
     await clickIndexes(page.locator('#choices .opt'), answer);
-    await page.locator('#go').click();
+    if (answer.length > 1) await page.locator('#go').click();
     await page.waitForTimeout(100);
 
     const canonical = await storageJSON(page, 'hazards_harder_progress_2026_V1');
