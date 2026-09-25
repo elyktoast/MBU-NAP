@@ -147,6 +147,9 @@ test.describe('canonical quiz regression', () => {
     expect(overflow).toBeLessThanOrEqual(1);
     await expect(page.locator('#studioPrev')).toBeVisible();
     await expect(page.locator('#next')).toBeVisible();
+    await expect(page.locator('#quiz .header')).toBeVisible();
+    await expect(page.locator('#quiz .stats')).toBeVisible();
+    await expect(page.locator('#quiz .controls')).toBeVisible();
   });
 
   test('Studio active session resumes with position and answer state after reload', async ({ page }) => {
@@ -161,7 +164,7 @@ test.describe('canonical quiz regression', () => {
     });
     const answer = await page.evaluate(() => session[pos].ans);
     await clickIndexes(page.locator('#opts .opt'), answer);
-    await page.locator('#submit').click();
+    if (answer.length > 1) await page.locator('#submit').click();
     await page.waitForTimeout(450);
     await expect(page.locator('#qprog')).toContainText('Question 2 of 2');
 
