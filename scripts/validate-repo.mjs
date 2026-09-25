@@ -56,6 +56,15 @@ function checkCopies(){
     const src=read(p); if(/600\s+questions/i.test(src)) fail(p+': stale 600-question Bank 3 copy remains');
   }
 }
+function checkAssetVersions(){
+  const dir=path.join(root,'equipment/exam-1');
+  for(const name of fs.readdirSync(dir).filter(x=>x.endsWith('.html'))){
+    const p='equipment/exam-1/'+name,src=read(p),versions=[...src.matchAll(/\.\.\/assets\/[^"'?#\\s]+\?v=(\\d+)/g)].map(m=>m[1]);
+    if(versions.length&&new Set(versions).size!==1)fail(p+': mixed shared asset cache revisions: '+[...new Set(versions)].join(', '));
+    if(versions.length&&versions.some(v=>v!=='47'))fail(p+': stale shared asset cache revision; expected v47');
+  }
+}
+checkAssetVersions();
 function checkAssets(){
   const pages=['index.html','equipment/index.html',...fs.readdirSync(path.join(root,'equipment/exam-1')).filter(x=>x.endsWith('.html')).map(x=>'equipment/exam-1/'+x)];
   for(const p of pages){
