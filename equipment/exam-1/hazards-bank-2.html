@@ -521,4 +521,4 @@ function updateStats(){const done=Object.keys(db.graded).filter(k=>db.graded[k])
 function nav(d){const n=currentIndex+d;if(n>=0&&n<100){currentIndex=n;loadQuestion()}else if(d>0)goDashboard()}
 function goDashboard(){renderDashboard();window.scrollTo(0,0)}
 function resetCurrent(){if(!confirm('Reset progress for this hazards practice set?'))return;db={answers:{},graded:{},correct:{},strikes:{},current:0,missed:[]};currentIndex=0;saveDB();loadQuestion()}
-loadDB();{const p=new URLSearchParams(location.search);if(p.get('review')==='1')reviewMissed();else if(p.get('quiz')==='1')startSet();else renderDashboard();}</script><script src="../assets/calculator.js?v=7"></script><!-- MBU_BUILD:2026-09-24-hazards-bank2-review-fallback-v3 --><script src="../assets/auto-update.js?v=10"></script></body></html>
+loadDB();{const p=new URLSearchParams(location.search);if(p.get('review')==='1')reviewMissed();else if(p.get('quiz')==='1')startSet();else renderDashboard();}</script><script src="../assets/calculator.js?v=7"></script><!-- MBU_BUILD:2026-09-24-hazards-bank2-review-fallback-v3-u11 --><script src="../assets/auto-update.js?v=11"></script></body></html>
