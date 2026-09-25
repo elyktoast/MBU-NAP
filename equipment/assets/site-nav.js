@@ -7,6 +7,18 @@
   if(quizPages.has(page) && !document.querySelector('link[data-mbu-quiz-ui]')){
     const ui=document.createElement('link');ui.rel='stylesheet';ui.href=new URL('quiz-ui.css?v=2',script.src);ui.dataset.mbuQuizUi='1';document.head.appendChild(ui);
   }
+  // Bank 1 is the canonical quiz/dashboard UI. Apply that same shell to every
+  // current bank/challenge page and any future page registered as a quiz page.
+  if(quizPages.has(page) && !document.querySelector('link[data-mbu-bank1-ui]')){
+    const canonical=document.createElement('link');
+    canonical.rel='stylesheet';
+    canonical.href=new URL('bank1-quiz-ui.css?v=5',script.src);
+    canonical.dataset.mbuBank1Ui='1';
+    document.head.appendChild(canonical);
+    const applyCanonicalClass=()=>document.body?.classList.add('mbu-bank1-ui');
+    if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',applyCanonicalClass,{once:true});
+    else applyCanonicalClass();
+  }
   const equipment = new URL('../', script.src);
   const home = new URL('../', equipment);
   const exam = new URL('exam-1/', equipment);
