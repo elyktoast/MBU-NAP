@@ -68,11 +68,17 @@ function checkStudio(){
   const src=read('equipment/exam-1/studio.html');
   for(const name of ['quiz-bank-1.html','quiz-bank-2.html','quiz-bank-3.html','hazards-100.html','hazards-bank-2.html','hazards-bank-3.html','hazards-harder.html']) if(!src.includes(name))fail('Studio: missing source '+name);
   if(!src.includes("['quiz-bank-1.html','b1'")) fail('Studio: Bank 1 is not the first canonical bank source');
+  if(src.includes("const im=t.match(/const IMGS=")&&src.includes("key==='b3'")) fail('Studio: Bank 3 image payload is still eagerly parsed');
+}
+function checkRuntimeSafety(){
+  const bank3=read('equipment/exam-1/quiz-bank-3.html');
+  if(!bank3.includes('const BANK=')||!bank3.includes('const TOTAL='))fail('Bank 3: runtime bank structures missing');
+  if(/document\.getElementById\(["'][^"']+["']\)\.style/.test(read('equipment/assets/auto-update.js')))fail('Updater: unsafe required DOM access');
 }
 try{checkBank1()}catch(e){fail('Bank 1 validation crashed: '+e.message)}
 try{checkBank2()}catch(e){fail('Bank 2 validation crashed: '+e.message)}
 try{checkBank3()}catch(e){fail('Bank 3 validation crashed: '+e.message)}
-checkCopies();checkAssets();checkStudio();
+checkCopies();checkAssets();checkStudio();checkRuntimeSafety();
 const manifest=JSON.parse(read('equipment/build.json')); if(!manifest.build)fail('Build manifest has no build id');
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
 console.log('Repository validation passed: Banks 1-3 are 500 questions each; local assets, Studio sources, answer indexes, and build manifest are valid.');

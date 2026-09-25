@@ -46,11 +46,21 @@
       return {...x,uid,bank};
     });
     cache=d;
+    try{lastSerialized=JSON.stringify(d)}catch(e){}
     if(changed) save(d);
     return cache;
   }
 
-  function save(d){cache=d;try{localStorage.setItem(STORE,JSON.stringify(d))}catch(e){}}
+  let lastSerialized='';
+  function save(d){
+    cache=d;
+    try{
+      const serialized=JSON.stringify(d);
+      if(serialized===lastSerialized)return;
+      localStorage.setItem(STORE,serialized);
+      lastSerialized=serialized;
+    }catch(e){}
+  }
   window.addEventListener('storage',e=>{if(e.key===STORE)cache=null});
   function key(bank,q){return normalizeBank(bank)+'-'+q.id}
   function topicOf(q){
