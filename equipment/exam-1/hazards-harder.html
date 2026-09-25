@@ -55,8 +55,9 @@ td,th{padding:6px 8px;border-bottom:1px solid var(--rule);text-align:left}
 #lb.on{display:flex}#lb img{max-width:100%;max-height:100%;background:#fff}
 ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 @media (max-width:600px){ul.concepts{columns:1}}
-</style><link rel="stylesheet" href="../assets/site-nav.css?v=2"><script defer src="../assets/site-nav.js?v=4" data-page="hh"></script></head>
-<body><div class="wrap">
+</style><link rel="stylesheet" href="../assets/site-nav.css?v=2">
+<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=1"><script defer src="../assets/site-nav.js?v=4" data-page="hh"></script></head>
+<body class="mbu-bank1-ui"><div class="wrap">
 <header><h1>Workstation Hazards · Challenge Set · 50 questions</h1>
 <div class="stats" id="stats"></div>
 <div class="hbtns"><button class="ghost" id="bRev">Missed review</button><button class="ghost" id="bReset">Reset</button></div></header>
@@ -77,10 +78,7 @@ function save(){try{S.view=view;localStorage.setItem(KEY,JSON.stringify(S))}catc
 const byId=Object.fromEntries(BANK.map(q=>[q.id,q]));
 const $=s=>document.querySelector(s);
 function same(a,b){return a.length===b.length&&[...a].sort().join()===[...b].sort().join()}
-function stats(){const v=Object.values(S.ans),correct=v.filter(x=>x.ok).length,done=v.length,m=missed().length;
- const qc=(view==="prac"&&S.prac)?{i:S.prac.i,total:S.prac.list.length}:{i:S.idx,total:BANK.length};
- const shown=Math.min(qc.i+1,Math.max(qc.total,1));
- $("#stats").innerHTML=`Question <b>${shown}</b> / ${qc.total} · Completed <b>${done}</b> / ${BANK.length} · Score <b>${done?Math.round(100*correct/done):0}%</b> · Missed <b>${m}</b>`;
+function stats(){const v=Object.values(S.ans),correct=v.filter(x=>x.ok).length,done=v.length,m=missed().length;\n $("#stats").innerHTML=`Completed <b>${done}</b> / ${BANK.length} · Score <b>${done?Math.round(100*correct/done):0}%</b> · Missed <b>${m}</b>`;
  $("#prog").style.width=(100*done/BANK.length)+"%";
  $("#bRev").textContent=`Missed review (${m})`}
 function missed(){return BANK.filter(q=>S.ans[q.id]&&!S.ans[q.id].ok)}
@@ -100,7 +98,7 @@ function render(){clearTimeout(timer);stats();
  cur={sel:prev?prev.sel.slice():[],done:!!prev};
  const xo=S.xo[q.id]||[],answered=Object.values(S.ans),correct=answered.filter(x=>x.ok).length,miss=missed().length;
  const badge=c.mode==="prac"?"MISSED QUESTIONS REVIEW":"CHALLENGE SET";
- let h=`<div class="card"><div class="qmeta"><span>${badge}</span><span class="mbu-qtools"><button class="ghost" id="qFlag" type="button">☆ Flag</button><button class="ghost" id="qReport" type="button">Report</button><button class="ghost" id="qNav" type="button">Navigator</button><button class="ghost mbu-return" id="qHome" type="button">← Hazards Home</button><b>Question ${c.i+1} of ${c.list.length}${c.mode==="main"?` · Q${q.num}`:""}</b></span></div>
+ let h=`<div class="card"><div class="qmeta"><span>${badge}</span><span class="mbu-qtools"><button class="ghost" id="qFlag" type="button">☆ Flag</button><button class="ghost" id="qReport" type="button">Report</button><button class="ghost" id="qNav" type="button">Navigator</button><button class="ghost mbu-return" id="qHome" type="button">← Hazards Home</button><b>Question ${Math.min(c.i+1,c.list.length)} of ${c.list.length}${c.mode==="main"?` · Q${q.num}`:""}</b></span></div>
  <div class="mbu-quiz-stats"><div>Completed: <strong>${answered.length}</strong>/${BANK.length}</div><div>Score: <strong>${answered.length?Math.round(100*correct/answered.length):0}</strong>%</div><div>Missed: <strong>${miss}</strong></div></div>
  ${quizNavHTML(c)}<div class="mbu-quiz-type">${q.type==="multi"?`Select ${q.n} Options`:"Single Best Answer"}</div>
  <p class="stem">${esc(q.q)}</p>`;
@@ -177,4 +175,4 @@ document.addEventListener("keydown",e=>{if($("#lb").classList.contains("on")){if
  let k=e.key.toUpperCase();if(/^[1-6]$/.test(k))k=L[+k-1];const i=L.indexOf(k);
  if(i>=0&&i<q.c.length&&k.length===1){e.preventDefault();e.shiftKey?cross(q,i):pick(q,i)}});
 if(new URLSearchParams(location.search).get('review')==='1'){view='review';save()}render();
-</script><!-- MBU_BUILD:2026-09-24-hh-bank1-ui-v12 --><script src="../assets/calculator.js?v=7"></script><script>window.MBUCalculator?.besideFlag()</script><script src="../assets/auto-update.js?v=11"></script></body></html>
+</script><!-- MBU_BUILD:2026-09-24-hh-bank1-ui-v12-uniform-ui --><script src="../assets/calculator.js?v=7"></script><script>window.MBUCalculator?.besideFlag()</script><script src="../assets/auto-update.js?v=11"></script></body></html>
