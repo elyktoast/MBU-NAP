@@ -202,6 +202,13 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!src.includes('if(prior&&prior.pos===pos)return;'))fail('Studio: unchanged question renders still rewrite active session state');
 }
 
+// Studio session statistics should be computed in one pass without temporary mapped/filtered arrays.
+{
+ const src=read('equipment/exam-1/studio.html');
+ if(src.includes('session.map(q=>sessionAnswer(q.uid)).filter(Boolean)'))fail('Studio: session statistics still allocate intermediate arrays');
+ if(!src.includes('for(const q of session){const r=sessionAnswer(q.uid);if(!r)continue;done++;if(r.ok)correct++}'))fail('Studio: session statistics are not consolidated into one pass');
+}
+
 // Studio home renders should reuse the hydrated UID index instead of rebuilding a Set from every question.
 {
  const src=read('equipment/exam-1/studio.html');
