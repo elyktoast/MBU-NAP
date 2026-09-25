@@ -202,6 +202,13 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!src.includes('if(prior&&prior.pos===pos)return;'))fail('Studio: unchanged question renders still rewrite active session state');
 }
 
+// Shared navigator should expose only the canonical API; the legacy global alias is obsolete.
+{
+ const src=read('equipment/assets/navigator.js');
+ if(src.includes('window.mbuNavButton'))fail('Navigator: obsolete mbuNavButton compatibility alias remains');
+ if(!src.includes('window.MBUNavigator={button}'))fail('Navigator: canonical MBUNavigator API is missing');
+}
+
 // Shared Studio storage should not retain obsolete helper code.
 {
  const src=read('equipment/assets/studio-sync.js');
