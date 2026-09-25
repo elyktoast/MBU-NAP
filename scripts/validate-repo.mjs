@@ -49,7 +49,7 @@ function checkBank2(){
   const all=[]; sets.forEach((set,n)=>{if(set.length!==100)fail('Bank 2 Practice Set '+(n+1)+': expected 100, found '+set.length);all.push(...set.map(q=>({...q,id:(n+1)+'-'+q.id})))});
   validateQuestions('Quiz Bank 2',all,500);
 }
-function checkBank3(){validateQuestions('Quiz Bank 3',parseArray(read('equipment/exam-1/quiz-bank-3.html'),'const BANK'),600)}
+function checkBank3(){validateQuestions('Quiz Bank 3',parseArray(read('equipment/exam-1/quiz-bank-3.html'),'const BANK'),500)}
 function checkCopies(){
   for(const p of ['equipment/exam-1/index.html','equipment/exam-1/quiz-bank-3.html']){
     const src=read(p); if(/600\s+questions/i.test(src)) fail(p+': stale 600-question Bank 3 copy remains');
@@ -200,4 +200,4 @@ const sharedHazardsEngine=read('equipment/assets/hazards-quiz-engine.js');
 if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared Hazards engine has invalid default expression inside object destructuring');
 
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
-console.log('Repository validation passed: Banks 1-2 are 500 questions each, Bank 3 is 600 questions; local assets, Studio sources, shared quiz runtimes, answer indexes, and build manifest are valid.');
+console.log('Repository validation passed: Banks 1-3 are 500 questions each; local assets, Studio sources, shared quiz runtimes, answer indexes, and build manifest are valid.');
