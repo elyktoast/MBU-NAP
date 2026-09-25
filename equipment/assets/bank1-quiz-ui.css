@@ -10,7 +10,7 @@ body.mbu-bank1-ui{margin:0;padding:20px;background:var(--bg);color:var(--t);font
 .mbu-bank1-ui .mbu-dashboard-header{display:block;background:#fff;border:0;border-bottom:2px solid var(--b);border-radius:0;box-shadow:none;padding:0 0 18px;margin:0 0 22px;min-height:0}
 .mbu-bank1-ui .mbu-dashboard-title{display:flex;flex-direction:column;align-items:flex-start;gap:4px;width:100%}
 .mbu-bank1-ui .mbu-dashboard-title h1{margin:0;color:#1a202c;font-size:1.75rem;font-weight:800;line-height:1.2}
-.mbu-bank1-ui .mbu-dashboard-overall,.mbu-bank1-ui .mbu-dashboard-title>.stats{display:block;margin:0;padding:0;background:transparent;border:0;color:var(--mut);font-size:.9rem;font-weight:400;line-height:1.4;text-align:left}
+.mbu-bank1-ui .mbu-dashboard-overall{display:block;margin:0;padding:0;background:transparent;border:0;color:var(--mut);font-size:.9rem;font-weight:400;line-height:1.4;text-align:left}
 .mbu-bank1-ui .grid,.mbu-bank1-ui #cards,.mbu-bank1-ui #setGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .mbu-bank1-ui .card,.mbu-bank1-ui .setcard{min-width:0;min-height:174px;display:flex;flex-direction:column;background:#fff;border:1px solid var(--b);border-radius:9px;box-shadow:none;padding:18px}
 .mbu-bank1-ui .card h3,.mbu-bank1-ui .setcard h3{margin:0 0 6px;color:var(--t);font-size:1.08rem}
