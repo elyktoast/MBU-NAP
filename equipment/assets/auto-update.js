@@ -29,8 +29,6 @@
     }
   }
 
-  setTimeout(()=>check(),30000);
-  setInterval(()=>check(),300000);
   window.addEventListener('pageshow',event=>{if(event.persisted)check(true)});
   window.addEventListener('focus',()=>check());
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)check()});
