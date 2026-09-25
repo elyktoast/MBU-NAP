@@ -2,8 +2,6 @@
   const STORE='mbu_exam1_studio_v1';
   let cache=null;
 
-  function empty(){return {ans:{},flags:{},crosses:{},reports:[]}}
-
   function normalizeBank(bank){
     const s=String(bank ?? '').trim();
     if(/^\d+$/.test(s)) return 'b'+s;
