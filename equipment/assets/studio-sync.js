@@ -61,7 +61,7 @@
       lastSerialized=serialized;
     }catch(e){}
   }
-  window.addEventListener('storage',e=>{if(e.key===STORE)cache=null});
+  window.addEventListener('storage',e=>{if(e.key===STORE){cache=null;lastSerialized=''}});
   function key(bank,q){
     if(q&&q.uid)return normalizeKey(q.uid);
     return normalizeBank(bank)+'-'+q.id
