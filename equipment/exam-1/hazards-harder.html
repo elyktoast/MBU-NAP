@@ -56,7 +56,20 @@ td,th{padding:6px 8px;border-bottom:1px solid var(--rule);text-align:left}
 ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 @media (max-width:600px){ul.concepts{columns:1}}
 </style><link rel="stylesheet" href="../assets/site-nav.css?v=15">
-<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=15"><script defer src="../assets/site-nav.js?v=15" data-page="hh"></script></head>
+<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=15"><script defer src="../assets/site-nav.js?v=15" data-page="hh"></script><style id="mbu-hazards-bank1-final">
+body.mbu-bank1-ui{padding:20px;background:#edf2f7;color:#2d3748}
+body.mbu-bank1-ui .wrap{max-width:1040px;margin:auto;padding:0}
+body.mbu-bank1-ui .card{background:#fff;border:1px solid #cbd5e0;border-radius:10px;box-shadow:0 4px 12px #00000012;padding:28px}
+body.mbu-bank1-ui .header{display:flex;justify-content:space-between;gap:15px;align-items:center;border-bottom:2px solid #cbd5e0;padding-bottom:14px;margin-bottom:18px}
+body.mbu-bank1-ui .stats{display:flex;gap:22px;flex-wrap:wrap;background:#f7fafc;border:1px solid #cbd5e0;padding:12px 16px;border-radius:7px;margin-bottom:20px;color:#2d3748}
+body.mbu-bank1-ui .stem{font-size:1.12rem;font-weight:650;color:#1a202c;margin-bottom:18px}
+body.mbu-bank1-ui .ch{gap:8px;margin:10px 0}
+body.mbu-bank1-ui .opt{padding:12px 16px;border-radius:6px;font-size:.98rem;background:#fff;color:#2d3748}
+body.mbu-bank1-ui .xo{flex:0 0 44px;width:44px;border:1px solid #cbd5e0;border-radius:8px;background:#fff;color:#4a5568;font-size:18px}
+body.mbu-bank1-ui .opt.x .t{text-decoration:line-through;opacity:.45}
+body.mbu-bank1-ui .controls,body.mbu-bank1-ui .mbu-quiz-bottom{border-top:1px solid #cbd5e0;padding-top:16px;margin-top:24px}
+@media(max-width:650px){body.mbu-bank1-ui{padding:10px}body.mbu-bank1-ui .card{padding:18px}body.mbu-bank1-ui .header{align-items:flex-start;flex-direction:column}}
+</style></head>
 <body class="mbu-bank1-ui"><div class="wrap">
 <header><h1>Workstation Hazards · Challenge Set · 50 questions</h1>
 <div class="stats" id="stats"></div>
@@ -114,7 +127,7 @@ function render(){clearTimeout(timer);stats();
  h+=`</div><div class="act"><span class="hint" id="hint">${q.type==="multi"?`Choose exactly ${q.n}. `:""}Keys: A–${L[q.c.length-1]} select, Shift+letter cross out, Enter submit/next</span><button class="primary" id="go">Submit Answer</button></div><div id="fb"></div>
  <div class="mbu-quiz-bottom"><button class="ghost" id="qPrev" type="button">Previous</button><div class="right"><button class="ghost" id="qReset" type="button">Reset</button><button class="primary" id="qNext" type="button">Next</button></div></div></div>`;
  $("#main").innerHTML=h;
- document.querySelectorAll(".opt").forEach(b=>b.onclick=()=>pick(q,+b.dataset.i));
+ document.querySelectorAll(".opt").forEach(b=>{b.onclick=()=>pick(q,+b.dataset.i);b.oncontextmenu=e=>{e.preventDefault();cross(q,+b.dataset.i)}});
  document.querySelectorAll(".xo").forEach(b=>b.onclick=()=>cross(q,+b.dataset.x));
  const im=document.querySelector(".fig img");if(im)im.onclick=()=>{$("#lb img").src=im.src;$("#lb").classList.add("on")};
  $("#go").onclick=()=>cur.done?next():submit(q);
@@ -181,4 +194,4 @@ document.addEventListener("keydown",e=>{if($("#lb").classList.contains("on")){if
  let k=e.key.toUpperCase();if(/^[1-6]$/.test(k))k=L[+k-1];const i=L.indexOf(k);
  if(i>=0&&i<q.c.length&&k.length===1){e.preventDefault();e.shiftKey?cross(q,i):pick(q,i)}});
 if(new URLSearchParams(location.search).get('review')==='1'){view='review';save()}render();
-</script><!-- MBU_BUILD:2026-09-24-hh-unified-v14 --><script src="../assets/calculator.js?v=15"></script><script>window.MBUCalculator?.besideFlag()</script><script src="../assets/auto-update.js?v=15"></script></body></html>
+</script><!-- MBU_BUILD:2026-09-25-hazards-bank1-ui-contextmenu-v16 --><script src="../assets/calculator.js?v=15"></script><script>window.MBUCalculator?.besideFlag()</script><script src="../assets/auto-update.js?v=15"></script></body></html>
