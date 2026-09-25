@@ -126,7 +126,7 @@ function missedPool(){const seen={},out=[];for(const n of [...EXLIST].reverse())
 function allMissedCount(){let m=0;EXLIST.forEach(n=>m+=examStats(n).missed.length);return m}
 
 // ----- header
-function header(title,right){$("#title").textContent=title;$("#hbtns").innerHTML=right||"";}
+function setDashboardTitle(title){$("#title").textContent=title;}
 function setBar(p){$("#prog").style.width=(100*p)+"%"}
 function questionChrome(active){
  const h=document.querySelector("#dashboard .hero"),b=document.querySelector("#barw");
@@ -138,7 +138,7 @@ function questionChrome(active){
 function dash(){clearTimeout(timer);window.MBUCalculator?.hide();questionChrome(false);V={mode:"dash"};
  let A=0,C=0,M=0;EXLIST.forEach(n=>{const s=examStats(n);A+=s.a;C+=s.c;M+=s.missed.length});
  const pool=missedPool();
- header("Quiz Bank 3 Dashboard","");
+ setDashboardTitle("Quiz Bank 3 Dashboard");
  $("#stats").textContent=A+" / "+TOTAL+" completed";setBar(TOTAL?A/TOTAL:0);
  let h='<div class="grid">';
  for(const n of EXLIST){const s=examStats(n),done=s.a>=s.t;
