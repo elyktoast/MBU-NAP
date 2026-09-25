@@ -104,6 +104,10 @@ function checkStudioIndexes(){
   if(src.includes("ALL.find(x=>x.uid===uid)"))fail('Studio: linear UID lookup remains in quiz path');
 }
 checkStudioIndexes();
+for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html']){
+  const src=read(p);
+  if(!src.includes("if(next===lastSaved)return"))fail(p+': duplicate localStorage writes are not suppressed');
+}
 function checkCanonicalNavigators(){
   for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html']){
     const src=read(p);

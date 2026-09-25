@@ -505,7 +505,7 @@ for(let i=31;i<=100;i++){const base=additionalHazards[(i-31)%additionalHazards.l
 const STORE='SRNA_HAZARDS_BANK_2_2026_V1';
 let db={answers:{},graded:{},correct:{},strikes:{},current:0,missed:[]},currentIndex=0,autoTimer=null,reviewMode=false,reviewList=[],reviewDB={answers:{},graded:{},correct:{},strikes:{}};
 function loadDB(){try{const x=JSON.parse(localStorage.getItem(STORE)||'null');if(x)db={...db,...x}}catch(e){};const valid=new Map(QUESTIONS.map(q=>[String(q.id),q.id]));db.missed=[...new Set((db.missed||[]).map(id=>valid.get(String(id))).filter(id=>id!==undefined))];currentIndex=Math.max(0,Math.min(Number(db.current)||0,QUESTIONS.length-1))}
-function saveDB(){if(!reviewMode)db.current=currentIndex;localStorage.setItem(STORE,JSON.stringify(db))}
+let lastSaved='';function saveDB(){if(!reviewMode)db.current=currentIndex;const next=JSON.stringify(db);if(next===lastSaved)return;localStorage.setItem(STORE,next);lastSaved=next}
 function activeQuestions(){return reviewMode?reviewList:QUESTIONS}
 function activeQuestion(){return activeQuestions()[currentIndex]||QUESTIONS[0]}function activeState(){return reviewMode?reviewDB:db}
 function mbuIsFlagged(q){return window.MBUStudio?MBUStudio.flagged('h2',q):false}

@@ -8558,7 +8558,7 @@ function mbuUpdateFlag(q){const b=document.getElementById('mbuFlagBtn');if(b)b.t
 
 function blankState(){return {answers:{},graded:{},correct:{},strikes:{},current:0}}
 function loadDB(){try{const x=JSON.parse(localStorage.getItem(STORE)||'null');if(x)db=x}catch(e){};for(let s=1;s<=5;s++){if(!db.sets[s])db.sets[s]=blankState();if(!db.missed[s])db.missed[s]=[]}if(!db.test6)db.test6=blankState()}
-function saveDB(){localStorage.setItem(STORE,JSON.stringify(db))}
+let lastSaved='';function saveDB(){const next=JSON.stringify(db);if(next===lastSaved)return;localStorage.setItem(STORE,next);lastSaved=next}
 function setState(){return mode==='test6'?db.test6:db.sets[currentSet]}
 function missedAll(){let out=[];for(let s=1;s<=5;s++)for(const id of db.missed[s]){const q=SETS[s].find(x=>x.id===id);if(q)out.push({...q,_sourceSet:s})}return out}
 function statsFor(s){const st=db.sets[s],done=Object.keys(st.graded).filter(k=>st.graded[k]).length,good=Object.keys(st.correct||{}).filter(k=>st.correct[k]).length;return {done,good,score:done?Math.round(good/done*100):0,miss:db.missed[s].length}}
