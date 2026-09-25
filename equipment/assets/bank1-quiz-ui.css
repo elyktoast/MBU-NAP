@@ -254,3 +254,45 @@ body.mbu-bank1-ui{min-height:100vh!important;font-size:16px!important}
   .mbu-bank1-ui .card,.mbu-bank1-ui .setcard{min-height:0!important}
   .mbu-bank1-ui .summary{grid-template-columns:repeat(2,minmax(0,1fr))!important}
 }
+
+
+/* v7 — hard-lock the shared bank viewport geometry.
+   All bank/hazards pages use the Bank 1 box model so navigation does not shift. */
+html:has(body.mbu-bank1-ui){overflow-y:scroll!important;scrollbar-gutter:stable!important}
+body.mbu-bank1-ui{
+  margin:0!important;
+  padding:20px!important;
+  width:100%!important;
+  min-width:0!important;
+  line-height:1.5!important;
+}
+body.mbu-bank1-ui>.wrap,
+body.mbu-bank1-ui>main.wrap,
+.mbu-bank1-ui .wrap{
+  width:100%!important;
+  max-width:1040px!important;
+  margin:0 auto!important;
+  padding:0!important;
+}
+.mbu-bank1-ui .panel,
+.mbu-bank1-ui .quiz,
+.mbu-bank1-ui #dash,
+.mbu-bank1-ui #dashboard,
+.mbu-bank1-ui #main{
+  width:100%!important;
+  max-width:1040px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.mbu-bank1-ui .grid,
+.mbu-bank1-ui #cards,
+.mbu-bank1-ui #setGrid{
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr))!important;
+  gap:16px!important;
+}
+@media(max-width:650px){
+  body.mbu-bank1-ui{padding:10px!important}
+  body.mbu-bank1-ui>.wrap,
+  body.mbu-bank1-ui>main.wrap,
+  .mbu-bank1-ui .wrap{padding:0!important}
+}
