@@ -1,6 +1,7 @@
 /* Compact page switcher shared by the study center and all exam pages. */
 (() => {
   const script = document.currentScript;
+  document.documentElement.classList.add('mbu-nav-loading');
   const page = script.dataset.page;
   document.documentElement.dataset.mbuPage = page || '';
   const quizPages = new Set(['bank1','bank2','bank3','hazards','haz1','haz2','haz3','hh']);
@@ -122,6 +123,6 @@
     nav.append(brand,crumb,quick,pickerLabel,picker);
     document.body.prepend(nav);
   };
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded',render,{once:true});
-  else render();
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded',()=>{render();document.documentElement.classList.remove('mbu-nav-loading')},{once:true});
+  else { render(); document.documentElement.classList.remove('mbu-nav-loading'); }
 })();
