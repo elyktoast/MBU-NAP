@@ -152,3 +152,13 @@ for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-
 }
 
 for(const p of quizFiles){const src=read(p);if(!src.includes('Right-click an answer to cross it out.'))fail(p+': missing right-click cross-out hint');if(!src.includes('mbu-crossout-hint'))fail(p+': cross-out hint is not using canonical quiz UI styling');}
+
+// Hazards Set 3 and Challenge must share one quiz engine; no page-local renderer/state engine.
+for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
+ const src=read(p);
+ if(!src.includes('../assets/hazards-quiz-engine.js'))fail(p+': shared Hazards quiz engine is not loaded');
+ if(!src.includes('MBUHazardsQuizEngine.start('))fail(p+': shared Hazards quiz engine is not initialized');
+ for(const legacy of ['function render(){','function showResult(','function quizNavHTML(','function fresh(){']) if(src.includes(legacy))fail(p+': page-local legacy quiz engine remains: '+legacy);
+}
+const hazardEngine=read('equipment/assets/hazards-quiz-engine.js');
+for(const token of ['mbu-crossout-hint','MBUNavigator.button','classList.add(rec.sel.includes(i)?"ok":"miss")','timer=setTimeout(()=>{timer=null;next()},350)']) if(!hazardEngine.includes(token))fail('Shared Hazards engine missing canonical behavior: '+token);
