@@ -88,6 +88,9 @@ try{
   if(raw.includes('\\n'))fail('Build manifest contains escaped newline text instead of real newlines');
   manifest=JSON.parse(raw);
   if(!manifest.build)fail('Build manifest has no build id');
+  const latestSourceChange=execFileSync('git',['log','-1','--format=%ct','--','equipment'],{encoding:'utf8'}).trim();
+  const latestManifestChange=execFileSync('git',['log','-1','--format=%ct','--','equipment/build.json'],{encoding:'utf8'}).trim();
+  if(latestSourceChange&&latestManifestChange&&Number(latestManifestChange)<Number(latestSourceChange))fail('Build manifest is stale: equipment changed without publishing a new build id');
 }catch(e){fail('Build manifest is invalid JSON: '+e.message)}
 function checkHazardNavigators(){
   const standard=read('equipment/assets/hazards-standard-engine.js');
