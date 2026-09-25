@@ -106,6 +106,7 @@ function render(){clearTimeout(timer);stats();
  const qFlag=$("#qFlag");qFlag.textContent=window.MBUStudio&&MBUStudio.flagged('hh',q)?'★ Flagged':'☆ Flag';
  qFlag.onclick=()=>{if(!window.MBUStudio)return;MBUStudio.toggleFlag('hh',q);qFlag.textContent=MBUStudio.flagged('hh',q)?'★ Flagged':'☆ Flag'};
  $("#qReport").onclick=()=>window.MBUStudio&&MBUStudio.report('hh',q);
+ window.MBUCalculator?.besideFlag();
  if(prev)showResult(q,prev,true);else upd(q)}
 function esc(s){return String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]))}
 function pick(q,i){if(cur.done)return;const s=cur.sel;
@@ -162,4 +163,4 @@ document.addEventListener("keydown",e=>{if($("#lb").classList.contains("on")){if
  let k=e.key.toUpperCase();if(/^[1-6]$/.test(k))k=L[+k-1];const i=L.indexOf(k);
  if(i>=0&&i<q.c.length&&k.length===1){e.preventDefault();e.shiftKey?cross(q,i):pick(q,i)}});
 if(new URLSearchParams(location.search).get('review')==='1'){view='review';save()}render();
-</script><!-- MBU_BUILD:2026-09-24-hazards-challenge-sync-v4 --><script src="../assets/auto-update.js?v=10"></script></body></html>
+</script><!-- MBU_BUILD:2026-09-24-hazards-challenge-tools-v5 --><script src="../assets/calculator.js?v=7"></script><script>window.MBUCalculator?.besideFlag()</script><script src="../assets/auto-update.js?v=10"></script></body></html>
