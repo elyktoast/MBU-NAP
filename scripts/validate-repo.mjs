@@ -322,5 +322,25 @@ for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-ba
 const sharedHazardsEngine=read('equipment/assets/hazards-quiz-engine.js');
 if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared Hazards engine has invalid default expression inside object destructuring');
 
+// Final end-to-end regression invariants for dashboards, Studio resume/reset, and bank totals.
+{
+ const b1=read('equipment/exam-1/quiz-bank-1.html'),b2=read('equipment/exam-1/quiz-bank-2.html'),b3=read('equipment/exam-1/quiz-bank-3.html'),studio=read('equipment/exam-1/studio.html');
+ if(!b1.includes('0 / 500 completed')||!b1.includes("document.getElementById('overall').textContent=td+' / 500 completed'"))fail('Bank 1: dashboard total is not canonically fixed at 500');
+ if(!b2.includes('0 / 500 completed')||!b2.includes("bank2Overall').textContent=totalDone+' / 500 completed'"))fail('Bank 2: dashboard total is not canonically fixed at 500');
+ if(!b3.includes('const TOTAL=500'))fail('Bank 3: canonical total is not 500');
+ for(const token of [
+  'function resumeActive(){if(!DB.active||!DB.active.uids)return;',
+  'pos=Math.min(DB.active.pos||0,session.length-1);showQ()',
+  'function studioNav(delta){clearTimeout(autoTimer);autoTimer=null;',
+  'pos=n;saveActive();showQ()',
+  'function resetStudioCurrent(){clearTimeout(autoTimer);autoTimer=null;',
+  'clearSessionAnswer(q.uid);',
+  'function nextQ(){clearTimeout(autoTimer);autoTimer=null;',
+  'else clearActive();session=[]'
+ ]) if(!studio.includes(token))fail('Studio: final session lifecycle invariant missing: '+token);
+ if(!studio.includes('saved=sessionAnswer(q.uid)')||!studio.includes('graded=!!(saved&&savedSel)'))fail('Studio: revisiting a session question does not restore graded state');
+ if(!studio.includes('setSessionAnswer(q.uid,{ok,selected,at:Date.now()})'))fail('Studio: grading does not persist selected answers for resume');
+}
+
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
 console.log('Repository validation passed: Banks 1-3 are 500 questions each; local assets, Studio sources, shared quiz runtimes, answer indexes, and build manifest are valid.');
