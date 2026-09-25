@@ -77,8 +77,10 @@ const L="ABCDEF";
 let S=load();let timer=null;let view=S.view||"quiz";
 function fresh(){return{idx:0,ans:{},xo:{},prac:null,view:"quiz"}}
 function load(){try{const r=localStorage.getItem(KEY);if(r){const o=JSON.parse(r);if(o&&typeof o.idx==="number")return o}}catch(e){}return fresh()}
-function save(){try{S.view=view;localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+let lastSaved='';
+function save(){try{S.view=view;const next=JSON.stringify(S);if(next===lastSaved)return;localStorage.setItem(KEY,next);lastSaved=next}catch(e){}}
 const byId=Object.fromEntries(BANK.map(q=>[q.id,q]));
+try{lastSaved=JSON.stringify(S)}catch(e){}
 const $=s=>document.querySelector(s);
 function same(a,b){return a.length===b.length&&[...a].sort().join()===[...b].sort().join()}
 function stats(){const v=BANK.map(q=>S.ans[q.id]).filter(Boolean),correct=v.filter(x=>x.ok).length,done=v.length,m=missed().length;

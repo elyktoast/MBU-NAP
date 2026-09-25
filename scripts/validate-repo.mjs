@@ -94,5 +94,13 @@ function checkHazardNavigators(){
   }
 }
 checkHazardNavigators();
+function checkCanonicalNavigators(){
+  for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html']){
+    const src=read(p);
+    if(!src.includes('../assets/navigator.js'))fail(p+': shared navigator is not loaded');
+    if(!src.includes('MBUNavigator.button'))fail(p+': canonical navigator renderer is not used');
+  }
+}
+checkCanonicalNavigators();
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
 console.log('Repository validation passed: Banks 1-3 are 500 questions each; local assets, Studio sources, answer indexes, and build manifest are valid.');

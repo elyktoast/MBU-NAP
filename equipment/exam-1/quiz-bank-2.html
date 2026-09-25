@@ -103,7 +103,7 @@ function current(){
   if(mode==="set") return {si:activeSet,qi:order[pos]};
   return order[pos];
 }
-function renderNavigator(){document.getElementById('mbuNavigator').innerHTML=order.map((x,i)=>{const qq=SETS[x.si??activeSet][x.qi??x];return mbuNavButton(i,i+1,i===pos,mbuIsFlagged(qq),'pos='+i+';showQ()',(()=>{const xx=order[i],si=xx.si??activeSet,qi=xx.qi??xx,aa=st(si).answered;return Object.prototype.hasOwnProperty.call(aa,qi)?!!aa[qi]:null})())}).join('')}
+function renderNavigator(){document.getElementById('mbuNavigator').innerHTML=order.map((x,i)=>{const qq=SETS[x.si??activeSet][x.qi??x],xx=order[i],si=xx.si??activeSet,qi=xx.qi??xx,aa=st(si).answered,result=Object.prototype.hasOwnProperty.call(aa,qi)?!!aa[qi]:null;return MBUNavigator.button({label:i+1,active:i===pos,flagged:mbuIsFlagged(qq),result,onClick:'pos='+i+';showQ()'})}).join('')}
 function toggleCross(c,i,b,cross){
   if(locked)return;
   const crosses=st(c.si).crosses,items=crosses[c.qi]||[];
