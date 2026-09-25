@@ -108,7 +108,7 @@ async function loadBanks(){
   ];
   // Paint the Studio immediately; question banks hydrate in the background.
   try{renderHome()}catch(e){}
-  const loaded=await Promise.all(sources.map(async([url,key,label])=>{
+  const loadSource=async([url,key,label])=>{
     try{
       const t=await studioFetch(url);
       if(key==='b1'){
@@ -123,7 +123,8 @@ async function loadBanks(){
         return qs.map((q,i)=>norm({...q,img:q.img?(key==='h3'||key==='hh'?{kind:'hazards',url,imgKey:q.img}:q.img):(q.imageSvg||null)},key,1,i,label,'Workstation Hazards'))
       }
     }catch(e){errors.push(label+': '+(e&&e.name==='AbortError'?'timed out':e.message));console.error('Studio source failed:',label,e);return []}
-  }));
+  };
+  const loaded=[];for(const source of sources){loaded.push(await loadSource(source));await new Promise(resolve=>setTimeout(resolve,0))}
   ALL=loaded.flat();
   const bankOrder=['b1','b2','b3','h1','h2','h3','hh'];ALL.sort((a,b)=>bankOrder.indexOf(a.bank)-bankOrder.indexOf(b.bank)||a.set-b.set||a.seq-b.seq);
   ALL_BY_UID=new Map(ALL.map(q=>[q.uid,q]));BANK_QUESTIONS=new Map();for(const q of ALL){if(!BANK_QUESTIONS.has(q.bank))BANK_QUESTIONS.set(q.bank,[]);BANK_QUESTIONS.get(q.bank).push(q)}
