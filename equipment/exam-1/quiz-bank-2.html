@@ -173,11 +173,11 @@ function submitAnswer(){
   const f=document.getElementById("feedback");f.className=ok?"feedback ok":"feedback bad";
   f.innerHTML=`<b>${ok?"Correct.":"Incorrect."}</b> ${esc(q.why)}<div class="source">Source: ${esc(q.src)} · slide/page ${esc(q.page)}</div>`;
   document.getElementById("submitBtn").classList.add("hidden");document.getElementById("nextBtn").classList.remove("hidden");
-  if(ok)autoTimer=setTimeout(nextQuestion,350);
+  if(ok){clearTimeout(autoTimer);autoTimer=setTimeout(()=>{autoTimer=null;nextQuestion()},350);}
 }
 function prevQuestion(){clearTimeout(autoTimer);autoTimer=null;if(pos>0){pos--;showQ()}}
 function resetCurrentQuestion(){clearTimeout(autoTimer);autoTimer=null;const c=current(),s=st(c.si);delete s.answered[c.qi];delete s.selections[c.qi];delete s.crosses[c.qi];s.missed=s.missed.filter(x=>x!==c.qi);save();showQ()}
-function nextQuestion(){if(pos+1<order.length){pos++;showQ()}else{goDash()}}
+function nextQuestion(){clearTimeout(autoTimer);autoTimer=null;if(pos+1<order.length){pos++;showQ()}else{goDash()}}
 function goDash(){renderDash()}
 function resetSet(si){if(confirm(`Reset all progress for Practice Set ${si+1}?`)){state.sets[si]={answered:{},missed:[],selections:{},crosses:{}};save();renderDash()}}
 function resetAll(){if(confirm("Reset progress for all five sets?")){state={sets:{}};save();renderDash()}}
