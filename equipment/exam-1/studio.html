@@ -37,6 +37,30 @@ body{background:#edf2f7}
 .btn{transition:transform .08s ease,box-shadow .12s ease}
 .btn:hover{box-shadow:0 2px 7px #0002}
 .btn:active{transform:translateY(1px)}
+/* Studio quiz view: keep the normal question workflow within a desktop viewport. */
+@media(min-width:651px) and (min-height:700px){
+ body:has(#quiz:not(.hidden)){overflow-y:hidden}
+ body:has(#quiz:not(.hidden)) .wrap{max-width:1040px!important;padding:8px 14px!important}
+ body:has(#quiz:not(.hidden)) .wrap>.top{padding:8px 14px!important;margin-bottom:6px!important}
+ body:has(#quiz:not(.hidden)) #studioTitle{font-size:1.25rem!important}
+ body:has(#quiz:not(.hidden)) #quiz{padding:12px 18px!important;margin-bottom:0!important;max-height:calc(100vh - 66px);overflow:auto}
+ #quiz .header{padding-bottom:5px;margin-bottom:6px}
+ #quiz .header .row{gap:5px}
+ #quiz .header .btn{padding:6px 9px;font-size:.84rem}
+ #quiz .badge{padding:4px 10px;font-size:.78rem}
+ #quiz .stats{padding:5px 10px;margin-bottom:6px;gap:18px;font-size:.88rem}
+ #quiz .type{margin-bottom:3px;font-size:.76rem}
+ #quiz .stem{margin:5px 0 6px;font-size:1.02rem;line-height:1.35}
+ #quiz .mbu-crossout-hint{margin:3px 0 6px;font-size:.78rem}
+ #quiz .options{gap:4px;margin-bottom:5px}
+ #quiz .opt{padding:6px 10px;font-size:.91rem;line-height:1.3}
+ #quiz>.row{margin:2px 0 7px!important}
+ #quiz>.row .btn{padding:7px 11px}
+ #quiz .feedback{margin-top:6px;padding:8px;font-size:.88rem;line-height:1.35}
+ #quiz>.controls{margin-top:6px;padding-top:6px}
+ #quiz>.controls .btn{padding:7px 11px;font-size:.88rem}
+}
+
 @media(max-width:900px){
  #home>.grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
  .session-builder{grid-template-columns:1fr!important}
