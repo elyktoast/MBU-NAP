@@ -13,9 +13,11 @@
     {id:'hazards',label:'Workstation Hazards',short:'Hazards',url:new URL('hazards.html',exam)},
     {id:'haz1',label:'Hazards Practice Set 1',short:'Hazards 1',url:new URL('hazards-100.html',exam)},
     {id:'haz2',label:'Hazards Practice Set 2',short:'Hazards 2',url:new URL('hazards-bank-2.html',exam)},
-    {id:'haz3',label:'Hazards Practice Set 3',short:'Hazards 3',url:new URL('hazards-bank-3.html',exam)}
+    {id:'haz3',label:'Hazards Practice Set 3',short:'Hazards 3',url:new URL('hazards-bank-3.html',exam)},
+    {id:'hh',label:'Hazards Challenge Set',short:'Challenge',url:new URL('hazards-harder.html',exam)}
   ];
   const render = () => {
+    if(document.querySelector('.mbu-global-nav')) return;
     const nav = document.createElement('nav');
     nav.className = 'mbu-global-nav';
     nav.dataset.page = page;
