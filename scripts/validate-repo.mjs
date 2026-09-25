@@ -189,6 +189,14 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!src.includes('Right-click an answer to cross it out.')||!src.includes('mbu-crossout-hint'))fail('equipment/exam-1/quiz-bank-3.html: missing canonical cross-out interaction hint');
 }
 
+// Studio aggregate readers must use the exact persistence keys written by each source bank.
+{
+ const studio=read('equipment/exam-1/studio.html'),challenge=read('equipment/exam-1/hazards-harder.html');
+ const m=challenge.match(/key:\s*["']([^"']+)["']/); if(!m)fail('Challenge: persistence key missing from engine config');
+ else if(!studio.includes("['hh','"+m[1]+"','ans']"))fail('Studio: Challenge aggregation key does not match Challenge persistence key');
+ if(studio.includes("['hh','srna_hazards_safety_harder_v1','ans']"))fail('Studio: obsolete Challenge aggregation key remains');
+}
+
 // Study Studio answer state must use canonical UIDs and restore graded selections on revisit.
 {
  const studio=read('equipment/exam-1/studio.html'),sync=read('equipment/assets/studio-sync.js');
