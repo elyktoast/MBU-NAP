@@ -49,6 +49,7 @@ button.opt:hover:not(:disabled){border-color:var(--n2o)}
 .xo[aria-pressed="true"]{color:var(--bad);border-color:var(--bad)}
 .act{display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap}
 .hint{font-size:.8rem;color:var(--mute)}
+.mbu-crossout-hint{font-size:.8rem;color:var(--mute);margin:-2px 0 8px}
 .fb{margin-top:12px;padding:10px 12px;border-radius:6px;font-size:.95rem}
 .fb.good{background:var(--o2bg);border-left:4px solid var(--o2)}
 .fb.badf{background:var(--badbg);border-left:4px solid var(--bad)}
@@ -196,7 +197,7 @@ function topbar(){const back=`<button class="ghost" id="bDash">Dashboard</button
  $("#bDash").onclick=dash}
 function openExam(n){V={mode:"exam",n};const e=S.ex[n];if(e.idx>=EXM[n].ids.length)return examSummary(n);renderQ()}
 function openT6(){V={mode:"t6"};if(S.t6.i>=S.t6.list.length)return t6Summary();renderQ()}
-function renderQ(){clearTimeout(timer);topbar();const c=ctx();
+function renderQ(){clearTimeout(timer);timer=null;topbar();const c=ctx();
  if(c.i>=c.list.length){return V.mode==="t6"?t6Summary():examSummary(V.n)}
  const q=byId[c.list[c.i]];const prev=c.store[q.id];cur={sel:prev?prev.sel.slice():[],done:!!prev};
  const xo=(c.exam?c.exam.xo[q.id]:null)||[];
