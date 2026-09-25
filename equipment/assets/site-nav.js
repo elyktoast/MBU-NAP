@@ -33,6 +33,49 @@
     {id:'haz3',label:'Hazards Practice Set 3',short:'Hazards 3',url:new URL('hazards-bank-3.html',exam)},
     {id:'hh',label:'Hazards Challenge Set',short:'Challenge',url:new URL('hazards-harder.html',exam)}
   ];
+  // Keep bank totals visible and repair Bank 3 practice-set mapping without
+  // changing the quiz engines themselves.
+  const syncBankDashboard = () => {
+    try {
+      if(page==='bank1' && typeof statsFor==='function' && typeof SETS!=='undefined'){
+        let done=0,total=0;
+        for(let s=1;s<=5;s++){ done+=(statsFor(s).done||0); total+=(SETS[s]?.length||0); }
+        const dash=document.querySelector('#dashboard');
+        if(dash && total){
+          let out=dash.querySelector('.mbu-bank-total');
+          if(!out){ out=document.createElement('div'); out.className='mini mbu-bank-total'; const hero=dash.querySelector('.hero'); (hero||dash).appendChild(out); }
+          out.textContent=done+' / '+total+' completed';
+        }
+      }
+      if(page==='bank3' && typeof BANK!=='undefined' && typeof EXM!=='undefined'){
+        const current=[1,2,3,4,5].reduce((n,s)=>n+(EXM[s]?.ids?.length||0),0);
+        if(current===0 && Array.isArray(BANK) && BANK.length){
+          const usable=BANK.filter(q=>Number(q.setn)!==7);
+          const groups=new Map();
+          usable.forEach(q=>{const k=Number(q.setn);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(q.id);});
+          const nonempty=[...groups.entries()].filter(([,ids])=>ids.length).sort((a,b)=>a[0]-b[0]);
+          if(nonempty.length>=5){
+            for(let s=1;s<=5;s++) EXM[s]={n:s,ids:[...nonempty[s-1][1]]};
+          }else if(usable.length){
+            const size=Math.ceil(usable.length/5);
+            for(let s=1;s<=5;s++) EXM[s]={n:s,ids:usable.slice((s-1)*size,s*size).map(q=>q.id)};
+          }
+          if(typeof dash==='function') dash();
+        }
+      }
+    } catch(e) { console.warn('MBU bank dashboard sync skipped:',e); }
+  };
+  const scheduleBankSync = () => {
+    if(!['bank1','bank3'].includes(page)) return;
+    const run=()=>syncBankDashboard();
+    if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',run,{once:true}); else run();
+    let queued=false;
+    const obs=new MutationObserver(()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;syncBankDashboard();});});
+    const start=()=>{const target=document.querySelector('#dashboard,#main');if(target)obs.observe(target,{childList:true,subtree:true});};
+    if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',start,{once:true}); else start();
+  };
+  scheduleBankSync();
+
   const render = () => {
     if(document.querySelector('.mbu-global-nav')) return;
     const nav = document.createElement('nav');
