@@ -202,6 +202,13 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!src.includes('if(prior&&prior.pos===pos)return;'))fail('Studio: unchanged question renders still rewrite active session state');
 }
 
+// Studio search should use its normalized one-time search index instead of rebuilding text per query.
+{
+ const src=read('equipment/exam-1/studio.html');
+ if(!src.includes("searchText:(stem+' '+topic+' '+exp+' '+src).toLowerCase()"))fail('Studio: normalized questions do not preindex search text');
+ if(!src.includes('ALL.filter(q=>q.searchText.includes(x))'))fail('Studio: search still rebuilds searchable text for every question');
+}
+
 // Shared Hazards Set 3 / Challenge navigation must cancel pending auto-advance before moving.
 {
  const src=read('equipment/assets/hazards-quiz-engine.js');
