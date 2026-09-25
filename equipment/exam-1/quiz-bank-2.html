@@ -131,7 +131,7 @@ function showQ(){
   document.getElementById("dash").classList.add("hidden");document.getElementById("review").classList.add("hidden");document.getElementById("quiz").classList.remove("hidden");
   selected=new Set();locked=false;
   const c=current(),q=SETS[c.si][c.qi];renderNavigator();
-  document.getElementById("progress").textContent=mode==="set"?`Question ${pos+1} of ${order.length} · Q${c.qi+1}`:`Missed review · Question ${pos+1} of ${order.length} · Practice Set ${c.si+1}, Q${c.qi+1}`;
+  document.getElementById("progress").textContent=mode==="set"?`Question ${pos+1} of ${order.length} · Q${c.qi+1}`:`Question ${pos+1} of ${order.length} · Practice Set ${c.si+1}, Q${c.qi+1}`;
   const ss=st(c.si),done=Object.keys(ss.answered).length,good=Object.values(ss.answered).filter(Boolean).length;
   document.getElementById("missedCount").textContent=`Practice Set ${c.si+1}`;
   document.getElementById("mbuCompleted").textContent=done;document.getElementById("mbuTotal").textContent=SETS[c.si].length;
@@ -216,6 +216,6 @@ renderDash();
 </script>
 <script src="../assets/calculator.js?v=7"></script>
 
-<!-- MBU_BUILD:2026-09-24-bank2-bank1-match-v4 -->
+<!-- MBU_BUILD:2026-09-24-bank2-unified-v5 -->
 <script src="../assets/auto-update.js?v=11"></script>
 </body></html>
