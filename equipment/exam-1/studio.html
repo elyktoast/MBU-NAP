@@ -65,6 +65,7 @@ function resumeActive(){if(!DB.active||!DB.active.uids)return;const qs=DB.active
 function activeButton(){
   let old=document.getElementById('resumeActive');if(old)old.remove();
   if(!DB.active||!Array.isArray(DB.active.uids)||!DB.active.uids.length)return;
+  if(!ALL_BY_UID.size)return;
   const uids=DB.active.uids.filter(id=>ALL_BY_UID.has(id));
   if(!uids.length){clearActive();return}
   if(uids.length!==DB.active.uids.length){DB.active.uids=uids;DB.active.pos=Math.min(DB.active.pos||0,uids.length-1);save()}
