@@ -34,7 +34,7 @@ button{font:inherit}.btn{border:1px solid var(--line);background:#fff;border-rad
   <div class="stats"><div>Completed: <strong id="mbuCompleted">0</strong>/<span id="mbuTotal">100</span></div><div>Score: <strong id="mbuScore">0</strong>%</div><div>Missed: <strong id="mbuMissed">0</strong></div></div>
   <div id="mbuNavigator" class="row hidden" style="flex-wrap:wrap;gap:6px;margin:8px 0 14px;max-height:180px;overflow:auto;padding:3px"></div>
   <div class="type" id="meta"></div>
-  <div class="stem" id="stem"></div><img id="qimg" class="qimg hidden" alt="Unlabeled lecture figure for question interpretation">
+  <div class="stem" id="stem"></div><div class="mbu-crossout-hint">Tip: Right-click an answer to cross it out.</div><img id="qimg" class="qimg hidden" alt="Unlabeled lecture figure for question interpretation">
   <div class="choices" id="choices"></div>
   <div class="row" style="display:flex;margin:4px 0 18px;justify-content:flex-end"><button id="submitBtn" class="btn" onclick="submitAnswer()">Submit Answer</button></div>
   <div id="feedback" class="hidden"></div>
