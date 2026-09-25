@@ -80,15 +80,18 @@ function stats(si){
 function renderDash(){
   clearTimeout(autoTimer);autoTimer=null;window.MBUCalculator?.hide();
   document.getElementById("dash").classList.remove("hidden");document.getElementById("quiz").classList.add("hidden");document.getElementById("review").classList.add("hidden");
-  let td=0,tc=0,tm=0; const g=document.getElementById("setGrid");g.innerHTML="";
+  let td=0,tc=0,tm=0;const g=document.getElementById("setGrid");g.innerHTML="";
   SETS.forEach((qs,i)=>{
     const a=stats(i);td+=a.done;tc+=a.cor;tm+=a.miss;
     const d=document.createElement("div");d.className="setcard";
-    d.innerHTML=`<h3>Practice Set ${i+1}</h3><div class="stats">${a.done}/100 answered · ${a.cor} correct<br>${a.miss} missed saved</div><div class="bar"><div style="width:${a.done}%"></div></div><div class="actions"><button class="btn primary" onclick="startSet(${i})">${a.done===100?"Review Answers":a.done?"Continue":"Start Practice Set "+(i+1)}</button><button class="btn" ${a.miss?"":"disabled"} onclick="startMissed(${i})">Missed (${a.miss})</button><button class="btn danger" onclick="resetSet(${i})">Reset</button></div>`;
+    d.innerHTML=`<h3>Practice Set ${i+1}</h3><div class="mini">${qs.length} questions</div><div class="bar"><div style="width:${qs.length?100*a.done/qs.length:0}%"></div></div><div class="mini">${a.done}/${qs.length} completed · ${a.pct}% score · ${a.miss} missed</div><div class="actions"><button class="btn primary" onclick="startSet(${i})">${a.done?"Continue":"Start"} Practice Set ${i+1}</button><button class="btn" ${a.miss?"":"disabled"} onclick="startMissed(${i})">Review Missed</button></div>`;
     g.appendChild(d);
   });
-  
-  
+  const total=SETS.reduce((n,s)=>n+s.length,0);
+  document.getElementById("bank2Overall").textContent=`${td} / ${total} completed`;
+  const all=document.createElement("div");all.className="setcard mbu-all-missed-card";
+  all.innerHTML=`<h3>Missed Questions Review</h3><div class="mini">Automatically built from every question missed in Practice Sets 1–5.</div><div class="bar"><div style="width:0%"></div></div><div class="mini">${tm} question${tm===1?"":"s"} currently in the missed bank</div><div class="actions"><button class="btn bad" ${tm?"":"disabled"} onclick="startAllMissed()">Review Missed Questions</button></div>`;
+  g.appendChild(all);
 }
 function startSet(si){
   mode="set";activeSet=si;const s=st(si);order=SETS[si].map((_,i)=>i);
