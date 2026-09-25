@@ -26,25 +26,19 @@ button{font:inherit}.btn{border:1px solid var(--line);background:#fff;border-rad
 <div class="wrap">
 <section id="dash" class="panel"><div class="hero mbu-dashboard-header"><div class="mbu-dashboard-title"><h1>Quiz Bank 2 Dashboard</h1><div class="mini mbu-dashboard-overall" id="bank2Overall">0 / 500 completed</div></div></div><div class="grid" id="setGrid"></div></section>
 
-<section id="quiz" class="hidden quiz">
+<section id="quiz" class="panel hidden">
   <div class="header">
     <div class="row"><span class="badge" id="missedCount"></span><button class="btn out" id="mbuFlagBtn" onclick="mbuToggleFlag(SETS[current().si][current().qi])">☆ Flag</button><button class="btn out" onclick="mbuReportQuestion(SETS[current().si][current().qi])">Report</button><button class="btn out" onclick="document.getElementById('mbuNavigator').classList.toggle('hidden')">Navigator</button><button class="btn out mbu-return" onclick="goDash()">← Quiz Bank 2 Home</button></div>
     <div class="progress" id="progress"></div>
   </div>
-  <div class="mbu-quiz-stats"><div>Completed: <strong id="mbuCompleted">0</strong>/<span id="mbuTotal">100</span></div><div>Score: <strong id="mbuScore">0</strong>%</div><div>Missed: <strong id="mbuMissed">0</strong></div></div>
-  <div id="mbuNavigator" class="hidden" style="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;max-height:180px;overflow:auto;padding:3px"></div><div class="qcard">
-    <div class="type" id="meta"></div>
-    <div class="stem" id="stem"></div><img id="qimg" class="qimg hidden" alt="Unlabeled lecture figure for question interpretation">
-    <div class="choices" id="choices"></div>
-    <div class="foot">
-      <button id="prevBtn" class="btn" onclick="prevQuestion()">Previous</button>
-      <div class="kbd">1–6 select · Tap ✕ to cross out · Enter submit/next</div>
-      <button id="resetQBtn" class="btn" onclick="resetCurrentQuestion()">Reset</button>
-      <button id="submitBtn" class="btn primary" onclick="submitAnswer()">Submit Answer</button>
-      <button id="nextBtn" class="btn primary hidden" onclick="nextQuestion()">Next</button>
-    </div>
-    <div id="feedback" class="hidden"></div>
-  </div>
+  <div class="stats"><div>Completed: <strong id="mbuCompleted">0</strong>/<span id="mbuTotal">100</span></div><div>Score: <strong id="mbuScore">0</strong>%</div><div>Missed: <strong id="mbuMissed">0</strong></div></div>
+  <div id="mbuNavigator" class="row hidden" style="flex-wrap:wrap;gap:6px;margin:8px 0 14px;max-height:180px;overflow:auto;padding:3px"></div>
+  <div class="type" id="meta"></div>
+  <div class="stem" id="stem"></div><img id="qimg" class="qimg hidden" alt="Unlabeled lecture figure for question interpretation">
+  <div class="choices" id="choices"></div>
+  <div class="row" style="display:flex;margin:4px 0 18px;justify-content:flex-end"><button id="submitBtn" class="btn" onclick="submitAnswer()">Submit Answer</button></div>
+  <div id="feedback" class="hidden"></div>
+  <div class="controls"><button id="prevBtn" class="btn out" onclick="prevQuestion()">Previous</button><div class="row"><button id="resetQBtn" class="btn out" onclick="resetCurrentQuestion()">Reset</button><button id="nextBtn" class="btn hidden" onclick="nextQuestion()">Next</button></div></div>
 </section>
 
 <section id="review" class="hidden">
@@ -208,6 +202,6 @@ renderDash();
 </script>
 <script src="../assets/calculator.js?v=16"></script>
 
-<!-- MBU_BUILD:2026-09-24-bank2-unified-v5 -->
+<!-- MBU_BUILD:2026-09-25-bank2-canonical-bank1-session-v18 -->
 <script src="../assets/auto-update.js?v=16"></script>
 </body></html>
