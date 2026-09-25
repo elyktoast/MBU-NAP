@@ -7,7 +7,7 @@
   let checking=false,lastCheck=0;
   async function check(force=false){
     const now=Date.now();
-    if(checking||document.hidden||(!force&&now-lastCheck<10000))return;
+    if(checking||document.hidden||(!force&&now-lastCheck<30000))return;
     checking=true;lastCheck=now;
     try{
       const url=new URL(location.href);
@@ -29,8 +29,8 @@
     }
   }
 
-  setTimeout(()=>check(),15000);
-  setInterval(()=>check(),60000);
+  setTimeout(()=>check(),30000);
+  setInterval(()=>check(),300000);
   window.addEventListener('pageshow',event=>{if(event.persisted)check(true)});
   window.addEventListener('focus',()=>check());
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)check()});
