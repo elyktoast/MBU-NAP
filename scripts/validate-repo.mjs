@@ -139,6 +139,9 @@ checkCanonicalNavigators();
  if(!src.includes('if(next===lastSaved)return'))fail('Bank 3: duplicate progress writes are not suppressed');
  if(!src.includes('timer=setTimeout(()=>{timer=null;next()},350)'))fail('Bank 3: auto-advance timer is not self-clearing');
  if(!src.includes('function next(){clearTimeout(timer);timer=null;'))fail('Bank 3: manual Next does not cancel pending auto-advance');
+ if(!src.includes('if(e.idx>=ids.length)e.idx=0'))fail('Bank 3: completed/out-of-range saved position is not normalized before resume');
+ if(!src.includes('ids.findIndex(id=>!e.ans[id])'))fail('Bank 3: resume does not locate the next unanswered question when needed');
+ if(!src.includes('if(S.cleared[q.orig])delete S.cleared[q.orig]'))fail('Bank 3: resetting an exam question leaves stale missed-review cleared state');
 }
 {
  const src=read('equipment/assets/hazards-standard-engine.js');
