@@ -504,7 +504,7 @@ const additionalHazards=[
 for(let i=31;i<=100;i++){const base=additionalHazards[(i-31)%additionalHazards.length];QUESTIONS.push({id:i,type:"single",stem:base.stem,options:base.options,answer:base.answer,explanation:base.exp,citation:`Anesthesia Workstation Hazards & Safety, ${base.cit}`});}
 const STORE='SRNA_HAZARDS_BANK_2_2026_V1';
 let db={answers:{},graded:{},correct:{},strikes:{},current:0,missed:[]},currentIndex=0,autoTimer=null,reviewMode=false,reviewList=[];
-function loadDB(){try{const x=JSON.parse(localStorage.getItem(STORE)||'null');if(x)db={...db,...x}}catch(e){};const valid=new Set(QUESTIONS.map(q=>String(q.id)));db.missed=(db.missed||[]).filter(id=>valid.has(String(id)));currentIndex=Math.max(0,Math.min(Number(db.current)||0,QUESTIONS.length-1))}
+function loadDB(){try{const x=JSON.parse(localStorage.getItem(STORE)||'null');if(x)db={...db,...x}}catch(e){};const valid=new Map(QUESTIONS.map(q=>[String(q.id),q.id]));db.missed=[...new Set((db.missed||[]).map(id=>valid.get(String(id))).filter(id=>id!==undefined))];currentIndex=Math.max(0,Math.min(Number(db.current)||0,QUESTIONS.length-1))}
 function saveDB(){if(!reviewMode)db.current=currentIndex;localStorage.setItem(STORE,JSON.stringify(db))}
 function activeQuestions(){return reviewMode?reviewList:QUESTIONS}
 function activeQuestion(){return activeQuestions()[currentIndex]||QUESTIONS[0]}
