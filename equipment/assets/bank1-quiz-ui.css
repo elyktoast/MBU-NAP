@@ -222,3 +222,35 @@
 @media(max-width:600px){
   .mbu-bank1-ui .grid,.mbu-bank1-ui #setGrid{grid-template-columns:1fr!important}
 }
+
+
+/* Canonical Bank 1 geometry + typography.
+   This is the standard shell for every bank/hazards page. Studio is intentionally excluded. */
+html:has(body.mbu-bank1-ui){scrollbar-gutter:stable}
+body.mbu-bank1-ui{min-height:100vh!important;font-size:16px!important}
+.mbu-bank1-ui *{box-sizing:border-box!important;font-family:inherit!important}
+.mbu-bank1-ui .wrap{width:100%!important;max-width:1040px!important;margin-left:auto!important;margin-right:auto!important}
+.mbu-bank1-ui .panel,
+.mbu-bank1-ui .quiz{width:100%!important;max-width:1040px!important;margin-left:auto!important;margin-right:auto!important}
+.mbu-bank1-ui .top{display:flex!important;justify-content:space-between!important;align-items:flex-end!important;gap:15px!important;border-bottom:2px solid var(--b)!important;padding-bottom:18px!important;margin:0 0 22px!important}
+.mbu-bank1-ui .title{margin:0!important;color:#1a202c!important;font-size:1.75rem!important;font-weight:800!important;line-height:1.2!important}
+.mbu-bank1-ui h1{line-height:1.2!important}
+.mbu-bank1-ui button,
+.mbu-bank1-ui a.btn{font-size:.95rem!important;line-height:1.25!important;text-decoration:none!important}
+.mbu-bank1-ui .card,
+.mbu-bank1-ui .setcard{min-height:174px!important;display:flex!important;flex-direction:column!important}
+.mbu-bank1-ui .card .row:last-child,
+.mbu-bank1-ui .setcard .actions{margin-top:auto!important;padding-top:14px!important}
+.mbu-bank1-ui .card .bar,
+.mbu-bank1-ui .setcard .bar{width:100%!important}
+.mbu-bank1-ui main>.card{min-height:0!important;display:block!important}
+.mbu-bank1-ui header{min-height:74px!important}
+.mbu-bank1-ui header .hbtns{display:flex!important;gap:8px!important;flex-wrap:wrap!important}
+.mbu-bank1-ui .summary{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important}
+.mbu-bank1-ui .metric{border:1px solid var(--b)!important;border-radius:9px!important;background:#fff!important;padding:14px!important}
+.mbu-bank1-ui .metric b{font-size:1.25rem!important;color:var(--t)!important}
+.mbu-bank1-ui .metric span{font-size:.85rem!important;color:var(--mut)!important}
+@media(max-width:700px){
+  .mbu-bank1-ui .card,.mbu-bank1-ui .setcard{min-height:0!important}
+  .mbu-bank1-ui .summary{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
