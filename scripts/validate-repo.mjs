@@ -196,6 +196,13 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!src.includes('if(prior&&prior.pos===pos)return;'))fail('Studio: unchanged question renders still rewrite active session state');
 }
 
+// Shared Hazards Set 3 / Challenge navigation must cancel pending auto-advance before moving.
+{
+ const src=read('equipment/assets/hazards-quiz-engine.js');
+ if(!src.includes('function nav(i){clearTimeout(timer);timer=null;'))fail('Hazards shared quiz engine: navigator does not cancel auto-advance');
+ if(!src.includes('function prev(){clearTimeout(timer);timer=null;'))fail('Hazards shared quiz engine: Previous does not cancel auto-advance');
+}
+
 // Hazards Set 3 and Challenge must share one quiz engine; no page-local renderer/state engine.
 for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
  const src=read(p);
