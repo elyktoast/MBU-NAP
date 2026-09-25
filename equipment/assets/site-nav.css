@@ -10,9 +10,14 @@
 .mbu-global-nav * { box-sizing: border-box; }
 .mbu-global-nav a { text-decoration: none; white-space: nowrap; }
 .mbu-global-nav__brand { flex: none; color: #1a365d; font-weight: 850; font-size: 16px; }
-.mbu-global-nav[data-page="bank1"] { max-width: 1040px; }
-.mbu-global-nav[data-page="bank2"] { max-width: 1080px; }
-.mbu-global-nav[data-page="bank3"] { max-width: 900px; }
+.mbu-global-nav[data-page="bank1"],
+.mbu-global-nav[data-page="bank2"],
+.mbu-global-nav[data-page="bank3"],
+.mbu-global-nav[data-page="hazards"],
+.mbu-global-nav[data-page="haz1"],
+.mbu-global-nav[data-page="haz2"],
+.mbu-global-nav[data-page="haz3"],
+.mbu-global-nav[data-page="hh"] { width: calc(100% - 28px); max-width: 1040px; }
 .mbu-global-nav__crumb { display: flex; align-items: center; gap: 8px; color: #718096; font-size: 14px; }
 .mbu-global-nav__crumb a { color: #4a5568; font-weight: 650; }
 .mbu-global-nav__brand[aria-current="page"], .mbu-global-nav__crumb a[aria-current="page"] { color: #2b6cb0; }
