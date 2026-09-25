@@ -345,3 +345,69 @@ body.mbu-bank1-ui{color:#2d3748!important;font-size:16px!important}
   color:#2d3748!important;background:#fff!important;font-size:.98rem!important;
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif!important
 }
+
+
+/* v9 — final canonical Bank 1 skin. Overrides legacy page-local visual CSS.
+   Local CSS may retain structural selectors for functionality, but visual presentation is centralized here. */
+.mbu-bank1-ui{
+ --p:#1a365d!important;--pl:#2b6cb0!important;--ok:#22543d!important;--okbg:#c6f6d5!important;
+ --bad:#742a2a!important;--badbg:#fed7d7!important;--bg:#edf2f7!important;--soft:#f7fafc!important;
+ --b:#cbd5e0!important;--t:#2d3748!important;--mut:#718096!important;
+ --paper:#edf2f7!important;--sheet:#fff!important;--ink:#2d3748!important;--mute:#718096!important;
+ --muted:#718096!important;--rule:#cbd5e0!important;--accent:#1a365d!important;--card:#fff!important;
+ --line:#cbd5e0!important;--n2o:#1a365d!important;--sel:#ebf8ff!important;--o2:#22543d!important;--o2bg:#c6f6d5!important
+}
+.mbu-bank1-ui header,
+.mbu-bank1-ui .panel,
+.mbu-bank1-ui .qcard,
+.mbu-bank1-ui #main>.card{
+ background:#fff!important;border-radius:10px!important;box-shadow:0 4px 12px #00000012!important;color:#2d3748!important
+}
+.mbu-bank1-ui .card,.mbu-bank1-ui .setcard{
+ background:#fff!important;border:1px solid #cbd5e0!important;border-radius:9px!important;box-shadow:none!important;padding:18px!important
+}
+.mbu-bank1-ui .hero h1,.mbu-bank1-ui .title,.mbu-bank1-ui header h1{
+ font-size:1.75rem!important;font-weight:800!important;color:#1a202c!important;line-height:1.2!important
+}
+.mbu-bank1-ui .sub,.mbu-bank1-ui .stats,.mbu-bank1-ui .mini,.mbu-bank1-ui .small,
+.mbu-bank1-ui .mut,.mbu-bank1-ui .hint,.mbu-bank1-ui .src,.mbu-bank1-ui .source,
+.mbu-bank1-ui .fig small{color:#718096!important}
+.mbu-bank1-ui .bar{height:9px!important;background:#e2e8f0!important;border-radius:20px!important;overflow:hidden!important}
+.mbu-bank1-ui .bar>span,.mbu-bank1-ui .bar>div,.mbu-bank1-ui .bar>i{height:100%!important;background:#2b6cb0!important}
+.mbu-bank1-ui .feedback,.mbu-bank1-ui .fb,.mbu-bank1-ui .explain,.mbu-bank1-ui .exp{
+ border-radius:6px!important;font-size:.95rem!important
+}
+.mbu-bank1-ui .feedback.ok,.mbu-bank1-ui .fb.good,.mbu-bank1-ui .key{
+ background:#c6f6d5!important;color:#22543d!important;border-color:#22543d!important
+}
+.mbu-bank1-ui .feedback.bad,.mbu-bank1-ui .fb.badf,.mbu-bank1-ui .yours{
+ background:#fed7d7!important;color:#742a2a!important;border-color:#742a2a!important
+}
+.mbu-bank1-ui .ghost{
+ background:#fff!important;color:#1a365d!important;border:1.5px solid #1a365d!important;
+ padding:10px 16px!important;font-size:.95rem!important;font-weight:700!important;border-radius:6px!important
+}
+.mbu-bank1-ui .primary{
+ background:#1a365d!important;color:#fff!important;border:0!important;
+ padding:10px 16px!important;font-size:.95rem!important;font-weight:700!important;border-radius:6px!important
+}
+.mbu-bank1-ui .xo,.mbu-bank1-ui .mbu-cross{
+ flex:0 0 44px!important;width:44px!important;background:#fff!important;color:#4a5568!important;
+ border:1px solid #cbd5e0!important;border-radius:8px!important;font-size:18px!important
+}
+.mbu-bank1-ui .xo[aria-pressed="true"],.mbu-bank1-ui .mbu-cross[aria-pressed="true"]{
+ background:#fff5f5!important;color:#9b2c2c!important;border-color:#e53e3e!important
+}
+.mbu-bank1-ui .opt,.mbu-bank1-ui .choice{
+ border:1.5px solid #cbd5e0!important;border-radius:6px!important;padding:12px 16px!important;
+ line-height:1.5!important;color:#2d3748!important;background:#fff!important
+}
+.mbu-bank1-ui .opt.sel,.mbu-bank1-ui .choice.sel,.mbu-bank1-ui .opt.selected{
+ border-color:#1a365d!important;background:#ebf8ff!important;font-weight:650!important
+}
+.mbu-bank1-ui .opt.ok,.mbu-bank1-ui .choice.good,.mbu-bank1-ui .opt.correct{
+ background:#c6f6d5!important;border-color:#22543d!important;color:#22543d!important;font-weight:750!important
+}
+.mbu-bank1-ui .opt.no,.mbu-bank1-ui .choice.bad,.mbu-bank1-ui .opt.incorrect{
+ background:#fed7d7!important;border-color:#742a2a!important;color:#742a2a!important
+}
