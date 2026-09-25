@@ -202,6 +202,13 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!src.includes('if(prior&&prior.pos===pos)return;'))fail('Studio: unchanged question renders still rewrite active session state');
 }
 
+// Studio home renders should reuse the hydrated UID index instead of rebuilding a Set from every question.
+{
+ const src=read('equipment/exam-1/studio.html');
+ if(!src.includes('ALL_UIDS=new Set(ALL_BY_UID.keys())'))fail('Studio: hydrated UID identity index is missing');
+ if(src.includes('const valid=new Set(ALL.map(q=>q.uid))'))fail('Studio: home render still rebuilds the question UID Set');
+}
+
 // Studio hydration should yield between large bank parse/evaluation passes instead of parsing every source concurrently.
 {
  const src=read('equipment/exam-1/studio.html');
