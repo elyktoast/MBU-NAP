@@ -5,7 +5,7 @@
   document.documentElement.dataset.mbuPage = page || '';
   const quizPages = new Set(['bank1','bank2','bank3','haz1','haz2','haz3','hh']);
   if(quizPages.has(page) && !document.querySelector('link[data-mbu-quiz-ui]')){
-    const ui=document.createElement('link');ui.rel='stylesheet';ui.href=new URL('quiz-ui.css?v=1',script.src);ui.dataset.mbuQuizUi='1';document.head.appendChild(ui);
+    const ui=document.createElement('link');ui.rel='stylesheet';ui.href=new URL('quiz-ui.css?v=2',script.src);ui.dataset.mbuQuizUi='1';document.head.appendChild(ui);
   }
   const equipment = new URL('../', script.src);
   const home = new URL('../', equipment);
