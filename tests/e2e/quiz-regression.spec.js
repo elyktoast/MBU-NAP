@@ -136,7 +136,7 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/studio.html');
     await waitForStudio(page);
     await page.evaluate(() => {
-      session = [ALL.find(q => q.options.length === 4) || ALL[0]];
+      session = [ALL.find(q => Array.isArray(q.opts) && q.opts.length === 4) || ALL[0]];
       pos = 0;
       DB.active = { uids: session.map(q => q.uid), pos: 0, answers: {}, updated: Date.now() };
       save();
