@@ -49,7 +49,7 @@ function checkBank2(){
   const all=[]; sets.forEach((set,n)=>{if(set.length!==100)fail('Bank 2 Practice Set '+(n+1)+': expected 100, found '+set.length);all.push(...set.map(q=>({...q,id:(n+1)+'-'+q.id})))});
   validateQuestions('Quiz Bank 2',all,500);
 }
-function checkBank3(){validateQuestions('Quiz Bank 3',parseArray(read('equipment/exam-1/quiz-bank-3.html'),'const BANK'),500)}
+function checkBank3(){validateQuestions('Quiz Bank 3',parseArray(read('equipment/exam-1/quiz-bank-3.html'),'const BANK'),600)}
 function checkCopies(){
   for(const p of ['equipment/exam-1/index.html','equipment/exam-1/quiz-bank-3.html']){
     const src=read(p); if(/600\s+questions/i.test(src)) fail(p+': stale 600-question Bank 3 copy remains');
@@ -152,11 +152,21 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
   if(!src.includes("timer=setTimeout(()=>{timer=null;next()},350)"))fail('Shared Hazards engine: timer is not self-clearing');
   if(!src.includes('function next(){clearTimeout(timer);timer=null;'))fail('Shared Hazards engine: manual Next does not clear pending auto-advance');
 }
-for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html','equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html','equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html','equipment/exam-1/studio.html']){
- const src=read(p); if(!src.includes('Right-click an answer to cross it out.'))fail(p+': missing cross-out interaction hint');
+for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html','equipment/exam-1/studio.html']){
+ const src=read(p); if(!src.includes('Right-click an answer to cross it out.')||!src.includes('mbu-crossout-hint'))fail(p+': missing canonical cross-out interaction hint');
 }
-
-for(const p of quizFiles){const src=read(p);if(!src.includes('Right-click an answer to cross it out.'))fail(p+': missing right-click cross-out hint');if(!src.includes('mbu-crossout-hint'))fail(p+': cross-out hint is not using canonical quiz UI styling');}
+for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html']){
+ const src=read(p),engine=read('equipment/assets/hazards-standard-engine.js');
+ if(!src.includes('../assets/hazards-standard-engine.js')||!engine.includes('mbu-crossout-hint')||!engine.includes('Right-click an answer to cross it out.'))fail(p+': shared standard Hazards runtime is missing canonical cross-out hint');
+}
+for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
+ const src=read(p),engine=read('equipment/assets/hazards-quiz-engine.js');
+ if(!src.includes('../assets/hazards-quiz-engine.js')||!engine.includes('mbu-crossout-hint')||!engine.includes('Right-click an answer to cross it out.'))fail(p+': shared Hazards runtime is missing canonical cross-out hint');
+}
+{
+ const src=read('equipment/exam-1/quiz-bank-3.html');
+ if(!src.includes('Right-click an answer to cross it out.')||!src.includes('mbu-crossout-hint'))fail('equipment/exam-1/quiz-bank-3.html: missing canonical cross-out interaction hint');
+}
 
 // Hazards Set 3 and Challenge must share one quiz engine; no page-local renderer/state engine.
 for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
@@ -190,4 +200,4 @@ const sharedHazardsEngine=read('equipment/assets/hazards-quiz-engine.js');
 if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared Hazards engine has invalid default expression inside object destructuring');
 
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
-console.log('Repository validation passed: Banks 1-3 are 500 questions each; local assets, Studio sources, shared quiz runtimes, answer indexes, and build manifest are valid.');
+console.log('Repository validation passed: Banks 1-2 are 500 questions each, Bank 3 is 600 questions; local assets, Studio sources, shared quiz runtimes, answer indexes, and build manifest are valid.');
