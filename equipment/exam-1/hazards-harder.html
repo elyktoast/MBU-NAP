@@ -56,7 +56,7 @@ td,th{padding:6px 8px;border-bottom:1px solid var(--rule);text-align:left}
 ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 @media (max-width:600px){ul.concepts{columns:1}}
 </style><link rel="stylesheet" href="../assets/site-nav.css?v=2">
-<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=1"><script defer src="../assets/site-nav.js?v=4" data-page="hh"></script></head>
+<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=2"><script defer src="../assets/site-nav.js?v=4" data-page="hh"></script></head>
 <body class="mbu-bank1-ui"><div class="wrap">
 <header><h1>Workstation Hazards · Challenge Set · 50 questions</h1>
 <div class="stats" id="stats"></div>
@@ -89,12 +89,17 @@ function bindQuizNav(c){document.querySelectorAll("[data-qnav]").forEach(b=>b.on
 function prevQuestion(){const c=ctx();if(c.i<=0)return;if(c.mode==="prac")S.prac.i--;else S.idx--;save();render();window.scrollTo(0,0)}
 function resetQuestion(){const c=ctx(),q=byId[c.list[c.i]];if(!q)return;delete c.store[q.id];delete S.xo[q.id];cur={sel:[],done:false};save();render()}
 function goHazardsHome(){location.href="hazards.html"}
+function questionChrome(active){
+ const h=document.querySelector(".wrap>header"),b=document.querySelector(".wrap>.bar");
+ if(h)h.classList.toggle("hidden",!!active);
+ if(b)b.classList.toggle("hidden",!!active);
+}
 function render(){clearTimeout(timer);stats();
- if(view==="review")return renderReview();
- if(view==="summary")return renderSummary();
+ if(view==="review"){questionChrome(false);return renderReview()}
+ if(view==="summary"){questionChrome(false);return renderSummary()}
  const c=ctx();
- if(c.i>=c.list.length){if(c.mode==="prac")return renderPracDone();view="summary";save();return renderSummary()}
- const q=byId[c.list[c.i]],prev=c.store[q.id];
+ if(c.i>=c.list.length){questionChrome(false);if(c.mode==="prac")return renderPracDone();view="summary";save();return renderSummary()}
+ questionChrome(true);const q=byId[c.list[c.i]],prev=c.store[q.id];
  cur={sel:prev?prev.sel.slice():[],done:!!prev};
  const xo=S.xo[q.id]||[],answered=Object.values(S.ans),correct=answered.filter(x=>x.ok).length,miss=missed().length;
  const badge=c.mode==="prac"?"MISSED QUESTIONS REVIEW":"CHALLENGE SET";
