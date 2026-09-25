@@ -172,3 +172,16 @@
 .mbu-bank1-ui main>.card>.act>.hint{display:none!important}
 .mbu-bank1-ui main>.card>.act{justify-content:flex-end!important;border-top:0!important;padding-top:0!important;margin-top:4px!important}
 .mbu-bank1-ui main>.card>.act #go{margin-left:auto!important}
+
+/* Compact one-screen defaults for all Exam 1 banks and future sets using this shared skin. */
+@media (min-width:651px){
+.mbu-bank1-ui{padding:14px!important}
+.mbu-bank1-ui .panel,.mbu-bank1-ui .quiz,.mbu-bank1-ui main>.card{padding:22px!important}
+.mbu-bank1-ui .header,.mbu-bank1-ui .qhead,.mbu-bank1-ui .qmeta{padding-bottom:10px!important;margin-bottom:12px!important}
+.mbu-bank1-ui .stats,.mbu-bank1-ui .mbu-quiz-stats{padding:8px 12px!important;margin-bottom:12px!important}
+.mbu-bank1-ui .stem{margin-bottom:12px!important}
+.mbu-bank1-ui .options,.mbu-bank1-ui .choices,.mbu-bank1-ui #choices{gap:7px!important;margin-bottom:12px!important}
+.mbu-bank1-ui .opt,.mbu-bank1-ui .choice{padding:9px 13px!important}
+.mbu-bank1-ui .controls,.mbu-bank1-ui .foot,.mbu-bank1-ui .act,.mbu-bank1-ui .mbu-quiz-bottom{padding-top:10px!important;margin-top:14px!important}
+.mbu-bank1-ui .mbu-quiz-nav,.mbu-bank1-ui #mbuNavigator{max-height:none!important;overflow:visible!important}
+}
