@@ -166,14 +166,14 @@
     nav.append(brand,crumb,quick,pickerLabel,picker);
     document.body.prepend(nav);
   };
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded',()=>{
+  const finishStartup=()=>{
     render(); normalizeDashboardHeader();
     requestAnimationFrame(normalizeDashboardHeader);
+    // Bank 3's legacy inline script can rewrite its header after deferred scripts
+    // execute. One delayed normalization avoids an observer while winning that race.
+    if(page==='bank3') setTimeout(normalizeDashboardHeader,150);
     document.documentElement.classList.remove('mbu-nav-loading');
-  },{once:true});
-  else {
-    render(); normalizeDashboardHeader();
-    requestAnimationFrame(normalizeDashboardHeader);
-    document.documentElement.classList.remove('mbu-nav-loading');
-  }
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded',finishStartup,{once:true});
+  else finishStartup();
 })();
