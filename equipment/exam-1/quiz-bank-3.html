@@ -67,7 +67,7 @@ ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 @media (max-width:600px){ul.concepts{columns:1}}
 #go{margin-left:auto;order:99}
 </style>
-<!-- MBU_BUILD:2026-09-24-bank3-deep-clean-v2-u11 -->
+<!-- MBU_BUILD:2026-09-24-bank3-bank1-ui-v12 -->
 <link rel="stylesheet" href="../assets/site-nav.css?v=2">
 <script defer src="../assets/site-nav.js?v=4" data-page="bank3"></script>
 </head>
@@ -158,6 +158,8 @@ function dash(){clearTimeout(timer);window.MBUCalculator?.hide();V={mode:"dash"}
 // ----- question runner (exam or test 6)
 function ctx(){if(V.mode==="t6"){const t=S.t6;return{list:t.list,i:t.i,store:t.ans,label:`Review exam · ${t.i+1} / ${t.list.length}`,exam:null}}
  const e=S.ex[V.n];const tot=EXM[V.n].ids.length;return{list:EXM[V.n].ids,i:e.idx,store:e.ans,label:`${NAMES[V.n]} · Question ${e.idx+1} / ${tot}`,exam:e}}
+function prevQuestion(){clearTimeout(timer);const c=ctx();if(c.i<=0)return;if(V.mode==="t6")S.t6.i--;else S.ex[V.n].idx--;save();renderQ();window.scrollTo(0,0)}
+function resetCurrentQuestion(){clearTimeout(timer);const c=ctx(),q=byId[c.list[c.i]];if(!q)return;delete c.store[q.id];if(c.exam)delete c.exam.xo[q.id];else if(S.t6&&S.t6.xo)delete S.t6.xo[q.id];cur={sel:[],done:false};save();renderQ()}
 function topbar(){const back=`<button class="ghost mbu-return" id="bDash">← Quiz Bank 3 Home</button>`;
  if(V.mode==="t6"){const t=S.t6;const c=Object.values(t.ans).filter(x=>x.ok).length;header(T6NAME,back);$("#stats").innerHTML=`Round progress <b>${Object.keys(t.ans).length}</b> / ${t.list.length} · Cleared <b>${c}</b>`;setBar(Object.keys(t.ans).length/t.list.length)}
  else{const s=examStats(V.n);header(NAMES[V.n],`<button class="ghost" id="bRev">Missed (${s.missed.length})</button>`+back);$("#stats").innerHTML=`Answered <b>${s.a}</b> / ${s.t} · Correct <b>${s.c}</b>${s.a?` (${Math.round(100*s.c/s.a)}%)`:""}`;setBar(s.a/s.t);const r=$("#bRev");if(r)r.onclick=()=>review(V.n)}
@@ -166,28 +168,33 @@ function openExam(n){V={mode:"exam",n};const e=S.ex[n];if(e.idx>=EXM[n].ids.leng
 function openT6(){V={mode:"t6"};if(S.t6.i>=S.t6.list.length)return t6Summary();renderQ()}
 function renderQ(){clearTimeout(timer);topbar();const c=ctx();
  if(c.i>=c.list.length){return V.mode==="t6"?t6Summary():examSummary(V.n)}
- const q=byId[c.list[c.i]];const prev=c.store[q.id];cur={sel:prev?prev.sel.slice():[],done:!!prev};
+ const q=byId[c.list[c.i]],prev=c.store[q.id];cur={sel:prev?prev.sel.slice():[],done:!!prev};
  const xo=(c.exam?c.exam.xo[q.id]:S.t6.xo&&S.t6.xo[q.id])||[];
- let h=mbuNavigatorHTML(c)+`<div class="card"><div class="qmeta"><span>${c.label}${V.mode==="t6"?` <span class="pill">from ${NAMES[q.setn]}</span>`:""}</span><span style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><button class="ghost" id="mbuFlagBtn" type="button">${mbuIsFlagged(q)?"★ Flagged":"☆ Flag"}</button><button class="ghost" id="mbuReportBtn" type="button">Report</button><button class="ghost" id="mbuNavBtn" type="button">Navigator</button><span>${q.type==="multi"?`Select ${q.n}`:"Select 1"}</span></span></div><p class="stem">${esc(q.q)}</p>`;
+ let done,correct,missed,badge;
+ if(V.mode==="t6"){done=Object.keys(S.t6.ans).length;correct=Object.values(S.t6.ans).filter(x=>x.ok).length;missed=Math.max(0,S.t6.list.length-correct);badge="MISSED QUESTIONS REVIEW"}
+ else{const s=examStats(V.n);done=s.a;correct=s.c;missed=s.missed.length;badge=NAMES[V.n].toUpperCase()}
+ let h=`<div class="card"><div class="qmeta"><span>${badge}</span><span class="mbu-qtools"><button class="ghost" id="mbuFlagBtn" type="button">${mbuIsFlagged(q)?"★ Flagged":"☆ Flag"}</button><button class="ghost" id="mbuReportBtn" type="button">Report</button><button class="ghost" id="mbuNavBtn" type="button">Navigator</button><button class="ghost mbu-return" id="backToDash" type="button">← Quiz Bank 3 Home</button><b>Question ${c.i+1} of ${c.list.length}${V.mode==="t6"?` · from ${NAMES[q.setn]}`:""}</b></span></div>
+ <div class="mbu-quiz-stats"><div>Completed: <strong>${done}</strong>/${c.list.length}</div><div>Score: <strong>${done?Math.round(100*correct/done):0}</strong>%</div><div>Missed: <strong>${missed}</strong></div></div>
+ ${mbuNavigatorHTML(c)}<div class="mbu-quiz-type">${q.type==="multi"?`Select ${q.n} Options`:"Single Best Answer"}</div><p class="stem">${esc(q.q)}</p>`;
  if(q.img)h+=`<div class="fig"><img src="data:image/png;base64,${IMGS[q.img]}" alt="Figure"><small>Click image to enlarge</small></div>`;
- q.c.forEach((t,i)=>{h+=`<div class="ch"><button class="opt${cur.sel.includes(i)?" sel":""}${xo.includes(i)?" x":""}" data-i="${i}"><span class="L">${L[i]}</span><span class="t">${esc(t)}</span></button><button class="xo" data-x="${i}" aria-pressed="${xo.includes(i)}" aria-label="Cross out ${L[i]}" title="Cross out (Shift+${L[i]})">✕</button></div>`});
- h+=`<div class="act"><button class="primary" id="go">Submit</button><button class="ghost mbu-return" id="backToDash" type="button">← Quiz Bank 3 Home</button><span class="hint" id="hint">${q.type==="multi"?`Choose exactly ${q.n}. `:""}Keys: A–${L[q.c.length-1]} select, Shift+letter cross out, Enter submit/next</span></div><div id="fb"></div></div>`;
+ q.c.forEach((t,i)=>{h+=`<div class="ch"><button class="opt${cur.sel.includes(i)?" sel":""}${xo.includes(i)?" x":""}" data-i="${i}"><span class="L">${L[i]}.</span><span class="t">${esc(t)}</span></button><button class="xo" data-x="${i}" aria-pressed="${xo.includes(i)}" aria-label="Cross out ${L[i]}" title="Cross out (Shift+${L[i]})">✕</button></div>`});
+ h+=`<div class="act"><span class="hint" id="hint">${q.type==="multi"?`Choose exactly ${q.n}. `:""}Keys: A–${L[q.c.length-1]} select, Shift+letter cross out, Enter submit/next</span><button class="primary" id="go">Submit Answer</button></div><div id="fb"></div>
+ <div class="mbu-quiz-bottom"><button class="ghost" id="qPrev" type="button">Previous</button><div class="right"><button class="ghost" id="qReset" type="button">Reset</button><button class="primary" id="qNext" type="button">Next</button></div></div></div>`;
  $("#main").innerHTML=h;
  document.querySelectorAll(".opt").forEach(b=>b.onclick=()=>pick(q,+b.dataset.i));
  document.querySelectorAll(".xo").forEach(b=>b.onclick=()=>cross(q,+b.dataset.x));
  const im=document.querySelector(".fig img");if(im)im.onclick=()=>{$("#lb img").src=im.src;$("#lb").classList.add("on")};
- $("#go").onclick=()=>cur.done?next():submit(q);
- $("#backToDash").onclick=dash;
+ $("#go").onclick=()=>cur.done?next():submit(q);$("#backToDash").onclick=dash;
  const mbf=$("#mbuFlagBtn");if(mbf)mbf.onclick=()=>mbuToggleFlag(q);
  const mbr=$("#mbuReportBtn");if(mbr)mbr.onclick=()=>mbuReportQuestion(q);
  const mbn=$("#mbuNavBtn");if(mbn)mbn.onclick=()=>{const n=$("#mbuNavigator");n.style.display=n.style.display==="flex"?"none":"flex"};
- bindMbuNavigator(c);
- if(prev)showResult(q,prev,true);else upd(q);window.MBUCalculator?.besideFlag();window.scrollTo(0,0)}
+ $("#qPrev").onclick=prevQuestion;$("#qReset").onclick=resetCurrentQuestion;$("#qNext").onclick=next;$("#qPrev").disabled=c.i<=0;$("#qNext").disabled=c.i>=c.list.length-1;
+ bindMbuNavigator(c);if(prev)showResult(q,prev,true);else upd(q);window.MBUCalculator?.besideFlag();window.scrollTo(0,0)}
 function pick(q,i){if(cur.done)return;const s=cur.sel;if(q.type==="single")cur.sel=[i];else{const k=s.indexOf(i);if(k>=0)s.splice(k,1);else if(s.length<q.n)s.push(i);else return}
  document.querySelectorAll(".opt").forEach(b=>b.classList.toggle("sel",cur.sel.includes(+b.dataset.i)));upd(q)}
 function cross(q,i){if(cur.done)return;const c=ctx();let a;if(c.exam){a=c.exam.xo[q.id]=c.exam.xo[q.id]||[]}else{S.t6.xo=S.t6.xo||{};a=S.t6.xo[q.id]=S.t6.xo[q.id]||[]}
  const k=a.indexOf(i);k>=0?a.splice(k,1):a.push(i);save();document.querySelector(`.opt[data-i="${i}"]`).classList.toggle("x",a.includes(i));document.querySelector(`.xo[data-x="${i}"]`).setAttribute("aria-pressed",a.includes(i))}
-function upd(q){const need=q.type==="multi"?q.n:1;const g=$("#go");g.disabled=cur.sel.length!==need;g.textContent="Submit";if(q.type==="multi")$("#hint").textContent=`${cur.sel.length} of ${q.n} selected. Keys: A–F select, Shift+letter cross out, Enter submit`}
+function upd(q){const need=q.type==="multi"?q.n:1;const g=$("#go");g.style.display="";g.disabled=cur.sel.length!==need;g.textContent="Submit Answer";if(q.type==="multi")$("#hint").textContent=`${cur.sel.length} of ${q.n} selected. Keys: A–F select, Shift+letter cross out, Enter submit`}
 function submit(q){const need=q.type==="multi"?q.n:1;if(cur.sel.length!==need||cur.done)return;const ok=same(cur.sel,q.a);const c=ctx();const rec={sel:cur.sel.slice(),ok};c.store[q.id]=rec;
  if(V.mode==="t6"){if(ok)S.cleared[q.orig]=true}else{if(!ok)S.cleared[q.orig]=false}
  save();mbuStudioAnswer(q,ok);topbar();refreshMbuNavigator(c);showResult(q,rec,false)}
@@ -195,7 +202,7 @@ function keysText(q){const ks=q.a.map(i=>L[i]);return ks.length<3?ks.join(" and 
 function extra(q){return `${q.disc?`<p class="disc"><b>Lecture discrepancy:</b> ${esc(q.disc)}</p>`:""}${q.supp?`<p class="disc"><b>Beyond the slide:</b> ${esc(q.supp)}</p>`:""}<p class="src">Source: ${q.ref.map(esc).join("; ")}</p>`}
 function showResult(q,rec,restored){cur.done=true;
  document.querySelectorAll(".opt").forEach(b=>{const i=+b.dataset.i;b.disabled=true;b.classList.remove("sel");if(q.a.includes(i))b.classList.add(rec.sel.includes(i)?"ok":"miss");else if(rec.sel.includes(i))b.classList.add("no")});
- document.querySelectorAll(".xo").forEach(b=>b.disabled=true);const g=$("#go");g.textContent="Next";g.disabled=false;
+ document.querySelectorAll(".xo").forEach(b=>b.disabled=true);const g=$("#go");g.style.display="none";g.disabled=true;
  if(rec.ok){$("#fb").innerHTML=`<div class="fb good"><p><b>Correct.</b> ${V.mode==="t6"?"Cleared from the missed pool. ":""}${restored?"":"Moving on…"}</p><p class="src">Source: ${q.ref.map(esc).join("; ")}</p></div>`;if(!restored)timer=setTimeout(next,650)}
  else{$("#fb").innerHTML=`<div class="fb badf"><p><b>Incorrect.</b> Correct answer: ${keysText(q)}.</p><p>${esc(q.exp)}</p>${extra(q)}</div>`;g.focus()}}
 function next(){clearTimeout(timer);if(V.mode==="t6")S.t6.i++;else S.ex[V.n].idx++;save();renderQ()}
