@@ -202,6 +202,13 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!src.includes('if(prior&&prior.pos===pos)return;'))fail('Studio: unchanged question renders still rewrite active session state');
 }
 
+// Studio must not parse large embedded Hazards image maps during bank hydration.
+{
+ const src=read('equipment/exam-1/studio.html');
+ if(src.includes("t.match(/const IMGS=(\\{[\\s\\S]*?\\});/)"))fail('Studio: Hazards image payload is still eagerly parsed');
+ if(!src.includes("{kind:'hazards',url,imgKey:q.img}"))fail('Studio: Hazards images are not represented lazily');
+}
+
 // Studio search should use its normalized one-time search index instead of rebuilding text per query.
 {
  const src=read('equipment/exam-1/studio.html');
