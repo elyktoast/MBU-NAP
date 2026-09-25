@@ -127,7 +127,7 @@ async function loadBanks(){
   const loaded=[];for(const source of sources){loaded.push(await loadSource(source));await new Promise(resolve=>setTimeout(resolve,0))}
   ALL=loaded.flat();
   const bankOrder=['b1','b2','b3','h1','h2','h3','hh'];ALL.sort((a,b)=>bankOrder.indexOf(a.bank)-bankOrder.indexOf(b.bank)||a.set-b.set||a.seq-b.seq);
-  ALL_BY_UID=new Map(ALL.map(q=>[q.uid,q]));BANK_QUESTIONS=new Map();for(const q of ALL){if(!BANK_QUESTIONS.has(q.bank))BANK_QUESTIONS.set(q.bank,[]);BANK_QUESTIONS.get(q.bank).push(q)}
+  ALL_BY_UID=new Map(ALL.map(q=>[q.uid,q]));ALL_UIDS=new Set(ALL_BY_UID.keys());BANK_QUESTIONS=new Map();for(const q of ALL){if(!BANK_QUESTIONS.has(q.bank))BANK_QUESTIONS.set(q.bank,[]);BANK_QUESTIONS.get(q.bank).push(q)}
   try{syncBankData();buildTopics();const params=new URLSearchParams(location.search),requested=params.get('mode');if(requested==='hazards-missed')startMode('hazards-missed');else renderHome()}catch(e){errors.push('Studio render: '+e.message);console.error(e)}
   showLoadErrors(errors);
 }
@@ -195,10 +195,10 @@ function buildTopics(){
 function renderHome(){
   clearTimeout(autoTimer);autoTimer=null;window.MBUCalculator?.hide();
   const ret=new URLSearchParams(location.search).get('return');if(ret==='hazards'){location.href='hazards.html';return}
-  show('home');activeButton();const valid=new Set(ALL.map(q=>q.uid));
-  const vals=Object.entries(DB.ans).filter(([uid])=>valid.has(uid)).map(([,v])=>v),miss=vals.filter(x=>!x.ok).length;
+  show('home');activeButton();
+  const vals=Object.entries(DB.ans).filter(([uid])=>ALL_UIDS.has(uid)).map(([,v])=>v),miss=vals.filter(x=>!x.ok).length;
   document.getElementById('missedN').textContent=miss+' currently missed';
-  document.getElementById('flagN').textContent=Object.entries(DB.flags).filter(([uid,v])=>v&&valid.has(uid)).length+' flagged';
+  document.getElementById('flagN').textContent=Object.entries(DB.flags).filter(([uid,v])=>v&&ALL_UIDS.has(uid)).length+' flagged';
   document.getElementById('reportN').textContent=DB.reports.length+' saved reports';
   let by={};ALL.forEach(q=>{let r=DB.ans[q.uid];if(!r)return;(by[q.topic]??={a:0,c:0}).a++;if(r.ok)by[q.topic].c++});
   document.getElementById('analytics').innerHTML=Object.entries(by).sort((a,b)=>(a[1].c/a[1].a)-(b[1].c/b[1].a)).map(([t,s])=>`<div class="topic"><span>${esc(t)}</span><b>${Math.round(100*s.c/s.a)}%</b><div class="bar"><i style="width:${100*s.c/s.a}%"></i></div></div>`).join('')||'<div class="mut">Answer questions to build topic analytics.</div>'
