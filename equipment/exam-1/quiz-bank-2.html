@@ -140,8 +140,8 @@ function showQ(){
     cross.onclick=()=>toggleCross(c,i,b,cross);
     row.append(b,cross);box.appendChild(row);
   });
-  document.getElementById("feedback").className="hidden";document.getElementById("feedback").innerHTML="";
-  document.getElementById("submitBtn").classList.remove("hidden");document.getElementById("nextBtn").classList.add("hidden");
+  document.getElementById("feedback").style.display="none";document.getElementById("feedbackText").innerHTML="";document.getElementById("feedbackCitation").textContent="";
+  document.getElementById("multi-submit-row").style.display=q.correct.length>1?"flex":"none";document.getElementById("submitBtn").disabled=selected.size!==q.correct.length;document.getElementById("nextBtn").classList.add("hidden");
   if(mode==="set" && Object.prototype.hasOwnProperty.call(st(c.si).answered,c.qi))restoreResult(c,q);
   window.MBUCalculator?.besideFlag();
 }
@@ -149,15 +149,14 @@ function restoreResult(c,q){
   const saved=st(c.si),got=saved.selections[c.qi]||[],ok=!!saved.answered[c.qi];locked=true;selected=new Set(got);
   document.querySelectorAll(".choice").forEach((b,i)=>{if(q.correct.includes(i))b.classList.add("good");else if(selected.has(i))b.classList.add("bad")});
   document.querySelectorAll(".mbu-cross").forEach(b=>b.disabled=true);
-  const f=document.getElementById("feedback");f.className=ok?"feedback ok":"feedback bad";
-  f.innerHTML=`<b>Previously answered ${ok?"correctly":"incorrectly"}.</b> ${ok?"":esc(q.why)}<div class="source">${esc(q.src)} · slide/page ${esc(q.page)}</div>`;
-  document.getElementById("submitBtn").classList.add("hidden");document.getElementById("nextBtn").classList.remove("hidden");
+  const f=document.getElementById("feedback");f.style.display="block";document.getElementById("feedbackText").innerHTML=`<b>Previously answered ${ok?"correctly":"incorrectly"}.</b> ${ok?"":esc(q.why)}`;document.getElementById("feedbackCitation").textContent=`Source: ${q.src} · slide/page ${q.page}`;
+  document.getElementById("multi-submit-row").style.display="none";document.getElementById("nextBtn").classList.remove("hidden");
 }
 function choose(i,e){
   if(locked)return;const q=SETS[current().si][current().qi],b=[...document.querySelectorAll(".choice")][i];
   if(e && (e.altKey||e.ctrlKey||e.metaKey)){toggleCross(current(),i,b,b.parentElement.querySelector(".mbu-cross"));return}
   if(q.correct.length===1){selected=new Set([i]);submitAnswer();return}
-  else{if(selected.has(i)){selected.delete(i);b.classList.remove("sel");}else if(selected.size<q.correct.length){selected.add(i);b.classList.add("sel");}}
+  else{if(selected.has(i)){selected.delete(i);b.classList.remove("sel");}else if(selected.size<q.correct.length){selected.add(i);b.classList.add("sel");}document.getElementById("submitBtn").disabled=selected.size!==q.correct.length}
 }
 function submitAnswer(){
   if(locked){nextQuestion();return}
