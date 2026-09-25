@@ -97,12 +97,15 @@ function render(){clearTimeout(timer);stats();
  if(q.img)h+=`<div class="fig"><img src="data:image/png;base64,${IMGS[q.img]}" alt="Figure for question ${q.num}"><small>Click image to enlarge</small></div>`;
  h+=`<div id="choices">`;
  q.c.forEach((t,i)=>{h+=`<div class="ch"><button class="opt${cur.sel.includes(i)?" sel":""}${xo.includes(i)?" x":""}" data-i="${i}"><span class="L">${L[i]}</span><span class="t">${esc(t)}</span></button><button class="xo" data-x="${i}" aria-pressed="${xo.includes(i)}" title="Cross out (Shift+${L[i]})" aria-label="Cross out ${L[i]}">✕</button></div>`});
- h+=`</div><div class="act"><button class="primary" id="go">Submit</button><span class="hint" id="hint">${q.type==="multi"?`Choose exactly ${q.n}. `:""}Keys: A–${L[q.c.length-1]} select, Shift+letter cross out, Enter submit/next</span></div><div id="fb"></div></div>`;
+ h+=`</div><div class="act"><button class="primary" id="go">Submit</button><button class="ghost" id="qFlag">☆ Flag</button><button class="ghost" id="qReport">Report</button><span class="hint" id="hint">${q.type==="multi"?`Choose exactly ${q.n}. `:""}Keys: A–${L[q.c.length-1]} select, Shift+letter cross out, Enter submit/next</span></div><div id="fb"></div></div>`;
  $("#main").innerHTML=h;
  document.querySelectorAll(".opt").forEach(b=>b.onclick=()=>pick(q,+b.dataset.i));
  document.querySelectorAll(".xo").forEach(b=>b.onclick=()=>cross(q,+b.dataset.x));
  const im=document.querySelector(".fig img");if(im)im.onclick=()=>{$("#lb img").src=im.src;$("#lb").classList.add("on")};
  $("#go").onclick=()=>cur.done?next():submit(q);
+ const qFlag=$("#qFlag");qFlag.textContent=window.MBUStudio&&MBUStudio.flagged('hh',q)?'★ Flagged':'☆ Flag';
+ qFlag.onclick=()=>{if(!window.MBUStudio)return;MBUStudio.toggleFlag('hh',q);qFlag.textContent=MBUStudio.flagged('hh',q)?'★ Flagged':'☆ Flag'};
+ $("#qReport").onclick=()=>window.MBUStudio&&MBUStudio.report('hh',q);
  if(prev)showResult(q,prev,true);else upd(q)}
 function esc(s){return String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]))}
 function pick(q,i){if(cur.done)return;const s=cur.sel;
