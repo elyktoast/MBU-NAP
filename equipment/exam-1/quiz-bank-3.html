@@ -67,11 +67,12 @@ ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 @media (max-width:600px){ul.concepts{columns:1}}
 #go{margin-left:auto;order:99}
 </style>
-<!-- MBU_BUILD:2026-09-24-bank3-bank1-ui-v12 -->
+<!-- MBU_BUILD:2026-09-24-bank3-uniform-ui-v2 -->
 <link rel="stylesheet" href="../assets/site-nav.css?v=2">
+<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=1">
 <script defer src="../assets/site-nav.js?v=4" data-page="bank3"></script>
 </head>
-<body>
+<body class="mbu-bank1-ui">
 <div class="wrap">
 <header><h1 id="title">Quiz Bank 3 Dashboard</h1><div class="stats" id="stats"></div><div id="hbtns" style="display:flex;gap:6px"></div></header>
 <div class="bar" id="barw"><i id="prog"></i></div>
@@ -156,8 +157,8 @@ function dash(){clearTimeout(timer);window.MBUCalculator?.hide();V={mode:"dash"}
  window.scrollTo(0,0)}
 
 // ----- question runner (exam or test 6)
-function ctx(){if(V.mode==="t6"){const t=S.t6;return{list:t.list,i:t.i,store:t.ans,label:`Review exam · ${t.i+1} / ${t.list.length}`,exam:null}}
- const e=S.ex[V.n];const tot=EXM[V.n].ids.length;return{list:EXM[V.n].ids,i:e.idx,store:e.ans,label:`${NAMES[V.n]} · Question ${e.idx+1} / ${tot}`,exam:e}}
+function ctx(){if(V.mode==="t6"){const t=S.t6;return{list:t.list,i:t.i,store:t.ans,label:"MISSED QUESTIONS REVIEW",exam:null}}
+ const e=S.ex[V.n];return{list:EXM[V.n].ids,i:e.idx,store:e.ans,label:NAMES[V.n].toUpperCase(),exam:e}}
 function prevQuestion(){clearTimeout(timer);const c=ctx();if(c.i<=0)return;if(V.mode==="t6")S.t6.i--;else S.ex[V.n].idx--;save();renderQ();window.scrollTo(0,0)}
 function resetCurrentQuestion(){clearTimeout(timer);const c=ctx(),q=byId[c.list[c.i]];if(!q)return;delete c.store[q.id];if(c.exam)delete c.exam.xo[q.id];else if(S.t6&&S.t6.xo)delete S.t6.xo[q.id];cur={sel:[],done:false};save();renderQ()}
 function topbar(){const back=`<button class="ghost mbu-return" id="bDash">← Quiz Bank 3 Home</button>`;
