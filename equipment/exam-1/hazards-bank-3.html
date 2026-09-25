@@ -63,7 +63,7 @@ ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 <div class="wrap">
 <header><h1>Workstation Hazards Practice Set 3 · 100 Questions</h1>
 <div class="stats" id="stats"></div>
-<div class="hbtns"><button class="ghost" id="bRev">Missed review</button><button class="ghost" id="bReset">Reset</button></div></header>
+<div class="hbtns"><button class="btn out" id="bRev">Review Missed</button><button class="ghost" id="bReset">Reset</button></div></header>
 <div class="bar"><i id="prog"></i></div>
 <main id="main"></main>
 </div>
@@ -84,7 +84,7 @@ function same(a,b){return a.length===b.length&&[...a].sort().join()===[...b].sor
 function stats(){const v=BANK.map(q=>S.ans[q.id]).filter(Boolean),correct=v.filter(x=>x.ok).length,done=v.length,m=missed().length;
  $("#stats").innerHTML=`Completed <b>${done}</b> / ${BANK.length} · Score <b>${done?Math.round(100*correct/done):0}%</b> · Missed <b>${m}</b>`;
  $("#prog").style.width=(100*done/BANK.length)+"%";
- $("#bRev").textContent=`Missed review (${m})`}
+ $("#bRev").textContent=`Review Missed${m?` (${m})`:``}`;$("#bRev").disabled=!m}
 function missed(){return BANK.filter(q=>S.ans[q.id]&&!S.ans[q.id].ok)}
 let cur={sel:[],done:false};
 function ctx(){if(view==="prac"&&S.prac)return{list:S.prac.list,i:S.prac.i,store:S.prac.ans,mode:"prac"};return{list:BANK.map(q=>q.id),i:S.idx,store:S.ans,mode:"main"}}
