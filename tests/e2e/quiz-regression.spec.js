@@ -28,6 +28,10 @@ test.describe('canonical quiz regression', () => {
     await page.waitForTimeout(450);
     const before = await page.locator('#progress').textContent();
     await page.reload();
+    await expect(page.locator('#dashboard')).toBeVisible();
+    const resume = page.locator('#cards button').filter({ hasText: /continue/i }).first();
+    await expect(resume).toBeVisible();
+    await resume.click();
     await expect(page.locator('#quiz')).toBeVisible();
     await expect(page.locator('#progress')).toHaveText(before.trim());
   });
@@ -38,6 +42,7 @@ test.describe('canonical quiz regression', () => {
     await page.locator('#options .opt').first().click();
     if (await page.locator('#submit-multi').isVisible()) await page.locator('#submit-multi').click();
 
+    page.once('dialog', dialog => dialog.accept());
     await page.locator('button', { hasText: 'Reset' }).click();
     await expect(page.locator('#explain')).toBeHidden();
     await expect(page.locator('#options .opt.selected')).toHaveCount(0);
