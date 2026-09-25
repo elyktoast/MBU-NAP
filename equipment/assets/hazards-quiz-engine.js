@@ -13,8 +13,8 @@ function start(cfg){
   $("#prog").style.width=(100*done/BANK.length)+"%";$("#bRev").textContent=`Review Missed${m?` (${m})`:""}`;$("#bRev").disabled=!m}
  function ctx(){return view==="prac"&&S.prac?{list:S.prac.list,i:S.prac.i,store:S.prac.ans,mode:"prac"}:{list:BANK.map(q=>q.id),i:S.idx,store:S.ans,mode:"main"}}
  function navHTML(c){return `<div class="mbu-quiz-nav hidden" id="mbuQuizNav">${c.list.map((id,i)=>{const r=c.store[id],q=byId[id],result=r?!!r.ok:null;return MBUNavigator.button({label:i+1,active:i===c.i,flagged:!!(window.MBUStudio&&MBUStudio.flagged(bankKey,q)),result,onClick:"MBUHazardsQuiz.nav("+i+")"})}).join("")}</div>`}
- function nav(i){const c=ctx();if(c.mode==="prac")S.prac.i=i;else S.idx=i;save();render()}
- function prev(){const c=ctx();if(c.i<=0)return;if(c.mode==="prac")S.prac.i--;else S.idx--;save();render();scrollTo(0,0)}
+ function nav(i){clearTimeout(timer);timer=null;const c=ctx();if(i<0||i>=c.list.length||i===c.i)return;if(c.mode==="prac")S.prac.i=i;else S.idx=i;save();render()}
+ function prev(){clearTimeout(timer);timer=null;const c=ctx();if(c.i<=0)return;if(c.mode==="prac")S.prac.i--;else S.idx--;save();render();scrollTo(0,0)}
  function next(){clearTimeout(timer);timer=null;if(view==="prac"&&S.prac)S.prac.i++;else S.idx++;save();render();scrollTo(0,0)}
  function resetQuestion(){clearTimeout(timer);timer=null;const c=ctx(),q=byId[c.list[c.i]];if(!q)return;delete c.store[q.id];delete S.xo[q.id];cur={sel:[],done:false};save();render()}
  function chrome(active){document.querySelector(".wrap>header")?.classList.toggle("hidden",!!active);document.querySelector(".wrap>.bar")?.classList.toggle("hidden",!!active)}
