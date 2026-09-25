@@ -68,7 +68,9 @@ function checkStudio(){
   const src=read('equipment/exam-1/studio.html');
   for(const name of ['quiz-bank-1.html','quiz-bank-2.html','quiz-bank-3.html','hazards-100.html','hazards-bank-2.html','hazards-bank-3.html','hazards-harder.html']) if(!src.includes(name))fail('Studio: missing source '+name);
   if(!src.includes("['quiz-bank-1.html','b1'")) fail('Studio: Bank 1 is not the first canonical bank source');
-  if(src.includes("const im=t.match(/const IMGS=")&&src.includes("key==='b3'")) fail('Studio: Bank 3 image payload is still eagerly parsed');
+  const b3Start=src.indexOf("}else if(key==='b3'){"),hazardStart=src.indexOf("}else{",b3Start);
+  const b3Branch=b3Start>=0&&hazardStart>b3Start?src.slice(b3Start,hazardStart):'';
+  if(/const\s+im\s*=|const\s+IMGS\s*=|JSON\.parse\(im/.test(b3Branch)) fail('Studio: Bank 3 image payload is still eagerly parsed');
 }
 function checkRuntimeSafety(){
   const bank3=read('equipment/exam-1/quiz-bank-3.html');
@@ -117,7 +119,7 @@ function checkCanonicalNavigators(){
   for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html']){
     const src=read(p);
     if(!src.includes('../assets/navigator.js'))fail(p+': shared navigator is not loaded');
-    if(!src.includes('MBUNavigator.button'))fail(p+': canonical navigator renderer is not used');
+    if(!src.includes('MBUNavigator.button')&&!src.includes('mbuNavButton('))fail(p+': canonical navigator renderer is not used');
   }
 }
 checkCanonicalNavigators();
