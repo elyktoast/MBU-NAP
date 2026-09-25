@@ -123,5 +123,10 @@ function checkCanonicalNavigators(){
   }
 }
 checkCanonicalNavigators();
+for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
+  const src=read(p);
+  if(!src.includes("timer=setTimeout(()=>{timer=null;next()},350)"))fail(p+': Hazards timer is not self-clearing');
+  if(!src.includes('function next(){clearTimeout(timer);timer=null;'))fail(p+': manual Next does not clear pending auto-advance');
+}
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
 console.log('Repository validation passed: Banks 1-3 are 500 questions each; local assets, Studio sources, answer indexes, and build manifest are valid.');

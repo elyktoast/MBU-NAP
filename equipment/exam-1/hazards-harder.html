@@ -98,7 +98,7 @@ function questionChrome(active){
  if(h)h.classList.toggle("hidden",!!active);
  if(b)b.classList.toggle("hidden",!!active);
 }
-function render(){clearTimeout(timer);stats();
+function render(){clearTimeout(timer);timer=null;stats();
  if(view==="review"){questionChrome(false);return renderReview()}
  if(view==="summary"){questionChrome(false);return renderSummary()}
  const c=ctx();
@@ -146,10 +146,10 @@ function showResult(q,rec,restored){cur.done=true;
  const src=`<p class="src">Source: ${q.ref.map(esc).join("; ")}</p>`;
  const g=$("#go");g.style.display="none";
  if(rec.ok){$("#fb").innerHTML=`<div class="fb good"><p><b>Correct.</b> ${esc(q.exp)}</p>${src}</div>`;g.textContent="Next";g.disabled=false;
-  if(!restored)timer=setTimeout(next,350)}
+  if(!restored){clearTimeout(timer);timer=setTimeout(()=>{timer=null;next()},350)}}
  else{const ks=q.a.map(i=>L[i]);const keys=ks.length<3?ks.join(" and "):ks.slice(0,-1).join(", ")+", and "+ks[ks.length-1];
   $("#fb").innerHTML=`<div class="fb badf"><p><b>Incorrect.</b> Correct answer: ${keys}.</p><p>${esc(q.exp)}</p>${q.disc?`<p class="disc"><b>Lecture discrepancy:</b> ${esc(q.disc)}</p>`:""}${q.supp?`<p class="disc"><b>Beyond the slide:</b> ${esc(q.supp)}</p>`:""}${src}</div>`;g.textContent="Next";g.disabled=false;g.focus()}}
-function next(){clearTimeout(timer);if(view==="prac"&&S.prac){S.prac.i++}else{S.idx++}save();render();window.scrollTo(0,0)}
+function next(){clearTimeout(timer);timer=null;if(view==="prac"&&S.prac){S.prac.i++}else{S.idx++}save();render();window.scrollTo(0,0)}
 function renderSummary(){const v=BANK.filter(q=>S.ans[q.id]);const c=v.filter(q=>S.ans[q.id].ok).length;
  const by={};BANK.forEach(q=>{by[q.lec]=by[q.lec]||{t:0,a:0,c:0};by[q.lec].t++;if(S.ans[q.id]){by[q.lec].a++;if(S.ans[q.id].ok)by[q.lec].c++}});
  const m=missed();
