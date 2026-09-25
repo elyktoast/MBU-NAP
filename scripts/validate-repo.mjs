@@ -3,6 +3,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 
 const root=process.cwd(), failures=[], notes=[];
+const quizFiles=['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html','equipment/exam-1/quiz-bank-3.html','equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html','equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html','equipment/exam-1/studio.html'];
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const exists=p=>fs.existsSync(path.join(root,p));
 const fail=m=>failures.push(m);
@@ -89,11 +90,14 @@ try{
   if(!manifest.build)fail('Build manifest has no build id');
 }catch(e){fail('Build manifest is invalid JSON: '+e.message)}
 function checkHazardNavigators(){
+  const standard=read('equipment/assets/hazards-standard-engine.js');
+  const challenge=read('equipment/assets/hazards-quiz-engine.js');
   for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html','equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
     const src=read(p);
     if(!src.includes('../assets/navigator.js'))fail(p+': shared Bank 1 navigator is not loaded');
-    if(!src.includes('MBUNavigator')&&!src.includes('mbuNavButton'))fail(p+': shared Bank 1 navigator renderer is not used');
   }
+  if(!standard.includes('MBUNavigator.button'))fail('Shared standard Hazards engine does not use the canonical navigator renderer');
+  if(!challenge.includes('MBUNavigator.button'))fail('Shared challenge Hazards engine does not use the canonical navigator renderer');
 }
 checkHazardNavigators();
 {
@@ -111,9 +115,13 @@ checkStudioIndexes();
  if(!src.includes("autoTimer=setTimeout(()=>{autoTimer=null;nextQuestion()},350)"))fail('Bank 2: auto-advance timer is not self-clearing');
  if(!src.includes("function nextQuestion(){clearTimeout(autoTimer);autoTimer=null;"))fail('Bank 2: manual Next does not cancel pending auto-advance');
 }
-for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html','equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html']){
+for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html']){
   const src=read(p);
   if(!src.includes("if(next===lastSaved)return"))fail(p+': duplicate localStorage writes are not suppressed');
+}
+for(const p of ['equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js']){
+  const src=read(p);
+  if(!src.includes('lastSaved')||!src.includes('if(next===lastSaved)return'))fail(p+': duplicate localStorage writes are not suppressed');
 }
 function checkCanonicalNavigators(){
   for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html']){
@@ -129,24 +137,21 @@ checkCanonicalNavigators();
  if(!src.includes('timer=setTimeout(()=>{timer=null;next()},350)'))fail('Bank 3: auto-advance timer is not self-clearing');
  if(!src.includes('function next(){clearTimeout(timer);timer=null;'))fail('Bank 3: manual Next does not cancel pending auto-advance');
 }
-for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html']){
- const src=read(p);
+{
+ const src=read('equipment/assets/hazards-standard-engine.js');
  const start=src.indexOf('function loadQuestion()'),end=src.indexOf('function choose(',start);
- if(start>=0&&end>start&&src.slice(start,end).includes('saveDB();'))fail(p+': Hazards render path still writes progress');
- if(!src.includes('db.current=currentIndex;saveDB()'))fail(p+': Hazards navigation does not persist position explicitly');
+ if(start>=0&&end>start&&src.slice(start,end).includes('saveDB();'))fail('Shared standard Hazards engine: render path still writes progress');
+ if(!src.includes('db.current=currentIndex;saveDB()'))fail('Shared standard Hazards engine: navigation does not persist position explicitly');
 }
 for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
   const src=read(p);
   if(!src.includes('.opt.ok,.opt.miss{border-color:var(--o2)!important'))fail(p+': keyed missed answers are not visibly green');
 }
-for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
-  const src=read(p);
-  if(!src.includes("timer=setTimeout(()=>{timer=null;next()},350)"))fail(p+': Hazards timer is not self-clearing');
-  if(!src.includes('function next(){clearTimeout(timer);timer=null;'))fail(p+': manual Next does not clear pending auto-advance');
+{
+  const src=read('equipment/assets/hazards-quiz-engine.js');
+  if(!src.includes("timer=setTimeout(()=>{timer=null;next()},350)"))fail('Shared Hazards engine: timer is not self-clearing');
+  if(!src.includes('function next(){clearTimeout(timer);timer=null;'))fail('Shared Hazards engine: manual Next does not clear pending auto-advance');
 }
-if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
-console.log('Repository validation passed: Banks 1-3 are 500 questions each; local assets, Studio sources, answer indexes, and build manifest are valid.');
-
 for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html','equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html','equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html','equipment/exam-1/studio.html']){
  const src=read(p); if(!src.includes('Right-click an answer to cross it out.'))fail(p+': missing cross-out interaction hint');
 }
@@ -164,11 +169,17 @@ const hazardEngine=read('equipment/assets/hazards-quiz-engine.js');
 for(const token of ['mbu-crossout-hint','MBUNavigator.button','classList.add(rec.sel.includes(i)?"ok":"miss")','timer=setTimeout(()=>{timer=null;next()},350)']) if(!hazardEngine.includes(token))fail('Shared Hazards engine missing canonical behavior: '+token);
 
 // Canonical timer lifecycle: every legacy Bank-1-style renderer must clear and null its timer on render/reset/navigation.
-for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html']){
- const src=read(p);
+{
+ const p='equipment/exam-1/quiz-bank-1.html',src=read(p);
  if(!src.includes('function loadQuestion(){clearTimeout(autoTimer);autoTimer=null;'))fail(p+': render does not clear/null auto-advance timer');
  if(!src.includes('clearTimeout(autoTimer);autoTimer=null;'))fail(p+': auto-advance timer lifecycle is incomplete');
  if(src.includes('autoTimer=setTimeout(()=>{currentIndex++;'))fail(p+': auto-advance callback leaves a stale timer handle');
+}
+{
+ const src=read('equipment/assets/hazards-standard-engine.js');
+ if(!src.includes('function loadQuestion(){clearTimeout(autoTimer);autoTimer=null;'))fail('Shared standard Hazards engine: render does not clear/null auto-advance timer');
+ if(!src.includes('clearTimeout(autoTimer);autoTimer=null;'))fail('Shared standard Hazards engine: auto-advance timer lifecycle is incomplete');
+ if(src.includes('autoTimer=setTimeout(()=>{currentIndex++;'))fail('Shared standard Hazards engine: auto-advance callback leaves a stale timer handle');
 }
 if(!read('equipment/assets/hazards-quiz-engine.js').includes('function resetQuestion(){clearTimeout(timer);timer=null;'))fail('Shared Hazards engine reset does not cancel auto-advance');
 
@@ -177,3 +188,6 @@ for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-ba
 
 const sharedHazardsEngine=read('equipment/assets/hazards-quiz-engine.js');
 if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared Hazards engine has invalid default expression inside object destructuring');
+
+if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
+console.log('Repository validation passed: Banks 1-3 are 500 questions each; local assets, Studio sources, shared quiz runtimes, answer indexes, and build manifest are valid.');
