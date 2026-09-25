@@ -69,7 +69,7 @@ ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 #go{margin-left:auto;order:99}
 
 </style>
-<!-- MBU_BUILD:2026-09-25-bank3-stats-contextmenu-v6 -->
+<!-- MBU_BUILD:2026-09-25-bank3-session-routing-fix-v7 -->
 <link rel="stylesheet" href="../assets/site-nav.css?v=16">
 <link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=16">
 <script defer src="../assets/site-nav.js?v=16" data-page="bank3"></script>
@@ -126,6 +126,14 @@ function missedPool(){const seen={},out=[];for(const n of [...EXLIST].reverse())
 function allMissedCount(){let m=0;EXLIST.forEach(n=>m+=examStats(n).missed.length);return m}
 
 // ----- header
+function header(title,extra){
+  setDashboardTitle(title);
+  const box=$("#hbtns");
+  if(box){
+    box.innerHTML=(extra||"")+((V.mode==="exam"&&V.n)?'<button class="btn out" id="bRev" type="button">Review Missed</button>':'');
+  }
+}
+
 function setDashboardTitle(title){$("#title").textContent=title;}
 function setBar(p){$("#prog").style.width=(100*p)+"%"}
 function questionChrome(active){
