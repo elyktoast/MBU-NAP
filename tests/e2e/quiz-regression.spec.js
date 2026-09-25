@@ -131,6 +131,24 @@ test.describe('canonical quiz regression', () => {
     expect(await page.evaluate(() => localStorage.getItem('srna_hazards_safety_harder_v1'))).toBeNull();
   });
 
+  test('Studio-created quiz fits a standard desktop viewport without page scrolling', async ({ page }) => {
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    await page.evaluate(() => {
+      session = [ALL.find(q => q.options.length === 4) || ALL[0]];
+      pos = 0;
+      DB.active = { uids: session.map(q => q.uid), pos: 0, answers: {}, updated: Date.now() };
+      save();
+      showQ();
+    });
+    await expect(page.locator('#quiz')).toBeVisible();
+    const overflow = await page.evaluate(() => document.documentElement.scrollHeight - window.innerHeight);
+    expect(overflow).toBeLessThanOrEqual(1);
+    await expect(page.locator('#studioPrev')).toBeVisible();
+    await expect(page.locator('#next')).toBeVisible();
+  });
+
   test('Studio active session resumes with position and answer state after reload', async ({ page }) => {
     await page.goto(exam + '/studio.html');
     await waitForStudio(page);
