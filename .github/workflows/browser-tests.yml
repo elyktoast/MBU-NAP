@@ -5,6 +5,10 @@ on:
     branches: [main]
   pull_request:
 
+concurrency:
+  group: browser-regression-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   browser-tests:
     runs-on: ubuntu-latest
