@@ -61,7 +61,7 @@ function checkAssetVersions(){
   for(const name of fs.readdirSync(dir).filter(x=>x.endsWith('.html'))){
     const p='equipment/exam-1/'+name,src=read(p),versions=[...src.matchAll(/\.\.\/assets\/[^"'?#\\s]+\?v=(\\d+)/g)].map(m=>m[1]);
     if(versions.length&&new Set(versions).size!==1)fail(p+': mixed shared asset cache revisions: '+[...new Set(versions)].join(', '));
-    if(versions.length&&versions.some(v=>v!=='47'))fail(p+': stale shared asset cache revision; expected v47');
+    if(versions.length&&versions.some(v=>v!=='49'))fail(p+': stale shared asset cache revision; expected v49');
   }
 }
 checkAssetVersions();
@@ -145,7 +145,8 @@ function checkCanonicalNavigators(){
   for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html']){
     const src=read(p);
     if(!src.includes('../assets/navigator.js'))fail(p+': shared navigator is not loaded');
-    if(!src.includes('MBUNavigator.button')&&!src.includes('mbuNavButton('))fail(p+': canonical navigator renderer is not used');
+    if(!src.includes('MBUNavigator.button'))fail(p+': canonical navigator renderer is not used');
+    if(src.includes('mbuNavButton('))fail(p+': obsolete navigator alias remains');
   }
 }
 checkCanonicalNavigators();
@@ -232,6 +233,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  const src=read('equipment/assets/hazards-quiz-engine.js');
  if(!src.includes('function mainStats(){let done=0,correct=0,miss=0;for(const q of BANK)'))fail('Shared Hazards: canonical mainStats helper is missing');
  if(src.includes('BANK.map(x=>S.ans[x.id]).filter(Boolean)'))fail('Shared Hazards: render still rebuilds answered arrays');
+ if(src.includes('answered.length'))fail('Shared Hazards: stale answered-array reference remains');
 }
 
 // Shared navigator should expose only the canonical API; the legacy global alias is obsolete.
