@@ -59,7 +59,7 @@ ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 @media (max-width:600px){ul.concepts{columns:1}}
 </style></head>
 <body class="mbu-bank1-ui">
-<!-- MBU_BUILD:2026-09-24-h3-bank1-ui-v14-counter-fix -->
+<!-- MBU_BUILD:2026-09-24-h3-unified-v15 -->
 <div class="wrap">
 <header><h1>Workstation Hazards Practice Set 3 · 100 Questions</h1>
 <div class="stats" id="stats"></div>
@@ -81,7 +81,7 @@ function save(){try{S.view=view;localStorage.setItem(KEY,JSON.stringify(S))}catc
 const byId=Object.fromEntries(BANK.map(q=>[q.id,q]));
 const $=s=>document.querySelector(s);
 function same(a,b){return a.length===b.length&&[...a].sort().join()===[...b].sort().join()}
-function stats(){const v=Object.values(S.ans),correct=v.filter(x=>x.ok).length,done=v.length,m=missed().length;
+function stats(){const v=BANK.map(q=>S.ans[q.id]).filter(Boolean),correct=v.filter(x=>x.ok).length,done=v.length,m=missed().length;
  $("#stats").innerHTML=`Completed <b>${done}</b> / ${BANK.length} · Score <b>${done?Math.round(100*correct/done):0}%</b> · Missed <b>${m}</b>`;
  $("#prog").style.width=(100*done/BANK.length)+"%";
  $("#bRev").textContent=`Missed review (${m})`}
@@ -105,9 +105,9 @@ function render(){clearTimeout(timer);stats();
  if(c.i>=c.list.length){questionChrome(false);if(c.mode==="prac")return renderPracDone();view="summary";save();return renderSummary()}
  questionChrome(true);const q=byId[c.list[c.i]],prev=c.store[q.id];
  cur={sel:prev?prev.sel.slice():[],done:!!prev};
- const xo=S.xo[q.id]||[],answered=Object.values(S.ans),correct=answered.filter(x=>x.ok).length,miss=missed().length;
+ const xo=S.xo[q.id]||[],answered=BANK.map(x=>S.ans[x.id]).filter(Boolean),correct=answered.filter(x=>x.ok).length,miss=missed().length;
  const badge=c.mode==="prac"?"MISSED QUESTIONS REVIEW":"PRACTICE SET 3";
- let h=`<div class="card"><div class="header"><div class="row"><span class="badge">${badge}</span><button class="btn out" id="qFlag" type="button">☆ Flag</button><button class="btn out" id="qReport" type="button">Report</button><button class="btn out" id="qNav" type="button">Navigator</button><button class="btn out mbu-return" id="qHome" type="button">← Hazards Home</button></div><div class="progress">Question ${c.i+1} of ${c.list.length}${c.mode==="main"?` · Q${q.num}`:` · Original Q${q.num}`}</div></div>
+ let h=`<div class="card"><div class="header"><div class="row"><span class="badge">${badge}</span><button class="btn out" id="qFlag" type="button">☆ Flag</button><button class="btn out" id="qReport" type="button">Report</button><button class="btn out" id="qNav" type="button">Navigator</button><button class="btn out mbu-return" id="qHome" type="button">← Hazards Home</button></div><div class="progress">${c.mode==="main"?`Question ${c.i+1} of ${BANK.length} · Q${q.num}`:`Question ${c.i+1} of ${c.list.length} · Original Q${q.num}`}</div></div>
  <div class="stats"><div>Completed: <strong>${answered.length}</strong>/${BANK.length}</div><div>Score: <strong>${answered.length?Math.round(100*correct/answered.length):0}</strong>%</div><div>Missed: <strong>${miss}</strong></div></div>
  ${quizNavHTML(c)}<div class="mbu-quiz-type">${q.type==="multi"?`Select ${q.n} Options`:"Single Best Answer"}</div>
  <p class="stem">${esc(q.q)}</p>`;
