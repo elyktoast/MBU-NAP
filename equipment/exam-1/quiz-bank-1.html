@@ -8578,7 +8578,7 @@ function updateStats(){const st=setState();let done=0,good=0;for(let i=0;i<curre
 function persistPosition(){if(mode==='set')db.sets[currentSet].current=currentIndex;else if(mode==='test6')db.test6.current=currentIndex;saveDB()}
 function nav(d){clearTimeout(autoTimer);autoTimer=null;const n=currentIndex+d;if(n>=0&&n<currentData.length){currentIndex=n;persistPosition();loadQuestion()}else if(d>0)goDashboard()}
 function goDashboard(){renderDashboard();window.scrollTo(0,0)}
-function resetCurrent(){clearTimeout(autoTimer);autoTimer=null;if(!confirm('Reset progress for this quiz view? Saved missed-question history from Sets 1–5 will remain.'))return;if(mode==='set'){db.sets[currentSet]=blankState()}else if(mode==='test6'){db.test6=blankState()}else{const st=db.sets[currentSet];for(const q of currentData){const k=`r${currentSet}_${q.id}`;delete st.answers[k];delete st.graded[k];delete st.correct[k];for(let i=0;i<q.options.length;i++)delete st.strikes[`${k}_${i}`]}}currentIndex=0;saveDB();loadQuestion()}
+function resetCurrent(){clearTimeout(autoTimer);autoTimer=null;if(!confirm('Reset progress for this quiz view? Saved missed-question history from Sets 1–5 will remain.'))return;if(mode==='set')db.sets[currentSet]=blankState();else if(mode==='test6')db.test6=blankState();else{const st=db.sets[currentSet];for(const q of currentData){const k=`r${currentSet}_${q.id}`;delete st.answers[k];delete st.graded[k];delete st.correct[k];for(let i=0;i<q.options.length;i++)delete st.strikes[`${k}_${i}`]}}currentIndex=0;saveDB();loadQuestion()}
 loadDB();renderDashboard();
 </script><script src="../assets/calculator.js?v=49"></script>
 
