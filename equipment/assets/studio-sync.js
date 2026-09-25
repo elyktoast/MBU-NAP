@@ -62,7 +62,10 @@
     }catch(e){}
   }
   window.addEventListener('storage',e=>{if(e.key===STORE)cache=null});
-  function key(bank,q){return normalizeBank(bank)+'-'+q.id}
+  function key(bank,q){
+    if(q&&q.uid)return normalizeKey(q.uid);
+    return normalizeBank(bank)+'-'+q.id
+  }
   function topicOf(q){
     const direct=String(q.topic||q.lec||'').trim();
     if(direct)return direct;
