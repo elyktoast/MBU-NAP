@@ -85,8 +85,9 @@ function stats(){const v=BANK.map(q=>S.ans[q.id]).filter(Boolean),correct=v.filt
 function missed(){return BANK.filter(q=>S.ans[q.id]&&!S.ans[q.id].ok)}
 let cur={sel:[],done:false};
 function ctx(){if(view==="prac"&&S.prac)return{list:S.prac.list,i:S.prac.i,store:S.prac.ans,mode:"prac"};return{list:BANK.map(q=>q.id),i:S.idx,store:S.ans,mode:"main"}}
-function quizNavHTML(c){return `<div class="mbu-quiz-nav hidden" id="mbuQuizNav">${c.list.map((id,i)=>{const r=c.store[id],q=byId[id],cl=[i===c.i?"cur":"",r?(r.ok?"good":"bad"):"",window.MBUStudio&&MBUStudio.flagged('hh',q)?"flag":""].filter(Boolean).join(" ");return `<button type="button" class="${cl}" data-qnav="${i}">${i+1}</button>`}).join("")}</div>`}
-function bindQuizNav(c){document.querySelectorAll("[data-qnav]").forEach(b=>b.onclick=()=>{const i=+b.dataset.qnav;if(c.mode==="prac")S.prac.i=i;else S.idx=i;save();render()})}
+function quizNavHTML(c){return `<div class="mbu-quiz-nav hidden" id="mbuQuizNav">${c.list.map((id,i)=>{const r=c.store[id],q=byId[id],result=r?!!r.ok:null;return MBUNavigator.button({label:i+1,active:i===c.i,flagged:!!(window.MBUStudio&&MBUStudio.flagged('hh',q)),result,onClick:'mbuHazardNav('+i+')'})}).join('')}</div>`}
+function mbuHazardNav(i){const c=ctx();if(c.mode==="prac")S.prac.i=i;else S.idx=i;save();render()}
+function bindQuizNav(c){}
 function prevQuestion(){const c=ctx();if(c.i<=0)return;if(c.mode==="prac")S.prac.i--;else S.idx--;save();render();window.scrollTo(0,0)}
 function resetQuestion(){const c=ctx(),q=byId[c.list[c.i]];if(!q)return;delete c.store[q.id];delete S.xo[q.id];cur={sel:[],done:false};save();render()}
 function goHazardsHome(){location.href="hazards.html"}

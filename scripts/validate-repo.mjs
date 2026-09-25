@@ -79,6 +79,20 @@ try{checkBank1()}catch(e){fail('Bank 1 validation crashed: '+e.message)}
 try{checkBank2()}catch(e){fail('Bank 2 validation crashed: '+e.message)}
 try{checkBank3()}catch(e){fail('Bank 3 validation crashed: '+e.message)}
 checkCopies();checkAssets();checkStudio();checkRuntimeSafety();
-const manifest=JSON.parse(read('equipment/build.json')); if(!manifest.build)fail('Build manifest has no build id');
+let manifest;
+try{
+  const raw=read('equipment/build.json');
+  if(raw.includes('\\n'))fail('Build manifest contains escaped newline text instead of real newlines');
+  manifest=JSON.parse(raw);
+  if(!manifest.build)fail('Build manifest has no build id');
+}catch(e){fail('Build manifest is invalid JSON: '+e.message)}
+function checkHazardNavigators(){
+  for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html','equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
+    const src=read(p);
+    if(!src.includes('../assets/navigator.js'))fail(p+': shared Bank 1 navigator is not loaded');
+    if(!src.includes('MBUNavigator')&&!src.includes('mbuNavButton'))fail(p+': shared Bank 1 navigator renderer is not used');
+  }
+}
+checkHazardNavigators();
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
 console.log('Repository validation passed: Banks 1-3 are 500 questions each; local assets, Studio sources, answer indexes, and build manifest are valid.');
