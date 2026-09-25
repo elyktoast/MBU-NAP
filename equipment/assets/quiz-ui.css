@@ -1,84 +1,280 @@
-/* Shared active-quiz presentation modeled on Quiz Bank 1, Practice Set 1. */
-html[data-mbu-page]{--mbu-p:#1a365d;--mbu-pl:#2b6cb0;--mbu-ok:#22543d;--mbu-okbg:#c6f6d5;--mbu-bad:#742a2a;--mbu-badbg:#fed7d7;--mbu-bg:#edf2f7;--mbu-soft:#f7fafc;--mbu-b:#cbd5e0;--mbu-t:#2d3748;--mbu-mut:#718096}
+/* Shared active-quiz presentation.
+   Visual model: Quiz Bank 1, Practice Set 1. */
+html[data-mbu-page]{
+  --mbu-p:#1a365d;--mbu-pl:#2b6cb0;--mbu-ok:#22543d;--mbu-okbg:#c6f6d5;
+  --mbu-bad:#742a2a;--mbu-badbg:#fed7d7;--mbu-bg:#edf2f7;--mbu-soft:#f7fafc;
+  --mbu-b:#cbd5e0;--mbu-t:#2d3748;--mbu-mut:#718096
+}
+html[data-mbu-page="bank1"] body,
 html[data-mbu-page="bank2"] body,
 html[data-mbu-page="bank3"] body,
+html[data-mbu-page="haz1"] body,
+html[data-mbu-page="haz2"] body,
 html[data-mbu-page="haz3"] body,
-html[data-mbu-page="hh"] body{background:var(--mbu-bg)!important;color:var(--mbu-t)!important;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif!important}
+html[data-mbu-page="hh"] body{
+  background:var(--mbu-bg)!important;color:var(--mbu-t)!important;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif!important
+}
 html[data-mbu-page="bank2"] .wrap,
 html[data-mbu-page="bank3"] .wrap,
 html[data-mbu-page="haz3"] .wrap,
 html[data-mbu-page="hh"] .wrap{max-width:1040px!important;margin:auto!important;padding:20px!important}
 
-/* Bank 2 active quiz */
-html[data-mbu-page="bank2"] #quiz.quiz{max-width:none!important;background:#fff!important;border-radius:10px!important;box-shadow:0 4px 12px #00000012!important;padding:28px!important}
-html[data-mbu-page="bank2"] #quiz .qhead{display:flex!important;justify-content:space-between!important;gap:15px!important;align-items:center!important;border-bottom:2px solid var(--mbu-b)!important;padding-bottom:14px!important;margin-bottom:18px!important}
-html[data-mbu-page="bank2"] #quiz .qhead .btn{border-radius:6px!important;background:#fff!important;color:var(--mbu-p)!important;border:1.5px solid var(--mbu-p)!important;padding:9px 13px!important;font-weight:700!important}
-html[data-mbu-page="bank2"] #quiz .pill{background:transparent!important;color:#4a5568!important;border:0!important;border-radius:0!important;padding:0!important;font-weight:700!important}
-html[data-mbu-page="bank2"] #quiz .qcard{border:0!important;box-shadow:none!important;padding:0!important;border-radius:0!important}
-html[data-mbu-page="bank2"] #quiz #meta{font-size:.84rem!important;color:#b7791f!important;font-weight:800!important;text-transform:uppercase!important;letter-spacing:.5px!important;margin-bottom:8px!important}
-html[data-mbu-page="bank2"] #quiz .stem{font-size:1.12rem!important;font-weight:650!important;color:#1a202c!important;margin:0 0 18px!important}
-html[data-mbu-page="bank2"] #quiz .choices{display:flex!important;flex-direction:column!important;gap:10px!important;margin-bottom:20px!important}
-html[data-mbu-page="bank2"] #quiz .choice{border:1.5px solid var(--mbu-b)!important;border-radius:6px!important;padding:12px 16px!important;background:#fff!important;font-size:.98rem!important;color:var(--mbu-t)!important}
-html[data-mbu-page="bank2"] #quiz .choice:hover:not(:disabled){background:var(--mbu-soft)!important;border-color:var(--mbu-pl)!important}
-html[data-mbu-page="bank2"] #quiz .choice.sel{border-color:var(--mbu-p)!important;background:#ebf8ff!important;font-weight:650!important}
-html[data-mbu-page="bank2"] #quiz .choice.good{background:var(--mbu-okbg)!important;border-color:var(--mbu-ok)!important;color:var(--mbu-ok)!important;font-weight:750!important}
-html[data-mbu-page="bank2"] #quiz .choice.bad{background:var(--mbu-badbg)!important;border-color:var(--mbu-bad)!important;color:var(--mbu-bad)!important}
-html[data-mbu-page="bank2"] #quiz .feedback{margin-top:18px!important;padding:18px!important;border-radius:6px!important;background:#f8fafc!important;border-left:5px solid var(--mbu-p)!important;color:var(--mbu-t)!important}
-html[data-mbu-page="bank2"] #quiz .foot{border-top:1px solid var(--mbu-b)!important;padding-top:16px!important;margin-top:24px!important}
-html[data-mbu-page="bank2"] #quiz .primary{background:var(--mbu-p)!important;color:#fff!important;border:0!important;border-radius:6px!important;padding:10px 16px!important;font-weight:700!important}
-
-/* Bank 3 and advanced Hazards question cards */
+/* Active quiz shell */
+html[data-mbu-page="bank2"] #quiz,
+html[data-mbu-page="bank3"] #quiz,
 html[data-mbu-page="bank3"] #main>.card,
 html[data-mbu-page="haz3"] #main>.card,
-html[data-mbu-page="hh"] #main>.card{background:#fff!important;border:0!important;border-radius:10px!important;box-shadow:0 4px 12px #00000012!important;padding:28px!important;color:var(--mbu-t)!important}
+html[data-mbu-page="hh"] #main>.card{
+  max-width:none!important;background:#fff!important;border:0!important;border-radius:10px!important;
+  box-shadow:0 4px 12px #00000012!important;padding:28px!important;color:var(--mbu-t)!important
+}
+html[data-mbu-page="bank2"] #quiz .qcard{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;border-radius:0!important}
+
+/* Header row: badge/tools left, counter right */
+html[data-mbu-page="bank2"] #quiz .header,
+html[data-mbu-page="bank2"] #quiz .qhead,
+html[data-mbu-page="bank3"] #quiz .header,
+html[data-mbu-page="bank3"] #main>.card .header,
 html[data-mbu-page="bank3"] #main>.card .qmeta,
+html[data-mbu-page="haz3"] #main>.card .header,
 html[data-mbu-page="haz3"] #main>.card .qmeta,
-html[data-mbu-page="hh"] #main>.card .qmeta{display:flex!important;justify-content:space-between!important;gap:15px!important;align-items:center!important;border-bottom:2px solid var(--mbu-b)!important;padding-bottom:14px!important;margin-bottom:18px!important;color:#4a5568!important;font-weight:700!important;flex-wrap:wrap!important}
+html[data-mbu-page="hh"] #main>.card .header,
+html[data-mbu-page="hh"] #main>.card .qmeta{
+  display:flex!important;justify-content:space-between!important;gap:15px!important;align-items:center!important;
+  border-bottom:2px solid var(--mbu-b)!important;padding-bottom:14px!important;margin-bottom:18px!important;
+  color:var(--mbu-t)!important;flex-wrap:wrap!important
+}
+html[data-mbu-page="bank2"] #quiz .header .row,
+html[data-mbu-page="bank3"] #main>.card .header .row,
+html[data-mbu-page="haz3"] #main>.card .header .row,
+html[data-mbu-page="hh"] #main>.card .header .row{display:flex!important;gap:8px!important;align-items:center!important;flex-wrap:wrap!important}
+html[data-mbu-page="bank2"] #quiz .badge,
+html[data-mbu-page="bank2"] #quiz #missedCount,
+html[data-mbu-page="bank3"] #main>.card .badge,
 html[data-mbu-page="bank3"] #main>.card .qmeta>span:first-child,
+html[data-mbu-page="haz3"] #main>.card .badge,
 html[data-mbu-page="haz3"] #main>.card .qmeta>span:first-child,
-html[data-mbu-page="hh"] #main>.card .qmeta>span:first-child{background:var(--mbu-p)!important;color:#fff!important;padding:5px 14px!important;border-radius:999px!important;font-size:.85rem!important;font-weight:800!important}
-html[data-mbu-page="bank3"] #main>.card .ghost,
-html[data-mbu-page="haz3"] #main>.card .ghost,
-html[data-mbu-page="hh"] #main>.card .ghost{background:#fff!important;color:var(--mbu-p)!important;border:1.5px solid var(--mbu-p)!important;border-radius:6px!important;padding:9px 13px!important;font-weight:700!important}
+html[data-mbu-page="hh"] #main>.card .badge,
+html[data-mbu-page="hh"] #main>.card .qmeta>span:first-child{
+  background:var(--mbu-p)!important;color:#fff!important;padding:5px 14px!important;border-radius:999px!important;
+  font-size:.85rem!important;font-weight:800!important;white-space:nowrap!important
+}
+html[data-mbu-page="bank2"] #quiz .progress,
+html[data-mbu-page="bank2"] #quiz #progress,
+html[data-mbu-page="bank3"] #main>.card .progress,
+html[data-mbu-page="haz3"] #main>.card .progress,
+html[data-mbu-page="hh"] #main>.card .progress{
+  font-weight:700!important;color:#4a5568!important;margin-left:auto!important;text-align:right!important
+}
+
+/* Bank 1-style stat strip */
+html[data-mbu-page="bank2"] #quiz .mbu-quiz-stats,
+html[data-mbu-page="bank3"] #main>.card .stats,
+html[data-mbu-page="haz3"] #main>.card .stats,
+html[data-mbu-page="hh"] #main>.card .stats{
+  display:flex!important;gap:22px!important;flex-wrap:wrap!important;background:var(--mbu-soft)!important;
+  border:1px solid var(--mbu-b)!important;padding:12px 16px!important;border-radius:7px!important;
+  margin:0 0 20px!important;color:var(--mbu-t)!important;font-size:1rem!important
+}
+
+/* Question type and stem */
+html[data-mbu-page="bank2"] #quiz .type,
+html[data-mbu-page="bank2"] #quiz #meta,
+html[data-mbu-page="bank3"] #main>.card .type,
+html[data-mbu-page="bank3"] #main>.card .mbu-quiz-type,
+html[data-mbu-page="haz3"] #main>.card .type,
+html[data-mbu-page="haz3"] #main>.card .mbu-quiz-type,
+html[data-mbu-page="hh"] #main>.card .type,
+html[data-mbu-page="hh"] #main>.card .mbu-quiz-type{
+  font-size:.84rem!important;color:#b7791f!important;font-weight:800!important;text-transform:uppercase!important;
+  letter-spacing:.5px!important;margin-bottom:8px!important
+}
+html[data-mbu-page="bank2"] #quiz .stem,
 html[data-mbu-page="bank3"] #main>.card .stem,
 html[data-mbu-page="haz3"] #main>.card .stem,
-html[data-mbu-page="hh"] #main>.card .stem{font-size:1.12rem!important;font-weight:650!important;color:#1a202c!important;margin:0 0 18px!important}
+html[data-mbu-page="hh"] #main>.card .stem{
+  font-size:1.12rem!important;font-weight:650!important;color:#1a202c!important;
+  line-height:1.5!important;margin:0 0 18px!important
+}
+
+/* Choices */
+html[data-mbu-page="bank2"] #quiz .choices,
+html[data-mbu-page="bank3"] #main>.card #choices,
+html[data-mbu-page="haz3"] #main>.card #choices,
+html[data-mbu-page="hh"] #main>.card #choices{
+  display:flex!important;flex-direction:column!important;gap:10px!important;margin-bottom:20px!important
+}
+html[data-mbu-page="bank2"] #quiz .mbu-choice-row,
 html[data-mbu-page="bank3"] #main>.card .ch,
 html[data-mbu-page="haz3"] #main>.card .ch,
-html[data-mbu-page="hh"] #main>.card .ch{gap:8px!important;margin:10px 0!important}
+html[data-mbu-page="hh"] #main>.card .ch{
+  display:flex!important;gap:8px!important;align-items:stretch!important;margin:0!important
+}
+html[data-mbu-page="bank2"] #quiz .choice,
 html[data-mbu-page="bank3"] #main>.card .opt,
 html[data-mbu-page="haz3"] #main>.card .opt,
-html[data-mbu-page="hh"] #main>.card .opt{border:1.5px solid var(--mbu-b)!important;border-radius:6px!important;padding:12px 16px!important;background:#fff!important;color:var(--mbu-t)!important;font-size:.98rem!important}
-html[data-mbu-page="bank3"] #main>.card .opt:hover:not(:disabled),
-html[data-mbu-page="haz3"] #main>.card .opt:hover:not(:disabled),
-html[data-mbu-page="hh"] #main>.card .opt:hover:not(:disabled){background:var(--mbu-soft)!important;border-color:var(--mbu-pl)!important}
+html[data-mbu-page="hh"] #main>.card .opt{
+  flex:1!important;min-width:0!important;display:flex!important;gap:12px!important;align-items:flex-start!important;width:100%!important;
+  padding:12px 16px!important;border:1.5px solid var(--mbu-b)!important;border-radius:6px!important;background:#fff!important;
+  color:var(--mbu-t)!important;text-align:left!important;font-size:.98rem!important;line-height:1.5!important;cursor:pointer!important
+}
+@media(hover:hover) and (pointer:fine){
+  html[data-mbu-page="bank2"] #quiz .choice:hover:not(:disabled),
+  html[data-mbu-page="bank3"] #main>.card .opt:hover:not(:disabled),
+  html[data-mbu-page="haz3"] #main>.card .opt:hover:not(:disabled),
+  html[data-mbu-page="hh"] #main>.card .opt:hover:not(:disabled){background:var(--mbu-soft)!important;border-color:var(--mbu-pl)!important}
+}
+html[data-mbu-page="bank2"] #quiz .choice.sel,
 html[data-mbu-page="bank3"] #main>.card .opt.sel,
 html[data-mbu-page="haz3"] #main>.card .opt.sel,
-html[data-mbu-page="hh"] #main>.card .opt.sel{border-color:var(--mbu-p)!important;background:#ebf8ff!important;font-weight:650!important}
+html[data-mbu-page="hh"] #main>.card .opt.sel{
+  border-color:var(--mbu-p)!important;background:#ebf8ff!important;font-weight:650!important
+}
+html[data-mbu-page="bank2"] #quiz .choice.good,
 html[data-mbu-page="bank3"] #main>.card .opt.ok,
 html[data-mbu-page="haz3"] #main>.card .opt.ok,
-html[data-mbu-page="hh"] #main>.card .opt.ok{background:var(--mbu-okbg)!important;border-color:var(--mbu-ok)!important;color:var(--mbu-ok)!important;font-weight:750!important}
+html[data-mbu-page="hh"] #main>.card .opt.ok{
+  background:var(--mbu-okbg)!important;border-color:var(--mbu-ok)!important;color:var(--mbu-ok)!important;font-weight:750!important
+}
+html[data-mbu-page="bank2"] #quiz .choice.bad,
 html[data-mbu-page="bank3"] #main>.card .opt.no,
 html[data-mbu-page="haz3"] #main>.card .opt.no,
-html[data-mbu-page="hh"] #main>.card .opt.no{background:var(--mbu-badbg)!important;border-color:var(--mbu-bad)!important;color:var(--mbu-bad)!important}
+html[data-mbu-page="hh"] #main>.card .opt.no{
+  background:var(--mbu-badbg)!important;border-color:var(--mbu-bad)!important;color:var(--mbu-bad)!important
+}
+html[data-mbu-page="bank3"] #main>.card .opt.miss,
+html[data-mbu-page="haz3"] #main>.card .opt.miss,
+html[data-mbu-page="hh"] #main>.card .opt.miss{
+  background:#fff!important;border-color:var(--mbu-ok)!important;border-style:dashed!important;color:var(--mbu-ok)!important
+}
+html[data-mbu-page="bank2"] #quiz .choice.xout span:not(.letter),
+html[data-mbu-page="bank3"] #main>.card .opt.x .t,
+html[data-mbu-page="haz3"] #main>.card .opt.x .t,
+html[data-mbu-page="hh"] #main>.card .opt.x .t{text-decoration:line-through!important;opacity:.45!important}
+html[data-mbu-page="bank2"] #quiz .letter,
+html[data-mbu-page="bank3"] #main>.card .L,
+html[data-mbu-page="haz3"] #main>.card .L,
+html[data-mbu-page="hh"] #main>.card .L{font-weight:800!important;min-width:26px!important;color:inherit!important}
+
+/* Cross-out control */
+html[data-mbu-page="bank2"] #quiz .mbu-cross,
 html[data-mbu-page="bank3"] #main>.card .xo,
 html[data-mbu-page="haz3"] #main>.card .xo,
-html[data-mbu-page="hh"] #main>.card .xo{width:44px!important;border:1px solid var(--mbu-b)!important;border-radius:8px!important;background:#fff!important;color:#4a5568!important;font-size:18px!important}
+html[data-mbu-page="hh"] #main>.card .xo{
+  flex:0 0 44px!important;width:44px!important;border:1px solid var(--mbu-b)!important;border-radius:8px!important;
+  background:#fff!important;color:#4a5568!important;font-size:18px!important;cursor:pointer!important
+}
+html[data-mbu-page="bank2"] #quiz .mbu-cross[aria-pressed="true"],
 html[data-mbu-page="bank3"] #main>.card .xo[aria-pressed="true"],
 html[data-mbu-page="haz3"] #main>.card .xo[aria-pressed="true"],
-html[data-mbu-page="hh"] #main>.card .xo[aria-pressed="true"]{background:#fff5f5!important;color:#9b2c2c!important;border-color:#e53e3e!important}
+html[data-mbu-page="hh"] #main>.card .xo[aria-pressed="true"]{
+  background:#fff5f5!important;color:#9b2c2c!important;border-color:#e53e3e!important
+}
+
+/* Buttons */
+html[data-mbu-page="bank2"] #quiz .btn,
+html[data-mbu-page="bank3"] #main>.card .btn,
 html[data-mbu-page="bank3"] #main>.card .primary,
+html[data-mbu-page="bank3"] #main>.card .ghost,
+html[data-mbu-page="haz3"] #main>.card .btn,
 html[data-mbu-page="haz3"] #main>.card .primary,
-html[data-mbu-page="hh"] #main>.card .primary{background:var(--mbu-p)!important;color:#fff!important;border:0!important;border-radius:6px!important;padding:10px 16px!important;font-weight:700!important}
-html[data-mbu-page="bank3"] #main>.card .act,
-html[data-mbu-page="haz3"] #main>.card .act,
-html[data-mbu-page="hh"] #main>.card .act{border-top:1px solid var(--mbu-b)!important;padding-top:16px!important;margin-top:24px!important}
+html[data-mbu-page="haz3"] #main>.card .ghost,
+html[data-mbu-page="hh"] #main>.card .btn,
+html[data-mbu-page="hh"] #main>.card .primary,
+html[data-mbu-page="hh"] #main>.card .ghost{
+  border:0!important;border-radius:6px!important;background:var(--mbu-p)!important;color:#fff!important;
+  padding:10px 16px!important;font-weight:700!important;cursor:pointer!important
+}
+html[data-mbu-page="bank2"] #quiz .btn.out,
+html[data-mbu-page="bank3"] #main>.card .btn.out,
+html[data-mbu-page="bank3"] #main>.card .ghost,
+html[data-mbu-page="haz3"] #main>.card .btn.out,
+html[data-mbu-page="haz3"] #main>.card .ghost,
+html[data-mbu-page="hh"] #main>.card .btn.out,
+html[data-mbu-page="hh"] #main>.card .ghost{
+  background:#fff!important;color:var(--mbu-p)!important;border:1.5px solid var(--mbu-p)!important
+}
+html[data-mbu-page="bank2"] #quiz button:disabled,
+html[data-mbu-page="bank3"] #main>.card button:disabled,
+html[data-mbu-page="haz3"] #main>.card button:disabled,
+html[data-mbu-page="hh"] #main>.card button:disabled{
+  background:#cbd5e0!important;color:#fff!important;border-color:#cbd5e0!important;cursor:not-allowed!important
+}
+
+/* Navigator */
+html[data-mbu-page="bank2"] #quiz #mbuNavigator,
+html[data-mbu-page="bank3"] #main>.card .mbu-quiz-nav,
+html[data-mbu-page="haz3"] #main>.card .mbu-quiz-nav,
+html[data-mbu-page="hh"] #main>.card .mbu-quiz-nav{
+  display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 14px;max-height:180px;overflow:auto;padding:3px
+}
+html[data-mbu-page="bank3"] #main>.card .mbu-quiz-nav:not(.on),
+html[data-mbu-page="haz3"] #main>.card .mbu-quiz-nav:not(.on),
+html[data-mbu-page="hh"] #main>.card .mbu-quiz-nav:not(.on){display:none}
+html[data-mbu-page="bank2"] #quiz #mbuNavigator.hidden{display:none!important}
+html[data-mbu-page="bank2"] #quiz #mbuNavigator button,
+html[data-mbu-page="bank3"] #main>.card .mbu-quiz-nav button,
+html[data-mbu-page="haz3"] #main>.card .mbu-quiz-nav button,
+html[data-mbu-page="hh"] #main>.card .mbu-quiz-nav button{
+  min-width:38px;height:34px;border:1px solid var(--mbu-b);background:#fff;border-radius:6px;color:var(--mbu-t);font-weight:700
+}
+
+/* Feedback / source */
+html[data-mbu-page="bank2"] #quiz .feedback,
 html[data-mbu-page="bank3"] #main>.card .fb,
 html[data-mbu-page="haz3"] #main>.card .fb,
-html[data-mbu-page="hh"] #main>.card .fb{margin-top:18px!important;padding:18px!important;border-radius:6px!important;background:#f8fafc!important;border-left:5px solid var(--mbu-p)!important;color:var(--mbu-t)!important}
+html[data-mbu-page="hh"] #main>.card .fb{
+  margin-top:18px!important;padding:18px!important;border-radius:6px!important;background:#f8fafc!important;
+  border-left:5px solid var(--mbu-p)!important;font-size:.95rem!important;color:var(--mbu-t)!important
+}
+html[data-mbu-page="bank2"] #quiz .feedback.ok,
+html[data-mbu-page="bank3"] #main>.card .fb.good,
+html[data-mbu-page="haz3"] #main>.card .fb.good,
+html[data-mbu-page="hh"] #main>.card .fb.good{background:#f0fff4!important;border-left-color:var(--mbu-ok)!important;color:var(--mbu-ok)!important}
+html[data-mbu-page="bank2"] #quiz .feedback.bad,
+html[data-mbu-page="bank3"] #main>.card .fb.badf,
+html[data-mbu-page="haz3"] #main>.card .fb.badf,
+html[data-mbu-page="hh"] #main>.card .fb.badf{background:#fff5f5!important;border-left-color:#9b2c2c!important;color:var(--mbu-bad)!important}
+html[data-mbu-page="bank2"] #quiz .source,
+html[data-mbu-page="bank3"] #main>.card .src,
+html[data-mbu-page="haz3"] #main>.card .src,
+html[data-mbu-page="hh"] #main>.card .src{margin-top:10px!important;font-size:.85rem!important;font-weight:700!important;color:#4a5568!important}
+
+/* Submit and bottom navigation match Bank 1 */
+html[data-mbu-page="bank2"] #quiz .foot,
+html[data-mbu-page="bank3"] #main>.card .mbu-quiz-bottom,
+html[data-mbu-page="haz3"] #main>.card .mbu-quiz-bottom,
+html[data-mbu-page="hh"] #main>.card .mbu-quiz-bottom{
+  display:flex!important;justify-content:space-between!important;gap:10px!important;align-items:center!important;
+  border-top:1px solid var(--mbu-b)!important;padding-top:16px!important;margin-top:24px!important;flex-wrap:wrap!important
+}
+html[data-mbu-page="bank2"] #quiz .qcard>.foot>.kbd,
+html[data-mbu-page="bank3"] #main>.card>.act>.hint,
+html[data-mbu-page="haz3"] #main>.card>.act>.hint,
+html[data-mbu-page="hh"] #main>.card>.act>.hint{display:none!important}
+html[data-mbu-page="bank3"] #main>.card>.act,
+html[data-mbu-page="haz3"] #main>.card>.act,
+html[data-mbu-page="hh"] #main>.card>.act{
+  display:flex!important;justify-content:flex-end!important;gap:10px!important;margin:4px 0 18px!important
+}
+html[data-mbu-page="bank3"] #main>.card .mbu-quiz-bottom .right,
+html[data-mbu-page="haz3"] #main>.card .mbu-quiz-bottom .right,
+html[data-mbu-page="hh"] #main>.card .mbu-quiz-bottom .right{display:flex!important;gap:8px!important;flex-wrap:wrap!important;margin-left:auto!important}
+
+/* Figures */
+html[data-mbu-page="bank2"] #quiz .qimg,
+html[data-mbu-page="bank3"] #main>.card .fig img,
+html[data-mbu-page="haz3"] #main>.card .fig img,
+html[data-mbu-page="hh"] #main>.card .fig img{max-width:100%!important;height:auto!important;max-height:360px!important;border-radius:6px!important}
+
+/* Dashboard header retained but visually harmonized on Bank 3 / advanced Hazards */
 html[data-mbu-page="bank3"] header,
 html[data-mbu-page="haz3"] header,
-html[data-mbu-page="hh"] header{background:#fff!important;border-radius:10px!important;box-shadow:0 4px 12px #00000012!important;padding:16px 20px!important;border:0!important;border-bottom:2px solid var(--mbu-b)!important;margin-bottom:12px!important;color:var(--mbu-t)!important}
+html[data-mbu-page="hh"] header{
+  background:#fff!important;border-radius:10px!important;box-shadow:0 4px 12px #00000012!important;
+  padding:18px 22px!important;border:0!important;border-bottom:2px solid var(--mbu-b)!important;margin-bottom:12px!important;color:var(--mbu-t)!important
+}
 html[data-mbu-page="bank3"] .bar,
 html[data-mbu-page="haz3"] .bar,
 html[data-mbu-page="hh"] .bar{height:9px!important;background:#e2e8f0!important;border-radius:20px!important;margin:10px 0 18px!important}
@@ -87,29 +283,35 @@ html[data-mbu-page="haz3"] .bar i,
 html[data-mbu-page="hh"] .bar i{background:var(--mbu-pl)!important}
 
 @media(max-width:650px){
- html[data-mbu-page="bank2"] #quiz.quiz,
- html[data-mbu-page="bank3"] #main>.card,
- html[data-mbu-page="haz3"] #main>.card,
- html[data-mbu-page="hh"] #main>.card{padding:18px!important}
- html[data-mbu-page="bank2"] #quiz .qhead{align-items:flex-start!important;flex-direction:column!important}
- html[data-mbu-page="bank3"] #main>.card .qmeta,
- html[data-mbu-page="haz3"] #main>.card .qmeta,
- html[data-mbu-page="hh"] #main>.card .qmeta{align-items:flex-start!important;flex-direction:column!important}
+  html[data-mbu-page="bank2"] .wrap,
+  html[data-mbu-page="bank3"] .wrap,
+  html[data-mbu-page="haz3"] .wrap,
+  html[data-mbu-page="hh"] .wrap{padding:10px!important}
+  html[data-mbu-page="bank2"] #quiz,
+  html[data-mbu-page="bank3"] #quiz,
+  html[data-mbu-page="bank3"] #main>.card,
+  html[data-mbu-page="haz3"] #main>.card,
+  html[data-mbu-page="hh"] #main>.card{padding:18px!important}
+  html[data-mbu-page="bank2"] #quiz .header,
+  html[data-mbu-page="bank2"] #quiz .qhead,
+  html[data-mbu-page="bank3"] #main>.card .header,
+  html[data-mbu-page="bank3"] #main>.card .qmeta,
+  html[data-mbu-page="haz3"] #main>.card .header,
+  html[data-mbu-page="haz3"] #main>.card .qmeta,
+  html[data-mbu-page="hh"] #main>.card .header,
+  html[data-mbu-page="hh"] #main>.card .qmeta{align-items:flex-start!important;flex-direction:column!important}
+  html[data-mbu-page="bank2"] #quiz .progress,
+  html[data-mbu-page="bank3"] #main>.card .progress,
+  html[data-mbu-page="haz3"] #main>.card .progress,
+  html[data-mbu-page="hh"] #main>.card .progress{margin-left:0!important;text-align:left!important}
+  html[data-mbu-page="bank2"] #quiz .mbu-quiz-stats,
+  html[data-mbu-page="bank3"] #main>.card .stats,
+  html[data-mbu-page="haz3"] #main>.card .stats,
+  html[data-mbu-page="hh"] #main>.card .stats{gap:10px!important}
+  html[data-mbu-page="bank3"] #main>.card .mbu-quiz-bottom,
+  html[data-mbu-page="haz3"] #main>.card .mbu-quiz-bottom,
+  html[data-mbu-page="hh"] #main>.card .mbu-quiz-bottom{align-items:stretch!important;flex-direction:column!important}
+  html[data-mbu-page="bank3"] #main>.card .mbu-quiz-bottom .right,
+  html[data-mbu-page="haz3"] #main>.card .mbu-quiz-bottom .right,
+  html[data-mbu-page="hh"] #main>.card .mbu-quiz-bottom .right{width:100%!important;margin-left:0!important}
 }
-/* Shared Bank 1-style structural helpers used by converted quiz pages. */
-.mbu-quiz-stats{display:flex;gap:22px;flex-wrap:wrap;background:var(--mbu-soft);border:1px solid var(--mbu-b);padding:12px 16px;border-radius:7px;margin-bottom:20px;color:var(--mbu-t)}
-.mbu-quiz-type{font-size:.84rem;color:#b7791f;font-weight:800;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
-.mbu-quiz-nav{display:none;flex-wrap:wrap;gap:6px;margin:8px 0 14px;max-height:180px;overflow:auto;padding:3px}
-.mbu-quiz-nav.on{display:flex}
-.mbu-quiz-nav button{min-width:38px;height:34px;border:1px solid var(--mbu-b);background:#fff;border-radius:6px;color:var(--mbu-t);font-weight:700;cursor:pointer}
-.mbu-quiz-nav button.cur{outline:2px solid var(--mbu-pl)}
-.mbu-quiz-nav button.good{background:var(--mbu-okbg);border-color:var(--mbu-ok)}
-.mbu-quiz-nav button.bad{background:var(--mbu-badbg);border-color:var(--mbu-bad)}
-.mbu-quiz-nav button.flag{box-shadow:inset 0 0 0 2px #d69e2e}
-.mbu-quiz-bottom{display:flex;justify-content:space-between;gap:10px;align-items:center;border-top:1px solid var(--mbu-b);padding-top:16px;margin-top:24px;flex-wrap:wrap}
-.mbu-quiz-bottom .right{display:flex;gap:8px;flex-wrap:wrap}
-.mbu-qtools{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-html[data-mbu-page="haz3"] #main>.card .act,
-html[data-mbu-page="hh"] #main>.card .act,
-html[data-mbu-page="bank3"] #main>.card .act{justify-content:flex-end!important}
-@media(max-width:650px){.mbu-quiz-bottom{align-items:stretch;flex-direction:column}.mbu-quiz-bottom .right{width:100%}.mbu-quiz-bottom button{flex:1}.mbu-quiz-stats{gap:10px}}
