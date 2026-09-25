@@ -174,3 +174,6 @@ if(!read('equipment/assets/hazards-quiz-engine.js').includes('function resetQues
 
 // Hazards Sets 1-2 share one standard runtime; page files contain data/config only.
 for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html']){const src=read(p);if(!src.includes('../assets/hazards-standard-engine.js'))fail(p+': shared standard Hazards engine missing');if(!src.includes('MBUHazardsStandardEngine.start('))fail(p+': shared standard Hazards engine not initialized');for(const legacy of ['function loadQuestion(){','function submitAnswer(){','function renderDashboard(){'])if(src.includes(legacy))fail(p+': duplicate page-local quiz runtime remains: '+legacy)}
+
+const sharedHazardsEngine=read('equipment/assets/hazards-quiz-engine.js');
+if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared Hazards engine has invalid default expression inside object destructuring');

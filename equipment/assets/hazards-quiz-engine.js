@@ -1,7 +1,7 @@
 (()=>{"use strict";
 const L="ABCDEF",esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
 function start(cfg){
- const {bank:BANK,images:IMGS||{},key:KEY,bankKey,badge,summaryTitle,resetMessage}=cfg,$=s=>document.querySelector(s);
+ const {bank:BANK,key:KEY,bankKey,badge,summaryTitle,resetMessage}=cfg,IMGS=cfg.images||{},$=s=>document.querySelector(s);
  const fresh=()=>({idx:0,ans:{},xo:{},prac:null,view:"quiz"});
  let S;try{const raw=localStorage.getItem(KEY),o=raw&&JSON.parse(raw);S=o&&typeof o.idx==="number"?o:fresh()}catch(e){S=fresh()}
  let view=S.view||"quiz",timer=null,cur={sel:[],done:false},lastSaved="";try{lastSaved=JSON.stringify(S)}catch(e){}
