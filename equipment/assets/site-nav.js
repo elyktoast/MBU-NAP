@@ -62,6 +62,23 @@
 
     const grid=dash.querySelector('#cards,#setGrid,.grid');
     if(!grid) return;
+
+    // Show answered / total on every bank dashboard (e.g. 13 / 350 completed).
+    try{
+      let done=0,total=0;
+      if(typeof SETS!=='undefined' && Array.isArray(SETS)){
+        total=SETS.reduce((n,s)=>n+(Array.isArray(s)?s.length:0),0);
+        if(typeof stats==='function') for(let i=0;i<SETS.length;i++) done+=(stats(i).done||0);
+      }
+      if(total){
+        let overall=hero?.querySelector('.mbu-bank-total');
+        if(!overall){
+          overall=document.createElement('div');overall.className='mini mbu-bank-total';
+          hero?.appendChild(overall);
+        }
+        if(overall) overall.textContent=done+' / '+total+' completed';
+      }
+    }catch(e){}
     grid.classList.add('grid');
 
     const cards=[...grid.children].filter(el=>el.matches('.card,.setcard,[class*="card"]'));
@@ -91,7 +108,7 @@
         const overall=document.createElement('div');overall.id='bank2Overall';overall.className='mini';hero.appendChild(overall);
       }
       const overall=hero?.querySelector('#bank2Overall');
-      if(overall)overall.textContent='Overall: '+totalDone+'/500 completed · '+(totalDone?Math.round(totalCorrect/totalDone*100):0)+'% score · '+totalMissed+' missed';
+      if(overall)overall.textContent=totalDone+' / '+SETS.reduce((n,s)=>n+s.length,0)+' completed';
       let all=grid.querySelector('.mbu-all-missed-card');
       if(!all){
         all=document.createElement('div');all.className='setcard mbu-all-missed-card';
