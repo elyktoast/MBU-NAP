@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Workstation Hazards Practice Set 3 | Equipment Exam 1</title>
 <link rel="stylesheet" href="../assets/site-nav.css?v=2">
-<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=2">
+<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=3">
 <style>
 :root{--paper:#edf2f7;--sheet:#fff;--ink:#2d3748;--mute:#718096;--rule:#cbd5e0;--o2:#22543d;--o2bg:#c6f6d5;--bad:#742a2a;--badbg:#fed7d7;--n2o:#1a365d;--sel:#ebf8ff;--air:#b7791f;--wagd:#7B3F8C}
 @media (prefers-color-scheme:dark){:root{--paper:#0F1719;--sheet:#172226;--ink:#E4ECEA;--mute:#9AAAB0;--rule:#2A3A3F;--o2:#4CC08A;--o2bg:#12301F;--bad:#F2877D;--badbg:#3A1714;--n2o:#7FA6EE;--sel:#1C2B45}}
@@ -59,7 +59,7 @@ ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 @media (max-width:600px){ul.concepts{columns:1}}
 </style></head>
 <body class="mbu-bank1-ui">
-<!-- MBU_BUILD:2026-09-24-h3-bank1-ui-v12-uniform-ui -->
+<!-- MBU_BUILD:2026-09-24-h3-bank1-ui-v13-counter-fix -->
 <div class="wrap">
 <header><h1>Workstation Hazards Practice Set 3 · 100 Questions</h1>
 <div class="stats" id="stats"></div>
@@ -107,8 +107,8 @@ function render(){clearTimeout(timer);stats();
  cur={sel:prev?prev.sel.slice():[],done:!!prev};
  const xo=S.xo[q.id]||[],answered=Object.values(S.ans),correct=answered.filter(x=>x.ok).length,miss=missed().length;
  const badge=c.mode==="prac"?"MISSED QUESTIONS REVIEW":"PRACTICE SET 3";
- let h=`<div class="card"><div class="qmeta"><span>${badge}</span><span class="mbu-qtools"><button class="ghost" id="qFlag" type="button">☆ Flag</button><button class="ghost" id="qReport" type="button">Report</button><button class="ghost" id="qNav" type="button">Navigator</button><button class="ghost mbu-return" id="qHome" type="button">← Hazards Home</button><b>Question ${Math.min(c.i+1,c.list.length)} of ${c.list.length}${c.mode==="main"?` · Q${q.num}`:""}</b></span></div>
- <div class="mbu-quiz-stats"><div>Completed: <strong>${answered.length}</strong>/${BANK.length}</div><div>Score: <strong>${answered.length?Math.round(100*correct/answered.length):0}</strong>%</div><div>Missed: <strong>${miss}</strong></div></div>
+ let h=`<div class="card"><div class="header"><div class="row"><span class="badge">${badge}</span><button class="btn out" id="qFlag" type="button">☆ Flag</button><button class="btn out" id="qReport" type="button">Report</button><button class="btn out" id="qNav" type="button">Navigator</button><button class="btn out mbu-return" id="qHome" type="button">← Hazards Home</button></div><div class="progress">Question ${c.i+1} of ${c.list.length}${c.mode==="main"?` · Q${q.num}`:` · Original Q${q.num}`}</div></div>
+ <div class="stats"><div>Completed: <strong>${answered.length}</strong>/${BANK.length}</div><div>Score: <strong>${answered.length?Math.round(100*correct/answered.length):0}</strong>%</div><div>Missed: <strong>${miss}</strong></div></div>
  ${quizNavHTML(c)}<div class="mbu-quiz-type">${q.type==="multi"?`Select ${q.n} Options`:"Single Best Answer"}</div>
  <p class="stem">${esc(q.q)}</p>`;
  if(q.img)h+=`<div class="fig"><img src="data:image/png;base64,${IMGS[q.img]}" alt="Figure for question ${q.num}"><small>Click image to enlarge</small></div>`;
@@ -145,8 +145,8 @@ function showResult(q,rec,restored){cur.done=true;
  document.querySelectorAll(".xo").forEach(b=>b.disabled=true);
  const src=`<p class="src">Source: ${q.ref.map(esc).join("; ")}</p>`;
  const g=$("#go");g.style.display="none";
- if(rec.ok){$("#fb").innerHTML=`<div class="fb good"><p><b>Correct.</b> ${restored?"":"Moving on…"}</p>${src}</div>`;g.textContent="Next";g.disabled=false;
-  if(!restored)timer=setTimeout(next,1300)}
+ if(rec.ok){$("#fb").innerHTML=`<div class="fb good"><p><b>Correct.</b> ${esc(q.exp)}</p>${src}</div>`;g.textContent="Next";g.disabled=false;
+  if(!restored)timer=setTimeout(next,650)}
  else{const ks=q.a.map(i=>L[i]);const keys=ks.length<3?ks.join(" and "):ks.slice(0,-1).join(", ")+", and "+ks[ks.length-1];
   $("#fb").innerHTML=`<div class="fb badf"><p><b>Incorrect.</b> Correct answer: ${keys}.</p><p>${esc(q.exp)}</p>${q.disc?`<p class="disc"><b>Lecture discrepancy:</b> ${esc(q.disc)}</p>`:""}${q.supp?`<p class="disc"><b>Beyond the slide:</b> ${esc(q.supp)}</p>`:""}${src}</div>`;g.textContent="Next";g.disabled=false;g.focus()}}
 function next(){clearTimeout(timer);if(view==="prac"&&S.prac){S.prac.i++}else{S.idx++}save();render();window.scrollTo(0,0)}
