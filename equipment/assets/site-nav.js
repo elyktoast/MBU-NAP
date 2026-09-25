@@ -60,6 +60,46 @@
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',repairBank3Sets,{once:true});
   else repairBank3Sets();
 
+  // Keep every Exam 1 dashboard header identical to Bank 1: title, then x/total completed.
+  // This is intentionally a one-time DOM normalization, not a MutationObserver.
+  const normalizeDashboardHeader = () => {
+    if(!['bank1','bank2','bank3','hazards'].includes(page)) return;
+    const root =
+      (page==='bank1' && document.getElementById('dashboard')) ||
+      (page==='bank2' && document.getElementById('dash')) ||
+      (page==='bank3' && (document.getElementById('dash') || document.getElementById('dashboard'))) ||
+      document.querySelector('section.panel');
+    if(!root) return;
+
+    const title=root.querySelector('h1') || root.querySelector('.title');
+    if(!title) return;
+
+    root.querySelectorAll('p,.sub').forEach(el=>{
+      if(/board-style questions|practice sets.*missed-question review/i.test(el.textContent||'')) el.remove();
+    });
+
+    let overall =
+      (page==='bank1' && document.getElementById('overall')) ||
+      (page==='bank2' && document.getElementById('bank2Overall')) ||
+      (page==='hazards' && document.getElementById('hazOverall'));
+    if(!overall){
+      overall=[...root.querySelectorAll('.mini,.stats,.sub,div,span')]
+        .find(el=>/^\s*\d+\s*\/\s*\d+\s+completed\s*$/i.test(el.textContent||''));
+    }
+
+    const header=title.closest('.hero,.top') || title.parentElement;
+    if(!header) return;
+    header.classList.add('mbu-dashboard-header');
+    const titleBox=title.parentElement===header ? document.createElement('div') : title.parentElement;
+    if(title.parentElement===header){
+      title.before(titleBox);
+      titleBox.appendChild(title);
+    }
+    titleBox.classList.add('mbu-dashboard-title');
+    if(overall && overall.parentElement!==titleBox) titleBox.appendChild(overall);
+    if(overall) overall.classList.add('mbu-dashboard-overall');
+  };
+
   const render = () => {
     if(document.querySelector('.mbu-global-nav')) return;
     const nav = document.createElement('nav');
@@ -106,6 +146,14 @@
     nav.append(brand,crumb,quick,pickerLabel,picker);
     document.body.prepend(nav);
   };
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded',()=>{render();document.documentElement.classList.remove('mbu-nav-loading')},{once:true});
-  else { render(); document.documentElement.classList.remove('mbu-nav-loading'); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded',()=>{
+    render(); normalizeDashboardHeader();
+    requestAnimationFrame(normalizeDashboardHeader);
+    document.documentElement.classList.remove('mbu-nav-loading');
+  },{once:true});
+  else {
+    render(); normalizeDashboardHeader();
+    requestAnimationFrame(normalizeDashboardHeader);
+    document.documentElement.classList.remove('mbu-nav-loading');
+  }
 })();
