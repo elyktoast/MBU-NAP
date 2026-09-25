@@ -125,6 +125,10 @@ function checkCanonicalNavigators(){
 checkCanonicalNavigators();
 for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
   const src=read(p);
+  if(!src.includes('.opt.ok,.opt.miss{border-color:var(--o2)!important'))fail(p+': keyed missed answers are not visibly green');
+}
+for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
+  const src=read(p);
   if(!src.includes("timer=setTimeout(()=>{timer=null;next()},350)"))fail(p+': Hazards timer is not self-clearing');
   if(!src.includes('function next(){clearTimeout(timer);timer=null;'))fail(p+': manual Next does not clear pending auto-advance');
 }
