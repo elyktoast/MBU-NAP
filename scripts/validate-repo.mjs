@@ -123,6 +123,12 @@ function checkCanonicalNavigators(){
   }
 }
 checkCanonicalNavigators();
+for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html']){
+ const src=read(p);
+ const start=src.indexOf('function loadQuestion()'),end=src.indexOf('function choose(',start);
+ if(start>=0&&end>start&&src.slice(start,end).includes('saveDB();'))fail(p+': Hazards render path still writes progress');
+ if(!src.includes('db.current=currentIndex;saveDB()'))fail(p+': Hazards navigation does not persist position explicitly');
+}
 for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
   const src=read(p);
   if(!src.includes('.opt.ok,.opt.miss{border-color:var(--o2)!important'))fail(p+': keyed missed answers are not visibly green');
