@@ -132,10 +132,10 @@
 .mbu-bank1-ui #mbuNavigator button{min-width:36px;min-height:34px;border:1px solid var(--b);background:#fff;border-radius:6px;color:var(--t)}
 .mbu-bank1-ui .mbu-quiz-nav .cur,
 .mbu-bank1-ui #mbuNavigator .cur{outline:2px solid var(--p);font-weight:800}
-.mbu-bank1-ui .mbu-quiz-nav .good,
-.mbu-bank1-ui #mbuNavigator .ok{background:#c6f6d5}
-.mbu-bank1-ui .mbu-quiz-nav .bad,
-.mbu-bank1-ui #mbuNavigator .no{background:#fed7d7}
+.mbu-bank1-ui .mbu-quiz-nav button.good,
+.mbu-bank1-ui #mbuNavigator button.ok{background:#c6f6d5!important;border-color:#68d391!important;color:#22543d!important;font-weight:700!important}
+.mbu-bank1-ui .mbu-quiz-nav button.bad,
+.mbu-bank1-ui #mbuNavigator button.no{background:#fed7d7!important;border-color:#fc8181!important;color:#742a2a!important;font-weight:700!important}
 .mbu-bank1-ui .mbu-quiz-nav .flag,
 .mbu-bank1-ui #mbuNavigator .flag{box-shadow:inset 0 0 0 2px #d69e2e}
 @media(max-width:650px){
