@@ -96,25 +96,29 @@
     const header=title.closest('.hero,.top,header') || title.parentElement;
     if(!header) return;
     header.classList.add('mbu-dashboard-header');
-    const titleBox=title.parentElement===header ? document.createElement('div') : title.parentElement;
-    if(title.parentElement===header){
-      title.before(titleBox);
+
+    // Always create our own title stack. Legacy Bank 3 wraps its title in a
+    // flex child, so reusing title.parentElement leaves the counter beside it.
+    let titleBox=header.querySelector(':scope > .mbu-dashboard-title');
+    if(!titleBox){
+      titleBox=document.createElement('div');
+      titleBox.className='mbu-dashboard-title';
+      const oldParent=title.parentElement;
+      header.insertBefore(titleBox,header.firstChild);
       titleBox.appendChild(title);
+      if(oldParent && oldParent!==header && oldParent!==titleBox && !oldParent.children.length && !(oldParent.textContent||'').trim()) oldParent.remove();
     }
-    titleBox.classList.add('mbu-dashboard-title');
+
     if(page==='bank3'){
-      // Bank 3 uses a legacy <header> whose existing .stats element is laid out
-      // as a right-hand flex child. Rebuild only that header so the completion
-      // count is guaranteed to live immediately below the title.
-      const existing=[...header.querySelectorAll('.stats,.mini,.sub,div,span')]
-        .find(el=>/^\s*\d+\s*\/\s*\d+\s+completed\s*$/i.test(el.textContent||''));
-      if(existing && existing!==overall) overall=existing;
+      const candidates=[...header.querySelectorAll('.stats,.mini,.sub,div,span')]
+        .filter(el=>el!==titleBox && /^\s*\d+\s*\/\s*\d+\s+completed\s*$/i.test(el.textContent||''));
+      if(candidates.length) overall=candidates[0];
       if(!overall){
         overall=document.createElement('div');
         overall.id='bank3Overall';
         overall.textContent='0 / 500 completed';
       }
-      [...header.children].forEach(child=>{ if(child!==titleBox && child!==overall) child.remove(); });
+      candidates.slice(1).forEach(el=>el.remove());
     }
     if(overall && overall.parentElement!==titleBox) titleBox.appendChild(overall);
     if(overall) overall.classList.add('mbu-dashboard-overall');
