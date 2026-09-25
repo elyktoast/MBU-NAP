@@ -67,9 +67,9 @@ ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 @media (max-width:600px){ul.concepts{columns:1}}
 #go{margin-left:auto;order:99}
 </style>
-<!-- MBU_BUILD:2026-09-24-bank3-uniform-ui-v2 -->
+<!-- MBU_BUILD:2026-09-24-bank3-uniform-ui-v3 -->
 <link rel="stylesheet" href="../assets/site-nav.css?v=2">
-<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=1">
+<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=2">
 <script defer src="../assets/site-nav.js?v=4" data-page="bank3"></script>
 </head>
 <body class="mbu-bank1-ui">
@@ -118,9 +118,14 @@ function allMissedCount(){let m=0;EXLIST.forEach(n=>m+=examStats(n).missed.lengt
 // ----- header
 function header(title,right){$("#title").textContent=title;$("#hbtns").innerHTML=right||"";}
 function setBar(p){$("#prog").style.width=(100*p)+"%"}
+function questionChrome(active){
+ const h=document.querySelector(".wrap>header"),b=document.querySelector("#barw");
+ if(h)h.classList.toggle("hidden",!!active);
+ if(b)b.classList.toggle("hidden",!!active);
+}
 
 // ----- dashboard
-function dash(){clearTimeout(timer);window.MBUCalculator?.hide();V={mode:"dash"};
+function dash(){clearTimeout(timer);window.MBUCalculator?.hide();questionChrome(false);V={mode:"dash"};
  let A=0,C=0;EXLIST.forEach(n=>{const s=examStats(n);A+=s.a;C+=s.c});
  const pool=missedPool();const cleared=Object.keys(S.cleared).filter(k=>S.cleared[k]).length;
  header("Quiz Bank 3 Dashboard",`<button class="danger" id="resetAll">Reset everything</button>`);
@@ -167,7 +172,7 @@ function topbar(){const back=`<button class="ghost mbu-return" id="bDash">← Qu
  $("#bDash").onclick=dash}
 function openExam(n){V={mode:"exam",n};const e=S.ex[n];if(e.idx>=EXM[n].ids.length)return examSummary(n);renderQ()}
 function openT6(){V={mode:"t6"};if(S.t6.i>=S.t6.list.length)return t6Summary();renderQ()}
-function renderQ(){clearTimeout(timer);topbar();const c=ctx();
+function renderQ(){clearTimeout(timer);topbar();questionChrome(true);const c=ctx();
  if(c.i>=c.list.length){return V.mode==="t6"?t6Summary():examSummary(V.n)}
  const q=byId[c.list[c.i]],prev=c.store[q.id];cur={sel:prev?prev.sel.slice():[],done:!!prev};
  const xo=(c.exam?c.exam.xo[q.id]:S.t6.xo&&S.t6.xo[q.id])||[];
@@ -211,18 +216,18 @@ function next(){clearTimeout(timer);if(V.mode==="t6")S.t6.i++;else S.ex[V.n].idx
 // ----- summaries and review
 function lecTable(ids,store){const by={};ids.forEach(id=>{const q=byId[id];by[q.lec]=by[q.lec]||{t:0,a:0,c:0};by[q.lec].t++;const r=store[id];if(r){by[q.lec].a++;if(r.ok)by[q.lec].c++}});
  return `<table><tr><th>Lecture</th><th>Questions</th><th>Correct</th><th>%</th></tr>${Object.entries(by).map(([k,o])=>`<tr><td>${k}</td><td>${o.t}</td><td>${o.c}</td><td>${o.a?Math.round(100*o.c/o.a):0}%</td></tr>`).join("")}</table>`}
-function examSummary(n){clearTimeout(timer);window.MBUCalculator?.hide();V={mode:"exam",n};topbar();const s=examStats(n);const e=S.ex[n];
+function examSummary(n){clearTimeout(timer);window.MBUCalculator?.hide();questionChrome(false);V={mode:"exam",n};topbar();const s=examStats(n);const e=S.ex[n];
  let h=`<div class="card"><h2 class="t">${NAMES[n]} complete</h2><p>Score: <b>${s.c} / ${s.a}</b> (${s.a?Math.round(100*s.c/s.a):0}%)</p>${lecTable(EXM[n].ids,e.ans)}`;
  if(s.missed.length)h+=`<h2 class="t" style="margin-top:16px">Missed concepts (${s.missed.length})</h2><ul class="concepts">${s.missed.map(id=>`<li>${esc(byId[id].concept)} <span class="pill">${byId[id].lec}</span></li>`).join("")}</ul>`;
  h+=`<div class="act">${s.missed.length?`<button class="primary" id="bR">Review missed</button>`:""}<button class="ghost mbu-return" id="bD">← Quiz Bank 3 Home</button></div></div>`;
  $("#main").innerHTML=h;if(s.missed.length)$("#bR").onclick=()=>review(n);$("#bD").onclick=dash}
-function t6Summary(){clearTimeout(timer);window.MBUCalculator?.hide();V={mode:"t6"};const t=S.t6;const c=Object.values(t.ans).filter(x=>x.ok).length;
+function t6Summary(){clearTimeout(timer);window.MBUCalculator?.hide();questionChrome(false);V={mode:"t6"};const t=S.t6;const c=Object.values(t.ans).filter(x=>x.ok).length;
  if(!t.logged){S.t6hist.push({date:new Date().toISOString(),n:t.list.length,cleared:c});t.logged=true;save()}
  topbar();const pool=missedPool();
  $("#main").innerHTML=`<div class="card"><h2 class="t">${T6NAME}: round complete</h2><p><b>${c} / ${t.list.length}</b> cleared this round. <b>${pool.length}</b> questions remain in the missed pool.</p>${lecTable(t.list,t.ans)}
  <div class="act">${pool.length?`<button class="primary" id="bN">Start next round (${pool.length})</button>`:"<p>The missed pool is empty.</p>"}<button class="ghost mbu-return" id="bD">← Quiz Bank 3 Home</button></div></div>`;
  if(pool.length)$("#bN").onclick=()=>{S.t6={list:missedPool(),i:0,ans:{}};save();openT6()};$("#bD").onclick=dash}
-function review(n){clearTimeout(timer);window.MBUCalculator?.hide();const isT6=n===6;let items;
+function review(n){clearTimeout(timer);window.MBUCalculator?.hide();questionChrome(false);const isT6=n===6;let items;
  if(isT6){items=missedPool().map(id=>{const q=byId[id];return{q,r:S.ex[q.setn].ans[id]}})}
  else{items=examStats(n).missed.map(id=>({q:byId[id],r:S.ex[n].ans[id]}))}
  header(isT6?`${T6NAME}: missed pool`:`${NAMES[n]} · Missed questions`,`<button class="ghost mbu-return" id="bDash">← Quiz Bank 3 Home</button>`);$("#bDash").onclick=dash;
