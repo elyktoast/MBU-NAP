@@ -114,6 +114,9 @@ checkStudioIndexes();
  const src=read('equipment/exam-1/quiz-bank-2.html');
  if(!src.includes("autoTimer=setTimeout(()=>{autoTimer=null;nextQuestion()},350)"))fail('Bank 2: auto-advance timer is not self-clearing');
  if(!src.includes("function nextQuestion(){clearTimeout(autoTimer);autoTimer=null;"))fail('Bank 2: manual Next does not cancel pending auto-advance');
+ if(!src.includes('function persistPosition()'))fail('Bank 2: navigation position is not persisted explicitly');
+ if(!src.includes('persistPosition();showQ()'))fail('Bank 2: navigation does not persist position before rendering');
+ const renderStart=src.indexOf('function showQ()'),renderEnd=src.indexOf('function choose(',renderStart);if(renderStart>=0&&renderEnd>renderStart&&(src.slice(renderStart,renderEnd).includes('save();')||src.slice(renderStart,renderEnd).includes('saveDB();')))fail('Bank 2: render path writes progress');
 }
 for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html']){
   const src=read(p);
