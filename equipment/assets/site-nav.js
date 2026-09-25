@@ -5,9 +5,6 @@
   const page = script.dataset.page;
   document.documentElement.dataset.mbuPage = page || '';
   const quizPages = new Set(['bank1','bank2','bank3','hazards','haz1','haz2','haz3','hh']);
-  if(quizPages.has(page) && !document.querySelector('link[data-mbu-quiz-ui]')){
-    const ui=document.createElement('link');ui.rel='stylesheet';ui.href=new URL('quiz-ui.css?v=2',script.src);ui.dataset.mbuQuizUi='1';document.head.appendChild(ui);
-  }
   // Bank 1 is the canonical quiz/dashboard UI. Apply that same shell to every
   // current bank/challenge page and any future page registered as a quiz page.
   if(quizPages.has(page) && !document.querySelector('link[href*="bank1-quiz-ui.css"]')){
@@ -34,48 +31,34 @@
     {id:'haz3',label:'Hazards Practice Set 3',short:'Hazards 3',url:new URL('hazards-bank-3.html',exam)},
     {id:'hh',label:'Hazards Challenge Set',short:'Challenge',url:new URL('hazards-harder.html',exam)}
   ];
-  // Keep bank totals visible and repair Bank 3 practice-set mapping without
-  // changing the quiz engines themselves.
-  const syncBankDashboard = () => {
+  // Bank 3 historically stored practice-set membership separately from BANK.
+  // Repair it once at startup if the embedded EXM map is empty.
+  const repairBank3Sets = () => {
+    if(page!=='bank3' || typeof BANK==='undefined' || typeof EXM==='undefined') return;
     try {
-      if(page==='bank1' && typeof statsFor==='function' && typeof SETS!=='undefined'){
-        let done=0,total=0;
-        for(let s=1;s<=5;s++){ done+=(statsFor(s).done||0); total+=(SETS[s]?.length||0); }
-        const dash=document.querySelector('#dashboard');
-        if(dash && total){
-          let out=dash.querySelector('.mbu-bank-total');
-          if(!out){ out=document.createElement('div'); out.className='mini mbu-bank-total'; const hero=dash.querySelector('.hero'); (hero||dash).appendChild(out); }
-          out.textContent=done+' / '+total+' completed';
-        }
+      const current=[1,2,3,4,5].reduce((n,set)=>n+(EXM[set]?.ids?.length||0),0);
+      if(current || !Array.isArray(BANK) || !BANK.length) return;
+      const usable=BANK.filter(q=>Number(q.setn)!==7);
+      const groups=new Map();
+      usable.forEach(q=>{
+        const set=Number(q.setn);
+        if(!groups.has(set)) groups.set(set,[]);
+        groups.get(set).push(q.id);
+      });
+      const nonempty=[...groups.entries()].filter(([,ids])=>ids.length).sort((a,b)=>a[0]-b[0]);
+      if(nonempty.length>=5){
+        for(let set=1;set<=5;set++) EXM[set]={n:set,ids:[...nonempty[set-1][1]]};
+      } else if(usable.length) {
+        const size=Math.ceil(usable.length/5);
+        for(let set=1;set<=5;set++) EXM[set]={n:set,ids:usable.slice((set-1)*size,set*size).map(q=>q.id)};
       }
-      if(page==='bank3' && typeof BANK!=='undefined' && typeof EXM!=='undefined'){
-        const current=[1,2,3,4,5].reduce((n,s)=>n+(EXM[s]?.ids?.length||0),0);
-        if(current===0 && Array.isArray(BANK) && BANK.length){
-          const usable=BANK.filter(q=>Number(q.setn)!==7);
-          const groups=new Map();
-          usable.forEach(q=>{const k=Number(q.setn);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(q.id);});
-          const nonempty=[...groups.entries()].filter(([,ids])=>ids.length).sort((a,b)=>a[0]-b[0]);
-          if(nonempty.length>=5){
-            for(let s=1;s<=5;s++) EXM[s]={n:s,ids:[...nonempty[s-1][1]]};
-          }else if(usable.length){
-            const size=Math.ceil(usable.length/5);
-            for(let s=1;s<=5;s++) EXM[s]={n:s,ids:usable.slice((s-1)*size,s*size).map(q=>q.id)};
-          }
-          if(typeof dash==='function') dash();
-        }
-      }
-    } catch(e) { console.warn('MBU bank dashboard sync skipped:',e); }
+      if(typeof dash==='function') dash();
+    } catch(error) {
+      console.warn('Bank 3 practice-set repair skipped:',error);
+    }
   };
-  const scheduleBankSync = () => {
-    if(!['bank1','bank3'].includes(page)) return;
-    const run=()=>syncBankDashboard();
-    if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',run,{once:true}); else run();
-    let queued=false;
-    const obs=new MutationObserver(()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;syncBankDashboard();});});
-    const start=()=>{const target=document.querySelector('#dashboard,#main');if(target)obs.observe(target,{childList:true,subtree:true});};
-    if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',start,{once:true}); else start();
-  };
-  scheduleBankSync();
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',repairBank3Sets,{once:true});
+  else repairBank3Sets();
 
   const render = () => {
     if(document.querySelector('.mbu-global-nav')) return;
