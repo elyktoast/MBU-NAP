@@ -9,6 +9,7 @@
   line-height:1.5;padding:20px;
 }
 .mbu-bank1-ui .wrap{max-width:1040px!important;margin:auto!important;padding:0!important}
+.mbu-bank1-ui .hidden{display:none!important}
 .mbu-bank1-ui .panel,
 .mbu-bank1-ui .quiz,
 .mbu-bank1-ui main>.card,
