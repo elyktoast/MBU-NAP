@@ -2,7 +2,7 @@
   const STORE='mbu_exam1_studio_v1';
   let cache=null;
 
-  function empty(){return {ans:{},flags:{},reports:[]}}
+  function empty(){return {ans:{},flags:{},crosses:{},reports:[]}}
 
   function normalizeBank(bank){
     const s=String(bank ?? '').trim();
@@ -26,10 +26,10 @@
     let d;
     try{d=JSON.parse(localStorage.getItem(STORE)||'{}')}catch(e){d={}}
     d&&typeof d==='object'||(d={});
-    d.ans=d.ans||{};d.flags=d.flags||{};d.reports=Array.isArray(d.reports)?d.reports:[];
+    d.ans=d.ans||{};d.flags=d.flags||{};d.crosses=d.crosses||{};d.reports=Array.isArray(d.reports)?d.reports:[];
 
     let changed=false;
-    for(const field of ['ans','flags']){
+    for(const field of ['ans','flags','crosses']){
       const src=d[field],next={};
       for(const [k,v] of Object.entries(src)){
         const nk=normalizeKey(k);
