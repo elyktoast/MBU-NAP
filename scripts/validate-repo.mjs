@@ -172,7 +172,11 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 {
  const studio=read('equipment/exam-1/studio.html'),sync=read('equipment/assets/studio-sync.js');
  if(!sync.includes('if(q&&q.uid)return normalizeKey(q.uid)'))fail('Studio sync: answer keys do not prefer canonical question UIDs');
- if(!studio.includes('DB.ans[q.uid].selected=[...sel]'))fail('Studio: graded selections are not persisted');
+ if(!studio.includes('setSessionAnswer(q.uid,{ok,selected,at:Date.now()})'))fail('Studio: graded selections are not persisted in session state');
+ if(!studio.includes('function sessionAnswer(uid)'))fail('Studio: session-local answer state is missing');
+ if(!studio.includes("answers:{}"))fail('Studio: new sessions do not initialize isolated answer state');
+ if(studio.includes("session.map(q=>DB.ans[q.uid]).filter(Boolean)"))fail('Studio: session stats still read cumulative answer history');
+ if(!studio.includes('saved=sessionAnswer(q.uid)'))fail('Studio: question renderer still reads cumulative history instead of session state');
  if(!studio.includes('saved&&Array.isArray(saved.selected)'))fail('Studio: saved selections are not restored on navigation');
  if(!studio.includes('graded=!!(saved&&savedSel)'))fail('Studio: revisited answered questions are not restored as graded');
  if(!studio.includes("if(q.ans.includes(i))b.classList.add('correct');else if(sel.has(i))b.classList.add('incorrect')"))fail('Studio: revisited answers do not restore correct/incorrect styling');
