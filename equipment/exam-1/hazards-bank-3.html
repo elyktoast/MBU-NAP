@@ -113,7 +113,7 @@ function render(){clearTimeout(timer);timer=null;stats();
  let h=`<div class="panel"><div class="header"><div class="row"><span class="badge">${badge}</span><button class="btn out" id="qFlag" type="button">☆ Flag</button><button class="btn out" id="qReport" type="button">Report</button><button class="btn out" id="qNav" type="button">Navigator</button><button class="btn out mbu-return" id="qHome" type="button">← Hazards Home</button></div><div class="progress">${c.mode==="main"?`Question ${c.i+1} of ${BANK.length} · Q${q.num}`:`Question ${c.i+1} of ${c.list.length} · Original Q${q.num}`}</div></div>
  <div class="stats"><div>Completed: <strong>${answered.length}</strong>/${BANK.length}</div><div>Score: <strong>${answered.length?Math.round(100*correct/answered.length):0}</strong>%</div><div>Missed: <strong>${miss}</strong></div></div>
  ${quizNavHTML(c)}<div class="type">${q.type==="multi"?`Select ${q.n} Options`:"Single Best Answer"}</div>
- <p class="stem">${esc(q.q)}</p>`;
+ <p class="stem">${esc(q.q)}</p><div class="mbu-crossout-hint">Tip: Right-click an answer to cross it out.</div>`;
  if(q.img)h+=`<div class="fig"><img src="data:image/png;base64,${IMGS[q.img]}" alt="Figure for question ${q.num}"><small>Click image to enlarge</small></div>`;
  h+=`<div id="choices">`;
  q.c.forEach((t,i)=>{h+=`<div class="ch"><button class="opt${cur.sel.includes(i)?" sel":""}${xo.includes(i)?" x":""}" data-i="${i}"><span class="L">${L[i]}.</span><span class="t">${esc(t)}</span></button><button class="xo" data-x="${i}" aria-pressed="${xo.includes(i)}" title="Cross out (Shift+${L[i]})" aria-label="Cross out ${L[i]}">✕</button></div>`});
