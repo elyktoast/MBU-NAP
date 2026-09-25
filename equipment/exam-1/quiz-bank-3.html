@@ -69,7 +69,7 @@ ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 #go{margin-left:auto;order:99}
 
 </style>
-<!-- MBU_BUILD:2026-09-25-bank3-remove-dashboard-overall-bar-v9 -->
+<!-- MBU_BUILD:2026-09-25-bank3-dashboard-load-fix-v10 -->
 <link rel="stylesheet" href="../assets/site-nav.css?v=18">
 <link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=18">
 <script defer src="../assets/site-nav.js?v=18" data-page="bank3"></script>
@@ -134,7 +134,7 @@ function header(title,extra){
 }
 
 function setDashboardTitle(title){$("#title").textContent=title;}
-function setBar(p){$("#prog").style.width=(100*p)+"%"}
+function setBar(p){const bar=$("#prog");if(bar)bar.style.width=(100*p)+"%"}
 function questionChrome(active){
  const h=document.querySelector("#dashboard .hero"),b=document.querySelector("#barw");
  if(h)h.classList.toggle("hidden",!!active);
