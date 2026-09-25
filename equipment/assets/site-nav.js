@@ -86,6 +86,12 @@
       overall=[...root.querySelectorAll('.mini,.stats,.sub,div,span')]
         .find(el=>/^\s*\d+\s*\/\s*\d+\s+completed\s*$/i.test(el.textContent||''));
     }
+    if(page==='bank3' && !overall){
+      overall=document.createElement('div');
+      overall.id='bank3Overall';
+      overall.className='mini';
+      overall.textContent='0 / 500 completed';
+    }
 
     const header=title.closest('.hero,.top') || title.parentElement;
     if(!header) return;
