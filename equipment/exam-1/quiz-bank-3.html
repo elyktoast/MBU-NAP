@@ -69,8 +69,8 @@ ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 </style>
 <!-- MBU_BUILD:2026-09-24-bank3-bank1-match-v4 -->
 <link rel="stylesheet" href="../assets/site-nav.css?v=2">
-<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=4">
-<script defer src="../assets/site-nav.js?v=4" data-page="bank3"></script>
+<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=6">
+<script defer src="../assets/site-nav.js?v=6" data-page="bank3"></script>
 </head>
 <body class="mbu-bank1-ui">
 <div class="wrap">
@@ -85,8 +85,8 @@ const IMGS={"flowmeter": "iVBORw0KGgoAAAANSUhEUgAAAzQAAAH+CAIAAADF/NzbAAEAAElEQV
 const KEY="srna_equipment_dashboard_v1";
 const L="ABCDEF";
 const byId=Object.fromEntries(BANK.map(q=>[q.id,q]));
-const EXLIST=[1,2,3,4,5,7];const NAMES={1:"Practice Set 1",2:"Practice Set 2",3:"Practice Set 3",4:"Practice Set 4",5:"Practice Set 5",7:"Challenge Set"};
-const EXM=Object.fromEntries(EXLIST.map(n=>[n,{n,ids:BANK.filter(q=>q.setn===n).map(q=>q.id)}]));const TOTAL=BANK.length;const T6NAME="Missed Questions Review";
+const EXLIST=[1,2,3,4,5];const NAMES={1:"Practice Set 1",2:"Practice Set 2",3:"Practice Set 3",4:"Practice Set 4",5:"Practice Set 5"};
+const EXM=Object.fromEntries(EXLIST.map(n=>[n,{n,ids:BANK.filter(q=>q.setn===n).map(q=>q.id)}]));const TOTAL=EXLIST.reduce((n,s)=>n+EXM[s].ids.length,0);const T6NAME="Missed Questions Review";
 const $=s=>document.querySelector(s);
 function esc(s){return String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]))}
 function same(a,b){return a.length===b.length&&[...a].sort().join()===[...b].sort().join()}
@@ -126,40 +126,21 @@ function questionChrome(active){
 
 // ----- dashboard
 function dash(){clearTimeout(timer);window.MBUCalculator?.hide();questionChrome(false);V={mode:"dash"};
- let A=0,C=0;EXLIST.forEach(n=>{const s=examStats(n);A+=s.a;C+=s.c});
- const pool=missedPool();const cleared=Object.keys(S.cleared).filter(k=>S.cleared[k]).length;
- header("Quiz Bank 3 Dashboard",`<button class="danger" id="resetAll">Reset everything</button>`);
- $("#stats").innerHTML=`Answered <b>${A}</b> / ${TOTAL} · Correct <b>${C}</b>${A?` (${Math.round(100*C/A)}%)`:""}`;setBar(A/TOTAL);
- const lec={};BANK.forEach(q=>{const r=S.ex[q.setn].ans[q.id];if(!r)return;lec[q.lec]=lec[q.lec]||{a:0,c:0};lec[q.lec].a++;if(r.ok)lec[q.lec].c++});
- let h=`<div class="overall"><div><b>${A}</b><span>questions answered</span></div><div><b>${A?Math.round(100*C/A)+"%":"–"}</b><span>overall correct</span></div><div><b>${pool.length}</b><span>in missed review</span></div><div><b>${cleared}</b><span>cleared in missed review</span></div></div>`;
- h+=`<div class="grid">`;
- const cols={1:"var(--o2)",2:"var(--n2o)",3:"var(--air)",4:"var(--wagd)",5:"var(--o2)",7:"var(--bad)"};
- for(const n of EXLIST){const s=examStats(n);const done=s.a>=s.t;
-  h+=`<section class="ex" style="--c:${cols[n]}"><h2>${NAMES[n]}${n===7?' <span class="pill harder">HARDER</span>':""}</h2>
-  <div class="row"><span>Progress</span><b>${s.a} / ${s.t}</b></div><div class="mini"><i style="width:${100*s.a/s.t}%"></i></div>
-  <div class="row"><span>Score</span><b>${s.a?Math.round(100*s.c/s.a)+"%":"–"}</b></div>
-  <div class="row"><span>Missed</span><b>${s.missed.length}</b></div>
-  <div class="btns"><button class="primary" data-go="${n}">${s.a===0?"Start":done?"Results":"Continue"}</button>
-  <button class="ghost" data-rev="${n}" ${s.missed.length?"":"disabled"}>Missed (${s.missed.length})</button>
-  <button class="danger" data-reset="${n}">Reset</button></div></section>`}
- const t6=S.t6;const inRound=t6?t6.list.length:0;const t6done=t6?Object.keys(t6.ans).length:0;
- h+=`<section class="ex t6"><h2>${T6NAME}</h2>
-  <div class="row"><span>Missed pool (all practice sets)</span><b>${pool.length}</b></div>
-  <div class="row"><span>Current round</span><b>${t6?`${t6done} / ${inRound}`:"not started"}</b></div>
-  <div class="row"><span>Rounds completed</span><b>${S.t6hist.length}</b></div>
-  <div class="btns"><button class="primary" id="t6go" ${(!t6&&!pool.length)?"disabled":""}>${t6&&t6done<inRound?"Continue round":"Start new round"}</button>
-  <button class="ghost" id="t6list" ${pool.length?"":"disabled"}>View pool</button></div></section>`;
- h+=`</div>`;
- if(Object.keys(lec).length){h+=`<div class="card" style="margin-top:16px"><h2 class="t">By lecture, all practice sets</h2><table><tr><th>Lecture</th><th>Answered</th><th>Correct</th><th>%</th></tr>${Object.entries(lec).map(([k,o])=>`<tr><td>${k}</td><td>${o.a}</td><td>${o.c}</td><td>${Math.round(100*o.c/o.a)}%</td></tr>`).join("")}</table>
- <p class="hint">Missed Questions Review draws questions missed in Practice Sets 1–5 and the Challenge Set. Repeated questions count once. A correct review answer clears a question until you miss it again in its original set.</p></div>`}
+ let A=0,C=0,M=0;EXLIST.forEach(n=>{const s=examStats(n);A+=s.a;C+=s.c;M+=s.missed.length});
+ const pool=missedPool();
+ header("Quiz Bank 3 Dashboard","");
+ $("#stats").textContent=A+" / "+TOTAL+" completed";setBar(TOTAL?A/TOTAL:0);
+ let h='<div class="grid">';
+ for(const n of EXLIST){const s=examStats(n),done=s.a>=s.t;
+  h+=`<section class="card setcard"><h3>Practice Set ${n}</h3><div class="mini">${s.t} questions</div><div class="bar"><span style="width:${s.t?100*s.a/s.t:0}%"></span></div><div class="mini">${s.a}/${s.t} completed · ${s.a?Math.round(100*s.c/s.a):0}% score · ${s.missed.length} missed</div><div class="actions"><button class="btn primary" data-go="${n}">${s.a?"Continue":"Start"} Practice Set ${n}</button><button class="btn" data-rev="${n}" ${s.missed.length?"":"disabled"}>Review Missed</button></div></section>`;
+ }
+ h+=`<section class="card setcard mbu-all-missed-card"><h3>Missed Questions Review</h3><div class="mini">Automatically built from every question missed in Practice Sets 1–5.</div><div class="bar"><span style="width:0%"></span></div><div class="mini">${pool.length} question${pool.length===1?"":"s"} currently in the missed bank</div><div class="actions"><button class="btn bad" id="t6go" ${pool.length||S.t6?"":"disabled"}>Review Missed Questions</button></div></section></div>`;
  $("#main").innerHTML=h;
  document.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>openExam(+b.dataset.go));
  document.querySelectorAll("[data-rev]").forEach(b=>b.onclick=()=>review(+b.dataset.rev));
- document.querySelectorAll("[data-reset]").forEach(b=>b.onclick=()=>{const n=+b.dataset.reset;if(confirm(`Reset ${NAMES[n]}? This clears its answers, score, and missed list.`)){S.ex[n]=freshExam();save();dash()}});
- $("#resetAll").onclick=()=>{if(confirm("Reset all practice sets, the Challenge Set, and Missed Questions Review? This can't be undone.")){S=fresh();save();dash()}};
  $("#t6go").onclick=()=>{if(!S.t6||Object.keys(S.t6.ans).length>=S.t6.list.length){const p=missedPool();if(!p.length){alert("No missed questions in the pool.");return}S.t6={list:p,i:0,ans:{}}}save();openT6()};
- $("#t6list").onclick=()=>review(6);
- window.scrollTo(0,0)}
+ window.scrollTo(0,0)
+}
 
 // ----- question runner (exam or test 6)
 function ctx(){if(V.mode==="t6"){const t=S.t6;return{list:t.list,i:t.i,store:t.ans,label:"MISSED QUESTIONS REVIEW",exam:null}}
