@@ -35,99 +35,85 @@
   ];
   const unifyBankDashboard = () => {
     if(!['bank1','bank2','bank3'].includes(page)) return;
-    const dash=document.querySelector('#dashboard,#dash,[data-dashboard]');
-    if(!dash) return;
+    const n=Number(page.replace('bank',''));
+    const heading=[...document.querySelectorAll('h1,.title')].find(x=>/quiz bank|dashboard/i.test(x.textContent||''));
+    const dash=document.querySelector('#dashboard,#dash,[data-dashboard]') || heading?.closest('section,.panel,main,div');
+    if(!dash) return false;
 
-    // Preserve each bank's own question engine; normalize only the dashboard shell/actions.
     let hero=dash.querySelector('.hero');
-    if(!hero){
-      const heading=dash.querySelector('h1,.title');
-      const sub=dash.querySelector('.sub,p');
-      if(heading){
-        hero=document.createElement('div');hero.className='hero';
-        const left=document.createElement('div');
-        heading.parentNode?.insertBefore(hero,heading);
-        left.appendChild(heading);
-        if(sub && sub!==heading && !hero.contains(sub)) left.appendChild(sub);
-        hero.appendChild(left);
-      }
+    if(!hero && heading){
+      hero=document.createElement('div');hero.className='hero';
+      const left=document.createElement('div');
+      heading.parentNode.insertBefore(hero,heading);left.appendChild(heading);
+      const sub=[...dash.querySelectorAll('p,.sub')].find(x=>x!==heading);
+      if(sub)left.appendChild(sub);hero.appendChild(left);
     }
     if(hero){
-      const h=hero.querySelector('h1,.title');
-      if(h){h.classList.remove('title');h.textContent='Quiz Bank '+page.replace('bank','')+' Dashboard';}
-      let p=hero.querySelector('p,.sub');
-      if(!p){p=document.createElement('p');hero.firstElementChild?.appendChild(p);}
-      if(p){p.classList.remove('sub');p.textContent='500 board-style questions across 5 practice sets, with saved missed-question review.';}
+      const h=hero.querySelector('h1,.title');if(h){h.classList.remove('title');h.textContent='Quiz Bank '+n+' Dashboard';}
+      let p=hero.querySelector('p,.sub');if(!p){p=document.createElement('p');hero.firstElementChild?.appendChild(p);}
+      if(p){p.classList.remove('sub');p.textContent='Board-style questions across practice sets, with saved missed-question review.';}
     }
 
-    const grid=dash.querySelector('#cards,#setGrid,.grid');
-    if(!grid) return;
-
-    // Show answered / total on every bank dashboard (e.g. 13 / 350 completed).
-    try{
-      let done=0,total=0;
-      if(typeof SETS!=='undefined' && Array.isArray(SETS)){
-        total=SETS.reduce((n,s)=>n+(Array.isArray(s)?s.length:0),0);
-        if(typeof stats==='function') for(let i=0;i<SETS.length;i++) done+=(stats(i).done||0);
-      }
-      if(total){
-        let overall=hero?.querySelector('.mbu-bank-total');
-        if(!overall){
-          overall=document.createElement('div');overall.className='mini mbu-bank-total';
-          hero?.appendChild(overall);
-        }
-        if(overall) overall.textContent=done+' / '+total+' completed';
-      }
-    }catch(e){}
+    const grid=dash.querySelector('#cards,#setGrid,.grid') || [...dash.querySelectorAll('div')].find(x=>x.querySelectorAll(':scope > .card,:scope > .setcard').length>=2);
+    if(!grid) return false;
     grid.classList.add('grid');
 
     const cards=[...grid.children].filter(el=>el.matches('.card,.setcard,[class*="card"]'));
-    cards.slice(0,5).forEach((card,i)=>{
+    const practice=cards.filter(el=>/practice set/i.test(el.textContent||'')).slice(0,5);
+    practice.forEach((card,i)=>{
       card.classList.add('setcard');
-      const h=card.querySelector('h3,h2');
-      if(h)h.textContent='Practice Set '+(i+1);
+      const h=card.querySelector('h3,h2');if(h)h.textContent='Practice Set '+(i+1);
       const buttons=[...card.querySelectorAll('button')];
-      const primary=buttons.find(b=>/start|continue|review answers/i.test(b.textContent));
-      if(primary){
-        primary.classList.add('btn','primary');
-        const txt=primary.textContent.toLowerCase();
-        primary.textContent=txt.includes('continue')?'Continue Practice Set '+(i+1):txt.includes('review answers')?'Continue Practice Set '+(i+1):'Start Practice Set '+(i+1);
-      }
-      const missed=buttons.find(b=>/missed|review missed/i.test(b.textContent));
+      const primary=buttons.find(x=>/start|continue|review answers/i.test(x.textContent||''));
+      if(primary){primary.classList.add('btn','primary');const t=primary.textContent.toLowerCase();primary.textContent=t.includes('start')?'Start Practice Set '+(i+1):'Continue Practice Set '+(i+1);}
+      const missed=buttons.find(x=>/missed/i.test(x.textContent||''));
       if(missed){missed.classList.add('btn');missed.classList.remove('danger');missed.textContent='Review Missed';}
-      buttons.filter(b=>/reset/i.test(b.textContent)).forEach(b=>b.classList.add('danger'));
+      buttons.filter(x=>/reset/i.test(x.textContent||'')).forEach(x=>x.classList.add('danger'));
     });
 
-    if(page==='bank2'){
-      // Bank 2 already tracks missed questions across all five sets; expose it exactly like Bank 1.
-      let totalMissed=0,totalDone=0,totalCorrect=0;
-      try{
-        for(let i=0;i<5;i++){const x=stats(i);totalMissed+=x.miss||0;totalDone+=x.done||0;totalCorrect+=x.cor||0;}
-      }catch(e){}
-      if(hero && !hero.querySelector('#bank2Overall')){
-        const overall=document.createElement('div');overall.id='bank2Overall';overall.className='mini';hero.appendChild(overall);
-      }
-      const overall=hero?.querySelector('#bank2Overall');
-      if(overall)overall.textContent=totalDone+' / '+SETS.reduce((n,s)=>n+s.length,0)+' completed';
-      let all=grid.querySelector('.mbu-all-missed-card');
-      if(!all){
-        all=document.createElement('div');all.className='setcard mbu-all-missed-card';
-        grid.appendChild(all);
-      }
-      all.innerHTML='<h3>Missed Questions Review</h3><div class="mini">Automatically built from every question missed in Practice Sets 1–5.</div><div class="bar"><span style="width:0%"></span></div><div class="mini">'+totalMissed+' question'+(totalMissed===1?'':'s')+' currently in the missed bank</div><div class="actions"><button class="btn bad" '+(totalMissed?'':'disabled')+'>Review Missed Questions</button></div>';
-      const b=all.querySelector('button');if(b)b.onclick=()=>{if(typeof startAllMissed==='function')startAllMissed();};
+    // Derive the overall count from each bank's own live practice-set cards.
+    let done=0,total=0;
+    practice.forEach(card=>{
+      const txt=card.textContent||'';
+      const m=txt.match(/(\d+)\s*\/\s*(\d+)\s*(?:completed|answered)/i);
+      if(m){done+=Number(m[1]);total+=Number(m[2]);return;}
+      const q=txt.match(/(\d+)\s*questions/i);if(q)total+=Number(q[1]);
+    });
+    // Bank 1 exposes authoritative stats separately.
+    if(page==='bank1' && typeof statsFor==='function'){
+      done=0;total=0;for(let i=1;i<=5;i++){const s=statsFor(i);done+=s.done||0;total+=(typeof SETS!=='undefined'&&SETS[i]?.length)||100;}
     }
+    // Bank 2 exposes authoritative stats separately.
+    if(page==='bank2' && typeof stats==='function' && typeof SETS!=='undefined'){
+      done=0;total=0;for(let i=0;i<SETS.length;i++){done+=stats(i).done||0;total+=SETS[i]?.length||0;}
+    }
+    if(total && hero){
+      // Use one and only one overall counter.
+      [...hero.querySelectorAll('#overall,#bank2Overall,#bank3Overall,.mbu-bank-total')].forEach((x,i)=>{if(i)x.remove();});
+      let overall=hero.querySelector('#overall,#bank2Overall,#bank3Overall,.mbu-bank-total');
+      if(!overall){overall=document.createElement('div');hero.appendChild(overall);}
+      overall.id='bank'+n+'Overall';overall.className='mini mbu-bank-total';
+      overall.textContent=done+' / '+total+' completed';
+    }
+
+    // Bank 2 needs the aggregate missed card generated by its own state.
+    if(page==='bank2' && typeof stats==='function' && typeof SETS!=='undefined'){
+      let totalMissed=0;for(let i=0;i<SETS.length;i++)totalMissed+=stats(i).miss||0;
+      let all=grid.querySelector('.mbu-all-missed-card');
+      if(!all){all=document.createElement('div');all.className='setcard mbu-all-missed-card';grid.appendChild(all);}
+      all.innerHTML='<h3>Missed Questions Review</h3><div class="mini">Automatically built from every question missed in Practice Sets 1–5.</div><div class="bar"><span style="width:0%"></span></div><div class="mini">'+totalMissed+' question'+(totalMissed===1?'':'s')+' currently in the missed bank</div><div class="actions"><button class="btn bad" '+(totalMissed?'':'disabled')+'>Review Missed Questions</button></div>';
+      const x=all.querySelector('button');if(x)x.onclick=()=>{if(typeof startAllMissed==='function')startAllMissed();};
+    }
+    return true;
   };
 
   const scheduleBankUnify = () => {
     if(!['bank1','bank2','bank3'].includes(page)) return;
-    const run=()=>{try{unifyBankDashboard()}catch(e){}};
+    let tries=0;
+    const run=()=>{try{unifyBankDashboard()}catch(e){} if(++tries<20)setTimeout(run,250);};
     run();
-    // Re-apply after a bank redraws its dashboard without changing its quiz logic.
-    let queued=false;
-    const obs=new MutationObserver(()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;run();});});
-    const target=document.querySelector('#dashboard,#dash,[data-dashboard]');
-    if(target)obs.observe(target,{childList:true,subtree:true});
+    const obs=new MutationObserver(()=>{try{unifyBankDashboard()}catch(e){}});
+    obs.observe(document.body,{childList:true,subtree:true});
   };
 
   const render = () => {
