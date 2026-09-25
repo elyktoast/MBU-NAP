@@ -78,6 +78,8 @@ function checkRuntimeSafety(){
   const bank3=read('equipment/exam-1/quiz-bank-3.html');
   if(!bank3.includes('const BANK=')||!bank3.includes('const TOTAL='))fail('Bank 3: runtime bank structures missing');
   if(/document\.getElementById\(["'][^"']+["']\)\.style/.test(read('equipment/assets/auto-update.js')))fail('Updater: unsafe required DOM access');
+  const updater=read('equipment/assets/auto-update.js');
+  if(!updater.includes("reload.searchParams.get('_mbu_reload') === latest"))fail('Updater: no duplicate-build reload guard');
 }
 try{checkBank1()}catch(e){fail('Bank 1 validation crashed: '+e.message)}
 try{checkBank2()}catch(e){fail('Bank 2 validation crashed: '+e.message)}
