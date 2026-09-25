@@ -60,7 +60,7 @@ function mbuUpdateFlag(q){const b=document.getElementById('mbuFlagBtn');if(b)b.t
 
 
 function st(si){
-  if(!state.sets[si]) state.sets[si]={answered:{},missed:[],selections:{},crosses:{}};
+  if(!state.sets[si]) state.sets[si]={answered:{},missed:[],selections:{},crosses:{},current:0};
   state.sets[si].selections ||= {};
   state.sets[si].crosses ||= {};
   return state.sets[si];
@@ -89,8 +89,9 @@ function renderDash(){
 }
 function startSet(si){
   mode="set";activeSet=si;const s=st(si);order=SETS[si].map((_,i)=>i);
-  const first=order.findIndex(i=>!Object.prototype.hasOwnProperty.call(s.answered,i));pos=first>=0?first:0;showQ();
+  const first=order.findIndex(i=>!Object.prototype.hasOwnProperty.call(s.answered,i));pos=Number.isInteger(s.current)?Math.max(0,Math.min(s.current,order.length-1)):(first>=0?first:0);showQ();
 }
+function persistPosition(){if(mode==="set"){st(activeSet).current=pos;save()}}
 function startMissed(si){
   activeSet=si; const s=st(si); if(!s.missed.length){showReview(si);return}
   mode="missed";order=s.missed.map(i=>({si,qi:i}));pos=0;showQ();
@@ -103,7 +104,7 @@ function current(){
   if(mode==="set") return {si:activeSet,qi:order[pos]};
   return order[pos];
 }
-function renderNavigator(){document.getElementById('mbuNavigator').innerHTML=order.map((x,i)=>{const qq=SETS[x.si??activeSet][x.qi??x],xx=order[i],si=xx.si??activeSet,qi=xx.qi??xx,aa=st(si).answered,result=Object.prototype.hasOwnProperty.call(aa,qi)?!!aa[qi]:null;return MBUNavigator.button({label:i+1,active:i===pos,flagged:mbuIsFlagged(qq),result,onClick:'pos='+i+';showQ()'})}).join('')}
+function renderNavigator(){document.getElementById('mbuNavigator').innerHTML=order.map((x,i)=>{const qq=SETS[x.si??activeSet][x.qi??x],xx=order[i],si=xx.si??activeSet,qi=xx.qi??xx,aa=st(si).answered,result=Object.prototype.hasOwnProperty.call(aa,qi)?!!aa[qi]:null;return MBUNavigator.button({label:i+1,active:i===pos,flagged:mbuIsFlagged(qq),result,onClick:'pos='+i+';persistPosition();showQ()'})}).join('')}
 function toggleCross(c,i,b,cross){
   if(locked)return;
   const crosses=st(c.si).crosses,items=crosses[c.qi]||[];
@@ -175,9 +176,9 @@ function submitAnswer(){
   document.getElementById("submitBtn").classList.add("hidden");document.getElementById("nextBtn").classList.remove("hidden");
   if(ok){clearTimeout(autoTimer);autoTimer=setTimeout(()=>{autoTimer=null;nextQuestion()},350);}
 }
-function prevQuestion(){clearTimeout(autoTimer);autoTimer=null;if(pos>0){pos--;showQ()}}
+function prevQuestion(){clearTimeout(autoTimer);autoTimer=null;if(pos>0){pos--;persistPosition();showQ()}}
 function resetCurrentQuestion(){clearTimeout(autoTimer);autoTimer=null;const c=current(),s=st(c.si);delete s.answered[c.qi];delete s.selections[c.qi];delete s.crosses[c.qi];s.missed=s.missed.filter(x=>x!==c.qi);save();showQ()}
-function nextQuestion(){clearTimeout(autoTimer);autoTimer=null;if(pos+1<order.length){pos++;showQ()}else{goDash()}}
+function nextQuestion(){clearTimeout(autoTimer);autoTimer=null;if(pos+1<order.length){pos++;persistPosition();showQ()}else{goDash()}}
 function goDash(){renderDash()}
 function resetSet(si){if(confirm(`Reset all progress for Practice Set ${si+1}?`)){state.sets[si]={answered:{},missed:[],selections:{},crosses:{}};save();renderDash()}}
 function resetAll(){if(confirm("Reset progress for all five sets?")){state={sets:{}};save();renderDash()}}
