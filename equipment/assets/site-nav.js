@@ -109,11 +109,16 @@
 
   const scheduleBankUnify = () => {
     if(!['bank1','bank2','bank3'].includes(page)) return;
+    // Retry only while a bank is still constructing its dashboard. Do not watch
+    // the whole document: the old MutationObserver reacted to our own DOM edits
+    // and could create a self-triggering render loop.
     let tries=0;
-    const run=()=>{try{unifyBankDashboard()}catch(e){} if(++tries<20)setTimeout(run,250);};
+    const run=()=>{
+      let ready=false;
+      try{ready=!!unifyBankDashboard()}catch(e){}
+      if(!ready && ++tries<12)setTimeout(run,200);
+    };
     run();
-    const obs=new MutationObserver(()=>{try{unifyBankDashboard()}catch(e){}});
-    obs.observe(document.body,{childList:true,subtree:true});
   };
 
   const render = () => {
