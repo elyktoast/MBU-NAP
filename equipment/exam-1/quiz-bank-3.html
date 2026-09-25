@@ -159,7 +159,7 @@ function prevQuestion(){clearTimeout(timer);const c=ctx();if(c.i<=0)return;if(V.
 function resetCurrentQuestion(){clearTimeout(timer);const c=ctx(),q=byId[c.list[c.i]];if(!q)return;delete c.store[q.id];if(c.exam)delete c.exam.xo[q.id];else if(S.t6&&S.t6.xo)delete S.t6.xo[q.id];cur={sel:[],done:false};save();renderQ()}
 function topbar(){const back=`<button class="ghost mbu-return" id="bDash">← Quiz Bank 3 Home</button>`;
  if(V.mode==="t6"){const t=S.t6;const c=Object.values(t.ans).filter(x=>x.ok).length;header(T6NAME,back);$("#stats").innerHTML=`Round progress <b>${Object.keys(t.ans).length}</b> / ${t.list.length} · Cleared <b>${c}</b>`;setBar(Object.keys(t.ans).length/t.list.length)}
- else{const s=examStats(V.n);header(NAMES[V.n],`<button class="ghost" id="bRev">Missed (${s.missed.length})</button>`+back);$("#stats").innerHTML=`Answered <b>${s.a}</b> / ${s.t} · Correct <b>${s.c}</b>${s.a?` (${Math.round(100*s.c/s.a)}%)`:""}`;setBar(s.a/s.t);const r=$("#bRev");if(r)r.onclick=()=>review(V.n)}
+ else{const s=examStats(V.n);header(NAMES[V.n]);$("#stats").innerHTML=`Answered <b>${s.a}</b> / ${s.t} · Correct <b>${s.c}</b>${s.a?` (${Math.round(100*s.c/s.a)}%)`:""}`;setBar(s.a/s.t);const r=$("#bRev");if(r)r.onclick=()=>review(V.n)}
  $("#bDash").onclick=dash}
 function openExam(n){V={mode:"exam",n};const e=S.ex[n];if(e.idx>=EXM[n].ids.length)return examSummary(n);renderQ()}
 function openT6(){V={mode:"t6"};if(S.t6.i>=S.t6.list.length)return t6Summary();renderQ()}
@@ -221,7 +221,7 @@ function t6Summary(){clearTimeout(timer);window.MBUCalculator?.hide();questionCh
 function review(n){clearTimeout(timer);window.MBUCalculator?.hide();questionChrome(false);const isT6=n===6;let items;
  if(isT6){items=missedPool().map(id=>{const q=byId[id];return{q,r:S.ex[q.setn].ans[id]}})}
  else{items=examStats(n).missed.map(id=>({q:byId[id],r:S.ex[n].ans[id]}))}
- header(isT6?`${T6NAME}: missed pool`:`${NAMES[n]} · Missed questions`,`<button class="ghost mbu-return" id="bDash">← Quiz Bank 3 Home</button>`);$("#bDash").onclick=dash;
+ header(isT6?`${T6NAME}: missed pool`:`${NAMES[n]} · Missed questions`);
  $("#stats").innerHTML=`<b>${items.length}</b> missed`;
  let h=`<div class="card"><p class="hint">Green = keyed answer. Red = your incorrect choice. Dashed green = a correct choice you didn't pick.</p><div class="act" style="margin-bottom:12px">${!isT6?`<button class="primary" id="bBack">Back to ${NAMES[n]}</button>`:`<button class="primary" id="bT6">Go to the review exam</button>`}</div>`;
  items.forEach(({q,r})=>{h+=`<div class="rv"><p class="stem">${isT6?`<span class="pill" style="margin:0 6px 0 0">${NAMES[q.setn]}</span>`:""}Q${EXM[q.setn].ids.indexOf(q.id)+1}. ${esc(q.q)}</p>${q.img?`<div class="fig"><img src="data:image/png;base64,${IMGS[q.img]}" alt=""></div>`:""}`;
