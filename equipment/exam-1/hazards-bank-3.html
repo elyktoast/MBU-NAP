@@ -58,7 +58,7 @@ ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 @media (max-width:600px){ul.concepts{columns:1}}
 </style></head>
 <body>
-<!-- MBU_BUILD:2026-09-24-hazards-bank3-tools-v5-u11 -->
+<!-- MBU_BUILD:2026-09-24-h3-bank1-ui-v12 -->
 <div class="wrap">
 <header><h1>Workstation Hazards Practice Set 3 · 100 Questions</h1>
 <div class="stats" id="stats"></div>
@@ -80,36 +80,50 @@ function save(){try{S.view=view;localStorage.setItem(KEY,JSON.stringify(S))}catc
 const byId=Object.fromEntries(BANK.map(q=>[q.id,q]));
 const $=s=>document.querySelector(s);
 function same(a,b){return a.length===b.length&&[...a].sort().join()===[...b].sort().join()}
-function stats(){const v=Object.values(S.ans);const c=v.filter(x=>x.ok).length;const n=v.length;
- $("#stats").innerHTML=`Question <b>${Math.min(S.idx+1,BANK.length)}</b> / ${BANK.length} · Correct <b>${c}</b> / ${n}${n?` (${Math.round(100*c/n)}%)`:""}`;
- $("#prog").style.width=(100*n/BANK.length)+"%";
- const m=missed().length;$("#bRev").textContent=`Missed review (${m})`}
+function stats(){const v=Object.values(S.ans),correct=v.filter(x=>x.ok).length,done=v.length,m=missed().length;
+ const qc=(view==="prac"&&S.prac)?{i:S.prac.i,total:S.prac.list.length}:{i:S.idx,total:BANK.length};
+ const shown=Math.min(qc.i+1,Math.max(qc.total,1));
+ $("#stats").innerHTML=`Question <b>${shown}</b> / ${qc.total} · Completed <b>${done}</b> / ${BANK.length} · Score <b>${done?Math.round(100*correct/done):0}%</b> · Missed <b>${m}</b>`;
+ $("#prog").style.width=(100*done/BANK.length)+"%";
+ $("#bRev").textContent=`Missed review (${m})`}
 function missed(){return BANK.filter(q=>S.ans[q.id]&&!S.ans[q.id].ok)}
 let cur={sel:[],done:false};
 function ctx(){if(view==="prac"&&S.prac)return{list:S.prac.list,i:S.prac.i,store:S.prac.ans,mode:"prac"};return{list:BANK.map(q=>q.id),i:S.idx,store:S.ans,mode:"main"}}
+function quizNavHTML(c){return `<div class="mbu-quiz-nav" id="mbuQuizNav">${c.list.map((id,i)=>{const r=c.store[id],q=byId[id],cl=[i===c.i?"cur":"",r?(r.ok?"good":"bad"):"",window.MBUStudio&&MBUStudio.flagged('h3',q)?"flag":""].filter(Boolean).join(" ");return `<button type="button" class="${cl}" data-qnav="${i}">${i+1}</button>`}).join("")}</div>`}
+function bindQuizNav(c){document.querySelectorAll("[data-qnav]").forEach(b=>b.onclick=()=>{const i=+b.dataset.qnav;if(c.mode==="prac")S.prac.i=i;else S.idx=i;save();render()})}
+function prevQuestion(){const c=ctx();if(c.i<=0)return;if(c.mode==="prac")S.prac.i--;else S.idx--;save();render();window.scrollTo(0,0)}
+function resetQuestion(){const c=ctx(),q=byId[c.list[c.i]];if(!q)return;delete c.store[q.id];delete S.xo[q.id];cur={sel:[],done:false};save();render()}
+function goHazardsHome(){location.href="hazards.html"}
 function render(){clearTimeout(timer);stats();
  if(view==="review")return renderReview();
  if(view==="summary")return renderSummary();
  const c=ctx();
  if(c.i>=c.list.length){if(c.mode==="prac")return renderPracDone();view="summary";save();return renderSummary()}
- const q=byId[c.list[c.i]];const prev=c.store[q.id];
+ const q=byId[c.list[c.i]],prev=c.store[q.id];
  cur={sel:prev?prev.sel.slice():[],done:!!prev};
- const xo=S.xo[q.id]||[];
- let h=`<div class="card"><div class="qmeta"><span>${c.mode==="prac"?`Missed-question practice ${c.i+1} / ${c.list.length}`:`Question ${q.num}`}</span><span>${q.type==="multi"?`Select ${q.n}`:"Select 1"}</span></div>
+ const xo=S.xo[q.id]||[],answered=Object.values(S.ans),correct=answered.filter(x=>x.ok).length,miss=missed().length;
+ const badge=c.mode==="prac"?"MISSED QUESTIONS REVIEW":"PRACTICE SET 3";
+ let h=`<div class="card"><div class="qmeta"><span>${badge}</span><span class="mbu-qtools"><button class="ghost" id="qFlag" type="button">☆ Flag</button><button class="ghost" id="qReport" type="button">Report</button><button class="ghost" id="qNav" type="button">Navigator</button><button class="ghost mbu-return" id="qHome" type="button">← Hazards Home</button><b>Question ${c.i+1} of ${c.list.length}${c.mode==="main"?` · Q${q.num}`:""}</b></span></div>
+ <div class="mbu-quiz-stats"><div>Completed: <strong>${answered.length}</strong>/${BANK.length}</div><div>Score: <strong>${answered.length?Math.round(100*correct/answered.length):0}</strong>%</div><div>Missed: <strong>${miss}</strong></div></div>
+ ${quizNavHTML(c)}<div class="mbu-quiz-type">${q.type==="multi"?`Select ${q.n} Options`:"Single Best Answer"}</div>
  <p class="stem">${esc(q.q)}</p>`;
  if(q.img)h+=`<div class="fig"><img src="data:image/png;base64,${IMGS[q.img]}" alt="Figure for question ${q.num}"><small>Click image to enlarge</small></div>`;
  h+=`<div id="choices">`;
- q.c.forEach((t,i)=>{h+=`<div class="ch"><button class="opt${cur.sel.includes(i)?" sel":""}${xo.includes(i)?" x":""}" data-i="${i}"><span class="L">${L[i]}</span><span class="t">${esc(t)}</span></button><button class="xo" data-x="${i}" aria-pressed="${xo.includes(i)}" title="Cross out (Shift+${L[i]})" aria-label="Cross out ${L[i]}">✕</button></div>`});
- h+=`</div><div class="act"><button class="primary" id="go">Submit</button><button class="ghost" id="qFlag">☆ Flag</button><button class="ghost" id="qReport">Report</button><span class="hint" id="hint">${q.type==="multi"?`Choose exactly ${q.n}. `:""}Keys: A–${L[q.c.length-1]} select, Shift+letter cross out, Enter submit/next</span></div><div id="fb"></div></div>`;
+ q.c.forEach((t,i)=>{h+=`<div class="ch"><button class="opt${cur.sel.includes(i)?" sel":""}${xo.includes(i)?" x":""}" data-i="${i}"><span class="L">${L[i]}.</span><span class="t">${esc(t)}</span></button><button class="xo" data-x="${i}" aria-pressed="${xo.includes(i)}" title="Cross out (Shift+${L[i]})" aria-label="Cross out ${L[i]}">✕</button></div>`});
+ h+=`</div><div class="act"><span class="hint" id="hint">${q.type==="multi"?`Choose exactly ${q.n}. `:""}Keys: A–${L[q.c.length-1]} select, Shift+letter cross out, Enter submit/next</span><button class="primary" id="go">Submit Answer</button></div><div id="fb"></div>
+ <div class="mbu-quiz-bottom"><button class="ghost" id="qPrev" type="button">Previous</button><div class="right"><button class="ghost" id="qReset" type="button">Reset</button><button class="primary" id="qNext" type="button">Next</button></div></div></div>`;
  $("#main").innerHTML=h;
  document.querySelectorAll(".opt").forEach(b=>b.onclick=()=>pick(q,+b.dataset.i));
  document.querySelectorAll(".xo").forEach(b=>b.onclick=()=>cross(q,+b.dataset.x));
  const im=document.querySelector(".fig img");if(im)im.onclick=()=>{$("#lb img").src=im.src;$("#lb").classList.add("on")};
  $("#go").onclick=()=>cur.done?next():submit(q);
- const qFlag=$("#qFlag");qFlag.textContent=window.MBUStudio&&MBUStudio.flagged('h3',q)?'★ Flagged':'☆ Flag';
- qFlag.onclick=()=>{if(!window.MBUStudio)return;MBUStudio.toggleFlag('h3',q);qFlag.textContent=MBUStudio.flagged('h3',q)?'★ Flagged':'☆ Flag'};
+ const qFlag=$("#qFlag");qFlag.textContent=window.MBUStudio&&MBUStudio.flagged('h3',q)?"★ Flagged":"☆ Flag";
+ qFlag.onclick=()=>{if(!window.MBUStudio)return;MBUStudio.toggleFlag('h3',q);qFlag.textContent=MBUStudio.flagged('h3',q)?"★ Flagged":"☆ Flag";render()};
  $("#qReport").onclick=()=>window.MBUStudio&&MBUStudio.report('h3',q);
- window.MBUCalculator?.besideFlag();
+ $("#qNav").onclick=()=>$("#mbuQuizNav").classList.toggle("on");
+ $("#qHome").onclick=goHazardsHome;$("#qPrev").onclick=prevQuestion;$("#qReset").onclick=resetQuestion;$("#qNext").onclick=next;
+ $("#qPrev").disabled=c.i<=0;$("#qNext").disabled=c.i>=c.list.length-1;
+ bindQuizNav(c);window.MBUCalculator?.besideFlag();
  if(prev)showResult(q,prev,true);else upd(q)}
 function esc(s){return String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]))}
 function pick(q,i){if(cur.done)return;const s=cur.sel;
@@ -117,7 +131,7 @@ function pick(q,i){if(cur.done)return;const s=cur.sel;
  document.querySelectorAll(".opt").forEach(b=>b.classList.toggle("sel",cur.sel.includes(+b.dataset.i)));upd(q)}
 function cross(q,i){if(cur.done)return;const a=S.xo[q.id]=S.xo[q.id]||[];const k=a.indexOf(i);k>=0?a.splice(k,1):a.push(i);save();
  const b=document.querySelector(`.opt[data-i="${i}"]`);b.classList.toggle("x",a.includes(i));document.querySelector(`.xo[data-x="${i}"]`).setAttribute("aria-pressed",a.includes(i))}
-function upd(q){const need=q.type==="multi"?q.n:1;const g=$("#go");g.disabled=cur.sel.length!==need;g.textContent="Submit";
+function upd(q){const need=q.type==="multi"?q.n:1;const g=$("#go");g.style.display="";g.disabled=cur.sel.length!==need;g.textContent="Submit Answer";
  if(q.type==="multi")$("#hint").textContent=`${cur.sel.length} of ${q.n} selected. Keys: A–F select, Shift+letter cross out, Enter submit`}
 function submit(q){const need=q.type==="multi"?q.n:1;if(cur.sel.length!==need||cur.done)return;
  const ok=same(cur.sel,q.a);const c=ctx();const rec={sel:cur.sel.slice(),ok};c.store[q.id]=rec;save();window.MBUStudio?.answer?.('h3',q,ok);stats();showResult(q,rec,false)}
@@ -126,7 +140,7 @@ function showResult(q,rec,restored){cur.done=true;
   if(q.a.includes(i))b.classList.add(rec.sel.includes(i)?"ok":"miss");else if(rec.sel.includes(i))b.classList.add("no")});
  document.querySelectorAll(".xo").forEach(b=>b.disabled=true);
  const src=`<p class="src">Source: ${q.ref.map(esc).join("; ")}</p>`;
- const g=$("#go");
+ const g=$("#go");g.style.display="none";
  if(rec.ok){$("#fb").innerHTML=`<div class="fb good"><p><b>Correct.</b> ${restored?"":"Moving on…"}</p>${src}</div>`;g.textContent="Next";g.disabled=false;
   if(!restored)timer=setTimeout(next,1300)}
  else{const ks=q.a.map(i=>L[i]);const keys=ks.length<3?ks.join(" and "):ks.slice(0,-1).join(", ")+", and "+ks[ks.length-1];
