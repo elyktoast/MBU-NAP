@@ -94,6 +94,12 @@ function checkHazardNavigators(){
   }
 }
 checkHazardNavigators();
+function checkStudioIndexes(){
+  const src=read('equipment/exam-1/studio.html');
+  for(const token of ['ALL_BY_UID=new Map','BANK_QUESTIONS=new Map','ALL_BY_UID.get(uid)','BANK_QUESTIONS.get(bank)']) if(!src.includes(token))fail('Studio: missing indexed lookup '+token);
+  if(src.includes("ALL.find(x=>x.uid===uid)"))fail('Studio: linear UID lookup remains in quiz path');
+}
+checkStudioIndexes();
 function checkCanonicalNavigators(){
   for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html']){
     const src=read(p);
