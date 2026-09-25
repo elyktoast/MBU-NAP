@@ -411,3 +411,29 @@ body.mbu-bank1-ui{color:#2d3748!important;font-size:16px!important}
 .mbu-bank1-ui .opt.no,.mbu-bank1-ui .choice.bad,.mbu-bank1-ui .opt.incorrect{
  background:#fed7d7!important;border-color:#742a2a!important;color:#742a2a!important
 }
+
+
+/* Dashboard header contract: identical across Banks 1-3 and Hazards. */
+.mbu-bank1-ui .mbu-dashboard-header{
+  display:block!important;
+  border-bottom:2px solid var(--b)!important;
+  padding-bottom:18px!important;
+  margin-bottom:22px!important;
+}
+.mbu-bank1-ui .mbu-dashboard-title{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  gap:4px!important;
+}
+.mbu-bank1-ui .mbu-dashboard-title h1,
+.mbu-bank1-ui .mbu-dashboard-title .title{
+  margin:0!important;
+}
+.mbu-bank1-ui .mbu-dashboard-overall{
+  margin:0!important;
+  color:var(--mut)!important;
+  font-size:.9rem!important;
+  font-weight:400!important;
+  text-align:left!important;
+}
