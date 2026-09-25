@@ -94,6 +94,10 @@ function checkHazardNavigators(){
   }
 }
 checkHazardNavigators();
+{
+  const src=read('equipment/exam-1/hazards.html');
+  if(!src.includes("(done?'Continue ':'Start ')+ids[5]"))fail('Hazards dashboard: missing Continue behavior for started sets');
+}
 function checkStudioIndexes(){
   const src=read('equipment/exam-1/studio.html');
   for(const token of ['ALL_BY_UID=new Map','BANK_QUESTIONS=new Map','ALL_BY_UID.get(uid)','BANK_QUESTIONS.get(bank)']) if(!src.includes(token))fail('Studio: missing indexed lookup '+token);
