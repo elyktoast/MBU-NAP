@@ -58,9 +58,9 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&
 function arrAfter(src,marker){let p=src.indexOf(marker);if(p<0)return null;p=src.indexOf('[',p);let dep=0,str=null,escp=false;for(let i=p;i<src.length;i++){let c=src[i];if(str){if(escp)escp=false;else if(c==='\\')escp=true;else if(c===str)str=null;continue}if(c==='"'||c==="'"||c==='`'){str=c;continue}if(c==='[')dep++;if(c===']'&&--dep===0)return src.slice(p,i+1)}return null}
 function evalArr(s){return Function('return ('+s+')')()}
 async function studioFetch(url){
-  const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),30000);
+  const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),15000);
   try{
-    const response=await fetch(url,{cache:'no-cache',signal:ctl.signal});
+    const response=await fetch(url,{cache:'force-cache',signal:ctl.signal});
     if(!response.ok)throw Error('HTTP '+response.status);
     const text=await response.text();
     if(!text.trim())throw Error('file is empty');
@@ -70,6 +70,7 @@ async function studioFetch(url){
 function studioStatus(done,total,errors){
   const el=document.getElementById('loadmsg');
   if(errors.length){el.classList.remove('hidden');el.textContent=errors.length+' question set'+(errors.length===1?'':'s')+' unavailable';}
+  else if(done<total){el.classList.remove('hidden');el.textContent='Loading question banks… '+done+'/'+total;}
   else{el.classList.add('hidden');el.textContent='';}
 }
 async function loadBanks(){
@@ -84,6 +85,8 @@ async function loadBanks(){
     ['hazards-harder.html','hh','Hazards Challenge Set']
   ];
   let done=0;studioStatus(done,sources.length,errors);
+  // Paint the Studio immediately; question banks hydrate in the background.
+  try{renderHome()}catch(e){}
   await Promise.all(sources.map(async([url,key,label])=>{
     try{
       const t=await studioFetch(url);
