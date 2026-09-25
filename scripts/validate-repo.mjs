@@ -202,6 +202,12 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!src.includes('if(prior&&prior.pos===pos)return;'))fail('Studio: unchanged question renders still rewrite active session state');
 }
 
+// Shared Studio storage should not retain obsolete helper code.
+{
+ const src=read('equipment/assets/studio-sync.js');
+ if(src.includes('function empty()'))fail('Studio sync: unused empty storage helper remains');
+}
+
 // Studio session statistics should be computed in one pass without temporary mapped/filtered arrays.
 {
  const src=read('equipment/exam-1/studio.html');
