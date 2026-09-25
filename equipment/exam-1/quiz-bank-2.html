@@ -36,8 +36,8 @@ button{font:inherit}.btn{border:1px solid var(--line);background:#fff;border-rad
   <div class="type" id="meta"></div>
   <div class="stem" id="stem"></div><div class="mbu-crossout-hint">Tip: Right-click an answer to cross it out.</div><img id="qimg" class="qimg hidden" alt="Unlabeled lecture figure for question interpretation">
   <div class="choices" id="choices"></div>
-  <div class="row" style="display:flex;margin:4px 0 18px;justify-content:flex-end"><button id="submitBtn" class="btn" onclick="submitAnswer()">Submit Answer</button></div>
-  <div id="feedback" class="hidden"></div>
+  <div class="row" id="multi-submit-row" style="display:none;margin:4px 0 18px;justify-content:flex-end"><button id="submitBtn" class="btn" onclick="submitAnswer()">Submit Answer</button></div>
+  <div id="feedback" class="explain" style="display:none"><div id="feedbackText"></div><div id="feedbackCitation" class="cite"></div></div>
   <div class="controls"><button id="prevBtn" class="btn out" onclick="prevQuestion()">Previous</button><div class="row"><button id="resetQBtn" class="btn out" onclick="resetCurrentQuestion()">Reset</button><button id="nextBtn" class="btn hidden" onclick="nextQuestion()">Next</button></div></div>
 </section>
 
@@ -156,7 +156,7 @@ function restoreResult(c,q){
 function choose(i,e){
   if(locked)return;const q=SETS[current().si][current().qi],b=[...document.querySelectorAll(".choice")][i];
   if(e && (e.altKey||e.ctrlKey||e.metaKey)){toggleCross(current(),i,b,b.parentElement.querySelector(".mbu-cross"));return}
-  if(q.correct.length===1){selected=new Set([i]);document.querySelectorAll(".choice").forEach(x=>x.classList.remove("sel"));b.classList.add("sel");}
+  if(q.correct.length===1){selected=new Set([i]);submitAnswer();return}
   else{if(selected.has(i)){selected.delete(i);b.classList.remove("sel");}else if(selected.size<q.correct.length){selected.add(i);b.classList.add("sel");}}
 }
 function submitAnswer(){
@@ -171,9 +171,8 @@ function submitAnswer(){
   const done=Object.keys(s.answered).length,good=Object.values(s.answered).filter(Boolean).length;
   document.getElementById("mbuCompleted").textContent=done;document.getElementById("mbuScore").textContent=done?Math.round(100*good/done):0;document.getElementById("mbuMissed").textContent=s.missed.length;
   mbuStudioAnswer(q,ok);
-  const f=document.getElementById("feedback");f.className=ok?"feedback ok":"feedback bad";
-  f.innerHTML=`<b>${ok?"Correct.":"Incorrect."}</b> ${esc(q.why)}<div class="source">Source: ${esc(q.src)} · slide/page ${esc(q.page)}</div>`;
-  document.getElementById("submitBtn").classList.add("hidden");document.getElementById("nextBtn").classList.remove("hidden");
+  const f=document.getElementById("feedback");f.style.display="block";document.getElementById("feedbackText").innerHTML=`<b>${ok?"Correct.":"Incorrect."}</b> ${esc(q.why)}`;document.getElementById("feedbackCitation").textContent=`Source: ${q.src} · slide/page ${q.page}`;
+  document.getElementById("multi-submit-row").style.display="none";document.getElementById("nextBtn").classList.remove("hidden");
   if(ok){clearTimeout(autoTimer);autoTimer=setTimeout(()=>{autoTimer=null;nextQuestion()},350);}
 }
 function prevQuestion(){clearTimeout(autoTimer);autoTimer=null;if(pos>0){pos--;persistPosition();showQ()}}
