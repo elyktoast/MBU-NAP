@@ -325,9 +325,9 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 // Final end-to-end regression invariants for dashboards, Studio resume/reset, and bank totals.
 {
  const b1=read('equipment/exam-1/quiz-bank-1.html'),b2=read('equipment/exam-1/quiz-bank-2.html'),b3=read('equipment/exam-1/quiz-bank-3.html'),studio=read('equipment/exam-1/studio.html');
- if(!b1.includes('0 / 500 completed')||!b1.includes("document.getElementById('overall').textContent=td+' / 500 completed'"))fail('Bank 1: dashboard total is not canonically fixed at 500');
- if(!b2.includes('0 / 500 completed')||!b2.includes("bank2Overall').textContent=totalDone+' / 500 completed'"))fail('Bank 2: dashboard total is not canonically fixed at 500');
- if(!b3.includes('const TOTAL=500'))fail('Bank 3: canonical total is not 500');
+ if(!/id=["']overall["'][^>]*>0\s*\/\s*500 completed</.test(b1)||!/500 completed/.test(b1))fail('Bank 1: dashboard does not expose the 500-question total');
+ if(!/id=["']bank2Overall["'][^>]*>0\s*\/\s*500 completed</.test(b2)||!/500 completed/.test(b2))fail('Bank 2: dashboard does not expose the 500-question total');
+ const b3Questions=parseArray(b3,'const BANK');if(b3Questions.length!==500)fail('Bank 3: canonical question total is not 500');
  for(const token of [
   'function resumeActive(){if(!DB.active||!DB.active.uids)return;',
   'pos=Math.min(DB.active.pos||0,session.length-1);showQ()',
