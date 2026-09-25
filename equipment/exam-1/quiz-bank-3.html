@@ -69,7 +69,7 @@ ul.concepts{columns:2;font-size:.9rem;padding-left:1.1rem}
 #go{margin-left:auto;order:99}
 
 </style>
-<!-- MBU_BUILD:2026-09-25-bank3-clean-500-v11 -->
+<!-- MBU_BUILD:2026-09-25-bank3-state-lifecycle-v12 -->
 <link rel="stylesheet" href="../assets/site-nav.css?v=18">
 <link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=18">
 <script defer src="../assets/site-nav.js?v=18" data-page="bank3"></script>
@@ -163,12 +163,12 @@ function dash(){clearTimeout(timer);timer=null;window.MBUCalculator?.hide();ques
 function ctx(){if(V.mode==="t6"){const t=S.t6;return{list:t.list,i:t.i,store:t.ans,label:"MISSED QUESTIONS REVIEW",exam:null}}
  const e=S.ex[V.n];return{list:EXM[V.n].ids,i:e.idx,store:e.ans,label:NAMES[V.n].toUpperCase(),exam:e}}
 function prevQuestion(){clearTimeout(timer);timer=null;const c=ctx();if(c.i<=0)return;if(V.mode==="t6")S.t6.i--;else S.ex[V.n].idx--;save();renderQ();window.scrollTo(0,0)}
-function resetCurrentQuestion(){clearTimeout(timer);timer=null;const c=ctx(),q=byId[c.list[c.i]];if(!q)return;delete c.store[q.id];if(c.exam)delete c.exam.xo[q.id];else if(S.t6&&S.t6.xo)delete S.t6.xo[q.id];cur={sel:[],done:false};save();renderQ()}
+function resetCurrentQuestion(){clearTimeout(timer);timer=null;const c=ctx(),q=byId[c.list[c.i]];if(!q)return;delete c.store[q.id];if(c.exam){delete c.exam.xo[q.id];if(S.cleared[q.orig])delete S.cleared[q.orig]}else if(S.t6&&S.t6.xo)delete S.t6.xo[q.id];cur={sel:[],done:false};save();renderQ()}
 function topbar(){const back=`<button class="ghost mbu-return" id="bDash">← Quiz Bank 3 Home</button>`;
  if(V.mode==="t6"){const t=S.t6;const c=Object.values(t.ans).filter(x=>x.ok).length;header(T6NAME,back);$("#stats").innerHTML=`Round progress <b>${Object.keys(t.ans).length}</b> / ${t.list.length} · Cleared <b>${c}</b>`;setBar(Object.keys(t.ans).length/t.list.length)}
  else{const s=examStats(V.n);header(NAMES[V.n],back);$("#stats").innerHTML=`Answered <b>${s.a}</b> / ${s.t} · Correct <b>${s.c}</b>${s.a?` (${Math.round(100*s.c/s.a)}%)`:""}`;setBar(s.a/s.t);const r=$("#bRev");if(r)r.onclick=()=>review(V.n)}
  $("#bDash").onclick=dash}
-function openExam(n){V={mode:"exam",n};const e=S.ex[n];if(e.idx>=EXM[n].ids.length)return examSummary(n);renderQ()}
+function openExam(n){V={mode:"exam",n};const e=S.ex[n],ids=EXM[n].ids;if(e.idx>=ids.length)e.idx=0;if(!e.ans[ids[e.idx]]){const first=ids.findIndex(id=>!e.ans[id]);if(first>=0)e.idx=first}save();renderQ()}
 function openT6(){V={mode:"t6"};if(S.t6.i>=S.t6.list.length)return t6Summary();renderQ()}
 function renderQ(){clearTimeout(timer);timer=null;topbar();questionChrome(true);const c=ctx();
  if(c.i>=c.list.length){return V.mode==="t6"?t6Summary():examSummary(V.n)}
