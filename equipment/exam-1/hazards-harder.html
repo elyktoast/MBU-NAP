@@ -170,7 +170,7 @@ function renderReview(){const m=missed();
  if(!m.length)h+=`<p>No missed questions yet.</p>`;
  h+=`</div>`;$("#main").innerHTML=h;
  document.querySelectorAll(".rv .fig img").forEach(im=>im.onclick=()=>{$("#lb img").src=im.src;$("#lb").classList.add("on")});
- $("#bBack").onclick=()=>{view=S.prac?"prac":(S.idx>=BANK.length?"summary":"quiz");save();render()};
+ $("#bBack").onclick=goHazardsHome;
  if(m.length)$("#bP2").onclick=startPrac}
 $("#bRev").onclick=()=>{view="review";save();render()};
 $("#bReset").onclick=()=>{if(confirm("Reset all Challenge Set progress? This clears your answers and score.")){S=fresh();view="quiz";save();render()}};
