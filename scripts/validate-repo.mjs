@@ -349,5 +349,15 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!studio.includes('setSessionAnswer(q.uid,{ok,selected,at:Date.now()})'))fail('Studio: grading does not persist selected answers for resume');
 }
 
+// Canonical interaction parity across Bank 2, Hazards, and Studio.
+{
+ const bank2=read('equipment/exam-1/quiz-bank-2.html'),hzStandard=read('equipment/assets/hazards-standard-engine.js'),hzAdvanced=read('equipment/assets/hazards-quiz-engine.js'),studio=read('equipment/exam-1/studio.html');
+ if(!bank2.includes('if(q.correct.length===1){selected=new Set([i]);submitAnswer();return}'))fail('Bank 2: single-answer flow drifted from canonical Bank 1 behavior');
+ if(!bank2.includes('id="multi-submit-row" style="display:none'))fail('Bank 2: multi-select submit row is not canonical');
+ if(!hzStandard.includes('if(q.type==="single"){st.answers[k]=[i];if(!reviewMode)saveDB();submitAnswer();return}'))fail('Hazards standard engine: single-answer flow drifted from canonical behavior');
+ if(!hzAdvanced.includes('if(q.type==="single"){cur.sel=[i];submit(q);return}'))fail('Hazards advanced engine: single-answer flow drifted from canonical behavior');
+ if(!studio.includes('if(q.ans.length===1){sel=new Set([i]);grade();return}'))fail('Studio: single-answer flow drifted from canonical behavior');
+}
+
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
 console.log('Repository validation passed: Banks 1-3 are 500 questions each; local assets, Studio sources, shared quiz runtimes, answer indexes, and build manifest are valid.');
