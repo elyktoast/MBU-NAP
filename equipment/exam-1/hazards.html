@@ -14,7 +14,7 @@
 </div>
 
 </section></div>
-<!-- MBU_BUILD:2026-09-24-hazards-bank1-dashboard-v13-u11 -->
+<!-- MBU_BUILD:2026-09-25-hazards-bank1-dashboard-stats-v16 -->
 <script>
 (function(){
  const defs=[
@@ -25,10 +25,9 @@
  ];
  let total=0,doneTotal=0;
  defs.forEach(([key,url,type])=>{
-   let n=0;try{const d=JSON.parse(localStorage.getItem(key)||'null');if(d)n=type==='array'?(Array.isArray(d.missed)?d.missed.length:0):Object.values(d.ans||{}).filter(x=>x&&!x.ok).length}catch(e){}
-   total+=n;
-   let done=0;try{const d=JSON.parse(localStorage.getItem(key)||'null');if(d)done=type==='array'?Object.keys(d.answers||d.ans||{}).length:Object.keys(d.ans||{}).length}catch(e){}doneTotal+=done;
-   const ix=defs.findIndex(x=>x[0]===key), ids=[['hazSet1Stats','hazSet1Bar',100,'hazSet1Review'],['hazSet2Stats','hazSet2Bar',100,'hazSet2Review'],['hazSet3Stats','hazSet3Bar',100,'hazSet3Review'],['hazChallengeStats','hazChallengeBar',50,'hazChallengeReview']][ix];if(ids){const s=document.getElementById(ids[0]),b=document.getElementById(ids[1]),r=document.getElementById(ids[3]);if(s)s.textContent=done+' / '+ids[2]+' completed · '+n+' missed';if(b)b.style.width=Math.min(100,done/ids[2]*100)+'%';if(r&&!n){r.removeAttribute('href');r.setAttribute('aria-disabled','true');r.style.pointerEvents='none';r.style.opacity='.55'}}
+   let n=0,done=0,correct=0;try{const d=JSON.parse(localStorage.getItem(key)||'null');if(d){const ans=d.answers||d.ans||{};done=Object.keys(ans).length;correct=Object.values(ans).filter(x=>x&&x.ok).length;n=type==='array'?(Array.isArray(d.missed)?d.missed.length:Object.values(ans).filter(x=>x&&!x.ok).length):Object.values(ans).filter(x=>x&&!x.ok).length}}catch(e){}
+   total+=n;doneTotal+=done;
+   const ix=defs.findIndex(x=>x[0]===key), ids=[['hazSet1Stats','hazSet1Bar',100,'hazSet1Review'],['hazSet2Stats','hazSet2Bar',100,'hazSet2Review'],['hazSet3Stats','hazSet3Bar',100,'hazSet3Review'],['hazChallengeStats','hazChallengeBar',50,'hazChallengeReview']][ix];if(ids){const s=document.getElementById(ids[0]),b=document.getElementById(ids[1]),r=document.getElementById(ids[3]);if(s)s.textContent=ids[2]+' questions · '+done+'/'+ids[2]+' completed · '+(done?Math.round(100*correct/done):0)+'% score · '+n+' missed';if(b)b.style.width=Math.min(100,done/ids[2]*100)+'%';if(r&&!n){r.removeAttribute('href');r.setAttribute('aria-disabled','true');r.style.pointerEvents='none';r.style.opacity='.55'}}
  });
  const ov=document.getElementById('hazOverall');if(ov)ov.textContent=doneTotal+' / 350 completed';
  const label=total+' question'+(total===1?'':'s')+' currently in the missed bank';
