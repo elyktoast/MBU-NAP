@@ -202,6 +202,13 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!src.includes('if(prior&&prior.pos===pos)return;'))fail('Studio: unchanged question renders still rewrite active session state');
 }
 
+// Studio hydration should yield between large bank parse/evaluation passes instead of parsing every source concurrently.
+{
+ const src=read('equipment/exam-1/studio.html');
+ if(src.includes('Promise.all(sources.map'))fail('Studio: all bank sources are still hydrated concurrently');
+ if(!src.includes('for(const source of sources){loaded.push(await loadSource(source));await new Promise(resolve=>setTimeout(resolve,0))}'))fail('Studio: bank hydration does not yield between source passes');
+}
+
 // Studio must not parse large embedded Hazards image maps during bank hydration.
 {
  const src=read('equipment/exam-1/studio.html');
