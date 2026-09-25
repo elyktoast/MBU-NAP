@@ -11,5 +11,4 @@
       '" onclick="'+onClick+'">'+label+'</button>';
   }
   window.MBUNavigator={button};
-  window.mbuNavButton=(i,label,active,flagged,go,result)=>button({label,active,flagged,result,onClick:go});
 })();
