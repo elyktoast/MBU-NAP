@@ -49,7 +49,7 @@ test.describe('canonical quiz regression', () => {
     await page.evaluate(() => startSet(0));
     const answer = await page.evaluate(() => SETS[0][0].correct);
     await clickIndexes(page.locator('#choices .choice'), answer);
-    await page.locator('#submitBtn').click();
+    if (answer.length > 1) await page.locator('#submitBtn').click();
     await page.waitForTimeout(450);
 
     let state = await storageJSON(page, 'srna_all5_groundup_v1');
@@ -67,7 +67,6 @@ test.describe('canonical quiz regression', () => {
     const correct = await page.evaluate(() => SETS[0][0].correct[0]);
     const wrong = correct === 0 ? 1 : 0;
     await page.locator('#choices .choice').nth(wrong).click();
-    await page.locator('#submitBtn').click();
     await expect(page.locator('#feedback')).toBeVisible();
 
     await page.locator('#resetQBtn').click();
@@ -82,7 +81,7 @@ test.describe('canonical quiz regression', () => {
     await page.locator('#hazStart').click();
     const answer = await page.evaluate(() => QUESTIONS[0].answer);
     await clickIndexes(page.locator('#options .opt'), answer);
-    await page.locator('#submit-multi').click();
+    if (answer.length > 1) await page.locator('#submit-multi').click();
     await page.waitForTimeout(450);
 
     await expect(page.locator('#progress')).toContainText('Question 2 of');
