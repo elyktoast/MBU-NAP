@@ -318,6 +318,29 @@ test.describe('canonical quiz regression', () => {
     expect(errors).toEqual([]);
   });
 
+  test('Combined repairs legacy missed and score state in the live stats bar', async ({ page }) => {
+    await page.goto(exam + '/combined.html');
+    const legacy = await page.evaluate(() => {
+      const st={answers:{},graded:{},correct:{},strikes:{},current:13};
+      for(let i=0;i<13;i++){
+        const q=SETS[1][i],id=q.id;
+        st.answers[id]=[q.answer[0]];
+        st.graded[id]=true;
+        st.correct[id]=!(i===0||i===7);
+      }
+      return {sets:{1:st,2:{answers:{},graded:{},correct:{},strikes:{},current:0},3:{answers:{},graded:{},correct:{},strikes:{},current:0}}};
+    });
+    await page.evaluate(v=>localStorage.setItem('MBU_COMBINED_BANK_2026_V1',JSON.stringify(v)),legacy);
+    await page.reload();
+    await page.getByRole('button',{name:'Continue Practice Set 1'}).click();
+    await expect(page.locator('#completed')).toHaveText('13');
+    await expect(page.locator('#total')).toHaveText('50');
+    await expect(page.locator('#score')).toHaveText('85');
+    await expect(page.locator('#missed')).toHaveText('2');
+    await expect(page.locator('#mbuNavigator button.correct')).toHaveCount(11);
+    await expect(page.locator('#mbuNavigator button.incorrect')).toHaveCount(2);
+  });
+
   test('Combined wrong-answer feedback matches Bank 1', async ({ page }) => {
     await page.goto(exam + '/combined.html');
     await page.locator('#cards button').filter({ hasText: /start/i }).first().click();
