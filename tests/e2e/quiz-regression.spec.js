@@ -194,7 +194,7 @@ test.describe('canonical quiz regression', () => {
   for (const [name, file, total] of [
     ['Bank 1', 'quiz-bank-1.html', '#overall'],
     ['Bank 2', 'quiz-bank-2.html', '#bank2Overall'],
-    ['Bank 3', 'quiz-bank-3.html', null]
+    ['Bank 3', 'quiz-bank-3.html', '#stats']
   ]) {
     test(name + ' loads without uncaught page errors', async ({ page }) => {
       const errors = collectPageErrors(page);
