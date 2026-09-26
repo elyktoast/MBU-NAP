@@ -97,22 +97,30 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('.progress')).toContainText('Question 2 of');
   });
 
-  test('Bank 3 multi-select uses canonical controls without runtime errors', async ({ page }) => {
+  test('Bank 3 multi-select reveals every keyed answer with canonical feedback styling', async ({ page }) => {
     const errors = collectPageErrors(page);
     await page.goto(exam + '/quiz-bank-3.html');
-    const answer = await page.evaluate(() => {
-      const q = BANK.find(x => x.type === 'multi');
-      if (!q) throw new Error('Bank 3 has no multi-select question');
+    const caseData = await page.evaluate(() => {
+      const q = BANK.find(x => x.type === 'multi' && x.a.length > 1 && x.c.some((_, i) => !x.a.includes(i)));
+      if (!q) throw new Error('Bank 3 has no suitable multi-select question');
       V = { mode: 'exam', n: q.setn };
       S.ex[q.setn].idx = EXM[q.setn].ids.indexOf(q.id);
       renderQ();
-      return q.a;
+      const wrong = q.c.findIndex((_, i) => !q.a.includes(i));
+      return { answer: q.a, chosen: [...q.a.slice(0, -1), wrong] };
     });
-    await clickIndexes(page.locator('#main .opt'), answer);
+    await clickIndexes(page.locator('#main .opt'), caseData.chosen);
     await expect(page.locator('#go')).toContainText('Submit Selections');
     await expect(page.locator('#go')).toBeEnabled();
     await page.locator('#go').click();
     await expect(page.locator('#fb')).toBeVisible();
+    for (const i of caseData.answer) {
+      const option = page.locator('#main .opt').nth(i);
+      await expect(option).toHaveCSS('background-color', 'rgb(198, 246, 213)');
+      await expect(option.locator('.t')).not.toHaveCSS('text-decoration-line', 'line-through');
+    }
+    await expect(page.locator('#fb')).toHaveCSS('background-color', 'rgb(248, 250, 252)');
+    await expect(page.locator('#fb')).toHaveCSS('border-left-color', 'rgb(26, 54, 93)');
     expect(errors).toEqual([]);
   });
 
