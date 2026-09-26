@@ -206,6 +206,23 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#quiz .controls')).toBeVisible();
   });
 
+  test('Studio lazily hydrates canonical Bank 3 figures when an image question is shown', async ({ page }) => {
+    const errors = collectPageErrors(page);
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    const uid = await page.evaluate(() => {
+      const q = (BANK_QUESTIONS.get('b3') || []).find(x => x.img && x.img.kind === 'bank3');
+      if (!q) throw new Error('No Bank 3 figure question found');
+      session = [q]; pos = 0;
+      DB.active = { uids: [q.uid], pos: 0, answers: {}, updated: Date.now() };
+      save(); showQ();
+      return q.uid;
+    });
+    expect(uid).toBeTruthy();
+    await expect(page.locator('#qimage img')).toHaveAttribute('src', /^data:image\/png;base64,/, { timeout: 10000 });
+    expect(errors).toEqual([]);
+  });
+
   test('Studio active session resumes with position and answer state after reload', async ({ page }) => {
     await page.goto(exam + '/studio.html');
     await waitForStudio(page);
