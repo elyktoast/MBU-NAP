@@ -502,6 +502,25 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  }
 }
 
+
+// JavaScript syntax is a release blocker. A page shell that renders while its inline script fails to parse is not valid.
+{
+ const jsAssets=['equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js','equipment/assets/site-nav.js','equipment/assets/navigator.js','equipment/assets/calculator.js','equipment/assets/auto-update.js'];
+ for(const p of jsAssets){try{new vm.Script(read(p),{filename:p})}catch(e){fail(p+': JavaScript syntax error: '+e.message)}}
+ for(const p of quizFiles){
+  const src=read(p),re=/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi;let m,i=0;
+  while((m=re.exec(src))){const code=m[1].trim();if(!code)continue;try{new vm.Script(code,{filename:p+'#inline-'+(++i)})}catch(e){fail(p+': inline JavaScript syntax error: '+e.message)}}
+ }
+}
+
+// Combined active-session shell must be exactly Bank 1, except for the bank-home label.
+{
+ const section=src=>{const a=src.indexOf('<section id="quiz"'),b=a<0?-1:src.indexOf('</section>',a);return a<0||b<0?'':src.slice(a,b+10)};
+ const bank1=section(read('equipment/exam-1/quiz-bank-1.html')).replace('← Quiz Bank 1 Home','← BANK HOME');
+ const combined=section(read('equipment/exam-1/combined.html')).replace('← Combined Home','← BANK HOME');
+ if(!bank1||!combined||bank1!==combined)fail('Combined: active quiz session shell drifted from canonical Bank 1');
+}
+
 // Shared asset/cache contract: every versioned shared asset reference uses the current release revision.
 {
  const updater=read('equipment/assets/auto-update.js');
