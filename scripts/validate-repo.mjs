@@ -392,5 +392,17 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  }
 }
 
+// Shared asset/cache contract: every versioned shared asset reference uses the current release revision.
+{
+ const pages=['index.html','equipment/index.html','equipment/exam-1/index.html','equipment/exam-1/hazards.html','equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html','equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html','equipment/exam-1/hazards-review.html','equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html','equipment/exam-1/studio.html'];
+ for(const p of pages){const src=read(p),versions=[...src.matchAll(/\\?v=(\\d+)/g)].map(m=>m[1]);if(versions.some(v=>v!=='60'))fail(p+': stale shared-asset revision (expected v60)')}
+ const updater=read('equipment/assets/auto-update.js');
+ if(!updater.includes("sessionStorage.getItem(BUILD_CACHE_KEY)"))fail('Updater: build baseline is not retained per session');
+ if(!updater.includes('const CHECK_COOLDOWN = 120000'))fail('Updater: update polling cooldown regressed');
+ const studio=read('equipment/exam-1/studio.html');
+ if(!studio.includes('await Promise.all(sources.map(loadSource))'))fail('Studio: bank hydration is not parallelized');
+ if(studio.includes("localStorage.getItem('mbu_bank3_progress')")||studio.includes("localStorage.getItem('MBU_BANK3_PROGRESS')"))fail('Studio: obsolete Bank 3 storage-key fallbacks remain');
+}
+
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
 console.log('Repository validation passed: Banks 1-3 are 500 questions each; local assets, Studio sources, shared quiz runtimes, answer indexes, and build manifest are valid.');
