@@ -328,6 +328,7 @@ test.describe('canonical quiz regression', () => {
 
   test('Studio source selector exposes every bank and practice set', async ({ page }) => {
     await page.goto(exam + '/studio.html');
+    await expect(page.locator('#sourceChecks input[type="checkbox"]')).toHaveCount(22);
     await waitForStudio(page);
     await expect(page.locator('#sourceChecks')).toContainText('Quiz Bank 1');
     await expect(page.locator('#sourceChecks')).toContainText('Quiz Bank 2');
