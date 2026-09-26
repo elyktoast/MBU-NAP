@@ -746,6 +746,50 @@ test.describe('canonical quiz regression', () => {
   });
 
 
+  test('Previously saved local reports can be migrated once without duplication', async ({ page }) => {
+    await page.addInitScript(() => { window.MBU_REPORT_ENDPOINT = 'https://report.test/submit'; });
+    const submissions = [];
+    await page.route('https://report.test/submit', async route => {
+      submissions.push(JSON.parse(route.request().postData() || '{}'));
+      await route.fulfill({ status: 204, body: '' });
+    });
+
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    await page.evaluate(() => {
+      const d = MBUStudio.db();
+      d.reports = [{
+        uid: 'b1-legacy-1',
+        bank: 'b1',
+        bankLabel: 'Quiz Bank 1',
+        stem: 'Legacy locally saved report question',
+        reason: 'I think this answer is wrong',
+        date: '2026-09-01T12:00:00.000Z'
+      }];
+      MBUStudio.save(d);
+      DB = d;
+      showReports();
+    });
+
+    await expect(page.locator('#sendSavedReportsBtn')).toContainText('(1)');
+    await page.locator('#sendSavedReportsBtn').click();
+
+    await expect.poll(() => submissions.length).toBe(1);
+    expect(submissions[0].uid).toBe('b1-legacy-1');
+    expect(submissions[0].comment).toContain('I think this answer is wrong');
+
+    await expect(page.locator('#sendSavedReportsBtn')).toHaveText('All Saved Reports Sent');
+    await expect(page.locator('#savedReportStatus')).toContainText('sent successfully');
+
+    const local = await page.evaluate(() => MBUStudio.db().reports[0]);
+    expect(local.sent).toBe(true);
+    expect(local.sentAt).toBeTruthy();
+
+    await page.locator('#sendSavedReportsBtn').click({ force: true }).catch(() => {});
+    expect(submissions.length).toBe(1);
+  });
+
+
   test('Shared asset revisions and updater baseline stay canonical', async ({ page }) => {
     const requests=[];
     page.on('request', req => { if (req.url().includes('/equipment/assets/') && req.url().includes('?v=')) requests.push(req.url()); });
