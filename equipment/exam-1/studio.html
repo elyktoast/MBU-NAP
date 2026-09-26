@@ -163,7 +163,6 @@ async function loadBanks(){
       BANK_QUESTIONS.get(q.bank).push(q);
       if(!String(q.bank).startsWith('h'))STUDIO_BANK_LABELS.set(q.bank,q.bankLabel);
       const sk=sourceSetKey(q);if(!STUDIO_SET_NAMES.has(sk))STUDIO_SET_NAMES.set(sk,setLabel(q));
-      STUDIO_SET_COUNTS.set(sk,(BANK_QUESTIONS.get(q.bank)||[]).filter(x=>sourceSetKey(x)===sk).length);
       STUDIO_TOPIC_COUNTS.set(q.topic,(STUDIO_TOPIC_COUNTS.get(q.topic)||0)+1);
     }
   };
