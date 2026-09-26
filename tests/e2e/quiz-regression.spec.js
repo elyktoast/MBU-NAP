@@ -737,8 +737,12 @@ test.describe('canonical quiz regression', () => {
 
     await page.locator('.mbu-calc-resetpos').click();
     const centered = await panel.boundingBox();
-    expect(Math.abs((centered.x + centered.width / 2) - 600)).toBeLessThan(3);
-    expect(Math.abs((centered.y + centered.height / 2) - 450)).toBeLessThan(3);
+    const viewportCenter = await page.evaluate(() => ({
+      x: document.documentElement.clientWidth / 2,
+      y: document.documentElement.clientHeight / 2
+    }));
+    expect(Math.abs((centered.x + centered.width / 2) - viewportCenter.x)).toBeLessThan(3);
+    expect(Math.abs((centered.y + centered.height / 2) - viewportCenter.y)).toBeLessThan(3);
   });
 
 
