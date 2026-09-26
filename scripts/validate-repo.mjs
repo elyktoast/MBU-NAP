@@ -308,6 +308,15 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!src.includes('window.MBUNavigator={button}'))fail('Navigator: canonical MBUNavigator API is missing');
 }
 
+// Shared Studio storage normalization must persist and compact dead boolean entries.
+{
+ const src=read('equipment/assets/studio-sync.js');
+ if(!src.includes('if(changed) save(d);'))fail('Studio sync: normalized storage is not persisted');
+ if(src.includes('try{lastSerialized=JSON.stringify(d)}catch(e){}\n    if(changed) save(d);'))fail('Studio sync: normalization fingerprint is set before persistence');
+ if(!src.includes("(field==='flags'||field==='crosses')&&!v"))fail('Studio sync: stale false flag/cross entries are not compacted');
+ if(!src.includes("if(next)d.flags[k]=true;else delete d.flags[k]"))fail('Studio sync: unflagging still leaves dead false entries');
+}
+
 // Shared Studio storage should not retain obsolete helper code.
 {
  const src=read('equipment/assets/studio-sync.js');
