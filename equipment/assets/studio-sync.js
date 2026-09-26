@@ -150,6 +150,58 @@
     }finally{submit.disabled=false}
   }
 
+
+  function pendingReports(){
+    return db().reports.filter(r=>r&&typeof r==='object'&&!r.sent);
+  }
+
+  function legacyPayload(r){
+    return {
+      uid:normalizeKey(r.uid||((r.bank||'unknown')+'-saved')),
+      bank:normalizeBank(r.bank||''),
+      bankLabel:String(r.bankLabel||r.bank||'Unknown bank'),
+      set:String(r.set||''),
+      questionNumber:String(r.questionNumber||''),
+      topic:String(r.topic||''),
+      stem:String(r.stem||'Saved question report'),
+      options:arr(r.options).map(String),
+      answerIndexes:arr(r.answerIndexes),
+      answerText:arr(r.answerText).map(String),
+      selectedIndexes:arr(r.selectedIndexes),
+      selectedText:arr(r.selectedText).map(String),
+      explanation:String(r.explanation||''),
+      source:String(r.source||''),
+      page:String(r.page||''),
+      pageUrl:String(r.pageUrl||location.href),
+      build:String(r.build||'legacy-local-report'),
+      userAgent:String(r.userAgent||navigator.userAgent),
+      reason:String(r.reason||'Other').slice(0,120),
+      comment:String(r.comment||r.reason||'Saved before online reporting was enabled.').slice(0,2000),
+      reporter:String(r.reporter||''),
+      date:String(r.date||new Date().toISOString())
+    };
+  }
+
+  async function sendSavedReports(onProgress){
+    if(!REPORT_ENDPOINT)throw new Error('Reporting endpoint is not configured yet.');
+    const d=db(),pending=d.reports.filter(r=>r&&typeof r==='object'&&!r.sent);
+    let sent=0,failed=0;
+    for(let i=0;i<pending.length;i++){
+      const r=pending[i],payload=legacyPayload(r);
+      try{
+        await fetch(REPORT_ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload),cache:'no-store'});
+        r.sent=true;r.sentAt=new Date().toISOString();r.migrated=!(r.comment||r.answerIndexes||r.options);
+        sent++;
+      }catch(err){
+        r.lastSendError=String(err&&err.message?err.message:err);
+        failed++;
+      }
+      save(d);
+      if(typeof onProgress==='function')onProgress({done:i+1,total:pending.length,sent,failed});
+    }
+    return {total:pending.length,sent,failed};
+  }
+
   function report(bank,q,extra){
     ensureReportUI();
     reportContext=questionMeta(bank,q,extra||{});
@@ -164,5 +216,5 @@
     return true;
   }
 
-  window.MBUStudio={STORE,db,save,key,flagged,toggleFlag,answer,report,normalizeBank,topicOf,questionMeta};
+  window.MBUStudio={STORE,db,save,key,flagged,toggleFlag,answer,report,normalizeBank,topicOf,questionMeta,pendingReports,sendSavedReports};
 })();
