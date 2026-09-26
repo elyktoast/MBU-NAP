@@ -143,6 +143,10 @@ function checkHazardNavigators(){
   if(!challenge.includes('MBUNavigator.button'))fail('Shared challenge Hazards engine does not use the canonical navigator renderer');
 }
 checkHazardNavigators();
+{
+ const nav=read('equipment/assets/site-nav.js');
+ if(!nav.includes("sessionStorage.removeItem('mbu_build_manifest_v1')")||!nav.includes("u.searchParams.set('_mbu_refresh',Date.now().toString())")||!nav.includes('location.replace(u.href)'))fail('Site nav: MBU-NAP brand does not perform a cache-busting refresh');
+}
 function checkCanonicalSubmission(){
   const bank2=read('equipment/exam-1/quiz-bank-2.html');
   const combined=read('equipment/exam-1/combined.html');
@@ -154,6 +158,11 @@ function checkCanonicalSubmission(){
   if(!combined.includes("row.style.display=graded?'none':'flex'"))fail('Combined: canonical Submit Answer row is not shown for all ungraded questions');
   if(combined.includes('MBUNavigator.button(i+1'))fail('Combined: shared navigator is called with the legacy signature');
   if(!combined.includes('MBUNavigator.button({label:i+1'))fail('Combined: shared canonical navigator renderer is not used');
+  if(!combined.includes('window.MBUCalculator?.besideFlag()'))fail('Combined: calculator is not exposed beside Flag during sessions');
+  if(combined.includes("selected.has(i)?'correct':'missed'"))fail('Combined: keyed correct answers still use noncanonical missed styling');
+  if(!combined.includes("if(q.answer.includes(i))b.classList.add('correct');else if(selected.has(i))b.classList.add('incorrect')"))fail('Combined: graded answer styling does not match Bank 1');
+  if(!combined.includes("else if(d>0)goDashboard()"))fail('Combined: final Next does not return to dashboard like Bank 1');
+  if(!combined.includes('function persistPosition()'))fail('Combined: canonical navigation position persistence is missing');
   if(!bank2.includes('document.getElementById("multi-submit-row").style.display="flex"'))fail('Bank 2: canonical Submit Answer row is not shown for all ungraded questions');
   if(studio.includes('sel=new Set([i]);grade();return'))fail('Studio: single-answer questions bypass canonical Submit Answer step');
   if(!studio.includes("submitRow.style.display='flex'"))fail('Studio: canonical Submit Answer row is not shown for all ungraded questions');
