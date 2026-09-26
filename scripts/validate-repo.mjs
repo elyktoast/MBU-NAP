@@ -108,7 +108,7 @@ function checkCopies(){
   }
 }
 function checkAssetVersions(){
-  const manifest=JSON.parse(read('equipment/exam-1/banks.json')),canonical=new Set(manifest.banks.filter(b=>b.engine==='canonical').map(b=>b.page)),dir=path.join(root,'equipment/exam-1');
+  const manifest=JSON.parse(read('equipment/exam-1/banks.json')),canonical=new Set([...manifest.banks.filter(b=>b.engine==='canonical').map(b=>b.page),'studio.html']),dir=path.join(root,'equipment/exam-1');
   for(const name of fs.readdirSync(dir).filter(x=>x.endsWith('.html'))){
     const p='equipment/exam-1/'+name,src=read(p),refs=[];
     for(const m of src.matchAll(/(?:src|href)=["'](\.\.\/assets\/[^"']+)["']/g))refs.push(m[1]);
@@ -129,7 +129,7 @@ function checkAssets(){
   }
 }
 function checkStudio(){
-  const src=read('equipment/exam-1/studio.html');
+  const src=read('equipment/assets/studio-page.js');
   let manifest;try{manifest=JSON.parse(read('equipment/exam-1/banks.json'))}catch(e){fail('Studio: bank manifest is invalid JSON: '+e.message);return}
   if(manifest.canonicalBank!=='bank1')fail('Studio: Bank 1 is not declared canonical in banks.json');
   for(const id of ['bank1','bank2','bank3','combined','hazards'])if(!manifest.banks.some(b=>b.id===id))fail('Studio: central bank manifest is missing '+id);
@@ -194,7 +194,7 @@ checkHazardNavigators();
 }
 function checkCanonicalSubmission(){
   const engine=read('equipment/assets/quiz-engine.js');
-  const studio=read('equipment/exam-1/studio.html');
+  const studio=read('equipment/assets/studio-page.js');
   const standard=read('equipment/assets/hazards-standard-engine.js');
   const challenge=read('equipment/assets/hazards-quiz-engine.js');
   for(const bit of [
@@ -221,15 +221,15 @@ checkCanonicalSubmission();
   if(!src.includes("(done?'Continue ':'Start ')+ids[5]"))fail('Hazards dashboard: missing Continue behavior for started sets');
 }
 function checkStudioIndexes(){
-  const src=read('equipment/exam-1/studio.html');
+  const src=read('equipment/assets/studio-page.js'),page=read('equipment/exam-1/studio.html');
   for(const token of ['ALL_BY_UID=new Map','BANK_QUESTIONS=new Map','ALL_BY_UID.get(uid)','BANK_QUESTIONS.get(bank)']) if(!src.includes(token))fail('Studio: missing indexed lookup '+token);
   if(src.includes("ALL.find(x=>x.uid===uid)"))fail('Studio: linear UID lookup remains in quiz path');
   if(!src.includes("if(!DB.active||!Array.isArray(DB.active.uids)||!DB.active.uids.length||!ALL_BY_UID.size)return;"))fail('Studio: active session hydration guard is missing');
   if(!src.includes('if(missing&&studioHasFailedSource())'))fail('Studio: active session is not preserved during a source failure');
-  if(!src.includes('id="studio-submit-row"')||!src.includes('class="explain"')||!src.includes('id="fbCitation" class="cite"'))fail('Studio: quiz session is not using canonical Bank 1 structure');
-  if(src.includes('Studio quiz view: keep the normal question workflow within a desktop viewport.'))fail('Studio: obsolete quiz-specific compact layout remains');
+  if(!page.includes('id="studio-submit-row"')||!page.includes('class="explain"')||!page.includes('id="fbCitation" class="cite"'))fail('Studio: quiz session is not using canonical Bank 1 structure');
+  if(page.includes('Studio quiz view: keep the normal question workflow within a desktop viewport.'))fail('Studio: obsolete quiz-specific compact layout remains');
   if(!src.includes('if(meta.imageBase)')||!src.includes("img={kind:'direct',url:meta.imageBase")||!src.includes("q.img.kind==='direct'"))fail('Studio: canonical image questions are not using indexed image paths');
-  if(!src.includes("document.body.classList.toggle('mbu-quiz-active',id==='quiz')")||!src.includes('body.mbu-quiz-active>.wrap>.top{display:none}'))fail('Studio: canonical quiz is still wrapped by the extra Studio shell');
+  if(!src.includes("document.body.classList.toggle('mbu-quiz-active',id==='quiz')")||!page.includes('body.mbu-quiz-active>.wrap>.top{display:none}'))fail('Studio: canonical quiz is still wrapped by the extra Studio shell');
 }
 {
  const engine=read('equipment/assets/quiz-engine.js'),haz=read('equipment/assets/hazards-quiz-engine.js');
@@ -285,7 +285,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
   if(!src.includes('function next(){clearTimeout(timer);timer=null;'))fail('Shared Hazards engine: manual Next does not clear pending auto-advance');
 }
 {
- const renderer=read('equipment/assets/canonical-bank-page.js'),studio=read('equipment/exam-1/studio.html');
+ const renderer=read('equipment/assets/canonical-bank-page.js'),studio=read('equipment/assets/studio-page.js');
  if(!renderer.includes('Right-click an answer to cross it out.')||!renderer.includes('mbu-crossout-hint'))fail('Canonical bank renderer: missing cross-out interaction hint');
  if(!studio.includes('Right-click an answer to cross it out.')||!studio.includes('mbu-crossout-hint'))fail('Studio: missing canonical cross-out interaction hint');
 }
@@ -313,7 +313,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 
 // Studio aggregate readers must use the exact persistence keys written by each source bank.
 {
- const studio=read('equipment/exam-1/studio.html'),challenge=read('equipment/exam-1/hazards-harder.html');
+ const studio=read('equipment/assets/studio-page.js'),challenge=read('equipment/exam-1/hazards-harder.html');
  const m=challenge.match(/key:\s*["']([^"']+)["']/); if(!m)fail('Challenge: persistence key missing from engine config');
  else if(!studio.includes("['hh','"+m[1]+"','ans']"))fail('Studio: Challenge aggregation key does not match Challenge persistence key');
  if(studio.includes("['hh','srna_hazards_safety_harder_v1','ans']"))fail('Studio: obsolete Challenge aggregation key remains');
@@ -321,7 +321,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 
 // Study Studio answer state must use canonical UIDs and restore graded selections on revisit.
 {
- const studio=read('equipment/exam-1/studio.html'),sync=read('equipment/assets/studio-sync.js');
+ const studio=read('equipment/assets/studio-page.js'),sync=read('equipment/assets/studio-sync.js');
  if(!sync.includes('if(q&&q.uid)return normalizeKey(q.uid)'))fail('Studio sync: answer keys do not prefer canonical question UIDs');
  if(!studio.includes('setSessionAnswer(q.uid,{ok,selected,at:Date.now()})'))fail('Studio: graded selections are not persisted in session state');
  if(!studio.includes('function sessionAnswer(uid)'))fail('Studio: session-local answer state is missing');
@@ -335,7 +335,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 
 // Study Studio uses the same self-clearing auto-advance lifecycle as the canonical quiz runtimes.
 {
- const src=read('equipment/exam-1/studio.html');
+ const src=read('equipment/assets/studio-page.js');
  if(!src.includes('function showQ(){clearTimeout(autoTimer);autoTimer=null;'))fail('Studio: render does not clear/null auto-advance timer');
  if(!src.includes('function nextQ(){clearTimeout(autoTimer);autoTimer=null;'))fail('Studio: manual/automatic Next leaves a stale timer handle');
  if(!src.includes('if(prior&&prior.pos===pos)return;'))fail('Studio: unchanged question renders still rewrite active session state');
@@ -382,34 +382,34 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 
 // Studio home stats should avoid temporary mapped/filtered arrays.
 {
- const src=read('equipment/exam-1/studio.html');
+ const src=read('equipment/assets/studio-page.js');
  if(src.includes('Object.entries(DB.ans).filter(')||src.includes('Object.entries(DB.flags).filter('))fail('Studio: home stats still allocate filtered entry arrays');
  if(!src.includes('for(const q of ALL){'))fail('Studio: home stats are not consolidated into the hydrated question pass');
 }
 
 // Studio custom source/topic matching should use Set membership.
 {
- const src=read('equipment/exam-1/studio.html');
+ const src=read('equipment/assets/studio-page.js');
  if(!src.includes("const bs=new Set(checkedValues('sourceChecks'))")||!src.includes("const ts=new Set(checkedValues('topicChecks'))"))fail('Studio: custom builder is not using Set membership');
 }
 
 // Studio session statistics should be computed in one pass without temporary mapped/filtered arrays.
 {
- const src=read('equipment/exam-1/studio.html');
+ const src=read('equipment/assets/studio-page.js');
  if(src.includes('session.map(q=>sessionAnswer(q.uid)).filter(Boolean)'))fail('Studio: session statistics still allocate intermediate arrays');
  if(!src.includes('for(const q of session){const r=sessionAnswer(q.uid);if(!r)continue;done++;if(r.ok)correct++}'))fail('Studio: session statistics are not consolidated into one pass');
 }
 
 // Studio should keep one canonical UID lookup Map; the redundant UID Set and legacy parsers are removed.
 {
- const src=read('equipment/exam-1/studio.html');
+ const src=read('equipment/assets/studio-page.js');
  if(!src.includes('ALL_BY_UID=new Map()')||!src.includes('ALL_BY_UID.set(q.uid,q);'))fail('Studio: canonical UID Map is missing');
  if(src.includes('ALL_UIDS'))fail('Studio: redundant UID Set remains');
  if(src.includes('function arrAfter(')||src.includes('function evalArr('))fail('Studio: obsolete legacy array parser helpers remain');
 }
 // Studio hydration should fetch independent bank sources concurrently to reduce startup latency.
 {
- const src=read('equipment/exam-1/studio.html');
+ const src=read('equipment/assets/studio-page.js');
  if(!src.includes('await Promise.all(STUDIO_SOURCES.map(source=>hydrateStudioSource(source)))'))fail('Studio: bank sources are not hydrated concurrently');
  if(!src.includes("addLoadedQuestions(qs);state.status='ready'"))fail('Studio: loaded banks are not published progressively to the selector');
  if(!src.includes('ALL_BY_UID.set(q.uid,q);'))fail('Studio: progressive hydration does not maintain the UID index incrementally');
@@ -418,7 +418,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 
 // Phase 3: Studio loading must expose per-source state and retry failures without discarding healthy banks.
 {
- const src=read('equipment/exam-1/studio.html');
+ const src=read('equipment/assets/studio-page.js');
  for(const token of ['STUDIO_SOURCE_STATE=new Map()','function renderStudioLoadState()','function retryStudioSource(key)','studio-retry-',"state.status='failed'"]) if(!src.includes(token))fail('Studio Phase 3 source reliability missing: '+token);
  if(!src.includes("home.setAttribute('aria-busy',loading?'true':'false')"))fail('Studio Phase 3 loading state does not expose aria-busy');
  if(src.includes("errors.push(label+': '"))fail('Studio Phase 3 still aggregates source failures into an unrecoverable error list');
@@ -426,7 +426,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 
 // Phase 3: unchanged imported progress and a Studio answer submission should avoid redundant storage writes.
 {
- const studio=read('equipment/exam-1/studio.html'),sync=read('equipment/assets/studio-sync.js');
+ const studio=read('equipment/assets/studio-page.js'),sync=read('equipment/assets/studio-sync.js');
  if(!studio.includes('let syncChanged=false;'))fail('Studio Phase 3 sync does not track whether imported progress changed');
  if(!studio.includes('if(prev&&prev.ok===nextOk&&prev.bank===bank&&prev.topic===q.topic)return;'))fail('Studio Phase 3 sync still rewrites unchanged imported answers');
  if(!studio.includes('if(syncChanged)save();'))fail('Studio Phase 3 sync still saves unconditionally');
@@ -436,7 +436,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 
 // Phase 3 completion: saved state is normalized, active sessions survive source outages, and flag/reset writes stay compact.
 {
- const studio=read('equipment/exam-1/studio.html'),sync=read('equipment/assets/studio-sync.js');
+ const studio=read('equipment/assets/studio-page.js'),sync=read('equipment/assets/studio-sync.js');
  for(const token of ['function normalizeSessionState(v)',"for(const field of ['active','searchReturn'])",'function reconcileActiveState()','function studioHasFailedSource()',"retry failed source first"])if(!(studio+sync).includes(token))fail('Studio Phase 3 session resilience missing: '+token);
  if(studio.includes('DB.flags[q.uid]=MBUStudio.toggleFlag'))fail('Studio Phase 3 unflagging can reintroduce false flag entries');
  if(!studio.includes("let changed=false;if(DB.active&&DB.active.answers"))fail('Studio Phase 3 reset cleanup is not batched');
@@ -452,16 +452,24 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
   if(versions.length&&versions.some(v=>v!=='69'))fail(p+': shared asset revision is not canonical v69');
  }
 }
+// Studio runtime and shared assets are build-driven, not duplicated in HTML.
+{
+ const page=read('equipment/exam-1/studio.html'),loader=read('equipment/assets/studio-loader.js');
+ if(page.includes('const STORE=MBUStudio.STORE')||page.includes('../assets/studio-sync.js?v=')||page.includes('../assets/auto-update.js?v='))fail('Studio: inline/manual-version runtime remains');
+ if(!page.includes("src:'studio-loader.js'")||!page.includes('../assets/build-bootstrap.js'))fail('Studio: build bootstrap wiring is missing');
+ for(const token of ["runtime.loadStyle('site-nav.css')","runtime.loadStyle('bank1-quiz-ui.css')","runtime.loadScript('studio-sync.js')","runtime.loadScript('navigator.js')","runtime.loadScript('calculator.js')","runtime.loadScript('studio-page.js')","runtime.loadScript('auto-update.js')"])if(!loader.includes(token))fail('Studio loader missing '+token);
+}
+
 // Studio must use direct indexed image files instead of parsing image bundles.
 {
- const src=read('equipment/exam-1/studio.html');
+ const src=read('equipment/assets/studio-page.js');
  if(src.includes('STUDIO_IMAGE_CACHE')||src.includes('meta.imageSource')||src.includes('hazards-images.json')||src.includes('bank3-images.js')||src.includes('combined-images.js'))fail('Studio: legacy image-bundle hydration remains');
  if(!src.includes('if(meta.imageBase)')||!src.includes("kind:'direct'"))fail('Studio: direct indexed image hydration is missing');
 }
 
 // Studio search should use its normalized one-time search index instead of rebuilding text per query.
 {
- const src=read('equipment/exam-1/studio.html');
+ const src=read('equipment/assets/studio-page.js');
  if(!src.includes("searchText:(stem+' '+topic+' '+exp+' '+src).toLowerCase()"))fail('Studio: normalized questions do not preindex search text');
  if(!src.includes("for(const q of ALL){if(q.searchText.includes(x)){r.push(q);if(r.length===100)break}}"))fail('Studio: search does not stop after the visible result cap');
 }
@@ -509,7 +517,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 
 // Final end-to-end regression invariants for dashboards, Studio resume/reset, and bank totals.
 {
- const studio=read('equipment/exam-1/studio.html'),manifest=JSON.parse(read('equipment/exam-1/banks.json')),bank1=manifest.banks.find(b=>b.id==='bank1');
+ const studio=read('equipment/assets/studio-page.js'),manifest=JSON.parse(read('equipment/exam-1/banks.json')),bank1=manifest.banks.find(b=>b.id==='bank1');
  if(!bank1||bank1.sets.length*bank1.questionsPerSet!==500)fail('Bank 1: manifest total is not 500');
  const b2Payload=JSON.parse(read('equipment/exam-1/data/bank2.json'));if((b2Payload.questions||[]).length!==500)fail('Bank 2: canonical question total is not 500');
  const b3Payload=JSON.parse(read('equipment/exam-1/data/bank3.json'));if((b3Payload.questions||[]).length!==500)fail('Bank 3: canonical question total is not 500');
@@ -553,7 +561,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 
 // JavaScript syntax is a release blocker. A page shell that renders while its inline script fails to parse is not valid.
 {
- const jsAssets=['equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js','equipment/assets/site-nav.js','equipment/assets/navigator.js','equipment/assets/calculator.js','equipment/assets/auto-update.js'];
+ const jsAssets=['equipment/assets/build-bootstrap.js','equipment/assets/canonical-bank-page.js','equipment/assets/studio-loader.js','equipment/assets/studio-page.js','equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js','equipment/assets/site-nav.js','equipment/assets/navigator.js','equipment/assets/calculator.js','equipment/assets/auto-update.js'];
  for(const p of jsAssets){try{new vm.Script(read(p),{filename:p})}catch(e){fail(p+': JavaScript syntax error: '+e.message)}}
  for(const p of quizFiles){
   const src=read(p),re=/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi;let m,i=0;
@@ -580,7 +588,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!updater.includes("sessionStorage.getItem(BUILD_CACHE_KEY)"))fail('Updater: build baseline is not retained per session');
  if(!updater.includes("searchParams.get('b')"))fail('Updater: canonical runtime build id is not used as the baseline');
  if(!updater.includes('const CHECK_COOLDOWN = 120000'))fail('Updater: update polling cooldown regressed');
- const studio=read('equipment/exam-1/studio.html');
+ const studio=read('equipment/assets/studio-page.js');
  if(!studio.includes('await Promise.all(STUDIO_SOURCES.map(source=>hydrateStudioSource(source)))'))fail('Studio: bank hydration is not parallelized');
  if(studio.includes("localStorage.getItem('mbu_bank3_progress')")||studio.includes("localStorage.getItem('MBU_BANK3_PROGRESS')"))fail('Studio: obsolete Bank 3 storage-key fallbacks remain');
 }

@@ -1195,13 +1195,16 @@ test.describe('canonical quiz regression', () => {
     });
   }
 
-  test('Studio legacy asset revision and updater baseline stay internally consistent', async ({ page }) => {
+  test('Studio shared assets use the current build id with no manual revisions', async ({ page }) => {
     const requests=[];
-    page.on('request', req => { if (req.url().includes('/equipment/assets/') && req.url().includes('?v=')) requests.push(req.url()); });
+    page.on('request', req => { if (req.url().includes('/equipment/assets/')) requests.push(req.url()); });
     await page.goto(exam + '/studio.html');
-    await expect(page.locator('#home')).toBeVisible();
-    expect(requests.length).toBeGreaterThan(0);
-    expect(requests.every(url => new URL(url).searchParams.get('v') === '69')).toBeTruthy();
+    await waitForStudio(page);
+    const build=await page.evaluate(() => window.MBU_BUILD_ID);
+    const versioned=requests.filter(url=>!/build-bootstrap\.js(?:\?|$)/.test(url));
+    expect(versioned.length).toBeGreaterThan(0);
+    expect(versioned.every(url => new URL(url).searchParams.get('b') === build)).toBeTruthy();
+    expect(versioned.some(url => new URL(url).searchParams.has('v'))).toBeFalsy();
     await expect.poll(() => page.evaluate(() => sessionStorage.getItem('mbu_build_manifest_v1'))).not.toBeNull();
   });
 
