@@ -3,8 +3,14 @@ const L="ABCDEF",esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",
 function start(cfg){
  const {bank:BANK,key:KEY,bankKey,badge,summaryTitle,resetMessage}=cfg,IMGS=cfg.images||{},$=s=>document.querySelector(s);
  const fresh=()=>({idx:0,ans:{},xo:{},prac:null,view:"quiz"});
- let S;try{const raw=localStorage.getItem(KEY),o=raw&&JSON.parse(raw);S=o&&typeof o.idx==="number"?o:fresh()}catch(e){S=fresh()}
- let view=S.view||"quiz",timer=null,cur={sel:[],done:false},lastSaved="";try{lastSaved=JSON.stringify(S)}catch(e){}
+ const isObj=v=>v&&typeof v==="object"&&!Array.isArray(v),ids=new Set(BANK.map(q=>String(q.id))),byQ=Object.fromEntries(BANK.map(q=>[String(q.id),q]));
+ const cleanSel=(q,v)=>Array.isArray(v)?[...new Set(v.map(Number).filter(i=>Number.isInteger(i)&&i>=0&&i<q.c.length))]:[];
+ const cleanAns=v=>{const out={};if(!isObj(v))return out;for(const [id,r] of Object.entries(v)){const q=byQ[String(id)];if(!q||!isObj(r))continue;const sel=cleanSel(q,r.sel);if(!sel.length&&r.ok!==true&&r.ok!==false)continue;out[q.id]={sel,ok:r.ok===true}}return out};
+ const cleanXo=v=>{const out={};if(!isObj(v))return out;for(const [id,a] of Object.entries(v)){const q=byQ[String(id)];if(!q)continue;const xo=cleanSel(q,a);if(xo.length)out[q.id]=xo}return out};
+ let raw=localStorage.getItem(KEY),parsed=null;try{parsed=raw&&JSON.parse(raw)}catch(e){}
+ let S=fresh();if(isObj(parsed)){S.idx=Math.max(0,Math.min(Number.isFinite(Number(parsed.idx))?Number(parsed.idx):0,Math.max(0,BANK.length-1)));S.ans=cleanAns(parsed.ans);S.xo=cleanXo(parsed.xo);S.view=["quiz","review","summary","prac"].includes(parsed.view)?parsed.view:"quiz";if(isObj(parsed.prac)){const list=[...new Set((Array.isArray(parsed.prac.list)?parsed.prac.list:[]).map(String).filter(id=>ids.has(id)))];if(list.length){S.prac={list:list.map(id=>byQ[id].id),i:Math.max(0,Math.min(Number.isFinite(Number(parsed.prac.i))?Number(parsed.prac.i):0,list.length-1)),ans:cleanAns(parsed.prac.ans)}}}if(S.view==="prac"&&!S.prac)S.view="quiz"}
+ const normalized=JSON.stringify(S);if(normalized!==raw)localStorage.setItem(KEY,normalized);
+ let view=S.view||"quiz",timer=null,cur={sel:[],done:false},lastSaved=normalized;
  const byId=Object.fromEntries(BANK.map(q=>[q.id,q])),bankIds=BANK.map(q=>q.id),same=(a,b)=>a.length===b.length&&[...a].sort().join()===[...b].sort().join();
  function save(){try{S.view=view;const next=JSON.stringify(S);if(next===lastSaved)return;localStorage.setItem(KEY,next);lastSaved=next}catch(e){}}
  function missed(){return BANK.filter(q=>S.ans[q.id]&&!S.ans[q.id].ok)}
