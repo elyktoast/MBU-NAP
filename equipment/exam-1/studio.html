@@ -279,7 +279,7 @@ async function hydrateStudioImage(q,host){
     if(!data){
       const src=await studioFetch(q.img.url),safe=String(imageKey).replace(/[^A-Za-z0-9_-]/g,'');
       if(!safe||safe!==String(imageKey))throw Error('invalid figure key');
-      let match;if(q.img.kind==='combined'){const start=src.indexOf('"'+safe+'"');if(start<0)throw Error('figure key not found');match=src.slice(start).match(/"src"\\s*:\\s*"data:image\\/(?:png|jpeg|gif|webp);base64,([A-Za-z0-9+/=]+)"/)}else match=src.match(new RegExp('"'+safe+'"\\s*:\\s*"([A-Za-z0-9+/=]+)"'));
+      let match;if(q.img.kind==='combined'){const start=src.indexOf('"'+safe+'"');if(start<0)throw Error('figure key not found');match=src.slice(start).match(new RegExp('"src"\\s*:\\s*"data:image\\/(?:png|jpeg|gif|webp);base64,([A-Za-z0-9+/=]+)"'))}else match=src.match(new RegExp('"'+safe+'"\\s*:\\s*"([A-Za-z0-9+/=]+)"'));
       if(!match)throw Error('figure payload not found');
       data=match[1];STUDIO_IMAGE_CACHE.set(cacheKey,data);
     }
