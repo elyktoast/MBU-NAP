@@ -196,7 +196,7 @@ function pick(q,i){if(cur.done)return;const s=cur.sel;if(q.type==="single")cur.s
  document.querySelectorAll(".opt").forEach(b=>b.classList.toggle("sel",cur.sel.includes(+b.dataset.i)));upd(q)}
 function cross(q,i){if(cur.done)return;const c=ctx();let a;if(c.exam){a=c.exam.xo[q.id]=c.exam.xo[q.id]||[]}else{S.t6.xo=S.t6.xo||{};a=S.t6.xo[q.id]=S.t6.xo[q.id]||[]}
  const k=a.indexOf(i);k>=0?a.splice(k,1):a.push(i);save();document.querySelector(`.opt[data-i="${i}"]`).classList.toggle("x",a.includes(i));document.querySelector(`.xo[data-x="${i}"]`).setAttribute("aria-pressed",a.includes(i))}
-function upd(q){const need=q.type==="multi"?q.n:1;const g=$("#go");g.style.display="";g.disabled=cur.sel.length!==need;g.textContent="Submit Answer";if(q.type==="multi")$("#hint").textContent=`${cur.sel.length} of ${q.n} selected. Keys: A–F select, Shift+letter cross out, Enter submit`}
+function upd(q){const need=q.type==="multi"?q.n:1,g=$("#go");$("#submitRow").style.display="flex";g.disabled=cur.sel.length!==need;g.textContent=q.type==="multi"?`Submit Selections (${cur.sel.length}/${q.n})`:"Submit Answer"}
 function submit(q){const need=q.type==="multi"?q.n:1;if(cur.sel.length!==need||cur.done)return;const ok=same(cur.sel,q.a);const c=ctx();const rec={sel:cur.sel.slice(),ok};c.store[q.id]=rec;
  if(V.mode==="t6"){if(ok)S.cleared[q.orig]=true}else{if(!ok)S.cleared[q.orig]=false}
  save();mbuStudioAnswer(q,ok);topbar();refreshMbuNavigator(c);showResult(q,rec,false)}
