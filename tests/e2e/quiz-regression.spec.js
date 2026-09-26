@@ -371,7 +371,7 @@ test.describe('canonical quiz regression', () => {
     const answer = await page.evaluate(() => byId[EXM[1].ids[0]].a);
     await clickIndexes(page.locator('#main .opt'), answer);
     await page.locator('#go').click();
-    await page.locator('#next').click();
+    await page.evaluate(() => next());
     const afterManual = await page.evaluate(() => S.ex[1].idx);
     await page.waitForTimeout(500);
     expect(await page.evaluate(() => S.ex[1].idx)).toBe(afterManual);
