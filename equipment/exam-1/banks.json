@@ -81,6 +81,35 @@
       "engine": "legacy",
       "imageSource": "combined-images.js",
       "imageKind": "combined"
+    },
+    {
+      "id": "hazards",
+      "studioKey": "hazards",
+      "label": "Workstation Hazards",
+      "short": "Hazards",
+      "page": "hazards.html",
+      "data": "data/hazards.json",
+      "description": "Three 100-question practice sets plus a 50-question Challenge Set covering Workstation Hazards & Safety.",
+      "sets": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "setLabels": {
+        "1": "Hazards Practice Set 1",
+        "2": "Hazards Practice Set 2",
+        "3": "Hazards Practice Set 3",
+        "4": "Challenge Set"
+      },
+      "setCounts": {
+        "1": 100,
+        "2": 100,
+        "3": 100,
+        "4": 50
+      },
+      "total": 350,
+      "engine": "hazards"
     }
   ],
   "hazards": {
