@@ -202,6 +202,16 @@ function syncBankData(){
     if(b3&&b3.ex)Object.values(b3.ex).forEach(exam=>Object.entries(exam.ans||{}).forEach(([id,result])=>put(byId.get(String(id)),result&&result.ok,'b3')));
     else if(b3&&b3.answered)Object.entries(b3.answered).forEach(([id,ok])=>put(byId.get(String(id)),ok,'b3'))
   }catch(e){}
+  try{
+    const combined=JSON.parse(localStorage.getItem('MBU_COMBINED_BANK_2026_V1')||'null');
+    if(combined&&combined.sets){
+      const byId=new Map((BANK_QUESTIONS.get('combined')||[]).map(q=>[String(q.uid).slice('combined-'.length),q]));
+      for(let set=1;set<=3;set++){
+        const st=combined.sets[set]||{};
+        Object.keys(st.graded||{}).forEach(id=>{if(st.graded[id])put(byId.get(String(id)),st.correct&&st.correct[id],'combined')});
+      }
+    }
+  }catch(e){}
   for(const [bank,key,kind] of [
     ['h1','SRNA_HAZARDS_BANK_1_2026_V2','graded'],
     ['h2','SRNA_HAZARDS_BANK_2_2026_V1','graded'],
