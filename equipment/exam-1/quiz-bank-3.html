@@ -114,7 +114,7 @@ function mbuReportQuestion(q){return window.MBUStudio?.report?.(3,q)}
 function mbuSyncExisting(){if(!window.MBUStudio)return;const d=mbuStudioDB();EXLIST.forEach(n=>{const e=S.ex[n];Object.entries(e.ans||{}).forEach(([id,r])=>{const q=byId[id],k=q&&mbuFlagKey(q);if(q&&r&&!d.ans[k])d.ans[k]={ok:!!r.ok,at:Date.now(),topic:q.lec||q.concept||'Other',bank:3}})});MBUStudio.save(d)}
 function bindMbuNavigator(c){document.querySelectorAll("[data-mbu-nav]").forEach(b=>b.onclick=()=>{const i=+b.dataset.mbuNav;if(V.mode==="t6")S.t6.i=i;else S.ex[V.n].idx=i;save();renderQ()})}
 function refreshMbuNavigator(c){const nav=$("#mbuNavigator");if(!nav)return;const was=nav.style.display;nav.outerHTML=mbuNavigatorHTML(c);$("#mbuNavigator").style.display=was;bindMbuNavigator(c)}
-function mbuNavigatorHTML(c){return `<div id="mbuNavigator" style="display:none;flex-wrap:wrap;gap:6px;margin:0 0 14px;max-height:180px;overflow:auto;padding:3px">${c.list.map((id,i)=>{const qq=byId[id],r=c.store[id];return MBUNavigator.button({label:i+1,active:i===c.i,flagged:mbuIsFlagged(qq),result:r?!!r.ok:null,onClick:''}).replace('<button ','<button class="ghost" data-mbu-nav="'+i+'" ')}).join('')}</div>`}
+function mbuNavigatorHTML(c){return `<div id="mbuNavigator" class="mbu-quiz-nav" style="display:none">${c.list.map((id,i)=>{const qq=byId[id],r=c.store[id];return MBUNavigator.button({label:i+1,active:i===c.i,flagged:mbuIsFlagged(qq),result:r?!!r.ok:null,onClick:''}).replace('<button ','<button data-mbu-nav="'+i+'" ')}).join('')}</div>`}
 
 
 // ----- data helpers
