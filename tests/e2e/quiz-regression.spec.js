@@ -799,6 +799,121 @@ test.describe('canonical quiz regression', () => {
   });
 
 
+  test('Bank 2 recovers from malformed saved JSON', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-2.html');
+    await page.evaluate(() => localStorage.setItem('srna_all5_groundup_v1', '{bad json'));
+    await page.reload();
+    await expect(page.locator('#dash')).toBeVisible();
+    await expect(page.locator('#bank2Overall')).toContainText('/ 500 completed');
+    await page.evaluate(() => startSet(0));
+    await expect(page.locator('#progress')).toContainText('Question 1 of');
+  });
+
+  test('Studio recovers from malformed saved JSON', async ({ page }) => {
+    await page.goto(exam + '/studio.html');
+    await page.evaluate(() => localStorage.setItem('mbu_exam1_studio_v1', '{bad json'));
+    await page.reload();
+    await waitForStudio(page);
+    await expect(page.locator('#home')).toBeVisible();
+    await expect(page.locator('#quiz')).toBeHidden();
+    expect(await page.evaluate(() => MBUStudio.db().active ?? null)).toBeNull();
+  });
+
+  test('Bank 1 clamps an impossible saved question index before rendering', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');
+    await page.evaluate(() => {
+      const bad = {
+        sets: {
+          1: { answers: {}, graded: {}, correct: {}, strikes: {}, current: 9999 }
+        },
+        missed: { 1: [], 2: [], 3: [], 4: [], 5: [] },
+        test6: { answers: {}, graded: {}, correct: {}, strikes: {}, current: 0 }
+      };
+      localStorage.setItem('SRNA_COMBINED_EXAM_SET_1_2026_V1', JSON.stringify(bad));
+    });
+    await page.reload();
+    await page.locator('#cards button').filter({ hasText: /start|continue/i }).first().click();
+    await expect(page.locator('#quiz')).toBeVisible();
+    await expect(page.locator('#progress')).toContainText('Question 100 of 100');
+    expect(await page.locator('#stem').textContent()).toBeTruthy();
+  });
+
+  test('Bank 2 clamps impossible saved positions and remains usable', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-2.html');
+    await page.evaluate(() => {
+      localStorage.setItem('srna_all5_groundup_v1', JSON.stringify({
+        sets: {
+          0: { answered: {}, missed: [], selections: {}, crosses: {}, current: -200 }
+        }
+      }));
+    });
+    await page.reload();
+    await page.evaluate(() => startSet(0));
+    await expect(page.locator('#progress')).toContainText('Question 1 of');
+    await expect(page.locator('#choices .choice').first()).toBeVisible();
+
+    await page.evaluate(() => {
+      const d = JSON.parse(localStorage.getItem('srna_all5_groundup_v1'));
+      d.sets['0'].current = 9999;
+      localStorage.setItem('srna_all5_groundup_v1', JSON.stringify(d));
+    });
+    await page.reload();
+    await page.evaluate(() => startSet(0));
+    await expect(page.locator('#progress')).toContainText('Question 100 of 100');
+  });
+
+  test('Studio clamps an impossible active-session position on resume', async ({ page }) => {
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    await page.evaluate(() => {
+      const qs = ALL.slice(0, 3);
+      DB.active = {
+        uids: qs.map(q => q.uid),
+        pos: 9999,
+        answers: {},
+        updated: Date.now()
+      };
+      save();
+      renderHome();
+    });
+    await expect(page.locator('#resumeActive')).toBeVisible();
+    await page.locator('#resumeActive').click();
+    await expect(page.locator('#qprog')).toContainText('Question 3 of 3');
+    expect(await page.evaluate(() => pos)).toBe(2);
+  });
+
+  test('Studio recovers a partially missing active session without crashing', async ({ page }) => {
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    const keptUid = await page.evaluate(() => {
+      const q = ALL[0];
+      DB.active = {
+        uids: ['missing:uid', q.uid, 'also:missing'],
+        pos: 2,
+        answers: { [q.uid]: { ok: true, selected: [...q.ans], at: Date.now() } },
+        updated: Date.now()
+      };
+      save();
+      return q.uid;
+    });
+    await page.reload();
+    await waitForStudio(page);
+    await expect(page.locator('#resumeActive')).toContainText('Question 1 / 1');
+    const active = await page.evaluate(() => MBUStudio.db().active);
+    expect(active.uids).toEqual([keptUid]);
+    expect(active.pos).toBe(0);
+  });
+
+  test('Updater tolerates malformed cached baseline and establishes a valid build id', async ({ page }) => {
+    await page.goto(exam + '/index.html');
+    await page.evaluate(() => sessionStorage.setItem('mbu_build_manifest_v1', ''));
+    await page.reload();
+    await expect.poll(() => page.evaluate(() => sessionStorage.getItem('mbu_build_manifest_v1'))).not.toBeNull();
+    const value = await page.evaluate(() => sessionStorage.getItem('mbu_build_manifest_v1'));
+    expect(value).toMatch(/^2026-/);
+  });
+
+
   test('Shared asset revisions and updater baseline stay canonical', async ({ page }) => {
     const requests=[];
     page.on('request', req => { if (req.url().includes('/equipment/assets/') && req.url().includes('?v=')) requests.push(req.url()); });
