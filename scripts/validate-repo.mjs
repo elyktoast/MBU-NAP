@@ -72,7 +72,7 @@ function checkAssetVersions(){
     const versioned=refs.filter(ref=>ref.includes('?v='));
     const versions=versioned.map(ref=>new URL(ref,'https://mbu.local/equipment/exam-1/').searchParams.get('v')).filter(Boolean);
     if(versions.length&&new Set(versions).size!==1)fail(p+': mixed shared asset cache revisions: '+[...new Set(versions)].join(', '));
-    if(versions.some(v=>v!=='61'))fail(p+': stale shared asset cache revision; expected v61');
+    if(versions.some(v=>v!=='62'))fail(p+': stale shared asset cache revision; expected v62');
   }
 }
 checkAssetVersions();
