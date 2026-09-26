@@ -183,22 +183,21 @@ checkHazardNavigators();
  if(!nav.includes("sessionStorage.removeItem('mbu_build_manifest_v1')")||!nav.includes("u.searchParams.set('_mbu_refresh',Date.now().toString())")||!nav.includes('location.replace(u.href)'))fail('Site nav: MBU-NAP brand does not perform a cache-busting refresh');
 }
 function checkCanonicalSubmission(){
-  const bank2=read('equipment/exam-1/quiz-bank-2.html');
-  const combined=read('equipment/exam-1/combined.html');
+  const engine=read('equipment/assets/quiz-engine.js');
   const studio=read('equipment/exam-1/studio.html');
   const standard=read('equipment/assets/hazards-standard-engine.js');
   const challenge=read('equipment/assets/hazards-quiz-engine.js');
-  if(bank2.includes('selected=new Set([i]);submitAnswer();return'))fail('Bank 2: single-answer questions bypass canonical Submit Answer step');
-  if(combined.includes("if(q.type==='single')selected=new Set([i]);submitAnswer()"))fail('Combined: single-answer questions bypass canonical Submit Answer step');
-  if(!combined.includes("row.style.display=graded?'none':'flex'"))fail('Combined: canonical Submit Answer row is not shown for all ungraded questions');
-  if(combined.includes('MBUNavigator.button(i+1'))fail('Combined: shared navigator is called with the legacy signature');
-  if(!combined.includes('MBUNavigator.button({label:i+1'))fail('Combined: shared canonical navigator renderer is not used');
-  if(!combined.includes('window.MBUCalculator?.besideFlag()'))fail('Combined: calculator is not exposed beside Flag during sessions');
-  if(combined.includes("selected.has(i)?'correct':'missed'"))fail('Combined: keyed correct answers still use noncanonical missed styling');
-  if(!combined.includes("if(q.answer.includes(i))b.classList.add('correct');else if(selected.has(i))b.classList.add('incorrect')"))fail('Combined: graded answer styling does not match Bank 1');
-  if(!combined.includes("else if(d>0)goDashboard()"))fail('Combined: final Next does not return to dashboard like Bank 1');
-  if(!combined.includes('function persistPosition()'))fail('Combined: canonical navigation position persistence is missing');
-  if(!bank2.includes('document.getElementById("multi-submit-row").style.display="flex"'))fail('Bank 2: canonical Submit Answer row is not shown for all ungraded questions');
+  for(const bit of [
+    "row.style.display='flex'",
+    "btn.textContent='Submit Answer'",
+    "Submit Selections (",
+    "MBUNavigator.button({label:i+1",
+    "window.MBUCalculator?.besideFlag()",
+    "if(q.answer.includes(i))b.classList.add('correct');else if(selected.includes(i))b.classList.add('incorrect')",
+    "else if(d>0)goDashboard()",
+    "function persistPosition()"
+  ]) if(!engine.includes(bit))fail('Canonical quiz engine: submission/session parity missing '+bit);
+  if(engine.includes("selected=new Set([i]);submitAnswer();return"))fail('Canonical quiz engine: single-answer questions bypass Submit Answer');
   if(studio.includes('sel=new Set([i]);grade();return'))fail('Studio: single-answer questions bypass canonical Submit Answer step');
   if(!studio.includes("submitRow.style.display='flex'"))fail('Studio: canonical Submit Answer row is not shown for all ungraded questions');
   if(standard.includes('st.answers[k]=[i];if(!reviewMode)saveDB();submitAnswer();return'))fail('Standard Hazards: single-answer questions bypass canonical Submit Answer step');
@@ -223,45 +222,33 @@ function checkStudioIndexes(){
 }
 checkStudioIndexes();
 {
- const src=read('equipment/exam-1/quiz-bank-2.html');
- if(!src.includes("autoTimer=setTimeout(()=>{autoTimer=null;nextQuestion()},350)"))fail('Bank 2: auto-advance timer is not self-clearing');
- if(!src.includes("function nextQuestion(){clearTimeout(autoTimer);autoTimer=null;"))fail('Bank 2: manual Next does not cancel pending auto-advance');
- if(!src.includes('function persistPosition()'))fail('Bank 2: navigation position is not persisted explicitly');
- if(!src.includes('persistPosition();showQ()'))fail('Bank 2: navigation does not persist position before rendering');
- const renderStart=src.indexOf('function showQ()'),renderEnd=src.indexOf('function choose(',renderStart);if(renderStart>=0&&renderEnd>renderStart&&(src.slice(renderStart,renderEnd).includes('save();')||src.slice(renderStart,renderEnd).includes('saveDB();')))fail('Bank 2: render path writes progress');
-}
-{
   const engine=read('equipment/assets/quiz-engine.js');
+  for(const bit of [
+    "autoTimer=setTimeout(()=>{autoTimer=null;currentIndex++;persistPosition();loadQuestion()},350)",
+    "function nav(d){clearTimeout(autoTimer);autoTimer=null;",
+    "function persistPosition()",
+    "function renderDashboard()",
+    "function loadQuestion()",
+    "function resetCurrent()",
+    "function migrateLegacyState"
+  ]) if(!engine.includes(bit))fail('Canonical quiz engine: runtime contract missing '+bit);
   if(!engine.includes("if(next===lastSaved)return"))fail('Canonical quiz engine: duplicate localStorage writes are not suppressed');
-  for(const p of ['equipment/exam-1/quiz-bank-2.html','equipment/exam-1/quiz-bank-3.html']){
-    const src=read(p);if(src&&!src.includes("if(next===lastSaved)return"))fail(p+': duplicate localStorage writes are not suppressed');
-  }
 }
 for(const p of ['equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js']){
   const src=read(p);
   if(!src.includes('lastSaved')||!src.includes('if(next===lastSaved)return'))fail(p+': duplicate localStorage writes are not suppressed');
 }
 function checkCanonicalNavigators(){
-  for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html']){
+  const engine=read('equipment/assets/quiz-engine.js');
+  for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html','equipment/exam-1/quiz-bank-3.html','equipment/exam-1/combined.html']){
     const src=read(p);
     if(!src.includes('../assets/navigator.js'))fail(p+': shared navigator is not loaded');
-    if(!src.includes('MBUNavigator.button'))fail(p+': canonical navigator renderer is not used');
+    if(!src.includes('../assets/quiz-engine.js'))fail(p+': canonical shared quiz engine is not loaded');
     if(src.includes('mbuNavButton('))fail(p+': obsolete navigator alias remains');
   }
+  if(!engine.includes('MBUNavigator.button'))fail('Canonical quiz engine: shared navigator renderer is missing');
 }
 checkCanonicalNavigators();
-{
- const src=read('equipment/exam-1/quiz-bank-3.html');
- if(!src.includes('if(next===lastSaved)return'))fail('Bank 3: duplicate progress writes are not suppressed');
- if(!src.includes('timer=setTimeout(()=>{timer=null;next()},350)'))fail('Bank 3: auto-advance timer is not self-clearing');
- if(!src.includes('function next(){clearTimeout(timer);timer=null;'))fail('Bank 3: manual Next does not cancel pending auto-advance');
- if(!src.includes('if(e.idx>=ids.length)e.idx=0'))fail('Bank 3: completed/out-of-range saved position is not normalized before resume');
- if(!src.includes('ids.findIndex(id=>!e.ans[id])'))fail('Bank 3: resume does not locate the next unanswered question when needed');
- if(!src.includes('if(S.cleared[q.orig])delete S.cleared[q.orig]'))fail('Bank 3: resetting an exam question leaves stale missed-review cleared state');
- if(!src.includes('id="mbuNavigator" class="mbu-quiz-nav"'))fail('Bank 3: navigator is not using the canonical shared container');
- if(src.includes('$("#hint").textContent'))fail('Bank 3: multi-select update still targets nonexistent hint element');
- if(!src.includes('Submit Selections (${cur.sel.length}/${q.n})'))fail('Bank 3: canonical multi-select submit count is missing');
-}
 {
  const src=read('equipment/assets/hazards-standard-engine.js');
  const start=src.indexOf('function loadQuestion()'),end=src.indexOf('function choose(',start);
