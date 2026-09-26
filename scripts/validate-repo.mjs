@@ -68,19 +68,18 @@ function checkBank2(){
 function checkBank3(){
   const qs=canonicalPayload('equipment/exam-1/data/bank3.json','Quiz Bank 3 canonical data',500,{1:100,2:100,3:100,4:100,5:100});
   const page=read('equipment/exam-1/quiz-bank-3.html');
-  if(!page.includes('data/bank3.json')||!page.includes('legacyFormat:"bank3"')||!page.includes('data/bank3-images.js')||!page.includes('../assets/quiz-engine.js'))fail('Bank 3: canonical data/shared engine wiring is missing');
-  const images=read('equipment/exam-1/data/bank3-images.js');for(const q of qs)if(q.imageId&&!images.includes('"'+q.imageId+'"'))fail('Bank 3: missing image asset '+q.imageId);
+  if(!page.includes('data/bank3.json')||!page.includes('legacyFormat:"bank3"')||!page.includes('imageBase:"images/bank3/"')||!page.includes('../assets/quiz-engine.js'))fail('Bank 3: canonical data/shared engine wiring is missing');
+  for(const q of qs)if(q.imageId&&!exists('equipment/exam-1/images/bank3/'+q.imageId+'.png'))fail('Bank 3: missing indexed image asset '+q.imageId);
 }
 function checkCombined(){
   const qs=canonicalPayload('equipment/exam-1/data/combined.json','Combined',150,{1:50,2:50,3:50});
-  const images=read('equipment/exam-1/combined-images.js');for(const q of qs)if(q.imageId&&!images.includes('"'+q.imageId+'"'))fail('Combined: missing image asset '+q.imageId);
+  for(const q of qs)if(q.imageId&&!exists('equipment/exam-1/images/combined/'+q.imageId+'.png'))fail('Combined: missing indexed image asset '+q.imageId);
   const page=read('equipment/exam-1/combined.html');
-  if(!page.includes('data/combined.json')||!/legacyFormat\s*:\s*['"]combined['"]/.test(page)||!page.includes('combined-images.js')||!page.includes('../assets/quiz-engine.js'))fail('Combined: canonical data/shared engine wiring is missing');
+  if(!page.includes('data/combined.json')||!/legacyFormat\\s*:\\s*['"]combined['"]/.test(page)||!page.includes('images/combined/')||!page.includes('../assets/quiz-engine.js'))fail('Combined: canonical data/shared engine wiring is missing');
 }
 function checkHazardsCanonical(){
   const qs=canonicalPayload('equipment/exam-1/data/hazards.json','Workstation Hazards',350,{1:100,2:100,3:100,4:50});
-  const images=JSON.parse(read('equipment/exam-1/data/hazards-images.json'));
-  for(const q of qs)if(q.image&&!q.imageSvg&&!images[q.image])fail('Workstation Hazards: missing image asset '+q.image);
+  for(const q of qs)if(q.image&&!q.imageSvg&&!exists('equipment/exam-1/images/hazards/'+q.image+'.png'))fail('Workstation Hazards: missing indexed image asset '+q.image);
   const standard=read('equipment/assets/hazards-standard-engine.js'),advanced=read('equipment/assets/hazards-quiz-engine.js');
   if(!standard.includes('startFromData')||!advanced.includes('startFromData'))fail('Workstation Hazards: shared engines do not load canonical data');
   for(const [p,set] of [['equipment/exam-1/hazards-100.html',1],['equipment/exam-1/hazards-bank-2.html',2],['equipment/exam-1/hazards-bank-3.html',3],['equipment/exam-1/hazards-harder.html',4]]){
@@ -88,7 +87,7 @@ function checkHazardsCanonical(){
     if(!page.includes('data/hazards.json')||!page.includes('setFilter:'+set))fail(p+': canonical Hazards data wiring is missing');
     if(page.includes('const QUESTIONS')||page.includes('const BANK=')||page.includes('const IMGS='))fail(p+': embedded Hazards question/image payload remains');
   }
-  for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html'])if(!read(p).includes('data/hazards-images.json'))fail(p+': shared Hazards image bundle is not configured');
+  for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html'])if(!read(p).includes('imageBase:"images/hazards/"'))fail(p+': indexed Hazards image path is not configured');
 }
 function checkCanonicalNewQuizBanks(){
   const manifest=JSON.parse(read('equipment/exam-1/banks.json')),engine=read('equipment/assets/quiz-engine.js');
@@ -227,8 +226,14 @@ function checkStudioIndexes(){
   if(!src.includes('if(!ALL_BY_UID.size)return;'))fail('Studio: active session can be cleared before source hydration completes');
   if(!src.includes('id="studio-submit-row"')||!src.includes('class="explain"')||!src.includes('id="fbCitation" class="cite"'))fail('Studio: quiz session is not using canonical Bank 1 structure');
   if(src.includes('Studio quiz view: keep the normal question workflow within a desktop viewport.'))fail('Studio: obsolete quiz-specific compact layout remains');
-  if(!src.includes("meta.imageKind==='bank3'")||!src.includes('async function hydrateStudioImage(q,host)')||!src.includes('STUDIO_IMAGE_CACHE'))fail('Studio: canonical image questions are not lazily hydrated');
+  if(!src.includes('if(meta.imageBase)')||!src.includes("img={kind:'direct',url:meta.imageBase")||!src.includes("q.img.kind==='direct'"))fail('Studio: canonical image questions are not using indexed image paths');
   if(!src.includes("document.body.classList.toggle('mbu-quiz-active',id==='quiz')")||!src.includes('body.mbu-quiz-active>.wrap>.top{display:none}'))fail('Studio: canonical quiz is still wrapped by the extra Studio shell');
+}
+{
+ const engine=read('equipment/assets/quiz-engine.js'),haz=read('equipment/assets/hazards-quiz-engine.js');
+ for(const p of ['equipment/exam-1/combined-images.js','equipment/exam-1/data/bank3-images.js','equipment/exam-1/data/hazards-images.json'])if(exists(p))fail('Indexed images: obsolete bundle still exists '+p);
+ if(engine.includes('MBU_IMAGE_SOURCE_CACHE')||engine.includes('imageBundleText(')||engine.includes('imageSource'))fail('Canonical quiz engine: legacy image-bundle fallback remains');
+ if(haz.includes('IMGS[q.img]')||haz.includes('imageUrl'))fail('Hazards engine: legacy image-bundle fallback remains');
 }
 checkStudioIndexes();
 {
@@ -405,11 +410,11 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(src.includes('ALL_BY_UID=new Map(ALL.map(q=>[q.uid,q]))'))fail('Studio: progressive hydration still rebuilds the full UID index');
 }
 
-// Studio must not parse large embedded Hazards image maps during bank hydration.
+// Studio must use direct indexed image files instead of parsing image bundles.
 {
  const src=read('equipment/exam-1/studio.html');
- if(src.includes("t.match(/const IMGS=(\\{[\\s\\S]*?\\});/)"))fail('Studio: Hazards image payload is still eagerly parsed');
- if(!src.includes("meta.imageKind==='hazards'")||!src.includes("url:meta.imageSource"))fail('Studio: Hazards images are not represented lazily');
+ if(src.includes('STUDIO_IMAGE_CACHE')||src.includes('meta.imageSource')||src.includes('hazards-images.json')||src.includes('bank3-images.js')||src.includes('combined-images.js'))fail('Studio: legacy image-bundle hydration remains');
+ if(!src.includes('if(meta.imageBase)')||!src.includes("kind:'direct'"))fail('Studio: direct indexed image hydration is missing');
 }
 
 // Studio search should use its normalized one-time search index instead of rebuilding text per query.
