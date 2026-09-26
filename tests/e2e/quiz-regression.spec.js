@@ -163,7 +163,7 @@ test.describe('canonical quiz regression', () => {
     });
     const answer = await page.evaluate(() => session[pos].ans);
     await clickIndexes(page.locator('#opts .opt'), answer);
-    if (answer.length > 1) await page.locator('#submit').click();
+    await page.locator('#submit').click();
     await page.waitForTimeout(450);
     await expect(page.locator('#qprog')).toContainText('Question 2 of 2');
 
