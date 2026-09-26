@@ -19,7 +19,10 @@ test.describe('canonical quiz regression', () => {
     await page.locator('#options .opt').first().click();
     if (await page.locator('#submit-multi').isVisible()) await page.locator('#submit-multi').click();
 
-    await page.waitForTimeout(450);
+    await expect.poll(async () => {
+      const state = await storageJSON(page, 'SRNA_COMBINED_EXAM_SET_1_2026_V1');
+      return state?.sets?.['1']?.current ?? 0;
+    }).toBeGreaterThanOrEqual(0);
     const before = (await page.locator('#progress').textContent()).trim();
     await page.reload();
     await expect(page.locator('#dashboard')).toBeVisible();
@@ -52,7 +55,7 @@ test.describe('canonical quiz regression', () => {
     let state = await storageJSON(page, 'srna_all5_groundup_v1');
     expect(state?.sets?.['0']?.answered?.['0']).toBeUndefined();
     await page.locator('#submitBtn').click();
-    await page.waitForTimeout(450);
+    await expect(page.locator('#progress')).toContainText('Question 2 of');
 
     state = await storageJSON(page, 'srna_all5_groundup_v1');
     expect(state.sets['0'].answered['0']).toBe(true);
@@ -88,7 +91,7 @@ test.describe('canonical quiz regression', () => {
     let state = await storageJSON(page, 'srna_equipment_dashboard_v1');
     expect(state).toBeNull();
     await page.locator('#go').click();
-    await page.waitForTimeout(450);
+    await expect(page.locator('.progress')).toContainText('Question 2 of');
     state = await storageJSON(page, 'srna_equipment_dashboard_v1');
     expect(Object.keys(state.ex['1'].ans || {})).toHaveLength(1);
     expect(state.ex['1'].idx).toBe(1);
@@ -132,8 +135,6 @@ test.describe('canonical quiz regression', () => {
     let state = await storageJSON(page, 'SRNA_HAZARDS_BANK_1_2026_V2');
     expect(state?.graded?.['1']).toBeUndefined();
     await page.locator('#submit-multi').click();
-    await page.waitForTimeout(450);
-
     await expect(page.locator('#progress')).toContainText('Question 2 of');
     state = await storageJSON(page, 'SRNA_HAZARDS_BANK_1_2026_V2');
     expect(state.graded['1']).toBe(true);
@@ -158,7 +159,6 @@ test.describe('canonical quiz regression', () => {
     const answer = await page.evaluate(() => BANK[0].a);
     await clickIndexes(page.locator('#choices .opt'), answer);
     await page.locator('#go').click();
-    await page.waitForTimeout(450);
     await expect(page.locator('.progress')).toContainText('Question 2 of');
 
     const state = await storageJSON(page, 'hazards_practice3_progress_2026_V2');
@@ -173,7 +173,7 @@ test.describe('canonical quiz regression', () => {
     const answer = await page.evaluate(() => QUESTIONS[0].answer);
     await clickIndexes(page.locator('#options .opt'), answer);
     await page.locator('#submit-multi').click();
-    await page.waitForTimeout(450);
+    await expect(page.locator('#progress')).toContainText('Question 2 of');
     const state = await storageJSON(page, 'SRNA_HAZARDS_BANK_2_2026_V1');
     expect(state.graded['1']).toBe(true);
     expect(state.correct['1']).toBe(true);
@@ -185,7 +185,10 @@ test.describe('canonical quiz regression', () => {
     const answer = await page.evaluate(() => BANK[0].a);
     await clickIndexes(page.locator('#choices .opt'), answer);
     await page.locator('#go').click();
-    await page.waitForTimeout(100);
+    await expect.poll(async () => {
+      const state = await storageJSON(page, 'hazards_harder_progress_2026_V1');
+      return state ? Object.keys(state.ans || {}).length : 0;
+    }).toBe(1);
 
     const canonical = await storageJSON(page, 'hazards_harder_progress_2026_V1');
     expect(canonical).not.toBeNull();
@@ -244,7 +247,6 @@ test.describe('canonical quiz regression', () => {
     const answer = await page.evaluate(() => session[pos].ans);
     await clickIndexes(page.locator('#opts .opt'), answer);
     await page.locator('#submit').click();
-    await page.waitForTimeout(450);
     await expect(page.locator('#qprog')).toContainText('Question 2 of 2');
 
     await page.reload();
@@ -338,7 +340,10 @@ test.describe('canonical quiz regression', () => {
     });
     await clickIndexes(page.locator('#options .opt'), Array.isArray(answer) ? answer : [answer]);
     if (await page.locator('#submit-multi').isVisible()) await page.locator('#submit-multi').click();
-    await page.waitForTimeout(450);
+    await expect.poll(async () => {
+      const state = await storageJSON(page, 'SRNA_COMBINED_EXAM_SET_1_2026_V1');
+      return Object.keys(state?.sets?.['1']?.graded || {}).length;
+    }).toBe(1);
     await page.reload();
     await expect(page.locator('#overall')).toContainText('1 / 500 completed');
   });
@@ -349,7 +354,10 @@ test.describe('canonical quiz regression', () => {
     const answer = await page.evaluate(() => SETS[0][0].correct);
     await clickIndexes(page.locator('#choices .choice'), answer);
     await page.locator('#submitBtn').click();
-    await page.waitForTimeout(450);
+    await expect.poll(async () => {
+      const state = await storageJSON(page, 'srna_all5_groundup_v1');
+      return Object.keys(state?.sets?.['0']?.answered || {}).length;
+    }).toBe(1);
     await page.reload();
     await expect(page.locator('#bank2Overall')).toContainText('1 / 500 completed');
   });
@@ -360,7 +368,10 @@ test.describe('canonical quiz regression', () => {
     const answer = await page.evaluate(() => byId[EXM[1].ids[0]].a);
     await clickIndexes(page.locator('#main .opt'), answer);
     await page.locator('#go').click();
-    await page.waitForTimeout(450);
+    await expect.poll(async () => {
+      const state = await storageJSON(page, 'srna_equipment_dashboard_v1');
+      return Object.keys(state?.ex?.['1']?.ans || {}).length;
+    }).toBe(1);
     await page.reload();
     await expect(page.locator('#stats')).toContainText('1 / 500');
   });
@@ -373,7 +384,7 @@ test.describe('canonical quiz regression', () => {
     await page.locator('#go').click();
     await page.evaluate(() => next());
     const afterManual = await page.evaluate(() => S.ex[1].idx);
-    await page.waitForTimeout(500);
+    expect(await page.evaluate(() => autoTimer)).toBeNull();
     expect(await page.evaluate(() => S.ex[1].idx)).toBe(afterManual);
   });
 
@@ -456,9 +467,8 @@ test.describe('canonical quiz regression', () => {
     });
     await clickIndexes(page.locator('#main .opt'), data.answer);
     await page.locator('#go').click();
-    await page.waitForTimeout(500);
-    expect(await page.evaluate(() => S.ex[1].idx)).toBe(data.last + 1);
     await expect(page.locator('#main')).toContainText('complete');
+    expect(await page.evaluate(() => S.ex[1].idx)).toBe(data.last + 1);
   });
 
   test('Studio completed single-question session clears active state and stays completed after reload', async ({ page }) => {
@@ -473,7 +483,6 @@ test.describe('canonical quiz regression', () => {
     const answer=await page.evaluate(() => session[0].ans);
     await clickIndexes(page.locator('#opts .opt'),answer);
     await page.locator('#submit').click();
-    await page.waitForTimeout(450);
     await expect(page.locator('#home')).toBeVisible();
     expect(await page.evaluate(() => DB.active)).toBeNull();
     await page.reload();
