@@ -328,6 +328,99 @@ test.describe('canonical quiz regression', () => {
     expect(errors).toEqual([]);
   });
 
+
+  test('Bank 1 dashboard completed total updates after grading and survives reload', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');
+    await page.locator('#cards button').filter({ hasText: /start|continue/i }).first().click();
+    const answer = await page.evaluate(() => {
+      const q = SETS[1][0];
+      return q.answer ?? q.correct ?? q.a;
+    });
+    await clickIndexes(page.locator('#options .opt'), Array.isArray(answer) ? answer : [answer]);
+    if (await page.locator('#submit-multi').isVisible()) await page.locator('#submit-multi').click();
+    await page.waitForTimeout(450);
+    await page.reload();
+    await expect(page.locator('#overall')).toContainText('1 / 500 completed');
+  });
+
+  test('Bank 2 dashboard completed total updates after grading and survives reload', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-2.html');
+    await page.evaluate(() => startSet(0));
+    const answer = await page.evaluate(() => SETS[0][0].correct);
+    await clickIndexes(page.locator('#choices .choice'), answer);
+    await page.locator('#submitBtn').click();
+    await page.waitForTimeout(450);
+    await page.reload();
+    await expect(page.locator('#bank2Overall')).toContainText('1 / 500 completed');
+  });
+
+  test('Bank 3 dashboard completed total updates after grading and survives reload', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-3.html');
+    await page.evaluate(() => openExam(1));
+    const answer = await page.evaluate(() => byId[EXM[1].ids[0]].a);
+    await clickIndexes(page.locator('#main .opt'), answer);
+    await page.locator('#go').click();
+    await page.waitForTimeout(450);
+    await page.reload();
+    await expect(page.locator('#stats')).toContainText('1 / 500');
+  });
+
+  test('Bank 3 manual navigation cancels pending auto-advance', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-3.html');
+    await page.evaluate(() => openExam(1));
+    const answer = await page.evaluate(() => byId[EXM[1].ids[0]].a);
+    await clickIndexes(page.locator('#main .opt'), answer);
+    await page.locator('#go').click();
+    await page.locator('#next').click();
+    const afterManual = await page.evaluate(() => S.ex[1].idx);
+    await page.waitForTimeout(500);
+    expect(await page.evaluate(() => S.ex[1].idx)).toBe(afterManual);
+  });
+
+  test('Studio mixed-bank session restores graded state after navigating away and back', async ({ page }) => {
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    await page.evaluate(() => {
+      const banks=['b1','b2','b3'];
+      session=banks.map(k => (BANK_QUESTIONS.get(k)||[]).find(q => q.ans.length===1)).filter(Boolean);
+      if(session.length!==3) throw new Error('Could not build mixed-bank Studio session');
+      pos=0;
+      DB.active={uids:session.map(q=>q.uid),pos:0,answers:{},updated:Date.now()};
+      save(); showQ();
+    });
+    const answer = await page.evaluate(() => session[0].ans);
+    await clickIndexes(page.locator('#opts .opt'), answer);
+    await page.locator('#submit').click();
+    await page.locator('#next').click();
+    await page.locator('#studioPrev').click();
+    await expect(page.locator('#opts .opt.correct')).toHaveCount(1);
+    await expect(page.locator('#fb')).toBeVisible();
+    expect(await page.evaluate(() => DB.active.pos)).toBe(0);
+  });
+
+  test('Studio reset removes only the current session answer and allows re-answering', async ({ page }) => {
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    await page.evaluate(() => {
+      session=[ALL.find(q=>q.ans.length===1)];
+      pos=0;
+      DB.active={uids:session.map(q=>q.uid),pos:0,answers:{},updated:Date.now()};
+      save(); showQ();
+    });
+    const answer = await page.evaluate(() => session[0].ans);
+    await clickIndexes(page.locator('#opts .opt'), answer);
+    await page.locator('#submit').click();
+    await expect(page.locator('#fb')).toBeVisible();
+    await page.locator('button', { hasText: 'Reset' }).click();
+    await expect(page.locator('#fb')).toBeHidden();
+    expect(await page.evaluate(() => sessionAnswer(session[0].uid))).toBeFalsy();
+    await clickIndexes(page.locator('#opts .opt'), answer);
+    await page.locator('#submit').click();
+    await expect(page.locator('#fb')).toBeVisible();
+    expect(await page.evaluate(() => sessionAnswer(session[0].uid)?.ok)).toBe(true);
+  });
+
+
   test('Shared asset revisions and updater baseline stay canonical', async ({ page }) => {
     const requests=[];
     page.on('request', req => { if (req.url().includes('/equipment/assets/') && req.url().includes('?v=')) requests.push(req.url()); });
