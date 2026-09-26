@@ -220,6 +220,26 @@ test.describe('canonical quiz regression', () => {
     expect(errors).toEqual([]);
   });
 
+  test('Combined does not fetch its image bundle until an image question is opened', async ({ page }) => {
+    const imageRequests=[];
+    page.on('request',req=>{if(req.url().includes('combined-images.js'))imageRequests.push(req.url())});
+    await page.goto(exam + '/combined.html');
+    await expect(page.locator('#overall')).toContainText('/ 150 completed');
+    expect(imageRequests).toHaveLength(0);
+    await page.evaluate(() => {
+      const q=QUESTIONS.find(x=>x.imageId);
+      if(!q)throw new Error('No Combined image question exists');
+      currentSet=q.set;
+      currentData=SETS[q.set];
+      currentIndex=currentData.findIndex(x=>x.id===q.id);
+      document.getElementById('dashboard').classList.add('hidden');
+      document.getElementById('quiz').classList.remove('hidden');
+      loadQuestion();
+    });
+    await expect(page.locator('#image img')).toBeVisible();
+    expect(imageRequests.length).toBe(1);
+  });
+
   test('Studio imports all Combined questions and lazily hydrates a Combined figure', async ({ page }) => {
     const errors = collectPageErrors(page);
     await page.goto(exam + '/studio.html');
