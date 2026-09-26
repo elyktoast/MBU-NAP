@@ -270,6 +270,15 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!src.includes('Right-click an answer to cross it out.')||!src.includes('mbu-crossout-hint'))fail('equipment/exam-1/quiz-bank-3.html: missing canonical cross-out interaction hint');
 }
 
+// Hazards dashboard must use the exact Challenge persistence key.
+{
+ const dashboard=read('equipment/exam-1/hazards.html'),challenge=read('equipment/exam-1/hazards-harder.html');
+ const m=challenge.match(/key:\s*["']([^"']+)["']/);
+ if(!m)fail('Hazards dashboard: Challenge persistence key missing from Challenge runtime');
+ else if(!dashboard.includes("'"+m[1]+"'"))fail('Hazards dashboard: Challenge aggregation key does not match Challenge persistence key');
+ if(dashboard.includes("srna_hazards_safety_harder_v1"))fail('Hazards dashboard: obsolete Challenge aggregation key remains');
+}
+
 // Studio aggregate readers must use the exact persistence keys written by each source bank.
 {
  const studio=read('equipment/exam-1/studio.html'),challenge=read('equipment/exam-1/hazards-harder.html');
