@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Combined | Practice Sets</title></head>
 <body data-mbu-bank="combined"><div id="mbu-bank-loading">Loading Combined…</div>
-<script>
-(async()=>{try{const r=await fetch('../build.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('Build manifest HTTP '+r.status);const m=await r.json();if(!m||typeof m.build!=='string'||!m.build)throw Error('Invalid build manifest');const s=document.createElement('script');s.src='../assets/canonical-bank-page.js?b='+encodeURIComponent(m.build);s.dataset.bank=document.body.dataset.mbuBank;document.body.append(s)}catch(e){console.error(e);document.getElementById('mbu-bank-loading').textContent='Quiz bank could not load: '+String(e.message||e)}})();
-</script></body></html>
+<script>window.MBU_BOOT={readyGlobal:'MBUQuizReady',scripts:[{src:'canonical-bank-page.js',waitFor:'MBUCanonicalBankReady'}]};</script>
+<script src="../assets/build-bootstrap.js"></script>
+</body></html>

@@ -1216,7 +1216,8 @@ test.describe('canonical quiz regression', () => {
       await expect(page.locator('#dashboard')).toBeVisible();
       await expect(page.locator('#overall')).toContainText(total);
       await expect(page.locator('.mbu-dashboard-title h1')).toContainText(label);
-      expect(await page.evaluate(() => MBU_QUIZ_CONFIG.id)).toBe(file==='combined.html'?'combined':file.replace('quiz-','').replace('.html',''));
+      const expectedId={'quiz-bank-1.html':'bank1','quiz-bank-2.html':'bank2','quiz-bank-3.html':'bank3','combined.html':'combined'}[file];
+      expect(await page.evaluate(() => MBU_QUIZ_CONFIG.id)).toBe(expectedId);
     }
   });
 

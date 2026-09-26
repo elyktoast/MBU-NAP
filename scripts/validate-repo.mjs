@@ -96,10 +96,10 @@ function checkCanonicalNewQuizBanks(){
     const p='equipment/exam-1/'+bank.page;if(!exists(p)){fail('Canonical bank page missing '+p);continue}
     const page=read(p);
     if(!page.includes('data-mbu-bank="'+bank.id+'"'))fail(bank.page+': page does not declare its canonical bank id');
-    if(!page.includes("../build.json?t=")||!page.includes("../assets/canonical-bank-page.js?b="))fail(bank.page+': build-driven canonical bootstrap is missing');
+    if(!page.includes("readyGlobal:'MBUQuizReady'")||!page.includes("src:'canonical-bank-page.js'")||!page.includes('../assets/build-bootstrap.js'))fail(bank.page+': build-driven canonical bootstrap is missing');
     for(const forbidden of ['id="dashboard"','id="quiz"','MBU_QUIZ_CONFIG','quiz-engine.js?v=','bank1-quiz-ui.css?v=','<style>'])if(page.includes(forbidden))fail(bank.page+': duplicated canonical implementation remains: '+forbidden);
   }
-  for(const bit of ['id="dashboard"','id="cards"','id="overall"','id="quiz"','id="set-badge"','id="mbuFlagBtn"','>Report</button>','>Navigator</button>','mbu-return','id="completed"','id="total"','id="score"','id="missed"','mbu-crossout-hint','id="multi-submit-row"','id="submit-multi"','id="explain"','id="citation"','id="prev"','id="next"',"loadStyle('bank1-quiz-ui.css')","loadScript('studio-sync.js')","loadScript('navigator.js')","loadScript('calculator.js')","loadScript('quiz-engine.js')","loadScript('auto-update.js')"])if(!renderer.includes(bit))fail('Canonical bank renderer is missing '+bit);
+  for(const bit of ['id="dashboard"','id="cards"','id="overall"','id="quiz"','id="set-badge"','id="mbuFlagBtn"','>Report</button>','>Navigator</button>','mbu-return','id="completed"','id="total"','id="score"','id="missed"','mbu-crossout-hint','id="multi-submit-row"','id="submit-multi"','id="explain"','id="citation"','id="prev"','id="next"',"runtime.loadStyle('bank1-quiz-ui.css')","runtime.loadScript('studio-sync.js')","runtime.loadScript('navigator.js')","runtime.loadScript('calculator.js')","runtime.loadScript('quiz-engine.js')","runtime.loadScript('auto-update.js')"])if(!renderer.includes(bit))fail('Canonical bank renderer is missing '+bit);
   for(const bit of ['MBUNavigator.button','MBUCalculator?.besideFlag()','goDashboard()','Submit Selections (','lastSaved'])if(!engine.includes(bit))fail('Canonical quiz engine: missing shared behavior '+bit);
 }
 function checkCopies(){
@@ -262,13 +262,10 @@ for(const p of ['equipment/assets/hazards-standard-engine.js','equipment/assets/
   if(!src.includes('lastSaved')||!src.includes('if(next===lastSaved)return'))fail(p+': duplicate localStorage writes are not suppressed');
 }
 function checkCanonicalNavigators(){
-  const engine=read('equipment/assets/quiz-engine.js');
-  for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html','equipment/exam-1/quiz-bank-3.html','equipment/exam-1/combined.html']){
-    const src=read(p);
-    if(!src.includes('../assets/navigator.js'))fail(p+': shared navigator is not loaded');
-    if(!src.includes('../assets/quiz-engine.js'))fail(p+': canonical shared quiz engine is not loaded');
-    if(src.includes('mbuNavButton('))fail(p+': obsolete navigator alias remains');
-  }
+  const engine=read('equipment/assets/quiz-engine.js'),renderer=read('equipment/assets/canonical-bank-page.js');
+  if(!renderer.includes("runtime.loadScript('navigator.js')"))fail('Canonical renderer: shared navigator is not loaded');
+  if(!renderer.includes("runtime.loadScript('quiz-engine.js')"))fail('Canonical renderer: shared quiz engine is not loaded');
+  if(renderer.includes('mbuNavButton('))fail('Canonical renderer: obsolete navigator alias remains');
   if(!engine.includes('MBUNavigator.button'))fail('Canonical quiz engine: shared navigator renderer is missing');
 }
 checkCanonicalNavigators();
@@ -287,8 +284,10 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
   if(!src.includes("timer=setTimeout(()=>{timer=null;next()},350)"))fail('Shared Hazards engine: timer is not self-clearing');
   if(!src.includes('function next(){clearTimeout(timer);timer=null;'))fail('Shared Hazards engine: manual Next does not clear pending auto-advance');
 }
-for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html','equipment/exam-1/studio.html']){
- const src=read(p); if(!src.includes('Right-click an answer to cross it out.')||!src.includes('mbu-crossout-hint'))fail(p+': missing canonical cross-out interaction hint');
+{
+ const renderer=read('equipment/assets/canonical-bank-page.js'),studio=read('equipment/exam-1/studio.html');
+ if(!renderer.includes('Right-click an answer to cross it out.')||!renderer.includes('mbu-crossout-hint'))fail('Canonical bank renderer: missing cross-out interaction hint');
+ if(!studio.includes('Right-click an answer to cross it out.')||!studio.includes('mbu-crossout-hint'))fail('Studio: missing canonical cross-out interaction hint');
 }
 for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html']){
  const src=read(p),engine=read('equipment/assets/hazards-standard-engine.js');
@@ -510,8 +509,8 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 
 // Final end-to-end regression invariants for dashboards, Studio resume/reset, and bank totals.
 {
- const b1=read('equipment/exam-1/quiz-bank-1.html'),b2=read('equipment/exam-1/quiz-bank-2.html'),b3=read('equipment/exam-1/quiz-bank-3.html'),studio=read('equipment/exam-1/studio.html');
- if(!/id=["']overall["'][^>]*>0\s*\/\s*500 completed</.test(b1))fail('Bank 1: dashboard does not expose the 500-question total');
+ const studio=read('equipment/exam-1/studio.html'),manifest=JSON.parse(read('equipment/exam-1/banks.json')),bank1=manifest.banks.find(b=>b.id==='bank1');
+ if(!bank1||bank1.sets.length*bank1.questionsPerSet!==500)fail('Bank 1: manifest total is not 500');
  const b2Payload=JSON.parse(read('equipment/exam-1/data/bank2.json'));if((b2Payload.questions||[]).length!==500)fail('Bank 2: canonical question total is not 500');
  const b3Payload=JSON.parse(read('equipment/exam-1/data/bank3.json'));if((b3Payload.questions||[]).length!==500)fail('Bank 3: canonical question total is not 500');
  for(const token of [
@@ -567,6 +566,12 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  const pages=['quiz-bank-1.html','quiz-bank-2.html','quiz-bank-3.html','combined.html'].map(p=>read('equipment/exam-1/'+p)),renderer=read('equipment/assets/canonical-bank-page.js');
  if(pages.some(src=>src.includes('<section id="quiz"')||src.includes('<section id="dashboard"')))fail('Canonical bank page duplicated the shared shell');
  if(!renderer.includes('function shell(bank)'))fail('Canonical bank renderer does not own the shared shell');
+}
+
+// Build bootstrap is the single cache-version source for canonical pages.
+{
+ const boot=read('equipment/assets/build-bootstrap.js');
+ for(const token of ["cache:'no-store'","u.searchParams.set('b',build)",'window.MBUPageReady=ready','readyGlobal'])if(!boot.includes(token))fail('Build bootstrap missing '+token);
 }
 
 // Shared asset/cache contract: every versioned shared asset reference uses the current release revision.
