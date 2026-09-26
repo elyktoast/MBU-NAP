@@ -1,0 +1,221 @@
+{
+  "schema": 1,
+  "canonicalBank": "bank1",
+  "banks": [
+    {
+      "id": "bank1",
+      "studioKey": "b1",
+      "label": "Quiz Bank 1",
+      "short": "Bank 1",
+      "creator": "ChatGPT",
+      "page": "quiz-bank-1.html",
+      "data": "data/bank1.json",
+      "description": "500 board-style practice questions across five practice sets.",
+      "sets": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "questionsPerSet": 100,
+      "storageKey": "SRNA_COMBINED_EXAM_SET_1_2026_V1",
+      "engine": "canonical"
+    },
+    {
+      "id": "bank2",
+      "studioKey": "b2",
+      "label": "Quiz Bank 2",
+      "short": "Bank 2",
+      "creator": "Gemini",
+      "page": "quiz-bank-2.html",
+      "data": "data/bank2.json",
+      "description": "500 board-style practice questions across five practice sets.",
+      "sets": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "questionsPerSet": 100,
+      "storageKey": "srna_all5_groundup_v1",
+      "engine": "legacy"
+    },
+    {
+      "id": "bank3",
+      "studioKey": "b3",
+      "label": "Quiz Bank 3",
+      "short": "Bank 3",
+      "creator": "Claude",
+      "page": "quiz-bank-3.html",
+      "data": "data/bank3.json",
+      "description": "500 board-style practice questions across five practice sets.",
+      "sets": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "questionsPerSet": 100,
+      "engine": "legacy",
+      "imageSource": "quiz-bank-3.html",
+      "imageKind": "bank3"
+    },
+    {
+      "id": "combined",
+      "studioKey": "combined",
+      "label": "Combined",
+      "short": "Combined",
+      "page": "combined.html",
+      "data": "data/combined.json",
+      "description": "150 mixed board-style equipment questions across three 50-question practice sets.",
+      "sets": [
+        1,
+        2,
+        3
+      ],
+      "questionsPerSet": 50,
+      "storageKey": "MBU_COMBINED_BANK_2026_V1",
+      "engine": "legacy",
+      "imageSource": "combined-images.js",
+      "imageKind": "combined"
+    }
+  ],
+  "hazards": {
+    "id": "hazards",
+    "label": "Workstation Hazards",
+    "short": "Hazards",
+    "page": "hazards.html",
+    "description": "Three 100-question practice sets plus a 50-question harder Challenge Set covering Workstation Hazards & Safety."
+  },
+  "studioSources": [
+    {
+      "key": "b1",
+      "bankId": "bank1",
+      "label": "Quiz Bank 1",
+      "data": "data/bank1.json",
+      "format": "canonical",
+      "sets": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "count": 100
+    },
+    {
+      "key": "b2",
+      "bankId": "bank2",
+      "label": "Quiz Bank 2",
+      "data": "data/bank2.json",
+      "format": "canonical",
+      "sets": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "count": 100
+    },
+    {
+      "key": "b3",
+      "bankId": "bank3",
+      "label": "Quiz Bank 3",
+      "data": "data/bank3.json",
+      "format": "canonical",
+      "sets": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "count": 100,
+      "imageSource": "quiz-bank-3.html",
+      "imageKind": "bank3"
+    },
+    {
+      "key": "combined",
+      "bankId": "combined",
+      "label": "Combined",
+      "data": "data/combined.json",
+      "format": "canonical",
+      "sets": [
+        1,
+        2,
+        3
+      ],
+      "count": 50,
+      "imageSource": "combined-images.js",
+      "imageKind": "combined"
+    },
+    {
+      "key": "h1",
+      "group": "hazards",
+      "label": "Hazards Practice Set 1",
+      "groupLabel": "Workstation Hazards",
+      "data": "hazards-100.html",
+      "format": "hazards-html",
+      "sets": [
+        1
+      ],
+      "count": 100,
+      "setLabels": {
+        "1": "Hazards Practice Set 1"
+      }
+    },
+    {
+      "key": "h2",
+      "group": "hazards",
+      "label": "Hazards Practice Set 2",
+      "groupLabel": "Workstation Hazards",
+      "data": "hazards-bank-2.html",
+      "format": "hazards-html",
+      "sets": [
+        1
+      ],
+      "count": 100,
+      "setLabels": {
+        "1": "Hazards Practice Set 2"
+      }
+    },
+    {
+      "key": "h3",
+      "group": "hazards",
+      "label": "Hazards Practice Set 3",
+      "groupLabel": "Workstation Hazards",
+      "data": "studio-hazards3.json",
+      "format": "hazards-json",
+      "sets": [
+        1
+      ],
+      "count": 100,
+      "setLabels": {
+        "1": "Hazards Practice Set 3"
+      },
+      "imageSource": "hazards-bank-3.html",
+      "imageKind": "hazards"
+    },
+    {
+      "key": "hh",
+      "group": "hazards",
+      "label": "Hazards Challenge Set",
+      "groupLabel": "Workstation Hazards",
+      "data": "studio-challenge.json",
+      "format": "hazards-json",
+      "sets": [
+        1
+      ],
+      "count": 50,
+      "setLabels": {
+        "1": "Challenge Set"
+      },
+      "imageSource": "hazards-harder.html",
+      "imageKind": "hazards"
+    }
+  ]
+}
