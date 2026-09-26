@@ -1,6 +1,7 @@
 (function(){
   const STORE='mbu_exam1_studio_v1';
-  let cache=null;
+  const REPORT_ENDPOINT=window.MBU_REPORT_ENDPOINT||'';
+  let cache=null,reportContext=null;
 
   function normalizeBank(bank){
     const s=String(bank ?? '').trim();
@@ -79,6 +80,92 @@
   function flagged(bank,q){return !!db().flags[key(bank,q)]}
   function toggleFlag(bank,q){const d=db(),k=key(bank,q);d.flags[k]=!d.flags[k];save(d);return !!d.flags[k]}
   function answer(bank,q,ok){const d=db(),b=normalizeBank(bank),k=key(b,q);d.ans[k]={ok:!!ok,at:Date.now(),topic:topicOf(q),bank:b};save(d)}
-  function report(bank,q){const reason=prompt('Report reason: wrong answer, ambiguous, typo, explanation issue, source issue, or other');if(!reason)return false;const d=db(),b=normalizeBank(bank);d.reports.push({uid:key(b,q),bank:b,stem:q.stem||q.q||'',reason,date:new Date().toISOString()});save(d);alert('Report saved to Study Studio on this device.');return true}
-  window.MBUStudio={STORE,db,save,key,flagged,toggleFlag,answer,report,normalizeBank,topicOf};
+
+  function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+  function arr(v){return Array.isArray(v)?v:(v===undefined||v===null?[]:[v])}
+  function questionMeta(bank,q,extra){
+    const b=normalizeBank(bank),options=arr(q.options??q.c),answer=arr(q.answer??q.correct??q.a).map(Number).filter(Number.isInteger);
+    const selected=arr(extra&&extra.selected).map(Number).filter(Number.isInteger);
+    const sourceRaw=q.citation??q.src??q.ref??'';
+    return {
+      uid:key(b,q),
+      bank:b,
+      bankLabel:String((extra&&extra.bankLabel)||q.bankLabel||b),
+      set:String((extra&&extra.set)??q.set??q.setn??''),
+      questionNumber:String((extra&&extra.questionNumber)??q.id??q.seq??''),
+      topic:topicOf(q),
+      stem:String(q.stem||q.q||''),
+      options:options.map(String),
+      answerIndexes:answer,
+      answerText:answer.map(i=>options[i]).filter(v=>v!==undefined).map(String),
+      selectedIndexes:selected,
+      selectedText:selected.map(i=>options[i]).filter(v=>v!==undefined).map(String),
+      explanation:String(q.explanation||q.why||q.exp||''),
+      source:Array.isArray(sourceRaw)?sourceRaw.join('; '):String(sourceRaw||''),
+      page:String(q.page||''),
+      pageUrl:location.href,
+      build:(document.body.innerHTML.match(/MBU_BUILD:([^<*]+)/)||[])[1]?.trim()||'',
+      userAgent:navigator.userAgent
+    };
+  }
+
+  function ensureReportUI(){
+    if(document.getElementById('mbu-report-modal'))return;
+    const style=document.createElement('style');style.id='mbu-report-style';style.textContent=
+      '#mbu-report-modal{display:none;position:fixed;inset:0;z-index:10020;background:#0008;align-items:center;justify-content:center;padding:14px}'+
+      '#mbu-report-modal.open{display:flex}.mbu-report-card{width:min(600px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:14px;padding:20px;box-shadow:0 14px 42px #0006;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1a202c}'+
+      '.mbu-report-head{display:flex;justify-content:space-between;gap:12px;align-items:center}.mbu-report-head h2{margin:0;font-size:20px;color:#1a365d}.mbu-report-close{border:0;background:transparent;font-size:28px;cursor:pointer;color:#4a5568}.mbu-report-summary{margin:12px 0;padding:11px;background:#f7fafc;border:1px solid #e2e8f0;border-radius:9px;font-size:14px}.mbu-report-field{display:grid;gap:6px;margin-top:12px}.mbu-report-field label{font-weight:750;font-size:14px}.mbu-report-field select,.mbu-report-field input,.mbu-report-field textarea{width:100%;font:inherit;font-size:16px;padding:10px;border:1px solid #a0aec0;border-radius:8px;background:#fff}.mbu-report-field textarea{min-height:110px;resize:vertical}.mbu-report-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:16px;flex-wrap:wrap}.mbu-report-btn{border:0;border-radius:8px;padding:10px 14px;font-weight:800;cursor:pointer;background:#1a365d;color:#fff}.mbu-report-btn.out{background:#fff;color:#1a365d;border:1px solid #1a365d}.mbu-report-status{min-height:20px;margin-top:10px;font-size:13px;color:#4a5568}.mbu-report-btn:disabled{opacity:.55;cursor:not-allowed}';
+    document.head.appendChild(style);
+    const wrap=document.createElement('div');
+    wrap.innerHTML='<div id="mbu-report-modal" role="dialog" aria-modal="true" aria-labelledby="mbu-report-title"><form class="mbu-report-card" id="mbu-report-form"><div class="mbu-report-head"><h2 id="mbu-report-title">Report Question Issue</h2><button class="mbu-report-close" type="button" aria-label="Close report form">&times;</button></div><div class="mbu-report-summary" id="mbu-report-summary"></div><div class="mbu-report-field"><label for="mbu-report-reason">What is wrong?</label><select id="mbu-report-reason" required><option value="">Choose an issue</option><option>Wrong answer</option><option>Ambiguous question</option><option>Typo / wording</option><option>Explanation issue</option><option>Source / citation issue</option><option>Image / figure issue</option><option>Other</option></select></div><div class="mbu-report-field"><label for="mbu-report-comment">Tell me what you noticed</label><textarea id="mbu-report-comment" maxlength="2000" required placeholder="Example: I think choices B and C could both be correct because..."></textarea></div><div class="mbu-report-field"><label for="mbu-report-name">Your name (optional)</label><input id="mbu-report-name" maxlength="80" autocomplete="name" placeholder="Optional"></div><div class="mbu-report-actions"><button class="mbu-report-btn out" type="button" id="mbu-report-cancel">Cancel</button><button class="mbu-report-btn" type="submit" id="mbu-report-submit">Send Report</button></div><div class="mbu-report-status" id="mbu-report-status" role="status" aria-live="polite"></div></form></div>';
+    document.body.appendChild(wrap);
+    const modal=document.getElementById('mbu-report-modal');
+    const close=()=>{modal.classList.remove('open');reportContext=null};
+    document.querySelector('.mbu-report-close').onclick=close;
+    document.getElementById('mbu-report-cancel').onclick=close;
+    modal.addEventListener('click',e=>{if(e.target===modal)close()});
+    document.getElementById('mbu-report-form').addEventListener('submit',submitReport);
+  }
+
+  async function submitReport(e){
+    e.preventDefault();
+    if(!reportContext)return;
+    const reason=document.getElementById('mbu-report-reason').value.trim();
+    const comment=document.getElementById('mbu-report-comment').value.trim();
+    const reporter=document.getElementById('mbu-report-name').value.trim();
+    if(!reason||!comment)return;
+    const submit=document.getElementById('mbu-report-submit'),status=document.getElementById('mbu-report-status');
+    submit.disabled=true;status.textContent='Sending report…';
+    const payload={...reportContext,reason,comment,reporter,date:new Date().toISOString()};
+    const d=db(),local={...payload,sent:false};
+    d.reports.push(local);save(d);
+    try{
+      if(!REPORT_ENDPOINT)throw new Error('Reporting endpoint is not configured yet.');
+      const res=await fetch(REPORT_ENDPOINT,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload),cache:'no-store'});
+      if(!res.ok)throw new Error('Report service returned HTTP '+res.status);
+      let result={};try{result=await res.json()}catch(_){}
+      if(result&&result.ok===false)throw new Error(result.error||'Report service rejected the report.');
+      local.sent=true;local.sentAt=new Date().toISOString();save(d);
+      status.textContent='Report sent. Thank you.';
+      setTimeout(()=>{document.getElementById('mbu-report-modal')?.classList.remove('open');reportContext=null},700);
+    }catch(err){
+      status.textContent='Could not send online. A backup was saved on this device. '+err.message;
+    }finally{submit.disabled=false}
+  }
+
+  function report(bank,q,extra){
+    ensureReportUI();
+    reportContext=questionMeta(bank,q,extra||{});
+    const modal=document.getElementById('mbu-report-modal');
+    document.getElementById('mbu-report-summary').innerHTML='<b>'+esc(reportContext.bankLabel)+(reportContext.set?' · Set '+esc(reportContext.set):'')+(reportContext.questionNumber?' · Q'+esc(reportContext.questionNumber):'')+'</b><div style="margin-top:5px">'+esc(reportContext.stem)+'</div><div style="margin-top:5px;color:#718096">ID: '+esc(reportContext.uid)+'</div>';
+    document.getElementById('mbu-report-reason').value='';
+    document.getElementById('mbu-report-comment').value='';
+    document.getElementById('mbu-report-name').value='';
+    document.getElementById('mbu-report-status').textContent='';
+    modal.classList.add('open');
+    setTimeout(()=>document.getElementById('mbu-report-reason')?.focus(),0);
+    return true;
+  }
+
+  window.MBUStudio={STORE,db,save,key,flagged,toggleFlag,answer,report,normalizeBank,topicOf,questionMeta};
 })();
