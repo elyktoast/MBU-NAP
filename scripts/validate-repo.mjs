@@ -113,7 +113,7 @@ function checkAssetVersions(){
     const versioned=refs.filter(ref=>ref.includes('?v='));
     const versions=versioned.map(ref=>new URL(ref,'https://mbu.local/equipment/exam-1/').searchParams.get('v')).filter(Boolean);
     if(versions.length&&new Set(versions).size!==1)fail(p+': mixed shared asset cache revisions: '+[...new Set(versions)].join(', '));
-    if(versions.some(v=>v!=='68'))fail(p+': stale shared asset cache revision; expected v68');
+    if(versions.some(v=>v!=='69'))fail(p+': stale shared asset cache revision; expected v69');
   }
 }
 checkAssetVersions();
@@ -223,7 +223,8 @@ function checkStudioIndexes(){
   const src=read('equipment/exam-1/studio.html');
   for(const token of ['ALL_BY_UID=new Map','BANK_QUESTIONS=new Map','ALL_BY_UID.get(uid)','BANK_QUESTIONS.get(bank)']) if(!src.includes(token))fail('Studio: missing indexed lookup '+token);
   if(src.includes("ALL.find(x=>x.uid===uid)"))fail('Studio: linear UID lookup remains in quiz path');
-  if(!src.includes('if(!ALL_BY_UID.size)return;'))fail('Studio: active session can be cleared before source hydration completes');
+  if(!src.includes("if(!DB.active||!Array.isArray(DB.active.uids)||!DB.active.uids.length||!ALL_BY_UID.size)return;"))fail('Studio: active session hydration guard is missing');
+  if(!src.includes('if(missing&&studioHasFailedSource())'))fail('Studio: active session is not preserved during a source failure');
   if(!src.includes('id="studio-submit-row"')||!src.includes('class="explain"')||!src.includes('id="fbCitation" class="cite"'))fail('Studio: quiz session is not using canonical Bank 1 structure');
   if(src.includes('Studio quiz view: keep the normal question workflow within a desktop viewport.'))fail('Studio: obsolete quiz-specific compact layout remains');
   if(!src.includes('if(meta.imageBase)')||!src.includes("img={kind:'direct',url:meta.imageBase")||!src.includes("q.img.kind==='direct'"))fail('Studio: canonical image questions are not using indexed image paths');
@@ -366,9 +367,9 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 // Shared Studio storage normalization must persist and compact dead boolean entries.
 {
  const src=read('equipment/assets/studio-sync.js');
- if(!src.includes('if(changed) save(d);'))fail('Studio sync: normalized storage is not persisted');
+ if(!src.includes('if(changed)save(d);'))fail('Studio sync: normalized storage is not persisted');
  if(src.includes('try{lastSerialized=JSON.stringify(d)}catch(e){}\n    if(changed) save(d);'))fail('Studio sync: normalization fingerprint is set before persistence');
- if(!src.includes("(field==='flags'||field==='crosses')&&!v"))fail('Studio sync: stale false flag/cross entries are not compacted');
+ if(!src.includes("if(!v){changed=true;continue}"))fail('Studio sync: stale false flag/cross entries are not compacted');
  if(!src.includes("if(next)d.flags[k]=true;else delete d.flags[k]"))fail('Studio sync: unflagging still leaves dead false entries');
  if(!src.includes('function plainObject(v)')||!src.includes('function normalizeSessionState(v)'))fail('Studio sync: structural storage normalization is missing');
 }
