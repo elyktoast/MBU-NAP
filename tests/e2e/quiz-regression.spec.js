@@ -197,6 +197,47 @@ test.describe('canonical quiz regression', () => {
     expect(await page.evaluate(() => localStorage.getItem('srna_hazards_safety_harder_v1'))).toBeNull();
   });
 
+  test('Combined bank loads, navigates, and persists a submitted answer', async ({ page }) => {
+    const errors = collectPageErrors(page);
+    await page.goto(exam + '/combined.html');
+    await expect(page.locator('#overall')).toContainText('0 / 150 completed');
+    await page.locator('#cards button').filter({ hasText: /start/i }).first().click();
+    await expect(page.locator('#quiz')).toBeVisible();
+    await page.locator('button').filter({ hasText: 'Navigator' }).click();
+    await expect(page.locator('#mbuNavigator button')).toHaveCount(50);
+    await expect(page.locator('#mbuNavigator button').first()).toHaveAttribute('aria-current','step');
+
+    const answer = await page.evaluate(() => QUESTIONS[0].answer);
+    await clickIndexes(page.locator('#options .opt'), answer);
+    await page.locator('#submit-multi').click();
+    await expect.poll(async () => {
+      const state = await storageJSON(page, 'MBU_COMBINED_BANK_2026_V1');
+      return Object.keys(state?.sets?.['1']?.graded || {}).filter(k => state.sets['1'].graded[k]).length;
+    }).toBe(1);
+
+    await page.reload();
+    await expect(page.locator('#overall')).toContainText('1 / 150 completed');
+    expect(errors).toEqual([]);
+  });
+
+  test('Studio imports all Combined questions and lazily hydrates a Combined figure', async ({ page }) => {
+    const errors = collectPageErrors(page);
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    expect(await page.evaluate(() => ALL.filter(q => q.bank === 'combined').length)).toBe(150);
+    await page.evaluate(() => {
+      const q = ALL.find(x => x.bank === 'combined' && x.img);
+      if (!q) throw new Error('No Combined image question loaded');
+      session = [q];
+      pos = 0;
+      DB.active = { uids:[q.uid], pos:0, answers:{}, updated:Date.now() };
+      save();
+      showQ();
+    });
+    await expect(page.locator('#qimage img')).toBeVisible();
+    expect(errors).toEqual([]);
+  });
+
   test('Studio-created quiz fits a standard desktop viewport without page scrolling', async ({ page }) => {
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto(exam + '/studio.html');
