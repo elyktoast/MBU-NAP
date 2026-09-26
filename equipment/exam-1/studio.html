@@ -130,7 +130,7 @@ async function loadBanks(){
         const qs=meta.setFilter?all.filter(q=>Number(q.set)===Number(meta.setFilter)):all;
         return qs.map((q,i)=>{
           let img=q.imageSvg||q.image||null;
-          if(meta.imageKind==='bank3'&&q.image)img={kind:'bank3',url:meta.imageSource,key:q.image};
+          if(meta.imageKind==='bank3'&&q.imageId)img={kind:'bank3',url:meta.imageSource,key:q.imageId};
           else if(meta.imageKind==='combined'&&q.imageId)img={kind:'combined',url:meta.imageSource,imgKey:q.imageId};
           else if(meta.imageKind==='hazards'&&q.image)img={kind:'hazards',url:meta.imageSource,imgKey:q.image};
           const studioSet=String(key).startsWith('h')?1:(q.set||1);
