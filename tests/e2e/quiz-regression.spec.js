@@ -347,6 +347,7 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#total')).toHaveText('50');
     await expect(page.locator('#score')).toHaveText('85');
     await expect(page.locator('#missed')).toHaveText('2');
+    await page.getByRole('button',{name:'Navigator'}).click();
     await expect(page.locator('#mbuNavigator button.correct')).toHaveCount(11);
     await expect(page.locator('#mbuNavigator button.incorrect')).toHaveCount(2);
   });
