@@ -88,7 +88,7 @@ function checkAssets(){
 }
 function checkStudio(){
   const src=read('equipment/exam-1/studio.html');
-  for(const name of ['quiz-bank-1.html','quiz-bank-2.html','quiz-bank-3.html','combined-questions.js','hazards-100.html','hazards-bank-2.html','hazards-bank-3.html','hazards-harder.html']) if(!src.includes(name))fail('Studio: missing source '+name);
+  for(const name of ['quiz-bank-1.html','quiz-bank-2.html','studio-bank3.json','combined-questions.js','hazards-100.html','hazards-bank-2.html','studio-hazards3.json','studio-challenge.json','quiz-bank-3.html','hazards-bank-3.html','hazards-harder.html']) if(!src.includes(name))fail('Studio: missing source/image source '+name);
   if(!src.includes("['quiz-bank-1.html','b1'")) fail('Studio: Bank 1 is not the first canonical bank source');
   const b3Start=src.indexOf("}else if(key==='b3'){"),hazardStart=src.indexOf("}else{",b3Start);
   const b3Branch=b3Start>=0&&hazardStart>b3Start?src.slice(b3Start,hazardStart):'';
@@ -106,6 +106,21 @@ function checkRuntimeSafety(){
 try{checkBank1()}catch(e){fail('Bank 1 validation crashed: '+e.message)}
 try{checkBank2()}catch(e){fail('Bank 2 validation crashed: '+e.message)}
 try{checkBank3()}catch(e){fail('Bank 3 validation crashed: '+e.message)}
+function checkStudioData(){
+  const specs=[
+    ['Bank 3','equipment/exam-1/studio-bank3.json','equipment/exam-1/quiz-bank-3.html',500],
+    ['Hazards 3','equipment/exam-1/studio-hazards3.json','equipment/exam-1/hazards-bank-3.html',100],
+    ['Hazards Challenge','equipment/exam-1/studio-challenge.json','equipment/exam-1/hazards-harder.html',50]
+  ];
+  for(const [label,dataPath,sourcePath,expected] of specs){
+    let data;try{data=JSON.parse(read(dataPath))}catch(e){fail(label+' Studio data: invalid JSON: '+e.message);continue}
+    validateQuestions(label+' Studio data',data,expected);
+    let source;try{source=parseArray(read(sourcePath),'const BANK')}catch(e){fail(label+' Studio data: canonical source could not be parsed: '+e.message);continue}
+    const sourceIds=source.map((q,i)=>String(q?.id??i+1)),dataIds=data.map((q,i)=>String(q?.id??i+1));
+    if(sourceIds.length!==dataIds.length||sourceIds.some((id,i)=>id!==dataIds[i]))fail(label+' Studio data: question IDs/order drifted from canonical source');
+  }
+}
+checkStudioData();
 checkCombined();checkCopies();checkAssets();checkStudio();checkRuntimeSafety();
 let manifest;
 try{
@@ -159,7 +174,7 @@ function checkStudioIndexes(){
   if(!src.includes('if(!ALL_BY_UID.size)return;'))fail('Studio: active session can be cleared before source hydration completes');
   if(!src.includes('id="studio-submit-row"')||!src.includes('class="explain"')||!src.includes('id="fbCitation" class="cite"'))fail('Studio: quiz session is not using canonical Bank 1 structure');
   if(src.includes('Studio quiz view: keep the normal question workflow within a desktop viewport.'))fail('Studio: obsolete quiz-specific compact layout remains');
-  if(!src.includes("{kind:'bank3',url,key:q.img}")||!src.includes('async function hydrateStudioImage(q,host)')||!src.includes('STUDIO_IMAGE_CACHE'))fail('Studio: canonical image questions are not lazily hydrated');
+  if(!src.includes("{kind:'bank3',url:'quiz-bank-3.html',key:q.img}")||!src.includes('async function hydrateStudioImage(q,host)')||!src.includes('STUDIO_IMAGE_CACHE'))fail('Studio: canonical image questions are not lazily hydrated');
   if(!src.includes("document.body.classList.toggle('mbu-quiz-active',id==='quiz')")||!src.includes('body.mbu-quiz-active>.wrap>.top{display:none}'))fail('Studio: canonical quiz is still wrapped by the extra Studio shell');
 }
 checkStudioIndexes();
@@ -315,7 +330,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 {
  const src=read('equipment/exam-1/studio.html');
  if(src.includes("t.match(/const IMGS=(\\{[\\s\\S]*?\\});/)"))fail('Studio: Hazards image payload is still eagerly parsed');
- if(!src.includes("{kind:'hazards',url,imgKey:q.img}"))fail('Studio: Hazards images are not represented lazily');
+ if(!src.includes("{kind:'hazards',url:imageUrl,imgKey:q.img}"))fail('Studio: Hazards images are not represented lazily');
 }
 
 // Studio search should use its normalized one-time search index instead of rebuilding text per query.
