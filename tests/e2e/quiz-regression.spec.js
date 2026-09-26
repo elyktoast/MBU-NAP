@@ -320,7 +320,7 @@ test.describe('canonical quiz regression', () => {
 
   test('Shared asset revisions and updater baseline stay canonical', async ({ page }) => {
     const requests=[];
-    page.on('request', req => { if (/\\/equipment\\/assets\\/.+\\?v=/.test(req.url())) requests.push(req.url()); });
+    page.on('request', req => { if (req.url().includes('/equipment/assets/') && req.url().includes('?v=')) requests.push(req.url()); });
     await page.goto(exam + '/studio.html');
     await expect(page.locator('#home')).toBeVisible();
     expect(requests.length).toBeGreaterThan(0);
