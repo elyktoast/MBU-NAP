@@ -60,9 +60,8 @@
       ],
       "questionsPerSet": 100,
       "engine": "canonical",
-      "imageSource": "data/bank3-images.js",
-      "imageKind": "bank3",
-      "storageKey": "srna_equipment_dashboard_v1"
+      "storageKey": "srna_equipment_dashboard_v1",
+      "imageBase": "images/bank3/"
     },
     {
       "id": "combined",
@@ -80,8 +79,7 @@
       "questionsPerSet": 50,
       "storageKey": "MBU_COMBINED_BANK_2026_V1",
       "engine": "canonical",
-      "imageSource": "combined-images.js",
-      "imageKind": "combined"
+      "imageBase": "images/combined/"
     },
     {
       "id": "hazards",
@@ -191,8 +189,7 @@
         5
       ],
       "count": 100,
-      "imageSource": "data/bank3-images.js",
-      "imageKind": "bank3"
+      "imageBase": "images/bank3/"
     },
     {
       "key": "combined",
@@ -206,8 +203,7 @@
         3
       ],
       "count": 50,
-      "imageSource": "combined-images.js",
-      "imageKind": "combined"
+      "imageBase": "images/combined/"
     },
     {
       "key": "h1",
@@ -255,9 +251,8 @@
       "setLabels": {
         "1": "Hazards Practice Set 3"
       },
-      "imageSource": "data/hazards-images.json",
-      "imageKind": "hazards",
-      "setFilter": 3
+      "setFilter": 3,
+      "imageBase": "images/hazards/"
     },
     {
       "key": "hh",
@@ -273,9 +268,8 @@
       "setLabels": {
         "1": "Challenge Set"
       },
-      "imageSource": "data/hazards-images.json",
-      "imageKind": "hazards",
-      "setFilter": 4
+      "setFilter": 4,
+      "imageBase": "images/hazards/"
     }
   ]
 }
