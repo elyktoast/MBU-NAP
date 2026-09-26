@@ -1,5 +1,5 @@
-/* Canonical Quiz Bank 1 runtime.
-   Every new quiz bank should use this engine and Bank 1's dashboard/session structure. */
+/* Canonical Bank 1 quiz runtime.
+   Canonical bank pages are manifest-configured and share one shell, stylesheet, and runtime. */
 const MBUQuizConfig=window.MBU_QUIZ_CONFIG||{};
 let SETS={},QUESTION_BY_SET_ID=new Map(),QUESTION_INDEX_BY_SET_ID=new Map(),db={sets:{},missed:{},test6:null},mode=null,currentSet=null,currentIndex=0,currentData=[],autoTimer=null,lastSaved='';
 const mbuSetNumbers=()=>Object.keys(SETS).map(Number).sort((a,b)=>a-b);

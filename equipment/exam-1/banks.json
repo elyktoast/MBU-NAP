@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "canonicalBank": "bank1",
   "banks": [
     {
@@ -40,7 +40,8 @@
       ],
       "questionsPerSet": 100,
       "storageKey": "srna_all5_groundup_v1",
-      "engine": "canonical"
+      "engine": "canonical",
+      "legacyFormat": "bank2"
     },
     {
       "id": "bank3",
@@ -61,7 +62,8 @@
       "questionsPerSet": 100,
       "engine": "canonical",
       "storageKey": "srna_equipment_dashboard_v1",
-      "imageBase": "images/bank3/"
+      "imageBase": "images/bank3/",
+      "legacyFormat": "bank3"
     },
     {
       "id": "combined",
@@ -79,7 +81,8 @@
       "questionsPerSet": 50,
       "storageKey": "MBU_COMBINED_BANK_2026_V1",
       "engine": "canonical",
-      "imageBase": "images/combined/"
+      "imageBase": "images/combined/",
+      "legacyFormat": "combined"
     },
     {
       "id": "hazards",

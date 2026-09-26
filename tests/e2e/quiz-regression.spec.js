@@ -1195,7 +1195,7 @@ test.describe('canonical quiz regression', () => {
     });
   }
 
-  test('Shared asset revisions and updater baseline stay canonical', async ({ page }) => {
+  test('Studio legacy asset revision and updater baseline stay internally consistent', async ({ page }) => {
     const requests=[];
     page.on('request', req => { if (req.url().includes('/equipment/assets/') && req.url().includes('?v=')) requests.push(req.url()); });
     await page.goto(exam + '/studio.html');
@@ -1203,6 +1203,33 @@ test.describe('canonical quiz regression', () => {
     expect(requests.length).toBeGreaterThan(0);
     expect(requests.every(url => new URL(url).searchParams.get('v') === '69')).toBeTruthy();
     await expect.poll(() => page.evaluate(() => sessionStorage.getItem('mbu_build_manifest_v1'))).not.toBeNull();
+  });
+
+  test('Canonical banks are manifest-configured shells with no duplicated page runtime', async ({ page }) => {
+    for (const [file,label,total] of [
+      ['quiz-bank-1.html','Quiz Bank 1','500'],
+      ['quiz-bank-2.html','Quiz Bank 2','500'],
+      ['quiz-bank-3.html','Quiz Bank 3','500'],
+      ['combined.html','Combined','150']
+    ]) {
+      await page.goto(exam + '/' + file);
+      await expect(page.locator('#dashboard')).toBeVisible();
+      await expect(page.locator('#overall')).toContainText(total);
+      await expect(page.locator('.mbu-dashboard-title h1')).toContainText(label);
+      expect(await page.evaluate(() => MBU_QUIZ_CONFIG.id)).toBe(file==='combined.html'?'combined':file.replace('quiz-','').replace('.html',''));
+    }
+  });
+
+  test('Canonical bank assets use the current build id without manual revision numbers', async ({ page }) => {
+    const requests=[];
+    page.on('request',req=>{if(req.url().includes('/equipment/assets/'))requests.push(req.url())});
+    await page.goto(exam + '/quiz-bank-1.html');
+    await expect(page.locator('#dashboard')).toBeVisible();
+    const build=await page.evaluate(async()=>{const r=await fetch('../build.json',{cache:'no-store'});return (await r.json()).build});
+    const canonical=requests.filter(url=>/canonical-bank-page|site-nav|bank1-quiz-ui|studio-sync|navigator|calculator|quiz-engine|auto-update/.test(url));
+    expect(canonical.length).toBeGreaterThanOrEqual(8);
+    expect(canonical.every(url=>new URL(url).searchParams.get('b')===build)).toBeTruthy();
+    expect(canonical.some(url=>new URL(url).searchParams.has('v'))).toBeFalsy();
   });
 
 });

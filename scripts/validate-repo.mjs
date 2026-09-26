@@ -54,28 +54,28 @@ function canonicalPayload(p,label,expected,setCounts){
 }
 function checkBank1(){
   const qs=canonicalPayload('equipment/exam-1/data/bank1.json','Quiz Bank 1',500,{1:100,2:100,3:100,4:100,5:100});
-  const page=read('equipment/exam-1/quiz-bank-1.html');
-  const engine=read('equipment/assets/quiz-engine.js');
-  if(!page.includes("dataUrl:'data/bank1.json'")||!page.includes('../assets/quiz-engine.js'))fail('Bank 1: canonical data/shared engine wiring is missing');
+  const manifest=JSON.parse(read('equipment/exam-1/banks.json')),bank=manifest.banks.find(b=>b.id==='bank1'),renderer=read('equipment/assets/canonical-bank-page.js'),engine=read('equipment/assets/quiz-engine.js');
+  if(!bank||bank.data!=='data/bank1.json'||bank.storageKey!=='SRNA_COMBINED_EXAM_SET_1_2026_V1')fail('Bank 1: canonical manifest config is missing');
+  if(!renderer.includes('window.MBU_QUIZ_CONFIG=')||!renderer.includes("loadScript('quiz-engine.js')"))fail('Bank 1: shared canonical renderer/runtime wiring is missing');
   if(!engine.includes('MBUNavigator.button')||!engine.includes('MBUCalculator?.besideFlag()'))fail('Bank 1 shared engine: canonical navigation/calculator contract is missing');
   return qs;
 }
 function checkBank2(){
   canonicalPayload('equipment/exam-1/data/bank2.json','Quiz Bank 2 canonical data',500,{1:100,2:100,3:100,4:100,5:100});
-  const page=read('equipment/exam-1/quiz-bank-2.html');
-  if(!page.includes('data/bank2.json')||!page.includes('legacyFormat:"bank2"')||!page.includes('../assets/quiz-engine.js'))fail('Bank 2: canonical data/shared engine wiring is missing');
+  const bank=JSON.parse(read('equipment/exam-1/banks.json')).banks.find(b=>b.id==='bank2');
+  if(!bank||bank.data!=='data/bank2.json'||bank.legacyFormat!=='bank2'||bank.engine!=='canonical')fail('Bank 2: canonical manifest config is missing');
 }
 function checkBank3(){
   const qs=canonicalPayload('equipment/exam-1/data/bank3.json','Quiz Bank 3 canonical data',500,{1:100,2:100,3:100,4:100,5:100});
-  const page=read('equipment/exam-1/quiz-bank-3.html');
-  if(!page.includes('data/bank3.json')||!page.includes('legacyFormat:"bank3"')||!page.includes('imageBase:"images/bank3/"')||!page.includes('../assets/quiz-engine.js'))fail('Bank 3: canonical data/shared engine wiring is missing');
+  const bank=JSON.parse(read('equipment/exam-1/banks.json')).banks.find(b=>b.id==='bank3');
+  if(!bank||bank.data!=='data/bank3.json'||bank.legacyFormat!=='bank3'||bank.imageBase!=='images/bank3/'||bank.engine!=='canonical')fail('Bank 3: canonical manifest config is missing');
   for(const q of qs)if(q.imageId&&!exists('equipment/exam-1/images/bank3/'+q.imageId+'.png'))fail('Bank 3: missing indexed image asset '+q.imageId);
 }
 function checkCombined(){
   const qs=canonicalPayload('equipment/exam-1/data/combined.json','Combined',150,{1:50,2:50,3:50});
   for(const q of qs)if(q.imageId&&!exists('equipment/exam-1/images/combined/'+q.imageId+'.png'))fail('Combined: missing indexed image asset '+q.imageId);
-  const page=read('equipment/exam-1/combined.html');
-  if(!page.includes('data/combined.json')||!/legacyFormat\s*:\s*['"]combined['"]/.test(page)||!page.includes('images/combined/')||!page.includes('../assets/quiz-engine.js'))fail('Combined: canonical data/shared engine wiring is missing');
+  const bank=JSON.parse(read('equipment/exam-1/banks.json')).banks.find(b=>b.id==='combined');
+  if(!bank||bank.data!=='data/combined.json'||bank.legacyFormat!=='combined'||bank.imageBase!=='images/combined/'||bank.engine!=='canonical')fail('Combined: canonical manifest config is missing');
 }
 function checkHazardsCanonical(){
   const qs=canonicalPayload('equipment/exam-1/data/hazards.json','Workstation Hazards',350,{1:100,2:100,3:100,4:50});
@@ -90,14 +90,16 @@ function checkHazardsCanonical(){
   for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html'])if(!read(p).includes('imageBase:"images/hazards/"'))fail(p+': indexed Hazards image path is not configured');
 }
 function checkCanonicalNewQuizBanks(){
-  const manifest=JSON.parse(read('equipment/exam-1/banks.json')),engine=read('equipment/assets/quiz-engine.js');
+  const manifest=JSON.parse(read('equipment/exam-1/banks.json')),renderer=read('equipment/assets/canonical-bank-page.js'),engine=read('equipment/assets/quiz-engine.js');
   const canonical=manifest.banks.filter(b=>b.engine==='canonical');
   for(const bank of canonical){
     const p='equipment/exam-1/'+bank.page;if(!exists(p)){fail('Canonical bank page missing '+p);continue}
     const page=read(p);
-    for(const bit of ['id="dashboard"','id="cards"','id="overall"','id="quiz"','id="set-badge"','id="mbuFlagBtn"','>Report</button>','>Navigator</button>','mbu-return','id="completed"','id="total"','id="score"','id="missed"','mbu-crossout-hint','id="multi-submit-row"','id="submit-multi"','id="explain"','id="citation"','id="prev"','id="next"','../assets/bank1-quiz-ui.css','../assets/studio-sync.js','../assets/navigator.js','../assets/calculator.js','../assets/quiz-engine.js','../assets/auto-update.js'])if(!page.includes(bit))fail(bank.page+': canonical Bank 1 shell is missing '+bit);
-    if(!page.includes(bank.data))fail(bank.page+': config dataUrl does not match banks.json');
+    if(!page.includes('data-mbu-bank="'+bank.id+'"'))fail(bank.page+': page does not declare its canonical bank id');
+    if(!page.includes("../build.json?t=")||!page.includes("../assets/canonical-bank-page.js?b="))fail(bank.page+': build-driven canonical bootstrap is missing');
+    for(const forbidden of ['id="dashboard"','id="quiz"','MBU_QUIZ_CONFIG','quiz-engine.js?v=','bank1-quiz-ui.css?v=','<style>'])if(page.includes(forbidden))fail(bank.page+': duplicated canonical implementation remains: '+forbidden);
   }
+  for(const bit of ['id="dashboard"','id="cards"','id="overall"','id="quiz"','id="set-badge"','id="mbuFlagBtn"','>Report</button>','>Navigator</button>','mbu-return','id="completed"','id="total"','id="score"','id="missed"','mbu-crossout-hint','id="multi-submit-row"','id="submit-multi"','id="explain"','id="citation"','id="prev"','id="next"',"loadStyle('bank1-quiz-ui.css')","loadScript('studio-sync.js')","loadScript('navigator.js')","loadScript('calculator.js')","loadScript('quiz-engine.js')","loadScript('auto-update.js')"])if(!renderer.includes(bit))fail('Canonical bank renderer is missing '+bit);
   for(const bit of ['MBUNavigator.button','MBUCalculator?.besideFlag()','goDashboard()','Submit Selections (','lastSaved'])if(!engine.includes(bit))fail('Canonical quiz engine: missing shared behavior '+bit);
 }
 function checkCopies(){
@@ -106,14 +108,13 @@ function checkCopies(){
   }
 }
 function checkAssetVersions(){
-  const dir=path.join(root,'equipment/exam-1');
+  const manifest=JSON.parse(read('equipment/exam-1/banks.json')),canonical=new Set(manifest.banks.filter(b=>b.engine==='canonical').map(b=>b.page)),dir=path.join(root,'equipment/exam-1');
   for(const name of fs.readdirSync(dir).filter(x=>x.endsWith('.html'))){
     const p='equipment/exam-1/'+name,src=read(p),refs=[];
-    for(const m of src.matchAll(/(?:src|href)=["'](\.\.\/assets\/[^"']+)["']/g)) refs.push(m[1]);
-    const versioned=refs.filter(ref=>ref.includes('?v='));
-    const versions=versioned.map(ref=>new URL(ref,'https://mbu.local/equipment/exam-1/').searchParams.get('v')).filter(Boolean);
+    for(const m of src.matchAll(/(?:src|href)=["'](\.\.\/assets\/[^"']+)["']/g))refs.push(m[1]);
+    if(canonical.has(name)){if(refs.some(ref=>ref.includes('?v=')))fail(p+': canonical page still has a manual asset revision');continue}
+    const versions=refs.filter(ref=>ref.includes('?v=')).map(ref=>new URL(ref,'https://mbu.local/equipment/exam-1/').searchParams.get('v')).filter(Boolean);
     if(versions.length&&new Set(versions).size!==1)fail(p+': mixed shared asset cache revisions: '+[...new Set(versions)].join(', '));
-    if(versions.some(v=>v!=='69'))fail(p+': stale shared asset cache revision; expected v69');
   }
 }
 checkAssetVersions();
@@ -561,18 +562,18 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  }
 }
 
-// Combined active-session shell must be exactly Bank 1, except for the bank-home label.
+// Canonical bank session shell has one source of truth.
 {
- const section=src=>{const a=src.indexOf('<section id="quiz"'),b=a<0?-1:src.indexOf('</section>',a);return a<0||b<0?'':src.slice(a,b+10)};
- const bank1=section(read('equipment/exam-1/quiz-bank-1.html')).replace('← Quiz Bank 1 Home','← BANK HOME');
- const combined=section(read('equipment/exam-1/combined.html')).replace('← Combined Home','← BANK HOME');
- if(!bank1||!combined||bank1!==combined)fail('Combined: active quiz session shell drifted from canonical Bank 1');
+ const pages=['quiz-bank-1.html','quiz-bank-2.html','quiz-bank-3.html','combined.html'].map(p=>read('equipment/exam-1/'+p)),renderer=read('equipment/assets/canonical-bank-page.js');
+ if(pages.some(src=>src.includes('<section id="quiz"')||src.includes('<section id="dashboard"')))fail('Canonical bank page duplicated the shared shell');
+ if(!renderer.includes('function shell(bank)'))fail('Canonical bank renderer does not own the shared shell');
 }
 
 // Shared asset/cache contract: every versioned shared asset reference uses the current release revision.
 {
  const updater=read('equipment/assets/auto-update.js');
  if(!updater.includes("sessionStorage.getItem(BUILD_CACHE_KEY)"))fail('Updater: build baseline is not retained per session');
+ if(!updater.includes("searchParams.get('b')"))fail('Updater: canonical runtime build id is not used as the baseline');
  if(!updater.includes('const CHECK_COOLDOWN = 120000'))fail('Updater: update polling cooldown regressed');
  const studio=read('equipment/exam-1/studio.html');
  if(!studio.includes('await Promise.all(STUDIO_SOURCES.map(source=>hydrateStudioSource(source)))'))fail('Studio: bank hydration is not parallelized');

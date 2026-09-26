@@ -3,9 +3,11 @@
   const BUILD_CACHE_KEY = 'mbu_build_manifest_v1';
   const script = document.currentScript;
   const manifestUrl = new URL('../build.json', script?.src || location.href);
+  const runtimeBuild = script ? new URL(script.src).searchParams.get('b') : null;
   const cachedBaseline = sessionStorage.getItem(BUILD_CACHE_KEY);
-  let baseline = cachedBaseline && cachedBaseline.trim() ? cachedBaseline.trim() : null;
-  if (!baseline && cachedBaseline !== null) sessionStorage.removeItem(BUILD_CACHE_KEY);
+  let baseline = runtimeBuild || (cachedBaseline && cachedBaseline.trim() ? cachedBaseline.trim() : null);
+  if (runtimeBuild) sessionStorage.setItem(BUILD_CACHE_KEY, runtimeBuild);
+  else if (!baseline && cachedBaseline !== null) sessionStorage.removeItem(BUILD_CACHE_KEY);
   let checking = false;
   let lastCheck = 0;
 
