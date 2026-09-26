@@ -80,14 +80,15 @@ function checkCombined(){
 function checkHazardsCanonical(){
   const qs=canonicalPayload('equipment/exam-1/data/hazards.json','Workstation Hazards',350,{1:100,2:100,3:100,4:50});
   for(const q of qs)if(q.image&&!q.imageSvg&&!exists('equipment/exam-1/images/hazards/'+q.image+'.png'))fail('Workstation Hazards: missing indexed image asset '+q.image);
-  const standard=read('equipment/assets/hazards-standard-engine.js'),advanced=read('equipment/assets/hazards-quiz-engine.js');
+  const manifest=JSON.parse(read('equipment/exam-1/banks.json')),loader=read('equipment/assets/hazards-page.js'),standard=read('equipment/assets/hazards-standard-engine.js'),advanced=read('equipment/assets/hazards-quiz-engine.js');
   if(!standard.includes('startFromData')||!advanced.includes('startFromData'))fail('Workstation Hazards: shared engines do not load canonical data');
-  for(const [p,set] of [['equipment/exam-1/hazards-100.html',1],['equipment/exam-1/hazards-bank-2.html',2],['equipment/exam-1/hazards-bank-3.html',3],['equipment/exam-1/hazards-harder.html',4]]){
-    const page=read(p);
-    if(!page.includes('data/hazards.json')||!page.includes('setFilter:'+set))fail(p+': canonical Hazards data wiring is missing');
-    if(page.includes('const QUESTIONS')||page.includes('const BANK=')||page.includes('const IMGS='))fail(p+': embedded Hazards question/image payload remains');
+  for(const def of manifest.hazards?.pages||[]){
+    const page=read('equipment/exam-1/'+def.page);
+    if(!page.includes('data-mbu-hazard="'+def.id+'"')||!page.includes("src:'hazards-page.js'")||!page.includes('../assets/build-bootstrap.js'))fail(def.page+': build-driven Hazards bootstrap is missing');
+    if(def.data!=='data/hazards.json'||![1,2,3,4].includes(def.setFilter)||!def.storageKey||!def.bankKey||!['standard','advanced'].includes(def.runtime))fail(def.page+': Hazards manifest runtime config is incomplete');
+    if(page.includes('MBUHazardsStandardEngine.startFromData(')||page.includes('MBUHazardsQuizEngine.startFromData(')||page.includes('hazards-quiz-engine.js?v=')||page.includes('hazards-standard-engine.js?v='))fail(def.page+': duplicated Hazards runtime config remains');
   }
-  for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html'])if(!read(p).includes('imageBase:"images/hazards/"'))fail(p+': indexed Hazards image path is not configured');
+  for(const token of ["runtime.loadScript('hazards-standard-engine.js')","runtime.loadScript('hazards-quiz-engine.js')",'MBUHazardsStandardEngine.startFromData','MBUHazardsQuizEngine.startFromData'])if(!loader.includes(token))fail('Hazards loader missing '+token);
 }
 function checkCanonicalNewQuizBanks(){
   const manifest=JSON.parse(read('equipment/exam-1/banks.json')),renderer=read('equipment/assets/canonical-bank-page.js'),engine=read('equipment/assets/quiz-engine.js');
@@ -108,13 +109,11 @@ function checkCopies(){
   }
 }
 function checkAssetVersions(){
-  const manifest=JSON.parse(read('equipment/exam-1/banks.json')),canonical=new Set([...manifest.banks.filter(b=>b.engine==='canonical').map(b=>b.page),'studio.html']),dir=path.join(root,'equipment/exam-1');
-  for(const name of fs.readdirSync(dir).filter(x=>x.endsWith('.html'))){
-    const p='equipment/exam-1/'+name,src=read(p),refs=[];
-    for(const m of src.matchAll(/(?:src|href)=["'](\.\.\/assets\/[^"']+)["']/g))refs.push(m[1]);
-    if(canonical.has(name)){if(refs.some(ref=>ref.includes('?v=')))fail(p+': canonical page still has a manual asset revision');continue}
-    const versions=refs.filter(ref=>ref.includes('?v=')).map(ref=>new URL(ref,'https://mbu.local/equipment/exam-1/').searchParams.get('v')).filter(Boolean);
-    if(versions.length&&new Set(versions).size!==1)fail(p+': mixed shared asset cache revisions: '+[...new Set(versions)].join(', '));
+  const pages=['index.html','equipment/index.html',...fs.readdirSync(path.join(root,'equipment/exam-1')).filter(x=>x.endsWith('.html')).map(x=>'equipment/exam-1/'+x)];
+  for(const p of pages){
+    const src=read(p);
+    if(/[?&]v=\d+/.test(src))fail(p+': manual shared-asset revision remains');
+    if((p==='index.html'||p==='equipment/index.html'||p.startsWith('equipment/exam-1/'))&&!src.includes('build-bootstrap.js')&&p!=='equipment/exam-1/banks.json')fail(p+': build bootstrap is missing');
   }
 }
 checkAssetVersions();
@@ -163,19 +162,15 @@ try{
   if(latestSourceChange&&latestManifestChange&&Number(latestManifestChange)<Number(latestSourceChange))fail('Build manifest is stale: equipment changed without publishing a new build id');
 }catch(e){fail('Build manifest is invalid JSON: '+e.message)}
 function checkHazardNavigators(){
-  const standard=read('equipment/assets/hazards-standard-engine.js');
-  const challenge=read('equipment/assets/hazards-quiz-engine.js');
-  for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html','equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
-    const src=read(p);
-    if(!src.includes('../assets/navigator.js'))fail(p+': shared Bank 1 navigator is not loaded');
-  }
+  const loader=read('equipment/assets/hazards-page.js'),standard=read('equipment/assets/hazards-standard-engine.js'),challenge=read('equipment/assets/hazards-quiz-engine.js');
+  if(!loader.includes("runtime.loadScript('navigator.js')"))fail('Hazards loader: shared Bank 1 navigator is not loaded');
   if(!standard.includes('MBUNavigator.button'))fail('Shared standard Hazards engine does not use the canonical navigator renderer');
   if(!challenge.includes('MBUNavigator.button'))fail('Shared challenge Hazards engine does not use the canonical navigator renderer');
 }
 checkHazardNavigators();
 // Hazards dashboard standard sets must count graded submissions, while answer-record sets may count saved result objects.
 {
- const src=read('equipment/exam-1/hazards.html');
+ const src=read('equipment/assets/hazards-dashboard.js');
  const standard=src.slice(src.indexOf("if(type==='array')"),src.indexOf("}else{const ans=d.ans||{}",src.indexOf("if(type==='array')")));
  if(standard.includes('done=Object.keys(ans).length'))fail('Hazards dashboard: standard sets still count saved selections as completed questions');
  if(!standard.includes("done=Object.keys(graded).filter(k=>graded[k]===true).length"))fail('Hazards dashboard: standard sets do not count graded submissions');
@@ -217,7 +212,7 @@ function checkCanonicalSubmission(){
 }
 checkCanonicalSubmission();
 {
-  const src=read('equipment/exam-1/hazards.html');
+  const src=read('equipment/assets/hazards-dashboard.js');
   if(!src.includes("(done?'Continue ':'Start ')+ids[5]"))fail('Hazards dashboard: missing Continue behavior for started sets');
 }
 function checkStudioIndexes(){
@@ -289,34 +284,21 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!renderer.includes('Right-click an answer to cross it out.')||!renderer.includes('mbu-crossout-hint'))fail('Canonical bank renderer: missing cross-out interaction hint');
  if(!studio.includes('Right-click an answer to cross it out.')||!studio.includes('mbu-crossout-hint'))fail('Studio: missing canonical cross-out interaction hint');
 }
-for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html']){
- const src=read(p),engine=read('equipment/assets/hazards-standard-engine.js');
- if(!src.includes('../assets/hazards-standard-engine.js')||!engine.includes('mbu-crossout-hint')||!engine.includes('Right-click an answer to cross it out.'))fail(p+': shared standard Hazards runtime is missing canonical cross-out hint');
-}
-for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
- const src=read(p),engine=read('equipment/assets/hazards-quiz-engine.js');
- if(!src.includes('../assets/hazards-quiz-engine.js')||!engine.includes('mbu-crossout-hint')||!engine.includes('Right-click an answer to cross it out.'))fail(p+': shared Hazards runtime is missing canonical cross-out hint');
-}
 {
- const src=read('equipment/exam-1/quiz-bank-3.html');
- if(!src.includes('Right-click an answer to cross it out.')||!src.includes('mbu-crossout-hint'))fail('equipment/exam-1/quiz-bank-3.html: missing canonical cross-out interaction hint');
+ const standard=read('equipment/assets/hazards-standard-engine.js'),advanced=read('equipment/assets/hazards-quiz-engine.js');
+ if(!standard.includes('mbu-crossout-hint')||!standard.includes('Right-click an answer to cross it out.'))fail('Shared standard Hazards runtime is missing canonical cross-out hint');
+ if(!advanced.includes('mbu-crossout-hint')||!advanced.includes('Right-click an answer to cross it out.'))fail('Shared advanced Hazards runtime is missing canonical cross-out hint');
 }
 
-// Hazards dashboard must use the exact Challenge persistence key.
+// Hazards dashboard and Studio must use the exact Challenge persistence key from the manifest.
 {
- const dashboard=read('equipment/exam-1/hazards.html'),challenge=read('equipment/exam-1/hazards-harder.html');
- const m=challenge.match(/key:\s*["']([^"']+)["']/);
- if(!m)fail('Hazards dashboard: Challenge persistence key missing from Challenge runtime');
- else if(!dashboard.includes("'"+m[1]+"'"))fail('Hazards dashboard: Challenge aggregation key does not match Challenge persistence key');
- if(dashboard.includes("srna_hazards_safety_harder_v1"))fail('Hazards dashboard: obsolete Challenge aggregation key remains');
-}
-
-// Studio aggregate readers must use the exact persistence keys written by each source bank.
-{
- const studio=read('equipment/assets/studio-page.js'),challenge=read('equipment/exam-1/hazards-harder.html');
- const m=challenge.match(/key:\s*["']([^"']+)["']/); if(!m)fail('Challenge: persistence key missing from engine config');
- else if(!studio.includes("['hh','"+m[1]+"','ans']"))fail('Studio: Challenge aggregation key does not match Challenge persistence key');
- if(studio.includes("['hh','srna_hazards_safety_harder_v1','ans']"))fail('Studio: obsolete Challenge aggregation key remains');
+ const manifest=JSON.parse(read('equipment/exam-1/banks.json')),challenge=(manifest.hazards?.pages||[]).find(x=>x.id==='hh'),dashboard=read('equipment/assets/hazards-dashboard.js'),studio=read('equipment/assets/studio-page.js');
+ if(!challenge?.storageKey)fail('Challenge: persistence key missing from manifest');
+ else{
+  if(!dashboard.includes("'"+challenge.storageKey+"'"))fail('Hazards dashboard: Challenge aggregation key does not match manifest');
+  if(!studio.includes("['hh','"+challenge.storageKey+"','ans']"))fail('Studio: Challenge aggregation key does not match manifest');
+ }
+ if((dashboard+studio).includes('srna_hazards_safety_harder_v1'))fail('Obsolete Challenge aggregation key remains');
 }
 
 // Study Studio answer state must use canonical UIDs and restore graded selections on revisit.
@@ -481,12 +463,10 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!src.includes('function prev(){clearTimeout(timer);timer=null;'))fail('Hazards shared quiz engine: Previous does not cancel auto-advance');
 }
 
-// Hazards Set 3 and Challenge must share one quiz engine; no page-local renderer/state engine.
-for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
- const src=read(p);
- if(!src.includes('../assets/hazards-quiz-engine.js'))fail(p+': shared Hazards quiz engine is not loaded');
- if(!src.includes('MBUHazardsQuizEngine.startFromData('))fail(p+': shared Hazards quiz engine is not initialized');
- for(const legacy of ['function render(){','function showResult(','function quizNavHTML(','function fresh(){']) if(src.includes(legacy))fail(p+': page-local legacy quiz engine remains: '+legacy);
+// Hazards Set 3 and Challenge share one advanced engine through the Hazards loader.
+{
+ const loader=read('equipment/assets/hazards-page.js');
+ if(!loader.includes("runtime.loadScript('hazards-quiz-engine.js')")||!loader.includes('MBUHazardsQuizEngine.startFromData'))fail('Shared advanced Hazards loader/runtime is missing');
 }
 const hazardEngine=read('equipment/assets/hazards-quiz-engine.js');
 for(const token of ['mbu-crossout-hint','MBUNavigator.button','classList.add(rec.sel.includes(i)?"ok":"miss")','timer=setTimeout(()=>{timer=null;next()},350)']) if(!hazardEngine.includes(token))fail('Shared Hazards engine missing canonical behavior: '+token);
@@ -509,9 +489,11 @@ for(const token of ['mbu-crossout-hint','MBUNavigator.button','classList.add(rec
 }
 if(!read('equipment/assets/hazards-quiz-engine.js').includes('function resetQuestion(){clearTimeout(timer);timer=null;'))fail('Shared Hazards engine reset does not cancel auto-advance');
 
-// Hazards Sets 1-2 share one standard runtime; page files contain data/config only.
-for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html']){const src=read(p);if(!src.includes('../assets/hazards-standard-engine.js'))fail(p+': shared standard Hazards engine missing');if(!src.includes('MBUHazardsStandardEngine.startFromData('))fail(p+': shared standard Hazards engine not initialized');for(const legacy of ['function loadQuestion(){','function submitAnswer(){','function renderDashboard(){'])if(src.includes(legacy))fail(p+': duplicate page-local quiz runtime remains: '+legacy)}
-
+// Hazards Sets 1-2 share one standard runtime through the Hazards loader.
+{
+ const loader=read('equipment/assets/hazards-page.js');
+ if(!loader.includes("runtime.loadScript('hazards-standard-engine.js')")||!loader.includes('MBUHazardsStandardEngine.startFromData'))fail('Shared standard Hazards loader/runtime is missing');
+}
 const sharedHazardsEngine=read('equipment/assets/hazards-quiz-engine.js');
 if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared Hazards engine has invalid default expression inside object destructuring');
 
@@ -551,17 +533,15 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!css.includes('.mbu-bank1-ui .opt.correct,.mbu-bank1-ui .opt.ok,.mbu-bank1-ui .opt.miss'))fail('Canonical UI: graded keyed-answer contract is missing');
  if(!css.includes('text-decoration:none!important;opacity:1!important'))fail('Canonical UI: graded answers do not override cross-out state');
  if(!css.includes('.mbu-bank1-ui .explain,.mbu-bank1-ui #fb.explain'))fail('Canonical UI: explanation panel contract is missing');
- for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html','equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
-  const src=read(p);
-  if(!src.includes('bank1-quiz-ui.css'))fail(p+': not linked to canonical quiz UI');
-  if(!src.includes('mbu-bank1-ui'))fail(p+': canonical quiz UI scope class missing');
- }
+ const loader=read('equipment/assets/hazards-page.js');
+ if(!loader.includes("runtime.loadStyle('bank1-quiz-ui.css')"))fail('Hazards loader: canonical quiz UI is not loaded');
+ for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html','equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html'])if(!read(p).includes('mbu-bank1-ui'))fail(p+': canonical quiz UI scope class missing');
 }
 
 
 // JavaScript syntax is a release blocker. A page shell that renders while its inline script fails to parse is not valid.
 {
- const jsAssets=['equipment/assets/build-bootstrap.js','equipment/assets/canonical-bank-page.js','equipment/assets/studio-loader.js','equipment/assets/studio-page.js','equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js','equipment/assets/site-nav.js','equipment/assets/navigator.js','equipment/assets/calculator.js','equipment/assets/auto-update.js'];
+ const jsAssets=['equipment/assets/build-bootstrap.js','equipment/assets/canonical-bank-page.js','equipment/assets/studio-loader.js','equipment/assets/studio-page.js','equipment/assets/hazards-page.js','equipment/assets/hazards-dashboard.js','equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js','equipment/assets/site-nav.js','equipment/assets/navigator.js','equipment/assets/calculator.js','equipment/assets/auto-update.js'];
  for(const p of jsAssets){try{new vm.Script(read(p),{filename:p})}catch(e){fail(p+': JavaScript syntax error: '+e.message)}}
  for(const p of quizFiles){
   const src=read(p),re=/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi;let m,i=0;
@@ -576,7 +556,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!renderer.includes('function shell(bank)'))fail('Canonical bank renderer does not own the shared shell');
 }
 
-// Build bootstrap is the single cache-version source for canonical pages.
+// Build bootstrap is the single cache-version source for all application pages.
 {
  const boot=read('equipment/assets/build-bootstrap.js');
  for(const token of ["cache:'no-store'","u.searchParams.set('b',build)",'window.MBUPageReady=ready','readyGlobal'])if(!boot.includes(token))fail('Build bootstrap missing '+token);

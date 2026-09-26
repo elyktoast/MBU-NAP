@@ -1236,4 +1236,25 @@ test.describe('canonical quiz regression', () => {
     expect(canonical.some(url=>new URL(url).searchParams.has('v'))).toBeFalsy();
   });
 
+  test('Hazards shared assets use the current build id with no manual revisions', async ({ page }) => {
+    const requests=[];page.on('request',req=>{if(req.url().includes('/equipment/assets/'))requests.push(req.url())});
+    await page.goto(exam + '/hazards-bank-3.html');
+    await expect(page.locator('#main')).toBeVisible();
+    await page.evaluate(() => MBUPageReady);
+    const build=await page.evaluate(() => window.MBU_BUILD_ID);
+    const versioned=requests.filter(url=>!/build-bootstrap\.js(?:\?|$)/.test(url));
+    expect(versioned.length).toBeGreaterThan(0);
+    expect(versioned.every(url=>new URL(url).searchParams.get('b')===build)).toBeTruthy();
+    expect(versioned.some(url=>new URL(url).searchParams.has('v'))).toBeFalsy();
+  });
+
+  test('Application dashboards load shared navigation through the build bootstrap', async ({ page }) => {
+    for(const file of ['/','/equipment/','/equipment/exam-1/','/equipment/exam-1/hazards.html']){
+      await page.goto(file);
+      await page.evaluate(() => MBUPageReady);
+      await expect(page.locator('.mbu-global-nav')).toBeVisible();
+      expect(await page.evaluate(() => !!window.MBU_BUILD_ID)).toBe(true);
+    }
+  });
+
 });

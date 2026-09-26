@@ -125,25 +125,55 @@
         "id": "haz1",
         "label": "Hazards Practice Set 1",
         "short": "Hazards 1",
-        "page": "hazards-100.html"
+        "page": "hazards-100.html",
+        "runtime": "standard",
+        "data": "data/hazards.json",
+        "setFilter": 1,
+        "storageKey": "SRNA_HAZARDS_BANK_1_2026_V2",
+        "bankKey": "h1",
+        "setNumber": 1
       },
       {
         "id": "haz2",
         "label": "Hazards Practice Set 2",
         "short": "Hazards 2",
-        "page": "hazards-bank-2.html"
+        "page": "hazards-bank-2.html",
+        "runtime": "standard",
+        "data": "data/hazards.json",
+        "setFilter": 2,
+        "storageKey": "SRNA_HAZARDS_BANK_2_2026_V1",
+        "bankKey": "h2",
+        "setNumber": 2
       },
       {
         "id": "haz3",
         "label": "Hazards Practice Set 3",
         "short": "Hazards 3",
-        "page": "hazards-bank-3.html"
+        "page": "hazards-bank-3.html",
+        "runtime": "advanced",
+        "data": "data/hazards.json",
+        "setFilter": 3,
+        "storageKey": "hazards_practice3_progress_2026_V2",
+        "bankKey": "h3",
+        "imageBase": "images/hazards/",
+        "badge": "PRACTICE SET 3",
+        "summaryTitle": "Hazards & safety complete",
+        "resetMessage": "Reset all Hazards & safety progress? This clears your answers and score."
       },
       {
         "id": "hh",
         "label": "Hazards Challenge Set",
         "short": "Challenge",
-        "page": "hazards-harder.html"
+        "page": "hazards-harder.html",
+        "runtime": "advanced",
+        "data": "data/hazards.json",
+        "setFilter": 4,
+        "storageKey": "hazards_harder_progress_2026_V1",
+        "bankKey": "hh",
+        "imageBase": "images/hazards/",
+        "badge": "CHALLENGE SET",
+        "summaryTitle": "Hazards & safety Challenge Set complete",
+        "resetMessage": "Reset all Challenge Set progress? This clears your answers and score."
       }
     ]
   },
