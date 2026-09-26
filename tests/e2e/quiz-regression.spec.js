@@ -238,7 +238,11 @@ test.describe('canonical quiz regression', () => {
 
   test('Hazards Set 3 answer state survives reload at the advanced position', async ({ page }) => {
     await page.goto(exam + '/hazards-bank-3.html');
-    const answer = await page.evaluate(() => BANK[0].a);
+    await page.evaluate(() => MBUPageReady);
+    const answer = await page.evaluate(async () => {
+      const data=await (await fetch('data/hazards.json',{cache:'no-store'})).json();
+      return data.questions.find(q=>Number(q.set)===3).answer;
+    });
     await clickIndexes(page.locator('#choices .opt'), answer);
     await page.locator('#go').click();
     await expect(page.locator('.progress')).toContainText('Question 2 of');
@@ -264,7 +268,11 @@ test.describe('canonical quiz regression', () => {
 
   test('Challenge writes only its canonical progress key', async ({ page }) => {
     await page.goto(exam + '/hazards-harder.html');
-    const answer = await page.evaluate(() => BANK[0].a);
+    await page.evaluate(() => MBUPageReady);
+    const answer = await page.evaluate(async () => {
+      const data=await (await fetch('data/hazards.json',{cache:'no-store'})).json();
+      return data.questions.find(q=>Number(q.set)===4).answer;
+    });
     await clickIndexes(page.locator('#choices .opt'), answer);
     await page.locator('#go').click();
     await expect.poll(async () => {
@@ -320,10 +328,12 @@ test.describe('canonical quiz regression', () => {
 
   test('Combined repairs legacy missed and score state in the live stats bar', async ({ page }) => {
     await page.goto(exam + '/combined.html');
-    const legacy = await page.evaluate(() => {
+    const legacy = await page.evaluate(async () => {
+      const data=await (await fetch('data/combined.json',{cache:'no-store'})).json();
+      const qs=data.questions.filter(q=>Number(q.set)===1);
       const st={answers:{},graded:{},correct:{},strikes:{},current:13};
       for(let i=0;i<13;i++){
-        const q=SETS[1][i],id=q.id;
+        const q=qs[i],id=q.id;
         st.answers[id]=[q.answer[0]];
         st.graded[id]=true;
         st.correct[id]=!(i===0||i===7);
@@ -391,16 +401,16 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/combined.html');
     await expect(page.locator('#overall')).toContainText('/ 150 completed');
     expect(imageRequests).toHaveLength(0);
-    await page.evaluate(() => {
-      const q=QUESTIONS.find(x=>x.imageId);
+    const target=await page.evaluate(async () => {
+      const data=await (await fetch('data/combined.json',{cache:'no-store'})).json();
+      const q=data.questions.find(x=>x.imageId);
       if(!q)throw new Error('No Combined image question exists');
-      currentSet=q.set;
-      currentData=SETS[q.set];
-      currentIndex=currentData.findIndex(x=>x.id===q.id);
-      document.getElementById('dashboard').classList.add('hidden');
-      document.getElementById('quiz').classList.remove('hidden');
-      loadQuestion();
+      const inSet=data.questions.filter(x=>Number(x.set)===Number(q.set));
+      return {set:Number(q.set),index:inSet.findIndex(x=>x.id===q.id)};
     });
+    await page.locator('#cards .card').nth(target.set-1).getByRole('button',{name:/start|continue/i}).click();
+    await page.getByRole('button',{name:'Navigator'}).click();
+    await page.locator('#mbuNavigator button').nth(target.index).click();
     await expect(page.locator('#image img')).toBeVisible();
     expect(imageRequests.length).toBe(1);
   });
@@ -654,9 +664,11 @@ test.describe('canonical quiz regression', () => {
   test('Hazards canonical grading overrides cross-outs and colored feedback', async ({ page }) => {
     const errors = collectPageErrors(page);
     await page.goto(exam + '/hazards-bank-3.html');
-    const data = await page.evaluate(() => {
-      const q = BANK[0];
-      return { answer: q.a, optionCount: q.c.length, multi: q.type === 'multi' };
+    await page.evaluate(() => MBUPageReady);
+    const data = await page.evaluate(async () => {
+      const raw=await (await fetch('data/hazards.json',{cache:'no-store'})).json();
+      const q=raw.questions.find(x=>Number(x.set)===3);
+      return { answer:q.answer, optionCount:q.options.length, multi:q.type==='multi' };
     });
     const options = page.locator('#main .opt');
     await expect(options).toHaveCount(data.optionCount);
@@ -806,23 +818,23 @@ test.describe('canonical quiz regression', () => {
 
   test('Bank 1 completes a full practice set through the real final-question path', async ({ page }) => {
     await page.goto(exam + '/quiz-bank-1.html');
-    await page.evaluate(() => {
-      startSet(1);
-      const st = db.sets[1];
-      for (let i = 0; i < currentData.length - 1; i++) {
-        st.answers[String(i)] = [...currentData[i].answer];
-        st.graded[String(i)] = true;
-        st.correct[String(i)] = true;
+    const seeded=await page.evaluate(async () => {
+      const data=await (await fetch('data/bank1.json',{cache:'no-store'})).json();
+      const qs=data.questions.filter(q=>Number(q.set)===1);
+      const st={answers:{},graded:{},correct:{},strikes:{},current:99};
+      for(let i=0;i<99;i++){
+        st.answers[String(i)]=[...qs[i].answer];
+        st.graded[String(i)]=true;
+        st.correct[String(i)]=true;
       }
-      st.current = currentData.length - 1;
-      currentIndex = currentData.length - 1;
-      saveDB();
-      loadQuestion();
+      const state={sets:{1:st,2:{answers:{},graded:{},correct:{},strikes:{},current:0},3:{answers:{},graded:{},correct:{},strikes:{},current:0},4:{answers:{},graded:{},correct:{},strikes:{},current:0},5:{answers:{},graded:{},correct:{},strikes:{},current:0}},missed:{1:[],2:[],3:[],4:[],5:[]}};
+      localStorage.setItem('SRNA_COMBINED_EXAM_SET_1_2026_V1',JSON.stringify(state));
+      return qs[99].answer;
     });
-
+    await page.reload();
+    await page.locator('#cards button').filter({hasText:/continue/i}).first().click();
     await expect(page.locator('#progress')).toContainText('Question 100 of 100');
-    const answer = await page.evaluate(() => currentData[currentIndex].answer);
-    await clickIndexes(page.locator('#options .opt'), answer);
+    await clickIndexes(page.locator('#options .opt'), seeded);
     if (await page.locator('#submit-multi').isVisible()) await page.locator('#submit-multi').click();
 
     await expect.poll(async () => {
