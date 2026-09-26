@@ -326,13 +326,20 @@ test.describe('canonical quiz regression', () => {
     expect(errors).toEqual([]);
   });
 
-  test('Studio source selector populates loaded banks and Combined', async ({ page }) => {
+  test('Studio source selector exposes every bank and practice set', async ({ page }) => {
     await page.goto(exam + '/studio.html');
     await waitForStudio(page);
-    await expect(page.locator('#sourceChecks input[type="checkbox"]')).toHaveCount(await page.locator('#sourceChecks input[type="checkbox"]').count());
-    expect(await page.locator('#sourceChecks input[type="checkbox"]').count()).toBeGreaterThan(0);
     await expect(page.locator('#sourceChecks')).toContainText('Quiz Bank 1');
+    await expect(page.locator('#sourceChecks')).toContainText('Quiz Bank 2');
+    await expect(page.locator('#sourceChecks')).toContainText('Quiz Bank 3');
     await expect(page.locator('#sourceChecks')).toContainText('Combined');
+    await expect(page.locator('#sourceChecks')).toContainText('Workstation Hazards');
+    await expect(page.locator('#sourceChecks input[type="checkbox"]')).toHaveCount(22);
+    const clipped = await page.evaluate(() => {
+      const el = document.getElementById('sourceChecks');
+      return el.scrollHeight > el.clientHeight + 1;
+    });
+    expect(clipped).toBe(false);
   });
 
   test('Hazards cumulative missed review routes to Studio', async ({ page }) => {
