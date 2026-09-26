@@ -32,8 +32,8 @@
 @media (max-width: 900px) {
   .mbu-global-nav { margin: 8px 10px 14px; min-height: 54px; padding: 8px 12px; gap: 10px; }
   .mbu-global-nav__crumb, .mbu-global-nav__quick { display: none; }
-  .mbu-global-nav__picker-label { display: block; margin-left: auto; color: #718096; font-size: 13px; font-weight: 700; white-space: nowrap; }
-  .mbu-global-nav__picker { display: block; max-width: min(245px,55vw); min-height: 38px; padding: 6px 9px; border: 1px solid #cbd5e0; border-radius: 8px; background: #fff; color: #1a365d; font: 700 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; cursor: pointer; }
+  .mbu-global-nav__picker-label { display: none; }
+  .mbu-global-nav__picker { display: block; flex: 1 1 140px; min-width: 0; max-width: min(180px,42vw); min-height: 38px; margin-left:auto; padding: 6px 8px; border: 1px solid #cbd5e0; border-radius: 8px; background: #fff; color: #1a365d; font: 700 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; cursor: pointer; }
 }
 button.mbu-return.mbu-return {
   display: inline-flex; align-items: center; justify-content: center;
