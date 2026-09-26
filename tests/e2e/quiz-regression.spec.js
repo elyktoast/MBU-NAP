@@ -144,7 +144,7 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/hazards-harder.html');
     const answer = await page.evaluate(() => BANK[0].a);
     await clickIndexes(page.locator('#choices .opt'), answer);
-    if (answer.length > 1) await page.locator('#go').click();
+    await page.locator('#go').click();
     await page.waitForTimeout(100);
 
     const canonical = await storageJSON(page, 'hazards_harder_progress_2026_V1');
