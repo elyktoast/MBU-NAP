@@ -52,5 +52,12 @@ function start(cfg){
  document.addEventListener("keydown",e=>{if($("#lb").classList.contains("on")){if(e.key==="Escape")$("#lb").classList.remove("on");return}if(!(view==="quiz"||view==="prac"))return;const c=ctx();if(c.i>=c.list.length)return;const q=byId[c.list[c.i]];if(e.key==="Enter"){e.preventDefault();cur.done?next():submit(q);return}let k=e.key.toUpperCase();if(/^[1-6]$/.test(k))k=L[+k-1];const i=L.indexOf(k);if(i>=0&&i<q.c.length&&k.length===1){e.preventDefault();e.shiftKey?cross(q,i):pick(q,i)}});
  window.MBUHazardsQuiz={nav};if(new URLSearchParams(location.search).get("review")==="1"){view="review";save()}render()
 }
-window.MBUHazardsQuizEngine={start};
+async function startFromData({dataUrl,setFilter,imageUrl,key,bankKey,badge,summaryTitle,resetMessage}){
+ const [dr,ir]=await Promise.all([fetch(dataUrl,{cache:"force-cache"}),fetch(imageUrl,{cache:"force-cache"})]);
+ if(!dr.ok)throw Error("Question data HTTP "+dr.status);if(!ir.ok)throw Error("Image data HTTP "+ir.status);
+ const payload=await dr.json(),all=Array.isArray(payload)?payload:(payload.questions||[]),IMGS=await ir.json();
+ const BANK=all.filter(q=>Number(q.set)===Number(setFilter)).map((q,i)=>({id:q.id,num:i+1,type:q.type,n:(q.answer||[]).length||1,q:q.stem,c:q.options||[],a:q.answer||[],exp:q.explanation||"",disc:q.disc||null,supp:q.supp||null,img:q.image||null,ref:q.citation?[q.citation]:[]}));
+ start({bank:BANK,images:IMGS,key,bankKey,badge,summaryTitle,resetMessage});return true
+}
+window.MBUHazardsQuizEngine={start,startFromData};
 })();
