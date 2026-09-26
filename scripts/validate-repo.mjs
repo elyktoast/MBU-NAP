@@ -88,8 +88,8 @@ function checkAssets(){
 }
 function checkStudio(){
   const src=read('equipment/exam-1/studio.html');
-  for(const name of ['quiz-bank-1.html','quiz-bank-2.html','studio-bank3.json','combined-questions.js','hazards-100.html','hazards-bank-2.html','studio-hazards3.json','studio-challenge.json','quiz-bank-3.html','hazards-bank-3.html','hazards-harder.html']) if(!src.includes(name))fail('Studio: missing source/image source '+name);
-  if(!src.includes("['quiz-bank-1.html','b1'")) fail('Studio: Bank 1 is not the first canonical bank source');
+  for(const name of ['studio-bank1.json','studio-bank2.json','studio-bank3.json','combined-questions.js','hazards-100.html','hazards-bank-2.html','studio-hazards3.json','studio-challenge.json','quiz-bank-3.html','hazards-bank-3.html','hazards-harder.html']) if(!src.includes(name))fail('Studio: missing source/image source '+name);
+  if(!src.includes("['studio-bank1.json','b1'")) fail('Studio: Bank 1 is not the first canonical Studio source');
   const b3Start=src.indexOf("}else if(key==='b3'){"),hazardStart=src.indexOf("}else{",b3Start);
   const b3Branch=b3Start>=0&&hazardStart>b3Start?src.slice(b3Start,hazardStart):'';
   if(/const\s+im\s*=|const\s+IMGS\s*=|JSON\.parse\(im/.test(b3Branch)) fail('Studio: Bank 3 image payload is still eagerly parsed');
@@ -108,6 +108,8 @@ try{checkBank2()}catch(e){fail('Bank 2 validation crashed: '+e.message)}
 try{checkBank3()}catch(e){fail('Bank 3 validation crashed: '+e.message)}
 function checkStudioData(){
   const specs=[
+    ['Bank 1','equipment/exam-1/studio-bank1.json','equipment/exam-1/quiz-bank-1.html',500],
+    ['Bank 2','equipment/exam-1/studio-bank2.json','equipment/exam-1/quiz-bank-2.html',500],
     ['Bank 3','equipment/exam-1/studio-bank3.json','equipment/exam-1/quiz-bank-3.html',500],
     ['Hazards 3','equipment/exam-1/studio-hazards3.json','equipment/exam-1/hazards-bank-3.html',100],
     ['Hazards Challenge','equipment/exam-1/studio-challenge.json','equipment/exam-1/hazards-harder.html',50]
