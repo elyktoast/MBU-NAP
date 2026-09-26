@@ -370,6 +370,14 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!studio.includes('setSessionAnswer(q.uid,{ok,selected,at:Date.now()})'))fail('Studio: grading does not persist selected answers for resume');
 }
 
+// Bank 3 graded-state parity: all keyed answers remain visibly correct and feedback uses the canonical light explanation panel.
+{
+ const src=read('equipment/exam-1/quiz-bank-3.html');
+ if(!src.includes('.opt.miss{border-color:var(--o2);background:var(--o2bg);color:var(--o2);font-weight:750}'))fail('Bank 3: an unselected keyed answer is not visibly shown as correct');
+ if(!src.includes('.opt.miss .t{text-decoration:none;opacity:1}'))fail('Bank 3: crossed-out keyed answers remain obscured after grading');
+ if(!src.includes('#fb.explain{background:#f8fafc;border-left:5px solid #1a365d}'))fail('Bank 3: feedback panel is not using canonical light styling');
+}
+
 
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
 console.log('Repository validation passed: Banks 1-3 are 500 questions each; local assets, Studio sources, shared quiz runtimes, answer indexes, and build manifest are valid.');
