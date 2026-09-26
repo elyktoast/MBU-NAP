@@ -110,7 +110,7 @@
         "4": 50
       },
       "total": 350,
-      "engine": "hazards"
+      "engine": "hazards-canonical-data"
     }
   ],
   "hazards": {
@@ -255,7 +255,7 @@
       "setLabels": {
         "1": "Hazards Practice Set 3"
       },
-      "imageSource": "hazards-bank-3.html",
+      "imageSource": "data/hazards-images.json",
       "imageKind": "hazards",
       "setFilter": 3
     },
@@ -273,7 +273,7 @@
       "setLabels": {
         "1": "Challenge Set"
       },
-      "imageSource": "hazards-harder.html",
+      "imageSource": "data/hazards-images.json",
       "imageKind": "hazards",
       "setFilter": 4
     }
