@@ -678,6 +678,70 @@ test.describe('canonical quiz regression', () => {
   });
 
 
+  test('Question report modal submits structured context and keeps a local backup', async ({ page }) => {
+    await page.addInitScript(() => { window.MBU_REPORT_ENDPOINT = 'https://report.test/submit'; });
+    let submitted = null;
+    await page.route('https://report.test/submit', async route => {
+      submitted = JSON.parse(route.request().postData() || '{}');
+      await route.fulfill({ status: 204, body: '' });
+    });
+
+    await page.goto(exam + '/quiz-bank-1.html');
+    await page.locator('#cards button').filter({ hasText: /start|continue/i }).first().click();
+    await page.evaluate(() => mbuReportQuestion(currentData[currentIndex]));
+
+    await expect(page.locator('#mbu-report-modal')).toHaveClass(/open/);
+    await expect(page.locator('#mbu-report-summary')).toContainText('ID: b1-');
+    await page.locator('#mbu-report-reason').selectOption({ label: 'Wrong answer' });
+    await page.locator('#mbu-report-comment').fill('The keyed answer appears inconsistent with the source.');
+    await page.locator('#mbu-report-name').fill('Regression Tester');
+    await page.locator('#mbu-report-submit').click();
+
+    await expect.poll(() => submitted).not.toBeNull();
+    expect(submitted.reason).toBe('Wrong answer');
+    expect(submitted.comment).toContain('keyed answer');
+    expect(submitted.reporter).toBe('Regression Tester');
+    expect(submitted.uid).toMatch(/^b1-/);
+    expect(submitted.stem.length).toBeGreaterThan(0);
+    expect(Array.isArray(submitted.options)).toBe(true);
+    expect(Array.isArray(submitted.answerIndexes)).toBe(true);
+
+    await expect.poll(async () => page.evaluate(() => {
+      const d = MBUStudio.db();
+      return d.reports[d.reports.length - 1]?.sent;
+    })).toBe(true);
+  });
+
+  test('Calculator popup can be moved and re-centered in a quiz session', async ({ page }) => {
+    await page.setViewportSize({ width: 1200, height: 900 });
+    await page.goto(exam + '/quiz-bank-1.html');
+    await page.locator('#cards button').filter({ hasText: /start|continue/i }).first().click();
+    await page.evaluate(() => MBUCalculator.besideFlag());
+    await page.locator('#mbu-calc-open').click();
+
+    const panel = page.locator('.mbu-calc');
+    const before = await panel.boundingBox();
+    expect(before).not.toBeNull();
+
+    const head = page.locator('.mbu-calc-head');
+    const h = await head.boundingBox();
+    expect(h).not.toBeNull();
+    await page.mouse.move(h.x + 80, h.y + 15);
+    await page.mouse.down();
+    await page.mouse.move(h.x + 190, h.y + 85, { steps: 5 });
+    await page.mouse.up();
+
+    const moved = await panel.boundingBox();
+    expect(moved.x).toBeGreaterThan(before.x + 40);
+    expect(moved.y).toBeGreaterThan(before.y + 20);
+
+    await page.locator('.mbu-calc-resetpos').click();
+    const centered = await panel.boundingBox();
+    expect(Math.abs((centered.x + centered.width / 2) - 600)).toBeLessThan(3);
+    expect(Math.abs((centered.y + centered.height / 2) - 450)).toBeLessThan(3);
+  });
+
+
   test('Shared asset revisions and updater baseline stay canonical', async ({ page }) => {
     const requests=[];
     page.on('request', req => { if (req.url().includes('/equipment/assets/') && req.url().includes('?v=')) requests.push(req.url()); });
