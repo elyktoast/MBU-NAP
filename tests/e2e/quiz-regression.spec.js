@@ -49,7 +49,9 @@ test.describe('canonical quiz regression', () => {
     await page.evaluate(() => startSet(0));
     const answer = await page.evaluate(() => SETS[0][0].correct);
     await clickIndexes(page.locator('#choices .choice'), answer);
-    if (answer.length > 1) await page.locator('#submitBtn').click();
+    let state = await storageJSON(page, 'srna_all5_groundup_v1');
+    expect(state?.sets?.['0']?.answered?.['0']).toBeUndefined();
+    await page.locator('#submitBtn').click();
     await page.waitForTimeout(450);
 
     state = await storageJSON(page, 'srna_all5_groundup_v1');
@@ -67,6 +69,8 @@ test.describe('canonical quiz regression', () => {
     const correct = await page.evaluate(() => SETS[0][0].correct[0]);
     const wrong = correct === 0 ? 1 : 0;
     await page.locator('#choices .choice').nth(wrong).click();
+    await expect(page.locator('#feedback')).toBeHidden();
+    await page.locator('#submitBtn').click();
     await expect(page.locator('#feedback')).toBeVisible();
 
     await page.locator('#resetQBtn').click();
@@ -82,7 +86,7 @@ test.describe('canonical quiz regression', () => {
     const answer = await page.evaluate(() => byId[EXM[1].ids[0]].a);
     await clickIndexes(page.locator('#main .opt'), answer);
     let state = await storageJSON(page, 'srna_equipment_dashboard_v1');
-    expect(Object.keys(state.ex['1'].ans || {})).toHaveLength(0);
+    expect(state).toBeNull();
     await page.locator('#go').click();
     await page.waitForTimeout(450);
     state = await storageJSON(page, 'srna_equipment_dashboard_v1');
@@ -98,7 +102,9 @@ test.describe('canonical quiz regression', () => {
     await page.locator('#hazStart').click();
     const answer = await page.evaluate(() => QUESTIONS[0].answer);
     await clickIndexes(page.locator('#options .opt'), answer);
-    if (answer.length > 1) await page.locator('#submit-multi').click();
+    let state = await storageJSON(page, 'SRNA_HAZARDS_BANK_1_2026_V2');
+    expect(state?.graded?.['1']).toBeUndefined();
+    await page.locator('#submit-multi').click();
     await page.waitForTimeout(450);
 
     await expect(page.locator('#progress')).toContainText('Question 2 of');
@@ -124,7 +130,7 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/hazards-bank-3.html');
     const answer = await page.evaluate(() => BANK[0].a);
     await clickIndexes(page.locator('#choices .opt'), answer);
-    if (answer.length > 1) await page.locator('#go').click();
+    await page.locator('#go').click();
     await page.waitForTimeout(450);
     await expect(page.locator('.progress')).toContainText('Question 2 of');
 
