@@ -250,7 +250,6 @@ function buildTopics(){
 }
 function renderHome(){
   clearTimeout(autoTimer);autoTimer=null;window.MBUCalculator?.hide();
-  const ret=new URLSearchParams(location.search).get('return');if(ret==='hazards'){location.href='hazards.html';return}
   show('home');activeButton();
   let miss=0,flagged=0;const by={};
   for(const q of ALL){
