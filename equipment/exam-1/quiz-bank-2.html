@@ -1,210 +1,30 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Quiz Bank 2 | Practice Sets</title>
 <style>
-:root{--bg:#f4f7fb;--card:#fff;--ink:#172033;--muted:#64748b;--line:#dbe3ef;--accent:#1d4ed8;--ok:#166534;--okbg:#dcfce7;--bad:#991b1b;--badbg:#fee2e2;--sel:#dbeafe}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink)}
-.wrap{max-width:1080px;margin:0 auto;padding:24px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}.title{font-size:28px;font-weight:800}.sub{color:var(--muted);margin-top:4px}
-button{font:inherit}.btn{border:1px solid var(--line);background:#fff;border-radius:10px;padding:10px 14px;cursor:pointer;font-weight:700;color:var(--ink)}.btn:hover{border-color:#94a3b8}.primary{background:var(--accent);color:#fff;border-color:var(--accent)}.danger{color:#991b1b}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}.setcard,.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 2px 10px #0f172a0a}.setcard{padding:18px}.setcard h3{margin:0 0 8px}.stats{font-size:14px;color:var(--muted);line-height:1.55}.bar{height:8px;background:#e8edf5;border-radius:999px;overflow:hidden;margin:12px 0}.bar>div{height:100%;background:var(--accent)}
-.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0 20px}.metric{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}.metric b{display:block;font-size:22px}.metric span{font-size:13px;color:var(--muted)}
-.hidden{display:none!important}.quiz{max-width:900px;margin:0 auto}.header{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:14px}.pill{font-size:13px;background:#eef2ff;border-radius:999px;padding:6px 10px;font-weight:700}.qcard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 2px 10px #0f172a0a}.qimg{display:block;max-width:100%;max-height:330px;object-fit:contain;margin:10px auto 18px;border:1px solid var(--line);border-radius:10px;background:#fff}.stem{font-size:20px;font-weight:750;line-height:1.45;margin:8px 0 18px}.choices{display:grid;gap:10px}.choice{width:100%;text-align:left;border:1px solid #cbd5e1;background:#fff;border-radius:12px;padding:13px 14px;cursor:pointer;display:flex;gap:11px;align-items:flex-start}.choice:hover{background:#f8fafc}.choice.sel{background:var(--sel);border-color:#60a5fa}.choice.good{background:var(--okbg);border-color:#86efac}.choice.bad{background:var(--badbg);border-color:#fca5a5}.choice.xout{opacity:.42;text-decoration:line-through}.letter{font-weight:800;min-width:22px}.foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap}.feedback{margin-top:16px;padding:14px;border-radius:12px;line-height:1.5}.feedback.ok{background:var(--okbg);color:var(--ok)}.feedback.bad{background:var(--badbg);color:var(--bad)}.source{font-size:12px;color:var(--muted);margin-top:8px}.kbd{font-size:12px;color:var(--muted)}.reviewrow{padding:12px 0;border-bottom:1px solid var(--line)}.reviewrow:last-child{border-bottom:0}.small{font-size:13px;color:var(--muted)}
-@media(max-width:700px){.summary{grid-template-columns:1fr 1fr}.wrap{padding:14px}.title{font-size:23px}.stem{font-size:18px}}
-.mbu-bank1-ui .hero{display:flex;justify-content:space-between;align-items:end;border-bottom:2px solid var(--b);padding-bottom:18px;margin-bottom:22px}.mbu-bank1-ui .hero h1{margin:0;color:#1a202c}.mbu-bank1-ui .hero p{margin:4px 0 0;color:var(--mut)}
-</style>
-
-<link rel="stylesheet" href="../assets/site-nav.css?v=63">
+:root{--p:#1a365d;--pl:#2b6cb0;--ok:#22543d;--okbg:#c6f6d5;--bad:#742a2a;--badbg:#fed7d7;--bg:#edf2f7;--soft:#f7fafc;--b:#cbd5e0;--t:#2d3748;--mut:#718096}
+*{box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}body{margin:0;background:var(--bg);color:var(--t);line-height:1.5;padding:20px}.wrap{max-width:1040px;margin:auto}.panel{background:white;border-radius:10px;box-shadow:0 4px 12px #00000012;padding:28px}.hero{display:flex;justify-content:space-between;align-items:end;border-bottom:2px solid var(--b);padding-bottom:18px;margin-bottom:22px}.hero h1{margin:0;color:#1a202c}.hero p{margin:4px 0 0;color:var(--mut)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}.card{border:1px solid var(--b);border-radius:9px;padding:18px;background:#fff}.card h3{margin:0 0 6px}.mini{color:var(--mut);font-size:.9rem}.bar{height:9px;background:#e2e8f0;border-radius:20px;overflow:hidden;margin:12px 0}.bar>span{display:block;height:100%;background:var(--pl)}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.btn{border:0;border-radius:6px;background:var(--p);color:white;padding:10px 16px;font-weight:700;cursor:pointer}.btn:hover{filter:brightness(1.08)}.btn.out{background:white;color:var(--p);border:1.5px solid var(--p)}.btn.bad{background:#9b2c2c}.btn:disabled{background:#cbd5e0;color:white;border-color:#cbd5e0;cursor:not-allowed}.missed-box{margin-top:20px;border-top:1px solid var(--b);padding-top:18px}.missed-list{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.qchip{border:1px solid #feb2b2;background:#fff5f5;color:#9b2c2c;border-radius:999px;padding:5px 10px;font-weight:700;cursor:pointer}.header{display:flex;justify-content:space-between;gap:15px;align-items:center;border-bottom:2px solid var(--b);padding-bottom:14px;margin-bottom:18px}.badge{background:var(--p);color:#fff;padding:5px 14px;border-radius:999px;font-size:.85rem;font-weight:800}.progress{font-weight:700;color:#4a5568}.stats{display:flex;gap:22px;flex-wrap:wrap;background:var(--soft);border:1px solid var(--b);padding:12px 16px;border-radius:7px;margin-bottom:20px}.type{font-size:.84rem;color:#b7791f;font-weight:800;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}.stem{font-size:1.12rem;font-weight:650;color:#1a202c;margin-bottom:18px}.image{display:flex;justify-content:center;margin:15px 0 20px}.options{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}.opt{display:flex;gap:12px;align-items:flex-start;width:100%;padding:12px 16px;border:1.5px solid var(--b);border-radius:6px;background:white;text-align:left;font-size:.98rem;cursor:pointer}.opt:hover:not(.locked){background:var(--soft);border-color:var(--pl)}.opt.selected{border-color:var(--p);background:#ebf8ff;font-weight:650}.opt.correct{background:var(--okbg)!important;border-color:var(--ok)!important;color:var(--ok)!important;font-weight:750}.opt.incorrect{background:var(--badbg)!important;border-color:var(--bad)!important;color:var(--bad)!important}.opt.strike{text-decoration:line-through;opacity:.45}.prefix{font-weight:800;min-width:26px}.explain{display:none;margin-top:18px;padding:18px;border-radius:6px;background:#f8fafc;border-left:5px solid var(--p);font-size:.95rem}.cite{margin-top:10px;font-size:.85rem;font-weight:750;color:#4a5568}.controls{display:flex;justify-content:space-between;gap:10px;align-items:center;border-top:1px solid var(--b);padding-top:16px;margin-top:24px}.hidden{display:none!important}@media(max-width:650px){body{padding:10px}.panel{padding:18px}.hero,.header,.controls{align-items:flex-start;flex-direction:column}.controls .row{width:100%}.controls .btn{flex:1}.stats{gap:10px}}
+</style><link rel="stylesheet" href="../assets/site-nav.css?v=63">
 <link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=63">
 <script defer src="../assets/site-nav.js?v=63" data-page="bank2"></script>
-<style>.header,.header>div,.top{flex-wrap:wrap}.mbu-choice-row{display:flex;gap:8px;align-items:stretch}.mbu-choice-row .choice{flex:1;min-width:0}.mbu-cross{flex:0 0 44px;border:1px solid #cbd5e0;border-radius:8px;background:#fff;color:#4a5568;font-size:18px;cursor:pointer}.mbu-cross[aria-pressed="true"]{background:#fff5f5;color:#9b2c2c;border-color:#e53e3e}.mbu-cross:disabled{opacity:.5;cursor:default}#submitBtn,#nextBtn{margin-left:auto}
-</style>
-</head>
-<body class="mbu-bank1-ui">
-<div class="wrap">
-<section id="dash" class="panel"><div class="hero mbu-dashboard-header"><div class="mbu-dashboard-title"><h1>Quiz Bank 2 Dashboard</h1><div class="mini mbu-dashboard-overall" id="bank2Overall">0 / 500 completed</div></div></div><div class="grid" id="setGrid"></div></section>
-
-<section id="quiz" class="panel hidden">
-  <div class="header">
-    <div class="row"><span class="badge" id="missedCount"></span><button class="btn out" id="mbuFlagBtn" onclick="mbuToggleFlag(SETS[current().si][current().qi])">☆ Flag</button><button class="btn out" onclick="mbuReportQuestion(SETS[current().si][current().qi])">Report</button><button class="btn out" onclick="document.getElementById('mbuNavigator').classList.toggle('hidden')">Navigator</button><button class="btn out mbu-return" onclick="goDash()">← Quiz Bank 2 Home</button></div>
-    <div class="progress" id="progress"></div>
-  </div>
-  <div class="stats"><div>Completed: <strong id="mbuCompleted">0</strong>/<span id="mbuTotal">100</span></div><div>Score: <strong id="mbuScore">0</strong>%</div><div>Missed: <strong id="mbuMissed">0</strong></div></div>
-  <div id="mbuNavigator" class="row hidden" style="flex-wrap:wrap;gap:6px;margin:8px 0 14px;max-height:180px;overflow:auto;padding:3px"></div>
-  <div class="type" id="meta"></div>
-  <div class="stem" id="stem"></div><div class="mbu-crossout-hint">Tip: Right-click an answer to cross it out.</div><img id="qimg" class="qimg hidden" alt="Unlabeled lecture figure for question interpretation">
-  <div class="choices" id="choices"></div>
-  <div class="row" id="multi-submit-row" style="display:none;margin:4px 0 18px;justify-content:flex-end"><button id="submitBtn" class="btn" onclick="submitAnswer()">Submit Answer</button></div>
-  <div id="feedback" class="explain" style="display:none"><div id="feedbackText"></div><div id="feedbackCitation" class="cite"></div></div>
-  <div class="controls"><button id="prevBtn" class="btn out" onclick="prevQuestion()">Previous</button><div class="row"><button id="resetQBtn" class="btn out" onclick="resetCurrentQuestion()">Reset</button><button id="nextBtn" class="btn hidden" onclick="nextQuestion()">Next</button></div></div>
-</section>
-
-<section id="review" class="hidden">
-  <div class="top"><div><div class="title" id="reviewTitle">Missed Questions</div><div class="sub">Questions remain here until answered correctly in a quiz attempt.</div></div><button class="btn mbu-return" onclick="goDash()">← Quiz Bank 2 Home</button></div>
-  <div class="panel" style="padding:18px" id="reviewList"></div>
-</section>
-</div>
-
-<script src="../assets/studio-sync.js?v=63"></script><script src="../assets/navigator.js?v=63"></script><script>
-let SETS=[];
-async function loadBank2Data(){
-  const r=await fetch('data/bank2.json',{cache:'force-cache'});if(!r.ok)throw Error('Question data HTTP '+r.status);
-  const payload=await r.json(),questions=payload.questions||[];SETS=[[],[],[],[],[]];
-  for(const q of questions){const si=Math.max(0,Number(q.set||1)-1);(SETS[si]??=[]).push({id:q.id,topic:q.topic||'',q:q.stem||'',options:q.options||[],correct:q.answer||[],why:q.explanation||'',src:q.citation||'',page:'',multi:q.type==='multi',img:q.imageSvg||q.image||null})}
-  window.SETS=SETS;
-}
-const KEY="srna_all5_groundup_v1";
-let state,lastSaved='';try{const raw=localStorage.getItem(KEY);state=JSON.parse(raw||'{"sets":{}}');if(!state||typeof state.sets!=="object"||!state.sets)throw Error();if(raw)lastSaved=raw}catch(e){state={sets:{}}}
-let mode="set", activeSet=0, order=[], pos=0, selected=new Set(), locked=false, autoTimer=null;
-function mbuIsFlagged(q){return MBUStudio.flagged(2,q)}
-function mbuToggleFlag(q){MBUStudio.toggleFlag(2,q);mbuUpdateFlag(q);renderNavigator()}
-function mbuStudioAnswer(q,ok){MBUStudio.answer(2,q,ok)}
-function mbuReportQuestion(q){return MBUStudio.report(2,q)}
-function mbuUpdateFlag(q){const b=document.getElementById('mbuFlagBtn');if(b)b.textContent=mbuIsFlagged(q)?'★ Flagged':'☆ Flag'}
-
-
-function st(si){
-  if(!state.sets[si]) state.sets[si]={answered:{},missed:[],selections:{},crosses:{},current:0};
-  state.sets[si].selections ||= {};
-  state.sets[si].crosses ||= {};
-  return state.sets[si];
-}
-function save(){const next=JSON.stringify(state);if(next===lastSaved)return;localStorage.setItem(KEY,next);lastSaved=next}
-function esc(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
-function stats(si){
-  const s=st(si), vals=Object.values(s.answered), done=vals.length, cor=vals.filter(Boolean).length;
-  return {done,cor,miss:s.missed.length,pct:done?Math.round(cor/done*100):0};
-}
-function renderDash(){
-  clearTimeout(autoTimer);autoTimer=null;window.MBUCalculator?.hide();
-  document.getElementById("dash").classList.remove("hidden");document.getElementById("quiz").classList.add("hidden");document.getElementById("review").classList.add("hidden");
-  let td=0,tc=0,tm=0;const g=document.getElementById("setGrid");g.innerHTML="";
-  SETS.forEach((qs,i)=>{
-    const a=stats(i);td+=a.done;tc+=a.cor;tm+=a.miss;
-    const d=document.createElement("div");d.className="setcard";
-    d.innerHTML=`<h3>Practice Set ${i+1}</h3><div class="mini">${qs.length} questions</div><div class="bar"><div style="width:${qs.length?100*a.done/qs.length:0}%"></div></div><div class="mini">${a.done}/${qs.length} completed · ${a.pct}% score · ${a.miss} missed</div><div class="actions"><button class="btn primary" onclick="startSet(${i})">${a.done?"Continue":"Start"} Practice Set ${i+1}</button><button class="btn" ${a.miss?"":"disabled"} onclick="startMissed(${i})">Review Missed</button></div>`;
-    g.appendChild(d);
-  });
-  const total=SETS.reduce((n,s)=>n+s.length,0);
-  document.getElementById("bank2Overall").textContent=`${td} / ${total} completed`;
-  const all=document.createElement("div");all.className="setcard mbu-all-missed-card";
-  all.innerHTML=`<h3>Missed Questions Review</h3><div class="mini">Automatically built from every question missed in Practice Sets 1–5.</div><div class="bar"><div style="width:0%"></div></div><div class="mini">${tm} question${tm===1?"":"s"} currently in the missed bank</div><div class="actions"><button class="btn bad" ${tm?"":"disabled"} onclick="startAllMissed()">Review Missed Questions</button></div>`;
-  g.appendChild(all);
-}
-function startSet(si){
-  mode="set";activeSet=si;const s=st(si);order=SETS[si].map((_,i)=>i);
-  const first=order.findIndex(i=>!Object.prototype.hasOwnProperty.call(s.answered,i));pos=Number.isInteger(s.current)?Math.max(0,Math.min(s.current,order.length-1)):(first>=0?first:0);showQ();
-}
-function persistPosition(){if(mode==="set"){st(activeSet).current=pos;save()}}
-function startMissed(si){
-  activeSet=si; const s=st(si); if(!s.missed.length){showReview(si);return}
-  mode="missed";order=s.missed.map(i=>({si,qi:i}));pos=0;showQ();
-}
-function startAllMissed(){
-  order=[];SETS.forEach((_,si)=>st(si).missed.forEach(qi=>order.push({si,qi})));
-  if(!order.length){showReview(-1);return} mode="allmissed";pos=0;showQ();
-}
-function current(){
-  if(mode==="set") return {si:activeSet,qi:order[pos]};
-  return order[pos];
-}
-function renderNavigator(){document.getElementById('mbuNavigator').innerHTML=order.map((x,i)=>{const qq=SETS[x.si??activeSet][x.qi??x],xx=order[i],si=xx.si??activeSet,qi=xx.qi??xx,aa=st(si).answered,result=Object.prototype.hasOwnProperty.call(aa,qi)?!!aa[qi]:null;return MBUNavigator.button({label:i+1,active:i===pos,flagged:mbuIsFlagged(qq),result,onClick:'pos='+i+';persistPosition();showQ()'})}).join('')}
-function toggleCross(c,i,b,cross){
-  if(locked)return;
-  const crosses=st(c.si).crosses,items=crosses[c.qi]||[];
-  crosses[c.qi]=items.includes(i)?items.filter(x=>x!==i):[...items,i];
-  b.classList.toggle("xout",crosses[c.qi].includes(i));
-  cross.setAttribute("aria-pressed",String(crosses[c.qi].includes(i)));
-  save();
-}
-function showQ(){
-  clearTimeout(autoTimer);autoTimer=null;
-  document.getElementById("dash").classList.add("hidden");document.getElementById("review").classList.add("hidden");document.getElementById("quiz").classList.remove("hidden");
-  selected=new Set();locked=false;
-  const c=current(),q=SETS[c.si][c.qi];renderNavigator();
-  document.getElementById("progress").textContent=mode==="set"?`Question ${pos+1} of ${order.length} · Q${c.qi+1}`:`Question ${pos+1} of ${order.length} · Practice Set ${c.si+1}, Q${c.qi+1}`;
-  const ss=st(c.si),done=Object.keys(ss.answered).length,good=Object.values(ss.answered).filter(Boolean).length;
-  document.getElementById("missedCount").textContent=`Practice Set ${c.si+1}`;
-  document.getElementById("mbuCompleted").textContent=done;document.getElementById("mbuTotal").textContent=SETS[c.si].length;
-  document.getElementById("mbuScore").textContent=done?Math.round(100*good/done):0;document.getElementById("mbuMissed").textContent=ss.missed.length;
-  document.getElementById("prevBtn").disabled=pos<=0;
-  document.getElementById("meta").textContent=`${q.topic}${q.correct.length>1?" · Select "+(q.correct.length===2?"TWO":"THREE"):""}`;
-  document.getElementById("stem").textContent=q.q;
-  const qim=document.getElementById("qimg");
-  if(q.img){qim.src=q.img;qim.classList.remove("hidden")}else{qim.removeAttribute("src");qim.classList.add("hidden")}
-  const box=document.getElementById("choices");box.innerHTML="";const crossed=st(c.si).crosses[c.qi]||[];
-  q.options.forEach((o,i)=>{
-    const b=document.createElement("button");b.className="choice";b.dataset.i=i;
-    b.innerHTML=`<span class="letter">${String.fromCharCode(65+i)}.</span><span>${esc(o)}</span>`;
-    b.onclick=(e)=>choose(i,e);
-    if(crossed.includes(i))b.classList.add("xout");
-    b.oncontextmenu=(e)=>{e.preventDefault();toggleCross(c,i,b,cross)};
-    const row=document.createElement("div");row.className="mbu-choice-row";
-    const cross=document.createElement("button");cross.type="button";cross.className="mbu-cross";cross.textContent="✕";cross.setAttribute("aria-label",`Cross out option ${String.fromCharCode(65+i)}`);cross.setAttribute("aria-pressed",String(crossed.includes(i)));
-    cross.onclick=()=>toggleCross(c,i,b,cross);
-    row.append(b,cross);box.appendChild(row);
-  });
-  document.getElementById("feedback").style.display="none";document.getElementById("feedbackText").innerHTML="";document.getElementById("feedbackCitation").textContent="";
-  document.getElementById("multi-submit-row").style.display="flex";document.getElementById("submitBtn").disabled=selected.size!==q.correct.length;document.getElementById("submitBtn").textContent=q.correct.length>1?`Submit Selections (${selected.size}/${q.correct.length})`:"Submit Answer";document.getElementById("nextBtn").classList.add("hidden");
-  if(mode==="set" && Object.prototype.hasOwnProperty.call(st(c.si).answered,c.qi))restoreResult(c,q);
-  window.MBUCalculator?.besideFlag();
-}
-function restoreResult(c,q){
-  const saved=st(c.si),got=saved.selections[c.qi]||[],ok=!!saved.answered[c.qi];locked=true;selected=new Set(got);
-  document.querySelectorAll(".choice").forEach((b,i)=>{if(q.correct.includes(i))b.classList.add("good");else if(selected.has(i))b.classList.add("bad")});
-  document.querySelectorAll(".mbu-cross").forEach(b=>b.disabled=true);
-  const f=document.getElementById("feedback");f.style.display="block";document.getElementById("feedbackText").innerHTML=`<b>Previously answered ${ok?"correctly":"incorrectly"}.</b> ${ok?"":esc(q.why)}`;document.getElementById("feedbackCitation").textContent=`Source: ${q.src} · slide/page ${q.page}`;
-  document.getElementById("multi-submit-row").style.display="none";document.getElementById("nextBtn").classList.remove("hidden");
-}
-function choose(i,e){
-  if(locked)return;const q=SETS[current().si][current().qi],b=[...document.querySelectorAll(".choice")][i];
-  if(e && (e.altKey||e.ctrlKey||e.metaKey)){toggleCross(current(),i,b,b.parentElement.querySelector(".mbu-cross"));return}
-  if(q.correct.length===1){selected=new Set([i]);document.querySelectorAll(".choice").forEach((x,j)=>x.classList.toggle("sel",j===i));document.getElementById("submitBtn").disabled=false;return}
-  else{if(selected.has(i)){selected.delete(i);b.classList.remove("sel");}else if(selected.size<q.correct.length){selected.add(i);b.classList.add("sel");}document.getElementById("submitBtn").disabled=selected.size!==q.correct.length;document.getElementById("submitBtn").textContent=`Submit Selections (${selected.size}/${q.correct.length})`}
-}
-function submitAnswer(){
-  if(locked){nextQuestion();return}
-  const c=current(),q=SETS[c.si][c.qi];if(!selected.size)return;
-  if(q.correct.length>1 && selected.size!==q.correct.length)return;
-  locked=true;document.querySelectorAll(".mbu-cross").forEach(b=>b.disabled=true);const got=[...selected].sort((a,b)=>a-b),want=[...q.correct].sort((a,b)=>a-b),ok=JSON.stringify(got)===JSON.stringify(want);
-  document.querySelectorAll(".choice").forEach((b,i)=>{b.classList.remove("sel");if(want.includes(i))b.classList.add("good");else if(selected.has(i))b.classList.add("bad")});
-  const s=st(c.si);s.answered[c.qi]=ok;s.selections[c.qi]=got;
-  if(ok)s.missed=s.missed.filter(x=>x!==c.qi);else if(!s.missed.includes(c.qi))s.missed.push(c.qi);save();renderNavigator();
-  document.getElementById("missedCount").textContent=`Practice Set ${c.si+1}`;
-  const done=Object.keys(s.answered).length,good=Object.values(s.answered).filter(Boolean).length;
-  document.getElementById("mbuCompleted").textContent=done;document.getElementById("mbuScore").textContent=done?Math.round(100*good/done):0;document.getElementById("mbuMissed").textContent=s.missed.length;
-  mbuStudioAnswer(q,ok);
-  const f=document.getElementById("feedback");f.style.display="block";document.getElementById("feedbackText").innerHTML=`<b>${ok?"Correct.":"Incorrect."}</b> ${esc(q.why)}`;document.getElementById("feedbackCitation").textContent=`Source: ${q.src} · slide/page ${q.page}`;
-  document.getElementById("multi-submit-row").style.display="none";document.getElementById("nextBtn").classList.remove("hidden");
-  if(ok){clearTimeout(autoTimer);autoTimer=setTimeout(()=>{autoTimer=null;nextQuestion()},350);}
-}
-function prevQuestion(){clearTimeout(autoTimer);autoTimer=null;if(pos>0){pos--;persistPosition();showQ()}}
-function resetCurrentQuestion(){clearTimeout(autoTimer);autoTimer=null;const c=current(),s=st(c.si);delete s.answered[c.qi];delete s.selections[c.qi];delete s.crosses[c.qi];s.missed=s.missed.filter(x=>x!==c.qi);save();showQ()}
-function nextQuestion(){clearTimeout(autoTimer);autoTimer=null;if(pos+1<order.length){pos++;persistPosition();showQ()}else{goDash()}}
-function goDash(){renderDash()}
-function showReview(si){
-  window.MBUCalculator?.hide();
-  document.getElementById("dash").classList.add("hidden");document.getElementById("quiz").classList.add("hidden");document.getElementById("review").classList.remove("hidden");
-  const list=document.getElementById("reviewList");list.innerHTML="";let arr=[];
-  if(si>=0){st(si).missed.forEach(qi=>arr.push({si,qi}));document.getElementById("reviewTitle").textContent=`Practice Set ${si+1} Missed Questions`;}
-  else{SETS.forEach((_,s)=>st(s).missed.forEach(qi=>arr.push({si:s,qi})));document.getElementById("reviewTitle").textContent="Missed Questions Review";}
-  if(!arr.length){list.innerHTML='<div class="small">No missed questions saved.</div>';return}
-  arr.forEach(x=>{const q=SETS[x.si][x.qi],d=document.createElement("div");d.className="reviewrow";d.innerHTML=`<b>Practice Set ${x.si+1}, Q${x.qi+1}</b> · ${esc(q.q)}<div class="small">${esc(q.topic)}</div>`;list.appendChild(d)})
-}
-document.addEventListener("keydown",e=>{
-  if(document.getElementById("mbu-calc-modal")?.classList.contains("open")||e.target.closest(".header,.mbu-cross,.mbu-global-nav,#mbu-calc-open,input,select,textarea"))return;
-  if(document.getElementById("quiz").classList.contains("hidden"))return;
-  if(/^[1-6]$/.test(e.key)){
-    const i=Number(e.key)-1,b=document.querySelectorAll(".choice")[i];if(!b)return;
-    choose(i,null);
-  } else if(e.key==="Enter"){locked?nextQuestion():submitAnswer()}
-});
-window.MBUQuizReady=loadBank2Data().then(()=>renderDash()).catch(e=>{console.error('Bank 2 failed to initialize',e);document.getElementById('dash').innerHTML='<div class="setcard"><h3>Quiz Bank 2 could not load</h3><div class="mini">'+String(e.message||e)+'</div></div>';throw e});
-</script>
+<style>.mbu-choice-row{display:flex;gap:8px;align-items:stretch}.mbu-choice-row .opt{flex:1;min-width:0}.mbu-cross{flex:0 0 44px;border:1px solid #cbd5e0;border-radius:8px;background:#fff;color:#4a5568;font-size:18px;cursor:pointer}.mbu-cross[aria-pressed="true"]{background:#fff5f5;color:#9b2c2c;border-color:#e53e3e}.mbu-cross:disabled{opacity:.5;cursor:default}</style>
+</head><body class="mbu-bank1-ui"><div class="wrap">
+<section id="dashboard" class="panel"><div class="hero mbu-dashboard-header"><div class="mbu-dashboard-title"><h1>Quiz Bank 2 Dashboard</h1><div class="mini mbu-dashboard-overall" id="overall">0 / 500 completed</div></div></div><div id="cards" class="grid"></div><div id="missed-review" class="hidden"></div></section>
+<section id="quiz" class="panel hidden"><div class="header"><div class="row"><span class="badge" id="set-badge"></span><button class="btn out" id="mbuFlagBtn" onclick="mbuToggleFlag(currentData[currentIndex])">☆ Flag</button><button class="btn out" onclick="mbuReportQuestion(currentData[currentIndex])">Report</button><button class="btn out" onclick="document.getElementById('mbuNavigator').classList.toggle('hidden')">Navigator</button><button class="btn out mbu-return" onclick="goDashboard()">← Quiz Bank 2 Home</button></div><div class="progress" id="progress"></div></div><div class="stats"><div>Completed: <strong id="completed">0</strong>/<span id="total">0</span></div><div>Score: <strong id="score">0</strong>%</div><div>Missed: <strong id="missed">0</strong></div></div><div id="mbuNavigator" class="row hidden" style="flex-wrap:wrap;gap:6px;margin:8px 0 14px;max-height:180px;overflow:auto;padding:3px"></div><div class="type" id="type"></div><div class="stem" id="stem"></div><div class="mbu-crossout-hint">Tip: Right-click an answer to cross it out.</div><div class="image hidden" id="image"></div><div class="options" id="options"></div><div class="row" id="multi-submit-row" style="display:none;margin:4px 0 18px;justify-content:flex-end"><button class="btn" id="submit-multi" onclick="submitAnswer()">Submit Answer</button></div><div class="explain" id="explain"><div id="explain-text"></div><div class="cite" id="citation"></div></div><div class="controls"><button class="btn out" id="prev" onclick="nav(-1)">Previous</button><div class="row"><button class="btn out" onclick="resetCurrent()">Reset</button><button class="btn" id="next" onclick="nav(1)">Next</button></div></div></section>
+</div><script src="../assets/studio-sync.js?v=63"></script>
+<script src="../assets/navigator.js?v=63"></script>
 <script src="../assets/calculator.js?v=63"></script>
-
-<!-- MBU_BUILD:2026-09-25-bank2-canonical-bank1-session-v18 -->
+<script>
+window.MBU_QUIZ_CONFIG={
+  id:"bank2",
+  title:"Quiz Bank 2",
+  studioBankKey:2,
+  storageKey:"srna_all5_groundup_v1",
+  dataUrl:"data/bank2.json",
+  legacyFormat:"bank2"
+};
+</script>
+<script src="../assets/quiz-engine.js?v=63"></script>
+<!-- MBU_BUILD:2026-09-26-phase1-shared-bank2 -->
 <script src="../assets/auto-update.js?v=63"></script>
 </body></html>
