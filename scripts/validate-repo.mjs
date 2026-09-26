@@ -61,7 +61,7 @@ function checkAssetVersions(){
   for(const name of fs.readdirSync(dir).filter(x=>x.endsWith('.html'))){
     const p='equipment/exam-1/'+name,src=read(p),versions=[...src.matchAll(/\.\.\/assets\/[^"'?#\s]+\?v=(\d+)/g)].map(m=>m[1]);
     if(versions.length&&new Set(versions).size!==1)fail(p+': mixed shared asset cache revisions: '+[...new Set(versions)].join(', '));
-    if(versions.length&&versions.some(v=>v!=='49'))fail(p+': stale shared asset cache revision; expected v49');
+    if(versions.length&&versions.some(v=>v!=='50'))fail(p+': stale shared asset cache revision; expected v50');
   }
 }
 checkAssetVersions();
@@ -115,6 +115,21 @@ function checkHazardNavigators(){
   if(!challenge.includes('MBUNavigator.button'))fail('Shared challenge Hazards engine does not use the canonical navigator renderer');
 }
 checkHazardNavigators();
+function checkCanonicalSubmission(){
+  const bank2=read('equipment/exam-1/quiz-bank-2.html');
+  const studio=read('equipment/exam-1/studio.html');
+  const standard=read('equipment/assets/hazards-standard-engine.js');
+  const challenge=read('equipment/assets/hazards-quiz-engine.js');
+  if(bank2.includes('selected=new Set([i]);submitAnswer();return'))fail('Bank 2: single-answer questions bypass canonical Submit Answer step');
+  if(!bank2.includes('document.getElementById("multi-submit-row").style.display="flex"'))fail('Bank 2: canonical Submit Answer row is not shown for all ungraded questions');
+  if(studio.includes('sel=new Set([i]);grade();return'))fail('Studio: single-answer questions bypass canonical Submit Answer step');
+  if(!studio.includes("submitRow.style.display='flex'"))fail('Studio: canonical Submit Answer row is not shown for all ungraded questions');
+  if(standard.includes('st.answers[k]=[i];if(!reviewMode)saveDB();submitAnswer();return'))fail('Standard Hazards: single-answer questions bypass canonical Submit Answer step');
+  if(!standard.includes('row.style.display="flex"'))fail('Standard Hazards: canonical Submit Answer row is not shown for all ungraded questions');
+  if(challenge.includes('cur.sel=[i];submit(q);return'))fail('Advanced Hazards: single-answer questions bypass canonical Submit Answer step');
+  if(!challenge.includes('$("#submitRow").style.display="flex"'))fail('Advanced Hazards: canonical Submit Answer row is not shown for all ungraded questions');
+}
+checkCanonicalSubmission();
 {
   const src=read('equipment/exam-1/hazards.html');
   if(!src.includes("(done?'Continue ':'Start ')+ids[5]"))fail('Hazards dashboard: missing Continue behavior for started sets');
