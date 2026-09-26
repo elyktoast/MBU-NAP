@@ -51,7 +51,7 @@ function migrateLegacyState(x){
  }
  return x
 }
-function loadDB(){let x=canonicalEmptyDB(),raw='';try{raw=localStorage.getItem(MBUQuizConfig.storageKey)||'';if(raw){const parsed=JSON.parse(raw);if(parsed&&typeof parsed==='object')x=migrateLegacyState(parsed)}}catch{};x.sets=x.sets&&typeof x.sets==='object'?x.sets:{};x.missed=x.missed&&typeof x.missed==='object'?x.missed:{};for(const s of mbuSetNumbers()){x.sets[s]=normalizeSetState(x.sets[s]);if(!Array.isArray(x.missed[s]))x.missed[s]=[]}x.test6=normalizeSetState(x.test6);db=x;window.db=db;const normalized=JSON.stringify(db);lastSaved=normalized;if(normalized!==raw)localStorage.setItem(MBUQuizConfig.storageKey,normalized)}
+function loadDB(){let x=canonicalEmptyDB(),raw='';try{raw=localStorage.getItem(MBUQuizConfig.storageKey)||'';if(raw){const parsed=JSON.parse(raw);if(parsed&&typeof parsed==='object')x=migrateLegacyState(parsed)}}catch{};x.sets=x.sets&&typeof x.sets==='object'?x.sets:{};x.missed=x.missed&&typeof x.missed==='object'?x.missed:{};for(const s of mbuSetNumbers()){x.sets[s]=normalizeSetState(x.sets[s]);x.missed[s]=(SETS[s]||[]).filter((q,i)=>x.sets[s].graded[String(i)]&&x.sets[s].correct[String(i)]!==true).map(q=>q.id)}x.test6=normalizeSetState(x.test6);db=x;window.db=db;const normalized=JSON.stringify(db);lastSaved=normalized;if(normalized!==raw)localStorage.setItem(MBUQuizConfig.storageKey,normalized)}
 function saveDB(){const next=JSON.stringify(db);if(next===lastSaved)return;localStorage.setItem(MBUQuizConfig.storageKey,next);lastSaved=next}
 function setState(){return mode==='test6'?db.test6:db.sets[currentSet]}
 function mbuIsFlagged(q){return MBUStudio.flagged(MBUQuizConfig.studioBankKey,q)}
