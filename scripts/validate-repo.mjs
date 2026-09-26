@@ -78,7 +78,17 @@ function checkCombined(){
   if(!page.includes("dataUrl:'data/combined.json'")||!page.includes("legacyFormat:'combined'")||!page.includes("imageSource:'combined-images.js'")||!page.includes('../assets/quiz-engine.js'))fail('Combined: canonical data/shared engine wiring is missing');
 }
 function checkHazardsCanonical(){
-  canonicalPayload('equipment/exam-1/data/hazards.json','Workstation Hazards',350,{1:100,2:100,3:100,4:50});
+  const qs=canonicalPayload('equipment/exam-1/data/hazards.json','Workstation Hazards',350,{1:100,2:100,3:100,4:50});
+  const images=JSON.parse(read('equipment/exam-1/data/hazards-images.json'));
+  for(const q of qs)if(q.image&&!q.imageSvg&&!images[q.image])fail('Workstation Hazards: missing image asset '+q.image);
+  const standard=read('equipment/assets/hazards-standard-engine.js'),advanced=read('equipment/assets/hazards-quiz-engine.js');
+  if(!standard.includes('startFromData')||!advanced.includes('startFromData'))fail('Workstation Hazards: shared engines do not load canonical data');
+  for(const [p,set] of [['equipment/exam-1/hazards-100.html',1],['equipment/exam-1/hazards-bank-2.html',2],['equipment/exam-1/hazards-bank-3.html',3],['equipment/exam-1/hazards-harder.html',4]]){
+    const page=read(p);
+    if(!page.includes('data/hazards.json')||!page.includes('setFilter:'+set))fail(p+': canonical Hazards data wiring is missing');
+    if(page.includes('const QUESTIONS')||page.includes('const BANK=')||page.includes('const IMGS='))fail(p+': embedded Hazards question/image payload remains');
+  }
+  for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html'])if(!read(p).includes('data/hazards-images.json'))fail(p+': shared Hazards image bundle is not configured');
 }
 function checkCanonicalNewQuizBanks(){
   const manifest=JSON.parse(read('equipment/exam-1/banks.json')),engine=read('equipment/assets/quiz-engine.js');
