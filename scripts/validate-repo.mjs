@@ -59,9 +59,12 @@ function checkCopies(){
 function checkAssetVersions(){
   const dir=path.join(root,'equipment/exam-1');
   for(const name of fs.readdirSync(dir).filter(x=>x.endsWith('.html'))){
-    const p='equipment/exam-1/'+name,src=read(p),versions=[...src.matchAll(/\.\.\/assets\/[^"'?#\s]+\?v=(\d+)/g)].map(m=>m[1]);
+    const p='equipment/exam-1/'+name,src=read(p),refs=[];
+    for(const m of src.matchAll(/(?:src|href)=["'](\.\.\/assets\/[^"']+)["']/g)) refs.push(m[1]);
+    const versioned=refs.filter(ref=>ref.includes('?v='));
+    const versions=versioned.map(ref=>new URL(ref,'https://mbu.local/').searchParams.get('v')).filter(Boolean);
     if(versions.length&&new Set(versions).size!==1)fail(p+': mixed shared asset cache revisions: '+[...new Set(versions)].join(', '));
-    if(versions.length&&versions.some(v=>v!=='60'))fail(p+': stale shared asset cache revision; expected v60');
+    if(versions.some(v=>v!=='60'))fail(p+': stale shared asset cache revision; expected v60');
   }
 }
 checkAssetVersions();
