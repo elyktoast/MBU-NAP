@@ -485,20 +485,28 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#quiz .controls')).toBeVisible();
   });
 
-  test('Studio lazily hydrates canonical Bank 3 figures when an image question is shown', async ({ page }) => {
+  test('Studio lazily loads canonical Bank 3 figures from indexed image assets', async ({ page }) => {
     const errors = collectPageErrors(page);
+    const imageResponses = [];
+    page.on('response', response => {
+      if (/\/equipment\/exam-1\/images\/bank3\/[A-Za-z0-9_-]+\.png(?:\?|$)/.test(response.url())) {
+        imageResponses.push({ url: response.url(), status: response.status() });
+      }
+    });
     await page.goto(exam + '/studio.html');
     await waitForStudio(page);
-    const uid = await page.evaluate(() => {
-      const q = (BANK_QUESTIONS.get('b3') || []).find(x => x.img && x.img.kind === 'bank3');
-      if (!q) throw new Error('No Bank 3 figure question found');
+    const figure = await page.evaluate(() => {
+      const q = (BANK_QUESTIONS.get('b3') || []).find(x => x.img && x.img.kind === 'direct');
+      if (!q) throw new Error('No indexed Bank 3 figure question found');
       session = [q]; pos = 0;
       DB.active = { uids: [q.uid], pos: 0, answers: {}, updated: Date.now() };
       save(); showQ();
-      return q.uid;
+      return { uid: q.uid, url: q.img.url };
     });
-    expect(uid).toBeTruthy();
-    await expect(page.locator('#qimage img')).toHaveAttribute('src', /^data:image\/png;base64,/, { timeout: 10000 });
+    expect(figure.uid).toBeTruthy();
+    expect(figure.url).toMatch(/^images\/bank3\/[A-Za-z0-9_-]+\.png$/);
+    await expect(page.locator('#qimage img')).toHaveAttribute('src', /\/equipment\/exam-1\/images\/bank3\/[A-Za-z0-9_-]+\.png$/, { timeout: 10000 });
+    await expect.poll(() => imageResponses.some(x => x.status === 200 || x.status === 304)).toBeTruthy();
     expect(errors).toEqual([]);
   });
 
@@ -1113,7 +1121,7 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/studio.html');
     await expect(page.locator('#home')).toBeVisible();
     expect(requests.length).toBeGreaterThan(0);
-    expect(requests.every(url => new URL(url).searchParams.get('v') === '67')).toBeTruthy();
+    expect(requests.every(url => new URL(url).searchParams.get('v') === '68')).toBeTruthy();
     await expect.poll(() => page.evaluate(() => sessionStorage.getItem('mbu_build_manifest_v1'))).not.toBeNull();
   });
 
