@@ -505,6 +505,179 @@ test.describe('canonical quiz regression', () => {
   });
 
 
+  test('Bank 1 completes a full practice set through the real final-question path', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');
+    await page.evaluate(() => {
+      startSet(1);
+      const st = db.sets[1];
+      for (let i = 0; i < currentData.length - 1; i++) {
+        st.answers[String(i)] = [...currentData[i].answer];
+        st.graded[String(i)] = true;
+        st.correct[String(i)] = true;
+      }
+      st.current = currentData.length - 1;
+      currentIndex = currentData.length - 1;
+      saveDB();
+      loadQuestion();
+    });
+
+    await expect(page.locator('#progress')).toContainText('Question 100 of 100');
+    const answer = await page.evaluate(() => currentData[currentIndex].answer);
+    await clickIndexes(page.locator('#options .opt'), answer);
+    if (await page.locator('#submit-multi').isVisible()) await page.locator('#submit-multi').click();
+
+    await expect.poll(async () => {
+      const state = await storageJSON(page, 'SRNA_COMBINED_EXAM_SET_1_2026_V1');
+      return Object.keys(state.sets['1'].graded || {}).filter(k => state.sets['1'].graded[k]).length;
+    }).toBe(100);
+
+    await page.locator('#next').click();
+    await expect(page.locator('#dashboard')).toBeVisible();
+    await expect(page.locator('#overall')).toContainText('100 / 500 completed');
+
+    await page.reload();
+    await expect(page.locator('#overall')).toContainText('100 / 500 completed');
+  });
+
+  test('Bank 2 completes a full practice set through the real final-question path', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-2.html');
+    await page.evaluate(() => {
+      const s = st(0);
+      for (let i = 0; i < SETS[0].length - 1; i++) {
+        s.answered[i] = true;
+        s.selections[i] = [...SETS[0][i].correct];
+      }
+      s.current = SETS[0].length - 1;
+      save();
+      startSet(0);
+    });
+
+    await expect(page.locator('#progress')).toContainText('Question 100 of 100');
+    const answer = await page.evaluate(() => SETS[0][99].correct);
+    await clickIndexes(page.locator('#choices .choice'), answer);
+    await page.locator('#submitBtn').click();
+
+    await expect.poll(async () => {
+      const state = await storageJSON(page, 'srna_all5_groundup_v1');
+      return Object.keys(state.sets['0'].answered || {}).length;
+    }).toBe(100);
+
+    await expect(page.locator('#dash')).toBeVisible();
+    await expect(page.locator('#bank2Overall')).toContainText('100 / 500 completed');
+
+    await page.reload();
+    await expect(page.locator('#bank2Overall')).toContainText('100 / 500 completed');
+  });
+
+  test('Studio completes a mixed session spanning every canonical source and persists canonical results', async ({ page }) => {
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+
+    const expectedBanks = await page.evaluate(() => {
+      const banks = ['b1','b2','b3','h1','h2','h3','hh'];
+      session = banks.map(bank => {
+        const qs = BANK_QUESTIONS.get(bank) || [];
+        return qs.find(q => q.ans.length === 1) || qs[0];
+      }).filter(Boolean);
+      if (session.length !== banks.length) throw new Error('Could not build all-source Studio session');
+      pos = 0;
+      DB.active = { uids: session.map(q => q.uid), pos: 0, answers: {}, updated: Date.now() };
+      save();
+      showQ();
+      return session.map(q => q.bank);
+    });
+    expect(expectedBanks).toEqual(['b1','b2','b3','h1','h2','h3','hh']);
+
+    for (let i = 0; i < expectedBanks.length; i++) {
+      await expect(page.locator('#qprog')).toContainText(`Question ${i + 1} of ${expectedBanks.length}`);
+      const answer = await page.evaluate(() => session[pos].ans);
+      await clickIndexes(page.locator('#opts .opt'), answer);
+      await page.locator('#submit').click();
+
+      if (i < expectedBanks.length - 1) {
+        await expect(page.locator('#qprog')).toContainText(`Question ${i + 2} of ${expectedBanks.length}`);
+      } else {
+        await expect(page.locator('#home')).toBeVisible();
+      }
+    }
+
+    expect(await page.evaluate(() => DB.active)).toBeNull();
+    const completedBanks = await page.evaluate(() => {
+      const latest = {};
+      for (const [uid, result] of Object.entries(DB.ans || {})) {
+        if (result && result.ok) latest[uid.split('-')[0]] = true;
+      }
+      return latest;
+    });
+    for (const bank of expectedBanks) expect(completedBanks[bank]).toBe(true);
+
+    await page.reload();
+    await waitForStudio(page);
+    await expect(page.locator('#home')).toBeVisible();
+    await expect(page.locator('#resumeActive')).toHaveCount(0);
+  });
+
+  test('Studio grading parity covers every canonical source and each available answer type', async ({ page }) => {
+    const errors = collectPageErrors(page);
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+
+    const cases = await page.evaluate(() => {
+      const banks = ['b1','b2','b3','h1','h2','h3','hh'];
+      const out = [];
+      for (const bank of banks) {
+        const qs = BANK_QUESTIONS.get(bank) || [];
+        for (const kind of ['single','multi']) {
+          const q = qs.find(x => kind === 'single' ? x.ans.length === 1 : x.ans.length > 1);
+          if (q) out.push({ bank, kind, uid: q.uid });
+        }
+      }
+      return out;
+    });
+
+    for (const tc of cases) {
+      const setup = await page.evaluate(({ uid }) => {
+        const q = ALL_BY_UID.get(uid);
+        session = [q];
+        pos = 0;
+        DB.active = { uids: [q.uid], pos: 0, answers: {}, updated: Date.now() };
+        save();
+        showQ();
+
+        const wrong = q.opts.map((_, i) => i).filter(i => !q.ans.includes(i));
+        let chosen;
+        if (q.ans.length === 1) {
+          chosen = [wrong[0] ?? q.ans[0]];
+        } else {
+          chosen = q.ans.slice(0, -1);
+          chosen.push(wrong[0] ?? q.ans[q.ans.length - 1]);
+        }
+        return { chosen, answer: q.ans };
+      }, tc);
+
+      await clickIndexes(page.locator('#opts .opt'), setup.chosen);
+      await page.locator('#submit').click();
+      await expect(page.locator('#fb')).toBeVisible();
+      await expect(page.locator('#sessionCompleted')).toHaveText('1');
+
+      for (const index of setup.answer) {
+        await expect(page.locator('#opts .opt').nth(index)).toHaveClass(/correct/);
+      }
+
+      const persisted = await page.evaluate(uid => DB.ans && DB.ans[uid], tc.uid);
+      expect(persisted).toBeTruthy();
+      expect(persisted.ok).toBe(setup.chosen.slice().sort().join() === setup.answer.slice().sort().join());
+    }
+
+    expect(cases.some(x => x.kind === 'single')).toBe(true);
+    expect(cases.some(x => x.kind === 'multi')).toBe(true);
+    for (const bank of ['b1','b2','b3','h1','h2','h3','hh']) {
+      expect(cases.some(x => x.bank === bank)).toBe(true);
+    }
+    expect(errors).toEqual([]);
+  });
+
+
   test('Shared asset revisions and updater baseline stay canonical', async ({ page }) => {
     const requests=[];
     page.on('request', req => { if (req.url().includes('/equipment/assets/') && req.url().includes('?v=')) requests.push(req.url()); });
