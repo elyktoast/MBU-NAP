@@ -141,10 +141,7 @@
     d.reports.push(local);save(d);
     try{
       if(!REPORT_ENDPOINT)throw new Error('Reporting endpoint is not configured yet.');
-      const res=await fetch(REPORT_ENDPOINT,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload),cache:'no-store'});
-      if(!res.ok)throw new Error('Report service returned HTTP '+res.status);
-      let result={};try{result=await res.json()}catch(_){}
-      if(result&&result.ok===false)throw new Error(result.error||'Report service rejected the report.');
+      await fetch(REPORT_ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload),cache:'no-store'});
       local.sent=true;local.sentAt=new Date().toISOString();save(d);
       status.textContent='Report sent. Thank you.';
       setTimeout(()=>{document.getElementById('mbu-report-modal')?.classList.remove('open');reportContext=null},700);
