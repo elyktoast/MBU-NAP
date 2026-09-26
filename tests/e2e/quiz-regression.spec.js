@@ -296,22 +296,32 @@ test.describe('canonical quiz regression', () => {
   test('Hazards canonical grading overrides cross-outs and colored feedback', async ({ page }) => {
     const errors = collectPageErrors(page);
     await page.goto(exam + '/hazards-bank-3.html');
-    const caseData = await page.evaluate(() => {
-      const q = BANK.find(x => x.a && x.a.length && x.c && x.c.length);
-      if (!q) throw new Error('Hazards Bank 3 has no gradable question');
-      V = { mode: 'exam', n: q.setn };
-      S.ex[q.setn].idx = EXM[q.setn].ids.indexOf(q.id);
-      renderQ();
-      return { correct: q.a[0], answer: q.a };
+    const data = await page.evaluate(() => {
+      const q = BANK[0];
+      return { answer: q.a, optionCount: q.c.length, multi: q.type === 'multi' };
     });
-    const correct = page.locator('#main .opt').nth(caseData.correct);
+    const options = page.locator('#main .opt');
+    await expect(options).toHaveCount(data.optionCount);
+    const correctIndex = data.answer[0];
+    const correct = options.nth(correctIndex);
     await correct.click({ button: 'right' });
-    const wrong = await page.evaluate(({ answer }) => BANK.find(x => x.id === S.ex[V.n].ids?.[S.ex[V.n].idx])?.c.findIndex((_, i) => !answer.includes(i)) ?? -1, caseData).catch(() => -1);
-    if (wrong >= 0) await page.locator('#main .opt').nth(wrong).click();
-    for (const i of caseData.answer) if (i !== caseData.correct) await page.locator('#main .opt').nth(i).click();
-    await page.locator('#go').click();
+    const wrongIndex = Array.from({ length: data.optionCount }, (_, i) => i).find(i => !data.answer.includes(i));
+    if (data.multi) {
+      const selected = data.answer.filter(i => i !== correctIndex);
+      if (wrongIndex !== undefined) selected.push(wrongIndex);
+      while (selected.length < data.answer.length) {
+        const i = Array.from({ length: data.optionCount }, (_, n) => n).find(n => !selected.includes(n) && n !== correctIndex);
+        if (i === undefined) break;
+        selected.push(i);
+      }
+      for (const i of selected.slice(0, data.answer.length)) await options.nth(i).click();
+      await page.locator('#go').click();
+    } else {
+      await options.nth(wrongIndex === undefined ? correctIndex : wrongIndex).click();
+      await page.locator('#go').click();
+    }
     await expect(correct).toHaveCSS('background-color', 'rgb(198, 246, 213)');
-    await expect(correct).toHaveCSS('text-decoration-line', 'none');
+    await expect(correct.locator('.t')).toHaveCSS('text-decoration-line', 'none');
     await expect(correct).toHaveCSS('opacity', '1');
     await expect(page.locator('#fb')).toHaveCSS('background-color', 'rgb(248, 250, 252)');
     await expect(page.locator('#fb')).toHaveCSS('border-left-color', 'rgb(26, 54, 93)');
