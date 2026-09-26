@@ -38,3 +38,9 @@ body.mbu-bank1-ui{margin:0;padding:20px;background:var(--bg);color:var(--t);font
 @media(max-width:650px){body.mbu-bank1-ui{padding:10px}.mbu-bank1-ui .panel,.mbu-bank1-ui .quiz,.mbu-bank1-ui main>.card,.mbu-bank1-ui .qcard{padding:18px}.mbu-bank1-ui .grid,.mbu-bank1-ui #cards,.mbu-bank1-ui #setGrid{grid-template-columns:1fr}.mbu-bank1-ui .header,.mbu-bank1-ui .qhead,.mbu-bank1-ui .qmeta,.mbu-bank1-ui .controls,.mbu-bank1-ui .foot,.mbu-bank1-ui .act,.mbu-bank1-ui .mbu-quiz-bottom{align-items:flex-start;flex-direction:column}}
 /* Quiz interaction hint shared by every canonical quiz session. */
 .mbu-bank1-ui .mbu-crossout-hint{margin:8px 0 12px;color:var(--mut);font-size:.86rem;font-weight:650}
+
+/* Canonical graded-state contract: grading overrides any pre-grade cross-out state and all feedback uses one neutral explanation panel. */
+.mbu-bank1-ui .opt.correct,.mbu-bank1-ui .opt.ok,.mbu-bank1-ui .opt.miss,.mbu-bank1-ui .choice.good,.mbu-bank1-ui .choice.miss{background:var(--okbg)!important;border-color:var(--ok)!important;border-style:solid!important;color:var(--ok)!important;font-weight:750!important;text-decoration:none!important;opacity:1!important}
+.mbu-bank1-ui .opt.correct *,.mbu-bank1-ui .opt.ok *,.mbu-bank1-ui .opt.miss *,.mbu-bank1-ui .choice.good *,.mbu-bank1-ui .choice.miss *{text-decoration:none!important;opacity:1!important}
+.mbu-bank1-ui .explain,.mbu-bank1-ui #fb.explain{background:#f8fafc!important;border-left:5px solid var(--p)!important;color:var(--t)!important}
+.mbu-bank1-ui .explain>.fb.good,.mbu-bank1-ui .explain>.fb.badf,.mbu-bank1-ui #fb.explain>.fb.good,.mbu-bank1-ui #fb.explain>.fb.badf{background:transparent!important;border:0!important;margin:0!important;padding:0!important;color:inherit!important}
