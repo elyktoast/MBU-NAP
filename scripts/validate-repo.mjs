@@ -307,7 +307,8 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 // Studio hydration should fetch independent bank sources concurrently to reduce startup latency.
 {
  const src=read('equipment/exam-1/studio.html');
- if(!src.includes('const loaded=await Promise.all(sources.map(loadSource))'))fail('Studio: bank sources are not hydrated concurrently');
+ if(!src.includes('await Promise.all(sources.map(async source=>'))fail('Studio: bank sources are not hydrated concurrently');
+ if(!src.includes('ALL.push(...qs);reindex();try{buildTopics()}'))fail('Studio: loaded banks are not published progressively to the selector');
 }
 
 // Studio must not parse large embedded Hazards image maps during bank hydration.
@@ -413,7 +414,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!updater.includes("sessionStorage.getItem(BUILD_CACHE_KEY)"))fail('Updater: build baseline is not retained per session');
  if(!updater.includes('const CHECK_COOLDOWN = 120000'))fail('Updater: update polling cooldown regressed');
  const studio=read('equipment/exam-1/studio.html');
- if(!studio.includes('await Promise.all(sources.map(loadSource))'))fail('Studio: bank hydration is not parallelized');
+ if(!studio.includes('await Promise.all(sources.map(async source=>'))fail('Studio: bank hydration is not parallelized');
  if(studio.includes("localStorage.getItem('mbu_bank3_progress')")||studio.includes("localStorage.getItem('MBU_BANK3_PROGRESS')"))fail('Studio: obsolete Bank 3 storage-key fallbacks remain');
 }
 
