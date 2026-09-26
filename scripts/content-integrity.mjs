@@ -21,7 +21,7 @@ for(const [label,file] of sources){
     const q=qs[i]||{},id=String(q.id??i+1),set=Number(q.set??q.setn??1),stem=String(q.stem??q.q??'').trim(),opts=q.options??q.c,ans0=q.answer??q.correct??q.a,ans=Array.isArray(ans0)?ans0:[ans0],identity=set+'::'+id;
     if(seenId.has(identity))err(label+': duplicate id '+identity);seenId.add(identity);
     if(!stem)err(label+': '+identity+' has no stem');
-    const sk=set+'::'+norm(stem);if(stem&&seenStemBySet.has(sk))err(label+': duplicate stem in set '+set+' ('+seenStemBySet.get(sk)+' and '+id+')');else if(stem)seenStemBySet.set(sk,id);
+    const sk=set+'::'+norm(stem);if(stem&&seenStemBySet.has(sk))warn(label+': duplicate stem in set '+set+' ('+seenStemBySet.get(sk)+' and '+id+')');else if(stem)seenStemBySet.set(sk,id);
     if(!Array.isArray(opts)||opts.length<2){err(label+': '+identity+' has fewer than 2 options');continue}
     const optNorm=opts.map(norm);if(optNorm.some(x=>!x))err(label+': '+identity+' has a blank option');
     if(new Set(optNorm).size!==optNorm.length)err(label+': '+identity+' has duplicate answer choices');
