@@ -121,26 +121,26 @@ async function loadBanks(){
   const sources=BANK_MANIFEST.studioSources.map(src=>[src.data,src.key,src.label,src]);
   // Paint the Studio immediately; question banks hydrate in the background.
   try{renderHome()}catch(e){}
-  const loadSource=async([url,key,label])=>{
+  const loadSource=async([url,key,label,meta])=>{
     try{
       const t=await studioFetch(url);
-      if(key==='b1'||key==='b2'){
-        const qs=JSON.parse(t);if(!Array.isArray(qs))throw Error((key==='b1'?'Bank 1':'Bank 2')+' Studio data is invalid');return qs.map((q,i)=>norm(q,key,q.setn||q.set||1,i,key==='b1'?'Quiz Bank 1':'Quiz Bank 2'))
-      }else if(key==='b3'){
-        const qs=JSON.parse(t);if(!Array.isArray(qs))throw Error('Bank 3 Studio data is invalid');return qs.map((q,i)=>norm({...q,img:q.img?{kind:'bank3',url:'quiz-bank-3.html',key:q.img}:null},'b3',q.setn||1,i,'Quiz Bank 3'))
-      }else if(key==='combined'){
-        const raw=arrAfter(t,'"questions"');if(!raw)throw Error('Combined questions not found');return evalArr(raw).map((q,i)=>norm({...q,img:q.image_id?{kind:'combined',url:'combined-images.js',imgKey:q.image_id}:null},'combined',Math.floor(i/50)+1,i,'Combined'))
-      }else{
-        let qs;
-        if(key==='h3'||key==='hh'){qs=JSON.parse(t);if(!Array.isArray(qs))throw Error('Hazards Studio data is invalid')}
-        else{const raw=arrAfter(t,'const QUESTIONS');if(!raw)throw Error('question array not found');qs=evalArr(raw)}
-        if(key==='h2'&&qs.length<100){const extraRaw=arrAfter(t,'additionalHazards');if(!extraRaw)throw Error('additionalHazards not found');const extra=evalArr(extraRaw);for(let n=qs.length+1;n<=100;n++){const base=extra[(n-31)%extra.length];qs.push({id:n,type:'single',stem:base.stem,options:base.options,answer:base.answer,explanation:base.exp,citation:'Anesthesia Workstation Hazards & Safety, '+base.cit})}}
-        const imageUrl=key==='h3'?'hazards-bank-3.html':key==='hh'?'hazards-harder.html':url;
-        return qs.map((q,i)=>norm({...q,img:q.img?(key==='h3'||key==='hh'?{kind:'hazards',url:imageUrl,imgKey:q.img}:q.img):(q.imageSvg||null)},key,1,i,label,'Workstation Hazards'))
+      if(meta.format==='canonical'){
+        const payload=JSON.parse(t),all=Array.isArray(payload)?payload:(payload.questions||[]);
+        if(!Array.isArray(all))throw Error('canonical question data is invalid');
+        const qs=meta.setFilter?all.filter(q=>Number(q.set)===Number(meta.setFilter)):all;
+        return qs.map((q,i)=>{
+          let img=q.imageSvg||q.image||null;
+          if(meta.imageKind==='bank3'&&q.image)img={kind:'bank3',url:meta.imageSource,key:q.image};
+          else if(meta.imageKind==='combined'&&q.imageId)img={kind:'combined',url:meta.imageSource,imgKey:q.imageId};
+          else if(meta.imageKind==='hazards'&&q.image)img={kind:'hazards',url:meta.imageSource,imgKey:q.image};
+          const studioSet=String(key).startsWith('h')?1:(q.set||1);
+          return norm({...q,img},key,studioSet,i,label,String(key).startsWith('h')?'Workstation Hazards':undefined)
+        })
       }
+      throw Error('unsupported source format '+meta.format)
     }catch(e){errors.push(label+': '+(e&&e.name==='AbortError'?'timed out':e.message));console.error('Studio source failed:',label,e);return []}
   };
-  const bankOrder=['b1','b2','b3','combined','h1','h2','h3','hh'];
+  const bankOrder=sources.map(x=>x[1]);
   const addLoaded=qs=>{
     if(!qs.length)return;
     ALL.push(...qs);
