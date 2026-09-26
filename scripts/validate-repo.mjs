@@ -55,7 +55,7 @@ function checkCombined(){
   const src=read('equipment/exam-1/combined-questions.js'),m=src.match(/window\.QUIZ_DATA\s*=\s*([\s\S]*?)\s*;?\s*$/);
   if(!m)return fail('Combined: QUIZ_DATA payload not found');
   let data;try{data=Function('return ('+m[1]+')')()}catch(e){return fail('Combined: invalid question payload: '+e.message)}
-  const qs=Array.isArray(data&&data.questions)?data.questions:[];validateQuestions('Combined',qs.map(q=>({id:q.id,type:q.type,options:q.c,answer:q.a})),150);
+  const qs=Array.isArray(data&&data.questions)?data.questions:[];validateQuestions('Combined',qs,150);
   if(data.count!==150)fail('Combined: metadata count is not 150');
   const images=read('equipment/exam-1/combined-images.js');for(const q of qs)if(q.image_id&&!images.includes('"'+q.image_id+'"'))fail('Combined: missing image asset '+q.image_id);
 }
