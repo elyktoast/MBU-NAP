@@ -1,8 +1,8 @@
 <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Exam 1 Study Studio</title><style>
 :root{--p:#1a365d;--b:#cbd5e0;--bg:#edf2f7;--mut:#718096;--ok:#22543d;--bad:#9b2c2c}*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1a202c}.wrap{max-width:1100px;margin:auto;padding:18px}body.mbu-quiz-active>.wrap>.top{display:none}body.mbu-quiz-active>.wrap{max-width:1040px;padding:20px}.panel{background:#fff;border-radius:12px;padding:22px;box-shadow:0 4px 15px #0001;margin-bottom:16px}.top{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}.btn{border:0;border-radius:8px;padding:10px 14px;font-weight:750;cursor:pointer;background:var(--p);color:white}.btn.out{background:white;color:var(--p);border:1px solid var(--p)}.btn.bad{background:var(--bad)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.card{border:1px solid var(--b);border-radius:10px;padding:15px}.mut{color:var(--mut);font-size:.9rem}.hidden{display:none!important}.controls{display:flex;gap:8px;flex-wrap:wrap}.field{padding:10px;border:1px solid var(--b);border-radius:8px;font:inherit}.stem{font-size:1.12rem;font-weight:700;margin:16px 0}.opts{display:grid;gap:9px}.opt{padding:12px;border:1px solid var(--b);border-radius:8px;background:#fff;text-align:left;font:inherit;cursor:pointer}.opt.sel{background:#ebf8ff;border-color:#2b6cb0}.opt.good{background:#c6f6d5}.opt.bad{background:#fed7d7}.nav{display:flex;gap:5px;flex-wrap:wrap;max-height:180px;overflow:auto}.nav button{width:38px;height:34px;border:1px solid var(--b);background:white;border-radius:6px}.nav .done{background:#e6fffa}.nav .flag{outline:2px solid #d69e2e}.bar{height:8px;background:#e2e8f0;border-radius:8px;overflow:hidden}.bar i{display:block;height:100%;background:#2b6cb0}.topic{display:grid;grid-template-columns:1fr 90px 2fr;gap:8px;align-items:center;margin:7px 0}.searchrow,.reportrow{padding:10px;border-bottom:1px solid #edf2f7}.session-builder{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:10px 0}.pickbox{border:1px solid var(--b);border-radius:10px;padding:12px;background:#f8fafc}.pickbox h4{margin:0 0 8px}.checklist{display:grid;gap:6px;max-height:210px;overflow:auto}.checkitem{display:flex;gap:8px;align-items:flex-start;font-size:.92rem}.checkitem input{margin-top:3px}.pickactions{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}.tiny{padding:5px 8px;font-size:.8rem}.pill{display:inline-block;padding:3px 8px;border-radius:999px;background:#edf2f7;font-size:.8rem}.feedback{margin-top:14px;padding:12px;border-radius:8px;background:#f7fafc}.qhead{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}@media(max-width:650px){.wrap{padding:9px}.panel{padding:15px}.topic{grid-template-columns:1fr 70px}.topic .bar{grid-column:1/3}}
-</style><link rel="stylesheet" href="../assets/site-nav.css?v=68">
-<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=68">
-<script defer src="../assets/site-nav.js?v=68" data-page="studio"></script>
+</style><link rel="stylesheet" href="../assets/site-nav.css?v=69">
+<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=69">
+<script defer src="../assets/site-nav.js?v=69" data-page="studio"></script>
 
 <style>
 /* Studio dashboard layout */
@@ -53,10 +53,10 @@ body{background:#edf2f7}
 </head><body><div class="wrap"><div class="panel top"><div><h1 style="margin:0" id="studioTitle">Exam 1 Study Studio</h1><div class="mut hidden" id="loadmsg" role="status" aria-live="polite"></div></div><div class="controls"><button class="btn out mbu-return hidden" id="studioHomeNav" onclick="renderHome()">← Study Studio Home</button></div></div>
 <section id="home" class="panel" aria-busy="true"><div id="studioLoadPanel" class="studio-load-panel hidden" role="status" aria-live="polite"><div id="studioLoadSummary" class="studio-load-summary"></div><div id="studioLoadSources" class="studio-load-sources"></div></div><div class="grid"><div class="card"><h3>Cumulative Missed</h3><div id="missedN" class="mut"></div><button class="btn" onclick="startMode('missed')">Review All Missed</button></div><div class="card"><h3>Flagged</h3><div id="flagN" class="mut"></div><button class="btn" onclick="startMode('flagged')">Review Flagged</button></div><div class="card"><h3>Weak Areas</h3><div class="mut">Builds practice from your lowest-scoring topics.</div><button class="btn" onclick="startMode('weak')">Adaptive Practice</button></div><div class="card"><h3>Question Search</h3><div class="mut">Search all loaded banks by question, topic, explanation, or source.</div><button class="btn" onclick="show('search')">Search Repository</button></div></div><h2>Start a Session</h2><div class="controls" style="margin-bottom:10px"><button class="btn" id="buildSetsBtn" onclick="setBuildMode('sets')">From Practice Sets</button><button class="btn out" id="buildTopicsBtn" onclick="setBuildMode('topics')">From Topics</button></div><div class="mut" id="buildModeHelp" style="margin-bottom:10px">Choose one or more practice sets. Questions can come from any topic in those sets.</div><div class="session-builder"><div class="pickbox" id="sourcePickbox"><h4>Banks &amp; Practice Sets</h4><div class="pickactions"><button class="btn out tiny" onclick="setChecks('sourceChecks',true)">Select All</button><button class="btn out tiny" onclick="setChecks('sourceChecks',false)">Clear</button></div><div id="sourceChecks" class="checklist"></div></div><div class="pickbox hidden" id="topicPickbox"><h4>Topics</h4><div class="pickactions"><button class="btn out tiny" onclick="setChecks('topicChecks',true)">Select All</button><button class="btn out tiny" onclick="setChecks('topicChecks',false)">Clear</button></div><div id="topicChecks" class="checklist"></div></div><div class="pickbox"><h4>Session Options</h4><div class="mut" style="margin-bottom:5px">Question count</div><select id="count" class="field" style="width:100%;margin-bottom:10px"><option>10</option><option>25</option><option>50</option><option selected>100</option><option>150</option><option>200</option><option value="all">All matching</option></select><div class="mut" style="margin-bottom:5px">Order</div><select id="order" class="field" style="width:100%;margin-bottom:12px"><option value="random">Random</option><option value="sequential">Sequential</option></select><button class="btn" style="width:100%" onclick="startMode('custom')">Start Session</button></div></div><div class="mut">Session source can be practice sets or topics. Topic mode pulls matching questions across every loaded bank and Hazards set.</div><h2>Performance by Topic</h2><div id="analytics"></div><h2>Question Reports</h2><div class="mut" id="reportN"></div><button class="btn out" onclick="showReports()">View Reports</button></section>
 <section id="quiz" class="panel hidden mbu-bank1-ui"><div class="header"><div class="row"><span class="badge" id="sessionBadge">STUDY STUDIO</span><button class="btn out" id="flagBtn" onclick="toggleFlag()">☆ Flag</button><button class="btn out" onclick="reportCurrent()">Report</button><button class="btn out" onclick="toggleNav()">Navigator</button><button class="btn out mbu-return" onclick="renderHome()">← Study Studio Home</button></div><div class="progress" id="qprog"></div></div><div class="stats"><div>Completed: <strong id="sessionCompleted">0</strong>/<span id="sessionTotal">0</span></div><div>Score: <strong id="sessionScore">0</strong>%</div><div>Missed: <strong id="sessionMissed">0</strong></div></div><div id="navigator" class="row hidden" style="flex-wrap:wrap;gap:6px;margin:8px 0 14px;max-height:180px;overflow:auto;padding:3px"></div><div class="type" id="qmeta"></div><div class="stem" id="stem"></div><div class="mbu-crossout-hint">Tip: Right-click an answer to cross it out.</div><div id="qimage" class="image hidden"></div><div class="options" id="opts"></div><div class="row" id="studio-submit-row" style="display:none;margin:4px 0 18px;justify-content:flex-end"><button class="btn" id="submit" onclick="grade()">Submit Answer</button></div><div id="fb" class="explain"><div id="fbText"></div><div id="fbCitation" class="cite"></div></div><div class="controls"><button class="btn out" id="studioPrev" onclick="studioNav(-1)">Previous</button><div class="row"><button class="btn out" onclick="resetStudioCurrent()">Reset</button><button class="btn" id="next" onclick="studioNav(1)">Next</button></div></div></section>
-<section id="search" class="panel hidden"><h2>Question Repository Search</h2><input id="searchbox" class="field" style="width:100%" placeholder="Search PIP, vaporizer, scavenging…" oninput="doSearch()"><div id="searchresults"></div></section><section id="reports" class="panel hidden"><h2>Saved Question Reports</h2><div class="controls" style="margin-bottom:10px"><button class="btn" id="sendSavedReportsBtn" type="button" onclick="sendSavedReports()">Send Saved Reports</button><button class="btn out" type="button" onclick="renderHome()">← Study Studio Home</button></div><div class="mut" id="savedReportStatus" role="status" aria-live="polite"></div><div id="reportlist"></div></section></div><script src="../assets/studio-sync.js?v=68"></script><script src="../assets/navigator.js?v=68"></script><script>
+<section id="search" class="panel hidden"><h2>Question Repository Search</h2><input id="searchbox" class="field" style="width:100%" placeholder="Search PIP, vaporizer, scavenging…" oninput="doSearch()"><div id="searchresults"></div></section><section id="reports" class="panel hidden"><h2>Saved Question Reports</h2><div class="controls" style="margin-bottom:10px"><button class="btn" id="sendSavedReportsBtn" type="button" onclick="sendSavedReports()">Send Saved Reports</button><button class="btn out" type="button" onclick="renderHome()">← Study Studio Home</button></div><div class="mut" id="savedReportStatus" role="status" aria-live="polite"></div><div id="reportlist"></div></section></div><script src="../assets/studio-sync.js?v=69"></script><script src="../assets/navigator.js?v=69"></script><script>
 const STORE=MBUStudio.STORE;let DB=MBUStudio.db();if(!DB.active)DB.active=null;DB.crosses=DB.crosses||{};
 let BANK_MANIFEST=null,STUDIO_SOURCE_CATALOG=[],STUDIO_SOURCES=[],STUDIO_SOURCE_ORDER=[],STUDIO_SOURCE_BY_KEY=new Map(),STUDIO_SOURCE_STATE=new Map();
-let ALL=[],ALL_BY_UID=new Map(),ALL_UIDS=new Set(),BANK_QUESTIONS=new Map(),STUDIO_BANK_LABELS=new Map(),STUDIO_SET_NAMES=new Map(),STUDIO_SET_COUNTS=new Map(),STUDIO_TOPIC_COUNTS=new Map(),session=[],pos=0,sel=new Set(),graded=false,autoTimer=null;
+let ALL=[],ALL_BY_UID=new Map(),BANK_QUESTIONS=new Map(),STUDIO_BANK_LABELS=new Map(),STUDIO_SET_NAMES=new Map(),STUDIO_SET_COUNTS=new Map(),STUDIO_TOPIC_COUNTS=new Map(),session=[],pos=0,sel=new Set(),graded=false,autoTimer=null;
 function seedStudioSourceCatalog(){
   STUDIO_BANK_LABELS.clear();STUDIO_SET_NAMES.clear();STUDIO_SET_COUNTS.clear();
   for(const src of STUDIO_SOURCE_CATALOG){
@@ -72,21 +72,36 @@ const save=()=>MBUStudio.save(DB);
 function saveActive(){if(!session.length)return;const uids=session.map(q=>q.uid),prior=DB.active&&Array.isArray(DB.active.uids)&&DB.active.uids.length===uids.length&&DB.active.uids.every((uid,i)=>uid===uids[i])?DB.active:null;if(prior&&prior.pos===pos)return;DB.active={uids,pos,answers:prior&&prior.answers&&typeof prior.answers==='object'?prior.answers:{},updated:Date.now()};save()}
 function sessionAnswer(uid){return DB.active&&DB.active.answers?DB.active.answers[uid]:null}
 function setSessionAnswer(uid,result){if(!DB.active||!DB.active.answers)saveActive();DB.active.answers[uid]=result;save()}
-function clearSessionAnswer(uid){if(DB.active&&DB.active.answers){delete DB.active.answers[uid];save()}}
 function clearActive(){DB.active=null;save()}
-function resumeActive(){if(!DB.active||!DB.active.uids)return;const qs=DB.active.uids.map(id=>ALL_BY_UID.get(id)).filter(Boolean);if(!qs.length){clearActive();return}session=qs;pos=Math.min(DB.active.pos||0,session.length-1);showQ()}
+function studioHasFailedSource(){for(const state of STUDIO_SOURCE_STATE.values())if(state.status==='failed')return true;return false}
+function reconcileActiveState(){
+  const a=DB.active;if(!a||!Array.isArray(a.uids)||!a.uids.length)return null;
+  const old=a.uids,base=Math.min(Math.max(Number(a.pos)||0,0),old.length-1),currentUid=old[base],uids=[],seen=new Set();
+  for(const uid of old)if(ALL_BY_UID.has(uid)&&!seen.has(uid)){seen.add(uid);uids.push(uid)}
+  if(!uids.length){clearActive();return null}
+  const answers={};for(const uid of uids)if(a.answers&&a.answers[uid])answers[uid]=a.answers[uid];
+  let nextPos=currentUid?uids.indexOf(currentUid):-1;if(nextPos<0)nextPos=Math.min(base,uids.length-1);
+  const changed=uids.length!==old.length||uids.some((uid,i)=>uid!==old[i])||nextPos!==a.pos||Object.keys(answers).length!==Object.keys(a.answers||{}).length;
+  if(changed){DB.active={...a,uids,pos:nextPos,answers};save()}
+  return DB.active
+}
+function resumeActive(){
+  if(!DB.active||!Array.isArray(DB.active.uids)||!DB.active.uids.length)return;
+  const qs=DB.active.uids.map(id=>ALL_BY_UID.get(id)).filter(Boolean);
+  if(qs.length!==DB.active.uids.length){renderHome();return}
+  session=qs;pos=Math.min(DB.active.pos||0,session.length-1);showQ()
+}
 function activeButton(){
   let old=document.getElementById('resumeActive');if(old)old.remove();
-  if(!DB.active||!Array.isArray(DB.active.uids)||!DB.active.uids.length)return;
-  if(!ALL_BY_UID.size)return;
-  const uids=DB.active.uids.filter(id=>ALL_BY_UID.has(id));
-  if(!uids.length){clearActive();return}
-  if(uids.length!==DB.active.uids.length){DB.active.uids=uids;DB.active.pos=Math.min(DB.active.pos||0,uids.length-1);save()}
-  let host=document.getElementById('home'),b=document.createElement('button');b.id='resumeActive';b.className='btn';b.style.cssText='margin:0 0 16px';b.textContent='▶ Resume Active Quiz · Question '+((DB.active.pos||0)+1)+' / '+uids.length;b.onclick=resumeActive;host.insertBefore(b,host.children[1]||null)
+  if(!DB.active||!Array.isArray(DB.active.uids)||!DB.active.uids.length||!ALL_BY_UID.size)return;
+  const missing=DB.active.uids.some(id=>!ALL_BY_UID.has(id));
+  if(missing&&studioHasFailedSource()){
+    const host=document.getElementById('home'),b=document.createElement('button');b.id='resumeActive';b.className='btn';b.style.cssText='margin:0 0 16px';b.disabled=true;b.textContent='⏸ Resume Active Quiz · retry failed source first';host.insertBefore(b,host.children[1]||null);return
+  }
+  const active=reconcileActiveState();if(!active)return;
+  const host=document.getElementById('home'),b=document.createElement('button');b.id='resumeActive';b.className='btn';b.style.cssText='margin:0 0 16px';b.textContent='▶ Resume Active Quiz · Question '+(active.pos+1)+' / '+active.uids.length;b.onclick=resumeActive;host.insertBefore(b,host.children[1]||null)
 }
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
-function arrAfter(src,marker){let p=src.indexOf(marker);if(p<0)return null;p=src.indexOf('[',p);let dep=0,str=null,escp=false;for(let i=p;i<src.length;i++){let c=src[i];if(str){if(escp)escp=false;else if(c==='\\')escp=true;else if(c===str)str=null;continue}if(c==='"'||c==="'"||c==='`'){str=c;continue}if(c==='[')dep++;if(c===']'&&--dep===0)return src.slice(p,i+1)}return null}
-function evalArr(s){return Function('return ('+s+')')()}
 const STUDIO_SOURCE_CACHE=new Map();
 async function studioFetch(url){
   if(STUDIO_SOURCE_CACHE.has(url))return STUDIO_SOURCE_CACHE.get(url);
@@ -112,7 +127,7 @@ function showLoadErrors(errors){
 function renderStudioLoadState(){
   const panel=document.getElementById('studioLoadPanel'),summary=document.getElementById('studioLoadSummary'),list=document.getElementById('studioLoadSources'),home=document.getElementById('home'),top=document.getElementById('loadmsg');
   if(!panel||!summary||!list)return;
-  const states=[...STUDIO_SOURCE_STATE.values()],total=states.length,ready=states.filter(x=>x.status==='ready').length,failed=states.filter(x=>x.status==='failed').length,loading=states.filter(x=>x.status==='loading').length;
+  const states=[...STUDIO_SOURCE_STATE.values()],total=states.length;let ready=0,failed=0,loading=0;for(const x of states){if(x.status==='ready')ready++;else if(x.status==='failed')failed++;else if(x.status==='loading')loading++}
   if(home)home.setAttribute('aria-busy',loading?'true':'false');
   if(!total){panel.classList.add('hidden');return}
   const complete=ready+failed;
@@ -126,7 +141,7 @@ function addLoadedQuestions(qs){
   if(!qs.length)return;
   ALL.push(...qs);
   for(const q of qs){
-    ALL_BY_UID.set(q.uid,q);ALL_UIDS.add(q.uid);
+    ALL_BY_UID.set(q.uid,q);
     if(!BANK_QUESTIONS.has(q.bank))BANK_QUESTIONS.set(q.bank,[]);
     BANK_QUESTIONS.get(q.bank).push(q);
     if(!String(q.bank).startsWith('h'))STUDIO_BANK_LABELS.set(q.bank,q.bankLabel);
@@ -172,7 +187,7 @@ async function retryStudioSource(key){
   sortLoadedQuestions();syncBankData();buildTopics();renderHome();renderStudioLoadState()
 }
 async function loadBanks(){
-  ALL=[];ALL_BY_UID.clear();ALL_UIDS.clear();BANK_QUESTIONS.clear();STUDIO_TOPIC_COUNTS.clear();STUDIO_SOURCE_STATE.clear();STUDIO_SOURCE_BY_KEY.clear();
+  ALL=[];ALL_BY_UID.clear();BANK_QUESTIONS.clear();STUDIO_TOPIC_COUNTS.clear();STUDIO_SOURCE_STATE.clear();STUDIO_SOURCE_BY_KEY.clear();
   try{
     BANK_MANIFEST=JSON.parse(await studioFetch('banks.json'));
     if(!BANK_MANIFEST||!Array.isArray(BANK_MANIFEST.studioSources))throw Error('invalid bank manifest');
@@ -216,11 +231,6 @@ function syncBankData(){
   syncCanonical('b1','SRNA_COMBINED_EXAM_SET_1_2026_V1');
   syncCanonical('b2','srna_all5_groundup_v1');
   syncCanonical('b3','srna_equipment_dashboard_v1');
-  syncCanonical('combined','MBU_COMBINED_BANK_2026_V1');
-  try{
-    const b1=JSON.parse(localStorage.getItem('SRNA_COMBINED_EXAM_SET_1_2026_V1')||'null');
-    if(b1&&b1.sets)for(let s=1;s<=5;s++){const st=b1.sets[s]||{},qs=(BANK_QUESTIONS.get('b1')||[]).filter(q=>q.set===s);qs.forEach((q,i)=>{const k=String(i);if(st.graded&&st.graded[k])put(q,st.correct&&st.correct[k],'b1')})}
-  }catch(e){}
   try{
     const b2=JSON.parse(localStorage.getItem('srna_all5_groundup_v1')||'null');
     if(b2&&b2.sets)for(let s=0;s<5;s++){const st=b2.sets[s]||{},qs=(BANK_QUESTIONS.get('b2')||[]).filter(q=>q.set===s+1);Object.entries(st.answered||{}).forEach(([i,ok])=>put(qs[+i],ok,'b2'))}
@@ -296,10 +306,10 @@ function showQ(){clearTimeout(autoTimer);autoTimer=null;show('quiz');let q=sessi
 function pick(i){if(graded)return;let q=session[pos];if(q.ans.length===1){sel=new Set([i])}else if(sel.has(i))sel.delete(i);else if(sel.size<q.ans.length)sel.add(i);document.querySelectorAll('#opts .opt').forEach((b,j)=>b.classList.toggle('selected',sel.has(j)));const submit=document.getElementById('submit');submit.disabled=sel.size!==q.ans.length;submit.textContent=q.ans.length>1?`Submit Selections (${sel.size}/${q.ans.length})`:'Submit Answer'}
 function grade(){let q=session[pos];if(!sel.size||sel.size!==q.ans.length)return;graded=true;let a=[...sel].sort().join(),w=[...q.ans].sort().join(),ok=a===w;const selected=[...sel].sort((x,y)=>x-y);MBUStudio.stageAnswer(q.bank,q,ok);setSessionAnswer(q.uid,{ok,selected,at:Date.now()});document.querySelectorAll('#opts .opt').forEach((b,i)=>{b.classList.remove('selected');if(q.ans.includes(i))b.classList.add('correct');else if(sel.has(i))b.classList.add('incorrect');b.disabled=true});document.querySelectorAll('#opts .mbu-cross').forEach(b=>b.disabled=true);let f=document.getElementById('fb');f.style.display='block';document.getElementById('fbText').innerHTML=`<b>${ok?'Correct':'Incorrect'}.</b> ${esc(q.exp)}`;document.getElementById('fbCitation').textContent=q.src||'';document.getElementById('studio-submit-row').style.display='none';const ss=sessionStats();document.getElementById('sessionCompleted').textContent=ss.done;document.getElementById('sessionScore').textContent=ss.score;document.getElementById('sessionMissed').textContent=ss.missed;if(!document.getElementById('navigator').classList.contains('hidden'))renderNav();saveActive();if(ok){autoTimer=setTimeout(()=>nextQ(),350)}}
 function studioNav(delta){clearTimeout(autoTimer);autoTimer=null;const n=pos+delta;if(n<0||n>=session.length)return;pos=n;saveActive();showQ()}
-function resetStudioCurrent(){clearTimeout(autoTimer);autoTimer=null;const q=session[pos];clearSessionAnswer(q.uid);Object.keys(DB.crosses).filter(k=>k.startsWith(q.uid+':')).forEach(k=>delete DB.crosses[k]);save();showQ()}
+function resetStudioCurrent(){clearTimeout(autoTimer);autoTimer=null;const q=session[pos];let changed=false;if(DB.active&&DB.active.answers&&Object.prototype.hasOwnProperty.call(DB.active.answers,q.uid)){delete DB.active.answers[q.uid];changed=true}const prefix=q.uid+':';for(const k of Object.keys(DB.crosses))if(k.startsWith(prefix)){delete DB.crosses[k];changed=true}if(changed)save();showQ()}
 function nextQ(){clearTimeout(autoTimer);autoTimer=null;if(pos+1<session.length){pos++;saveActive();showQ()}else{if(Object.prototype.hasOwnProperty.call(DB,'searchReturn')){DB.active=DB.searchReturn;delete DB.searchReturn;save()}else clearActive();session=[];const ret=new URLSearchParams(location.search).get('return');if(ret==='hazards'){location.href='hazards.html';return}if(ret==='combined'){location.href='combined.html';return}renderHome()}}
-function toggleFlag(){let q=session[pos];DB.flags[q.uid]=MBUStudio.toggleFlag(q.bank,q);saveActive();document.getElementById('flagBtn').textContent=DB.flags[q.uid]?'★ Flagged':'☆ Flag';if(!document.getElementById('navigator').classList.contains('hidden'))renderNav()}
-function toggleNav(){clearTimeout(autoTimer);autoTimer=null;const nav=document.getElementById('navigator'),opening=nav.classList.contains('hidden');nav.classList.toggle('hidden');if(opening)renderNav();saveActive()}
+function toggleFlag(){let q=session[pos],on=MBUStudio.toggleFlag(q.bank,q);document.getElementById('flagBtn').textContent=on?'★ Flagged':'☆ Flag';if(!document.getElementById('navigator').classList.contains('hidden'))renderNav()}
+function toggleNav(){clearTimeout(autoTimer);autoTimer=null;const nav=document.getElementById('navigator'),opening=nav.classList.contains('hidden');nav.classList.toggle('hidden');if(opening)renderNav()}
 function renderNav(){document.getElementById('navigator').innerHTML=session.map((q,i)=>{let r=sessionAnswer(q.uid);return MBUNavigator.button({label:i+1,active:i===pos,flagged:!!DB.flags[q.uid],result:r?!!r.ok:null,onClick:'clearTimeout(autoTimer);autoTimer=null;pos='+i+';saveActive();showQ()'})}).join('')}
 function practiceSearch(uid){clearTimeout(autoTimer);autoTimer=null;const q=ALL_BY_UID.get(uid);if(!q)return;const previous=Object.prototype.hasOwnProperty.call(DB,'searchReturn')?DB.searchReturn:DB.active;DB.searchReturn=previous?JSON.parse(JSON.stringify(previous)):null;session=[q];pos=0;DB.active={uids:[q.uid],pos:0,answers:{},updated:Date.now()};save();showQ()}
 function doSearch(){let x=document.getElementById('searchbox').value.trim().toLowerCase();if(x.length<2){document.getElementById('searchresults').innerHTML='';return}const r=[];for(const q of ALL){if(q.searchText.includes(x)){r.push(q);if(r.length===100)break}}document.getElementById('searchresults').innerHTML=`<div class="mut">${r.length}${r.length===100?'+':''} matches</div>`+r.map(q=>`<div class="searchrow"><b>${esc(q.bankLabel)} · ${esc(q.topic)}</b><div>${esc(q.stem)}</div><button class="btn out" onclick="practiceSearch('${q.uid}')">Practice this question</button></div>`).join('')}
@@ -307,4 +317,4 @@ function reportCurrent(){let hadAuto=!!autoTimer;clearTimeout(autoTimer);autoTim
 function showReports(){show('reports');const pending=MBUStudio.pendingReports().length,btn=document.getElementById('sendSavedReportsBtn'),status=document.getElementById('savedReportStatus');btn.disabled=!pending;btn.textContent=pending?'Send Saved Reports ('+pending+')':'All Saved Reports Sent';status.textContent=pending?pending+' saved report'+(pending===1?' is':'s are')+' still stored only on this device.':'';document.getElementById('reportlist').innerHTML=DB.reports.map((r,i)=>`<div class="reportrow"><b>${esc(r.bankLabel||r.bank)}</b> · ${esc(r.reason||'Report')} · <span class="mut">${r.sent?'Sent':'Pending'}</span><div>${esc(r.stem)}</div><button class="btn bad" onclick="DB.reports.splice(${i},1);save();showReports()">Delete</button></div>`).join('')||'<div class="mut">No reports saved.</div>'}
 async function sendSavedReports(){const btn=document.getElementById('sendSavedReportsBtn'),status=document.getElementById('savedReportStatus');btn.disabled=true;let message='';try{const result=await MBUStudio.sendSavedReports(p=>{status.textContent='Sending saved reports… '+p.done+' / '+p.total});message=result.failed?result.sent+' sent, '+result.failed+' still pending.':'All '+result.sent+' saved report'+(result.sent===1?'':'s')+' sent successfully.'}catch(e){message='Could not send saved reports: '+e.message}finally{showReports();status.textContent=message}}
 loadBanks();
-</script><script src="../assets/calculator.js?v=68"></script><script>/* MBU_BUILD:2026-09-26-combined-bank-v69 */</script><script src="../assets/auto-update.js?v=68"></script></body></html>
+</script><script src="../assets/calculator.js?v=69"></script><script>/* MBU_BUILD:2026-09-26-phase3-studio-final-v85 */</script><script src="../assets/auto-update.js?v=69"></script></body></html>

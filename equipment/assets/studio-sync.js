@@ -20,37 +20,69 @@
       .replace(/^bhh-/i,'hh-');
   }
 
-  function db(){
-    if(cache) return cache;
-    let d;
-    try{d=JSON.parse(localStorage.getItem(STORE)||'{}')}catch(e){d={}}
-    d&&typeof d==='object'||(d={});
-    d.ans=d.ans||{};d.flags=d.flags||{};d.crosses=d.crosses||{};d.reports=Array.isArray(d.reports)?d.reports:[];
-
-    let changed=false;
-    for(const field of ['ans','flags','crosses']){
-      const src=d[field],next={};
-      for(const [k,v] of Object.entries(src)){
-        const nk=normalizeKey(k);
-        if(nk!==k) changed=true;
-        if((field==='flags'||field==='crosses')&&!v){changed=true;continue}
-        if(!(nk in next)) next[nk]=v;
-      }
-      d[field]=next;
+  function plainObject(v){return !!v&&typeof v==='object'&&!Array.isArray(v)}
+  function normalizeSessionState(v){
+    if(!plainObject(v)||!Array.isArray(v.uids))return null;
+    const uids=[],seen=new Set();
+    for(const raw of v.uids){
+      if(typeof raw!=='string'&&typeof raw!=='number')continue;
+      const uid=normalizeKey(raw);if(!uid||seen.has(uid))continue;seen.add(uid);uids.push(uid)
     }
-    d.reports=d.reports.map(x=>{
-      if(!x||typeof x!=='object') return x;
-      const uid=normalizeKey(x.uid);
-      const bank=normalizeBank(x.bank);
-      if(uid!==x.uid||bank!==x.bank) changed=true;
-      return {...x,uid,bank};
-    });
-    cache=d;
-    if(changed) save(d);
-    else try{lastSerialized=JSON.stringify(d)}catch(e){}
-    return cache;
+    if(!uids.length)return null;
+    const n=Number(v.pos),pos=Number.isFinite(n)?Math.max(0,Math.min(Math.trunc(n),uids.length-1)):0,answers={};
+    if(plainObject(v.answers))for(const [rawUid,result] of Object.entries(v.answers)){
+      const uid=normalizeKey(rawUid);
+      if(!seen.has(uid)||!plainObject(result)||!Array.isArray(result.selected))continue;
+      const selected=[...new Set(result.selected.map(Number).filter(x=>Number.isInteger(x)&&x>=0))].sort((a,b)=>a-b);
+      answers[uid]={ok:!!result.ok,selected,at:Number.isFinite(Number(result.at))?Number(result.at):0}
+    }
+    return{uids,pos,answers,updated:Number.isFinite(Number(v.updated))?Number(v.updated):0}
   }
 
+  function db(){
+    if(cache)return cache;
+    let d;
+    try{d=JSON.parse(localStorage.getItem(STORE)||'{}')}catch(e){d={}}
+    if(!plainObject(d))d={};
+    let changed=false;
+    for(const field of ['ans','flags','crosses']){
+      const present=Object.prototype.hasOwnProperty.call(d,field),raw=d[field],src=plainObject(raw)?raw:{},next={};
+      if(present&&!plainObject(raw))changed=true;
+      for(const [k,v] of Object.entries(src)){
+        const nk=normalizeKey(k);if(nk!==k)changed=true;
+        if(field==='ans'){
+          if(!plainObject(v)){changed=true;continue}
+          if(nk in next){changed=true;continue}
+          next[nk]=v
+        }else{
+          if(!v){changed=true;continue}
+          if(v!==true)changed=true;
+          if(nk in next){changed=true;continue}
+          next[nk]=true
+        }
+      }
+      d[field]=next
+    }
+    const reportPresent=Object.prototype.hasOwnProperty.call(d,'reports'),rawReports=d.reports,reports=Array.isArray(rawReports)?rawReports:[];
+    if(reportPresent&&!Array.isArray(rawReports))changed=true;
+    d.reports=[];
+    for(const x of reports){
+      if(!plainObject(x)){changed=true;continue}
+      const uid=normalizeKey(x.uid),bank=normalizeBank(x.bank);
+      if(uid!==x.uid||bank!==x.bank)changed=true;
+      d.reports.push({...x,uid,bank})
+    }
+    for(const field of ['active','searchReturn']){
+      if(!Object.prototype.hasOwnProperty.call(d,field))continue;
+      const next=normalizeSessionState(d[field]);
+      if(JSON.stringify(next)!==JSON.stringify(d[field]))changed=true;
+      d[field]=next
+    }
+    cache=d;
+    if(changed)save(d);
+    else try{lastSerialized=JSON.stringify(d)}catch(e){}
+    return cache
+  }
   let lastSerialized='';
   function save(d){
     cache=d;

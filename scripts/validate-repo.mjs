@@ -370,6 +370,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(src.includes('try{lastSerialized=JSON.stringify(d)}catch(e){}\n    if(changed) save(d);'))fail('Studio sync: normalization fingerprint is set before persistence');
  if(!src.includes("(field==='flags'||field==='crosses')&&!v"))fail('Studio sync: stale false flag/cross entries are not compacted');
  if(!src.includes("if(next)d.flags[k]=true;else delete d.flags[k]"))fail('Studio sync: unflagging still leaves dead false entries');
+ if(!src.includes('function plainObject(v)')||!src.includes('function normalizeSessionState(v)'))fail('Studio sync: structural storage normalization is missing');
 }
 
 // Shared Studio storage should not retain obsolete helper code.
@@ -398,21 +399,19 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!src.includes('for(const q of session){const r=sessionAnswer(q.uid);if(!r)continue;done++;if(r.ok)correct++}'))fail('Studio: session statistics are not consolidated into one pass');
 }
 
-// Studio home renders should reuse one incrementally maintained UID index instead of rebuilding a Set from every question.
+// Studio should keep one canonical UID lookup Map; the redundant UID Set and legacy parsers are removed.
 {
  const src=read('equipment/exam-1/studio.html');
- if(!src.includes('ALL_UIDS=new Set()'))fail('Studio: UID identity index is not initialized');
- if(!src.includes('ALL_BY_UID.set(q.uid,q);ALL_UIDS.add(q.uid);'))fail('Studio: UID identity index is not maintained incrementally');
- if(src.includes('ALL_UIDS=new Set(ALL_BY_UID.keys())'))fail('Studio: UID identity index is still rebuilt after hydration');
- if(src.includes('const valid=new Set(ALL.map(q=>q.uid))'))fail('Studio: home render still rebuilds the question UID Set');
+ if(!src.includes('ALL_BY_UID=new Map()')||!src.includes('ALL_BY_UID.set(q.uid,q);'))fail('Studio: canonical UID Map is missing');
+ if(src.includes('ALL_UIDS'))fail('Studio: redundant UID Set remains');
+ if(src.includes('function arrAfter(')||src.includes('function evalArr('))fail('Studio: obsolete legacy array parser helpers remain');
 }
-
 // Studio hydration should fetch independent bank sources concurrently to reduce startup latency.
 {
  const src=read('equipment/exam-1/studio.html');
  if(!src.includes('await Promise.all(STUDIO_SOURCES.map(source=>hydrateStudioSource(source)))'))fail('Studio: bank sources are not hydrated concurrently');
  if(!src.includes("addLoadedQuestions(qs);state.status='ready'"))fail('Studio: loaded banks are not published progressively to the selector');
- if(!src.includes('ALL_BY_UID.set(q.uid,q);ALL_UIDS.add(q.uid);'))fail('Studio: progressive hydration does not maintain UID indexes incrementally');
+ if(!src.includes('ALL_BY_UID.set(q.uid,q);'))fail('Studio: progressive hydration does not maintain the UID index incrementally');
  if(src.includes('ALL_BY_UID=new Map(ALL.map(q=>[q.uid,q]))'))fail('Studio: progressive hydration still rebuilds the full UID index');
 }
 
@@ -434,6 +433,24 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!studio.includes('MBUStudio.stageAnswer(q.bank,q,ok);setSessionAnswer('))fail('Studio Phase 3 grading still performs separate cumulative/session storage writes');
 }
 
+// Phase 3 completion: saved state is normalized, active sessions survive source outages, and flag/reset writes stay compact.
+{
+ const studio=read('equipment/exam-1/studio.html'),sync=read('equipment/assets/studio-sync.js');
+ for(const token of ['function normalizeSessionState(v)',"for(const field of ['active','searchReturn'])",'function reconcileActiveState()','function studioHasFailedSource()',"retry failed source first"])if(!(studio+sync).includes(token))fail('Studio Phase 3 session resilience missing: '+token);
+ if(studio.includes('DB.flags[q.uid]=MBUStudio.toggleFlag'))fail('Studio Phase 3 unflagging can reintroduce false flag entries');
+ if(!studio.includes("let changed=false;if(DB.active&&DB.active.answers"))fail('Studio Phase 3 reset cleanup is not batched');
+ if(studio.includes('function clearSessionAnswer('))fail('Studio Phase 3 obsolete per-answer save helper remains');
+ if(studio.includes("syncCanonical('combined'"))fail('Studio Phase 3 still applies the index-based sync path to Combined ID-keyed state');
+}
+
+// Exam 1 pages must share one cache-busting asset revision after shared runtime changes.
+{
+ const pages=[...quizFiles,'equipment/exam-1/index.html','equipment/exam-1/hazards.html'];
+ for(const p of pages){
+  const versions=[...read(p).matchAll(/\.\.\/assets\/[^\"'?]+\?v=(\d+)/g)].map(m=>m[1]);
+  if(versions.length&&versions.some(v=>v!=='69'))fail(p+': shared asset revision is not canonical v69');
+ }
+}
 // Studio must use direct indexed image files instead of parsing image bundles.
 {
  const src=read('equipment/exam-1/studio.html');
@@ -496,12 +513,13 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  const b2Payload=JSON.parse(read('equipment/exam-1/data/bank2.json'));if((b2Payload.questions||[]).length!==500)fail('Bank 2: canonical question total is not 500');
  const b3Payload=JSON.parse(read('equipment/exam-1/data/bank3.json'));if((b3Payload.questions||[]).length!==500)fail('Bank 3: canonical question total is not 500');
  for(const token of [
-  'function resumeActive(){if(!DB.active||!DB.active.uids)return;',
+  'function resumeActive(){',
+  'if(!DB.active||!Array.isArray(DB.active.uids)||!DB.active.uids.length)return;',
   'pos=Math.min(DB.active.pos||0,session.length-1);showQ()',
   'function studioNav(delta){clearTimeout(autoTimer);autoTimer=null;',
   'pos=n;saveActive();showQ()',
   'function resetStudioCurrent(){clearTimeout(autoTimer);autoTimer=null;',
-  'clearSessionAnswer(q.uid);',
+  'delete DB.active.answers[q.uid]',
   'function nextQ(){clearTimeout(autoTimer);autoTimer=null;',
   'else clearActive();session=[]'
  ]) if(!studio.includes(token))fail('Studio: final session lifecycle invariant missing: '+token);

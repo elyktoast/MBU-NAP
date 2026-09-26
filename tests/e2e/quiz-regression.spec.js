@@ -546,6 +546,50 @@ test.describe('canonical quiz regression', () => {
     expect(await page.evaluate(() => window.__studioStoreWrites)).toBe(0);
   });
 
+  test('Studio normalizes structurally corrupt saved state before rendering', async ({ page }) => {
+    await page.addInitScript(() => localStorage.setItem('mbu_exam1_studio_v1', JSON.stringify({ans:'bad',flags:[],crosses:null,reports:[null,'bad',{uid:'bb1-legacy',bank:'1',stem:'Saved report'}],active:{uids:'bad',pos:'bad',answers:null},searchReturn:{uids:[null],pos:99,answers:[]}})));
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    const state=await page.evaluate(() => MBUStudio.db());
+    expect(state.ans).toEqual({});expect(state.flags).toEqual({});expect(state.crosses).toEqual({});
+    expect(state.reports).toHaveLength(1);expect(state.reports[0].uid).toBe('b1-legacy');expect(state.reports[0].bank).toBe('b1');
+    expect(state.active).toBeNull();expect(state.searchReturn).toBeNull();
+  });
+
+  test('Studio preserves an active session while its source is temporarily unavailable', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const uid=await page.evaluate(() => (BANK_QUESTIONS.get('b3')||[])[0].uid);
+    await page.evaluate(uid => {DB.active={uids:[uid],pos:0,answers:{},updated:Date.now()};save()},uid);
+    let failBank3=true;
+    await page.route('**/data/bank3.json', async route => {if(failBank3){failBank3=false;await route.fulfill({status:503,body:'temporary failure'})}else await route.continue()});
+    await page.reload();
+    await expect(page.locator('#studioLoadSummary')).toContainText('1 failed');
+    await expect(page.locator('#resumeActive')).toBeDisabled();
+    expect((await storageJSON(page,'mbu_exam1_studio_v1')).active.uids).toEqual([uid]);
+    await page.locator('#studio-retry-b3').click();
+    await expect.poll(() => page.evaluate(() => BANK_QUESTIONS.get('b3')?.length||0),{timeout:15000}).toBe(500);
+    await expect(page.locator('#resumeActive')).toBeEnabled();await page.locator('#resumeActive').click();
+    await expect(page.locator('#qprog')).toContainText('Question 1 of 1');
+  });
+
+  test('Studio unflagging removes the key instead of restoring a false flag', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const uid=await page.evaluate(() => {session=[ALL[0]];pos=0;DB.active={uids:[session[0].uid],pos:0,answers:{},updated:Date.now()};save();showQ();return session[0].uid});
+    await page.locator('#flagBtn').click();await page.locator('#flagBtn').click();
+    expect((await storageJSON(page,'mbu_exam1_studio_v1')).flags[uid]).toBeUndefined();
+  });
+
+  test('Studio reset batches answer and cross-out cleanup into one storage write', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await page.evaluate(() => {
+      session=[ALL.find(q=>q.ans.length===1)];pos=0;const q=session[0];
+      DB.active={uids:[q.uid],pos:0,answers:{[q.uid]:{ok:false,selected:[0],at:Date.now()}},updated:Date.now()};DB.crosses[q.uid+':1']=true;save();showQ();
+      window.__resetWrites=0;const original=Storage.prototype.setItem;Storage.prototype.setItem=function(key,value){if(this===localStorage&&key==='mbu_exam1_studio_v1')window.__resetWrites++;return original.call(this,key,value)};
+    });
+    await page.locator('button',{hasText:'Reset'}).click();
+    expect(await page.evaluate(() => window.__resetWrites)).toBe(1);
+    expect(await page.evaluate(() => Object.keys(DB.crosses).length)).toBe(0);expect(await page.evaluate(() => sessionAnswer(session[0].uid))).toBeFalsy();
+  });
   test('Studio active session resumes with position and answer state after reload', async ({ page }) => {
     await page.goto(exam + '/studio.html');
     await waitForStudio(page);
@@ -1157,7 +1201,7 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/studio.html');
     await expect(page.locator('#home')).toBeVisible();
     expect(requests.length).toBeGreaterThan(0);
-    expect(requests.every(url => new URL(url).searchParams.get('v') === '68')).toBeTruthy();
+    expect(requests.every(url => new URL(url).searchParams.get('v') === '69')).toBeTruthy();
     await expect.poll(() => page.evaluate(() => sessionStorage.getItem('mbu_build_manifest_v1'))).not.toBeNull();
   });
 
