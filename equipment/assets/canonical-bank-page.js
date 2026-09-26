@@ -12,9 +12,7 @@ function shell(bank){
 async function start(){
   if(!runtime)throw Error('MBU build runtime is missing');
   if(!bankId)throw Error('Canonical bank id is missing');
-  const response=await fetch(new URL('banks.json',exam),{cache:'no-store'});
-  if(!response.ok)throw Error('Bank manifest HTTP '+response.status);
-  const manifest=await response.json(),bank=(manifest.banks||[]).find(x=>x.id===bankId);
+  const manifest=await runtime.fetchJSON(new URL('banks.json',exam),{cache:'no-store'}),bank=(manifest.banks||[]).find(x=>x.id===bankId);
   if(!bank||bank.engine!=='canonical')throw Error('Canonical bank config not found: '+bankId);
   document.title=bank.label+' | Practice Sets';document.body.className='mbu-bank1-ui';document.body.innerHTML=shell(bank);
   window.MBU_QUIZ_CONFIG={id:bank.id,title:bank.label,studioBankKey:bank.studioKey,storageKey:bank.storageKey,dataUrl:bank.data,legacyFormat:bank.legacyFormat||null,imageBase:bank.imageBase||null};

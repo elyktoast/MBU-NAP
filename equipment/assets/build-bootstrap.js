@@ -9,9 +9,15 @@ async function start(){
   const manifest=await response.json(),build=manifest&&typeof manifest.build==='string'?manifest.build.trim():'';
   if(!build)throw Error('Invalid build manifest');
   const urlFor=src=>{const u=new URL(src,assetsBase);u.searchParams.set('b',build);return u};
+  const jsonCache=new Map();
+  const fetchJSON=async(input,{cache='force-cache',timeout=12000}={})=>{
+    const url=new URL(input,location.href),key=url.href;if(jsonCache.has(key))return jsonCache.get(key);
+    const request=(async()=>{const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),timeout);try{const response=await fetch(url,{cache,credentials:'same-origin',signal:ctl.signal});if(!response.ok)throw Error('HTTP '+response.status+' for '+url.pathname);const text=await response.text();if(!text.trim())throw Error('Empty JSON response for '+url.pathname);try{return JSON.parse(text)}catch(e){throw Error('Invalid JSON at '+url.pathname+': '+e.message)}}finally{clearTimeout(timer)}})();
+    jsonCache.set(key,request);try{return await request}catch(e){jsonCache.delete(key);throw e}
+  };
   const loadStyle=src=>new Promise((resolve,reject)=>{const l=document.createElement('link');l.rel='stylesheet';l.href=urlFor(src).href;l.onload=resolve;l.onerror=()=>reject(Error('Stylesheet failed: '+src));document.head.append(l)});
   const loadScript=async raw=>{const spec=specOf(raw);await new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=urlFor(spec.src).href;for(const [k,v] of Object.entries(spec.data||{}))s.dataset[k]=String(v);s.onload=resolve;s.onerror=()=>reject(Error('Script failed: '+spec.src));document.body.append(s)});if(spec.waitFor){const pending=window[spec.waitFor];if(pending&&typeof pending.then==='function')await pending}};
-  window.MBU_BUILD_ID=build;window.MBUBuild={id:build,assetsBase,buildUrl,urlFor,loadStyle,loadScript};
+  window.MBU_BUILD_ID=build;window.MBUBuild={id:build,assetsBase,buildUrl,urlFor,loadStyle,loadScript,fetchJSON};
   await Promise.all((cfg.styles||[]).map(loadStyle));
   for(const entry of cfg.scripts||[])await loadScript(entry);
   if(typeof cfg.ready==='function')await cfg.ready();

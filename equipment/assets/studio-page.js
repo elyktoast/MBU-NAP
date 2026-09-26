@@ -46,22 +46,7 @@ function activeButton(){
   const host=document.getElementById('home'),b=document.createElement('button');b.id='resumeActive';b.className='btn';b.style.cssText='margin:0 0 16px';b.textContent='▶ Resume Active Quiz · Question '+(active.pos+1)+' / '+active.uids.length;b.onclick=resumeActive;host.insertBefore(b,host.children[1]||null)
 }
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
-const STUDIO_SOURCE_CACHE=new Map();
-async function studioFetch(url){
-  if(STUDIO_SOURCE_CACHE.has(url))return STUDIO_SOURCE_CACHE.get(url);
-  const request=(async()=>{
-    const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),12000);
-    try{
-      const response=await fetch(url,{cache:url==='banks.json'?'no-store':'force-cache',signal:ctl.signal});
-      if(!response.ok)throw Error('HTTP '+response.status);
-      const text=await response.text();
-      if(!text.trim())throw Error('file is empty');
-      return text
-    }finally{clearTimeout(timer)}
-  })();
-  STUDIO_SOURCE_CACHE.set(url,request);
-  try{return await request}catch(e){STUDIO_SOURCE_CACHE.delete(url);throw e}
-}
+async function studioFetch(url){return window.MBUBuild.fetchJSON(new URL(url,location.href),{cache:url==='banks.json'?'no-store':'force-cache',timeout:12000})}
 function showLoadErrors(errors){
   const el=document.getElementById('loadmsg');
   if(!el)return;
@@ -101,9 +86,9 @@ async function hydrateStudioSource(source){
   const [url,key,label,meta]=source,state=STUDIO_SOURCE_STATE.get(key)||{key,label,status:'waiting',count:0,error:''};
   state.status='loading';state.error='';STUDIO_SOURCE_STATE.set(key,state);renderStudioLoadState();
   try{
-    const t=await studioFetch(url);
+    const payload=await studioFetch(url);
     if(meta.format!=='canonical')throw Error('unsupported source format '+meta.format);
-    const payload=JSON.parse(t),all=Array.isArray(payload)?payload:(payload.questions||[]);
+    const all=Array.isArray(payload)?payload:(payload.questions||[]);
     if(!Array.isArray(all))throw Error('canonical question data is invalid');
     const raw=meta.setFilter?all.filter(q=>Number(q.set)===Number(meta.setFilter)):all;
     const qs=raw.map((q,i)=>{
@@ -133,7 +118,7 @@ async function retryStudioSource(key){
 async function loadBanks(){
   ALL=[];ALL_BY_UID.clear();BANK_QUESTIONS.clear();STUDIO_TOPIC_COUNTS.clear();STUDIO_SOURCE_STATE.clear();STUDIO_SOURCE_BY_KEY.clear();
   try{
-    BANK_MANIFEST=JSON.parse(await studioFetch('banks.json'));
+    BANK_MANIFEST=await studioFetch('banks.json');
     if(!BANK_MANIFEST||!Array.isArray(BANK_MANIFEST.studioSources))throw Error('invalid bank manifest');
   }catch(e){showLoadErrors(['Bank manifest failed: '+e.message]);console.error(e);document.getElementById('home')?.setAttribute('aria-busy','false');return}
   STUDIO_SOURCE_CATALOG=BANK_MANIFEST.studioSources.map(src=>({bank:src.key,label:src.groupLabel||src.label,sets:src.sets,setLabels:src.setLabels||null,count:src.count}));

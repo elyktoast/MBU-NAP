@@ -23,6 +23,7 @@ const budgets={
   'equipment/assets/studio-loader.js':2500,
   'equipment/assets/hazards-page.js':5000,
   'equipment/assets/hazards-dashboard.js':6000,
+  'equipment/assets/exam-dashboard.js':5000,
   'equipment/assets/bank1-quiz-ui.css':15000
 };
 for(const [p,max] of Object.entries(budgets)){
@@ -46,6 +47,10 @@ for(const p of appPages){
 const studio=read('equipment/assets/studio-page.js');
 if(studio.includes('ALL.find('))fail('Studio: O(n) UID lookup returned');
 if(studio.includes('bank3-images.js')||studio.includes('combined-images.js')||studio.includes('hazards-images.json'))fail('Studio: monolithic image bundle reference returned');
+
+const boot=read('equipment/assets/build-bootstrap.js');
+if(!boot.includes('jsonCache=new Map()')||!boot.includes('fetchJSON'))fail('Build runtime lost shared JSON request deduplication');
+for(const p of ['equipment/assets/site-nav.js','equipment/assets/canonical-bank-page.js','equipment/assets/hazards-page.js','equipment/assets/studio-page.js','equipment/assets/exam-dashboard.js'])if(!read(p).includes('fetchJSON'))fail(p+': bypasses central JSON request cache');
 
 const tests=read('tests/e2e/quiz-regression.spec.js');
 if(tests.includes('waitForTimeout('))fail('Browser regression suite contains a fixed sleep');

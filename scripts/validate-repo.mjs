@@ -533,7 +533,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 
 // JavaScript syntax is a release blocker. A page shell that renders while its inline script fails to parse is not valid.
 {
- const jsAssets=['equipment/assets/build-bootstrap.js','equipment/assets/canonical-bank-page.js','equipment/assets/studio-loader.js','equipment/assets/studio-page.js','equipment/assets/hazards-page.js','equipment/assets/hazards-dashboard.js','equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js','equipment/assets/site-nav.js','equipment/assets/navigator.js','equipment/assets/calculator.js','equipment/assets/auto-update.js'];
+ const jsAssets=['equipment/assets/build-bootstrap.js','equipment/assets/canonical-bank-page.js','equipment/assets/studio-loader.js','equipment/assets/studio-page.js','equipment/assets/hazards-page.js','equipment/assets/hazards-dashboard.js','equipment/assets/exam-dashboard.js','equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js','equipment/assets/site-nav.js','equipment/assets/navigator.js','equipment/assets/calculator.js','equipment/assets/auto-update.js'];
  for(const p of jsAssets){try{new vm.Script(read(p),{filename:p})}catch(e){fail(p+': JavaScript syntax error: '+e.message)}}
  for(const p of quizFiles){
   const src=read(p),re=/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi;let m,i=0;
@@ -551,7 +551,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 // Build bootstrap is the single cache-version source for all application pages.
 {
  const boot=read('equipment/assets/build-bootstrap.js');
- for(const token of ["cache:'no-store'","u.searchParams.set('b',build)",'window.MBUPageReady=ready','readyGlobal'])if(!boot.includes(token))fail('Build bootstrap missing '+token);
+ for(const token of ["cache:'no-store'","u.searchParams.set('b',build)",'window.MBUPageReady=ready','readyGlobal','fetchJSON','jsonCache=new Map()'])if(!boot.includes(token))fail('Build bootstrap missing '+token);
 }
 
 // Shared asset/cache contract: every versioned shared asset reference uses the current release revision.
@@ -563,6 +563,15 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  const studio=read('equipment/assets/studio-page.js');
  if(!studio.includes('await Promise.all(STUDIO_SOURCES.map(source=>hydrateStudioSource(source)))'))fail('Studio: bank hydration is not parallelized');
  if(studio.includes("localStorage.getItem('mbu_bank3_progress')")||studio.includes("localStorage.getItem('MBU_BANK3_PROGRESS')"))fail('Studio: obsolete Bank 3 storage-key fallbacks remain');
+}
+
+// Phase 5: one in-page JSON request cache owns shared manifest/data reads.
+{
+ const boot=read('equipment/assets/build-bootstrap.js');
+ if(!boot.includes('const jsonCache=new Map()')||!boot.includes('fetchJSON')||!boot.includes('jsonCache.delete(key)'))fail('Phase 5: shared JSON request cache is missing or cannot retry failures');
+ for(const p of ['equipment/assets/site-nav.js','equipment/assets/canonical-bank-page.js','equipment/assets/hazards-page.js']){const src=read(p);if(!src.includes('runtime.fetchJSON('))fail('Phase 5: '+p+' bypasses the shared JSON request cache');if(src.includes("fetch(new URL('banks.json'"))fail('Phase 5: '+p+' directly refetches banks.json')}
+ const studio=read('equipment/assets/studio-page.js');if(!studio.includes('MBUBuild.fetchJSON(')||studio.includes('STUDIO_SOURCE_CACHE'))fail('Phase 5: Studio does not use the central JSON request cache');
+ const exam=read('equipment/exam-1/index.html'),dash=read('equipment/assets/exam-dashboard.js');if(!exam.includes("'exam-dashboard.js'")||!dash.includes('runtime.fetchJSON('))fail('Phase 5: Exam dashboard manifest rendering bypasses shared runtime');
 }
 
 // Phase 5: architecture/performance regressions must fail before browser tests run.

@@ -4,7 +4,8 @@ const exam = '/equipment/exam-1';
 
 async function clearAppState(page) {
   await page.goto(exam + '/index.html');
-  await page.evaluate(() => localStorage.clear());
+  await page.evaluate(() => window.MBUPageReady);
+  await page.evaluate(() => { localStorage.clear(); sessionStorage.clear(); });
 }
 
 function collectPageErrors(page) {

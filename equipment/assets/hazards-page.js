@@ -3,8 +3,7 @@
 const runtime=window.MBUBuild,pageId=document.body?.dataset.mbuHazard||'',exam=new URL('../exam-1/',runtime?.assetsBase||location.href);
 async function start(){
   if(!runtime)throw Error('MBU build runtime is missing');
-  const response=await fetch(new URL('banks.json',exam),{cache:'no-store'});if(!response.ok)throw Error('Hazards manifest HTTP '+response.status);
-  const manifest=await response.json(),cfg=(manifest.hazards?.pages||[]).find(x=>x.id===pageId);if(!cfg)throw Error('Hazards config not found: '+pageId);
+  const manifest=await runtime.fetchJSON(new URL('banks.json',exam),{cache:'no-store'}),cfg=(manifest.hazards?.pages||[]).find(x=>x.id===pageId);if(!cfg)throw Error('Hazards config not found: '+pageId);
   await Promise.all([runtime.loadStyle('site-nav.css'),runtime.loadStyle('bank1-quiz-ui.css')]);
   await runtime.loadScript({src:'site-nav.js',data:{page:pageId}});
   await runtime.loadScript('studio-sync.js');await runtime.loadScript('navigator.js');
