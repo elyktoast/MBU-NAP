@@ -938,6 +938,86 @@ test.describe('canonical quiz regression', () => {
   });
 
 
+  for (const [label, file, key] of [
+    ['Hazards Set 1', 'hazards-100.html', 'SRNA_HAZARDS_BANK_1_2026_V2'],
+    ['Hazards Set 2', 'hazards-bank-2.html', 'SRNA_HAZARDS_BANK_2_2026_V1']
+  ]) {
+    test(label + ' normalizes structurally corrupted saved state', async ({ page }) => {
+      const errors = collectPageErrors(page);
+      await page.goto(exam + '/' + file);
+      await page.evaluate(k => localStorage.setItem(k, JSON.stringify({
+        answers: null,
+        graded: null,
+        correct: 'bad',
+        strikes: [],
+        current: 9999,
+        missed: [1, 1, 'missing', null]
+      })), key);
+      await page.reload();
+
+      await expect(page.locator('#dashboard')).toBeVisible();
+      await page.locator('#hazStart').click();
+      await expect(page.locator('#quiz')).toBeVisible();
+      await expect(page.locator('#progress')).toContainText('Question 100 of 100');
+      await expect(page.locator('#options .opt').first()).toBeVisible();
+      expect(errors).toEqual([]);
+
+      const state = await storageJSON(page, key);
+      expect(Array.isArray(state.missed)).toBe(true);
+    });
+  }
+
+  for (const [label, file, key] of [
+    ['Hazards Set 3', 'hazards-bank-3.html', 'hazards_practice3_progress_2026_V2'],
+    ['Hazards Challenge', 'hazards-harder.html', 'hazards_harder_progress_2026_V1']
+  ]) {
+    test(label + ' normalizes structurally corrupted saved state', async ({ page }) => {
+      const errors = collectPageErrors(page);
+      await page.goto(exam + '/' + file);
+      await page.evaluate(k => localStorage.setItem(k, JSON.stringify({
+        idx: 9999,
+        ans: null,
+        xo: null,
+        prac: { list: ['missing'], i: 500, ans: null },
+        view: 'quiz'
+      })), key);
+      await page.reload();
+
+      await expect(page.locator('#main')).toBeVisible();
+      await expect(page.locator('#main .panel, #main .card')).toBeVisible();
+      expect(errors).toEqual([]);
+
+      const state = await storageJSON(page, key);
+      expect(state).not.toBeNull();
+    });
+  }
+
+  test('Bank 3 recovers from malformed saved JSON', async ({ page }) => {
+    const errors = collectPageErrors(page);
+    await page.goto(exam + '/quiz-bank-3.html');
+    await page.evaluate(() => localStorage.setItem('srna_equipment_dashboard_v1', '{bad json'));
+    await page.reload();
+    await expect(page.locator('#main')).toBeVisible();
+    await page.evaluate(() => openExam(1));
+    await expect(page.locator('.progress')).toContainText('Question 1 of');
+    expect(errors).toEqual([]);
+  });
+
+  test('Bank 3 survives structurally corrupted saved state', async ({ page }) => {
+    const errors = collectPageErrors(page);
+    await page.goto(exam + '/quiz-bank-3.html');
+    await page.evaluate(() => localStorage.setItem('srna_equipment_dashboard_v1', JSON.stringify({
+      ex: { 1: { idx: 9999, ans: null, xo: null } },
+      view: 'exam'
+    })));
+    await page.reload();
+    await page.evaluate(() => openExam(1));
+    await expect(page.locator('.progress')).toContainText('Question 100 of');
+    await expect(page.locator('#main .opt').first()).toBeVisible();
+    expect(errors).toEqual([]);
+  });
+
+
   test('Shared asset revisions and updater baseline stay canonical', async ({ page }) => {
     const requests=[];
     page.on('request', req => { if (req.url().includes('/equipment/assets/') && req.url().includes('?v=')) requests.push(req.url()); });
