@@ -280,7 +280,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
   if(!src.includes('function next(){clearTimeout(timer);timer=null;'))fail('Shared Hazards engine: manual Next does not clear pending auto-advance');
 }
 {
- const renderer=read('equipment/assets/canonical-bank-page.js'),studio=read('equipment/assets/studio-page.js');
+ const renderer=read('equipment/assets/canonical-bank-page.js'),studio=read('equipment/exam-1/studio.html');
  if(!renderer.includes('Right-click an answer to cross it out.')||!renderer.includes('mbu-crossout-hint'))fail('Canonical bank renderer: missing cross-out interaction hint');
  if(!studio.includes('Right-click an answer to cross it out.')||!studio.includes('mbu-crossout-hint'))fail('Studio: missing canonical cross-out interaction hint');
 }
