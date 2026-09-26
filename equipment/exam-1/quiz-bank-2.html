@@ -141,7 +141,7 @@ function showQ(){
     row.append(b,cross);box.appendChild(row);
   });
   document.getElementById("feedback").style.display="none";document.getElementById("feedbackText").innerHTML="";document.getElementById("feedbackCitation").textContent="";
-  document.getElementById("multi-submit-row").style.display=q.correct.length>1?"flex":"none";document.getElementById("submitBtn").disabled=selected.size!==q.correct.length;document.getElementById("nextBtn").classList.add("hidden");
+  document.getElementById("multi-submit-row").style.display="flex";document.getElementById("submitBtn").disabled=selected.size!==q.correct.length;document.getElementById("submitBtn").textContent=q.correct.length>1?`Submit Selections (${selected.size}/${q.correct.length})`:"Submit Answer";document.getElementById("nextBtn").classList.add("hidden");
   if(mode==="set" && Object.prototype.hasOwnProperty.call(st(c.si).answered,c.qi))restoreResult(c,q);
   window.MBUCalculator?.besideFlag();
 }
@@ -155,8 +155,8 @@ function restoreResult(c,q){
 function choose(i,e){
   if(locked)return;const q=SETS[current().si][current().qi],b=[...document.querySelectorAll(".choice")][i];
   if(e && (e.altKey||e.ctrlKey||e.metaKey)){toggleCross(current(),i,b,b.parentElement.querySelector(".mbu-cross"));return}
-  if(q.correct.length===1){selected=new Set([i]);submitAnswer();return}
-  else{if(selected.has(i)){selected.delete(i);b.classList.remove("sel");}else if(selected.size<q.correct.length){selected.add(i);b.classList.add("sel");}document.getElementById("submitBtn").disabled=selected.size!==q.correct.length}
+  if(q.correct.length===1){selected=new Set([i]);document.querySelectorAll(".choice").forEach((x,j)=>x.classList.toggle("sel",j===i));document.getElementById("submitBtn").disabled=false;return}
+  else{if(selected.has(i)){selected.delete(i);b.classList.remove("sel");}else if(selected.size<q.correct.length){selected.add(i);b.classList.add("sel");}document.getElementById("submitBtn").disabled=selected.size!==q.correct.length;document.getElementById("submitBtn").textContent=`Submit Selections (${selected.size}/${q.correct.length})`}
 }
 function submitAnswer(){
   if(locked){nextQuestion();return}
