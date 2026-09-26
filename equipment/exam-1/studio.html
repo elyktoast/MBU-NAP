@@ -102,6 +102,7 @@ async function loadBanks(){
     ['quiz-bank-1.html','b1','Quiz Bank 1'],
     ['quiz-bank-2.html','b2','Quiz Bank 2'],
     ['quiz-bank-3.html','b3','Quiz Bank 3'],
+    ['combined-questions.js','combined','Combined'],
     ['hazards-100.html','h1','Hazards Practice Set 1'],
     ['hazards-bank-2.html','h2','Hazards Practice Set 2'],
     ['hazards-bank-3.html','h3','Hazards Practice Set 3'],
@@ -118,6 +119,8 @@ async function loadBanks(){
         const raw=arrAfter(t,'const SETS');if(!raw)throw Error('SETS not found');const sets=evalArr(raw);return sets.flatMap((set,n)=>set.map((q,i)=>norm(q,'b2',n+1,i,'Quiz Bank 2')))
       }else if(key==='b3'){
         const raw=arrAfter(t,'const BANK');if(!raw)throw Error('BANK not found');return evalArr(raw).map((q,i)=>norm({...q,img:q.img?{kind:'bank3',url,key:q.img}:null},'b3',q.setn||1,i,'Quiz Bank 3'))
+      }else if(key==='combined'){
+        const raw=arrAfter(t,'"questions"');if(!raw)throw Error('Combined questions not found');return evalArr(raw).map((q,i)=>norm({...q,img:q.image_id?{kind:'combined',url:'combined-images.js',imgKey:q.image_id}:null},'combined',Math.floor(i/50)+1,i,'Combined'))
       }else{
         const raw=arrAfter(t,(key==='h3'||key==='hh')?'const BANK':'const QUESTIONS');if(!raw)throw Error('question array not found');let qs=evalArr(raw),images={};
         if(key==='h2'&&qs.length<100){const extraRaw=arrAfter(t,'additionalHazards');if(!extraRaw)throw Error('additionalHazards not found');const extra=evalArr(extraRaw);for(let n=qs.length+1;n<=100;n++){const base=extra[(n-31)%extra.length];qs.push({id:n,type:'single',stem:base.stem,options:base.options,answer:base.answer,explanation:base.exp,citation:'Anesthesia Workstation Hazards & Safety, '+base.cit})}}
@@ -127,7 +130,7 @@ async function loadBanks(){
   };
   const loaded=await Promise.all(sources.map(loadSource));
   ALL=loaded.flat();
-  const bankOrder=['b1','b2','b3','h1','h2','h3','hh'];ALL.sort((a,b)=>bankOrder.indexOf(a.bank)-bankOrder.indexOf(b.bank)||a.set-b.set||a.seq-b.seq);
+  const bankOrder=['b1','b2','b3','combined','h1','h2','h3','hh'];ALL.sort((a,b)=>bankOrder.indexOf(a.bank)-bankOrder.indexOf(b.bank)||a.set-b.set||a.seq-b.seq);
   ALL_BY_UID=new Map(ALL.map(q=>[q.uid,q]));ALL_UIDS=new Set(ALL_BY_UID.keys());BANK_QUESTIONS=new Map();for(const q of ALL){if(!BANK_QUESTIONS.has(q.bank))BANK_QUESTIONS.set(q.bank,[]);BANK_QUESTIONS.get(q.bank).push(q)}
   try{syncBankData();buildTopics();const params=new URLSearchParams(location.search),requested=params.get('mode');if(requested==='hazards-missed')startMode('hazards-missed');else renderHome()}catch(e){errors.push('Studio render: '+e.message);console.error(e)}
   showLoadErrors(errors);
@@ -210,7 +213,7 @@ function startMode(m){let pool=[...ALL];if(m==='missed')pool=pool.filter(q=>DB.a
 function sessionStats(){let done=0,correct=0;for(const q of session){const r=sessionAnswer(q.uid);if(!r)continue;done++;if(r.ok)correct++}return{done,correct,missed:done-correct,score:done?Math.round(100*correct/done):0}}
 function crossKey(q,i){return q.uid+':'+i}
 function toggleStudioCross(q,i,b,cross){if(graded)return;const k=crossKey(q,i);DB.crosses[k]=!DB.crosses[k];if(!DB.crosses[k])delete DB.crosses[k];save();b.classList.toggle('strike',!!DB.crosses[k]);cross.setAttribute('aria-pressed',String(!!DB.crosses[k]))}
-function studioImageHTML(q){if(!q.img)return '';if(typeof q.img==='string'){if(q.img.trim().startsWith('<'))return q.img;if(/^data:image\/(?:png|jpeg|gif|webp);base64,[A-Za-z0-9+/=]+$/.test(q.img))return '<img alt="Question figure" style="max-width:100%;height:auto" src="'+q.img+'">';return ''}if((q.img.kind==='bank3'&&q.img.key)||(q.img.kind==='hazards'&&q.img.imgKey))return '<span class="mut">Loading figure…</span>';return ''}
+function studioImageHTML(q){if(!q.img)return '';if(typeof q.img==='string'){if(q.img.trim().startsWith('<'))return q.img;if(/^data:image\/(?:png|jpeg|gif|webp);base64,[A-Za-z0-9+/=]+$/.test(q.img))return '<img alt="Question figure" style="max-width:100%;height:auto" src="'+q.img+'">';return ''}if((q.img.kind==='bank3'&&q.img.key)||(q.img.kind==='hazards'&&q.img.imgKey)||(q.img.kind==='combined'&&q.img.imgKey))return '<span class="mut">Loading figure…</span>';return ''}
 const STUDIO_IMAGE_CACHE=new Map();
 async function hydrateStudioImage(q,host){
   if(!q.img||typeof q.img==='string'||!q.img.url)return;
@@ -221,7 +224,7 @@ async function hydrateStudioImage(q,host){
     if(!data){
       const src=await studioFetch(q.img.url),safe=String(imageKey).replace(/[^A-Za-z0-9_-]/g,'');
       if(!safe||safe!==String(imageKey))throw Error('invalid figure key');
-      const match=src.match(new RegExp('"'+safe+'"\\s*:\\s*"([A-Za-z0-9+/=]+)"'));
+      let match;if(q.img.kind==='combined'){const start=src.indexOf('"'+safe+'"');if(start<0)throw Error('figure key not found');match=src.slice(start).match(/"src"\\s*:\\s*"data:image\\/(?:png|jpeg|gif|webp);base64,([A-Za-z0-9+/=]+)"/)}else match=src.match(new RegExp('"'+safe+'"\\s*:\\s*"([A-Za-z0-9+/=]+)"'));
       if(!match)throw Error('figure payload not found');
       data=match[1];STUDIO_IMAGE_CACHE.set(cacheKey,data);
     }
@@ -249,4 +252,4 @@ function reportCurrent(){let hadAuto=!!autoTimer;clearTimeout(autoTimer);autoTim
 function showReports(){show('reports');const pending=MBUStudio.pendingReports().length,btn=document.getElementById('sendSavedReportsBtn'),status=document.getElementById('savedReportStatus');btn.disabled=!pending;btn.textContent=pending?'Send Saved Reports ('+pending+')':'All Saved Reports Sent';status.textContent=pending?pending+' saved report'+(pending===1?' is':'s are')+' still stored only on this device.':'';document.getElementById('reportlist').innerHTML=DB.reports.map((r,i)=>`<div class="reportrow"><b>${esc(r.bankLabel||r.bank)}</b> · ${esc(r.reason||'Report')} · <span class="mut">${r.sent?'Sent':'Pending'}</span><div>${esc(r.stem)}</div><button class="btn bad" onclick="DB.reports.splice(${i},1);save();showReports()">Delete</button></div>`).join('')||'<div class="mut">No reports saved.</div>'}
 async function sendSavedReports(){const btn=document.getElementById('sendSavedReportsBtn'),status=document.getElementById('savedReportStatus');btn.disabled=true;let message='';try{const result=await MBUStudio.sendSavedReports(p=>{status.textContent='Sending saved reports… '+p.done+' / '+p.total});message=result.failed?result.sent+' sent, '+result.failed+' still pending.':'All '+result.sent+' saved report'+(result.sent===1?'':'s')+' sent successfully.'}catch(e){message='Could not send saved reports: '+e.message}finally{showReports();status.textContent=message}}
 loadBanks();
-</script><script src="../assets/calculator.js?v=60"></script><script>/* MBU_BUILD:2026-09-25-studio-session-state-v21 */</script><script src="../assets/auto-update.js?v=60"></script></body></html>
+</script><script src="../assets/calculator.js?v=60"></script><script>/* MBU_BUILD:2026-09-26-combined-bank-v69 */</script><script src="../assets/auto-update.js?v=60"></script></body></html>
