@@ -24,5 +24,10 @@ function start({questions:QUESTIONS,store:STORE,bankKey,setNumber}){
  function resetCurrent(){clearTimeout(autoTimer);autoTimer=null;if(reviewMode){const q=activeQuestion(),k=String(q.id);delete reviewDB.answers[k];delete reviewDB.graded[k];delete reviewDB.correct[k];Object.keys(reviewDB.strikes).filter(x=>x.startsWith(k+"_")).forEach(x=>delete reviewDB.strikes[x]);return loadQuestion()}if(!confirm("Reset progress for this hazards practice set?"))return;db={answers:{},graded:{},correct:{},strikes:{},current:0,missed:[]};reviewMode=false;reviewList=[];currentIndex=0;lastSaved="";saveDB();loadQuestion()}
  loadDB();Object.assign(window,{startSet,reviewMissed,submitAnswer,nav,goDashboard,resetCurrent,mbuToggleFlag:q=>{window.MBUStudio?.toggleFlag?.(bankKey,q);loadQuestion()},mbuReportQuestion:q=>window.MBUStudio?.report?.(bankKey,q)});window.MBUHazardsStandard={navTo};const p=new URLSearchParams(location.search);if(p.get("review")==="1")reviewMissed();else if(p.get("quiz")==="1")startSet();else renderDashboard()
 }
-window.MBUHazardsStandardEngine={start};
+async function startFromData({dataUrl,setFilter,store,bankKey,setNumber}){
+ const r=await fetch(dataUrl,{cache:"force-cache"});if(!r.ok)throw Error("Question data HTTP "+r.status);
+ const payload=await r.json(),all=Array.isArray(payload)?payload:(payload.questions||[]),questions=all.filter(q=>Number(q.set)===Number(setFilter)).map(q=>({id:q.id,type:q.type,stem:q.stem,options:q.options,answer:q.answer,explanation:q.explanation,citation:q.citation,imageSvg:q.imageSvg||null,image:q.image||null}));
+ start({questions,store,bankKey,setNumber});return true
+}
+window.MBUHazardsStandardEngine={start,startFromData};
 })();
