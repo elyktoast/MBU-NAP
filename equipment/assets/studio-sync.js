@@ -78,7 +78,7 @@
     return String(q.concept||'Other');
   }
   function flagged(bank,q){return !!db().flags[key(bank,q)]}
-  function toggleFlag(bank,q){const d=db(),k=key(bank,q);d.flags[k]=!d.flags[k];save(d);return !!d.flags[k]}
+  function toggleFlag(bank,q){const d=db(),k=key(bank,q),next=!d.flags[k];if(next)d.flags[k]=true;else delete d.flags[k];save(d);return next}
   function answer(bank,q,ok){const d=db(),b=normalizeBank(bank),k=key(b,q);d.ans[k]={ok:!!ok,at:Date.now(),topic:topicOf(q),bank:b};save(d)}
 
   function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
