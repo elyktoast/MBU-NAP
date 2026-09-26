@@ -39,28 +39,44 @@ function validateQuestions(label,qs,expected){
     if(!aa.length||aa.some(x=>!Number.isInteger(Number(x))||Number(x)<0||Number(x)>=opts.length)) fail(label+': question '+id+' has invalid answer index');
   });
 }
+function canonicalPayload(p,label,expected,setCounts){
+  let payload;try{payload=JSON.parse(read(p))}catch(e){fail(label+': invalid canonical JSON: '+e.message);return []}
+  const qs=Array.isArray(payload)?payload:(payload.questions||[]);
+  validateQuestions(label,qs,expected);
+  if(payload&&payload.count!=null&&Number(payload.count)!==expected)fail(label+': metadata count is not '+expected);
+  if(setCounts){
+    for(const [set,count] of Object.entries(setCounts)){
+      const actual=qs.filter(q=>Number(q.set)===Number(set)).length;
+      if(actual!==count)fail(label+' Practice Set '+set+': expected '+count+', found '+actual);
+    }
+  }
+  return qs;
+}
 function checkBank1(){
-  const src=read('equipment/exam-1/quiz-bank-1.html'), all=[];
-  for(let n=1;n<=5;n++){const set=parseArray(src,'const SET'+n); if(set.length!==100) fail('Bank 1 Practice Set '+n+': expected 100, found '+set.length); all.push(...set.map(q=>({...q,id:n+'-'+q.id}))); }
-  validateQuestions('Quiz Bank 1',all,500);
+  const qs=canonicalPayload('equipment/exam-1/data/bank1.json','Quiz Bank 1',500,{1:100,2:100,3:100,4:100,5:100});
+  const page=read('equipment/exam-1/quiz-bank-1.html');
+  const engine=read('equipment/assets/quiz-engine.js');
+  if(!page.includes("dataUrl:'data/bank1.json'")||!page.includes('../assets/quiz-engine.js'))fail('Bank 1: canonical data/shared engine wiring is missing');
+  if(!engine.includes('MBUNavigator.button')||!engine.includes('MBUCalculator?.besideFlag()'))fail('Bank 1 shared engine: canonical navigation/calculator contract is missing');
+  return qs;
 }
 function checkBank2(){
-  const sets=parseArray(read('equipment/exam-1/quiz-bank-2.html'),'const SETS');
-  if(!Array.isArray(sets)||sets.length!==5) fail('Quiz Bank 2: expected 5 practice sets');
-  const all=[]; sets.forEach((set,n)=>{if(set.length!==100)fail('Bank 2 Practice Set '+(n+1)+': expected 100, found '+set.length);all.push(...set.map(q=>({...q,id:(n+1)+'-'+q.id})))});
-  validateQuestions('Quiz Bank 2',all,500);
+  canonicalPayload('equipment/exam-1/data/bank2.json','Quiz Bank 2 canonical data',500,{1:100,2:100,3:100,4:100,5:100});
+  const src=read('equipment/exam-1/quiz-bank-2.html');
+  if(src.includes('const SETS')){const sets=parseArray(src,'const SETS');if(!Array.isArray(sets)||sets.length!==5)fail('Quiz Bank 2: expected 5 legacy practice sets')}
 }
-function checkBank3(){validateQuestions('Quiz Bank 3',parseArray(read('equipment/exam-1/quiz-bank-3.html'),'const BANK'),500)}
+function checkBank3(){
+  canonicalPayload('equipment/exam-1/data/bank3.json','Quiz Bank 3 canonical data',500,{1:100,2:100,3:100,4:100,5:100});
+}
 function checkCombined(){
-  const src=read('equipment/exam-1/combined-questions.js'),m=src.match(/window\.QUIZ_DATA\s*=\s*([\s\S]*?)\s*;?\s*$/);
-  if(!m)return fail('Combined: QUIZ_DATA payload not found');
-  let data;try{data=Function('return ('+m[1]+')')()}catch(e){return fail('Combined: invalid question payload: '+e.message)}
-  const qs=Array.isArray(data&&data.questions)?data.questions:[];validateQuestions('Combined',qs,150);
-  if(data.count!==150)fail('Combined: metadata count is not 150');
-  const images=read('equipment/exam-1/combined-images.js');for(const q of qs)if(q.image_id&&!images.includes('"'+q.image_id+'"'))fail('Combined: missing image asset '+q.image_id);
+  const qs=canonicalPayload('equipment/exam-1/data/combined.json','Combined',150,{1:50,2:50,3:50});
+  const images=read('equipment/exam-1/combined-images.js');for(const q of qs)if(q.imageId&&!images.includes('"'+q.imageId+'"'))fail('Combined: missing image asset '+q.imageId);
   const page=read('equipment/exam-1/combined.html');
   for(const bit of ['50 questions','Review Missed','Missed Questions Review','Automatically built from every question missed in Practice Sets 1–3.'])if(!page.includes(bit))fail('Combined dashboard: missing Bank 1 parity element '+bit);
   if(/function renderDashboard[\s\S]*onclick="resetSet\(/.test(page))fail('Combined dashboard: per-set Reset button remains instead of Bank 1 Review Missed');
+}
+function checkHazardsCanonical(){
+  canonicalPayload('equipment/exam-1/data/hazards.json','Workstation Hazards',350,{1:100,2:100,3:100,4:50});
 }
 function checkCanonicalNewQuizBanks(){
   const index=read('equipment/exam-1/index.html');
@@ -119,12 +135,13 @@ function checkAssets(){
 }
 function checkStudio(){
   const src=read('equipment/exam-1/studio.html');
-  if(!src.includes("const STUDIO_SOURCE_CATALOG=[")||!src.includes("{bank:'b1',label:'Quiz Bank 1',sets:[1,2,3,4,5],count:100}")||!src.includes("{bank:'b2',label:'Quiz Bank 2',sets:[1,2,3,4,5],count:100}")||!src.includes("{bank:'b3',label:'Quiz Bank 3',sets:[1,2,3,4,5],count:100}")||!src.includes("{bank:'combined',label:'Combined',sets:[1,2,3],count:50}"))fail('Studio: complete canonical source catalog is missing');
-  for(const name of ['studio-bank1.json','studio-bank2.json','studio-bank3.json','combined-questions.js','hazards-100.html','hazards-bank-2.html','studio-hazards3.json','studio-challenge.json','quiz-bank-3.html','hazards-bank-3.html','hazards-harder.html']) if(!src.includes(name))fail('Studio: missing source/image source '+name);
-  if(!src.includes("['studio-bank1.json','b1'")) fail('Studio: Bank 1 is not the first canonical Studio source');
-  const b3Start=src.indexOf("}else if(key==='b3'){"),hazardStart=src.indexOf("}else{",b3Start);
-  const b3Branch=b3Start>=0&&hazardStart>b3Start?src.slice(b3Start,hazardStart):'';
-  if(/const\s+im\s*=|const\s+IMGS\s*=|JSON\.parse\(im/.test(b3Branch)) fail('Studio: Bank 3 image payload is still eagerly parsed');
+  let manifest;try{manifest=JSON.parse(read('equipment/exam-1/banks.json'))}catch(e){fail('Studio: bank manifest is invalid JSON: '+e.message);return}
+  if(manifest.canonicalBank!=='bank1')fail('Studio: Bank 1 is not declared canonical in banks.json');
+  for(const id of ['bank1','bank2','bank3','combined','hazards'])if(!manifest.banks.some(b=>b.id===id))fail('Studio: central bank manifest is missing '+id);
+  if(!Array.isArray(manifest.studioSources)||manifest.studioSources.length<8)fail('Studio: complete manifest source catalog is missing');
+  for(const srcDef of manifest.studioSources){if(srcDef.format!=='canonical')fail('Studio: noncanonical source format remains for '+srcDef.key);if(!exists('equipment/exam-1/'+srcDef.data))fail('Studio: manifest data source missing '+srcDef.data)}
+  for(const bit of ["studioFetch('banks.json')","BANK_MANIFEST.studioSources.map","meta.format==='canonical'","const sources=BANK_MANIFEST.studioSources.map"])if(!src.includes(bit))fail('Studio: manifest-driven hydration contract missing '+bit);
+  if(/const\s+im\s*=|const\s+IMGS\s*=|JSON\.parse\(im/.test(src))fail('Studio: embedded image payload is still eagerly parsed');
 }
 function checkRuntimeSafety(){
   const bank3=read('equipment/exam-1/quiz-bank-3.html');
@@ -135,33 +152,12 @@ function checkRuntimeSafety(){
   const updater=read('equipment/assets/auto-update.js');
   if(!updater.includes("reload.searchParams.get('_mbu_reload') === latest"))fail('Updater: no duplicate-build reload guard');
 }
-try{checkBank1()}catch(e){fail('Bank 1 validation crashed: '+e.message)}
-try{checkBank2()}catch(e){fail('Bank 2 validation crashed: '+e.message)}
-try{checkBank3()}catch(e){fail('Bank 3 validation crashed: '+e.message)}
 function checkStudioData(){
-  const specs=[
-    ['Bank 1','equipment/exam-1/studio-bank1.json','equipment/exam-1/quiz-bank-1.html',500,'bank1'],
-    ['Bank 2','equipment/exam-1/studio-bank2.json','equipment/exam-1/quiz-bank-2.html',500,'bank2'],
-    ['Bank 3','equipment/exam-1/studio-bank3.json','equipment/exam-1/quiz-bank-3.html',500,'bank'],
-    ['Hazards 3','equipment/exam-1/studio-hazards3.json','equipment/exam-1/hazards-bank-3.html',100,'bank'],
-    ['Hazards Challenge','equipment/exam-1/studio-challenge.json','equipment/exam-1/hazards-harder.html',50,'bank']
-  ];
-  for(const [label,dataPath,sourcePath,expected,kind] of specs){
-    let data;try{data=JSON.parse(read(dataPath))}catch(e){fail(label+' Studio data: invalid JSON: '+e.message);continue}
-    validateQuestions(label+' Studio data',data,expected);
-    let source;
-    try{
-      const src=read(sourcePath);
-      if(kind==='bank1'){source=[];for(let n=1;n<=5;n++)source.push(...parseArray(src,'const SET'+n))}
-      else if(kind==='bank2')source=parseArray(src,'const SETS').flat();
-      else source=parseArray(src,'const BANK');
-    }catch(e){fail(label+' Studio data: canonical source could not be parsed: '+e.message);continue}
-    const sourceIds=source.map((q,i)=>String(q?.id??i+1)),dataIds=data.map((q,i)=>String(q?.id??i+1));
-    if(sourceIds.length!==dataIds.length||sourceIds.some((id,i)=>id!==dataIds[i]))fail(label+' Studio data: question IDs/order drifted from canonical source');
-  }
+  checkBank1();checkBank2();checkBank3();checkHazardsCanonical();
+  canonicalPayload('equipment/exam-1/data/combined.json','Combined Studio data',150,{1:50,2:50,3:50});
 }
 checkStudioData();
-checkCombined();checkCanonicalNewQuizBanks();checkCopies();checkAssets();checkStudio();checkRuntimeSafety();
+checkCombined();checkHazardsCanonical();checkCanonicalNewQuizBanks();checkCopies();checkAssets();checkStudio();checkRuntimeSafety();
 let manifest;
 try{
   const raw=read('equipment/build.json');
@@ -238,7 +234,7 @@ function checkStudioIndexes(){
   if(!src.includes('if(!ALL_BY_UID.size)return;'))fail('Studio: active session can be cleared before source hydration completes');
   if(!src.includes('id="studio-submit-row"')||!src.includes('class="explain"')||!src.includes('id="fbCitation" class="cite"'))fail('Studio: quiz session is not using canonical Bank 1 structure');
   if(src.includes('Studio quiz view: keep the normal question workflow within a desktop viewport.'))fail('Studio: obsolete quiz-specific compact layout remains');
-  if(!src.includes("{kind:'bank3',url:'quiz-bank-3.html',key:q.img}")||!src.includes('async function hydrateStudioImage(q,host)')||!src.includes('STUDIO_IMAGE_CACHE'))fail('Studio: canonical image questions are not lazily hydrated');
+  if(!src.includes("meta.imageKind==='bank3'")||!src.includes('async function hydrateStudioImage(q,host)')||!src.includes('STUDIO_IMAGE_CACHE'))fail('Studio: canonical image questions are not lazily hydrated');
   if(!src.includes("document.body.classList.toggle('mbu-quiz-active',id==='quiz')")||!src.includes('body.mbu-quiz-active>.wrap>.top{display:none}'))fail('Studio: canonical quiz is still wrapped by the extra Studio shell');
 }
 checkStudioIndexes();
@@ -250,9 +246,12 @@ checkStudioIndexes();
  if(!src.includes('persistPosition();showQ()'))fail('Bank 2: navigation does not persist position before rendering');
  const renderStart=src.indexOf('function showQ()'),renderEnd=src.indexOf('function choose(',renderStart);if(renderStart>=0&&renderEnd>renderStart&&(src.slice(renderStart,renderEnd).includes('save();')||src.slice(renderStart,renderEnd).includes('saveDB();')))fail('Bank 2: render path writes progress');
 }
-for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html','equipment/exam-1/quiz-bank-3.html']){
-  const src=read(p);
-  if(!src.includes("if(next===lastSaved)return"))fail(p+': duplicate localStorage writes are not suppressed');
+{
+  const engine=read('equipment/assets/quiz-engine.js');
+  if(!engine.includes("if(next===lastSaved)return"))fail('Canonical quiz engine: duplicate localStorage writes are not suppressed');
+  for(const p of ['equipment/exam-1/quiz-bank-2.html','equipment/exam-1/quiz-bank-3.html']){
+    const src=read(p);if(src&&!src.includes("if(next===lastSaved)return"))fail(p+': duplicate localStorage writes are not suppressed');
+  }
 }
 for(const p of ['equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js']){
   const src=read(p);
@@ -429,7 +428,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 {
  const src=read('equipment/exam-1/studio.html');
  if(src.includes("t.match(/const IMGS=(\\{[\\s\\S]*?\\});/)"))fail('Studio: Hazards image payload is still eagerly parsed');
- if(!src.includes("{kind:'hazards',url:imageUrl,imgKey:q.img}"))fail('Studio: Hazards images are not represented lazily');
+ if(!src.includes("meta.imageKind==='hazards'")||!src.includes("url:meta.imageSource"))fail('Studio: Hazards images are not represented lazily');
 }
 
 // Studio search should use its normalized one-time search index instead of rebuilding text per query.
@@ -458,7 +457,7 @@ for(const token of ['mbu-crossout-hint','MBUNavigator.button','classList.add(rec
 
 // Canonical timer lifecycle: every legacy Bank-1-style renderer must clear and null its timer on render/reset/navigation.
 {
- const p='equipment/exam-1/quiz-bank-1.html',src=read(p);
+ const p='equipment/assets/quiz-engine.js',src=read(p);
  if(!src.includes('function loadQuestion(){clearTimeout(autoTimer);autoTimer=null;'))fail(p+': render does not clear/null auto-advance timer');
  if(!src.includes('clearTimeout(autoTimer);autoTimer=null;'))fail(p+': auto-advance timer lifecycle is incomplete');
  if(src.includes('autoTimer=setTimeout(()=>{currentIndex++;'))fail(p+': auto-advance callback leaves a stale timer handle');
@@ -483,9 +482,9 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 // Final end-to-end regression invariants for dashboards, Studio resume/reset, and bank totals.
 {
  const b1=read('equipment/exam-1/quiz-bank-1.html'),b2=read('equipment/exam-1/quiz-bank-2.html'),b3=read('equipment/exam-1/quiz-bank-3.html'),studio=read('equipment/exam-1/studio.html');
- if(!/id=["']overall["'][^>]*>0\s*\/\s*500 completed</.test(b1)||!/500 completed/.test(b1))fail('Bank 1: dashboard does not expose the 500-question total');
+ if(!/id=["']overall["'][^>]*>0\s*\/\s*500 completed</.test(b1))fail('Bank 1: dashboard does not expose the 500-question total');
  if(!/id=["']bank2Overall["'][^>]*>0\s*\/\s*500 completed</.test(b2)||!/500 completed/.test(b2))fail('Bank 2: dashboard does not expose the 500-question total');
- const b3Questions=parseArray(b3,'const BANK');if(b3Questions.length!==500)fail('Bank 3: canonical question total is not 500');
+ const b3Payload=JSON.parse(read('equipment/exam-1/data/bank3.json'));if((b3Payload.questions||[]).length!==500)fail('Bank 3: canonical question total is not 500');
  for(const token of [
   'function resumeActive(){if(!DB.active||!DB.active.uids)return;',
   'pos=Math.min(DB.active.pos||0,session.length-1);showQ()',
