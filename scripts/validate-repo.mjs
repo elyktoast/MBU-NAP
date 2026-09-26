@@ -152,11 +152,12 @@ function checkHazardNavigators(){
   if(!challenge.includes('MBUNavigator.button'))fail('Shared challenge Hazards engine does not use the canonical navigator renderer');
 }
 checkHazardNavigators();
-// Hazards dashboard completion must count graded submissions, not saved selections.
+// Hazards dashboard standard sets must count graded submissions, while answer-record sets may count saved result objects.
 {
  const src=read('equipment/exam-1/hazards.html');
- if(src.includes('done=Object.keys(ans).length'))fail('Hazards dashboard: saved selections still count as completed questions');
- if(!src.includes("done=Object.keys(graded).filter(k=>graded[k]===true).length"))fail('Hazards dashboard: standard sets do not count graded submissions');
+ const standard=src.slice(src.indexOf("if(type==='array')"),src.indexOf("}else{const ans=d.ans||{}",src.indexOf("if(type==='array')")));
+ if(standard.includes('done=Object.keys(ans).length'))fail('Hazards dashboard: standard sets still count saved selections as completed questions');
+ if(!standard.includes("done=Object.keys(graded).filter(k=>graded[k]===true).length"))fail('Hazards dashboard: standard sets do not count graded submissions');
 }
 
 // Hazards cumulative missed review must route directly through Studio; obsolete redirect pages should not return.
