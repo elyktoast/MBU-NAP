@@ -427,10 +427,10 @@ test.describe('canonical quiz regression', () => {
     await page.locator('#cards button').filter({ hasText: /start|continue/i }).first().click();
     const option=page.locator('#options .opt').first();
     await option.click({button:'right'});
-    await expect(option).toHaveClass(/crossed/);
+    await expect(option).toHaveClass(/strike/);
     page.once('dialog', dialog => dialog.accept());
     await page.locator('button', {hasText:'Reset'}).click();
-    await expect(page.locator('#options .opt.crossed')).toHaveCount(0);
+    await expect(page.locator('#options .opt.strike')).toHaveCount(0);
     await expect(page.locator('#options .opt.selected')).toHaveCount(0);
   });
 
@@ -457,10 +457,11 @@ test.describe('canonical quiz regression', () => {
     await clickIndexes(page.locator('#main .opt'), data.answer);
     await page.locator('#go').click();
     await page.waitForTimeout(500);
-    expect(await page.evaluate(() => S.ex[1].idx)).toBe(data.last);
+    expect(await page.evaluate(() => S.ex[1].idx)).toBe(data.last + 1);
+    await expect(page.locator('#main')).toContainText('complete');
   });
 
-  test('Studio completed single-question session remains resumable after reload', async ({ page }) => {
+  test('Studio completed single-question session clears active state and stays completed after reload', async ({ page }) => {
     await page.goto(exam + '/studio.html');
     await waitForStudio(page);
     await page.evaluate(() => {
@@ -473,12 +474,13 @@ test.describe('canonical quiz regression', () => {
     await clickIndexes(page.locator('#opts .opt'),answer);
     await page.locator('#submit').click();
     await page.waitForTimeout(450);
+    await expect(page.locator('#home')).toBeVisible();
+    expect(await page.evaluate(() => DB.active)).toBeNull();
     await page.reload();
     await waitForStudio(page);
-    await expect(page.locator('#resumeActive')).toContainText('Question 1 / 1');
-    await page.locator('#resumeActive').click();
-    await expect(page.locator('#fb')).toBeVisible();
-    expect(await page.evaluate(() => sessionAnswer(session[0].uid)?.ok)).toBe(true);
+    await expect(page.locator('#home')).toBeVisible();
+    await expect(page.locator('#resumeActive')).toHaveCount(0);
+    expect(await page.evaluate(() => DB.active)).toBeNull();
   });
 
   test('Studio ignores an active session whose question UIDs no longer exist', async ({ page }) => {
