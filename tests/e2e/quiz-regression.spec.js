@@ -220,6 +220,23 @@ test.describe('canonical quiz regression', () => {
     expect(errors).toEqual([]);
   });
 
+  test('Combined wrong-answer feedback matches Bank 1', async ({ page }) => {
+    await page.goto(exam + '/combined.html');
+    await page.locator('#cards button').filter({ hasText: /start/i }).first().click();
+    const data = await page.evaluate(() => {
+      const q=QUESTIONS.find(x=>x.type==='single'&&x.options.length>1);
+      const set=q.set,index=SETS[set].findIndex(x=>x.id===q.id);
+      currentSet=set;currentData=SETS[set];currentIndex=index;loadQuestion();
+      const correct=q.answer[0],wrong=q.options.findIndex((_,i)=>i!==correct);
+      return {correct,wrong};
+    });
+    await page.locator('#options .opt').nth(data.wrong).click();
+    await page.locator('#submit-multi').click();
+    await expect(page.locator('#options .opt').nth(data.correct)).toHaveClass(/correct/);
+    await expect(page.locator('#options .opt').nth(data.wrong)).toHaveClass(/incorrect/);
+    await expect(page.locator('#options .opt.missed')).toHaveCount(0);
+  });
+
   test('Combined does not fetch its image bundle until an image question is opened', async ({ page }) => {
     const imageRequests=[];
     page.on('request',req=>{if(req.url().includes('combined-images.js'))imageRequests.push(req.url())});
