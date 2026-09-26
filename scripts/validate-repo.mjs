@@ -108,16 +108,22 @@ try{checkBank2()}catch(e){fail('Bank 2 validation crashed: '+e.message)}
 try{checkBank3()}catch(e){fail('Bank 3 validation crashed: '+e.message)}
 function checkStudioData(){
   const specs=[
-    ['Bank 1','equipment/exam-1/studio-bank1.json','equipment/exam-1/quiz-bank-1.html',500],
-    ['Bank 2','equipment/exam-1/studio-bank2.json','equipment/exam-1/quiz-bank-2.html',500],
-    ['Bank 3','equipment/exam-1/studio-bank3.json','equipment/exam-1/quiz-bank-3.html',500],
-    ['Hazards 3','equipment/exam-1/studio-hazards3.json','equipment/exam-1/hazards-bank-3.html',100],
-    ['Hazards Challenge','equipment/exam-1/studio-challenge.json','equipment/exam-1/hazards-harder.html',50]
+    ['Bank 1','equipment/exam-1/studio-bank1.json','equipment/exam-1/quiz-bank-1.html',500,'bank1'],
+    ['Bank 2','equipment/exam-1/studio-bank2.json','equipment/exam-1/quiz-bank-2.html',500,'bank2'],
+    ['Bank 3','equipment/exam-1/studio-bank3.json','equipment/exam-1/quiz-bank-3.html',500,'bank'],
+    ['Hazards 3','equipment/exam-1/studio-hazards3.json','equipment/exam-1/hazards-bank-3.html',100,'bank'],
+    ['Hazards Challenge','equipment/exam-1/studio-challenge.json','equipment/exam-1/hazards-harder.html',50,'bank']
   ];
-  for(const [label,dataPath,sourcePath,expected] of specs){
+  for(const [label,dataPath,sourcePath,expected,kind] of specs){
     let data;try{data=JSON.parse(read(dataPath))}catch(e){fail(label+' Studio data: invalid JSON: '+e.message);continue}
     validateQuestions(label+' Studio data',data,expected);
-    let source;try{source=parseArray(read(sourcePath),'const BANK')}catch(e){fail(label+' Studio data: canonical source could not be parsed: '+e.message);continue}
+    let source;
+    try{
+      const src=read(sourcePath);
+      if(kind==='bank1'){source=[];for(let n=1;n<=5;n++)source.push(...parseArray(src,'const SET'+n))}
+      else if(kind==='bank2')source=parseArray(src,'const SETS').flat();
+      else source=parseArray(src,'const BANK');
+    }catch(e){fail(label+' Studio data: canonical source could not be parsed: '+e.message);continue}
     const sourceIds=source.map((q,i)=>String(q?.id??i+1)),dataIds=data.map((q,i)=>String(q?.id??i+1));
     if(sourceIds.length!==dataIds.length||sourceIds.some((id,i)=>id!==dataIds[i]))fail(label+' Studio data: question IDs/order drifted from canonical source');
   }
