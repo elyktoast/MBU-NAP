@@ -143,12 +143,11 @@ function checkHazardNavigators(){
   if(!challenge.includes('MBUNavigator.button'))fail('Shared challenge Hazards engine does not use the canonical navigator renderer');
 }
 checkHazardNavigators();
-// Hazards cumulative missed review must use Studio, not refetch every full bank.
+// Hazards cumulative missed review must route directly through Studio; obsolete redirect pages should not return.
 {
- const dashboard=read('equipment/exam-1/hazards.html'),review=read('equipment/exam-1/hazards-review.html');
+ const dashboard=read('equipment/exam-1/hazards.html');
  if(!dashboard.includes("studio.html?mode=hazards-missed&return=hazards"))fail('Hazards dashboard: cumulative missed review is not routed through Studio');
- if(review.includes('fetch(def[0]')||review.includes('const defs=['))fail('Hazards review: obsolete full-bank aggregation runtime remains');
- if(!review.includes("studio.html?mode=hazards-missed&return=hazards"))fail('Hazards review: compatibility redirect does not target Studio');
+ if(exists('equipment/exam-1/hazards-review.html'))fail('Hazards review: obsolete compatibility redirect still exists');
 }
 
 {
