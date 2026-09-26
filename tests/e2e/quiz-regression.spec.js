@@ -455,9 +455,11 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#hazSet1Stats')).toContainText('0/100 completed');
   });
 
-  test('Hazards cumulative missed review routes to Studio', async ({ page }) => {
-    await page.goto(exam + '/hazards-review.html');
-    await page.waitForURL(/studio\.html\?mode=hazards-missed&return=hazards/);
+  test('Hazards cumulative missed review routes directly to Studio', async ({ page }) => {
+    await page.goto(exam + '/hazards.html');
+    const target = await page.locator('a[href*="studio.html?mode=hazards-missed&return=hazards"], button[onclick*="studio.html?mode=hazards-missed&return=hazards"]').first().evaluate(el => el.getAttribute('href') || el.getAttribute('onclick') || '');
+    expect(target).toContain('studio.html?mode=hazards-missed&return=hazards');
+    await page.goto(exam + '/studio.html?mode=hazards-missed&return=hazards');
     await waitForStudio(page);
     await expect(page.locator('#studioTitle')).toContainText('Workstation Hazards');
   });
@@ -1111,7 +1113,7 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/studio.html');
     await expect(page.locator('#home')).toBeVisible();
     expect(requests.length).toBeGreaterThan(0);
-    expect(requests.every(url => new URL(url).searchParams.get('v') === '64')).toBeTruthy();
+    expect(requests.every(url => new URL(url).searchParams.get('v') === '67')).toBeTruthy();
     await expect.poll(() => page.evaluate(() => sessionStorage.getItem('mbu_build_manifest_v1'))).not.toBeNull();
   });
 
