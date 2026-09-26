@@ -932,9 +932,10 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/index.html');
     await page.evaluate(() => sessionStorage.setItem('mbu_build_manifest_v1', ''));
     await page.reload();
-    await expect.poll(() => page.evaluate(() => sessionStorage.getItem('mbu_build_manifest_v1'))).not.toBeNull();
-    const value = await page.evaluate(() => sessionStorage.getItem('mbu_build_manifest_v1'));
-    expect(value).toMatch(/^2026-/);
+    await expect.poll(
+      () => page.evaluate(() => sessionStorage.getItem('mbu_build_manifest_v1')),
+      { timeout: 10000 }
+    ).toMatch(/^2026-/);
   });
 
 
