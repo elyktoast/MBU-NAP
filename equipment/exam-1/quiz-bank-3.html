@@ -101,7 +101,18 @@ function esc(s){return String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;","
 function same(a,b){return a.length===b.length&&[...a].sort().join()===[...b].sort().join()}
 function freshExam(){return{idx:0,ans:{},xo:{}}}
 function fresh(){const ex={};EXLIST.forEach(n=>ex[n]=freshExam());return{ex,cleared:{},t6:null,t6hist:[]}}
-function load(){try{const r=localStorage.getItem(KEY);if(r){const o=JSON.parse(r);if(o&&o.ex){EXLIST.forEach(n=>{if(!o.ex[n])o.ex[n]=freshExam()});return o}}}catch(e){}return fresh()}
+function load(){
+ const raw=localStorage.getItem(KEY),base=fresh(),isObj=v=>v&&typeof v==="object"&&!Array.isArray(v),validIds=new Set(BANK.map(q=>String(q.id)));
+ let o=null;try{o=raw&&JSON.parse(raw)}catch(e){}
+ if(!isObj(o))o={};
+ const cleanRec=(id,r)=>{const q=byId[id];if(!q||!isObj(r))return null;const sel=Array.isArray(r.sel)?[...new Set(r.sel.map(Number).filter(i=>Number.isInteger(i)&&i>=0&&i<q.c.length))]:[];return{sel,ok:r.ok===true}};
+ const cleanExam=(n,v)=>{const e=freshExam(),ids=EXM[n].ids,idset=new Set(ids.map(String));if(!isObj(v))return e;e.idx=Math.max(0,Math.min(Number.isFinite(Number(v.idx))?Number(v.idx):0,Math.max(0,ids.length-1)));if(isObj(v.ans)){for(const [id,r] of Object.entries(v.ans)){if(!idset.has(String(id)))continue;const rec=cleanRec(String(id),r);if(rec)e.ans[String(id)]=rec}}if(isObj(v.xo)){for(const [id,a] of Object.entries(v.xo)){const q=byId[id];if(!q||!idset.has(String(id))||!Array.isArray(a))continue;const xo=[...new Set(a.map(Number).filter(i=>Number.isInteger(i)&&i>=0&&i<q.c.length))];if(xo.length)e.xo[String(id)]=xo}}return e};
+ EXLIST.forEach(n=>{base.ex[n]=cleanExam(n,isObj(o.ex)?o.ex[n]:null)});
+ base.cleared={};if(isObj(o.cleared))for(const [k,v] of Object.entries(o.cleared))if(v===true)base.cleared[k]=true;
+ base.t6hist=Array.isArray(o.t6hist)?o.t6hist.filter(isObj):[];
+ if(isObj(o.t6)&&Array.isArray(o.t6.list)){const list=[...new Set(o.t6.list.map(String).filter(id=>validIds.has(id)))];if(list.length){const t={list,i:0,ans:{},xo:{}};t.i=Math.max(0,Math.min(Number.isFinite(Number(o.t6.i))?Number(o.t6.i):0,list.length-1));if(isObj(o.t6.ans)){for(const [id,r] of Object.entries(o.t6.ans)){if(!list.includes(String(id)))continue;const rec=cleanRec(String(id),r);if(rec)t.ans[String(id)]=rec}}if(isObj(o.t6.xo)){for(const [id,a] of Object.entries(o.t6.xo)){const q=byId[id];if(!q||!list.includes(String(id))||!Array.isArray(a))continue;const xo=[...new Set(a.map(Number).filter(i=>Number.isInteger(i)&&i>=0&&i<q.c.length))];if(xo.length)t.xo[String(id)]=xo}}base.t6=t}}
+ const normalized=JSON.stringify(base);if(normalized!==raw)localStorage.setItem(KEY,normalized);return base
+}
 let S=load(),lastSaved="";try{lastSaved=JSON.stringify(S)}catch(e){}
 function save(){try{const next=JSON.stringify(S);if(next===lastSaved)return;localStorage.setItem(KEY,next);lastSaved=next}catch(e){}}
 let V={mode:"dash"};let timer=null;let cur={sel:[],done:false};
