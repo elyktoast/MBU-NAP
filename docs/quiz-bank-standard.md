@@ -64,3 +64,16 @@ Use the existing shared components instead of creating duplicate implementations
 The repository validator automatically applies the Bank 1 contract to newly linked quiz-bank pages on the Exam 1 dashboard. Quiz Bank 2 and Quiz Bank 3 are grandfathered legacy pages; new banks are not.
 
 If a new bank needs behavior that Bank 1 does not have, update Bank 1 first, then propagate that canonical behavior to other banks rather than creating a one-off implementation.
+
+
+## Hazards architecture
+
+Workstation Hazards is part of the same central Exam 1 architecture and must be represented in `equipment/exam-1/banks.json` and canonical external data. Hazards keeps its specialized shared engines because its review and challenge behavior differs from the standard quiz-bank engine, but Hazards question payloads and shared figures must not be embedded back into the HTML pages.
+
+Canonical Hazards sources:
+- `equipment/exam-1/data/hazards.json` for all 350 Hazards questions
+- `equipment/exam-1/data/hazards-images.json` for shared Hazards figures
+- `hazards-standard-engine.js` for Practice Sets 1–2
+- `hazards-quiz-engine.js` for Practice Set 3 and Challenge
+
+Studio, global navigation, and the Exam 1 dashboard must obtain Hazards metadata from `banks.json` rather than maintaining a separate hard-coded Hazards catalog.
