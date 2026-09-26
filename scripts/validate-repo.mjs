@@ -305,6 +305,19 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(src.includes('function empty()'))fail('Studio sync: unused empty storage helper remains');
 }
 
+// Studio home stats should avoid temporary mapped/filtered arrays.
+{
+ const src=read('equipment/exam-1/studio.html');
+ if(src.includes('Object.entries(DB.ans).filter(')||src.includes('Object.entries(DB.flags).filter('))fail('Studio: home stats still allocate filtered entry arrays');
+ if(!src.includes('for(const q of ALL){'))fail('Studio: home stats are not consolidated into the hydrated question pass');
+}
+
+// Studio custom source/topic matching should use Set membership.
+{
+ const src=read('equipment/exam-1/studio.html');
+ if(!src.includes("const bs=new Set(checkedValues('sourceChecks'))")||!src.includes("const ts=new Set(checkedValues('topicChecks'))"))fail('Studio: custom builder is not using Set membership');
+}
+
 // Studio session statistics should be computed in one pass without temporary mapped/filtered arrays.
 {
  const src=read('equipment/exam-1/studio.html');
@@ -341,7 +354,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 {
  const src=read('equipment/exam-1/studio.html');
  if(!src.includes("searchText:(stem+' '+topic+' '+exp+' '+src).toLowerCase()"))fail('Studio: normalized questions do not preindex search text');
- if(!src.includes('ALL.filter(q=>q.searchText.includes(x))'))fail('Studio: search still rebuilds searchable text for every question');
+ if(!src.includes("for(const q of ALL){if(q.searchText.includes(x)){r.push(q);if(r.length===100)break}}"))fail('Studio: search does not stop after the visible result cap');
 }
 
 // Shared Hazards Set 3 / Challenge navigation must cancel pending auto-advance before moving.
