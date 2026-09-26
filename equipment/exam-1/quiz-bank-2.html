@@ -178,8 +178,6 @@ function prevQuestion(){clearTimeout(autoTimer);autoTimer=null;if(pos>0){pos--;p
 function resetCurrentQuestion(){clearTimeout(autoTimer);autoTimer=null;const c=current(),s=st(c.si);delete s.answered[c.qi];delete s.selections[c.qi];delete s.crosses[c.qi];s.missed=s.missed.filter(x=>x!==c.qi);save();showQ()}
 function nextQuestion(){clearTimeout(autoTimer);autoTimer=null;if(pos+1<order.length){pos++;persistPosition();showQ()}else{goDash()}}
 function goDash(){renderDash()}
-function resetSet(si){if(confirm(`Reset all progress for Practice Set ${si+1}?`)){state.sets[si]={answered:{},missed:[],selections:{},crosses:{}};save();renderDash()}}
-function resetAll(){if(confirm("Reset progress for all five sets?")){state={sets:{}};save();renderDash()}}
 function showReview(si){
   window.MBUCalculator?.hide();
   document.getElementById("dash").classList.add("hidden");document.getElementById("quiz").classList.add("hidden");document.getElementById("review").classList.remove("hidden");
