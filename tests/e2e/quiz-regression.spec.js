@@ -1269,4 +1269,52 @@ test.describe('canonical quiz regression', () => {
     }
   });
 
+  test('Canonical Bank 1 startup performs one request per shared dependency and data source', async ({ page }) => {
+    const counts={};
+    page.on('request',req=>{
+      const u=new URL(req.url()),p=u.pathname;
+      if(p.includes('/equipment/assets/')||p.includes('/equipment/exam-1/data/')||p.endsWith('/equipment/exam-1/banks.json')) counts[p]=(counts[p]||0)+1;
+    });
+    await page.goto(exam + '/quiz-bank-1.html');
+    await page.evaluate(() => MBUPageReady);
+    await expect(page.locator('#dashboard')).toBeVisible();
+
+    for(const name of ['canonical-bank-page.js','site-nav.css','bank1-quiz-ui.css','site-nav.js','studio-sync.js','navigator.js','calculator.js','quiz-engine.js','auto-update.js']){
+      const matches=Object.entries(counts).filter(([p])=>p.endsWith('/'+name));
+      expect(matches).toHaveLength(1);
+      expect(matches[0][1], name+' request count').toBe(1);
+    }
+    expect(counts['/equipment/exam-1/banks.json']).toBe(1);
+    expect(counts['/equipment/exam-1/data/bank1.json']).toBe(1);
+  });
+
+  test('Studio hydration deduplicates shared canonical data requests', async ({ page }) => {
+    const counts={};
+    page.on('request',req=>{
+      const p=new URL(req.url()).pathname;
+      if(p.includes('/equipment/exam-1/data/')||p.endsWith('/equipment/exam-1/banks.json')) counts[p]=(counts[p]||0)+1;
+    });
+    await page.goto(exam + '/studio.html');
+    await expect.poll(() => page.evaluate(() => typeof ALL_BY_UID!=='undefined'?ALL_BY_UID.size:0),{timeout:20000}).toBe(2000);
+    await page.evaluate(() => MBUPageReady);
+
+    expect(counts['/equipment/exam-1/banks.json']).toBe(1);
+    for(const name of ['bank1.json','bank2.json','bank3.json','combined.json','hazards.json']){
+      expect(counts['/equipment/exam-1/data/'+name],name+' request count').toBe(1);
+    }
+  });
+
+  test('Build bootstrap does not create an update reload loop', async ({ page }) => {
+    let buildRequests=0;
+    page.on('request',req=>{if(new URL(req.url()).pathname==='/equipment/build.json')buildRequests++});
+    await page.goto(exam + '/quiz-bank-1.html');
+    await page.evaluate(() => MBUPageReady);
+    const firstUrl=page.url();
+    await page.reload();
+    await page.evaluate(() => MBUPageReady);
+    expect(new URL(page.url()).pathname).toBe(new URL(firstUrl).pathname);
+    expect(buildRequests).toBeLessThanOrEqual(4);
+  });
+
+
 });

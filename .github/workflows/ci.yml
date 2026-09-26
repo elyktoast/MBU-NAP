@@ -1,4 +1,4 @@
-name: Browser regression tests
+name: Quality gates
 
 on:
   push:
@@ -6,11 +6,29 @@ on:
   pull_request:
 
 concurrency:
-  group: browser-regression-${{ github.ref }}
+  group: quality-gates-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  browser-tests:
+  quality:
+    name: Validate architecture and budgets
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate repository architecture
+        run: npm run validate
+      - name: Enforce Phase 5 performance budgets
+        run: npm run test:perf
+
+  browser:
+    name: Browser regression
+    needs: quality
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -28,7 +46,7 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-report
+          name: playwright-report-${{ github.run_id }}
           path: |
             playwright-report/
             test-results/

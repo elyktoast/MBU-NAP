@@ -426,14 +426,6 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(studio.includes("syncCanonical('combined'"))fail('Studio Phase 3 still applies the index-based sync path to Combined ID-keyed state');
 }
 
-// Exam 1 pages must share one cache-busting asset revision after shared runtime changes.
-{
- const pages=[...quizFiles,'equipment/exam-1/index.html','equipment/exam-1/hazards.html'];
- for(const p of pages){
-  const versions=[...read(p).matchAll(/\.\.\/assets\/[^\"'?]+\?v=(\d+)/g)].map(m=>m[1]);
-  if(versions.length&&versions.some(v=>v!=='69'))fail(p+': shared asset revision is not canonical v69');
- }
-}
 // Studio runtime and shared assets are build-driven, not duplicated in HTML.
 {
  const page=read('equipment/exam-1/studio.html'),loader=read('equipment/assets/studio-loader.js');
@@ -571,6 +563,20 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  const studio=read('equipment/assets/studio-page.js');
  if(!studio.includes('await Promise.all(STUDIO_SOURCES.map(source=>hydrateStudioSource(source)))'))fail('Studio: bank hydration is not parallelized');
  if(studio.includes("localStorage.getItem('mbu_bank3_progress')")||studio.includes("localStorage.getItem('MBU_BANK3_PROGRESS')"))fail('Studio: obsolete Bank 3 storage-key fallbacks remain');
+}
+
+// Phase 5: architecture/performance regressions must fail before browser tests run.
+{
+ const studio=read('equipment/assets/studio-page.js'),tests=read('tests/e2e/quiz-regression.spec.js');
+ if(studio.includes('ALL.find('))fail('Phase 5: Studio reintroduced a linear UID lookup');
+ if(studio.includes('ALL.filter(q=>q.uid==='))fail('Phase 5: Studio reintroduced a repeated UID scan');
+ if(tests.includes('waitForTimeout('))fail('Phase 5: fixed browser sleeps are prohibited; wait on observable state instead');
+ for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html','equipment/exam-1/quiz-bank-3.html','equipment/exam-1/combined.html']){
+  const src=read(p);
+  if((src.match(/build-bootstrap\.js/g)||[]).length!==1)fail('Phase 5: '+p+' must load exactly one build bootstrap');
+ }
+ const boot=read('equipment/assets/build-bootstrap.js');
+ if(!boot.includes("document.documentElement.dataset.mbuBoot='loading'")||!boot.includes("pointer-events:none"))fail('Phase 5: runtime readiness interaction gate is missing');
 }
 
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}

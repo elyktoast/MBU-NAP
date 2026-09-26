@@ -3,7 +3,9 @@
   "private": true,
   "scripts": {
     "validate": "node scripts/validate-repo.mjs",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "test:perf": "node scripts/performance-budget.mjs",
+    "quality": "npm run validate && npm run test:perf"
   },
   "devDependencies": {
     "@playwright/test": "1.55.0"
