@@ -304,5 +304,13 @@
       "setFilter": 4,
       "imageBase": "images/hazards/"
     }
-  ]
+  ],
+  "sync": {
+    "schema": 1,
+    "mode": "local-first",
+    "studioStorageKey": "mbu_exam1_studio_v1",
+    "metadataKey": "mbu_sync_meta_v1",
+    "deviceKey": "mbu_device_id_v1",
+    "adapterApi": "MBUSync.registerAdapter(name, adapter)"
+  }
 }

@@ -533,7 +533,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 
 // JavaScript syntax is a release blocker. A page shell that renders while its inline script fails to parse is not valid.
 {
- const jsAssets=['equipment/assets/build-bootstrap.js','equipment/assets/canonical-bank-page.js','equipment/assets/studio-loader.js','equipment/assets/studio-page.js','equipment/assets/hazards-page.js','equipment/assets/hazards-dashboard.js','equipment/assets/exam-dashboard.js','equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js','equipment/assets/site-nav.js','equipment/assets/navigator.js','equipment/assets/calculator.js','equipment/assets/auto-update.js'];
+ const jsAssets=['equipment/assets/app-core.js','equipment/assets/build-bootstrap.js','equipment/assets/canonical-bank-page.js','equipment/assets/studio-loader.js','equipment/assets/studio-page.js','equipment/assets/hazards-page.js','equipment/assets/hazards-dashboard.js','equipment/assets/exam-dashboard.js','equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js','equipment/assets/site-nav.js','equipment/assets/navigator.js','equipment/assets/calculator.js','equipment/assets/auto-update.js'];
  for(const p of jsAssets){try{new vm.Script(read(p),{filename:p})}catch(e){fail(p+': JavaScript syntax error: '+e.message)}}
  for(const p of quizFiles){
   const src=read(p),re=/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi;let m,i=0;
@@ -586,6 +586,19 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  }
  const boot=read('equipment/assets/build-bootstrap.js');
  if(!boot.includes("document.documentElement.dataset.mbuBoot='loading'")||!boot.includes("pointer-events:none"))fail('Phase 5: runtime readiness interaction gate is missing');
+}
+
+// Phases 6-9: shared app core, sync groundwork, accessibility, diagnostics, and documentation are release contracts.
+{
+ const boot=read('equipment/assets/build-bootstrap.js'),core=read('equipment/assets/app-core.js'),manifest=JSON.parse(read('equipment/exam-1/banks.json'));
+ if(!boot.includes("loadStyle('app-core.css')")||!boot.includes("loadScript('app-core.js')"))fail('App core is not loaded globally by the build bootstrap');
+ for(const token of ['window.MBUDiagnostics=','window.MBUSync=','window.MBUAppCore=','exportSnapshot','importSnapshot','registerAdapter','syncWith','touchStore','mbu_device_id_v1','mbu_sync_meta_v1'])if(!core.includes(token))fail('App core contract missing '+token);
+ if(manifest.sync?.schema!==1||manifest.sync?.mode!=='local-first'||manifest.sync?.studioStorageKey!=='mbu_exam1_studio_v1')fail('Manifest sync contract is missing');
+ for(const p of ['equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js'])if(!read(p).includes('touchStore'))fail(p+': save path is not sync-aware');
+ const nav=read('equipment/assets/site-nav.js'),css=read('equipment/assets/app-core.css');
+ if(!nav.includes('mountNav')||!core.includes('Skip to main content')||!css.includes(':focus-visible')||!css.includes('prefers-reduced-motion'))fail('Shared accessibility/tools contract is incomplete');
+ for(const p of ['README.md','docs/ARCHITECTURE.md','docs/SYNC.md','CONTRIBUTING.md'])if(!exists(p))fail('Documentation missing '+p);
+ if(!exists('scripts/content-integrity.mjs'))fail('Content integrity validator is missing');
 }
 
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}

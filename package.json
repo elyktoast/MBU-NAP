@@ -5,7 +5,8 @@
     "validate": "node scripts/validate-repo.mjs",
     "test:e2e": "playwright test",
     "test:perf": "node scripts/performance-budget.mjs",
-    "quality": "npm run validate && npm run test:perf"
+    "quality": "npm run validate && npm run test:content && npm run test:perf",
+    "test:content": "node scripts/content-integrity.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.55.0"

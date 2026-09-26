@@ -16,7 +16,9 @@ const budgets={
   'equipment/exam-1/hazards-bank-2.html':9000,
   'equipment/exam-1/hazards-bank-3.html':8000,
   'equipment/exam-1/hazards-harder.html':8000,
-  'equipment/assets/build-bootstrap.js':4000,
+  'equipment/assets/build-bootstrap.js':4500,
+  'equipment/assets/app-core.js':18000,
+  'equipment/assets/app-core.css':9000,
   'equipment/assets/canonical-bank-page.js':8000,
   'equipment/assets/quiz-engine.js':30000,
   'equipment/assets/studio-page.js':45000,
@@ -51,6 +53,10 @@ if(studio.includes('bank3-images.js')||studio.includes('combined-images.js')||st
 const boot=read('equipment/assets/build-bootstrap.js');
 if(!boot.includes('jsonCache=new Map()')||!boot.includes('fetchJSON'))fail('Build runtime lost shared JSON request deduplication');
 for(const p of ['equipment/assets/site-nav.js','equipment/assets/canonical-bank-page.js','equipment/assets/hazards-page.js','equipment/assets/studio-page.js','equipment/assets/exam-dashboard.js'])if(!read(p).includes('fetchJSON'))fail(p+': bypasses central JSON request cache');
+
+const core=read('equipment/assets/app-core.js');
+for(const token of ['exportSnapshot','importSnapshot','registerAdapter','syncWith','touchStore'])if(!core.includes(token))fail('App core sync contract missing '+token);
+if(!read('equipment/assets/build-bootstrap.js').includes("loadScript('app-core.js')"))fail('Build bootstrap does not load the shared app core');
 
 const tests=read('tests/e2e/quiz-regression.spec.js');
 if(tests.includes('waitForTimeout('))fail('Browser regression suite contains a fixed sleep');

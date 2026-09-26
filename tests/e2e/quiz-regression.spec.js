@@ -1317,4 +1317,66 @@ test.describe('canonical quiz regression', () => {
   });
 
 
+  test('App core exposes stable device identity, diagnostics, and a global Tools dialog', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');
+    await page.evaluate(() => MBUPageReady);
+    const first=await page.evaluate(() => MBUSync.deviceId());
+    expect(first).toMatch(/^[A-Za-z0-9-]+$/);
+    await page.reload();await page.evaluate(() => MBUPageReady);
+    expect(await page.evaluate(() => MBUSync.deviceId())).toBe(first);
+    await expect(page.locator('.mbu-global-nav__tools')).toBeVisible();
+    await page.locator('.mbu-global-nav__tools').click();
+    await expect(page.locator('#mbu-app-tools')).toHaveClass(/open/);
+    await expect(page.locator('#mbu-app-tools')).toContainText('Progress is local-first');
+    const diag=await page.evaluate(() => MBUDiagnostics.snapshot());
+    expect(diag.build).toMatch(/^2026-/);expect(diag.deviceId).toBe(first);
+  });
+
+  test('A real quiz save updates sync metadata and exports a portable schema-1 snapshot', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
+    await page.locator('#cards button').filter({hasText:/start|continue/i}).first().click();
+    await page.locator('#options .opt').first().click();
+    await page.locator('#submit-multi').click();
+    const out=await page.evaluate(async()=>({meta:JSON.parse(localStorage.getItem('mbu_sync_meta_v1')||'{}'),snapshot:await MBUSync.exportSnapshot()}));
+    expect(out.meta['SRNA_COMBINED_EXAM_SET_1_2026_V1']?.revision).toBeGreaterThan(0);
+    expect(out.snapshot.schema).toBe(1);expect(out.snapshot.app).toBe('MBU-NAP');
+    expect(out.snapshot.stores['SRNA_COMBINED_EXAM_SET_1_2026_V1']).toBeTruthy();
+  });
+
+  test('Backup import uses deterministic newer-save conflict handling', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
+    const result=await page.evaluate(async()=>{
+      const key='SRNA_COMBINED_EXAM_SET_1_2026_V1',local='{"local":true}',remote='{"remote":true}',device=MBUSync.deviceId();
+      localStorage.setItem(key,local);localStorage.setItem('mbu_sync_meta_v1',JSON.stringify({[key]:{revision:2,updatedAt:200,deviceId:device}}));
+      const older=await MBUSync.importSnapshot({app:'MBU-NAP',schema:1,createdAt:100,deviceId:'other',stores:{[key]:remote},meta:{[key]:{revision:1,updatedAt:100,deviceId:'other'}}});
+      const afterOlder=localStorage.getItem(key);
+      const newer=await MBUSync.importSnapshot({app:'MBU-NAP',schema:1,createdAt:300,deviceId:'other',stores:{[key]:remote},meta:{[key]:{revision:3,updatedAt:300,deviceId:'other'}}});
+      return{older,newer,afterOlder,afterNewer:localStorage.getItem(key)}
+    });
+    expect(result.older.imported).toBe(0);expect(result.afterOlder).toBe('{"local":true}');
+    expect(result.newer.imported).toBe(1);expect(result.afterNewer).toBe('{"remote":true}');
+  });
+
+  test('Future cloud adapters can pull, merge, and push through the stable sync interface', async ({ page }) => {
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    const result=await page.evaluate(async()=>{
+      let pushed=null;
+      MBUSync.registerAdapter('memory',{pull:async()=>null,push:async snapshot=>{pushed=snapshot}});
+      const sync=await MBUSync.syncWith('memory');return{sync,pushed}
+    });
+    expect(result.sync.pushed).toBe(true);expect(result.pushed.schema).toBe(1);expect(result.pushed.deviceId).toBeTruthy();
+  });
+
+  test('Keyboard and mobile accessibility contracts remain usable', async ({ page }) => {
+    await page.setViewportSize({width:390,height:844});
+    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth<=document.documentElement.clientWidth+1)).toBe(true);
+    await expect(page.locator('.mbu-skip-link')).toHaveText('Skip to main content');
+    await page.locator('#cards button').filter({hasText:/start|continue/i}).first().click();
+    const cross=page.locator('.mbu-cross').first();await cross.focus();await page.keyboard.press('Enter');
+    await expect(cross).toHaveAttribute('aria-pressed','true');
+    await expect(page.locator('#progress')).toHaveAttribute('aria-live','polite');
+  });
+
+
 });

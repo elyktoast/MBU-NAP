@@ -90,6 +90,7 @@
       const serialized=JSON.stringify(d);
       if(serialized===lastSerialized)return;
       localStorage.setItem(STORE,serialized);
+      window.MBUAppCore?.touchStore?.(STORE);
       lastSerialized=serialized;
     }catch(e){}
   }

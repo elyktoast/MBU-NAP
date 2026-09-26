@@ -1,0 +1,14 @@
+.mbu-visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.mbu-skip-link{position:fixed;left:12px;top:8px;z-index:11000;transform:translateY(-160%);padding:9px 12px;border-radius:8px;background:#1a365d;color:#fff;font:700 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;text-decoration:none}
+.mbu-skip-link:focus{transform:none}
+.mbu-global-nav__tools{flex:none;border:1px solid #1a365d;border-radius:8px;background:#fff;color:#1a365d;min-height:38px;padding:7px 10px;font:700 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;cursor:pointer}
+.mbu-global-nav__tools:hover{background:#edf2f7}.mbu-global-nav__tools:focus-visible,.mbu-app-tools button:focus-visible,.mbu-app-tools input:focus-visible{outline:3px solid #2b6cb0;outline-offset:2px}
+.mbu-app-tools{display:none;position:fixed;inset:0;z-index:10500;background:#0009;align-items:center;justify-content:center;padding:16px}.mbu-app-tools.open{display:flex}
+.mbu-app-tools__card{width:min(620px,100%);max-height:92vh;overflow:auto;background:#fff;color:#1a202c;border-radius:14px;padding:20px;box-shadow:0 18px 48px #0007;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.mbu-app-tools__head{display:flex;align-items:center;justify-content:space-between;gap:12px}.mbu-app-tools__head h2{margin:0;color:#1a365d}.mbu-app-tools__head button{border:0;background:transparent;font-size:28px;cursor:pointer}
+.mbu-app-tools dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:18px 0}.mbu-app-tools dl>div{padding:10px;border:1px solid #e2e8f0;border-radius:8px}.mbu-app-tools dt{font-size:12px;color:#718096;font-weight:700}.mbu-app-tools dd{margin:3px 0 0;font-weight:750;overflow-wrap:anywhere}
+.mbu-app-tools__note{color:#4a5568;line-height:1.5}.mbu-app-tools__actions{display:flex;gap:8px;flex-wrap:wrap}.mbu-app-tools__actions button{min-height:42px;padding:9px 12px;border:1px solid #1a365d;border-radius:8px;background:#1a365d;color:#fff;font:750 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;cursor:pointer}.mbu-app-tools__actions button+button{background:#fff;color:#1a365d}
+.mbu-app-tools__status{min-height:22px;margin-top:12px;color:#4a5568;font-size:13px}
+:where(button,a,input,select,textarea):focus-visible{outline:3px solid #2b6cb0;outline-offset:2px}
+@media(max-width:900px){.mbu-global-nav__tools{margin-left:0}.mbu-app-tools dl{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

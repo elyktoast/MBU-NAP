@@ -23,7 +23,9 @@ jobs:
           node-version: 22
       - name: Validate repository architecture
         run: npm run validate
-      - name: Enforce Phase 5 performance budgets
+      - name: Validate question content integrity
+        run: npm run test:content
+      - name: Enforce performance and architecture budgets
         run: npm run test:perf
 
   browser:
