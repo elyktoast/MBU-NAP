@@ -4,7 +4,7 @@ import vm from 'node:vm';
 import { execFileSync } from 'node:child_process';
 
 const root=process.cwd(), failures=[], notes=[];
-const quizFiles=['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html','equipment/exam-1/quiz-bank-3.html','equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html','equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html','equipment/exam-1/studio.html'];
+const quizFiles=['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html','equipment/exam-1/quiz-bank-3.html','equipment/exam-1/combined.html','equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html','equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html','equipment/exam-1/studio.html'];
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const exists=p=>fs.existsSync(path.join(root,p));
 const fail=m=>failures.push(m);
@@ -51,6 +51,14 @@ function checkBank2(){
   validateQuestions('Quiz Bank 2',all,500);
 }
 function checkBank3(){validateQuestions('Quiz Bank 3',parseArray(read('equipment/exam-1/quiz-bank-3.html'),'const BANK'),500)}
+function checkCombined(){
+  const src=read('equipment/exam-1/combined-questions.js'),m=src.match(/window\.QUIZ_DATA\s*=\s*([\s\S]*?)\s*;?\s*$/);
+  if(!m)return fail('Combined: QUIZ_DATA payload not found');
+  let data;try{data=Function('return ('+m[1]+')')()}catch(e){return fail('Combined: invalid question payload: '+e.message)}
+  const qs=Array.isArray(data&&data.questions)?data.questions:[];validateQuestions('Combined',qs.map(q=>({id:q.id,type:q.type,options:q.c,answer:q.a})),150);
+  if(data.count!==150)fail('Combined: metadata count is not 150');
+  const images=read('equipment/exam-1/combined-images.js');for(const q of qs)if(q.image_id&&!images.includes('"'+q.image_id+'"'))fail('Combined: missing image asset '+q.image_id);
+}
 function checkCopies(){
   for(const p of ['equipment/exam-1/index.html','equipment/exam-1/quiz-bank-3.html']){
     const src=read(p); if(/600\s+questions/i.test(src)) fail(p+': stale 600-question Bank 3 copy remains');
@@ -80,7 +88,7 @@ function checkAssets(){
 }
 function checkStudio(){
   const src=read('equipment/exam-1/studio.html');
-  for(const name of ['quiz-bank-1.html','quiz-bank-2.html','quiz-bank-3.html','hazards-100.html','hazards-bank-2.html','hazards-bank-3.html','hazards-harder.html']) if(!src.includes(name))fail('Studio: missing source '+name);
+  for(const name of ['quiz-bank-1.html','quiz-bank-2.html','quiz-bank-3.html','combined-questions.js','hazards-100.html','hazards-bank-2.html','hazards-bank-3.html','hazards-harder.html']) if(!src.includes(name))fail('Studio: missing source '+name);
   if(!src.includes("['quiz-bank-1.html','b1'")) fail('Studio: Bank 1 is not the first canonical bank source');
   const b3Start=src.indexOf("}else if(key==='b3'){"),hazardStart=src.indexOf("}else{",b3Start);
   const b3Branch=b3Start>=0&&hazardStart>b3Start?src.slice(b3Start,hazardStart):'';
@@ -98,7 +106,7 @@ function checkRuntimeSafety(){
 try{checkBank1()}catch(e){fail('Bank 1 validation crashed: '+e.message)}
 try{checkBank2()}catch(e){fail('Bank 2 validation crashed: '+e.message)}
 try{checkBank3()}catch(e){fail('Bank 3 validation crashed: '+e.message)}
-checkCopies();checkAssets();checkStudio();checkRuntimeSafety();
+checkCombined();checkCopies();checkAssets();checkStudio();checkRuntimeSafety();
 let manifest;
 try{
   const raw=read('equipment/build.json');
@@ -405,4 +413,4 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 }
 
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
-console.log('Repository validation passed: Banks 1-3 are 500 questions each; local assets, Studio sources, shared quiz runtimes, answer indexes, and build manifest are valid.');
+console.log('Repository validation passed: Banks 1-3 are 500 questions each; Combined is 150 questions; local assets, Studio sources, shared quiz runtimes, answer indexes, and build manifest are valid.');
