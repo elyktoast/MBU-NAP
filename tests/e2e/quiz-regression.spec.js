@@ -1088,7 +1088,7 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/studio.html');
     await expect(page.locator('#home')).toBeVisible();
     expect(requests.length).toBeGreaterThan(0);
-    expect(requests.every(url => new URL(url).searchParams.get('v') === '60')).toBeTruthy();
+    expect(requests.every(url => new URL(url).searchParams.get('v') === '64')).toBeTruthy();
     await expect.poll(() => page.evaluate(() => sessionStorage.getItem('mbu_build_manifest_v1'))).not.toBeNull();
   });
 
