@@ -14,12 +14,15 @@
 <div class="stats"><div>Completed: <strong id="completed">0</strong>/<span id="total">0</span></div><div>Score: <strong id="score">0</strong>%</div><div>Missed: <strong id="missed">0</strong></div></div>
 <div id="mbuNavigator" class="row hidden" style="flex-wrap:wrap;gap:6px;margin:8px 0 14px;max-height:180px;overflow:auto;padding:3px"></div><div class="type" id="type"></div><div class="stem" id="stem"></div><div class="mbu-crossout-hint">Tip: Right-click an answer to cross it out.</div><div class="image hidden" id="image"></div><div class="options" id="options"></div><div class="row" id="multi-submit-row" style="display:none;margin:4px 0 18px;justify-content:flex-end"><button class="btn" id="submit-multi" onclick="submitAnswer()">Submit Answer</button></div><div class="explain" id="explain"><div id="explain-text"></div><div class="cite" id="citation"></div></div><div class="controls"><button class="btn out" id="prev" onclick="nav(-1)">Previous</button><div class="row"><button class="btn out" onclick="resetCurrent()">Reset</button><button class="btn" id="next" onclick="nav(1)">Next</button></div></div></section>
 </div>
-<script src="combined-questions.js"></script><script src="../assets/studio-sync.js?v=63"></script><script src="../assets/navigator.js?v=63"></script>
+<script src="../assets/studio-sync.js?v=63"></script><script src="../assets/navigator.js?v=63"></script>
 <script>
 const STORE='MBU_COMBINED_BANK_2026_V1',BANK_KEY='combined',LETTERS='ABCDEF';
-const RAW=window.QUIZ_DATA?.questions||[];
-const QUESTIONS=RAW.map((q,i)=>({id:String(q.id||('C'+(i+1))),seq:i+1,set:Math.floor(i/50)+1,type:q.type==='multi'?'multi':'single',n:Number(q.n)||1,stem:String(q.q||''),options:Array.isArray(q.c)?q.c:[],answer:(Array.isArray(q.a)?q.a:[q.a]).map(Number),explanation:String(q.exp||''),disc:q.disc||'',supp:q.supp||'',citation:Array.isArray(q.ref)?q.ref.join('; '):String(q.ref||''),topic:String(q.lec||q.concept||'Combined'),concept:String(q.concept||''),imageId:q.image_id||null}));
-const SETS={1:QUESTIONS.slice(0,50),2:QUESTIONS.slice(50,100),3:QUESTIONS.slice(100,150)};
+let QUESTIONS=[],SETS={1:[],2:[],3:[]};
+async function loadCombinedData(){
+ const r=await fetch('data/combined.json',{cache:'force-cache'});if(!r.ok)throw Error('Question data HTTP '+r.status);
+ const payload=await r.json();QUESTIONS=(payload.questions||[]).map((q,i)=>({...q,id:String(q.id||('C'+(i+1))),seq:i+1,set:Number(q.set)||Math.floor(i/50)+1,n:(q.answer||[]).length||1,concept:q.topic||''}));
+ SETS={1:QUESTIONS.filter(q=>q.set===1),2:QUESTIONS.filter(q=>q.set===2),3:QUESTIONS.filter(q=>q.set===3)};window.QUESTIONS=QUESTIONS;window.SETS=SETS;
+}
 let db=loadDB(),currentSet=null,currentData=[],currentIndex=0,selected=new Set(),graded=false,autoTimer=null;
 function blankState(){return{answers:{},graded:{},correct:{},strikes:{},current:0}}
 function normalizeState(x){const out=blankState();if(!x||typeof x!=='object')return out;for(const k of ['answers','graded','correct','strikes'])if(x[k]&&typeof x[k]==='object'&&!Array.isArray(x[k]))out[k]=x[k];const c=Number(x.current);out.current=Number.isInteger(c)&&c>=0?c:0;return out}
@@ -72,5 +75,5 @@ function nav(d){clearTimeout(autoTimer);autoTimer=null;const n=currentIndex+d;if
 function resetCurrent(){clearTimeout(autoTimer);autoTimer=null;if(!confirm('Reset progress for this quiz view?'))return;db.sets[currentSet]=blankState();currentIndex=0;saveDB();loadQuestion()}
 function resetSet(s){if(!confirm('Reset Practice Set '+s+' progress?'))return;db.sets[s]=blankState();saveDB();renderDashboard()}
 document.addEventListener('keydown',e=>{if(document.getElementById('quiz').classList.contains('hidden')||graded)return;const q=currentData[currentIndex],i=LETTERS.indexOf(e.key.toUpperCase());if(i>=0&&i<q.options.length){e.preventDefault();if(e.shiftKey){const b=document.querySelector('.opt[data-i="'+i+'"]'),x=b?.parentElement?.querySelector('.mbu-cross');if(b&&x)toggleCross(i,b,x)}else pick(i)}else if(e.key==='Enter'){e.preventDefault();submitAnswer()}});
-renderDashboard();
+window.MBUQuizReady=loadCombinedData().then(()=>renderDashboard()).catch(e=>{console.error('Combined failed to initialize',e);document.getElementById('dashboard').innerHTML='<div class="card"><h3>Combined could not load</h3><div class="mini">'+String(e.message||e)+'</div></div>';throw e});
 </script><script src="../assets/calculator.js?v=63"></script><script>/* MBU_BUILD:2026-09-26-combined-bank1-parity-v74 */</script><script src="../assets/auto-update.js?v=63"></script></body></html>
