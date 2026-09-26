@@ -128,10 +128,21 @@ async function loadBanks(){
       }
     }catch(e){errors.push(label+': '+(e&&e.name==='AbortError'?'timed out':e.message));console.error('Studio source failed:',label,e);return []}
   };
-  const loaded=await Promise.all(sources.map(loadSource));
-  ALL=loaded.flat();
-  const bankOrder=['b1','b2','b3','combined','h1','h2','h3','hh'];ALL.sort((a,b)=>bankOrder.indexOf(a.bank)-bankOrder.indexOf(b.bank)||a.set-b.set||a.seq-b.seq);
-  ALL_BY_UID=new Map(ALL.map(q=>[q.uid,q]));ALL_UIDS=new Set(ALL_BY_UID.keys());BANK_QUESTIONS=new Map();for(const q of ALL){if(!BANK_QUESTIONS.has(q.bank))BANK_QUESTIONS.set(q.bank,[]);BANK_QUESTIONS.get(q.bank).push(q)}
+  const bankOrder=['b1','b2','b3','combined','h1','h2','h3','hh'];
+  const reindex=()=>{
+    ALL.sort((a,b)=>bankOrder.indexOf(a.bank)-bankOrder.indexOf(b.bank)||a.set-b.set||a.seq-b.seq);
+    ALL_BY_UID=new Map(ALL.map(q=>[q.uid,q]));ALL_UIDS=new Set(ALL_BY_UID.keys());BANK_QUESTIONS=new Map();
+    for(const q of ALL){if(!BANK_QUESTIONS.has(q.bank))BANK_QUESTIONS.set(q.bank,[]);BANK_QUESTIONS.get(q.bank).push(q)}
+  };
+  const loadmsg=document.getElementById('loadmsg');if(loadmsg){loadmsg.classList.remove('hidden');loadmsg.textContent='Loading question banks…'}
+  let completed=0;
+  await Promise.all(sources.map(async source=>{
+    const qs=await loadSource(source);
+    if(qs.length){ALL.push(...qs);reindex();try{buildTopics()}catch(e){errors.push(source[2]+': selector render failed: '+e.message);console.error(e)}}
+    completed++;
+    if(loadmsg)loadmsg.textContent='Loading question banks… '+completed+' / '+sources.length;
+  }));
+  reindex();
   try{syncBankData();buildTopics();const params=new URLSearchParams(location.search),requested=params.get('mode');if(requested==='hazards-missed')startMode('hazards-missed');else if(requested==='combined-missed')startMode('combined-missed');else renderHome()}catch(e){errors.push('Studio render: '+e.message);console.error(e)}
   showLoadErrors(errors);
 }
@@ -182,6 +193,7 @@ function checkedValues(id){return [...document.querySelectorAll('#'+id+' input[t
 function setLabel(q){if(q.bank==='hh')return 'Challenge Set';if(q.bank==='h1'||q.bank==='h2'||q.bank==='h3')return q.bankLabel;return q.set===7?'Challenge Set':'Practice Set '+q.set}
 function sourceSetKey(q){return q.bank+':'+q.set}
 function buildTopics(){
+  const selectedSources=new Set(checkedValues('sourceChecks')),selectedTopics=new Set(checkedValues('topicChecks'));
   const bankLabels=new Map(),setNames=new Map(),setCounts=new Map(),topicCounts=new Map();
   ALL.forEach(q=>{
     if(!String(q.bank).startsWith('h'))bankLabels.set(q.bank,q.bankLabel);
@@ -192,9 +204,9 @@ function buildTopics(){
   document.getElementById('sourceChecks').innerHTML=groupDefs.map(g=>{
     const keys=[...setNames.keys()].filter(k=>g.banks.includes(k.split(':')[0]));
     if(g.label==='Workstation Hazards'){const order=['h1:1','h2:1','h3:1','hh:1'];keys.sort((a,b)=>order.indexOf(a)-order.indexOf(b))}
-    return `<div style="margin-bottom:14px"><b>${esc(g.label)}</b><div style="display:grid;gap:5px;margin:5px 0 0 12px">${keys.map(key=>`<label class="checkitem"><input type="checkbox" value="${esc(key)}"> <span>${esc(setNames.get(key))} <span class="mut">(${setCounts.get(key)||0})</span></span></label>`).join('')}</div></div>`
+    return `<div style="margin-bottom:14px"><b>${esc(g.label)}</b><div style="display:grid;gap:5px;margin:5px 0 0 12px">${keys.map(key=>`<label class="checkitem"><input type="checkbox" value="${esc(key)}"${selectedSources.has(key)?' checked':''}> <span>${esc(setNames.get(key))} <span class="mut">(${setCounts.get(key)||0})</span></span></label>`).join('')}</div></div>`
   }).join('');
-  document.getElementById('topicChecks').innerHTML=[...topicCounts.keys()].sort().map(x=>`<label class="checkitem"><input type="checkbox" value="${esc(x)}"> <span>${esc(x)} <span class="mut">(${topicCounts.get(x)})</span></span></label>`).join('')
+  document.getElementById('topicChecks').innerHTML=[...topicCounts.keys()].sort().map(x=>`<label class="checkitem"><input type="checkbox" value="${esc(x)}"${selectedTopics.has(x)?' checked':''}> <span>${esc(x)} <span class="mut">(${topicCounts.get(x)})</span></span></label>`).join('')
 }
 function renderHome(){
   clearTimeout(autoTimer);autoTimer=null;window.MBUCalculator?.hide();
