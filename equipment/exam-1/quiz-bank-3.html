@@ -105,7 +105,6 @@ function load(){try{const r=localStorage.getItem(KEY);if(r){const o=JSON.parse(r
 let S=load(),lastSaved="";try{lastSaved=JSON.stringify(S)}catch(e){}
 function save(){try{const next=JSON.stringify(S);if(next===lastSaved)return;localStorage.setItem(KEY,next);lastSaved=next}catch(e){}}
 let V={mode:"dash"};let timer=null;let cur={sel:[],done:false};
-const MBU_STUDIO_STORE=window.MBUStudio?.STORE||null;
 function mbuStudioDB(){return window.MBUStudio?.db?.()||{ans:{},flags:{},reports:[]}}
 function mbuFlagKey(q){return window.MBUStudio?.key?.(3,q)||('b3-'+q.id)}
 function mbuIsFlagged(q){return !!window.MBUStudio?.flagged?.(3,q)}
@@ -122,7 +121,6 @@ function mbuNavigatorHTML(c){return `<div id="mbuNavigator" style="display:none;
 function examStats(n){const e=S.ex[n];const ids=EXM[n].ids;let a=0,c=0;ids.forEach(id=>{const r=e.ans[id];if(r){a++;if(r.ok)c++}});return{a,c,t:ids.length,missed:ids.filter(id=>e.ans[id]&&!e.ans[id].ok)}}
 function missedPool(){const seen={},out=[];for(const n of [...EXLIST].reverse()){examStats(n).missed.forEach(id=>{const q=byId[id];if(S.cleared[q.orig]||seen[q.orig])return;seen[q.orig]=1;out.push(id)})}
  return BANK.filter(q=>out.includes(q.id)).map(q=>q.id)}
-function allMissedCount(){let m=0;EXLIST.forEach(n=>m+=examStats(n).missed.length);return m}
 
 // ----- header
 function header(title,extra){
