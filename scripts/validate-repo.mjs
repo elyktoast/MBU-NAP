@@ -88,6 +88,7 @@ function checkAssets(){
 }
 function checkStudio(){
   const src=read('equipment/exam-1/studio.html');
+  if(!src.includes("const STUDIO_SOURCE_CATALOG=[")||!src.includes("{bank:'b1',label:'Quiz Bank 1',sets:[1,2,3,4,5],count:100}")||!src.includes("{bank:'b2',label:'Quiz Bank 2',sets:[1,2,3,4,5],count:100}")||!src.includes("{bank:'b3',label:'Quiz Bank 3',sets:[1,2,3,4,5],count:100}")||!src.includes("{bank:'combined',label:'Combined',sets:[1,2,3],count:50}"))fail('Studio: complete canonical source catalog is missing');
   for(const name of ['studio-bank1.json','studio-bank2.json','studio-bank3.json','combined-questions.js','hazards-100.html','hazards-bank-2.html','studio-hazards3.json','studio-challenge.json','quiz-bank-3.html','hazards-bank-3.html','hazards-harder.html']) if(!src.includes(name))fail('Studio: missing source/image source '+name);
   if(!src.includes("['studio-bank1.json','b1'")) fail('Studio: Bank 1 is not the first canonical Studio source');
   const b3Start=src.indexOf("}else if(key==='b3'){"),hazardStart=src.indexOf("}else{",b3Start);
