@@ -45,8 +45,8 @@
       return {...x,uid,bank};
     });
     cache=d;
-    try{lastSerialized=JSON.stringify(d)}catch(e){}
     if(changed) save(d);
+    else try{lastSerialized=JSON.stringify(d)}catch(e){}
     return cache;
   }
 
