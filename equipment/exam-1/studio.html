@@ -177,6 +177,22 @@ function norm(q,b,set,i,label,forcedTopic){
 }
 function syncBankData(){
   const put=(q,ok,bank,force=false)=>{if(q&&(force||!DB.ans[q.uid]))DB.ans[q.uid]={ok:!!ok,at:Date.now(),topic:q.topic,bank}};
+  const syncCanonical=(bank,key)=>{
+    try{
+      const d=JSON.parse(localStorage.getItem(key)||'null');if(!d||!d.sets)return false;
+      let found=false;
+      for(const [setKey,st] of Object.entries(d.sets||{})){
+        const set=Number(setKey),qs=(BANK_QUESTIONS.get(bank)||[]).filter(q=>q.set===set);
+        if(!st||!st.graded)continue;
+        for(const [i,on] of Object.entries(st.graded)){if(!on)continue;const q=qs[Number(i)];if(q){put(q,st.correct&&st.correct[i],bank);found=true}}
+      }
+      return found
+    }catch(e){return false}
+  };
+  syncCanonical('b1','SRNA_COMBINED_EXAM_SET_1_2026_V1');
+  syncCanonical('b2','srna_all5_groundup_v1');
+  syncCanonical('b3','srna_equipment_dashboard_v1');
+  syncCanonical('combined','MBU_COMBINED_BANK_2026_V1');
   try{
     const b1=JSON.parse(localStorage.getItem('SRNA_COMBINED_EXAM_SET_1_2026_V1')||'null');
     if(b1&&b1.sets)for(let s=1;s<=5;s++){const st=b1.sets[s]||{},qs=(BANK_QUESTIONS.get('b1')||[]).filter(q=>q.set===s);qs.forEach((q,i)=>{const k=String(i);if(st.graded&&st.graded[k])put(q,st.correct&&st.correct[k],'b1')})}
