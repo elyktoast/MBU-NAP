@@ -19,7 +19,7 @@ function setPanelPosition(left,top){
   const p=clampPanel(left,top);
   panel.style.left=p.left+'px';panel.style.top=p.top+'px';panel.style.transform='none';
 }
-function centerPanel(){panel.style.left='50%';panel.style.top='50%';panel.style.transform='translate(-50%,-50%)'}
+function centerPanel(){panel.style.transform='none';const width=document.documentElement.clientWidth||window.innerWidth,height=document.documentElement.clientHeight||window.innerHeight;setPanelPosition((width-panel.offsetWidth)/2,(height-panel.offsetHeight)/2)}
 let drag=null;
 head.addEventListener('pointerdown',e=>{
   if(e.target.closest('button'))return;
@@ -43,7 +43,7 @@ head.addEventListener('keydown',e=>{
 });
 document.querySelector('.mbu-calc-resetpos').onclick=e=>{e.stopPropagation();centerPanel()};
 window.addEventListener('resize',()=>{if(!m.classList.contains('open')||panel.style.transform)return;const r=panel.getBoundingClientRect();setPanelPosition(r.left,r.top)});
-document.getElementById('mbu-calc-open').onclick=()=>{m.classList.add('open');d.focus()};document.querySelector('.mbu-calc-close').onclick=()=>m.classList.remove('open');m.onclick=e=>{if(e.target===m)m.classList.remove('open')};
+document.getElementById('mbu-calc-open').onclick=()=>{m.classList.add('open');requestAnimationFrame(centerPanel);d.focus()};document.querySelector('.mbu-calc-close').onclick=()=>m.classList.remove('open');m.onclick=e=>{if(e.target===m)m.classList.remove('open')};
 function add(v){if(d.value==='Error')d.value='';d.value+=v;d.focus()}
 function press(t){if(t==='AC')d.value='';else if(t==='⌫')d.value=d.value.slice(0,-1);else if(t==='=')evaluate();else if(t==='Ans')add(String(ans));else if(t==='±')d.value=d.value?'-('+d.value+')':'-';else add(({ '÷':'/','×':'*','−':'-','π':'pi','EE':'E'}[t]||t))}
 function ev(s){if(!s.trim())return 0;if(!/^[0-9+\-*/^().,%\sA-Za-z]+$/.test(s))throw Error();let x=s.replace(/\bpi\b/gi,'PI').replace(/\be\b/g,'EULER').replace(/\^/g,'**').replace(/(\d+(?:\.\d+)?|\([^()]*\))%/g,'($1/100)');const F={sin:v=>Math.sin(v*Math.PI/180),cos:v=>Math.cos(v*Math.PI/180),tan:v=>Math.tan(v*Math.PI/180),asin:v=>Math.asin(v)*180/Math.PI,acos:v=>Math.acos(v)*180/Math.PI,atan:v=>Math.atan(v)*180/Math.PI,sqrt:Math.sqrt,ln:Math.log,log:Math.log10};for(const n of Object.keys(F))x=x.replace(new RegExp('\\b'+n+'\\b','g'),'F.'+n);x=x.replace(/\bPI\b/g,'Math.PI').replace(/\bEULER\b/g,'Math.E');const r=Function('F','Math','"use strict";return ('+x+');')(F,Math);if(typeof r!=='number'||!Number.isFinite(r))throw Error();return r}
