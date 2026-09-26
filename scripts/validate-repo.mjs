@@ -238,6 +238,12 @@ function checkStudioIndexes(){
 checkStudioIndexes();
 {
   const engine=read('equipment/assets/quiz-engine.js');
+  for(const token of ['QUESTION_BY_SET_ID=new Map','QUESTION_INDEX_BY_SET_ID=new Map','questionById(s,id)','ids.map(id=>questionById(s,id))'])if(!engine.includes(token))fail('Canonical quiz engine: missing indexed lookup '+token);
+  if(engine.includes('SETS[s].find(')||engine.includes('findIndex(q=>String(q.id)'))fail('Canonical quiz engine: linear set-ID lookup remains');
+  for(const p of ['equipment/exam-1/studio-bank1.json','equipment/exam-1/studio-bank2.json','equipment/exam-1/studio-bank3.json','equipment/exam-1/studio-hazards3.json','equipment/exam-1/studio-challenge.json','equipment/exam-1/combined-questions.js'])if(exists(p))fail('Canonical data: obsolete duplicate artifact remains '+p);
+}
+{
+  const engine=read('equipment/assets/quiz-engine.js');
   for(const bit of [
     "autoTimer=setTimeout(()=>{autoTimer=null;currentIndex++;persistPosition();loadQuestion()},350)",
     "function nav(d){clearTimeout(autoTimer);autoTimer=null;",
