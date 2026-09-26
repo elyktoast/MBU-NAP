@@ -421,6 +421,88 @@ test.describe('canonical quiz regression', () => {
   });
 
 
+
+  test('Bank 1 cross-out can be cleared by reset without contaminating answer state', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');
+    await page.locator('#cards button').filter({ hasText: /start|continue/i }).first().click();
+    const option=page.locator('#options .opt').first();
+    await option.click({button:'right'});
+    await expect(option).toHaveClass(/crossed/);
+    page.once('dialog', dialog => dialog.accept());
+    await page.locator('button', {hasText:'Reset'}).click();
+    await expect(page.locator('#options .opt.crossed')).toHaveCount(0);
+    await expect(page.locator('#options .opt.selected')).toHaveCount(0);
+  });
+
+  test('Bank 2 graded question survives immediate reload without losing the answer', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-2.html');
+    await page.evaluate(() => startSet(0));
+    const answer=await page.evaluate(() => SETS[0][0].correct);
+    await clickIndexes(page.locator('#choices .choice'), answer);
+    await page.locator('#submitBtn').click();
+    await page.reload();
+    const state=await storageJSON(page,'srna_all5_groundup_v1');
+    expect(state.sets['0'].answered['0']).toBe(true);
+  });
+
+  test('Bank 3 last question grading does not advance beyond the set', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-3.html');
+    const data=await page.evaluate(() => {
+      openExam(1);
+      S.ex[1].idx=EXM[1].ids.length-1;
+      renderQ();
+      const q=byId[EXM[1].ids[S.ex[1].idx]];
+      return {answer:q.a,last:EXM[1].ids.length-1};
+    });
+    await clickIndexes(page.locator('#main .opt'), data.answer);
+    await page.locator('#go').click();
+    await page.waitForTimeout(500);
+    expect(await page.evaluate(() => S.ex[1].idx)).toBe(data.last);
+  });
+
+  test('Studio completed single-question session remains resumable after reload', async ({ page }) => {
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    await page.evaluate(() => {
+      session=[ALL.find(q=>q.ans.length===1)];
+      pos=0;
+      DB.active={uids:[session[0].uid],pos:0,answers:{},updated:Date.now()};
+      save(); showQ();
+    });
+    const answer=await page.evaluate(() => session[0].ans);
+    await clickIndexes(page.locator('#opts .opt'),answer);
+    await page.locator('#submit').click();
+    await page.waitForTimeout(450);
+    await page.reload();
+    await waitForStudio(page);
+    await expect(page.locator('#resumeActive')).toContainText('Question 1 / 1');
+    await page.locator('#resumeActive').click();
+    await expect(page.locator('#fb')).toBeVisible();
+    expect(await page.evaluate(() => sessionAnswer(session[0].uid)?.ok)).toBe(true);
+  });
+
+  test('Studio ignores an active session whose question UIDs no longer exist', async ({ page }) => {
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    await page.evaluate(() => {
+      DB.active={uids:['missing:question:uid'],pos:0,answers:{'missing:question:uid':{sel:[0],ok:true}},updated:Date.now()};
+      save();
+    });
+    await page.reload();
+    await waitForStudio(page);
+    await expect(page.locator('#home')).toBeVisible();
+    await expect(page.locator('#quiz')).toBeHidden();
+  });
+
+  test('Malformed saved JSON does not prevent Bank 1 from loading', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');
+    await page.evaluate(() => localStorage.setItem('SRNA_COMBINED_EXAM_SET_1_2026_V1','{bad json'));
+    await page.reload();
+    await expect(page.locator('#dashboard')).toBeVisible();
+    await expect(page.locator('#overall')).toContainText('/ 500 completed');
+  });
+
+
   test('Shared asset revisions and updater baseline stay canonical', async ({ page }) => {
     const requests=[];
     page.on('request', req => { if (req.url().includes('/equipment/assets/') && req.url().includes('?v=')) requests.push(req.url()); });
