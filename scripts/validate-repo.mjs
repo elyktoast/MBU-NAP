@@ -32,7 +32,7 @@ function validateQuestions(label,qs,expected){
   const ids=new Set();
   qs.forEach((q,i)=>{
     const id=q?.id ?? i+1, opts=q?.options ?? q?.c, ans=q?.answer ?? q?.correct ?? q?.a;
-    if(ids.has(String(id))) fail(label+': duplicate question id '+id); ids.add(String(id));
+    const identity=String(q?.set??q?.setn??'')+'::'+String(id); if(ids.has(identity)) fail(label+': duplicate question id '+id+' within set '+String(q?.set??q?.setn??'')); ids.add(identity);
     if(!String(q?.stem ?? q?.q ?? '').trim()) fail(label+': question '+id+' has no stem');
     if(!Array.isArray(opts)||opts.length<2) fail(label+': question '+id+' has fewer than 2 options');
     const aa=Array.isArray(ans)?ans:[ans];
@@ -62,49 +62,34 @@ function checkBank1(){
 }
 function checkBank2(){
   canonicalPayload('equipment/exam-1/data/bank2.json','Quiz Bank 2 canonical data',500,{1:100,2:100,3:100,4:100,5:100});
-  const src=read('equipment/exam-1/quiz-bank-2.html');
-  if(src.includes('const SETS')){const sets=parseArray(src,'const SETS');if(!Array.isArray(sets)||sets.length!==5)fail('Quiz Bank 2: expected 5 legacy practice sets')}
+  const page=read('equipment/exam-1/quiz-bank-2.html');
+  if(!page.includes("dataUrl:'data/bank2.json'")||!page.includes("legacyFormat:'bank2'")||!page.includes('../assets/quiz-engine.js'))fail('Bank 2: canonical data/shared engine wiring is missing');
 }
 function checkBank3(){
-  canonicalPayload('equipment/exam-1/data/bank3.json','Quiz Bank 3 canonical data',500,{1:100,2:100,3:100,4:100,5:100});
+  const qs=canonicalPayload('equipment/exam-1/data/bank3.json','Quiz Bank 3 canonical data',500,{1:100,2:100,3:100,4:100,5:100});
+  const page=read('equipment/exam-1/quiz-bank-3.html');
+  if(!page.includes("dataUrl:'data/bank3.json'")||!page.includes("legacyFormat:'bank3'")||!page.includes("imageSource:'data/bank3-images.js'")||!page.includes('../assets/quiz-engine.js'))fail('Bank 3: canonical data/shared engine wiring is missing');
+  const images=read('equipment/exam-1/data/bank3-images.js');for(const q of qs)if(q.imageId&&!images.includes('"'+q.imageId+'"'))fail('Bank 3: missing image asset '+q.imageId);
 }
 function checkCombined(){
   const qs=canonicalPayload('equipment/exam-1/data/combined.json','Combined',150,{1:50,2:50,3:50});
   const images=read('equipment/exam-1/combined-images.js');for(const q of qs)if(q.imageId&&!images.includes('"'+q.imageId+'"'))fail('Combined: missing image asset '+q.imageId);
   const page=read('equipment/exam-1/combined.html');
-  for(const bit of ['50 questions','Review Missed','Missed Questions Review','Automatically built from every question missed in Practice Sets 1–3.'])if(!page.includes(bit))fail('Combined dashboard: missing Bank 1 parity element '+bit);
-  if(/function renderDashboard[\s\S]*onclick="resetSet\(/.test(page))fail('Combined dashboard: per-set Reset button remains instead of Bank 1 Review Missed');
+  if(!page.includes("dataUrl:'data/combined.json'")||!page.includes("legacyFormat:'combined'")||!page.includes("imageSource:'combined-images.js'")||!page.includes('../assets/quiz-engine.js'))fail('Combined: canonical data/shared engine wiring is missing');
 }
 function checkHazardsCanonical(){
   canonicalPayload('equipment/exam-1/data/hazards.json','Workstation Hazards',350,{1:100,2:100,3:100,4:50});
 }
 function checkCanonicalNewQuizBanks(){
-  const index=read('equipment/exam-1/index.html');
-  const legacy=new Set(['quiz-bank-1.html','quiz-bank-2.html','quiz-bank-3.html']);
-  const excluded=new Set(['studio.html','hazards.html']);
-  const linked=[...index.matchAll(/href=["']([^"'?#]+\.html)(?:[?#][^"']*)?["']/g)].map(m=>m[1]);
-  const candidates=[...new Set(linked.filter(h=>!legacy.has(h)&&!excluded.has(h)))];
-  const required=[
-    'id="dashboard"','id="cards"','id="overall"','id="quiz"','id="set-badge"',
-    'id="mbuFlagBtn"','>Report</button>','>Navigator</button>','mbu-return',
-    'id="completed"','id="total"','id="score"','id="missed"',
-    'mbu-crossout-hint','id="multi-submit-row"','id="submit-multi"',
-    'id="explain"','id="citation"','id="prev"','id="next"',
-    'Review Missed','Missed Questions Review',
-    '../assets/bank1-quiz-ui.css','../assets/site-nav.js','../assets/studio-sync.js',
-    '../assets/navigator.js','../assets/calculator.js','../assets/auto-update.js',
-    'MBUNavigator.button','MBUCalculator?.besideFlag()'
-  ];
-  for(const href of candidates){
-    const p='equipment/exam-1/'+href;
-    if(!exists(p)){fail('Canonical Bank 1 standard: linked quiz bank is missing '+p);continue}
+  const manifest=JSON.parse(read('equipment/exam-1/banks.json')),engine=read('equipment/assets/quiz-engine.js');
+  const canonical=manifest.banks.filter(b=>b.engine==='canonical');
+  for(const bank of canonical){
+    const p='equipment/exam-1/'+bank.page;if(!exists(p)){fail('Canonical bank page missing '+p);continue}
     const page=read(p);
-    for(const bit of required)if(!page.includes(bit))fail(href+': new quiz bank does not match Bank 1 standard; missing '+bit);
-    if(/function renderDashboard[\s\S]*onclick="resetSet\(/.test(page))fail(href+': dashboard uses Reset instead of Bank 1 Review Missed pattern');
-    if(!page.includes("if(q.answer.includes(i))")&&!page.includes("if(ans.includes(i))"))fail(href+': graded answers are not visibly keyed like Bank 1');
-    if(!page.includes("else if(selected.has(i))")&&!page.includes("else if(selected.includes(i))"))fail(href+': selected wrong answers do not use Bank 1 feedback behavior');
-    if(!page.includes("else if(d>0)goDashboard()"))fail(href+': final Next does not return to dashboard like Bank 1');
+    for(const bit of ['id="dashboard"','id="cards"','id="overall"','id="quiz"','id="set-badge"','id="mbuFlagBtn"','>Report</button>','>Navigator</button>','mbu-return','id="completed"','id="total"','id="score"','id="missed"','mbu-crossout-hint','id="multi-submit-row"','id="submit-multi"','id="explain"','id="citation"','id="prev"','id="next"','../assets/bank1-quiz-ui.css','../assets/studio-sync.js','../assets/navigator.js','../assets/calculator.js','../assets/quiz-engine.js','../assets/auto-update.js'])if(!page.includes(bit))fail(bank.page+': canonical Bank 1 shell is missing '+bit);
+    if(!page.includes("dataUrl:'"+bank.data+"'"))fail(bank.page+': config dataUrl does not match banks.json');
   }
+  for(const bit of ['MBUNavigator.button','MBUCalculator?.besideFlag()',"if(q.answer.includes(i))b.classList.add('correct');else if(selected.includes(i))b.classList.add('incorrect')',"else if(d>0)goDashboard()","Submit Selections (","if(next===lastSaved)return"])if(!engine.includes(bit))fail('Canonical quiz engine: missing Bank 1 behavior '+bit);
 }
 function checkCopies(){
   for(const p of ['equipment/exam-1/index.html','equipment/exam-1/quiz-bank-3.html']){
@@ -144,10 +129,9 @@ function checkStudio(){
   if(/const\s+im\s*=|const\s+IMGS\s*=|JSON\.parse\(im/.test(src))fail('Studio: embedded image payload is still eagerly parsed');
 }
 function checkRuntimeSafety(){
-  const bank3=read('equipment/exam-1/quiz-bank-3.html');
-  if(!bank3.includes('const BANK=')||!bank3.includes('const TOTAL='))fail('Bank 3: runtime bank structures missing');
-  if(bank3.includes('const MBU_STUDIO_STORE=')||bank3.includes('function allMissedCount()'))fail('Bank 3: dead legacy runtime helpers remain');
-  if(!bank3.includes('let h=`<div class="panel"><div class="header">')||!bank3.includes('id="submitRow"')||!bank3.includes('id="fb" class="explain"'))fail('Bank 3: active quiz is not using canonical panel structure');
+  const engine=read('equipment/assets/quiz-engine.js');
+  for(const bit of ['function migrateLegacyState','function loadDB()','function renderDashboard()','function loadQuestion()','function submitAnswer()','function grade()','function persistPosition()','function nav(d)','function resetCurrent()','initializeQuizBank()'])if(!engine.includes(bit))fail('Canonical quiz engine: runtime contract missing '+bit);
+  if(!engine.includes("kind==='bank2'")||!engine.includes("kind==='bank3'")||!engine.includes("kind==='combined'"))fail('Canonical quiz engine: legacy progress migration adapters are incomplete');
   if(/document\.getElementById\(["'][^"']+["']\)\.style/.test(read('equipment/assets/auto-update.js')))fail('Updater: unsafe required DOM access');
   const updater=read('equipment/assets/auto-update.js');
   if(!updater.includes("reload.searchParams.get('_mbu_reload') === latest"))fail('Updater: no duplicate-build reload guard');
