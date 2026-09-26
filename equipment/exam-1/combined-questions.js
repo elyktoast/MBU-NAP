@@ -997,4 +997,3038 @@ window.QUIZ_DATA = {
     "Anesthesia Workstation Hazards & Safety (McPherson): slide 21 (PDF p. 11)"
    ],
    "concept": "Mapleson A with controlled ventilation",
+   "image_id": null  },
+  {
+   "id": "NI31",
+   "num": 38,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "A patient with an implanted pacemaker needs a procedure with electrocautery. Which ESU concern does the lecture specifically name?",
+   "c": [
+    "Ventricular fibrillation from 60 Hz leakage",
+    "Interference with implanted cardiac pacemakers",
+    "Explosion from volatile agents",
+    "Grounding of OR power"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "The lecture lists implanted pacemakers among devices affected by ESU interference, along with ECG, cardiac output computers, and pulse oximeters.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 31 (PDF p. 16)"
+   ],
+   "concept": "ESU and pacemakers",
    "image_id": null
+  },
+  {
+   "id": "NA15",
+   "num": 39,
+   "lec": "Airway",
+   "lk": "air",
+   "type": "single",
+   "n": 1,
+   "q": "An edentulous patient is hard to mask ventilate because the cheeks collapse and air leaks around the mask. What helps most?",
+   "c": [
+    "Insert an oral airway to restore the seal",
+    "Use a smaller mask pressed harder",
+    "Switch to an NPA only",
+    "Increase fresh gas flow"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "The lecture notes an OPA improves bag-mask seal in edentulous patients, restoring structure and lifting the tongue. More flow doesn't fix a leaking seal.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Airway Equipment (McPherson): slides 4, 5 (PDF p. 4, 5)"
+   ],
+   "concept": "Edentulous mask seal",
+   "image_id": null
+  },
+  {
+   "id": "NV09",
+   "num": 40,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "Flows are O2 1.5 L/min, N2O 3 L/min, and air 3 L/min. What is the delivered FiO2?",
+   "c": [
+    "About 20%",
+    "About 28%",
+    "About 33%",
+    "About 40%"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "O2 delivered = 1.5 + 0.21 × 3 = 2.13 L of 7.5 L total ≈ 28%. The 33% value is O2 as a share of O2 + N2O only, which is what the proportioner checks.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 45 (PDF p. 23)"
+   ],
+   "concept": "FiO2 drill with air",
+   "image_id": null
+  },
+  {
+   "id": "NM02",
+   "num": 41,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "multi",
+   "n": 3,
+   "q": "Which statements about the O2 flush are correct? Select 3.",
+   "c": [
+    "It adds anesthetic agent from the vaporizer",
+    "It delivers about 35-75 L/min",
+    "It bypasses the flowmeters and vaporizers",
+    "It works with both pipeline and cylinder unavailable",
+    "It operates at about 40-50 psi",
+    "It passes through the second-stage regulator to the flowmeters"
+   ],
+   "a": [
+    1,
+    2,
+    4
+   ],
+   "exp": "The flush sends 35-75 L/min at 40-50 psi from the intermediate system directly to the CGO, bypassing flowmeters and vaporizers (so it dilutes agent). It needs an O2 source: pipeline or first-stage regulator.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 36, 37 (PDF p. 18, 19)"
+   ],
+   "concept": "Flush facts",
+   "image_id": null
+  },
+  {
+   "id": "NV28",
+   "num": 42,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "Where should the ESU return pad go for a left knee arthroplasty?",
+   "c": [
+    "On the left thigh, close to the site",
+    "On the chest, near the ECG pads",
+    "On the right shoulder, far from the site",
+    "On the right calf"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "Place the return plate as close as possible to the operative site (with good skin contact) and ECG pads as far away as feasible, keeping the current path short.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 31 (PDF p. 16)"
+   ],
+   "concept": "Pad for knee surgery",
+   "image_id": null
+  },
+  {
+   "id": "NG17",
+   "num": 43,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "The O2 flush delivers 35-75 L/min. About how much gas enters the circuit during a 1-second press, and why does that matter during inspiration?",
+   "c": [
+    "About 0.6-1.25 L, more than a typical tidal volume, risking barotrauma",
+    "About 35-75 mL, negligible",
+    "About 6-12 L, enough to rupture the reservoir bag",
+    "About 0.1 L, only enough to dilute agent"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "35-75 L/min ÷ 60 ≈ 0.6-1.25 L per second. Delivered on top of a 500 mL breath, that's a large volume at 40-50 psi source pressure, the basis of the flush's barotrauma risk.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 36, 37 (PDF p. 18, 19)"
+   ],
+   "concept": "Flush volume per second",
+   "image_id": null
+  },
+  {
+   "id": "NG11",
+   "num": 44,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "Under which condition can O2 be kept as a liquid in a bulk storage tank?",
+   "c": [
+    "Only at exactly −183 °C and 1 atm",
+    "At any temperature below 0 °C",
+    "At room temperature under enough pressure",
+    "Below −118.6 °C with pressure applied"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "−118.6 °C is O2's critical temperature, the highest temperature at which pressure can liquefy it. Room temperature is far above it, so no pressure keeps O2 liquid there. −183 °C is the boiling point at 1 atm, not a requirement for storage under pressure.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 11 (PDF p. 6)"
+   ],
+   "concept": "Liquid O2 storage condition",
+   "image_id": null
+  },
+  {
+   "id": "NG22",
+   "num": 45,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "multi",
+   "n": 3,
+   "q": "Which conditions worsen the vaporizer pumping effect? Select 3.",
+   "c": [
+    "A completely full vaporizer",
+    "An outlet check valve downstream",
+    "High fresh gas flow",
+    "Low fresh gas flow",
+    "Frequent O2 flush use",
+    "Positive pressure ventilation"
+   ],
+   "a": [
+    3,
+    4,
+    5
+   ],
+   "exp": "Pumping comes from retrograde pressure: PPV and O2 flush, worse at low FGF and low liquid levels. An outlet check valve minimizes it, and high FGF and full vaporizers lessen it.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 72 (PDF p. 36)"
+   ],
+   "concept": "Pumping effect conditions",
+   "image_id": null
+  },
+  {
+   "id": "NI14",
+   "num": 46,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "During MAC for a scalp procedure, O2 runs at 4 L/min by cannula under a tented drape near the cautery site. Which prevention step addresses the specific hazard?",
+   "c": [
+    "Add N2O to lower the fraction of O2 under the drape",
+    "Tuck the drape tightly around the head and face",
+    "Keep O2 from pooling under drapes; use the lowest O2 flow tolerated",
+    "Increase O2 flow to 10 L/min to dilute any vapors"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "O2 trapped under drapes near an ignition source is the classic MAC fire setup. Configure drapes to avoid oxidizer buildup and keep O2 as low as clinically possible; N2O is also an oxidizer.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 35 (PDF p. 18)"
+   ],
+   "concept": "Oxidizer pooling under drapes",
+   "image_id": null
+  },
+  {
+   "id": "NG06",
+   "num": 47,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "If the numbered component 3 failed, what function would be lost?",
+   "c": [
+    "Matching vapor delivery to fresh gas back pressure",
+    "Heating the liquid desflurane to 39 °C in the sump",
+    "Letting the provider select the output concentration",
+    "Separating the diluent path from the outflow port"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "Component 3 is the differential pressure transducer. It compares the vapor and diluent circuits and adjusts valve 1 so vapor delivery tracks fresh gas flow. The heater warms the sump, and the dial (valve 2) sets concentration.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 62, 63 (PDF p. 31, 32)"
+   ],
+   "concept": "Tec 6 diagram: transducer",
+   "image_id": "img-gas-tec6-schematic"
+  },
+  {
+   "id": "NC06",
+   "num": 48,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "multi",
+   "n": 2,
+   "q": "Which agents produce essentially NO carbon monoxide with desiccated absorbent? Select 2.",
+   "c": [
+    "Halothane",
+    "Desflurane",
+    "Enflurane",
+    "Sevoflurane",
+    "Isoflurane",
+    "All volatile agents equally"
+   ],
+   "a": [
+    0,
+    3
+   ],
+   "exp": "CO comes from agents with a difluoromethyl (-O-CHF2) group: des > enflurane > iso. Sevoflurane and halothane lack it (sevo's concern is compound A).",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slide 7 (PDF p. 4)"
+   ],
+   "concept": "Agents without CO",
+   "image_id": null
+  },
+  {
+   "id": "NG20",
+   "num": 49,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "A 2-hour case runs isoflurane at 1.5% on 4 L/min. What volume of liquid iso is consumed?",
+   "c": [
+    "About 9 mL",
+    "About 18 mL",
+    "About 36 mL",
+    "About 72 mL"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "mL/hr = vol% × FGF × 3 = 1.5 × 4 × 3 = 18 mL/hr. Two hours: 36 mL.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 52 (PDF p. 26)"
+   ],
+   "concept": "Iso consumption",
+   "image_id": null
+  },
+  {
+   "id": "NA13",
+   "num": 50,
+   "lec": "Airway",
+   "lk": "air",
+   "type": "single",
+   "n": 1,
+   "q": "Which landmark sequence locates the cricothyroid membrane for emergency access?",
+   "c": [
+    "From the sternal notch up about two tracheal rings",
+    "From the hyoid bone down to the first soft gap below it",
+    "From the thyroid prominence down to the gap just above the cricoid",
+    "From the cricoid ring down to the next soft gap"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "The CTM spans from the inferior border of the thyroid cartilage to the superior edge of the cricoid. Moving down from the thyroid prominence, it's the gap just above the cricoid; below the cricoid are tracheal rings.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Airway Equipment (McPherson): slide 15 (PDF p. 15)"
+   ],
+   "concept": "Finding the CTM",
+   "image_id": null
+  },
+  {
+   "id": "NI21",
+   "num": 51,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "During thyroidectomy with the drapes over the face, the exhaled volume suddenly falls and pressures drop. What is the FIRST check?",
+   "c": [
+    "The ETT-circuit connection under the drapes",
+    "The O2 cylinder pressure on the machine",
+    "The scavenger vacuum flow setting",
+    "The vaporizer filler cap on the manifold"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "Leaks and disconnections are especially common in neck surgery when the drape covers the face and the tube connection comes loose. Low pressure and low volume point to a disconnection.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 23 (PDF p. 12)"
+   ],
+   "concept": "Disconnection under drapes",
+   "image_id": null
+  },
+  {
+   "id": "NG34",
+   "num": 52,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "multi",
+   "n": 2,
+   "q": "Which flowmeter design features protect specifically against turning the wrong knob? Select 2.",
+   "c": [
+    "O2 positioned last in the sequence",
+    "Solenoid-controlled orifices",
+    "A larger, fluted O2 knob",
+    "Separate low- and high-flow tubes",
+    "Green color coding of the O2 knob",
+    "Tapered glass tubes"
+   ],
+   "a": [
+    2,
+    4
+   ],
+   "exp": "Color and touch coding (a larger, fluted, green O2 knob) give visual and tactile checks against turning the wrong knob. O2-last placement protects against leaks, not knob errors.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 40, 41 (PDF p. 20, 21)"
+   ],
+   "concept": "Wrong-knob safeguards",
+   "image_id": null
+  },
+  {
+   "id": "NM06",
+   "num": 53,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "multi",
+   "n": 3,
+   "q": "Which conditions promote compound A formation? Select 3.",
+   "c": [
+    "Desflurane instead of sevoflurane",
+    "Warm absorbent",
+    "High fresh gas flow",
+    "Dry absorbent",
+    "Low fresh gas flow",
+    "Moist absorbent"
+   ],
+   "a": [
+    1,
+    3,
+    4
+   ],
+   "exp": "Compound A comes from sevoflurane and rises with warmer, drier absorbent, higher agent concentration, and lower FGF. Moisture promotes its breakdown, and desflurane forms CO, not compound A.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slide 6 (PDF p. 3)"
+   ],
+   "concept": "Compound A promoters",
+   "image_id": null
+  },
+  {
+   "id": "NG13",
+   "num": 54,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "Why is only one washer used between the cylinder valve and the hanger yoke?",
+   "c": [
+    "Two washers overheat as gas rushes through the valve",
+    "Washers are single-use items for infection control reasons",
+    "Extra washers can keep the pins from engaging and cause leaks",
+    "A second washer blocks the yoke check valve from opening"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "PISS depends on the pins seating fully in the valve holes. Extra washers add thickness, so pins may not engage (defeating PISS) and the seal can leak. One washer only.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 18, 19 (PDF p. 9, 10)"
+   ],
+   "concept": "Single washer rule",
+   "image_id": null
+  },
+  {
+   "id": "NG10",
+   "num": 55,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "A lot of medical O2 is found to contain impurities and must be pulled from use nationwide. Which agency handles this?",
+   "c": [
+    "FDA",
+    "OSHA",
+    "DOT",
+    "ASTM"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "FDA oversees medical gas purity and recalls (and anesthesia checkout). DOT covers cylinder manufacture, filling, labeling, and transport; OSHA covers worker exposure; ASTM writes machine component standards.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 4 (PDF p. 2)"
+   ],
+   "concept": "Agency for gas recalls",
+   "image_id": null
+  },
+  {
+   "id": "NC15",
+   "num": 56,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "Why does the lecture recommend avoiding N2O as a carrier gas?",
+   "c": [
+    "It shortens the life of the CO2 absorbent canister",
+    "It increases compound A formation in the absorber",
+    "It raises the NIOSH halogenated exposure limit",
+    "It lasts up to 114 years, and carrier use means large volumes"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "N2O has the longest atmospheric life (up to 114 years), and as a carrier it's delivered in large volumes. The lecture recommends avoiding it as a carrier and reserving it for cases where it reduces morbidity.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slides 22, 23 (PDF p. 11, 12)"
+   ],
+   "concept": "N2O carrier impact",
+   "image_id": null
+  },
+  {
+   "id": "NG30",
+   "num": 57,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "What component sits immediately downstream of each cylinder hanger yoke?",
+   "c": [
+    "The second-stage O2 pressure regulator",
+    "The fail-safe valve in the N2O line",
+    "The O2 flowmeter and needle valve",
+    "The first-stage (cylinder) pressure regulator"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "Immediately distal to the hanger yoke is the regulator that drops variable cylinder pressure to about 45 psi before gas enters the intermediate system.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 9, 24 (PDF p. 5, 12)",
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 9 (PDF p. 5)"
+   ],
+   "concept": "Downstream of the yoke",
+   "image_id": null
+  },
+  {
+   "id": "NG03",
+   "num": 58,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "Which numbered path carries gas that is fully saturated with anesthetic vapor?",
+   "c": [
+    "Path 3",
+    "Path 1",
+    "Path 2",
+    "Path 4"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "Path 3 is gas leaving the vaporizing chamber, saturated with vapor (sevo about 21% at 20 °C). It then mixes with bypass gas (path 1), which is never exposed to agent, to produce the dialed concentration at the outflow (path 4).",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 53, 57 (PDF p. 27, 29)"
+   ],
+   "concept": "Bypass diagram: saturated gas",
+   "image_id": "img-gas-variable-bypass"
+  },
+  {
+   "id": "NV18",
+   "num": 59,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "multi",
+   "n": 3,
+   "q": "Which components operate at just above atmospheric pressure? Select 3.",
+   "c": [
+    "Fail-safe valve",
+    "Second-stage regulators",
+    "Pipeline inlet check valves",
+    "Vaporizers",
+    "Common gas outlet",
+    "Flowmeters"
+   ],
+   "a": [
+    3,
+    4,
+    5
+   ],
+   "exp": "Low pressure: downstream of the flow control valves (flowmeters, vaporizers, check valve, CGO), slightly above atmospheric. Second-stage regulators, pipeline inlets, and the fail-safe are intermediate.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 39, 76 (PDF p. 20, 38)"
+   ],
+   "concept": "Low-pressure components",
+   "image_id": null
+  },
+  {
+   "id": "NV23",
+   "num": 60,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "multi",
+   "n": 3,
+   "q": "Which statements about the common gas outlet are correct? Select 3.",
+   "c": [
+    "It has a 22 mm external diameter",
+    "It uses a 30 mm conical fitting",
+    "It uses a 19 mm conical fitting",
+    "Two outlets are required for backup",
+    "It has a 15 mm internal diameter",
+    "A machine may have only one"
+   ],
+   "a": [
+    0,
+    4,
+    5
+   ],
+   "exp": "The standard requires one CGO with a 15 mm ID (female) and 22 mm OD (male). 19 and 30 mm conical fittings are reserved for scavenging.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 15 (PDF p. 8)"
+   ],
+   "concept": "CGO standard",
+   "image_id": null
+  },
+  {
+   "id": "NG05",
+   "num": 61,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "Which numbered component creates back pressure in proportion to fresh gas flow, which the vaporizer uses to match vapor delivery?",
+   "c": [
+    "Component 1",
+    "Component 2",
+    "Component 3",
+    "Component 4"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "Component 4 is the fixed resistance (gas circuit restrictor) in the diluent flow. Higher FGF creates higher back pressure there; the transducer (3) senses it and opens valve 1 so vapor pressure matches, keeping the dialed concentration.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 62, 63 (PDF p. 31, 32)"
+   ],
+   "concept": "Tec 6 diagram: fixed resistance",
+   "image_id": "img-gas-tec6-schematic"
+  },
+  {
+   "id": "NG19",
+   "num": 62,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "With a splitting ratio of about 25:1 at 2 L/min total fresh gas, roughly how much fresh gas enters the sevoflurane chamber?",
+   "c": [
+    "About 8 mL/min",
+    "About 77 mL/min",
+    "About 500 mL/min",
+    "About 1,920 mL/min"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "A 25:1 ratio splits the flow into 26 parts: 2,000 ÷ 26 ≈ 77 mL/min to the chamber and about 1,920 mL/min through the bypass. That's the lecture's 1% sevo example.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 55 (PDF p. 28)"
+   ],
+   "concept": "Chamber flow from splitting ratio",
+   "image_id": null
+  },
+  {
+   "id": "NI09",
+   "num": 63,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "A machine has only an Aladin cassette and a Tec 6 mounted. After the battery is exhausted, what inhalational options remain?",
+   "c": [
+    "None; both need power, so switch to TIVA",
+    "Either, if fresh gas flow is increased",
+    "The Aladin, because cassettes are mechanical",
+    "The Tec 6, because its sump stays pressurized"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "Desflurane vaporizers (Tec 6, D-Vapor) and electronic vaporizers (Aladin) can't deliver agent without electrical power. Only conventional mechanical vaporizers work on emergency O2.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 32 (PDF p. 16)",
+    "Medical Gas Systems in Anesthesia (Elmore): slide 66 (PDF p. 33)"
+   ],
+   "concept": "No-power vaporizer options",
+   "image_id": null
+  },
+  {
+   "id": "NG27",
+   "num": 64,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "The O2 pipeline is contaminated with nitrogen, and a resident presses the O2 flush to 'give more oxygen.' What happens?",
+   "c": [
+    "Pure O2 is delivered, since the flush bypasses the pipeline",
+    "The flush switches to the cylinder automatically",
+    "More contaminated gas is delivered, since the flush draws from the pipeline",
+    "The fail-safe stops the flush"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "The flush takes O2 from the pipeline (or cylinder regulator) and bypasses only the flowmeters and vaporizers. With the pipeline preferred and contaminated, the flush delivers contaminated gas at high flow. Disconnect the pipeline and open the cylinder.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 36, 46 (PDF p. 18, 23)"
+   ],
+   "concept": "Flush with contaminated pipeline",
+   "image_id": null
+  },
+  {
+   "id": "NI36",
+   "num": 65,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "Monday's first case is a long, low-flow sevoflurane anesthetic, and the canister feels warm and dry. What is the concern and best response?",
+   "c": [
+    "Compound A; replace the absorbent",
+    "Nothing; sevo is safe with dry absorbent",
+    "Carbon monoxide; continue with sevo",
+    "Carbon monoxide; switch to desflurane"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "Sevo with warm, dry absorbent at low flow promotes compound A. Desiccated absorbent shouldn't be used with either agent, and des would add CO risk.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slides 6, 7 (PDF p. 3, 4)"
+   ],
+   "concept": "Desiccated absorbent with sevo",
+   "image_id": null
+  },
+  {
+   "id": "NA03",
+   "num": 66,
+   "lec": "Airway",
+   "lk": "air",
+   "type": "single",
+   "n": 1,
+   "q": "Regurgitated gastric fluid would first enter the LMA Supreme's drain channel at which numbered point?",
+   "c": [
+    "Point 2",
+    "Point 4",
+    "Point 5",
+    "Point 6"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "Point 6 is the drain tube opening at the cuff tip, which sits at the upper esophagus. The channel runs up to the drain tube (1), which also allows gastric tube passage. Point 2 is the airway tube with its 15 mm connector.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Airway Equipment (McPherson): slide 14 (PDF p. 14)"
+   ],
+   "concept": "LMA diagram: drain opening",
+   "image_id": "img-air-lma-supreme"
+  },
+  {
+   "id": "NA07",
+   "num": 67,
+   "lec": "Airway",
+   "lk": "air",
+   "type": "single",
+   "n": 1,
+   "q": "A Macintosh blade is placed correctly in the vallecula, but the epiglottis doesn't lift. Which structure isn't being tensioned effectively?",
+   "c": [
+    "The glossoepiglottic ligament",
+    "The aryepiglottic folds",
+    "The cricothyroid membrane",
+    "The thyrohyoid membrane"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "The Mac works indirectly: pressure in the vallecula tensions the glossoepiglottic ligament, which lifts the epiglottis. If that fails (e.g., a long floppy epiglottis), a Miller can lift the epiglottis directly.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Airway Equipment (McPherson): slide 11 (PDF p. 11)"
+   ],
+   "concept": "Mac failure mechanism",
+   "image_id": null
+  },
+  {
+   "id": "NC08",
+   "num": 68,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "An isoflurane case also uses N2O. Sampling finds iso 0.4 ppm and N2O 22 ppm TWA. Are these compliant with NIOSH?",
+   "c": [
+    "N2O exceeds its limit",
+    "Both are within limits",
+    "Both exceed their limits",
+    "Iso exceeds its combined-use limit"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "With N2O in use, the halogenated limit is 0.5 ppm, and N2O's limit is 25 ppm TWA. 0.4 and 22 are both under.",
+   "disc": null,
+   "supp": "The 0.5 ppm combined-use limit comes from NIOSH's 1977 recommendation; slide 10 lists only 2 ppm and 25 ppm.",
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slide 10 (PDF p. 5)"
+   ],
+   "concept": "NIOSH combined limits: within",
+   "image_id": null
+  },
+  {
+   "id": "NC02",
+   "num": 69,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "During spontaneous or manually assisted ventilation, which lettered valve sends excess gas to the scavenger?",
+   "c": [
+    "Valve H",
+    "Valve K",
+    "Valve G",
+    "Valve A"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "H is the APL (pop-off) valve, the exit for waste gas during spontaneous or manual ventilation. K is used during mechanical ventilation, and G is the manual/automatic selector.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slide 19 (PDF p. 10)"
+   ],
+   "concept": "Diagram: APL valve",
+   "image_id": "img-co2-scavenging-circuit"
+  },
+  {
+   "id": "NI05",
+   "num": 70,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "A new O2 cylinder hisses loudly when opened on the yoke. What's the most likely cause?",
+   "c": [
+    "A cracked flowmeter tube",
+    "Missing or damaged washer at the yoke",
+    "A failed first-stage regulator",
+    "A stuck pipeline check valve"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "The plastic washer and T-handle seal the cylinder to the yoke. A missing, damaged, or doubled washer leaks at the connection. Close the valve and replace the washer (one only).",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 18, 19 (PDF p. 9, 10)",
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 7 (PDF p. 4)"
+   ],
+   "concept": "Hissing at the yoke",
+   "image_id": null
+  },
+  {
+   "id": "NC17",
+   "num": 71,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "After the last case, a tech flushes the circuit with O2 and squeezes the bag into the room to 'clear it out.' What's the problem?",
+   "c": [
+    "Nothing, since the patient has already left",
+    "It desiccates the absorbent before the next morning",
+    "It damages the APL valve's spring mechanism",
+    "Anesthetic left in the circuit is released into the room"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "Flushing or emptying the breathing circuit into room air spills whatever agent remains, a technique error on the lecture's list. Separately, leaving high flows running overnight desiccates the absorbent.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slide 14 (PDF p. 7)"
+   ],
+   "concept": "Flushing the circuit into the room",
+   "image_id": null
+  },
+  {
+   "id": "NM03",
+   "num": 72,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "multi",
+   "n": 2,
+   "q": "Which statements about grounding are correct? Select 2.",
+   "c": [
+    "Ungrounded OR power increases macroshock risk",
+    "Home power is ungrounded",
+    "OR equipment is grounded",
+    "OR power is ungrounded (isolated)",
+    "OR equipment is ungrounded",
+    "Home equipment must always be grounded"
+   ],
+   "a": [
+    2,
+    3
+   ],
+   "exp": "In the OR, power is usually ungrounded, isolating current from ground potential for added macroshock protection, while equipment is grounded. At home, power is grounded and equipment may or may not be.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slides 29, 30 (PDF p. 15)"
+   ],
+   "concept": "Grounding facts",
+   "image_id": null
+  },
+  {
+   "id": "NG18",
+   "num": 73,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "Pipeline O2 has failed, but the O2 cylinder was opened promptly. Does the O2 flush work?",
+   "c": [
+    "Yes, but only at half flow",
+    "No; the flush only works from the pipeline",
+    "No; the fail-safe blocks the flush",
+    "Yes; it draws from the first-stage regulator"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "The flush opens O2 from the pipeline or the first-stage (cylinder) regulator directly to the CGO. With the cylinder open, it has a source. With both pipeline and cylinder unavailable, it gives nothing.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 24, 36 (PDF p. 12, 18)"
+   ],
+   "concept": "Flush on cylinder supply",
+   "image_id": null
+  },
+  {
+   "id": "NI30",
+   "num": 74,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "The ESU return pad is placed over a hairy, bony area and partly lifts during the case. What risk does this create?",
+   "c": [
+    "A burn under the pad from current concentrating on a small area",
+    "Loss of ECG signal caused by the lifted pad",
+    "The ESU stops working with no warning at all",
+    "Ventricular fibrillation from the ESU current"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "The pad works by spreading current over a large area. Poor contact shrinks that area and concentrates current, which burns. The ESU's radiofrequency current doesn't cause V-fib.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 31 (PDF p. 16)"
+   ],
+   "concept": "Pad contact and burns",
+   "image_id": null
+  },
+  {
+   "id": "NV06",
+   "num": 75,
+   "lec": "Medical gases",
+   "lk": "gas",   "type": "single",
+   "n": 1,
+   "q": "Des at 8% on 1.5 L/min for a 90-minute case consumes about how much liquid?",
+   "c": [
+    "About 18 mL",
+    "About 36 mL",
+    "About 54 mL",
+    "About 108 mL"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "8 × 1.5 × 3 = 36 mL/hr; × 1.5 hours = 54 mL.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 52 (PDF p. 26)"
+   ],
+   "concept": "Des consumption drill",
+   "image_id": null
+  },
+  {
+   "id": "NI11",
+   "num": 76,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "A machine uses electronically controlled flowmeters set through a computer interface. Why does the lecture's power-failure plan matter especially here?",
+   "c": [
+    "Electronic flow control needs power; only emergency O2 remains after",
+    "Electronic flowmeters work more accurately on battery power",
+    "Mechanical vaporizers depend on the electronic flow controller",
+    "The proportioning system switches to mechanical on battery"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "Electronic flow controllers use solenoid-controlled orifices set through the workstation computer. Once the battery is exhausted, only basic functions like emergency O2 remain, so plan alternatives early.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slides 12, 32 (PDF p. 6, 16)",
+    "Medical Gas Systems in Anesthesia (Elmore): slide 35 (PDF p. 18)"
+   ],
+   "concept": "Electronic flow control in outages",
+   "image_id": null
+  },
+  {
+   "id": "NI02",
+   "num": 77,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "A zone valve closure leaves you on a cylinder reading 500 psig (about 174 L). The ventilator's driving gas is O2, and total O2 use (fresh gas plus drive gas) is about 8 L/min. About how long do you have?",
+   "c": [
+    "About 22 minutes",
+    "About 45 minutes",
+    "About 87 minutes",
+    "About 3 hours"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "174 L ÷ 8 L/min ≈ 22 minutes. The roadmap shows the ventilator driving gas taken from the O2 supply, so mechanical ventilation consumes cylinder O2 on top of fresh gas flow.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 5, 13 (PDF p. 3, 7)",
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 4 (PDF p. 2)"
+   ],
+   "concept": "Cylinder time with drive gas",
+   "image_id": null
+  },
+  {
+   "id": "NV14",
+   "num": 78,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "A device delivers 1,000 W for 0.2 seconds. How much energy is that?",
+   "c": [
+    "0.2 J",
+    "20 J",
+    "200 J",
+    "5,000 J"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "Joules = watts × seconds = 1,000 × 0.2 = 200 J.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 26 (PDF p. 13)"
+   ],
+   "concept": "Energy drill",
+   "image_id": null
+  },
+  {
+   "id": "NI24",
+   "num": 79,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "In a small infant, an HME, a long elbow, and an extension are added between the Y-piece and the ETT. ETCO2 climbs despite unchanged settings. Why?",
+   "c": [
+    "Added apparatus dead space causes rebreathing",
+    "The APL is closed",
+    "The inspiratory valve is incompetent",
+    "The absorber is exhausted"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "Increased apparatus dead space is a delivery-system hypercarbia hazard. In a small patient, a few added connectors can be a large fraction of tidal volume.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 20 (PDF p. 10)"
+   ],
+   "concept": "Dead space in infants",
+   "image_id": null
+  },
+  {
+   "id": "NV26",
+   "num": 80,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "The O2 pipeline reads 48 psig and the O2 cylinder is closed. Which source is supplying the machine?",
+   "c": [
+    "The cylinder",
+    "The pipeline",
+    "Neither; the fail-safe has closed",
+    "Both equally"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "With the cylinder closed, the pipeline is the only source, and 48 psig is well above the fail-safe range. It's slightly below the usual 50-55 psi, worth reporting, but still supplying normally.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 4 (PDF p. 2)",
+    "Medical Gas Systems in Anesthesia (Elmore): slide 33 (PDF p. 17)"
+   ],
+   "concept": "Low-normal pipeline, cylinder closed",
+   "image_id": null
+  },
+  {
+   "id": "NG08",
+   "num": 81,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "A medical air E-cylinder (625 L full at 1900 psig) reads 950 psig. About how long will it last at 5 L/min?",
+   "c": [
+    "About 31 minutes",
+    "About 62 minutes",
+    "About 125 minutes",
+    "About 190 minutes"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "Air is a compressed gas, so contents fall linearly with pressure: half pressure ≈ 312 L. 312 ÷ 5 ≈ 62 minutes.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 7, 13 (PDF p. 4, 7)"
+   ],
+   "concept": "Air cylinder duration",
+   "image_id": null
+  },
+  {
+   "id": "NC16",
+   "num": 82,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "A vaporizer is being refilled between cases. Which practice limits room contamination?",
+   "c": [
+    "Leave the filler cap loose until the next case",
+    "Fill quickly with the bottle tilted to save time",
+    "Fill with the vaporizer turned on to purge air",
+    "Use the key fill adapter and avoid spills"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "Spills while filling vaporizers are one of the technique errors that release anesthetic into the room. Key fill adapters limit spills and misfilling, and the cap should be tightened.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slide 14 (PDF p. 7)"
+   ],
+   "concept": "Filling technique",
+   "image_id": null
+  },
+  {
+   "id": "NI29",
+   "num": 83,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "multi",
+   "n": 3,
+   "q": "Which anesthetic agent dosage problems does the hazards lecture list? Select 3.",
+   "c": [
+    "Crossed hospital O2 and N2O pipelines",
+    "Simultaneous use of more than one vaporizer",
+    "Excessive O2 flush use during ventilation",
+    "Design of the concentration dial",
+    "Liquid agent in the fresh gas piping",
+    "Exhausted CO2 absorbent in the canister"
+   ],
+   "a": [
+    1,
+    3,
+    4
+   ],
+   "exp": "The slide lists liquid agent in the fresh gas piping, concentration dial design, incorrect filling, and simultaneous use of more than one vaporizer. Absorbent exhaustion and crossed pipelines are hypercarbia and hypoxemia hazards.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 24 (PDF p. 12)"
+   ],
+   "concept": "Agent dosage hazards",
+   "image_id": null
+  },
+  {
+   "id": "NC14",
+   "num": 84,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "Where does OSHA recommend waste anesthetic gas scavenging?",
+   "c": [
+    "Only in main operating rooms",
+    "In all anesthetizing locations",
+    "Only when N2O is used",
+    "Only in pediatric ORs"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "OSHA enacts and enforces standards and recommends scavenging in all anesthetizing locations. TJC goes further, requiring active scavenging methods.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slide 10 (PDF p. 5)"
+   ],
+   "concept": "OSHA scavenging scope",
+   "image_id": null
+  },
+  {
+   "id": "NM04",
+   "num": 85,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "multi",
+   "n": 3,
+   "q": "Which features describe the Tec 6 desflurane vaporizer? Select 3.",
+   "c": [
+    "Heats agent to 39 °C",
+    "Requires electrical power",
+    "Uses wicks to saturate fresh gas",
+    "Routes part of the fresh gas through the sump",
+    "Pressurizes the sump to about 2 atm",
+    "Uses a bimetallic strip for compensation"
+   ],
+   "a": [
+    0,
+    1,
+    4
+   ],
+   "exp": "The Tec 6 heats des to 39 °C, pressurizes it to about 2 atm (1500 mmHg), and needs electricity. Fresh gas never enters the sump; vapor is injected. Wicks and bimetallic strips belong to variable bypass designs.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 60, 61, 62 (PDF p. 30, 31)"
+   ],
+   "concept": "Tec 6 features",
+   "image_id": null
+  },
+  {
+   "id": "NA04",
+   "num": 86,
+   "lec": "Airway",
+   "lk": "air",
+   "type": "single",
+   "n": 1,
+   "q": "Which numbered component connects to the breathing circuit elbow?",
+   "c": [
+    "Component 1",
+    "Component 2",
+    "Component 3",
+    "Component 6"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "Component 2 is the airway tube with its standard 15 mm connector, the same size that fits circuit elbows and ETTs. Component 1 is the separate drain tube for gastric access.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Airway Equipment (McPherson): slide 14 (PDF p. 14)"
+   ],
+   "concept": "LMA diagram: airway connector",
+   "image_id": "img-air-lma-supreme"
+  },
+  {
+   "id": "NA14",
+   "num": 87,
+   "lec": "Airway",
+   "lk": "air",
+   "type": "single",
+   "n": 1,
+   "q": "During laryngoscopy, only the epiglottis tip is visible. The lecture's equipment options include which device to help guide the tube?",
+   "c": [
+    "Armored (reinforced) ETT",
+    "Eschmann introducer (intubating stylet)",
+    "Nasopharyngeal airway (NPA)",
+    "LMA Supreme drain tube"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "The Eschmann introducer is an intubating stylet placed through the glottis first, then the tube is loaded over it. The other devices don't guide intubation.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Airway Equipment (McPherson): slides 10, 11 (PDF p. 10, 11)"
+   ],
+   "concept": "Eschmann introducer use",
+   "image_id": null
+  },
+  {
+   "id": "NI13",
+   "num": 88,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "Before the surgeon enters the trachea with cautery during a tracheostomy, what should anesthesia do?",
+   "c": [
+    "Increase fresh gas flow to flush the trachea of O2",
+    "Turn on N2O so that the O2 concentration falls lower",
+    "Raise FiO2 to 100% to build a safety margin first",
+    "Lower FiO2 as tolerated, avoid N2O, and coordinate with the surgeon"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "Oxidizer and ignition source are about to meet in the airway. The prevention list: keep O2 as low as clinically possible, avoid N2O, and notify the surgeon when oxidizer and ignition source are in proximity.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 35 (PDF p. 18)"
+   ],
+   "concept": "Tracheostomy fire prevention",
+   "image_id": null
+  },
+  {
+   "id": "NV08",
+   "num": 89,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "N2O is set at 6 L/min on a machine whose proportioning system holds O2 at 25% or more of O2 + N2O. What is the minimum O2 flow?",
+   "c": [
+    "1.5 L/min",
+    "2 L/min",
+    "2.5 L/min",
+    "3 L/min"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "O2/(O2 + 6) = 0.25 → O2 = 2 L/min (2 of 8 L total).",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 45 (PDF p. 23)"
+   ],
+   "concept": "Proportioner drill",
+   "image_id": null
+  },
+  {
+   "id": "NM07",
+   "num": 90,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "multi",
+   "n": 3,
+   "q": "During spontaneous ventilation, which problems cause HIGH breathing-circuit pressure? Select 3.",
+   "c": [
+    "Kinked tubing between the APL and scavenging interface",
+    "APL valve closed",
+    "Failed interface positive-pressure relief valve",
+    "Disconnection at the Y-piece connector",
+    "A leak in the breathing circuit tubing",
+    "APL valve opened fully to the scavenger"
+   ],
+   "a": [
+    0,
+    1,
+    2
+   ],
+   "exp": "Slide 23: high pressure during spontaneous ventilation can come from a partly or fully closed APL, kinked or occluded tubing between the APL and scavenging interface, or a malfunctioning interface positive-pressure relief valve. Disconnections and leaks lower pressure.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 23 (PDF p. 12)"
+   ],
+   "concept": "High pressure during spontaneous ventilation",
+   "image_id": null
+  },
+  {
+   "id": "NA11",
+   "num": 91,
+   "lec": "Airway",
+   "lk": "air",
+   "type": "multi",
+   "n": 3,
+   "q": "Which are OBJECTIVE measures of bag-mask ventilation adequacy? Select 3.",
+   "c": [
+    "Sustained SpO2",
+    "Fog in the mask",
+    "Excessive gas leak",
+    "Waveform exhaled CO2",
+    "Chest movement",
+    "Exhaled tidal volume"
+   ],
+   "a": [
+    0,
+    3,
+    5
+   ],
+   "exp": "Objective measures: sustained SpO2, waveform exhaled CO2, peak airway pressure, exhaled tidal volume. Chest movement and gas leak are the lecture's clinical signs, and fog is a visual cue.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Airway Equipment (McPherson): slide 4 (PDF p. 4)"
+   ],
+   "concept": "Objective BVM measures",
+   "image_id": null
+  },
+  {
+   "id": "NV16",
+   "num": 92,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "About how much CO2 can a 500 g charge of soda lime absorb?",
+   "c": [
+    "About 26 L",
+    "About 52 L",
+    "About 130 L",
+    "About 260 L"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "100 g absorbs about 26 L, so 500 g absorbs about 130 L.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slide 2 (PDF p. 1)"
+   ],
+   "concept": "Absorbent capacity drill",
+   "image_id": null
+  },
+  {
+   "id": "NV20",
+   "num": 93,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "multi",
+   "n": 3,
+   "q": "Which E-cylinders hold compressed GAS only (contents proportional to pressure)? Select 3.",
+   "c": [
+    "Medical air",
+    "Carbon dioxide",
+    "Nitrous oxide",
+    "Oxygen",
+    "None of these",
+    "Helium"
+   ],
+   "a": [
+    0,
+    3,
+    5
+   ],
+   "exp": "O2, air, and helium are stored as gas, so pressure tracks contents. N2O and CO2 are liquid/gas, holding constant pressure until the liquid is gone.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 7 (PDF p. 4)"
+   ],
+   "concept": "Gas-only cylinders",
+   "image_id": null
+  },
+  {
+   "id": "NI07",
+   "num": 94,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "Twenty minutes into a 3-hour desflurane anesthetic, building power fails. What is the priority?",
+   "c": [
+    "Wait for the low-battery alarm, then switch to TIVA",
+    "Increase the desflurane dial to deepen the patient before power runs out",
+    "Start a TIVA infusion and prepare manual ventilation now, while the battery lasts",
+    "Ask the surgeon to finish within 40 minutes"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "The battery lasts about 40 minutes to 2 hours, and the Tec 6 needs power. The lecture says to use the window to set up TIVA and a Mapleson (or manual ventilation) so the patient is covered well before the battery is gone.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slides 25, 32 (PDF p. 13, 16)"
+   ],
+   "concept": "Power failure priority",
+   "image_id": null
+  },
+  {
+   "id": "NV21",
+   "num": 95,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "multi",
+   "n": 2,
+   "q": "Which devices respond to O2 SUPPLY PRESSURE? Select 2.",
+   "c": [
+    "The O2 supply low-pressure alarm",
+    "The proportioning system",
+    "The O2 flowmeter float",
+    "The inspired O2 analyzer",
+    "The PISS pins",
+    "The fail-safe valve"
+   ],
+   "a": [
+    0,
+    5
+   ],
+   "exp": "The fail-safe and the O2 supply low-pressure alarm both respond to supply pressure. The proportioner responds to flow settings, the analyzer to concentration, and PISS is mechanical indexing.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 33, 34 (PDF p. 17)"
+   ],
+   "concept": "Pressure-sensing devices",
+   "image_id": null
+  },
+  {
+   "id": "NI33",
+   "num": 96,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "A provider answering texts misses a circuit disconnection until SpO2 falls. Which aggravating factors apply?",
+   "c": [
+    "Failure to check equipment",
+    "Fatigue and inexperience",
+    "Lack of familiarity with equipment",
+    "Distraction and inattention"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "The lecture says inattention and distraction are increasingly common causes, often from phone use or conversation.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slides 18, 23 (PDF p. 9, 12)"
+   ],
+   "concept": "Phone distraction",
+   "image_id": null
+  },
+  {
+   "id": "NI34",
+   "num": 97,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "Six months after adding battery checks to the machine checklist, the department reviews whether power-related events have decreased. Which risk management step is this?",
+   "c": [
+    "Define potential problems",
+    "Apply solutions",
+    "Monitor",
+    "Weigh resources"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "The steps: define problems, estimate likelihood, weigh resources, apply solutions, monitor. Reviewing results after a change is monitoring.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 16 (PDF p. 8)"
+   ],
+   "concept": "Monitor step",
+   "image_id": null
+  },
+  {
+   "id": "NC18",
+   "num": 98,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "During an N2O-only sedation, the case-average N2O level measures 40 ppm, but the 8-hour shift average is 15 ppm. How does this compare with the NIOSH limit?",
+   "c": [
+    "Within it; N2O alone has no limit",
+    "Within it; the 8-hour average is what counts",
+    "Exceeds it only if a halogenated agent is also used",
+    "Exceeds it; the limit is a TWA during anesthetic administration"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "NIOSH's N2O limit is 25 ppm TWA during the anesthetic administration, not averaged over the whole shift. 40 ppm during the case exceeds it.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slide 10 (PDF p. 5)"
+   ],
+   "concept": "TWA during administration",
+   "image_id": null
+  },
+  {
+   "id": "NC05",
+   "num": 99,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "The absorbent was purple at the end of yesterday's cases and looks white this morning. What is the correct action?",
+   "c": [
+    "Watch it; change it only if it turns purple again",
+    "Use it; overnight rest restored its capacity",
+    "Use it only at high fresh gas flow",
+    "Change it; the color regenerated, but capacity didn't"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "Ethyl violet can fade back to white after rest (regeneration), but the absorbent's capacity isn't restored. That's a core reason the lecture says indicator color isn't to be relied on.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slide 4 (PDF p. 2)"
+   ],
+   "concept": "Regenerated color",
+   "image_id": null
+  },
+  {
+   "id": "NG14",
+   "num": 100,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "multi",
+   "n": 2,
+   "q": "Which component-to-pressure-system pairings are correct? Select 2.",
+   "c": [
+    "Common gas outlet: intermediate system",
+    "Cylinder gauge: intermediate system",
+    "Fail-safe valve: low-pressure system",
+    "Vaporizer: low-pressure system",
+    "Hanger yoke: high-pressure system",
+    "Second-stage regulator: high-pressure system"
+   ],
+   "a": [
+    3,
+    4
+   ],
+   "exp": "High pressure: yoke, cylinder gauge, first-stage regulator. Intermediate: pipeline inlets, second-stage regulators, fail-safe, flush, flow control valves. Low: flowmeters, vaporizers, check valve, common gas outlet.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 26, 39, 76 (PDF p. 13, 20, 38)"
+   ],
+   "concept": "Pressure system membership",
+   "image_id": null
+  },
+  {
+   "id": "NV13",
+   "num": 101,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "A fluid warmer draws 12 A at 120 V. How much power does it use?",
+   "c": [
+    "10 watts",
+    "132 watts",
+    "1,440 watts",
+    "14,400 watts"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "P = E × I = 120 × 12 = 1,440 W.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 26 (PDF p. 13)"
+   ],
+   "concept": "Power drill",
+   "image_id": null
+  },
+  {
+   "id": "NI15",
+   "num": 102,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "Flames appear on the drapes near the patient's face during MAC with O2 by cannula. What is the anesthesia provider's FIRST step?",
+   "c": [
+    "Pour saline on the face",
+    "Activate the fire alarm",
+    "Turn off the O2",
+    "Assess for smoke inhalation"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "Fire on the patient: turn off gases, remove drapes and burning materials, extinguish, then assess, including smoke inhalation. The oxidizer is anesthesia's element to remove first.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 37 (PDF p. 19)"
+   ],
+   "concept": "First step: fire on patient",
+   "image_id": null
+  },
+  {
+   "id": "NA02",
+   "num": 103,
+   "lec": "Airway",
+   "lk": "air",
+   "type": "single",
+   "n": 1,
+   "q": "On this LMA Supreme, which numbered component protects the airway tube if the patient bites down?",
+   "c": [
+    "Component 1",
+    "Component 3",
+    "Component 4",
+    "Component 5"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "Component 4 is the integrated bite block. 1 is the drain tube, 3 the fixation tab, and 5 the modified cuff.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Airway Equipment (McPherson): slide 14 (PDF p. 14)"
+   ],
+   "concept": "LMA diagram: bite block",
+   "image_id": "img-air-lma-supreme"
+  },
+  {
+   "id": "NG23",
+   "num": 104,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "Which sequence matches the lecture's fix for a tipped variable bypass vaporizer?",
+   "c": [
+    "Drain, refill immediately, then recalibrate the concentration dial",
+    "Refill, run the highest setting, then drain once analysis reads zero",
+    "Run the lowest setting for 30 min, then drain and refill it",
+    "Drain, run highest setting at high FGF ~30 min, refill when analysis reads zero"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "Tipping puts liquid in the bypass. Drain the vaporizer, run it at the highest setting with high FGF for about 30 minutes to clear the bypass, and refill once expired gas analysis no longer detects agent.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 71 (PDF p. 36)"
+   ],
+   "concept": "Tipping fix order",
+   "image_id": null
+  },
+  {
+   "id": "NV27",
+   "num": 105,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "A facial procedure needs cautery near the airway, and the patient can't tolerate low FiO2. Which airway plan lowers fire risk most?",
+   "c": [
+    "Secure the airway with a cuffed ETT instead of open O2",
+    "Use a face mask tucked under the surgical drapes",
+    "Use high-flow nasal cannula O2 during cautery",
+    "Add N2O so less O2 is needed at the face"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "The lecture singles out open O2 delivery (mask, cannula) near the airway as the danger. A sealed airway keeps oxidizer inside the circuit instead of pooling under drapes near the ignition source. N2O is also an oxidizer.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 35 (PDF p. 18)"
+   ],
+   "concept": "Sealed airway lowers fire risk",
+   "image_id": null
+  },
+  {
+   "id": "NG09",
+   "num": 106,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "A brown E-cylinder (500 L full at 1600 psi) reads 800 psi. About how much gas remains?",
+   "c": [
+    "About 125 L",
+    "About 250 L",
+    "About 400 L",
+    "About 800 L"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "Brown = helium, a compressed gas stored at 1600 psi with 500 L when full. Half the pressure means about half the contents: 250 L.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 7 (PDF p. 4)"
+   ],
+   "concept": "Helium cylinder contents",
+   "image_id": null
+  },
+  {
+   "id": "NI37",
+   "num": 107,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "A pregnant circulating nurse is assigned to a case planned with an LMA and volatile maintenance. Which change most reduces her exposure?",
+   "c": [
+    "Ensure a good seal or use a cuffed ETT; no gas while disconnected",
+    "Use a smaller LMA to reduce apparatus dead space",
+    "Increase fresh gas flow to dilute any leaked agent",
+    "Switch to N2O as the carrier gas for the case"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "LMAs commonly vent more gas into the room than cuffed tubes, and technique errors cause most contamination. The lecture flags pregnant staff because of the 1974 findings. N2O adds exposure.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slides 9, 14 (PDF p. 5, 7)",
+    "Airway Equipment (McPherson): slide 14 (PDF p. 14)"
+   ],
+   "concept": "Exposure and pregnant staff",
+   "image_id": null
+  },
+  {
+   "id": "NI10",
+   "num": 108,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "After the workstation battery dies, how can a paralyzed, intubated patient still be ventilated?",
+   "c": [
+    "Ventilation isn't possible until power returns",
+    "The ventilator continues on reserve pneumatics indefinitely",
+    "The O2 flush can be pulsed to ventilate",
+    "Manually, with a bag on emergency O2 (circle bag or Mapleson)"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "Battery failure stops the ventilator, monitors, and alarms, but emergency O2 remains. Ventilate by hand, with a Mapleson set up during the battery window as the lecture recommends.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slides 25, 32 (PDF p. 13, 16)"
+   ],
+   "concept": "Ventilating without power",
+   "image_id": null
+  },
+  {
+   "id": "NI26",
+   "num": 109,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "Right after a new absorber canister is installed, peak pressure is very high and no gas flows. What should be checked?",
+   "c": [
+    "The vaporizer interlock system",
+    "Packaging or wrap left on the canister",
+    "The O2 flush valve mechanism",
+    "The ESU return pad contact"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "Failure to completely remove plastic wrapping from breathing system components is a reported cause of total occlusion. The machine check should catch it.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 22 (PDF p. 11)"
+   ],
+   "concept": "Wrap on a new canister",
+   "image_id": null
+  },
+  {
+   "id": "NC13",
+   "num": 110,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "Inspired CO2 is rising from an exhausted canister that can't be replaced for several minutes. Which temporary measure reduces rebreathing?",
+   "c": [
+    "Decrease fresh gas flow",
+    "Close the APL valve",
+    "Increase fresh gas flow",
+    "Switch to a higher sevoflurane concentration"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "The absorber is essential at low flow; without effective absorption, fresh gas flow is what washes CO2 out. Raising FGF limits rebreathing until the canister is changed (the hazards lecture lists inadequate FGF without absorption as a hypercarbia hazard).",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slides 4, 8 (PDF p. 2, 4)",
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 20 (PDF p. 10)"
+   ],
+   "concept": "Temporizing an exhausted canister",
+   "image_id": null
+  },
+  {
+   "id": "NC04",
+   "num": 111,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "Exhaled gas leaving the patient passes through which lettered valve before reaching the absorbent?",
+   "c": [
+    "Valve A",
+    "Valve B",
+    "Valve H",
+    "Valve K"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "B is the expiratory unidirectional valve on the limb returning from the patient; E is the absorbent. A is the inspiratory valve sending gas to the patient.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slides 8, 19 (PDF p. 4, 10)"
+   ],
+   "concept": "Diagram: expiratory valve",
+   "image_id": "img-co2-scavenging-circuit"
+  },
+  {
+   "id": "NI38",
+   "num": 112,
+   "lec": "Airway",
+   "lk": "air",
+   "type": "single",
+   "n": 1,
+   "q": "A patient with an LMA Supreme begins to regurgitate. Which feature allows gastric contents to be vented or suctioned away from the airway?",
+   "c": [
+    "The fixation tab",
+    "The drain tube",
+    "The pilot balloon",    "The integrated bite block"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "The LMA Supreme's separate drain tube runs from an opening at the cuff tip, allowing gastric drainage or passage of a gastric tube.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Airway Equipment (McPherson): slide 14 (PDF p. 14)",
+    "CO2 Absorbents and Scavenging (McPherson): slide 14 (PDF p. 7)"
+   ],
+   "concept": "LMA drain tube use",
+   "image_id": null
+  },
+  {
+   "id": "NG21",
+   "num": 113,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "Which sequence describes temperature compensation in a variable bypass vaporizer during a long case?",
+   "c": [
+    "Liquid warms → vapor pressure falls → strip bends → more gas through the chamber",
+    "Liquid cools → strip heats the sump → vapor pressure is restored",
+    "Liquid cools → vapor pressure rises → strip bends → more gas through the bypass",
+    "Liquid cools → vapor pressure falls → strip bends → more gas through the chamber"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "Vaporization cools the liquid, lowering vapor pressure and output. The bimetallic strip responds by sending more fresh gas through the chamber (changing the splitting ratio) so output stays at the dial. Only the Tec 6 uses a heater.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 56 (PDF p. 28)"
+   ],
+   "concept": "Compensation sequence",
+   "image_id": null
+  },
+  {
+   "id": "NI35",
+   "num": 114,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "multi",
+   "n": 3,
+   "q": "A rushed 0600 case starts with an unchecked machine; during the case, the provider is chatting with the surgical team and misses a slowly falling FiO2. Which aggravating factors are present? Select 3.",
+   "c": [
+    "Haste",
+    "Failure to check equipment",
+    "Inexperience",
+    "Equipment design defect",
+    "Lack of familiarity with equipment",
+    "Distraction"
+   ],
+   "a": [
+    0,
+    1,
+    5
+   ],
+   "exp": "Rushing is haste, skipping the check is failure to check equipment, and conversation is distraction. Nothing in the scenario suggests unfamiliarity, inexperience, or a design defect. Most events are multifactorial like this.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slides 17, 18 (PDF p. 9)"
+   ],
+   "concept": "Multifactorial event",
+   "image_id": null
+  },
+  {
+   "id": "NG26",
+   "num": 115,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "Using the lecture's property table, which agent has the highest percentage metabolized?",
+   "c": [
+    "Sevoflurane",
+    "Desflurane",
+    "Halothane",
+    "Isoflurane"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "Halothane is metabolized far more (about 15-40%) than sevoflurane (a few percent), isoflurane, or desflurane (minimal).",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 50 (PDF p. 25)"
+   ],
+   "concept": "Metabolism ranking",
+   "image_id": null
+  },
+  {
+   "id": "NG29",
+   "num": 116,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "multi",
+   "n": 2,
+   "q": "The O2 flowmeter reads 3 L/min, pipeline pressures are normal, and inspired O2 keeps falling. Which causes fit? Select 2.",
+   "c": [
+    "First-stage regulator failure",
+    "A crack in the O2 flowmeter tube",
+    "Excessive O2 flush use",
+    "Fail-safe valve activation",
+    "Proportioning system malfunction raising O2",
+    "Nitrogen or another gas in the O2 pipeline"
+   ],
+   "a": [
+    1,
+    5
+   ],
+   "exp": "Normal pressures with falling FiO2 point to gas composition or O2 lost after metering: contamination (crossed pipelines, nitrogen) or a leak in the O2 flowmeter. The fail-safe only acts on low pressure, and flushing adds O2.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 46, 48 (PDF p. 23, 24)"
+   ],
+   "concept": "Falling FiO2 with normal pressures",
+   "image_id": null
+  },
+  {
+   "id": "NI22",
+   "num": 117,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "The leak check still fails after the breathing circuit is swapped. Where should you look next?",
+   "c": [
+    "The hospital pipeline supply and zone valves",
+    "The O2 flush valve and its spring return",
+    "Low-pressure parts: absorber housing and vaporizer seals",
+    "The patient's ETT cuff and pilot balloon"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "Swapping the circuit usually fixes a failed leak check. If it still fails, the leak is in the machine: the absorber (screws, gaskets, granules, petcock) and vaporizers (mounts, seals, fill ports) are common sites.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slides 19, 22 (PDF p. 10, 11)",
+    "CO2 Absorbents and Scavenging (McPherson): slide 13 (PDF p. 7)"
+   ],
+   "concept": "Leak persists after circuit swap",
+   "image_id": null
+  },
+  {
+   "id": "NG04",
+   "num": 118,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "On this desflurane vaporizer schematic, which numbered component does the provider adjust with the dial?",
+   "c": [
+    "Component 1",
+    "Component 2",
+    "Component 3",
+    "Component 4"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "Component 2 is the variable resistance controlled by the anesthetist through the vaporizer dial. Component 1 is the valve controlled by the differential pressure transducer (3), and 4 is the fixed resistance in the diluent (fresh gas) path.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 61, 62 (PDF p. 31)"
+   ],
+   "concept": "Tec 6 diagram: dial valve",
+   "image_id": "img-gas-tec6-schematic"
+  },
+  {
+   "id": "NV25",
+   "num": 119,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "Which sequence traces pipeline O2 to the common gas outlet?",
+   "c": [
+    "Pipeline inlet check valve, flowmeter, second-stage regulator, vaporizer, flow control valve, outlet check valve",
+    "Pipeline inlet check valve, first-stage regulator, flowmeter, flow control valve, vaporizer, outlet check valve",
+    "Second-stage regulator, pipeline inlet check valve, vaporizer, flowmeter, flow control valve, outlet check valve",
+    "Pipeline inlet check valve, second-stage regulator, flow control valve, flowmeter, vaporizer, outlet check valve"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "Pipeline gas enters the intermediate system through the inlet check valve (no first-stage regulator; that's for cylinders), passes the second-stage regulator and flow control valve, then the low-pressure flowmeter, vaporizer, outlet check valve, and CGO.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 5, 31, 33 (PDF p. 3, 16, 17)"
+   ],
+   "concept": "Pipeline O2 path",
+   "image_id": null
+  },
+  {
+   "id": "NI04",
+   "num": 120,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "After construction, N2O is found flowing through the O2 pipeline. Supply pressure is normal. Which statement is correct?",
+   "c": [
+    "Neither fail-safe nor proportioner acts; only the O2 analyzer shows it",
+    "The fail-safe valve senses the N2O and stops its flow",
+    "The O2 supply low-pressure alarm sounds right away",
+    "The proportioning system raises O2 flow to compensate"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "Crossed pipelines are an upstream hypoxemia hazard. The fail-safe senses pressure (normal here), and the proportioner links the flowmeter settings, not gas identity. Only the inspired O2 analyzer shows the falling FiO2; then disconnect the pipeline and open the cylinder.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 34, 45, 46 (PDF p. 17, 23)",
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 19 (PDF p. 10)"
+   ],
+   "concept": "Crossed pipelines evade safeguards",
+   "image_id": null
+  },
+  {
+   "id": "NI01",
+   "num": 121,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "The machine's O2 pipeline gauge reads 20 psig because the hose is kinked behind the machine, but no O2 supply alarm sounds. The cylinder was left open. Why is there no alarm?",
+   "c": [
+    "The alarm monitors only N2O supply pressure",
+    "The open cylinder is holding supply pressure near 45 psi",
+    "The alarm sounds only when pressure reaches 0 psig",
+    "The fail-safe valve silences the O2 alarm"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "With the cylinder open, the machine draws from it as soon as pipeline pressure falls below the regulated ~45 psi, so supply pressure stays up and no alarm sounds until the cylinder empties. That's the lecture's reason to close the cylinder after the check.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 4 (PDF p. 2)",
+    "Medical Gas Systems in Anesthesia (Elmore): slide 33 (PDF p. 17)"
+   ],
+   "concept": "Open cylinder masks hose kink",
+   "image_id": null
+  },
+  {
+   "id": "NV05",
+   "num": 122,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "For a 3-hour case at 2.5% sevo on 2 L/min fresh gas, what liquid volume is used?",
+   "c": [
+    "About 15 mL",
+    "About 30 mL",
+    "About 45 mL",
+    "About 90 mL"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "2.5 × 2 × 3 = 15 mL/hr; × 3 hours = 45 mL.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 52 (PDF p. 26)"
+   ],
+   "concept": "Sevo consumption drill",
+   "image_id": null
+  },
+  {
+   "id": "NA06",
+   "num": 123,
+   "lec": "Airway",
+   "lk": "air",
+   "type": "multi",
+   "n": 2,
+   "q": "Which pairings of adjunct and complication are correct? Select 2.",
+   "c": [
+    "OPA: stimulation of airway reflexes",
+    "NPA: epistaxis",
+    "NPA: dental damage",
+    "NPA: lip trauma from the flange",
+    "OPA: sinus bleeding",
+    "OPA: epistaxis"
+   ],
+   "a": [
+    0,
+    1
+   ],
+   "exp": "NPA's most common complication is epistaxis. OPA complications are lip and tongue trauma, dental damage, and stimulation of oropharyngeal and laryngeal reflexes.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Airway Equipment (McPherson): slides 5, 6 (PDF p. 5, 6)"
+   ],
+   "concept": "Adjunct complications",
+   "image_id": null
+  },
+  {
+   "id": "NG24",
+   "num": 124,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "What does the vaporizer interlock mechanism (push button, then turn counterclockwise) accomplish?",
+   "c": [
+    "It locks the filler port closed while the vaporizer is in use",
+    "It prevents tipping while the vaporizer is being transported",
+    "It prevents accidental activation and more than one vaporizer on",
+    "It compensates vaporizer output for changes in temperature"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "The interlock requires deliberate action to open the dial from its locked position, and the manifold system allows only one vaporizer on at a time. Transport (T) mode is what protects against tipping leaks.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 59 (PDF p. 30)"
+   ],
+   "concept": "Interlock purpose",
+   "image_id": null
+  },
+  {
+   "id": "NG15",
+   "num": 125,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "O2 supply pressure dips to 35 psig with N2O running. What does the fail-safe do?",
+   "c": [
+    "It stops N2O flow completely right away",
+    "It proportionally reduces N2O flow now",
+    "It raises O2 flow to compensate for the dip",
+    "Nothing yet; it acts below about 25-30 psig"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "The fail-safe begins proportionally reducing other gases below about 25-30 psig and stops them below about 20. At 35 psig it hasn't engaged, though the supply alarm may warn you.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 34 (PDF p. 17)"
+   ],
+   "concept": "Fail-safe threshold edge",
+   "image_id": null
+  },
+  {
+   "id": "NI12",
+   "num": 126,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "During a tonsillectomy, the uncuffed ETT has a large leak, and the gas mix is 50% O2 / 50% N2O. The surgeon is using cautery in the oropharynx. Which change most reduces fire risk?",
+   "c": [
+    "Switch from N2O to 100% O2",
+    "Increase O2 to 100% to protect saturation",
+    "Increase fresh gas flow to dilute the leak",
+    "Replace N2O with air and use the lowest FiO2 tolerated"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "The leak creates an oxidizer-rich oropharynx next to the ignition source. 50/50 O2/N2O supports combustion like 100% O2; lowering oxidizer means air with minimal FiO2 and no N2O.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slides 33, 35 (PDF p. 17, 18)",
+    "Airway Equipment (McPherson): slide 9 (PDF p. 9)"
+   ],
+   "concept": "Leak plus oxidizer near cautery",
+   "image_id": null
+  },
+  {
+   "id": "NI20",
+   "num": 127,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "After a heated humidifier is added to the circuit, the bag can't be squeezed and no gas reaches the patient. What is the likely cause?",
+   "c": [
+    "A closed O2 cylinder valve on the machine",
+    "An APL valve left fully open to the scavenger",
+    "An incorrectly connected humidifier occluding the circuit",
+    "An exhausted absorbent raising resistance"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "Incorrectly connected humidifiers are among the reported causes of total circuit occlusion (with filters, defects, and plastic wrap). High resistance with no flow = occlusion.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 22 (PDF p. 11)"
+   ],
+   "concept": "Humidifier occlusion",
+   "image_id": null
+  },
+  {
+   "id": "NV03",
+   "num": 128,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "An O2 E-cylinder reads 300 psig. How long will it support a non-rebreather at 10 L/min?",
+   "c": [
+    "About 5 minutes",
+    "About 10 minutes",
+    "About 30 minutes",
+    "About 60 minutes"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "300/1900 × 660 ≈ 104 L. 104 ÷ 10 ≈ 10 minutes: replace the cylinder before transport.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 13 (PDF p. 7)"
+   ],
+   "concept": "Duration drill: 300 psig",
+   "image_id": null
+  },
+  {
+   "id": "NA05",
+   "num": 129,
+   "lec": "Airway",
+   "lk": "air",
+   "type": "single",
+   "n": 1,
+   "q": "During mask ventilation, condensation in the clear mask comes and goes with each squeeze, and SpO2 is stable. What does the fog tell you?",
+   "c": [
+    "Gas is moving in and out of the airway",
+    "The mask seal is leaking",
+    "The circuit humidity is too high",
+    "The patient is apneic"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "A clear mask lets you watch condensation from exhalation; instructor note: pay attention to the quantity of fog. Cyclic fogging means exhaled gas is reaching the mask.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Airway Equipment (McPherson): slide 4 (PDF p. 4)"
+   ],
+   "concept": "Reading mask fog",
+   "image_id": null
+  },
+  {
+   "id": "NI18",
+   "num": 130,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "According to the lecture, what did the widespread use of electrocautery hasten?",
+   "c": [
+    "Replacement of cuffed tubes with uncuffed tubes",
+    "Use of N2O as a carrier gas",
+    "Elimination of explosive anesthetic agents from the OR",
+    "Adoption of isolated power in homes"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "Widespread ESU use hastened the elimination of explosive agents from the OR, since a high-energy ignition source can't coexist with flammable anesthetics.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 31 (PDF p. 16)"
+   ],
+   "concept": "ESU and explosive agents",
+   "image_id": null
+  },
+  {
+   "id": "NC11",
+   "num": 131,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "For a sevoflurane mask induction, which step best limits waste gas before the mask is sealed on the face?",
+   "c": [
+    "Squeeze the bag to empty the circuit first",
+    "Keep the APL fully closed until the mask is applied",
+    "Don't start fresh gas and agent flowing until the mask is sealed",
+    "Run high FGF to prefill the circuit with agent while positioning"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "Gas flowing while the circuit is open to the room is a technique error; 94-99% of OR contamination comes from technique. Prefilling at high flow with the mask off, or emptying the bag into the room, spills agent.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slide 14 (PDF p. 7)"
+   ],
+   "concept": "Mask induction technique",
+   "image_id": null
+  },
+  {
+   "id": "NV07",
+   "num": 132,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "A 250 mL bottle of sevoflurane is used at 2% with 2 L/min FGF. About how many hours will it last?",
+   "c": [
+    "About 7 hours",
+    "About 14 hours",
+    "About 21 hours",
+    "About 42 hours"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "2 × 2 × 3 = 12 mL/hr. 250 ÷ 12 ≈ 21 hours.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 52 (PDF p. 26)"
+   ],
+   "concept": "Bottle duration drill",
+   "image_id": null
+  },
+  {
+   "id": "NI19",
+   "num": 133,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "The expiratory unidirectional valve disc is missing. What happens to exhaled gas?",
+   "c": [
+    "It bypasses the absorber into the inspiratory limb only",
+    "It's trapped, and pressure rises",
+    "Some flows back from the expiratory limb and is reinhaled",
+    "It's all vented through the APL"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "Missing or incompetent unidirectional valves are a hypercarbia hazard. Without the expiratory valve, exhaled gas can move back toward the patient on inspiration and be rebreathed.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 20 (PDF p. 10)",
+    "CO2 Absorbents and Scavenging (McPherson): slide 8 (PDF p. 4)"
+   ],
+   "concept": "Missing expiratory valve",
+   "image_id": null
+  },
+  {
+   "id": "NG16",
+   "num": 134,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "In a Thorpe tube, why does more flow push the float higher?",
+   "c": [
+    "Flowing gas warms and expands the float at high flows",
+    "Pressure across the float rises in proportion to flow",
+    "The float gets lighter as more gas flows around it",
+    "The float rises to a wider section where the gap passes that flow"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "The tube is tapered, narrow at the bottom. The pressure drop across the float stays constant (gravity balance), so more flow lifts it to a wider section where the larger annular orifice passes that flow: constant pressure, variable orifice.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 42, 43 (PDF p. 21, 22)"
+   ],
+   "concept": "Why the float rises",
+   "image_id": null
+  },
+  {
+   "id": "NG32",
+   "num": 135,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "Why must desflurane be delivered at 2 atm and 39 °C rather than from a standard vaporizer?",
+   "c": [
+    "It forms compound A unless the vaporizer is heated",
+    "Its low vapor pressure needs heat before it will evaporate",
+    "Its high blood:gas coefficient requires heated delivery",
+    "Its boiling point near room temperature makes output unpredictable"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "Des boils at 22.8 °C with a vapor pressure of 669 mmHg. At room temperature it could boil in a standard sump and swing output widely. Heating and pressurizing makes delivery predictable. Its blood:gas coefficient (0.42) is the lowest listed.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 60 (PDF p. 30)"
+   ],
+   "concept": "Why des is heated",
+   "image_id": null
+  },
+  {
+   "id": "NA08",
+   "num": 136,
+   "lec": "Airway",
+   "lk": "air",
+   "type": "single",
+   "n": 1,
+   "q": "For a prone posterior fossa craniotomy with the neck sharply flexed, which tube is chosen and why?",
+   "c": [
+    "Uncuffed tube, to reduce tracheal pressure",
+    "Oral RAE, because it routes the connector over the chin",
+    "Laser tube, because it's rigid",
+    "Armored tube, because it resists kinking and compression"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "Armored (reinforced) tubes resist kinking and compression in head, neck, and tracheal surgery and awkward positions. RAE tubes exist to route the connector away from the surgical field.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Airway Equipment (McPherson): slide 8 (PDF p. 8)"
+   ],
+   "concept": "Armored tube choice",
+   "image_id": null
+  },
+  {
+   "id": "NV22",
+   "num": 137,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "multi",
+   "n": 2,
+   "q": "Which systems physically prevent connecting the wrong gas source to the machine? Select 2.",
+   "c": [
+    "The O2 flush valve",
+    "Pin Index Safety System",
+    "The proportioning system",
+    "The fail-safe valve",
+    "Diameter Index Safety System",
+    "The outlet check valve"
+   ],
+   "a": [
+    1,
+    4
+   ],
+   "exp": "PISS (cylinder to yoke) and DISS (pipeline to machine) use gas-specific geometry. The fail-safe and proportioner protect against low O2 pressure and low O2 ratios, not wrong connections.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slides 18, 29 (PDF p. 9, 15)"
+   ],
+   "concept": "Connection safety systems",
+   "image_id": null
+  },
+  {
+   "id": "NA09",
+   "num": 138,
+   "lec": "Airway",
+   "lk": "air",
+   "type": "single",
+   "n": 1,
+   "q": "During laser surgery, why is the laser tube's cuff filled with saline or water rather than air?",
+   "c": [
+    "The cuff itself isn't laser resistant",
+    "Air conducts the laser beam",
+    "Saline keeps the cuff pressure lower",
+    "Saline prevents tube kinking"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "The laser-resistant tube shaft is noncombustible, but its cuff isn't laser resistant. Filling it with saline or water (with dye) is the lecture's precaution.",
+   "disc": null,
+   "supp": null,
+   "ref": [
+    "Airway Equipment (McPherson): slide 9 (PDF p. 9)"
+   ],
+   "concept": "Laser cuff fill",
+   "image_id": null
+  },
+  {
+   "id": "NP03",
+   "num": 139,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "On these unlabeled cylinder valves, which numbered valve would fit a medical air yoke (pins 1 and 5)?",
+   "c": [
+    "Valve 2",
+    "Valve 3",
+    "Valve 4",
+    "Valve 5"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "Air uses positions 1 and 5 (valve 3). Valve 4 shares position 1 but pairs it with 6 (carbon dioxide); its right hole sits farther out. Valve 2 is N2O (3,5) and valve 5 is Entonox (7).",
+   "disc": null,
+   "supp": null,
+   "image_id": "img-haz-piss-valves",
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 7 (PDF p. 4)"
+   ],
+   "concept": "Reading PISS: air"
+  },
+  {
+   "id": "NP06",
+   "num": 140,
+   "lec": "Medical gases",
+   "lk": "gas",
+   "type": "single",
+   "n": 1,
+   "q": "Using the lecture's fire triad at the cylinder yoke, how does opening a new cylinder valve slowly lower fire risk?",
+   "c": [
+    "It removes the oxidizer from inside the cylinder",
+    "It lowers the cylinder's fill pressure over time",
+    "It limits heat from gas rushing through the outlet",
+    "It lets dust on the yoke burn off harmlessly"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "At the yoke, O2 or N2O is the oxidizer, dust is the fuel, and compressed gas rushing through the outlet creates heat. Opening slowly reduces that heat; clearing dust removes the fuel.",
+   "disc": null,
+   "supp": null,
+   "image_id": null,
+   "ref": [
+    "Medical Gas Systems in Anesthesia (Elmore): slide 8 (PDF p. 4)"
+   ],
+   "concept": "Opening cylinders slowly"
+  },
+  {
+   "id": "NP01",
+   "num": 141,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "In this circle system, suppose the fresh gas inflow were moved into quadrant C, between the patient and the expiratory valve. What would happen?",
+   "c": [
+    "Fresh gas would leave via the expiratory limb, bypassing the patient",
+    "Nothing; fresh gas can safely enter anywhere in the circle",
+    "The absorber would be bypassed, raising compound A levels",
+    "The APL valve would stop venting waste gas to the scavenger"
+   ],
+   "a": [
+    0
+   ],
+   "exp": "Quadrant C is the expiratory limb on the patient side. The hazards lecture lists a fresh gas inlet between the patient and the expiratory valve as one of three arrangements to avoid: fresh gas leaves with exhaled gas instead of reaching the patient.",
+   "disc": null,
+   "supp": null,
+   "image_id": "img-co2-circle-quadrants",
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slide 8 (PDF p. 4)",
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 20 (PDF p. 10)"
+   ],
+   "concept": "Circle diagram: misplaced fresh gas inlet"
+  },
+  {
+   "id": "NP08",
+   "num": 142,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "During a power failure, a colleague assumes every monitor in the room is running on the anesthesia machine's battery. Why is that assumption unsafe?",
+   "c": [
+    "The battery powers monitors only after the ventilator stops",
+    "All monitors shut off as soon as AC power is lost",
+    "The battery powers only the vaporizers and flowmeters",
+    "Monitors, alarms, and the ventilator may not share one power source"
+   ],
+   "a": [
+    3
+   ],
+   "exp": "The lecture says to know exactly what runs on battery alone: monitors, airway monitors, BP and HR, alarms, and the ventilator may or may not be tied to the same power source.",
+   "disc": null,
+   "supp": null,
+   "image_id": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 25 (PDF p. 13)"
+   ],
+   "concept": "Knowing what the battery powers"
+  },
+  {
+   "id": "NP10",
+   "num": 143,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "Why does the absorber add little heat and humidity benefit during a 10 L/min fresh gas flow case?",
+   "c": [
+    "The absorbent stops reacting chemically at high flow",
+    "Heat conservation occurs only with desflurane use",
+    "Large volumes of cool, dry fresh gas dilute the conserved heat",
+    "High flow desiccates the absorbent within minutes"
+   ],
+   "a": [
+    2
+   ],
+   "exp": "Exhaled heat and humidity are partially conserved by the absorbent, and both are optimized as flow decreases. At high FGF, the circuit fills with dry, room-temperature medical gas instead.",
+   "disc": null,
+   "supp": null,
+   "image_id": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slide 8 (PDF p. 4)"
+   ],
+   "concept": "Heat and humidity at high flow"
+  },
+  {
+   "id": "NP04",
+   "num": 144,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "multi",
+   "n": 2,
+   "q": "For a spontaneously breathing transport patient, which numbered circuits need the HIGHER fresh gas flow (1.5-2.5 × MV)? Select 2.",
+   "c": [
+    "Circuit 1",
+    "Circuit 2",
+    "Circuit 3",
+    "All three equally",
+    "None; all need 0.7 × MV",
+    "Only the one with the longest tubing"
+   ],
+   "a": [
+    1,
+    2
+   ],
+   "exp": "Circuits 2 and 3 are Mapleson B and C: fresh gas enters near the patient and they always permit rebreathing, so they need 1.5-2.5 × MV. Circuit 1 is the Mapleson A, efficient for spontaneous breathing at 0.7 × MV.",
+   "disc": null,
+   "supp": null,
+   "image_id": "img-haz-mapleson-circuits",
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 21 (PDF p. 11)"
+   ],
+   "concept": "Mapleson figure: high-flow circuits"
+  },
+  {
+   "id": "NP07",
+   "num": 145,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "multi",
+   "n": 2,
+   "q": "A clear canister shows a purple streak running along the wall while the center granules stay white. Which statements are correct? Select 2.",
+   "c": [
+    "The white center means the whole canister is safe",
+    "Gas is channeling along the canister wall",
+    "The streak shows regeneration after rest",
+    "The canister is evenly used and has plenty of capacity",
+    "Channeling increases resistance across the canister",
+    "The streaked path may be exhausted even though most granules look fresh"
+   ],
+   "a": [
+    1,
+    5
+   ],
+   "exp": "Channeling sends gas preferentially along the smooth wall, exhausting that path while other granules look unused, one reason color isn't trusted. Channeling follows the path of least resistance; it doesn't raise it.",
+   "disc": null,
+   "supp": null,
+   "image_id": null,
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slides 4, 5 (PDF p. 2, 3)"
+   ],
+   "concept": "Reading a channeling streak"
+  },
+  {
+   "id": "NP11",
+   "num": 146,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "multi",
+   "n": 2,
+   "q": "On their first day, a new SRNA sets up an unfamiliar workstation model and misses a disconnected hose. Which aggravating factors apply? Select 2.",
+   "c": [
+    "Lack of familiarity with equipment",
+    "Fatigue from a long shift",
+    "Inexperience",
+    "Standardized connector sizes",
+    "Haste under schedule pressure",
+    "Redundant alarm systems"
+   ],
+   "a": [
+    0,
+    2
+   ],
+   "exp": "A new provider on a new model combines inexperience with lack of familiarity with equipment. Nothing in the scenario suggests fatigue or time pressure, and connectors and alarms are protective.",
+   "disc": null,
+   "supp": null,
+   "image_id": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 18 (PDF p. 9)"
+   ],
+   "concept": "Inexperience and unfamiliarity"
+  },
+  {
+   "id": "NP02",
+   "num": 147,
+   "lec": "CO2 & scavenging",
+   "lk": "co2",
+   "type": "single",
+   "n": 1,
+   "q": "The pop-off (APL) valve in this circle sits in quadrant D. Moving it into which quadrant would violate the circle arrangement rules?",
+   "c": [
+    "Quadrant A",
+    "Quadrant B",
+    "Quadrant C",
+    "None; the APL can go anywhere"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "Quadrant B is the inspiratory limb on the patient side, between the patient and the inspiratory valve. An APL there is one of the three forbidden arrangements: it would vent fresh gas before it reaches the patient.",
+   "disc": null,
+   "supp": null,
+   "image_id": "img-co2-circle-quadrants",
+   "ref": [
+    "CO2 Absorbents and Scavenging (McPherson): slide 8 (PDF p. 4)",
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 20 (PDF p. 10)"
+   ],
+   "concept": "Circle diagram: APL placement"
+  },
+  {
+   "id": "NP12",
+   "num": 148,
+   "lec": "Airway",
+   "lk": "air",
+   "type": "multi",
+   "n": 3,
+   "q": "During mask ventilation, which findings can you assess directly through a clear face mask? Select 3.",
+   "c": [
+    "End-tidal CO2 value",
+    "Oxygen saturation",
+    "Lip color",
+    "Vomitus or secretions",
+    "Exhaled tidal volume",
+    "Condensation with exhalation"
+   ],
+   "a": [
+    2,
+    3,
+    5
+   ],
+   "exp": "The clear mask lets you see lip color, condensation from exhalation, secretions, vomitus, and blood. Tidal volume, ETCO2, and SpO2 come from monitors, not from looking through the mask.",
+   "disc": null,
+   "supp": null,
+   "image_id": null,
+   "ref": [
+    "Airway Equipment (McPherson): slide 4 (PDF p. 4)"
+   ],
+   "concept": "What a clear mask shows"
+  },
+  {
+   "id": "NP09",
+   "num": 149,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "A committee reviews how often machine-check failures have occurred over two years before deciding on new training. Which risk management step is this?",
+   "c": [
+    "Estimating the likelihood of occurrence",
+    "Weighing resources against benefits",
+    "Monitoring after a change is made",
+    "Applying solutions to the problem"
+   ],
+   "a": [
+    0   ],
+   "exp": "Steps: define problems → estimate likelihood → weigh the benefits of expending resources → apply solutions → monitor. Measuring how often a problem happens is estimating likelihood.",
+   "disc": null,
+   "supp": null,
+   "image_id": null,
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slide 16 (PDF p. 8)"
+   ],
+   "concept": "Estimate likelihood step"
+  },
+  {
+   "id": "NP05",
+   "num": 150,
+   "lec": "Hazards & safety",
+   "lk": "haz",
+   "type": "single",
+   "n": 1,
+   "q": "During MAC with O2 by nasal cannula near the surgical field, which numbered element of this fire triangle is the anesthesia provider's main lever?",
+   "c": [
+    "Element 1",
+    "Element 2",
+    "Element 3",
+    "None; fire prevention is the surgeon's job"
+   ],
+   "a": [
+    1
+   ],
+   "exp": "Element 2 is the oxidizer (O2), which anesthesia controls: keep FiO2 as low as tolerated, avoid N2O, and keep O2 from pooling. Element 1 (ignition, the cautery) belongs to the surgeon and element 3 (fuel) mostly to nursing, though prevention is everyone's job.",
+   "disc": null,
+   "supp": null,
+   "image_id": "img-haz-fire-triangle",
+   "ref": [
+    "Anesthesia Workstation Hazards & Safety (McPherson): slides 33, 35 (PDF p. 17, 18)"
+   ],
+   "concept": "Fire triangle: anesthesia's element"
+  }
+ ]
+};
