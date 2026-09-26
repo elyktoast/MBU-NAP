@@ -377,14 +377,38 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Bank 3 manual navigation cancels pending auto-advance', async ({ page }) => {
+    await page.addInitScript(() => {
+      const nativeSetTimeout = window.setTimeout.bind(window);
+      const nativeClearTimeout = window.clearTimeout.bind(window);
+      window.__mbuActiveTimers = new Set();
+      window.setTimeout = (fn, delay, ...args) => {
+        let id;
+        id = nativeSetTimeout((...cbArgs) => {
+          window.__mbuActiveTimers.delete(id);
+          if (typeof fn === 'function') fn(...cbArgs);
+        }, delay, ...args);
+        window.__mbuActiveTimers.add(id);
+        return id;
+      };
+      window.clearTimeout = id => {
+        window.__mbuActiveTimers.delete(id);
+        return nativeClearTimeout(id);
+      };
+    });
     await page.goto(exam + '/quiz-bank-3.html');
     await page.evaluate(() => openExam(1));
+    const baseline = await page.evaluate(() => [...window.__mbuActiveTimers]);
     const answer = await page.evaluate(() => byId[EXM[1].ids[0]].a);
     await clickIndexes(page.locator('#main .opt'), answer);
     await page.locator('#go').click();
+
+    const gradingTimers = await page.evaluate(before => [...window.__mbuActiveTimers].filter(id => !before.includes(id)), baseline);
+    expect(gradingTimers.length).toBeGreaterThan(0);
+
     await page.evaluate(() => next());
     const afterManual = await page.evaluate(() => S.ex[1].idx);
-    expect(await page.evaluate(() => autoTimer)).toBeNull();
+    const stillActive = await page.evaluate(ids => ids.filter(id => window.__mbuActiveTimers.has(id)), gradingTimers);
+    expect(stillActive).toEqual([]);
     expect(await page.evaluate(() => S.ex[1].idx)).toBe(afterManual);
   });
 
