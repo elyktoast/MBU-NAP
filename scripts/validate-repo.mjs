@@ -379,5 +379,18 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 }
 
 
+// Canonical shared UI must own final graded state across every linked quiz, including Hazards.
+{
+ const css=read('equipment/assets/bank1-quiz-ui.css');
+ if(!css.includes('.mbu-bank1-ui .opt.correct,.mbu-bank1-ui .opt.ok,.mbu-bank1-ui .opt.miss'))fail('Canonical UI: graded keyed-answer contract is missing');
+ if(!css.includes('text-decoration:none!important;opacity:1!important'))fail('Canonical UI: graded answers do not override cross-out state');
+ if(!css.includes('.mbu-bank1-ui .explain,.mbu-bank1-ui #fb.explain'))fail('Canonical UI: explanation panel contract is missing');
+ for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html','equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
+  const src=read(p);
+  if(!src.includes('bank1-quiz-ui.css'))fail(p+': not linked to canonical quiz UI');
+  if(!src.includes('mbu-bank1-ui'))fail(p+': canonical quiz UI scope class missing');
+ }
+}
+
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
 console.log('Repository validation passed: Banks 1-3 are 500 questions each; local assets, Studio sources, shared quiz runtimes, answer indexes, and build manifest are valid.');
