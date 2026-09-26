@@ -62,6 +62,34 @@ function checkCombined(){
   for(const bit of ['50 questions','Review Missed','Missed Questions Review','Automatically built from every question missed in Practice Sets 1–3.'])if(!page.includes(bit))fail('Combined dashboard: missing Bank 1 parity element '+bit);
   if(/function renderDashboard[\s\S]*onclick="resetSet\(/.test(page))fail('Combined dashboard: per-set Reset button remains instead of Bank 1 Review Missed');
 }
+function checkCanonicalNewQuizBanks(){
+  const index=read('equipment/exam-1/index.html');
+  const legacy=new Set(['quiz-bank-1.html','quiz-bank-2.html','quiz-bank-3.html']);
+  const excluded=new Set(['studio.html','hazards.html']);
+  const linked=[...index.matchAll(/href=["']([^"'?#]+\.html)(?:[?#][^"']*)?["']/g)].map(m=>m[1]);
+  const candidates=[...new Set(linked.filter(h=>!legacy.has(h)&&!excluded.has(h)))];
+  const required=[
+    'id="dashboard"','id="cards"','id="overall"','id="quiz"','id="set-badge"',
+    'id="mbuFlagBtn"','>Report</button>','>Navigator</button>','mbu-return',
+    'id="completed"','id="total"','id="score"','id="missed"',
+    'mbu-crossout-hint','id="multi-submit-row"','id="submit-multi"',
+    'id="explain"','id="citation"','id="prev"','id="next"',
+    'Review Missed','Missed Questions Review',
+    '../assets/bank1-quiz-ui.css','../assets/site-nav.js','../assets/studio-sync.js',
+    '../assets/navigator.js','../assets/calculator.js','../assets/auto-update.js',
+    'MBUNavigator.button','MBUCalculator?.besideFlag()'
+  ];
+  for(const href of candidates){
+    const p='equipment/exam-1/'+href;
+    if(!exists(p)){fail('Canonical Bank 1 standard: linked quiz bank is missing '+p);continue}
+    const page=read(p);
+    for(const bit of required)if(!page.includes(bit))fail(href+': new quiz bank does not match Bank 1 standard; missing '+bit);
+    if(/function renderDashboard[\s\S]*onclick="resetSet\(/.test(page))fail(href+': dashboard uses Reset instead of Bank 1 Review Missed pattern');
+    if(!page.includes("if(q.answer.includes(i))")&&!page.includes("if(ans.includes(i))"))fail(href+': graded answers are not visibly keyed like Bank 1');
+    if(!page.includes("else if(selected.has(i))")&&!page.includes("else if(selected.includes(i))"))fail(href+': selected wrong answers do not use Bank 1 feedback behavior');
+    if(!page.includes("else if(d>0)goDashboard()"))fail(href+': final Next does not return to dashboard like Bank 1');
+  }
+}
 function checkCopies(){
   for(const p of ['equipment/exam-1/index.html','equipment/exam-1/quiz-bank-3.html']){
     const src=read(p); if(/600\s+questions/i.test(src)) fail(p+': stale 600-question Bank 3 copy remains');
@@ -133,7 +161,7 @@ function checkStudioData(){
   }
 }
 checkStudioData();
-checkCombined();checkCopies();checkAssets();checkStudio();checkRuntimeSafety();
+checkCombined();checkCanonicalNewQuizBanks();checkCopies();checkAssets();checkStudio();checkRuntimeSafety();
 let manifest;
 try{
   const raw=read('equipment/build.json');
