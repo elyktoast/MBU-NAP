@@ -5,7 +5,7 @@ const root=process.cwd(),errors=[],warnings=[];
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const norm=s=>String(s??'').trim().replace(/\s+/g,' ').toLowerCase();
 const err=m=>errors.push(m),warn=m=>warnings.push(m);
-const manifest=read('equipment/exam-1/banks.json');
+const manifest=read('equipment/exam-1/banks.json'),baseline=read('scripts/content-integrity-baseline.json');
 
 const sources=[
   ['Quiz Bank 1','equipment/exam-1/data/bank1.json'],
@@ -16,7 +16,7 @@ const sources=[
 ];
 
 for(const [label,file] of sources){
-  const payload=read(file),qs=Array.isArray(payload)?payload:(payload.questions||[]),seenStemBySet=new Map(),seenId=new Set();let missingCitation=0,missingTopic=0;
+  const payload=read(file),qs=Array.isArray(payload)?payload:(payload.questions||[]),seenStemBySet=new Map(),seenId=new Set(),knownDupes=new Set(baseline.knownDuplicateStems?.[path.basename(file)]||[]);let missingCitation=0,missingTopic=0;
   for(let i=0;i<qs.length;i++){
     const q=qs[i]||{},id=String(q.id??i+1),set=Number(q.set??q.setn??1),stem=String(q.stem??q.q??'').trim(),opts=q.options??q.c,ans0=q.answer??q.correct??q.a,ans=Array.isArray(ans0)?ans0:[ans0],identity=set+'::'+id;
     if(seenId.has(identity))err(label+': duplicate id '+identity);seenId.add(identity);
