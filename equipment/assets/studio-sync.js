@@ -1,6 +1,6 @@
 (function(){
   const STORE='mbu_exam1_studio_v1';
-  const REPORT_ENDPOINT=window.MBU_REPORT_ENDPOINT||'';
+  const REPORT_ENDPOINT=window.MBU_REPORT_ENDPOINT||'https://script.google.com/macros/s/AKfycbyvwmbjqiQRAT8K7psT7iyWCrdhNe8YBhCgD3vF3T3onYBk8vVcrw_lQf1G-LUEWAzG/exec';
   let cache=null,reportContext=null;
 
   function normalizeBank(bank){
