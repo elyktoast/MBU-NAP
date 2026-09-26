@@ -75,7 +75,7 @@ function checkCombined(){
   const qs=canonicalPayload('equipment/exam-1/data/combined.json','Combined',150,{1:50,2:50,3:50});
   const images=read('equipment/exam-1/combined-images.js');for(const q of qs)if(q.imageId&&!images.includes('"'+q.imageId+'"'))fail('Combined: missing image asset '+q.imageId);
   const page=read('equipment/exam-1/combined.html');
-  if(!page.includes('data/combined.json')||!page.includes('legacyFormat:"combined"')||!page.includes('combined-images.js')||!page.includes('../assets/quiz-engine.js'))fail('Combined: canonical data/shared engine wiring is missing');
+  if(!page.includes('data/combined.json')||!/legacyFormat\s*:\s*['"]combined['"]/.test(page)||!page.includes('combined-images.js')||!page.includes('../assets/quiz-engine.js'))fail('Combined: canonical data/shared engine wiring is missing');
 }
 function checkHazardsCanonical(){
   const qs=canonicalPayload('equipment/exam-1/data/hazards.json','Workstation Hazards',350,{1:100,2:100,3:100,4:50});
