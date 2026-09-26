@@ -117,7 +117,33 @@
     "label": "Workstation Hazards",
     "short": "Hazards",
     "page": "hazards.html",
-    "description": "Three 100-question practice sets plus a 50-question harder Challenge Set covering Workstation Hazards & Safety."
+    "description": "Three 100-question practice sets plus a 50-question harder Challenge Set covering Workstation Hazards & Safety.",
+    "pages": [
+      {
+        "id": "haz1",
+        "label": "Hazards Practice Set 1",
+        "short": "Hazards 1",
+        "page": "hazards-100.html"
+      },
+      {
+        "id": "haz2",
+        "label": "Hazards Practice Set 2",
+        "short": "Hazards 2",
+        "page": "hazards-bank-2.html"
+      },
+      {
+        "id": "haz3",
+        "label": "Hazards Practice Set 3",
+        "short": "Hazards 3",
+        "page": "hazards-bank-3.html"
+      },
+      {
+        "id": "hh",
+        "label": "Hazards Challenge Set",
+        "short": "Challenge",
+        "page": "hazards-harder.html"
+      }
+    ]
   },
   "studioSources": [
     {
