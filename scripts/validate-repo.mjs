@@ -58,6 +58,9 @@ function checkCombined(){
   const qs=Array.isArray(data&&data.questions)?data.questions:[];validateQuestions('Combined',qs,150);
   if(data.count!==150)fail('Combined: metadata count is not 150');
   const images=read('equipment/exam-1/combined-images.js');for(const q of qs)if(q.image_id&&!images.includes('"'+q.image_id+'"'))fail('Combined: missing image asset '+q.image_id);
+  const page=read('equipment/exam-1/combined.html');
+  for(const bit of ['50 questions','Review Missed','Missed Questions Review','Automatically built from every question missed in Practice Sets 1–3.'])if(!page.includes(bit))fail('Combined dashboard: missing Bank 1 parity element '+bit);
+  if(/function renderDashboard[\s\S]*onclick="resetSet\(/.test(page))fail('Combined dashboard: per-set Reset button remains instead of Bank 1 Review Missed');
 }
 function checkCopies(){
   for(const p of ['equipment/exam-1/index.html','equipment/exam-1/quiz-bank-3.html']){
