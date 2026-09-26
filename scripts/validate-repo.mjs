@@ -323,7 +323,9 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 {
  const src=read('equipment/exam-1/studio.html');
  if(!src.includes('await Promise.all(sources.map(async source=>'))fail('Studio: bank sources are not hydrated concurrently');
- if(!src.includes('ALL.push(...qs);reindex();try{buildTopics()}'))fail('Studio: loaded banks are not published progressively to the selector');
+ if(!src.includes('if(qs.length){addLoaded(qs);try{buildTopics()}'))fail('Studio: loaded banks are not published progressively to the selector');
+ if(!src.includes('ALL_BY_UID.set(q.uid,q);ALL_UIDS.add(q.uid);'))fail('Studio: progressive hydration does not maintain UID indexes incrementally');
+ if(src.includes('ALL_BY_UID=new Map(ALL.map(q=>[q.uid,q]))'))fail('Studio: progressive hydration still rebuilds the full UID index');
 }
 
 // Studio must not parse large embedded Hazards image maps during bank hydration.
