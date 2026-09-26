@@ -1,7 +1,7 @@
 (()=>{"use strict";
 const L="ABCDEF",esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
 function start(cfg){
- const {bank:BANK,key:KEY,bankKey,badge,summaryTitle,resetMessage}=cfg,IMGS=cfg.images||{},$=s=>document.querySelector(s);
+ const {bank:BANK,key:KEY,bankKey,badge,summaryTitle,resetMessage}=cfg,IMGS=cfg.images||{},$=s=>document.querySelector(s);window.BANK=BANK;window.IMGS=IMGS;
  const fresh=()=>({idx:0,ans:{},xo:{},prac:null,view:"quiz"});
  const isObj=v=>v&&typeof v==="object"&&!Array.isArray(v),ids=new Set(BANK.map(q=>String(q.id))),byQ=Object.fromEntries(BANK.map(q=>[String(q.id),q]));
  const cleanSel=(q,v)=>Array.isArray(v)?[...new Set(v.map(Number).filter(i=>Number.isInteger(i)&&i>=0&&i<q.c.length))]:[];
