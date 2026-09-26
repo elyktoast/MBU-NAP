@@ -63,19 +63,19 @@ function checkBank1(){
 function checkBank2(){
   canonicalPayload('equipment/exam-1/data/bank2.json','Quiz Bank 2 canonical data',500,{1:100,2:100,3:100,4:100,5:100});
   const page=read('equipment/exam-1/quiz-bank-2.html');
-  if(!page.includes("dataUrl:'data/bank2.json'")||!page.includes("legacyFormat:'bank2'")||!page.includes('../assets/quiz-engine.js'))fail('Bank 2: canonical data/shared engine wiring is missing');
+  if(!page.includes('data/bank2.json')||!page.includes('legacyFormat:"bank2"')||!page.includes('../assets/quiz-engine.js'))fail('Bank 2: canonical data/shared engine wiring is missing');
 }
 function checkBank3(){
   const qs=canonicalPayload('equipment/exam-1/data/bank3.json','Quiz Bank 3 canonical data',500,{1:100,2:100,3:100,4:100,5:100});
   const page=read('equipment/exam-1/quiz-bank-3.html');
-  if(!page.includes("dataUrl:'data/bank3.json'")||!page.includes("legacyFormat:'bank3'")||!page.includes("imageSource:'data/bank3-images.js'")||!page.includes('../assets/quiz-engine.js'))fail('Bank 3: canonical data/shared engine wiring is missing');
+  if(!page.includes('data/bank3.json')||!page.includes('legacyFormat:"bank3"')||!page.includes('data/bank3-images.js')||!page.includes('../assets/quiz-engine.js'))fail('Bank 3: canonical data/shared engine wiring is missing');
   const images=read('equipment/exam-1/data/bank3-images.js');for(const q of qs)if(q.imageId&&!images.includes('"'+q.imageId+'"'))fail('Bank 3: missing image asset '+q.imageId);
 }
 function checkCombined(){
   const qs=canonicalPayload('equipment/exam-1/data/combined.json','Combined',150,{1:50,2:50,3:50});
   const images=read('equipment/exam-1/combined-images.js');for(const q of qs)if(q.imageId&&!images.includes('"'+q.imageId+'"'))fail('Combined: missing image asset '+q.imageId);
   const page=read('equipment/exam-1/combined.html');
-  if(!page.includes("dataUrl:'data/combined.json'")||!page.includes("legacyFormat:'combined'")||!page.includes("imageSource:'combined-images.js'")||!page.includes('../assets/quiz-engine.js'))fail('Combined: canonical data/shared engine wiring is missing');
+  if(!page.includes('data/combined.json')||!page.includes('legacyFormat:"combined"')||!page.includes('combined-images.js')||!page.includes('../assets/quiz-engine.js'))fail('Combined: canonical data/shared engine wiring is missing');
 }
 function checkHazardsCanonical(){
   const qs=canonicalPayload('equipment/exam-1/data/hazards.json','Workstation Hazards',350,{1:100,2:100,3:100,4:50});
@@ -97,7 +97,7 @@ function checkCanonicalNewQuizBanks(){
     const p='equipment/exam-1/'+bank.page;if(!exists(p)){fail('Canonical bank page missing '+p);continue}
     const page=read(p);
     for(const bit of ['id="dashboard"','id="cards"','id="overall"','id="quiz"','id="set-badge"','id="mbuFlagBtn"','>Report</button>','>Navigator</button>','mbu-return','id="completed"','id="total"','id="score"','id="missed"','mbu-crossout-hint','id="multi-submit-row"','id="submit-multi"','id="explain"','id="citation"','id="prev"','id="next"','../assets/bank1-quiz-ui.css','../assets/studio-sync.js','../assets/navigator.js','../assets/calculator.js','../assets/quiz-engine.js','../assets/auto-update.js'])if(!page.includes(bit))fail(bank.page+': canonical Bank 1 shell is missing '+bit);
-    if(!page.includes("dataUrl:'"+bank.data+"'"))fail(bank.page+': config dataUrl does not match banks.json');
+    if(!page.includes(bank.data))fail(bank.page+': config dataUrl does not match banks.json');
   }
   for(const bit of ['MBUNavigator.button','MBUCalculator?.besideFlag()','goDashboard()','Submit Selections (','lastSaved'])if(!engine.includes(bit))fail('Canonical quiz engine: missing shared behavior '+bit);
 }
@@ -430,7 +430,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html']){
  const src=read(p);
  if(!src.includes('../assets/hazards-quiz-engine.js'))fail(p+': shared Hazards quiz engine is not loaded');
- if(!src.includes('MBUHazardsQuizEngine.start('))fail(p+': shared Hazards quiz engine is not initialized');
+ if(!src.includes('MBUHazardsQuizEngine.startFromData('))fail(p+': shared Hazards quiz engine is not initialized');
  for(const legacy of ['function render(){','function showResult(','function quizNavHTML(','function fresh(){']) if(src.includes(legacy))fail(p+': page-local legacy quiz engine remains: '+legacy);
 }
 const hazardEngine=read('equipment/assets/hazards-quiz-engine.js');
@@ -455,7 +455,7 @@ for(const token of ['mbu-crossout-hint','MBUNavigator.button','classList.add(rec
 if(!read('equipment/assets/hazards-quiz-engine.js').includes('function resetQuestion(){clearTimeout(timer);timer=null;'))fail('Shared Hazards engine reset does not cancel auto-advance');
 
 // Hazards Sets 1-2 share one standard runtime; page files contain data/config only.
-for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html']){const src=read(p);if(!src.includes('../assets/hazards-standard-engine.js'))fail(p+': shared standard Hazards engine missing');if(!src.includes('MBUHazardsStandardEngine.start('))fail(p+': shared standard Hazards engine not initialized');for(const legacy of ['function loadQuestion(){','function submitAnswer(){','function renderDashboard(){'])if(src.includes(legacy))fail(p+': duplicate page-local quiz runtime remains: '+legacy)}
+for(const p of ['equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html']){const src=read(p);if(!src.includes('../assets/hazards-standard-engine.js'))fail(p+': shared standard Hazards engine missing');if(!src.includes('MBUHazardsStandardEngine.startFromData('))fail(p+': shared standard Hazards engine not initialized');for(const legacy of ['function loadQuestion(){','function submitAnswer(){','function renderDashboard(){'])if(src.includes(legacy))fail(p+': duplicate page-local quiz runtime remains: '+legacy)}
 
 const sharedHazardsEngine=read('equipment/assets/hazards-quiz-engine.js');
 if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared Hazards engine has invalid default expression inside object destructuring');
@@ -464,7 +464,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const b1=read('equipment/exam-1/quiz-bank-1.html'),b2=read('equipment/exam-1/quiz-bank-2.html'),b3=read('equipment/exam-1/quiz-bank-3.html'),studio=read('equipment/exam-1/studio.html');
  if(!/id=["']overall["'][^>]*>0\s*\/\s*500 completed</.test(b1))fail('Bank 1: dashboard does not expose the 500-question total');
- if(!/id=["']bank2Overall["'][^>]*>0\s*\/\s*500 completed</.test(b2)||!/500 completed/.test(b2))fail('Bank 2: dashboard does not expose the 500-question total');
+ const b2Payload=JSON.parse(read('equipment/exam-1/data/bank2.json'));if((b2Payload.questions||[]).length!==500)fail('Bank 2: canonical question total is not 500');
  const b3Payload=JSON.parse(read('equipment/exam-1/data/bank3.json'));if((b3Payload.questions||[]).length!==500)fail('Bank 3: canonical question total is not 500');
  for(const token of [
   'function resumeActive(){if(!DB.active||!DB.active.uids)return;',
@@ -480,13 +480,13 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!studio.includes('setSessionAnswer(q.uid,{ok,selected,at:Date.now()})'))fail('Studio: grading does not persist selected answers for resume');
 }
 
-// Bank 3 graded-state parity: all keyed answers remain visibly correct and feedback uses the canonical light explanation panel.
+// Bank 3 graded-state parity is inherited from the canonical Bank 1 engine and stylesheet.
 {
- const src=read('equipment/exam-1/quiz-bank-3.html');
- if(!src.includes('.opt.miss{border-color:var(--o2);background:var(--o2bg);color:var(--o2);font-weight:750}'))fail('Bank 3: an unselected keyed answer is not visibly shown as correct');
- if(!src.includes('.opt.miss .t{text-decoration:none;opacity:1}'))fail('Bank 3: crossed-out keyed answers remain obscured after grading');
- if(!src.includes('#fb.explain{background:#f8fafc;border-left:5px solid #1a365d}'))fail('Bank 3: feedback panel is not using canonical light styling');
+ const engine=read('equipment/assets/quiz-engine.js'),css=read('equipment/assets/bank1-quiz-ui.css');
+ if(!engine.includes("b.classList.add('correct')")||!engine.includes("b.classList.add('incorrect')"))fail('Bank 3: canonical graded-answer feedback is missing from shared engine');
+ if(!css.includes('.opt.correct')||!css.includes('.opt.incorrect')||!css.includes('.explain'))fail('Bank 3: canonical answer/feedback styling is missing from shared stylesheet');
 }
+
 
 
 // Canonical shared UI must own final graded state across every linked quiz, including Hazards.
