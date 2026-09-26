@@ -22,7 +22,11 @@
 
   async function establishBaseline() {
     if (baseline) return;
-    try { baseline = await readBuild(); sessionStorage.setItem(BUILD_CACHE_KEY, baseline); } catch {}
+    try {
+      baseline = await readBuild();
+      lastCheck = Date.now();
+      sessionStorage.setItem(BUILD_CACHE_KEY, baseline);
+    } catch {}
   }
 
   async function check(force = false) {
