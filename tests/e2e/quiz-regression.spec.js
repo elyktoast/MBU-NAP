@@ -505,7 +505,7 @@ test.describe('canonical quiz regression', () => {
     });
     expect(figure.uid).toBeTruthy();
     expect(figure.url).toMatch(/^images\/bank3\/[A-Za-z0-9_-]+\.png$/);
-    await expect(page.locator('#qimage img')).toHaveAttribute('src', /\/equipment\/exam-1\/images\/bank3\/[A-Za-z0-9_-]+\.png$/, { timeout: 10000 });
+    await expect(page.locator('#qimage img')).toHaveAttribute('src', /^images\/bank3\/[A-Za-z0-9_-]+\.png$/, { timeout: 10000 });
     await expect.poll(() => imageResponses.some(x => x.status === 200 || x.status === 304)).toBeTruthy();
     expect(errors).toEqual([]);
   });
