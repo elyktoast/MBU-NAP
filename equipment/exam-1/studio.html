@@ -110,17 +110,15 @@ function showLoadErrors(errors){
   else{el.classList.add('hidden');el.textContent=''}
 }
 async function loadBanks(){
-  ALL=[];seedStudioSourceCatalog();buildTopics();
-  const errors=[],sources=[
-    ['studio-bank1.json','b1','Quiz Bank 1'],
-    ['studio-bank2.json','b2','Quiz Bank 2'],
-    ['studio-bank3.json','b3','Quiz Bank 3'],
-    ['combined-questions.js','combined','Combined'],
-    ['hazards-100.html','h1','Hazards Practice Set 1'],
-    ['hazards-bank-2.html','h2','Hazards Practice Set 2'],
-    ['studio-hazards3.json','h3','Hazards Practice Set 3'],
-    ['studio-challenge.json','hh','Hazards Challenge Set']
-  ];
+  ALL=[];ALL_BY_UID.clear();ALL_UIDS.clear();BANK_QUESTIONS.clear();STUDIO_TOPIC_COUNTS.clear();
+  const errors=[];
+  try{
+    BANK_MANIFEST=JSON.parse(await studioFetch('banks.json'));
+    if(!BANK_MANIFEST||!Array.isArray(BANK_MANIFEST.studioSources))throw Error('invalid bank manifest');
+  }catch(e){showLoadErrors(['Bank manifest: '+e.message]);console.error(e);return}
+  STUDIO_SOURCE_CATALOG=BANK_MANIFEST.studioSources.map(src=>({bank:src.key,label:src.groupLabel||src.label,sets:src.sets,setLabels:src.setLabels||null,count:src.count}));
+  seedStudioSourceCatalog();buildTopics();
+  const sources=BANK_MANIFEST.studioSources.map(src=>[src.data,src.key,src.label,src]);
   // Paint the Studio immediately; question banks hydrate in the background.
   try{renderHome()}catch(e){}
   const loadSource=async([url,key,label])=>{
