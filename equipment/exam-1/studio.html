@@ -125,7 +125,7 @@ async function loadBanks(){
       }
     }catch(e){errors.push(label+': '+(e&&e.name==='AbortError'?'timed out':e.message));console.error('Studio source failed:',label,e);return []}
   };
-  const loaded=[];for(const source of sources){loaded.push(await loadSource(source));await new Promise(resolve=>setTimeout(resolve,0))}
+  const loaded=await Promise.all(sources.map(loadSource));
   ALL=loaded.flat();
   const bankOrder=['b1','b2','b3','h1','h2','h3','hh'];ALL.sort((a,b)=>bankOrder.indexOf(a.bank)-bankOrder.indexOf(b.bank)||a.set-b.set||a.seq-b.seq);
   ALL_BY_UID=new Map(ALL.map(q=>[q.uid,q]));ALL_UIDS=new Set(ALL_BY_UID.keys());BANK_QUESTIONS=new Map();for(const q of ALL){if(!BANK_QUESTIONS.has(q.bank))BANK_QUESTIONS.set(q.bank,[]);BANK_QUESTIONS.get(q.bank).push(q)}
@@ -152,7 +152,7 @@ function syncBankData(){
     if(b2&&b2.sets)for(let s=0;s<5;s++){const st=b2.sets[s]||{},qs=(BANK_QUESTIONS.get('b2')||[]).filter(q=>q.set===s+1);Object.entries(st.answered||{}).forEach(([i,ok])=>put(qs[+i],ok,'b2'))}
   }catch(e){}
   try{
-    const raw=localStorage.getItem('srna_equipment_dashboard_v1')||localStorage.getItem('mbu_bank3_progress')||localStorage.getItem('MBU_BANK3_PROGRESS');
+    const raw=localStorage.getItem('srna_equipment_dashboard_v1');
     const b3=raw&&JSON.parse(raw),byId=new Map((BANK_QUESTIONS.get('b3')||[]).map(q=>[String(q.uid).slice(3),q]));
     if(b3&&b3.ex)Object.values(b3.ex).forEach(exam=>Object.entries(exam.ans||{}).forEach(([id,result])=>put(byId.get(String(id)),result&&result.ok,'b3')));
     else if(b3&&b3.answered)Object.entries(b3.answered).forEach(([id,ok])=>put(byId.get(String(id)),ok,'b3'))
