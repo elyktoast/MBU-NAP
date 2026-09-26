@@ -33,6 +33,7 @@
       for(const [k,v] of Object.entries(src)){
         const nk=normalizeKey(k);
         if(nk!==k) changed=true;
+        if((field==='flags'||field==='crosses')&&!v){changed=true;continue}
         if(!(nk in next)) next[nk]=v;
       }
       d[field]=next;
