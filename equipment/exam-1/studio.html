@@ -219,7 +219,8 @@ async function hydrateStudioImage(q,host){
   try{
     let data=STUDIO_IMAGE_CACHE.get(cacheKey);
     if(!data){
-      const src=await studioFetch(q.img.url),safe=String(imageKey).replace(/[.*+?^$()|[\]\\]/g,'\\function studioImageHTML(q){if(!q.img)return '';if(typeof q.img==='string'){if(q.img.trim().startsWith('<'))return q.img;if(/^data:image\/(?:png|jpeg|gif|webp);base64,[A-Za-z0-9+/=]+$/.test(q.img))return '<img alt="Question figure" style="max-width:100%;height:auto" src="'+q.img+'">';return ''}if(q.img.kind==='bank3'&&q.img.key)return '<span class="mut">Figure available in Quiz Bank 3.</span>';if(q.img.kind==='hazards'&&q.img.imgKey)return '<span class="mut">Figure available in '+esc(q.bankLabel)+'.</span>';return ''}');
+      const src=await studioFetch(q.img.url),safe=String(imageKey).replace(/[^A-Za-z0-9_-]/g,'');
+      if(!safe||safe!==String(imageKey))throw Error('invalid figure key');
       const match=src.match(new RegExp('"'+safe+'"\\s*:\\s*"([A-Za-z0-9+/=]+)"'));
       if(!match)throw Error('figure payload not found');
       data=match[1];STUDIO_IMAGE_CACHE.set(cacheKey,data);
