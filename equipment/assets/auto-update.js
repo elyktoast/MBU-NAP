@@ -1,8 +1,9 @@
 (() => {
-  const CHECK_COOLDOWN = 60000;
+  const CHECK_COOLDOWN = 120000;
+  const BUILD_CACHE_KEY = 'mbu_build_manifest_v1';
   const script = document.currentScript;
   const manifestUrl = new URL('../build.json', script?.src || location.href);
-  let baseline = null;
+  let baseline = sessionStorage.getItem(BUILD_CACHE_KEY) || null;
   let checking = false;
   let lastCheck = 0;
 
@@ -19,7 +20,7 @@
 
   async function establishBaseline() {
     if (baseline) return;
-    try { baseline = await readBuild(); } catch {}
+    try { baseline = await readBuild(); sessionStorage.setItem(BUILD_CACHE_KEY, baseline); } catch {}
   }
 
   async function check(force = false) {
@@ -29,11 +30,12 @@
     lastCheck = now;
     try {
       const latest = await readBuild();
-      if (!baseline) { baseline = latest; return; }
+      if (!baseline) { baseline = latest; sessionStorage.setItem(BUILD_CACHE_KEY, baseline); return; }
       if (latest !== baseline) {
         const reload = new URL(location.href);
         if (reload.searchParams.get('_mbu_reload') === latest) {
           baseline = latest;
+          sessionStorage.setItem(BUILD_CACHE_KEY, baseline);
           return;
         }
         reload.searchParams.set('_mbu_reload', latest);
