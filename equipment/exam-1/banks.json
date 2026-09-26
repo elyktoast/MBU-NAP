@@ -60,7 +60,7 @@
       ],
       "questionsPerSet": 100,
       "engine": "canonical",
-      "imageSource": "bank3-images.js",
+      "imageSource": "data/bank3-images.js",
       "imageKind": "bank3",
       "storageKey": "srna_equipment_dashboard_v1"
     },
@@ -191,7 +191,7 @@
         5
       ],
       "count": 100,
-      "imageSource": "bank3-images.js",
+      "imageSource": "data/bank3-images.js",
       "imageKind": "bank3"
     },
     {
