@@ -510,6 +510,42 @@ test.describe('canonical quiz regression', () => {
     expect(errors).toEqual([]);
   });
 
+  test('Studio isolates a failed source and retries only that source', async ({ page }) => {
+    let failBank3 = true;
+    await page.route('**/data/bank3.json', async route => {
+      if (failBank3) {
+        failBank3 = false;
+        await route.fulfill({ status: 503, body: 'temporary failure' });
+      } else {
+        await route.continue();
+      }
+    });
+    await page.goto(exam + '/studio.html');
+    await expect(page.locator('#studioLoadPanel')).toBeVisible();
+    await expect(page.locator('#studioLoadSummary')).toContainText('1 failed');
+    await expect(page.locator('#studio-retry-b3')).toBeVisible();
+    expect(await page.evaluate(() => BANK_QUESTIONS.get('b3')?.length || 0)).toBe(0);
+    expect(await page.evaluate(() => BANK_QUESTIONS.get('b1')?.length || 0)).toBe(500);
+    await page.locator('#studio-retry-b3').click();
+    await expect.poll(() => page.evaluate(() => BANK_QUESTIONS.get('b3')?.length || 0), { timeout: 15000 }).toBe(500);
+    await expect(page.locator('#studioLoadPanel')).toBeHidden();
+    expect(await page.evaluate(() => ALL_BY_UID.size)).toBe(2000);
+  });
+
+  test('Studio startup does not rewrite unchanged Studio storage', async ({ page }) => {
+    await page.addInitScript(() => {
+      window.__studioStoreWrites = 0;
+      const original = Storage.prototype.setItem;
+      Storage.prototype.setItem = function(key, value) {
+        if (this === localStorage && key === 'mbu_exam1_studio_v1') window.__studioStoreWrites++;
+        return original.call(this, key, value);
+      };
+    });
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    expect(await page.evaluate(() => window.__studioStoreWrites)).toBe(0);
+  });
+
   test('Studio active session resumes with position and answer state after reload', async ({ page }) => {
     await page.goto(exam + '/studio.html');
     await waitForStudio(page);

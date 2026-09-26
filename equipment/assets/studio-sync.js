@@ -80,7 +80,7 @@
   }
   function flagged(bank,q){return !!db().flags[key(bank,q)]}
   function toggleFlag(bank,q){const d=db(),k=key(bank,q),next=!d.flags[k];if(next)d.flags[k]=true;else delete d.flags[k];save(d);return next}
-  function answer(bank,q,ok){const d=db(),b=normalizeBank(bank),k=key(b,q);d.ans[k]={ok:!!ok,at:Date.now(),topic:topicOf(q),bank:b};save(d)}
+  function stageAnswer(bank,q,ok){const d=db(),b=normalizeBank(bank),k=key(b,q);d.ans[k]={ok:!!ok,at:Date.now(),topic:topicOf(q),bank:b};return d}\n  function answer(bank,q,ok){const d=stageAnswer(bank,q,ok);save(d)}
 
   function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
   function arr(v){return Array.isArray(v)?v:(v===undefined||v===null?[]:[v])}
@@ -217,5 +217,5 @@
     return true;
   }
 
-  window.MBUStudio={STORE,db,save,key,flagged,toggleFlag,answer,report,normalizeBank,topicOf,questionMeta,pendingReports,sendSavedReports};
+  window.MBUStudio={STORE,db,save,key,flagged,toggleFlag,stageAnswer,answer,report,normalizeBank,topicOf,questionMeta,pendingReports,sendSavedReports};
 })();

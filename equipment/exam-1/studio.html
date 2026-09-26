@@ -32,7 +32,7 @@ body{background:#edf2f7}
 #analytics{padding:6px 0 0;max-width:780px}
 .topic{grid-template-columns:minmax(160px,240px) 60px 1fr!important;margin:8px 0!important}
 #home>h2:last-of-type{margin-top:24px}
-#reportN{display:inline-block;margin-right:10px}
+#reportN{display:inline-block;margin-right:10px}.studio-load-panel{margin:0 0 18px;padding:12px 14px;border:1px solid #bee3f8;border-radius:9px;background:#ebf8ff}.studio-load-summary{font-weight:800;color:#1a365d}.studio-load-sources{display:grid;gap:6px;margin-top:8px}.studio-load-source{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:.88rem}.studio-load-source .mut{font-size:.82rem}.studio-load-source.failed{color:#9b2c2c}.studio-load-source .btn{padding:5px 8px;font-size:.78rem}
 #home>h2:last-of-type+.mut+.btn{padding:8px 12px}
 .btn{transition:transform .08s ease,box-shadow .12s ease}
 .btn:hover{box-shadow:0 2px 7px #0002}
@@ -51,11 +51,11 @@ body{background:#edf2f7}
 }
 </style>
 </head><body><div class="wrap"><div class="panel top"><div><h1 style="margin:0" id="studioTitle">Exam 1 Study Studio</h1><div class="mut hidden" id="loadmsg" role="status" aria-live="polite"></div></div><div class="controls"><button class="btn out mbu-return hidden" id="studioHomeNav" onclick="renderHome()">← Study Studio Home</button></div></div>
-<section id="home" class="panel"><div class="grid"><div class="card"><h3>Cumulative Missed</h3><div id="missedN" class="mut"></div><button class="btn" onclick="startMode('missed')">Review All Missed</button></div><div class="card"><h3>Flagged</h3><div id="flagN" class="mut"></div><button class="btn" onclick="startMode('flagged')">Review Flagged</button></div><div class="card"><h3>Weak Areas</h3><div class="mut">Builds practice from your lowest-scoring topics.</div><button class="btn" onclick="startMode('weak')">Adaptive Practice</button></div><div class="card"><h3>Question Search</h3><div class="mut">Search all loaded banks by question, topic, explanation, or source.</div><button class="btn" onclick="show('search')">Search Repository</button></div></div><h2>Start a Session</h2><div class="controls" style="margin-bottom:10px"><button class="btn" id="buildSetsBtn" onclick="setBuildMode('sets')">From Practice Sets</button><button class="btn out" id="buildTopicsBtn" onclick="setBuildMode('topics')">From Topics</button></div><div class="mut" id="buildModeHelp" style="margin-bottom:10px">Choose one or more practice sets. Questions can come from any topic in those sets.</div><div class="session-builder"><div class="pickbox" id="sourcePickbox"><h4>Banks &amp; Practice Sets</h4><div class="pickactions"><button class="btn out tiny" onclick="setChecks('sourceChecks',true)">Select All</button><button class="btn out tiny" onclick="setChecks('sourceChecks',false)">Clear</button></div><div id="sourceChecks" class="checklist"></div></div><div class="pickbox hidden" id="topicPickbox"><h4>Topics</h4><div class="pickactions"><button class="btn out tiny" onclick="setChecks('topicChecks',true)">Select All</button><button class="btn out tiny" onclick="setChecks('topicChecks',false)">Clear</button></div><div id="topicChecks" class="checklist"></div></div><div class="pickbox"><h4>Session Options</h4><div class="mut" style="margin-bottom:5px">Question count</div><select id="count" class="field" style="width:100%;margin-bottom:10px"><option>10</option><option>25</option><option>50</option><option selected>100</option><option>150</option><option>200</option><option value="all">All matching</option></select><div class="mut" style="margin-bottom:5px">Order</div><select id="order" class="field" style="width:100%;margin-bottom:12px"><option value="random">Random</option><option value="sequential">Sequential</option></select><button class="btn" style="width:100%" onclick="startMode('custom')">Start Session</button></div></div><div class="mut">Session source can be practice sets or topics. Topic mode pulls matching questions across every loaded bank and Hazards set.</div><h2>Performance by Topic</h2><div id="analytics"></div><h2>Question Reports</h2><div class="mut" id="reportN"></div><button class="btn out" onclick="showReports()">View Reports</button></section>
+<section id="home" class="panel" aria-busy="true"><div id="studioLoadPanel" class="studio-load-panel hidden" role="status" aria-live="polite"><div id="studioLoadSummary" class="studio-load-summary"></div><div id="studioLoadSources" class="studio-load-sources"></div></div><div class="grid"><div class="card"><h3>Cumulative Missed</h3><div id="missedN" class="mut"></div><button class="btn" onclick="startMode('missed')">Review All Missed</button></div><div class="card"><h3>Flagged</h3><div id="flagN" class="mut"></div><button class="btn" onclick="startMode('flagged')">Review Flagged</button></div><div class="card"><h3>Weak Areas</h3><div class="mut">Builds practice from your lowest-scoring topics.</div><button class="btn" onclick="startMode('weak')">Adaptive Practice</button></div><div class="card"><h3>Question Search</h3><div class="mut">Search all loaded banks by question, topic, explanation, or source.</div><button class="btn" onclick="show('search')">Search Repository</button></div></div><h2>Start a Session</h2><div class="controls" style="margin-bottom:10px"><button class="btn" id="buildSetsBtn" onclick="setBuildMode('sets')">From Practice Sets</button><button class="btn out" id="buildTopicsBtn" onclick="setBuildMode('topics')">From Topics</button></div><div class="mut" id="buildModeHelp" style="margin-bottom:10px">Choose one or more practice sets. Questions can come from any topic in those sets.</div><div class="session-builder"><div class="pickbox" id="sourcePickbox"><h4>Banks &amp; Practice Sets</h4><div class="pickactions"><button class="btn out tiny" onclick="setChecks('sourceChecks',true)">Select All</button><button class="btn out tiny" onclick="setChecks('sourceChecks',false)">Clear</button></div><div id="sourceChecks" class="checklist"></div></div><div class="pickbox hidden" id="topicPickbox"><h4>Topics</h4><div class="pickactions"><button class="btn out tiny" onclick="setChecks('topicChecks',true)">Select All</button><button class="btn out tiny" onclick="setChecks('topicChecks',false)">Clear</button></div><div id="topicChecks" class="checklist"></div></div><div class="pickbox"><h4>Session Options</h4><div class="mut" style="margin-bottom:5px">Question count</div><select id="count" class="field" style="width:100%;margin-bottom:10px"><option>10</option><option>25</option><option>50</option><option selected>100</option><option>150</option><option>200</option><option value="all">All matching</option></select><div class="mut" style="margin-bottom:5px">Order</div><select id="order" class="field" style="width:100%;margin-bottom:12px"><option value="random">Random</option><option value="sequential">Sequential</option></select><button class="btn" style="width:100%" onclick="startMode('custom')">Start Session</button></div></div><div class="mut">Session source can be practice sets or topics. Topic mode pulls matching questions across every loaded bank and Hazards set.</div><h2>Performance by Topic</h2><div id="analytics"></div><h2>Question Reports</h2><div class="mut" id="reportN"></div><button class="btn out" onclick="showReports()">View Reports</button></section>
 <section id="quiz" class="panel hidden mbu-bank1-ui"><div class="header"><div class="row"><span class="badge" id="sessionBadge">STUDY STUDIO</span><button class="btn out" id="flagBtn" onclick="toggleFlag()">☆ Flag</button><button class="btn out" onclick="reportCurrent()">Report</button><button class="btn out" onclick="toggleNav()">Navigator</button><button class="btn out mbu-return" onclick="renderHome()">← Study Studio Home</button></div><div class="progress" id="qprog"></div></div><div class="stats"><div>Completed: <strong id="sessionCompleted">0</strong>/<span id="sessionTotal">0</span></div><div>Score: <strong id="sessionScore">0</strong>%</div><div>Missed: <strong id="sessionMissed">0</strong></div></div><div id="navigator" class="row hidden" style="flex-wrap:wrap;gap:6px;margin:8px 0 14px;max-height:180px;overflow:auto;padding:3px"></div><div class="type" id="qmeta"></div><div class="stem" id="stem"></div><div class="mbu-crossout-hint">Tip: Right-click an answer to cross it out.</div><div id="qimage" class="image hidden"></div><div class="options" id="opts"></div><div class="row" id="studio-submit-row" style="display:none;margin:4px 0 18px;justify-content:flex-end"><button class="btn" id="submit" onclick="grade()">Submit Answer</button></div><div id="fb" class="explain"><div id="fbText"></div><div id="fbCitation" class="cite"></div></div><div class="controls"><button class="btn out" id="studioPrev" onclick="studioNav(-1)">Previous</button><div class="row"><button class="btn out" onclick="resetStudioCurrent()">Reset</button><button class="btn" id="next" onclick="studioNav(1)">Next</button></div></div></section>
 <section id="search" class="panel hidden"><h2>Question Repository Search</h2><input id="searchbox" class="field" style="width:100%" placeholder="Search PIP, vaporizer, scavenging…" oninput="doSearch()"><div id="searchresults"></div></section><section id="reports" class="panel hidden"><h2>Saved Question Reports</h2><div class="controls" style="margin-bottom:10px"><button class="btn" id="sendSavedReportsBtn" type="button" onclick="sendSavedReports()">Send Saved Reports</button><button class="btn out" type="button" onclick="renderHome()">← Study Studio Home</button></div><div class="mut" id="savedReportStatus" role="status" aria-live="polite"></div><div id="reportlist"></div></section></div><script src="../assets/studio-sync.js?v=68"></script><script src="../assets/navigator.js?v=68"></script><script>
 const STORE=MBUStudio.STORE;let DB=MBUStudio.db();if(!DB.active)DB.active=null;DB.crosses=DB.crosses||{};
-let BANK_MANIFEST=null,STUDIO_SOURCE_CATALOG=[];
+let BANK_MANIFEST=null,STUDIO_SOURCE_CATALOG=[],STUDIO_SOURCES=[],STUDIO_SOURCE_ORDER=[],STUDIO_SOURCE_BY_KEY=new Map(),STUDIO_SOURCE_STATE=new Map();
 let ALL=[],ALL_BY_UID=new Map(),ALL_UIDS=new Set(),BANK_QUESTIONS=new Map(),STUDIO_BANK_LABELS=new Map(),STUDIO_SET_NAMES=new Map(),STUDIO_SET_COUNTS=new Map(),STUDIO_TOPIC_COUNTS=new Map(),session=[],pos=0,sel=new Set(),graded=false,autoTimer=null;
 function seedStudioSourceCatalog(){
   STUDIO_BANK_LABELS.clear();STUDIO_SET_NAMES.clear();STUDIO_SET_COUNTS.clear();
@@ -106,66 +106,88 @@ async function studioFetch(url){
 function showLoadErrors(errors){
   const el=document.getElementById('loadmsg');
   if(!el)return;
-  if(errors.length){el.classList.remove('hidden');el.textContent='Some question sets could not be loaded: '+errors.join(' | ')}
+  if(errors.length){el.classList.remove('hidden');el.textContent=errors.join(' | ')}
   else{el.classList.add('hidden');el.textContent=''}
 }
+function renderStudioLoadState(){
+  const panel=document.getElementById('studioLoadPanel'),summary=document.getElementById('studioLoadSummary'),list=document.getElementById('studioLoadSources'),home=document.getElementById('home'),top=document.getElementById('loadmsg');
+  if(!panel||!summary||!list)return;
+  const states=[...STUDIO_SOURCE_STATE.values()],total=states.length,ready=states.filter(x=>x.status==='ready').length,failed=states.filter(x=>x.status==='failed').length,loading=states.filter(x=>x.status==='loading').length;
+  if(home)home.setAttribute('aria-busy',loading?'true':'false');
+  if(!total){panel.classList.add('hidden');return}
+  const complete=ready+failed;
+  const text=loading?'Loading question banks… '+complete+' / '+total+' complete · '+ALL.length+' questions ready':failed?ready+' / '+total+' sources ready · '+failed+' failed · '+ALL.length+' questions available':'All '+total+' sources ready · '+ALL.length+' questions loaded';
+  summary.textContent=text;
+  if(top){top.textContent=text;top.classList.toggle('hidden',!loading&&!failed)}
+  list.innerHTML=states.map(x=>'<div class="studio-load-source '+(x.status==='failed'?'failed':'')+'"><span><b>'+esc(x.label)+'</b> <span class="mut">· '+(x.status==='ready'?(x.count+' questions ready'):x.status==='failed'?('failed: '+esc(x.error)):x.status==='loading'?'loading…':'waiting')+'</span></span>'+(x.status==='failed'?'<button class="btn out" type="button" id="studio-retry-'+esc(x.key)+'" onclick="retryStudioSource(\''+esc(x.key)+'\')">Retry</button>':'')+'</div>').join('');
+  panel.classList.toggle('hidden',!loading&&!failed);
+}
+function addLoadedQuestions(qs){
+  if(!qs.length)return;
+  ALL.push(...qs);
+  for(const q of qs){
+    ALL_BY_UID.set(q.uid,q);ALL_UIDS.add(q.uid);
+    if(!BANK_QUESTIONS.has(q.bank))BANK_QUESTIONS.set(q.bank,[]);
+    BANK_QUESTIONS.get(q.bank).push(q);
+    if(!String(q.bank).startsWith('h'))STUDIO_BANK_LABELS.set(q.bank,q.bankLabel);
+    const sk=sourceSetKey(q);if(!STUDIO_SET_NAMES.has(sk))STUDIO_SET_NAMES.set(sk,setLabel(q));
+    STUDIO_TOPIC_COUNTS.set(q.topic,(STUDIO_TOPIC_COUNTS.get(q.topic)||0)+1);
+  }
+}
+function sortLoadedQuestions(){
+  ALL.sort((a,b)=>STUDIO_SOURCE_ORDER.indexOf(a.bank)-STUDIO_SOURCE_ORDER.indexOf(b.bank)||a.set-b.set||a.seq-b.seq);
+  for(const qs of BANK_QUESTIONS.values())qs.sort((a,b)=>a.set-b.set||a.seq-b.seq)
+}
+async function hydrateStudioSource(source){
+  const [url,key,label,meta]=source,state=STUDIO_SOURCE_STATE.get(key)||{key,label,status:'waiting',count:0,error:''};
+  state.status='loading';state.error='';STUDIO_SOURCE_STATE.set(key,state);renderStudioLoadState();
+  try{
+    const t=await studioFetch(url);
+    if(meta.format!=='canonical')throw Error('unsupported source format '+meta.format);
+    const payload=JSON.parse(t),all=Array.isArray(payload)?payload:(payload.questions||[]);
+    if(!Array.isArray(all))throw Error('canonical question data is invalid');
+    const raw=meta.setFilter?all.filter(q=>Number(q.set)===Number(meta.setFilter)):all;
+    const qs=raw.map((q,i)=>{
+      let img=q.imageSvg||q.image||null;
+      if(meta.imageBase){
+        const rawKey=q.imageId||q.image||'',safe=String(rawKey).replace(/[^A-Za-z0-9_-]/g,'');
+        if(safe&&safe===String(rawKey))img={kind:'direct',url:meta.imageBase.replace(/\/?$/,'/')+safe+'.png'};
+      }
+      const studioSet=String(key).startsWith('h')?1:(q.set||1);
+      return norm({...q,img},key,studioSet,i,label,String(key).startsWith('h')?'Workstation Hazards':undefined)
+    });
+    addLoadedQuestions(qs);state.status='ready';state.count=qs.length;state.error='';
+    try{buildTopics()}catch(e){console.error('Studio selector render failed:',label,e)}
+    renderStudioLoadState();return true
+  }catch(e){
+    state.status='failed';state.count=0;state.error=e&&e.name==='AbortError'?'timed out':String(e&&e.message?e.message:e);
+    console.error('Studio source failed:',label,e);renderStudioLoadState();return false
+  }
+}
+async function retryStudioSource(key){
+  const state=STUDIO_SOURCE_STATE.get(key),source=STUDIO_SOURCE_BY_KEY.get(key);
+  if(!state||state.status!=='failed'||!source)return;
+  const ok=await hydrateStudioSource(source);
+  if(!ok)return;
+  sortLoadedQuestions();syncBankData();buildTopics();renderHome();renderStudioLoadState()
+}
 async function loadBanks(){
-  ALL=[];ALL_BY_UID.clear();ALL_UIDS.clear();BANK_QUESTIONS.clear();STUDIO_TOPIC_COUNTS.clear();
-  const errors=[];
+  ALL=[];ALL_BY_UID.clear();ALL_UIDS.clear();BANK_QUESTIONS.clear();STUDIO_TOPIC_COUNTS.clear();STUDIO_SOURCE_STATE.clear();STUDIO_SOURCE_BY_KEY.clear();
   try{
     BANK_MANIFEST=JSON.parse(await studioFetch('banks.json'));
     if(!BANK_MANIFEST||!Array.isArray(BANK_MANIFEST.studioSources))throw Error('invalid bank manifest');
-  }catch(e){showLoadErrors(['Bank manifest: '+e.message]);console.error(e);return}
+  }catch(e){showLoadErrors(['Bank manifest failed: '+e.message]);console.error(e);document.getElementById('home')?.setAttribute('aria-busy','false');return}
   STUDIO_SOURCE_CATALOG=BANK_MANIFEST.studioSources.map(src=>({bank:src.key,label:src.groupLabel||src.label,sets:src.sets,setLabels:src.setLabels||null,count:src.count}));
   seedStudioSourceCatalog();buildTopics();
-  const sources=BANK_MANIFEST.studioSources.map(src=>[src.data,src.key,src.label,src]);
-  // Paint the Studio immediately; question banks hydrate in the background.
+  STUDIO_SOURCES=BANK_MANIFEST.studioSources.map(src=>[src.data,src.key,src.label,src]);
+  STUDIO_SOURCE_ORDER=STUDIO_SOURCES.map(x=>x[1]);
+  for(const source of STUDIO_SOURCES){const [,key,label]=source;STUDIO_SOURCE_BY_KEY.set(key,source);STUDIO_SOURCE_STATE.set(key,{key,label,status:'waiting',count:0,error:''})}
   try{renderHome()}catch(e){}
-  const loadSource=async([url,key,label,meta])=>{
-    try{
-      const t=await studioFetch(url);
-      if(meta.format==='canonical'){
-        const payload=JSON.parse(t),all=Array.isArray(payload)?payload:(payload.questions||[]);
-        if(!Array.isArray(all))throw Error('canonical question data is invalid');
-        const qs=meta.setFilter?all.filter(q=>Number(q.set)===Number(meta.setFilter)):all;
-        return qs.map((q,i)=>{
-          let img=q.imageSvg||q.image||null;
-          if(meta.imageBase){
-            const rawKey=q.imageId||q.image||'',safe=String(rawKey).replace(/[^A-Za-z0-9_-]/g,'');
-            if(safe&&safe===String(rawKey))img={kind:'direct',url:meta.imageBase.replace(/\/?$/,'/')+safe+'.png'};
-          }
-          const studioSet=String(key).startsWith('h')?1:(q.set||1);
-          return norm({...q,img},key,studioSet,i,label,String(key).startsWith('h')?'Workstation Hazards':undefined)
-        })
-      }
-      throw Error('unsupported source format '+meta.format)
-    }catch(e){errors.push(label+': '+(e&&e.name==='AbortError'?'timed out':e.message));console.error('Studio source failed:',label,e);return []}
-  };
-  const bankOrder=sources.map(x=>x[1]);
-  const addLoaded=qs=>{
-    if(!qs.length)return;
-    ALL.push(...qs);
-    for(const q of qs){
-      ALL_BY_UID.set(q.uid,q);ALL_UIDS.add(q.uid);
-      if(!BANK_QUESTIONS.has(q.bank))BANK_QUESTIONS.set(q.bank,[]);
-      BANK_QUESTIONS.get(q.bank).push(q);
-      if(!String(q.bank).startsWith('h'))STUDIO_BANK_LABELS.set(q.bank,q.bankLabel);
-      const sk=sourceSetKey(q);if(!STUDIO_SET_NAMES.has(sk))STUDIO_SET_NAMES.set(sk,setLabel(q));
-      STUDIO_TOPIC_COUNTS.set(q.topic,(STUDIO_TOPIC_COUNTS.get(q.topic)||0)+1);
-    }
-  };
-  const loadmsg=document.getElementById('loadmsg');if(loadmsg){loadmsg.classList.remove('hidden');loadmsg.textContent='Loading question banks…'}
-  let completed=0;
-  await Promise.all(sources.map(async source=>{
-    const qs=await loadSource(source);
-    if(qs.length){addLoaded(qs);try{buildTopics()}catch(e){errors.push(source[2]+': selector render failed: '+e.message);console.error(e)}}
-    completed++;
-    if(loadmsg)loadmsg.textContent='Loading question banks… '+completed+' / '+sources.length;
-  }));
-  ALL.sort((a,b)=>bankOrder.indexOf(a.bank)-bankOrder.indexOf(b.bank)||a.set-b.set||a.seq-b.seq);
-  for(const qs of BANK_QUESTIONS.values())qs.sort((a,b)=>a.set-b.set||a.seq-b.seq);
-  try{syncBankData();buildTopics();const params=new URLSearchParams(location.search),requested=params.get('mode');if(requested==='hazards-missed')startMode('hazards-missed');else if(requested==='combined-missed')startMode('combined-missed');else renderHome()}catch(e){errors.push('Studio render: '+e.message);console.error(e)}
-  showLoadErrors(errors);
+  renderStudioLoadState();
+  await Promise.all(STUDIO_SOURCES.map(source=>hydrateStudioSource(source)));
+  sortLoadedQuestions();
+  try{syncBankData();buildTopics();const params=new URLSearchParams(location.search),requested=params.get('mode');if(requested==='hazards-missed')startMode('hazards-missed');else if(requested==='combined-missed')startMode('combined-missed');else renderHome()}catch(e){showLoadErrors(['Studio render failed: '+e.message]);console.error(e)}
+  renderStudioLoadState()
 }
 function canonicalTopic(topic){const name=String(topic||'Other').trim();const low=name.toLowerCase().replace(/₂/g,'2');if(low.includes('co2')&&low.includes('scaveng'))return 'CO₂ & Scavenging';if(low.includes('medical gas'))return 'Medical Gases';if(low.includes('airway equipment')||low==='airway')return 'Airway';if(low.includes('intraoperative assessment')||low.startsWith('monitoring'))return 'Monitoring';if(low.includes('workstation hazards')||low.includes('hazards & safety'))return 'Workstation Hazards';return name}
 function inferredTopic(q){if(q.topic)return q.topic;if(q.lec)return q.lec;const refs=Array.isArray(q.ref)?q.ref.join('; '):'';const src=String(q.citation||q.src||refs||'').trim();if(/^Medical Gas Systems in Anesthesia/i.test(src))return 'Medical Gases';if(/^Intraoperative Assessment|^Monitoring/i.test(src))return 'Monitoring';if(/^Airway Equipment/i.test(src))return 'Airway';if(/^CO2 and Scavenging|^CO2 Absorbents and Scavenging|^CO₂ & Scavenging/i.test(src))return 'CO₂ & Scavenging';if(/^Anesthesia Workstation Hazards|^Hazards & safety/i.test(src))return 'Workstation Hazards';return 'Other'}
@@ -177,7 +199,8 @@ function norm(q,b,set,i,label,forcedTopic){
   const stem=String(q.stem||q.q||''),exp=String(q.explanation||q.why||q.exp||''),topic=canonicalTopic(forcedTopic||inferredTopic(q));return{uid:b+'-'+(q.id??(set+'-'+i)),bank:b,bankLabel:label||b,set,seq:i,topic,stem,opts,ans,exp,src,img:q.imageSvg||q.img||null,searchText:(stem+' '+topic+' '+exp+' '+src).toLowerCase()}
 }
 function syncBankData(){
-  const put=(q,ok,bank,force=false)=>{if(q&&(force||!DB.ans[q.uid]))DB.ans[q.uid]={ok:!!ok,at:Date.now(),topic:q.topic,bank}};
+  let syncChanged=false;
+  const put=(q,ok,bank,force=false)=>{if(!q)return;const prev=DB.ans[q.uid],nextOk=!!ok;if(!force&&prev)return;if(prev&&prev.ok===nextOk&&prev.bank===bank&&prev.topic===q.topic)return;DB.ans[q.uid]={ok:nextOk,at:Date.now(),topic:q.topic,bank};syncChanged=true};
   const syncCanonical=(bank,key)=>{
     try{
       const d=JSON.parse(localStorage.getItem(key)||'null');if(!d||!d.sets)return false;
@@ -231,7 +254,7 @@ function syncBankData(){
       else Object.entries(d.ans||{}).forEach(([id,result])=>put(map.get(String(id)),result&&result.ok,bank,bank==='h3'||bank==='hh'));
     }catch(e){}
   }
-  save();
+  if(syncChanged)save();
 }
 let buildMode='sets';
 function setBuildMode(mode){buildMode=mode==='topics'?'topics':'sets';document.getElementById('sourcePickbox').classList.toggle('hidden',buildMode!=='sets');document.getElementById('topicPickbox').classList.toggle('hidden',buildMode!=='topics');document.getElementById('buildSetsBtn').classList.toggle('out',buildMode!=='sets');document.getElementById('buildTopicsBtn').classList.toggle('out',buildMode!=='topics');document.getElementById('buildModeHelp').textContent=buildMode==='sets'?'Choose one or more practice sets. Questions can come from any topic in those sets.':'Choose one or more topics. Studio will pull matching questions from all loaded practice sets and banks.'}
@@ -271,7 +294,7 @@ function toggleStudioCross(q,i,b,cross){if(graded)return;const k=crossKey(q,i);D
 function studioImageHTML(q){if(!q.img)return '';if(typeof q.img==='string'){if(q.img.trim().startsWith('<'))return q.img;if(/^data:image\/(?:png|jpeg|gif|webp);base64,[A-Za-z0-9+/=]+$/.test(q.img))return '<img alt="Question figure" style="max-width:100%;height:auto" src="'+q.img+'">';return ''}if(q.img.kind==='direct'&&q.img.url)return '<img alt="Question figure" loading="lazy" decoding="async" style="max-width:100%;height:auto" src="'+esc(q.img.url)+'">';return ''}
 function showQ(){clearTimeout(autoTimer);autoTimer=null;show('quiz');let q=session[pos],saved=sessionAnswer(q.uid),savedSel=saved&&Array.isArray(saved.selected)?saved.selected.map(Number).filter(Number.isInteger):null;sel=new Set(savedSel||[]);graded=!!(saved&&savedSel);let ss=sessionStats();document.getElementById('sessionBadge').textContent=q.bankLabel.toUpperCase();document.getElementById('qprog').textContent=`Question ${pos+1} of ${session.length} · ${setLabel(q)}`;document.getElementById('sessionCompleted').textContent=ss.done;document.getElementById('sessionTotal').textContent=session.length;document.getElementById('sessionScore').textContent=ss.score;document.getElementById('sessionMissed').textContent=ss.missed;document.getElementById('qmeta').textContent=q.ans.length>1?`Select ${q.ans.length} Options`:'Single Best Answer';document.getElementById('stem').textContent=q.stem;let im=document.getElementById('qimage'),imageHTML=studioImageHTML(q);im.innerHTML=imageHTML;im.classList.toggle('hidden',!imageHTML);const box=document.getElementById('opts');box.innerHTML='';q.opts.forEach((o,i)=>{const row=document.createElement('div');row.className='mbu-choice-row';const b=document.createElement('button');b.className='opt';b.innerHTML=`<b class="prefix">${String.fromCharCode(65+i)}.</b><span>${esc(o)}</span>`;const cross=document.createElement('button');cross.type='button';cross.className='mbu-cross';cross.textContent='✕';cross.setAttribute('aria-label',`Cross out option ${String.fromCharCode(65+i)}`);cross.setAttribute('aria-pressed',String(!!DB.crosses[crossKey(q,i)]));if(DB.crosses[crossKey(q,i)])b.classList.add('strike');if(graded){if(q.ans.includes(i))b.classList.add('correct');else if(sel.has(i))b.classList.add('incorrect');b.disabled=true;cross.disabled=true}else{b.onclick=()=>pick(i);b.oncontextmenu=e=>{e.preventDefault();toggleStudioCross(q,i,b,cross)};cross.onclick=()=>toggleStudioCross(q,i,b,cross)}row.append(b,cross);box.appendChild(row)});const submit=document.getElementById('submit'),submitRow=document.getElementById('studio-submit-row'),fb=document.getElementById('fb'),fbText=document.getElementById('fbText'),fbCitation=document.getElementById('fbCitation');if(graded){submitRow.style.display='none';fb.style.display='block';fbText.innerHTML=`<b>${saved.ok?'Correct':'Incorrect'}.</b> ${esc(q.exp)}`;fbCitation.textContent=q.src||''}else{submitRow.style.display='flex';submit.disabled=sel.size!==q.ans.length;submit.textContent=q.ans.length>1?`Submit Selections (${sel.size}/${q.ans.length})`:'Submit Answer';fb.style.display='none';fbText.innerHTML='';fbCitation.textContent=''}document.getElementById('next').disabled=pos>=session.length-1;document.getElementById('studioPrev').disabled=pos<=0;document.getElementById('flagBtn').textContent=DB.flags[q.uid]?'★ Flagged':'☆ Flag';saveActive();if(!document.getElementById('navigator').classList.contains('hidden'))renderNav();window.MBUCalculator?.besideFlag()}
 function pick(i){if(graded)return;let q=session[pos];if(q.ans.length===1){sel=new Set([i])}else if(sel.has(i))sel.delete(i);else if(sel.size<q.ans.length)sel.add(i);document.querySelectorAll('#opts .opt').forEach((b,j)=>b.classList.toggle('selected',sel.has(j)));const submit=document.getElementById('submit');submit.disabled=sel.size!==q.ans.length;submit.textContent=q.ans.length>1?`Submit Selections (${sel.size}/${q.ans.length})`:'Submit Answer'}
-function grade(){let q=session[pos];if(!sel.size||sel.size!==q.ans.length)return;graded=true;let a=[...sel].sort().join(),w=[...q.ans].sort().join(),ok=a===w;const selected=[...sel].sort((x,y)=>x-y);MBUStudio.answer(q.bank,q,ok);setSessionAnswer(q.uid,{ok,selected,at:Date.now()});document.querySelectorAll('#opts .opt').forEach((b,i)=>{b.classList.remove('selected');if(q.ans.includes(i))b.classList.add('correct');else if(sel.has(i))b.classList.add('incorrect');b.disabled=true});document.querySelectorAll('#opts .mbu-cross').forEach(b=>b.disabled=true);let f=document.getElementById('fb');f.style.display='block';document.getElementById('fbText').innerHTML=`<b>${ok?'Correct':'Incorrect'}.</b> ${esc(q.exp)}`;document.getElementById('fbCitation').textContent=q.src||'';document.getElementById('studio-submit-row').style.display='none';const ss=sessionStats();document.getElementById('sessionCompleted').textContent=ss.done;document.getElementById('sessionScore').textContent=ss.score;document.getElementById('sessionMissed').textContent=ss.missed;if(!document.getElementById('navigator').classList.contains('hidden'))renderNav();saveActive();if(ok){autoTimer=setTimeout(()=>nextQ(),350)}}
+function grade(){let q=session[pos];if(!sel.size||sel.size!==q.ans.length)return;graded=true;let a=[...sel].sort().join(),w=[...q.ans].sort().join(),ok=a===w;const selected=[...sel].sort((x,y)=>x-y);MBUStudio.stageAnswer(q.bank,q,ok);setSessionAnswer(q.uid,{ok,selected,at:Date.now()});document.querySelectorAll('#opts .opt').forEach((b,i)=>{b.classList.remove('selected');if(q.ans.includes(i))b.classList.add('correct');else if(sel.has(i))b.classList.add('incorrect');b.disabled=true});document.querySelectorAll('#opts .mbu-cross').forEach(b=>b.disabled=true);let f=document.getElementById('fb');f.style.display='block';document.getElementById('fbText').innerHTML=`<b>${ok?'Correct':'Incorrect'}.</b> ${esc(q.exp)}`;document.getElementById('fbCitation').textContent=q.src||'';document.getElementById('studio-submit-row').style.display='none';const ss=sessionStats();document.getElementById('sessionCompleted').textContent=ss.done;document.getElementById('sessionScore').textContent=ss.score;document.getElementById('sessionMissed').textContent=ss.missed;if(!document.getElementById('navigator').classList.contains('hidden'))renderNav();saveActive();if(ok){autoTimer=setTimeout(()=>nextQ(),350)}}
 function studioNav(delta){clearTimeout(autoTimer);autoTimer=null;const n=pos+delta;if(n<0||n>=session.length)return;pos=n;saveActive();showQ()}
 function resetStudioCurrent(){clearTimeout(autoTimer);autoTimer=null;const q=session[pos];clearSessionAnswer(q.uid);Object.keys(DB.crosses).filter(k=>k.startsWith(q.uid+':')).forEach(k=>delete DB.crosses[k]);save();showQ()}
 function nextQ(){clearTimeout(autoTimer);autoTimer=null;if(pos+1<session.length){pos++;saveActive();showQ()}else{if(Object.prototype.hasOwnProperty.call(DB,'searchReturn')){DB.active=DB.searchReturn;delete DB.searchReturn;save()}else clearActive();session=[];const ret=new URLSearchParams(location.search).get('return');if(ret==='hazards'){location.href='hazards.html';return}if(ret==='combined'){location.href='combined.html';return}renderHome()}}
