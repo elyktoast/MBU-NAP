@@ -343,6 +343,21 @@ test.describe('canonical quiz regression', () => {
     expect(clipped).toBe(false);
   });
 
+  test('Hazards dashboard ignores unsubmitted answer selections', async ({ page }) => {
+    await page.goto(exam + '/hazards.html');
+    await page.evaluate(() => localStorage.setItem('SRNA_HAZARDS_BANK_1_2026_V2', JSON.stringify({
+      answers:{'1':[0]},
+      graded:{},
+      correct:{},
+      strikes:{},
+      current:0,
+      missed:[]
+    })));
+    await page.reload();
+    await expect(page.locator('#hazOverall')).toContainText('0 / 350 completed');
+    await expect(page.locator('#hazSet1Stats')).toContainText('0/100 completed');
+  });
+
   test('Hazards cumulative missed review routes to Studio', async ({ page }) => {
     await page.goto(exam + '/hazards-review.html');
     await page.waitForURL(/studio\.html\?mode=hazards-missed&return=hazards/);
