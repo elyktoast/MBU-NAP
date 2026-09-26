@@ -44,15 +44,15 @@ button.opt:hover:not(:disabled){border-color:var(--n2o)}
 .opt.x .t{text-decoration:line-through;opacity:.45}
 .opt.ok{border-color:var(--o2);background:var(--o2bg)}
 .opt.no{border-color:var(--bad);background:var(--badbg)}
-.opt.miss{border-color:var(--o2);border-style:dashed}
+.opt.miss{border-color:var(--o2);background:var(--o2bg);color:var(--o2);font-weight:750}.opt.miss .t{text-decoration:none;opacity:1}
 .opt:disabled{cursor:default}
 .xo{width:34px;border:1px solid var(--rule);background:transparent;color:var(--mute);font-size:.8rem}
 .xo[aria-pressed="true"]{color:var(--bad);border-color:var(--bad)}
 .act{display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap}
 .hint{font-size:.8rem;color:var(--mute)}
 .fb{margin-top:12px;padding:10px 12px;border-radius:6px;font-size:.95rem}
-.fb.good{background:var(--o2bg);border-left:4px solid var(--o2)}
-.fb.badf{background:var(--badbg);border-left:4px solid var(--bad)}
+#fb.explain{background:#f8fafc;border-left:5px solid #1a365d}
+.fb.good,.fb.badf{background:transparent;border-left:0;margin:0;padding:0}
 .fb p{margin:.3rem 0}
 .src{font-size:.8rem;color:var(--mute)}
 .disc{font-size:.85rem;border-top:1px dashed var(--rule);padding-top:6px;margin-top:6px}
