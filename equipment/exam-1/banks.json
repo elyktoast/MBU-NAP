@@ -187,38 +187,40 @@
       "group": "hazards",
       "label": "Hazards Practice Set 1",
       "groupLabel": "Workstation Hazards",
-      "data": "hazards-100.html",
-      "format": "hazards-html",
+      "data": "data/hazards.json",
+      "format": "canonical",
       "sets": [
         1
       ],
       "count": 100,
       "setLabels": {
         "1": "Hazards Practice Set 1"
-      }
+      },
+      "setFilter": 1
     },
     {
       "key": "h2",
       "group": "hazards",
       "label": "Hazards Practice Set 2",
       "groupLabel": "Workstation Hazards",
-      "data": "hazards-bank-2.html",
-      "format": "hazards-html",
+      "data": "data/hazards.json",
+      "format": "canonical",
       "sets": [
         1
       ],
       "count": 100,
       "setLabels": {
         "1": "Hazards Practice Set 2"
-      }
+      },
+      "setFilter": 2
     },
     {
       "key": "h3",
       "group": "hazards",
       "label": "Hazards Practice Set 3",
       "groupLabel": "Workstation Hazards",
-      "data": "studio-hazards3.json",
-      "format": "hazards-json",
+      "data": "data/hazards.json",
+      "format": "canonical",
       "sets": [
         1
       ],
@@ -227,15 +229,16 @@
         "1": "Hazards Practice Set 3"
       },
       "imageSource": "hazards-bank-3.html",
-      "imageKind": "hazards"
+      "imageKind": "hazards",
+      "setFilter": 3
     },
     {
       "key": "hh",
       "group": "hazards",
       "label": "Hazards Challenge Set",
       "groupLabel": "Workstation Hazards",
-      "data": "studio-challenge.json",
-      "format": "hazards-json",
+      "data": "data/hazards.json",
+      "format": "canonical",
       "sets": [
         1
       ],
@@ -244,7 +247,8 @@
         "1": "Challenge Set"
       },
       "imageSource": "hazards-harder.html",
-      "imageKind": "hazards"
+      "imageKind": "hazards",
+      "setFilter": 4
     }
   ]
 }
