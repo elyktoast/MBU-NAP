@@ -15,7 +15,14 @@ function collectPageErrors(page) {
 
 async function waitForStudio(page) {
   await expect.poll(
-    async () => page.evaluate(() => typeof ALL_BY_UID !== 'undefined' ? ALL_BY_UID.size : 0),
+    async () => {
+      try {
+        return await page.evaluate(() => typeof ALL_BY_UID !== 'undefined' ? ALL_BY_UID.size : 0);
+      } catch (error) {
+        if (/Execution context was destroyed|most likely because of a navigation/i.test(String(error))) return 0;
+        throw error;
+      }
+    },
     { timeout: 20000 }
   ).toBeGreaterThan(0);
 }
