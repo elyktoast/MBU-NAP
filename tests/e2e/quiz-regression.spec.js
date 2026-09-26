@@ -8,6 +8,30 @@ async function clickIndexes(locator, indexes) {
 test.describe('canonical quiz regression', () => {
   test.beforeEach(async ({ page }) => clearAppState(page));
 
+  test('Studio persists normalized legacy keys and removes false flag entries', async ({ page }) => {
+    await page.goto(exam + '/studio.html');
+    await page.evaluate(() => localStorage.setItem('mbu_exam1_studio_v1', JSON.stringify({
+      ans:{'bb1-legacy':{ok:false,at:1,topic:'Other',bank:'b1'}},
+      flags:{'bb1-legacy':false},
+      crosses:{},
+      reports:[]
+    })));
+    await page.reload();
+    await waitForStudio(page);
+    const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('mbu_exam1_studio_v1')));
+    expect(stored.ans['b1-legacy']).toBeTruthy();
+    expect(stored.ans['bb1-legacy']).toBeUndefined();
+    const q = await page.evaluate(() => ALL.find(x=>x.bank==='b1'));
+    expect(q).toBeTruthy();
+    await page.evaluate(uid => {
+      const q=ALL_BY_UID.get(uid);
+      MBUStudio.toggleFlag(q.bank,q);
+      MBUStudio.toggleFlag(q.bank,q);
+    }, q.uid);
+    const after = await page.evaluate(() => JSON.parse(localStorage.getItem('mbu_exam1_studio_v1')));
+    expect(after.flags[q.uid]).toBeUndefined();
+  });
+
   test('Bank 1 starts, answers, advances, and resumes through Continue after reload', async ({ page }) => {
     await page.goto(exam + '/quiz-bank-1.html');
     await expect(page.locator('#overall')).toContainText('/ 500 completed');
