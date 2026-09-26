@@ -61,7 +61,7 @@ function checkAssetVersions(){
   for(const name of fs.readdirSync(dir).filter(x=>x.endsWith('.html'))){
     const p='equipment/exam-1/'+name,src=read(p),versions=[...src.matchAll(/\.\.\/assets\/[^"'?#\s]+\?v=(\d+)/g)].map(m=>m[1]);
     if(versions.length&&new Set(versions).size!==1)fail(p+': mixed shared asset cache revisions: '+[...new Set(versions)].join(', '));
-    if(versions.length&&versions.some(v=>v!=='50'))fail(p+': stale shared asset cache revision; expected v50');
+    if(versions.length&&versions.some(v=>v!=='60'))fail(p+': stale shared asset cache revision; expected v60');
   }
 }
 checkAssetVersions();
@@ -288,11 +288,10 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(src.includes('const valid=new Set(ALL.map(q=>q.uid))'))fail('Studio: home render still rebuilds the question UID Set');
 }
 
-// Studio hydration should yield between large bank parse/evaluation passes instead of parsing every source concurrently.
+// Studio hydration should fetch independent bank sources concurrently to reduce startup latency.
 {
  const src=read('equipment/exam-1/studio.html');
- if(src.includes('Promise.all(sources.map'))fail('Studio: all bank sources are still hydrated concurrently');
- if(!src.includes('for(const source of sources){loaded.push(await loadSource(source));await new Promise(resolve=>setTimeout(resolve,0))}'))fail('Studio: bank hydration does not yield between source passes');
+ if(!src.includes('const loaded=await Promise.all(sources.map(loadSource))'))fail('Studio: bank sources are not hydrated concurrently');
 }
 
 // Studio must not parse large embedded Hazards image maps during bank hydration.
