@@ -1,5 +1,5 @@
 (()=>{"use strict";
-function start({questions:QUESTIONS,store:STORE,bankKey,setNumber}){
+function start({questions:QUESTIONS,store:STORE,bankKey,setNumber}){window.QUESTIONS=QUESTIONS;
  let db={answers:{},graded:{},correct:{},strikes:{},current:0,missed:[]},currentIndex=0,autoTimer=null,reviewMode=false,reviewList=[],reviewDB={answers:{},graded:{},correct:{},strikes:{}},lastSaved="";
  const missedCount=()=>db.missed.length;
  const stateStats=(base,st,missed)=>{let done=0,good=0;for(const q of base){if(!st.graded[q.id])continue;done++;if(st.correct[q.id])good++}return{done,good,miss:missed??done-good}};
