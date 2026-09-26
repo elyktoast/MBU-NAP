@@ -154,7 +154,7 @@ checkStudioIndexes();
  if(!src.includes('persistPosition();showQ()'))fail('Bank 2: navigation does not persist position before rendering');
  const renderStart=src.indexOf('function showQ()'),renderEnd=src.indexOf('function choose(',renderStart);if(renderStart>=0&&renderEnd>renderStart&&(src.slice(renderStart,renderEnd).includes('save();')||src.slice(renderStart,renderEnd).includes('saveDB();')))fail('Bank 2: render path writes progress');
 }
-for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html']){
+for(const p of ['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html','equipment/exam-1/quiz-bank-3.html']){
   const src=read(p);
   if(!src.includes("if(next===lastSaved)return"))fail(p+': duplicate localStorage writes are not suppressed');
 }
@@ -179,6 +179,9 @@ checkCanonicalNavigators();
  if(!src.includes('if(e.idx>=ids.length)e.idx=0'))fail('Bank 3: completed/out-of-range saved position is not normalized before resume');
  if(!src.includes('ids.findIndex(id=>!e.ans[id])'))fail('Bank 3: resume does not locate the next unanswered question when needed');
  if(!src.includes('if(S.cleared[q.orig])delete S.cleared[q.orig]'))fail('Bank 3: resetting an exam question leaves stale missed-review cleared state');
+ if(!src.includes('id="mbuNavigator" class="mbu-quiz-nav"'))fail('Bank 3: navigator is not using the canonical shared container');
+ if(src.includes('$("#hint").textContent'))fail('Bank 3: multi-select update still targets nonexistent hint element');
+ if(!src.includes('Submit Selections (${cur.sel.length}/${q.n})'))fail('Bank 3: canonical multi-select submit count is missing');
 }
 {
  const src=read('equipment/assets/hazards-standard-engine.js');
