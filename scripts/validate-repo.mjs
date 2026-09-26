@@ -134,7 +134,7 @@ function checkStudio(){
   for(const id of ['bank1','bank2','bank3','combined','hazards'])if(!manifest.banks.some(b=>b.id===id))fail('Studio: central bank manifest is missing '+id);
   if(!Array.isArray(manifest.studioSources)||manifest.studioSources.length<8)fail('Studio: complete manifest source catalog is missing');
   for(const srcDef of manifest.studioSources){if(srcDef.format!=='canonical')fail('Studio: noncanonical source format remains for '+srcDef.key);if(!exists('equipment/exam-1/'+srcDef.data))fail('Studio: manifest data source missing '+srcDef.data)}
-  for(const bit of ["studioFetch('banks.json')","BANK_MANIFEST.studioSources.map","meta.format==='canonical'","const sources=BANK_MANIFEST.studioSources.map"])if(!src.includes(bit))fail('Studio: manifest-driven hydration contract missing '+bit);
+  for(const bit of ["studioFetch('banks.json')","BANK_MANIFEST.studioSources.map","STUDIO_SOURCES=BANK_MANIFEST.studioSources.map","meta.format!=='canonical'"])if(!src.includes(bit))fail('Studio: manifest-driven hydration contract missing '+bit);
   if(/const\s+im\s*=|const\s+IMGS\s*=|JSON\.parse\(im/.test(src))fail('Studio: embedded image payload is still eagerly parsed');
 }
 function checkRuntimeSafety(){
