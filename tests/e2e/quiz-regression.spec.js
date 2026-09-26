@@ -501,8 +501,8 @@ test.describe('canonical quiz regression', () => {
 
   for (const [name, file, total] of [
     ['Bank 1', 'quiz-bank-1.html', '#overall'],
-    ['Bank 2', 'quiz-bank-2.html', '#bank2Overall'],
-    ['Bank 3', 'quiz-bank-3.html', '#stats']
+    ['Bank 2', 'quiz-bank-2.html', '#overall'],
+    ['Bank 3', 'quiz-bank-3.html', '#overall']
   ]) {
     test(name + ' loads without uncaught page errors', async ({ page }) => {
       const errors = collectPageErrors(page);
@@ -517,8 +517,8 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/studio.html');
     await waitForStudio(page);
     const counts = await page.evaluate(() => Object.fromEntries([...BANK_QUESTIONS].map(([bank, qs]) => [bank, qs.length])));
-    expect(counts).toEqual({ b1: 500, b2: 500, b3: 500, h1: 100, h2: 100, h3: 100, hh: 50 });
-    expect(await page.evaluate(() => ALL_BY_UID.size)).toBe(1850);
+    expect(counts).toEqual({ b1: 500, b2: 500, b3: 500, combined: 150, h1: 100, h2: 100, h3: 100, hh: 50 });
+    expect(await page.evaluate(() => ALL_BY_UID.size)).toBe(2000);
   });
 
   test('Studio loads all indexed sources without page errors', async ({ page }) => {
