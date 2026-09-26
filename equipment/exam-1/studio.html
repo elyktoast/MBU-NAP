@@ -132,20 +132,25 @@ async function loadBanks(){
     }catch(e){errors.push(label+': '+(e&&e.name==='AbortError'?'timed out':e.message));console.error('Studio source failed:',label,e);return []}
   };
   const bankOrder=['b1','b2','b3','combined','h1','h2','h3','hh'];
-  const reindex=()=>{
-    ALL.sort((a,b)=>bankOrder.indexOf(a.bank)-bankOrder.indexOf(b.bank)||a.set-b.set||a.seq-b.seq);
-    ALL_BY_UID=new Map(ALL.map(q=>[q.uid,q]));ALL_UIDS=new Set(ALL_BY_UID.keys());BANK_QUESTIONS=new Map();
-    for(const q of ALL){if(!BANK_QUESTIONS.has(q.bank))BANK_QUESTIONS.set(q.bank,[]);BANK_QUESTIONS.get(q.bank).push(q)}
+  const addLoaded=qs=>{
+    if(!qs.length)return;
+    ALL.push(...qs);
+    for(const q of qs){
+      ALL_BY_UID.set(q.uid,q);ALL_UIDS.add(q.uid);
+      if(!BANK_QUESTIONS.has(q.bank))BANK_QUESTIONS.set(q.bank,[]);
+      BANK_QUESTIONS.get(q.bank).push(q);
+    }
   };
   const loadmsg=document.getElementById('loadmsg');if(loadmsg){loadmsg.classList.remove('hidden');loadmsg.textContent='Loading question banks…'}
   let completed=0;
   await Promise.all(sources.map(async source=>{
     const qs=await loadSource(source);
-    if(qs.length){ALL.push(...qs);reindex();try{buildTopics()}catch(e){errors.push(source[2]+': selector render failed: '+e.message);console.error(e)}}
+    if(qs.length){addLoaded(qs);try{buildTopics()}catch(e){errors.push(source[2]+': selector render failed: '+e.message);console.error(e)}}
     completed++;
     if(loadmsg)loadmsg.textContent='Loading question banks… '+completed+' / '+sources.length;
   }));
-  reindex();
+  ALL.sort((a,b)=>bankOrder.indexOf(a.bank)-bankOrder.indexOf(b.bank)||a.set-b.set||a.seq-b.seq);
+  for(const qs of BANK_QUESTIONS.values())qs.sort((a,b)=>a.set-b.set||a.seq-b.seq);
   try{syncBankData();buildTopics();const params=new URLSearchParams(location.search),requested=params.get('mode');if(requested==='hazards-missed')startMode('hazards-missed');else if(requested==='combined-missed')startMode('combined-missed');else renderHome()}catch(e){errors.push('Studio render: '+e.message);console.error(e)}
   showLoadErrors(errors);
 }
