@@ -312,10 +312,12 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!src.includes('for(const q of session){const r=sessionAnswer(q.uid);if(!r)continue;done++;if(r.ok)correct++}'))fail('Studio: session statistics are not consolidated into one pass');
 }
 
-// Studio home renders should reuse the hydrated UID index instead of rebuilding a Set from every question.
+// Studio home renders should reuse one incrementally maintained UID index instead of rebuilding a Set from every question.
 {
  const src=read('equipment/exam-1/studio.html');
- if(!src.includes('ALL_UIDS=new Set(ALL_BY_UID.keys())'))fail('Studio: hydrated UID identity index is missing');
+ if(!src.includes('ALL_UIDS=new Set()'))fail('Studio: UID identity index is not initialized');
+ if(!src.includes('ALL_BY_UID.set(q.uid,q);ALL_UIDS.add(q.uid);'))fail('Studio: UID identity index is not maintained incrementally');
+ if(src.includes('ALL_UIDS=new Set(ALL_BY_UID.keys())'))fail('Studio: UID identity index is still rebuilt after hydration');
  if(src.includes('const valid=new Set(ALL.map(q=>q.uid))'))fail('Studio: home render still rebuilds the question UID Set');
 }
 
