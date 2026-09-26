@@ -143,6 +143,14 @@ function checkHazardNavigators(){
   if(!challenge.includes('MBUNavigator.button'))fail('Shared challenge Hazards engine does not use the canonical navigator renderer');
 }
 checkHazardNavigators();
+// Hazards cumulative missed review must use Studio, not refetch every full bank.
+{
+ const dashboard=read('equipment/exam-1/hazards.html'),review=read('equipment/exam-1/hazards-review.html');
+ if(!dashboard.includes("studio.html?mode=hazards-missed&return=hazards"))fail('Hazards dashboard: cumulative missed review is not routed through Studio');
+ if(review.includes('fetch(def[0]')||review.includes('const defs=['))fail('Hazards review: obsolete full-bank aggregation runtime remains');
+ if(!review.includes("studio.html?mode=hazards-missed&return=hazards"))fail('Hazards review: compatibility redirect does not target Studio');
+}
+
 {
  const nav=read('equipment/assets/site-nav.js');
  if(!nav.includes("sessionStorage.removeItem('mbu_build_manifest_v1')")||!nav.includes("u.searchParams.set('_mbu_refresh',Date.now().toString())")||!nav.includes('location.replace(u.href)'))fail('Site nav: MBU-NAP brand does not perform a cache-busting refresh');
