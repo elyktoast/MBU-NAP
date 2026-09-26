@@ -89,7 +89,8 @@ test.describe('canonical quiz regression', () => {
     const answer = await page.evaluate(() => byId[EXM[1].ids[0]].a);
     await clickIndexes(page.locator('#main .opt'), answer);
     let state = await storageJSON(page, 'srna_equipment_dashboard_v1');
-    expect(state).toBeNull();
+    expect(state).not.toBeNull();
+    expect(Object.keys(state.ex['1'].ans || {})).toHaveLength(0);
     await page.locator('#go').click();
     await expect(page.locator('.progress')).toContainText('Question 2 of');
     state = await storageJSON(page, 'srna_equipment_dashboard_v1');
@@ -1013,8 +1014,9 @@ test.describe('canonical quiz regression', () => {
     })));
     await page.reload();
     await page.evaluate(() => openExam(1));
-    await expect(page.locator('.progress')).toContainText('Question 100 of');
+    await expect(page.locator('.progress')).toContainText('Question 1 of 100');
     await expect(page.locator('#main .opt').first()).toBeVisible();
+    expect(await page.evaluate(() => S.ex[1].idx)).toBe(0);
     expect(errors).toEqual([]);
   });
 
