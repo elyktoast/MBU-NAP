@@ -1379,4 +1379,26 @@ test.describe('canonical quiz regression', () => {
   });
 
 
+  test('Canonical answer selection updates in place without rebuilding the question DOM', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
+    await page.locator('#cards button').filter({hasText:/start|continue/i}).first().click();
+    await page.evaluate(() => { window.__mbuFirstOption=document.querySelector('#options .opt'); window.__mbuOptionsNode=document.getElementById('options'); });
+    await page.locator('#options .opt').first().click();
+    const state=await page.evaluate(() => ({
+      sameOption:window.__mbuFirstOption===document.querySelector('#options .opt'),
+      sameContainer:window.__mbuOptionsNode===document.getElementById('options'),
+      selected:document.querySelector('#options .opt')?.classList.contains('selected')
+    }));
+    expect(state).toEqual({sameOption:true,sameContainer:true,selected:true});
+  });
+
+  test('Canonical navigator renders only when opened', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
+    await page.locator('#cards button').filter({hasText:/start|continue/i}).first().click();
+    expect(await page.locator('#mbuNavigator').innerHTML()).toBe('');
+    await page.getByRole('button',{name:'Navigator'}).click();
+    await expect(page.locator('#mbuNavigator')).toBeVisible();
+    expect(await page.locator('#mbuNavigator button').count()).toBe(100);
+  });
+
 });

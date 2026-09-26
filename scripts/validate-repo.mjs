@@ -601,5 +601,16 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!exists('scripts/content-integrity.mjs'))fail('Content integrity validator is missing');
 }
 
+// Final cleanup: hot quiz interactions must stay local and accessibility must be render-driven.
+{
+ const engine=read('equipment/assets/quiz-engine.js'),renderer=read('equipment/assets/canonical-bank-page.js'),core=read('equipment/assets/app-core.js');
+ if(!engine.includes('function renderNavigator()')||!engine.includes('function toggleNavigator()'))fail('Cleanup: canonical navigator is not lazy-rendered');
+ if(!engine.includes('function updateSelectionUI('))fail('Cleanup: answer selection does not have a local DOM update path');
+ const choose=(engine.match(/function choose\(i\)\{[^}]+\}/)||[''])[0];
+ if(choose.includes('loadQuestion()'))fail('Cleanup: answer selection still performs a full question render');
+ if(!renderer.includes('onclick="toggleNavigator()"'))fail('Cleanup: canonical shell bypasses lazy navigator');
+ if(core.includes('new MutationObserver('))fail('Cleanup: permanent whole-DOM accessibility observer returned');
+}
+
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
 console.log('Repository validation passed: Banks 1-3 are 500 questions each; Combined is 150 questions; local assets, Studio sources, shared quiz runtimes, answer indexes, and build manifest are valid.');

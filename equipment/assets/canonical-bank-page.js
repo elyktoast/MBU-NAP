@@ -14,7 +14,7 @@ async function start(){
   if(!bankId)throw Error('Canonical bank id is missing');
   const manifest=await runtime.fetchJSON(new URL('banks.json',exam),{cache:'no-store'}),bank=(manifest.banks||[]).find(x=>x.id===bankId);
   if(!bank||bank.engine!=='canonical')throw Error('Canonical bank config not found: '+bankId);
-  document.title=bank.label+' | Practice Sets';document.body.className='mbu-bank1-ui';document.body.innerHTML=shell(bank);
+  document.title=bank.label+' | Practice Sets';document.body.className='mbu-bank1-ui';document.body.innerHTML=shell(bank);window.MBUAppCore?.ensureA11y?.();
   window.MBU_QUIZ_CONFIG={id:bank.id,title:bank.label,studioBankKey:bank.studioKey,storageKey:bank.storageKey,dataUrl:bank.data,legacyFormat:bank.legacyFormat||null,imageBase:bank.imageBase||null};
   await Promise.all([runtime.loadStyle('site-nav.css'),runtime.loadStyle('bank1-quiz-ui.css')]);
   await runtime.loadScript({src:'site-nav.js',data:{page:bank.id}});

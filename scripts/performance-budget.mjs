@@ -58,6 +58,10 @@ const core=read('equipment/assets/app-core.js');
 for(const token of ['exportSnapshot','importSnapshot','registerAdapter','syncWith','touchStore'])if(!core.includes(token))fail('App core sync contract missing '+token);
 if(!read('equipment/assets/build-bootstrap.js').includes("loadScript('app-core.js')"))fail('Build bootstrap does not load the shared app core');
 
+const quizEngine=read('equipment/assets/quiz-engine.js'),appCore=read('equipment/assets/app-core.js');
+if(!quizEngine.includes('function updateSelectionUI(')||!quizEngine.includes('function renderNavigator()'))fail('Canonical quiz lost local interaction/lazy navigator paths');
+if(appCore.includes('new MutationObserver('))fail('App core reintroduced a permanent DOM observer');
+
 const tests=read('tests/e2e/quiz-regression.spec.js');
 if(tests.includes('waitForTimeout('))fail('Browser regression suite contains a fixed sleep');
 

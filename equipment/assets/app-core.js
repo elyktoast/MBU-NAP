@@ -112,8 +112,7 @@ function ensureTools(){
 }
 async function openTools(source){ensureTools();toolsReturnFocus=source||document.activeElement;const modal=document.getElementById('mbu-app-tools');modal.classList.add('open');modal.setAttribute('aria-hidden','false');await refreshTools();modal.querySelector('[data-close]').focus()}
 function mountNav(nav){if(!nav||nav.querySelector('.mbu-global-nav__tools'))return;const b=document.createElement('button');b.type='button';b.className='mbu-global-nav__tools';b.textContent='Tools';b.setAttribute('aria-label','Open backup, sync, and diagnostics tools');b.onclick=()=>openTools(b);nav.append(b)}
-document.addEventListener('DOMContentLoaded',ensureA11y,{once:true});
-new MutationObserver(()=>ensureA11y()).observe(document.documentElement,{subtree:true,childList:true});
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ensureA11y,{once:true});else ensureA11y();
 
 window.MBUDiagnostics={record,snapshot:diagnostics,copy:copyDiagnostics};
 window.MBUSync={APP,schema:SYNC_SCHEMA,deviceId,touchStore,trackedKeys,exportSnapshot,importSnapshot,downloadBackup,importFile,registerAdapter,syncWith};
