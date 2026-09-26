@@ -14,10 +14,10 @@
 <div class="stats"><div>Completed: <strong id="completed">0</strong>/<span id="total">0</span></div><div>Score: <strong id="score">0</strong>%</div><div>Missed: <strong id="missed">0</strong></div></div>
 <div id="mbuNavigator" class="row hidden" style="flex-wrap:wrap;gap:6px;margin:8px 0 14px;max-height:180px;overflow:auto;padding:3px"></div><div class="type" id="type"></div><div class="stem" id="stem"></div><div class="mbu-crossout-hint">Tip: Right-click an answer to cross it out.</div><div class="image hidden" id="image"></div><div class="options" id="options"></div><div class="row" id="multi-submit-row" style="display:none;margin:4px 0 18px;justify-content:flex-end"><button class="btn" id="submit-multi" onclick="submitAnswer()">Submit Answer</button></div><div class="explain" id="explain"><div id="explain-text"></div><div class="cite" id="citation"></div></div><div class="controls"><button class="btn out" id="prev" onclick="nav(-1)">Previous</button><div class="row"><button class="btn out" onclick="resetCurrent()">Reset</button><button class="btn" id="next" onclick="nav(1)">Next</button></div></div></section>
 </div>
-<script src="combined-questions.js"></script><script src="combined-images.js"></script><script src="../assets/studio-sync.js?v=62"></script><script src="../assets/navigator.js?v=62"></script>
+<script src="combined-questions.js"></script><script src="../assets/studio-sync.js?v=62"></script><script src="../assets/navigator.js?v=62"></script>
 <script>
 const STORE='MBU_COMBINED_BANK_2026_V1',BANK_KEY='combined',LETTERS='ABCDEF';
-const RAW=window.QUIZ_DATA?.questions||[],IMAGES=window.QUIZ_IMAGES||{};
+const RAW=window.QUIZ_DATA?.questions||[];
 const QUESTIONS=RAW.map((q,i)=>({id:String(q.id||('C'+(i+1))),seq:i+1,set:Math.floor(i/50)+1,type:q.type==='multi'?'multi':'single',n:Number(q.n)||1,stem:String(q.q||''),options:Array.isArray(q.c)?q.c:[],answer:(Array.isArray(q.a)?q.a:[q.a]).map(Number),explanation:String(q.exp||''),disc:q.disc||'',supp:q.supp||'',citation:Array.isArray(q.ref)?q.ref.join('; '):String(q.ref||''),topic:String(q.lec||q.concept||'Combined'),concept:String(q.concept||''),imageId:q.image_id||null}));
 const SETS={1:QUESTIONS.slice(0,50),2:QUESTIONS.slice(50,100),3:QUESTIONS.slice(100,150)};
 let db=loadDB(),currentSet=null,currentData=[],currentIndex=0,selected=new Set(),graded=false,autoTimer=null;
@@ -43,10 +43,25 @@ function renderDashboard(){
 }
 function startSet(s){currentSet=s;currentData=SETS[s];const st=db.sets[s];currentIndex=Math.min(Math.max(0,st.current||0),currentData.length-1);document.getElementById('dashboard').classList.add('hidden');document.getElementById('quiz').classList.remove('hidden');loadQuestion()}
 function goDashboard(){clearTimeout(autoTimer);autoTimer=null;if(currentSet){db.sets[currentSet].current=currentIndex;saveDB()}renderDashboard()}
-function imageHTML(q){if(!q.imageId)return'';const im=IMAGES[q.imageId];if(!im||!im.src)return'';return '<img src="'+im.src+'" alt="'+String(im.alt||'Question figure').replace(/"/g,'&quot;')+'" width="'+(im.width||'')+'" height="'+(im.height||'')+'">'}
+let combinedImageSourcePromise=null;
+function combinedImageSource(){
+ if(!combinedImageSourcePromise)combinedImageSourcePromise=fetch('combined-images.js',{cache:'force-cache'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.text()});
+ return combinedImageSourcePromise
+}
+async function hydrateCombinedImage(q,host){
+ if(!q.imageId){host.innerHTML='';host.classList.add('hidden');return}
+ host.classList.remove('hidden');host.innerHTML='<span class="mini">Loading figure…</span>';
+ try{
+  const src=await combinedImageSource();if(currentData[currentIndex]?.id!==q.id)return;
+  const safe=String(q.imageId).replace(/[^A-Za-z0-9_-]/g,'');if(!safe||safe!==String(q.imageId))throw Error('invalid figure key');
+  const start=src.indexOf('"'+safe+'"');if(start<0)throw Error('figure key not found');
+  const match=src.slice(start).match(/"src"\s*:\s*"data:image\/(?:png|jpeg|gif|webp);base64,([A-Za-z0-9+/=]+)"/);if(!match)throw Error('figure payload not found');
+  host.innerHTML='<img src="data:image/png;base64,'+match[1]+'" alt="Question figure">'
+ }catch(e){if(currentData[currentIndex]?.id!==q.id)return;host.innerHTML='<span class="mini">Figure could not be loaded.</span>';console.error('Combined figure failed:',q.id,e)}
+}
 function loadQuestion(){clearTimeout(autoTimer);autoTimer=null;const q=currentData[currentIndex],st=state(),k=qKey(q),saved=st.answers[k];selected=new Set(Array.isArray(saved)?saved:[]);graded=!!st.graded[k];
  document.getElementById('set-badge').textContent='COMBINED · PRACTICE SET '+currentSet;document.getElementById('progress').textContent='Question '+(currentIndex+1)+' / '+currentData.length;document.getElementById('type').textContent=(q.type==='multi'?'Select '+q.n:'Select 1')+' · '+q.topic;document.getElementById('stem').textContent=q.stem;
- const ih=imageHTML(q),img=document.getElementById('image');img.innerHTML=ih;img.classList.toggle('hidden',!ih);
+ const img=document.getElementById('image');hydrateCombinedImage(q,img);
  const opts=document.getElementById('options');opts.innerHTML='';q.options.forEach((t,i)=>{const row=document.createElement('div');row.className='mbu-choice-row';const b=document.createElement('button');b.className='opt';b.dataset.i=i;b.innerHTML='<span class="prefix">'+LETTERS[i]+'</span><span></span>';b.lastChild.textContent=t;const cross=document.createElement('button');cross.className='mbu-cross';cross.type='button';cross.textContent='✕';cross.setAttribute('aria-label','Cross out '+LETTERS[i]);const struck=!!st.strikes[k+':'+i];cross.setAttribute('aria-pressed',String(struck));if(struck)b.classList.add('strike');b.onclick=()=>pick(i);b.oncontextmenu=e=>{e.preventDefault();toggleCross(i,b,cross)};cross.onclick=()=>toggleCross(i,b,cross);row.append(b,cross);opts.append(row)});
  restoreAppearance(q);updateLiveStats();renderNavigator();mbuUpdateFlag(q);document.getElementById('prev').disabled=currentIndex===0;document.getElementById('next').disabled=currentIndex===currentData.length-1;window.scrollTo(0,0)}
 function restoreAppearance(q){const st=state(),k=qKey(q);document.querySelectorAll('#options .opt').forEach(b=>{const i=+b.dataset.i;b.classList.toggle('selected',!graded&&selected.has(i));b.classList.remove('correct','incorrect','missed','locked');if(graded){b.classList.add('locked');if(q.answer.includes(i))b.classList.add(selected.has(i)?'correct':'missed');else if(selected.has(i))b.classList.add('incorrect')}});document.querySelectorAll('.mbu-cross').forEach(b=>b.disabled=graded);const row=document.getElementById('multi-submit-row');row.style.display=graded?'none':'flex';document.getElementById('submit-multi').disabled=graded||selected.size!==(q.type==='multi'?q.n:1);const ex=document.getElementById('explain');if(graded){const ok=!!st.correct[k];let text=(ok?'Correct. ':'Incorrect. ')+q.explanation;if(q.disc)text+=' Lecture discrepancy: '+q.disc;if(q.supp)text+=' Beyond the slide: '+q.supp;document.getElementById('explain-text').textContent=text;document.getElementById('citation').textContent=q.citation?'Source: '+q.citation:'';ex.style.display='block'}else ex.style.display='none'}
