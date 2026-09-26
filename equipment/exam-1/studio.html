@@ -101,12 +101,12 @@ async function loadBanks(){
   const errors=[],sources=[
     ['quiz-bank-1.html','b1','Quiz Bank 1'],
     ['quiz-bank-2.html','b2','Quiz Bank 2'],
-    ['quiz-bank-3.html','b3','Quiz Bank 3'],
+    ['studio-bank3.json','b3','Quiz Bank 3'],
     ['combined-questions.js','combined','Combined'],
     ['hazards-100.html','h1','Hazards Practice Set 1'],
     ['hazards-bank-2.html','h2','Hazards Practice Set 2'],
-    ['hazards-bank-3.html','h3','Hazards Practice Set 3'],
-    ['hazards-harder.html','hh','Hazards Challenge Set']
+    ['studio-hazards3.json','h3','Hazards Practice Set 3'],
+    ['studio-challenge.json','hh','Hazards Challenge Set']
   ];
   // Paint the Studio immediately; question banks hydrate in the background.
   try{renderHome()}catch(e){}
@@ -118,13 +118,16 @@ async function loadBanks(){
       }else if(key==='b2'){
         const raw=arrAfter(t,'const SETS');if(!raw)throw Error('SETS not found');const sets=evalArr(raw);return sets.flatMap((set,n)=>set.map((q,i)=>norm(q,'b2',n+1,i,'Quiz Bank 2')))
       }else if(key==='b3'){
-        const raw=arrAfter(t,'const BANK');if(!raw)throw Error('BANK not found');return evalArr(raw).map((q,i)=>norm({...q,img:q.img?{kind:'bank3',url,key:q.img}:null},'b3',q.setn||1,i,'Quiz Bank 3'))
+        const qs=JSON.parse(t);if(!Array.isArray(qs))throw Error('Bank 3 Studio data is invalid');return qs.map((q,i)=>norm({...q,img:q.img?{kind:'bank3',url:'quiz-bank-3.html',key:q.img}:null},'b3',q.setn||1,i,'Quiz Bank 3'))
       }else if(key==='combined'){
         const raw=arrAfter(t,'"questions"');if(!raw)throw Error('Combined questions not found');return evalArr(raw).map((q,i)=>norm({...q,img:q.image_id?{kind:'combined',url:'combined-images.js',imgKey:q.image_id}:null},'combined',Math.floor(i/50)+1,i,'Combined'))
       }else{
-        const raw=arrAfter(t,(key==='h3'||key==='hh')?'const BANK':'const QUESTIONS');if(!raw)throw Error('question array not found');let qs=evalArr(raw),images={};
+        let qs;
+        if(key==='h3'||key==='hh'){qs=JSON.parse(t);if(!Array.isArray(qs))throw Error('Hazards Studio data is invalid')}
+        else{const raw=arrAfter(t,'const QUESTIONS');if(!raw)throw Error('question array not found');qs=evalArr(raw)}
         if(key==='h2'&&qs.length<100){const extraRaw=arrAfter(t,'additionalHazards');if(!extraRaw)throw Error('additionalHazards not found');const extra=evalArr(extraRaw);for(let n=qs.length+1;n<=100;n++){const base=extra[(n-31)%extra.length];qs.push({id:n,type:'single',stem:base.stem,options:base.options,answer:base.answer,explanation:base.exp,citation:'Anesthesia Workstation Hazards & Safety, '+base.cit})}}
-        return qs.map((q,i)=>norm({...q,img:q.img?(key==='h3'||key==='hh'?{kind:'hazards',url,imgKey:q.img}:q.img):(q.imageSvg||null)},key,1,i,label,'Workstation Hazards'))
+        const imageUrl=key==='h3'?'hazards-bank-3.html':key==='hh'?'hazards-harder.html':url;
+        return qs.map((q,i)=>norm({...q,img:q.img?(key==='h3'||key==='hh'?{kind:'hazards',url:imageUrl,imgKey:q.img}:q.img):(q.imageSvg||null)},key,1,i,label,'Workstation Hazards'))
       }
     }catch(e){errors.push(label+': '+(e&&e.name==='AbortError'?'timed out':e.message));console.error('Studio source failed:',label,e);return []}
   };
