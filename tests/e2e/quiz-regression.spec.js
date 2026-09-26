@@ -52,7 +52,7 @@ test.describe('canonical quiz regression', () => {
     if (answer.length > 1) await page.locator('#submitBtn').click();
     await page.waitForTimeout(450);
 
-    let state = await storageJSON(page, 'srna_all5_groundup_v1');
+    state = await storageJSON(page, 'srna_all5_groundup_v1');
     expect(state.sets['0'].answered['0']).toBe(true);
     expect(state.sets['0'].current).toBe(1);
 
@@ -76,6 +76,23 @@ test.describe('canonical quiz regression', () => {
     expect(state.sets['0'].answered['0']).toBeUndefined();
   });
 
+  test('Bank 3 persists a submitted answer and resumes at the advanced position', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-3.html');
+    await page.evaluate(() => openExam(1));
+    const answer = await page.evaluate(() => byId[EXM[1].ids[0]].a);
+    await clickIndexes(page.locator('#main .opt'), answer);
+    let state = await storageJSON(page, 'srna_equipment_dashboard_v1');
+    expect(Object.keys(state.ex['1'].ans || {})).toHaveLength(0);
+    await page.locator('#go').click();
+    await page.waitForTimeout(450);
+    state = await storageJSON(page, 'srna_equipment_dashboard_v1');
+    expect(Object.keys(state.ex['1'].ans || {})).toHaveLength(1);
+    expect(state.ex['1'].idx).toBe(1);
+    await page.reload();
+    await page.evaluate(() => openExam(1));
+    await expect(page.locator('.progress')).toContainText('Question 2 of');
+  });
+
   test('Hazards Set 1 persists a correct answer and auto-advances', async ({ page }) => {
     await page.goto(exam + '/hazards-100.html');
     await page.locator('#hazStart').click();
@@ -85,7 +102,7 @@ test.describe('canonical quiz regression', () => {
     await page.waitForTimeout(450);
 
     await expect(page.locator('#progress')).toContainText('Question 2 of');
-    const state = await storageJSON(page, 'SRNA_HAZARDS_BANK_1_2026_V2');
+    state = await storageJSON(page, 'SRNA_HAZARDS_BANK_1_2026_V2');
     expect(state.graded['1']).toBe(true);
     expect(state.correct['1']).toBe(true);
   });
@@ -135,7 +152,7 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/studio.html');
     await waitForStudio(page);
     await page.evaluate(() => {
-      session = [ALL.find(q => Array.isArray(q.opts) && q.opts.length === 4) || ALL[0]];
+      session = [ALL.find(q => Array.isArray(q.opts) && q.opts.length === 4 && q.ans.length === 1) || ALL[0]];
       pos = 0;
       DB.active = { uids: session.map(q => q.uid), pos: 0, answers: {}, updated: Date.now() };
       save();
