@@ -335,6 +335,13 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#sourceChecks')).toContainText('Combined');
   });
 
+  test('Hazards cumulative missed review routes to Studio', async ({ page }) => {
+    await page.goto(exam + '/hazards-review.html');
+    await page.waitForURL(/studio\.html\?mode=hazards-missed&return=hazards/);
+    await waitForStudio(page);
+    await expect(page.locator('#studioTitle')).toContainText('Workstation Hazards');
+  });
+
   test('Studio-created quiz fits a standard desktop viewport without page scrolling', async ({ page }) => {
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto(exam + '/studio.html');
