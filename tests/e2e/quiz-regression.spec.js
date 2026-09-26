@@ -318,4 +318,14 @@ test.describe('canonical quiz regression', () => {
     expect(errors).toEqual([]);
   });
 
+  test('Shared asset revisions and updater baseline stay canonical', async ({ page }) => {
+    const requests=[];
+    page.on('request', req => { if (/\\/equipment\\/assets\\/.+\\?v=/.test(req.url())) requests.push(req.url()); });
+    await page.goto(exam + '/studio.html');
+    await expect(page.locator('#home')).toBeVisible();
+    expect(requests.length).toBeGreaterThan(0);
+    expect(requests.every(url => new URL(url).searchParams.get('v') === '60')).toBeTruthy();
+    await expect.poll(() => page.evaluate(() => sessionStorage.getItem('mbu_build_manifest_v1'))).not.toBeNull();
+  });
+
 });
