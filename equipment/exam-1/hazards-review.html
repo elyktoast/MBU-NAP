@@ -1,20 +1,13 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hazards Missed Review</title>
-<style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#edf2f7;color:#1a202c;margin:0;padding:20px}.wrap{max-width:1040px;margin:auto}.panel{background:#fff;border-radius:10px;padding:28px;box-shadow:0 4px 12px #0001}.head{display:flex;justify-content:space-between;gap:12px;align-items:center;border-bottom:1px solid #cbd5e0;padding-bottom:16px}.btn{border:0;border-radius:6px;background:#1a365d;color:#fff;padding:10px 16px;font-weight:700;cursor:pointer;text-decoration:none}.mut{color:#718096}.q{border-top:1px solid #e2e8f0;padding:22px 0}.stem{font-weight:750;font-size:1.08rem;margin:8px 0 14px}.opt{padding:11px 14px;border:1px solid #cbd5e0;border-radius:7px;margin:6px 0}.key{border:2px solid #22543d;background:#f0fff4;color:#22543d}.yours{border:2px solid #9b2c2c;background:#fff5f5;color:#742a2a}.exp{margin-top:12px;padding:12px;background:#f7fafc;border-left:4px solid #1a365d}.actions{display:flex;gap:10px;flex-wrap:wrap}@media(max-width:650px){body{padding:10px}.panel{padding:18px}.head{align-items:flex-start;flex-direction:column}}</style>
-<link rel="stylesheet" href="../assets/site-nav.css?v=63">
-<link rel="stylesheet" href="../assets/bank1-quiz-ui.css?v=63"><script defer src="../assets/site-nav.js?v=63" data-page="hazards"></script></head><body class="mbu-bank1-ui"><div class="wrap"><div class="panel"><div class="head"><div><h1 style="margin:0">Hazards Missed Questions</h1><div class="mut" id="count">Loading…</div></div><div class="actions"><a class="btn" href="hazards.html">← Hazards Dashboard</a></div></div><main id="main"></main></div></div>
-<script>
-const defs=[
- ['hazards-100.html','h1','SRNA_HAZARDS_BANK_1_2026_V2','graded','Practice Set 1'],
- ['hazards-bank-2.html','h2','SRNA_HAZARDS_BANK_2_2026_V1','graded','Practice Set 2'],
- ['hazards-bank-3.html','h3','hazards_practice3_progress_2026_V2','ans','Practice Set 3'],
- ['hazards-harder.html','hh','srna_hazards_safety_harder_v1','ans','Challenge Set']
-];
-function arrAfter(t,name){let i=t.indexOf(name);if(i<0)return null;i=t.indexOf('[',i);let d=0,s=null,e=false;for(let j=i;j<t.length;j++){let c=t[j];if(s){if(e)e=false;else if(c==='\\\\')e=true;else if(c===s)s=null;continue}if(c==='"'||c==="'")s=c;else if(c==='[')d++;else if(c===']'&&--d===0)return t.slice(i,j+1)}return null}
-function evalArr(s){return Function('"use strict";return ('+s+')')()}
-function norm(q){return{ id:q.id, stem:q.stem||q.q||'', opts:q.options||q.c||[], ans:(q.answer||q.a||[]).map(Number), exp:q.explanation||q.exp||'', src:q.citation||((q.ref||[]).join('; '))}}
-function state(def){try{return JSON.parse(localStorage.getItem(def[2])||'null')}catch(e){return null}}
-function missedIds(d,kind){if(!d)return[];if(Array.isArray(d.missed))return d.missed.map(String);if(kind==='ans')return Object.entries(d.ans||{}).filter(([,v])=>v&&!v.ok).map(([k])=>String(k));return Object.keys(d.graded||{}).filter(k=>d.graded[k]&&!(d.correct||{})[k]).map(String)}
-function selectedFor(d,id){const v=(d&&d.answers||{})[id]??(d&&d.ans||{})[id];if(Array.isArray(v))return v.map(Number);if(v&&Array.isArray(v.selected))return v.selected.map(Number);if(v&&Array.isArray(v.sel))return v.sel.map(Number);return[]}
-function esc(s){return String(s??'').replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]))}
-(async()=>{let all=[];for(const def of defs){try{let t=await fetch(def[0],{cache:'no-store'}).then(r=>r.text()),raw=arrAfter(t,(def[1]==='h3'||def[1]==='hh')?'const BANK':'const QUESTIONS'),qs=evalArr(raw).map(norm),d=state(def),ids=new Set(missedIds(d,def[3]));qs.filter(q=>ids.has(String(q.id))).forEach(q=>all.push({...q,label:def[4],selected:selectedFor(d,String(q.id))}))}catch(e){console.error(e)}}document.getElementById('count').textContent=all.length+' question'+(all.length===1?'':'s')+' currently missed';document.getElementById('main').innerHTML=all.length?all.map((q,n)=>'<section class="q"><div class="mut">'+esc(q.label)+' · Original Q'+esc(q.id)+'</div><div class="stem">'+(n+1)+'. '+esc(q.stem)+'</div>'+q.opts.map((o,i)=>'<div class="opt '+(q.ans.includes(i)?'key ':'')+(q.selected.includes(i)&&!q.ans.includes(i)?'yours':'')+'"><b>'+String.fromCharCode(65+i)+'.</b> '+esc(o)+'</div>').join('')+'<div class="exp">'+esc(q.exp)+(q.src?'<div class="mut" style="margin-top:7px">'+esc(q.src)+'</div>':'')+'</div></section>').join(''):'<p class="mut">No missed Hazards questions right now.</p>'})()
-</script><!-- MBU_BUILD:2026-09-24-hazards-review-key-v2 --><script src="../assets/auto-update.js?v=63"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hazards Missed Review</title>
+<meta http-equiv="refresh" content="0;url=studio.html?mode=hazards-missed&return=hazards">
+<script>location.replace('studio.html?mode=hazards-missed&return=hazards');</script>
+</head>
+<body>
+<p><a href="studio.html?mode=hazards-missed&return=hazards">Open Hazards missed review</a></p>
+</body>
+</html>
