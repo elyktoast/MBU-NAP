@@ -97,6 +97,25 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('.progress')).toContainText('Question 2 of');
   });
 
+  test('Bank 3 multi-select uses canonical controls without runtime errors', async ({ page }) => {
+    const errors = collectPageErrors(page);
+    await page.goto(exam + '/quiz-bank-3.html');
+    const answer = await page.evaluate(() => {
+      const q = BANK.find(x => x.type === 'multi');
+      if (!q) throw new Error('Bank 3 has no multi-select question');
+      V = { mode: 'exam', n: q.setn };
+      S.ex[q.setn].idx = EXM[q.setn].ids.indexOf(q.id);
+      renderQ();
+      return q.a;
+    });
+    await clickIndexes(page.locator('#main .opt'), answer);
+    await expect(page.locator('#go')).toContainText('Submit Selections');
+    await expect(page.locator('#go')).toBeEnabled();
+    await page.locator('#go').click();
+    await expect(page.locator('#fb')).toBeVisible();
+    expect(errors).toEqual([]);
+  });
+
   test('Hazards Set 1 persists a correct answer and auto-advances', async ({ page }) => {
     await page.goto(exam + '/hazards-100.html');
     await page.locator('#hazStart').click();
@@ -138,6 +157,19 @@ test.describe('canonical quiz regression', () => {
     expect(state.ans[Object.keys(state.ans)[0]].ok).toBe(true);
     await page.reload();
     await expect(page.locator('.progress')).toContainText('Question 2 of');
+  });
+
+  test('Hazards Set 2 persists a submitted answer through the shared standard engine', async ({ page }) => {
+    await page.goto(exam + '/hazards-bank-2.html');
+    await page.locator('#hazStart').click();
+    const answer = await page.evaluate(() => QUESTIONS[0].answer);
+    await clickIndexes(page.locator('#options .opt'), answer);
+    await page.locator('#submit-multi').click();
+    await page.waitForTimeout(450);
+    const state = await storageJSON(page, 'SRNA_HAZARDS_BANK_2_2026_V1');
+    expect(state.graded['1']).toBe(true);
+    expect(state.correct['1']).toBe(true);
+    await expect(page.locator('#progress')).toContainText('Question 2 of');
   });
 
   test('Challenge writes only its canonical progress key', async ({ page }) => {
@@ -210,6 +242,14 @@ test.describe('canonical quiz regression', () => {
       expect(errors).toEqual([]);
     });
   }
+
+  test('Studio hydrates every canonical source at its expected question count', async ({ page }) => {
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    const counts = await page.evaluate(() => Object.fromEntries([...BANK_QUESTIONS].map(([bank, qs]) => [bank, qs.length])));
+    expect(counts).toEqual({ b1: 500, b2: 500, b3: 500, h1: 100, h2: 100, h3: 100, hh: 50 });
+    expect(await page.evaluate(() => ALL_BY_UID.size)).toBe(1850);
+  });
 
   test('Studio loads all indexed sources without page errors', async ({ page }) => {
     const errors = collectPageErrors(page);
