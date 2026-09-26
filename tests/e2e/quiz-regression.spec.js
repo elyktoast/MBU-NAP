@@ -182,7 +182,7 @@ test.describe('canonical quiz regression', () => {
 
   test('Bank 3 multi-select feedback and lazy figure loading use canonical session UI', async ({ page }) => {
     const imageRequests=[];
-    page.on('request',req=>{if(req.url().includes('bank3-images.js'))imageRequests.push(req.url())});
+    page.on('request',req=>{if(req.url().includes('/images/bank3/'))imageRequests.push(req.url())});
     await page.goto(exam + '/quiz-bank-3.html');
     await page.evaluate(() => MBUQuizReady);
     expect(imageRequests).toHaveLength(0);
@@ -385,9 +385,9 @@ test.describe('canonical quiz regression', () => {
     expect(new URL(page.url()).pathname).toBe(beforePath);
   });
 
-  test('Combined does not fetch its image bundle until an image question is opened', async ({ page }) => {
+  test('Combined fetches only the needed image asset when an image question is opened', async ({ page }) => {
     const imageRequests=[];
-    page.on('request',req=>{if(req.url().includes('combined-images.js'))imageRequests.push(req.url())});
+    page.on('request',req=>{if(req.url().includes('/images/combined/'))imageRequests.push(req.url())});
     await page.goto(exam + '/combined.html');
     await expect(page.locator('#overall')).toContainText('/ 150 completed');
     expect(imageRequests).toHaveLength(0);
