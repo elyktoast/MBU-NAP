@@ -130,10 +130,15 @@ function checkHazardNavigators(){
 checkHazardNavigators();
 function checkCanonicalSubmission(){
   const bank2=read('equipment/exam-1/quiz-bank-2.html');
+  const combined=read('equipment/exam-1/combined.html');
   const studio=read('equipment/exam-1/studio.html');
   const standard=read('equipment/assets/hazards-standard-engine.js');
   const challenge=read('equipment/assets/hazards-quiz-engine.js');
   if(bank2.includes('selected=new Set([i]);submitAnswer();return'))fail('Bank 2: single-answer questions bypass canonical Submit Answer step');
+  if(combined.includes("if(q.type==='single')selected=new Set([i]);submitAnswer()"))fail('Combined: single-answer questions bypass canonical Submit Answer step');
+  if(!combined.includes("row.style.display=graded?'none':'flex'"))fail('Combined: canonical Submit Answer row is not shown for all ungraded questions');
+  if(combined.includes('MBUNavigator.button(i+1'))fail('Combined: shared navigator is called with the legacy signature');
+  if(!combined.includes('MBUNavigator.button({label:i+1'))fail('Combined: shared canonical navigator renderer is not used');
   if(!bank2.includes('document.getElementById("multi-submit-row").style.display="flex"'))fail('Bank 2: canonical Submit Answer row is not shown for all ungraded questions');
   if(studio.includes('sel=new Set([i]);grade();return'))fail('Studio: single-answer questions bypass canonical Submit Answer step');
   if(!studio.includes("submitRow.style.display='flex'"))fail('Studio: canonical Submit Answer row is not shown for all ungraded questions');
