@@ -71,85 +71,142 @@ test.describe('canonical quiz regression', () => {
     expect(Object.keys(state.sets['1'].graded || {})).toHaveLength(0);
   });
 
-  test('Bank 2 persists a correct answer and resumes at the next question', async ({ page }) => {
-    await page.goto(exam + '/quiz-bank-2.html');
-    await page.evaluate(() => startSet(0));
-    const answer = await page.evaluate(() => SETS[0][0].correct);
-    await clickIndexes(page.locator('#choices .choice'), answer);
-    let state = await storageJSON(page, 'srna_all5_groundup_v1');
-    expect(state?.sets?.['0']?.answered?.['0']).toBeUndefined();
-    await page.locator('#submitBtn').click();
-    await expect(page.locator('#progress')).toContainText('Question 2 of');
-
-    state = await storageJSON(page, 'srna_all5_groundup_v1');
-    expect(state.sets['0'].answered['0']).toBe(true);
-    expect(state.sets['0'].current).toBe(1);
-
-    await page.reload();
-    await page.evaluate(() => startSet(0));
-    await expect(page.locator('#progress')).toContainText('Question 2 of');
-  });
-
-  test('Bank 2 question reset removes only the current answer state', async ({ page }) => {
-    await page.goto(exam + '/quiz-bank-2.html');
-    await page.evaluate(() => startSet(0));
-    const correct = await page.evaluate(() => SETS[0][0].correct[0]);
-    const wrong = correct === 0 ? 1 : 0;
-    await page.locator('#choices .choice').nth(wrong).click();
-    await expect(page.locator('#feedback')).toBeHidden();
-    await page.locator('#submitBtn').click();
-    await expect(page.locator('#feedback')).toBeVisible();
-
-    await page.locator('#resetQBtn').click();
-    await expect(page.locator('#feedback')).toBeHidden();
-    await expect(page.locator('#choices .choice.sel')).toHaveCount(0);
-    const state = await storageJSON(page, 'srna_all5_groundup_v1');
-    expect(state.sets['0'].answered['0']).toBeUndefined();
-  });
-
-  test('Bank 3 persists a submitted answer and resumes at the advanced position', async ({ page }) => {
-    await page.goto(exam + '/quiz-bank-3.html');
-    await page.evaluate(() => openExam(1));
-    const answer = await page.evaluate(() => byId[EXM[1].ids[0]].a);
-    await clickIndexes(page.locator('#main .opt'), answer);
-    let state = await storageJSON(page, 'srna_equipment_dashboard_v1');
-    expect(state).not.toBeNull();
-    expect(Object.keys(state.ex['1'].ans || {})).toHaveLength(0);
-    await page.locator('#go').click();
-    await expect(page.locator('.progress')).toContainText('Question 2 of');
-    state = await storageJSON(page, 'srna_equipment_dashboard_v1');
-    expect(Object.keys(state.ex['1'].ans || {})).toHaveLength(1);
-    expect(state.ex['1'].idx).toBe(1);
-    await page.reload();
-    await page.evaluate(() => openExam(1));
-    await expect(page.locator('.progress')).toContainText('Question 2 of');
-  });
-
-  test('Bank 3 multi-select reveals every keyed answer with canonical feedback styling', async ({ page }) => {
-    const errors = collectPageErrors(page);
-    await page.goto(exam + '/quiz-bank-3.html');
-    const caseData = await page.evaluate(() => {
-      const q = BANK.find(x => x.type === 'multi' && x.a.length > 1 && x.c.some((_, i) => !x.a.includes(i)));
-      if (!q) throw new Error('Bank 3 has no suitable multi-select question');
-      V = { mode: 'exam', n: q.setn };
-      S.ex[q.setn].idx = EXM[q.setn].ids.indexOf(q.id);
-      renderQ();
-      const wrong = q.c.findIndex((_, i) => !q.a.includes(i));
-      return { answer: q.a, chosen: [...q.a.slice(0, -1), wrong] };
+  for (const [label,file,key] of [
+    ['Bank 2','quiz-bank-2.html','srna_all5_groundup_v1'],
+    ['Bank 3','quiz-bank-3.html','srna_equipment_dashboard_v1']
+  ]) {
+    test(label + ' uses the canonical engine and resumes submitted progress', async ({ page }) => {
+      const errors=collectPageErrors(page);
+      await page.goto(exam + '/' + file);
+      await page.evaluate(() => MBUQuizReady);
+      await expect(page.locator('#dashboard')).toBeVisible();
+      await page.locator('#cards button').filter({ hasText: /start|continue/i }).first().click();
+      await expect(page.locator('#quiz')).toBeVisible();
+      const answer=await page.evaluate(() => SETS[1][0].answer);
+      await clickIndexes(page.locator('#options .opt'),answer);
+      let state=await storageJSON(page,key);
+      expect(state?.sets?.['1']?.graded?.['0']).toBeUndefined();
+      await page.locator('#submit-multi').click();
+      await expect(page.locator('#progress')).toContainText('Question 2 of');
+      state=await storageJSON(page,key);
+      expect(state.sets['1'].graded['0']).toBe(true);
+      expect(state.sets['1'].current).toBe(1);
+      await page.reload();
+      await page.evaluate(() => MBUQuizReady);
+      await page.locator('#cards button').filter({ hasText: /continue/i }).first().click();
+      await expect(page.locator('#progress')).toContainText('Question 2 of');
+      expect(errors).toEqual([]);
     });
-    await clickIndexes(page.locator('#main .opt'), caseData.chosen);
-    await expect(page.locator('#go')).toContainText('Submit Selections');
-    await expect(page.locator('#go')).toBeEnabled();
-    await page.locator('#go').click();
-    await expect(page.locator('#fb')).toBeVisible();
-    for (const i of caseData.answer) {
-      const option = page.locator('#main .opt').nth(i);
-      await expect(option).toHaveCSS('background-color', 'rgb(198, 246, 213)');
-      await expect(option.locator('.t')).not.toHaveCSS('text-decoration-line', 'line-through');
-    }
-    await expect(page.locator('#fb')).toHaveCSS('background-color', 'rgb(248, 250, 252)');
-    await expect(page.locator('#fb')).toHaveCSS('border-left-color', 'rgb(26, 54, 93)');
-    expect(errors).toEqual([]);
+  }
+
+  test('Bank 2 migrates legacy saved progress into canonical Bank 1 state', async ({ page }) => {
+    await page.addInitScript(() => {
+      localStorage.setItem('srna_all5_groundup_v1', JSON.stringify({
+        sets:{
+          0:{
+            answered:{0:true,1:false},
+            missed:[1],
+            selections:{0:[0],1:[0]},
+            crosses:{1:[2]},
+            current:1
+          }
+        }
+      }));
+    });
+    await page.goto(exam + '/quiz-bank-2.html');
+    await page.evaluate(() => MBUQuizReady);
+    const state=await storageJSON(page,'srna_all5_groundup_v1');
+    expect(state.sets['1'].graded['0']).toBe(true);
+    expect(state.sets['1'].correct['0']).toBe(true);
+    expect(state.sets['1'].graded['1']).toBe(true);
+    expect(state.sets['1'].correct['1']).toBe(false);
+    expect(state.sets['1'].strikes['1_2']).toBe(true);
+    expect(state.sets['1'].current).toBe(1);
+    expect(state.missed['1']).toContain(await page.evaluate(() => SETS[1][1].id));
+    await expect(page.locator('#overall')).toContainText('2 / 500 completed');
+  });
+
+  test('Bank 3 migrates legacy saved progress and cross-outs into canonical Bank 1 state', async ({ page }) => {
+    await page.addInitScript(() => {
+      localStorage.setItem('srna_equipment_dashboard_v1', JSON.stringify({
+        ex:{
+          1:{
+            idx:1,
+            ans:{
+              'S1-M01':{sel:[0],ok:true},
+              'S1-G27':{sel:[0],ok:false}
+            },
+            xo:{'S1-G27':[2]}
+          }
+        },
+        cleared:{},
+        t6:null,
+        t6hist:[]
+      }));
+    });
+    await page.goto(exam + '/quiz-bank-3.html');
+    await page.evaluate(() => MBUQuizReady);
+    const state=await storageJSON(page,'srna_equipment_dashboard_v1');
+    expect(state.sets['1'].graded['0']).toBe(true);
+    expect(state.sets['1'].correct['0']).toBe(true);
+    expect(state.sets['1'].graded['1']).toBe(true);
+    expect(state.sets['1'].correct['1']).toBe(false);
+    expect(state.sets['1'].strikes['1_2']).toBe(true);
+    expect(state.sets['1'].current).toBe(1);
+    expect(state.missed['1']).toContain('S1-G27');
+    await expect(page.locator('#overall')).toContainText('2 / 500 completed');
+  });
+
+  for (const [label,file,key] of [
+    ['Bank 2','quiz-bank-2.html','srna_all5_groundup_v1'],
+    ['Bank 3','quiz-bank-3.html','srna_equipment_dashboard_v1']
+  ]) {
+    test(label + ' recovers malformed state and clamps canonical position', async ({ page }) => {
+      await page.goto(exam + '/' + file);
+      await page.evaluate(k=>localStorage.setItem(k,'{bad json'),key);
+      await page.reload();
+      await page.evaluate(() => MBUQuizReady);
+      await expect(page.locator('#dashboard')).toBeVisible();
+      await page.evaluate(k=>localStorage.setItem(k,JSON.stringify({
+        sets:{1:{answers:{},graded:{},correct:{},strikes:{},current:9999}},
+        missed:{1:[],2:[],3:[],4:[],5:[]},
+        test6:{answers:{},graded:{},correct:{},strikes:{},current:0}
+      })),key);
+      await page.reload();
+      await page.evaluate(() => MBUQuizReady);
+      await page.locator('#cards button').filter({ hasText: /start|continue/i }).first().click();
+      await expect(page.locator('#progress')).toContainText('Question 100 of 100');
+      await expect(page.locator('#options .opt').first()).toBeVisible();
+    });
+  }
+
+  test('Bank 3 multi-select feedback and lazy figure loading use canonical session UI', async ({ page }) => {
+    const imageRequests=[];
+    page.on('request',req=>{if(req.url().includes('bank3-images.js'))imageRequests.push(req.url())});
+    await page.goto(exam + '/quiz-bank-3.html');
+    await page.evaluate(() => MBUQuizReady);
+    expect(imageRequests).toHaveLength(0);
+    const data=await page.evaluate(() => {
+      const set=Object.keys(SETS).map(Number).find(s=>SETS[s].some(q=>q.type==='multi'&&q.answer.length>1&&q.options.some((_,i)=>!q.answer.includes(i))));
+      const idx=SETS[set].findIndex(q=>q.type==='multi'&&q.answer.length>1&&q.options.some((_,i)=>!q.answer.includes(i)));
+      currentSet=set;currentData=SETS[set];currentIndex=idx;showQuiz();loadQuestion();
+      const q=currentData[currentIndex],wrong=q.options.findIndex((_,i)=>!q.answer.includes(i));
+      return {answer:q.answer,chosen:[...q.answer.slice(0,-1),wrong]};
+    });
+    await clickIndexes(page.locator('#options .opt'),data.chosen);
+    await page.locator('#submit-multi').click();
+    for(const i of data.answer) await expect(page.locator('#options .opt').nth(i)).toHaveClass(/correct/);
+    await expect(page.locator('#options .opt.incorrect')).toHaveCount(1);
+
+    await page.evaluate(() => {
+      for(const set of Object.keys(SETS).map(Number)){
+        const idx=SETS[set].findIndex(q=>q.imageId);
+        if(idx>=0){currentSet=set;currentData=SETS[set];currentIndex=idx;showQuiz();loadQuestion();return}
+      }
+      throw new Error('No Bank 3 image question found');
+    });
+    await expect(page.locator('#image img')).toBeVisible({timeout:10000});
+    expect(imageRequests.length).toBe(1);
   });
 
   test('Hazards Set 1 persists a correct answer and auto-advances', async ({ page }) => {
@@ -534,70 +591,6 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#overall')).toContainText('1 / 500 completed');
   });
 
-  test('Bank 2 dashboard completed total updates after grading and survives reload', async ({ page }) => {
-    await page.goto(exam + '/quiz-bank-2.html');
-    await page.evaluate(() => startSet(0));
-    const answer = await page.evaluate(() => SETS[0][0].correct);
-    await clickIndexes(page.locator('#choices .choice'), answer);
-    await page.locator('#submitBtn').click();
-    await expect.poll(async () => {
-      const state = await storageJSON(page, 'srna_all5_groundup_v1');
-      return Object.keys(state?.sets?.['0']?.answered || {}).length;
-    }).toBe(1);
-    await page.reload();
-    await expect(page.locator('#bank2Overall')).toContainText('1 / 500 completed');
-  });
-
-  test('Bank 3 dashboard completed total updates after grading and survives reload', async ({ page }) => {
-    await page.goto(exam + '/quiz-bank-3.html');
-    await page.evaluate(() => openExam(1));
-    const answer = await page.evaluate(() => byId[EXM[1].ids[0]].a);
-    await clickIndexes(page.locator('#main .opt'), answer);
-    await page.locator('#go').click();
-    await expect.poll(async () => {
-      const state = await storageJSON(page, 'srna_equipment_dashboard_v1');
-      return Object.keys(state?.ex?.['1']?.ans || {}).length;
-    }).toBe(1);
-    await page.reload();
-    await expect(page.locator('#stats')).toContainText('1 / 500');
-  });
-
-  test('Bank 3 manual navigation cancels pending auto-advance', async ({ page }) => {
-    await page.addInitScript(() => {
-      const nativeSetTimeout = window.setTimeout.bind(window);
-      const nativeClearTimeout = window.clearTimeout.bind(window);
-      window.__mbuActiveTimers = new Set();
-      window.setTimeout = (fn, delay, ...args) => {
-        let id;
-        id = nativeSetTimeout((...cbArgs) => {
-          window.__mbuActiveTimers.delete(id);
-          if (typeof fn === 'function') fn(...cbArgs);
-        }, delay, ...args);
-        window.__mbuActiveTimers.add(id);
-        return id;
-      };
-      window.clearTimeout = id => {
-        window.__mbuActiveTimers.delete(id);
-        return nativeClearTimeout(id);
-      };
-    });
-    await page.goto(exam + '/quiz-bank-3.html');
-    await page.evaluate(() => openExam(1));
-    const baseline = await page.evaluate(() => [...window.__mbuActiveTimers]);
-    const answer = await page.evaluate(() => byId[EXM[1].ids[0]].a);
-    await clickIndexes(page.locator('#main .opt'), answer);
-    await page.locator('#go').click();
-
-    const gradingTimers = await page.evaluate(before => [...window.__mbuActiveTimers].filter(id => !before.includes(id)), baseline);
-    expect(gradingTimers.length).toBeGreaterThan(0);
-
-    await page.evaluate(() => next());
-    const afterManual = await page.evaluate(() => S.ex[1].idx);
-    const stillActive = await page.evaluate(ids => ids.filter(id => window.__mbuActiveTimers.has(id)), gradingTimers);
-    expect(stillActive).toEqual([]);
-    expect(await page.evaluate(() => S.ex[1].idx)).toBe(afterManual);
-  });
-
   test('Studio mixed-bank session restores graded state after navigating away and back', async ({ page }) => {
     await page.goto(exam + '/studio.html');
     await waitForStudio(page);
@@ -653,32 +646,6 @@ test.describe('canonical quiz regression', () => {
     await page.locator('button', {hasText:'Reset'}).click();
     await expect(page.locator('#options .opt.strike')).toHaveCount(0);
     await expect(page.locator('#options .opt.selected')).toHaveCount(0);
-  });
-
-  test('Bank 2 graded question survives immediate reload without losing the answer', async ({ page }) => {
-    await page.goto(exam + '/quiz-bank-2.html');
-    await page.evaluate(() => startSet(0));
-    const answer=await page.evaluate(() => SETS[0][0].correct);
-    await clickIndexes(page.locator('#choices .choice'), answer);
-    await page.locator('#submitBtn').click();
-    await page.reload();
-    const state=await storageJSON(page,'srna_all5_groundup_v1');
-    expect(state.sets['0'].answered['0']).toBe(true);
-  });
-
-  test('Bank 3 last question grading does not advance beyond the set', async ({ page }) => {
-    await page.goto(exam + '/quiz-bank-3.html');
-    const data=await page.evaluate(() => {
-      openExam(1);
-      S.ex[1].idx=EXM[1].ids.length-1;
-      renderQ();
-      const q=byId[EXM[1].ids[S.ex[1].idx]];
-      return {answer:q.a,last:EXM[1].ids.length-1};
-    });
-    await clickIndexes(page.locator('#main .opt'), data.answer);
-    await page.locator('#go').click();
-    await expect(page.locator('#main')).toContainText('complete');
-    expect(await page.evaluate(() => S.ex[1].idx)).toBe(data.last + 1);
   });
 
   test('Studio completed single-question session clears active state and stays completed after reload', async ({ page }) => {
@@ -756,36 +723,6 @@ test.describe('canonical quiz regression', () => {
 
     await page.reload();
     await expect(page.locator('#overall')).toContainText('100 / 500 completed');
-  });
-
-  test('Bank 2 completes a full practice set through the real final-question path', async ({ page }) => {
-    await page.goto(exam + '/quiz-bank-2.html');
-    await page.evaluate(() => {
-      const s = st(0);
-      for (let i = 0; i < SETS[0].length - 1; i++) {
-        s.answered[i] = true;
-        s.selections[i] = [...SETS[0][i].correct];
-      }
-      s.current = SETS[0].length - 1;
-      save();
-      startSet(0);
-    });
-
-    await expect(page.locator('#progress')).toContainText('Question 100 of 100');
-    const answer = await page.evaluate(() => SETS[0][99].correct);
-    await clickIndexes(page.locator('#choices .choice'), answer);
-    await page.locator('#submitBtn').click();
-
-    await expect.poll(async () => {
-      const state = await storageJSON(page, 'srna_all5_groundup_v1');
-      return Object.keys(state.sets['0'].answered || {}).length;
-    }).toBe(100);
-
-    await expect(page.locator('#dash')).toBeVisible();
-    await expect(page.locator('#bank2Overall')).toContainText('100 / 500 completed');
-
-    await page.reload();
-    await expect(page.locator('#bank2Overall')).toContainText('100 / 500 completed');
   });
 
   test('Studio completes a mixed session spanning every canonical source and persists canonical results', async ({ page }) => {
@@ -1009,16 +946,6 @@ test.describe('canonical quiz regression', () => {
   });
 
 
-  test('Bank 2 recovers from malformed saved JSON', async ({ page }) => {
-    await page.goto(exam + '/quiz-bank-2.html');
-    await page.evaluate(() => localStorage.setItem('srna_all5_groundup_v1', '{bad json'));
-    await page.reload();
-    await expect(page.locator('#dash')).toBeVisible();
-    await expect(page.locator('#bank2Overall')).toContainText('/ 500 completed');
-    await page.evaluate(() => startSet(0));
-    await expect(page.locator('#progress')).toContainText('Question 1 of');
-  });
-
   test('Studio recovers from malformed saved JSON', async ({ page }) => {
     await page.goto(exam + '/studio.html');
     await page.evaluate(() => localStorage.setItem('mbu_exam1_studio_v1', '{bad json'));
@@ -1046,30 +973,6 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#quiz')).toBeVisible();
     await expect(page.locator('#progress')).toContainText('Question 100 of 100');
     expect(await page.locator('#stem').textContent()).toBeTruthy();
-  });
-
-  test('Bank 2 clamps impossible saved positions and remains usable', async ({ page }) => {
-    await page.goto(exam + '/quiz-bank-2.html');
-    await page.evaluate(() => {
-      localStorage.setItem('srna_all5_groundup_v1', JSON.stringify({
-        sets: {
-          0: { answered: {}, missed: [], selections: {}, crosses: {}, current: -200 }
-        }
-      }));
-    });
-    await page.reload();
-    await page.evaluate(() => startSet(0));
-    await expect(page.locator('#progress')).toContainText('Question 1 of');
-    await expect(page.locator('#choices .choice').first()).toBeVisible();
-
-    await page.evaluate(() => {
-      const d = JSON.parse(localStorage.getItem('srna_all5_groundup_v1'));
-      d.sets['0'].current = 9999;
-      localStorage.setItem('srna_all5_groundup_v1', JSON.stringify(d));
-    });
-    await page.reload();
-    await page.evaluate(() => startSet(0));
-    await expect(page.locator('#progress')).toContainText('Question 100 of 100');
   });
 
   test('Studio clamps an impossible active-session position on resume', async ({ page }) => {
@@ -1178,33 +1081,6 @@ test.describe('canonical quiz regression', () => {
       expect(state).not.toBeNull();
     });
   }
-
-  test('Bank 3 recovers from malformed saved JSON', async ({ page }) => {
-    const errors = collectPageErrors(page);
-    await page.goto(exam + '/quiz-bank-3.html');
-    await page.evaluate(() => localStorage.setItem('srna_equipment_dashboard_v1', '{bad json'));
-    await page.reload();
-    await expect(page.locator('#main')).toBeVisible();
-    await page.evaluate(() => openExam(1));
-    await expect(page.locator('.progress')).toContainText('Question 1 of');
-    expect(errors).toEqual([]);
-  });
-
-  test('Bank 3 survives structurally corrupted saved state', async ({ page }) => {
-    const errors = collectPageErrors(page);
-    await page.goto(exam + '/quiz-bank-3.html');
-    await page.evaluate(() => localStorage.setItem('srna_equipment_dashboard_v1', JSON.stringify({
-      ex: { 1: { idx: 9999, ans: null, xo: null } },
-      view: 'exam'
-    })));
-    await page.reload();
-    await page.evaluate(() => openExam(1));
-    await expect(page.locator('.progress')).toContainText('Question 1 of 100');
-    await expect(page.locator('#main .opt').first()).toBeVisible();
-    expect(await page.evaluate(() => S.ex[1].idx)).toBe(0);
-    expect(errors).toEqual([]);
-  });
-
 
   test('Shared asset revisions and updater baseline stay canonical', async ({ page }) => {
     const requests=[];
