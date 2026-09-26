@@ -221,6 +221,23 @@ test.describe('canonical quiz regression', () => {
     expect(await page.evaluate(() => localStorage.getItem('srna_hazards_safety_harder_v1'))).toBeNull();
   });
 
+  test('Combined dashboard matches Bank 1 card structure', async ({ page }) => {
+    await page.goto(exam + '/combined.html');
+    await expect(page.locator('#cards .card')).toHaveCount(4);
+    for(let set=1;set<=3;set++){
+      const card=page.locator('#cards .card').nth(set-1);
+      await expect(card).toContainText('Practice Set '+set);
+      await expect(card).toContainText('50 questions');
+      await expect(card).toContainText('0/50 completed · 0% score · 0 missed');
+      await expect(card.getByRole('button',{name:'Start Practice Set '+set})).toBeVisible();
+      await expect(card.getByRole('button',{name:'Review Missed'})).toBeDisabled();
+    }
+    const missed=page.locator('#cards .card').nth(3);
+    await expect(missed).toContainText('Missed Questions Review');
+    await expect(missed).toContainText('Automatically built from every question missed in Practice Sets 1–3.');
+    await expect(missed.getByRole('button',{name:'Review Missed Questions'})).toBeDisabled();
+  });
+
   test('Combined bank loads, navigates, and persists a submitted answer', async ({ page }) => {
     const errors = collectPageErrors(page);
     await page.goto(exam + '/combined.html');
