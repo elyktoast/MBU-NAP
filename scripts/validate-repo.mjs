@@ -99,7 +99,7 @@ function checkCanonicalNewQuizBanks(){
     for(const bit of ['id="dashboard"','id="cards"','id="overall"','id="quiz"','id="set-badge"','id="mbuFlagBtn"','>Report</button>','>Navigator</button>','mbu-return','id="completed"','id="total"','id="score"','id="missed"','mbu-crossout-hint','id="multi-submit-row"','id="submit-multi"','id="explain"','id="citation"','id="prev"','id="next"','../assets/bank1-quiz-ui.css','../assets/studio-sync.js','../assets/navigator.js','../assets/calculator.js','../assets/quiz-engine.js','../assets/auto-update.js'])if(!page.includes(bit))fail(bank.page+': canonical Bank 1 shell is missing '+bit);
     if(!page.includes("dataUrl:'"+bank.data+"'"))fail(bank.page+': config dataUrl does not match banks.json');
   }
-  for(const bit of ['MBUNavigator.button','MBUCalculator?.besideFlag()',"if(q.answer.includes(i))b.classList.add('correct');else if(selected.includes(i))b.classList.add('incorrect')',"else if(d>0)goDashboard()","Submit Selections (","if(next===lastSaved)return"])if(!engine.includes(bit))fail('Canonical quiz engine: missing Bank 1 behavior '+bit);
+  for(const bit of ['MBUNavigator.button','MBUCalculator?.besideFlag()',"if(q.answer.includes(i))b.classList.add('correct');else if(selected.includes(i))b.classList.add('incorrect')",'else if(d>0)goDashboard()','Submit Selections (','if(next===lastSaved)return'])if(!engine.includes(bit))fail('Canonical quiz engine: missing Bank 1 behavior '+bit);
 }
 function checkCopies(){
   for(const p of ['equipment/exam-1/index.html','equipment/exam-1/quiz-bank-3.html']){
