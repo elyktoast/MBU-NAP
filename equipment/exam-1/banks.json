@@ -40,7 +40,7 @@
       ],
       "questionsPerSet": 100,
       "storageKey": "srna_all5_groundup_v1",
-      "engine": "legacy"
+      "engine": "canonical"
     },
     {
       "id": "bank3",
@@ -59,9 +59,10 @@
         5
       ],
       "questionsPerSet": 100,
-      "engine": "legacy",
-      "imageSource": "quiz-bank-3.html",
-      "imageKind": "bank3"
+      "engine": "canonical",
+      "imageSource": "bank3-images.js",
+      "imageKind": "bank3",
+      "storageKey": "srna_equipment_dashboard_v1"
     },
     {
       "id": "combined",
@@ -78,7 +79,7 @@
       ],
       "questionsPerSet": 50,
       "storageKey": "MBU_COMBINED_BANK_2026_V1",
-      "engine": "legacy",
+      "engine": "canonical",
       "imageSource": "combined-images.js",
       "imageKind": "combined"
     },
@@ -190,7 +191,7 @@
         5
       ],
       "count": 100,
-      "imageSource": "quiz-bank-3.html",
+      "imageSource": "bank3-images.js",
       "imageKind": "bank3"
     },
     {
