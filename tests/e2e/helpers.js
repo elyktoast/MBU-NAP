@@ -8,14 +8,14 @@ async function clearAppState(page) {
   );
   await page.addInitScript(() => {
     const now=Math.floor(Date.now()/1000);
-    localStorage.setItem('snar_legal_acceptance_v3', JSON.stringify({version:'2026-09-27-v3',acceptedAt:new Date().toISOString()}));
+    localStorage.setItem('snar_legal_acceptance_v4', JSON.stringify({version:'2026-09-27-v4',acceptedAt:new Date().toISOString()}));
   });
   await page.goto(exam + '/index.html');
   await page.evaluate(() => window.MBUPageReady);
   await page.evaluate(() => {
-    const legal=localStorage.getItem('snar_legal_acceptance_v3');
+    const legal=localStorage.getItem('snar_legal_acceptance_v4');
     localStorage.clear();sessionStorage.clear();
-    if(legal)localStorage.setItem('snar_legal_acceptance_v3',legal);
+    if(legal)localStorage.setItem('snar_legal_acceptance_v4',legal);
   });
 }
 
