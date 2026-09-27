@@ -2,7 +2,12 @@ const { test, expect } = require('@playwright/test');
 const { exam, clearAppState, seedSignedIn, waitForAuth, collectPageErrors, waitForStudio, storageJSON } = require('./helpers');
 
 async function clickIndexes(locator, indexes) {
-  for (const index of indexes) await locator.nth(index).click();
+  for (const index of indexes) {
+    let target=null;
+    const count=await locator.count();
+    for(let i=0;i<count;i++)if(await locator.nth(i).getAttribute('data-canonical')===String(index)){target=locator.nth(i);break}
+    await (target||locator.nth(index)).click();
+  }
 }
 
 test.describe('canonical quiz regression', () => {
@@ -30,6 +35,22 @@ test.describe('canonical quiz regression', () => {
     }, q.uid);
     const after = await page.evaluate(() => JSON.parse(localStorage.getItem('mbu_exam1_studio_v1')));
     expect(after.flags[q.uid]).toBeUndefined();
+  });
+
+  test('Answer display order is deterministic and preserves canonical grading', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');
+    await page.locator('#cards button').filter({ hasText: /start|continue/i }).first().click();
+    const before=await page.locator('#options .opt').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('data-canonical')));
+    expect(before).toHaveLength(4);
+    expect(new Set(before).size).toBe(4);
+    const answer=await page.evaluate(()=>currentData[currentIndex].answer);
+    await clickIndexes(page.locator('#options .opt'),answer);
+    await page.locator('#submit-multi').click();
+    for(const index of answer)await expect(page.locator(`#options .opt[data-canonical="${index}"]`)).toHaveClass(/correct/);
+    await page.reload();
+    await page.locator('#cards button').filter({ hasText: /continue/i }).first().click();
+    const after=await page.locator('#options .opt').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('data-canonical')));
+    expect(after).toEqual(before);
   });
 
   test('Bank 1 starts, answers, advances, and resumes through Continue after reload', async ({ page }) => {
@@ -378,10 +399,10 @@ test.describe('canonical quiz regression', () => {
       const correct=q.answer[0],wrong=q.options.findIndex((_,i)=>i!==correct);
       return {correct,wrong};
     });
-    await page.locator('#options .opt').nth(data.wrong).click();
+    await clickIndexes(page.locator('#options .opt'),[data.wrong]);
     await page.locator('#submit-multi').click();
-    await expect(page.locator('#options .opt').nth(data.correct)).toHaveClass(/correct/);
-    await expect(page.locator('#options .opt').nth(data.wrong)).toHaveClass(/incorrect/);
+    await expect(page.locator(`#options .opt[data-canonical="${data.correct}"]`)).toHaveClass(/correct/);
+    await expect(page.locator(`#options .opt[data-canonical="${data.wrong}"]`)).toHaveClass(/incorrect/);
     await expect(page.locator('#options .opt.missed')).toHaveCount(0);
   });
 
@@ -997,7 +1018,7 @@ test.describe('canonical quiz regression', () => {
       await expect(page.locator('#sessionCompleted')).toHaveText('1');
 
       for (const index of setup.answer) {
-        await expect(page.locator('#opts .opt').nth(index)).toHaveClass(/correct/);
+        await expect(page.locator(`#opts .opt[data-canonical="${index}"]`)).toHaveClass(/correct/);
       }
 
       const persisted = await page.evaluate(uid => DB.ans && DB.ans[uid], tc.uid);
