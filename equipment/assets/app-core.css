@@ -1,3 +1,4 @@
+[hidden]{display:none!important}
 .mbu-visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 .mbu-skip-link{position:fixed;left:12px;top:8px;z-index:11000;transform:translateY(-160%);padding:9px 12px;border-radius:8px;background:#1a365d;color:#fff;font:700 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;text-decoration:none}
 .mbu-skip-link:focus{transform:none}
