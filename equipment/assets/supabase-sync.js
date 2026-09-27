@@ -136,6 +136,11 @@ const cleaned=String(message||'').trim();if(cleaned.length<3)throw Error('Enter 
 const id=await api('/rest/v1/rpc/snar_submit_suggestion',{method:'POST',body:{p_category:String(category||'idea'),p_message:cleaned}});
 return Number(id)||0
 }
+async function submitQuestionReport(report){
+requireAccountAccess();
+const id=await api('/rest/v1/rpc/snar_submit_question_report',{method:'POST',body:{p_report:report&&typeof report==='object'?report:{}}});
+return Number(id)||0
+}
 async function submitPrivacyRequest(requestType,details=''){
 const s=await validSession();if(!s?.user?.id)throw Error('Sign in to submit a privacy request.');
 const type=String(requestType||'').toLowerCase();
@@ -270,7 +275,7 @@ await refreshAccountAccess();if(accountAccess!=='active'){emit('access-suspended
 stopGuestHeartbeat();startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100);return true
 }
 window.addEventListener('hashchange',()=>handleAuthRedirect().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth redirect failed',e)}));
-window.MBUSupabase={signIn,signUp,signOut,deleteAccount,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,refreshLegalAcceptance,refreshAccountAccess,acceptCurrentLegal,submitPrivacyRequest,submitSuggestion,submitItemContribution,refreshCalibration,calibration,listDevices,removeDevice,listHistory,restoreVersion,adminStatus,adminRpc,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
+window.MBUSupabase={signIn,signUp,signOut,deleteAccount,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,refreshLegalAcceptance,refreshAccountAccess,acceptCurrentLegal,submitPrivacyRequest,submitSuggestion,submitQuestionReport,submitItemContribution,refreshCalibration,calibration,listDevices,removeDevice,listHistory,restoreVersion,adminStatus,adminRpc,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
 const authReady=(async()=>{
 if(await handleAuthRedirect())return true;
 if(session()){

@@ -1,6 +1,5 @@
 (function(){
   const STORE='mbu_exam1_studio_v1';
-  const REPORT_ENDPOINT=window.MBU_REPORT_ENDPOINT||'https://script.google.com/macros/s/AKfycbyvwmbjqiQRAT8K7psT7iyWCrdhNe8YBhCgD3vF3T3onYBk8vVcrw_lQf1G-LUEWAzG/exec';
   let cache=null,reportContext=null;
 
   function normalizeBank(bank){
@@ -184,8 +183,8 @@
     d.reports.push(local);save(d);
     window.MBUStudyIntelligence?.addIssue?.(payload.bank,{uid:payload.uid,bank:payload.bank,bankLabel:payload.bankLabel,set:payload.set,id:payload.questionNumber,topic:payload.topic,stem:payload.stem},{bankLabel:payload.bankLabel,set:payload.set,questionId:payload.questionNumber,reason,comment,href:payload.pageUrl});
     try{
-      if(!REPORT_ENDPOINT)throw new Error('Reporting endpoint is not configured yet.');
-      await fetch(REPORT_ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload),cache:'no-store'});
+      if(!window.MBUSupabase?.submitQuestionReport)throw new Error('Sign in to send question reports.');
+      local.remoteId=await window.MBUSupabase.submitQuestionReport(payload);
       local.sent=true;local.sentAt=new Date().toISOString();save(d);
       status.textContent='Report sent. Thank you.';
       setTimeout(()=>{document.getElementById('mbu-report-modal')?.classList.remove('open');reportContext=null},700);
@@ -225,13 +224,13 @@
   }
 
   async function sendSavedReports(onProgress){
-    if(!REPORT_ENDPOINT)throw new Error('Reporting endpoint is not configured yet.');
+    if(!window.MBUSupabase?.submitQuestionReport)throw new Error('Sign in to send saved question reports.');
     const d=db(),pending=d.reports.filter(r=>r&&typeof r==='object'&&!r.sent);
     let sent=0,failed=0;
     for(let i=0;i<pending.length;i++){
       const r=pending[i],payload=legacyPayload(r);
       try{
-        await fetch(REPORT_ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload),cache:'no-store'});
+        r.remoteId=await window.MBUSupabase.submitQuestionReport(payload);
         r.sent=true;r.sentAt=new Date().toISOString();r.migrated=!(r.comment||r.answerIndexes||r.options);
         sent++;
       }catch(err){

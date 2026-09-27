@@ -1051,11 +1051,11 @@ test.describe('canonical quiz regression', () => {
 
 
   test('Question report modal submits structured context and keeps a local backup', async ({ page }) => {
-    await page.addInitScript(() => { window.MBU_REPORT_ENDPOINT = 'https://report.test/submit'; });
-    let submitted = null;
-    await page.route('https://report.test/submit', async route => {
-      submitted = JSON.parse(route.request().postData() || '{}');
-      await route.fulfill({ status: 204, body: '' });
+    await seedSignedIn(page);
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let submitted=null;
+    await page.route(cloud+'/rest/v1/rpc/snar_submit_question_report',async route=>{
+      submitted=JSON.parse(route.request().postData()||'{}').p_report;
+      await route.fulfill({status:200,contentType:'application/json',body:'41'});
     });
 
     await page.goto(exam + '/quiz-bank-1.html');
@@ -1135,11 +1135,11 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Previously saved local reports can be migrated once without duplication', async ({ page }) => {
-    await page.addInitScript(() => { window.MBU_REPORT_ENDPOINT = 'https://report.test/submit'; });
-    const submissions = [];
-    await page.route('https://report.test/submit', async route => {
-      submissions.push(JSON.parse(route.request().postData() || '{}'));
-      await route.fulfill({ status: 204, body: '' });
+    await seedSignedIn(page);
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co',submissions=[];
+    await page.route(cloud+'/rest/v1/rpc/snar_submit_question_report',async route=>{
+      submissions.push(JSON.parse(route.request().postData()||'{}').p_report);
+      await route.fulfill({status:200,contentType:'application/json',body:String(50+submissions.length)});
     });
 
     await page.goto(exam + '/studio.html');
@@ -1795,7 +1795,10 @@ test.describe('canonical quiz regression', () => {
     await page.route(cloud+'/rest/v1/rpc/snar_admin_system_summary',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({accounts:2,active_accounts:2,suspended_accounts:0,legal_acceptances:2,privacy_requests:0,item_contributions:7,cat_users:1,adaptive_first_attempts:4,calibrated_items_any:6,calibrated_items_2:2,calibrated_items_5:1,calibrated_items_25:0,calibration_max_learners:5,calibration_first_attempts:7,guest_active_15m:3,guest_sessions_24h:8})}));
     await page.route(cloud+'/rest/v1/rpc/snar_admin_accounts',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify([{user_id:'00000000-0000-0000-0000-000000000001',email:'e2e@example.com',created_at:new Date().toISOString(),last_sign_in_at:new Date().toISOString(),access_status:'active',current_legal_accepted:true,cat_used:true,is_admin:true},{user_id:'00000000-0000-0000-0000-000000000002',email:'learner@example.com',created_at:new Date().toISOString(),last_sign_in_at:null,access_status:'active',current_legal_accepted:true,cat_used:false,is_admin:false}])}));
     let accessChange=null,deletedAccount=null;
-    // The dashboard waits for all four RPCs before rendering its statistics.
+    // The dashboard waits for its admin RPCs before rendering its statistics.
+    await page.route(cloud+'/rest/v1/rpc/snar_admin_question_reports',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify([{id:9,reason:'Wrong answer',status:'new',question_uid:'b1-1',bank:'b1',bank_label:'Quiz Bank 1',set_label:'1',question_number:'1',topic:'Medical Gases',stem:'Example reported question',options:['A','B','C','D'],answer_indexes:[1],answer_text:['B'],selected_indexes:[0],selected_text:['A'],explanation:'Example explanation',source:'Example source',page:'',page_url:'/equipment/exam-1/quiz-bank-1.html',build:'test',comment:'Please verify',created_at:new Date().toISOString(),updated_at:new Date().toISOString()}])}));
+    let reportStatus=null;
+    await page.route(cloud+'/rest/v1/rpc/snar_admin_update_question_report',route=>{reportStatus=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:'true'})});
     await page.route(cloud+'/rest/v1/rpc/snar_admin_suggestions',route=>route.fulfill({status:200,contentType:'application/json',body:'[]'}));
     await page.route(cloud+'/rest/v1/rpc/snar_admin_privacy_requests',route=>route.fulfill({status:200,contentType:'application/json',body:'[]'}));
     await page.route(cloud+'/rest/v1/rpc/snar_admin_set_account_access',route=>{accessChange=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:'true'})});
@@ -1810,6 +1813,10 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('[data-admin-stats] > div').filter({hasText:'CAT users'}).locator('strong')).toHaveText('1');
     await expect(page.locator('[data-admin-stats] > div').filter({hasText:'Items ≥5 learners'}).locator('strong')).toHaveText('1');
     await expect(page.locator('[data-admin-stats] > div').filter({hasText:'Max learners / item'}).locator('strong')).toHaveText('5');
+    await expect(page.locator('[data-admin-question-reports]')).toContainText('Example reported question');
+    await page.locator('[data-admin-question-report-status="9"]').selectOption('reviewing');
+    await page.locator('[data-admin-question-report-save="9"]').click();
+    await expect.poll(()=>reportStatus?.p_status).toBe('reviewing');
     await expect(page.locator('[data-admin-suggestions]')).toHaveText('No suggestions yet.');
     await expect(page.locator('[data-admin-accounts]')).toContainText('learner@example.com');
     await page.locator('[data-admin-accounts] [data-admin-access]').click();
@@ -2609,7 +2616,9 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Question report also persists normalized issue metadata', async ({ page }) => {
-    await page.route('https://script.google.com/**',route=>route.fulfill({status:200,contentType:'text/plain',body:'ok'}));
+    await seedSignedIn(page);
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
+    await page.route(cloud+'/rest/v1/rpc/snar_submit_question_report',route=>route.fulfill({status:200,contentType:'application/json',body:'77'}));
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     await page.evaluate(()=>{
       MBUStudyIntelligence.clearAll();
