@@ -755,39 +755,27 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!hazardsAdvanced.includes("topic:q.topic||q.lec||q.concept||'Workstation Hazards'"))fail('Advanced Hazards loader drops topic metadata');
 }
 
-// Content metadata normalization is a stable release contract after Content Phase 2.
+// Canonical content metadata is a stable release contract after Content Phase 2.
 {
- const allowedTopics=new Set(['Monitoring','Medical Gases','CO₂ & Scavenging','Airway','Hazards & Safety']);
- const allowedFamilies=new Set(['Medical Gas Systems in Anesthesia','Monitoring','CO₂ Absorbents & Scavenging','Airway Equipment','Anesthesia Workstation Hazards & Safety']);
- for(const p of ['bank1.json','bank2.json','bank3.json','combined.json','hazards.json']){
-   const payload=JSON.parse(read('equipment/exam-1/data/'+p)),qs=Array.isArray(payload)?payload:(payload.questions||[]);
+ const manifest=JSON.parse(read('equipment/exam-1/banks.json')),taxonomy=manifest.contentTaxonomy||{},topics=new Set(taxonomy.topics||[]),sources=new Set(taxonomy.sourceTitles||[]);
+ if(topics.size!==5||sources.size!==5)fail('Content taxonomy is incomplete');
+ for(const file of ['bank1.json','bank2.json','bank3.json','combined.json','hazards.json']){
+   const payload=JSON.parse(read('equipment/exam-1/data/'+file)),qs=Array.isArray(payload)?payload:(payload.questions||[]);
    for(const q of qs){
-     if(!allowedTopics.has(String(q.topic||'')))fail(p+': non-canonical or missing topic '+String(q.topic||''));
-     const meta=q.sourceMeta;
-     if(!meta||!Array.isArray(meta.families)||!meta.families.length||!String(q.sourceTitle||'').trim()||!String(q.sourceLocator||'').trim())fail(p+': incomplete structured source metadata for '+String(q.id||'unknown'));
-     else for(const family of meta.families)if(!allowedFamilies.has(family))fail(p+': invalid source family '+String(family)+' for '+String(q.id||'unknown'));
-     if(!['slides','document'].includes(meta?.citationFormat))fail(p+': invalid citation format metadata for '+String(q.id||'unknown'));
+     const identity=file+' '+String(q.set||1)+'::'+String(q.id||'unknown'),meta=q.sourceMeta;
+     if(!topics.has(String(q.topic||'')))fail(identity+' has noncanonical topic metadata');
+     if(!sources.has(String(q.sourceTitle||'')))fail(identity+' has noncanonical source metadata');
+     if(!meta||!Array.isArray(meta.families)||!meta.families.length||!String(q.sourceLocator||'').trim())fail(identity+' has incomplete structured source metadata');
+     else for(const family of meta.families)if(!sources.has(String(family)))fail(identity+' has noncanonical source family '+String(family));
+     if(!['slides','document'].includes(meta?.citationFormat))fail(identity+' has invalid citation format metadata');
      const citation=String(q.citation||'');
-     if(!citation.includes(' · '))fail(p+': citation is not normalized for '+String(q.id||'unknown'));
-     if(/\.pdf\b|,\s*Slides?\b|:\s*slides?\b/i.test(citation))fail(p+': legacy citation formatting remains for '+String(q.id||'unknown'));
+     if(!citation.includes(' · '))fail(identity+' citation is not normalized');
+     if(/\.pdf\b|,\s*Slides?\b|:\s*slides?\b/i.test(citation))fail(identity+' retains legacy citation formatting');
    }
  }
  const report=JSON.parse(read('reports/content-phase1-audit.json'));
  if(report?.scope?.questions!==2000||report?.metadata?.missingTopics!==0||report?.metadata?.legacyCitationFormatIssues!==0||report?.metadata?.structuredSourceIssues!==0)fail('Phase 1/2 audit report does not match normalized metadata contract');
  if(report?.duplicates?.crossBankExactGroups!==0||report?.duplicates?.confirmedSamePoolKeyConflicts?.length!==0)fail('Phase 1 audit report contains unresolved exact cross-bank/key conflicts');
-}
-
-// Canonical content metadata must be complete and use the shared taxonomy.
-{
- const manifest=JSON.parse(read('equipment/exam-1/banks.json')),topics=new Set(manifest.contentTaxonomy?.topics||[]),sources=new Set(manifest.contentTaxonomy?.sourceTitles||[]);
- if(topics.size!==5||sources.size!==5)fail('Content taxonomy is incomplete');
- for(const file of ['bank1.json','bank2.json','bank3.json','combined.json','hazards.json']){
-  const payload=JSON.parse(read('equipment/exam-1/data/'+file)),qs=Array.isArray(payload)?payload:(payload.questions||[]);
-  for(const q of qs){
-   if(!topics.has(String(q.topic||'')))fail(file+' '+String(q.set||1)+'::'+q.id+' has noncanonical topic metadata');
-   if(!sources.has(String(q.sourceTitle||'')))fail(file+' '+String(q.set||1)+'::'+q.id+' has noncanonical source metadata');
-  }
- }
 }
 
 // Semantic content checking is mandatory in quality CI.
