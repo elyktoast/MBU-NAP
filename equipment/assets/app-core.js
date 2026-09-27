@@ -247,5 +247,5 @@ window.addEventListener('mbu:supabase-status',()=>{refreshAccount();refreshTools
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ensureA11y,{once:true});else ensureA11y();
 window.MBUDiagnostics={record,snapshot:diagnostics,copy:copyDiagnostics};
 window.MBUSync={APP,schema:SYNC_SCHEMA,deviceId,touchStore,acknowledgeServerWrite,trackedKeys,exportSnapshot,importSnapshot,downloadBackup,importFile,registerAdapter,syncWith};
-window.MBUAppCore={ensureA11y,announce,focusQuestion,mountNav,openTools,openAccount,touchStore,diagnostics};
+window.MBUAppCore={ensureA11y,announce,focusQuestion,mountNav,openTools,openAccount,closeAccount,touchStore,diagnostics};
 })();
