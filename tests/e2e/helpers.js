@@ -20,6 +20,17 @@ async function clearAppState(page) {
 }
 
 async function seedSignedIn(page,email='e2e@example.com') {
+  const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
+  await page.route(cloud+'/rest/v1/mbu_sync_state?*', route =>
+    route.fulfill({ status: 200, contentType: 'application/json', body: '[]' })
+  );
+  await page.route(cloud+'/rest/v1/mbu_sync_devices?*', route => {
+    if(route.request().method()==='GET')return route.fulfill({ status: 200, contentType: 'application/json', body: '[]' });
+    return route.fulfill({ status: 201, contentType: 'application/json', body: '' });
+  });
+  await page.route(cloud+'/rest/v1/mbu_item_calibration?*', route =>
+    route.fulfill({ status: 200, contentType: 'application/json', body: '[]' })
+  );
   await page.addInitScript(({email}) => {
     const now=Math.floor(Date.now()/1000);
     localStorage.setItem('mbu_supabase_session_v1',JSON.stringify({
