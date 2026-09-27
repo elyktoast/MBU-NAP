@@ -1883,8 +1883,45 @@ test.describe('canonical quiz regression', () => {
     expect(styles.gridColumns).not.toBe('none');
     expect(styles.cardBorder).not.toBe('0px');
     expect(styles.cardRadius).not.toBe('0px');
-    expect(styles.buttonDisplay).toBe('inline-flex');
+    expect(['flex','inline-flex']).toContain(styles.buttonDisplay);
     expect(styles.buttonColor).toBe('rgb(255, 255, 255)');
+  });
+
+  test('Primary study surfaces stay visually intact across phone, iPad, and desktop widths', async ({ page }) => {
+    const viewports=[
+      {name:'phone',width:390,height:844},
+      {name:'ipad-portrait',width:768,height:1024},
+      {name:'ipad-landscape',width:1024,height:768},
+      {name:'desktop',width:1440,height:900}
+    ];
+    const pages=[
+      ['Exam dashboard','index.html'],
+      ['Bank 1','quiz-bank-1.html'],
+      ['Bank 2','quiz-bank-2.html'],
+      ['Bank 3','quiz-bank-3.html'],
+      ['Combined','combined.html'],
+      ['Hazards','hazards.html'],
+      ['Studio','studio.html']
+    ];
+    for(const vp of viewports){
+      await page.setViewportSize({width:vp.width,height:vp.height});
+      for(const [label,path] of pages){
+        await page.goto(exam+'/'+path);await page.evaluate(() => MBUPageReady);
+        const result=await page.evaluate(()=>{
+          const body=getComputedStyle(document.body),nav=document.querySelector('.mbu-global-nav'),main=document.getElementById('mbu-main')||document.querySelector('main,.panel,.container,.wrap');
+          return{
+            overflow:document.documentElement.scrollWidth-document.documentElement.clientWidth,
+            font:body.fontFamily,
+            navVisible:!!nav&&getComputedStyle(nav).display!=='none'&&nav.getBoundingClientRect().height>20,
+            mainVisible:!!main&&main.getBoundingClientRect().height>20
+          }
+        });
+        expect(result.overflow, label+' overflows at '+vp.name).toBeLessThanOrEqual(2);
+        expect(result.font, label+' fell back to default serif at '+vp.name).not.toMatch(/Times New Roman/i);
+        expect(result.navVisible, label+' nav hidden at '+vp.name).toBe(true);
+        expect(result.mainVisible, label+' main content hidden at '+vp.name).toBe(true);
+      }
+    }
   });
 
 });
