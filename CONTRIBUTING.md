@@ -1,4 +1,4 @@
-# Contributing to MBU-NAP
+# Contributing to SNAR Study Tool
 
 ## Do not patch around a broken source
 
