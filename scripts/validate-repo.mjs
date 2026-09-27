@@ -898,6 +898,14 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ['submitQuestionReport','snar_submit_question_report','snar_admin_question_reports','snar_admin_update_question_report'])if(!read('equipment/assets/supabase-sync.js').includes(token)&&!read('equipment/assets/admin-panel.js').includes(token))fail('Private question-report inbox contract missing '+token);
 }
 
+// Phase 3 content-review queue must stay deterministic and source-preserving.
+{
+ for(const p of ['scripts/question-review-queue.mjs','reports/question-content-review.json'])if(!exists(p))fail('Phase 3 content-review queue missing '+p);
+ const reviewScript=read('scripts/question-review-queue.mjs'),review=JSON.parse(read('reports/question-content-review.json'));
+ for(const token of ['--write','--check','exact_stem_variant','near_duplicate_key_variation'])if(!reviewScript.includes(token))fail('Content-review queue contract missing '+token);
+ if(review.totalQuestions!==2000||!Array.isArray(review.candidates))fail('Content-review queue report shape is invalid');
+}
+
 // Phase 3 question analytics must stay admin-only and lazy-loaded.
 {
  const admin=read('equipment/assets/admin-panel.js'),qa=read('equipment/assets/admin-question-analytics.js'),migration=read('supabase/migrations/20260927231413_add_admin_question_analytics.sql'),modeMigration=read('supabase/migrations/20260927231918_add_admin_mode_analytics.sql');

@@ -42,6 +42,8 @@ jobs:
         run: npm run test:perf
       - name: Analyze question-bank balance
         run: npm run analyze:questions
+      - name: Verify content review queue
+        run: npm run test:review-queue
 
   browser:
     name: Browser regression

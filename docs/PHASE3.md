@@ -46,3 +46,17 @@ Population calibration must not be treated as mature before the sample supports 
 Phase 3 now also summarizes first-attempt usage by study mode from the already-existing private calibration contribution table. No new user/session data is collected for this step.
 
 The operator can see aggregate counts for each mode, including total first attempts, 7-day and 30-day activity, unique contributing accounts, and aggregate accuracy. Raw contribution rows remain unavailable in the admin UI.
+
+## Content intelligence review queue
+
+A deterministic content-review queue now tracks manual-review candidates without rewriting audited source questions. CI verifies that the committed queue matches the current banks.
+
+Current baseline:
+- 0 same-set exact duplicate groups;
+- 0 cross-bank exact duplicate groups;
+- 0 missing source titles;
+- 0 missing source locators;
+- 0 explanations under 8 words;
+- 35 manual-review candidates from exact-stem variants or near-duplicate keyed wording.
+
+These are review candidates, not automatic errors. Any content change still requires source-grounded review.
