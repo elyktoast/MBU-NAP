@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const VERSION='2026-09-27',KEY='snar_legal_ack_'+VERSION.replaceAll('-','_');
+const VERSION='2026-09-27-v2',KEY='snar_legal_ack_'+VERSION.replaceAll('-','_');
 function accepted(){return localStorage.getItem(KEY)==='1'}
 function mount(){
   if(accepted()||document.getElementById('snar-legal-gate'))return Promise.resolve(true);
