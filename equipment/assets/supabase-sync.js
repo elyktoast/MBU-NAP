@@ -266,7 +266,7 @@ async function pushLocal(){
 function scheduleSync(delay=1500){if(!session()||legalAccepted!==true||accountAccess!=='active')return;clearTimeout(timer);timer=setTimeout(()=>{timer=null;pushLocal().catch(()=>{})},delay)}
 function stopAutoSync(){if(autoSyncTimer){clearInterval(autoSyncTimer);autoSyncTimer=null}}
 function startAutoSync(){
-  stopAutoSync();if(!session()||legalAccepted!==true)return;
+  stopAutoSync();if(!session()||legalAccepted!==true||accountAccess!=='active')return;
   autoSyncTimer=setInterval(()=>{if(session()&&legalAccepted===true&&accountAccess==='active'&&navigator.onLine)fullSync({reloadOnImport:true}).catch(()=>{})},AUTO_SYNC_INTERVAL)
 }
 async function adminStatus(){
@@ -284,8 +284,8 @@ async function adminUpdatePrivacyRequest(id,statusValue){
 }
 async function adminRetentionCleanup(){requireLegal();return await api('/rest/v1/rpc/snar_admin_retention_cleanup',{method:'POST',body:{}})}
 function status(){const s=session();return{signedIn:!!s?.access_token,email:s?.user?.email||'',state:lastState,lastSyncAt,user:s?.user||null,recoveryMode,legalAccepted,accessStatus:accountAccess,termsVersion:LEGAL_TERMS_VERSION,privacyVersion:LEGAL_PRIVACY_VERSION,autoSyncIntervalMs:AUTO_SYNC_INTERVAL,nextAutoSyncAt:s?.access_token&&legalAccepted===true&&accountAccess==='active'?(lastSyncAt||Date.now())+AUTO_SYNC_INTERVAL:0}}
-window.addEventListener('focus',()=>{if(session()&&legalAccepted===true&&Date.now()-lastSyncAt>120000)fullSync().catch(()=>{})});
-window.addEventListener('online',()=>{if(session()&&legalAccepted===true)fullSync().catch(()=>{})});
+window.addEventListener('focus',()=>{if(session()&&legalAccepted===true&&accountAccess==='active'&&Date.now()-lastSyncAt>120000)fullSync().catch(()=>{})});
+window.addEventListener('online',()=>{if(session()&&legalAccepted===true&&accountAccess==='active')fullSync().catch(()=>{})});
 async function handleAuthRedirect(){
   const redirected=await consumeAuthRedirect();if(!redirected)return false;
   if(!recoveryMode&&!await refreshLegalAcceptance()){emit('legal-required',{email:redirected.user?.email||''});return true}
