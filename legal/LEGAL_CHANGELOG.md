@@ -15,3 +15,10 @@
 - Added privacy-request administration, legal-assent export, and high-level compliance/system summaries.
 - Added documented incident response, retention, data inventory, provider register, and legal-change procedures.
 - Strengthened CI checks tying legal versions, disclosures, providers, and data practices to implementation.
+
+## 2026-09-27-v4
+- Added privacy-minimized ephemeral guest-session counting for approximate active-session statistics.
+- Added account access status administration for cloud synchronization and Adaptive Mode.
+- Added account-management metadata, guest-session counts, and CAT-user counts to the restricted operator-admin dashboard.
+- Clarified that the browser admin panel does not expose raw learner study payloads, passwords, or raw first-attempt CAT contribution rows.
+- Added 24-hour retention for guest-session heartbeat records.
