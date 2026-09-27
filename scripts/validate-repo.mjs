@@ -785,6 +785,28 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!home.includes('href="privacy.html"')||!home.includes('href="terms.html"'))fail('Home footer does not link Privacy and Terms');
 }
 
+// Legal/admin operations must match the current disclosures and immutable snapshots.
+{
+ const hash=p=>createHash('sha256').update(read(p),'utf8').digest('hex');
+ for(const version of ['2026-09-27-v2','2026-09-27-v3','2026-09-27-v4']){
+   const base='legal/versions/'+version+'/',manifest=JSON.parse(read(base+'manifest.json'));
+   if(manifest.legal_version!==version)fail(version+': legal manifest version mismatch');
+   if(hash(base+'terms.html')!==manifest.terms_sha256)fail(version+': Terms snapshot hash mismatch');
+   if(hash(base+'privacy.html')!==manifest.privacy_sha256)fail(version+': Privacy snapshot hash mismatch');
+ }
+ const current=JSON.parse(read('legal/versions/2026-09-27-v4/manifest.json'));
+ if(hash('terms.html')!==current.terms_sha256||hash('privacy.html')!==current.privacy_sha256)fail('Current legal pages differ from archived v4 snapshot');
+ for(const p of ['legal/LEGAL_CHANGELOG.md','legal/INCIDENT_RESPONSE.md','legal/RETENTION_SCHEDULE.md','legal/DATA_INVENTORY.md','legal/PROVIDERS.md','legal/ADMIN_OPERATIONS.md','legal/data-inventory.json'])if(!exists(p))fail('Legal operations file missing '+p);
+ const inv=JSON.parse(read('legal/data-inventory.json'));
+ if(inv.version!=='2026-09-27-v4'||inv.guest_session?.retention_hours!==24||inv.guest_session?.persistent_cross_session!==false)fail('Machine-readable guest metric inventory is incomplete');
+ const privacy=read('privacy.html'),terms=read('terms.html'),cloud=read('equipment/assets/supabase-sync.js'),core=read('equipment/assets/app-core.js'),studio=read('equipment/assets/studio-page.js');
+ for(const token of ['random session identifier','approximately 24 hours','operator-admin','raw first-attempt CAT contribution rows'])if(!privacy.includes(token))fail('Privacy v4 disclosure missing '+token);
+ for(const token of ['Account access, suspension, and termination','suspended or re-granted'])if(!terms.includes(token))fail('Terms v4 account-access disclosure missing '+token);
+ for(const token of ['snar_guest_heartbeat','snar_account_access_status','adminAccounts','adminSetAccountAccess','guestSessionId','accountAccess'])if(!cloud.includes(token))fail('Admin/guest client contract missing '+token);
+ for(const token of ['Admin & Compliance','data-admin-stats','data-admin-accounts','Guests active ~15m','CAT users'])if(!core.includes(token))fail('Admin dashboard contract missing '+token);
+ if(!studio.includes("status.accessStatus==='active'"))fail('Adaptive Mode does not enforce active account access');
+}
+
 // Population calibration must not expose small cohorts.
 {
  const cohortMigration=read('supabase/migrations/20260927063000_hide_small_cohort_item_calibration.sql');
