@@ -1,8 +1,8 @@
 const SHEET_NAME = 'Question Reports';
 const HEADERS = [
-  'Received','Status','Reason','Reporter','Bank','Set','Question','UID','Topic',
+  'Received','Status','Reason','Bank','Set','Question','UID','Topic',
   'Question Stem','Options','Keyed Answer','Selected Answer','Explanation','Source','Page',
-  'Reporter Comment','Page URL','Build','User Agent'
+  'Reporter Comment','Page URL','Build'
 ];
 
 function json_(value) {
@@ -101,7 +101,7 @@ function doPost(e) {
     const question = clean_(p.questionNumber, 60);
     const subject = '[SNAR Study Tool Question Report] ' + reason + ' · ' + label + (question ? ' Q' + question : '');
     const body = [
-      'A classmate submitted a question report.',
+      'A user submitted a question report.',
       '',
       'Issue: ' + reason,
       'Reporter: ' + (clean_(p.reporter, 80) || 'Not provided'),
