@@ -20,6 +20,8 @@ async function start(){
   window.MBU_BUILD_ID=build;window.MBUBuild={id:build,assetsBase,buildUrl,urlFor,loadStyle,loadScript,fetchJSON};
   await loadStyle('app-core.css');
   await loadScript('app-core.js');
+  await loadScript('legal-gate.js');
+  if(window.SNARLegalReady)await window.SNARLegalReady;
   await loadScript('study-intelligence.js');
   await loadScript('question-search.js');
   await loadScript('supabase-config.js');
