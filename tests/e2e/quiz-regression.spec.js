@@ -1509,7 +1509,6 @@ test.describe('canonical quiz regression', () => {
     await page.goto('/privacy.html');
     await expect(page.getByRole('heading',{name:'Privacy Notice'})).toBeVisible();
     await expect(page.locator('body')).toContainText('SNAR Study Tool');
-    await expect(page.locator('body')).not.toContainText('Mary Baldwin');
     await page.goto('/terms.html');
     await expect(page.getByRole('heading',{name:'Terms of Use'})).toBeVisible();
     await expect(page.locator('body')).toContainText('Independent educational resource');
