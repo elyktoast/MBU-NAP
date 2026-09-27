@@ -976,13 +976,14 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#mbu-report-summary')).toContainText('ID: b1-');
     await page.locator('#mbu-report-reason').selectOption({ label: 'Wrong answer' });
     await page.locator('#mbu-report-comment').fill('The keyed answer appears inconsistent with the source.');
-    await page.locator('#mbu-report-name').fill('Regression Tester');
     await page.locator('#mbu-report-submit').click();
 
     await expect.poll(() => submitted).not.toBeNull();
     expect(submitted.reason).toBe('Wrong answer');
     expect(submitted.comment).toContain('keyed answer');
-    expect(submitted.reporter).toBe('Regression Tester');
+    expect(submitted.reporter).toBeUndefined();
+    expect(submitted.userAgent).toBeUndefined();
+    expect(submitted.pageUrl).not.toMatch(/[?#]/);
     expect(submitted.uid).toMatch(/^b1-/);
     expect(submitted.stem.length).toBeGreaterThan(0);
     expect(Array.isArray(submitted.options)).toBe(true);
@@ -1477,7 +1478,7 @@ test.describe('canonical quiz regression', () => {
     await page.locator('[data-cloud-consent]').check();
     await page.locator('[data-cloud-signup]').click();
     await expect.poll(()=>signupCalls).toBe(1);
-    expect(signupBody.data).toMatchObject({snar_terms_version:'2026-09-27',snar_privacy_version:'2026-09-27',snar_adult_ack:true});
+    expect(signupBody.data).toMatchObject({snar_terms_version:'2026-09-27-v2',snar_privacy_version:'2026-09-27-v2',snar_adult_ack:true});
     expect(signupBody.data.snar_accepted_at).toBeTruthy();
     await expect(page.locator('#mbu-account-panel')).toContainText('Privacy Notice');
     await expect(page.locator('#mbu-account-panel')).toContainText('Terms of Use');
@@ -1846,7 +1847,7 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('First-use legal clickwrap accepts a real pointer click and stays out of the way afterward', async ({ page }) => {
-    await page.addInitScript(()=>localStorage.removeItem('snar_legal_acceptance_v2'));
+    await page.addInitScript(()=>{if(!sessionStorage.getItem('e2e-first-use-legal')){localStorage.removeItem('snar_legal_acceptance_v2');sessionStorage.setItem('e2e-first-use-legal','1')}});
     await page.goto('/');
     await expect(page.locator('#snar-legal-gate')).toBeVisible();
     await expect(page.locator('#snar-legal-gate')).toContainText('Terms of Use');
@@ -1887,8 +1888,8 @@ test.describe('canonical quiz regression', () => {
 
   test('Privacy, Terms, consent, and account controls are accessible without disrupting study flow', async ({ page }) => {
     await page.goto('/');await page.evaluate(() => MBUPageReady);
-    await expect(page.locator('footer a[href="privacy.html"]')).toHaveText('Privacy');
-    await expect(page.locator('footer a[href="terms.html"]')).toHaveText('Terms');
+    await expect(page.locator('footer a[href="privacy.html"]')).toHaveText('Privacy Notice');
+    await expect(page.locator('footer a[href="terms.html"]')).toHaveText('Terms of Use');
 
     await page.goto('/privacy.html');
     await expect(page.getByRole('heading',{name:'Privacy Notice'})).toBeVisible();
