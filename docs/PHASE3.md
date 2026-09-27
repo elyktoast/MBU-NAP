@@ -121,3 +121,7 @@ Supabase Security Advisor still reports leaked-password protection as disabled. 
 ## Unified content + performance review queue
 
 The operator question-analytics workspace now merges the deterministic source/content review queue with live aggregate calibration and question-report signals. Unmeasured content candidates remain visible before population data matures, while performance-only alerts still require at least 25 unique learners. The queue never edits audited question content automatically.
+
+## Dedicated admin dashboard
+
+Operator controls now live in a separate Admin Dashboard opened from the signed-in account dashboard. The entry is hidden unless the server confirms the current account is an operator admin, and the dashboard rechecks admin status before mounting. All underlying admin RPCs retain their server-side admin authorization checks. The account dashboard no longer embeds administrative controls.

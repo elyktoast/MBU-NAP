@@ -816,8 +816,10 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!inv.question_report_inbox||inv.question_report_inbox.stored_account_identifier!==false)fail('Question-report data inventory is incomplete');
  for(const token of ['Account access, suspension, and termination','suspended or re-granted'])if(!terms.includes(token))fail('Terms v6 account-access disclosure missing '+token);
  for(const token of ['snar_guest_heartbeat','snar_account_access_status','adminStatus','adminRpc','guestSessionId','accountAccess'])if(!cloud.includes(token))fail('Admin/guest client contract missing '+token);
- for(const token of ['Admin & Compliance','data-admin-stats','data-admin-accounts','data-admin-delete-account','Guests active ~15m','CAT users'])if(!adminPanel.includes(token))fail('Admin dashboard contract missing '+token);
- if(!core.includes("loadScript('admin-panel.js')")||!core.includes('data-admin-host'))fail('Lazy admin panel loader contract missing');
+ for(const token of ['data-admin-dashboard-content','data-admin-stats','data-admin-accounts','data-admin-delete-account','Question intelligence','Privacy & compliance','Guests active ~15m','CAT users'])if(!adminPanel.includes(token))fail('Admin dashboard contract missing '+token);
+ for(const token of ['data-admin-entry','data-admin-open','mbu-admin-dashboard','data-admin-dashboard-host','openAdminDashboard','adminStatus()'])if(!core.includes(token))fail('Admin dashboard access gate missing '+token);
+ if(core.includes('data-admin-host'))fail('Admin controls are still embedded in the account dashboard');
+ if(!core.includes("loadScript('admin-panel.js')"))fail('Lazy admin dashboard loader contract missing');
  if(!studio.includes("status.accessStatus==='active'"))fail('Adaptive Mode does not enforce active account access');
  const suspensionMigration=read('supabase/migrations/20260927124435_enforce_account_suspension_server_side.sql');
  const syncPolicyFix=read('supabase/migrations/20260927131743_fix_account_access_policy_permissions.sql');

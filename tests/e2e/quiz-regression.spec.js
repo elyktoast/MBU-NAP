@@ -1809,8 +1809,10 @@ test.describe('canonical quiz regression', () => {
     await page.route(cloud+'/rest/v1/rpc/snar_admin_retention_cleanup',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({sync_history_deleted:2,privacy_requests_deleted:1,legal_acceptances_deleted:0,guest_sessions_deleted:3,question_reports_deleted:4})}));
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);await waitForAuth(page);
     await page.locator('.mbu-global-nav__cloud').click();
-    await expect(page.locator('[data-admin-details]')).toBeVisible();
-    await page.locator('[data-admin-details] > summary').click();
+    await expect(page.locator('[data-admin-entry]')).toBeVisible();
+    await expect(page.locator('#mbu-admin-dashboard')).toHaveAttribute('aria-hidden','true');
+    await page.locator('[data-admin-open]').click();
+    await expect(page.locator('#mbu-admin-dashboard')).toHaveClass(/open/);
     await expect(page.locator('[data-admin-stats]')).toContainText('Guests active ~15m');
     await expect(page.locator('[data-admin-stats]')).toContainText('CAT users');
     await expect(page.locator('[data-admin-stats] > div').filter({hasText:'Guests active ~15m'}).locator('strong')).toHaveText('3');
@@ -1848,7 +1850,18 @@ test.describe('canonical quiz regression', () => {
     page.on('dialog',dialog=>dialog.accept());
     await page.locator('[data-admin-accounts] [data-admin-delete-account]').click();
     await expect.poll(()=>deletedAccount?.p_user_id).toBe('00000000-0000-0000-0000-000000000002');
-    await expect(page.locator('[data-admin-details]')).toContainText('Raw learner study payloads');
+    await expect(page.locator('#mbu-admin-dashboard')).toContainText('Question intelligence');
+  });
+
+  test('Non-admin account never sees or opens the Admin Dashboard', async ({ page }) => {
+    await seedSignedIn(page);
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
+    await page.unroute(cloud+'/rest/v1/rpc/snar_admin_status');
+    await page.route(cloud+'/rest/v1/rpc/snar_admin_status',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({is_admin:false,role:null})}));
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);await waitForAuth(page);
+    await page.locator('.mbu-global-nav__cloud').click();
+    await expect(page.locator('[data-admin-entry]')).toBeHidden();
+    await expect(page.locator('#mbu-admin-dashboard')).toHaveCount(0);
   });
 
   test('Signed-in account can submit a private privacy request', async ({ page }) => {
