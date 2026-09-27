@@ -1683,6 +1683,61 @@ test.describe('canonical quiz regression', () => {
     expect(out.summary.overall.accuracy).toBe(50);
   });
 
+  test('Adaptive intelligence moves challenge up after correct and down after incorrect', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const out=await page.evaluate(()=>{
+      MBUStudyIntelligence.clearAll();
+      const easy={uid:'adaptive-easy',bank:'b1',topic:'Monitoring',set:1,stem:'Easy',ans:[0]};
+      const hard={uid:'adaptive-hard',bank:'b1',topic:'Monitoring',set:1,stem:'Hard',ans:[0,1]};
+      for(let i=0;i<3;i++)MBUStudyIntelligence.recordAnswer('b1',easy,true,{bankLabel:'Quiz Bank 1'});
+      for(let i=0;i<3;i++)MBUStudyIntelligence.recordAnswer('b1',hard,false,{bankLabel:'Quiz Bank 1'});
+      const start=MBUStudyIntelligence.adaptiveStart([easy,hard,{uid:'adaptive-new',bank:'b2',topic:'Airway',set:1,stem:'New',ans:[0]}],3);
+      const up=MBUStudyIntelligence.adaptiveAdvance(start.state,start.question,true);
+      const down=MBUStudyIntelligence.adaptiveAdvance(up,start.question,false);
+      return{easy:MBUStudyIntelligence.adaptiveChallenge(easy),hard:MBUStudyIntelligence.adaptiveChallenge(hard),startLevel:start.state.level,up:up.level,down:down.level,seen:start.state.seenUids};
+    });
+    expect(out.hard).toBeGreaterThan(out.easy);
+    expect(out.startLevel).toBe(3);
+    expect(out.up).toBe(4);
+    expect(out.down).toBe(3);
+    expect(out.seen).toHaveLength(1);
+  });
+
+  test('Studio Adaptive Quiz is forward-only and survives reload with its level', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await page.getByRole('button',{name:'Start Adaptive Quiz'}).click();
+    await expect(page.locator('#qmeta')).toContainText('Adaptive Challenge 3/5');
+    await expect(page.locator('#studioPrev')).toBeDisabled();
+    await expect(page.locator('#studioNavToggle')).toBeDisabled();
+    await page.evaluate(()=>{const q=session[pos];sel=new Set(q.ans);grade()});
+    await expect.poll(()=>page.evaluate(()=>DB.active?.adaptive?.level)).toBe(4);
+    await expect.poll(()=>page.evaluate(()=>session.length)).toBe(2);
+    await expect(page.locator('#qmeta')).toContainText('Adaptive Challenge 4/5');
+    const before=await page.evaluate(()=>({uids:[...DB.active.uids],level:DB.active.adaptive.level,pos:DB.active.pos}));
+    await page.reload();await waitForStudio(page);
+    await expect.poll(()=>page.evaluate(()=>DB.active?.mode)).toBe('adaptive');
+    const after=await page.evaluate(()=>({uids:[...DB.active.uids],level:DB.active.adaptive.level,pos:DB.active.pos}));
+    expect(after).toEqual(before);
+    await expect(page.locator('#studioPrev')).toBeDisabled();
+    await expect(page.locator('#studioNavToggle')).toBeDisabled();
+    await page.evaluate(()=>{
+      const q=session[pos],need=q.ans.length,wrong=[];
+      for(let i=0;i<q.opts.length&&wrong.length<need;i++)if(!q.ans.includes(i))wrong.push(i);
+      for(let i=0;i<q.opts.length&&wrong.length<need;i++)if(!wrong.includes(i))wrong.push(i);
+      sel=new Set(wrong.slice(0,need));grade()
+    });
+    await expect.poll(()=>page.evaluate(()=>DB.active?.adaptive?.level)).toBe(3);
+  });
+
+  test('Malformed study-intelligence storage recovers without breaking Studio', async ({ page }) => {
+    await page.addInitScript(()=>localStorage.setItem('mbu_study_intelligence_v1','{bad json'));
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const summary=await page.evaluate(()=>MBUStudyIntelligence.summary());
+    expect(summary.overall.attempts).toBe(0);
+    await expect(page.getByRole('button',{name:'Start Adaptive Quiz'})).toBeVisible();
+    await expect(page.locator('#analyticsSummary')).toContainText('Overall accuracy');
+  });
+
   test('Universal question search is lazy, global, and routes results into Studio', async ({ page }) => {
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
     await expect(page.locator('.mbu-global-nav__search')).toBeVisible();
@@ -1696,9 +1751,10 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#mbu-question-search')).not.toBeVisible();
   });
 
-  test('Studio exposes Smart Review, Due Review, and multi-window analytics', async ({ page }) => {
+  test('Studio exposes Smart Review, Adaptive Quiz, Due Review, and multi-window analytics', async ({ page }) => {
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     await expect(page.getByRole('button',{name:'Start Smart Review'})).toBeVisible();
+    await expect(page.getByRole('button',{name:'Start Adaptive Quiz'})).toBeVisible();
     await expect(page.getByRole('button',{name:'Review Due'})).toBeVisible();
     await expect(page.locator('#analyticsSummary')).toContainText('Overall accuracy');
     await expect(page.locator('#analyticsSummary')).toContainText('Last 7 days');
