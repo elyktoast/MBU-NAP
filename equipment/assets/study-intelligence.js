@@ -38,14 +38,14 @@ function questionMeta(bank,q,extra={}){
   }
 }
 function recordAnswer(bank,q,ok,extra={}){
-  const d=db(),meta=questionMeta(bank,q,extra),t=Number(extra.at)||now(),prev=d.attempts[meta.uid]||{},correct=Number(prev.correct)||0,incorrect=Number(prev.incorrect)||0,attempts=Number(prev.attempts)||0;
+  const d=db(),meta=questionMeta(bank,q,extra),t=Number(extra.at)||now(),prev=d.attempts[meta.uid]||{},correct=Number(prev.correct)||0,incorrect=Number(prev.incorrect)||0,attempts=Number(prev.attempts)||0,firstAttempt=attempts===0;
   const next={...prev,...meta,attempts:attempts+1,correct:correct+(ok?1:0),incorrect:incorrect+(ok?0:1),lastAt:t,lastCorrect:!!ok,streak:ok?(Number(prev.streak)||0)+1:0};
   d.attempts[meta.uid]=next;
   const days=reviewInterval(next,!!ok);d.reviews[meta.uid]={uid:meta.uid,dueAt:t+days*DAY,intervalDays:days,lastAt:t,lastCorrect:!!ok};
   d.activity.push({id:meta.uid+':'+t,at:t,type:'answer',uid:meta.uid,bank:meta.bank,bankLabel:meta.bankLabel,topic:meta.topic,ok:!!ok,href:meta.href});
   if(d.activity.length>MAX_ACTIVITY)d.activity.splice(0,d.activity.length-MAX_ACTIVITY);
   save(d);
-  window.MBUSupabase?.submitItemContribution?.(meta.uid,!!ok,extra.responseMs??null,extra.sessionMode||'unknown')?.catch?.(()=>{});
+  if(firstAttempt)window.MBUSupabase?.submitItemContribution?.(meta.uid,!!ok,extra.responseMs??null,extra.sessionMode||'unknown')?.catch?.(()=>{});
   return next
 }
 function seedLegacy(records=[]){
