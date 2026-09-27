@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 566,
+    "audited": 666,
     "bank2": [
       {
         "id": "S2-021",
@@ -515,6 +515,309 @@
       {
         "id": "495",
         "disposition": "IMPROVE"
+      },
+      {
+        "id": "1",
+        "disposition": "PASS"
+      },
+      {
+        "id": "2",
+        "disposition": "PASS"
+      },
+      {
+        "id": "3",
+        "disposition": "PASS"
+      },
+      {
+        "id": "4",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected Macintosh blade source from slide 10 to slide 11."
+        ]
+      },
+      {
+        "id": "5",
+        "disposition": "PASS"
+      },
+      {
+        "id": "6",
+        "disposition": "PASS"
+      },
+      {
+        "id": "7",
+        "disposition": "CORRECT",
+        "changes": [
+          "rebuilt the NIOSH limit question to use only exposure limits actually stated in the lecture."
+        ]
+      },
+      {
+        "id": "8",
+        "disposition": "PASS"
+      },
+      {
+        "id": "9",
+        "disposition": "PASS"
+      },
+      {
+        "id": "10",
+        "disposition": "PASS"
+      },
+      {
+        "id": "11",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced unsupported bougie tactile-feedback details with the lecture-supported equipment classification."
+        ]
+      },
+      {
+        "id": "12",
+        "disposition": "PASS"
+      },
+      {
+        "id": "13",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed an unsupported diastolic-pressure claim and focused the item on the documented systolic effect of underdamping."
+        ]
+      },
+      {
+        "id": "14",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed unsupported chemical-mechanism and rapid-repurple details from the regeneration explanation."
+        ]
+      },
+      {
+        "id": "15",
+        "disposition": "PASS"
+      },
+      {
+        "id": "16",
+        "disposition": "PASS"
+      },
+      {
+        "id": "17",
+        "disposition": "PASS"
+      },
+      {
+        "id": "18",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected the slide citation and removed unsupported rationale about heat-sink and perforation signaling."
+        ]
+      },
+      {
+        "id": "19",
+        "disposition": "PASS"
+      },
+      {
+        "id": "20",
+        "disposition": "PASS"
+      },
+      {
+        "id": "21",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced an unsupported Select-a-Tec multiple-vaporizer claim with the interlock behavior explicitly taught on slide 59."
+        ]
+      },
+      {
+        "id": "22",
+        "disposition": "PASS"
+      },
+      {
+        "id": "23",
+        "disposition": "PASS"
+      },
+      {
+        "id": "24",
+        "disposition": "PASS"
+      },
+      {
+        "id": "25",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed an uncited gas-density/Graham's-law claim and kept the question to the lecture's laminar-versus-turbulent distinction."
+        ]
+      },
+      {
+        "id": "26",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed unsupported Closed Claims percentages and reframed the item around factors explicitly described in the lecture."
+        ]
+      },
+      {
+        "id": "27",
+        "disposition": "PASS"
+      },
+      {
+        "id": "28",
+        "disposition": "PASS"
+      },
+      {
+        "id": "29",
+        "disposition": "PASS"
+      },
+      {
+        "id": "30",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected the armored-tube citation from slide 7 to slide 8 and tightened the explanation."
+        ]
+      },
+      {
+        "id": "31",
+        "disposition": "PASS"
+      },
+      {
+        "id": "32",
+        "disposition": "PASS"
+      },
+      {
+        "id": "33",
+        "disposition": "PASS"
+      },
+      {
+        "id": "34",
+        "disposition": "PASS"
+      },
+      {
+        "id": "35",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed the unsupported 'deepen anesthesia' alternative and aligned management with the course's curare-cleft guidance."
+        ]
+      },
+      {
+        "id": "36",
+        "disposition": "PASS"
+      },
+      {
+        "id": "37",
+        "disposition": "PASS"
+      },
+      {
+        "id": "38",
+        "disposition": "PASS"
+      },
+      {
+        "id": "39",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed unsupported mechanical-direction language about the bimetallic strip and kept the documented effect."
+        ]
+      },
+      {
+        "id": "40",
+        "disposition": "PASS"
+      },
+      {
+        "id": "41",
+        "disposition": "PASS"
+      },
+      {
+        "id": "42",
+        "disposition": "CORRECT",
+        "changes": [
+          "fixed a faulty multi-select key that incorrectly treated normal oxyhemoglobin as a deceptive species."
+        ]
+      },
+      {
+        "id": "43",
+        "disposition": "PASS"
+      },
+      {
+        "id": "44",
+        "disposition": "PASS"
+      },
+      {
+        "id": "45",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected the stated normal ETCO2-PaCO2 range from 2-5 to the lecture's 2-10 mmHg."
+        ]
+      },
+      {
+        "id": "46",
+        "disposition": "PASS"
+      },
+      {
+        "id": "47",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed unsupported claims about lower diastolic pressure and preserved the general peripheral wave-reflection effect taught in the lecture."
+        ]
+      },
+      {
+        "id": "48",
+        "disposition": "CORRECT",
+        "changes": [
+          "restored the complete lecture-specified recovery sequence after vaporizer tipping."
+        ]
+      },
+      {
+        "id": "49",
+        "disposition": "PASS"
+      },
+      {
+        "id": "50",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed unsupported detail about trapping the posterior epiglottic surface and aligned the item with the lecture's direct-lift description."
+        ]
+      },
+      {
+        "id": "51",
+        "disposition": "PASS"
+      },
+      {
+        "id": "52",
+        "disposition": "PASS"
+      },
+      {
+        "id": "53",
+        "disposition": "PASS"
+      },
+      {
+        "id": "54",
+        "disposition": "CORRECT",
+        "changes": [
+          "reframed the OSHA item to match the lecture's actual NIOSH/OSHA roles and removed the implication of a universal WAG exposure standard."
+        ]
+      },
+      {
+        "id": "55",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed unsupported OPA sizing language and rebuilt the item entirely from facts on the cited slide."
+        ]
+      },
+      {
+        "id": "56",
+        "disposition": "CORRECT",
+        "changes": [
+          "changed an overprecise 36.4°C value to the approximately 36°C value stated in the lecture."
+        ]
+      },
+      {
+        "id": "57",
+        "disposition": "PASS"
+      },
+      {
+        "id": "58",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed the unsupported claim that a specific 16% volume remains when pressure starts to fall."
+        ]
+      },
+      {
+        "id": "59",
+        "disposition": "PASS"
+      },
+      {
+        "id": "60",
+        "disposition": "PASS"
       }
     ],
     "bank3": [
@@ -2500,120 +2803,309 @@
       {
         "id": "S5-V104",
         "disposition": "PASS"
+      },
+      {
+        "id": "S5-T166",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T168",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced an uncited prevention instruction with the complication explicitly stated in the lecture."
+        ]
+      },
+      {
+        "id": "S5-T57",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed an extra quantitative-neuromuscular-monitoring recommendation that was outside the cited slide."
+        ]
+      },
+      {
+        "id": "S5-R41",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V120",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V117",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected topic metadata from Monitoring to Medical Gases for the crossed/contaminated pipeline scenario."
+        ]
+      },
+      {
+        "id": "S5-T24",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V95",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T187",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V103",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T78",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T68",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-Z26",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T32",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T10",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-F41",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-Z12",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V07",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed an extra inspired-oxygen-analyzer claim not contained in the cited flowmeter slides."
+        ]
+      },
+      {
+        "id": "S5-F09",
+        "disposition": "IMPROVE",
+        "changes": [
+          "polished the explanation and removed informal wording."
+        ]
+      },
+      {
+        "id": "S5-F53",
+        "disposition": "IMPROVE",
+        "changes": [
+          "fixed stem grammar and tightened the explanation."
+        ]
+      },
+      {
+        "id": "S5-T121",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V92",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V58",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-F29",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-J48",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T85",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-Z24",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-Y04",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V108",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed an unnecessary 1500-mmHg conversion and kept the answer exactly at the lecture's stated 2-atm value."
+        ]
+      },
+      {
+        "id": "S5-V41",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T48",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-R65",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V13",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T137",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T189",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V23",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed an uncited clinical inference about adipose accumulation and kept the explanation to the table values."
+        ]
+      },
+      {
+        "id": "S5-F48",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-E13",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T39",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T58",
+        "disposition": "PASS"
       }
     ]
   },
-  "remaining": 1434,
+  "remaining": 1334,
   "lastBatch": {
-    "bank": "bank3.json",
+    "banks": [
+      "bank3.json",
+      "bank1.json"
+    ],
     "audited": 100,
+    "bank3Count": 40,
+    "bank1Count": 60,
     "ids": [
-      "S4-R01",
-      "S4-Y08",
-      "S4-E13",
-      "S4-E21",
-      "S4-P63",
-      "S4-J18",
-      "S4-J41",
-      "S4-R129",
-      "S4-R02",
-      "S4-J19",
-      "S4-R84",
-      "S4-Y07",
-      "S4-J61",
-      "S4-D01",
-      "S4-R102",
-      "S4-P06",
-      "S4-J37",
-      "S4-R16",
-      "S4-J42",
-      "S4-R43",
-      "S4-R52",
-      "S4-E07",
-      "S4-R21",
-      "S4-J55",
-      "S4-R93",
-      "S4-R91",
-      "S4-J58",
-      "S4-J02",
-      "S4-R40",
-      "S4-E25",
-      "S4-E16",
-      "S4-R76",
-      "S4-J20",
-      "S4-R73",
-      "S4-R130",
-      "S4-J15",
-      "S4-R03",
-      "S4-R139",
-      "S4-J21",
-      "S4-J24",
-      "S4-R29",
-      "S5-T42",
-      "S5-V113",
-      "S5-T184",
-      "S5-Z41",
-      "S5-F12",
-      "S5-T152",
-      "S5-V29",
-      "S5-F34",
-      "S5-T05",
-      "S5-J15",
-      "S5-T117",
-      "S5-T90",
-      "S5-T170",
-      "S5-V101",
-      "S5-T162",
-      "S5-T115",
-      "S5-V19",
-      "S5-F04",
-      "S5-T125",
-      "S5-F05",
-      "S5-T19",
-      "S5-T35",
-      "S5-V82",
-      "S5-F42",
-      "S5-T02",
-      "S5-V69",
-      "S5-T71",
-      "S5-Z25",
-      "S5-V78",
-      "S5-T30",
-      "S5-T20",
-      "S5-Z30",
-      "S5-T06",
-      "S5-F25",
-      "S5-T132",
-      "S5-T01",
-      "S5-F16",
-      "S5-T36",
-      "S5-R130",
-      "S5-J04",
-      "S5-T03",
-      "S5-T45",
-      "S5-V68",
-      "S5-V03",
-      "S5-T146",
-      "S5-V52",
-      "S5-R64",
-      "S5-V116",
-      "S5-F40",
-      "S5-F30",
-      "S5-T110",
-      "S5-T177",
-      "S5-V28",
-      "S5-R118",
-      "S5-Z02",
-      "S5-T51",
-      "S5-F02",
-      "S5-T04",
-      "S5-V104"
+      "S5-T166",
+      "S5-T168",
+      "S5-T57",
+      "S5-R41",
+      "S5-V120",
+      "S5-V117",
+      "S5-T24",
+      "S5-V95",
+      "S5-T187",
+      "S5-V103",
+      "S5-T78",
+      "S5-T68",
+      "S5-Z26",
+      "S5-T32",
+      "S5-T10",
+      "S5-F41",
+      "S5-Z12",
+      "S5-V07",
+      "S5-F09",
+      "S5-F53",
+      "S5-T121",
+      "S5-V92",
+      "S5-V58",
+      "S5-F29",
+      "S5-J48",
+      "S5-T85",
+      "S5-Z24",
+      "S5-Y04",
+      "S5-V108",
+      "S5-V41",
+      "S5-T48",
+      "S5-R65",
+      "S5-V13",
+      "S5-T137",
+      "S5-T189",
+      "S5-V23",
+      "S5-F48",
+      "S5-E13",
+      "S5-T39",
+      "S5-T58",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60"
     ],
     "notes": [
-      "Audited the next 100 Bank 3 questions against the matching Airway Equipment, Medical Gas Systems in Anesthesia, CO₂ & Scavenging, and Monitoring course material.",
-      "Visually verified all image-dependent items in this batch, including hypoventilation and sedation-apnea capnograms, ROSC capnogram, arterial-waveform labels, hypopharyngeal/cuff-leak pattern, curare cleft, and the anesthesia-machine roadmap.",
-      "Removed unsupported CPR-threshold language from S4-P63, tightened S4-J37 to the CO₂ cylinder data actually shown, corrected S5-V28's unsupported reserve-supply framing, and corrected S5-V116 topic metadata.",
-      "Also polished source-grounded explanations and wording in S4-R91, S5-T132, and S5-T01. No retained answer key was found to be wrong."
+      "Finished the final 40 unaudited Bank 3 questions, then audited the next 60 Bank 1 questions for a 100-question batch.",
+      "Visually verified the Bank 3 emphysema pressure-volume loop and flowmeter-leak image; Bank 1 embedded SVG questions were checked against their stems, keys, and lecture content.",
+      "Bank 1 required several source-fidelity corrections, including the unsupported combined NIOSH limit, bougie tactile details, underdamping diastolic claim, OPA sizing, dyshemoglobin key, peripheral arterial-waveform wording, vaporizer tipping sequence, and multiple slide locators.",
+      "Bank 3 received targeted source-fidelity, metadata, and wording fixes. No unchanged retained answer key was found to be wrong."
     ]
   },
   "lastCorrection": {
