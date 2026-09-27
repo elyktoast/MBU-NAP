@@ -38,3 +38,8 @@ Run the retention cleanup after major releases and periodically during active op
 
 ## Account deletion safeguard
 Administrator deletion is limited to non-admin accounts and requires explicit UI confirmation. The operator-admin account cannot be deleted through the admin-panel deletion function. Account deletion removes the authentication account and active account-linked cloud data while leaving only any still-valid pseudonymous legal-assent evidence described in the Privacy Notice.
+
+## Metric definitions
+- **Guests active ~15m / guest sessions 24h:** approximate browser-tab sessions based on short-lived random guest session IDs; not a verified count of individual people.
+- **CAT users:** unique authenticated accounts with at least one eligible first-attempt contribution recorded with `session_mode='adaptive'`.
+- **Adaptive first attempts:** total eligible first-attempt contribution rows recorded from Adaptive Mode.
