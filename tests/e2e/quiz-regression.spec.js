@@ -2481,6 +2481,33 @@ test.describe('canonical quiz regression', () => {
     expect(deletedUrl).toContain('user_id=eq.');
   });
 
+  test('Explicit cloud restore replaces dirty local progress for the selected study area', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
+    const now=new Date().toISOString();
+    await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'test-access',refresh_token:'test-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000001',email:'test@example.com'}})}));
+    await page.route(cloud+'/rest/v1/mbu_sync_versions?*',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify([{id:45,store_key:'mbu_exam1_studio_v1',payload:{restored:true},server_revision:8,saved_at:now}])}));
+    let currentRow={store_key:'mbu_exam1_studio_v1',server_revision:12,client_revision:5,payload:{current:true},device_id:'other',client_updated_at:now};
+    await page.route(cloud+'/rest/v1/mbu_sync_state?*',route=>{
+      const url=route.request().url();
+      if(url.includes('store_key=eq.mbu_exam1_studio_v1'))return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify([currentRow])});
+      return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify([currentRow])});
+    });
+    await page.route(cloud+'/rest/v1/rpc/mbu_sync_write_state',route=>{
+      const body=JSON.parse(route.request().postData()||'{}');
+      currentRow={store_key:body.p_store_key,payload:body.p_payload,device_id:body.p_device_id,client_revision:body.p_client_revision,client_updated_at:body.p_client_updated_at,server_revision:13};
+      return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({applied:true,row:currentRow})});
+    });
+    await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>route.fulfill({status:201,contentType:'application/json',body:''}));
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.evaluate(() => MBUSupabase.signIn('test@example.com','correct horse battery staple'));
+    await page.evaluate(()=>{
+      localStorage.setItem('mbu_exam1_studio_v1',JSON.stringify({dirtyLocal:true}));
+      MBUAppCore.touchStore('mbu_exam1_studio_v1');
+    });
+    await page.evaluate(() => MBUSupabase.restoreVersion(45));
+    await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('mbu_exam1_studio_v1')||'{}').restored)).toBe(true);
+  });
+
   test('Cloud version restore uses the current server revision as an atomic write guard', async ({ page }) => {
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let rpcBody=null;
     await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'test-access',refresh_token:'test-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000001',email:'test@example.com'}})}));
