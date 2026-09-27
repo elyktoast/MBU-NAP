@@ -728,6 +728,18 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ['data-cloud-devices-details','data-cloud-history-details','renderCloudDevices','renderCloudHistory'])if(!core.includes(token))fail('Cloud management UI missing '+token);
 }
 
+// Stable architecture baseline: shared runtimes stay centralized instead of regrowing per-bank implementations.
+{
+ const manifest=JSON.parse(read('equipment/exam-1/banks.json'));
+ const canonical=manifest.banks.filter(b=>['bank1','bank2','bank3','combined'].includes(b.id));
+ if(canonical.length!==4||canonical.some(b=>b.engine!=='canonical'))fail('Stable architecture: Banks 1-3 and Combined must remain on the canonical engine');
+ for(const p of ['equipment/assets/quiz-engine.js','equipment/assets/canonical-bank-page.js','equipment/assets/study-intelligence.js','equipment/assets/question-search.js','equipment/assets/app-core.js'])if(!exists(p))fail('Stable architecture: shared runtime missing '+p);
+ for(const p of ['quiz-bank-1.html','quiz-bank-2.html','quiz-bank-3.html','combined.html']){
+   const src=read('equipment/exam-1/'+p);
+   if(src.includes('<style>')||src.includes('quiz-engine.js')||src.includes('bank1-quiz-ui.css'))fail('Stable architecture: '+p+' has regrown inline/shared runtime ownership');
+ }
+}
+
 // Hazards dashboard must always load the canonical Bank 1 visual system.
 {
  const src=read('equipment/exam-1/hazards.html');
