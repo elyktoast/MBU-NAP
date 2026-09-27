@@ -18,6 +18,7 @@ Committed database migrations:
 
 - `supabase/migrations/20260927000217_create_mbu_sync_schema.sql`
 - `supabase/migrations/20260927010714_add_server_authoritative_sync_write.sql`
+- `supabase/migrations/20260927011217_remove_unused_sync_device_index.sql`
 
 ## Authentication
 
