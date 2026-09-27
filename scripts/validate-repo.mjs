@@ -535,7 +535,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 
 // JavaScript syntax is a release blocker. A page shell that renders while its inline script fails to parse is not valid.
 {
- const jsAssets=['equipment/assets/supabase-config.js','equipment/assets/supabase-sync.js','equipment/assets/app-core.js','equipment/assets/build-bootstrap.js','equipment/assets/canonical-bank-page.js','equipment/assets/studio-loader.js','equipment/assets/studio-page.js','equipment/assets/hazards-page.js','equipment/assets/hazards-dashboard.js','equipment/assets/exam-dashboard.js','equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js','equipment/assets/site-nav.js','equipment/assets/navigator.js','equipment/assets/calculator.js','equipment/assets/auto-update.js'];
+ const jsAssets=['equipment/assets/adaptive-quiz.js','equipment/assets/supabase-config.js','equipment/assets/supabase-sync.js','equipment/assets/app-core.js','equipment/assets/build-bootstrap.js','equipment/assets/canonical-bank-page.js','equipment/assets/studio-loader.js','equipment/assets/studio-page.js','equipment/assets/hazards-page.js','equipment/assets/hazards-dashboard.js','equipment/assets/exam-dashboard.js','equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js','equipment/assets/site-nav.js','equipment/assets/navigator.js','equipment/assets/calculator.js','equipment/assets/auto-update.js'];
  for(const p of jsAssets){try{new vm.Script(read(p),{filename:p})}catch(e){fail(p+': JavaScript syntax error: '+e.message)}}
  for(const p of quizFiles){
   const src=read(p),re=/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi;let m,i=0;
@@ -701,11 +701,14 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const boot=read('equipment/assets/build-bootstrap.js'),intel=read('equipment/assets/study-intelligence.js'),search=read('equipment/assets/question-search.js'),studio=read('equipment/assets/studio-page.js'),dash=read('equipment/assets/exam-dashboard.js'),core=read('equipment/assets/app-core.js');
  for(const token of ["loadScript('study-intelligence.js')","loadScript('question-search.js')"])if(!boot.includes(token))fail('Shared study runtime missing '+token);
- for(const token of ['mbu_study_intelligence_v1','recordAnswer','smartReview','adaptiveChallenge','adaptiveStart','adaptivePick','adaptiveAdvance','due','analytics','recentActivity','addIssue'])if(!intel.includes(token))fail('Study intelligence contract missing '+token);
- for(const token of ["m==='smart'","m==='custom'","m==='due'",'adaptiveToggle','adaptiveStart','analyticsSummary','seedLegacy'])if(!studio.includes(token))fail('Studio intelligence integration missing '+token);
+ for(const token of ['mbu_study_intelligence_v1','recordAnswer','smartReview','questionStats','topicStats','due','analytics','recentActivity','addIssue'])if(!intel.includes(token))fail('Study intelligence contract missing '+token);
+ for(const token of ["m==='smart'","m==='custom'","m==='due'",'adaptiveToggle','MBUAdaptiveQuiz','analyticsSummary','seedLegacy'])if(!studio.includes(token))fail('Studio intelligence integration missing '+token);
  for(const token of ['continuePanel','recentPanel','MBUStudyIntelligence'])if(!dash.includes(token))fail('Exam dashboard intelligence integration missing '+token);
  if(!read('equipment/exam-1/studio.html').includes('id="adaptiveToggle"'))fail('Studio adaptive opt-in toggle is missing');
- const studioSync=read('equipment/assets/studio-sync.js');if(!studioSync.includes("v.mode==='adaptive'")||!studioSync.includes("out.mode='adaptive'"))fail('Studio adaptive session normalization is missing');
+ const adaptive=read('equipment/assets/adaptive-quiz.js'),studioSync=read('equipment/assets/studio-sync.js');
+ for(const token of ['estimateAbility','probability-.5','poolUids','topicCounts','recentUids'])if(!adaptive.includes(token))fail('Adaptive CAT engine missing '+token);
+ if(!read('equipment/assets/studio-loader.js').includes("loadScript('adaptive-quiz.js')"))fail('Studio does not load the separate adaptive engine');
+ if(!studioSync.includes("v.mode==='adaptive'")||!studioSync.includes("out.mode='adaptive'"))fail('Studio adaptive session normalization is missing');
  if(!core.includes("keys=new Set(['mbu_exam1_studio_v1','mbu_study_intelligence_v1'])"))fail('Study intelligence is not cloud tracked');
  for(const p of ['equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-page.js'])if(!read(p).includes('MBUStudyIntelligence'))fail(p+': answer path bypasses shared study intelligence');
 }
