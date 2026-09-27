@@ -388,6 +388,20 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#dashboard')).toBeVisible();
   });
 
+  test('Calculator clears expression and Ans when closed and reopened', async ({ page }) => {
+    await page.goto(exam + '/combined.html');
+    await page.locator('#cards button').filter({ hasText: /start/i }).first().click();
+    await page.locator('#mbu-calc-open').click();
+    await page.locator('#mbu-calc-display').fill('2+3');
+    await page.locator('#mbu-calc-display').press('Enter');
+    await expect(page.locator('#mbu-calc-display')).toHaveValue('5');
+    await page.locator('.mbu-calc-close').click();
+    await page.locator('#mbu-calc-open').click();
+    await expect(page.locator('#mbu-calc-display')).toHaveValue('');
+    await page.getByRole('button',{name:'Ans',exact:true}).click();
+    await expect(page.locator('#mbu-calc-display')).toHaveValue('0');
+  });
+
   test('SRNA Study Tool brand hard refreshes the current page with a cache-busting URL', async ({ page }) => {
     await page.goto(exam + '/combined.html');
     const beforePath = new URL(page.url()).pathname;
