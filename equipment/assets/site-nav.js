@@ -22,6 +22,7 @@ async function render(){
  brand.onclick=e=>{e.preventDefault();try{sessionStorage.removeItem('mbu_build_manifest_v1')}catch{}const u=new URL(location.href);u.searchParams.set('_mbu_refresh',Date.now().toString());location.replace(u.href)};
  const primary=document.createElement('div');primary.className='mbu-global-nav__primary';
  for(const id of ['equipment','studio']){const x=byId.get(id);if(x)primary.append(link(x,'mbu-global-nav__primary-link'))}
+ const adaptive=document.createElement('a');adaptive.href=new URL('studio.html?mode=adaptive',exam).href;adaptive.textContent='Adaptive';adaptive.className='mbu-global-nav__primary-link mbu-global-nav__adaptive';adaptive.setAttribute('aria-label','Try Adaptive Testing beta');primary.append(adaptive);
  primary.append(makeBankPicker(byId));
  n.append(brand,primary);document.body.prepend(n);window.MBUAppCore?.mountNav?.(n)
 }
