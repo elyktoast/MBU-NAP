@@ -194,11 +194,14 @@ async function handleAuthRedirect(){
 }
 window.addEventListener('hashchange',()=>handleAuthRedirect().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth redirect failed',e)}));
 window.MBUSupabase={signIn,signUp,signOut,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,listDevices,removeDevice,listHistory,restoreVersion,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
-(async()=>{
-  if(await handleAuthRedirect())return;
+const authReady=(async()=>{
+  if(await handleAuthRedirect())return true;
   if(session()){
     if(sessionStorage.getItem('mbu_cloud_reload')==='1')sessionStorage.removeItem('mbu_cloud_reload');
-    startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),400)
-  }else emit('signed-out');
-})().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth bootstrap failed',e)});
+    const valid=await validSession();
+    if(valid?.user?.id){startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),400);emit(recoveryMode?'password-recovery':'signed-in',{email:valid.user?.email||''});return true}
+  }
+  emit('signed-out');return false
+})().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth bootstrap failed',e);return false});
+window.MBUAuthReady=authReady;
 })();
