@@ -233,7 +233,7 @@ function mountNav(nav){
   const utilities=document.createElement('div');utilities.className='mbu-global-nav__utilities';
   const search=document.createElement('button');search.type='button';search.className='mbu-global-nav__search';search.textContent='Search';search.setAttribute('aria-label','Search all questions');search.onclick=()=>window.MBUQuestionSearch?.open?.(search);
   const cloud=document.createElement('button');cloud.type='button';cloud.className='mbu-global-nav__cloud';cloud.innerHTML='<span class="mbu-status-dot" aria-hidden="true"></span><span data-cloud-chip-label>Cloud: Signed out</span>';cloud.onclick=()=>openAccount(cloud);
-  const tools=document.createElement('button');tools.type='button';tools.className='mbu-global-nav__tools';tools.textContent='Tools';tools.setAttribute('aria-label','Open study tools, backup, and diagnostics');tools.onclick=()=>openTools(tools);
+  const tools=document.createElement('button');tools.type='button';tools.className='mbu-global-nav__tools';tools.textContent='Tools';tools.setAttribute('aria-label','Open tools and diagnostics');tools.onclick=()=>openTools(tools);
   utilities.append(search,cloud,tools);nav.append(utilities);updateCloudChip()
 }
 window.addEventListener('mbu:supabase-status',()=>{refreshAccount();refreshTools();updateCloudChip()});
