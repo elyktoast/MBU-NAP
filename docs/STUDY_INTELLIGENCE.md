@@ -56,6 +56,28 @@ Questions with no learning history remain eligible. Equal-priority questions use
 
 Smart Review currently selects up to 50 questions.
 
+
+## Adaptive Mode
+
+Adaptive Mode is deliberately separate from Smart Review and from normal quiz sessions. It is loaded only by Study Studio and runs only when the user enables the **Adaptive Mode** toggle while building a custom session.
+
+The implementation follows CAT principles used by major credentialing examinations without claiming formal psychometric equivalence:
+
+- ability is represented internally on a continuous provisional logit-like scale;
+- the ability estimate is recalculated from the full adaptive-session response path after every answer;
+- each candidate question receives a provisional difficulty estimate from question structure plus the user's accumulated performance history;
+- item selection targets the question with an estimated success probability closest to 50%, maximizing information around the current ability estimate;
+- source/topic representation is balanced against the distribution of the user-selected question pool;
+- questions already used in the current adaptive session are excluded;
+- recently seen questions receive an exposure penalty when alternatives are available;
+- the visible Challenge 1–5 indicator is only a friendly display mapped from the continuous internal estimate.
+
+The engine starts at the midpoint with a regularizing prior so one early answer cannot drive the estimate to an extreme. Precision improves as information accumulates.
+
+The current difficulty values are **provisional personal estimates**, not population-calibrated Rasch item parameters. A true high-stakes CAT requires item calibration from a sufficiently large examinee sample. If anonymous aggregate item-performance data is added in the future, those calibrated difficulty parameters can replace the provisional estimator without changing the Studio session interface.
+
+Adaptive sessions are forward-only. Normal custom sessions, Smart Review, Due Review, Missed Review, and Flagged Review remain non-adaptive unless Adaptive Mode is explicitly enabled.
+
 ## Legacy progress
 
 When Study Studio loads, it first reconciles existing quiz-bank progress into the Studio compatibility layer and then seeds study intelligence once. This lets existing progress participate without changing or rewriting the original bank saves.
