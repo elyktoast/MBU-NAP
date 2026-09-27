@@ -1548,7 +1548,7 @@ test.describe('canonical quiz regression', () => {
     await waitForAuth(page);
     await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('[data-cloud-signed-in]')).toBeVisible();
-    await page.locator('[data-cloud-signed-in] summary').filter({hasText:'Privacy & Account'}).click();
+    await page.locator('[data-cloud-signed-in] summary').filter({hasText:'Privacy & account'}).click();
     await page.locator('[data-privacy-type]').selectOption('access');
     await page.locator('[data-privacy-details]').fill('Please provide my account-linked data.');
     await page.locator('[data-privacy-submit]').click();
@@ -1565,7 +1565,7 @@ test.describe('canonical quiz regression', () => {
     await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('[data-cloud-signed-in]')).toBeVisible();
     page.on('dialog',dialog=>dialog.accept());
-    await page.locator('[data-cloud-signed-in] summary').filter({hasText:'Privacy & Account'}).click();
+    await page.locator('[data-cloud-signed-in] summary').filter({hasText:'Privacy & account'}).click();
     await page.locator('[data-cloud-delete-account]').click();
     await expect.poll(()=>deleted).toBe(1);
     await expect.poll(()=>page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(false);
@@ -1913,6 +1913,18 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#snar-legal-gate')).toHaveCount(0);
   });
 
+  test('Account panel separates sign in and account creation cleanly', async ({ page }) => {
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.locator('.mbu-global-nav__cloud').click();
+    await expect(page.locator('[data-auth-signin]')).toBeVisible();
+    await expect(page.locator('[data-auth-signup]')).toBeHidden();
+    await page.locator('[data-auth-view="signup"]').click();
+    await expect(page.locator('[data-auth-signin]')).toBeHidden();
+    await expect(page.locator('[data-auth-signup]')).toBeVisible();
+    await expect(page.locator('[data-cloud-signup-confirm]')).toBeVisible();
+    await page.locator('[data-account-close]').click();
+  });
+
   test('Guest users can study normally but Adaptive Mode requires an account', async ({ page }) => {
     await page.evaluate(()=>{localStorage.removeItem('mbu_supabase_session_v1');sessionStorage.clear()});
     await page.goto(exam + '/studio.html');
@@ -1923,7 +1935,7 @@ test.describe('canonical quiz regression', () => {
     await page.locator('#adaptiveToggle').click();
     await expect(page.locator('#adaptiveToggle')).not.toBeChecked();
     await expect(page.locator('#mbu-account-panel')).toBeVisible();
-    await expect(page.locator('#mbu-account-panel')).toContainText('Sign in for cross-device sync and to use Adaptive Mode');
+    await expect(page.locator('#mbu-account-panel')).toContainText('Sync progress across devices and access Adaptive Mode.');
     await page.locator('[data-account-close]').click();
     const selected=await page.evaluate(()=>{
       const first=document.querySelector('#sourceChecks input[type=checkbox]');
@@ -1956,12 +1968,12 @@ test.describe('canonical quiz regression', () => {
     await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('#mbu-account-panel')).toContainText('Privacy Notice');
     await expect(page.locator('#mbu-account-panel')).toContainText('Terms of Use');
-    await page.locator('[data-cloud-signed-in] summary').filter({hasText:'Privacy & Account'}).click();
+    await page.locator('[data-cloud-signed-in] summary').filter({hasText:'Privacy & account'}).click();
     await expect(page.locator('[data-cloud-delete-account]')).toBeVisible();
     await expect(page.locator('[data-privacy-submit]')).toBeVisible();
   });
 
-  test('Adaptive session toggle is opt-in, forward-only, and survives reload with its level', async ({ page }) => {
+  test('Adaptive session is opt-in, sequentially reviewable, and survives reload with its level', async ({ page }) => {
     await seedSignedIn(page);
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     expect(await page.locator('#adaptiveToggle').isChecked()).toBe(false);
@@ -1974,7 +1986,7 @@ test.describe('canonical quiz regression', () => {
     });
     await expect(page.locator('#qmeta')).toContainText('Adaptive Challenge 3/5');
     await expect(page.locator('#studioPrev')).toBeDisabled();
-    await expect(page.locator('#studioNavToggle')).toBeDisabled();
+    await expect(page.locator('#studioNavToggle')).toBeHidden();
     const startTheta=await page.evaluate(()=>DB.active.adaptive.theta);
     await page.evaluate(()=>{const q=session[pos];sel=new Set(q.ans);grade()});
     await expect.poll(()=>page.evaluate(()=>DB.active?.adaptive?.theta)).toBeGreaterThan(startTheta);
@@ -1985,8 +1997,13 @@ test.describe('canonical quiz regression', () => {
     await expect.poll(()=>page.evaluate(()=>DB.active?.mode)).toBe('adaptive');
     const after=await page.evaluate(()=>({uids:[...DB.active.uids],level:DB.active.adaptive.level,theta:DB.active.adaptive.theta,se:DB.active.adaptive.se,pos:DB.active.pos}));
     expect(after).toEqual(before);
-    await expect(page.locator('#studioPrev')).toBeDisabled();
-    await expect(page.locator('#studioNavToggle')).toBeDisabled();
+    await expect(page.locator('#studioPrev')).toBeEnabled();
+    await expect(page.locator('#studioNavToggle')).toBeHidden();
+    await page.locator('#studioPrev').click();
+    await expect(page.locator('#qprog')).toContainText('Question 1 of 10');
+    await expect(page.locator('#next')).toBeEnabled();
+    await page.locator('#next').click();
+    await expect(page.locator('#qprog')).toContainText('Question 2 of 10');
     await page.evaluate(()=>{
       const q=session[pos],need=q.ans.length,wrong=[];
       for(let i=0;i<q.opts.length&&wrong.length<need;i++)if(!q.ans.includes(i))wrong.push(i);
@@ -2117,9 +2134,30 @@ test.describe('canonical quiz regression', () => {
     await page.locator('.mbu-global-nav__cloud').click();
     await page.getByText('Devices',{exact:true}).click();
     await expect(page.locator('[data-cloud-devices]')).toContainText('MacBook');
-    await page.getByText('Restore Progress',{exact:true}).click();
+    await page.getByText('Restore progress',{exact:true}).click();
     await expect(page.locator('[data-cloud-history]')).toContainText('Study Studio');
     await expect(page.locator('[data-cloud-history]')).toContainText('revision 4');
+  });
+
+  test('Quiz session stat bars use Answered, Correct, Missed, and Accuracy', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUQuizReady);
+    await page.getByRole('button',{name:/Start Practice Set 1/}).click();
+    await expect(page.locator('#quiz .stats')).toContainText('Answered:');
+    await expect(page.locator('#quiz .stats')).toContainText('Correct:');
+    await expect(page.locator('#quiz .stats')).toContainText('Missed:');
+    await expect(page.locator('#quiz .stats')).toContainText('Accuracy:');
+    await expect(page.locator('#quiz .stats')).not.toContainText('Completed:');
+
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await page.evaluate(()=>{
+      const first=document.querySelector('#sourceChecks input[type=checkbox]');
+      if(first)first.checked=true;
+      document.getElementById('count').value='10';
+      startMode('custom');
+    });
+    await expect(page.locator('#quiz .stats')).toContainText('Answered:');
+    await expect(page.locator('#quiz .stats')).toContainText('Correct:');
+    await expect(page.locator('#quiz .stats')).toContainText('Accuracy:');
   });
 
   test('Continue Studying deep-links directly into the saved canonical practice set', async ({ page }) => {
