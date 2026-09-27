@@ -126,7 +126,7 @@ async function deleteAccount(){
 const s=await validSession();if(!s?.access_token)throw Error('Sign in to delete your account.');
 await raw('/functions/v1/snar-delete-account',{method:'POST',body:{},token:s.access_token});
 await clearTrackedLocalData();localStorage.removeItem(OWNER_KEY);
-resetCloudSession();return true
+resetCloudSession();localStorage.removeItem(META_KEY);localStorage.removeItem(OWNER_KEY);return true
 }
 async function submitPrivacyRequest(requestType,details=''){
 const s=await validSession();if(!s?.user?.id)throw Error('Sign in to submit a privacy request.');
