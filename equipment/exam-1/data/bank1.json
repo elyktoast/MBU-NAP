@@ -1982,7 +1982,7 @@
       "answer": [
         1
       ],
-      "explanation": "Under the Pin Index Safety System, Oxygen uses pin positions 2 and 5.",
+      "explanation": "Under the Pin Index Safety System, an oxygen E-cylinder uses pin positions 2 and 5. The matching pins on the hanger yoke prevent attachment of a cylinder with a different gas-specific configuration.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 18",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -2210,7 +2210,7 @@
       "answer": [
         2
       ],
-      "explanation": "Nitrous oxide uses pin positions 3 and 5 on the PISS indexing system.",
+      "explanation": "Under the Pin Index Safety System, nitrous oxide uses pin positions 3 and 5. The gas-specific pin pattern is intended to prevent attachment of the wrong cylinder to the hanger yoke.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 18",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -2465,15 +2465,15 @@
       "type": "single",
       "stem": "What happens to the displayed SpO2 reading when a pulse oximeter probe is placed on an extremity experiencing severe hypoperfusion or shivering?",
       "options": [
-        "It defaults directly to 100%",
-        "It reliably measures venous pulsatile oxygenation",
-        "The monitor loses signal fidelity and reports unreliable or artifactual values",
-        "It converts automatically to fractional co-oximetry"
+        "It reliably displays the true arterial saturation despite motion",
+        "It preferentially measures venous saturation from the extremity",
+        "Motion and low perfusion can degrade the pleth signal and produce unreliable values",
+        "It automatically changes to co-oximetry mode to correct the signal"
       ],
       "answer": [
         2
       ],
-      "explanation": "Motion, shivering, hypoperfusion, and electrocautery disrupt the photodetector's ability to distinguish pulsatile arterial blood from background tissue and venous blood, degrading accuracy.",
+      "explanation": "Pulse oximetry depends on detecting a pulsatile arterial signal. Shivering creates motion artifact and severe hypoperfusion reduces pulse amplitude, so the plethysmographic signal may become unreliable or disappear rather than yielding a trustworthy SpO₂ value.",
       "citation": "Monitoring · Slide 78",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -3184,16 +3184,16 @@
       "type": "single",
       "stem": "What is the primary risk of using more than one washer (Bodok seal) when mounting an E-cylinder onto a hanger yoke?",
       "options": [
-        "Accelerates gas desiccation within the first-stage regulator",
-        "Bypasses the pin index safety system pins, permitting accidental connection of the wrong gas cylinder",
-        "Causes instant bursting of the frangible safety disc",
-        "Blocks forward gas flow through the cylinder nipple"
+        "It interferes with the pressure gauge calibration",
+        "It can allow the cylinder valve to clear the index pins and defeat PISS protection",
+        "It causes the cylinder relief device to rupture at normal pressure",
+        "It prevents the retaining screw from contacting the cylinder valve"
       ],
       "answer": [
         1
       ],
-      "explanation": "Stacking two or more washers increases the space between the cylinder valve and the yoke face, allowing the post to sit clear of the index pins and defeating the PISS safety mechanism.",
-      "citation": "Medical Gas Systems in Anesthesia · Slides 10, 20",
+      "explanation": "Only one Bodok washer should be used. Stacking washers increases the distance between the cylinder valve and the yoke face and can allow the valve post to bypass the gas-specific index pins, defeating the Pin Index Safety System.",
+      "citation": "Medical Gas Systems in Anesthesia · Slides 10, 18, 21",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -3208,7 +3208,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slides 10, 20"
+      "sourceLocator": "Slides 10, 18, 21"
     },
     {
       "id": "99",
@@ -5429,18 +5429,18 @@
       "id": "166",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary clinical problem associated with using a pulse oximeter probe on an earlobe in a patient with severe tricuspid regurgitation?",
+      "stem": "Which factor is most likely to make a pulse oximeter reading unreliable when the probe is placed on a poorly perfused extremity?",
       "options": [
-        "Severe venous pulsations can cause the probe to detect retrograde venous flow, resulting in an underestimation of true arterial SpO2",
-        "Tricuspid regurgitation shunts deoxygenated blood into the pulmonary veins",
-        "The sensor autocalibrates to methemoglobin absorption due to low earlobe perfusion",
-        "The red-to-infrared absorption ratio fixes permanently at 1:1"
+        "Low pulsatile signal amplitude at the sensor site",
+        "A high inspired oxygen concentration",
+        "Continuous electrocardiographic monitoring",
+        "Normal arterial pulsatility at the sensor site"
       ],
       "answer": [
         0
       ],
-      "explanation": "Pulse oximeters rely on photoplethysmography to separate pulsatile arterial blood from nonpulsatile venous blood. In tricuspid regurgitation, systolic venous hypertension creates prominent venous pulsations, which the sensor mistakenly processes as arterial flow, producing falsely low SpO2 readings.",
-      "citation": "Monitoring · Slides 74, 78",
+      "explanation": "Pulse oximetry requires an adequate pulsatile arterial signal. Poor peripheral perfusion reduces pulse amplitude at the probe site and can make the displayed saturation unreliable or prevent the monitor from obtaining a reading.",
+      "citation": "Monitoring · Slide 78",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -5455,7 +5455,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 74, 78"
+      "sourceLocator": "Slide 78"
     },
     {
       "id": "167",
@@ -6224,18 +6224,18 @@
       "id": "190",
       "set": 2,
       "type": "single",
-      "stem": "In an anesthesia workstation high-pressure system, what is the function of the conical depression located on the back of the cylinder valve post?",
+      "stem": "Which hanger-yoke component is tightened to secure an E-cylinder against the yoke nipple and Bodok seal?",
       "options": [
-        "Accepts the pointed tip of the yoke clamp screw (T-handle) to secure the cylinder firmly into the hanger yoke",
-        "Receives the index pins of the Pin Index Safety System",
-        "Acts as a spring-loaded safety pressure relief port",
-        "Provides an entry port for liquid anesthetic refilling"
+        "The retaining screw operated by the T-handle",
+        "The Pin Index Safety System pin",
+        "The cylinder pressure-relief device",
+        "The pipeline inlet check valve"
       ],
       "answer": [
         0
       ],
-      "explanation": "The conical depression on the posterior surface of the cylinder valve post is precisely aligned to accept the pointed tip of the yoke clamp screw (T-handle), securing the valve against the yoke nipple and Bodok seal.",
-      "citation": "Medical Gas Systems in Anesthesia · Slides 16, 17, 20",
+      "explanation": "The hanger-yoke assembly uses the T-handle and retaining screw to press the cylinder valve firmly against the yoke nipple and Bodok seal, creating a secure gas-tight connection.",
+      "citation": "Medical Gas Systems in Anesthesia · Slides 20-21",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -6250,7 +6250,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slides 16, 17, 20"
+      "sourceLocator": "Slides 20-21"
     },
     {
       "id": "191",
@@ -7752,16 +7752,16 @@
       "type": "single",
       "stem": "During a procedure using pulse oximetry, severe patient shivering occurs. What is the expected effect on monitor performance?",
       "options": [
-        "Motion artifact prevents the sensor from distinguishing pulsatile arterial blood, resulting in inaccurate readings or waveform loss",
-        "The monitor defaults to fractional co-oximetry and displays true arterial SaO2",
-        "The monitor automatically locks saturation display at 85%",
-        "The sensor switches its red light emission to 940 nm to bypass venous motion"
+        "Motion artifact may distort the pleth waveform and make the SpO₂ value unreliable",
+        "The device automatically converts to invasive arterial saturation monitoring",
+        "The displayed saturation becomes fixed at 85% until shivering stops",
+        "The sensor increases infrared wavelength to remove all motion artifact"
       ],
       "answer": [
         0
       ],
-      "explanation": "Pulse oximeters perform plethysmographic analysis to distinguish pulsatile arterial flow from nonpulsatile tissue. Motion, shivering, and hypoperfusion degrade signal fidelity, leading to inaccurate readings or loss of pulse tracking.",
-      "citation": "Monitoring · Slides 74, 78",
+      "explanation": "Shivering produces motion artifact that interferes with pulse-oximeter photoplethysmography. The pleth waveform and displayed saturation may therefore become inaccurate or intermittently unreadable until signal quality improves.",
+      "citation": "Monitoring · Slide 78",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -7776,7 +7776,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 74, 78"
+      "sourceLocator": "Slide 78"
     },
     {
       "id": "237",
@@ -8059,7 +8059,7 @@
       "answer": [
         1
       ],
-      "explanation": "Oxygen uses pin positions 2 and 5 under the Pin Index Safety System.",
+      "explanation": "Under the Pin Index Safety System, an oxygen E-cylinder uses pin positions 2 and 5. The gas-specific indexing pattern helps prevent connection of the wrong cylinder to the oxygen yoke.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 18",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -8151,15 +8151,15 @@
       "type": "single",
       "stem": "What is the primary clinical problem associated with using an uncalibrated copper kettle vaporizer in modern anesthesia practice?",
       "options": [
-        "It is not concentration-calibrated; delivering precise vapor requires complex manual calculations of carrier flow and vapor pressure",
-        "It requires high-voltage electrical heating to 39°C to prevent freezing",
-        "It degrades volatile anesthetics into carbon monoxide within 10 minutes",
-        "It lacks wicks or baffles and cannot achieve 100% vapor saturation"
+        "Its output is not concentration-calibrated and must be calculated from carrier-gas flow and vapor output",
+        "It must be electrically heated to 39 °C before any anesthetic vapor can be produced",
+        "It converts volatile agents to carbon monoxide during routine use",
+        "It cannot produce saturated anesthetic vapor because it lacks direct gas-liquid contact"
       ],
       "answer": [
         0
       ],
-      "explanation": "Copper kettle vaporizers are non-concentration-calibrated vaporizers. A dedicated oxygen flow is bubbled through liquid agent to create saturated vapor, requiring manual calculations to determine delivered output.",
+      "explanation": "The copper kettle is not a concentration-calibrated vaporizer. A dedicated carrier-gas flow passes through liquid anesthetic and becomes saturated, so the final delivered concentration must be calculated from vapor output and total fresh-gas flow.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 74",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -10105,16 +10105,16 @@
       "type": "single",
       "stem": "What is the primary function of the second-stage pressure regulator on an anesthesia machine?",
       "options": [
-        "Reduces pipeline or cylinder gas pressure down to 14–16 psig for O2 and 26–38 psig for N2O to dampen line fluctuations",
-        "Reduces high cylinder pressure from 2200 psig down to 45 psig",
-        "Controls gas evacuation through the active scavenging disposal conduit",
-        "Prevents retrograde gas flow from entering the vaporizing sump"
+        "It further reduces intermediate gas pressure and dampens supply-pressure fluctuations before the flow-control system",
+        "It reduces full cylinder pressure directly from about 2,200 psig to atmospheric pressure",
+        "It regulates active scavenging suction at the waste-gas interface",
+        "It prevents reverse flow from the breathing circuit into the vaporizer"
       ],
       "answer": [
         0
       ],
-      "explanation": "Second-stage regulators receive gas from the intermediate supply (pipeline or 1st-stage regulator) and drop pressures further (14–16 psig for O2; 26–38 psig for N2O) to eliminate upstream surges and supply constant pressure to flowmeters.",
-      "citation": "Medical Gas Systems in Anesthesia · Slides 26, 33",
+      "explanation": "The second-stage regulator further reduces gas pressure within the intermediate-pressure system and smooths fluctuations before gas reaches sensitive downstream components. The lecture lists approximately 14–16 psig for oxygen and 26–38 psig for nitrous oxide.",
+      "citation": "Medical Gas Systems in Anesthesia · Slide 33",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -10129,7 +10129,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slides 26, 33"
+      "sourceLocator": "Slide 33"
     },
     {
       "id": "308",
@@ -10434,18 +10434,18 @@
       "id": "317",
       "set": 4,
       "type": "single",
-      "stem": "When an Eschmann introducer (bougie) is advanced past the vocal cords, what tactile feedback confirms proper intratracheal placement rather than esophageal entry?",
+      "stem": "Which finding is classically associated with tracheal rather than esophageal passage of an Eschmann introducer?",
       "options": [
-        "Palpable clicks transmitted as the angled coudé tip slides over cartilaginous tracheal rings",
-        "Smooth, resistance-free advancement beyond 45 cm",
-        "Vibratory flutter against the posterior pharyngeal wall",
-        "Immediate firm impaction at 10 cm insertion depth"
+        "Tactile clicks as the angled tip passes over tracheal rings",
+        "Completely smooth advancement without tactile feedback",
+        "Immediate resistance at the oropharynx before the glottis",
+        "Loss of resistance at the upper esophageal sphincter"
       ],
       "answer": [
         0
       ],
-      "explanation": "Tracheal entry produces palpable clicks as the angled coudé tip passes over cartilaginous rings and stops at the carina (~25–30 cm). Advancing into the esophagus feels completely smooth without clicks.",
-      "citation": "Airway Equipment · Slide 9",
+      "explanation": "When a bougie is advanced into the trachea, the angled tip may produce palpable clicks as it passes over tracheal rings and may eventually meet distal hold-up. Smooth advancement without these findings is more consistent with esophageal passage.",
+      "citation": "Airway Equipment · Slide 10",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -10460,7 +10460,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 9"
+      "sourceLocator": "Slide 10"
     },
     {
       "id": "318",
@@ -10973,7 +10973,7 @@
       "answer": [
         1
       ],
-      "explanation": "Under the Pin Index Safety System, Oxygen uses pin positions 2 and 5.",
+      "explanation": "Under the Pin Index Safety System, an oxygen E-cylinder uses pin positions 2 and 5. The yoke uses matching pins to help prevent attachment of an incorrect gas cylinder.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 18",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -11140,7 +11140,7 @@
       "answer": [
         2
       ],
-      "explanation": "Nitrous oxide uses pin positions 3 and 5 on the PISS indexing system.",
+      "explanation": "Under the Pin Index Safety System, nitrous oxide uses pin positions 3 and 5. This indexing pattern is gas-specific and helps prevent misconnections.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 18",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -11761,16 +11761,16 @@
       "type": "single",
       "stem": "What is the primary risk of using more than one washer (Bodok seal) when mounting an E-cylinder onto a hanger yoke?",
       "options": [
-        "Bypasses the pin index safety system pins, permitting accidental connection of the wrong gas cylinder",
-        "Accelerates gas desiccation within the first-stage regulator",
-        "Causes instant bursting of the frangible safety disc",
-        "Blocks forward gas flow through the cylinder nipple"
+        "It can allow the valve post to bypass the gas-specific index pins",
+        "It lowers the vapor pressure of gas entering the regulator",
+        "It causes the cylinder relief device to open at normal pressure",
+        "It completely blocks gas flow through the yoke nipple"
       ],
       "answer": [
         0
       ],
-      "explanation": "Stacking two or more washers increases the space between the cylinder valve and the yoke face, allowing the post to sit clear of the index pins and defeating the PISS safety mechanism.",
-      "citation": "Medical Gas Systems in Anesthesia · Slides 10, 20",
+      "explanation": "Only one Bodok washer should be used. Extra washers can space the cylinder valve away from the yoke enough to bypass the Pin Index Safety System, creating a wrong-cylinder connection hazard.",
+      "citation": "Medical Gas Systems in Anesthesia · Slides 10, 18, 21",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -11785,7 +11785,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slides 10, 20"
+      "sourceLocator": "Slides 10, 18, 21"
     },
     {
       "id": "358",
@@ -12634,7 +12634,7 @@
       "answer": [
         0
       ],
-      "explanation": "The fail-safe responds to oxygen supply pressure, not oxygen concentration or gas identity. Crossed pipelines or nitrogen contamination can therefore bypass it when pressure is normal.",
+      "explanation": "The fail-safe valve responds to oxygen supply pressure, not gas identity or oxygen concentration. A crossed pipeline or oxygen pipeline contaminated with another gas can therefore maintain normal pressure and escape detection; the inspired oxygen analyzer is needed to identify that hazard.",
       "citation": "SRNA Equipment Study Guide · Page 2",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -13025,7 +13025,7 @@
       "answer": [
         0
       ],
-      "explanation": "Placing oxygen last reduces the chance that an upstream flowmeter leak removes oxygen from the final mixture. A leak in the oxygen flowmeter itself can still produce a hypoxic mixture.",
+      "explanation": "Oxygen is placed downstream, or last, in a traditional flowmeter bank so that a leak in an upstream tube preferentially loses another gas before oxygen enters the final mixture. A leak in the oxygen flowmeter itself can still produce a hypoxic mixture.",
       "citation": "SRNA Equipment Study Guide · Page 2",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14277,7 +14277,7 @@
       "answer": [
         1
       ],
-      "explanation": "Under the Pin Index Safety System, Oxygen uses pin positions 2 and 5.",
+      "explanation": "Under the Pin Index Safety System, an oxygen E-cylinder uses pin positions 2 and 5. The matching yoke pins are intended to prevent misconnections.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 18",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14444,7 +14444,7 @@
       "answer": [
         2
       ],
-      "explanation": "Nitrous oxide uses pin positions 3 and 5 on the PISS indexing system.",
+      "explanation": "Under the Pin Index Safety System, nitrous oxide uses pin positions 3 and 5. The gas-specific pin configuration helps prevent attachment to the wrong yoke.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 18",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -15065,15 +15065,15 @@
       "type": "single",
       "stem": "What is the primary risk of using more than one washer (Bodok seal) when mounting an E-cylinder onto a hanger yoke?",
       "options": [
-        "Bypasses the pin index safety system pins, permitting accidental connection of the wrong gas cylinder",
-        "Accelerates gas desiccation within the first-stage regulator",
-        "Causes instant bursting of the frangible safety disc",
-        "Blocks forward gas flow through the cylinder nipple"
+        "It can allow the valve post to bypass the gas-specific index pins",
+        "It increases cylinder gas temperature enough to open the relief device",
+        "It prevents the cylinder pressure gauge from sensing pressure",
+        "It blocks the first-stage regulator regardless of cylinder pressure"
       ],
       "answer": [
         0
       ],
-      "explanation": "Stacking two or more washers increases the space between the cylinder valve and the yoke face, allowing the post to sit clear of the index pins and defeating the PISS safety mechanism.",
+      "explanation": "Stacking Bodok washers can space the cylinder valve away from the yoke far enough to defeat the Pin Index Safety System. One washer should be used to maintain the seal without allowing the valve post to clear the indexing pins.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 10, 20",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -15931,14 +15931,14 @@
       "stem": "During laser airway surgery, what remains vulnerable even when a laser-resistant endotracheal tube is used?",
       "options": [
         "The cuff",
-        "The 15-mm connector only",
-        "The pilot balloon only",
-        "The Murphy eye only"
+        "The reinforced tube wall",
+        "The 15-mm connector",
+        "The Murphy eye"
       ],
       "answer": [
         0
       ],
-      "explanation": "The guide notes that the cuff is not laser resistant even when the tube is. It recommends filling the cuff with saline or water and dye.",
+      "explanation": "Laser-resistant endotracheal tubes reduce ignition risk, but their cuffs remain vulnerable to laser perforation. The lecture recommends filling the cuff with saline or water, often with dye, so cuff disruption can be recognized and combustion risk reduced.",
       "citation": "SRNA Equipment Study Guide · Page 7",
       "topic": "Airway",
       "imageSvg": null,
@@ -16329,7 +16329,7 @@
       "answer": [
         0
       ],
-      "explanation": "The common gas outlet uses a 15-mm internal female and 22-mm external male connection. The 19- and 30-mm conical fittings are reserved for scavenging.",
+      "explanation": "The anesthesia-machine common gas outlet has a 15-mm internal female connection and a 22-mm external male connection. The 19-mm and 30-mm conical fittings are reserved for scavenging connections.",
       "citation": "SRNA Equipment Study Guide · Page 3",
       "topic": "Medical Gases",
       "imageSvg": null,
