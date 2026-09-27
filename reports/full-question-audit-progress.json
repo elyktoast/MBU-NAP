@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 266,
+    "audited": 366,
     "bank2": [
       {
         "id": "S2-021",
@@ -1216,120 +1216,562 @@
       {
         "id": "S2-W13",
         "disposition": "PASS"
+      },
+      {
+        "id": "S2-W15",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N29",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-C27",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G64",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G19",
+        "disposition": "IMPROVE",
+        "changes": [
+          "clarified the splitting-ratio calculation to match the corrected parallel item."
+        ]
+      },
+      {
+        "id": "S2-N56",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G42",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-W20",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N42",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-M04",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G61",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G31",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N14",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N45",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected the second slide/page citation from slide 85/PDF 86 to slide 84/PDF 85."
+        ]
+      },
+      {
+        "id": "S2-C22",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-W18",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N37",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed ambiguity created by the lecture's own caveat about radial pressure sometimes underestimating central pressure."
+        ]
+      },
+      {
+        "id": "S2-C25",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N30",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-K06",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G51",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N01",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N26",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-W12",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G37",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced unsupported H-cylinder capacity numbers with the lecture-supported H- vs E-cylinder role distinction."
+        ]
+      },
+      {
+        "id": "S2-N22",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-W17",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-C21",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N24",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N35",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-C32",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N36",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N33",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G68",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N32",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N06",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-W19",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G33",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N04",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-C18",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G50",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N44",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-H26",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-H11",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P08",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-X02",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P67",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-X12",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected the canonical source locator to Monitoring slide 3 and tightened the cross-source explanation."
+        ]
+      },
+      {
+        "id": "S3-D17",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P44",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-N57",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-H57",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P38",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P11",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed an unsupported mechanism claim about an adult circuit and kept the documented effect."
+        ]
+      },
+      {
+        "id": "S3-D01",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-X13",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-X10",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-G67",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-H56",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-N36",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-H51",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P01",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P34",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed unsupported procedural detail about opening the stopcock to atmosphere and focused the item on the lecture's stated leveling reference."
+        ]
+      },
+      {
+        "id": "S3-D06",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P39",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P52",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-D07",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-D04",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-H06",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P77",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P03",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P83",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-X01",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P73",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P64",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed an unsupported claim that an LMA leak necessarily produces a distorted capnogram."
+        ]
+      },
+      {
+        "id": "S3-H25",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-D26",
+        "disposition": "IMPROVE",
+        "changes": [
+          "trimmed the explanation to claims directly supported by the cited scavenging slide."
+        ]
+      },
+      {
+        "id": "S3-H13",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-H22",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed unnecessary mechanistic detail beyond what the lecture explicitly states."
+        ]
+      },
+      {
+        "id": "S3-P25",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-N42",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P48",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-H01",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed an unsupported claim that 400 psig equals about 215 L and kept the lecture-supported phase-change concept."
+        ]
+      },
+      {
+        "id": "S3-P07",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced an unsupported CPR ETCO2 threshold claim with a capnogram/perfusion question directly supported by the cited slide."
+        ]
+      },
+      {
+        "id": "S3-H55",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-N17",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-H24",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-X22",
+        "disposition": "CORRECT",
+        "changes": [
+          "fixed mismatched canonical source metadata and tightened the multi-source leak explanation."
+        ]
+      },
+      {
+        "id": "S3-H29",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced an unsupported liquid-consumption formula question with a source-grounded MAC comparison."
+        ]
+      },
+      {
+        "id": "S3-D15",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P66",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-X09",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-H21",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-G34",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P29",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-D03",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P58",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-H04",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-P37",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-D21",
+        "disposition": "PASS"
       }
     ]
   },
-  "remaining": 1734,
+  "remaining": 1634,
   "lastBatch": {
     "bank": "bank3.json",
     "audited": 100,
     "ids": [
-      "S1-M27",
-      "S1-W10",
-      "S1-M16",
-      "S1-G07",
-      "S1-M39",
-      "S1-W11",
-      "S1-K08",
-      "S1-M38",
-      "S1-K09",
-      "S1-G21",
-      "S1-M21",
-      "S1-G12",
-      "S1-G17",
-      "S1-G24",
-      "S1-W08",
-      "S1-M12",
-      "S1-G01",
-      "S1-M30",
-      "S1-K05",
-      "S1-M42",
-      "S1-G11",
-      "S1-M32",
-      "S1-M33",
-      "S1-W04",
-      "S1-M31",
-      "S1-K07",
-      "S1-M22",
-      "S1-M13",
-      "S1-G26",
-      "S1-K17",
-      "S1-M02",
-      "S1-M06",
-      "S1-W05",
-      "S1-G23",
-      "S1-M18",
-      "S1-K02",
-      "S1-G16",
-      "S1-K16",
-      "S1-M24",
-      "S1-G14",
-      "S1-W09",
-      "S1-G15",
-      "S2-M25",
-      "S2-G35",
-      "S2-N19",
-      "S2-G45",
-      "S2-C35",
-      "S2-N03",
-      "S2-N58",
-      "S2-G43",
-      "S2-K01",
-      "S2-N13",
-      "S2-N40",
-      "S2-G02",
-      "S2-G57",
-      "S2-N18",
-      "S2-G67",
-      "S2-C20",
-      "S2-G55",
-      "S2-N20",
-      "S2-N11",
-      "S2-C26",
-      "S2-N41",
-      "S2-G38",
-      "S2-G41",
-      "S2-M15",
-      "S2-G52",
-      "S2-C29",
-      "S2-G62",
-      "S2-N39",
-      "S2-G54",
-      "S2-G48",
-      "S2-W14",
-      "S2-C31",
-      "S2-N34",
-      "S2-C30",
-      "S2-G69",
-      "S2-W16",
-      "S2-N02",
-      "S2-N57",
-      "S2-C28",
-      "S2-G34",
-      "S2-G07",
-      "S2-N12",
-      "S2-N15",
-      "S2-G56",
-      "S2-N50",
-      "S2-C19",
-      "S2-G32",
-      "S2-C24",
-      "S2-N17",
-      "S2-N07",
-      "S2-N08",
-      "S2-G59",
-      "S2-N54",
-      "S2-G36",
-      "S2-N27",
-      "S2-G40",
-      "S2-N10",
-      "S2-W13"
+      "S2-W15",
+      "S2-N29",
+      "S2-C27",
+      "S2-G64",
+      "S2-G19",
+      "S2-N56",
+      "S2-G42",
+      "S2-W20",
+      "S2-N42",
+      "S2-M04",
+      "S2-G61",
+      "S2-G31",
+      "S2-N14",
+      "S2-N45",
+      "S2-C22",
+      "S2-W18",
+      "S2-N37",
+      "S2-C25",
+      "S2-N30",
+      "S2-K06",
+      "S2-G51",
+      "S2-N01",
+      "S2-N26",
+      "S2-W12",
+      "S2-G37",
+      "S2-N22",
+      "S2-W17",
+      "S2-C21",
+      "S2-N24",
+      "S2-N35",
+      "S2-C32",
+      "S2-N36",
+      "S2-N33",
+      "S2-G68",
+      "S2-N32",
+      "S2-N06",
+      "S2-W19",
+      "S2-G33",
+      "S2-N04",
+      "S2-C18",
+      "S2-G50",
+      "S2-N44",
+      "S3-H26",
+      "S3-H11",
+      "S3-P08",
+      "S3-X02",
+      "S3-P67",
+      "S3-X12",
+      "S3-D17",
+      "S3-P44",
+      "S3-N57",
+      "S3-H57",
+      "S3-P38",
+      "S3-P11",
+      "S3-D01",
+      "S3-X13",
+      "S3-X10",
+      "S3-G67",
+      "S3-H56",
+      "S3-N36",
+      "S3-H51",
+      "S3-P01",
+      "S3-P34",
+      "S3-D06",
+      "S3-P39",
+      "S3-P52",
+      "S3-D07",
+      "S3-D04",
+      "S3-H06",
+      "S3-P77",
+      "S3-P03",
+      "S3-P83",
+      "S3-X01",
+      "S3-P73",
+      "S3-P64",
+      "S3-H25",
+      "S3-D26",
+      "S3-H13",
+      "S3-H22",
+      "S3-P25",
+      "S3-N42",
+      "S3-P48",
+      "S3-H01",
+      "S3-P07",
+      "S3-H55",
+      "S3-N17",
+      "S3-H24",
+      "S3-X22",
+      "S3-H29",
+      "S3-D15",
+      "S3-P66",
+      "S3-X09",
+      "S3-H21",
+      "S3-G34",
+      "S3-P29",
+      "S3-D03",
+      "S3-P58",
+      "S3-H04",
+      "S3-P37",
+      "S3-D21"
     ],
     "notes": [
-      "Audited 100 Bank 3 questions against the matching Airway Equipment, Medical Gas Systems in Anesthesia, CO₂ & Scavenging, and Monitoring lecture material.",
-      "Visually verified all six image-dependent questions in this batch: esophageal capnogram, flowmeter leak diagrams, obstructive flow-volume loop, cardiac oscillations, normal capnogram phases, and anesthesia-machine roadmap.",
-      "Verified calculation items including oxygen-cylinder duration, mean body temperature, MAP/pulse pressure, soda-lime capacity, spill-to-vapor volume, and gauge-to-absolute pressure conversions.",
-      "Corrected S1-G17 source framing, corrected S1-K17 source metadata, clarified the S2-N34 Allen-test conflict, and made targeted explanation/distractor-quality improvements. No answer keys changed."
+      "Audited the next 100 Bank 3 questions against the matching Airway Equipment, Medical Gas Systems in Anesthesia, CO₂ & Scavenging, and Monitoring material.",
+      "Visually verified all five image-dependent items in this batch, including the arterial waveform, anesthesia-machine roadmap, hypopharyngeal/cuff-leak capnogram, and pressure-volume loop for inspiratory resistance.",
+      "Corrected unsupported or mismatched source claims in S2-G37, S2-N45, S3-X12, S3-X22, S3-H01, S3-H29, and S3-P07, and made targeted explanation/ambiguity improvements in additional items.",
+      "No retained answer key was found to be wrong; rewritten questions received new keys only where the stem/options were intentionally replaced to restore source fidelity."
     ]
   },
   "lastCorrection": {
