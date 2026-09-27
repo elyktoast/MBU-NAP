@@ -1,3 +1,4 @@
+
 create or replace function private.snar_record_legal_acceptance()
 returns trigger
 language plpgsql

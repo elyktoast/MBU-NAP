@@ -1,9 +1,10 @@
+
 create or replace function public.mbu_sync_record_version()
 returns trigger
 language plpgsql
 security definer
 set search_path = ''
-as $$
+as $function$
 begin
   insert into public.mbu_sync_versions (
     user_id, store_key, payload, device_id,
@@ -28,20 +29,17 @@ begin
 
   return new;
 end;
-$$;
+$function$;
 
+with ranked as (
+  select id,
+         row_number() over (
+           partition by user_id, store_key
+           order by server_revision desc, id desc
+         ) as rn
+  from public.mbu_sync_versions
+)
 delete from public.mbu_sync_versions v
-where v.id not in (
-  select keep.id
-  from (
-    select id,
-           row_number() over (
-             partition by user_id, store_key
-             order by server_revision desc
-           ) as rn
-    from public.mbu_sync_versions
-  ) keep
-  where keep.rn <= 10
-);
-
-revoke execute on function public.mbu_sync_record_version() from public, anon, authenticated;
+using ranked r
+where v.id = r.id
+  and r.rn > 10;

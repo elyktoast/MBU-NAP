@@ -1,3 +1,4 @@
+
 create or replace function public.snar_delete_my_account()
 returns boolean
 language plpgsql

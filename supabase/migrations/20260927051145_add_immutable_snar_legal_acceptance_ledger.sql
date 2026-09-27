@@ -1,3 +1,4 @@
+
 create table if not exists private.snar_legal_acceptances (
   user_id uuid primary key references auth.users(id) on delete cascade,
   terms_version text not null,
@@ -26,6 +27,7 @@ begin
   exception when others then
     at := null;
   end;
+
   if tv is not null and pv is not null and aa is true and at is not null then
     insert into private.snar_legal_acceptances(user_id,terms_version,privacy_version,adult_ack,accepted_at)
     values(new.id,tv,pv,true,at)

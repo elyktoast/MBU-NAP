@@ -1,3 +1,4 @@
+
 create table if not exists private.snar_legal_versions (
   version text primary key,
   terms_sha256 text not null check (char_length(terms_sha256)=64),
@@ -10,8 +11,8 @@ revoke all on table private.snar_legal_versions from public, anon, authenticated
 
 insert into private.snar_legal_versions(version,terms_sha256,privacy_sha256,effective_at,archive_path)
 values
- ('2026-09-27-v2','ac9a7aa0f106c3f107a0586e910c2655ba44b6ed51a5a9671c660f8210cd4af0','056ebca0f516e7bff38eaf81f89b065ac7b0cc9731a1d305fb38e12054679f67','2026-09-27T00:00:00Z','legal/versions/2026-09-27-v2/'),
- ('2026-09-27-v3','2d37d30d640141a8d12c818cbfe1591d70013110bdfcca72ffb915ceb99422cf','e2221b02cc9911c06f8efd7e8c4c7916b77863516da766dbdd60445597cedffa','2026-09-27T00:00:00Z','legal/versions/2026-09-27-v3/')
+ ('2026-09-27-v2','5064eab141c046e71757ae95ada6998111499bd69dd57f18ee923b0900654d5b','c9bd8b0d11868a0e8ec73d0e37acc27e3047942f0b22f0fdfc66ca6d057cab92','2026-09-27T00:00:00Z','legal/versions/2026-09-27-v2/'),
+ ('2026-09-27-v3','69c28d6881e3493e6e83258365aa778ae19bef7454a4c1843e4cf8c1301ded1e','83c451ff71b9ce8e22f80e471030c6e8ca18de9f81098b6a9cbb087e396098d6','2026-09-27T00:00:00Z','legal/versions/2026-09-27-v3/')
 on conflict (version) do update set
  terms_sha256=excluded.terms_sha256,
  privacy_sha256=excluded.privacy_sha256,
@@ -41,7 +42,10 @@ alter table private.snar_legal_acceptances
   alter column retention_until set not null;
 
 create or replace function private.snar_record_legal_acceptance()
-returns trigger language plpgsql security definer set search_path=''
+returns trigger
+language plpgsql
+security definer
+set search_path=''
 as $$
 declare
   tv text:=nullif(new.raw_user_meta_data->>'snar_terms_version','');
@@ -65,7 +69,10 @@ $$;
 revoke all on function private.snar_record_legal_acceptance() from public, anon, authenticated;
 
 create or replace function public.snar_accept_current_legal(p_terms_version text,p_privacy_version text,p_adult_ack boolean)
-returns boolean language plpgsql security definer set search_path=''
+returns boolean
+language plpgsql
+security definer
+set search_path=''
 as $$
 declare
   uid uuid:=auth.uid();
@@ -75,7 +82,9 @@ declare
 begin
   if uid is null then raise exception 'Authentication required'; end if;
   if p_adult_ack is not true then raise exception 'Adult acknowledgement required'; end if;
-  if p_terms_version<>'2026-09-27-v3' or p_privacy_version<>'2026-09-27-v3' then raise exception 'Current legal version required'; end if;
+  if p_terms_version<>'2026-09-27-v3' or p_privacy_version<>'2026-09-27-v3' then
+    raise exception 'Current legal version required';
+  end if;
   select * into v from private.snar_legal_versions where version='2026-09-27-v3';
   select email into mail from auth.users where id=uid;
   eh:=case when mail is null then null else encode(extensions.digest(lower(mail),'sha256'),'hex') end;
@@ -113,7 +122,10 @@ revoke all on function public.snar_admin_legal_acceptances() from public, anon;
 grant execute on function public.snar_admin_legal_acceptances() to authenticated;
 
 create or replace function public.snar_admin_retention_cleanup()
-returns jsonb language plpgsql security definer set search_path=''
+returns jsonb
+language plpgsql
+security definer
+set search_path=''
 as $$
 declare sync_deleted integer:=0;privacy_deleted integer:=0;legal_deleted integer:=0;
 begin

@@ -1,3 +1,4 @@
+
 create schema if not exists private;
 
 create table if not exists private.mbu_item_contributions (

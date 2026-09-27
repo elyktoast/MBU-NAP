@@ -28,6 +28,7 @@ begin
   if normalized_category not in ('idea','bug','content','other') then normalized_category := 'other'; end if;
   if char_length(cleaned) < 3 then raise exception 'Suggestion is too short.'; end if;
   if char_length(cleaned) > 1500 then raise exception 'Suggestion must be 1500 characters or fewer.'; end if;
+
   insert into private.snar_suggestions(user_id,category,message)
   values(uid,normalized_category,cleaned)
   returning id into out_id;
@@ -39,7 +40,10 @@ grant execute on function public.snar_submit_suggestion(text,text) to authentica
 
 create or replace function public.snar_admin_suggestions()
 returns table(id bigint,category text,message text,status text,created_at timestamptz,updated_at timestamptz)
-language plpgsql stable security definer set search_path=''
+language plpgsql
+stable
+security definer
+set search_path=''
 as $$
 begin
   if not private.snar_is_admin(auth.uid()) then raise exception 'Admin required'; end if;
@@ -54,12 +58,17 @@ revoke all on function public.snar_admin_suggestions() from public, anon;
 grant execute on function public.snar_admin_suggestions() to authenticated;
 
 create or replace function public.snar_admin_update_suggestion(p_id bigint,p_status text)
-returns boolean language plpgsql security definer set search_path=''
+returns boolean
+language plpgsql
+security definer
+set search_path=''
 as $$
 begin
   if not private.snar_is_admin(auth.uid()) then raise exception 'Admin required'; end if;
   if p_status not in ('new','reviewing','planned','done','declined') then raise exception 'Invalid status'; end if;
-  update private.snar_suggestions set status=p_status,updated_at=now() where id=p_id;
+  update private.snar_suggestions
+  set status=p_status,updated_at=now()
+  where id=p_id;
   return found;
 end;
 $$;

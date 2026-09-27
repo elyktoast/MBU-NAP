@@ -17,6 +17,7 @@ begin
   if normalized_category not in ('idea','bug','content','other') then normalized_category := 'other'; end if;
   if char_length(cleaned) < 3 then raise exception 'Suggestion is too short.'; end if;
   if char_length(cleaned) > 1500 then raise exception 'Suggestion must be 1500 characters or fewer.'; end if;
+
   insert into private.snar_suggestions(category,message)
   values(normalized_category,cleaned)
   returning id into out_id;
