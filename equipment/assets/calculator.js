@@ -4,10 +4,12 @@ const w=document.createElement('div');w.innerHTML='<button id="mbu-calc-open" ty
 const grid=document.querySelector('.mbu-calc-grid'), keys=[['AC','danger'],['⌫',''],['(', 'op'],[')','op'],['÷','op'],['sin(','op'],['cos(','op'],['tan(','op'],['^','op'],['×','op'],['asin(','op'],['acos(','op'],['atan(','op'],['sqrt(','op'],['−','op'],['ln(','op'],['log(','op'],['π','op'],['e','op'],['+','op'],['7',''],['8',''],['9',''],['^2','op'],['%','op'],['4',''],['5',''],['6',''],['1/(','op'],['±','op'],['1',''],['2',''],['3',''],['0',''],['.',''],['EE','op'],['e^(','op'],['10^(','op'],['Ans','op'],['=','eq']];
 keys.forEach(([t,c])=>{const b=document.createElement('button');b.type='button';b.textContent=t;b.className=c;b.addEventListener('click',()=>press(t));grid.appendChild(b)});
 let ans=0;const d=document.getElementById('mbu-calc-display'),m=document.getElementById('mbu-calc-modal'),open=document.getElementById('mbu-calc-open');
+function resetCalculator(){ans=0;d.value='';drag=null}
+function closeCalculator(){m.classList.remove('open');resetCalculator()}
 open.hidden=true;
 window.MBUCalculator={
   besideFlag(){const flag=document.getElementById('mbuFlagBtn')||document.getElementById('flagBtn');if(!flag)return;flag.after(open);open.classList.add('mbu-calc-inline');open.hidden=false},
-  hide(){m.classList.remove('open');open.hidden=true;open.classList.remove('mbu-calc-inline');document.body.appendChild(open)}
+  hide(){closeCalculator();open.hidden=true;open.classList.remove('mbu-calc-inline');document.body.appendChild(open)}
 };
 
 const panel=document.querySelector('.mbu-calc'),head=document.querySelector('.mbu-calc-head');
@@ -43,10 +45,10 @@ head.addEventListener('keydown',e=>{
 });
 document.querySelector('.mbu-calc-resetpos').onclick=e=>{e.stopPropagation();centerPanel()};
 window.addEventListener('resize',()=>{if(!m.classList.contains('open')||panel.style.transform)return;const r=panel.getBoundingClientRect();setPanelPosition(r.left,r.top)});
-document.getElementById('mbu-calc-open').onclick=()=>{m.classList.add('open');requestAnimationFrame(centerPanel);d.focus()};document.querySelector('.mbu-calc-close').onclick=()=>m.classList.remove('open');m.onclick=e=>{if(e.target===m)m.classList.remove('open')};
+document.getElementById('mbu-calc-open').onclick=()=>{resetCalculator();m.classList.add('open');requestAnimationFrame(centerPanel);d.focus()};document.querySelector('.mbu-calc-close').onclick=closeCalculator;m.onclick=e=>{if(e.target===m)closeCalculator()};
 function add(v){if(d.value==='Error')d.value='';d.value+=v;d.focus()}
 function press(t){if(t==='AC')d.value='';else if(t==='⌫')d.value=d.value.slice(0,-1);else if(t==='=')evaluate();else if(t==='Ans')add(String(ans));else if(t==='±')d.value=d.value?'-('+d.value+')':'-';else add(({ '÷':'/','×':'*','−':'-','π':'pi','EE':'E'}[t]||t))}
 function ev(s){if(!s.trim())return 0;if(!/^[0-9+\-*/^().,%\sA-Za-z]+$/.test(s))throw Error();let x=s.replace(/\bpi\b/gi,'PI').replace(/\be\b/g,'EULER').replace(/\^/g,'**').replace(/(\d+(?:\.\d+)?|\([^()]*\))%/g,'($1/100)');const F={sin:v=>Math.sin(v*Math.PI/180),cos:v=>Math.cos(v*Math.PI/180),tan:v=>Math.tan(v*Math.PI/180),asin:v=>Math.asin(v)*180/Math.PI,acos:v=>Math.acos(v)*180/Math.PI,atan:v=>Math.atan(v)*180/Math.PI,sqrt:Math.sqrt,ln:Math.log,log:Math.log10};for(const n of Object.keys(F))x=x.replace(new RegExp('\\b'+n+'\\b','g'),'F.'+n);x=x.replace(/\bPI\b/g,'Math.PI').replace(/\bEULER\b/g,'Math.E');const r=Function('F','Math','"use strict";return ('+x+');')(F,Math);if(typeof r!=='number'||!Number.isFinite(r))throw Error();return r}
 function evaluate(){try{const r=ev(d.value);ans=r;d.value=Number.isInteger(r)?String(r):String(Number(r.toPrecision(12)))}catch(e){d.value='Error'}}
-d.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();evaluate()}if(e.key==='Escape')m.classList.remove('open')});
+d.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();evaluate()}if(e.key==='Escape')closeCalculator()});
 })();
