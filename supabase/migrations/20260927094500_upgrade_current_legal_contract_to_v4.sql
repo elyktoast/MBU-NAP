@@ -1,8 +1,8 @@
 insert into private.snar_legal_versions(version,terms_sha256,privacy_sha256,effective_at,archive_path)
 values(
   '2026-09-27-v4',
-  '200038ba8b9938d792b867f0d7931075955f78c23aaa6cc7a324611c2779236e',
-  'c3381791ece8d47dc4e74af9519ba74fd0f3930abdf9f36cd1f871660fd3d52f',
+  '758e771cdefff1e75868a15da1023d6ee2b63d76b691a4c3fda3b3d48191b0de',
+  'f588cfcc3208886f6c6641837e3109addb37448441709e6553984f4c7a67cd5a',
   '2026-09-27T00:00:00Z',
   'legal/versions/2026-09-27-v4/'
 )
