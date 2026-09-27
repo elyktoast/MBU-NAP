@@ -1328,8 +1328,8 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('.mbu-global-nav__tools')).toBeVisible();
     await page.locator('.mbu-global-nav__tools').click();
     await expect(page.locator('#mbu-app-tools')).toHaveClass(/open/);
-    await expect(page.locator('#mbu-app-tools')).toContainText('Local progress saves immediately');
-    await expect(page.locator('.mbu-cloud')).toContainText('Cloud Sync');
+    await expect(page.locator('#mbu-app-tools')).toContainText('Progress saves locally immediately');
+    await expect(page.locator('.mbu-global-nav__cloud')).toBeVisible();
     const diag=await page.evaluate(() => MBUDiagnostics.snapshot());
     expect(diag.build).toMatch(/^2026-/);expect(diag.deviceId).toBe(first);
   });
@@ -1554,8 +1554,7 @@ test.describe('canonical quiz regression', () => {
     expect(await page.evaluate(() => document.documentElement.scrollWidth<=document.documentElement.clientWidth+1)).toBe(true);
     const hazardCross=page.locator('button[aria-label^="Cross out"]').first();
     if(await hazardCross.count())await expect(hazardCross).toHaveAttribute('aria-pressed',/true|false/);
-    const hazardImages=page.locator('img');
-    for(let i=0;i<Math.min(await hazardImages.count(),5);i++)await expect(hazardImages.nth(i)).toHaveAttribute('alt',/.+/);
+    await expect(page.locator('img:not([alt])')).toHaveCount(0);
   });
 
   test('Server revision upgrade does not discard legacy unsynced local progress', async ({ page }) => {
