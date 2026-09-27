@@ -772,7 +772,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const boot=read('equipment/assets/build-bootstrap.js'),intel=read('equipment/assets/study-intelligence.js'),search=read('equipment/assets/question-search.js'),studio=read('equipment/assets/studio-page.js'),dash=read('equipment/assets/exam-dashboard.js'),core=read('equipment/assets/app-core.js');
  for(const token of ["loadScript('study-intelligence.js')","loadScript('question-search.js')"])if(!boot.includes(token))fail('Shared study runtime missing '+token);
- for(const token of ['mbu_study_intelligence_v1','recordAnswer','smartReview','questionStats','topicStats','due','analytics','recentActivity','addIssue'])if(!intel.includes(token))fail('Study intelligence contract missing '+token);
+ for(const token of ['mbu_study_intelligence_v1','recordAnswer','smartReview','questionStats','topicStats','due','analytics','recentActivity','addIssue','firstAttempt=attempts===0','if(firstAttempt)window.MBUSupabase'])if(!intel.includes(token))fail('Study intelligence contract missing '+token);
  for(const token of ["m==='smart'","m==='custom'","m==='due'",'adaptiveToggle','MBUAdaptiveQuiz','analyticsSummary','seedLegacy'])if(!studio.includes(token))fail('Studio intelligence integration missing '+token);
  for(const token of ['continuePanel','recentPanel','MBUStudyIntelligence'])if(!dash.includes(token))fail('Exam dashboard intelligence integration missing '+token);
  if(!read('equipment/exam-1/studio.html').includes('id="adaptiveToggle"'))fail('Studio adaptive opt-in toggle is missing');
