@@ -231,11 +231,23 @@ function focusAdaptiveStart(){
   const card=document.querySelector('.studio-adaptive-card'),button=document.querySelector('.studio-start-btn');
   card?.scrollIntoView?.({block:'center',behavior:'smooth'});button?.focus?.()
 }
-function openAdaptiveEntry(){
+async function resolveAdaptiveAccount(){
+  try{if(window.MBUAuthReady&&typeof window.MBUAuthReady.then==='function')await window.MBUAuthReady}catch{}
+  const api=window.MBUSupabase;if(!api)return{signedIn:false,legalAccepted:false,accessStatus:'unavailable'};
+  let info=api.status?.()||{};
+  if(!info.signedIn)return info;
+  if(info.legalAccepted!==true){try{await api.refreshLegalAcceptance?.()}catch{}info=api.status?.()||info}
+  if(info.signedIn&&info.legalAccepted===true&&info.accessStatus!=='active'){try{await api.refreshAccountAccess?.()}catch{}info=api.status?.()||info}
+  return info
+}
+async function openAdaptiveEntry(){
   const toggle=prepareAdaptiveEntry();if(!toggle)return;
-  adaptiveEntryPending=!adaptiveToggleChanged(toggle);
-  focusAdaptiveStart();
-  if(!adaptiveEntryPending)clearAdaptiveEntryParam()
+  adaptiveEntryPending=true;toggle.checked=false;syncAdaptiveStartLabel();
+  const info=await resolveAdaptiveAccount();
+  if(info.signedIn&&info.legalAccepted===true&&info.accessStatus==='active'){
+    toggle.checked=true;syncAdaptiveStartLabel();adaptiveEntryPending=false;clearAdaptiveEntryParam();window.MBUAppCore?.closeAccount?.();focusAdaptiveStart();return
+  }
+  adaptiveEntryPending=true;window.MBUAppCore?.openAccount?.(toggle);focusAdaptiveStart()
 }
 window.addEventListener('mbu:supabase-status',()=>{
   if(!adaptiveEntryPending||!adaptiveAccountReady())return;
