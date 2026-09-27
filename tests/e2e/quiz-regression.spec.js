@@ -1786,6 +1786,30 @@ test.describe('canonical quiz regression', () => {
     expect(out.frozenDifficulty).toBe(-2);
   });
 
+  test('Guest users can study normally but Adaptive Mode requires an account', async ({ page }) => {
+    await page.evaluate(()=>{localStorage.removeItem('mbu_supabase_session_v1');sessionStorage.clear()});
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    expect(await page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(false);
+    await expect(page.getByRole('button',{name:'Start Smart Review'})).toBeVisible();
+    await expect(page.locator('#adaptiveToggle')).toBeVisible();
+    await page.locator('#adaptiveToggle').check();
+    await expect(page.locator('#adaptiveToggle')).not.toBeChecked();
+    await expect(page.locator('#mbu-account-panel')).toBeVisible();
+    await expect(page.locator('#mbu-account-panel')).toContainText('Sign in for cross-device sync and to use Adaptive Mode');
+    await page.locator('[data-account-close]').click();
+    const selected=await page.evaluate(()=>{
+      const first=document.querySelector('#sourceChecks input[type=checkbox]');
+      if(first)first.checked=true;
+      document.getElementById('count').value='10';
+      document.getElementById('adaptiveToggle').checked=false;
+      startMode('custom');
+      return session.length;
+    });
+    expect(selected).toBeGreaterThan(0);
+    await expect(page.locator('#quiz')).toBeVisible();
+  });
+
   test('Adaptive session toggle is opt-in, forward-only, and survives reload with its level', async ({ page }) => {
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     expect(await page.locator('#adaptiveToggle').isChecked()).toBe(false);
