@@ -91,6 +91,36 @@ async function updatePassword(password){
   recoveryMode=false;emit('signed-in',{email:s.user?.email||''});return true
 }
 function currentUser(){return session()?.user||null}
+async function listDevices(){
+  const s=await validSession();if(!s?.user?.id)return[];
+  const rows=await api('/rest/v1/mbu_sync_devices?select=device_id,device_label,app_build,first_seen_at,last_seen_at&user_id=eq.'+encodeURIComponent(s.user.id)+'&order=last_seen_at.desc');
+  return(rows||[]).map(row=>({...row,current:row.device_id===sync.deviceId()}))
+}
+async function removeDevice(deviceId){
+  const s=await validSession();if(!s?.user?.id)throw Error('Sign in to manage devices.');
+  const id=String(deviceId||'');if(!id)throw Error('Device id is required.');if(id===sync.deviceId())throw Error('You cannot remove the device you are currently using.');
+  await api('/rest/v1/mbu_sync_devices?user_id=eq.'+encodeURIComponent(s.user.id)+'&device_id=eq.'+encodeURIComponent(id),{method:'DELETE',headers:{Prefer:'return=minimal'}});return true
+}
+async function listHistory(limit=30){
+  const s=await validSession();if(!s?.user?.id)return[];
+  const n=Math.max(1,Math.min(Number(limit)||30,100));
+  return await api('/rest/v1/mbu_sync_versions?select=id,store_key,device_id,server_revision,saved_at,client_revision,client_updated_at&user_id=eq.'+encodeURIComponent(s.user.id)+'&order=saved_at.desc&limit='+n)
+}
+async function restoreVersion(versionId){
+  const s=await validSession();if(!s?.user?.id)throw Error('Sign in to restore cloud history.');
+  const id=Number(versionId);if(!Number.isInteger(id)||id<1)throw Error('Invalid history version.');
+  const versions=await api('/rest/v1/mbu_sync_versions?select=id,store_key,payload,server_revision,saved_at&user_id=eq.'+encodeURIComponent(s.user.id)+'&id=eq.'+id+'&limit=1'),version=versions?.[0];
+  if(!version)throw Error('That history version is no longer available.');
+  const rows=await api('/rest/v1/mbu_sync_state?select=store_key,server_revision,client_revision&user_id=eq.'+encodeURIComponent(s.user.id)+'&store_key=eq.'+encodeURIComponent(version.store_key)+'&limit=1'),current=rows?.[0];
+  if(!current)throw Error('Current cloud state for this study area was not found.');
+  const result=await api('/rest/v1/rpc/mbu_sync_write_state',{method:'POST',body:{
+    p_store_key:version.store_key,p_payload:version.payload,p_device_id:sync.deviceId(),
+    p_client_revision:(Number(current.client_revision)||0)+1,p_client_updated_at:new Date().toISOString(),
+    p_expected_server_revision:Number(current.server_revision)||0
+  }});
+  if(result?.applied===false)throw Error('Cloud progress changed while restoring. Refresh history and try again.');
+  remoteByKey.delete(version.store_key);await fullSync({reloadOnImport:true});return{storeKey:version.store_key,savedAt:version.saved_at}
+}
 function cloudSnapshot(rows,user){
   const stores={},meta={};for(const row of rows||[]){stores[row.store_key]=JSON.stringify(row.payload);meta[row.store_key]={revision:Number(row.client_revision)||0,updatedAt:Date.parse(row.client_updated_at)||0,deviceId:String(row.device_id||'cloud'),serverRevision:Number(row.server_revision)||0}}
   return{app:sync.APP,schema:sync.schema,createdAt:Date.now(),deviceId:'cloud:'+user.id,stores,meta}
@@ -158,14 +188,12 @@ function startAutoSync(){
 function status(){const s=session();return{signedIn:!!s?.access_token,email:s?.user?.email||'',state:lastState,lastSyncAt,user:s?.user||null,recoveryMode,autoSyncIntervalMs:AUTO_SYNC_INTERVAL,nextAutoSyncAt:s?.access_token?(lastSyncAt||Date.now())+AUTO_SYNC_INTERVAL:0}}
 window.addEventListener('focus',()=>{if(session()&&Date.now()-lastSyncAt>120000)fullSync().catch(()=>{})});
 window.addEventListener('online',()=>{if(session())fullSync().catch(()=>{})});
-window.addEventListener('hashchange',()=>{consumeAuthRedirect().then(redirected=>{if(!redirected)return;startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100)}).catch(e=>{emit('error',{error:e.message});console.error('Supabase auth redirect failed',e)})});
-
 async function handleAuthRedirect(){
   const redirected=await consumeAuthRedirect();if(!redirected)return false;
   startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100);return true
 }
 window.addEventListener('hashchange',()=>handleAuthRedirect().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth redirect failed',e)}));
-window.MBUSupabase={signIn,signUp,signOut,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
+window.MBUSupabase={signIn,signUp,signOut,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,listDevices,removeDevice,listHistory,restoreVersion,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
 (async()=>{
   if(await handleAuthRedirect())return;
   if(session()){
