@@ -4565,7 +4565,7 @@
       "answer": [
         3
       ],
-      "explanation": "Viscosity predominates during low laminar flow.",
+      "explanation": "At low flow, movement through a variable-area flowmeter is predominantly laminar, so viscosity is the gas property that most strongly affects calibration. At higher turbulent flows, density becomes more important.",
       "citation": "Medical Gas Systems in Anesthesia · 39",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -9317,7 +9317,7 @@
       "answer": [
         1
       ],
-      "explanation": "The lecture notes that the cuff is not laser resistant.",
+      "explanation": "The laser-resistant tube body is designed to reduce ignition risk, but the cuff remains vulnerable to laser perforation. For that reason, the cuff is typically filled with saline or water, often with dye to make rupture easier to detect.",
       "citation": "Airway Equipment · 9",
       "topic": "Airway",
       "imageSvg": null,
@@ -9414,7 +9414,7 @@
       "answer": [
         3
       ],
-      "explanation": "The straight Miller blade directly lifts the epiglottis.",
+      "explanation": "A Miller blade is straight and is advanced to directly lift the epiglottis. A Macintosh blade is curved and sits in the vallecula, where tension on the glossoepiglottic ligament lifts the epiglottis indirectly.",
       "citation": "Airway Equipment · 11",
       "topic": "Airway",
       "imageSvg": null,
@@ -11037,7 +11037,7 @@
       "answer": [
         2
       ],
-      "explanation": "The lecture instructs reading a bobbin at its top.",
+      "explanation": "A bobbin or skirted float is read at its upper edge because that point corresponds to the calibrated flow scale. Ball floats are handled differently and are read at their center.",
       "citation": "Medical Gas Systems in Anesthesia · 42",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -11709,7 +11709,7 @@
         2,
         3
       ],
-      "explanation": "Rebreathing conserves patient heat and humidity.",
+      "explanation": "After carbon dioxide is removed, low-flow rebreathing conserves both heat and humidity from exhaled gas. These benefits become more important as fresh gas flow decreases because less conditioned gas is discarded.",
       "citation": "CO₂ & Scavenging · 8",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -12344,7 +12344,7 @@
       "answer": [
         0
       ],
-      "explanation": "Epistaxis is the most common NPA complication.",
+      "explanation": "Epistaxis is the most common complication of nasopharyngeal airway insertion because the nasal mucosa is highly vascular. Resistance should not be forced because mucosal trauma increases bleeding.",
       "citation": "Airway Equipment · 6",
       "topic": "Airway",
       "imageSvg": null,
@@ -14240,7 +14240,7 @@
       "answer": [
         1
       ],
-      "explanation": "A ball float is read at its center.",
+      "explanation": "A spherical or ball-type flowmeter float is read at the center of the ball. Other float designs, such as bobbins, are read at a different reference point, so recognizing the float shape matters.",
       "citation": "Medical Gas Systems in Anesthesia · 42",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14527,7 +14527,7 @@
       "answer": [
         2
       ],
-      "explanation": "CO₂ first combines with water to form carbonic acid.",
+      "explanation": "Carbon dioxide first reacts with water in hydrated absorbent to form carbonic acid. The carbonic acid is then neutralized by hydroxides as the absorption reaction proceeds.",
       "citation": "CO₂ & Scavenging · 3",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -14589,7 +14589,7 @@
       "answer": [
         3
       ],
-      "explanation": "The normal absorption reaction releases heat.",
+      "explanation": "Carbon dioxide absorption is exothermic, so a functioning absorber normally becomes warm. Heat alone does not prove adequate absorption, but it is an expected result of the chemical reaction.",
       "citation": "CO₂ & Scavenging · 3",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -14878,7 +14878,7 @@
         2,
         5
       ],
-      "explanation": "Rebreathing conserves exhaled heat and moisture.",
+      "explanation": "Low-flow rebreathing retains heat and moisture from exhaled gas after carbon dioxide is removed. This reduces respiratory heat and water loss compared with continuously replacing the circuit gas with high fresh gas flow.",
       "citation": "CO₂ & Scavenging · 8",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -15736,7 +15736,7 @@
       "answer": [
         1
       ],
-      "explanation": "The Macintosh blade tip is placed in the vallecula.",
+      "explanation": "The Macintosh blade tip is positioned in the vallecula. Lifting tensions the glossoepiglottic ligament and elevates the epiglottis indirectly, unlike the Miller blade, which directly lifts the epiglottis.",
       "citation": "Airway Equipment · 11",
       "topic": "Airway",
       "imageSvg": null,
