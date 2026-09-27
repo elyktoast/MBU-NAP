@@ -216,7 +216,7 @@ test.describe('canonical quiz regression', () => {
     });
     await clickIndexes(page.locator('#options .opt'),data.chosen);
     await page.locator('#submit-multi').click();
-    for(const i of data.answer) await expect(page.locator('#options .opt').nth(i)).toHaveClass(/correct/);
+    for(const i of data.answer) await expect(page.locator(`#options .opt[data-canonical="${i}"]`)).toHaveClass(/correct/);
     await expect(page.locator('#options .opt.incorrect')).toHaveCount(1);
 
     await page.evaluate(() => {
@@ -749,7 +749,7 @@ test.describe('canonical quiz regression', () => {
     const options = page.locator('#main .opt');
     await expect(options).toHaveCount(data.optionCount);
     const correctIndex = data.answer[0];
-    const correct = options.nth(correctIndex);
+    const correct = page.locator(`#main .opt[data-canonical="${correctIndex}"]`);
     await correct.click({ button: 'right' });
     const wrongIndex = Array.from({ length: data.optionCount }, (_, i) => i).find(i => !data.answer.includes(i));
     if (data.multi) {
@@ -760,10 +760,10 @@ test.describe('canonical quiz regression', () => {
         if (i === undefined) break;
         selected.push(i);
       }
-      for (const i of selected.slice(0, data.answer.length)) await options.nth(i).click();
+      await clickIndexes(options, selected.slice(0, data.answer.length));
       await page.locator('#go').click();
     } else {
-      await options.nth(wrongIndex === undefined ? correctIndex : wrongIndex).click();
+      await clickIndexes(options,[wrongIndex === undefined ? correctIndex : wrongIndex]);
       await page.locator('#go').click();
     }
     await expect(correct).toHaveCSS('background-color', 'rgb(198, 246, 213)');
