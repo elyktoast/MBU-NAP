@@ -8,6 +8,22 @@ const quizFiles=['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const exists=p=>fs.existsSync(path.join(root,p));
 const fail=m=>failures.push(m);
+const protectedFacultyNames=['El'+'more','Sto'+'ne','Aco'+'rd','Mc'+'Pherson'];
+function scanForProtectedFacultyNames(dir=root){
+  for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
+    if(entry.name==='.git'||entry.name==='node_modules'||entry.name==='playwright-report'||entry.name==='test-results')continue;
+    const full=path.join(dir,entry.name);
+    if(entry.isDirectory()){scanForProtectedFacultyNames(full);continue}
+    if(!/\.(html|js|mjs|md|yml|yaml|json|ts|sql|gs|css|txt)$/i.test(entry.name))continue;
+    const src=fs.readFileSync(full,'utf8'),rel=path.relative(root,full).replaceAll('\\\\','/');
+    for(const name of protectedFacultyNames){
+      const escaped=name.replace(/[.*+?^$()|[\]{}\\]/g,'\\const fail=m=>failures.push(m);
+');
+      if(new RegExp('\\b'+escaped+'\\b','i').test(src))fail(rel+': protected faculty-name reference remains');
+    }
+  }
+}
+scanForProtectedFacultyNames();
 
 function balanced(src,marker,open='[',close=']'){
   let p=src.indexOf(marker); if(p<0) return null;
