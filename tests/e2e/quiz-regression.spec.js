@@ -1428,12 +1428,13 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('[data-export]')).toBeVisible();
   });
 
-  test('Supabase adapter signs in and upserts authenticated local progress', async ({ page }) => {
+  test('Supabase adapter signs in and writes progress through server-revision guard', async ({ page }) => {
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co',writes=[];
     await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'test-access',refresh_token:'test-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000001',email:'test@example.com'}})}));
-    await page.route(cloud+'/rest/v1/mbu_sync_state?*',async route=>{
-      if(route.request().method()==='GET')return route.fulfill({status:200,contentType:'application/json',body:'[]'});
-      writes.push(JSON.parse(route.request().postData()||'[]'));return route.fulfill({status:201,contentType:'application/json',body:route.request().postData()||'[]'});
+    await page.route(cloud+'/rest/v1/mbu_sync_state?*',route=>route.fulfill({status:200,contentType:'application/json',body:'[]'}));
+    await page.route(cloud+'/rest/v1/rpc/mbu_sync_write_state',route=>{
+      const body=JSON.parse(route.request().postData()||'{}');writes.push(body);
+      return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({applied:true,row:{store_key:body.p_store_key,payload:body.p_payload,device_id:body.p_device_id,client_revision:body.p_client_revision,client_updated_at:body.p_client_updated_at,server_revision:1,server_updated_at:new Date().toISOString()}})})
     });
     await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>route.fulfill({status:201,contentType:'application/json',body:''}));
     await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
@@ -1447,7 +1448,8 @@ test.describe('canonical quiz regression', () => {
     await page.locator('#cards button').filter({hasText:/start|continue/i}).first().click();
     await page.locator('#options .opt').first().click();
     await page.evaluate(() => MBUSupabase.syncNow());
-    expect(writes.flat().some(row=>row.store_key==='SRNA_COMBINED_EXAM_SET_1_2026_V1')).toBe(true);
+    expect(writes.some(row=>row.p_store_key==='SRNA_COMBINED_EXAM_SET_1_2026_V1')).toBe(true);
+    expect(writes.every(row=>Number.isInteger(Number(row.p_expected_server_revision)))).toBe(true);
   });
 
   test('Supabase signup sends confirmation back to the deployed app root', async ({ page }) => {
@@ -1476,6 +1478,60 @@ test.describe('canonical quiz regression', () => {
     expect(await page.evaluate(() => MBUSupabase.status().autoSyncIntervalMs)).toBe(300000);
     await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('[data-cloud-auto]')).toContainText('Starts when signed in');
+  });
+
+  test('Cloud account can request password recovery and resend confirmation', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let recoverBody=null,resendBody=null;
+    await page.route(cloud+'/auth/v1/recover?*',route=>{recoverBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:'{}'})});
+    await page.route(cloud+'/auth/v1/resend?*',route=>{resendBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:'{}'})});
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.locator('.mbu-global-nav__cloud').click();
+    await page.locator('[data-cloud-email]').fill('recover@example.com');
+    await page.locator('[data-cloud-forgot]').click();
+    await expect(page.locator('[data-account-message]')).toHaveText('');
+    expect(recoverBody).toEqual({email:'recover@example.com'});
+    await page.locator('[data-cloud-resend]').click();
+    await expect(page.locator('[data-account-message]')).toHaveText('');
+    expect(resendBody).toEqual({type:'signup',email:'recover@example.com'});
+  });
+
+  test('Password recovery redirect exposes new-password form and updates password', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let passwordBody=null;
+    await page.route(cloud+'/auth/v1/user',async route=>{
+      if(route.request().method()==='PUT'){passwordBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({id:'00000000-0000-0000-0000-000000000001',email:'recover@example.com'})})}
+      return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({id:'00000000-0000-0000-0000-000000000001',email:'recover@example.com'})})
+    });
+    await page.route(cloud+'/rest/v1/mbu_sync_state?*',route=>route.fulfill({status:200,contentType:'application/json',body:'[]'}));
+    await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>route.fulfill({status:201,contentType:'application/json',body:''}));
+    await page.goto(exam + '/index.html#access_token=test-access&refresh_token=test-refresh&expires_in=3600&token_type=bearer&type=recovery');
+    await page.evaluate(() => MBUPageReady);
+    await expect.poll(() => page.evaluate(() => MBUSupabase.status().recoveryMode)).toBe(true);
+    await page.locator('.mbu-global-nav__cloud').click();
+    await expect(page.locator('[data-cloud-recovery]')).toBeVisible();
+    await page.locator('[data-cloud-new-password]').fill('new-password-123');
+    await page.locator('[data-cloud-update-password]').click();
+    await expect.poll(() => page.evaluate(() => MBUSupabase.status().recoveryMode)).toBe(false);
+    expect(passwordBody).toEqual({password:'new-password-123'});
+  });
+
+  test('Tools and account dialogs trap keyboard focus and restore it when closed', async ({ page }) => {
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    const cloud=page.locator('.mbu-global-nav__cloud');await cloud.focus();await cloud.click();
+    const account=page.locator('#mbu-account-panel');
+    await expect(account).toBeVisible();
+    await page.keyboard.press('Shift+Tab');
+    expect(await page.evaluate(() => document.activeElement?.closest('#mbu-account-panel')!==null)).toBe(true);
+    await page.keyboard.press('Escape');
+    await expect(account).not.toBeVisible();
+    await expect(cloud).toBeFocused();
+
+    const tools=page.locator('.mbu-global-nav__tools');await tools.focus();await tools.click();
+    const dialog=page.locator('#mbu-app-tools');await expect(dialog).toBeVisible();
+    await page.keyboard.press('Shift+Tab');
+    expect(await page.evaluate(() => document.activeElement?.closest('#mbu-app-tools')!==null)).toBe(true);
+    await page.keyboard.press('Escape');
+    await expect(dialog).not.toBeVisible();
+    await expect(tools).toBeFocused();
   });
 
 });
