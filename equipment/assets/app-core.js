@@ -165,45 +165,13 @@ function refreshAccount(){
   const suspended=modal.querySelector('[data-cloud-suspended]');if(suspended)suspended.hidden=!(info.signedIn&&info.accessStatus==='suspended');
   updateCloudChip()
 }
-function storeLabel(key){
-  const map={
-    SRNA_COMBINED_EXAM_SET_1_2026_V1:'Quiz Bank 1',
-    srna_all5_groundup_v1:'Quiz Bank 2',
-    srna_equipment_dashboard_v1:'Quiz Bank 3',
-    MBU_COMBINED_BANK_2026_V1:'Combined',
-    SRNA_HAZARDS_BANK_1_2026_V2:'Hazards Set 1',
-    SRNA_HAZARDS_BANK_2_2026_V1:'Hazards Set 2',
-    hazards_practice3_progress_2026_V2:'Hazards Set 3',
-    hazards_harder_progress_2026_V1:'Hazards Challenge',
-    mbu_exam1_studio_v1:'Study Studio',
-    mbu_study_intelligence_v1:'Study Intelligence',
-    mbu_generated_questions_v1:'Generated Questions'
-  };return map[key]||key
+let cloudManagementPromise=null;
+async function loadCloudManagement(){
+  if(window.SNARCloudManagement)return window.SNARCloudManagement;
+  cloudManagementPromise=cloudManagementPromise||window.MBUBuild.loadScript('cloud-management.js');
+  await cloudManagementPromise;
+  return window.SNARCloudManagement
 }
-function relativeTime(ts){
-  const t=Date.parse(ts)||Number(ts)||0;if(!t)return 'Unknown';
-  const d=Math.max(0,Date.now()-t),min=Math.floor(d/60000),hr=Math.floor(d/3600000),day=Math.floor(d/86400000);
-  return min<1?'Just now':min<60?min+'m ago':hr<24?hr+'h ago':day+'d ago'
-}
-async function renderCloudDevices(modal){
-  const host=modal.querySelector('[data-cloud-devices]');if(!host)return;
-  host.innerHTML='<div class="mbu-muted">Loading devices…</div>';
-  try{
-    const rows=await MBUSupabase.listDevices();
-    host.innerHTML=rows.map(r=>'<div class="mbu-cloud-row"><div><strong>'+escapeHTML(r.current?'This device':(r.device_label||'Browser device'))+'</strong><span>'+escapeHTML(relativeTime(r.last_seen_at))+(r.app_build?' · '+escapeHTML(r.app_build):'')+'</span></div>'+(r.current?'<span class="mbu-pill">Current</span>':'<button type="button" class="secondary" data-remove-device="'+escapeHTML(r.device_id)+'" >Forget</button>')+'</div>').join('')||'<div class="mbu-muted">No synced devices found.</div>';
-    host.querySelectorAll('[data-remove-device]').forEach(btn=>btn.onclick=async()=>{if(!confirm('Forget this device entry? It can reappear if that device syncs again.'))return;btn.disabled=true;try{await MBUSupabase.removeDevice(btn.dataset.removeDevice);await renderCloudDevices(modal)}catch(e){modal.querySelector('[data-account-message]').textContent=e.message;btn.disabled=false}})
-  }catch(e){host.innerHTML='<div class="mbu-muted">Could not load devices: '+escapeHTML(e.message)+'</div>'}
-}
-async function renderCloudHistory(modal){
-  const host=modal.querySelector('[data-cloud-history]');if(!host)return;
-  host.innerHTML='<div class="mbu-muted">Loading restore points…</div>';
-  try{
-    const rows=await MBUSupabase.listHistory(30);
-    host.innerHTML=rows.map(r=>'<div class="mbu-cloud-row"><div><strong>'+escapeHTML(storeLabel(r.store_key))+'</strong><span>'+escapeHTML(new Date(r.saved_at).toLocaleString())+' · revision '+Number(r.server_revision||0)+'</span></div><button type="button" class="secondary" data-restore-version="'+Number(r.id)+'">Restore</button></div>').join('')||'<div class="mbu-muted">No cloud restore points yet.</div>';
-    host.querySelectorAll('[data-restore-version]').forEach(btn=>btn.onclick=async()=>{if(!confirm('Restore this saved version? Your current cloud state will be preserved in version history first.'))return;btn.disabled=true;const message=modal.querySelector('[data-account-message]');try{message.textContent='Restoring…';await MBUSupabase.restoreVersion(Number(btn.dataset.restoreVersion));message.textContent='Restore complete.'}catch(e){message.textContent=e.message;btn.disabled=false}})
-  }catch(e){host.innerHTML='<div class="mbu-muted">Could not load history: '+escapeHTML(e.message)+'</div>'}
-}
-function escapeHTML(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
 let adminPanelPromise=null;
 async function refreshAdminPanel(modal){
   const host=modal?.querySelector('[data-admin-host]');if(!host||!window.MBUSupabase)return;
@@ -229,8 +197,8 @@ function ensureAccountPanel(){
   modal.querySelector('[data-cloud-signout]').onclick=()=>action(()=>MBUSupabase.signOut());
   modal.querySelector('[data-cloud-delete-account]').onclick=async()=>{if(!confirm('Delete your SNAR Study Tool account and account-linked cloud data? This cannot be undone.'))return;if(!confirm('Final confirmation: permanently delete this account?'))return;try{message.textContent='Deleting account…';await MBUSupabase.deleteAccount();message.textContent='Deleted.';refreshAccount();await refreshTools()}catch(e){record('account-delete',e);message.textContent=e.message;refreshAccount()}};
    const privacySubmit=modal.querySelector('[data-privacy-submit]');if(privacySubmit)privacySubmit.onclick=async()=>{try{privacySubmit.disabled=true;message.textContent='Submitting…';const id=await MBUSupabase.submitPrivacyRequest(modal.querySelector('[data-privacy-type]').value,modal.querySelector('[data-privacy-details]').value);modal.querySelector('[data-privacy-details]').value='';message.textContent='Privacy request received'+(id?' (#'+id+')':'')+'.'}catch(e){record('privacy-request',e);message.textContent=e.message}finally{privacySubmit.disabled=false}};
-  modal.querySelector('[data-cloud-devices-details]').ontoggle=e=>{if(e.currentTarget.open)renderCloudDevices(modal)};
-  modal.querySelector('[data-cloud-history-details]').ontoggle=e=>{if(e.currentTarget.open)renderCloudHistory(modal)};
+  modal.querySelector('[data-cloud-devices-details]').ontoggle=async e=>{if(e.currentTarget.open)(await loadCloudManagement()).renderDevices(modal)};
+  modal.querySelector('[data-cloud-history-details]').ontoggle=async e=>{if(e.currentTarget.open)(await loadCloudManagement()).renderHistory(modal)};
   modal.querySelector('[data-account-close]').onclick=closeAccount;modal.onclick=e=>{if(e.target===modal)closeAccount()};modal.onkeydown=e=>trapModalKey(e,modal,closeAccount)
 }
 async function openAccount(source){
