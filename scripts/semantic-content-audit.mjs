@@ -9,7 +9,7 @@ const keyed=q=>{const opts=q.options??q.c??[],raw=q.answer??q.correct??q.a??[],a
 const rows=[];
 for(const file of files){
  const p=JSON.parse(fs.readFileSync(path.join(root,'equipment/exam-1/data',file),'utf8')),qs=Array.isArray(p)?p:(p.questions||[]);
- for(const q of qs)rows.push({file,id:String(q.id??''),set:Number(q.set??1),stem:String(q.stem??q.q??''),norm:norm(q.stem??q.q??''),key:keyed(q),tokens:tokens(q.stem??q.q??'')});
+ for(const q of qs){const opts=(q.options??q.c??[]).map(norm);rows.push({file,id:String(q.id??''),set:Number(q.set??1),stem:String(q.stem??q.q??''),norm:norm(q.stem??q.q??''),key:keyed(q),optionSig:JSON.stringify([...opts].sort()),tokens:tokens(q.stem??q.q??'')})}
 }
 const exact=new Map();
 for(const r of rows){if(!r.norm)continue;if(!exact.has(r.norm))exact.set(r.norm,[]);exact.get(r.norm).push(r)}
@@ -17,8 +17,14 @@ let exactGroups=0,crossSetExact=0;
 for(const group of exact.values()){
  if(group.length<2)continue;exactGroups++;
  if(new Set(group.map(x=>x.file+'::'+x.set)).size>1)crossSetExact++;
- const keyForms=new Set(group.map(x=>JSON.stringify(x.key)));
- if(keyForms.size>1)failures.push('Exact duplicate stem has conflicting keyed answer: '+group.map(x=>x.file+' '+x.set+'::'+x.id).join(', '));
+ const byOptions=new Map();
+ for(const item of group){if(!byOptions.has(item.optionSig))byOptions.set(item.optionSig,[]);byOptions.get(item.optionSig).push(item)}
+ for(const sameOptions of byOptions.values()){
+  if(sameOptions.length<2)continue;
+  const keyForms=new Set(sameOptions.map(x=>JSON.stringify(x.key)));
+  if(keyForms.size>1)failures.push('Same stem and same answer choices have conflicting keyed answers: '+sameOptions.map(x=>x.file+' '+x.set+'::'+x.id).join(', '));
+ }
+ if(byOptions.size>1&&new Set(group.map(x=>JSON.stringify(x.key))).size>1)warnings.push('Exact stem is reused with different option pools/key wording: '+group.map(x=>x.file+' '+x.set+'::'+x.id).join(', '));
 }
 const buckets=new Map();
 for(const r of rows){
