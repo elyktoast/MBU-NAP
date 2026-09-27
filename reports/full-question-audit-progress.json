@@ -596,7 +596,7 @@
       },
       {
         "id": "S5-F13",
-        "disposition": "IMPROVE"
+        "disposition": "CORRECT"
       }
     ]
   },
@@ -612,5 +612,11 @@
       "Restored S5-F13 to test the 0.5 ppm halogenated-agent combined-use limit with Nurse Anesthesia, 7th ed., Chapter 16, p. 283 as the supporting source."
     ],
     "correction": "S5-F13 restored as a combined sevoflurane/N2O occupational exposure question and re-sourced to Nurse Anesthesia, 7th ed., Chapter 16, pp. 283-284."
+  },
+  "lastCorrection": {
+    "question": "S5-F13",
+    "bank": "bank3.json",
+    "change": "Restored the combined halogenated-agent + nitrous oxide occupational exposure question using Nurse Anesthesia 7th ed., Chapter 16, p. 284 as the source.",
+    "note": "The textbook explicitly supports 2 ppm halogenated agents, 0.5 ppm when used with nitrous oxide, and 25 ppm nitrous oxide as an 8-hour time-weighted average."
   }
 }
