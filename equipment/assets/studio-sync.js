@@ -148,7 +148,6 @@
       page:String(q.page||''),
       pageUrl:location.origin+location.pathname,
       build:(document.body.innerHTML.match(/MBU_BUILD:([^<*]+)/)||[])[1]?.trim()||'',
-      userAgent:navigator.userAgent
     };
   }
 
@@ -217,10 +216,8 @@
       page:String(r.page||''),
       pageUrl:(()=>{try{const u=new URL(String(r.pageUrl||location.href),location.href);return u.origin+u.pathname}catch{return location.origin+location.pathname}})(),
       build:String(r.build||'legacy-local-report'),
-      userAgent:String(r.userAgent||navigator.userAgent),
       reason:String(r.reason||'Other').slice(0,120),
       comment:String(r.comment||r.reason||'Saved before online reporting was enabled.').slice(0,2000),
-      reporter:String(r.reporter||''),
       date:String(r.date||new Date().toISOString())
     };
   }
