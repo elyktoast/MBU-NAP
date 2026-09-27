@@ -3834,16 +3834,16 @@
       "type": "single",
       "stem": "A capnogram develops an elevated inspiratory baseline that no longer returns to zero. Which problem should be checked first?",
       "options": [
-        "Carbon dioxide rebreathing from the absorber or valves",
-        "Abrupt fall in cardiac output",
-        "Acute pulmonary embolism",
-        "Esophageal intubation"
+        "Carbon dioxide rebreathing from an exhausted absorber or faulty valve",
+        "Loss of pulmonary blood flow from severe hypotension or embolism",
+        "Sampling-line disconnection causing loss of detected exhaled gas",
+        "Esophageal intubation causing loss of sustained exhaled carbon dioxide"
       ],
       "answer": [
         0
       ],
-      "explanation": "A rising capnogram baseline that does not return to zero indicates rebreathing; the lecture specifically links it with a saturated absorber and valve problems.",
-      "citation": "Monitoring · 51",
+      "explanation": "A capnogram that fails to return to zero during inspiration indicates inspired carbon dioxide and therefore rebreathing. The lecture lists an exhausted absorber, malfunctioning circuit valve, inadequate fresh gas flow, or calibration error as causes; abrupt loss of pulmonary blood flow or esophageal intubation instead tends to reduce or eliminate the waveform.",
+      "citation": "Monitoring · 50",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -3857,7 +3857,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 51"
+      "sourceLocator": "Slide 50"
     },
     {
       "id": "S2-022",
@@ -6446,17 +6446,17 @@
       "id": "S3-003",
       "set": 3,
       "type": "single",
-      "stem": "A capnogram develops an elevated inspiratory baseline that no longer returns to zero. Which problem should be checked first?",
+      "stem": "During controlled ventilation, ETCO₂ suddenly falls to nearly zero and the capnogram disappears. Which equipment problem should be checked immediately?",
       "options": [
-        "Carbon dioxide rebreathing from the absorber or valves",
-        "Abrupt fall in cardiac output",
-        "Acute pulmonary embolism",
-        "Esophageal intubation"
+        "Disconnection or disruption of the carbon dioxide sampling line",
+        "Chemical exhaustion of the carbon dioxide absorbent",
+        "A unidirectional valve causing carbon dioxide rebreathing",
+        "Insufficient fresh gas flow causing an elevated inspiratory baseline"
       ],
       "answer": [
         0
       ],
-      "explanation": "A rising capnogram baseline that does not return to zero indicates rebreathing; the lecture specifically links it with a saturated absorber and valve problems.",
+      "explanation": "A sudden fall of ETCO₂ to near zero with loss of the waveform requires immediate evaluation for airway or circuit disconnection, sampling-line disruption, severe hypotension, massive pulmonary embolism, cardiac arrest, or tube malposition. An exhausted absorber, faulty valve, or inadequate fresh gas flow causes rebreathing and a nonzero inspiratory baseline rather than an abrupt flat trace.",
       "citation": "Monitoring · 51",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -13347,16 +13347,16 @@
       "type": "single",
       "stem": "Which statement best distinguishes pulse oximetry from an inspired oxygen analyzer?",
       "options": [
-        "Both directly measure PaO₂",
-        "Pulse oximetry measures inspired oxygen; the analyzer measures arterial saturation",
-        "Pulse oximetry estimates hemoglobin saturation; the analyzer measures oxygen concentration in inspired gas",
-        "Both directly measure tissue oxygen delivery"
+        "Pulse oximetry estimates arterial oxygen tension; the analyzer measures inspired oxygen pressure",
+        "Pulse oximetry measures inspired oxygen concentration; the analyzer estimates hemoglobin saturation",
+        "Pulse oximetry estimates hemoglobin oxygen saturation; the analyzer measures inspired oxygen concentration",
+        "Pulse oximetry measures tissue oxygen delivery; the analyzer measures arterial oxygen content"
       ],
       "answer": [
         2
       ],
-      "explanation": "The lecture separates patient oxygen saturation monitoring from direct measurement of oxygen concentration in the breathing system.",
-      "citation": "Monitoring · 36",
+      "explanation": "Pulse oximetry estimates the percentage of hemoglobin saturated with oxygen in arterial blood, whereas the breathing-system oxygen analyzer directly measures oxygen concentration in inspired gas. Neither device directly measures PaO₂ or tissue oxygen delivery.",
+      "citation": "Monitoring · 12",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -13370,7 +13370,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 36"
+      "sourceLocator": "Slide 12"
     },
     {
       "id": "S5-021",
@@ -13568,16 +13568,16 @@
       "type": "single",
       "stem": "Why is ultrasound particularly helpful when placing an arterial catheter in a patient with a weak pulse?",
       "options": [
-        "It automatically levels the pressure transducer",
-        "It can identify and guide access to a small vessel when palpation is difficult",
-        "It eliminates thrombosis risk",
-        "It directly measures ETCO₂"
+        "It automatically levels and zeros the pressure transducer before cannulation",
+        "It identifies the vessel and guides needle entry when palpation is difficult",
+        "It prevents thrombosis and distal ischemia after arterial catheter placement",
+        "It continuously measures arterial pressure before the catheter enters the vessel"
       ],
       "answer": [
         1
       ],
-      "explanation": "The lecture notes improved cannulation with ultrasound/Doppler when vessels are small or pulses are weak.",
-      "citation": "Monitoring · 66",
+      "explanation": "The lecture notes that ultrasound with Doppler improves arterial cannulation when the pulse is weak or the vessel is small because it allows the vessel to be identified and the access attempt to be guided directly. It does not replace leveling, zeroing, or post-placement complication surveillance.",
+      "citation": "Monitoring · 67",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -13591,7 +13591,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 66"
+      "sourceLocator": "Slide 67"
     },
     {
       "id": "S5-028",
@@ -14294,16 +14294,16 @@
       "type": "single",
       "stem": "Agent vaporization cools a variable-bypass vaporizer. Which internal response helps preserve the selected output?",
       "options": [
-        "The scavenger returns warm gas to the vaporizer",
-        "The oxygen flush automatically warms the liquid",
-        "A temperature compensator sends proportionally more carrier gas through the vaporizing chamber",
-        "The cylinder regulator increases pressure"
+        "The scavenging system returns warmed gas to the vaporizing chamber",
+        "The oxygen flush raises liquid temperature by increasing fresh gas pressure",
+        "The temperature compensator directs more carrier gas through the vaporizing chamber",
+        "The cylinder regulator raises upstream pressure as the anesthetic agent cools"
       ],
       "answer": [
         2
       ],
-      "explanation": "Temperature compensation changes the splitting ratio to offset the fall in vapor pressure as the agent cools.",
-      "citation": "Medical Gas Systems in Anesthesia · 58",
+      "explanation": "Vaporization cools the liquid anesthetic and lowers its vapor pressure. The temperature-compensation mechanism changes the splitting ratio so proportionally more carrier gas passes through the vaporizing chamber, helping maintain the selected output despite cooling.",
+      "citation": "Medical Gas Systems in Anesthesia · 56",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -14317,7 +14317,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 58"
+      "sourceLocator": "Slide 56"
     },
     {
       "id": "S5-051",
