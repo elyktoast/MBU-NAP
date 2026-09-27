@@ -1,4 +1,4 @@
-# Contributing to SNAR Study Tool
+# Contributing to SRNA Study Tool
 
 ## Do not patch around a broken source
 
