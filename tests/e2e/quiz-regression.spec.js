@@ -1422,7 +1422,7 @@ test.describe('canonical quiz regression', () => {
     const result=await page.evaluate(async()=>{
       const key='SRNA_COMBINED_EXAM_SET_1_2026_V1',device=MBUSync.deviceId();
       localStorage.setItem(key,JSON.stringify({local:'newer'}));
-      localStorage.setItem('mbu_sync_meta_v1',JSON.stringify({[key]:{revision:7,updatedAt:2000,deviceId:device,serverRevision:5}}));
+      localStorage.setItem('mbu_sync_meta_v1',JSON.stringify({[key]:{revision:7,updatedAt:2000,deviceId:device,serverRevision:5,dirty:true}}));
       const olderHigherServer=await MBUSync.importSnapshot({
         app:'SRNA Study Tool',schema:1,createdAt:1000,deviceId:'other',
         stores:{[key]:JSON.stringify({cloud:'older'})},
@@ -1535,6 +1535,9 @@ test.describe('canonical quiz regression', () => {
     await page.evaluate(() => MBUSupabase.syncNow());
     expect(writes.some(row=>row.p_store_key==='SRNA_COMBINED_EXAM_SET_1_2026_V1')).toBe(true);
     expect(writes.every(row=>Number.isInteger(Number(row.p_expected_server_revision)))).toBe(true);
+    const meta=await page.evaluate(()=>JSON.parse(localStorage.getItem('mbu_sync_meta_v1')||'{}').SRNA_COMBINED_EXAM_SET_1_2026_V1);
+    expect(meta.serverRevision).toBe(1);
+    expect(meta.dirty).toBe(false);
   });
 
   test('Account creation requires adult Terms and Privacy acknowledgement', async ({ page }) => {
