@@ -239,6 +239,17 @@ function startAutoSync(){
   stopAutoSync();if(!session()||legalAccepted!==true)return;
   autoSyncTimer=setInterval(()=>{if(session()&&legalAccepted===true&&navigator.onLine)fullSync({reloadOnImport:true}).catch(()=>{})},AUTO_SYNC_INTERVAL)
 }
+async function adminStatus(){
+  const s=await validSession();if(!s?.access_token||legalAccepted!==true)return{is_admin:false,role:null};
+  return await api('/rest/v1/rpc/snar_admin_status',{method:'POST',body:{}})
+}
+async function adminSystemSummary(){requireLegal();return await api('/rest/v1/rpc/snar_admin_system_summary',{method:'POST',body:{}})}
+async function adminLegalAcceptances(){requireLegal();return await api('/rest/v1/rpc/snar_admin_legal_acceptances',{method:'POST',body:{}})}
+async function adminPrivacyRequests(){requireLegal();return await api('/rest/v1/rpc/snar_admin_privacy_requests',{method:'POST',body:{}})}
+async function adminUpdatePrivacyRequest(id,statusValue){
+  requireLegal();return await api('/rest/v1/rpc/snar_admin_update_privacy_request',{method:'POST',body:{p_id:Number(id),p_status:String(statusValue||'')}})
+}
+async function adminRetentionCleanup(){requireLegal();return await api('/rest/v1/rpc/snar_admin_retention_cleanup',{method:'POST',body:{}})}
 function status(){const s=session();return{signedIn:!!s?.access_token,email:s?.user?.email||'',state:lastState,lastSyncAt,user:s?.user||null,recoveryMode,legalAccepted,termsVersion:LEGAL_TERMS_VERSION,privacyVersion:LEGAL_PRIVACY_VERSION,autoSyncIntervalMs:AUTO_SYNC_INTERVAL,nextAutoSyncAt:s?.access_token&&legalAccepted===true?(lastSyncAt||Date.now())+AUTO_SYNC_INTERVAL:0}}
 window.addEventListener('focus',()=>{if(session()&&legalAccepted===true&&Date.now()-lastSyncAt>120000)fullSync().catch(()=>{})});
 window.addEventListener('online',()=>{if(session()&&legalAccepted===true)fullSync().catch(()=>{})});
@@ -248,7 +259,7 @@ async function handleAuthRedirect(){
   startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100);return true
 }
 window.addEventListener('hashchange',()=>handleAuthRedirect().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth redirect failed',e)}));
-window.MBUSupabase={signIn,signUp,signOut,deleteAccount,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,refreshLegalAcceptance,acceptCurrentLegal,submitPrivacyRequest,submitItemContribution,refreshCalibration,calibration,listDevices,removeDevice,listHistory,restoreVersion,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
+window.MBUSupabase={signIn,signUp,signOut,deleteAccount,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,refreshLegalAcceptance,acceptCurrentLegal,submitPrivacyRequest,submitItemContribution,refreshCalibration,calibration,listDevices,removeDevice,listHistory,restoreVersion,adminStatus,adminSystemSummary,adminLegalAcceptances,adminPrivacyRequests,adminUpdatePrivacyRequest,adminRetentionCleanup,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
 const authReady=(async()=>{
   if(await handleAuthRedirect())return true;
   if(session()){
