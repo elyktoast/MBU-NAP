@@ -757,7 +757,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 
 // Content metadata normalization is a stable release contract.
 {
- const allowed=new Set(['Monitoring','Medical Gas','CO₂ & Scavenging','Airway','Hazards & Safety']);
+ const allowed=new Set(['Monitoring','Medical Gases','CO₂ & Scavenging','Airway','Hazards & Safety']);
  for(const p of ['bank1.json','bank2.json','bank3.json','combined.json','hazards.json']){
    const payload=JSON.parse(read('equipment/exam-1/data/'+p)),qs=Array.isArray(payload)?payload:(payload.questions||[]);
    for(const q of qs){
