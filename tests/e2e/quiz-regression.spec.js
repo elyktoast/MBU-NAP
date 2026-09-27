@@ -1814,6 +1814,7 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('[data-admin-stats] > div').filter({hasText:'Items ≥5 learners'}).locator('strong')).toHaveText('1');
     await expect(page.locator('[data-admin-stats] > div').filter({hasText:'Max learners / item'}).locator('strong')).toHaveText('5');
     await expect(page.locator('[data-admin-question-reports]')).toContainText('Example reported question');
+    await expect(page.locator('[data-admin-question-reports] a').filter({hasText:'Open exact question'})).toHaveAttribute('href',/studio\.html\?question=b1-1$/);
     await page.locator('[data-admin-question-report-status="9"]').selectOption('reviewing');
     await page.locator('[data-admin-question-report-save="9"]').click();
     await expect.poll(()=>reportStatus?.p_status).toBe('reviewing');
