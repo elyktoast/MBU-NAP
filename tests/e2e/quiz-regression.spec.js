@@ -1514,6 +1514,20 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('body')).toContainText('Independent educational resource');
   });
 
+  test('Operator admin exposes compliance controls without raw learner payload access', async ({ page }) => {
+    await seedSignedIn(page);
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
+    await page.unroute(cloud+'/rest/v1/rpc/snar_admin_status');
+    await page.route(cloud+'/rest/v1/rpc/snar_admin_status',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({is_admin:true,role:'operator_admin'})}));
+    await page.route(cloud+'/rest/v1/rpc/snar_admin_system_summary',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({accounts:1,legal_acceptances:2,privacy_requests:0,item_contributions:0,calibrated_items_25:0})}));
+    await page.route(cloud+'/rest/v1/rpc/snar_admin_privacy_requests',route=>route.fulfill({status:200,contentType:'application/json',body:'[]'}));
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);await waitForAuth(page);
+    await page.locator('.mbu-global-nav__cloud').click();
+    await expect(page.locator('[data-admin-details]')).toBeVisible();
+    await expect(page.locator('[data-admin-summary]')).toContainText('Legal records 2');
+    await expect(page.locator('[data-admin-details]')).toContainText('Raw learner study payloads');
+  });
+
   test('Signed-in account can submit a private privacy request', async ({ page }) => {
     await seedSignedIn(page);
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let requestBody=null;
