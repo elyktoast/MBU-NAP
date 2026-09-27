@@ -2,8 +2,8 @@
 (()=>{'use strict';
 const cfg=window.MBU_SUPABASE_CONFIG||{},sync=window.MBUSync,SESSION_KEY='mbu_supabase_session_v1',STATUS_EVENT='mbu:supabase-status',script=document.currentScript,APP_ROOT=new URL('../../',script?.src||location.href).href;
 if(!cfg.url||!cfg.publishableKey||!sync){console.warn('Supabase sync is not configured');return}
-const base=cfg.url.replace(/\/$/,''),AUTO_SYNC_INTERVAL=5*60*1000;
-let syncing=false,lastSyncAt=0,lastState='signed-out',remoteByKey=new Map(),calibrationByKey=new Map(),calibrationFetchedAt=0,timer=null,autoSyncTimer=null,recoveryMode=false;
+const base=cfg.url.replace(/\/$/,''),AUTO_SYNC_INTERVAL=5*60*1000,LEGAL_TERMS_VERSION='2026-09-27-v2',LEGAL_PRIVACY_VERSION='2026-09-27-v2';
+let syncing=false,lastSyncAt=0,lastState='signed-out',remoteByKey=new Map(),calibrationByKey=new Map(),calibrationFetchedAt=0,timer=null,autoSyncTimer=null,recoveryMode=false,legalAccepted=null;
 
 const safeJSON=(raw,fallback=null)=>{try{return JSON.parse(raw)}catch{return fallback}};
 const session=()=>safeJSON(localStorage.getItem(SESSION_KEY));
@@ -63,17 +63,17 @@ async function api(path,opts={}){
 }
 async function signIn(email,password){
   emit('signing-in');const data=await raw('/auth/v1/token?grant_type=password',{method:'POST',body:{email:String(email||'').trim(),password:String(password||'')}});
-  const s=normalizeAuth(data);if(!s)throw Error('Supabase did not return a session.');saveSession(s);emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});startAutoSync();return s
+  const s=normalizeAuth(data);if(!s)throw Error('Supabase did not return a session.');saveSession(s);if(!await refreshLegalAcceptance()){emit('legal-required',{email:s.user?.email||email});return s}emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});startAutoSync();return s
 }
 async function signUp(email,password,accepted=false){
   if(accepted!==true)throw Error('You must confirm that you are 18+ and agree to the Terms and Privacy Notice before creating an account.');
   const acceptedAt=new Date().toISOString();emit('signing-up');const data=await raw('/auth/v1/signup?redirect_to='+encodeURIComponent(APP_ROOT),{method:'POST',body:{email:String(email||'').trim(),password:String(password||''),data:{snar_terms_version:'2026-09-27-v2',snar_privacy_version:'2026-09-27-v2',snar_adult_ack:true,snar_accepted_at:acceptedAt}}}),s=normalizeAuth(data);
-  if(s){saveSession(s);emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});startAutoSync();return{session:s,confirmationRequired:false}}
+  if(s){saveSession(s);if(!await refreshLegalAcceptance())await acceptCurrentLegal(true);else{emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});startAutoSync()}return{session:s,confirmationRequired:false}}
   emit('confirmation-required',{email:String(email||'').trim()});return{session:null,confirmationRequired:true}
 }
 async function signOut(){
   const s=session();try{if(s?.access_token)await raw('/auth/v1/logout',{method:'POST',token:s.access_token})}catch{}
-  stopAutoSync();saveSession(null);remoteByKey.clear();calibrationByKey.clear();calibrationFetchedAt=0;emit('signed-out')
+  stopAutoSync();saveSession(null);legalAccepted=null;remoteByKey.clear();calibrationByKey.clear();calibrationFetchedAt=0;emit('signed-out')
 }
 async function resendConfirmation(email){
   const value=String(email||'').trim();if(!value)throw Error('Enter your email address first.');
@@ -95,7 +95,7 @@ function currentUser(){return session()?.user||null}
 async function deleteAccount(){
   const s=await validSession();if(!s?.access_token)throw Error('Sign in to delete your account.');
   await raw('/functions/v1/snar-delete-account',{method:'POST',body:{},token:s.access_token});
-  stopAutoSync();saveSession(null);remoteByKey.clear();calibrationByKey.clear();calibrationFetchedAt=0;emit('signed-out');return true
+  stopAutoSync();saveSession(null);legalAccepted=null;remoteByKey.clear();calibrationByKey.clear();calibrationFetchedAt=0;emit('signed-out');return true
 }
 async function submitPrivacyRequest(requestType,details=''){
   const s=await validSession();if(!s?.user?.id)throw Error('Sign in to submit a privacy request.');
@@ -204,13 +204,13 @@ async function pushLocal(){
   catch(e){emit('error',{email:s.user?.email||'',error:e.message});throw e}
   finally{syncing=false}
 }
-function scheduleSync(delay=1500){if(!session())return;clearTimeout(timer);timer=setTimeout(()=>{timer=null;pushLocal().catch(()=>{})},delay)}
+function scheduleSync(delay=1500){if(!session()||legalAccepted!==true)return;clearTimeout(timer);timer=setTimeout(()=>{timer=null;pushLocal().catch(()=>{})},delay)}
 function stopAutoSync(){if(autoSyncTimer){clearInterval(autoSyncTimer);autoSyncTimer=null}}
 function startAutoSync(){
   stopAutoSync();if(!session())return;
   autoSyncTimer=setInterval(()=>{if(session()&&navigator.onLine)fullSync({reloadOnImport:true}).catch(()=>{})},AUTO_SYNC_INTERVAL)
 }
-function status(){const s=session();return{signedIn:!!s?.access_token,email:s?.user?.email||'',state:lastState,lastSyncAt,user:s?.user||null,recoveryMode,autoSyncIntervalMs:AUTO_SYNC_INTERVAL,nextAutoSyncAt:s?.access_token?(lastSyncAt||Date.now())+AUTO_SYNC_INTERVAL:0}}
+function status(){const s=session();return{signedIn:!!s?.access_token,email:s?.user?.email||'',state:lastState,lastSyncAt,user:s?.user||null,recoveryMode,legalAccepted,termsVersion:LEGAL_TERMS_VERSION,privacyVersion:LEGAL_PRIVACY_VERSION,autoSyncIntervalMs:AUTO_SYNC_INTERVAL,nextAutoSyncAt:s?.access_token&&legalAccepted===true?(lastSyncAt||Date.now())+AUTO_SYNC_INTERVAL:0}}
 window.addEventListener('focus',()=>{if(session()&&Date.now()-lastSyncAt>120000)fullSync().catch(()=>{})});
 window.addEventListener('online',()=>{if(session())fullSync().catch(()=>{})});
 async function handleAuthRedirect(){
@@ -218,13 +218,13 @@ async function handleAuthRedirect(){
   startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100);return true
 }
 window.addEventListener('hashchange',()=>handleAuthRedirect().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth redirect failed',e)}));
-window.MBUSupabase={signIn,signUp,signOut,deleteAccount,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,submitPrivacyRequest,submitItemContribution,refreshCalibration,calibration,listDevices,removeDevice,listHistory,restoreVersion,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
+window.MBUSupabase={signIn,signUp,signOut,deleteAccount,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,refreshLegalAcceptance,acceptCurrentLegal,submitPrivacyRequest,submitItemContribution,refreshCalibration,calibration,listDevices,removeDevice,listHistory,restoreVersion,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
 const authReady=(async()=>{
   if(await handleAuthRedirect())return true;
   if(session()){
     if(sessionStorage.getItem('mbu_cloud_reload')==='1')sessionStorage.removeItem('mbu_cloud_reload');
     const valid=await validSession();
-    if(valid?.user?.id){startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),400);setTimeout(()=>refreshCalibration().catch(()=>{}),250);emit(recoveryMode?'password-recovery':'signed-in',{email:valid.user?.email||''});return true}
+    if(valid?.user?.id){if(!recoveryMode&&!await refreshLegalAcceptance()){emit('legal-required',{email:valid.user?.email||''});return true}startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),400);setTimeout(()=>refreshCalibration().catch(()=>{}),250);emit(recoveryMode?'password-recovery':'signed-in',{email:valid.user?.email||''});return true}
   }
   emit('signed-out');return false
 })().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth bootstrap failed',e);return false});
