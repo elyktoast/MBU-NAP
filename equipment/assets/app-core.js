@@ -101,7 +101,8 @@ async function copyDiagnostics(){const text=JSON.stringify(diagnostics(),null,2)
 function formatTime(ts){return ts?new Date(ts).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}):'Not yet'}
 function lastLocalSave(){const vals=Object.values(readMeta()).map(x=>Number(x?.updatedAt)||0).filter(Boolean);return vals.length?Math.max(...vals):0}
 function cloudStatusText(info){
-  if(!info?.signedIn){if(info?.state==='confirmation-required')return 'Confirmation email sent';if(info?.state==='recovery-sent')return 'Password reset email sent';return 'Signed out'};
+  if(!info?.signedIn){if(info?.state==='confirmation-required')return 'Confirmation email sent';if(info?.state==='recovery-sent')return 'Password reset email sent';return 'Signed out'}
+  if(info.legalAccepted!==true)return info.state==='error'?'Could not verify account agreement':'Terms & Privacy acceptance required';
   if(info.state==='syncing')return 'Syncing…';
   if(info.state==='error')return 'Sync error';
   if(info.lastSyncAt)return 'Synced '+formatTime(info.lastSyncAt);
@@ -109,6 +110,7 @@ function cloudStatusText(info){
 }
 function cloudAutoSyncText(info){
   if(!info?.signedIn)return 'Starts when signed in';
+  if(info.legalAccepted!==true)return 'Paused until account agreement is accepted';
   const mins=Math.max(1,Math.round(Number(info.autoSyncIntervalMs||0)/60000)),next=Number(info.nextAutoSyncAt)||0;
   return 'Every '+mins+' min'+(next?' · next ~'+formatTime(next):'')
 }
@@ -126,7 +128,7 @@ function updateCloudChip(){
   const b=document.querySelector('.mbu-global-nav__cloud');if(!b)return;
   const info=window.MBUSupabase?.status?.()||{signedIn:false,state:'unavailable'},label=b.querySelector('[data-cloud-chip-label]');
   b.dataset.state=info.state||'signed-out';
-  label.textContent=!info.signedIn?'Cloud: Signed out':info.state==='syncing'?'Cloud: Syncing':info.state==='error'?'Cloud: Error':'Cloud: Synced';
+  label.textContent=!info.signedIn?'Cloud: Signed out':info.legalAccepted!==true?'Cloud: Action required':info.state==='syncing'?'Cloud: Syncing':info.state==='error'?'Cloud: Error':'Cloud: Synced';
   b.title=info.signedIn?(info.email||'Account')+' · '+cloudStatusText(info):'Sign in for cross-device sync';
   b.setAttribute('aria-label',b.title)
 }
@@ -141,7 +143,7 @@ async function refreshTools(){
   modal.querySelector('[data-build]').textContent=window.MBU_BUILD_ID||'unknown';
   modal.querySelector('[data-device]').textContent=deviceId().slice(0,12);
   modal.querySelector('[data-errors]').textContent=errors.length?errors.length+' captured':'0 issues detected';
-  const syncBtn=modal.querySelector('[data-tools-sync]');syncBtn.hidden=!info.signedIn;syncBtn.disabled=info.state==='syncing';
+  const syncBtn=modal.querySelector('[data-tools-sync]');syncBtn.hidden=!info.signedIn;syncBtn.disabled=info.state==='syncing'||info.legalAccepted!==true;
   modal.querySelector('[data-tools-account]').textContent=info.signedIn?'Manage account':'Sign in to cloud';
   updateCloudChip()
 }
@@ -150,8 +152,14 @@ function refreshAccount(){
   const info=window.MBUSupabase?.status?.()||{signedIn:false,state:'unavailable'},out=modal.querySelector('[data-cloud-signed-out]'),inside=modal.querySelector('[data-cloud-signed-in]'),recovery=modal.querySelector('[data-cloud-recovery]');
   out.hidden=!!info.signedIn;inside.hidden=!info.signedIn||!!info.recoveryMode;recovery.hidden=!info.recoveryMode;
   modal.querySelector('[data-cloud-user]').textContent=info.email||'';
+  const legalRequired=modal.querySelector('[data-cloud-legal-required]');
+  if(legalRequired)legalRequired.hidden=!(info.signedIn&&!info.recoveryMode&&info.legalAccepted!==true);
   modal.querySelector('[data-cloud-status]').textContent=window.MBUSupabase?cloudStatusText(info):'Cloud sync unavailable';
   modal.querySelector('[data-cloud-auto]').textContent=window.MBUSupabase?cloudAutoSyncText(info):'';
+  const syncBtn=modal.querySelector('[data-cloud-sync]');if(syncBtn)syncBtn.disabled=info.legalAccepted!==true||info.state==='syncing';
+  const deviceDetails=modal.querySelector('[data-cloud-devices-details]'),historyDetails=modal.querySelector('[data-cloud-history-details]');
+  if(deviceDetails)deviceDetails.hidden=info.legalAccepted!==true;
+  if(historyDetails)historyDetails.hidden=info.legalAccepted!==true;
   updateCloudChip()
 }
 function storeLabel(key){
@@ -214,7 +222,7 @@ function ensureAccountPanel(){
 }
 async function openAccount(source){
   ensureAccountPanel();toolsReturnFocus=source||document.activeElement;const modal=document.getElementById('mbu-account-panel');modal.classList.add('open');modal.setAttribute('aria-hidden','false');refreshAccount();
-  const info=window.MBUSupabase?.status?.();(info?.recoveryMode?modal.querySelector('[data-cloud-new-password]'):info?.signedIn?modal.querySelector('[data-cloud-sync]'):modal.querySelector('[data-cloud-email]'))?.focus()
+  const info=window.MBUSupabase?.status?.();(info?.recoveryMode?modal.querySelector('[data-cloud-new-password]'):info?.signedIn&&info.legalAccepted!==true?modal.querySelector('[data-cloud-reaccept-consent]'):info?.signedIn?modal.querySelector('[data-cloud-sync]'):modal.querySelector('[data-cloud-email]'))?.focus()
 }
 function ensureTools(){
   if(document.getElementById('mbu-app-tools'))return;
