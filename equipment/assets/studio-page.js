@@ -210,7 +210,7 @@ function syncBankData(){
   if(syncChanged)save();
 }
 let buildMode='sets';
-function adaptiveToggleChanged(input){if(!input?.checked)return true;const signedIn=!!window.MBUSupabase?.status?.().signedIn;if(signedIn)return true;input.checked=false;window.MBUAppCore?.openAccount?.(input);return false}
+function adaptiveToggleChanged(input){if(!input?.checked)return true;const signedIn=!!window.(MBUSupabase?.status?.().signedIn&&MBUSupabase?.status?.().legalAccepted===true);if(signedIn)return true;input.checked=false;window.MBUAppCore?.openAccount?.(input);return false}
 function setBuildMode(mode){buildMode=mode==='topics'?'topics':'sets';document.getElementById('sourcePickbox').classList.toggle('hidden',buildMode!=='sets');document.getElementById('topicPickbox').classList.toggle('hidden',buildMode!=='topics');document.getElementById('buildSetsBtn').classList.toggle('out',buildMode!=='sets');document.getElementById('buildTopicsBtn').classList.toggle('out',buildMode!=='topics');document.getElementById('buildModeHelp').textContent=buildMode==='sets'?'Choose one or more practice sets. Questions can come from any topic in those sets.':'Choose one or more topics. Studio will pull matching questions from all loaded practice sets and banks.'}
 function setChecks(id,on){document.querySelectorAll('#'+id+' input[type=checkbox]').forEach(x=>x.checked=on)}
 function checkedValues(id){return [...document.querySelectorAll('#'+id+' input[type=checkbox]:checked')].map(x=>x.value)}
