@@ -103,6 +103,7 @@ function lastLocalSave(){const vals=Object.values(readMeta()).map(x=>Number(x?.u
 function cloudStatusText(info){
   if(!info?.signedIn){if(info?.state==='confirmation-required')return 'Confirmation email sent';if(info?.state==='recovery-sent')return 'Password reset email sent';return 'Signed out'}
   if(info.legalAccepted!==true)return info.state==='error'?'Could not verify account agreement':'Terms & Privacy acceptance required';
+  if(info.accessStatus==='suspended')return 'Account access suspended';
   if(info.state==='syncing')return 'Syncing…';
   if(info.state==='error')return 'Sync error';
   if(info.lastSyncAt)return 'Synced '+formatTime(info.lastSyncAt);
@@ -111,6 +112,7 @@ function cloudStatusText(info){
 function cloudAutoSyncText(info){
   if(!info?.signedIn)return 'Starts when signed in';
   if(info.legalAccepted!==true)return 'Paused until account agreement is accepted';
+  if(info.accessStatus==='suspended')return 'Cloud sync and Adaptive Mode are suspended';
   const mins=Math.max(1,Math.round(Number(info.autoSyncIntervalMs||0)/60000)),next=Number(info.nextAutoSyncAt)||0;
   return 'Every '+mins+' min'+(next?' · next ~'+formatTime(next):'')
 }
@@ -128,7 +130,7 @@ function updateCloudChip(){
   const b=document.querySelector('.mbu-global-nav__cloud');if(!b)return;
   const info=window.MBUSupabase?.status?.()||{signedIn:false,state:'unavailable'},label=b.querySelector('[data-cloud-chip-label]');
   b.dataset.state=info.state||'signed-out';
-  label.textContent=!info.signedIn?'Cloud: Signed out':info.legalAccepted!==true?'Cloud: Action required':info.state==='syncing'?'Cloud: Syncing':info.state==='error'?'Cloud: Error':'Cloud: Synced';
+  label.textContent=!info.signedIn?'Cloud: Signed out':info.legalAccepted!==true?'Cloud: Action required':info.accessStatus==='suspended'?'Cloud: Suspended':info.state==='syncing'?'Cloud: Syncing':info.state==='error'?'Cloud: Error':'Cloud: Synced';
   b.title=info.signedIn?(info.email||'Account')+' · '+cloudStatusText(info):'Sign in for cross-device sync';
   b.setAttribute('aria-label',b.title)
 }
@@ -143,7 +145,7 @@ async function refreshTools(){
   modal.querySelector('[data-build]').textContent=window.MBU_BUILD_ID||'unknown';
   modal.querySelector('[data-device]').textContent=deviceId().slice(0,12);
   modal.querySelector('[data-errors]').textContent=errors.length?errors.length+' captured':'0 issues detected';
-  const syncBtn=modal.querySelector('[data-tools-sync]');syncBtn.hidden=!info.signedIn;syncBtn.disabled=info.state==='syncing'||info.legalAccepted!==true;
+  const syncBtn=modal.querySelector('[data-tools-sync]');syncBtn.hidden=!info.signedIn;syncBtn.disabled=info.state==='syncing'||info.legalAccepted!==true||info.accessStatus==='suspended';
   modal.querySelector('[data-tools-account]').textContent=info.signedIn?'Manage account':'Sign in to cloud';
   updateCloudChip()
 }
@@ -156,10 +158,11 @@ function refreshAccount(){
   if(legalRequired)legalRequired.hidden=!(info.signedIn&&!info.recoveryMode&&info.legalAccepted!==true);
   modal.querySelector('[data-cloud-status]').textContent=window.MBUSupabase?cloudStatusText(info):'Cloud sync unavailable';
   modal.querySelector('[data-cloud-auto]').textContent=window.MBUSupabase?cloudAutoSyncText(info):'';
-  const syncBtn=modal.querySelector('[data-cloud-sync]');if(syncBtn)syncBtn.disabled=info.legalAccepted!==true||info.state==='syncing';
+  const syncBtn=modal.querySelector('[data-cloud-sync]');if(syncBtn)syncBtn.disabled=info.legalAccepted!==true||info.accessStatus==='suspended'||info.state==='syncing';
   const deviceDetails=modal.querySelector('[data-cloud-devices-details]'),historyDetails=modal.querySelector('[data-cloud-history-details]');
-  if(deviceDetails)deviceDetails.hidden=info.legalAccepted!==true;
-  if(historyDetails)historyDetails.hidden=info.legalAccepted!==true;
+  if(deviceDetails)deviceDetails.hidden=info.legalAccepted!==true||info.accessStatus==='suspended';
+  if(historyDetails)historyDetails.hidden=info.legalAccepted!==true||info.accessStatus==='suspended';
+  const suspended=modal.querySelector('[data-cloud-suspended]');if(suspended)suspended.hidden=!(info.signedIn&&info.accessStatus==='suspended');
   updateCloudChip()
 }
 function storeLabel(key){
