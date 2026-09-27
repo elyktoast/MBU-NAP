@@ -26,7 +26,8 @@ The browser supports email/password account creation and sign-in through Supabas
 - Local save changes remain immediate and schedule a debounced cloud push.
 - Returning to the app after two minutes or reconnecting to the network performs another full sync.
 - While signed in, MBU-NAP also performs a full automatic sync every five minutes as a cross-device safety net.
-- A manual **Sync now** control is available in Tools, and Tools shows the automatic sync interval and approximate next run.
+- The site header always shows cloud state (**Signed out**, **Syncing**, **Synced**, or **Error**) and opens the dedicated account panel.
+- A manual **Sync now** control remains available from the account panel and Tools. Tools focuses on practical study/sync status, while manual backup/import and diagnostics live in secondary expandable sections.
 - If a full sync downloads newer progress, the page reloads once so the active quiz runtime uses the imported state.
 
 The existing `MBUSync` schema-1 envelope remains the compatibility layer between local saves and the Supabase adapter.
