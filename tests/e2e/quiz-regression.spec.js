@@ -1328,7 +1328,8 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('.mbu-global-nav__tools')).toBeVisible();
     await page.locator('.mbu-global-nav__tools').click();
     await expect(page.locator('#mbu-app-tools')).toHaveClass(/open/);
-    await expect(page.locator('#mbu-app-tools')).toContainText('Progress is local-first');
+    await expect(page.locator('#mbu-app-tools')).toContainText('Local progress saves immediately');
+    await expect(page.locator('.mbu-cloud')).toContainText('Cloud Sync');
     const diag=await page.evaluate(() => MBUDiagnostics.snapshot());
     expect(diag.build).toMatch(/^2026-/);expect(diag.deviceId).toBe(first);
   });
