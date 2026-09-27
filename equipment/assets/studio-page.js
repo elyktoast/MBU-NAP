@@ -120,6 +120,7 @@ async function loadBanks(){
   try{
     BANK_MANIFEST=await studioFetch('banks.json');
     if(!BANK_MANIFEST||!Array.isArray(BANK_MANIFEST.studioSources))throw Error('invalid bank manifest');
+    window.MBU_FEATURES={...(window.MBU_FEATURES||{}),questionGenerator:BANK_MANIFEST.features?.questionGenerator||{enabled:false,status:'unconfigured'}};
   }catch(e){showLoadErrors(['Bank manifest failed: '+e.message]);console.error(e);document.getElementById('home')?.setAttribute('aria-busy','false');return}
   STUDIO_SOURCE_CATALOG=BANK_MANIFEST.studioSources.map(src=>({bank:src.key,label:src.groupLabel||src.label,sets:src.sets,setLabels:src.setLabels||null,count:src.count}));
   seedStudioSourceCatalog();buildTopics();
@@ -129,6 +130,15 @@ async function loadBanks(){
   try{renderHome()}catch(e){}
   renderStudioLoadState();
   await Promise.all(STUDIO_SOURCES.map(source=>hydrateStudioSource(source)));
+  if(window.MBUQuestionGenerator?.enabled?.()){
+    const generated=window.MBUQuestionGenerator.studioQuestions();
+    if(generated.length){
+      const key='generated',label='Generated Bank';
+      STUDIO_SOURCE_CATALOG.push({bank:key,label,sets:[1],setLabels:{1:'Approved Generated Questions'},count:generated.length});
+      STUDIO_SOURCE_ORDER.push(key);seedStudioSourceCatalog();
+      addLoadedQuestions(generated.map((q,i)=>norm(q,key,1,i,label,'Generated')));
+    }
+  }
   sortLoadedQuestions();
   try{syncBankData();buildTopics();const params=new URLSearchParams(location.search),requested=params.get('mode');if(requested==='hazards-missed')startMode('hazards-missed');else if(requested==='combined-missed')startMode('combined-missed');else renderHome()}catch(e){showLoadErrors(['Studio render failed: '+e.message]);console.error(e)}
   renderStudioLoadState()
