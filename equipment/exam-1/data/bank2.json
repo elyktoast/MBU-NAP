@@ -1250,8 +1250,8 @@
       "answer": [
         3
       ],
-      "explanation": "Zone valves isolate pipeline areas for maintenance or emergencies.",
-      "citation": "Medical Gas Systems in Anesthesia · 28",
+      "explanation": "Zone valves divide the hospital medical-gas pipeline into sections so a defined area can be isolated for maintenance or an emergency without shutting down the entire central supply. Line-pressure indicators monitor pressure but do not isolate flow.",
+      "citation": "Medical Gas Systems in Anesthesia · Slide 28",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -1719,7 +1719,7 @@
       "answer": [
         1
       ],
-      "explanation": "The oxygen-cylinder calculation in the lecture uses P1V1 = P2V2, Boyle's law.",
+      "explanation": "For a compressed gas such as oxygen, cylinder contents fall approximately in proportion to pressure. The lecture uses Boyle's law, P₁V₁ = P₂V₂, to relate cylinder pressure and available gas volume.",
       "citation": "Medical Gas Systems in Anesthesia · 13",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -1916,7 +1916,7 @@
       "answer": [
         0
       ],
-      "explanation": "The lecture notes that OPAs can stimulate oropharyngeal and laryngeal reflexes.",
+      "explanation": "An oropharyngeal airway can stimulate oropharyngeal and laryngeal reflexes, so a patient with intact airway reflexes may gag or develop laryngospasm. This is why OPAs are best tolerated in unconscious patients.",
       "citation": "Airway Equipment · 5",
       "topic": "Airway",
       "imageSvg": null,
@@ -2307,8 +2307,8 @@
       "answer": [
         0
       ],
-      "explanation": "The Miller is a straight blade used for epiglottic entrapment and direct lift.",
-      "citation": "Airway Equipment · 11",
+      "explanation": "The Miller is a straight laryngoscope blade designed to pass beneath and directly lift or entrap the epiglottis. The curved Macintosh blade instead sits in the vallecula and elevates the epiglottis indirectly through the glossoepiglottic ligament.",
+      "citation": "Airway Equipment · Slide 11",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -3555,16 +3555,16 @@
       "type": "single",
       "stem": "An invasive arterial-pressure waveform is overdamped. Which pressure error is most expected?",
       "options": [
-        "Resonant ringing is amplified",
-        "Pulse pressure is exaggerated",
-        "Systolic pressure is overestimated",
-        "Systolic pressure is underestimated"
+        "The waveform develops exaggerated ringing and a falsely high systolic pressure",
+        "The pulse pressure becomes wider because systolic pressure is overestimated",
+        "The systolic peak is blunted and systolic pressure tends to read falsely low",
+        "The diastolic pressure falls to zero while systolic pressure remains accurate"
       ],
       "answer": [
         3
       ],
-      "explanation": "Overdamping blunts the waveform and tends to underestimate systolic pressure.",
-      "citation": "Monitoring · 69",
+      "explanation": "Overdamping blunts the arterial waveform and tends to underestimate systolic blood pressure. Underdamping produces the opposite pattern, with ringing and systolic overestimation.",
+      "citation": "Monitoring · Slide 70",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -3578,7 +3578,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 69"
+      "sourceLocator": "Slide 70"
     },
     {
       "id": "S2-013",
@@ -4407,8 +4407,8 @@
       "answer": [
         1
       ],
-      "explanation": "The oxygen flush valve is an intermediate-pressure component.",
-      "citation": "Medical Gas Systems in Anesthesia · 26",
+      "explanation": "The oxygen flush valve is part of the intermediate-pressure system. It receives oxygen from the pipeline or regulated cylinder supply and sends high-flow oxygen directly toward the common gas outlet, bypassing flowmeters and vaporizers.",
+      "citation": "Medical Gas Systems in Anesthesia · Slides 26, 36",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -4422,7 +4422,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 26"
+      "sourceLocator": "Slides 26, 36"
     },
     {
       "id": "S2-040",
@@ -4565,8 +4565,8 @@
       "answer": [
         3
       ],
-      "explanation": "At low flow, movement through a variable-area flowmeter is predominantly laminar, so viscosity is the gas property that most strongly affects calibration. At higher turbulent flows, density becomes more important.",
-      "citation": "Medical Gas Systems in Anesthesia · 39",
+      "explanation": "At low flow, gas movement through the variable-area flowmeter is predominantly laminar, so viscosity is the major physical property affecting calibration. At higher turbulent flow, density becomes more important.",
+      "citation": "Medical Gas Systems in Anesthesia · Slide 43",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -4580,7 +4580,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 39"
+      "sourceLocator": "Slide 43"
     },
     {
       "id": "S2-045",
@@ -5010,8 +5010,8 @@
       "answer": [
         0
       ],
-      "explanation": "The CO2 absorption reaction is exothermic and produces heat.",
-      "citation": "CO₂ & Scavenging · 3",
+      "explanation": "Carbon dioxide absorption by hydrated absorbent is an exothermic chemical reaction, so a functioning canister may become warm during use. The generated heat is therefore expected evidence of active absorption, not heating from the vaporizer or pipeline gas.",
+      "citation": "SRNA Equipment Study Guide · Page 4",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -5020,12 +5020,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "CO₂ Absorbents and Scavenging"
+          "SRNA Equipment Study Guide"
         ],
-        "citationFormat": "slides"
+        "pdfPages": "4",
+        "citationFormat": "document"
       },
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 3"
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 4"
     },
     {
       "id": "S2-059",
@@ -5203,7 +5204,7 @@
       "answer": [
         0
       ],
-      "explanation": "Desflurane can produce carbon monoxide when exposed to desiccated absorbent.",
+      "explanation": "Desiccated carbon dioxide absorbent can degrade desflurane and generate carbon monoxide. The lecture emphasizes the order desflurane > enflurane > isoflurane for carbon monoxide production, while sevoflurane is associated instead with Compound A.",
       "citation": "CO₂ & Scavenging · 7",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -5908,7 +5909,7 @@
       "answer": [
         2
       ],
-      "explanation": "Epistaxis is identified as the most common complication of NPA placement.",
+      "explanation": "Epistaxis is the most common complication of nasopharyngeal airway insertion because the device passes through highly vascular nasal mucosa. Gentle insertion with water-based lubricant or local anesthetic helps reduce trauma.",
       "citation": "Airway Equipment · 6",
       "topic": "Airway",
       "imageSvg": null,
@@ -6135,8 +6136,8 @@
       "answer": [
         1
       ],
-      "explanation": "The Macintosh tip is placed in the vallecula for indirect epiglottic elevation.",
-      "citation": "Airway Equipment · 11",
+      "explanation": "The curved Macintosh blade is advanced until its tip rests in the vallecula. Forward lifting tensions the glossoepiglottic ligament and elevates the epiglottis indirectly rather than trapping it directly.",
+      "citation": "Airway Equipment · Slide 11",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -6263,7 +6264,7 @@
       "answer": [
         0
       ],
-      "explanation": "Cricothyrotomy accesses the airway through the cricothyroid membrane.",
+      "explanation": "Emergency cricothyrotomy enters through the cricothyroid membrane, which lies between the inferior border of the thyroid cartilage and the superior edge of the cricoid cartilage. It is the front-of-neck access emphasized for a persistent cannot-intubate, cannot-ventilate emergency.",
       "citation": "Airway Equipment · 15",
       "topic": "Airway",
       "imageSvg": null,
@@ -6332,7 +6333,7 @@
         3,
         5
       ],
-      "explanation": "The lecture lists needle, percutaneous, and surgical cricothyrotomy techniques.",
+      "explanation": "The lecture names three approaches to cricothyrotomy: needle, percutaneous, and surgical. Fiberoptic bronchoscopy, supraglottic airway exchange, and retrograde nasal intubation are not listed as cricothyrotomy techniques.",
       "citation": "Airway Equipment · 15",
       "topic": "Airway",
       "imageSvg": null,
@@ -6824,16 +6825,16 @@
       "type": "single",
       "stem": "A flow-volume loop develops a scooped or reduced expiratory limb during bronchospasm. Which physiologic change explains the pattern?",
       "options": [
-        "Increased static compliance",
-        "Increased circuit compliance",
-        "Increased expiratory resistance",
-        "Decreased inspiratory resistance"
+        "Reduced lung compliance with preserved expiratory flow",
+        "Increased airway resistance that limits expiratory flow",
+        "Increased circuit compliance with reduced inspiratory pressure",
+        "Decreased airway resistance causing accelerated expiratory flow"
       ],
       "answer": [
-        2
+        1
       ],
-      "explanation": "Bronchospasm increases airway resistance and reduces expiratory flow.",
-      "citation": "Monitoring · 30",
+      "explanation": "A flow-volume loop primarily reflects pulmonary resistance. Bronchospasm increases airway resistance, which reduces expiratory flow and produces the characteristic obstructive change in the expiratory limb.",
+      "citation": "Monitoring · Slide 31",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -6847,7 +6848,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 30"
+      "sourceLocator": "Slide 31"
     },
     {
       "id": "S3-016",
@@ -7022,8 +7023,8 @@
       "answer": [
         1
       ],
-      "explanation": "Rectal temperature may lag during active cooling and rewarming.",
-      "citation": "Monitoring · 81",
+      "explanation": "Rectal temperature can lag behind rapid changes in core temperature during active cooling or rewarming. For that reason it may underestimate how quickly the patient's true core temperature is changing.",
+      "citation": "Monitoring · Slide 85",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -7037,7 +7038,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 81"
+      "sourceLocator": "Slide 85"
     },
     {
       "id": "S3-022",
@@ -7563,8 +7564,8 @@
       "answer": [
         1
       ],
-      "explanation": "DISS uses gas-specific threaded dimensions for pipeline connections.",
-      "citation": "Medical Gas Systems in Anesthesia · 31",
+      "explanation": "The Diameter Index Safety System uses gas-specific, nationally standardized threaded dimensions at pipeline connections to prevent a hose from being attached to the wrong gas outlet. PISS is the separate indexing system used for small cylinders and hanger yokes.",
+      "citation": "Medical Gas Systems in Anesthesia · Slide 30",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -7578,7 +7579,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 31"
+      "sourceLocator": "Slide 30"
     },
     {
       "id": "S3-039",
@@ -7594,8 +7595,8 @@
       "answer": [
         3
       ],
-      "explanation": "The Bodok washer forms the seal at the cylinder-yoke connection.",
-      "citation": "Medical Gas Systems in Anesthesia · 18",
+      "explanation": "The Bodok washer or seal sits between the small-cylinder valve outlet and the anesthesia-machine yoke nipple to create the gas-tight seal. The index pins provide gas-specific alignment but do not form the pressure seal.",
+      "citation": "Medical Gas Systems in Anesthesia · Slide 21",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -7609,7 +7610,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 18"
+      "sourceLocator": "Slide 21"
     },
     {
       "id": "S3-040",
@@ -7849,8 +7850,8 @@
       "answer": [
         0
       ],
-      "explanation": "Viscosity predominates in low, laminar flow through a variable-area flowmeter.",
-      "citation": "Medical Gas Systems in Anesthesia · 39",
+      "explanation": "At low flow through a variable-area flowmeter, flow is predominantly laminar and calibration depends mainly on gas viscosity. At higher turbulent flow, gas density becomes the dominant property.",
+      "citation": "Medical Gas Systems in Anesthesia · Slide 43",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -7864,7 +7865,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 39"
+      "sourceLocator": "Slide 43"
     },
     {
       "id": "S3-048",
@@ -7880,8 +7881,8 @@
       "answer": [
         0
       ],
-      "explanation": "A ball float is read at its center; a bobbin is read at its top.",
-      "citation": "Medical Gas Systems in Anesthesia · 42",
+      "explanation": "Flow is read at the widest part of the indicator float. For a spherical ball float, the widest point is its center, so the scale is read at the center of the ball.",
+      "citation": "SRNA Equipment Study Guide · Page 2",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -7890,12 +7891,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Medical Gas Systems in Anesthesia"
+          "SRNA Equipment Study Guide"
         ],
-        "citationFormat": "slides"
+        "pdfPages": "2",
+        "citationFormat": "document"
       },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 42"
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 2"
     },
     {
       "id": "S3-049",
@@ -8104,8 +8106,8 @@
       "answer": [
         3
       ],
-      "explanation": "The lecture describes auxiliary oxygen flow up to approximately 10 L/min.",
-      "citation": "Medical Gas Systems in Anesthesia · 44",
+      "explanation": "The auxiliary oxygen flowmeter is a separate oxygen outlet supplied by the machine's oxygen source and can provide supplemental oxygen to devices such as a nasal cannula, face mask, or self-inflating bag. The lecture describes a maximum flow of approximately 10 L/min.",
+      "citation": "Medical Gas Systems in Anesthesia · Slide 44",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
