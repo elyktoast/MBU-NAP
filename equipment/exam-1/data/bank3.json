@@ -18,8 +18,8 @@
       "answer": [
         0
       ],
-      "explanation": "Arterial BP and HR must be determined and evaluated at least every 5 minutes. The highlighted slide note says it may be less than 5 but never more. ECG must be continuously displayed from the start of anesthesia until preparing to leave, and pleth or oximetry is an accepted additional circulation check.",
-      "citation": "Monitoring · Slides 13, 60 (PDF p. 13, 61)",
+      "explanation": "ASA circulation monitoring requires continuous ECG display from the beginning of anesthesia until preparing to leave the anesthetizing location, with arterial blood pressure and heart rate determined and evaluated at least every five minutes. Cycling a noninvasive cuff every six minutes therefore exceeds the allowed interval.",
+      "citation": "Monitoring · Slides 14, 61",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -36,7 +36,7 @@
         "citationFormat": "document"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 13, 60 · PDF p. 13, 61"
+      "sourceLocator": "Slides 14, 61"
     },
     {
       "id": "S1-G27",
@@ -52,8 +52,8 @@
       "answer": [
         0
       ],
-      "explanation": "Slide 69: the machine may alert to low agent LEVELS, but there is NO alert for vaporizer operation. A full sight glass looks the same whether the dial is on or off. Only the gas analyzer's agent reading shows no agent is being delivered. The leak check catches a loose filler cap, not a vaporizer left off.",
-      "citation": "Medical Gas Systems in Anesthesia · Slide 69 (PDF p. 35)",
+      "explanation": "The workstation may warn about a low agent level, but the lecture specifically notes that there is no alert simply because a vaporizer was left off. Inspired and expired volatile-agent analysis is what reveals that no anesthetic agent is actually being delivered.",
+      "citation": "Medical Gas Systems in Anesthesia · Slide 69; Monitoring · Slide 25",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -70,7 +70,7 @@
         "citationFormat": "document"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 69 · PDF p. 35"
+      "sourceLocator": "Medical Gas Slide 69; Monitoring Slide 25"
     },
     {
       "id": "S1-M19",
@@ -86,8 +86,8 @@
       "answer": [
         0
       ],
-      "explanation": "The lecture lists transient ETCO2 increases after tourniquet release, aortic unclamping, or bicarbonate. The key word is transient: CO2 built up in the limb returns to the circulation and is exhaled. MH produces a sustained, progressive rise, and an exhausted absorbent raises the inspiratory baseline.",
-      "citation": "Monitoring · Slides 41, 45 (PDF p. 41, 46)",
+      "explanation": "The lecture lists transient ETCO₂ increases after tourniquet release, aortic unclamping, or bicarbonate administration. Carbon dioxide accumulated in the previously ischemic limb returns to the circulation after release and is exhaled, causing a temporary rise rather than the progressive pattern expected with malignant hyperthermia.",
+      "citation": "Monitoring · Slide 42",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -104,7 +104,7 @@
         "citationFormat": "document"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 41, 45 · PDF p. 41, 46"
+      "sourceLocator": "Slide 42"
     },
     {
       "id": "S1-G28",
@@ -198,8 +198,8 @@
         1,
         3
       ],
-      "explanation": "Galvanic cells generate current from an O2-dependent chemical reaction, so the sensor is consumed. They're calibrated to room air (21%) daily and after prolonged use. CO2 SHORTENS sensor life, paramagnetic analyzers are the ones using magnetism, and inspired O2 alarms don't reliably detect disconnection.",
-      "citation": "Monitoring · Slides 35, 36, 38 (PDF p. 35, 36, 38)",
+      "explanation": "Galvanic oxygen sensors generate current through an oxygen-dependent chemical reaction, so the sensor is gradually consumed. Removable galvanic sensors are calibrated against room air, while paramagnetic analyzers use oxygen's magnetic properties. Inspired oxygen monitoring measures circuit oxygen concentration, not arterial PaO₂.",
+      "citation": "Monitoring · Slides 36-39",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -216,7 +216,7 @@
         "citationFormat": "document"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 35, 36, 38 · PDF p. 35, 36, 38"
+      "sourceLocator": "Slides 36-39"
     },
     {
       "id": "S1-K15",
@@ -266,8 +266,8 @@
       "answer": [
         2
       ],
-      "explanation": "NM response must be monitored whenever NMBAs are given, and quantitative monitoring (acceleromyography, TOF ratio) is recommended when available. quantitative vs qualitative, pick quantitative. Visual and tactile methods are qualitative.",
-      "citation": "Monitoring · Slide 15 (PDF p. 15)",
+      "explanation": "When neuromuscular blocking agents are administered, the lecture states that neuromuscular response must be monitored and that quantitative monitoring is recommended when available. Acceleromyography can provide an objective train-of-four ratio rather than relying only on visual or tactile assessment.",
+      "citation": "Monitoring · Slide 16",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -284,24 +284,24 @@
         "citationFormat": "document"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 15 · PDF p. 15"
+      "sourceLocator": "Slide 16"
     },
     {
       "id": "S1-M29",
       "set": 1,
       "type": "single",
-      "stem": "An arterial line reads 188/60 while a correctly sized cuff reads 162/64. A fast-flush test shows several rapid oscillations before the waveform settles. What explains the difference?",
+      "stem": "An arterial line shows a markedly exaggerated systolic peak with waveform ringing compared with a correctly sized NIBP cuff. Which dynamic problem is most likely?",
       "options": [
-        "Underdamping, which overestimates systolic pressure",
-        "A transducer mounted above the heart",
-        "Underdamping, which underestimates systolic pressure",
-        "Overdamping, which overestimates systolic pressure"
+        "Underdamping of the pressure-monitoring system",
+        "Overdamping of the pressure-monitoring system",
+        "A transducer positioned above the reference level",
+        "Complete catheter occlusion with loss of pulsatility"
       ],
       "answer": [
         0
       ],
-      "explanation": "The fast-flush test assesses resonant oscillations and dynamic response. Multiple oscillations after the flush mean an underdamped system, which overestimates SBP by 15-30 mmHg and amplifies artifacts. Overdamping underestimates SBP, and a transducer above the heart reads falsely low overall.",
-      "citation": "Monitoring · Slides 65, 69 (PDF p. 66, 70)",
+      "explanation": "Underdamping amplifies resonant oscillations and tends to overestimate systolic pressure by about 15–30 mmHg. Overdamping blunts the waveform and tends to underestimate systolic pressure instead.",
+      "citation": "Monitoring · Slide 70",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -318,7 +318,7 @@
         "citationFormat": "document"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 65, 69 · PDF p. 66, 70"
+      "sourceLocator": "Slide 70"
     },
     {
       "id": "S1-G22",
@@ -371,8 +371,8 @@
       "answer": [
         1
       ],
-      "explanation": "a PaO2 of 60 is about 90%, and it drops quickly after this. Once PaO2 reaches the steep portion of the sigmoid curve, desaturation can accelerate rapidly. Accuracy is about 2-3% from 70-100% saturation, so the reading below 90% is still usable.",
-      "citation": "Monitoring · Slide 76 (PDF p. 77)",
+      "explanation": "An SpO₂ near 90% corresponds roughly to a PaO₂ near 60 mmHg. Below this point the oxyhemoglobin dissociation curve becomes steep, so a further decrease in PaO₂ can produce a rapid fall in saturation.",
+      "citation": "Monitoring · Slide 77",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -389,7 +389,7 @@
         "citationFormat": "document"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 76 · PDF p. 77"
+      "sourceLocator": "Slide 77"
     },
     {
       "id": "S1-G25",
@@ -439,7 +439,7 @@
       "answer": [
         2
       ],
-      "explanation": "In a closed interface, excessive vacuum opens the pop-in valve so room air enters the reservoir, protecting the circuit. The pop-off valve opens the other way, when vacuum FAILS and pressure builds, venting gas to the room. With too much suction the reservoir bag collapses rather than distends. The open interface (most common) is valveless with ports open to atmosphere.",
+      "explanation": "In a closed-reservoir scavenging interface, excessive hospital vacuum creates excessive negative pressure. The negative-pressure relief, or pop-in, valve opens and allows room air into the reservoir so suction is not transmitted to the patient breathing circuit.",
       "citation": "CO₂ & Scavenging · Slide 20 (PDF p. 10)",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -477,7 +477,7 @@
         2,
         3
       ],
-      "explanation": "Objective measures listed: sustained SpO2, waveform exhaled CO2, peak airway pressure, and exhaled tidal volume. Chest movement and mask leak are the clinical signs. The clear mask lets you watch lips, condensation (watch the amount of fog), secretions, vomit, and blood, but those are observations, not objective measures.",
+      "explanation": "The lecture lists sustained oxygen saturation, waveform exhaled carbon dioxide, peak airway pressure, and exhaled tidal volume as objective measures of bag-mask ventilation. Visible chest movement and mask leak are clinical observations rather than objective measurements.",
       "citation": "Airway Equipment · Slide 4 (PDF p. 4)",
       "topic": "Airway",
       "imageSvg": null,
@@ -511,8 +511,8 @@
       "answer": [
         3
       ],
-      "explanation": "The normal gradient is about 5 mmHg (range 2-10). One-lung ventilation is on the lecture's list of situations where ETCO2 underestimates PaCO2, because ventilated but poorly perfused alveoli dilute the exhaled CO2. Hypoventilation raises both values without widening the gap, and rebreathing raises ETCO2.",
-      "citation": "Monitoring · Slides 40, 49 (PDF p. 40, 50)",
+      "explanation": "The normal PaCO₂–ETCO₂ difference is usually small. One-lung ventilation can increase dead space and ventilation-perfusion mismatch, causing ETCO₂ to underestimate arterial PaCO₂ and widening the gradient.",
+      "citation": "Monitoring · Slides 41, 50",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -529,7 +529,7 @@
         "citationFormat": "document"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 40, 49 · PDF p. 40, 50"
+      "sourceLocator": "Slides 41, 50"
     },
     {
       "id": "S1-M41",
@@ -545,8 +545,8 @@
       "answer": [
         1
       ],
-      "explanation": "Pre-induction: mask seal with FiO2 100% for 3-5 minutes or until expired O2 is at least 90%. Expired O2 is the marker because it reflects lung denitrogenation. Inspired O2 only shows what the machine delivers, and SpO2 can hit 100% long before the lungs are filled with O2.",
-      "citation": "Monitoring · Slide 91 (PDF p. 92)",
+      "explanation": "The lecture's pre-induction endpoint is a tight mask seal with 100% inspired oxygen for 3–5 minutes or until expired oxygen is at least 90%. Expired oxygen is the more useful endpoint because it reflects lung denitrogenation rather than simply what the machine is delivering.",
+      "citation": "Monitoring · Slide 92",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -563,7 +563,7 @@
         "citationFormat": "document"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 91 · PDF p. 92"
+      "sourceLocator": "Slide 92"
     },
     {
       "id": "S1-K03",
@@ -579,7 +579,7 @@
       "answer": [
         1
       ],
-      "explanation": "Ethyl violet goes white to purple with exhaustion, and the color can fade back at rest (regeneration) even though the hydroxides are used up. The highlighted slide point: color change is not to be relied on. some purple turns back white at the end of the day, so check and change it. A baseline above zero means rebreathing.",
+      "explanation": "Ethyl violet changes from white toward blue-violet as absorbent becomes exhausted, but the color may fade after use stops. The lecture calls this regeneration and warns that indicator color should not be relied on by itself. A capnogram baseline that no longer returns to zero supports carbon dioxide rebreathing from exhausted absorbent.",
       "citation": "CO₂ & Scavenging · Slides 2, 4 (PDF p. 1, 2)",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -13865,16 +13865,16 @@
       "type": "single",
       "stem": "The circuit O2 analyzer reads 60%. Which conclusion is valid?",
       "options": [
-        "Tissue oxygenation is adequate",
-        "Inspired O2 is 60%, but arterial oxygenation still has to be assessed separately",
-        "The circuit is connected and the patient is being ventilated",
-        "The patient's PaO2 must be adequate"
+        "Inspired oxygen is 60%, but arterial oxygenation still must be assessed separately",
+        "The patient's arterial oxygen tension must be adequate",
+        "The breathing circuit must be connected correctly",
+        "Tissue oxygen delivery must be adequate"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Adequate inspired O2 doesn't guarantee adequate arterial oxygenation, and inspired O2 alarms don't reliably detect circuit disconnection. The lecture says to pair inspired O2 monitoring with blood oxygenation monitoring, because circuit concentration alone doesn't measure PaO2 or tissue oxygenation.",
-      "citation": "Monitoring · Slide 38 (PDF p. 38)",
+      "explanation": "An oxygen analyzer reports the oxygen concentration in the breathing system. The lecture specifically cautions that an adequate inspired oxygen concentration does not guarantee adequate arterial oxygenation, tissue oxygen delivery, or intact circuit connection, so blood oxygenation still has to be assessed separately.",
+      "citation": "Monitoring · Slide 39",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -13891,7 +13891,7 @@
         "citationFormat": "document"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 38 · PDF p. 38"
+      "sourceLocator": "Slide 39"
     },
     {
       "id": "S4-R29",
@@ -16357,24 +16357,24 @@
       "id": "S5-F13",
       "set": 5,
       "type": "single",
-      "stem": "During a sevoflurane/N2O anesthetic, room sampling shows sevoflurane 0.8 ppm and N2O 20 ppm TWA. How do these compare with NIOSH recommendations?",
+      "stem": "Nitrous oxide is being used as the sole anesthetic gas in an operating room where the measured occupational exposure is 30 ppm TWA. How does this compare with the NIOSH value quoted in the lecture?",
       "options": [
-        "Sevo exceeds its combined-use limit; N2O is within limits",
-        "N2O exceeds its limit; sevo is within limits",
-        "Both are within limits",
-        "Both exceed their limits"
+        "It exceeds the quoted 25 ppm TWA recommendation",
+        "It is below the quoted 50 ppm TWA recommendation",
+        "It exactly meets the quoted 30 ppm TWA recommendation",
+        "The lecture gives no occupational limit for nitrous oxide"
       ],
       "answer": [
         0
       ],
-      "explanation": "When a halogenated agent is used WITH N2O, its limit drops to 0.5 ppm, so sevo at 0.8 ppm exceeds it even though it would be under the 2 ppm limit for use alone. N2O's 25 ppm TWA isn't exceeded at 20 ppm.",
-      "citation": "CO₂ & Scavenging · Slide 10 (PDF p. 5)",
+      "explanation": "The lecture quotes a NIOSH recommendation of 25 ppm time-weighted average for nitrous oxide when it is used as the sole anesthetic gas. A measured exposure of 30 ppm therefore exceeds the course-taught value.",
+      "citation": "CO₂ & Scavenging · Slide 10",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": "The 0.5 ppm combined-use limit comes from NIOSH's 1977 recommendation; slide 10 lists only 2 ppm and 25 ppm.",
+      "supp": null,
       "orig": "F13",
       "sourceMeta": {
         "families": [
@@ -16385,7 +16385,7 @@
         "citationFormat": "document"
       },
       "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 10 · PDF p. 5"
+      "sourceLocator": "Slide 10"
     },
     {
       "id": "S5-T68",
