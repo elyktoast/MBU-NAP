@@ -20,7 +20,7 @@ The strongest quality signal is that the semantic audit found **no exact cross-b
 
 ## Topic coverage
 
-| Bank | Monitoring | Medical Gas | CO₂ & Scavenging | Airway | Hazards & Safety |
+| Bank | Monitoring | Medical Gases | CO₂ & Scavenging | Airway | Hazards & Safety |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Bank 1 | 180 | 181 | 85 | 54 | 0 |
 | Bank 2 | 130 | 128 | 122 | 120 | 0 |
