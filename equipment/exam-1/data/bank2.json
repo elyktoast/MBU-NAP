@@ -9977,8 +9977,8 @@
       "answer": [
         3
       ],
-      "explanation": "Bronchospasm increases airway resistance and therefore widens the peak-to-plateau pressure gradient.",
-      "citation": "Monitoring · 30",
+      "explanation": "An isolated rise in peak inspiratory pressure relative to plateau pressure reflects increased airway resistance. Bronchospasm is a classic cause of that pattern.",
+      "citation": "Monitoring · Slide 26",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -9989,10 +9989,11 @@
         "families": [
           "Intraoperative Assessment, Monitoring & Data Interpretation"
         ],
-        "citationFormat": "slides"
+        "citationFormat": "slides",
+        "slides": "26"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 30"
+      "sourceLocator": "Slide 26"
     },
     {
       "id": "S4-014",
@@ -10691,18 +10692,18 @@
       "id": "S4-036",
       "set": 4,
       "type": "single",
-      "stem": "Which statement correctly describes nitrous-oxide cylinder contents while liquid remains?",
+      "stem": "Why is nitrous-oxide cylinder pressure a poor indicator of remaining contents while liquid nitrous oxide is still present?",
       "options": [
-        "Cylinder pressure behaves like compressed oxygen pressure",
-        "Cylinder weight is more useful than pressure for estimating contents",
-        "Pressure falls linearly as contents are used",
-        "Pressure directly identifies the percentage remaining"
+        "Pressure stays near the vapor pressure while liquid and gas coexist",
+        "Pressure falls linearly from the moment the valve is opened",
+        "Pressure directly reports the percentage remaining",
+        "Nitrous oxide has no vapor pressure at room temperature"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "N₂O pressure remains near vapor pressure while liquid remains, so weight better reflects remaining content.",
-      "citation": "Medical Gas Systems in Anesthesia · 14",
+      "explanation": "Nitrous oxide is stored as liquid and vapor at room temperature, so cylinder pressure remains near its vapor pressure while liquid remains. Only after the liquid phase is depleted does the pressure fall rapidly with further use.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 16, p. 253",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -10711,12 +10712,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Medical Gas Systems in Anesthesia"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "citationFormat": "slides"
+        "pages": "253",
+        "pdfPages": "307",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 14"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 16 · p. 253 · PDF p. 307"
     },
     {
       "id": "S4-037",
@@ -11994,7 +11997,7 @@
       "id": "S4-077",
       "set": 4,
       "type": "multi",
-      "stem": "Which TWO exposure limits apply when nitrous oxide and a halogenated anesthetic are administered together according to the lecture? (Select 2)",
+      "stem": "Which TWO occupational exposure limits apply when nitrous oxide and a halogenated anesthetic are used together? (Select 2)",
       "options": [
         "0.5 ppm halogenated agent",
         "25 ppm halogenated agent",
@@ -12007,8 +12010,8 @@
         0,
         4
       ],
-      "explanation": "When co-administered, the lecture gives 25 ppm for nitrous oxide and 0.5 ppm for the halogenated agent.",
-      "citation": "CO₂ & Scavenging · 10",
+      "explanation": "Nurse Anesthesia states that the halogenated-agent limit is reduced to 0.5 ppm when used with nitrous oxide, and nitrous oxide is limited to 25 ppm as an 8-hour time-weighted average.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 16, p. 284",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -12017,18 +12020,20 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "CO₂ Absorbents and Scavenging"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "citationFormat": "slides"
+        "pages": "284",
+        "pdfPages": "337",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 10"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 16 · p. 284 · PDF p. 337"
     },
     {
       "id": "S4-078",
       "set": 4,
       "type": "single",
-      "stem": "A halogenated anesthetic is used without nitrous oxide. Which lecture value applies?",
+      "stem": "What occupational exposure limit does the lecture give for a halogenated anesthetic agent used without nitrous oxide?",
       "options": [
         "2 ppm",
         "25 ppm",
@@ -12038,7 +12043,7 @@
       "answer": [
         0
       ],
-      "explanation": "The lecture quotes 2 ppm for halogenated anesthetic when used without nitrous oxide.",
+      "explanation": "The lecture gives a recommended exposure limit of 2 ppm for a halogenated anesthetic agent. Nitrous oxide used as the sole anesthetic is listed at 25 ppm TWA.",
       "citation": "CO₂ & Scavenging · 10",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -12408,21 +12413,22 @@
       "id": "S4-090",
       "set": 4,
       "type": "multi",
-      "stem": "Which TWO tube features help with placement depth and distal gas passage, respectively? (Select 2)",
+      "stem": "Which THREE endotracheal-tube design features are specifically listed in the airway lecture? (Select 3)",
       "options": [
-        "Murphy eye",
-        "Pilot balloon",
-        "Connector flange",
-        "Inflation valve",
-        "Cuff pilot line",
-        "Distance markings"
+        "Distance markings",
+        "Internal and external diameter specifications",
+        "Bevel and Murphy eye",
+        "Cylinder pin-index holes",
+        "Flowmeter scale markings",
+        "Scavenging relief ports"
       ],
       "answer": [
         0,
-        5
+        1,
+        2
       ],
-      "explanation": "Distance markings guide insertion depth, while the Murphy eye provides an alternate distal gas pathway.",
-      "citation": "Airway Equipment · 7",
+      "explanation": "The airway lecture lists tracheal-tube internal and external diameters, distance markers, the bevel, Murphy eye, material toxicity, and tube curvature among standardized design features.",
+      "citation": "Airway Equipment · Slide 7",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -12433,6 +12439,7 @@
         "families": [
           "Airway Equipment"
         ],
+        "slides": "7",
         "citationFormat": "slides"
       },
       "sourceTitle": "Airway Equipment",
@@ -12538,18 +12545,18 @@
       "id": "S4-094",
       "set": 4,
       "type": "single",
-      "stem": "During laser airway surgery, dye appears in the airway from a saline-filled cuff. What has most likely occurred?",
+      "stem": "During airway laser surgery, how should the cuff of a laser-resistant endotracheal tube be filled according to the lecture?",
       "options": [
-        "Disconnection of the pilot balloon valve",
-        "Laser perforation of the cuff",
-        "Failure of the Murphy eye",
-        "Normal diffusion through an intact cuff"
+        "With saline or water plus dye",
+        "With oxygen",
+        "With nitrous oxide",
+        "With volatile anesthetic"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Saline/water with dye in the cuff can make laser-related cuff perforation immediately visible.",
-      "citation": "Airway Equipment · 9",
+      "explanation": "The lecture states that laser-resistant tube cuffs are not themselves laser resistant and should be filled with saline or water and dye.",
+      "citation": "Airway Equipment · Slide 9",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -12560,6 +12567,7 @@
         "families": [
           "Airway Equipment"
         ],
+        "slides": "9",
         "citationFormat": "slides"
       },
       "sourceTitle": "Airway Equipment",
@@ -12803,8 +12811,8 @@
       "answer": [
         3
       ],
-      "explanation": "Bronchospasm increases airway resistance and therefore widens the peak-to-plateau pressure gradient.",
-      "citation": "Monitoring · 30",
+      "explanation": "An isolated rise in peak inspiratory pressure relative to plateau pressure reflects increased airway resistance. Bronchospasm is a classic cause of that pattern.",
+      "citation": "Monitoring · Slide 26",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -12815,10 +12823,11 @@
         "families": [
           "Intraoperative Assessment, Monitoring & Data Interpretation"
         ],
-        "citationFormat": "slides"
+        "citationFormat": "slides",
+        "slides": "26"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 30"
+      "sourceLocator": "Slide 26"
     },
     {
       "id": "S5-003",
@@ -13863,18 +13872,18 @@
       "id": "S5-036",
       "set": 5,
       "type": "single",
-      "stem": "Which measurement best estimates remaining nitrous oxide while liquid remains in the cylinder?",
+      "stem": "Which statement best describes nitrous-oxide cylinder pressure while liquid nitrous oxide remains?",
       "options": [
-        "Cylinder weight",
-        "Pipeline pressure",
-        "Cylinder pressure",
-        "Flowmeter height"
+        "It remains near the vapor pressure and does not reliably indicate the fraction remaining",
+        "It falls linearly with each liter removed",
+        "It rises as the cylinder empties",
+        "It directly reports the percentage of liquid remaining"
       ],
       "answer": [
         0
       ],
-      "explanation": "N₂O pressure stays near vapor pressure while liquid remains, so weight is more useful.",
-      "citation": "Medical Gas Systems in Anesthesia · 14",
+      "explanation": "The textbook states that nitrous oxide cylinder pressure remains near 745 psi at room temperature while liquid remains. Once the liquid is gone, pressure declines rapidly with further use.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 16, p. 253",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -13883,12 +13892,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Medical Gas Systems in Anesthesia"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "citationFormat": "slides"
+        "pages": "253",
+        "pdfPages": "307",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 14"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 16 · p. 253 · PDF p. 307"
     },
     {
       "id": "S5-037",
