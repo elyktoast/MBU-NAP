@@ -341,8 +341,8 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 // Public branding, legal notices, and study content must remain independent of schools/faculty.
 {
   const privacy=read('privacy.html'),terms=read('terms.html'),core=read('equipment/assets/app-core.js'),supabase=read('equipment/assets/supabase-sync.js');
-  for(const token of ['SNAR Study Tool','De-identification commitment','Privacy request','Supabase'])if(!privacy.includes(token))fail('Privacy Notice missing '+token);
-  for(const token of ['SNAR Study Tool','Independent educational resource','Educational use only','Privacy Notice'])if(!terms.includes(token))fail('Terms of Use missing '+token);
+  for(const token of ['SRNA Study Tool','De-identification commitment','Privacy request','Supabase'])if(!privacy.includes(token))fail('Privacy Notice missing '+token);
+  for(const token of ['SRNA Study Tool','Independent educational resource','Educational use only','Privacy Notice'])if(!terms.includes(token))fail('Terms of Use missing '+token);
   for(const token of ['data-cloud-consent','Privacy & account','data-privacy-submit','Delete account & data'])if(!core.includes(token))fail('Account legal controls missing '+token);
   if(!supabase.includes('submitPrivacyRequest')||!supabase.includes('/rest/v1/snar_privacy_requests'))fail('Private privacy-request API is not wired');
   for(const token of ['signUp(email,password,accepted=false)','snar_terms_version','snar_privacy_version','snar_adult_ack','snar_accepted_at'])if(!supabase.includes(token))fail('Signup acknowledgement audit contract missing '+token);
