@@ -4410,231 +4410,1739 @@
       "id": "36",
       "set": 2,
       "type": "single",
-      "stem": "A full oxygen E-cylinder reads about 950 psig. Approximately how much oxygen remains?",
+      "stem": "What sequence begins the risk-management process described in the workstation hazards section?",
       "options": [
-        "About 330 L",
-        "About 660 L",
-        "About 1590 L",
-        "The contents cannot be estimated from pressure"
+        "Apply solutions before defining the problem",
+        "Define problems, estimate likelihood, weigh resources, apply solutions, then monitor",
+        "Monitor first and estimate likelihood only after an event",
+        "Assign blame, then replace equipment"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "Oxygen is stored as a compressed gas, so cylinder contents fall roughly linearly with pressure. Half of about 1900 psig corresponds to roughly half of 660 L, or about 330 L.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 1",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "1",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
+      "explanation": "The guide presents risk management as a sequence: define problems, estimate likelihood, weigh resources, apply solutions, and monitor.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
     },
     {
       "id": "37",
       "set": 2,
       "type": "single",
-      "stem": "A nitrous oxide E-cylinder still reads 745 psig after prolonged use. What does this pressure reading tell you about the amount of N2O remaining?",
+      "stem": "According to the workstation hazards study guide, what accounts for the majority of anesthesia equipment-related adverse events?",
       "options": [
-        "It does not reliably indicate contents while liquid N2O remains",
-        "The cylinder is completely full",
-        "Exactly half the original contents remain",
-        "Only about 215 L remain"
+        "Human error and system factors",
+        "Spontaneous vaporizer explosions",
+        "Pipeline manufacturing defects alone",
+        "Failure of cylinder metal"
       ],
       "answer": [
         0
       ],
-      "explanation": "Nitrous oxide is stored as liquid plus vapor at room temperature, so pressure stays near its vapor pressure while liquid remains. Contents are determined by weight until the liquid is gone.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 1",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "1",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
+      "explanation": "The guide emphasizes that most events are multifactorial and that human error causes the majority, with haste, inattention, unfamiliarity, fatigue, and skipped checks as aggravating factors.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
     },
     {
       "id": "38",
       "set": 2,
       "type": "single",
-      "stem": "An oxygen cylinder pressure gauge reads 0 psig. Which statement is correct?",
+      "stem": "Which behavior is specifically identified as an aggravating factor for anesthesia adverse events?",
       "options": [
-        "The cylinder still contains gas at approximately atmospheric pressure",
-        "The cylinder is a perfect vacuum",
-        "The cylinder contains liquid oxygen",
-        "The gauge must be broken"
+        "Completing the pre-use check",
+        "Using closed-loop communication",
+        "Skipping equipment checks because of haste",
+        "Keeping alarms audible"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "Gauge pressure is measured relative to atmospheric pressure. At 0 psig the cylinder can still contain its internal volume of gas at about 1 atmosphere.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 1",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "1",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
+      "explanation": "Failure to check equipment, haste, distraction, inattention, fatigue, and unfamiliarity are specifically listed as aggravating factors.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
     },
     {
       "id": "39",
       "set": 2,
       "type": "single",
-      "stem": "Why can nitrous oxide be stored partly as a liquid in an E-cylinder at room temperature while oxygen cannot?",
+      "stem": "Which problem is an upstream hypoxemia hazard before gas reaches the workstation?",
       "options": [
-        "N2O has a critical temperature near 36°C, above room temperature",
-        "O2 has a critical temperature near 36°C",
-        "N2O has a lower molecular weight than O2",
-        "O2 is filled to a lower absolute pressure than N2O"
+        "Exhausted soda lime",
+        "A hospital oxygen reservoir filled with nitrogen",
+        "A kinked scavenger hose",
+        "A closed APL valve"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "A gas can be liquefied by pressure only below its critical temperature. N2O has a critical temperature around 36°C, whereas oxygen's is about -118.6°C.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 1",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "1",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
+      "explanation": "The hazards section lists an empty liquid oxygen reservoir, a reservoir filled with nitrogen, crossed pipelines, and closed pipeline valves as upstream hypoxemia hazards.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
     },
     {
       "id": "40",
       "set": 2,
       "type": "single",
-      "stem": "Which cylinder safety device opens at excessive pressure and then reseals after pressure falls?",
+      "stem": "Which hypoxemia hazard is usually detectable during a proper machine check?",
       "options": [
-        "Spring-loaded relief valve",
-        "Fusible plug",
-        "Frangible disk",
-        "Pin index safety system"
+        "Nitrogen inside a cylinder labeled oxygen",
+        "A disconnected oxygen hose",
+        "A crossed internal pipe downstream of the check",
+        "A normal-pressure pipeline containing the wrong gas"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "A spring-loaded relief valve opens when pressure is excessive and can reseal afterward. Fusible plugs melt with heat and frangible disks rupture.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 1",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "1",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
+      "explanation": "A disconnected oxygen hose is among the problems usually found during the machine check. Wrong-gas problems can evade pressure-based checks.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
     },
     {
       "id": "41",
       "set": 2,
       "type": "single",
-      "stem": "Which PISS pin positions identify an oxygen E-cylinder?",
+      "stem": "Which hazard may remain undetected even after an otherwise successful machine check?",
       "options": [
-        "2 and 5",
-        "3 and 5",
-        "1 and 5",
-        "1 and 6"
+        "A disconnected oxygen hose",
+        "An empty backup cylinder",
+        "Hypoxic gas inside a cylinder labeled as oxygen",
+        "An obvious breathing-circuit leak"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "The Pin Index Safety System assigns oxygen to pin positions 2 and 5.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 1",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "1",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
+      "explanation": "The guide notes that hypoxic gas in a cylinder can escape detection by a routine check because pressure may be present even when gas identity is wrong.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
     },
     {
       "id": "42",
       "set": 2,
       "type": "single",
-      "stem": "Which PISS pin positions identify a nitrous oxide E-cylinder?",
+      "stem": "What is the most common hypercarbia hazard identified in the workstation hazards section?",
       "options": [
-        "3 and 5",
-        "2 and 5",
-        "1 and 5",
-        "1 and 6"
+        "Forgetting to start the ventilator after intubation",
+        "Using a pulse oximeter",
+        "Opening the APL valve",
+        "Using a fresh absorbent canister"
       ],
       "answer": [
         0
       ],
-      "explanation": "Nitrous oxide uses PISS pin positions 3 and 5.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 1",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "1",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
+      "explanation": "Failure to initiate or continue controlled ventilation after intubation is identified as the most common hypercarbia cause.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
     },
     {
       "id": "43",
       "set": 2,
       "type": "single",
-      "stem": "Which PISS pin positions identify a medical air E-cylinder?",
+      "stem": "Which equipment change can increase PaCO₂ by increasing apparatus dead space?",
+      "options": [
+        "Adding unnecessary connectors between the patient and Y-piece",
+        "Removing an HME",
+        "Opening the oxygen cylinder",
+        "Turning on active scavenging"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Increased apparatus dead space is listed as a hypercarbia hazard. Extra connectors close to the patient increase rebreathed volume.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
+    },
+    {
+      "id": "44",
+      "set": 2,
+      "type": "single",
+      "stem": "Which circle-system arrangement should be avoided because it promotes rebreathing?",
+      "options": [
+        "Fresh gas inlet between the patient and expiratory valve",
+        "Fresh gas inlet upstream of the inspiratory valve in the standard position",
+        "Absorber between the valves",
+        "Inspiratory and expiratory valves near the absorber"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The guide lists a fresh gas inlet between the patient and expiratory valve as one of three incorrect circle arrangements associated with rebreathing.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
+    },
+    {
+      "id": "45",
+      "set": 2,
+      "type": "single",
+      "stem": "For spontaneous breathing with a Mapleson A circuit, what minimum fresh gas flow is given relative to minute ventilation?",
+      "options": [
+        "0.7 × minute ventilation",
+        "1.0 × minute ventilation",
+        "1.5 × minute ventilation",
+        "2.5 × minute ventilation"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The guide gives Mapleson A a minimum fresh gas flow of about 0.7 times minute ventilation for spontaneous breathing.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
+    },
+    {
+      "id": "46",
+      "set": 2,
+      "type": "single",
+      "stem": "For controlled ventilation with Mapleson B or C, what fresh gas flow range is described?",
+      "options": [
+        "0.3–0.5 × minute ventilation",
+        "0.7 × minute ventilation",
+        "1.5–2.5 × minute ventilation",
+        "Exactly 4 × minute ventilation"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Mapleson B and C are described as better suited to controlled ventilation and require roughly 1.5–2.5 times minute ventilation.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
+    },
+    {
+      "id": "47",
+      "set": 2,
+      "type": "single",
+      "stem": "High circuit pressure with essentially no gas flow most strongly suggests which equipment problem?",
+      "options": [
+        "Occlusion",
+        "Disconnection",
+        "Low fresh gas flow only",
+        "Pulse oximeter failure"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The guide associates occlusion from plastic wrap, filters, adapters, manufacturing defects, or misplaced components with high pressure and no flow.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
+    },
+    {
+      "id": "48",
+      "set": 2,
+      "type": "single",
+      "stem": "A spontaneously breathing patient develops unexpectedly high circuit pressure immediately after induction. Which setting should be checked first?",
+      "options": [
+        "APL valve left closed",
+        "Pulse oximeter alarm volume",
+        "Cylinder color",
+        "ECG lead selection"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "A closed APL valve after induction is specifically listed as a cause of high circuit pressure during spontaneous breathing.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
+    },
+    {
+      "id": "49",
+      "set": 2,
+      "type": "single",
+      "stem": "How can a scavenging problem create high breathing-circuit pressure?",
+      "options": [
+        "A kinked scavenger tube can obstruct waste-gas exit",
+        "An open interface always pressurizes the circuit",
+        "A full oxygen cylinder raises APL pressure",
+        "Low suction always creates negative circuit pressure"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Kinked tubing to the scavenger or a failed positive-pressure relief pathway can impede waste-gas exit and raise circuit pressure.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
+    },
+    {
+      "id": "50",
+      "set": 2,
+      "type": "single",
+      "stem": "Which pattern best fits an anesthesia breathing-circuit disconnection?",
+      "options": [
+        "High pressure and normal volume",
+        "Low pressure and low exhaled volume",
+        "High pressure and no capnogram change",
+        "Normal pressure with rising reservoir-bag volume"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Disconnections are associated with loss of pressure and delivered/exhaled volume. They are especially easy to miss when the airway is hidden by drapes.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
+    },
+    {
+      "id": "51",
+      "set": 2,
+      "type": "single",
+      "stem": "Why are breathing-circuit disconnects particularly concerning during head and neck surgery?",
+      "options": [
+        "The airway and connections may be concealed beneath surgical drapes",
+        "Nitrous oxide dissolves the connectors",
+        "The oxygen analyzer is automatically disabled",
+        "The APL valve cannot function near the head"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The guide notes that disconnects are common during neck surgery because drapes conceal the face and airway connections.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
+    },
+    {
+      "id": "52",
+      "set": 2,
+      "type": "single",
+      "stem": "Which circumstance increases the risk of volatile-agent dosing error according to the hazards guide?",
+      "options": [
+        "Moving vaporizers between locations",
+        "Using an oxygen analyzer",
+        "Checking the keyed filler",
+        "Locking the vaporizer interlock"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Agent-dosing errors can result from incorrect filling, liquid in fresh-gas piping, dial design, or two vaporizers on, and risk increases when vaporizers are moved.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
+    },
+    {
+      "id": "53",
+      "set": 2,
+      "type": "single",
+      "stem": "What electrical supply range is listed for the anesthesia machine?",
+      "options": [
+        "12–24 V DC only",
+        "50–70 V AC",
+        "90–130 V AC at 50–60 Hz",
+        "220–440 V AC only"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The guide lists normal machine power as approximately 90–130 V AC at 50–60 Hz.",
+      "citation": "SRNA Equipment Study Guide · Page 8",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "8",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
+    },
+    {
+      "id": "54",
+      "set": 2,
+      "type": "single",
+      "stem": "What backup-battery duration is emphasized for anesthesia workstations?",
+      "options": [
+        "About 5 minutes only",
+        "About 40 minutes, with some machines lasting 1–2 hours",
+        "Exactly 8 hours for every model",
+        "Battery operation is unlimited"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The guide reconciles model differences by emphasizing about 40 minutes on one slide and 1–2 hours on some machines; planning within about an hour is advised.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "55",
+      "set": 2,
+      "type": "single",
+      "stem": "What happens when workstation battery voltage falls below the low-voltage cutoff described in the guide?",
+      "options": [
+        "Only the pulse oximeter turns off",
+        "All machine power can be lost below roughly 10 V",
+        "The vaporizer automatically becomes mechanical",
+        "The pipeline oxygen pressure doubles"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The hazards section notes that all power can cut out when battery voltage falls below approximately 10 V.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "56",
+      "set": 2,
+      "type": "single",
+      "stem": "A circuit has 120 V across 60 Ω. Using Ohm's law, what current flows?",
+      "options": [
+        "0.5 A",
+        "2 A",
+        "60 A",
+        "7,200 A"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Ohm's law is E = I × R, so I = 120/60 = 2 A.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "57",
+      "set": 2,
+      "type": "single",
+      "stem": "For alternating current, which expression replaces simple resistance with impedance?",
+      "options": [
+        "E = I × Z",
+        "P = R ÷ I",
+        "E = Z ÷ I",
+        "J = E ÷ t"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "For AC circuits the guide uses E = I × Z, where impedance includes resistance, capacitance, and inductance.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "58",
+      "set": 2,
+      "type": "single",
+      "stem": "A device draws 5 A at 120 V. What electrical power does it use?",
+      "options": [
+        "24 W",
+        "125 W",
+        "600 W",
+        "6,000 W"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Electrical power is P = E × I. At 120 V and 5 A, power is 600 W.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "59",
+      "set": 2,
+      "type": "single",
+      "stem": "A 500-W device operates for 4 seconds. How much energy is delivered?",
+      "options": [
+        "125 J",
+        "500 J",
+        "2,000 J",
+        "4,000 J"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Energy in joules equals watts multiplied by seconds, so 500 W × 4 s = 2,000 J.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "60",
+      "set": 2,
+      "type": "single",
+      "stem": "How does direct current compare with alternating current in the guide's ventricular-fibrillation discussion?",
+      "options": [
+        "DC requires about three times more current than AC to cause ventricular fibrillation",
+        "DC is always harmless",
+        "AC cannot cause ventricular fibrillation",
+        "DC requires one-third the current of AC"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The guide states that roughly three times more direct current than alternating current is needed to cause ventricular fibrillation, while emphasizing that DC is not harmless.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "61",
+      "set": 2,
+      "type": "single",
+      "stem": "Which description best defines a capacitor?",
+      "options": [
+        "Two conductors separated by an insulator",
+        "A resistor connected directly to ground",
+        "A gas-specific pipeline connector",
+        "A pressure-regulating valve"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The electricity section defines a capacitor as two conductors separated by an insulator; with DC, only a momentary current flows as it charges.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "62",
+      "set": 2,
+      "type": "single",
+      "stem": "How is electrical grounding configured in a modern operating room according to the guide?",
+      "options": [
+        "Power supply grounded and equipment ungrounded",
+        "Power supply isolated from ground while equipment remains grounded",
+        "Neither power nor equipment grounded",
+        "Both configured exactly like a household circuit"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The guide describes OR power as ungrounded or isolated from ground for macroshock protection while equipment itself remains grounded.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "63",
+      "set": 2,
+      "type": "single",
+      "stem": "Why does electrosurgical-unit current not normally trigger ventricular fibrillation directly?",
+      "options": [
+        "Its radiofrequency is too high to excite myocardial cells",
+        "It is direct current only",
+        "It never passes through the patient",
+        "The return pad blocks all current"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Electrosurgery operates around 500 kHz–1 MHz. The guide notes that this high radiofrequency has low tissue penetration for stimulation and does not excite myocardial cells like low-frequency current.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "64",
+      "set": 2,
+      "type": "single",
+      "stem": "Why is the electrosurgical active tip small while the return pad is large?",
+      "options": [
+        "To concentrate current density at the surgical tip and disperse it at the return pad",
+        "To make current density identical at both sites",
+        "To increase current density under the return pad",
+        "To eliminate the need for a return pathway"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The small active tip concentrates current for tissue effect, while the large return pad spreads current over a broad area to reduce heating.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "65",
+      "set": 2,
+      "type": "single",
+      "stem": "What is the primary hazard of poor contact between an electrosurgical return pad and the patient?",
+      "options": [
+        "A concentrated-current thermal burn",
+        "Hypoxic gas delivery",
+        "Carbon-dioxide rebreathing",
+        "Vaporizer overfilling"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Poor return-pad contact reduces the effective contact area and concentrates current, increasing burn risk.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "66",
+      "set": 2,
+      "type": "single",
+      "stem": "Which devices may be affected by electrosurgical interference?",
+      "options": [
+        "Only the temperature probe",
+        "ECG, pulse oximetry, cardiac-output monitors, and pacemakers",
+        "Only the oxygen cylinder gauge",
+        "Only the scavenging interface"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The guide lists ECG, pulse oximetry, cardiac-output monitoring, and implanted pacemakers among devices susceptible to electrosurgical interference.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "67",
+      "set": 2,
+      "type": "single",
+      "stem": "Why should alcohol- or acetone-based skin preparation be allowed to dry before electrosurgery?",
+      "options": [
+        "Wet preparation can serve as fire fuel near an ignition source",
+        "It causes hypercarbia",
+        "It raises pipeline pressure",
+        "It disables the oxygen analyzer"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The fire-prevention guidance specifically says to let alcohol or acetone preparation dry before using an electrosurgical ignition source.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "68",
+      "set": 2,
+      "type": "single",
+      "stem": "After total electrical power and battery power are lost, which inhaled-anesthetic device can still function?",
+      "options": [
+        "Only a mechanical variable-bypass vaporizer with an available gas source",
+        "Tec 6 desflurane vaporizer",
+        "GE Aladin cassette",
+        "Any electronic vaporizer"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "After the battery is exhausted, the guide states that emergency oxygen and mechanical variable-bypass vaporizers can remain usable; electronic vaporizers require power.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "69",
+      "set": 2,
+      "type": "single",
+      "stem": "Which vaporizer specifically requires electrical power and therefore cannot continue after complete power loss?",
+      "options": [
+        "Copper kettle",
+        "Tec 6 desflurane vaporizer",
+        "A simple draw-over vaporizer",
+        "Any purely mechanical variable-bypass vaporizer"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Tec 6/D-Vapor desflurane systems and electronic vaporizers such as Aladin require power.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "70",
+      "set": 2,
+      "type": "single",
+      "stem": "What contingency plan is recommended during the workstation battery window before complete power loss?",
+      "options": [
+        "Prepare a Mapleson circuit and an IV anesthetic plan",
+        "Increase reliance on the Aladin cassette",
+        "Disable emergency oxygen",
+        "Turn off all manual ventilation equipment"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The guide recommends using the battery interval to prepare a Mapleson circuit for ventilation and TIVA, such as propofol, before power is exhausted.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "71",
+      "set": 2,
+      "type": "multi",
+      "stem": "Which three components form the operating-room fire triangle? Select 3.",
+      "options": [
+        "Ignition source",
+        "Oxidizer",
+        "Fuel",
+        "Scavenging vacuum",
+        "Pipeline regulator",
+        "Pulse oximeter"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "The fire triangle consists of an ignition source, an oxidizer, and fuel. In the OR these commonly involve surgical energy, oxygen/nitrous oxide, and combustible materials.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "72",
+      "set": 2,
+      "type": "single",
+      "stem": "Why is substituting nitrous oxide for oxygen not a safe strategy to reduce fire risk?",
+      "options": [
+        "Nitrous oxide supports combustion as an oxidizer",
+        "Nitrous oxide is nonflammable and extinguishes fire",
+        "Nitrous oxide prevents ignition only above 50%",
+        "Nitrous oxide absorbs heat from drapes"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The guide emphasizes that nitrous oxide supports combustion like oxygen; a 50/50 oxygen–nitrous mixture can support combustion like 100% oxygen.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "73",
+      "set": 2,
+      "type": "single",
+      "stem": "Which anesthetic action reduces fire risk when an ignition source is close to the airway?",
+      "options": [
+        "Use the lowest acceptable FiO₂ and avoid nitrous oxide",
+        "Increase oxygen to 100%",
+        "Add nitrous oxide as a fire suppressant",
+        "Tent the drapes tightly around the face"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Fire prevention includes using the lowest acceptable inspired oxygen concentration, avoiding nitrous oxide, and communicating when oxidizer and ignition source are close.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "74",
+      "set": 2,
+      "type": "single",
+      "stem": "How should surgical drapes be arranged around an open oxygen source?",
+      "options": [
+        "To prevent oxygen from pooling beneath the drapes",
+        "To create a sealed pocket of oxygen",
+        "To direct oxygen toward the cautery tip",
+        "To block room-air entrainment completely"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The guide specifically recommends configuring drapes so oxygen does not accumulate in a pocket around the operative field.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "75",
+      "set": 2,
+      "type": "single",
+      "stem": "What fire-preparedness item should be identified during the operating-room time-out?",
+      "options": [
+        "Location of the fire extinguisher",
+        "Color of the oxygen cylinder only",
+        "Exact battery chemistry",
+        "Serial number of the vaporizer"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The fire-preparation section states that the time-out should identify the extinguisher location, with the circulator knowing where it is.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "76",
+      "set": 2,
+      "type": "single",
+      "stem": "Which findings are described as early warning signs of an operating-room fire?",
+      "options": [
+        "Pop, flash, and smoke",
+        "Slowly falling NIBP only",
+        "Isolated low train-of-four ratio",
+        "A quiet oxygen analyzer"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The guide names a pop, flash, or smoke as early fire signs requiring immediate action.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "77",
+      "set": 2,
+      "type": "single",
+      "stem": "What is the first coordinated response to an airway fire?",
+      "options": [
+        "Remove the endotracheal tube and stop gases simultaneously",
+        "Increase oxygen flow and leave the tube in place",
+        "Apply a CO₂ extinguisher into the airway before tube removal",
+        "Continue ventilation until the surgeon removes the ignition source"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "For an airway fire, the guide says to remove the tube and stop gas flow at the same time, then proceed with airway extinguishing and assessment.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "78",
+      "set": 2,
+      "type": "single",
+      "stem": "After the tube is removed and gases are stopped for an airway fire, what should be introduced into the airway?",
+      "options": [
+        "Saline",
+        "Alcohol",
+        "Nitrous oxide",
+        "Dry chemical powder"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The airway-fire sequence includes saline into the airway after simultaneous tube removal and gas cessation.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "79",
+      "set": 2,
+      "type": "single",
+      "stem": "What is the first sequence for a fire on the patient rather than inside the airway?",
+      "options": [
+        "Turn off gases, remove drapes and burning material, then extinguish",
+        "Continue oxygen and cover the fire with more drapes",
+        "Assess the patient before stopping gases",
+        "Leave burning drapes in place to limit airflow"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "For a patient fire, the guide directs the team to stop gases, remove drapes and burning material, extinguish the fire, and then assess the patient.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "80",
+      "set": 2,
+      "type": "single",
+      "stem": "If water or saline does not extinguish an operating-room fire, which extinguisher does the guide recommend?",
+      "options": [
+        "Carbon dioxide extinguisher",
+        "Class D metal extinguisher only",
+        "Foam extinguisher only",
+        "No extinguisher should ever be used"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The guide specifies a carbon dioxide extinguisher when the fire cannot be controlled with water or saline.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "81",
+      "set": 2,
+      "type": "single",
+      "stem": "During evacuation for an uncontrolled operating-room fire, what should be done with the room door?",
+      "options": [
+        "Close it and do not reopen it",
+        "Prop it fully open",
+        "Open it repeatedly to vent smoke",
+        "Remove it from the hinges"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The evacuation guidance says to close the operating-room door and not reopen it.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "82",
+      "set": 2,
+      "type": "single",
+      "stem": "What utility action is included when an operating-room fire cannot be controlled?",
+      "options": [
+        "Turn off the medical-gas supply to the room",
+        "Increase pipeline oxygen pressure",
+        "Open every gas cylinder",
+        "Increase fresh gas flow"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "For an uncontrolled fire, the guide includes turning off the medical-gas supply to the room after alarm/evacuation steps.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "83",
+      "set": 2,
+      "type": "single",
+      "stem": "What should happen to the tube, circuit, and drapes after an operating-room fire once the patient is safe?",
+      "options": [
+        "Preserve them as part of the event scene",
+        "Discard them immediately before reporting",
+        "Send only the vaporizer for disposal",
+        "Clean them before risk management review"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Post-event guidance includes preserving the scene and involved equipment/materials, notifying risk management, and reporting the adverse event.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "9",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
+    },
+    {
+      "id": "84",
+      "set": 2,
+      "type": "single",
+      "stem": "Which pressure relationship explains why the anesthesia machine normally draws from the pipeline rather than an open backup cylinder?",
+      "options": [
+        "Pipeline about 50–55 psi exceeds regulated cylinder pressure around 40–45 psi",
+        "Cylinder pressure is always below 10 psi",
+        "Pipeline pressure is lower than the vaporizer sump",
+        "The flowmeter creates pipeline priority electronically"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Pipeline pressure is normally about 50–55 psi, higher than the approximately 40–45 psi regulated cylinder source, so pipeline gas is preferentially used.",
+      "citation": "SRNA Equipment Study Guide · Page 10",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "10",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 10"
+    },
+    {
+      "id": "85",
+      "set": 2,
+      "type": "single",
+      "stem": "At approximately what oxygen-supply pressure does the fail-safe begin reducing other gas flow?",
+      "options": [
+        "Below about 25–30 psig",
+        "Below 100 psig",
+        "Below 500 psig",
+        "Only at 0 psig"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The guide states that the fail-safe proportionally reduces other gases when oxygen pressure falls below about 25–30 psig and stops them below about 20 psig.",
+      "citation": "SRNA Equipment Study Guide · Page 10",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "10",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 10"
+    },
+    {
+      "id": "86",
+      "set": 2,
+      "type": "single",
+      "stem": "What minimum oxygen concentration is the proportioning system designed to maintain for an oxygen–nitrous oxide mixture?",
+      "options": [
+        "10%",
+        "21%",
+        "25%",
+        "50%"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The proportioning system links oxygen and nitrous oxide flow controls to maintain at least about 25% oxygen in that two-gas mixture.",
+      "citation": "SRNA Equipment Study Guide · Page 10",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "10",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 10"
+    },
+    {
+      "id": "87",
+      "set": 2,
+      "type": "single",
+      "stem": "Which output best matches the oxygen flush valve?",
+      "options": [
+        "35–75 L/min at about 40–50 psi",
+        "2 L/min at 2 psi",
+        "10 L/min at atmospheric pressure only",
+        "100 L/min through the vaporizer sump"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The quick-reference table lists oxygen flush flow at about 35–75 L/min delivered from the intermediate-pressure system at roughly 40–50 psi.",
+      "citation": "SRNA Equipment Study Guide · Page 10",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "10",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 10"
+    },
+    {
+      "id": "88",
+      "set": 2,
+      "type": "single",
+      "stem": "Approximately how much oxygen is contained in a full E-cylinder at about 1900 psig?",
+      "options": [
+        "66 L",
+        "330 L",
+        "660 L",
+        "1,590 L"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The guide uses approximately 660 L for a full oxygen E-cylinder around 1900 psig.",
+      "citation": "SRNA Equipment Study Guide · Page 10",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "10",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 10"
+    },
+    {
+      "id": "89",
+      "set": 2,
+      "type": "single",
+      "stem": "Which statement about a nitrous-oxide E-cylinder is correct while liquid nitrous oxide remains?",
+      "options": [
+        "Pressure stays near 745 psig despite falling contents",
+        "Pressure falls linearly from 1900 psig",
+        "The cylinder contains only compressed gas",
+        "The pressure gauge accurately shows percent full"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "A nitrous-oxide E-cylinder contains liquid and gas; pressure remains around 745 psig while liquid remains, so the gauge does not indicate remaining contents.",
+      "citation": "SRNA Equipment Study Guide · Page 10",
+      "topic": "Hazards & Safety",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "10",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 10"
+    },
+    {
+      "id": "90",
+      "set": 2,
+      "type": "single",
+      "stem": "What Pin Index Safety System positions identify an oxygen E-cylinder?",
       "options": [
         "1 and 5",
         "2 and 5",
@@ -4642,1849 +6150,345 @@
         "1 and 6"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "Medical air uses PISS pin positions 1 and 5.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 1",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "1",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "44",
-      "set": 2,
-      "type": "single",
-      "stem": "Which PISS pin positions identify a carbon dioxide cylinder?",
-      "options": [
-        "1 and 6",
-        "1 and 5",
-        "2 and 5",
-        "3 and 5"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Carbon dioxide uses PISS pin positions 1 and 6.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 1",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "1",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "45",
-      "set": 2,
-      "type": "single",
-      "stem": "What is the main safety purpose of the Diameter Index Safety System (DISS) on the anesthesia machine?",
-      "options": [
-        "It uses gas-specific threaded diameters to prevent misconnections",
-        "It prevents two vaporizers from being turned on together",
-        "It limits oxygen flow below 25% FiO2",
-        "It prevents a cylinder from being attached to the wrong yoke"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "DISS provides nationally standardized, gas-specific threaded connections for pipeline gases and suction, reducing the chance of connecting the wrong hose to the machine.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 1",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "1",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "46",
-      "set": 2,
-      "type": "single",
-      "stem": "With normal supplies connected, why does the anesthesia machine preferentially use pipeline oxygen rather than cylinder oxygen?",
-      "options": [
-        "Pipeline pressure is about 50–55 psi, higher than the cylinder regulator output of about 45 psi",
-        "Cylinder oxygen is blocked by the PISS pins during normal use",
-        "The fail-safe valve closes the cylinder inlet whenever pipeline oxygen is present",
-        "Pipeline oxygen bypasses all check valves"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "The pipeline normally supplies about 50–55 psi, which exceeds the regulated cylinder pressure of roughly 45 psi and therefore becomes the preferential source.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "47",
-      "set": 2,
-      "type": "single",
-      "stem": "Why should the backup oxygen cylinder be closed after the pre-use check?",
-      "options": [
-        "If left open, it may drain silently during a pipeline failure and delay recognition until the cylinder is empty",
-        "An open cylinder disables the oxygen analyzer",
-        "An open cylinder raises pipeline pressure above 100 psi",
-        "It prevents the oxygen flush from working"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "An open backup cylinder can begin supplying gas when pipeline pressure falls, masking the failure until the cylinder is depleted. The low-supply alarm may then announce the end of the reserve rather than the start of the emergency.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 2",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "The quick-reference table lists oxygen PISS positions as 2 and 5.",
+      "citation": "SRNA Equipment Study Guide · Page 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
-    },
-    {
-      "id": "48",
-      "set": 2,
-      "type": "single",
-      "stem": "What does the anesthesia machine fail-safe valve actually sense?",
-      "options": [
-        "Oxygen supply pressure",
-        "Inspired oxygen concentration",
-        "End-tidal oxygen concentration",
-        "Nitrous oxide cylinder weight"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Mapleson A, or the Magill circuit, is the circuit emphasized for spontaneous breathing. It requires fresh gas flow of about 0.7 × minute ventilation and tubing long enough to keep exhaled CO2 from reaching the reservoir bag.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 2",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 2",
+      "supp": null,
       "sourceMeta": {
         "families": [
-          "Anesthesia Workstation Hazards & Safety"
+          "SRNA Equipment Study Guide"
         ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
+        "pdfPages": "10",
+        "citationFormat": "document"
       },
-      "topic": "Hazards & Safety",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "49",
-      "set": 2,
-      "type": "single",
-      "stem": "Why can a proportioning system still permit a hypoxic mixture when a third gas such as helium is used?",
-      "options": [
-        "It links only oxygen and nitrous oxide flows and does not account for the third gas",
-        "Helium disables the oxygen analyzer",
-        "Helium increases pipeline pressure above the fail-safe threshold",
-        "The oxygen flush automatically closes"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Traditional proportioning systems mechanically or electronically link O2 and N2O. A third gas such as helium or air is outside that linkage and can dilute oxygen.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 2",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Hazards & Safety",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "50",
-      "set": 2,
-      "type": "single",
-      "stem": "Which monitor is the final safeguard for detecting that oxygen is actually present in the inspired gas mixture?",
-      "options": [
-        "Inspired oxygen analyzer",
-        "Fail-safe valve",
-        "Proportioning system",
-        "Cylinder pressure gauge"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Pressure-based and ratio devices cannot detect all wrong-gas or crossed-pipeline events. Direct inspired oxygen analysis verifies the gas reaching the breathing system.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 2",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Hazards & Safety",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "51",
-      "set": 2,
-      "type": "single",
-      "stem": "A ball-type float is used in a Thorpe tube flowmeter. Where should the flow be read?",
-      "options": [
-        "At the center of the ball",
-        "At the top of the ball",
-        "At the bottom of the ball",
-        "At the narrowest part of the tube"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "A ball float is read at its center. Thorpe tubes are constant-pressure, variable-orifice flowmeters.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "52",
-      "set": 2,
-      "type": "single",
-      "stem": "Which physical property primarily determines gas flow through a Thorpe tube at very low flow rates?",
-      "options": [
-        "Viscosity",
-        "Density",
-        "Vapor pressure",
-        "Critical temperature"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Low flow is predominantly laminar and depends on viscosity. At higher turbulent flow rates, density becomes more important.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "53",
-      "set": 2,
-      "type": "single",
-      "stem": "Why is the oxygen flowmeter positioned downstream, closest to the common gas outlet, on traditional flowmeter banks?",
-      "options": [
-        "A leak in an upstream nonoxygen tube is less likely to produce a hypoxic mixture",
-        "It allows oxygen to bypass the vaporizer",
-        "It makes oxygen flow turbulent at all settings",
-        "It prevents a leak in the oxygen tube itself from being dangerous"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "An occlusion limits forward gas movement, so pressure rises while flow falls or stops. The guide lists causes such as plastic wrap, filters, misconnected humidifiers, adapters, and other mechanical obstruction.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "54",
-      "set": 2,
-      "type": "single",
-      "stem": "Which components are bypassed when the oxygen flush valve is activated?",
-      "options": [
-        "Flowmeters and vaporizers",
-        "Cylinder regulator and pipeline inlet",
-        "Breathing circuit and common gas outlet",
-        "Oxygen analyzer and pressure alarms"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "The oxygen flush sends high-flow oxygen from the intermediate-pressure system directly toward the common gas outlet, bypassing flowmeters and vaporizers.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "55",
-      "set": 2,
-      "type": "single",
-      "stem": "What is a major hazard of activating the oxygen flush during inspiration on a mechanically ventilated patient?",
-      "options": [
-        "Barotrauma from very high flow and pressure",
-        "Carbon monoxide production",
-        "Rapid soda lime exhaustion",
-        "Loss of cylinder indexing"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "The flush can deliver roughly 35–75 L/min at intermediate-system pressure. If delivered into a closed or pressurized circuit it can cause dangerously high airway pressure and barotrauma.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 2",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Hazards & Safety",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "56",
-      "set": 2,
-      "type": "single",
-      "stem": "In a conventional variable-bypass vaporizer, what does the concentration dial primarily change?",
-      "options": [
-        "The splitting ratio between bypass flow and vaporizing-chamber flow",
-        "The vapor pressure of the anesthetic agent",
-        "The pipeline pressure entering the machine",
-        "The boiling point of the liquid agent"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Fresh gas divides between the bypass and vaporizing chamber. The dial changes that splitting ratio to achieve the selected output.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "57",
-      "set": 2,
-      "type": "single",
-      "stem": "What is the function of the bimetallic temperature-compensating element in a variable-bypass vaporizer?",
-      "options": [
-        "It sends proportionally more gas through the vaporizing chamber as the liquid cools",
-        "It electrically heats the liquid agent to 39°C",
-        "It closes the common gas outlet at low temperature",
-        "It measures agent concentration by infrared absorption"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Vaporization cools the liquid and would reduce vapor pressure. The bimetallic element compensates by directing more carrier gas through the vaporizing chamber as temperature falls.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "58",
-      "set": 2,
-      "type": "single",
-      "stem": "A vaporizer is set to 2% with fresh gas flow of 4 L/min. Using the lecture shortcut, approximately how much liquid volatile agent is consumed per hour?",
-      "options": [
-        "24 mL/hr",
-        "8 mL/hr",
-        "12 mL/hr",
-        "48 mL/hr"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "The study-guide shortcut is mL liquid/hr = vol% × FGF (L/min) × 3. Thus 2 × 4 × 3 = 24 mL/hr.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 3",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 3",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "3",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "59",
-      "set": 2,
-      "type": "single",
-      "stem": "A conventional variable-bypass vaporizer is accidentally tipped. What is the main immediate concern?",
-      "options": [
-        "Liquid agent can enter the bypass chamber and cause excessive output",
-        "The vaporizer permanently stops producing vapor",
-        "The agent becomes chemically inactive",
-        "The common gas outlet closes"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Tipping can allow liquid anesthetic into the bypass pathway, exposing much more gas to liquid agent and causing overdose. The unit must be managed according to the manufacturer's decontamination procedure.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 3",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 3",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "3",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Hazards & Safety",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "60",
-      "set": 2,
-      "type": "single",
-      "stem": "An isoflurane-filled vaporizer is mistakenly placed where sevoflurane was intended. Why may output exceed the dialed concentration?",
-      "options": [
-        "Isoflurane has a higher saturated vapor pressure than sevoflurane",
-        "Isoflurane has a lower molecular weight",
-        "Sevoflurane has a higher boiling point only",
-        "Isoflurane disables temperature compensation"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "At 20°C isoflurane's vapor pressure is roughly 240 mmHg versus about 160 mmHg for sevoflurane. A vaporizer calibrated for the lower-vapor-pressure agent can therefore deliver more than dialed when filled with the higher-vapor-pressure agent.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 3",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 3",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "3",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "61",
-      "set": 2,
-      "type": "single",
-      "stem": "How does the Tec 6 desflurane vaporizer differ from a conventional variable-bypass vaporizer?",
-      "options": [
-        "Fresh gas does not enter the heated pressurized sump",
-        "It requires no electrical power",
-        "It uses a bimetallic strip as its only control",
-        "It operates at room temperature and atmospheric pressure"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "The Tec 6 heats desflurane to about 39°C and pressurizes it to roughly 2 atmospheres. Fresh gas does not pass through the sump; vapor delivery is matched to fresh-gas back pressure.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 3",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 3",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "3",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "62",
-      "set": 2,
-      "type": "single",
-      "stem": "Which feature is characteristic of the Aladin vaporizer cassette system?",
-      "options": [
-        "A CPU identifies the agent by a coded cassette and the system requires electrical power",
-        "It is a purely mechanical copper kettle",
-        "It can only be filled with desflurane",
-        "It uses no electronic controls"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "The Aladin system uses electronically controlled cassettes identified by coding and requires electrical power.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 3",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 3",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "3",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "63",
-      "set": 2,
-      "type": "single",
-      "stem": "Why must output from a copper-kettle vaporizer be calculated rather than simply read from a concentration dial?",
-      "options": [
-        "It is not concentration calibrated",
-        "It cannot vaporize volatile anesthetics",
-        "It operates only with nitrous oxide",
-        "Its vapor pressure is always 760 mmHg"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "A copper kettle is not concentration calibrated. The clinician must calculate output from vapor flow and total fresh gas flow.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 3",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 3",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "3",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "64",
-      "set": 2,
-      "type": "single",
-      "stem": "Which leak-test approach is appropriate for a low-pressure system that contains an outlet check valve at the common gas outlet?",
-      "options": [
-        "Negative-pressure leak test",
-        "Positive-pressure test only",
-        "No leak test is needed",
-        "Cylinder pressure drop test only"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "An outlet check valve can hide downstream leaks from a positive-pressure test performed at the common gas outlet. A negative-pressure test is used to assess the low-pressure system in this design.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 3",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 3",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "3",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Hazards & Safety",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "65",
-      "set": 2,
-      "type": "single",
-      "stem": "The auxiliary common gas outlet is accidentally left selected after induction. What can happen to the circle breathing system?",
-      "options": [
-        "It may receive no fresh gas flow",
-        "It automatically receives twice the set fresh gas flow",
-        "The oxygen analyzer is bypassed but flow is unchanged",
-        "The scavenger becomes pressurized"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Selecting the auxiliary outlet diverts fresh gas away from the circle system. If left selected, the circle can be deprived of fresh gas.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 3",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 3",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "3",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Hazards & Safety",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "66",
-      "set": 2,
-      "type": "single",
-      "stem": "Which component makes up the largest fraction of traditional wet soda lime?",
-      "options": [
-        "Calcium hydroxide",
-        "Sodium hydroxide",
-        "Potassium hydroxide",
-        "Water"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Traditional wet soda lime is mostly calcium hydroxide, with water and smaller amounts of strong bases such as sodium or potassium hydroxide.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 4",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "4",
-        "citationFormat": "study-guide"
-      },
-      "topic": "CO₂ & Scavenging",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "67",
-      "set": 2,
-      "type": "single",
-      "stem": "Why are carbon dioxide absorbent granules commonly manufactured in the 4–8 mesh range?",
-      "options": [
-        "It balances surface area for absorption against resistance to gas flow",
-        "It eliminates all channeling",
-        "It prevents compound A formation completely",
-        "It makes indicator dye unnecessary"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Smaller granules increase surface area but also increase resistance. The 4–8 mesh range balances absorption efficiency and breathing-system resistance.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 4",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "4",
-        "citationFormat": "study-guide"
-      },
-      "topic": "CO₂ & Scavenging",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "68",
-      "set": 2,
-      "type": "single",
-      "stem": "During the soda-lime reaction, which substance is consumed while sodium and potassium hydroxides are regenerated?",
-      "options": [
-        "Calcium hydroxide",
-        "Water",
-        "Ethyl violet",
-        "Calcium carbonate"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Strong bases facilitate the early reactions and are regenerated. Calcium hydroxide is ultimately consumed as calcium carbonate forms.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 4",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "4",
-        "citationFormat": "study-guide"
-      },
-      "topic": "CO₂ & Scavenging",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "69",
-      "set": 2,
-      "type": "single",
-      "stem": "Approximately how much carbon dioxide can 100 g of fresh soda lime absorb?",
-      "options": [
-        "26 L",
-        "2.6 L",
-        "260 L",
-        "6 L"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "The lecture value is approximately 26 L of CO2 per 100 g of absorbent.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 4",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "4",
-        "citationFormat": "study-guide"
-      },
-      "topic": "CO₂ & Scavenging",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "70",
-      "set": 2,
-      "type": "single",
-      "stem": "Why can very high fresh gas flow delay recognition of exhausted carbon dioxide absorbent?",
-      "options": [
-        "High flow can wash CO2 out of the circuit and mask rebreathing",
-        "High flow chemically regenerates calcium hydroxide",
-        "High flow turns exhausted ethyl violet white permanently",
-        "High flow converts CO into CO2"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "High fresh-gas flow reduces rebreathing and may keep inspired CO2 near zero despite reduced absorbent capacity, temporarily masking exhaustion.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 4",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "4",
-        "citationFormat": "study-guide"
-      },
-      "topic": "CO₂ & Scavenging",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "71",
-      "set": 2,
-      "type": "single",
-      "stem": "A soda-lime canister that previously turned purple is white again after sitting unused. What is the safest interpretation?",
-      "options": [
-        "Indicator dye can regenerate, so color alone cannot prove the absorbent is fresh",
-        "The absorbent has fully regenerated chemically",
-        "The canister is safe for unlimited reuse",
-        "White color excludes channeling"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Poor contact under the ESU return pad concentrates current density instead of dispersing it over a broad area. That concentration can generate heat and cause a patient burn at the pad site.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 4",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "4",
-        "citationFormat": "study-guide"
-      },
-      "topic": "CO₂ & Scavenging",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "72",
-      "set": 2,
-      "type": "single",
-      "stem": "What is 'channeling' in a carbon dioxide absorbent canister?",
-      "options": [
-        "Gas follows a preferential path, exhausting absorbent along that path while other granules appear fresh",
-        "The indicator dye diffuses evenly through the canister",
-        "Fresh gas bypasses the breathing circuit entirely",
-        "Calcium hydroxide is converted back from calcium carbonate"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Gas may preferentially travel along a low-resistance path, often near the smooth canister wall. Absorbent on that path exhausts early while the rest can look unused.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 4",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "4",
-        "citationFormat": "study-guide"
-      },
-      "topic": "CO₂ & Scavenging",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "73",
-      "set": 2,
-      "type": "single",
-      "stem": "Which finding most strongly supports clinically significant absorbent exhaustion regardless of canister color?",
-      "options": [
-        "Inspired CO2 remains above zero with rising ETCO2",
-        "The canister is cool to touch",
-        "The patient has a normal SpO2",
-        "The reservoir bag is full"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Rebreathing is demonstrated by inspired CO2 above zero. Rising ETCO2 plus inspired CO2 should prompt replacement of the absorbent regardless of its visible color.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 4",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "4",
-        "citationFormat": "study-guide"
-      },
-      "topic": "CO₂ & Scavenging",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "74",
-      "set": 2,
-      "type": "single",
-      "stem": "Which conditions favor formation of compound A during sevoflurane anesthesia?",
-      "options": [
-        "Warm or dry absorbent, high sevoflurane concentration, and low fresh gas flow",
-        "Wet absorbent, low sevoflurane concentration, and high fresh gas flow",
-        "Use of halothane with fresh absorbent",
-        "High humidity and room-air ventilation"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Compound A is associated with sevoflurane and is promoted by warmer, drier absorbent, higher agent concentration, and lower fresh gas flow.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 4",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "4",
-        "citationFormat": "study-guide"
-      },
-      "topic": "CO₂ & Scavenging",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "75",
-      "set": 2,
-      "type": "single",
-      "stem": "Which volatile anesthetics are associated with carbon monoxide production in desiccated absorbent?",
-      "options": [
-        "Desflurane, enflurane, and isoflurane",
-        "Sevoflurane and halothane only",
-        "Sevoflurane only",
-        "Nitrous oxide and sevoflurane"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Agents containing the relevant difluoromethyl group can generate CO with desiccated strong-base absorbent. The lecture order is desflurane greater than enflurane greater than isoflurane; sevoflurane and halothane do not.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 4",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "4",
-        "citationFormat": "study-guide"
-      },
-      "topic": "CO₂ & Scavenging",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "76",
-      "set": 2,
-      "type": "single",
-      "stem": "Why can conventional pulse oximetry be misleading in carbon monoxide exposure?",
-      "options": [
-        "Carboxyhemoglobin can make SpO2 appear falsely high",
-        "CO always drives SpO2 to exactly 85%",
-        "CO prevents the probe from detecting a pulse",
-        "CO causes a falsely low hemoglobin concentration"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Standard two-wavelength pulse oximetry cannot reliably distinguish oxyhemoglobin from carboxyhemoglobin and may therefore display a falsely reassuring saturation. Co-oximetry is required.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 4",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "4",
-        "citationFormat": "study-guide"
-      },
-      "topic": "CO₂ & Scavenging",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "77",
-      "set": 2,
-      "type": "single",
-      "stem": "What NIOSH ceiling recommendation is commonly taught for a halogenated anesthetic used without nitrous oxide?",
-      "options": [
-        "2 ppm",
-        "25 ppm",
-        "50 ppm",
-        "0.05 ppm"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "The operating-room fire triangle consists of an ignition source, an oxidizer, and fuel. Eliminating or reducing any one of those three elements lowers the chance that a fire can start or continue.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 4",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "4",
-        "citationFormat": "study-guide"
-      },
-      "topic": "CO₂ & Scavenging",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "78",
-      "set": 2,
-      "type": "single",
-      "stem": "What NIOSH time-weighted exposure limit is commonly taught for nitrous oxide during administration?",
-      "options": [
-        "25 ppm",
-        "2 ppm",
-        "0.5 ppm",
-        "100 ppm"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "The study guide lists 25 ppm as the NIOSH time-weighted recommendation for nitrous oxide during administration.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 4",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "4",
-        "citationFormat": "study-guide"
-      },
-      "topic": "CO₂ & Scavenging",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "79",
-      "set": 2,
-      "type": "single",
-      "stem": "In an open scavenging interface, what happens when suction is too low?",
-      "options": [
-        "Waste gas can spill into the operating room",
-        "The reservoir bag collapses",
-        "Negative pressure is transmitted directly to the patient",
-        "The APL valve closes automatically"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Open interfaces are valveless and vent to room air. Insufficient suction allows waste gas to escape into the room; excessive suction simply entrains room air.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 5",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 5",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "5",
-        "citationFormat": "study-guide"
-      },
-      "topic": "CO₂ & Scavenging",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "80",
-      "set": 2,
-      "type": "single",
-      "stem": "A closed scavenging interface loses vacuum during a case. What should you expect?",
-      "options": [
-        "The reservoir bag distends and the positive-pressure relief valve may vent to the room",
-        "The reservoir bag collapses and the negative-pressure relief valve opens",
-        "The oxygen analyzer alarms for low FiO2",
-        "The vaporizer shuts off"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "With vacuum failure, gas accumulates in a closed interface, distending the reservoir and opening the positive-pressure relief valve if pressure rises enough.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 5",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 5",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "5",
-        "citationFormat": "study-guide"
-      },
-      "topic": "CO₂ & Scavenging",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "81",
-      "set": 2,
-      "type": "single",
-      "stem": "During mask ventilation, the chest appears to move slightly but there is no capnogram and SpO2 is falling. What is the best interpretation?",
-      "options": [
-        "Ventilation is inadequate despite the apparent chest movement",
-        "Ventilation is adequate because the chest moves",
-        "The pulse oximeter must be wrong",
-        "The patient is necessarily bronchospastic"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Objective evidence such as sustained oxygen saturation, exhaled volume, airway pressure, and waveform ETCO2 should outweigh a misleading visual impression of chest movement.",
-      "citation": "Airway Equipment · Study Guide p. 6",
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Study Guide p. 6",
-      "sourceMeta": {
-        "families": [
-          "Airway Equipment"
-        ],
-        "studyGuidePage": "6",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Airway",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "82",
-      "set": 2,
-      "type": "single",
-      "stem": "During mask ventilation, which pattern most strongly suggests upper-airway obstruction rather than a leak?",
-      "options": [
-        "High airway pressure with little exhaled volume",
-        "Low airway pressure with little exhaled volume",
-        "Normal pressure with normal volume",
-        "Low pressure with a large exhaled volume"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Obstruction requires pressure but produces little flow or volume. A leak more often produces low pressure with low delivered or exhaled volume.",
-      "citation": "Airway Equipment · Study Guide p. 6",
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Study Guide p. 6",
-      "sourceMeta": {
-        "families": [
-          "Airway Equipment"
-        ],
-        "studyGuidePage": "6",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Airway",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "83",
-      "set": 2,
-      "type": "single",
-      "stem": "Which maneuvers make up the classic triple airway maneuver?",
-      "options": [
-        "Head extension, chin lift, and jaw thrust",
-        "Neck flexion, cricoid pressure, and tongue traction",
-        "Jaw closure, head flexion, and shoulder depression",
-        "Chin tuck, neck rotation, and oral suction"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "The triple airway maneuver combines head extension, chin lift, and jaw thrust to relieve soft-tissue obstruction.",
-      "citation": "Airway Equipment · Study Guide p. 6",
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Study Guide p. 6",
-      "sourceMeta": {
-        "families": [
-          "Airway Equipment"
-        ],
-        "studyGuidePage": "6",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Airway",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "84",
-      "set": 2,
-      "type": "single",
-      "stem": "Which airway adjunct is generally better tolerated in an awake or lightly sedated patient?",
-      "options": [
-        "Nasopharyngeal airway",
-        "Oropharyngeal airway",
-        "Rigid bite block",
-        "Oral RAE tube"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "An NPA is usually better tolerated in an awake or lightly sedated patient. An OPA can trigger gagging or laryngospasm when airway reflexes are intact.",
-      "citation": "Airway Equipment · Study Guide p. 6",
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Study Guide p. 6",
-      "sourceMeta": {
-        "families": [
-          "Airway Equipment"
-        ],
-        "studyGuidePage": "6",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Airway",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "85",
-      "set": 2,
-      "type": "single",
-      "stem": "What alignment is targeted when ramping a patient with obesity for airway management?",
-      "options": [
-        "External auditory meatus level with the sternal notch",
-        "Chin level with the xiphoid",
-        "Nose level with the umbilicus",
-        "Shoulders below the mattress edge"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Ramping elevates the upper torso and head until the external ear is horizontally aligned with the sternal notch.",
-      "citation": "Airway Equipment · Study Guide p. 6",
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Study Guide p. 6",
-      "sourceMeta": {
-        "families": [
-          "Airway Equipment"
-        ],
-        "studyGuidePage": "6",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Airway",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "86",
-      "set": 2,
-      "type": "single",
-      "stem": "How do Macintosh and Miller blades differ in how they elevate the epiglottis?",
-      "options": [
-        "Macintosh lifts indirectly from the vallecula; Miller lifts the epiglottis directly",
-        "Macintosh lifts directly; Miller acts only on the tongue",
-        "Both must be placed beneath the epiglottis",
-        "Both lift exclusively through a video camera"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "The curved Macintosh blade sits in the vallecula and tensions the glossoepiglottic ligament. The straight Miller blade is used to directly lift the epiglottis.",
-      "citation": "Airway Equipment · Study Guide p. 6",
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Study Guide p. 6",
-      "sourceMeta": {
-        "families": [
-          "Airway Equipment"
-        ],
-        "studyGuidePage": "6",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Airway",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "87",
-      "set": 2,
-      "type": "single",
-      "stem": "Why is a reinforced or armored endotracheal tube useful for prone head-and-neck procedures?",
-      "options": [
-        "It resists kinking and external compression",
-        "It eliminates aspiration risk",
-        "Its cuff is laser resistant",
-        "It cannot migrate with position changes"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Reinforced tubes contain a spiral support that helps them resist kinking or compression when access to the airway is limited or the neck is flexed.",
-      "citation": "Airway Equipment · Study Guide p. 6",
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Study Guide p. 6",
-      "sourceMeta": {
-        "families": [
-          "Airway Equipment"
-        ],
-        "studyGuidePage": "6",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Airway",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "88",
-      "set": 2,
-      "type": "single",
-      "stem": "What is the purpose of the preformed bend in an oral or nasal RAE tube?",
-      "options": [
-        "It routes the connector away from the surgical field",
-        "It increases cuff pressure automatically",
-        "It prevents all tube migration",
-        "It allows the tube to function without a connector"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "RAE tubes are shaped to direct the breathing-circuit connection away from oral, maxillofacial, or nasal surgical fields.",
-      "citation": "Airway Equipment · Study Guide p. 6",
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Study Guide p. 6",
-      "sourceMeta": {
-        "families": [
-          "Airway Equipment"
-        ],
-        "studyGuidePage": "6",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Airway",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "89",
-      "set": 2,
-      "type": "single",
-      "stem": "Which gas strategy best reduces airway-fire risk during laser airway surgery?",
-      "options": [
-        "Use air with the lowest acceptable FiO2 and avoid nitrous oxide",
-        "Use 100% oxygen and add nitrous oxide",
-        "Use nitrous oxide as the sole carrier gas",
-        "Use the highest FiO2 possible throughout"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Both oxygen and nitrous oxide support combustion. The study guide recommends air with the lowest acceptable FiO2 and avoiding N2O near an ignition source.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 7",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 7",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "7",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Hazards & Safety",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "90",
-      "set": 2,
-      "type": "single",
-      "stem": "After failed intubation and failed rescue ventilation, the patient cannot be oxygenated. What definitive emergency airway step should not be delayed?",
-      "options": [
-        "Cricothyrotomy",
-        "Another routine direct-laryngoscopy attempt",
-        "Waiting for SpO2 to fall further",
-        "Nasopharyngeal airway placement only"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Front-of-neck access by cricothyrotomy is the final rescue when intubation and oxygenation fail. Repeated unsuccessful attempts should not delay it.",
-      "citation": "Airway Equipment · Study Guide p. 7",
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Study Guide p. 7",
-      "sourceMeta": {
-        "families": [
-          "Airway Equipment"
-        ],
-        "studyGuidePage": "7",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Airway",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 10"
     },
     {
       "id": "91",
       "set": 2,
       "type": "single",
-      "stem": "Which sequence best matches the risk-management process taught for workstation hazards?",
+      "stem": "Which pairing of gas and PISS positions is correct?",
       "options": [
-        "Define the problem → estimate likelihood → weigh resources → apply solutions → monitor",
-        "Monitor → ignore low-risk events → apply resources → define problem",
-        "Apply a solution → estimate likelihood → document only",
-        "Estimate cost → avoid reporting → monitor"
+        "Nitrous oxide 3,5 and medical air 1,5",
+        "Nitrous oxide 2,5 and medical air 3,5",
+        "Nitrous oxide 1,6 and medical air 2,5",
+        "Nitrous oxide 7 only and medical air 3,5"
       ],
       "answer": [
         0
       ],
-      "explanation": "The lecture framework is to define problems, estimate likelihood, weigh available resources, apply solutions, and then monitor the result.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 8",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 8",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "8",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "The guide lists nitrous oxide at pin positions 3 and 5 and medical air at 1 and 5.",
+      "citation": "SRNA Equipment Study Guide · Page 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "10",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 10"
     },
     {
       "id": "92",
       "set": 2,
       "type": "single",
-      "stem": "What electrical supply range is typical for an anesthesia workstation in the course material?",
+      "stem": "Which operating condition belongs to the Tec 6 desflurane vaporizer?",
       "options": [
-        "90–130 V AC at 50–60 Hz",
-        "12–24 V DC at 10 Hz",
-        "220–240 V DC only",
-        "500–1000 V AC at 1 kHz"
+        "Heated to about 39 °C and pressurized to roughly 2 atmospheres",
+        "Cooled to 0 °C and operated at atmospheric pressure",
+        "No electrical power requirement",
+        "Fresh gas bubbles through liquid desflurane"
       ],
       "answer": [
         0
       ],
-      "explanation": "The equipment study guide lists anesthesia workstation power at approximately 90–130 V AC and 50–60 Hz.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 8",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 8",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "8",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "Tec 6 heats desflurane to about 39 °C and pressurizes the reservoir to roughly 2 atmospheres, and it requires electricity.",
+      "citation": "SRNA Equipment Study Guide · Page 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "10",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 10"
     },
     {
       "id": "93",
       "set": 2,
       "type": "single",
-      "stem": "Why may an anesthesia workstation have separate circuit breakers for the AC supply, battery, and accessory outlets?",
+      "stem": "Which connector dimensions identify the common gas outlet rather than a scavenging fitting?",
       "options": [
-        "A fault in one electrical branch can be isolated without necessarily disabling all others",
-        "All components require different wall voltages",
-        "It converts alternating current to direct current for the patient",
-        "It prevents radiofrequency interference from the ESU"
+        "15-mm internal and 22-mm external",
+        "19-mm internal and 30-mm external",
+        "30-mm internal and 22-mm external",
+        "19-mm internal and 15-mm external"
       ],
       "answer": [
         0
       ],
-      "explanation": "Separate protection allows electrical faults to be isolated to specific branches such as incoming AC, the battery circuit, or convenience outlets.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 8",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 8",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "8",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "The common gas outlet is 15 mm internally and 22 mm externally; 19- and 30-mm conical fittings are reserved for scavenging.",
+      "citation": "SRNA Equipment Study Guide · Page 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "10",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 10"
     },
     {
       "id": "94",
       "set": 2,
       "type": "single",
-      "stem": "What frequency range is used by a typical electrosurgical unit for cutting and coagulation?",
+      "stem": "Why is soda-lime granule size commonly kept around 4–8 mesh?",
       "options": [
-        "About 500 kHz to 1 MHz",
-        "50 to 60 Hz",
-        "5 to 10 Hz",
-        "10 to 20 MHz only"
+        "To balance reactive surface area against resistance to gas flow",
+        "To eliminate all water from the absorbent",
+        "To prevent carbon dioxide from contacting hydroxides",
+        "To make channeling unavoidable"
       ],
       "answer": [
         0
       ],
-      "explanation": "Electrosurgery uses radiofrequency current in roughly the 500 kHz to 1 MHz range, high enough to produce tissue heating without directly stimulating myocardium like 50–60 Hz current.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 9",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 9",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "9",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "The guide identifies 4–8 mesh as a compromise between surface area for absorption and resistance to gas flow.",
+      "citation": "SRNA Equipment Study Guide · Page 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "10",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 10"
     },
     {
       "id": "95",
       "set": 2,
       "type": "single",
-      "stem": "Where should the ESU dispersive return pad be positioned relative to the surgical site?",
+      "stem": "Which occupational-exposure limits match the study guide?",
       "options": [
-        "As close to the operative site as practical with good skin contact",
-        "As far from the operative site as possible",
-        "Directly over a bony prominence",
-        "On top of an ECG electrode"
+        "Nitrous oxide 25 ppm TWA; halogenated agent 2 ppm alone and 0.5 ppm when combined with nitrous oxide",
+        "Nitrous oxide 100 ppm; all halogenated agents 25 ppm",
+        "Nitrous oxide 2 ppm; halogenated agents 50 ppm",
+        "No limits are recommended"
       ],
       "answer": [
         0
       ],
-      "explanation": "The Pin Index Safety System uses positions 1 and 6 for carbon dioxide. The gas-specific pin pattern is designed to prevent attachment of the wrong small cylinder to a yoke.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 9",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 9",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "9",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "The guide lists nitrous oxide at 25 ppm TWA, halogenated agent at 2 ppm when used alone, and 0.5 ppm when combined with nitrous oxide.",
+      "citation": "SRNA Equipment Study Guide · Page 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "10",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 10"
     },
     {
       "id": "96",
       "set": 2,
       "type": "single",
-      "stem": "After both wall power and the workstation battery are exhausted, which anesthetic resources can still remain usable?",
+      "stem": "About how much can a functioning scavenging system reduce trace anesthetic-gas levels?",
       "options": [
-        "Emergency oxygen plus mechanical/pneumatic delivery methods such as a variable-bypass vaporizer",
-        "Tec 6 and Aladin vaporizers only",
-        "Electronic ventilator and all integrated monitors indefinitely",
-        "Battery-powered systems after the battery is depleted"
+        "About 10%",
+        "About 50%",
+        "About 90%",
+        "Exactly 100%"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "Once electrical power is gone, emergency oxygen and purely mechanical/pneumatic devices may remain available. Electrically heated or electronically controlled vaporizers and ventilators cannot be assumed to function.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 9",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 9",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "9",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "The study guide states that a working scavenging system can reduce trace waste-anesthetic-gas levels by about 90%.",
+      "citation": "SRNA Equipment Study Guide · Page 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "10",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 10"
     },
     {
       "id": "97",
       "set": 2,
       "type": "single",
-      "stem": "Why is replacing oxygen with nitrous oxide not a safe way to reduce surgical-fire risk?",
+      "stem": "What proportion of operating-room anesthetic-gas contamination is attributed to technique in the guide?",
       "options": [
-        "Nitrous oxide supports combustion and acts as an oxidizer",
-        "Nitrous oxide is flammable fuel",
-        "Nitrous oxide disables the electrosurgical unit",
-        "Nitrous oxide raises the flash point of drapes"
+        "About 5–10%",
+        "About 25%",
+        "About 50%",
+        "About 94–99%"
       ],
       "answer": [
-        0
+        3
       ],
-      "explanation": "Nitrous oxide is not a fuel, but it supports combustion. The course material emphasizes that an O2/N2O mixture can support fire vigorously.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 9",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 9",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "9",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "The guide attributes approximately 94–99% of room contamination to technique-related causes such as leaks, poor mask fit, spills, and disconnect practices.",
+      "citation": "SRNA Equipment Study Guide · Page 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "10",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 10"
     },
     {
       "id": "98",
       "set": 2,
       "type": "single",
-      "stem": "Which action is part of preventing an operating-room fire when an ignition source will be used near the face?",
+      "stem": "What ventilation rate is recommended for a nonrecirculating operating-room ventilation system?",
       "options": [
-        "Allow alcohol-based prep to dry and prevent oxygen from pooling beneath drapes",
-        "Increase FiO2 to 100% before cautery",
-        "Use nitrous oxide to dilute oxygen",
-        "Cover the face tightly with dry gauze"
+        "At least 3 air exchanges per hour",
+        "At least 6 per hour",
+        "15 or more per hour",
+        "Exactly 40 per hour"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "Fire prevention includes allowing prep solutions to dry, minimizing oxidizer concentration, avoiding N2O, and arranging drapes so oxygen does not accumulate near an ignition source.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 9",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 9",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "9",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "The guide lists at least 15 air exchanges per hour for nonrecirculating operating-room ventilation.",
+      "citation": "SRNA Equipment Study Guide · Page 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "10",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 10"
     },
     {
       "id": "99",
       "set": 2,
       "type": "single",
-      "stem": "A surgical drape ignites on the patient's body but the airway is not involved. What is the immediate management sequence?",
+      "stem": "A spontaneously breathing patient has a minute ventilation of 8 L/min on a Mapleson A. What minimum fresh gas flow is suggested?",
       "options": [
-        "Stop gas flow, remove burning drapes/material, extinguish the fire, then assess the patient",
-        "Increase oxygen flow, then cover the fire",
-        "Leave the drapes in place and activate the ventilator",
-        "Extubate first in every case"
+        "About 2.4 L/min",
+        "About 5.6 L/min",
+        "About 12 L/min",
+        "About 20 L/min"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "For a fire on the patient, stop oxidizer flow, remove burning material, extinguish with water/saline or an extinguisher as appropriate, and then assess for injury and smoke exposure.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 9",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 9",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "9",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "Mapleson A uses about 0.7 times minute ventilation for spontaneous breathing. At 8 L/min, that is approximately 5.6 L/min.",
+      "citation": "SRNA Equipment Study Guide · Page 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "10",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 10"
     },
     {
       "id": "100",
       "set": 2,
       "type": "single",
-      "stem": "After an operating-room fire is extinguished and the patient is stabilized, what should happen to the involved equipment?",
+      "stem": "Why should the backup oxygen cylinder be closed after the machine check when a functioning pipeline is available?",
       "options": [
-        "Preserve the scene and components for investigation and notify risk management",
-        "Discard the tube and circuit immediately",
-        "Return all equipment to service without documentation",
-        "Clean the equipment before anyone inspects it"
+        "Leaving it open can let it drain silently during pipeline failure and hide loss of the primary source until the cylinder empties",
+        "Closing it permanently disables all oxygen alarms",
+        "An open cylinder always raises pipeline pressure above 100 psi",
+        "An open cylinder forces the vaporizer into bypass mode"
       ],
       "answer": [
         0
       ],
-      "explanation": "Post-event management includes preserving the tube, circuit, drapes, and other evidence, notifying risk management, reporting the adverse event, and using the event for safety review and training.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 9",
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 9",
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "studyGuidePage": "9",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "The guide warns that an open backup cylinder can drain during an unnoticed pipeline failure; the alarm may not occur until the cylinder is empty. Closing it preserves the reserve and makes pipeline failure apparent.",
+      "citation": "SRNA Equipment Study Guide · Page 11",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "11",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 11"
     },
     {
       "id": "HZ32",
