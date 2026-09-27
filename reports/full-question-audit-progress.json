@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 1932,
+    "audited": 2000,
     "bank2": [
       {
         "id": "S2-021",
@@ -7640,93 +7640,93 @@
       },
       {
         "id": "83",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "84",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "85",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "86",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "87",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "88",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "89",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "90",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "91",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "92",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "93",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "94",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "95",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "96",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "97",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "98",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "99",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "100",
-        "disposition": "PASS",
-        "set": 1
+        "set": 1,
+        "disposition": "PASS"
       },
       {
         "id": "HZ32",
@@ -7957,96 +7957,6 @@
         "id": "HZ58",
         "disposition": "PASS",
         "set": 3
-      },
-      {
-        "id": "83",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "84",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "85",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "86",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "87",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "88",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "89",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "90",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "91",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "92",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "93",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "94",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "95",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "96",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "97",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "98",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "99",
-        "set": 1,
-        "disposition": "PASS"
-      },
-      {
-        "id": "100",
-        "set": 1,
-        "disposition": "PASS"
       },
       {
         "id": "1",
@@ -9053,120 +8963,44 @@
         "id": "HX28",
         "set": 4,
         "disposition": "PASS"
+      },
+      {
+        "id": "HX16",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX33",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX43",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX11",
+        "set": 4,
+        "disposition": "PASS"
       }
     ]
   },
-  "remaining": 68,
+  "remaining": 0,
   "lastBatch": {
     "bank": "hazards.json",
-    "audited": 100,
+    "audited": 4,
     "ids": [
-      "3:HZ15",
-      "3:HZ45",
-      "3:HZ16",
-      "3:HZI6",
-      "3:HZ74",
-      "3:HZ28",
-      "3:HZ84",
-      "3:HZ93",
-      "3:HZ13",
-      "3:HZ02",
-      "3:HZ65",
-      "3:HZ36",
-      "3:HZ49",
-      "3:HZ80",
-      "3:HZ68",
-      "3:HZ44",
-      "3:HZ33",
-      "3:HZ05",
-      "3:HZ53",
-      "3:HZI3",
-      "3:HZ94",
-      "3:HZI1",
-      "3:HZ27",
-      "3:HZ24",
-      "3:HZ46",
-      "3:HZ67",
-      "3:HZ08",
-      "3:HZ59",
-      "3:HZ29",
-      "3:HZ75",
-      "3:HZ25",
-      "3:HZ66",
-      "3:HZ03",
-      "3:HZ11",
-      "3:HZ01",
-      "3:HZ26",
-      "3:HZ52",
-      "3:HZ79",
-      "3:HZ17",
-      "3:HZ69",
-      "3:HZ64",
-      "3:HZ85",
-      "3:HZ57",
-      "3:HZ70",
-      "3:HZ35",
-      "3:HZ19",
-      "3:HZ40",
-      "3:HZ14",
-      "3:HZ72",
-      "3:HZ47",
-      "3:HZ71",
-      "3:HZ43",
-      "3:HZ82",
-      "3:HZ60",
-      "4:HX39",
-      "4:HX31",
-      "4:HX18",
-      "4:HX25",
-      "4:HX04",
-      "4:HX26",
-      "4:HX30",
-      "4:HX12",
-      "4:HX14",
-      "4:HX38",
-      "4:HX05",
-      "4:HX23",
-      "4:HX15",
-      "4:HX46",
-      "4:HX41",
-      "4:HX24",
-      "4:HX17",
-      "4:HX49",
-      "4:HX02",
-      "4:HX47",
-      "4:HX37",
-      "4:HX27",
-      "4:HX42",
-      "4:HX20",
-      "4:HX45",
-      "4:HX01",
-      "4:HX09",
-      "4:HX34",
-      "4:HX06",
-      "4:HX22",
-      "4:HX29",
-      "4:HX19",
-      "4:HX40",
-      "4:HX21",
-      "4:HX10",
-      "4:HX35",
-      "4:HX36",
-      "4:HX13",
-      "4:HX44",
-      "4:HX08",
-      "4:HX50",
-      "4:HX07",
-      "4:HX48",
-      "4:HX03",
-      "4:HX32",
-      "4:HX28"
+      "4:HX16",
+      "4:HX33",
+      "4:HX43",
+      "4:HX11"
     ],
     "notes": [
-      "Audited the next 100 Hazards questions: set 2 questions 83-100 and the next 82 questions from set 3.",
-      "Checked gas-supply safeguards, pressure systems, flowmeters, Mapleson circuits, electrical safety, electrosurgery, power failure, fire management, and workstation failure scenarios against the hazards material and SRNA Equipment Study Guide.",
-      "Visually verified all image-dependent items in this batch: fire triangle, Mapleson circuits, PISS valve patterns, and the highlighted hypoxemia-hazards slide.",
-      "Re-sourced the combined halogenated-agent/N2O exposure item to Nurse Anesthesia 7e per the project decision, and tightened two explanations without changing their answer keys."
+      "Completed the final four Hazards questions and verified them against Anesthesia Workstation Hazards & Safety.",
+      "All four final items passed without content changes: hazard-list pairing, evacuation-door management, pressure-alarm limitation with an O2 flowmeter turned off, and the multifactorial adverse-event model.",
+      "Reconciled the audit tracker by removing 18 duplicate completion entries for set 1 questions 83-100 that had been recorded twice during an earlier interrupted batch.",
+      "Final coverage is 2,000 of 2,000 canonical questions audited: Bank 1 500/500, Bank 2 500/500, Bank 3 500/500, Combined 150/150, Hazards 350/350."
     ]
   },
   "lastCorrection": {
