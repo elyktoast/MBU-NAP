@@ -96,6 +96,10 @@ async function deleteAccount(){
   await api('/rest/v1/rpc/snar_delete_my_account',{method:'POST',body:{}});
   stopAutoSync();saveSession(null);remoteByKey.clear();calibrationByKey.clear();calibrationFetchedAt=0;emit('signed-out');return true
 }
+async function submitPrivacyRequest(requestType,details=''){
+  const result=await api('/rest/v1/rpc/snar_submit_privacy_request',{method:'POST',body:{p_request_type:String(requestType||''),p_details:String(details||'')}});
+  return Number(result)||0
+}
 async function submitItemContribution(questionId,correct,responseMs=null,sessionMode='unknown'){
   const id=String(questionId||'').trim();if(!id)return false;
   const ms=responseMs==null?null:Math.max(0,Math.min(3600000,Math.round(Number(responseMs)||0)));
