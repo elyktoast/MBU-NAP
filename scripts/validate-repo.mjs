@@ -321,7 +321,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  const src=read('equipment/assets/studio-page.js');
  if(!src.includes('function showQ(){clearTimeout(autoTimer);autoTimer=null;'))fail('Studio: render does not clear/null auto-advance timer');
  if(!src.includes('function nextQ(){clearTimeout(autoTimer);autoTimer=null;'))fail('Studio: manual/automatic Next leaves a stale timer handle');
- if(!src.includes('if(prior&&prior.pos===pos)return;'))fail('Studio: unchanged question renders still rewrite active session state');
+ if(!src.includes('if(same&&existing.pos===pos)return;'))fail('Studio: unchanged question renders still rewrite active session state');
 }
 
 // Standard Hazards Sets 1/2 statistics should share one single-pass implementation.
