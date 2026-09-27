@@ -64,8 +64,8 @@ function normalize(state,count=50){
   return{mode:'adaptive',theta:estimate.theta,se:estimate.se,information:estimate.information,level:logitToLevel(estimate.theta),answered:Math.max(0,Number(s.answered)||path.length),correct:Math.max(0,Number(s.correct)||path.filter(x=>x.ok).length),maxQuestions:Math.max(1,Math.min(200,Number(s.maxQuestions)||Number(count)||50)),seenUids:seen,seenContentKeys,poolUids,topicCounts:Object.fromEntries(Object.entries(topics).map(([k,v])=>[String(k),Math.max(0,Number(v)||0)])),path,currentLevel:logitToLevel(estimate.theta),currentDifficulty:Number.isFinite(Number(s.currentDifficulty))?clampLogit(s.currentDifficulty):null,currentChallenge:Number.isFinite(Number(s.currentChallenge))?Number(s.currentChallenge):null,currentProbability:Number.isFinite(Number(s.currentProbability))?Number(s.currentProbability):null}
 }
 function poolTopicCounts(questions,allowed){
-  const counts={};let total=0;
-  for(const q of questions){if(!q?.uid||allowed&&!allowed.has(String(q.uid)))continue;const t=topicOf(q);counts[t]=(counts[t]||0)+1;total++}
+  const counts={},content=new Set();let total=0;
+  for(const q of questions){if(!q?.uid||allowed&&!allowed.has(String(q.uid)))continue;const key=contentKey(q);if(content.has(key))continue;content.add(key);const t=topicOf(q);counts[t]=(counts[t]||0)+1;total++}
   return{counts,total}
 }
 function pick(questions,state){
