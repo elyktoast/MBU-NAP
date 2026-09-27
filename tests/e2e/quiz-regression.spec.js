@@ -1725,13 +1725,16 @@ test.describe('canonical quiz regression', () => {
       const start=MBUStudyIntelligence.adaptiveStart([easy,hard,{uid:'adaptive-new',bank:'b2',topic:'Airway',set:1,stem:'New',ans:[0]}],3);
       const up=MBUStudyIntelligence.adaptiveAdvance(start.state,start.question,true);
       const down=MBUStudyIntelligence.adaptiveAdvance(up,start.question,false);
-      return{easy:MBUStudyIntelligence.adaptiveChallenge(easy),hard:MBUStudyIntelligence.adaptiveChallenge(hard),startLevel:start.state.level,up:up.level,down:down.level,seen:start.state.seenUids};
+      return{easy:MBUStudyIntelligence.adaptiveChallenge(easy),hard:MBUStudyIntelligence.adaptiveChallenge(hard),startTheta:start.state.theta,upTheta:up.theta,downTheta:down.theta,startLevel:start.state.level,upLevel:up.level,downLevel:down.level,seen:start.state.seenUids,seStart:start.state.se,seUp:up.se,seDown:down.se};
     });
     expect(out.hard).toBeGreaterThan(out.easy);
+    expect(out.startTheta).toBeCloseTo(0,5);
+    expect(out.upTheta).toBeGreaterThan(out.startTheta);
+    expect(out.downTheta).toBeLessThan(out.upTheta);
     expect(out.startLevel).toBe(3);
-    expect(out.up).toBe(4);
-    expect(out.down).toBe(3);
     expect(out.seen).toHaveLength(1);
+    expect(out.seUp).toBeLessThan(out.seStart);
+    expect(out.seDown).toBeLessThanOrEqual(out.seUp);
   });
 
   test('Adaptive session toggle is opt-in, forward-only, and survives reload with its level', async ({ page }) => {
@@ -1747,14 +1750,15 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#qmeta')).toContainText('Adaptive Challenge 3/5');
     await expect(page.locator('#studioPrev')).toBeDisabled();
     await expect(page.locator('#studioNavToggle')).toBeDisabled();
+    const startTheta=await page.evaluate(()=>DB.active.adaptive.theta);
     await page.evaluate(()=>{const q=session[pos];sel=new Set(q.ans);grade()});
-    await expect.poll(()=>page.evaluate(()=>DB.active?.adaptive?.level)).toBe(4);
+    await expect.poll(()=>page.evaluate(()=>DB.active?.adaptive?.theta)).toBeGreaterThan(startTheta);
     await expect.poll(()=>page.evaluate(()=>session.length)).toBe(2);
-    await expect(page.locator('#qmeta')).toContainText('Adaptive Challenge 4/5');
-    const before=await page.evaluate(()=>({uids:[...DB.active.uids],level:DB.active.adaptive.level,pos:DB.active.pos}));
+    const afterCorrectTheta=await page.evaluate(()=>DB.active.adaptive.theta);
+    const before=await page.evaluate(()=>({uids:[...DB.active.uids],level:DB.active.adaptive.level,theta:DB.active.adaptive.theta,se:DB.active.adaptive.se,pos:DB.active.pos}));
     await page.reload();await waitForStudio(page);
     await expect.poll(()=>page.evaluate(()=>DB.active?.mode)).toBe('adaptive');
-    const after=await page.evaluate(()=>({uids:[...DB.active.uids],level:DB.active.adaptive.level,pos:DB.active.pos}));
+    const after=await page.evaluate(()=>({uids:[...DB.active.uids],level:DB.active.adaptive.level,theta:DB.active.adaptive.theta,se:DB.active.adaptive.se,pos:DB.active.pos}));
     expect(after).toEqual(before);
     await expect(page.locator('#studioPrev')).toBeDisabled();
     await expect(page.locator('#studioNavToggle')).toBeDisabled();
@@ -1764,7 +1768,7 @@ test.describe('canonical quiz regression', () => {
       for(let i=0;i<q.opts.length&&wrong.length<need;i++)if(!wrong.includes(i))wrong.push(i);
       sel=new Set(wrong.slice(0,need));grade()
     });
-    await expect.poll(()=>page.evaluate(()=>DB.active?.adaptive?.level)).toBe(3);
+    await expect.poll(()=>page.evaluate(()=>DB.active?.adaptive?.theta)).toBeLessThan(afterCorrectTheta);
   });
 
   test('Malformed study-intelligence storage recovers without breaking Studio', async ({ page }) => {
