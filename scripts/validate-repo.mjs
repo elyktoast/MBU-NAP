@@ -749,7 +749,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 
 // Versioned clickwrap must gate study use before page-specific runtimes initialize.
 {
- const boot=read('equipment/assets/build-bootstrap.js'),gate=read('equipment/assets/legal-gate.js'),cloud=read('equipment/assets/supabase-sync.js');
+ const boot=read('equipment/assets/build-bootstrap.js'),gate=read('equipment/assets/legal-gate.js'),cloud=read('equipment/assets/supabase-sync.js'),core=read('equipment/assets/app-core.js');
  if(!boot.includes("loadScript('legal-gate.js')")||!boot.includes('SNARLegalReady'))fail('Versioned legal gate is not enforced by the shared bootstrap');
  for(const token of ["VERSION='2026-09-27-v2'",'I agree to the','Terms of Use','Privacy Notice','localStorage.setItem(KEY','data-legal-continue','pointer-events:auto'])if(!gate.includes(token))fail('Legal gate missing '+token);
  if(boot.includes('html[data-mbu-boot="loading"] body{pointer-events:none}'))fail('Legal gate is blocked by bootstrap pointer-events');
