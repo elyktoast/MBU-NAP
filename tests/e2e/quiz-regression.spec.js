@@ -1818,6 +1818,8 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('[data-admin-stats] > div').filter({hasText:'Max learners / item'}).locator('strong')).toHaveText('5');
     await page.locator('[data-admin-analytics-load]').click();
     await expect(page.locator('[data-admin-question-analytics]')).toContainText('Needs review');
+    await expect(page.locator('[data-admin-question-analytics]')).toContainText('CAT readiness');
+    await expect(page.locator('[data-admin-question-analytics]')).toContainText('eligible for population difficulty');
     await expect(page.locator('[data-admin-question-analytics]')).toContainText('36% first-attempt');
     await expect(page.locator('[data-admin-question-analytics]')).toContainText('High miss rate');
     await expect(page.locator('[data-qa-modes]')).toContainText('adaptive');

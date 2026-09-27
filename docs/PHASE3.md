@@ -68,3 +68,7 @@ Study Studio now produces a local-only review recommendation. Due spaced-review 
 ## 30-day real-use trend
 
 The operator analytics workspace includes a daily 30-day first-attempt trend built from the existing contribution table. It shows only aggregate daily totals, Adaptive first attempts, aggregate accuracy, and aggregate response-time samples. It does not expose learner identities or raw response rows and does not introduce new telemetry fields.
+
+## CAT calibration readiness
+
+The operator analytics workspace now states whether any items have reached the 25-learner threshold required before population difficulty can affect Adaptive selection. Below that threshold, population difficulty remains inactive and the CAT engine relies on structural item difficulty plus personal learning-priority logic.
