@@ -9,7 +9,7 @@ MBU-NAP is a local-first study application for the MBU nurse anesthesia equipmen
 - Study Studio and Hazards use shared build-driven loaders.
 - `equipment/build.json` is the release/cache source of truth.
 - `equipment/assets/build-bootstrap.js` loads versioned shared assets.
-- `equipment/assets/app-core.js` owns diagnostics, accessibility helpers, device identity, backup/import, and the future sync adapter contract.
+- `equipment/assets/app-core.js` owns diagnostics, accessibility helpers, device identity, backup/import, and shared sync interfaces; `supabase-sync.js` provides authenticated cross-device cloud sync.
 - CI validates architecture, content integrity, performance budgets, and browser regressions before a change is considered healthy.
 
 See [Architecture](docs/ARCHITECTURE.md), [Sync and backups](docs/SYNC.md), and [Contributing](CONTRIBUTING.md).
