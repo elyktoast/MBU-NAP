@@ -1,6 +1,6 @@
 /* One-time local click-through for SNAR Study Tool guest use. */
 (()=>{'use strict';
-const VERSION='2026-09-27-v3',KEY='snar_legal_acceptance_v3',script=document.currentScript,root=new URL('../../',script?.src||location.href);
+const VERSION='2026-09-27-v4',KEY='snar_legal_acceptance_v4',script=document.currentScript,root=new URL('../../',script?.src||location.href);
 let volatileAccepted=false;
 function accepted(){
   if(volatileAccepted)return true;
