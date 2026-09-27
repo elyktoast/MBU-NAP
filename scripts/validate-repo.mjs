@@ -677,6 +677,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const engine=read('equipment/assets/quiz-engine.js'),renderer=read('equipment/assets/canonical-bank-page.js'),core=read('equipment/assets/app-core.js');
  if(!engine.includes('function renderNavigator()')||!engine.includes('function toggleNavigator()'))fail('Cleanup: canonical navigator is not lazy-rendered');
+ if(!engine.includes('if(currentIndex!=='))fail('Cleanup: active navigator item can redundantly rerender the current question');
  if(!engine.includes('function updateSelectionUI('))fail('Cleanup: answer selection does not have a local DOM update path');
  const choose=(engine.match(/function choose\(i\)\{[^}]+\}/)||[''])[0];
  if(choose.includes('loadQuestion()'))fail('Cleanup: answer selection still performs a full question render');
@@ -785,6 +786,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  const adaptive=read('equipment/assets/adaptive-quiz.js'),studioSync=read('equipment/assets/studio-sync.js');
  for(const token of ['estimateAbility','probability-.5','poolUids','topicCounts','recentUids'])if(!adaptive.includes(token))fail('Adaptive CAT engine missing '+token);
  if(!read('equipment/assets/studio-loader.js').includes("loadScript('adaptive-quiz.js')"))fail('Studio does not load the separate adaptive engine');
+ if(!studio.includes("DB.active?.mode==='adaptive'&&reconcileActiveState()"))fail('Adaptive session does not auto-resume after reload');
  if(!studioSync.includes("v.mode==='adaptive'")||!studioSync.includes("out.mode='adaptive'"))fail('Studio adaptive session normalization is missing');
  if(!core.includes("keys=new Set(['mbu_exam1_studio_v1','mbu_study_intelligence_v1'])"))fail('Study intelligence is not cloud tracked');
  for(const p of ['equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-page.js'])if(!read(p).includes('MBUStudyIntelligence'))fail(p+': answer path bypasses shared study intelligence');
