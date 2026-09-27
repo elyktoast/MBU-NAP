@@ -253,6 +253,20 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('.progress')).toContainText('Question 2 of');
   });
 
+  test('Standard Hazards ignores duplicate submit calls for a graded question', async ({ page }) => {
+    await page.goto(exam + '/hazards-100.html');await page.evaluate(() => MBUQuizReady);
+    await page.locator('#cards button').filter({hasText:/start|continue/i}).first().click();
+    const delta=await page.evaluate(()=>{
+      const before=MBUStudyIntelligence.analytics().overall.attempts;
+      const q=MBUHazardsStandard.activeQuestion();
+      q.answer.forEach(i=>MBUHazardsStandard.choose(i));
+      MBUHazardsStandard.submitAnswer();
+      MBUHazardsStandard.submitAnswer();
+      return MBUStudyIntelligence.analytics().overall.attempts-before;
+    });
+    expect(delta).toBe(1);
+  });
+
   test('Hazards Set 2 persists a submitted answer through the shared standard engine', async ({ page }) => {
     await page.goto(exam + '/hazards-bank-2.html');
     await page.locator('#hazStart').click();
@@ -2052,6 +2066,28 @@ test.describe('canonical quiz regression', () => {
       sel=new Set(wrong.slice(0,need));grade()
     });
     await expect.poll(()=>page.evaluate(()=>DB.active?.adaptive?.theta)).toBeLessThan(afterCorrectTheta);
+  });
+
+  test('Studio grading is idempotent under duplicate submission', async ({ page }) => {
+    await seedSignedIn(page);
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await page.evaluate(()=>{
+      const first=document.querySelector('#sourceChecks input[type=checkbox]');
+      if(first)first.checked=true;
+      document.getElementById('count').value='10';
+      document.getElementById('adaptiveToggle').checked=true;
+      startMode('custom');
+    });
+    const before=await page.evaluate(()=>MBUStudyIntelligence.analytics().overall.attempts);
+    await page.evaluate(()=>{const q=session[pos];sel=new Set(q.ans);grade();grade()});
+    const state=await page.evaluate(()=>({
+      answered:DB.active.adaptive.answered,
+      path:DB.active.adaptive.path.length,
+      attempts:MBUStudyIntelligence.analytics().overall.attempts
+    }));
+    expect(state.answered).toBe(1);
+    expect(state.path).toBe(1);
+    expect(state.attempts-before).toBe(1);
   });
 
   test('Adaptive scored answers cannot be reset or mutate CAT state', async ({ page }) => {
