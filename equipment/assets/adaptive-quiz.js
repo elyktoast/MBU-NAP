@@ -5,6 +5,7 @@ const clampLogit=v=>Math.max(-2.5,Math.min(2.5,Number(v)||0));
 const challengeToLogit=challenge=>clampLogit((clampLevel(challenge)-3)*1.25);
 const logitToLevel=logit=>clampLevel(Math.round(3+clampLogit(logit)/1.25));
 const logistic=x=>1/(1+Math.exp(-Math.max(-12,Math.min(12,x))));
+const popWeight=n=>n<25?0:n<100?.35:n<300?.6:.8;
 function tieRank(uid){let h=2166136261;for(const c of String(uid||'')){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
 function topicOf(q){return String(q?.topic||q?.lec||q?.concept||'Other').trim()||'Other'}
 function contentKey(q){const stem=String(q?.stem||q?.q||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();return stem||('uid:'+String(q?.uid||q?.id||''))}
@@ -33,9 +34,8 @@ function challenge(q){
   const multi=(Array.isArray(q?.ans)?q.ans:Array.isArray(q?.answer)?q.answer:[]).length>1;
   let score=3+(multi?.65:0)+((q?.bank==='hh'||Number(q?.set)===7)?.7:0);
   const pop=populationStats(q?.uid),learners=Number(pop?.unique_learners)||0;
-  if(learners>=25&&Number.isFinite(Number(pop?.difficulty_logit))){
-    const populationScore=clampLevel(3+clampLogit(pop.difficulty_logit)/1.25),weight=learners>=300?.8:learners>=100?.6:.35;
-    score=score*(1-weight)+populationScore*weight
+  const weight=popWeight(learners);if(weight&&Number.isFinite(Number(pop?.difficulty_logit))){
+    const populationScore=clampLevel(3+clampLogit(pop.difficulty_logit)/1.25);score=score*(1-weight)+populationScore*weight
   }
   return Math.round(clampLevel(score)*100)/100
 }

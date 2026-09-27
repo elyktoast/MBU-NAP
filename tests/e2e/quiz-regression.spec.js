@@ -2277,6 +2277,21 @@ test.describe('canonical quiz regression', () => {
     expect(result.picked).toBe(result.alternative);
   });
 
+  test('Adaptive population calibration stays gated until 25 learners', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const out=await page.evaluate(()=>{
+      const q=ALL.find(x=>x.ans.length===1&&x.bank!=='hh')||ALL[0];
+      const original=MBUSupabase.calibration;
+      MBUSupabase.calibration=()=>null;const baseline=MBUAdaptiveQuiz.challenge(q);
+      MBUSupabase.calibration=()=>({unique_learners:24,difficulty_logit:2.5});const under=MBUAdaptiveQuiz.challenge(q);
+      MBUSupabase.calibration=()=>({unique_learners:25,difficulty_logit:2.5});const ready=MBUAdaptiveQuiz.challenge(q);
+      MBUSupabase.calibration=original;
+      return{baseline,under,ready};
+    });
+    expect(out.under).toBe(out.baseline);
+    expect(out.ready).not.toBe(out.baseline);
+  });
+
   test('Adaptive item difficulty stays stable when personal performance changes', async ({ page }) => {
     await page.goto(exam + '/studio.html');
     await waitForStudio(page);

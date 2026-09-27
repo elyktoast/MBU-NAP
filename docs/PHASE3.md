@@ -72,3 +72,7 @@ The operator analytics workspace includes a daily 30-day first-attempt trend bui
 ## CAT calibration readiness
 
 The operator analytics workspace now states whether any items have reached the 25-learner threshold required before population difficulty can affect Adaptive selection. Below that threshold, population difficulty remains inactive and the CAT engine relies on structural item difficulty plus personal learning-priority logic.
+
+## CAT population-data guard
+
+Population difficulty remains completely excluded below 25 unique learners per item. At 25–99 learners it receives a 35% weight, at 100–299 a 60% weight, and at 300+ an 80% weight. CI now tests the 25-learner boundary directly so early data cannot silently become over-weighted.

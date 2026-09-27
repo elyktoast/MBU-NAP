@@ -844,7 +844,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ['continuePanel','recentPanel','MBUStudyIntelligence'])if(!dash.includes(token))fail('Exam dashboard intelligence integration missing '+token);
  if(!read('equipment/exam-1/studio.html').includes('id="adaptiveToggle"'))fail('Studio adaptive opt-in toggle is missing');
  const adaptive=read('equipment/assets/adaptive-quiz.js'),studioSync=read('equipment/assets/studio-sync.js');
- for(const token of ['estimateAbility','probability-.5','poolUids','topicCounts','recentUids'])if(!adaptive.includes(token))fail('Adaptive CAT engine missing '+token);
+ for(const token of ['estimateAbility','probability-.5','poolUids','topicCounts','recentUids','popWeight','n<25?0'])if(!adaptive.includes(token))fail('Adaptive CAT engine missing '+token);
  if(!read('equipment/assets/studio-loader.js').includes("loadScript('adaptive-quiz.js')"))fail('Studio does not load the separate adaptive engine');
  if(!studio.includes("DB.active?.mode==='adaptive'&&reconcileActiveState()"))fail('Adaptive session does not auto-resume after reload');
  if(!studioSync.includes("v.mode==='adaptive'")||!studioSync.includes("out.mode='adaptive'"))fail('Studio adaptive session normalization is missing');
