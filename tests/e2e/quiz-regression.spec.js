@@ -1490,7 +1490,9 @@ test.describe('canonical quiz regression', () => {
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
     await page.unroute(cloud+'/rest/v1/rpc/snar_has_current_legal_acceptance');
     await page.route(cloud+'/rest/v1/rpc/snar_has_current_legal_acceptance',route=>route.fulfill({status:200,contentType:'application/json',body:'false'}));
+    let calibrationRefreshes=0;
     await page.route(cloud+'/rest/v1/rpc/snar_accept_current_legal',route=>route.fulfill({status:200,contentType:'application/json',body:'true'}));
+    await page.route(cloud+'/rest/v1/mbu_item_calibration?*',route=>{calibrationRefreshes++;return route.fulfill({status:200,contentType:'application/json',body:'[]'})});
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
     await waitForAuth(page);
     await page.locator('.mbu-global-nav__cloud').click();
@@ -1500,6 +1502,7 @@ test.describe('canonical quiz regression', () => {
     await page.locator('[data-cloud-reaccept]').click();
     await expect.poll(()=>page.evaluate(()=>MBUSupabase.status().legalAccepted)).toBe(true);
     await expect(page.locator('[data-cloud-legal-required]')).toBeHidden();
+    await expect.poll(()=>calibrationRefreshes).toBeGreaterThan(0);
   });
 
   test('Privacy Notice and Terms are publicly accessible and independently branded', async ({ page }) => {
