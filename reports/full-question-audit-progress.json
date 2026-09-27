@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 126,
+    "audited": 146,
     "bank2": [
       {
         "id": "S2-021",
@@ -597,21 +597,133 @@
       {
         "id": "S5-F13",
         "disposition": "IMPROVE"
+      },
+      {
+        "id": "S1-G13",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M08",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M11",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G20",
+        "disposition": "IMPROVE",
+        "changes": [
+          "clarified source-grounded explanation"
+        ]
+      },
+      {
+        "id": "S1-G06",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M14",
+        "disposition": "IMPROVE",
+        "changes": [
+          "clarified source-grounded explanation"
+        ]
+      },
+      {
+        "id": "S1-M07",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G04",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-W01",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-W06",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M25",
+        "disposition": "IMPROVE",
+        "changes": [
+          "clarified source-grounded explanation"
+        ]
+      },
+      {
+        "id": "S1-G09",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M28",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M17",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-W02",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M34",
+        "disposition": "IMPROVE",
+        "changes": [
+          "clarified pulse oximetry interpretation and co-oximetry explanation",
+          "reworded keyed option to avoid equating high PaO2 with normal oxygen-carrying capacity"
+        ]
+      },
+      {
+        "id": "S1-M20",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G02",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-K06",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G08",
+        "disposition": "PASS"
       }
     ]
   },
-  "remaining": 1874,
+  "remaining": 1854,
   "lastBatch": {
     "bank": "bank3.json",
     "audited": 20,
-    "notes": [
-      "Started Bank 3 with both remaining answer-length flags plus 18 source-priority questions.",
-      "Removed an unsupported fast-flush-test detail and rewrote the arterial-line question around the directly taught underdamping waveform findings.",
-      "Corrected multiple Monitoring slide locators, including circulation, quantitative neuromuscular monitoring, pulse oximetry, PaCO2-ETCO2 gradient, preoxygenation, and inspired oxygen limitations.",
-      "Verified the remaining unchanged items in the batch against their lecture sources.",
-      "Restored S5-F13 to test the 0.5 ppm halogenated-agent combined-use limit with Nurse Anesthesia, 7th ed., Chapter 16, p. 283 as the supporting source."
+    "ids": [
+      "S1-G13",
+      "S1-M08",
+      "S1-M11",
+      "S1-G20",
+      "S1-G06",
+      "S1-M14",
+      "S1-M07",
+      "S1-G04",
+      "S1-W01",
+      "S1-W06",
+      "S1-M25",
+      "S1-G09",
+      "S1-M28",
+      "S1-M17",
+      "S1-W02",
+      "S1-M34",
+      "S1-M20",
+      "S1-G02",
+      "S1-K06",
+      "S1-G08"
     ],
-    "correction": "S5-F13 restored as a combined sevoflurane/N2O occupational exposure question and re-sourced to Nurse Anesthesia, 7th ed., Chapter 16, pp. 283-284."
+    "notes": [
+      "Checked medical gas, monitoring, airway, and scavenging items against the matching lecture text and the equipment study guide.",
+      "Visually verified the labeled airway anatomy image for S1-W02.",
+      "Clarified explanations for S1-G20, S1-M14, S1-M25, and S1-M34; no answer keys changed."
+    ]
   },
   "lastCorrection": {
     "question": "S5-F13",
