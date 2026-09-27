@@ -154,7 +154,7 @@
       "answer": [
         1
       ],
-      "explanation": "Compressed gas: 1400/1900 × 625 ≈ 460 L.",
+      "explanation": "Medical air is a compressed gas, so remaining volume falls approximately in proportion to cylinder pressure. The calculation is 1400/1900 × 625, which gives about 460 L remaining.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 7, 13 (PDF p. 4, 7)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -320,7 +320,7 @@
       "answer": [
         1
       ],
-      "explanation": "1500/1900 × 660 ≈ 521 L. 521 ÷ 6 ≈ 87 minutes.",
+      "explanation": "An O2 E-cylinder at 1500 psig contains about 1500/1900 × 660 = 521 L. At 6 L/min, 521 ÷ 6 gives approximately 87 minutes of oxygen delivery.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 13 (PDF p. 7)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -2521,7 +2521,7 @@
       "answer": [
         2
       ],
-      "explanation": "8 × 1.5 × 3 = 36 mL/hr; × 1.5 hours = 54 mL.",
+      "explanation": "The liquid-agent estimate is vol% × fresh gas flow × 3. For desflurane at 8% and 1.5 L/min, that is 36 mL/hr; over 90 minutes, or 1.5 hours, the total is about 54 mL.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 52 (PDF p. 26)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -2622,7 +2622,7 @@
       "answer": [
         2
       ],
-      "explanation": "Joules = watts × seconds = 1,000 × 0.2 = 200 J.",
+      "explanation": "Electrical energy equals power multiplied by time. A 1,000-W device running for 0.2 seconds uses 1,000 × 0.2 = 200 joules.",
       "citation": "Anesthesia Workstation Hazards & Safety · Slide 26 (PDF p. 13)",
       "topic": "Hazards & Safety",
       "imageSvg": null,
@@ -2994,7 +2994,7 @@
       "answer": [
         1
       ],
-      "explanation": "O2/(O2 + 6) = 0.25 → O2 = 2 L/min (2 of 8 L total).",
+      "explanation": "Set up the proportion as O2/(O2 + 6) = 0.25. Solving gives an O2 flow of 2 L/min, producing 2 L O2 in an 8-L total O2/N2O flow.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 45 (PDF p. 23)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -3101,7 +3101,7 @@
       "answer": [
         2
       ],
-      "explanation": "100 g absorbs about 26 L, so 500 g absorbs about 130 L.",
+      "explanation": "The course guide uses an approximate soda-lime capacity of 26 L of CO2 per 100 g. A 500-g charge therefore absorbs about 5 × 26 = 130 L.",
       "citation": "CO₂ & Scavenging · Slide 2 (PDF p. 1)",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -3408,7 +3408,7 @@
       "answer": [
         2
       ],
-      "explanation": "P = E × I = 120 × 12 = 1,440 W.",
+      "explanation": "Electrical power is voltage multiplied by current: P = E × I. At 120 V and 12 A, the device uses 1,440 W of power.",
       "citation": "Anesthesia Workstation Hazards & Safety · Slide 26 (PDF p. 13)",
       "topic": "Hazards & Safety",
       "imageSvg": null,
@@ -4114,7 +4114,7 @@
       "answer": [
         2
       ],
-      "explanation": "2.5 × 2 × 3 = 15 mL/hr; × 3 hours = 45 mL.",
+      "explanation": "Liquid-agent use is estimated as vol% × fresh gas flow × 3. At 2.5% sevoflurane and 2 L/min, use is 15 mL/hr; over 3 hours, that totals about 45 mL.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 52 (PDF p. 26)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -4448,7 +4448,7 @@
       "answer": [
         2
       ],
-      "explanation": "2 × 2 × 3 = 12 mL/hr. 250 ÷ 12 ≈ 21 hours.",
+      "explanation": "At 2% sevoflurane and 2 L/min fresh gas flow, estimated liquid use is 2 × 2 × 3 = 12 mL/hr. A 250-mL bottle would therefore last about 250 ÷ 12, or roughly 21 hours.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 52 (PDF p. 26)",
       "topic": "Medical Gases",
       "imageSvg": null,
