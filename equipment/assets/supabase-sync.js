@@ -2,8 +2,8 @@
 (()=>{'use strict';
 const cfg=window.MBU_SUPABASE_CONFIG||{},sync=window.MBUSync,SESSION_KEY='mbu_supabase_session_v1',STATUS_EVENT='mbu:supabase-status',script=document.currentScript,APP_ROOT=new URL('../../',script?.src||location.href).href;
 if(!cfg.url||!cfg.publishableKey||!sync){console.warn('Supabase sync is not configured');return}
-const base=cfg.url.replace(/\/$/,'');
-let syncing=false,lastSyncAt=0,lastState='signed-out',remoteByKey=new Map(),timer=null;
+const base=cfg.url.replace(/\/$/,''),AUTO_SYNC_INTERVAL=5*60*1000;
+let syncing=false,lastSyncAt=0,lastState='signed-out',remoteByKey=new Map(),timer=null,autoSyncTimer=null;
 
 const safeJSON=(raw,fallback=null)=>{try{return JSON.parse(raw)}catch{return fallback}};
 const session=()=>safeJSON(localStorage.getItem(SESSION_KEY));
@@ -63,16 +63,16 @@ async function api(path,opts={}){
 }
 async function signIn(email,password){
   emit('signing-in');const data=await raw('/auth/v1/token?grant_type=password',{method:'POST',body:{email:String(email||'').trim(),password:String(password||'')}});
-  const s=normalizeAuth(data);if(!s)throw Error('Supabase did not return a session.');saveSession(s);emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});return s
+  const s=normalizeAuth(data);if(!s)throw Error('Supabase did not return a session.');saveSession(s);emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});startAutoSync();return s
 }
 async function signUp(email,password){
   emit('signing-up');const data=await raw('/auth/v1/signup?redirect_to='+encodeURIComponent(APP_ROOT),{method:'POST',body:{email:String(email||'').trim(),password:String(password||'')}}),s=normalizeAuth(data);
-  if(s){saveSession(s);emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});return{session:s,confirmationRequired:false}}
+  if(s){saveSession(s);emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});startAutoSync();return{session:s,confirmationRequired:false}}
   emit('confirmation-required',{email:String(email||'').trim()});return{session:null,confirmationRequired:true}
 }
 async function signOut(){
   const s=session();try{if(s?.access_token)await raw('/auth/v1/logout',{method:'POST',token:s.access_token})}catch{}
-  saveSession(null);remoteByKey.clear();emit('signed-out')
+  stopAutoSync();saveSession(null);remoteByKey.clear();emit('signed-out')
 }
 function currentUser(){return session()?.user||null}
 function cloudSnapshot(rows,user){
@@ -124,20 +124,25 @@ async function pushLocal(){
   finally{syncing=false}
 }
 function scheduleSync(delay=1500){if(!session())return;clearTimeout(timer);timer=setTimeout(()=>{timer=null;pushLocal().catch(()=>{})},delay)}
-function status(){const s=session();return{signedIn:!!s?.access_token,email:s?.user?.email||'',state:lastState,lastSyncAt,user:s?.user||null}}
+function stopAutoSync(){if(autoSyncTimer){clearInterval(autoSyncTimer);autoSyncTimer=null}}
+function startAutoSync(){
+  stopAutoSync();if(!session())return;
+  autoSyncTimer=setInterval(()=>{if(session()&&navigator.onLine)fullSync({reloadOnImport:true}).catch(()=>{})},AUTO_SYNC_INTERVAL)
+}
+function status(){const s=session();return{signedIn:!!s?.access_token,email:s?.user?.email||'',state:lastState,lastSyncAt,user:s?.user||null,autoSyncIntervalMs:AUTO_SYNC_INTERVAL,nextAutoSyncAt:s?.access_token?(lastSyncAt||Date.now())+AUTO_SYNC_INTERVAL:0}}
 window.addEventListener('focus',()=>{if(session()&&Date.now()-lastSyncAt>120000)fullSync().catch(()=>{})});
 window.addEventListener('online',()=>{if(session())fullSync().catch(()=>{})});
 
-window.MBUSupabase={signIn,signUp,signOut,status,currentUser,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT};
+window.MBUSupabase={signIn,signUp,signOut,status,currentUser,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
 (async()=>{
   const redirected=await consumeAuthRedirect();
   if(redirected){
-    setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100);
+    startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100);
     return
   }
   if(session()){
     if(sessionStorage.getItem('mbu_cloud_reload')==='1')sessionStorage.removeItem('mbu_cloud_reload');
-    setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),400)
+    startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),400)
   }else emit('signed-out');
 })().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth bootstrap failed',e)});
 })();
