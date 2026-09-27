@@ -3,6 +3,7 @@ const { expect } = require('@playwright/test');
 const exam = '/equipment/exam-1';
 
 async function clearAppState(page) {
+  await page.route('https://xqyasyambwdyhsjkftqu.supabase.co/rest/v1/rpc/snar_guest_heartbeat', route => route.fulfill({ status:200, contentType:'application/json', body:'true' }));
   await page.route('https://xqyasyambwdyhsjkftqu.supabase.co/rest/v1/rpc/snar_has_current_legal_acceptance', route =>
     route.fulfill({ status: 200, contentType: 'application/json', body: 'true' })
   );
