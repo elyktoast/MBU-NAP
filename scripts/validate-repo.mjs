@@ -351,13 +351,14 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
   if(!exists('supabase/functions/delete-account/index.ts')||!read('supabase/functions/delete-account/index.ts').includes('auth.admin.deleteUser(user.id)'))fail('Account deletion Edge Function source is missing');
   if(!exists('supabase/migrations/20260927044154_remove_obsolete_account_delete_rpc.sql'))fail('Obsolete account deletion RPC removal migration is missing');
   if(!exists('supabase/migrations/20260927050012_add_privacy_request_appeal.sql')||!read('supabase/migrations/20260927050012_add_privacy_request_appeal.sql').includes("'appeal'"))fail('Privacy request appeal migration is missing');
-  for(const p of ['index.html','equipment/index.html','equipment/exam-1/index.html','equipment/exam-1/studio.html','privacy.html','terms.html','README.md','CONTRIBUTING.md','reporting/apps-script/Code.gs','reporting/apps-script/SETUP.md','tests/e2e/quiz-regression.spec.js']){
+  for(const p of ['index.html','equipment/index.html','equipment/exam-1/index.html','equipment/exam-1/studio.html','privacy.html','terms.html','README.md','CONTRIBUTING.md','tests/e2e/quiz-regression.spec.js']){
     const src=read(p);
     if(/Mary Baldwin|MBU-NAP|MBU Nurse Anesthesia Program|Professor\b|\bInstructor\b|Dr\.\s+[A-Z][a-z]+/i.test(src))fail(p+': obsolete institutional/faculty branding remains');
   }
-  const reportingClient=read('equipment/assets/studio-sync.js'),reportingServer=read('reporting/apps-script/Code.gs');
+  const reportingClient=read('equipment/assets/studio-sync.js'),questionReportMigration=read('supabase/migrations/20260927223302_add_private_question_report_inbox.sql');
   if(/reporter:String\(|userAgent:navigator\.userAgent/.test(reportingClient))fail('Question reporting still transmits reporter identity or browser user-agent data');
-  if(/p\.reporter|p\.userAgent|['"]Reporter['"]|['"]User Agent['"]/.test(reportingServer))fail('Question reporting backend still stores reporter identity or browser user-agent data');
+  for(const token of ['private.snar_question_reports','snar_submit_question_report','snar_admin_question_reports','snar_admin_update_question_report'])if(!questionReportMigration.includes(token))fail('Private question-report backend missing '+token);
+  if(/user_id\s+uuid|reporter|user_agent/i.test(questionReportMigration))fail('Private question-report inbox stores reporter identity metadata');
   for(const token of ['FERPA and educational records','not operated by or on behalf of a school','HIPAA and patient information','not designed to receive or store protected health information'])if(!privacy.includes(token))fail('Privacy legal-boundary disclosure missing '+token);
   for(const p of ['equipment/exam-1/data/bank1.json','equipment/exam-1/data/bank2.json','equipment/exam-1/data/bank3.json','equipment/exam-1/data/combined.json','equipment/exam-1/data/hazards.json']){
     const src=read(p);
