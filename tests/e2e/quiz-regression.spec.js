@@ -1787,4 +1787,21 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('[data-cloud-history]')).toContainText('revision 4');
   });
 
+  test('Continue Studying deep-links directly into the saved canonical practice set', async ({ page }) => {
+    await page.addInitScript(() => {
+      const blank=()=>({answers:{},graded:{},correct:{},strikes:{},current:0});
+      const state={sets:{1:blank(),2:blank(),3:blank(),4:blank(),5:blank()},missed:{1:[],2:[],3:[],4:[],5:[]},test6:blank()};
+      state.sets[2].current=4;
+      localStorage.setItem('SRNA_COMBINED_EXAM_SET_1_2026_V1',JSON.stringify(state));
+      localStorage.setItem('mbu_sync_meta_v1',JSON.stringify({SRNA_COMBINED_EXAM_SET_1_2026_V1:{revision:1,updatedAt:Date.now(),deviceId:'test'}}));
+    });
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    const link=page.locator('#continuePanel a').filter({hasText:'Quiz Bank 1'}).first();
+    await expect(link).toHaveAttribute('href',/quiz-bank-1\.html\?set=2$/);
+    await link.click();
+    await page.evaluate(() => MBUQuizReady);
+    await expect(page.locator('#quiz')).toBeVisible();
+    await expect(page.locator('#progress')).toContainText('Question 5 of 100');
+  });
+
 });
