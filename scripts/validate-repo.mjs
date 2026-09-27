@@ -841,11 +841,12 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const p of ['equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-page.js'])if(!read(p).includes('MBUStudyIntelligence'))fail(p+': answer path bypasses shared study intelligence');
 }
 
-// Mobile global navigation must stay compact without widening the viewport.
+// Mobile global navigation must stay compact, single-row for primary links, and within the viewport.
 {
  const nav=read('equipment/assets/site-nav.css'),core=read('equipment/assets/app-core.css');
- for(const token of ['@media(max-width:700px)','.mbu-global-nav{flex-wrap:wrap','grid-template-columns:repeat(3,minmax(0,1fr))','.mbu-global-nav__bank-wrap{grid-column:1/-1'])if(!nav.includes(token))fail('Mobile primary navigation contract missing '+token);
- for(const token of ['@media(max-width:700px)','.mbu-global-nav__utilities{gap:2px;margin-left:auto}'])if(!core.includes(token))fail('Mobile utility navigation contract missing '+token);
+ for(const token of ['@media(max-width:700px)','grid-template-columns:minmax(0,1fr) auto','grid-template-columns:repeat(3,minmax(0,1fr))','.mbu-global-nav__bank-wrap{grid-column:1/-1'])if(!nav.includes(token))fail('Mobile primary navigation contract missing '+token);
+ for(const token of ['@media(max-width:700px)','.mbu-global-nav__utilities{','grid-column:2;','grid-row:1;'])if(!core.includes(token))fail('Mobile utility navigation contract missing '+token);
+ if(nav.includes('.mbu-global-nav__primary{grid-template-columns:1fr 1fr}'))fail('Mobile primary navigation regressed to a two-column wrap');
 }
 
 // Universal search must stay lazy, global, and routed into the canonical Studio question view.
