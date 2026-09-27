@@ -12885,10 +12885,10 @@
       "type": "single",
       "stem": "During mask ventilation, slight chest movement is seen but SpO₂ is falling and no waveform ETCO₂ is present. How should ventilation be interpreted?",
       "options": [
-        "Adequate because any chest movement proves ventilation",
-        "Inadequate because objective oxygenation and exhaled-CO₂ data outweigh slight chest movement",
-        "Adequate if peak airway pressure is low",
-        "Adequate until the pulse oximeter reaches 80%"
+        "Adequate because visible chest movement is the best measure of ventilation",
+        "Inadequate because falling SpO₂ and absent waveform ETCO₂ outweigh slight chest movement",
+        "Adequate because low peak airway pressure excludes airway obstruction",
+        "Adequate until oxygen saturation falls below the emergency alarm limit"
       ],
       "answer": [
         1
@@ -15264,10 +15264,10 @@
       "type": "single",
       "stem": "A variable-bypass vaporizer is accidentally tipped and subsequently delivers an unexpectedly high agent concentration. What corrective procedure is described in the study guide?",
       "options": [
-        "Refill it immediately and use low fresh gas flow",
-        "Drain it, run it at the highest setting with high fresh gas flow for about 30 minutes, then refill when analysis reads zero",
-        "Place it in transport mode for five minutes",
-        "Flush the breathing circuit while leaving the tipped vaporizer mounted and full"
+        "Refill the sump immediately and continue at low fresh gas flow for 30 minutes",
+        "Drain it, run the highest setting at high fresh gas flow for about 30 minutes, then refill after agent analysis reaches zero",
+        "Place the vaporizer in transport mode and leave it unused until the next scheduled machine check",
+        "Flush the breathing circuit with oxygen while leaving the tipped vaporizer full and mounted"
       ],
       "answer": [
         1
@@ -15531,10 +15531,10 @@
       "type": "single",
       "stem": "Which feature distinguishes a Tec 6 desflurane vaporizer from a conventional variable-bypass vaporizer?",
       "options": [
-        "It operates without electricity at room temperature",
-        "It heats desflurane to about 39 °C and pressurizes it to roughly 2 atmospheres",
-        "Fresh gas passes directly through its liquid sump",
-        "It uses no pressure sensing"
+        "It remains at room temperature and works without electricity by using only fresh-gas splitting",
+        "It heats desflurane to about 39 °C, pressurizes it to roughly 2 atmospheres, and requires electrical power",
+        "It sends fresh gas directly through the liquid sump and measures output with a conventional wick system",
+        "It uses a copper-kettle design that requires manual carrier-flow calculations instead of pressure control"
       ],
       "answer": [
         1
@@ -16253,10 +16253,10 @@
       "type": "single",
       "stem": "Which circulation requirement is part of ASA Standard II in the Exam 1 study guide?",
       "options": [
-        "ECG displayed continuously with blood pressure and heart rate assessed at least every 5 minutes",
-        "A pulmonary artery catheter in every general anesthetic",
-        "An arterial line for every patient receiving volatile anesthetic",
-        "A 12-lead ECG printed every 5 minutes"
+        "ECG displayed continuously, with blood pressure and heart rate evaluated at least every 5 minutes",
+        "Pulmonary-artery pressure displayed continuously, with cardiac output calculated every 5 minutes",
+        "An arterial catheter in every general anesthetic, with beat-to-beat pressure recorded throughout the case",
+        "A 12-lead ECG printed at fixed 5-minute intervals, with noninvasive blood pressure measured continuously"
       ],
       "answer": [
         0
