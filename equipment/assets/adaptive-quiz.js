@@ -10,6 +10,7 @@ const logitToLevel=logit=>clampLevel(Math.round(3+clampLogit(logit)/1.25));
 const logistic=x=>1/(1+Math.exp(-Math.max(-12,Math.min(12,x))));
 function tieRank(uid){let h=2166136261;for(const c of String(uid||'')){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
 function topicOf(q){return String(q?.topic||q?.lec||q?.concept||'Other').trim()||'Other'}
+function contentKey(q){const stem=String(q?.stem||q?.q||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();return stem||('uid:'+String(q?.uid||q?.id||''))}
 function questionStats(uid){return window.MBUStudyIntelligence?.questionStats?.(uid)||null}
 function populationStats(uid){return window.MBUSupabase?.calibration?.(uid)||null}
 function topicStats(topic,cache){
