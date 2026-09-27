@@ -153,6 +153,7 @@ modal.querySelector('[data-device]').textContent=deviceId().slice(0,12);
 modal.querySelector('[data-errors]').textContent=errors.length?errors.length+' captured':'0 issues detected';
 const syncBtn=modal.querySelector('[data-tools-sync]');syncBtn.hidden=!info.signedIn;syncBtn.disabled=info.state==='syncing'||info.legalAccepted!==true||info.accessStatus==='suspended';
 modal.querySelector('[data-tools-account]').textContent=info.signedIn?'Manage account':'Sign in';
+const suggestionSubmit=modal.querySelector('[data-suggestion-submit]'),suggestionHelp=modal.querySelector('[data-suggestion-help]');if(suggestionSubmit&&suggestionHelp){const suggestionReady=!!info.signedIn&&info.legalAccepted===true&&info.accessStatus==='active';suggestionSubmit.disabled=!suggestionReady;suggestionHelp.textContent=suggestionReady?'Submissions go to the private admin Suggestions inbox.':'Sign in with an active account to submit suggestions.'}
 updateCloudChip()
 }
 function refreshAccount(){
