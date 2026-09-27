@@ -8,6 +8,7 @@ async function start(){
   await runtime.loadScript('studio-sync.js');
   await runtime.loadScript('navigator.js');
   await runtime.loadScript('calculator.js');
+  await runtime.loadScript('question-generator.js');
   await runtime.loadScript('studio-page.js');
   await runtime.loadScript('auto-update.js');
   return true
