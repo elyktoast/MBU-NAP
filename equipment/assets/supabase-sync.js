@@ -253,14 +253,6 @@ stopAutoSync();if(!session()||legalAccepted!==true||accountAccess!=='active')ret
 autoSyncTimer=setInterval(()=>{if(session()&&legalAccepted===true&&accountAccess==='active'&&navigator.onLine)fullSync({reloadOnImport:true}).catch(()=>{})},AUTO_SYNC_INTERVAL)
 }
 async function adminStatus(){const s=await validSession();if(!s?.access_token||legalAccepted!==true)return{is_admin:false,role:null};return await api('/rest/v1/rpc/snar_admin_status',{method:'POST',body:{}})}
-async function adminSystemSummary(){return adminRpc('snar_admin_system_summary')}
-async function adminAccounts(){return adminRpc('snar_admin_accounts')}
-async function adminSetAccountAccess(userId,statusValue){return adminRpc('snar_admin_set_account_access',{p_user_id:String(userId),p_status:String(statusValue)})}
-async function adminDeleteAccount(userId){return adminRpc('snar_admin_delete_account',{p_user_id:String(userId)})}
-async function adminLegalAcceptances(){return adminRpc('snar_admin_legal_acceptances')}
-async function adminPrivacyRequests(){return adminRpc('snar_admin_privacy_requests')}
-async function adminUpdatePrivacyRequest(id,statusValue){return adminRpc('snar_admin_update_privacy_request',{p_id:Number(id),p_status:String(statusValue||'')})}
-async function adminRetentionCleanup(){return adminRpc('snar_admin_retention_cleanup')}
 function status(){const s=session();return{signedIn:!!s?.access_token,email:s?.user?.email||'',state:lastState,lastSyncAt,user:s?.user||null,recoveryMode,legalAccepted,accessStatus:accountAccess,termsVersion:LEGAL_TERMS_VERSION,privacyVersion:LEGAL_PRIVACY_VERSION,autoSyncIntervalMs:AUTO_SYNC_INTERVAL,nextAutoSyncAt:s?.access_token&&legalAccepted===true&&accountAccess==='active'?(lastSyncAt||Date.now())+AUTO_SYNC_INTERVAL:0}}
 window.addEventListener('focus',()=>{if(session()&&legalAccepted===true&&accountAccess==='active'&&Date.now()-lastSyncAt>120000)fullSync().catch(()=>{})});
 window.addEventListener('online',()=>{if(session()&&legalAccepted===true&&accountAccess==='active')fullSync().catch(()=>{})});
@@ -272,7 +264,7 @@ await refreshAccountAccess();if(accountAccess!=='active'){emit('access-suspended
 stopGuestHeartbeat();startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100);return true
 }
 window.addEventListener('hashchange',()=>handleAuthRedirect().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth redirect failed',e)}));
-window.MBUSupabase={signIn,signUp,signOut,deleteAccount,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,refreshLegalAcceptance,refreshAccountAccess,acceptCurrentLegal,submitPrivacyRequest,submitItemContribution,refreshCalibration,calibration,listDevices,removeDevice,listHistory,restoreVersion,adminStatus,adminSystemSummary,adminAccounts,adminSetAccountAccess,adminDeleteAccount,adminLegalAcceptances,adminPrivacyRequests,adminUpdatePrivacyRequest,adminRetentionCleanup,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
+window.MBUSupabase={signIn,signUp,signOut,deleteAccount,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,refreshLegalAcceptance,refreshAccountAccess,acceptCurrentLegal,submitPrivacyRequest,submitItemContribution,refreshCalibration,calibration,listDevices,removeDevice,listHistory,restoreVersion,adminStatus,adminRpc,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
 const authReady=(async()=>{
 if(await handleAuthRedirect())return true;
 if(session()){
