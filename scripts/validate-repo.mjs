@@ -323,7 +323,11 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
   for(const token of ['SNAR Study Tool','De-identification commitment','Privacy request','Supabase'])if(!privacy.includes(token))fail('Privacy Notice missing '+token);
   for(const token of ['SNAR Study Tool','Independent educational resource','Educational use only','Privacy Notice'])if(!terms.includes(token))fail('Terms of Use missing '+token);
   for(const token of ['data-cloud-consent','Privacy & Account','data-privacy-submit','Delete account & data'])if(!core.includes(token))fail('Account legal controls missing '+token);
-  if(!supabase.includes('submitPrivacyRequest')||!supabase.includes('snar_submit_privacy_request'))fail('Private privacy-request API is not wired');
+  if(!supabase.includes('submitPrivacyRequest')||!supabase.includes('/rest/v1/snar_privacy_requests'))fail('Private privacy-request API is not wired');
+  for(const token of ['signUp(email,password,accepted=false)','snar_terms_version','snar_privacy_version','snar_adult_ack','snar_accepted_at'])if(!supabase.includes(token))fail('Signup acknowledgement audit contract missing '+token);
+  if(!supabase.includes('/functions/v1/delete-account'))fail('Self-service account deletion is not routed through the authenticated Edge Function');
+  if(!exists('supabase/functions/delete-account/index.ts')||!read('supabase/functions/delete-account/index.ts').includes('auth.admin.deleteUser(user.id)'))fail('Account deletion Edge Function source is missing');
+  if(!exists('supabase/migrations/20260927044154_remove_obsolete_account_delete_rpc.sql'))fail('Obsolete account deletion RPC removal migration is missing');
   for(const p of ['index.html','equipment/index.html','equipment/exam-1/index.html','equipment/exam-1/studio.html','privacy.html','terms.html']){
     const src=read(p);
     if(/Mary Baldwin|MBU-NAP|Professor\b|Dr\.\s+Elmore/i.test(src))fail(p+': obsolete institutional/faculty branding remains');
