@@ -758,7 +758,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 // Canonical content metadata is a stable release contract after Content Phase 2.
 {
  const manifest=JSON.parse(read('equipment/exam-1/banks.json')),taxonomy=manifest.contentTaxonomy||{},topics=new Set(taxonomy.topics||[]),sources=new Set(taxonomy.sourceTitles||[]);
- if(topics.size!==5||sources.size!==7)fail('Content taxonomy is incomplete');
+ if(topics.size!==5||sources.size!==9)fail('Content taxonomy is incomplete');
  for(const file of ['bank1.json','bank2.json','bank3.json','combined.json','hazards.json']){
    const payload=JSON.parse(read('equipment/exam-1/data/'+file)),qs=Array.isArray(payload)?payload:(payload.questions||[]);
    for(const q of qs){
