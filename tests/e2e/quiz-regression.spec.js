@@ -1521,13 +1521,21 @@ test.describe('canonical quiz regression', () => {
     await page.route(cloud+'/rest/v1/rpc/snar_admin_status',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({is_admin:true,role:'operator_admin'})}));
     await page.route(cloud+'/rest/v1/rpc/snar_admin_system_summary',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({accounts:2,active_accounts:2,suspended_accounts:0,legal_acceptances:2,privacy_requests:0,item_contributions:0,cat_users:1,adaptive_first_attempts:4,calibrated_items_25:0,guest_active_15m:3,guest_sessions_24h:8})}));
     await page.route(cloud+'/rest/v1/rpc/snar_admin_accounts',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify([{user_id:'00000000-0000-0000-0000-000000000001',email:'e2e@example.com',created_at:new Date().toISOString(),last_sign_in_at:new Date().toISOString(),access_status:'active',current_legal_accepted:true,cat_used:true,is_admin:true},{user_id:'00000000-0000-0000-0000-000000000002',email:'learner@example.com',created_at:new Date().toISOString(),last_sign_in_at:null,access_status:'active',current_legal_accepted:true,cat_used:false,is_admin:false}])}));
+    let accessChange=null,deletedAccount=null;
     await page.route(cloud+'/rest/v1/rpc/snar_admin_privacy_requests',route=>route.fulfill({status:200,contentType:'application/json',body:'[]'}));
+    await page.route(cloud+'/rest/v1/rpc/snar_admin_set_account_access',route=>{accessChange=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:'true'})});
+    await page.route(cloud+'/rest/v1/rpc/snar_admin_delete_account',route=>{deletedAccount=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:'true'})});
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);await waitForAuth(page);
     await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('[data-admin-details]')).toBeVisible();
     await expect(page.locator('[data-admin-stats]')).toContainText('Guests active ~15m');
     await expect(page.locator('[data-admin-stats]')).toContainText('CAT users');
     await expect(page.locator('[data-admin-accounts]')).toContainText('learner@example.com');
+    await page.locator('[data-admin-accounts] [data-admin-access]').click();
+    await expect.poll(()=>accessChange?.p_status).toBe('suspended');
+    page.on('dialog',dialog=>dialog.accept());
+    await page.locator('[data-admin-accounts] [data-admin-delete-account]').click();
+    await expect.poll(()=>deletedAccount?.p_user_id).toBe('00000000-0000-0000-0000-000000000002');
     await expect(page.locator('[data-admin-details]')).toContainText('Raw learner study payloads');
   });
 
