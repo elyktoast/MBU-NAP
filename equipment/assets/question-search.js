@@ -13,7 +13,7 @@ function topicOf(q){
 }
 function sourceText(q){const src=q.citation??q.src??q.ref??'';return Array.isArray(src)?src.join('; '):String(src||'')}
 async function buildIndex(){
-  const runtime=window.MBUBuild;if(!runtime)throw Error('MBU runtime is unavailable.');
+  const runtime=window.MBUBuild;if(!runtime)throw Error('SNAR Study Tool runtime is unavailable.');
   const exam=new URL('../exam-1/',runtime.assetsBase),manifest=await runtime.fetchJSON(new URL('banks.json',exam),{cache:'no-store'});
   const sources=[],seen=new Set();
   for(const src of manifest.studioSources||[]){
