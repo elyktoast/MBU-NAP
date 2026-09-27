@@ -42,6 +42,12 @@ async function seedSignedIn(page,email='e2e@example.com') {
   }, {email});
 }
 
+async function waitForAuth(page) {
+  await page.evaluate(async () => {
+    if (window.MBUAuthReady && typeof window.MBUAuthReady.then === 'function') await window.MBUAuthReady;
+  });
+}
+
 function collectPageErrors(page) {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
@@ -60,6 +66,7 @@ async function waitForStudio(page) {
     },
     { timeout: 20000 }
   ).toBeGreaterThan(0);
+  await waitForAuth(page);
 }
 
 async function storageJSON(page, key) {
@@ -69,4 +76,4 @@ async function storageJSON(page, key) {
   }, key);
 }
 
-module.exports = { exam, clearAppState, seedSignedIn, collectPageErrors, waitForStudio, storageJSON };
+module.exports = { exam, clearAppState, seedSignedIn, waitForAuth, collectPageErrors, waitForStudio, storageJSON };
