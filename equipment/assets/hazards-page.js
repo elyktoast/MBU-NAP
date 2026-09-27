@@ -2,7 +2,7 @@
 (()=>{'use strict';
 const runtime=window.MBUBuild,pageId=document.body?.dataset.mbuHazard||'',exam=new URL('../exam-1/',runtime?.assetsBase||location.href);
 async function start(){
-  if(!runtime)throw Error('SNAR Study Tool build runtime is missing');
+  if(!runtime)throw Error('SRNA Study Tool build runtime is missing');
   const manifest=await runtime.fetchJSON(new URL('banks.json',exam),{cache:'no-store'}),cfg=(manifest.hazards?.pages||[]).find(x=>x.id===pageId);if(!cfg)throw Error('Hazards config not found: '+pageId);
   await Promise.all([runtime.loadStyle('site-nav.css'),runtime.loadStyle('bank1-quiz-ui.css')]);
   await runtime.loadScript({src:'site-nav.js',data:{page:pageId}});
