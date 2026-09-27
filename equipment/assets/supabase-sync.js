@@ -1,24 +1,14 @@
 /* SRNA Study Tool Supabase auth + cloud sync adapter. Uses only the public browser key and authenticated RLS. */
 (()=>{'use strict';
-const cfg=window.MBU_SUPABASE_CONFIG||{},sync=window.MBUSync,SESSION_KEY='mbu_supabase_session_v1',LOCAL_OWNER_KEY='mbu_cloud_local_owner_v1',SYNC_META_KEY='mbu_sync_meta_v1',STATUS_EVENT='mbu:supabase-status',script=document.currentScript,APP_ROOT=new URL('../../',script?.src||location.href).href;
+const cfg=window.MBU_SUPABASE_CONFIG||{},sync=window.MBUSync,SESSION_KEY='mbu_supabase_session_v1',OWNER_KEY='mbu_cloud_local_owner_v1',META_KEY='mbu_sync_meta_v1',STATUS_EVENT='mbu:supabase-status',script=document.currentScript,APP_ROOT=new URL('../../',script?.src||location.href).href;
 if(!cfg.url||!cfg.publishableKey||!sync){console.warn('Supabase sync is not configured');return}
-const base=cfg.url.replace(/\/$/,''),AUTO_SYNC_INTERVAL=5*60*1000,LEGAL_TERMS_VERSION='2026-09-27-v5',LEGAL_PRIVACY_VERSION='2026-09-27-v5';
+const base=cfg.url.replace(/\/$/,''),AUTO_SYNC_INTERVAL=5*60*1000,LEGAL_VERSION='2026-09-27-v5',LEGAL_TERMS_VERSION=LEGAL_VERSION,LEGAL_PRIVACY_VERSION=LEGAL_VERSION;
 let syncing=false,syncQueued=false,lastSyncAt=0,lastState='signed-out',remoteByKey=new Map(),calibrationByKey=new Map(),calibrationFetchedAt=0,timer=null,autoSyncTimer=null,guestTimer=null,recoveryMode=false,legalAccepted=null,accountAccess='signed_out';
 
 const safeJSON=(raw,fallback=null)=>{try{return JSON.parse(raw)}catch{return fallback}};
 const session=()=>safeJSON(localStorage.getItem(SESSION_KEY));
-async function clearTrackedLocalData(){
-  const snapshot=await sync.exportSnapshot();
-  for(const key of Object.keys(snapshot?.stores||{}))localStorage.removeItem(key);
-  localStorage.removeItem(SYNC_META_KEY);
-}
-async function prepareLocalOwner(userId){
-  const id=String(userId||'');if(!id)return false;
-  const owner=localStorage.getItem(LOCAL_OWNER_KEY);
-  if(owner&&owner!==id){await clearTrackedLocalData();localStorage.setItem(LOCAL_OWNER_KEY,id);return true}
-  if(!owner)localStorage.setItem(LOCAL_OWNER_KEY,id);
-  return false
-}
+async function clearTrackedLocalData(){for(const key of Object.keys((await sync.exportSnapshot()).stores||{}))localStorage.removeItem(key);localStorage.removeItem(META_KEY)}
+async function prepareLocalOwner(userId){const id=String(userId||'');if(!id)return false;const owner=localStorage.getItem(OWNER_KEY),switched=!!owner&&owner!==id;if(switched)await clearTrackedLocalData();if(owner!==id)localStorage.setItem(OWNER_KEY,id);return switched}
 const emit=(state,detail={})=>{lastState=state;window.dispatchEvent(new CustomEvent(STATUS_EVENT,{detail:{state,lastSyncAt,...detail}}))};
 function normalizeAuth(data){
   const source=data?.session||data;
@@ -129,14 +119,15 @@ async function signIn(email,password){
 }
 async function signUp(email,password,accepted=false){
   if(accepted!==true)throw Error('You must confirm that you are 18+ and agree to the Terms and Privacy Notice before creating an account.');
-  const acceptedAt=new Date().toISOString();emit('signing-up');const data=await raw('/auth/v1/signup?redirect_to='+encodeURIComponent(APP_ROOT),{method:'POST',body:{email:String(email||'').trim(),password:String(password||''),data:{snar_terms_version:'2026-09-27-v5',snar_privacy_version:'2026-09-27-v5',snar_adult_ack:true,snar_accepted_at:acceptedAt}}}),s=normalizeAuth(data);
+  const acceptedAt=new Date().toISOString();emit('signing-up');const data=await raw('/auth/v1/signup?redirect_to='+encodeURIComponent(APP_ROOT),{method:'POST',body:{email:String(email||'').trim(),password:String(password||''),data:{snar_terms_version:LEGAL_TERMS_VERSION,snar_privacy_version:LEGAL_PRIVACY_VERSION,snar_adult_ack:true,snar_accepted_at:acceptedAt}}}),s=normalizeAuth(data);
   if(s){const switched=await prepareLocalOwner(s.user?.id);saveSession(s);stopGuestHeartbeat();if(switched){location.reload();return{session:s,confirmationRequired:false}}if(!await refreshLegalAcceptance())await acceptCurrentLegal(true);else{await refreshAccountAccess();if(accountAccess==='active'){emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});startAutoSync()}else emit('access-suspended',{email:s.user?.email||email})}return{session:s,confirmationRequired:false}}
   emit('confirmation-required',{email:String(email||'').trim()});return{session:null,confirmationRequired:true}
 }
+function resetCloudSession(){stopAutoSync();saveSession(null);legalAccepted=null;accountAccess='signed_out';remoteByKey.clear();calibrationByKey.clear();calibrationFetchedAt=0;emit('signed-out');startGuestHeartbeat()}
 async function signOut(){
   const s=session();if(s?.access_token&&legalAccepted===true&&accountAccess==='active')try{await fullSync()}catch{}
   try{if(s?.access_token)await raw('/auth/v1/logout',{method:'POST',token:s.access_token})}catch{}
-  stopAutoSync();saveSession(null);legalAccepted=null;accountAccess='signed_out';remoteByKey.clear();calibrationByKey.clear();calibrationFetchedAt=0;emit('signed-out');startGuestHeartbeat()
+  resetCloudSession()
 }
 async function resendConfirmation(email){
   const value=String(email||'').trim();if(!value)throw Error('Enter your email address first.');
@@ -158,8 +149,8 @@ function currentUser(){return session()?.user||null}
 async function deleteAccount(){
   const s=await validSession();if(!s?.access_token)throw Error('Sign in to delete your account.');
   await raw('/functions/v1/snar-delete-account',{method:'POST',body:{},token:s.access_token});
-  await clearTrackedLocalData();localStorage.removeItem(LOCAL_OWNER_KEY);
-  stopAutoSync();saveSession(null);legalAccepted=null;remoteByKey.clear();calibrationByKey.clear();calibrationFetchedAt=0;emit('signed-out');startGuestHeartbeat();return true
+  await clearTrackedLocalData();localStorage.removeItem(OWNER_KEY);
+  resetCloudSession();return true
 }
 async function submitPrivacyRequest(requestType,details=''){
   const s=await validSession();if(!s?.user?.id)throw Error('Sign in to submit a privacy request.');
