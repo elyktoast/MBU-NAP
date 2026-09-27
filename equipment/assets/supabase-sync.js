@@ -76,7 +76,9 @@ async function acceptCurrentLegal(adultAck=false){
   const ok=await raw('/rest/v1/rpc/snar_accept_current_legal',{method:'POST',token:s.access_token,body:{p_terms_version:LEGAL_TERMS_VERSION,p_privacy_version:LEGAL_PRIVACY_VERSION,p_adult_ack:true}});
   legalAccepted=ok===true;if(!legalAccepted)throw Error('Could not record legal acceptance.');
   emit('signed-in',{email:s.user?.email||''});
-  startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),50);
+  startAutoSync();
+  setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),50);
+  setTimeout(()=>refreshCalibration(true).catch(()=>{}),100);
   return true
 }
 async function signIn(email,password){
