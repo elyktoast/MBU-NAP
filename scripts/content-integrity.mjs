@@ -6,6 +6,8 @@ const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const norm=s=>String(s??'').trim().replace(/\s+/g,' ').toLowerCase();
 const err=m=>errors.push(m),warn=m=>warnings.push(m);
 const manifest=read('equipment/exam-1/banks.json'),baseline=read('scripts/content-integrity-baseline.json');
+const allowedTopics=new Set(['Monitoring','Medical Gas','CO₂ & Scavenging','Airway','Hazards & Safety']);
+const allowedSources=new Set(['Monitoring','Medical Gas Systems in Anesthesia','CO₂ Absorbents & Scavenging','Airway Equipment','Anesthesia Workstation Hazards & Safety']);
 
 const sources=[
   ['Quiz Bank 1','equipment/exam-1/data/bank1.json'],
