@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 1466,
+    "audited": 1566,
     "bank2": [
       {
         "id": "S2-021",
@@ -2009,6 +2009,154 @@
       },
       {
         "id": "S5-041",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-043",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-044",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-045",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-047",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-049",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-051",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-052",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-053",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-054",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-056",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-058",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected the strong-hydroxide catalyst/regeneration source locator from slide 3 to slide 2."
+        ]
+      },
+      {
+        "id": "S5-061",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-062",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-063",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-064",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-065",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-066",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-067",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-070",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-071",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-075",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-077",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced the 0.5 ppm combined-use halogenated-agent limit to Nurse Anesthesia 7e."
+        ]
+      },
+      {
+        "id": "S5-079",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-080",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-082",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-084",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-085",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-086",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-087",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-090",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced an unsupported pilot-balloon function item with features explicitly listed on the cited lecture slide."
+        ]
+      },
+      {
+        "id": "S5-092",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-093",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed the unsupported claim that dye is specifically added to identify cuff perforation and matched the lecture wording."
+        ]
+      },
+      {
+        "id": "S5-094",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-096",
         "disposition": "PASS"
       }
     ],
@@ -6446,119 +6594,393 @@
         "id": "S5-T58",
         "disposition": "PASS"
       }
+    ],
+    "combined": [
+      {
+        "id": "NC01",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG35",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NM01",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NC10",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NV04",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NI08",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NV15",
+        "disposition": "CORRECT",
+        "changes": [
+          "added the exposure-limit source alongside the scavenging-efficiency source and removed an unnecessary combined-use aside."
+        ]
+      },
+      {
+        "id": "NA01",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG31",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NV01",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NV10",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NI23",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NV29",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NI03",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG12",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NI17",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG07",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NI28",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NI06",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NC12",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NI27",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NV12",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NV19",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG28",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NV02",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NC07",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG02",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NM05",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NA12",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NC03",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NI16",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NI32",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG33",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG25",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NC09",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG01",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NI25",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NI31",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NA15",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NV09",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NM02",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NV28",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG17",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG11",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG22",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NI14",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG06",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NC06",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG20",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NA13",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NI21",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG34",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NM06",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG13",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG10",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NC15",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG30",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG03",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NV18",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NV23",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG05",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG19",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NI09",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NG27",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NI36",
+        "disposition": "PASS"
+      },
+      {
+        "id": "NA03",
+        "disposition": "PASS"
+      }
     ]
   },
-  "remaining": 534,
+  "remaining": 434,
   "lastBatch": {
-    "bank": "bank2.json",
+    "banks": [
+      "bank2.json",
+      "combined.json"
+    ],
     "audited": 100,
+    "bank2Count": 34,
+    "combinedCount": 66,
     "ids": [
-      "S4-013",
-      "S4-014",
-      "S4-015",
-      "S4-016",
-      "S4-017",
-      "S4-018",
-      "S4-019",
-      "S4-020",
-      "S4-021",
-      "S4-022",
-      "S4-024",
-      "S4-025",
-      "S4-027",
-      "S4-028",
-      "S4-030",
-      "S4-031",
-      "S4-032",
-      "S4-033",
-      "S4-034",
-      "S4-035",
-      "S4-036",
-      "S4-037",
-      "S4-039",
-      "S4-040",
-      "S4-042",
-      "S4-043",
-      "S4-044",
-      "S4-045",
-      "S4-046",
-      "S4-048",
-      "S4-049",
-      "S4-050",
-      "S4-051",
-      "S4-052",
-      "S4-053",
-      "S4-054",
-      "S4-055",
-      "S4-056",
-      "S4-057",
-      "S4-060",
-      "S4-061",
-      "S4-062",
-      "S4-064",
-      "S4-065",
-      "S4-066",
-      "S4-067",
-      "S4-069",
-      "S4-070",
-      "S4-071",
-      "S4-072",
-      "S4-073",
-      "S4-074",
-      "S4-075",
-      "S4-077",
-      "S4-078",
-      "S4-079",
-      "S4-081",
-      "S4-082",
-      "S4-083",
-      "S4-085",
-      "S4-086",
-      "S4-087",
-      "S4-090",
-      "S4-091",
-      "S4-092",
-      "S4-093",
-      "S4-094",
-      "S4-095",
-      "S4-097",
-      "S4-100",
-      "S5-001",
-      "S5-002",
-      "S5-004",
-      "S5-005",
-      "S5-006",
-      "S5-008",
-      "S5-009",
-      "S5-010",
-      "S5-011",
-      "S5-012",
-      "S5-013",
-      "S5-014",
-      "S5-015",
-      "S5-017",
-      "S5-019",
-      "S5-021",
-      "S5-023",
-      "S5-025",
-      "S5-026",
-      "S5-028",
-      "S5-029",
-      "S5-030",
-      "S5-031",
-      "S5-032",
-      "S5-035",
-      "S5-036",
-      "S5-037",
-      "S5-039",
-      "S5-040",
-      "S5-041"
+      "S5-043",
+      "S5-044",
+      "S5-045",
+      "S5-047",
+      "S5-049",
+      "S5-051",
+      "S5-052",
+      "S5-053",
+      "S5-054",
+      "S5-056",
+      "S5-058",
+      "S5-061",
+      "S5-062",
+      "S5-063",
+      "S5-064",
+      "S5-065",
+      "S5-066",
+      "S5-067",
+      "S5-070",
+      "S5-071",
+      "S5-075",
+      "S5-077",
+      "S5-079",
+      "S5-080",
+      "S5-082",
+      "S5-084",
+      "S5-085",
+      "S5-086",
+      "S5-087",
+      "S5-090",
+      "S5-092",
+      "S5-093",
+      "S5-094",
+      "S5-096",
+      "NC01",
+      "NG35",
+      "NM01",
+      "NC10",
+      "NV04",
+      "NI08",
+      "NV15",
+      "NA01",
+      "NG31",
+      "NV01",
+      "NV10",
+      "NI23",
+      "NV29",
+      "NI03",
+      "NG12",
+      "NI17",
+      "NG07",
+      "NI28",
+      "NI06",
+      "NC12",
+      "NI27",
+      "NV12",
+      "NV19",
+      "NG28",
+      "NV02",
+      "NC07",
+      "NG02",
+      "NM05",
+      "NA12",
+      "NC03",
+      "NI16",
+      "NI32",
+      "NG33",
+      "NG25",
+      "NC09",
+      "NG01",
+      "NI25",
+      "NI31",
+      "NA15",
+      "NV09",
+      "NM02",
+      "NV28",
+      "NG17",
+      "NG11",
+      "NG22",
+      "NI14",
+      "NG06",
+      "NC06",
+      "NG20",
+      "NA13",
+      "NI21",
+      "NG34",
+      "NM06",
+      "NG13",
+      "NG10",
+      "NC15",
+      "NG30",
+      "NG03",
+      "NV18",
+      "NV23",
+      "NG05",
+      "NG19",
+      "NI09",
+      "NG27",
+      "NI36",
+      "NA03"
     ],
     "notes": [
-      "Audited the next 100 Bank 2 questions against the course lectures and Nurse Anesthesia, 7th ed. where the lecture did not fully support the claim.",
-      "Visually verified all six image-dependent questions in the batch: rebreathing capnogram, arterial dynamic-response figure, flowmeter high-flow diagram, armored tube, RAE tube, and Macintosh/Miller blade image.",
-      "Corrected two peak-to-plateau pressure questions to Monitoring slide 26, replaced unsupported nitrous-oxide cylinder-weight claims with textbook-supported pressure behavior, and re-sourced the combined WAG exposure limits to Nurse Anesthesia 7e.",
-      "Also rebuilt the Murphy-eye and laser-cuff questions to use facts explicitly supported by the airway lecture."
+      "Finished the final 34 unaudited Bank 2 questions, making Bank 2 fully audited at 500/500, then audited the first 66 Combined questions.",
+      "Corrected the soda-lime hydroxide source locator, re-sourced the combined-use halogenated-agent exposure limit to Nurse Anesthesia 7e, rebuilt one unsupported ETT-feature item, and tightened the laser-resistant cuff wording in Bank 2.",
+      "Corrected NV15 in Combined so its 90% scavenging calculation and 2 ppm no-N2O comparison are both explicitly sourced.",
+      "Calculation items in the Combined batch were checked, including compressed-gas proportional volume, copper-kettle output, oxygen-flush one-second volume, and variable-bypass splitting ratio."
     ]
   },
   "lastCorrection": {
