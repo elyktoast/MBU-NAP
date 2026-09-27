@@ -617,8 +617,8 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  const boot=read('equipment/assets/build-bootstrap.js'),cfg=read('equipment/assets/supabase-config.js'),cloud=read('equipment/assets/supabase-sync.js'),migration=read('supabase/migrations/20260927000217_create_mbu_sync_schema.sql');
  if(!boot.includes("loadScript('supabase-config.js')")||!boot.includes("loadScript('supabase-sync.js')"))fail('Supabase sync is not loaded by the shared bootstrap');
  if(!cfg.includes('sb_publishable_')||cfg.includes('sb_secret_')||cfg.includes('service_role'))fail('Supabase browser config must contain only a publishable key');
- for(const token of ['mbu_sync_state','mbu_sync_versions','mbu_sync_devices',"registerAdapter('supabase'",'/auth/v1/token?grant_type=password','on_conflict=user_id,store_key'])if(!cloud.includes(token))fail('Supabase adapter missing '+token);
- if(!migration.includes('enable row level security')||!migration.includes('(select auth.uid())=user_id'))fail('Supabase migration is missing RLS ownership policies');
+ for(const token of ['mbu_sync_state','mbu_sync_devices',"registerAdapter('supabase'",'/auth/v1/token?grant_type=password','on_conflict=user_id,store_key'])if(!cloud.includes(token))fail('Supabase adapter missing '+token);
+ for(const token of ['mbu_sync_versions','mbu_sync_record_version','enable row level security','(select auth.uid())=user_id'])if(!migration.includes(token))fail('Supabase migration missing '+token);
  const all=[...quizFiles,'equipment/assets/app-core.js','equipment/assets/supabase-sync.js','equipment/assets/supabase-config.js'].map(read).join('\n');
  if(all.includes('sb_secret_'))fail('A Supabase secret key is present in browser/repository application code');
 }
