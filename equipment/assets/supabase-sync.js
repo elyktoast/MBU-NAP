@@ -33,7 +33,7 @@ emit(recoveryMode?'password-recovery':'signed-in',{email:s.user?.email||''});
 return s
 }
 async function raw(path,{method='GET',body,token,headers={}}={}){
-const response=await fetch(base+path,{method,headers:{apikey:cfg.publishableKey,'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{}),...headers},body:body===undefined?undefined:JSON.stringify(body)});
+const response=await fetch(base+path,{method,headers:{apikey:cfg.publishableKey,'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{}),...headers},body:body===undefined?undefined:JSON.stringify(body),signal:AbortSignal.timeout?AbortSignal.timeout(10000):undefined});
 const text=await response.text();const data=text?safeJSON(text,text):null;
 if(!response.ok){const msg=(data&&typeof data==='object'&&(data.msg||data.message||data.error_description||data.error))||('HTTP '+response.status);const e=Error(String(msg));e.status=response.status;throw e}
 return data
