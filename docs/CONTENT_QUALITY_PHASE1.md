@@ -20,7 +20,7 @@ The strongest quality signal is that the semantic audit found **no exact cross-b
 
 ## Topic coverage
 
-| Bank | Monitoring | Medical Gases | CO₂ & Scavenging | Airway | Hazards & Safety |
+| Bank | Monitoring | Medical Gas | CO₂ & Scavenging | Airway | Hazards & Safety |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Bank 1 | 180 | 181 | 85 | 54 | 0 |
 | Bank 2 | 130 | 128 | 122 | 120 | 0 |
@@ -83,3 +83,19 @@ The content is structurally consistent enough to proceed without emergency answe
 5. targeted review of the 35 near-duplicate pairs.
 
 No automatic educational-content rewrites were made during Phases 1–2.
+
+
+## Phase 2 metadata scorecard
+
+| Check | Status |
+| --- | --- |
+| Explicit topic on all 2,000 questions | Complete |
+| Canonical five-topic taxonomy | Complete |
+| Structured source metadata on all questions | Complete |
+| Citation display normalization | Complete |
+| Missing source metadata | 0 |
+| Missing topic metadata | 0 |
+| Educational-content changes during metadata pass | 0 |
+| Difficulty tagging | Deferred intentionally |
+
+Difficulty was not auto-assigned in Phase 2 because a trustworthy difficulty label requires either source-author intent, empirical learner performance, or deliberate expert review. Guessing difficulty from wording or question length would create low-quality metadata.
