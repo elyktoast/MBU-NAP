@@ -728,12 +728,13 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ['data-cloud-devices-details','data-cloud-history-details','renderCloudDevices','renderCloudHistory'])if(!core.includes(token))fail('Cloud management UI missing '+token);
 }
 
-// Continue Studying must deep-link into the saved canonical set and preserve Hazards topic metadata.
+// Continue Studying must resume the active canonical set and preserve Hazards topic metadata.
 {
- const quiz=read('equipment/assets/quiz-engine.js'),dash=read('equipment/assets/exam-dashboard.js'),hazards=read('equipment/assets/hazards-standard-engine.js');
- for(const token of ["params.get('set')","SETS[requested])startSet(requested)",'lastSet:null','db.lastSet=s'])if(!quiz.includes(token))fail('Canonical Continue Studying deep link missing '+token);
- for(const token of ['Number(d.lastSet)','recentActivity?.(100)','active set','href:b.page+\'?set=\'+encodeURIComponent(pick.set)']){if(token==='active set')continue;if(!dash.includes(token))fail('Exam dashboard Continue Studying contract missing '+token)}
+ const quiz=read('equipment/assets/quiz-engine.js'),dash=read('equipment/assets/exam-dashboard.js'),hazards=read('equipment/assets/hazards-standard-engine.js'),hazardsAdvanced=read('equipment/assets/hazards-quiz-engine.js');
+ for(const token of ["lastSet:null","db.lastSet=s","params.get('set')","SETS[requested])startSet(requested)"])if(!quiz.includes(token))fail('Canonical Continue Studying contract missing '+token);
+ for(const token of ["Number(d.lastSet)","recentActivity?.(100)","states.filter(x=>x.incomplete&&x.started)","href:b.page+'?set='+encodeURIComponent(pick.set)"])if(!dash.includes(token))fail('Exam dashboard Continue Studying contract missing '+token);
  if(!hazards.includes("topic:q.topic||q.lec||q.concept||'Workstation Hazards'"))fail('Standard Hazards loader drops topic metadata');
+ if(!hazardsAdvanced.includes("topic:q.topic||q.lec||q.concept||'Workstation Hazards'"))fail('Advanced Hazards loader drops topic metadata');
 }
 
 // Semantic content checking is mandatory in quality CI.
