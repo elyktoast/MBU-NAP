@@ -422,7 +422,7 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('.mbu-session-head')).toBeVisible();
     await expect(page.locator('.mbu-session-actions #mbuFlagBtn')).toBeVisible();
     await expect(page.locator('.mbu-session-actions #mbuNotesBtn')).toBeVisible();
-    await expect(page.locator('.mbu-session-actions #mbuCalcBtn')).toBeVisible();
+    await expect(page.locator('.mbu-session-actions #mbu-calc-open')).toBeVisible();
     await expect(page.locator('.mbu-quiz-stats>div')).toHaveCount(4);
   });
 
