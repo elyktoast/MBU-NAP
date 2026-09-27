@@ -25,7 +25,7 @@ function start({questions:QUESTIONS,store:STORE,bankKey,setNumber}){window.QUEST
  loadDB();Object.assign(window,{startSet,reviewMissed,submitAnswer,nav,goDashboard,resetCurrent,mbuToggleFlag:q=>{window.MBUStudio?.toggleFlag?.(bankKey,q);loadQuestion()},mbuReportQuestion:q=>window.MBUStudio?.report?.(bankKey,q)});window.MBUHazardsStandard={navTo};const p=new URLSearchParams(location.search);if(p.get("review")==="1")reviewMissed();else if(p.get("quiz")==="1")startSet();else renderDashboard()
 }
 async function startFromData({dataUrl,setFilter,store,bankKey,setNumber}){
- const payload=await window.MBUBuild.fetchJSON(new URL(dataUrl,location.href),{cache:"force-cache"}),all=Array.isArray(payload)?payload:(payload.questions||[]),questions=all.filter(q=>Number(q.set)===Number(setFilter)).map(q=>({id:q.id,type:q.type,stem:q.stem,options:q.options,answer:q.answer,explanation:q.explanation,citation:q.citation,imageSvg:q.imageSvg||null,image:q.image||null}));
+ const payload=await window.MBUBuild.fetchJSON(new URL(dataUrl,location.href),{cache:"force-cache"}),all=Array.isArray(payload)?payload:(payload.questions||[]),questions=all.filter(q=>Number(q.set)===Number(setFilter)).map(q=>({id:q.id,type:q.type,stem:q.stem,options:q.options,answer:q.answer,explanation:q.explanation,citation:q.citation,topic:q.topic||q.lec||q.concept||'Workstation Hazards',imageSvg:q.imageSvg||null,image:q.image||null}));
  start({questions,store,bankKey,setNumber});return true
 }
 window.MBUHazardsStandardEngine={start,startFromData};
