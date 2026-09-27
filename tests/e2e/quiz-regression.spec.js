@@ -1726,4 +1726,65 @@ test.describe('canonical quiz regression', () => {
     expect(data.history[0]).toMatchObject({id:7,store_key:'mbu_exam1_studio_v1',server_revision:3});
   });
 
+  test('Smart Review cold start is distributed and Due Review keeps due-time order', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const out=await page.evaluate(()=>{
+      MBUStudyIntelligence.clearAll();
+      const sample=[];
+      for(let b=1;b<=4;b++)for(let i=0;i<30;i++)sample.push({uid:'bank'+b+'-'+i,bank:'bank'+b,topic:'Topic '+b,stem:'Question '+b+' '+i});
+      const smart=MBUStudyIntelligence.smartReview(sample,50);
+      const banks=[...new Set(smart.map(q=>q.bank))];
+
+      const first=ALL[0],second=ALL[1];
+      MBUStudyIntelligence.recordAnswer(first.bank,first,false,{bankLabel:first.bankLabel,set:first.set,questionId:first.uid});
+      MBUStudyIntelligence.recordAnswer(second.bank,second,false,{bankLabel:second.bankLabel,set:second.set,questionId:second.uid});
+      const raw=JSON.parse(localStorage.getItem(MBUStudyIntelligence.STORE));
+      raw.reviews[first.uid].dueAt=Date.now()-1000;
+      raw.reviews[second.uid].dueAt=Date.now()-5000;
+      localStorage.setItem(MBUStudyIntelligence.STORE,JSON.stringify(raw));
+      window.dispatchEvent(new StorageEvent('storage',{key:MBUStudyIntelligence.STORE}));
+      startMode('due');
+      return{banks,dueOrder:session.slice(0,2).map(q=>q.uid),expected:[second.uid,first.uid]};
+    });
+    expect(out.banks.length).toBeGreaterThan(1);
+    expect(out.dueOrder).toEqual(out.expected);
+  });
+
+  test('Question report also persists normalized issue metadata', async ({ page }) => {
+    await page.route('https://script.google.com/**',route=>route.fulfill({status:200,contentType:'text/plain',body:'ok'}));
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await page.evaluate(()=>{
+      MBUStudyIntelligence.clearAll();
+      const q=ALL[0];
+      MBUStudio.report(q.bank,q,{bankLabel:q.bankLabel,set:q.set,questionNumber:q.seq+1,selected:[]});
+    });
+    await expect(page.locator('#mbu-report-modal')).toHaveClass(/open/);
+    await page.locator('#mbu-report-reason').selectOption({index:1});
+    await page.locator('#mbu-report-comment').fill('Regression test issue');
+    await page.locator('#mbu-report-submit').click();
+    await expect.poll(()=>page.evaluate(()=>MBUStudyIntelligence.issues().length)).toBe(1);
+    const issue=await page.evaluate(()=>MBUStudyIntelligence.issues()[0]);
+    expect(issue.comment).toBe('Regression test issue');
+    expect(issue.status).toBe('open');
+  });
+
+  test('Cloud account renders devices and restore points in the account UI', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
+    await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'test-access',refresh_token:'test-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000001',email:'test@example.com'}})}));
+    await page.route(cloud+'/rest/v1/mbu_sync_state?*',route=>route.fulfill({status:200,contentType:'application/json',body:'[]'}));
+    await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>{
+      if(route.request().method()==='GET')return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify([{device_id:'other-device',device_label:'MacBook',app_build:'stable-test',first_seen_at:new Date().toISOString(),last_seen_at:new Date().toISOString()}])});
+      return route.fulfill({status:201,contentType:'application/json',body:''})
+    });
+    await page.route(cloud+'/rest/v1/mbu_sync_versions?*',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify([{id:9,store_key:'mbu_exam1_studio_v1',device_id:'other-device',server_revision:4,saved_at:new Date().toISOString(),client_revision:3,client_updated_at:new Date().toISOString()}])}));
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.evaluate(() => MBUSupabase.signIn('test@example.com','correct horse battery staple'));
+    await page.locator('.mbu-global-nav__cloud').click();
+    await page.getByText('Devices',{exact:true}).click();
+    await expect(page.locator('[data-cloud-devices]')).toContainText('MacBook');
+    await page.getByText('Restore Progress',{exact:true}).click();
+    await expect(page.locator('[data-cloud-history]')).toContainText('Study Studio');
+    await expect(page.locator('[data-cloud-history]')).toContainText('revision 4');
+  });
+
 });
