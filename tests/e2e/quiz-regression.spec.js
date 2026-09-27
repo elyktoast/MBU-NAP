@@ -2160,6 +2160,32 @@ test.describe('canonical quiz regression', () => {
     expect(out.summary.overall.accuracy).toBe(50);
   });
 
+  test('Adaptive selection avoids recently seen duplicate-content variants when alternatives exist', async ({ page }) => {
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    const result=await page.evaluate(() => {
+      const groups=new Map();
+      for(const q of ALL){const key=(q.stem||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();if(!groups.has(key))groups.set(key,[]);groups.get(key).push(q)}
+      const dup=[...groups.values()].find(g=>g.length>1);
+      if(!dup)throw new Error('No duplicate-content group available');
+      const [recentVariant,...rest]=dup;
+      const alternative=ALL.find(q=>q.uid!==recentVariant.uid&&!dup.some(d=>d.uid===q.uid)&&q.topic===recentVariant.topic)||ALL.find(q=>!dup.some(d=>d.uid===q.uid));
+      if(!alternative)throw new Error('No adaptive alternative available');
+      const originalRecent=MBUStudyIntelligence.recentActivity;
+      const originalStats=MBUStudyIntelligence.questionStats;
+      MBUStudyIntelligence.recentActivity=()=>[{uid:recentVariant.uid}];
+      MBUStudyIntelligence.questionStats=()=>null;
+      const pool=[...rest,alternative];
+      const state=MBUAdaptiveQuiz.normalize({theta:0,maxQuestions:1,poolUids:pool.map(q=>q.uid),seenContentKeys:[]},1);
+      const picked=MBUAdaptiveQuiz.pick(pool,state).question;
+      MBUStudyIntelligence.recentActivity=originalRecent;
+      MBUStudyIntelligence.questionStats=originalStats;
+      return {picked:picked?.uid,duplicateUids:rest.map(q=>q.uid),alternative:alternative.uid};
+    });
+    expect(result.duplicateUids).not.toContain(result.picked);
+    expect(result.picked).toBe(result.alternative);
+  });
+
   test('Adaptive intelligence moves challenge up after correct and down after incorrect', async ({ page }) => {
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     const out=await page.evaluate(()=>{

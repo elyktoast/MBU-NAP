@@ -23,6 +23,11 @@ function topicStatsSnapshot(){
   return Object.fromEntries(Object.entries(byTopic).map(([topic,row])=>[String(topic),{attempts:Number(row?.attempts)||0,accuracy:Number(row?.accuracy)||0}]))
 }
 function recentUids(limit=50){return new Set((window.MBUStudyIntelligence?.recentActivity?.(limit)||[]).map(x=>String(x.uid||'')))}
+function recentContentKeys(questions,limit=50){
+  const recent=recentUids(limit),keys=new Set();
+  for(const q of questions)if(q?.uid&&recent.has(String(q.uid)))keys.add(contentKey(q));
+  return keys
+}
 function challenge(q,topicCache=null){
   const a=questionStats(q?.uid),multi=(Array.isArray(q?.ans)?q.ans:Array.isArray(q?.answer)?q.answer:[]).length>1;
   let score=3+(multi?.65:0)+((q?.bank==='hh'||Number(q?.set)===7)?.7:0);
@@ -72,11 +77,11 @@ function poolTopicCounts(questions,allowed){
 function pick(questions,state){
   const s=normalize(state),seen=new Set(s.seenUids),allowed=s.poolUids.length?new Set(s.poolUids):null,seenContent=new Set(s.seenContentKeys);
   for(const q of questions)if(q?.uid&&seen.has(String(q.uid)))seenContent.add(contentKey(q));
-  const recent=recentUids(50),distribution=poolTopicCounts(questions,allowed),topicCache=topicStatsSnapshot(),target=s.theta;
+  const recent=recentUids(50),recentContent=recentContentKeys(questions,50),distribution=poolTopicCounts(questions,allowed),topicCache=topicStatsSnapshot(),target=s.theta;
   let chosen=null,index=0;
   for(const q of questions){
     const key=contentKey(q);if(!q?.uid||seen.has(String(q.uid))||seenContent.has(key)||(allowed&&!allowed.has(String(q.uid)))){index++;continue}
-    const c=challenge(q,topicCache),difficulty=challengeToLogit(c),probability=logistic(target-difficulty),information=probability*(1-probability),topic=topicOf(q),topicCount=Number(s.topicCounts[topic])||0,share=distribution.total?(distribution.counts[topic]||0)/distribution.total:0,expected=(s.answered+1)*share,balancePenalty=Math.max(0,topicCount-expected)*.08,exposurePenalty=recent.has(String(q.uid))?.08:0,candidate={q,challenge:c,difficulty,probability,information,score:Math.abs(probability-.5)+balancePenalty+exposurePenalty,tie:tieRank(q.uid||index)};
+    const c=challenge(q,topicCache),difficulty=challengeToLogit(c),probability=logistic(target-difficulty),information=probability*(1-probability),topic=topicOf(q),topicCount=Number(s.topicCounts[topic])||0,share=distribution.total?(distribution.counts[topic]||0)/distribution.total:0,expected=(s.answered+1)*share,balancePenalty=Math.max(0,topicCount-expected)*.08,personal=questionStats(q.uid),attempts=Math.max(0,Number(personal?.attempts)||0),recentPenalty=(recent.has(String(q.uid))||recentContent.has(key))?.14:0,priorExposurePenalty=Math.min(.12,attempts*.04),exposurePenalty=recentPenalty+priorExposurePenalty,candidate={q,challenge:c,difficulty,probability,information,score:Math.abs(probability-.5)+balancePenalty+exposurePenalty,tie:tieRank(q.uid||index)};
     if(!chosen||candidate.score<chosen.score||(candidate.score===chosen.score&&(candidate.information>chosen.information||(candidate.information===chosen.information&&candidate.tie<chosen.tie))))chosen=candidate;
     index++
   }
