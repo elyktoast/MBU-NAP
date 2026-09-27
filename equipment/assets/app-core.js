@@ -70,8 +70,8 @@ async function syncWith(name){
   const adapter=adapters.get(String(name));if(!adapter)throw Error('Sync adapter is not registered: '+name);
   let merge={imported:0,skipped:0,unknown:0};
   if(typeof adapter.pull==='function'){const remote=await adapter.pull({app:APP,schema:SYNC_SCHEMA,deviceId:deviceId()});if(remote)merge=await importSnapshot(remote)}
-  const snapshot=await exportSnapshot();if(typeof adapter.push==='function')await adapter.push(snapshot);
-  return{...merge,pushed:typeof adapter.push==='function'}
+  const snapshot=await exportSnapshot();let pushResult=null;if(typeof adapter.push==='function')pushResult=await adapter.push(snapshot);
+  return{...merge,pushed:typeof adapter.push==='function',pushResult}
 }
 
 function ensureA11y(){
@@ -93,7 +93,7 @@ async function copyDiagnostics(){const text=JSON.stringify(diagnostics(),null,2)
 function formatTime(ts){return ts?new Date(ts).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}):'Not yet'}
 function lastLocalSave(){const vals=Object.values(readMeta()).map(x=>Number(x?.updatedAt)||0).filter(Boolean);return vals.length?Math.max(...vals):0}
 function cloudStatusText(info){
-  if(!info?.signedIn)return info?.state==='confirmation-required'?'Confirmation email sent. Confirm the account, then sign in.':'Signed out';
+  if(!info?.signedIn){if(info?.state==='confirmation-required')return 'Confirmation email sent';if(info?.state==='recovery-sent')return 'Password reset email sent';return 'Signed out'};
   if(info.state==='syncing')return 'Syncing…';
   if(info.state==='error')return 'Sync error';
   if(info.lastSyncAt)return 'Synced '+formatTime(info.lastSyncAt);
@@ -139,8 +139,8 @@ async function refreshTools(){
 }
 function refreshAccount(){
   const modal=document.getElementById('mbu-account-panel');if(!modal)return;
-  const info=window.MBUSupabase?.status?.()||{signedIn:false,state:'unavailable'},out=modal.querySelector('[data-cloud-signed-out]'),inside=modal.querySelector('[data-cloud-signed-in]');
-  out.hidden=!!info.signedIn;inside.hidden=!info.signedIn;
+  const info=window.MBUSupabase?.status?.()||{signedIn:false,state:'unavailable'},out=modal.querySelector('[data-cloud-signed-out]'),inside=modal.querySelector('[data-cloud-signed-in]'),recovery=modal.querySelector('[data-cloud-recovery]');
+  out.hidden=!!info.signedIn;inside.hidden=!info.signedIn||!!info.recoveryMode;recovery.hidden=!info.recoveryMode;
   modal.querySelector('[data-cloud-user]').textContent=info.email||'';
   modal.querySelector('[data-cloud-status]').textContent=window.MBUSupabase?cloudStatusText(info):'Cloud sync unavailable';
   modal.querySelector('[data-cloud-auto]').textContent=window.MBUSupabase?cloudAutoSyncText(info):'';
@@ -148,18 +148,21 @@ function refreshAccount(){
 }
 function ensureAccountPanel(){
   if(document.getElementById('mbu-account-panel'))return;
-  const wrap=document.createElement('div');wrap.innerHTML='<div id="mbu-account-panel" class="mbu-account-panel" role="dialog" aria-modal="true" aria-labelledby="mbu-account-title" aria-hidden="true"><div class="mbu-account-panel__card"><div class="mbu-app-tools__head"><div><div class="mbu-section-kicker">Cloud account</div><h2 id="mbu-account-title">MBU-NAP Sync</h2></div><button type="button" data-account-close aria-label="Close account">×</button></div><div data-cloud-signed-out><p class="mbu-app-tools__note">Sign in once to keep your study progress synchronized across your devices.</p><label>Email<input type="email" data-cloud-email autocomplete="email"></label><label>Password<input type="password" data-cloud-password autocomplete="current-password"></label><div class="mbu-app-tools__actions"><button type="button" data-cloud-signin>Sign in</button><button type="button" class="secondary" data-cloud-signup>Create account</button></div></div><div data-cloud-signed-in hidden><div class="mbu-account-identity"><span class="mbu-status-dot"></span><div><span class="mbu-muted">Signed in as</span><strong data-cloud-user></strong></div></div><div class="mbu-account-status"><strong data-cloud-status></strong><span data-cloud-auto></span></div><div class="mbu-app-tools__actions"><button type="button" data-cloud-sync>Sync now</button><button type="button" class="secondary" data-cloud-signout>Sign out</button></div></div><div class="mbu-app-tools__status" data-account-message role="status" aria-live="polite"></div></div></div>';document.body.append(wrap);
-  const modal=document.getElementById('mbu-account-panel'),email=modal.querySelector('[data-cloud-email]'),password=modal.querySelector('[data-cloud-password]'),message=modal.querySelector('[data-account-message]');
+  const wrap=document.createElement('div');wrap.innerHTML='<div id="mbu-account-panel" class="mbu-account-panel" role="dialog" aria-modal="true" aria-labelledby="mbu-account-title" aria-hidden="true"><div class="mbu-account-panel__card"><div class="mbu-app-tools__head"><div><div class="mbu-section-kicker">Cloud account</div><h2 id="mbu-account-title">MBU-NAP Sync</h2></div><button type="button" data-account-close aria-label="Close account">×</button></div><div data-cloud-signed-out><p class="mbu-app-tools__note">Sign in once to keep your study progress synchronized across your devices.</p><label>Email<input type="email" data-cloud-email autocomplete="email"></label><label>Password<input type="password" data-cloud-password autocomplete="current-password"></label><div class="mbu-app-tools__actions"><button type="button" data-cloud-signin>Sign in</button><button type="button" class="secondary" data-cloud-signup>Create account</button><button type="button" class="secondary" data-cloud-forgot>Forgot password</button><button type="button" class="secondary" data-cloud-resend>Resend confirmation</button></div></div><div data-cloud-signed-in hidden><div class="mbu-account-identity"><span class="mbu-status-dot"></span><div><span class="mbu-muted">Signed in as</span><strong data-cloud-user></strong></div></div><div class="mbu-account-status"><strong data-cloud-status></strong><span data-cloud-auto></span></div><div class="mbu-app-tools__actions"><button type="button" data-cloud-sync>Sync now</button><button type="button" class="secondary" data-cloud-signout>Sign out</button></div></div><div data-cloud-recovery hidden><p class="mbu-app-tools__note">Enter a new password for your MBU-NAP account.</p><label>New password<input type="password" data-cloud-new-password autocomplete="new-password" minlength="8"></label><div class="mbu-app-tools__actions"><button type="button" data-cloud-update-password>Update password</button></div></div><div class="mbu-app-tools__status" data-account-message role="status" aria-live="polite"></div></div></div>';document.body.append(wrap);
+  const modal=document.getElementById('mbu-account-panel'),email=modal.querySelector('[data-cloud-email]'),password=modal.querySelector('[data-cloud-password]'),newPassword=modal.querySelector('[data-cloud-new-password]'),message=modal.querySelector('[data-account-message]');
   const action=async fn=>{try{message.textContent='Working…';await fn();password.value='';message.textContent='';refreshAccount();await refreshTools()}catch(e){record('cloud-sync',e);message.textContent=e.message;refreshAccount()}};
   modal.querySelector('[data-cloud-signin]').onclick=()=>action(()=>MBUSupabase.signIn(email.value,password.value));
   modal.querySelector('[data-cloud-signup]').onclick=()=>action(()=>MBUSupabase.signUp(email.value,password.value));
+  modal.querySelector('[data-cloud-forgot]').onclick=()=>action(()=>MBUSupabase.requestPasswordReset(email.value));
+  modal.querySelector('[data-cloud-resend]').onclick=()=>action(()=>MBUSupabase.resendConfirmation(email.value));
+  modal.querySelector('[data-cloud-update-password]').onclick=()=>action(()=>MBUSupabase.updatePassword(newPassword.value));
   modal.querySelector('[data-cloud-sync]').onclick=()=>action(()=>MBUSupabase.syncNow());
   modal.querySelector('[data-cloud-signout]').onclick=()=>action(()=>MBUSupabase.signOut());
   modal.querySelector('[data-account-close]').onclick=closeAccount;modal.onclick=e=>{if(e.target===modal)closeAccount()};modal.onkeydown=e=>trapModalKey(e,modal,closeAccount)
 }
 async function openAccount(source){
   ensureAccountPanel();toolsReturnFocus=source||document.activeElement;const modal=document.getElementById('mbu-account-panel');modal.classList.add('open');modal.setAttribute('aria-hidden','false');refreshAccount();
-  const info=window.MBUSupabase?.status?.();(info?.signedIn?modal.querySelector('[data-cloud-sync]'):modal.querySelector('[data-cloud-email]'))?.focus()
+  const info=window.MBUSupabase?.status?.();(info?.recoveryMode?modal.querySelector('[data-cloud-new-password]'):info?.signedIn?modal.querySelector('[data-cloud-sync]'):modal.querySelector('[data-cloud-email]'))?.focus()
 }
 function ensureTools(){
   if(document.getElementById('mbu-app-tools'))return;
