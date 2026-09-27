@@ -61,6 +61,22 @@ async function api(path,opts={}){
   const s=await validSession();if(!s?.access_token)throw Error('Sign in to use cloud sync.');
   return raw(path,{...opts,token:s.access_token})
 }
+async function refreshLegalAcceptance(){
+  const s=await validSession();if(!s?.access_token){legalAccepted=null;return false}
+  try{
+    const ok=await raw('/rest/v1/rpc/snar_has_current_legal_acceptance',{method:'POST',token:s.access_token,body:{p_terms_version:LEGAL_TERMS_VERSION,p_privacy_version:LEGAL_PRIVACY_VERSION}});
+    legalAccepted=ok===true;return legalAccepted
+  }catch{legalAccepted=false;return false}
+}
+async function acceptCurrentLegal(adultAck=false){
+  if(adultAck!==true)throw Error('Confirm that you are 18+ and agree to the current Terms and Privacy Notice.');
+  const s=await validSession();if(!s?.access_token)throw Error('Sign in first.');
+  const ok=await raw('/rest/v1/rpc/snar_accept_current_legal',{method:'POST',token:s.access_token,body:{p_terms_version:LEGAL_TERMS_VERSION,p_privacy_version:LEGAL_PRIVACY_VERSION,p_adult_ack:true}});
+  legalAccepted=ok===true;if(!legalAccepted)throw Error('Could not record legal acceptance.');
+  emit('signed-in',{email:s.user?.email||''});
+  startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),50);
+  return true
+}
 async function signIn(email,password){
   emit('signing-in');const data=await raw('/auth/v1/token?grant_type=password',{method:'POST',body:{email:String(email||'').trim(),password:String(password||'')}});
   const s=normalizeAuth(data);if(!s)throw Error('Supabase did not return a session.');saveSession(s);if(!await refreshLegalAcceptance()){emit('legal-required',{email:s.user?.email||email});return s}emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});startAutoSync();return s
@@ -187,6 +203,7 @@ async function push(snapshot){
 sync.registerAdapter('supabase',{pull,push});
 
 async function fullSync({reloadOnImport=false}={}){
+  if(legalAccepted!==true)throw Error('Accept the current Terms and Privacy Notice before using cloud sync.');
   if(syncing)return null;const s=await validSession();if(!s?.user?.id){emit('signed-out');return null}
   syncing=true;emit('syncing',{email:s.user?.email||''});
   try{
@@ -197,6 +214,7 @@ async function fullSync({reloadOnImport=false}={}){
   finally{syncing=false}
 }
 async function pushLocal(){
+  if(legalAccepted!==true)return null;
   if(syncing)return null;const s=await validSession();if(!s?.user?.id)return null;
   if(!remoteByKey.size)return fullSync();
   syncing=true;emit('syncing',{email:s.user?.email||''});
@@ -207,14 +225,15 @@ async function pushLocal(){
 function scheduleSync(delay=1500){if(!session()||legalAccepted!==true)return;clearTimeout(timer);timer=setTimeout(()=>{timer=null;pushLocal().catch(()=>{})},delay)}
 function stopAutoSync(){if(autoSyncTimer){clearInterval(autoSyncTimer);autoSyncTimer=null}}
 function startAutoSync(){
-  stopAutoSync();if(!session())return;
-  autoSyncTimer=setInterval(()=>{if(session()&&navigator.onLine)fullSync({reloadOnImport:true}).catch(()=>{})},AUTO_SYNC_INTERVAL)
+  stopAutoSync();if(!session()||legalAccepted!==true)return;
+  autoSyncTimer=setInterval(()=>{if(session()&&legalAccepted===true&&navigator.onLine)fullSync({reloadOnImport:true}).catch(()=>{})},AUTO_SYNC_INTERVAL)
 }
 function status(){const s=session();return{signedIn:!!s?.access_token,email:s?.user?.email||'',state:lastState,lastSyncAt,user:s?.user||null,recoveryMode,legalAccepted,termsVersion:LEGAL_TERMS_VERSION,privacyVersion:LEGAL_PRIVACY_VERSION,autoSyncIntervalMs:AUTO_SYNC_INTERVAL,nextAutoSyncAt:s?.access_token&&legalAccepted===true?(lastSyncAt||Date.now())+AUTO_SYNC_INTERVAL:0}}
-window.addEventListener('focus',()=>{if(session()&&Date.now()-lastSyncAt>120000)fullSync().catch(()=>{})});
-window.addEventListener('online',()=>{if(session())fullSync().catch(()=>{})});
+window.addEventListener('focus',()=>{if(session()&&legalAccepted===true&&Date.now()-lastSyncAt>120000)fullSync().catch(()=>{})});
+window.addEventListener('online',()=>{if(session()&&legalAccepted===true)fullSync().catch(()=>{})});
 async function handleAuthRedirect(){
   const redirected=await consumeAuthRedirect();if(!redirected)return false;
+  if(!recoveryMode&&!await refreshLegalAcceptance()){emit('legal-required',{email:redirected.user?.email||''});return true}
   startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100);return true
 }
 window.addEventListener('hashchange',()=>handleAuthRedirect().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth redirect failed',e)}));
