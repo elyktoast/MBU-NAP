@@ -68,9 +68,10 @@ function scoreQuestion(q,at=now()){
   score+=Math.min(20,Number(a.incorrect)||0)*2;
   return score
 }
+function tieRank(uid){let h=2166136261;for(const c of String(uid||'')){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
 function smartReview(questions,count=50){
   const n=Math.max(1,Math.min(Number(count)||50,questions.length));
-  return questions.map((q,i)=>({q,score:scoreQuestion(q),i})).sort((a,b)=>b.score-a.score||a.i-b.i).slice(0,n).map(x=>x.q)
+  return questions.map((q,i)=>({q,score:scoreQuestion(q),tie:tieRank(q.uid||i)})).sort((a,b)=>b.score-a.score||a.tie-b.tie).slice(0,n).map(x=>x.q)
 }
 function stats(rows){
   const total=rows.length,correct=rows.reduce((n,a)=>n+(Number(a.correct)||0),0),attempts=rows.reduce((n,a)=>n+(Number(a.attempts)||0),0);
