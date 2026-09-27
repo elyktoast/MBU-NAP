@@ -1435,4 +1435,25 @@ test.describe('canonical quiz regression', () => {
     expect(writes.flat().some(row=>row.store_key==='SRNA_COMBINED_EXAM_SET_1_2026_V1')).toBe(true);
   });
 
+  test('Supabase signup sends confirmation back to the deployed app root', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let signupUrl='';
+    await page.route(cloud+'/auth/v1/signup?*',route=>{signupUrl=route.request().url();return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({user:{id:'new-user',email:'new@example.com'},session:null})})});
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.evaluate(() => MBUSupabase.signUp('new@example.com','long-enough-password'));
+    const redirect=new URL(signupUrl).searchParams.get('redirect_to');
+    expect(redirect).toMatch(/^http:\/\/127\.0\.0\.1:\d+\/$/);
+  });
+
+  test('Supabase email confirmation fragment is converted into a stored browser session', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
+    await page.route(cloud+'/auth/v1/user',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({id:'00000000-0000-0000-0000-000000000001',email:'verified@example.com'})}));
+    await page.route(cloud+'/rest/v1/mbu_sync_state?*',route=>route.fulfill({status:200,contentType:'application/json',body:'[]'}));
+    await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>route.fulfill({status:201,contentType:'application/json',body:''}));
+    await page.goto(exam + '/index.html#access_token=test-access&refresh_token=test-refresh&expires_in=3600&token_type=bearer&type=signup');
+    await page.evaluate(() => MBUPageReady);
+    await expect.poll(() => page.evaluate(() => MBUSupabase.status().signedIn)).toBe(true);
+    expect(await page.evaluate(() => location.hash)).toBe('');
+    expect(await page.evaluate(() => MBUSupabase.status().email)).toBe('verified@example.com');
+  });
+
 });

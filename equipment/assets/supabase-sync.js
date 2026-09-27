@@ -1,6 +1,6 @@
 /* MBU-NAP Supabase auth + cloud sync adapter. Uses only the public browser key and authenticated RLS. */
 (()=>{'use strict';
-const cfg=window.MBU_SUPABASE_CONFIG||{},sync=window.MBUSync,SESSION_KEY='mbu_supabase_session_v1',STATUS_EVENT='mbu:supabase-status';
+const cfg=window.MBU_SUPABASE_CONFIG||{},sync=window.MBUSync,SESSION_KEY='mbu_supabase_session_v1',STATUS_EVENT='mbu:supabase-status',script=document.currentScript,APP_ROOT=new URL('../../',script?.src||location.href).href;
 if(!cfg.url||!cfg.publishableKey||!sync){console.warn('Supabase sync is not configured');return}
 const base=cfg.url.replace(/\/$/,'');
 let syncing=false,lastSyncAt=0,lastState='signed-out',remoteByKey=new Map(),timer=null;
@@ -15,6 +15,32 @@ function normalizeAuth(data){
   return{access_token:source.access_token,refresh_token:source.refresh_token,expires_at:expiresAt,user:data?.user||source.user||null}
 }
 function saveSession(s){if(s)localStorage.setItem(SESSION_KEY,JSON.stringify(s));else localStorage.removeItem(SESSION_KEY)}
+async function hydrateUser(s){
+  if(!s?.access_token)return s;
+  try{const user=await raw('/auth/v1/user',{token:s.access_token});return{...s,user:user||s.user||null}}catch{return s}
+}
+async function consumeAuthRedirect(){
+  if(!location.hash||location.hash.length<2)return null;
+  const p=new URLSearchParams(location.hash.slice(1)),error=p.get('error_description')||p.get('error');
+  if(error){
+    history.replaceState(null,'',location.pathname+location.search);
+    emit('error',{error});
+    return null
+  }
+  if(!p.get('access_token')||!p.get('refresh_token'))return null;
+  let s=normalizeAuth({
+    access_token:p.get('access_token'),
+    refresh_token:p.get('refresh_token'),
+    expires_in:Number(p.get('expires_in')||3600),
+    expires_at:Number(p.get('expires_at')||0)
+  });
+  if(!s)return null;
+  s=await hydrateUser(s);saveSession(s);
+  history.replaceState(null,'',location.pathname+location.search);
+  emit('signed-in',{email:s.user?.email||''});
+  return s
+}
+
 async function raw(path,{method='GET',body,token,headers={}}={}){
   const response=await fetch(base+path,{method,headers:{apikey:cfg.publishableKey,'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{}),...headers},body:body===undefined?undefined:JSON.stringify(body)});
   const text=await response.text();const data=text?safeJSON(text,text):null;
@@ -40,7 +66,7 @@ async function signIn(email,password){
   const s=normalizeAuth(data);if(!s)throw Error('Supabase did not return a session.');saveSession(s);emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});return s
 }
 async function signUp(email,password){
-  emit('signing-up');const data=await raw('/auth/v1/signup',{method:'POST',body:{email:String(email||'').trim(),password:String(password||'')}}),s=normalizeAuth(data);
+  emit('signing-up');const data=await raw('/auth/v1/signup?redirect_to='+encodeURIComponent(APP_ROOT),{method:'POST',body:{email:String(email||'').trim(),password:String(password||'')}}),s=normalizeAuth(data);
   if(s){saveSession(s);emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});return{session:s,confirmationRequired:false}}
   emit('confirmation-required',{email:String(email||'').trim()});return{session:null,confirmationRequired:true}
 }
@@ -102,9 +128,16 @@ function status(){const s=session();return{signedIn:!!s?.access_token,email:s?.u
 window.addEventListener('focus',()=>{if(session()&&Date.now()-lastSyncAt>120000)fullSync().catch(()=>{})});
 window.addEventListener('online',()=>{if(session())fullSync().catch(()=>{})});
 
-window.MBUSupabase={signIn,signUp,signOut,status,currentUser,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh};
-if(session()){
-  if(sessionStorage.getItem('mbu_cloud_reload')==='1')sessionStorage.removeItem('mbu_cloud_reload');
-  setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),400)
-}else emit('signed-out');
+window.MBUSupabase={signIn,signUp,signOut,status,currentUser,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT};
+(async()=>{
+  const redirected=await consumeAuthRedirect();
+  if(redirected){
+    setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100);
+    return
+  }
+  if(session()){
+    if(sessionStorage.getItem('mbu_cloud_reload')==='1')sessionStorage.removeItem('mbu_cloud_reload');
+    setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),400)
+  }else emit('signed-out');
+})().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth bootstrap failed',e)});
 })();
