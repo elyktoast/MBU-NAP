@@ -25,7 +25,7 @@ function getReportSheet_() {
   if (id) {
     ss = SpreadsheetApp.openById(id);
   } else {
-    ss = SpreadsheetApp.create('MBU-NAP Question Reports');
+    ss = SpreadsheetApp.create('SNAR Study Tool Question Reports');
     props.setProperty('REPORT_SHEET_ID', ss.getId());
   }
 
@@ -44,7 +44,7 @@ function doGet() {
   const props = PropertiesService.getScriptProperties();
   return json_({
     ok: true,
-    service: 'MBU-NAP question reports',
+    service: 'SNAR Study Tool question reports',
     configured: !!(props.getProperty('REPORT_EMAIL') || Session.getEffectiveUser().getEmail())
   });
 }
@@ -99,7 +99,7 @@ function doPost(e) {
 
     const label = clean_(p.bankLabel || p.bank, 120);
     const question = clean_(p.questionNumber, 60);
-    const subject = '[MBU-NAP Question Report] ' + reason + ' · ' + label + (question ? ' Q' + question : '');
+    const subject = '[SNAR Study Tool Question Report] ' + reason + ' · ' + label + (question ? ' Q' + question : '');
     const body = [
       'A classmate submitted a question report.',
       '',
