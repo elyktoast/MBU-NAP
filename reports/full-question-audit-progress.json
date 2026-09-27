@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 86,
+    "audited": 106,
     "bank2": [
       {
         "id": "S2-021",
@@ -349,6 +349,86 @@
       {
         "id": "S5-057",
         "disposition": "IMPROVE"
+      },
+      {
+        "id": "S3-033",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S5-059",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S5-060",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "S5-068",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S5-069",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S5-072",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S5-073",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "S5-074",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "S5-076",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S5-078",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S5-081",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S5-083",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S5-088",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S5-089",
+        "disposition": "REMOVE_REPLACE"
+      },
+      {
+        "id": "S5-091",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S5-095",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S5-097",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S5-098",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S5-099",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S5-100",
+        "disposition": "IMPROVE"
       }
     ],
     "bank1": [
@@ -438,15 +518,15 @@
       }
     ]
   },
-  "remaining": 1914,
+  "remaining": 1894,
   "lastBatch": {
     "bank": "bank2.json",
     "audited": 20,
     "notes": [
-      "Corrected slide locators for NIBP sizing, capnography rebreathing, arterial damping, ASA circulation monitoring, Bodok seal, high-flow flowmeter behavior, and DISS.",
-      "Replaced an unsupported Murphy-eye function item with a lecture-supported armored-tube item.",
-      "Replaced an unsupported ball-float reading convention with a directly supported gas-specific flowmeter calibration question.",
-      "Expanded weak explanations and balanced distractors."
+      "Completed the remaining Bank 2 weak-explanation flags plus one answer-length flag.",
+      "Corrected neuromuscular-monitoring locator to Monitoring slide 16 and absorbent-exhaustion support to CO2 slides 2 and 4.",
+      "Rewrote two scavenging-interface questions to test the directly taught positive- and negative-pressure relief responses instead of inferred reservoir-bag appearance.",
+      "Replaced a Murphy-eye function item that exceeded the Airway lecture's explicit support with a directly supported reinforced-ETT question."
     ]
   }
 }
