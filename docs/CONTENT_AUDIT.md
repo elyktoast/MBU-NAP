@@ -4,57 +4,77 @@ Last reviewed: 2026-09-26
 
 ## Scope
 
-The automated content audit covers the five canonical question sources:
+Phase 1 audited all **2,000 canonical questions** without changing question content. Phase 2 normalized metadata only.
 
-- Quiz Bank 1: 500 questions
-- Quiz Bank 2: 500 questions
-- Quiz Bank 3: 500 questions
-- Combined: 150 questions
-- Workstation Hazards: 350 questions
+| Bank | Questions | Topics after normalization | Short explanations <80 chars | Long-correct-choice flags |
+| --- | ---: | --- | ---: | ---: |
+| Quiz Bank 1 | 500 | Medical Gas 181; Monitoring 180; CO₂ & Scavenging 85; Airway 54 | 11 | 10 |
+| Quiz Bank 2 | 500 | Monitoring 130; Medical Gas 128; CO₂ & Scavenging 122; Airway 120 | 79 | 9 |
+| Quiz Bank 3 | 500 | Monitoring 226; Medical Gas 144; CO₂ & Scavenging 84; Airway 46 | 0 | 2 |
+| Combined | 150 | Hazards & Safety 58; Medical Gas 52; CO₂ & Scavenging 23; Airway 17 | 12 | 2 |
+| Workstation Hazards | 350 | Hazards & Safety 350 | 12 | 10 |
 
-Total canonical questions reviewed structurally: **2,000**.
+## Phase 1 findings
 
-## Release-blocking checks
+- 151 exact normalized-stem reuse groups exist within the canonical content.
+- No exact normalized stem is duplicated across different banks.
+- No identical-stem + identical-option-pool group currently has conflicting keyed answers.
+- 41 high-similarity near-duplicate pairs were identified for later human review.
+- 114 explanations are shorter than 80 characters; only 2 are shorter than 40 characters.
+- 33 questions have a correct choice that is substantially longer than the average distractor and should be reviewed for answer-length clues.
+- Hazards Set 2 remains the largest known repetition problem: 65 duplicate occurrences are explicitly baselined.
+- Bank 1 contains 21 known same-set duplicate occurrences already tracked by the integrity baseline.
+- No canonical question is missing a citation or explanation.
 
-CI now fails when a canonical question has:
+These are audit flags, not automatic proof that a question is bad. Phase 3 should verify flagged items against authoritative source material before changing keys or deleting questions.
 
-- a missing stem;
-- an invalid or duplicate question ID within a set;
-- fewer than two answer choices;
-- blank or duplicated answer choices;
-- an invalid or repeated keyed answer index;
-- a type other than `single` or `multi`;
-- an answer-count/type mismatch;
-- no citation/source text;
-- no explanation/rationale;
-- an unsafe image identifier;
-- an unexpected question count;
-- a new same-set duplicate stem that is not in the approved baseline.
+## Phase 2 metadata normalization
 
-Known duplicate entries are now actually consumed by the validator. Adding a new duplicate stem requires an explicit baseline decision instead of silently becoming another warning.
+Phase 2 made **metadata-only changes**. A field-by-field comparison against build `2026-09-26-stabilization-v111` confirmed:
 
-## Current findings
-
-### Citations and explanations
-
-All 2,000 canonical questions currently contain citation/source text and an explanation/rationale. Citation presentation has also been normalized to a shared `Source · locator` style while retaining the original slide/page locator information.
+- 0 question stems changed;
+- 0 answer-choice sets changed;
+- 0 keyed answers changed;
+- 0 explanations changed;
+- question counts remained 500 / 500 / 500 / 150 / 350.
 
 ### Topics
 
-All 2,000 canonical questions now have explicit topic metadata using the shared taxonomy: **Monitoring, Medical Gas, CO₂ & Scavenging, Airway, and Hazards & Safety**. Bank 1 was backfilled from its existing structured source metadata; mixed-source questions retain the bank's existing primary classification rather than inventing a new content judgment. CI now rejects missing or non-canonical topic labels.
+All 2,000 questions now have an explicit canonical topic. The allowed vocabulary is:
 
-### Duplicate stems
+- Monitoring
+- Medical Gas
+- CO₂ & Scavenging
+- Airway
+- Hazards & Safety
 
-Bank 1 contains 21 known same-set duplicate stems. These are explicitly baselined and can no longer expand unnoticed.
+Bank 1 is now fully tagged rather than relying on its legacy source-only classification.
 
-Workstation Hazards Set 2 contains 65 known duplicate occurrences. Questions 31–100 repeat five additional questions in a cycle. Repository history confirms this repetition existed in the original Set 2 implementation before the canonical-data migration, so it is a source-content limitation rather than a migration defect.
+### Structured sources
 
-The application keeps these entries for compatibility with the existing 100-question set and saved progress. They should only be replaced when authoritative source material is available; replacement questions should not be invented merely to satisfy a count.
+Every question now has:
 
-## Semantic audit\n\nThe quality gate also runs a deterministic semantic audit across all 2,000 questions. It detects exact duplicate stems across sets, fails when the same stem and same answer-choice pool are keyed inconsistently, warns when an exact stem is reused with materially different option/key wording, screens for high-similarity near-duplicates, and explicitly reports the known repetitive Hazards Set 2 source content.\n\nThis audit is intentionally deterministic and does not require a paid AI service.\n\n## Semantic limitations
+- `sourceTitle`
+- `sourceLocator`
 
-Automated validation can prove structural consistency but cannot independently prove that every anesthesia answer is clinically correct or that every cited slide supports every rationale. A true semantic review still requires comparison against the authoritative lecture/source material.
+The original display citation remains intact. Structured source metadata gives Search, auditing, and future generated-question/source verification a stable field without rewriting the educational content.
 
-Until those source materials are available in the repository, the release gate focuses on preventing structural regressions and making known content debt explicit.
+### Difficulty
 
-See [Content Quality Phase 1 Audit](CONTENT_QUALITY_PHASE1.md) for the current duplicate, explanation, distractor, coverage, and metadata findings.
+Difficulty labels were intentionally **not invented** from wording alone. Future difficulty metadata should be based on either authoritative faculty/source labeling or observed aggregate performance rather than subjective automatic guesses.
+
+## Release-blocking checks
+
+CI fails for missing stems, invalid IDs, invalid answer choices or indexes, missing citations, missing explanations, missing topics, missing structured source metadata, unsafe image IDs, unexpected counts, or new unapproved same-set duplicates.
+
+The semantic audit additionally detects exact duplicate reuse, same-option-pool answer-key conflicts, high-similarity near duplicates, and known Hazards repetition.
+
+## Next content phase
+
+Phase 3 should focus on source-verified correctness:
+
+1. review Bank 1 known same-set duplicates;
+2. review the 41 near-duplicate pairs;
+3. review the 33 answer-length-clue flags;
+4. verify the two very short explanations;
+5. resolve Hazards Set 2 repetition only from authoritative material.
