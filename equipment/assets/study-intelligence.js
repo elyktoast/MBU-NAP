@@ -89,10 +89,11 @@ function adaptiveChallenge(q){
 }
 function normalizeAdaptiveState(state,count=50){
   const s=plain(state)?state:{},seen=Array.isArray(s.seenUids)?[...new Set(s.seenUids.map(String).filter(Boolean))]:[],topics=plain(s.topicCounts)?s.topicCounts:{};
-  return{mode:'adaptive',level:clampLevel(s.level),answered:Math.max(0,Number(s.answered)||0),correct:Math.max(0,Number(s.correct)||0),maxQuestions:Math.max(1,Math.min(200,Number(s.maxQuestions)||Number(count)||50)),seenUids:seen,topicCounts:Object.fromEntries(Object.entries(topics).map(([k,v])=>[String(k),Math.max(0,Number(v)||0)])),path:Array.isArray(s.path)?s.path.filter(plain).slice(-200):[],currentLevel:clampLevel(s.currentLevel||s.level)}
+  const poolUids=Array.isArray(s.poolUids)?[...new Set(s.poolUids.map(String).filter(Boolean))]:[];
+  return{mode:'adaptive',level:clampLevel(s.level),answered:Math.max(0,Number(s.answered)||0),correct:Math.max(0,Number(s.correct)||0),maxQuestions:Math.max(1,Math.min(200,Number(s.maxQuestions)||Number(count)||50)),seenUids:seen,poolUids,topicCounts:Object.fromEntries(Object.entries(topics).map(([k,v])=>[String(k),Math.max(0,Number(v)||0)])),path:Array.isArray(s.path)?s.path.filter(plain).slice(-200):[],currentLevel:clampLevel(s.currentLevel||s.level)}
 }
 function adaptivePick(questions,state){
-  const s=normalizeAdaptiveState(state),seen=new Set(s.seenUids),available=questions.filter(q=>q&&q.uid&&!seen.has(String(q.uid)));
+  const s=normalizeAdaptiveState(state),seen=new Set(s.seenUids),allowed=s.poolUids.length?new Set(s.poolUids):null,available=questions.filter(q=>q&&q.uid&&!seen.has(String(q.uid))&&(!allowed||allowed.has(String(q.uid))));
   if(!available.length)return{question:null,state:s};
   const target=s.level;
   const ranked=available.map((q,i)=>{
@@ -103,7 +104,7 @@ function adaptivePick(questions,state){
   return{question:chosen.q,state:next,challenge:chosen.challenge}
 }
 function adaptiveStart(questions,count=50){
-  const base=normalizeAdaptiveState({level:3,maxQuestions:count},count),picked=adaptivePick(questions,base);
+  const base=normalizeAdaptiveState({level:3,maxQuestions:count,poolUids:questions.map(q=>String(q.uid))},count),picked=adaptivePick(questions,base);
   return picked
 }
 function adaptiveAdvance(state,q,ok){
