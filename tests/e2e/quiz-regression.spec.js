@@ -1031,6 +1031,21 @@ test.describe('canonical quiz regression', () => {
   });
 
 
+  test('Calculator resets its display and Ans value after closing', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
+    await page.locator('#cards button').filter({hasText:/start|continue/i}).first().click();
+    await page.evaluate(() => MBUCalculator.besideFlag());
+    await page.locator('#mbu-calc-open').click();
+    await page.locator('#mbu-calc-display').fill('2+3');
+    await page.locator('#mbu-calc-display').press('Enter');
+    await expect(page.locator('#mbu-calc-display')).toHaveValue('5');
+    await page.locator('.mbu-calc-close').click();
+    await page.locator('#mbu-calc-open').click();
+    await expect(page.locator('#mbu-calc-display')).toHaveValue('');
+    await page.getByRole('button',{name:'Ans'}).click();
+    await expect(page.locator('#mbu-calc-display')).toHaveValue('0');
+  });
+
   test('Previously saved local reports can be migrated once without duplication', async ({ page }) => {
     await page.addInitScript(() => { window.MBU_REPORT_ENDPOINT = 'https://report.test/submit'; });
     const submissions = [];
