@@ -755,7 +755,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 // Practical Tools design keeps account identity persistent and recovery/diagnostics secondary.
 {
  const core=read('equipment/assets/app-core.js'),css=read('equipment/assets/app-core.css')+read('equipment/assets/app-panels.css');
- for(const token of ['mbu-global-nav__cloud','Cloud: Signed out','function ensureAccountPanel()','Backup & recovery','Troubleshooting & app info','Saved study areas','data-tools-saves-help','Saved progress in ','data-auth-view="signin"','data-auth-view="signup"'])if(!core.includes(token))fail('Practical Tools UI missing '+token);
+ for(const token of ['mbu-global-nav__cloud','data-cloud-chip-label>Account','function ensureAccountPanel()','Backup & recovery','Troubleshooting & app info','Saved study areas','data-tools-saves-help','Saved progress in ','data-auth-view="signin"','data-auth-view="signup"'])if(!core.includes(token))fail('Practical Tools UI missing '+token);
  for(const token of ['.mbu-global-nav__utilities','.mbu-global-nav__cloud','.mbu-tools-details','.mbu-account-panel','.mbu-tools-grid'])if(!css.includes(token))fail('Practical Tools styling missing '+token);
 }
 
@@ -777,7 +777,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(boot.includes('html[data-mbu-boot="loading"] body{pointer-events:none}'))fail('Legal gate is blocked by bootstrap pointer-events');
  if(!boot.includes('body>#srna-legal-gate{pointer-events:auto}'))fail('Bootstrap does not keep the legal gate interactive while loading');
  for(const token of ["LEGAL_VERSION='2026-09-27-v5'","LEGAL_TERMS_VERSION=LEGAL_VERSION","LEGAL_PRIVACY_VERSION=LEGAL_VERSION",'snar_terms_version:LEGAL_TERMS_VERSION','snar_privacy_version:LEGAL_PRIVACY_VERSION','snar_adult_ack:true','snar_has_current_legal_acceptance','snar_accept_current_legal','acceptCurrentLegal','legalAccepted','refreshCalibration(true)'])if(!cloud.includes(token))fail('Account legal acknowledgement contract missing '+token);
- if(!core.includes('data-cloud-reaccept')||!core.includes('Updated account agreement required')||!core.includes('Cloud: Action required')||!core.includes('data-cloud-legal-required'))fail('Authenticated legal re-acceptance UI/state handling is missing');
+ if(!core.includes('data-cloud-reaccept')||!core.includes('Updated account agreement required')||!core.includes("info.legalAccepted!==true?'Action required'")||!core.includes('data-cloud-legal-required'))fail('Authenticated legal re-acceptance UI/state handling is missing');
 }
 
 // Privacy/terms and account controls must match the implemented data practices.
@@ -841,10 +841,11 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const p of ['equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-page.js'])if(!read(p).includes('MBUStudyIntelligence'))fail(p+': answer path bypasses shared study intelligence');
 }
 
-// Mobile global utilities must wrap into their own compact row instead of widening the viewport.
+// Mobile global navigation must stay compact without widening the viewport.
 {
- const css=read('equipment/assets/app-core.css');
- for(const token of ['.mbu-global-nav{flex-wrap:wrap}','grid-template-columns:auto minmax(0,1fr) auto','flex:1 0 100%'])if(!css.includes(token))fail('Mobile utility navigation contract missing '+token);
+ const nav=read('equipment/assets/site-nav.css'),core=read('equipment/assets/app-core.css');
+ for(const token of ['@media(max-width:700px)','.mbu-global-nav{flex-wrap:wrap','grid-template-columns:auto auto minmax(0,1fr)'])if(!nav.includes(token))fail('Mobile primary navigation contract missing '+token);
+ for(const token of ['@media(max-width:700px)','.mbu-global-nav__utilities{gap:2px;margin-left:auto}'])if(!core.includes(token))fail('Mobile utility navigation contract missing '+token);
 }
 
 // Universal search must stay lazy, global, and routed into the canonical Studio question view.
