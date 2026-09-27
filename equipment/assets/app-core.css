@@ -106,3 +106,5 @@
 .mbu-consent a,.mbu-account-privacy a{color:#2b6cb0}
 .mbu-danger-action{min-height:40px;padding:8px 11px;border:1px solid #c53030;border-radius:8px;background:#fff5f5;color:#9b2c2c;font-weight:800;cursor:pointer}
 .mbu-danger-action:hover{background:#fed7d7}
+
+.mbu-account-panel select,.mbu-account-panel textarea{box-sizing:border-box;width:100%;margin-top:4px;padding:9px 11px;border:1px solid #cbd5e0;border-radius:9px;background:#fff;color:#1a202c;font:500 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.mbu-account-panel textarea{resize:vertical}.mbu-account-legal,.snar-legal-footer{font:600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#718096}.mbu-account-legal a,.snar-legal-footer a{color:#4a5568}.snar-legal-footer{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;padding:18px 12px 24px}.mbu-quiz-active .snar-legal-footer{display:none}
