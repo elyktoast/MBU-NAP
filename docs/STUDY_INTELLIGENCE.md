@@ -23,7 +23,7 @@ Local/cloud store:
 
 `mbu_study_intelligence_v1`
 
-The store participates in the normal MBU-NAP local-first backup and Supabase sync envelope.
+The store participates in the normal SNAR Study Tool local-first backup and Supabase sync envelope.
 
 Activity is intentionally capped so long-term use does not create an unbounded browser save.
 
@@ -59,15 +59,15 @@ Smart Review currently selects up to 50 questions.
 
 ## Testing and calibration privacy commitment
 
-MBU-NAP may collect question-performance data from authenticated users for testing, validation, question-quality improvement, and Adaptive Mode calibration. The testing/calibration dataset does not contain names, email addresses, passwords, or device identity and is not used for advertising or sold.
+SNAR Study Tool may collect question-performance data from authenticated users for testing, validation, question-quality improvement, and Adaptive Mode calibration. The testing/calibration dataset does not contain names, email addresses, passwords, or device identity and is not used for advertising or sold.
 
-The system maintains only the minimum private account-linked first-attempt record needed to prevent duplicate statistical contributions. User-facing population calibration data is de-identified and aggregated. MBU-NAP will not attempt to re-identify de-identified testing data.
+The system maintains only the minimum private account-linked first-attempt record needed to prevent duplicate statistical contributions. User-facing population calibration data is de-identified and aggregated. SNAR Study Tool will not attempt to re-identify de-identified testing data.
 
 Account authentication and private progress synchronization necessarily use account information separately from the testing/calibration dataset.
 
 ## Adaptive Mode
 
-Adaptive Mode is deliberately separate from Smart Review and from normal quiz sessions. Normal study tools remain available without an account. Adaptive Mode requires a signed-in MBU-NAP account and runs only when the user enables the **Adaptive Mode** toggle while building a custom session.
+Adaptive Mode is deliberately separate from Smart Review and from normal quiz sessions. Normal study tools remain available without an account. Adaptive Mode requires a signed-in SNAR Study Tool account and runs only when the user enables the **Adaptive Mode** toggle while building a custom session.
 
 The implementation follows CAT principles used by major credentialing examinations without claiming formal psychometric equivalence:
 
