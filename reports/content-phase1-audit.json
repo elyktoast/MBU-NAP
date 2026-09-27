@@ -1,0 +1,5960 @@
+{
+  "generatedAt": "2026-09-26",
+  "scope": {
+    "questions": 2000,
+    "banks": [
+      "bank1.json",
+      "bank2.json",
+      "bank3.json",
+      "combined.json",
+      "hazards.json"
+    ]
+  },
+  "banks": {
+    "bank1.json": {
+      "count": 500,
+      "topics": {
+        "Medical Gases": 173,
+        "Monitoring": 178,
+        "CO₂ & Scavenging": 90,
+        "Airway": 58,
+        "Hazards & Safety": 1
+      },
+      "averageExplanationLength": 213,
+      "weakExplanations": [
+        {
+          "set": 1,
+          "id": "61",
+          "length": 69,
+          "stem": "What is the PISS pin configuration for an oxygen E-cylinder?"
+        },
+        {
+          "set": 1,
+          "id": "68",
+          "length": 69,
+          "stem": "What is the PISS pin configuration for nitrous oxide?"
+        },
+        {
+          "set": 3,
+          "id": "245",
+          "length": 77,
+          "stem": "What is the PISS pin configuration for an Oxygen E-cylinder?"
+        },
+        {
+          "set": 4,
+          "id": "333",
+          "length": 69,
+          "stem": "What is the PISS pin configuration for an Oxygen E-cylinder?"
+        },
+        {
+          "set": 4,
+          "id": "338",
+          "length": 69,
+          "stem": "What is the PISS pin configuration for Nitrous Oxide?"
+        },
+        {
+          "set": 4,
+          "id": "383",
+          "length": 69,
+          "stem": "What is the PISS pin configuration for Nitrous Oxide?"
+        },
+        {
+          "set": 4,
+          "id": "395",
+          "length": 69,
+          "stem": "What is the PISS pin configuration for an Oxygen E-cylinder?"
+        },
+        {
+          "set": 5,
+          "id": "433",
+          "length": 78,
+          "stem": "What is the PISS pin configuration for an Oxygen E-cylinder?"
+        },
+        {
+          "set": 5,
+          "id": "438",
+          "length": 78,
+          "stem": "What is the PISS pin configuration for Nitrous Oxide?"
+        },
+        {
+          "set": 5,
+          "id": "483",
+          "length": 78,
+          "stem": "What is the PISS pin configuration for Nitrous Oxide?"
+        },
+        {
+          "set": 5,
+          "id": "495",
+          "length": 78,
+          "stem": "What is the PISS pin configuration for an Oxygen E-cylinder?"
+        }
+      ],
+      "suspiciousDistractorLengthSignals": [
+        {
+          "set": 1,
+          "id": "76",
+          "stem": "What happens to the displayed SpO2 reading when a pulse oximeter probe is placed on an extremity experiencing severe hypoperfusion or shivering?"
+        },
+        {
+          "set": 1,
+          "id": "98",
+          "stem": "What is the primary risk of using more than one washer (Bodok seal) when mounting an E-cylinder onto a hanger yoke?"
+        },
+        {
+          "set": 2,
+          "id": "166",
+          "stem": "What is the primary clinical problem associated with using a pulse oximeter probe on an earlobe in a patient with severe tricuspid regurgitation?"
+        },
+        {
+          "set": 2,
+          "id": "190",
+          "stem": "In an anesthesia workstation high-pressure system, what is the function of the conical depression located on the back of the cylinder valve post?"
+        },
+        {
+          "set": 3,
+          "id": "236",
+          "stem": "During a procedure using pulse oximetry, severe patient shivering occurs. What is the expected effect on monitor performance?"
+        },
+        {
+          "set": 3,
+          "id": "248",
+          "stem": "What is the primary clinical problem associated with using an uncalibrated copper kettle vaporizer in modern anesthesia practice?"
+        },
+        {
+          "set": 4,
+          "id": "307",
+          "stem": "What is the primary function of the second-stage pressure regulator on an anesthesia machine?"
+        },
+        {
+          "set": 4,
+          "id": "317",
+          "stem": "When an Eschmann introducer (bougie) is advanced past the vocal cords, what tactile feedback confirms proper intratracheal placement rather than esophageal entry?"
+        },
+        {
+          "set": 4,
+          "id": "357",
+          "stem": "What is the primary risk of using more than one washer (Bodok seal) when mounting an E-cylinder onto a hanger yoke?"
+        },
+        {
+          "set": 5,
+          "id": "457",
+          "stem": "What is the primary risk of using more than one washer (Bodok seal) when mounting an E-cylinder onto a hanger yoke?"
+        }
+      ],
+      "citationFormatIssues": []
+    },
+    "bank2.json": {
+      "count": 500,
+      "topics": {
+        "Monitoring": 130,
+        "Medical Gases": 128,
+        "CO₂ & Scavenging": 122,
+        "Airway": 120
+      },
+      "averageExplanationLength": 109,
+      "weakExplanations": [
+        {
+          "set": 1,
+          "id": "S1-040",
+          "length": 66,
+          "stem": "A pipeline section must be isolated during an emergency without shutting down the entire hospital gas supply. Which component is intended for this purpose?"
+        },
+        {
+          "set": 1,
+          "id": "S1-055",
+          "length": 77,
+          "stem": "A full oxygen E-cylinder contains approximately 660 L at about 2,000 psig. What physical relationship underlies estimating available gas from pressure?"
+        },
+        {
+          "set": 1,
+          "id": "S1-061",
+          "length": 79,
+          "stem": "An OPA triggers gagging in a lightly sedated patient. Which property explains the response?"
+        },
+        {
+          "set": 1,
+          "id": "S1-073",
+          "length": 78,
+          "stem": "During direct laryngoscopy, which blade is designed to directly capture and lift the epiglottis?"
+        },
+        {
+          "set": 2,
+          "id": "S2-012",
+          "length": 77,
+          "stem": "An invasive arterial-pressure waveform is overdamped. Which pressure error is most expected?"
+        },
+        {
+          "set": 2,
+          "id": "S2-039",
+          "length": 61,
+          "stem": "Which component belongs to the intermediate-pressure system?"
+        },
+        {
+          "set": 2,
+          "id": "S2-044",
+          "length": 47,
+          "stem": "At low laminar flow through a variable-area flowmeter, which gas property most influences calibration?"
+        },
+        {
+          "set": 2,
+          "id": "S2-058",
+          "length": 60,
+          "stem": "Why can an actively functioning soda-lime canister become warm during use?"
+        },
+        {
+          "set": 2,
+          "id": "S2-064",
+          "length": 76,
+          "stem": "A desiccated absorber is exposed to desflurane. Which toxic product is emphasized?"
+        },
+        {
+          "set": 2,
+          "id": "S2-086",
+          "length": 73,
+          "stem": "Which complication is most commonly associated with nasopharyngeal airway insertion?"
+        },
+        {
+          "set": 2,
+          "id": "S2-093",
+          "length": 79,
+          "stem": "A curved Macintosh blade is advanced during direct laryngoscopy. Which structure should receive the blade tip?"
+        },
+        {
+          "set": 2,
+          "id": "S2-097",
+          "length": 69,
+          "stem": "A cannot-intubate, cannot-ventilate emergency persists. Which anatomical membrane is used for emergency front-of-neck access?"
+        },
+        {
+          "set": 2,
+          "id": "S2-099",
+          "length": 79,
+          "stem": "Which THREE cricothyrotomy techniques are named in the lecture? (Select 3)"
+        },
+        {
+          "set": 3,
+          "id": "S3-015",
+          "length": 69,
+          "stem": "A flow-volume loop develops a scooped or reduced expiratory limb during bronchospasm. Which physiologic change explains the pattern?"
+        },
+        {
+          "set": 3,
+          "id": "S3-021",
+          "length": 63,
+          "stem": "During active rewarming, which site may lag enough to underestimate the rate of core-temperature change?"
+        },
+        {
+          "set": 3,
+          "id": "S3-038",
+          "length": 68,
+          "stem": "A pipeline hose cannot be screwed onto the wrong gas outlet because the thread dimensions differ. Which system provides this protection?"
+        },
+        {
+          "set": 3,
+          "id": "S3-039",
+          "length": 64,
+          "stem": "Which component forms the pressure seal between a small gas cylinder and the anesthesia-machine yoke?"
+        },
+        {
+          "set": 3,
+          "id": "S3-047",
+          "length": 78,
+          "stem": "At low flow through a flowmeter, gas movement is predominantly laminar. Which property is most important to calibration?"
+        },
+        {
+          "set": 3,
+          "id": "S3-048",
+          "length": 64,
+          "stem": "A ball-type flowmeter float is used. Where should the flow be read?"
+        },
+        {
+          "set": 3,
+          "id": "S3-055",
+          "length": 73,
+          "stem": "The auxiliary oxygen flowmeter is opened fully. Which approximate maximum flow is described?"
+        },
+        {
+          "set": 3,
+          "id": "S3-058",
+          "length": 65,
+          "stem": "An absorbent canister becomes warm during use. Which reaction product explains this finding?"
+        },
+        {
+          "set": 3,
+          "id": "S3-068",
+          "length": 69,
+          "stem": "Which benefit of low-flow rebreathing is directly related to patient conditioning of exhaled gas?"
+        },
+        {
+          "set": 3,
+          "id": "S3-076",
+          "length": 65,
+          "stem": "Waste gas is routed through a conduit directly through an exterior wall without suction. How is this disposal method classified?"
+        },
+        {
+          "set": 3,
+          "id": "S3-087",
+          "length": 64,
+          "stem": "A patient is awake enough to gag on an OPA but still needs an airway adjunct. Which device is generally better tolerated?"
+        },
+        {
+          "set": 3,
+          "id": "S3-088",
+          "length": 63,
+          "stem": "Which lubricant choice best matches the lecture for NPA placement?"
+        },
+        {
+          "set": 3,
+          "id": "S3-093",
+          "length": 55,
+          "stem": "A laser-resistant ETT is used for airway surgery. Which part remains particularly vulnerable to laser perforation?"
+        },
+        {
+          "set": 3,
+          "id": "S3-096",
+          "length": 56,
+          "stem": "Which blade action is characteristic of the Miller rather than Macintosh blade?"
+        },
+        {
+          "set": 3,
+          "id": "S3-099",
+          "length": 68,
+          "stem": "Which THREE approaches to cricothyrotomy are named in the lecture? (Select 3)"
+        },
+        {
+          "set": 4,
+          "id": "S4-023",
+          "length": 74,
+          "stem": "The NIBP cuff bladder wraps only halfway around the upper arm. Which concern is most appropriate?"
+        },
+        {
+          "set": 4,
+          "id": "S4-026",
+          "length": 79,
+          "stem": "An arterial waveform has marked ringing and an exaggerated systolic peak. Which setup problem is most likely?"
+        },
+        {
+          "set": 4,
+          "id": "S4-029",
+          "length": 76,
+          "stem": "Which arterial site is commonly chosen first in adults because it is accessible and has collateral circulation?"
+        },
+        {
+          "set": 4,
+          "id": "S4-038",
+          "length": 77,
+          "stem": "A gas cylinder is attached to the correct yoke but leaks at the connection. Which component should be inspected first?"
+        },
+        {
+          "set": 4,
+          "id": "S4-041",
+          "length": 67,
+          "stem": "Which pressure is closest to normal pipeline supply pressure at the anesthesia machine?"
+        },
+        {
+          "set": 4,
+          "id": "S4-047",
+          "length": 50,
+          "stem": "A bobbin-type float is used. At which point should the flow be read?"
+        },
+        {
+          "set": 4,
+          "id": "S4-058",
+          "length": 61,
+          "stem": "A functioning absorbent canister becomes warm. What does this most directly indicate?"
+        },
+        {
+          "set": 4,
+          "id": "S4-059",
+          "length": 71,
+          "stem": "Which substance is produced during normal hydroxide neutralization of carbonic acid in the absorber?"
+        },
+        {
+          "set": 4,
+          "id": "S4-063",
+          "length": 68,
+          "stem": "Why would extremely small absorbent granules increase work of breathing?"
+        },
+        {
+          "set": 4,
+          "id": "S4-068",
+          "length": 48,
+          "stem": "Which TWO advantages are associated with low-flow rebreathing after CO₂ removal? (Select 2)"
+        },
+        {
+          "set": 4,
+          "id": "S4-076",
+          "length": 79,
+          "stem": "Wall suction actively draws waste gas from the interface. How is this disposal method classified?"
+        },
+        {
+          "set": 4,
+          "id": "S4-080",
+          "length": 78,
+          "stem": "Which positioning change distinguishes the sniffing position from simple head extension?"
+        },
+        {
+          "set": 4,
+          "id": "S4-084",
+          "length": 70,
+          "stem": "Which measurement provides objective evidence of effective bag-mask ventilation?"
+        },
+        {
+          "set": 4,
+          "id": "S4-088",
+          "length": 46,
+          "stem": "Resistance and bleeding occur during NPA insertion. Which complication is most consistent?"
+        },
+        {
+          "set": 4,
+          "id": "S4-089",
+          "length": 65,
+          "stem": "The main distal ETT opening becomes blocked by the tracheal wall. Which design feature may preserve ventilation?"
+        },
+        {
+          "set": 4,
+          "id": "S4-096",
+          "length": 72,
+          "stem": "Which THREE elements complete the airway fire triad in laser surgery? (Select 3)"
+        },
+        {
+          "set": 4,
+          "id": "S4-098",
+          "length": 66,
+          "stem": "In the image below, which blade shape is designed to directly lift the epiglottis?"
+        },
+        {
+          "set": 4,
+          "id": "S4-099",
+          "length": 74,
+          "stem": "Which TWO landmarks define the vertical boundaries of the cricothyroid membrane? (Select 2)"
+        },
+        {
+          "set": 5,
+          "id": "S5-003",
+          "length": 74,
+          "stem": "The NIBP cuff bladder wraps only halfway around the upper arm. Which concern is most appropriate?"
+        },
+        {
+          "set": 5,
+          "id": "S5-007",
+          "length": 68,
+          "stem": "Why would extremely small absorbent granules increase work of breathing?"
+        },
+        {
+          "set": 5,
+          "id": "S5-016",
+          "length": 70,
+          "stem": "Which problem can directly produce inspired carbon dioxide in a circle system?"
+        },
+        {
+          "set": 5,
+          "id": "S5-018",
+          "length": 77,
+          "stem": "A pulse oximeter displays 92% but the pleth waveform is erratic during shivering. Which limitation is most relevant?"
+        },
+        {
+          "set": 5,
+          "id": "S5-022",
+          "length": 79,
+          "stem": "Which patient measurement is used to select proper NIBP cuff bladder size?"
+        },
+        {
+          "set": 5,
+          "id": "S5-024",
+          "length": 77,
+          "stem": "An arterial line shows a low systolic pressure and blunted waveform compared with a reliable cuff. Which dynamic problem should be suspected?"
+        },
+        {
+          "set": 5,
+          "id": "S5-033",
+          "length": 69,
+          "stem": "Which ASA requirement is met by continuously displaying the ECG while also checking blood pressure and heart rate at least every five minutes?"
+        },
+        {
+          "set": 5,
+          "id": "S5-034",
+          "length": 77,
+          "stem": "An oxygen E-cylinder reads 750 psig. Using 2,000 psig and 660 L as full values, approximately how much oxygen remains?"
+        },
+        {
+          "set": 5,
+          "id": "S5-038",
+          "length": 76,
+          "stem": "A leak is heard immediately after an E-cylinder is mounted. The pins align correctly. Which sealing component is most relevant?"
+        },
+        {
+          "set": 5,
+          "id": "S5-042",
+          "length": 65,
+          "stem": "Why can a pressure-based fail-safe miss a crossed oxygen pipeline?"
+        },
+        {
+          "set": 5,
+          "id": "S5-046",
+          "length": 67,
+          "stem": "A flowmeter is operating in the high-flow turbulent range. Calibration depends most strongly on which gas property?"
+        },
+        {
+          "set": 5,
+          "id": "S5-048",
+          "length": 35,
+          "stem": "Where should a ball-type flowmeter float be read?"
+        },
+        {
+          "set": 5,
+          "id": "S5-055",
+          "length": 67,
+          "stem": "Which gas-specific connection should be encountered when attaching a pipeline hose rather than a cylinder?"
+        },
+        {
+          "set": 5,
+          "id": "S5-057",
+          "length": 52,
+          "stem": "Carbon dioxide enters hydrated absorbent. Which compound is formed before neutralization by hydroxides?"
+        },
+        {
+          "set": 5,
+          "id": "S5-059",
+          "length": 45,
+          "stem": "Which bedside change is expected from the exothermic carbon dioxide absorption reaction?"
+        },
+        {
+          "set": 5,
+          "id": "S5-060",
+          "length": 79,
+          "stem": "Which chemical change defines absorbent exhaustion?"
+        },
+        {
+          "set": 5,
+          "id": "S5-068",
+          "length": 48,
+          "stem": "Which TWO patient-conditioning benefits are retained with low-flow rebreathing? (Select 2)"
+        },
+        {
+          "set": 5,
+          "id": "S5-069",
+          "length": 76,
+          "stem": "During manual ventilation, excess gas reaches the scavenging system through which breathing-system valve?"
+        },
+        {
+          "set": 5,
+          "id": "S5-072",
+          "length": 71,
+          "stem": "A recirculating ventilation system uses standard filters. Which contaminant can pass through and be redistributed?"
+        },
+        {
+          "set": 5,
+          "id": "S5-073",
+          "length": 77,
+          "stem": "A closed scavenger reservoir bag is completely collapsed during active suction. Which problem is most likely?"
+        },
+        {
+          "set": 5,
+          "id": "S5-074",
+          "length": 76,
+          "stem": "Which finding most strongly indicates inadequate suction in a closed scavenging interface?"
+        },
+        {
+          "set": 5,
+          "id": "S5-076",
+          "length": 68,
+          "stem": "Which disposal method requires suction or a dedicated evacuation pump?"
+        },
+        {
+          "set": 5,
+          "id": "S5-078",
+          "length": 64,
+          "stem": "Nitrous oxide is the sole anesthetic gas being evaluated for occupational exposure. Which NIOSH value is quoted?"
+        },
+        {
+          "set": 5,
+          "id": "S5-081",
+          "length": 74,
+          "stem": "Which THREE actions belong to the lecture's triple airway maneuver? (Select 3)"
+        },
+        {
+          "set": 5,
+          "id": "S5-083",
+          "length": 79,
+          "stem": "Chest movement is difficult to judge during mask ventilation. Which objective monitor can directly confirm exhaled gas exchange breath by breath?"
+        },
+        {
+          "set": 5,
+          "id": "S5-088",
+          "length": 73,
+          "stem": "Which complication should be anticipated most commonly during NPA placement?"
+        },
+        {
+          "set": 5,
+          "id": "S5-089",
+          "length": 65,
+          "stem": "Which ETT feature is specifically intended to provide an alternate opening if the bevel is obstructed?"
+        },
+        {
+          "set": 5,
+          "id": "S5-091",
+          "length": 78,
+          "stem": "A standard PVC tube repeatedly kinks when the head is flexed. Which replacement is designed to resist this problem?"
+        },
+        {
+          "set": 5,
+          "id": "S5-095",
+          "length": 51,
+          "stem": "During Macintosh laryngoscopy, where should the blade tip be placed to elevate the epiglottis indirectly?"
+        },
+        {
+          "set": 5,
+          "id": "S5-097",
+          "length": 68,
+          "stem": "A straight laryngoscope blade is advanced past the tongue and used to pick up the epiglottis itself. Which blade is being used?"
+        },
+        {
+          "set": 5,
+          "id": "S5-098",
+          "length": 75,
+          "stem": "Emergency front-of-neck access is planned. Which membrane lies between the thyroid and cricoid cartilages?"
+        },
+        {
+          "set": 5,
+          "id": "S5-099",
+          "length": 68,
+          "stem": "Which THREE techniques for cricothyrotomy are named in the lecture? (Select 3)"
+        },
+        {
+          "set": 5,
+          "id": "S5-100",
+          "length": 79,
+          "stem": "A cannot-intubate, cannot-ventilate situation persists despite airway adjuncts and rescue ventilation attempts. What is the definitive rescue step emphasized in the lecture?"
+        }
+      ],
+      "suspiciousDistractorLengthSignals": [
+        {
+          "set": 2,
+          "id": "S2-021",
+          "stem": "A capnogram develops an elevated inspiratory baseline that no longer returns to zero. Which problem should be checked first?"
+        },
+        {
+          "set": 3,
+          "id": "S3-003",
+          "stem": "A capnogram develops an elevated inspiratory baseline that no longer returns to zero. Which problem should be checked first?"
+        },
+        {
+          "set": 3,
+          "id": "S3-033",
+          "stem": "A quantitative neuromuscular monitor is available. Why is it preferred over visual twitch assessment?"
+        },
+        {
+          "set": 3,
+          "id": "S3-084",
+          "stem": "Why is a transparent face mask useful during ventilation?"
+        },
+        {
+          "set": 4,
+          "id": "S4-009",
+          "stem": "Why is a transparent face mask useful during ventilation?"
+        },
+        {
+          "set": 4,
+          "id": "S4-082",
+          "stem": "During mask ventilation, the provider squeezes soft tissue under the chin and obstruction worsens. Which technique error occurred?"
+        },
+        {
+          "set": 5,
+          "id": "S5-020",
+          "stem": "Which statement best distinguishes pulse oximetry from an inspired oxygen analyzer?"
+        },
+        {
+          "set": 5,
+          "id": "S5-027",
+          "stem": "Why is ultrasound particularly helpful when placing an arterial catheter in a patient with a weak pulse?"
+        },
+        {
+          "set": 5,
+          "id": "S5-050",
+          "stem": "Agent vaporization cools a variable-bypass vaporizer. Which internal response helps preserve the selected output?"
+        }
+      ],
+      "citationFormatIssues": []
+    },
+    "bank3.json": {
+      "count": 500,
+      "topics": {
+        "Monitoring": 226,
+        "Medical Gases": 144,
+        "CO₂ & Scavenging": 84,
+        "Airway": 46
+      },
+      "averageExplanationLength": 259,
+      "weakExplanations": [],
+      "suspiciousDistractorLengthSignals": [
+        {
+          "set": 4,
+          "id": "S4-R37",
+          "stem": "The circuit O2 analyzer reads 60%. Which conclusion is valid?"
+        },
+        {
+          "set": 5,
+          "id": "S5-F13",
+          "stem": "During a sevoflurane/N2O anesthetic, room sampling shows sevoflurane 0.8 ppm and N2O 20 ppm TWA. How do these compare with NIOSH recommendations?"
+        }
+      ],
+      "citationFormatIssues": []
+    },
+    "combined.json": {
+      "count": 150,
+      "topics": {
+        "CO₂ & Scavenging": 23,
+        "Medical Gases": 52,
+        "Hazards & Safety": 58,
+        "Airway": 17
+      },
+      "averageExplanationLength": 176,
+      "weakExplanations": [
+        {
+          "set": 1,
+          "id": "NV04",
+          "length": 40,
+          "stem": "A medical air E-cylinder (625 L at 1900 psig) reads 1400 psig. About how much air remains?"
+        },
+        {
+          "set": 1,
+          "id": "NV01",
+          "length": 46,
+          "stem": "An O2 E-cylinder reads 1500 psig. About how long will it last at 6 L/min?"
+        },
+        {
+          "set": 1,
+          "id": "NV12",
+          "length": 65,
+          "stem": "240 V is applied across 1,200 ohms. What current flows?"
+        },
+        {
+          "set": 1,
+          "id": "NV02",
+          "length": 78,
+          "stem": "A patient on 2 L/min nasal cannula is transported with an O2 E-cylinder reading 800 psig. About how long is available?"
+        },
+        {
+          "set": 1,
+          "id": "NG20",
+          "length": 66,
+          "stem": "A 2-hour case runs isoflurane at 1.5% on 4 L/min. What volume of liquid iso is consumed?"
+        },
+        {
+          "set": 2,
+          "id": "NV06",
+          "length": 44,
+          "stem": "Des at 8% on 1.5 L/min for a 90-minute case consumes about how much liquid?"
+        },
+        {
+          "set": 2,
+          "id": "NV14",
+          "length": 47,
+          "stem": "A device delivers 1,000 W for 0.2 seconds. How much energy is that?"
+        },
+        {
+          "set": 2,
+          "id": "NV08",
+          "length": 51,
+          "stem": "N2O is set at 6 L/min on a machine whose proportioning system holds O2 at 25% or more of O2 + N2O. What is the minimum O2 flow?"
+        },
+        {
+          "set": 2,
+          "id": "NV16",
+          "length": 55,
+          "stem": "About how much CO2 can a 500 g charge of soda lime absorb?"
+        },
+        {
+          "set": 3,
+          "id": "NV13",
+          "length": 31,
+          "stem": "A fluid warmer draws 12 A at 120 V. How much power does it use?"
+        },
+        {
+          "set": 3,
+          "id": "NV05",
+          "length": 42,
+          "stem": "For a 3-hour case at 2.5% sevo on 2 L/min fresh gas, what liquid volume is used?"
+        },
+        {
+          "set": 3,
+          "id": "NV07",
+          "length": 42,
+          "stem": "A 250 mL bottle of sevoflurane is used at 2% with 2 L/min FGF. About how many hours will it last?"
+        }
+      ],
+      "suspiciousDistractorLengthSignals": [
+        {
+          "set": 1,
+          "id": "NI25",
+          "stem": "A paralyzed patient is ventilated through a Mapleson A for transport. Why is that a poor choice?"
+        },
+        {
+          "set": 1,
+          "id": "NG17",
+          "stem": "The O2 flush delivers 35-75 L/min. About how much gas enters the circuit during a 1-second press, and why does that matter during inspiration?"
+        }
+      ],
+      "citationFormatIssues": []
+    },
+    "hazards.json": {
+      "count": 350,
+      "topics": {
+        "Hazards & Safety": 350
+      },
+      "averageExplanationLength": 192,
+      "weakExplanations": [
+        {
+          "set": 1,
+          "id": "4",
+          "length": 78,
+          "stem": "At very low fresh gas flow through a Thorpe tube, a replacement flowmeter calibrated for a gas with different physical properties is installed. Which property most affects accuracy in this low-flow range?"
+        },
+        {
+          "set": 1,
+          "id": "5",
+          "length": 66,
+          "stem": "At high flow through a Thorpe tube, which gas property becomes the dominant determinant of flow?"
+        },
+        {
+          "set": 1,
+          "id": "19",
+          "length": 73,
+          "stem": "Which statement BEST describes the electrical safety configuration presented for the operating room?"
+        },
+        {
+          "set": 1,
+          "id": "20",
+          "length": 73,
+          "stem": "An electrosurgical return pad has only partial contact with the patient's skin. Which complication is the primary concern?"
+        },
+        {
+          "set": 1,
+          "id": "21",
+          "length": 67,
+          "stem": "Which THREE elements must coexist for an operating-room fire? (Select 3)"
+        },
+        {
+          "set": 1,
+          "id": "31",
+          "length": 75,
+          "stem": "A workstation receives pipeline oxygen at 52 psi and regulated cylinder oxygen at 45 psi. Both sources are connected. Which source should supply the machine under normal conditions?"
+        },
+        {
+          "set": 1,
+          "id": "56",
+          "length": 72,
+          "stem": "A pipeline hose cannot fit the wrong gas inlet because of which system?"
+        },
+        {
+          "set": 1,
+          "id": "58",
+          "length": 73,
+          "stem": "A Bourdon gauge senses pressure by movement of what component?"
+        },
+        {
+          "set": 1,
+          "id": "81",
+          "length": 76,
+          "stem": "A vaporizer was moved between rooms and briefly tipped. Soon after induction, agent concentration is unexpectedly high. What is the best explanation?"
+        },
+        {
+          "set": 1,
+          "id": "84",
+          "length": 52,
+          "stem": "A device draws 2 A from a 120-V source. What electrical power is being used?"
+        },
+        {
+          "set": 1,
+          "id": "85",
+          "length": 50,
+          "stem": "A 240-W device runs for 10 seconds. Which expression gives the energy used?"
+        },
+        {
+          "set": 1,
+          "id": "94",
+          "length": 77,
+          "stem": "A pop and flash are followed by smoke during airway surgery. What should the team assume until proven otherwise?"
+        }
+      ],
+      "suspiciousDistractorLengthSignals": [
+        {
+          "set": 1,
+          "id": "14",
+          "stem": "A freestanding PEEP valve is added to an older transport circuit. Immediately afterward ventilation becomes difficult. What should be checked FIRST?"
+        },
+        {
+          "set": 1,
+          "id": "15",
+          "stem": "During neck surgery, the patient's face and airway connections are hidden beneath drapes. Delivered ventilation suddenly falls. Which equipment problem deserves immediate consideration?"
+        },
+        {
+          "set": 1,
+          "id": "16",
+          "stem": "A vaporizer is tipped while being moved between machines. Why should it not simply be returned upright and used?"
+        },
+        {
+          "set": 1,
+          "id": "18",
+          "stem": "A workstation loses wall power. Before deciding how long normal anesthesia can continue, what information is MOST important to know?"
+        },
+        {
+          "set": 1,
+          "id": "28",
+          "stem": "A fire occurs and is extinguished without obvious patient injury. Which statement BEST reflects the lecture's risk-management approach?"
+        },
+        {
+          "set": 1,
+          "id": "41",
+          "stem": "A clinician assumes the oxygen–nitrous proportioning linkage guarantees a safe inspired oxygen concentration. Which scenario disproves that assumption?"
+        },
+        {
+          "set": 1,
+          "id": "50",
+          "stem": "Which finding BEST distinguishes a cylinder-supply safety feature from a pipeline-supply safety feature?"
+        },
+        {
+          "set": 1,
+          "id": "68",
+          "stem": "O2 supply pressure falls enough to activate the pressure-sensor shutoff. Which statement is most accurate?"
+        },
+        {
+          "set": 1,
+          "id": "69",
+          "stem": "A low-pressure leak test is attempted with positive pressure at the common gas outlet, but the workstation has an outlet check valve. Why can the test miss a leak?"
+        },
+        {
+          "set": 1,
+          "id": "96",
+          "stem": "After an airway fire is extinguished and burning material is removed, what is the next priority?"
+        }
+      ],
+      "citationFormatIssues": []
+    }
+  },
+  "duplicates": {
+    "exactGroups": [
+      {
+        "stem": "Which of the following volatile anesthetics lack a difluoromethyl moiety (-O-CHF2) and therefore do NOT generate carbon monoxide upon contact with desiccated absorbent? (Select 2)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "32",
+            "key": [
+              "halothane",
+              "sevoflurane"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "367",
+            "key": [
+              "halothane",
+              "sevoflurane"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "467",
+            "key": [
+              "halothane",
+              "sevoflurane"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the PISS pin configuration for a medical air E-cylinder?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "36",
+            "key": [
+              "positions 1 and 5"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "227",
+            "key": [
+              "positions 1 and 5"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "312",
+            "key": [
+              "positions 1 and 5"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "371",
+            "key": [
+              "positions 1 and 5"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "412",
+            "key": [
+              "positions 1 and 5"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "471",
+            "key": [
+              "positions 1 and 5"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which anatomical structures define the superior and inferior borders of the cricothyroid membrane during an emergency surgical airway?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "38",
+            "key": [
+              "thyroid cartilage superiorly and cricoid cartilage inferiorly"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "381",
+            "key": [
+              "thyroid cartilage superiorly and cricoid cartilage inferiorly"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "481",
+            "key": [
+              "thyroid cartilage superiorly and cricoid cartilage inferiorly"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What percentage of all operating room anesthetic gas contamination is caused by errors in anesthesia technique?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "49",
+            "key": [
+              "94 to 99"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "384",
+            "key": [
+              "94 to 99"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "484",
+            "key": [
+              "94 to 99"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following actions trigger the 'pumping effect' in an older variable bypass vaporizer lacking an outlet check valve? (Select 2)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "51",
+            "key": [
+              "activation of the oxygen flush valve",
+              "intermittent positive pressure ventilation"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "325",
+            "key": [
+              "activation of the oxygen flush valve",
+              "intermittent positive pressure ventilation"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "425",
+            "key": [
+              "activation of the oxygen flush valve",
+              "intermittent positive pressure ventilation"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following clinical statements regarding an oropharyngeal airway (OPA) are true? (Select 3)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "55",
+            "key": [
+              "it can improve mask ventilation seal in edentulous patients",
+              "its concave shape follows the palate to lift the base of the tongue",
+              "proper size is measured from the corner of the mouth to the angle of the mandible"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "346",
+            "key": [
+              "it can improve mask ventilation seal in edentulous patients",
+              "its concave shape follows the palate to lift the base of the tongue",
+              "proper size is measured from the corner of the mouth to the angle of the mandible"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "446",
+            "key": [
+              "it can improve mask ventilation seal in edentulous patients",
+              "its concave shape follows the palate to lift the base of the tongue",
+              "proper size is measured from the corner of the mouth to the angle of the mandible"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the critical temperature of nitrous oxide?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "56",
+            "key": [
+              "36 4 c"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "374",
+            "key": [
+              "36 4 c"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "474",
+            "key": [
+              "36 4 c"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "On an anesthesia machine spirometry display, what respiratory change causes a Pressure-Volume (P-V) loop to tilt down and shift rightward along the pressure axis?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "57",
+            "key": [
+              "decreased pulmonary compliance"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "336",
+            "key": [
+              "decreased pulmonary compliance"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "436",
+            "key": [
+              "decreased pulmonary compliance"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the estimated atmospheric lifetime of nitrous oxide?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "59",
+            "key": [
+              "114 years"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "351",
+            "key": [
+              "114 years"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "451",
+            "key": [
+              "114 years"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following monitoring modalities satisfy the requirements of ASA Standard II for continuous evaluation of patient circulation? (Select 3)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "60",
+            "key": [
+              "arterial blood pressure evaluated at least every five minutes",
+              "continuous display of the electrocardiogram ecg",
+              "pulse plethysmography or continuous pulse oximetry"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "364",
+            "key": [
+              "arterial blood pressure evaluated at least every five minutes",
+              "continuous display of the electrocardiogram ecg",
+              "pulse plethysmography or continuous pulse oximetry"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "464",
+            "key": [
+              "arterial blood pressure evaluated at least every five minutes",
+              "continuous display of the electrocardiogram ecg",
+              "pulse plethysmography or continuous pulse oximetry"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the PISS pin configuration for an oxygen E-cylinder?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "61",
+            "key": [
+              "positions 2 and 5"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "245",
+            "key": [
+              "positions 2 and 5"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "333",
+            "key": [
+              "positions 2 and 5"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "395",
+            "key": [
+              "positions 2 and 5"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "433",
+            "key": [
+              "positions 2 and 5"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "495",
+            "key": [
+              "positions 2 and 5"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What capnographic change is observed immediately upon Return of Spontaneous Circulation (ROSC) during cardiopulmonary resuscitation?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "62",
+            "key": [
+              "sudden dramatic increase in etco2"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "300",
+            "key": [
+              "sudden dramatic increase in etco2"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "400",
+            "key": [
+              "sudden dramatic increase in etco2"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "500",
+            "key": [
+              "sudden dramatic increase in etco2"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the recommended alignment target when ramping an obese patient prior to induction and intubation?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "64",
+            "key": [
+              "horizontal alignment of the external auditory meatus with the sternal notch"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "282",
+            "key": [
+              "horizontal alignment of the external auditory meatus with the sternal notch"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "348",
+            "key": [
+              "horizontal alignment of the external auditory meatus with the sternal notch"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "448",
+            "key": [
+              "horizontal alignment of the external auditory meatus with the sternal notch"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the PISS pin configuration for nitrous oxide?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "68",
+            "key": [
+              "positions 3 and 5"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "269",
+            "key": [
+              "positions 3 and 5"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "338",
+            "key": [
+              "positions 3 and 5"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "383",
+            "key": [
+              "positions 3 and 5"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "438",
+            "key": [
+              "positions 3 and 5"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "483",
+            "key": [
+              "positions 3 and 5"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following items are verified under the 'M' (Machine) component of the pre-induction MS MAID room setup? (Select 3)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "70",
+            "key": [
+              "completed full machine pre use checkout",
+              "emergency bag valve mask resuscitation device functional",
+              "presence of an auxiliary oxygen cylinder"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "283",
+            "key": [
+              "completed full machine pre use checkout",
+              "emergency bag valve mask resuscitation device available and functional",
+              "presence of an auxiliary backup oxygen cylinder"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "340",
+            "key": [
+              "completed full machine pre use checkout",
+              "emergency bag valve mask resuscitation device functional",
+              "presence of an auxiliary oxygen cylinder"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "440",
+            "key": [
+              "completed full machine pre use checkout",
+              "emergency bag valve mask resuscitation device functional",
+              "presence of an auxiliary oxygen cylinder"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What capnographic finding appears when a patient breathes spontaneously against the ventilator due to waning neuromuscular blockade?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "72",
+            "key": [
+              "curare cleft in phase iii"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "354",
+            "key": [
+              "curare cleft in phase iii"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "393",
+            "key": [
+              "curare cleft in phase iii"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "454",
+            "key": [
+              "curare cleft in phase iii"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "493",
+            "key": [
+              "curare cleft in phase iii"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the recommended total number of air exchanges per hour for an operating room equipped with a nonrecirculating ventilation system?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "73",
+            "key": [
+              "15 or more exchanges per hour"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "386",
+            "key": [
+              "15 or more exchanges per hour"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "486",
+            "key": [
+              "15 or more exchanges per hour"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following statements regarding the Diameter Index Safety System (DISS) are true? (Select 2)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "75",
+            "key": [
+              "it connects pipeline hoses to machine and wall terminal inlets",
+              "it utilizes nationally standardized thread and diameter specific connections"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 2,
+            "id": "121",
+            "key": [
+              "it governs pipeline wall and workstation gas inlet connections",
+              "it utilizes gas specific diameter threading to prevent cross connections"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "331",
+            "key": [
+              "it connects pipeline hoses to machine and wall terminal inlets",
+              "it utilizes nationally standardized thread and diameter specific connections"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "431",
+            "key": [
+              "it connects pipeline hoses to machine and wall terminal inlets",
+              "it utilizes nationally standardized thread and diameter specific connections"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "77",
+            "key": [
+              "they act as catalysts activators to accelerate the initial absorption reaction"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "287",
+            "key": [
+              "they act as catalytic activators to accelerate the initial absorption reaction"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "350",
+            "key": [
+              "they act as catalysts activators to accelerate the initial absorption reaction"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "389",
+            "key": [
+              "they act as catalysts activators to accelerate the initial absorption reaction"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "450",
+            "key": [
+              "they act as catalysts activators to accelerate the initial absorption reaction"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "489",
+            "key": [
+              "they act as catalysts activators to accelerate the initial absorption reaction"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the pipeline supply pressure delivered from hospital central gas systems to the anesthesia machine intermediate pressure system?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "79",
+            "key": [
+              "50 to 55 psig"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "365",
+            "key": [
+              "50 to 55 psig"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "465",
+            "key": [
+              "50 to 55 psig"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following clinical signs indicate successful endotracheal intubation? (Select 3)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "80",
+            "key": [
+              "bilateral chest excursion and equal breath sounds on auscultation",
+              "continuous condensation fogging in the tracheal tube during exhalation",
+              "presence of stable continuous etco2 waveforms across 3 consecutive breaths"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "334",
+            "key": [
+              "bilateral chest excursion and equal breath sounds on auscultation",
+              "continuous condensation fogging in the tracheal tube during exhalation",
+              "presence of stable continuous etco2 waveforms across at least three consecutive breaths"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "434",
+            "key": [
+              "bilateral chest excursion and equal breath sounds on auscultation",
+              "continuous condensation fogging in the tracheal tube during exhalation",
+              "presence of stable continuous etco2 waveforms across at least three consecutive breaths"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What physical phenomenon describes gas flow preferentially moving along the smooth plastic sides of an absorbent canister rather than through the absorbent granules?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "82",
+            "key": [
+              "channeling"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "369",
+            "key": [
+              "channeling"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "469",
+            "key": [
+              "channeling"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the saturated vapor pressure of Isoflurane at 20°C?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "84",
+            "key": [
+              "240 mmhg"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "363",
+            "key": [
+              "240 mmhg"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "415",
+            "key": [
+              "240 mmhg"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "463",
+            "key": [
+              "240 mmhg"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which two wavelengths of light are emitted by conventional dual-wavelength pulse oximeters to differentiate oxyhemoglobin from deoxyhemoglobin? (Select 2)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "85",
+            "key": [
+              "660 nm",
+              "940 nm"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "286",
+            "key": [
+              "660 nm red light",
+              "940 nm near infrared light"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "343",
+            "key": [
+              "660 nm red light",
+              "940 nm near infrared light"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "443",
+            "key": [
+              "660 nm red light",
+              "940 nm near infrared light"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the formula used to calculate Mean Body Temperature based on core and skin measurements?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "89",
+            "key": [
+              "mean temp 0 85 tcore 0 15 tskin"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "288",
+            "key": [
+              "mean temp 0 85 tcore 0 15 tskin"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "342",
+            "key": [
+              "mean temp 0 85 tcore 0 15 tskin"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "396",
+            "key": [
+              "mean temp 0 85 tcore 0 15 tskin"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "442",
+            "key": [
+              "mean temp 0 85 tcore 0 15 tskin"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "496",
+            "key": [
+              "mean temp 0 85 tcore 0 15 tskin"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following clinical conditions are associated with an acute INCREASE in end-tidal CO2 (EtCO2)? (Select 3)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "90",
+            "key": [
+              "intravenous sodium bicarbonate administration",
+              "malignant hyperthermia crisis",
+              "sepsis and severe hyperthermia"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "289",
+            "key": [
+              "intravenous sodium bicarbonate administration",
+              "malignant hyperthermia crisis",
+              "sepsis and severe hyperthermia"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "394",
+            "key": [
+              "intravenous sodium bicarbonate administration",
+              "malignant hyperthermia crisis",
+              "sepsis and severe hyperthermia"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "494",
+            "key": [
+              "intravenous sodium bicarbonate administration",
+              "malignant hyperthermia crisis",
+              "sepsis and severe hyperthermia"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the primary function of the second-stage pressure regulator on an anesthesia machine?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "94",
+            "key": [
+              "reduces pipeline or cylinder gas pressure further to 14 16 psig for o2 and 26 38 psig for n2o"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "307",
+            "key": [
+              "reduces pipeline or cylinder gas pressure down to 14 16 psig for o2 and 26 38 psig for n2o to dampen line fluctuations"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following statements regarding the hypoxic guard (proportioning) system are true? (Select 2)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "95",
+            "key": [
+              "it is a pneumatic or mechanical link between the gas flow control valves",
+              "it links oxygen and nitrous oxide flow control valves to ensure an fio2 of at least 25"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "349",
+            "key": [
+              "it is a pneumatic or mechanical link between the gas flow control valves",
+              "it links oxygen and nitrous oxide flow control valves to ensure an fio2 of at least 25"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "449",
+            "key": [
+              "it is a pneumatic or mechanical link between the gas flow control valves",
+              "it links oxygen and nitrous oxide flow control valves to ensure an fio2 of at least 25"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which direct laryngoscopy blade achieves glottic exposure by directly trapping and compressing the epiglottis against the anterior pharyngeal wall?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "97",
+            "key": [
+              "miller blade"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "366",
+            "key": [
+              "miller blade"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "466",
+            "key": [
+              "miller blade"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the primary risk of using more than one washer (Bodok seal) when mounting an E-cylinder onto a hanger yoke?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 1,
+            "id": "98",
+            "key": [
+              "bypasses the pin index safety system pins permitting accidental connection of the wrong gas cylinder"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "357",
+            "key": [
+              "bypasses the pin index safety system pins permitting accidental connection of the wrong gas cylinder"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "457",
+            "key": [
+              "bypasses the pin index safety system pins permitting accidental connection of the wrong gas cylinder"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following clinical factors will shift the oxyhemoglobin dissociation curve to the RIGHT, facilitating oxygen offloading to peripheral tissues? (Select 3)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 2,
+            "id": "125",
+            "key": [
+              "acute hypercapnia increased paco2",
+              "elevated core body temperature hyperthermia",
+              "systemic metabolic acidosis decreased ph"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "316",
+            "key": [
+              "elevated carbon dioxide tension hypercapnia",
+              "hyperthermia elevated body temperature",
+              "systemic metabolic or respiratory acidosis decreased ph"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following clinical factors can lead to an elevated baseline on the capnography waveform during general anesthesia? (Select 3)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 2,
+            "id": "151",
+            "key": [
+              "exhaustion of wet soda lime absorbent",
+              "incompetent expiratory unidirectional valve",
+              "incompetent inspiratory unidirectional valve"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "295",
+            "key": [
+              "exhaustion of wet soda lime absorbent",
+              "incompetent expiratory unidirectional valve",
+              "incompetent inspiratory unidirectional valve"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "328",
+            "key": [
+              "chemical exhaustion of wet soda lime absorbent",
+              "incompetent expiratory unidirectional breathing circuit valve",
+              "incompetent inspiratory unidirectional breathing circuit valve"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "428",
+            "key": [
+              "chemical exhaustion of wet soda lime absorbent",
+              "incompetent expiratory unidirectional breathing circuit valve",
+              "incompetent inspiratory unidirectional breathing circuit valve"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 2,
+            "id": "159",
+            "key": [
+              "acute hypoventilation in a spontaneously breathing patient",
+              "deflation and release of a lower extremity surgical tourniquet",
+              "intravenous administration of sodium bicarbonate"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "322",
+            "key": [
+              "acute hypoventilation in a spontaneously breathing patient",
+              "intravenous administration of sodium bicarbonate",
+              "release of an extremity surgical tourniquet"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "388",
+            "key": [
+              "acute hypoventilation in a spontaneously breathing patient",
+              "deflation and release of a lower extremity surgical tourniquet",
+              "intravenous administration of sodium bicarbonate"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "422",
+            "key": [
+              "acute hypoventilation in a spontaneously breathing patient",
+              "intravenous administration of sodium bicarbonate",
+              "release of an extremity surgical tourniquet"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "488",
+            "key": [
+              "acute hypoventilation in a spontaneously breathing patient",
+              "deflation and release of a lower extremity surgical tourniquet",
+              "intravenous administration of sodium bicarbonate"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following clinical conditions are associated with decreased static pulmonary compliance, causing an increase in plateau pressure (Pplat) during volume-controlled ventilation? (Select 3)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 2,
+            "id": "170",
+            "key": [
+              "acute respiratory distress syndrome ards",
+              "mainstem endobronchial intubation",
+              "severe pulmonary edema"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "370",
+            "key": [
+              "acute respiratory distress syndrome ards",
+              "mainstem endobronchial intubation",
+              "severe pulmonary edema"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "470",
+            "key": [
+              "acute respiratory distress syndrome ards",
+              "mainstem endobronchial intubation",
+              "severe pulmonary edema"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the blood:gas partition coefficient of Sevoflurane at 37°C?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 2,
+            "id": "177",
+            "key": [
+              "0 65"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "353",
+            "key": [
+              "0 65"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "453",
+            "key": [
+              "0 65"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following statements regarding the oxygen flush valve are correct? (Select 2)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 2,
+            "id": "179",
+            "key": [
+              "it bypasses workstation flowmeters and vaporizers completely",
+              "it delivers 100 pure oxygen directly to the common gas outlet"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "361",
+            "key": [
+              "it bypasses workstation flowmeters and vaporizers completely",
+              "it delivers 100 pure oxygen directly to the common gas outlet"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "461",
+            "key": [
+              "it bypasses workstation flowmeters and vaporizers completely",
+              "it delivers 100 pure oxygen directly to the common gas outlet"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following clinical events are recognized causes of decreased measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 2,
+            "id": "189",
+            "key": [
+              "hyperventilation with mechanical minute volume of 14 l min",
+              "severe systemic hypothermia with core temperature 34 c",
+              "sudden profound hemorrhagic shock"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "352",
+            "key": [
+              "hyperventilation with mechanical minute volume of 14 l min",
+              "severe systemic hypothermia with core temperature 34 c",
+              "sudden profound hemorrhagic shock"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "452",
+            "key": [
+              "hyperventilation with mechanical minute volume of 14 l min",
+              "severe systemic hypothermia with core temperature 34 c",
+              "sudden profound hemorrhagic shock"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following clinical advantages are provided by second-generation supraglottic airway devices (e.g., LMA Supreme, ProSeal) over first-generation devices? (Select 2)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 2,
+            "id": "199",
+            "key": [
+              "a dedicated gastric drainage channel permitting decompression of stomach contents",
+              "a higher mucosal seal pressure allowing ventilation at higher peak airway pressures"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "373",
+            "key": [
+              "a dedicated gastric drainage channel permitting decompression of stomach contents",
+              "a higher mucosal seal pressure allowing ventilation at higher peak airway pressures"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "473",
+            "key": [
+              "a dedicated gastric drainage channel permitting decompression of stomach contents",
+              "a higher mucosal seal pressure allowing ventilation at higher peak airway pressures"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following clinical events are recognized causes of increased peak inspiratory pressure (PIP) with an UNCHANGED plateau pressure (Pplat)? (Select 3)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "229",
+            "key": [
+              "acute bronchospasm",
+              "airway secretions obstructing the tracheal lumen",
+              "endotracheal tube kinked by patient positioning"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "410",
+            "key": [
+              "acute severe bronchospasm",
+              "airway secretions obstructing the tracheal lumen",
+              "endotracheal tube kinked by patient positioning"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the saturated vapor pressure of Desflurane at 20°C?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "230",
+            "key": [
+              "669 mmhg"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "387",
+            "key": [
+              "669 mmhg"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "487",
+            "key": [
+              "669 mmhg"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the blood:gas partition coefficient of Isoflurane at 37°C?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "242",
+            "key": [
+              "1 46"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "392",
+            "key": [
+              "1 46"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "492",
+            "key": [
+              "1 46"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the critical temperature of Oxygen?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "264",
+            "key": [
+              "118 6 c"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "390",
+            "key": [
+              "118 6 c"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "490",
+            "key": [
+              "118 6 c"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the flow rate and delivery pressure of the oxygen flush valve on an anesthesia workstation?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "275",
+            "key": [
+              "35 75 l min at 40 50 psig"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "335",
+            "key": [
+              "35 75 l min at 40 50 psig"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "435",
+            "key": [
+              "35 75 l min at 40 50 psig"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the full gaseous capacity and full service pressure of a standard Oxygen E-cylinder?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "278",
+            "key": [
+              "660 l at 1900 2200 psig"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "344",
+            "key": [
+              "660 l at 1900 2200 psig"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "444",
+            "key": [
+              "660 l at 1900 2200 psig"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the primary function of the interlock safety mechanism on variable bypass vaporizers?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "284",
+            "key": [
+              "ensures that only one vaporizer can be turned on at any given time"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "347",
+            "key": [
+              "ensures that only one vaporizer can be turned on at any given time"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "447",
+            "key": [
+              "ensures that only one vaporizer can be turned on at any given time"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the blood:gas partition coefficient of Desflurane at 37°C?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "291",
+            "key": [
+              "0 42"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "378",
+            "key": [
+              "0 42"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "478",
+            "key": [
+              "0 42"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following design features are incorporated into mechanical flowmeters on an anesthesia workstation to prevent delivery of a hypoxic gas mixture? (Select 2)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "292",
+            "key": [
+              "oxygen is always positioned last in the manifold sequence closest to the outlet",
+              "the oxygen flow control knob is physically larger and fluted"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "337",
+            "key": [
+              "oxygen is always positioned last in the manifold sequence closest to the outlet",
+              "the oxygen flow control knob is physically larger and fluted"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "397",
+            "key": [
+              "oxygen is always positioned last in the manifold sequence closest to the outlet",
+              "the oxygen flow control knob is physically larger and fluted"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "437",
+            "key": [
+              "oxygen is always positioned last in the manifold sequence closest to the outlet",
+              "the oxygen flow control knob is physically larger and fluted"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "497",
+            "key": [
+              "oxygen is always positioned last in the manifold sequence closest to the outlet",
+              "the oxygen flow control knob is physically larger and fluted"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "How much carbon dioxide can be absorbed by 100 g of fresh soda lime absorbent?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "294",
+            "key": [
+              "approximately 26 l"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "339",
+            "key": [
+              "approximately 26 l"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "398",
+            "key": [
+              "approximately 26 l"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "439",
+            "key": [
+              "approximately 26 l"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "498",
+            "key": [
+              "approximately 26 l"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following hemoglobin species will cause a deceptively normal or falsely elevated oxygen saturation reading on a conventional two-wavelength pulse oximeter? (Select 2)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 3,
+            "id": "298",
+            "key": [
+              "carboxyhemoglobin",
+              "oxyhemoglobin"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "355",
+            "key": [
+              "carboxyhemoglobin",
+              "oxyhemoglobin"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "391",
+            "key": [
+              "carboxyhemoglobin",
+              "oxyhemoglobin"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "455",
+            "key": [
+              "carboxyhemoglobin",
+              "oxyhemoglobin"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "491",
+            "key": [
+              "carboxyhemoglobin",
+              "oxyhemoglobin"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following clinical events will produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "303",
+            "key": [
+              "accidental tracheal extubation into the pharynx",
+              "severe accidental hypothermia with core temperature 32 c",
+              "sudden profound hypovolemic shock"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "403",
+            "key": [
+              "accidental tracheal extubation into the pharynx",
+              "acute massive pulmonary thromboembolism",
+              "sudden profound cardiac arrest"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the primary clinical utility of an auxiliary oxygen flowmeter mounted on an anesthesia workstation?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "318",
+            "key": [
+              "provides supplemental oxygen via nasal cannula or mask without disrupting the main breathing circuit"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "418",
+            "key": [
+              "provides supplemental oxygen via nasal cannula or mask without disrupting the main breathing circuit"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following characteristics describe an open-reservoir waste gas scavenging interface? (Select 2)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "319",
+            "key": [
+              "it is completely valveless",
+              "it utilizes relief ports open to the ambient operating room atmosphere"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "419",
+            "key": [
+              "it is completely valveless",
+              "it utilizes relief ports open to the ambient operating room atmosphere"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the normal gradient between arterial carbon dioxide tension (PaCO2) and end-tidal carbon dioxide (EtCO2) in healthy supine patients under general anesthesia?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "321",
+            "key": [
+              "2 to 5 mmhg"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "421",
+            "key": [
+              "2 to 5 mmhg"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Why does an assistant applying cricoid pressure (Sellick maneuver) during rapid sequence induction compress the esophagus specifically against the sixth cervical vertebra?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "324",
+            "key": [
+              "the cricoid cartilage is the only complete circumferential cartilaginous ring in the upper airway preventing mucosal collapse"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "424",
+            "key": [
+              "the cricoid cartilage is the only complete circumferential cartilaginous ring in the upper airway preventing mucosal collapse"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the blood:gas partition coefficient of Halothane at 37°C?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "326",
+            "key": [
+              "2 50"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "426",
+            "key": [
+              "2 50"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What capnographic finding confirms carbon dioxide rebreathing during general anesthesia?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "327",
+            "key": [
+              "failure of the phase i baseline to return to zero elevated baseline above 0 mmhg"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "427",
+            "key": [
+              "failure of the phase i baseline to return to zero elevated baseline above 0 mmhg"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the critical temperature of Carbon Dioxide?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "329",
+            "key": [
+              "31 0 c"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "429",
+            "key": [
+              "31 0 c"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Where is the carbon dioxide absorbent canister located within a standard circle breathing circuit?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "330",
+            "key": [
+              "in the inspiratory limb on the bag side"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "430",
+            "key": [
+              "in the inspiratory limb on the bag side"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the boiling point of Isoflurane at 1 atmosphere of pressure?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "332",
+            "key": [
+              "48 5 c"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "432",
+            "key": [
+              "48 5 c"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the saturated vapor pressure of Halothane at 20°C?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "341",
+            "key": [
+              "244 mmhg"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "441",
+            "key": [
+              "244 mmhg"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which single ECG lead is the most sensitive for detecting perioperative myocardial ischemia in high-risk patients undergoing vascular surgery?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "345",
+            "key": [
+              "lead v3"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "445",
+            "key": [
+              "lead v3"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the boiling point of Sevoflurane at 1 atmosphere of pressure?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "356",
+            "key": [
+              "58 6 c"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "456",
+            "key": [
+              "58 6 c"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following interventions are recommended to minimize the environmental impact and atmospheric emissions of volatile anesthetic agents? (Select 3)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "358",
+            "key": [
+              "avoid nitrous oxide as a routine carrier gas",
+              "avoid unnecessarily high fresh gas flow rates especially with desflurane",
+              "use intravenous or regional anesthesia techniques whenever clinically appropriate"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "458",
+            "key": [
+              "avoid nitrous oxide as a routine carrier gas",
+              "avoid unnecessarily high fresh gas flow rates especially with desflurane",
+              "use intravenous or regional anesthesia techniques whenever clinically appropriate"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the minimum fresh outside air exchange requirement per hour in an operating room equipped with a recirculating ventilation system?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "359",
+            "key": [
+              "at least 3 fresh outside exchanges per hour"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "459",
+            "key": [
+              "at least 3 fresh outside exchanges per hour"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the primary indication for performing a rapid sequence induction (RSI) with cricoid pressure?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "360",
+            "key": [
+              "full stomach or conditions with delayed gastric emptying to minimize pulmonary aspiration risk"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "460",
+            "key": [
+              "full stomach or conditions with delayed gastric emptying to minimize pulmonary aspiration risk"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the primary consequence of applying an excessively small blood pressure cuff to an adult patient's extremity?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "362",
+            "key": [
+              "blood pressure readings will be falsely elevated"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "462",
+            "key": [
+              "blood pressure readings will be falsely elevated"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the primary role of calcium hydroxide in wet soda lime absorbent?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "368",
+            "key": [
+              "it serves as the bulk reactant that permanently converts intermediate carbonates into calcium carbonate"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "468",
+            "key": [
+              "it serves as the bulk reactant that permanently converts intermediate carbonates into calcium carbonate"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What does an unexpected, rapid rise in end-tidal CO2 signify during general anesthesia with volatile agents?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "372",
+            "key": [
+              "early sensitive indicator of malignant hyperthermia"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "472",
+            "key": [
+              "early sensitive indicator of malignant hyperthermia"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "In an arterial pressure waveform, which event corresponds to the dicrotic notch?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "375",
+            "key": [
+              "closure of the aortic valve"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "475",
+            "key": [
+              "closure of the aortic valve"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following factors promote the degradation of sevoflurane into Compound A? (Select 3)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "376",
+            "key": [
+              "high concentrations of sevoflurane",
+              "low fresh gas flows 1 l min",
+              "warm dry desiccated absorbent"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "476",
+            "key": [
+              "high concentrations of sevoflurane",
+              "low fresh gas flows 1 l min",
+              "warm dry desiccated absorbent"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the primary clinical problem associated with the regeneration phenomenon of ethyl violet indicator dye in exhausted soda lime?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "377",
+            "key": [
+              "exhausted absorbent turns white overnight falsely appearing fresh the following morning"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "477",
+            "key": [
+              "exhausted absorbent turns white overnight falsely appearing fresh the following morning"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following safety features are integrated into mechanical flowmeters on an anesthesia machine to prevent the delivery of a hypoxic gas mixture? (Select 2)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "379",
+            "key": [
+              "oxygen is always positioned last in the manifold sequence closest to the outlet",
+              "the oxygen flow control knob is physically larger and fluted"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "479",
+            "key": [
+              "oxygen is always positioned last in the manifold sequence closest to the outlet",
+              "the oxygen flow control knob is physically larger and fluted"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the primary mechanism of heat loss prevented by using humidified breathing circuits and low fresh gas flows?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "380",
+            "key": [
+              "evaporation"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "480",
+            "key": [
+              "evaporation"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "382",
+            "key": [
+              "accidental extubation into the hypopharynx",
+              "severe systemic hypotension",
+              "sudden pulmonary artery embolism"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "482",
+            "key": [
+              "accidental extubation into the hypopharynx",
+              "severe systemic hypotension",
+              "sudden pulmonary artery embolism"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which of the following volatile anesthetics do NOT produce carbon monoxide when exposed to dry, desiccated carbon dioxide absorbent? (Select 2)",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "385",
+            "key": [
+              "halothane",
+              "sevoflurane"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "485",
+            "key": [
+              "halothane",
+              "sevoflurane"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the saturated vapor pressure of Sevoflurane at 20°C?",
+        "members": [
+          {
+            "file": "bank1.json",
+            "set": 4,
+            "id": "399",
+            "key": [
+              "160 mmhg"
+            ]
+          },
+          {
+            "file": "bank1.json",
+            "set": 5,
+            "id": "499",
+            "key": [
+              "160 mmhg"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A nitrous oxide E-cylinder has been used for several minutes but still reads about 745 psig. Which interpretation is most appropriate?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 1,
+            "id": "S1-005",
+            "key": [
+              "liquid nitrous oxide remains in the cylinder"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-001",
+            "key": [
+              "liquid nitrous oxide remains in the cylinder"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-001",
+            "key": [
+              "liquid nitrous oxide remains in the cylinder"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A lightly sedated patient needs an airway adjunct but continues to have intact oropharyngeal reflexes. Which choice best matches the lecture?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 1,
+            "id": "S1-011",
+            "key": [
+              "nasopharyngeal airway"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-002",
+            "key": [
+              "nasopharyngeal airway"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "An oxygen analyzer displays 50% inspired oxygen while the pulse oximeter falls to 84%. Which conclusion is best supported?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 1,
+            "id": "S1-016",
+            "key": [
+              "adequate circuit oxygen does not guarantee adequate arterial oxygenation"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-003",
+            "key": [
+              "adequate circuit oxygen does not guarantee adequate arterial oxygenation"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A low-flow anesthetic is planned. Why is the carbon dioxide absorber essential in this setting?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 1,
+            "id": "S1-025",
+            "key": [
+              "rebreathing increases as fresh gas flow decreases"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-004",
+            "key": [
+              "rebreathing increases as fresh gas flow decreases"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "During anesthesia, the pulse oximeter reads 100% while the patient has been apneic on supplemental oxygen. Which limitation explains why this can occur?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 1,
+            "id": "S1-043",
+            "key": [
+              "pulse oximetry may detect apnea late during supplemental oxygen"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-006",
+            "key": [
+              "pulse oximetry may detect apnea late during supplemental oxygen"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "The low-pressure system begins immediately downstream of which component?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 1,
+            "id": "S1-063",
+            "key": [
+              "gas flow control valves"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-007",
+            "key": [
+              "gas flow control valves"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which TWO benefits of carbon dioxide absorption become more pronounced as fresh-gas flow decreases? (Select 2)",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 1,
+            "id": "S1-076",
+            "key": [
+              "conservation of exhaled heat",
+              "conservation of exhaled humidity"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-008",
+            "key": [
+              "conservation of exhaled heat",
+              "conservation of exhaled humidity"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which THREE actions are recommended when replacing an E-cylinder? (Select 3)",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 1,
+            "id": "S1-087",
+            "key": [
+              "check for leaks after attachment",
+              "use only one washer",
+              "use proper transport methods"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-009",
+            "key": [
+              "check for leaks after attachment",
+              "use only one washer",
+              "use proper transport methods"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which THREE conditions can increase waste-anesthetic-gas leakage into the OR from the patient circuit or airway? (Select 3)",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 1,
+            "id": "S1-095",
+            "key": [
+              "poorly fitting face mask",
+              "poorly seated cuffed tracheal tube",
+              "undersized uncuffed tracheal tube"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-010",
+            "key": [
+              "poorly fitting face mask",
+              "poorly seated cuffed tracheal tube",
+              "undersized uncuffed tracheal tube"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A mechanically ventilated patient suddenly develops a higher peak inspiratory pressure, but plateau pressure is unchanged. Passing a suction catheter through the ETT is difficult. Which cause best fits the combined findings?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-011",
+            "key": [
+              "kink or obstruction of the tracheal tube"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-002",
+            "key": [
+              "kink or obstruction of the tracheal tube"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A capnogram develops an elevated inspiratory baseline that no longer returns to zero. Which problem should be checked first?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-021",
+            "key": [
+              "carbon dioxide rebreathing from the absorber or valves"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-003",
+            "key": [
+              "carbon dioxide rebreathing from the absorber or valves"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which factor can interfere with pulse oximetry through the optical signal rather than through reduced peripheral perfusion?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-031",
+            "key": [
+              "nail polish"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-004",
+            "key": [
+              "nail polish"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-001",
+            "key": [
+              "nail polish"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which monitor detects a crossed oxygen pipeline when pipeline pressure remains normal but the gas is not oxygen?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-041",
+            "key": [
+              "inspired oxygen analyzer"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-005",
+            "key": [
+              "inspired oxygen analyzer"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A loose vaporizer filler cap produces a low-pressure-system leak. Why can this be clinically important even if pipeline pressure is normal?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-051",
+            "key": [
+              "the leak is downstream of the flow control valves"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-006",
+            "key": [
+              "the leak is downstream of the flow control valves"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A canister has very fine granules. Which combination is expected?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-061",
+            "key": [
+              "greater co reactive surface area and greater resistance to flow"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-007",
+            "key": [
+              "greater co reactive surface area and greater resistance to flow"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A recirculating OR ventilation system filters room air and returns it to other rooms. What limitation remains?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-071",
+            "key": [
+              "filters do not remove anesthetic gases"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-008",
+            "key": [
+              "filters do not remove anesthetic gases"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "During two-handed mask ventilation, where should the fingers used for mandibular support be placed?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-081",
+            "key": [
+              "along the bony mandible"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-009",
+            "key": [
+              "along the bony mandible"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "During airway laser surgery, which component of a laser-resistant ETT remains vulnerable to laser injury?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 2,
+            "id": "S2-091",
+            "key": [
+              "cuff"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-010",
+            "key": [
+              "cuff"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which THREE variables are displayed or derived from spirometry in the lecture? (Select 3)",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-014",
+            "key": [
+              "flow",
+              "pressure",
+              "volume"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-002",
+            "key": [
+              "flow",
+              "pressure",
+              "volume"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A patient receiving supplemental oxygen becomes apneic. Why may SpO₂ remain normal initially?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-024",
+            "key": [
+              "the oxygen reservoir delays desaturation despite absent ventilation"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-003",
+            "key": [
+              "the oxygen reservoir delays desaturation despite absent ventilation"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 5,
+            "id": "S5-001",
+            "key": [
+              "the oxygen reservoir delays desaturation despite absent ventilation"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A full oxygen E-cylinder is opened and the pressure gauge reads about 2,000 psig. After substantial use it reads 1,000 psig. Which conclusion is most appropriate?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-034",
+            "key": [
+              "approximately half the compressed oxygen remains"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-004",
+            "key": [
+              "approximately half the compressed oxygen remains"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which device provides the final machine-level check that oxygen is actually present in the inspired gas?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-044",
+            "key": [
+              "oxygen analyzer"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-005",
+            "key": [
+              "oxygen analyzer"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which TWO components are clearly within the low-pressure system? (Select 2)",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-054",
+            "key": [
+              "common gas outlet",
+              "vaporizer"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-006",
+            "key": [
+              "common gas outlet",
+              "vaporizer"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which TWO changes would be expected to increase Compound A formation? (Select 2)",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-064",
+            "key": [
+              "decrease fresh gas flow",
+              "increase absorbent temperature"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-007",
+            "key": [
+              "decrease fresh gas flow",
+              "increase absorbent temperature"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which TWO findings indicate excessive suction at a closed scavenging interface? (Select 2)",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-074",
+            "key": [
+              "negative pressure relief valve opens",
+              "reservoir bag collapses"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-008",
+            "key": [
+              "negative pressure relief valve opens",
+              "reservoir bag collapses"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Why is a transparent face mask useful during ventilation?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-084",
+            "key": [
+              "it permits direct visualization of secretions vomitus blood and lip color"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-009",
+            "key": [
+              "it permits direct visualization of secretions vomitus blood and lip color"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which THREE variables influence the likelihood of an airway tube igniting during laser surgery? (Select 3)",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 3,
+            "id": "S3-094",
+            "key": [
+              "direct laser contact",
+              "oxidizer concentration",
+              "tube material"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-010",
+            "key": [
+              "direct laser contact",
+              "oxidizer concentration",
+              "tube material"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which pressure finding most specifically favors bronchospasm over a pure compliance problem?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-013",
+            "key": [
+              "a larger peak to plateau pressure difference"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 5,
+            "id": "S5-002",
+            "key": [
+              "a larger peak to plateau pressure difference"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "The NIBP cuff bladder wraps only halfway around the upper arm. Which concern is most appropriate?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-023",
+            "key": [
+              "the cuff is too short for recommended sizing"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 5,
+            "id": "S5-003",
+            "key": [
+              "the cuff is too short for recommended sizing"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which TWO monitoring requirements belong to ASA circulation assessment? (Select 2)",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-033",
+            "key": [
+              "blood pressure and heart rate at least every five minutes",
+              "continuous ecg display"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 5,
+            "id": "S5-004",
+            "key": [
+              "blood pressure and heart rate at least every five minutes",
+              "continuous ecg display"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "The oxygen pipeline is crossed with another gas but remains at 50 psi. Which device is most likely to reveal the problem before patient desaturation?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-043",
+            "key": [
+              "inspired oxygen analyzer"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 5,
+            "id": "S5-005",
+            "key": [
+              "inspired oxygen analyzer"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A vaporizer is empty but the dial is turned on. Which delivery problem should be expected?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-053",
+            "key": [
+              "little or no volatile agent despite the dial setting"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 5,
+            "id": "S5-006",
+            "key": [
+              "little or no volatile agent despite the dial setting"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Why would extremely small absorbent granules increase work of breathing?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-063",
+            "key": [
+              "they increase resistance to gas flow"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 5,
+            "id": "S5-007",
+            "key": [
+              "they increase resistance to gas flow"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A closed scavenging reservoir bag becomes progressively distended. Which failure is most likely?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-073",
+            "key": [
+              "disposal suction is inadequate"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 5,
+            "id": "S5-008",
+            "key": [
+              "disposal suction is inadequate"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which observation through a clear face mask can warn of regurgitation before monitor values change?",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-083",
+            "key": [
+              "visible vomitus or secretions"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 5,
+            "id": "S5-009",
+            "key": [
+              "visible vomitus or secretions"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which TWO features distinguish an armored tube from a RAE tube? (Select 2)",
+        "members": [
+          {
+            "file": "bank2.json",
+            "set": 4,
+            "id": "S4-093",
+            "key": [
+              "armored tube uses spiral reinforcement",
+              "rae tube uses a preformed bend"
+            ]
+          },
+          {
+            "file": "bank2.json",
+            "set": 5,
+            "id": "S5-010",
+            "key": [
+              "armored tube uses spiral reinforcement",
+              "rae tube uses a preformed bend"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "On this normal capnogram, which segment represents alveolar gas being sampled?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 1,
+            "id": "S1-M15",
+            "key": [
+              "c to d"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 2,
+            "id": "S2-M15",
+            "key": [
+              "c to d"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "In Landesberg's vascular surgery study, which lead detected perioperative ischemia earliest and most often?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 1,
+            "id": "S1-M25",
+            "key": [
+              "v3"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 2,
+            "id": "S2-M25",
+            "key": [
+              "v3"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Midway through a case, the N2O E-cylinder gauge reads 745 psig. What can you conclude about the remaining contents?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 1,
+            "id": "S1-G02",
+            "key": [
+              "liquid n2o remains but the gauge can t show how much weigh the cylinder"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 2,
+            "id": "S2-G02",
+            "key": [
+              "liquid n2o remains but the gauge can t show how much weigh the cylinder"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Monday's first case is a desflurane anesthetic. The O2 flowmeter was found running at 10 L/min all weekend. What is the most appropriate action?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 1,
+            "id": "S1-K06",
+            "key": [
+              "replace the absorbent before starting"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 2,
+            "id": "S2-K06",
+            "key": [
+              "replace the absorbent before starting"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Under volume control, PIP rises from 22 to 38 cmH2O while plateau pressure stays at 18. What is the most likely cause?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 1,
+            "id": "S1-M04",
+            "key": [
+              "bronchospasm"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 2,
+            "id": "S2-M04",
+            "key": [
+              "bronchospasm"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A variable bypass vaporizer delivers 1% sevoflurane at 2 L/min at 20 C, where sevo vapor is 21% of the sump gas. What is the approximate splitting ratio of bypass flow to sump inflow?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 1,
+            "id": "S1-G19",
+            "key": [
+              "about 25 1"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 2,
+            "id": "S2-G19",
+            "key": [
+              "about 25 1"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "In soda lime, sodium carbonate reacts with which compound to regenerate sodium hydroxide?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 1,
+            "id": "S1-K01",
+            "key": [
+              "calcium hydroxide forming calcium carbonate"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 2,
+            "id": "S2-K01",
+            "key": [
+              "calcium hydroxide forming calcium carbonate"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Where is the O2 fail-safe valve located, and what does it sense?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 1,
+            "id": "S1-G07",
+            "key": [
+              "in the n2o supply line it senses o2 supply pressure"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 2,
+            "id": "S2-G07",
+            "key": [
+              "in the n2o supply line it senses o2 supply pressure"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which events can deliver a hypoxic mixture despite a working fail-safe valve and proportioning system? Select 3.",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 2,
+            "id": "S2-G67",
+            "key": [
+              "a cracked o2 flowmeter tube",
+              "crossed o2 and n2o pipelines",
+              "nitrogen contamination of the o2 pipeline"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 3,
+            "id": "S3-G67",
+            "key": [
+              "a cracked o2 flowmeter tube",
+              "crossed o2 and n2o pipelines",
+              "nitrogen contamination of the o2 pipeline"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A spontaneously breathing patient under sedation has significant metabolic acidosis. How would you expect ETCO2 to change?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 2,
+            "id": "S2-N20",
+            "key": [
+              "decrease from compensatory hyperventilation"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 3,
+            "id": "S3-N20",
+            "key": [
+              "decrease from compensatory hyperventilation"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Shortly after intubation, the ventilator displays this pressure-volume loop. Which problem best explains its shape?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 2,
+            "id": "S2-N57",
+            "key": [
+              "increased airway resistance during expiration as in bronchospasm"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 3,
+            "id": "S3-N57",
+            "key": [
+              "increased airway resistance during expiration as in bronchospasm"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Why does N2O exist as a liquid in an E-cylinder at room temperature while O2 remains a gas?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 2,
+            "id": "S2-G34",
+            "key": [
+              "n2o s critical temp about 36 c is above room temp o2 s 118 6 c is far below"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 3,
+            "id": "S3-G34",
+            "key": [
+              "n2o s critical temp about 36 c is above room temp o2 s 118 6 c is far below"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "The capnogram suddenly goes flat at zero. SpO2 is 99%, BP is unchanged, and PIP and exhaled tidal volume are unchanged. What is the most likely cause?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 2,
+            "id": "S2-N17",
+            "key": [
+              "sampling line disconnection or kink"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 3,
+            "id": "S3-N17",
+            "key": [
+              "sampling line disconnection or kink"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A sedated patient breathing supplemental O2 becomes apneic. Which monitor will reveal the problem first?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 2,
+            "id": "S2-N42",
+            "key": [
+              "capnography"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 3,
+            "id": "S3-N42",
+            "key": [
+              "capnography"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Gas flows preferentially along the smooth wall of a CO2 absorber canister. What is the MOST likely consequence?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 2,
+            "id": "S2-C22",
+            "key": [
+              "absorbent along the flow path exhausts early while color elsewhere looks fresh"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 3,
+            "id": "S3-C22",
+            "key": [
+              "absorbent along the flow path exhausts early while color elsewhere looks fresh"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "On this arterial waveform, which numbered point is read as the diastolic blood pressure?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 2,
+            "id": "S2-N36",
+            "key": [
+              "point 6"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 3,
+            "id": "S3-N36",
+            "key": [
+              "point 6"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Fresh gas flow through a Tec 6 is raised from 2 to 6 L/min with the dial unchanged. How is the dialed concentration maintained?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 3,
+            "id": "S3-H26",
+            "key": [
+              "back pressure rises the transducer opens the vapor valve to match adding des"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-H26",
+            "key": [
+              "back pressure rises the transducer opens the vapor valve to match adding des"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Hospital vacuum to a closed-reservoir scavenging interface fails during a case. Which findings are expected? Select 2.",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 3,
+            "id": "S3-D01",
+            "key": [
+              "the interface reservoir bag distends",
+              "the positive pressure pop off relief valve vents waste gas into the room"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-D01",
+            "key": [
+              "the interface reservoir bag distends",
+              "the positive pressure pop off relief valve vents waste gas into the room"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "After failed intubation and failed supraglottic airway rescue, the patient can't be oxygenated and SpO2 is falling rapidly. What is the next step?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 3,
+            "id": "S3-X09",
+            "key": [
+              "cricothyrotomy through the cricothyroid membrane"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-X09",
+            "key": [
+              "cricothyrotomy through the cricothyroid membrane"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "During CPR, the intubated patient's capnogram changes as shown. What is the MOST likely explanation?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 3,
+            "id": "S3-P06",
+            "key": [
+              "return of spontaneous circulation"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-P06",
+            "key": [
+              "return of spontaneous circulation"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A fast-flush test shows a slow return to baseline with no oscillations, and the waveform looks rounded. What should you expect, and what should you check?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 3,
+            "id": "S3-P35",
+            "key": [
+              "overdamping underestimating sbp check for bubbles clot or kinks"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-P35",
+            "key": [
+              "overdamping underestimating sbp check for bubbles clot or kinks"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Mid-case, the O2 pipeline hose is pulled from the wall and the O2 supply low-pressure alarm sounds. The backup O2 cylinder is closed. What is the FIRST action?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 3,
+            "id": "S3-H03",
+            "key": [
+              "open the backup o2 cylinder on the machine"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-H03",
+            "key": [
+              "open the backup o2 cylinder on the machine"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Which OR air sampling results exceed the NIOSH recommended limits? Select 3.",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 3,
+            "id": "S3-D12",
+            "key": [
+              "isoflurane 1 ppm during a combined isoflurane n2o anesthetic",
+              "n2o as the sole agent at 30 ppm twa",
+              "sevoflurane 3 ppm no n2o in use"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-D12",
+            "key": [
+              "isoflurane 1 ppm during a combined isoflurane n2o anesthetic",
+              "n2o as the sole agent at 30 ppm twa",
+              "sevoflurane 3 ppm no n2o in use"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A patient in cardiac arrest is intubated. Breath sounds are bilateral and the chest rises, but ETCO2 is very low with small waveforms. What is the best interpretation?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 3,
+            "id": "S3-P63",
+            "key": [
+              "the tube is likely tracheal low etco2 reflects low pulmonary blood flow"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-P63",
+            "key": [
+              "the tube is likely tracheal low etco2 reflects low pulmonary blood flow"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A leak in the ventilator's bellows reduces the tidal volume actually delivered. How is ETCO2 likely to change?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-R118",
+            "key": [
+              "increase from hypoventilation"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 5,
+            "id": "S5-R118",
+            "key": [
+              "increase from hypoventilation"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "During ventilation of a patient with long-standing lung disease, this pressure-volume loop appears. What does it MOST likely show?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-R41",
+            "key": [
+              "abnormally increased compliance as in emphysema"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 5,
+            "id": "S5-R41",
+            "key": [
+              "abnormally increased compliance as in emphysema"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A sevoflurane vaporizer is mistakenly filled with isoflurane and dialed to 2%. How will output compare with the dial?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-J48",
+            "key": [
+              "higher than dialed because iso s vapor pressure 240 exceeds sevo s 160"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 5,
+            "id": "S5-J48",
+            "key": [
+              "higher than dialed because iso s vapor pressure 240 exceeds sevo s 160"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "During the morning check, the O2 cylinder is found open and pipeline pressure reads 42 psig. Over the first case, the cylinder gauge steadily falls. What is the best action?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-J04",
+            "key": [
+              "close the cylinder to keep it as backup and report the low pipeline pressure"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 5,
+            "id": "S5-J04",
+            "key": [
+              "close the cylinder to keep it as backup and report the low pipeline pressure"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "ETCO2 keeps rising despite doubling minute ventilation. The absorbent is fresh, inspired CO2 is zero, and the patient is tachycardic. What is the MOST likely cause?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-R64",
+            "key": [
+              "increased co2 production as in malignant hyperthermia"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 5,
+            "id": "S5-R64",
+            "key": [
+              "increased co2 production as in malignant hyperthermia"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "For laser microlaryngoscopy with a laser-resistant tube, which gas choice best reduces ignition risk?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-Y04",
+            "key": [
+              "air o2 at the lowest acceptable fio2"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 5,
+            "id": "S5-Y04",
+            "key": [
+              "air o2 at the lowest acceptable fio2"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "ETCO2 has risen from 36 to 44 mmHg with unchanged ventilator settings, and the inspired CO2 baseline is still zero. Which cause is ruled out?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-R65",
+            "key": [
+              "rebreathing"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 5,
+            "id": "S5-R65",
+            "key": [
+              "rebreathing"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A long sevoflurane anesthetic runs at 0.5 L/min fresh gas flow, and the absorbent canister is warm. Which change most directly reduces compound A production?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-E13",
+            "key": [
+              "increase fresh gas flow"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 5,
+            "id": "S5-E13",
+            "key": [
+              "increase fresh gas flow"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Tidal volume is increased from 450 to 650 mL. PIP and plateau both rise by similar amounts. What is the best interpretation?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-R130",
+            "key": [
+              "an expected effect of the larger tidal volume"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 5,
+            "id": "S5-R130",
+            "key": [
+              "an expected effect of the larger tidal volume"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "A Tec 6 desflurane vaporizer is switched on and dialed to 6% right away, but the agent monitor shows no des. What is the MOST likely reason?",
+        "members": [
+          {
+            "file": "bank3.json",
+            "set": 4,
+            "id": "S4-J15",
+            "key": [
+              "the vapor shut off valve doesn t open until the vaporizer warms up"
+            ]
+          },
+          {
+            "file": "bank3.json",
+            "set": 5,
+            "id": "S5-J15",
+            "key": [
+              "the vapor shut off valve doesn t open until the vaporizer warms up"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "During laser surgery of the vocal cords, the surgeon notices a small flame at the tracheal tube. According to fire protocols, what liquid should be poured into the airway immediately after pulling the tube and stopping gas flows?",
+        "members": [
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "31",
+            "key": [
+              "sterile saline or water"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "36",
+            "key": [
+              "sterile saline or water"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "41",
+            "key": [
+              "sterile saline or water"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "46",
+            "key": [
+              "sterile saline or water"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "51",
+            "key": [
+              "sterile saline or water"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "56",
+            "key": [
+              "sterile saline or water"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "61",
+            "key": [
+              "sterile saline or water"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "66",
+            "key": [
+              "sterile saline or water"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "71",
+            "key": [
+              "sterile saline or water"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "76",
+            "key": [
+              "sterile saline or water"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "81",
+            "key": [
+              "sterile saline or water"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "86",
+            "key": [
+              "sterile saline or water"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "91",
+            "key": [
+              "sterile saline or water"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "96",
+            "key": [
+              "sterile saline or water"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "Why is the operating room electrical power supply ungrounded via an isolation transformer?",
+        "members": [
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "32",
+            "key": [
+              "to prevent electric shock macroshock if personnel touch a live wire while standing on a wet floor"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "37",
+            "key": [
+              "to prevent electric shock macroshock if personnel touch a live wire while standing on a wet floor"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "42",
+            "key": [
+              "to prevent electric shock macroshock if personnel touch a live wire while standing on a wet floor"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "47",
+            "key": [
+              "to prevent electric shock macroshock if personnel touch a live wire while standing on a wet floor"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "52",
+            "key": [
+              "to prevent electric shock macroshock if personnel touch a live wire while standing on a wet floor"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "57",
+            "key": [
+              "to prevent electric shock macroshock if personnel touch a live wire while standing on a wet floor"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "62",
+            "key": [
+              "to prevent electric shock macroshock if personnel touch a live wire while standing on a wet floor"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "67",
+            "key": [
+              "to prevent electric shock macroshock if personnel touch a live wire while standing on a wet floor"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "72",
+            "key": [
+              "to prevent electric shock macroshock if personnel touch a live wire while standing on a wet floor"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "77",
+            "key": [
+              "to prevent electric shock macroshock if personnel touch a live wire while standing on a wet floor"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "82",
+            "key": [
+              "to prevent electric shock macroshock if personnel touch a live wire while standing on a wet floor"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "87",
+            "key": [
+              "to prevent electric shock macroshock if personnel touch a live wire while standing on a wet floor"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "92",
+            "key": [
+              "to prevent electric shock macroshock if personnel touch a live wire while standing on a wet floor"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "97",
+            "key": [
+              "to prevent electric shock macroshock if personnel touch a live wire while standing on a wet floor"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the primary reason why breathing circuit disconnects occur frequently during head and neck surgical procedures?",
+        "members": [
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "33",
+            "key": [
+              "surgical drapes conceal the patient s face and airway hiding accidental tube dislodgement or traction"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "38",
+            "key": [
+              "surgical drapes conceal the patient s face and airway hiding accidental tube dislodgement or traction"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "43",
+            "key": [
+              "surgical drapes conceal the patient s face and airway hiding accidental tube dislodgement or traction"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "48",
+            "key": [
+              "surgical drapes conceal the patient s face and airway hiding accidental tube dislodgement or traction"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "53",
+            "key": [
+              "surgical drapes conceal the patient s face and airway hiding accidental tube dislodgement or traction"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "58",
+            "key": [
+              "surgical drapes conceal the patient s face and airway hiding accidental tube dislodgement or traction"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "63",
+            "key": [
+              "surgical drapes conceal the patient s face and airway hiding accidental tube dislodgement or traction"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "68",
+            "key": [
+              "surgical drapes conceal the patient s face and airway hiding accidental tube dislodgement or traction"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "73",
+            "key": [
+              "surgical drapes conceal the patient s face and airway hiding accidental tube dislodgement or traction"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "78",
+            "key": [
+              "surgical drapes conceal the patient s face and airway hiding accidental tube dislodgement or traction"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "83",
+            "key": [
+              "surgical drapes conceal the patient s face and airway hiding accidental tube dislodgement or traction"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "88",
+            "key": [
+              "surgical drapes conceal the patient s face and airway hiding accidental tube dislodgement or traction"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "93",
+            "key": [
+              "surgical drapes conceal the patient s face and airway hiding accidental tube dislodgement or traction"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "98",
+            "key": [
+              "surgical drapes conceal the patient s face and airway hiding accidental tube dislodgement or traction"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What type of fire extinguisher is specifically recommended for extinguishing a fire in the operating room when water or saline has failed?",
+        "members": [
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "34",
+            "key": [
+              "carbon dioxide co2 extinguisher"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "39",
+            "key": [
+              "carbon dioxide co2 extinguisher"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "44",
+            "key": [
+              "carbon dioxide co2 extinguisher"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "49",
+            "key": [
+              "carbon dioxide co2 extinguisher"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "54",
+            "key": [
+              "carbon dioxide co2 extinguisher"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "59",
+            "key": [
+              "carbon dioxide co2 extinguisher"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "64",
+            "key": [
+              "carbon dioxide co2 extinguisher"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "69",
+            "key": [
+              "carbon dioxide co2 extinguisher"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "74",
+            "key": [
+              "carbon dioxide co2 extinguisher"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "79",
+            "key": [
+              "carbon dioxide co2 extinguisher"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "84",
+            "key": [
+              "carbon dioxide co2 extinguisher"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "89",
+            "key": [
+              "carbon dioxide co2 extinguisher"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "94",
+            "key": [
+              "carbon dioxide co2 extinguisher"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "99",
+            "key": [
+              "carbon dioxide co2 extinguisher"
+            ]
+          }
+        ]
+      },
+      {
+        "stem": "What is the primary electrical hazard of using an electrosurgical unit (ESU / Bovie) on a patient with a permanent cardiac pacemaker?",
+        "members": [
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "35",
+            "key": [
+              "high radiofrequency current can cause electrical interference resulting in pacemaker reprogramming inhibition or myocardial burns at the lead tip"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "40",
+            "key": [
+              "high radiofrequency current can cause electrical interference resulting in pacemaker reprogramming inhibition or myocardial burns at the lead tip"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "45",
+            "key": [
+              "high radiofrequency current can cause electrical interference resulting in pacemaker reprogramming inhibition or myocardial burns at the lead tip"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "50",
+            "key": [
+              "high radiofrequency current can cause electrical interference resulting in pacemaker reprogramming inhibition or myocardial burns at the lead tip"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "55",
+            "key": [
+              "high radiofrequency current can cause electrical interference resulting in pacemaker reprogramming inhibition or myocardial burns at the lead tip"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "60",
+            "key": [
+              "high radiofrequency current can cause electrical interference resulting in pacemaker reprogramming inhibition or myocardial burns at the lead tip"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "65",
+            "key": [
+              "high radiofrequency current can cause electrical interference resulting in pacemaker reprogramming inhibition or myocardial burns at the lead tip"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "70",
+            "key": [
+              "high radiofrequency current can cause electrical interference resulting in pacemaker reprogramming inhibition or myocardial burns at the lead tip"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "75",
+            "key": [
+              "high radiofrequency current can cause electrical interference resulting in pacemaker reprogramming inhibition or myocardial burns at the lead tip"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "80",
+            "key": [
+              "high radiofrequency current can cause electrical interference resulting in pacemaker reprogramming inhibition or myocardial burns at the lead tip"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "85",
+            "key": [
+              "high radiofrequency current can cause electrical interference resulting in pacemaker reprogramming inhibition or myocardial burns at the lead tip"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "90",
+            "key": [
+              "high radiofrequency current can cause electrical interference resulting in pacemaker reprogramming inhibition or myocardial burns at the lead tip"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "95",
+            "key": [
+              "high radiofrequency current can cause electrical interference resulting in pacemaker reprogramming inhibition or myocardial burns at the lead tip"
+            ]
+          },
+          {
+            "file": "hazards.json",
+            "set": 2,
+            "id": "100",
+            "key": [
+              "high radiofrequency current can cause electrical interference resulting in pacemaker reprogramming inhibition or myocardial burns at the lead tip"
+            ]
+          }
+        ]
+      }
+    ],
+    "nearDuplicatePairs": [
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 1,
+          "id": "40",
+          "stem": "During general anesthesia, what capnographic finding confirms carbon dioxide rebreathing?"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "327",
+          "stem": "What capnographic finding confirms carbon dioxide rebreathing during general anesthesia?"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 1,
+          "id": "40",
+          "stem": "During general anesthesia, what capnographic finding confirms carbon dioxide rebreathing?"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "427",
+          "stem": "What capnographic finding confirms carbon dioxide rebreathing during general anesthesia?"
+        }
+      },
+      {
+        "similarity": 0.91,
+        "a": {
+          "file": "bank1.json",
+          "set": 1,
+          "id": "41",
+          "stem": "What is the primary physical mechanism of intraoperative heat loss in a patient undergoing general anesthesia in an ambient operating room?"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "314",
+          "stem": "What is the primary mechanism of intraoperative heat loss in a patient undergoing general anesthesia in an ambient operating room?"
+        }
+      },
+      {
+        "similarity": 0.94,
+        "a": {
+          "file": "bank1.json",
+          "set": 1,
+          "id": "42",
+          "stem": "Which hemoglobin species will cause a deceptively normal or falsely elevated oxygen saturation reading on a conventional two-wavelength pulse oximeter? (Select 2)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "298",
+          "stem": "Which of the following hemoglobin species will cause a deceptively normal or falsely elevated oxygen saturation reading on a conventional two-wavelength pulse oximeter? (Select 2)"
+        }
+      },
+      {
+        "similarity": 0.94,
+        "a": {
+          "file": "bank1.json",
+          "set": 1,
+          "id": "42",
+          "stem": "Which hemoglobin species will cause a deceptively normal or falsely elevated oxygen saturation reading on a conventional two-wavelength pulse oximeter? (Select 2)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "355",
+          "stem": "Which of the following hemoglobin species will cause a deceptively normal or falsely elevated oxygen saturation reading on a conventional two-wavelength pulse oximeter? (Select 2)"
+        }
+      },
+      {
+        "similarity": 0.94,
+        "a": {
+          "file": "bank1.json",
+          "set": 1,
+          "id": "42",
+          "stem": "Which hemoglobin species will cause a deceptively normal or falsely elevated oxygen saturation reading on a conventional two-wavelength pulse oximeter? (Select 2)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "391",
+          "stem": "Which of the following hemoglobin species will cause a deceptively normal or falsely elevated oxygen saturation reading on a conventional two-wavelength pulse oximeter? (Select 2)"
+        }
+      },
+      {
+        "similarity": 0.94,
+        "a": {
+          "file": "bank1.json",
+          "set": 1,
+          "id": "42",
+          "stem": "Which hemoglobin species will cause a deceptively normal or falsely elevated oxygen saturation reading on a conventional two-wavelength pulse oximeter? (Select 2)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "455",
+          "stem": "Which of the following hemoglobin species will cause a deceptively normal or falsely elevated oxygen saturation reading on a conventional two-wavelength pulse oximeter? (Select 2)"
+        }
+      },
+      {
+        "similarity": 0.94,
+        "a": {
+          "file": "bank1.json",
+          "set": 1,
+          "id": "42",
+          "stem": "Which hemoglobin species will cause a deceptively normal or falsely elevated oxygen saturation reading on a conventional two-wavelength pulse oximeter? (Select 2)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "491",
+          "stem": "Which of the following hemoglobin species will cause a deceptively normal or falsely elevated oxygen saturation reading on a conventional two-wavelength pulse oximeter? (Select 2)"
+        }
+      },
+      {
+        "similarity": 0.94,
+        "a": {
+          "file": "bank1.json",
+          "set": 1,
+          "id": "45",
+          "stem": "Under normal general anesthesia in a healthy supine patient, what is the typical gradient between arterial carbon dioxide tension (PaCO2) and end-tidal carbon dioxide (EtCO2)?"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "321",
+          "stem": "What is the normal gradient between arterial carbon dioxide tension (PaCO2) and end-tidal carbon dioxide (EtCO2) in healthy supine patients under general anesthesia?"
+        }
+      },
+      {
+        "similarity": 0.94,
+        "a": {
+          "file": "bank1.json",
+          "set": 1,
+          "id": "45",
+          "stem": "Under normal general anesthesia in a healthy supine patient, what is the typical gradient between arterial carbon dioxide tension (PaCO2) and end-tidal carbon dioxide (EtCO2)?"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "421",
+          "stem": "What is the normal gradient between arterial carbon dioxide tension (PaCO2) and end-tidal carbon dioxide (EtCO2) in healthy supine patients under general anesthesia?"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 1,
+          "id": "60",
+          "stem": "Which of the following monitoring modalities satisfy the requirements of ASA Standard II for continuous evaluation of patient circulation? (Select 3)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "406",
+          "stem": "Which of the following monitoring modalities satisfy the requirements of ASA Standard II for continuous evaluation of patient circulation? (Select 2)"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "364",
+          "stem": "Which of the following monitoring modalities satisfy the requirements of ASA Standard II for continuous evaluation of patient circulation? (Select 3)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "406",
+          "stem": "Which of the following monitoring modalities satisfy the requirements of ASA Standard II for continuous evaluation of patient circulation? (Select 2)"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "406",
+          "stem": "Which of the following monitoring modalities satisfy the requirements of ASA Standard II for continuous evaluation of patient circulation? (Select 2)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "464",
+          "stem": "Which of the following monitoring modalities satisfy the requirements of ASA Standard II for continuous evaluation of patient circulation? (Select 3)"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 1,
+          "id": "77",
+          "stem": "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "258",
+          "stem": "What is the primary role of potassium hydroxide and sodium hydroxide in wet soda lime?"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "258",
+          "stem": "What is the primary role of potassium hydroxide and sodium hydroxide in wet soda lime?"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "287",
+          "stem": "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "258",
+          "stem": "What is the primary role of potassium hydroxide and sodium hydroxide in wet soda lime?"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "350",
+          "stem": "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "258",
+          "stem": "What is the primary role of potassium hydroxide and sodium hydroxide in wet soda lime?"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "389",
+          "stem": "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "258",
+          "stem": "What is the primary role of potassium hydroxide and sodium hydroxide in wet soda lime?"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "450",
+          "stem": "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "258",
+          "stem": "What is the primary role of potassium hydroxide and sodium hydroxide in wet soda lime?"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "489",
+          "stem": "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?"
+        }
+      },
+      {
+        "similarity": 0.93,
+        "a": {
+          "file": "bank1.json",
+          "set": 2,
+          "id": "125",
+          "stem": "Which of the following clinical factors will shift the oxyhemoglobin dissociation curve to the RIGHT, facilitating oxygen offloading to peripheral tissues? (Select 3)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "416",
+          "stem": "Which of the following clinical factors will shift the oxyhemoglobin dissociation curve to the RIGHT, facilitating oxygen offloading to tissues? (Select 3)"
+        }
+      },
+      {
+        "similarity": 0.93,
+        "a": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "316",
+          "stem": "Which of the following clinical factors will shift the oxyhemoglobin dissociation curve to the RIGHT, facilitating oxygen offloading to peripheral tissues? (Select 3)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "416",
+          "stem": "Which of the following clinical factors will shift the oxyhemoglobin dissociation curve to the RIGHT, facilitating oxygen offloading to tissues? (Select 3)"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 2,
+          "id": "159",
+          "stem": "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "250",
+          "stem": "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 2)"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "250",
+          "stem": "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 2)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "322",
+          "stem": "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "250",
+          "stem": "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 2)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "388",
+          "stem": "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "250",
+          "stem": "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 2)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "422",
+          "stem": "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "250",
+          "stem": "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 2)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "488",
+          "stem": "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
+        }
+      },
+      {
+        "similarity": 0.92,
+        "a": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "219",
+          "stem": "Which of the following volatile anesthetics do NOT produce carbon monoxide when exposed to desiccated carbon dioxide absorbent? (Select 2)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "385",
+          "stem": "Which of the following volatile anesthetics do NOT produce carbon monoxide when exposed to dry, desiccated carbon dioxide absorbent? (Select 2)"
+        }
+      },
+      {
+        "similarity": 0.92,
+        "a": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "219",
+          "stem": "Which of the following volatile anesthetics do NOT produce carbon monoxide when exposed to desiccated carbon dioxide absorbent? (Select 2)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "485",
+          "stem": "Which of the following volatile anesthetics do NOT produce carbon monoxide when exposed to dry, desiccated carbon dioxide absorbent? (Select 2)"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "237",
+          "stem": "What is the primary role of calcium hydroxide [Ca(OH)2] in wet soda lime absorbent?"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "368",
+          "stem": "What is the primary role of calcium hydroxide in wet soda lime absorbent?"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank1.json",
+          "set": 3,
+          "id": "237",
+          "stem": "What is the primary role of calcium hydroxide [Ca(OH)2] in wet soda lime absorbent?"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "468",
+          "stem": "What is the primary role of calcium hydroxide in wet soda lime absorbent?"
+        }
+      },
+      {
+        "similarity": 0.93,
+        "a": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "303",
+          "stem": "Which of the following clinical events will produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "382",
+          "stem": "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
+        }
+      },
+      {
+        "similarity": 0.93,
+        "a": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "303",
+          "stem": "Which of the following clinical events will produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "482",
+          "stem": "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
+        }
+      },
+      {
+        "similarity": 0.93,
+        "a": {
+          "file": "bank1.json",
+          "set": 4,
+          "id": "382",
+          "stem": "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "403",
+          "stem": "Which of the following clinical events will produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
+        }
+      },
+      {
+        "similarity": 0.93,
+        "a": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "403",
+          "stem": "Which of the following clinical events will produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
+        },
+        "b": {
+          "file": "bank1.json",
+          "set": 5,
+          "id": "482",
+          "stem": "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
+        }
+      },
+      {
+        "similarity": 1,
+        "a": {
+          "file": "bank2.json",
+          "set": 2,
+          "id": "S2-099",
+          "stem": "Which THREE cricothyrotomy techniques are named in the lecture? (Select 3)"
+        },
+        "b": {
+          "file": "bank2.json",
+          "set": 5,
+          "id": "S5-099",
+          "stem": "Which THREE techniques for cricothyrotomy are named in the lecture? (Select 3)"
+        }
+      }
+    ],
+    "confirmedSamePoolKeyConflicts": []
+  },
+  "hazardsSet2": {
+    "questions": 100,
+    "uniqueNormalizedStems": 35,
+    "repeatedOccurrences": 65
+  },
+  "metadata": {
+    "canonicalTopics": [
+      "Monitoring",
+      "Medical Gas",
+      "CO₂ & Scavenging",
+      "Airway",
+      "Hazards & Safety"
+    ],
+    "missingTopics": 0,
+    "legacyCitationFormatIssues": 0
+  },
+  "notes": {
+    "difficulty": "Not added. Difficulty labels would be invented without an authoritative rubric or empirical item-performance data.",
+    "semantics": "Deterministic screening identifies candidates for review; it does not independently prove clinical correctness."
+  }
+}
