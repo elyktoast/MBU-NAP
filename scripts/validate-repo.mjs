@@ -612,6 +612,8 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  const quiz=read('equipment/assets/quiz-engine.js'),studio=read('equipment/assets/studio-page.js'),haz1=read('equipment/assets/hazards-standard-engine.js'),haz2=read('equipment/assets/hazards-quiz-engine.js'),core=read('equipment/assets/app-core.js');
  if((quiz.match(/img\.alt='Question figure'/g)||[]).length<2)fail('Accessibility: canonical indexed/data images lost alt text');
  if(!studio.includes('alt="Question figure"'))fail('Accessibility: Studio question figures lost alt text');
+ if(haz2.includes('alt=""'))fail('Accessibility: Hazards advanced runtime contains empty image alt text');
+ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html'])if(read(p).includes('<img alt="">'))fail('Accessibility: '+p+' lightbox image has empty alt text');
  for(const src of [quiz,studio,haz1,haz2])if(!src.includes('aria-label')||!src.includes('aria-pressed'))fail('Accessibility: a quiz runtime lost named cross-out state');
  for(const token of ['function trapModalKey(','aria-modal="true"','prefers-reduced-motion','Skip to main content'])if(!(core+read('equipment/assets/app-core.css')).includes(token))fail('Accessibility: shared app contract missing '+token);
 }
@@ -648,7 +650,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 // Supabase account recovery and resend flows are part of the stable account contract.
 {
  const cloud=read('equipment/assets/supabase-sync.js'),core=read('equipment/assets/app-core.js');
- for(const token of ['/auth/v1/resend?redirect_to=','/auth/v1/recover?redirect_to=','function resendConfirmation(','function requestPasswordReset(','function updatePassword(','password-recovery'])if(!cloud.includes(token))fail('Supabase account recovery missing '+token);
+ for(const token of ['/auth/v1/resend?redirect_to=','/auth/v1/recover?redirect_to=','function resendConfirmation(','function requestPasswordReset(','function updatePassword(','password-recovery','function handleAuthRedirect()','hashchange'])if(!cloud.includes(token))fail('Supabase account recovery missing '+token);
  for(const token of ['data-cloud-forgot','data-cloud-resend','data-cloud-recovery','data-cloud-update-password'])if(!core.includes(token))fail('Account recovery UI missing '+token);
 }
 
