@@ -1819,4 +1819,44 @@ test.describe('canonical quiz regression', () => {
     expect(result.banks).toContain('Workstation Hazards');
   });
 
+  test('Cloud device removal deletes only the selected non-current device row', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let deletedUrl='';
+    await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'test-access',refresh_token:'test-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000001',email:'test@example.com'}})}));
+    await page.route(cloud+'/rest/v1/mbu_sync_state?*',route=>route.fulfill({status:200,contentType:'application/json',body:'[]'}));
+    await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>{
+      if(route.request().method()==='DELETE'){deletedUrl=route.request().url();return route.fulfill({status:204,body:''})}
+      if(route.request().method()==='GET')return route.fulfill({status:200,contentType:'application/json',body:'[]'});
+      return route.fulfill({status:201,contentType:'application/json',body:''})
+    });
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.evaluate(() => MBUSupabase.signIn('test@example.com','correct horse battery staple'));
+    await expect(page.evaluate(() => MBUSupabase.removeDevice(MBUSync.deviceId()))).rejects.toThrow(/cannot remove/i);
+    await page.evaluate(() => MBUSupabase.removeDevice('old-device'));
+    expect(deletedUrl).toContain('device_id=eq.old-device');
+    expect(deletedUrl).toContain('user_id=eq.');
+  });
+
+  test('Cloud version restore uses the current server revision as an atomic write guard', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let rpcBody=null;
+    await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'test-access',refresh_token:'test-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000001',email:'test@example.com'}})}));
+    await page.route(cloud+'/rest/v1/mbu_sync_versions?*',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify([{id:44,store_key:'mbu_exam1_studio_v1',payload:{restored:true},server_revision:8,saved_at:new Date().toISOString()}])}));
+    await page.route(cloud+'/rest/v1/mbu_sync_state?*',route=>{
+      const url=route.request().url();
+      if(url.includes('store_key=eq.mbu_exam1_studio_v1'))return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify([{store_key:'mbu_exam1_studio_v1',server_revision:12,client_revision:5,payload:{current:true},device_id:'other',client_updated_at:new Date().toISOString()}])});
+      return route.fulfill({status:200,contentType:'application/json',body:'[]'})
+    });
+    await page.route(cloud+'/rest/v1/rpc/mbu_sync_write_state',route=>{
+      rpcBody=JSON.parse(route.request().postData()||'{}');
+      return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({applied:true,row:{store_key:rpcBody.p_store_key,payload:rpcBody.p_payload,device_id:rpcBody.p_device_id,client_revision:rpcBody.p_client_revision,client_updated_at:rpcBody.p_client_updated_at,server_revision:13}})})
+    });
+    await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>route.fulfill({status:201,contentType:'application/json',body:''}));
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.evaluate(() => MBUSupabase.signIn('test@example.com','correct horse battery staple'));
+    await page.evaluate(() => MBUSupabase.restoreVersion(44));
+    expect(rpcBody.p_store_key).toBe('mbu_exam1_studio_v1');
+    expect(rpcBody.p_payload).toEqual({restored:true});
+    expect(rpcBody.p_expected_server_revision).toBe(12);
+    expect(rpcBody.p_client_revision).toBe(6);
+  });
+
 });
