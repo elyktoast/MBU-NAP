@@ -1558,4 +1558,40 @@ test.describe('canonical quiz regression', () => {
     for(let i=0;i<Math.min(await hazardImages.count(),5);i++)await expect(hazardImages.nth(i)).toHaveAttribute('alt',/.+/);
   });
 
+  test('Server revision upgrade does not discard legacy unsynced local progress', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
+    const result=await page.evaluate(async()=>{
+      const key='SRNA_COMBINED_EXAM_SET_1_2026_V1',device=MBUSync.deviceId();
+      localStorage.setItem(key,'{"legacyLocal":true}');
+      localStorage.setItem('mbu_sync_meta_v1',JSON.stringify({[key]:{revision:9,updatedAt:500,deviceId:device}}));
+      const merge=await MBUSync.importSnapshot({
+        app:'MBU-NAP',schema:1,createdAt:100,deviceId:'cloud',
+        stores:{[key]:'{"olderCloud":true}'},
+        meta:{[key]:{revision:2,updatedAt:100,deviceId:'cloud',serverRevision:8}}
+      });
+      return{merge,value:localStorage.getItem(key),meta:JSON.parse(localStorage.getItem('mbu_sync_meta_v1'))[key]}
+    });
+    expect(result.merge.imported).toBe(0);
+    expect(result.value).toBe('{"legacyLocal":true}');
+    expect(result.meta.serverRevision||0).toBe(0);
+  });
+
+  test('Server revision wins once both local and cloud state have authoritative revisions', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
+    const result=await page.evaluate(async()=>{
+      const key='SRNA_COMBINED_EXAM_SET_1_2026_V1',device=MBUSync.deviceId();
+      localStorage.setItem(key,'{"local":true}');
+      localStorage.setItem('mbu_sync_meta_v1',JSON.stringify({[key]:{revision:20,updatedAt:900,deviceId:device,serverRevision:4}}));
+      const merge=await MBUSync.importSnapshot({
+        app:'MBU-NAP',schema:1,createdAt:100,deviceId:'cloud',
+        stores:{[key]:'{"cloud":true}'},
+        meta:{[key]:{revision:2,updatedAt:100,deviceId:'cloud',serverRevision:5}}
+      });
+      return{merge,value:localStorage.getItem(key),meta:JSON.parse(localStorage.getItem('mbu_sync_meta_v1'))[key]}
+    });
+    expect(result.merge.imported).toBe(1);
+    expect(result.value).toBe('{"cloud":true}');
+    expect(result.meta.serverRevision).toBe(5);
+  });
+
 });
