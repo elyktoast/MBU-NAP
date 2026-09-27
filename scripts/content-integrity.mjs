@@ -78,6 +78,8 @@ for(const [label,file] of sources){
   for(const identity of knownDupes)if(!seenKnownDupes.has(identity))warn(label+': duplicate baseline entry '+identity+' is no longer duplicated and can be removed');
   if(missingCitation)err(label+': '+missingCitation+' questions have no citation/source text');
   if(missingExplanation)err(label+': '+missingExplanation+' questions have no explanation/rationale');
+  if(missingSourceTitle)err(label+': '+missingSourceTitle+' questions have no structured source title');
+  if(missingSourceLocator)err(label+': '+missingSourceLocator+' questions have no structured source locator');
   if(missingSourceMeta)err(label+': '+missingSourceMeta+' questions have no structured source metadata');
 
   const allowedMissingTopics=Number(baseline.allowedMissingTopics?.[name]??0);
