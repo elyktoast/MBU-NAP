@@ -1930,6 +1930,7 @@ test.describe('canonical quiz regression', () => {
     await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('#mbu-account-panel')).toContainText('Privacy Notice');
     await expect(page.locator('#mbu-account-panel')).toContainText('Terms of Use');
+    await page.locator('[data-cloud-signed-in] summary').filter({hasText:'Privacy & Account'}).click();
     await expect(page.locator('[data-cloud-delete-account]')).toBeVisible();
     await expect(page.locator('[data-privacy-submit]')).toBeVisible();
   });
