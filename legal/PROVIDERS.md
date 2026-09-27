@@ -3,7 +3,7 @@
 ## Supabase
 **Purpose:** authentication, database storage, cross-device synchronization, account management, privacy requests, legal-assent records, and CAT calibration infrastructure.
 
-**Data potentially processed:** account email/authentication data, account identifiers, synchronized study data, device metadata, privacy requests, first-attempt contribution records, legal-assent records, and de-identified/aggregate calibration data.
+**Data potentially processed:** account email/authentication data, account identifiers, synchronized study data, device metadata, privacy requests, first-attempt contribution records, legal-assent records, de-identified/aggregate calibration data, and short-lived random guest-session identifiers/timestamps used for approximate guest-session counts.
 
 **Control:** browser receives only the public/publishable key. Secret/service-role credentials must never be committed to browser code. RLS and restricted RPCs enforce account/admin boundaries.
 
