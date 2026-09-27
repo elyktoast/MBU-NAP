@@ -1869,6 +1869,28 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#quiz')).toBeVisible();
   });
 
+  test('Privacy, Terms, consent, and account controls are accessible without disrupting study flow', async ({ page }) => {
+    await page.goto('/');await page.evaluate(() => MBUPageReady);
+    await expect(page.locator('footer a[href="privacy.html"]')).toHaveText('Privacy');
+    await expect(page.locator('footer a[href="terms.html"]')).toHaveText('Terms');
+
+    await page.goto('/privacy.html');
+    await expect(page.getByRole('heading',{name:'Privacy Notice'})).toBeVisible();
+    await expect(page.locator('body')).toContainText('Question reports');
+    await expect(page.locator('body')).toContainText('Privacy requests');
+
+    await page.goto('/terms.html');
+    await expect(page.getByRole('heading',{name:'Terms of Use'})).toBeVisible();
+    await expect(page.locator('body')).toContainText('independent study resource');
+
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await page.locator('.mbu-global-nav__cloud').click();
+    await expect(page.locator('#mbu-account-panel')).toContainText('Privacy Notice');
+    await expect(page.locator('#mbu-account-panel')).toContainText('Terms of Use');
+    await expect(page.locator('[data-cloud-delete-account]')).toBeVisible();
+    await expect(page.locator('[data-privacy-submit]')).toBeVisible();
+  });
+
   test('Adaptive session toggle is opt-in, forward-only, and survives reload with its level', async ({ page }) => {
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     expect(await page.locator('#adaptiveToggle').isChecked()).toBe(false);
