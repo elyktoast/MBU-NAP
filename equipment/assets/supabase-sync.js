@@ -182,7 +182,12 @@ p_client_revision:(Number(current.client_revision)||0)+1,p_client_updated_at:new
 p_expected_server_revision:Number(current.server_revision)||0
 }});
 if(result?.applied===false)throw Error('Cloud progress changed while restoring. Refresh history and try again.');
-remoteByKey.delete(version.store_key);await fullSync({reloadOnImport:true});return{storeKey:version.store_key,savedAt:version.saved_at}
+const restoredRow=result?.row||{store_key:version.store_key,payload:version.payload,device_id:sync.deviceId(),client_revision:(Number(current.client_revision)||0)+1,client_updated_at:new Date().toISOString(),server_revision:(Number(current.server_revision)||0)+1};
+remoteByKey.set(version.store_key,restoredRow);
+const merged=await sync.importSnapshot(cloudSnapshot([restoredRow],s.user),{mode:'replace'});
+await fullSync({reloadOnImport:false});
+if(merged?.imported>0){sessionStorage.setItem('mbu_cloud_reload','1');location.reload()}
+return{storeKey:version.store_key,savedAt:version.saved_at}
 }
 function cloudSnapshot(rows,user){
 const stores={},meta={};for(const row of rows||[]){stores[row.store_key]=JSON.stringify(row.payload);meta[row.store_key]={revision:Number(row.client_revision)||0,updatedAt:Date.parse(row.client_updated_at)||0,deviceId:String(row.device_id||'cloud'),serverRevision:Number(row.server_revision)||0}}
