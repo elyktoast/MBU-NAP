@@ -67,7 +67,7 @@ Account authentication and private progress synchronization necessarily use acco
 
 ## Adaptive Mode
 
-Adaptive Mode is deliberately separate from Smart Review and from normal quiz sessions. It is loaded only by Study Studio and runs only when the user enables the **Adaptive Mode** toggle while building a custom session.
+Adaptive Mode is deliberately separate from Smart Review and from normal quiz sessions. Normal study tools remain available without an account. Adaptive Mode requires a signed-in MBU-NAP account and runs only when the user enables the **Adaptive Mode** toggle while building a custom session.
 
 The implementation follows CAT principles used by major credentialing examinations without claiming formal psychometric equivalence:
 
