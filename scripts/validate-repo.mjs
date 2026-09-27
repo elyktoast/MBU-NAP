@@ -742,6 +742,16 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(core.includes('mbu-auth-gate')||core.includes('requireAccount'))fail('Account gate: obsolete whole-site authentication gate remains');
 }
 
+// Privacy/terms and account controls must match the implemented data practices.
+{
+ const core=read('equipment/assets/app-core.js'),cloud=read('equipment/assets/supabase-sync.js'),privacy=read('privacy.html'),terms=read('terms.html'),home=read('index.html');
+ for(const token of ['Privacy Notice','Terms of Use','data-cloud-consent','at least 18','data-cloud-delete-account','data-privacy-submit'])if(!core.includes(token))fail('Account legal/privacy UI missing '+token);
+ for(const token of ['deleteAccount','/functions/v1/delete-account','submitPrivacyRequest','/rest/v1/snar_privacy_requests'])if(!cloud.includes(token))fail('Privacy/account backend client missing '+token);
+ for(const token of ['Guest use','Adaptive Mode','Question reports','Privacy requests','does not sell personal data','at least 18 years old'])if(!privacy.includes(token))fail('Privacy Notice missing '+token);
+ for(const token of ['Independent educational resource','Educational use only','Adaptive Mode','No guarantee','Privacy Notice'])if(!terms.includes(token))fail('Terms of Use missing '+token);
+ if(!home.includes('href="privacy.html"')||!home.includes('href="terms.html"'))fail('Home footer does not link Privacy and Terms');
+}
+
 // Study intelligence is the single source of truth for adaptive review, spaced review, activity, and analytics.
 {
  const boot=read('equipment/assets/build-bootstrap.js'),intel=read('equipment/assets/study-intelligence.js'),search=read('equipment/assets/question-search.js'),studio=read('equipment/assets/studio-page.js'),dash=read('equipment/assets/exam-dashboard.js'),core=read('equipment/assets/app-core.js');
