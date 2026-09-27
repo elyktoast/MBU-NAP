@@ -799,7 +799,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const p of ['legal/LEGAL_CHANGELOG.md','legal/INCIDENT_RESPONSE.md','legal/RETENTION_SCHEDULE.md','legal/DATA_INVENTORY.md','legal/PROVIDERS.md','legal/ADMIN_OPERATIONS.md','legal/data-inventory.json'])if(!exists(p))fail('Legal operations file missing '+p);
  const inv=JSON.parse(read('legal/data-inventory.json'));
  if(inv.version!=='2026-09-27-v4'||inv.guest_session?.retention_hours!==24||inv.guest_session?.persistent_cross_session!==false)fail('Machine-readable guest metric inventory is incomplete');
- const privacy=read('privacy.html'),terms=read('terms.html'),cloud=read('equipment/assets/supabase-sync.js'),core=read('equipment/assets/app-core.js'),studio=read('equipment/assets/studio-page.js');
+ const privacy=read('privacy.html'),terms=read('terms.html'),cloud=read('equipment/assets/supabase-sync.js'),core=read('equipment/assets/app-core.js'),adminPanel=read('equipment/assets/admin-panel.js'),studio=read('equipment/assets/studio-page.js');
  for(const token of ['random session identifier','approximately 24 hours','operator-admin','raw first-attempt CAT contribution rows'])if(!privacy.includes(token))fail('Privacy v4 disclosure missing '+token);
  for(const token of ['Account access, suspension, and termination','suspended or re-granted'])if(!terms.includes(token))fail('Terms v4 account-access disclosure missing '+token);
  for(const token of ['snar_guest_heartbeat','snar_account_access_status','adminAccounts','adminSetAccountAccess','adminDeleteAccount','guestSessionId','accountAccess'])if(!cloud.includes(token))fail('Admin/guest client contract missing '+token);
