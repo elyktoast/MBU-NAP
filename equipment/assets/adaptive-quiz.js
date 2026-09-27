@@ -47,7 +47,7 @@ function estimateAbility(path=[]){
 }
 function normalize(state,count=50){
   const s=plain(state)?state:{},seen=Array.isArray(s.seenUids)?[...new Set(s.seenUids.map(String).filter(Boolean))]:[],topics=plain(s.topicCounts)?s.topicCounts:{},poolUids=Array.isArray(s.poolUids)?[...new Set(s.poolUids.map(String).filter(Boolean))]:[],path=Array.isArray(s.path)?s.path.filter(plain).slice(-200):[],estimate=path.length?estimateAbility(path):{theta:clampLogit(s.theta),se:Number(s.se)||1.5,information:Number(s.information)||0};
-  return{mode:'adaptive',theta:estimate.theta,se:estimate.se,information:estimate.information,level:logitToLevel(estimate.theta),answered:Math.max(0,Number(s.answered)||path.length),correct:Math.max(0,Number(s.correct)||path.filter(x=>x.ok).length),maxQuestions:Math.max(1,Math.min(200,Number(s.maxQuestions)||Number(count)||50)),seenUids:seen,poolUids,topicCounts:Object.fromEntries(Object.entries(topics).map(([k,v])=>[String(k),Math.max(0,Number(v)||0)])),path,currentLevel:logitToLevel(estimate.theta)}
+  return{mode:'adaptive',theta:estimate.theta,se:estimate.se,information:estimate.information,level:logitToLevel(estimate.theta),answered:Math.max(0,Number(s.answered)||path.length),correct:Math.max(0,Number(s.correct)||path.filter(x=>x.ok).length),maxQuestions:Math.max(1,Math.min(200,Number(s.maxQuestions)||Number(count)||50)),seenUids:seen,poolUids,topicCounts:Object.fromEntries(Object.entries(topics).map(([k,v])=>[String(k),Math.max(0,Number(v)||0)])),path,currentLevel:logitToLevel(estimate.theta),currentDifficulty:Number.isFinite(Number(s.currentDifficulty))?clampLogit(s.currentDifficulty):null,currentChallenge:Number.isFinite(Number(s.currentChallenge))?Number(s.currentChallenge):null,currentProbability:Number.isFinite(Number(s.currentProbability))?Number(s.currentProbability):null}
 }
 function poolTopicCounts(questions,allowed){
   const counts={};let total=0;
@@ -62,7 +62,7 @@ function pick(questions,state){
     const c=challenge(q),difficulty=challengeToLogit(c),probability=logistic(target-difficulty),information=probability*(1-probability),topic=topicOf(q),topicCount=Number(s.topicCounts[topic])||0,share=distribution.total?(distribution.counts[topic]||0)/distribution.total:0,expected=(s.answered+1)*share,balancePenalty=Math.max(0,topicCount-expected)*.08,exposurePenalty=recent.has(String(q.uid))?.08:0;
     return{q,challenge:c,difficulty,probability,information,score:Math.abs(probability-.5)+balancePenalty+exposurePenalty,tie:tieRank(q.uid||i)}
   }).sort((a,b)=>a.score-b.score||b.information-a.information||a.tie-b.tie);
-  const chosen=ranked[0],next={...s,seenUids:[...s.seenUids,String(chosen.q.uid)],topicCounts:{...s.topicCounts,[topicOf(chosen.q)]:(Number(s.topicCounts[topicOf(chosen.q)])||0)+1},currentLevel:logitToLevel(s.theta)};
+  const chosen=ranked[0],next={...s,seenUids:[...s.seenUids,String(chosen.q.uid)],topicCounts:{...s.topicCounts,[topicOf(chosen.q)]:(Number(s.topicCounts[topicOf(chosen.q)])||0)+1},currentLevel:logitToLevel(s.theta),currentDifficulty:chosen.difficulty,currentChallenge:chosen.challenge,currentProbability:chosen.probability};
   return{question:chosen.q,state:next,challenge:chosen.challenge,difficulty:chosen.difficulty,probability:chosen.probability,information:chosen.information}
 }
 function start(questions,count=50){
@@ -70,8 +70,8 @@ function start(questions,count=50){
   return pick(questions,base)
 }
 function advance(state,q,ok){
-  const s=normalize(state),difficulty=challengeToLogit(challenge(q)),before=s.theta,path=[...s.path,{uid:String(q?.uid||''),ok:!!ok,difficulty,challenge:challenge(q),at:Date.now()}].slice(-200),estimate=estimateAbility(path),after=estimate.theta;
-  return{...s,theta:after,se:estimate.se,information:estimate.information,level:logitToLevel(after),currentLevel:logitToLevel(after),answered:s.answered+1,correct:s.correct+(ok?1:0),path:[...path.slice(0,-1),{...path[path.length-1],thetaBefore:before,thetaAfter:after}]}
+  const s=normalize(state),difficulty=Number.isFinite(Number(s.currentDifficulty))?clampLogit(s.currentDifficulty):challengeToLogit(challenge(q)),presentedChallenge=Number.isFinite(Number(s.currentChallenge))?Number(s.currentChallenge):challenge(q),before=s.theta,path=[...s.path,{uid:String(q?.uid||''),ok:!!ok,difficulty,challenge:presentedChallenge,at:Date.now()}].slice(-200),estimate=estimateAbility(path),after=estimate.theta;
+  return{...s,theta:after,se:estimate.se,information:estimate.information,level:logitToLevel(after),currentLevel:logitToLevel(after),currentDifficulty:null,currentChallenge:null,currentProbability:null,answered:s.answered+1,correct:s.correct+(ok?1:0),path:[...path.slice(0,-1),{...path[path.length-1],thetaBefore:before,thetaAfter:after}]}
 }
 window.MBUAdaptiveQuiz={challenge,estimateAbility,normalize,start,pick,advance};
 })();
