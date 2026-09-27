@@ -1,26 +1,16 @@
-/* SRNA Study Tool Supabase auth + cloud sync adapter. Uses only the public browser key and authenticated RLS. */
 (()=>{'use strict';
 const cfg=window.MBU_SUPABASE_CONFIG||{},sync=window.MBUSync,SESSION_KEY='mbu_supabase_session_v1',OWNER_KEY='mbu_cloud_local_owner_v1',META_KEY='mbu_sync_meta_v1',STATUS_EVENT='mbu:supabase-status',script=document.currentScript,APP_ROOT=new URL('../../',script?.src||location.href).href;
 if(!cfg.url||!cfg.publishableKey||!sync){console.warn('Supabase sync is not configured');return}
 const base=cfg.url.replace(/\/$/,''),AUTO_SYNC_INTERVAL=5*60*1000,LEGAL_VERSION='2026-09-27-v5',LEGAL_TERMS_VERSION=LEGAL_VERSION,LEGAL_PRIVACY_VERSION=LEGAL_VERSION;
 let syncing=false,syncQueued=false,lastSyncAt=0,lastState='signed-out',remoteByKey=new Map(),calibrationByKey=new Map(),calibrationFetchedAt=0,timer=null,autoSyncTimer=null,guestTimer=null,recoveryMode=false,legalAccepted=null,accountAccess='signed_out';
-
 const safeJSON=(raw,fallback=null)=>{try{return JSON.parse(raw)}catch{return fallback}};
 const session=()=>safeJSON(localStorage.getItem(SESSION_KEY));
 async function clearTrackedLocalData(){for(const key of Object.keys((await sync.exportSnapshot()).stores||{}))localStorage.removeItem(key);localStorage.removeItem(META_KEY)}
 async function prepareLocalOwner(userId){const id=String(userId||'');if(!id)return false;const owner=localStorage.getItem(OWNER_KEY),switched=!!owner&&owner!==id;if(switched)await clearTrackedLocalData();if(owner!==id)localStorage.setItem(OWNER_KEY,id);return switched}
 const emit=(state,detail={})=>{lastState=state;window.dispatchEvent(new CustomEvent(STATUS_EVENT,{detail:{state,lastSyncAt,...detail}}))};
-function normalizeAuth(data){
-  const source=data?.session||data;
-  if(!source?.access_token||!source?.refresh_token)return null;
-  const expiresAt=Number(source.expires_at)||Math.floor(Date.now()/1000)+(Number(source.expires_in)||3600);
-  return{access_token:source.access_token,refresh_token:source.refresh_token,expires_at:expiresAt,user:data?.user||source.user||null}
-}
+function normalizeAuth(data){const source=data?.session||data;if(!source?.access_token||!source?.refresh_token)return null;const expiresAt=Number(source.expires_at)||Math.floor(Date.now()/1000)+(Number(source.expires_in)||3600);return{access_token:source.access_token,refresh_token:source.refresh_token,expires_at:expiresAt,user:data?.user||source.user||null}}
 function saveSession(s){if(s)localStorage.setItem(SESSION_KEY,JSON.stringify(s));else localStorage.removeItem(SESSION_KEY)}
-async function hydrateUser(s){
-  if(!s?.access_token)return s;
-  try{const user=await raw('/auth/v1/user',{token:s.access_token});return{...s,user:user||s.user||null}}catch{return s}
-}
+async function hydrateUser(s){if(!s?.access_token)return s;try{const user=await raw('/auth/v1/user',{token:s.access_token});return{...s,user:user||s.user||null}}catch{return s}}
 async function consumeAuthRedirect(){
   if(!location.hash||location.hash.length<2)return null;
   const p=new URLSearchParams(location.hash.slice(1)),error=p.get('error_description')||p.get('error');
@@ -42,7 +32,6 @@ async function consumeAuthRedirect(){
   emit(recoveryMode?'password-recovery':'signed-in',{email:s.user?.email||''});
   return s
 }
-
 async function raw(path,{method='GET',body,token,headers={}}={}){
   const response=await fetch(base+path,{method,headers:{apikey:cfg.publishableKey,'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{}),...headers},body:body===undefined?undefined:JSON.stringify(body)});
   const text=await response.text();const data=text?safeJSON(text,text):null;
@@ -248,7 +237,6 @@ async function push(snapshot){
   return{conflictImports}
 }
 sync.registerAdapter('supabase',{pull,push});
-
 async function fullSync({reloadOnImport=false}={}){
   requireAccountAccess();
   if(syncing){syncQueued=true;return null}const s=await validSession();if(!s?.user?.id){emit('signed-out');return null}
@@ -275,10 +263,7 @@ function startAutoSync(){
   stopAutoSync();if(!session()||legalAccepted!==true||accountAccess!=='active')return;
   autoSyncTimer=setInterval(()=>{if(session()&&legalAccepted===true&&accountAccess==='active'&&navigator.onLine)fullSync({reloadOnImport:true}).catch(()=>{})},AUTO_SYNC_INTERVAL)
 }
-async function adminStatus(){
-  const s=await validSession();if(!s?.access_token||legalAccepted!==true)return{is_admin:false,role:null};
-  return await api('/rest/v1/rpc/snar_admin_status',{method:'POST',body:{}})
-}
+async function adminStatus(){const s=await validSession();if(!s?.access_token||legalAccepted!==true)return{is_admin:false,role:null};return await api('/rest/v1/rpc/snar_admin_status',{method:'POST',body:{}})}
 async function adminSystemSummary(){requireLegal();return await api('/rest/v1/rpc/snar_admin_system_summary',{method:'POST',body:{}})}
 async function adminAccounts(){requireLegal();return await api('/rest/v1/rpc/snar_admin_accounts',{method:'POST',body:{}})}
 async function adminSetAccountAccess(userId,statusValue){requireLegal();return await api('/rest/v1/rpc/snar_admin_set_account_access',{method:'POST',body:{p_user_id:String(userId),p_status:String(statusValue)}})}
