@@ -1,4 +1,4 @@
-/* Lazy operator-admin dashboard for SNAR Study Tool. */
+/* Lazy operator-admin dashboard for SRNA Study Tool. */
 (()=>{'use strict';
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 function downloadJSON(name,data){
@@ -38,7 +38,7 @@ async function refresh(host,modal){
   privacyHost.querySelectorAll('[data-admin-request-save]').forEach(btn=>btn.onclick=async()=>{const id=Number(btn.dataset.adminRequestSave),sel=privacyHost.querySelector('[data-admin-request-status="'+id+'"]');try{btn.disabled=true;await MBUSupabase.adminUpdatePrivacyRequest(id,sel.value);msg.textContent='Privacy request #'+id+' updated.';await refresh(host,modal)}catch(e){msg.textContent=e.message}finally{btn.disabled=false}});
 
   section.querySelector('[data-admin-refresh]').onclick=()=>refresh(host,modal);
-  section.querySelector('[data-admin-export-legal]').onclick=async e=>{const btn=e.currentTarget;try{btn.disabled=true;const rows=await MBUSupabase.adminLegalAcceptances();downloadJSON('snar-legal-assent-audit-'+new Date().toISOString().slice(0,10)+'.json',{exported_at:new Date().toISOString(),records:rows});msg.textContent='Legal assent audit exported.'}catch(err){msg.textContent=err.message}finally{btn.disabled=false}};
+  section.querySelector('[data-admin-export-legal]').onclick=async e=>{const btn=e.currentTarget;try{btn.disabled=true;const rows=await MBUSupabase.adminLegalAcceptances();downloadJSON('srna-legal-assent-audit-'+new Date().toISOString().slice(0,10)+'.json',{exported_at:new Date().toISOString(),records:rows});msg.textContent='Legal assent audit exported.'}catch(err){msg.textContent=err.message}finally{btn.disabled=false}};
   section.querySelector('[data-admin-retention]').onclick=async e=>{const btn=e.currentTarget;if(!confirm('Run the documented retention cleanup now?'))return;try{btn.disabled=true;const out=await MBUSupabase.adminRetentionCleanup();msg.textContent='Retention cleanup complete: '+Number(out.sync_history_deleted||0)+' sync versions, '+Number(out.privacy_requests_deleted||0)+' privacy requests, '+Number(out.legal_acceptances_deleted||0)+' expired legal records, '+Number(out.guest_sessions_deleted||0)+' guest sessions removed.';await refresh(host,modal)}catch(err){msg.textContent=err.message}finally{btn.disabled=false}};
 }
 async function mount(host,modal){ensure(host);await refresh(host,modal)}
