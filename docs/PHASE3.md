@@ -80,3 +80,7 @@ Population difficulty remains completely excluded below 25 unique learners per i
 ## Accessibility hardening
 
 Study Studio form controls now use programmatic labels for quiz count and order, and the repository search field has an explicit accessible name. Browser regression coverage scans visible Studio form controls so unlabeled inputs, selects, or textareas fail CI.
+
+## Retention audit visibility
+
+The admin retention-cleanup result now reports resolved question-report deletions alongside sync history, privacy requests, expired legal records, and guest sessions. Browser regression coverage verifies that all retention categories returned by the server are surfaced to the operator.

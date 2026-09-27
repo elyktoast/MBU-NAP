@@ -1806,6 +1806,7 @@ test.describe('canonical quiz regression', () => {
     await page.route(cloud+'/rest/v1/rpc/snar_admin_privacy_requests',route=>route.fulfill({status:200,contentType:'application/json',body:'[]'}));
     await page.route(cloud+'/rest/v1/rpc/snar_admin_set_account_access',route=>{accessChange=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:'true'})});
     await page.route(cloud+'/rest/v1/rpc/snar_admin_delete_account',route=>{deletedAccount=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:'true'})});
+    await page.route(cloud+'/rest/v1/rpc/snar_admin_retention_cleanup',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({sync_history_deleted:2,privacy_requests_deleted:1,legal_acceptances_deleted:0,guest_sessions_deleted:3,question_reports_deleted:4})}));
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);await waitForAuth(page);
     await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('[data-admin-details]')).toBeVisible();
@@ -1833,6 +1834,9 @@ test.describe('canonical quiz regression', () => {
     await page.locator('[data-admin-question-report-save="9"]').click();
     await expect.poll(()=>reportStatus?.p_status).toBe('reviewing');
     await expect(page.locator('[data-admin-suggestions]')).toHaveText('No suggestions yet.');
+    page.once('dialog',dialog=>dialog.accept());
+    await page.locator('[data-admin-retention]').click();
+    await expect(page.locator('[data-account-message]')).toContainText('4 resolved question reports removed');
     await expect(page.locator('[data-admin-accounts]')).toContainText('learner@example.com');
     await page.locator('[data-admin-accounts] [data-admin-access]').click();
     await expect.poll(()=>accessChange?.p_status).toBe('suspended');
