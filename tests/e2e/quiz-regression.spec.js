@@ -2461,7 +2461,8 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('[data-cloud-devices]')).toContainText('MacBook');
     await page.getByText('Restore progress',{exact:true}).click();
     await expect(page.locator('[data-cloud-history]')).toContainText('Study Studio');
-    await expect(page.locator('[data-cloud-history]')).toContainText('revision 4');
+    await expect(page.locator('[data-cloud-history]')).toContainText('Cloud revision 4');
+    await expect(page.locator('[data-cloud-history]')).toContainText('Up to 10 versions per study area');
   });
 
   test('Quiz session stat bars use Answered, Correct, Missed, and Accuracy', async ({ page }) => {
