@@ -94,5 +94,12 @@
       "2::99",
       "2::100"
     ]
+  },
+  "allowedMissingTopics": {
+    "bank1.json": 500,
+    "bank2.json": 0,
+    "bank3.json": 0,
+    "combined.json": 0,
+    "hazards.json": 0
   }
 }
