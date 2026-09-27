@@ -8,7 +8,7 @@ function resetCalculator(){ans=0;d.value='';drag=null}
 function closeCalculator(){m.classList.remove('open');resetCalculator()}
 open.hidden=true;
 window.MBUCalculator={
-  besideFlag(){const flag=document.getElementById('mbuFlagBtn')||document.getElementById('flagBtn');if(!flag)return;flag.after(open);open.classList.add('mbu-calc-inline');open.hidden=false},
+  besideFlag(){const flag=document.getElementById('mbuFlagBtn')||document.getElementById('flagBtn')||document.getElementById('qFlag');if(!flag)return;flag.after(open);open.classList.add('mbu-calc-inline');open.hidden=false},
   hide(){closeCalculator();open.hidden=true;open.classList.remove('mbu-calc-inline');document.body.appendChild(open)}
 };
 
