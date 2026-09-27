@@ -4,15 +4,19 @@
 .mbu-skip-link:focus{transform:none}
 .mbu-modal-open{overflow:hidden}
 
-.mbu-global-nav__utilities{display:flex;align-items:center;gap:8px;margin-left:auto}
-.mbu-global-nav__tools,.mbu-global-nav__cloud,.mbu-global-nav__search{flex:none;min-height:38px;padding:7px 11px;border:1px solid #cbd5e0;border-radius:10px;background:#fff;color:#1a365d;font:750 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;cursor:pointer;transition:background .16s ease,border-color .16s ease,box-shadow .16s ease,transform .16s ease}
-.mbu-global-nav__cloud{display:inline-flex;align-items:center;gap:7px;background:#f8fafc}
-.mbu-global-nav__cloud:hover,.mbu-global-nav__tools:hover,.mbu-global-nav__search:hover{border-color:#a0aec0;background:#f7fafc;box-shadow:0 2px 8px #1a365d12}
-.mbu-global-nav__cloud:active,.mbu-global-nav__tools:active,.mbu-global-nav__search:active{transform:translateY(1px)}
-.mbu-global-nav__cloud[data-state="error"]{border-color:#feb2b2;color:#9b2c2c;background:#fff5f5}
+.mbu-global-nav__utilities{display:flex;align-items:center;gap:4px;margin-left:auto}
+.mbu-global-nav__tools,.mbu-global-nav__cloud,.mbu-global-nav__search{
+  flex:none;min-height:36px;padding:7px 9px;border:1px solid transparent;border-radius:9px;
+  background:#fff;color:#475569;font:700 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  cursor:pointer;transition:background .14s ease,color .14s ease,border-color .14s ease
+}
+.mbu-global-nav__cloud{display:inline-flex;align-items:center;gap:6px}
+.mbu-global-nav__cloud:hover,.mbu-global-nav__tools:hover,.mbu-global-nav__search:hover{background:#f1f5f9;color:#1e3a5f}
+.mbu-global-nav__cloud:active,.mbu-global-nav__tools:active,.mbu-global-nav__search:active{background:#e8eef5}
+.mbu-global-nav__cloud[data-state="error"]{color:#9b2c2c;background:#fff5f5}
 .mbu-global-nav__cloud[data-state="syncing"] .mbu-status-dot{animation:mbu-pulse 1s ease-in-out infinite}
 .mbu-global-nav__cloud:not([data-state="signed-out"]):not([data-state="unavailable"]):not([data-state="error"]) .mbu-status-dot{background:#2f855a}
-.mbu-status-dot{display:inline-block;width:9px;height:9px;border-radius:999px;background:#a0aec0;box-shadow:0 0 0 2px #fff}
+.mbu-status-dot{display:inline-block;width:8px;height:8px;border-radius:999px;background:#a0aec0;box-shadow:0 0 0 2px #fff}
 .mbu-global-nav__tools:focus-visible,.mbu-global-nav__cloud:focus-visible,.mbu-global-nav__search:focus-visible,.mbu-app-tools button:focus-visible,.mbu-account-panel button:focus-visible,.mbu-app-tools input:focus-visible,.mbu-account-panel input:focus-visible,.mbu-account-panel select:focus-visible,.mbu-account-panel textarea:focus-visible,.mbu-tools-details summary:focus-visible{outline:3px solid #2b6cb0;outline-offset:2px}
 
 .mbu-account-legal,.srna-legal-footer{font:600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#718096}
@@ -24,13 +28,12 @@
 @keyframes mbu-pulse{0%,100%{opacity:.45}50%{opacity:1}}
 @keyframes mbu-fade-in{from{opacity:.4;transform:translateY(2px)}to{opacity:1;transform:none}}
 
-@media(max-width:1100px){
+@media(max-width:900px){
   .mbu-global-nav__utilities{margin-left:0}
-  .mbu-global-nav__cloud [data-cloud-chip-label]{max-width:125px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 }
 @media(max-width:700px){
-  .mbu-global-nav{flex-wrap:wrap}
-  .mbu-global-nav__utilities{display:grid;grid-template-columns:auto minmax(0,1fr) auto;flex:1 0 100%;width:100%;gap:6px;margin-left:0}
+  .mbu-global-nav__utilities{gap:2px;margin-left:auto}
+  .mbu-global-nav__tools,.mbu-global-nav__cloud,.mbu-global-nav__search{min-height:34px;padding:6px 8px;font-size:12px}
   .mbu-global-nav__search,.mbu-global-nav__cloud,.mbu-global-nav__tools{min-width:0;padding:7px 8px}
   .mbu-global-nav__cloud{justify-content:center;overflow:hidden}
   .mbu-global-nav__cloud [data-cloud-chip-label]{max-width:none;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px}
