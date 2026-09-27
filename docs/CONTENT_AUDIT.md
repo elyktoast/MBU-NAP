@@ -128,7 +128,7 @@ This removes legacy variations such as `.pdf · 12`, `Slides 12, 13`, and mixed 
 
 ### Difficulty metadata
 
-Static Easy/Moderate/Hard labels were intentionally not assigned in Phase 2. There is no authoritative difficulty source in the canonical content, and guessing difficulty would create subjective metadata. SNAR Study Tool already has real performance data that can support an empirical difficulty model later if desired.
+Static Easy/Moderate/Hard labels were intentionally not assigned in Phase 2. There is no authoritative difficulty source in the canonical content, and guessing difficulty would create subjective metadata. SRNA Study Tool already has real performance data that can support an empirical difficulty model later if desired.
 
 ## Content-quality scorecard after Phases 1–2
 
@@ -170,13 +170,9 @@ CI now fails when canonical content has:
 
 The deterministic semantic audit requires no paid AI service.
 
-## Next phases
+## Phase status
 
-Phase 3 is the source-verified duplicate/contradiction cleanup. It should not change answer keys unless the authoritative lecture/source material supports the correction.
-
-Phase 4 is question-quality refinement: explanation quality, distractors, ambiguous wording, answer-choice clues, units, and abbreviations.
-
-Phase 5 is coverage/rebuild work, especially replacing repetitive Hazards Set 2 content from authoritative material and balancing topic coverage.
+Phases 3–5 are complete. Future content work should focus on source-verified reports from testers and the retained heuristic review queues rather than treating heuristic flags as automatic defects.
 
 ## Phase 3–5: source-grounded content rebuild
 
