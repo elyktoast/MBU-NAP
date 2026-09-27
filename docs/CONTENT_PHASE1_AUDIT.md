@@ -52,14 +52,14 @@ Set 2 remains the largest known repetition problem. It contains **35 unique norm
 Phase 2 resolved the major metadata gap. All questions now use the canonical topic taxonomy:
 
 - Monitoring
-- Medical Gas
+- Medical Gases
 - CO₂ & Scavenging
 - Airway
 - Hazards & Safety
 
 Bank 1's 500 questions were classified from their existing source metadata and citation families without changing question content or answer keys.
 
-Citations were normalized to a consistent `Source · locator` presentation while retaining the original source locator information. Every canonical question also now carries structured `sourceMeta` and `sourceTitle` fields; the audit found **0 structured-source metadata gaps**.
+Citations were normalized to a consistent `Source · locator` presentation while preserving the underlying source and locator information in structured metadata. Every canonical question also now carries `sourceMeta`, `sourceTitle`, and `sourceLocator`; the audit found **0 structured-source metadata gaps**.
 
 ## Difficulty metadata
 
