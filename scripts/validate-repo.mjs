@@ -807,7 +807,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  const privacy=read('privacy.html'),terms=read('terms.html'),cloud=read('equipment/assets/supabase-sync.js'),core=read('equipment/assets/app-core.js'),adminPanel=read('equipment/assets/admin-panel.js'),studio=read('equipment/assets/studio-page.js');
  for(const token of ['random session identifier','approximately 24 hours','operator-admin','raw first-attempt CAT contribution rows'])if(!privacy.includes(token))fail('Privacy v5 disclosure missing '+token);
  for(const token of ['Account access, suspension, and termination','suspended or re-granted'])if(!terms.includes(token))fail('Terms v5 account-access disclosure missing '+token);
- for(const token of ['snar_guest_heartbeat','snar_account_access_status','adminAccounts','adminSetAccountAccess','adminDeleteAccount','guestSessionId','accountAccess'])if(!cloud.includes(token))fail('Admin/guest client contract missing '+token);
+ for(const token of ['snar_guest_heartbeat','snar_account_access_status','adminStatus','adminRpc','guestSessionId','accountAccess'])if(!cloud.includes(token))fail('Admin/guest client contract missing '+token);
  for(const token of ['Admin & Compliance','data-admin-stats','data-admin-accounts','data-admin-delete-account','Guests active ~15m','CAT users'])if(!adminPanel.includes(token))fail('Admin dashboard contract missing '+token);
  if(!core.includes("loadScript('admin-panel.js')")||!core.includes('data-admin-host'))fail('Lazy admin panel loader contract missing');
  if(!studio.includes("status.accessStatus==='active'"))fail('Adaptive Mode does not enforce active account access');
