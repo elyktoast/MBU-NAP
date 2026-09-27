@@ -93,12 +93,15 @@ async function updatePassword(password){
 function currentUser(){return session()?.user||null}
 async function deleteAccount(){
   const s=await validSession();if(!s?.access_token)throw Error('Sign in to delete your account.');
-  await api('/rest/v1/rpc/snar_delete_my_account',{method:'POST',body:{}});
+  await raw('/functions/v1/delete-account',{method:'POST',body:{},token:s.access_token});
   stopAutoSync();saveSession(null);remoteByKey.clear();calibrationByKey.clear();calibrationFetchedAt=0;emit('signed-out');return true
 }
 async function submitPrivacyRequest(requestType,details=''){
-  const result=await api('/rest/v1/rpc/snar_submit_privacy_request',{method:'POST',body:{p_request_type:String(requestType||''),p_details:String(details||'')}});
-  return Number(result)||0
+  const s=await validSession();if(!s?.user?.id)throw Error('Sign in to submit a privacy request.');
+  const type=String(requestType||'').toLowerCase();
+  if(!['access','correction','deletion','other'].includes(type))throw Error('Choose a valid privacy request type.');
+  const rows=await api('/rest/v1/snar_privacy_requests',{method:'POST',body:{user_id:s.user.id,request_type:type,details:String(details||'').slice(0,4000)},headers:{Prefer:'return=representation'}});
+  return Number(rows?.[0]?.id)||0
 }
 async function submitItemContribution(questionId,correct,responseMs=null,sessionMode='unknown'){
   const id=String(questionId||'').trim();if(!id)return false;
