@@ -113,6 +113,10 @@ The allowed source titles are:
 - **CO₂ Absorbents and Scavenging**
 - **Airway Equipment**
 - **Anesthesia Workstation Hazards & Safety**
+- **SRNA Equipment Study Guide**
+- **Exam 1 Study Guide**
+- **Exam 1 Basics Study Guide**
+- **Exam 1 Equipment Study Guide**
 
 This gives Search, analytics, future source verification, and semantic audits a stable source field without rewriting citations.
 
