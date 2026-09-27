@@ -52,7 +52,7 @@ Set 2 remains the largest known repetition problem. It contains **35 unique norm
 Phase 2 resolved the major metadata gap. All questions now use the canonical topic taxonomy:
 
 - Monitoring
-- Medical Gas
+- Medical Gases
 - CO₂ & Scavenging
 - Airway
 - Hazards & Safety
