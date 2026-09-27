@@ -14,11 +14,10 @@
     "bank1.json": {
       "count": 500,
       "topics": {
-        "Medical Gases": 173,
-        "Monitoring": 178,
-        "CO₂ & Scavenging": 90,
-        "Airway": 58,
-        "Hazards & Safety": 1
+        "Medical Gases": 181,
+        "Monitoring": 180,
+        "CO₂ & Scavenging": 85,
+        "Airway": 54
       },
       "averageExplanationLength": 213,
       "weakExplanations": [
@@ -680,10 +679,10 @@
     "bank3.json": {
       "count": 500,
       "topics": {
-        "Monitoring": 226,
-        "Medical Gases": 144,
-        "CO₂ & Scavenging": 84,
-        "Airway": 46
+        "Monitoring": 229,
+        "Medical Gases": 146,
+        "CO₂ & Scavenging": 83,
+        "Airway": 42
       },
       "averageExplanationLength": 259,
       "weakExplanations": [],
@@ -704,10 +703,10 @@
     "combined.json": {
       "count": 150,
       "topics": {
-        "CO₂ & Scavenging": 23,
-        "Medical Gases": 52,
-        "Hazards & Safety": 58,
-        "Airway": 17
+        "CO₂ & Scavenging": 31,
+        "Medical Gases": 65,
+        "Hazards & Safety": 38,
+        "Airway": 16
       },
       "averageExplanationLength": 176,
       "weakExplanations": [
@@ -801,7 +800,8 @@
     "hazards.json": {
       "count": 350,
       "topics": {
-        "Hazards & Safety": 350
+        "Hazards & Safety": 349,
+        "CO₂ & Scavenging": 1
       },
       "averageExplanationLength": 192,
       "weakExplanations": [
@@ -5945,7 +5945,7 @@
   "metadata": {
     "canonicalTopics": [
       "Monitoring",
-      "Medical Gas",
+      "Medical Gases",
       "CO₂ & Scavenging",
       "Airway",
       "Hazards & Safety"
