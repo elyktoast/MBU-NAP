@@ -1,0 +1,17 @@
+# Legal Change Log
+
+## 2026-09-27-v2
+- Established independent-resource Terms of Use and Privacy Notice.
+- Added explicit FERPA and HIPAA boundaries.
+- Added adult-account acknowledgement and versioned clickwrap.
+- Added account deletion and privacy-request workflows.
+- Added server-side legal acceptance evidence for authenticated accounts.
+- Added first-attempt-only Adaptive Mode calibration and a 25-user minimum before population calibration is exposed to clients.
+
+## 2026-09-27-v3
+- Added immutable legal-document snapshots and cryptographic hashes.
+- Added defined legal-record retention for pseudonymous assent evidence.
+- Added an operator-admin compliance role using server-side authorization.
+- Added privacy-request administration, legal-assent export, and high-level compliance/system summaries.
+- Added documented incident response, retention, data inventory, provider register, and legal-change procedures.
+- Strengthened CI checks tying legal versions, disclosures, providers, and data practices to implementation.
