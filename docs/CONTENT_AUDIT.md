@@ -19,7 +19,7 @@ Phase 1 audited all **2,000 canonical questions** without changing question cont
 - 151 exact normalized-stem reuse groups exist within the canonical content.
 - No exact normalized stem is duplicated across different banks.
 - No identical-stem + identical-option-pool group currently has conflicting keyed answers.
-- 41 high-similarity near-duplicate pairs were identified for later human review.
+- 35 high-similarity near-duplicate pairs were identified for later human review.
 - 114 explanations are shorter than 80 characters; only 2 are shorter than 40 characters.
 - 33 questions have a correct choice that is substantially longer than the average distractor and should be reviewed for answer-length clues.
 - Hazards Set 2 remains the largest known repetition problem: 65 duplicate occurrences are explicitly baselined.
@@ -58,7 +58,7 @@ Every question now has:
 - `sourceLocator`
 - `sourceMeta` with canonical source family and slide/PDF locator data when available
 
-The original display citation remains intact. Structured source metadata gives Search, auditing, and future generated-question/source verification a stable field without rewriting the educational content.
+Citation display text was normalized to a consistent `Source · locator` form while preserving the original slide/page locator information. Structured source metadata gives Search, auditing, and future generated-question/source verification stable fields without changing educational content.
 
 ### Difficulty
 
@@ -75,7 +75,7 @@ The semantic audit additionally detects exact duplicate reuse, same-option-pool 
 Phase 3 should focus on source-verified correctness:
 
 1. review Bank 1 known same-set duplicates;
-2. review the 41 near-duplicate pairs;
+2. review the 35 near-duplicate pairs;
 3. review the 33 answer-length-clue flags;
 4. verify the two very short explanations;
 5. resolve Hazards Set 2 repetition only from authoritative material.
