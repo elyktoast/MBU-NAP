@@ -598,7 +598,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const p of ['equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js'])if(!read(p).includes('touchStore'))fail(p+': save path is not sync-aware');
  const nav=read('equipment/assets/site-nav.js'),css=read('equipment/assets/app-core.css');
  if(!nav.includes('mountNav')||!core.includes('Skip to main content')||!css.includes(':focus-visible')||!css.includes('prefers-reduced-motion'))fail('Shared accessibility/tools contract is incomplete');
- for(const p of ['README.md','docs/ARCHITECTURE.md','docs/SYNC.md','docs/CONTENT_AUDIT.md','docs/QUESTION_GENERATION.md','CONTRIBUTING.md'])if(!exists(p))fail('Documentation missing '+p);
+ for(const p of ['README.md','docs/ARCHITECTURE.md','docs/SYNC.md','docs/CONTENT_AUDIT.md','docs/CONTENT_PHASE1_AUDIT.md','docs/QUESTION_GENERATION.md','reports/content-phase1-audit.json','CONTRIBUTING.md'])if(!exists(p))fail('Documentation missing '+p);
  if(!exists('scripts/content-integrity.mjs'))fail('Content integrity validator is missing');
 }
 
@@ -753,6 +753,22 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ["Number(d.lastSet)","recentActivity?.(100)","states.filter(x=>x.incomplete&&x.started)","href:b.page+'?set='+encodeURIComponent(pick.set)"])if(!dash.includes(token))fail('Exam dashboard Continue Studying contract missing '+token);
  if(!hazards.includes("topic:q.topic||q.lec||q.concept||'Workstation Hazards'"))fail('Standard Hazards loader drops topic metadata');
  if(!hazardsAdvanced.includes("topic:q.topic||q.lec||q.concept||'Workstation Hazards'"))fail('Advanced Hazards loader drops topic metadata');
+}
+
+// Content metadata normalization is a stable release contract.
+{
+ const allowed=new Set(['Monitoring','Medical Gas','CO₂ & Scavenging','Airway','Hazards & Safety']);
+ for(const p of ['bank1.json','bank2.json','bank3.json','combined.json','hazards.json']){
+   const payload=JSON.parse(read('equipment/exam-1/data/'+p)),qs=Array.isArray(payload)?payload:(payload.questions||[]);
+   for(const q of qs){
+     if(!allowed.has(String(q.topic||'')))fail(p+': non-canonical or missing topic '+String(q.topic||''));
+     const citation=String(q.citation||'');
+     if(!citation.includes(' · '))fail(p+': citation is not normalized for '+String(q.id||'unknown'));
+     if(/\.pdf\b|,\s*Slides?\b|:\s*slides?\b/i.test(citation))fail(p+': legacy citation formatting remains for '+String(q.id||'unknown'));
+   }
+ }
+ const report=JSON.parse(read('reports/content-phase1-audit.json'));
+ if(report?.scope?.questions!==2000||report?.metadata?.missingTopics!==0||report?.metadata?.legacyCitationFormatIssues!==0)fail('Phase 1/2 audit report does not match normalized metadata contract');
 }
 
 // Semantic content checking is mandatory in quality CI.
