@@ -200,7 +200,7 @@ function ensureAccountPanel(){
   const modal=document.getElementById('mbu-account-panel'),email=modal.querySelector('[data-cloud-email]'),password=modal.querySelector('[data-cloud-password]'),newPassword=modal.querySelector('[data-cloud-new-password]'),consent=modal.querySelector('[data-cloud-consent]'),message=modal.querySelector('[data-account-message]');
   const action=async fn=>{try{message.textContent='Working…';await fn();password.value='';message.textContent='';refreshAccount();await refreshTools()}catch(e){record('cloud-sync',e);message.textContent=e.message;refreshAccount()}};
   modal.querySelector('[data-cloud-signin]').onclick=()=>action(()=>MBUSupabase.signIn(email.value,password.value));
-  modal.querySelector('[data-cloud-signup]').onclick=()=>{if(!consent.checked){message.textContent='Confirm that you are 18+ and agree to the Terms and Privacy Notice before creating an account.';return}action(()=>MBUSupabase.signUp(email.value,password.value))};
+  modal.querySelector('[data-cloud-signup]').onclick=()=>{if(!consent.checked){message.textContent='Confirm that you are 18+ and agree to the Terms and Privacy Notice before creating an account.';return}action(()=>MBUSupabase.signUp(email.value,password.value,true))};
   modal.querySelector('[data-cloud-forgot]').onclick=()=>action(()=>MBUSupabase.requestPasswordReset(email.value));
   modal.querySelector('[data-cloud-resend]').onclick=()=>action(()=>MBUSupabase.resendConfirmation(email.value));
   modal.querySelector('[data-cloud-update-password]').onclick=()=>action(()=>MBUSupabase.updatePassword(newPassword.value));
