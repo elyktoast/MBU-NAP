@@ -23,7 +23,7 @@ Manifest flag:
 
 1. Source material is supplied by the user.
 2. A registered provider returns question drafts.
-3. Drafts are normalized into the MBU-NAP generated-question schema.
+3. Drafts are normalized into the SNAR Study Tool generated-question schema.
 4. Every draft must pass structural validation.
 5. The user reviews, edits, approves, or rejects the draft.
 6. Only approved questions are eligible to appear as the **Generated Bank** in Study Studio.
@@ -64,6 +64,6 @@ Generated drafts and approved questions use:
 
 `mbu_generated_questions_v1`
 
-The key is part of the normal MBU-NAP sync contract. Nothing is written until the generator framework is actually used.
+The key is part of the normal SNAR Study Tool sync contract. Nothing is written until the generator framework is actually used.
 
 Provider credentials or local endpoint settings are not stored in this generated-question store.
