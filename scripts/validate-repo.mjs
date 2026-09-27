@@ -201,7 +201,7 @@ checkHazardNavigators();
 
 {
  const nav=read('equipment/assets/site-nav.js');
- if(!nav.includes("sessionStorage.removeItem('mbu_build_manifest_v1')")||!nav.includes("u.searchParams.set('_mbu_refresh',Date.now().toString())")||!nav.includes('location.replace(u.href)'))fail('Site nav: MBU-NAP brand does not perform a cache-busting refresh');
+ if(!nav.includes("sessionStorage.removeItem('mbu_build_manifest_v1')")||!nav.includes("u.searchParams.set('_mbu_refresh',Date.now().toString())")||!nav.includes('location.replace(u.href)'))fail('Site nav: SNAR Study Tool brand does not perform a cache-busting refresh');
 }
 function checkCanonicalSubmission(){
   const engine=read('equipment/assets/quiz-engine.js');
