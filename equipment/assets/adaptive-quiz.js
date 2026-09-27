@@ -11,11 +11,17 @@ const logistic=x=>1/(1+Math.exp(-Math.max(-12,Math.min(12,x))));
 function tieRank(uid){let h=2166136261;for(const c of String(uid||'')){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
 function topicOf(q){return String(q?.topic||q?.lec||q?.concept||'Other').trim()||'Other'}
 function questionStats(uid){return window.MBUStudyIntelligence?.questionStats?.(uid)||null}
+function populationStats(uid){return window.MBUSupabase?.calibration?.(uid)||null}
 function topicStats(topic){return window.MBUStudyIntelligence?.topicStats?.(topic)||{attempts:0,accuracy:0}}
 function recentUids(limit=50){return new Set((window.MBUStudyIntelligence?.recentActivity?.(limit)||[]).map(x=>String(x.uid||'')))}
 function challenge(q){
   const a=questionStats(q?.uid),multi=(Array.isArray(q?.ans)?q.ans:Array.isArray(q?.answer)?q.answer:[]).length>1;
   let score=3+(multi?.65:0)+((q?.bank==='hh'||Number(q?.set)===7)?.7:0);
+  const pop=populationStats(q?.uid),learners=Number(pop?.unique_learners)||0;
+  if(learners>=25&&Number.isFinite(Number(pop?.difficulty_logit))){
+    const populationScore=clampLevel(3+clampLogit(pop.difficulty_logit)/1.25),weight=learners>=300?.8:learners>=100?.6:.35;
+    score=score*(1-weight)+populationScore*weight
+  }
   const topic=topicStats(topicOf(q));
   if(topic.attempts>=4)score+=(.5-(topic.accuracy/100))*1.2;
   if(a&&Number(a.attempts)>0){
