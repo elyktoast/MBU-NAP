@@ -130,6 +130,12 @@ await raw('/functions/v1/snar-delete-account',{method:'POST',body:{},token:s.acc
 await clearTrackedLocalData();localStorage.removeItem(OWNER_KEY);
 resetCloudSession();localStorage.removeItem(META_KEY);localStorage.removeItem(OWNER_KEY);return true
 }
+async function submitSuggestion(category,message){
+requireAccountAccess();
+const cleaned=String(message||'').trim();if(cleaned.length<3)throw Error('Enter a suggestion before sending.');if(cleaned.length>1500)throw Error('Suggestion must be 1500 characters or fewer.');
+const id=await api('/rest/v1/rpc/snar_submit_suggestion',{method:'POST',body:{p_category:String(category||'idea'),p_message:cleaned}});
+return Number(id)||0
+}
 async function submitPrivacyRequest(requestType,details=''){
 const s=await validSession();if(!s?.user?.id)throw Error('Sign in to submit a privacy request.');
 const type=String(requestType||'').toLowerCase();
@@ -264,7 +270,7 @@ await refreshAccountAccess();if(accountAccess!=='active'){emit('access-suspended
 stopGuestHeartbeat();startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100);return true
 }
 window.addEventListener('hashchange',()=>handleAuthRedirect().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth redirect failed',e)}));
-window.MBUSupabase={signIn,signUp,signOut,deleteAccount,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,refreshLegalAcceptance,refreshAccountAccess,acceptCurrentLegal,submitPrivacyRequest,submitItemContribution,refreshCalibration,calibration,listDevices,removeDevice,listHistory,restoreVersion,adminStatus,adminRpc,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
+window.MBUSupabase={signIn,signUp,signOut,deleteAccount,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,refreshLegalAcceptance,refreshAccountAccess,acceptCurrentLegal,submitPrivacyRequest,submitSuggestion,submitItemContribution,refreshCalibration,calibration,listDevices,removeDevice,listHistory,restoreVersion,adminStatus,adminRpc,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
 const authReady=(async()=>{
 if(await handleAuthRedirect())return true;
 if(session()){
