@@ -4412,10 +4412,10 @@
       "type": "single",
       "stem": "What sequence begins the risk-management process described in the workstation hazards section?",
       "options": [
-        "Apply solutions before defining the problem",
-        "Define problems, estimate likelihood, weigh resources, apply solutions, then monitor",
-        "Monitor first and estimate likelihood only after an event",
-        "Assign blame, then replace equipment"
+        "Define the problem, apply a solution immediately, and estimate likelihood only after the intervention",
+        "Define problems, estimate likelihood, weigh resources, apply solutions, and then monitor the result",
+        "Monitor the system first, estimate likelihood from alarms, and define the problem after equipment is replaced",
+        "Assign responsibility, remove the suspected device, and perform risk analysis only if the event recurs"
       ],
       "answer": [
         1
@@ -4508,10 +4508,10 @@
       "type": "single",
       "stem": "Which problem is an upstream hypoxemia hazard before gas reaches the workstation?",
       "options": [
-        "Exhausted soda lime",
-        "A hospital oxygen reservoir filled with nitrogen",
-        "A kinked scavenger hose",
-        "A closed APL valve"
+        "An exhausted carbon-dioxide absorbent in the circle system",
+        "A hospital oxygen reservoir that is empty or has been filled with nitrogen",
+        "A kinked scavenging hose downstream of the breathing circuit",
+        "A closed adjustable pressure-limiting valve during spontaneous ventilation"
       ],
       "answer": [
         1
@@ -4604,10 +4604,10 @@
       "type": "single",
       "stem": "What is the most common hypercarbia hazard identified in the workstation hazards section?",
       "options": [
-        "Forgetting to start the ventilator after intubation",
-        "Using a pulse oximeter",
-        "Opening the APL valve",
-        "Using a fresh absorbent canister"
+        "Failure to start or continue controlled ventilation after tracheal intubation",
+        "A small leak around the pulse-oximeter probe during patient movement",
+        "Opening the adjustable pressure-limiting valve during spontaneous breathing",
+        "Using fresh carbon-dioxide absorbent with adequate fresh gas flow"
       ],
       "answer": [
         0
@@ -4636,10 +4636,10 @@
       "type": "single",
       "stem": "Which equipment change can increase PaCO₂ by increasing apparatus dead space?",
       "options": [
-        "Adding unnecessary connectors between the patient and Y-piece",
-        "Removing an HME",
-        "Opening the oxygen cylinder",
-        "Turning on active scavenging"
+        "Adding extra connectors or devices between the patient and the Y-piece, increasing apparatus dead space",
+        "Removing a heat-moisture exchanger from the patient connection, reducing apparatus dead space",
+        "Opening the backup oxygen cylinder while the central pipeline remains connected and functional",
+        "Increasing active scavenging suction while the scavenging interface remains open to room air"
       ],
       "answer": [
         0
@@ -4988,10 +4988,10 @@
       "type": "single",
       "stem": "What backup-battery duration is emphasized for anesthesia workstations?",
       "options": [
-        "About 5 minutes only",
-        "About 40 minutes, with some machines lasting 1–2 hours",
-        "Exactly 8 hours for every model",
-        "Battery operation is unlimited"
+        "Approximately 5 minutes on every workstation, regardless of manufacturer or battery condition",
+        "Approximately 40 minutes on one lecture example, with some machines lasting 1–2 hours depending on model",
+        "Exactly 8 hours because anesthesia workstations use a standardized battery-capacity requirement",
+        "Battery duration is effectively unlimited as long as the oxygen pipeline remains pressurized"
       ],
       "answer": [
         1
@@ -5180,10 +5180,10 @@
       "type": "single",
       "stem": "How does direct current compare with alternating current in the guide's ventricular-fibrillation discussion?",
       "options": [
-        "DC requires about three times more current than AC to cause ventricular fibrillation",
-        "DC is always harmless",
-        "AC cannot cause ventricular fibrillation",
-        "DC requires one-third the current of AC"
+        "Direct current generally requires about three times more current than alternating current to produce ventricular fibrillation",
+        "Direct current is electrically harmless because only alternating current can stimulate excitable tissue",
+        "Alternating current cannot produce ventricular fibrillation at clinical voltages because impedance prevents current flow",
+        "Direct current requires about one-third the current of alternating current because it has no capacitive component"
       ],
       "answer": [
         0
@@ -5276,10 +5276,10 @@
       "type": "single",
       "stem": "Why does electrosurgical-unit current not normally trigger ventricular fibrillation directly?",
       "options": [
-        "Its radiofrequency is too high to excite myocardial cells",
-        "It is direct current only",
-        "It never passes through the patient",
-        "The return pad blocks all current"
+        "Its 500 kHz–1 MHz radiofrequency is too high to directly excite myocardial cells in the way low-frequency current can",
+        "It produces only direct current, which cannot pass through conductive human tissue at electrosurgical voltages",
+        "Its current never enters the patient because all energy remains confined to the active pencil and return cable",
+        "The return pad cancels all current before it can reach the myocardium, regardless of pad placement or contact"
       ],
       "answer": [
         0
@@ -5308,10 +5308,10 @@
       "type": "single",
       "stem": "Why is the electrosurgical active tip small while the return pad is large?",
       "options": [
-        "To concentrate current density at the surgical tip and disperse it at the return pad",
-        "To make current density identical at both sites",
-        "To increase current density under the return pad",
-        "To eliminate the need for a return pathway"
+        "The small active tip concentrates current for tissue effect while the broad return pad disperses current to limit heating",
+        "The small active tip lowers current density while the broad return pad concentrates current to improve coagulation",
+        "Both electrodes are designed to create identical current density so heating occurs evenly at two separate sites",
+        "The return pad blocks current from leaving the patient, while the active tip provides the only electrical pathway"
       ],
       "answer": [
         0
@@ -5372,10 +5372,10 @@
       "type": "single",
       "stem": "Which devices may be affected by electrosurgical interference?",
       "options": [
-        "Only the temperature probe",
-        "ECG, pulse oximetry, cardiac-output monitors, and pacemakers",
-        "Only the oxygen cylinder gauge",
-        "Only the scavenging interface"
+        "ECG, pulse oximetry, cardiac-output monitors, and implanted pacemakers can all be affected by electrosurgical interference",
+        "Only temperature probes and noninvasive blood-pressure cuffs are susceptible because they use low-frequency signals",
+        "Only the oxygen analyzer is affected because electrosurgery alters the galvanic fuel-cell reaction used for oxygen sensing",
+        "Only the scavenging interface is affected because radiofrequency current changes disposal-line suction pressure"
       ],
       "answer": [
         1
@@ -5404,10 +5404,10 @@
       "type": "single",
       "stem": "Why should alcohol- or acetone-based skin preparation be allowed to dry before electrosurgery?",
       "options": [
-        "Wet preparation can serve as fire fuel near an ignition source",
-        "It causes hypercarbia",
-        "It raises pipeline pressure",
-        "It disables the oxygen analyzer"
+        "Wet alcohol- or acetone-based preparation can remain a combustible fuel when an electrosurgical ignition source is activated",
+        "Wet preparation increases carbon-dioxide production and therefore raises the risk of hypercarbia during electrosurgery",
+        "Wet preparation raises oxygen-pipeline pressure and can trigger the machine fail-safe valve during cautery activation",
+        "Wet preparation electrically isolates the patient and prevents the return pad from completing the electrosurgical circuit"
       ],
       "answer": [
         0
@@ -5436,10 +5436,10 @@
       "type": "single",
       "stem": "After total electrical power and battery power are lost, which inhaled-anesthetic device can still function?",
       "options": [
-        "Only a mechanical variable-bypass vaporizer with an available gas source",
-        "Tec 6 desflurane vaporizer",
-        "GE Aladin cassette",
-        "Any electronic vaporizer"
+        "A mechanical variable-bypass vaporizer can still function if an appropriate pressurized gas source remains available",
+        "A Tec 6 desflurane vaporizer continues normally because it stores enough heat and pressure for the remainder of the case",
+        "A GE Aladin cassette continues at its previous setting because the magnetic agent code does not require electrical power",
+        "Any electronic vaporizer continues as long as pipeline oxygen pressure remains above the fail-safe activation threshold"
       ],
       "answer": [
         0
@@ -6304,10 +6304,10 @@
       "type": "single",
       "stem": "Which occupational-exposure limits match the study guide?",
       "options": [
-        "Nitrous oxide 25 ppm TWA; halogenated agent 2 ppm alone and 0.5 ppm when combined with nitrous oxide",
-        "Nitrous oxide 100 ppm; all halogenated agents 25 ppm",
-        "Nitrous oxide 2 ppm; halogenated agents 50 ppm",
-        "No limits are recommended"
+        "Nitrous oxide 25 ppm TWA; halogenated agent 2 ppm when used alone and 0.5 ppm when combined with nitrous oxide",
+        "Nitrous oxide 50 ppm TWA; halogenated agent 25 ppm alone and 10 ppm when combined with nitrous oxide",
+        "Nitrous oxide 2 ppm TWA; halogenated agent 0.5 ppm alone and 25 ppm when combined with nitrous oxide",
+        "Nitrous oxide 100 ppm TWA; halogenated agents have no recommended occupational exposure limits"
       ],
       "answer": [
         0
@@ -6464,10 +6464,10 @@
       "type": "single",
       "stem": "Why should the backup oxygen cylinder be closed after the machine check when a functioning pipeline is available?",
       "options": [
-        "Leaving it open can let it drain silently during pipeline failure and hide loss of the primary source until the cylinder empties",
-        "Closing it permanently disables all oxygen alarms",
-        "An open cylinder always raises pipeline pressure above 100 psi",
-        "An open cylinder forces the vaporizer into bypass mode"
+        "An open backup cylinder can drain silently during a pipeline failure, delaying recognition until the cylinder reserve is exhausted",
+        "An open backup cylinder automatically raises machine pressure above the pipeline and triggers the oxygen fail-safe immediately",
+        "Closing the backup cylinder is required because an open cylinder disables the inspired-oxygen analyzer during normal pipeline use",
+        "Closing the backup cylinder forces the machine into low-pressure operation and protects variable-bypass vaporizers from pumping"
       ],
       "answer": [
         0
