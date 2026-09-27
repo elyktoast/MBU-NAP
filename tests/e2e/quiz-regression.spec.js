@@ -1361,9 +1361,9 @@ test.describe('canonical quiz regression', () => {
     const result=await page.evaluate(async()=>{
       const key='SRNA_COMBINED_EXAM_SET_1_2026_V1',local='{"local":true}',remote='{"remote":true}',device=MBUSync.deviceId();
       localStorage.setItem(key,local);localStorage.setItem('mbu_sync_meta_v1',JSON.stringify({[key]:{revision:2,updatedAt:200,deviceId:device}}));
-      const older=await MBUSync.importSnapshot({app:'MBU-NAP',schema:1,createdAt:100,deviceId:'other',stores:{[key]:remote},meta:{[key]:{revision:1,updatedAt:100,deviceId:'other'}}});
+      const older=await MBUSync.importSnapshot({app:'SNAR Study Tool',schema:1,createdAt:100,deviceId:'other',stores:{[key]:remote},meta:{[key]:{revision:1,updatedAt:100,deviceId:'other'}}});
       const afterOlder=localStorage.getItem(key);
-      const newer=await MBUSync.importSnapshot({app:'MBU-NAP',schema:1,createdAt:300,deviceId:'other',stores:{[key]:remote},meta:{[key]:{revision:3,updatedAt:300,deviceId:'other'}}});
+      const newer=await MBUSync.importSnapshot({app:'SNAR Study Tool',schema:1,createdAt:300,deviceId:'other',stores:{[key]:remote},meta:{[key]:{revision:3,updatedAt:300,deviceId:'other'}}});
       return{older,newer,afterOlder,afterNewer:localStorage.getItem(key)}
     });
     expect(result.older.imported).toBe(0);expect(result.afterOlder).toBe('{"local":true}');
@@ -1737,7 +1737,7 @@ test.describe('canonical quiz regression', () => {
       localStorage.setItem(key,'{"legacyLocal":true}');
       localStorage.setItem('mbu_sync_meta_v1',JSON.stringify({[key]:{revision:9,updatedAt:500,deviceId:device}}));
       const merge=await MBUSync.importSnapshot({
-        app:'MBU-NAP',schema:1,createdAt:100,deviceId:'cloud',
+        app:'SNAR Study Tool',schema:1,createdAt:100,deviceId:'cloud',
         stores:{[key]:'{"olderCloud":true}'},
         meta:{[key]:{revision:2,updatedAt:100,deviceId:'cloud',serverRevision:8}}
       });
@@ -1755,7 +1755,7 @@ test.describe('canonical quiz regression', () => {
       localStorage.setItem(key,'{"local":true}');
       localStorage.setItem('mbu_sync_meta_v1',JSON.stringify({[key]:{revision:20,updatedAt:900,deviceId:device,serverRevision:4}}));
       const merge=await MBUSync.importSnapshot({
-        app:'MBU-NAP',schema:1,createdAt:100,deviceId:'cloud',
+        app:'SNAR Study Tool',schema:1,createdAt:100,deviceId:'cloud',
         stores:{[key]:'{"cloud":true}'},
         meta:{[key]:{revision:2,updatedAt:100,deviceId:'cloud',serverRevision:5}}
       });
