@@ -65,8 +65,9 @@ async function signIn(email,password){
   emit('signing-in');const data=await raw('/auth/v1/token?grant_type=password',{method:'POST',body:{email:String(email||'').trim(),password:String(password||'')}});
   const s=normalizeAuth(data);if(!s)throw Error('Supabase did not return a session.');saveSession(s);emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});startAutoSync();return s
 }
-async function signUp(email,password){
-  emit('signing-up');const data=await raw('/auth/v1/signup?redirect_to='+encodeURIComponent(APP_ROOT),{method:'POST',body:{email:String(email||'').trim(),password:String(password||''),data:{snar_terms_version:'2026-09-27',snar_privacy_version:'2026-09-27',snar_adult_ack:true}}}),s=normalizeAuth(data);
+async function signUp(email,password,accepted=false){
+  if(accepted!==true)throw Error('You must confirm that you are 18+ and agree to the Terms and Privacy Notice before creating an account.');
+  const acceptedAt=new Date().toISOString();emit('signing-up');const data=await raw('/auth/v1/signup?redirect_to='+encodeURIComponent(APP_ROOT),{method:'POST',body:{email:String(email||'').trim(),password:String(password||''),data:{snar_terms_version:'2026-09-27',snar_privacy_version:'2026-09-27',snar_adult_ack:true,snar_accepted_at:acceptedAt}}}),s=normalizeAuth(data);
   if(s){saveSession(s);emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});startAutoSync();return{session:s,confirmationRequired:false}}
   emit('confirmation-required',{email:String(email||'').trim()});return{session:null,confirmationRequired:true}
 }
@@ -99,7 +100,7 @@ async function deleteAccount(){
 async function submitPrivacyRequest(requestType,details=''){
   const s=await validSession();if(!s?.user?.id)throw Error('Sign in to submit a privacy request.');
   const type=String(requestType||'').toLowerCase();
-  if(!['access','correction','export','deletion','other'].includes(type))throw Error('Choose a valid privacy request type.');
+  if(!['access','correction','deletion','other'].includes(type))throw Error('Choose a valid privacy request type.');
   const rows=await api('/rest/v1/snar_privacy_requests',{method:'POST',body:{user_id:s.user.id,request_type:type,details:String(details||'').slice(0,4000)},headers:{Prefer:'return=representation'}});
   return Number(rows?.[0]?.id)||0
 }
