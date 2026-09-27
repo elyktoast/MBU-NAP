@@ -3,6 +3,9 @@ const { expect } = require('@playwright/test');
 const exam = '/equipment/exam-1';
 
 async function clearAppState(page) {
+  await page.route('https://xqyasyambwdyhsjkftqu.supabase.co/rest/v1/rpc/snar_has_current_legal_acceptance', route =>
+    route.fulfill({ status: 200, contentType: 'application/json', body: 'true' })
+  );
   await page.addInitScript(() => {
     const now=Math.floor(Date.now()/1000);
     localStorage.setItem('snar_legal_acceptance_v2', JSON.stringify({version:'2026-09-27-v2',acceptedAt:new Date().toISOString()}));
@@ -17,8 +20,10 @@ async function clearAppState(page) {
   await page.evaluate(() => window.MBUPageReady);
   await page.evaluate(() => {
     const auth=localStorage.getItem('mbu_supabase_session_v1');
+    const legal=localStorage.getItem('snar_legal_acceptance_v2');
     localStorage.clear();sessionStorage.clear();
     if(auth)localStorage.setItem('mbu_supabase_session_v1',auth);
+    if(legal)localStorage.setItem('snar_legal_acceptance_v2',legal);
   });
 }
 
