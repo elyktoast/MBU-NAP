@@ -24,8 +24,12 @@ function topicStatsSnapshot(){
 }
 function recentUids(limit=50){return new Set((window.MBUStudyIntelligence?.recentActivity?.(limit)||[]).map(x=>String(x.uid||'')))}
 function recentContentKeys(questions,limit=50){
-  const recent=recentUids(limit),keys=new Set();
-  for(const q of questions)if(q?.uid&&recent.has(String(q.uid)))keys.add(contentKey(q));
+  const recent=recentUids(limit),keys=new Set(),byUid=new Map((questions||[]).filter(q=>q?.uid).map(q=>[String(q.uid),q]));
+  for(const uid of recent){
+    const saved=questionStats(uid),q=byUid.get(uid);
+    if(saved?.stem)keys.add(contentKey({stem:saved.stem,uid}));
+    else if(q)keys.add(contentKey(q))
+  }
   return keys
 }
 function challenge(q,topicCache=null){

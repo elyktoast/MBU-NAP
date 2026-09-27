@@ -2174,7 +2174,7 @@ test.describe('canonical quiz regression', () => {
       const originalRecent=MBUStudyIntelligence.recentActivity;
       const originalStats=MBUStudyIntelligence.questionStats;
       MBUStudyIntelligence.recentActivity=()=>[{uid:recentVariant.uid}];
-      MBUStudyIntelligence.questionStats=()=>null;
+      MBUStudyIntelligence.questionStats=uid=>String(uid)===String(recentVariant.uid)?{uid,stem:recentVariant.stem,attempts:1}:null;
       const pool=[...rest,alternative];
       const state=MBUAdaptiveQuiz.normalize({theta:0,maxQuestions:1,poolUids:pool.map(q=>q.uid),seenContentKeys:[]},1);
       const picked=MBUAdaptiveQuiz.pick(pool,state).question;
