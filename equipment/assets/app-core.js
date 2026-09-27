@@ -135,8 +135,9 @@ function updateCloudChip(){
 const b=Q('.mbu-global-nav__cloud');if(!b)return;
 const info=window.MBUSupabase?.status?.()||{signedIn:false,state:'unavailable'},label=b.querySelector('[data-cloud-chip-label]');
 b.dataset.state=info.state||'signed-out';
-label.textContent=!info.signedIn?'Cloud: Signed out':info.legalAccepted!==true?'Cloud: Action required':info.accessStatus==='suspended'?'Cloud: Suspended':info.state==='syncing'?'Cloud: Syncing':info.state==='error'?'Cloud: Error':'Cloud: Synced';
-b.title=info.signedIn?(info.email||'Account')+' · '+cloudStatusText(info):'Sign in for cloud sync';
+label.textContent='Account';
+const status=!info.signedIn?'Signed out':info.legalAccepted!==true?'Action required':info.accessStatus==='suspended'?'Suspended':info.state==='syncing'?'Syncing':info.state==='error'?'Sync error':'Synced';
+b.title=info.signedIn?(info.email||'Account')+' · '+status:'Account · Signed out';
 b.setAttribute('aria-label',b.title)
 }
 async function refreshTools(){
@@ -238,7 +239,7 @@ function mountNav(nav){
 if(!nav||nav.querySelector('.mbu-global-nav__utilities'))return;
 const utilities=E('div');utilities.className='mbu-global-nav__utilities';
 const search=E('button');search.type='button';search.className='mbu-global-nav__search';search.textContent='Search';search.setAttribute('aria-label','Search all questions');search.onclick=async()=>{await ensurePanelStyles();window.MBUQuestionSearch?.open?.(search)};
-const cloud=E('button');cloud.type='button';cloud.className='mbu-global-nav__cloud';cloud.innerHTML='<span class="mbu-status-dot" aria-hidden="true"></span><span data-cloud-chip-label>Cloud: Signed out</span>';cloud.onclick=()=>openAccount(cloud);
+const cloud=E('button');cloud.type='button';cloud.className='mbu-global-nav__cloud';cloud.innerHTML='<span class="mbu-status-dot" aria-hidden="true"></span><span data-cloud-chip-label>Account</span>';cloud.onclick=()=>openAccount(cloud);
 const tools=E('button');tools.type='button';tools.className='mbu-global-nav__tools';tools.textContent='Tools';tools.setAttribute('aria-label','Open tools and diagnostics');tools.onclick=()=>openTools(tools);
 utilities.append(search,cloud,tools);nav.append(utilities);updateCloudChip()
 }
