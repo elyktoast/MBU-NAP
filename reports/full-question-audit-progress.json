@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 1266,
+    "audited": 1366,
     "bank2": [
       {
         "id": "S2-021",
@@ -1168,6 +1168,424 @@
         "changes": [
           "re-sourced the dye-for-cuff-rupture rationale to the textbook, which explicitly supports it."
         ]
+      },
+      {
+        "id": "S2-094",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-095",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-096",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-098",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-100",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-001",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-002",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-004",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-005",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected the canonical source from Medical Gas Systems slide 34 to Monitoring slide 11, which explicitly requires inspired oxygen analysis."
+        ]
+      },
+      {
+        "id": "S3-006",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-007",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-008",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-009",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed an extra unsupported warning about submandibular soft-tissue compression and kept the explanation to the lecture wording."
+        ]
+      },
+      {
+        "id": "S3-010",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-011",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-012",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-013",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-014",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-016",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-017",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-018",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-019",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-020",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-022",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-023",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-024",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-025",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-026",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-027",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-028",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-029",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-030",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-031",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-032",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-034",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-035",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-036",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-037",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-040",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-041",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-042",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-043",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-044",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected the canonical source from Medical Gas Systems slide 34 to Monitoring slide 11, which explicitly requires inspired oxygen analysis."
+        ]
+      },
+      {
+        "id": "S3-045",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-046",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-049",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-050",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-051",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-052",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-053",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-054",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-056",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected the interlock citation from slide 60 to slides 59 and 73."
+        ]
+      },
+      {
+        "id": "S3-057",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-059",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-060",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-061",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-062",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-063",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-064",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-065",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-066",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-067",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-069",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-070",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-071",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-072",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-073",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-074",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-075",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-077",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-078",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced the combined 0.5 ppm halogenated-agent plus 25 ppm N2O limits to Nurse Anesthesia 7e."
+        ]
+      },
+      {
+        "id": "S3-079",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-080",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-081",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-082",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-083",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-084",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-085",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-086",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-089",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-090",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-091",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-092",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-094",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-095",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-097",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-098",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S3-100",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-001",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-002",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-003",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-004",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-005",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected the canonical source from Medical Gas Systems slide 34 to Monitoring slide 11, which explicitly requires inspired oxygen analysis."
+        ]
+      },
+      {
+        "id": "S4-006",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-007",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-008",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-009",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-010",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-011",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-012",
+        "disposition": "PASS"
       }
     ],
     "bank1": [
@@ -5606,118 +6024,117 @@
       }
     ]
   },
-  "remaining": 734,
+  "remaining": 634,
   "lastBatch": {
     "bank": "bank2.json",
     "audited": 100,
     "ids": [
-      "S1-086",
-      "S1-087",
-      "S1-088",
-      "S1-089",
-      "S1-090",
-      "S1-091",
-      "S1-092",
-      "S1-093",
-      "S1-094",
-      "S1-095",
-      "S1-096",
-      "S1-097",
-      "S1-098",
-      "S1-099",
-      "S1-100",
-      "S2-001",
-      "S2-002",
-      "S2-003",
-      "S2-004",
-      "S2-005",
-      "S2-006",
-      "S2-007",
-      "S2-008",
-      "S2-009",
-      "S2-010",
-      "S2-011",
-      "S2-013",
-      "S2-014",
-      "S2-015",
-      "S2-016",
-      "S2-017",
-      "S2-018",
-      "S2-019",
-      "S2-020",
-      "S2-022",
-      "S2-023",
-      "S2-024",
-      "S2-025",
-      "S2-026",
-      "S2-027",
-      "S2-028",
-      "S2-029",
-      "S2-030",
-      "S2-031",
-      "S2-032",
-      "S2-033",
-      "S2-034",
-      "S2-035",
-      "S2-036",
-      "S2-037",
-      "S2-038",
-      "S2-040",
-      "S2-041",
-      "S2-042",
-      "S2-043",
-      "S2-045",
-      "S2-046",
-      "S2-047",
-      "S2-048",
-      "S2-049",
-      "S2-050",
-      "S2-051",
-      "S2-052",
-      "S2-053",
-      "S2-054",
-      "S2-055",
-      "S2-056",
-      "S2-057",
-      "S2-059",
-      "S2-060",
-      "S2-061",
-      "S2-062",
-      "S2-063",
-      "S2-065",
-      "S2-066",
-      "S2-067",
-      "S2-068",
-      "S2-069",
-      "S2-070",
-      "S2-071",
-      "S2-072",
-      "S2-073",
-      "S2-074",
-      "S2-075",
-      "S2-076",
-      "S2-077",
-      "S2-078",
-      "S2-079",
-      "S2-080",
-      "S2-081",
-      "S2-082",
-      "S2-083",
-      "S2-084",
-      "S2-085",
-      "S2-087",
-      "S2-088",
-      "S2-089",
-      "S2-090",
-      "S2-091",
-      "S2-092"
+      "S2-094",
+      "S2-095",
+      "S2-096",
+      "S2-098",
+      "S2-100",
+      "S3-001",
+      "S3-002",
+      "S3-004",
+      "S3-005",
+      "S3-006",
+      "S3-007",
+      "S3-008",
+      "S3-009",
+      "S3-010",
+      "S3-011",
+      "S3-012",
+      "S3-013",
+      "S3-014",
+      "S3-016",
+      "S3-017",
+      "S3-018",
+      "S3-019",
+      "S3-020",
+      "S3-022",
+      "S3-023",
+      "S3-024",
+      "S3-025",
+      "S3-026",
+      "S3-027",
+      "S3-028",
+      "S3-029",
+      "S3-030",
+      "S3-031",
+      "S3-032",
+      "S3-034",
+      "S3-035",
+      "S3-036",
+      "S3-037",
+      "S3-040",
+      "S3-041",
+      "S3-042",
+      "S3-043",
+      "S3-044",
+      "S3-045",
+      "S3-046",
+      "S3-049",
+      "S3-050",
+      "S3-051",
+      "S3-052",
+      "S3-053",
+      "S3-054",
+      "S3-056",
+      "S3-057",
+      "S3-059",
+      "S3-060",
+      "S3-061",
+      "S3-062",
+      "S3-063",
+      "S3-064",
+      "S3-065",
+      "S3-066",
+      "S3-067",
+      "S3-069",
+      "S3-070",
+      "S3-071",
+      "S3-072",
+      "S3-073",
+      "S3-074",
+      "S3-075",
+      "S3-077",
+      "S3-078",
+      "S3-079",
+      "S3-080",
+      "S3-081",
+      "S3-082",
+      "S3-083",
+      "S3-084",
+      "S3-085",
+      "S3-086",
+      "S3-089",
+      "S3-090",
+      "S3-091",
+      "S3-092",
+      "S3-094",
+      "S3-095",
+      "S3-097",
+      "S3-098",
+      "S3-100",
+      "S4-001",
+      "S4-002",
+      "S4-003",
+      "S4-004",
+      "S4-005",
+      "S4-006",
+      "S4-007",
+      "S4-008",
+      "S4-009",
+      "S4-010",
+      "S4-011",
+      "S4-012"
     ],
     "notes": [
-      "Audited the next 100 Bank 2 questions against the course lectures and Nurse Anesthesia, 7th ed. when the lecture lacked needed detail.",
-      "Corrected S1-086 to the proper pulse-oximetry source and made the carbon-monoxide mechanism specific to carboxyhemoglobin.",
-      "Rewrote S2-087 to stay within the lecture-supported Murphy-eye design content rather than an uncited functional claim.",
-      "Re-sourced S2-092 to Nurse Anesthesia 7e, which explicitly states that dye in saline can permit early recognition of laser-related cuff rupture.",
-      "No other answer-key or source-integrity defects were identified in this 100-question group."
+      "Audited the next 100 Bank 2 questions against Airway Equipment, Medical Gas Systems in Anesthesia, CO₂ & Scavenging, Monitoring, and Nurse Anesthesia 7e where lecture support was incomplete.",
+      "Corrected three inspired-oxygen-analyzer questions that were incorrectly sourced to Medical Gas Systems slide 34; Monitoring slide 11 explicitly contains the oxygen-analyzer requirement.",
+      "Corrected the vaporizer-interlock slide locator and re-sourced the combined 0.5 ppm halogenated-agent plus 25 ppm N2O exposure item to Nurse Anesthesia 7e.",
+      "No answer-key changes were required in this batch."
     ]
   },
   "lastCorrection": {
