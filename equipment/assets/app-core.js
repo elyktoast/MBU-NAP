@@ -90,61 +90,100 @@ function diagnostics(){
 }
 async function copyDiagnostics(){const text=JSON.stringify(diagnostics(),null,2);if(navigator.clipboard?.writeText)await navigator.clipboard.writeText(text);return text}
 
-function closeTools(){const modal=document.getElementById('mbu-app-tools');if(!modal)return;modal.classList.remove('open');modal.setAttribute('aria-hidden','true');toolsReturnFocus?.focus?.();toolsReturnFocus=null}
-async function refreshTools(){
-  const modal=document.getElementById('mbu-app-tools');if(!modal)return;
-  const keys=await trackedKeys(),saved=keys.filter(k=>localStorage.getItem(k)!==null).length;
-  modal.querySelector('[data-build]').textContent=window.MBU_BUILD_ID||'unknown';
-  modal.querySelector('[data-device]').textContent=deviceId().slice(0,12);
-  modal.querySelector('[data-saves]').textContent=saved+' / '+keys.length;
-  modal.querySelector('[data-errors]').textContent=String(errors.length);refreshCloudTools()
-}
+function formatTime(ts){return ts?new Date(ts).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}):'Not yet'}
+function lastLocalSave(){const vals=Object.values(readMeta()).map(x=>Number(x?.updatedAt)||0).filter(Boolean);return vals.length?Math.max(...vals):0}
 function cloudStatusText(info){
-  if(!info?.signedIn)return info?.state==='confirmation-required'?'Check your email to confirm the account, then sign in.':'Not signed in.';
+  if(!info?.signedIn)return info?.state==='confirmation-required'?'Confirmation email sent. Confirm the account, then sign in.':'Signed out';
   if(info.state==='syncing')return 'Syncing…';
-  if(info.state==='error')return 'Sync error. Open diagnostics if it continues.';
-  if(info.lastSyncAt)return 'Synced '+new Date(info.lastSyncAt).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'});
-  return 'Signed in. Cloud sync is ready.'
+  if(info.state==='error')return 'Sync error';
+  if(info.lastSyncAt)return 'Synced '+formatTime(info.lastSyncAt);
+  return 'Connected'
 }
 function cloudAutoSyncText(info){
-  if(!info?.signedIn)return 'Auto sync starts after you sign in.';
-  const mins=Math.max(1,Math.round(Number(info.autoSyncIntervalMs||0)/60000));
-  const next=Number(info.nextAutoSyncAt)||0;
-  return 'Auto sync: every '+mins+' minutes'+(next?' · Next around '+new Date(next).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}):'')+'.'
+  if(!info?.signedIn)return 'Starts when signed in';
+  const mins=Math.max(1,Math.round(Number(info.autoSyncIntervalMs||0)/60000)),next=Number(info.nextAutoSyncAt)||0;
+  return 'Every '+mins+' min'+(next?' · next ~'+formatTime(next):'')
 }
-function refreshCloudTools(){
+function modalFocusable(modal){return [...modal.querySelectorAll('button:not([disabled]),input:not([disabled]),select:not([disabled]),a[href],details summary')].filter(x=>x.offsetParent!==null)}
+function trapModalKey(e,modal,close){
+  if(e.key==='Escape'){close();return}
+  if(e.key!=='Tab')return;
+  const f=modalFocusable(modal);if(!f.length)return;const first=f[0],last=f[f.length-1];
+  if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}
+  else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
+}
+function closeTools(){const modal=document.getElementById('mbu-app-tools');if(!modal)return;modal.classList.remove('open');modal.setAttribute('aria-hidden','true');toolsReturnFocus?.focus?.();toolsReturnFocus=null}
+function closeAccount(){const modal=document.getElementById('mbu-account-panel');if(!modal)return;modal.classList.remove('open');modal.setAttribute('aria-hidden','true');toolsReturnFocus?.focus?.();toolsReturnFocus=null}
+function updateCloudChip(){
+  const b=document.querySelector('.mbu-global-nav__cloud');if(!b)return;
+  const info=window.MBUSupabase?.status?.()||{signedIn:false,state:'unavailable'},label=b.querySelector('[data-cloud-chip-label]');
+  b.dataset.state=info.state||'signed-out';
+  label.textContent=!info.signedIn?'Cloud: Signed out':info.state==='syncing'?'Cloud: Syncing':info.state==='error'?'Cloud: Error':'Cloud: Synced';
+  b.title=info.signedIn?(info.email||'Cloud account')+' · '+cloudStatusText(info):'Sign in for cross-device sync';
+  b.setAttribute('aria-label',b.title)
+}
+async function refreshTools(){
   const modal=document.getElementById('mbu-app-tools');if(!modal)return;
-  const info=window.MBUSupabase?.status?.()||{signedIn:false,state:'unavailable'};
-  const out=modal.querySelector('[data-cloud-signed-out]'),inside=modal.querySelector('[data-cloud-signed-in]');
+  const keys=await trackedKeys(),saved=keys.filter(k=>localStorage.getItem(k)!==null).length,info=window.MBUSupabase?.status?.()||{signedIn:false,state:'unavailable'},local=lastLocalSave();
+  modal.querySelector('[data-tools-cloud]').textContent=window.MBUSupabase?cloudStatusText(info):'Unavailable';
+  modal.querySelector('[data-tools-auto]').textContent=window.MBUSupabase?cloudAutoSyncText(info):'Unavailable';
+  modal.querySelector('[data-tools-saves]').textContent=saved+' of '+keys.length;
+  modal.querySelector('[data-tools-local]').textContent=local?formatTime(local):'No local saves yet';
+  modal.querySelector('[data-build]').textContent=window.MBU_BUILD_ID||'unknown';
+  modal.querySelector('[data-device]').textContent=deviceId().slice(0,12);
+  modal.querySelector('[data-errors]').textContent=errors.length?errors.length+' captured':'0 issues detected';
+  const syncBtn=modal.querySelector('[data-tools-sync]');syncBtn.hidden=!info.signedIn;syncBtn.disabled=info.state==='syncing';
+  modal.querySelector('[data-tools-account]').textContent=info.signedIn?'Manage cloud account':'Sign in to cloud';
+  updateCloudChip()
+}
+function refreshAccount(){
+  const modal=document.getElementById('mbu-account-panel');if(!modal)return;
+  const info=window.MBUSupabase?.status?.()||{signedIn:false,state:'unavailable'},out=modal.querySelector('[data-cloud-signed-out]'),inside=modal.querySelector('[data-cloud-signed-in]');
   out.hidden=!!info.signedIn;inside.hidden=!info.signedIn;
   modal.querySelector('[data-cloud-user]').textContent=info.email||'';
-  modal.querySelector('[data-cloud-status]').textContent=window.MBUSupabase?cloudStatusText(info):'Cloud sync is unavailable.';
+  modal.querySelector('[data-cloud-status]').textContent=window.MBUSupabase?cloudStatusText(info):'Cloud sync unavailable';
   modal.querySelector('[data-cloud-auto]').textContent=window.MBUSupabase?cloudAutoSyncText(info):'';
+  updateCloudChip()
+}
+function ensureAccountPanel(){
+  if(document.getElementById('mbu-account-panel'))return;
+  const wrap=document.createElement('div');wrap.innerHTML='<div id="mbu-account-panel" class="mbu-account-panel" role="dialog" aria-modal="true" aria-labelledby="mbu-account-title" aria-hidden="true"><div class="mbu-account-panel__card"><div class="mbu-app-tools__head"><div><div class="mbu-section-kicker">Cloud account</div><h2 id="mbu-account-title">MBU-NAP Sync</h2></div><button type="button" data-account-close aria-label="Close account">×</button></div><div data-cloud-signed-out><p class="mbu-app-tools__note">Sign in once to keep your study progress synchronized across your devices.</p><label>Email<input type="email" data-cloud-email autocomplete="email"></label><label>Password<input type="password" data-cloud-password autocomplete="current-password"></label><div class="mbu-app-tools__actions"><button type="button" data-cloud-signin>Sign in</button><button type="button" class="secondary" data-cloud-signup>Create account</button></div></div><div data-cloud-signed-in hidden><div class="mbu-account-identity"><span class="mbu-status-dot"></span><div><span class="mbu-muted">Signed in as</span><strong data-cloud-user></strong></div></div><div class="mbu-account-status"><strong data-cloud-status></strong><span data-cloud-auto></span></div><div class="mbu-app-tools__actions"><button type="button" data-cloud-sync>Sync now</button><button type="button" class="secondary" data-cloud-signout>Sign out</button></div></div><div class="mbu-app-tools__status" data-account-message role="status" aria-live="polite"></div></div></div>';document.body.append(wrap);
+  const modal=document.getElementById('mbu-account-panel'),email=modal.querySelector('[data-cloud-email]'),password=modal.querySelector('[data-cloud-password]'),message=modal.querySelector('[data-account-message]');
+  const action=async fn=>{try{message.textContent='Working…';await fn();password.value='';message.textContent='';refreshAccount();await refreshTools()}catch(e){record('cloud-sync',e);message.textContent=e.message;refreshAccount()}};
+  modal.querySelector('[data-cloud-signin]').onclick=()=>action(()=>MBUSupabase.signIn(email.value,password.value));
+  modal.querySelector('[data-cloud-signup]').onclick=()=>action(()=>MBUSupabase.signUp(email.value,password.value));
+  modal.querySelector('[data-cloud-sync]').onclick=()=>action(()=>MBUSupabase.syncNow());
+  modal.querySelector('[data-cloud-signout]').onclick=()=>action(()=>MBUSupabase.signOut());
+  modal.querySelector('[data-account-close]').onclick=closeAccount;modal.onclick=e=>{if(e.target===modal)closeAccount()};modal.onkeydown=e=>trapModalKey(e,modal,closeAccount)
+}
+async function openAccount(source){
+  ensureAccountPanel();toolsReturnFocus=source||document.activeElement;const modal=document.getElementById('mbu-account-panel');modal.classList.add('open');modal.setAttribute('aria-hidden','false');refreshAccount();
+  const info=window.MBUSupabase?.status?.();(info?.signedIn?modal.querySelector('[data-cloud-sync]'):modal.querySelector('[data-cloud-email]'))?.focus()
 }
 function ensureTools(){
   if(document.getElementById('mbu-app-tools'))return;
-  const wrap=document.createElement('div');wrap.innerHTML='<div id="mbu-app-tools" class="mbu-app-tools" role="dialog" aria-modal="true" aria-labelledby="mbu-app-tools-title" aria-hidden="true"><div class="mbu-app-tools__card"><div class="mbu-app-tools__head"><h2 id="mbu-app-tools-title">MBU-NAP Tools</h2><button type="button" data-close aria-label="Close tools">×</button></div><dl><div><dt>Build</dt><dd data-build></dd></div><div><dt>Device</dt><dd data-device></dd></div><div><dt>Saved stores</dt><dd data-saves></dd></div><div><dt>Captured errors</dt><dd data-errors></dd></div></dl><section class="mbu-cloud"><h3>Cloud Sync</h3><div data-cloud-signed-out><label>Email<input type="email" data-cloud-email autocomplete="email"></label><label>Password<input type="password" data-cloud-password autocomplete="current-password"></label><div class="mbu-app-tools__actions"><button type="button" data-cloud-signin>Sign in</button><button type="button" data-cloud-signup>Create account</button></div></div><div data-cloud-signed-in hidden><p>Signed in as <strong data-cloud-user></strong></p><div class="mbu-app-tools__actions"><button type="button" data-cloud-sync>Sync now</button><button type="button" data-cloud-signout>Sign out</button></div></div><div class="mbu-cloud__status" data-cloud-status role="status" aria-live="polite"></div><div class="mbu-cloud__status" data-cloud-auto></div></section><p class="mbu-app-tools__note">Local progress saves immediately. When signed in, changes also sync to Supabase for use on your other devices.</p><div class="mbu-app-tools__actions"><button type="button" data-export>Download backup</button><button type="button" data-import>Import backup</button><button type="button" data-copy>Copy diagnostics</button></div><input type="file" data-file accept="application/json,.json" hidden><div class="mbu-app-tools__status" role="status" aria-live="polite"></div></div></div>';document.body.append(wrap);
+  const wrap=document.createElement('div');wrap.innerHTML='<div id="mbu-app-tools" class="mbu-app-tools" role="dialog" aria-modal="true" aria-labelledby="mbu-app-tools-title" aria-hidden="true"><div class="mbu-app-tools__card"><div class="mbu-app-tools__head"><div><div class="mbu-section-kicker">Study center</div><h2 id="mbu-app-tools-title">Tools</h2></div><button type="button" data-close aria-label="Close tools">×</button></div><section class="mbu-tools-section"><h3>Study & Sync</h3><div class="mbu-tools-grid"><div><span>Cloud</span><strong data-tools-cloud></strong></div><div><span>Auto sync</span><strong data-tools-auto></strong></div><div><span>Saved study areas</span><strong data-tools-saves></strong></div><div><span>Last local save</span><strong data-tools-local></strong></div></div><div class="mbu-app-tools__actions"><button type="button" data-tools-sync>Sync now</button><button type="button" class="secondary" data-tools-account>Manage cloud account</button></div><p class="mbu-app-tools__note">Progress saves locally immediately. Cloud sync is an extra cross-device safety layer.</p></section><details class="mbu-tools-details"><summary>Backup & Recovery</summary><div class="mbu-tools-details__body"><p>Normally you can rely on cloud sync. These manual backups are kept as a recovery option if you ever need to restore or move progress yourself.</p><div class="mbu-app-tools__actions"><button type="button" data-export>Download backup</button><button type="button" class="secondary" data-import>Import backup</button></div><input type="file" data-file accept="application/json,.json" hidden></div></details><details class="mbu-tools-details"><summary>Troubleshooting & App Info</summary><div class="mbu-tools-details__body"><div class="mbu-tools-grid compact"><div><span>Issues</span><strong data-errors></strong></div><div><span>Device</span><strong data-device></strong></div><div class="wide"><span>Build</span><strong data-build></strong></div></div><div class="mbu-app-tools__actions"><button type="button" class="secondary" data-copy>Copy diagnostics</button></div></div></details><div class="mbu-app-tools__status" role="status" aria-live="polite"></div></div></div>';document.body.append(wrap);
   const modal=document.getElementById('mbu-app-tools'),status=modal.querySelector('.mbu-app-tools__status'),file=modal.querySelector('[data-file]');
-  const email=modal.querySelector('[data-cloud-email]'),password=modal.querySelector('[data-cloud-password]');
-  const cloudAction=async fn=>{const cloudStatus=modal.querySelector('[data-cloud-status]');try{cloudStatus.textContent='Working…';await fn();password.value='';refreshCloudTools();await refreshTools()}catch(e){record('cloud-sync',e);cloudStatus.textContent=e.message}};
-  modal.querySelector('[data-cloud-signin]').onclick=()=>cloudAction(()=>MBUSupabase.signIn(email.value,password.value));
-  modal.querySelector('[data-cloud-signup]').onclick=()=>cloudAction(()=>MBUSupabase.signUp(email.value,password.value));
-  modal.querySelector('[data-cloud-sync]').onclick=()=>cloudAction(()=>MBUSupabase.syncNow());
-  modal.querySelector('[data-cloud-signout]').onclick=()=>cloudAction(()=>MBUSupabase.signOut());
-
-  modal.querySelector('[data-close]').onclick=closeTools;modal.onclick=e=>{if(e.target===modal)closeTools()};
+  modal.querySelector('[data-close]').onclick=closeTools;modal.onclick=e=>{if(e.target===modal)closeTools()};modal.onkeydown=e=>trapModalKey(e,modal,closeTools);
+  modal.querySelector('[data-tools-account]').onclick=e=>{closeTools();openAccount(e.currentTarget)};
+  modal.querySelector('[data-tools-sync]').onclick=async()=>{try{status.textContent='Syncing…';await MBUSupabase.syncNow();status.textContent='Sync complete.';await refreshTools()}catch(e){record('cloud-sync',e);status.textContent='Sync failed: '+e.message}};
   modal.querySelector('[data-export]').onclick=async()=>{try{await downloadBackup();status.textContent='Backup downloaded.'}catch(e){record('backup-export',e);status.textContent='Backup failed: '+e.message}};
   modal.querySelector('[data-import]').onclick=()=>file.click();
   file.onchange=async()=>{try{const result=await importFile(file.files?.[0]);status.textContent='Imported '+result.imported+' save'+(result.imported===1?'':'s')+'. Reload this page to use imported progress.';await refreshTools()}catch(e){record('backup-import',e);status.textContent='Import failed: '+e.message}finally{file.value=''}};
-  modal.querySelector('[data-copy]').onclick=async()=>{try{await copyDiagnostics();status.textContent='Diagnostics copied.'}catch(e){status.textContent='Could not copy diagnostics.'}};
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeTools()});
+  modal.querySelector('[data-copy]').onclick=async()=>{try{await copyDiagnostics();status.textContent='Diagnostics copied.'}catch(e){status.textContent='Could not copy diagnostics.'}}
 }
 async function openTools(source){ensureTools();toolsReturnFocus=source||document.activeElement;const modal=document.getElementById('mbu-app-tools');modal.classList.add('open');modal.setAttribute('aria-hidden','false');await refreshTools();modal.querySelector('[data-close]').focus()}
-function mountNav(nav){if(!nav||nav.querySelector('.mbu-global-nav__tools'))return;const b=document.createElement('button');b.type='button';b.className='mbu-global-nav__tools';b.textContent='Tools';b.setAttribute('aria-label','Open backup, sync, and diagnostics tools');b.onclick=()=>openTools(b);nav.append(b)}
-window.addEventListener('mbu:supabase-status',()=>refreshCloudTools());
+function mountNav(nav){
+  if(!nav||nav.querySelector('.mbu-global-nav__utilities'))return;
+  const utilities=document.createElement('div');utilities.className='mbu-global-nav__utilities';
+  const cloud=document.createElement('button');cloud.type='button';cloud.className='mbu-global-nav__cloud';cloud.innerHTML='<span class="mbu-status-dot" aria-hidden="true"></span><span data-cloud-chip-label>Cloud: Signed out</span>';cloud.onclick=()=>openAccount(cloud);
+  const tools=document.createElement('button');tools.type='button';tools.className='mbu-global-nav__tools';tools.textContent='Tools';tools.setAttribute('aria-label','Open study tools, backup, and diagnostics');tools.onclick=()=>openTools(tools);
+  utilities.append(cloud,tools);nav.append(utilities);updateCloudChip()
+}
+window.addEventListener('mbu:supabase-status',()=>{refreshAccount();refreshTools();updateCloudChip()});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ensureA11y,{once:true});else ensureA11y();
 
 window.MBUDiagnostics={record,snapshot:diagnostics,copy:copyDiagnostics};
 window.MBUSync={APP,schema:SYNC_SCHEMA,deviceId,touchStore,trackedKeys,exportSnapshot,importSnapshot,downloadBackup,importFile,registerAdapter,syncWith};
-window.MBUAppCore={ensureA11y,announce,focusQuestion,mountNav,openTools,touchStore,diagnostics};
+window.MBUAppCore={ensureA11y,announce,focusQuestion,mountNav,openTools,openAccount,touchStore,diagnostics};
 })();
