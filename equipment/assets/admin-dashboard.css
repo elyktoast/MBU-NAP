@@ -1,0 +1,7 @@
+.mbu-admin-dashboard__card{width:min(1080px,100%);max-height:min(94vh,980px)}
+.mbu-admin-entry{margin-top:12px;background:#f8fbff}
+.mbu-admin-entry .mbu-section-heading{margin-bottom:0;align-items:center}
+.mbu-admin-section{margin-top:14px}
+.mbu-admin-overview{padding:18px;border:1px solid #dbe4ee;border-radius:14px;background:#f8fafc}
+.mbu-admin-overview .mbu-section-heading{margin-bottom:14px}
+.mbu-admin-overview .mbu-app-tools__actions{margin-top:0}

@@ -22,6 +22,8 @@ const budgets={
   'equipment/assets/supabase-config.js':1000,
   'equipment/assets/supabase-sync.js':25000,
   'equipment/assets/admin-panel.js':14000,
+  'equipment/assets/admin-dashboard.js':5000,
+  'equipment/assets/admin-dashboard.css':2000,
   'equipment/assets/admin-question-analytics.js':9000,
   'equipment/assets/cloud-management.js':7000,
   'equipment/assets/app-core.css':11000,

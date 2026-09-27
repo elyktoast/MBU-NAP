@@ -180,30 +180,9 @@ cloudManagementPromise=cloudManagementPromise||window.MBUBuild.loadScript('cloud
 await cloudManagementPromise;
 return window.SRNACloudManagement
 }
-let adminPanelPromise=null,adminReturnFocus=null;
-async function refreshAdminAccess(modal){
-const entry=modal?.querySelector('[data-admin-entry]');if(!entry||!window.MBUSupabase)return false;
-entry.hidden=true;
-const info=MBUSupabase.status();if(!info.signedIn||info.legalAccepted!==true)return false;
-try{const admin=await MBUSupabase.adminStatus();entry.hidden=!admin?.is_admin;return!!admin?.is_admin}catch(e){record('admin-status',e);return false}
-}
-function closeAdminDashboard(){
-const modal=$('mbu-admin-dashboard');if(!modal)return;modal.classList.remove('open');modal.setAttribute('aria-hidden','true');B.classList.remove('mbu-modal-open');adminReturnFocus?.focus?.();adminReturnFocus=null
-}
-function ensureAdminDashboard(){
-if($('mbu-admin-dashboard'))return;
-const wrap=E('div');wrap.innerHTML='<div id="mbu-admin-dashboard" class="mbu-admin-dashboard" role="dialog" aria-modal="true" aria-labelledby="mbu-admin-dashboard-title" aria-hidden="true"><div class="mbu-admin-dashboard__card"><div class="mbu-app-tools__head"><div><div class="mbu-section-kicker">Operator workspace</div><h2 id="mbu-admin-dashboard-title">Admin Dashboard</h2><p class="mbu-modal-subtitle">Analytics, accounts, reports, suggestions, privacy, and retention controls.</p></div><button type="button" class="mbu-modal-close" data-admin-dashboard-close aria-label="Close admin dashboard">x</button></div><div data-admin-dashboard-host></div><div class="mbu-app-tools__status" data-account-message role="status" aria-live="polite"></div></div></div>';B.append(wrap);
-const modal=$('mbu-admin-dashboard');modal.querySelector('[data-admin-dashboard-close]').onclick=closeAdminDashboard;modal.onclick=e=>{if(e.target===modal)closeAdminDashboard()};modal.onkeydown=e=>trapModalKey(e,modal,closeAdminDashboard)
-}
-async function openAdminDashboard(source){
-await ensurePanelStyles();const account=$('mbu-account-panel'),allowed=await refreshAdminAccess(account);if(!allowed){record('admin-dashboard',new Error('Admin access required'));return}
-ensureAdminDashboard();const modal=$('mbu-admin-dashboard'),host=modal.querySelector('[data-admin-dashboard-host]');adminReturnFocus=source||document.activeElement;
-try{
-const admin=await MBUSupabase.adminStatus();if(!admin?.is_admin)throw Error('Admin access required');
-if(!window.SRNAAdminPanel){adminPanelPromise=adminPanelPromise||window.MBUBuild.loadScript('admin-panel.js');await adminPanelPromise}
-B.classList.add('mbu-modal-open');modal.classList.add('open');modal.setAttribute('aria-hidden','false');await window.SRNAAdminPanel?.mount?.(host,modal);modal.querySelector('[data-admin-dashboard-close]')?.focus()
-}catch(e){host.innerHTML='<section class="mbu-admin-section mbu-attention-card"><strong>Admin dashboard could not load</strong><p>'+String(e?.message||'Please retry.').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))+'</p></section>';record('admin-dashboard',e)}
-}
+let adminDashboardPromise=null;
+async function refreshAdminAccess(modal){const entry=modal?.querySelector('[data-admin-entry]');if(!entry||!window.MBUSupabase)return false;entry.hidden=true;const info=MBUSupabase.status();if(!info.signedIn||info.legalAccepted!==true)return false;try{const admin=await MBUSupabase.adminStatus();entry.hidden=!admin?.is_admin;return!!admin?.is_admin}catch(e){record('admin-status',e);return false}}
+async function openAdminDashboard(source){if(!await refreshAdminAccess($('mbu-account-panel')))return;adminDashboardPromise=adminDashboardPromise||window.MBUBuild.loadScript('admin-dashboard.js');await adminDashboardPromise;await window.SRNAAdminDashboard?.open?.(source)}
 function ensureAccountPanel(){
 if($('mbu-account-panel'))return;
 const wrap=E('div'),privacyURL=new URL('privacy.html',ROOT_URL).href,termsURL=new URL('terms.html',ROOT_URL).href;
