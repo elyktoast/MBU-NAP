@@ -34,10 +34,11 @@ async function renderHistory(modal){
   const host=modal.querySelector('[data-cloud-history]');if(!host)return;
   host.innerHTML='<div class="mbu-muted">Loading restore points…</div>';
   try{
-    const rows=await MBUSupabase.listHistory(30);
-    host.innerHTML=rows.map(r=>'<div class="mbu-cloud-row"><div><strong>'+esc(storeLabel(r.store_key))+'</strong><span>'+esc(new Date(r.saved_at).toLocaleString())+' · revision '+Number(r.server_revision||0)+'</span></div><button type="button" class="secondary" data-restore-version="'+Number(r.id)+'">Restore</button></div>').join('')||'<div class="mbu-muted">No cloud restore points yet.</div>';
-    host.querySelectorAll('[data-restore-version]').forEach(btn=>btn.onclick=async()=>{if(!confirm('Restore this saved version? Your current cloud state will be preserved in version history first.'))return;btn.disabled=true;const message=modal.querySelector('[data-account-message]');try{message.textContent='Restoring…';await MBUSupabase.restoreVersion(Number(btn.dataset.restoreVersion));message.textContent='Restore complete.'}catch(e){message.textContent=e.message;btn.disabled=false}})
-  }catch(e){host.innerHTML='<div class="mbu-muted">Could not load history: '+esc(e.message)+'</div>'}
+    const rows=await MBUSupabase.listHistory(20);
+    if(!rows.length){host.innerHTML='<div class="mbu-muted">No cloud restore points yet. Restore points appear automatically as synced progress changes.</div>';return}
+    host.innerHTML='<div class="mbu-restore-summary"><strong>Recent restore points</strong><span>Up to 10 versions per study area are retained automatically.</span></div>'+rows.map(r=>'<div class="mbu-cloud-row mbu-restore-row"><div><strong>'+esc(storeLabel(r.store_key))+'</strong><span>'+esc(relativeTime(r.saved_at))+' · '+esc(new Date(r.saved_at).toLocaleString())+'</span><small>Cloud revision '+Number(r.server_revision||0)+'</small></div><button type="button" class="secondary" data-restore-version="'+Number(r.id)+'">Restore</button></div>').join('');
+    host.querySelectorAll('[data-restore-version]').forEach(btn=>btn.onclick=async()=>{if(!confirm('Restore this version? Your current cloud progress is saved first, so you can undo the restore if needed.'))return;btn.disabled=true;const message=modal.querySelector('[data-account-message]');try{message.textContent='Restoring progress…';await MBUSupabase.restoreVersion(Number(btn.dataset.restoreVersion));message.textContent='Restore complete.'}catch(e){message.textContent=e.message;btn.disabled=false}})
+  }catch(e){host.innerHTML='<div class="mbu-muted">Could not load restore points: '+esc(e.message)+'</div>'}
 }
 window.SRNACloudManagement={renderDevices,renderHistory};
 })();
