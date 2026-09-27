@@ -14240,7 +14240,7 @@
       "answer": [
         1
       ],
-      "explanation": "A spherical or ball-type flowmeter float is read at the center of the ball. Other float designs, such as bobbins, are read at a different reference point, so recognizing the float shape matters.",
+      "explanation": "A ball-type float is read at its center because the sphere has no single top edge that represents the calibrated reference point. Reading at the center preserves the flowmeter's intended gas-flow calibration.",
       "citation": "Medical Gas Systems in Anesthesia · 42",
       "topic": "Medical Gases",
       "imageSvg": null,
