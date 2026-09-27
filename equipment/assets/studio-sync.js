@@ -42,7 +42,7 @@
       out.mode='adaptive';
       const poolUids=Array.isArray(a.poolUids)?[...new Set(a.poolUids.map(normalizeKey).filter(Boolean))]:uids.slice();
       const theta=Math.max(-2.5,Math.min(2.5,Number(a.theta)||0)),se=Math.max(0,Number(a.se)||0),information=Math.max(0,Number(a.information)||0);
-      out.adaptive={mode:'adaptive',theta,se,information,level:Math.max(1,Math.min(5,Number(a.level)||3)),answered:Math.max(0,Number(a.answered)||0),correct:Math.max(0,Number(a.correct)||0),maxQuestions:Math.max(1,Math.min(200,Number(a.maxQuestions)||50)),seenUids,poolUids,topicCounts,path:Array.isArray(a.path)?a.path.filter(plainObject).slice(-200):[],currentLevel:Math.max(1,Math.min(5,Number(a.currentLevel)||Number(a.level)||3))}
+      out.adaptive={mode:'adaptive',theta,se,information,currentDifficulty:Number.isFinite(Number(a.currentDifficulty))?Math.max(-2.5,Math.min(2.5,Number(a.currentDifficulty))):null,currentChallenge:Number.isFinite(Number(a.currentChallenge))?Number(a.currentChallenge):null,currentProbability:Number.isFinite(Number(a.currentProbability))?Number(a.currentProbability):null,level:Math.max(1,Math.min(5,Number(a.level)||3)),answered:Math.max(0,Number(a.answered)||0),correct:Math.max(0,Number(a.correct)||0),maxQuestions:Math.max(1,Math.min(200,Number(a.maxQuestions)||50)),seenUids,poolUids,topicCounts,path:Array.isArray(a.path)?a.path.filter(plainObject).slice(-200):[],currentLevel:Math.max(1,Math.min(5,Number(a.currentLevel)||Number(a.level)||3))}
     }
     return out
   }
