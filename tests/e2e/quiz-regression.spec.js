@@ -2054,6 +2054,35 @@ test.describe('canonical quiz regression', () => {
     await expect.poll(()=>page.evaluate(()=>DB.active?.adaptive?.theta)).toBeLessThan(afterCorrectTheta);
   });
 
+  test('Adaptive scored answers cannot be reset or mutate CAT state', async ({ page }) => {
+    await seedSignedIn(page);
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await page.evaluate(()=>{
+      const first=document.querySelector('#sourceChecks input[type=checkbox]');
+      if(first)first.checked=true;
+      document.getElementById('count').value='10';
+      document.getElementById('adaptiveToggle').checked=true;
+      startMode('custom');
+    });
+    await page.evaluate(()=>{const q=session[pos];sel=new Set(q.ans);grade()});
+    await expect.poll(()=>page.evaluate(()=>DB.active?.adaptive?.answered)).toBe(1);
+    const before=await page.evaluate(()=>({
+      answered:DB.active.adaptive.answered,
+      theta:DB.active.adaptive.theta,
+      path:JSON.stringify(DB.active.adaptive.path),
+      answer:JSON.stringify(DB.active.answers[session[0].uid])
+    }));
+    await expect(page.locator('#studioReset')).toBeDisabled();
+    await page.evaluate(()=>resetStudioCurrent());
+    const after=await page.evaluate(()=>({
+      answered:DB.active.adaptive.answered,
+      theta:DB.active.adaptive.theta,
+      path:JSON.stringify(DB.active.adaptive.path),
+      answer:JSON.stringify(DB.active.answers[session[0].uid])
+    }));
+    expect(after).toEqual(before);
+  });
+
   test('All-bank Adaptive Mode advances after correct and incorrect answers without freezing', async ({ page }) => {
     await seedSignedIn(page);
     await page.goto(exam + '/studio.html');await waitForStudio(page);
