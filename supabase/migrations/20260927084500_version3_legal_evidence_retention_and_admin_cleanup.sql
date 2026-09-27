@@ -10,8 +10,8 @@ revoke all on table private.snar_legal_versions from public, anon, authenticated
 
 insert into private.snar_legal_versions(version,terms_sha256,privacy_sha256,effective_at,archive_path)
 values
- ('2026-09-27-v2','5064eab141c046e71757ae95ada6998111499bd69dd57f18ee923b0900654d5b','c9bd8b0d11868a0e8ec73d0e37acc27e3047942f0b22f0fdfc66ca6d057cab92','2026-09-27T00:00:00Z','legal/versions/2026-09-27-v2/'),
- ('2026-09-27-v3','69c28d6881e3493e6e83258365aa778ae19bef7454a4c1843e4cf8c1301ded1e','83c451ff71b9ce8e22f80e471030c6e8ca18de9f81098b6a9cbb087e396098d6','2026-09-27T00:00:00Z','legal/versions/2026-09-27-v3/')
+ ('2026-09-27-v2','ac9a7aa0f106c3f107a0586e910c2655ba44b6ed51a5a9671c660f8210cd4af0','056ebca0f516e7bff38eaf81f89b065ac7b0cc9731a1d305fb38e12054679f67','2026-09-27T00:00:00Z','legal/versions/2026-09-27-v2/'),
+ ('2026-09-27-v3','2d37d30d640141a8d12c818cbfe1591d70013110bdfcca72ffb915ceb99422cf','e2221b02cc9911c06f8efd7e8c4c7916b77863516da766dbdd60445597cedffa','2026-09-27T00:00:00Z','legal/versions/2026-09-27-v3/')
 on conflict (version) do update set
  terms_sha256=excluded.terms_sha256,
  privacy_sha256=excluded.privacy_sha256,
