@@ -177,3 +177,7 @@ Re-review this assessment before:
 ## Current known operational follow-up
 
 Enable Supabase leaked-password protection when available in the Auth dashboard.
+
+## Small-cohort calibration protection
+
+Population item-calibration rows remain server-side until a question has at least 25 unique account contributors. Authenticated browser clients can read only rows meeting that threshold, matching the CAT engine's existing minimum before population difficulty is used. This reduces small-cohort inference risk while preserving provisional server-side aggregation.
