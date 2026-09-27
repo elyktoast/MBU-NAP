@@ -1072,7 +1072,7 @@ test.describe('canonical quiz regression', () => {
     await page.locator('.mbu-calc-close').click();
     await page.locator('#mbu-calc-open').click();
     await expect(page.locator('#mbu-calc-display')).toHaveValue('');
-    await page.getByRole('button',{name:'Ans'}).click();
+    await page.getByRole('button',{name:'Ans',exact:true}).click();
     await expect(page.locator('#mbu-calc-display')).toHaveValue('0');
   });
 
@@ -1429,16 +1429,27 @@ test.describe('canonical quiz regression', () => {
         meta:{[key]:{revision:12,updatedAt:1000,deviceId:'other',serverRevision:6}}
       });
       const afterOlder=localStorage.getItem(key);
-      const newerHigherServer=await MBUSync.importSnapshot({
+      const blockedWhileDirty=await MBUSync.importSnapshot({
         app:'SRNA Study Tool',schema:1,createdAt:3000,deviceId:'other',
         stores:{[key]:JSON.stringify({cloud:'newer'})},
         meta:{[key]:{revision:13,updatedAt:3000,deviceId:'other',serverRevision:6}}
       });
-      return{olderHigherServer,newerHigherServer,afterOlder,afterNewer:localStorage.getItem(key)}
+      const submitted=JSON.parse(localStorage.getItem('mbu_sync_meta_v1'))[key];
+      MBUSync.acknowledgeServerWrite(key,{server_revision:6},submitted);
+      const afterAck=JSON.parse(localStorage.getItem('mbu_sync_meta_v1'))[key];
+      const newerAfterAck=await MBUSync.importSnapshot({
+        app:'SRNA Study Tool',schema:1,createdAt:4000,deviceId:'other',
+        stores:{[key]:JSON.stringify({cloud:'newer'})},
+        meta:{[key]:{revision:14,updatedAt:4000,deviceId:'other',serverRevision:7}}
+      });
+      return{olderHigherServer,blockedWhileDirty,newerAfterAck,afterOlder,afterAck,afterNewer:localStorage.getItem(key)}
     });
     expect(result.olderHigherServer.imported).toBe(0);
     expect(result.afterOlder).toBe(JSON.stringify({local:'newer'}));
-    expect(result.newerHigherServer.imported).toBe(1);
+    expect(result.blockedWhileDirty.imported).toBe(0);
+    expect(result.afterAck.dirty).toBe(false);
+    expect(result.afterAck.serverRevision).toBe(6);
+    expect(result.newerAfterAck.imported).toBe(1);
     expect(result.afterNewer).toBe(JSON.stringify({cloud:'newer'}));
   });
 
