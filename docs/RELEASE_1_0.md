@@ -1,6 +1,6 @@
 # SRNA Study Tool 1.0
 
-Release date: 2026-09-26
+Release date: 2026-09-27
 
 ## Stable scope
 
@@ -48,6 +48,21 @@ Heuristic review queues remain for future refinement (94 short-explanation flags
 
 See `docs/CONTENT_AUDIT.md` for the detailed content audit.
 
-## Accepted platform limitation
+## Phase 1 release hardening
 
-Supabase Free does not expose leaked-password protection. The project uses an 8-character minimum password and retains the Security Advisor warning as an accepted plan limitation. No Supabase secret/service-role credential is shipped to the browser.
+The 2026-09-27 hardening pass added and verified:
+
+- responsive phone navigation and compact mobile landing layouts;
+- a regression guard preventing primary mobile navigation from wrapping incorrectly;
+- production self-service account deletion through the authenticated `delete-account` Edge Function;
+- removal of frontend use of the retired `snar-delete-account` endpoint;
+- reconciliation of the checked-in Supabase migration history with all 31 migrations applied in production;
+- database invariant checks for orphaned records, restore-history limits, guest-session retention, legal-acceptance retention, and current legal acceptance;
+- Adaptive cross-outs scoped to the active Adaptive session, preventing old Studio cross-outs from appearing in a new Adaptive quiz while preserving them when that same Adaptive session is revisited;
+- a clean repository branch state with only `main` remaining.
+
+At the Phase 1 baseline, GitHub Pages deployment, repository validation, content integrity, semantic audit, performance budgets, and the full Playwright browser regression suite were green.
+
+## Remaining project-level security setting
+
+Supabase Security Advisor reports leaked-password protection as disabled. This is an Auth project setting rather than an application-code defect. It should be enabled in Supabase Auth settings when available for this project. No Supabase secret/service-role credential is shipped to the browser.

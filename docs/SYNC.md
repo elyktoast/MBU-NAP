@@ -4,21 +4,17 @@
 
 SRNA Study Tool is local-first. Progress is written to browser localStorage immediately, so quiz interactions do not wait on the network.
 
-When a user signs in from the persistent **Cloud** control in the site header, the same save stores are synchronized to Supabase. The browser uses only the project's public publishable key. Supabase Auth provides the user JWT, and Row Level Security limits every cloud row to that authenticated user.
+When a user signs in from the persistent **Account** control in the site header, the same save stores are synchronized to Supabase. The browser uses only the project's public publishable key. Supabase Auth provides the user JWT, and Row Level Security limits every cloud row to that authenticated user.
 
 ## Supabase backend
 
 Production schema:
 
 - `public.mbu_sync_state`: current copy of each save store;
-- `public.mbu_sync_versions`: automatic version history, capped at 100 versions per user/store;
+- `public.mbu_sync_versions`: automatic version history, capped at 10 versions per user/store;
 - `public.mbu_sync_devices`: devices that have synced the account.
 
-Committed database migrations:
-
-- `supabase/migrations/20260927000217_create_mbu_sync_schema.sql`
-- `supabase/migrations/20260927010714_add_server_authoritative_sync_write.sql`
-- `supabase/migrations/20260927011217_remove_unused_sync_device_index.sql`
+Committed database migrations live in `supabase/migrations/`. The directory is reconciled to the migration history applied in production; applied migration version prefixes and SQL bodies should not be renamed or rewritten.
 
 ## Authentication
 
@@ -63,4 +59,4 @@ All three sync tables have Row Level Security enabled. Policies are restricted t
 
 The conflict-write function is `SECURITY INVOKER`, so it remains subject to the caller's RLS permissions. The application cannot read or write another user's save rows through the public API.
 
-Supabase Free does not provide leaked-password protection. The project therefore uses the strongest password controls available on the current plan, including an 8-character minimum, while the advisor warning remains an accepted Free-plan limitation.
+Supabase Security Advisor currently reports leaked-password protection as disabled. The application enforces its configured password rules in the signup flow, and leaked-password protection should be enabled in Supabase Auth settings when available for this project. No service-role credential is shipped to the browser.
