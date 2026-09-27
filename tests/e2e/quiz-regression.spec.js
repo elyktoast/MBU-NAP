@@ -2374,6 +2374,28 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#analyticsSummary')).toContainText('Last 30 days');
   });
 
+  test('Adaptive Testing beta CTA is transparent and routes guests into the account-aware Studio flow', async ({ page }) => {
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    const cta=page.locator('#adaptiveBetaCard');
+    await expect(cta).toContainText('Try Adaptive Testing');
+    await expect(cta).toContainText('Account is required');
+    await expect(cta).toContainText('test and calibrate Adaptive Mode');
+    await expect(page.locator('#tryAdaptiveBtn')).toHaveAttribute('href','studio.html?mode=adaptive');
+    await page.locator('#tryAdaptiveBtn').click();
+    await waitForStudio(page);
+    await expect(page.locator('#mbu-account-panel')).toHaveClass(/open/);
+    await expect(page.locator('#adaptiveToggle')).not.toBeChecked();
+    expect(await page.locator('#sourceChecks input[type=checkbox]:checked').count()).toBeGreaterThan(0);
+  });
+
+  test('Signed-in Adaptive Testing CTA preselects sources and enables Adaptive Mode without forcing another sign-in', async ({ page }) => {
+    await seedSignedIn(page);
+    await page.goto(exam + '/studio.html?mode=adaptive');await waitForStudio(page);
+    await expect(page.locator('#adaptiveToggle')).toBeChecked();
+    expect(await page.locator('#sourceChecks input[type=checkbox]:checked').count()).toBeGreaterThan(0);
+    await expect(page.locator('#mbu-account-panel')).not.toHaveClass(/open/);
+  });
+
   test('Exam dashboard surfaces Continue Studying and recent study activity', async ({ page }) => {
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
     await page.evaluate(()=>{
