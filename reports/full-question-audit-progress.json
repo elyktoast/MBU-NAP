@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 106,
+    "audited": 126,
     "bank2": [
       {
         "id": "S2-021",
@@ -516,17 +516,100 @@
         "id": "495",
         "disposition": "IMPROVE"
       }
+    ],
+    "bank3": [
+      {
+        "id": "S1-M01",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "S1-G27",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S1-M19",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "S1-G28",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-K11",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M03",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S1-K15",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M40",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "S1-M29",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "S1-G22",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M36",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "S1-G25",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-K14",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S1-W07",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S1-M23",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "S1-M41",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "S1-K03",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S1-M15",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R37",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "S5-F13",
+        "disposition": "REMOVE_REPLACE"
+      }
     ]
   },
-  "remaining": 1894,
+  "remaining": 1874,
   "lastBatch": {
-    "bank": "bank2.json",
+    "bank": "bank3.json",
     "audited": 20,
     "notes": [
-      "Completed the remaining Bank 2 weak-explanation flags plus one answer-length flag.",
-      "Corrected neuromuscular-monitoring locator to Monitoring slide 16 and absorbent-exhaustion support to CO2 slides 2 and 4.",
-      "Rewrote two scavenging-interface questions to test the directly taught positive- and negative-pressure relief responses instead of inferred reservoir-bag appearance.",
-      "Replaced a Murphy-eye function item that exceeded the Airway lecture's explicit support with a directly supported reinforced-ETT question."
+      "Started Bank 3 with both remaining answer-length flags plus 18 source-priority questions.",
+      "Replaced the unsupported 0.5 ppm combined-use NIOSH item with the course-taught 25 ppm nitrous-oxide TWA item.",
+      "Removed an unsupported fast-flush-test detail and rewrote the arterial-line question around the directly taught underdamping waveform findings.",
+      "Corrected multiple Monitoring slide locators, including circulation, quantitative neuromuscular monitoring, pulse oximetry, PaCO2-ETCO2 gradient, preoxygenation, and inspired oxygen limitations.",
+      "Verified the remaining unchanged items in the batch against their lecture sources."
     ]
   }
 }
