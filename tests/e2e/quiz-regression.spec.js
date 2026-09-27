@@ -388,7 +388,7 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#dashboard')).toBeVisible();
   });
 
-  test('SNAR Study Tool brand hard refreshes the current page with a cache-busting URL', async ({ page }) => {
+  test('SRNA Study Tool brand hard refreshes the current page with a cache-busting URL', async ({ page }) => {
     await page.goto(exam + '/combined.html');
     const beforePath = new URL(page.url()).pathname;
     await page.locator('.mbu-global-nav__brand').click();
@@ -1354,7 +1354,7 @@ test.describe('canonical quiz regression', () => {
     await page.locator('#submit-multi').click();
     const out=await page.evaluate(async()=>({meta:JSON.parse(localStorage.getItem('mbu_sync_meta_v1')||'{}'),snapshot:await MBUSync.exportSnapshot()}));
     expect(out.meta['SRNA_COMBINED_EXAM_SET_1_2026_V1']?.revision).toBeGreaterThan(0);
-    expect(out.snapshot.schema).toBe(1);expect(out.snapshot.app).toBe('SNAR Study Tool');
+    expect(out.snapshot.schema).toBe(1);expect(out.snapshot.app).toBe('SRNA Study Tool');
     expect(out.snapshot.stores['SRNA_COMBINED_EXAM_SET_1_2026_V1']).toBeTruthy();
   });
 
