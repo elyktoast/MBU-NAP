@@ -35,7 +35,7 @@
       const selected=[...new Set(result.selected.map(Number).filter(x=>Number.isInteger(x)&&x>=0))].sort((a,b)=>a-b);
       answers[uid]={ok:!!result.ok,selected,at:Number.isFinite(Number(result.at))?Number(result.at):0}
     }
-    const allowedModes=new Set(['custom','smart','due','missed','flagged','adaptive']);const mode=allowedModes.has(String(v.mode||''))?String(v.mode):'',crosses={};
+    const allowedModes=new Set(['custom','smart','due','missed','flagged','weak','adaptive']);const mode=allowedModes.has(String(v.mode||''))?String(v.mode):'',crosses={};
     if(mode==='adaptive'&&plainObject(v.crosses))for(const [rawKey,on] of Object.entries(v.crosses)){if(!on)continue;const cut=rawKey.lastIndexOf(':');if(cut<1)continue;const uid=normalizeKey(rawKey.slice(0,cut)),opt=Number(rawKey.slice(cut+1));if(seen.has(uid)&&Number.isInteger(opt)&&opt>=0)crosses[uid+':'+opt]=true}
     const out={uids,pos,answers,updated:Number.isFinite(Number(v.updated))?Number(v.updated):0};if(mode)out.mode=mode;if(mode==='adaptive')out.crosses=crosses;
     if(v.mode==='adaptive'&&plainObject(v.adaptive)){
