@@ -51,8 +51,8 @@
       "answer": [
         3
       ],
-      "explanation": "Because N2O pressure stays at 745 psig while liquid remains, contents are judged by weight: current weight minus the stamped tare weight equals the N2O left.",
-      "citation": "Medical Gas Systems in Anesthesia · Slides 9, 14 (PDF p. 5, 7)",
+      "explanation": "Nitrous oxide pressure remains near 745 psig while liquid remains, so cylinder contents are assessed by weight. The equipment study guide specifies subtracting the stamped tare weight from the current cylinder weight to determine the amount of nitrous oxide remaining.",
+      "citation": "SRNA Equipment Study Guide · Page 1",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -61,14 +61,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Medical Gas Systems in Anesthesia"
+          "SRNA Equipment Study Guide"
         ],
-        "slides": "9, 14",
-        "pdfPages": "5, 7",
+        "pages": "1",
         "citationFormat": "document"
       },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slides 9, 14 · PDF p. 5, 7"
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 1"
     },
     {
       "id": "NM01",
@@ -221,7 +220,7 @@
       "answer": [
         0
       ],
-      "explanation": "A properly functioning scavenging system reduces trace waste-gas concentrations by about 90%, so 15 ppm falls to about 1.5 ppm. With no nitrous oxide in use, that is below the lecture's 2 ppm halogenated-agent recommendation.",
+      "explanation": "A properly functioning scavenging system reduces trace waste-anesthetic-gas levels by about 90%, so 15 ppm falls to about 1.5 ppm. The lecture gives 2 ppm as the recommended limit for a halogenated anesthetic used without nitrous oxide, so 1.5 ppm is within that value.",
       "citation": "CO₂ & Scavenging · Slides 10, 18 (PDF p. 5, 9)",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
