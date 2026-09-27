@@ -29,13 +29,13 @@ async function trackedKeys(){
 }
 function touchStore(key){
   if(!key||key===META_KEY||key===DEVICE_KEY)return null;
-  const meta=readMeta(),prev=plain(meta[key])?meta[key]:{},entry={revision:(Number(prev.revision)||0)+1,updatedAt:now(),deviceId:deviceId()};
+  const meta=readMeta(),prev=plain(meta[key])?meta[key]:{},entry={revision:(Number(prev.revision)||0)+1,updatedAt:now(),deviceId:deviceId(),serverRevision:Number(prev.serverRevision)||0};
   meta[key]=entry;writeMeta(meta);window.MBUSupabase?.scheduleSync?.();return entry
 }
-function metaRank(x){return [Number(x?.updatedAt)||0,Number(x?.revision)||0,String(x?.deviceId||'')]}
+function metaRank(x){return [Number(x?.serverRevision)||0,Number(x?.updatedAt)||0,Number(x?.revision)||0,String(x?.deviceId||'')]}
 function isRemoteNewer(remote,local){
   const a=metaRank(remote),b=metaRank(local);
-  if(a[0]!==b[0])return a[0]>b[0];if(a[1]!==b[1])return a[1]>b[1];return a[2]>b[2]
+  if(a[0]!==b[0])return a[0]>b[0];if(a[1]!==b[1])return a[1]>b[1];if(a[2]!==b[2])return a[2]>b[2];return a[3]>b[3]
 }
 async function exportSnapshot(){
   const keys=await trackedKeys(),meta=readMeta(),stores={};
@@ -53,7 +53,7 @@ async function importSnapshot(input,{mode='newer'}={}){
     if(!allowed.has(key)){unknown++;continue}
     const localRaw=localStorage.getItem(key),remoteMeta=plain(s.meta?.[key])?s.meta[key]:{updatedAt:Number(s.createdAt)||0,revision:0,deviceId:String(s.deviceId||'')},should=mode==='replace'||localRaw===null||isRemoteNewer(remoteMeta,localMeta[key]);
     if(!should){skipped++;continue}
-    localStorage.setItem(key,raw);nextMeta[key]={revision:Number(remoteMeta.revision)||0,updatedAt:Number(remoteMeta.updatedAt)||Number(s.createdAt)||now(),deviceId:String(remoteMeta.deviceId||s.deviceId||'import')};imported++
+    localStorage.setItem(key,raw);nextMeta[key]={revision:Number(remoteMeta.revision)||0,updatedAt:Number(remoteMeta.updatedAt)||Number(s.createdAt)||now(),deviceId:String(remoteMeta.deviceId||s.deviceId||'import'),serverRevision:Number(remoteMeta.serverRevision)||0};imported++
   }
   writeMeta(nextMeta);return{imported,skipped,unknown}
 }
