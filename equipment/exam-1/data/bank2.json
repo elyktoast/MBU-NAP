@@ -7397,16 +7397,16 @@
       "type": "single",
       "stem": "A quantitative neuromuscular monitor is available. Why is it preferred over visual twitch assessment?",
       "options": [
-        "It provides an objective measure of recovery such as the train-of-four ratio",
-        "It measures arterial oxygen content",
-        "It replaces the need to monitor ventilation",
-        "It directly measures anesthetic depth"
+        "It provides an objective measurement of neuromuscular recovery, such as a train-of-four ratio",
+        "It directly measures anesthetic depth from cortical electrical activity",
+        "It replaces ventilation monitoring after neuromuscular blockade",
+        "It measures arterial oxygen content during recovery"
       ],
       "answer": [
         0
       ],
-      "explanation": "Quantitative monitoring objectively measures neuromuscular recovery and is preferred when available.",
-      "citation": "Monitoring · 15",
+      "explanation": "When neuromuscular blocking agents are used, the lecture recommends monitoring neuromuscular response and specifically prefers quantitative monitoring when available. Acceleromyography can provide an objective train-of-four ratio rather than relying only on visual or tactile assessment.",
+      "citation": "Monitoring · Slide 16",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -7420,7 +7420,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 15"
+      "sourceLocator": "Slide 16"
     },
     {
       "id": "S3-034",
@@ -14591,8 +14591,8 @@
       "answer": [
         3
       ],
-      "explanation": "Carbon dioxide absorption is exothermic, so a functioning absorber normally becomes warm. Heat alone does not prove adequate absorption, but it is an expected result of the chemical reaction.",
-      "citation": "CO₂ & Scavenging · 3",
+      "explanation": "Carbon dioxide absorption is an exothermic neutralization reaction, so a functioning absorber can become warm as heat is generated. Warming is an expected consequence of the chemistry, although it should not be used alone to prove that the absorbent remains effective.",
+      "citation": "CO₂ & Scavenging · Slides 2-3",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -14606,7 +14606,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 3"
+      "sourceLocator": "Slides 2-3"
     },
     {
       "id": "S5-060",
@@ -14622,8 +14622,8 @@
       "answer": [
         1
       ],
-      "explanation": "Chemical exhaustion occurs as available hydroxides are converted to carbonates.",
-      "citation": "CO₂ & Scavenging · 4",
+      "explanation": "Soda lime is chemically exhausted when its available hydroxides have been converted to carbonates. Indicator-dye color can help suggest exhaustion, but the lecture cautions that color change can regenerate or fade and should not be relied on by itself.",
+      "citation": "CO₂ & Scavenging · Slides 2, 4",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -14637,7 +14637,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 4"
+      "sourceLocator": "Slides 2, 4"
     },
     {
       "id": "S5-061",
@@ -14880,7 +14880,7 @@
         2,
         5
       ],
-      "explanation": "Low-flow rebreathing retains heat and moisture from exhaled gas after carbon dioxide is removed. This reduces respiratory heat and water loss compared with continuously replacing the circuit gas with high fresh gas flow.",
+      "explanation": "After carbon dioxide is removed, low-flow rebreathing conserves some of the heat and humidity in exhaled gas. The lecture notes that both benefits become greater as fresh gas flow decreases.",
       "citation": "CO₂ & Scavenging · 8",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -14911,8 +14911,8 @@
       "answer": [
         2
       ],
-      "explanation": "The APL valve is the waste-gas outlet during spontaneous/manual ventilation.",
-      "citation": "CO₂ & Scavenging · 19",
+      "explanation": "During spontaneous or assisted/manual ventilation, waste anesthetic gas leaves the breathing circuit through the adjustable pressure-limiting valve and is carried to the scavenging interface. During mechanical ventilation, the ventilator pressure-relief valve serves that role instead.",
+      "citation": "CO₂ & Scavenging · Slide 19",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -15008,8 +15008,8 @@
       "answer": [
         2
       ],
-      "explanation": "The lecture notes that ordinary filters do not remove anesthetic gases.",
-      "citation": "CO₂ & Scavenging · 17",
+      "explanation": "A recirculating OR ventilation system reuses a portion of filtered and conditioned room air. Standard filtering does not remove anesthetic gases, so contaminated air can be redistributed from one operating room to another.",
+      "citation": "CO₂ & Scavenging · Slide 17",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -15029,18 +15029,18 @@
       "id": "S5-073",
       "set": 5,
       "type": "single",
-      "stem": "A closed scavenger reservoir bag is completely collapsed during active suction. Which problem is most likely?",
+      "stem": "A closed-reservoir scavenging interface is connected to hospital vacuum. If the vacuum system fails or suction is insufficient, which safety response is expected?",
       "options": [
-        "Excessive disposal suction",
-        "Inadequate disposal suction",
-        "Positive-pressure relief failure from no suction",
-        "Absorbent channeling"
+        "A positive-pressure relief valve opens and vents waste gas into the room",
+        "A negative-pressure relief valve opens and draws room air inward",
+        "The APL valve is automatically removed from the breathing circuit",
+        "The carbon dioxide absorber bypasses the scavenging interface"
       ],
       "answer": [
         0
       ],
-      "explanation": "Excessive suction produces negative pressure and collapses the reservoir bag.",
-      "citation": "CO₂ & Scavenging · 20",
+      "explanation": "With a closed-reservoir interface, failure or insufficient suction allows pressure to build in the reservoir. The positive-pressure relief or pop-off valve then opens and vents waste anesthetic gas into the room to protect the breathing circuit from excessive pressure.",
+      "citation": "CO₂ & Scavenging · Slide 20",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -15060,18 +15060,18 @@
       "id": "S5-074",
       "set": 5,
       "type": "single",
-      "stem": "Which finding most strongly indicates inadequate suction in a closed scavenging interface?",
+      "stem": "A hospital vacuum system generates excessive negative pressure in a closed-reservoir scavenging interface. Which protective response occurs?",
       "options": [
-        "Reservoir bag collapses",
-        "Atmospheric air is drawn inward",
-        "Reservoir bag distends",
-        "Negative-pressure relief opens"
+        "The negative-pressure relief valve opens and allows room air into the reservoir",
+        "The positive-pressure relief valve opens and vents waste gas into the room",
+        "The breathing-system APL valve closes permanently",
+        "The absorber canister is bypassed to equalize pressure"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "Inadequate suction allows waste gas to accumulate and distend the reservoir.",
-      "citation": "CO₂ & Scavenging · 20",
+      "explanation": "Excessive hospital-vacuum suction can create excessive negative pressure in a closed scavenging interface. The negative-pressure relief, or pop-in, valve opens and allows room air to enter the reservoir so the vacuum is not transmitted to the patient breathing circuit.",
+      "citation": "CO₂ & Scavenging · Slide 20",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -15132,8 +15132,8 @@
       "answer": [
         2
       ],
-      "explanation": "Wall suction or a dedicated evacuation pump defines active disposal.",
-      "citation": "CO₂ & Scavenging · 21",
+      "explanation": "Active waste-gas disposal uses wall suction or a dedicated evacuation system to move gas away from the scavenging interface. Passive disposal instead relies on a nonrecirculating ventilation system or a through-the-wall conduit.",
+      "citation": "CO₂ & Scavenging · Slide 21",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -15197,8 +15197,8 @@
       "answer": [
         2
       ],
-      "explanation": "The lecture quotes 25 ppm TWA for nitrous oxide when used alone.",
-      "citation": "CO₂ & Scavenging · 10",
+      "explanation": "The lecture quotes the NIOSH recommendation that occupational exposure to nitrous oxide, when used as the sole anesthetic gas, should not exceed a 25-ppm time-weighted average during anesthetic administration.",
+      "citation": "CO₂ & Scavenging · Slide 10",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -15294,7 +15294,7 @@
         4,
         5
       ],
-      "explanation": "The triple maneuver consists of head extension, chin lift, and jaw thrust.",
+      "explanation": "The triple airway maneuver combines head extension, chin lift, and jaw thrust. These maneuvers help move the tongue and soft tissues away from the posterior pharynx to improve upper-airway patency.",
       "citation": "Airway Equipment · 3",
       "topic": "Airway",
       "imageSvg": null,
@@ -15356,7 +15356,7 @@
       "answer": [
         3
       ],
-      "explanation": "Waveform exhaled CO₂ is listed as an objective measure of bag-mask ventilation.",
+      "explanation": "Waveform exhaled carbon dioxide is an objective measure of bag-mask ventilation and confirms exhaled gas exchange on a breath-to-breath basis. The lecture also lists sustained oxygen saturation, peak airway pressure, and exhaled tidal volume as objective measures.",
       "citation": "Airway Equipment · 4",
       "topic": "Airway",
       "imageSvg": null,
@@ -15515,7 +15515,7 @@
       "answer": [
         2
       ],
-      "explanation": "Epistaxis is identified as the most common complication of NPA insertion.",
+      "explanation": "Epistaxis is the most common complication of nasopharyngeal airway placement because the device passes through highly vascular nasal mucosa. Gentle insertion with appropriate lubrication helps reduce trauma.",
       "citation": "Airway Equipment · 6",
       "topic": "Airway",
       "imageSvg": null,
@@ -15536,18 +15536,18 @@
       "id": "S5-089",
       "set": 5,
       "type": "single",
-      "stem": "Which ETT feature is specifically intended to provide an alternate opening if the bevel is obstructed?",
+      "stem": "Which endotracheal tube type contains spiral reinforcement to resist kinking and compression?",
       "options": [
-        "Distance marker",
-        "Pilot balloon",
-        "Murphy eye",
-        "Inflation valve"
+        "Armored or flexometallic tube",
+        "Oral RAE tube",
+        "Standard uncuffed PVC tube",
+        "Laser-resistant tube"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "The Murphy eye is an additional opening near the distal tube tip.",
-      "citation": "Airway Equipment · 7",
+      "explanation": "Armored, or flexometallic, tubes contain an embedded metal or nylon spiral within the shaft. The reinforcement makes them resistant to kinking and compression and useful for head, neck, and tracheal surgery.",
+      "citation": "Airway Equipment · Slide 8",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -15561,7 +15561,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 7"
+      "sourceLocator": "Slide 8"
     },
     {
       "id": "S5-090",
@@ -15611,7 +15611,7 @@
       "answer": [
         2
       ],
-      "explanation": "Armored/flexometallic tubes contain spiral reinforcement that resists kinking.",
+      "explanation": "Armored or flexometallic endotracheal tubes contain spiral reinforcement that resists kinking and compression. They are particularly useful when head or neck position or the surgical field could bend or compress a standard tube.",
       "citation": "Airway Equipment · 8",
       "topic": "Airway",
       "imageSvg": null,
@@ -15738,7 +15738,7 @@
       "answer": [
         1
       ],
-      "explanation": "The Macintosh blade tip is positioned in the vallecula. Lifting tensions the glossoepiglottic ligament and elevates the epiglottis indirectly, unlike the Miller blade, which directly lifts the epiglottis.",
+      "explanation": "The Macintosh blade tip is positioned in the vallecula. Forward lifting tensions the glossoepiglottic ligament and elevates the epiglottis indirectly, unlike the Miller blade, which directly lifts the epiglottis.",
       "citation": "Airway Equipment · 11",
       "topic": "Airway",
       "imageSvg": null,
@@ -15803,7 +15803,7 @@
       "answer": [
         2
       ],
-      "explanation": "The Miller is a straight blade used to directly lift the epiglottis.",
+      "explanation": "The Miller is a long, straight laryngoscope blade designed for epiglottic entrapment and direct lift. The Macintosh blade is curved and lifts the epiglottis indirectly from the vallecula.",
       "citation": "Airway Equipment · 11",
       "topic": "Airway",
       "imageSvg": null,
@@ -15834,7 +15834,7 @@
       "answer": [
         3
       ],
-      "explanation": "The cricothyroid membrane is bounded by the thyroid and cricoid cartilages.",
+      "explanation": "The cricothyroid membrane lies between the inferior border of the thyroid cartilage and the superior edge of the cricoid cartilage. It is the membrane used for emergency cricothyrotomy access.",
       "citation": "Airway Equipment · 15",
       "topic": "Airway",
       "imageSvg": null,
@@ -15869,7 +15869,7 @@
         2,
         5
       ],
-      "explanation": "The lecture names needle, percutaneous, and surgical cricothyrotomy.",
+      "explanation": "The lecture identifies three cricothyrotomy approaches: needle, percutaneous, and surgical. The other listed airway techniques are not cricothyrotomy methods.",
       "citation": "Airway Equipment · 15",
       "topic": "Airway",
       "imageSvg": null,
@@ -15892,16 +15892,16 @@
       "type": "single",
       "stem": "A cannot-intubate, cannot-ventilate situation persists despite airway adjuncts and rescue ventilation attempts. What is the definitive rescue step emphasized in the lecture?",
       "options": [
-        "Repeat OPA placement indefinitely",
-        "Continue mask ventilation despite failure",
         "Cricothyrotomy",
-        "Switch from Macintosh to Miller indefinitely"
+        "Repeated oropharyngeal-airway placement despite failure",
+        "Continued mask ventilation despite inability to ventilate",
+        "Repeated blade changes without establishing oxygenation"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "Cricothyrotomy is presented as the final lifesaving airway in a CICO emergency.",
-      "citation": "Airway Equipment · 15",
+      "explanation": "The lecture identifies cricothyrotomy as the final lifesaving airway option when a cannot-intubate, cannot-ventilate emergency persists despite noninvasive rescue attempts.",
+      "citation": "Airway Equipment · Slide 15",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
