@@ -317,6 +317,23 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if((dashboard+studio).includes('srna_hazards_safety_harder_v1'))fail('Obsolete Challenge aggregation key remains');
 }
 
+// Public branding, legal notices, and study content must remain independent of schools/faculty.
+{
+  const privacy=read('privacy.html'),terms=read('terms.html'),core=read('equipment/assets/app-core.js'),supabase=read('equipment/assets/supabase-sync.js');
+  for(const token of ['SNAR Study Tool','De-identification commitment','Privacy request','Supabase'])if(!privacy.includes(token))fail('Privacy Notice missing '+token);
+  for(const token of ['SNAR Study Tool','Independent educational resource','Educational use only','Privacy Notice'])if(!terms.includes(token))fail('Terms of Use missing '+token);
+  for(const token of ['data-cloud-consent','Privacy & Account','data-privacy-submit','Delete account & data'])if(!core.includes(token))fail('Account legal controls missing '+token);
+  if(!supabase.includes('submitPrivacyRequest')||!supabase.includes('snar_submit_privacy_request'))fail('Private privacy-request API is not wired');
+  for(const p of ['index.html','equipment/index.html','equipment/exam-1/index.html','equipment/exam-1/studio.html','privacy.html','terms.html']){
+    const src=read(p);
+    if(/Mary Baldwin|MBU-NAP|Professor\b|Dr\.\s+Elmore/i.test(src))fail(p+': obsolete institutional/faculty branding remains');
+  }
+  for(const p of ['equipment/exam-1/data/bank1.json','equipment/exam-1/data/bank2.json','equipment/exam-1/data/bank3.json','equipment/exam-1/data/combined.json','equipment/exam-1/data/hazards.json']){
+    const src=read(p);
+    if(/Mary Baldwin|MBU-NAP|Professor\b|\binstructor\b|Dr\.\s+[A-Z][a-z]+/i.test(src))fail(p+': instructor/faculty attribution remains in question content');
+  }
+}
+
 // Study Studio answer state must use canonical UIDs and restore graded selections on revisit.
 {
  const studio=read('equipment/assets/studio-page.js'),sync=read('equipment/assets/studio-sync.js');
