@@ -118,22 +118,9 @@ async function signOut(){
   try{if(s?.access_token)await raw('/auth/v1/logout',{method:'POST',token:s.access_token})}catch{}
   resetCloudSession()
 }
-async function resendConfirmation(email){
-  const value=String(email||'').trim();if(!value)throw Error('Enter your email address first.');
-  await raw('/auth/v1/resend?redirect_to='+encodeURIComponent(APP_ROOT),{method:'POST',body:{type:'signup',email:value}});
-  emit('confirmation-required',{email:value});return true
-}
-async function requestPasswordReset(email){
-  const value=String(email||'').trim();if(!value)throw Error('Enter your email address first.');
-  await raw('/auth/v1/recover?redirect_to='+encodeURIComponent(APP_ROOT),{method:'POST',body:{email:value}});
-  emit('recovery-sent',{email:value});return true
-}
-async function updatePassword(password){
-  const value=String(password||'');if(value.length<8)throw Error('Password must be at least 8 characters.');
-  const s=await validSession();if(!s?.access_token)throw Error('Open the password reset link from your email first.');
-  await raw('/auth/v1/user',{method:'PUT',token:s.access_token,body:{password:value}});
-  recoveryMode=false;emit('signed-in',{email:s.user?.email||''});return true
-}
+async function resendConfirmation(email){const value=String(email||'').trim();if(!value)throw Error('Enter your email address first.');await raw('/auth/v1/resend?redirect_to='+encodeURIComponent(APP_ROOT),{method:'POST',body:{type:'signup',email:value}});emit('confirmation-required',{email:value});return true}
+async function requestPasswordReset(email){const value=String(email||'').trim();if(!value)throw Error('Enter your email address first.');await raw('/auth/v1/recover?redirect_to='+encodeURIComponent(APP_ROOT),{method:'POST',body:{email:value}});emit('recovery-sent',{email:value});return true}
+async function updatePassword(password){const value=String(password||'');if(value.length<8)throw Error('Password must be at least 8 characters.');const s=await validSession();if(!s?.access_token)throw Error('Open the password reset link from your email first.');await raw('/auth/v1/user',{method:'PUT',token:s.access_token,body:{password:value}});recoveryMode=false;emit('signed-in',{email:s.user?.email||''});return true}
 function currentUser(){return session()?.user||null}
 async function deleteAccount(){
   const s=await validSession();if(!s?.access_token)throw Error('Sign in to delete your account.');
