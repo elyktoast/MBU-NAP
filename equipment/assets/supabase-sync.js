@@ -3,7 +3,7 @@
 const cfg=window.MBU_SUPABASE_CONFIG||{},sync=window.MBUSync,SESSION_KEY='mbu_supabase_session_v1',STATUS_EVENT='mbu:supabase-status',script=document.currentScript,APP_ROOT=new URL('../../',script?.src||location.href).href;
 if(!cfg.url||!cfg.publishableKey||!sync){console.warn('Supabase sync is not configured');return}
 const base=cfg.url.replace(/\/$/,''),AUTO_SYNC_INTERVAL=5*60*1000;
-let syncing=false,lastSyncAt=0,lastState='signed-out',remoteByKey=new Map(),timer=null,autoSyncTimer=null,recoveryMode=false;
+let syncing=false,lastSyncAt=0,lastState='signed-out',remoteByKey=new Map(),calibrationByKey=new Map(),calibrationFetchedAt=0,timer=null,autoSyncTimer=null,recoveryMode=false;
 
 const safeJSON=(raw,fallback=null)=>{try{return JSON.parse(raw)}catch{return fallback}};
 const session=()=>safeJSON(localStorage.getItem(SESSION_KEY));
@@ -72,7 +72,7 @@ async function signUp(email,password){
 }
 async function signOut(){
   const s=session();try{if(s?.access_token)await raw('/auth/v1/logout',{method:'POST',token:s.access_token})}catch{}
-  stopAutoSync();saveSession(null);remoteByKey.clear();emit('signed-out')
+  stopAutoSync();saveSession(null);remoteByKey.clear();calibrationByKey.clear();calibrationFetchedAt=0;emit('signed-out')
 }
 async function resendConfirmation(email){
   const value=String(email||'').trim();if(!value)throw Error('Enter your email address first.');
@@ -91,6 +91,18 @@ async function updatePassword(password){
   recoveryMode=false;emit('signed-in',{email:s.user?.email||''});return true
 }
 function currentUser(){return session()?.user||null}
+async function submitItemContribution(questionId,correct,responseMs=null,sessionMode='unknown'){
+  const id=String(questionId||'').trim();if(!id)return false;
+  const ms=responseMs==null?null:Math.max(0,Math.min(3600000,Math.round(Number(responseMs)||0)));
+  const result=await api('/rest/v1/rpc/mbu_submit_item_contribution',{method:'POST',body:{p_question_id:id,p_correct:!!correct,p_response_ms:ms,p_session_mode:String(sessionMode||'unknown')}});
+  return result===true
+}
+async function refreshCalibration(force=false){
+  if(!force&&calibrationFetchedAt&&Date.now()-calibrationFetchedAt<300000)return calibrationByKey;
+  const rows=await api('/rest/v1/mbu_item_calibration?select=question_id,unique_learners,correct_first_attempts,incorrect_first_attempts,adaptive_first_attempts,response_samples,avg_response_ms,p_value,difficulty_logit,standard_error,confidence,updated_at');
+  calibrationByKey=new Map((rows||[]).map(row=>[String(row.question_id),row]));calibrationFetchedAt=Date.now();return calibrationByKey
+}
+function calibration(questionId){return calibrationByKey.get(String(questionId||''))||null}
 async function listDevices(){
   const s=await validSession();if(!s?.user?.id)return[];
   const rows=await api('/rest/v1/mbu_sync_devices?select=device_id,device_label,app_build,first_seen_at,last_seen_at&user_id=eq.'+encodeURIComponent(s.user.id)+'&order=last_seen_at.desc');
@@ -193,13 +205,13 @@ async function handleAuthRedirect(){
   startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100);return true
 }
 window.addEventListener('hashchange',()=>handleAuthRedirect().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth redirect failed',e)}));
-window.MBUSupabase={signIn,signUp,signOut,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,listDevices,removeDevice,listHistory,restoreVersion,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
+window.MBUSupabase={signIn,signUp,signOut,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,submitItemContribution,refreshCalibration,calibration,listDevices,removeDevice,listHistory,restoreVersion,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
 const authReady=(async()=>{
   if(await handleAuthRedirect())return true;
   if(session()){
     if(sessionStorage.getItem('mbu_cloud_reload')==='1')sessionStorage.removeItem('mbu_cloud_reload');
     const valid=await validSession();
-    if(valid?.user?.id){startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),400);emit(recoveryMode?'password-recovery':'signed-in',{email:valid.user?.email||''});return true}
+    if(valid?.user?.id){startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),400);setTimeout(()=>refreshCalibration().catch(()=>{}),250);emit(recoveryMode?'password-recovery':'signed-in',{email:valid.user?.email||''});return true}
   }
   emit('signed-out');return false
 })().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth bootstrap failed',e);return false});
