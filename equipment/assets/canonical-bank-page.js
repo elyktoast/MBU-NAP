@@ -10,7 +10,7 @@ function shell(bank){
   '<div class="stats"><div>Answered: <strong id="completed">0</strong></div><div>Correct: <strong id="correct">0</strong></div><div>Missed: <strong id="missed">0</strong></div><div>Accuracy: <strong id="score">0</strong>%</div><span id="total" class="hidden">0</span></div><div id="mbuNavigator" class="row hidden"></div><div class="type" id="type"></div><div class="stem" id="stem" tabindex="-1"></div><div class="mbu-crossout-hint">Tip: Right-click an answer to cross it out.</div><div class="image hidden" id="image"></div><div class="options" id="options"></div><div class="row" id="multi-submit-row" style="display:none;margin:4px 0 18px;justify-content:flex-end"><button class="btn" id="submit-multi" onclick="submitAnswer()">Submit Answer</button></div><div class="explain" id="explain" aria-live="polite"><div id="explain-text"></div><div class="cite" id="citation"></div></div><div class="controls"><button class="btn out" id="prev" onclick="nav(-1)">Previous</button><div class="row"><button class="btn out" onclick="resetCurrent()">Reset</button><button class="btn" id="next" onclick="nav(1)">Next</button></div></div></section></div>'
 }
 async function start(){
-  if(!runtime)throw Error('SNAR Study Tool build runtime is missing');
+  if(!runtime)throw Error('SRNA Study Tool build runtime is missing');
   if(!bankId)throw Error('Canonical bank id is missing');
   const manifest=await runtime.fetchJSON(new URL('banks.json',exam),{cache:'no-store'}),bank=(manifest.banks||[]).find(x=>x.id===bankId);
   if(!bank||bank.engine!=='canonical')throw Error('Canonical bank config not found: '+bankId);
