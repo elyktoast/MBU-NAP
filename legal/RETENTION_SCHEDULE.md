@@ -5,6 +5,7 @@ The default rule is to keep identifiable or account-linked information only as l
 | Data category | Default retention | Disposal / trigger |
 | --- | --- | --- |
 | Guest study progress | Browser-controlled | Until the user clears browser storage or replaces/imports local data |
+| Guest session heartbeat | Approximately 24 hours | Automatic/server cleanup based on last-seen timestamp |
 | Authentication account | While account is active | Removed through self-service account deletion |
 | Current cloud study state | While account is active | Removed when the account is deleted |
 | Cloud restore/version history | Up to 90 days | Eligible for periodic operator retention cleanup |
