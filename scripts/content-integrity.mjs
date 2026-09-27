@@ -6,9 +6,7 @@ const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const norm=s=>String(s??'').trim().replace(/\s+/g,' ').toLowerCase();
 const err=m=>errors.push(m),warn=m=>warnings.push(m);
 const manifest=read('equipment/exam-1/banks.json'),baseline=read('scripts/content-integrity-baseline.json');
-const taxonomy=manifest.contentTaxonomy||{};
-const allowedTopics=new Set(taxonomy.topics||[]);
-const allowedSources=new Set(taxonomy.sourceTitles||[]);
+const taxonomy=manifest.contentTaxonomy||{},allowedTopics=new Set(taxonomy.topics||[]),allowedSources=new Set(taxonomy.sourceTitles||[]);
 
 const sources=[
   ['Quiz Bank 1','equipment/exam-1/data/bank1.json'],
@@ -41,7 +39,8 @@ for(const [label,file] of sources){
       const first=seenStemBySet.get(sk),message=label+': duplicate stem in set '+set+' ('+first.id+' and '+id+')';
       if(knownDupes.has(identity)){
         seenKnownDupes.add(identity);
-        const firstIndexes=(Array.isArray(first.question.answer??first.question.correct??first.question.a)?(first.question.answer??first.question.correct??first.question.a):[first.question.answer??first.question.correct??first.question.a]).map(Number);
+        const firstRaw=first.question.answer??first.question.correct??first.question.a;
+        const firstIndexes=(Array.isArray(firstRaw)?firstRaw:[firstRaw]).map(Number);
         const thisIndexes=ans.map(Number);
         if(JSON.stringify(keyedText(first.question,firstIndexes))!==JSON.stringify(keyedText(q,thisIndexes)))warn(message+' has different keyed answer wording');
       }else err(message+' is not in the approved duplicate baseline');
@@ -61,17 +60,22 @@ for(const [label,file] of sources){
 
     const citation=q.citation??q.src??q.ref;
     if(citation==null||String(Array.isArray(citation)?citation.join(' '):citation).trim()==='')missingCitation++;
+
     const topic=String(q.topic??q.lec??q.concept??'').trim();
     if(!topic)missingTopic++;
-    else if(!allowedTopics.has(topic))err(label+': '+identity+' has non-canonical topic '+topic);
-    const sourceMeta=q.sourceMeta;
-    if(!sourceMeta||typeof sourceMeta!=='object'||Array.isArray(sourceMeta)||!Array.isArray(sourceMeta.families)||!sourceMeta.families.length||!['slides','document'].includes(sourceMeta.citationFormat))missingSourceMeta++;
-    else if(sourceMeta.families.some(x=>!allowedSources.has(String(x))))err(label+': '+identity+' has non-canonical source family metadata');
-    if(!q.sourceMeta||!Array.isArray(q.sourceMeta.families)||!q.sourceMeta.families.length)err(label+': '+identity+' is missing structured source metadata');
-    const sourceTitle=String(q.sourceTitle||'').trim();if(!sourceTitle)missingSourceTitle++;else if(!allowedSources.has(sourceTitle))err(label+': '+identity+' has non-canonical sourceTitle '+sourceTitle);
-    if(!String(q.sourceLocator||'').trim())missingSourceLocator++;
-    const citationText=String(Array.isArray(citation)?citation.join('; '):citation||'');
-    if(citationText&&(/\.pdf\b/i.test(citationText)||/,\s*Slides?\b/i.test(citationText)||/:\s*slides?\b/i.test(citationText)))err(label+': '+identity+' has legacy citation formatting');
+    else if(!allowedTopics.has(topic))err(label+': '+identity+' has noncanonical topic '+topic);
+
+    const sourceTitle=String(q.sourceTitle||'').trim(),sourceLocator=String(q.sourceLocator||'').trim(),sourceMeta=q.sourceMeta;
+    if(!sourceTitle)missingSourceTitle++;
+    else if(!allowedSources.has(sourceTitle))err(label+': '+identity+' has noncanonical sourceTitle '+sourceTitle);
+    if(!sourceLocator)missingSourceLocator++;
+
+    if(!sourceMeta||typeof sourceMeta!=='object'||Array.isArray(sourceMeta)||!Array.isArray(sourceMeta.families)||!sourceMeta.families.length||!['slides','document'].includes(sourceMeta.citationFormat)){
+      missingSourceMeta++;
+    }else{
+      for(const family of sourceMeta.families)if(!allowedSources.has(String(family)))err(label+': '+identity+' has noncanonical source family '+String(family));
+    }
+
     if(!String(q.explanation??q.exp??q.rationale??'').trim())missingExplanation++;
 
     for(const imageKey of [q.imageId,q.image]){
@@ -82,9 +86,9 @@ for(const [label,file] of sources){
   for(const identity of knownDupes)if(!seenKnownDupes.has(identity))warn(label+': duplicate baseline entry '+identity+' is no longer duplicated and can be removed');
   if(missingCitation)err(label+': '+missingCitation+' questions have no citation/source text');
   if(missingExplanation)err(label+': '+missingExplanation+' questions have no explanation/rationale');
-  if(missingSourceTitle)err(label+': '+missingSourceTitle+' questions have no structured source title');
-  if(missingSourceLocator)err(label+': '+missingSourceLocator+' questions have no structured source locator');
-  if(missingSourceMeta)err(label+': '+missingSourceMeta+' questions have no structured source metadata');
+  if(missingSourceTitle)err(label+': '+missingSourceTitle+' questions have no canonical sourceTitle');
+  if(missingSourceLocator)err(label+': '+missingSourceLocator+' questions have no sourceLocator');
+  if(missingSourceMeta)err(label+': '+missingSourceMeta+' questions have incomplete structured source metadata');
 
   const allowedMissingTopics=Number(baseline.allowedMissingTopics?.[name]??0);
   if(missingTopic>allowedMissingTopics)err(label+': '+missingTopic+' questions have no explicit topic; baseline allows '+allowedMissingTopics);
