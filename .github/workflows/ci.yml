@@ -6,7 +6,7 @@ on:
   pull_request:
 
 concurrency:
-  group: quality-gates-${{ github.ref }}
+  group: snar-quality-gates-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
