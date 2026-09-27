@@ -40,6 +40,8 @@ jobs:
         run: npm run test:semantic
       - name: Enforce performance and architecture budgets
         run: npm run test:perf
+      - name: Analyze question-bank balance
+        run: npm run analyze:questions
 
   browser:
     name: Browser regression
