@@ -742,7 +742,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const boot=read('equipment/assets/build-bootstrap.js'),studio=read('equipment/assets/studio-page.js'),html=read('equipment/exam-1/studio.html'),core=read('equipment/assets/app-core.js');
  if(boot.includes('requireAccount'))fail('Account gate: normal app initialization must not require sign-in');
- for(const token of ['adaptiveToggleChanged','legalAccepted===true','openAccount'])if(!studio.includes(token))fail('Adaptive account gate missing '+token);
+ for(const token of ['adaptiveAccountReady','adaptiveToggleChanged','legalAccepted===true','openAccount'])if(!studio.includes(token))fail('Adaptive account gate missing '+token);
  if(!html.includes('Account required')||!html.includes('onchange="adaptiveToggleChanged(this)"'))fail('Studio: Adaptive account requirement is not visible');
  if(core.includes('mbu-auth-gate')||core.includes('requireAccount'))fail('Account gate: obsolete whole-site authentication gate remains');
 }
@@ -755,7 +755,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(boot.includes('html[data-mbu-boot="loading"] body{pointer-events:none}'))fail('Legal gate is blocked by bootstrap pointer-events');
  if(!boot.includes('body>#snar-legal-gate{pointer-events:auto}'))fail('Bootstrap does not keep the legal gate interactive while loading');
  for(const token of ["snar_terms_version:'2026-09-27-v2'","snar_privacy_version:'2026-09-27-v2'",'snar_adult_ack:true','snar_has_current_legal_acceptance','snar_accept_current_legal','acceptCurrentLegal','legalAccepted'])if(!cloud.includes(token))fail('Account legal acknowledgement contract missing '+token);
- if(!core.includes('data-cloud-reaccept')||!core.includes('Updated account agreement required'))fail('Authenticated legal re-acceptance UI is missing');
+ if(!core.includes('data-cloud-reaccept')||!core.includes('Updated account agreement required')||!core.includes('Cloud: Action required')||!core.includes('data-cloud-legal-required'))fail('Authenticated legal re-acceptance UI/state handling is missing');
 }
 
 // Privacy/terms and account controls must match the implemented data practices.
