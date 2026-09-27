@@ -7,10 +7,10 @@ function continueForBank(b){
   if(d.sets&&typeof d.sets==='object'){
     const states=(b.sets||[]).map(set=>{
       const st=d.sets[set]||{},count=Number(b.questionsPerSet||0)||Object.keys(st.graded||{}).length,done=Object.values(st.graded||{}).filter(Boolean).length,current=Math.min(Math.max(0,Number(st.current)||0),Math.max(0,count-1));
-      return{set,st,count,done,current,incomplete:done<count,started:done>0||current>0}
+      return{set,count,done,current,incomplete:done<count,started:done>0||current>0}
     });
-    const recent=window.MBUStudyIntelligence?.recentActivity?.(100)||[],recentSet=Number(recent.find(x=>x.bank===b.studioKey)?.set)||0;
-    const pick=states.find(x=>x.incomplete&&x.set===recentSet)||states.find(x=>x.incomplete&&x.started)||states.find(x=>x.incomplete);
+    const savedLast=Number(d.lastSet),recent=window.MBUStudyIntelligence?.recentActivity?.(100)||[],recentSet=Number(recent.find(x=>x.bank===b.studioKey)?.set)||0;
+    const pick=states.find(x=>x.incomplete&&x.set===savedLast)||states.find(x=>x.incomplete&&x.set===recentSet)||states.filter(x=>x.incomplete&&x.started).sort((a,b)=>b.current-a.current||b.done-a.done||b.set-a.set)[0]||states.find(x=>x.incomplete);
     if(pick)return{label:b.label,detail:'Practice Set '+pick.set+' · Question '+(pick.current+1)+' / '+pick.count,href:b.page+'?set='+encodeURIComponent(pick.set)}
   }
   return{label:b.label,detail:'Review completed progress',href:b.page}
