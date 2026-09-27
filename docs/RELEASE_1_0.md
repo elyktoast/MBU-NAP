@@ -24,7 +24,7 @@ SRNA Study Tool 1.0 includes:
 The release-candidate build passed:
 
 1. repository architecture validation;
-2. canonical content-integrity validation across 1,950 questions;
+2. canonical content-integrity validation across 2,000 questions;
 3. performance/architecture budgets;
 4. the full Playwright browser regression suite;
 5. GitHub Pages build and deployment;
@@ -32,14 +32,19 @@ The release-candidate build passed:
 
 Cross-device synchronization had also previously been verified using separate desktop and iPhone browser devices before final hardening. The final release preserves that same local-first sync path while adding server-authoritative write protection.
 
-## Known source-content debt
+## Content-audit status
 
-These are documented source limitations, not runtime defects:
+The source-grounded content rebuild completed on 2026-09-27:
 
-- Bank 1's 500 legacy questions do not contain explicit topic metadata.
-- Bank 1 contains 21 approved duplicate-stem occurrences.
-- Workstation Hazards Set 2 contains 65 duplicate occurrences inherited from the original source implementation. They remain for compatibility until authoritative replacement source material is available.
-- Automated integrity checks can verify structure, citations, answer indexing, and explanations, but cannot independently prove every anesthesia answer against lecture material that is not stored in the repository.
+- all 2,000 canonical questions pass structural/content-integrity gates;
+- all 21 former Bank 1 same-set duplicate occurrences were replaced;
+- all 65 former repetitive Workstation Hazards Set 2 slots were rebuilt;
+- Hazards Set 2 now contains 100/100 unique normalized stems;
+- no same-set exact duplicate groups remain;
+- no same-stem + same-option-pool conflicting answer keys remain;
+- topic and canonical source metadata are complete.
+
+Heuristic review queues remain for future refinement (94 short-explanation flags and 34 long-keyed-answer flags). These are review prompts, not proven defects or release blockers.
 
 See `docs/CONTENT_AUDIT.md` for the detailed content audit.
 
