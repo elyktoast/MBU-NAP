@@ -73,68 +73,6 @@ function smartReview(questions,count=50){
   const n=Math.max(1,Math.min(Number(count)||50,questions.length));
   return questions.map((q,i)=>({q,score:scoreQuestion(q),tie:tieRank(q.uid||i)})).sort((a,b)=>b.score-a.score||a.tie-b.tie).slice(0,n).map(x=>x.q)
 }
-function clampLevel(v){return Math.max(1,Math.min(5,Number(v)||3))}
-function clampLogit(v){return Math.max(-2.5,Math.min(2.5,Number(v)||0))}
-function challengeToLogit(challenge){return clampLogit((clampLevel(challenge)-3)*1.25)}
-function logitToLevel(logit){return clampLevel(Math.round(3+clampLogit(logit)/1.25))}
-function logistic(x){return 1/(1+Math.exp(-Math.max(-12,Math.min(12,x))))}
-function adaptiveChallenge(q){
-  const d=db(),uid=String(q?.uid||''),a=d.attempts[uid],multi=(Array.isArray(q?.ans)?q.ans:Array.isArray(q?.answer)?q.answer:[]).length>1;
-  let score=3+(multi?.65:0)+((q?.bank==='hh'||Number(q?.set)===7)?.7:0);
-  const topic=topicOf(q),topicRows=Object.values(d.attempts).filter(x=>x.topic===topic),topicAttempts=topicRows.reduce((n,x)=>n+(Number(x.attempts)||0),0),topicCorrect=topicRows.reduce((n,x)=>n+(Number(x.correct)||0),0);
-  if(topicAttempts>=4){const acc=topicCorrect/topicAttempts;score+=(.5-acc)*1.2}
-  if(a&&Number(a.attempts)>0){
-    const acc=(Number(a.correct)||0)/Number(a.attempts),observed=3+(.5-acc)*3,weight=Math.min(.85,Number(a.attempts)/5);
-    score=score*(1-weight)+observed*weight;
-    if(!a.lastCorrect)score+=.15;
-    if((Number(a.streak)||0)>=3)score-=.15
-  }
-  return Math.round(clampLevel(score)*100)/100
-}
-function estimateAbility(path=[]){
-  const rows=Array.isArray(path)?path.filter(x=>plain(x)&&Number.isFinite(Number(x.difficulty))):[];
-  let theta=0;
-  const priorVar=2.25;
-  for(let iter=0;iter<6;iter++){
-    let gradient=-theta/priorVar,information=1/priorVar;
-    for(const row of rows){
-      const b=clampLogit(row.difficulty),p=logistic(theta-b);
-      gradient+=(row.ok?1:0)-p;
-      information+=p*(1-p)
-    }
-    const step=gradient/Math.max(.15,information);
-    theta=clampLogit(theta+Math.max(-1,Math.min(1,step)));
-    if(Math.abs(step)<.001)break
-  }
-  let information=1/priorVar;
-  for(const row of rows){const p=logistic(theta-clampLogit(row.difficulty));information+=p*(1-p)}
-  return{theta,se:1/Math.sqrt(information),information}
-}
-function normalizeAdaptiveState(state,count=50){
-  const s=plain(state)?state:{},seen=Array.isArray(s.seenUids)?[...new Set(s.seenUids.map(String).filter(Boolean))]:[],topics=plain(s.topicCounts)?s.topicCounts:{},poolUids=Array.isArray(s.poolUids)?[...new Set(s.poolUids.map(String).filter(Boolean))]:[],path=Array.isArray(s.path)?s.path.filter(plain).slice(-200):[];
-  const estimate=path.length?estimateAbility(path):{theta:clampLogit(s.theta),se:Number(s.se)||1.5,information:Number(s.information)||0};
-  return{mode:'adaptive',theta:estimate.theta,se:estimate.se,information:estimate.information,level:logitToLevel(estimate.theta),answered:Math.max(0,Number(s.answered)||path.length),correct:Math.max(0,Number(s.correct)||path.filter(x=>x.ok).length),maxQuestions:Math.max(1,Math.min(200,Number(s.maxQuestions)||Number(count)||50)),seenUids:seen,poolUids,topicCounts:Object.fromEntries(Object.entries(topics).map(([k,v])=>[String(k),Math.max(0,Number(v)||0)])),path,currentLevel:logitToLevel(estimate.theta)}
-}
-function adaptivePick(questions,state){
-  const s=normalizeAdaptiveState(state),seen=new Set(s.seenUids),allowed=s.poolUids.length?new Set(s.poolUids):null,available=questions.filter(q=>q&&q.uid&&!seen.has(String(q.uid))&&(!allowed||allowed.has(String(q.uid))));
-  if(!available.length)return{question:null,state:s};
-  const target=s.theta,topicFloor=s.answered?Math.floor(s.answered/Math.max(1,Object.keys(s.topicCounts).length||1)):0;
-  const ranked=available.map((q,i)=>{
-    const challenge=adaptiveChallenge(q),difficulty=challengeToLogit(challenge),probability=logistic(target-difficulty),information=probability*(1-probability),topic=topicOf(q),topicCount=Number(s.topicCounts[topic])||0,a=db().attempts[String(q.uid)],recent=a?.lastAt&&now()-Number(a.lastAt)<DAY?1:0;
-    const balancePenalty=Math.max(0,topicCount-topicFloor)*.08;
-    return{q,challenge,difficulty,probability,information,score:Math.abs(probability-.5)+balancePenalty+recent*.05,tie:tieRank(q.uid||i)}
-  }).sort((a,b)=>a.score-b.score||b.information-a.information||a.tie-b.tie);
-  const chosen=ranked[0],next={...s,seenUids:[...s.seenUids,String(chosen.q.uid)],topicCounts:{...s.topicCounts,[topicOf(chosen.q)]:(Number(s.topicCounts[topicOf(chosen.q)])||0)+1},currentLevel:logitToLevel(s.theta)};
-  return{question:chosen.q,state:next,challenge:chosen.challenge,difficulty:chosen.difficulty,probability:chosen.probability,information:chosen.information}
-}
-function adaptiveStart(questions,count=50){
-  const base=normalizeAdaptiveState({theta:0,maxQuestions:count,poolUids:questions.map(q=>String(q.uid))},count);
-  return adaptivePick(questions,base)
-}
-function adaptiveAdvance(state,q,ok){
-  const s=normalizeAdaptiveState(state),difficulty=challengeToLogit(adaptiveChallenge(q)),before=s.theta,path=[...s.path,{uid:String(q?.uid||''),ok:!!ok,difficulty,challenge:adaptiveChallenge(q),at:now()}].slice(-200),estimate=estimateAbility(path),after=estimate.theta;
-  return{...s,theta:after,se:estimate.se,information:estimate.information,level:logitToLevel(after),currentLevel:logitToLevel(after),answered:s.answered+1,correct:s.correct+(ok?1:0),path:[...path.slice(0,-1),{...path[path.length-1],thetaBefore:before,thetaAfter:after}]}
-}
 function stats(rows){
   const total=rows.length,correct=rows.reduce((n,a)=>n+(Number(a.correct)||0),0),attempts=rows.reduce((n,a)=>n+(Number(a.attempts)||0),0);
   return{questions:total,attempts,correct,accuracy:attempts?Math.round(correct/attempts*100):0}
@@ -147,6 +85,8 @@ function analytics(){
   const windowStats=cutoff=>{const xs=activity.filter(x=>x.at>=cutoff);return{answered:xs.length,correct:xs.filter(x=>x.ok).length,accuracy:xs.length?Math.round(xs.filter(x=>x.ok).length/xs.length*100):0}};
   return{overall:stats(attempts),byTopic:convert(byTopic),byBank:convert(byBank),last7:windowStats(cutoff7),last30:windowStats(cutoff30),due:due().length}
 }
+function questionStats(uid){const a=db().attempts[String(uid||'')];return a?{...a}:null}
+function topicStats(topic){const rows=Object.values(db().attempts).filter(x=>x.topic===String(topic||''));return stats(rows)}
 function recentActivity(limit=20){return db().activity.slice(-Math.max(1,limit)).reverse().map(x=>({...x}))}
 function summary(){const a=analytics(),todayStart=new Date();todayStart.setHours(0,0,0,0);const today=db().activity.filter(x=>x.type==='answer'&&x.at>=todayStart.getTime());return{...a,today:{answered:today.length,correct:today.filter(x=>x.ok).length,accuracy:today.length?Math.round(today.filter(x=>x.ok).length/today.length*100):0,topics:new Set(today.map(x=>x.topic)).size}}}
 function addIssue(bank,q,details={}){
@@ -156,5 +96,5 @@ function addIssue(bank,q,details={}){
 function issues(){return db().issues.map(x=>({...x}))}
 function closeIssue(id){const d=db(),x=d.issues.find(x=>x.id===id);if(!x)return false;x.status='closed';x.closedAt=now();save(d);return true}
 function clearAll(){localStorage.removeItem(STORE);cache=null;lastSerialized=''}
-window.MBUStudyIntelligence={STORE,schema:SCHEMA,recordAnswer,seedLegacy,due,smartReview,adaptiveChallenge,adaptiveStart,adaptivePick,adaptiveAdvance,analytics,recentActivity,summary,addIssue,issues,closeIssue,questionMeta,clearAll};
+window.MBUStudyIntelligence={STORE,schema:SCHEMA,recordAnswer,seedLegacy,due,smartReview,questionStats,topicStats,analytics,recentActivity,summary,addIssue,issues,closeIssue,questionMeta,clearAll};
 })();
