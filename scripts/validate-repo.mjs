@@ -701,9 +701,11 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const boot=read('equipment/assets/build-bootstrap.js'),intel=read('equipment/assets/study-intelligence.js'),search=read('equipment/assets/question-search.js'),studio=read('equipment/assets/studio-page.js'),dash=read('equipment/assets/exam-dashboard.js'),core=read('equipment/assets/app-core.js');
  for(const token of ["loadScript('study-intelligence.js')","loadScript('question-search.js')"])if(!boot.includes(token))fail('Shared study runtime missing '+token);
- for(const token of ['mbu_study_intelligence_v1','recordAnswer','smartReview','due','analytics','recentActivity','addIssue'])if(!intel.includes(token))fail('Study intelligence contract missing '+token);
- for(const token of ["m==='smart'","m==='due'",'analyticsSummary','seedLegacy'])if(!studio.includes(token))fail('Studio intelligence integration missing '+token);
+ for(const token of ['mbu_study_intelligence_v1','recordAnswer','smartReview','adaptiveChallenge','adaptiveStart','adaptivePick','adaptiveAdvance','due','analytics','recentActivity','addIssue'])if(!intel.includes(token))fail('Study intelligence contract missing '+token);
+ for(const token of ["m==='smart'","m==='adaptive'","m==='due'",'analyticsSummary','adaptiveN','seedLegacy'])if(!studio.includes(token))fail('Studio intelligence integration missing '+token);
  for(const token of ['continuePanel','recentPanel','MBUStudyIntelligence'])if(!dash.includes(token))fail('Exam dashboard intelligence integration missing '+token);
+ if(!read('equipment/exam-1/studio.html').includes('Start Adaptive Quiz'))fail('Studio adaptive entry point is missing');
+ const studioSync=read('equipment/assets/studio-sync.js');if(!studioSync.includes("v.mode==='adaptive'")||!studioSync.includes("out.mode='adaptive'"))fail('Studio adaptive session normalization is missing');
  if(!core.includes("keys=new Set(['mbu_exam1_studio_v1','mbu_study_intelligence_v1'])"))fail('Study intelligence is not cloud tracked');
  for(const p of ['equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-page.js'])if(!read(p).includes('MBUStudyIntelligence'))fail(p+': answer path bypasses shared study intelligence');
 }
