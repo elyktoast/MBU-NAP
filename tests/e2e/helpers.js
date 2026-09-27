@@ -5,7 +5,7 @@ const exam = '/equipment/exam-1';
 async function clearAppState(page) {
   await page.addInitScript(() => {
     const now=Math.floor(Date.now()/1000);
-    localStorage.setItem('snar_legal_ack_2026_09_27_v2','1');
+    localStorage.setItem('snar_legal_acceptance_v2', JSON.stringify({version:'2026-09-27-v2',acceptedAt:new Date().toISOString()}));
     localStorage.setItem('mbu_supabase_session_v1',JSON.stringify({
       access_token:'e2e-access',
       refresh_token:'e2e-refresh',
