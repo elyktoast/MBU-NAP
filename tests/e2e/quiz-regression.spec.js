@@ -2233,6 +2233,30 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('[data-privacy-submit]')).toBeVisible();
   });
 
+  test('Adaptive sessions do not inherit cross-outs from earlier Studio sessions', async ({ page }) => {
+    await seedSignedIn(page);
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await page.evaluate(()=>{
+      const first=document.querySelector('#sourceChecks input[type=checkbox]');
+      if(first)first.checked=true;
+      document.getElementById('count').value='10';
+      document.getElementById('adaptiveToggle').checked=true;
+      startMode('custom');
+      const q=session[pos],key=q.uid+':0';
+      DB.crosses[key]=true;
+      MBUStudio.save(DB);
+      showQ();
+    });
+    await expect(page.locator('#opts .opt').first()).not.toHaveClass(/strike/);
+    await expect(page.locator('#opts .mbu-cross').first()).toHaveAttribute('aria-pressed','false');
+    await page.locator('#opts .mbu-cross').first().click();
+    await expect(page.locator('#opts .opt').first()).toHaveClass(/strike/);
+    expect(await page.evaluate(()=>{const q=session[pos];return !!DB.active?.crosses?.[q.uid+':0']})).toBe(true);
+    await page.reload();await waitForStudio(page);
+    await expect(page.locator('#opts .opt').first()).toHaveClass(/strike/);
+    await expect(page.locator('#opts .mbu-cross').first()).toHaveAttribute('aria-pressed','true');
+  });
+
   test('Adaptive session is opt-in, sequentially reviewable, and survives reload with its level', async ({ page }) => {
     await seedSignedIn(page);
     await page.goto(exam + '/studio.html');await waitForStudio(page);
