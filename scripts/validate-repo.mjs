@@ -104,7 +104,7 @@ function checkCanonicalNewQuizBanks(){
   for(const bit of ['MBUNavigator.button','MBUCalculator?.besideFlag()','goDashboard()','Submit Selections (','lastSaved'])if(!engine.includes(bit))fail('Canonical quiz engine: missing shared behavior '+bit);
 }
 function checkIndependentBranding(){
-  const publicFiles=['index.html','privacy.html','terms.html','equipment/index.html','equipment/exam-1/index.html','equipment/exam-1/studio.html','README.md','CONTRIBUTING.md','docs/ARCHITECTURE.md','docs/CONTENT_AUDIT.md','docs/CONTENT_PHASE1_AUDIT.md','docs/CONTENT_QUALITY_PHASE1.md','docs/QUESTION_GENERATION.md','docs/RELEASE_1_0.md','docs/STUDY_INTELLIGENCE.md','docs/SYNC.md','docs/quiz-bank-standard.md','reporting/apps-script/SETUP.md'].filter(exists);
+  const publicFiles=['index.html','privacy.html','terms.html','equipment/index.html','equipment/exam-1/index.html','equipment/exam-1/studio.html','README.md','CONTRIBUTING.md','docs/ARCHITECTURE.md','docs/CONTENT_AUDIT.md','docs/CONTENT_PHASE1_AUDIT.md','docs/CONTENT_QUALITY_PHASE1.md','docs/QUESTION_GENERATION.md','docs/RELEASE_1_0.md','docs/STUDY_INTELLIGENCE.md','docs/SYNC.md','docs/quiz-bank-standard.md','reporting/apps-script/SETUP.md','reporting/apps-script/Code.gs'].filter(exists);
   const forbidden=[/Mary Baldwin/i,/MBU-NAP/i,/MBU Nurse Anesthesia Program/i];
   for(const p of publicFiles){const src=read(p);for(const rx of forbidden)if(rx.test(src))fail(p+': institutional branding remains: '+rx)}
   for(const p of ['equipment/exam-1/data/bank1.json','equipment/exam-1/data/bank2.json','equipment/exam-1/data/bank3.json','equipment/exam-1/data/combined.json','equipment/exam-1/data/hazards.json']){
@@ -331,7 +331,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
   if(!exists('supabase/migrations/20260927050029_add_privacy_request_appeals.sql')||!read('supabase/migrations/20260927050029_add_privacy_request_appeals.sql').includes("'appeal'"))fail('Privacy request appeal migration is missing');
   for(const p of ['index.html','equipment/index.html','equipment/exam-1/index.html','equipment/exam-1/studio.html','privacy.html','terms.html']){
     const src=read(p);
-    if(/Mary Baldwin|MBU-NAP|Professor\b|Dr\.\s+Elmore/i.test(src))fail(p+': obsolete institutional/faculty branding remains');
+    if(/Mary Baldwin|MBU-NAP|Professor\b|\bInstructor\b|Dr\.\s+[A-Z][a-z]+/i.test(src))fail(p+': obsolete institutional/faculty branding remains');
   }
   for(const p of ['equipment/exam-1/data/bank1.json','equipment/exam-1/data/bank2.json','equipment/exam-1/data/bank3.json','equipment/exam-1/data/combined.json','equipment/exam-1/data/hazards.json']){
     const src=read(p);
