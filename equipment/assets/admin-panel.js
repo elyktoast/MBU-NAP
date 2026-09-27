@@ -42,5 +42,5 @@ async function refresh(host,modal){
   section.querySelector('[data-admin-retention]').onclick=async e=>{const btn=e.currentTarget;if(!confirm('Run the documented retention cleanup now?'))return;try{btn.disabled=true;const out=await MBUSupabase.adminRetentionCleanup();msg.textContent='Retention cleanup complete: '+Number(out.sync_history_deleted||0)+' sync versions, '+Number(out.privacy_requests_deleted||0)+' privacy requests, '+Number(out.legal_acceptances_deleted||0)+' expired legal records, '+Number(out.guest_sessions_deleted||0)+' guest sessions removed.';await refresh(host,modal)}catch(err){msg.textContent=err.message}finally{btn.disabled=false}};
 }
 async function mount(host,modal){ensure(host);await refresh(host,modal)}
-window.SNARAdminPanel={mount,refresh};
+window.SRNAAdminPanel={mount,refresh};
 })();
