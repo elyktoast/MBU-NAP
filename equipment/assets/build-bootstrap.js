@@ -24,7 +24,6 @@ async function start(){
   await loadScript('question-search.js');
   await loadScript('supabase-config.js');
   await loadScript('supabase-sync.js');
-  if(cfg.requireAccount!==false)await window.MBUAppCore.requireAccount();
   await Promise.all((cfg.styles||[]).map(loadStyle));
   for(const entry of cfg.scripts||[])await loadScript(entry);
   if(typeof cfg.ready==='function')await cfg.ready();
