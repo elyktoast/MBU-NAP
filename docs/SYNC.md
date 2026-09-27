@@ -40,6 +40,8 @@ Session tokens are stored locally in the browser. The Supabase secret/service-ro
 - While signed in, MBU-NAP performs a full automatic sync every five minutes as a cross-device safety net.
 - The site header always shows cloud state (**Signed out**, **Syncing**, **Synced**, or **Error**) and opens the dedicated account panel.
 - A manual **Sync now** control remains available from the account panel and Tools.
+- **Devices** lists browsers/devices that have synced the account. Forget removes a stale device entry from that list; it does not remotely revoke that device's existing authentication session, so an active signed-in device can appear again when it next syncs.
+- **Restore Progress** exposes recent `mbu_sync_versions` entries. Restoring writes the selected historical payload back through the same server-revision conflict guard, preserving the pre-restore current state in history.
 - Tools focuses on practical study/sync status, while manual backup/import and diagnostics live in secondary expandable sections.
 - If a full sync downloads newer progress, the page reloads once so the active quiz runtime uses the imported state.
 
