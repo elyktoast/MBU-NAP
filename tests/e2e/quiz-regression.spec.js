@@ -545,7 +545,7 @@ test.describe('canonical quiz regression', () => {
     expect(overflow).toBeLessThanOrEqual(1);
     await expect(page.locator('#studioPrev')).toBeVisible();
     await expect(page.locator('#next')).toBeVisible();
-    await expect(page.locator('#quiz .header')).toBeVisible();
+    await expect(page.locator('#quiz .mbu-session-head')).toBeVisible();
     await expect(page.locator('#quiz .stats')).toBeVisible();
     await expect(page.locator('#quiz .controls')).toBeVisible();
   });
