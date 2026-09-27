@@ -803,7 +803,8 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ['random session identifier','approximately 24 hours','operator-admin','raw first-attempt CAT contribution rows'])if(!privacy.includes(token))fail('Privacy v4 disclosure missing '+token);
  for(const token of ['Account access, suspension, and termination','suspended or re-granted'])if(!terms.includes(token))fail('Terms v4 account-access disclosure missing '+token);
  for(const token of ['snar_guest_heartbeat','snar_account_access_status','adminAccounts','adminSetAccountAccess','adminDeleteAccount','guestSessionId','accountAccess'])if(!cloud.includes(token))fail('Admin/guest client contract missing '+token);
- for(const token of ['Admin & Compliance','data-admin-stats','data-admin-accounts','data-admin-delete-account','Guests active ~15m','CAT users'])if(!core.includes(token))fail('Admin dashboard contract missing '+token);
+ for(const token of ['Admin & Compliance','data-admin-stats','data-admin-accounts','data-admin-delete-account','Guests active ~15m','CAT users'])if(!adminPanel.includes(token))fail('Admin dashboard contract missing '+token);
+ if(!core.includes("loadScript('admin-panel.js')")||!core.includes('data-admin-host'))fail('Lazy admin panel loader contract missing');
  if(!studio.includes("status.accessStatus==='active'"))fail('Adaptive Mode does not enforce active account access');
  const suspensionMigration=read('supabase/migrations/20260927100000_enforce_account_suspension_server_side.sql');
  for(const token of ['Account access suspended','private.snar_account_is_active','users_select_own_active_sync_state','Calibration aggregates are readable by active accounts at cohort threshold'])if(!suspensionMigration.includes(token))fail('Server-side suspension contract missing '+token);
