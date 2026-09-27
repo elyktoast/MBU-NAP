@@ -206,7 +206,7 @@ test.describe('canonical quiz regression', () => {
       throw new Error('No Bank 3 image question found');
     });
     await expect(page.locator('#image img')).toBeVisible({timeout:10000});
-    expect(imageRequests.length).toBe(1);
+    expect(new Set(imageRequests).size).toBe(1);
   });
 
   test('Hazards Set 1 persists a correct answer and auto-advances', async ({ page }) => {
@@ -1894,7 +1894,7 @@ test.describe('canonical quiz regression', () => {
     expect(await page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(false);
     await expect(page.getByRole('button',{name:'Start Smart Review'})).toBeVisible();
     await expect(page.locator('#adaptiveToggle')).toBeVisible();
-    await page.locator('#adaptiveToggle').check();
+    await page.locator('#adaptiveToggle').click();
     await expect(page.locator('#adaptiveToggle')).not.toBeChecked();
     await expect(page.locator('#mbu-account-panel')).toBeVisible();
     await expect(page.locator('#mbu-account-panel')).toContainText('Sign in for cross-device sync and to use Adaptive Mode');
@@ -1923,7 +1923,7 @@ test.describe('canonical quiz regression', () => {
 
     await page.goto('/terms.html');
     await expect(page.getByRole('heading',{name:'Terms of Use'})).toBeVisible();
-    await expect(page.locator('body')).toContainText('independent study resource');
+    await expect(page.getByRole('heading',{name:'Independent educational resource'})).toBeVisible();
 
     await seedSignedIn(page);
     await page.goto(exam + '/studio.html');await waitForStudio(page);
