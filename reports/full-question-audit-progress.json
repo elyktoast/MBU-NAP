@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 466,
+    "audited": 566,
     "bank2": [
       {
         "id": "S2-021",
@@ -2079,120 +2079,541 @@
       {
         "id": "S4-Y21",
         "disposition": "PASS"
+      },
+      {
+        "id": "S4-R01",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-Y08",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-E13",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-E21",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-P63",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed an unsupported ETCO2 CPR threshold and kept the rationale limited to the cited low-perfusion and tube-verification material."
+        ]
+      },
+      {
+        "id": "S4-J18",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-J41",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R129",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R02",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-J19",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R84",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-Y07",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-J61",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-D01",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R102",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-P06",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-J37",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed the uncited 'must be weighed' and post-liquid pressure-volume claims and tightened the source to the cylinder table."
+        ]
+      },
+      {
+        "id": "S4-R16",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-J42",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R43",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R52",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-E07",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R21",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-J55",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R93",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R91",
+        "disposition": "IMPROVE",
+        "changes": [
+          "cleaned up the explanation and converted the fragmentary monitoring note into a complete source-grounded rationale."
+        ]
+      },
+      {
+        "id": "S4-J58",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-J02",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R40",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-E25",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-E16",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R76",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-J20",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R73",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R130",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-J15",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R03",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R139",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-J21",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-J24",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-R29",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T42",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V113",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T184",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-Z41",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-F12",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T152",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V29",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-F34",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T05",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-J15",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T117",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T90",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T170",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V101",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T162",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T115",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V19",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-F04",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T125",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-F05",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T19",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T35",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V82",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-F42",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T02",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V69",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T71",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-Z25",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V78",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T30",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T20",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-Z30",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T06",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-F25",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T132",
+        "disposition": "IMPROVE",
+        "changes": [
+          "fixed stem capitalization/wording and polished the explanation."
+        ]
+      },
+      {
+        "id": "S5-T01",
+        "disposition": "IMPROVE",
+        "changes": [
+          "tightened the curare-cleft response to the cited capnogram and neuromuscular-monitoring guidance."
+        ]
+      },
+      {
+        "id": "S5-F16",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T36",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-R130",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-J04",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T03",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T45",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V68",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V03",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T146",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V52",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-R64",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V116",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected topic metadata from Monitoring to Medical Gases because the stem and canonical source are vaporizer-focused."
+        ]
+      },
+      {
+        "id": "S5-F40",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-F30",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T110",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T177",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V28",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced the unsupported 'reserve supply' framing with the exact hospital oxygen storage configuration stated in the lecture."
+        ]
+      },
+      {
+        "id": "S5-R118",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-Z02",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T51",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-F02",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-T04",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-V104",
+        "disposition": "PASS"
       }
     ]
   },
-  "remaining": 1534,
+  "remaining": 1434,
   "lastBatch": {
     "bank": "bank3.json",
     "audited": 100,
     "ids": [
-      "S3-X05",
-      "S3-P14",
-      "S3-P06",
-      "S3-H63",
-      "S3-P24",
-      "S3-D27",
-      "S3-P47",
-      "S3-P86",
-      "S3-D23",
-      "S3-D11",
-      "S3-P35",
-      "S3-H08",
-      "S3-D19",
-      "S3-H20",
-      "S3-D25",
-      "S3-P41",
-      "S3-H03",
-      "S3-P75",
-      "S3-H64",
-      "S3-H35",
-      "S3-P21",
-      "S3-H27",
-      "S3-P15",
-      "S3-D10",
-      "S3-P23",
-      "S3-P87",
-      "S3-H12",
-      "S3-H40",
-      "S3-P43",
-      "S3-X19",
-      "S3-N20",
-      "S3-H62",
-      "S3-D12",
-      "S3-P31",
-      "S3-H44",
-      "S3-C22",
-      "S3-H17",
-      "S3-P63",
-      "S3-P60",
-      "S3-H43",
-      "S3-P84",
-      "S3-P28",
-      "S4-R15",
-      "S4-E08",
-      "S4-J01",
-      "S4-R118",
-      "S4-E02",
-      "S4-R136",
-      "S4-J28",
-      "S4-J26",
-      "S4-R85",
-      "S4-J52",
-      "S4-Y09",
-      "S4-J22",
-      "S4-E26",
-      "S4-R134",
-      "S4-D12",
-      "S4-J46",
-      "S4-E20",
-      "S4-R41",
-      "S4-R142",
-      "S4-E15",
-      "S4-R72",
-      "S4-E17",
-      "S4-J48",
-      "S4-J04",
-      "S4-R141",
-      "S4-Y13",
-      "S4-R64",
-      "S4-R58",
-      "S4-Y01",
-      "S4-J17",
-      "S4-E05",
-      "S4-J30",
-      "S4-R71",
-      "S4-Y04",
-      "S4-E01",
-      "S4-R90",
-      "S4-E27",
-      "S4-J57",
-      "S4-J72",
-      "S4-R74",
-      "S4-R122",
-      "S4-H03",
-      "S4-Y03",
-      "S4-P35",
-      "S4-J73",
-      "S4-R65",
-      "S4-X09",
-      "S4-Y18",
-      "S4-J12",
-      "S4-R11",
-      "S4-R109",
-      "S4-J03",
-      "S4-H26",
-      "S4-E11",
-      "S4-R22",
-      "S4-R20",
-      "S4-R38",
-      "S4-Y21"
+      "S4-R01",
+      "S4-Y08",
+      "S4-E13",
+      "S4-E21",
+      "S4-P63",
+      "S4-J18",
+      "S4-J41",
+      "S4-R129",
+      "S4-R02",
+      "S4-J19",
+      "S4-R84",
+      "S4-Y07",
+      "S4-J61",
+      "S4-D01",
+      "S4-R102",
+      "S4-P06",
+      "S4-J37",
+      "S4-R16",
+      "S4-J42",
+      "S4-R43",
+      "S4-R52",
+      "S4-E07",
+      "S4-R21",
+      "S4-J55",
+      "S4-R93",
+      "S4-R91",
+      "S4-J58",
+      "S4-J02",
+      "S4-R40",
+      "S4-E25",
+      "S4-E16",
+      "S4-R76",
+      "S4-J20",
+      "S4-R73",
+      "S4-R130",
+      "S4-J15",
+      "S4-R03",
+      "S4-R139",
+      "S4-J21",
+      "S4-J24",
+      "S4-R29",
+      "S5-T42",
+      "S5-V113",
+      "S5-T184",
+      "S5-Z41",
+      "S5-F12",
+      "S5-T152",
+      "S5-V29",
+      "S5-F34",
+      "S5-T05",
+      "S5-J15",
+      "S5-T117",
+      "S5-T90",
+      "S5-T170",
+      "S5-V101",
+      "S5-T162",
+      "S5-T115",
+      "S5-V19",
+      "S5-F04",
+      "S5-T125",
+      "S5-F05",
+      "S5-T19",
+      "S5-T35",
+      "S5-V82",
+      "S5-F42",
+      "S5-T02",
+      "S5-V69",
+      "S5-T71",
+      "S5-Z25",
+      "S5-V78",
+      "S5-T30",
+      "S5-T20",
+      "S5-Z30",
+      "S5-T06",
+      "S5-F25",
+      "S5-T132",
+      "S5-T01",
+      "S5-F16",
+      "S5-T36",
+      "S5-R130",
+      "S5-J04",
+      "S5-T03",
+      "S5-T45",
+      "S5-V68",
+      "S5-V03",
+      "S5-T146",
+      "S5-V52",
+      "S5-R64",
+      "S5-V116",
+      "S5-F40",
+      "S5-F30",
+      "S5-T110",
+      "S5-T177",
+      "S5-V28",
+      "S5-R118",
+      "S5-Z02",
+      "S5-T51",
+      "S5-F02",
+      "S5-T04",
+      "S5-V104"
     ],
     "notes": [
       "Audited the next 100 Bank 3 questions against the matching Airway Equipment, Medical Gas Systems in Anesthesia, CO₂ & Scavenging, and Monitoring course material.",
-      "Visually verified all four image-dependent items in this batch: the ROSC capnogram, circle-system absorber location, anesthesia-machine pressure roadmap, and emphysema pressure-volume loop.",
-      "Corrected S4-D12 to use only NIOSH limits actually stated in the lecture, replaced unsupported international cylinder color coding in S4-J72, and corrected S4-R74 to stay within the oxygen-sensor calibration guidance actually cited.",
-      "Made targeted explanation-fidelity improvements in S3-P14, S3-X19, S3-H35, and S4-J57. No retained answer key was found to be wrong."
+      "Visually verified all image-dependent items in this batch, including hypoventilation and sedation-apnea capnograms, ROSC capnogram, arterial-waveform labels, hypopharyngeal/cuff-leak pattern, curare cleft, and the anesthesia-machine roadmap.",
+      "Removed unsupported CPR-threshold language from S4-P63, tightened S4-J37 to the CO₂ cylinder data actually shown, corrected S5-V28's unsupported reserve-supply framing, and corrected S5-V116 topic metadata.",
+      "Also polished source-grounded explanations and wording in S4-R91, S5-T132, and S5-T01. No retained answer key was found to be wrong."
     ]
   },
   "lastCorrection": {
