@@ -22,7 +22,18 @@ jobs:
         with:
           node-version: 22
       - name: Validate repository architecture
-        run: npm run validate
+        shell: bash
+        run: |
+          set +e
+          npm run validate 2>&1 | tee validation.log
+          status=${PIPESTATUS[0]}
+          {
+            echo '### Repository validation'
+            echo '```text'
+            cat validation.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit "$status"
       - name: Validate question content integrity
         run: npm run test:content
       - name: Run semantic content audit
