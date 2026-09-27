@@ -883,6 +883,14 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  }
 }
 
+// Question reports must use the private Supabase inbox only.
+{
+ const studioSync=read('equipment/assets/studio-sync.js');
+ if(studioSync.includes('MBU_REPORT_ENDPOINT')||studioSync.includes('script.google.com/macros'))fail('Legacy Google Apps Script question-report transport returned');
+ if(exists('reporting/apps-script/Code.gs')||exists('reporting/apps-script/SETUP.md')||exists('reporting/apps-script/appsscript.json'))fail('Obsolete Google Apps Script reporting files remain');
+ for(const token of ['submitQuestionReport','snar_submit_question_report','snar_admin_question_reports','snar_admin_update_question_report'])if(!read('equipment/assets/supabase-sync.js').includes(token)&&!read('equipment/assets/admin-panel.js').includes(token))fail('Private question-report inbox contract missing '+token);
+}
+
 // Hazards dashboard must always load the canonical Bank 1 visual system.
 {
  const src=read('equipment/exam-1/hazards.html');
