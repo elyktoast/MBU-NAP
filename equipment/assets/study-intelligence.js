@@ -75,6 +75,12 @@ function smartReview(questions,count=50){
   const n=Math.max(1,Math.min(Number(count)||50,questions.length));
   return questions.map((q,i)=>({q,score:scoreQuestion(q),tie:tieRank(q.uid||i)})).sort((a,b)=>b.score-a.score||a.tie-b.tie).slice(0,n).map(x=>x.q)
 }
+function weakReview(questions,count=50,topicLimit=3){
+  const byTopic=analytics().byTopic||{},weak=Object.entries(byTopic).filter(([,x])=>Number(x?.attempts)>=3).sort((a,b)=>a[1].accuracy-b[1].accuracy||b[1].attempts-a[1].attempts).slice(0,Math.max(1,Number(topicLimit)||3)).map(([topic])=>topic);
+  if(!weak.length)return smartReview(questions,count);
+  const allowed=new Set(weak),pool=questions.filter(q=>allowed.has(topicOf(q)));
+  return smartReview(pool.length?pool:questions,count)
+}
 function stats(rows){
   const total=rows.length,correct=rows.reduce((n,a)=>n+(Number(a.correct)||0),0),attempts=rows.reduce((n,a)=>n+(Number(a.attempts)||0),0);
   return{questions:total,attempts,correct,accuracy:attempts?Math.round(correct/attempts*100):0}
@@ -98,5 +104,5 @@ function addIssue(bank,q,details={}){
 function issues(){return db().issues.map(x=>({...x}))}
 function closeIssue(id){const d=db(),x=d.issues.find(x=>x.id===id);if(!x)return false;x.status='closed';x.closedAt=now();save(d);return true}
 function clearAll(){localStorage.removeItem(STORE);cache=null;lastSerialized=''}
-window.MBUStudyIntelligence={STORE,schema:SCHEMA,recordAnswer,seedLegacy,due,smartReview,questionStats,topicStats,analytics,recentActivity,summary,addIssue,issues,closeIssue,questionMeta,clearAll};
+window.MBUStudyIntelligence={STORE,schema:SCHEMA,recordAnswer,seedLegacy,due,smartReview,weakReview,questionStats,topicStats,analytics,recentActivity,summary,addIssue,issues,closeIssue,questionMeta,clearAll};
 })();

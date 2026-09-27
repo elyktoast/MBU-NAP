@@ -2146,6 +2146,29 @@ test.describe('canonical quiz regression', () => {
     expect(result.approvalError).toContain('source excerpt or citation');
   });
 
+  test('Weak Areas uses cumulative topic accuracy instead of only the latest answer', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const out=await page.evaluate(()=>{
+      MBUStudyIntelligence.clearAll();
+      const weak={uid:'weak-cumulative',bank:'b1',bankLabel:'Quiz Bank 1',id:'w1',set:1,topic:'Airway',stem:'Cumulative weak item'};
+      const strong={uid:'strong-cumulative',bank:'b1',bankLabel:'Quiz Bank 1',id:'s1',set:1,topic:'Monitoring',stem:'Cumulative strong item'};
+      MBUStudyIntelligence.recordAnswer('b1',weak,false,{bankLabel:'Quiz Bank 1'});
+      MBUStudyIntelligence.recordAnswer('b1',weak,false,{bankLabel:'Quiz Bank 1'});
+      MBUStudyIntelligence.recordAnswer('b1',weak,true,{bankLabel:'Quiz Bank 1'});
+      MBUStudyIntelligence.recordAnswer('b1',strong,true,{bankLabel:'Quiz Bank 1'});
+      MBUStudyIntelligence.recordAnswer('b1',strong,true,{bankLabel:'Quiz Bank 1'});
+      MBUStudyIntelligence.recordAnswer('b1',strong,true,{bankLabel:'Quiz Bank 1'});
+      return {
+        weakStats:MBUStudyIntelligence.topicStats('Airway'),
+        strongStats:MBUStudyIntelligence.topicStats('Monitoring'),
+        ranked:MBUStudyIntelligence.weakReview([strong,weak],2,1).map(q=>q.uid)
+      };
+    });
+    expect(out.weakStats.accuracy).toBe(33);
+    expect(out.strongStats.accuracy).toBe(100);
+    expect(out.ranked).toEqual(['weak-cumulative']);
+  });
+
   test('Study intelligence records attempts, schedules review, and ranks weak questions first', async ({ page }) => {
     await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
     const out=await page.evaluate(()=>{
