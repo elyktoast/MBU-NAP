@@ -1479,7 +1479,7 @@ test.describe('canonical quiz regression', () => {
     await page.locator('[data-cloud-consent]').check();
     await page.locator('[data-cloud-signup]').click();
     await expect.poll(()=>signupCalls).toBe(1);
-    expect(signupBody.data).toMatchObject({snar_terms_version:'2026-09-27-v2',snar_privacy_version:'2026-09-27-v2',snar_adult_ack:true});
+    expect(signupBody.data).toMatchObject({snar_terms_version:'2026-09-27-v3',snar_privacy_version:'2026-09-27-v3',snar_adult_ack:true});
     expect(signupBody.data.snar_accepted_at).toBeTruthy();
     await expect(page.locator('#mbu-account-panel')).toContainText('Privacy Notice');
     await expect(page.locator('#mbu-account-panel')).toContainText('Terms of Use');
@@ -1872,7 +1872,7 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('First-use legal clickwrap accepts a real pointer click and stays out of the way afterward', async ({ page }) => {
-    await page.addInitScript(()=>{if(!sessionStorage.getItem('e2e-first-use-legal')){localStorage.removeItem('snar_legal_acceptance_v2');sessionStorage.setItem('e2e-first-use-legal','1')}});
+    await page.addInitScript(()=>{if(!sessionStorage.getItem('e2e-first-use-legal')){localStorage.removeItem('snar_legal_acceptance_v3');sessionStorage.setItem('e2e-first-use-legal','1')}});
     await page.goto('/');
     await expect(page.locator('#snar-legal-gate')).toBeVisible();
     await expect(page.locator('#snar-legal-gate')).toContainText('Terms of Use');
@@ -1881,8 +1881,8 @@ test.describe('canonical quiz regression', () => {
     await expect(button).toBeEnabled();
     await button.click();
     await expect(page.locator('#snar-legal-gate')).toHaveCount(0);
-    const acceptance=await page.evaluate(()=>JSON.parse(localStorage.getItem('snar_legal_acceptance_v2')||'null'));
-    expect(acceptance?.version).toBe('2026-09-27-v2');
+    const acceptance=await page.evaluate(()=>JSON.parse(localStorage.getItem('snar_legal_acceptance_v3')||'null'));
+    expect(acceptance?.version).toBe('2026-09-27-v3');
     await page.reload();
     await expect(page.locator('#snar-legal-gate')).toHaveCount(0);
   });
