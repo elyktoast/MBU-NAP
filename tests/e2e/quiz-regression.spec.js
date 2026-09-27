@@ -256,15 +256,17 @@ test.describe('canonical quiz regression', () => {
   test('Standard Hazards ignores duplicate submit calls for a graded question', async ({ page }) => {
     await page.goto(exam + '/hazards-100.html');await page.evaluate(() => MBUQuizReady);
     await page.locator('#cards button').filter({hasText:/start|continue/i}).first().click();
-    const delta=await page.evaluate(()=>{
-      const before=MBUStudyIntelligence.analytics().overall.attempts;
-      const q=MBUHazardsStandard.activeQuestion();
-      q.answer.forEach(i=>MBUHazardsStandard.choose(i));
-      MBUHazardsStandard.submitAnswer();
-      MBUHazardsStandard.submitAnswer();
-      return MBUStudyIntelligence.analytics().overall.attempts-before;
-    });
-    expect(delta).toBe(1);
+    const before=await page.evaluate(()=>MBUStudyIntelligence.analytics().overall.attempts);
+    const options=page.locator('#options .opt');
+    for(let i=0;i<await options.count();i++){
+      if(await page.locator('#submit-multi').isEnabled())break;
+      await options.nth(i).click();
+    }
+    await expect(page.locator('#submit-multi')).toBeEnabled();
+    await page.locator('#submit-multi').click();
+    await page.evaluate(()=>submitAnswer());
+    const after=await page.evaluate(()=>MBUStudyIntelligence.analytics().overall.attempts);
+    expect(after-before).toBe(1);
   });
 
   test('Hazards Set 2 persists a submitted answer through the shared standard engine', async ({ page }) => {
