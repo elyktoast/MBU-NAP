@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { exam, clearAppState, seedSignedIn, collectPageErrors, waitForStudio, storageJSON } = require('./helpers');
+const { exam, clearAppState, seedSignedIn, waitForAuth, collectPageErrors, waitForStudio, storageJSON } = require('./helpers');
 
 async function clickIndexes(locator, indexes) {
   for (const index of indexes) await locator.nth(index).click();
@@ -1449,6 +1449,7 @@ test.describe('canonical quiz regression', () => {
     });
     await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>route.fulfill({status:201,contentType:'application/json',body:''}));
     await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
+    await waitForAuth(page);
     await page.locator('.mbu-global-nav__cloud').click();
     await page.locator('[data-cloud-email]').fill('test@example.com');
     await page.locator('[data-cloud-password]').fill('correct horse battery staple');
@@ -1491,6 +1492,7 @@ test.describe('canonical quiz regression', () => {
     await page.route(cloud+'/rest/v1/rpc/snar_has_current_legal_acceptance',route=>route.fulfill({status:200,contentType:'application/json',body:'false'}));
     await page.route(cloud+'/rest/v1/rpc/snar_accept_current_legal',route=>route.fulfill({status:200,contentType:'application/json',body:'true'}));
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await waitForAuth(page);
     await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('[data-cloud-legal-required]')).toBeVisible();
     await expect(page.locator('[data-cloud-sync]')).toBeDisabled();
@@ -1515,6 +1517,7 @@ test.describe('canonical quiz regression', () => {
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let requestBody=null;
     await page.route(cloud+'/rest/v1/snar_privacy_requests',route=>{requestBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:201,contentType:'application/json',body:JSON.stringify([{id:17,...requestBody,status:'received'}])})});
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await waitForAuth(page);
     await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('[data-cloud-signed-in]')).toBeVisible();
     await page.locator('[data-cloud-signed-in] summary').filter({hasText:'Privacy & Account'}).click();
@@ -1530,6 +1533,7 @@ test.describe('canonical quiz regression', () => {
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let deleted=0;
     await page.route(cloud+'/functions/v1/snar-delete-account',route=>{deleted++;return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({deleted:true})})});
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await waitForAuth(page);
     await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('[data-cloud-signed-in]')).toBeVisible();
     page.on('dialog',dialog=>dialog.accept());
@@ -1604,6 +1608,7 @@ test.describe('canonical quiz regression', () => {
     await page.route(cloud+'/auth/v1/recover?*',route=>{recoverBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:'{}'})});
     await page.route(cloud+'/auth/v1/resend?*',route=>{resendBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:'{}'})});
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await waitForAuth(page);
     await page.locator('.mbu-global-nav__cloud').click();
     await page.locator('[data-cloud-email]').fill('recover@example.com');
     await page.locator('[data-cloud-forgot]').click();
