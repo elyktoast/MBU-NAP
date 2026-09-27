@@ -115,7 +115,7 @@
         2
       ],
       "explanation": "The tip of the Macintosh curved blade is advanced into the vallecula; applying forward traction stretches the glossoepiglottic ligament, which indirectly elevates the epiglottis away from the glottis.",
-      "citation": "Airway Equipment · Slide 10",
+      "citation": "Airway Equipment · Slide 11",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -126,11 +126,11 @@
         "families": [
           "Airway Equipment"
         ],
-        "slides": "10",
+        "slides": "11",
         "citationFormat": "slides"
       },
       "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 10"
+      "sourceLocator": "Slide 11"
     },
     {
       "id": "5",
@@ -204,17 +204,17 @@
       "id": "7",
       "set": 1,
       "type": "single",
-      "stem": "According to NIOSH standards, what is the maximum permissible 8-hour time-weighted average occupational exposure when nitrous oxide is co-administered alongside a halogenated volatile anesthetic?",
+      "stem": "Using the exposure limits stated in the lecture, which pair is correct?",
       "options": [
-        "0.5 ppm halogenated agent and 25 ppm nitrous oxide",
-        "2 ppm halogenated agent and 25 ppm nitrous oxide",
-        "5 ppm halogenated agent and 50 ppm nitrous oxide",
-        "10 ppm halogenated agent and 100 ppm nitrous oxide"
+        "Halogenated anesthetic agent: 2 ppm; N2O as sole anesthetic: 25 ppm TWA",
+        "Halogenated anesthetic agent: 0.5 ppm; N2O as sole anesthetic: 25 ppm TWA",
+        "Halogenated anesthetic agent: 5 ppm; N2O as sole anesthetic: 50 ppm TWA",
+        "Halogenated anesthetic agent: 10 ppm; N2O as sole anesthetic: 100 ppm TWA"
       ],
       "answer": [
         0
       ],
-      "explanation": "When nitrous oxide and a halogenated volatile anesthetic are administered together, the exposure limits are 25 ppm for nitrous oxide and 0.5 ppm for the halogenated agent. When a halogenated anesthetic is administered without nitrous oxide, the limit is 2 ppm; nitrous oxide alone remains 25 ppm.",
+      "explanation": "The lecture states a 2 ppm recommended exposure limit for halogenated anesthetic agents and a 25 ppm time-weighted-average limit for nitrous oxide when used as the sole anesthetic. It does not state the 0.5 ppm combined-use limit used in the prior version.",
       "citation": "CO₂ & Scavenging · Slide 10",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -332,18 +332,18 @@
       "id": "11",
       "set": 1,
       "type": "single",
-      "stem": "During a Grade III direct laryngoscopy view, an Eschmann introducer (bougie) is advanced. What tactile feedback confirms tracheal placement rather than esophageal entry?",
+      "stem": "How is the Eschmann introducer categorized in the airway-equipment lecture?",
       "options": [
-        "Immediate firm impaction at 12 to 15 cm insertion depth",
-        "Palpable clicks transmitted as the coudé tip slides over anterior cartilaginous rings",
-        "Smooth, resistance-free advancement beyond 40 cm",
-        "Loss of resistance as the angled tip bypasses the cricopharyngeus"
+        "Intubating stylet",
+        "Supraglottic airway",
+        "Nasopharyngeal airway",
+        "Cricothyrotomy device"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Tracheal entry is confirmed by tactile clicks as the angled (coudé) tip passes over cartilaginous tracheal rings, followed by gentle hold-up at the carina (~25-30 cm). Advancing into the esophagus feels completely smooth without clicks.",
-      "citation": "Airway Equipment · Slide 9",
+      "explanation": "The lecture presents the Eschmann introducer under the heading 'Airways: Intubating Stylet.' The prior tactile-click and hold-up details were not present in the cited course material.",
+      "citation": "Airway Equipment · Slide 10",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -354,11 +354,11 @@
         "families": [
           "Airway Equipment"
         ],
-        "slides": "9",
+        "slides": "10",
         "citationFormat": "slides"
       },
       "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 9"
+      "sourceLocator": "Slide 10"
     },
     {
       "id": "12",
@@ -399,17 +399,17 @@
       "id": "13",
       "set": 1,
       "type": "single",
-      "stem": "During intraoperative radial arterial line monitoring, the fast-flush square-wave test produces sharp, multiple ringing oscillations (>3 rebounds) with a steep upstroke. How will this dynamic response affect measured blood pressure parameters?",
+      "stem": "An arterial line fast-flush test shows an underdamped response with marked ringing. How does the lecture say systolic pressure is affected?",
       "options": [
-        "Falsely elevated systolic blood pressure and falsely underestimated diastolic blood pressure",
-        "Falsely decreased systolic blood pressure and falsely elevated diastolic blood pressure",
-        "Falsely depressed mean arterial pressure with preserved pulse pressure",
-        "Blunted dicrotic notch with symmetric underestimation of both SBP and DBP"
+        "It is underestimated",
+        "It is overestimated, often by 15-30 mmHg",
+        "It is unchanged",
+        "It cannot be measured"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "An underdamped system displays high resonance (ringing) on fast-flush, overestimating systolic blood pressure by 15–30 mmHg and underestimating diastolic blood pressure. Overdamped systems cause the opposite effect.",
+      "explanation": "The lecture states that underdamping tends to overestimate systolic pressure by about 15 to 30 mmHg and amplify artifacts. The prior version also claimed a specific diastolic effect that is not stated on the cited slide.",
       "citation": "Monitoring · Slide 69",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -441,7 +441,7 @@
       "answer": [
         1
       ],
-      "explanation": "When absorbent use stops, resting exhausted lime undergoes a transient surface chemical shift that bleaches ethyl violet back to white. Upon resuming use, it rapidly turns purple, creating a false impression of fresh absorbent during morning room checks.",
+      "explanation": "The lecture warns that indicator color can fade after use stops, a phenomenon called regeneration. That fading can make nearly exhausted absorbent look fresher than it is, so color change should not be relied on by itself.",
       "citation": "CO₂ & Scavenging · Slide 4",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -563,18 +563,18 @@
       "id": "18",
       "set": 1,
       "type": "single",
-      "stem": "During carbon dioxide laser airway surgery, what is the primary rationale for filling the endotracheal tube cuff with sterile isotonic saline tinted with methylene blue dye?",
+      "stem": "During laser airway surgery, how does the lecture recommend filling a laser-resistant endotracheal-tube cuff?",
       "options": [
-        "Saline dissolves laser smoke particulates while dye acts as a free radical scavenger",
-        "Saline quenches thermal ignition from accidental laser strikes while dye visually signals cuff perforation",
-        "Saline prevents transmural expansion from nitrous oxide while dye maintains cuff compliance",
-        "Saline increases cuff seal pressure to completely eliminate volatile agent trace contamination"
+        "With air only",
+        "With saline or water and dye",
+        "With nitrous oxide",
+        "With carbon dioxide"
       ],
       "answer": [
         1
       ],
-      "explanation": "Laser tube cuffs remain flammable. Saline acts as a heat sink to quench accidental laser strikes, and methylene blue dye immediately signals perforation to the surgical team.",
-      "citation": "Airway Equipment · Slide 8",
+      "explanation": "The lecture states that laser-resistant tube cuffs are not themselves laser resistant and therefore should be filled with saline or water and dye.",
+      "citation": "Airway Equipment · Slide 9",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -585,11 +585,11 @@
         "families": [
           "Airway Equipment"
         ],
-        "slides": "8",
+        "slides": "9",
         "citationFormat": "slides"
       },
       "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 8"
+      "sourceLocator": "Slide 9"
     },
     {
       "id": "19",
@@ -659,18 +659,18 @@
       "id": "21",
       "set": 1,
       "type": "single",
-      "stem": "What is the function of the Select-a-Tec vaporizer interlock mechanism during general anesthesia?",
+      "stem": "What action is required to open the variable bypass vaporizer from its locked closed position?",
       "options": [
-        "Prevents simultaneous activation of more than one vaporizer on the manifold",
-        "Shuts off carrier gas flow if liquid anesthetic volume falls below 15 mL",
-        "Prevents vapor backpressure from entering the intermediate pressure system",
-        "Automatically vents excess volatile agent into the scavenging system when dialed concentration exceeds 5%"
+        "Press the release button and rotate the dial counterclockwise",
+        "Open the oxygen flush valve first",
+        "Set the vaporizer to transport mode",
+        "Lift the cassette from the manifold"
       ],
       "answer": [
         0
       ],
-      "explanation": "The interlock mechanism uses locking pins and rods to mechanically prevent turning on more than one vaporizer dial at a time, preventing accidental delivery of concurrent volatile anesthetics.",
-      "citation": "Medical Gas Systems in Anesthesia · Slides 59, 73",
+      "explanation": "The lecture describes an interlock safety mechanism that requires pressing a button and rotating counterclockwise from the locked closed position to open the vaporizer.",
+      "citation": "Medical Gas Systems in Anesthesia · Slide 59",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -681,11 +681,11 @@
         "families": [
           "Medical Gas Systems in Anesthesia"
         ],
-        "slides": "59, 73",
+        "slides": "59",
         "citationFormat": "slides"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slides 59, 73"
+      "sourceLocator": "Slide 59"
     },
     {
       "id": "22",
@@ -790,17 +790,17 @@
       "id": "25",
       "set": 1,
       "type": "single",
-      "stem": "When an anesthesia provider dials high fresh gas flows on a Thorpe tube flowmeter, what physical property of the gas primarily dictates the flow rate past the float?",
+      "stem": "How does gas flow through a traditional Thorpe tube differ at low versus high flow rates?",
       "options": [
-        "Gas viscosity",
-        "Gas density",
-        "Vapor pressure",
-        "Critical temperature"
+        "Low flow is laminar; high flow is turbulent",
+        "Low flow is turbulent; high flow is laminar",
+        "Both are always laminar",
+        "Both are always turbulent"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "At high flow rates, the annular space between the float and the tapered glass tube resembles an orifice, resulting in turbulent flow governed by gas density (Graham’s law). Low flows are laminar and governed by viscosity (Poiseuille’s law).",
+      "explanation": "The lecture states that low flow occurs through a long, narrow annular space and is laminar, while high flow behaves more like an orifice and is turbulent.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 43",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -822,21 +822,21 @@
       "id": "26",
       "set": 1,
       "type": "multi",
-      "stem": "According to the ASA Closed Claims Project database, which factors account for the majority of preventable adverse monitoring and breathing circuit mishaps? (Select 3)",
+      "stem": "Which course-described factors can contribute to preventable monitoring or equipment-related harm? Select 3.",
       "options": [
-        "Failure to recognize or respond to valid alarms due to alarm fatigue",
+        "Ignoring or disabling alarms after alarm fatigue",
         "Spontaneous mechanical disruption of internal ventilator bellows",
         "Latent manufacturing defects within variable bypass vaporizers",
-        "Cognitive bias assuming low oxygen saturation is monitor artifact rather than true hypoxemia",
-        "Calibration failure of paramagnetic oxygen sensors",
-        "Operator unfamiliarity with the anesthesia workstation delivery system"
+        "Cognitive bias that dismisses a valid alarm as monitor error",
+        "Routine calibration of a functioning oxygen sensor",
+        "Operator unfamiliarity with anesthesia equipment"
       ],
       "answer": [
         0,
         3,
         5
       ],
-      "explanation": "Closed claims show >65% of adverse outcomes involve provider judgment errors, lack of vigilance, alarm fatigue (ignoring alerts), operator unfamiliarity, and cognitive bias. Primary device hardware failures account for only ~1% of cases.",
+      "explanation": "The lecture identifies alarm fatigue as a cause of ignored or disabled alarms, warns that cognitive bias can lead clinicians to dismiss valid alerts, and states that operator unfamiliarity or failure to verify machine function are frequent contributors to equipment-related mishaps. It does not support the prior claim that these exact factors account for more than 65% of closed claims.",
       "citation": "Monitoring · Slides 7, 17, 19, 20",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -964,8 +964,8 @@
       "answer": [
         1
       ],
-      "explanation": "Armored (anode or flexo-metallic) tubes feature an embedded metal or nylon wire spiral throughout the shaft, rendering them resistant to kinking or collapse when flexed during head, neck, or prone surgical cases.",
-      "citation": "Airway Equipment · Slide 7",
+      "explanation": "The lecture describes armored (anode or flexo-metallic) tubes as having a spiral metal or nylon reinforcement that resists kinking and compression, with use in head, neck, and tracheal surgery.",
+      "citation": "Airway Equipment · Slide 8",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -976,11 +976,11 @@
         "families": [
           "Airway Equipment"
         ],
-        "slides": "7",
+        "slides": "8",
         "citationFormat": "slides"
       },
       "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 7"
+      "sourceLocator": "Slide 8"
     },
     {
       "id": "31",
@@ -1117,17 +1117,17 @@
       "id": "35",
       "set": 1,
       "type": "single",
-      "stem": "During mechanical ventilation, the capnogram tracing below exhibits an abnormality at the arrow. What does this finding indicate, and what is the appropriate management?",
+      "stem": "During controlled ventilation, a curare cleft appears in the alveolar plateau. What does the finding indicate, and what should be assessed?",
       "options": [
-        "Curare cleft; deepen anesthesia or administer additional neuromuscular blocker",
-        "Rebreathing; replace the exhausted carbon dioxide absorbent canister",
-        "Circuit leak; tighten the connection at the endotracheal tube adapter",
-        "Cardiac oscillations; reposition the esophageal stethoscope"
+        "Spontaneous inspiratory effort; assess neuromuscular blockade and give additional relaxant if indicated",
+        "Rebreathing; replace the CO2 absorbent immediately",
+        "Bronchospasm; increase inspiratory flow",
+        "Circuit disconnection; increase fresh gas flow"
       ],
       "answer": [
         0
       ],
-      "explanation": "A curare cleft is an inspiratory dip in Phase III indicating spontaneous diaphragmatic effort as muscle relaxation wanes. Management requires deepening anesthesia or administering additional neuromuscular blocker.",
+      "explanation": "A curare cleft is a notch in the alveolar plateau caused by spontaneous inspiratory effort during controlled ventilation. The lecture notes that this pattern may indicate the need for more neuromuscular blockade, so blockade should be assessed and additional relaxant given if appropriate.",
       "citation": "Monitoring · Slides 47, 51",
       "topic": "Monitoring",
       "imageSvg": "<svg width=\"320\" height=\"140\" viewBox=\"0 0 320 140\" style=\"background:#1a202c; border-radius:6px;\">\n      <line x1=\"30\" y1=\"110\" x2=\"300\" y2=\"110\" stroke=\"#4a5568\" stroke-width=\"1.5\"/>\n      <text x=\"10\" y=\"30\" font-size=\"10\" fill=\"#a0aec0\">38-</text>\n      <text x=\"15\" y=\"113\" font-size=\"10\" fill=\"#a0aec0\">0-</text>\n      <path d=\"M 35 110 L 60 110 L 70 30 L 110 28 Q 120 65 130 27 L 150 25 L 155 110 L 180 110 L 190 30 L 230 28 Q 240 65 250 27 L 270 25 L 275 110 L 305 110\" fill=\"none\" stroke=\"#ecc94b\" stroke-width=\"2.5\"/>\n      <line x1=\"125\" y1=\"8\" x2=\"125\" y2=\"40\" stroke=\"#e53e3e\" stroke-width=\"2\"/>\n      <text x=\"135\" y=\"18\" font-size=\"11\" fill=\"#fed7d7\" font-weight=\"bold\">Abnormality</text>\n    </svg>",
@@ -1259,7 +1259,7 @@
       "answer": [
         0
       ],
-      "explanation": "As vaporization cools the liquid agent, vapor pressure decreases. The bimetallic strip contracts and bends to restrict the bypass channel, forcing a greater proportion of fresh gas through the vaporizing sump to maintain output concentration.",
+      "explanation": "As liquid anesthetic cools, vapor pressure falls. The temperature-compensation element responds by increasing flow through the vaporizing chamber, helping maintain the dialed concentration.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 56",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -1344,22 +1344,19 @@
     {
       "id": "42",
       "set": 1,
-      "type": "multi",
-      "stem": "Which hemoglobin species will cause a deceptively normal or falsely elevated oxygen saturation reading on a conventional two-wavelength pulse oximeter? (Select 2)",
+      "type": "single",
+      "stem": "Which dyshemoglobin is specifically described as causing a falsely high conventional two-wavelength pulse-oximeter reading?",
       "options": [
         "Methemoglobin",
-        "Sulfhemoglobin",
         "Carboxyhemoglobin",
         "Deoxyhemoglobin",
-        "Fetal hemoglobin",
-        "Oxyhemoglobin"
+        "Fetal hemoglobin"
       ],
       "answer": [
-        2,
-        5
+        1
       ],
-      "explanation": "Carboxyhemoglobin (COHb) absorbs red light at 660 nm identically to oxyhemoglobin, causing conventional two-wavelength pulse oximeters to register falsely elevated readings despite severe tissue hypoxia.",
-      "citation": "Monitoring · Slides 74, 75, 76",
+      "explanation": "The lecture states that carboxyhemoglobin produces falsely high pulse-oximeter readings. Methemoglobin instead drives the displayed SpO2 toward about 85%, depending on the true saturation.",
+      "citation": "Monitoring · Slide 75",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -1370,11 +1367,11 @@
         "families": [
           "Intraoperative Assessment, Monitoring & Data Interpretation"
         ],
-        "slides": "74, 75, 76",
+        "slides": "75",
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 74, 75, 76"
+      "sourceLocator": "Slide 75"
     },
     {
       "id": "43",
@@ -1444,17 +1441,17 @@
       "id": "45",
       "set": 1,
       "type": "single",
-      "stem": "Under normal general anesthesia in a healthy supine patient, what is the typical gradient between arterial carbon dioxide tension (PaCO2) and end-tidal carbon dioxide (EtCO2)?",
+      "stem": "During routine general anesthesia in a healthy supine patient, what ETCO2-PaCO2 gradient does the lecture describe?",
       "options": [
-        "EtCO2 is 0 mmHg below PaCO2",
-        "EtCO2 is 2 to 5 mmHg below PaCO2",
-        "EtCO2 is 10 to 15 mmHg below PaCO2",
-        "EtCO2 is 2 to 5 mmHg higher than PaCO2"
+        "About 5 mmHg, with a typical range of 2-10 mmHg",
+        "About 15-20 mmHg",
+        "Exactly 0 mmHg",
+        "ETCO2 is normally higher than PaCO2 by 10 mmHg"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "In healthy supine patients under general anesthesia, alveolar dead space creates a normal PaCO2–EtCO2 gradient of approximately 2 to 5 mmHg (EtCO2 being slightly lower than PaCO2).",
+      "explanation": "The lecture describes ETCO2 as typically about 5 mmHg lower than PaCO2 in healthy supine patients during routine general anesthesia, with a range of approximately 2 to 10 mmHg.",
       "citation": "Monitoring · Slide 40",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -1512,18 +1509,18 @@
       "id": "47",
       "set": 1,
       "type": "single",
-      "stem": "How does a peripheral arterial pressure waveform recorded at the dorsalis pedis compare to a central waveform recorded at the aortic root?",
+      "stem": "As an arterial pressure waveform moves from the aorta toward a peripheral artery, what general change does the lecture describe?",
       "options": [
-        "Lower systolic pressure and higher diastolic pressure",
-        "Higher systolic pressure, lower diastolic pressure, and wider pulse pressure",
-        "Higher systolic pressure, higher mean arterial pressure, and narrow pulse pressure",
-        "Identical systolic pressure with an elevated dicrotic notch"
+        "Wave reflection exaggerates systolic and pulse pressures",
+        "Systolic and pulse pressures both become lower",
+        "Mean pressure rises sharply while systolic pressure is unchanged",
+        "The waveform becomes identical at all sites"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "As an arterial pressure wave moves peripherally, wave reflection exaggerates systolic peaks and lowers diastolic troughs, resulting in a higher SBP and wider pulse pressure, while MAP remains essentially constant or slightly lower.",
-      "citation": "Monitoring · Slides 68, 70",
+      "explanation": "The lecture states that peripheral wave reflection distorts the waveform and exaggerates systolic and pulse pressures. It also notes that local vascular resistance can sometimes make radial pressure underestimate central pressure, so the question now asks for the general waveform effect rather than an absolute diastolic change.",
+      "citation": "Monitoring · Slide 70",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -1534,27 +1531,27 @@
         "families": [
           "Intraoperative Assessment, Monitoring & Data Interpretation"
         ],
-        "slides": "68, 70",
+        "slides": "70",
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 68, 70"
+      "sourceLocator": "Slide 70"
     },
     {
       "id": "48",
       "set": 1,
       "type": "single",
-      "stem": "A variable bypass vaporizer is accidentally tilted during transport. What is the mandatory management protocol prior to clinical use?",
+      "stem": "A variable bypass vaporizer is accidentally tilted during transport. Which recovery sequence matches the lecture before returning it to use?",
       "options": [
-        "Autoclave the vaporizer manifold for 45 minutes",
-        "Flush the vaporizer at high fresh gas flows on maximum dialed concentration for 30 minutes until clear",
-        "Submerge the wicks in alcohol and drain the sump completely",
-        "Invert the vaporizer completely and depress the concentration control dial"
+        "Drain it, run high fresh gas flow at the highest setting for 30 minutes, and refill once expired gas analysis no longer detects agent",
+        "Leave it upright for 5 minutes and use it normally",
+        "Autoclave the vaporizer manifold",
+        "Invert it and activate the oxygen flush"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "If a vaporizer is tilted, liquid enters the bypass channel, risking massive overdose. It must be flushed by running high FGF with the dial turned to maximum for 30 minutes until gas analysis confirms zero vapor output.",
+      "explanation": "Tipping can place liquid agent in the bypass chamber and raise vaporizer output. The lecture recommends draining the vaporizer, running it at the highest setting with high fresh gas flow for 30 minutes, and refilling only once expired gas analysis no longer detects anesthetic.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 71",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -1608,18 +1605,18 @@
       "id": "50",
       "set": 1,
       "type": "single",
-      "stem": "During direct laryngoscopy with a straight Miller blade, what is the correct technique for exposing the glottic opening?",
+      "stem": "How does the Miller blade expose the glottis during direct laryngoscopy?",
       "options": [
-        "Place the tip in the vallecula and pull upward at a 45-degree angle",
-        "Directly trap and lift the posterior surface of the epiglottis",
-        "Insert into the pyriform fossa and rotate the flange clockwise",
-        "Advance through the vocal cords to stretch the glossoepiglottic fold"
+        "By directly lifting the epiglottis",
+        "By stretching the glossoepiglottic ligament from the vallecula",
+        "By inflating the vallecula with oxygen",
+        "By depressing the arytenoids"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "The straight Miller blade is designed to reach beneath the epiglottis, directly entrapping and lifting its posterior surface to expose the vocal cords.",
-      "citation": "Airway Equipment · Slide 10",
+      "explanation": "The lecture describes the Miller as a long, straight blade used for direct epiglottic lift, in contrast with the Macintosh blade's indirect lift through the vallecula.",
+      "citation": "Airway Equipment · Slide 11",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -1630,11 +1627,11 @@
         "families": [
           "Airway Equipment"
         ],
-        "slides": "10",
+        "slides": "11",
         "citationFormat": "slides"
       },
       "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 10"
+      "sourceLocator": "Slide 11"
     },
     {
       "id": "51",
@@ -1739,7 +1736,7 @@
       "id": "54",
       "set": 1,
       "type": "single",
-      "stem": "Which regulatory agency establishes and legally enforces occupational exposure standards for waste anesthetic gases in the hospital environment?",
+      "stem": "Which organization is described as enacting and enforcing workplace safety standards after NIOSH recommendations?",
       "options": [
         "Food and Drug Administration (FDA)",
         "American Society for Testing and Materials (ASTM)",
@@ -1749,9 +1746,9 @@
       "answer": [
         2
       ],
-      "explanation": "OSHA enacts and legally enforces workplace safety and health standards. NIOSH conducts research and recommends standards; FDA regulates drug/gas purity; ASTM establishes machine standards.",
-      "citation": "Medical Gas Systems in Anesthesia · Slide 4; CO₂ & Scavenging · Slide 9",
-      "topic": "Medical Gases",
+      "explanation": "The lecture describes NIOSH as conducting research and recommending safety standards, while OSHA was established to enact standards into law after due process and enforce them. The waste-gas slide also notes that there is no universal WAG exposure standard.",
+      "citation": "CO₂ & Scavenging · Slides 9, 10",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -1759,34 +1756,33 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Medical Gas Systems in Anesthesia",
           "CO₂ Absorbents and Scavenging"
         ],
-        "slides": "4",
+        "slides": "9, 10",
         "citationFormat": "slides"
       },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 4"
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Slides 9, 10"
     },
     {
       "id": "55",
       "set": 1,
       "type": "multi",
-      "stem": "Which of the following clinical statements regarding an oropharyngeal airway (OPA) are true? (Select 3)",
+      "stem": "Which statements about an oropharyngeal airway are supported by the lecture? Select 3.",
       "options": [
-        "It is better tolerated in awake or lightly anesthetized patients than an NPA",
-        "It completely eliminates the risk of stimulating protective airway reflexes",
-        "Proper size is measured from the corner of the mouth to the angle of the mandible",
-        "Its concave shape follows the palate to lift the base of the tongue",
-        "It cannot be inserted alongside a bite block or endotracheal tube",
-        "It can improve mask ventilation seal in edentulous patients"
+        "Its concave surface faces caudally",
+        "It lifts the tongue",
+        "It improves bag-mask seal in edentulous patients",
+        "Awake patients tolerate it better than an NPA",
+        "Its most common complication is epistaxis",
+        "It lies in the hypopharynx"
       ],
       "answer": [
-        2,
-        3,
-        5
+        0,
+        1,
+        2
       ],
-      "explanation": "An OPA is sized from corner of mouth to angle of mandible, its concavity follows the anatomy to lift the tongue, and it aids bag-mask ventilation in edentulous patients. It stimulates reflexes/laryngospasm if light, and NPAs are better tolerated awake.",
+      "explanation": "The lecture describes the OPA as having a caudally facing concave surface, lifting the tongue, and improving bag-mask ventilation seal in edentulous patients. Awake patients tolerate NPAs better, and epistaxis is the common NPA complication.",
       "citation": "Airway Equipment · Slide 5",
       "topic": "Airway",
       "imageSvg": null,
@@ -1808,17 +1804,17 @@
       "id": "56",
       "set": 1,
       "type": "single",
-      "stem": "What is the critical temperature of nitrous oxide?",
+      "stem": "What critical temperature does the lecture give for nitrous oxide?",
       "options": [
-        "-118.6°C",
-        "-88.5°C",
-        "+36.4°C",
-        "+58.6°C"
+        "About -118.6°C",
+        "About -88°C",
+        "About +36°C",
+        "About +58°C"
       ],
       "answer": [
         2
       ],
-      "explanation": "The critical temperature of N2O is +36.4°C (above room temperature). Because of this, it remains a liquid under compression inside the cylinder at room temperature.",
+      "explanation": "The lecture gives nitrous oxide a critical temperature of about 36°C, which is above typical room temperature and allows liquid and gas to coexist in the cylinder under pressure.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 14",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -1882,7 +1878,7 @@
       "answer": [
         1
       ],
-      "explanation": "As long as liquid N2O remains in the cylinder, it vaporizes into the headspace to maintain saturated vapor pressure equilibrium (745 psig at 20°C). The pressure only falls when all liquid has vaporized (leaving ~16% volume).",
+      "explanation": "As long as liquid nitrous oxide remains, liquid and vapor stay in equilibrium and the cylinder pressure remains near 745 psig at 20°C. Once the liquid phase is gone, the pressure begins to fall as the remaining gas is used.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 14",
       "topic": "Medical Gases",
       "imageSvg": null,
