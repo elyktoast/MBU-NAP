@@ -851,6 +851,9 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  const cloud=read('equipment/assets/supabase-sync.js'),core=read('equipment/assets/app-core.js');
  for(const token of ['async function listDevices()','async function removeDevice(','async function listHistory(','async function restoreVersion(','mbu_sync_versions?select=','p_expected_server_revision'])if(!cloud.includes(token))fail('Cloud management contract missing '+token);
  if((cloud.match(/addEventListener\('hashchange'/g)||[]).length!==1)fail('Cloud auth has duplicate or missing hashchange handlers');
+ const cloudManagement=read('equipment/assets/cloud-management.js');
+ for(const token of ['renderDevices','renderHistory','removeDevice','restoreVersion'])if(!cloudManagement.includes(token))fail('Lazy cloud management module missing '+token);
+ if(!core.includes("loadScript('cloud-management.js')"))fail('Cloud management is not lazy-loaded from app core');
  for(const token of ['data-cloud-devices-details','data-cloud-history-details','renderCloudDevices','renderCloudHistory'])if(!core.includes(token))fail('Cloud management UI missing '+token);
 }
 
