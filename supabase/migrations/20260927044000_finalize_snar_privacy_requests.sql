@@ -5,7 +5,7 @@ create table if not exists public.snar_privacy_requests (
   id bigint generated always as identity primary key,
   user_id uuid not null references auth.users(id) on delete cascade,
   request_type text not null check (request_type in ('access','correction','export','deletion','other')),
-  details text not null default '' check (char_length(details) <= 2000),
+  details text not null default '' check (char_length(details) <= 4000),
   status text not null default 'received' check (status in ('received','in_review','completed','denied')),
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
