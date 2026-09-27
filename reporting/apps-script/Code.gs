@@ -117,7 +117,7 @@ function doPost(e) {
       'Keyed answer:',
       clean_(p.answerText && p.answerText.length ? p.answerText : p.answerIndexes, 3000),
       '',
-      'Classmate comment:',
+      'User comment:',
       comment,
       '',
       'Explanation:',
