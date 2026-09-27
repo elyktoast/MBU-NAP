@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2026-09-27",
+  "phase": "3-5",
+  "scope": {
+    "questions": 2000,
+    "banks": [
+      "bank1.json",
+      "bank2.json",
+      "bank3.json",
+      "combined.json",
+      "hazards.json"
+    ]
+  },
+  "sourceBasis": [
+    {
+      "title": "SRNA Equipment Study Guide",
+      "use": "Medical gases/anesthesia machine, CO₂ absorbents and scavenging, airway equipment, workstation hazards, electricity, electrosurgery, power failure, and fire safety."
+    },
+    {
+      "title": "Exam 1 Study Guide",
+      "use": "Monitoring, airway pressures/loops, capnography, ASA/AANA monitoring, and related Exam 1 concepts."
+    }
+  ],
+  "changes": {
+    "sourceGroundedReplacementQuestions": 86,
+    "bank1SameSetDuplicatesReplaced": 21,
+    "hazardsSet2RepeatedSlotsRebuilt": 65,
+    "savedProgressCompatibility": "Question IDs and set positions were preserved.",
+    "answerKeyPolicy": "No answer key was changed solely because of a heuristic. Source support was required.",
+    "distractorPolish": "Newly rebuilt items with obvious answer-length clues were balanced without changing their keyed concept."
+  },
+  "finalChecks": {
+    "missingRequiredFields": 0,
+    "sameSetDuplicateGroups": [],
+    "sameStemSameOptionPoolKeyConflicts": [],
+    "hazardsSet2Questions": 100,
+    "hazardsSet2UniqueNormalizedStems": 100,
+    "shortExplanationHeuristicCount": 94,
+    "longKeyedAnswerHeuristicCount": 34
+  },
+  "banks": {
+    "bank1.json": {
+      "count": 500,
+      "topics": {
+        "Medical Gases": 178,
+        "Monitoring": 177,
+        "CO₂ & Scavenging": 87,
+        "Airway": 58
+      },
+      "shortExplanationHeuristic": 8,
+      "longKeyedAnswerHeuristic": 10
+    },
+    "bank2.json": {
+      "count": 500,
+      "topics": {
+        "Monitoring": 130,
+        "Medical Gases": 128,
+        "CO₂ & Scavenging": 122,
+        "Airway": 120
+      },
+      "shortExplanationHeuristic": 68,
+      "longKeyedAnswerHeuristic": 9
+    },
+    "bank3.json": {
+      "count": 500,
+      "topics": {
+        "Monitoring": 226,
+        "Medical Gases": 144,
+        "CO₂ & Scavenging": 84,
+        "Airway": 46
+      },
+      "shortExplanationHeuristic": 0,
+      "longKeyedAnswerHeuristic": 2
+    },
+    "combined.json": {
+      "count": 150,
+      "topics": {
+        "CO₂ & Scavenging": 23,
+        "Medical Gases": 52,
+        "Hazards & Safety": 58,
+        "Airway": 17
+      },
+      "shortExplanationHeuristic": 3,
+      "longKeyedAnswerHeuristic": 2
+    },
+    "hazards.json": {
+      "count": 350,
+      "topics": {
+        "Hazards & Safety": 350
+      },
+      "shortExplanationHeuristic": 15,
+      "longKeyedAnswerHeuristic": 11
+    }
+  },
+  "limitations": [
+    "Exact stems may still recur across different practice sets when retained as repeated exposure; same-set duplicates are not allowed.",
+    "Short-explanation and answer-length heuristics are review signals, not proof of a bad question.",
+    "Static Easy/Moderate/Hard labels remain intentionally absent because no authoritative difficulty rubric was supplied."
+  ]
+}
