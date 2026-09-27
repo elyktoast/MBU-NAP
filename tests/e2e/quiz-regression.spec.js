@@ -1845,6 +1845,22 @@ test.describe('canonical quiz regression', () => {
     expect(out.frozenDifficulty).toBe(-2);
   });
 
+  test('First-use legal clickwrap requires affirmative assent and stays out of the way afterward', async ({ page }) => {
+    await page.addInitScript(()=>localStorage.removeItem('snar_legal_ack_2026_09_27_v2'));
+    await page.goto('/');
+    await expect(page.locator('#snar-legal-gate')).toBeVisible();
+    await expect(page.locator('[data-legal-continue]')).toBeDisabled();
+    await expect(page.locator('#snar-legal-gate')).toContainText('Terms of Use');
+    await expect(page.locator('#snar-legal-gate')).toContainText('Privacy Notice');
+    await page.locator('[data-legal-check]').check();
+    await expect(page.locator('[data-legal-continue]')).toBeEnabled();
+    await page.locator('[data-legal-continue]').click();
+    await expect(page.locator('#snar-legal-gate')).toHaveCount(0);
+    expect(await page.evaluate(()=>localStorage.getItem('snar_legal_ack_2026_09_27_v2'))).toBe('1');
+    await page.reload();
+    await expect(page.locator('#snar-legal-gate')).toHaveCount(0);
+  });
+
   test('Guest users can study normally but Adaptive Mode requires an account', async ({ page }) => {
     await page.evaluate(()=>{localStorage.removeItem('mbu_supabase_session_v1');sessionStorage.clear()});
     await page.goto(exam + '/studio.html');
