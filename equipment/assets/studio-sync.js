@@ -41,7 +41,8 @@
       const a=v.adaptive,seenUids=Array.isArray(a.seenUids)?[...new Set(a.seenUids.map(normalizeKey).filter(Boolean))]:uids.slice(),topicCounts=plainObject(a.topicCounts)?Object.fromEntries(Object.entries(a.topicCounts).map(([k,n])=>[String(k),Math.max(0,Number(n)||0)])):{};
       out.mode='adaptive';
       const poolUids=Array.isArray(a.poolUids)?[...new Set(a.poolUids.map(normalizeKey).filter(Boolean))]:uids.slice();
-      out.adaptive={mode:'adaptive',level:Math.max(1,Math.min(5,Number(a.level)||3)),answered:Math.max(0,Number(a.answered)||0),correct:Math.max(0,Number(a.correct)||0),maxQuestions:Math.max(1,Math.min(200,Number(a.maxQuestions)||50)),seenUids,poolUids,topicCounts,path:Array.isArray(a.path)?a.path.filter(plainObject).slice(-200):[],currentLevel:Math.max(1,Math.min(5,Number(a.currentLevel)||Number(a.level)||3))}
+      const theta=Math.max(-2.5,Math.min(2.5,Number(a.theta)||0)),se=Math.max(0,Number(a.se)||0),information=Math.max(0,Number(a.information)||0);
+      out.adaptive={mode:'adaptive',theta,se,information,level:Math.max(1,Math.min(5,Number(a.level)||3)),answered:Math.max(0,Number(a.answered)||0),correct:Math.max(0,Number(a.correct)||0),maxQuestions:Math.max(1,Math.min(200,Number(a.maxQuestions)||50)),seenUids,poolUids,topicCounts,path:Array.isArray(a.path)?a.path.filter(plainObject).slice(-200):[],currentLevel:Math.max(1,Math.min(5,Number(a.currentLevel)||Number(a.level)||3))}
     }
     return out
   }
