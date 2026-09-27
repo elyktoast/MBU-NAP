@@ -22,3 +22,9 @@
 - Added account-management metadata, guest-session counts, and CAT-user counts to the restricted operator-admin dashboard.
 - Clarified that the browser admin panel does not expose raw learner study payloads, passwords, or raw first-attempt CAT contribution rows.
 - Added 24-hour retention for guest-session heartbeat records.
+
+## 2026-09-27-v5
+- Corrected the public product name from “SNAR Study Tool” to “SRNA Study Tool.”
+- Preserved all prior versioned legal snapshots unchanged.
+- Kept the v4 data practices, privacy controls, retention periods, and account-administration disclosures unchanged.
+- Updated current authenticated assent to record the exact v5 Terms and Privacy document hashes.
