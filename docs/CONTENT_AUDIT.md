@@ -79,7 +79,7 @@ These are review queues for Phase 4. They are not treated as content errors.
 
 ## Phase 2: metadata normalization
 
-Phase 2 changed metadata only. Question wording, answer choices, answer keys, explanations, and original citation text were preserved.
+Phase 2 changed metadata only. Question wording, answer choices, answer keys, and explanations were preserved. Citation display strings were normalized to a consistent `Source · locator` format while retaining the underlying source/locator information.
 
 ### Canonical topics
 
@@ -104,7 +104,7 @@ The other banks were normalized to the same vocabulary, eliminating variations s
 
 ### Canonical source metadata
 
-Every question now also carries a normalized `sourceTitle` while retaining its original citation text verbatim.
+Every question now carries normalized `sourceTitle`, `sourceLocator`, and `sourceMeta` fields alongside the normalized display citation.
 
 The allowed source titles are:
 
@@ -118,9 +118,9 @@ This gives Search, analytics, future source verification, and semantic audits a 
 
 ### Citation formatting
 
-Original citation strings were intentionally **not rewritten**. The banks use several historical citation styles, including slide references, PDF-page references, and lecture-title references. Reformatting those strings without checking the underlying source files would create more risk than value.
+Citation display strings were normalized into a consistent `Source · locator` form. The underlying slide/PDF-page locator information was retained in `sourceLocator` and `sourceMeta`, so normalization did not discard source traceability.
 
-Instead, `sourceTitle` now provides the normalized metadata layer while the original citation remains the authoritative display/reference text.
+This removes legacy variations such as `.pdf · 12`, `Slides 12, 13`, and mixed lecture-title styles while keeping the actual source-location information available for Search, audits, and later source verification.
 
 ### Difficulty metadata
 
