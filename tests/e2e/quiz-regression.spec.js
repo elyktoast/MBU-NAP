@@ -2414,6 +2414,18 @@ test.describe('canonical quiz regression', () => {
     expect(await page.locator('#sourceChecks input[type=checkbox]:checked').count()).toBeGreaterThan(0);
   });
 
+  test('Adaptive entry waits for backend account resolution before deciding to show account controls', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let accessChecks=0;
+    await seedSignedIn(page);
+    await page.unroute(cloud+'/rest/v1/rpc/snar_account_access_status');
+    await page.route(cloud+'/rest/v1/rpc/snar_account_access_status',async route=>{accessChecks++;await new Promise(r=>setTimeout(r,120));return route.fulfill({status:200,contentType:'application/json',body:'"active"'})});
+    await page.goto(exam + '/studio.html?mode=adaptive');await waitForStudio(page);
+    await expect(page.locator('#adaptiveToggle')).toBeChecked();
+    await expect(page.locator('.studio-start-btn')).toHaveText('Begin Adaptive Quiz');
+    expect(accessChecks).toBeGreaterThan(0);
+    expect(await page.locator('#mbu-account-panel.open').count()).toBe(0);
+  });
+
   test('Signed-in Adaptive Testing CTA preselects sources and enables Adaptive Mode without forcing another sign-in', async ({ page }) => {
     await seedSignedIn(page);
     await page.goto(exam + '/studio.html?mode=adaptive');await waitForStudio(page);
