@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const root=process.cwd(),errors=[],warnings=[];
+const taxonomy=read('equipment/exam-1/banks.json').contentTaxonomy||{},allowedTopics=new Set(taxonomy.topics||[]),allowedSources=new Set(taxonomy.sourceTitles||[]);
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const norm=s=>String(s??'').trim().replace(/\s+/g,' ').toLowerCase();
 const err=m=>errors.push(m),warn=m=>warnings.push(m);
