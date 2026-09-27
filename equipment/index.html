@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Equipment | SNAR Study Tool</title>
+<title>Equipment | SRNA Study Tool</title>
 
 <style>
 :root {
@@ -105,8 +105,14 @@ h1 {
 }
 
 @media(max-width:600px) {
-    .container { padding:20px 14px; }
-    h1 { font-size:27px; }
+    .container { width:100%; padding:18px 14px 24px; }
+    header { margin-bottom:20px; padding-bottom:16px; }
+    h1 { font-size:clamp(27px,8vw,32px); line-height:1.08; }
+    .subtitle { font-size:15px; line-height:1.4; }
+    .grid { grid-template-columns:minmax(0,1fr); gap:14px; }
+    .card { padding:18px; }
+    .card p { min-height:0; margin-bottom:16px; }
+    .btn { display:flex; width:100%; min-height:46px; align-items:center; justify-content:center; text-align:center; }
 }
 </style>
 </head>

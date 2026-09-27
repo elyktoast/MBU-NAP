@@ -2777,6 +2777,19 @@ test.describe('canonical quiz regression', () => {
         expect(result.font, label+' fell back to default serif at '+vp.name).not.toMatch(/Times New Roman/i);
         expect(result.navVisible, label+' nav hidden at '+vp.name).toBe(true);
         expect(result.mainVisible, label+' main content hidden at '+vp.name).toBe(true);
+        if(vp.name==='phone'){
+          const mobileNav=await page.evaluate(()=>{
+            const links=[...document.querySelectorAll('.mbu-global-nav__primary-link')].map(el=>el.getBoundingClientRect());
+            const nav=document.querySelector('.mbu-global-nav')?.getBoundingClientRect();
+            return{
+              linkTopSpread:links.length?Math.max(...links.map(x=>x.top))-Math.min(...links.map(x=>x.top)):999,
+              navWidth:nav?.width||0,
+              viewportWidth:document.documentElement.clientWidth
+            }
+          });
+          expect(mobileNav.linkTopSpread, label+' mobile primary nav wrapped').toBeLessThanOrEqual(2);
+          expect(mobileNav.navWidth, label+' mobile nav exceeds viewport').toBeLessThanOrEqual(mobileNav.viewportWidth);
+        }
       }
     }
   });
