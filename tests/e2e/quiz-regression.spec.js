@@ -1632,6 +1632,17 @@ test.describe('canonical quiz regression', () => {
     await expect.poll(()=>calibrationRefreshes).toBeGreaterThan(0);
   });
 
+  test('Account access check fails closed when the server status cannot be resolved', async ({ page }) => {
+    await page.route(cloud+'/rest/v1/rpc/snar_account_access_status',route=>route.abort());
+    await seedSignedIn(page);
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await expect.poll(()=>page.evaluate(()=>MBUSupabase.status().accessStatus)).toBe('unknown');
+    const result=await page.evaluate(async()=>{try{await MBUSupabase.syncNow();return 'allowed'}catch(e){return e.message}});
+    expect(result).toContain('suspended');
+    await page.locator('#adaptiveToggle').check();
+    await expect(page.locator('#adaptiveToggle')).not.toBeChecked();
+  });
+
   test('Suspended accounts keep privacy and deletion controls but cannot sync or use Adaptive Mode', async ({ page }) => {
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
     await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'suspended-access',refresh_token:'suspended-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000009',email:'suspended@example.com'}})}));
