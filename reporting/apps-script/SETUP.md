@@ -1,8 +1,8 @@
-# MBU-NAP Question Reporting Setup
+# SNAR Study Tool Question Reporting Setup
 
 The site now has a shared structured question-report modal. Reports are designed to go to a Google Apps Script web app that:
 
-1. creates an `MBU-NAP Question Reports` Google Sheet automatically on the first report,
+1. creates an `SNAR Study Tool Question Reports` Google Sheet automatically on the first report,
 2. appends every report as a new row,
 3. emails the Apps Script deploying account by default,
 4. keeps the reporter's email/private account information out of the public website source.
