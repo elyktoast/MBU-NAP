@@ -9,12 +9,15 @@
 5. **Hazards:** edit the shared standard/advanced engines and `hazards-page.js`.
 6. **Build/cache behavior:** edit `build-bootstrap.js` or `auto-update.js`. Do not add manual `?v=` revisions.
 7. **Cross-cutting app behavior:** diagnostics, accessibility helpers, backup/import, and sync interfaces belong in `app-core.js`.
+8. **Question-generation framework:** provider registration, draft validation, approval, and Generated Bank storage belong in `question-generator.js`. Do not hardcode a provider until the feature is intentionally enabled.
 
 ## Runtime flow
 
 Every application page loads the unversioned build bootstrap. The bootstrap fetches `equipment/build.json` with `no-store`, creates the build-scoped runtime, loads `app-core.js`, and then loads page-specific assets using the current build id.
 
 Shared JSON is read through `MBUBuild.fetchJSON`, which deduplicates requests within a page and evicts failures so retry remains possible.
+
+Study Studio also loads a dormant provider-neutral question-generation framework. The manifest keeps it disabled by default. If enabled later, only reviewed and approved generated questions are bridged into Studio as a separate Generated Bank.
 
 ## Persistence
 
