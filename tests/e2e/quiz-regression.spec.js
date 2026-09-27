@@ -2960,6 +2960,20 @@ test.describe('canonical quiz regression', () => {
     expect(styles.buttonColor).toBe('rgb(255, 255, 255)');
   });
 
+  test('Study Studio form controls keep programmatic accessible labels', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await expect(page.locator('label[for="count"]')).toHaveText('Question count');
+    await expect(page.locator('label[for="order"]')).toHaveText('Order');
+    await expect(page.locator('#searchbox')).toHaveAttribute('aria-label','Search question repository');
+    const unlabeled=await page.evaluate(()=>[...document.querySelectorAll('input:not([type="hidden"]),select,textarea')].filter(el=>{
+      if(el.closest('.hidden')||getComputedStyle(el).display==='none')return false;
+      if(el.getAttribute('aria-label')||el.getAttribute('aria-labelledby'))return false;
+      if(el.id&&document.querySelector('label[for="'+CSS.escape(el.id)+'"]'))return false;
+      return !el.closest('label')
+    }).map(el=>({tag:el.tagName,id:el.id,type:el.getAttribute('type')||''})));
+    expect(unlabeled).toEqual([]);
+  });
+
   test('Primary study surfaces stay visually intact across phone, iPad, and desktop widths', async ({ page }) => {
     const viewports=[
       {name:'phone',width:390,height:844},

@@ -76,3 +76,7 @@ The operator analytics workspace now states whether any items have reached the 2
 ## CAT population-data guard
 
 Population difficulty remains completely excluded below 25 unique learners per item. At 25–99 learners it receives a 35% weight, at 100–299 a 60% weight, and at 300+ an 80% weight. CI now tests the 25-learner boundary directly so early data cannot silently become over-weighted.
+
+## Accessibility hardening
+
+Study Studio form controls now use programmatic labels for quiz count and order, and the repository search field has an explicit accessible name. Browser regression coverage scans visible Studio form controls so unlabeled inputs, selects, or textareas fail CI.
