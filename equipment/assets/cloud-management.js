@@ -1,4 +1,4 @@
-/* Lazy cloud device/history management for SNAR Study Tool. */
+/* Lazy cloud device/history management for SRNA Study Tool. */
 (()=>{'use strict';
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 function storeLabel(key){
@@ -39,5 +39,5 @@ async function renderHistory(modal){
     host.querySelectorAll('[data-restore-version]').forEach(btn=>btn.onclick=async()=>{if(!confirm('Restore this saved version? Your current cloud state will be preserved in version history first.'))return;btn.disabled=true;const message=modal.querySelector('[data-account-message]');try{message.textContent='Restoring…';await MBUSupabase.restoreVersion(Number(btn.dataset.restoreVersion));message.textContent='Restore complete.'}catch(e){message.textContent=e.message;btn.disabled=false}})
   }catch(e){host.innerHTML='<div class="mbu-muted">Could not load history: '+esc(e.message)+'</div>'}
 }
-window.SNARCloudManagement={renderDevices,renderHistory};
+window.SRNACloudManagement={renderDevices,renderHistory};
 })();
