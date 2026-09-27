@@ -388,7 +388,7 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#dashboard')).toBeVisible();
   });
 
-  test('MBU-NAP brand hard refreshes the current page with a cache-busting URL', async ({ page }) => {
+  test('SNAR Study Tool brand hard refreshes the current page with a cache-busting URL', async ({ page }) => {
     await page.goto(exam + '/combined.html');
     const beforePath = new URL(page.url()).pathname;
     await page.locator('.mbu-global-nav__brand').click();
