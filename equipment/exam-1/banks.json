@@ -312,5 +312,13 @@
     "metadataKey": "mbu_sync_meta_v1",
     "deviceKey": "mbu_device_id_v1",
     "adapterApi": "MBUSync.registerAdapter(name, adapter)"
+  },
+  "features": {
+    "questionGenerator": {
+      "enabled": false,
+      "status": "unconfigured",
+      "storageKey": "mbu_generated_questions_v1",
+      "provider": null
+    }
   }
 }
