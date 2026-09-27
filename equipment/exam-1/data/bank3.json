@@ -16007,17 +16007,17 @@
       "id": "S5-T168",
       "set": 5,
       "type": "single",
-      "stem": "Which setup step directly prevents the air embolism complication of pressurized arterial line flushing?",
+      "stem": "Which complication of invasive arterial monitoring does the lecture specifically associate with pressurized flushing?",
       "options": [
-        "Using the shortest possible catheter",
-        "Leveling the transducer to the right atrium",
-        "Zeroing the transducer to atmosphere",
-        "Removing all air from the flush bag and tubing before use"
+        "Nerve injury",
+        "Air embolism",
+        "Compartment syndrome",
+        "Venous thrombosis"
       ],
       "answer": [
-        3
+        1
       ],
-      "explanation": "The lecture lists air embolism from pressurized flushing as a complication, and air bubbles also degrade waveform fidelity. De-airing the flush bag and tubing addresses both. Leveling and zeroing affect accuracy, not embolism risk.",
+      "explanation": "The lecture lists air embolism from pressurized flushing among complications of invasive arterial monitoring. The prior prevention step about de-airing the flush bag was reasonable practice but was not stated in the cited material.",
       "citation": "Monitoring · Slide 69 (PDF p. 70)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -16054,7 +16054,7 @@
         1,
         5
       ],
-      "explanation": "Hypothermia increases shivering, cardiac work, and O2 consumption; impairs coagulation; alters drug metabolism; and is linked to wound infection. Slower metabolism prolongs drug effects, so confirm NMB recovery with quantitative monitoring. low temp is bad for coagulation, wounds, and drug function.",
+      "explanation": "Perioperative hypothermia impairs coagulation and alters drug metabolism, and it also increases shivering, cardiac work, and oxygen consumption. Those effects can complicate emergence and recovery.",
       "citation": "Monitoring · Slide 84 (PDF p. 85)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -16158,7 +16158,7 @@
       ],
       "explanation": "An O2 flowmeter delivering gas that reads 21% means the 'O2' line is carrying air, the same class of problem as the lecture's crossed-pipeline events. Pressure-based safeguards stay quiet because pressures are normal. Room-air calibration would make a working sensor read 21% in AIR, not in 100% O2.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 46 (PDF p. 23); Monitoring · Slide 36 (PDF p. 36)",
-      "topic": "Monitoring",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -16619,7 +16619,7 @@
       "answer": [
         3
       ],
-      "explanation": "O2-last placement protects against leaks in UPSTREAM tubes. A leak in the O2 tube itself loses O2 regardless of position, and the lecture lists flowmeter cracks and leaks among causes of hypoxic mixtures. The fail-safe and proportioner sense pressure and flow settings, not leaks, so the inspired O2 analyzer is the safeguard.",
+      "explanation": "Oxygen-last placement protects against leaks in upstream flowmeter tubes. A crack in the oxygen tube itself can still lose oxygen, and the lecture lists flowmeter cracks, leaks, and failures among causes of hypoxic mixtures. Pressure- and ratio-based safeguards do not correct a leak in the oxygen flowmeter tube.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 41, 48 (PDF p. 21, 24)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -16653,7 +16653,7 @@
       "answer": [
         1
       ],
-      "explanation": "High O2 flows over the absorbent during a weekend or after prolonged use desiccate it, which leads to CO production. at the end of the day turn flows off so you don't desiccate the absorbent.",
+      "explanation": "Prolonged high oxygen flow over the absorber can desiccate the absorbent and promote carbon monoxide formation with susceptible agents. The lecture specifically notes turning fresh gas flows off at the end of the day to avoid desiccation.",
       "citation": "CO₂ & Scavenging · Slide 7 (PDF p. 4)",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -16677,7 +16677,7 @@
       "id": "S5-F53",
       "set": 5,
       "type": "single",
-      "stem": "Which OR ventilation design are most ORs equipped with?",
+      "stem": "Which OR ventilation design does the lecture say most operating rooms use?",
       "options": [
         "Recirculating, with filtered stale air mixed in",
         "Recirculating, with at least 3 fresh exchanges per hour",
@@ -16687,7 +16687,7 @@
       "answer": [
         2
       ],
-      "explanation": "Most ORs have a nonrecirculating system that pumps in fresh outside air and removes and discards all stale air, with 15 or more exchanges per hour recommended (this is how most ORs are set up). Recirculating systems exist but can carry anesthetic gases between rooms.",
+      "explanation": "The lecture states that most operating rooms use a nonrecirculating ventilation system that brings in fresh outside air and removes and discards stale air. It recommends at least 15 air exchanges per hour.",
       "citation": "CO₂ & Scavenging · Slide 16 (PDF p. 8)",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -16995,13 +16995,13 @@
       "options": [
         "Fresh gas saturated with desflurane at 1 atm",
         "Heated O2 that picks up desflurane from wicks",
-        "100% desflurane vapor at about 2 atm (1500 mmHg)",
+        "100% desflurane vapor at about 2 atm",
         "A 21% desflurane mixture in carrier gas"
       ],
       "answer": [
         2
       ],
-      "explanation": "The sump heats liquid des to 39 C and pressurizes it to about 2 atm, acting as a reservoir of 100% des vapor. Fresh gas never enters the sump; vapor is injected into the fresh gas stream through restrictor valves.",
+      "explanation": "The Tec 6 sump heats and pressurizes liquid desflurane and acts as a reservoir holding 100% desflurane vapor at about 2 atm. Fresh gas travels in a separate gas circuit and receives desflurane vapor downstream.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 60, 61 (PDF p. 30, 31)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -17248,7 +17248,7 @@
       "answer": [
         2
       ],
-      "explanation": "Fat:blood solubility: halothane 51, sevo 48, iso 45, des 27, N2O 2.3. Among the potent volatiles, des has the least fat solubility, so less agent accumulates in adipose tissue during long cases.",
+      "explanation": "The lecture table lists fat:blood solubility values of approximately 51 for halothane, 48 for sevoflurane, 45 for isoflurane, and 27 for desflurane. Among those potent volatile agents, desflurane has the lowest fat:blood solubility.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50 (PDF p. 25)",
       "topic": "Medical Gases",
       "imageSvg": null,
