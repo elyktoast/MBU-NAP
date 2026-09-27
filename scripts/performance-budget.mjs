@@ -25,6 +25,7 @@ const budgets={
   'equipment/assets/quiz-engine.js':30000,
   'equipment/assets/studio-page.js':45000,
   'equipment/assets/studio-loader.js':2500,
+  'equipment/assets/question-generator.js':10000,
   'equipment/assets/hazards-page.js':5000,
   'equipment/assets/hazards-dashboard.js':6000,
   'equipment/assets/exam-dashboard.js':5000,
@@ -48,9 +49,10 @@ for(const p of appPages){
   if(/[?&]v=\d+/.test(src))fail(p+': manual cache revision returned');
 }
 
-const studio=read('equipment/assets/studio-page.js');
+const studio=read('equipment/assets/studio-page.js'),generator=read('equipment/assets/question-generator.js');
 if(studio.includes('ALL.find('))fail('Studio: O(n) UID lookup returned');
 if(studio.includes('bank3-images.js')||studio.includes('combined-images.js')||studio.includes('hazards-images.json'))fail('Studio: monolithic image bundle reference returned');
+for(const token of ['registerProvider','generate','approveDraft','validateQuestion','studioQuestions'])if(!generator.includes(token))fail('Question generator framework missing '+token);
 
 const boot=read('equipment/assets/build-bootstrap.js');
 if(!boot.includes('jsonCache=new Map()')||!boot.includes('fetchJSON'))fail('Build runtime lost shared JSON request deduplication');
