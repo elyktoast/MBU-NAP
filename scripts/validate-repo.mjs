@@ -597,7 +597,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const p of ['equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js'])if(!read(p).includes('touchStore'))fail(p+': save path is not sync-aware');
  const nav=read('equipment/assets/site-nav.js'),css=read('equipment/assets/app-core.css');
  if(!nav.includes('mountNav')||!core.includes('Skip to main content')||!css.includes(':focus-visible')||!css.includes('prefers-reduced-motion'))fail('Shared accessibility/tools contract is incomplete');
- for(const p of ['README.md','docs/ARCHITECTURE.md','docs/SYNC.md','CONTRIBUTING.md'])if(!exists(p))fail('Documentation missing '+p);
+ for(const p of ['README.md','docs/ARCHITECTURE.md','docs/SYNC.md','docs/CONTENT_AUDIT.md','CONTRIBUTING.md'])if(!exists(p))fail('Documentation missing '+p);
  if(!exists('scripts/content-integrity.mjs'))fail('Content integrity validator is missing');
 }
 
@@ -614,11 +614,12 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 
 // Supabase cloud sync must use only public browser credentials and authenticated RLS.
 {
- const boot=read('equipment/assets/build-bootstrap.js'),cfg=read('equipment/assets/supabase-config.js'),cloud=read('equipment/assets/supabase-sync.js'),migration=read('supabase/migrations/20260927000217_create_mbu_sync_schema.sql');
+ const boot=read('equipment/assets/build-bootstrap.js'),cfg=read('equipment/assets/supabase-config.js'),cloud=read('equipment/assets/supabase-sync.js'),migration=read('supabase/migrations/20260927000217_create_mbu_sync_schema.sql'),conflictMigration=read('supabase/migrations/20260927010714_add_server_authoritative_sync_write.sql');
  if(!boot.includes("loadScript('supabase-config.js')")||!boot.includes("loadScript('supabase-sync.js')"))fail('Supabase sync is not loaded by the shared bootstrap');
  if(!cfg.includes('sb_publishable_')||cfg.includes('sb_secret_')||cfg.includes('service_role'))fail('Supabase browser config must contain only a publishable key');
- for(const token of ['mbu_sync_state','mbu_sync_devices',"registerAdapter('supabase'",'/auth/v1/token?grant_type=password','on_conflict=user_id,store_key'])if(!cloud.includes(token))fail('Supabase adapter missing '+token);
+ for(const token of ['mbu_sync_state','mbu_sync_devices',"registerAdapter('supabase'",'/auth/v1/token?grant_type=password','/rest/v1/rpc/mbu_sync_write_state','p_expected_server_revision'])if(!cloud.includes(token))fail('Supabase adapter missing '+token);
  for(const token of ['mbu_sync_versions','mbu_sync_record_version','enable row level security','(select auth.uid())=user_id'])if(!migration.includes(token))fail('Supabase migration missing '+token);
+ for(const token of ['security invoker','for update','server_revision<>expected','grant execute','auth.uid()'])if(!conflictMigration.includes(token))fail('Server-authoritative sync migration missing '+token);
  const all=[...quizFiles,'equipment/assets/app-core.js','equipment/assets/supabase-sync.js','equipment/assets/supabase-config.js'].map(read).join('\n');
  if(all.includes('sb_secret_'))fail('A Supabase secret key is present in browser/repository application code');
 }
@@ -627,6 +628,27 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const cloud=read('equipment/assets/supabase-sync.js');
  for(const token of ["APP_ROOT=new URL('../../'","/auth/v1/signup?redirect_to=",'consumeAuthRedirect','access_token','refresh_token',"history.replaceState(null,'',location.pathname+location.search)"])if(!cloud.includes(token))fail('Supabase confirmation flow missing '+token);
+}
+
+// Supabase account recovery and resend flows are part of the stable account contract.
+{
+ const cloud=read('equipment/assets/supabase-sync.js'),core=read('equipment/assets/app-core.js');
+ for(const token of ['/auth/v1/resend?redirect_to=','/auth/v1/recover?redirect_to=','function resendConfirmation(','function requestPasswordReset(','function updatePassword(','password-recovery'])if(!cloud.includes(token))fail('Supabase account recovery missing '+token);
+ for(const token of ['data-cloud-forgot','data-cloud-resend','data-cloud-recovery','data-cloud-update-password'])if(!core.includes(token))fail('Account recovery UI missing '+token);
+}
+
+// Sync metadata must preserve server revision so stale devices cannot win by clock skew.
+{
+ const core=read('equipment/assets/app-core.js'),cloud=read('equipment/assets/supabase-sync.js');
+ if(!core.includes('serverRevision:Number(prev.serverRevision)||0'))fail('Local sync metadata drops server revision on write');
+ if(!core.includes('Number(x?.serverRevision)||0'))fail('Merge ordering does not prioritize server revision');
+ if(!cloud.includes('serverRevision:Number(row.server_revision)||0'))fail('Cloud snapshots omit server revision');
+}
+
+// Modal accessibility must trap keyboard focus and restore it on close.
+{
+ const core=read('equipment/assets/app-core.js');
+ for(const token of ['function trapModalKey(','e.key===\'Tab\'','toolsReturnFocus?.focus?.()','aria-modal="true"'])if(!core.includes(token))fail('Modal accessibility contract missing '+token);
 }
 
 // Supabase periodic sync must remain enabled and visible in the account/status UI.
