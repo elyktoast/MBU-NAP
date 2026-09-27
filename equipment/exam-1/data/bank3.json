@@ -12630,7 +12630,7 @@
       "answer": [
         1
       ],
-      "explanation": "Box 18.1 lists low cardiac output or arrest under decreased CO2 delivery. With bilateral breath sounds, chest rise, and persistent (if small) waveforms, placement is supported; the low value reflects limited pulmonary flow. That's why compression quality is judged by trying to keep ETCO2 at least 10 mmHg.",
+      "explanation": "Low cardiac output and cardiac arrest reduce carbon dioxide delivery to the lungs and can produce very low ETCO2. Bilateral breath sounds, chest rise, and persistent expired-CO2 waveforms support tracheal placement, so the low value is best explained by poor pulmonary blood flow rather than esophageal intubation.",
       "citation": "Monitoring · Slides 43, 93 (PDF p. 43, 94)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -13052,8 +13052,8 @@
       "answer": [
         2
       ],
-      "explanation": "Like N2O, CO2 is stored as liquid and gas, so the gauge reads the vapor pressure (838 psi at room temperature) as long as liquid remains. Contents can't be judged from pressure; the cylinder must be weighed. Pressure falls in proportion to volume only after the liquid is gone.",
-      "citation": "Medical Gas Systems in Anesthesia · Slides 7, 14 (PDF p. 4, 7)",
+      "explanation": "The lecture's cylinder table identifies carbon dioxide as being stored in both liquid and gas phases at room temperature, with a listed E-cylinder pressure of about 838 psi. A pressure reading at that vapor-pressure value does not indicate how full the cylinder is while liquid remains.",
+      "citation": "Medical Gas Systems in Anesthesia · Slide 7 (PDF p. 4)",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -13065,12 +13065,12 @@
         "families": [
           "Medical Gas Systems in Anesthesia"
         ],
-        "slides": "7, 14",
-        "pdfPages": "4, 7",
+        "slides": "7",
+        "pdfPages": "4",
         "citationFormat": "document"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slides 7, 14 · PDF p. 4, 7"
+      "sourceLocator": "Slide 7 · PDF p. 4"
     },
     {
       "id": "S4-R16",
@@ -13361,7 +13361,7 @@
       "answer": [
         0
       ],
-      "explanation": "Standard II applies during ALL anesthetics: the patient's oxygenation, ventilation, circulation, and temperature shall be continually evaluated. minimum ETCO2, BP, temp, and SpO2.",
+      "explanation": "ASA Standard II applies during all anesthetics and requires continual evaluation of oxygenation, ventilation, circulation, and temperature. The lecture summarizes the minimum monitored parameters as ETCO2, blood pressure, temperature, and SpO2.",
       "citation": "Monitoring · Slide 10 (PDF p. 10)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -15111,7 +15111,7 @@
       "id": "S5-T132",
       "set": 5,
       "type": "single",
-      "stem": "how many ECG views does a five-cable system give compared with a three-cable system?",
+      "stem": "How many ECG views does a five-cable system provide compared with a three-cable system?",
       "options": [
         "Six views vs two views",
         "Three views vs one view",
@@ -15121,7 +15121,7 @@
       "answer": [
         0
       ],
-      "explanation": "a 5-cable system gets 6 views, while a 3-cable system gets 2 views. The three-cable configuration (MCL5 + aVF) has limited sensitivity.",
+      "explanation": "The lecture states that a five-cable system provides six views, while a three-cable system provides two. It also notes that the three-cable configuration has limited sensitivity.",
       "citation": "Monitoring · Slide 57 (PDF p. 58)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -15155,7 +15155,7 @@
       "answer": [
         0
       ],
-      "explanation": "The dips in the plateau are curare clefts: spontaneous inspiratory effort out of sync with the ventilator. the patient is breathing spontaneously, so consider more paralytic, guided by quantitative NM monitoring. Rebreathing raises the baseline, and a cuff leak slopes or shrinks the waveform.",
+      "explanation": "The notches in the alveolar plateau are curare clefts, indicating spontaneous inspiratory effort during controlled ventilation. The lecture's neuromuscular-monitoring material states that neuromuscular response should be monitored when neuromuscular blocking agents are used, so blockade should be assessed and additional relaxant considered if indicated.",
       "citation": "Monitoring · Slides 15, 47 (PDF p. 15, 48)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -15571,7 +15571,7 @@
       ],
       "explanation": "Agent analysis catches vaporizer overdose. A vaporizer moved outside transport mode can tip, sending liquid into the bypass and raising output above the dial. A stuck compensation valve during cooling LOWERS output, a loose cap leaks agent out, and pumping is driven by positive pressure ventilation and flushing.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 42, 71 (PDF p. 21, 36); Monitoring · Slide 42 (PDF p. 42)",
-      "topic": "Monitoring",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -15734,17 +15734,17 @@
       "id": "S5-V28",
       "set": 5,
       "type": "single",
-      "stem": "What serves as the reserve O2 supply for a hospital whose main source is a bulk liquid O2 tank?",
+      "stem": "Which compressed-gas oxygen storage configuration does the lecture describe for hospital supply?",
       "options": [
         "H-cylinder banks connected by manifolds",
-        "The auxiliary O2 flowmeters",
-        "The E-cylinders on each anesthesia machine",
-        "Compressed ambient air reservoirs"
+        "Auxiliary oxygen flowmeters connected in parallel",
+        "E-cylinders connected directly to the central pipeline",
+        "Compressed ambient-air reservoirs"
       ],
       "answer": [
         0
       ],
-      "explanation": "O2 is stored as refrigerated liquid in vacuum-insulated tanks or as compressed gas in H-cylinder banks connected by manifolds, with portable refillable E-cylinders for transport and machine backup. H-cylinders are the hospital reservoir .",
+      "explanation": "The lecture lists high-pressure H-cylinder banks connected by manifolds as one method of hospital oxygen storage and supply. It separately describes portable refillable E-cylinders and refrigerated liquid oxygen in vacuum-insulated tanks.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 11 (PDF p. 6)",
       "topic": "Medical Gases",
       "imageSvg": null,
