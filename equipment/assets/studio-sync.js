@@ -146,7 +146,7 @@
       explanation:String(q.explanation||q.why||q.exp||''),
       source:Array.isArray(sourceRaw)?sourceRaw.join('; '):String(sourceRaw||''),
       page:String(q.page||''),
-      pageUrl:location.href,
+      pageUrl:location.origin+location.pathname,
       build:(document.body.innerHTML.match(/MBU_BUILD:([^<*]+)/)||[])[1]?.trim()||'',
       userAgent:navigator.userAgent
     };
@@ -215,7 +215,7 @@
       explanation:String(r.explanation||''),
       source:String(r.source||''),
       page:String(r.page||''),
-      pageUrl:String(r.pageUrl||location.href),
+      pageUrl:(()=>{try{const u=new URL(String(r.pageUrl||location.href),location.href);return u.origin+u.pathname}catch{return location.origin+location.pathname}})(),
       build:String(r.build||'legacy-local-report'),
       userAgent:String(r.userAgent||navigator.userAgent),
       reason:String(r.reason||'Other').slice(0,120),
