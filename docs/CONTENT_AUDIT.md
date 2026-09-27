@@ -37,13 +37,11 @@ Known duplicate entries are now actually consumed by the validator. Adding a new
 
 ### Citations and explanations
 
-All 1,950 canonical questions currently contain citation/source text and an explanation/rationale.
+All 2,000 canonical questions currently contain citation/source text and an explanation/rationale. Citation presentation has also been normalized to a shared `Source · locator` style while retaining the original slide/page locator information.
 
 ### Topics
 
-Bank 1 predates the later topic metadata model and all 500 Bank 1 questions currently lack an explicit topic field. This is recorded as a known baseline so the condition cannot worsen without failing CI. Banks 2, 3, Combined, and Hazards currently have explicit topic metadata.
-
-This does not affect grading or quiz behavior. It mainly limits topic-based filtering/analytics for Bank 1.
+All 2,000 canonical questions now have explicit topic metadata using the shared taxonomy: **Monitoring, Medical Gas, CO₂ & Scavenging, Airway, and Hazards & Safety**. Bank 1 was backfilled from its own citation/source families, with mixed-source questions manually reviewed against their stems and explanations. CI now rejects missing or non-canonical topic labels.
 
 ### Duplicate stems
 
