@@ -11,7 +11,7 @@ This audit covers all **2,000 canonical questions** without changing question st
 - Exact duplicate stem groups: **151**
 - Cross-bank exact duplicate groups: **0**
 - Exact same-stem/same-choice conflicting keys: **0**
-- High-similarity near-duplicate pairs flagged for later review: **39**
+- High-similarity near-duplicate pairs flagged for later review: **35**
 - Missing topic metadata after Phase 2: **0**
 - Missing structured source metadata after Phase 2: **0**
 - Known repetitive Hazards Set 2 source-content debt remains documented.
@@ -22,7 +22,7 @@ The strongest quality signal is that the semantic audit found **no exact cross-b
 
 | Bank | Monitoring | Medical Gases | CO₂ & Scavenging | Airway | Hazards & Safety |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Bank 1 | 178 | 173 | 90 | 58 | 1 |
+| Bank 1 | 180 | 181 | 85 | 54 | 0 |
 | Bank 2 | 130 | 128 | 122 | 120 | 0 |
 | Bank 3 | 226 | 144 | 84 | 46 | 0 |
 | Combined | 0 | 52 | 23 | 17 | 58 |
@@ -62,7 +62,7 @@ Hazards Set 2 remains the largest known repetition problem. The repeated materia
 
 ## Citation/source consistency
 
-Original citation text was intentionally preserved. Phase 2 added structured source metadata so filtering and auditing no longer depend on inconsistent display formatting.
+Citation display strings were normalized to a consistent `Source · locator` form while preserving slide/page locator information. Existing structured `sourceMeta` was retained and normalized so filtering and auditing do not depend on display text.
 
 Canonical source families now include:
 
@@ -80,6 +80,6 @@ The content is structurally consistent enough to proceed without emergency answe
 2. review of short explanations;
 3. review of distractor-balance flags;
 4. source-verified replacement of repetitive Hazards questions;
-5. targeted review of the 39 near-duplicate pairs.
+5. targeted review of the 35 near-duplicate pairs.
 
 No automatic educational-content rewrites were made during Phases 1–2.
