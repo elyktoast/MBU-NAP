@@ -768,6 +768,12 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!home.includes('href="privacy.html"')||!home.includes('href="terms.html"'))fail('Home footer does not link Privacy and Terms');
 }
 
+// Population calibration must not expose small cohorts.
+{
+ const cohortMigration=read('supabase/migrations/20260927063000_hide_small_cohort_item_calibration.sql');
+ for(const token of ['unique_learners >= 25','Calibration aggregates are readable at cohort threshold'])if(!cohortMigration.includes(token))fail('Small-cohort calibration protection missing '+token);
+}
+
 // Study intelligence is the single source of truth for adaptive review, spaced review, activity, and analytics.
 {
  const boot=read('equipment/assets/build-bootstrap.js'),intel=read('equipment/assets/study-intelligence.js'),search=read('equipment/assets/question-search.js'),studio=read('equipment/assets/studio-page.js'),dash=read('equipment/assets/exam-dashboard.js'),core=read('equipment/assets/app-core.js');
