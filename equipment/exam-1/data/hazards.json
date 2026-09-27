@@ -3886,17 +3886,17 @@
       "id": "20",
       "set": 2,
       "type": "single",
-      "stem": "Following an unresolved airway fire that has been fully extinguished, what is the mandatory risk-management protocol regarding surgical equipment and breathing circuit components?",
+      "stem": "After an operating-room fire is controlled, what risk-management action should follow regarding the involved equipment and materials?",
       "options": [
-        "Preserve the entire scene intact, leaving the burned tracheal tube, circuit, and drapes untouched for risk management",
-        "Immediately autoclave the breathing circuit and laryngoscope blade to remove smoke toxins",
-        "Discard all single-use airway devices in biohazard waste to protect hospital staff from soot",
-        "Flush the anesthesia machine manifold with 100% oxygen at 15 L/min for 2 hours before inspection"
+        "Preserve the involved ETT, circuit, drapes, and equipment for review and follow reporting procedures",
+        "Discard all burned items immediately",
+        "Return the equipment to service if the patient is stable",
+        "Clean the scene before risk management is notified"
       ],
       "answer": [
         0
       ],
-      "explanation": "Following an operating room fire, the immediate risk management imperative is to preserve the scene completely intact. The endotracheal tube, circuit, drapes, and equipment must not be discarded or altered, as they form the forensic evidence for safety investigations.",
+      "explanation": "The hazards material directs the team to preserve the scene and involved items such as the tube, circuit, and drapes, notify risk management, and complete appropriate reporting after the fire is controlled.",
       "citation": "Anesthesia Workstation Hazards & Safety · Slide 39",
       "topic": "Hazards & Safety",
       "imageSvg": null,
@@ -4356,7 +4356,7 @@
       "answer": [
         0
       ],
-      "explanation": "A carbon dioxide (CO2) fire extinguisher is recommended in the operating room because it leaves no corrosive chemical residue on patient tissues or delicate electronics.",
+      "explanation": "The hazards material specifies a carbon dioxide extinguisher when an operating-room fire cannot be controlled with water or saline.",
       "citation": "Anesthesia Workstation Hazards & Safety · Slide 38",
       "topic": "Hazards & Safety",
       "imageSvg": null,
@@ -4378,18 +4378,18 @@
       "id": "35",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary electrical hazard of using an electrosurgical unit (ESU / Bovie) on a patient with a permanent cardiac pacemaker?",
+      "stem": "Which implanted cardiac device is specifically listed as susceptible to electrosurgical interference?",
       "options": [
-        "High radiofrequency current can cause electrical interference, resulting in pacemaker reprogramming, inhibition, or myocardial burns at the lead tip",
-        "The ESU current causes instantaneous battery explosion within the pacemaker generator",
-        "The pacemaker ground wire diverts current, causing the line isolation monitor to trip",
-        "Radiofrequency current converts pacemaker pacing spikes into direct current shocks"
+        "Permanent pacemaker",
+        "Mechanical prosthetic valve",
+        "Coronary stent",
+        "Inferior vena cava filter"
       ],
       "answer": [
         0
       ],
-      "explanation": "The high-frequency energy of an ESU interferes with cardiac pacemakers, potentially causing oversensing (inhibition of pacing), asynchronous resetting, damage to the internal circuitry, or myocardial burns where the lead meets the myocardium.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 31",
+      "explanation": "The equipment study guide lists implanted pacemakers among devices that may be affected by electrosurgical interference, along with ECG, pulse oximetry, and cardiac-output monitoring.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -4398,13 +4398,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Anesthesia Workstation Hazards & Safety"
+          "SRNA Equipment Study Guide"
         ],
-        "slides": "31",
-        "citationFormat": "slides"
+        "pages": "9",
+        "citationFormat": "document"
       },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 31"
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
     },
     {
       "id": "36",
@@ -4580,7 +4580,7 @@
       "answer": [
         2
       ],
-      "explanation": "The proportioning system links only oxygen and nitrous oxide and does not measure the final inspired oxygen concentration. Adding helium can dilute oxygen below 21%; adding air is also outside the linkage, although air itself contains about 21% oxygen.",
+      "explanation": "The hazards guide lists hypoxic gas in a cylinder labeled as oxygen among problems that may not be detected by the routine machine check. Pressure-based safety systems cannot verify gas identity.",
       "citation": "SRNA Equipment Study Guide · Page 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
@@ -4794,17 +4794,17 @@
       "id": "48",
       "set": 2,
       "type": "single",
-      "stem": "An operating-room fire has been extinguished. Which action is most appropriate for subsequent risk investigation?",
+      "stem": "During spontaneous ventilation, which setup error is specifically listed as a cause of dangerously high breathing-circuit pressure?",
       "options": [
-        "APL valve left closed",
-        "Pulse oximeter alarm volume",
-        "Cylinder color",
-        "ECG lead selection"
+        "APL valve left closed after induction",
+        "Backup oxygen cylinder closed",
+        "Pulse oximeter disconnected",
+        "Vaporizer turned off"
       ],
       "answer": [
         0
       ],
-      "explanation": "A closed APL valve after induction is specifically listed as a cause of high circuit pressure during spontaneous breathing.",
+      "explanation": "The hazards guide specifically lists an APL valve left closed after induction as a cause of high breathing-circuit pressure during spontaneous ventilation.",
       "citation": "SRNA Equipment Study Guide · Page 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
@@ -5378,9 +5378,9 @@
         "Only the scavenging interface is affected because radiofrequency current changes disposal-line suction pressure"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "The guide lists ECG, pulse oximetry, cardiac-output monitoring, and implanted pacemakers among devices susceptible to electrosurgical interference.",
+      "explanation": "The equipment study guide lists ECG, pulse oximetry, cardiac-output monitoring, and implanted pacemakers among devices susceptible to electrosurgical interference.",
       "citation": "SRNA Equipment Study Guide · Page 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
