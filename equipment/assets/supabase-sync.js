@@ -99,7 +99,7 @@ async function deleteAccount(){
 async function submitPrivacyRequest(requestType,details=''){
   const s=await validSession();if(!s?.user?.id)throw Error('Sign in to submit a privacy request.');
   const type=String(requestType||'').toLowerCase();
-  if(!['access','correction','deletion','other'].includes(type))throw Error('Choose a valid privacy request type.');
+  if(!['access','correction','export','deletion','other'].includes(type))throw Error('Choose a valid privacy request type.');
   const rows=await api('/rest/v1/snar_privacy_requests',{method:'POST',body:{user_id:s.user.id,request_type:type,details:String(details||'').slice(0,4000)},headers:{Prefer:'return=representation'}});
   return Number(rows?.[0]?.id)||0
 }
