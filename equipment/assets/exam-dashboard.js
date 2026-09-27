@@ -44,7 +44,7 @@ async function render(){
  try{
   const m=await runtime.fetchJSON(new URL('banks.json',exam),{cache:'no-store'});renderContinue(m);renderActivity();
   for(const b of m.banks||[]){const c=document.createElement('div');c.className='card';const n=document.createElement('div');n.className='number';n.textContent=b.id==='bank1'?'1':b.id==='bank2'?'2':b.id==='bank3'?'3':b.id==='combined'?'C':b.id==='hazards'?'H':'•';const h=document.createElement('h2');h.textContent=b.label;const p=document.createElement('p');p.textContent=b.description||'';const a=document.createElement('a');a.className='btn';a.href=b.page;a.textContent='Open '+b.label+' →';c.append(n,h,p,a);host.append(c)}
- }catch(e){console.error('Exam bank manifest failed',e);const c=document.createElement('div');c.className='card';c.innerHTML='<h2>Quiz banks could not load</h2><p>Tap MBU-NAP to hard refresh this page.</p>';host.append(c)}
+ }catch(e){console.error('Exam bank manifest failed',e);const c=document.createElement('div');c.className='card';c.innerHTML='<h2>Quiz banks could not load</h2><p>Tap SNAR Study Tool to hard refresh this page.</p>';host.append(c)}
 }
 render()
 })();
