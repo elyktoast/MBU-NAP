@@ -12,9 +12,17 @@ function tieRank(uid){let h=2166136261;for(const c of String(uid||'')){h^=c.char
 function topicOf(q){return String(q?.topic||q?.lec||q?.concept||'Other').trim()||'Other'}
 function questionStats(uid){return window.MBUStudyIntelligence?.questionStats?.(uid)||null}
 function populationStats(uid){return window.MBUSupabase?.calibration?.(uid)||null}
-function topicStats(topic){return window.MBUStudyIntelligence?.topicStats?.(topic)||{attempts:0,accuracy:0}}
+function topicStats(topic,cache){
+  const key=String(topic||'');
+  if(cache&&Object.prototype.hasOwnProperty.call(cache,key))return cache[key];
+  return window.MBUStudyIntelligence?.topicStats?.(key)||{attempts:0,accuracy:0}
+}
+function topicStatsSnapshot(){
+  const byTopic=window.MBUStudyIntelligence?.analytics?.()?.byTopic||{};
+  return Object.fromEntries(Object.entries(byTopic).map(([topic,row])=>[String(topic),{attempts:Number(row?.attempts)||0,accuracy:Number(row?.accuracy)||0}]))
+}
 function recentUids(limit=50){return new Set((window.MBUStudyIntelligence?.recentActivity?.(limit)||[]).map(x=>String(x.uid||'')))}
-function challenge(q){
+function challenge(q,topicCache=null){
   const a=questionStats(q?.uid),multi=(Array.isArray(q?.ans)?q.ans:Array.isArray(q?.answer)?q.answer:[]).length>1;
   let score=3+(multi?.65:0)+((q?.bank==='hh'||Number(q?.set)===7)?.7:0);
   const pop=populationStats(q?.uid),learners=Number(pop?.unique_learners)||0;
@@ -22,7 +30,7 @@ function challenge(q){
     const populationScore=clampLevel(3+clampLogit(pop.difficulty_logit)/1.25),weight=learners>=300?.8:learners>=100?.6:.35;
     score=score*(1-weight)+populationScore*weight
   }
-  const topic=topicStats(topicOf(q));
+  const topic=topicStats(topicOf(q),topicCache);
   if(topic.attempts>=4)score+=(.5-(topic.accuracy/100))*1.2;
   if(a&&Number(a.attempts)>0){
     const acc=(Number(a.correct)||0)/Number(a.attempts),observed=3+(.5-acc)*3,weight=Math.min(.85,Number(a.attempts)/5);
@@ -61,14 +69,17 @@ function poolTopicCounts(questions,allowed){
   return{counts,total}
 }
 function pick(questions,state){
-  const s=normalize(state),seen=new Set(s.seenUids),allowed=s.poolUids.length?new Set(s.poolUids):null,available=questions.filter(q=>q&&q.uid&&!seen.has(String(q.uid))&&(!allowed||allowed.has(String(q.uid))));
-  if(!available.length)return{question:null,state:s};
-  const recent=recentUids(50),distribution=poolTopicCounts(questions,allowed),target=s.theta;
-  const ranked=available.map((q,i)=>{
-    const c=challenge(q),difficulty=challengeToLogit(c),probability=logistic(target-difficulty),information=probability*(1-probability),topic=topicOf(q),topicCount=Number(s.topicCounts[topic])||0,share=distribution.total?(distribution.counts[topic]||0)/distribution.total:0,expected=(s.answered+1)*share,balancePenalty=Math.max(0,topicCount-expected)*.08,exposurePenalty=recent.has(String(q.uid))?.08:0;
-    return{q,challenge:c,difficulty,probability,information,score:Math.abs(probability-.5)+balancePenalty+exposurePenalty,tie:tieRank(q.uid||i)}
-  }).sort((a,b)=>a.score-b.score||b.information-a.information||a.tie-b.tie);
-  const chosen=ranked[0],next={...s,seenUids:[...s.seenUids,String(chosen.q.uid)],topicCounts:{...s.topicCounts,[topicOf(chosen.q)]:(Number(s.topicCounts[topicOf(chosen.q)])||0)+1},currentLevel:logitToLevel(s.theta),currentDifficulty:chosen.difficulty,currentChallenge:chosen.challenge,currentProbability:chosen.probability};
+  const s=normalize(state),seen=new Set(s.seenUids),allowed=s.poolUids.length?new Set(s.poolUids):null;
+  const recent=recentUids(50),distribution=poolTopicCounts(questions,allowed),topicCache=topicStatsSnapshot(),target=s.theta;
+  let chosen=null,index=0;
+  for(const q of questions){
+    if(!q?.uid||seen.has(String(q.uid))||(allowed&&!allowed.has(String(q.uid)))){index++;continue}
+    const c=challenge(q,topicCache),difficulty=challengeToLogit(c),probability=logistic(target-difficulty),information=probability*(1-probability),topic=topicOf(q),topicCount=Number(s.topicCounts[topic])||0,share=distribution.total?(distribution.counts[topic]||0)/distribution.total:0,expected=(s.answered+1)*share,balancePenalty=Math.max(0,topicCount-expected)*.08,exposurePenalty=recent.has(String(q.uid))?.08:0,candidate={q,challenge:c,difficulty,probability,information,score:Math.abs(probability-.5)+balancePenalty+exposurePenalty,tie:tieRank(q.uid||index)};
+    if(!chosen||candidate.score<chosen.score||(candidate.score===chosen.score&&(candidate.information>chosen.information||(candidate.information===chosen.information&&candidate.tie<chosen.tie))))chosen=candidate;
+    index++
+  }
+  if(!chosen)return{question:null,state:s};
+  const next={...s,seenUids:[...s.seenUids,String(chosen.q.uid)],topicCounts:{...s.topicCounts,[topicOf(chosen.q)]:(Number(s.topicCounts[topicOf(chosen.q)])||0)+1},currentLevel:logitToLevel(s.theta),currentDifficulty:chosen.difficulty,currentChallenge:chosen.challenge,currentProbability:chosen.probability};
   return{question:chosen.q,state:next,challenge:chosen.challenge,difficulty:chosen.difficulty,probability:chosen.probability,information:chosen.information}
 }
 function start(questions,count=50){
