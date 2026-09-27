@@ -769,6 +769,19 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!home.includes('href="privacy.html"')||!home.includes('href="terms.html"'))fail('Home footer does not link Privacy and Terms');
 }
 
+// Professor/faculty names must never appear in the repository.
+{
+  const bannedFaculty=/\b(?:Elmore|Stone|Acord|McPherson)\b/i;
+  const facultyScanPaths=[
+    'README.md','CONTRIBUTING.md','privacy.html','terms.html',
+    'equipment/exam-1/data/bank1.json','equipment/exam-1/data/bank2.json','equipment/exam-1/data/bank3.json',
+    'equipment/exam-1/data/combined.json','equipment/exam-1/data/hazards.json',
+    'reporting/apps-script/Code.gs','reporting/apps-script/SETUP.md',
+    'tests/e2e/quiz-regression.spec.js'
+  ];
+  for(const p of facultyScanPaths)if(bannedFaculty.test(read(p)))fail(p+': professor/faculty name remains');
+}
+
 // Population calibration must not expose small cohorts.
 {
  const cohortMigration=read('supabase/migrations/20260927063000_hide_small_cohort_item_calibration.sql');
