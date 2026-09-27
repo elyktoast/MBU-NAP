@@ -1317,6 +1317,16 @@ test.describe('canonical quiz regression', () => {
     expect(buildRequests).toBeLessThanOrEqual(4);
   });
 
+  test('Successful updater reload marker is removed without another navigation', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');
+    await page.evaluate(() => MBUPageReady);
+    const build=await page.evaluate(() => window.MBU_BUILD_ID);
+    await page.goto(exam + '/quiz-bank-1.html?_mbu_reload=' + encodeURIComponent(build));
+    await page.evaluate(() => MBUPageReady);
+    await expect.poll(() => new URL(page.url()).searchParams.has('_mbu_reload')).toBe(false);
+    expect(new URL(page.url()).pathname).toBe(exam + '/quiz-bank-1.html');
+  });
+
 
   test('App core exposes stable device identity, diagnostics, and a global Tools dialog', async ({ page }) => {
     await page.goto(exam + '/quiz-bank-1.html');
