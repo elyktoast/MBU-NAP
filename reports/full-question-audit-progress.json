@@ -1,0 +1,116 @@
+{
+  "generatedAt": "2026-09-27",
+  "status": "in_progress",
+  "scope": {
+    "questions": 2000,
+    "banks": [
+      "bank1.json",
+      "bank2.json",
+      "bank3.json",
+      "combined.json",
+      "hazards.json"
+    ]
+  },
+  "canonicalMaterial": [
+    "Exam 1 Basics Study Guide.pdf",
+    "Exam 1 Equipment Study Guide.pdf",
+    "Monitoring.pdf",
+    "Anesthesia Workstation Hazards.pdf",
+    "CO2 and Scavenging.pdf",
+    "Medical Gas Systems in Anesthesia.pdf",
+    "Airway Equipment.pdf",
+    "Nagelhout (Elisha).pdf",
+    "Anesthesia Equipment 3e (Ehrenwerth).pdf",
+    "Miller's Anesthesia (Gropper).pdf",
+    "Barash Clin. Anes..pdf"
+  ],
+  "sourceHierarchy": [
+    "Exact lecture/notes",
+    "Exam 1 Equipment Study Guide",
+    "Exam 1 Basics Study Guide",
+    "Nurse Anesthesia 7e",
+    "Anesthesia Equipment 3e",
+    "Miller's Anesthesia 10e",
+    "Barash Clinical Anesthesia 9e"
+  ],
+  "auditDimensions": [
+    "source support",
+    "answer-key integrity",
+    "question clarity and ambiguity",
+    "distractor plausibility and clueing",
+    "explanation quality",
+    "citation/source-locator accuracy",
+    "duplicate and near-duplicate control",
+    "course relevance and scope",
+    "calculation/image integrity",
+    "topic and difficulty/CAT balance"
+  ],
+  "dispositionValues": [
+    "PASS",
+    "IMPROVE",
+    "CORRECT",
+    "REVIEW_CONFLICT",
+    "REMOVE_REPLACE"
+  ],
+  "priorityOrder": [
+    "existing audit/report flags",
+    "short-explanation flags",
+    "answer-length/clue flags",
+    "numeric/calculation questions",
+    "multi-select questions",
+    "image questions",
+    "duplicates and source conflicts",
+    "remaining questions",
+    "final coverage and balance review"
+  ],
+  "completed": {
+    "audited": 5,
+    "bank2": [
+      {
+        "id": "S2-021",
+        "disposition": "IMPROVE",
+        "changes": [
+          "corrected source locator to Monitoring slide 50",
+          "expanded explanation",
+          "balanced distractors"
+        ]
+      },
+      {
+        "id": "S3-003",
+        "disposition": "REMOVE_REPLACE",
+        "changes": [
+          "removed exact cross-set duplicate",
+          "replaced with distinct sudden-ETCO2-loss question grounded in Monitoring slide 51"
+        ]
+      },
+      {
+        "id": "S5-020",
+        "disposition": "IMPROVE",
+        "changes": [
+          "corrected source locator to Monitoring slide 12",
+          "balanced distractors",
+          "expanded distinction between SpO2 and inspired O2 analysis"
+        ]
+      },
+      {
+        "id": "S5-027",
+        "disposition": "IMPROVE",
+        "changes": [
+          "corrected source locator to Monitoring slide 67",
+          "balanced distractors",
+          "expanded explanation"
+        ]
+      },
+      {
+        "id": "S5-050",
+        "disposition": "IMPROVE",
+        "changes": [
+          "corrected source locator to Medical Gas Systems slide 56",
+          "balanced distractors",
+          "expanded explanation"
+        ]
+      }
+    ]
+  },
+  "remaining": 1995
+}
