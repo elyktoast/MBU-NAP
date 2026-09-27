@@ -16357,35 +16357,35 @@
       "id": "S5-F13",
       "set": 5,
       "type": "single",
-      "stem": "During a sevoflurane/N2O anesthetic, room sampling shows sevoflurane 0.8 ppm and N2O 20 ppm TWA. How do these compare with the occupational exposure recommendations cited in the textbook?",
+      "stem": "During a sevoflurane/N₂O anesthetic, room sampling shows sevoflurane 0.8 ppm and N₂O 20 ppm TWA. How do these compare with the occupational exposure recommendations cited in Nurse Anesthesia?",
       "options": [
-        "Sevoflurane exceeds the combined-use 0.5 ppm limit; N2O is below 25 ppm",
-        "N2O exceeds 25 ppm; sevoflurane is below the combined-use limit",
-        "Both are below the cited limits",
-        "Both exceed the cited limits"
+        "Sevoflurane exceeds the combined-use limit; N₂O is within the cited limit",
+        "N₂O exceeds the cited limit; sevoflurane is within the combined-use limit",
+        "Both values are within the cited limits",
+        "Both values exceed the cited limits"
       ],
       "answer": [
         0
       ],
-      "explanation": "Nurse Anesthesia states that worker exposure should not exceed 2 ppm for halogenated agents, with a lower 0.5 ppm limit when a halogenated agent is used with nitrous oxide, and no more than 25 ppm nitrous oxide as an 8-hour time-weighted average. Therefore, sevoflurane at 0.8 ppm exceeds the combined-use limit while nitrous oxide at 20 ppm remains below its cited limit.",
-      "citation": "Nurse Anesthesia, 7th ed. · Chapter 16, pp. 283-284",
+      "explanation": "Nurse Anesthesia states that halogenated anesthetic exposure should not exceed 2 ppm when used alone and 0.5 ppm when used with nitrous oxide; nitrous oxide should not exceed 25 ppm as an 8-hour time-weighted average. Therefore, sevoflurane at 0.8 ppm exceeds the combined-use limit, while N₂O at 20 ppm remains below the cited limit.",
+      "citation": "Nurse Anesthesia, 7th ed. · Ch. 16, p. 283",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": "The lecture slide lists the 2 ppm halogenated-agent and 25 ppm nitrous-oxide values; the 0.5 ppm combined-use nuance is sourced to the textbook.",
+      "supp": "The lecture slide summarizes 2 ppm halogenated agent and 25 ppm N₂O values. The 0.5 ppm combined-use limit is supported by Nurse Anesthesia, 7th ed., Chapter 16.",
       "orig": "F13",
       "sourceMeta": {
         "families": [
-          "Nurse Anesthesia"
+          "Nurse Anesthesia, 7th ed."
         ],
         "chapter": "16",
-        "pages": "283-284",
+        "pages": "283",
         "citationFormat": "textbook"
       },
       "sourceTitle": "Nurse Anesthesia, 7th ed.",
-      "sourceLocator": "Chapter 16 · pp. 283-284"
+      "sourceLocator": "Chapter 16 · p. 283"
     },
     {
       "id": "S5-T68",
