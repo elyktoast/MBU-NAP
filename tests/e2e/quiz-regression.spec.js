@@ -444,11 +444,13 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#sourceChecks')).toContainText('Combined');
     await expect(page.locator('#sourceChecks')).toContainText('Workstation Hazards');
     await expect(page.locator('#sourceChecks input[type="checkbox"]')).toHaveCount(22);
-    const clipped = await page.evaluate(() => {
-      const el = document.getElementById('sourceChecks');
-      return el.scrollHeight > el.clientHeight + 1;
+    const selector = await page.evaluate(() => {
+      const el=document.getElementById('sourceChecks'),last=el.querySelector('input[type="checkbox"]:last-of-type');
+      el.scrollTop=el.scrollHeight;
+      return {scrollable:el.scrollHeight>el.clientHeight+1,lastReachable:!!last&&last.getBoundingClientRect().bottom<=el.getBoundingClientRect().bottom+2};
     });
-    expect(clipped).toBe(false);
+    expect(selector.scrollable).toBe(true);
+    expect(selector.lastReachable).toBe(true);
   });
 
   test('Hazards dashboard ignores unsubmitted answer selections', async ({ page }) => {
@@ -1339,7 +1341,7 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('.mbu-global-nav__tools')).toBeVisible();
     await page.locator('.mbu-global-nav__tools').click();
     await expect(page.locator('#mbu-app-tools')).toHaveClass(/open/);
-    await expect(page.locator('#mbu-app-tools')).toContainText('Progress saves locally immediately');
+    await expect(page.locator('#mbu-app-tools')).toContainText('Progress saves locally');
     await expect(page.locator('.mbu-global-nav__cloud')).toBeVisible();
     const diag=await page.evaluate(() => MBUDiagnostics.snapshot());
     expect(diag.build).toMatch(/^2026-/);expect(diag.deviceId).toBe(first);
@@ -1432,11 +1434,12 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#mbu-app-tools')).toBeVisible();
     await expect(page.locator('[data-tools-saves]')).toHaveText(/\d+ of \d+/);
     await expect(page.locator('[data-tools-saves-help]')).toContainText(/study (area|progress)/i);
-    await expect(page.getByText('Backup & Recovery')).toBeVisible();
-    await expect(page.getByText('Troubleshooting & App Info')).toBeVisible();
-    await expect(page.locator('[data-export]')).not.toBeVisible();
-    await page.getByText('Backup & Recovery').click();
+    await expect(page.getByText('Backup & recovery')).toBeVisible();
+    await expect(page.getByText('Troubleshooting & app info')).toBeVisible();
     await expect(page.locator('[data-export]')).toBeVisible();
+    await page.getByText('Troubleshooting & app info').click();
+    await expect(page.locator('.mbu-tools-legal-links')).toContainText('Privacy Notice');
+    await expect(page.locator('.mbu-tools-legal-links')).toContainText('Terms of Use');
   });
 
   test('Supabase adapter signs in and writes progress through server-revision guard', async ({ page }) => {
@@ -1471,8 +1474,10 @@ test.describe('canonical quiz regression', () => {
     await page.evaluate(()=>{localStorage.removeItem('mbu_supabase_session_v1')});
     await page.reload();await page.evaluate(() => MBUPageReady);
     await page.locator('.mbu-global-nav__cloud').click();
-    await page.locator('[data-cloud-email]').fill('new@example.com');
-    await page.locator('[data-cloud-password]').fill('long-enough-password');
+    await page.locator('[data-auth-view="signup"]').click();
+    await page.locator('[data-cloud-signup-email]').fill('new@example.com');
+    await page.locator('[data-cloud-signup-password]').fill('long-enough-password');
+    await page.locator('[data-cloud-signup-confirm]').fill('long-enough-password');
     await page.locator('[data-cloud-signup]').click();
     await expect(page.locator('[data-account-message]')).toContainText('18+');
     expect(signupCalls).toBe(0);
