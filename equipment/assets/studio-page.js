@@ -144,7 +144,7 @@ async function loadBanks(){
     syncBankData();
     window.MBUStudyIntelligence?.seedLegacy?.(Object.entries(DB.ans||{}).map(([uid,r])=>({uid,bank:r.bank,bankLabel:STUDIO_BANK_LABELS.get(r.bank)||r.bank,topic:r.topic,at:r.at,ok:r.ok})));
     window.MBUQuestionSearch?.reset?.();
-    buildTopics();const params=new URLSearchParams(location.search),question=params.get('question'),requested=params.get('mode');if(question&&ALL_BY_UID.has(question))practiceSearch(question);else if(requested==='hazards-missed')startMode('hazards-missed');else if(requested==='combined-missed')startMode('combined-missed');else if(DB.active?.mode==='adaptive'&&reconcileActiveState())resumeActive();else renderHome()}catch(e){showLoadErrors(['Studio render failed: '+e.message]);console.error(e)}
+    buildTopics();const params=new URLSearchParams(location.search),question=params.get('question'),requested=params.get('mode');if(question&&ALL_BY_UID.has(question))practiceSearch(question);else if(requested==='hazards-missed')startMode('hazards-missed');else if(requested==='combined-missed')startMode('combined-missed');else if(requested==='adaptive')openAdaptiveEntry();else if(DB.active?.mode==='adaptive'&&reconcileActiveState())resumeActive();else renderHome()}catch(e){showLoadErrors(['Studio render failed: '+e.message]);console.error(e)}
   renderStudioLoadState()
 }
 function canonicalTopic(topic){const name=String(topic||'Other').trim();const low=name.toLowerCase().replace(/₂/g,'2');if(low.includes('co2')&&low.includes('scaveng'))return 'CO₂ & Scavenging';if(low.includes('medical gas'))return 'Medical Gases';if(low.includes('airway equipment')||low==='airway')return 'Airway';if(low.includes('intraoperative assessment')||low.startsWith('monitoring'))return 'Monitoring';if(low.includes('workstation hazards')||low.includes('hazards & safety'))return 'Workstation Hazards';return name}
@@ -209,9 +209,18 @@ function syncBankData(){
   }
   if(syncChanged)save();
 }
-let buildMode='sets';
+let buildMode='sets',adaptiveEntryPending=false;
 function adaptiveAccountReady(){const status=window.MBUSupabase?.status?.()||{};return !!status.signedIn&&status.legalAccepted===true&&status.accessStatus==='active'}
 function adaptiveToggleChanged(input){if(!input?.checked)return true;if(adaptiveAccountReady())return true;input.checked=false;window.MBUAppCore?.openAccount?.(input);return false}
+function clearAdaptiveEntryParam(){const url=new URL(location.href);url.searchParams.delete('mode');history.replaceState(null,'',url.pathname+url.search+url.hash)}
+function openAdaptiveEntry(){
+  renderHome();setBuildMode('sets');setChecks('sourceChecks',true);
+  const toggle=document.getElementById('adaptiveToggle');if(!toggle)return;
+  toggle.checked=true;adaptiveEntryPending=!adaptiveToggleChanged(toggle);
+  document.querySelector('.studio-adaptive-card')?.scrollIntoView?.({block:'center',behavior:'smooth'});
+  if(!adaptiveEntryPending)clearAdaptiveEntryParam()
+}
+window.addEventListener('mbu:supabase-status',()=>{if(!adaptiveEntryPending||!adaptiveAccountReady())return;const toggle=document.getElementById('adaptiveToggle');if(toggle)toggle.checked=true;adaptiveEntryPending=false;clearAdaptiveEntryParam()});
 function setBuildMode(mode){buildMode=mode==='topics'?'topics':'sets';document.getElementById('sourcePickbox').classList.toggle('hidden',buildMode!=='sets');document.getElementById('topicPickbox').classList.toggle('hidden',buildMode!=='topics');document.getElementById('buildSetsBtn').classList.toggle('out',buildMode!=='sets');document.getElementById('buildTopicsBtn').classList.toggle('out',buildMode!=='topics');document.getElementById('buildModeHelp').textContent=buildMode==='sets'?'Choose one or more practice sets. Questions can come from any topic in those sets.':'Choose one or more topics. Studio will pull matching questions from all loaded practice sets and banks.'}
 function setChecks(id,on){document.querySelectorAll('#'+id+' input[type=checkbox]').forEach(x=>x.checked=on)}
 function checkedValues(id){return [...document.querySelectorAll('#'+id+' input[type=checkbox]:checked')].map(x=>x.value)}
