@@ -1692,7 +1692,7 @@ test.describe('canonical quiz regression', () => {
     await expect.poll(()=>page.evaluate(()=>MBUSupabase.status().accessStatus)).toBe('unknown');
     const result=await page.evaluate(async()=>{try{await MBUSupabase.syncNow();return 'allowed'}catch(e){return e.message}});
     expect(result).toContain('suspended');
-    await page.locator('#adaptiveToggle').check();
+    await page.locator('#adaptiveToggle').click();
     await expect(page.locator('#adaptiveToggle')).not.toBeChecked();
   });
 
@@ -1786,6 +1786,7 @@ test.describe('canonical quiz regression', () => {
     await page.waitForLoadState('domcontentloaded');
     await page.evaluate(() => MBUPageReady);
     await expect.poll(()=>page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(false);
+    await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('[data-cloud-signed-out]')).toBeVisible();
     expect(await page.evaluate(()=>localStorage.getItem('mbu_exam1_studio_v1'))).toBeNull();
     expect(await page.evaluate(()=>localStorage.getItem('mbu_sync_meta_v1'))).toBeNull();
@@ -2393,7 +2394,7 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/studio.html?mode=adaptive');await waitForStudio(page);
     await expect(page.locator('#adaptiveToggle')).toBeChecked();
     expect(await page.locator('#sourceChecks input[type=checkbox]:checked').count()).toBeGreaterThan(0);
-    await expect(page.locator('#mbu-account-panel')).not.toHaveClass(/open/);
+    await expect(page.locator('#mbu-account-panel')).toHaveCount(0);
   });
 
   test('Exam dashboard surfaces Continue Studying and recent study activity', async ({ page }) => {
@@ -2577,7 +2578,10 @@ test.describe('canonical quiz regression', () => {
     });
     await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>route.fulfill({status:201,contentType:'application/json',body:''}));
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
-    await page.evaluate(() => MBUSupabase.signIn('test@example.com','correct horse battery staple'));
+    const signInNavigation=page.waitForNavigation({waitUntil:'domcontentloaded'});
+    await page.evaluate(() => { void MBUSupabase.signIn('test@example.com','correct horse battery staple'); });
+    await signInNavigation;
+    await page.evaluate(() => MBUPageReady);
     await page.evaluate(()=>{
       localStorage.setItem('mbu_exam1_studio_v1',JSON.stringify({dirtyLocal:true}));
       MBUAppCore.touchStore('mbu_exam1_studio_v1');
