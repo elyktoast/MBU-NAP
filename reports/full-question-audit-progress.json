@@ -606,10 +606,10 @@
     "audited": 20,
     "notes": [
       "Started Bank 3 with both remaining answer-length flags plus 18 source-priority questions.",
-      "Replaced the unsupported 0.5 ppm combined-use NIOSH item with the course-taught 25 ppm nitrous-oxide TWA item.",
       "Removed an unsupported fast-flush-test detail and rewrote the arterial-line question around the directly taught underdamping waveform findings.",
       "Corrected multiple Monitoring slide locators, including circulation, quantitative neuromuscular monitoring, pulse oximetry, PaCO2-ETCO2 gradient, preoxygenation, and inspired oxygen limitations.",
-      "Verified the remaining unchanged items in the batch against their lecture sources."
+      "Verified the remaining unchanged items in the batch against their lecture sources.",
+      "Restored S5-F13 to test the 0.5 ppm halogenated-agent combined-use limit with Nurse Anesthesia, 7th ed., Chapter 16, p. 283 as the supporting source."
     ],
     "correction": "S5-F13 restored as a combined sevoflurane/N2O occupational exposure question and re-sourced to Nurse Anesthesia, 7th ed., Chapter 16, pp. 283-284."
   }
