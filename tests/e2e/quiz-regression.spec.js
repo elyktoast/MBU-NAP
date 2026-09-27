@@ -1500,9 +1500,10 @@ test.describe('canonical quiz regression', () => {
   test('Global nav keeps primary destinations compact and groups quiz banks in one selector', async ({ page }) => {
     await page.goto(exam + '/hazards-100.html');await page.evaluate(() => MBUPageReady);
     await expect(page.locator('.mbu-global-nav__brand')).toHaveText('SRNA Study Tool');
-    await expect(page.locator('.mbu-global-nav__primary-link')).toHaveCount(2);
+    await expect(page.locator('.mbu-global-nav__primary-link')).toHaveCount(3);
     await expect(page.locator('.mbu-global-nav__primary')).toContainText('Equipment');
     await expect(page.locator('.mbu-global-nav__primary')).toContainText('Study Studio');
+    await expect(page.locator('.mbu-global-nav__adaptive')).toHaveText('Adaptive');
     const options=await page.locator('.mbu-global-nav__picker option').allTextContents();
     expect(options).toEqual(['Hazards','Quiz Bank 1','Quiz Bank 2','Quiz Bank 3','Combined','Workstation Hazards']);
     expect(options.some(x=>/Practice Set|Challenge Set/.test(x))).toBe(false);
@@ -2587,7 +2588,7 @@ test.describe('canonical quiz regression', () => {
       MBUAppCore.touchStore('mbu_exam1_studio_v1');
     });
     const restoredNavigation=page.waitForNavigation({waitUntil:'domcontentloaded'});
-    await page.evaluate(() => { void MBUSupabase.restoreVersion(45); });
+    await page.evaluate(() => { MBUSupabase.restoreVersion(45).catch(()=>{}); });
     await restoredNavigation;
     await page.evaluate(() => MBUPageReady);
     await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('mbu_exam1_studio_v1')||'{}').restored)).toBe(true);
