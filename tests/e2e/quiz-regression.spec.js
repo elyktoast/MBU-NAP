@@ -1534,4 +1534,28 @@ test.describe('canonical quiz regression', () => {
     await expect(tools).toBeFocused();
   });
 
+  test('Studio and Hazards preserve shared keyboard and image accessibility', async ({ page }) => {
+    await page.setViewportSize({width:390,height:844});
+
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await expect(page.locator('.mbu-skip-link')).toHaveText('Skip to main content');
+    expect(await page.evaluate(() => document.documentElement.scrollWidth<=document.documentElement.clientWidth+1)).toBe(true);
+    await page.evaluate(() => {
+      const q=ALL.find(x=>Array.isArray(x.opts)&&x.opts.length>=2)||ALL[0];
+      session=[q];pos=0;DB.active={uids:[q.uid],pos:0,answers:{},updated:Date.now()};save();showQ();
+    });
+    const studioCross=page.locator('.mbu-cross').first();
+    if(await studioCross.count()){await studioCross.focus();await expect(studioCross).toHaveAttribute('aria-label',/Cross out option/)}
+    const studioImages=page.locator('#qimage img');
+    if(await studioImages.count())await expect(studioImages.first()).toHaveAttribute('alt',/.+/);
+
+    await page.goto(exam + '/hazards-bank-3.html');await page.evaluate(() => MBUPageReady);
+    await expect(page.locator('.mbu-skip-link')).toHaveText('Skip to main content');
+    expect(await page.evaluate(() => document.documentElement.scrollWidth<=document.documentElement.clientWidth+1)).toBe(true);
+    const hazardCross=page.locator('button[aria-label^="Cross out"]').first();
+    if(await hazardCross.count())await expect(hazardCross).toHaveAttribute('aria-pressed',/true|false/);
+    const hazardImages=page.locator('img');
+    for(let i=0;i<Math.min(await hazardImages.count(),5);i++)await expect(hazardImages.nth(i)).toHaveAttribute('alt',/.+/);
+  });
+
 });
