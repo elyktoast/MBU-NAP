@@ -601,6 +601,21 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!exists('scripts/content-integrity.mjs'))fail('Content integrity validator is missing');
 }
 
+// Accessibility release gate across shared runtimes and application shells.
+{
+ const pages=['index.html','equipment/index.html','equipment/exam-1/index.html','equipment/exam-1/studio.html','equipment/exam-1/hazards.html',...quizFiles];
+ for(const p of pages){
+  const src=read(p);
+  if(!/<html[^>]*\blang=["'][^"']+["']/i.test(src))fail('Accessibility: '+p+' is missing document language');
+  if(!/<meta[^>]+name=["']viewport["']/i.test(src))fail('Accessibility: '+p+' is missing viewport metadata');
+ }
+ const quiz=read('equipment/assets/quiz-engine.js'),studio=read('equipment/assets/studio-page.js'),haz1=read('equipment/assets/hazards-standard-engine.js'),haz2=read('equipment/assets/hazards-quiz-engine.js'),core=read('equipment/assets/app-core.js');
+ if((quiz.match(/img\.alt='Question figure'/g)||[]).length<2)fail('Accessibility: canonical indexed/data images lost alt text');
+ if(!studio.includes('alt="Question figure"'))fail('Accessibility: Studio question figures lost alt text');
+ for(const src of [quiz,studio,haz1,haz2])if(!src.includes('aria-label')||!src.includes('aria-pressed'))fail('Accessibility: a quiz runtime lost named cross-out state');
+ for(const token of ['function trapModalKey(','aria-modal="true"','prefers-reduced-motion','Skip to main content'])if(!(core+read('equipment/assets/app-core.css')).includes(token))fail('Accessibility: shared app contract missing '+token);
+}
+
 // Final cleanup: hot quiz interactions must stay local and accessibility must be render-driven.
 {
  const engine=read('equipment/assets/quiz-engine.js'),renderer=read('equipment/assets/canonical-bank-page.js'),core=read('equipment/assets/app-core.js');
