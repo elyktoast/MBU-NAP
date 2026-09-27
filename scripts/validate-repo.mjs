@@ -108,7 +108,7 @@ function checkIndependentBranding(){
   const forbidden=[/Mary Baldwin/i,/MBU-NAP/i,/MBU Nurse Anesthesia Program/i];
   for(const p of publicFiles){const src=read(p);for(const rx of forbidden)if(rx.test(src))fail(p+': institutional branding remains: '+rx)}
   for(const p of ['equipment/exam-1/data/bank1.json','equipment/exam-1/data/bank2.json','equipment/exam-1/data/bank3.json','equipment/exam-1/data/combined.json','equipment/exam-1/data/hazards.json']){
-    const qs=JSON.parse(read(p));for(const q of qs){for(const value of [q.sourceTitle,q.sourceLocator,q.src,q.citation])if(typeof value==='string'&&/(?:\bProfessor\b|\bInstructor\b|\bProf\.\s|\bDr\.\s+[A-Z])/i.test(value))fail(p+': faculty-identifying source label remains on '+String(q.uid||q.id||'question'))}
+    const payload=JSON.parse(read(p)),qs=Array.isArray(payload)?payload:(payload.questions||[]);for(const q of qs){for(const value of [q.sourceTitle,q.sourceLocator,q.src,q.citation])if(typeof value==='string'&&/(?:\bProfessor\b|\bInstructor\b|\bProf\.\s|\bDr\.\s+[A-Z])/i.test(value))fail(p+': faculty-identifying source label remains on '+String(q.uid||q.id||'question'))}
   }
   const home=read('index.html'),privacy=read('privacy.html'),terms=read('terms.html'),core=read('equipment/assets/app-core.js');
   for(const token of ['SNAR Study Tool','Independent educational resource','privacy.html','terms.html'])if(!home.includes(token))fail('Home legal/branding surface missing '+token);
