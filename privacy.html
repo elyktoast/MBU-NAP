@@ -13,7 +13,7 @@ nav{margin-bottom:18px}.small{font-size:.9rem;color:#718096}
 <body><main><nav><a href="index.html">← SNAR Study Tool</a> · <a href="terms.html">Terms of Use</a></nav>
 <div class="card">
 <h1>Privacy Notice</h1>
-<p class="small"><strong>Effective:</strong> September 27, 2026 · Version 2</p>
+<p class="small"><strong>Effective:</strong> September 27, 2026 · Version 3</p>
 <p>SNAR Study Tool is an independent educational study resource. It is not operated by, affiliated with, sponsored by, or endorsed by any university, nursing program, faculty member, certification body, or licensing organization.</p>
 
 <h2>Guest use</h2>
@@ -49,11 +49,12 @@ nav{margin-bottom:18px}.small{font-size:.9rem;color:#718096}
 <p>SNAR Study Tool does not sell personal data and does not use personal data for targeted advertising. Adaptive question selection is a study feature and is not used to make decisions about education enrollment, employment, insurance, lending, health care, or other legally significant eligibility decisions.</p>
 
 <h2>Retention and deletion</h2>
-<p>Local guest progress remains in the browser until the user clears it or imports/replaces it. Signed-in progress is retained while the account remains active or until it is replaced or deleted through available controls. Account deletion removes the authentication account and account-linked cloud records through database deletion rules. The affected aggregate calibration statistics are recalculated from remaining contributions.</p>
-<p>De-identified aggregate statistics may be retained after account deletion because they are maintained without identifying the deleted user.</p>
+<p>Local guest progress remains in the browser until the user clears it or imports/replaces it. The authentication account, current cloud study state, device records, privacy requests, and raw first-attempt calibration contributions are maintained only for their stated operational purposes and are removed with account deletion where the database relationship is account-linked. Cloud restore/version history is subject to a target 90-day retention period. Completed or denied privacy requests are subject to periodic review and a target maximum of three years when continued retention is needed to document request handling.</p>
+<p>For contract evidence and legal/compliance defense, SNAR Study Tool retains a minimal pseudonymous legal-assent record for up to five years from the server-recorded acceptance. That record may include the account UUID, a one-way SHA-256 hash of the account email at the time of acceptance, the Terms and Privacy versions, cryptographic hashes of those documents, the adult acknowledgement, and acceptance/recording timestamps. The retained legal-assent record does not include the plaintext email, password, study answers, synchronized study payload, or raw CAT contribution data. Account deletion does not erase an unexpired legal-assent evidence record.</p>
+<p>De-identified aggregate calibration statistics may be retained after account deletion because the deleted account's raw contribution is removed and affected item statistics are recalculated from remaining contributions. Legal document snapshots and their hash manifests are retained as an immutable version archive.</p>
 
 <h2>Your controls and privacy requests</h2>
-<p>Signed-in users can download a backup of study progress, manage synchronized devices, restore prior progress, sign out, and use <strong>Delete account &amp; data</strong> for immediate self-service deletion of the authentication account and account-linked cloud records.</p>
+<p>Signed-in users can download a backup of study progress, manage synchronized devices, restore prior progress, sign out, and use <strong>Delete account &amp; data</strong> for self-service deletion of the authentication account and active account-linked cloud study data. The limited pseudonymous legal-assent evidence described under Retention and deletion is retained until its defined retention date.</p>
 <p>The account panel also provides a private <strong>Privacy request</strong> form for access, correction, deletion, appeal of a prior privacy-request decision, or another privacy matter. Requests may require reasonable authentication or verification before account-linked information is disclosed or changed. If a request is denied and applicable law provides an appeal right, choose <strong>Appeal decision</strong> and identify the prior request or decision in the details.</p>
 
 <h2>Privacy-request appeals</h2>
@@ -63,7 +64,7 @@ nav{margin-bottom:18px}.small{font-size:.9rem;color:#718096}
 <p>SNAR Study Tool is intended for adult learners. You must be at least 18 years old to create an account or use Adaptive Mode. The service is not directed to children under 13.</p>
 
 <h2>Security</h2>
-<p>SNAR Study Tool uses authenticated access controls, row-level security where applicable, restricted database functions, and data minimization. No internet service can guarantee absolute security.</p>
+<p>SNAR Study Tool uses authenticated access controls, row-level security where applicable, restricted database functions, a private least-privilege operator-admin role, versioned legal records, and data minimization. No internet service can guarantee absolute security.</p>
 
 <h2>FERPA and educational records</h2>
 <p>SNAR Study Tool is not operated by or on behalf of a school, university, nursing program, or other educational institution and is not intended to receive education records from an educational institution. Users should not enter grades, student identification numbers, disciplinary records, accommodations, or other nonpublic education-record information into question reports, privacy-request details, or other free-text fields. If an educational institution later adopts the tool, directs its use, or asks the operator to process education records on the institution's behalf, that deployment must receive a separate FERPA and institutional-contract review before such records are processed.</p>
