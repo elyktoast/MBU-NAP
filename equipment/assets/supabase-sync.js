@@ -63,8 +63,8 @@ legalAccepted=null;emit('error',{email:s.user?.email||'',error:'Could not verify
 }
 async function refreshAccountAccess(){
 const s=await validSession();if(!s?.access_token){accountAccess='signed_out';return accountAccess}
-try{accountAccess=String(await raw('/rest/v1/rpc/snar_account_access_status',{method:'POST',token:s.access_token,body:{}})||'active')}
-catch{accountAccess='active'}
+try{accountAccess=String(await raw('/rest/v1/rpc/snar_account_access_status',{method:'POST',token:s.access_token,body:{}})||'unknown')}
+catch{accountAccess='unknown'}
 return accountAccess
 }
 function requireAccountAccess(){
