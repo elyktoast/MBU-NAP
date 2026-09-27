@@ -58,7 +58,11 @@ for(const [label,file] of sources){
 
     const citation=q.citation??q.src??q.ref;
     if(citation==null||String(Array.isArray(citation)?citation.join(' '):citation).trim()==='')missingCitation++;
-    if(!String(q.topic??q.lec??q.concept??'').trim())missingTopic++;
+    const topic=String(q.topic??q.lec??q.concept??'').trim();
+    if(!topic)missingTopic++;
+    else if(!['Monitoring','Medical Gas','CO₂ & Scavenging','Airway','Hazards & Safety'].includes(topic))err(label+': '+identity+' has non-canonical topic '+topic);
+    const citationText=String(Array.isArray(citation)?citation.join('; '):citation||'');
+    if(citationText&&(/\.pdf\b/i.test(citationText)||/,\s*Slides?\b/i.test(citationText)||/:\s*slides?\b/i.test(citationText)))err(label+': '+identity+' has legacy citation formatting');
     if(!String(q.explanation??q.exp??q.rationale??'').trim())missingExplanation++;
 
     for(const imageKey of [q.imageId,q.image]){
