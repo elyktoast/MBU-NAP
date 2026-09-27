@@ -2,8 +2,9 @@
 
 | Data | Source | Purpose | Storage / processor | Access | Deletion |
 | --- | --- | --- | --- | --- | --- |
-| Email and authentication credentials | Account user | Sign-in, recovery, account security | Supabase Auth | User; Supabase; operator only through provider administration when necessary | Account deletion |
+| Email and authentication credentials | Account user | Sign-in, recovery, account security and account administration | Supabase Auth | User; Supabase; restricted operator-admin account for account management | Account deletion |
 | Local study progress | Browser | Resume study, analytics, Smart/Due Review | Browser localStorage | User's browser | User clears/replaces local data |
+| Ephemeral guest session heartbeat | Unauthenticated browser | Approximate active guest-session counts | Private Supabase table | Server functions; operator sees aggregate counts only | Approximately 24 hours |
 | Ephemeral guest session | Guest browser tab | Approximate active guest count | Private Supabase table | Aggregate counts to operator admin only | Approximately 24 hours |
 | Account administration metadata | Supabase Auth/account tables | Account support, access control, compliance | Supabase | Operator admin only through restricted RPC | Account lifetime; legal evidence follows separate retention |
 | Cloud study state and versions | Signed-in browser | Cross-device sync and restore | Supabase | Owning authenticated user through RLS | Account deletion; old versions subject to retention schedule |
