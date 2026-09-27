@@ -1481,6 +1481,30 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#mbu-account-panel')).toContainText('Terms of Use');
   });
 
+  test('Privacy Notice and Terms are publicly accessible and independently branded', async ({ page }) => {
+    await page.goto('/privacy.html');
+    await expect(page.getByRole('heading',{name:'Privacy Notice'})).toBeVisible();
+    await expect(page.locator('body')).toContainText('SNAR Study Tool');
+    await expect(page.locator('body')).not.toContainText('Mary Baldwin');
+    await page.goto('/terms.html');
+    await expect(page.getByRole('heading',{name:'Terms of Use'})).toBeVisible();
+    await expect(page.locator('body')).toContainText('Independent educational resource');
+  });
+
+  test('Signed-in account can submit a private privacy request', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let requestBody=null;
+    await page.route(cloud+'/rest/v1/rpc/snar_submit_privacy_request',route=>{requestBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:'17'})});
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.locator('.mbu-global-nav__cloud').click();
+    await expect(page.locator('[data-cloud-signed-in]')).toBeVisible();
+    await page.locator('[data-cloud-signed-in] summary').filter({hasText:'Privacy & Account'}).click();
+    await page.locator('[data-privacy-type]').selectOption('export');
+    await page.locator('[data-privacy-details]').fill('Please provide my account-linked data.');
+    await page.locator('[data-privacy-submit]').click();
+    await expect(page.locator('[data-account-message]')).toContainText('Privacy request received');
+    expect(requestBody).toEqual({p_request_type:'export',p_details:'Please provide my account-linked data.'});
+  });
+
   test('Signed-in user can delete account and return to signed-out state', async ({ page }) => {
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let deleted=0;
     await page.route(cloud+'/rest/v1/rpc/snar_delete_my_account',route=>{deleted++;return route.fulfill({status:200,contentType:'application/json',body:'true'})});
