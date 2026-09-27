@@ -36,7 +36,13 @@
       const selected=[...new Set(result.selected.map(Number).filter(x=>Number.isInteger(x)&&x>=0))].sort((a,b)=>a-b);
       answers[uid]={ok:!!result.ok,selected,at:Number.isFinite(Number(result.at))?Number(result.at):0}
     }
-    return{uids,pos,answers,updated:Number.isFinite(Number(v.updated))?Number(v.updated):0}
+    const out={uids,pos,answers,updated:Number.isFinite(Number(v.updated))?Number(v.updated):0};
+    if(v.mode==='adaptive'&&plainObject(v.adaptive)){
+      const a=v.adaptive,seenUids=Array.isArray(a.seenUids)?[...new Set(a.seenUids.map(normalizeKey).filter(Boolean))]:uids.slice(),topicCounts=plainObject(a.topicCounts)?Object.fromEntries(Object.entries(a.topicCounts).map(([k,n])=>[String(k),Math.max(0,Number(n)||0)])):{};
+      out.mode='adaptive';
+      out.adaptive={mode:'adaptive',level:Math.max(1,Math.min(5,Number(a.level)||3)),answered:Math.max(0,Number(a.answered)||0),correct:Math.max(0,Number(a.correct)||0),maxQuestions:Math.max(1,Math.min(200,Number(a.maxQuestions)||50)),seenUids,topicCounts,path:Array.isArray(a.path)?a.path.filter(plainObject).slice(-200):[],currentLevel:Math.max(1,Math.min(5,Number(a.currentLevel)||Number(a.level)||3))}
+    }
+    return out
   }
 
   function db(){
