@@ -1540,6 +1540,44 @@ test.describe('canonical quiz regression', () => {
     expect(meta.dirty).toBe(false);
   });
 
+  test('Switching accounts clears the previous account local study stores before cloud sync', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co',newId='00000000-0000-0000-0000-000000000002';
+    await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'switch-access',refresh_token:'switch-refresh',expires_in:3600,user:{id:newId,email:'second@example.com'}})}));
+    await page.route(cloud+'/rest/v1/rpc/snar_has_current_legal_acceptance',route=>route.fulfill({status:200,contentType:'application/json',body:'true'}));
+    await page.route(cloud+'/rest/v1/rpc/snar_account_access_status',route=>route.fulfill({status:200,contentType:'application/json',body:'"active"'}));
+    await page.route(cloud+'/rest/v1/mbu_sync_state?*',route=>route.fulfill({status:200,contentType:'application/json',body:'[]'}));
+    await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>route.fulfill({status:201,contentType:'application/json',body:''}));
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.evaluate(()=>{
+      localStorage.setItem('mbu_cloud_local_owner_v1','00000000-0000-0000-0000-000000000001');
+      localStorage.setItem('mbu_exam1_studio_v1',JSON.stringify({ans:{old:{ok:true}}}));
+      localStorage.setItem('mbu_sync_meta_v1',JSON.stringify({mbu_exam1_studio_v1:{revision:3,updatedAt:Date.now(),deviceId:'old',serverRevision:2}}));
+    });
+    await page.locator('.mbu-global-nav__cloud').click();
+    await page.locator('[data-cloud-email]').fill('second@example.com');
+    await page.locator('[data-cloud-password]').fill('correct horse battery staple');
+    await Promise.all([
+      page.waitForNavigation(),
+      page.locator('[data-cloud-signin]').click()
+    ]);
+    await page.evaluate(() => MBUPageReady);
+    expect(await page.evaluate(()=>localStorage.getItem('mbu_exam1_studio_v1'))).toBeNull();
+    expect(await page.evaluate(()=>localStorage.getItem('mbu_sync_meta_v1'))).toBeNull();
+    expect(await page.evaluate(()=>localStorage.getItem('mbu_cloud_local_owner_v1'))).toBe(newId);
+  });
+
+  test('Sign out attempts a final cloud sync before clearing the session', async ({ page }) => {
+    await seedSignedIn(page);
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co',writes=[];
+    await page.route(cloud+'/rest/v1/rpc/mbu_sync_write_state',route=>{const body=JSON.parse(route.request().postData()||'{}');writes.push(body);return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({applied:true,row:{store_key:body.p_store_key,payload:body.p_payload,device_id:body.p_device_id,client_revision:body.p_client_revision,client_updated_at:body.p_client_updated_at,server_revision:1}})})});
+    await page.route(cloud+'/auth/v1/logout',route=>route.fulfill({status:204,body:''}));
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);await waitForAuth(page);
+    await page.evaluate(()=>{localStorage.setItem('mbu_exam1_studio_v1',JSON.stringify({ans:{final:{ok:true}}}));MBUAppCore.touchStore('mbu_exam1_studio_v1')});
+    await page.evaluate(()=>MBUSupabase.signOut());
+    expect(writes.some(x=>x.p_store_key==='mbu_exam1_studio_v1')).toBe(true);
+    expect(await page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(false);
+  });
+
   test('Account creation requires adult Terms and Privacy acknowledgement', async ({ page }) => {
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let signupCalls=0;
     let signupBody=null;await page.route(cloud+'/auth/v1/signup?*',route=>{signupCalls++;signupBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({user:{id:'new-user',email:'new@example.com'},session:null})})});
@@ -1644,10 +1682,14 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('[data-cloud-signed-in]')).toBeVisible();
     page.on('dialog',dialog=>dialog.accept());
     await page.locator('[data-cloud-signed-in] summary').filter({hasText:'Privacy & account'}).click();
+    await page.evaluate(()=>{localStorage.setItem('mbu_exam1_studio_v1',JSON.stringify({ans:{deleteMe:{ok:true}}}));MBUAppCore.touchStore('mbu_exam1_studio_v1')});
     await page.locator('[data-cloud-delete-account]').click();
     await expect.poll(()=>deleted).toBe(1);
     await expect.poll(()=>page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(false);
     await expect(page.locator('[data-cloud-signed-out]')).toBeVisible();
+    expect(await page.evaluate(()=>localStorage.getItem('mbu_exam1_studio_v1'))).toBeNull();
+    expect(await page.evaluate(()=>localStorage.getItem('mbu_sync_meta_v1'))).toBeNull();
+    expect(await page.evaluate(()=>localStorage.getItem('mbu_cloud_local_owner_v1'))).toBeNull();
   });
 
   test('Supabase signup sends confirmation back to the deployed app root', async ({ page }) => {
