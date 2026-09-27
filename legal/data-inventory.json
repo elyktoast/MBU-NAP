@@ -11,7 +11,8 @@
         "privacy_requests",
         "legal_assent",
         "cat_calibration",
-        "guest_session_metrics"
+        "guest_session_metrics",
+        "suggestion_inbox"
       ]
     },
     {
@@ -68,7 +69,21 @@
     "delete_non_admin_account",
     "privacy_request_status",
     "legal_assent_export",
-    "retention_cleanup"
+    "retention_cleanup",
+    "suggestion_status"
   ],
-  "suspension_enforcement": "client and server"
+  "suspension_enforcement": "client and server",
+  "suggestion_inbox": {
+    "requires_authenticated_active_account": true,
+    "stored_fields": [
+      "category",
+      "message",
+      "status",
+      "created_at",
+      "updated_at"
+    ],
+    "stored_account_identifier": false,
+    "admin_visibility": "suggestion content and workflow status only",
+    "max_message_characters": 1500
+  }
 }
