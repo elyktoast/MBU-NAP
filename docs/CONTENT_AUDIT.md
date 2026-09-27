@@ -53,7 +53,7 @@ Workstation Hazards Set 2 contains 65 known duplicate occurrences. Questions 31â
 
 The application keeps these entries for compatibility with the existing 100-question set and saved progress. They should only be replaced when authoritative source material is available; replacement questions should not be invented merely to satisfy a count.
 
-## Semantic audit\n\nThe quality gate also runs a deterministic semantic audit across all 2,000 questions. It detects exact duplicate stems across sets, fails exact duplicates that disagree on keyed answer wording, screens for high-similarity near-duplicates with divergent answer wording, and explicitly reports the known repetitive Hazards Set 2 source content.\n\nThis audit is intentionally deterministic and does not require a paid AI service.\n\n## Semantic limitations
+## Semantic audit\n\nThe quality gate also runs a deterministic semantic audit across all 2,000 questions. It detects exact duplicate stems across sets, fails when the same stem and same answer-choice pool are keyed inconsistently, warns when an exact stem is reused with materially different option/key wording, screens for high-similarity near-duplicates, and explicitly reports the known repetitive Hazards Set 2 source content.\n\nThis audit is intentionally deterministic and does not require a paid AI service.\n\n## Semantic limitations
 
 Automated validation can prove structural consistency but cannot independently prove that every anesthesia answer is clinically correct or that every cited slide supports every rationale. A true semantic review still requires comparison against the authoritative lecture/source material.
 
