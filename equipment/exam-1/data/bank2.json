@@ -2715,18 +2715,18 @@
       "id": "S1-086",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a normal inspired oxygen concentration but suspected carbon monoxide exposure. Why can standard pulse oximetry be misleading?",
+      "stem": "A patient has normal inspired oxygen concentration but suspected carbon monoxide exposure. Why can standard pulse oximetry be misleading?",
       "options": [
-        "It becomes a direct monitor of tissue oxygen utilization",
-        "It may display a falsely high saturation with dyshemoglobin",
-        "It measures PaO₂ rather than hemoglobin saturation",
-        "It directly measures carboxyhemoglobin and overcorrects it"
+        "Carboxyhemoglobin can cause a falsely high SpO₂ reading",
+        "Carbon monoxide causes conventional pulse oximetry to read exactly 0%",
+        "Inspired oxygen concentration directly determines SpO₂ regardless of hemoglobin species",
+        "Conventional pulse oximetry directly measures carboxyhemoglobin concentration"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "The lecture cautions that SpO₂ reflects hemoglobin light absorption and may be falsely high with carbon monoxide/dyshemoglobinemia.",
-      "citation": "Monitoring · 38",
+      "explanation": "The monitoring lecture states that carboxyhemoglobin can produce falsely high readings on conventional two-wavelength pulse oximetry. Laboratory co-oximetry uses multiple wavelengths to distinguish COHb from other hemoglobin species.",
+      "citation": "Monitoring · Slides 74-76",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -2737,10 +2737,11 @@
         "families": [
           "Intraoperative Assessment, Monitoring & Data Interpretation"
         ],
+        "slides": "74-76",
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 38"
+      "sourceLocator": "Slides 74-76"
     },
     {
       "id": "S1-087",
@@ -5931,7 +5932,7 @@
       "id": "S2-087",
       "set": 2,
       "type": "single",
-      "stem": "An ETT bevel rests against the tracheal wall and becomes occluded. Which feature provides an alternate path for gas flow?",
+      "stem": "Which standardized endotracheal-tube feature is located near the distal tip in addition to the bevel?",
       "options": [
         "Murphy eye",
         "Pilot balloon",
@@ -5941,8 +5942,8 @@
       "answer": [
         0
       ],
-      "explanation": "The Murphy eye is an additional opening near the distal ETT tip that can permit gas flow if the bevel is obstructed.",
-      "citation": "Airway Equipment · 7",
+      "explanation": "The airway lecture lists the Murphy eye among standardized endotracheal-tube design features along with the bevel, diameters, distance markings, material, and tube curvature.",
+      "citation": "Airway Equipment · Slide 7",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -5953,6 +5954,7 @@
         "families": [
           "Airway Equipment"
         ],
+        "slides": "7",
         "citationFormat": "slides"
       },
       "sourceTitle": "Airway Equipment",
@@ -6106,8 +6108,8 @@
         0,
         3
       ],
-      "explanation": "The lecture recommends saline/water in the cuff with dye so cuff perforation can be recognized.",
-      "citation": "Airway Equipment · 9",
+      "explanation": "Nurse Anesthesia recommends inflating laser-resistant ETT cuffs with saline and dye; the dye allows early recognition of cuff rupture.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 47",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -6116,12 +6118,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "citationFormat": "slides"
+        "pdfPages": "1262",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 9"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 47 · PDF p. 1262"
     },
     {
       "id": "S2-093",
