@@ -1456,4 +1456,11 @@ test.describe('canonical quiz regression', () => {
     expect(await page.evaluate(() => MBUSupabase.status().email)).toBe('verified@example.com');
   });
 
+  test('Cloud Tools reports the five-minute automatic sync schedule', async ({ page }) => {
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    expect(await page.evaluate(() => MBUSupabase.status().autoSyncIntervalMs)).toBe(300000);
+    await page.locator('.mbu-global-nav__tools').click();
+    await expect(page.locator('[data-cloud-auto]')).toContainText('Auto sync starts after you sign in.');
+  });
+
 });
