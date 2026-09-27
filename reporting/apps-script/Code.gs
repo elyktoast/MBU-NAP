@@ -71,7 +71,6 @@ function doPost(e) {
       received,
       'Open',
       reason,
-      clean_(p.reporter, 80),
       clean_(p.bankLabel || p.bank, 120),
       clean_(p.set, 60),
       clean_(p.questionNumber, 60),
@@ -87,7 +86,6 @@ function doPost(e) {
       comment,
       clean_(p.pageUrl, 1000),
       clean_(p.build, 200),
-      clean_(p.userAgent, 1000)
     ];
     sheet.appendRow(row);
 
@@ -104,7 +102,6 @@ function doPost(e) {
       'A user submitted a question report.',
       '',
       'Issue: ' + reason,
-      'Reporter: ' + (clean_(p.reporter, 80) || 'Not provided'),
       'Bank: ' + label,
       'Set: ' + clean_(p.set, 60),
       'Question: ' + question,
