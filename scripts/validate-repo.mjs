@@ -769,7 +769,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
    }
  }
  const report=JSON.parse(read('reports/content-phase1-audit.json'));
- if(report?.scope?.questions!==2000||report?.metadata?.missingTopics!==0||report?.metadata?.legacyCitationFormatIssues!==0)fail('Phase 1/2 audit report does not match normalized metadata contract');
+ if(report?.scope?.questions!==2000||report?.metadata?.missingTopics!==0||report?.metadata?.legacyCitationFormatIssues!==0||report?.metadata?.structuredSourceIssues!==0)fail('Phase 1/2 audit report does not match normalized metadata contract');
 }
 
 // Canonical content metadata taxonomy is stable after Content Phase 2.
