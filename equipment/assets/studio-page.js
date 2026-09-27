@@ -211,16 +211,37 @@ function syncBankData(){
 }
 let buildMode='sets',adaptiveEntryPending=false;
 function adaptiveAccountReady(){const status=window.MBUSupabase?.status?.()||{};return !!status.signedIn&&status.legalAccepted===true&&status.accessStatus==='active'}
-function adaptiveToggleChanged(input){if(!input?.checked)return true;if(adaptiveAccountReady())return true;input.checked=false;window.MBUAppCore?.openAccount?.(input);return false}
+function syncAdaptiveStartLabel(){
+  const toggle=document.getElementById('adaptiveToggle'),button=document.querySelector('.studio-start-btn');
+  if(button)button.textContent=toggle?.checked?'Begin Adaptive Quiz':'Start Quiz'
+}
+function adaptiveToggleChanged(input){
+  if(!input?.checked){syncAdaptiveStartLabel();return true}
+  if(adaptiveAccountReady()){syncAdaptiveStartLabel();return true}
+  input.checked=false;syncAdaptiveStartLabel();window.MBUAppCore?.openAccount?.(input);return false
+}
 function clearAdaptiveEntryParam(){const url=new URL(location.href);url.searchParams.delete('mode');history.replaceState(null,'',url.pathname+url.search+url.hash)}
-function openAdaptiveEntry(){
+function prepareAdaptiveEntry(){
   renderHome();setBuildMode('sets');setChecks('sourceChecks',true);
-  const toggle=document.getElementById('adaptiveToggle');if(!toggle)return;
-  toggle.checked=true;adaptiveEntryPending=!adaptiveToggleChanged(toggle);
-  document.querySelector('.studio-adaptive-card')?.scrollIntoView?.({block:'center',behavior:'smooth'});
+  const count=document.getElementById('count');if(count)count.value='100';
+  const toggle=document.getElementById('adaptiveToggle');if(!toggle)return null;
+  toggle.checked=true;syncAdaptiveStartLabel();return toggle
+}
+function focusAdaptiveStart(){
+  const card=document.querySelector('.studio-adaptive-card'),button=document.querySelector('.studio-start-btn');
+  card?.scrollIntoView?.({block:'center',behavior:'smooth'});button?.focus?.()
+}
+function openAdaptiveEntry(){
+  const toggle=prepareAdaptiveEntry();if(!toggle)return;
+  adaptiveEntryPending=!adaptiveToggleChanged(toggle);
+  focusAdaptiveStart();
   if(!adaptiveEntryPending)clearAdaptiveEntryParam()
 }
-window.addEventListener('mbu:supabase-status',()=>{if(!adaptiveEntryPending||!adaptiveAccountReady())return;const toggle=document.getElementById('adaptiveToggle');if(toggle)toggle.checked=true;adaptiveEntryPending=false;clearAdaptiveEntryParam()});
+window.addEventListener('mbu:supabase-status',()=>{
+  if(!adaptiveEntryPending||!adaptiveAccountReady())return;
+  const toggle=prepareAdaptiveEntry();if(toggle)toggle.checked=true;
+  adaptiveEntryPending=false;clearAdaptiveEntryParam();window.MBUAppCore?.closeAccount?.();focusAdaptiveStart()
+});
 function setBuildMode(mode){buildMode=mode==='topics'?'topics':'sets';document.getElementById('sourcePickbox').classList.toggle('hidden',buildMode!=='sets');document.getElementById('topicPickbox').classList.toggle('hidden',buildMode!=='topics');document.getElementById('buildSetsBtn').classList.toggle('out',buildMode!=='sets');document.getElementById('buildTopicsBtn').classList.toggle('out',buildMode!=='topics');document.getElementById('buildModeHelp').textContent=buildMode==='sets'?'Choose one or more practice sets. Questions can come from any topic in those sets.':'Choose one or more topics. Studio will pull matching questions from all loaded practice sets and banks.'}
 function setChecks(id,on){document.querySelectorAll('#'+id+' input[type=checkbox]').forEach(x=>x.checked=on)}
 function checkedValues(id){return [...document.querySelectorAll('#'+id+' input[type=checkbox]:checked')].map(x=>x.value)}
