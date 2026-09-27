@@ -603,7 +603,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 
 // Accessibility release gate across shared runtimes and application shells.
 {
- const pages=['index.html','equipment/index.html','equipment/exam-1/index.html','equipment/exam-1/studio.html','equipment/exam-1/hazards.html',...quizFiles];
+ const pages=[...new Set(['index.html','equipment/index.html','equipment/exam-1/index.html','equipment/exam-1/studio.html','equipment/exam-1/hazards.html',...quizFiles])];
  for(const p of pages){
   const src=read(p);
   if(!/<html[^>]*\blang=["'][^"']+["']/i.test(src))fail('Accessibility: '+p+' is missing document language');
@@ -663,7 +663,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 // Modal accessibility must trap keyboard focus and restore it on close.
 {
  const core=read('equipment/assets/app-core.js');
- for(const token of ['function trapModalKey(','e.key===\'Tab\'','toolsReturnFocus?.focus?.()','aria-modal="true"'])if(!core.includes(token))fail('Modal accessibility contract missing '+token);
+ for(const token of ['function trapModalKey(',"e.key!=='Tab'",'toolsReturnFocus?.focus?.()','aria-modal="true"'])if(!core.includes(token))fail('Modal accessibility contract missing '+token);
 }
 
 // Supabase periodic sync must remain enabled and visible in the account/status UI.
