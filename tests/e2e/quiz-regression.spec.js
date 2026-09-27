@@ -1632,6 +1632,29 @@ test.describe('canonical quiz regression', () => {
     await expect.poll(()=>calibrationRefreshes).toBeGreaterThan(0);
   });
 
+  test('Suspended accounts keep privacy and deletion controls but cannot sync or use Adaptive Mode', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
+    await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'suspended-access',refresh_token:'suspended-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000009',email:'suspended@example.com'}})}));
+    await page.route(cloud+'/rest/v1/rpc/snar_has_current_legal_acceptance',route=>route.fulfill({status:200,contentType:'application/json',body:'true'}));
+    await page.route(cloud+'/rest/v1/rpc/snar_account_access_status',route=>route.fulfill({status:200,contentType:'application/json',body:'"suspended"'}));
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.evaluate(() => MBUSupabase.signIn('suspended@example.com','correct horse battery staple'));
+    await page.locator('.mbu-global-nav__cloud').click();
+    await expect(page.locator('[data-cloud-suspended]')).toBeVisible();
+    await expect(page.locator('[data-cloud-sync]')).toBeDisabled();
+    await expect(page.locator('[data-cloud-devices-details]')).toBeHidden();
+    await expect(page.locator('[data-cloud-history-details]')).toBeHidden();
+    await page.locator('[data-cloud-signed-in] summary').filter({hasText:'Privacy & account'}).click();
+    await expect(page.locator('[data-privacy-submit]')).toBeVisible();
+    await expect(page.locator('[data-cloud-delete-account]')).toBeVisible();
+
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await page.evaluate(()=>{document.querySelectorAll('#sourceChecks input[type=checkbox]').forEach((x,i)=>x.checked=i===0)});
+    await page.locator('#adaptiveToggle').check();
+    await expect(page.locator('#adaptiveToggle')).not.toBeChecked();
+    await expect(page.locator('#mbu-account-panel')).toHaveClass(/open/);
+  });
+
   test('Privacy Notice and Terms are publicly accessible and independently branded', async ({ page }) => {
     await page.goto('/privacy.html');
     await expect(page.getByRole('heading',{name:'Privacy Notice'})).toBeVisible();
