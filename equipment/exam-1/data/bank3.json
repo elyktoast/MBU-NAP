@@ -16357,35 +16357,35 @@
       "id": "S5-F13",
       "set": 5,
       "type": "single",
-      "stem": "Nitrous oxide is being used as the sole anesthetic gas in an operating room where the measured occupational exposure is 30 ppm TWA. How does this compare with the NIOSH value quoted in the lecture?",
+      "stem": "During a sevoflurane/N2O anesthetic, room sampling shows sevoflurane 0.8 ppm and N2O 20 ppm TWA. How do these compare with the occupational exposure recommendations cited in the textbook?",
       "options": [
-        "It exceeds the quoted 25 ppm TWA recommendation",
-        "It is below the quoted 50 ppm TWA recommendation",
-        "It exactly meets the quoted 30 ppm TWA recommendation",
-        "The lecture gives no occupational limit for nitrous oxide"
+        "Sevoflurane exceeds the combined-use 0.5 ppm limit; N2O is below 25 ppm",
+        "N2O exceeds 25 ppm; sevoflurane is below the combined-use limit",
+        "Both are below the cited limits",
+        "Both exceed the cited limits"
       ],
       "answer": [
         0
       ],
-      "explanation": "The lecture quotes a NIOSH recommendation of 25 ppm time-weighted average for nitrous oxide when it is used as the sole anesthetic gas. A measured exposure of 30 ppm therefore exceeds the course-taught value.",
-      "citation": "CO₂ & Scavenging · Slide 10",
+      "explanation": "Nurse Anesthesia states that worker exposure should not exceed 2 ppm for halogenated agents, with a lower 0.5 ppm limit when a halogenated agent is used with nitrous oxide, and no more than 25 ppm nitrous oxide as an 8-hour time-weighted average. Therefore, sevoflurane at 0.8 ppm exceeds the combined-use limit while nitrous oxide at 20 ppm remains below its cited limit.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 16, pp. 283-284",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
+      "supp": "The lecture slide lists the 2 ppm halogenated-agent and 25 ppm nitrous-oxide values; the 0.5 ppm combined-use nuance is sourced to the textbook.",
       "orig": "F13",
       "sourceMeta": {
         "families": [
-          "CO₂ Absorbents and Scavenging"
+          "Nurse Anesthesia"
         ],
-        "slides": "10",
-        "pdfPages": "5",
-        "citationFormat": "document"
+        "chapter": "16",
+        "pages": "283-284",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 10"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 16 · pp. 283-284"
     },
     {
       "id": "S5-T68",
