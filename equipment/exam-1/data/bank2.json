@@ -6523,9 +6523,9 @@
       "answer": [
         0
       ],
-      "explanation": "Pressure-based safety systems can be fooled by normal pressure. The oxygen analyzer measures the actual oxygen concentration delivered to the breathing system.",
-      "citation": "Medical Gas Systems in Anesthesia · 34",
-      "topic": "Medical Gases",
+      "explanation": "ASA oxygenation monitoring requires measurement of oxygen concentration in the patient breathing system with an oxygen analyzer and a low-oxygen concentration alarm. Because pressure-based safeguards cannot verify gas identity, the analyzer is the direct check of inspired oxygen concentration.",
+      "citation": "Monitoring · Slide 11",
+      "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -6533,12 +6533,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Medical Gas Systems in Anesthesia"
+          "Intraoperative Assessment, Monitoring & Data Interpretation"
         ],
+        "slides": "11",
         "citationFormat": "slides"
       },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 34"
+      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
+      "sourceLocator": "Slide 11"
     },
     {
       "id": "S3-006",
@@ -6647,7 +6648,7 @@
       "answer": [
         1
       ],
-      "explanation": "The lecture emphasizes supporting/lifting the bony mandible and avoiding compression of submandibular soft tissue.",
+      "explanation": "The airway lecture instructs the provider to place the lower fingers along the bony mandible to complete the mask seal and mandibular lift.",
       "citation": "Airway Equipment · 4",
       "topic": "Airway",
       "imageSvg": null,
@@ -7758,9 +7759,9 @@
       "answer": [
         2
       ],
-      "explanation": "The inspired oxygen analyzer measures oxygen concentration and can detect problems that pressure-based safety systems cannot.",
-      "citation": "Medical Gas Systems in Anesthesia · 34",
-      "topic": "Medical Gases",
+      "explanation": "ASA oxygenation monitoring requires measurement of oxygen concentration in the patient breathing system with an oxygen analyzer and a low-oxygen concentration alarm. Because pressure-based safeguards cannot verify gas identity, the analyzer is the direct check of inspired oxygen concentration.",
+      "citation": "Monitoring · Slide 11",
+      "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -7768,12 +7769,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Medical Gas Systems in Anesthesia"
+          "Intraoperative Assessment, Monitoring & Data Interpretation"
         ],
+        "slides": "11",
         "citationFormat": "slides"
       },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 34"
+      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
+      "sourceLocator": "Slide 11"
     },
     {
       "id": "S3-045",
@@ -8141,8 +8143,8 @@
       "answer": [
         0
       ],
-      "explanation": "The vaporizer interlock prevents simultaneous activation of more than one vaporizer.",
-      "citation": "Medical Gas Systems in Anesthesia · 60",
+      "explanation": "The interlock safety mechanism prevents simultaneous activation of adjacent vaporizers. The lecture also identifies mechanical failure or overcoming the interlock as a vaporizer malfunction.",
+      "citation": "Medical Gas Systems in Anesthesia · Slides 59, 73",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -8153,10 +8155,11 @@
         "families": [
           "Medical Gas Systems in Anesthesia"
         ],
+        "slides": "59, 73",
         "citationFormat": "slides"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 60"
+      "sourceLocator": "Slides 59, 73"
     },
     {
       "id": "S3-057",
@@ -8834,7 +8837,7 @@
       "id": "S3-078",
       "set": 3,
       "type": "single",
-      "stem": "Nitrous oxide is co-administered with a halogenated volatile anesthetic. Which paired NIOSH limits match the lecture?",
+      "stem": "Nitrous oxide is co-administered with a halogenated volatile anesthetic. Which paired occupational exposure limits are given in Nurse Anesthesia?",
       "options": [
         "25 ppm nitrous oxide and 2 ppm halogenated agent",
         "0.5 ppm nitrous oxide and 25 ppm halogenated agent",
@@ -8844,8 +8847,8 @@
       "answer": [
         2
       ],
-      "explanation": "When used together, the lecture uses 25 ppm for nitrous oxide and 0.5 ppm for the halogenated anesthetic; the 2 ppm halogenated limit applies when used without nitrous oxide.",
-      "citation": "CO₂ & Scavenging · 10",
+      "explanation": "Nurse Anesthesia states that workers should not be exposed to more than 0.5 ppm of a halogenated anesthetic when it is used with nitrous oxide, and no more than 25 ppm nitrous oxide as an 8-hour time-weighted average.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 16, p. 284",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -8854,12 +8857,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "CO₂ Absorbents and Scavenging"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "citationFormat": "slides"
+        "pages": "284",
+        "pdfPages": "337",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 10"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 16 · p. 284 · PDF p. 337"
     },
     {
       "id": "S3-079",
@@ -9710,9 +9715,9 @@
       "answer": [
         2
       ],
-      "explanation": "The inspired oxygen analyzer measures oxygen concentration and can detect problems that pressure-based safety systems cannot.",
-      "citation": "Medical Gas Systems in Anesthesia · 34",
-      "topic": "Medical Gases",
+      "explanation": "ASA oxygenation monitoring requires measurement of oxygen concentration in the patient breathing system with an oxygen analyzer and a low-oxygen concentration alarm. Because pressure-based safeguards cannot verify gas identity, the analyzer is the direct check of inspired oxygen concentration.",
+      "citation": "Monitoring · Slide 11",
+      "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -9720,12 +9725,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Medical Gas Systems in Anesthesia"
+          "Intraoperative Assessment, Monitoring & Data Interpretation"
         ],
+        "slides": "11",
         "citationFormat": "slides"
       },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 34"
+      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
+      "sourceLocator": "Slide 11"
     },
     {
       "id": "S4-006",
