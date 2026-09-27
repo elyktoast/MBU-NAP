@@ -6,7 +6,7 @@ const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const norm=s=>String(s??'').trim().replace(/\s+/g,' ').toLowerCase();
 const err=m=>errors.push(m),warn=m=>warnings.push(m);
 const manifest=read('equipment/exam-1/banks.json'),baseline=read('scripts/content-integrity-baseline.json');
-const allowedTopics=new Set(['Monitoring','Medical Gas','CO₂ & Scavenging','Airway','Hazards & Safety']);
+const allowedTopics=new Set(['Monitoring','Medical Gases','CO₂ & Scavenging','Airway','Hazards & Safety']);
 const allowedSources=new Set(['Monitoring','Medical Gas Systems in Anesthesia','CO₂ Absorbents & Scavenging','Airway Equipment','Anesthesia Workstation Hazards & Safety']);
 
 const sources=[
@@ -25,7 +25,7 @@ function keyedText(q,indexes){
 for(const [label,file] of sources){
   const payload=read(file),qs=Array.isArray(payload)?payload:(payload.questions||[]),name=path.basename(file);
   const seenStemBySet=new Map(),seenId=new Set(),knownDupes=new Set(baseline.knownDuplicateStems?.[name]||[]),seenKnownDupes=new Set();
-  let missingCitation=0,missingTopic=0,missingExplanation=0,missingSourceMeta=0,invalidTopic=0;
+  let missingCitation=0,missingTopic=0,missingExplanation=0,missingSourceMeta=0,missingSourceTitle=0,missingSourceLocator=0;
 
   for(let i=0;i<qs.length;i++){
     const q=qs[i]||{},id=String(q.id??i+1),set=Number(q.set??q.setn??1),stem=String(q.stem??q.q??'').trim(),opts=q.options??q.c;
@@ -62,12 +62,13 @@ for(const [label,file] of sources){
     if(citation==null||String(Array.isArray(citation)?citation.join(' '):citation).trim()==='')missingCitation++;
     const topic=String(q.topic??q.lec??q.concept??'').trim();
     if(!topic)missingTopic++;
-    else if(!['Monitoring','Medical Gas','CO₂ & Scavenging','Airway','Hazards & Safety'].includes(topic))err(label+': '+identity+' has non-canonical topic '+topic);
+    else if(!allowedTopics.has(topic))err(label+': '+identity+' has non-canonical topic '+topic);
     const sourceMeta=q.sourceMeta;
     if(!sourceMeta||typeof sourceMeta!=='object'||Array.isArray(sourceMeta)||!Array.isArray(sourceMeta.families)||!sourceMeta.families.length||!['slides','document'].includes(sourceMeta.citationFormat))missingSourceMeta++;
     else if(sourceMeta.families.some(x=>!['Medical Gas Systems in Anesthesia','Monitoring','CO₂ Absorbents & Scavenging','Airway Equipment','Anesthesia Workstation Hazards & Safety'].includes(String(x))))err(label+': '+identity+' has non-canonical source family metadata');
     if(!q.sourceMeta||!Array.isArray(q.sourceMeta.families)||!q.sourceMeta.families.length)err(label+': '+identity+' is missing structured source metadata');
-    if(!String(q.sourceTitle||'').trim())err(label+': '+identity+' is missing sourceTitle');
+    if(!String(q.sourceTitle||'').trim())missingSourceTitle++;
+    if(!String(q.sourceLocator||'').trim())missingSourceLocator++;
     const citationText=String(Array.isArray(citation)?citation.join('; '):citation||'');
     if(citationText&&(/\.pdf\b/i.test(citationText)||/,\s*Slides?\b/i.test(citationText)||/:\s*slides?\b/i.test(citationText)))err(label+': '+identity+' has legacy citation formatting');
     if(!String(q.explanation??q.exp??q.rationale??'').trim())missingExplanation++;
