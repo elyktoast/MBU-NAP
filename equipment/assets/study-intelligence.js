@@ -73,6 +73,43 @@ function smartReview(questions,count=50){
   const n=Math.max(1,Math.min(Number(count)||50,questions.length));
   return questions.map((q,i)=>({q,score:scoreQuestion(q),tie:tieRank(q.uid||i)})).sort((a,b)=>b.score-a.score||a.tie-b.tie).slice(0,n).map(x=>x.q)
 }
+function clampLevel(v){return Math.max(1,Math.min(5,Number(v)||3))}
+function adaptiveChallenge(q){
+  const d=db(),uid=String(q?.uid||''),a=d.attempts[uid],multi=(Array.isArray(q?.ans)?q.ans:Array.isArray(q?.answer)?q.answer:[]).length>1;
+  let score=3+(multi?.65:0)+((q?.bank==='hh'||Number(q?.set)===7)?.7:0);
+  const topic=topicOf(q),topicRows=Object.values(d.attempts).filter(x=>x.topic===topic),topicAttempts=topicRows.reduce((n,x)=>n+(Number(x.attempts)||0),0),topicCorrect=topicRows.reduce((n,x)=>n+(Number(x.correct)||0),0);
+  if(topicAttempts>=4){const acc=topicCorrect/topicAttempts;score+=(.5-acc)*1.2}
+  if(a&&Number(a.attempts)>0){
+    const acc=(Number(a.correct)||0)/Number(a.attempts),observed=3+(.5-acc)*3,weight=Math.min(1,Number(a.attempts)/3);
+    score=score*(1-weight)+observed*weight;
+    if(!a.lastCorrect)score+=.2;
+    if((Number(a.streak)||0)>=3)score-=.2
+  }
+  return Math.round(clampLevel(score)*100)/100
+}
+function normalizeAdaptiveState(state,count=50){
+  const s=plain(state)?state:{},seen=Array.isArray(s.seenUids)?[...new Set(s.seenUids.map(String).filter(Boolean))]:[],topics=plain(s.topicCounts)?s.topicCounts:{};
+  return{mode:'adaptive',level:clampLevel(s.level),answered:Math.max(0,Number(s.answered)||0),correct:Math.max(0,Number(s.correct)||0),maxQuestions:Math.max(1,Math.min(200,Number(s.maxQuestions)||Number(count)||50)),seenUids:seen,topicCounts:Object.fromEntries(Object.entries(topics).map(([k,v])=>[String(k),Math.max(0,Number(v)||0)])),path:Array.isArray(s.path)?s.path.filter(plain).slice(-200):[],currentLevel:clampLevel(s.currentLevel||s.level)}
+}
+function adaptivePick(questions,state){
+  const s=normalizeAdaptiveState(state),seen=new Set(s.seenUids),available=questions.filter(q=>q&&q.uid&&!seen.has(String(q.uid)));
+  if(!available.length)return{question:null,state:s};
+  const target=s.level;
+  const ranked=available.map((q,i)=>{
+    const challenge=adaptiveChallenge(q),topic=topicOf(q),topicCount=Number(s.topicCounts[topic])||0,a=db().attempts[String(q.uid)],recent=a?.lastAt&&now()-Number(a.lastAt)<DAY?1:0;
+    return{q,challenge,score:Math.abs(challenge-target)*12+topicCount*1.5+recent*2,tie:tieRank(q.uid||i)}
+  }).sort((a,b)=>a.score-b.score||a.tie-b.tie);
+  const chosen=ranked[0],next={...s,seenUids:[...s.seenUids,String(chosen.q.uid)],topicCounts:{...s.topicCounts,[topicOf(chosen.q)]:(Number(s.topicCounts[topicOf(chosen.q)])||0)+1},currentLevel:target};
+  return{question:chosen.q,state:next,challenge:chosen.challenge}
+}
+function adaptiveStart(questions,count=50){
+  const base=normalizeAdaptiveState({level:3,maxQuestions:count},count),picked=adaptivePick(questions,base);
+  return picked
+}
+function adaptiveAdvance(state,q,ok){
+  const s=normalizeAdaptiveState(state),before=s.currentLevel||s.level,after=clampLevel(s.level+(ok?1:-1)),path=[...s.path,{uid:String(q?.uid||''),ok:!!ok,levelBefore:before,levelAfter:after,challenge:adaptiveChallenge(q),at:now()}].slice(-200);
+  return{...s,level:after,answered:s.answered+1,correct:s.correct+(ok?1:0),path}
+}
 function stats(rows){
   const total=rows.length,correct=rows.reduce((n,a)=>n+(Number(a.correct)||0),0),attempts=rows.reduce((n,a)=>n+(Number(a.attempts)||0),0);
   return{questions:total,attempts,correct,accuracy:attempts?Math.round(correct/attempts*100):0}
@@ -94,5 +131,5 @@ function addIssue(bank,q,details={}){
 function issues(){return db().issues.map(x=>({...x}))}
 function closeIssue(id){const d=db(),x=d.issues.find(x=>x.id===id);if(!x)return false;x.status='closed';x.closedAt=now();save(d);return true}
 function clearAll(){localStorage.removeItem(STORE);cache=null;lastSerialized=''}
-window.MBUStudyIntelligence={STORE,schema:SCHEMA,recordAnswer,seedLegacy,due,smartReview,analytics,recentActivity,summary,addIssue,issues,closeIssue,questionMeta,clearAll};
+window.MBUStudyIntelligence={STORE,schema:SCHEMA,recordAnswer,seedLegacy,due,smartReview,adaptiveChallenge,adaptiveStart,adaptivePick,adaptiveAdvance,analytics,recentActivity,summary,addIssue,issues,closeIssue,questionMeta,clearAll};
 })();
