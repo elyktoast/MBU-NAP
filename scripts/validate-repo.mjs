@@ -771,6 +771,21 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(report?.scope?.questions!==2000||report?.metadata?.missingTopics!==0||report?.metadata?.legacyCitationFormatIssues!==0)fail('Phase 1/2 audit report does not match normalized metadata contract');
 }
 
+// Canonical content metadata taxonomy is stable after Content Phase 2.
+{
+ const allowedTopics=new Set(['Monitoring','Medical Gas','CO₂ & Scavenging','Airway','Hazards & Safety']);
+ const allowedFamilies=new Set(['Medical Gas Systems in Anesthesia','Monitoring','CO₂ Absorbents & Scavenging','Airway Equipment','Anesthesia Workstation Hazards & Safety']);
+ for(const file of ['bank1.json','bank2.json','bank3.json','combined.json','hazards.json']){
+  const payload=JSON.parse(read('equipment/exam-1/data/'+file)),qs=Array.isArray(payload)?payload:(payload.questions||[]);
+  for(const q of qs){
+   if(!allowedTopics.has(q.topic))fail('Content metadata: '+file+' '+q.id+' has invalid topic '+String(q.topic));
+   if(!q.sourceMeta||!Array.isArray(q.sourceMeta.families)||!q.sourceMeta.families.length)fail('Content metadata: '+file+' '+q.id+' missing sourceMeta families');
+   else for(const family of q.sourceMeta.families)if(!allowedFamilies.has(family))fail('Content metadata: '+file+' '+q.id+' has invalid source family '+family);
+   if(!['slides','document'].includes(q.sourceMeta?.citationFormat))fail('Content metadata: '+file+' '+q.id+' has invalid citation format metadata');
+  }
+ }
+}
+
 // Semantic content checking is mandatory in quality CI.
 {
  const pkg=JSON.parse(read('package.json')),ci=read('.github/workflows/ci.yml');
