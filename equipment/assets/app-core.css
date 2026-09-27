@@ -2,14 +2,14 @@
 .mbu-skip-link{position:fixed;left:12px;top:8px;z-index:11000;transform:translateY(-160%);padding:9px 12px;border-radius:8px;background:#1a365d;color:#fff;font:700 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;text-decoration:none}
 .mbu-skip-link:focus{transform:none}
 .mbu-global-nav__utilities{display:flex;align-items:center;gap:8px;margin-left:auto}
-.mbu-global-nav__tools,.mbu-global-nav__cloud{flex:none;min-height:38px;padding:7px 10px;border:1px solid #1a365d;border-radius:9px;background:#fff;color:#1a365d;font:700 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;cursor:pointer}
+.mbu-global-nav__tools,.mbu-global-nav__cloud,.mbu-global-nav__search{flex:none;min-height:38px;padding:7px 10px;border:1px solid #1a365d;border-radius:9px;background:#fff;color:#1a365d;font:700 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;cursor:pointer}
 .mbu-global-nav__cloud{display:inline-flex;align-items:center;gap:7px;border-color:#cbd5e0;background:#f8fafc}
-.mbu-global-nav__cloud:hover,.mbu-global-nav__tools:hover{background:#edf2f7}
+.mbu-global-nav__cloud:hover,.mbu-global-nav__tools:hover,.mbu-global-nav__search:hover{background:#edf2f7}
 .mbu-global-nav__cloud[data-state="error"]{border-color:#c53030;color:#9b2c2c;background:#fff5f5}
 .mbu-global-nav__cloud[data-state="syncing"] .mbu-status-dot{animation:mbu-pulse 1s ease-in-out infinite}
 .mbu-global-nav__cloud:not([data-state="signed-out"]):not([data-state="unavailable"]):not([data-state="error"]) .mbu-status-dot{background:#2f855a}
 .mbu-status-dot{display:inline-block;width:9px;height:9px;border-radius:999px;background:#a0aec0;box-shadow:0 0 0 2px #fff}
-.mbu-global-nav__tools:focus-visible,.mbu-global-nav__cloud:focus-visible,.mbu-app-tools button:focus-visible,.mbu-account-panel button:focus-visible,.mbu-app-tools input:focus-visible,.mbu-account-panel input:focus-visible,.mbu-tools-details summary:focus-visible{outline:3px solid #2b6cb0;outline-offset:2px}
+.mbu-global-nav__tools:focus-visible,.mbu-global-nav__cloud:focus-visible,.mbu-global-nav__search:focus-visible,.mbu-app-tools button:focus-visible,.mbu-account-panel button:focus-visible,.mbu-app-tools input:focus-visible,.mbu-account-panel input:focus-visible,.mbu-tools-details summary:focus-visible{outline:3px solid #2b6cb0;outline-offset:2px}
 
 .mbu-app-tools,.mbu-account-panel{display:none;position:fixed;inset:0;z-index:10500;background:#0009;align-items:center;justify-content:center;padding:16px}
 .mbu-app-tools.open,.mbu-account-panel.open{display:flex}
@@ -70,3 +70,28 @@
   .mbu-global-nav__cloud [data-cloud-chip-label]{font-size:12px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+.mbu-question-search{display:none;position:fixed;inset:0;z-index:10600;background:#0009;align-items:center;justify-content:center;padding:16px}
+.mbu-question-search.open{display:flex}
+.mbu-question-search__card{width:min(760px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:16px;padding:20px;box-shadow:0 18px 48px #0007;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1a202c}
+.mbu-search-field{display:grid;gap:7px;color:#4a5568;font-size:13px;font-weight:750}
+.mbu-search-field input{width:100%;min-height:46px;padding:10px 12px;border:1px solid #a0aec0;border-radius:9px;font:500 16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.mbu-search-status{margin:10px 0;color:#718096;font-size:13px}
+.mbu-search-results{display:grid;gap:9px}
+.mbu-search-result{padding:12px;border:1px solid #e2e8f0;border-radius:10px;background:#f8fafc}
+.mbu-search-result__meta{color:#2b6cb0;font-size:12px;font-weight:800}
+.mbu-search-result__stem{margin:5px 0;font-weight:750;line-height:1.4}
+.mbu-search-result__source{color:#718096;font-size:12px;line-height:1.35}
+.mbu-search-result__action{display:inline-block;margin-top:8px;color:#1a365d;font-weight:800;text-decoration:none}
+.mbu-cloud-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid #edf2f7}
+.mbu-cloud-row:last-child{border-bottom:0}
+.mbu-cloud-row strong,.mbu-cloud-row span{display:block}
+.mbu-cloud-row span{margin-top:2px;color:#718096;font-size:12px}
+.mbu-cloud-row button{min-height:34px;padding:6px 9px;border:1px solid #1a365d;border-radius:8px;background:#fff;color:#1a365d;font-weight:750;cursor:pointer}
+.mbu-pill{display:inline-block!important;padding:3px 8px;border-radius:999px;background:#e6fffa!important;color:#22543d!important;font-size:11px!important;font-weight:800}
+@media(max-width:640px){
+  .mbu-question-search{padding:10px;align-items:flex-start}
+  .mbu-question-search__card{max-height:calc(100vh - 20px);padding:16px}
+  .mbu-global-nav__search{padding:7px 8px}
+  .mbu-cloud-row{align-items:flex-start}
+}
