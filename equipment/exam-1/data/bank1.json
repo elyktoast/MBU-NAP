@@ -8974,7 +8974,7 @@
       "id": "273",
       "set": 3,
       "type": "single",
-      "stem": "What is the maximum recommended time-weighted average occupational exposure limit set by NIOSH for halogenated anesthetic agents when used alone?",
+      "stem": "What NIOSH-recommended occupational exposure limit does the lecture give for a halogenated anesthetic agent used alone?",
       "options": [
         "0.5 ppm",
         "2 ppm",
@@ -8984,7 +8984,7 @@
       "answer": [
         1
       ],
-      "explanation": "NIOSH guidelines mandate that occupational exposure to halogenated anesthetic agents alone shall not exceed a concentration greater than 2 ppm. Nitrous oxide alone must not exceed 25 ppm.",
+      "explanation": "The lecture gives a recommended exposure limit of 2 ppm for a halogenated anesthetic agent used alone. Nitrous oxide used as the sole anesthetic is listed at 25 ppm TWA.",
       "citation": "CO₂ & Scavenging · Slides 9, 10",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -9105,21 +9105,21 @@
       "id": "277",
       "set": 3,
       "type": "multi",
-      "stem": "Which of the following statements regarding the oropharyngeal airway (OPA) are correct? (Select 3)",
+      "stem": "Which statements about an oropharyngeal airway are supported by the airway lecture? Select 3.",
       "options": [
-        "It is better tolerated in awake or lightly anesthetized patients than an NPA",
-        "It completely eliminates the risk of stimulating protective airway reflexes",
-        "Proper size is measured from the corner of the mouth to the angle of the mandible",
-        "Its concave shape follows the palate and lifts the base of the tongue",
+        "Its concave surface faces caudally",
+        "It lifts the tongue",
         "It can improve bag-mask ventilation seal in edentulous patients",
-        "It cannot be inserted alongside a bite block or endotracheal tube"
+        "Awake patients tolerate it better than a nasopharyngeal airway",
+        "Its most common complication is epistaxis",
+        "It lies in the hypopharynx"
       ],
       "answer": [
-        2,
-        3,
-        4
+        0,
+        1,
+        2
       ],
-      "explanation": "An OPA is sized corner-of-mouth to angle-of-mandible, its concavity lifts the tongue, and it aids mask seal in edentulous patients. NPAs are better tolerated awake; OPAs stimulate reflexes/laryngospasm if light.",
+      "explanation": "The airway lecture describes the OPA as having a caudally facing concave surface, lifting the tongue, and improving bag-mask ventilation seal in edentulous patients. The awake-tolerance, epistaxis, and hypopharyngeal-position statements belong to the NPA.",
       "citation": "Airway Equipment · Slide 5",
       "topic": "Airway",
       "imageSvg": null,
@@ -9282,8 +9282,8 @@
       "answer": [
         0
       ],
-      "explanation": "Ramping aligns the upper airway axes in obese patients by elevating the head, neck, and shoulders until the external auditory meatus is horizontally level with the sternal notch.",
-      "citation": "Airway Equipment · Slide 3",
+      "explanation": "Nurse Anesthesia describes ramping the obese patient until an imaginary horizontal line aligns the sternal notch with the external auditory meatus/tragus.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 24",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -9292,13 +9292,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "3",
-        "citationFormat": "slides"
+        "pdfPages": "524, 530",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 3"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 24 · PDF pp. 524, 530"
     },
     {
       "id": "283",
@@ -9539,7 +9539,7 @@
       "id": "290",
       "set": 3,
       "type": "single",
-      "stem": "Where is the carbon dioxide absorbent canister invariably placed within a standard circle breathing circuit?",
+      "stem": "Where is the carbon dioxide absorber almost invariably placed in the circle system described in the lecture?",
       "options": [
         "In the inspiratory limb on the bag side",
         "In the expiratory limb on the patient side of the expiratory valve",
@@ -9549,7 +9549,7 @@
       "answer": [
         0
       ],
-      "explanation": "The CO2 absorber is almost invariably placed in the inspiratory limb on the bag side so that apparatus resistance to inspiration is readily overcome by manual assisted or mechanical controlled ventilation.",
+      "explanation": "The lecture states that the absorber may be placed in any quadrant but is almost invariably placed in the inspiratory limb on the bag side so apparatus resistance can be overcome during assisted or controlled ventilation.",
       "citation": "CO₂ & Scavenging · Slide 8",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -9638,18 +9638,18 @@
       "id": "293",
       "set": 3,
       "type": "single",
-      "stem": "What is the primary clinical utility of an Eschmann introducer (bougie)?",
+      "stem": "For what type of difficult laryngoscopic view does the textbook describe use of an Eschmann introducer?",
       "options": [
-        "Facilitates difficult endotracheal intubation when glottic visualization is restricted to a Grade IIb or III view",
-        "Dilates the esophagus prior to placement of a double-lumen endobronchial tube",
-        "Decompresses stomach contents during rapid sequence induction",
-        "Stents the oropharynx in edentulous patients during bag-mask ventilation"
+        "Cormack-Lehane grade IIb or III",
+        "Only grade I",
+        "Only when the glottis is fully visible",
+        "Only after a surgical airway"
       ],
       "answer": [
         0
       ],
-      "explanation": "The Eschmann introducer (bougie) is an intubating stylet used to facilitate difficult endotracheal intubation when vocal cords cannot be fully visualized (Grade IIb/III views).",
-      "citation": "Airway Equipment · Slide 9",
+      "explanation": "Nurse Anesthesia describes the Eschmann introducer as useful when the glottic opening is difficult to visualize, including Cormack-Lehane grade IIb or III views.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 24, p. 461",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -9658,13 +9658,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "9",
-        "citationFormat": "slides"
+        "pages": "461",
+        "pdfPages": "548",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 9"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 24 · p. 461 · PDF p. 548"
     },
     {
       "id": "294",
@@ -9801,21 +9802,18 @@
     {
       "id": "298",
       "set": 3,
-      "type": "multi",
-      "stem": "Which of the following hemoglobin species will cause a deceptively normal or falsely elevated oxygen saturation reading on a conventional two-wavelength pulse oximeter? (Select 2)",
+      "type": "single",
+      "stem": "Which dyshemoglobin can cause a falsely elevated reading on a conventional two-wavelength pulse oximeter?",
       "options": [
-        "Methemoglobin",
         "Carboxyhemoglobin",
-        "Sulfhemoglobin",
+        "Methemoglobin",
         "Deoxyhemoglobin",
-        "Fetal hemoglobin",
-        "Oxyhemoglobin"
+        "Fetal hemoglobin"
       ],
       "answer": [
-        1,
-        5
+        0
       ],
-      "explanation": "Carboxyhemoglobin (COHb) absorbs red light at 660 nm identically to oxyhemoglobin, causing conventional two-wavelength pulse oximeters to register falsely elevated readings despite severe tissue hypoxia.",
+      "explanation": "Carboxyhemoglobin can cause a conventional two-wavelength pulse oximeter to overestimate oxygen saturation. Oxyhemoglobin is the normal species being measured and should not be keyed as a deceptive dyshemoglobin.",
       "citation": "Monitoring · Slides 74, 75, 76",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -10640,8 +10638,8 @@
       "answer": [
         1
       ],
-      "explanation": "When a halogenated volatile anesthetic is used together with nitrous oxide, the recommended occupational exposure limit for the halogenated agent is 0.5 ppm. The 2 ppm limit applies when a halogenated anesthetic is used without nitrous oxide; the nitrous oxide limit is 25 ppm.",
-      "citation": "CO₂ & Scavenging · Slides 9, 10",
+      "explanation": "Nurse Anesthesia states that the advisory exposure limit for a halogenated anesthetic is reduced to 0.5 ppm when it is used with nitrous oxide; nitrous oxide is limited to 25 ppm as an 8-hour time-weighted average.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 16, p. 284",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -10650,30 +10648,31 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "CO₂ Absorbents and Scavenging"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "9, 10",
-        "citationFormat": "slides"
+        "pages": "284",
+        "pdfPages": "337",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slides 9, 10"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 16 · p. 284 · PDF p. 337"
     },
     {
       "id": "324",
       "set": 4,
       "type": "single",
-      "stem": "Why does an assistant applying cricoid pressure (Sellick maneuver) during rapid sequence induction compress the esophagus specifically against the sixth cervical vertebra?",
+      "stem": "What is the intended anatomical effect of cricoid pressure during rapid-sequence induction?",
       "options": [
-        "The cricoid cartilage is the only complete circumferential cartilaginous ring in the upper airway, preventing mucosal collapse",
-        "The thyroid lamina provides a flat cartilaginous plate that seals the posterior pharynx",
-        "The hyoid bone acts as a rigid fulcrum that compresses the internal jugular veins",
-        "The corniculate cartilages compress the vocal cords anteriorly to prevent laryngospasm"
+        "Posterior displacement of the cricoid cartilage against the cervical vertebrae to reduce regurgitation risk",
+        "Anterior displacement of the thyroid cartilage to open the esophagus",
+        "Direct compression of the trachea to stop ventilation",
+        "Rotation of the larynx to expose the glottis"
       ],
       "answer": [
         0
       ],
-      "explanation": "Cricoid pressure uses the cricoid cartilage—the only complete cartilaginous ring in the upper airway—to compress the compliant esophagus posteriorly against the C6 vertebral body, preventing passive regurgitation of gastric contents.",
-      "citation": "Airway Equipment · Slide 3",
+      "explanation": "The textbook describes cricoid pressure as posterior displacement of the cricoid cartilage against the cervical vertebrae with the intent of reducing regurgitation and aspiration risk. It does not require a C6-specific explanation.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 24, p. 455",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -10682,13 +10681,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "3",
-        "citationFormat": "slides"
+        "pages": "455",
+        "pdfPages": "542",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 3"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 24 · p. 455 · PDF p. 542"
     },
     {
       "id": "325",
@@ -11390,21 +11390,21 @@
       "id": "346",
       "set": 4,
       "type": "multi",
-      "stem": "Which of the following clinical statements regarding an oropharyngeal airway (OPA) are true? (Select 3)",
+      "stem": "Which statements about an oropharyngeal airway are supported by the airway lecture? Select 3.",
       "options": [
-        "Proper size is measured from the corner of the mouth to the angle of the mandible",
-        "It is better tolerated in awake or lightly anesthetized patients than an NPA",
-        "It completely eliminates the risk of stimulating protective airway reflexes",
-        "It cannot be inserted alongside a bite block or endotracheal tube",
-        "Its concave shape follows the palate to lift the base of the tongue",
-        "It can improve mask ventilation seal in edentulous patients"
+        "Its concave surface faces caudally",
+        "It lifts the tongue",
+        "It can improve bag-mask ventilation seal in edentulous patients",
+        "Awake patients tolerate it better than a nasopharyngeal airway",
+        "Its most common complication is epistaxis",
+        "It lies in the hypopharynx"
       ],
       "answer": [
         0,
-        4,
-        5
+        1,
+        2
       ],
-      "explanation": "An OPA is sized from corner of mouth to angle of mandible, its concavity follows the anatomy to lift the tongue, and it aids bag-mask ventilation in edentulous patients. It stimulates reflexes/laryngospasm if light, and NPAs are better tolerated awake.",
+      "explanation": "The airway lecture describes the OPA as having a caudally facing concave surface, lifting the tongue, and improving bag-mask ventilation seal in edentulous patients. The awake-tolerance, epistaxis, and hypopharyngeal-position statements belong to the NPA.",
       "citation": "Airway Equipment · Slide 5",
       "topic": "Airway",
       "imageSvg": null,
@@ -11468,8 +11468,8 @@
       "answer": [
         0
       ],
-      "explanation": "Ramping aligns the upper airway axes in obese patients by elevating the head, neck, and shoulders until the external auditory meatus is horizontally level with the sternal notch.",
-      "citation": "Airway Equipment · Slide 3",
+      "explanation": "Nurse Anesthesia describes ramping the obese patient until an imaginary horizontal line aligns the sternal notch with the external auditory meatus/tragus.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 24",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -11478,13 +11478,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "3",
-        "citationFormat": "slides"
+        "pdfPages": "524, 530",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 3"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 24 · PDF pp. 524, 530"
     },
     {
       "id": "349",
@@ -11688,21 +11688,18 @@
     {
       "id": "355",
       "set": 4,
-      "type": "multi",
-      "stem": "Which of the following hemoglobin species will cause a deceptively normal or falsely elevated oxygen saturation reading on a conventional two-wavelength pulse oximeter? (Select 2)",
+      "type": "single",
+      "stem": "Which dyshemoglobin can cause a falsely elevated reading on a conventional two-wavelength pulse oximeter?",
       "options": [
-        "Methemoglobin",
         "Carboxyhemoglobin",
-        "Oxyhemoglobin",
-        "Sulfhemoglobin",
+        "Methemoglobin",
         "Deoxyhemoglobin",
         "Fetal hemoglobin"
       ],
       "answer": [
-        1,
-        2
+        0
       ],
-      "explanation": "Carboxyhemoglobin (COHb) absorbs red light at 660 nm identically to oxyhemoglobin, causing conventional two-wavelength pulse oximeters to register falsely elevated readings despite severe tissue hypoxia.",
+      "explanation": "Carboxyhemoglobin can cause a conventional two-wavelength pulse oximeter to overestimate oxygen saturation. Oxyhemoglobin is the normal species being measured and should not be keyed as a deceptive dyshemoglobin.",
       "citation": "Monitoring · Slides 74, 75, 76",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -11856,18 +11853,18 @@
       "id": "360",
       "set": 4,
       "type": "single",
-      "stem": "What is the primary indication for performing a rapid sequence induction (RSI) with cricoid pressure?",
+      "stem": "Why is cricoid pressure traditionally used during rapid-sequence induction in a patient at risk for aspiration?",
       "options": [
-        "Full stomach or conditions with delayed gastric emptying to minimize pulmonary aspiration risk",
-        "Anticipated difficult laryngoscopy due to severe micrognathia",
-        "History of malignant hyperthermia requiring total intravenous anesthesia",
-        "Severe chronic obstructive pulmonary disease requiring low tidal volumes"
+        "To reduce regurgitation and aspiration of gastric contents",
+        "To improve venous return",
+        "To increase lower-esophageal sphincter tone",
+        "To eliminate the need for preoxygenation"
       ],
       "answer": [
         0
       ],
-      "explanation": "RSI with cricoid pressure is indicated when a patient is at high risk for pulmonary aspiration of gastric contents (e.g., non-fasted state, trauma, bowel obstruction, morbid obesity, pregnancy).",
-      "citation": "Airway Equipment · Slide 3",
+      "explanation": "The textbook describes cricoid pressure as an aspiration-risk maneuver traditionally used during rapid-sequence induction to reduce regurgitation and possible aspiration.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 24, p. 455",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -11876,13 +11873,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "3",
-        "citationFormat": "slides"
+        "pages": "455",
+        "pdfPages": "542",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 3"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 24 · p. 455 · PDF p. 542"
     },
     {
       "id": "361",
@@ -12055,18 +12053,18 @@
       "id": "366",
       "set": 4,
       "type": "single",
-      "stem": "Which direct laryngoscopy blade achieves glottic exposure by directly trapping and compressing the epiglottis against the anterior pharyngeal wall?",
+      "stem": "Which direct-laryngoscopy blade exposes the glottis by directly lifting the epiglottis?",
       "options": [
         "Miller blade",
         "Macintosh blade",
-        "Phillips blade",
-        "Guedel blade"
+        "Eschmann introducer",
+        "RAE tube"
       ],
       "answer": [
         0
       ],
-      "explanation": "The straight Miller blade is advanced underneath the epiglottis to directly trap and lift it forward, exposing the glottic opening.",
-      "citation": "Airway Equipment · Slide 10",
+      "explanation": "The lecture describes the Miller as a long, straight blade used for direct epiglottic lift. The Macintosh lifts indirectly through the vallecula.",
+      "citation": "Airway Equipment · Slide 11",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -12077,11 +12075,11 @@
         "families": [
           "Airway Equipment"
         ],
-        "slides": "10",
+        "slides": "11",
         "citationFormat": "slides"
       },
       "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 10"
+      "sourceLocator": "Slide 11"
     },
     {
       "id": "367",
@@ -12254,18 +12252,18 @@
       "id": "372",
       "set": 4,
       "type": "single",
-      "stem": "What does an unexpected, rapid rise in end-tidal CO2 signify during general anesthesia with volatile agents?",
+      "stem": "Which end-tidal carbon dioxide change is listed as a clinical event during malignant hyperthermia?",
       "options": [
-        "Early sensitive indicator of malignant hyperthermia",
-        "Late irreversible sign of cardiac arrest",
-        "Sudden onset of profound hypothermia",
-        "Massive air embolism entering pulmonary circulation"
+        "An unexplained sudden rise in ETCO2",
+        "A fixed ETCO2 of zero in every case",
+        "An isolated decrease caused by hypometabolism",
+        "No ETCO2 change until after hyperthermia develops"
       ],
       "answer": [
         0
       ],
-      "explanation": "An unexplained, rapid rise in EtCO2 is the earliest and most sensitive sign of malignant hyperthermia, reflecting massive skeletal muscle hypermetabolism. Hyperthermia itself is a late sign.",
-      "citation": "Monitoring · Slides 43, 50, 82",
+      "explanation": "Nurse Anesthesia lists an unexplained sudden rise in end-tidal carbon dioxide among the clinical events associated with malignant hyperthermia. Rising temperature is also a recognized finding and may occur later.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 36, p. 842",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -12274,13 +12272,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "43, 50, 82",
-        "citationFormat": "slides"
+        "pages": "842",
+        "pdfPages": "982",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 43, 50, 82"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 36 · p. 842 · PDF p. 982"
     },
     {
       "id": "373",
@@ -12299,8 +12298,8 @@
         4,
         5
       ],
-      "explanation": "Second-generation LMAs incorporate an esophageal drain tube (to vent gastric air and pass an orogastric tube) and an engineered cuff design providing higher airway seal pressures (typically >30 cmH2O). They do NOT provide 100% protection against aspiration nor are they laser-resistant.",
-      "citation": "Airway Equipment · Slide 14",
+      "explanation": "The textbook describes second-generation supraglottic devices such as the ProSeal and Supreme as incorporating gastric drainage/access features and providing an improved airway seal compared with the LMA Classic.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 24, pp. 457-458",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -12309,13 +12308,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "14",
-        "citationFormat": "slides"
+        "pages": "457-458",
+        "pdfPages": "544-545",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 14"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 24 · pp. 457-458 · PDF pp. 544-545"
     },
     {
       "id": "374",
