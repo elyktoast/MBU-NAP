@@ -1484,6 +1484,21 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#mbu-account-panel')).toContainText('Terms of Use');
   });
 
+  test('Existing signed-in account is prompted to re-accept current legal versions before sync or Adaptive Mode', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
+    await page.unroute(cloud+'/rest/v1/rpc/snar_has_current_legal_acceptance');
+    await page.route(cloud+'/rest/v1/rpc/snar_has_current_legal_acceptance',route=>route.fulfill({status:200,contentType:'application/json',body:'false'}));
+    await page.route(cloud+'/rest/v1/rpc/snar_accept_current_legal',route=>route.fulfill({status:200,contentType:'application/json',body:'true'}));
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.locator('.mbu-global-nav__cloud').click();
+    await expect(page.locator('[data-cloud-legal-required]')).toBeVisible();
+    await expect(page.locator('[data-cloud-sync]')).toBeDisabled();
+    await page.locator('[data-cloud-reaccept-consent]').check();
+    await page.locator('[data-cloud-reaccept]').click();
+    await expect.poll(()=>page.evaluate(()=>MBUSupabase.status().legalAccepted)).toBe(true);
+    await expect(page.locator('[data-cloud-legal-required]')).toBeHidden();
+  });
+
   test('Privacy Notice and Terms are publicly accessible and independently branded', async ({ page }) => {
     await page.goto('/privacy.html');
     await expect(page.getByRole('heading',{name:'Privacy Notice'})).toBeVisible();
