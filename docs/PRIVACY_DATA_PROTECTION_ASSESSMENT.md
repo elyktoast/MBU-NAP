@@ -148,7 +148,7 @@ If any of those facts change, this assessment must be revisited before the new p
 
 Re-review this assessment before:
 - formal university/institutional adoption;
-- human-subject research or publication using identifiable/pseudonymous learner data;
+- a planned systematic investigation using identifiable or account-linked learner data that is designed to develop or contribute to generalizable knowledge, regardless of whether publication is planned;
 - collection of demographic or sensitive attributes;
 - advertising or sale/sharing of personal data;
 - disclosure of calibration data to an external recipient;
