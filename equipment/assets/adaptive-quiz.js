@@ -60,8 +60,8 @@ function estimateAbility(path=[]){
   return{theta,se:1/Math.sqrt(information),information}
 }
 function normalize(state,count=50){
-  const s=plain(state)?state:{},seen=Array.isArray(s.seenUids)?[...new Set(s.seenUids.map(String).filter(Boolean))]:[],topics=plain(s.topicCounts)?s.topicCounts:{},poolUids=Array.isArray(s.poolUids)?[...new Set(s.poolUids.map(String).filter(Boolean))]:[],path=Array.isArray(s.path)?s.path.filter(plain).slice(-200):[],estimate=path.length?estimateAbility(path):{theta:clampLogit(s.theta),se:Number(s.se)||1.5,information:Number(s.information)||0};
-  return{mode:'adaptive',theta:estimate.theta,se:estimate.se,information:estimate.information,level:logitToLevel(estimate.theta),answered:Math.max(0,Number(s.answered)||path.length),correct:Math.max(0,Number(s.correct)||path.filter(x=>x.ok).length),maxQuestions:Math.max(1,Math.min(200,Number(s.maxQuestions)||Number(count)||50)),seenUids:seen,poolUids,topicCounts:Object.fromEntries(Object.entries(topics).map(([k,v])=>[String(k),Math.max(0,Number(v)||0)])),path,currentLevel:logitToLevel(estimate.theta),currentDifficulty:Number.isFinite(Number(s.currentDifficulty))?clampLogit(s.currentDifficulty):null,currentChallenge:Number.isFinite(Number(s.currentChallenge))?Number(s.currentChallenge):null,currentProbability:Number.isFinite(Number(s.currentProbability))?Number(s.currentProbability):null}
+  const s=plain(state)?state:{},seen=Array.isArray(s.seenUids)?[...new Set(s.seenUids.map(String).filter(Boolean))]:[],seenContentKeys=Array.isArray(s.seenContentKeys)?[...new Set(s.seenContentKeys.map(String).filter(Boolean))]:[],topics=plain(s.topicCounts)?s.topicCounts:{},poolUids=Array.isArray(s.poolUids)?[...new Set(s.poolUids.map(String).filter(Boolean))]:[],path=Array.isArray(s.path)?s.path.filter(plain).slice(-200):[],estimate=path.length?estimateAbility(path):{theta:clampLogit(s.theta),se:Number(s.se)||1.5,information:Number(s.information)||0};
+  return{mode:'adaptive',theta:estimate.theta,se:estimate.se,information:estimate.information,level:logitToLevel(estimate.theta),answered:Math.max(0,Number(s.answered)||path.length),correct:Math.max(0,Number(s.correct)||path.filter(x=>x.ok).length),maxQuestions:Math.max(1,Math.min(200,Number(s.maxQuestions)||Number(count)||50)),seenUids:seen,seenContentKeys,poolUids,topicCounts:Object.fromEntries(Object.entries(topics).map(([k,v])=>[String(k),Math.max(0,Number(v)||0)])),path,currentLevel:logitToLevel(estimate.theta),currentDifficulty:Number.isFinite(Number(s.currentDifficulty))?clampLogit(s.currentDifficulty):null,currentChallenge:Number.isFinite(Number(s.currentChallenge))?Number(s.currentChallenge):null,currentProbability:Number.isFinite(Number(s.currentProbability))?Number(s.currentProbability):null}
 }
 function poolTopicCounts(questions,allowed){
   const counts={};let total=0;
@@ -69,21 +69,23 @@ function poolTopicCounts(questions,allowed){
   return{counts,total}
 }
 function pick(questions,state){
-  const s=normalize(state),seen=new Set(s.seenUids),allowed=s.poolUids.length?new Set(s.poolUids):null;
+  const s=normalize(state),seen=new Set(s.seenUids),allowed=s.poolUids.length?new Set(s.poolUids):null,seenContent=new Set(s.seenContentKeys);
+  for(const q of questions)if(q?.uid&&seen.has(String(q.uid)))seenContent.add(contentKey(q));
   const recent=recentUids(50),distribution=poolTopicCounts(questions,allowed),topicCache=topicStatsSnapshot(),target=s.theta;
   let chosen=null,index=0;
   for(const q of questions){
-    if(!q?.uid||seen.has(String(q.uid))||(allowed&&!allowed.has(String(q.uid)))){index++;continue}
+    const key=contentKey(q);if(!q?.uid||seen.has(String(q.uid))||seenContent.has(key)||(allowed&&!allowed.has(String(q.uid)))){index++;continue}
     const c=challenge(q,topicCache),difficulty=challengeToLogit(c),probability=logistic(target-difficulty),information=probability*(1-probability),topic=topicOf(q),topicCount=Number(s.topicCounts[topic])||0,share=distribution.total?(distribution.counts[topic]||0)/distribution.total:0,expected=(s.answered+1)*share,balancePenalty=Math.max(0,topicCount-expected)*.08,exposurePenalty=recent.has(String(q.uid))?.08:0,candidate={q,challenge:c,difficulty,probability,information,score:Math.abs(probability-.5)+balancePenalty+exposurePenalty,tie:tieRank(q.uid||index)};
     if(!chosen||candidate.score<chosen.score||(candidate.score===chosen.score&&(candidate.information>chosen.information||(candidate.information===chosen.information&&candidate.tie<chosen.tie))))chosen=candidate;
     index++
   }
   if(!chosen)return{question:null,state:s};
-  const next={...s,seenUids:[...s.seenUids,String(chosen.q.uid)],topicCounts:{...s.topicCounts,[topicOf(chosen.q)]:(Number(s.topicCounts[topicOf(chosen.q)])||0)+1},currentLevel:logitToLevel(s.theta),currentDifficulty:chosen.difficulty,currentChallenge:chosen.challenge,currentProbability:chosen.probability};
+  const next={...s,seenUids:[...s.seenUids,String(chosen.q.uid)],seenContentKeys:[...seenContent,contentKey(chosen.q)],topicCounts:{...s.topicCounts,[topicOf(chosen.q)]:(Number(s.topicCounts[topicOf(chosen.q)])||0)+1},currentLevel:logitToLevel(s.theta),currentDifficulty:chosen.difficulty,currentChallenge:chosen.challenge,currentProbability:chosen.probability};
   return{question:chosen.q,state:next,challenge:chosen.challenge,difficulty:chosen.difficulty,probability:chosen.probability,information:chosen.information}
 }
 function start(questions,count=50){
-  const base=normalize({theta:0,maxQuestions:count,poolUids:questions.map(q=>String(q.uid))},count);
+  const uniqueCount=new Set(questions.filter(q=>q?.uid).map(contentKey)).size,maxQuestions=Math.max(1,Math.min(Number(count)||50,uniqueCount||1));
+  const base=normalize({theta:0,maxQuestions,poolUids:questions.map(q=>String(q.uid)),seenContentKeys:[]},maxQuestions);
   return pick(questions,base)
 }
 function advance(state,q,ok){
