@@ -123,6 +123,7 @@ async function loadBanks(){
     BANK_MANIFEST=await studioFetch('banks.json');
     if(!BANK_MANIFEST||!Array.isArray(BANK_MANIFEST.studioSources))throw Error('invalid bank manifest');
     window.MBU_FEATURES={...(window.MBU_FEATURES||{}),questionGenerator:BANK_MANIFEST.features?.questionGenerator||{enabled:false,status:'unconfigured'}};
+    if(window.MBU_FEATURES.questionGenerator?.enabled&&!window.MBUQuestionGenerator)await window.MBUBuild?.loadScript?.('question-generator.js');
   }catch(e){showLoadErrors(['Bank manifest failed: '+e.message]);console.error(e);document.getElementById('home')?.setAttribute('aria-busy','false');return}
   STUDIO_SOURCE_CATALOG=BANK_MANIFEST.studioSources.map(src=>({bank:src.key,label:src.groupLabel||src.label,sets:src.sets,setLabels:src.setLabels||null,count:src.count}));
   seedStudioSourceCatalog();buildTopics();

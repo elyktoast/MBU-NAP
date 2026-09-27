@@ -673,7 +673,8 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  const cfg=manifest.features?.questionGenerator;
  if(!cfg||cfg.enabled!==false||cfg.status!=='unconfigured'||cfg.provider!==null||cfg.storageKey!=='mbu_generated_questions_v1')fail('Question generator must remain disabled/unconfigured by default');
  for(const token of ['registerProvider','providerNames','generate','addDraft','approveDraft','rejectDraft','validateQuestion','studioQuestions'])if(!generator.includes(token))fail('Question generator framework missing '+token);
- if(!loader.includes("runtime.loadScript('question-generator.js')"))fail('Studio loader does not load question generator framework');
+ if(loader.includes("runtime.loadScript('question-generator.js')"))fail('Disabled question generator is eagerly loaded by Studio');
+ if(!studio.includes("window.MBU_FEATURES.questionGenerator?.enabled&&!window.MBUQuestionGenerator")||!studio.includes("loadScript?.('question-generator.js')"))fail('Studio question generator lazy-load gate is missing');
  if(!studio.includes('MBUQuestionGenerator?.enabled?.()')||!studio.includes("const key='generated',label='Generated Bank'"))fail('Studio generated-bank bridge is missing');
  if(!core.includes('m.features?.questionGenerator?.storageKey'))fail('Generated question store is not in sync tracking');
  if(generator.includes('ollama')||generator.includes('openai')||generator.includes('anthropic'))fail('Question generator prematurely hardcodes a provider');

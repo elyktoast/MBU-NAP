@@ -2092,6 +2092,8 @@ test.describe('canonical quiz regression', () => {
 
   test('Question generator framework is provider-neutral and disabled by default', async ({ page }) => {
     await page.goto(exam + '/studio.html');await waitForStudio(page);
+    expect(await page.evaluate(()=>typeof window.MBUQuestionGenerator)).toBe('undefined');
+    await page.evaluate(()=>MBUBuild.loadScript('question-generator.js'));
     const status=await page.evaluate(async()=>{
       const api=MBUQuestionGenerator;
       let disabledError='';
@@ -2128,6 +2130,7 @@ test.describe('canonical quiz regression', () => {
 
   test('Generated questions require source traceability before approval', async ({ page }) => {
     await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await page.evaluate(()=>MBUBuild.loadScript('question-generator.js'));
     const result=await page.evaluate(()=>{
       const q={
         stem:'Draft without source?',
