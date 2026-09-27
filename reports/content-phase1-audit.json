@@ -14,7 +14,7 @@
     "bank1.json": {
       "count": 500,
       "topics": {
-        "Medical Gases": 181,
+        "Medical Gas": 181,
         "Monitoring": 180,
         "CO₂ & Scavenging": 85,
         "Airway": 54
@@ -140,13 +140,14 @@
           "stem": "What is the primary risk of using more than one washer (Bodok seal) when mounting an E-cylinder onto a hanger yoke?"
         }
       ],
-      "citationFormatIssues": []
+      "citationFormatIssues": [],
+      "structuredSourceIssues": []
     },
     "bank2.json": {
       "count": 500,
       "topics": {
         "Monitoring": 130,
-        "Medical Gases": 128,
+        "Medical Gas": 128,
         "CO₂ & Scavenging": 122,
         "Airway": 120
       },
@@ -674,15 +675,16 @@
           "stem": "Agent vaporization cools a variable-bypass vaporizer. Which internal response helps preserve the selected output?"
         }
       ],
-      "citationFormatIssues": []
+      "citationFormatIssues": [],
+      "structuredSourceIssues": []
     },
     "bank3.json": {
       "count": 500,
       "topics": {
-        "Monitoring": 229,
-        "Medical Gases": 146,
-        "CO₂ & Scavenging": 83,
-        "Airway": 42
+        "Monitoring": 226,
+        "Medical Gas": 144,
+        "CO₂ & Scavenging": 84,
+        "Airway": 46
       },
       "averageExplanationLength": 259,
       "weakExplanations": [],
@@ -698,15 +700,16 @@
           "stem": "During a sevoflurane/N2O anesthetic, room sampling shows sevoflurane 0.8 ppm and N2O 20 ppm TWA. How do these compare with NIOSH recommendations?"
         }
       ],
-      "citationFormatIssues": []
+      "citationFormatIssues": [],
+      "structuredSourceIssues": []
     },
     "combined.json": {
       "count": 150,
       "topics": {
-        "CO₂ & Scavenging": 31,
-        "Medical Gases": 65,
-        "Hazards & Safety": 38,
-        "Airway": 16
+        "CO₂ & Scavenging": 23,
+        "Medical Gas": 52,
+        "Hazards & Safety": 58,
+        "Airway": 17
       },
       "averageExplanationLength": 176,
       "weakExplanations": [
@@ -795,13 +798,13 @@
           "stem": "The O2 flush delivers 35-75 L/min. About how much gas enters the circuit during a 1-second press, and why does that matter during inspiration?"
         }
       ],
-      "citationFormatIssues": []
+      "citationFormatIssues": [],
+      "structuredSourceIssues": []
     },
     "hazards.json": {
       "count": 350,
       "topics": {
-        "Hazards & Safety": 349,
-        "CO₂ & Scavenging": 1
+        "Hazards & Safety": 350
       },
       "averageExplanationLength": 192,
       "weakExplanations": [
@@ -930,7 +933,8 @@
           "stem": "After an airway fire is extinguished and burning material is removed, what is the next priority?"
         }
       ],
-      "citationFormatIssues": []
+      "citationFormatIssues": [],
+      "structuredSourceIssues": []
     }
   },
   "duplicates": {
@@ -5945,13 +5949,14 @@
   "metadata": {
     "canonicalTopics": [
       "Monitoring",
-      "Medical Gases",
+      "Medical Gas",
       "CO₂ & Scavenging",
       "Airway",
       "Hazards & Safety"
     ],
     "missingTopics": 0,
-    "legacyCitationFormatIssues": 0
+    "legacyCitationFormatIssues": 0,
+    "structuredSourceIssues": 0
   },
   "notes": {
     "difficulty": "Not added. Difficulty labels would be invented without an authoritative rubric or empirical item-performance data.",
