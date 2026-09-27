@@ -728,6 +728,12 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ['data-cloud-devices-details','data-cloud-history-details','renderCloudDevices','renderCloudHistory'])if(!core.includes(token))fail('Cloud management UI missing '+token);
 }
 
+// Hazards dashboard must always load the canonical Bank 1 visual system.
+{
+ const src=read('equipment/exam-1/hazards.html');
+ for(const token of ["styles:['site-nav.css','bank1-quiz-ui.css']",'class="mbu-bank1-ui"','class="hero mbu-dashboard-header"'])if(!src.includes(token))fail('Hazards dashboard styling contract missing '+token);
+}
+
 // Continue Studying must resume the active canonical set and preserve Hazards topic metadata.
 {
  const quiz=read('equipment/assets/quiz-engine.js'),dash=read('equipment/assets/exam-dashboard.js'),hazards=read('equipment/assets/hazards-standard-engine.js'),hazardsAdvanced=read('equipment/assets/hazards-quiz-engine.js');
