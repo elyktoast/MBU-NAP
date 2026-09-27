@@ -1859,4 +1859,32 @@ test.describe('canonical quiz regression', () => {
     expect(rpcBody.p_client_revision).toBe(6);
   });
 
+  test('Hazards dashboard loads the canonical styled card layout', async ({ page }) => {
+    await page.setViewportSize({width:1024,height:1366});
+    await page.goto(exam + '/hazards.html');await page.evaluate(() => MBUPageReady);
+    const styles=await page.evaluate(()=>{
+      const body=getComputedStyle(document.body),panel=getComputedStyle(document.querySelector('.panel')),grid=getComputedStyle(document.querySelector('.grid')),card=getComputedStyle(document.querySelector('.card')),btn=getComputedStyle(document.querySelector('.card .btn'));
+      return{
+        bodyFont:body.fontFamily,
+        bodyBg:body.backgroundColor,
+        panelBg:panel.backgroundColor,
+        gridDisplay:grid.display,
+        gridColumns:grid.gridTemplateColumns,
+        cardBorder:card.borderTopWidth,
+        cardRadius:card.borderRadius,
+        buttonDisplay:btn.display,
+        buttonColor:btn.color
+      }
+    });
+    expect(styles.bodyFont).toMatch(/Segoe UI|Arial|Helvetica|sans-serif/i);
+    expect(styles.bodyBg).not.toBe('rgba(0, 0, 0, 0)');
+    expect(styles.panelBg).toBe('rgb(255, 255, 255)');
+    expect(styles.gridDisplay).toBe('grid');
+    expect(styles.gridColumns).not.toBe('none');
+    expect(styles.cardBorder).not.toBe('0px');
+    expect(styles.cardRadius).not.toBe('0px');
+    expect(styles.buttonDisplay).toBe('inline-flex');
+    expect(styles.buttonColor).toBe('rgb(255, 255, 255)');
+  });
+
 });
