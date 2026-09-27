@@ -2,7 +2,7 @@
 (()=>{'use strict';
 const runtime=window.MBUBuild;
 async function start(){
-  if(!runtime)throw Error('SNAR Study Tool build runtime is missing');
+  if(!runtime)throw Error('SRNA Study Tool build runtime is missing');
   await Promise.all([runtime.loadStyle('site-nav.css'),runtime.loadStyle('bank1-quiz-ui.css')]);
   await runtime.loadScript({src:'site-nav.js',data:{page:'studio'}});
   await runtime.loadScript('studio-sync.js');
