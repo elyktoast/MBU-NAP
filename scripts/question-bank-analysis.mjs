@@ -50,6 +50,8 @@ for(const q of all){
 }
 const exact=[...exactGroups.values()].filter(g=>g.length>1);
 const crossBankExact=exact.filter(g=>new Set(g.map(q=>q.bank)).size>1);
+const sameSetExact=exact.filter(g=>new Set(g.map(q=>q.bank+':'+q.set)).size===1);
+const crossSetExact=exact.filter(g=>new Set(g.map(q=>q.bank)).size===1&&new Set(g.map(q=>q.set)).size>1);
 
 function summarize(rows){
   const topics={},sources={},types={},sets={},optionCounts={},answerPositions={},displayAnswerPositions={};
@@ -95,6 +97,8 @@ const report={
     exactStemGroups:exact.length,
     exactStemQuestionCount:exact.reduce((n,g)=>n+g.length,0),
     crossBankExactGroups:crossBankExact.length,
+    sameSetExactGroups:sameSetExact.length,
+    crossSetExactGroups:crossSetExact.length,
     largestGroups:exact.sort((a,b)=>b.length-a.length).slice(0,20).map(g=>({count:g.length,stem:g[0].stem,questions:g.map(q=>q.bank+':'+q.set+':'+q.id)}))
   }
 };
@@ -111,6 +115,6 @@ for(const [bank,s] of Object.entries(report.banks)){
   console.log('  explanation words avg/median:',s.explanationWords.average+'/'+s.explanationWords.median);
   console.log('  missing source title/locator:',s.sourceMetadata.missingSourceTitle+'/'+s.sourceMetadata.missingLocator);
 }
-console.log('\nExact duplicate stem groups:',report.duplication.exactStemGroups,'Cross-bank:',report.duplication.crossBankExactGroups);
+console.log('\nExact duplicate stem groups:',report.duplication.exactStemGroups,'Same-set:',report.duplication.sameSetExactGroups,'Cross-set:',report.duplication.crossSetExactGroups,'Cross-bank:',report.duplication.crossBankExactGroups);
 
 if(process.argv.includes('--json'))console.log('\nJSON_REPORT_START\n'+JSON.stringify(report,null,2)+'\nJSON_REPORT_END');

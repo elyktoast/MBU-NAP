@@ -507,6 +507,21 @@ test.describe('canonical quiz regression', () => {
     expect(errors).toEqual([]);
   });
 
+  test('Studio mixed sessions collapse exact duplicate stems across practice sets', async ({ page }) => {
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    const result=await page.evaluate(() => {
+      const groups=new Map();
+      for(const q of ALL){const key=studioContentKey(q);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(q)}
+      const dup=[...groups.values()].find(g=>g.length>1&&new Set(g.map(q=>q.set)).size>1);
+      if(!dup)throw new Error('No cross-set duplicate group found');
+      const unique=uniqueStudioPool(dup);
+      return {input:dup.length,output:unique.length,stem:dup[0].stem};
+    });
+    expect(result.input).toBeGreaterThan(1);
+    expect(result.output).toBe(1);
+  });
+
   test('Studio source selector exposes every bank and practice set', async ({ page }) => {
     await page.goto(exam + '/studio.html');
     await expect(page.locator('#sourceChecks input[type="checkbox"]')).toHaveCount(22);
