@@ -41,7 +41,7 @@ All 2,000 canonical questions currently contain citation/source text and an expl
 
 ### Topics
 
-All 2,000 canonical questions now have explicit topic metadata using the shared taxonomy: **Monitoring, Medical Gases, CO₂ & Scavenging, Airway, and Hazards & Safety**. Bank 1 was backfilled from its own citation/source families, with mixed-source questions manually reviewed against their stems and explanations. CI now rejects missing or non-canonical topic labels.
+All 2,000 canonical questions now have explicit topic metadata using the shared taxonomy: **Monitoring, Medical Gas, CO₂ & Scavenging, Airway, and Hazards & Safety**. Bank 1 was backfilled from its existing structured source metadata; mixed-source questions retain the bank's existing primary classification rather than inventing a new content judgment. CI now rejects missing or non-canonical topic labels.
 
 ### Duplicate stems
 
