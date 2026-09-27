@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 766,
+    "audited": 866,
     "bank2": [
       {
         "id": "S2-021",
@@ -1277,6 +1277,469 @@
       },
       {
         "id": "164",
+        "disposition": "PASS"
+      },
+      {
+        "id": "165",
+        "disposition": "PASS"
+      },
+      {
+        "id": "167",
+        "disposition": "PASS"
+      },
+      {
+        "id": "168",
+        "disposition": "PASS"
+      },
+      {
+        "id": "169",
+        "disposition": "PASS"
+      },
+      {
+        "id": "170",
+        "disposition": "PASS"
+      },
+      {
+        "id": "171",
+        "disposition": "PASS"
+      },
+      {
+        "id": "172",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced an overstrong aspiration claim with the textbook-supported lower seal-pressure limitation of the LMA Classic."
+        ]
+      },
+      {
+        "id": "173",
+        "disposition": "PASS"
+      },
+      {
+        "id": "174",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced RSI/cricoid-pressure rationale to the textbook and removed unsupported example-list expansion."
+        ]
+      },
+      {
+        "id": "175",
+        "disposition": "PASS"
+      },
+      {
+        "id": "176",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed unsupported nose-to-tragus sizing and rebuilt the item entirely from lecture-supported NPA facts."
+        ]
+      },
+      {
+        "id": "177",
+        "disposition": "PASS"
+      },
+      {
+        "id": "178",
+        "disposition": "PASS"
+      },
+      {
+        "id": "179",
+        "disposition": "PASS"
+      },
+      {
+        "id": "180",
+        "disposition": "PASS"
+      },
+      {
+        "id": "181",
+        "disposition": "PASS"
+      },
+      {
+        "id": "182",
+        "disposition": "PASS"
+      },
+      {
+        "id": "183",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced an unsupported explanation for absent check valves on newer workstations with the check valve function explicitly taught."
+        ]
+      },
+      {
+        "id": "184",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced a failure-scenario/NPPE extrapolation with the normal protective response explicitly described in the lecture."
+        ]
+      },
+      {
+        "id": "185",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed an uncited 6-8 mL/kg ventilatory prescription and kept the question to the source-supported compliance mechanism."
+        ]
+      },
+      {
+        "id": "186",
+        "disposition": "PASS"
+      },
+      {
+        "id": "187",
+        "disposition": "PASS"
+      },
+      {
+        "id": "188",
+        "disposition": "PASS"
+      },
+      {
+        "id": "189",
+        "disposition": "PASS"
+      },
+      {
+        "id": "191",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed unsupported interthreshold-range numbers and kept the explanation to the lecture's stated mechanism."
+        ]
+      },
+      {
+        "id": "192",
+        "disposition": "PASS"
+      },
+      {
+        "id": "193",
+        "disposition": "PASS"
+      },
+      {
+        "id": "194",
+        "disposition": "PASS"
+      },
+      {
+        "id": "195",
+        "disposition": "CORRECT",
+        "changes": [
+          "fixed a key that incorrectly treated negative-pressure pulmonary edema as a cause of obstruction rather than a consequence."
+        ]
+      },
+      {
+        "id": "196",
+        "disposition": "PASS"
+      },
+      {
+        "id": "197",
+        "disposition": "PASS"
+      },
+      {
+        "id": "198",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced an uncited 'first troubleshooting intervention' with the direct capnographic diagnosis supported by the lecture."
+        ]
+      },
+      {
+        "id": "199",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced second-generation SGA advantages to the textbook, which explicitly supports the gastric drain and higher seal."
+        ]
+      },
+      {
+        "id": "200",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed an unsupported pH-shift mechanism and kept the explanation to the lecture's stated reasons not to rely solely on color."
+        ]
+      },
+      {
+        "id": "201",
+        "disposition": "PASS"
+      },
+      {
+        "id": "202",
+        "disposition": "PASS"
+      },
+      {
+        "id": "203",
+        "disposition": "PASS"
+      },
+      {
+        "id": "204",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced the malignant-hyperthermia treatment sequence to the textbook."
+        ]
+      },
+      {
+        "id": "205",
+        "disposition": "PASS"
+      },
+      {
+        "id": "206",
+        "disposition": "PASS"
+      },
+      {
+        "id": "207",
+        "disposition": "PASS"
+      },
+      {
+        "id": "208",
+        "disposition": "PASS"
+      },
+      {
+        "id": "209",
+        "disposition": "PASS"
+      },
+      {
+        "id": "210",
+        "disposition": "PASS"
+      },
+      {
+        "id": "211",
+        "disposition": "PASS"
+      },
+      {
+        "id": "212",
+        "disposition": "PASS"
+      },
+      {
+        "id": "213",
+        "disposition": "PASS"
+      },
+      {
+        "id": "214",
+        "disposition": "PASS"
+      },
+      {
+        "id": "215",
+        "disposition": "PASS"
+      },
+      {
+        "id": "216",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced unsupported numeric cuff-pressure thresholds and symptom claims with a textbook-supported cuff-pressure complication."
+        ]
+      },
+      {
+        "id": "217",
+        "disposition": "PASS"
+      },
+      {
+        "id": "218",
+        "disposition": "PASS"
+      },
+      {
+        "id": "219",
+        "disposition": "PASS"
+      },
+      {
+        "id": "220",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed the unsupported claim that weighing is the only reliable method and grounded the pressure-gauge limitation to the textbook."
+        ]
+      },
+      {
+        "id": "221",
+        "disposition": "PASS"
+      },
+      {
+        "id": "222",
+        "disposition": "PASS"
+      },
+      {
+        "id": "223",
+        "disposition": "PASS"
+      },
+      {
+        "id": "224",
+        "disposition": "PASS"
+      },
+      {
+        "id": "225",
+        "disposition": "PASS"
+      },
+      {
+        "id": "226",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced unsupported 45-cm esophageal/hold-up criteria with the textbook's documented tracheal-ring bounce finding."
+        ]
+      },
+      {
+        "id": "227",
+        "disposition": "PASS"
+      },
+      {
+        "id": "228",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed the unsupported blanket instruction to deepen anesthesia and aligned the response with the curare-cleft teaching."
+        ]
+      },
+      {
+        "id": "229",
+        "disposition": "PASS"
+      },
+      {
+        "id": "230",
+        "disposition": "PASS"
+      },
+      {
+        "id": "231",
+        "disposition": "PASS"
+      },
+      {
+        "id": "232",
+        "disposition": "PASS"
+      },
+      {
+        "id": "233",
+        "disposition": "PASS"
+      },
+      {
+        "id": "234",
+        "disposition": "PASS"
+      },
+      {
+        "id": "235",
+        "disposition": "PASS"
+      },
+      {
+        "id": "237",
+        "disposition": "PASS"
+      },
+      {
+        "id": "238",
+        "disposition": "PASS"
+      },
+      {
+        "id": "239",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced an unsupported NPA-specific intracranial-penetration claim with the textbook-supported instruction to avoid nasal intubation."
+        ]
+      },
+      {
+        "id": "240",
+        "disposition": "PASS"
+      },
+      {
+        "id": "241",
+        "disposition": "PASS"
+      },
+      {
+        "id": "242",
+        "disposition": "PASS"
+      },
+      {
+        "id": "243",
+        "disposition": "PASS"
+      },
+      {
+        "id": "244",
+        "disposition": "PASS"
+      },
+      {
+        "id": "246",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected the slide locator and simplified the Miller-blade technique to the direct-lift description actually taught."
+        ]
+      },
+      {
+        "id": "247",
+        "disposition": "PASS"
+      },
+      {
+        "id": "249",
+        "disposition": "PASS"
+      },
+      {
+        "id": "250",
+        "disposition": "PASS"
+      },
+      {
+        "id": "251",
+        "disposition": "PASS"
+      },
+      {
+        "id": "252",
+        "disposition": "PASS"
+      },
+      {
+        "id": "253",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed unsupported 7-10 cm elevation and three-axis claims and kept only the positioning elements stated in the lecture."
+        ]
+      },
+      {
+        "id": "254",
+        "disposition": "PASS"
+      },
+      {
+        "id": "255",
+        "disposition": "PASS"
+      },
+      {
+        "id": "256",
+        "disposition": "PASS"
+      },
+      {
+        "id": "257",
+        "disposition": "PASS"
+      },
+      {
+        "id": "258",
+        "disposition": "PASS"
+      },
+      {
+        "id": "259",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced second-generation SGA features to the textbook instead of the largely image-only lecture slide."
+        ]
+      },
+      {
+        "id": "260",
+        "disposition": "PASS"
+      },
+      {
+        "id": "261",
+        "disposition": "PASS"
+      },
+      {
+        "id": "262",
+        "disposition": "PASS"
+      },
+      {
+        "id": "263",
+        "disposition": "PASS"
+      },
+      {
+        "id": "264",
+        "disposition": "PASS"
+      },
+      {
+        "id": "265",
+        "disposition": "PASS"
+      },
+      {
+        "id": "266",
+        "disposition": "PASS"
+      },
+      {
+        "id": "267",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced unsupported claims about quenching and visual signaling with the exact cuff-filling instruction stated in the lecture."
+        ]
+      },
+      {
+        "id": "268",
+        "disposition": "PASS"
+      },
+      {
+        "id": "269",
         "disposition": "PASS"
       }
     ],
@@ -3450,117 +3913,117 @@
       }
     ]
   },
-  "remaining": 1234,
+  "remaining": 1134,
   "lastBatch": {
     "bank": "bank1.json",
     "audited": 100,
     "ids": [
-      "62",
-      "63",
-      "64",
-      "65",
-      "66",
-      "67",
-      "69",
-      "70",
-      "71",
-      "72",
-      "73",
-      "74",
-      "75",
-      "77",
-      "78",
-      "79",
-      "80",
-      "81",
-      "82",
-      "83",
-      "84",
-      "85",
-      "86",
-      "87",
-      "88",
-      "89",
-      "90",
-      "91",
-      "92",
-      "93",
-      "94",
-      "95",
-      "96",
-      "97",
-      "99",
-      "100",
-      "101",
-      "102",
-      "103",
-      "104",
-      "105",
-      "106",
-      "107",
-      "108",
-      "109",
-      "110",
-      "111",
-      "112",
-      "113",
-      "114",
-      "115",
-      "116",
-      "117",
-      "118",
-      "119",
-      "120",
-      "121",
-      "122",
-      "123",
-      "124",
-      "125",
-      "126",
-      "127",
-      "128",
-      "129",
-      "130",
-      "131",
-      "132",
-      "133",
-      "134",
-      "135",
-      "136",
-      "137",
-      "138",
-      "139",
-      "140",
-      "141",
-      "142",
-      "143",
-      "144",
-      "145",
-      "146",
-      "147",
-      "148",
-      "149",
-      "150",
-      "151",
-      "152",
-      "153",
-      "154",
-      "155",
-      "156",
-      "157",
-      "158",
-      "159",
-      "160",
-      "161",
-      "162",
-      "163",
-      "164"
+      "165",
+      "167",
+      "168",
+      "169",
+      "170",
+      "171",
+      "172",
+      "173",
+      "174",
+      "175",
+      "176",
+      "177",
+      "178",
+      "179",
+      "180",
+      "181",
+      "182",
+      "183",
+      "184",
+      "185",
+      "186",
+      "187",
+      "188",
+      "189",
+      "191",
+      "192",
+      "193",
+      "194",
+      "195",
+      "196",
+      "197",
+      "198",
+      "199",
+      "200",
+      "201",
+      "202",
+      "203",
+      "204",
+      "205",
+      "206",
+      "207",
+      "208",
+      "209",
+      "210",
+      "211",
+      "212",
+      "213",
+      "214",
+      "215",
+      "216",
+      "217",
+      "218",
+      "219",
+      "220",
+      "221",
+      "222",
+      "223",
+      "224",
+      "225",
+      "226",
+      "227",
+      "228",
+      "229",
+      "230",
+      "231",
+      "232",
+      "233",
+      "234",
+      "235",
+      "237",
+      "238",
+      "239",
+      "240",
+      "241",
+      "242",
+      "243",
+      "244",
+      "246",
+      "247",
+      "249",
+      "250",
+      "251",
+      "252",
+      "253",
+      "254",
+      "255",
+      "256",
+      "257",
+      "258",
+      "259",
+      "260",
+      "261",
+      "262",
+      "263",
+      "264",
+      "265",
+      "266",
+      "267",
+      "268",
+      "269"
     ],
     "notes": [
-      "Audited the next 100 Bank 1 questions, using the lecture material as the primary source and Nurse Anesthesia, 7th ed. when the lecture omitted needed detail.",
-      "Restored Bank 1 question 7 on combined halogenated anesthetic plus nitrous oxide exposure and re-sourced it to Nurse Anesthesia 7e, which explicitly gives 0.5 ppm halogenated agent with N2O and 25 ppm N2O over an 8-hour TWA.",
-      "Re-sourced textbook-dependent questions on ramped positioning, second-generation supraglottic gastric drainage, malignant hyperthermia ETCO2 findings, fail-safe mechanics, low-flow sevoflurane, TOF recovery, cervical-spine airway management, N2O-related cuff pressure, KOH absorbent safety, and cricoid pressure.",
-      "Corrected or tightened unsupported/overstated lecture-based claims including Miller-blade mechanics, N2O cylinder residual volume, bimetallic compensation directionality, cuff pressure limits, and pigtail capnogram interpretation."
+      "Audited the next 100 Bank 1 questions against the lecture material and Nurse Anesthesia, 7th ed. where the lecture was incomplete.",
+      "Corrected source-fidelity problems involving first- versus second-generation supraglottic airways, cricoid pressure/RSI, NPA facts, vaporizer outlet check valves, scavenging negative-pressure relief, compliance changes with insufflation, emergence obstruction, rebreathing, MH treatment, ETT cuff pressure, N2O cylinder pressure, Eschmann introducer findings, basilar-skull-fracture airway route, Miller blade technique, sniffing position, and laser-resistant ETT cuff filling.",
+      "Re-sourced multiple items to the textbook where the original lecture citation did not contain enough detail.",
+      "No unchanged retained answer key was found to be wrong; rewritten items received new keys only where the stem/options were intentionally corrected."
     ]
   },
   "lastCorrection": {
