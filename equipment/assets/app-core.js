@@ -124,8 +124,8 @@ function trapModalKey(e,modal,close){
   if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}
   else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
 }
-function closeTools(){const modal=document.getElementById('mbu-app-tools');if(!modal)return;modal.classList.remove('open');modal.setAttribute('aria-hidden','true');toolsReturnFocus?.focus?.();toolsReturnFocus=null}
-function closeAccount(){const modal=document.getElementById('mbu-account-panel');if(!modal)return;modal.classList.remove('open');modal.setAttribute('aria-hidden','true');toolsReturnFocus?.focus?.();toolsReturnFocus=null}
+function closeTools(){const modal=document.getElementById('mbu-app-tools');if(!modal)return;modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.classList.remove('mbu-modal-open');toolsReturnFocus?.focus?.();toolsReturnFocus=null}
+function closeAccount(){const modal=document.getElementById('mbu-account-panel');if(!modal)return;modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.classList.remove('mbu-modal-open');toolsReturnFocus?.focus?.();toolsReturnFocus=null}
 function updateCloudChip(){
   const b=document.querySelector('.mbu-global-nav__cloud');if(!b)return;
   const info=window.MBUSupabase?.status?.()||{signedIn:false,state:'unavailable'},label=b.querySelector('[data-cloud-chip-label]');
@@ -208,7 +208,7 @@ function ensureAccountPanel(){
   modal.querySelector('[data-account-close]').onclick=closeAccount;modal.onclick=e=>{if(e.target===modal)closeAccount()};modal.onkeydown=e=>trapModalKey(e,modal,closeAccount);
 }
 async function openAccount(source){
-  ensureAccountPanel();toolsReturnFocus=source||document.activeElement;const modal=document.getElementById('mbu-account-panel');modal.classList.add('open');modal.setAttribute('aria-hidden','false');refreshAccount();
+  ensureAccountPanel();toolsReturnFocus=source||document.activeElement;const modal=document.getElementById('mbu-account-panel');document.body.classList.add('mbu-modal-open');modal.classList.add('open');modal.setAttribute('aria-hidden','false');refreshAccount();
   const info=window.MBUSupabase?.status?.(),title=modal.querySelector('#mbu-account-title'),subtitle=modal.querySelector('[data-account-subtitle]');
   if(info?.recoveryMode){title.textContent='Reset password';subtitle.textContent='Secure your SRNA Study Tool account.'}
   else if(info?.signedIn){title.textContent='Cloud & account';subtitle.textContent='Your sync status, devices, restore history, and account settings.'}
@@ -227,7 +227,7 @@ function ensureTools(){
   file.onchange=async()=>{try{const result=await importFile(file.files?.[0]);const parts=['Imported '+result.imported+' newer study area'+(result.imported===1?'':'s')];if(result.skipped)parts.push('kept '+result.skipped+' current/newer area'+(result.skipped===1?'':'s'));if(result.unknown)parts.push('ignored '+result.unknown+' unknown/legacy entr'+(result.unknown===1?'y':'ies'));status.textContent=parts.join(' · ')+'. Reload this page to use imported progress.';await refreshTools()}catch(e){record('backup-import',e);status.textContent='Import failed: '+e.message}finally{file.value=''}};
   modal.querySelector('[data-copy]').onclick=async()=>{try{await copyDiagnostics();status.textContent='Diagnostics copied.'}catch(e){status.textContent='Could not copy diagnostics.'}}
 }
-async function openTools(source){ensureTools();toolsReturnFocus=source||document.activeElement;const modal=document.getElementById('mbu-app-tools');modal.classList.add('open');modal.setAttribute('aria-hidden','false');await refreshTools();modal.querySelector('[data-close]').focus()}
+async function openTools(source){ensureTools();toolsReturnFocus=source||document.activeElement;const modal=document.getElementById('mbu-app-tools');document.body.classList.add('mbu-modal-open');modal.classList.add('open');modal.setAttribute('aria-hidden','false');await refreshTools();modal.querySelector('[data-close]').focus()}
 function mountNav(nav){
   if(!nav||nav.querySelector('.mbu-global-nav__utilities'))return;
   const utilities=document.createElement('div');utilities.className='mbu-global-nav__utilities';
