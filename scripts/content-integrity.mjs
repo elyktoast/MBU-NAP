@@ -2,13 +2,13 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const root=process.cwd(),errors=[],warnings=[];
-const taxonomy=read('equipment/exam-1/banks.json').contentTaxonomy||{},allowedTopics=new Set(taxonomy.topics||[]),allowedSources=new Set(taxonomy.sourceTitles||[]);
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const norm=s=>String(s??'').trim().replace(/\s+/g,' ').toLowerCase();
 const err=m=>errors.push(m),warn=m=>warnings.push(m);
 const manifest=read('equipment/exam-1/banks.json'),baseline=read('scripts/content-integrity-baseline.json');
-const allowedTopics=new Set(['Monitoring','Medical Gases','CO₂ & Scavenging','Airway','Hazards & Safety']);
-const allowedSources=new Set(['Monitoring','Medical Gas Systems in Anesthesia','CO₂ Absorbents & Scavenging','Airway Equipment','Anesthesia Workstation Hazards & Safety']);
+const taxonomy=manifest.contentTaxonomy||{};
+const allowedTopics=new Set(taxonomy.topics||[]);
+const allowedSources=new Set(taxonomy.sourceTitles||[]);
 
 const sources=[
   ['Quiz Bank 1','equipment/exam-1/data/bank1.json'],
@@ -66,9 +66,9 @@ for(const [label,file] of sources){
     else if(!allowedTopics.has(topic))err(label+': '+identity+' has non-canonical topic '+topic);
     const sourceMeta=q.sourceMeta;
     if(!sourceMeta||typeof sourceMeta!=='object'||Array.isArray(sourceMeta)||!Array.isArray(sourceMeta.families)||!sourceMeta.families.length||!['slides','document'].includes(sourceMeta.citationFormat))missingSourceMeta++;
-    else if(sourceMeta.families.some(x=>!['Medical Gas Systems in Anesthesia','Monitoring','CO₂ Absorbents & Scavenging','Airway Equipment','Anesthesia Workstation Hazards & Safety'].includes(String(x))))err(label+': '+identity+' has non-canonical source family metadata');
+    else if(sourceMeta.families.some(x=>!allowedSources.has(String(x))))err(label+': '+identity+' has non-canonical source family metadata');
     if(!q.sourceMeta||!Array.isArray(q.sourceMeta.families)||!q.sourceMeta.families.length)err(label+': '+identity+' is missing structured source metadata');
-    if(!String(q.sourceTitle||'').trim())missingSourceTitle++;
+    const sourceTitle=String(q.sourceTitle||'').trim();if(!sourceTitle)missingSourceTitle++;else if(!allowedSources.has(sourceTitle))err(label+': '+identity+' has non-canonical sourceTitle '+sourceTitle);
     if(!String(q.sourceLocator||'').trim())missingSourceLocator++;
     const citationText=String(Array.isArray(citation)?citation.join('; '):citation||'');
     if(citationText&&(/\.pdf\b/i.test(citationText)||/,\s*Slides?\b/i.test(citationText)||/:\s*slides?\b/i.test(citationText)))err(label+': '+identity+' has legacy citation formatting');
