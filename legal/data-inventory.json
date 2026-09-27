@@ -52,5 +52,23 @@
     "retention_hours": 24,
     "admin_visibility": "aggregate counts only",
     "persistent_cross_session": false
-  }
+  },
+  "admin_account_metadata": [
+    "email",
+    "created_at",
+    "last_sign_in_at",
+    "access_status",
+    "current_legal_accepted",
+    "cat_used",
+    "is_admin"
+  ],
+  "admin_account_actions": [
+    "suspend_access",
+    "grant_access",
+    "delete_non_admin_account",
+    "privacy_request_status",
+    "legal_assent_export",
+    "retention_cleanup"
+  ],
+  "suspension_enforcement": "client and server"
 }
