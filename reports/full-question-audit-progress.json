@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 1366,
+    "audited": 1466,
     "bank2": [
       {
         "id": "S2-021",
@@ -1585,6 +1585,430 @@
       },
       {
         "id": "S4-012",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-013",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected the pressure-gradient source from the flow-volume-loop slide to Monitoring slide 26."
+        ]
+      },
+      {
+        "id": "S4-014",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-015",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-016",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-017",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-018",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-019",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-020",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-021",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-022",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-024",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-025",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-027",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-028",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-030",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-031",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-032",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-033",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-034",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-035",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-036",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced an unsupported weight-based claim with the textbook-supported limitation of the N2O pressure gauge."
+        ]
+      },
+      {
+        "id": "S4-037",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-039",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-040",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-042",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-043",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-044",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-045",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-046",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-048",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-049",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-050",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-051",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-052",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-053",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-054",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-055",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-056",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-057",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-060",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-061",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-062",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-064",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-065",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-066",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-067",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-069",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-070",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-071",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-072",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-073",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-074",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-075",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-077",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced the combined 0.5 ppm halogenated-agent plus 25 ppm N2O limits to the textbook."
+        ]
+      },
+      {
+        "id": "S4-078",
+        "disposition": "IMPROVE",
+        "changes": [
+          "changed wording to match the lecture's recommendation rather than implying a mandatory standard."
+        ]
+      },
+      {
+        "id": "S4-079",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-081",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-082",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-083",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-085",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-086",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-087",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-090",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced an unsupported Murphy-eye functional claim with ETT design features explicitly listed in the lecture."
+        ]
+      },
+      {
+        "id": "S4-091",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-092",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-093",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-094",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced an inferred cuff-perforation scenario with the exact lecture-supported cuff-filling instruction."
+        ]
+      },
+      {
+        "id": "S4-095",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-097",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S4-100",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-001",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-002",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected the pressure-gradient source from the flow-volume-loop slide to Monitoring slide 26."
+        ]
+      },
+      {
+        "id": "S5-004",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-005",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-006",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-008",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-009",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-010",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-011",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-012",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-013",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-014",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-015",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-017",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-019",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-021",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-023",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-025",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-026",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-028",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-029",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-030",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-031",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-032",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-035",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-036",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced an unsupported cylinder-weight claim with textbook-supported N2O pressure behavior."
+        ]
+      },
+      {
+        "id": "S5-037",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-039",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-040",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S5-041",
         "disposition": "PASS"
       }
     ],
@@ -6024,117 +6448,117 @@
       }
     ]
   },
-  "remaining": 634,
+  "remaining": 534,
   "lastBatch": {
     "bank": "bank2.json",
     "audited": 100,
     "ids": [
-      "S2-094",
-      "S2-095",
-      "S2-096",
-      "S2-098",
-      "S2-100",
-      "S3-001",
-      "S3-002",
-      "S3-004",
-      "S3-005",
-      "S3-006",
-      "S3-007",
-      "S3-008",
-      "S3-009",
-      "S3-010",
-      "S3-011",
-      "S3-012",
-      "S3-013",
-      "S3-014",
-      "S3-016",
-      "S3-017",
-      "S3-018",
-      "S3-019",
-      "S3-020",
-      "S3-022",
-      "S3-023",
-      "S3-024",
-      "S3-025",
-      "S3-026",
-      "S3-027",
-      "S3-028",
-      "S3-029",
-      "S3-030",
-      "S3-031",
-      "S3-032",
-      "S3-034",
-      "S3-035",
-      "S3-036",
-      "S3-037",
-      "S3-040",
-      "S3-041",
-      "S3-042",
-      "S3-043",
-      "S3-044",
-      "S3-045",
-      "S3-046",
-      "S3-049",
-      "S3-050",
-      "S3-051",
-      "S3-052",
-      "S3-053",
-      "S3-054",
-      "S3-056",
-      "S3-057",
-      "S3-059",
-      "S3-060",
-      "S3-061",
-      "S3-062",
-      "S3-063",
-      "S3-064",
-      "S3-065",
-      "S3-066",
-      "S3-067",
-      "S3-069",
-      "S3-070",
-      "S3-071",
-      "S3-072",
-      "S3-073",
-      "S3-074",
-      "S3-075",
-      "S3-077",
-      "S3-078",
-      "S3-079",
-      "S3-080",
-      "S3-081",
-      "S3-082",
-      "S3-083",
-      "S3-084",
-      "S3-085",
-      "S3-086",
-      "S3-089",
-      "S3-090",
-      "S3-091",
-      "S3-092",
-      "S3-094",
-      "S3-095",
-      "S3-097",
-      "S3-098",
-      "S3-100",
-      "S4-001",
-      "S4-002",
-      "S4-003",
-      "S4-004",
-      "S4-005",
-      "S4-006",
-      "S4-007",
-      "S4-008",
-      "S4-009",
-      "S4-010",
-      "S4-011",
-      "S4-012"
+      "S4-013",
+      "S4-014",
+      "S4-015",
+      "S4-016",
+      "S4-017",
+      "S4-018",
+      "S4-019",
+      "S4-020",
+      "S4-021",
+      "S4-022",
+      "S4-024",
+      "S4-025",
+      "S4-027",
+      "S4-028",
+      "S4-030",
+      "S4-031",
+      "S4-032",
+      "S4-033",
+      "S4-034",
+      "S4-035",
+      "S4-036",
+      "S4-037",
+      "S4-039",
+      "S4-040",
+      "S4-042",
+      "S4-043",
+      "S4-044",
+      "S4-045",
+      "S4-046",
+      "S4-048",
+      "S4-049",
+      "S4-050",
+      "S4-051",
+      "S4-052",
+      "S4-053",
+      "S4-054",
+      "S4-055",
+      "S4-056",
+      "S4-057",
+      "S4-060",
+      "S4-061",
+      "S4-062",
+      "S4-064",
+      "S4-065",
+      "S4-066",
+      "S4-067",
+      "S4-069",
+      "S4-070",
+      "S4-071",
+      "S4-072",
+      "S4-073",
+      "S4-074",
+      "S4-075",
+      "S4-077",
+      "S4-078",
+      "S4-079",
+      "S4-081",
+      "S4-082",
+      "S4-083",
+      "S4-085",
+      "S4-086",
+      "S4-087",
+      "S4-090",
+      "S4-091",
+      "S4-092",
+      "S4-093",
+      "S4-094",
+      "S4-095",
+      "S4-097",
+      "S4-100",
+      "S5-001",
+      "S5-002",
+      "S5-004",
+      "S5-005",
+      "S5-006",
+      "S5-008",
+      "S5-009",
+      "S5-010",
+      "S5-011",
+      "S5-012",
+      "S5-013",
+      "S5-014",
+      "S5-015",
+      "S5-017",
+      "S5-019",
+      "S5-021",
+      "S5-023",
+      "S5-025",
+      "S5-026",
+      "S5-028",
+      "S5-029",
+      "S5-030",
+      "S5-031",
+      "S5-032",
+      "S5-035",
+      "S5-036",
+      "S5-037",
+      "S5-039",
+      "S5-040",
+      "S5-041"
     ],
     "notes": [
-      "Audited the next 100 Bank 2 questions against Airway Equipment, Medical Gas Systems in Anesthesia, CO₂ & Scavenging, Monitoring, and Nurse Anesthesia 7e where lecture support was incomplete.",
-      "Corrected three inspired-oxygen-analyzer questions that were incorrectly sourced to Medical Gas Systems slide 34; Monitoring slide 11 explicitly contains the oxygen-analyzer requirement.",
-      "Corrected the vaporizer-interlock slide locator and re-sourced the combined 0.5 ppm halogenated-agent plus 25 ppm N2O exposure item to Nurse Anesthesia 7e.",
-      "No answer-key changes were required in this batch."
+      "Audited the next 100 Bank 2 questions against the course lectures and Nurse Anesthesia, 7th ed. where the lecture did not fully support the claim.",
+      "Visually verified all six image-dependent questions in the batch: rebreathing capnogram, arterial dynamic-response figure, flowmeter high-flow diagram, armored tube, RAE tube, and Macintosh/Miller blade image.",
+      "Corrected two peak-to-plateau pressure questions to Monitoring slide 26, replaced unsupported nitrous-oxide cylinder-weight claims with textbook-supported pressure behavior, and re-sourced the combined WAG exposure limits to Nurse Anesthesia 7e.",
+      "Also rebuilt the Murphy-eye and laser-cuff questions to use facts explicitly supported by the airway lecture."
     ]
   },
   "lastCorrection": {
