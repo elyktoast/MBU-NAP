@@ -6312,7 +6312,7 @@
       "answer": [
         0
       ],
-      "explanation": "Nurse Anesthesia states that workers should not be exposed to more than 2 ppm of a halogenated anesthetic, reduced to 0.5 ppm when it is used with nitrous oxide, and no more than 25 ppm nitrous oxide as an 8-hour time-weighted average.",
+      "explanation": "Nurse Anesthesia states that workers should not be exposed to more than 2 ppm of a halogenated agent, reduced to 0.5 ppm when it is used with nitrous oxide, and no more than 25 ppm nitrous oxide as an 8-hour time-weighted average.",
       "citation": "Nurse Anesthesia, 7th ed. · Chapter 16, p. 284",
       "topic": "Hazards & Safety",
       "imageSvg": null,
@@ -7007,7 +7007,7 @@
       "answer": [
         3
       ],
-      "explanation": "The ignition source is almost always the surgeon's cautery, lasers, or light cords; the oxidizer is controlled by anesthesia through the ETT, mask, or cannula; and fuel (drapes, gauze, prep) is labeled nursing, though fuel is everywhere. oxidizer (anesthesia) + ignition (surgeon) + fuel (anything).",
+      "explanation": "The lecture assigns the usual OR fire-triangle roles as ignition source to the surgeon, oxidizer control to anesthesia, and fuel management to nursing, while also noting that fuel can be present throughout the environment.",
       "citation": "Anesthesia Workstation Hazards & Safety · Slide 33 (PDF p. 17)",
       "topic": "Hazards & Safety",
       "imageSvg": null,
@@ -8965,7 +8965,7 @@
       "answer": [
         1
       ],
-      "explanation": "With the cylinder open, the machine starts drawing from it as soon as pipeline pressure drops, so supply pressure stays up and no alarm sounds until the cylinder is empty. That's why the cylinder should be closed after checking it: the alarm then warns you at the pipeline failure while a full backup is still available.",
+      "explanation": "If the backup cylinder is left open, it can begin supplying gas when pipeline pressure falls and delay the low-pressure warning until the cylinder reserve is nearly exhausted. Closing the cylinder after the check preserves the backup and makes a pipeline failure apparent sooner.",
       "citation": "Anesthesia Workstation Hazards & Safety · Slide 4 (PDF p. 2)",
       "topic": "Hazards & Safety",
       "imageSvg": null,
