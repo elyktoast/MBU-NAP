@@ -56,3 +56,5 @@ The application keeps these entries for compatibility with the existing 100-ques
 Automated validation can prove structural consistency but cannot independently prove that every anesthesia answer is clinically correct or that every cited slide supports every rationale. A true semantic review still requires comparison against the authoritative lecture/source material.
 
 Until those source materials are available in the repository, the release gate focuses on preventing structural regressions and making known content debt explicit.
+
+See [Content Quality Phase 1 Audit](CONTENT_QUALITY_PHASE1.md) for the current duplicate, explanation, distractor, coverage, and metadata findings.
