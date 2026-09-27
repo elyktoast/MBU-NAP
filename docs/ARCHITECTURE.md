@@ -20,12 +20,14 @@ Shared JSON is read through `MBUBuild.fetchJSON`, which deduplicates requests wi
 
 Quiz engines keep their existing localStorage formats. After a real write they call `MBUAppCore.touchStore(key)`, which maintains sync metadata separately. This avoids wrapping or changing stable save formats.
 
+Cloud state also carries the last observed Supabase `server_revision`. Authenticated writes use an atomic PostgreSQL compare-and-write function so stale devices cannot blindly overwrite a newer cloud revision.
+
 ## Release gates
 
 The ordered CI workflow runs:
 1. repository architecture validation;
 2. content-integrity validation;
 3. performance/architecture budgets;
-4. browser regression tests.
+4. browser regression tests, including cloud-account, conflict, mobile, and accessibility coverage.
 
 GitHub Pages deployment remains the deployment gate.
