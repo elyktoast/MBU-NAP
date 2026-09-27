@@ -1480,7 +1480,7 @@
       "answer": [
         2
       ],
-      "explanation": "1% of about 2100 mL total is 21 mL of sevo vapor. Sump outflow is 21% sevo, so 79 mL of carrier gas must enter the sump to pick up 21 mL. The remaining 2000 mL bypasses. 2000:79 is about 25:1. 21:1 confuses the sump concentration with the ratio.",
+      "explanation": "At 20 C, saturated sump gas is 21% sevoflurane. For a 1% delivered concentration, the bypass-to-sump carrier-gas splitting ratio is approximately (0.21/0.01 - 1) / (1 - 0.21), or about 25:1. In other words, roughly 25 parts of fresh gas bypass the sump for every 1 part entering it.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 55 (PDF p. 28)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -1620,7 +1620,7 @@
       "answer": [
         0
       ],
-      "explanation": "Low-pressure leaks happen most often at the CO2 absorber: loose screws, worn gaskets, granules on the gaskets, or an open petcock. improperly seated canisters, and a canister not seated correctly after changing can leak. Quick connects and yokes are high-pressure leaks.",
+      "explanation": "Low-pressure leaks commonly occur at the CO2 absorber from loose screws, worn gaskets, absorbent granules on a gasket, or an improperly seated canister after a change. Because the leak appeared immediately after canister replacement, the absorber seal or seating is the most likely source; cylinder yokes and pipeline quick-connects are not breathing-circuit low-pressure leak sites.",
       "citation": "CO₂ & Scavenging · Slides 4, 13 (PDF p. 2, 7)",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -1656,7 +1656,7 @@
       ],
       "explanation": "The auxiliary O2 flowmeter runs off the same pipeline O2 source, so a pipeline failure or contamination affects it too. It gives up to about 10 L/min to a cannula, mask, or Ambu bag, and it works with the circuit left intact. Automatic shutoff describes the fail-safe acting on other gases. That's why the room setup (MS MAID) includes a resuscitation bag and a separate O2 cylinder.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 44 (PDF p. 22); Monitoring · Slide 3 (PDF p. 3)",
-      "topic": "Monitoring",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
