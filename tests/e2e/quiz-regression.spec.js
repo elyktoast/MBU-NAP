@@ -1417,6 +1417,31 @@ test.describe('canonical quiz regression', () => {
     expect(result.newer.imported).toBe(1);expect(result.afterNewer).toBe('{"remote":true}');
   });
 
+  test('Newer offline local progress is not overwritten by an older higher server revision', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
+    const result=await page.evaluate(async()=>{
+      const key='SRNA_COMBINED_EXAM_SET_1_2026_V1',device=MBUSync.deviceId();
+      localStorage.setItem(key,JSON.stringify({local:'newer'}));
+      localStorage.setItem('mbu_sync_meta_v1',JSON.stringify({[key]:{revision:7,updatedAt:2000,deviceId:device,serverRevision:5}}));
+      const olderHigherServer=await MBUSync.importSnapshot({
+        app:'SRNA Study Tool',schema:1,createdAt:1000,deviceId:'other',
+        stores:{[key]:JSON.stringify({cloud:'older'})},
+        meta:{[key]:{revision:12,updatedAt:1000,deviceId:'other',serverRevision:6}}
+      });
+      const afterOlder=localStorage.getItem(key);
+      const newerHigherServer=await MBUSync.importSnapshot({
+        app:'SRNA Study Tool',schema:1,createdAt:3000,deviceId:'other',
+        stores:{[key]:JSON.stringify({cloud:'newer'})},
+        meta:{[key]:{revision:13,updatedAt:3000,deviceId:'other',serverRevision:6}}
+      });
+      return{olderHigherServer,newerHigherServer,afterOlder,afterNewer:localStorage.getItem(key)}
+    });
+    expect(result.olderHigherServer.imported).toBe(0);
+    expect(result.afterOlder).toBe(JSON.stringify({local:'newer'}));
+    expect(result.newerHigherServer.imported).toBe(1);
+    expect(result.afterNewer).toBe(JSON.stringify({cloud:'newer'}));
+  });
+
   test('Future cloud adapters can pull, merge, and push through the stable sync interface', async ({ page }) => {
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
     const result=await page.evaluate(async()=>{
