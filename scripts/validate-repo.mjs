@@ -597,8 +597,20 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const p of ['equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js'])if(!read(p).includes('touchStore'))fail(p+': save path is not sync-aware');
  const nav=read('equipment/assets/site-nav.js'),css=read('equipment/assets/app-core.css');
  if(!nav.includes('mountNav')||!core.includes('Skip to main content')||!css.includes(':focus-visible')||!css.includes('prefers-reduced-motion'))fail('Shared accessibility/tools contract is incomplete');
- for(const p of ['README.md','docs/ARCHITECTURE.md','docs/SYNC.md','docs/CONTENT_AUDIT.md','CONTRIBUTING.md'])if(!exists(p))fail('Documentation missing '+p);
+ for(const p of ['README.md','docs/ARCHITECTURE.md','docs/SYNC.md','docs/CONTENT_AUDIT.md','docs/QUESTION_GENERATION.md','CONTRIBUTING.md'])if(!exists(p))fail('Documentation missing '+p);
  if(!exists('scripts/content-integrity.mjs'))fail('Content integrity validator is missing');
+}
+
+// Question generation is scaffolded but intentionally disabled until a provider is chosen.
+{
+ const manifest=JSON.parse(read('equipment/exam-1/banks.json')),loader=read('equipment/assets/studio-loader.js'),generator=read('equipment/assets/question-generator.js'),studio=read('equipment/assets/studio-page.js'),core=read('equipment/assets/app-core.js');
+ const cfg=manifest.features?.questionGenerator;
+ if(!cfg||cfg.enabled!==false||cfg.status!=='unconfigured'||cfg.provider!==null||cfg.storageKey!=='mbu_generated_questions_v1')fail('Question generator must remain disabled/unconfigured by default');
+ for(const token of ['registerProvider','providerNames','generate','addDraft','approveDraft','rejectDraft','validateQuestion','studioQuestions'])if(!generator.includes(token))fail('Question generator framework missing '+token);
+ if(!loader.includes("runtime.loadScript('question-generator.js')"))fail('Studio loader does not load question generator framework');
+ if(!studio.includes('MBUQuestionGenerator?.enabled?.()')||!studio.includes("const key='generated',label='Generated Bank'"))fail('Studio generated-bank bridge is missing');
+ if(!core.includes('m.features?.questionGenerator?.storageKey'))fail('Generated question store is not in sync tracking');
+ if(generator.includes('ollama')||generator.includes('openai')||generator.includes('anthropic'))fail('Question generator prematurely hardcodes a provider');
 }
 
 // Accessibility release gate across shared runtimes and application shells.
