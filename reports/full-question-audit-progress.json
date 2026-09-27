@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 1732,
+    "audited": 1796,
     "bank2": [
       {
         "id": "S2-021",
@@ -7637,126 +7637,364 @@
         "id": "82",
         "set": 1,
         "disposition": "PASS"
+      },
+      {
+        "id": "83",
+        "disposition": "PASS"
+      },
+      {
+        "id": "84",
+        "disposition": "PASS"
+      },
+      {
+        "id": "85",
+        "disposition": "PASS"
+      },
+      {
+        "id": "86",
+        "disposition": "PASS"
+      },
+      {
+        "id": "87",
+        "disposition": "PASS"
+      },
+      {
+        "id": "88",
+        "disposition": "PASS"
+      },
+      {
+        "id": "89",
+        "disposition": "PASS"
+      },
+      {
+        "id": "90",
+        "disposition": "PASS"
+      },
+      {
+        "id": "91",
+        "disposition": "PASS"
+      },
+      {
+        "id": "92",
+        "disposition": "PASS"
+      },
+      {
+        "id": "93",
+        "disposition": "PASS"
+      },
+      {
+        "id": "94",
+        "disposition": "PASS"
+      },
+      {
+        "id": "95",
+        "disposition": "PASS"
+      },
+      {
+        "id": "96",
+        "disposition": "PASS"
+      },
+      {
+        "id": "97",
+        "disposition": "PASS"
+      },
+      {
+        "id": "98",
+        "disposition": "PASS"
+      },
+      {
+        "id": "99",
+        "disposition": "PASS"
+      },
+      {
+        "id": "100",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ32",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ48",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ63",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ86",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ38",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ41",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ12",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ37",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ51",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ04",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ31",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ88",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ77",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZI5",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ06",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ18",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ39",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ89",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ20",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ61",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ87",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ50",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ78",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ22",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ56",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ23",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ07",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ21",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ54",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZI4",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ62",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ09",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ76",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ42",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ34",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ83",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ30",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ90",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZI2",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ73",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ55",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ91",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ10",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ92",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ81",
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ58",
+        "disposition": "PASS"
       }
     ]
   },
-  "remaining": 268,
+  "remaining": 204,
   "lastBatch": {
     "banks": [
       "combined.json",
       "hazards.json"
     ],
     "audited": 100,
-    "combinedCount": 18,
+    "combinedCount": 0,
     "hazardsCount": 82,
     "ids": [
-      "NI19",
-      "NG16",
-      "NG32",
-      "NA08",
-      "NV22",
-      "NA09",
-      "NP03",
-      "NP06",
-      "NP01",
-      "NP08",
-      "NP10",
-      "NP04",
-      "NP07",
-      "NP11",
-      "NP02",
-      "NP12",
-      "NP09",
-      "NP05",
-      "set1:1",
-      "set1:2",
-      "set1:3",
-      "set1:4",
-      "set1:5",
-      "set1:6",
-      "set1:7",
-      "set1:8",
-      "set1:9",
-      "set1:10",
-      "set1:11",
-      "set1:12",
-      "set1:13",
-      "set1:14",
-      "set1:15",
-      "set1:16",
-      "set1:17",
-      "set1:18",
-      "set1:19",
-      "set1:20",
-      "set1:21",
-      "set1:22",
-      "set1:23",
-      "set1:24",
-      "set1:25",
-      "set1:26",
-      "set1:27",
-      "set1:28",
-      "set1:29",
-      "set1:30",
-      "set1:31",
-      "set1:32",
-      "set1:33",
-      "set1:34",
-      "set1:35",
-      "set1:36",
-      "set1:37",
-      "set1:38",
-      "set1:39",
-      "set1:40",
-      "set1:41",
-      "set1:42",
-      "set1:43",
-      "set1:44",
-      "set1:45",
-      "set1:46",
-      "set1:47",
-      "set1:48",
-      "set1:49",
-      "set1:50",
-      "set1:51",
-      "set1:52",
-      "set1:53",
-      "set1:54",
-      "set1:55",
-      "set1:56",
-      "set1:57",
-      "set1:58",
-      "set1:59",
-      "set1:60",
-      "set1:61",
-      "set1:62",
-      "set1:63",
-      "set1:64",
-      "set1:65",
-      "set1:66",
-      "set1:67",
-      "set1:68",
-      "set1:69",
-      "set1:70",
-      "set1:71",
-      "set1:72",
-      "set1:73",
-      "set1:74",
-      "set1:75",
-      "set1:76",
-      "set1:77",
-      "set1:78",
-      "set1:79",
-      "set1:80",
-      "set1:81",
-      "set1:82"
+      "83",
+      "84",
+      "85",
+      "86",
+      "87",
+      "88",
+      "89",
+      "90",
+      "91",
+      "92",
+      "93",
+      "94",
+      "95",
+      "96",
+      "97",
+      "98",
+      "99",
+      "100",
+      "83",
+      "84",
+      "85",
+      "86",
+      "87",
+      "88",
+      "89",
+      "90",
+      "91",
+      "92",
+      "93",
+      "94",
+      "95",
+      "96",
+      "97",
+      "98",
+      "99",
+      "100",
+      "HZ32",
+      "HZ48",
+      "HZ63",
+      "HZ86",
+      "HZ38",
+      "HZ41",
+      "HZ12",
+      "HZ37",
+      "HZ51",
+      "HZ04",
+      "HZ31",
+      "HZ88",
+      "HZ77",
+      "HZI5",
+      "HZ06",
+      "HZ18",
+      "HZ39",
+      "HZ89",
+      "HZ20",
+      "HZ61",
+      "HZ87",
+      "HZ50",
+      "HZ78",
+      "HZ22",
+      "HZ56",
+      "HZ23",
+      "HZ07",
+      "HZ21",
+      "HZ54",
+      "HZI4",
+      "HZ62",
+      "HZ09",
+      "HZ76",
+      "HZ42",
+      "HZ34",
+      "HZ83",
+      "HZ30",
+      "HZ90",
+      "HZI2",
+      "HZ73",
+      "HZ55",
+      "HZ91",
+      "HZ10",
+      "HZ92",
+      "HZ81",
+      "HZ58"
     ],
     "notes": [
-      "Finished the remaining 18 Combined Bank questions and audited the first 82 Hazards questions for a 100-question batch.",
-      "Hazards question IDs repeat across sets, so hazards audit progress is now tracked by set plus id to preserve the existing question IDs and distinguish each question correctly.",
-      "Corrected H1-61 because the prior key conflicted with the lecture: a double hanger yoke can permit transfilling from a higher-pressure cylinder to a lower-pressure cylinder.",
-      "Improved H1-35 to remove duplicate dead-space distractors and fixed H1-48 stem capitalization.",
-      "Reconciled the tracker summary counters to the actual per-question completion records after interrupted turns."
+      "Finished the final 18 Combined Bank questions and audited the first 82 Hazards Bank questions.",
+      "Visually verified all five image-dependent Combined Bank items in this batch: PISS valve positions, circle-system quadrants, Mapleson circuits, and the OR fire-triangle diagram.",
+      "Corrected multi-source canonical metadata in NI19, NI08, NI06, and NI09.",
+      "Corrected Hazards question 7 to avoid implying that medical air alone necessarily produces a sub-21% hypoxic mixture, clarified the related helium/air distinction in question 41, and corrected question 61's double-yoke transfilling logic.",
+      "Reconciled the audit tracker to the actual number of unique completed question IDs after interrupted prior turns."
     ]
   },
   "lastCorrection": {
