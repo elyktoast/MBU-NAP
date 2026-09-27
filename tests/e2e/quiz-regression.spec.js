@@ -1363,9 +1363,9 @@ test.describe('canonical quiz regression', () => {
     const result=await page.evaluate(async()=>{
       const key='SRNA_COMBINED_EXAM_SET_1_2026_V1',local='{"local":true}',remote='{"remote":true}',device=MBUSync.deviceId();
       localStorage.setItem(key,local);localStorage.setItem('mbu_sync_meta_v1',JSON.stringify({[key]:{revision:2,updatedAt:200,deviceId:device}}));
-      const older=await MBUSync.importSnapshot({app:'SNAR Study Tool',schema:1,createdAt:100,deviceId:'other',stores:{[key]:remote},meta:{[key]:{revision:1,updatedAt:100,deviceId:'other'}}});
+      const older=await MBUSync.importSnapshot({app:'SRNA Study Tool',schema:1,createdAt:100,deviceId:'other',stores:{[key]:remote},meta:{[key]:{revision:1,updatedAt:100,deviceId:'other'}}});
       const afterOlder=localStorage.getItem(key);
-      const newer=await MBUSync.importSnapshot({app:'SNAR Study Tool',schema:1,createdAt:300,deviceId:'other',stores:{[key]:remote},meta:{[key]:{revision:3,updatedAt:300,deviceId:'other'}}});
+      const newer=await MBUSync.importSnapshot({app:'SRNA Study Tool',schema:1,createdAt:300,deviceId:'other',stores:{[key]:remote},meta:{[key]:{revision:3,updatedAt:300,deviceId:'other'}}});
       return{older,newer,afterOlder,afterNewer:localStorage.getItem(key)}
     });
     expect(result.older.imported).toBe(0);expect(result.afterOlder).toBe('{"local":true}');
@@ -1484,7 +1484,7 @@ test.describe('canonical quiz regression', () => {
     await page.locator('[data-cloud-consent]').check();
     await page.locator('[data-cloud-signup]').click();
     await expect.poll(()=>signupCalls).toBe(1);
-    expect(signupBody.data).toMatchObject({snar_terms_version:'2026-09-27-v4',snar_privacy_version:'2026-09-27-v4',snar_adult_ack:true});
+    expect(signupBody.data).toMatchObject({snar_terms_version:'2026-09-27-v5',snar_privacy_version:'2026-09-27-v5',snar_adult_ack:true});
     expect(signupBody.data.snar_accepted_at).toBeTruthy();
     await expect(page.locator('#mbu-account-panel')).toContainText('Privacy Notice');
     await expect(page.locator('#mbu-account-panel')).toContainText('Terms of Use');
@@ -1513,7 +1513,7 @@ test.describe('canonical quiz regression', () => {
   test('Privacy Notice and Terms are publicly accessible and independently branded', async ({ page }) => {
     await page.goto('/privacy.html');
     await expect(page.getByRole('heading',{name:'Privacy Notice'})).toBeVisible();
-    await expect(page.locator('body')).toContainText('SNAR Study Tool');
+    await expect(page.locator('body')).toContainText('SRNA Study Tool');
     await page.goto('/terms.html');
     await expect(page.getByRole('heading',{name:'Terms of Use'})).toBeVisible();
     await expect(page.locator('body')).toContainText('Independent educational resource');
@@ -1767,7 +1767,7 @@ test.describe('canonical quiz regression', () => {
       localStorage.setItem(key,'{"legacyLocal":true}');
       localStorage.setItem('mbu_sync_meta_v1',JSON.stringify({[key]:{revision:9,updatedAt:500,deviceId:device}}));
       const merge=await MBUSync.importSnapshot({
-        app:'SNAR Study Tool',schema:1,createdAt:100,deviceId:'cloud',
+        app:'SRNA Study Tool',schema:1,createdAt:100,deviceId:'cloud',
         stores:{[key]:'{"olderCloud":true}'},
         meta:{[key]:{revision:2,updatedAt:100,deviceId:'cloud',serverRevision:8}}
       });
@@ -1785,7 +1785,7 @@ test.describe('canonical quiz regression', () => {
       localStorage.setItem(key,'{"local":true}');
       localStorage.setItem('mbu_sync_meta_v1',JSON.stringify({[key]:{revision:20,updatedAt:900,deviceId:device,serverRevision:4}}));
       const merge=await MBUSync.importSnapshot({
-        app:'SNAR Study Tool',schema:1,createdAt:100,deviceId:'cloud',
+        app:'SRNA Study Tool',schema:1,createdAt:100,deviceId:'cloud',
         stores:{[key]:'{"cloud":true}'},
         meta:{[key]:{revision:2,updatedAt:100,deviceId:'cloud',serverRevision:5}}
       });
@@ -1903,7 +1903,7 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('First-use legal clickwrap accepts a real pointer click and stays out of the way afterward', async ({ page }) => {
-    await page.addInitScript(()=>{if(!sessionStorage.getItem('e2e-first-use-legal')){localStorage.removeItem('snar_legal_acceptance_v4');sessionStorage.setItem('e2e-first-use-legal','1')}});
+    await page.addInitScript(()=>{if(!sessionStorage.getItem('e2e-first-use-legal')){localStorage.removeItem('snar_legal_acceptance_v5');sessionStorage.setItem('e2e-first-use-legal','1')}});
     await page.goto('/');
     await expect(page.locator('#snar-legal-gate')).toBeVisible();
     await expect(page.locator('#snar-legal-gate')).toContainText('Terms of Use');
@@ -1912,8 +1912,8 @@ test.describe('canonical quiz regression', () => {
     await expect(button).toBeEnabled();
     await button.click();
     await expect(page.locator('#snar-legal-gate')).toHaveCount(0);
-    const acceptance=await page.evaluate(()=>JSON.parse(localStorage.getItem('snar_legal_acceptance_v4')||'null'));
-    expect(acceptance?.version).toBe('2026-09-27-v4');
+    const acceptance=await page.evaluate(()=>JSON.parse(localStorage.getItem('snar_legal_acceptance_v5')||'null'));
+    expect(acceptance?.version).toBe('2026-09-27-v5');
     await page.reload();
     await expect(page.locator('#snar-legal-gate')).toHaveCount(0);
   });
