@@ -807,6 +807,9 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!core.includes("loadScript('admin-panel.js')")||!core.includes('data-admin-host'))fail('Lazy admin panel loader contract missing');
  if(!studio.includes("status.accessStatus==='active'"))fail('Adaptive Mode does not enforce active account access');
  const suspensionMigration=read('supabase/migrations/20260927100000_enforce_account_suspension_server_side.sql');
+ const syncPermissionFix=read('supabase/migrations/20260927131500_fix_sync_rls_access_wrapper.sql');
+ for(const token of ["public.snar_account_access_status()='active'","create or replace function public.mbu_sync_write_state"])if(!syncPermissionFix.includes(token))fail('Cloud sync RLS permission fix missing '+token);
+ if(syncPermissionFix.includes('private.snar_account_is_active(uid)'))fail('Cloud sync write path bypasses the public access-status wrapper');
  for(const token of ['Account access suspended','private.snar_account_is_active','users_select_own_active_sync_state','Calibration aggregates are readable by active accounts at cohort threshold'])if(!suspensionMigration.includes(token))fail('Server-side suspension contract missing '+token);
 }
 
