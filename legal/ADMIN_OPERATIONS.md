@@ -10,6 +10,7 @@ The operator-admin role is stored in a private Supabase table and checked by ser
 - Permanently delete a non-admin account after explicit confirmation.
 - Export legal-assent audit records.
 - View privacy requests and update their workflow status.
+- View anonymous-at-rest question reports, open the referenced question, and update report workflow status.
 - Run defined retention cleanup routines.
 - Verify the current admin role.
 
@@ -43,3 +44,4 @@ Administrator deletion is limited to non-admin accounts and requires explicit UI
 - **Guests active ~15m / guest sessions 24h:** approximate browser-tab sessions based on short-lived random guest session IDs; not a verified count of individual people.
 - **CAT users:** unique authenticated accounts with at least one eligible first-attempt contribution recorded with `session_mode='adaptive'`.
 - **Adaptive first attempts:** total eligible first-attempt contribution rows recorded from Adaptive Mode.
+- **Question reports / new question reports:** content-quality reports stored without submitter account identity, with workflow status managed by the operator admin.

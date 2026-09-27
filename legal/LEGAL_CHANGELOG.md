@@ -28,3 +28,10 @@
 - Preserved all prior versioned legal snapshots unchanged.
 - Kept the v4 data practices, privacy controls, retention periods, and account-administration disclosures unchanged.
 - Updated current authenticated assent to record the exact v5 Terms and Privacy document hashes.
+
+## 2026-09-27-v6
+- Moved question-report delivery from Google Apps Script into a private Supabase inbox.
+- Kept question reports anonymous at rest by not storing the submitter account identifier or email address.
+- Added operator-admin question-report review/status workflow and direct question links.
+- Added a two-year target retention cleanup for resolved question reports.
+- Updated the provider/data-flow disclosures and required renewed authenticated assent to the v6 Terms and Privacy Notice.

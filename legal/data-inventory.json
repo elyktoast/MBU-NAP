@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-27-v5",
+  "version": "2026-09-27-v6",
   "external_providers": [
     {
       "name": "Supabase",
@@ -12,7 +12,8 @@
         "legal_assent",
         "cat_calibration",
         "guest_session_metrics",
-        "suggestion_inbox"
+        "suggestion_inbox",
+        "question_reports"
       ]
     },
     {
@@ -20,13 +21,6 @@
       "purposes": [
         "static_hosting",
         "deployment"
-      ]
-    },
-    {
-      "name": "Google Apps Script",
-      "host": "script.google.com",
-      "purposes": [
-        "question_reports"
       ]
     }
   ],
@@ -85,5 +79,17 @@
     "stored_account_identifier": false,
     "admin_visibility": "suggestion content and workflow status only",
     "max_message_characters": 1500
+  },
+  "question_report_inbox": {
+    "requires_authenticated_active_account": true,
+    "stored_account_identifier": false,
+    "admin_visibility": "question context, report content, and workflow status only",
+    "statuses": [
+      "new",
+      "reviewing",
+      "fixed",
+      "declined"
+    ],
+    "resolved_target_retention_years": 2
   }
 }

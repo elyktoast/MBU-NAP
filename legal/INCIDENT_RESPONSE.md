@@ -41,4 +41,4 @@ Record:
 - new CI/security controls needed to prevent recurrence.
 
 ## Provider contacts
-Use the provider administration consoles and published security/support channels for Supabase, GitHub, and Google Apps Script/Google Workspace as applicable. Do not place private credentials in this repository.
+Use the provider administration consoles and published security/support channels for Supabase and GitHub as applicable. Do not place private credentials in this repository.

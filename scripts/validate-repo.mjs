@@ -776,10 +776,10 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const boot=read('equipment/assets/build-bootstrap.js'),gate=read('equipment/assets/legal-gate.js'),cloud=read('equipment/assets/supabase-sync.js'),core=read('equipment/assets/app-core.js');
  if(!boot.includes("loadScript('legal-gate.js')")||!boot.includes('SRNALegalReady'))fail('Versioned legal gate is not enforced by the shared bootstrap');
- for(const token of ["VERSION='2026-09-27-v5'",'I agree to the','Terms of Use','Privacy Notice','localStorage.setItem(KEY','data-legal-continue','pointer-events:auto'])if(!gate.includes(token))fail('Legal gate missing '+token);
+ for(const token of ["VERSION='2026-09-27-v6'",'I agree to the','Terms of Use','Privacy Notice','localStorage.setItem(KEY','data-legal-continue','pointer-events:auto'])if(!gate.includes(token))fail('Legal gate missing '+token);
  if(boot.includes('html[data-mbu-boot="loading"] body{pointer-events:none}'))fail('Legal gate is blocked by bootstrap pointer-events');
  if(!boot.includes('body>#srna-legal-gate{pointer-events:auto}'))fail('Bootstrap does not keep the legal gate interactive while loading');
- for(const token of ["LEGAL_VERSION='2026-09-27-v5'","LEGAL_TERMS_VERSION=LEGAL_VERSION","LEGAL_PRIVACY_VERSION=LEGAL_VERSION",'snar_terms_version:LEGAL_TERMS_VERSION','snar_privacy_version:LEGAL_PRIVACY_VERSION','snar_adult_ack:true','snar_has_current_legal_acceptance','snar_accept_current_legal','acceptCurrentLegal','legalAccepted','refreshCalibration(true)'])if(!cloud.includes(token))fail('Account legal acknowledgement contract missing '+token);
+ for(const token of ["LEGAL_VERSION='2026-09-27-v6'","LEGAL_TERMS_VERSION=LEGAL_VERSION","LEGAL_PRIVACY_VERSION=LEGAL_VERSION",'snar_terms_version:LEGAL_TERMS_VERSION','snar_privacy_version:LEGAL_PRIVACY_VERSION','snar_adult_ack:true','snar_has_current_legal_acceptance','snar_accept_current_legal','acceptCurrentLegal','legalAccepted','refreshCalibration(true)'])if(!cloud.includes(token))fail('Account legal acknowledgement contract missing '+token);
  if(!core.includes('data-cloud-reaccept')||!core.includes('Updated account agreement required')||!core.includes("info.legalAccepted!==true?'Action required'")||!core.includes('data-cloud-legal-required'))fail('Authenticated legal re-acceptance UI/state handling is missing');
 }
 
@@ -787,7 +787,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const core=read('equipment/assets/app-core.js'),cloud=read('equipment/assets/supabase-sync.js'),privacy=read('privacy.html'),terms=read('terms.html'),home=read('index.html');
  for(const token of ['Privacy Notice','Terms of Use','data-cloud-consent','at least 18','data-cloud-delete-account','data-privacy-submit'])if(!core.includes(token))fail('Account legal/privacy UI missing '+token);
- for(const token of ['deleteAccount','/functions/v1/delete-account','submitPrivacyRequest','/rest/v1/snar_privacy_requests'])if(!cloud.includes(token))fail('Privacy/account backend client missing '+token);
+ for(const token of ['deleteAccount','/functions/v1/delete-account','submitPrivacyRequest','/rest/v1/snar_privacy_requests','submitQuestionReport','snar_submit_question_report'])if(!cloud.includes(token))fail('Privacy/account backend client missing '+token);
  for(const token of ['Guest use','Adaptive Mode','Question reports','Privacy requests','does not sell personal data','at least 18 years old'])if(!privacy.includes(token))fail('Privacy Notice missing '+token);
  for(const token of ['Independent educational resource','Educational use only','Adaptive Mode','No guarantee','Privacy Notice'])if(!terms.includes(token))fail('Terms of Use missing '+token);
  if(!home.includes('href="privacy.html"')||!home.includes('href="terms.html"'))fail('Home footer does not link Privacy and Terms');
@@ -796,20 +796,24 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 // Legal/admin operations must match the current disclosures and immutable snapshots.
 {
  const hash=p=>createHash('sha256').update(read(p),'utf8').digest('hex');
- for(const version of ['2026-09-27-v2','2026-09-27-v3','2026-09-27-v4','2026-09-27-v5']){
+ for(const version of ['2026-09-27-v2','2026-09-27-v3','2026-09-27-v4','2026-09-27-v5','2026-09-27-v6']){
    const base='legal/versions/'+version+'/',manifest=JSON.parse(read(base+'manifest.json'));
    if(manifest.legal_version!==version)fail(version+': legal manifest version mismatch');
    if(hash(base+'terms.html')!==manifest.terms_sha256)fail(version+': Terms snapshot hash mismatch');
    if(hash(base+'privacy.html')!==manifest.privacy_sha256)fail(version+': Privacy snapshot hash mismatch');
  }
- const current=JSON.parse(read('legal/versions/2026-09-27-v5/manifest.json'));
- if(hash('terms.html')!==current.terms_sha256||hash('privacy.html')!==current.privacy_sha256)fail('Current legal pages differ from archived v5 snapshot');
+ const current=JSON.parse(read('legal/versions/2026-09-27-v6/manifest.json'));
+ if(hash('terms.html')!==current.terms_sha256||hash('privacy.html')!==current.privacy_sha256)fail('Current legal pages differ from archived v6 snapshot');
  for(const p of ['legal/LEGAL_CHANGELOG.md','legal/INCIDENT_RESPONSE.md','legal/RETENTION_SCHEDULE.md','legal/DATA_INVENTORY.md','legal/PROVIDERS.md','legal/ADMIN_OPERATIONS.md','legal/data-inventory.json'])if(!exists(p))fail('Legal operations file missing '+p);
  const inv=JSON.parse(read('legal/data-inventory.json'));
- if(inv.version!=='2026-09-27-v5'||inv.guest_session?.retention_hours!==24||inv.guest_session?.persistent_cross_session!==false)fail('Machine-readable guest metric inventory is incomplete');
+ if(inv.version!=='2026-09-27-v6'||inv.guest_session?.retention_hours!==24||inv.guest_session?.persistent_cross_session!==false)fail('Machine-readable guest metric inventory is incomplete');
  const privacy=read('privacy.html'),terms=read('terms.html'),cloud=read('equipment/assets/supabase-sync.js'),core=read('equipment/assets/app-core.js'),adminPanel=read('equipment/assets/admin-panel.js'),studio=read('equipment/assets/studio-page.js');
- for(const token of ['random session identifier','approximately 24 hours','operator-admin','raw first-attempt CAT contribution rows'])if(!privacy.includes(token))fail('Privacy v5 disclosure missing '+token);
- for(const token of ['Account access, suspension, and termination','suspended or re-granted'])if(!terms.includes(token))fail('Terms v5 account-access disclosure missing '+token);
+ for(const token of ['random session identifier','approximately 24 hours','operator-admin','raw first-attempt CAT contribution rows'])if(!privacy.includes(token))fail('Privacy v6 disclosure missing '+token);
+ if(privacy.includes('Google Apps Script'))fail('Current Privacy Notice still names retired Google Apps Script reporting');
+ if(!privacy.includes('private Supabase table')||!privacy.includes('two years'))fail('Privacy v6 question-report disclosure is incomplete');
+ if((inv.external_providers||[]).some(x=>x.name==='Google Apps Script'))fail('Data inventory still lists retired Google Apps Script provider');
+ if(!inv.question_report_inbox||inv.question_report_inbox.stored_account_identifier!==false)fail('Question-report data inventory is incomplete');
+ for(const token of ['Account access, suspension, and termination','suspended or re-granted'])if(!terms.includes(token))fail('Terms v6 account-access disclosure missing '+token);
  for(const token of ['snar_guest_heartbeat','snar_account_access_status','adminStatus','adminRpc','guestSessionId','accountAccess'])if(!cloud.includes(token))fail('Admin/guest client contract missing '+token);
  for(const token of ['Admin & Compliance','data-admin-stats','data-admin-accounts','data-admin-delete-account','Guests active ~15m','CAT users'])if(!adminPanel.includes(token))fail('Admin dashboard contract missing '+token);
  if(!core.includes("loadScript('admin-panel.js')")||!core.includes('data-admin-host'))fail('Lazy admin panel loader contract missing');

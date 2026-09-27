@@ -80,7 +80,7 @@ Purpose: question testing/validation and Adaptive Mode calibration.
 The aggregate does not contain name, email, password, device identity, or account ID. SRNA Study Tool publicly commits not to re-identify this data.
 
 ### Question reports
-Delivered through Google Apps Script:
+Submitted by an authenticated active account to a private Supabase question-report inbox:
 - question identifier/context;
 - issue category;
 - free-text comment;

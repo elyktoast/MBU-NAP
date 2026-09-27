@@ -13,12 +13,12 @@
 | Population item calibration | Server aggregation | Improve item difficulty estimates | Supabase aggregate table | Signed-in clients only at 25+ unique contributors; operator | Aggregate retention policy |
 | Legal assent | Authenticated account | Evidence of Terms/Privacy assent | Private Supabase ledger | Operator admin through restricted RPC; not normal users | Pseudonymous record retained to defined legal-record date |
 | Privacy request | Signed-in user | Access/correction/deletion/appeal handling | Supabase | Requesting user under RLS; operator admin through restricted RPC | Retention schedule |
-| Question report | User report form | Investigate question/content issues | Google Apps Script / operator report sheet/email | Operator | Retention schedule |
+| Question report | Authenticated active-account report form | Investigate question/content issues | Private Supabase table | Operator admin sees report content/status; submitter identity is not stored in the report row | Resolved reports target max 2 years unless still needed for an active quality/security/dispute/legal matter |
 | Static site request metadata | Browser/network | Website delivery/security | GitHub Pages and network providers | Provider according to its systems | Provider-controlled |
 | Security/diagnostic information | Browser/operator/provider | Troubleshooting and security | Local diagnostics and provider logs | User/operator/provider as applicable | Purpose/provider retention |
 
 ## Prohibited/intentionally excluded data
-SNAR Study Tool is not designed to collect patient-identifiable information, protected health information, school education records, grades, government identifiers, precise geolocation, payment-card data, or sensitive demographic profiles.
+SRNA Study Tool is not designed to collect patient-identifiable information, protected health information, school education records, grades, government identifiers, precise geolocation, payment-card data, or sensitive demographic profiles.
 
 ## Change-control rule
 A feature that adds a new data category, external recipient, tracking technology, advertising use, school/clinical relationship, or materially different purpose requires updating this inventory and reviewing the Privacy Notice before deployment.

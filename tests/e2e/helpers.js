@@ -12,14 +12,14 @@ async function clearAppState(page) {
   );
   await page.addInitScript(() => {
     const now=Math.floor(Date.now()/1000);
-    localStorage.setItem('snar_legal_acceptance_v5', JSON.stringify({version:'2026-09-27-v5',acceptedAt:new Date().toISOString()}));
+    localStorage.setItem('snar_legal_acceptance_v6', JSON.stringify({version:'2026-09-27-v6',acceptedAt:new Date().toISOString()}));
   });
   await page.goto(exam + '/index.html');
   await page.evaluate(() => window.MBUPageReady);
   await page.evaluate(() => {
-    const legal=localStorage.getItem('snar_legal_acceptance_v5');
+    const legal=localStorage.getItem('snar_legal_acceptance_v6');
     localStorage.clear();sessionStorage.clear();
-    if(legal)localStorage.setItem('snar_legal_acceptance_v5',legal);
+    if(legal)localStorage.setItem('snar_legal_acceptance_v6',legal);
   });
 }
 
