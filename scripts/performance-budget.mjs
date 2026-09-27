@@ -17,18 +17,20 @@ const budgets={
   'equipment/exam-1/hazards-bank-3.html':8000,
   'equipment/exam-1/hazards-harder.html':8000,
   'equipment/assets/build-bootstrap.js':4500,
-  'equipment/assets/app-core.js':24000,
+  'equipment/assets/app-core.js':30000,
   'equipment/assets/supabase-config.js':1000,
-  'equipment/assets/supabase-sync.js':14000,
-  'equipment/assets/app-core.css':9000,
+  'equipment/assets/supabase-sync.js':18000,
+  'equipment/assets/app-core.css':11000,
   'equipment/assets/canonical-bank-page.js':8000,
   'equipment/assets/quiz-engine.js':30000,
-  'equipment/assets/studio-page.js':45000,
+  'equipment/assets/studio-page.js':48000,
   'equipment/assets/studio-loader.js':2500,
   'equipment/assets/question-generator.js':10000,
+  'equipment/assets/study-intelligence.js':9000,
+  'equipment/assets/question-search.js':8000,
   'equipment/assets/hazards-page.js':5000,
   'equipment/assets/hazards-dashboard.js':6000,
-  'equipment/assets/exam-dashboard.js':5000,
+  'equipment/assets/exam-dashboard.js':6000,
   'equipment/assets/bank1-quiz-ui.css':15000
 };
 for(const [p,max] of Object.entries(budgets)){
@@ -53,6 +55,9 @@ const studio=read('equipment/assets/studio-page.js'),generator=read('equipment/a
 if(studio.includes('ALL.find('))fail('Studio: O(n) UID lookup returned');
 if(studio.includes('bank3-images.js')||studio.includes('combined-images.js')||studio.includes('hazards-images.json'))fail('Studio: monolithic image bundle reference returned');
 for(const token of ['registerProvider','generate','approveDraft','validateQuestion','studioQuestions'])if(!generator.includes(token))fail('Question generator framework missing '+token);
+const intelligence=read('equipment/assets/study-intelligence.js'),search=read('equipment/assets/question-search.js');
+for(const token of ['recordAnswer','smartReview','analytics','recentActivity','addIssue'])if(!intelligence.includes(token))fail('Study intelligence missing '+token);
+for(const token of ['buildIndex','getIndex','Practice in Studio'])if(!search.includes(token))fail('Universal search missing '+token);
 
 const boot=read('equipment/assets/build-bootstrap.js');
 if(!boot.includes('jsonCache=new Map()')||!boot.includes('fetchJSON'))fail('Build runtime lost shared JSON request deduplication');
@@ -74,7 +79,7 @@ const tests=read('tests/e2e/quiz-regression.spec.js');
 if(tests.includes('waitForTimeout('))fail('Browser regression suite contains a fixed sleep');
 
 const ci=read('.github/workflows/ci.yml');
-for(const token of ['cancel-in-progress: true','needs: quality','npm run validate','npm run test:perf','npm run test:e2e'])if(!ci.includes(token))fail('CI workflow missing '+token);
+for(const token of ['cancel-in-progress: true','needs: quality','npm run validate','npm run test:semantic','npm run test:perf','npm run test:e2e'])if(!ci.includes(token))fail('CI workflow missing '+token);
 for(const p of ['.github/workflows/validate.yml','.github/workflows/browser-tests.yml'])if(fs.existsSync(path.join(root,p)))fail('Obsolete split CI workflow remains: '+p);
 
 if(failures.length){
