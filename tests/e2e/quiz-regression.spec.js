@@ -1650,7 +1650,7 @@ test.describe('canonical quiz regression', () => {
 
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     await page.evaluate(()=>{document.querySelectorAll('#sourceChecks input[type=checkbox]').forEach((x,i)=>x.checked=i===0)});
-    await page.locator('#adaptiveToggle').check();
+    await page.locator('#adaptiveToggle').click();
     await expect(page.locator('#adaptiveToggle')).not.toBeChecked();
     await expect(page.locator('#mbu-account-panel')).toHaveClass(/open/);
   });
