@@ -44,7 +44,9 @@ function recordAnswer(bank,q,ok,extra={}){
   const days=reviewInterval(next,!!ok);d.reviews[meta.uid]={uid:meta.uid,dueAt:t+days*DAY,intervalDays:days,lastAt:t,lastCorrect:!!ok};
   d.activity.push({id:meta.uid+':'+t,at:t,type:'answer',uid:meta.uid,bank:meta.bank,bankLabel:meta.bankLabel,topic:meta.topic,ok:!!ok,href:meta.href});
   if(d.activity.length>MAX_ACTIVITY)d.activity.splice(0,d.activity.length-MAX_ACTIVITY);
-  save(d);return next
+  save(d);
+  window.MBUSupabase?.submitItemContribution?.(meta.uid,!!ok,extra.responseMs??null,extra.sessionMode||'unknown')?.catch?.(()=>{});
+  return next
 }
 function seedLegacy(records=[]){
   const d=db();if(d.seededLegacy)return false;let changed=false;
