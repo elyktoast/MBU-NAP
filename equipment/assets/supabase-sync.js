@@ -67,7 +67,7 @@ async function signIn(email,password){
 }
 async function signUp(email,password,accepted=false){
   if(accepted!==true)throw Error('You must confirm that you are 18+ and agree to the Terms and Privacy Notice before creating an account.');
-  const acceptedAt=new Date().toISOString();emit('signing-up');const data=await raw('/auth/v1/signup?redirect_to='+encodeURIComponent(APP_ROOT),{method:'POST',body:{email:String(email||'').trim(),password:String(password||''),data:{snar_terms_version:'2026-09-27',snar_privacy_version:'2026-09-27',snar_adult_ack:true,snar_accepted_at:acceptedAt}}}),s=normalizeAuth(data);
+  const acceptedAt=new Date().toISOString();emit('signing-up');const data=await raw('/auth/v1/signup?redirect_to='+encodeURIComponent(APP_ROOT),{method:'POST',body:{email:String(email||'').trim(),password:String(password||''),data:{snar_terms_version:'2026-09-27-v2',snar_privacy_version:'2026-09-27-v2',snar_adult_ack:true,snar_accepted_at:acceptedAt}}}),s=normalizeAuth(data);
   if(s){saveSession(s);emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});startAutoSync();return{session:s,confirmationRequired:false}}
   emit('confirmation-required',{email:String(email||'').trim()});return{session:null,confirmationRequired:true}
 }
