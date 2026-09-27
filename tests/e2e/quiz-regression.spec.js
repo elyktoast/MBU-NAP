@@ -1804,4 +1804,19 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#progress')).toContainText('Question 5 of 100');
   });
 
+  test('Advanced Hazards attempts preserve topic metadata in shared analytics', async ({ page }) => {
+    await page.goto(exam + '/hazards-bank-3.html');await page.evaluate(() => MBUPageReady);
+    const result=await page.evaluate(()=>{
+      MBUStudyIntelligence.clearAll();
+      const q=BANK[0];
+      MBUStudyIntelligence.recordAnswer('h3',q,false,{bankLabel:'Workstation Hazards',set:q.set,questionId:q.id});
+      const summary=MBUStudyIntelligence.summary();
+      return{topic:q.topic,topics:Object.keys(summary.byTopic),banks:Object.keys(summary.byBank)};
+    });
+    expect(result.topic).toBeTruthy();
+    expect(result.topic).not.toBe('Other');
+    expect(result.topics).toContain(result.topic);
+    expect(result.banks).toContain('Workstation Hazards');
+  });
+
 });
