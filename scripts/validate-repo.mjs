@@ -778,6 +778,19 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(report?.duplicates?.crossBankExactGroups!==0||report?.duplicates?.confirmedSamePoolKeyConflicts?.length!==0)fail('Phase 1 audit report contains unresolved exact cross-bank/key conflicts');
 }
 
+// Phase 3-5 content rebuild is a release contract.
+{
+ const report=JSON.parse(read('reports/content-phase3-5-audit.json'));
+ if(report?.scope?.questions!==2000)fail('Phase 3-5 audit scope is invalid');
+ if(report?.changes?.sourceGroundedReplacementQuestions!==86||report?.changes?.bank1SameSetDuplicatesReplaced!==21||report?.changes?.hazardsSet2RepeatedSlotsRebuilt!==65)fail('Phase 3-5 replacement counts are invalid');
+ if(report?.finalChecks?.missingRequiredFields!==0)fail('Phase 3-5 audit reports missing required content');
+ if((report?.finalChecks?.sameSetDuplicateGroups||[]).length!==0)fail('Phase 3-5 audit reports unresolved same-set duplicates');
+ if((report?.finalChecks?.sameStemSameOptionPoolKeyConflicts||[]).length!==0)fail('Phase 3-5 audit reports unresolved answer-key conflicts');
+ if(report?.finalChecks?.hazardsSet2Questions!==100||report?.finalChecks?.hazardsSet2UniqueNormalizedStems!==100)fail('Hazards Set 2 uniqueness contract failed');
+ const baseline=JSON.parse(read('scripts/content-integrity-baseline.json'));
+ if((baseline?.knownDuplicateStems?.['bank1.json']||[]).length||(baseline?.knownDuplicateStems?.['hazards.json']||[]).length)fail('Resolved duplicate baselines were reintroduced');
+}
+
 // Semantic content checking is mandatory in quality CI.
 {
  const pkg=JSON.parse(read('package.json')),ci=read('.github/workflows/ci.yml');
