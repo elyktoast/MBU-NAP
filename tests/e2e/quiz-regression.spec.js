@@ -2104,17 +2104,17 @@ test.describe('canonical quiz regression', () => {
   test('First-use legal clickwrap accepts a real pointer click and stays out of the way afterward', async ({ page }) => {
     await page.addInitScript(()=>{if(!sessionStorage.getItem('e2e-first-use-legal')){localStorage.removeItem('snar_legal_acceptance_v5');sessionStorage.setItem('e2e-first-use-legal','1')}});
     await page.goto('/');
-    await expect(page.locator('#snar-legal-gate')).toBeVisible();
-    await expect(page.locator('#snar-legal-gate')).toContainText('Terms of Use');
-    await expect(page.locator('#snar-legal-gate')).toContainText('Privacy Notice');
+    await expect(page.locator('#srna-legal-gate')).toBeVisible();
+    await expect(page.locator('#srna-legal-gate')).toContainText('Terms of Use');
+    await expect(page.locator('#srna-legal-gate')).toContainText('Privacy Notice');
     const button=page.locator('[data-legal-continue]');
     await expect(button).toBeEnabled();
     await button.click();
-    await expect(page.locator('#snar-legal-gate')).toHaveCount(0);
+    await expect(page.locator('#srna-legal-gate')).toHaveCount(0);
     const acceptance=await page.evaluate(()=>JSON.parse(localStorage.getItem('snar_legal_acceptance_v5')||'null'));
     expect(acceptance?.version).toBe('2026-09-27-v5');
     await page.reload();
-    await expect(page.locator('#snar-legal-gate')).toHaveCount(0);
+    await expect(page.locator('#srna-legal-gate')).toHaveCount(0);
   });
 
   test('Account panel separates sign in and account creation cleanly', async ({ page }) => {
