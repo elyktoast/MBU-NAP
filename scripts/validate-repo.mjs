@@ -898,6 +898,12 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ['submitQuestionReport','snar_submit_question_report','snar_admin_question_reports','snar_admin_update_question_report'])if(!read('equipment/assets/supabase-sync.js').includes(token)&&!read('equipment/assets/admin-panel.js').includes(token))fail('Private question-report inbox contract missing '+token);
 }
 
+// Phase 3 report workflow indexes must remain in production history.
+{
+ const migration=read('supabase/migrations/20260927233103_index_question_report_workflows.sql');
+ for(const token of ['snar_question_reports_question_uid_idx','snar_question_reports_status_updated_idx','private.snar_question_reports(question_uid)','private.snar_question_reports(status,updated_at)'])if(!migration.includes(token))fail('Question-report scale index migration missing '+token);
+}
+
 // Phase 3 content-review queue must stay deterministic and source-preserving.
 {
  for(const p of ['scripts/question-review-queue.mjs','reports/question-content-review.json'])if(!exists(p))fail('Phase 3 content-review queue missing '+p);

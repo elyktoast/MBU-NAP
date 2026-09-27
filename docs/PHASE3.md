@@ -84,3 +84,12 @@ Study Studio form controls now use programmatic labels for quiz count and order,
 ## Retention audit visibility
 
 The admin retention-cleanup result now reports resolved question-report deletions alongside sync history, privacy requests, expired legal records, and guest sessions. Browser regression coverage verifies that all retention categories returned by the server are surfaced to the operator.
+
+## Report-workflow scale hardening
+
+Private question reports now have targeted indexes for question-level analytics and retention/workflow filtering:
+
+- `question_uid` for grouping/linking report history to analytics;
+- `status, updated_at` for workflow ordering and retention cleanup.
+
+The indexes are private database infrastructure and do not expose additional data.
