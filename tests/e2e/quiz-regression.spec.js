@@ -1551,6 +1551,43 @@ test.describe('canonical quiz regression', () => {
     expect(meta.dirty).toBe(false);
   });
 
+  test('Concurrent cloud conflict retries once and only reports synced after acknowledgement', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co',writes=[];
+    const now=new Date().toISOString();
+    let remote={store_key:'mbu_exam1_studio_v1',payload:{remote:true},device_id:'other',client_revision:2,client_updated_at:now,server_revision:5,server_updated_at:now};
+    await page.addInitScript(()=>{
+      const now=Math.floor(Date.now()/1000);
+      localStorage.setItem('mbu_supabase_session_v1',JSON.stringify({access_token:'conflict-access',refresh_token:'conflict-refresh',expires_at:now+3600,user:{id:'00000000-0000-0000-0000-000000000001',email:'conflict@example.com'}}));
+    });
+    await page.route(cloud+'/rest/v1/rpc/snar_account_access_status',route=>route.fulfill({status:200,contentType:'application/json',body:'"active"'}));
+    await page.route(cloud+'/rest/v1/rpc/snar_admin_status',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({is_admin:false,role:null})}));
+    await page.route(cloud+'/rest/v1/mbu_item_calibration?*',route=>route.fulfill({status:200,contentType:'application/json',body:'[]'}));
+    await page.route(cloud+'/rest/v1/mbu_sync_state?*',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify([remote])}));
+    await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>route.fulfill({status:201,contentType:'application/json',body:''}));
+    await page.route(cloud+'/rest/v1/rpc/mbu_sync_write_state',route=>{
+      const body=JSON.parse(route.request().postData()||'{}');writes.push(body);
+      if(writes.length===1){
+        remote={...remote,payload:{otherDeviceWon:true},server_revision:6,client_revision:3,client_updated_at:new Date().toISOString()};
+        return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({applied:false,row:remote})});
+      }
+      remote={store_key:body.p_store_key,payload:body.p_payload,device_id:body.p_device_id,client_revision:body.p_client_revision,client_updated_at:body.p_client_updated_at,server_revision:7,server_updated_at:new Date().toISOString()};
+      return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({applied:true,row:remote})});
+    });
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);await waitForAuth(page);
+    await page.evaluate(()=>{
+      localStorage.setItem('mbu_exam1_studio_v1',JSON.stringify({localDirty:true}));
+      MBUAppCore.touchStore('mbu_exam1_studio_v1');
+    });
+    await page.evaluate(()=>MBUSupabase.syncNow());
+    expect(writes).toHaveLength(2);
+    expect(writes[0].p_expected_server_revision).toBe(5);
+    expect(writes[1].p_expected_server_revision).toBe(6);
+    const meta=await page.evaluate(()=>JSON.parse(localStorage.getItem('mbu_sync_meta_v1')||'{}').mbu_exam1_studio_v1);
+    expect(meta.dirty).toBe(false);
+    expect(meta.serverRevision).toBe(7);
+    expect(await page.evaluate(()=>MBUSupabase.status().state)).toBe('synced');
+  });
+
   test('Switching accounts clears the previous account local study stores before cloud sync', async ({ page }) => {
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co',newId='00000000-0000-0000-0000-000000000002';
     await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'switch-access',refresh_token:'switch-refresh',expires_in:3600,user:{id:newId,email:'second@example.com'}})}));
