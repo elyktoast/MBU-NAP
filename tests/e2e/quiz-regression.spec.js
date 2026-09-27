@@ -1725,7 +1725,8 @@ test.describe('canonical quiz regression', () => {
       const start=MBUAdaptiveQuiz.start([easy,hard,{uid:'adaptive-new',bank:'b2',topic:'Airway',set:1,stem:'New',ans:[0]}],3);
       const up=MBUAdaptiveQuiz.advance(start.state,start.question,true);
       const down=MBUAdaptiveQuiz.advance(up,start.question,false);
-      return{easy:MBUAdaptiveQuiz.challenge(easy),hard:MBUAdaptiveQuiz.challenge(hard),startTheta:start.state.theta,upTheta:up.theta,downTheta:down.theta,startLevel:start.state.level,upLevel:up.level,downLevel:down.level,seen:start.state.seenUids,seStart:start.state.se,seUp:up.se,seDown:down.se};
+      const frozen=MBUAdaptiveQuiz.advance({...start.state,currentDifficulty:-2,currentChallenge:1},start.question,false);
+      return{easy:MBUAdaptiveQuiz.challenge(easy),hard:MBUAdaptiveQuiz.challenge(hard),startTheta:start.state.theta,upTheta:up.theta,downTheta:down.theta,startLevel:start.state.level,upLevel:up.level,downLevel:down.level,seen:start.state.seenUids,seStart:start.state.se,seUp:up.se,seDown:down.se,startProbability:start.probability,frozenDifficulty:frozen.path.at(-1).difficulty};
     });
     expect(out.hard).toBeGreaterThan(out.easy);
     expect(out.startTheta).toBeCloseTo(0,5);
@@ -1735,6 +1736,8 @@ test.describe('canonical quiz regression', () => {
     expect(out.seen).toHaveLength(1);
     expect(out.seUp).toBeLessThan(out.seStart);
     expect(out.seDown).toBeLessThanOrEqual(out.seUp);
+    expect(out.startProbability).toBeCloseTo(0.5,1);
+    expect(out.frozenDifficulty).toBe(-2);
   });
 
   test('Adaptive session toggle is opt-in, forward-only, and survives reload with its level', async ({ page }) => {
