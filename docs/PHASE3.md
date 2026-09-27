@@ -1,6 +1,6 @@
 # Phase 3: Validate + Intelligence + Scale
 
-Phase 3 starts from the green Phase 2 stable baseline.
+Phase 3 started from the green Phase 2 stable baseline and is now complete.
 
 ## Workstreams
 
@@ -93,3 +93,27 @@ Private question reports now have targeted indexes for question-level analytics 
 - `status, updated_at` for workflow ordering and retention cleanup.
 
 The indexes are private database infrastructure and do not expose additional data.
+
+## Stable baseline verification
+
+Phase 3 is considered complete only when the same final commit passes:
+
+- repository architecture validation;
+- 2,000-question content integrity;
+- semantic content audit;
+- performance/architecture budgets;
+- question-bank balance analysis;
+- deterministic content-review queue validation;
+- full browser regression;
+- GitHub Pages deployment;
+- production migration-history alignment and database-invariant checks.
+
+The production database currently has no orphan admin/sync/access rows and no expired guest, legal, privacy-request, or resolved-question-report records waiting for cleanup. The checked-in migration directory mirrors production migration history.
+
+## Current calibration limitation
+
+Population calibration is still early by design. At the Phase 3 baseline, no item has reached the 25-learner threshold, so population difficulty remains inactive in Adaptive selection. The application will begin using population difficulty automatically only as individual items reach the documented maturity thresholds.
+
+## External Supabase setting
+
+Supabase Security Advisor still reports leaked-password protection as disabled. This is an Auth project setting rather than repository code, and the connected Supabase tools available to this project do not expose a control to enable it. The setting should be enabled in Supabase Auth settings when available; the repository must not claim it is enabled until the advisor confirms it.

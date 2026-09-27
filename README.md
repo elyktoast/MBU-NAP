@@ -2,7 +2,7 @@
 
 ## Release status
 
-**Stable 1.x / Phase 2 improvement pass complete** — canonical quiz runtimes, balanced answer presentation, duplicate-aware Studio/Adaptive sessions, refined adaptive selection, cumulative Weak Areas, private in-app question reporting, responsive mobile layouts, local-first persistence, Supabase cross-device sync, diagnostics, accessibility guardrails, and automated release gates are in place.
+**Stable 1.x / Phase 3 validation, intelligence, and scale pass complete** — canonical quiz runtimes, balanced answer presentation, duplicate-aware Studio/Adaptive sessions, conservative CAT calibration gates, cumulative Weak Areas, Review Next guidance, private in-app question reporting, operator question/mode/trend analytics, deterministic content-review queues, responsive mobile layouts, local-first persistence, Supabase cross-device sync, retention visibility, accessibility guardrails, and automated release gates are in place.
 
 SRNA Study Tool is a local-first study application for the nurse anesthesia equipment question banks.
 
@@ -19,4 +19,4 @@ SRNA Study Tool is a local-first study application for the nurse anesthesia equi
 - CI validates architecture, structural and semantic content integrity, performance budgets, and browser regressions before a change is considered healthy.
 - The checked-in Supabase migration directory mirrors the production migration history; applied migrations are not renamed or rewritten.
 
-See [Phase 2](docs/PHASE2.md), [Architecture](docs/ARCHITECTURE.md), [Study intelligence](docs/STUDY_INTELLIGENCE.md), [Sync and backups](docs/SYNC.md), [Content quality audit](docs/CONTENT_AUDIT.md), [Phase 1 content-quality report](docs/CONTENT_QUALITY_PHASE1.md), [Question generation framework](docs/QUESTION_GENERATION.md), and [Contributing](CONTRIBUTING.md).
+See [Phase 3](docs/PHASE3.md), [Phase 2](docs/PHASE2.md), [Architecture](docs/ARCHITECTURE.md), [Study intelligence](docs/STUDY_INTELLIGENCE.md), [Sync and backups](docs/SYNC.md), [Content quality audit](docs/CONTENT_AUDIT.md), [Phase 1 content-quality report](docs/CONTENT_QUALITY_PHASE1.md), [Question generation framework](docs/QUESTION_GENERATION.md), and [Contributing](CONTRIBUTING.md).
