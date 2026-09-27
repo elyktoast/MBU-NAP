@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 966,
+    "audited": 1066,
     "bank2": [
       {
         "id": "S2-021",
@@ -2185,6 +2185,436 @@
       },
       {
         "id": "374",
+        "disposition": "PASS"
+      },
+      {
+        "id": "375",
+        "disposition": "PASS"
+      },
+      {
+        "id": "376",
+        "disposition": "PASS"
+      },
+      {
+        "id": "377",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed unsupported pH-shift/rapid-repurple details and kept the regeneration question to the lecture's stated limitations."
+        ]
+      },
+      {
+        "id": "378",
+        "disposition": "PASS"
+      },
+      {
+        "id": "379",
+        "disposition": "PASS"
+      },
+      {
+        "id": "380",
+        "disposition": "PASS"
+      },
+      {
+        "id": "381",
+        "disposition": "PASS"
+      },
+      {
+        "id": "382",
+        "disposition": "PASS"
+      },
+      {
+        "id": "384",
+        "disposition": "PASS"
+      },
+      {
+        "id": "385",
+        "disposition": "PASS"
+      },
+      {
+        "id": "386",
+        "disposition": "PASS"
+      },
+      {
+        "id": "387",
+        "disposition": "PASS"
+      },
+      {
+        "id": "388",
+        "disposition": "PASS"
+      },
+      {
+        "id": "389",
+        "disposition": "PASS"
+      },
+      {
+        "id": "390",
+        "disposition": "PASS"
+      },
+      {
+        "id": "391",
+        "disposition": "PASS"
+      },
+      {
+        "id": "392",
+        "disposition": "PASS"
+      },
+      {
+        "id": "393",
+        "disposition": "PASS"
+      },
+      {
+        "id": "394",
+        "disposition": "PASS"
+      },
+      {
+        "id": "396",
+        "disposition": "PASS"
+      },
+      {
+        "id": "397",
+        "disposition": "PASS"
+      },
+      {
+        "id": "398",
+        "disposition": "PASS"
+      },
+      {
+        "id": "399",
+        "disposition": "PASS"
+      },
+      {
+        "id": "400",
+        "disposition": "PASS"
+      },
+      {
+        "id": "401",
+        "disposition": "PASS"
+      },
+      {
+        "id": "402",
+        "disposition": "PASS"
+      },
+      {
+        "id": "403",
+        "disposition": "PASS"
+      },
+      {
+        "id": "404",
+        "disposition": "PASS"
+      },
+      {
+        "id": "405",
+        "disposition": "PASS"
+      },
+      {
+        "id": "406",
+        "disposition": "PASS"
+      },
+      {
+        "id": "407",
+        "disposition": "PASS"
+      },
+      {
+        "id": "408",
+        "disposition": "PASS"
+      },
+      {
+        "id": "409",
+        "disposition": "PASS"
+      },
+      {
+        "id": "410",
+        "disposition": "PASS"
+      },
+      {
+        "id": "411",
+        "disposition": "PASS"
+      },
+      {
+        "id": "412",
+        "disposition": "PASS"
+      },
+      {
+        "id": "413",
+        "disposition": "PASS"
+      },
+      {
+        "id": "414",
+        "disposition": "PASS"
+      },
+      {
+        "id": "415",
+        "disposition": "PASS"
+      },
+      {
+        "id": "416",
+        "disposition": "PASS"
+      },
+      {
+        "id": "417",
+        "disposition": "PASS"
+      },
+      {
+        "id": "418",
+        "disposition": "PASS"
+      },
+      {
+        "id": "419",
+        "disposition": "PASS"
+      },
+      {
+        "id": "420",
+        "disposition": "PASS"
+      },
+      {
+        "id": "421",
+        "disposition": "PASS"
+      },
+      {
+        "id": "422",
+        "disposition": "PASS"
+      },
+      {
+        "id": "423",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced the combined 0.5 ppm halogenated-agent plus 25 ppm N2O limits to the textbook."
+        ]
+      },
+      {
+        "id": "424",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed unsupported C6-specific anatomy and re-sourced cricoid pressure to the textbook."
+        ]
+      },
+      {
+        "id": "425",
+        "disposition": "PASS"
+      },
+      {
+        "id": "426",
+        "disposition": "PASS"
+      },
+      {
+        "id": "427",
+        "disposition": "PASS"
+      },
+      {
+        "id": "428",
+        "disposition": "PASS"
+      },
+      {
+        "id": "429",
+        "disposition": "PASS"
+      },
+      {
+        "id": "430",
+        "disposition": "PASS"
+      },
+      {
+        "id": "431",
+        "disposition": "PASS"
+      },
+      {
+        "id": "432",
+        "disposition": "PASS"
+      },
+      {
+        "id": "434",
+        "disposition": "PASS"
+      },
+      {
+        "id": "435",
+        "disposition": "PASS"
+      },
+      {
+        "id": "436",
+        "disposition": "PASS"
+      },
+      {
+        "id": "437",
+        "disposition": "PASS"
+      },
+      {
+        "id": "439",
+        "disposition": "PASS"
+      },
+      {
+        "id": "440",
+        "disposition": "PASS"
+      },
+      {
+        "id": "441",
+        "disposition": "PASS"
+      },
+      {
+        "id": "442",
+        "disposition": "PASS"
+      },
+      {
+        "id": "443",
+        "disposition": "PASS"
+      },
+      {
+        "id": "444",
+        "disposition": "PASS"
+      },
+      {
+        "id": "445",
+        "disposition": "PASS"
+      },
+      {
+        "id": "446",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed unsupported corner-of-mouth to angle-of-mandible sizing and rebuilt the item from lecture-supported OPA facts."
+        ]
+      },
+      {
+        "id": "447",
+        "disposition": "PASS"
+      },
+      {
+        "id": "448",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced the obese ramping target to the textbook."
+        ]
+      },
+      {
+        "id": "449",
+        "disposition": "PASS"
+      },
+      {
+        "id": "450",
+        "disposition": "PASS"
+      },
+      {
+        "id": "451",
+        "disposition": "PASS"
+      },
+      {
+        "id": "452",
+        "disposition": "PASS"
+      },
+      {
+        "id": "453",
+        "disposition": "PASS"
+      },
+      {
+        "id": "454",
+        "disposition": "PASS"
+      },
+      {
+        "id": "455",
+        "disposition": "PASS"
+      },
+      {
+        "id": "456",
+        "disposition": "PASS"
+      },
+      {
+        "id": "458",
+        "disposition": "PASS"
+      },
+      {
+        "id": "459",
+        "disposition": "PASS"
+      },
+      {
+        "id": "460",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced RSI/cricoid-pressure rationale to the textbook and removed unsupported example expansion."
+        ]
+      },
+      {
+        "id": "461",
+        "disposition": "PASS"
+      },
+      {
+        "id": "462",
+        "disposition": "PASS"
+      },
+      {
+        "id": "463",
+        "disposition": "PASS"
+      },
+      {
+        "id": "464",
+        "disposition": "PASS"
+      },
+      {
+        "id": "465",
+        "disposition": "PASS"
+      },
+      {
+        "id": "466",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed unsupported compression-against-pharyngeal-wall language and corrected the slide locator."
+        ]
+      },
+      {
+        "id": "467",
+        "disposition": "PASS"
+      },
+      {
+        "id": "468",
+        "disposition": "PASS"
+      },
+      {
+        "id": "469",
+        "disposition": "PASS"
+      },
+      {
+        "id": "470",
+        "disposition": "PASS"
+      },
+      {
+        "id": "471",
+        "disposition": "PASS"
+      },
+      {
+        "id": "472",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed the overstrong 'earliest and most sensitive' claim and grounded the ETCO2 finding to the textbook."
+        ]
+      },
+      {
+        "id": "473",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced second-generation supraglottic-airway advantages to the textbook."
+        ]
+      },
+      {
+        "id": "474",
+        "disposition": "PASS"
+      },
+      {
+        "id": "475",
+        "disposition": "PASS"
+      },
+      {
+        "id": "476",
+        "disposition": "PASS"
+      },
+      {
+        "id": "477",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed unsupported pH-shift/rapid-repurple details and kept the regeneration question to the lecture's stated limitations."
+        ]
+      },
+      {
+        "id": "478",
+        "disposition": "PASS"
+      },
+      {
+        "id": "479",
         "disposition": "PASS"
       }
     ],
@@ -4358,117 +4788,117 @@
       }
     ]
   },
-  "remaining": 1034,
+  "remaining": 934,
   "lastBatch": {
     "bank": "bank1.json",
     "audited": 100,
     "ids": [
-      "270",
-      "271",
-      "272",
-      "273",
-      "274",
-      "275",
-      "276",
-      "277",
-      "278",
-      "279",
-      "280",
-      "281",
-      "282",
-      "283",
-      "284",
-      "285",
-      "286",
-      "287",
-      "288",
-      "289",
-      "290",
-      "291",
-      "292",
-      "293",
-      "294",
-      "295",
-      "296",
-      "297",
-      "298",
-      "299",
-      "300",
-      "301",
-      "302",
-      "303",
-      "304",
-      "305",
-      "306",
-      "308",
-      "309",
-      "310",
-      "311",
-      "312",
-      "313",
-      "314",
-      "315",
-      "316",
-      "318",
-      "319",
-      "320",
-      "321",
-      "322",
-      "323",
-      "324",
-      "325",
-      "326",
-      "327",
-      "328",
-      "329",
-      "330",
-      "331",
-      "332",
-      "334",
-      "335",
-      "336",
-      "337",
-      "339",
-      "340",
-      "341",
-      "342",
-      "343",
-      "344",
-      "345",
-      "346",
-      "347",
-      "348",
-      "349",
-      "350",
-      "351",
-      "352",
-      "353",
-      "354",
-      "355",
-      "356",
-      "358",
-      "359",
-      "360",
-      "361",
-      "362",
-      "363",
-      "364",
-      "365",
-      "366",
-      "367",
-      "368",
-      "369",
-      "370",
-      "371",
-      "372",
-      "373",
-      "374"
+      "375",
+      "376",
+      "377",
+      "378",
+      "379",
+      "380",
+      "381",
+      "382",
+      "384",
+      "385",
+      "386",
+      "387",
+      "388",
+      "389",
+      "390",
+      "391",
+      "392",
+      "393",
+      "394",
+      "396",
+      "397",
+      "398",
+      "399",
+      "400",
+      "401",
+      "402",
+      "403",
+      "404",
+      "405",
+      "406",
+      "407",
+      "408",
+      "409",
+      "410",
+      "411",
+      "412",
+      "413",
+      "414",
+      "415",
+      "416",
+      "417",
+      "418",
+      "419",
+      "420",
+      "421",
+      "422",
+      "423",
+      "424",
+      "425",
+      "426",
+      "427",
+      "428",
+      "429",
+      "430",
+      "431",
+      "432",
+      "434",
+      "435",
+      "436",
+      "437",
+      "439",
+      "440",
+      "441",
+      "442",
+      "443",
+      "444",
+      "445",
+      "446",
+      "447",
+      "448",
+      "449",
+      "450",
+      "451",
+      "452",
+      "453",
+      "454",
+      "455",
+      "456",
+      "458",
+      "459",
+      "460",
+      "461",
+      "462",
+      "463",
+      "464",
+      "465",
+      "466",
+      "467",
+      "468",
+      "469",
+      "470",
+      "471",
+      "472",
+      "473",
+      "474",
+      "475",
+      "476",
+      "477",
+      "478",
+      "479"
     ],
     "notes": [
-      "Audited the next 100 Bank 1 questions against the course lectures and Nurse Anesthesia, 7th ed. where the lecture did not support the needed detail.",
-      "Corrected duplicate unsupported patterns that had persisted in later Bank 1 questions, including OPA sizing, obese ramping citations, Grade IIb/III bougie use, C6-specific cricoid anatomy, second-generation SGA sourcing, and overstrong MH ETCO2 wording.",
-      "Fixed two faulty pulse-oximetry multi-select keys that incorrectly treated normal oxyhemoglobin as a dyshemoglobin causing falsely elevated saturation.",
-      "Re-sourced the combined 0.5 ppm halogenated-agent-with-N2O limit to Nurse Anesthesia 7e as requested."
+      "Audited the next 100 Bank 1 questions against the course lectures and Nurse Anesthesia, 7th ed. where lecture support was incomplete.",
+      "Corrected repeated unsupported patterns involving absorbent regeneration, combined WAG exposure limits, C6-specific cricoid anatomy, OPA sizing, obese ramping, RSI/cricoid-pressure rationale, Miller-blade mechanics, MH ETCO2 wording, and second-generation supraglottic-airway sourcing.",
+      "Visually reviewed the embedded flow-volume loop in question 402; its flattened inspiratory and expiratory limbs are consistent with the keyed fixed large-airway-obstruction pattern.",
+      "No unchanged retained answer key was found to be wrong; rewritten questions received new keys only where the stem/options were intentionally corrected."
     ]
   },
   "lastCorrection": {
