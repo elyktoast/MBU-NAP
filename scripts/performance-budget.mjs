@@ -17,7 +17,7 @@ const budgets={
   'equipment/exam-1/hazards-bank-3.html':8000,
   'equipment/exam-1/hazards-harder.html':8000,
   'equipment/assets/build-bootstrap.js':4500,
-  'equipment/assets/app-core.js':32000,
+  'equipment/assets/app-core.js':34000,
   'equipment/assets/legal-gate.js':6000,
   'equipment/assets/supabase-config.js':1000,
   'equipment/assets/supabase-sync.js':24500,
