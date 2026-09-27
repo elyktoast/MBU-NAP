@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 1896,
+    "audited": 1932,
     "bank2": [
       {
         "id": "S2-021",
@@ -8550,121 +8550,623 @@
         "id": "100",
         "set": 2,
         "disposition": "PASS"
+      },
+      {
+        "id": "HZ15",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ45",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ16",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZI6",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ74",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ28",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ84",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ93",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ13",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ02",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ65",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ36",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ49",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ80",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ68",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ44",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ33",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ05",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ53",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZI3",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ94",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZI1",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ27",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ24",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ46",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ67",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ08",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ59",
+        "set": 3,
+        "disposition": "IMPROVE",
+        "changes": [
+          "softened an absolute alarm-timing claim while preserving the lecture's backup-cylinder safety point."
+        ]
+      },
+      {
+        "id": "HZ29",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ75",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ25",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ66",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ03",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ11",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ01",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ26",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ52",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ79",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ17",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ69",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ64",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ85",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ57",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ70",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ35",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ19",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ40",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ14",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ72",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ47",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ71",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ43",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ82",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HZ60",
+        "set": 3,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX39",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX31",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX18",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX25",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX04",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX26",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX30",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX12",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX14",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX38",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX05",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX23",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX15",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX46",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX41",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX24",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX17",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX49",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX02",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX47",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX37",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX27",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX42",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX20",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX45",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX01",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX09",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX34",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX06",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX22",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX29",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX19",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX40",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX21",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX10",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX35",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX36",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX13",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX44",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX08",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX50",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX07",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX48",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX03",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX32",
+        "set": 4,
+        "disposition": "PASS"
+      },
+      {
+        "id": "HX28",
+        "set": 4,
+        "disposition": "PASS"
       }
     ]
   },
-  "remaining": 104,
+  "remaining": 68,
   "lastBatch": {
     "bank": "hazards.json",
-    "set": 2,
     "audited": 100,
     "ids": [
-      "2:1",
-      "2:2",
-      "2:3",
-      "2:4",
-      "2:5",
-      "2:6",
-      "2:7",
-      "2:8",
-      "2:9",
-      "2:10",
-      "2:11",
-      "2:12",
-      "2:13",
-      "2:14",
-      "2:15",
-      "2:16",
-      "2:17",
-      "2:18",
-      "2:19",
-      "2:20",
-      "2:21",
-      "2:22",
-      "2:23",
-      "2:24",
-      "2:25",
-      "2:26",
-      "2:27",
-      "2:28",
-      "2:29",
-      "2:30",
-      "2:31",
-      "2:32",
-      "2:33",
-      "2:34",
-      "2:35",
-      "2:36",
-      "2:37",
-      "2:38",
-      "2:39",
-      "2:40",
-      "2:41",
-      "2:42",
-      "2:43",
-      "2:44",
-      "2:45",
-      "2:46",
-      "2:47",
-      "2:48",
-      "2:49",
-      "2:50",
-      "2:51",
-      "2:52",
-      "2:53",
-      "2:54",
-      "2:55",
-      "2:56",
-      "2:57",
-      "2:58",
-      "2:59",
-      "2:60",
-      "2:61",
-      "2:62",
-      "2:63",
-      "2:64",
-      "2:65",
-      "2:66",
-      "2:67",
-      "2:68",
-      "2:69",
-      "2:70",
-      "2:71",
-      "2:72",
-      "2:73",
-      "2:74",
-      "2:75",
-      "2:76",
-      "2:77",
-      "2:78",
-      "2:79",
-      "2:80",
-      "2:81",
-      "2:82",
-      "2:83",
-      "2:84",
-      "2:85",
-      "2:86",
-      "2:87",
-      "2:88",
-      "2:89",
-      "2:90",
-      "2:91",
-      "2:92",
-      "2:93",
-      "2:94",
-      "2:95",
-      "2:96",
-      "2:97",
-      "2:98",
-      "2:99",
-      "2:100"
+      "3:HZ15",
+      "3:HZ45",
+      "3:HZ16",
+      "3:HZI6",
+      "3:HZ74",
+      "3:HZ28",
+      "3:HZ84",
+      "3:HZ93",
+      "3:HZ13",
+      "3:HZ02",
+      "3:HZ65",
+      "3:HZ36",
+      "3:HZ49",
+      "3:HZ80",
+      "3:HZ68",
+      "3:HZ44",
+      "3:HZ33",
+      "3:HZ05",
+      "3:HZ53",
+      "3:HZI3",
+      "3:HZ94",
+      "3:HZI1",
+      "3:HZ27",
+      "3:HZ24",
+      "3:HZ46",
+      "3:HZ67",
+      "3:HZ08",
+      "3:HZ59",
+      "3:HZ29",
+      "3:HZ75",
+      "3:HZ25",
+      "3:HZ66",
+      "3:HZ03",
+      "3:HZ11",
+      "3:HZ01",
+      "3:HZ26",
+      "3:HZ52",
+      "3:HZ79",
+      "3:HZ17",
+      "3:HZ69",
+      "3:HZ64",
+      "3:HZ85",
+      "3:HZ57",
+      "3:HZ70",
+      "3:HZ35",
+      "3:HZ19",
+      "3:HZ40",
+      "3:HZ14",
+      "3:HZ72",
+      "3:HZ47",
+      "3:HZ71",
+      "3:HZ43",
+      "3:HZ82",
+      "3:HZ60",
+      "4:HX39",
+      "4:HX31",
+      "4:HX18",
+      "4:HX25",
+      "4:HX04",
+      "4:HX26",
+      "4:HX30",
+      "4:HX12",
+      "4:HX14",
+      "4:HX38",
+      "4:HX05",
+      "4:HX23",
+      "4:HX15",
+      "4:HX46",
+      "4:HX41",
+      "4:HX24",
+      "4:HX17",
+      "4:HX49",
+      "4:HX02",
+      "4:HX47",
+      "4:HX37",
+      "4:HX27",
+      "4:HX42",
+      "4:HX20",
+      "4:HX45",
+      "4:HX01",
+      "4:HX09",
+      "4:HX34",
+      "4:HX06",
+      "4:HX22",
+      "4:HX29",
+      "4:HX19",
+      "4:HX40",
+      "4:HX21",
+      "4:HX10",
+      "4:HX35",
+      "4:HX36",
+      "4:HX13",
+      "4:HX44",
+      "4:HX08",
+      "4:HX50",
+      "4:HX07",
+      "4:HX48",
+      "4:HX03",
+      "4:HX32",
+      "4:HX28"
     ],
     "notes": [
-      "Audited all 100 Hazards Set 2 questions using set+ID identity so repeated IDs from Set 1 no longer cause questions to be skipped.",
-      "Corrected the proportioning-system source locator, the Closed Claims source locator, the third-gas hypoxia wording, an unsupported ESU split-pad detail, the power-failure planning wording, the airway-fire saline detail, and the combined NIOSH source.",
-      "Confirmed the Set 2 fire-triangle SVG labels oxidizer as anesthesia, matching the keyed answer.",
-      "Normalized prior Hazards tracker entries with set numbers and recalculated progress using compound set+ID keys."
+      "Audited the next 100 Hazards questions: set 2 questions 83-100 and the next 82 questions from set 3.",
+      "Checked gas-supply safeguards, pressure systems, flowmeters, Mapleson circuits, electrical safety, electrosurgery, power failure, fire management, and workstation failure scenarios against the hazards material and SRNA Equipment Study Guide.",
+      "Visually verified all image-dependent items in this batch: fire triangle, Mapleson circuits, PISS valve patterns, and the highlighted hypoxemia-hazards slide.",
+      "Re-sourced the combined halogenated-agent/N2O exposure item to Nurse Anesthesia 7e per the project decision, and tightened two explanations without changing their answer keys."
     ]
   },
   "lastCorrection": {
