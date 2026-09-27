@@ -37,3 +37,20 @@ The ordered CI workflow runs:
 5. browser regression tests, including cloud-account, conflict, mobile, and accessibility coverage.
 
 GitHub Pages deployment remains the deployment gate.
+
+
+## Stable architecture baseline
+
+As of the study-intelligence release, the core application architecture is considered stable.
+
+Future feature work should extend the existing shared modules rather than introduce new per-bank runtimes:
+
+- Banks 1–3 and Combined remain on the canonical quiz engine.
+- Hazards remains on the two shared Hazards runtimes selected by the manifest.
+- Cross-bank learning history, spaced review, activity, reports, and analytics remain in `study-intelligence.js`.
+- Universal search remains in `question-search.js`.
+- Backup, diagnostics, accessibility, shared navigation utilities, and sync interfaces remain in `app-core.js`.
+- Cloud transport/auth/conflict/history/device behavior remains in `supabase-sync.js`.
+- Generated-question provider logic remains behind the disabled provider-neutral framework until deliberately enabled.
+
+Repository validation and browser regression tests are the enforcement mechanism for this baseline. A future architectural change should deliberately update those contracts rather than bypassing them.
