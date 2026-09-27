@@ -1649,4 +1649,81 @@ test.describe('canonical quiz regression', () => {
     expect(result.approvalError).toContain('source excerpt or citation');
   });
 
+  test('Study intelligence records attempts, schedules review, and ranks weak questions first', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
+    const out=await page.evaluate(()=>{
+      MBUStudyIntelligence.clearAll();
+      const weak={uid:'test-weak',bank:'b1',bankLabel:'Quiz Bank 1',id:'weak',set:1,topic:'Airway',stem:'Weak question'};
+      const strong={uid:'test-strong',bank:'b1',bankLabel:'Quiz Bank 1',id:'strong',set:1,topic:'Airway',stem:'Strong question'};
+      MBUStudyIntelligence.recordAnswer('b1',weak,false,{bankLabel:'Quiz Bank 1'});
+      MBUStudyIntelligence.recordAnswer('b1',strong,true,{bankLabel:'Quiz Bank 1'});
+      const raw=JSON.parse(localStorage.getItem(MBUStudyIntelligence.STORE));
+      raw.reviews['test-weak'].dueAt=Date.now()-1000;
+      localStorage.setItem(MBUStudyIntelligence.STORE,JSON.stringify(raw));
+      window.dispatchEvent(new StorageEvent('storage',{key:MBUStudyIntelligence.STORE}));
+      return {
+        due:MBUStudyIntelligence.due().map(x=>x.uid),
+        ranked:MBUStudyIntelligence.smartReview([strong,weak],2).map(x=>x.uid),
+        summary:MBUStudyIntelligence.summary()
+      }
+    });
+    expect(out.due).toContain('test-weak');
+    expect(out.ranked[0]).toBe('test-weak');
+    expect(out.summary.overall.attempts).toBe(2);
+    expect(out.summary.overall.accuracy).toBe(50);
+  });
+
+  test('Universal question search is lazy, global, and routes results into Studio', async ({ page }) => {
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await expect(page.locator('.mbu-global-nav__search')).toBeVisible();
+    await page.locator('.mbu-global-nav__search').click();
+    await expect(page.locator('#mbu-question-search')).toBeVisible();
+    await page.locator('[data-search-input]').fill('soda lime');
+    await expect.poll(async()=>await page.locator('.mbu-search-result').count()).toBeGreaterThan(0);
+    const href=await page.locator('.mbu-search-result__action').first().getAttribute('href');
+    expect(href).toContain('studio.html?question=');
+    await page.keyboard.press('Escape');
+    await expect(page.locator('#mbu-question-search')).not.toBeVisible();
+  });
+
+  test('Studio exposes Smart Review, Due Review, and multi-window analytics', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await expect(page.getByRole('button',{name:'Start Smart Review'})).toBeVisible();
+    await expect(page.getByRole('button',{name:'Review Due'})).toBeVisible();
+    await expect(page.locator('#analyticsSummary')).toContainText('Overall accuracy');
+    await expect(page.locator('#analyticsSummary')).toContainText('Last 7 days');
+    await expect(page.locator('#analyticsSummary')).toContainText('Last 30 days');
+  });
+
+  test('Exam dashboard surfaces Continue Studying and recent study activity', async ({ page }) => {
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.evaluate(()=>{
+      const at=Date.now();
+      localStorage.setItem('mbu_exam1_studio_v1',JSON.stringify({ans:{},flags:{},crosses:{},reports:[],active:{uids:['b1-1','b1-2','b1-3'],pos:1,answers:{},updated:at}}));
+      MBUStudyIntelligence.clearAll();
+      MBUStudyIntelligence.recordAnswer('b1',{uid:'dash-test',id:'dash-test',topic:'Monitoring',stem:'Dashboard test'},true,{bankLabel:'Quiz Bank 1'});
+    });
+    await page.reload();await page.evaluate(() => MBUPageReady);
+    await expect(page.locator('#continuePanel')).toContainText('Study Studio');
+    await expect(page.locator('#continuePanel')).toContainText('Question 2 / 3');
+    await expect(page.locator('#recentPanel')).toContainText('Today');
+    await expect(page.locator('#recentPanel')).toContainText('100%');
+  });
+
+  test('Signed-in cloud account exposes device and restore-history data', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
+    await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'test-access',refresh_token:'test-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000001',email:'test@example.com'}})}));
+    await page.route(cloud+'/rest/v1/mbu_sync_state?*',route=>route.fulfill({status:200,contentType:'application/json',body:'[]'}));
+    await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>{
+      if(route.request().method()==='GET')return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify([{device_id:'other-device',device_label:'Mac',app_build:'test-build',first_seen_at:new Date().toISOString(),last_seen_at:new Date().toISOString()}])});
+      return route.fulfill({status:201,contentType:'application/json',body:''})
+    });
+    await page.route(cloud+'/rest/v1/mbu_sync_versions?*',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify([{id:7,store_key:'mbu_exam1_studio_v1',device_id:'other-device',server_revision:3,saved_at:new Date().toISOString(),client_revision:2,client_updated_at:new Date().toISOString()}])}));
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.evaluate(() => MBUSupabase.signIn('test@example.com','correct horse battery staple'));
+    const data=await page.evaluate(async()=>({devices:await MBUSupabase.listDevices(),history:await MBUSupabase.listHistory(10)}));
+    expect(data.devices[0]).toMatchObject({device_id:'other-device',device_label:'Mac'});
+    expect(data.history[0]).toMatchObject({id:7,store_key:'mbu_exam1_studio_v1',server_revision:3});
+  });
+
 });
