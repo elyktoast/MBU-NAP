@@ -94,7 +94,7 @@ async function updatePassword(password){
 function currentUser(){return session()?.user||null}
 async function deleteAccount(){
   const s=await validSession();if(!s?.access_token)throw Error('Sign in to delete your account.');
-  await raw('/functions/v1/delete-account',{method:'POST',body:{},token:s.access_token});
+  await raw('/functions/v1/snar-delete-account',{method:'POST',body:{},token:s.access_token});
   stopAutoSync();saveSession(null);remoteByKey.clear();calibrationByKey.clear();calibrationFetchedAt=0;emit('signed-out');return true
 }
 async function submitPrivacyRequest(requestType,details=''){
