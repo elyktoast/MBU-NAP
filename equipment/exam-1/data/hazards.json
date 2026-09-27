@@ -3471,7 +3471,7 @@
         0
       ],
       "explanation": "The proportioning system links oxygen and nitrous oxide at the flow controls and is designed to maintain their relationship. It does not directly measure the final inspired oxygen concentration and does not control added gases such as air or helium; the oxygen analyzer remains the final concentration check.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 29",
+      "citation": "Anesthesia Workstation Hazards & Safety · Slide 14",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -3482,11 +3482,11 @@
         "families": [
           "Anesthesia Workstation Hazards & Safety"
         ],
-        "slides": "29",
+        "slides": "14",
         "citationFormat": "slides"
       },
       "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 29"
+      "sourceLocator": "Slide 14"
     },
     {
       "id": "8",
@@ -3535,7 +3535,7 @@
         0
       ],
       "explanation": "The study guide explicitly separates two statistics: 115 of roughly 6,000 closed claims is about 1.9% of claims, whereas 0.23%–0.4% is the estimated incidence of anesthesia equipment events. They should not be presented as the same percentage.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 11",
+      "citation": "SRNA Equipment Study Guide · Page 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -3544,13 +3544,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Anesthesia Workstation Hazards & Safety"
+          "SRNA Equipment Study Guide"
         ],
-        "studyGuidePage": "11",
+        "pdfPages": "8",
         "citationFormat": "document"
       },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Study Guide p. 11"
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 8"
     },
     {
       "id": "10",
@@ -3787,17 +3787,17 @@
       "id": "17",
       "set": 2,
       "type": "single",
-      "stem": "Under what specific condition will an active mechanical or electronic oxygen ratio proportioning system (hypoxic guard) FAIL to prevent the delivery of a hypoxic gas mixture (<21% O2)?",
+      "stem": "Which added gas can allow the final inspired oxygen concentration to fall below 21% even though the O2:N2O proportioning system is functioning?",
       "options": [
-        "When a third carrier gas such as helium, nitrogen, or medical air is dialed simultaneously",
-        "When the pipeline oxygen supply pressure exceeds 55 psig",
-        "When the common gas outlet check valve is subjected to positive backpressure",
-        "When the volatile anesthetic dial on a variable bypass vaporizer is set above 5%"
+        "A large helium flow added to the O2/N2O mixture",
+        "Medical air added by itself",
+        "Additional oxygen",
+        "No third gas; the proportioning system directly measures final FiO2"
       ],
       "answer": [
         0
       ],
-      "explanation": "The proportioning system only links oxygen and nitrous oxide. If an inert third gas such as helium or medical air is administered concurrently, the proportioning linkage does not account for the additional flow, and a severely hypoxic gas mixture (<21% O2) can easily be delivered.",
+      "explanation": "The proportioning system links only oxygen and nitrous oxide and does not measure the final inspired oxygen concentration. A sufficiently large helium flow can dilute the final oxygen concentration below 21%. Medical air is also outside the linkage, but because it contains about 21% oxygen it does not by itself dilute the mixture below 21%.",
       "citation": "Anesthesia Workstation Hazards & Safety · Slide 14",
       "topic": "Hazards & Safety",
       "imageSvg": null,
@@ -3987,18 +3987,18 @@
       "id": "23",
       "set": 2,
       "type": "single",
-      "stem": "During preoperative workstation inspection, you examine an electrosurgical grounding pad. Modern flexible return pads utilize two separate conductive zones and wiring. What built-in safety function does this design provide?",
+      "stem": "Which built-in ESU safety check is explicitly described in the course material?",
       "options": [
-        "The ESU continuously measures electrical resistance between the two conductive zones and disables the unit if resistance rises",
-        "One zone delivers radiofrequency cutting energy while the opposing zone delivers coagulation current",
-        "It grounds the operating room isolation transformer to earth ground potential during high current flow",
-        "It allows simultaneous use of two monopolar Bovie pencils from a single generator"
+        "The unit will not operate unless both the active pencil and return pad are connected",
+        "The unit automatically measures inspired oxygen before cautery",
+        "The unit shuts off whenever a pacemaker is present",
+        "The return pad converts radiofrequency current to direct current"
       ],
       "answer": [
         0
       ],
-      "explanation": "Modern split return pads (contact quality monitors) feature two separate conductive zones. The electrosurgical generator continuously interrogates resistance between the two zones; if the pad partially peels off, resistance rises and the unit locks out automatically.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 31",
+      "explanation": "The course material states that the electrosurgical unit will not operate unless both the pencil and the return pad are connected. It separately warns that poor return-pad contact can still cause burns.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -4007,13 +4007,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Anesthesia Workstation Hazards & Safety"
+          "SRNA Equipment Study Guide"
         ],
-        "slides": "31",
-        "citationFormat": "slides"
+        "pdfPages": "9",
+        "citationFormat": "document"
       },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 31"
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
     },
     {
       "id": "24",
@@ -4086,18 +4086,18 @@
       "id": "26",
       "set": 2,
       "type": "single",
-      "stem": "If a total operating room electrical failure occurs and backup batteries are depleted, how long does the anesthesia provider typically have to transition the patient to a safe alternative anesthetic (e.g., TIVA and manual Mapleson ventilation)?",
+      "stem": "During a complete electrical failure, what planning target does the study guide give while backup battery power remains?",
       "options": [
-        "Less than 1 hour",
-        "At least 4 to 6 hours",
-        "Exactly 8 hours",
-        "Indefinitely, as long as wall pipeline oxygen pressure remains above 50 psi"
+        "Have the patient transitioned to a sustainable alternative plan within about an hour",
+        "Continue unchanged for at least 4–6 hours",
+        "Wait until the battery is completely depleted before preparing alternatives",
+        "Rely indefinitely on electronic vaporizers as long as pipeline oxygen remains"
       ],
       "answer": [
         0
       ],
-      "explanation": "The lecture notes explicitly advise that during a complete electrical failure, backup batteries provide roughly 40 minutes to 2 hours of power, and providers should plan to have the patient safely managed under an alternative technique (TIVA, manual bag/circuit) within less than 1 hour.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 32",
+      "explanation": "The study guide recommends using the battery window to prepare alternative ventilation and intravenous anesthesia and having the patient safely covered within about an hour. Actual battery duration varies by workstation.",
+      "citation": "SRNA Equipment Study Guide · Page 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -4106,13 +4106,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Anesthesia Workstation Hazards & Safety"
+          "SRNA Equipment Study Guide"
         ],
-        "slides": "32",
-        "citationFormat": "slides"
+        "pdfPages": "9",
+        "citationFormat": "document"
       },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 32"
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 9"
     },
     {
       "id": "27",
@@ -4252,7 +4252,7 @@
       "type": "single",
       "stem": "During laser surgery of the vocal cords, the surgeon notices a small flame at the tracheal tube. According to fire protocols, what liquid should be poured into the airway immediately after pulling the tube and stopping gas flows?",
       "options": [
-        "Sterile saline or water",
+        "Sterile saline",
         "Cold mineral oil",
         "Liquid chlorhexidine",
         "Alcohol-free mouthwash"
@@ -4260,7 +4260,7 @@
       "answer": [
         0
       ],
-      "explanation": "After pulling the burning tube and stopping gases, the airway is immediately flushed with sterile saline or water to extinguish residual embers and cool tracheal tissues.",
+      "explanation": "After the burning tube is removed and gas flow is stopped, the course fire sequence directs saline into the airway to extinguish residual burning material before ventilation and airway reassessment.",
       "citation": "Anesthesia Workstation Hazards & Safety · Slide 36",
       "topic": "Hazards & Safety",
       "imageSvg": null,
@@ -6302,7 +6302,7 @@
       "id": "95",
       "set": 2,
       "type": "single",
-      "stem": "Which occupational-exposure limits match the study guide?",
+      "stem": "Which occupational-exposure limits match the Nurse Anesthesia textbook?",
       "options": [
         "Nitrous oxide 25 ppm TWA; halogenated agent 2 ppm when used alone and 0.5 ppm when combined with nitrous oxide",
         "Nitrous oxide 50 ppm TWA; halogenated agent 25 ppm alone and 10 ppm when combined with nitrous oxide",
@@ -6312,8 +6312,8 @@
       "answer": [
         0
       ],
-      "explanation": "The guide lists nitrous oxide at 25 ppm TWA, halogenated agent at 2 ppm when used alone, and 0.5 ppm when combined with nitrous oxide.",
-      "citation": "SRNA Equipment Study Guide · Page 10",
+      "explanation": "Nurse Anesthesia states that workers should not be exposed to more than 2 ppm of a halogenated anesthetic, reduced to 0.5 ppm when it is used with nitrous oxide, and no more than 25 ppm nitrous oxide as an 8-hour time-weighted average.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 16, p. 284",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -6322,13 +6322,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "SRNA Equipment Study Guide"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "pdfPages": "10",
-        "citationFormat": "document"
+        "pages": "284",
+        "pdfPages": "337",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "SRNA Equipment Study Guide",
-      "sourceLocator": "Page 10"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 16 · p. 284 · PDF p. 337"
     },
     {
       "id": "96",
