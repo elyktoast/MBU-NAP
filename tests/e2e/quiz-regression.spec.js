@@ -1810,9 +1810,10 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);await waitForAuth(page);
     await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('[data-admin-entry]')).toBeVisible();
-    await expect(page.locator('#mbu-admin-dashboard')).toHaveAttribute('aria-hidden','true');
+    await expect(page.locator('#mbu-admin-dashboard')).toHaveCount(0);
     await page.locator('[data-admin-open]').click();
     await expect(page.locator('#mbu-admin-dashboard')).toHaveClass(/open/);
+    await expect(page.locator('#mbu-admin-dashboard')).toHaveAttribute('aria-hidden','false');
     await expect(page.locator('[data-admin-stats]')).toContainText('Guests active ~15m');
     await expect(page.locator('[data-admin-stats]')).toContainText('CAT users');
     await expect(page.locator('[data-admin-stats] > div').filter({hasText:'Guests active ~15m'}).locator('strong')).toHaveText('3');
