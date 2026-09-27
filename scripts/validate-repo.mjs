@@ -900,6 +900,14 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ['submitQuestionReport','snar_submit_question_report','snar_admin_question_reports','snar_admin_update_question_report'])if(!read('equipment/assets/supabase-sync.js').includes(token)&&!read('equipment/assets/admin-panel.js').includes(token))fail('Private question-report inbox contract missing '+token);
 }
 
+// Phase 3 free-text submission abuse controls must remain server-side.
+{
+ const suggestionRate=read('supabase/migrations/20260927235248_rate_limit_suggestions.sql');
+ const reportRate=read('supabase/migrations/20260927235303_rate_limit_question_reports.sql');
+ for(const token of ["interval '10 minutes'",">=10","interval '24 hours'",">=50",'private.snar_suggestions'])if(!suggestionRate.includes(token))fail('Suggestion abuse guard missing '+token);
+ for(const token of ["interval '5 minutes'","interval '10 minutes'",">=100",'This report was already submitted recently.','private.snar_question_reports'])if(!reportRate.includes(token))fail('Question-report abuse guard missing '+token);
+}
+
 // Phase 3 report workflow indexes must remain in production history.
 {
  const migration=read('supabase/migrations/20260927233103_index_question_report_workflows.sql');

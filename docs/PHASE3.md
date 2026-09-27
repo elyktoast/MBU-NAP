@@ -85,6 +85,17 @@ Study Studio form controls now use programmatic labels for quiz count and order,
 
 The admin retention-cleanup result now reports resolved question-report deletions alongside sync history, privacy requests, expired legal records, and guest sessions. Browser regression coverage verifies that all retention categories returned by the server are surfaced to the operator.
 
+## Submission abuse controls
+
+Server-side guards protect the two free-text submission workflows without changing the question-report privacy model.
+
+- Suggestions are limited per authenticated account to 10 submissions per 10 minutes and 50 per 24 hours, using the suggestion account identifier that was already stored for that workflow.
+- Question reports reject an identical question, reason, and comment submitted again within 5 minutes.
+- Question reports also use a conservative global burst ceiling of 100 submissions per 10 minutes.
+- The anonymous question-report inbox still does not store the reporter's account identifier.
+
+These controls run inside the database RPCs, so bypassing browser controls does not bypass the limits.
+
 ## Report-workflow scale hardening
 
 Private question reports now have targeted indexes for question-level analytics and retention/workflow filtering:
