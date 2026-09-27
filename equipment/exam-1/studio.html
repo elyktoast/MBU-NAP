@@ -98,11 +98,29 @@ body.mbu-quiz-active>.wrap{max-width:1040px;padding:20px}
 #search,#reports{max-width:900px;margin-left:auto;margin-right:auto}
 #search h2,#reports h2{margin-top:0;color:#183153}
 
-/* Quiz view remains aligned with the canonical Bank 1 interaction model. */
+/* Active Studio and Adaptive sessions share the canonical quiz-session chrome. */
 body.mbu-quiz-active #quiz{border:0;border-radius:10px}
-.stem{font-size:1.12rem;font-weight:700;margin:16px 0}
-.opts{display:grid;gap:9px}
-.opt{padding:12px;border:1px solid var(--b);border-radius:8px;background:#fff;text-align:left;font:inherit;cursor:pointer}
+body.mbu-quiz-active #quiz .mbu-session-head{display:grid;gap:12px;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid #e2e8f0}
+body.mbu-quiz-active #quiz .mbu-session-title{display:flex;align-items:center;justify-content:space-between;gap:14px}
+body.mbu-quiz-active #quiz .mbu-session-title .progress{margin-left:auto;color:#475569;font-size:.92rem;font-weight:700;text-align:right}
+body.mbu-quiz-active #quiz .mbu-session-actions{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+body.mbu-quiz-active #quiz .mbu-session-actions .btn{min-height:38px;padding:8px 12px}
+body.mbu-quiz-active #quiz .mbu-session-actions .mbu-return{margin-left:auto}
+body.mbu-quiz-active #quiz .mbu-quiz-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:0 0 16px;padding:0;background:#f8fafc;border:1px solid #dde5ee;border-radius:9px;overflow:hidden}
+body.mbu-quiz-active #quiz .mbu-quiz-stats>div{display:grid;grid-template-columns:auto auto;justify-content:center;gap:5px;padding:9px 12px;border-right:1px solid #e2e8f0;font-size:.9rem}
+body.mbu-quiz-active #quiz .mbu-quiz-stats>div:last-of-type{border-right:0}
+body.mbu-quiz-active #quiz .mbu-quiz-stats span{color:#64748b}
+body.mbu-quiz-active #quiz .mbu-quiz-stats strong{color:#1e293b}
+body.mbu-quiz-active #quiz .stem{font-size:1.15rem;font-weight:700;line-height:1.55;margin:0 0 8px}
+body.mbu-quiz-active #quiz .opts{display:grid;gap:9px}
+body.mbu-quiz-active #quiz .opt{padding:10px 13px;min-height:46px;border:1px solid var(--b);border-radius:8px;background:#fff;text-align:left;font:inherit;cursor:pointer}
+body.mbu-quiz-active #quiz .mbu-notes-panel{margin:0 0 16px;padding:14px;border:1px solid #cbd5e1;border-radius:10px;background:#fbfdff}
+body.mbu-quiz-active #quiz .mbu-notes-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:10px}
+body.mbu-quiz-active #quiz .mbu-notes-head strong,body.mbu-quiz-active #quiz .mbu-notes-head span{display:block}
+body.mbu-quiz-active #quiz .mbu-notes-head span{margin-top:2px;color:#718096;font-size:.78rem}
+body.mbu-quiz-active #quiz textarea{width:100%;min-height:130px;resize:vertical;padding:11px 12px;border:1px solid #cbd5e1;border-radius:8px;background:#fff;color:#1e293b;font:inherit;line-height:1.5}
+body.mbu-quiz-active #quiz .mbu-notes-foot{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:7px;color:#718096;font-size:.76rem}
+body.mbu-quiz-active #quiz .mbu-text-button{border:0;background:transparent;color:#475569;font:inherit;font-weight:700;cursor:pointer;padding:3px 0}
 .feedback{margin-top:14px;padding:12px;border-radius:8px;background:#f7fafc}
 .qhead{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
 
@@ -126,6 +144,14 @@ body.mbu-quiz-active #quiz{border:0;border-radius:10px}
   .studio-section__head{align-items:flex-start;flex-direction:column}
   .topic{grid-template-columns:1fr 52px}
   .topic .bar{grid-column:1/3}
+  body.mbu-quiz-active #quiz .mbu-session-title{align-items:flex-start;flex-direction:column}
+  body.mbu-quiz-active #quiz .mbu-session-title .progress{margin-left:0;text-align:left}
+  body.mbu-quiz-active #quiz .mbu-session-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%}
+  body.mbu-quiz-active #quiz .mbu-session-actions .btn{width:100%;min-width:0;padding:8px 6px;font-size:.84rem}
+  body.mbu-quiz-active #quiz .mbu-session-actions .mbu-return{grid-column:1/-1;margin-left:0}
+  body.mbu-quiz-active #quiz .mbu-quiz-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  body.mbu-quiz-active #quiz .mbu-quiz-stats>div:nth-child(2){border-right:0}
+  body.mbu-quiz-active #quiz .mbu-quiz-stats>div:nth-child(-n+2){border-bottom:1px solid #e2e8f0}
 }
 @media(max-width:470px){
   .studio-quick-grid,.studio-analytics-summary{grid-template-columns:1fr}
@@ -179,5 +205,5 @@ body.mbu-quiz-active #quiz{border:0;border-radius:10px}
     </section>
   </div>
 </section>
-<section id="quiz" class="panel hidden mbu-bank1-ui"><div class="header"><div class="row"><span class="badge" id="sessionBadge">STUDY STUDIO</span><button class="btn out" id="flagBtn" onclick="toggleFlag()">☆ Flag</button><button class="btn out" onclick="reportCurrent()">Report</button><button class="btn out" id="studioNavToggle" onclick="toggleNav()">Navigator</button><button class="btn out mbu-return" onclick="renderHome()">← Study Studio Home</button></div><div class="progress" id="qprog"></div></div><div class="stats"><div>Answered: <strong id="sessionCompleted">0</strong></div><div>Correct: <strong id="sessionCorrect">0</strong></div><div>Missed: <strong id="sessionMissed">0</strong></div><div>Accuracy: <strong id="sessionScore">0</strong>%</div><span id="sessionTotal" class="hidden">0</span></div><div id="navigator" class="row hidden" style="flex-wrap:wrap;gap:6px;margin:8px 0 14px;max-height:180px;overflow:auto;padding:3px"></div><div class="type" id="qmeta"></div><div class="stem" id="stem"></div><div class="mbu-crossout-hint">Tip: Right-click an answer to cross it out.</div><div id="qimage" class="image hidden"></div><div class="options" id="opts"></div><div class="row" id="studio-submit-row" style="display:none;margin:4px 0 18px;justify-content:flex-end"><button class="btn" id="submit" onclick="grade()">Submit Answer</button></div><div id="fb" class="explain"><div id="fbText"></div><div id="fbCitation" class="cite"></div></div><div class="controls"><button class="btn out" id="studioPrev" onclick="studioNav(-1)">Previous</button><div class="row"><button class="btn out" id="studioReset" onclick="resetStudioCurrent()">Reset</button><button class="btn" id="next" onclick="nextQ()">Next</button></div></div></section>
+<section id="quiz" class="panel hidden mbu-bank1-ui"><div class="mbu-session-head"><div class="mbu-session-title"><span class="badge" id="sessionBadge">STUDY STUDIO</span><div class="progress" id="qprog"></div></div><div class="mbu-session-actions"><button class="btn out" id="flagBtn" onclick="toggleFlag()">☆ Flag</button><button class="btn out" id="studioNotesBtn" onclick="toggleStudioNotes()">Notes</button><button class="btn out" onclick="reportCurrent()">Report</button><button class="btn out" id="studioNavToggle" onclick="toggleNav()">Navigator</button><button class="btn out mbu-return" onclick="renderHome()">← Study Studio Home</button></div></div><div class="stats mbu-quiz-stats"><div><span>Answered</span><strong id="sessionCompleted">0</strong></div><div><span>Correct</span><strong id="sessionCorrect">0</strong></div><div><span>Missed</span><strong id="sessionMissed">0</strong></div><div><span>Accuracy</span><strong><span id="sessionScore">0</span>%</strong></div><span id="sessionTotal" class="hidden">0</span></div><div id="navigator" class="row hidden" style="flex-wrap:wrap;gap:6px;margin:8px 0 14px;max-height:180px;overflow:auto;padding:3px"></div><div id="studioNotesPanel" class="mbu-notes-panel hidden"><div class="mbu-notes-head"><div><strong>Session Notes</strong><span>Scratchpad for thoughts, formulas, and equations. Stored only in this browser tab.</span></div><button type="button" class="btn out" onclick="toggleStudioNotes(false)">Done</button></div><textarea id="studioNotesText" rows="6" placeholder="Type notes, equations, reminders, or reasoning here…" aria-label="Session notes"></textarea><div class="mbu-notes-foot"><span>Saved in this tab</span><button type="button" class="mbu-text-button" onclick="clearStudioNotes()">Clear notes</button></div></div><div class="type" id="qmeta"></div><div class="stem" id="stem"></div><div class="mbu-crossout-hint">Tip: Right-click an answer to cross it out.</div><div id="qimage" class="image hidden"></div><div class="options" id="opts"></div><div class="row" id="studio-submit-row" style="display:none;margin:4px 0 18px;justify-content:flex-end"><button class="btn" id="submit" onclick="grade()">Submit Answer</button></div><div id="fb" class="explain"><div id="fbText"></div><div id="fbCitation" class="cite"></div></div><div class="controls"><button class="btn out" id="studioPrev" onclick="studioNav(-1)">Previous</button><div class="row"><button class="btn out" id="studioReset" onclick="resetStudioCurrent()">Reset</button><button class="btn" id="next" onclick="nextQ()">Next</button></div></div></section>
 <section id="search" class="panel hidden"><h2>Question Repository Search</h2><input id="searchbox" class="field" style="width:100%" placeholder="Search PIP, vaporizer, scavenging…" oninput="doSearch()"><div id="searchresults"></div></section><section id="reports" class="panel hidden"><h2>Saved Question Reports</h2><div class="controls" style="margin-bottom:10px"><button class="btn" id="sendSavedReportsBtn" type="button" onclick="sendSavedReports()">Send Saved Reports</button><button class="btn out" type="button" onclick="renderHome()">← Study Studio Home</button></div><div class="mut" id="savedReportStatus" role="status" aria-live="polite"></div><div id="reportlist"></div></section></div><script>window.MBU_BOOT={scripts:[{src:'studio-loader.js',waitFor:'MBUStudioPageReady'}]};</script><script src="../assets/build-bootstrap.js"></script></body></html>
