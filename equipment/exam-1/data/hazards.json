@@ -4410,2081 +4410,2106 @@
       "id": "36",
       "set": 2,
       "type": "single",
-      "stem": "During laser surgery of the vocal cords, the surgeon notices a small flame at the tracheal tube. According to fire protocols, what liquid should be poured into the airway immediately after pulling the tube and stopping gas flows?",
+      "stem": "What is the first step in the workstation risk-management sequence?",
       "options": [
-        "Sterile saline or water",
-        "Cold mineral oil",
-        "Liquid chlorhexidine",
-        "Alcohol-free mouthwash"
+        "Define the problems",
+        "Apply solutions",
+        "Monitor outcomes",
+        "Estimate likelihood"
       ],
       "answer": [
         0
       ],
-      "explanation": "After pulling the burning tube and stopping gases, the airway is immediately flushed with sterile saline or water to extinguish residual embers and cool tracheal tissues.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 36",
+      "explanation": "The sequence begins by defining the problems, followed by estimating likelihood, weighing resources, applying solutions, and monitoring.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "36",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 36"
+      "supp": null
     },
     {
       "id": "37",
       "set": 2,
       "type": "single",
-      "stem": "Why is the operating room electrical power supply ungrounded via an isolation transformer?",
+      "stem": "According to the workstation-hazards material, what causes the majority of anesthesia equipment adverse events?",
       "options": [
-        "To prevent electric shock (macroshock) if personnel touch a live wire while standing on a wet floor",
-        "To allow electrosurgical units to operate without requiring a grounding pad",
-        "To prevent high-voltage power surges from melting variable bypass vaporizers",
-        "To ensure that workstation backup batteries recharge continuously during surgery"
+        "Device manufacturing defects",
+        "Human error",
+        "Power-grid failure",
+        "Pipeline contamination"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "In an ungrounded system, current is isolated from ground potential. A person standing in conductive fluid (saline/blood) touching a single live conductor will not complete a circuit to ground, preventing macroshock.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slides 29, 30",
+      "explanation": "Most events are multifactorial, but the guide identifies human error as responsible for the majority.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "29, 30",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slides 29, 30"
+      "supp": null
     },
     {
       "id": "38",
       "set": 2,
-      "type": "single",
-      "stem": "What is the primary reason why breathing circuit disconnects occur frequently during head and neck surgical procedures?",
+      "type": "multi",
+      "stem": "Which THREE factors are listed as aggravating contributors to anesthesia equipment events? (Select 3)",
       "options": [
-        "Surgical drapes conceal the patient's face and airway, hiding accidental tube dislodgement or traction",
-        "Head flexion increases apparatus dead space beyond the capacity of the Y-piece",
-        "Electrosurgical units generate radiofrequencies that loosen corrugated plastic connectors",
-        "Nitrous oxide diffusion softens the 15 mm endotracheal tube adapter"
+        "Inattention",
+        "Fatigue",
+        "Routine machine checks",
+        "Distraction",
+        "Using a checklist",
+        "Adequate staffing"
       ],
       "answer": [
-        0
+        0,
+        1,
+        3
       ],
-      "explanation": "During head and neck surgery, surgical drapes cover the face and endotracheal tube. Movement of the surgical team or table manipulation can easily dislodge the circuit unseen beneath the drapes.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 23",
+      "explanation": "Inattention, distraction, fatigue, haste, unfamiliarity, inexperience, and failure to check equipment are listed aggravating factors.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "23",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 23"
+      "supp": null
     },
     {
       "id": "39",
       "set": 2,
       "type": "single",
-      "stem": "What type of fire extinguisher is specifically recommended for extinguishing a fire in the operating room when water or saline has failed?",
+      "stem": "Which hypoxemia hazard occurs upstream of the anesthesia workstation?",
       "options": [
-        "Carbon dioxide (CO2) extinguisher",
-        "Dry chemical ammonium phosphate extinguisher",
-        "Pressurized foam extinguisher",
-        "Halon 1211 liquid agent extinguisher"
+        "Exhausted CO2 absorbent",
+        "Empty liquid oxygen reservoir",
+        "Curare cleft",
+        "Closed scavenging pop-off valve"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "A carbon dioxide (CO2) fire extinguisher is recommended in the operating room because it leaves no corrosive chemical residue on patient tissues or delicate electronics.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 38",
+      "explanation": "Upstream hazards include an empty liquid oxygen reservoir, nitrogen in the reservoir, crossed hospital pipelines, and closed pipeline valves.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "38",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 38"
+      "supp": null
     },
     {
       "id": "40",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary electrical hazard of using an electrosurgical unit (ESU / Bovie) on a patient with a permanent cardiac pacemaker?",
+      "stem": "Which hypoxemia hazard is usually detectable during the machine check?",
       "options": [
-        "High radiofrequency current can cause electrical interference, resulting in pacemaker reprogramming, inhibition, or myocardial burns at the lead tip",
-        "The ESU current causes instantaneous battery explosion within the pacemaker generator",
-        "The pacemaker ground wire diverts current, causing the line isolation monitor to trip",
-        "Radiofrequency current converts pacemaker pacing spikes into direct current shocks"
+        "Hypoxic gas inside a correctly mounted O2 cylinder",
+        "Crossed hoses or adapters in the OR",
+        "A proportioning-system failure that occurs later",
+        "An O2 flowmeter leak that develops after the check"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "The high-frequency energy of an ESU interferes with cardiac pacemakers, potentially causing oversensing (inhibition of pacing), asynchronous resetting, damage to the internal circuitry, or myocardial burns where the lead meets the myocardium.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 31",
+      "explanation": "Crossed hoses or adapters are among hazards usually caught by the machine check.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "31",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 31"
+      "supp": null
     },
     {
       "id": "41",
       "set": 2,
       "type": "single",
-      "stem": "During laser surgery of the vocal cords, the surgeon notices a small flame at the tracheal tube. According to fire protocols, what liquid should be poured into the airway immediately after pulling the tube and stopping gas flows?",
+      "stem": "Which hypoxemia hazard may NOT be detected by a normal machine check?",
       "options": [
-        "Sterile saline or water",
-        "Cold mineral oil",
-        "Liquid chlorhexidine",
-        "Alcohol-free mouthwash"
+        "Breathing-circuit leak present during checkout",
+        "Closed O2 cylinder during checkout",
+        "Hypoxic gas inside a cylinder labeled as oxygen",
+        "Incompetent unidirectional valve present during checkout"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "After pulling the burning tube and stopping gases, the airway is immediately flushed with sterile saline or water to extinguish residual embers and cool tracheal tissues.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 36",
+      "explanation": "Hypoxic gas in a cylinder can escape the usual check because pressure can be normal even when gas composition is wrong.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "36",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 36"
+      "supp": null
     },
     {
       "id": "42",
       "set": 2,
       "type": "single",
-      "stem": "Why is the operating room electrical power supply ungrounded via an isolation transformer?",
+      "stem": "A workstation fails its breathing-system leak check. What simple corrective action does the study guide say often resolves the problem?",
       "options": [
-        "To prevent electric shock (macroshock) if personnel touch a live wire while standing on a wet floor",
-        "To allow electrosurgical units to operate without requiring a grounding pad",
-        "To prevent high-voltage power surges from melting variable bypass vaporizers",
-        "To ensure that workstation backup batteries recharge continuously during surgery"
+        "Swap the breathing circuit",
+        "Replace the oxygen cylinder",
+        "Disable the fail-safe valve",
+        "Increase scavenging suction"
       ],
       "answer": [
         0
       ],
-      "explanation": "In an ungrounded system, current is isolated from ground potential. A person standing in conductive fluid (saline/blood) touching a single live conductor will not complete a circuit to ground, preventing macroshock.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slides 29, 30",
+      "explanation": "The guide notes that replacing the breathing circuit often resolves a failed leak check.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "29, 30",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slides 29, 30"
+      "supp": null
     },
     {
       "id": "43",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary reason why breathing circuit disconnects occur frequently during head and neck surgical procedures?",
+      "stem": "What is the most common hypercarbia hazard immediately after intubation according to the study guide?",
       "options": [
-        "Surgical drapes conceal the patient's face and airway, hiding accidental tube dislodgement or traction",
-        "Head flexion increases apparatus dead space beyond the capacity of the Y-piece",
-        "Electrosurgical units generate radiofrequencies that loosen corrugated plastic connectors",
-        "Nitrous oxide diffusion softens the 15 mm endotracheal tube adapter"
+        "Forgetting to turn the ventilator on",
+        "A fresh absorbent canister",
+        "Excessive scavenging suction",
+        "A fully open APL during controlled ventilation"
       ],
       "answer": [
         0
       ],
-      "explanation": "During head and neck surgery, surgical drapes cover the face and endotracheal tube. Movement of the surgical team or table manipulation can easily dislodge the circuit unseen beneath the drapes.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 23",
+      "explanation": "The hazards section identifies forgetting to turn the ventilator on after intubation as the most common cause.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "23",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 23"
+      "supp": null
     },
     {
       "id": "44",
       "set": 2,
-      "type": "single",
-      "stem": "What type of fire extinguisher is specifically recommended for extinguishing a fire in the operating room when water or saline has failed?",
+      "type": "multi",
+      "stem": "Which TWO problems can cause hypercarbia by increasing rebreathing? (Select 2)",
       "options": [
-        "Carbon dioxide (CO2) extinguisher",
-        "Dry chemical ammonium phosphate extinguisher",
-        "Pressurized foam extinguisher",
-        "Halon 1211 liquid agent extinguisher"
+        "Exhausted absorbent",
+        "Incompetent unidirectional valve",
+        "Open oxygen cylinder",
+        "High fresh gas flow with effective absorption",
+        "Working scavenger",
+        "Correctly assembled circle"
       ],
       "answer": [
-        0
+        0,
+        1
       ],
-      "explanation": "A carbon dioxide (CO2) fire extinguisher is recommended in the operating room because it leaves no corrosive chemical residue on patient tissues or delicate electronics.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 38",
+      "explanation": "Exhausted absorbent and incompetent unidirectional valves both permit CO2 rebreathing.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "38",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 38"
+      "supp": null
     },
     {
       "id": "45",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary electrical hazard of using an electrosurgical unit (ESU / Bovie) on a patient with a permanent cardiac pacemaker?",
+      "stem": "Where should the fresh-gas inlet NOT be placed in a circle system?",
       "options": [
-        "High radiofrequency current can cause electrical interference, resulting in pacemaker reprogramming, inhibition, or myocardial burns at the lead tip",
-        "The ESU current causes instantaneous battery explosion within the pacemaker generator",
-        "The pacemaker ground wire diverts current, causing the line isolation monitor to trip",
-        "Radiofrequency current converts pacemaker pacing spikes into direct current shocks"
+        "Between the patient and expiratory valve",
+        "Upstream of the inspiratory valve",
+        "Near the absorber",
+        "On the machine side of the circle"
       ],
       "answer": [
         0
       ],
-      "explanation": "The high-frequency energy of an ESU interferes with cardiac pacemakers, potentially causing oversensing (inhibition of pacing), asynchronous resetting, damage to the internal circuitry, or myocardial burns where the lead meets the myocardium.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 31",
+      "explanation": "The guide identifies a fresh-gas inlet between the patient and expiratory valve as an arrangement to avoid.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "31",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 31"
+      "supp": null
     },
     {
       "id": "46",
       "set": 2,
       "type": "single",
-      "stem": "During laser surgery of the vocal cords, the surgeon notices a small flame at the tracheal tube. According to fire protocols, what liquid should be poured into the airway immediately after pulling the tube and stopping gas flows?",
+      "stem": "Where should the APL valve NOT be placed in a circle system?",
       "options": [
-        "Sterile saline or water",
-        "Cold mineral oil",
-        "Liquid chlorhexidine",
-        "Alcohol-free mouthwash"
+        "Between the patient and inspiratory valve",
+        "Near the reservoir bag",
+        "On the expiratory side",
+        "Near the absorber"
       ],
       "answer": [
         0
       ],
-      "explanation": "After pulling the burning tube and stopping gases, the airway is immediately flushed with sterile saline or water to extinguish residual embers and cool tracheal tissues.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 36",
+      "explanation": "An APL valve between the patient and inspiratory valve is listed as an unsafe circle arrangement.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "36",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 36"
+      "supp": null
     },
     {
       "id": "47",
       "set": 2,
       "type": "single",
-      "stem": "Why is the operating room electrical power supply ungrounded via an isolation transformer?",
+      "stem": "Where should the reservoir bag NOT be placed in a circle system?",
       "options": [
-        "To prevent electric shock (macroshock) if personnel touch a live wire while standing on a wet floor",
-        "To allow electrosurgical units to operate without requiring a grounding pad",
-        "To prevent high-voltage power surges from melting variable bypass vaporizers",
-        "To ensure that workstation backup batteries recharge continuously during surgery"
+        "Between the patient and either unidirectional valve",
+        "Near the APL valve",
+        "On the machine side of the expiratory limb",
+        "Near the absorber"
       ],
       "answer": [
         0
       ],
-      "explanation": "In an ungrounded system, current is isolated from ground potential. A person standing in conductive fluid (saline/blood) touching a single live conductor will not complete a circuit to ground, preventing macroshock.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slides 29, 30",
+      "explanation": "The reservoir bag should not be placed between the patient and either unidirectional valve.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "29, 30",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slides 29, 30"
+      "supp": null
     },
     {
       "id": "48",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary reason why breathing circuit disconnects occur frequently during head and neck surgical procedures?",
+      "stem": "Which Mapleson circuit is the study guide's choice for spontaneous breathing?",
       "options": [
-        "Surgical drapes conceal the patient's face and airway, hiding accidental tube dislodgement or traction",
-        "Head flexion increases apparatus dead space beyond the capacity of the Y-piece",
-        "Electrosurgical units generate radiofrequencies that loosen corrugated plastic connectors",
-        "Nitrous oxide diffusion softens the 15 mm endotracheal tube adapter"
+        "Mapleson A (Magill)",
+        "Mapleson B",
+        "Mapleson C",
+        "Any Mapleson at the same flow"
       ],
       "answer": [
         0
       ],
-      "explanation": "During head and neck surgery, surgical drapes cover the face and endotracheal tube. Movement of the surgical team or table manipulation can easily dislodge the circuit unseen beneath the drapes.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 23",
+      "explanation": "Mapleson A is designated for spontaneous breathing.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "23",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 23"
+      "supp": null
     },
     {
       "id": "49",
       "set": 2,
       "type": "single",
-      "stem": "What type of fire extinguisher is specifically recommended for extinguishing a fire in the operating room when water or saline has failed?",
+      "stem": "A spontaneously breathing patient has a minute ventilation of 8 L/min on a Mapleson A. What minimum fresh gas flow does the guide suggest?",
       "options": [
-        "Carbon dioxide (CO2) extinguisher",
-        "Dry chemical ammonium phosphate extinguisher",
-        "Pressurized foam extinguisher",
-        "Halon 1211 liquid agent extinguisher"
+        "About 2.4 L/min",
+        "About 5.6 L/min",
+        "About 8 L/min",
+        "About 20 L/min"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "A carbon dioxide (CO2) fire extinguisher is recommended in the operating room because it leaves no corrosive chemical residue on patient tissues or delicate electronics.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 38",
+      "explanation": "Mapleson A requires approximately 0.7 × minute ventilation, so 0.7 × 8 = 5.6 L/min.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "38",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 38"
+      "supp": null
     },
     {
       "id": "50",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary electrical hazard of using an electrosurgical unit (ESU / Bovie) on a patient with a permanent cardiac pacemaker?",
+      "stem": "A Mapleson C is used for controlled ventilation with minute ventilation of 6 L/min. Which fresh gas flow range fits the guide?",
       "options": [
-        "High radiofrequency current can cause electrical interference, resulting in pacemaker reprogramming, inhibition, or myocardial burns at the lead tip",
-        "The ESU current causes instantaneous battery explosion within the pacemaker generator",
-        "The pacemaker ground wire diverts current, causing the line isolation monitor to trip",
-        "Radiofrequency current converts pacemaker pacing spikes into direct current shocks"
+        "2–4 L/min",
+        "4.2–6 L/min",
+        "9–15 L/min",
+        "18–24 L/min"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "The high-frequency energy of an ESU interferes with cardiac pacemakers, potentially causing oversensing (inhibition of pacing), asynchronous resetting, damage to the internal circuitry, or myocardial burns where the lead meets the myocardium.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 31",
+      "explanation": "Mapleson B and C require about 1.5–2.5 × minute ventilation. With 6 L/min, that is 9–15 L/min.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "31",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 31"
+      "supp": null
     },
     {
       "id": "51",
       "set": 2,
       "type": "single",
-      "stem": "During laser surgery of the vocal cords, the surgeon notices a small flame at the tracheal tube. According to fire protocols, what liquid should be poured into the airway immediately after pulling the tube and stopping gas flows?",
+      "stem": "Why do Mapleson B and C require relatively high fresh gas flows?",
       "options": [
-        "Sterile saline or water",
-        "Cold mineral oil",
-        "Liquid chlorhexidine",
-        "Alcohol-free mouthwash"
+        "Fresh gas enters near the patient and a blind pouch permits rebreathing",
+        "They contain an absorbent that consumes oxygen",
+        "Their reservoir bags are too small",
+        "They use a one-way turbine valve"
       ],
       "answer": [
         0
       ],
-      "explanation": "After pulling the burning tube and stopping gases, the airway is immediately flushed with sterile saline or water to extinguish residual embers and cool tracheal tissues.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 36",
+      "explanation": "Their configuration permits rebreathing, so higher fresh gas flow is required to wash exhaled gas away.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "36",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 36"
+      "supp": null
     },
     {
       "id": "52",
       "set": 2,
       "type": "single",
-      "stem": "Why is the operating room electrical power supply ungrounded via an isolation transformer?",
+      "stem": "What useful bedside information does the reservoir bag provide during transport with a Mapleson circuit?",
       "options": [
-        "To prevent electric shock (macroshock) if personnel touch a live wire while standing on a wet floor",
-        "To allow electrosurgical units to operate without requiring a grounding pad",
-        "To prevent high-voltage power surges from melting variable bypass vaporizers",
-        "To ensure that workstation backup batteries recharge continuously during surgery"
+        "A sense of respiratory-system compliance",
+        "Direct arterial oxygen content",
+        "Inspired oxygen concentration",
+        "Anesthetic depth"
       ],
       "answer": [
         0
       ],
-      "explanation": "In an ungrounded system, current is isolated from ground potential. A person standing in conductive fluid (saline/blood) touching a single live conductor will not complete a circuit to ground, preventing macroshock.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slides 29, 30",
+      "explanation": "The reservoir bag allows the provider to feel compliance during ventilation.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "29, 30",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slides 29, 30"
+      "supp": null
     },
     {
       "id": "53",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary reason why breathing circuit disconnects occur frequently during head and neck surgical procedures?",
+      "stem": "Which pattern best fits a circuit occlusion?",
       "options": [
-        "Surgical drapes conceal the patient's face and airway, hiding accidental tube dislodgement or traction",
-        "Head flexion increases apparatus dead space beyond the capacity of the Y-piece",
-        "Electrosurgical units generate radiofrequencies that loosen corrugated plastic connectors",
-        "Nitrous oxide diffusion softens the 15 mm endotracheal tube adapter"
+        "High pressure with no flow",
+        "Low pressure with high exhaled volume",
+        "Normal pressure with high ETCO2 only",
+        "Low pressure with low resistance"
       ],
       "answer": [
         0
       ],
-      "explanation": "During head and neck surgery, surgical drapes cover the face and endotracheal tube. Movement of the surgical team or table manipulation can easily dislodge the circuit unseen beneath the drapes.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 23",
+      "explanation": "Occlusion produces high pressure with little or no flow.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "23",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 23"
+      "supp": null
     },
     {
       "id": "54",
       "set": 2,
       "type": "single",
-      "stem": "What type of fire extinguisher is specifically recommended for extinguishing a fire in the operating room when water or saline has failed?",
+      "stem": "A spontaneously breathing patient suddenly develops high circuit pressure just after induction. Which simple cause should be checked first?",
       "options": [
-        "Carbon dioxide (CO2) extinguisher",
-        "Dry chemical ammonium phosphate extinguisher",
-        "Pressurized foam extinguisher",
-        "Halon 1211 liquid agent extinguisher"
+        "APL valve left closed",
+        "Empty CO2 absorbent",
+        "Low scavenging suction",
+        "Open reservoir bag"
       ],
       "answer": [
         0
       ],
-      "explanation": "A carbon dioxide (CO2) fire extinguisher is recommended in the operating room because it leaves no corrosive chemical residue on patient tissues or delicate electronics.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 38",
+      "explanation": "A closed APL valve, often left closed after induction, can cause high circuit pressure during spontaneous breathing.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "38",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 38"
+      "supp": null
     },
     {
       "id": "55",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary electrical hazard of using an electrosurgical unit (ESU / Bovie) on a patient with a permanent cardiac pacemaker?",
+      "stem": "A kinked tube leading to the scavenger can cause which breathing-system effect?",
       "options": [
-        "High radiofrequency current can cause electrical interference, resulting in pacemaker reprogramming, inhibition, or myocardial burns at the lead tip",
-        "The ESU current causes instantaneous battery explosion within the pacemaker generator",
-        "The pacemaker ground wire diverts current, causing the line isolation monitor to trip",
-        "Radiofrequency current converts pacemaker pacing spikes into direct current shocks"
+        "High circuit pressure",
+        "A falsely high O2 cylinder reading",
+        "Low vaporizer temperature",
+        "Loss of ECG signal"
       ],
       "answer": [
         0
       ],
-      "explanation": "The high-frequency energy of an ESU interferes with cardiac pacemakers, potentially causing oversensing (inhibition of pacing), asynchronous resetting, damage to the internal circuitry, or myocardial burns where the lead meets the myocardium.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 31",
+      "explanation": "A kinked scavenger pathway can impede gas egress and raise circuit pressure.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "31",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 31"
+      "supp": null
     },
     {
       "id": "56",
       "set": 2,
       "type": "single",
-      "stem": "During laser surgery of the vocal cords, the surgeon notices a small flame at the tracheal tube. According to fire protocols, what liquid should be poured into the airway immediately after pulling the tube and stopping gas flows?",
+      "stem": "What pattern is expected with a breathing-circuit disconnection during head or neck surgery?",
       "options": [
-        "Sterile saline or water",
-        "Cold mineral oil",
-        "Liquid chlorhexidine",
-        "Alcohol-free mouthwash"
+        "Low pressure and low volume",
+        "High pressure and high volume",
+        "High pressure with no flow",
+        "Normal pressure and elevated inspired CO2"
       ],
       "answer": [
         0
       ],
-      "explanation": "After pulling the burning tube and stopping gases, the airway is immediately flushed with sterile saline or water to extinguish residual embers and cool tracheal tissues.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 36",
+      "explanation": "A circuit disconnection presents with low pressure and low delivered or exhaled volume.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "36",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 36"
+      "supp": null
     },
     {
       "id": "57",
       "set": 2,
       "type": "single",
-      "stem": "Why is the operating room electrical power supply ungrounded via an isolation transformer?",
+      "stem": "Why does moving a vaporizer increase the risk of an agent-dosing error?",
       "options": [
-        "To prevent electric shock (macroshock) if personnel touch a live wire while standing on a wet floor",
-        "To allow electrosurgical units to operate without requiring a grounding pad",
-        "To prevent high-voltage power surges from melting variable bypass vaporizers",
-        "To ensure that workstation backup batteries recharge continuously during surgery"
+        "Movement is associated with tipping, liquid migration, or incorrect setup",
+        "It raises pipeline pressure",
+        "It disables the O2 analyzer",
+        "It changes the gas cylinder PISS pins"
       ],
       "answer": [
         0
       ],
-      "explanation": "In an ungrounded system, current is isolated from ground potential. A person standing in conductive fluid (saline/blood) touching a single live conductor will not complete a circuit to ground, preventing macroshock.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slides 29, 30",
+      "explanation": "Moving a vaporizer can contribute to tipping, liquid migration, or setup errors that alter agent delivery.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "29, 30",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slides 29, 30"
+      "supp": null
     },
     {
       "id": "58",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary reason why breathing circuit disconnects occur frequently during head and neck surgical procedures?",
+      "stem": "What electrical supply range does the study guide give for the anesthesia machine?",
       "options": [
-        "Surgical drapes conceal the patient's face and airway, hiding accidental tube dislodgement or traction",
-        "Head flexion increases apparatus dead space beyond the capacity of the Y-piece",
-        "Electrosurgical units generate radiofrequencies that loosen corrugated plastic connectors",
-        "Nitrous oxide diffusion softens the 15 mm endotracheal tube adapter"
+        "12–24 V DC",
+        "50–60 V AC",
+        "90–130 V AC at 50–60 Hz",
+        "220–240 V DC only"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "During head and neck surgery, surgical drapes cover the face and endotracheal tube. Movement of the surgical team or table manipulation can easily dislodge the circuit unseen beneath the drapes.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 23",
+      "explanation": "The hazards guide lists machine power as 90–130 V alternating current at 50–60 Hz.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "23",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 23"
+      "supp": null
     },
     {
       "id": "59",
       "set": 2,
       "type": "single",
-      "stem": "What type of fire extinguisher is specifically recommended for extinguishing a fire in the operating room when water or saline has failed?",
+      "stem": "Why are separate circuit breakers used in the anesthesia workstation?",
       "options": [
-        "Carbon dioxide (CO2) extinguisher",
-        "Dry chemical ammonium phosphate extinguisher",
-        "Pressurized foam extinguisher",
-        "Halon 1211 liquid agent extinguisher"
+        "To protect the AC supply, battery, and convenience outlets as separate circuits",
+        "To regulate N2O concentration",
+        "To control scavenging vacuum",
+        "To determine vaporizer output"
       ],
       "answer": [
         0
       ],
-      "explanation": "A carbon dioxide (CO2) fire extinguisher is recommended in the operating room because it leaves no corrosive chemical residue on patient tissues or delicate electronics.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 38",
+      "explanation": "Circuit breakers separately protect the AC supply, battery, and convenience receptacles.",
+      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "8",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "38",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 38"
+      "supp": null
     },
     {
       "id": "60",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary electrical hazard of using an electrosurgical unit (ESU / Bovie) on a patient with a permanent cardiac pacemaker?",
+      "stem": "Approximately how long does the course guide say a typical workstation backup battery lasts?",
       "options": [
-        "High radiofrequency current can cause electrical interference, resulting in pacemaker reprogramming, inhibition, or myocardial burns at the lead tip",
-        "The ESU current causes instantaneous battery explosion within the pacemaker generator",
-        "The pacemaker ground wire diverts current, causing the line isolation monitor to trip",
-        "Radiofrequency current converts pacemaker pacing spikes into direct current shocks"
+        "About 5 minutes",
+        "About 40 minutes, with some machines lasting 1–2 hours",
+        "About 8 hours on every machine",
+        "Indefinitely if the ventilator is off"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "The high-frequency energy of an ESU interferes with cardiac pacemakers, potentially causing oversensing (inhibition of pacing), asynchronous resetting, damage to the internal circuitry, or myocardial burns where the lead meets the myocardium.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 31",
+      "explanation": "The course guide teaches about 40 minutes, while noting that some machines may last 1–2 hours. Battery duration is model-dependent.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "31",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 31"
+      "supp": null
     },
     {
       "id": "61",
       "set": 2,
       "type": "single",
-      "stem": "During laser surgery of the vocal cords, the surgeon notices a small flame at the tracheal tube. According to fire protocols, what liquid should be poured into the airway immediately after pulling the tube and stopping gas flows?",
+      "stem": "What happens when workstation battery voltage falls below about 10 V?",
       "options": [
-        "Sterile saline or water",
-        "Cold mineral oil",
-        "Liquid chlorhexidine",
-        "Alcohol-free mouthwash"
+        "All machine power cuts off to prevent deep discharge",
+        "Only the convenience outlets shut off",
+        "The Tec 6 switches to mechanical mode",
+        "The pipeline fail-safe closes"
       ],
       "answer": [
         0
       ],
-      "explanation": "After pulling the burning tube and stopping gases, the airway is immediately flushed with sterile saline or water to extinguish residual embers and cool tracheal tissues.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 36",
+      "explanation": "The guide states that all power cuts off below about 10 V to prevent deep battery discharge.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "36",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 36"
+      "supp": null
     },
     {
       "id": "62",
       "set": 2,
       "type": "single",
-      "stem": "Why is the operating room electrical power supply ungrounded via an isolation transformer?",
+      "stem": "Which equation is Ohm's law for direct current?",
       "options": [
-        "To prevent electric shock (macroshock) if personnel touch a live wire while standing on a wet floor",
-        "To allow electrosurgical units to operate without requiring a grounding pad",
-        "To prevent high-voltage power surges from melting variable bypass vaporizers",
-        "To ensure that workstation backup batteries recharge continuously during surgery"
+        "E = I × R",
+        "P = E × I",
+        "J = W × s",
+        "Q = V / t"
       ],
       "answer": [
         0
       ],
-      "explanation": "In an ungrounded system, current is isolated from ground potential. A person standing in conductive fluid (saline/blood) touching a single live conductor will not complete a circuit to ground, preventing macroshock.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slides 29, 30",
+      "explanation": "Ohm's law is E = I × R. For AC, impedance replaces simple resistance.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "29, 30",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slides 29, 30"
+      "supp": null
     },
     {
       "id": "63",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary reason why breathing circuit disconnects occur frequently during head and neck surgical procedures?",
+      "stem": "Which equation gives electrical power?",
       "options": [
-        "Surgical drapes conceal the patient's face and airway, hiding accidental tube dislodgement or traction",
-        "Head flexion increases apparatus dead space beyond the capacity of the Y-piece",
-        "Electrosurgical units generate radiofrequencies that loosen corrugated plastic connectors",
-        "Nitrous oxide diffusion softens the 15 mm endotracheal tube adapter"
+        "P = E × I",
+        "E = I × R only",
+        "P = R / I",
+        "J = E / t"
       ],
       "answer": [
         0
       ],
-      "explanation": "During head and neck surgery, surgical drapes cover the face and endotracheal tube. Movement of the surgical team or table manipulation can easily dislodge the circuit unseen beneath the drapes.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 23",
+      "explanation": "Electrical power is voltage multiplied by current: P = E × I.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "23",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 23"
+      "supp": null
     },
     {
       "id": "64",
       "set": 2,
       "type": "single",
-      "stem": "What type of fire extinguisher is specifically recommended for extinguishing a fire in the operating room when water or saline has failed?",
+      "stem": "A 500-W device runs for 4 seconds. How much energy is used?",
       "options": [
-        "Carbon dioxide (CO2) extinguisher",
-        "Dry chemical ammonium phosphate extinguisher",
-        "Pressurized foam extinguisher",
-        "Halon 1211 liquid agent extinguisher"
+        "125 J",
+        "500 J",
+        "2,000 J",
+        "4,000 J"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "A carbon dioxide (CO2) fire extinguisher is recommended in the operating room because it leaves no corrosive chemical residue on patient tissues or delicate electronics.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 38",
+      "explanation": "Energy in joules equals watts multiplied by seconds. 500 × 4 = 2,000 J.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "38",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 38"
+      "supp": null
     },
     {
       "id": "65",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary electrical hazard of using an electrosurgical unit (ESU / Bovie) on a patient with a permanent cardiac pacemaker?",
+      "stem": "Relative to alternating current, approximately how much more direct current is required to cause ventricular fibrillation according to the guide?",
       "options": [
-        "High radiofrequency current can cause electrical interference, resulting in pacemaker reprogramming, inhibition, or myocardial burns at the lead tip",
-        "The ESU current causes instantaneous battery explosion within the pacemaker generator",
-        "The pacemaker ground wire diverts current, causing the line isolation monitor to trip",
-        "Radiofrequency current converts pacemaker pacing spikes into direct current shocks"
+        "The same amount",
+        "About 2 times more",
+        "About 3 times more",
+        "About 10 times more"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "The high-frequency energy of an ESU interferes with cardiac pacemakers, potentially causing oversensing (inhibition of pacing), asynchronous resetting, damage to the internal circuitry, or myocardial burns where the lead meets the myocardium.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 31",
+      "explanation": "The guide states that about three times more DC than AC is needed to cause ventricular fibrillation, although DC is not harmless.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "31",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 31"
+      "supp": null
     },
     {
       "id": "66",
       "set": 2,
       "type": "single",
-      "stem": "During laser surgery of the vocal cords, the surgeon notices a small flame at the tracheal tube. According to fire protocols, what liquid should be poured into the airway immediately after pulling the tube and stopping gas flows?",
+      "stem": "What is a capacitor?",
       "options": [
-        "Sterile saline or water",
-        "Cold mineral oil",
-        "Liquid chlorhexidine",
-        "Alcohol-free mouthwash"
+        "Two conductors separated by an insulator",
+        "A resistor connected directly to ground",
+        "A single conductor surrounded by saline",
+        "A transformer that produces DC"
       ],
       "answer": [
         0
       ],
-      "explanation": "After pulling the burning tube and stopping gases, the airway is immediately flushed with sterile saline or water to extinguish residual embers and cool tracheal tissues.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 36",
+      "explanation": "A capacitor consists of two conductors separated by an insulator; with DC, only a momentary current flows.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "36",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 36"
+      "supp": null
     },
     {
       "id": "67",
       "set": 2,
       "type": "single",
-      "stem": "Why is the operating room electrical power supply ungrounded via an isolation transformer?",
+      "stem": "How is electrical grounding handled in the operating room according to the study guide?",
       "options": [
-        "To prevent electric shock (macroshock) if personnel touch a live wire while standing on a wet floor",
-        "To allow electrosurgical units to operate without requiring a grounding pad",
-        "To prevent high-voltage power surges from melting variable bypass vaporizers",
-        "To ensure that workstation backup batteries recharge continuously during surgery"
+        "Power is isolated from ground while equipment is grounded",
+        "Power and equipment are both ungrounded",
+        "Power is grounded but equipment is not",
+        "Everything is directly grounded to the patient"
       ],
       "answer": [
         0
       ],
-      "explanation": "In an ungrounded system, current is isolated from ground potential. A person standing in conductive fluid (saline/blood) touching a single live conductor will not complete a circuit to ground, preventing macroshock.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slides 29, 30",
+      "explanation": "OR power is isolated from ground for macroshock protection, while equipment remains grounded.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "29, 30",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slides 29, 30"
+      "supp": null
     },
     {
       "id": "68",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary reason why breathing circuit disconnects occur frequently during head and neck surgical procedures?",
+      "stem": "What frequency range does the study guide give for electrosurgery?",
       "options": [
-        "Surgical drapes conceal the patient's face and airway, hiding accidental tube dislodgement or traction",
-        "Head flexion increases apparatus dead space beyond the capacity of the Y-piece",
-        "Electrosurgical units generate radiofrequencies that loosen corrugated plastic connectors",
-        "Nitrous oxide diffusion softens the 15 mm endotracheal tube adapter"
+        "50–60 Hz",
+        "500 Hz–1 kHz",
+        "500 kHz–1 MHz",
+        "5–10 MHz only"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "During head and neck surgery, surgical drapes cover the face and endotracheal tube. Movement of the surgical team or table manipulation can easily dislodge the circuit unseen beneath the drapes.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 23",
+      "explanation": "Electrosurgical units operate at radiofrequency, approximately 500 kHz to 1 MHz.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "23",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 23"
+      "supp": null
     },
     {
       "id": "69",
       "set": 2,
       "type": "single",
-      "stem": "What type of fire extinguisher is specifically recommended for extinguishing a fire in the operating room when water or saline has failed?",
+      "stem": "Why does electrosurgical radiofrequency current not normally trigger ventricular fibrillation?",
       "options": [
-        "Carbon dioxide (CO2) extinguisher",
-        "Dry chemical ammonium phosphate extinguisher",
-        "Pressurized foam extinguisher",
-        "Halon 1211 liquid agent extinguisher"
+        "Its frequency is too high to excite cardiac cells",
+        "Its voltage is always below 1 V",
+        "The return pad blocks all current",
+        "The patient is electrically isolated from the ESU"
       ],
       "answer": [
         0
       ],
-      "explanation": "A carbon dioxide (CO2) fire extinguisher is recommended in the operating room because it leaves no corrosive chemical residue on patient tissues or delicate electronics.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 38",
+      "explanation": "The very high frequency used by the ESU does not stimulate myocardium the way lower-frequency current can.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "38",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 38"
+      "supp": null
     },
     {
       "id": "70",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary electrical hazard of using an electrosurgical unit (ESU / Bovie) on a patient with a permanent cardiac pacemaker?",
+      "stem": "Where should the ESU return pad be positioned?",
       "options": [
-        "High radiofrequency current can cause electrical interference, resulting in pacemaker reprogramming, inhibition, or myocardial burns at the lead tip",
-        "The ESU current causes instantaneous battery explosion within the pacemaker generator",
-        "The pacemaker ground wire diverts current, causing the line isolation monitor to trip",
-        "Radiofrequency current converts pacemaker pacing spikes into direct current shocks"
+        "Close to the operative site",
+        "As far from the patient as possible",
+        "Directly over an ECG electrode",
+        "On a bony prominence with poor contact"
       ],
       "answer": [
         0
       ],
-      "explanation": "The high-frequency energy of an ESU interferes with cardiac pacemakers, potentially causing oversensing (inhibition of pacing), asynchronous resetting, damage to the internal circuitry, or myocardial burns where the lead meets the myocardium.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 31",
+      "explanation": "The guide recommends placing the return pad close to the operative site and keeping ECG electrodes away from the current path.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "31",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 31"
+      "supp": null
     },
     {
       "id": "71",
       "set": 2,
       "type": "single",
-      "stem": "During laser surgery of the vocal cords, the surgeon notices a small flame at the tracheal tube. According to fire protocols, what liquid should be poured into the airway immediately after pulling the tube and stopping gas flows?",
+      "stem": "What is a major consequence of poor ESU return-pad contact?",
       "options": [
-        "Sterile saline or water",
-        "Cold mineral oil",
-        "Liquid chlorhexidine",
-        "Alcohol-free mouthwash"
+        "Patient burn at the pad site",
+        "Failure of the O2 analyzer",
+        "Low pipeline pressure",
+        "Vaporizer underfilling"
       ],
       "answer": [
         0
       ],
-      "explanation": "After pulling the burning tube and stopping gases, the airway is immediately flushed with sterile saline or water to extinguish residual embers and cool tracheal tissues.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 36",
+      "explanation": "Poor pad contact concentrates current and can cause a burn.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "36",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 36"
+      "supp": null
     },
     {
       "id": "72",
       "set": 2,
-      "type": "single",
-      "stem": "Why is the operating room electrical power supply ungrounded via an isolation transformer?",
+      "type": "multi",
+      "stem": "Which THREE devices can be affected by ESU interference? (Select 3)",
       "options": [
-        "To prevent electric shock (macroshock) if personnel touch a live wire while standing on a wet floor",
-        "To allow electrosurgical units to operate without requiring a grounding pad",
-        "To prevent high-voltage power surges from melting variable bypass vaporizers",
-        "To ensure that workstation backup batteries recharge continuously during surgery"
+        "ECG",
+        "Pulse oximeter",
+        "Cardiac pacemaker",
+        "Cylinder Bourdon gauge",
+        "Mechanical APL valve",
+        "PISS pins"
       ],
       "answer": [
-        0
+        0,
+        1,
+        2
       ],
-      "explanation": "In an ungrounded system, current is isolated from ground potential. A person standing in conductive fluid (saline/blood) touching a single live conductor will not complete a circuit to ground, preventing macroshock.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slides 29, 30",
+      "explanation": "The guide notes interference with ECG, pulse oximetry, cardiac-output monitors, and pacemakers.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "29, 30",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slides 29, 30"
+      "supp": null
     },
     {
       "id": "73",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary reason why breathing circuit disconnects occur frequently during head and neck surgical procedures?",
+      "stem": "After workstation battery power is exhausted, which resources can still be available on a machine with mechanical flow control?",
       "options": [
-        "Surgical drapes conceal the patient's face and airway, hiding accidental tube dislodgement or traction",
-        "Head flexion increases apparatus dead space beyond the capacity of the Y-piece",
-        "Electrosurgical units generate radiofrequencies that loosen corrugated plastic connectors",
-        "Nitrous oxide diffusion softens the 15 mm endotracheal tube adapter"
+        "Emergency O2 and mechanical variable-bypass vaporizers",
+        "Tec 6 and Aladin only",
+        "Electronic ventilator and all monitors indefinitely",
+        "Only N2O from the pipeline"
       ],
       "answer": [
         0
       ],
-      "explanation": "During head and neck surgery, surgical drapes cover the face and endotracheal tube. Movement of the surgical team or table manipulation can easily dislodge the circuit unseen beneath the drapes.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 23",
+      "explanation": "Mechanical gas delivery and conventional variable-bypass vaporizers can remain usable without wall power on appropriate workstation designs; exact behavior is model-dependent.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "23",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 23"
+      "supp": null
     },
     {
       "id": "74",
       "set": 2,
       "type": "single",
-      "stem": "What type of fire extinguisher is specifically recommended for extinguishing a fire in the operating room when water or saline has failed?",
+      "stem": "Why can't a Tec 6 desflurane vaporizer be relied on after complete electrical power loss?",
       "options": [
-        "Carbon dioxide (CO2) extinguisher",
-        "Dry chemical ammonium phosphate extinguisher",
-        "Pressurized foam extinguisher",
-        "Halon 1211 liquid agent extinguisher"
+        "It requires electricity to heat and pressurize desflurane",
+        "It depends on the scavenger vacuum",
+        "It uses only cylinder oxygen",
+        "It is powered by the pulse oximeter"
       ],
       "answer": [
         0
       ],
-      "explanation": "A carbon dioxide (CO2) fire extinguisher is recommended in the operating room because it leaves no corrosive chemical residue on patient tissues or delicate electronics.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 38",
+      "explanation": "The Tec 6 requires electrical power for heating and pressure control.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "38",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 38"
+      "supp": null
     },
     {
       "id": "75",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary electrical hazard of using an electrosurgical unit (ESU / Bovie) on a patient with a permanent cardiac pacemaker?",
+      "stem": "Why can't an Aladin cassette be relied on after complete electrical power loss?",
       "options": [
-        "High radiofrequency current can cause electrical interference, resulting in pacemaker reprogramming, inhibition, or myocardial burns at the lead tip",
-        "The ESU current causes instantaneous battery explosion within the pacemaker generator",
-        "The pacemaker ground wire diverts current, causing the line isolation monitor to trip",
-        "Radiofrequency current converts pacemaker pacing spikes into direct current shocks"
+        "Its electronic control system requires power",
+        "It contains no volatile anesthetic",
+        "It works only with nitrous oxide",
+        "It depends on a grounded OR power system"
       ],
       "answer": [
         0
       ],
-      "explanation": "The high-frequency energy of an ESU interferes with cardiac pacemakers, potentially causing oversensing (inhibition of pacing), asynchronous resetting, damage to the internal circuitry, or myocardial burns where the lead meets the myocardium.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 31",
+      "explanation": "The Aladin is electronically controlled and requires power to deliver agent.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "31",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 31"
+      "supp": null
     },
     {
       "id": "76",
       "set": 2,
-      "type": "single",
-      "stem": "During laser surgery of the vocal cords, the surgeon notices a small flame at the tracheal tube. According to fire protocols, what liquid should be poured into the airway immediately after pulling the tube and stopping gas flows?",
+      "type": "multi",
+      "stem": "Which THREE actions belong in preparation for an operating-room fire? (Select 3)",
       "options": [
-        "Sterile saline or water",
-        "Cold mineral oil",
-        "Liquid chlorhexidine",
-        "Alcohol-free mouthwash"
+        "Identify high-risk cases",
+        "Assign tasks",
+        "Know the extinguisher location",
+        "Increase FiO2 before cautery",
+        "Keep prep solution wet",
+        "Hide the fire plan to reduce distraction"
       ],
       "answer": [
-        0
+        0,
+        1,
+        2
       ],
-      "explanation": "After pulling the burning tube and stopping gases, the airway is immediately flushed with sterile saline or water to extinguish residual embers and cool tracheal tissues.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 36",
+      "explanation": "Preparation includes training and drills, identifying high-risk cases, assigning tasks, and knowing the extinguisher location.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "36",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 36"
+      "supp": null
     },
     {
       "id": "77",
       "set": 2,
-      "type": "single",
-      "stem": "Why is the operating room electrical power supply ungrounded via an isolation transformer?",
+      "type": "multi",
+      "stem": "Which THREE elements make up the operating-room fire triangle? (Select 3)",
       "options": [
-        "To prevent electric shock (macroshock) if personnel touch a live wire while standing on a wet floor",
-        "To allow electrosurgical units to operate without requiring a grounding pad",
-        "To prevent high-voltage power surges from melting variable bypass vaporizers",
-        "To ensure that workstation backup batteries recharge continuously during surgery"
+        "Ignition source",
+        "Oxidizer",
+        "Fuel",
+        "Carbon dioxide absorbent",
+        "Pipeline regulator",
+        "Scavenging vacuum"
       ],
       "answer": [
-        0
+        0,
+        1,
+        2
       ],
-      "explanation": "In an ungrounded system, current is isolated from ground potential. A person standing in conductive fluid (saline/blood) touching a single live conductor will not complete a circuit to ground, preventing macroshock.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slides 29, 30",
+      "explanation": "A fire requires an ignition source, oxidizer, and fuel.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "29, 30",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slides 29, 30"
+      "supp": null
     },
     {
       "id": "78",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary reason why breathing circuit disconnects occur frequently during head and neck surgical procedures?",
+      "stem": "Which member of the fire triangle is primarily controlled by the anesthesia team?",
       "options": [
-        "Surgical drapes conceal the patient's face and airway, hiding accidental tube dislodgement or traction",
-        "Head flexion increases apparatus dead space beyond the capacity of the Y-piece",
-        "Electrosurgical units generate radiofrequencies that loosen corrugated plastic connectors",
-        "Nitrous oxide diffusion softens the 15 mm endotracheal tube adapter"
+        "Oxidizer concentration",
+        "Surgical ignition source",
+        "Drape material",
+        "Electrosurgical return-pad size"
       ],
       "answer": [
         0
       ],
-      "explanation": "During head and neck surgery, surgical drapes cover the face and endotracheal tube. Movement of the surgical team or table manipulation can easily dislodge the circuit unseen beneath the drapes.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 23",
+      "explanation": "The anesthesia team primarily controls oxidizers such as oxygen and nitrous oxide.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "23",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 23"
+      "supp": null
     },
     {
       "id": "79",
       "set": 2,
       "type": "single",
-      "stem": "What type of fire extinguisher is specifically recommended for extinguishing a fire in the operating room when water or saline has failed?",
+      "stem": "Why does replacing part of the oxygen with nitrous oxide NOT eliminate airway-fire risk?",
       "options": [
-        "Carbon dioxide (CO2) extinguisher",
-        "Dry chemical ammonium phosphate extinguisher",
-        "Pressurized foam extinguisher",
-        "Halon 1211 liquid agent extinguisher"
+        "N2O supports combustion as an oxidizer",
+        "N2O is a liquid fuel",
+        "N2O disables the fire alarm",
+        "N2O increases cuff pressure"
       ],
       "answer": [
         0
       ],
-      "explanation": "A carbon dioxide (CO2) fire extinguisher is recommended in the operating room because it leaves no corrosive chemical residue on patient tissues or delicate electronics.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 38",
+      "explanation": "Nitrous oxide supports combustion and should not be used as a strategy to reduce oxidizer risk.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "38",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 38"
+      "supp": null
     },
     {
       "id": "80",
       "set": 2,
-      "type": "single",
-      "stem": "What is the primary electrical hazard of using an electrosurgical unit (ESU / Bovie) on a patient with a permanent cardiac pacemaker?",
+      "type": "multi",
+      "stem": "Which TWO actions reduce fire risk when oxygen is being used near the face? (Select 2)",
       "options": [
-        "High radiofrequency current can cause electrical interference, resulting in pacemaker reprogramming, inhibition, or myocardial burns at the lead tip",
-        "The ESU current causes instantaneous battery explosion within the pacemaker generator",
-        "The pacemaker ground wire diverts current, causing the line isolation monitor to trip",
-        "Radiofrequency current converts pacemaker pacing spikes into direct current shocks"
+        "Use the lowest acceptable FiO2",
+        "Allow alcohol-based prep to dry fully",
+        "Add N2O to reduce oxygen fraction",
+        "Seal oxygen under the drapes",
+        "Increase fresh gas flow under drapes"
       ],
       "answer": [
-        0
+        0,
+        1
       ],
-      "explanation": "The high-frequency energy of an ESU interferes with cardiac pacemakers, potentially causing oversensing (inhibition of pacing), asynchronous resetting, damage to the internal circuitry, or myocardial burns where the lead meets the myocardium.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 31",
+      "explanation": "Fire prevention includes using the lowest acceptable FiO2 and allowing flammable prep solutions to dry completely.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "31",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 31"
+      "supp": null
     },
     {
       "id": "81",
       "set": 2,
       "type": "single",
-      "stem": "During laser surgery of the vocal cords, the surgeon notices a small flame at the tracheal tube. According to fire protocols, what liquid should be poured into the airway immediately after pulling the tube and stopping gas flows?",
+      "stem": "What are common early signs of an operating-room fire?",
       "options": [
-        "Sterile saline or water",
-        "Cold mineral oil",
-        "Liquid chlorhexidine",
-        "Alcohol-free mouthwash"
+        "Pop, flash, or smoke",
+        "Bradycardia and hypothermia only",
+        "Low pipeline pressure only",
+        "A curare cleft"
       ],
       "answer": [
         0
       ],
-      "explanation": "After pulling the burning tube and stopping gases, the airway is immediately flushed with sterile saline or water to extinguish residual embers and cool tracheal tissues.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 36",
+      "explanation": "The fire section lists a pop, flash, or smoke as early warning signs.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "36",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 36"
+      "supp": null
     },
     {
       "id": "82",
       "set": 2,
       "type": "single",
-      "stem": "Why is the operating room electrical power supply ungrounded via an isolation transformer?",
+      "stem": "An airway fire occurs. What should happen to the tracheal tube and gas flow?",
       "options": [
-        "To prevent electric shock (macroshock) if personnel touch a live wire while standing on a wet floor",
-        "To allow electrosurgical units to operate without requiring a grounding pad",
-        "To prevent high-voltage power surges from melting variable bypass vaporizers",
-        "To ensure that workstation backup batteries recharge continuously during surgery"
+        "Remove the tube and stop gas flow simultaneously",
+        "Stop gas flow, wait 30 seconds, then remove the tube",
+        "Increase oxygen flow while removing the tube",
+        "Leave the tube in place until an extinguisher arrives"
       ],
       "answer": [
         0
       ],
-      "explanation": "In an ungrounded system, current is isolated from ground potential. A person standing in conductive fluid (saline/blood) touching a single live conductor will not complete a circuit to ground, preventing macroshock.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slides 29, 30",
+      "explanation": "The guide emphasizes simultaneous removal of the burning tube and cessation of gas flow.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "29, 30",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slides 29, 30"
+      "supp": null
     },
     {
       "id": "83",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary reason why breathing circuit disconnects occur frequently during head and neck surgical procedures?",
+      "stem": "After removing a burning endotracheal tube and stopping gases, what should be placed into the airway?",
       "options": [
-        "Surgical drapes conceal the patient's face and airway, hiding accidental tube dislodgement or traction",
-        "Head flexion increases apparatus dead space beyond the capacity of the Y-piece",
-        "Electrosurgical units generate radiofrequencies that loosen corrugated plastic connectors",
-        "Nitrous oxide diffusion softens the 15 mm endotracheal tube adapter"
+        "Saline or water",
+        "Alcohol",
+        "Mineral oil",
+        "Hydrogen peroxide"
       ],
       "answer": [
         0
       ],
-      "explanation": "During head and neck surgery, surgical drapes cover the face and endotracheal tube. Movement of the surgical team or table manipulation can easily dislodge the circuit unseen beneath the drapes.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 23",
+      "explanation": "Saline or water is used to extinguish residual airway fire and cool tissues.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "23",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 23"
+      "supp": null
     },
     {
       "id": "84",
       "set": 2,
       "type": "single",
-      "stem": "What type of fire extinguisher is specifically recommended for extinguishing a fire in the operating room when water or saline has failed?",
+      "stem": "After an airway fire is extinguished, which assessment may be needed?",
       "options": [
-        "Carbon dioxide (CO2) extinguisher",
-        "Dry chemical ammonium phosphate extinguisher",
-        "Pressurized foam extinguisher",
-        "Halon 1211 liquid agent extinguisher"
+        "Bronchoscopy to assess airway injury",
+        "PISS inspection only",
+        "Routine extubation without assessment",
+        "No further evaluation if SpO2 is normal"
       ],
       "answer": [
         0
       ],
-      "explanation": "A carbon dioxide (CO2) fire extinguisher is recommended in the operating room because it leaves no corrosive chemical residue on patient tissues or delicate electronics.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 38",
+      "explanation": "After extinguishing an airway fire, the airway should be assessed and bronchoscopy may be needed, with reintubation as indicated.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "38",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 38"
+      "supp": null
     },
     {
       "id": "85",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary electrical hazard of using an electrosurgical unit (ESU / Bovie) on a patient with a permanent cardiac pacemaker?",
+      "stem": "For a fire on the patient rather than in the airway, what should be removed promptly?",
       "options": [
-        "High radiofrequency current can cause electrical interference, resulting in pacemaker reprogramming, inhibition, or myocardial burns at the lead tip",
-        "The ESU current causes instantaneous battery explosion within the pacemaker generator",
-        "The pacemaker ground wire diverts current, causing the line isolation monitor to trip",
-        "Radiofrequency current converts pacemaker pacing spikes into direct current shocks"
+        "Burning drapes and material",
+        "The arterial line only",
+        "The O2 cylinder yoke",
+        "All ECG electrodes before extinguishing"
       ],
       "answer": [
         0
       ],
-      "explanation": "The high-frequency energy of an ESU interferes with cardiac pacemakers, potentially causing oversensing (inhibition of pacing), asynchronous resetting, damage to the internal circuitry, or myocardial burns where the lead meets the myocardium.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 31",
+      "explanation": "For a patient fire, turn off gases and remove burning drapes and material before or while extinguishing the fire.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "31",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 31"
+      "supp": null
     },
     {
       "id": "86",
       "set": 2,
       "type": "single",
-      "stem": "During laser surgery of the vocal cords, the surgeon notices a small flame at the tracheal tube. According to fire protocols, what liquid should be poured into the airway immediately after pulling the tube and stopping gas flows?",
+      "stem": "If an operating-room fire does not go out with water or saline, which extinguisher does the course guide recommend?",
       "options": [
-        "Sterile saline or water",
-        "Cold mineral oil",
-        "Liquid chlorhexidine",
-        "Alcohol-free mouthwash"
+        "CO2 extinguisher",
+        "Foam extinguisher",
+        "Class D metal extinguisher",
+        "Water-only extinguisher"
       ],
       "answer": [
         0
       ],
-      "explanation": "After pulling the burning tube and stopping gases, the airway is immediately flushed with sterile saline or water to extinguish residual embers and cool tracheal tissues.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 36",
+      "explanation": "The course guide recommends a carbon dioxide extinguisher when water or saline is insufficient.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "36",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 36"
+      "supp": null
     },
     {
       "id": "87",
       "set": 2,
       "type": "single",
-      "stem": "Why is the operating room electrical power supply ungrounded via an isolation transformer?",
+      "stem": "During evacuation for an uncontrolled OR fire, what should be done with the room door?",
       "options": [
-        "To prevent electric shock (macroshock) if personnel touch a live wire while standing on a wet floor",
-        "To allow electrosurgical units to operate without requiring a grounding pad",
-        "To prevent high-voltage power surges from melting variable bypass vaporizers",
-        "To ensure that workstation backup batteries recharge continuously during surgery"
+        "Close it and do not reopen it",
+        "Prop it open for airflow",
+        "Remove it from the hinges",
+        "Open it intermittently to vent smoke"
       ],
       "answer": [
         0
       ],
-      "explanation": "In an ungrounded system, current is isolated from ground potential. A person standing in conductive fluid (saline/blood) touching a single live conductor will not complete a circuit to ground, preventing macroshock.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slides 29, 30",
+      "explanation": "The guide instructs evacuation with the door closed and not reopened, helping contain fire and smoke.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "29, 30",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slides 29, 30"
+      "supp": null
     },
     {
       "id": "88",
       "set": 2,
-      "type": "single",
-      "stem": "What is the primary reason why breathing circuit disconnects occur frequently during head and neck surgical procedures?",
+      "type": "multi",
+      "stem": "Which THREE actions belong after an operating-room fire? (Select 3)",
       "options": [
-        "Surgical drapes conceal the patient's face and airway, hiding accidental tube dislodgement or traction",
-        "Head flexion increases apparatus dead space beyond the capacity of the Y-piece",
-        "Electrosurgical units generate radiofrequencies that loosen corrugated plastic connectors",
-        "Nitrous oxide diffusion softens the 15 mm endotracheal tube adapter"
+        "Preserve the scene and involved equipment",
+        "Notify the risk manager",
+        "Report and treat it as an adverse event",
+        "Discard the tube and circuit immediately",
+        "Resume the case without documentation",
+        "Delete monitor data"
       ],
       "answer": [
-        0
+        0,
+        1,
+        2
       ],
-      "explanation": "During head and neck surgery, surgical drapes cover the face and endotracheal tube. Movement of the surgical team or table manipulation can easily dislodge the circuit unseen beneath the drapes.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 23",
+      "explanation": "Post-fire management includes preserving evidence, notifying risk management, reporting the event, and using it for training and drills.",
+      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "9",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "23",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 23"
+      "supp": null
     },
     {
       "id": "89",
       "set": 2,
       "type": "single",
-      "stem": "What type of fire extinguisher is specifically recommended for extinguishing a fire in the operating room when water or saline has failed?",
+      "stem": "What is the normal pipeline pressure range emphasized in the equipment guide?",
       "options": [
-        "Carbon dioxide (CO2) extinguisher",
-        "Dry chemical ammonium phosphate extinguisher",
-        "Pressurized foam extinguisher",
-        "Halon 1211 liquid agent extinguisher"
+        "14–16 psi",
+        "25–30 psi",
+        "50–55 psi",
+        "90–130 psi"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "A carbon dioxide (CO2) fire extinguisher is recommended in the operating room because it leaves no corrosive chemical residue on patient tissues or delicate electronics.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 38",
+      "explanation": "The course quick-reference table lists pipeline pressure as 50–55 psi.",
+      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "10",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "38",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 38"
+      "supp": null
     },
     {
       "id": "90",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary electrical hazard of using an electrosurgical unit (ESU / Bovie) on a patient with a permanent cardiac pacemaker?",
+      "stem": "What pressure is expected after the first-stage cylinder regulator?",
       "options": [
-        "High radiofrequency current can cause electrical interference, resulting in pacemaker reprogramming, inhibition, or myocardial burns at the lead tip",
-        "The ESU current causes instantaneous battery explosion within the pacemaker generator",
-        "The pacemaker ground wire diverts current, causing the line isolation monitor to trip",
-        "Radiofrequency current converts pacemaker pacing spikes into direct current shocks"
+        "About 14 psi",
+        "About 25 psi",
+        "About 45 psi",
+        "About 100 psi"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "The high-frequency energy of an ESU interferes with cardiac pacemakers, potentially causing oversensing (inhibition of pacing), asynchronous resetting, damage to the internal circuitry, or myocardial burns where the lead meets the myocardium.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 31",
+      "explanation": "The first-stage regulator lowers variable cylinder pressure to about 45 psi, below normal pipeline pressure.",
+      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "10",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "31",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 31"
+      "supp": null
     },
     {
       "id": "91",
       "set": 2,
       "type": "single",
-      "stem": "During laser surgery of the vocal cords, the surgeon notices a small flame at the tracheal tube. According to fire protocols, what liquid should be poured into the airway immediately after pulling the tube and stopping gas flows?",
+      "stem": "What pressure range is listed for the second-stage O2 regulator?",
       "options": [
-        "Sterile saline or water",
-        "Cold mineral oil",
-        "Liquid chlorhexidine",
-        "Alcohol-free mouthwash"
+        "2–5 psi",
+        "14–16 psi",
+        "25–30 psi",
+        "50–55 psi"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "After pulling the burning tube and stopping gases, the airway is immediately flushed with sterile saline or water to extinguish residual embers and cool tracheal tissues.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 36",
+      "explanation": "The quick-reference table lists second-stage oxygen pressure at approximately 14–16 psi.",
+      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "10",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "36",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 36"
+      "supp": null
     },
     {
       "id": "92",
       "set": 2,
       "type": "single",
-      "stem": "Why is the operating room electrical power supply ungrounded via an isolation transformer?",
+      "stem": "At what O2 supply pressure does the fail-safe begin reducing other gas flow?",
       "options": [
-        "To prevent electric shock (macroshock) if personnel touch a live wire while standing on a wet floor",
-        "To allow electrosurgical units to operate without requiring a grounding pad",
-        "To prevent high-voltage power surges from melting variable bypass vaporizers",
-        "To ensure that workstation backup batteries recharge continuously during surgery"
+        "Below 50–55 psig",
+        "Below 40–45 psig",
+        "Below about 25–30 psig",
+        "Below 5 psig only"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "In an ungrounded system, current is isolated from ground potential. A person standing in conductive fluid (saline/blood) touching a single live conductor will not complete a circuit to ground, preventing macroshock.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slides 29, 30",
+      "explanation": "The fail-safe begins proportionally reducing other gases below about 25–30 psig and stops them below about 20 psig.",
+      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "10",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "29, 30",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slides 29, 30"
+      "supp": null
     },
     {
       "id": "93",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary reason why breathing circuit disconnects occur frequently during head and neck surgical procedures?",
+      "stem": "What minimum oxygen fraction does the O2/N2O proportioning system target?",
       "options": [
-        "Surgical drapes conceal the patient's face and airway, hiding accidental tube dislodgement or traction",
-        "Head flexion increases apparatus dead space beyond the capacity of the Y-piece",
-        "Electrosurgical units generate radiofrequencies that loosen corrugated plastic connectors",
-        "Nitrous oxide diffusion softens the 15 mm endotracheal tube adapter"
+        "18%",
+        "21%",
+        "25%",
+        "50%"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "During head and neck surgery, surgical drapes cover the face and endotracheal tube. Movement of the surgical team or table manipulation can easily dislodge the circuit unseen beneath the drapes.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 23",
+      "explanation": "The course guide teaches a 25% minimum FiO2 for the O2/N2O proportioning relationship.",
+      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "10",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "23",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 23"
+      "supp": null
     },
     {
       "id": "94",
       "set": 2,
       "type": "single",
-      "stem": "What type of fire extinguisher is specifically recommended for extinguishing a fire in the operating room when water or saline has failed?",
+      "stem": "What flow range does the oxygen flush deliver?",
       "options": [
-        "Carbon dioxide (CO2) extinguisher",
-        "Dry chemical ammonium phosphate extinguisher",
-        "Pressurized foam extinguisher",
-        "Halon 1211 liquid agent extinguisher"
+        "1–5 L/min",
+        "10–20 L/min",
+        "35–75 L/min",
+        "100–150 L/min"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "A carbon dioxide (CO2) fire extinguisher is recommended in the operating room because it leaves no corrosive chemical residue on patient tissues or delicate electronics.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 38",
+      "explanation": "The oxygen flush delivers approximately 35–75 L/min at intermediate-system pressure.",
+      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "10",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "38",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 38"
+      "supp": null
     },
     {
       "id": "95",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary electrical hazard of using an electrosurgical unit (ESU / Bovie) on a patient with a permanent cardiac pacemaker?",
+      "stem": "What is the PISS pin configuration for carbon dioxide?",
       "options": [
-        "High radiofrequency current can cause electrical interference, resulting in pacemaker reprogramming, inhibition, or myocardial burns at the lead tip",
-        "The ESU current causes instantaneous battery explosion within the pacemaker generator",
-        "The pacemaker ground wire diverts current, causing the line isolation monitor to trip",
-        "Radiofrequency current converts pacemaker pacing spikes into direct current shocks"
+        "1,5",
+        "1,6",
+        "2,5",
+        "3,5"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "The high-frequency energy of an ESU interferes with cardiac pacemakers, potentially causing oversensing (inhibition of pacing), asynchronous resetting, damage to the internal circuitry, or myocardial burns where the lead meets the myocardium.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 31",
+      "explanation": "The guide lists CO2 as pin positions 1 and 6.",
+      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "10",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "31",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 31"
+      "supp": null
     },
     {
       "id": "96",
       "set": 2,
       "type": "single",
-      "stem": "During laser surgery of the vocal cords, the surgeon notices a small flame at the tracheal tube. According to fire protocols, what liquid should be poured into the airway immediately after pulling the tube and stopping gas flows?",
+      "stem": "What is the common gas outlet connector size?",
       "options": [
-        "Sterile saline or water",
-        "Cold mineral oil",
-        "Liquid chlorhexidine",
-        "Alcohol-free mouthwash"
+        "10 mm ID / 12 mm OD",
+        "15 mm ID / 22 mm OD",
+        "19 mm ID / 30 mm OD",
+        "22 mm ID / 30 mm OD"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "After pulling the burning tube and stopping gases, the airway is immediately flushed with sterile saline or water to extinguish residual embers and cool tracheal tissues.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 36",
+      "explanation": "The common gas outlet is 15 mm internal and 22 mm external; 19 and 30 mm fittings are reserved for scavenging.",
+      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "10",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "36",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 36"
+      "supp": null
     },
     {
       "id": "97",
       "set": 2,
       "type": "single",
-      "stem": "Why is the operating room electrical power supply ungrounded via an isolation transformer?",
+      "stem": "How much CO2 can approximately 100 g of fresh soda lime absorb?",
       "options": [
-        "To prevent electric shock (macroshock) if personnel touch a live wire while standing on a wet floor",
-        "To allow electrosurgical units to operate without requiring a grounding pad",
-        "To prevent high-voltage power surges from melting variable bypass vaporizers",
-        "To ensure that workstation backup batteries recharge continuously during surgery"
+        "5 L",
+        "12 L",
+        "26 L",
+        "60 L"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "In an ungrounded system, current is isolated from ground potential. A person standing in conductive fluid (saline/blood) touching a single live conductor will not complete a circuit to ground, preventing macroshock.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slides 29, 30",
+      "explanation": "The course guide lists a capacity of approximately 26 L of CO2 per 100 g of soda lime.",
+      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "10",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "29, 30",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slides 29, 30"
+      "supp": null
     },
     {
       "id": "98",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary reason why breathing circuit disconnects occur frequently during head and neck surgical procedures?",
+      "stem": "What mesh size is emphasized for soda lime granules?",
       "options": [
-        "Surgical drapes conceal the patient's face and airway, hiding accidental tube dislodgement or traction",
-        "Head flexion increases apparatus dead space beyond the capacity of the Y-piece",
-        "Electrosurgical units generate radiofrequencies that loosen corrugated plastic connectors",
-        "Nitrous oxide diffusion softens the 15 mm endotracheal tube adapter"
+        "1–2 mesh",
+        "4–8 mesh",
+        "10–20 mesh",
+        "30–40 mesh"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "During head and neck surgery, surgical drapes cover the face and endotracheal tube. Movement of the surgical team or table manipulation can easily dislodge the circuit unseen beneath the drapes.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 23",
+      "explanation": "The guide emphasizes 4–8 mesh as a balance between surface area and resistance.",
+      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "10",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "23",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 23"
+      "supp": null
     },
     {
       "id": "99",
       "set": 2,
       "type": "single",
-      "stem": "What type of fire extinguisher is specifically recommended for extinguishing a fire in the operating room when water or saline has failed?",
+      "stem": "What percentage of room anesthetic-gas contamination does the course guide attribute to technique-related causes?",
       "options": [
-        "Carbon dioxide (CO2) extinguisher",
-        "Dry chemical ammonium phosphate extinguisher",
-        "Pressurized foam extinguisher",
-        "Halon 1211 liquid agent extinguisher"
+        "10–20%",
+        "40–50%",
+        "70–80%",
+        "94–99%"
       ],
       "answer": [
-        0
+        3
       ],
-      "explanation": "A carbon dioxide (CO2) fire extinguisher is recommended in the operating room because it leaves no corrosive chemical residue on patient tissues or delicate electronics.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 38",
+      "explanation": "The guide attributes approximately 94–99% of contamination to anesthesia technique, such as leaks, spills, and gas flow while disconnected.",
+      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "10",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "38",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 38"
+      "supp": null
     },
     {
       "id": "100",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary electrical hazard of using an electrosurgical unit (ESU / Bovie) on a patient with a permanent cardiac pacemaker?",
+      "stem": "What minimum air-exchange rate is listed for a nonrecirculating operating room?",
       "options": [
-        "High radiofrequency current can cause electrical interference, resulting in pacemaker reprogramming, inhibition, or myocardial burns at the lead tip",
-        "The ESU current causes instantaneous battery explosion within the pacemaker generator",
-        "The pacemaker ground wire diverts current, causing the line isolation monitor to trip",
-        "Radiofrequency current converts pacemaker pacing spikes into direct current shocks"
+        "6/hr",
+        "10/hr",
+        "15+/hr",
+        "30+/hr"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "The high-frequency energy of an ESU interferes with cardiac pacemakers, potentially causing oversensing (inhibition of pacing), asynchronous resetting, damage to the internal circuitry, or myocardial burns where the lead meets the myocardium.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 31",
+      "explanation": "The course guide lists at least 15 air exchanges per hour for a nonrecirculating OR.",
+      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "10",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Anesthesia Workstation Hazards & Safety"
-        ],
-        "slides": "31",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 31"
+      "supp": null
     },
     {
       "id": "HZ32",
