@@ -336,7 +336,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
   const reportingClient=read('equipment/assets/studio-sync.js'),reportingServer=read('reporting/apps-script/Code.gs');
   if(/reporter:String\(|userAgent:navigator\.userAgent/.test(reportingClient))fail('Question reporting still transmits reporter identity or browser user-agent data');
   if(/p\.reporter|p\.userAgent|['"]Reporter['"]|['"]User Agent['"]/.test(reportingServer))fail('Question reporting backend still stores reporter identity or browser user-agent data');
-  for(const token of ['Educational records, FERPA, HIPAA','not acting for or under the control of an educational institution','not intended to receive protected health information'])if(!privacy.includes(token))fail('Privacy legal-boundary disclosure missing '+token);
+  for(const token of ['FERPA and educational records','not operated by or on behalf of a school','HIPAA and patient information','not designed to receive or store protected health information'])if(!privacy.includes(token))fail('Privacy legal-boundary disclosure missing '+token);
   for(const p of ['equipment/exam-1/data/bank1.json','equipment/exam-1/data/bank2.json','equipment/exam-1/data/bank3.json','equipment/exam-1/data/combined.json','equipment/exam-1/data/hazards.json']){
     const src=read(p);
     if(/Mary Baldwin|MBU-NAP|Professor\b|\binstructor\b|Dr\.\s+[A-Z][a-z]+/i.test(src))fail(p+': instructor/faculty attribution remains in question content');
