@@ -1,10 +1,10 @@
-# SNAR Study Tool 1.0
+# SRNA Study Tool 1.0
 
 Release date: 2026-09-26
 
 ## Stable scope
 
-SNAR Study Tool 1.0 includes:
+SRNA Study Tool 1.0 includes:
 
 - one canonical Bank 1-style quiz runtime for Banks 1–3 and Combined;
 - Study Studio on the shared build-driven runtime;
