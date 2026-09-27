@@ -66,8 +66,11 @@
   .mbu-app-tools__card,.mbu-account-panel__card{max-height:calc(100vh - 20px);padding:16px;border-radius:14px}
   .mbu-tools-grid{grid-template-columns:1fr}
   .mbu-tools-grid>div.wide{grid-column:auto}
-  .mbu-global-nav__cloud{padding:7px 8px}
-  .mbu-global-nav__cloud [data-cloud-chip-label]{font-size:12px}
+  .mbu-global-nav{flex-wrap:wrap}
+  .mbu-global-nav__utilities{display:grid;grid-template-columns:auto minmax(0,1fr) auto;flex:1 0 100%;width:100%;gap:6px;margin-left:0}
+  .mbu-global-nav__search,.mbu-global-nav__cloud,.mbu-global-nav__tools{min-width:0;padding:7px 8px}
+  .mbu-global-nav__cloud{justify-content:center;overflow:hidden}
+  .mbu-global-nav__cloud [data-cloud-chip-label]{max-width:none;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 
