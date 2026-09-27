@@ -1845,18 +1845,18 @@ test.describe('canonical quiz regression', () => {
     expect(out.frozenDifficulty).toBe(-2);
   });
 
-  test('First-use legal clickwrap requires affirmative assent and stays out of the way afterward', async ({ page }) => {
-    await page.addInitScript(()=>localStorage.removeItem('snar_legal_ack_2026_09_27_v2'));
+  test('First-use legal clickwrap accepts a real pointer click and stays out of the way afterward', async ({ page }) => {
+    await page.addInitScript(()=>localStorage.removeItem('snar_legal_acceptance_v2'));
     await page.goto('/');
     await expect(page.locator('#snar-legal-gate')).toBeVisible();
-    await expect(page.locator('[data-legal-continue]')).toBeDisabled();
     await expect(page.locator('#snar-legal-gate')).toContainText('Terms of Use');
     await expect(page.locator('#snar-legal-gate')).toContainText('Privacy Notice');
-    await page.locator('[data-legal-check]').check();
-    await expect(page.locator('[data-legal-continue]')).toBeEnabled();
-    await page.locator('[data-legal-continue]').click();
+    const button=page.locator('[data-legal-continue]');
+    await expect(button).toBeEnabled();
+    await button.click();
     await expect(page.locator('#snar-legal-gate')).toHaveCount(0);
-    expect(await page.evaluate(()=>localStorage.getItem('snar_legal_ack_2026_09_27_v2'))).toBe('1');
+    const acceptance=await page.evaluate(()=>JSON.parse(localStorage.getItem('snar_legal_acceptance_v2')||'null'));
+    expect(acceptance?.version).toBe('2026-09-27-v2');
     await page.reload();
     await expect(page.locator('#snar-legal-gate')).toHaveCount(0);
   });
