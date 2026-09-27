@@ -1,5 +1,9 @@
 # MBU-NAP
 
+## Release status
+
+**Stable 1.0** — the canonical quiz runtimes, Study Studio, Hazards, local-first persistence, Supabase cross-device sync, recovery tools, diagnostics, accessibility guardrails, and automated release gates are in place.
+
 MBU-NAP is a local-first study application for the MBU nurse anesthesia equipment question banks.
 
 ## Current architecture
