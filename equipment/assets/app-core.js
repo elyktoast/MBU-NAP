@@ -83,9 +83,9 @@ const snapshot=await exportSnapshot();let pushResult=null;if(typeof adapter.push
 return{...merge,pushed:typeof adapter.push==='function',pushResult}
 }
 function ensureLegalFooter(){
-if($('snar-legal-footer'))return;
+if($('srna-legal-footer'))return;
 const privacyURL=new URL('privacy.html',ROOT_URL).href,termsURL=new URL('terms.html',ROOT_URL).href,footer=E('footer');
-footer.id='snar-legal-footer';footer.className='snar-legal-footer';footer.innerHTML='<a href="'+privacyURL+'">Privacy Notice</a><span aria-hidden="true">·</span><a href="'+termsURL+'">Terms of Use</a><span>SRNA Study Tool</span>';
+footer.id='srna-legal-footer';footer.className='srna-legal-footer';footer.innerHTML='<a href="'+privacyURL+'">Privacy Notice</a><span aria-hidden="true">·</span><a href="'+termsURL+'">Terms of Use</a><span>SRNA Study Tool</span>';
 B.append(footer)
 }
 function ensureA11y(){ensureLegalFooter();
@@ -173,10 +173,10 @@ updateCloudChip()
 let panelStylePromise=null,cloudManagementPromise=null;
 async function ensurePanelStyles(){panelStylePromise=panelStylePromise||window.MBUBuild.loadStyle('app-panels.css');await panelStylePromise}
 async function loadCloudManagement(){
-if(window.SNARCloudManagement)return window.SNARCloudManagement;
+if(window.SRNACloudManagement)return window.SRNACloudManagement;
 cloudManagementPromise=cloudManagementPromise||window.MBUBuild.loadScript('cloud-management.js');
 await cloudManagementPromise;
-return window.SNARCloudManagement
+return window.SRNACloudManagement
 }
 let adminPanelPromise=null;
 async function refreshAdminPanel(modal){
@@ -184,8 +184,8 @@ const host=modal?.querySelector('[data-admin-host]');if(!host||!window.MBUSupaba
 const info=MBUSupabase.status();if(!info.signedIn||info.legalAccepted!==true){host.innerHTML='';return}
 try{
 const admin=await MBUSupabase.adminStatus();if(!admin?.is_admin){host.innerHTML='';return}
-if(!window.SNARAdminPanel){adminPanelPromise=adminPanelPromise||window.MBUBuild.loadScript('admin-panel.js');await adminPanelPromise}
-await window.SNARAdminPanel?.mount?.(host,modal)
+if(!window.SRNAAdminPanel){adminPanelPromise=adminPanelPromise||window.MBUBuild.loadScript('admin-panel.js');await adminPanelPromise}
+await window.SRNAAdminPanel?.mount?.(host,modal)
 }catch{host.innerHTML=''}
 }
 function ensureAccountPanel(){
