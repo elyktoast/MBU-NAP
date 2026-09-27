@@ -5,7 +5,7 @@ The site now has a shared structured question-report modal. Reports are designed
 1. creates an `SNAR Study Tool Question Reports` Google Sheet automatically on the first report,
 2. appends every report as a new row,
 3. emails the Apps Script deploying account by default,
-4. keeps the reporter's email/private account information out of the public website source.
+4. does not request or transmit the reporter's name, email address, private account ID, or browser user-agent string.
 
 ## One-time deployment
 
@@ -22,4 +22,4 @@ The site now has a shared structured question-report modal. Reports are designed
 
 Optional: in Apps Script Project Settings > Script Properties, add `REPORT_EMAIL` if reports should go to a different address than the deploying account.
 
-After the endpoint is configured, classmates can report questions without a GitHub or Google login. Each report is emailed and recorded in the Sheet. The browser also keeps a local backup.
+After the endpoint is configured, users can report questions without a GitHub or Google login. Each report is emailed and recorded in the Sheet. The browser also keeps a local backup.
