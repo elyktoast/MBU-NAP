@@ -800,13 +800,13 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
    if(hash(base+'privacy.html')!==manifest.privacy_sha256)fail(version+': Privacy snapshot hash mismatch');
  }
  const current=JSON.parse(read('legal/versions/2026-09-27-v5/manifest.json'));
- if(hash('terms.html')!==current.terms_sha256||hash('privacy.html')!==current.privacy_sha256)fail('Current legal pages differ from archived v4 snapshot');
+ if(hash('terms.html')!==current.terms_sha256||hash('privacy.html')!==current.privacy_sha256)fail('Current legal pages differ from archived v5 snapshot');
  for(const p of ['legal/LEGAL_CHANGELOG.md','legal/INCIDENT_RESPONSE.md','legal/RETENTION_SCHEDULE.md','legal/DATA_INVENTORY.md','legal/PROVIDERS.md','legal/ADMIN_OPERATIONS.md','legal/data-inventory.json'])if(!exists(p))fail('Legal operations file missing '+p);
  const inv=JSON.parse(read('legal/data-inventory.json'));
  if(inv.version!=='2026-09-27-v5'||inv.guest_session?.retention_hours!==24||inv.guest_session?.persistent_cross_session!==false)fail('Machine-readable guest metric inventory is incomplete');
  const privacy=read('privacy.html'),terms=read('terms.html'),cloud=read('equipment/assets/supabase-sync.js'),core=read('equipment/assets/app-core.js'),adminPanel=read('equipment/assets/admin-panel.js'),studio=read('equipment/assets/studio-page.js');
- for(const token of ['random session identifier','approximately 24 hours','operator-admin','raw first-attempt CAT contribution rows'])if(!privacy.includes(token))fail('Privacy v4 disclosure missing '+token);
- for(const token of ['Account access, suspension, and termination','suspended or re-granted'])if(!terms.includes(token))fail('Terms v4 account-access disclosure missing '+token);
+ for(const token of ['random session identifier','approximately 24 hours','operator-admin','raw first-attempt CAT contribution rows'])if(!privacy.includes(token))fail('Privacy v5 disclosure missing '+token);
+ for(const token of ['Account access, suspension, and termination','suspended or re-granted'])if(!terms.includes(token))fail('Terms v5 account-access disclosure missing '+token);
  for(const token of ['snar_guest_heartbeat','snar_account_access_status','adminAccounts','adminSetAccountAccess','adminDeleteAccount','guestSessionId','accountAccess'])if(!cloud.includes(token))fail('Admin/guest client contract missing '+token);
  for(const token of ['Admin & Compliance','data-admin-stats','data-admin-accounts','data-admin-delete-account','Guests active ~15m','CAT users'])if(!adminPanel.includes(token))fail('Admin dashboard contract missing '+token);
  if(!core.includes("loadScript('admin-panel.js')")||!core.includes('data-admin-host'))fail('Lazy admin panel loader contract missing');
