@@ -2092,6 +2092,23 @@ test.describe('canonical quiz regression', () => {
     expect(state.attempts-before).toBe(1);
   });
 
+  test('Adaptive Mode does not repeat duplicate question stems in one session', async ({ page }) => {
+    await seedSignedIn(page);
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const result=await page.evaluate(()=>{
+      const dupA={uid:'dup-a',stem:'What is the PISS pin configuration for oxygen?',topic:'Medical Gases',opts:['A','B','C','D'],ans:[1]};
+      const dupB={uid:'dup-b',stem:'What is the PISS pin configuration for Oxygen?',topic:'Medical Gases',opts:['D','C','B','A'],ans:[2]};
+      const unique={uid:'unique-c',stem:'A completely different adaptive item',topic:'Monitoring',opts:['A','B'],ans:[0]};
+      const first=MBUAdaptiveQuiz.start([dupA,dupB,unique],3);
+      const state=MBUAdaptiveQuiz.advance(first.state,first.question,true);
+      const second=MBUAdaptiveQuiz.pick([dupA,dupB,unique],state);
+      return{max:first.state.maxQuestions,first:first.question.stem.toLowerCase(),second:second.question?.stem?.toLowerCase()||'',seenContent:second.state.seenContentKeys.length};
+    });
+    expect(result.max).toBe(2);
+    expect(result.second).not.toBe(result.first);
+    expect(result.seenContent).toBe(2);
+  });
+
   test('Adaptive scored answers cannot be reset or mutate CAT state', async ({ page }) => {
     await seedSignedIn(page);
     await page.goto(exam + '/studio.html');await waitForStudio(page);
