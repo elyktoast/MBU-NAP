@@ -596,7 +596,7 @@
       },
       {
         "id": "S5-F13",
-        "disposition": "CORRECT"
+        "disposition": "IMPROVE"
       }
     ]
   },
@@ -618,5 +618,11 @@
     "bank": "bank3.json",
     "change": "Restored the combined halogenated-agent + nitrous oxide occupational exposure question using Nurse Anesthesia 7th ed., Chapter 16, p. 284 as the source.",
     "note": "The textbook explicitly supports 2 ppm halogenated agents, 0.5 ppm when used with nitrous oxide, and 25 ppm nitrous oxide as an 8-hour time-weighted average."
+  },
+  "lastBatchCorrection": {
+    "question": "S5-F13",
+    "action": "Restored combined halogenated-agent + nitrous oxide exposure-limit question at user direction.",
+    "source": "Nurse Anesthesia, 7th ed. (Elisha et al.), Chapter 16, p. 284",
+    "note": "Textbook explicitly gives 2 ppm halogenated alone, 0.5 ppm with nitrous oxide, and 25 ppm nitrous oxide."
   }
 }
