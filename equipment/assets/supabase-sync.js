@@ -159,13 +159,14 @@ function status(){const s=session();return{signedIn:!!s?.access_token,email:s?.u
 window.addEventListener('focus',()=>{if(session()&&Date.now()-lastSyncAt>120000)fullSync().catch(()=>{})});
 window.addEventListener('online',()=>{if(session())fullSync().catch(()=>{})});
 
+async function handleAuthRedirect(){
+  const redirected=await consumeAuthRedirect();if(!redirected)return false;
+  startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100);return true
+}
+window.addEventListener('hashchange',()=>handleAuthRedirect().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth redirect failed',e)}));
 window.MBUSupabase={signIn,signUp,signOut,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
 (async()=>{
-  const redirected=await consumeAuthRedirect();
-  if(redirected){
-    startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100);
-    return
-  }
+  if(await handleAuthRedirect())return;
   if(session()){
     if(sessionStorage.getItem('mbu_cloud_reload')==='1')sessionStorage.removeItem('mbu_cloud_reload');
     startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),400)
