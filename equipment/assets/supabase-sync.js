@@ -1,4 +1,4 @@
-/* MBU-NAP Supabase auth + cloud sync adapter. Uses only the public browser key and authenticated RLS. */
+/* SNAR Study Tool Supabase auth + cloud sync adapter. Uses only the public browser key and authenticated RLS. */
 (()=>{'use strict';
 const cfg=window.MBU_SUPABASE_CONFIG||{},sync=window.MBUSync,SESSION_KEY='mbu_supabase_session_v1',STATUS_EVENT='mbu:supabase-status',script=document.currentScript,APP_ROOT=new URL('../../',script?.src||location.href).href;
 if(!cfg.url||!cfg.publishableKey||!sync){console.warn('Supabase sync is not configured');return}
