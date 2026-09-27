@@ -1490,6 +1490,37 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('[data-cloud-auto]')).toContainText('Starts when signed in');
   });
 
+  test('Expired cloud session refreshes before sync without losing the account', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let refreshBody=null;
+    await page.addInitScript(()=>localStorage.setItem('mbu_supabase_session_v1',JSON.stringify({access_token:'expired-access',refresh_token:'refresh-me',expires_at:1,user:{id:'00000000-0000-0000-0000-000000000001',email:'refresh@example.com'}})));
+    await page.route(cloud+'/auth/v1/token?grant_type=refresh_token',route=>{refreshBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'fresh-access',refresh_token:'fresh-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000001',email:'refresh@example.com'}})})});
+    await page.route(cloud+'/rest/v1/mbu_sync_state?*',route=>route.fulfill({status:200,contentType:'application/json',body:'[]'}));
+    await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>route.fulfill({status:201,contentType:'application/json',body:''}));
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('mbu_supabase_session_v1')||'null')?.access_token)).toBe('fresh-access');
+    expect(refreshBody).toEqual({refresh_token:'refresh-me'});
+    expect(await page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(true);
+  });
+
+  test('Cloud failure leaves local quiz progress intact and reports sync error', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let failWrites=false;
+    await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'test-access',refresh_token:'test-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000001',email:'offline@example.com'}})}));
+    await page.route(cloud+'/rest/v1/mbu_sync_state?*',route=>route.fulfill({status:200,contentType:'application/json',body:'[]'}));
+    await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>route.fulfill({status:201,contentType:'application/json',body:''}));
+    await page.route(cloud+'/rest/v1/rpc/mbu_sync_write_state',route=>failWrites?route.abort('internetdisconnected'):route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({applied:true,row:null})}));
+    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
+    await page.evaluate(()=>MBUSupabase.signIn('offline@example.com','correct horse battery staple'));
+    await page.locator('#cards button').filter({hasText:/start|continue/i}).first().click();
+    const answer=await page.evaluate(()=>currentData[currentIndex].answer);
+    await clickIndexes(page.locator('#options .opt'),answer);
+    const before=await storageJSON(page,'SRNA_COMBINED_EXAM_SET_1_2026_V1');
+    failWrites=true;
+    await page.evaluate(()=>MBUSupabase.syncNow().catch(()=>null));
+    expect(await page.evaluate(()=>MBUSupabase.status().state)).toBe('error');
+    const after=await storageJSON(page,'SRNA_COMBINED_EXAM_SET_1_2026_V1');
+    expect(after).toEqual(before);
+  });
+
   test('Cloud account can request password recovery and resend confirmation', async ({ page }) => {
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let recoverBody=null,resendBody=null;
     await page.route(cloud+'/auth/v1/recover?*',route=>{recoverBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:'{}'})});
