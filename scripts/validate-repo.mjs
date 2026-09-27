@@ -654,7 +654,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ['window.MBUDiagnostics=','window.MBUSync=','window.MBUAppCore=','exportSnapshot','importSnapshot','registerAdapter','syncWith','touchStore','mbu_device_id_v1','mbu_sync_meta_v1'])if(!core.includes(token))fail('App core contract missing '+token);
  if(manifest.sync?.schema!==1||manifest.sync?.mode!=='local-first'||manifest.sync?.studioStorageKey!=='mbu_exam1_studio_v1')fail('Manifest sync contract is missing');
  for(const p of ['equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js'])if(!read(p).includes('touchStore'))fail(p+': save path is not sync-aware');
- const nav=read('equipment/assets/site-nav.js'),css=read('equipment/assets/app-core.css');
+ const nav=read('equipment/assets/site-nav.js'),css=read('equipment/assets/app-core.css')+read('equipment/assets/app-panels.css');
  if(!nav.includes('mountNav')||!core.includes('Skip to main content')||!css.includes(':focus-visible')||!css.includes('prefers-reduced-motion'))fail('Shared accessibility/tools contract is incomplete');
  for(const p of ['README.md','docs/ARCHITECTURE.md','docs/SYNC.md','docs/CONTENT_AUDIT.md','docs/CONTENT_PHASE1_AUDIT.md','docs/QUESTION_GENERATION.md','reports/content-phase1-audit.json','CONTRIBUTING.md'])if(!exists(p))fail('Documentation missing '+p);
  if(!exists('scripts/content-integrity.mjs'))fail('Content integrity validator is missing');
@@ -749,8 +749,8 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 
 // Practical Tools design keeps account identity persistent and recovery/diagnostics secondary.
 {
- const core=read('equipment/assets/app-core.js'),css=read('equipment/assets/app-core.css');
- for(const token of ['mbu-global-nav__cloud','Cloud: Signed out','function ensureAccountPanel()','Backup & recovery','Troubleshooting & app info','Saved study areas','data-tools-saves-help','Progress exists in ','data-auth-view="signin"','data-auth-view="signup"'])if(!core.includes(token))fail('Practical Tools UI missing '+token);
+ const core=read('equipment/assets/app-core.js'),css=read('equipment/assets/app-core.css')+read('equipment/assets/app-panels.css');
+ for(const token of ['mbu-global-nav__cloud','Cloud: Signed out','function ensureAccountPanel()','Backup & recovery','Troubleshooting & app info','Saved study areas','data-tools-saves-help','Saved progress in ','data-auth-view="signin"','data-auth-view="signup"'])if(!core.includes(token))fail('Practical Tools UI missing '+token);
  for(const token of ['.mbu-global-nav__utilities','.mbu-global-nav__cloud','.mbu-tools-details','.mbu-account-panel','.mbu-tools-grid'])if(!css.includes(token))fail('Practical Tools styling missing '+token);
 }
 
