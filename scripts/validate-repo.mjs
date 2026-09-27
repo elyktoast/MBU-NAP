@@ -757,11 +757,12 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 
 // Content metadata normalization is a stable release contract.
 {
- const allowed=new Set(['Monitoring','Medical Gases','CO₂ & Scavenging','Airway','Hazards & Safety']);
+ const allowed=new Set(['Monitoring','Medical Gas','CO₂ & Scavenging','Airway','Hazards & Safety']);
  for(const p of ['bank1.json','bank2.json','bank3.json','combined.json','hazards.json']){
    const payload=JSON.parse(read('equipment/exam-1/data/'+p)),qs=Array.isArray(payload)?payload:(payload.questions||[]);
    for(const q of qs){
      if(!allowed.has(String(q.topic||'')))fail(p+': non-canonical or missing topic '+String(q.topic||''));
+     if(!q.sourceMeta||!Array.isArray(q.sourceMeta.families)||!q.sourceMeta.families.length||!String(q.sourceTitle||'').trim())fail(p+': incomplete structured source metadata for '+String(q.id||'unknown'));
      const citation=String(q.citation||'');
      if(!citation.includes(' · '))fail(p+': citation is not normalized for '+String(q.id||'unknown'));
      if(/\.pdf\b|,\s*Slides?\b|:\s*slides?\b/i.test(citation))fail(p+': legacy citation formatting remains for '+String(q.id||'unknown'));
