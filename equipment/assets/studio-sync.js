@@ -36,7 +36,7 @@
       const selected=[...new Set(result.selected.map(Number).filter(x=>Number.isInteger(x)&&x>=0))].sort((a,b)=>a-b);
       answers[uid]={ok:!!result.ok,selected,at:Number.isFinite(Number(result.at))?Number(result.at):0}
     }
-    const out={uids,pos,answers,updated:Number.isFinite(Number(v.updated))?Number(v.updated):0};
+    const allowedModes=new Set(['custom','smart','due','missed','flagged','adaptive']);const mode=allowedModes.has(String(v.mode||''))?String(v.mode):'';const out={uids,pos,answers,updated:Number.isFinite(Number(v.updated))?Number(v.updated):0};if(mode)out.mode=mode;
     if(v.mode==='adaptive'&&plainObject(v.adaptive)){
       const a=v.adaptive,seenUids=Array.isArray(a.seenUids)?[...new Set(a.seenUids.map(normalizeKey).filter(Boolean))]:uids.slice(),topicCounts=plainObject(a.topicCounts)?Object.fromEntries(Object.entries(a.topicCounts).map(([k,n])=>[String(k),Math.max(0,Number(n)||0)])):{};
       out.mode='adaptive';
