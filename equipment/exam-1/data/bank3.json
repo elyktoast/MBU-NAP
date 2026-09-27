@@ -27,7 +27,6 @@
       "disc": null,
       "supp": null,
       "orig": "M01",
-      "concept": "ASA circulation standard",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -55,14 +54,13 @@
       ],
       "explanation": "Slide 69: the machine may alert to low agent LEVELS, but there is NO alert for vaporizer operation. A full sight glass looks the same whether the dial is on or off. Only the gas analyzer's agent reading shows no agent is being delivered. The leak check catches a loose filler cap, not a vaporizer left off.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 69 (PDF p. 35)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G27",
-      "concept": "Vaporizer not turned on",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -97,7 +95,6 @@
       "disc": null,
       "supp": null,
       "orig": "M19",
-      "concept": "Transient ETCO2 rise",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -128,14 +125,13 @@
       ],
       "explanation": "Slide 70: overfilling comes from filling while the vaporizer is on, in the wrong position, or with the key not tight on the bottle. It risks contaminating the bypass chamber or outlet and overdosing the patient. Fill with the vaporizer off, upright, to the specified level, and don't fill until it stops bubbling.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 70 (PDF p. 35)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G28",
-      "concept": "Vaporizer overfilling",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -174,7 +170,6 @@
       "disc": null,
       "supp": null,
       "orig": "K11",
-      "concept": "Technique-related contamination",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -212,7 +207,6 @@
       "disc": null,
       "supp": null,
       "orig": "M03",
-      "concept": "Galvanic O2 sensor",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -247,7 +241,6 @@
       "disc": null,
       "supp": null,
       "orig": "K15",
-      "concept": "OR ventilation systems",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -282,7 +275,6 @@
       "disc": null,
       "supp": null,
       "orig": "M40",
-      "concept": "Quantitative NM monitoring",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -317,7 +309,6 @@
       "disc": null,
       "supp": null,
       "orig": "M29",
-      "concept": "Arterial line damping",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -348,14 +339,13 @@
       ],
       "explanation": "Tipping lets liquid into the bypass chamber, which increases output and risks overdose. The fix on slide 71: drain the vaporizer, run the highest setting with high FGF for 30 minutes, and refill once expired gas analysis no longer detects agent. Output doesn't fall, and it doesn't self-correct; turning the dial down doesn't make it safe while the bypass is contaminated.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 71 (PDF p. 36)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G22",
-      "concept": "Vaporizer tipping",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -390,7 +380,6 @@
       "disc": null,
       "supp": null,
       "orig": "M36",
-      "concept": "Oxyhemoglobin dissociation curve",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -418,14 +407,13 @@
       ],
       "explanation": "Des has a vapor pressure of 669 mmHg and boils at 22.8 C, so near room temperature it can boil. Heating to 39 C and pressurizing to 2 atm keeps it predictable and minimizes output swings. Its boiling point is low, not high; its vapor pressure is far higher than sevo's (160); and its blood:gas coefficient (0.42) is the lowest listed.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 50, 60 (PDF p. 25, 30)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G25",
-      "concept": "Why des needs a special vaporizer",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -460,7 +448,6 @@
       "disc": null,
       "supp": null,
       "orig": "K14",
-      "concept": "Closed scavenging interface",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -499,7 +486,6 @@
       "disc": null,
       "supp": null,
       "orig": "W07",
-      "concept": "Mask ventilation adequacy",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -534,7 +520,6 @@
       "disc": "The handwritten note on slide 40 attributes the normal 5 mmHg gap to anatomic dead space. Sources differ on the normal gap, but agree that WIDENING of the gradient (PE, low CO, OLV) comes from alveolar dead space, which is what this question tests.",
       "supp": null,
       "orig": "M23",
-      "concept": "Gradient interpretation",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -569,7 +554,6 @@
       "disc": null,
       "supp": null,
       "orig": "M41",
-      "concept": "Preoxygenation endpoint",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -604,7 +588,6 @@
       "disc": null,
       "supp": null,
       "orig": "K03",
-      "concept": "Indicator regeneration",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -639,7 +622,6 @@
       "disc": null,
       "supp": null,
       "orig": "M15",
-      "concept": "Capnogram phases",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -671,14 +653,13 @@
       ],
       "explanation": "The high-pressure system handles cylinder gas from the yoke up to the first-stage regulator: hanger yoke, cylinder, cylinder gauge, and yoke check valve. Pipeline inlets, the fail-safe, and the flush valve are intermediate-pressure components. Flow control valves are the dividing line into the low-pressure system.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 6, 22, 23, 26 (PDF p. 3, 11, 12, 13)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G13",
-      "concept": "Pressure system anatomy",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -713,7 +694,6 @@
       "disc": null,
       "supp": null,
       "orig": "M08",
-      "concept": "PV loop: leak",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -752,7 +732,6 @@
       "disc": null,
       "supp": null,
       "orig": "M11",
-      "concept": "Disconnect alarms",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -780,14 +759,13 @@
       ],
       "explanation": "From the lecture: liquid used (mL/hr) = vol% x FGF (L/min) x 3. So 2 x 2 x 3 = 12 mL/hr. The factor of 3 reflects that 1 mL of liquid makes about 200 mL of vapor.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 52 (PDF p. 26)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G20",
-      "concept": "Agent consumption formula",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -815,14 +793,13 @@
       ],
       "explanation": "The cylinder's first-stage regulator delivers about 45 psi, and the pipeline normally runs 50-55 psi. The machine uses the higher-pressure source, which is why the cylinder normally stays as backup. At 35 psig the regulated cylinder pressure is now higher, so the cylinder takes over and can empty without anyone noticing. The fail-safe acts on the other gases, not on O2.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 24, 33 (PDF p. 12, 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G06",
-      "concept": "Pipeline vs cylinder priority",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -857,7 +834,6 @@
       "disc": null,
       "supp": null,
       "orig": "M14",
-      "concept": "MH detection",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -892,7 +868,6 @@
       "disc": null,
       "supp": null,
       "orig": "M07",
-      "concept": "Pediatric mainstem intubation",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -920,14 +895,13 @@
       ],
       "explanation": "The lecture's cylinder exchange steps: use only ONE washer, listen for hissing, check for leaks with soapy water, don't overtighten, and check system pressure. Stacking washers breaks the one-washer rule, and cranking the T-handle is the overtightening the slide warns against.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 10 (PDF p. 5)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G04",
-      "concept": "Cylinder exchange safety",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -962,7 +936,6 @@
       "disc": null,
       "supp": null,
       "orig": "W01",
-      "concept": "Macintosh mechanism",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -1001,7 +974,6 @@
       "disc": null,
       "supp": null,
       "orig": "W06",
-      "concept": "Triple airway maneuver",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -1036,7 +1008,6 @@
       "disc": null,
       "supp": null,
       "orig": "M25",
-      "concept": "ECG lead sensitivity",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -1064,14 +1035,13 @@
       ],
       "explanation": "The proportioning system (O2 ratio controller, hypoxic guard) links O2 and N2O at the flow control valves so FiO2 stays greater than about 25% whenever N2O is used. Cutting N2O off entirely is the fail-safe responding to low O2 supply pressure, a different device.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 45 (PDF p. 23)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G09",
-      "concept": "Proportioning system",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -1106,7 +1076,6 @@
       "disc": "The handwritten note on slide 90 reverses these numbers (80% circumference, 40% length). Both slides themselves say width 40%, length 80%, so this question is keyed to the slides.",
       "supp": null,
       "orig": "M28",
-      "concept": "NIBP cuff sizing",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -1145,7 +1114,6 @@
       "disc": null,
       "supp": null,
       "orig": "M17",
-      "concept": "Elevated capnogram baseline",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -1180,7 +1148,6 @@
       "disc": null,
       "supp": null,
       "orig": "W02",
-      "concept": "Vallecula",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -1215,7 +1182,6 @@
       "disc": "Slide 75 says MetHb readings are underestimated above 70% and overestimated below 70%. Standard references (e.g., OpenAnesthesia) put the crossover at 85%, matching the slide's own 1:1 = about 85% point. This explanation uses 85%.",
       "supp": null,
       "orig": "M34",
-      "concept": "Methemoglobin and SpO2",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -1250,7 +1216,6 @@
       "disc": null,
       "supp": null,
       "orig": "M20",
-      "concept": "Curare cleft",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -1278,14 +1243,13 @@
       ],
       "explanation": "N2O's critical temperature is about 36 C, so at room temperature it stays liquid under pressure. Liquid and gas sit in equilibrium and the gauge holds at 745 psig until the last liquid vaporizes. Anything from full to nearly empty can read 745, which is why the instructor noted you have to weigh the cylinder. The linear pressure-volume rule applies to O2 and air, not N2O.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 14 (PDF p. 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G02",
-      "concept": "N2O cylinder pressure vs contents",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -1320,7 +1284,6 @@
       "disc": null,
       "supp": null,
       "orig": "K06",
-      "concept": "Desiccation and CO",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -1355,7 +1318,6 @@
       "disc": null,
       "supp": null,
       "orig": "G08",
-      "concept": "Limits of pressure-based safety devices",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia",
@@ -1391,7 +1353,6 @@
       "disc": null,
       "supp": null,
       "orig": "W03",
-      "concept": "Miller vs Mac selection",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -1419,14 +1380,13 @@
       ],
       "explanation": "The flush sends O2 straight from the intermediate system to the common gas outlet at 35-75 L/min and 40-50 psi, bypassing flowmeters and vaporizers. A peak pressure alarm during mechanical inspiration points to barotrauma. Dilution of agent is the flush's other listed risk, but it doesn't raise airway pressure. The flush is 100% O2, so it can't create a hypoxic mixture.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 36, 37 (PDF p. 18, 19)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G10",
-      "concept": "O2 flush hazards",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -1461,7 +1421,6 @@
       "disc": null,
       "supp": null,
       "orig": "M26",
-      "concept": "ECG fingerprinting",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -1496,7 +1455,6 @@
       "disc": null,
       "supp": null,
       "orig": "M04",
-      "concept": "PIP vs plateau: resistance",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -1524,14 +1482,13 @@
       ],
       "explanation": "1% of about 2100 mL total is 21 mL of sevo vapor. Sump outflow is 21% sevo, so 79 mL of carrier gas must enter the sump to pick up 21 mL. The remaining 2000 mL bypasses. 2000:79 is about 25:1. 21:1 confuses the sump concentration with the ratio.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 55 (PDF p. 28)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G19",
-      "concept": "Splitting ratio",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -1570,7 +1527,6 @@
       "disc": null,
       "supp": null,
       "orig": "M37",
-      "concept": "Right shift",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -1605,7 +1561,6 @@
       "disc": "Slide 3 prints calcium hydroxide as Ca(OH). The correct formula is Ca(OH)2, which is what this question uses.",
       "supp": null,
       "orig": "K01",
-      "concept": "Absorbent chemistry",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -1640,7 +1595,6 @@
       "disc": null,
       "supp": null,
       "orig": "M05",
-      "concept": "PIP vs plateau: compliance",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -1675,7 +1629,6 @@
       "disc": null,
       "supp": null,
       "orig": "K12",
-      "concept": "Low-pressure leaks",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -1710,7 +1663,6 @@
       "disc": null,
       "supp": null,
       "orig": "G30",
-      "concept": "Auxiliary O2 flowmeter",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia",
@@ -1746,7 +1698,6 @@
       "disc": null,
       "supp": null,
       "orig": "K10",
-      "concept": "High-pressure leaks",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -1774,14 +1725,13 @@
       ],
       "explanation": "PISS positions: O2 2 and 5, N2O 3 and 5, air 1 and 5. A yoke with pins at 2 and 5 is an O2 yoke, and a valve with holes at 1 and 5 is air, so the pins are correctly blocking a wrong-gas connection. N2O would have holes at 3 and 5. Extra washers can't be used to defeat the system; the lecture's rule is one washer only.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 18, 19 (PDF p. 9, 10)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G03",
-      "concept": "PISS troubleshooting",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -1812,14 +1762,13 @@
       ],
       "explanation": "Both are highlighted on slide 24: turning high, variable cylinder pressure into a steady 45 psi protects machine components and prevents barotrauma. Setting it BELOW pipeline pressure keeps the cylinder in reserve. Dropping O2 to about 14-16 psi is the second-stage regulator's job, and hypoxic-mixture protection belongs to the fail-safe and proportioning system.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 24 (PDF p. 12)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G18",
-      "concept": "First-stage regulator",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -1854,7 +1803,6 @@
       "disc": null,
       "supp": null,
       "orig": "M10",
-      "concept": "Flow-volume loop: restrictive",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -1889,7 +1837,6 @@
       "disc": null,
       "supp": null,
       "orig": "K04",
-      "concept": "Granule size tradeoff",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -1928,7 +1875,6 @@
       "disc": null,
       "supp": null,
       "orig": "M09",
-      "concept": "Compliance changes",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -1960,14 +1906,13 @@
       ],
       "explanation": "The triad is oxidizer + fuel + heat. O2 and N2O are both oxidizers, dust between tank and yoke is the fuel, and compressed gas moving through the outlet produces the heat. Calling N2O a fuel is the classic misconception; the washer and room air are misassigned roles.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 8 (PDF p. 4)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G05",
-      "concept": "Cylinder fire triad",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -2002,7 +1947,6 @@
       "disc": null,
       "supp": null,
       "orig": "K13",
-      "concept": "Scavenging relief valves",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -2030,14 +1974,13 @@
       ],
       "explanation": "The Aladin CPU identifies each cassette by a magnetic code and uses sensors to run a flow control valve that adds saturated agent to the bypass gas. Instructor note: des isn't heated in this design because the CPU controls the temperature effects. Metal plates and fans under the cassette stabilize temperature.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 66, 67 (PDF p. 33, 34)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G29",
-      "concept": "Cassette vaporizer",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -2072,7 +2015,6 @@
       "disc": null,
       "supp": null,
       "orig": "M35",
-      "concept": "Carboxyhemoglobin and SpO2",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -2107,7 +2049,6 @@
       "disc": null,
       "supp": null,
       "orig": "M27",
-      "concept": "NIBP cuff error",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -2142,7 +2083,6 @@
       "disc": null,
       "supp": null,
       "orig": "W10",
-      "concept": "Armored vs RAE tubes",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -2177,7 +2117,6 @@
       "disc": null,
       "supp": null,
       "orig": "M16",
-      "concept": "Shark-fin capnogram",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -2205,14 +2144,13 @@
       ],
       "explanation": "Instructor note: it sits in the nitrous line but responds to O2 pressure. When O2 supply pressure falls below about 25-30 psig it reduces, and below about 20 psig stops, the flow of other gases. It never measures concentration, so it can't catch the wrong gas in the O2 line.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 34 (PDF p. 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G07",
-      "concept": "Fail-safe valve",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -2247,7 +2185,6 @@
       "disc": null,
       "supp": null,
       "orig": "M39",
-      "concept": "Mean body temperature",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -2282,7 +2219,6 @@
       "disc": null,
       "supp": null,
       "orig": "W11",
-      "concept": "Cricothyrotomy anatomy",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -2317,7 +2253,6 @@
       "disc": null,
       "supp": null,
       "orig": "K08",
-      "concept": "Absorber placement",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -2356,7 +2291,6 @@
       "disc": null,
       "supp": null,
       "orig": "M38",
-      "concept": "Hypothermia effects",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -2391,7 +2325,6 @@
       "disc": null,
       "supp": "NIOSH's 1977 recommendation also covers combined use: when halogenated agents are given WITH N2O, the halogenated limit drops from 2 ppm to 0.5 ppm (ceiling over a sampling period up to 1 hour), and N2O stays at 25 ppm TWA. Slide 10 lists only the 2 ppm and 25 ppm values.",
       "orig": "K09",
-      "concept": "NIOSH exposure limits",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -2419,14 +2352,13 @@
       ],
       "explanation": "Vaporization cools the liquid, and vapor pressure falls with temperature. To keep output constant, the bimetallic strip bends as temperature drops to increase flow through the sump, changing the splitting ratio. More bypass flow would lower output further. Heating to 39 C belongs to the desflurane Tec 6.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 56 (PDF p. 28)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G21",
-      "concept": "Temperature compensation",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -2461,7 +2393,6 @@
       "disc": null,
       "supp": null,
       "orig": "M21",
-      "concept": "Esophageal intubation capnogram",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -2489,14 +2420,13 @@
       ],
       "explanation": "At low flows the annular space is longer than it is wide (tube shaped), flow is laminar, and viscosity governs it. At high flows it is wider than long (orifice shaped), flow is turbulent, and density governs it. The distractors mix up the pairings.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 43 (PDF p. 22)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G12",
-      "concept": "Flowmeter physics",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -2524,14 +2454,13 @@
       ],
       "explanation": "International coding on the lecture table: O2 white, air white and black, N2O blue, N2 black. In the US, O2 is green and air is yellow. Solid white means O2 internationally; air is the two-tone cylinder.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 7 (PDF p. 4)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G17",
-      "concept": "Cylinder color codes",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -2563,14 +2492,13 @@
       ],
       "explanation": "The Tec 6 heats the sump to 39 C and pressurizes des to 2 atm (about 1500 mmHg). Restrictor #1 is a shut-off that opens once warm; restrictor #2 is set by the dial. A differential pressure transducer balances the gas and vapor circuits. Wicks, baffles, and a bimetallic strip are variable bypass features, and the des vaporizer requires electricity.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 60, 61, 62, 63 (PDF p. 30, 31, 32)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G24",
-      "concept": "Desflurane vaporizer design",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -2605,7 +2533,6 @@
       "disc": null,
       "supp": null,
       "orig": "W08",
-      "concept": "OPA vs NPA",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -2640,7 +2567,6 @@
       "disc": null,
       "supp": null,
       "orig": "M12",
-      "concept": "Gas analysis: air embolism",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -2668,14 +2594,13 @@
       ],
       "explanation": "O2 is a compressed gas, so contents fall in proportion to pressure. A full cylinder is about 1900 psig and 660 L, so 950 psig is about half full, roughly 330 L. 330 L divided by 5 L/min is about 66 minutes. 132 minutes comes from using the full 660 L and forgetting the tank is half empty.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 13 (PDF p. 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G01",
-      "concept": "O2 E-cylinder volume from pressure",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -2714,7 +2639,6 @@
       "disc": null,
       "supp": null,
       "orig": "M30",
-      "concept": "Arterial line fidelity",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -2753,7 +2677,6 @@
       "disc": null,
       "supp": null,
       "orig": "K05",
-      "concept": "Compound A",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -2788,7 +2711,6 @@
       "disc": null,
       "supp": null,
       "orig": "M42",
-      "concept": "MS MAID room setup",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -2819,14 +2741,13 @@
       ],
       "explanation": "In A and B, O2 enters upstream of the leaking tube, so O2 escapes through the leak while N2O continues to the outlet. In C (Drager) and D (Ohmeda), O2 is the last flowmeter, closest to the outlet, so an upstream leak loses N2O or air instead of O2. Instructor note: oxygen is always last. The fail-safe responds only to O2 supply pressure and can't detect a low-pressure leak.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 41 (PDF p. 21)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": "flowmeter",
       "disc": null,
       "supp": null,
       "orig": "G11",
-      "concept": "Flowmeter sequence",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -2861,7 +2782,6 @@
       "disc": null,
       "supp": null,
       "orig": "M32",
-      "concept": "MAP and pulse pressure",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -2896,7 +2816,6 @@
       "disc": null,
       "supp": null,
       "orig": "M33",
-      "concept": "Arterial waveform parts",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -2931,7 +2850,6 @@
       "disc": null,
       "supp": null,
       "orig": "W04",
-      "concept": "Sniffing position",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -2966,7 +2884,6 @@
       "disc": null,
       "supp": null,
       "orig": "M31",
-      "concept": "Transducer leveling",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -3004,7 +2921,6 @@
       "disc": null,
       "supp": null,
       "orig": "K07",
-      "concept": "CO-producing agents",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -3043,7 +2959,6 @@
       "disc": null,
       "supp": null,
       "orig": "M22",
-      "concept": "Widened PaCO2-ETCO2 gradient",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -3078,7 +2993,6 @@
       "disc": null,
       "supp": null,
       "orig": "M13",
-      "concept": "Gas analysis: LMA leak",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -3106,14 +3020,13 @@
       ],
       "explanation": "The Tec 6 heats and pressurizes the sump and balances its circuits electronically; the lecture flags that it requires electricity. Its vapor circuit shut-off (restrictor #1) opens only when the unit is warm and the dial is on, so without power, vapor delivery stops. Expired agent monitoring will show the fall.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 62, 65 (PDF p. 31, 33)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G26",
-      "concept": "Des vaporizer power dependence",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -3148,7 +3061,6 @@
       "disc": null,
       "supp": null,
       "orig": "K17",
-      "concept": "Liquid spill to vapor",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia",
@@ -3184,7 +3096,6 @@
       "disc": null,
       "supp": null,
       "orig": "M02",
-      "concept": "O2 analyzer placement",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -3223,7 +3134,6 @@
       "disc": null,
       "supp": null,
       "orig": "M06",
-      "concept": "Causes of isolated PIP rise",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -3258,7 +3168,6 @@
       "disc": null,
       "supp": null,
       "orig": "W05",
-      "concept": "Ramping",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -3290,14 +3199,13 @@
       ],
       "explanation": "Pumping is retrograde pressure from the circuit pushed back into the vaporizer during PPV or O2 flush use. It is worse with low FGF and a low liquid level, contaminates the bypass channel, and raises the delivered concentration. A check valve between the vaporizer and common gas outlet minimizes it.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 72 (PDF p. 36)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G23",
-      "concept": "Pumping effect",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -3332,7 +3240,6 @@
       "disc": null,
       "supp": null,
       "orig": "M18",
-      "concept": "Sudden ETCO2 drop",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -3367,7 +3274,6 @@
       "disc": null,
       "supp": null,
       "orig": "K02",
-      "concept": "Absorbent capacity",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -3399,14 +3305,13 @@
       ],
       "explanation": "DISS gives each gas a unique diameter on a standardized thread. Quick connectors allow fast connection but are manufacturer specific with no standardization. Waste gas is purple and central vacuum is white. PISS is the cylinder-to-yoke system, not the wall outlet system.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 29, 30 (PDF p. 15)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G16",
-      "concept": "DISS, quick connects, color coding",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -3444,7 +3349,6 @@
       "disc": null,
       "supp": null,
       "orig": "K16",
-      "concept": "Environmental impact",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -3479,7 +3383,6 @@
       "disc": null,
       "supp": null,
       "orig": "M24",
-      "concept": "Monitoring during sedation",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -3507,14 +3410,13 @@
       ],
       "explanation": "Second-stage regulators drop pipeline or cylinder pressure further and damp fluctuations: about 14-16 psi for O2 and 26-38 psi for N2O. 45 psi is the first-stage (cylinder) output and 50-55 psi is pipeline pressure.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 33 (PDF p. 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G14",
-      "concept": "Second-stage regulator",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -3552,7 +3454,6 @@
       "disc": null,
       "supp": null,
       "orig": "W09",
-      "concept": "Laser airway fire",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -3580,14 +3481,13 @@
       ],
       "explanation": "Each yoke has a one-way check valve. Gas pressure in the system pushes the valve in the empty yoke backward into its seated (closed) position, which prevents gas loss and transfilling from a full cylinder into an empty one. Instructor note: the yoke B check valve keeps gas from A from escaping or filling B.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 22 (PDF p. 11)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G15",
-      "concept": "Yoke check valve",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -3622,7 +3522,6 @@
       "disc": null,
       "supp": null,
       "orig": "M25",
-      "concept": "ECG lead sensitivity",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -3654,14 +3553,13 @@
       ],
       "explanation": "USDOT markings include the regulating agency, cylinder metal, rated filling pressure, tare weight, serial number, manufacture date and manufacturer, owner (neck ring), retest markings (star), and gas hazards. Nothing stamped on the cylinder tells you remaining volume (that comes from the gauge, or weight for N2O), and fill or expiration dates aren't among the listed markings.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 9 (PDF p. 5)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G35",
-      "concept": "Cylinder markings",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -3696,7 +3594,6 @@
       "disc": null,
       "supp": null,
       "orig": "N19",
-      "concept": "Laparoscopy and ETCO2",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -3724,14 +3621,13 @@
       ],
       "explanation": "Mechanical valves are adjusted by the flowmeter knob, which changes the orifice size. Electronic valves are integrated into the machine and use pressure sensors and feedback from gas monitors for more precise control, so they depend on power. Neither type measures O2 concentration directly.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 35 (PDF p. 18)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G45",
-      "concept": "Flow control valves",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -3766,7 +3662,6 @@
       "disc": null,
       "supp": null,
       "orig": "C35",
-      "concept": "Airway device leakage",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -3805,7 +3700,6 @@
       "disc": null,
       "supp": null,
       "orig": "N03",
-      "concept": "ASA ETCO2 requirements",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -3840,7 +3734,6 @@
       "disc": null,
       "supp": null,
       "orig": "N58",
-      "concept": "Flow-volume loop: obstructive",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -3871,14 +3764,13 @@
       ],
       "explanation": "The intermediate system runs from the first-stage regulator (and pipeline inlets) to the flow control valves. It includes pipeline inlets, second-stage regulators, the fail-safe, flow control, and flush valves, and indicators and alarms. Instructor note: the flush is the last part of the intermediate system. The hanger yoke is high pressure; flowmeters, vaporizers, and the common gas outlet are low pressure.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 26, 36 (PDF p. 13, 18)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G43",
-      "concept": "Intermediate-pressure system",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -3913,7 +3805,6 @@
       "disc": "Slide 3 prints calcium hydroxide as Ca(OH). The correct formula is Ca(OH)2, which is what this question uses.",
       "supp": null,
       "orig": "K01",
-      "concept": "Absorbent chemistry",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -3948,7 +3839,6 @@
       "disc": null,
       "supp": null,
       "orig": "N13",
-      "concept": "Cardiac oscillations",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -3983,7 +3873,6 @@
       "disc": null,
       "supp": null,
       "orig": "N40",
-      "concept": "Functional vs fractional saturation",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -4011,14 +3900,13 @@
       ],
       "explanation": "N2O's critical temperature is about 36 C, so at room temperature it stays liquid under pressure. Liquid and gas sit in equilibrium and the gauge holds at 745 psig until the last liquid vaporizes. Anything from full to nearly empty can read 745, which is why the instructor noted you have to weigh the cylinder. The linear pressure-volume rule applies to O2 and air, not N2O.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 14 (PDF p. 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G02",
-      "concept": "N2O cylinder pressure vs contents",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -4046,14 +3934,13 @@
       ],
       "explanation": "In a copper kettle, a dedicated O2 flow is bubbled through liquid agent to make saturated vapor, which then joins the main fresh gas. Copper conducts heat well and keeps temperature stable, but the device isn't concentration-calibrated, so calculations are required. Wicks, baffles, and bimetallic strips belong to the variable bypass design; heat and pressure belong to the Tec 6.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 74 (PDF p. 37)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G57",
-      "concept": "Copper kettle",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -4092,7 +3979,6 @@
       "disc": null,
       "supp": null,
       "orig": "N18",
-      "concept": "Increased CO2 production",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -4124,14 +4010,13 @@
       ],
       "explanation": "Both safety systems sense only pressure, not O2 itself, so crossed pipelines and nitrogen contamination slip past them (the lecture cites real events from 2024 and 2019). A cracked flowmeter tube leaks O2 downstream of both. Low O2 supply pressure triggers the fail-safe, a low O2 to N2O ratio triggers the proportioner, and PISS prevents an N2O cylinder from fitting the O2 yoke.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 46, 48 (PDF p. 23, 24)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G67",
-      "concept": "Hypoxic mixture despite safeguards",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -4166,7 +4051,6 @@
       "disc": null,
       "supp": null,
       "orig": "C20",
-      "concept": "Absorbent exhaustion",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -4194,14 +4078,13 @@
       ],
       "explanation": "T (transport) mode secures the vaporizer to prevent leakage. The lecture's intervention for tipping is to avoid moving a vaporizer that isn't in transport mode, because tipping sends liquid into the bypass chamber. The interlock (push button, turn counterclockwise) controls turning it on.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 59, 64 (PDF p. 30, 32)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G55",
-      "concept": "Transport mode",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -4236,7 +4119,6 @@
       "disc": null,
       "supp": null,
       "orig": "N20",
-      "concept": "Acid-base and ETCO2",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -4271,7 +4153,6 @@
       "disc": null,
       "supp": null,
       "orig": "N11",
-      "concept": "Gas monitoring during TIVA",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -4306,7 +4187,6 @@
       "disc": null,
       "supp": null,
       "orig": "C26",
-      "concept": "Leak vs circuit pressure",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -4341,7 +4221,6 @@
       "disc": null,
       "supp": null,
       "orig": "N41",
-      "concept": "Pulse oximetry limitations",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -4373,14 +4252,13 @@
       ],
       "explanation": "US colors: O2 green, N2O blue, air yellow, CO2 gray, helium brown. Nitrogen is black. CO2 and helium are the easy ones to swap.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 7 (PDF p. 4)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G38",
-      "concept": "US cylinder colors",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -4408,14 +4286,13 @@
       ],
       "explanation": "Zone valves isolate areas of the pipeline for maintenance or emergencies. Line pressure regulators reduce pressure, check valves prevent backflow at the machine inlet, and DISS prevents misconnection.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 28 (PDF p. 14)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G41",
-      "concept": "Zone valves",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -4450,7 +4327,6 @@
       "disc": null,
       "supp": null,
       "orig": "M15",
-      "concept": "Capnogram phases",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -4478,14 +4354,13 @@
       ],
       "explanation": "Blood:gas values: des 0.42, N2O 0.46, sevo 0.65, iso 1.46, halothane 2.5. Des and N2O are close, but des is lowest, which is why it has the fastest onset and recovery.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50 (PDF p. 25)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G52",
-      "concept": "Blood:gas coefficients",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -4520,7 +4395,6 @@
       "disc": null,
       "supp": null,
       "orig": "C29",
-      "concept": "TJC scavenging requirement",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -4548,14 +4422,13 @@
       ],
       "explanation": "As flow rises, the float climbs the tapered tube and the annular space (orifice) gets larger, while the pressure drop across the float stays constant. Flow is read at the widest part of the indicator.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 42, 43 (PDF p. 21, 22)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G62",
-      "concept": "Thorpe tube principle",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -4593,7 +4466,6 @@
       "disc": null,
       "supp": null,
       "orig": "N39",
-      "concept": "Pulse oximeter principles",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -4621,14 +4493,13 @@
       ],
       "explanation": "Variable bypass vaporizers are calibrated per agent: sevo up to 8%, other agents up to 5%. The des vaporizer goes to 12% or higher.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 58, 64 (PDF p. 29, 32)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G54",
-      "concept": "Vaporizer dial limits",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -4660,14 +4531,13 @@
       ],
       "explanation": "Inaccurate flow comes from debris, indicator sticking, indicator misalignment, and static electricity. Reading the widest part of the indicator is the correct technique, and laminar flow at low rates and turbulent flow at high rates are normal flowmeter physics built into each tube's calibration.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 47 (PDF p. 24)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G48",
-      "concept": "Flowmeter complications",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -4702,7 +4572,6 @@
       "disc": null,
       "supp": null,
       "orig": "W14",
-      "concept": "NPA insertion",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -4737,7 +4606,6 @@
       "disc": null,
       "supp": null,
       "orig": "C31",
-      "concept": "Open scavenging interface",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -4772,7 +4640,6 @@
       "disc": null,
       "supp": null,
       "orig": "N34",
-      "concept": "Allen test",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -4811,7 +4678,6 @@
       "disc": null,
       "supp": null,
       "orig": "C30",
-      "concept": "Scavenging system parts",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -4839,14 +4705,13 @@
       ],
       "explanation": "Component 5 is the outlet check valve between the vaporizers and the common gas outlet. It blocks retrograde pressure from the circuit, which minimizes pumping. Component 4 is the pressure relief valve, and 2 and 3 are the second-stage regulators.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 5, 72 (PDF p. 3, 36)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": "roadmap",
       "disc": null,
       "supp": null,
       "orig": "G69",
-      "concept": "Machine roadmap: outlet check valve",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -4881,7 +4746,6 @@
       "disc": null,
       "supp": null,
       "orig": "W16",
-      "concept": "HVLP cuffs",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -4916,7 +4780,6 @@
       "disc": null,
       "supp": null,
       "orig": "N02",
-      "concept": "ASA temperature standard",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -4951,7 +4814,6 @@
       "disc": null,
       "supp": null,
       "orig": "N57",
-      "concept": "PV loop: bronchospasm",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -4989,7 +4851,6 @@
       "disc": null,
       "supp": "NIOSH's 1977 recommendation also covers combined use: when halogenated agents are given WITH N2O, the halogenated limit drops from 2 ppm to 0.5 ppm (ceiling over a sampling period up to 1 hour), and N2O stays at 25 ppm TWA. Slide 10 lists only the 2 ppm and 25 ppm values.",
       "orig": "C28",
-      "concept": "NIOSH vs OSHA",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -5017,14 +4878,13 @@
       ],
       "explanation": "A gas can only be liquefied by pressure below its critical temperature. N2O's critical temperature (about 36 C) is above room temperature, so compressing it liquefies it. O2's is -118.6 C, the highest temperature at which O2 can exist as a liquid, so no pressure will liquefy it at room temperature. N2O's boiling point is -88 C, and its fill pressure (745 psig) is lower than O2's.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 11, 14 (PDF p. 6, 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G34",
-      "concept": "Critical temperature",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -5052,14 +4912,13 @@
       ],
       "explanation": "Instructor note: it sits in the nitrous line but responds to O2 pressure. When O2 supply pressure falls below about 25-30 psig it reduces, and below about 20 psig stops, the flow of other gases. It never measures concentration, so it can't catch the wrong gas in the O2 line.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 34 (PDF p. 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G07",
-      "concept": "Fail-safe valve",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -5094,7 +4953,6 @@
       "disc": null,
       "supp": null,
       "orig": "N12",
-      "concept": "Sampling line condensation",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -5129,7 +4987,6 @@
       "disc": null,
       "supp": null,
       "orig": "N15",
-      "concept": "Sloped alveolar plateau",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -5157,14 +5014,13 @@
       ],
       "explanation": "The key fill system matches the bottle adapter to the vaporizer, along with agent-specific color coding. The lecture's intervention: always double-check that the correct bottle, key, and vaporizer are used. The interlock prevents turning on more than one vaporizer; it doesn't stop misfilling.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 59, 70 (PDF p. 30, 35)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G56",
-      "concept": "Key fill system",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -5199,7 +5055,6 @@
       "disc": null,
       "supp": null,
       "orig": "N50",
-      "concept": "Pre-induction sequence",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -5234,7 +5089,6 @@
       "disc": null,
       "supp": null,
       "orig": "C19",
-      "concept": "NaOH/KOH role",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -5262,14 +5116,13 @@
       ],
       "explanation": "Gauge pressure is pressure above ambient: Pg = Pabs minus Patm. So Pabs = Pg + Patm = 1900 + 14.7, about 1915 psia. Subtracting 14.7 (1885) reverses the relationship.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 12 (PDF p. 6)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G32",
-      "concept": "Gauge vs absolute pressure",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -5304,7 +5157,6 @@
       "disc": null,
       "supp": null,
       "orig": "C24",
-      "concept": "Water and compound A",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -5339,7 +5191,6 @@
       "disc": null,
       "supp": null,
       "orig": "N17",
-      "concept": "Flat capnogram troubleshooting",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -5374,7 +5225,6 @@
       "disc": null,
       "supp": null,
       "orig": "N07",
-      "concept": "Cognitive bias and alarms",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -5409,7 +5259,6 @@
       "disc": null,
       "supp": null,
       "orig": "N08",
-      "concept": "Equipment-related outcomes",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -5440,14 +5289,13 @@
       ],
       "explanation": "The Tec 6 heats and pressurizes des and balances its circuits electronically; the lecture flags that it requires electricity. The Aladin uses a CPU, sensors, and an electronically controlled flow control valve. Variable bypass vaporizers (including the Drager Vapor 3000) and the copper kettle are mechanical.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 65, 66, 67 (PDF p. 33, 34)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G59",
-      "concept": "Electrically dependent vaporizers",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -5485,7 +5333,6 @@
       "disc": null,
       "supp": null,
       "orig": "N54",
-      "concept": "Closed claims",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -5513,14 +5360,13 @@
       ],
       "explanation": "Full and empty cylinders go in separate areas, on nonflammable racks. Separating them prevents grabbing an empty in an emergency, and wood is a fuel source in the fire triad.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 10 (PDF p. 5)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G36",
-      "concept": "Cylinder storage",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -5555,7 +5401,6 @@
       "disc": null,
       "supp": null,
       "orig": "N27",
-      "concept": "NIBP and limb position",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -5583,14 +5428,13 @@
       ],
       "explanation": "The Bourdon tube is a curved, flexible tube that STRAIGHTENS when exposed to pressure; gears convert that movement into needle travel. A diaphragm and spring describe a pressure regulator, and a float in a tapered tube describes a flowmeter.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 23 (PDF p. 12)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G40",
-      "concept": "Bourdon gauge",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -5625,7 +5469,6 @@
       "disc": null,
       "supp": null,
       "orig": "N10",
-      "concept": "Infrared gas analysis",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -5664,7 +5507,6 @@
       "disc": null,
       "supp": null,
       "orig": "W13",
-      "concept": "OPA complications",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -5703,7 +5545,6 @@
       "disc": null,
       "supp": null,
       "orig": "W15",
-      "concept": "ETT ISO standards",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -5738,7 +5579,6 @@
       "disc": null,
       "supp": null,
       "orig": "N29",
-      "concept": "Oscillometric NIBP",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -5773,7 +5613,6 @@
       "disc": null,
       "supp": null,
       "orig": "C27",
-      "concept": "WAG exposure findings",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -5801,14 +5640,13 @@
       ],
       "explanation": "The flush delivers pure O2 that BYPASSES the vaporizers, so repeated use dilutes the anesthetic in the circuit (instructor note: heavily dilutes anesthetic gases). Its other listed risk is barotrauma. Pure O2 can't create a hypoxic mixture, and added fresh gas doesn't cause rebreathing.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 37 (PDF p. 19)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G64",
-      "concept": "O2 flush dilution",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -5836,14 +5674,13 @@
       ],
       "explanation": "1% of about 2100 mL total is 21 mL of sevo vapor. Sump outflow is 21% sevo, so 79 mL of carrier gas must enter the sump to pick up 21 mL. The remaining 2000 mL bypasses. 2000:79 is about 25:1. 21:1 confuses the sump concentration with the ratio.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 55 (PDF p. 28)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G19",
-      "concept": "Splitting ratio",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -5878,7 +5715,6 @@
       "disc": null,
       "supp": null,
       "orig": "N56",
-      "concept": "Resistance on spirometry loops",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -5906,14 +5742,13 @@
       ],
       "explanation": "Line pressure regulators are spring-loaded valves that hold outlet pressure constant. The number of reduction steps (single vs multistage) affects pressure stability: more steps, steadier output. The goal is stability, not higher pressure.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 32 (PDF p. 16)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G42",
-      "concept": "Line pressure regulators",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -5948,7 +5783,6 @@
       "disc": null,
       "supp": null,
       "orig": "W20",
-      "concept": "LMA Supreme features",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -5983,7 +5817,6 @@
       "disc": null,
       "supp": null,
       "orig": "N42",
-      "concept": "Apnea detection",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -6018,7 +5851,6 @@
       "disc": null,
       "supp": null,
       "orig": "M04",
-      "concept": "PIP vs plateau: resistance",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -6046,14 +5878,13 @@
       ],
       "explanation": "The splitting ratio is the proportion of fresh gas bypassing vs entering the sump. Because each agent saturates the sump at a different concentration (set by its vapor pressure), the ratio needed for the same dial setting differs between agents. That's why vaporizers are agent-specific.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 54 (PDF p. 27)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G61",
-      "concept": "Splitting ratio and vapor pressure",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -6085,14 +5916,13 @@
       ],
       "explanation": "FDA covers gas purity, recalls, and anesthesia checkout. DOT covers manufacturing, filling, labeling, handling, and storage. The Department of Labor and CDC (OSHA, NIOSH) cover employee health and exposure. ASTM sets anesthesia machine component standards.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 4 (PDF p. 2)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G31",
-      "concept": "Medical gas regulation",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -6127,7 +5957,6 @@
       "disc": null,
       "supp": null,
       "orig": "N14",
-      "concept": "Capnogram phase A-B",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -6166,7 +5995,6 @@
       "disc": null,
       "supp": null,
       "orig": "N45",
-      "concept": "Core temperature sites",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -6201,7 +6029,6 @@
       "disc": null,
       "supp": null,
       "orig": "C22",
-      "concept": "Channeling consequences",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -6236,7 +6063,6 @@
       "disc": null,
       "supp": null,
       "orig": "W18",
-      "concept": "Eschmann introducer",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -6271,7 +6097,6 @@
       "disc": null,
       "supp": null,
       "orig": "N37",
-      "concept": "Peripheral pulse amplification",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -6306,7 +6131,6 @@
       "disc": null,
       "supp": null,
       "orig": "C25",
-      "concept": "Heat and humidity conservation",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -6345,7 +6169,6 @@
       "disc": null,
       "supp": null,
       "orig": "N30",
-      "concept": "NIBP site contraindications",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -6380,7 +6203,6 @@
       "disc": null,
       "supp": null,
       "orig": "K06",
-      "concept": "Desiccation and CO",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -6408,14 +6230,13 @@
       ],
       "explanation": "The low-pressure system runs from the flow control valves to the common gas outlet and includes flowmeters, vaporizers, check valves, and the outlet, at pressures slightly above atmospheric. A loose filler cap is a vaporizer leak that the low-pressure check may detect. Quick connects, yoke washers, and the first-stage regulator are higher-pressure parts.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 39, 69 (PDF p. 20, 35)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G51",
-      "concept": "Low-pressure system boundaries",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -6450,7 +6271,6 @@
       "disc": null,
       "supp": null,
       "orig": "N01",
-      "concept": "ASA Standard I",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -6485,7 +6305,6 @@
       "disc": null,
       "supp": null,
       "orig": "N26",
-      "concept": "BP frequency at induction",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -6520,7 +6339,6 @@
       "disc": null,
       "supp": null,
       "orig": "W12",
-      "concept": "OPA in edentulous patients",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -6548,14 +6366,13 @@
       ],
       "explanation": "From the cylinder table: O2 H-cylinders hold 6000-8000 L; E-cylinders hold about 625-700 L (660 L in the lecture's math). E-cylinders are the transport tank; H-cylinders are the hospital reservoir. 15,900 L and 1590 L are the N2O H- and E-cylinder values.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 7 (PDF p. 4)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G37",
-      "concept": "H vs E cylinders",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -6590,7 +6407,6 @@
       "disc": null,
       "supp": null,
       "orig": "N22",
-      "concept": "Three-lead ECG configuration",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -6625,7 +6441,6 @@
       "disc": null,
       "supp": null,
       "orig": "W17",
-      "concept": "RAE tubes",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -6664,7 +6479,6 @@
       "disc": null,
       "supp": null,
       "orig": "C21",
-      "concept": "Indicator dyes",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -6703,7 +6517,6 @@
       "disc": null,
       "supp": null,
       "orig": "N24",
-      "concept": "ECG setup",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -6738,7 +6551,6 @@
       "disc": null,
       "supp": null,
       "orig": "N35",
-      "concept": "Neonatal arterial lines",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -6773,7 +6585,6 @@
       "disc": null,
       "supp": null,
       "orig": "C32",
-      "concept": "Disposal routes",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -6808,7 +6619,6 @@
       "disc": null,
       "supp": null,
       "orig": "N36",
-      "concept": "Arterial waveform: DBP",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -6843,7 +6653,6 @@
       "disc": null,
       "supp": null,
       "orig": "N33",
-      "concept": "Arterial line contraindications",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -6871,14 +6680,13 @@
       ],
       "explanation": "Component 1 is the fail-safe valve. It sits in the N2O line but is controlled by O2 supply pressure, proportionally reducing and then stopping N2O as O2 pressure falls. Components 2 and 3 are the second-stage O2 and N2O pressure regulators, and 4 is the pressure relief valve.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 5, 34 (PDF p. 3, 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": "roadmap",
       "disc": null,
       "supp": null,
       "orig": "G68",
-      "concept": "Machine roadmap: fail-safe",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -6917,7 +6725,6 @@
       "disc": null,
       "supp": null,
       "orig": "N32",
-      "concept": "Arterial line indications",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -6952,7 +6759,6 @@
       "disc": null,
       "supp": null,
       "orig": "N06",
-      "concept": "Adjusting alarm limits",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -6987,7 +6793,6 @@
       "disc": null,
       "supp": null,
       "orig": "W19",
-      "concept": "Clear face mask",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -7015,14 +6820,13 @@
       ],
       "explanation": "A fusible plug melts in a fire and vents gas. A frangible disk is a metal disk that breaks when pressure gets too high, and the spring-loaded relief valve opens above a pressure threshold; neither melts. The yoke check valve prevents backflow between cylinders; it isn't a cylinder relief device.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 17 (PDF p. 9)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G33",
-      "concept": "Cylinder safety relief devices",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -7061,7 +6865,6 @@
       "disc": null,
       "supp": null,
       "orig": "N04",
-      "concept": "Qualitative ventilation signs",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -7096,7 +6899,6 @@
       "disc": null,
       "supp": null,
       "orig": "C18",
-      "concept": "Soda lime composition",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -7124,14 +6926,13 @@
       ],
       "explanation": "The low-pressure check valve sits near the common gas outlet, downstream of the flowmeters and vaporizers. It prevents backflow from the breathing circuit, helps ensure accurate delivery, and minimizes leaks (including the pumping effect). The other options describe the pipeline check valve, yoke check valve, and fail-safe.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 49 (PDF p. 25)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G50",
-      "concept": "Low-pressure check valve",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -7166,7 +6967,6 @@
       "disc": null,
       "supp": null,
       "orig": "N44",
-      "concept": "Heat loss mechanisms",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -7194,14 +6994,13 @@
       ],
       "explanation": "The gas circuit restrictor creates back pressure proportional to fresh gas flow. The differential pressure transducer senses the gas and vapor circuits and moves a valve to equalize them, so vapor delivery rises with flow. The dial controls restrictor #2. There's no bimetallic strip in the Tec 6.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 62, 63 (PDF p. 31, 32)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H26",
-      "concept": "Tec 6 differential pressure transducer",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -7229,14 +7028,13 @@
       ],
       "explanation": "The lecture's rule: the widest part of the indicator equals the amount of gas flow. That's where the annular space (the variable orifice) is defined.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 43 (PDF p. 22)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H11",
-      "concept": "Reading the flowmeter indicator",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -7271,7 +7069,6 @@
       "disc": null,
       "supp": null,
       "orig": "P08",
-      "concept": "Tube dislodgement capnogram",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -7306,7 +7103,6 @@
       "disc": null,
       "supp": null,
       "orig": "X02",
-      "concept": "OPA orientation",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -7345,7 +7141,6 @@
       "disc": null,
       "supp": null,
       "orig": "P67",
-      "concept": "Nitrogen detection events",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -7380,7 +7175,6 @@
       "disc": null,
       "supp": null,
       "orig": "X12",
-      "concept": "Laryngoscope light failure",
       "sourceMeta": {
         "families": [
           "Monitoring",
@@ -7416,7 +7210,6 @@
       "disc": null,
       "supp": null,
       "orig": "D17",
-      "concept": "Recirculating exchange requirements",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -7451,7 +7244,6 @@
       "disc": null,
       "supp": null,
       "orig": "P44",
-      "concept": "Variable-pitch alarms",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -7486,7 +7278,6 @@
       "disc": null,
       "supp": null,
       "orig": "N57",
-      "concept": "PV loop: bronchospasm",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -7517,14 +7308,13 @@
       ],
       "explanation": "N2O pressure stays at 745 psig while liquid remains, so the gauge can't tell you contents; the instructor noted you have to weigh the cylinder. Subtracting the stamped tare weight from the current weight gives the mass of N2O left. Filling pressure, serial number, and retest markings don't change with use.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 9, 14 (PDF p. 5, 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H57",
-      "concept": "Weighing N2O cylinders",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -7563,7 +7353,6 @@
       "disc": null,
       "supp": null,
       "orig": "P38",
-      "concept": "Arterial line complications",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -7602,7 +7391,6 @@
       "disc": null,
       "supp": null,
       "orig": "P11",
-      "concept": "Neonatal ETCO2 underestimation",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -7640,7 +7428,6 @@
       "disc": null,
       "supp": null,
       "orig": "D01",
-      "concept": "Closed interface: vacuum failure",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -7675,7 +7462,6 @@
       "disc": null,
       "supp": null,
       "orig": "X13",
-      "concept": "LMA Supreme bite block",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -7710,7 +7496,6 @@
       "disc": null,
       "supp": null,
       "orig": "X10",
-      "concept": "Judging mask ventilation",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -7742,14 +7527,13 @@
       ],
       "explanation": "Both safety systems sense only pressure, not O2 itself, so crossed pipelines and nitrogen contamination slip past them (the lecture cites real events from 2024 and 2019). A cracked flowmeter tube leaks O2 downstream of both. Low O2 supply pressure triggers the fail-safe, a low O2 to N2O ratio triggers the proportioner, and PISS prevents an N2O cylinder from fitting the O2 yoke.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 46, 48 (PDF p. 23, 24)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G67",
-      "concept": "Hypoxic mixture despite safeguards",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -7777,14 +7561,13 @@
       ],
       "explanation": "Quick connectors are gas specific per manufacturer, with no standardization. DISS threads are nationally standardized, PISS is standardized for cylinders, and common gas outlet connections are standardized sizes.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 29, 30 (PDF p. 15)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H56",
-      "concept": "Quick connect vs DISS",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -7819,7 +7602,6 @@
       "disc": null,
       "supp": null,
       "orig": "N36",
-      "concept": "Arterial waveform: DBP",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -7847,14 +7629,13 @@
       ],
       "explanation": "MAC values: des 6.6%, sevo 1.8%, iso 1.17%, halothane 0.76%. Only des exceeds 5%, which is one reason it needs its own vaporizer calibrated to 12% or higher. Sevo vaporizers go to 8%.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 50, 58 (PDF p. 25, 29)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H51",
-      "concept": "Dial limits vs MAC",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -7889,7 +7670,6 @@
       "disc": null,
       "supp": null,
       "orig": "P01",
-      "concept": "Low-flow FiO2 drift",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -7924,7 +7704,6 @@
       "disc": null,
       "supp": null,
       "orig": "P34",
-      "concept": "Zeroing and leveling",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -7959,7 +7738,6 @@
       "disc": null,
       "supp": null,
       "orig": "D06",
-      "concept": "Desiccated absorbent: agent choice",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -7994,7 +7772,6 @@
       "disc": null,
       "supp": null,
       "orig": "P39",
-      "concept": "Radial underestimating central pressure",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -8032,7 +7809,6 @@
       "disc": null,
       "supp": null,
       "orig": "P52",
-      "concept": "When ETCO2 is required",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -8067,7 +7843,6 @@
       "disc": null,
       "supp": null,
       "orig": "D07",
-      "concept": "Exhausted absorbent despite color",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -8106,7 +7881,6 @@
       "disc": null,
       "supp": null,
       "orig": "D04",
-      "concept": "Scavenger-related contamination",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -8134,14 +7908,13 @@
       ],
       "explanation": "The flush opens O2 flow from the pipeline or the first-stage (cylinder) regulator straight to the common gas outlet. With the pipeline failed and the cylinder closed, it has no O2 source. Open the cylinder first.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 36 (PDF p. 18)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H06",
-      "concept": "Flush supply source",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -8176,7 +7949,6 @@
       "disc": null,
       "supp": null,
       "orig": "P77",
-      "concept": "Dye interference",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -8214,7 +7986,6 @@
       "disc": null,
       "supp": null,
       "orig": "P03",
-      "concept": "O2 sensor principles",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -8249,7 +8020,6 @@
       "disc": null,
       "supp": null,
       "orig": "P83",
-      "concept": "ASA oxygenation standard",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -8284,7 +8054,6 @@
       "disc": null,
       "supp": null,
       "orig": "X01",
-      "concept": "Mask hold technique",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -8319,7 +8088,6 @@
       "disc": null,
       "supp": null,
       "orig": "P73",
-      "concept": "Oscillometric device variation",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -8354,7 +8122,6 @@
       "disc": null,
       "supp": null,
       "orig": "P64",
-      "concept": "Light anesthesia and ETCO2",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -8382,14 +8149,13 @@
       ],
       "explanation": "The Tec 6 runs two parallel circuits. Fresh gas flows through the gas circuit restrictor, while the heated, pressurized sump supplies 100% des vapor through restrictor valves into that gas stream. A variable bypass vaporizer instead splits fresh gas and saturates the portion that passes through the chamber.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 61, 62 (PDF p. 31)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H25",
-      "concept": "Tec 6 gas vs vapor circuits",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -8424,7 +8190,6 @@
       "disc": null,
       "supp": null,
       "orig": "D26",
-      "concept": "Scavenging efficacy",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -8452,14 +8217,13 @@
       ],
       "explanation": "The auxiliary common gas outlet diverts fresh gas flow to a separate circuit such as a Mapleson, cannula, or mask. Left in that position, the flowmeters register flow but none reaches the circle. The fail-safe and proportioner respond to O2 pressure and ratios, not outlet selection.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 75 (PDF p. 38)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H13",
-      "concept": "Auxiliary common gas outlet",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -8487,14 +8251,13 @@
       ],
       "explanation": "PPV or O2 flush transmits pressure back into the vaporizer. When pressure releases, saturated gas from the chamber expands into the bypass channel, so the outflow carries extra agent. It's worse at low FGF and low liquid levels, and an outlet check valve minimizes it.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 72 (PDF p. 36)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H22",
-      "concept": "Pumping effect mechanism",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -8529,7 +8292,6 @@
       "disc": null,
       "supp": null,
       "orig": "P25",
-      "concept": "Evaporative heat loss",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -8564,7 +8326,6 @@
       "disc": null,
       "supp": null,
       "orig": "N42",
-      "concept": "Apnea detection",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -8603,7 +8364,6 @@
       "disc": null,
       "supp": null,
       "orig": "P48",
-      "concept": "Estimating blood loss",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -8631,14 +8391,13 @@
       ],
       "explanation": "N2O holds at 745 psig while liquid and gas are in equilibrium. Once the last liquid vaporizes, only gas remains and pressure falls in proportion to volume. The lecture's figure shows about 215 L left at 400 psig, so the cylinder is nearly empty. The 'half full' reasoning applies the O2 rule to the liquid phase, which doesn't work.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 14 (PDF p. 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H01",
-      "concept": "N2O gauge falling below 745",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -8673,7 +8432,6 @@
       "disc": null,
       "supp": null,
       "orig": "P07",
-      "concept": "CPR ETCO2 target",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -8701,14 +8459,13 @@
       ],
       "explanation": "PISS depends on matching pins and holes to ensure the correct cylinder connection. With a pin missing, a wrong cylinder could fit, and the lecture lists incorrect gas administration, leaks, equipment damage, and patient injury as risks of improper attachment.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 18, 19 (PDF p. 9, 10)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H55",
-      "concept": "PISS failure",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -8743,7 +8500,6 @@
       "disc": null,
       "supp": null,
       "orig": "N17",
-      "concept": "Flat capnogram troubleshooting",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -8771,14 +8527,13 @@
       ],
       "explanation": "Slide 73 lists improper seating on the manifold, an incompatible vaporizer, and interlock failure as installation problems; the fix is ensuring correct installation before use. With the cap already checked, seating is left. The fail-safe and pipeline check valve are upstream of the low-pressure system.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 69, 73 (PDF p. 35, 37)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H24",
-      "concept": "Vaporizer installation leak",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -8816,7 +8571,6 @@
       "disc": null,
       "supp": null,
       "orig": "X22",
-      "concept": "Uncuffed tube leak",
       "sourceMeta": {
         "families": [
           "Monitoring",
@@ -8846,14 +8600,13 @@
       ],
       "explanation": "Liquid used (mL/hr) = vol% x FGF x 3, so it scales with the dialed percent. MAC at age 40: des 6.6%, sevo 1.8%, iso 1.17%, halothane 0.76%. Des needs the highest vol%, so it uses the most liquid.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 50, 52 (PDF p. 25, 26)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H29",
-      "concept": "Consumption at 1 MAC",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -8888,7 +8641,6 @@
       "disc": null,
       "supp": null,
       "orig": "D15",
-      "concept": "Disconnection technique",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -8926,7 +8678,6 @@
       "disc": null,
       "supp": null,
       "orig": "P66",
-      "concept": "Agent analysis events",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -8961,7 +8712,6 @@
       "disc": null,
       "supp": null,
       "orig": "X09",
-      "concept": "CICO next step",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -8989,14 +8739,13 @@
       ],
       "explanation": "Baffles direct fresh gas toward wicks that draw liquid up from the reservoir and spread it over a larger surface area. That flow-over design ensures the chamber gas is saturated, which the dial's concentration calibration depends on.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 57 (PDF p. 29)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H21",
-      "concept": "Wicks and baffles",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -9024,14 +8773,13 @@
       ],
       "explanation": "A gas can only be liquefied by pressure below its critical temperature. N2O's critical temperature (about 36 C) is above room temperature, so compressing it liquefies it. O2's is -118.6 C, the highest temperature at which O2 can exist as a liquid, so no pressure will liquefy it at room temperature. N2O's boiling point is -88 C, and its fill pressure (745 psig) is lower than O2's.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 11, 14 (PDF p. 6, 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "G34",
-      "concept": "Critical temperature",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -9066,7 +8814,6 @@
       "disc": null,
       "supp": null,
       "orig": "P29",
-      "concept": "Palpation BP",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -9101,7 +8848,6 @@
       "disc": null,
       "supp": null,
       "orig": "D03",
-      "concept": "Open interface: inadequate vacuum",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -9136,7 +8882,6 @@
       "disc": null,
       "supp": null,
       "orig": "P58",
-      "concept": "PV loop: kinked ETT",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -9164,14 +8909,13 @@
       ],
       "explanation": "The pipeline inlet check valve is open when pipeline pressure pushes it forward. With the pipeline disconnected and a cylinder open, gas pressure pushes it backward into the seated position, reducing loss from backflow. The yoke check valve does the same job between cylinders, not at the pipeline inlet.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 31 (PDF p. 16)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H04",
-      "concept": "Pipeline inlet check valve",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -9206,7 +8950,6 @@
       "disc": null,
       "supp": null,
       "orig": "P37",
-      "concept": "Sudden A-line drop: first action",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -9241,7 +8984,6 @@
       "disc": null,
       "supp": null,
       "orig": "D21",
-      "concept": "CO risk factors combined",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -9280,7 +9022,6 @@
       "disc": null,
       "supp": null,
       "orig": "X05",
-      "concept": "Laser ignition factors",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -9315,7 +9056,6 @@
       "disc": null,
       "supp": null,
       "orig": "P14",
-      "concept": "Auto-PEEP and ETCO2",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -9350,7 +9090,6 @@
       "disc": null,
       "supp": null,
       "orig": "P06",
-      "concept": "ROSC on capnography",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -9378,14 +9117,13 @@
       ],
       "explanation": "The first-stage regulator, just downstream of the yoke, turns high, variable cylinder pressure into a steady (about 45 psi) output, protecting components and keeping flow stable as the cylinder empties. The second-stage regulator works on pressure that the first stage has already reduced.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 24 (PDF p. 12)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H63",
-      "concept": "First-stage regulator function",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -9420,7 +9158,6 @@
       "disc": null,
       "supp": null,
       "orig": "P24",
-      "concept": "Temperature monitoring in sedation",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -9455,7 +9192,6 @@
       "disc": null,
       "supp": null,
       "orig": "D27",
-      "concept": "Absorber position on circle diagram",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -9494,7 +9230,6 @@
       "disc": null,
       "supp": null,
       "orig": "P47",
-      "concept": "Adjunct monitors",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -9529,7 +9264,6 @@
       "disc": null,
       "supp": null,
       "orig": "P86",
-      "concept": "Falling ETCO2 with hypotension",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -9564,7 +9298,6 @@
       "disc": null,
       "supp": null,
       "orig": "D23",
-      "concept": "FGF and absorbent life",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -9599,7 +9332,6 @@
       "disc": null,
       "supp": null,
       "orig": "D11",
-      "concept": "Indicator bleaching",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -9634,7 +9366,6 @@
       "disc": null,
       "supp": null,
       "orig": "P35",
-      "concept": "Overdamped fast-flush",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -9662,14 +9393,13 @@
       ],
       "explanation": "As O2 supply pressure falls below about 25-30 psig, the fail-safe proportionally reduces other gas flows. It stops them completely only below about 20 psig. It never raises N2O flow.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 34 (PDF p. 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H08",
-      "concept": "Fail-safe pressure thresholds",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -9704,7 +9434,6 @@
       "disc": null,
       "supp": null,
       "orig": "D19",
-      "concept": "Environmental technique choice",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -9732,14 +9461,13 @@
       ],
       "explanation": "Warmer liquid has a higher vapor pressure, so each mL of chamber gas carries more agent. The bimetallic strip adjusts the splitting ratio in the opposite direction from cooling, sending less gas through the chamber so output stays at the dialed concentration.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 56 (PDF p. 28)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H20",
-      "concept": "Temperature compensation: warming",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -9778,7 +9506,6 @@
       "disc": null,
       "supp": null,
       "orig": "D25",
-      "concept": "WAG findings in women",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -9813,7 +9540,6 @@
       "disc": null,
       "supp": null,
       "orig": "P41",
-      "concept": "Ischemia ECG pattern",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -9841,14 +9567,13 @@
       ],
       "explanation": "The machine uses the cylinder (regulated to about 45 psi) whenever pipeline pressure is lower, but only if the cylinder is open. The flush and the auxiliary flowmeter draw from the same O2 supply that just failed, and the fail-safe will reduce and then stop N2O as O2 pressure falls.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 26, 33, 44 (PDF p. 13, 17, 22)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H03",
-      "concept": "Pipeline loss: first action",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -9883,7 +9608,6 @@
       "disc": "Slide 75 places the over/underestimation crossover at 70%. Standard references (e.g., OpenAnesthesia) use 85%, matching the slide's own 1:1 = about 85% point. This question uses 85%.",
       "supp": null,
       "orig": "P75",
-      "concept": "MetHb overestimation",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -9914,14 +9638,13 @@
       ],
       "explanation": "The low-pressure system runs from the flow control valves to the common gas outlet: flowmeters, vaporizers, check valves, and the outlet. A filler cap and a cracked flowmeter tube sit inside it. Yoke washers, cylinder valves, quick connects, and the first-stage regulator are in the high or intermediate systems.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 39, 48, 69 (PDF p. 20, 24, 35)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H64",
-      "concept": "Scope of low-pressure leak check",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -9949,14 +9672,13 @@
       ],
       "explanation": "The lecture's bulk tank diagram shows liquid O2 at about -160 C in a vacuum-insulated tank; liquid passes through a control valve, vaporizer, and superheater, then a pressure regulator drops it to about 50 psig for the pipeline. The relief valve protects the tank from overpressure.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 32 (PDF p. 16)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H35",
-      "concept": "Bulk liquid O2 system",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -9991,7 +9713,6 @@
       "disc": null,
       "supp": null,
       "orig": "P21",
-      "concept": "Left shift and tissue delivery",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -10019,14 +9740,13 @@
       ],
       "explanation": "The Aladin cassette is removable and may be stored or handled in any position, so the tipping problem of variable bypass vaporizers doesn't apply. It still uses a key fill system, depends on the machine's CPU, and is identified by a magnetic code.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 66 (PDF p. 33)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H27",
-      "concept": "Cassette handling",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -10065,7 +9785,6 @@
       "disc": null,
       "supp": null,
       "orig": "P15",
-      "concept": "Decreased CO2 delivery",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -10100,7 +9819,6 @@
       "disc": null,
       "supp": null,
       "orig": "D10",
-      "concept": "Heat of neutralization",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -10135,7 +9853,6 @@
       "disc": null,
       "supp": null,
       "orig": "P23",
-      "concept": "Rectal temperature lag",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -10170,7 +9887,6 @@
       "disc": null,
       "supp": null,
       "orig": "P87",
-      "concept": "Normal PaCO2-ETCO2 gradient",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -10201,14 +9917,13 @@
       ],
       "explanation": "O2 last means an upstream leak loses another gas instead of O2, and the larger fluted O2 knob is a tactile safety feature. Gas-specific calibration and reading the widest part are about accuracy; laminar flow and knob direction are normal operation.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 40, 41 (PDF p. 20, 21)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H12",
-      "concept": "Flowmeter hypoxia safeguards",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -10236,14 +9951,13 @@
       ],
       "explanation": "For O2 to be 25% of the total, O2 / (O2 + 3) = 0.25, so O2 = 1 L/min (1 of 4 L total). At 0.75 L/min, O2 would be 0.75/3.75 = 20%.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 45 (PDF p. 23)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H40",
-      "concept": "Proportioning math",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -10282,7 +9996,6 @@
       "disc": null,
       "supp": null,
       "orig": "P43",
-      "concept": "Alarm fatigue factors",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -10317,7 +10030,6 @@
       "disc": null,
       "supp": null,
       "orig": "X19",
-      "concept": "OPA and airway reflexes",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -10352,7 +10064,6 @@
       "disc": null,
       "supp": null,
       "orig": "N20",
-      "concept": "Acid-base and ETCO2",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -10380,14 +10091,13 @@
       ],
       "explanation": "The second-stage regulator further reduces pipeline or cylinder pressure (about 14-16 psi for O2) and dampens fluctuations, so flowmeter settings stay steady. The first-stage regulator only handles cylinder gas, and check valves and the fail-safe don't smooth pressure.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 33 (PDF p. 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H62",
-      "concept": "Second-stage regulator function",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -10426,7 +10136,6 @@
       "disc": null,
       "supp": "The combined-use limit (0.5 ppm halogenated with N2O at 25 ppm; halogenated limit is a ceiling over a sampling period up to 1 hour) comes from NIOSH's 1977 recommendation. Slide 10 lists only the 2 ppm and 25 ppm values.",
       "orig": "D12",
-      "concept": "Applying NIOSH limits alone vs combined",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -10461,7 +10170,6 @@
       "disc": null,
       "supp": null,
       "orig": "P31",
-      "concept": "Preductal NIBP",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -10489,14 +10197,13 @@
       ],
       "explanation": "Slide 69: a loose or missing filler cap causes a vaporizer leak that a low-pressure check may detect. The intervention is always checking that the cap is replaced and closed tightly. Scavenger problems don't cause a low-pressure leak, and the yoke washer is in the high-pressure system.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 69 (PDF p. 35)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H44",
-      "concept": "Filler cap leak",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -10531,7 +10238,6 @@
       "disc": null,
       "supp": null,
       "orig": "C22",
-      "concept": "Channeling consequences",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -10559,14 +10265,13 @@
       ],
       "explanation": "Chamber gas is fully saturated, so its concentration equals vapor pressure divided by atmospheric pressure: 240/760 is about 32% for iso. Sevo is 160/760, about 21% (the lecture's example); des would be 669/760, about 88%. The dial sets how much bypass gas dilutes this.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 50, 53 (PDF p. 25, 27)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H17",
-      "concept": "Saturated chamber concentration",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -10601,7 +10306,6 @@
       "disc": null,
       "supp": null,
       "orig": "P63",
-      "concept": "Low ETCO2 in arrest",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -10636,7 +10340,6 @@
       "disc": null,
       "supp": null,
       "orig": "P60",
-      "concept": "Insufflation restrictive pattern",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -10664,14 +10367,13 @@
       ],
       "explanation": "The flush sits at the end of the intermediate system and sends O2 directly to the common gas outlet, bypassing the low-pressure system (flowmeters and vaporizers). A low-pressure leak therefore doesn't affect it. Keep in mind the flush delivers O2 without agent.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 36, 39 (PDF p. 18, 20)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H43",
-      "concept": "Flush bypasses low-pressure leaks",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -10710,7 +10412,6 @@
       "disc": null,
       "supp": null,
       "orig": "P84",
-      "concept": "MS MAID airway setup",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -10745,7 +10446,6 @@
       "disc": null,
       "supp": null,
       "orig": "P28",
-      "concept": "NIBP interval limits",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -10780,7 +10480,6 @@
       "disc": null,
       "supp": null,
       "orig": "R15",
-      "concept": "Flat upper curve",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -10815,7 +10514,6 @@
       "disc": null,
       "supp": null,
       "orig": "E08",
-      "concept": "Water in the absorber",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -10843,14 +10541,13 @@
       ],
       "explanation": "A full O2 E-cylinder holds about 660 L. 660 L divided by 15 L/min is about 44 minutes. 127 minutes would come from mistakenly using gauge psig divided by 15.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 12, 13 (PDF p. 6, 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J01",
-      "concept": "Full E-cylinder at high flow",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -10885,7 +10582,6 @@
       "disc": null,
       "supp": null,
       "orig": "R118",
-      "concept": "Ventilator leak and ETCO2",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -10920,7 +10616,6 @@
       "disc": null,
       "supp": null,
       "orig": "E02",
-      "concept": "Disposable circuit leaks",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -10959,7 +10654,6 @@
       "disc": null,
       "supp": null,
       "orig": "R136",
-      "concept": "Pediatric arterial sites",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -10987,14 +10681,13 @@
       ],
       "explanation": "The machine roadmap shows a dedicated O2 supply low-pressure alarm in the intermediate system to alert the provider. The fail-safe, in the N2O line, silently proportions and then stops N2O as O2 pressure falls. The proportioning system responds to flow settings, not supply pressure.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 5, 34 (PDF p. 3, 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J28",
-      "concept": "Alarm vs fail-safe roles",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -11025,14 +10718,13 @@
       ],
       "explanation": "PISS matches pin holes on the cylinder valve to pins on the yoke. DISS gives gas-specific diameters on a nationally standardized thread for pipeline connections. Quick connectors are wall fittings that are NOT standardized between manufacturers. Vaporizers use their own manifold and interlock systems.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 18, 29, 30 (PDF p. 9, 15)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J26",
-      "concept": "PISS vs DISS locations",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -11067,7 +10759,6 @@
       "disc": null,
       "supp": null,
       "orig": "R85",
-      "concept": "PVD arm differences",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -11095,14 +10786,13 @@
       ],
       "explanation": "The auxiliary O2 flowmeter provides supplemental O2 (cannula, mask, Ambu bag) with the circuit left intact, at flows up to about 10 L/min, from the same pipeline source. A 15 L/min non-rebreather exceeds that.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 44 (PDF p. 22)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J52",
-      "concept": "Auxiliary flowmeter limits",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -11137,7 +10827,6 @@
       "disc": null,
       "supp": null,
       "orig": "Y09",
-      "concept": "Pressure and volume in BVM",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -11165,14 +10854,13 @@
       ],
       "explanation": "Boiling points at 1 atm: des 22.8 C, iso 48.5 C, halothane 50.2 C, sevo 58.6 C. Only des boils below 24 C, which is why its vaporizer heats and pressurizes the agent.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 50, 60 (PDF p. 25, 30)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J22",
-      "concept": "Boiling point near room temperature",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -11207,7 +10895,6 @@
       "disc": null,
       "supp": null,
       "orig": "E26",
-      "concept": "Soluble agents for short cases",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -11242,7 +10929,6 @@
       "disc": null,
       "supp": null,
       "orig": "R134",
-      "concept": "Temperature standard: intended change",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -11281,7 +10967,6 @@
       "disc": null,
       "supp": "The combined-use limit (0.5 ppm halogenated with N2O at 25 ppm; halogenated limit is a ceiling over a sampling period up to 1 hour) comes from NIOSH's 1977 recommendation. Slide 10 lists only the 2 ppm and 25 ppm values.",
       "orig": "D12",
-      "concept": "Applying NIOSH limits alone vs combined",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -11309,14 +10994,13 @@
       ],
       "explanation": "Component 2 is the second-stage O2 pressure regulator, which lowers pipeline or cylinder pressure to about 14-16 psi and dampens fluctuations. Component 3 is the N2O second-stage regulator (about 26-38 psi), 1 is the fail-safe, and 5 is the outlet check valve.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 5, 33 (PDF p. 3, 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": "roadmap",
       "disc": null,
       "supp": null,
       "orig": "J46",
-      "concept": "Roadmap: second-stage O2 regulator",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -11351,7 +11035,6 @@
       "disc": null,
       "supp": null,
       "orig": "E20",
-      "concept": "Emergence WAG exposure",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -11386,7 +11069,6 @@
       "disc": null,
       "supp": null,
       "orig": "R41",
-      "concept": "PV loop: emphysema",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -11424,7 +11106,6 @@
       "disc": null,
       "supp": null,
       "orig": "R142",
-      "concept": "Pulse oximetry accuracy",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -11459,7 +11140,6 @@
       "disc": null,
       "supp": null,
       "orig": "E15",
-      "concept": "N2O and labor analgesia",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -11497,7 +11177,6 @@
       "disc": null,
       "supp": null,
       "orig": "R72",
-      "concept": "Obstructive loop features",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -11536,7 +11215,6 @@
       "disc": null,
       "supp": null,
       "orig": "E17",
-      "concept": "OR ventilation components",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -11564,14 +11242,13 @@
       ],
       "explanation": "The splitting ratio is calibrated to sevo's vapor pressure (160 mmHg), and ratios differ among agents based on vapor pressure. Iso's higher vapor pressure (240 mmHg) saturates chamber gas at a higher concentration, so output exceeds the dial. The lecture's intervention: always double-check bottle, key, and vaporizer.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 50, 54 (PDF p. 25, 27)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J48",
-      "concept": "Misfilled vaporizer output",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -11599,14 +11276,13 @@
       ],
       "explanation": "The machine draws from whichever source is at higher pressure. Pipeline normally runs 50-55 psi, above the cylinder's regulated ~45 psi. At 42 psig the open cylinder takes over and silently empties, leaving no backup. The auxiliary flowmeter draws from the same O2 supply.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 33 (PDF p. 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J04",
-      "concept": "Low pipeline pressure draining cylinder",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -11641,7 +11317,6 @@
       "disc": null,
       "supp": null,
       "orig": "R141",
-      "concept": "AANA Standard 5",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -11676,7 +11351,6 @@
       "disc": null,
       "supp": null,
       "orig": "Y13",
-      "concept": "Correcting the sniffing position",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -11711,7 +11385,6 @@
       "disc": null,
       "supp": null,
       "orig": "R64",
-      "concept": "Rising ETCO2 despite ventilation",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -11746,7 +11419,6 @@
       "disc": null,
       "supp": null,
       "orig": "R58",
-      "concept": "Multi-wavelength IR analysis",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -11781,7 +11453,6 @@
       "disc": null,
       "supp": null,
       "orig": "Y01",
-      "concept": "Escalating mask ventilation",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -11809,14 +11480,13 @@
       ],
       "explanation": "The Aladin's central processing unit identifies each cassette by its magnetic code, then electronically controls flow rates, bypass percentages, and temperature. The key fill system prevents misfilling the cassette itself.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 66 (PDF p. 33)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J17",
-      "concept": "Cassette identification",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -11851,7 +11521,6 @@
       "disc": null,
       "supp": null,
       "orig": "E05",
-      "concept": "Conducting tubing disconnection",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -11882,14 +11551,13 @@
       ],
       "explanation": "The fail-safe, in the N2O line, responds to falling O2 supply PRESSURE. The proportioning system links O2 and N2O at the flow control valves to keep FiO2 above about 25%. Neither measures O2 concentration, which is why crossed pipelines slip past both.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 34, 45 (PDF p. 17, 23)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J30",
-      "concept": "Fail-safe vs proportioner triggers",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -11924,7 +11592,6 @@
       "disc": null,
       "supp": null,
       "orig": "R71",
-      "concept": "Obesity on flow-volume loop",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -11959,7 +11626,6 @@
       "disc": null,
       "supp": null,
       "orig": "Y04",
-      "concept": "Laser gas choice",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -11998,7 +11664,6 @@
       "disc": null,
       "supp": null,
       "orig": "E01",
-      "concept": "Vaporizer leak sources",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -12033,7 +11698,6 @@
       "disc": null,
       "supp": null,
       "orig": "R90",
-      "concept": "ECG display duration",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -12072,7 +11736,6 @@
       "disc": null,
       "supp": null,
       "orig": "E27",
-      "concept": "Absorber leak sources",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -12100,14 +11763,13 @@
       ],
       "explanation": "N2O's critical temperature is about 36 C. Above it, no amount of pressure keeps N2O liquid, so the cylinder contains only gas at a pressure above 745 psig. Below it, liquid and gas coexist and the gauge holds at 745 psig at 20 C.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 14 (PDF p. 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J57",
-      "concept": "N2O above critical temperature",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -12135,14 +11797,13 @@
       ],
       "explanation": "International coding: air is white and black, O2 is solid white. PISS for air is 1 and 5; O2 is 2 and 5 and N2O is 3 and 5. Both the color and the pins point to medical air.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 7, 18 (PDF p. 4, 9)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J72",
-      "concept": "International color plus PISS",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -12177,7 +11838,6 @@
       "disc": null,
       "supp": null,
       "orig": "R74",
-      "concept": "O2 sensor calibration",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -12216,7 +11876,6 @@
       "disc": null,
       "supp": null,
       "orig": "R122",
-      "concept": "Alarm fatigue results",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -12244,14 +11903,13 @@
       ],
       "explanation": "The machine uses the cylinder (regulated to about 45 psi) whenever pipeline pressure is lower, but only if the cylinder is open. The flush and the auxiliary flowmeter draw from the same O2 supply that just failed, and the fail-safe will reduce and then stop N2O as O2 pressure falls.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 26, 33, 44 (PDF p. 13, 17, 22)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H03",
-      "concept": "Pipeline loss: first action",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -12289,7 +11947,6 @@
       "disc": null,
       "supp": null,
       "orig": "Y03",
-      "concept": "Blade design and technique",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -12324,7 +11981,6 @@
       "disc": null,
       "supp": null,
       "orig": "P35",
-      "concept": "Overdamped fast-flush",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -12355,14 +12011,13 @@
       ],
       "explanation": "From the lecture's cylinder table, N2O (745 psi) and CO2 (838 psi) are liquid/gas; O2, air, and helium are gases. For liquid/gas cylinders, pressure stays constant while liquid remains, so contents are found by weight.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 7 (PDF p. 4)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J73",
-      "concept": "Liquid/gas cylinders",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -12397,7 +12052,6 @@
       "disc": null,
       "supp": null,
       "orig": "R65",
-      "concept": "Zero baseline rules out rebreathing",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -12432,7 +12086,6 @@
       "disc": null,
       "supp": null,
       "orig": "X09",
-      "concept": "CICO next step",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -12470,7 +12123,6 @@
       "disc": null,
       "supp": null,
       "orig": "Y18",
-      "concept": "Laser-resistant tube facts",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -12498,14 +12150,13 @@
       ],
       "explanation": "Overfilling risks liquid contaminating the bypass chamber or outlet and overdosing the patient. The lecture's intervention: turn the vaporizer off, keep it in the correct position, and fill only to the specified level. Tilting is exactly what sends liquid into the bypass.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 70 (PDF p. 35)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J12",
-      "concept": "Overfilled vaporizer",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -12544,7 +12195,6 @@
       "disc": null,
       "supp": null,
       "orig": "R11",
-      "concept": "Pulse oximeter interference",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -12579,7 +12229,6 @@
       "disc": null,
       "supp": null,
       "orig": "R109",
-      "concept": "Fast-flush test outputs",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -12607,14 +12256,13 @@
       ],
       "explanation": "P1V1 = P2V2: 500 psi x 5 L = 14.7 psi x V2, so V2 is about 170 L. The lecture's full-cylinder version (1900 x 5 / 14.7) gives about 660 L, so 500 psig is roughly a quarter.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 12, 13 (PDF p. 6, 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J03",
-      "concept": "Boyle's law cylinder math",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -12642,14 +12290,13 @@
       ],
       "explanation": "The gas circuit restrictor creates back pressure proportional to fresh gas flow. The differential pressure transducer senses the gas and vapor circuits and moves a valve to equalize them, so vapor delivery rises with flow. The dial controls restrictor #2. There's no bimetallic strip in the Tec 6.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 62, 63 (PDF p. 31, 32)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "H26",
-      "concept": "Tec 6 differential pressure transducer",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -12684,7 +12331,6 @@
       "disc": null,
       "supp": null,
       "orig": "E11",
-      "concept": "Why ethyl violet",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -12723,7 +12369,6 @@
       "disc": null,
       "supp": null,
       "orig": "R22",
-      "concept": "NIBP complications",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -12758,7 +12403,6 @@
       "disc": null,
       "supp": null,
       "orig": "R20",
-      "concept": "Anesthesia and thermoregulation",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -12793,7 +12437,6 @@
       "disc": null,
       "supp": null,
       "orig": "R38",
-      "concept": "FiO2 and airway fire risk",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -12828,7 +12471,6 @@
       "disc": null,
       "supp": null,
       "orig": "Y21",
-      "concept": "Adjunct choice with loose teeth",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -12863,7 +12505,6 @@
       "disc": null,
       "supp": null,
       "orig": "R01",
-      "concept": "Hypoventilation capnogram",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -12898,7 +12539,6 @@
       "disc": null,
       "supp": null,
       "orig": "Y08",
-      "concept": "Locating the CTM",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -12933,7 +12573,6 @@
       "disc": null,
       "supp": null,
       "orig": "E13",
-      "concept": "Reducing compound A",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -12968,7 +12607,6 @@
       "disc": null,
       "supp": null,
       "orig": "E21",
-      "concept": "Emptying the circuit",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -13003,7 +12641,6 @@
       "disc": null,
       "supp": null,
       "orig": "P63",
-      "concept": "Low ETCO2 in arrest",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -13031,14 +12668,13 @@
       ],
       "explanation": "The CPU monitors agent temperature in every cassette and adjusts how much agent-laden gas the flow control valve adds to the bypass gas. Metal plates and fans under the cassette help stabilize temperature. Bimetallic strips are variable bypass features; heating to 39 C is the Tec 6.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 67 (PDF p. 34)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J18",
-      "concept": "Cassette temperature control",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -13066,14 +12702,13 @@
       ],
       "explanation": "The interlock safety mechanism requires pushing a button and rotating counterclockwise from the locked (closed) position to open. T mode is for securing the vaporizer during transport, and overfilling doesn't lock the dial.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 59 (PDF p. 30)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J41",
-      "concept": "Vaporizer interlock",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -13111,7 +12746,6 @@
       "disc": null,
       "supp": null,
       "orig": "R129",
-      "concept": "Dynamic vs static compliance",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -13146,7 +12780,6 @@
       "disc": null,
       "supp": null,
       "orig": "R02",
-      "concept": "Sedation apnea capnogram",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -13174,14 +12807,13 @@
       ],
       "explanation": "The kettle's dedicated O2 flow bubbles through liquid agent and leaves carrying saturated vapor, which then joins fresh gas from the main flowmeters. More kettle flow means more vapor into an unchanged main flow, so concentration rises. The kettle isn't concentration-calibrated, which is why calculations are required.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 74 (PDF p. 37)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J19",
-      "concept": "Copper kettle flow change",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -13216,7 +12848,6 @@
       "disc": null,
       "supp": null,
       "orig": "R84",
-      "concept": "Proximal stenosis and A-line site",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -13255,7 +12886,6 @@
       "disc": null,
       "supp": null,
       "orig": "Y07",
-      "concept": "Cricothyrotomy approaches",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -13283,14 +12913,13 @@
       ],
       "explanation": "The lecture lists three flowmeter types: mechanical (glass tubes with needle valves), electronic gas mixers (digital interface to control flow), and hybrid (needle valve control with an electronic display).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 40 (PDF p. 20)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J61",
-      "concept": "Hybrid flowmeters",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -13328,7 +12957,6 @@
       "disc": null,
       "supp": null,
       "orig": "D01",
-      "concept": "Closed interface: vacuum failure",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -13367,7 +12995,6 @@
       "disc": null,
       "supp": null,
       "orig": "R102",
-      "concept": "Non-disconnect ventilator alarms",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -13402,7 +13029,6 @@
       "disc": null,
       "supp": null,
       "orig": "P06",
-      "concept": "ROSC on capnography",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -13430,14 +13056,13 @@
       ],
       "explanation": "Like N2O, CO2 is stored as liquid and gas, so the gauge reads the vapor pressure (838 psi at room temperature) as long as liquid remains. Contents can't be judged from pressure; the cylinder must be weighed. Pressure falls in proportion to volume only after the liquid is gone.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 7, 14 (PDF p. 4, 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J37",
-      "concept": "Liquid/gas cylinders: CO2",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -13472,7 +13097,6 @@
       "disc": null,
       "supp": null,
       "orig": "R16",
-      "concept": "Right shift in MH",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -13500,14 +13124,13 @@
       ],
       "explanation": "The lecture's 'fun facts' on slide 52 state that the variable bypass vaporizer compensates for elevation changes, along with the 200 mL vapor per mL liquid and vol% x FGF x 3 rules.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 52 (PDF p. 26)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J42",
-      "concept": "Vaporizer and elevation",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -13542,7 +13165,6 @@
       "disc": null,
       "supp": null,
       "orig": "R43",
-      "concept": "Compliance improves after drainage",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -13577,7 +13199,6 @@
       "disc": null,
       "supp": null,
       "orig": "R52",
-      "concept": "Surgical field fire prevention",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -13612,7 +13233,6 @@
       "disc": null,
       "supp": null,
       "orig": "E07",
-      "concept": "Canister life calculation",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -13647,7 +13267,6 @@
       "disc": null,
       "supp": null,
       "orig": "R21",
-      "concept": "Alternative NIBP site",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -13675,14 +13294,13 @@
       ],
       "explanation": "In the central supply, O2 is often stored as liquid in insulated tanks, N2O as compressed liquid, and medical air is often compressed ambient air held in a reservoir. Helium, nitrogen, and nitric oxide are usually in large cylinders.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 27 (PDF p. 14)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J55",
-      "concept": "Medical air supply",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -13720,7 +13338,6 @@
       "disc": null,
       "supp": null,
       "orig": "R93",
-      "concept": "MS MAID machine step",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -13755,7 +13372,6 @@
       "disc": null,
       "supp": null,
       "orig": "R91",
-      "concept": "ASA Standard II scope",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -13783,14 +13399,13 @@
       ],
       "explanation": "O2 boils at -183 C at 1 atm. Its critical temperature, -118.6 C, is the highest temperature at which it can exist as a liquid under pressure (instructor note). Bulk liquid O2 is stored below that critical temperature; E-cylinders hold compressed gas at room temperature.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 11, 12 (PDF p. 6)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J58",
-      "concept": "O2 boiling vs critical temperature",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -13818,14 +13433,13 @@
       ],
       "explanation": "O2 is a compressed gas, so 950 psig is about half of 660 L, roughly 330 L. N2O stays at 745 psig while any liquid remains, so its gauge can't show contents; you'd have to weigh it.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 13, 14 (PDF p. 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J02",
-      "concept": "Gauge reliability by gas",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -13860,7 +13474,6 @@
       "disc": null,
       "supp": null,
       "orig": "R40",
-      "concept": "Suction catheter first step",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -13895,7 +13508,6 @@
       "disc": null,
       "supp": null,
       "orig": "E25",
-      "concept": "Absorber and low flow",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -13930,7 +13542,6 @@
       "disc": null,
       "supp": null,
       "orig": "E16",
-      "concept": "OR airflow ports",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -13965,7 +13576,6 @@
       "disc": null,
       "supp": null,
       "orig": "R76",
-      "concept": "Elevated baseline: calibration",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -13993,14 +13603,13 @@
       ],
       "explanation": "The lecture's rule of thumb: 1 mL of liquid anesthetic makes about 200 mL of vapor. 250 mL x 200 mL = 50,000 mL, about 50 L.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 52 (PDF p. 26)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J20",
-      "concept": "Liquid to vapor volume",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -14035,7 +13644,6 @@
       "disc": null,
       "supp": null,
       "orig": "R73",
-      "concept": "Partial disconnect detection",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -14070,7 +13678,6 @@
       "disc": null,
       "supp": null,
       "orig": "R130",
-      "concept": "Tidal volume and pressures",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -14098,14 +13705,13 @@
       ],
       "explanation": "Vapor circuit restrictor #1 is a shut-off that opens only when the vaporizer has warmed up and the dial is opened. Until the sump reaches operating temperature and pressure, no vapor is released. The Tec 6 has no wicks.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 62 (PDF p. 31)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J15",
-      "concept": "Tec 6 warm-up",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -14140,7 +13746,6 @@
       "disc": null,
       "supp": null,
       "orig": "R03",
-      "concept": "Waveform: dicrotic notch location",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -14175,7 +13780,6 @@
       "disc": null,
       "supp": null,
       "orig": "R139",
-      "concept": "Inspired vs expired O2",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -14203,14 +13807,13 @@
       ],
       "explanation": "Use mL/hr = vol% x FGF (L/min) x 3: 2 x 3 x 3 = 18 mL/hr. 250 mL divided by 18 mL/hr is about 14 hours. 42 hours forgets the factor of 3.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 52 (PDF p. 26)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J21",
-      "concept": "Vaporizer run time",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -14238,14 +13841,13 @@
       ],
       "explanation": "The low-pressure system (flowmeters to common gas outlet) runs slightly above atmospheric. The pipeline (about 50-55 psi) and second-stage regulator output (about 14-16 psi O2) are intermediate; the yoke is high pressure.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 33, 76 (PDF p. 17, 38)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J24",
-      "concept": "Pressure by location",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -14280,7 +13882,6 @@
       "disc": null,
       "supp": null,
       "orig": "R37",
-      "concept": "Limits of inspired O2 reading",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -14315,7 +13916,6 @@
       "disc": null,
       "supp": null,
       "orig": "R29",
-      "concept": "EASI placement",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -14350,7 +13950,6 @@
       "disc": null,
       "supp": null,
       "orig": "T42",
-      "concept": "Ultrasound for arterial access",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -14378,14 +13977,13 @@
       ],
       "explanation": "The spring-loaded relief valve opens when pressure exceeds its threshold and closes again once pressure falls. A frangible disk breaks and a fusible plug melts, so both are one-time devices. The Bodok seal is a yoke washer, not a relief device.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 17 (PDF p. 9)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V113",
-      "concept": "Resealing relief valve",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -14420,7 +14018,6 @@
       "disc": null,
       "supp": null,
       "orig": "T184",
-      "concept": "Signal quality and SpO2",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -14459,7 +14056,6 @@
       "disc": null,
       "supp": null,
       "orig": "Z41",
-      "concept": "Laryngoscope components",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -14497,7 +14093,6 @@
       "disc": null,
       "supp": "The one-hour ceiling sampling definition and the combined-use value (0.5 ppm halogenated when used with N2O) come from NIOSH's 1977 recommendation; slide 10 lists only 2 ppm and 25 ppm.",
       "orig": "F12",
-      "concept": "How NIOSH limits are measured",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -14536,7 +14131,6 @@
       "disc": null,
       "supp": null,
       "orig": "T152",
-      "concept": "IR analyzer components",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -14564,14 +14158,13 @@
       ],
       "explanation": "Zone valves isolate areas for maintenance or emergencies, so pipeline O2 is gone. The backup cylinder supplies the machine through the first-stage regulator. The auxiliary flowmeter and flush draw from the same O2 supply, and reopening the valve would defeat the isolation.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 28, 33 (PDF p. 14, 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V29",
-      "concept": "Zone valve closure response",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -14606,7 +14199,6 @@
       "disc": null,
       "supp": null,
       "orig": "F34",
-      "concept": "Scavenging pathway order",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -14641,7 +14233,6 @@
       "disc": null,
       "supp": null,
       "orig": "T05",
-      "concept": "Judgment errors in claims",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -14669,14 +14260,13 @@
       ],
       "explanation": "Vapor circuit restrictor #1 is a shut-off that opens only when the vaporizer has warmed up and the dial is opened. Until the sump reaches operating temperature and pressure, no vapor is released. The Tec 6 has no wicks.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 62 (PDF p. 31)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J15",
-      "concept": "Tec 6 warm-up",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -14711,7 +14301,6 @@
       "disc": null,
       "supp": null,
       "orig": "T117",
-      "concept": "Bicarbonate and ETCO2",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -14746,7 +14335,6 @@
       "disc": null,
       "supp": null,
       "orig": "T90",
-      "concept": "O2 analyzer and disconnection",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -14781,7 +14369,6 @@
       "disc": null,
       "supp": null,
       "orig": "T170",
-      "concept": "Hypothermia and bleeding",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -14809,14 +14396,13 @@
       ],
       "explanation": "The machine preferentially uses pipeline gas (50-55 psi) over the cylinder's regulated ~45 psi, so opening the cylinder alone changes nothing. The pipeline must be disconnected so the cylinder supplies O2. More flow or the auxiliary flowmeter just delivers more contaminated gas.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 33, 46 (PDF p. 17, 23)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V101",
-      "concept": "Contaminated pipeline response",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -14851,7 +14437,6 @@
       "disc": null,
       "supp": null,
       "orig": "T162",
-      "concept": "Upstroke slope",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -14886,7 +14471,6 @@
       "disc": null,
       "supp": null,
       "orig": "T115",
-      "concept": "SpO2 can't quantify high PaO2",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -14914,14 +14498,13 @@
       ],
       "explanation": "The copper kettle has great heat conduction to maintain stable temperatures as vaporization cools the liquid, which keeps vapor pressure steady. It still isn't calibrated for concentration, so calculations are required.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 74 (PDF p. 37)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V19",
-      "concept": "Why copper",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -14956,7 +14539,6 @@
       "disc": null,
       "supp": null,
       "orig": "F04",
-      "concept": "Stuck negative-pressure relief",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -14995,7 +14577,6 @@
       "disc": null,
       "supp": null,
       "orig": "T125",
-      "concept": "NIBP interpretation factors",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -15030,7 +14611,6 @@
       "disc": null,
       "supp": null,
       "orig": "F05",
-      "concept": "Stuck positive-pressure relief",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -15068,7 +14648,6 @@
       "disc": null,
       "supp": null,
       "orig": "T19",
-      "concept": "O2 analyzer performance",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -15103,7 +14682,6 @@
       "disc": null,
       "supp": null,
       "orig": "T35",
-      "concept": "Baseline ECG strip",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -15131,14 +14709,13 @@
       ],
       "explanation": "The concentration control dial adjusts valves to direct more or less fresh gas into the vaporizing chamber. A higher setting sends more flow through the chamber to deliver a greater share of saturated vapor, so the bypass-to-chamber ratio falls.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 53, 54 (PDF p. 27)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V82",
-      "concept": "Dial and splitting ratio",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -15173,7 +14750,6 @@
       "disc": null,
       "supp": null,
       "orig": "F42",
-      "concept": "Purpose of the interface",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -15208,7 +14784,6 @@
       "disc": null,
       "supp": null,
       "orig": "T02",
-      "concept": "Tube dislodgement: first action",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -15236,14 +14811,13 @@
       ],
       "explanation": "On the machine roadmap, N2O pipeline gas passes the inlet check valve, then the fail-safe (A), then the second-stage N2O regulator (C), then the flow control (needle) valve and flowmeter. The fail-safe sits upstream so it can cut N2O before it reaches the flow controls.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 5, 31, 33, 34 (PDF p. 3, 16, 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V69",
-      "concept": "N2O path from pipeline",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -15278,7 +14852,6 @@
       "disc": null,
       "supp": null,
       "orig": "T71",
-      "concept": "Position-change checks",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -15313,7 +14886,6 @@
       "disc": null,
       "supp": null,
       "orig": "Z25",
-      "concept": "Soft palate obstruction",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -15341,14 +14913,13 @@
       ],
       "explanation": "Gauge pressure is pressure ABOVE atmospheric (Pg = Pabs - Patm). At 0 psig, the cylinder is at 14.7 psia, so its 5 L internal volume still holds about 5 L of gas at atmospheric pressure. It's unusable, but not a vacuum.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 12 (PDF p. 6)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V78",
-      "concept": "Meaning of 0 psig",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -15387,7 +14958,6 @@
       "disc": null,
       "supp": null,
       "orig": "T30",
-      "concept": "Hypoventilation causes",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -15422,7 +14992,6 @@
       "disc": null,
       "supp": null,
       "orig": "T20",
-      "concept": "Paramagnetic analyzer",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -15457,7 +15026,6 @@
       "disc": null,
       "supp": null,
       "orig": "Z30",
-      "concept": "Laryngoscope blade purpose",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -15496,7 +15064,6 @@
       "disc": null,
       "supp": null,
       "orig": "T06",
-      "concept": "Human factors vs distractions",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -15531,7 +15098,6 @@
       "disc": null,
       "supp": null,
       "orig": "F25",
-      "concept": "Slow step in soda lime chemistry",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -15566,7 +15132,6 @@
       "disc": null,
       "supp": null,
       "orig": "T132",
-      "concept": "5-cable vs 3-cable views",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -15601,7 +15166,6 @@
       "disc": null,
       "supp": null,
       "orig": "T01",
-      "concept": "Curare cleft management",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -15639,7 +15203,6 @@
       "disc": null,
       "supp": null,
       "orig": "F16",
-      "concept": "Disposal route rules",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -15677,7 +15240,6 @@
       "disc": null,
       "supp": null,
       "orig": "T36",
-      "concept": "When to cycle BP faster",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -15712,7 +15274,6 @@
       "disc": null,
       "supp": null,
       "orig": "R130",
-      "concept": "Tidal volume and pressures",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -15740,14 +15301,13 @@
       ],
       "explanation": "The machine draws from whichever source is at higher pressure. Pipeline normally runs 50-55 psi, above the cylinder's regulated ~45 psi. At 42 psig the open cylinder takes over and silently empties, leaving no backup. The auxiliary flowmeter draws from the same O2 supply.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 33 (PDF p. 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J04",
-      "concept": "Low pipeline pressure draining cylinder",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -15782,7 +15342,6 @@
       "disc": null,
       "supp": null,
       "orig": "T03",
-      "concept": "Underdamping and the waveform",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -15817,7 +15376,6 @@
       "disc": null,
       "supp": null,
       "orig": "T45",
-      "concept": "Flush volume in neonates",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -15845,14 +15403,13 @@
       ],
       "explanation": "High-pressure: yoke (with check valve), cylinder gauge, first-stage regulator. Intermediate: second-stage regulator (plus fail-safe and flush branches) up to the flow control valves. Low-pressure: flowmeters, then vaporizers, then the outlet check valve (if present) and common gas outlet.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 5, 22, 24, 33, 39, 49 (PDF p. 3, 11, 12, 17, 20, 25)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V68",
-      "concept": "O2 path from cylinder",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -15880,14 +15437,13 @@
       ],
       "explanation": "The fail-safe responds only to falling O2 supply PRESSURE; it never shuts off O2 and isn't triggered by N2O loss. Losing N2O simply stops N2O delivery, which can lighten the anesthetic. Expired gas analysis would show N2O falling.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 26, 34 (PDF p. 13, 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V03",
-      "concept": "N2O supply loss",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -15922,7 +15478,6 @@
       "disc": null,
       "supp": null,
       "orig": "T146",
-      "concept": "Adequate NIBP interval",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -15950,14 +15505,13 @@
       ],
       "explanation": "Tipping sends liquid agent into the bypass chamber, raising output. Draining removes the sump liquid; running high FGF at the highest setting clears residual liquid from the bypass, and refilling waits until expired gas analysis no longer detects agent.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 71 (PDF p. 36)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V52",
-      "concept": "Purpose of flushing a tipped vaporizer",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -15992,7 +15546,6 @@
       "disc": null,
       "supp": null,
       "orig": "R64",
-      "concept": "Rising ETCO2 despite ventilation",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -16027,7 +15580,6 @@
       "disc": null,
       "supp": null,
       "orig": "V116",
-      "concept": "High expired agent after moving vaporizer",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia",
@@ -16067,7 +15619,6 @@
       "disc": null,
       "supp": null,
       "orig": "F40",
-      "concept": "Environmental impact figures",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -16102,7 +15653,6 @@
       "disc": null,
       "supp": null,
       "orig": "F30",
-      "concept": "Open interface with excess vacuum",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -16137,7 +15687,6 @@
       "disc": null,
       "supp": null,
       "orig": "T110",
-      "concept": "Point C in obstruction",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -16172,7 +15721,6 @@
       "disc": "Slide 75 places the crossover at 70%. Standard references (e.g., OpenAnesthesia) use 85%, matching the slide's own 1:1 = about 85% point. This question uses 85%.",
       "supp": null,
       "orig": "T177",
-      "concept": "MetHb near the crossover",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -16200,14 +15748,13 @@
       ],
       "explanation": "O2 is stored as refrigerated liquid in vacuum-insulated tanks or as compressed gas in H-cylinder banks connected by manifolds, with portable refillable E-cylinders for transport and machine backup. H-cylinders are the hospital reservoir (instructor note).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 11 (PDF p. 6)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V28",
-      "concept": "Hospital O2 reserve",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -16242,7 +15789,6 @@
       "disc": null,
       "supp": null,
       "orig": "R118",
-      "concept": "Ventilator leak and ETCO2",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -16277,7 +15823,6 @@
       "disc": null,
       "supp": null,
       "orig": "Z02",
-      "concept": "Clear mask and suction readiness",
       "sourceMeta": {
         "families": [
           "Monitoring",
@@ -16313,7 +15858,6 @@
       "disc": null,
       "supp": null,
       "orig": "T51",
-      "concept": "Peds mainstem detection",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -16348,7 +15892,6 @@
       "disc": null,
       "supp": null,
       "orig": "F02",
-      "concept": "Closed APL during spontaneous ventilation",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -16383,7 +15926,6 @@
       "disc": null,
       "supp": null,
       "orig": "T04",
-      "concept": "Audible disconnect alarm requirement",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -16411,14 +15953,13 @@
       ],
       "explanation": "Component 3 is the second-stage N2O pressure regulator (about 26-38 psi). Component 2 is the second-stage O2 regulator (about 14-16 psi), 1 is the fail-safe upstream of it, and 4 is the pressure relief valve.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 5, 33 (PDF p. 3, 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": "roadmap",
       "disc": null,
       "supp": null,
       "orig": "V104",
-      "concept": "Roadmap: second-stage N2O regulator",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -16453,7 +15994,6 @@
       "disc": null,
       "supp": null,
       "orig": "T166",
-      "concept": "Korotkoff sounds",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -16488,7 +16028,6 @@
       "disc": null,
       "supp": null,
       "orig": "T168",
-      "concept": "Preventing flush air embolism",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -16526,7 +16065,6 @@
       "disc": null,
       "supp": null,
       "orig": "T57",
-      "concept": "Hypothermia at emergence",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -16561,7 +16099,6 @@
       "disc": null,
       "supp": null,
       "orig": "R41",
-      "concept": "PV loop: emphysema",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -16589,14 +16126,13 @@
       ],
       "explanation": "Medical-grade O2 is 99-99.5% pure. It's stored as compressed gas in H-cylinder banks and E-cylinders, or as refrigerated liquid below its critical temperature (-118.6 C).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 11 (PDF p. 6)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V120",
-      "concept": "Medical O2 purity",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -16631,7 +16167,6 @@
       "disc": null,
       "supp": null,
       "orig": "V117",
-      "concept": "Air in the O2 pipeline",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia",
@@ -16667,7 +16202,6 @@
       "disc": null,
       "supp": null,
       "orig": "T24",
-      "concept": "IR blind spot",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -16695,14 +16229,13 @@
       ],
       "explanation": "The bulk tank runs at about 85 psig with a safety relief valve. After vaporizing and superheating, a pressure regulator drops O2 to about 50 psig for the pipeline, consistent with the 50-55 psi pipeline pressure. 14-16 psi is the machine's second-stage O2 output.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 32 (PDF p. 16)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V95",
-      "concept": "Bulk system regulator output",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -16741,7 +16274,6 @@
       "disc": null,
       "supp": null,
       "orig": "T187",
-      "concept": "Disconnection on gas analysis",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -16769,14 +16301,13 @@
       ],
       "explanation": "In C (Drager: N2O, air, O2), gases flow toward the outlet on the right, with O2 entering last. A leak in the first tube loses N2O, while O2 downstream still reaches the outlet. That's why the lecture calls O2-last arrangements fail-safe.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 41 (PDF p. 21)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": "flowmeter",
       "disc": null,
       "supp": null,
       "orig": "V103",
-      "concept": "Leak location in O2-last sequence",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -16811,7 +16342,6 @@
       "disc": null,
       "supp": null,
       "orig": "T78",
-      "concept": "Capnogram phase D-E",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -16846,7 +16376,6 @@
       "disc": null,
       "supp": "The 0.5 ppm combined-use limit comes from NIOSH's 1977 recommendation; slide 10 lists only 2 ppm and 25 ppm.",
       "orig": "F13",
-      "concept": "Combined-use limit applied",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -16885,7 +16414,6 @@
       "disc": null,
       "supp": null,
       "orig": "T68",
-      "concept": "Quantitative ETCO2 methods",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -16924,7 +16452,6 @@
       "disc": null,
       "supp": null,
       "orig": "Z26",
-      "concept": "Airway fire triad",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia",
@@ -16960,7 +16487,6 @@
       "disc": null,
       "supp": null,
       "orig": "T32",
-      "concept": "Lead II for rhythm",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -16999,7 +16525,6 @@
       "disc": null,
       "supp": null,
       "orig": "T10",
-      "concept": "Machine sweep items",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -17034,7 +16559,6 @@
       "disc": null,
       "supp": null,
       "orig": "F41",
-      "concept": "Atmospheric lifetime ranking",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -17072,7 +16596,6 @@
       "disc": null,
       "supp": null,
       "orig": "Z12",
-      "concept": "Clinical vs objective BVM signs",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -17100,14 +16623,13 @@
       ],
       "explanation": "O2-last placement protects against leaks in UPSTREAM tubes. A leak in the O2 tube itself loses O2 regardless of position, and the lecture lists flowmeter cracks and leaks among causes of hypoxic mixtures. The fail-safe and proportioner sense pressure and flow settings, not leaks, so the inspired O2 analyzer is the safeguard.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 41, 48 (PDF p. 21, 24)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V07",
-      "concept": "Leak in the O2 tube",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -17142,7 +16664,6 @@
       "disc": null,
       "supp": null,
       "orig": "F09",
-      "concept": "Preventing desiccation",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -17177,7 +16698,6 @@
       "disc": null,
       "supp": null,
       "orig": "F53",
-      "concept": "Typical OR ventilation",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -17212,7 +16732,6 @@
       "disc": null,
       "supp": null,
       "orig": "T121",
-      "concept": "Obstruction vs disconnection",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -17244,14 +16763,13 @@
       ],
       "explanation": "Indicator floats: skirted, plumb bob, nonrotating, and ball. Bimetallic strips are vaporizer temperature compensators, Bourdon tubes are pressure gauges, and diaphragms are in pressure regulators.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 42 (PDF p. 21)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V92",
-      "concept": "Float types",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -17279,14 +16797,13 @@
       ],
       "explanation": "Vapor pressure is directly proportional to temperature, so cooling lowers the concentration leaving the chamber. Normally the bimetallic strip bends to increase chamber flow and compensate. If it's stuck, nothing corrects the drop, and output falls below the dial.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 56 (PDF p. 28)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V58",
-      "concept": "Failed temperature compensation",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -17324,7 +16841,6 @@
       "disc": null,
       "supp": null,
       "orig": "F29",
-      "concept": "Desiccation, CO, and oximetry",
       "sourceMeta": {
         "families": [
           "Monitoring",
@@ -17353,14 +16869,13 @@
       ],
       "explanation": "The splitting ratio is calibrated to sevo's vapor pressure (160 mmHg), and ratios differ among agents based on vapor pressure. Iso's higher vapor pressure (240 mmHg) saturates chamber gas at a higher concentration, so output exceeds the dial. The lecture's intervention: always double-check bottle, key, and vaporizer.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 50, 54 (PDF p. 25, 27)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "J48",
-      "concept": "Misfilled vaporizer output",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -17395,7 +16910,6 @@
       "disc": null,
       "supp": null,
       "orig": "T85",
-      "concept": "Inspiratory flow and PIP",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -17430,7 +16944,6 @@
       "disc": null,
       "supp": null,
       "orig": "Z24",
-      "concept": "Head straps during preoxygenation",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -17465,7 +16978,6 @@
       "disc": null,
       "supp": null,
       "orig": "Y04",
-      "concept": "Laser gas choice",
       "sourceMeta": {
         "families": [
           "Airway Equipment"
@@ -17493,14 +17005,13 @@
       ],
       "explanation": "The sump heats liquid des to 39 C and pressurizes it to about 2 atm, acting as a reservoir of 100% des vapor. Fresh gas never enters the sump; vapor is injected into the fresh gas stream through restrictor valves.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 60, 61 (PDF p. 30, 31)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V108",
-      "concept": "Tec 6 sump contents",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -17528,14 +17039,13 @@
       ],
       "explanation": "The lecture describes the proportioning system as linking O2 and N2O at the flow control valves so FiO2 stays above about 25% when N2O is used. Air isn't part of that link, and the fail-safe acts on O2 supply pressure, which is normal here. The O2 analyzer is the check.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 45 (PDF p. 23)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V41",
-      "concept": "Proportioner and air",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -17573,7 +17083,6 @@
       "disc": null,
       "supp": null,
       "orig": "T48",
-      "concept": "How MAP is obtained",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -17608,7 +17117,6 @@
       "disc": null,
       "supp": null,
       "orig": "R65",
-      "concept": "Zero baseline rules out rebreathing",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -17639,14 +17147,13 @@
       ],
       "explanation": "Pumping is worsened by PPV, O2 flush use, low FGF, and low liquid levels, and it's minimized by the outlet check valve between vaporizer and common gas outlet. Frequent flushing ADDS retrograde pressure, and filling until bubbling stops risks overfilling.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 72 (PDF p. 36)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V13",
-      "concept": "Reducing the pumping effect",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -17684,7 +17191,6 @@
       "disc": null,
       "supp": null,
       "orig": "T137",
-      "concept": "Continuous vs intermittent monitoring",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -17719,7 +17225,6 @@
       "disc": null,
       "supp": null,
       "orig": "T189",
-      "concept": "Shivering and ETCO2",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -17747,14 +17252,13 @@
       ],
       "explanation": "Fat:blood solubility: halothane 51, sevo 48, iso 45, des 27, N2O 2.3. Among the potent volatiles, des has the least fat solubility, so less agent accumulates in adipose tissue during long cases.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50 (PDF p. 25)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
       "supp": null,
       "orig": "V23",
-      "concept": "Fat:blood solubility",
       "sourceMeta": {
         "families": [
           "Medical Gas Systems in Anesthesia"
@@ -17789,7 +17293,6 @@
       "disc": null,
       "supp": null,
       "orig": "F48",
-      "concept": "Why the dye changes",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -17824,7 +17327,6 @@
       "disc": null,
       "supp": null,
       "orig": "E13",
-      "concept": "Reducing compound A",
       "sourceMeta": {
         "families": [
           "CO₂ Absorbents & Scavenging"
@@ -17859,7 +17361,6 @@
       "disc": null,
       "supp": null,
       "orig": "T39",
-      "concept": "Oversized cuff",
       "sourceMeta": {
         "families": [
           "Monitoring"
@@ -17894,7 +17395,6 @@
       "disc": null,
       "supp": null,
       "orig": "T58",
-      "concept": "PA temperature",
       "sourceMeta": {
         "families": [
           "Monitoring"
