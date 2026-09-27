@@ -2146,6 +2146,26 @@ test.describe('canonical quiz regression', () => {
     expect(result.approvalError).toContain('source excerpt or citation');
   });
 
+  test('Completed Studio session keeps a useful last-session summary', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const out=await page.evaluate(()=>{
+      const q1=ALL.find(q=>q.topic)||ALL[0],q2=ALL.find(q=>q.uid!==q1.uid&&q.topic!==q1.topic)||ALL.find(q=>q.uid!==q1.uid);
+      session=[q1,q2];pos=1;DB.active={uids:session.map(q=>q.uid),pos:1,answers:{
+        [q1.uid]:{selected:[...q1.ans],ok:true},
+        [q2.uid]:{selected:[],ok:false}
+      },mode:'custom',updated:Date.now()};
+      const summary=completedSessionSummary();DB.lastSessionSummary=summary;save();return summary;
+    });
+    expect(out.answered).toBe(2);
+    expect(out.correct).toBe(1);
+    expect(out.missed).toBe(1);
+    expect(out.score).toBe(50);
+    expect(out.weakTopics.length).toBeGreaterThan(0);
+    await page.evaluate(()=>renderHome());
+    await expect(page.locator('#analyticsSummary')).toContainText('Last session');
+    await expect(page.locator('#analyticsSummary')).toContainText('50%');
+  });
+
   test('Weak Areas uses cumulative topic accuracy instead of only the latest answer', async ({ page }) => {
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     const out=await page.evaluate(()=>{
