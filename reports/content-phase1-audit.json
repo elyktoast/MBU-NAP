@@ -5939,7 +5939,8 @@
         }
       }
     ],
-    "confirmedSamePoolKeyConflicts": []
+    "confirmedSamePoolKeyConflicts": [],
+    "crossBankExactGroups": 0
   },
   "hazardsSet2": {
     "questions": 100,
@@ -5949,7 +5950,7 @@
   "metadata": {
     "canonicalTopics": [
       "Monitoring",
-      "Medical Gas",
+      "Medical Gases",
       "CO₂ & Scavenging",
       "Airway",
       "Hazards & Safety"
