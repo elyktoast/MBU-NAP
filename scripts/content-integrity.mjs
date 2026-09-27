@@ -23,7 +23,7 @@ function keyedText(q,indexes){
 for(const [label,file] of sources){
   const payload=read(file),qs=Array.isArray(payload)?payload:(payload.questions||[]),name=path.basename(file);
   const seenStemBySet=new Map(),seenId=new Set(),knownDupes=new Set(baseline.knownDuplicateStems?.[name]||[]),seenKnownDupes=new Set();
-  let missingCitation=0,missingTopic=0,missingExplanation=0;
+  let missingCitation=0,missingTopic=0,missingExplanation=0,missingSourceMeta=0,invalidTopic=0;
 
   for(let i=0;i<qs.length;i++){
     const q=qs[i]||{},id=String(q.id??i+1),set=Number(q.set??q.setn??1),stem=String(q.stem??q.q??'').trim(),opts=q.options??q.c;
@@ -73,6 +73,8 @@ for(const [label,file] of sources){
   for(const identity of knownDupes)if(!seenKnownDupes.has(identity))warn(label+': duplicate baseline entry '+identity+' is no longer duplicated and can be removed');
   if(missingCitation)err(label+': '+missingCitation+' questions have no citation/source text');
   if(missingExplanation)err(label+': '+missingExplanation+' questions have no explanation/rationale');
+  if(invalidTopic)err(label+': '+invalidTopic+' questions use non-canonical topic labels');
+  if(missingSourceMeta)err(label+': '+missingSourceMeta+' questions have no structured source metadata');
 
   const allowedMissingTopics=Number(baseline.allowedMissingTopics?.[name]??0);
   if(missingTopic>allowedMissingTopics)err(label+': '+missingTopic+' questions have no explicit topic; baseline allows '+allowedMissingTopics);
