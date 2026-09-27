@@ -1,10 +1,10 @@
-# MBU-NAP
+# SNAR Study Tool
 
 ## Release status
 
 **Stable 1.x** — canonical quiz runtimes, Study Studio, Hazards, adaptive/spaced review intelligence, universal search, local-first persistence, Supabase cross-device sync, cloud restore/device tools, diagnostics, accessibility guardrails, and automated release gates are in place.
 
-MBU-NAP is a local-first study application for the MBU nurse anesthesia equipment question banks.
+SNAR Study Tool is a local-first study application for the nurse anesthesia equipment question banks.
 
 ## Current architecture
 
