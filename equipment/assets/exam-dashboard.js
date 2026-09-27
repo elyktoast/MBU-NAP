@@ -7,7 +7,7 @@ function continueForBank(b){
   if(d.sets&&typeof d.sets==='object'){
     for(const set of b.sets||[]){
       const st=d.sets[set]||{},count=Number(b.questionsPerSet||0)||Object.keys(st.graded||{}).length,done=Object.values(st.graded||{}).filter(Boolean).length;
-      if(done<count){const pos=Math.min(Math.max(0,Number(st.current)||0),Math.max(0,count-1));return{label:b.label,detail:'Practice Set '+set+' · Question '+(pos+1)+' / '+count,href:b.page}}
+      if(done<count){const pos=Math.min(Math.max(0,Number(st.current)||0),Math.max(0,count-1));return{label:b.label,detail:'Practice Set '+set+' · Question '+(pos+1)+' / '+count,href:b.page+'?set='+encodeURIComponent(set)}}
     }
   }
   return{label:b.label,detail:'Review completed progress',href:b.page}
