@@ -64,6 +64,8 @@ for(const [label,file] of sources){
     const sourceMeta=q.sourceMeta;
     if(!sourceMeta||typeof sourceMeta!=='object'||Array.isArray(sourceMeta)||!Array.isArray(sourceMeta.families)||!sourceMeta.families.length||!['slides','document'].includes(sourceMeta.citationFormat))missingSourceMeta++;
     else if(sourceMeta.families.some(x=>!['Medical Gas Systems in Anesthesia','Monitoring','CO₂ Absorbents & Scavenging','Airway Equipment','Anesthesia Workstation Hazards & Safety'].includes(String(x))))err(label+': '+identity+' has non-canonical source family metadata');
+    if(!q.sourceMeta||!Array.isArray(q.sourceMeta.families)||!q.sourceMeta.families.length)err(label+': '+identity+' is missing structured source metadata');
+    if(!String(q.sourceTitle||'').trim())err(label+': '+identity+' is missing sourceTitle');
     const citationText=String(Array.isArray(citation)?citation.join('; '):citation||'');
     if(citationText&&(/\.pdf\b/i.test(citationText)||/,\s*Slides?\b/i.test(citationText)||/:\s*slides?\b/i.test(citationText)))err(label+': '+identity+' has legacy citation formatting');
     if(!String(q.explanation??q.exp??q.rationale??'').trim())missingExplanation++;
