@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const runtime=window.MBUBuild,APP='SNAR Study Tool',SYNC_SCHEMA=1,DEVICE_KEY='mbu_device_id_v1',META_KEY='mbu_sync_meta_v1',errors=[],adapters=new Map(),ROOT_URL=new URL('../../',runtime.assetsBase);
+const runtime=window.MBUBuild,APP='SRNA Study Tool',SYNC_SCHEMA=1,DEVICE_KEY='mbu_device_id_v1',META_KEY='mbu_sync_meta_v1',errors=[],adapters=new Map(),ROOT_URL=new URL('../../',runtime.assetsBase);
 let manifestPromise=null,toolsReturnFocus=null;
 const now=()=>Date.now();
 const plain=v=>!!v&&typeof v==='object'&&!Array.isArray(v);
@@ -43,7 +43,7 @@ for(const key of keys){const raw=localStorage.getItem(key);if(raw!==null)stores[
 return{app:APP,schema:SYNC_SCHEMA,createdAt:now(),deviceId:deviceId(),build:window.MBU_BUILD_ID||'',stores,meta:Object.fromEntries(keys.filter(k=>meta[k]).map(k=>[k,meta[k]]))}
 }
 function validateSnapshot(s){
-if(!plain(s)||Number(s.schema)!==SYNC_SCHEMA||!plain(s.stores))throw Error('This is not a compatible SNAR Study Tool backup.');
+if(!plain(s)||Number(s.schema)!==SYNC_SCHEMA||!plain(s.stores))throw Error('This is not a compatible SRNA Study Tool backup.');
 for(const [key,raw] of Object.entries(s.stores))if(typeof key!=='string'||typeof raw!=='string')throw Error('Backup contains an invalid save entry.');
 return s
 }
@@ -59,7 +59,7 @@ writeMeta(nextMeta);return{imported,skipped,unknown}
 }
 async function downloadBackup(){
 const snapshot=await exportSnapshot(),blob=new Blob([JSON.stringify(snapshot,null,2)+'\n'],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');
-a.href=url;a.download='snar-study-tool-backup-'+new Date().toISOString().slice(0,10)+'.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),0);return snapshot
+a.href=url;a.download='srna-study-tool-backup-'+new Date().toISOString().slice(0,10)+'.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),0);return snapshot
 }
 async function importFile(file,opts){if(!file)throw Error('No backup file selected.');return importSnapshot(JSON.parse(await file.text()),opts)}
 function registerAdapter(name,adapter){
@@ -76,7 +76,7 @@ return{...merge,pushed:typeof adapter.push==='function',pushResult}
 function ensureLegalFooter(){
 if(document.getElementById('snar-legal-footer'))return;
 const privacyURL=new URL('privacy.html',ROOT_URL).href,termsURL=new URL('terms.html',ROOT_URL).href,footer=document.createElement('footer');
-footer.id='snar-legal-footer';footer.className='snar-legal-footer';footer.innerHTML='<a href="'+privacyURL+'">Privacy Notice</a><span aria-hidden="true">·</span><a href="'+termsURL+'">Terms of Use</a><span>SNAR Study Tool</span>';
+footer.id='snar-legal-footer';footer.className='snar-legal-footer';footer.innerHTML='<a href="'+privacyURL+'">Privacy Notice</a><span aria-hidden="true">·</span><a href="'+termsURL+'">Terms of Use</a><span>SRNA Study Tool</span>';
 document.body.append(footer)
 }
 function ensureA11y(){ensureLegalFooter();
