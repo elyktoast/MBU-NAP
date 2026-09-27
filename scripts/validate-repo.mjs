@@ -750,7 +750,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 // Practical Tools design keeps account identity persistent and recovery/diagnostics secondary.
 {
  const core=read('equipment/assets/app-core.js'),css=read('equipment/assets/app-core.css');
- for(const token of ['mbu-global-nav__cloud','Cloud: Signed out','function ensureAccountPanel()','Backup & Recovery','Troubleshooting & App Info','Saved study areas','data-tools-saves-help','Progress exists in '])if(!core.includes(token))fail('Practical Tools UI missing '+token);
+ for(const token of ['mbu-global-nav__cloud','Cloud: Signed out','function ensureAccountPanel()','Backup & recovery','Troubleshooting & app info','Saved study areas','data-tools-saves-help','Progress exists in ','data-auth-view="signin"','data-auth-view="signup"'])if(!core.includes(token))fail('Practical Tools UI missing '+token);
  for(const token of ['.mbu-global-nav__utilities','.mbu-global-nav__cloud','.mbu-tools-details','.mbu-account-panel','.mbu-tools-grid'])if(!css.includes(token))fail('Practical Tools styling missing '+token);
 }
 
