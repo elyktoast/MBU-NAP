@@ -25,6 +25,7 @@ async function trackedKeys(){
   const m=await manifest(),keys=new Set(['mbu_exam1_studio_v1']);
   for(const b of m.banks||[])if(b.storageKey)keys.add(b.storageKey);
   for(const p of m.hazards?.pages||[])if(p.storageKey)keys.add(p.storageKey);
+  if(m.features?.questionGenerator?.storageKey)keys.add(m.features.questionGenerator.storageKey);
   return [...keys].sort()
 }
 function touchStore(key){
