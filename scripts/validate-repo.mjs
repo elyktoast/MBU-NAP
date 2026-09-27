@@ -144,6 +144,7 @@ function checkRuntimeSafety(){
   if(/document\.getElementById\(["'][^"']+["']\)\.style/.test(read('equipment/assets/auto-update.js')))fail('Updater: unsafe required DOM access');
   const updater=read('equipment/assets/auto-update.js');
   if(!updater.includes("reload.searchParams.get('_mbu_reload') === latest"))fail('Updater: no duplicate-build reload guard');
+  if(!updater.includes("searchParams.delete('_mbu_reload')")||!updater.includes('history.replaceState'))fail('Updater: successful reload marker cleanup is missing');
 }
 function checkStudioData(){
   checkBank1();checkBank2();checkBank3();checkHazardsCanonical();
