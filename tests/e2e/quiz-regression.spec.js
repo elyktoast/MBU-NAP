@@ -1351,7 +1351,7 @@ test.describe('canonical quiz regression', () => {
     await page.locator('#submit-multi').click();
     const out=await page.evaluate(async()=>({meta:JSON.parse(localStorage.getItem('mbu_sync_meta_v1')||'{}'),snapshot:await MBUSync.exportSnapshot()}));
     expect(out.meta['SRNA_COMBINED_EXAM_SET_1_2026_V1']?.revision).toBeGreaterThan(0);
-    expect(out.snapshot.schema).toBe(1);expect(out.snapshot.app).toBe('MBU-NAP');
+    expect(out.snapshot.schema).toBe(1);expect(out.snapshot.app).toBe('SNAR Study Tool');
     expect(out.snapshot.stores['SRNA_COMBINED_EXAM_SET_1_2026_V1']).toBeTruthy();
   });
 
@@ -1460,6 +1460,39 @@ test.describe('canonical quiz regression', () => {
     await page.evaluate(() => MBUSupabase.syncNow());
     expect(writes.some(row=>row.p_store_key==='SRNA_COMBINED_EXAM_SET_1_2026_V1')).toBe(true);
     expect(writes.every(row=>Number.isInteger(Number(row.p_expected_server_revision)))).toBe(true);
+  });
+
+  test('Account creation requires adult Terms and Privacy acknowledgement', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let signupCalls=0;
+    await page.route(cloud+'/auth/v1/signup?*',route=>{signupCalls++;return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({user:{id:'new-user',email:'new@example.com'},session:null})})});
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.evaluate(()=>{localStorage.removeItem('mbu_supabase_session_v1')});
+    await page.reload();await page.evaluate(() => MBUPageReady);
+    await page.locator('.mbu-global-nav__cloud').click();
+    await page.locator('[data-cloud-email]').fill('new@example.com');
+    await page.locator('[data-cloud-password]').fill('long-enough-password');
+    await page.locator('[data-cloud-signup]').click();
+    await expect(page.locator('[data-account-message]')).toContainText('18+');
+    expect(signupCalls).toBe(0);
+    await page.locator('[data-cloud-consent]').check();
+    await page.locator('[data-cloud-signup]').click();
+    await expect.poll(()=>signupCalls).toBe(1);
+    await expect(page.locator('#mbu-account-panel')).toContainText('Privacy Notice');
+    await expect(page.locator('#mbu-account-panel')).toContainText('Terms of Use');
+  });
+
+  test('Signed-in user can delete account and return to signed-out state', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let deleted=0;
+    await page.route(cloud+'/rest/v1/rpc/snar_delete_my_account',route=>{deleted++;return route.fulfill({status:200,contentType:'application/json',body:'true'})});
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.locator('.mbu-global-nav__cloud').click();
+    await expect(page.locator('[data-cloud-signed-in]')).toBeVisible();
+    page.on('dialog',dialog=>dialog.accept());
+    await page.locator('[data-cloud-signed-in] summary').filter({hasText:'Privacy & Account'}).click();
+    await page.locator('[data-cloud-delete-account]').click();
+    await expect.poll(()=>deleted).toBe(1);
+    await expect.poll(()=>page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(false);
+    await expect(page.locator('[data-cloud-signed-out]')).toBeVisible();
   });
 
   test('Supabase signup sends confirmation back to the deployed app root', async ({ page }) => {
