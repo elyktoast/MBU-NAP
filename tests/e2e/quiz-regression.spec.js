@@ -1403,15 +1403,29 @@ test.describe('canonical quiz regression', () => {
     expect(await page.locator('#mbuNavigator button').count()).toBe(100);
   });
 
-  test('Tools exposes Supabase account controls without any secret browser credential', async ({ page }) => {
+  test('Header cloud status opens account controls without any secret browser credential', async ({ page }) => {
     await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
-    await page.locator('.mbu-global-nav__tools').click();
-    await expect(page.locator('.mbu-cloud')).toContainText('Cloud Sync');
+    await expect(page.locator('.mbu-global-nav__cloud')).toContainText('Cloud: Signed out');
+    await page.locator('.mbu-global-nav__cloud').click();
+    await expect(page.locator('#mbu-account-panel')).toBeVisible();
     await expect(page.locator('[data-cloud-signin]')).toBeVisible();
     const config=await page.evaluate(() => MBU_SUPABASE_CONFIG);
     expect(config.url).toBe('https://xqyasyambwdyhsjkftqu.supabase.co');
     expect(config.publishableKey).toMatch(/^sb_publishable_/);
     expect(JSON.stringify(config)).not.toContain('sb_secret_');
+  });
+
+  test('Tools prioritizes study status and keeps recovery and diagnostics secondary', async ({ page }) => {
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.locator('.mbu-global-nav__tools').click();
+    await expect(page.locator('#mbu-app-tools')).toBeVisible();
+    await expect(page.locator('[data-tools-saves]')).toHaveText(/\d+ of \d+/);
+    await expect(page.locator('[data-tools-saves-help]')).toContainText(/study (area|progress)/i);
+    await expect(page.getByText('Backup & Recovery')).toBeVisible();
+    await expect(page.getByText('Troubleshooting & App Info')).toBeVisible();
+    await expect(page.locator('[data-export]')).not.toBeVisible();
+    await page.getByText('Backup & Recovery').click();
+    await expect(page.locator('[data-export]')).toBeVisible();
   });
 
   test('Supabase adapter signs in and upserts authenticated local progress', async ({ page }) => {
@@ -1423,12 +1437,13 @@ test.describe('canonical quiz regression', () => {
     });
     await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>route.fulfill({status:201,contentType:'application/json',body:''}));
     await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
-    await page.locator('.mbu-global-nav__tools').click();
+    await page.locator('.mbu-global-nav__cloud').click();
     await page.locator('[data-cloud-email]').fill('test@example.com');
     await page.locator('[data-cloud-password]').fill('correct horse battery staple');
     await page.locator('[data-cloud-signin]').click();
     await expect(page.locator('[data-cloud-signed-in]')).toBeVisible();
-    await page.locator('[data-close]').click();
+    await expect(page.locator('.mbu-global-nav__cloud')).toContainText('Cloud: Synced');
+    await page.locator('[data-account-close]').click();
     await page.locator('#cards button').filter({hasText:/start|continue/i}).first().click();
     await page.locator('#options .opt').first().click();
     await page.evaluate(() => MBUSupabase.syncNow());
@@ -1456,11 +1471,11 @@ test.describe('canonical quiz regression', () => {
     expect(await page.evaluate(() => MBUSupabase.status().email)).toBe('verified@example.com');
   });
 
-  test('Cloud Tools reports the five-minute automatic sync schedule', async ({ page }) => {
+  test('Cloud account reports the five-minute automatic sync schedule', async ({ page }) => {
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
     expect(await page.evaluate(() => MBUSupabase.status().autoSyncIntervalMs)).toBe(300000);
-    await page.locator('.mbu-global-nav__tools').click();
-    await expect(page.locator('[data-cloud-auto]')).toContainText('Auto sync starts after you sign in.');
+    await page.locator('.mbu-global-nav__cloud').click();
+    await expect(page.locator('[data-cloud-auto]')).toContainText('Starts when signed in');
   });
 
 });
