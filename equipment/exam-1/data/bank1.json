@@ -12225,33 +12225,33 @@
       "id": "371",
       "set": 4,
       "type": "single",
-      "stem": "A hospital oxygen pipeline is suspected of nitrogen contamination. After opening the backup oxygen cylinder, what additional action is required before relying on the cylinder supply?",
+      "stem": "When the central oxygen pipeline is suspected of contamination, what must be done before relying on the backup oxygen cylinder?",
       "options": [
-        "Disconnect the pipeline hose from the wall",
-        "Open the nitrous oxide cylinder",
-        "Increase fresh gas flow above 10 L/min",
-        "Disable the inspired oxygen analyzer"
+        "Open the cylinder only and leave the pipeline connected",
+        "Open the cylinder and disconnect the pipeline hose",
+        "Close the cylinder and increase the oxygen flowmeter",
+        "Activate the oxygen flush continuously"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "Because normal pipeline pressure exceeds the regulated cylinder pressure, contaminated pipeline gas can remain the preferred source. The pipeline must be disconnected so cylinder oxygen can supply the machine.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "Pipeline pressure normally exceeds regulated cylinder pressure, so simply opening the cylinder does not isolate a contaminated pipeline. The guide instructs opening the cylinder and disconnecting the pipeline so the cylinder becomes the source.",
+      "citation": "SRNA Equipment Study Guide · Page 2",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "2",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 2"
     },
     {
       "id": "372",
@@ -12624,33 +12624,33 @@
       "id": "383",
       "set": 4,
       "type": "single",
-      "stem": "Which statement best describes the oxygen fail-safe valve on an anesthesia machine?",
+      "stem": "Which limitation of the anesthesia-machine fail-safe valve is most important when oxygen supply pressure remains normal?",
       "options": [
-        "It responds to oxygen supply pressure rather than oxygen concentration",
-        "It directly measures FiO2 in the inspiratory limb",
-        "It prevents every possible hypoxic mixture",
-        "It detects crossed pipelines by gas identity"
+        "It cannot detect the identity or concentration of the gas being supplied",
+        "It cannot reduce nitrous oxide flow when oxygen pressure falls",
+        "It directly measures inspired oxygen concentration instead of pressure",
+        "It shuts off oxygen before other gases"
       ],
       "answer": [
         0
       ],
-      "explanation": "The fail-safe is pressure driven. It cannot identify the gas in the oxygen pipeline and cannot replace direct inspired oxygen analysis.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "The fail-safe responds to oxygen supply pressure, not oxygen concentration or gas identity. Crossed pipelines or nitrogen contamination can therefore bypass it when pressure is normal.",
+      "citation": "SRNA Equipment Study Guide · Page 2",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "2",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 2"
     },
     {
       "id": "384",
@@ -12787,65 +12787,65 @@
       "id": "388",
       "set": 4,
       "type": "single",
-      "stem": "Under ASA circulation monitoring standards, how often must arterial blood pressure and heart rate be evaluated during anesthesia?",
+      "stem": "An ethyl-violet absorbent canister looks white even though inspired CO₂ has begun to rise. Which explanation is supported by the study guide?",
       "options": [
-        "At least every 5 minutes",
-        "At least every 15 minutes",
-        "Only at induction and emergence",
-        "Only when an arterial line is present"
+        "White color always proves the absorbent is fresh",
+        "Regeneration, bleaching, or channeling can make color unreliable",
+        "Only a broken capnograph can produce inspired CO₂",
+        "High fresh gas flow permanently restores exhausted absorbent"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "The monitoring study guide states that ECG is continuously displayed and blood pressure and heart rate are evaluated at least every five minutes.",
-      "citation": "Intraoperative Assessment, Monitoring & Data Interpretation · Study Guide p. 37",
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Study Guide p. 37",
-      "sourceMeta": {
-        "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
-        ],
-        "studyGuidePage": "37",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Monitoring",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "389",
-      "set": 4,
-      "type": "single",
-      "stem": "Gas preferentially travels along the smooth wall of a CO2 absorber canister. What problem does this create?",
-      "options": [
-        "Channeling with early exhaustion along the flow path",
-        "Uniform absorbent use throughout the canister",
-        "Complete chemical regeneration of soda lime",
-        "Elimination of breathing-system resistance"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Channeling lets gas follow a low-resistance path, so absorbent on that path can become exhausted while other granules still appear fresh.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 4",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "4",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "Absorbent color can mislead because exhausted dye may regenerate toward white, intense light can bleach it, and channeling can exhaust a gas path while much of the canister still looks fresh. Inspired CO₂ is the clinical warning.",
+      "citation": "SRNA Equipment Study Guide · Page 4",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "4",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 4"
+    },
+    {
+      "id": "389",
+      "set": 4,
+      "type": "single",
+      "stem": "Which volatile anesthetic has the greatest carbon-monoxide production potential with desiccated absorbent?",
+      "options": [
+        "Sevoflurane",
+        "Halothane",
+        "Desflurane",
+        "Nitrous oxide"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "The guide ranks carbon-monoxide production with dry absorbent as desflurane greater than enflurane greater than isoflurane. Sevoflurane and halothane are not listed as carbon-monoxide producers.",
+      "citation": "SRNA Equipment Study Guide · Page 4",
+      "topic": "CO₂ & Scavenging",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "4",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 4"
     },
     {
       "id": "390",
@@ -12883,33 +12883,33 @@
       "id": "391",
       "set": 4,
       "type": "single",
-      "stem": "A noninvasive blood-pressure cuff is too small for the patient's arm. How will the measured pressure usually be affected?",
+      "stem": "During mask ventilation, slight chest movement is seen but SpO₂ is falling and no waveform ETCO₂ is present. How should ventilation be interpreted?",
       "options": [
-        "It will read falsely high",
-        "It will read falsely low",
-        "Only the mean pressure will be accurate",
-        "Cuff size has no systematic effect"
+        "Adequate because any chest movement proves ventilation",
+        "Inadequate because objective oxygenation and exhaled-CO₂ data outweigh slight chest movement",
+        "Adequate if peak airway pressure is low",
+        "Adequate until the pulse oximeter reaches 80%"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "A cuff that is too small requires more pressure to occlude the artery and tends to overestimate blood pressure.",
-      "citation": "Intraoperative Assessment, Monitoring & Data Interpretation · Study Guide p. 45",
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Study Guide p. 45",
-      "sourceMeta": {
-        "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
-        ],
-        "studyGuidePage": "45",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Monitoring",
+      "explanation": "The guide emphasizes combining clinical signs with objective measures. Falling SpO₂ and absent waveform ETCO₂ indicate failed ventilation despite slight visible chest movement.",
+      "citation": "SRNA Equipment Study Guide · Page 6",
+      "topic": "Airway",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "6",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 6"
     },
     {
       "id": "392",
@@ -12947,33 +12947,33 @@
       "id": "393",
       "set": 4,
       "type": "single",
-      "stem": "The capnogram suddenly becomes flat, but SpO2, blood pressure, peak airway pressure, and exhaled tidal volume are unchanged. What should be suspected first?",
+      "stem": "Which monitoring-alarm practice best matches the Exam 1 study guide?",
       "options": [
-        "A sampling-line problem",
-        "Immediate cardiac arrest",
-        "Complete circuit disconnection",
-        "Severe bronchospasm"
+        "Disable recurrent alarms once the cause seems benign",
+        "Evaluate every alarm every time and keep required alarms audible",
+        "Silence variable-pitch pulse oximetry during stable cases",
+        "Lower alarm limits below standards whenever nuisance alarms occur"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "A sudden flat capnogram can reflect disconnection or apnea, but unchanged ventilation and hemodynamic variables make a sampling-line kink or disconnection especially likely.",
-      "citation": "Intraoperative Assessment, Monitoring & Data Interpretation · Study Guide p. 43",
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Study Guide p. 43",
-      "sourceMeta": {
-        "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
-        ],
-        "studyGuidePage": "43",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "The monitoring guide states that every alarm is evaluated every time and that alarm limits remain audible and compliant with standards. Alarm fatigue is specifically identified as a risk for missed events.",
+      "citation": "Exam 1 Study Guide · Page 37",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Study Guide"
+        ],
+        "pdfPages": "37",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "Exam 1 Study Guide",
+      "sourceLocator": "Page 37"
     },
     {
       "id": "394",
@@ -13015,129 +13015,129 @@
       "id": "395",
       "set": 4,
       "type": "single",
-      "stem": "Where does oxygen from the emergency flush valve enter the anesthesia gas pathway?",
+      "stem": "Why is the oxygen flowmeter positioned downstream, or last, in a traditional flowmeter bank?",
       "options": [
-        "From the intermediate-pressure system directly toward the common gas outlet, bypassing flowmeters and vaporizers",
-        "Through the vaporizer sump before entering the common gas outlet",
-        "Through the low-pressure flowmeter bank only",
-        "Directly into the patient's endotracheal tube"
+        "So an upstream leak preferentially loses another gas rather than oxygen",
+        "So oxygen can bypass the common gas outlet",
+        "So the oxygen analyzer can be omitted",
+        "So nitrous oxide pressure becomes higher than oxygen pressure"
       ],
       "answer": [
         0
       ],
-      "explanation": "The oxygen flush supplies very high flow from the intermediate-pressure system and bypasses flowmeters and vaporizers.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "Placing oxygen last reduces the chance that an upstream flowmeter leak removes oxygen from the final mixture. A leak in the oxygen flowmeter itself can still produce a hypoxic mixture.",
+      "citation": "SRNA Equipment Study Guide · Page 2",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "2",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 2"
     },
     {
       "id": "396",
       "set": 4,
       "type": "single",
-      "stem": "Peak inspiratory pressure and plateau pressure both rise by similar amounts after pneumoperitoneum. What does this pattern most strongly suggest?",
+      "stem": "What complication is most commonly associated with nasopharyngeal airway insertion?",
       "options": [
-        "Reduced respiratory-system compliance",
-        "Isolated increase in airway resistance",
-        "A sampling-line leak",
-        "An incompetent expiratory valve"
+        "Epistaxis",
+        "Dental fracture",
+        "Tracheal rupture",
+        "Pneumothorax"
       ],
       "answer": [
         0
       ],
-      "explanation": "When both peak and plateau pressure rise, the problem is usually decreased lung/chest-wall compliance or increased tidal volume rather than isolated airway resistance.",
-      "citation": "Intraoperative Assessment, Monitoring & Data Interpretation · Study Guide p. 38",
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Study Guide p. 38",
-      "sourceMeta": {
-        "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
-        ],
-        "studyGuidePage": "38",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Monitoring",
+      "explanation": "The equipment guide identifies epistaxis as the most common complication of nasopharyngeal airway placement.",
+      "citation": "SRNA Equipment Study Guide · Page 6",
+      "topic": "Airway",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "6",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 6"
     },
     {
       "id": "397",
       "set": 4,
       "type": "single",
-      "stem": "Which safety device can detect a crossed oxygen pipeline that still has normal pressure?",
+      "stem": "An open scavenging interface is connected to active suction. What happens if suction is excessive?",
       "options": [
-        "Inspired oxygen analyzer",
-        "Fail-safe valve",
-        "Oxygen-nitrous proportioning system",
-        "Cylinder pressure regulator"
+        "Positive pressure is transmitted directly to the breathing circuit",
+        "Room air is entrained through the open interface",
+        "The reservoir bag distends until the pop-off valve opens",
+        "The APL valve becomes permanently closed"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "Pressure-based safety systems can be fooled by the wrong gas delivered at normal pressure. Direct inspired oxygen analysis detects the resulting low oxygen concentration.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "398",
-      "set": 4,
-      "type": "single",
-      "stem": "A soda-lime canister that had turned purple is white again the next morning. What should this color change mean to the anesthesia provider?",
-      "options": [
-        "Do not assume the absorbent is fresh because indicator dye can regenerate",
-        "The absorbent has fully restored its CO2 capacity",
-        "The canister is safe until it turns black",
-        "The color proves there was no channeling"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Ethyl-violet indicator color can fade after the canister rests. Chemical capacity is not restored, so inspired CO2 and clinical performance matter more than color alone.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 4",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "4",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "An open interface is valveless and open to room air. Excess suction therefore entrains room air rather than transmitting negative pressure to the breathing circuit.",
+      "citation": "SRNA Equipment Study Guide · Page 5",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "5",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 5"
+    },
+    {
+      "id": "398",
+      "set": 4,
+      "type": "single",
+      "stem": "Peak inspiratory pressure and plateau pressure both increase after pneumoperitoneum while tidal volume is unchanged. What mechanism best explains the pattern?",
+      "options": [
+        "Increased airway resistance with unchanged compliance",
+        "Decreased lung/chest-wall compliance",
+        "A sampling-line obstruction only",
+        "Isolated endotracheal-tube secretions"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "When both peak and plateau pressures rise, the guide points to reduced static and dynamic compliance. Pneumoperitoneum is listed as a cause of that pattern.",
+      "citation": "Exam 1 Study Guide · Page 38",
+      "topic": "Monitoring",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Study Guide"
+        ],
+        "pdfPages": "38",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "Exam 1 Study Guide",
+      "sourceLocator": "Page 38"
     },
     {
       "id": "399",
@@ -15262,33 +15262,33 @@
       "id": "463",
       "set": 5,
       "type": "single",
-      "stem": "What happens to a Tec 6 desflurane vaporizer after complete loss of electrical power?",
+      "stem": "A variable-bypass vaporizer is accidentally tipped and subsequently delivers an unexpectedly high agent concentration. What corrective procedure is described in the study guide?",
       "options": [
-        "It cannot provide normal desflurane output because heating and electronic control require power",
-        "It becomes a conventional variable-bypass vaporizer",
-        "It continues indefinitely using pipeline pressure alone",
-        "It switches automatically to isoflurane"
+        "Refill it immediately and use low fresh gas flow",
+        "Drain it, run it at the highest setting with high fresh gas flow for about 30 minutes, then refill when analysis reads zero",
+        "Place it in transport mode for five minutes",
+        "Flush the breathing circuit while leaving the tipped vaporizer mounted and full"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "The Tec 6 heats and pressurizes desflurane and relies on electrical control. It is not a purely mechanical variable-bypass vaporizer.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 3",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 3",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "3",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "Tipping can allow liquid agent into the bypass and cause overdose. The guide describes draining the vaporizer, running the highest setting at high fresh gas flow for about 30 minutes, and refilling after the analyzer reads zero.",
+      "citation": "SRNA Equipment Study Guide · Page 3",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "3",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 3"
     },
     {
       "id": "464",
@@ -15529,33 +15529,33 @@
       "id": "471",
       "set": 5,
       "type": "single",
-      "stem": "What is the danger of leaving the backup oxygen cylinder open during routine pipeline operation?",
+      "stem": "Which feature distinguishes a Tec 6 desflurane vaporizer from a conventional variable-bypass vaporizer?",
       "options": [
-        "A pipeline-pressure drop can silently drain the cylinder before the provider recognizes the failure",
-        "The cylinder will overpressurize the pipeline",
-        "The oxygen analyzer becomes inaccurate",
-        "The proportioning system stops functioning"
+        "It operates without electricity at room temperature",
+        "It heats desflurane to about 39 °C and pressurizes it to roughly 2 atmospheres",
+        "Fresh gas passes directly through its liquid sump",
+        "It uses no pressure sensing"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "If pipeline pressure falls below regulated cylinder pressure, the open cylinder begins supplying gas. This can mask the pipeline failure until the emergency reserve is depleted.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "The Tec 6 heats desflurane to about 39 °C, pressurizes the sump to roughly 2 atmospheres, and requires electricity. Fresh gas does not pass through the sump.",
+      "citation": "SRNA Equipment Study Guide · Page 3",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "3",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 3"
     },
     {
       "id": "472",
@@ -15928,33 +15928,33 @@
       "id": "483",
       "set": 5,
       "type": "single",
-      "stem": "At high flow through a Thorpe-tube flowmeter, which gas property becomes most important in determining flow?",
+      "stem": "During laser airway surgery, what remains vulnerable even when a laser-resistant endotracheal tube is used?",
       "options": [
-        "Density",
-        "Viscosity",
-        "Vapor pressure",
-        "Critical temperature"
+        "The cuff",
+        "The 15-mm connector only",
+        "The pilot balloon only",
+        "The Murphy eye only"
       ],
       "answer": [
         0
       ],
-      "explanation": "High flow is predominantly turbulent, so density is the major gas property affecting calibration. Low laminar flow depends more on viscosity.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 2",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "2",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
+      "explanation": "The guide notes that the cuff is not laser resistant even when the tube is. It recommends filling the cuff with saline or water and dye.",
+      "citation": "SRNA Equipment Study Guide · Page 7",
+      "topic": "Airway",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "7",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 7"
     },
     {
       "id": "484",
@@ -16091,65 +16091,65 @@
       "id": "488",
       "set": 5,
       "type": "single",
-      "stem": "During CPR, end-tidal CO2 suddenly rises sharply and remains elevated without a change in ventilation. What is the most likely explanation?",
+      "stem": "Approximately how much carbon dioxide can 100 g of soda lime absorb?",
       "options": [
-        "Return of spontaneous circulation",
-        "Progressive airway obstruction",
-        "Sampling-line occlusion",
-        "Worsening pulmonary embolism"
+        "2.6 L",
+        "13 L",
+        "26 L",
+        "100 L"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "A sudden sustained rise in ETCO2 during CPR reflects increased pulmonary blood flow and is a classic sign of return of spontaneous circulation.",
-      "citation": "Intraoperative Assessment, Monitoring & Data Interpretation · Study Guide p. 43",
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Study Guide p. 43",
-      "sourceMeta": {
-        "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
-        ],
-        "studyGuidePage": "43",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Monitoring",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null
-    },
-    {
-      "id": "489",
-      "set": 5,
-      "type": "single",
-      "stem": "Which volatile anesthetic is specifically associated with compound A formation in carbon dioxide absorbent?",
-      "options": [
-        "Sevoflurane",
-        "Desflurane",
-        "Isoflurane",
-        "Halothane"
-      ],
-      "answer": [
-        0
-      ],
-      "explanation": "Compound A is associated with sevoflurane degradation in absorbent. Desflurane, enflurane, and isoflurane are the agents emphasized for carbon monoxide production with desiccated absorbent.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 4",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "4",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "The study guide gives an approximate soda-lime capacity of 26 L of carbon dioxide per 100 g of absorbent.",
+      "citation": "SRNA Equipment Study Guide · Page 4",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "4",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 4"
+    },
+    {
+      "id": "489",
+      "set": 5,
+      "type": "single",
+      "stem": "Why can high fresh gas flow delay recognition of an exhausted carbon-dioxide absorbent?",
+      "options": [
+        "High flow can wash out carbon dioxide and mask the exhausted canister",
+        "High flow chemically regenerates calcium hydroxide",
+        "High flow turns carbon dioxide into oxygen",
+        "High flow permanently reverses channeling"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "High fresh gas flow can reduce rebreathing enough to mask an exhausted absorber. Lower fresh gas flow increases reliance on the absorber and therefore exhausts it sooner.",
+      "citation": "SRNA Equipment Study Guide · Page 4",
+      "topic": "CO₂ & Scavenging",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "4",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 4"
     },
     {
       "id": "490",
@@ -16187,33 +16187,33 @@
       "id": "491",
       "set": 5,
       "type": "single",
-      "stem": "In a healthy supine adult, what is the usual relationship between PaCO2 and ETCO2?",
+      "stem": "In a healthy supine patient, what approximate gradient between PaCO₂ and ETCO₂ does the Exam 1 study guide describe?",
       "options": [
-        "PaCO2 is typically about 5 mmHg higher than ETCO2",
-        "ETCO2 is typically 20 mmHg higher than PaCO2",
-        "They are always identical",
-        "PaCO2 is normally lower than ETCO2 by 10–15 mmHg"
+        "About 0 mmHg",
+        "About 5 mmHg",
+        "About 15 mmHg",
+        "About 25 mmHg"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "Anatomic dead space produces a small arterial-to-end-tidal gradient. The study guide gives about 5 mmHg, commonly within a range of roughly 2–10 mmHg.",
-      "citation": "Intraoperative Assessment, Monitoring & Data Interpretation · Study Guide p. 42",
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Study Guide p. 42",
-      "sourceMeta": {
-        "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
-        ],
-        "studyGuidePage": "42",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "The guide describes ETCO₂ as typically about 5 mmHg below PaCO₂ in a healthy supine patient, with a usual range of roughly 2–10 mmHg.",
+      "citation": "Exam 1 Study Guide · Page 42",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Study Guide"
+        ],
+        "pdfPages": "42",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "Exam 1 Study Guide",
+      "sourceLocator": "Page 42"
     },
     {
       "id": "492",
@@ -16251,33 +16251,33 @@
       "id": "493",
       "set": 5,
       "type": "single",
-      "stem": "A fast-flush test shows multiple exaggerated oscillations and the arterial waveform has an unusually high systolic peak. What artifact is most likely?",
+      "stem": "Which circulation requirement is part of ASA Standard II in the Exam 1 study guide?",
       "options": [
-        "Underdamping",
-        "Overdamping",
-        "Incorrect zero only",
-        "Venous placement"
+        "ECG displayed continuously with blood pressure and heart rate assessed at least every 5 minutes",
+        "A pulmonary artery catheter in every general anesthetic",
+        "An arterial line for every patient receiving volatile anesthetic",
+        "A 12-lead ECG printed every 5 minutes"
       ],
       "answer": [
         0
       ],
-      "explanation": "Underdamping produces excessive oscillation and can overestimate systolic pressure, often by 15–30 mmHg.",
-      "citation": "Intraoperative Assessment, Monitoring & Data Interpretation · Study Guide p. 45",
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Study Guide p. 45",
-      "sourceMeta": {
-        "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
-        ],
-        "studyGuidePage": "45",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "The guide lists continuous ECG display and evaluation of blood pressure and heart rate at least every 5 minutes as circulation requirements under ASA Standard II.",
+      "citation": "Exam 1 Study Guide · Page 37",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Study Guide"
+        ],
+        "pdfPages": "37",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "Exam 1 Study Guide",
+      "sourceLocator": "Page 37"
     },
     {
       "id": "494",
@@ -16321,127 +16321,127 @@
       "type": "single",
       "stem": "Which dimensions identify the anesthesia machine common gas outlet?",
       "options": [
-        "15 mm internal female and 22 mm external male",
-        "22 mm internal female and 15 mm external male",
+        "15 mm internal and 22 mm external",
         "19 mm internal and 30 mm external",
+        "22 mm internal and 15 mm external",
         "30 mm internal and 19 mm external"
       ],
       "answer": [
         0
       ],
-      "explanation": "The common gas outlet uses a 15 mm internal female and 22 mm external male connection. Nineteen- and 30-mm connectors are associated with scavenging.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 3",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 3",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "3",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "The common gas outlet uses a 15-mm internal female and 22-mm external male connection. The 19- and 30-mm conical fittings are reserved for scavenging.",
+      "citation": "SRNA Equipment Study Guide · Page 3",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "3",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 3"
     },
     {
       "id": "496",
       "set": 5,
       "type": "single",
-      "stem": "A blood-pressure cuff is positioned on an arm below the level of the heart. How will the reading tend to change?",
+      "stem": "A cannot-intubate, cannot-oxygenate emergency persists despite rescue attempts. What final airway step is emphasized in the equipment guide?",
       "options": [
-        "It will read falsely high",
-        "It will read falsely low",
-        "Only diastolic pressure falls",
-        "Position has no hydrostatic effect"
+        "Repeat direct laryngoscopy indefinitely",
+        "Cricothyrotomy",
+        "Place an oropharyngeal airway and wait",
+        "Convert to nasal cannula oxygen only"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "A limb below heart level has additional hydrostatic pressure and tends to produce a falsely high noninvasive blood-pressure reading.",
-      "citation": "Intraoperative Assessment, Monitoring & Data Interpretation · Study Guide p. 45",
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Study Guide p. 45",
-      "sourceMeta": {
-        "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
-        ],
-        "studyGuidePage": "45",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Monitoring",
+      "explanation": "The guide identifies cricothyrotomy as the final step in the airway algorithm when intubation and ventilation/oxygenation fail. Repeated attempts should not delay front-of-neck access once oxygenation fails.",
+      "citation": "SRNA Equipment Study Guide · Page 7",
+      "topic": "Airway",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "7",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 7"
     },
     {
       "id": "497",
       "set": 5,
       "type": "single",
-      "stem": "The auxiliary common gas outlet is left selected after switching back to the circle system. What is the primary risk?",
+      "stem": "When a neuromuscular blocking drug is administered, what monitoring approach does the Exam 1 study guide attribute to AANA guidance?",
       "options": [
-        "Fresh gas is diverted away from the circle",
-        "The oxygen flush becomes disabled",
-        "The cylinder regulator rises to pipeline pressure",
-        "The scavenger receives all fresh gas"
+        "No monitoring is needed if the dose is small",
+        "Neuromuscular monitoring should be used, with quantitative monitoring preferred",
+        "Clinical hand grip is always sufficient",
+        "Only a preoperative baseline train-of-four is required"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "An auxiliary common gas outlet diverts the machine's fresh-gas flow to another circuit. If it remains selected, the circle may receive no fresh gas.",
-      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 3",
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Study Guide p. 3",
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "studyGuidePage": "3",
-        "citationFormat": "study-guide"
-      },
-      "topic": "Medical Gases",
+      "explanation": "The study guide states that neuromuscular monitoring should be used whenever relaxants are given and that quantitative monitoring is preferred.",
+      "citation": "Exam 1 Study Guide · Page 37",
+      "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Study Guide"
+        ],
+        "pdfPages": "37",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "Exam 1 Study Guide",
+      "sourceLocator": "Page 37"
     },
     {
       "id": "498",
       "set": 5,
       "type": "single",
-      "stem": "A closed-reservoir scavenging interface has excessive suction. Which finding is expected?",
+      "stem": "Which disposal method is classified as active scavenging?",
       "options": [
-        "The reservoir bag collapses and the negative-pressure relief valve admits room air",
-        "The reservoir bag distends and the positive-pressure valve vents",
-        "Inspired CO2 rises because the absorbent is exhausted",
-        "The APL valve becomes fully closed"
+        "A through-the-wall duct with no suction",
+        "Nonrecirculating room ventilation alone",
+        "Wall suction or a dedicated waste-anesthetic-gas vacuum",
+        "An open interface without a disposal line"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "Excess suction in a closed interface collapses the reservoir. The negative-pressure relief valve should open to room air to prevent that suction from reaching the breathing circuit.",
-      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 5",
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Study Guide p. 5",
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "studyGuidePage": "5",
-        "citationFormat": "study-guide"
-      },
+      "explanation": "Active disposal uses wall suction or a dedicated waste-anesthetic-gas evacuation vacuum. Through-the-wall ducts and suitable nonrecirculating ventilation are passive methods.",
+      "citation": "SRNA Equipment Study Guide · Page 5",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "SRNA Equipment Study Guide"
+        ],
+        "pdfPages": "5",
+        "citationFormat": "document"
+      },
+      "sourceTitle": "SRNA Equipment Study Guide",
+      "sourceLocator": "Page 5"
     },
     {
       "id": "499",
