@@ -629,11 +629,18 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ["APP_ROOT=new URL('../../'","/auth/v1/signup?redirect_to=",'consumeAuthRedirect','access_token','refresh_token',"history.replaceState(null,'',location.pathname+location.search)"])if(!cloud.includes(token))fail('Supabase confirmation flow missing '+token);
 }
 
-// Supabase periodic sync must remain enabled and visible in the shared Tools UI.
+// Supabase periodic sync must remain enabled and visible in the account/status UI.
 {
  const cloud=read('equipment/assets/supabase-sync.js'),core=read('equipment/assets/app-core.js');
  for(const token of ['AUTO_SYNC_INTERVAL=5*60*1000','function startAutoSync()','setInterval(','autoSyncIntervalMs:AUTO_SYNC_INTERVAL','nextAutoSyncAt'])if(!cloud.includes(token))fail('Supabase automatic sync missing '+token);
- for(const token of ['function cloudAutoSyncText(info)','data-cloud-auto','Auto sync: every '])if(!core.includes(token))fail('Cloud Tools auto-sync status missing '+token);
+ for(const token of ['function cloudAutoSyncText(info)','data-cloud-auto','Every '+"'+mins+'"+' min'])if(!core.includes(token))fail('Cloud account auto-sync status missing '+token);
+}
+
+// Practical Tools design keeps account identity persistent and recovery/diagnostics secondary.
+{
+ const core=read('equipment/assets/app-core.js'),css=read('equipment/assets/app-core.css');
+ for(const token of ['mbu-global-nav__cloud','Cloud: Signed out','function ensureAccountPanel()','Backup & Recovery','Troubleshooting & App Info','Saved study areas','data-tools-saves-help','Progress exists in '])if(!core.includes(token))fail('Practical Tools UI missing '+token);
+ for(const token of ['.mbu-global-nav__utilities','.mbu-global-nav__cloud','.mbu-tools-details','.mbu-account-panel','.mbu-tools-grid'])if(!css.includes(token))fail('Practical Tools styling missing '+token);
 }
 
 
