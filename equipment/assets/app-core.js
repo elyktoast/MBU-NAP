@@ -137,7 +137,7 @@ modal.querySelector('[data-tools-cloud]').textContent=window.MBUSupabase?cloudSt
 modal.querySelector('[data-tools-auto]').textContent=window.MBUSupabase?cloudAutoSyncText(info):'Unavailable';
 modal.querySelector('[data-tools-saves]').textContent=saved+' of '+keys.length;
 modal.querySelector('[data-tools-saves-help]').textContent=saved?'Saved progress in '+saved+' study area'+(saved===1?'':'s')+' on this device.':'No study progress saved on this device.';
-modal.querySelector('[data-tools-local]').textContent=local?formatTime(local):'No local saves';
+modal.querySelector('[data-tools-local]').textContent=local?formatTime(local):'No saves';
 modal.querySelector('[data-build]').textContent=window.MBU_BUILD_ID||'unknown';
 modal.querySelector('[data-device]').textContent=deviceId().slice(0,12);
 modal.querySelector('[data-errors]').textContent=errors.length?errors.length+' captured':'0 issues detected';
