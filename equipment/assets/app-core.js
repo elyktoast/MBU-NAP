@@ -30,12 +30,13 @@ if(!key||key===META_KEY||key===DEVICE_KEY)return null;
 const meta=readMeta(),prev=plain(meta[key])?meta[key]:{},entry={revision:(Number(prev.revision)||0)+1,updatedAt:now(),deviceId:deviceId(),serverRevision:Number(prev.serverRevision)||0};
 meta[key]=entry;writeMeta(meta);window.MBUSupabase?.scheduleSync?.();return entry
 }
-function metaRank(x){return [Number(x?.updatedAt)||0,Number(x?.revision)||0,String(x?.deviceId||'')]}
+function metaRank(x){return [Number(x?.updatedAt)||0,Number(x?.revision)||0,Number(x?.serverRevision)||0,String(x?.deviceId||'')]}
 function isRemoteNewer(remote,local){
-const remoteServer=Number(remote?.serverRevision)||0,localServer=Number(local?.serverRevision)||0;
-if(remoteServer>0&&localServer>0&&remoteServer!==localServer)return remoteServer>localServer;
 const a=metaRank(remote),b=metaRank(local);
-if(a[0]!==b[0])return a[0]>b[0];if(a[1]!==b[1])return a[1]>b[1];return a[2]>b[2]
+if(a[0]!==b[0])return a[0]>b[0];
+if(a[1]!==b[1])return a[1]>b[1];
+if(a[2]!==b[2])return a[2]>b[2];
+return a[3]>b[3]
 }
 async function exportSnapshot(){
 const keys=await trackedKeys(),meta=readMeta(),stores={};
