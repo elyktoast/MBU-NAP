@@ -1,14 +1,14 @@
-# SNAR Study Tool Privacy and Data Protection Assessment
+# SRNA Study Tool Privacy and Data Protection Assessment
 
 Effective assessment date: September 27, 2026
 
 ## Purpose
 
-This document records the current data flows, purposes, foreseeable privacy risks, and safeguards for SNAR Study Tool. It is an internal engineering/compliance record and does not replace the public Privacy Notice or legal advice.
+This document records the current data flows, purposes, foreseeable privacy risks, and safeguards for SRNA Study Tool. It is an internal engineering/compliance record and does not replace the public Privacy Notice or legal advice.
 
 ## Product scope
 
-SNAR Study Tool is an independent educational study application. Normal study functions are available without an account. An account is required for Adaptive Mode and optional cloud synchronization.
+SRNA Study Tool is an independent educational study application. Normal study functions are available without an account. An account is required for Adaptive Mode and optional cloud synchronization.
 
 ## Data map
 
@@ -77,7 +77,7 @@ Authenticated-readable aggregate table:
 
 Purpose: question testing/validation and Adaptive Mode calibration.
 
-The aggregate does not contain name, email, password, device identity, or account ID. SNAR Study Tool publicly commits not to re-identify this data.
+The aggregate does not contain name, email, password, device identity, or account ID. SRNA Study Tool publicly commits not to re-identify this data.
 
 ### Question reports
 Delivered through Google Apps Script:
@@ -151,7 +151,7 @@ The application does not intentionally collect demographic, health, financial, p
    - Local browser data is controlled separately by the user/browser.
 
 7. **Misleading affiliation**
-   - Product branding is SNAR Study Tool.
+   - Product branding is SRNA Study Tool.
    - Public terms and privacy materials expressly state that the tool is independent and not affiliated with a university, school, certifying body, licensing board, or examination provider.
    - Faculty/university attribution was removed from canonical question data.
 
