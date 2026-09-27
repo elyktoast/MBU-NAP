@@ -8,10 +8,10 @@ Phase 1 audited all **2,000 canonical questions** without changing question cont
 
 | Bank | Questions | Topics after normalization | Short explanations <80 chars | Long-correct-choice flags |
 | --- | ---: | --- | ---: | ---: |
-| Quiz Bank 1 | 500 | Medical Gas 181; Monitoring 180; CO₂ & Scavenging 85; Airway 54 | 11 | 10 |
-| Quiz Bank 2 | 500 | Monitoring 130; Medical Gas 128; CO₂ & Scavenging 122; Airway 120 | 79 | 9 |
-| Quiz Bank 3 | 500 | Monitoring 226; Medical Gas 144; CO₂ & Scavenging 84; Airway 46 | 0 | 2 |
-| Combined | 150 | Hazards & Safety 58; Medical Gas 52; CO₂ & Scavenging 23; Airway 17 | 12 | 2 |
+| Quiz Bank 1 | 500 | Medical Gases 181; Monitoring 180; CO₂ & Scavenging 85; Airway 54 | 11 | 10 |
+| Quiz Bank 2 | 500 | Monitoring 130; Medical Gases 128; CO₂ & Scavenging 122; Airway 120 | 79 | 9 |
+| Quiz Bank 3 | 500 | Monitoring 226; Medical Gases 144; CO₂ & Scavenging 84; Airway 46 | 0 | 2 |
+| Combined | 150 | Hazards & Safety 58; Medical Gases 52; CO₂ & Scavenging 23; Airway 17 | 12 | 2 |
 | Workstation Hazards | 350 | Hazards & Safety 350 | 12 | 10 |
 
 ## Phase 1 findings
@@ -43,7 +43,7 @@ Phase 2 made **metadata-only changes**. A field-by-field comparison against buil
 All 2,000 questions now have an explicit canonical topic. The allowed vocabulary is:
 
 - Monitoring
-- Medical Gas
+- Medical Gases
 - CO₂ & Scavenging
 - Airway
 - Hazards & Safety
@@ -56,6 +56,7 @@ Every question now has:
 
 - `sourceTitle`
 - `sourceLocator`
+- `sourceMeta` with canonical source family and slide/PDF locator data when available
 
 The original display citation remains intact. Structured source metadata gives Search, auditing, and future generated-question/source verification a stable field without rewriting the educational content.
 
