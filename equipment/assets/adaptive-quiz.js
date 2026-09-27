@@ -32,23 +32,26 @@ function recentContentKeys(questions,limit=50){
   }
   return keys
 }
-function challenge(q,topicCache=null){
-  const a=questionStats(q?.uid),multi=(Array.isArray(q?.ans)?q.ans:Array.isArray(q?.answer)?q.answer:[]).length>1;
+function challenge(q){
+  const multi=(Array.isArray(q?.ans)?q.ans:Array.isArray(q?.answer)?q.answer:[]).length>1;
   let score=3+(multi?.65:0)+((q?.bank==='hh'||Number(q?.set)===7)?.7:0);
   const pop=populationStats(q?.uid),learners=Number(pop?.unique_learners)||0;
   if(learners>=25&&Number.isFinite(Number(pop?.difficulty_logit))){
     const populationScore=clampLevel(3+clampLogit(pop.difficulty_logit)/1.25),weight=learners>=300?.8:learners>=100?.6:.35;
     score=score*(1-weight)+populationScore*weight
   }
-  const topic=topicStats(topicOf(q),topicCache);
-  if(topic.attempts>=4)score+=(.5-(topic.accuracy/100))*1.2;
-  if(a&&Number(a.attempts)>0){
-    const acc=(Number(a.correct)||0)/Number(a.attempts),observed=3+(.5-acc)*3,weight=Math.min(.85,Number(a.attempts)/5);
-    score=score*(1-weight)+observed*weight;
-    if(!a.lastCorrect)score+=.15;
-    if((Number(a.streak)||0)>=3)score-=.15
-  }
   return Math.round(clampLevel(score)*100)/100
+}
+function learningNeedAdjustment(q,topicCache=null){
+  let adjustment=0;
+  const topic=topicStats(topicOf(q),topicCache);
+  if(topic.attempts>=4)adjustment+=(topic.accuracy/100-.5)*.12;
+  const personal=questionStats(q?.uid);
+  if(personal&&Number(personal.attempts)>0){
+    if(!personal.lastCorrect)adjustment-=.04;
+    if((Number(personal.streak)||0)>=3)adjustment+=.03
+  }
+  return Math.max(-.08,Math.min(.08,adjustment))
 }
 function estimateAbility(path=[]){
   const rows=Array.isArray(path)?path.filter(x=>plain(x)&&Number.isFinite(Number(x.difficulty))):[];
@@ -85,7 +88,7 @@ function pick(questions,state){
   let chosen=null,index=0;
   for(const q of questions){
     const key=contentKey(q);if(!q?.uid||seen.has(String(q.uid))||seenContent.has(key)||(allowed&&!allowed.has(String(q.uid)))){index++;continue}
-    const c=challenge(q,topicCache),difficulty=challengeToLogit(c),probability=logistic(target-difficulty),information=probability*(1-probability),topic=topicOf(q),topicCount=Number(s.topicCounts[topic])||0,share=distribution.total?(distribution.counts[topic]||0)/distribution.total:0,expected=(s.answered+1)*share,balancePenalty=Math.max(0,topicCount-expected)*.08,personal=questionStats(q.uid),attempts=Math.max(0,Number(personal?.attempts)||0),recentPenalty=(recent.has(String(q.uid))||recentContent.has(key))?.14:0,priorExposurePenalty=Math.min(.12,attempts*.04),exposurePenalty=recentPenalty+priorExposurePenalty,candidate={q,challenge:c,difficulty,probability,information,score:Math.abs(probability-.5)+balancePenalty+exposurePenalty,tie:tieRank(q.uid||index)};
+    const c=challenge(q),difficulty=challengeToLogit(c),probability=logistic(target-difficulty),information=probability*(1-probability),topic=topicOf(q),topicCount=Number(s.topicCounts[topic])||0,share=distribution.total?(distribution.counts[topic]||0)/distribution.total:0,expected=(s.answered+1)*share,balancePenalty=Math.max(0,topicCount-expected)*.08,personal=questionStats(q.uid),attempts=Math.max(0,Number(personal?.attempts)||0),recentPenalty=(recent.has(String(q.uid))||recentContent.has(key))?.14:0,priorExposurePenalty=Math.min(.12,attempts*.04),exposurePenalty=recentPenalty+priorExposurePenalty,needAdjustment=learningNeedAdjustment(q,topicCache),candidate={q,challenge:c,difficulty,probability,information,score:Math.abs(probability-.5)+balancePenalty+exposurePenalty+needAdjustment,tie:tieRank(q.uid||index)};
     if(!chosen||candidate.score<chosen.score||(candidate.score===chosen.score&&(candidate.information>chosen.information||(candidate.information===chosen.information&&candidate.tie<chosen.tie))))chosen=candidate;
     index++
   }

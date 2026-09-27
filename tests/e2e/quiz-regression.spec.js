@@ -2186,6 +2186,26 @@ test.describe('canonical quiz regression', () => {
     expect(result.picked).toBe(result.alternative);
   });
 
+  test('Adaptive item difficulty stays stable when personal performance changes', async ({ page }) => {
+    await page.goto(exam + '/studio.html');
+    await waitForStudio(page);
+    const result=await page.evaluate(() => {
+      const q=ALL.find(x=>x.ans.length===1&&x.bank!=='hh')||ALL[0];
+      const originalQuestion=MBUStudyIntelligence.questionStats;
+      const originalTopic=MBUStudyIntelligence.topicStats;
+      MBUStudyIntelligence.questionStats=()=>({attempts:6,correct:1,incorrect:5,lastCorrect:false,streak:0});
+      MBUStudyIntelligence.topicStats=()=>({attempts:20,accuracy:20});
+      const weak=MBUAdaptiveQuiz.challenge(q);
+      MBUStudyIntelligence.questionStats=()=>({attempts:6,correct:6,incorrect:0,lastCorrect:true,streak:6});
+      MBUStudyIntelligence.topicStats=()=>({attempts:20,accuracy:95});
+      const strong=MBUAdaptiveQuiz.challenge(q);
+      MBUStudyIntelligence.questionStats=originalQuestion;
+      MBUStudyIntelligence.topicStats=originalTopic;
+      return {weak,strong};
+    });
+    expect(result.weak).toBe(result.strong);
+  });
+
   test('Adaptive intelligence moves challenge up after correct and down after incorrect', async ({ page }) => {
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     const out=await page.evaluate(()=>{
