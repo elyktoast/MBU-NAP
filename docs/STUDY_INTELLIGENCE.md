@@ -57,6 +57,14 @@ Questions with no learning history remain eligible. Equal-priority questions use
 Smart Review currently selects up to 50 questions.
 
 
+## Testing and calibration privacy commitment
+
+MBU-NAP may collect question-performance data from authenticated users for testing, validation, question-quality improvement, and Adaptive Mode calibration. The testing/calibration dataset does not contain names, email addresses, passwords, or device identity and is not used for advertising or sold.
+
+The system maintains only the minimum private account-linked first-attempt record needed to prevent duplicate statistical contributions. User-facing population calibration data is de-identified and aggregated. MBU-NAP will not attempt to re-identify de-identified testing data.
+
+Account authentication and private progress synchronization necessarily use account information separately from the testing/calibration dataset.
+
 ## Adaptive Mode
 
 Adaptive Mode is deliberately separate from Smart Review and from normal quiz sessions. It is loaded only by Study Studio and runs only when the user enables the **Adaptive Mode** toggle while building a custom session.
