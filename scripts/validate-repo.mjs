@@ -17,8 +17,7 @@ function scanForProtectedFacultyNames(dir=root){
     if(!/\.(html|js|mjs|md|yml|yaml|json|ts|sql|gs|css|txt)$/i.test(entry.name))continue;
     const src=fs.readFileSync(full,'utf8'),rel=path.relative(root,full).replaceAll('\\\\','/');
     for(const name of protectedFacultyNames){
-      const escaped=name.replace(/[.*+?^$()|[\]{}\\]/g,'\\const fail=m=>failures.push(m);
-');
+      const escaped=name.replace(/[.*+?^$()|[\]{}\\]/g,'\\$&');
       if(new RegExp('\\b'+escaped+'\\b','i').test(src))fail(rel+': protected faculty-name reference remains');
     }
   }
