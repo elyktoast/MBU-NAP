@@ -404,6 +404,28 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#dashboard')).toBeVisible();
   });
 
+  test('Canonical quiz session exposes a local notes scratchpad without adding cloud progress data', async ({ page }) => {
+    await page.goto(exam + '/combined.html?set=1');await page.evaluate(() => MBUPageReady);
+    await page.locator('#mbuNotesBtn').click();
+    await expect(page.locator('#mbuNotesPanel')).toBeVisible();
+    await page.locator('#mbuNotesText').fill('MAP = CO × SVR\nP = V × I');
+    await page.locator('#next').click();
+    await page.locator('#mbuNotesBtn').click();
+    await expect(page.locator('#mbuNotesText')).toHaveValue('MAP = CO × SVR\nP = V × I');
+    const stores=await page.evaluate(()=>MBUSync.exportSnapshot());
+    expect(Object.values(stores.stores||{}).some(v=>String(v).includes('MAP = CO × SVR'))).toBe(false);
+  });
+
+  test('Canonical quiz session keeps actions grouped and notes available at tablet width', async ({ page }) => {
+    await page.setViewportSize({width:1024,height:1366});
+    await page.goto(exam + '/combined.html?set=1');await page.evaluate(() => MBUPageReady);
+    await expect(page.locator('.mbu-session-head')).toBeVisible();
+    await expect(page.locator('.mbu-session-actions #mbuFlagBtn')).toBeVisible();
+    await expect(page.locator('.mbu-session-actions #mbuNotesBtn')).toBeVisible();
+    await expect(page.locator('.mbu-session-actions #mbuCalcBtn')).toBeVisible();
+    await expect(page.locator('.mbu-quiz-stats>div')).toHaveCount(4);
+  });
+
   test('Calculator clears expression and Ans when closed and reopened', async ({ page }) => {
     await page.goto(exam + '/combined.html');
     await page.locator('#cards button').filter({ hasText: /start/i }).first().click();
