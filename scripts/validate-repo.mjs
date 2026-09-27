@@ -742,7 +742,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const boot=read('equipment/assets/build-bootstrap.js'),studio=read('equipment/assets/studio-page.js'),html=read('equipment/exam-1/studio.html'),core=read('equipment/assets/app-core.js');
  if(boot.includes('requireAccount'))fail('Account gate: normal app initialization must not require sign-in');
- for(const token of ['adaptiveToggleChanged','MBUSupabase?.status?.().signedIn','openAccount'])if(!studio.includes(token))fail('Adaptive account gate missing '+token);
+ for(const token of ['adaptiveToggleChanged','legalAccepted===true','openAccount'])if(!studio.includes(token))fail('Adaptive account gate missing '+token);
  if(!html.includes('Account required')||!html.includes('onchange="adaptiveToggleChanged(this)"'))fail('Studio: Adaptive account requirement is not visible');
  if(core.includes('mbu-auth-gate')||core.includes('requireAccount'))fail('Account gate: obsolete whole-site authentication gate remains');
 }
