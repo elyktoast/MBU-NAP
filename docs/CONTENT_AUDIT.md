@@ -1,81 +1,175 @@
 # Content quality audit
 
-Last reviewed: 2026-09-26
+Last reviewed: 2026-09-27
 
 ## Scope
 
-Phase 1 audited all **2,000 canonical questions** without changing question content. Phase 2 normalized metadata only.
+The audit covers all five canonical question sources:
 
-| Bank | Questions | Topics after normalization | Short explanations <80 chars | Long-correct-choice flags |
-| --- | ---: | --- | ---: | ---: |
-| Quiz Bank 1 | 500 | Medical Gases 181; Monitoring 180; CO₂ & Scavenging 85; Airway 54 | 11 | 10 |
-| Quiz Bank 2 | 500 | Monitoring 130; Medical Gases 128; CO₂ & Scavenging 122; Airway 120 | 79 | 9 |
-| Quiz Bank 3 | 500 | Monitoring 226; Medical Gases 144; CO₂ & Scavenging 84; Airway 46 | 0 | 2 |
-| Combined | 150 | Hazards & Safety 58; Medical Gases 52; CO₂ & Scavenging 23; Airway 17 | 12 | 2 |
-| Workstation Hazards | 350 | Hazards & Safety 350 | 12 | 10 |
+- Quiz Bank 1: 500 questions
+- Quiz Bank 2: 500 questions
+- Quiz Bank 3: 500 questions
+- Combined: 150 questions
+- Workstation Hazards: 350 questions
 
-## Phase 1 findings
+Total canonical questions: **2,000**.
 
-- 151 exact normalized-stem reuse groups exist within the canonical content.
-- No exact normalized stem is duplicated across different banks.
-- No identical-stem + identical-option-pool group currently has conflicting keyed answers.
-- 35 high-similarity near-duplicate pairs were identified for later human review.
-- 114 explanations are shorter than 80 characters; only 2 are shorter than 40 characters.
-- 33 questions have a correct choice that is substantially longer than the average distractor and should be reviewed for answer-length clues.
-- Hazards Set 2 remains the largest known repetition problem: 65 duplicate occurrences are explicitly baselined.
-- Bank 1 contains 21 known same-set duplicate occurrences already tracked by the integrity baseline.
-- No canonical question is missing a citation or explanation.
+## Phase 1: audit findings
 
-These are audit flags, not automatic proof that a question is bad. Phase 3 should verify flagged items against authoritative source material before changing keys or deleting questions.
+Phase 1 was read-only. No question stem, answer choice, answer key, explanation, or citation text was changed as part of the audit.
 
-## Phase 2 metadata normalization
+### Structural integrity
 
-Phase 2 made **metadata-only changes**. A field-by-field comparison against build `2026-09-26-stabilization-v111` confirmed:
+All 2,000 questions currently have:
 
-- 0 question stems changed;
-- 0 answer-choice sets changed;
-- 0 keyed answers changed;
-- 0 explanations changed;
-- question counts remained 500 / 500 / 500 / 150 / 350.
+- a question stem;
+- at least two nonblank answer choices;
+- valid keyed answer indexes;
+- a valid single- or multiple-answer type;
+- an explanation/rationale;
+- citation/source text;
+- canonical topic metadata;
+- canonical source-title metadata.
 
-### Topics
+The release gate continues to validate IDs, set counts, answer indexes, duplicate answer choices, image references, question types, and the approved duplicate baseline.
 
-All 2,000 questions now have an explicit canonical topic. The allowed vocabulary is:
+### Duplicate and repetition findings
 
-- Monitoring
-- Medical Gases
-- CO₂ & Scavenging
-- Airway
-- Hazards & Safety
+There are **no exact-stem duplicate groups shared between different canonical bank files**.
 
-Bank 1 is now fully tagged rather than relying on its legacy source-only classification.
+Within individual banks:
 
-### Structured sources
+| Bank | Exact repeated-stem occurrences across the whole bank | Same-set duplicates already baselined |
+| --- | ---: | ---: |
+| Quiz Bank 1 | 155 | 21 |
+| Quiz Bank 2 | 39 | 0 |
+| Quiz Bank 3 | 34 | 0 |
+| Combined | 0 | 0 |
+| Workstation Hazards | 65 | 65 |
 
-Every question now has:
+The whole-bank counts include questions intentionally repeated in different practice sets, so they are review flags rather than automatic errors.
 
-- `sourceTitle`
-- `sourceLocator`
-- `sourceMeta` with canonical source family and slide/PDF locator data when available
+Bank 1 contains **11 exact-stem groups where the keyed answer wording differs because the option pools differ**. There are **zero** cases where the same stem and the same answer-choice pool are keyed inconsistently. These 11 groups remain candidates for Phase 3 source review, not automatic key changes.
 
-Citation display text was normalized to a consistent `Source · locator` form while preserving the original slide/page locator information. Structured source metadata gives Search, auditing, and future generated-question/source verification stable fields without changing educational content.
+Workstation Hazards Set 2 still contains the previously documented repetitive source content: questions 31–100 cycle repeated questions from the original source implementation. This remains content debt for Phase 5 and is not being replaced without authoritative source material.
 
-### Difficulty
+### Explanation-quality review flags
 
-Difficulty labels were intentionally **not invented** from wording alone. Future difficulty metadata should be based on either authoritative faculty/source labeling or observed aggregate performance rather than subjective automatic guesses.
+A short explanation is not automatically poor, but explanations under 80 characters were flagged for later manual review:
 
-## Release-blocking checks
+| Bank | Explanations under 80 characters |
+| --- | ---: |
+| Quiz Bank 1 | 11 |
+| Quiz Bank 2 | 79 |
+| Quiz Bank 3 | 0 |
+| Combined | 12 |
+| Workstation Hazards | 12 |
 
-CI fails for missing stems, invalid IDs, invalid answer choices or indexes, missing citations, missing explanations, missing topics, missing structured source metadata, unsafe image IDs, unexpected counts, or new unapproved same-set duplicates.
+A separate distractor heuristic flagged questions where the keyed answer is substantially longer than the other choices:
 
-The semantic audit additionally detects exact duplicate reuse, same-option-pool answer-key conflicts, high-similarity near duplicates, and known Hazards repetition.
+| Bank | Long-keyed-answer heuristic flags |
+| --- | ---: |
+| Quiz Bank 1 | 10 |
+| Quiz Bank 2 | 9 |
+| Quiz Bank 3 | 2 |
+| Combined | 2 |
+| Workstation Hazards | 10 |
 
-## Next content phase
+These are review queues for Phase 4. They are not treated as content errors.
 
-Phase 3 should focus on source-verified correctness:
+## Phase 2: metadata normalization
 
-1. review Bank 1 known same-set duplicates;
-2. review the 35 near-duplicate pairs;
-3. review the 33 answer-length-clue flags;
-4. verify the two very short explanations;
-5. resolve Hazards Set 2 repetition only from authoritative material.
+Phase 2 changed metadata only. Question wording, answer choices, answer keys, explanations, and original citation text were preserved.
+
+### Canonical topics
+
+The shared topic taxonomy is now:
+
+- **Monitoring**
+- **Medical Gases**
+- **CO₂ & Scavenging**
+- **Airway**
+- **Hazards & Safety**
+
+Bank 1 now has complete topic metadata derived from its source citations:
+
+| Bank 1 topic | Questions |
+| --- | ---: |
+| Medical Gases | 181 |
+| Monitoring | 180 |
+| CO₂ & Scavenging | 85 |
+| Airway | 54 |
+
+The other banks were normalized to the same vocabulary, eliminating variations such as `Medical Gas`, `Medical gases`, `CO2 & scavenging`, `Workstation Hazards`, and `Hazards & safety`.
+
+### Canonical source metadata
+
+Every question now also carries a normalized `sourceTitle` while retaining its original citation text verbatim.
+
+The allowed source titles are:
+
+- **Intraoperative Assessment, Monitoring & Data Interpretation**
+- **Medical Gas Systems in Anesthesia**
+- **CO₂ Absorbents and Scavenging**
+- **Airway Equipment**
+- **Anesthesia Workstation Hazards & Safety**
+
+This gives Search, analytics, future source verification, and semantic audits a stable source field without rewriting citations.
+
+### Citation formatting
+
+Original citation strings were intentionally **not rewritten**. The banks use several historical citation styles, including slide references, PDF-page references, and lecture-title references. Reformatting those strings without checking the underlying source files would create more risk than value.
+
+Instead, `sourceTitle` now provides the normalized metadata layer while the original citation remains the authoritative display/reference text.
+
+### Difficulty metadata
+
+Static Easy/Moderate/Hard labels were intentionally not assigned in Phase 2. There is no authoritative difficulty source in the canonical content, and guessing difficulty would create subjective metadata. MBU-NAP already has real performance data that can support an empirical difficulty model later if desired.
+
+## Content-quality scorecard after Phases 1–2
+
+| Area | Status |
+| --- | --- |
+| 2,000 canonical questions structurally valid | **Complete** |
+| Missing topics | **0** |
+| Missing canonical source titles | **0** |
+| Missing citations | **0** |
+| Missing explanations | **0** |
+| Shared topic vocabulary | **Complete** |
+| Shared source-title vocabulary | **Complete** |
+| Same option pool + conflicting keyed answer | **0 found** |
+| Bank 1 same-set duplicate baseline | **21 known** |
+| Hazards Set 2 repeated-source debt | **65 repeated occurrences** |
+| Short-explanation review queue | **114 questions** |
+| Long-keyed-answer heuristic queue | **33 questions** |
+| Static difficulty labels | **Intentionally not assigned** |
+
+## Automated release gates
+
+CI now fails when canonical content has:
+
+- a missing stem;
+- an invalid or duplicate question ID within a set;
+- fewer than two answer choices;
+- blank or duplicated answer choices;
+- an invalid or repeated keyed answer index;
+- a type other than `single` or `multi`;
+- an answer-count/type mismatch;
+- no citation/source text;
+- no explanation/rationale;
+- a missing or noncanonical topic;
+- a missing or noncanonical `sourceTitle`;
+- an unsafe image identifier;
+- an unexpected question count;
+- a new same-set duplicate stem that is not in the approved baseline;
+- an exact repeated stem with the same answer-choice pool but conflicting keyed answers.
+
+The deterministic semantic audit requires no paid AI service.
+
+## Next phases
+
+Phase 3 is the source-verified duplicate/contradiction cleanup. It should not change answer keys unless the authoritative lecture/source material supports the correction.
+
+Phase 4 is question-quality refinement: explanation quality, distractors, ambiguous wording, answer-choice clues, units, and abbreviations.
+
+Phase 5 is coverage/rebuild work, especially replacing repetitive Hazards Set 2 content from authoritative material and balancing topic coverage.
