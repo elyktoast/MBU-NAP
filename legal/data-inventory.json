@@ -1,0 +1,44 @@
+{
+  "version": "2026-09-27-v3",
+  "external_providers": [
+    {
+      "name": "Supabase",
+      "host": "xqyasyambwdyhsjkftqu.supabase.co",
+      "purposes": [
+        "authentication",
+        "database",
+        "sync",
+        "privacy_requests",
+        "legal_assent",
+        "cat_calibration"
+      ]
+    },
+    {
+      "name": "GitHub Pages",
+      "purposes": [
+        "static_hosting",
+        "deployment"
+      ]
+    },
+    {
+      "name": "Google Apps Script",
+      "host": "script.google.com",
+      "purposes": [
+        "question_reports"
+      ]
+    }
+  ],
+  "intentionally_excluded": [
+    "patient_identifiers",
+    "protected_health_information",
+    "education_records",
+    "grades",
+    "government_ids",
+    "precise_geolocation",
+    "payment_card_data"
+  ],
+  "population_calibration_min_unique_learners": 25,
+  "legal_assent_retention_years": 5,
+  "sync_history_target_days": 90,
+  "privacy_request_target_years": 3
+}
