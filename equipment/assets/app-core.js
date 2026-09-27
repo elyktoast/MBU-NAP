@@ -127,7 +127,7 @@ function updateCloudChip(){
   const info=window.MBUSupabase?.status?.()||{signedIn:false,state:'unavailable'},label=b.querySelector('[data-cloud-chip-label]');
   b.dataset.state=info.state||'signed-out';
   label.textContent=!info.signedIn?'Cloud: Signed out':info.state==='syncing'?'Cloud: Syncing':info.state==='error'?'Cloud: Error':'Cloud: Synced';
-  b.title=info.signedIn?(info.email||'Cloud account')+' · '+cloudStatusText(info):'Sign in for cross-device sync';
+  b.title=info.signedIn?(info.email||'Account')+' · '+cloudStatusText(info):'Sign in for cross-device sync';
   b.setAttribute('aria-label',b.title)
 }
 async function refreshTools(){
