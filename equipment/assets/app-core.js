@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const runtime=window.MBUBuild,APP='SNAR Study Tool',LEGACY_APPS=new Set(['SNAR Study Tool','MBU-NAP']),SYNC_SCHEMA=1,DEVICE_KEY='mbu_device_id_v1',META_KEY='mbu_sync_meta_v1',errors=[],adapters=new Map(),ROOT_URL=new URL('../../',runtime.assetsBase);
+const runtime=window.MBUBuild,APP='SNAR Study Tool',SYNC_SCHEMA=1,DEVICE_KEY='mbu_device_id_v1',META_KEY='mbu_sync_meta_v1',errors=[],adapters=new Map(),ROOT_URL=new URL('../../',runtime.assetsBase);
 let manifestPromise=null,toolsReturnFocus=null;
 
 const now=()=>Date.now();
@@ -45,7 +45,7 @@ async function exportSnapshot(){
   return{app:APP,schema:SYNC_SCHEMA,createdAt:now(),deviceId:deviceId(),build:window.MBU_BUILD_ID||'',stores,meta:Object.fromEntries(keys.filter(k=>meta[k]).map(k=>[k,meta[k]]))}
 }
 function validateSnapshot(s){
-  if(!plain(s)||!LEGACY_APPS.has(s.app)||Number(s.schema)!==SYNC_SCHEMA||!plain(s.stores))throw Error('This is not a compatible SNAR Study Tool backup.');
+  if(!plain(s)||Number(s.schema)!==SYNC_SCHEMA||!plain(s.stores))throw Error('This is not a compatible SNAR Study Tool backup.');
   for(const [key,raw] of Object.entries(s.stores))if(typeof key!=='string'||typeof raw!=='string')throw Error('Backup contains an invalid save entry.');
   return s
 }
