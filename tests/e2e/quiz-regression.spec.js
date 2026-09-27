@@ -1528,6 +1528,7 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);await waitForAuth(page);
     await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('[data-admin-details]')).toBeVisible();
+    await page.locator('[data-admin-details] > summary').click();
     await expect(page.locator('[data-admin-stats]')).toContainText('Guests active ~15m');
     await expect(page.locator('[data-admin-stats]')).toContainText('CAT users');
     await expect(page.locator('[data-admin-accounts]')).toContainText('learner@example.com');
