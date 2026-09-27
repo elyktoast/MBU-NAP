@@ -245,6 +245,7 @@ async function push(snapshot){
     }});
     const row=result?.row||null;
     if(row)remoteByKey.set(key,row);
+    if(result?.applied!==false&&row)sync.acknowledgeServerWrite?.(key,row,meta);
     if(result?.applied===false&&row){
       const merged=await sync.importSnapshot(cloudSnapshot([row],s.user));
       conflictImports+=Number(merged?.imported)||0;
