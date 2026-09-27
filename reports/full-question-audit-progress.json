@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 866,
+    "audited": 966,
     "bank2": [
       {
         "id": "S2-021",
@@ -1740,6 +1740,451 @@
       },
       {
         "id": "269",
+        "disposition": "PASS"
+      },
+      {
+        "id": "270",
+        "disposition": "PASS"
+      },
+      {
+        "id": "271",
+        "disposition": "PASS"
+      },
+      {
+        "id": "272",
+        "disposition": "PASS"
+      },
+      {
+        "id": "273",
+        "disposition": "IMPROVE",
+        "changes": [
+          "changed mandatory wording to recommendation language matching the source."
+        ]
+      },
+      {
+        "id": "274",
+        "disposition": "PASS"
+      },
+      {
+        "id": "275",
+        "disposition": "PASS"
+      },
+      {
+        "id": "276",
+        "disposition": "PASS"
+      },
+      {
+        "id": "277",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed unsupported corner-of-mouth to angle-of-mandible sizing and rebuilt the item from lecture-supported OPA facts."
+        ]
+      },
+      {
+        "id": "278",
+        "disposition": "PASS"
+      },
+      {
+        "id": "279",
+        "disposition": "PASS"
+      },
+      {
+        "id": "280",
+        "disposition": "PASS"
+      },
+      {
+        "id": "281",
+        "disposition": "PASS"
+      },
+      {
+        "id": "282",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced the obese ramping target to the textbook, which explicitly supports ear/tragus-to-sternal-notch alignment."
+        ]
+      },
+      {
+        "id": "283",
+        "disposition": "PASS"
+      },
+      {
+        "id": "284",
+        "disposition": "PASS"
+      },
+      {
+        "id": "285",
+        "disposition": "PASS"
+      },
+      {
+        "id": "286",
+        "disposition": "PASS"
+      },
+      {
+        "id": "287",
+        "disposition": "PASS"
+      },
+      {
+        "id": "288",
+        "disposition": "PASS"
+      },
+      {
+        "id": "289",
+        "disposition": "PASS"
+      },
+      {
+        "id": "290",
+        "disposition": "IMPROVE",
+        "changes": [
+          "corrected absolute 'invariably' wording to the lecture's 'almost invariably' wording."
+        ]
+      },
+      {
+        "id": "291",
+        "disposition": "PASS"
+      },
+      {
+        "id": "292",
+        "disposition": "PASS"
+      },
+      {
+        "id": "293",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced the Grade IIb/III bougie indication to the textbook."
+        ]
+      },
+      {
+        "id": "294",
+        "disposition": "PASS"
+      },
+      {
+        "id": "295",
+        "disposition": "PASS"
+      },
+      {
+        "id": "296",
+        "disposition": "PASS"
+      },
+      {
+        "id": "297",
+        "disposition": "PASS"
+      },
+      {
+        "id": "298",
+        "disposition": "CORRECT",
+        "changes": [
+          "fixed a faulty multi-select key that incorrectly included normal oxyhemoglobin."
+        ]
+      },
+      {
+        "id": "299",
+        "disposition": "PASS"
+      },
+      {
+        "id": "300",
+        "disposition": "PASS"
+      },
+      {
+        "id": "301",
+        "disposition": "PASS"
+      },
+      {
+        "id": "302",
+        "disposition": "PASS"
+      },
+      {
+        "id": "303",
+        "disposition": "PASS"
+      },
+      {
+        "id": "304",
+        "disposition": "PASS"
+      },
+      {
+        "id": "305",
+        "disposition": "PASS"
+      },
+      {
+        "id": "306",
+        "disposition": "PASS"
+      },
+      {
+        "id": "308",
+        "disposition": "PASS"
+      },
+      {
+        "id": "309",
+        "disposition": "PASS"
+      },
+      {
+        "id": "310",
+        "disposition": "PASS"
+      },
+      {
+        "id": "311",
+        "disposition": "PASS"
+      },
+      {
+        "id": "312",
+        "disposition": "PASS"
+      },
+      {
+        "id": "313",
+        "disposition": "PASS"
+      },
+      {
+        "id": "314",
+        "disposition": "PASS"
+      },
+      {
+        "id": "315",
+        "disposition": "PASS"
+      },
+      {
+        "id": "316",
+        "disposition": "PASS"
+      },
+      {
+        "id": "318",
+        "disposition": "PASS"
+      },
+      {
+        "id": "319",
+        "disposition": "PASS"
+      },
+      {
+        "id": "320",
+        "disposition": "PASS"
+      },
+      {
+        "id": "321",
+        "disposition": "PASS"
+      },
+      {
+        "id": "322",
+        "disposition": "PASS"
+      },
+      {
+        "id": "323",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced the combined 0.5-ppm halogenated-agent limit to the textbook."
+        ]
+      },
+      {
+        "id": "324",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed unsupported C6-specific anatomy and used the textbook's cricoid-pressure description."
+        ]
+      },
+      {
+        "id": "325",
+        "disposition": "PASS"
+      },
+      {
+        "id": "326",
+        "disposition": "PASS"
+      },
+      {
+        "id": "327",
+        "disposition": "PASS"
+      },
+      {
+        "id": "328",
+        "disposition": "PASS"
+      },
+      {
+        "id": "329",
+        "disposition": "PASS"
+      },
+      {
+        "id": "330",
+        "disposition": "PASS"
+      },
+      {
+        "id": "331",
+        "disposition": "PASS"
+      },
+      {
+        "id": "332",
+        "disposition": "PASS"
+      },
+      {
+        "id": "334",
+        "disposition": "PASS"
+      },
+      {
+        "id": "335",
+        "disposition": "PASS"
+      },
+      {
+        "id": "336",
+        "disposition": "PASS"
+      },
+      {
+        "id": "337",
+        "disposition": "PASS"
+      },
+      {
+        "id": "339",
+        "disposition": "PASS"
+      },
+      {
+        "id": "340",
+        "disposition": "PASS"
+      },
+      {
+        "id": "341",
+        "disposition": "PASS"
+      },
+      {
+        "id": "342",
+        "disposition": "PASS"
+      },
+      {
+        "id": "343",
+        "disposition": "PASS"
+      },
+      {
+        "id": "344",
+        "disposition": "PASS"
+      },
+      {
+        "id": "345",
+        "disposition": "PASS"
+      },
+      {
+        "id": "346",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed unsupported corner-of-mouth to angle-of-mandible sizing and rebuilt the item from lecture-supported OPA facts."
+        ]
+      },
+      {
+        "id": "347",
+        "disposition": "PASS"
+      },
+      {
+        "id": "348",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced the obese ramping target to the textbook, which explicitly supports ear/tragus-to-sternal-notch alignment."
+        ]
+      },
+      {
+        "id": "349",
+        "disposition": "PASS"
+      },
+      {
+        "id": "350",
+        "disposition": "PASS"
+      },
+      {
+        "id": "351",
+        "disposition": "PASS"
+      },
+      {
+        "id": "352",
+        "disposition": "PASS"
+      },
+      {
+        "id": "353",
+        "disposition": "PASS"
+      },
+      {
+        "id": "354",
+        "disposition": "PASS"
+      },
+      {
+        "id": "355",
+        "disposition": "CORRECT",
+        "changes": [
+          "fixed a faulty multi-select key that incorrectly included normal oxyhemoglobin."
+        ]
+      },
+      {
+        "id": "356",
+        "disposition": "PASS"
+      },
+      {
+        "id": "358",
+        "disposition": "PASS"
+      },
+      {
+        "id": "359",
+        "disposition": "PASS"
+      },
+      {
+        "id": "360",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced RSI/cricoid-pressure rationale to the textbook and removed unsupported example expansion."
+        ]
+      },
+      {
+        "id": "361",
+        "disposition": "PASS"
+      },
+      {
+        "id": "362",
+        "disposition": "PASS"
+      },
+      {
+        "id": "363",
+        "disposition": "PASS"
+      },
+      {
+        "id": "364",
+        "disposition": "PASS"
+      },
+      {
+        "id": "365",
+        "disposition": "PASS"
+      },
+      {
+        "id": "366",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed unsupported 'compressing against the anterior pharyngeal wall' language and corrected the slide locator."
+        ]
+      },
+      {
+        "id": "367",
+        "disposition": "PASS"
+      },
+      {
+        "id": "368",
+        "disposition": "PASS"
+      },
+      {
+        "id": "369",
+        "disposition": "PASS"
+      },
+      {
+        "id": "370",
+        "disposition": "PASS"
+      },
+      {
+        "id": "371",
+        "disposition": "PASS"
+      },
+      {
+        "id": "372",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed the overstrong 'earliest and most sensitive' claim and grounded the ETCO2 finding to the textbook."
+        ]
+      },
+      {
+        "id": "373",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced second-generation supraglottic-airway advantages to the textbook."
+        ]
+      },
+      {
+        "id": "374",
         "disposition": "PASS"
       }
     ],
@@ -3913,117 +4358,117 @@
       }
     ]
   },
-  "remaining": 1134,
+  "remaining": 1034,
   "lastBatch": {
     "bank": "bank1.json",
     "audited": 100,
     "ids": [
-      "165",
-      "167",
-      "168",
-      "169",
-      "170",
-      "171",
-      "172",
-      "173",
-      "174",
-      "175",
-      "176",
-      "177",
-      "178",
-      "179",
-      "180",
-      "181",
-      "182",
-      "183",
-      "184",
-      "185",
-      "186",
-      "187",
-      "188",
-      "189",
-      "191",
-      "192",
-      "193",
-      "194",
-      "195",
-      "196",
-      "197",
-      "198",
-      "199",
-      "200",
-      "201",
-      "202",
-      "203",
-      "204",
-      "205",
-      "206",
-      "207",
-      "208",
-      "209",
-      "210",
-      "211",
-      "212",
-      "213",
-      "214",
-      "215",
-      "216",
-      "217",
-      "218",
-      "219",
-      "220",
-      "221",
-      "222",
-      "223",
-      "224",
-      "225",
-      "226",
-      "227",
-      "228",
-      "229",
-      "230",
-      "231",
-      "232",
-      "233",
-      "234",
-      "235",
-      "237",
-      "238",
-      "239",
-      "240",
-      "241",
-      "242",
-      "243",
-      "244",
-      "246",
-      "247",
-      "249",
-      "250",
-      "251",
-      "252",
-      "253",
-      "254",
-      "255",
-      "256",
-      "257",
-      "258",
-      "259",
-      "260",
-      "261",
-      "262",
-      "263",
-      "264",
-      "265",
-      "266",
-      "267",
-      "268",
-      "269"
+      "270",
+      "271",
+      "272",
+      "273",
+      "274",
+      "275",
+      "276",
+      "277",
+      "278",
+      "279",
+      "280",
+      "281",
+      "282",
+      "283",
+      "284",
+      "285",
+      "286",
+      "287",
+      "288",
+      "289",
+      "290",
+      "291",
+      "292",
+      "293",
+      "294",
+      "295",
+      "296",
+      "297",
+      "298",
+      "299",
+      "300",
+      "301",
+      "302",
+      "303",
+      "304",
+      "305",
+      "306",
+      "308",
+      "309",
+      "310",
+      "311",
+      "312",
+      "313",
+      "314",
+      "315",
+      "316",
+      "318",
+      "319",
+      "320",
+      "321",
+      "322",
+      "323",
+      "324",
+      "325",
+      "326",
+      "327",
+      "328",
+      "329",
+      "330",
+      "331",
+      "332",
+      "334",
+      "335",
+      "336",
+      "337",
+      "339",
+      "340",
+      "341",
+      "342",
+      "343",
+      "344",
+      "345",
+      "346",
+      "347",
+      "348",
+      "349",
+      "350",
+      "351",
+      "352",
+      "353",
+      "354",
+      "355",
+      "356",
+      "358",
+      "359",
+      "360",
+      "361",
+      "362",
+      "363",
+      "364",
+      "365",
+      "366",
+      "367",
+      "368",
+      "369",
+      "370",
+      "371",
+      "372",
+      "373",
+      "374"
     ],
     "notes": [
-      "Audited the next 100 Bank 1 questions against the lecture material and Nurse Anesthesia, 7th ed. where the lecture was incomplete.",
-      "Corrected source-fidelity problems involving first- versus second-generation supraglottic airways, cricoid pressure/RSI, NPA facts, vaporizer outlet check valves, scavenging negative-pressure relief, compliance changes with insufflation, emergence obstruction, rebreathing, MH treatment, ETT cuff pressure, N2O cylinder pressure, Eschmann introducer findings, basilar-skull-fracture airway route, Miller blade technique, sniffing position, and laser-resistant ETT cuff filling.",
-      "Re-sourced multiple items to the textbook where the original lecture citation did not contain enough detail.",
-      "No unchanged retained answer key was found to be wrong; rewritten items received new keys only where the stem/options were intentionally corrected."
+      "Audited the next 100 Bank 1 questions against the course lectures and Nurse Anesthesia, 7th ed. where the lecture did not support the needed detail.",
+      "Corrected duplicate unsupported patterns that had persisted in later Bank 1 questions, including OPA sizing, obese ramping citations, Grade IIb/III bougie use, C6-specific cricoid anatomy, second-generation SGA sourcing, and overstrong MH ETCO2 wording.",
+      "Fixed two faulty pulse-oximetry multi-select keys that incorrectly treated normal oxyhemoglobin as a dyshemoglobin causing falsely elevated saturation.",
+      "Re-sourced the combined 0.5 ppm halogenated-agent-with-N2O limit to Nurse Anesthesia 7e as requested."
     ]
   },
   "lastCorrection": {
