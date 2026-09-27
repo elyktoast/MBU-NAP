@@ -728,6 +728,14 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ['data-cloud-devices-details','data-cloud-history-details','renderCloudDevices','renderCloudHistory'])if(!core.includes(token))fail('Cloud management UI missing '+token);
 }
 
+// Continue Studying must deep-link into the saved canonical set and preserve Hazards topic metadata.
+{
+ const quiz=read('equipment/assets/quiz-engine.js'),dash=read('equipment/assets/exam-dashboard.js'),hazards=read('equipment/assets/hazards-standard-engine.js');
+ for(const token of ["params.get('set')","SETS[requested])startSet(requested)"])if(!quiz.includes(token))fail('Canonical Continue Studying deep link missing '+token);
+ if(!dash.includes("href:b.page+'?set='+encodeURIComponent(set)"))fail('Exam dashboard does not deep-link saved canonical sets');
+ if(!hazards.includes("topic:q.topic||q.lec||q.concept||'Workstation Hazards'"))fail('Standard Hazards loader drops topic metadata');
+}
+
 // Semantic content checking is mandatory in quality CI.
 {
  const pkg=JSON.parse(read('package.json')),ci=read('.github/workflows/ci.yml');
