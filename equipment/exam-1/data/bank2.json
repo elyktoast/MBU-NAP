@@ -8199,8 +8199,8 @@
       "answer": [
         2
       ],
-      "explanation": "Normal carbon dioxide absorption is exothermic and produces heat.",
-      "citation": "CO₂ & Scavenging · 3",
+      "explanation": "Carbon dioxide absorption by hydrated absorbent is exothermic. Formation of carbonate and water releases heat, so a canister becoming warm during active use is an expected consequence of the chemical reaction.",
+      "citation": "CO₂ & Scavenging · Slides 2-3",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -8214,7 +8214,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 3"
+      "sourceLocator": "Slides 2-3"
     },
     {
       "id": "S3-059",
@@ -8520,7 +8520,7 @@
       "answer": [
         1
       ],
-      "explanation": "Rebreathing after CO₂ absorption conserves exhaled heat and humidity.",
+      "explanation": "After carbon dioxide is removed, rebreathing allows the patient to retain some of the heat and humidity in exhaled gas rather than discarding all of it. The lecture notes that both benefits increase as fresh gas flow decreases.",
       "citation": "CO₂ & Scavenging · 8",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -8775,8 +8775,8 @@
       "answer": [
         3
       ],
-      "explanation": "Through-the-wall disposal is listed as a passive disposal method.",
-      "citation": "CO₂ & Scavenging · 21",
+      "explanation": "A through-the-wall conduit that carries waste anesthetic gas outdoors without suction is a passive disposal route. Active systems instead use wall suction or a dedicated evacuation system.",
+      "citation": "CO₂ & Scavenging · Slide 21",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -9126,7 +9126,7 @@
       "answer": [
         3
       ],
-      "explanation": "NPAs are generally better tolerated than OPAs in awake patients.",
+      "explanation": "A nasopharyngeal airway is generally better tolerated than an oropharyngeal airway in an awake or lightly sedated patient because it is less likely to stimulate gagging from the oropharynx.",
       "citation": "Airway Equipment · 6",
       "topic": "Airway",
       "imageSvg": null,
@@ -9157,7 +9157,7 @@
       "answer": [
         3
       ],
-      "explanation": "The lecture recommends water-based lubricant for NPA insertion.",
+      "explanation": "The lecture recommends a water-based lubricant or local anesthetic for nasopharyngeal airway insertion. Petroleum-based products are not the listed choice.",
       "citation": "Airway Equipment · 6",
       "topic": "Airway",
       "imageSvg": null,
@@ -9319,7 +9319,7 @@
       "answer": [
         1
       ],
-      "explanation": "The laser-resistant tube body is designed to reduce ignition risk, but the cuff remains vulnerable to laser perforation. For that reason, the cuff is typically filled with saline or water, often with dye to make rupture easier to detect.",
+      "explanation": "Laser-resistant endotracheal tubes reduce ignition risk in the tube body, but the cuff is not laser resistant. The lecture recommends filling the cuff with saline or water, often with dye, so perforation can be recognized and combustion risk reduced.",
       "citation": "Airway Equipment · 9",
       "topic": "Airway",
       "imageSvg": null,
@@ -9416,7 +9416,7 @@
       "answer": [
         3
       ],
-      "explanation": "A Miller blade is straight and is advanced to directly lift the epiglottis. A Macintosh blade is curved and sits in the vallecula, where tension on the glossoepiglottic ligament lifts the epiglottis indirectly.",
+      "explanation": "The Miller is a straight blade designed to directly lift or entrap the epiglottis. The Macintosh blade is curved and sits in the vallecula, where it elevates the epiglottis indirectly by tensioning the glossoepiglottic ligament.",
       "citation": "Airway Equipment · 11",
       "topic": "Airway",
       "imageSvg": null,
@@ -9516,7 +9516,7 @@
         4,
         5
       ],
-      "explanation": "The lecture names needle, percutaneous, and surgical cricothyrotomy.",
+      "explanation": "The lecture lists three cricothyrotomy approaches: needle, percutaneous, and surgical. The other listed airway techniques are not cricothyrotomy methods.",
       "citation": "Airway Equipment · 15",
       "topic": "Airway",
       "imageSvg": null,
@@ -10273,16 +10273,16 @@
       "type": "single",
       "stem": "The NIBP cuff bladder wraps only halfway around the upper arm. Which concern is most appropriate?",
       "options": [
-        "The cuff is too long for recommended sizing",
-        "The cuff is too short for recommended sizing",
-        "The cuff width must be reduced to 20%",
-        "The cuff should be moved to the forearm regardless of fit"
+        "The bladder is too short for recommended cuff sizing",
+        "The bladder is too long for recommended cuff sizing",
+        "The cuff should be moved to the forearm regardless of arm size",
+        "The cuff width should be reduced to about 20% of arm circumference"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "The lecture recommends a bladder length of about 80% of arm circumference.",
-      "citation": "Monitoring · 61",
+      "explanation": "A correctly sized NIBP cuff has a bladder width of about 40% of arm circumference and a bladder length of about 80%, covering roughly 75% to 100% of the arm. A bladder that wraps only halfway around the arm is therefore too short.",
+      "citation": "Monitoring · Slide 62",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -10296,7 +10296,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 61"
+      "sourceLocator": "Slide 62"
     },
     {
       "id": "S4-024",
@@ -10366,16 +10366,16 @@
       "type": "single",
       "stem": "An arterial waveform has marked ringing and an exaggerated systolic peak. Which setup problem is most likely?",
       "options": [
-        "Complete catheter occlusion",
-        "Transducer placed too high",
-        "Underdamping",
-        "Overdamping"
+        "Underdamping of the pressure-monitoring system",
+        "Overdamping of the pressure-monitoring system",
+        "Complete catheter occlusion with loss of pulsatility",
+        "A transducer positioned above the phlebostatic reference level"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "Underdamping produces resonant ringing and overestimation of systolic pressure.",
-      "citation": "Monitoring · 69",
+      "explanation": "Underdamping amplifies resonant oscillations, creating ringing and an exaggerated systolic peak that tends to overestimate systolic pressure. Overdamping blunts the waveform and tends to underestimate systolic pressure.",
+      "citation": "Monitoring · Slide 70",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -10389,7 +10389,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 69"
+      "sourceLocator": "Slide 70"
     },
     {
       "id": "S4-027",
@@ -10471,8 +10471,8 @@
       "answer": [
         1
       ],
-      "explanation": "The radial artery is described as the most common arterial cannulation site.",
-      "citation": "Monitoring · 68",
+      "explanation": "The radial artery is the most commonly used adult arterial cannulation site because it is accessible and has collateral blood supply. Other sites include the brachial, axillary, femoral, and dorsalis pedis arteries.",
+      "citation": "Monitoring · Slide 69",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -10486,7 +10486,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 68"
+      "sourceLocator": "Slide 69"
     },
     {
       "id": "S4-030",
@@ -10753,8 +10753,8 @@
       "answer": [
         1
       ],
-      "explanation": "The Bodok washer forms the pressure seal between the cylinder valve and yoke.",
-      "citation": "Medical Gas Systems in Anesthesia · 18",
+      "explanation": "The Bodok washer forms the gas-tight seal between the E-cylinder valve outlet and the yoke nipple. If the correct cylinder is mounted but gas leaks at the yoke connection, the washer and seating of the connection should be inspected.",
+      "citation": "Medical Gas Systems in Anesthesia · Slide 21",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -10768,7 +10768,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 18"
+      "sourceLocator": "Slide 21"
     },
     {
       "id": "S4-039",
@@ -10850,8 +10850,8 @@
       "answer": [
         1
       ],
-      "explanation": "The lecture describes pipeline pressure at approximately 50–55 psi.",
-      "citation": "Medical Gas Systems in Anesthesia · 33",
+      "explanation": "Hospital pipeline gas reaches the anesthesia machine at approximately 50–55 psi. That pressure is intentionally higher than the regulated cylinder supply of about 45 psi, so the pipeline is used preferentially when both are connected.",
+      "citation": "Medical Gas Systems in Anesthesia · Slides 33-34",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -10865,7 +10865,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 33"
+      "sourceLocator": "Slides 33-34"
     },
     {
       "id": "S4-042",
@@ -11029,18 +11029,18 @@
       "id": "S4-047",
       "set": 4,
       "type": "single",
-      "stem": "A bobbin-type float is used. At which point should the flow be read?",
+      "stem": "When reading a traditional variable-area flowmeter, at what part of the indicator should the flow be read?",
       "options": [
-        "Center of the bobbin",
-        "Top of the flow tube",
-        "Top of the bobbin",
-        "Bottom of the bobbin"
+        "At the widest part of the indicator",
+        "At the narrowest part of the indicator",
+        "At the bottom of the flowmeter tube",
+        "At the midpoint of the calibrated scale regardless of float position"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "A bobbin or skirted float is read at its upper edge because that point corresponds to the calibrated flow scale. Ball floats are handled differently and are read at their center.",
-      "citation": "Medical Gas Systems in Anesthesia · 42",
+      "explanation": "The lecture gives the general rule to read flow at the widest part of the indicator float. This avoids relying on float-specific conventions that were not explicitly taught in the lecture.",
+      "citation": "Medical Gas Systems in Anesthesia · Slide 43",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -11054,7 +11054,7 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 42"
+      "sourceLocator": "Slide 43"
     },
     {
       "id": "S4-048",
@@ -11391,8 +11391,8 @@
       "answer": [
         3
       ],
-      "explanation": "The normal chemical reaction of CO₂ absorption releases heat.",
-      "citation": "CO₂ & Scavenging · 3",
+      "explanation": "Carbon dioxide absorption in hydrated absorbent is an exothermic neutralization reaction. A canister warming during use therefore reflects heat released by the absorption chemistry rather than heat supplied by the vaporizer or pipeline.",
+      "citation": "CO₂ & Scavenging · Slides 2-3",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -11406,24 +11406,24 @@
         "citationFormat": "slides"
       },
       "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 3"
+      "sourceLocator": "Slides 2-3"
     },
     {
       "id": "S4-059",
       "set": 4,
       "type": "single",
-      "stem": "Which substance is produced during normal hydroxide neutralization of carbonic acid in the absorber?",
+      "stem": "When carbonic acid reacts with sodium hydroxide in soda lime, which product is formed before later reaction with calcium hydroxide?",
       "options": [
-        "Carbonate",
-        "Volatile anesthetic",
-        "Oxygen",
-        "Nitrous oxide"
+        "Sodium carbonate",
+        "Calcium oxide",
+        "Nitrous oxide",
+        "Molecular oxygen"
       ],
       "answer": [
         0
       ],
-      "explanation": "The reaction ultimately forms carbonate and water while releasing heat.",
-      "citation": "CO₂ & Scavenging · 3",
+      "explanation": "Carbon dioxide first combines with water to form carbonic acid. Carbonic acid then reacts with sodium hydroxide to form sodium carbonate and water; the sodium carbonate subsequently reacts with calcium hydroxide to form calcium carbonate and regenerate sodium hydroxide.",
+      "citation": "CO₂ & Scavenging · Slide 3",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -11550,8 +11550,8 @@
       "answer": [
         3
       ],
-      "explanation": "Smaller granules increase surface area but also increase resistance.",
-      "citation": "CO₂ & Scavenging · 5",
+      "explanation": "Smaller absorbent granules provide more surface area for carbon dioxide absorption, but making them too small narrows gas pathways and increases resistance to flow. The 4–8 mesh size balances absorptive surface area with acceptable breathing resistance.",
+      "citation": "CO₂ & Scavenging · Slide 5",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -11711,7 +11711,7 @@
         2,
         3
       ],
-      "explanation": "After carbon dioxide is removed, low-flow rebreathing conserves both heat and humidity from exhaled gas. These benefits become more important as fresh gas flow decreases because less conditioned gas is discarded.",
+      "explanation": "Once carbon dioxide is removed, low-flow rebreathing preserves part of the heat and humidity contained in exhaled gas. These conditioning benefits improve as fresh gas flow decreases because less warmed, humidified gas is discarded.",
       "citation": "CO₂ & Scavenging · 8",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -11963,8 +11963,8 @@
       "answer": [
         3
       ],
-      "explanation": "Wall suction or a dedicated evacuation pump provides active waste-gas disposal.",
-      "citation": "CO₂ & Scavenging · 21",
+      "explanation": "Wall suction or a dedicated waste-gas evacuation pump makes the disposal route active because negative pressure is used to move waste gas. Passive disposal relies on room ventilation or a through-the-wall conduit without suction.",
+      "citation": "CO₂ & Scavenging · Slide 21",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -12090,8 +12090,8 @@
       "answer": [
         3
       ],
-      "explanation": "The sniffing position adds occipital elevation to atlanto-occipital extension.",
-      "citation": "Airway Equipment · 3",
+      "explanation": "The sniffing position combines elevation of the occiput with extension of the head at the atlanto-occipital joint. Simple head extension lacks the added occipital elevation.",
+      "citation": "Airway Equipment · Slide 3",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
