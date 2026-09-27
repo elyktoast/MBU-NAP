@@ -329,7 +329,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
   if(!exists('supabase/functions/delete-account/index.ts')||!read('supabase/functions/delete-account/index.ts').includes('auth.admin.deleteUser(user.id)'))fail('Account deletion Edge Function source is missing');
   if(!exists('supabase/migrations/20260927044154_remove_obsolete_account_delete_rpc.sql'))fail('Obsolete account deletion RPC removal migration is missing');
   if(!exists('supabase/migrations/20260927050029_add_privacy_request_appeals.sql')||!read('supabase/migrations/20260927050029_add_privacy_request_appeals.sql').includes("'appeal'"))fail('Privacy request appeal migration is missing');
-  for(const p of ['index.html','equipment/index.html','equipment/exam-1/index.html','equipment/exam-1/studio.html','privacy.html','terms.html','README.md','CONTRIBUTING.md','reporting/apps-script/Code.gs','reporting/apps-script/SETUP.md']){
+  for(const p of ['index.html','equipment/index.html','equipment/exam-1/index.html','equipment/exam-1/studio.html','privacy.html','terms.html','README.md','CONTRIBUTING.md','reporting/apps-script/Code.gs','reporting/apps-script/SETUP.md','tests/e2e/quiz-regression.spec.js']){
     const src=read(p);
     if(/Mary Baldwin|MBU-NAP|MBU Nurse Anesthesia Program|Professor\b|\bInstructor\b|Dr\.\s+[A-Z][a-z]+/i.test(src))fail(p+': obsolete institutional/faculty branding remains');
   }
