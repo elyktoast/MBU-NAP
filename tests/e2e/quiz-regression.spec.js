@@ -1497,36 +1497,23 @@ test.describe('canonical quiz regression', () => {
     expect(await page.locator('#mbuNavigator button').count()).toBe(100);
   });
 
-  test('Global nav keeps Workstation as one destination and shows builder attribution', async ({ page }) => {
+  test('Global nav keeps primary destinations compact and groups quiz banks in one selector', async ({ page }) => {
     await page.goto(exam + '/hazards-100.html');await page.evaluate(() => MBUPageReady);
-    const quick=page.locator('.mbu-global-nav__quick a');
-    await expect(quick).toHaveCount(6);
-    await expect(page.locator('.mbu-global-nav__quick')).toContainText('ChatGPT');
-    await expect(page.locator('.mbu-global-nav__quick')).toContainText('Gemini');
-    await expect(page.locator('.mbu-global-nav__quick')).toContainText('Claude');
-    await expect(page.locator('.mbu-global-nav__quick')).not.toContainText('Hazards 1');
-    await expect(page.locator('.mbu-global-nav__quick')).not.toContainText('Challenge');
-    await expect(page.locator('.mbu-global-nav__quick a[aria-current="page"]')).toContainText('Hazards');
+    await expect(page.locator('.mbu-global-nav__brand')).toHaveText('SRNA Study Tool');
+    await expect(page.locator('.mbu-global-nav__primary-link')).toHaveCount(2);
+    await expect(page.locator('.mbu-global-nav__primary')).toContainText('Equipment');
+    await expect(page.locator('.mbu-global-nav__primary')).toContainText('Study Studio');
     const options=await page.locator('.mbu-global-nav__picker option').allTextContents();
+    expect(options).toEqual(['Hazards','Quiz Bank 1','Quiz Bank 2','Quiz Bank 3','Combined','Workstation Hazards']);
     expect(options.some(x=>/Practice Set|Challenge Set/.test(x))).toBe(false);
-
-    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
-    await expect(page.locator('#dashboard')).toContainText('Built with ChatGPT');
-    await page.goto(exam + '/quiz-bank-2.html');await page.evaluate(() => MBUPageReady);
-    await expect(page.locator('#dashboard')).toContainText('Built with Gemini');
-    await page.goto(exam + '/quiz-bank-3.html');await page.evaluate(() => MBUPageReady);
-    await expect(page.locator('#dashboard')).toContainText('Built with Claude');
-    await page.goto(exam + '/combined.html');await page.evaluate(() => MBUPageReady);
-    await expect(page.locator('#dashboard')).toContainText('Built with Claude');
-    await page.goto(exam + '/hazards.html');await page.evaluate(() => MBUPageReady);
-    await expect(page.locator('#dashboard')).toContainText('Built with Claude');
-    await page.goto(exam + '/studio.html');await waitForStudio(page);
-    await expect(page.locator('#home')).not.toContainText('Built with Claude');
+    await expect(page.locator('.mbu-global-nav__search')).toHaveText('Search');
+    await expect(page.locator('.mbu-global-nav__cloud')).toHaveText(/Account/);
+    await expect(page.locator('.mbu-global-nav__tools')).toHaveText('Tools');
   });
 
   test('Header cloud status opens account controls without any secret browser credential', async ({ page }) => {
     await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
-    await expect(page.locator('.mbu-global-nav__cloud')).toContainText('Cloud: Signed out');
+    await expect(page.locator('.mbu-global-nav__cloud')).toContainText('Account');
     await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('#mbu-account-panel')).toBeVisible();
     await expect(page.locator('[data-cloud-signin]')).toBeVisible();
@@ -1566,7 +1553,7 @@ test.describe('canonical quiz regression', () => {
     await page.locator('[data-cloud-password]').fill('correct horse battery staple');
     await page.locator('[data-cloud-signin]').click();
     await expect(page.locator('[data-cloud-signed-in]')).toBeVisible();
-    await expect(page.locator('.mbu-global-nav__cloud')).toContainText('Cloud: Synced');
+    await expect(page.locator('.mbu-global-nav__cloud')).toContainText('Account');
     await page.locator('[data-account-close]').click();
     await page.locator('#cards button').filter({hasText:/start|continue/i}).first().click();
     await page.locator('#options .opt').first().click();
