@@ -119,6 +119,11 @@ function checkCanonicalNewQuizBanks(){
   for(const bit of ['id="dashboard"','id="cards"','id="overall"','id="quiz"','id="set-badge"','id="mbuFlagBtn"','>Report</button>','>Navigator</button>','mbu-return','id="completed"','id="total"','id="score"','id="missed"','mbu-crossout-hint','id="multi-submit-row"','id="submit-multi"','id="explain"','id="citation"','id="prev"','id="next"',"runtime.loadStyle('bank1-quiz-ui.css')","runtime.loadScript('studio-sync.js')","runtime.loadScript('navigator.js')","runtime.loadScript('calculator.js')","runtime.loadScript('quiz-engine.js')","runtime.loadScript('auto-update.js')"])if(!renderer.includes(bit))fail('Canonical bank renderer is missing '+bit);
   for(const bit of ['MBUNavigator.button','MBUCalculator?.besideFlag()','goDashboard()','Submit Selections (','lastSaved'])if(!engine.includes(bit))fail('Canonical quiz engine: missing shared behavior '+bit);
 }
+{
+  const currentBrandFiles=['index.html','README.md','CONTRIBUTING.md','equipment/assets/app-core.js','equipment/assets/build-bootstrap.js','equipment/assets/site-nav.js','equipment/assets/studio-loader.js','docs/SYNC.md','docs/RELEASE_1_0.md'];
+  for(const p of currentBrandFiles)if(read(p).includes('SNAR Study Tool'))fail(p+': obsolete SNAR Study Tool branding remains');
+}
+
 function checkIndependentBranding(){
   const publicFiles=['index.html','privacy.html','terms.html','equipment/index.html','equipment/exam-1/index.html','equipment/exam-1/studio.html','README.md','CONTRIBUTING.md','docs/ARCHITECTURE.md','docs/CONTENT_AUDIT.md','docs/CONTENT_PHASE1_AUDIT.md','docs/CONTENT_QUALITY_PHASE1.md','docs/QUESTION_GENERATION.md','docs/RELEASE_1_0.md','docs/STUDY_INTELLIGENCE.md','docs/SYNC.md','docs/quiz-bank-standard.md','reporting/apps-script/SETUP.md','reporting/apps-script/Code.gs'].filter(exists);
   const forbidden=[/Mary Baldwin/i,/MBU-NAP/i,/MBU Nurse Anesthesia Program/i];
@@ -127,7 +132,7 @@ function checkIndependentBranding(){
     const payload=JSON.parse(read(p)),qs=Array.isArray(payload)?payload:(payload.questions||[]);for(const q of qs){for(const value of [q.sourceTitle,q.sourceLocator,q.src,q.citation])if(typeof value==='string'&&/(?:\bProfessor\b|\bInstructor\b|\bProf\.\s|\bDr\.\s+[A-Z])/i.test(value))fail(p+': faculty-identifying source label remains on '+String(q.uid||q.id||'question'))}
   }
   const home=read('index.html'),privacy=read('privacy.html'),terms=read('terms.html'),core=read('equipment/assets/app-core.js');
-  for(const token of ['SNAR Study Tool','Independent educational resource','privacy.html','terms.html'])if(!home.includes(token))fail('Home legal/branding surface missing '+token);
+  for(const token of ['SRNA Study Tool','Independent educational resource','privacy.html','terms.html'])if(!home.includes(token))fail('Home legal/branding surface missing '+token);
   for(const token of ['De-identification commitment','does not sell personal data','at least 18 years old'])if(!privacy.includes(token))fail('Privacy notice missing '+token);
   for(const token of ['Independent educational resource','Adaptive Mode','at least 18 years old'])if(!terms.includes(token))fail('Terms missing '+token);
   for(const token of ['data-cloud-consent','Delete account & data','Privacy Notice','Terms of Use'])if(!core.includes(token))fail('Account legal controls missing '+token);
@@ -217,7 +222,7 @@ checkHazardNavigators();
 
 {
  const nav=read('equipment/assets/site-nav.js');
- if(!nav.includes("sessionStorage.removeItem('mbu_build_manifest_v1')")||!nav.includes("u.searchParams.set('_mbu_refresh',Date.now().toString())")||!nav.includes('location.replace(u.href)'))fail('Site nav: SNAR Study Tool brand does not perform a cache-busting refresh');
+ if(!nav.includes("sessionStorage.removeItem('mbu_build_manifest_v1')")||!nav.includes("u.searchParams.set('_mbu_refresh',Date.now().toString())")||!nav.includes('location.replace(u.href)'))fail('Site nav: SRNA Study Tool brand does not perform a cache-busting refresh');
 }
 function checkCanonicalSubmission(){
   const engine=read('equipment/assets/quiz-engine.js');
