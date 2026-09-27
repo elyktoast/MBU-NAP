@@ -1935,7 +1935,7 @@ test.describe('canonical quiz regression', () => {
     await page.locator('#adaptiveToggle').click();
     await expect(page.locator('#adaptiveToggle')).not.toBeChecked();
     await expect(page.locator('#mbu-account-panel')).toBeVisible();
-    await expect(page.locator('#mbu-account-panel')).toContainText('Sync progress across devices and access Adaptive Mode.');
+    await expect(page.locator('#mbu-account-panel')).toContainText('Sync progress and access Adaptive Mode.');
     await page.locator('[data-account-close]').click();
     const selected=await page.evaluate(()=>{
       const first=document.querySelector('#sourceChecks input[type=checkbox]');
