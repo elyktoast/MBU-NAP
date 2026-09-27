@@ -117,3 +117,7 @@ Population calibration is still early by design. At the Phase 3 baseline, no ite
 ## External Supabase setting
 
 Supabase Security Advisor still reports leaked-password protection as disabled. This is an Auth project setting rather than repository code, and the connected Supabase tools available to this project do not expose a control to enable it. The setting should be enabled in Supabase Auth settings when available; the repository must not claim it is enabled until the advisor confirms it.
+
+## Unified content + performance review queue
+
+The operator question-analytics workspace now merges the deterministic source/content review queue with live aggregate calibration and question-report signals. Unmeasured content candidates remain visible before population data matures, while performance-only alerts still require at least 25 unique learners. The queue never edits audited question content automatically.
