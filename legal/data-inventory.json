@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-27-v3",
+  "version": "2026-09-27-v4",
   "external_providers": [
     {
       "name": "Supabase",
@@ -10,7 +10,8 @@
         "sync",
         "privacy_requests",
         "legal_assent",
-        "cat_calibration"
+        "cat_calibration",
+        "guest_session_metrics"
       ]
     },
     {
@@ -40,5 +41,16 @@
   "population_calibration_min_unique_learners": 25,
   "legal_assent_retention_years": 5,
   "sync_history_target_days": 90,
-  "privacy_request_target_years": 3
+  "privacy_request_target_years": 3,
+  "guest_session": {
+    "identifier": "random sessionStorage UUID",
+    "fields": [
+      "session_id",
+      "started_at",
+      "last_seen_at"
+    ],
+    "retention_hours": 24,
+    "admin_visibility": "aggregate counts only",
+    "persistent_cross_session": false
+  }
 }
