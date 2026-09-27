@@ -52,6 +52,8 @@ async function api(path,opts={}){
 const s=await validSession();if(!s?.access_token)throw Error('Sign in to use cloud sync.');
 return raw(path,{...opts,token:s.access_token})
 }
+const writeState=(key,payload,meta,expected)=>api('/rest/v1/rpc/mbu_sync_write_state',{method:'POST',body:{p_store_key:key,p_payload:payload,p_device_id:String(meta.deviceId||sync.deviceId()),p_client_revision:Number(meta.revision)||0,p_client_updated_at:new Date(Number(meta.updatedAt)||Date.now()).toISOString(),p_expected_server_revision:Number(expected)||0}});
+const adminRpc=(name,body={})=>{requireLegal();return api('/rest/v1/rpc/'+name,{method:'POST',body})};
 async function refreshLegalAcceptance(){
 const s=await validSession();if(!s?.access_token){legalAccepted=null;return false}
 try{
@@ -176,11 +178,7 @@ const versions=await api('/rest/v1/mbu_sync_versions?select=id,store_key,payload
 if(!version)throw Error('That history version is no longer available.');
 const rows=await api('/rest/v1/mbu_sync_state?select=store_key,server_revision,client_revision&user_id=eq.'+encodeURIComponent(s.user.id)+'&store_key=eq.'+encodeURIComponent(version.store_key)+'&limit=1'),current=rows?.[0];
 if(!current)throw Error('Current cloud state for this study area was not found.');
-const result=await api('/rest/v1/rpc/mbu_sync_write_state',{method:'POST',body:{
-p_store_key:version.store_key,p_payload:version.payload,p_device_id:sync.deviceId(),
-p_client_revision:(Number(current.client_revision)||0)+1,p_client_updated_at:new Date().toISOString(),
-p_expected_server_revision:Number(current.server_revision)||0
-}});
+const restoreMeta={deviceId:sync.deviceId(),revision:(Number(current.client_revision)||0)+1,updatedAt:Date.now()},result=await writeState(version.store_key,version.payload,restoreMeta,current.server_revision);
 if(result?.applied===false)throw Error('Cloud progress changed while restoring. Refresh history and try again.');
 const restoredRow=result?.row||{store_key:version.store_key,payload:version.payload,device_id:sync.deviceId(),client_revision:(Number(current.client_revision)||0)+1,client_updated_at:new Date().toISOString(),server_revision:(Number(current.server_revision)||0)+1};
 remoteByKey.set(version.store_key,restoredRow);
@@ -207,14 +205,7 @@ for(const [key,rawValue] of Object.entries(snapshot.stores||{})){
 let payload;try{payload=JSON.parse(rawValue)}catch{continue}
 const meta=snapshot.meta?.[key]||{revision:0,updatedAt:snapshot.createdAt,deviceId:snapshot.deviceId,serverRevision:0},remote=remoteByKey.get(key);
 if(equivalent(remote,payload,meta))continue;
-const result=await api('/rest/v1/rpc/mbu_sync_write_state',{method:'POST',body:{
-p_store_key:key,
-p_payload:payload,
-p_device_id:String(meta.deviceId||snapshot.deviceId),
-p_client_revision:Number(meta.revision)||0,
-p_client_updated_at:new Date(Number(meta.updatedAt)||snapshot.createdAt||Date.now()).toISOString(),
-p_expected_server_revision:Number(remote?.server_revision??meta.serverRevision??0)||0
-}});
+const writeMeta={...meta,deviceId:meta.deviceId||snapshot.deviceId,updatedAt:Number(meta.updatedAt)||snapshot.createdAt||Date.now()},result=await writeState(key,payload,writeMeta,remote?.server_revision??meta.serverRevision??0);
 const row=result?.row||null;
 if(row)remoteByKey.set(key,row);
 if(result?.applied!==false&&row)sync.acknowledgeServerWrite?.(key,row,meta);
@@ -222,11 +213,7 @@ if(result?.applied===false&&row){
 const merged=await sync.importSnapshot(cloudSnapshot([row],s.user));
 conflictImports+=Number(merged?.imported)||0;
 if(!merged?.imported){
-  const retry=await api('/rest/v1/rpc/mbu_sync_write_state',{method:'POST',body:{
-  p_store_key:key,p_payload:payload,p_device_id:String(meta.deviceId||snapshot.deviceId),
-  p_client_revision:Number(meta.revision)||0,p_client_updated_at:new Date(Number(meta.updatedAt)||snapshot.createdAt||Date.now()).toISOString(),
-  p_expected_server_revision:Number(row.server_revision)||0
-  }});
+  const retry=await writeState(key,payload,writeMeta,row.server_revision);
   const retryRow=retry?.row||null;if(retryRow)remoteByKey.set(key,retryRow);
   if(retry?.applied===false)throw Error('Cloud progress changed again while syncing. Retry sync.');
   if(retryRow)sync.acknowledgeServerWrite?.(key,retryRow,meta)
@@ -266,16 +253,14 @@ stopAutoSync();if(!session()||legalAccepted!==true||accountAccess!=='active')ret
 autoSyncTimer=setInterval(()=>{if(session()&&legalAccepted===true&&accountAccess==='active'&&navigator.onLine)fullSync({reloadOnImport:true}).catch(()=>{})},AUTO_SYNC_INTERVAL)
 }
 async function adminStatus(){const s=await validSession();if(!s?.access_token||legalAccepted!==true)return{is_admin:false,role:null};return await api('/rest/v1/rpc/snar_admin_status',{method:'POST',body:{}})}
-async function adminSystemSummary(){requireLegal();return await api('/rest/v1/rpc/snar_admin_system_summary',{method:'POST',body:{}})}
-async function adminAccounts(){requireLegal();return await api('/rest/v1/rpc/snar_admin_accounts',{method:'POST',body:{}})}
-async function adminSetAccountAccess(userId,statusValue){requireLegal();return await api('/rest/v1/rpc/snar_admin_set_account_access',{method:'POST',body:{p_user_id:String(userId),p_status:String(statusValue)}})}
-async function adminDeleteAccount(userId){requireLegal();return await api('/rest/v1/rpc/snar_admin_delete_account',{method:'POST',body:{p_user_id:String(userId)}})}
-async function adminLegalAcceptances(){requireLegal();return await api('/rest/v1/rpc/snar_admin_legal_acceptances',{method:'POST',body:{}})}
-async function adminPrivacyRequests(){requireLegal();return await api('/rest/v1/rpc/snar_admin_privacy_requests',{method:'POST',body:{}})}
-async function adminUpdatePrivacyRequest(id,statusValue){
-requireLegal();return await api('/rest/v1/rpc/snar_admin_update_privacy_request',{method:'POST',body:{p_id:Number(id),p_status:String(statusValue||'')}})
-}
-async function adminRetentionCleanup(){requireLegal();return await api('/rest/v1/rpc/snar_admin_retention_cleanup',{method:'POST',body:{}})}
+async function adminSystemSummary(){return adminRpc('snar_admin_system_summary')}
+async function adminAccounts(){return adminRpc('snar_admin_accounts')}
+async function adminSetAccountAccess(userId,statusValue){return adminRpc('snar_admin_set_account_access',{p_user_id:String(userId),p_status:String(statusValue)})}
+async function adminDeleteAccount(userId){return adminRpc('snar_admin_delete_account',{p_user_id:String(userId)})}
+async function adminLegalAcceptances(){return adminRpc('snar_admin_legal_acceptances')}
+async function adminPrivacyRequests(){return adminRpc('snar_admin_privacy_requests')}
+async function adminUpdatePrivacyRequest(id,statusValue){return adminRpc('snar_admin_update_privacy_request',{p_id:Number(id),p_status:String(statusValue||'')})}
+async function adminRetentionCleanup(){return adminRpc('snar_admin_retention_cleanup')}
 function status(){const s=session();return{signedIn:!!s?.access_token,email:s?.user?.email||'',state:lastState,lastSyncAt,user:s?.user||null,recoveryMode,legalAccepted,accessStatus:accountAccess,termsVersion:LEGAL_TERMS_VERSION,privacyVersion:LEGAL_PRIVACY_VERSION,autoSyncIntervalMs:AUTO_SYNC_INTERVAL,nextAutoSyncAt:s?.access_token&&legalAccepted===true&&accountAccess==='active'?(lastSyncAt||Date.now())+AUTO_SYNC_INTERVAL:0}}
 window.addEventListener('focus',()=>{if(session()&&legalAccepted===true&&accountAccess==='active'&&Date.now()-lastSyncAt>120000)fullSync().catch(()=>{})});
 window.addEventListener('online',()=>{if(session()&&legalAccepted===true&&accountAccess==='active')fullSync().catch(()=>{})});
