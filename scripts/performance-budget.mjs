@@ -17,7 +17,9 @@ const budgets={
   'equipment/exam-1/hazards-bank-3.html':8000,
   'equipment/exam-1/hazards-harder.html':8000,
   'equipment/assets/build-bootstrap.js':4500,
-  'equipment/assets/app-core.js':18000,
+  'equipment/assets/app-core.js':24000,
+  'equipment/assets/supabase-config.js':1000,
+  'equipment/assets/supabase-sync.js':14000,
   'equipment/assets/app-core.css':9000,
   'equipment/assets/canonical-bank-page.js':8000,
   'equipment/assets/quiz-engine.js':30000,
@@ -61,6 +63,10 @@ if(!read('equipment/assets/build-bootstrap.js').includes("loadScript('app-core.j
 const quizEngine=read('equipment/assets/quiz-engine.js'),appCore=read('equipment/assets/app-core.js');
 if(!quizEngine.includes('function updateSelectionUI(')||!quizEngine.includes('function renderNavigator()'))fail('Canonical quiz lost local interaction/lazy navigator paths');
 if(appCore.includes('new MutationObserver('))fail('App core reintroduced a permanent DOM observer');
+
+const cloud=read('equipment/assets/supabase-sync.js'),cloudCfg=read('equipment/assets/supabase-config.js');
+if(cloudCfg.includes('sb_secret_')||cloud.includes('sb_secret_'))fail('Supabase browser code contains a secret key');
+if(!cloud.includes("registerAdapter('supabase'"))fail('Supabase adapter is not registered through the shared sync interface');
 
 const tests=read('tests/e2e/quiz-regression.spec.js');
 if(tests.includes('waitForTimeout('))fail('Browser regression suite contains a fixed sleep');

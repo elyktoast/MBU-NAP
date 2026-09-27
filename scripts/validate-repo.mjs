@@ -533,7 +533,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 
 // JavaScript syntax is a release blocker. A page shell that renders while its inline script fails to parse is not valid.
 {
- const jsAssets=['equipment/assets/app-core.js','equipment/assets/build-bootstrap.js','equipment/assets/canonical-bank-page.js','equipment/assets/studio-loader.js','equipment/assets/studio-page.js','equipment/assets/hazards-page.js','equipment/assets/hazards-dashboard.js','equipment/assets/exam-dashboard.js','equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js','equipment/assets/site-nav.js','equipment/assets/navigator.js','equipment/assets/calculator.js','equipment/assets/auto-update.js'];
+ const jsAssets=['equipment/assets/supabase-config.js','equipment/assets/supabase-sync.js','equipment/assets/app-core.js','equipment/assets/build-bootstrap.js','equipment/assets/canonical-bank-page.js','equipment/assets/studio-loader.js','equipment/assets/studio-page.js','equipment/assets/hazards-page.js','equipment/assets/hazards-dashboard.js','equipment/assets/exam-dashboard.js','equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-sync.js','equipment/assets/site-nav.js','equipment/assets/navigator.js','equipment/assets/calculator.js','equipment/assets/auto-update.js'];
  for(const p of jsAssets){try{new vm.Script(read(p),{filename:p})}catch(e){fail(p+': JavaScript syntax error: '+e.message)}}
  for(const p of quizFiles){
   const src=read(p),re=/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi;let m,i=0;
@@ -610,6 +610,17 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(choose.includes('loadQuestion()'))fail('Cleanup: answer selection still performs a full question render');
  if(!renderer.includes('onclick="toggleNavigator()"'))fail('Cleanup: canonical shell bypasses lazy navigator');
  if(core.includes('new MutationObserver('))fail('Cleanup: permanent whole-DOM accessibility observer returned');
+}
+
+// Supabase cloud sync must use only public browser credentials and authenticated RLS.
+{
+ const boot=read('equipment/assets/build-bootstrap.js'),cfg=read('equipment/assets/supabase-config.js'),cloud=read('equipment/assets/supabase-sync.js'),migration=read('supabase/migrations/20260927000217_create_mbu_sync_schema.sql');
+ if(!boot.includes("loadScript('supabase-config.js')")||!boot.includes("loadScript('supabase-sync.js')"))fail('Supabase sync is not loaded by the shared bootstrap');
+ if(!cfg.includes('sb_publishable_')||cfg.includes('sb_secret_')||cfg.includes('service_role'))fail('Supabase browser config must contain only a publishable key');
+ for(const token of ['mbu_sync_state','mbu_sync_versions','mbu_sync_devices',"registerAdapter('supabase'",'/auth/v1/token?grant_type=password','on_conflict=user_id,store_key'])if(!cloud.includes(token))fail('Supabase adapter missing '+token);
+ if(!migration.includes('enable row level security')||!migration.includes('(select auth.uid())=user_id'))fail('Supabase migration is missing RLS ownership policies');
+ const all=[...quizFiles,'equipment/assets/app-core.js','equipment/assets/supabase-sync.js','equipment/assets/supabase-config.js'].map(read).join('\n');
+ if(all.includes('sb_secret_'))fail('A Supabase secret key is present in browser/repository application code');
 }
 
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}

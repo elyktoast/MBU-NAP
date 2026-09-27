@@ -1402,4 +1402,36 @@ test.describe('canonical quiz regression', () => {
     expect(await page.locator('#mbuNavigator button').count()).toBe(100);
   });
 
+  test('Tools exposes Supabase account controls without any secret browser credential', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
+    await page.locator('.mbu-global-nav__tools').click();
+    await expect(page.locator('.mbu-cloud')).toContainText('Cloud Sync');
+    await expect(page.locator('[data-cloud-signin]')).toBeVisible();
+    const config=await page.evaluate(() => MBU_SUPABASE_CONFIG);
+    expect(config.url).toBe('https://xqyasyambwdyhsjkftqu.supabase.co');
+    expect(config.publishableKey).toMatch(/^sb_publishable_/);
+    expect(JSON.stringify(config)).not.toContain('sb_secret_');
+  });
+
+  test('Supabase adapter signs in and upserts authenticated local progress', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co',writes=[];
+    await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'test-access',refresh_token:'test-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000001',email:'test@example.com'}})}));
+    await page.route(cloud+'/rest/v1/mbu_sync_state?*',async route=>{
+      if(route.request().method()==='GET')return route.fulfill({status:200,contentType:'application/json',body:'[]'});
+      writes.push(JSON.parse(route.request().postData()||'[]'));return route.fulfill({status:201,contentType:'application/json',body:route.request().postData()||'[]'});
+    });
+    await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>route.fulfill({status:201,contentType:'application/json',body:''}));
+    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
+    await page.locator('.mbu-global-nav__tools').click();
+    await page.locator('[data-cloud-email]').fill('test@example.com');
+    await page.locator('[data-cloud-password]').fill('correct horse battery staple');
+    await page.locator('[data-cloud-signin]').click();
+    await expect(page.locator('[data-cloud-signed-in]')).toBeVisible();
+    await page.locator('[data-close]').click();
+    await page.locator('#cards button').filter({hasText:/start|continue/i}).first().click();
+    await page.locator('#options .opt').first().click();
+    await page.evaluate(() => MBUSupabase.syncNow());
+    expect(writes.flat().some(row=>row.store_key==='SRNA_COMBINED_EXAM_SET_1_2026_V1')).toBe(true);
+  });
+
 });

@@ -18,7 +18,10 @@ async function start(){
   const loadStyle=src=>new Promise((resolve,reject)=>{const l=document.createElement('link');l.rel='stylesheet';l.href=urlFor(src).href;l.onload=resolve;l.onerror=()=>reject(Error('Stylesheet failed: '+src));document.head.append(l)});
   const loadScript=async raw=>{const spec=specOf(raw);await new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=urlFor(spec.src).href;for(const [k,v] of Object.entries(spec.data||{}))s.dataset[k]=String(v);s.onload=resolve;s.onerror=()=>reject(Error('Script failed: '+spec.src));document.body.append(s)});if(spec.waitFor){const pending=window[spec.waitFor];if(pending&&typeof pending.then==='function')await pending}};
   window.MBU_BUILD_ID=build;window.MBUBuild={id:build,assetsBase,buildUrl,urlFor,loadStyle,loadScript,fetchJSON};
-  await Promise.all([loadStyle('app-core.css'),loadScript('app-core.js')]);
+  await loadStyle('app-core.css');
+  await loadScript('app-core.js');
+  await loadScript('supabase-config.js');
+  await loadScript('supabase-sync.js');
   await Promise.all((cfg.styles||[]).map(loadStyle));
   for(const entry of cfg.scripts||[])await loadScript(entry);
   if(typeof cfg.ready==='function')await cfg.ready();

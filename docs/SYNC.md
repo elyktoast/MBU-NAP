@@ -1,57 +1,45 @@
 # Saving, backups, and cross-device sync
 
-## What works now
+## Current model
 
-MBU-NAP remains local-first. Progress is stored in the browser's localStorage.
+MBU-NAP is local-first. Progress is written to browser localStorage immediately, so quiz interactions do not wait on the network.
 
-The shared app core adds:
+When a user signs in through **Tools → Cloud Sync**, the same save stores are synchronized to Supabase. The browser uses only the project's public publishable key. Supabase Auth provides the user JWT, and Row Level Security limits every cloud row to that authenticated user.
 
-- a stable per-browser device id;
-- per-save revision and updated-time metadata;
-- a versioned backup envelope (`schema: 1`);
-- **Download backup** and **Import backup** in the global Tools dialog;
-- deterministic "newer save wins" import behavior;
-- a replace mode available through the API;
-- a pluggable adapter API for future cloud synchronization.
+## Supabase backend
 
-This means progress can already be moved manually between devices without changing any bank's save format.
+Production schema:
 
-## Sync envelope
+- `public.mbu_sync_state`: current copy of each save store;
+- `public.mbu_sync_versions`: automatic version history, capped at 100 versions per user/store;
+- `public.mbu_sync_devices`: devices that have synced the account.
 
-`MBUSync.exportSnapshot()` returns:
+The database migration is committed at `supabase/migrations/20260927000217_create_mbu_sync_schema.sql`.
 
-- app/schema identifiers;
-- build and device id;
-- raw values for every tracked progress store;
-- per-store revision metadata.
+## Authentication
 
-`MBUSync.importSnapshot(snapshot)` imports only known save keys. Unknown keys are ignored.
+The browser supports email/password account creation and sign-in through Supabase Auth. Session tokens are stored locally in the browser. The Supabase secret/service-role key is never used by the application.
 
-## Future cloud provider
+## Sync behavior
 
-A backend can be added without rewriting quiz engines:
+- Opening the app while signed in performs a full pull/merge/push.
+- Local save changes remain immediate and schedule a debounced cloud push.
+- Returning to the app after two minutes or reconnecting to the network performs another full sync.
+- A manual **Sync now** control is available in Tools.
+- If a full sync downloads newer progress, the page reloads once so the active quiz runtime uses the imported state.
 
-```js
-MBUSync.registerAdapter('provider-name', {
-  async pull(context) {
-    // Return a compatible snapshot or null.
-  },
-  async push(snapshot) {
-    // Persist the snapshot remotely.
-  }
-});
-
-await MBUSync.syncWith('provider-name');
-```
-
-No cloud adapter is bundled yet. Authentication, encryption, server-side revisions, and account identity should be selected together when a provider is chosen.
+The existing `MBUSync` schema-1 envelope remains the compatibility layer between local saves and the Supabase adapter.
 
 ## Merge model
 
-Current groundwork uses per-store last-writer-wins ordering:
+Local/import comparison currently orders each store by:
 
-1. `updatedAt`;
-2. revision number;
+1. client `updatedAt`;
+2. client revision number;
 3. device id as a deterministic tie-breaker.
 
-A future server-backed adapter should replace clock-based ordering with server revisions or another authoritative conflict mechanism.
+Supabase additionally assigns a monotonically increasing `server_revision` to every cloud write and records each write in version history. This gives us a server-authoritative recovery trail even though the current live merge remains client-metadata based.
+
+## Security
+
+All three sync tables have Row Level Security enabled. Policies are restricted to the `authenticated` role and require `auth.uid() = user_id`. The app can never read or write another user's save rows through the public API.
