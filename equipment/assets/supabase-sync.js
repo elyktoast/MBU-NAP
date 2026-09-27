@@ -3,7 +3,7 @@
 const cfg=window.MBU_SUPABASE_CONFIG||{},sync=window.MBUSync,SESSION_KEY='mbu_supabase_session_v1',STATUS_EVENT='mbu:supabase-status',script=document.currentScript,APP_ROOT=new URL('../../',script?.src||location.href).href;
 if(!cfg.url||!cfg.publishableKey||!sync){console.warn('Supabase sync is not configured');return}
 const base=cfg.url.replace(/\/$/,''),AUTO_SYNC_INTERVAL=5*60*1000,LEGAL_TERMS_VERSION='2026-09-27-v4',LEGAL_PRIVACY_VERSION='2026-09-27-v4';
-let syncing=false,lastSyncAt=0,lastState='signed-out',remoteByKey=new Map(),calibrationByKey=new Map(),calibrationFetchedAt=0,timer=null,autoSyncTimer=null,guestTimer=null,recoveryMode=false,legalAccepted=null,accountAccess='signed_out';
+let syncing=false,syncQueued=false,lastSyncAt=0,lastState='signed-out',remoteByKey=new Map(),calibrationByKey=new Map(),calibrationFetchedAt=0,timer=null,autoSyncTimer=null,guestTimer=null,recoveryMode=false,legalAccepted=null,accountAccess='signed_out';
 
 const safeJSON=(raw,fallback=null)=>{try{return JSON.parse(raw)}catch{return fallback}};
 const session=()=>safeJSON(localStorage.getItem(SESSION_KEY));
@@ -245,23 +245,23 @@ sync.registerAdapter('supabase',{pull,push});
 
 async function fullSync({reloadOnImport=false}={}){
   requireAccountAccess();
-  if(syncing)return null;const s=await validSession();if(!s?.user?.id){emit('signed-out');return null}
+  if(syncing){syncQueued=true;return null}const s=await validSession();if(!s?.user?.id){emit('signed-out');return null}
   syncing=true;emit('syncing',{email:s.user?.email||''});
   try{
     const result=await sync.syncWith('supabase');lastSyncAt=Date.now();emit('synced',{email:s.user?.email||'',result});
     if(reloadOnImport&&(result?.imported>0||result?.pushResult?.conflictImports>0)){sessionStorage.setItem('mbu_cloud_reload','1');location.reload()}
     return result
   }catch(e){emit('error',{email:s.user?.email||'',error:e.message});throw e}
-  finally{syncing=false}
+  finally{syncing=false;if(syncQueued){syncQueued=false;scheduleSync(0)}}
 }
 async function pushLocal(){
   if(legalAccepted!==true||accountAccess!=='active')return null;
-  if(syncing)return null;const s=await validSession();if(!s?.user?.id)return null;
+  if(syncing){syncQueued=true;return null}const s=await validSession();if(!s?.user?.id)return null;
   if(!remoteByKey.size)return fullSync();
   syncing=true;emit('syncing',{email:s.user?.email||''});
   try{const snapshot=await sync.exportSnapshot();await push(snapshot);lastSyncAt=Date.now();emit('synced',{email:s.user?.email||''});return true}
   catch(e){emit('error',{email:s.user?.email||'',error:e.message});throw e}
-  finally{syncing=false}
+  finally{syncing=false;if(syncQueued){syncQueued=false;scheduleSync(0)}}
 }
 function scheduleSync(delay=1500){if(!session()||legalAccepted!==true||accountAccess!=='active')return;clearTimeout(timer);timer=setTimeout(()=>{timer=null;pushLocal().catch(()=>{})},delay)}
 function stopAutoSync(){if(autoSyncTimer){clearInterval(autoSyncTimer);autoSyncTimer=null}}
