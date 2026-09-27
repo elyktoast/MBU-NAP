@@ -1521,7 +1521,7 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/hazards.html');await page.evaluate(() => MBUPageReady);
     await expect(page.locator('#dashboard')).toContainText('Built with Claude');
     await page.goto(exam + '/studio.html');await waitForStudio(page);
-    await expect(page.locator('#home')).toContainText('Built with Claude');
+    await expect(page.locator('#home')).not.toContainText('Built with Claude');
   });
 
   test('Header cloud status opens account controls without any secret browser credential', async ({ page }) => {
