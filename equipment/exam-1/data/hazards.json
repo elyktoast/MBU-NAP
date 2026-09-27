@@ -3526,16 +3526,16 @@
       "type": "single",
       "stem": "According to the American Society of Anesthesiologists Closed Claims Project database, what proportion of total claims involved anesthesia gas delivery equipment?",
       "options": [
-        "115 in 6000 claims (0.23% to 0.4%)",
-        "650 in 6000 claims (10.8%)",
-        "1200 in 6000 claims (20.0%)",
-        "35 in 6000 claims (0.05%)"
+        "115 of about 6,000 closed claims involved gas-delivery equipment; 0.23%–0.4% refers to estimated event incidence, not the fraction of claims",
+        "115 of about 6,000 claims equals 0.23%–0.4% of all claims",
+        "Gas-delivery equipment accounted for more than half of all closed claims",
+        "The lecture reported no gas-delivery equipment claims"
       ],
       "answer": [
         0
       ],
-      "explanation": "In the ASA closed claims database analysis cited, 115 claims out of roughly 6,000 were related to anesthesia gas delivery equipment, representing an overall incidence of approximately 0.23% to 0.4%.",
-      "citation": "Anesthesia Workstation Hazards & Safety · Slide 17",
+      "explanation": "The study guide explicitly separates two statistics: 115 of roughly 6,000 closed claims is about 1.9% of claims, whereas 0.23%–0.4% is the estimated incidence of anesthesia equipment events. They should not be presented as the same percentage.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 11",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -3546,11 +3546,11 @@
         "families": [
           "Anesthesia Workstation Hazards & Safety"
         ],
-        "slides": "17",
-        "citationFormat": "slides"
+        "studyGuidePage": "11",
+        "citationFormat": "study-guide"
       },
       "sourceTitle": "Anesthesia Workstation Hazards & Safety",
-      "sourceLocator": "Slide 17"
+      "sourceLocator": "Study Guide p. 11"
     },
     {
       "id": "10",
@@ -4410,28 +4410,28 @@
       "id": "36",
       "set": 2,
       "type": "single",
-      "stem": "What is the first step in the workstation risk-management sequence?",
+      "stem": "A full oxygen E-cylinder reads about 950 psig. Approximately how much oxygen remains?",
       "options": [
-        "Define the problems",
-        "Apply solutions",
-        "Monitor outcomes",
-        "Estimate likelihood"
+        "About 330 L",
+        "About 660 L",
+        "About 1590 L",
+        "The contents cannot be estimated from pressure"
       ],
       "answer": [
         0
       ],
-      "explanation": "The sequence begins by defining the problems, followed by estimating likelihood, weighing resources, applying solutions, and monitoring.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "Oxygen is stored as a compressed gas, so cylinder contents fall roughly linearly with pressure. Half of about 1900 psig corresponds to roughly half of 660 L, or about 330 L.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 1",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "1",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -4442,28 +4442,28 @@
       "id": "37",
       "set": 2,
       "type": "single",
-      "stem": "According to the workstation-hazards material, what causes the majority of anesthesia equipment adverse events?",
+      "stem": "A nitrous oxide E-cylinder still reads 745 psig after prolonged use. What does this pressure reading tell you about the amount of N2O remaining?",
       "options": [
-        "Device manufacturing defects",
-        "Human error",
-        "Power-grid failure",
-        "Pipeline contamination"
+        "It does not reliably indicate contents while liquid N2O remains",
+        "The cylinder is completely full",
+        "Exactly half the original contents remain",
+        "Only about 215 L remain"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Most events are multifactorial, but the guide identifies human error as responsible for the majority.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "Nitrous oxide is stored as liquid plus vapor at room temperature, so pressure stays near its vapor pressure while liquid remains. Contents are determined by weight until the liquid is gone.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 1",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "1",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -4473,33 +4473,29 @@
     {
       "id": "38",
       "set": 2,
-      "type": "multi",
-      "stem": "Which THREE factors are listed as aggravating contributors to anesthesia equipment events? (Select 3)",
+      "type": "single",
+      "stem": "An oxygen cylinder pressure gauge reads 0 psig. Which statement is correct?",
       "options": [
-        "Inattention",
-        "Fatigue",
-        "Routine machine checks",
-        "Distraction",
-        "Using a checklist",
-        "Adequate staffing"
+        "The cylinder still contains gas at approximately atmospheric pressure",
+        "The cylinder is a perfect vacuum",
+        "The cylinder contains liquid oxygen",
+        "The gauge must be broken"
       ],
       "answer": [
-        0,
-        1,
-        3
+        0
       ],
-      "explanation": "Inattention, distraction, fatigue, haste, unfamiliarity, inexperience, and failure to check equipment are listed aggravating factors.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "Gauge pressure is measured relative to atmospheric pressure. At 0 psig the cylinder can still contain its internal volume of gas at about 1 atmosphere.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 1",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "1",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -4510,28 +4506,28 @@
       "id": "39",
       "set": 2,
       "type": "single",
-      "stem": "Which hypoxemia hazard occurs upstream of the anesthesia workstation?",
+      "stem": "Why can nitrous oxide be stored partly as a liquid in an E-cylinder at room temperature while oxygen cannot?",
       "options": [
-        "Exhausted CO2 absorbent",
-        "Empty liquid oxygen reservoir",
-        "Curare cleft",
-        "Closed scavenging pop-off valve"
+        "N2O has a critical temperature near 36°C, above room temperature",
+        "O2 has a critical temperature near 36°C",
+        "N2O has a lower molecular weight than O2",
+        "O2 is filled to a lower absolute pressure than N2O"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Upstream hazards include an empty liquid oxygen reservoir, nitrogen in the reservoir, crossed hospital pipelines, and closed pipeline valves.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "A gas can be liquefied by pressure only below its critical temperature. N2O has a critical temperature around 36°C, whereas oxygen's is about -118.6°C.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 1",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "1",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -4542,28 +4538,28 @@
       "id": "40",
       "set": 2,
       "type": "single",
-      "stem": "Which hypoxemia hazard is usually detectable during the machine check?",
+      "stem": "Which cylinder safety device opens at excessive pressure and then reseals after pressure falls?",
       "options": [
-        "Hypoxic gas inside a correctly mounted O2 cylinder",
-        "Crossed hoses or adapters in the OR",
-        "A proportioning-system failure that occurs later",
-        "An O2 flowmeter leak that develops after the check"
+        "Spring-loaded relief valve",
+        "Fusible plug",
+        "Frangible disk",
+        "Pin index safety system"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Crossed hoses or adapters are among hazards usually caught by the machine check.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "A spring-loaded relief valve opens when pressure is excessive and can reseal afterward. Fusible plugs melt with heat and frangible disks rupture.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 1",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "1",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -4574,28 +4570,28 @@
       "id": "41",
       "set": 2,
       "type": "single",
-      "stem": "Which hypoxemia hazard may NOT be detected by a normal machine check?",
+      "stem": "Which PISS pin positions identify an oxygen E-cylinder?",
       "options": [
-        "Breathing-circuit leak present during checkout",
-        "Closed O2 cylinder during checkout",
-        "Hypoxic gas inside a cylinder labeled as oxygen",
-        "Incompetent unidirectional valve present during checkout"
+        "2 and 5",
+        "3 and 5",
+        "1 and 5",
+        "1 and 6"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "Hypoxic gas in a cylinder can escape the usual check because pressure can be normal even when gas composition is wrong.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "The Pin Index Safety System assigns oxygen to pin positions 2 and 5.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 1",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "1",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -4606,28 +4602,28 @@
       "id": "42",
       "set": 2,
       "type": "single",
-      "stem": "A workstation fails its breathing-system leak check. What simple corrective action does the study guide say often resolves the problem?",
+      "stem": "Which PISS pin positions identify a nitrous oxide E-cylinder?",
       "options": [
-        "Swap the breathing circuit",
-        "Replace the oxygen cylinder",
-        "Disable the fail-safe valve",
-        "Increase scavenging suction"
+        "3 and 5",
+        "2 and 5",
+        "1 and 5",
+        "1 and 6"
       ],
       "answer": [
         0
       ],
-      "explanation": "The guide notes that replacing the breathing circuit often resolves a failed leak check.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "Nitrous oxide uses PISS pin positions 3 and 5.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 1",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "1",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -4638,28 +4634,28 @@
       "id": "43",
       "set": 2,
       "type": "single",
-      "stem": "What is the most common hypercarbia hazard immediately after intubation according to the study guide?",
+      "stem": "Which PISS pin positions identify a medical air E-cylinder?",
       "options": [
-        "Forgetting to turn the ventilator on",
-        "A fresh absorbent canister",
-        "Excessive scavenging suction",
-        "A fully open APL during controlled ventilation"
+        "1 and 5",
+        "2 and 5",
+        "3 and 5",
+        "1 and 6"
       ],
       "answer": [
         0
       ],
-      "explanation": "The hazards section identifies forgetting to turn the ventilator on after intubation as the most common cause.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "Medical air uses PISS pin positions 1 and 5.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 1",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "1",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -4669,32 +4665,29 @@
     {
       "id": "44",
       "set": 2,
-      "type": "multi",
-      "stem": "Which TWO problems can cause hypercarbia by increasing rebreathing? (Select 2)",
+      "type": "single",
+      "stem": "Which PISS pin positions identify a carbon dioxide cylinder?",
       "options": [
-        "Exhausted absorbent",
-        "Incompetent unidirectional valve",
-        "Open oxygen cylinder",
-        "High fresh gas flow with effective absorption",
-        "Working scavenger",
-        "Correctly assembled circle"
+        "1 and 6",
+        "1 and 5",
+        "2 and 5",
+        "3 and 5"
       ],
       "answer": [
-        0,
-        1
+        0
       ],
-      "explanation": "Exhausted absorbent and incompetent unidirectional valves both permit CO2 rebreathing.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "Carbon dioxide uses PISS pin positions 1 and 6.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 1",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "1",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -4705,28 +4698,28 @@
       "id": "45",
       "set": 2,
       "type": "single",
-      "stem": "Where should the fresh-gas inlet NOT be placed in a circle system?",
+      "stem": "What is the main safety purpose of the Diameter Index Safety System (DISS) on the anesthesia machine?",
       "options": [
-        "Between the patient and expiratory valve",
-        "Upstream of the inspiratory valve",
-        "Near the absorber",
-        "On the machine side of the circle"
+        "It uses gas-specific threaded diameters to prevent misconnections",
+        "It prevents two vaporizers from being turned on together",
+        "It limits oxygen flow below 25% FiO2",
+        "It prevents a cylinder from being attached to the wrong yoke"
       ],
       "answer": [
         0
       ],
-      "explanation": "The guide identifies a fresh-gas inlet between the patient and expiratory valve as an arrangement to avoid.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "DISS provides nationally standardized, gas-specific threaded connections for pipeline gases and suction, reducing the chance of connecting the wrong hose to the machine.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 1",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 1",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "1",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -4737,28 +4730,28 @@
       "id": "46",
       "set": 2,
       "type": "single",
-      "stem": "Where should the APL valve NOT be placed in a circle system?",
+      "stem": "With normal supplies connected, why does the anesthesia machine preferentially use pipeline oxygen rather than cylinder oxygen?",
       "options": [
-        "Between the patient and inspiratory valve",
-        "Near the reservoir bag",
-        "On the expiratory side",
-        "Near the absorber"
+        "Pipeline pressure is about 50–55 psi, higher than the cylinder regulator output of about 45 psi",
+        "Cylinder oxygen is blocked by the PISS pins during normal use",
+        "The fail-safe valve closes the cylinder inlet whenever pipeline oxygen is present",
+        "Pipeline oxygen bypasses all check valves"
       ],
       "answer": [
         0
       ],
-      "explanation": "An APL valve between the patient and inspiratory valve is listed as an unsafe circle arrangement.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "The pipeline normally supplies about 50–55 psi, which exceeds the regulated cylinder pressure of roughly 45 psi and therefore becomes the preferential source.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 2",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "2",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -4769,27 +4762,27 @@
       "id": "47",
       "set": 2,
       "type": "single",
-      "stem": "Where should the reservoir bag NOT be placed in a circle system?",
+      "stem": "Why should the backup oxygen cylinder be closed after the pre-use check?",
       "options": [
-        "Between the patient and either unidirectional valve",
-        "Near the APL valve",
-        "On the machine side of the expiratory limb",
-        "Near the absorber"
+        "If left open, it may drain silently during a pipeline failure and delay recognition until the cylinder is empty",
+        "An open cylinder disables the oxygen analyzer",
+        "An open cylinder raises pipeline pressure above 100 psi",
+        "It prevents the oxygen flush from working"
       ],
       "answer": [
         0
       ],
-      "explanation": "The reservoir bag should not be placed between the patient and either unidirectional valve.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "An open backup cylinder can begin supplying gas when pipeline pressure falls, masking the failure until the cylinder is depleted. The low-supply alarm may then announce the end of the reserve rather than the start of the emergency.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 2",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 2",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "8",
+        "studyGuidePage": "2",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -4801,27 +4794,27 @@
       "id": "48",
       "set": 2,
       "type": "single",
-      "stem": "Which Mapleson circuit is the study guide's choice for spontaneous breathing?",
+      "stem": "What does the anesthesia machine fail-safe valve actually sense?",
       "options": [
-        "Mapleson A (Magill)",
-        "Mapleson B",
-        "Mapleson C",
-        "Any Mapleson at the same flow"
+        "Oxygen supply pressure",
+        "Inspired oxygen concentration",
+        "End-tidal oxygen concentration",
+        "Nitrous oxide cylinder weight"
       ],
       "answer": [
         0
       ],
-      "explanation": "Mapleson A is designated for spontaneous breathing.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "The fail-safe responds to oxygen supply pressure, not oxygen concentration. It therefore cannot detect every cause of a hypoxic mixture.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 2",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 2",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "8",
+        "studyGuidePage": "2",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -4833,27 +4826,27 @@
       "id": "49",
       "set": 2,
       "type": "single",
-      "stem": "A spontaneously breathing patient has a minute ventilation of 8 L/min on a Mapleson A. What minimum fresh gas flow does the guide suggest?",
+      "stem": "Why can a proportioning system still permit a hypoxic mixture when a third gas such as helium is used?",
       "options": [
-        "About 2.4 L/min",
-        "About 5.6 L/min",
-        "About 8 L/min",
-        "About 20 L/min"
+        "It links only oxygen and nitrous oxide flows and does not account for the third gas",
+        "Helium disables the oxygen analyzer",
+        "Helium increases pipeline pressure above the fail-safe threshold",
+        "The oxygen flush automatically closes"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Mapleson A requires approximately 0.7 × minute ventilation, so 0.7 × 8 = 5.6 L/min.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "Traditional proportioning systems mechanically or electronically link O2 and N2O. A third gas such as helium or air is outside that linkage and can dilute oxygen.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 2",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 2",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "8",
+        "studyGuidePage": "2",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -4865,27 +4858,27 @@
       "id": "50",
       "set": 2,
       "type": "single",
-      "stem": "A Mapleson C is used for controlled ventilation with minute ventilation of 6 L/min. Which fresh gas flow range fits the guide?",
+      "stem": "Which monitor is the final safeguard for detecting that oxygen is actually present in the inspired gas mixture?",
       "options": [
-        "2–4 L/min",
-        "4.2–6 L/min",
-        "9–15 L/min",
-        "18–24 L/min"
+        "Inspired oxygen analyzer",
+        "Fail-safe valve",
+        "Proportioning system",
+        "Cylinder pressure gauge"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "Mapleson B and C require about 1.5–2.5 × minute ventilation. With 6 L/min, that is 9–15 L/min.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "Pressure-based and ratio devices cannot detect all wrong-gas or crossed-pipeline events. Direct inspired oxygen analysis verifies the gas reaching the breathing system.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 2",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 2",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "8",
+        "studyGuidePage": "2",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -4897,28 +4890,28 @@
       "id": "51",
       "set": 2,
       "type": "single",
-      "stem": "Why do Mapleson B and C require relatively high fresh gas flows?",
+      "stem": "A ball-type float is used in a Thorpe tube flowmeter. Where should the flow be read?",
       "options": [
-        "Fresh gas enters near the patient and a blind pouch permits rebreathing",
-        "They contain an absorbent that consumes oxygen",
-        "Their reservoir bags are too small",
-        "They use a one-way turbine valve"
+        "At the center of the ball",
+        "At the top of the ball",
+        "At the bottom of the ball",
+        "At the narrowest part of the tube"
       ],
       "answer": [
         0
       ],
-      "explanation": "Their configuration permits rebreathing, so higher fresh gas flow is required to wash exhaled gas away.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "A ball float is read at its center. Thorpe tubes are constant-pressure, variable-orifice flowmeters.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 2",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "2",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -4929,28 +4922,28 @@
       "id": "52",
       "set": 2,
       "type": "single",
-      "stem": "What useful bedside information does the reservoir bag provide during transport with a Mapleson circuit?",
+      "stem": "Which physical property primarily determines gas flow through a Thorpe tube at very low flow rates?",
       "options": [
-        "A sense of respiratory-system compliance",
-        "Direct arterial oxygen content",
-        "Inspired oxygen concentration",
-        "Anesthetic depth"
+        "Viscosity",
+        "Density",
+        "Vapor pressure",
+        "Critical temperature"
       ],
       "answer": [
         0
       ],
-      "explanation": "The reservoir bag allows the provider to feel compliance during ventilation.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "Low flow is predominantly laminar and depends on viscosity. At higher turbulent flow rates, density becomes more important.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 2",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "2",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -4961,28 +4954,28 @@
       "id": "53",
       "set": 2,
       "type": "single",
-      "stem": "Which pattern best fits a circuit occlusion?",
+      "stem": "Why is the oxygen flowmeter positioned downstream, closest to the common gas outlet, on traditional flowmeter banks?",
       "options": [
-        "High pressure with no flow",
-        "Low pressure with high exhaled volume",
-        "Normal pressure with high ETCO2 only",
-        "Low pressure with low resistance"
+        "A leak in an upstream nonoxygen tube is less likely to produce a hypoxic mixture",
+        "It allows oxygen to bypass the vaporizer",
+        "It makes oxygen flow turbulent at all settings",
+        "It prevents a leak in the oxygen tube itself from being dangerous"
       ],
       "answer": [
         0
       ],
-      "explanation": "Occlusion produces high pressure with little or no flow.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "Placing oxygen downstream means a leak in an upstream gas tube preferentially loses that other gas. A leak in the oxygen flowmeter itself can still create a hypoxic mixture.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 2",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "2",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -4993,28 +4986,28 @@
       "id": "54",
       "set": 2,
       "type": "single",
-      "stem": "A spontaneously breathing patient suddenly develops high circuit pressure just after induction. Which simple cause should be checked first?",
+      "stem": "Which components are bypassed when the oxygen flush valve is activated?",
       "options": [
-        "APL valve left closed",
-        "Empty CO2 absorbent",
-        "Low scavenging suction",
-        "Open reservoir bag"
+        "Flowmeters and vaporizers",
+        "Cylinder regulator and pipeline inlet",
+        "Breathing circuit and common gas outlet",
+        "Oxygen analyzer and pressure alarms"
       ],
       "answer": [
         0
       ],
-      "explanation": "A closed APL valve, often left closed after induction, can cause high circuit pressure during spontaneous breathing.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "The oxygen flush sends high-flow oxygen from the intermediate-pressure system directly toward the common gas outlet, bypassing flowmeters and vaporizers.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 2",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "2",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5025,27 +5018,27 @@
       "id": "55",
       "set": 2,
       "type": "single",
-      "stem": "A kinked tube leading to the scavenger can cause which breathing-system effect?",
+      "stem": "What is a major hazard of activating the oxygen flush during inspiration on a mechanically ventilated patient?",
       "options": [
-        "High circuit pressure",
-        "A falsely high O2 cylinder reading",
-        "Low vaporizer temperature",
-        "Loss of ECG signal"
+        "Barotrauma from very high flow and pressure",
+        "Carbon monoxide production",
+        "Rapid soda lime exhaustion",
+        "Loss of cylinder indexing"
       ],
       "answer": [
         0
       ],
-      "explanation": "A kinked scavenger pathway can impede gas egress and raise circuit pressure.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "The flush can deliver roughly 35–75 L/min at intermediate-system pressure. If delivered into a closed or pressurized circuit it can cause dangerously high airway pressure and barotrauma.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 2",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 2",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "8",
+        "studyGuidePage": "2",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -5057,28 +5050,28 @@
       "id": "56",
       "set": 2,
       "type": "single",
-      "stem": "What pattern is expected with a breathing-circuit disconnection during head or neck surgery?",
+      "stem": "In a conventional variable-bypass vaporizer, what does the concentration dial primarily change?",
       "options": [
-        "Low pressure and low volume",
-        "High pressure and high volume",
-        "High pressure with no flow",
-        "Normal pressure and elevated inspired CO2"
+        "The splitting ratio between bypass flow and vaporizing-chamber flow",
+        "The vapor pressure of the anesthetic agent",
+        "The pipeline pressure entering the machine",
+        "The boiling point of the liquid agent"
       ],
       "answer": [
         0
       ],
-      "explanation": "A circuit disconnection presents with low pressure and low delivered or exhaled volume.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "Fresh gas divides between the bypass and vaporizing chamber. The dial changes that splitting ratio to achieve the selected output.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 2",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "2",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5089,28 +5082,28 @@
       "id": "57",
       "set": 2,
       "type": "single",
-      "stem": "Why does moving a vaporizer increase the risk of an agent-dosing error?",
+      "stem": "What is the function of the bimetallic temperature-compensating element in a variable-bypass vaporizer?",
       "options": [
-        "Movement is associated with tipping, liquid migration, or incorrect setup",
-        "It raises pipeline pressure",
-        "It disables the O2 analyzer",
-        "It changes the gas cylinder PISS pins"
+        "It sends proportionally more gas through the vaporizing chamber as the liquid cools",
+        "It electrically heats the liquid agent to 39°C",
+        "It closes the common gas outlet at low temperature",
+        "It measures agent concentration by infrared absorption"
       ],
       "answer": [
         0
       ],
-      "explanation": "Moving a vaporizer can contribute to tipping, liquid migration, or setup errors that alter agent delivery.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "Vaporization cools the liquid and would reduce vapor pressure. The bimetallic element compensates by directing more carrier gas through the vaporizing chamber as temperature falls.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 2",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 2",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "2",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5121,28 +5114,28 @@
       "id": "58",
       "set": 2,
       "type": "single",
-      "stem": "What electrical supply range does the study guide give for the anesthesia machine?",
+      "stem": "A vaporizer is set to 2% with fresh gas flow of 4 L/min. Using the lecture shortcut, approximately how much liquid volatile agent is consumed per hour?",
       "options": [
-        "12–24 V DC",
-        "50–60 V AC",
-        "90–130 V AC at 50–60 Hz",
-        "220–240 V DC only"
+        "24 mL/hr",
+        "8 mL/hr",
+        "12 mL/hr",
+        "48 mL/hr"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "The hazards guide lists machine power as 90–130 V alternating current at 50–60 Hz.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "The study-guide shortcut is mL liquid/hr = vol% × FGF (L/min) × 3. Thus 2 × 4 × 3 = 24 mL/hr.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 3",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 3",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "8",
+        "studyGuidePage": "3",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5153,27 +5146,27 @@
       "id": "59",
       "set": 2,
       "type": "single",
-      "stem": "Why are separate circuit breakers used in the anesthesia workstation?",
+      "stem": "A conventional variable-bypass vaporizer is accidentally tipped. What is the main immediate concern?",
       "options": [
-        "To protect the AC supply, battery, and convenience outlets as separate circuits",
-        "To regulate N2O concentration",
-        "To control scavenging vacuum",
-        "To determine vaporizer output"
+        "Liquid agent can enter the bypass chamber and cause excessive output",
+        "The vaporizer permanently stops producing vapor",
+        "The agent becomes chemically inactive",
+        "The common gas outlet closes"
       ],
       "answer": [
         0
       ],
-      "explanation": "Circuit breakers separately protect the AC supply, battery, and convenience receptacles.",
-      "citation": "Exam 1 Equipment Study Guide · p. 8",
+      "explanation": "Tipping can allow liquid anesthetic into the bypass pathway, exposing much more gas to liquid agent and causing overdose. The unit must be managed according to the manufacturer's decontamination procedure.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 3",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 3",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "8",
+        "studyGuidePage": "3",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -5185,28 +5178,28 @@
       "id": "60",
       "set": 2,
       "type": "single",
-      "stem": "Approximately how long does the course guide say a typical workstation backup battery lasts?",
+      "stem": "An isoflurane-filled vaporizer is mistakenly placed where sevoflurane was intended. Why may output exceed the dialed concentration?",
       "options": [
-        "About 5 minutes",
-        "About 40 minutes, with some machines lasting 1–2 hours",
-        "About 8 hours on every machine",
-        "Indefinitely if the ventilator is off"
+        "Isoflurane has a higher saturated vapor pressure than sevoflurane",
+        "Isoflurane has a lower molecular weight",
+        "Sevoflurane has a higher boiling point only",
+        "Isoflurane disables temperature compensation"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "The course guide teaches about 40 minutes, while noting that some machines may last 1–2 hours. Battery duration is model-dependent.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "At 20°C isoflurane's vapor pressure is roughly 240 mmHg versus about 160 mmHg for sevoflurane. A vaporizer calibrated for the lower-vapor-pressure agent can therefore deliver more than dialed when filled with the higher-vapor-pressure agent.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 3",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 3",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "9",
+        "studyGuidePage": "3",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5217,28 +5210,28 @@
       "id": "61",
       "set": 2,
       "type": "single",
-      "stem": "What happens when workstation battery voltage falls below about 10 V?",
+      "stem": "How does the Tec 6 desflurane vaporizer differ from a conventional variable-bypass vaporizer?",
       "options": [
-        "All machine power cuts off to prevent deep discharge",
-        "Only the convenience outlets shut off",
-        "The Tec 6 switches to mechanical mode",
-        "The pipeline fail-safe closes"
+        "Fresh gas does not enter the heated pressurized sump",
+        "It requires no electrical power",
+        "It uses a bimetallic strip as its only control",
+        "It operates at room temperature and atmospheric pressure"
       ],
       "answer": [
         0
       ],
-      "explanation": "The guide states that all power cuts off below about 10 V to prevent deep battery discharge.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "The Tec 6 heats desflurane to about 39°C and pressurizes it to roughly 2 atmospheres. Fresh gas does not pass through the sump; vapor delivery is matched to fresh-gas back pressure.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 3",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 3",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "9",
+        "studyGuidePage": "3",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5249,28 +5242,28 @@
       "id": "62",
       "set": 2,
       "type": "single",
-      "stem": "Which equation is Ohm's law for direct current?",
+      "stem": "Which feature is characteristic of the Aladin vaporizer cassette system?",
       "options": [
-        "E = I × R",
-        "P = E × I",
-        "J = W × s",
-        "Q = V / t"
+        "A CPU identifies the agent by a coded cassette and the system requires electrical power",
+        "It is a purely mechanical copper kettle",
+        "It can only be filled with desflurane",
+        "It uses no electronic controls"
       ],
       "answer": [
         0
       ],
-      "explanation": "Ohm's law is E = I × R. For AC, impedance replaces simple resistance.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "The Aladin system uses electronically controlled cassettes identified by coding and requires electrical power.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 3",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 3",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "9",
+        "studyGuidePage": "3",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5281,28 +5274,28 @@
       "id": "63",
       "set": 2,
       "type": "single",
-      "stem": "Which equation gives electrical power?",
+      "stem": "Why must output from a copper-kettle vaporizer be calculated rather than simply read from a concentration dial?",
       "options": [
-        "P = E × I",
-        "E = I × R only",
-        "P = R / I",
-        "J = E / t"
+        "It is not concentration calibrated",
+        "It cannot vaporize volatile anesthetics",
+        "It operates only with nitrous oxide",
+        "Its vapor pressure is always 760 mmHg"
       ],
       "answer": [
         0
       ],
-      "explanation": "Electrical power is voltage multiplied by current: P = E × I.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "A copper kettle is not concentration calibrated. The clinician must calculate output from vapor flow and total fresh gas flow.",
+      "citation": "Medical Gas Systems in Anesthesia · Study Guide p. 3",
+      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceLocator": "Study Guide p. 3",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Medical Gas Systems in Anesthesia"
         ],
-        "pages": "9",
+        "studyGuidePage": "3",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5313,27 +5306,27 @@
       "id": "64",
       "set": 2,
       "type": "single",
-      "stem": "A 500-W device runs for 4 seconds. How much energy is used?",
+      "stem": "Which leak-test approach is appropriate for a low-pressure system that contains an outlet check valve at the common gas outlet?",
       "options": [
-        "125 J",
-        "500 J",
-        "2,000 J",
-        "4,000 J"
+        "Negative-pressure leak test",
+        "Positive-pressure test only",
+        "No leak test is needed",
+        "Cylinder pressure drop test only"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "Energy in joules equals watts multiplied by seconds. 500 × 4 = 2,000 J.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "An outlet check valve can hide downstream leaks from a positive-pressure test performed at the common gas outlet. A negative-pressure test is used to assess the low-pressure system in this design.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 3",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 3",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "9",
+        "studyGuidePage": "3",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -5345,27 +5338,27 @@
       "id": "65",
       "set": 2,
       "type": "single",
-      "stem": "Relative to alternating current, approximately how much more direct current is required to cause ventricular fibrillation according to the guide?",
+      "stem": "The auxiliary common gas outlet is accidentally left selected after induction. What can happen to the circle breathing system?",
       "options": [
-        "The same amount",
-        "About 2 times more",
-        "About 3 times more",
-        "About 10 times more"
+        "It may receive no fresh gas flow",
+        "It automatically receives twice the set fresh gas flow",
+        "The oxygen analyzer is bypassed but flow is unchanged",
+        "The scavenger becomes pressurized"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "The guide states that about three times more DC than AC is needed to cause ventricular fibrillation, although DC is not harmless.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "Selecting the auxiliary outlet diverts fresh gas away from the circle system. If left selected, the circle can be deprived of fresh gas.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 3",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 3",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "9",
+        "studyGuidePage": "3",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -5377,28 +5370,28 @@
       "id": "66",
       "set": 2,
       "type": "single",
-      "stem": "What is a capacitor?",
+      "stem": "Which component makes up the largest fraction of traditional wet soda lime?",
       "options": [
-        "Two conductors separated by an insulator",
-        "A resistor connected directly to ground",
-        "A single conductor surrounded by saline",
-        "A transformer that produces DC"
+        "Calcium hydroxide",
+        "Sodium hydroxide",
+        "Potassium hydroxide",
+        "Water"
       ],
       "answer": [
         0
       ],
-      "explanation": "A capacitor consists of two conductors separated by an insulator; with DC, only a momentary current flows.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "Traditional wet soda lime is mostly calcium hydroxide, with water and smaller amounts of strong bases such as sodium or potassium hydroxide.",
+      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Study Guide p. 4",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "CO₂ Absorbents and Scavenging"
         ],
-        "pages": "9",
+        "studyGuidePage": "4",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5409,28 +5402,28 @@
       "id": "67",
       "set": 2,
       "type": "single",
-      "stem": "How is electrical grounding handled in the operating room according to the study guide?",
+      "stem": "Why are carbon dioxide absorbent granules commonly manufactured in the 4–8 mesh range?",
       "options": [
-        "Power is isolated from ground while equipment is grounded",
-        "Power and equipment are both ungrounded",
-        "Power is grounded but equipment is not",
-        "Everything is directly grounded to the patient"
+        "It balances surface area for absorption against resistance to gas flow",
+        "It eliminates all channeling",
+        "It prevents compound A formation completely",
+        "It makes indicator dye unnecessary"
       ],
       "answer": [
         0
       ],
-      "explanation": "OR power is isolated from ground for macroshock protection, while equipment remains grounded.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "Smaller granules increase surface area but also increase resistance. The 4–8 mesh range balances absorption efficiency and breathing-system resistance.",
+      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Study Guide p. 4",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "CO₂ Absorbents and Scavenging"
         ],
-        "pages": "9",
+        "studyGuidePage": "4",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5441,28 +5434,28 @@
       "id": "68",
       "set": 2,
       "type": "single",
-      "stem": "What frequency range does the study guide give for electrosurgery?",
+      "stem": "During the soda-lime reaction, which substance is consumed while sodium and potassium hydroxides are regenerated?",
       "options": [
-        "50–60 Hz",
-        "500 Hz–1 kHz",
-        "500 kHz–1 MHz",
-        "5–10 MHz only"
+        "Calcium hydroxide",
+        "Water",
+        "Ethyl violet",
+        "Calcium carbonate"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "Electrosurgical units operate at radiofrequency, approximately 500 kHz to 1 MHz.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "Strong bases facilitate the early reactions and are regenerated. Calcium hydroxide is ultimately consumed as calcium carbonate forms.",
+      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Study Guide p. 4",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "CO₂ Absorbents and Scavenging"
         ],
-        "pages": "9",
+        "studyGuidePage": "4",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5473,28 +5466,28 @@
       "id": "69",
       "set": 2,
       "type": "single",
-      "stem": "Why does electrosurgical radiofrequency current not normally trigger ventricular fibrillation?",
+      "stem": "Approximately how much carbon dioxide can 100 g of fresh soda lime absorb?",
       "options": [
-        "Its frequency is too high to excite cardiac cells",
-        "Its voltage is always below 1 V",
-        "The return pad blocks all current",
-        "The patient is electrically isolated from the ESU"
+        "26 L",
+        "2.6 L",
+        "260 L",
+        "6 L"
       ],
       "answer": [
         0
       ],
-      "explanation": "The very high frequency used by the ESU does not stimulate myocardium the way lower-frequency current can.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "The lecture value is approximately 26 L of CO2 per 100 g of absorbent.",
+      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Study Guide p. 4",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "CO₂ Absorbents and Scavenging"
         ],
-        "pages": "9",
+        "studyGuidePage": "4",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5505,28 +5498,28 @@
       "id": "70",
       "set": 2,
       "type": "single",
-      "stem": "Where should the ESU return pad be positioned?",
+      "stem": "Why can very high fresh gas flow delay recognition of exhausted carbon dioxide absorbent?",
       "options": [
-        "Close to the operative site",
-        "As far from the patient as possible",
-        "Directly over an ECG electrode",
-        "On a bony prominence with poor contact"
+        "High flow can wash CO2 out of the circuit and mask rebreathing",
+        "High flow chemically regenerates calcium hydroxide",
+        "High flow turns exhausted ethyl violet white permanently",
+        "High flow converts CO into CO2"
       ],
       "answer": [
         0
       ],
-      "explanation": "The guide recommends placing the return pad close to the operative site and keeping ECG electrodes away from the current path.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "High fresh-gas flow reduces rebreathing and may keep inspired CO2 near zero despite reduced absorbent capacity, temporarily masking exhaustion.",
+      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Study Guide p. 4",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "CO₂ Absorbents and Scavenging"
         ],
-        "pages": "9",
+        "studyGuidePage": "4",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5537,28 +5530,28 @@
       "id": "71",
       "set": 2,
       "type": "single",
-      "stem": "What is a major consequence of poor ESU return-pad contact?",
+      "stem": "A soda-lime canister that previously turned purple is white again after sitting unused. What is the safest interpretation?",
       "options": [
-        "Patient burn at the pad site",
-        "Failure of the O2 analyzer",
-        "Low pipeline pressure",
-        "Vaporizer underfilling"
+        "Indicator dye can regenerate, so color alone cannot prove the absorbent is fresh",
+        "The absorbent has fully regenerated chemically",
+        "The canister is safe for unlimited reuse",
+        "White color excludes channeling"
       ],
       "answer": [
         0
       ],
-      "explanation": "Poor pad contact concentrates current and can cause a burn.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "Ethyl-violet color can fade back toward white at rest even though absorbent capacity has not been restored. Clinical CO2 monitoring is more reliable than color alone.",
+      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Study Guide p. 4",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "CO₂ Absorbents and Scavenging"
         ],
-        "pages": "9",
+        "studyGuidePage": "4",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5568,33 +5561,29 @@
     {
       "id": "72",
       "set": 2,
-      "type": "multi",
-      "stem": "Which THREE devices can be affected by ESU interference? (Select 3)",
+      "type": "single",
+      "stem": "What is 'channeling' in a carbon dioxide absorbent canister?",
       "options": [
-        "ECG",
-        "Pulse oximeter",
-        "Cardiac pacemaker",
-        "Cylinder Bourdon gauge",
-        "Mechanical APL valve",
-        "PISS pins"
+        "Gas follows a preferential path, exhausting absorbent along that path while other granules appear fresh",
+        "The indicator dye diffuses evenly through the canister",
+        "Fresh gas bypasses the breathing circuit entirely",
+        "Calcium hydroxide is converted back from calcium carbonate"
       ],
       "answer": [
-        0,
-        1,
-        2
+        0
       ],
-      "explanation": "The guide notes interference with ECG, pulse oximetry, cardiac-output monitors, and pacemakers.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "Gas may preferentially travel along a low-resistance path, often near the smooth canister wall. Absorbent on that path exhausts early while the rest can look unused.",
+      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Study Guide p. 4",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "CO₂ Absorbents and Scavenging"
         ],
-        "pages": "9",
+        "studyGuidePage": "4",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5605,28 +5594,28 @@
       "id": "73",
       "set": 2,
       "type": "single",
-      "stem": "After workstation battery power is exhausted, which resources can still be available on a machine with mechanical flow control?",
+      "stem": "Which finding most strongly supports clinically significant absorbent exhaustion regardless of canister color?",
       "options": [
-        "Emergency O2 and mechanical variable-bypass vaporizers",
-        "Tec 6 and Aladin only",
-        "Electronic ventilator and all monitors indefinitely",
-        "Only N2O from the pipeline"
+        "Inspired CO2 remains above zero with rising ETCO2",
+        "The canister is cool to touch",
+        "The patient has a normal SpO2",
+        "The reservoir bag is full"
       ],
       "answer": [
         0
       ],
-      "explanation": "Mechanical gas delivery and conventional variable-bypass vaporizers can remain usable without wall power on appropriate workstation designs; exact behavior is model-dependent.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "Rebreathing is demonstrated by inspired CO2 above zero. Rising ETCO2 plus inspired CO2 should prompt replacement of the absorbent regardless of its visible color.",
+      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Study Guide p. 4",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "CO₂ Absorbents and Scavenging"
         ],
-        "pages": "9",
+        "studyGuidePage": "4",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5637,28 +5626,28 @@
       "id": "74",
       "set": 2,
       "type": "single",
-      "stem": "Why can't a Tec 6 desflurane vaporizer be relied on after complete electrical power loss?",
+      "stem": "Which conditions favor formation of compound A during sevoflurane anesthesia?",
       "options": [
-        "It requires electricity to heat and pressurize desflurane",
-        "It depends on the scavenger vacuum",
-        "It uses only cylinder oxygen",
-        "It is powered by the pulse oximeter"
+        "Warm or dry absorbent, high sevoflurane concentration, and low fresh gas flow",
+        "Wet absorbent, low sevoflurane concentration, and high fresh gas flow",
+        "Use of halothane with fresh absorbent",
+        "High humidity and room-air ventilation"
       ],
       "answer": [
         0
       ],
-      "explanation": "The Tec 6 requires electrical power for heating and pressure control.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "Compound A is associated with sevoflurane and is promoted by warmer, drier absorbent, higher agent concentration, and lower fresh gas flow.",
+      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Study Guide p. 4",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "CO₂ Absorbents and Scavenging"
         ],
-        "pages": "9",
+        "studyGuidePage": "4",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5669,28 +5658,28 @@
       "id": "75",
       "set": 2,
       "type": "single",
-      "stem": "Why can't an Aladin cassette be relied on after complete electrical power loss?",
+      "stem": "Which volatile anesthetics are associated with carbon monoxide production in desiccated absorbent?",
       "options": [
-        "Its electronic control system requires power",
-        "It contains no volatile anesthetic",
-        "It works only with nitrous oxide",
-        "It depends on a grounded OR power system"
+        "Desflurane, enflurane, and isoflurane",
+        "Sevoflurane and halothane only",
+        "Sevoflurane only",
+        "Nitrous oxide and sevoflurane"
       ],
       "answer": [
         0
       ],
-      "explanation": "The Aladin is electronically controlled and requires power to deliver agent.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "Agents containing the relevant difluoromethyl group can generate CO with desiccated strong-base absorbent. The lecture order is desflurane greater than enflurane greater than isoflurane; sevoflurane and halothane do not.",
+      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Study Guide p. 4",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "CO₂ Absorbents and Scavenging"
         ],
-        "pages": "9",
+        "studyGuidePage": "4",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5700,33 +5689,29 @@
     {
       "id": "76",
       "set": 2,
-      "type": "multi",
-      "stem": "Which THREE actions belong in preparation for an operating-room fire? (Select 3)",
+      "type": "single",
+      "stem": "Why can conventional pulse oximetry be misleading in carbon monoxide exposure?",
       "options": [
-        "Identify high-risk cases",
-        "Assign tasks",
-        "Know the extinguisher location",
-        "Increase FiO2 before cautery",
-        "Keep prep solution wet",
-        "Hide the fire plan to reduce distraction"
+        "Carboxyhemoglobin can make SpO2 appear falsely high",
+        "CO always drives SpO2 to exactly 85%",
+        "CO prevents the probe from detecting a pulse",
+        "CO causes a falsely low hemoglobin concentration"
       ],
       "answer": [
-        0,
-        1,
-        2
+        0
       ],
-      "explanation": "Preparation includes training and drills, identifying high-risk cases, assigning tasks, and knowing the extinguisher location.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "Standard two-wavelength pulse oximetry cannot reliably distinguish oxyhemoglobin from carboxyhemoglobin and may therefore display a falsely reassuring saturation. Co-oximetry is required.",
+      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Study Guide p. 4",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "CO₂ Absorbents and Scavenging"
         ],
-        "pages": "9",
+        "studyGuidePage": "4",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5736,33 +5721,29 @@
     {
       "id": "77",
       "set": 2,
-      "type": "multi",
-      "stem": "Which THREE elements make up the operating-room fire triangle? (Select 3)",
+      "type": "single",
+      "stem": "What NIOSH ceiling recommendation is commonly taught for a halogenated anesthetic used without nitrous oxide?",
       "options": [
-        "Ignition source",
-        "Oxidizer",
-        "Fuel",
-        "Carbon dioxide absorbent",
-        "Pipeline regulator",
-        "Scavenging vacuum"
+        "2 ppm",
+        "25 ppm",
+        "50 ppm",
+        "0.05 ppm"
       ],
       "answer": [
-        0,
-        1,
-        2
+        0
       ],
-      "explanation": "A fire requires an ignition source, oxidizer, and fuel.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "The course material lists a 2 ppm ceiling for a halogenated agent used alone.",
+      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Study Guide p. 4",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "CO₂ Absorbents and Scavenging"
         ],
-        "pages": "9",
+        "studyGuidePage": "4",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5773,28 +5754,28 @@
       "id": "78",
       "set": 2,
       "type": "single",
-      "stem": "Which member of the fire triangle is primarily controlled by the anesthesia team?",
+      "stem": "What NIOSH time-weighted exposure limit is commonly taught for nitrous oxide during administration?",
       "options": [
-        "Oxidizer concentration",
-        "Surgical ignition source",
-        "Drape material",
-        "Electrosurgical return-pad size"
+        "25 ppm",
+        "2 ppm",
+        "0.5 ppm",
+        "100 ppm"
       ],
       "answer": [
         0
       ],
-      "explanation": "The anesthesia team primarily controls oxidizers such as oxygen and nitrous oxide.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "The study guide lists 25 ppm as the NIOSH time-weighted recommendation for nitrous oxide during administration.",
+      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 4",
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Study Guide p. 4",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "CO₂ Absorbents and Scavenging"
         ],
-        "pages": "9",
+        "studyGuidePage": "4",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5805,28 +5786,28 @@
       "id": "79",
       "set": 2,
       "type": "single",
-      "stem": "Why does replacing part of the oxygen with nitrous oxide NOT eliminate airway-fire risk?",
+      "stem": "In an open scavenging interface, what happens when suction is too low?",
       "options": [
-        "N2O supports combustion as an oxidizer",
-        "N2O is a liquid fuel",
-        "N2O disables the fire alarm",
-        "N2O increases cuff pressure"
+        "Waste gas can spill into the operating room",
+        "The reservoir bag collapses",
+        "Negative pressure is transmitted directly to the patient",
+        "The APL valve closes automatically"
       ],
       "answer": [
         0
       ],
-      "explanation": "Nitrous oxide supports combustion and should not be used as a strategy to reduce oxidizer risk.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "Open interfaces are valveless and vent to room air. Insufficient suction allows waste gas to escape into the room; excessive suction simply entrains room air.",
+      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 5",
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Study Guide p. 5",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "CO₂ Absorbents and Scavenging"
         ],
-        "pages": "9",
+        "studyGuidePage": "5",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5836,31 +5817,29 @@
     {
       "id": "80",
       "set": 2,
-      "type": "multi",
-      "stem": "Which TWO actions reduce fire risk when oxygen is being used near the face? (Select 2)",
+      "type": "single",
+      "stem": "A closed scavenging interface loses vacuum during a case. What should you expect?",
       "options": [
-        "Use the lowest acceptable FiO2",
-        "Allow alcohol-based prep to dry fully",
-        "Add N2O to reduce oxygen fraction",
-        "Seal oxygen under the drapes",
-        "Increase fresh gas flow under drapes"
+        "The reservoir bag distends and the positive-pressure relief valve may vent to the room",
+        "The reservoir bag collapses and the negative-pressure relief valve opens",
+        "The oxygen analyzer alarms for low FiO2",
+        "The vaporizer shuts off"
       ],
       "answer": [
-        0,
-        1
+        0
       ],
-      "explanation": "Fire prevention includes using the lowest acceptable FiO2 and allowing flammable prep solutions to dry completely.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "With vacuum failure, gas accumulates in a closed interface, distending the reservoir and opening the positive-pressure relief valve if pressure rises enough.",
+      "citation": "CO₂ Absorbents and Scavenging · Study Guide p. 5",
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Study Guide p. 5",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "CO₂ Absorbents and Scavenging"
         ],
-        "pages": "9",
+        "studyGuidePage": "5",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5871,28 +5850,28 @@
       "id": "81",
       "set": 2,
       "type": "single",
-      "stem": "What are common early signs of an operating-room fire?",
+      "stem": "During mask ventilation, the chest appears to move slightly but there is no capnogram and SpO2 is falling. What is the best interpretation?",
       "options": [
-        "Pop, flash, or smoke",
-        "Bradycardia and hypothermia only",
-        "Low pipeline pressure only",
-        "A curare cleft"
+        "Ventilation is inadequate despite the apparent chest movement",
+        "Ventilation is adequate because the chest moves",
+        "The pulse oximeter must be wrong",
+        "The patient is necessarily bronchospastic"
       ],
       "answer": [
         0
       ],
-      "explanation": "The fire section lists a pop, flash, or smoke as early warning signs.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "Objective evidence such as sustained oxygen saturation, exhaled volume, airway pressure, and waveform ETCO2 should outweigh a misleading visual impression of chest movement.",
+      "citation": "Airway Equipment · Study Guide p. 6",
+      "sourceTitle": "Airway Equipment",
+      "sourceLocator": "Study Guide p. 6",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Airway Equipment"
         ],
-        "pages": "9",
+        "studyGuidePage": "6",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "Airway",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5903,28 +5882,28 @@
       "id": "82",
       "set": 2,
       "type": "single",
-      "stem": "An airway fire occurs. What should happen to the tracheal tube and gas flow?",
+      "stem": "During mask ventilation, which pattern most strongly suggests upper-airway obstruction rather than a leak?",
       "options": [
-        "Remove the tube and stop gas flow simultaneously",
-        "Stop gas flow, wait 30 seconds, then remove the tube",
-        "Increase oxygen flow while removing the tube",
-        "Leave the tube in place until an extinguisher arrives"
+        "High airway pressure with little exhaled volume",
+        "Low airway pressure with little exhaled volume",
+        "Normal pressure with normal volume",
+        "Low pressure with a large exhaled volume"
       ],
       "answer": [
         0
       ],
-      "explanation": "The guide emphasizes simultaneous removal of the burning tube and cessation of gas flow.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "Obstruction requires pressure but produces little flow or volume. A leak more often produces low pressure with low delivered or exhaled volume.",
+      "citation": "Airway Equipment · Study Guide p. 6",
+      "sourceTitle": "Airway Equipment",
+      "sourceLocator": "Study Guide p. 6",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Airway Equipment"
         ],
-        "pages": "9",
+        "studyGuidePage": "6",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "Airway",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5935,28 +5914,28 @@
       "id": "83",
       "set": 2,
       "type": "single",
-      "stem": "After removing a burning endotracheal tube and stopping gases, what should be placed into the airway?",
+      "stem": "Which maneuvers make up the classic triple airway maneuver?",
       "options": [
-        "Saline or water",
-        "Alcohol",
-        "Mineral oil",
-        "Hydrogen peroxide"
+        "Head extension, chin lift, and jaw thrust",
+        "Neck flexion, cricoid pressure, and tongue traction",
+        "Jaw closure, head flexion, and shoulder depression",
+        "Chin tuck, neck rotation, and oral suction"
       ],
       "answer": [
         0
       ],
-      "explanation": "Saline or water is used to extinguish residual airway fire and cool tissues.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "The triple airway maneuver combines head extension, chin lift, and jaw thrust to relieve soft-tissue obstruction.",
+      "citation": "Airway Equipment · Study Guide p. 6",
+      "sourceTitle": "Airway Equipment",
+      "sourceLocator": "Study Guide p. 6",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Airway Equipment"
         ],
-        "pages": "9",
+        "studyGuidePage": "6",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "Airway",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5967,28 +5946,28 @@
       "id": "84",
       "set": 2,
       "type": "single",
-      "stem": "After an airway fire is extinguished, which assessment may be needed?",
+      "stem": "Which airway adjunct is generally better tolerated in an awake or lightly sedated patient?",
       "options": [
-        "Bronchoscopy to assess airway injury",
-        "PISS inspection only",
-        "Routine extubation without assessment",
-        "No further evaluation if SpO2 is normal"
+        "Nasopharyngeal airway",
+        "Oropharyngeal airway",
+        "Rigid bite block",
+        "Oral RAE tube"
       ],
       "answer": [
         0
       ],
-      "explanation": "After extinguishing an airway fire, the airway should be assessed and bronchoscopy may be needed, with reintubation as indicated.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "An NPA is usually better tolerated in an awake or lightly sedated patient. An OPA can trigger gagging or laryngospasm when airway reflexes are intact.",
+      "citation": "Airway Equipment · Study Guide p. 6",
+      "sourceTitle": "Airway Equipment",
+      "sourceLocator": "Study Guide p. 6",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Airway Equipment"
         ],
-        "pages": "9",
+        "studyGuidePage": "6",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "Airway",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -5999,28 +5978,28 @@
       "id": "85",
       "set": 2,
       "type": "single",
-      "stem": "For a fire on the patient rather than in the airway, what should be removed promptly?",
+      "stem": "What alignment is targeted when ramping a patient with obesity for airway management?",
       "options": [
-        "Burning drapes and material",
-        "The arterial line only",
-        "The O2 cylinder yoke",
-        "All ECG electrodes before extinguishing"
+        "External auditory meatus level with the sternal notch",
+        "Chin level with the xiphoid",
+        "Nose level with the umbilicus",
+        "Shoulders below the mattress edge"
       ],
       "answer": [
         0
       ],
-      "explanation": "For a patient fire, turn off gases and remove burning drapes and material before or while extinguishing the fire.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "Ramping elevates the upper torso and head until the external ear is horizontally aligned with the sternal notch.",
+      "citation": "Airway Equipment · Study Guide p. 6",
+      "sourceTitle": "Airway Equipment",
+      "sourceLocator": "Study Guide p. 6",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Airway Equipment"
         ],
-        "pages": "9",
+        "studyGuidePage": "6",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "Airway",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -6031,28 +6010,28 @@
       "id": "86",
       "set": 2,
       "type": "single",
-      "stem": "If an operating-room fire does not go out with water or saline, which extinguisher does the course guide recommend?",
+      "stem": "How do Macintosh and Miller blades differ in how they elevate the epiglottis?",
       "options": [
-        "CO2 extinguisher",
-        "Foam extinguisher",
-        "Class D metal extinguisher",
-        "Water-only extinguisher"
+        "Macintosh lifts indirectly from the vallecula; Miller lifts the epiglottis directly",
+        "Macintosh lifts directly; Miller acts only on the tongue",
+        "Both must be placed beneath the epiglottis",
+        "Both lift exclusively through a video camera"
       ],
       "answer": [
         0
       ],
-      "explanation": "The course guide recommends a carbon dioxide extinguisher when water or saline is insufficient.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "The curved Macintosh blade sits in the vallecula and tensions the glossoepiglottic ligament. The straight Miller blade is used to directly lift the epiglottis.",
+      "citation": "Airway Equipment · Study Guide p. 6",
+      "sourceTitle": "Airway Equipment",
+      "sourceLocator": "Study Guide p. 6",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Airway Equipment"
         ],
-        "pages": "9",
+        "studyGuidePage": "6",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "Airway",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -6063,28 +6042,28 @@
       "id": "87",
       "set": 2,
       "type": "single",
-      "stem": "During evacuation for an uncontrolled OR fire, what should be done with the room door?",
+      "stem": "Why is a reinforced or armored endotracheal tube useful for prone head-and-neck procedures?",
       "options": [
-        "Close it and do not reopen it",
-        "Prop it open for airflow",
-        "Remove it from the hinges",
-        "Open it intermittently to vent smoke"
+        "It resists kinking and external compression",
+        "It eliminates aspiration risk",
+        "Its cuff is laser resistant",
+        "It cannot migrate with position changes"
       ],
       "answer": [
         0
       ],
-      "explanation": "The guide instructs evacuation with the door closed and not reopened, helping contain fire and smoke.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "Reinforced tubes contain a spiral support that helps them resist kinking or compression when access to the airway is limited or the neck is flexed.",
+      "citation": "Airway Equipment · Study Guide p. 6",
+      "sourceTitle": "Airway Equipment",
+      "sourceLocator": "Study Guide p. 6",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Airway Equipment"
         ],
-        "pages": "9",
+        "studyGuidePage": "6",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "Airway",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -6094,33 +6073,29 @@
     {
       "id": "88",
       "set": 2,
-      "type": "multi",
-      "stem": "Which THREE actions belong after an operating-room fire? (Select 3)",
+      "type": "single",
+      "stem": "What is the purpose of the preformed bend in an oral or nasal RAE tube?",
       "options": [
-        "Preserve the scene and involved equipment",
-        "Notify the risk manager",
-        "Report and treat it as an adverse event",
-        "Discard the tube and circuit immediately",
-        "Resume the case without documentation",
-        "Delete monitor data"
+        "It routes the connector away from the surgical field",
+        "It increases cuff pressure automatically",
+        "It prevents all tube migration",
+        "It allows the tube to function without a connector"
       ],
       "answer": [
-        0,
-        1,
-        2
+        0
       ],
-      "explanation": "Post-fire management includes preserving evidence, notifying risk management, reporting the event, and using it for training and drills.",
-      "citation": "Exam 1 Equipment Study Guide · p. 9",
+      "explanation": "RAE tubes are shaped to direct the breathing-circuit connection away from oral, maxillofacial, or nasal surgical fields.",
+      "citation": "Airway Equipment · Study Guide p. 6",
+      "sourceTitle": "Airway Equipment",
+      "sourceLocator": "Study Guide p. 6",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Airway Equipment"
         ],
-        "pages": "9",
+        "studyGuidePage": "6",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 9",
-      "topic": "Hazards & Safety",
+      "topic": "Airway",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -6131,27 +6106,27 @@
       "id": "89",
       "set": 2,
       "type": "single",
-      "stem": "What is the normal pipeline pressure range emphasized in the equipment guide?",
+      "stem": "Which gas strategy best reduces airway-fire risk during laser airway surgery?",
       "options": [
-        "14–16 psi",
-        "25–30 psi",
-        "50–55 psi",
-        "90–130 psi"
+        "Use air with the lowest acceptable FiO2 and avoid nitrous oxide",
+        "Use 100% oxygen and add nitrous oxide",
+        "Use nitrous oxide as the sole carrier gas",
+        "Use the highest FiO2 possible throughout"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "The course quick-reference table lists pipeline pressure as 50–55 psi.",
-      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "explanation": "Both oxygen and nitrous oxide support combustion. The study guide recommends air with the lowest acceptable FiO2 and avoiding N2O near an ignition source.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 7",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 7",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "10",
+        "studyGuidePage": "7",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -6163,28 +6138,28 @@
       "id": "90",
       "set": 2,
       "type": "single",
-      "stem": "What pressure is expected after the first-stage cylinder regulator?",
+      "stem": "After failed intubation and failed rescue ventilation, the patient cannot be oxygenated. What definitive emergency airway step should not be delayed?",
       "options": [
-        "About 14 psi",
-        "About 25 psi",
-        "About 45 psi",
-        "About 100 psi"
+        "Cricothyrotomy",
+        "Another routine direct-laryngoscopy attempt",
+        "Waiting for SpO2 to fall further",
+        "Nasopharyngeal airway placement only"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "The first-stage regulator lowers variable cylinder pressure to about 45 psi, below normal pipeline pressure.",
-      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "explanation": "Front-of-neck access by cricothyrotomy is the final rescue when intubation and oxygenation fail. Repeated unsuccessful attempts should not delay it.",
+      "citation": "Airway Equipment · Study Guide p. 7",
+      "sourceTitle": "Airway Equipment",
+      "sourceLocator": "Study Guide p. 7",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Airway Equipment"
         ],
-        "pages": "10",
+        "studyGuidePage": "7",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 10",
-      "topic": "Hazards & Safety",
+      "topic": "Airway",
       "imageSvg": null,
       "image": null,
       "imageId": null,
@@ -6195,27 +6170,27 @@
       "id": "91",
       "set": 2,
       "type": "single",
-      "stem": "What pressure range is listed for the second-stage O2 regulator?",
+      "stem": "Which sequence best matches the risk-management process taught for workstation hazards?",
       "options": [
-        "2–5 psi",
-        "14–16 psi",
-        "25–30 psi",
-        "50–55 psi"
+        "Define the problem → estimate likelihood → weigh resources → apply solutions → monitor",
+        "Monitor → ignore low-risk events → apply resources → define problem",
+        "Apply a solution → estimate likelihood → document only",
+        "Estimate cost → avoid reporting → monitor"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "The quick-reference table lists second-stage oxygen pressure at approximately 14–16 psi.",
-      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "explanation": "The lecture framework is to define problems, estimate likelihood, weigh available resources, apply solutions, and then monitor the result.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 8",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 8",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "10",
+        "studyGuidePage": "8",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -6227,27 +6202,27 @@
       "id": "92",
       "set": 2,
       "type": "single",
-      "stem": "At what O2 supply pressure does the fail-safe begin reducing other gas flow?",
+      "stem": "What electrical supply range is typical for an anesthesia workstation in the course material?",
       "options": [
-        "Below 50–55 psig",
-        "Below 40–45 psig",
-        "Below about 25–30 psig",
-        "Below 5 psig only"
+        "90–130 V AC at 50–60 Hz",
+        "12–24 V DC at 10 Hz",
+        "220–240 V DC only",
+        "500–1000 V AC at 1 kHz"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "The fail-safe begins proportionally reducing other gases below about 25–30 psig and stops them below about 20 psig.",
-      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "explanation": "The equipment study guide lists anesthesia workstation power at approximately 90–130 V AC and 50–60 Hz.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 8",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 8",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "10",
+        "studyGuidePage": "8",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -6259,27 +6234,27 @@
       "id": "93",
       "set": 2,
       "type": "single",
-      "stem": "What minimum oxygen fraction does the O2/N2O proportioning system target?",
+      "stem": "Why may an anesthesia workstation have separate circuit breakers for the AC supply, battery, and accessory outlets?",
       "options": [
-        "18%",
-        "21%",
-        "25%",
-        "50%"
+        "A fault in one electrical branch can be isolated without necessarily disabling all others",
+        "All components require different wall voltages",
+        "It converts alternating current to direct current for the patient",
+        "It prevents radiofrequency interference from the ESU"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "The course guide teaches a 25% minimum FiO2 for the O2/N2O proportioning relationship.",
-      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "explanation": "Separate protection allows electrical faults to be isolated to specific branches such as incoming AC, the battery circuit, or convenience outlets.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 8",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 8",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "10",
+        "studyGuidePage": "8",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -6291,27 +6266,27 @@
       "id": "94",
       "set": 2,
       "type": "single",
-      "stem": "What flow range does the oxygen flush deliver?",
+      "stem": "What frequency range is used by a typical electrosurgical unit for cutting and coagulation?",
       "options": [
-        "1–5 L/min",
-        "10–20 L/min",
-        "35–75 L/min",
-        "100–150 L/min"
+        "About 500 kHz to 1 MHz",
+        "50 to 60 Hz",
+        "5 to 10 Hz",
+        "10 to 20 MHz only"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "The oxygen flush delivers approximately 35–75 L/min at intermediate-system pressure.",
-      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "explanation": "Electrosurgery uses radiofrequency current in roughly the 500 kHz to 1 MHz range, high enough to produce tissue heating without directly stimulating myocardium like 50–60 Hz current.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 9",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 9",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "10",
+        "studyGuidePage": "9",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -6323,27 +6298,27 @@
       "id": "95",
       "set": 2,
       "type": "single",
-      "stem": "What is the PISS pin configuration for carbon dioxide?",
+      "stem": "Where should the ESU dispersive return pad be positioned relative to the surgical site?",
       "options": [
-        "1,5",
-        "1,6",
-        "2,5",
-        "3,5"
+        "As close to the operative site as practical with good skin contact",
+        "As far from the operative site as possible",
+        "Directly over a bony prominence",
+        "On top of an ECG electrode"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "The guide lists CO2 as pin positions 1 and 6.",
-      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "explanation": "Keeping the return electrode close to the operative field shortens the current path. Full contact reduces current density and burn risk; ECG electrodes should be kept away from the current path.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 9",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 9",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "10",
+        "studyGuidePage": "9",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -6355,27 +6330,27 @@
       "id": "96",
       "set": 2,
       "type": "single",
-      "stem": "What is the common gas outlet connector size?",
+      "stem": "After both wall power and the workstation battery are exhausted, which anesthetic resources can still remain usable?",
       "options": [
-        "10 mm ID / 12 mm OD",
-        "15 mm ID / 22 mm OD",
-        "19 mm ID / 30 mm OD",
-        "22 mm ID / 30 mm OD"
+        "Emergency oxygen plus mechanical/pneumatic delivery methods such as a variable-bypass vaporizer",
+        "Tec 6 and Aladin vaporizers only",
+        "Electronic ventilator and all integrated monitors indefinitely",
+        "Battery-powered systems after the battery is depleted"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "The common gas outlet is 15 mm internal and 22 mm external; 19 and 30 mm fittings are reserved for scavenging.",
-      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "explanation": "Once electrical power is gone, emergency oxygen and purely mechanical/pneumatic devices may remain available. Electrically heated or electronically controlled vaporizers and ventilators cannot be assumed to function.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 9",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 9",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "10",
+        "studyGuidePage": "9",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -6387,27 +6362,27 @@
       "id": "97",
       "set": 2,
       "type": "single",
-      "stem": "How much CO2 can approximately 100 g of fresh soda lime absorb?",
+      "stem": "Why is replacing oxygen with nitrous oxide not a safe way to reduce surgical-fire risk?",
       "options": [
-        "5 L",
-        "12 L",
-        "26 L",
-        "60 L"
+        "Nitrous oxide supports combustion and acts as an oxidizer",
+        "Nitrous oxide is flammable fuel",
+        "Nitrous oxide disables the electrosurgical unit",
+        "Nitrous oxide raises the flash point of drapes"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "The course guide lists a capacity of approximately 26 L of CO2 per 100 g of soda lime.",
-      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "explanation": "Nitrous oxide is not a fuel, but it supports combustion. The course material emphasizes that an O2/N2O mixture can support fire vigorously.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 9",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 9",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "10",
+        "studyGuidePage": "9",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -6419,27 +6394,27 @@
       "id": "98",
       "set": 2,
       "type": "single",
-      "stem": "What mesh size is emphasized for soda lime granules?",
+      "stem": "Which action is part of preventing an operating-room fire when an ignition source will be used near the face?",
       "options": [
-        "1–2 mesh",
-        "4–8 mesh",
-        "10–20 mesh",
-        "30–40 mesh"
+        "Allow alcohol-based prep to dry and prevent oxygen from pooling beneath drapes",
+        "Increase FiO2 to 100% before cautery",
+        "Use nitrous oxide to dilute oxygen",
+        "Cover the face tightly with dry gauze"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "The guide emphasizes 4–8 mesh as a balance between surface area and resistance.",
-      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "explanation": "Fire prevention includes allowing prep solutions to dry, minimizing oxidizer concentration, avoiding N2O, and arranging drapes so oxygen does not accumulate near an ignition source.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 9",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 9",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "10",
+        "studyGuidePage": "9",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -6451,27 +6426,27 @@
       "id": "99",
       "set": 2,
       "type": "single",
-      "stem": "What percentage of room anesthetic-gas contamination does the course guide attribute to technique-related causes?",
+      "stem": "A surgical drape ignites on the patient's body but the airway is not involved. What is the immediate management sequence?",
       "options": [
-        "10–20%",
-        "40–50%",
-        "70–80%",
-        "94–99%"
+        "Stop gas flow, remove burning drapes/material, extinguish the fire, then assess the patient",
+        "Increase oxygen flow, then cover the fire",
+        "Leave the drapes in place and activate the ventilator",
+        "Extubate first in every case"
       ],
       "answer": [
-        3
+        0
       ],
-      "explanation": "The guide attributes approximately 94–99% of contamination to anesthesia technique, such as leaks, spills, and gas flow while disconnected.",
-      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "explanation": "For a fire on the patient, stop oxidizer flow, remove burning material, extinguish with water/saline or an extinguisher as appropriate, and then assess for injury and smoke exposure.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 9",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 9",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "10",
+        "studyGuidePage": "9",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
@@ -6483,27 +6458,27 @@
       "id": "100",
       "set": 2,
       "type": "single",
-      "stem": "What minimum air-exchange rate is listed for a nonrecirculating operating room?",
+      "stem": "After an operating-room fire is extinguished and the patient is stabilized, what should happen to the involved equipment?",
       "options": [
-        "6/hr",
-        "10/hr",
-        "15+/hr",
-        "30+/hr"
+        "Preserve the scene and components for investigation and notify risk management",
+        "Discard the tube and circuit immediately",
+        "Return all equipment to service without documentation",
+        "Clean the equipment before anyone inspects it"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "The course guide lists at least 15 air exchanges per hour for a nonrecirculating OR.",
-      "citation": "Exam 1 Equipment Study Guide · p. 10",
+      "explanation": "Post-event management includes preserving the tube, circuit, drapes, and other evidence, notifying risk management, reporting the adverse event, and using the event for safety review and training.",
+      "citation": "Anesthesia Workstation Hazards & Safety · Study Guide p. 9",
+      "sourceTitle": "Anesthesia Workstation Hazards & Safety",
+      "sourceLocator": "Study Guide p. 9",
       "sourceMeta": {
         "families": [
-          "Exam 1 Equipment Study Guide"
+          "Anesthesia Workstation Hazards & Safety"
         ],
-        "pages": "10",
+        "studyGuidePage": "9",
         "citationFormat": "study-guide"
       },
-      "sourceTitle": "Exam 1 Equipment Study Guide",
-      "sourceLocator": "p. 10",
       "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
