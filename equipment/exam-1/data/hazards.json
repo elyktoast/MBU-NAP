@@ -1122,9 +1122,9 @@
       "options": [
         "Exhausted carbon dioxide absorbent",
         "Added apparatus dead space",
-        "Hypercarbia from increased apparatus dead space",
-        "Increased apparatus dead space",
-        "Correctly functioning unidirectional valve",
+        "A fully functioning unidirectional valve",
+        "A fresh carbon dioxide absorbent canister",
+        "A correctly assembled circle system",
         "Incompetent unidirectional valve"
       ],
       "answer": [
@@ -1132,7 +1132,7 @@
         1,
         5
       ],
-      "explanation": "Exhausted absorbent, incompetent valves, and added dead space can all increase inspired/rebreathed carbon dioxide.",
+      "explanation": "The lecture lists exhausted absorbent, added apparatus dead space, and missing or incompetent unidirectional valves among delivery-system causes of hypercarbia.",
       "citation": "Anesthesia Workstation Hazards & Safety · Slide 20",
       "topic": "Hazards & Safety",
       "imageSvg": null,
@@ -1544,7 +1544,7 @@
       "id": "48",
       "set": 1,
       "type": "single",
-      "stem": "an operating-room fire has been extinguished. Which action is most appropriate for subsequent risk investigation?",
+      "stem": "An operating-room fire has been extinguished. Which action is most appropriate for subsequent risk investigation?",
       "options": [
         "Discard the tube and drapes immediately",
         "Clean and return the circuit to service",
@@ -1960,17 +1960,17 @@
       "id": "61",
       "set": 1,
       "type": "single",
-      "stem": "Two O2 cylinders are mounted on a dual yoke. One is full and one is nearly empty. Which component limits transfilling from the full cylinder into the low-pressure cylinder?",
+      "stem": "Two oxygen cylinders are mounted on a double hanger yoke, one at high pressure and one at low pressure. What phenomenon can occur if both cylinders are open?",
       "options": [
-        "Yoke check valve",
-        "First-stage regulator",
-        "Flow-control valve",
-        "Common gas outlet check valve"
+        "Gas can flow from the higher-pressure cylinder into the lower-pressure cylinder",
+        "The first-stage regulator forces gas from the lower-pressure cylinder into the higher-pressure cylinder",
+        "The common gas outlet check valve equalizes the two cylinder pressures",
+        "The flow-control valve prevents any communication between the cylinders"
       ],
       "answer": [
         0
       ],
-      "explanation": "The unidirectional check valve at each yoke limits reverse flow and transfilling between cylinders.",
+      "explanation": "The lecture states that a double hanger-yoke assembly can allow transfilling, meaning gas flows from the higher-pressure cylinder into the lower-pressure cylinder. The yoke's unidirectional valve is described as reducing leakage from an empty yoke and allowing cylinder replacement during use, not as eliminating transfilling between two open cylinders.",
       "citation": "Anesthesia Workstation Hazards & Safety · Slide 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
