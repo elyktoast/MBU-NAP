@@ -1464,7 +1464,7 @@ test.describe('canonical quiz regression', () => {
 
   test('Account creation requires adult Terms and Privacy acknowledgement', async ({ page }) => {
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let signupCalls=0;
-    await page.route(cloud+'/auth/v1/signup?*',route=>{signupCalls++;return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({user:{id:'new-user',email:'new@example.com'},session:null})})});
+    let signupBody=null;await page.route(cloud+'/auth/v1/signup?*',route=>{signupCalls++;signupBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({user:{id:'new-user',email:'new@example.com'},session:null})})});
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
     await page.evaluate(()=>{localStorage.removeItem('mbu_supabase_session_v1')});
     await page.reload();await page.evaluate(() => MBUPageReady);
@@ -1477,6 +1477,8 @@ test.describe('canonical quiz regression', () => {
     await page.locator('[data-cloud-consent]').check();
     await page.locator('[data-cloud-signup]').click();
     await expect.poll(()=>signupCalls).toBe(1);
+    expect(signupBody.data).toMatchObject({snar_terms_version:'2026-09-27',snar_privacy_version:'2026-09-27',snar_adult_ack:true});
+    expect(signupBody.data.snar_accepted_at).toBeTruthy();
     await expect(page.locator('#mbu-account-panel')).toContainText('Privacy Notice');
     await expect(page.locator('#mbu-account-panel')).toContainText('Terms of Use');
   });
@@ -1493,21 +1495,21 @@ test.describe('canonical quiz regression', () => {
 
   test('Signed-in account can submit a private privacy request', async ({ page }) => {
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let requestBody=null;
-    await page.route(cloud+'/rest/v1/rpc/snar_submit_privacy_request',route=>{requestBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:'17'})});
+    await page.route(cloud+'/rest/v1/snar_privacy_requests',route=>{requestBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:201,contentType:'application/json',body:JSON.stringify([{id:17,...requestBody,status:'received'}])})});
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
     await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('[data-cloud-signed-in]')).toBeVisible();
     await page.locator('[data-cloud-signed-in] summary').filter({hasText:'Privacy & Account'}).click();
-    await page.locator('[data-privacy-type]').selectOption('export');
+    await page.locator('[data-privacy-type]').selectOption('access');
     await page.locator('[data-privacy-details]').fill('Please provide my account-linked data.');
     await page.locator('[data-privacy-submit]').click();
     await expect(page.locator('[data-account-message]')).toContainText('Privacy request received');
-    expect(requestBody).toEqual({p_request_type:'export',p_details:'Please provide my account-linked data.'});
+    expect(requestBody).toMatchObject({request_type:'access',details:'Please provide my account-linked data.'});
   });
 
   test('Signed-in user can delete account and return to signed-out state', async ({ page }) => {
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let deleted=0;
-    await page.route(cloud+'/rest/v1/rpc/snar_delete_my_account',route=>{deleted++;return route.fulfill({status:200,contentType:'application/json',body:'true'})});
+    await page.route(cloud+'/functions/v1/delete-account',route=>{deleted++;return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({deleted:true})})});
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
     await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('[data-cloud-signed-in]')).toBeVisible();
@@ -1523,7 +1525,7 @@ test.describe('canonical quiz regression', () => {
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let signupUrl='';
     await page.route(cloud+'/auth/v1/signup?*',route=>{signupUrl=route.request().url();return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({user:{id:'new-user',email:'new@example.com'},session:null})})});
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
-    await page.evaluate(() => MBUSupabase.signUp('new@example.com','long-enough-password'));
+    await page.evaluate(() => MBUSupabase.signUp('new@example.com','long-enough-password',true));
     const redirect=new URL(signupUrl).searchParams.get('redirect_to');
     expect(redirect).toMatch(/^http:\/\/127\.0\.0\.1:\d+\/$/);
   });
