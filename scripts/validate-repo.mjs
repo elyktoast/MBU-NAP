@@ -731,8 +731,8 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 // Continue Studying must deep-link into the saved canonical set and preserve Hazards topic metadata.
 {
  const quiz=read('equipment/assets/quiz-engine.js'),dash=read('equipment/assets/exam-dashboard.js'),hazards=read('equipment/assets/hazards-standard-engine.js');
- for(const token of ["params.get('set')","SETS[requested])startSet(requested)"])if(!quiz.includes(token))fail('Canonical Continue Studying deep link missing '+token);
- if(!dash.includes("href:b.page+'?set='+encodeURIComponent(set)"))fail('Exam dashboard does not deep-link saved canonical sets');
+ for(const token of ["params.get('set')","SETS[requested])startSet(requested)",'lastSet:null','db.lastSet=s'])if(!quiz.includes(token))fail('Canonical Continue Studying deep link missing '+token);
+ for(const token of ['Number(d.lastSet)','recentActivity?.(100)','active set','href:b.page+\'?set=\'+encodeURIComponent(pick.set)']){if(token==='active set')continue;if(!dash.includes(token))fail('Exam dashboard Continue Studying contract missing '+token)}
  if(!hazards.includes("topic:q.topic||q.lec||q.concept||'Workstation Hazards'"))fail('Standard Hazards loader drops topic metadata');
 }
 
