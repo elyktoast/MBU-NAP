@@ -19,15 +19,14 @@ async function buildIndex(){
   for(const src of manifest.studioSources||[]){
     const key=src.data+'|'+(src.setFilter||'all');if(seen.has(key))continue;seen.add(key);sources.push(src)
   }
-  const rows=[];
-  for(const src of sources){
+  const groups=await Promise.all(sources.map(async src=>{
     const payload=await runtime.fetchJSON(new URL(src.data,exam),{cache:'force-cache'}),all=Array.isArray(payload)?payload:(payload.questions||[]),raw=src.setFilter?all.filter(q=>Number(q.set)===Number(src.setFilter)):all;
-    for(const q of raw){
+    return raw.map(q=>{
       const bank=src.key,label=src.groupLabel||src.label,set=String(bank).startsWith('h')?1:Number(q.set||1),id=String(q.id??'');
       const uid=bank+'-'+id,stem=String(q.stem||q.q||''),topic=topicOf(q),explanation=String(q.explanation||q.exp||q.why||''),source=sourceText(q),options=Array.isArray(q.options)?q.options:(Array.isArray(q.c)?q.c:[]);
-      rows.push({uid,bank,label,set,id,stem,topic,source,search:norm([stem,topic,source,explanation,...options].join(' '))})
-    }
-  }
+      return{uid,bank,label,set,id,stem,topic,source,search:norm([stem,topic,source,explanation,...options].join(' '))}
+    })
+  })),rows=groups.flat();
   if(window.MBUQuestionGenerator?.enabled?.())for(const q of window.MBUQuestionGenerator.studioQuestions())rows.push({uid:'generated-'+q.id,bank:'generated',label:'Generated Bank',set:1,id:String(q.id),stem:String(q.stem),topic:String(q.topic||'Generated'),source:String(q.citation||q.sourceName||''),search:norm([q.stem,q.topic,q.citation,q.sourceName,q.explanation,...(q.options||[])].join(' '))});
   return rows
 }
