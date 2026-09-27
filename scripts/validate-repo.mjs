@@ -777,6 +777,19 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(report?.duplicates?.crossBankExactGroups!==0||report?.duplicates?.confirmedSamePoolKeyConflicts?.length!==0)fail('Phase 1 audit report contains unresolved exact cross-bank/key conflicts');
 }
 
+// Canonical content metadata must be complete and use the shared taxonomy.
+{
+ const manifest=JSON.parse(read('equipment/exam-1/banks.json')),topics=new Set(manifest.contentTaxonomy?.topics||[]),sources=new Set(manifest.contentTaxonomy?.sourceTitles||[]);
+ if(topics.size!==5||sources.size!==5)fail('Content taxonomy is incomplete');
+ for(const file of ['bank1.json','bank2.json','bank3.json','combined.json','hazards.json']){
+  const payload=JSON.parse(read('equipment/exam-1/data/'+file)),qs=Array.isArray(payload)?payload:(payload.questions||[]);
+  for(const q of qs){
+   if(!topics.has(String(q.topic||'')))fail(file+' '+String(q.set||1)+'::'+q.id+' has noncanonical topic metadata');
+   if(!sources.has(String(q.sourceTitle||'')))fail(file+' '+String(q.set||1)+'::'+q.id+' has noncanonical source metadata');
+  }
+ }
+}
+
 // Semantic content checking is mandatory in quality CI.
 {
  const pkg=JSON.parse(read('package.json')),ci=read('.github/workflows/ci.yml');
