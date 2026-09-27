@@ -98,6 +98,23 @@ Stored with authentication:
 
 Purpose: handle access, correction, deletion, appeal, and other privacy requests.
 
+## FERPA, HIPAA, child privacy, and state-law boundary
+
+### FERPA
+The current deployment is independently operated, is not acting for an educational institution, is not under institutional control, and is not intended to receive education records or personally identifiable information from education records. FERPA generally regulates covered educational agencies and institutions and certain outside parties acting for them under specified conditions; the current design should not represent itself as a FERPA-covered school system or school-official vendor. If a school later adopts the tool, directs its use, or provides education-record information, a new FERPA analysis and appropriate institutional agreement/direct-control safeguards are required before that use.
+
+### HIPAA
+The current deployment is not intended to operate as a HIPAA covered entity or business associate and should not receive protected health information. If it later performs services for a covered entity or business associate involving PHI, a new HIPAA analysis and any required business-associate agreement must precede that processing.
+
+### Children
+The product is intended for adult learners, account creation and Adaptive Mode require an 18+ acknowledgement, and the service is not marketed to children. The app should not knowingly create accounts for or collect account-linked data from children under 13. If the operator obtains actual knowledge that an account belongs to a child under 13, collection should stop and the account/data should be reviewed for prompt deletion and legal handling.
+
+### State consumer privacy
+The current design voluntarily provides access/correction/deletion/appeal workflows and data-minimization controls without representing that every state privacy statute necessarily applies. Applicability depends on jurisdiction, business status, processing volume, data category, and statutory thresholds. Expansion, monetization, sale/sharing of data, health-data collection, or materially larger scale requires renewed jurisdictional review.
+
+### Legal-assent evidence
+Account signup records the Terms version, Privacy version, adult acknowledgement, client acceptance timestamp, and a server recording timestamp in a restricted ledger. Guest assent is stored only in that browser and therefore provides weaker operator-side evidence than authenticated account assent. Material legal-term changes should use a new version and require renewed affirmative acceptance.
+
 ## Data minimization
 
 The application does not intentionally collect demographic, health, financial, precise-location, government-identification, or other sensitive attributes for Adaptive Mode. It does not sell personal data or use it for targeted advertising.
