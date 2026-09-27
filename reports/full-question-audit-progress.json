@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 666,
+    "audited": 766,
     "bank2": [
       {
         "id": "S2-021",
@@ -545,9 +545,9 @@
       },
       {
         "id": "7",
-        "disposition": "CORRECT",
+        "disposition": "PASS",
         "changes": [
-          "rebuilt the NIOSH limit question to use only exposure limits actually stated in the lecture."
+          "restored combined-use exposure limits and re-sourced to Nurse Anesthesia 7e textbook"
         ]
       },
       {
@@ -817,6 +817,466 @@
       },
       {
         "id": "60",
+        "disposition": "PASS"
+      },
+      {
+        "id": "62",
+        "disposition": "PASS"
+      },
+      {
+        "id": "63",
+        "disposition": "PASS"
+      },
+      {
+        "id": "64",
+        "disposition": "CORRECT",
+        "changes": [
+          "moved the ramped-position question to the textbook source that explicitly supports the external-auditory-meatus/sternal-notch target."
+        ]
+      },
+      {
+        "id": "65",
+        "disposition": "PASS"
+      },
+      {
+        "id": "66",
+        "disposition": "PASS"
+      },
+      {
+        "id": "67",
+        "disposition": "PASS"
+      },
+      {
+        "id": "69",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed an uncited animal-nephrotoxicity aside and kept the explanation to the cited lecture."
+        ]
+      },
+      {
+        "id": "70",
+        "disposition": "PASS"
+      },
+      {
+        "id": "71",
+        "disposition": "PASS"
+      },
+      {
+        "id": "72",
+        "disposition": "PASS"
+      },
+      {
+        "id": "73",
+        "disposition": "PASS"
+      },
+      {
+        "id": "74",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced the gastric-drainage SGA item to the textbook because the lecture slide does not contain that detail."
+        ]
+      },
+      {
+        "id": "75",
+        "disposition": "PASS"
+      },
+      {
+        "id": "77",
+        "disposition": "PASS"
+      },
+      {
+        "id": "78",
+        "disposition": "PASS"
+      },
+      {
+        "id": "79",
+        "disposition": "PASS"
+      },
+      {
+        "id": "80",
+        "disposition": "PASS"
+      },
+      {
+        "id": "81",
+        "disposition": "PASS"
+      },
+      {
+        "id": "82",
+        "disposition": "PASS"
+      },
+      {
+        "id": "83",
+        "disposition": "PASS"
+      },
+      {
+        "id": "84",
+        "disposition": "PASS"
+      },
+      {
+        "id": "85",
+        "disposition": "PASS"
+      },
+      {
+        "id": "86",
+        "disposition": "PASS"
+      },
+      {
+        "id": "87",
+        "disposition": "PASS"
+      },
+      {
+        "id": "88",
+        "disposition": "PASS"
+      },
+      {
+        "id": "89",
+        "disposition": "PASS"
+      },
+      {
+        "id": "90",
+        "disposition": "PASS"
+      },
+      {
+        "id": "91",
+        "disposition": "PASS"
+      },
+      {
+        "id": "92",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed unsupported pH-shift and rapid-repurple details from the regeneration explanation."
+        ]
+      },
+      {
+        "id": "93",
+        "disposition": "PASS"
+      },
+      {
+        "id": "94",
+        "disposition": "PASS"
+      },
+      {
+        "id": "95",
+        "disposition": "PASS"
+      },
+      {
+        "id": "96",
+        "disposition": "PASS"
+      },
+      {
+        "id": "97",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected the slide locator and removed unsupported language about compressing the epiglottis against the pharyngeal wall."
+        ]
+      },
+      {
+        "id": "99",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed the overstrong 'earliest and most sensitive' claim and grounded the MH ETCO2 finding to the textbook."
+        ]
+      },
+      {
+        "id": "100",
+        "disposition": "PASS"
+      },
+      {
+        "id": "101",
+        "disposition": "PASS"
+      },
+      {
+        "id": "102",
+        "disposition": "PASS"
+      },
+      {
+        "id": "103",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced an unsupported internal spring/piston description with the fail-safe mechanism explicitly described in the textbook."
+        ]
+      },
+      {
+        "id": "104",
+        "disposition": "PASS"
+      },
+      {
+        "id": "105",
+        "disposition": "PASS"
+      },
+      {
+        "id": "106",
+        "disposition": "PASS"
+      },
+      {
+        "id": "107",
+        "disposition": "PASS"
+      },
+      {
+        "id": "108",
+        "disposition": "PASS"
+      },
+      {
+        "id": "109",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed extra electrophysiology rationale not needed for the cited lecture."
+        ]
+      },
+      {
+        "id": "110",
+        "disposition": "PASS"
+      },
+      {
+        "id": "111",
+        "disposition": "PASS"
+      },
+      {
+        "id": "112",
+        "disposition": "PASS"
+      },
+      {
+        "id": "113",
+        "disposition": "PASS"
+      },
+      {
+        "id": "114",
+        "disposition": "PASS"
+      },
+      {
+        "id": "115",
+        "disposition": "IMPROVE",
+        "changes": [
+          "changed 'mandates' to 'recommends' to match the source wording."
+        ]
+      },
+      {
+        "id": "116",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed over-specific bimetallic-strip directionality that was not required by the source and retained the supported compensation effect."
+        ]
+      },
+      {
+        "id": "117",
+        "disposition": "PASS"
+      },
+      {
+        "id": "118",
+        "disposition": "PASS"
+      },
+      {
+        "id": "119",
+        "disposition": "PASS"
+      },
+      {
+        "id": "120",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed the unsupported 253-L/16%-remaining claim and preserved the liquid-to-gas transition concept."
+        ]
+      },
+      {
+        "id": "121",
+        "disposition": "PASS"
+      },
+      {
+        "id": "122",
+        "disposition": "PASS"
+      },
+      {
+        "id": "123",
+        "disposition": "PASS"
+      },
+      {
+        "id": "124",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced vague FDA/clinical-standards wording with the exact low-flow limitation described in the textbook."
+        ]
+      },
+      {
+        "id": "125",
+        "disposition": "PASS"
+      },
+      {
+        "id": "126",
+        "disposition": "PASS"
+      },
+      {
+        "id": "127",
+        "disposition": "PASS"
+      },
+      {
+        "id": "128",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced the ≥0.90 TOF threshold to the textbook, because the lecture only recommends quantitative monitoring without giving the threshold."
+        ]
+      },
+      {
+        "id": "129",
+        "disposition": "PASS"
+      },
+      {
+        "id": "130",
+        "disposition": "PASS"
+      },
+      {
+        "id": "131",
+        "disposition": "PASS"
+      },
+      {
+        "id": "132",
+        "disposition": "IMPROVE",
+        "changes": [
+          "replaced 'strictly contraindicated' and catastrophic wording with the source's actual filling precaution."
+        ]
+      },
+      {
+        "id": "133",
+        "disposition": "PASS"
+      },
+      {
+        "id": "134",
+        "disposition": "PASS"
+      },
+      {
+        "id": "135",
+        "disposition": "PASS"
+      },
+      {
+        "id": "136",
+        "disposition": "PASS"
+      },
+      {
+        "id": "137",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed the unsupported 'gold standard' claim and grounded awake fiberoptic intubation to the textbook cervical-spine-injury algorithm."
+        ]
+      },
+      {
+        "id": "138",
+        "disposition": "PASS"
+      },
+      {
+        "id": "139",
+        "disposition": "PASS"
+      },
+      {
+        "id": "140",
+        "disposition": "PASS"
+      },
+      {
+        "id": "141",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced an unsupported numeric cuff-pressure limit with the high-volume, low-pressure cuff property actually taught."
+        ]
+      },
+      {
+        "id": "142",
+        "disposition": "PASS"
+      },
+      {
+        "id": "143",
+        "disposition": "PASS"
+      },
+      {
+        "id": "144",
+        "disposition": "PASS"
+      },
+      {
+        "id": "145",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced the over-specific severe-dynamic-hyperinflation interpretation with the lecture's stated pigtail meaning."
+        ]
+      },
+      {
+        "id": "146",
+        "disposition": "PASS"
+      },
+      {
+        "id": "147",
+        "disposition": "PASS"
+      },
+      {
+        "id": "148",
+        "disposition": "PASS"
+      },
+      {
+        "id": "149",
+        "disposition": "PASS"
+      },
+      {
+        "id": "150",
+        "disposition": "PASS"
+      },
+      {
+        "id": "151",
+        "disposition": "PASS"
+      },
+      {
+        "id": "152",
+        "disposition": "PASS"
+      },
+      {
+        "id": "153",
+        "disposition": "PASS"
+      },
+      {
+        "id": "154",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced an over-detailed diffusion/necrosis mechanism with the cuff-pressure effect explicitly listed in the textbook."
+        ]
+      },
+      {
+        "id": "155",
+        "disposition": "PASS"
+      },
+      {
+        "id": "156",
+        "disposition": "PASS"
+      },
+      {
+        "id": "157",
+        "disposition": "PASS"
+      },
+      {
+        "id": "158",
+        "disposition": "PASS"
+      },
+      {
+        "id": "159",
+        "disposition": "PASS"
+      },
+      {
+        "id": "160",
+        "disposition": "CORRECT",
+        "changes": [
+          "re-sourced the KOH safety rationale to the textbook and removed the broader unsupported 'largely eliminated' framing."
+        ]
+      },
+      {
+        "id": "161",
+        "disposition": "CORRECT",
+        "changes": [
+          "removed the unsupported sixth-cervical-vertebra specificity and used the textbook's more accurate cricoid-pressure description."
+        ]
+      },
+      {
+        "id": "162",
+        "disposition": "PASS"
+      },
+      {
+        "id": "163",
+        "disposition": "PASS"
+      },
+      {
+        "id": "164",
         "disposition": "PASS"
       }
     ],
@@ -2990,122 +3450,117 @@
       }
     ]
   },
-  "remaining": 1334,
+  "remaining": 1234,
   "lastBatch": {
-    "banks": [
-      "bank3.json",
-      "bank1.json"
-    ],
+    "bank": "bank1.json",
     "audited": 100,
-    "bank3Count": 40,
-    "bank1Count": 60,
     "ids": [
-      "S5-T166",
-      "S5-T168",
-      "S5-T57",
-      "S5-R41",
-      "S5-V120",
-      "S5-V117",
-      "S5-T24",
-      "S5-V95",
-      "S5-T187",
-      "S5-V103",
-      "S5-T78",
-      "S5-T68",
-      "S5-Z26",
-      "S5-T32",
-      "S5-T10",
-      "S5-F41",
-      "S5-Z12",
-      "S5-V07",
-      "S5-F09",
-      "S5-F53",
-      "S5-T121",
-      "S5-V92",
-      "S5-V58",
-      "S5-F29",
-      "S5-J48",
-      "S5-T85",
-      "S5-Z24",
-      "S5-Y04",
-      "S5-V108",
-      "S5-V41",
-      "S5-T48",
-      "S5-R65",
-      "S5-V13",
-      "S5-T137",
-      "S5-T189",
-      "S5-V23",
-      "S5-F48",
-      "S5-E13",
-      "S5-T39",
-      "S5-T58",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12",
-      "13",
-      "14",
-      "15",
-      "16",
-      "17",
-      "18",
-      "19",
-      "20",
-      "21",
-      "22",
-      "23",
-      "24",
-      "25",
-      "26",
-      "27",
-      "28",
-      "29",
-      "30",
-      "31",
-      "32",
-      "33",
-      "34",
-      "35",
-      "36",
-      "37",
-      "38",
-      "39",
-      "40",
-      "41",
-      "42",
-      "43",
-      "44",
-      "45",
-      "46",
-      "47",
-      "48",
-      "49",
-      "50",
-      "51",
-      "52",
-      "53",
-      "54",
-      "55",
-      "56",
-      "57",
-      "58",
-      "59",
-      "60"
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67",
+      "69",
+      "70",
+      "71",
+      "72",
+      "73",
+      "74",
+      "75",
+      "77",
+      "78",
+      "79",
+      "80",
+      "81",
+      "82",
+      "83",
+      "84",
+      "85",
+      "86",
+      "87",
+      "88",
+      "89",
+      "90",
+      "91",
+      "92",
+      "93",
+      "94",
+      "95",
+      "96",
+      "97",
+      "99",
+      "100",
+      "101",
+      "102",
+      "103",
+      "104",
+      "105",
+      "106",
+      "107",
+      "108",
+      "109",
+      "110",
+      "111",
+      "112",
+      "113",
+      "114",
+      "115",
+      "116",
+      "117",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "123",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "133",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155",
+      "156",
+      "157",
+      "158",
+      "159",
+      "160",
+      "161",
+      "162",
+      "163",
+      "164"
     ],
     "notes": [
-      "Finished the final 40 unaudited Bank 3 questions, then audited the next 60 Bank 1 questions for a 100-question batch.",
-      "Visually verified the Bank 3 emphysema pressure-volume loop and flowmeter-leak image; Bank 1 embedded SVG questions were checked against their stems, keys, and lecture content.",
-      "Bank 1 required several source-fidelity corrections, including the unsupported combined NIOSH limit, bougie tactile details, underdamping diastolic claim, OPA sizing, dyshemoglobin key, peripheral arterial-waveform wording, vaporizer tipping sequence, and multiple slide locators.",
-      "Bank 3 received targeted source-fidelity, metadata, and wording fixes. No unchanged retained answer key was found to be wrong."
+      "Audited the next 100 Bank 1 questions, using the lecture material as the primary source and Nurse Anesthesia, 7th ed. when the lecture omitted needed detail.",
+      "Restored Bank 1 question 7 on combined halogenated anesthetic plus nitrous oxide exposure and re-sourced it to Nurse Anesthesia 7e, which explicitly gives 0.5 ppm halogenated agent with N2O and 25 ppm N2O over an 8-hour TWA.",
+      "Re-sourced textbook-dependent questions on ramped positioning, second-generation supraglottic gastric drainage, malignant hyperthermia ETCO2 findings, fail-safe mechanics, low-flow sevoflurane, TOF recovery, cervical-spine airway management, N2O-related cuff pressure, KOH absorbent safety, and cricoid pressure.",
+      "Corrected or tightened unsupported/overstated lecture-based claims including Miller-blade mechanics, N2O cylinder residual volume, bimetallic compensation directionality, cuff pressure limits, and pigtail capnogram interpretation."
     ]
   },
   "lastCorrection": {
