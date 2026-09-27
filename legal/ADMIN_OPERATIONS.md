@@ -4,7 +4,9 @@
 The operator-admin role is stored in a private Supabase table and checked by server-side SECURITY DEFINER functions. It is not based on user-editable metadata.
 
 ## Permitted operator-admin functions
-- View a high-level compliance/system summary.
+- View a high-level compliance/system summary, including account counts, approximate guest-session counts, CAT-user counts, and calibration totals.
+- View limited account-management metadata (email, created/last sign-in, access status, current legal acceptance, CAT-used indicator).
+- Suspend or re-grant cloud synchronization and Adaptive Mode access.
 - Export legal-assent audit records.
 - View privacy requests and update their workflow status.
 - Run defined retention cleanup routines.
