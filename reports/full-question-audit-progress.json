@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 46,
+    "audited": 66,
     "bank2": [
       {
         "id": "S2-021",
@@ -189,6 +189,86 @@
       {
         "id": "S3-055",
         "disposition": "IMPROVE"
+      },
+      {
+        "id": "S3-058",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S3-068",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S3-076",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S3-087",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S3-088",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S3-093",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S3-096",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S3-099",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S4-023",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "S4-026",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "S4-029",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S4-038",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S4-041",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S4-047",
+        "disposition": "REMOVE_REPLACE"
+      },
+      {
+        "id": "S4-058",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S4-059",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "S4-063",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S4-068",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S4-076",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "S4-080",
+        "disposition": "IMPROVE"
       }
     ],
     "bank1": [
@@ -278,15 +358,15 @@
       }
     ]
   },
-  "remaining": 1954,
+  "remaining": 1934,
   "lastBatch": {
     "bank": "bank2.json",
     "audited": 20,
     "notes": [
-      "Expanded weak explanations with source-supported mechanisms and clinical distinctions.",
-      "Corrected multiple inaccurate source locators, including Monitoring slides 70, 31, and 85 and Medical Gas slides 30, 21, and 43.",
-      "Moved two claims to the SRNA Equipment Study Guide where it provided cleaner direct support.",
-      "Balanced distractors where answer specificity was functioning as a clue."
+      "Corrected source locators for NIBP sizing, arterial damping, radial cannulation, Bodok seal, and related items.",
+      "Replaced a float-specific flowmeter convention not explicitly taught by the lecture with the directly supported widest-part rule.",
+      "Rewrote the absorber chemistry item to test the actual sodium-carbonate intermediate shown in the lecture.",
+      "Expanded scavenging, airway, low-flow rebreathing, and absorbent rationales."
     ]
   }
 }
