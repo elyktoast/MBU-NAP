@@ -5,10 +5,13 @@ const safe=key=>{try{return JSON.parse(localStorage.getItem(key)||'null')}catch{
 function continueForBank(b){
   const d=safe(b.storageKey);if(!d)return null;
   if(d.sets&&typeof d.sets==='object'){
-    for(const set of b.sets||[]){
-      const st=d.sets[set]||{},count=Number(b.questionsPerSet||0)||Object.keys(st.graded||{}).length,done=Object.values(st.graded||{}).filter(Boolean).length;
-      if(done<count){const pos=Math.min(Math.max(0,Number(st.current)||0),Math.max(0,count-1));return{label:b.label,detail:'Practice Set '+set+' · Question '+(pos+1)+' / '+count,href:b.page+'?set='+encodeURIComponent(set)}}
-    }
+    const states=(b.sets||[]).map(set=>{
+      const st=d.sets[set]||{},count=Number(b.questionsPerSet||0)||Object.keys(st.graded||{}).length,done=Object.values(st.graded||{}).filter(Boolean).length,current=Math.min(Math.max(0,Number(st.current)||0),Math.max(0,count-1));
+      return{set,st,count,done,current,incomplete:done<count,started:done>0||current>0}
+    });
+    const recent=window.MBUStudyIntelligence?.recentActivity?.(100)||[],recentSet=Number(recent.find(x=>x.bank===b.studioKey)?.set)||0;
+    const pick=states.find(x=>x.incomplete&&x.set===recentSet)||states.find(x=>x.incomplete&&x.started)||states.find(x=>x.incomplete);
+    if(pick)return{label:b.label,detail:'Practice Set '+pick.set+' · Question '+(pick.current+1)+' / '+pick.count,href:b.page+'?set='+encodeURIComponent(pick.set)}
   }
   return{label:b.label,detail:'Review completed progress',href:b.page}
 }
