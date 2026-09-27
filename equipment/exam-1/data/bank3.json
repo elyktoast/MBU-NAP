@@ -757,7 +757,7 @@
       "answer": [
         1
       ],
-      "explanation": "From the lecture: liquid used (mL/hr) = vol% x FGF (L/min) x 3. So 2 x 2 x 3 = 12 mL/hr. The factor of 3 reflects that 1 mL of liquid makes about 200 mL of vapor.",
+      "explanation": "The lecture's approximation is liquid agent used (mL/hr) = vaporizer setting (%) × fresh gas flow (L/min) × 3. At 2% and 2 L/min, this is 2 × 2 × 3 = about 12 mL over one hour. The rule uses roughly 200 mL of vapor per milliliter of liquid; actual use varies with conditions and vaporizer behavior.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 52 (PDF p. 26)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -825,7 +825,7 @@
       "answer": [
         2
       ],
-      "explanation": "MH increases CO2 production, so the analyzer table lists it under CO2 and Box 18.1 lists it first among causes of increased ETCO2. the temperature change is a LATE sign of MH. ETCO2 rises, not falls.",
+      "explanation": "Malignant hyperthermia increases CO2 production, so an otherwise unexplained rise in ETCO2 can appear early. The monitoring lecture lists malignant hyperthermia among causes of increased ETCO2 and identifies hyperthermia as a late sign. A falling ETCO2 or SpO2 is not the characteristic earliest finding here.",
       "citation": "Monitoring · Slides 42, 43, 84 (PDF p. 42, 43, 85)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -999,7 +999,7 @@
       "answer": [
         2
       ],
-      "explanation": "V3 was most sensitive (86.8%), V4 second (78.9%), and V5 third (65.8%). 97% of ischemic events showed ST depression, not elevation. monitor lead II for rhythm and V3 for ischemia. V5 is the classic trap answer.",
+      "explanation": "The lecture reports V3 as most sensitive in this vascular surgery study (86.8%), followed by V4 (78.9%) and V5 (65.8%). Most ischemic events showed ST depression. Lead II remains useful for rhythm monitoring, while lead selection for ischemia should also reflect the patient's preoperative 12-lead ECG.",
       "citation": "Monitoring · Slide 58 (PDF p. 59)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -1165,7 +1165,7 @@
       "type": "single",
       "stem": "A patient with confirmed methemoglobinemia is breathing 100% O2, and an ABG shows PaO2 420 mmHg, but SpO2 reads 86%. How should the pulse oximeter reading be interpreted?",
       "options": [
-        "Falsely low, because MetHb absorbs red and infrared light about equally",
+        "Unreliable, tending toward 85% because MetHb absorbs both wavelengths similarly",
         "Falsely low, because carboxyhemoglobin reads as reduced hemoglobin",
         "Accurate, reflecting true desaturation despite the high PaO2",
         "Falsely high, because MetHb absorbs only infrared light"
@@ -1173,7 +1173,7 @@
       "answer": [
         0
       ],
-      "explanation": "MetHb absorbs red (660 nm) and infrared (940 nm) light in a 1:1 ratio, which the oximeter reads as about 85%. With a true saturation near 100%, 86% is falsely low. Co-oximetry uses multiple wavelengths to measure MetHb and COHb directly.",
+      "explanation": "Methemoglobin absorbs the red and infrared wavelengths used by a two-wavelength pulse oximeter similarly, tending to drive its displayed SpO2 toward about 85%. A high PaO2 measures dissolved oxygen and does not make the pulse oximeter reliable or establish normal oxygen-carrying capacity. Use co-oximetry to quantify methemoglobin and assess the patient's true hemoglobin species.",
       "citation": "Monitoring · Slide 75 (PDF p. 76)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -16378,11 +16378,11 @@
       "orig": "F13",
       "sourceMeta": {
         "families": [
-          "Nurse Anesthesia, 7th ed."
+          "Nurse Anesthesia, 7th ed. (Elisha et al.)"
         ],
         "chapter": "16",
         "pages": "284",
-        "citationFormat": "textbook"
+        "citationFormat": "document"
       },
       "sourceTitle": "Nurse Anesthesia, 7th ed. (Elisha et al.)",
       "sourceLocator": "Chapter 16 · p. 284"

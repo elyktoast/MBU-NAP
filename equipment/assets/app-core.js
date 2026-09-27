@@ -188,7 +188,7 @@ try{
 const admin=await MBUSupabase.adminStatus();if(!admin?.is_admin){host.innerHTML='';return}
 if(!window.SRNAAdminPanel){adminPanelPromise=adminPanelPromise||window.MBUBuild.loadScript('admin-panel.js');await adminPanelPromise}
 await window.SRNAAdminPanel?.mount?.(host,modal)
-}catch{host.innerHTML=''}
+}catch(e){host.innerHTML='<div class="mbu-tools-section mbu-attention-card"><strong>Admin panel could not load</strong><p>'+String(e?.message||'Please retry.').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))+'</p><button type="button" data-admin-retry>Retry</button></div>';host.querySelector('[data-admin-retry]').onclick=()=>refreshAdminPanel(modal);record('admin-panel',e)}
 }
 function ensureAccountPanel(){
 if($('mbu-account-panel'))return;
