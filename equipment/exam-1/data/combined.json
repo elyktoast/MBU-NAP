@@ -25,7 +25,15 @@
       "image": null,
       "imageId": "img-co2-scavenging-circuit",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "19",
+        "pdfPages": "10",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG35",
@@ -43,12 +51,20 @@
       ],
       "explanation": "Because N2O pressure stays at 745 psig while liquid remains, contents are judged by weight: current weight minus the stamped tare weight equals the N2O left.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 9, 14 (PDF p. 5, 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "9, 14",
+        "pdfPages": "5, 7",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NM01",
@@ -75,7 +91,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "20, 23",
+        "pdfPages": "10, 12",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC10",
@@ -98,7 +122,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "23",
+        "pdfPages": "12",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV04",
@@ -116,12 +148,20 @@
       ],
       "explanation": "Compressed gas: 1400/1900 × 625 ≈ 460 L.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 7, 13 (PDF p. 4, 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "7, 13",
+        "pdfPages": "4, 7",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI08",
@@ -144,7 +184,16 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "21, 32",
+        "pdfPages": "11, 16",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV15",
@@ -167,7 +216,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "18",
+        "pdfPages": "9",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NA01",
@@ -190,7 +247,15 @@
       "image": null,
       "imageId": "img-air-upper-airway",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Airway Equipment"
+        ],
+        "slides": "2, 5",
+        "pdfPages": "2, 5",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG31",
@@ -208,12 +273,20 @@
       ],
       "explanation": "The proportioning system links N2O flow to O2 flow at the flow control valves, so N2O falls as O2 is turned down. The fail-safe does nothing here because O2 supply pressure is normal.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 34, 45 (PDF p. 17, 23)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "34, 45",
+        "pdfPages": "17, 23",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV01",
@@ -231,12 +304,20 @@
       ],
       "explanation": "1500/1900 × 660 ≈ 521 L. 521 ÷ 6 ≈ 87 minutes.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 13 (PDF p. 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "13",
+        "pdfPages": "7",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV10",
@@ -259,7 +340,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "21",
+        "pdfPages": "11",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI23",
@@ -280,12 +369,21 @@
       ],
       "explanation": "Low-pressure leaks most commonly occur at the absorber: loose screws, worn gaskets, granules on gaskets, open petcock, or a poorly seated canister. Pipelines, cylinders, and the fail-safe are upstream of the low-pressure system.",
       "citation": "CO₂ & Scavenging · Slide 13 (PDF p. 7); Anesthesia Workstation Hazards & Safety · Slide 19 (PDF p. 10)",
-      "topic": "CO₂ & Scavenging",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "13",
+        "pdfPages": "7",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV29",
@@ -308,7 +406,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "25, 32",
+        "pdfPages": "13, 16",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI03",
@@ -326,12 +432,21 @@
       ],
       "explanation": "The ventilator's driving gas comes from the O2 supply, so hand ventilation eliminates that use, and low FGF reduces the rest. Flushing wastes 35-75 L/min.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 5, 13 (PDF p. 3, 7); Anesthesia Workstation Hazards & Safety · Slide 23 (PDF p. 12)",
-      "topic": "Medical Gas",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "5, 13",
+        "pdfPages": "3, 7",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG12",
@@ -349,12 +464,20 @@
       ],
       "explanation": "Separate storage (on nonflammable racks) keeps a provider from grabbing an empty cylinder during an emergency. Transfilling happens between open cylinders on a double yoke, not in storage.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 10 (PDF p. 5)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "10",
+        "pdfPages": "5",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI17",
@@ -380,7 +503,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "36",
+        "pdfPages": "18",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG07",
@@ -398,12 +529,20 @@
       ],
       "explanation": "1200/1900 × 660 L ≈ 417 L. 417 L ÷ 8 L/min ≈ 52 minutes. 150 minutes treats psig as liters divided by 8.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 13 (PDF p. 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "13",
+        "pdfPages": "7",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI28",
@@ -421,12 +560,21 @@
       ],
       "explanation": "No output means no des delivery, so the patient will lighten as expired agent falls. Cover with IV anesthetic while you troubleshoot (power, fill level, warm-up).",
       "citation": "Medical Gas Systems in Anesthesia · Slides 64, 65 (PDF p. 32, 33); Anesthesia Workstation Hazards & Safety · Slide 32 (PDF p. 16)",
-      "topic": "Medical Gas",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "64, 65",
+        "pdfPages": "32, 33",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI06",
@@ -449,7 +597,16 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "19",
+        "pdfPages": "10",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC12",
@@ -472,7 +629,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "2",
+        "pdfPages": "1",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI27",
@@ -490,12 +655,21 @@
       ],
       "explanation": "Iso's higher vapor pressure makes the sevo-calibrated vaporizer overdeliver, and iso is more potent. Stop delivery from that vaporizer first; draining and servicing happen after it's out of use.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 54, 70 (PDF p. 27, 35); Anesthesia Workstation Hazards & Safety · Slide 24 (PDF p. 12)",
-      "topic": "Medical Gas",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "54, 70",
+        "pdfPages": "27, 35",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV12",
@@ -518,7 +692,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "26",
+        "pdfPages": "13",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV19",
@@ -544,7 +726,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "33",
+        "pdfPages": "17",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG28",
@@ -562,12 +752,20 @@
       ],
       "explanation": "As O2 supply pressure falls, the low-pressure alarm warns first, then the fail-safe proportionally reduces other gases (below about 25-30 psig) and finally stops them (below about 20).",
       "citation": "Medical Gas Systems in Anesthesia · Slides 33, 34 (PDF p. 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "33, 34",
+        "pdfPages": "17",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV02",
@@ -585,12 +783,20 @@
       ],
       "explanation": "800/1900 × 660 ≈ 278 L. 278 ÷ 2 ≈ 139 minutes. 400 would treat psig as liters.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 13 (PDF p. 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "13",
+        "pdfPages": "7",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC07",
@@ -613,7 +819,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "7",
+        "pdfPages": "4",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG02",
@@ -631,12 +845,20 @@
       ],
       "explanation": "Path 2 carries fresh gas into the vaporizing chamber. Turning the dial up directs more fresh gas there, lowering the splitting ratio. Path 1 is the bypass, and 4 is the outflow at the dialed concentration.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 53, 54 (PDF p. 27)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": "img-gas-variable-bypass",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "53, 54",
+        "pdfPages": "27",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NM05",
@@ -657,12 +879,20 @@
       ],
       "explanation": "O2's critical temperature is −118.6 °C (it boils at −183 °C at 1 atm). N2O's critical temperature is about 36 °C (it boils at −88 °C), so it's liquid in an E-cylinder at room temperature. Air is a gas; CO2 is liquid/gas.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 11, 14 (PDF p. 6, 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "11, 14",
+        "pdfPages": "6, 7",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NA12",
@@ -685,7 +915,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Airway Equipment"
+        ],
+        "slides": "7",
+        "pdfPages": "7",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC03",
@@ -708,7 +946,15 @@
       "image": null,
       "imageId": "img-co2-scavenging-circuit",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "19",
+        "pdfPages": "10",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI16",
@@ -731,7 +977,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "33",
+        "pdfPages": "17",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI32",
@@ -754,7 +1008,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "18, 19",
+        "pdfPages": "9, 10",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG33",
@@ -772,12 +1034,20 @@
       ],
       "explanation": "mL/hr = vol% × FGF × 3: sevo 3 × 1 × 3 = 9; des 6 × 1 × 3 = 18. The formula scales directly with the dialed percentage.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 50, 52 (PDF p. 25, 26)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "50, 52",
+        "pdfPages": "25, 26",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG25",
@@ -795,12 +1065,20 @@
       ],
       "explanation": "Saturated gas is 240/760 ≈ 32% vapor, so vapor added = 100 × 240/(760 − 240) ≈ 46 mL/min. 46 mL in about 5,146 mL total ≈ 0.9%. The kettle isn't concentration-calibrated, which is why these calculations are required.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 50, 74 (PDF p. 25, 37)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "50, 74",
+        "pdfPages": "25, 37",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC09",
@@ -826,7 +1104,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "16, 17",
+        "pdfPages": "8, 9",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG01",
@@ -848,12 +1134,20 @@
       ],
       "explanation": "The intermediate system runs from the first-stage regulator and pipeline inlets to the flow control valves. It contains the fail-safe (1) and the second-stage O2 and N2O regulators (2, 3). The pressure relief valve (4) and outlet check valve (5) sit downstream of the vaporizers in the low-pressure system.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 5, 26, 76 (PDF p. 3, 13, 38)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": "img-gas-machine-roadmap",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "5, 26, 76",
+        "pdfPages": "3, 13, 38",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI25",
@@ -876,7 +1170,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "21",
+        "pdfPages": "11",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI31",
@@ -899,7 +1201,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "31",
+        "pdfPages": "16",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NA15",
@@ -922,7 +1232,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Airway Equipment"
+        ],
+        "slides": "4, 5",
+        "pdfPages": "4, 5",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV09",
@@ -940,12 +1258,20 @@
       ],
       "explanation": "O2 delivered = 1.5 + 0.21 × 3 = 2.13 L of 7.5 L total ≈ 28%. The 33% value is O2 as a share of O2 + N2O only, which is what the proportioner checks.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 45 (PDF p. 23)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "45",
+        "pdfPages": "23",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NM02",
@@ -967,12 +1293,20 @@
       ],
       "explanation": "The flush sends 35-75 L/min at 40-50 psi from the intermediate system directly to the CGO, bypassing flowmeters and vaporizers (so it dilutes agent). It needs an O2 source: pipeline or first-stage regulator.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 36, 37 (PDF p. 18, 19)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "36, 37",
+        "pdfPages": "18, 19",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV28",
@@ -995,7 +1329,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "31",
+        "pdfPages": "16",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG17",
@@ -1013,12 +1355,20 @@
       ],
       "explanation": "35-75 L/min ÷ 60 ≈ 0.6-1.25 L per second. Delivered on top of a 500 mL breath, that's a large volume at 40-50 psi source pressure, the basis of the flush's barotrauma risk.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 36, 37 (PDF p. 18, 19)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "36, 37",
+        "pdfPages": "18, 19",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG11",
@@ -1036,12 +1386,20 @@
       ],
       "explanation": "−118.6 °C is O2's critical temperature, the highest temperature at which pressure can liquefy it. Room temperature is far above it, so no pressure keeps O2 liquid there. −183 °C is the boiling point at 1 atm, not a requirement for storage under pressure.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 11 (PDF p. 6)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "11",
+        "pdfPages": "6",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG22",
@@ -1063,12 +1421,20 @@
       ],
       "explanation": "Pumping comes from retrograde pressure: PPV and O2 flush, worse at low FGF and low liquid levels. An outlet check valve minimizes it, and high FGF and full vaporizers lessen it.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 72 (PDF p. 36)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "72",
+        "pdfPages": "36",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI14",
@@ -1091,7 +1457,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "35",
+        "pdfPages": "18",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG06",
@@ -1109,12 +1483,20 @@
       ],
       "explanation": "Component 3 is the differential pressure transducer. It compares the vapor and diluent circuits and adjusts valve 1 so vapor delivery tracks fresh gas flow. The heater warms the sump, and the dial (valve 2) sets concentration.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 62, 63 (PDF p. 31, 32)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": "img-gas-tec6-schematic",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "62, 63",
+        "pdfPages": "31, 32",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC06",
@@ -1140,7 +1522,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "7",
+        "pdfPages": "4",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG20",
@@ -1158,12 +1548,20 @@
       ],
       "explanation": "mL/hr = vol% × FGF × 3 = 1.5 × 4 × 3 = 18 mL/hr. Two hours: 36 mL.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 52 (PDF p. 26)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "52",
+        "pdfPages": "26",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NA13",
@@ -1186,7 +1584,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Airway Equipment"
+        ],
+        "slides": "15",
+        "pdfPages": "15",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI21",
@@ -1209,7 +1615,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "23",
+        "pdfPages": "12",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG34",
@@ -1230,12 +1644,20 @@
       ],
       "explanation": "Color and touch coding (a larger, fluted, green O2 knob) give visual and tactile checks against turning the wrong knob. O2-last placement protects against leaks, not knob errors.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 40, 41 (PDF p. 20, 21)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "40, 41",
+        "pdfPages": "20, 21",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NM06",
@@ -1262,7 +1684,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "6",
+        "pdfPages": "3",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG13",
@@ -1280,12 +1710,20 @@
       ],
       "explanation": "PISS depends on the pins seating fully in the valve holes. Extra washers add thickness, so pins may not engage (defeating PISS) and the seal can leak. One washer only.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 18, 19 (PDF p. 9, 10)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "18, 19",
+        "pdfPages": "9, 10",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG10",
@@ -1303,12 +1741,20 @@
       ],
       "explanation": "FDA oversees medical gas purity and recalls (and anesthesia checkout). DOT covers cylinder manufacture, filling, labeling, and transport; OSHA covers worker exposure; ASTM writes machine component standards.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 4 (PDF p. 2)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "4",
+        "pdfPages": "2",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC15",
@@ -1331,7 +1777,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "22, 23",
+        "pdfPages": "11, 12",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG30",
@@ -1349,12 +1803,21 @@
       ],
       "explanation": "Immediately distal to the hanger yoke is the regulator that drops variable cylinder pressure to about 45 psi before gas enters the intermediate system.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 9, 24 (PDF p. 5, 12); Anesthesia Workstation Hazards & Safety · Slide 9 (PDF p. 5)",
-      "topic": "Medical Gas",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "9, 24",
+        "pdfPages": "5, 12",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG03",
@@ -1372,12 +1835,20 @@
       ],
       "explanation": "Path 3 is gas leaving the vaporizing chamber, saturated with vapor (sevo about 21% at 20 °C). It then mixes with bypass gas (path 1), which is never exposed to agent, to produce the dialed concentration at the outflow (path 4).",
       "citation": "Medical Gas Systems in Anesthesia · Slides 53, 57 (PDF p. 27, 29)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": "img-gas-variable-bypass",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "53, 57",
+        "pdfPages": "27, 29",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV18",
@@ -1399,12 +1870,20 @@
       ],
       "explanation": "Low pressure: downstream of the flow control valves (flowmeters, vaporizers, check valve, CGO), slightly above atmospheric. Second-stage regulators, pipeline inlets, and the fail-safe are intermediate.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 39, 76 (PDF p. 20, 38)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "39, 76",
+        "pdfPages": "20, 38",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV23",
@@ -1431,7 +1910,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "15",
+        "pdfPages": "8",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG05",
@@ -1449,12 +1936,20 @@
       ],
       "explanation": "Component 4 is the fixed resistance (gas circuit restrictor) in the diluent flow. Higher FGF creates higher back pressure there; the transducer (3) senses it and opens valve 1 so vapor pressure matches, keeping the dialed concentration.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 62, 63 (PDF p. 31, 32)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": "img-gas-tec6-schematic",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "62, 63",
+        "pdfPages": "31, 32",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG19",
@@ -1472,12 +1967,20 @@
       ],
       "explanation": "A 25:1 ratio splits the flow into 26 parts: 2,000 ÷ 26 ≈ 77 mL/min to the chamber and about 1,920 mL/min through the bypass. That's the lecture's 1% sevo example.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 55 (PDF p. 28)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "55",
+        "pdfPages": "28",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI09",
@@ -1500,7 +2003,16 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "32",
+        "pdfPages": "16",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG27",
@@ -1518,12 +2030,20 @@
       ],
       "explanation": "The flush takes O2 from the pipeline (or cylinder regulator) and bypasses only the flowmeters and vaporizers. With the pipeline preferred and contaminated, the flush delivers contaminated gas at high flow. Disconnect the pipeline and open the cylinder.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 36, 46 (PDF p. 18, 23)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "36, 46",
+        "pdfPages": "18, 23",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI36",
@@ -1546,7 +2066,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "6, 7",
+        "pdfPages": "3, 4",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NA03",
@@ -1569,7 +2097,15 @@
       "image": null,
       "imageId": "img-air-lma-supreme",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Airway Equipment"
+        ],
+        "slides": "14",
+        "pdfPages": "14",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NA07",
@@ -1592,7 +2128,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Airway Equipment"
+        ],
+        "slides": "11",
+        "pdfPages": "11",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC08",
@@ -1615,7 +2159,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": "The 0.5 ppm combined-use limit comes from NIOSH's 1977 recommendation; slide 10 lists only 2 ppm and 25 ppm."
+      "supp": "The 0.5 ppm combined-use limit comes from NIOSH's 1977 recommendation; slide 10 lists only 2 ppm and 25 ppm.",
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "10",
+        "pdfPages": "5",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC02",
@@ -1638,7 +2190,15 @@
       "image": null,
       "imageId": "img-co2-scavenging-circuit",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "19",
+        "pdfPages": "10",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI05",
@@ -1656,12 +2216,21 @@
       ],
       "explanation": "The plastic washer and T-handle seal the cylinder to the yoke. A missing, damaged, or doubled washer leaks at the connection. Close the valve and replace the washer (one only).",
       "citation": "Medical Gas Systems in Anesthesia · Slides 18, 19 (PDF p. 9, 10); Anesthesia Workstation Hazards & Safety · Slide 7 (PDF p. 4)",
-      "topic": "Medical Gas",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "18, 19",
+        "pdfPages": "9, 10",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC17",
@@ -1684,7 +2253,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "14",
+        "pdfPages": "7",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NM03",
@@ -1710,7 +2287,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "29, 30",
+        "pdfPages": "15",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG18",
@@ -1728,12 +2313,20 @@
       ],
       "explanation": "The flush opens O2 from the pipeline or the first-stage (cylinder) regulator directly to the CGO. With the cylinder open, it has a source. With both pipeline and cylinder unavailable, it gives nothing.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 24, 36 (PDF p. 12, 18)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "24, 36",
+        "pdfPages": "12, 18",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI30",
@@ -1756,7 +2349,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "31",
+        "pdfPages": "16",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV06",
@@ -1774,12 +2375,20 @@
       ],
       "explanation": "8 × 1.5 × 3 = 36 mL/hr; × 1.5 hours = 54 mL.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 52 (PDF p. 26)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "52",
+        "pdfPages": "26",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI11",
@@ -1802,7 +2411,16 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "12, 32",
+        "pdfPages": "6, 16",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI02",
@@ -1820,12 +2438,21 @@
       ],
       "explanation": "174 L ÷ 8 L/min ≈ 22 minutes. The roadmap shows the ventilator driving gas taken from the O2 supply, so mechanical ventilation consumes cylinder O2 on top of fresh gas flow.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 5, 13 (PDF p. 3, 7); Anesthesia Workstation Hazards & Safety · Slide 4 (PDF p. 2)",
-      "topic": "Medical Gas",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "5, 13",
+        "pdfPages": "3, 7",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV14",
@@ -1848,7 +2475,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "26",
+        "pdfPages": "13",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI24",
@@ -1871,7 +2506,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "20",
+        "pdfPages": "10",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV26",
@@ -1894,7 +2537,16 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "4",
+        "pdfPages": "2",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG08",
@@ -1912,12 +2564,20 @@
       ],
       "explanation": "Air is a compressed gas, so contents fall linearly with pressure: half pressure ≈ 312 L. 312 ÷ 5 ≈ 62 minutes.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 7, 13 (PDF p. 4, 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "7, 13",
+        "pdfPages": "4, 7",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC16",
@@ -1940,7 +2600,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "14",
+        "pdfPages": "7",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI29",
@@ -1967,7 +2635,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "24",
+        "pdfPages": "12",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC14",
@@ -1990,7 +2666,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "10",
+        "pdfPages": "5",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NM04",
@@ -2012,12 +2696,20 @@
       ],
       "explanation": "The Tec 6 heats des to 39 °C, pressurizes it to about 2 atm (1500 mmHg), and needs electricity. Fresh gas never enters the sump; vapor is injected. Wicks and bimetallic strips belong to variable bypass designs.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 60, 61, 62 (PDF p. 30, 31)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "60, 61, 62",
+        "pdfPages": "30, 31",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NA04",
@@ -2040,7 +2732,15 @@
       "image": null,
       "imageId": "img-air-lma-supreme",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Airway Equipment"
+        ],
+        "slides": "14",
+        "pdfPages": "14",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NA14",
@@ -2063,7 +2763,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Airway Equipment"
+        ],
+        "slides": "10, 11",
+        "pdfPages": "10, 11",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI13",
@@ -2086,7 +2794,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "35",
+        "pdfPages": "18",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV08",
@@ -2104,12 +2820,20 @@
       ],
       "explanation": "O2/(O2 + 6) = 0.25 → O2 = 2 L/min (2 of 8 L total).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 45 (PDF p. 23)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "45",
+        "pdfPages": "23",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NM07",
@@ -2136,7 +2860,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "23",
+        "pdfPages": "12",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NA11",
@@ -2163,7 +2895,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Airway Equipment"
+        ],
+        "slides": "4",
+        "pdfPages": "4",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV16",
@@ -2186,7 +2926,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "2",
+        "pdfPages": "1",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV20",
@@ -2208,12 +2956,20 @@
       ],
       "explanation": "O2, air, and helium are stored as gas, so pressure tracks contents. N2O and CO2 are liquid/gas, holding constant pressure until the liquid is gone.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 7 (PDF p. 4)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "7",
+        "pdfPages": "4",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI07",
@@ -2236,7 +2992,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "25, 32",
+        "pdfPages": "13, 16",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV21",
@@ -2257,12 +3021,20 @@
       ],
       "explanation": "The fail-safe and the O2 supply low-pressure alarm both respond to supply pressure. The proportioner responds to flow settings, the analyzer to concentration, and PISS is mechanical indexing.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 33, 34 (PDF p. 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "33, 34",
+        "pdfPages": "17",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI33",
@@ -2285,7 +3057,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "18, 23",
+        "pdfPages": "9, 12",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI34",
@@ -2308,7 +3088,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "16",
+        "pdfPages": "8",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC18",
@@ -2331,7 +3119,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "10",
+        "pdfPages": "5",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC05",
@@ -2354,7 +3150,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "4",
+        "pdfPages": "2",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG14",
@@ -2375,12 +3179,20 @@
       ],
       "explanation": "High pressure: yoke, cylinder gauge, first-stage regulator. Intermediate: pipeline inlets, second-stage regulators, fail-safe, flush, flow control valves. Low: flowmeters, vaporizers, check valve, common gas outlet.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 26, 39, 76 (PDF p. 13, 20, 38)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "26, 39, 76",
+        "pdfPages": "13, 20, 38",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV13",
@@ -2403,7 +3215,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "26",
+        "pdfPages": "13",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI15",
@@ -2426,7 +3246,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "37",
+        "pdfPages": "19",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NA02",
@@ -2449,7 +3277,15 @@
       "image": null,
       "imageId": "img-air-lma-supreme",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Airway Equipment"
+        ],
+        "slides": "14",
+        "pdfPages": "14",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG23",
@@ -2467,12 +3303,20 @@
       ],
       "explanation": "Tipping puts liquid in the bypass. Drain the vaporizer, run it at the highest setting with high FGF for about 30 minutes to clear the bypass, and refill once expired gas analysis no longer detects agent.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 71 (PDF p. 36)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "71",
+        "pdfPages": "36",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV27",
@@ -2495,7 +3339,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "35",
+        "pdfPages": "18",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG09",
@@ -2513,12 +3365,20 @@
       ],
       "explanation": "Brown = helium, a compressed gas stored at 1600 psi with 500 L when full. Half the pressure means about half the contents: 250 L.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 7 (PDF p. 4)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "7",
+        "pdfPages": "4",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI37",
@@ -2536,12 +3396,21 @@
       ],
       "explanation": "LMAs commonly vent more gas into the room than cuffed tubes, and technique errors cause most contamination. The lecture flags pregnant staff because of the 1974 findings. N2O adds exposure.",
       "citation": "CO₂ & Scavenging · Slides 9, 14 (PDF p. 5, 7); Airway Equipment · Slide 14 (PDF p. 14)",
-      "topic": "CO₂ & Scavenging",
+      "topic": "Airway",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging",
+          "Airway Equipment"
+        ],
+        "slides": "9, 14",
+        "pdfPages": "5, 7",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI10",
@@ -2564,7 +3433,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "25, 32",
+        "pdfPages": "13, 16",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI26",
@@ -2587,7 +3464,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "22",
+        "pdfPages": "11",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC13",
@@ -2605,12 +3490,21 @@
       ],
       "explanation": "The absorber is essential at low flow; without effective absorption, fresh gas flow is what washes CO2 out. Raising FGF limits rebreathing until the canister is changed (the hazards lecture lists inadequate FGF without absorption as a hypercarbia hazard).",
       "citation": "CO₂ & Scavenging · Slides 4, 8 (PDF p. 2, 4); Anesthesia Workstation Hazards & Safety · Slide 20 (PDF p. 10)",
-      "topic": "CO₂ & Scavenging",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "4, 8",
+        "pdfPages": "2, 4",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC04",
@@ -2633,7 +3527,15 @@
       "image": null,
       "imageId": "img-co2-scavenging-circuit",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "8, 19",
+        "pdfPages": "4, 10",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI38",
@@ -2656,7 +3558,16 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging",
+          "Airway Equipment"
+        ],
+        "slides": "14",
+        "pdfPages": "14",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG21",
@@ -2674,12 +3585,20 @@
       ],
       "explanation": "Vaporization cools the liquid, lowering vapor pressure and output. The bimetallic strip responds by sending more fresh gas through the chamber (changing the splitting ratio) so output stays at the dial. Only the Tec 6 uses a heater.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 56 (PDF p. 28)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "56",
+        "pdfPages": "28",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI35",
@@ -2706,7 +3625,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "17, 18",
+        "pdfPages": "9",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG26",
@@ -2724,12 +3651,20 @@
       ],
       "explanation": "Halothane is metabolized far more (about 15-40%) than sevoflurane (a few percent), isoflurane, or desflurane (minimal).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50 (PDF p. 25)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "50",
+        "pdfPages": "25",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG29",
@@ -2750,12 +3685,20 @@
       ],
       "explanation": "Normal pressures with falling FiO2 point to gas composition or O2 lost after metering: contamination (crossed pipelines, nitrogen) or a leak in the O2 flowmeter. The fail-safe only acts on low pressure, and flushing adds O2.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 46, 48 (PDF p. 23, 24)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "46, 48",
+        "pdfPages": "23, 24",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI22",
@@ -2778,7 +3721,16 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "19, 22",
+        "pdfPages": "10, 11",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG04",
@@ -2796,12 +3748,20 @@
       ],
       "explanation": "Component 2 is the variable resistance controlled by the anesthetist through the vaporizer dial. Component 1 is the valve controlled by the differential pressure transducer (3), and 4 is the fixed resistance in the diluent (fresh gas) path.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 61, 62 (PDF p. 31)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": "img-gas-tec6-schematic",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "61, 62",
+        "pdfPages": "31",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV25",
@@ -2819,12 +3779,20 @@
       ],
       "explanation": "Pipeline gas enters the intermediate system through the inlet check valve (no first-stage regulator; that's for cylinders), passes the second-stage regulator and flow control valve, then the low-pressure flowmeter, vaporizer, outlet check valve, and CGO.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 5, 31, 33 (PDF p. 3, 16, 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "5, 31, 33",
+        "pdfPages": "3, 16, 17",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI04",
@@ -2842,12 +3810,21 @@
       ],
       "explanation": "Crossed pipelines are an upstream hypoxemia hazard. The fail-safe senses pressure (normal here), and the proportioner links the flowmeter settings, not gas identity. Only the inspired O2 analyzer shows the falling FiO2; then disconnect the pipeline and open the cylinder.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 34, 45, 46 (PDF p. 17, 23); Anesthesia Workstation Hazards & Safety · Slide 19 (PDF p. 10)",
-      "topic": "Medical Gas",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "34, 45, 46",
+        "pdfPages": "17, 23",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI01",
@@ -2870,7 +3847,16 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "4",
+        "pdfPages": "2",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV05",
@@ -2888,12 +3874,20 @@
       ],
       "explanation": "2.5 × 2 × 3 = 15 mL/hr; × 3 hours = 45 mL.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 52 (PDF p. 26)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "52",
+        "pdfPages": "26",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NA06",
@@ -2919,7 +3913,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Airway Equipment"
+        ],
+        "slides": "5, 6",
+        "pdfPages": "5, 6",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG24",
@@ -2937,12 +3939,20 @@
       ],
       "explanation": "The interlock requires deliberate action to open the dial from its locked position, and the manifold system allows only one vaporizer on at a time. Transport (T) mode is what protects against tipping leaks.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 59 (PDF p. 30)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "59",
+        "pdfPages": "30",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG15",
@@ -2960,12 +3970,20 @@
       ],
       "explanation": "The fail-safe begins proportionally reducing other gases below about 25-30 psig and stops them below about 20. At 35 psig it hasn't engaged, though the supply alarm may warn you.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 34 (PDF p. 17)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "34",
+        "pdfPages": "17",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI12",
@@ -2988,7 +4006,16 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Airway Equipment",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "33, 35",
+        "pdfPages": "17, 18",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI20",
@@ -3011,7 +4038,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "22",
+        "pdfPages": "11",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV03",
@@ -3029,12 +4064,20 @@
       ],
       "explanation": "300/1900 × 660 ≈ 104 L. 104 ÷ 10 ≈ 10 minutes: replace the cylinder before transport.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 13 (PDF p. 7)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "13",
+        "pdfPages": "7",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NA05",
@@ -3057,7 +4100,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Airway Equipment"
+        ],
+        "slides": "4",
+        "pdfPages": "4",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI18",
@@ -3080,7 +4131,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "31",
+        "pdfPages": "16",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NC11",
@@ -3103,7 +4162,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "14",
+        "pdfPages": "7",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV07",
@@ -3121,12 +4188,20 @@
       ],
       "explanation": "2 × 2 × 3 = 12 mL/hr. 250 ÷ 12 ≈ 21 hours.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 52 (PDF p. 26)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "52",
+        "pdfPages": "26",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NI19",
@@ -3149,7 +4224,16 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "20",
+        "pdfPages": "10",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG16",
@@ -3167,12 +4251,20 @@
       ],
       "explanation": "The tube is tapered, narrow at the bottom. The pressure drop across the float stays constant (gravity balance), so more flow lifts it to a wider section where the larger annular orifice passes that flow: constant pressure, variable orifice.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 42, 43 (PDF p. 21, 22)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "42, 43",
+        "pdfPages": "21, 22",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NG32",
@@ -3190,12 +4282,20 @@
       ],
       "explanation": "Des boils at 22.8 °C with a vapor pressure of 669 mmHg. At room temperature it could boil in a standard sump and swing output widely. Heating and pressurizing makes delivery predictable. Its blood:gas coefficient (0.42) is the lowest listed.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 60 (PDF p. 30)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "60",
+        "pdfPages": "30",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NA08",
@@ -3218,7 +4318,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Airway Equipment"
+        ],
+        "slides": "8",
+        "pdfPages": "8",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NV22",
@@ -3239,12 +4347,20 @@
       ],
       "explanation": "PISS (cylinder to yoke) and DISS (pipeline to machine) use gas-specific geometry. The fail-safe and proportioner protect against low O2 pressure and low O2 ratios, not wrong connections.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 18, 29 (PDF p. 9, 15)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "18, 29",
+        "pdfPages": "9, 15",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NA09",
@@ -3267,7 +4383,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Airway Equipment"
+        ],
+        "slides": "9",
+        "pdfPages": "9",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NP03",
@@ -3290,7 +4414,15 @@
       "image": null,
       "imageId": "img-haz-piss-valves",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "7",
+        "pdfPages": "4",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NP06",
@@ -3308,12 +4440,20 @@
       ],
       "explanation": "At the yoke, O2 or N2O is the oxidizer, dust is the fuel, and compressed gas rushing through the outlet creates heat. Opening slowly reduces that heat; clearing dust removes the fuel.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 8 (PDF p. 4)",
-      "topic": "Medical Gas",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Medical Gas Systems in Anesthesia"
+        ],
+        "slides": "8",
+        "pdfPages": "4",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NP01",
@@ -3331,12 +4471,21 @@
       ],
       "explanation": "Quadrant C is the expiratory limb on the patient side. The hazards lecture lists a fresh gas inlet between the patient and the expiratory valve as one of three arrangements to avoid: fresh gas leaves with exhaled gas instead of reaching the patient.",
       "citation": "CO₂ & Scavenging · Slide 8 (PDF p. 4); Anesthesia Workstation Hazards & Safety · Slide 20 (PDF p. 10)",
-      "topic": "CO₂ & Scavenging",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": "img-co2-circle-quadrants",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "8",
+        "pdfPages": "4",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NP08",
@@ -3359,7 +4508,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "25",
+        "pdfPages": "13",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NP10",
@@ -3382,7 +4539,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "8",
+        "pdfPages": "4",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NP04",
@@ -3408,7 +4573,15 @@
       "image": null,
       "imageId": "img-haz-mapleson-circuits",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "21",
+        "pdfPages": "11",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NP07",
@@ -3434,7 +4607,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging"
+        ],
+        "slides": "4, 5",
+        "pdfPages": "2, 3",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NP11",
@@ -3460,7 +4641,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "18",
+        "pdfPages": "9",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NP02",
@@ -3478,12 +4667,21 @@
       ],
       "explanation": "Quadrant B is the inspiratory limb on the patient side, between the patient and the inspiratory valve. An APL there is one of the three forbidden arrangements: it would vent fresh gas before it reaches the patient.",
       "citation": "CO₂ & Scavenging · Slide 8 (PDF p. 4); Anesthesia Workstation Hazards & Safety · Slide 20 (PDF p. 10)",
-      "topic": "CO₂ & Scavenging",
+      "topic": "Hazards & Safety",
       "imageSvg": null,
       "image": null,
       "imageId": "img-co2-circle-quadrants",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "CO₂ Absorbents & Scavenging",
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "8",
+        "pdfPages": "4",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NP12",
@@ -3510,7 +4708,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Airway Equipment"
+        ],
+        "slides": "4",
+        "pdfPages": "4",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NP09",
@@ -3533,7 +4739,15 @@
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "16",
+        "pdfPages": "8",
+        "citationFormat": "document"
+      }
     },
     {
       "id": "NP05",
@@ -3556,7 +4770,15 @@
       "image": null,
       "imageId": "img-haz-fire-triangle",
       "disc": null,
-      "supp": null
+      "supp": null,
+      "sourceMeta": {
+        "families": [
+          "Anesthesia Workstation Hazards & Safety"
+        ],
+        "slides": "33, 35",
+        "pdfPages": "17, 18",
+        "citationFormat": "document"
+      }
     }
   ]
 }
