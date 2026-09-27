@@ -854,7 +854,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  const cloudManagement=read('equipment/assets/cloud-management.js');
  for(const token of ['renderDevices','renderHistory','removeDevice','restoreVersion'])if(!cloudManagement.includes(token))fail('Lazy cloud management module missing '+token);
  if(!core.includes("loadScript('cloud-management.js')"))fail('Cloud management is not lazy-loaded from app core');
- for(const token of ['data-cloud-devices-details','data-cloud-history-details','renderCloudDevices','renderCloudHistory'])if(!core.includes(token))fail('Cloud management UI missing '+token);
+ for(const token of ['data-cloud-devices-details','data-cloud-history-details','loadCloudManagement'])if(!core.includes(token))fail('Cloud management UI missing '+token);
 }
 
 // Stable architecture baseline: shared runtimes stay centralized instead of regrowing per-bank implementations.
