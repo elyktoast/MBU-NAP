@@ -757,7 +757,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 
 // Content metadata normalization is a stable release contract after Content Phase 2.
 {
- const allowedTopics=new Set(['Monitoring','Medical Gas','CO₂ & Scavenging','Airway','Hazards & Safety']);
+ const allowedTopics=new Set(['Monitoring','Medical Gases','CO₂ & Scavenging','Airway','Hazards & Safety']);
  const allowedFamilies=new Set(['Medical Gas Systems in Anesthesia','Monitoring','CO₂ Absorbents & Scavenging','Airway Equipment','Anesthesia Workstation Hazards & Safety']);
  for(const p of ['bank1.json','bank2.json','bank3.json','combined.json','hazards.json']){
    const payload=JSON.parse(read('equipment/exam-1/data/'+p)),qs=Array.isArray(payload)?payload:(payload.questions||[]);
