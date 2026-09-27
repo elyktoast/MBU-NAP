@@ -40,3 +40,9 @@ The admin workspace loads the question index only when requested, so normal lear
 - 300+: high
 
 Population calibration must not be treated as mature before the sample supports it.
+
+## Existing-data usage validation
+
+Phase 3 now also summarizes first-attempt usage by study mode from the already-existing private calibration contribution table. No new user/session data is collected for this step.
+
+The operator can see aggregate counts for each mode, including total first attempts, 7-day and 30-day activity, unique contributing accounts, and aggregate accuracy. Raw contribution rows remain unavailable in the admin UI.

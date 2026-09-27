@@ -900,10 +900,11 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 
 // Phase 3 question analytics must stay admin-only and lazy-loaded.
 {
- const admin=read('equipment/assets/admin-panel.js'),qa=read('equipment/assets/admin-question-analytics.js'),migration=read('supabase/migrations/20260927231413_add_admin_question_analytics.sql');
+ const admin=read('equipment/assets/admin-panel.js'),qa=read('equipment/assets/admin-question-analytics.js'),migration=read('supabase/migrations/20260927231413_add_admin_question_analytics.sql'),modeMigration=read('supabase/migrations/20260927231918_add_admin_mode_analytics.sql');
  for(const token of ['data-admin-analytics-load','admin-question-analytics.js'])if(!admin.includes(token))fail('Admin question analytics launcher missing '+token);
- for(const token of ['snar_admin_question_analytics','p_limit:500','p_review_only:false','MBUQuestionSearch','Needs review','Open exact question'])if(!qa.includes(token))fail('Question analytics module missing '+token);
+ for(const token of ['snar_admin_question_analytics','snar_admin_mode_analytics','p_limit:500','p_review_only:false','MBUQuestionSearch','Needs review','Open exact question','First-attempt usage by mode'])if(!qa.includes(token))fail('Question analytics module missing '+token);
  for(const token of ['private.snar_is_admin(auth.uid())','security definer',"set search_path=''","revoke all on function public.snar_admin_question_analytics(integer,boolean) from public,anon",'grant execute on function public.snar_admin_question_analytics(integer,boolean) to authenticated'])if(!migration.includes(token))fail('Question analytics migration security contract missing '+token);
+ for(const token of ['private.snar_is_admin(auth.uid())','security definer',"set search_path=''",'snar_admin_mode_analytics','revoke all on function public.snar_admin_mode_analytics() from public,anon','grant execute on function public.snar_admin_mode_analytics() to authenticated'])if(!modeMigration.includes(token))fail('Mode analytics migration security contract missing '+token);
 }
 
 // Hazards dashboard must always load the canonical Bank 1 visual system.
