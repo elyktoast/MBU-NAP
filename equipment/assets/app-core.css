@@ -15,10 +15,10 @@
 .mbu-status-dot{display:inline-block;width:9px;height:9px;border-radius:999px;background:#a0aec0;box-shadow:0 0 0 2px #fff}
 .mbu-global-nav__tools:focus-visible,.mbu-global-nav__cloud:focus-visible,.mbu-global-nav__search:focus-visible,.mbu-app-tools button:focus-visible,.mbu-account-panel button:focus-visible,.mbu-app-tools input:focus-visible,.mbu-account-panel input:focus-visible,.mbu-account-panel select:focus-visible,.mbu-account-panel textarea:focus-visible,.mbu-tools-details summary:focus-visible{outline:3px solid #2b6cb0;outline-offset:2px}
 
-.mbu-account-legal,.snar-legal-footer{font:600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#718096}
-.mbu-account-legal a,.snar-legal-footer a{color:#4a5568}
-.snar-legal-footer{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;padding:18px 12px 24px}
-.mbu-quiz-active .snar-legal-footer{display:none}
+.mbu-account-legal,.srna-legal-footer{font:600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#718096}
+.mbu-account-legal a,.srna-legal-footer a{color:#4a5568}
+.srna-legal-footer{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;padding:18px 12px 24px}
+.mbu-quiz-active .srna-legal-footer{display:none}
 
 :where(button,a,input,select,textarea,summary):focus-visible{outline:3px solid #2b6cb0;outline-offset:2px}
 @keyframes mbu-pulse{0%,100%{opacity:.45}50%{opacity:1}}
