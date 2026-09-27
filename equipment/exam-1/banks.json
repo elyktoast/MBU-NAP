@@ -82,7 +82,8 @@
       "storageKey": "MBU_COMBINED_BANK_2026_V1",
       "engine": "canonical",
       "imageBase": "images/combined/",
-      "legacyFormat": "combined"
+      "legacyFormat": "combined",
+      "creator": "Claude"
     },
     {
       "id": "hazards",
@@ -111,7 +112,8 @@
         "4": 50
       },
       "total": 350,
-      "engine": "hazards-canonical-data"
+      "engine": "hazards-canonical-data",
+      "creator": "Claude"
     }
   ],
   "hazards": {
@@ -175,7 +177,8 @@
         "summaryTitle": "Hazards & safety Challenge Set complete",
         "resetMessage": "Reset all Challenge Set progress? This clears your answers and score."
       }
-    ]
+    ],
+    "creator": "Claude"
   },
   "studioSources": [
     {
