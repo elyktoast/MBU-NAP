@@ -350,7 +350,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
   if(supabase.includes('/functions/v1/snar-delete-account'))fail('Self-service account deletion still references the retired snar-delete-account endpoint');
   if(!exists('supabase/functions/delete-account/index.ts')||!read('supabase/functions/delete-account/index.ts').includes('auth.admin.deleteUser(user.id)'))fail('Account deletion Edge Function source is missing');
   if(!exists('supabase/migrations/20260927044154_remove_obsolete_account_delete_rpc.sql'))fail('Obsolete account deletion RPC removal migration is missing');
-  if(!exists('supabase/migrations/20260927050029_add_privacy_request_appeals.sql')||!read('supabase/migrations/20260927050029_add_privacy_request_appeals.sql').includes("'appeal'"))fail('Privacy request appeal migration is missing');
+  if(!exists('supabase/migrations/20260927050012_add_privacy_request_appeal.sql')||!read('supabase/migrations/20260927050012_add_privacy_request_appeal.sql').includes("'appeal'"))fail('Privacy request appeal migration is missing');
   for(const p of ['index.html','equipment/index.html','equipment/exam-1/index.html','equipment/exam-1/studio.html','privacy.html','terms.html','README.md','CONTRIBUTING.md','reporting/apps-script/Code.gs','reporting/apps-script/SETUP.md','tests/e2e/quiz-regression.spec.js']){
     const src=read(p);
     if(/Mary Baldwin|MBU-NAP|MBU Nurse Anesthesia Program|Professor\b|\bInstructor\b|Dr\.\s+[A-Z][a-z]+/i.test(src))fail(p+': obsolete institutional/faculty branding remains');
@@ -812,16 +812,18 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ['Admin & Compliance','data-admin-stats','data-admin-accounts','data-admin-delete-account','Guests active ~15m','CAT users'])if(!adminPanel.includes(token))fail('Admin dashboard contract missing '+token);
  if(!core.includes("loadScript('admin-panel.js')")||!core.includes('data-admin-host'))fail('Lazy admin panel loader contract missing');
  if(!studio.includes("status.accessStatus==='active'"))fail('Adaptive Mode does not enforce active account access');
- const suspensionMigration=read('supabase/migrations/20260927100000_enforce_account_suspension_server_side.sql');
- const syncPermissionFix=read('supabase/migrations/20260927131500_fix_sync_rls_access_wrapper.sql');
- for(const token of ["public.snar_account_access_status()='active'","create or replace function public.mbu_sync_write_state"])if(!syncPermissionFix.includes(token))fail('Cloud sync RLS permission fix missing '+token);
- if(syncPermissionFix.includes('private.snar_account_is_active(uid)'))fail('Cloud sync write path bypasses the public access-status wrapper');
+ const suspensionMigration=read('supabase/migrations/20260927124435_enforce_account_suspension_server_side.sql');
+ const syncPolicyFix=read('supabase/migrations/20260927131743_fix_account_access_policy_permissions.sql');
+ const syncWriteFix=read('supabase/migrations/20260927131123_fix_sync_write_access_status_wrapper.sql');
+ for(const token of ["public.snar_account_access_status()='active'"])if(!syncPolicyFix.includes(token))fail('Cloud sync RLS permission fix missing '+token);
+ for(const token of ['create or replace function public.mbu_sync_write_state',"public.snar_account_access_status()<>'active'"])if(!syncWriteFix.includes(token))fail('Cloud sync write access fix missing '+token);
+ if(syncWriteFix.includes('private.snar_account_is_active(uid)'))fail('Cloud sync write path bypasses the public access-status wrapper');
  for(const token of ['Account access suspended','private.snar_account_is_active','users_select_own_active_sync_state','Calibration aggregates are readable by active accounts at cohort threshold'])if(!suspensionMigration.includes(token))fail('Server-side suspension contract missing '+token);
 }
 
 // Population calibration must not expose small cohorts.
 {
- const cohortMigration=read('supabase/migrations/20260927063000_hide_small_cohort_item_calibration.sql');
+ const cohortMigration=read('supabase/migrations/20260927062925_hide_small_cohort_item_calibration.sql');
  for(const token of ['unique_learners >= 25','Calibration aggregates are readable at cohort threshold'])if(!cohortMigration.includes(token))fail('Small-cohort calibration protection missing '+token);
 }
 
