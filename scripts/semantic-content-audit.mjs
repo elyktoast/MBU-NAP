@@ -9,7 +9,7 @@ const keyed=q=>{const opts=q.options??q.c??[],raw=q.answer??q.correct??q.a??[],a
 const rows=[];
 for(const file of files){
  const p=JSON.parse(fs.readFileSync(path.join(root,'equipment/exam-1/data',file),'utf8')),qs=Array.isArray(p)?p:(p.questions||[]);
- for(const q of qs){const opts=(q.options??q.c??[]).map(norm);rows.push({file,id:String(q.id??''),set:Number(q.set??1),stem:String(q.stem??q.q??''),norm:norm(q.stem??q.q??''),key:keyed(q),optionSig:JSON.stringify([...opts].sort()),tokens:tokens(q.stem??q.q??'')})}
+ for(const q of qs){const opts=(q.options??q.c??[]).map(norm),explanation=String(q.explanation??q.exp??q.rationale??'');if(/\[cite:/i.test(explanation))failures.push('Legacy citation artifact remains in '+file+' '+String(q.set??1)+'::'+String(q.id??''));rows.push({file,id:String(q.id??''),set:Number(q.set??1),stem:String(q.stem??q.q??''),norm:norm(q.stem??q.q??''),key:keyed(q),optionSig:JSON.stringify([...opts].sort()),tokens:tokens(q.stem??q.q??'')})}
 }
 const exact=new Map();
 for(const r of rows){if(!r.norm)continue;if(!exact.has(r.norm))exact.set(r.norm,[]);exact.get(r.norm).push(r)}
@@ -42,7 +42,7 @@ for(const group of buckets.values()){
  }
 }
 const hazards=rows.filter(r=>r.file==='hazards.json'),hazSet2=hazards.filter(r=>r.set===2),uniqueHaz2=new Set(hazSet2.map(r=>r.norm)).size;
-if(hazSet2.length===100&&uniqueHaz2<50)warnings.push('Hazards Set 2 contains only '+uniqueHaz2+' unique normalized stems across 100 questions; this is documented source-content debt.');
+if(hazSet2.length===100&&uniqueHaz2<95)failures.push('Hazards Set 2 regressed to only '+uniqueHaz2+' unique normalized stems across 100 questions.');
 for(const w of warnings.slice(0,50))console.warn('SEMANTIC WARNING: '+w);
 if(failures.length){console.error('\nSEMANTIC CONTENT AUDIT FAILED\n- '+failures.join('\n- '));process.exit(1)}
 console.log('Semantic content audit passed across '+rows.length+' questions: '+exactGroups+' exact duplicate groups, '+crossSetExact+' cross-set exact groups, '+nearPairs+' near-duplicate pairs, '+warnings.length+' warnings, no conflicting exact-answer keys.');
