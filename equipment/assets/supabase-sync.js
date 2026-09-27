@@ -2,7 +2,7 @@
 (()=>{'use strict';
 const cfg=window.MBU_SUPABASE_CONFIG||{},sync=window.MBUSync,SESSION_KEY='mbu_supabase_session_v1',STATUS_EVENT='mbu:supabase-status',script=document.currentScript,APP_ROOT=new URL('../../',script?.src||location.href).href;
 if(!cfg.url||!cfg.publishableKey||!sync){console.warn('Supabase sync is not configured');return}
-const base=cfg.url.replace(/\/$/,''),AUTO_SYNC_INTERVAL=5*60*1000,LEGAL_TERMS_VERSION='2026-09-27-v2',LEGAL_PRIVACY_VERSION='2026-09-27-v2';
+const base=cfg.url.replace(/\/$/,''),AUTO_SYNC_INTERVAL=5*60*1000,LEGAL_TERMS_VERSION='2026-09-27-v3',LEGAL_PRIVACY_VERSION='2026-09-27-v3';
 let syncing=false,lastSyncAt=0,lastState='signed-out',remoteByKey=new Map(),calibrationByKey=new Map(),calibrationFetchedAt=0,timer=null,autoSyncTimer=null,recoveryMode=false,legalAccepted=null;
 
 const safeJSON=(raw,fallback=null)=>{try{return JSON.parse(raw)}catch{return fallback}};
@@ -87,7 +87,7 @@ async function signIn(email,password){
 }
 async function signUp(email,password,accepted=false){
   if(accepted!==true)throw Error('You must confirm that you are 18+ and agree to the Terms and Privacy Notice before creating an account.');
-  const acceptedAt=new Date().toISOString();emit('signing-up');const data=await raw('/auth/v1/signup?redirect_to='+encodeURIComponent(APP_ROOT),{method:'POST',body:{email:String(email||'').trim(),password:String(password||''),data:{snar_terms_version:'2026-09-27-v2',snar_privacy_version:'2026-09-27-v2',snar_adult_ack:true,snar_accepted_at:acceptedAt}}}),s=normalizeAuth(data);
+  const acceptedAt=new Date().toISOString();emit('signing-up');const data=await raw('/auth/v1/signup?redirect_to='+encodeURIComponent(APP_ROOT),{method:'POST',body:{email:String(email||'').trim(),password:String(password||''),data:{snar_terms_version:'2026-09-27-v3',snar_privacy_version:'2026-09-27-v3',snar_adult_ack:true,snar_accepted_at:acceptedAt}}}),s=normalizeAuth(data);
   if(s){saveSession(s);if(!await refreshLegalAcceptance())await acceptCurrentLegal(true);else{emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});startAutoSync()}return{session:s,confirmationRequired:false}}
   emit('confirmation-required',{email:String(email||'').trim()});return{session:null,confirmationRequired:true}
 }
