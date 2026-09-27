@@ -743,7 +743,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 // Supabase periodic sync must remain enabled and visible in the account/status UI.
 {
  const cloud=read('equipment/assets/supabase-sync.js'),core=read('equipment/assets/app-core.js');
- for(const token of ['AUTO_SYNC_INTERVAL=5*60*1000','function startAutoSync()','setInterval(','autoSyncIntervalMs:AUTO_SYNC_INTERVAL','nextAutoSyncAt'])if(!cloud.includes(token))fail('Supabase automatic sync missing '+token);
+ for(const token of ['AUTO_SYNC_INTERVAL=5*60*1000','function startAutoSync()','setInterval(','autoSyncIntervalMs:AUTO_SYNC_INTERVAL','nextAutoSyncAt','syncQueued','scheduleSync(0)'])if(!cloud.includes(token))fail('Supabase automatic sync missing '+token);
  for(const token of ['function cloudAutoSyncText(info)','data-cloud-auto','Every '+"'+mins+'"+' min'])if(!core.includes(token))fail('Cloud account auto-sync status missing '+token);
 }
 
