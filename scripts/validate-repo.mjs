@@ -707,6 +707,12 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const p of ['equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-page.js'])if(!read(p).includes('MBUStudyIntelligence'))fail(p+': answer path bypasses shared study intelligence');
 }
 
+// Mobile global utilities must wrap into their own compact row instead of widening the viewport.
+{
+ const css=read('equipment/assets/app-core.css');
+ for(const token of ['.mbu-global-nav{flex-wrap:wrap}','grid-template-columns:auto minmax(0,1fr) auto','flex:1 0 100%'])if(!css.includes(token))fail('Mobile utility navigation contract missing '+token);
+}
+
 // Universal search must stay lazy, global, and routed into the canonical Studio question view.
 {
  const search=read('equipment/assets/question-search.js'),core=read('equipment/assets/app-core.js');
