@@ -7,6 +7,9 @@ async function clearAppState(page) {
   await page.route('https://xqyasyambwdyhsjkftqu.supabase.co/rest/v1/rpc/snar_has_current_legal_acceptance', route =>
     route.fulfill({ status: 200, contentType: 'application/json', body: 'true' })
   );
+  await page.route('https://xqyasyambwdyhsjkftqu.supabase.co/rest/v1/rpc/snar_account_access_status', route =>
+    route.fulfill({ status: 200, contentType: 'application/json', body: '"active"' })
+  );
   await page.addInitScript(() => {
     const now=Math.floor(Date.now()/1000);
     localStorage.setItem('snar_legal_acceptance_v5', JSON.stringify({version:'2026-09-27-v5',acceptedAt:new Date().toISOString()}));
