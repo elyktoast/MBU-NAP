@@ -28,6 +28,7 @@ async function seedSignedIn(page,email='e2e@example.com') {
     if(route.request().method()==='GET')return route.fulfill({ status: 200, contentType: 'application/json', body: '[]' });
     return route.fulfill({ status: 201, contentType: 'application/json', body: '' });
   });
+  await page.route(cloud+'/rest/v1/rpc/snar_account_access_status', route => route.fulfill({status:200,contentType:'application/json',body:'"active"'}));
   await page.route(cloud+'/rest/v1/rpc/snar_admin_status', route => route.fulfill({ status:200, contentType:'application/json', body:JSON.stringify({is_admin:false,role:null}) }));
   await page.route(cloud+'/rest/v1/mbu_item_calibration?*', route =>
     route.fulfill({ status: 200, contentType: 'application/json', body: '[]' })
