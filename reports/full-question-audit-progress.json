@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 146,
+    "audited": 166,
     "bank2": [
       {
         "id": "S2-021",
@@ -690,39 +690,128 @@
       {
         "id": "S1-G08",
         "disposition": "PASS"
+      },
+      {
+        "id": "S1-W03",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G10",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M26",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M04",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G19",
+        "disposition": "IMPROVE",
+        "changes": [
+          "clarified splitting-ratio calculation and explanation"
+        ]
+      },
+      {
+        "id": "S1-M37",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-K01",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M05",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-K12",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed duplicated/awkward explanation text and tightened source-based rationale"
+        ]
+      },
+      {
+        "id": "S1-G30",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected topic metadata to Medical Gases"
+        ]
+      },
+      {
+        "id": "S1-K10",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G03",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G18",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M10",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-K04",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M09",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G05",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-K13",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G29",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M35",
+        "disposition": "PASS"
       }
     ]
   },
-  "remaining": 1854,
+  "remaining": 1834,
   "lastBatch": {
     "bank": "bank3.json",
     "audited": 20,
     "ids": [
-      "S1-G13",
-      "S1-M08",
-      "S1-M11",
-      "S1-G20",
-      "S1-G06",
-      "S1-M14",
-      "S1-M07",
-      "S1-G04",
-      "S1-W01",
-      "S1-W06",
-      "S1-M25",
-      "S1-G09",
-      "S1-M28",
-      "S1-M17",
-      "S1-W02",
-      "S1-M34",
-      "S1-M20",
-      "S1-G02",
-      "S1-K06",
-      "S1-G08"
+      "S1-W03",
+      "S1-G10",
+      "S1-M26",
+      "S1-M04",
+      "S1-G19",
+      "S1-M37",
+      "S1-K01",
+      "S1-M05",
+      "S1-K12",
+      "S1-G30",
+      "S1-K10",
+      "S1-G03",
+      "S1-G18",
+      "S1-M10",
+      "S1-K04",
+      "S1-M09",
+      "S1-G05",
+      "S1-K13",
+      "S1-G29",
+      "S1-M35"
     ],
     "notes": [
-      "Checked medical gas, monitoring, airway, and scavenging items against the matching lecture text and the equipment study guide.",
-      "Visually verified the labeled airway anatomy image for S1-W02.",
-      "Clarified explanations for S1-G20, S1-M14, S1-M25, and S1-M34; no answer keys changed."
+      "Checked the next 20 Bank 3 items against Airway Equipment, Monitoring, Medical Gas Systems in Anesthesia, and CO2 and Scavenging lecture material.",
+      "Visually verified the S1-M10 flow-volume-loop image; the patient loop shows the smaller-volume restrictive pattern keyed to pulmonary fibrosis.",
+      "Improved S1-G19 and S1-K12 explanations and corrected S1-G30 topic metadata; no answer keys changed."
     ]
   },
   "lastCorrection": {
