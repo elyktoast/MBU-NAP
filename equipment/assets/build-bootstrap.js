@@ -1,7 +1,7 @@
 /* Immutable SNAR Study Tool build bootstrap.
    Page behavior is always loaded from build-versioned assets; this file only resolves the current build and sequences them. */
 (()=>{'use strict';
-const script=document.currentScript,cfg=window.MBU_BOOT||{},assetsBase=new URL(cfg.assetsBase||'./',script?.src||location.href),buildUrl=new URL(cfg.buildUrl||'../build.json',script?.src||location.href);document.documentElement.dataset.mbuBoot='loading';const gate=document.createElement('style');gate.textContent='html[data-mbu-boot="loading"] body{pointer-events:none}';document.head.append(gate);
+const script=document.currentScript,cfg=window.MBU_BOOT||{},assetsBase=new URL(cfg.assetsBase||'./',script?.src||location.href),buildUrl=new URL(cfg.buildUrl||'../build.json',script?.src||location.href);document.documentElement.dataset.mbuBoot='loading';const gate=document.createElement('style');gate.textContent='html[data-mbu-boot="loading"] body>*{pointer-events:none}html[data-mbu-boot="loading"] body>#snar-legal-gate{pointer-events:auto}';document.head.append(gate);
 const specOf=x=>typeof x==='string'?{src:x}:x||{};
 async function start(){
   const response=await fetch(buildUrl.href+'?t='+Date.now(),{cache:'no-store',credentials:'same-origin'});
