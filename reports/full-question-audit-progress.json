@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 5,
+    "audited": 26,
     "bank2": [
       {
         "id": "S2-021",
@@ -110,7 +110,103 @@
           "expanded explanation"
         ]
       }
+    ],
+    "bank1": [
+      {
+        "id": "61",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "68",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "76",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "98",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "166",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "190",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "236",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "245",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "248",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "307",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "317",
+        "disposition": "CORRECT"
+      },
+      {
+        "id": "333",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "338",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "357",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "383",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "395",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "433",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "438",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "457",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "483",
+        "disposition": "IMPROVE"
+      },
+      {
+        "id": "495",
+        "disposition": "IMPROVE"
+      }
     ]
   },
-  "remaining": 1995
+  "remaining": 1974,
+  "lastBatch": {
+    "bank": "bank1.json",
+    "audited": 21,
+    "notes": [
+      "Expanded weak PISS and safety explanations.",
+      "Balanced answer-length/clueing issues in pulse oximetry, Bodok washer, copper kettle, second-stage regulator, laser ETT, and related items.",
+      "Replaced unsupported or over-specific stems for IDs 166, 190, and 317 with questions directly supported by the lecture material.",
+      "Corrected source emphasis/locators where needed, including hanger-yoke and Eschmann introducer items."
+    ]
+  }
 }
