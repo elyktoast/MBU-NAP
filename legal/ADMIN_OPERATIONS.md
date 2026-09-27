@@ -7,6 +7,7 @@ The operator-admin role is stored in a private Supabase table and checked by ser
 - View a high-level compliance/system summary, including account counts, approximate guest-session counts, CAT-user counts, and calibration totals.
 - View limited account-management metadata (email, created/last sign-in, access status, current legal acceptance, CAT-used indicator).
 - Suspend or re-grant cloud synchronization and Adaptive Mode access.
+- Permanently delete a non-admin account after explicit confirmation.
 - Export legal-assent audit records.
 - View privacy requests and update their workflow status.
 - Run defined retention cleanup routines.
@@ -34,3 +35,6 @@ Exports are evidence records. Store them securely, do not publish them, and do n
 
 ## Retention cleanup
 Run the retention cleanup after major releases and periodically during active operation. Do not run cleanup against records subject to an active dispute, security investigation, or legal hold.
+
+## Account deletion safeguard
+Administrator deletion is limited to non-admin accounts and requires explicit UI confirmation. The operator-admin account cannot be deleted through the admin-panel deletion function. Account deletion removes the authentication account and active account-linked cloud data while leaving only any still-valid pseudonymous legal-assent evidence described in the Privacy Notice.
