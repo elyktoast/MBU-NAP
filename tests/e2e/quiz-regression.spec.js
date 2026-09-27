@@ -2532,10 +2532,10 @@ test.describe('canonical quiz regression', () => {
   test('Quiz session stat bars use Answered, Correct, Missed, and Accuracy', async ({ page }) => {
     await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUQuizReady);
     await page.getByRole('button',{name:/Start Practice Set 1/}).click();
-    await expect(page.locator('#quiz .stats')).toContainText('Answered:');
-    await expect(page.locator('#quiz .stats')).toContainText('Correct:');
-    await expect(page.locator('#quiz .stats')).toContainText('Missed:');
-    await expect(page.locator('#quiz .stats')).toContainText('Accuracy:');
+    await expect(page.locator('#quiz .stats')).toContainText('Answered');
+    await expect(page.locator('#quiz .stats')).toContainText('Correct');
+    await expect(page.locator('#quiz .stats')).toContainText('Missed');
+    await expect(page.locator('#quiz .stats')).toContainText('Accuracy');
     await expect(page.locator('#quiz .stats')).not.toContainText('Completed:');
 
     await page.goto(exam + '/studio.html');await waitForStudio(page);
@@ -2545,10 +2545,61 @@ test.describe('canonical quiz regression', () => {
       document.getElementById('count').value='10';
       startMode('custom');
     });
-    await expect(page.locator('#quiz .stats')).toContainText('Answered:');
-    await expect(page.locator('#quiz .stats')).toContainText('Correct:');
-    await expect(page.locator('#quiz .stats')).toContainText('Accuracy:');
+    await expect(page.locator('#quiz .stats')).toContainText('Answered');
+    await expect(page.locator('#quiz .stats')).toContainText('Correct');
+    await expect(page.locator('#quiz .stats')).toContainText('Accuracy');
   });
+
+  test('Studio custom sessions use the unified quiz chrome and local notes', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await page.evaluate(()=>{
+      const first=document.querySelector('#sourceChecks input[type=checkbox]');
+      if(first)first.checked=true;
+      document.getElementById('count').value='10';
+      startMode('custom');
+    });
+    await expect(page.locator('#quiz .mbu-session-head')).toBeVisible();
+    await expect(page.locator('#quiz .mbu-quiz-stats>div')).toHaveCount(4);
+    await expect(page.locator('#quiz #mbu-calc-open')).toBeVisible();
+    await page.locator('#studioNotesBtn').click();
+    await page.locator('#studioNotesText').fill('SV = EDV - ESV');
+    await page.locator('#next').click();
+    await page.locator('#studioNotesBtn').click();
+    await expect(page.locator('#studioNotesText')).toHaveValue('SV = EDV - ESV');
+  });
+
+  test('Adaptive sessions inherit the unified Studio UI while keeping forward-jump controls restricted', async ({ page }) => {
+    await seedSignedIn(page);
+    await page.goto(exam + '/studio.html?mode=adaptive');await waitForStudio(page);
+    await page.locator('.studio-start-btn').click();
+    await expect(page.locator('#quiz')).toBeVisible();
+    await expect(page.locator('#quiz .mbu-session-head')).toBeVisible();
+    await expect(page.locator('#sessionBadge')).toContainText('ADAPTIVE');
+    await expect(page.locator('#studioNavToggle')).toBeHidden();
+    await expect(page.locator('#navigator')).toBeHidden();
+    await expect(page.locator('#studioNotesBtn')).toBeVisible();
+    await expect(page.locator('#quiz #mbu-calc-open')).toBeVisible();
+  });
+
+  for (const path of ['hazards-100.html?quiz=1','hazards-bank-2.html?quiz=1','hazards-bank-3.html','hazards-harder.html']) {
+    test('Hazards session uses unified chrome and Notes on '+path, async ({ page }) => {
+      await page.goto(exam + '/'+path);await page.evaluate(() => MBUPageReady);
+      if (path.includes('hazards-100')||path.includes('hazards-bank-2')) {
+        await expect(page.locator('#quiz')).toBeVisible();
+        await expect(page.locator('#quiz .mbu-session-head')).toBeVisible();
+        await page.locator('#hazNotesBtn').click();
+        await page.locator('#hazNotesText').fill('Fresh gas flow note');
+        await expect(page.locator('#hazNotesText')).toHaveValue('Fresh gas flow note');
+        await expect(page.locator('#quiz #mbu-calc-open')).toBeVisible();
+      } else {
+        await expect(page.locator('#main .mbu-session-head')).toBeVisible();
+        await page.locator('#qNotes').click();
+        await page.locator('#qNotesText').fill('Hazard scratch note');
+        await expect(page.locator('#qNotesText')).toHaveValue('Hazard scratch note');
+        await expect(page.locator('#main #mbu-calc-open')).toBeVisible();
+      }
+    });
+  }
 
   test('Continue Studying deep-links directly into the saved canonical practice set', async ({ page }) => {
     await page.addInitScript(() => {
