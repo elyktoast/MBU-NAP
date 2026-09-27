@@ -2285,24 +2285,24 @@
       "answer": [
         1
       ],
-      "explanation": "With N2O in use, the halogenated limit is 0.5 ppm, and N2O's limit is 25 ppm TWA. 0.4 and 22 are both under.",
-      "citation": "CO₂ & Scavenging · Slide 10 (PDF p. 5)",
+      "explanation": "Nurse Anesthesia states that when a halogenated anesthetic is used with nitrous oxide, the halogenated-agent exposure limit is 0.5 ppm and nitrous oxide is limited to 25 ppm as an 8-hour time-weighted average. Values of 0.4 ppm isoflurane and 22 ppm nitrous oxide are below those limits.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 16, p. 284",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": "The 0.5 ppm combined-use limit comes from NIOSH's 1977 recommendation; slide 10 lists only 2 ppm and 25 ppm.",
+      "supp": null,
       "sourceMeta": {
         "families": [
-          "CO₂ Absorbents and Scavenging"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "10",
-        "pdfPages": "5",
-        "citationFormat": "document"
+        "pages": "284",
+        "pdfPages": "337",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 10 · PDF p. 5"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 16 · p. 284 · PDF p. 337"
     },
     {
       "id": "NC02",
@@ -2385,7 +2385,7 @@
       "answer": [
         3
       ],
-      "explanation": "Flushing or emptying the breathing circuit into room air spills whatever agent remains, a technique error on the lecture's list. Separately, leaving high flows running overnight desiccates the absorbent.",
+      "explanation": "Flushing or squeezing anesthetic-containing circuit gas into the operating room releases residual anesthetic into ambient air. That is a technique-related source of waste anesthetic gas contamination.",
       "citation": "CO₂ & Scavenging · Slide 14 (PDF p. 7)",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -2654,7 +2654,7 @@
       "answer": [
         0
       ],
-      "explanation": "Increased apparatus dead space is a delivery-system hypercarbia hazard. In a small patient, a few added connectors can be a large fraction of tidal volume.",
+      "explanation": "Added components between the Y-piece and the patient increase apparatus dead space. In an infant, that added dead space can represent a large fraction of tidal volume and promote rebreathing with rising ETCO2.",
       "citation": "Anesthesia Workstation Hazards & Safety · Slide 20 (PDF p. 10)",
       "topic": "Hazards & Safety",
       "imageSvg": null,
@@ -2824,7 +2824,7 @@
       "answer": [
         1
       ],
-      "explanation": "OSHA enacts and enforces standards and recommends scavenging in all anesthetizing locations. TJC goes further, requiring active scavenging methods.",
+      "explanation": "The lecture states that OSHA recommends scavenging of waste anesthetic gases in all anesthetizing locations and advocates work practices that reduce trace anesthetic-gas levels in ambient air.",
       "citation": "CO₂ & Scavenging · Slide 10 (PDF p. 5)",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -3772,8 +3772,8 @@
       "answer": [
         1
       ],
-      "explanation": "The LMA Supreme's separate drain tube runs from an opening at the cuff tip, allowing gastric drainage or passage of a gastric tube.",
-      "citation": "Airway Equipment · Slide 14 (PDF p. 14); CO₂ & Scavenging · Slide 14 (PDF p. 7)",
+      "explanation": "The LMA Supreme includes a separate drain tube for gastric access. That channel provides a route for gastric drainage or passage of a gastric tube.",
+      "citation": "Airway Equipment · Slide 14 (PDF p. 14)",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -3782,14 +3782,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "CO₂ Absorbents and Scavenging",
           "Airway Equipment"
         ],
         "slides": "14",
         "pdfPages": "14",
         "citationFormat": "document"
       },
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceTitle": "Airway Equipment",
       "sourceLocator": "Slide 14 · PDF p. 14"
     },
     {
@@ -3806,7 +3805,7 @@
       "answer": [
         3
       ],
-      "explanation": "Vaporization cools the liquid, lowering vapor pressure and output. The bimetallic strip responds by sending more fresh gas through the chamber (changing the splitting ratio) so output stays at the dial. Only the Tec 6 uses a heater.",
+      "explanation": "Vaporization cools the liquid anesthetic and lowers its vapor pressure. The vaporizer's temperature-compensation mechanism changes the splitting ratio so that more carrier gas passes through the vaporizing chamber, helping maintain the dialed concentration.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 56 (PDF p. 28)",
       "topic": "Medical Gases",
       "imageSvg": null,
