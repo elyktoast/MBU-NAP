@@ -66,7 +66,9 @@ async function refreshLegalAcceptance(){
   try{
     const ok=await raw('/rest/v1/rpc/snar_has_current_legal_acceptance',{method:'POST',token:s.access_token,body:{p_terms_version:LEGAL_TERMS_VERSION,p_privacy_version:LEGAL_PRIVACY_VERSION}});
     legalAccepted=ok===true;return legalAccepted
-  }catch{legalAccepted=false;return false}
+  }catch(e){
+    legalAccepted=null;emit('error',{email:s.user?.email||'',error:'Could not verify account agreement: '+e.message});return false
+  }
 }
 async function acceptCurrentLegal(adultAck=false){
   if(adultAck!==true)throw Error('Confirm that you are 18+ and agree to the current Terms and Privacy Notice.');
@@ -121,33 +123,39 @@ async function submitPrivacyRequest(requestType,details=''){
   return Number(rows?.[0]?.id)||0
 }
 async function submitItemContribution(questionId,correct,responseMs=null,sessionMode='unknown'){
+  if(legalAccepted!==true)throw Error('Accept the current Terms and Privacy Notice before using this account feature.');
   const id=String(questionId||'').trim();if(!id)return false;
   const ms=responseMs==null?null:Math.max(0,Math.min(3600000,Math.round(Number(responseMs)||0)));
   const result=await api('/rest/v1/rpc/mbu_submit_item_contribution',{method:'POST',body:{p_question_id:id,p_correct:!!correct,p_response_ms:ms,p_session_mode:String(sessionMode||'unknown')}});
   return result===true
 }
 async function refreshCalibration(force=false){
+  if(legalAccepted!==true)throw Error('Accept the current Terms and Privacy Notice before using this account feature.');
   if(!force&&calibrationFetchedAt&&Date.now()-calibrationFetchedAt<300000)return calibrationByKey;
   const rows=await api('/rest/v1/mbu_item_calibration?select=question_id,unique_learners,correct_first_attempts,incorrect_first_attempts,adaptive_first_attempts,response_samples,avg_response_ms,p_value,difficulty_logit,standard_error,confidence,updated_at');
   calibrationByKey=new Map((rows||[]).map(row=>[String(row.question_id),row]));calibrationFetchedAt=Date.now();return calibrationByKey
 }
 function calibration(questionId){return calibrationByKey.get(String(questionId||''))||null}
 async function listDevices(){
+  if(legalAccepted!==true)throw Error('Accept the current Terms and Privacy Notice before using this account feature.');
   const s=await validSession();if(!s?.user?.id)return[];
   const rows=await api('/rest/v1/mbu_sync_devices?select=device_id,device_label,app_build,first_seen_at,last_seen_at&user_id=eq.'+encodeURIComponent(s.user.id)+'&order=last_seen_at.desc');
   return(rows||[]).map(row=>({...row,current:row.device_id===sync.deviceId()}))
 }
 async function removeDevice(deviceId){
+  if(legalAccepted!==true)throw Error('Accept the current Terms and Privacy Notice before using this account feature.');
   const s=await validSession();if(!s?.user?.id)throw Error('Sign in to manage devices.');
   const id=String(deviceId||'');if(!id)throw Error('Device id is required.');if(id===sync.deviceId())throw Error('You cannot remove the device you are currently using.');
   await api('/rest/v1/mbu_sync_devices?user_id=eq.'+encodeURIComponent(s.user.id)+'&device_id=eq.'+encodeURIComponent(id),{method:'DELETE',headers:{Prefer:'return=minimal'}});return true
 }
 async function listHistory(limit=30){
+  if(legalAccepted!==true)throw Error('Accept the current Terms and Privacy Notice before using this account feature.');
   const s=await validSession();if(!s?.user?.id)return[];
   const n=Math.max(1,Math.min(Number(limit)||30,100));
   return await api('/rest/v1/mbu_sync_versions?select=id,store_key,device_id,server_revision,saved_at,client_revision,client_updated_at&user_id=eq.'+encodeURIComponent(s.user.id)+'&order=saved_at.desc&limit='+n)
 }
 async function restoreVersion(versionId){
+  if(legalAccepted!==true)throw Error('Accept the current Terms and Privacy Notice before using this account feature.');
   const s=await validSession();if(!s?.user?.id)throw Error('Sign in to restore cloud history.');
   const id=Number(versionId);if(!Number.isInteger(id)||id<1)throw Error('Invalid history version.');
   const versions=await api('/rest/v1/mbu_sync_versions?select=id,store_key,payload,server_revision,saved_at&user_id=eq.'+encodeURIComponent(s.user.id)+'&id=eq.'+id+'&limit=1'),version=versions?.[0];
