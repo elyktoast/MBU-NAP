@@ -60,7 +60,10 @@ for(const [label,file] of sources){
     if(citation==null||String(Array.isArray(citation)?citation.join(' '):citation).trim()==='')missingCitation++;
     const topic=String(q.topic??q.lec??q.concept??'').trim();
     if(!topic)missingTopic++;
-    else if(!['Monitoring','Medical Gases','CO₂ & Scavenging','Airway','Hazards & Safety'].includes(topic))err(label+': '+identity+' has non-canonical topic '+topic);
+    else if(!['Monitoring','Medical Gas','CO₂ & Scavenging','Airway','Hazards & Safety'].includes(topic))err(label+': '+identity+' has non-canonical topic '+topic);
+    const sourceMeta=q.sourceMeta;
+    if(!sourceMeta||typeof sourceMeta!=='object'||Array.isArray(sourceMeta)||!Array.isArray(sourceMeta.families)||!sourceMeta.families.length||!['slides','document'].includes(sourceMeta.citationFormat))missingSourceMeta++;
+    else if(sourceMeta.families.some(x=>!['Medical Gas Systems in Anesthesia','Monitoring','CO₂ Absorbents & Scavenging','Airway Equipment','Anesthesia Workstation Hazards & Safety'].includes(String(x))))err(label+': '+identity+' has non-canonical source family metadata');
     const citationText=String(Array.isArray(citation)?citation.join('; '):citation||'');
     if(citationText&&(/\.pdf\b/i.test(citationText)||/,\s*Slides?\b/i.test(citationText)||/:\s*slides?\b/i.test(citationText)))err(label+': '+identity+' has legacy citation formatting');
     if(!String(q.explanation??q.exp??q.rationale??'').trim())missingExplanation++;
@@ -73,7 +76,6 @@ for(const [label,file] of sources){
   for(const identity of knownDupes)if(!seenKnownDupes.has(identity))warn(label+': duplicate baseline entry '+identity+' is no longer duplicated and can be removed');
   if(missingCitation)err(label+': '+missingCitation+' questions have no citation/source text');
   if(missingExplanation)err(label+': '+missingExplanation+' questions have no explanation/rationale');
-  if(invalidTopic)err(label+': '+invalidTopic+' questions use non-canonical topic labels');
   if(missingSourceMeta)err(label+': '+missingSourceMeta+' questions have no structured source metadata');
 
   const allowedMissingTopics=Number(baseline.allowedMissingTopics?.[name]??0);
