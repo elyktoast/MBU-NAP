@@ -13,5 +13,5 @@ function requireAcceptance(){
     const btn=wrap.querySelector('#snar-legal-accept');btn.focus();btn.onclick=()=>{remember();wrap.remove();style.remove();resolve(true)};
   })
 }
-window.SNARLegal={VERSION,KEY,accepted,requireAcceptance};
+window.SNARLegal={VERSION,KEY,accepted,requireAcceptance};window.SNARLegalReady=requireAcceptance();
 })();
