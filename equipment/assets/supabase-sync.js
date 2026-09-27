@@ -221,8 +221,18 @@ if(result?.applied!==false&&row)sync.acknowledgeServerWrite?.(key,row,meta);
 if(result?.applied===false&&row){
 const merged=await sync.importSnapshot(cloudSnapshot([row],s.user));
 conflictImports+=Number(merged?.imported)||0;
+if(!merged?.imported){
+  const retry=await api('/rest/v1/rpc/mbu_sync_write_state',{method:'POST',body:{
+  p_store_key:key,p_payload:payload,p_device_id:String(meta.deviceId||snapshot.deviceId),
+  p_client_revision:Number(meta.revision)||0,p_client_updated_at:new Date(Number(meta.updatedAt)||snapshot.createdAt||Date.now()).toISOString(),
+  p_expected_server_revision:Number(row.server_revision)||0
+  }});
+  const retryRow=retry?.row||null;if(retryRow)remoteByKey.set(key,retryRow);
+  if(retry?.applied===false)throw Error('Cloud progress changed again while syncing. Retry sync.');
+  if(retryRow)sync.acknowledgeServerWrite?.(key,retryRow,meta)
+}
 }else if(result?.applied===false){
-remoteByKey.delete(key);
+remoteByKey.delete(key);throw Error('Cloud sync conflict could not be resolved. Retry sync.');
 }
 }
 await api('/rest/v1/mbu_sync_devices?on_conflict=user_id,device_id',{method:'POST',body:{user_id:s.user.id,device_id:sync.deviceId(),device_label:navigator.platform||'Browser',app_build:window.MBU_BUILD_ID||'',last_seen_at:new Date().toISOString()},headers:{Prefer:'resolution=merge-duplicates,return=minimal'}});
