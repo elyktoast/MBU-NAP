@@ -1593,4 +1593,60 @@ test.describe('canonical quiz regression', () => {
     expect(result.meta.serverRevision).toBe(5);
   });
 
+  test('Question generator framework is provider-neutral and disabled by default', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const status=await page.evaluate(async()=>{
+      const api=MBUQuestionGenerator;
+      let disabledError='';
+      try{await api.generate('anything',{material:'test'})}catch(e){disabledError=e.message}
+      const draft=api.addDraft({
+        stem:'Which statement is correct?',
+        options:['Correct answer','Distractor'],
+        answer:[0],
+        type:'single',
+        explanation:'The source material supports the first answer.',
+        sourceExcerpt:'This is the supporting source excerpt.',
+        sourceName:'Test material'
+      });
+      const approved=api.approveDraft(draft.id);
+      const keys=await MBUSync.trackedKeys();
+      return{
+        enabled:api.enabled(),
+        providers:api.providerNames(),
+        disabledError,
+        approved:api.list().approved.length,
+        approvedStem:approved.stem,
+        tracked:keys.includes(api.STORE),
+        feature:window.MBU_FEATURES.questionGenerator
+      }
+    });
+    expect(status.enabled).toBe(false);
+    expect(status.providers).toEqual([]);
+    expect(status.disabledError).toContain('not enabled');
+    expect(status.approved).toBe(1);
+    expect(status.approvedStem).toBe('Which statement is correct?');
+    expect(status.tracked).toBe(true);
+    expect(status.feature).toMatchObject({enabled:false,status:'unconfigured',provider:null});
+  });
+
+  test('Generated questions require source traceability before approval', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const result=await page.evaluate(()=>{
+      const q={
+        stem:'Draft without source?',
+        options:['Yes','No'],
+        answer:[0],
+        type:'single',
+        explanation:'An explanation exists.'
+      };
+      const draft=MBUQuestionGenerator.addDraft(q);
+      const errors=MBUQuestionGenerator.validateQuestion(draft);
+      let approvalError='';
+      try{MBUQuestionGenerator.approveDraft(draft.id)}catch(e){approvalError=e.message}
+      return{errors,approvalError}
+    });
+    expect(result.errors.join(' ')).toContain('source excerpt or citation');
+    expect(result.approvalError).toContain('source excerpt or citation');
+  });
+
 });
