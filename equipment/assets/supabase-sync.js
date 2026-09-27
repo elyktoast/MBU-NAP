@@ -158,6 +158,7 @@ function startAutoSync(){
 function status(){const s=session();return{signedIn:!!s?.access_token,email:s?.user?.email||'',state:lastState,lastSyncAt,user:s?.user||null,recoveryMode,autoSyncIntervalMs:AUTO_SYNC_INTERVAL,nextAutoSyncAt:s?.access_token?(lastSyncAt||Date.now())+AUTO_SYNC_INTERVAL:0}}
 window.addEventListener('focus',()=>{if(session()&&Date.now()-lastSyncAt>120000)fullSync().catch(()=>{})});
 window.addEventListener('online',()=>{if(session())fullSync().catch(()=>{})});
+window.addEventListener('hashchange',()=>{consumeAuthRedirect().then(redirected=>{if(!redirected)return;startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100)}).catch(e=>{emit('error',{error:e.message});console.error('Supabase auth redirect failed',e)})});
 
 async function handleAuthRedirect(){
   const redirected=await consumeAuthRedirect();if(!redirected)return false;
