@@ -22,6 +22,7 @@ const budgets={
   'equipment/assets/supabase-config.js':1000,
   'equipment/assets/supabase-sync.js':24500,
   'equipment/assets/admin-panel.js':14000,
+  'equipment/assets/cloud-management.js':7000,
   'equipment/assets/app-core.css':11000,
   'equipment/assets/canonical-bank-page.js':8000,
   'equipment/assets/quiz-engine.js':30000,
