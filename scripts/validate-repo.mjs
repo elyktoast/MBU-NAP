@@ -413,7 +413,8 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(!studio.includes('if(prev&&prev.ok===nextOk&&prev.bank===bank&&prev.topic===q.topic)return;'))fail('Studio Phase 3 sync still rewrites unchanged imported answers');
  if(!studio.includes('if(syncChanged)save();'))fail('Studio Phase 3 sync still saves unconditionally');
  if(!sync.includes('function stageAnswer(bank,q,ok)'))fail('Studio sync Phase 3 staged answer API is missing');
- if(!studio.includes('MBUStudio.stageAnswer(q.bank,q,ok);setSessionAnswer('))fail('Studio Phase 3 grading still performs separate cumulative/session storage writes');
+ const grade=(studio.match(/function grade\(\)\{[^\n]+/)||[''])[0];
+ if(!grade.includes('MBUStudio.stageAnswer(q.bank,q,ok);')||!grade.includes('setSessionAnswer(q.uid')||grade.includes('MBUStudio.answer('))fail('Studio Phase 3 grading no longer batches cumulative/session state through the staged answer path');
 }
 
 // Phase 3 completion: saved state is normalized, active sessions survive source outages, and flag/reset writes stay compact.
