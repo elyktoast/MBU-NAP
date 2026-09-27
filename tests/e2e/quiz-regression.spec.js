@@ -1722,10 +1722,10 @@ test.describe('canonical quiz regression', () => {
       const hard={uid:'adaptive-hard',bank:'b1',topic:'Monitoring',set:1,stem:'Hard',ans:[0,1]};
       for(let i=0;i<3;i++)MBUStudyIntelligence.recordAnswer('b1',easy,true,{bankLabel:'Quiz Bank 1'});
       for(let i=0;i<3;i++)MBUStudyIntelligence.recordAnswer('b1',hard,false,{bankLabel:'Quiz Bank 1'});
-      const start=MBUStudyIntelligence.adaptiveStart([easy,hard,{uid:'adaptive-new',bank:'b2',topic:'Airway',set:1,stem:'New',ans:[0]}],3);
-      const up=MBUStudyIntelligence.adaptiveAdvance(start.state,start.question,true);
-      const down=MBUStudyIntelligence.adaptiveAdvance(up,start.question,false);
-      return{easy:MBUStudyIntelligence.adaptiveChallenge(easy),hard:MBUStudyIntelligence.adaptiveChallenge(hard),startTheta:start.state.theta,upTheta:up.theta,downTheta:down.theta,startLevel:start.state.level,upLevel:up.level,downLevel:down.level,seen:start.state.seenUids,seStart:start.state.se,seUp:up.se,seDown:down.se};
+      const start=MBUAdaptiveQuiz.start([easy,hard,{uid:'adaptive-new',bank:'b2',topic:'Airway',set:1,stem:'New',ans:[0]}],3);
+      const up=MBUAdaptiveQuiz.advance(start.state,start.question,true);
+      const down=MBUAdaptiveQuiz.advance(up,start.question,false);
+      return{easy:MBUAdaptiveQuiz.challenge(easy),hard:MBUAdaptiveQuiz.challenge(hard),startTheta:start.state.theta,upTheta:up.theta,downTheta:down.theta,startLevel:start.state.level,upLevel:up.level,downLevel:down.level,seen:start.state.seenUids,seStart:start.state.se,seUp:up.se,seDown:down.se};
     });
     expect(out.hard).toBeGreaterThan(out.easy);
     expect(out.startTheta).toBeCloseTo(0,5);
