@@ -1598,6 +1598,52 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('img:not([alt])')).toHaveCount(0);
   });
 
+  test('iPad-style rotation and bfcache return preserve an active Studio session', async ({ page }) => {
+    await page.setViewportSize({width:1024,height:768});
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await page.evaluate(()=>{
+      const first=document.querySelector('#sourceChecks input[type=checkbox]');
+      if(first)first.checked=true;
+      document.getElementById('count').value='10';
+      document.getElementById('adaptiveToggle').checked=false;
+      startMode('custom');
+    });
+    const before=await page.evaluate(()=>({uid:session[pos].uid,pos,active:[...DB.active.uids]}));
+    await page.setViewportSize({width:768,height:1024});
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth+1)).toBe(true);
+    await page.evaluate(()=>{
+      const e=new Event('pageshow');Object.defineProperty(e,'persisted',{value:true});window.dispatchEvent(e);
+    });
+    await expect(page.locator('#quiz')).toBeVisible();
+    const after=await page.evaluate(()=>({uid:session[pos].uid,pos,active:[...DB.active.uids]}));
+    expect(after).toEqual(before);
+  });
+
+  test('Mature 2,000-question learning history remains usable in Studio and Adaptive Mode', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const result=await page.evaluate(()=>{
+      const now=Date.now(),attempts={},reviews={},activity=[];
+      ALL.forEach((q,i)=>{
+        const ok=i%3!==0,at=now-(i%30)*86400000;
+        attempts[q.uid]={uid:q.uid,bank:q.bank,bankLabel:q.bankLabel,set:q.set,questionId:q.uid,topic:q.topic,stem:q.stem,href:location.href,attempts:3,correct:ok?2:1,incorrect:ok?1:2,lastAt:at,lastCorrect:ok,streak:ok?2:0};
+        reviews[q.uid]={uid:q.uid,dueAt:at+86400000,intervalDays:1,lastAt:at,lastCorrect:ok};
+        if(i>=ALL.length-1200)activity.push({id:q.uid+':'+at,at,type:'answer',uid:q.uid,bank:q.bank,bankLabel:q.bankLabel,topic:q.topic,ok,href:location.href});
+      });
+      localStorage.setItem(MBUStudyIntelligence.STORE,JSON.stringify({schema:1,updatedAt:now,attempts,reviews,activity,issues:[],seededLegacy:true}));
+      window.dispatchEvent(new StorageEvent('storage',{key:MBUStudyIntelligence.STORE}));
+      renderHome();
+      const summary=MBUStudyIntelligence.summary();
+      const pool=ALL.slice(0,500),adaptive=MBUAdaptiveQuiz.start(pool,50);
+      return{loaded:ALL.length,attempts:summary.overall.attempts,activity:MBUStudyIntelligence.recentActivity(1200).length,adaptiveUid:adaptive.question?.uid||'',poolContains:pool.some(q=>q.uid===adaptive.question?.uid)};
+    });
+    expect(result.loaded).toBe(2000);
+    expect(result.attempts).toBe(6000);
+    expect(result.activity).toBe(1200);
+    expect(result.adaptiveUid).not.toBe('');
+    expect(result.poolContains).toBe(true);
+    await expect(page.locator('#analyticsSummary')).toContainText('Overall accuracy');
+  });
+
   test('Server revision upgrade does not discard legacy unsynced local progress', async ({ page }) => {
     await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
     const result=await page.evaluate(async()=>{
