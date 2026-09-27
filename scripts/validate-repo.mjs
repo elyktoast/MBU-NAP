@@ -898,6 +898,14 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ['submitQuestionReport','snar_submit_question_report','snar_admin_question_reports','snar_admin_update_question_report'])if(!read('equipment/assets/supabase-sync.js').includes(token)&&!read('equipment/assets/admin-panel.js').includes(token))fail('Private question-report inbox contract missing '+token);
 }
 
+// Phase 3 question analytics must stay admin-only and lazy-loaded.
+{
+ const admin=read('equipment/assets/admin-panel.js'),qa=read('equipment/assets/admin-question-analytics.js'),migration=read('supabase/migrations/20260927231413_add_admin_question_analytics.sql');
+ for(const token of ['data-admin-analytics-load','admin-question-analytics.js'])if(!admin.includes(token))fail('Admin question analytics launcher missing '+token);
+ for(const token of ['snar_admin_question_analytics','p_limit:500','p_review_only:false','MBUQuestionSearch','Needs review','Open exact question'])if(!qa.includes(token))fail('Question analytics module missing '+token);
+ for(const token of ['private.snar_is_admin(auth.uid())','security definer',"set search_path=''","revoke all on function public.snar_admin_question_analytics(integer,boolean) from public,anon",'grant execute on function public.snar_admin_question_analytics(integer,boolean) to authenticated'])if(!migration.includes(token))fail('Question analytics migration security contract missing '+token);
+}
+
 // Hazards dashboard must always load the canonical Bank 1 visual system.
 {
  const src=read('equipment/exam-1/hazards.html');
