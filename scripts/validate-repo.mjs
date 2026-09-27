@@ -697,6 +697,15 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 }
 
 
+// Normal study access stays guest-available; Adaptive Mode alone requires an authenticated account.
+{
+ const boot=read('equipment/assets/build-bootstrap.js'),studio=read('equipment/assets/studio-page.js'),html=read('equipment/exam-1/studio.html'),core=read('equipment/assets/app-core.js');
+ if(boot.includes('requireAccount'))fail('Account gate: normal app initialization must not require sign-in');
+ for(const token of ['adaptiveToggleChanged','MBUSupabase?.status?.().signedIn','openAccount'])if(!studio.includes(token))fail('Adaptive account gate missing '+token);
+ if(!html.includes('Account required')||!html.includes('onchange="adaptiveToggleChanged(this)"'))fail('Studio: Adaptive account requirement is not visible');
+ if(core.includes('mbu-auth-gate')||core.includes('requireAccount'))fail('Account gate: obsolete whole-site authentication gate remains');
+}
+
 // Study intelligence is the single source of truth for adaptive review, spaced review, activity, and analytics.
 {
  const boot=read('equipment/assets/build-bootstrap.js'),intel=read('equipment/assets/study-intelligence.js'),search=read('equipment/assets/question-search.js'),studio=read('equipment/assets/studio-page.js'),dash=read('equipment/assets/exam-dashboard.js'),core=read('equipment/assets/app-core.js');
