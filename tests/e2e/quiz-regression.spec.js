@@ -1685,9 +1685,9 @@ test.describe('canonical quiz regression', () => {
 
   test('Account access check fails closed when the server status cannot be resolved', async ({ page }) => {
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
+    await seedSignedIn(page);
     await page.unroute(cloud+'/rest/v1/rpc/snar_account_access_status');
     await page.route(cloud+'/rest/v1/rpc/snar_account_access_status',route=>route.abort());
-    await seedSignedIn(page);
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     await expect.poll(()=>page.evaluate(()=>MBUSupabase.status().accessStatus)).toBe('unknown');
     const result=await page.evaluate(async()=>{try{await MBUSupabase.syncNow();return 'allowed'}catch(e){return e.message}});
@@ -1773,7 +1773,7 @@ test.describe('canonical quiz regression', () => {
   test('Signed-in user can delete account and return to signed-out state', async ({ page }) => {
     await seedSignedIn(page);
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let deleted=0;
-    await page.route(cloud+'/functions/v1/delete-account',route=>{deleted++;return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({deleted:true})})});
+    await page.route(cloud+'/functions/v1/snar-delete-account',route=>{deleted++;return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({deleted:true})})});
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
     await waitForAuth(page);
     await page.locator('.mbu-global-nav__cloud').click();
@@ -2560,12 +2560,15 @@ test.describe('canonical quiz regression', () => {
       localStorage.setItem('mbu_exam1_studio_v1',JSON.stringify({dirtyLocal:true}));
       MBUAppCore.touchStore('mbu_exam1_studio_v1');
     });
-    await page.evaluate(() => MBUSupabase.restoreVersion(45));
+    const restoredNavigation=page.waitForNavigation({waitUntil:'domcontentloaded'});
+    await page.evaluate(() => { void MBUSupabase.restoreVersion(45); });
+    await restoredNavigation;
+    await page.evaluate(() => MBUPageReady);
     await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('mbu_exam1_studio_v1')||'{}').restored)).toBe(true);
   });
 
   test('Cloud version restore uses the current server revision as an atomic write guard', async ({ page }) => {
-    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let rpcBody=null;
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';const rpcBodies=[];
     await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'test-access',refresh_token:'test-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000001',email:'test@example.com'}})}));
     await page.route(cloud+'/rest/v1/mbu_sync_versions?*',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify([{id:44,store_key:'mbu_exam1_studio_v1',payload:{restored:true},server_revision:8,saved_at:new Date().toISOString()}])}));
     await page.route(cloud+'/rest/v1/mbu_sync_state?*',route=>{
@@ -2574,17 +2577,18 @@ test.describe('canonical quiz regression', () => {
       return route.fulfill({status:200,contentType:'application/json',body:'[]'})
     });
     await page.route(cloud+'/rest/v1/rpc/mbu_sync_write_state',route=>{
-      rpcBody=JSON.parse(route.request().postData()||'{}');
-      return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({applied:true,row:{store_key:rpcBody.p_store_key,payload:rpcBody.p_payload,device_id:rpcBody.p_device_id,client_revision:rpcBody.p_client_revision,client_updated_at:rpcBody.p_client_updated_at,server_revision:13}})})
+      const body=JSON.parse(route.request().postData()||'{}');rpcBodies.push(body);
+      return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({applied:true,row:{store_key:body.p_store_key,payload:body.p_payload,device_id:body.p_device_id,client_revision:body.p_client_revision,client_updated_at:body.p_client_updated_at,server_revision:13}})})
     });
     await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>route.fulfill({status:201,contentType:'application/json',body:''}));
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
     await page.evaluate(() => MBUSupabase.signIn('test@example.com','correct horse battery staple'));
     await page.evaluate(() => MBUSupabase.restoreVersion(44));
-    expect(rpcBody.p_store_key).toBe('mbu_exam1_studio_v1');
-    expect(rpcBody.p_payload).toEqual({restored:true});
-    expect(rpcBody.p_expected_server_revision).toBe(12);
-    expect(rpcBody.p_client_revision).toBe(6);
+    const restoreWrite=rpcBodies[0];
+    expect(restoreWrite.p_store_key).toBe('mbu_exam1_studio_v1');
+    expect(restoreWrite.p_payload).toEqual({restored:true});
+    expect(restoreWrite.p_expected_server_revision).toBe(12);
+    expect(restoreWrite.p_client_revision).toBe(6);
   });
 
   test('Hazards dashboard loads the canonical styled card layout', async ({ page }) => {
