@@ -24,7 +24,6 @@ async function start(){
   if(window.SRNALegalReady)await window.SRNALegalReady;
   await loadScript('study-intelligence.js');
   await loadScript('answer-order.js');
-  await loadScript('question-search.js');
   await loadScript('supabase-config.js');
   await loadScript('supabase-sync.js');
   await Promise.all((cfg.styles||[]).map(loadStyle));

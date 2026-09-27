@@ -243,7 +243,7 @@ async function openTools(source){await ensurePanelStyles();ensureTools();toolsRe
 function mountNav(nav){
 if(!nav||nav.querySelector('.mbu-global-nav__utilities'))return;
 const utilities=E('div');utilities.className='mbu-global-nav__utilities';
-const search=E('button');search.type='button';search.className='mbu-global-nav__search';search.textContent='Search';search.setAttribute('aria-label','Search all questions');search.onclick=async()=>{await ensurePanelStyles();window.MBUQuestionSearch?.open?.(search)};
+const search=E('button');search.type='button';search.className='mbu-global-nav__search';search.textContent='Search';search.setAttribute('aria-label','Search all questions');search.onclick=async()=>{await ensurePanelStyles();if(!window.MBUQuestionSearch)await window.MBUBuild?.loadScript?.('question-search.js');window.MBUQuestionSearch?.open?.(search)};
 const cloud=E('button');cloud.type='button';cloud.className='mbu-global-nav__cloud';cloud.innerHTML='<span class="mbu-status-dot" aria-hidden="true"></span><span data-cloud-chip-label>Account</span>';cloud.onclick=()=>openAccount(cloud);
 const tools=E('button');tools.type='button';tools.className='mbu-global-nav__tools';tools.textContent='Tools';tools.setAttribute('aria-label','Open tools and diagnostics');tools.onclick=()=>openTools(tools);
 utilities.append(search,cloud,tools);nav.append(utilities);updateCloudChip()

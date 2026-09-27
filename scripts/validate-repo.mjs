@@ -836,7 +836,8 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 // Study intelligence is the single source of truth for adaptive review, spaced review, activity, and analytics.
 {
  const boot=read('equipment/assets/build-bootstrap.js'),intel=read('equipment/assets/study-intelligence.js'),search=read('equipment/assets/question-search.js'),studio=read('equipment/assets/studio-page.js'),dash=read('equipment/assets/exam-dashboard.js'),core=read('equipment/assets/app-core.js');
- for(const token of ["loadScript('study-intelligence.js')","loadScript('question-search.js')"])if(!boot.includes(token))fail('Shared study runtime missing '+token);
+ if(!boot.includes("loadScript('study-intelligence.js')"))fail('Shared study runtime missing study-intelligence.js');
+ if(boot.includes("loadScript('question-search.js')"))fail('Universal search is eagerly loaded by the bootstrap');
  for(const token of ['mbu_study_intelligence_v1','recordAnswer','smartReview','questionStats','topicStats','due','analytics','recentActivity','addIssue','firstAttempt=attempts===0','if(firstAttempt)window.MBUSupabase'])if(!intel.includes(token))fail('Study intelligence contract missing '+token);
  for(const token of ["m==='smart'","m==='custom'","m==='due'",'adaptiveToggle','MBUAdaptiveQuiz','analyticsSummary','seedLegacy',"sessionMode:DB.active?.mode||'custom'"])if(!studio.includes(token))fail('Studio intelligence integration missing '+token);
  for(const token of ['continuePanel','recentPanel','MBUStudyIntelligence'])if(!dash.includes(token))fail('Exam dashboard intelligence integration missing '+token);
@@ -862,7 +863,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const search=read('equipment/assets/question-search.js'),core=read('equipment/assets/app-core.js');
  for(const token of ['let indexPromise=null','async function buildIndex()','terms.every','Practice in Studio','studio.html?question='])if(!search.includes(token))fail('Universal search contract missing '+token);
- if(!core.includes('mbu-global-nav__search')||!core.includes('MBUQuestionSearch?.open'))fail('Global navigation search entry is missing');
+ if(!core.includes('mbu-global-nav__search')||!core.includes("loadScript?.('question-search.js')")||!core.includes('MBUQuestionSearch?.open'))fail('Lazy global navigation search entry is missing');
 }
 
 // Cloud device management and restore history must remain authenticated and server-revision safe.

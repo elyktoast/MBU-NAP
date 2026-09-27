@@ -2545,7 +2545,9 @@ test.describe('canonical quiz regression', () => {
   test('Universal question search is lazy, global, and routes results into Studio', async ({ page }) => {
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
     await expect(page.locator('.mbu-global-nav__search')).toBeVisible();
+    expect(await page.evaluate(()=>typeof window.MBUQuestionSearch)).toBe('undefined');
     await page.locator('.mbu-global-nav__search').click();
+    await expect.poll(()=>page.evaluate(()=>typeof window.MBUQuestionSearch)).toBe('object');
     await expect(page.locator('#mbu-question-search')).toBeVisible();
     await page.locator('[data-search-input]').fill('soda lime');
     await expect.poll(async()=>await page.locator('.mbu-search-result').count()).toBeGreaterThan(0);
