@@ -5630,18 +5630,18 @@
       "id": "172",
       "set": 2,
       "type": "single",
-      "stem": "During a procedure using a classic laryngeal mask airway (LMA), high positive inspiratory pressures (>25 cmH2O) are generated. What complication is most likely to occur?",
+      "stem": "Compared with a second-generation supraglottic airway, what pressure-related limitation does the LMA Classic have?",
       "options": [
-        "Rupture of the thyroid cartilage and acute surgical emphysema",
-        "Gastric insufflation and subsequent pulmonary aspiration of stomach contents",
-        "Complete collapse of the internal reinforced wire shaft",
-        "Inhibition of the patient's intrinsic hypoxic pulmonary vasoconstriction"
+        "A lower airway seal, with ventilation pressure limited to about 20 cmH2O",
+        "A higher seal than the ProSeal, allowing pressures above 40 cmH2O",
+        "No cuff, so positive-pressure ventilation is impossible",
+        "A rigid tracheal cuff that prevents gastric insufflation"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Standard first-generation LMAs provide an oropharyngeal seal up to approximately 20 cmH2O. Exceeding 20 to 25 cmH2O inspiratory pressure breaches the esophageal sphincter threshold, directing gas into the stomach, causing gastric distention and increasing aspiration risk.",
-      "citation": "Airway Equipment · Slide 14; CO₂ & Scavenging · Slide 14",
+      "explanation": "Nurse Anesthesia states that the ProSeal LMA provides an improved seal that permits peak ventilation pressures of about 28 to 30 cmH2O, compared with about 20 cmH2O for the LMA Classic.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 24, p. 457",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -5650,14 +5650,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "CO₂ Absorbents and Scavenging",
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "14",
-        "citationFormat": "slides"
+        "pages": "457",
+        "pdfPages": "544",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 14"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 24 · p. 457 · PDF p. 544"
     },
     {
       "id": "173",
@@ -5698,18 +5698,18 @@
       "id": "174",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary indication for performing a rapid-sequence induction (RSI) with cricoid pressure rather than a standard inhalational induction?",
+      "stem": "Why is cricoid pressure traditionally used during rapid-sequence induction in patients at risk for aspiration?",
       "options": [
-        "Anticipated difficult laryngoscopy due to severe micrognathia",
-        "Full stomach or conditions with delayed gastric emptying to minimize aspiration risk",
-        "History of malignant hyperthermia requiring total intravenous anesthesia",
-        "Severe chronic obstructive pulmonary disease requiring low tidal volumes"
+        "To reduce regurgitation and aspiration of gastric contents",
+        "To improve venous return",
+        "To increase lower-esophageal sphincter tone",
+        "To eliminate the need for preoxygenation"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "RSI is indicated when a patient is at high risk for pulmonary aspiration of gastric contents (e.g., non-fasted state, trauma, bowel obstruction, acute abdomen, morbid obesity, pregnancy).",
-      "citation": "Airway Equipment · Slide 3",
+      "explanation": "The textbook describes cricoid pressure as posterior displacement of the cricoid cartilage intended to reduce regurgitation and possible aspiration during induction, particularly in aspiration-risk patients undergoing rapid-sequence induction.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 24, p. 455",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -5718,13 +5718,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "3",
-        "citationFormat": "slides"
+        "pages": "455",
+        "pdfPages": "542",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 3"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 24 · p. 455 · PDF p. 542"
     },
     {
       "id": "175",
@@ -5762,21 +5763,21 @@
       "id": "176",
       "set": 2,
       "type": "multi",
-      "stem": "Which of the following clinical statements regarding nasopharyngeal airways (NPAs) are correct? (Select 3)",
+      "stem": "Which statements about nasopharyngeal airways are supported by the lecture? Select 3.",
       "options": [
-        "They are generally better tolerated than OPAs in awake or lightly anesthetized patients",
-        "They are contraindicated in severe coagulopathy or suspected basilar skull fractures",
-        "The distal tip rests in the subglottic trachea directly above the carina",
-        "Epistaxis is the most common clinical complication associated with insertion",
-        "They prevent upper airway obstruction by permanently displacing the epiglottis",
-        "Sizing is estimated from the tip of the nose to the tragus of the ear"
+        "Awake patients generally tolerate them better than oropharyngeal airways",
+        "Water-based lubricant or local anesthetic may be used for insertion",
+        "Epistaxis is the most common complication",
+        "They are positioned in the trachea",
+        "They require direct laryngoscopy for insertion",
+        "They are less tolerated than oral airways in awake patients"
       ],
       "answer": [
         0,
-        3,
-        5
+        1,
+        2
       ],
-      "explanation": "NPAs are better tolerated awake than OPAs, sized nose-to-tragus (or earlobe), and lubricated before insertion. Epistaxis is the most common complication, and they are contraindicated in basilar skull fractures. The tip rests in the hypopharynx, not the trachea.",
+      "explanation": "The lecture states that awake patients tolerate NPAs better than OPAs, recommends water-based lubricant or local anesthetic for insertion, and identifies epistaxis as the most common complication. It also notes that the device lies in the hypopharynx.",
       "citation": "Airway Equipment · Slide 6",
       "topic": "Airway",
       "imageSvg": null,
@@ -5997,18 +5998,18 @@
       "id": "183",
       "set": 2,
       "type": "single",
-      "stem": "Why is the common gas outlet check valve absent on certain newer anesthesia workstation models?",
+      "stem": "What is the purpose of a check valve placed between the vaporizer and common gas outlet?",
       "options": [
-        "Modern vaporizers utilize internal computer feedback to eliminate the pumping effect without requiring a downstream valve",
-        "Check valves accelerate the thermal degradation of Sevoflurane into Compound A",
-        "Check valves prevent the activation of the intermediate oxygen fail-safe system",
-        "Modern flowmeters utilize high-pressure glass tubes that are immune to backpressure"
+        "To minimize the pumping effect from pressure transmitted backward from the breathing circuit",
+        "To increase pipeline oxygen pressure",
+        "To prevent cylinder transfilling",
+        "To open the scavenging reservoir to atmosphere"
       ],
       "answer": [
         0
       ],
-      "explanation": "Older machines used outlet check valves to prevent circuit backpressure from compressing gas into vaporizing sumps (pumping effect). Modern electronic gas mixers and advanced vaporizer manifolds (such as Aladin or modern bypass models) regulate flow and vapor pressure electronically, rendering mechanical check valves obsolete.",
-      "citation": "Medical Gas Systems in Anesthesia · Slides 49, 72",
+      "explanation": "The lecture states that a check valve between the vaporizer and common gas outlet minimizes the pumping effect caused by retrograde pressure changes during positive-pressure ventilation or oxygen-flush use.",
+      "citation": "Medical Gas Systems in Anesthesia · Slide 72",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -6019,27 +6020,27 @@
         "families": [
           "Medical Gas Systems in Anesthesia"
         ],
-        "slides": "49, 72",
+        "slides": "72",
         "citationFormat": "slides"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slides 49, 72"
+      "sourceLocator": "Slide 72"
     },
     {
       "id": "184",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary consequence of excessive vacuum suction applied to an active waste gas scavenging interface system?",
+      "stem": "In a closed-reservoir scavenging interface, what should happen if the hospital vacuum generates excessive negative pressure?",
       "options": [
-        "In a closed-reservoir system with a faulty negative-pressure relief valve, negative pressure is transmitted to the patient's breathing circuit",
-        "In an open-reservoir system, volatile anesthetic is pulled directly into the hospital oxygen pipeline",
-        "The first-stage cylinder regulator drops pressure below 14 psig, causing flowmeter float stick",
-        "The carbon dioxide absorbent canister undergoes rapid, explosive desiccation"
+        "The negative-pressure relief valve opens and admits room air into the reservoir",
+        "The positive-pressure pop-off valve closes permanently",
+        "Negative pressure is intentionally transmitted to the patient",
+        "The oxygen flush valve opens automatically"
       ],
       "answer": [
         0
       ],
-      "explanation": "Excessive scavenging suction removes waste gases rapidly. In a closed interface, if the negative-pressure relief ('pop-in') valve fails to open, severe negative pressure can be exerted directly onto the breathing circuit, risking negative-pressure pulmonary edema.",
+      "explanation": "The lecture states that excessive vacuum causes the negative-pressure relief, or pop-in, valve to open so room air is drawn into the scavenging reservoir, preventing excessive negative pressure from reaching the breathing circuit.",
       "citation": "CO₂ & Scavenging · Slide 20",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -6061,17 +6062,17 @@
       "id": "185",
       "set": 2,
       "type": "single",
-      "stem": "Following peritoneal insufflation for laparoscopic surgery, a mechanically ventilated patient displays a parallel rise in peak inspiratory pressure (from 20 to 35 cmH2O) and plateau pressure (from 16 to 31 cmH2O). What is the underlying physical mechanism, and what is the appropriate ventilatory response?",
+      "stem": "Peritoneal insufflation causes peak inspiratory pressure and plateau pressure to rise in parallel during volume-controlled ventilation. What mechanism best explains the pattern?",
       "options": [
-        "Decreased pulmonary compliance; titrate tidal volumes down to 6–8 mL/kg and monitor airway pressures",
-        "Increased airway resistance; pass an in-line suction catheter to relieve tracheal tube kinking",
-        "Circuit disconnection; increase fresh gas flow to 10 L/min to overcome the volume loss",
-        "Incompetent inspiratory valve; switch immediately to an auxiliary Mapleson circuit"
+        "Decreased pulmonary compliance",
+        "Isolated increase in airway resistance",
+        "Increased fresh gas flow",
+        "Failure of the oxygen analyzer"
       ],
       "answer": [
         0
       ],
-      "explanation": "Peritoneal insufflation pushes the diaphragm cephalad, acutely reducing both static and dynamic pulmonary compliance, which causes PIP and Pplat to rise in parallel. In volume control, this warrants reducing tidal volume (lung-protective ventilation: 6–8 mL/kg) and monitoring to prevent barotrauma.",
+      "explanation": "The monitoring lecture states that a parallel increase in peak and plateau pressure indicates decreased pulmonary compliance. Laparoscopic insufflation is listed as a cause of decreased compliance.",
       "citation": "Monitoring · Slides 26, 27, 28, 32",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -6270,7 +6271,7 @@
       "answer": [
         0
       ],
-      "explanation": "General (and neuraxial) anesthetics profoundly inhibit central thermoregulation by suppressing hypothalamic response thresholds, widening the normal interthreshold range (normally 0.2°C) up to 2–4°C, impairing vasoconstriction and shivering responses.",
+      "explanation": "The lecture states that general and regional anesthesia inhibit afferent and efferent thermoregulatory control, impairing normal defenses against perioperative heat loss.",
       "citation": "Monitoring · Slide 80",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -6391,23 +6392,19 @@
     {
       "id": "195",
       "set": 2,
-      "type": "multi",
-      "stem": "Which of the following clinical events are recognized causes of acute airway obstruction during emergence from general anesthesia? (Select 3)",
+      "type": "single",
+      "stem": "During emergence from general anesthesia, loss of upper-airway muscle tone can cause obstruction through which mechanism?",
       "options": [
-        "Sudden denitrogenation of the functional residual capacity",
-        "Accidental administration of 100% inspired oxygen via tight mask",
-        "Laryngospasm triggered by secretions on vocal cords during light anesthesia",
-        "Posterior displacement of the relaxed tongue against the pharyngeal wall",
-        "Inhibition of the hypoxic ventilatory response by residual volatile agent",
-        "Direct negative-pressure pulmonary edema from forced inspiration against a closed glottis"
+        "Posterior displacement of the tongue against the pharyngeal wall",
+        "Negative-pressure pulmonary edema directly closing the airway",
+        "Increased functional residual capacity",
+        "Anterior displacement of the soft palate"
       ],
       "answer": [
-        2,
-        3,
-        5
+        0
       ],
-      "explanation": "Airway obstruction at emergence is most commonly caused by laryngospasm, loss of upper airway tone allowing the tongue to collapse against the posterior pharynx, or acute complications like negative-pressure pulmonary edema following severe post-extubation obstruction.",
-      "citation": "Airway Equipment · Slide 3; Monitoring · Slides 45, 51",
+      "explanation": "Nurse Anesthesia describes poor muscle tone after anesthesia as a cause of tongue-related upper-airway obstruction. Jaw thrust, chin lift, or placement of an oral or nasal airway may be required to restore patency.",
+      "citation": "Nurse Anesthesia, 7th ed. · Postanesthesia airway obstruction",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -6416,14 +6413,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation",
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "3",
-        "citationFormat": "slides"
+        "pdfPages": "1478",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 3"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "PDF p. 1478"
     },
     {
       "id": "196",
@@ -6493,18 +6489,18 @@
       "id": "198",
       "set": 2,
       "type": "single",
-      "stem": "During a surgical procedure, the multi-gas analyzer indicates an inspired carbon dioxide concentration (FiCO2) of 6 mmHg. What is the most appropriate initial troubleshooting intervention?",
+      "stem": "An inspired carbon dioxide concentration above zero during maintenance of anesthesia most directly indicates what problem?",
       "options": [
-        "Increase fresh gas flow and inspect the carbon dioxide absorbent canister for exhaustion",
-        "Administer an intravenous bronchodilator to treat acute bronchospasm",
-        "Immediately disconnect the patient and initiate manual jet ventilation",
-        "Calibrate the galvanic fuel cell against ambient room air"
+        "Rebreathing of carbon dioxide",
+        "Excessive oxygen supply pressure",
+        "Hyperventilation without rebreathing",
+        "A fully functional absorbent canister"
       ],
       "answer": [
         0
       ],
-      "explanation": "An FiCO2 > 0 mmHg indicates rebreathing of carbon dioxide. The first-line interventions are to increase fresh gas flows (to flush CO2 out of the circuit) and inspect the CO2 absorbent canister (and unidirectional valves) for chemical exhaustion or failure.",
-      "citation": "Monitoring · Slides 43, 50, 51; CO₂ & Scavenging · Slides 2, 4",
+      "explanation": "An elevated inspired CO2 or nonzero capnogram baseline indicates rebreathing. The lecture lists exhausted absorbent and incompetent unidirectional valves among causes.",
+      "citation": "Monitoring · Slides 43, 50, 51",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -6513,8 +6509,7 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation",
-          "CO₂ Absorbents and Scavenging"
+          "Intraoperative Assessment, Monitoring & Data Interpretation"
         ],
         "slides": "43, 50, 51",
         "citationFormat": "slides"
@@ -6539,8 +6534,8 @@
         1,
         2
       ],
-      "explanation": "Second-generation LMAs incorporate an esophageal drain tube (to vent gastric air and pass an orogastric tube) and an engineered cuff design providing higher airway seal pressures (typically >30 cmH2O). They do NOT provide 100% protection against aspiration nor are they laser-resistant.",
-      "citation": "Airway Equipment · Slide 14",
+      "explanation": "The textbook describes second-generation devices such as the ProSeal as adding a gastric drainage tube and improving the airway seal compared with the LMA Classic, permitting higher ventilation pressures.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 24, p. 457",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -6549,13 +6544,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "14",
-        "citationFormat": "slides"
+        "pages": "457",
+        "pdfPages": "544",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 14"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 24 · p. 457 · PDF p. 544"
     },
     {
       "id": "200",
@@ -6571,7 +6567,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ethyl violet can be deactivated (bleached) by bright OR operating lights, and resting exhausted absorbent undergoes a temporary pH shift overnight that returns the dye to white (regeneration). Providers must monitor inspired and end-tidal CO2 on capnography rather than relying exclusively on color.",
+      "explanation": "The lecture states that ethyl violet can be bleached by intense light and that some color fades after use stops because of regeneration. It specifically warns that indicator color should not be relied on by itself.",
       "citation": "CO₂ & Scavenging · Slide 4",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -6703,8 +6699,8 @@
       "answer": [
         0
       ],
-      "explanation": "An unexplained rapid rise in EtCO2 is the earliest and most sensitive sign of Malignant Hyperthermia. Hyperthermia itself is a late sign. Treatment with dantrolene, discontinuing triggers, hyperventilation with 100% O2, and activating the MH protocol must begin immediately without waiting for temperature elevation.",
-      "citation": "Monitoring · Slides 43, 50, 82, 84",
+      "explanation": "The textbook recommends prompt treatment when malignant hyperthermia is identified: call for help, discontinue triggering agents, administer dantrolene, and hyperventilate with 100% oxygen. A normal temperature does not exclude an evolving episode because rising temperature may occur later.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 36, pp. 843-844",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -6713,13 +6709,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "43, 50, 82, 84",
-        "citationFormat": "slides"
+        "pages": "843-844",
+        "pdfPages": "983-984",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 43, 50, 82, 84"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 36 · pp. 843-844 · PDF pp. 983-984"
     },
     {
       "id": "205",
@@ -7086,23 +7083,19 @@
     {
       "id": "216",
       "set": 3,
-      "type": "multi",
-      "stem": "Which of the following clinical findings indicate that an endotracheal tube cuff is exerting excessive pressure (>30 cmH2O) against the tracheal mucosa? (Select 3)",
+      "type": "single",
+      "stem": "Which airway complication does the textbook associate with excessive endotracheal-tube cuff pressure?",
       "options": [
-        "The pilot balloon feels hard and non-compliant to palpation",
-        "Continuous audible air leak escaping around the mouth during mechanical inspiration",
-        "A calibrated manometer in-line with the pilot balloon registers 45 cmH2O",
-        "Immediate appearance of an open-loop failure on the pressure-volume spirometry tracing",
-        "Rapid desaturation with loss of pulsatile pulse oximetry waveforms",
-        "Postoperative patient complaints of severe sore throat, hoarseness, and tracheal pain"
+        "Laryngotracheal edema",
+        "Improved mucosal perfusion",
+        "Reduced risk of airway injury",
+        "Increased functional residual capacity"
       ],
       "answer": [
-        0,
-        2,
-        5
+        0
       ],
-      "explanation": "Excessive cuff pressure (>30 cmH2O) exceeds mucosal capillary perfusion pressure, causing ischemia. Indicators include a tense pilot balloon, manometer readings >30 cmH2O, and postoperative sore throat, hoarseness, or stenosis. Leaks and open loops indicate underinflation, not overinflation.",
-      "citation": "Airway Equipment · Slide 7; Monitoring · Slide 29",
+      "explanation": "Nurse Anesthesia lists excessive cuff pressure among factors that can cause laryngotracheal edema after intubation.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 24",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -7111,14 +7104,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation",
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "7",
-        "citationFormat": "slides"
+        "pdfPages": "558",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 7"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "PDF p. 558"
     },
     {
       "id": "217",
@@ -7223,18 +7215,18 @@
       "id": "220",
       "set": 3,
       "type": "single",
-      "stem": "[REINFORCEMENT: Q120] Why is weighing an E-cylinder the only reliable method to determine the amount of liquid nitrous oxide remaining before the pressure gauge begins to drop?",
+      "stem": "Why is a nitrous oxide cylinder pressure gauge a poor indicator of remaining contents while liquid nitrous oxide is still present?",
       "options": [
-        "The pressure gauge remains constant at 745 psig as long as any liquid remains in equilibrium with vapor",
-        "Nitrous oxide decomposes into nitrogen gas under constant mechanical compression",
-        "Bourdon gauges are calibrated exclusively for ideal gases, not diphasic liquids",
-        "The cylinder check valve closes whenever internal liquid volume falls below 500 mL"
+        "The pressure remains near 745 psi while liquid and vapor coexist",
+        "The pressure falls linearly from the moment the cylinder is opened",
+        "The gauge measures oxygen rather than nitrous oxide",
+        "Nitrous oxide has no vapor pressure at room temperature"
       ],
       "answer": [
         0
       ],
-      "explanation": "In a diphasic cylinder, liquid vaporizes to maintain equilibrium vapor pressure (745 psig at 20°C) until the liquid is entirely gone. Therefore, weighing the cylinder and subtracting the tare weight is the only accurate way to determine remaining liquid volume.",
-      "citation": "Medical Gas Systems in Anesthesia · Slide 14",
+      "explanation": "The textbook states that nitrous oxide is stored as a liquid and its gauge remains near 745 psi at room temperature until the liquid phase is gone. Only then does pressure decline rapidly with further use.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 16, p. 253",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -7243,13 +7235,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Medical Gas Systems in Anesthesia"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "14",
-        "citationFormat": "slides"
+        "pages": "253",
+        "pdfPages": "307",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 14"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 16 · p. 253 · PDF p. 307"
     },
     {
       "id": "221",
@@ -7423,18 +7416,18 @@
       "id": "226",
       "set": 3,
       "type": "single",
-      "stem": "During placement of an Eschmann tracheal tube introducer (bougie), the provider feels the tip smoothly advance past 45 cm without meeting any resistance or clicking. Where is the bougie located?",
+      "stem": "When an Eschmann introducer is advanced into the trachea, which tactile finding can help confirm tracheal placement?",
       "options": [
-        "Within the subglottic trachea directly above the carina",
-        "Within the esophagus",
-        "Within the right mainstem bronchus",
-        "Wedged against the anterior thyroid lamina"
+        "A bouncing sensation over the tracheal rings",
+        "Complete absence of any tactile feedback in every case",
+        "A pulse transmitted from the carotid artery",
+        "A sudden increase in pilot-balloon pressure"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Tracheal entry produces palpable clicks over cartilaginous rings and stops at the carina (~25–30 cm). Advancing smoothly past 40–45 cm without clicks or resistance indicates entry into the compliant, smooth-walled esophagus.",
-      "citation": "Airway Equipment · Slide 9",
+      "explanation": "The textbook notes that feeling the Eschmann introducer bounce along the tracheal rings can help confirm tracheal placement, although the sensation is not always present.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 24, p. 461",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -7443,13 +7436,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "9",
-        "citationFormat": "slides"
+        "pages": "461",
+        "pdfPages": "548",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 9"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 24 · p. 461 · PDF p. 548"
     },
     {
       "id": "227",
@@ -7487,17 +7481,17 @@
       "id": "228",
       "set": 3,
       "type": "single",
-      "stem": "During general anesthesia with controlled ventilation, the capnography monitor displays a sharp downward notch in the alveolar plateau (Phase III). What clinical intervention is indicated?",
+      "stem": "A curare cleft appears during controlled ventilation. What should be assessed next?",
       "options": [
-        "Deepen anesthesia or administer an additional dose of neuromuscular blocker",
-        "Replace the carbon dioxide absorbent canister immediately",
-        "Suction the endotracheal tube to clear airway secretions",
-        "Increase fresh gas flow to 10 L/min to flush circuit dead space"
+        "Neuromuscular blockade, with additional relaxant considered if indicated",
+        "The oxygen cylinder color only",
+        "The scavenging vacuum pressure only",
+        "The vaporizer filling port"
       ],
       "answer": [
         0
       ],
-      "explanation": "A downward notch in Phase III is a curare cleft, representing patient spontaneous diaphragmatic effort as muscle relaxation wanes. The proper intervention is to deepen anesthesia or redose neuromuscular blocker.",
+      "explanation": "A curare cleft reflects spontaneous inspiratory effort during controlled ventilation and can indicate waning neuromuscular blockade. The appropriate next step is to assess blockade and determine whether additional relaxant is indicated.",
       "citation": "Monitoring · Slides 47, 51",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -7854,18 +7848,18 @@
       "id": "239",
       "set": 3,
       "type": "single",
-      "stem": "In a patient with suspected basilar skull fracture, which airway management technique is strictly contraindicated due to the risk of intracranial penetration?",
+      "stem": "Which airway route does the Nurse Anesthesia textbook say should be avoided when a basilar skull fracture is suspected?",
       "options": [
-        "Blind placement of a nasopharyngeal airway (NPA)",
-        "Direct laryngoscopy with a size 3 Macintosh blade",
-        "Insertion of a classic laryngeal mask airway",
-        "Bag-valve-mask ventilation using a two-handed C-E clamp"
+        "Nasal intubation",
+        "Oral endotracheal intubation",
+        "Mask ventilation",
+        "Oral airway placement"
       ],
       "answer": [
         0
       ],
-      "explanation": "Nasal airways, nasogastric tubes, and nasotracheal tubes are contraindicated in basilar skull fractures due to the risk of accidental passage through a fractured cribriform plate into the intracranial vault.",
-      "citation": "Airway Equipment · Slide 6",
+      "explanation": "The textbook states that nasal intubation should be avoided when a basilar skull fracture is suspected because cranial-base disruption may be present.",
+      "citation": "Nurse Anesthesia, 7th ed. · Head injury airway management",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -7874,13 +7868,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "6",
-        "citationFormat": "slides"
+        "pdfPages": "862",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 6"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "PDF p. 862"
     },
     {
       "id": "240",
@@ -8085,18 +8079,18 @@
       "id": "246",
       "set": 3,
       "type": "single",
-      "stem": "During direct laryngoscopy with a straight Miller blade, what is the correct technique for exposing the vocal cords?",
+      "stem": "During direct laryngoscopy with a Miller blade, how is the epiglottis elevated?",
       "options": [
-        "Directly trap and lift the posterior surface of the epiglottis",
-        "Position the blade tip into the vallecula to tension the glossoepiglottic fold",
-        "Insert into the left tonsillar fossa and rotate the handle 90 degrees",
-        "Pass through the glottic aperture to stent the vocal cords apart"
+        "By direct lift with the blade tip under the epiglottis",
+        "Indirectly from the vallecula",
+        "By inflating the pharynx",
+        "By applying cricoid pressure"
       ],
       "answer": [
         0
       ],
-      "explanation": "The straight Miller blade is advanced underneath the epiglottis, directly trapping and lifting its posterior surface to expose the vocal cords.",
-      "citation": "Airway Equipment · Slide 10",
+      "explanation": "The lecture describes the Miller as a long, straight blade used for direct epiglottic lift, whereas the Macintosh lifts indirectly through the vallecula.",
+      "citation": "Airway Equipment · Slide 11",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -8107,11 +8101,11 @@
         "families": [
           "Airway Equipment"
         ],
-        "slides": "10",
+        "slides": "11",
         "citationFormat": "slides"
       },
       "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 10"
+      "sourceLocator": "Slide 11"
     },
     {
       "id": "247",
@@ -8316,21 +8310,19 @@
       "id": "253",
       "set": 3,
       "type": "multi",
-      "stem": "Which of the following clinical statements regarding the sniffing position are true? (Select 3)",
+      "stem": "Which statements describe the sniffing position taught in the airway lecture? Select 2.",
       "options": [
-        "It aligns the oral, pharyngeal, and laryngeal axes for direct laryngoscopy",
-        "It requires posterior hyperextension of the lower cervical spine",
-        "It is achieved by elevating the occiput 7 to 10 cm with a firm pad",
-        "It requires extension of the head at the atlanto-occipital joint",
-        "It is contraindicated in edentulous patients",
-        "It eliminates the need for ramping in morbidly obese patients"
+        "The occiput is elevated",
+        "The head is extended at the atlanto-occipital joint",
+        "The head remains fully flexed without extension",
+        "Cricoid pressure is required to create the position",
+        "The shoulders must always be raised 20 cm"
       ],
       "answer": [
         0,
-        2,
-        3
+        1
       ],
-      "explanation": "The sniffing position aligns the three airway axes by flexing the lower cervical spine (elevating the occiput 7–10 cm) and extending the head at the atlanto-occipital joint. Obese patients require ramping (ear-to-sternal notch), not simple head pads.",
+      "explanation": "The lecture defines the sniffing position as elevation of the occiput with extension of the head at the atlanto-occipital joint.",
       "citation": "Airway Equipment · Slide 3",
       "topic": "Airway",
       "imageSvg": null,
@@ -8529,8 +8521,8 @@
         3,
         4
       ],
-      "explanation": "Second-generation LMAs incorporate an esophageal drainage channel (permitting stomach decompression) and provide higher seal pressures (>30 cmH2O). They do not provide complete protection against aspiration, are not laser-resistant, and remain supraglottic.",
-      "citation": "Airway Equipment · Slide 14",
+      "explanation": "The textbook describes the ProSeal and Supreme as second-generation supraglottic devices with gastric access or drainage features and improved airway seals compared with the LMA Classic. The gastric channel can also permit passage of a gastric tube.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 24, pp. 457-458",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -8539,13 +8531,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "14",
-        "citationFormat": "slides"
+        "pages": "457-458",
+        "pdfPages": "544-545",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 14"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 24 · pp. 457-458 · PDF pp. 544-545"
     },
     {
       "id": "260",
@@ -8782,18 +8775,18 @@
       "id": "267",
       "set": 3,
       "type": "single",
-      "stem": "Why are the laser-resistant endotracheal tube cuffs inflated with saline and methylene blue dye?",
+      "stem": "How should the cuff of a laser-resistant endotracheal tube be filled according to the airway lecture?",
       "options": [
-        "Saline quenches accidental laser strikes while dye visually signals cuff perforation",
-        "Saline dissolves soot particulates while dye sterilizes the subglottic mucosa",
-        "Saline prevents diffusion of nitrous oxide while dye maintains cuff compliance",
-        "Saline lowers cuff pressure to completely eliminate tracheal capillary ischemia"
+        "With saline or water plus dye",
+        "With nitrous oxide",
+        "With air only",
+        "With volatile anesthetic"
       ],
       "answer": [
         0
       ],
-      "explanation": "Cuffs on laser tubes remain combustible. Inflating them with saline quenches laser strikes, and methylene blue dye provides immediate visual detection of cuff puncture.",
-      "citation": "Airway Equipment · Slide 8",
+      "explanation": "The lecture states that laser-resistant tube cuffs are not themselves laser resistant and should be filled with saline or water and dye.",
+      "citation": "Airway Equipment · Slide 9",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -8804,11 +8797,11 @@
         "families": [
           "Airway Equipment"
         ],
-        "slides": "8",
+        "slides": "9",
         "citationFormat": "slides"
       },
       "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 8"
+      "sourceLocator": "Slide 9"
     },
     {
       "id": "268",
