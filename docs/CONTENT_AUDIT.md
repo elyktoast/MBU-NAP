@@ -182,81 +182,80 @@ Phase 5 is coverage/rebuild work, especially replacing repetitive Hazards Set 2 
 
 Completed: 2026-09-27
 
-### Source hierarchy
+### Source basis
 
-Content changes in this phase were grounded in the course materials rather than generated from unsupported general knowledge.
+Changes in this phase were grounded in the two study guides supplied for Exam 1:
 
-Primary course sources:
-- Exam 1 Equipment Study Guide, covering medical gases/anesthesia machine, CO₂ absorbents and scavenging, airway equipment, workstation hazards, electricity, electrosurgery, and fire safety.
-- Exam 1 Basics Study Guide, especially the intraoperative monitoring section used for capnography, airway pressures/loops, ECG, noninvasive blood pressure, and arterial-line concepts.
+- **SRNA Equipment Study Guide** for medical gases/anesthesia machine, CO₂ absorbents and scavenging, airway equipment, workstation hazards, electricity, electrosurgery, power failure, and fire safety.
+- **Exam 1 Study Guide** for monitoring, airway pressures/loops, capnography, and ASA/AANA monitoring concepts.
 
-Secondary confirmation source:
-- Elisha, Heiner, and Nagelhout, *Nurse Anesthesia*, especially Chapter 16, Anesthesia Equipment, plus the clinical-monitoring material. The textbook was used to confirm machine-organization, pipeline/cylinder behavior, low-pressure-system safety, absorbent/capnography concepts, and monitoring principles when a course-guide statement needed confirmation.
-
-Course material remained the controlling source when its exam emphasis or lecture-specific wording differed from broader textbook presentation.
+No unsupported outside clinical material was used to rewrite the 86 replacement questions. Existing unchanged questions retain their pre-existing lecture citations.
 
 ### Phase 3: duplicate and correctness cleanup
 
-Quiz Bank 1:
-- Replaced all 21 previously baselined same-set duplicate occurrences with unique source-grounded questions.
-- Preserved all question IDs and set sizes so saved-progress compatibility remains intact.
-- Bank 1 now contains zero same-set duplicate stems.
+**Quiz Bank 1**
+- Replaced all **21** previously baselined same-set duplicate occurrences with unique source-grounded questions.
+- Preserved the original question IDs and set locations so saved progress remains compatible.
+- Bank 1 now has **zero same-set exact duplicate stems**.
 
-Workstation Hazards:
-- Replaced the 65 repeated Set 2 slots (questions 36–100) with 65 unique questions derived from the Equipment Study Guide.
-- Hazards Set 2 now contains 100 unique normalized stems.
-- Corrected the closed-claims/incidence item: 115 of about 6,000 is approximately 1.9% of the cited closed claims, while 0.23%–0.4% is the separately reported estimated event incidence. Those figures are no longer conflated.
+**Workstation Hazards**
+- Rebuilt the **65** repeated Set 2 slots, questions 36–100.
+- Hazards Set 2 now contains **100/100 unique normalized stems**.
+- The full Hazards bank now contains **350 unique exact stems**.
 
-The approved duplicate baseline for Bank 1 and Hazards is now empty.
+Across all five canonical sources:
+- **0** same-set exact duplicate groups remain.
+- **0** same-stem + same-option-pool conflicting answer keys remain.
+- **0** required content fields are missing.
 
 ### Phase 4: question-quality refinement
 
-All 2,000 canonical questions were rescanned for:
-- missing stems, options, answer keys, explanations, citations, topics, and source metadata;
-- duplicate choices;
-- same-set duplicate stems;
-- very short explanations;
-- keyed-answer length clues;
-- invalid answer indexes and single/multiple-answer mismatches.
+The 2,000-question corpus was rescanned for short explanations and answer-length clues after the rebuild.
 
-Results:
-- zero missing required content fields;
-- zero same-set duplicate stems;
-- zero structural answer-key errors;
-- zero true duplicate answer-choice errors;
-- two genuinely underdeveloped explanations were expanded without changing their stems, choices, or keys.
+The short-explanation and long-keyed-answer checks are treated as **review heuristics**, not automatic errors. Many concise explanations are already complete, and a correct response can legitimately require more specificity than distractors.
 
-The keyed-answer-length heuristic still flags some items where the correct response is naturally more specific than distractors. Those were retained when the wording remained clinically coherent; the heuristic is not treated as proof of a bad question.
+Changes were made where the newly rebuilt questions created an obvious answer-length clue. Distractors were balanced without changing the keyed concept. No answer key was changed merely because a heuristic fired.
+
+Final heuristic queue:
+- short-explanation heuristic: **94**
+- long-keyed-answer heuristic: **34**
+
+Those counts are retained in the machine-readable audit so future content work can review them without pretending they are proven defects.
 
 ### Phase 5: coverage and Hazards rebuild
 
-The former repetitive Hazards Set 2 source debt has been removed. The rebuilt set samples:
-- cylinder contents, indexing, pipeline/cylinder pressure relationships, and fail-safe limitations;
-- flowmeters, oxygen flush, vaporizers, common gas outlet, and leak testing;
-- carbon dioxide absorbent chemistry, channeling, degradation products, exposure limits, and scavenging;
-- mask ventilation, airway adjuncts, positioning, laryngoscope blades, specialty tubes, laser-airway fire risk, and front-of-neck access;
-- risk management, workstation electrical supply, electrosurgery, power failure, and operating-room fire management.
+The former repetitive Hazards Set 2 debt has been removed. The rebuilt set now samples the actual supplied equipment material across:
+- risk management and machine-check failures;
+- upstream hypoxemia and hypercarbia hazards;
+- Mapleson circuits, occlusion, high pressure, and disconnections;
+- electrical principles, grounding, electrosurgery, and power failure;
+- operating-room fire prevention and response;
+- pipeline/cylinder pressure relationships, fail-safe behavior, oxygen flush, PISS, vaporizers, and common gas outlet;
+- absorbent mesh/capacity, waste-gas limits, scavenging effectiveness, and room ventilation.
 
-This broadens the set while staying inside the actual Exam 1 Equipment Study Guide content.
+This broadens the set without changing its 100-question size or its saved-progress identifiers.
 
 ### Final content-quality scorecard
 
 | Measure | Final status |
 | --- | --- |
-| Canonical questions | 2,000 |
-| Missing topic metadata | 0 |
-| Missing source metadata | 0 |
-| Same-set duplicate stems | 0 |
-| Repetitive Hazards Set 2 slots | 0 |
-| Same stem + same option pool with conflicting keyed answer | 0 |
-| Invalid answer indexes/type mismatches | 0 |
-| Missing explanations/citations | 0 |
-| Source-grounded replacement questions | 86 (21 Bank 1 + 65 Hazards) |
-| Known closed-claims statistic conflation | Corrected |
+| Canonical questions | **2,000** |
+| Source-grounded replacement questions | **86** |
+| Bank 1 same-set duplicates replaced | **21** |
+| Hazards Set 2 repeated slots rebuilt | **65** |
+| Same-set exact duplicate groups | **0** |
+| Hazards Set 2 unique stems | **100 / 100** |
+| Same stem + same option pool with conflicting key | **0** |
+| Missing required fields | **0** |
+| Invalid answer indexes/type mismatches | **0** |
+| Missing topic metadata | **0** |
+| Missing source metadata | **0** |
+
+The final machine-readable result is stored in `reports/content-phase3-5-audit.json`.
 
 ### Remaining deliberate limitations
 
-- Exact stems can still recur in different practice sets when they are intentionally retained as spaced/repeated exposure; this is not a same-set duplication defect.
-- Static Easy/Moderate/Hard labels remain intentionally absent because no authoritative difficulty source exists. User-performance data is a stronger basis for adaptive difficulty.
-- Automated checks cannot independently prove every clinical claim. The source hierarchy above is therefore preserved for future manual review and any disputed item should be resolved against the cited course material first, then the textbook.
+- Exact stems can still recur in **different** practice sets when intentionally retained as repeated exposure. They are not treated as a same-set defect.
+- Static Easy/Moderate/Hard labels remain intentionally absent because no authoritative difficulty rubric was supplied.
+- Heuristic review queues remain visible for future refinement, but they are not release-blocking unless a concrete content error is identified.
 
