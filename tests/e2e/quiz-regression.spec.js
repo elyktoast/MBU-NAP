@@ -1963,6 +1963,13 @@ test.describe('canonical quiz regression', () => {
     await expect(page.getByRole('heading',{name:'Terms of Use'})).toBeVisible();
     await expect(page.getByRole('heading',{name:'Independent educational resource'})).toBeVisible();
 
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.locator('.mbu-global-nav__tools').click();
+    await page.getByText('Troubleshooting & app info',{exact:true}).click();
+    await expect(page.locator('.mbu-tools-legal-links')).toContainText('Privacy Notice');
+    await expect(page.locator('.mbu-tools-legal-links')).toContainText('Terms of Use');
+    await page.locator('[data-close]').click();
+
     await seedSignedIn(page);
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     await page.locator('.mbu-global-nav__cloud').click();
@@ -2011,6 +2018,38 @@ test.describe('canonical quiz regression', () => {
       sel=new Set(wrong.slice(0,need));grade()
     });
     await expect.poll(()=>page.evaluate(()=>DB.active?.adaptive?.theta)).toBeLessThan(afterCorrectTheta);
+  });
+
+  test('All-bank Adaptive Mode advances after correct and incorrect answers without freezing', async ({ page }) => {
+    await seedSignedIn(page);
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await page.evaluate(()=>{
+      document.querySelectorAll('#sourceChecks input[type=checkbox]').forEach(x=>x.checked=true);
+      document.getElementById('count').value='50';
+      document.getElementById('adaptiveToggle').checked=true;
+      startMode('custom');
+    });
+    await expect(page.locator('#quiz')).toBeVisible();
+    await expect(page.locator('#studioNavToggle')).toBeHidden();
+
+    await page.evaluate(()=>{const q=session[pos];sel=new Set(q.ans);grade()});
+    await expect.poll(()=>page.evaluate(()=>session.length)).toBe(2);
+    await expect.poll(()=>page.evaluate(()=>pos)).toBe(1);
+
+    await page.evaluate(()=>{
+      const q=session[pos],need=q.ans.length,wrong=[];
+      for(let i=0;i<q.opts.length&&wrong.length<need;i++)if(!q.ans.includes(i))wrong.push(i);
+      for(let i=0;i<q.opts.length&&wrong.length<need;i++)if(!wrong.includes(i))wrong.push(i);
+      sel=new Set(wrong.slice(0,need));grade()
+    });
+    await expect(page.locator('#next')).toBeEnabled();
+    await page.locator('#next').click();
+    await expect.poll(()=>page.evaluate(()=>session.length)).toBe(3);
+    await expect.poll(()=>page.evaluate(()=>pos)).toBe(2);
+    await page.locator('#studioPrev').click();
+    await expect.poll(()=>page.evaluate(()=>pos)).toBe(1);
+    await page.locator('#next').click();
+    await expect.poll(()=>page.evaluate(()=>pos)).toBe(2);
   });
 
   test('Malformed study-intelligence storage recovers without breaking Studio', async ({ page }) => {
