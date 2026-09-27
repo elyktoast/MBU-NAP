@@ -641,7 +641,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const core=read('equipment/assets/app-core.js'),cloud=read('equipment/assets/supabase-sync.js');
  if(!core.includes('serverRevision:Number(prev.serverRevision)||0'))fail('Local sync metadata drops server revision on write');
- if(!core.includes('Number(x?.serverRevision)||0'))fail('Merge ordering does not prioritize server revision');
+ if(!core.includes('remoteServer>0&&localServer>0&&remoteServer!==localServer'))fail('Merge ordering does not safely prioritize server revision');
  if(!cloud.includes('serverRevision:Number(row.server_revision)||0'))fail('Cloud snapshots omit server revision');
 }
 
