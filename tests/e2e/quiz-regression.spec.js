@@ -1684,6 +1684,8 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Account access check fails closed when the server status cannot be resolved', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
+    await page.unroute(cloud+'/rest/v1/rpc/snar_account_access_status');
     await page.route(cloud+'/rest/v1/rpc/snar_account_access_status',route=>route.abort());
     await seedSignedIn(page);
     await page.goto(exam + '/studio.html');await waitForStudio(page);
