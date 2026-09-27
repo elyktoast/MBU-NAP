@@ -15188,7 +15188,7 @@
         3,
         4
       ],
-      "explanation": "Nurse Anesthesia states that the advisory exposure limit for a halogenated anesthetic is 2 ppm when used without nitrous oxide and 0.5 ppm when used with nitrous oxide.",
+      "explanation": "Nurse Anesthesia states that the halogenated-agent exposure limit is 2 ppm when used without nitrous oxide and is reduced to 0.5 ppm when the halogenated agent is used with nitrous oxide.",
       "citation": "Nurse Anesthesia, 7th ed. · Chapter 16, p. 284",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -15591,21 +15591,21 @@
       "id": "S5-090",
       "set": 5,
       "type": "multi",
-      "stem": "Which TWO endotracheal-tube features are explicitly included in the lecture's ISO-related list? (Select 2)",
+      "stem": "Which TWO endotracheal-tube features are specifically identified in the airway lecture? Select 2.",
       "options": [
         "Distance markings",
+        "High-volume, low-pressure cuff",
+        "Spiral reinforcement in every standard ETT",
+        "Preformed RAE bend on every ETT",
         "Integrated gastric drainage channel",
-        "Preformed RAE bend",
-        "Murphy eye",
-        "Dual pilot balloons",
-        "Esophageal obturator cuff"
+        "Laser-resistant cuff on every ETT"
       ],
       "answer": [
         0,
-        3
+        1
       ],
-      "explanation": "The airway lecture states that tracheal-tube standardization includes features such as internal and external diameter, distance markers, material toxicity, bevel, Murphy eye, and tube curvature.",
-      "citation": "Airway Equipment · 7",
+      "explanation": "The airway lecture identifies distance markings as a standard tracheal-tube feature and describes cuffed tubes as using high-volume, low-pressure cuffs that disperse force on tracheal tissues.",
+      "citation": "Airway Equipment · Slide 7",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
