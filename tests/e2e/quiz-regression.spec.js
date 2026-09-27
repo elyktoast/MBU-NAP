@@ -1497,6 +1497,33 @@ test.describe('canonical quiz regression', () => {
     expect(await page.locator('#mbuNavigator button').count()).toBe(100);
   });
 
+  test('Global nav keeps Workstation as one destination and shows builder attribution', async ({ page }) => {
+    await page.goto(exam + '/hazards-100.html');await page.evaluate(() => MBUPageReady);
+    const quick=page.locator('.mbu-global-nav__quick a');
+    await expect(quick).toHaveCount(6);
+    await expect(page.locator('.mbu-global-nav__quick')).toContainText('ChatGPT');
+    await expect(page.locator('.mbu-global-nav__quick')).toContainText('Gemini');
+    await expect(page.locator('.mbu-global-nav__quick')).toContainText('Claude');
+    await expect(page.locator('.mbu-global-nav__quick')).not.toContainText('Hazards 1');
+    await expect(page.locator('.mbu-global-nav__quick')).not.toContainText('Challenge');
+    await expect(page.locator('.mbu-global-nav__quick a[aria-current="page"]')).toContainText('Hazards');
+    const options=await page.locator('.mbu-global-nav__picker option').allTextContents();
+    expect(options.some(x=>/Practice Set|Challenge Set/.test(x))).toBe(false);
+
+    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
+    await expect(page.locator('#dashboard')).toContainText('Built with ChatGPT');
+    await page.goto(exam + '/quiz-bank-2.html');await page.evaluate(() => MBUPageReady);
+    await expect(page.locator('#dashboard')).toContainText('Built with Gemini');
+    await page.goto(exam + '/quiz-bank-3.html');await page.evaluate(() => MBUPageReady);
+    await expect(page.locator('#dashboard')).toContainText('Built with Claude');
+    await page.goto(exam + '/combined.html');await page.evaluate(() => MBUPageReady);
+    await expect(page.locator('#dashboard')).toContainText('Built with Claude');
+    await page.goto(exam + '/hazards.html');await page.evaluate(() => MBUPageReady);
+    await expect(page.locator('#dashboard')).toContainText('Built with Claude');
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await expect(page.locator('#home')).toContainText('Built with Claude');
+  });
+
   test('Header cloud status opens account controls without any secret browser credential', async ({ page }) => {
     await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
     await expect(page.locator('.mbu-global-nav__cloud')).toContainText('Cloud: Signed out');
