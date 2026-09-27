@@ -44,3 +44,37 @@ body.mbu-bank1-ui{margin:0;padding:20px;background:var(--bg);color:var(--t);font
 .mbu-bank1-ui .opt.correct *,.mbu-bank1-ui .opt.ok *,.mbu-bank1-ui .opt.miss *,.mbu-bank1-ui .choice.good *,.mbu-bank1-ui .choice.miss *{text-decoration:none!important;opacity:1!important}
 .mbu-bank1-ui .explain,.mbu-bank1-ui #fb.explain{background:#f8fafc!important;border-left:5px solid var(--p)!important;color:var(--t)!important}
 .mbu-bank1-ui .explain>.fb.good,.mbu-bank1-ui .explain>.fb.badf,.mbu-bank1-ui #fb.explain>.fb.good,.mbu-bank1-ui #fb.explain>.fb.badf{background:transparent!important;border:0!important;margin:0!important;padding:0!important;color:inherit!important}
+
+/* Cleaner canonical quiz-session chrome */
+.mbu-bank1-ui .mbu-session-head{display:grid;gap:12px;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid #e2e8f0}
+.mbu-bank1-ui .mbu-session-title{display:flex;align-items:center;justify-content:space-between;gap:14px}
+.mbu-bank1-ui .mbu-session-title .progress{margin-left:auto;color:#475569;font-size:.92rem;font-weight:700;text-align:right}
+.mbu-bank1-ui .mbu-session-actions{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.mbu-bank1-ui .mbu-session-actions .btn{min-height:38px;padding:8px 12px;border-color:#b9c5d2}
+.mbu-bank1-ui .mbu-session-actions .mbu-return{margin-left:auto}
+.mbu-bank1-ui .mbu-quiz-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:0 0 16px;padding:0;background:#f8fafc;border:1px solid #dde5ee;border-radius:9px;overflow:hidden}
+.mbu-bank1-ui .mbu-quiz-stats>div{display:grid;grid-template-columns:auto auto;justify-content:center;gap:5px;padding:9px 12px;border-right:1px solid #e2e8f0;font-size:.9rem}
+.mbu-bank1-ui .mbu-quiz-stats>div:last-of-type{border-right:0}.mbu-bank1-ui .mbu-quiz-stats span{color:#64748b}.mbu-bank1-ui .mbu-quiz-stats strong{color:#1e293b}
+.mbu-bank1-ui .type{margin-top:2px}.mbu-bank1-ui .stem{font-size:1.15rem;line-height:1.55;margin:0 0 8px}
+.mbu-bank1-ui .mbu-crossout-hint{margin:0 0 14px;font-size:.8rem;font-weight:600}
+.mbu-bank1-ui .mbu-choice-row{margin:0}.mbu-bank1-ui .options{gap:8px}.mbu-bank1-ui .opt{min-height:46px;padding:10px 13px;border-color:#cbd5e1;border-radius:8px}
+.mbu-bank1-ui .mbu-cross{border-radius:8px}
+.mbu-bank1-ui #multi-submit-row{margin:8px 0 14px!important}
+.mbu-bank1-ui .controls{padding-top:14px;margin-top:18px}
+.mbu-bank1-ui .mbu-notes-panel{margin:0 0 16px;padding:14px;border:1px solid #cbd5e1;border-radius:10px;background:#fbfdff}
+.mbu-bank1-ui .mbu-notes-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:10px}
+.mbu-bank1-ui .mbu-notes-head strong,.mbu-bank1-ui .mbu-notes-head span{display:block}.mbu-bank1-ui .mbu-notes-head span{margin-top:2px;color:#718096;font-size:.78rem;line-height:1.4}
+.mbu-bank1-ui #mbuNotesText{width:100%;min-height:130px;resize:vertical;padding:11px 12px;border:1px solid #cbd5e1;border-radius:8px;background:#fff;color:#1e293b;font:inherit;line-height:1.5}
+.mbu-bank1-ui #mbuNotesText:focus{outline:3px solid #2b6cb033;border-color:#2b6cb0}
+.mbu-bank1-ui .mbu-notes-foot{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:7px;color:#718096;font-size:.76rem}
+.mbu-bank1-ui .mbu-text-button{border:0;background:transparent;color:#475569;font:inherit;font-weight:700;cursor:pointer;padding:3px 0}
+@media(max-width:700px){
+  .mbu-bank1-ui .mbu-session-title{align-items:flex-start;flex-direction:column}
+  .mbu-bank1-ui .mbu-session-title .progress{margin-left:0;text-align:left}
+  .mbu-bank1-ui .mbu-session-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%}
+  .mbu-bank1-ui .mbu-session-actions .btn{width:100%;min-width:0;padding:8px 6px;font-size:.84rem}
+  .mbu-bank1-ui .mbu-session-actions .mbu-return{grid-column:1/-1;margin-left:0}
+  .mbu-bank1-ui .mbu-quiz-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mbu-bank1-ui .mbu-quiz-stats>div:nth-child(2){border-right:0}.mbu-bank1-ui .mbu-quiz-stats>div:nth-child(-n+2){border-bottom:1px solid #e2e8f0}
+  .mbu-bank1-ui .mbu-notes-head{align-items:flex-start}
+}
