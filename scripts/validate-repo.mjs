@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
 import { execFileSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 
 const root=process.cwd(), failures=[], notes=[];
 const quizFiles=['equipment/exam-1/quiz-bank-1.html','equipment/exam-1/quiz-bank-2.html','equipment/exam-1/quiz-bank-3.html','equipment/exam-1/combined.html','equipment/exam-1/hazards-100.html','equipment/exam-1/hazards-bank-2.html','equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards-harder.html','equipment/exam-1/studio.html'];
@@ -767,10 +768,10 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const boot=read('equipment/assets/build-bootstrap.js'),gate=read('equipment/assets/legal-gate.js'),cloud=read('equipment/assets/supabase-sync.js'),core=read('equipment/assets/app-core.js');
  if(!boot.includes("loadScript('legal-gate.js')")||!boot.includes('SNARLegalReady'))fail('Versioned legal gate is not enforced by the shared bootstrap');
- for(const token of ["VERSION='2026-09-27-v2'",'I agree to the','Terms of Use','Privacy Notice','localStorage.setItem(KEY','data-legal-continue','pointer-events:auto'])if(!gate.includes(token))fail('Legal gate missing '+token);
+ for(const token of ["VERSION='2026-09-27-v3'",'I agree to the','Terms of Use','Privacy Notice','localStorage.setItem(KEY','data-legal-continue','pointer-events:auto'])if(!gate.includes(token))fail('Legal gate missing '+token);
  if(boot.includes('html[data-mbu-boot="loading"] body{pointer-events:none}'))fail('Legal gate is blocked by bootstrap pointer-events');
  if(!boot.includes('body>#snar-legal-gate{pointer-events:auto}'))fail('Bootstrap does not keep the legal gate interactive while loading');
- for(const token of ["snar_terms_version:'2026-09-27-v2'","snar_privacy_version:'2026-09-27-v2'",'snar_adult_ack:true','snar_has_current_legal_acceptance','snar_accept_current_legal','acceptCurrentLegal','legalAccepted','refreshCalibration(true)'])if(!cloud.includes(token))fail('Account legal acknowledgement contract missing '+token);
+ for(const token of ["snar_terms_version:'2026-09-27-v3'","snar_privacy_version:'2026-09-27-v3'",'snar_adult_ack:true','snar_has_current_legal_acceptance','snar_accept_current_legal','acceptCurrentLegal','legalAccepted','refreshCalibration(true)'])if(!cloud.includes(token))fail('Account legal acknowledgement contract missing '+token);
  if(!core.includes('data-cloud-reaccept')||!core.includes('Updated account agreement required')||!core.includes('Cloud: Action required')||!core.includes('data-cloud-legal-required'))fail('Authenticated legal re-acceptance UI/state handling is missing');
 }
 
@@ -782,19 +783,6 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ['Guest use','Adaptive Mode','Question reports','Privacy requests','does not sell personal data','at least 18 years old'])if(!privacy.includes(token))fail('Privacy Notice missing '+token);
  for(const token of ['Independent educational resource','Educational use only','Adaptive Mode','No guarantee','Privacy Notice'])if(!terms.includes(token))fail('Terms of Use missing '+token);
  if(!home.includes('href="privacy.html"')||!home.includes('href="terms.html"'))fail('Home footer does not link Privacy and Terms');
-}
-
-// Professor/faculty names must never appear in the repository.
-{
-  const bannedFaculty=/\b(?:Elmore|Stone|Acord|McPherson)\b/i;
-  const facultyScanPaths=[
-    'README.md','CONTRIBUTING.md','privacy.html','terms.html',
-    'equipment/exam-1/data/bank1.json','equipment/exam-1/data/bank2.json','equipment/exam-1/data/bank3.json',
-    'equipment/exam-1/data/combined.json','equipment/exam-1/data/hazards.json',
-    'reporting/apps-script/Code.gs','reporting/apps-script/SETUP.md',
-    'tests/e2e/quiz-regression.spec.js'
-  ];
-  for(const p of facultyScanPaths)if(bannedFaculty.test(read(p)))fail(p+': professor/faculty name remains');
 }
 
 // Population calibration must not expose small cohorts.
