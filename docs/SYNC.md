@@ -2,7 +2,7 @@
 
 ## Current model
 
-MBU-NAP is local-first. Progress is written to browser localStorage immediately, so quiz interactions do not wait on the network.
+SNAR Study Tool is local-first. Progress is written to browser localStorage immediately, so quiz interactions do not wait on the network.
 
 When a user signs in from the persistent **Cloud** control in the site header, the same save stores are synchronized to Supabase. The browser uses only the project's public publishable key. Supabase Auth provides the user JWT, and Row Level Security limits every cloud row to that authenticated user.
 
@@ -37,7 +37,7 @@ Session tokens are stored locally in the browser. The Supabase secret/service-ro
 - Opening the app while signed in performs a full pull/merge/push.
 - Local save changes remain immediate and schedule a debounced cloud push.
 - Returning to the app after two minutes or reconnecting to the network performs another full sync.
-- While signed in, MBU-NAP performs a full automatic sync every five minutes as a cross-device safety net.
+- While signed in, SNAR Study Tool performs a full automatic sync every five minutes as a cross-device safety net.
 - The site header always shows cloud state (**Signed out**, **Syncing**, **Synced**, or **Error**) and opens the dedicated account panel.
 - A manual **Sync now** control remains available from the account panel and Tools.
 - **Devices** lists browsers/devices that have synced the account. Forget removes a stale device entry from that list; it does not remotely revoke that device's existing authentication session, so an active signed-in device can appear again when it next syncs.
