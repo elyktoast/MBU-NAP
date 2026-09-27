@@ -3460,17 +3460,17 @@
       "id": "7",
       "set": 2,
       "type": "single",
-      "stem": "How does electrical grounding in the modern hospital operating room compare to electrical grounding in a standard domestic home?",
+      "stem": "Oxygen and nitrous oxide are linked by the workstation proportioning system. Medical air is then added. What limitation of the proportioning system remains?",
       "options": [
-        "In the OR, electrical power is ungrounded while equipment is grounded; in the home, power is grounded",
-        "In the OR, electrical power is grounded while equipment is ungrounded; in the home, power is ungrounded",
-        "Both electrical power and medical equipment are completely ungrounded in the operating room",
-        "Both electrical power and domestic appliances are completely grounded in the home"
+        "It controls only the O2:N2O relationship and does not directly measure the final inspired O2 concentration",
+        "It automatically raises oxygen to 50% whenever air is added",
+        "It shuts off whenever a third gas is present",
+        "It measures the identity of every gas in the final mixture"
       ],
       "answer": [
         0
       ],
-      "explanation": "In the home, electrical power is grounded to earth potential. In the operating room, electrical power is deliberately ungrounded (isolated from ground via an isolation transformer) to protect against macroshock from spilled fluids, while medical equipment chassis are grounded.",
+      "explanation": "The proportioning system links oxygen and nitrous oxide at the flow controls and is designed to maintain their relationship. It does not directly measure the final inspired oxygen concentration and does not control added gases such as air or helium; the oxygen analyzer remains the final concentration check.",
       "citation": "Anesthesia Workstation Hazards & Safety · Slide 29",
       "topic": "Hazards & Safety",
       "imageSvg": null,
@@ -4580,7 +4580,7 @@
       "answer": [
         2
       ],
-      "explanation": "The guide notes that hypoxic gas in a cylinder can escape detection by a routine check because pressure may be present even when gas identity is wrong.",
+      "explanation": "The proportioning system links only oxygen and nitrous oxide and does not measure the final inspired oxygen concentration. Adding helium can dilute oxygen below 21%; adding air is also outside the linkage, although air itself contains about 21% oxygen.",
       "citation": "SRNA Equipment Study Guide · Page 8",
       "topic": "Hazards & Safety",
       "imageSvg": null,
@@ -4794,7 +4794,7 @@
       "id": "48",
       "set": 2,
       "type": "single",
-      "stem": "A spontaneously breathing patient develops unexpectedly high circuit pressure immediately after induction. Which setting should be checked first?",
+      "stem": "An operating-room fire has been extinguished. Which action is most appropriate for subsequent risk investigation?",
       "options": [
         "APL valve left closed",
         "Pulse oximeter alarm volume",
@@ -5210,17 +5210,17 @@
       "id": "61",
       "set": 2,
       "type": "single",
-      "stem": "Which description best defines a capacitor?",
+      "stem": "Two O2 cylinders are mounted on a double hanger yoke, one at high pressure and one at lower pressure. What cylinder-to-cylinder hazard can occur?",
       "options": [
-        "Two conductors separated by an insulator",
-        "A resistor connected directly to ground",
-        "A gas-specific pipeline connector",
-        "A pressure-regulating valve"
+        "Transfilling from the higher-pressure cylinder into the lower-pressure cylinder",
+        "Automatic conversion of oxygen to liquid",
+        "Loss of the Pin Index Safety System",
+        "Automatic shutdown of the pipeline inlet"
       ],
       "answer": [
         0
       ],
-      "explanation": "The electricity section defines a capacitor as two conductors separated by an insulator; with DC, only a momentary current flows as it charges.",
+      "explanation": "The course material notes that double hanger yokes can allow transfilling, with gas moving from the higher-pressure cylinder toward the lower-pressure cylinder. The yoke's unidirectional valve helps with empty-yoke leakage and cylinder changes but does not make a double-yoke transfilling question disappear.",
       "citation": "SRNA Equipment Study Guide · Page 9",
       "topic": "Hazards & Safety",
       "imageSvg": null,
