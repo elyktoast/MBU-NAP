@@ -1,7 +1,4 @@
-/* Opt-in CAT-style adaptive quiz engine for Study Studio.
-   Uses provisional personal difficulty estimates until population-calibrated item statistics exist. */
 (()=>{'use strict';
-const DAY=86400000;
 const plain=v=>!!v&&typeof v==='object'&&!Array.isArray(v);
 const clampLevel=v=>Math.max(1,Math.min(5,Number(v)||3));
 const clampLogit=v=>Math.max(-2.5,Math.min(2.5,Number(v)||0));
