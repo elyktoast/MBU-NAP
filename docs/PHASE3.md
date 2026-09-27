@@ -64,3 +64,7 @@ These are review candidates, not automatic errors. Any content change still requ
 ## Review-next guidance
 
 Study Studio now produces a local-only review recommendation. Due spaced-review work takes priority; otherwise the recommendation points to the weakest topic with at least three cumulative attempts. No new server data is collected for this feature.
+
+## 30-day real-use trend
+
+The operator analytics workspace includes a daily 30-day first-attempt trend built from the existing contribution table. It shows only aggregate daily totals, Adaptive first attempts, aggregate accuracy, and aggregate response-time samples. It does not expose learner identities or raw response rows and does not introduce new telemetry fields.
