@@ -96,7 +96,13 @@ function analytics(){
 function questionStats(uid){const a=db().attempts[String(uid||'')];return a?{...a}:null}
 function topicStats(topic){const rows=Object.values(db().attempts).filter(x=>x.topic===String(topic||''));return stats(rows)}
 function recentActivity(limit=20){return db().activity.slice(-Math.max(1,limit)).reverse().map(x=>({...x}))}
-function summary(){const a=analytics(),todayStart=new Date();todayStart.setHours(0,0,0,0);const today=db().activity.filter(x=>x.type==='answer'&&x.at>=todayStart.getTime());return{...a,today:{answered:today.length,correct:today.filter(x=>x.ok).length,accuracy:today.length?Math.round(today.filter(x=>x.ok).length/today.length*100):0,topics:new Set(today.map(x=>x.topic)).size}}}
+function recommendation(a=analytics()){
+  if(a.due)return{type:'due',label:'Review due questions',detail:a.due+' question'+(a.due===1?' is':'s are')+' ready for spaced review'};
+  const weak=Object.entries(a.byTopic||{}).filter(([,x])=>Number(x.attempts)>=3).sort((m,n)=>m[1].accuracy-n[1].accuracy||n[1].attempts-m[1].attempts)[0];
+  if(weak)return{type:'topic',topic:weak[0],label:'Review '+weak[0],detail:weak[1].accuracy+'% across '+weak[1].attempts+' attempts'};
+  return{type:'smart',label:'Start Smart Review',detail:'Builds priorities from your answer history'}
+}
+function summary(){const a=analytics(),todayStart=new Date();todayStart.setHours(0,0,0,0);const today=db().activity.filter(x=>x.type==='answer'&&x.at>=todayStart.getTime());return{...a,recommendation:recommendation(a),today:{answered:today.length,correct:today.filter(x=>x.ok).length,accuracy:today.length?Math.round(today.filter(x=>x.ok).length/today.length*100):0,topics:new Set(today.map(x=>x.topic)).size}}}
 function addIssue(bank,q,details={}){
   const d=db(),meta=questionMeta(bank,q,details),issue={id:meta.uid+':issue:'+now(),...meta,reason:String(details.reason||'Other'),comment:String(details.comment||''),at:now(),status:'open'};
   d.issues.push(issue);if(d.issues.length>500)d.issues.splice(0,d.issues.length-500);save(d);return issue
@@ -104,5 +110,5 @@ function addIssue(bank,q,details={}){
 function issues(){return db().issues.map(x=>({...x}))}
 function closeIssue(id){const d=db(),x=d.issues.find(x=>x.id===id);if(!x)return false;x.status='closed';x.closedAt=now();save(d);return true}
 function clearAll(){localStorage.removeItem(STORE);cache=null;lastSerialized=''}
-window.MBUStudyIntelligence={STORE,schema:SCHEMA,recordAnswer,seedLegacy,due,smartReview,weakReview,questionStats,topicStats,analytics,recentActivity,summary,addIssue,issues,closeIssue,questionMeta,clearAll};
+window.MBUStudyIntelligence={STORE,schema:SCHEMA,recordAnswer,seedLegacy,due,smartReview,weakReview,questionStats,topicStats,analytics,recentActivity,recommendation,summary,addIssue,issues,closeIssue,questionMeta,clearAll};
 })();

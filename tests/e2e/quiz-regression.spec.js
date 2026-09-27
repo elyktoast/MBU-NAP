@@ -2201,6 +2201,27 @@ test.describe('canonical quiz regression', () => {
     expect(out.ranked).toEqual(['weak-cumulative']);
   });
 
+  test('Study intelligence recommends due work before weak-topic review', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const out=await page.evaluate(()=>{
+      MBUStudyIntelligence.clearAll();
+      const airway={uid:'rec-airway',bank:'b1',bankLabel:'Quiz Bank 1',id:'ra',set:1,topic:'Airway',stem:'Recommendation airway'};
+      MBUStudyIntelligence.recordAnswer('b1',airway,false,{bankLabel:'Quiz Bank 1'});
+      MBUStudyIntelligence.recordAnswer('b1',airway,false,{bankLabel:'Quiz Bank 1'});
+      MBUStudyIntelligence.recordAnswer('b1',airway,true,{bankLabel:'Quiz Bank 1'});
+      const raw=JSON.parse(localStorage.getItem(MBUStudyIntelligence.STORE));raw.reviews[airway.uid].dueAt=Date.now()-1000;localStorage.setItem(MBUStudyIntelligence.STORE,JSON.stringify(raw));window.dispatchEvent(new StorageEvent('storage',{key:MBUStudyIntelligence.STORE}));
+      const due=MBUStudyIntelligence.summary().recommendation;
+      raw.reviews[airway.uid].dueAt=Date.now()+86400000;localStorage.setItem(MBUStudyIntelligence.STORE,JSON.stringify(raw));window.dispatchEvent(new StorageEvent('storage',{key:MBUStudyIntelligence.STORE}));
+      const weak=MBUStudyIntelligence.summary().recommendation;
+      return{due,weak};
+    });
+    expect(out.due.type).toBe('due');
+    expect(out.weak.type).toBe('topic');
+    expect(out.weak.topic).toBe('Airway');
+    await page.evaluate(()=>renderHome());
+    await expect(page.locator('#analyticsSummary')).toContainText('Review next');
+  });
+
   test('Study intelligence records attempts, schedules review, and ranks weak questions first', async ({ page }) => {
     await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
     const out=await page.evaluate(()=>{

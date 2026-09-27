@@ -284,9 +284,10 @@ function renderHome(){
   document.getElementById('dueN').textContent=intel.due+' question'+(intel.due===1?'':'s')+' due for spaced review';
   document.getElementById('dueBtn').disabled=!intel.due;
   document.getElementById('reportN').textContent=DB.reports.length+' saved reports';
-  const last=DB.lastSessionSummary&&typeof DB.lastSessionSummary==='object'?DB.lastSessionSummary:null,lastTopics=last&&Array.isArray(last.weakTopics)?last.weakTopics:[];
+  const last=DB.lastSessionSummary&&typeof DB.lastSessionSummary==='object'?DB.lastSessionSummary:null,lastTopics=last&&Array.isArray(last.weakTopics)?last.weakTopics:[],rec=intel.recommendation||{label:'Start Smart Review',detail:'Builds priorities from your answer history'};
   document.getElementById('analyticsSummary').innerHTML=
     (last?'<div class="studio-metric"><span>Last session · '+esc(last.modeLabel||'Study')+'</span><strong>'+Number(last.score||0)+'%</strong><span>'+Number(last.answered||0)+' answered · '+Number(last.missed||0)+' missed'+(lastTopics.length?' · Review: '+lastTopics.map(x=>esc(x.topic)+' '+Number(x.accuracy||0)+'%').join(', '):'')+'</span></div>':'')+
+    '<div class="studio-metric"><span>Review next</span><strong>'+esc(rec.label)+'</strong><span>'+esc(rec.detail)+'</span></div>'+
     '<div class="studio-metric"><span>Overall accuracy</span><strong>'+intel.overall.accuracy+'%</strong></div>'+
     '<div class="studio-metric"><span>Last 7 days</span><strong>'+intel.last7.accuracy+'%</strong><span>'+intel.last7.answered+' answers</span></div>'+
     '<div class="studio-metric"><span>Last 30 days</span><strong>'+intel.last30.accuracy+'%</strong><span>'+intel.last30.answered+' answers</span></div>'+

@@ -60,3 +60,7 @@ Current baseline:
 - 35 manual-review candidates from exact-stem variants or near-duplicate keyed wording.
 
 These are review candidates, not automatic errors. Any content change still requires source-grounded review.
+
+## Review-next guidance
+
+Study Studio now produces a local-only review recommendation. Due spaced-review work takes priority; otherwise the recommendation points to the weakest topic with at least three cumulative attempts. No new server data is collected for this feature.
