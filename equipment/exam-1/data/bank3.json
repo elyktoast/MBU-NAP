@@ -9046,7 +9046,7 @@
       "answer": [
         2
       ],
-      "explanation": "Box 18.1 lists auto-PEEP under decreased CO2 delivery or production (with hypotension, hypovolemia, PE, and V/Q mismatch). Trapped gas raises intrathoracic pressure, which impairs venous return and pulmonary perfusion, so less CO2 reaches the alveoli to be exhaled.",
+      "explanation": "The lecture's ETCO2 differential table places auto-PEEP under causes of decreased ETCO2. In this scenario, the best answer is therefore a decrease rather than an increase from CO2 trapping. The item now stays with the relationship explicitly taught in the course material rather than adding a separate physiologic mechanism.",
       "citation": "Monitoring · Slide 43 (PDF p. 43)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -9669,7 +9669,7 @@
       "answer": [
         0
       ],
-      "explanation": "The lecture's bulk tank diagram shows liquid O2 at about -160 C in a vacuum-insulated tank; liquid passes through a control valve, vaporizer, and superheater, then a pressure regulator drops it to about 50 psig for the pipeline. The relief valve protects the tank from overpressure.",
+      "explanation": "The bulk oxygen supply diagram shows liquid oxygen leaving the insulated storage tank, passing through a control valve, vaporizer, and superheater, and then reaching a pressure regulator before entering the pipeline. The vaporizer and superheater convert the stored liquid supply into gas for pipeline delivery.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 32 (PDF p. 16)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -10020,7 +10020,7 @@
       "answer": [
         1
       ],
-      "explanation": "The lecture lists stimulation of oropharyngeal and laryngeal reflexes as an OPA complication; in a light patient that can produce laryngospasm and stridor. That's why awake or lightly sedated patients tolerate NPAs better.",
+      "explanation": "The lecture lists stimulation of oropharyngeal and laryngeal reflexes as an oropharyngeal-airway complication. In a lightly sedated patient who develops stridor immediately after OPA insertion, stimulation of those reflexes is the best explanation.",
       "citation": "Airway Equipment · Slide 5 (PDF p. 5)",
       "topic": "Airway",
       "imageSvg": null,
@@ -10943,28 +10943,27 @@
       "id": "S4-D12",
       "set": 4,
       "type": "multi",
-      "stem": "Which OR air sampling results exceed the NIOSH recommended limits? Select 3.",
+      "stem": "Using only the exposure limits listed in the lecture, which OR air samples exceed the NIOSH recommendations? Select 2.",
       "options": [
         "N2O as the sole agent at 20 ppm TWA",
-        "Isoflurane 1 ppm during a combined isoflurane/N2O anesthetic",
         "N2O as the sole agent at 30 ppm TWA",
-        "Sevoflurane 3 ppm, no N2O in use",
-        "Sevoflurane 0.4 ppm during a combined sevoflurane/N2O anesthetic",
-        "Desflurane 1.5 ppm, no N2O in use"
+        "Isoflurane 1 ppm with no N2O in use",
+        "Sevoflurane 3 ppm with no N2O in use",
+        "Desflurane 1.5 ppm with no N2O in use",
+        "Isoflurane 2 ppm with no N2O in use"
       ],
       "answer": [
         1,
-        2,
         3
       ],
-      "explanation": "Halogenated agent used alone: no more than 2 ppm, so sevo 3 ppm exceeds it and des 1.5 ppm doesn't. N2O as the sole agent: no more than 25 ppm TWA, so 30 exceeds it and 20 doesn't. When a halogenated agent is combined with N2O, its limit drops to 0.5 ppm, so iso at 1 ppm exceeds it while sevo at 0.4 ppm doesn't.",
+      "explanation": "The lecture lists a 25 ppm time-weighted-average limit for N2O when used as the sole anesthetic and a 2 ppm limit for halogenated anesthetic agents. Therefore, N2O at 30 ppm and sevoflurane at 3 ppm exceed the values given in the course material. The prior version relied on a combined-use limit that is not stated on the cited slide.",
       "citation": "CO₂ & Scavenging · Slide 10 (PDF p. 5)",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": "The combined-use limit (0.5 ppm halogenated with N2O at 25 ppm; halogenated limit is a ceiling over a sampling period up to 1 hour) comes from NIOSH's 1977 recommendation. Slide 10 lists only the 2 ppm and 25 ppm values.",
+      "supp": null,
       "orig": "D12",
       "sourceMeta": {
         "families": [
@@ -11760,7 +11759,7 @@
       "answer": [
         3
       ],
-      "explanation": "N2O's critical temperature is about 36 C. Above it, no amount of pressure keeps N2O liquid, so the cylinder contains only gas at a pressure above 745 psig. Below it, liquid and gas coexist and the gauge holds at 745 psig at 20 C.",
+      "explanation": "The lecture gives nitrous oxide a critical temperature of about 36 C. Above the critical temperature, nitrous oxide cannot exist as a liquid regardless of applied pressure, so at 40 C the cylinder contents are entirely gaseous.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 14 (PDF p. 7)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -11784,7 +11783,7 @@
       "id": "S4-J72",
       "set": 4,
       "type": "single",
-      "stem": "An internationally sourced cylinder painted white and black has valve holes at positions 1 and 5. Which yoke should it hang on?",
+      "stem": "A U.S. medical gas cylinder is yellow and its valve holes are at PISS positions 1 and 5. Which yoke should it hang on?",
       "options": [
         "Nitrogen",
         "Oxygen",
@@ -11794,7 +11793,7 @@
       "answer": [
         3
       ],
-      "explanation": "International coding: air is white and black, O2 is solid white. PISS for air is 1 and 5; O2 is 2 and 5 and N2O is 3 and 5. Both the color and the pins point to medical air.",
+      "explanation": "The lecture identifies medical air as yellow in the U.S. cylinder color table and gives PISS positions 1 and 5 for air. Oxygen is green with positions 2 and 5, while nitrous oxide is blue with positions 3 and 5.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 7, 18 (PDF p. 4, 9)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -11823,12 +11822,12 @@
         "Accept it, since a high O2 reading errs on the side of safety",
         "Calibrate the sensor against 100% O2 only and proceed",
         "Move the sensor to the expiratory limb and recheck it",
-        "Recalibrate to 21% room air and recheck; replace the sensor if it fails"
+        "Recalibrate to 21% room air and verify correct operation before use"
       ],
       "answer": [
         3
       ],
-      "explanation": "Removable galvanic sensors are commonly calibrated against room air (21%) daily, after prolonged use, and some also need occasional 100% calibration. A falsely high reading could hide a hypoxic mixture, so it isn't 'safe.' The sensor belongs in the inspired limb.",
+      "explanation": "The lecture states that common removable galvanic oxygen sensors are calibrated against room air (21%) daily and after prolonged use, with some also requiring occasional 100% oxygen calibration. A 30% reading in room air is incorrect, so the sensor should be recalibrated and its operation verified before use. The sensor belongs in the inspired limb.",
       "citation": "Monitoring · Slide 36 (PDF p. 36)",
       "topic": "Monitoring",
       "imageSvg": null,
