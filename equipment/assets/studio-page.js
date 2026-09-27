@@ -140,7 +140,11 @@ async function loadBanks(){
     }
   }
   sortLoadedQuestions();
-  try{syncBankData();buildTopics();const params=new URLSearchParams(location.search),requested=params.get('mode');if(requested==='hazards-missed')startMode('hazards-missed');else if(requested==='combined-missed')startMode('combined-missed');else renderHome()}catch(e){showLoadErrors(['Studio render failed: '+e.message]);console.error(e)}
+  try{
+    syncBankData();
+    window.MBUStudyIntelligence?.seedLegacy?.(Object.entries(DB.ans||{}).map(([uid,r])=>({uid,bank:r.bank,bankLabel:STUDIO_BANK_LABELS.get(r.bank)||r.bank,topic:r.topic,at:r.at,ok:r.ok})));
+    window.MBUQuestionSearch?.reset?.();
+    buildTopics();const params=new URLSearchParams(location.search),question=params.get('question'),requested=params.get('mode');if(question&&ALL_BY_UID.has(question))practiceSearch(question);else if(requested==='hazards-missed')startMode('hazards-missed');else if(requested==='combined-missed')startMode('combined-missed');else renderHome()}catch(e){showLoadErrors(['Studio render failed: '+e.message]);console.error(e)}
   renderStudioLoadState()
 }
 function canonicalTopic(topic){const name=String(topic||'Other').trim();const low=name.toLowerCase().replace(/₂/g,'2');if(low.includes('co2')&&low.includes('scaveng'))return 'CO₂ & Scavenging';if(low.includes('medical gas'))return 'Medical Gases';if(low.includes('airway equipment')||low==='airway')return 'Airway';if(low.includes('intraoperative assessment')||low.startsWith('monitoring'))return 'Monitoring';if(low.includes('workstation hazards')||low.includes('hazards & safety'))return 'Workstation Hazards';return name}
@@ -224,19 +228,29 @@ function buildTopics(){
 function renderHome(){
   clearTimeout(autoTimer);autoTimer=null;window.MBUCalculator?.hide();
   show('home');activeButton();
-  let miss=0,flagged=0;const by={};
-  for(const q of ALL){
-    const r=DB.ans[q.uid];if(r){if(!r.ok)miss++;(by[q.topic]??={a:0,c:0}).a++;if(r.ok)by[q.topic].c++}
-    if(DB.flags[q.uid])flagged++;
-  }
+  let miss=0,flagged=0;
+  for(const q of ALL){const r=DB.ans[q.uid];if(r&&!r.ok)miss++;if(DB.flags[q.uid])flagged++}
+  const intel=window.MBUStudyIntelligence?.summary?.()||{overall:{attempts:0,accuracy:0},last7:{answered:0,accuracy:0},last30:{answered:0,accuracy:0},today:{answered:0,accuracy:0,topics:0},due:0,byTopic:{},byBank:{}};
   document.getElementById('missedN').textContent=miss+' currently missed';
   document.getElementById('flagN').textContent=flagged+' flagged';
+  document.getElementById('smartN').textContent=intel.overall.attempts?'Uses your full answer history to target what needs work next.':'Starts broad, then adapts as you answer questions.';
+  document.getElementById('dueN').textContent=intel.due+' question'+(intel.due===1?'':'s')+' due for spaced review';
+  document.getElementById('dueBtn').disabled=!intel.due;
   document.getElementById('reportN').textContent=DB.reports.length+' saved reports';
-  document.getElementById('analytics').innerHTML=Object.entries(by).sort((a,b)=>(a[1].c/a[1].a)-(b[1].c/b[1].a)).map(([t,s])=>`<div class="topic"><span>${esc(t)}</span><b>${Math.round(100*s.c/s.a)}%</b><div class="bar"><i style="width:${100*s.c/s.a}%"></i></div></div>`).join('')||'<div class="mut">Answer questions to build topic analytics.</div>'
+  document.getElementById('analyticsSummary').innerHTML=
+    '<div class="studio-metric"><span>Overall accuracy</span><strong>'+intel.overall.accuracy+'%</strong></div>'+
+    '<div class="studio-metric"><span>Last 7 days</span><strong>'+intel.last7.accuracy+'%</strong><span>'+intel.last7.answered+' answers</span></div>'+
+    '<div class="studio-metric"><span>Last 30 days</span><strong>'+intel.last30.accuracy+'%</strong><span>'+intel.last30.answered+' answers</span></div>'+
+    '<div class="studio-metric"><span>Due for review</span><strong>'+intel.due+'</strong></div>';
+  const topics=Object.entries(intel.byTopic||{}).filter(([,x])=>x.attempts).sort((a,b)=>a[1].accuracy-b[1].accuracy||b[1].attempts-a[1].attempts);
+  const banks=Object.entries(intel.byBank||{}).filter(([,x])=>x.attempts).sort((a,b)=>a[0].localeCompare(b[0]));
+  document.getElementById('analytics').innerHTML=
+    (banks.length?'<h3>By Bank</h3>'+banks.map(([name,x])=>`<div class="topic"><span>${esc(name)} <small class="mut">(${x.attempts})</small></span><b>${x.accuracy}%</b><div class="bar"><i style="width:${x.accuracy}%"></i></div></div>`).join(''):'')+
+    (topics.length?'<h3>By Topic</h3>'+topics.map(([name,x])=>`<div class="topic"><span>${esc(name)} <small class="mut">(${x.attempts})</small></span><b>${x.accuracy}%</b><div class="bar"><i style="width:${x.accuracy}%"></i></div></div>`).join(''):'<div class="mut">Answer questions to build analytics.</div>')
 }
 function show(id){if(id!=='quiz')window.MBUCalculator?.hide();document.body.classList.toggle('mbu-quiz-active',id==='quiz');['home','quiz','search','reports'].forEach(x=>document.getElementById(x).classList.toggle('hidden',x!==id));const ret=new URLSearchParams(location.search).get('return'),haz=ret==='hazards',combined=ret==='combined';const title=document.getElementById('studioTitle'),back=document.getElementById('studioHomeNav');title.textContent=haz?'Workstation Hazards · Missed Questions Review':combined?'Combined · Missed Questions Review':'Exam 1 Study Studio';back.textContent=haz?'← Hazards Home':combined?'← Combined Home':'← Study Studio Home';back.onclick=haz?()=>location.href='hazards.html':combined?()=>location.href='combined.html':renderHome;back.classList.toggle('hidden',id==='home'&&!haz&&!combined)}
 function shuffle(a){for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
-function startMode(m){let pool=[...ALL];if(m==='missed')pool=pool.filter(q=>DB.ans[q.uid]&&!DB.ans[q.uid].ok);if(m==='hazards-missed')pool=pool.filter(q=>String(q.bank).startsWith('h')&&DB.ans[q.uid]&&!DB.ans[q.uid].ok);if(m==='combined-missed')pool=pool.filter(q=>q.bank==='combined'&&DB.ans[q.uid]&&!DB.ans[q.uid].ok);if(m==='flagged')pool=pool.filter(q=>DB.flags[q.uid]);if(m==='weak'){let by={};ALL.forEach(q=>{let r=DB.ans[q.uid];if(r){(by[q.topic]??={a:0,c:0}).a++;if(r.ok)by[q.topic].c++}});let weak=Object.entries(by).filter(x=>x[1].a>=2).sort((a,b)=>a[1].c/a[1].a-b[1].c/b[1].a).slice(0,3).map(x=>x[0]);pool=pool.filter(q=>weak.includes(q.topic));if(!pool.length)pool=[...ALL]}if(m==='custom'){if(buildMode==='sets'){const bs=new Set(checkedValues('sourceChecks'));if(!bs.size)return alert('Select at least one practice set.');pool=pool.filter(q=>bs.has(sourceSetKey(q)))}else{const ts=new Set(checkedValues('topicChecks'));if(!ts.size)return alert('Select at least one topic.');pool=pool.filter(q=>ts.has(q.topic))}if(document.getElementById('order').value==='random')shuffle(pool);let n=document.getElementById('count').value;if(n!=='all')pool=pool.slice(0,+n)}else shuffle(pool);if(!pool.length){if(m==='hazards-missed'||m==='combined-missed'){show('home');return}return alert('No questions are available for that mode yet.')}delete DB.searchReturn;session=pool;pos=0;DB.active={uids:session.map(q=>q.uid),pos,answers:{},updated:Date.now()};save();showQ()}
+function startMode(m){let pool=[...ALL];if(m==='smart')pool=window.MBUStudyIntelligence?.smartReview?.(pool,50)||pool.slice(0,50);if(m==='due'){const due=new Set((window.MBUStudyIntelligence?.due?.()||[]).map(x=>x.uid));pool=pool.filter(q=>due.has(q.uid))}if(m==='missed')pool=pool.filter(q=>DB.ans[q.uid]&&!DB.ans[q.uid].ok);if(m==='hazards-missed')pool=pool.filter(q=>String(q.bank).startsWith('h')&&DB.ans[q.uid]&&!DB.ans[q.uid].ok);if(m==='combined-missed')pool=pool.filter(q=>q.bank==='combined'&&DB.ans[q.uid]&&!DB.ans[q.uid].ok);if(m==='flagged')pool=pool.filter(q=>DB.flags[q.uid]);if(m==='weak'){let by={};ALL.forEach(q=>{let r=DB.ans[q.uid];if(r){(by[q.topic]??={a:0,c:0}).a++;if(r.ok)by[q.topic].c++}});let weak=Object.entries(by).filter(x=>x[1].a>=2).sort((a,b)=>a[1].c/a[1].a-b[1].c/b[1].a).slice(0,3).map(x=>x[0]);pool=pool.filter(q=>weak.includes(q.topic));if(!pool.length)pool=[...ALL]}if(m==='custom'){if(buildMode==='sets'){const bs=new Set(checkedValues('sourceChecks'));if(!bs.size)return alert('Select at least one practice set.');pool=pool.filter(q=>bs.has(sourceSetKey(q)))}else{const ts=new Set(checkedValues('topicChecks'));if(!ts.size)return alert('Select at least one topic.');pool=pool.filter(q=>ts.has(q.topic))}if(document.getElementById('order').value==='random')shuffle(pool);let n=document.getElementById('count').value;if(n!=='all')pool=pool.slice(0,+n)}else if(m!=='smart'&&m!=='due')shuffle(pool);if(!pool.length){if(m==='hazards-missed'||m==='combined-missed'){show('home');return}return alert('No questions are available for that mode yet.')}delete DB.searchReturn;session=pool;pos=0;DB.active={uids:session.map(q=>q.uid),pos,answers:{},updated:Date.now()};save();showQ()}
 function sessionStats(){let done=0,correct=0;for(const q of session){const r=sessionAnswer(q.uid);if(!r)continue;done++;if(r.ok)correct++}return{done,correct,missed:done-correct,score:done?Math.round(100*correct/done):0}}
 function crossKey(q,i){return q.uid+':'+i}
 function toggleStudioCross(q,i,b,cross){if(graded)return;const k=crossKey(q,i);DB.crosses[k]=!DB.crosses[k];if(!DB.crosses[k])delete DB.crosses[k];save();b.classList.toggle('strike',!!DB.crosses[k]);cross.setAttribute('aria-pressed',String(!!DB.crosses[k]))}
