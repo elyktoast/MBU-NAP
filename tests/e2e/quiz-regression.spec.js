@@ -1727,9 +1727,11 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('[data-cloud-signed-in]')).toBeVisible();
     page.on('dialog',dialog=>dialog.accept());
     await page.locator('[data-cloud-signed-in] summary').filter({hasText:'Privacy & account'}).click();
-    await page.evaluate(()=>{localStorage.setItem('mbu_exam1_studio_v1',JSON.stringify({ans:{deleteMe:{ok:true}}}));MBUAppCore.touchStore('mbu_exam1_studio_v1')});
+    await page.evaluate(()=>{localStorage.setItem('mbu_exam1_studio_v1',JSON.stringify({ans:{deleteMe:{ok:true}}}));MBUAppCore.touchStore('mbu_exam1_studio_v1');sessionStorage.setItem('mbu_skip_seed_session','1')});
     await page.locator('[data-cloud-delete-account]').click();
     await expect.poll(()=>deleted).toBe(1);
+    await page.waitForLoadState('domcontentloaded');
+    await page.evaluate(() => MBUPageReady);
     await expect.poll(()=>page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(false);
     await expect(page.locator('[data-cloud-signed-out]')).toBeVisible();
     expect(await page.evaluate(()=>localStorage.getItem('mbu_exam1_studio_v1'))).toBeNull();
