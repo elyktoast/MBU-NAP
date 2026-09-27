@@ -64,7 +64,7 @@
     "final coverage and balance review"
   ],
   "completed": {
-    "audited": 166,
+    "audited": 266,
     "bank2": [
       {
         "id": "S2-021",
@@ -779,39 +779,557 @@
       {
         "id": "S1-M35",
         "disposition": "PASS"
+      },
+      {
+        "id": "S1-M27",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-W10",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M16",
+        "disposition": "IMPROVE",
+        "changes": [
+          "polished source-grounded explanation"
+        ]
+      },
+      {
+        "id": "S1-G07",
+        "disposition": "IMPROVE",
+        "changes": [
+          "polished fail-safe explanation"
+        ]
+      },
+      {
+        "id": "S1-M39",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-W11",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-K08",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M38",
+        "disposition": "IMPROVE",
+        "changes": [
+          "polished source-grounded explanation"
+        ]
+      },
+      {
+        "id": "S1-K09",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G21",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M21",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G12",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G17",
+        "disposition": "CORRECT",
+        "changes": [
+          "replaced unsupported international cylinder-color claim with lecture-supported U.S. color coding"
+        ]
+      },
+      {
+        "id": "S1-G24",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-W08",
+        "disposition": "IMPROVE",
+        "changes": [
+          "removed unsupported LMA-tolerance claim"
+        ]
+      },
+      {
+        "id": "S1-M12",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G01",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M30",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-K05",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M42",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G11",
+        "disposition": "IMPROVE",
+        "changes": [
+          "polished image-based flowmeter-leak explanation"
+        ]
+      },
+      {
+        "id": "S1-M32",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M33",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-W04",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M31",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-K07",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M22",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M13",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G26",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-K17",
+        "disposition": "CORRECT",
+        "changes": [
+          "corrected source metadata to CO₂ & Scavenging slide 14",
+          "tightened spill-volume calculation rationale"
+        ]
+      },
+      {
+        "id": "S1-M02",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M06",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-W05",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G23",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M18",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-K02",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G16",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-K16",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-M24",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G14",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-W09",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S1-G15",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-M25",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G35",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N19",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G45",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-C35",
+        "disposition": "IMPROVE",
+        "changes": [
+          "fixed stem capitalization and tightened explanation"
+        ]
+      },
+      {
+        "id": "S2-N03",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N58",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G43",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-K01",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N13",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N40",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G02",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G57",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N18",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G67",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-C20",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G55",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N20",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N11",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-C26",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N41",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G38",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G41",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-M15",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G52",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-C29",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G62",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N39",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G54",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G48",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-W14",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-C31",
+        "disposition": "IMPROVE",
+        "changes": [
+          "polished scavenging-interface explanation"
+        ]
+      },
+      {
+        "id": "S2-N34",
+        "disposition": "IMPROVE",
+        "changes": [
+          "clarified stem to target the specific Allen-test reliability statement because later lecture content also instructs assessment of ulnar circulation"
+        ]
+      },
+      {
+        "id": "S2-C30",
+        "disposition": "IMPROVE",
+        "changes": [
+          "reduced answer-length clueing"
+        ]
+      },
+      {
+        "id": "S2-G69",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-W16",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N02",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N57",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-C28",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G34",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G07",
+        "disposition": "IMPROVE",
+        "changes": [
+          "polished fail-safe explanation"
+        ]
+      },
+      {
+        "id": "S2-N12",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N15",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G56",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N50",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-C19",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G32",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-C24",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N17",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N07",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N08",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G59",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N54",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G36",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N27",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-G40",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-N10",
+        "disposition": "PASS"
+      },
+      {
+        "id": "S2-W13",
+        "disposition": "PASS"
       }
     ]
   },
-  "remaining": 1834,
+  "remaining": 1734,
   "lastBatch": {
     "bank": "bank3.json",
-    "audited": 20,
+    "audited": 100,
     "ids": [
-      "S1-W03",
-      "S1-G10",
-      "S1-M26",
-      "S1-M04",
-      "S1-G19",
-      "S1-M37",
-      "S1-K01",
-      "S1-M05",
-      "S1-K12",
-      "S1-G30",
-      "S1-K10",
-      "S1-G03",
-      "S1-G18",
-      "S1-M10",
-      "S1-K04",
-      "S1-M09",
-      "S1-G05",
-      "S1-K13",
-      "S1-G29",
-      "S1-M35"
+      "S1-M27",
+      "S1-W10",
+      "S1-M16",
+      "S1-G07",
+      "S1-M39",
+      "S1-W11",
+      "S1-K08",
+      "S1-M38",
+      "S1-K09",
+      "S1-G21",
+      "S1-M21",
+      "S1-G12",
+      "S1-G17",
+      "S1-G24",
+      "S1-W08",
+      "S1-M12",
+      "S1-G01",
+      "S1-M30",
+      "S1-K05",
+      "S1-M42",
+      "S1-G11",
+      "S1-M32",
+      "S1-M33",
+      "S1-W04",
+      "S1-M31",
+      "S1-K07",
+      "S1-M22",
+      "S1-M13",
+      "S1-G26",
+      "S1-K17",
+      "S1-M02",
+      "S1-M06",
+      "S1-W05",
+      "S1-G23",
+      "S1-M18",
+      "S1-K02",
+      "S1-G16",
+      "S1-K16",
+      "S1-M24",
+      "S1-G14",
+      "S1-W09",
+      "S1-G15",
+      "S2-M25",
+      "S2-G35",
+      "S2-N19",
+      "S2-G45",
+      "S2-C35",
+      "S2-N03",
+      "S2-N58",
+      "S2-G43",
+      "S2-K01",
+      "S2-N13",
+      "S2-N40",
+      "S2-G02",
+      "S2-G57",
+      "S2-N18",
+      "S2-G67",
+      "S2-C20",
+      "S2-G55",
+      "S2-N20",
+      "S2-N11",
+      "S2-C26",
+      "S2-N41",
+      "S2-G38",
+      "S2-G41",
+      "S2-M15",
+      "S2-G52",
+      "S2-C29",
+      "S2-G62",
+      "S2-N39",
+      "S2-G54",
+      "S2-G48",
+      "S2-W14",
+      "S2-C31",
+      "S2-N34",
+      "S2-C30",
+      "S2-G69",
+      "S2-W16",
+      "S2-N02",
+      "S2-N57",
+      "S2-C28",
+      "S2-G34",
+      "S2-G07",
+      "S2-N12",
+      "S2-N15",
+      "S2-G56",
+      "S2-N50",
+      "S2-C19",
+      "S2-G32",
+      "S2-C24",
+      "S2-N17",
+      "S2-N07",
+      "S2-N08",
+      "S2-G59",
+      "S2-N54",
+      "S2-G36",
+      "S2-N27",
+      "S2-G40",
+      "S2-N10",
+      "S2-W13"
     ],
     "notes": [
-      "Checked the next 20 Bank 3 items against Airway Equipment, Monitoring, Medical Gas Systems in Anesthesia, and CO2 and Scavenging lecture material.",
-      "Visually verified the S1-M10 flow-volume-loop image; the patient loop shows the smaller-volume restrictive pattern keyed to pulmonary fibrosis.",
-      "Improved S1-G19 and S1-K12 explanations and corrected S1-G30 topic metadata; no answer keys changed."
+      "Audited 100 Bank 3 questions against the matching Airway Equipment, Medical Gas Systems in Anesthesia, CO₂ & Scavenging, and Monitoring lecture material.",
+      "Visually verified all six image-dependent questions in this batch: esophageal capnogram, flowmeter leak diagrams, obstructive flow-volume loop, cardiac oscillations, normal capnogram phases, and anesthesia-machine roadmap.",
+      "Verified calculation items including oxygen-cylinder duration, mean body temperature, MAP/pulse pressure, soda-lime capacity, spill-to-vapor volume, and gauge-to-absolute pressure conversions.",
+      "Corrected S1-G17 source framing, corrected S1-K17 source metadata, clarified the S2-N34 Allen-test conflict, and made targeted explanation/distractor-quality improvements. No answer keys changed."
     ]
   },
   "lastCorrection": {
