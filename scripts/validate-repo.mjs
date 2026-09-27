@@ -695,5 +695,39 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 }
 
 
+// Study intelligence is the single source of truth for adaptive review, spaced review, activity, and analytics.
+{
+ const boot=read('equipment/assets/build-bootstrap.js'),intel=read('equipment/assets/study-intelligence.js'),search=read('equipment/assets/question-search.js'),studio=read('equipment/assets/studio-page.js'),dash=read('equipment/assets/exam-dashboard.js'),core=read('equipment/assets/app-core.js');
+ for(const token of ["loadScript('study-intelligence.js')","loadScript('question-search.js')"])if(!boot.includes(token))fail('Shared study runtime missing '+token);
+ for(const token of ['mbu_study_intelligence_v1','recordAnswer','smartReview','due','analytics','recentActivity','addIssue'])if(!intel.includes(token))fail('Study intelligence contract missing '+token);
+ for(const token of ["m==='smart'","m==='due'",'analyticsSummary','seedLegacy'])if(!studio.includes(token))fail('Studio intelligence integration missing '+token);
+ for(const token of ['continuePanel','recentPanel','MBUStudyIntelligence'])if(!dash.includes(token))fail('Exam dashboard intelligence integration missing '+token);
+ if(!core.includes("keys=new Set(['mbu_exam1_studio_v1','mbu_study_intelligence_v1'])"))fail('Study intelligence is not cloud tracked');
+ for(const p of ['equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-page.js'])if(!read(p).includes('MBUStudyIntelligence'))fail(p+': answer path bypasses shared study intelligence');
+}
+
+// Universal search must stay lazy, global, and routed into the canonical Studio question view.
+{
+ const search=read('equipment/assets/question-search.js'),core=read('equipment/assets/app-core.js');
+ for(const token of ['let indexPromise=null','async function buildIndex()','terms.every','Practice in Studio','studio.html?question='])if(!search.includes(token))fail('Universal search contract missing '+token);
+ if(!core.includes('mbu-global-nav__search')||!core.includes('MBUQuestionSearch?.open'))fail('Global navigation search entry is missing');
+}
+
+// Cloud device management and restore history must remain authenticated and server-revision safe.
+{
+ const cloud=read('equipment/assets/supabase-sync.js'),core=read('equipment/assets/app-core.js');
+ for(const token of ['async function listDevices()','async function removeDevice(','async function listHistory(','async function restoreVersion(','mbu_sync_versions?select=','p_expected_server_revision'])if(!cloud.includes(token))fail('Cloud management contract missing '+token);
+ if((cloud.match(/addEventListener\('hashchange'/g)||[]).length!==1)fail('Cloud auth has duplicate or missing hashchange handlers');
+ for(const token of ['data-cloud-devices-details','data-cloud-history-details','renderCloudDevices','renderCloudHistory'])if(!core.includes(token))fail('Cloud management UI missing '+token);
+}
+
+// Semantic content checking is mandatory in quality CI.
+{
+ const pkg=JSON.parse(read('package.json')),ci=read('.github/workflows/ci.yml');
+ if(!pkg.scripts?.['test:semantic']||!exists('scripts/semantic-content-audit.mjs'))fail('Semantic content audit script is missing');
+ if(!String(pkg.scripts.quality||'').includes('test:semantic')||!ci.includes('npm run test:semantic'))fail('Semantic content audit is not a release gate');
+}
+
+
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
 console.log('Repository validation passed: Banks 1-3 are 500 questions each; Combined is 150 questions; local assets, Studio sources, shared quiz runtimes, answer indexes, and build manifest are valid.');
