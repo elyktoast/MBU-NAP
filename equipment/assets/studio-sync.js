@@ -174,6 +174,7 @@
     const payload={...reportContext,reason,comment,reporter,date:new Date().toISOString()};
     const d=db(),local={...payload,sent:false};
     d.reports.push(local);save(d);
+    window.MBUStudyIntelligence?.addIssue?.(payload.bank,{uid:payload.uid,bank:payload.bank,bankLabel:payload.bankLabel,set:payload.set,id:payload.questionNumber,topic:payload.topic,stem:payload.stem},{bankLabel:payload.bankLabel,set:payload.set,questionId:payload.questionNumber,reason,comment,href:payload.pageUrl});
     try{
       if(!REPORT_ENDPOINT)throw new Error('Reporting endpoint is not configured yet.');
       await fetch(REPORT_ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload),cache:'no-store'});
