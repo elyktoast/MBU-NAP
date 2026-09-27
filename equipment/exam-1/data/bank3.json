@@ -2108,7 +2108,7 @@
       "answer": [
         2
       ],
-      "explanation": "A slow B-to-C rise that rounds off into a shark fin is the obstructive pattern. the more C rounds out, the more obstruction. Combined with isolated PIP elevation (a resistance problem), this is bronchospasm. An exhausted absorbent raises the baseline, and chest wall rigidity would raise plateau too.",
+      "explanation": "A slow B-to-C rise that rounds into a shark-fin pattern indicates obstructive airflow; greater rounding reflects greater obstruction. The isolated rise in peak inspiratory pressure with a normal plateau pressure also points to increased airway resistance, making bronchospasm the best answer. An exhausted absorber raises the capnogram baseline, while a compliance problem would raise plateau pressure as well.",
       "citation": "Monitoring · Slides 45, 46, 51 (PDF p. 46, 47, 52)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -2142,7 +2142,7 @@
       "answer": [
         0
       ],
-      "explanation": "it sits in the nitrous line but responds to O2 pressure. When O2 supply pressure falls below about 25-30 psig it reduces, and below about 20 psig stops, the flow of other gases. It never measures concentration, so it can't catch the wrong gas in the O2 line.",
+      "explanation": "The fail-safe valve is in the nitrous oxide supply pathway but responds to oxygen supply pressure. As oxygen pressure falls to roughly 25–30 psig it reduces other-gas flow, and at still lower pressure it stops that flow. Because it senses pressure rather than oxygen concentration, it cannot detect the wrong gas in the oxygen pipeline.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 34 (PDF p. 17)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -2282,7 +2282,7 @@
         2,
         5
       ],
-      "explanation": "Hypothermia increases shivering, cardiac work, and O2 consumption; impairs coagulation; alters (slows) drug metabolism; and is linked to myocardial ischemia and wound infection. Each wrong choice is the opposite direction. low temp is bad for coagulation, wounds, and drug function.",
+      "explanation": "Perioperative hypothermia increases shivering, cardiac work, and oxygen consumption; impairs coagulation; slows drug metabolism; and is associated with myocardial ischemia and wound infection. The incorrect choices describe changes opposite to those listed in the lecture.",
       "citation": "Monitoring · Slide 84 (PDF p. 85)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -2442,7 +2442,7 @@
       "id": "S1-G17",
       "set": 1,
       "type": "single",
-      "stem": "A donated cylinder painted solid white under the international color code arrives on a mission trip. Which gas does it contain?",
+      "stem": "Under the lecture's standardized U.S. cylinder color code, which gas is identified by a green E-cylinder?",
       "options": [
         "Nitrogen",
         "Nitrous oxide",
@@ -2452,7 +2452,7 @@
       "answer": [
         2
       ],
-      "explanation": "International coding on the lecture table: O2 white, air white and black, N2O blue, N2 black. In the US, O2 is green and air is yellow. Solid white means O2 internationally; air is the two-tone cylinder.",
+      "explanation": "The lecture table lists oxygen as green, nitrous oxide as blue, and medical air as yellow. Therefore, a green E-cylinder identifies oxygen in the U.S. color scheme used in this course.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 7 (PDF p. 4)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -2524,7 +2524,7 @@
       "answer": [
         2
       ],
-      "explanation": "Awake patients tolerate NPAs better than OPAs. Any OPA, larger or smaller, can stimulate oropharyngeal and laryngeal reflexes in a lightly anesthetized patient, and an LMA won't be tolerated either. Insert the NPA with water-based lubricant or local anesthetic; its most common complication is epistaxis.",
+      "explanation": "Awake patients tolerate nasopharyngeal airways better than oropharyngeal airways, which can stimulate oropharyngeal and laryngeal reflexes. The lecture recommends water-based lubricant or local anesthetic for NPA insertion and identifies epistaxis as the most common complication.",
       "citation": "Airway Equipment · Slides 5, 6 (PDF p. 5, 6)",
       "topic": "Airway",
       "imageSvg": null,
@@ -2739,7 +2739,7 @@
         0,
         1
       ],
-      "explanation": "In A and B, O2 enters upstream of the leaking tube, so O2 escapes through the leak while N2O continues to the outlet. In C (Drager) and D (Ohmeda), O2 is the last flowmeter, closest to the outlet, so an upstream leak loses N2O or air instead of O2. oxygen is always last. The fail-safe responds only to O2 supply pressure and can't detect a low-pressure leak.",
+      "explanation": "In diagrams A and B, oxygen is upstream of the leaking flowmeter tube, so oxygen can escape through the leak while nitrous oxide continues toward the outlet. In C and D, oxygen is the last flowmeter closest to the outlet, so an upstream leak preferentially loses another gas instead. The fail-safe cannot detect this low-pressure flowmeter leak because it responds to oxygen supply pressure, not downstream gas composition.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 41 (PDF p. 21)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -3052,8 +3052,8 @@
       "answer": [
         2
       ],
-      "explanation": "Each mL of spilled liquid agent adds about 200 mL of vapor, the same 1 mL to 200 mL figure used for vaporizer consumption. 5 mL x 200 mL = about 1,000 mL.",
-      "citation": "CO₂ & Scavenging · Slide 14 (PDF p. 7); Medical Gas Systems in Anesthesia · Slide 52 (PDF p. 26)",
+      "explanation": "The lecture states that each milliliter of spilled liquid volatile anesthetic adds about 200 mL of vapor to room air. A 5 mL spill therefore adds about 1,000 mL of vapor.",
+      "citation": "CO₂ & Scavenging · Slide 14 (PDF p. 7)",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -3063,14 +3063,13 @@
       "orig": "K17",
       "sourceMeta": {
         "families": [
-          "Medical Gas Systems in Anesthesia",
           "CO₂ Absorbents and Scavenging"
         ],
         "slides": "14",
         "pdfPages": "7",
         "citationFormat": "document"
       },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
       "sourceLocator": "Slide 14 · PDF p. 7"
     },
     {
@@ -3643,7 +3642,7 @@
       "id": "S2-C35",
       "set": 2,
       "type": "single",
-      "stem": "which airway device more commonly vents excess anesthetic gas into the room?",
+      "stem": "Which airway device more commonly vents excess anesthetic gas into the room?",
       "options": [
         "Double-lumen tube",
         "Laryngeal mask airway",
@@ -3653,7 +3652,7 @@
       "answer": [
         1
       ],
-      "explanation": "A poorly fitting face mask, LMA, or other airway device lets gas leak around the rim, and LMAs more commonly vent excess gas. A properly sized, well-seated cuffed tube limits leakage. The lecture also flags being mindful of pregnant providers and staff.",
+      "explanation": "The lecture notes that poorly fitting face masks, laryngeal mask airways, and other airway devices can leak anesthetic gas around the seal, and specifically notes that LMAs more commonly vent excess gas. A well-seated cuffed tracheal tube limits this source of room contamination.",
       "citation": "CO₂ & Scavenging · Slide 14 (PDF p. 7)",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -4597,7 +4596,7 @@
       "answer": [
         1
       ],
-      "explanation": "The open interface is valveless; relief ports open to atmosphere keep positive or negative pressure from building up, so it doesn't depend on relief valves working properly. the open interface is most common. Pop-off and pop-in valves belong to the closed interface.",
+      "explanation": "An open-reservoir scavenging interface is valveless. Relief ports open to the atmosphere prevent excessive positive or negative pressure from building up, so the system does not depend on spring-loaded pressure-relief valves. Pop-off and pop-in valves are features of a closed-reservoir interface.",
       "citation": "CO₂ & Scavenging · Slide 20 (PDF p. 10)",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -4621,7 +4620,7 @@
       "id": "S2-N34",
       "set": 2,
       "type": "single",
-      "stem": "What does the lecture say about the traditional Allen test before radial cannulation?",
+      "stem": "On the lecture's arterial-line 'Proper Use and Interpretation' slide, what is stated about the traditional Allen test?",
       "options": [
         "It replaces ultrasound when pulses are weak",
         "It has not been confirmed as a reliable test",
@@ -4631,7 +4630,7 @@
       "answer": [
         1
       ],
-      "explanation": "Slide 66 states the traditional Allen test hasn't been confirmed as reliable; ultrasound with Doppler improves cannulation when pulses are weak or vessels small. Slide 68 still mentions assessing ulnar circulation, so know that both statements appear, but the reliability point is the one to remember.",
+      "explanation": "Slide 66 states that the traditional Allen test has not been confirmed as reliable. A later cannulation-options slide still says to assess ulnar circulation with an Allen test, so this stem now explicitly targets the lecture's reliability statement rather than implying the slides are fully consistent.",
       "citation": "Monitoring · Slides 66, 68 (PDF p. 67, 69)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -4661,7 +4660,7 @@
         "Disposal line",
         "Inspiratory unidirectional valve",
         "Breathing circuit reservoir bag",
-        "Relief valve where gas leaves the breathing circuit",
+        "Breathing-circuit relief valve",
         "Scavenging interface"
       ],
       "answer": [
@@ -4669,7 +4668,7 @@
         4,
         5
       ],
-      "explanation": "The four parts: (1) a relief valve (APL or ventilator relief), (2) conducting tubing to the interface, (3) the scavenging interface, and (4) a disposal line. The absorber, unidirectional valves, and patient reservoir bag belong to the breathing circuit.",
+      "explanation": "A typical scavenging system has four parts: a breathing-circuit relief valve, conducting tubing, the scavenging interface, and a disposal line. The CO₂ absorber, inspiratory unidirectional valve, and patient reservoir bag are parts of the breathing circuit rather than the scavenging system.",
       "citation": "CO₂ & Scavenging · Slide 18 (PDF p. 9)",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -4910,7 +4909,7 @@
       "answer": [
         3
       ],
-      "explanation": "it sits in the nitrous line but responds to O2 pressure. When O2 supply pressure falls below about 25-30 psig it reduces, and below about 20 psig stops, the flow of other gases. It never measures concentration, so it can't catch the wrong gas in the O2 line.",
+      "explanation": "The fail-safe valve is in the nitrous oxide supply pathway but responds to oxygen supply pressure. As oxygen pressure falls to roughly 25–30 psig it reduces other-gas flow, and at still lower pressure it stops that flow. Because it senses pressure rather than oxygen concentration, it cannot detect the wrong gas in the oxygen pipeline.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 34 (PDF p. 17)",
       "topic": "Medical Gases",
       "imageSvg": null,
