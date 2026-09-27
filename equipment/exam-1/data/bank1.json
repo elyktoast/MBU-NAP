@@ -204,18 +204,18 @@
       "id": "7",
       "set": 1,
       "type": "single",
-      "stem": "Using the exposure limits stated in the lecture, which pair is correct?",
+      "stem": "According to the Nurse Anesthesia textbook, what is the recommended 8-hour time-weighted occupational exposure when nitrous oxide is used with a halogenated anesthetic?",
       "options": [
-        "Halogenated anesthetic agent: 2 ppm; N2O as sole anesthetic: 25 ppm TWA",
-        "Halogenated anesthetic agent: 0.5 ppm; N2O as sole anesthetic: 25 ppm TWA",
-        "Halogenated anesthetic agent: 5 ppm; N2O as sole anesthetic: 50 ppm TWA",
-        "Halogenated anesthetic agent: 10 ppm; N2O as sole anesthetic: 100 ppm TWA"
+        "0.5 ppm halogenated agent and 25 ppm nitrous oxide",
+        "2 ppm halogenated agent and 25 ppm nitrous oxide",
+        "5 ppm halogenated agent and 50 ppm nitrous oxide",
+        "10 ppm halogenated agent and 100 ppm nitrous oxide"
       ],
       "answer": [
         0
       ],
-      "explanation": "The lecture states a 2 ppm recommended exposure limit for halogenated anesthetic agents and a 25 ppm time-weighted-average limit for nitrous oxide when used as the sole anesthetic. It does not state the 0.5 ppm combined-use limit used in the prior version.",
-      "citation": "CO₂ & Scavenging · Slide 10",
+      "explanation": "Nurse Anesthesia states that workers should not be exposed to more than 2 ppm of a halogenated agent, reduced to 0.5 ppm when it is used with nitrous oxide, and no more than 25 ppm nitrous oxide as an 8-hour time-weighted average.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 16, p. 284",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -224,13 +224,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "CO₂ Absorbents and Scavenging"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "10",
-        "citationFormat": "slides"
+        "pages": "284",
+        "pdfPages": "337",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 10"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 16 · p. 284 · PDF p. 337"
     },
     {
       "id": "8",
@@ -2074,8 +2075,8 @@
       "answer": [
         1
       ],
-      "explanation": "Ramping aligns the upper airway axes in obese patients by elevating the head, neck, and shoulders until the external auditory meatus is horizontally level with the sternal notch.",
-      "citation": "Airway Equipment · Slide 3",
+      "explanation": "For morbidly obese patients, the textbook describes ramping the head, upper body, and shoulders until an imaginary horizontal line connects the sternal notch and external auditory meatus.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 47, p. 1103",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -2084,13 +2085,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "3",
-        "citationFormat": "slides"
+        "pages": "1103",
+        "pdfPages": "1279",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 3"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 47 · p. 1103 · PDF p. 1279"
     },
     {
       "id": "65",
@@ -2238,7 +2240,7 @@
       "answer": [
         2
       ],
-      "explanation": "Sevoflurane degrades in the presence of warm, dry CO2 absorbent to form Compound A (a fluoromethyl-2,2-difluoro-1-[trifluoromethyl]vinyl ether), which is nephrotoxic in animal models.",
+      "explanation": "The lecture shows that Compound A production from sevoflurane is promoted by warmer, drier absorbent, higher agent concentration, and lower fresh gas flow.",
       "citation": "CO₂ & Scavenging · Slide 6",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -2392,18 +2394,18 @@
       "id": "74",
       "set": 1,
       "type": "single",
-      "stem": "Which supraglottic airway feature is specifically engineered to reduce the risk of gastric insufflation and allow drainage of stomach contents?",
+      "stem": "Which second-generation supraglottic-airway feature provides a route for gastric drainage?",
       "options": [
-        "A pilot balloon with pressure transducer",
-        "A dedicated gastric drainage channel (e.g., LMA Supreme)",
-        "An embedded flexo-metallic spiral shaft",
-        "A preformed anatomical curved bite block without a conduit"
+        "A dedicated gastric drainage channel",
+        "An inflatable pilot balloon on the airway tube",
+        "A metal reinforcing wire in the shaft",
+        "A Murphy eye at the distal tip"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Second-generation supraglottic airways (such as the LMA Supreme) feature an integrated drain tube running alongside the airway tube to decompress the stomach and route regurgitated fluid away from the laryngeal inlet.",
-      "citation": "Airway Equipment · Slide 14",
+      "explanation": "The textbook describes second-generation supraglottic devices such as the ProSeal and Supreme as incorporating a gastric drainage tube or access port alongside the airway channel.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 24, p. 544",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -2412,13 +2414,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "14",
-        "citationFormat": "slides"
+        "pages": "544",
+        "pdfPages": "544",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 14"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 24 · p. 544 · PDF p. 544"
     },
     {
       "id": "75",
@@ -2993,7 +2996,7 @@
       "answer": [
         1
       ],
-      "explanation": "When use stops, resting exhausted absorbent can undergo a temporary pH shift that bleaches ethyl violet back to white. Upon resuming use, it rapidly turns purple again, misleading providers who rely solely on color.",
+      "explanation": "The lecture warns that indicator color may fade after use stops, a phenomenon called regeneration. That temporary fading can make nearly exhausted absorbent appear fresher than it is, so color should not be used as the sole indicator of absorbent status.",
       "citation": "CO₂ & Scavenging · Slide 4",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -3146,18 +3149,18 @@
       "id": "97",
       "set": 1,
       "type": "single",
-      "stem": "Which direct laryngoscopy blade achieves glottic exposure by directly trapping and compressing the epiglottis against the anterior pharyngeal wall?",
+      "stem": "Which direct-laryngoscopy blade exposes the glottis by directly lifting the epiglottis?",
       "options": [
-        "Macintosh blade",
         "Miller blade",
-        "Phillips blade",
-        "Guedel blade"
+        "Macintosh blade",
+        "Wisconsin mask",
+        "Eschmann introducer"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "The straight Miller blade is advanced underneath the epiglottis to directly trap and lift it forward, exposing the glottic opening.",
-      "citation": "Airway Equipment · Slide 10",
+      "explanation": "The lecture describes the Miller as a long, straight blade used for direct epiglottic lift. The Macintosh blade lifts the epiglottis indirectly through tension on the glossoepiglottic ligament.",
+      "citation": "Airway Equipment · Slide 11",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -3168,11 +3171,11 @@
         "families": [
           "Airway Equipment"
         ],
-        "slides": "10",
+        "slides": "11",
         "citationFormat": "slides"
       },
       "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 10"
+      "sourceLocator": "Slide 11"
     },
     {
       "id": "98",
@@ -3210,18 +3213,18 @@
       "id": "99",
       "set": 1,
       "type": "single",
-      "stem": "During general anesthesia with volatile agents, which physiological monitor will demonstrate the EARLIEST and most sensitive indicator of an acute malignant hyperthermia crisis?",
+      "stem": "Which monitored variable may show an unexplained sudden rise during a malignant hyperthermia episode?",
       "options": [
-        "End-tidal CO2 on capnography demonstrating an unexplained, rapid rise",
-        "Distal esophageal temperature probe demonstrating core temperature > 38.5°C",
-        "Electrocardiogram Lead V3 demonstrating peaked T-waves from acute hyperkalemia",
-        "Automated non-invasive blood pressure cuff demonstrating sudden severe hypertension"
+        "End-tidal carbon dioxide",
+        "Bispectral index only",
+        "Urine specific gravity",
+        "Central venous pressure only"
       ],
       "answer": [
         0
       ],
-      "explanation": "An unexplained, rapid rise in EtCO2 is the earliest and most sensitive indicator of malignant hyperthermia, reflecting intense skeletal muscle hypermetabolism. Hyperthermia itself is a late sign.",
-      "citation": "Monitoring · Slides 43, 50, 82",
+      "explanation": "The textbook lists an unexplained sudden rise in end-tidal carbon dioxide among the clinical events associated with malignant hyperthermia. Rising temperature and unexplained tachycardia are also listed findings.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 36, p. 982",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -3230,13 +3233,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "43, 50, 82",
-        "citationFormat": "slides"
+        "pages": "982",
+        "pdfPages": "982",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 43, 50, 82"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 36 · p. 982 · PDF p. 982"
     },
     {
       "id": "100",
@@ -3342,18 +3346,18 @@
       "id": "103",
       "set": 2,
       "type": "single",
-      "stem": "Examine the cutaway diagram of the oxygen fail-safe valve below. When oxygen pipeline pressure falls below 25–30 psig, what physical mechanism causes the valve stem to throttle or stop nitrous oxide flow?",
+      "stem": "How does an oxygen fail-safe valve reduce or stop nitrous oxide flow when oxygen supply pressure falls?",
       "options": [
-        "The internal bias spring overrides the diminished oxygen pressure on the piston, forcing the valve pin upward into its seat",
-        "Nitrous oxide backpressure closes the check valve downstream of the flowmeter manifold",
-        "A bimetallic expansion element contracts, closing the annular orifice of the Thorpe tube",
-        "A differential pressure transducer electronically cuts electrical current to the N2O flow control valve"
+        "Oxygen pressure normally holds a gate open in the nonoxygen-gas line; falling oxygen pressure allows it to close or throttle",
+        "The oxygen analyzer electrically closes the common gas outlet",
+        "The vaporizer interlock shuts the nitrous oxide cylinder valve",
+        "The scavenging system diverts nitrous oxide to wall suction"
       ],
       "answer": [
         0
       ],
-      "explanation": "Under normal conditions (50 psig), oxygen supply pressure acts on a large piston to compress an internal spring and keep the N2O valve fully open. When O2 pressure falls below 25–30 psig, the opposing spring force drives the piston and valve pin into its seat, shutting off or throttling N2O (<20 psig) to prevent a hypoxic mixture.",
-      "citation": "Medical Gas Systems in Anesthesia · Slide 34",
+      "explanation": "The textbook describes fail-safe systems as gate-like valves in nonoxygen gas lines that are held open by pressure in the oxygen circuitry. When oxygen pressure falls below the device threshold, nitrous oxide is shut off or proportionally reduced.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 16, pp. 259-260",
       "topic": "Medical Gases",
       "imageSvg": "<svg width=\"300\" height=\"180\" viewBox=\"0 0 300 180\" style=\"background:#fff; border:1px solid #cbd5e0; border-radius:6px;\">\n      <rect x=\"100\" y=\"20\" width=\"100\" height=\"140\" fill=\"#edf2f7\" stroke=\"#4a5568\" stroke-width=\"2\"/>\n      <line x1=\"40\" y1=\"50\" x2=\"100\" y2=\"50\" stroke=\"#2b6cb0\" stroke-width=\"6\"/>\n      <text x=\"45\" y=\"42\" font-size=\"10\" fill=\"#2b6cb0\" font-weight=\"bold\">N2O In (50 psi)</text>\n      <line x1=\"200\" y1=\"50\" x2=\"260\" y2=\"50\" stroke=\"#2b6cb0\" stroke-width=\"6\"/>\n      <text x=\"205\" y=\"42\" font-size=\"10\" fill=\"#2b6cb0\" font-weight=\"bold\">N2O Out</text>\n      <path d=\"M 140 25 L 160 25 L 150 48 Z\" fill=\"#2b6cb0\"/>\n      <path d=\"M 145 22 L 155 22 L 150 40 L 155 35 L 145 30 Z\" stroke=\"#e53e3e\" stroke-width=\"2\" fill=\"none\"/>\n      <rect x=\"115\" y=\"100\" width=\"70\" height=\"25\" fill=\"#a0aec0\" stroke=\"#4a5568\"/>\n      <text x=\"130\" y=\"116\" font-size=\"10\" fill=\"#fff\" font-weight=\"bold\">Piston</text>\n      <line x1=\"150\" y1=\"125\" x2=\"150\" y2=\"160\" stroke=\"#38a169\" stroke-width=\"6\"/>\n      <text x=\"105\" y=\"174\" font-size=\"10\" fill=\"#38a169\" font-weight=\"bold\">O2 Pilot Line</text>\n    </svg>",
       "image": null,
@@ -3362,13 +3366,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Medical Gas Systems in Anesthesia"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "34",
-        "citationFormat": "slides"
+        "pages": "259-260",
+        "pdfPages": "313-314",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 34"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 16 · pp. 259-260 · PDF pp. 313-314"
     },
     {
       "id": "104",
@@ -3551,7 +3556,7 @@
       "answer": [
         1
       ],
-      "explanation": "Lead II parallels the normal cardiac electrical axis and P-wave vector, making it preferred for atrial rhythm and dysrhythmia detection. Lead V3 is the single most sensitive lead for perioperative myocardial ischemia (86.8% sensitivity).",
+      "explanation": "The monitoring lecture identifies Lead II for rhythm analysis, including atrial arrhythmias, and identifies V3 as the most sensitive lead in the cited perioperative ischemia study.",
       "citation": "Monitoring · Slides 57, 58",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -3740,7 +3745,7 @@
       "id": "115",
       "set": 2,
       "type": "single",
-      "stem": "According to NIOSH recommendations, when nitrous oxide is administered as the sole anesthetic agent without halogenated vapors, what is the maximum permissible occupational exposure limit over a time-weighted average?",
+      "stem": "According to the lecture's NIOSH recommendation, what is the occupational exposure limit for nitrous oxide when used as the sole anesthetic agent?",
       "options": [
         "2 ppm",
         "10 ppm",
@@ -3750,7 +3755,7 @@
       "answer": [
         2
       ],
-      "explanation": "NIOSH mandates that occupational exposure to nitrous oxide, when used as the sole anesthetic agent, shall not exceed a time-weighted average (TWA) concentration of 25 ppm during anesthetic administration. Halogenated agents alone must not exceed 2 ppm.",
+      "explanation": "The lecture states that nitrous oxide, when used as the sole anesthetic agent, should be controlled to a time-weighted-average concentration no greater than 25 ppm during anesthetic administration.",
       "citation": "CO₂ & Scavenging · Slide 10",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -3772,20 +3777,20 @@
       "id": "116",
       "set": 2,
       "type": "single",
-      "stem": "Examine the bimetallic strip temperature compensation mechanism below. When liquid anesthetic cools due to the latent heat of vaporization, what mechanical action restores dialed vapor output?",
+      "stem": "As a variable bypass vaporizer cools during vaporization, what does the temperature-compensation system do?",
       "options": [
-        "The strip bends to restrict bypass gas flow, diverting a higher fraction of fresh gas into the vaporizing sump",
-        "The strip expands linearly to vent excess saturated vapor into the common gas outlet",
-        "The strip closes the vaporizing chamber orifice completely to prevent overdosing",
-        "The strip opens an auxiliary oxygen port to dilute saturated carrier gas"
+        "Adjusts the splitting ratio to increase flow through the vaporizing chamber",
+        "Shuts off all fresh gas flow",
+        "Raises pipeline oxygen pressure",
+        "Routes all gas around the vaporizer"
       ],
       "answer": [
         0
       ],
-      "explanation": "As vaporization cools the liquid agent, its vapor pressure drops. Because the two metals have different thermal expansion coefficients, cooling causes the strip to bend into the bypass channel, restricting bypass flow and forcing more carrier gas through the sump to maintain dialed concentration.",
+      "explanation": "As liquid anesthetic cools, vapor pressure falls. The temperature-compensation element changes the splitting ratio so that more carrier gas reaches the vaporizing chamber, helping maintain the dialed concentration.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 56",
       "topic": "Medical Gases",
-      "imageSvg": "<svg width=\"280\" height=\"160\" viewBox=\"0 0 280 160\" style=\"background:#fff; border:1px solid #cbd5e0; border-radius:6px;\">\n      <rect x=\"20\" y=\"20\" width=\"240\" height=\"120\" fill=\"#f7fafc\" stroke=\"#4a5568\" stroke-width=\"2\"/>\n      <line x1=\"20\" y1=\"50\" x2=\"260\" y2=\"50\" stroke=\"#718096\" stroke-width=\"2\"/>\n      <text x=\"30\" y=\"42\" font-size=\"10\" fill=\"#2d3748\" font-weight=\"bold\">Bypass Channel</text>\n      <text x=\"30\" y=\"110\" font-size=\"10\" fill=\"#2d3748\" font-weight=\"bold\">Vaporizing Chamber</text>\n      <path d=\"M 140 50 Q 142 75 160 85\" stroke=\"#e53e3e\" stroke-width=\"4\" fill=\"none\"/>\n      <circle cx=\"140\" cy=\"50\" r=\"4\" fill=\"#2d3748\"/>\n      <text x=\"165\" y=\"85\" font-size=\"10\" fill=\"#e53e3e\" font-weight=\"bold\">Bimetallic Strip</text>\n      <line x1=\"20\" y1=\"20\" x2=\"40\" y2=\"20\" stroke=\"#2b6cb0\" stroke-width=\"4\"/>\n      <text x=\"45\" y=\"18\" font-size=\"9\" fill=\"#2b6cb0\">FGF Inflow</text>\n    </svg>",
+      "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
@@ -3904,17 +3909,17 @@
       "id": "120",
       "set": 2,
       "type": "single",
-      "stem": "A nitrous oxide E-cylinder is in continuous use during anesthesia maintenance. The cylinder Bourdon gauge has read 745 psig for two hours, but then suddenly begins a rapid, linear drop to 400 psig. What physical change within the cylinder accounts for this sudden pressure drop?",
+      "stem": "A nitrous oxide E-cylinder gauge remains near 745 psig for a prolonged period and then begins to fall. What physical change has occurred?",
       "options": [
-        "All liquid nitrous oxide has fully vaporized, leaving approximately 253 L of gas remaining",
-        "The cylinder temperature has dropped below its critical temperature of -88.5°C",
-        "The first-stage regulator has failed, venting gas into the high-pressure safety relief valve",
-        "Nitrous oxide has condensed into solid state crystals along the internal cylinder walls"
+        "The liquid phase has been exhausted, leaving only gaseous nitrous oxide",
+        "The cylinder has become completely empty",
+        "The cylinder has converted entirely to liquid",
+        "The pressure regulator has increased cylinder pressure"
       ],
       "answer": [
         0
       ],
-      "explanation": "In an N2O cylinder, the Bourdon gauge remains at 745 psig (at 20°C) as long as liquid N2O remains to generate saturated vapor. Once all liquid has vaporized, only gaseous N2O remains (~253 L or ~16% of a full 1590 L tank), and pressure subsequently drops linearly with gas consumption.",
+      "explanation": "At room temperature, cylinder pressure remains near the vapor pressure of nitrous oxide while liquid and gas coexist. Once the liquid phase is gone, pressure begins to fall as the remaining gaseous nitrous oxide is consumed.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 14",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -4035,18 +4040,18 @@
       "id": "124",
       "set": 2,
       "type": "single",
-      "stem": "What is the recommended fresh gas flow technique when managing low-flow anesthesia to avoid accumulation of Compound A while using sevoflurane?",
+      "stem": "What low-flow sevoflurane limitation is stated in the Nurse Anesthesia textbook?",
       "options": [
-        "Maintain total fresh gas flow at a minimum of 1 to 2 L/min",
-        "Operate fresh gas flows strictly below 0.3 L/min to saturate wicks",
-        "Ensure an FiO2 of 0.21 using medical air without supplemental oxygen",
-        "Disable the temperature compensation valve on the variable bypass vaporizer"
+        "Avoid total fresh gas flows below 1-2 L/min for more than 2 MAC-hours",
+        "Always use less than 0.5 L/min for the entire anesthetic",
+        "Compound A formation is unrelated to fresh gas flow",
+        "Sevoflurane requires a minimum flow of 10 L/min"
       ],
       "answer": [
         0
       ],
-      "explanation": "FDA and clinical standards recommend avoiding fresh gas flows below 1 L/min for more than 2 MAC-hours (or maintaining flows ≥ 1 to 2 L/min) when administering sevoflurane to prevent excessive Compound A concentration in the breathing circuit.",
-      "citation": "CO₂ & Scavenging · Slide 6; Medical Gas Systems in Anesthesia · Slide 52",
+      "explanation": "The textbook notes that the sevoflurane product insert does not recommend total fresh gas flows below 1 to 2 L/min for more than 2 MAC-hours because lower flows can increase Compound A exposure.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 16, p. 273",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -4055,14 +4060,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Medical Gas Systems in Anesthesia",
-          "CO₂ Absorbents and Scavenging"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "6",
-        "citationFormat": "slides"
+        "pages": "273",
+        "pdfPages": "327",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 6"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 16 · p. 273 · PDF p. 327"
     },
     {
       "id": "125",
@@ -4168,18 +4173,18 @@
       "id": "128",
       "set": 2,
       "type": "single",
-      "stem": "When performing acceleromyography to assess neuromuscular blockade, what Train-of-Four (TOF) ratio must be documented to confirm adequate recovery prior to extubation?",
+      "stem": "Which quantitative train-of-four ratio is used as the recovery threshold before extubation?",
       "options": [
-        "TOF ratio ≥ 0.70",
-        "TOF ratio ≥ 0.80",
-        "TOF ratio ≥ 0.90",
-        "TOF ratio = 1.0 with post-tetanic count of 8"
+        "At least 0.90",
+        "At least 0.50",
+        "At least 0.25",
+        "Exactly 1 twitch"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "AANA Standard 8 and evidence-based anesthesia practice require quantitative monitoring demonstrating a TOF ratio of at least 0.90 (90%) at the adductor pollicis before safe extubation to prevent residual postoperative paralysis.",
-      "citation": "Monitoring · Slide 15",
+      "explanation": "Nurse Anesthesia lists a train-of-four ratio greater than 0.9 among criteria indicating recovery from neuromuscular blockade and emphasizes objective monitoring for residual blockade.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 12, p. 175",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -4188,13 +4193,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "15",
-        "citationFormat": "slides"
+        "pages": "175",
+        "pdfPages": "214",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 15"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 12 · p. 175 · PDF p. 214"
     },
     {
       "id": "129",
@@ -4299,7 +4305,7 @@
       "id": "132",
       "set": 2,
       "type": "single",
-      "stem": "Which of the following actions is strictly contraindicated when filling a variable bypass vaporizer equipped with an agent-specific keyed filler system?",
+      "stem": "Which action should be avoided when filling a variable bypass vaporizer?",
       "options": [
         "Turning the vaporizer dial completely to the 'OFF' position before opening the filler port",
         "Filling the vaporizer sump while the vaporizer concentration dial remains turned 'ON'",
@@ -4309,7 +4315,7 @@
       "answer": [
         1
       ],
-      "explanation": "Filling a vaporizer while it is turned 'ON' risks liquid anesthetic entering the bypass chamber or common gas outlet, leading to delivery of massive, uncontrolled anesthetic concentrations and catastrophic overdose.",
+      "explanation": "The lecture identifies filling while the vaporizer is on as a cause of overfilling or contamination of the bypass chamber or vaporizer outlet. It instructs the provider to turn the vaporizer off and fill it to the specified level.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 70",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -4463,18 +4469,18 @@
       "id": "137",
       "set": 2,
       "type": "single",
-      "stem": "In a patient presenting for emergency trauma surgery with suspected cervical spine fracture, which airway technique is considered the gold standard for securing the trachea without neck manipulation?",
+      "stem": "Which airway approach is included in the textbook's management options for a patient with cervical spine injury when awake intubation is chosen?",
       "options": [
-        "Blind nasal intubation using an uncuffed flexo-metallic tube",
-        "Awake flexible fiberoptic intubation with topical anesthesia",
-        "Rapid direct laryngoscopy using a size 4 Macintosh blade",
-        "Laryngeal mask airway placement with high-pressure positive ventilation"
+        "Awake flexible fiberoptic intubation",
+        "Blind nasal intubation with neck extension",
+        "Routine direct laryngoscopy without stabilization",
+        "Elective cricothyrotomy for every patient"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Awake flexible fiberoptic bronchoscopy allows direct visualization of the glottis and atraumatic tracheal intubation while maintaining the cervical spine in a neutral, immobile position.",
-      "citation": "Airway Equipment · Slide 12",
+      "explanation": "The textbook's cervical-spine-injury airway algorithm includes awake fiberoptic intubation as an option. Technique selection depends on the clinical situation, urgency, and ability to maintain oxygenation and spinal precautions.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 40, Fig. 40.2",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -4483,13 +4489,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "12",
-        "citationFormat": "slides"
+        "figures": "40.2",
+        "pdfPages": "1092",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 12"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 40 · Fig. 40.2 · PDF p. 1092"
     },
     {
       "id": "138",
@@ -4594,17 +4601,17 @@
       "id": "141",
       "set": 2,
       "type": "single",
-      "stem": "What is the maximum permissible intra-cuff pressure for a standard high-volume, low-pressure endotracheal tube cuff to prevent mucosal ischemia?",
+      "stem": "What design feature of a standard cuffed endotracheal tube is intended to reduce focal pressure on tracheal tissues?",
       "options": [
-        "10 to 15 cmH2O",
-        "25 to 30 cmH2O",
-        "40 to 45 cmH2O",
-        "50 to 60 cmH2O"
+        "A high-volume, low-pressure cuff",
+        "A rigid low-volume, high-pressure cuff",
+        "An uncuffed distal balloon",
+        "A metal-reinforced Murphy eye"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Tracheal capillary perfusion pressure ranges between 25 and 30 cmH2O (20–25 mmHg). Maintaining cuff pressure below 25 to 30 cmH2O ensures a secure seal while preventing tracheal mucosal ischemia, necrosis, and post-extubation stenosis.",
+      "explanation": "The airway lecture describes cuffed tracheal tubes as using high-volume, low-pressure cuffs that disperse force over the tracheal tissues.",
       "citation": "Airway Equipment · Slide 7",
       "topic": "Airway",
       "imageSvg": null,
@@ -4726,17 +4733,17 @@
       "id": "145",
       "set": 2,
       "type": "single",
-      "stem": "During general anesthesia with controlled mechanical ventilation, what is the clinical significance of a sudden, sharp upward deflection ('pigtail' appearance) at the end of the Phase III alveolar plateau just prior to inspiration?",
+      "stem": "According to the monitoring lecture, what can a pigtail capnogram indicate?",
       "options": [
-        "Severe dynamic hyperinflation and breath-stacking in a patient with severe lung compliance mismatch",
-        "Patient spontaneous diaphragmatic effort against the ventilator",
-        "Accumulation of condensed water within the sidestream infrared analyzer trap",
-        "Immediate return of spontaneous circulation during cardiopulmonary resuscitation"
+        "Poor lung compliance or a unique breath-stacking pattern",
+        "A normal Phase I baseline",
+        "Only esophageal intubation",
+        "Only an exhausted CO2 absorber"
       ],
       "answer": [
         0
       ],
-      "explanation": "A pigtail capnogram displays an abrupt terminal upward spike at the end of the alveolar plateau, signaling severe compliance mismatch, uneven alveolar emptying, or air-trapping/breath-stacking.",
+      "explanation": "The lecture describes the pigtail capnogram as a sudden sharp upward deflection just before inspiration that can indicate poor lung compliance or a unique breath-stacking pattern.",
       "citation": "Monitoring · Slide 51",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -5026,18 +5033,18 @@
       "id": "154",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary danger of using a cuffed endotracheal tube in an operating room where nitrous oxide is administered as part of the general anesthetic?",
+      "stem": "During a prolonged anesthetic using nitrous oxide, what cuff-related change does the textbook list as a possible complication?",
       "options": [
-        "Nitrous oxide diffuses rapidly into the compliant cuff, dramatically increasing intra-cuff pressure and risking mucosal necrosis",
-        "Nitrous oxide leaches plasticizers from the PVC tube, causing shaft softening and airway collapse",
-        "Nitrous oxide reacts with moisture in the pilot line to form corrosive nitric acid",
-        "Nitrous oxide causes the cuff pilot balloon valve to seal permanently, preventing deflation"
+        "Increased intracuff pressure",
+        "Complete spontaneous cuff deflation",
+        "Conversion of the cuff to a rigid solid",
+        "Permanent elimination of cuff pressure"
       ],
       "answer": [
         0
       ],
-      "explanation": "Nitrous oxide is 34 times more soluble than nitrogen in blood. It diffuses into air-filled compliant spaces (such as the ETT cuff) faster than nitrogen can diffuse out, progressively increasing cuff pressure and risking tracheal mucosal ischemia.",
-      "citation": "Medical Gas Systems in Anesthesia · Slides 14, 50; Airway Equipment · Slide 7",
+      "explanation": "The textbook lists increased intracuff pressure during prolonged procedures using nitrous oxide or carbon dioxide among airway-device complications.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 59, p. 1566",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -5046,14 +5053,13 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Medical Gas Systems in Anesthesia",
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "14, 50",
-        "citationFormat": "slides"
+        "pdfPages": "1566",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slides 14, 50"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "PDF p. 1566"
     },
     {
       "id": "155",
@@ -5226,18 +5232,18 @@
       "id": "160",
       "set": 2,
       "type": "single",
-      "stem": "What is the primary reason why carbon dioxide absorbents containing potassium hydroxide (KOH) have been largely eliminated from modern clinical practice?",
+      "stem": "Why does the textbook recommend carbon dioxide absorbents with lower or no potassium hydroxide content?",
       "options": [
-        "KOH is chemically incapable of forming intermediate carbonates with carbonic acid",
-        "KOH strongly accelerates both Compound A formation and carbon monoxide generation",
-        "KOH causes irreversible bleaching of ethyl violet dye within 10 minutes of use",
-        "KOH increases breathing circuit resistance by melting at 20°C"
+        "Potassium hydroxide is implicated in carbon monoxide and Compound A production",
+        "Potassium hydroxide prevents carbon dioxide absorption",
+        "Potassium hydroxide eliminates all water from the canister immediately",
+        "Potassium hydroxide makes the canister unable to change color"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Strong base activators, particularly KOH (and to a lesser degree NaOH), catalyze the degradation of volatile anesthetics into Compound A (from sevoflurane) and carbon monoxide (from desflurane, enflurane, isoflurane). Modern absorbents minimize or eliminate KOH to improve safety.",
-      "citation": "CO₂ & Scavenging · Slides 2, 6, 7",
+      "explanation": "The textbook notes that potassium hydroxide is used less frequently because it has been implicated in reactions that produce carbon monoxide and Compound A, and it recommends absorbents with lower or no strong-base content, particularly KOH.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 16, pp. 272-273",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -5246,30 +5252,31 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "CO₂ Absorbents and Scavenging"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "2, 6, 7",
-        "citationFormat": "slides"
+        "pages": "272-273",
+        "pdfPages": "326-327",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slides 2, 6, 7"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 16 · pp. 272-273 · PDF pp. 326-327"
     },
     {
       "id": "161",
       "set": 2,
       "type": "single",
-      "stem": "During a rapid sequence induction, an assistant applies cricoid pressure (Sellick maneuver). What is the anatomical objective of this intervention?",
+      "stem": "What is the intended anatomical effect of cricoid pressure during rapid-sequence induction?",
       "options": [
-        "Compresses the cartilaginous trachea to elevate the vocal cords into the field of view",
-        "Compresses the esophagus between the cricoid cartilage and the sixth cervical vertebra to prevent passive gastric regurgitation",
-        "Displaces the thyroid cartilage laterally to facilitate bougie advancement",
-        "Tensions the glossoepiglottic ligament to elevate the epiglottis indirectly"
+        "Posterior displacement of the cricoid cartilage against the cervical vertebrae to reduce regurgitation risk",
+        "Anterior displacement of the thyroid cartilage to open the esophagus",
+        "Direct compression of the trachea to stop ventilation",
+        "Rotation of the larynx to the left to expose the glottis"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Cricoid pressure compresses the non-rigid esophagus posteriorly against the sixth cervical vertebral body using the complete, circumferential ring of the cricoid cartilage, preventing passive regurgitation of gastric contents into the pharynx.",
-      "citation": "Airway Equipment · Slide 3",
+      "explanation": "The textbook describes cricoid pressure as posterior displacement of the cricoid cartilage against the cervical vertebrae with the intent of reducing regurgitation and aspiration risk. It also notes ongoing debate regarding the exact anatomic mechanism.",
+      "citation": "Nurse Anesthesia, 7th ed. · Chapter 24, p. 542",
       "topic": "Airway",
       "imageSvg": null,
       "image": null,
@@ -5278,13 +5285,14 @@
       "supp": null,
       "sourceMeta": {
         "families": [
-          "Airway Equipment"
+          "Nurse Anesthesia, 7th ed."
         ],
-        "slides": "3",
-        "citationFormat": "slides"
+        "pages": "542",
+        "pdfPages": "542",
+        "citationFormat": "textbook"
       },
-      "sourceTitle": "Airway Equipment",
-      "sourceLocator": "Slide 3"
+      "sourceTitle": "Nurse Anesthesia, 7th ed.",
+      "sourceLocator": "Chapter 24 · p. 542 · PDF p. 542"
     },
     {
       "id": "162",
