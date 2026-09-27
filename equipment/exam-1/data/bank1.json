@@ -6599,7 +6599,7 @@
       "answer": [
         2
       ],
-      "explanation": "Consumption rate = 6 (%) x 2 (L/min) x 3 = 36 mL/hr[cite: 2]. For a 3-hour procedure: 36 mL/hr x 3 hr = 108 mL of liquid agent[cite: 2].",
+      "explanation": "Consumption rate = 6 (%) x 2 (L/min) x 3 = 36 mL/hr. For a 3-hour procedure: 36 mL/hr x 3 hr = 108 mL of liquid agent.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 52",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -6631,7 +6631,7 @@
       "answer": [
         2
       ],
-      "explanation": "As shown in the variable bypass calculation, 2079 mL/min entering the vaporizer splits into 2000 mL/min bypass and 79 mL/min sump flow[cite: 2]. 2000 / 79 = 25.3:1 (approximately a 25:1 splitting ratio)[cite: 2].",
+      "explanation": "As shown in the variable bypass calculation, 2079 mL/min entering the vaporizer splits into 2000 mL/min bypass and 79 mL/min sump flow. 2000 / 79 = 25.3:1 (approximately a 25:1 splitting ratio).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 55",
       "topic": "Medical Gases",
       "imageSvg": "<svg width=\"340\" height=\"150\" viewBox=\"0 0 340 150\" style=\"background:#fff; border:1px solid #cbd5e0; border-radius:6px;\">\n      <line x1=\"30\" y1=\"40\" x2=\"100\" y2=\"40\" stroke=\"#2b6cb0\" stroke-width=\"4\"/>\n      <text x=\"30\" y=\"30\" font-size=\"10\" fill=\"#2b6cb0\" font-weight=\"bold\">Inflow: 2079 mL/min</text>\n      <line x1=\"100\" y1=\"40\" x2=\"260\" y2=\"40\" stroke=\"#718096\" stroke-width=\"3\"/>\n      <text x=\"130\" y=\"32\" font-size=\"10\" fill=\"#4a5568\">Bypass: 2000 mL/min</text>\n      <line x1=\"100\" y1=\"40\" x2=\"100\" y2=\"100\" stroke=\"#d69e2e\" stroke-width=\"3\"/>\n      <line x1=\"100\" y1=\"100\" x2=\"220\" y2=\"100\" stroke=\"#d69e2e\" stroke-width=\"3\"/>\n      <line x1=\"220\" y1=\"100\" x2=\"220\" y2=\"40\" stroke=\"#d69e2e\" stroke-width=\"3\"/>\n      <text x=\"120\" y=\"115\" font-size=\"10\" fill=\"#b7791f\" font-weight=\"bold\">Sump: 79 mL/min (21% vapor)</text>\n      <line x1=\"260\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#2b6cb0\" stroke-width=\"4\"/>\n      <text x=\"240\" y=\"25\" font-size=\"10\" fill=\"#2b6cb0\" font-weight=\"bold\">Outflow: 1% Sevo</text>\n    </svg>",
@@ -6667,7 +6667,7 @@
         1,
         2
       ],
-      "explanation": "Decreased EtCO2 occurs with increased dead space (pulmonary embolism), decreased pulmonary blood flow (hypovolemic/hemorrhagic shock), or decreased cellular CO2 production (hypothermia)[cite: 3]. Aortic unclamping, absorbent exhaustion, and bicarbonate boluses increase EtCO2[cite: 3].",
+      "explanation": "Decreased EtCO2 occurs with increased dead space (pulmonary embolism), decreased pulmonary blood flow (hypovolemic/hemorrhagic shock), or decreased cellular CO2 production (hypothermia). Aortic unclamping, absorbent exhaustion, and bicarbonate boluses increase EtCO2.",
       "citation": "Monitoring · Slides 41, 43, 50",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -6699,7 +6699,7 @@
       "answer": [
         0
       ],
-      "explanation": "An unexplained rapid rise in EtCO2 is the earliest and most sensitive sign of Malignant Hyperthermia[cite: 3]. Hyperthermia itself is a late sign[cite: 3]. Treatment with dantrolene, discontinuing triggers, hyperventilation with 100% O2, and activating the MH protocol must begin immediately without waiting for temperature elevation[cite: 3].",
+      "explanation": "An unexplained rapid rise in EtCO2 is the earliest and most sensitive sign of Malignant Hyperthermia. Hyperthermia itself is a late sign. Treatment with dantrolene, discontinuing triggers, hyperventilation with 100% O2, and activating the MH protocol must begin immediately without waiting for temperature elevation.",
       "citation": "Monitoring · Slides 43, 50, 82, 84",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -6731,7 +6731,7 @@
       "answer": [
         0
       ],
-      "explanation": "Desflurane has a boiling point of 22.8°C and an extremely high vapor pressure (669 mmHg at 20°C)[cite: 2]. In a standard vaporizer, it would boil uncontrollably at operating room temperatures[cite: 2]. The Tec 6 electrically heats desflurane to 39°C and pressurizes the sump to 1500 mmHg (2 atm) to inject pure vapor into the fresh gas stream, requiring electrical power[cite: 2].",
+      "explanation": "Desflurane has a boiling point of 22.8°C and an extremely high vapor pressure (669 mmHg at 20°C). In a standard vaporizer, it would boil uncontrollably at operating room temperatures. The Tec 6 electrically heats desflurane to 39°C and pressurizes the sump to 1500 mmHg (2 atm) to inject pure vapor into the fresh gas stream, requiring electrical power.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 60, 65",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -6766,7 +6766,7 @@
         1,
         5
       ],
-      "explanation": "ASA Standard 2.3 mandates continuous ECG display and continuous circulatory evaluation by pulse palpation, auscultation, intra-arterial tracing, ultrasound, or pulse plethysmography/oximetry[cite: 3]. NIBP must be evaluated at least every 5 minutes, not every 15[cite: 3].",
+      "explanation": "ASA Standard 2.3 mandates continuous ECG display and continuous circulatory evaluation by pulse palpation, auscultation, intra-arterial tracing, ultrasound, or pulse plethysmography/oximetry. NIBP must be evaluated at least every 5 minutes, not every 15.",
       "citation": "Monitoring · Slide 13",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -6798,7 +6798,7 @@
       "answer": [
         1
       ],
-      "explanation": "Obstructive diseases (emphysema, COPD, asthma) cause expiratory airflow limitation and air trapping, manifesting on the F-V loop as an indented, scooped-out (coved) expiratory curve with prolonged expiration[cite: 3]. Restrictive disease shows a narrow, tall 'witch's hat' shape[cite: 3]. Fixed obstructions produce flattened plateaus on both limbs[cite: 3].",
+      "explanation": "Obstructive diseases (emphysema, COPD, asthma) cause expiratory airflow limitation and air trapping, manifesting on the F-V loop as an indented, scooped-out (coved) expiratory curve with prolonged expiration. Restrictive disease shows a narrow, tall 'witch's hat' shape. Fixed obstructions produce flattened plateaus on both limbs.",
       "citation": "Monitoring · Slides 30, 31",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -6830,7 +6830,7 @@
       "answer": [
         0
       ],
-      "explanation": "Bulk cryogenic vacuum-insulated vessels operate at ~ -160°C and maintain head pressure with safety relief valves that vent vapor to the atmosphere when internal pressures exceed design thresholds (typically ~85 psig)[cite: 2].",
+      "explanation": "Bulk cryogenic vacuum-insulated vessels operate at ~ -160°C and maintain head pressure with safety relief valves that vent vapor to the atmosphere when internal pressures exceed design thresholds (typically ~85 psig).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 32",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -6862,7 +6862,7 @@
       "answer": [
         1
       ],
-      "explanation": "The curved Macintosh blade is advanced into the vallecula anterior to the epiglottis[cite: 4]. Elevating the blade tensions the glossoepiglottic ligament, which indirectly lifts the epiglottis forward to expose the vocal cords[cite: 4].",
+      "explanation": "The curved Macintosh blade is advanced into the vallecula anterior to the epiglottis. Elevating the blade tensions the glossoepiglottic ligament, which indirectly lifts the epiglottis forward to expose the vocal cords.",
       "citation": "Airway Equipment · Slide 10",
       "topic": "Airway",
       "imageSvg": null,
@@ -6898,7 +6898,7 @@
         1,
         5
       ],
-      "explanation": "Compound A production from sevoflurane is accelerated by warm, dry absorbent, high agent concentrations, and low fresh gas flows[cite: 1]. High flows, adequate hydration (~15%), and strong-base-free absorbents reduce Compound A accumulation[cite: 1].",
+      "explanation": "Compound A production from sevoflurane is accelerated by warm, dry absorbent, high agent concentrations, and low fresh gas flows. High flows, adequate hydration (~15%), and strong-base-free absorbents reduce Compound A accumulation.",
       "citation": "CO₂ & Scavenging · Slide 6",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -6930,7 +6930,7 @@
       "answer": [
         0
       ],
-      "explanation": "In head-down (Trendelenburg) positions, the brain sits below the level of the heart/right atrium[cite: 3]. Hydrostatic pressure increases intravascular pressure in vessels below the transducer[cite: 3]. Therefore, a transducer at the right atrium underestimates actual arterial pressure delivered to the cerebral circulation[cite: 3].",
+      "explanation": "In head-down (Trendelenburg) positions, the brain sits below the level of the heart/right atrium. Hydrostatic pressure increases intravascular pressure in vessels below the transducer. Therefore, a transducer at the right atrium underestimates actual arterial pressure delivered to the cerebral circulation.",
       "citation": "Monitoring · Slides 66, 70",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -6962,7 +6962,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ethyl violet is the standard indicator dye added to soda lime; it is white when fresh and turns blue-violet as hydroxides are converted to carbonates and pH falls below alkaline levels[cite: 1].",
+      "explanation": "Ethyl violet is the standard indicator dye added to soda lime; it is white when fresh and turns blue-violet as hydroxides are converted to carbonates and pH falls below alkaline levels.",
       "citation": "CO₂ & Scavenging · Slide 4",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -6997,7 +6997,7 @@
         2,
         5
       ],
-      "explanation": "DISS utilizes nationally standardized, diameter-specific threaded connections to prevent pipeline cross-connections at machine and wall terminal inlets[cite: 2]. PISS governs high-pressure cylinders[cite: 2]. Purple is waste gas and white is central vacuum[cite: 2].",
+      "explanation": "DISS utilizes nationally standardized, diameter-specific threaded connections to prevent pipeline cross-connections at machine and wall terminal inlets. PISS governs high-pressure cylinders. Purple is waste gas and white is central vacuum.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 30",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -7029,7 +7029,7 @@
       "answer": [
         0
       ],
-      "explanation": "An elevated capnogram baseline during inspiration (Phase I > 0 mmHg) confirms rebreathing of carbon dioxide[cite: 3]. This occurs when absorbent is exhausted, fresh gas flow is inadequate, or inspiratory/expiratory unidirectional valves fail[cite: 1, 3].",
+      "explanation": "An elevated capnogram baseline during inspiration (Phase I > 0 mmHg) confirms rebreathing of carbon dioxide. This occurs when absorbent is exhausted, fresh gas flow is inadequate, or inspiratory/expiratory unidirectional valves fail[cite: 1, 3].",
       "citation": "Monitoring · Slides 44, 50, 51",
       "topic": "Monitoring",
       "imageSvg": "<svg width=\"320\" height=\"150\" viewBox=\"0 0 320 150\" style=\"background:#1a202c; border-radius:6px;\">\n      <line x1=\"30\" y1=\"20\" x2=\"300\" y2=\"20\" stroke=\"#2d3748\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/>\n      <line x1=\"30\" y1=\"70\" x2=\"300\" y2=\"70\" stroke=\"#2d3748\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/>\n      <line x1=\"30\" y1=\"120\" x2=\"300\" y2=\"120\" stroke=\"#4a5568\" stroke-width=\"1.5\"/>\n      <text x=\"5\" y=\"25\" font-size=\"10\" fill=\"#a0aec0\">40-</text>\n      <text x=\"5\" y=\"75\" font-size=\"10\" fill=\"#a0aec0\">20-</text>\n      <text x=\"12\" y=\"123\" font-size=\"10\" fill=\"#a0aec0\">0-</text>\n      <path d=\"M 35 95 L 65 95 L 75 35 L 125 30 L 135 95 L 175 95 L 185 35 L 235 30 L 245 95 L 285 95\" fill=\"none\" stroke=\"#ecc94b\" stroke-width=\"2.5\"/>\n      <line x1=\"150\" y1=\"120\" x2=\"150\" y2=\"95\" stroke=\"#e53e3e\" stroke-width=\"2\"/>\n      <text x=\"160\" y=\"112\" font-size=\"10\" fill=\"#fed7d7\" font-weight=\"bold\">Baseline > 0 mmHg</text>\n    </svg>",
@@ -7061,7 +7061,7 @@
       "answer": [
         3
       ],
-      "explanation": "The critical temperature of N2O is +36.4°C[cite: 2]. Because this is above room temperature (20°C), compressed N2O in a cylinder remains a liquid in equilibrium with vapor[cite: 2]. Oxygen is -118.6°C and CO2 is +31.0°C[cite: 2].",
+      "explanation": "The critical temperature of N2O is +36.4°C. Because this is above room temperature (20°C), compressed N2O in a cylinder remains a liquid in equilibrium with vapor. Oxygen is -118.6°C and CO2 is +31.0°C.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 14",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -7097,7 +7097,7 @@
         2,
         5
       ],
-      "explanation": "Excessive cuff pressure (>30 cmH2O) exceeds mucosal capillary perfusion pressure, causing ischemia[cite: 4]. Indicators include a tense pilot balloon, manometer readings >30 cmH2O, and postoperative sore throat, hoarseness, or stenosis[cite: 4]. Leaks and open loops indicate underinflation, not overinflation[cite: 3].",
+      "explanation": "Excessive cuff pressure (>30 cmH2O) exceeds mucosal capillary perfusion pressure, causing ischemia. Indicators include a tense pilot balloon, manometer readings >30 cmH2O, and postoperative sore throat, hoarseness, or stenosis. Leaks and open loops indicate underinflation, not overinflation.",
       "citation": "Airway Equipment · Slide 7; Monitoring · Slide 29",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -7130,7 +7130,7 @@
       "answer": [
         0
       ],
-      "explanation": "The O2 knob is larger and fluted so it can be identified by touch[cite: 2]. Placing oxygen furthest downstream (to the right, closest to the outlet) ensures that leaks in upstream flowmeters vent other gases into the room, preserving oxygen delivery[cite: 2].",
+      "explanation": "The O2 knob is larger and fluted so it can be identified by touch. Placing oxygen furthest downstream (to the right, closest to the outlet) ensures that leaks in upstream flowmeters vent other gases into the room, preserving oxygen delivery.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 40, 41",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -7162,7 +7162,7 @@
       "answer": [
         2
       ],
-      "explanation": "A parallel increase in both PIP and Pplat reflects a decrease in pulmonary compliance (such as tension pneumothorax, pulmonary edema, mainstem intubation, or abdominal insufflation)[cite: 3]. Tube kinking, secretions, and bronchospasm increase airway resistance, elevating PIP alone while Pplat remains unchanged[cite: 3].",
+      "explanation": "A parallel increase in both PIP and Pplat reflects a decrease in pulmonary compliance (such as tension pneumothorax, pulmonary edema, mainstem intubation, or abdominal insufflation). Tube kinking, secretions, and bronchospasm increase airway resistance, elevating PIP alone while Pplat remains unchanged.",
       "citation": "Monitoring · Slides 26, 32",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -7197,7 +7197,7 @@
         4,
         5
       ],
-      "explanation": "Carbon monoxide generation requires a difluoromethyl ether moiety (-O-CHF2), found in Desflurane, Enflurane, and Isoflurane[cite: 1]. Sevoflurane and Halothane lack this structure and do not produce CO[cite: 1].",
+      "explanation": "Carbon monoxide generation requires a difluoromethyl ether moiety (-O-CHF2), found in Desflurane, Enflurane, and Isoflurane. Sevoflurane and Halothane lack this structure and do not produce CO.",
       "citation": "CO₂ & Scavenging · Slides 6, 7",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -7229,7 +7229,7 @@
       "answer": [
         0
       ],
-      "explanation": "In a diphasic cylinder, liquid vaporizes to maintain equilibrium vapor pressure (745 psig at 20°C) until the liquid is entirely gone[cite: 2]. Therefore, weighing the cylinder and subtracting the tare weight is the only accurate way to determine remaining liquid volume[cite: 2].",
+      "explanation": "In a diphasic cylinder, liquid vaporizes to maintain equilibrium vapor pressure (745 psig at 20°C) until the liquid is entirely gone. Therefore, weighing the cylinder and subtracting the tare weight is the only accurate way to determine remaining liquid volume.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 14",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -7261,7 +7261,7 @@
       "answer": [
         2
       ],
-      "explanation": "Nonrecirculating ventilation systems discard 100% of room air to the outside, and a rate of 15 or more total air exchanges per hour is recommended[cite: 1].",
+      "explanation": "Nonrecirculating ventilation systems discard 100% of room air to the outside, and a rate of 15 or more total air exchanges per hour is recommended.",
       "citation": "CO₂ & Scavenging · Slide 16",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -7297,7 +7297,7 @@
         4,
         5
       ],
-      "explanation": "The intermediate system (14–55 psig) contains pipeline inlets, check valves, gauges, the oxygen fail-safe valve, second-stage regulators, auxiliary O2 flowmeters, and the O2 flush valve[cite: 2]. Cylinder yokes and Bourdon gauges are high-pressure; Thorpe tubes are low-pressure[cite: 2].",
+      "explanation": "The intermediate system (14–55 psig) contains pipeline inlets, check valves, gauges, the oxygen fail-safe valve, second-stage regulators, auxiliary O2 flowmeters, and the O2 flush valve. Cylinder yokes and Bourdon gauges are high-pressure; Thorpe tubes are low-pressure.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 25, 26, 76",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -7329,7 +7329,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dynamic fidelity requires high natural frequency and adequate damping[cite: 3]. Underdamping causes ringing and systolic overshoot[cite: 3]. Removing excess tubing and stopcocks, eliminating compliant elements, and purging microscopic air bubbles improves dynamic response[cite: 3].",
+      "explanation": "Dynamic fidelity requires high natural frequency and adequate damping. Underdamping causes ringing and systolic overshoot. Removing excess tubing and stopcocks, eliminating compliant elements, and purging microscopic air bubbles improves dynamic response.",
       "citation": "Monitoring · Slides 65, 69",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -7361,7 +7361,7 @@
       "answer": [
         0
       ],
-      "explanation": "During mechanical inspiration, the ventilator pressure relief valve is closed[cite: 1]. Depressing the O2 flush valve delivers 35–75 L/min at 40–50 psig directly to the patient circuit, transmitting massive pressures into the lungs and risking tension pneumothorax or barotrauma[cite: 1, 2].",
+      "explanation": "During mechanical inspiration, the ventilator pressure relief valve is closed. Depressing the O2 flush valve delivers 35–75 L/min at 40–50 psig directly to the patient circuit, transmitting massive pressures into the lungs and risking tension pneumothorax or barotrauma[cite: 1, 2].",
       "citation": "Medical Gas Systems in Anesthesia · Slides 36, 37; CO₂ & Scavenging · Slide 19",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -7397,7 +7397,7 @@
         0,
         3
       ],
-      "explanation": "Breathing system O2 is measured primarily by paramagnetic analyzers (oxygen is paramagnetic and drawn into magnetic fields) or galvanic fuel cells (electrochemical reduction of O2 generates current)[cite: 3]. Infrared analysis cannot measure O2 because O2 is a nonpolar diatomic molecule[cite: 3].",
+      "explanation": "Breathing system O2 is measured primarily by paramagnetic analyzers (oxygen is paramagnetic and drawn into magnetic fields) or galvanic fuel cells (electrochemical reduction of O2 generates current). Infrared analysis cannot measure O2 because O2 is a nonpolar diatomic molecule.",
       "citation": "Monitoring · Slides 34, 35, 40",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -7429,7 +7429,7 @@
       "answer": [
         1
       ],
-      "explanation": "Tracheal entry produces palpable clicks over cartilaginous rings and stops at the carina (~25–30 cm)[cite: 4]. Advancing smoothly past 40–45 cm without clicks or resistance indicates entry into the compliant, smooth-walled esophagus[cite: 4].",
+      "explanation": "Tracheal entry produces palpable clicks over cartilaginous rings and stops at the carina (~25–30 cm). Advancing smoothly past 40–45 cm without clicks or resistance indicates entry into the compliant, smooth-walled esophagus.",
       "citation": "Airway Equipment · Slide 9",
       "topic": "Airway",
       "imageSvg": null,
@@ -7461,7 +7461,7 @@
       "answer": [
         0
       ],
-      "explanation": "Medical Air uses pin positions 1 and 5 under the Pin Index Safety System[cite: 2]. Oxygen is 2 and 5; Nitrous Oxide is 3 and 5[cite: 2].",
+      "explanation": "Medical Air uses pin positions 1 and 5 under the Pin Index Safety System. Oxygen is 2 and 5; Nitrous Oxide is 3 and 5.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 18",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -7493,7 +7493,7 @@
       "answer": [
         0
       ],
-      "explanation": "A downward notch in Phase III is a curare cleft, representing patient spontaneous diaphragmatic effort as muscle relaxation wanes[cite: 3]. The proper intervention is to deepen anesthesia or redose neuromuscular blocker[cite: 3].",
+      "explanation": "A downward notch in Phase III is a curare cleft, representing patient spontaneous diaphragmatic effort as muscle relaxation wanes. The proper intervention is to deepen anesthesia or redose neuromuscular blocker.",
       "citation": "Monitoring · Slides 47, 51",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -7529,7 +7529,7 @@
         2,
         5
       ],
-      "explanation": "An isolated increase in PIP without a change in Pplat reflects increased airway resistance (e.g., kinked tube, bronchospasm, secretions, foreign body)[cite: 3]. Mainstem intubation, pulmonary edema, and peritoneal insufflation decrease compliance, causing both PIP and Pplat to rise simultaneously[cite: 3].",
+      "explanation": "An isolated increase in PIP without a change in Pplat reflects increased airway resistance (e.g., kinked tube, bronchospasm, secretions, foreign body). Mainstem intubation, pulmonary edema, and peritoneal insufflation decrease compliance, causing both PIP and Pplat to rise simultaneously.",
       "citation": "Monitoring · Slides 26, 32",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -7561,7 +7561,7 @@
       "answer": [
         3
       ],
-      "explanation": "At 20°C, the vapor pressure of Desflurane is 669 mmHg[cite: 2]. Sevoflurane is 160 mmHg, Isoflurane is 240 mmHg, and Halothane is 244 mmHg[cite: 2].",
+      "explanation": "At 20°C, the vapor pressure of Desflurane is 669 mmHg. Sevoflurane is 160 mmHg, Isoflurane is 240 mmHg, and Halothane is 244 mmHg.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -7593,7 +7593,7 @@
       "answer": [
         1
       ],
-      "explanation": "ASA Standard 2.3 applies to all anesthetics (general, regional, and MAC) and mandates that arterial blood pressure and heart rate must be determined and evaluated at least every five minutes[cite: 3].",
+      "explanation": "ASA Standard 2.3 applies to all anesthetics (general, regional, and MAC) and mandates that arterial blood pressure and heart rate must be determined and evaluated at least every five minutes.",
       "citation": "Monitoring · Slides 13, 60",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -7628,7 +7628,7 @@
         1,
         2
       ],
-      "explanation": "The high-pressure system includes components upstream of the first-stage regulator: cylinder yokes, check valves, Bourdon gauges, and first-stage regulators[cite: 2]. DISS inlets, second-stage regulators, and auxiliary flowmeters are intermediate-pressure[cite: 2].",
+      "explanation": "The high-pressure system includes components upstream of the first-stage regulator: cylinder yokes, check valves, Bourdon gauges, and first-stage regulators. DISS inlets, second-stage regulators, and auxiliary flowmeters are intermediate-pressure.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 5, 6, 76",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -7660,7 +7660,7 @@
       "answer": [
         0
       ],
-      "explanation": "A cuff that is too narrow requires higher inflation pressure to compress the artery, resulting in falsely elevated systolic and diastolic blood pressure readings[cite: 3].",
+      "explanation": "A cuff that is too narrow requires higher inflation pressure to compress the artery, resulting in falsely elevated systolic and diastolic blood pressure readings.",
       "citation": "Monitoring · Slides 61, 62, 90",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -7692,7 +7692,7 @@
       "answer": [
         0
       ],
-      "explanation": "Second-stage regulators receive gas from the pipeline or first-stage regulator and reduce pressure further (to 14–16 psig for O2) to dampen line surges and provide steady pressure to the flow control needle valves[cite: 2].",
+      "explanation": "Second-stage regulators receive gas from the pipeline or first-stage regulator and reduce pressure further (to 14–16 psig for O2) to dampen line surges and provide steady pressure to the flow control needle valves.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 26, 33",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -7728,7 +7728,7 @@
         4,
         5
       ],
-      "explanation": "Armored tubes feature an embedded wire coil that resists kinking and collapse when flexed during head, neck, or prone surgeries[cite: 4]. Preformed curves belong to RAE tubes[cite: 4]. Armored tubes are flammable and not laser-resistant[cite: 4].",
+      "explanation": "Armored tubes feature an embedded wire coil that resists kinking and collapse when flexed during head, neck, or prone surgeries. Preformed curves belong to RAE tubes. Armored tubes are flammable and not laser-resistant.",
       "citation": "Airway Equipment · Slide 7",
       "topic": "Airway",
       "imageSvg": null,
@@ -7760,7 +7760,7 @@
       "answer": [
         0
       ],
-      "explanation": "Pulse oximeters perform plethysmographic analysis to distinguish pulsatile arterial flow from nonpulsatile tissue[cite: 3]. Motion, shivering, and hypoperfusion degrade signal fidelity, leading to inaccurate readings or loss of pulse tracking[cite: 3].",
+      "explanation": "Pulse oximeters perform plethysmographic analysis to distinguish pulsatile arterial flow from nonpulsatile tissue. Motion, shivering, and hypoperfusion degrade signal fidelity, leading to inaccurate readings or loss of pulse tracking.",
       "citation": "Monitoring · Slides 74, 78",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -7792,7 +7792,7 @@
       "answer": [
         0
       ],
-      "explanation": "Calcium hydroxide constitutes ~80% of soda lime[cite: 1]. It reacts with sodium and potassium carbonates to precipitate calcium carbonate and regenerate the hydroxide catalysts[cite: 1].",
+      "explanation": "Calcium hydroxide constitutes ~80% of soda lime. It reacts with sodium and potassium carbonates to precipitate calcium carbonate and regenerate the hydroxide catalysts.",
       "citation": "CO₂ & Scavenging · Slides 2, 3",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -7827,7 +7827,7 @@
         1,
         5
       ],
-      "explanation": "Carboxyhemoglobin (COHb) is formed by smoke inhalation or by degradation of volatile difluoromethyl ethers (desflurane > enflurane > isoflurane) passing over dry absorbent[cite: 1, 3]. Benzocaine and prilocaine induce methemoglobinemia, not carboxyhemoglobinemia[cite: 3].",
+      "explanation": "Carboxyhemoglobin (COHb) is formed by smoke inhalation or by degradation of volatile difluoromethyl ethers (desflurane > enflurane > isoflurane) passing over dry absorbent[cite: 1, 3]. Benzocaine and prilocaine induce methemoglobinemia, not carboxyhemoglobinemia.",
       "citation": "CO₂ & Scavenging · Slides 6, 7; Monitoring · Slides 74, 75",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -7860,7 +7860,7 @@
       "answer": [
         0
       ],
-      "explanation": "Nasal airways, nasogastric tubes, and nasotracheal tubes are contraindicated in basilar skull fractures due to the risk of accidental passage through a fractured cribriform plate into the intracranial vault[cite: 4].",
+      "explanation": "Nasal airways, nasogastric tubes, and nasotracheal tubes are contraindicated in basilar skull fractures due to the risk of accidental passage through a fractured cribriform plate into the intracranial vault.",
       "citation": "Airway Equipment · Slide 6",
       "topic": "Airway",
       "imageSvg": null,
@@ -7892,7 +7892,7 @@
       "answer": [
         0
       ],
-      "explanation": "The first-stage regulator reduces variable high cylinder pressure down to approximately 45 psig[cite: 2]. Because pipeline supply enters at 50–55 psig, pipeline gas is consumed preferentially over cylinder reserves[cite: 2].",
+      "explanation": "The first-stage regulator reduces variable high cylinder pressure down to approximately 45 psig. Because pipeline supply enters at 50–55 psig, pipeline gas is consumed preferentially over cylinder reserves.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 24, 33",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -7928,7 +7928,7 @@
         4,
         5
       ],
-      "explanation": "Decreased EtCO2 occurs with esophageal intubation (no pulmonary CO2 delivery), hypothermia (reduced CO2 production), and circuit disconnection[cite: 3]. Hypoventilation, malignant hyperthermia, and tourniquet release increase EtCO2[cite: 3].",
+      "explanation": "Decreased EtCO2 occurs with esophageal intubation (no pulmonary CO2 delivery), hypothermia (reduced CO2 production), and circuit disconnection. Hypoventilation, malignant hyperthermia, and tourniquet release increase EtCO2.",
       "citation": "Monitoring · Slides 43, 50",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -7960,7 +7960,7 @@
       "answer": [
         2
       ],
-      "explanation": "The blood:gas partition coefficient of Isoflurane is 1.46[cite: 2]. Desflurane is 0.42, Sevoflurane is 0.65, and Halothane is 2.50[cite: 2].",
+      "explanation": "The blood:gas partition coefficient of Isoflurane is 1.46. Desflurane is 0.42, Sevoflurane is 0.65, and Halothane is 2.50.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -7992,7 +7992,7 @@
       "answer": [
         0
       ],
-      "explanation": "If a variable bypass vaporizer is tipped, liquid agent enters the bypass channel[cite: 2]. It must be drained and flushed on high FGF at maximum dial setting for 30 minutes until expired gas analysis confirms zero vapor output[cite: 2].",
+      "explanation": "If a variable bypass vaporizer is tipped, liquid agent enters the bypass channel. It must be drained and flushed on high FGF at maximum dial setting for 30 minutes until expired gas analysis confirms zero vapor output.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 71",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -8027,7 +8027,7 @@
         2,
         5
       ],
-      "explanation": "The hypoxic guard links O2 and N2O flow valves to prevent dialing an FiO2 < 25%[cite: 2]. It senses valve mechanics/pressure, NOT gas identity, and cannot protect against crossed pipeline supplies or hypoxic gas tanks[cite: 2].",
+      "explanation": "The hypoxic guard links O2 and N2O flow valves to prevent dialing an FiO2 < 25%. It senses valve mechanics/pressure, NOT gas identity, and cannot protect against crossed pipeline supplies or hypoxic gas tanks.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 45, 46",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -8059,7 +8059,7 @@
       "answer": [
         1
       ],
-      "explanation": "Oxygen uses pin positions 2 and 5 under the Pin Index Safety System[cite: 2].",
+      "explanation": "Oxygen uses pin positions 2 and 5 under the Pin Index Safety System.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 18",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -8091,7 +8091,7 @@
       "answer": [
         0
       ],
-      "explanation": "The straight Miller blade is advanced underneath the epiglottis, directly trapping and lifting its posterior surface to expose the vocal cords[cite: 4].",
+      "explanation": "The straight Miller blade is advanced underneath the epiglottis, directly trapping and lifting its posterior surface to expose the vocal cords.",
       "citation": "Airway Equipment · Slide 10",
       "topic": "Airway",
       "imageSvg": null,
@@ -8127,7 +8127,7 @@
         1,
         3
       ],
-      "explanation": "Low fresh gas flows conserve exhaled moisture and heat, reduce volatile agent consumption, and minimize environmental pollution[cite: 1, 2]. However, low flows require effective CO2 absorption and can increase Compound A accumulation with sevoflurane[cite: 1].",
+      "explanation": "Low fresh gas flows conserve exhaled moisture and heat, reduce volatile agent consumption, and minimize environmental pollution[cite: 1, 2]. However, low flows require effective CO2 absorption and can increase Compound A accumulation with sevoflurane.",
       "citation": "CO₂ & Scavenging · Slides 6, 8, 22, 23",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -8159,7 +8159,7 @@
       "answer": [
         0
       ],
-      "explanation": "Copper kettle vaporizers are non-concentration-calibrated vaporizers[cite: 2]. A dedicated oxygen flow is bubbled through liquid agent to create saturated vapor, requiring manual calculations to determine delivered output[cite: 2].",
+      "explanation": "Copper kettle vaporizers are non-concentration-calibrated vaporizers. A dedicated oxygen flow is bubbled through liquid agent to create saturated vapor, requiring manual calculations to determine delivered output.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 74",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -8191,7 +8191,7 @@
       "answer": [
         1
       ],
-      "explanation": "The cricoid cartilage is the only complete circumferential cartilaginous ring in the upper airway, located immediately inferior to the cricothyroid membrane[cite: 4].",
+      "explanation": "The cricoid cartilage is the only complete circumferential cartilaginous ring in the upper airway, located immediately inferior to the cricothyroid membrane.",
       "citation": "Airway Equipment · Slides 3, 15",
       "topic": "Airway",
       "imageSvg": null,
@@ -8226,7 +8226,7 @@
         4,
         5
       ],
-      "explanation": "Tourniquet release (washout of metabolic acid and CO2) and bicarbonate administration increase CO2 delivery to the lungs, elevating EtCO2[cite: 3]. Embolism, extubation, hypothermia, and cardiac arrest decrease EtCO2[cite: 3].",
+      "explanation": "Tourniquet release (washout of metabolic acid and CO2) and bicarbonate administration increase CO2 delivery to the lungs, elevating EtCO2. Embolism, extubation, hypothermia, and cardiac arrest decrease EtCO2.",
       "citation": "Monitoring · Slides 41, 43, 50",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -8258,7 +8258,7 @@
       "answer": [
         0
       ],
-      "explanation": "External chest compression, surgical pressure, or diaphragmatic twitching can indent the alveolar plateau (Phase III), producing a cleft or notch that mimics a spontaneous breathing effort[cite: 3].",
+      "explanation": "External chest compression, surgical pressure, or diaphragmatic twitching can indent the alveolar plateau (Phase III), producing a cleft or notch that mimics a spontaneous breathing effort.",
       "citation": "Monitoring · Slides 47, 51",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -8290,7 +8290,7 @@
       "answer": [
         0
       ],
-      "explanation": "The oxygen fail-safe valve resides in the nitrous oxide line[cite: 2]. When oxygen supply pressure drops below 25–30 psig, the valve throttles or stops N2O flow (<20 psig) to prevent delivery of a hypoxic gas mixture[cite: 2].",
+      "explanation": "The oxygen fail-safe valve resides in the nitrous oxide line. When oxygen supply pressure drops below 25–30 psig, the valve throttles or stops N2O flow (<20 psig) to prevent delivery of a hypoxic gas mixture.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 34",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -8326,7 +8326,7 @@
         2,
         3
       ],
-      "explanation": "The sniffing position aligns the three airway axes by flexing the lower cervical spine (elevating the occiput 7–10 cm) and extending the head at the atlanto-occipital joint[cite: 4]. Obese patients require ramping (ear-to-sternal notch), not simple head pads[cite: 4].",
+      "explanation": "The sniffing position aligns the three airway axes by flexing the lower cervical spine (elevating the occiput 7–10 cm) and extending the head at the atlanto-occipital joint. Obese patients require ramping (ear-to-sternal notch), not simple head pads.",
       "citation": "Airway Equipment · Slide 3",
       "topic": "Airway",
       "imageSvg": null,
@@ -8358,7 +8358,7 @@
       "answer": [
         0
       ],
-      "explanation": "A full Medical Air E-cylinder contains approximately 625 L of compressed gas at 1900 psig[cite: 2]. Oxygen holds 660 L at 1900–2200 psig, and Nitrous Oxide holds 1590 L at 745 psig[cite: 2].",
+      "explanation": "A full Medical Air E-cylinder contains approximately 625 L of compressed gas at 1900 psig. Oxygen holds 660 L at 1900–2200 psig, and Nitrous Oxide holds 1590 L at 745 psig.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 7, 15",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -8390,7 +8390,7 @@
       "answer": [
         0
       ],
-      "explanation": "Conventional pulse oximeters compare light absorption at 660 nm and 940 nm[cite: 3]. Carboxyhemoglobin absorbs 660 nm red light almost identically to oxyhemoglobin, causing the oximeter to calculate a falsely high functional saturation[cite: 3].",
+      "explanation": "Conventional pulse oximeters compare light absorption at 660 nm and 940 nm. Carboxyhemoglobin absorbs 660 nm red light almost identically to oxyhemoglobin, causing the oximeter to calculate a falsely high functional saturation.",
       "citation": "Monitoring · Slides 74, 75, 76",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -8425,7 +8425,7 @@
         0,
         3
       ],
-      "explanation": "In a 40-year-old at 1 atm, the MAC of Isoflurane is 1.17% and Sevoflurane is 1.80%[cite: 2]. Desflurane is 6.6% and Nitrous Oxide is 104%[cite: 2].",
+      "explanation": "In a 40-year-old at 1 atm, the MAC of Isoflurane is 1.17% and Sevoflurane is 1.80%. Desflurane is 6.6% and Nitrous Oxide is 104%.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -8457,7 +8457,7 @@
       "answer": [
         0
       ],
-      "explanation": "An isolated increase in PIP with an unchanged Pplat signals an increase in airway resistance[cite: 3]. Passing a suction catheter readily identifies and resolves secretions or tube kinking[cite: 3]. Pneumothorax and mainstem intubation alter Pplat[cite: 3].",
+      "explanation": "An isolated increase in PIP with an unchanged Pplat signals an increase in airway resistance. Passing a suction catheter readily identifies and resolves secretions or tube kinking. Pneumothorax and mainstem intubation alter Pplat.",
       "citation": "Monitoring · Slides 26, 32",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -8489,7 +8489,7 @@
       "answer": [
         0
       ],
-      "explanation": "NaOH and KOH function as catalysts to speed the initial neutralization reaction by forming intermediate carbonates; they are subsequently regenerated when reacting with calcium hydroxide[cite: 1].",
+      "explanation": "NaOH and KOH function as catalysts to speed the initial neutralization reaction by forming intermediate carbonates; they are subsequently regenerated when reacting with calcium hydroxide.",
       "citation": "CO₂ & Scavenging · Slides 2, 3",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -8525,7 +8525,7 @@
         3,
         4
       ],
-      "explanation": "Second-generation LMAs incorporate an esophageal drainage channel (permitting stomach decompression) and provide higher seal pressures (>30 cmH2O)[cite: 4]. They do not provide complete protection against aspiration, are not laser-resistant, and remain supraglottic[cite: 4].",
+      "explanation": "Second-generation LMAs incorporate an esophageal drainage channel (permitting stomach decompression) and provide higher seal pressures (>30 cmH2O). They do not provide complete protection against aspiration, are not laser-resistant, and remain supraglottic.",
       "citation": "Airway Equipment · Slide 14",
       "topic": "Airway",
       "imageSvg": null,
@@ -8557,7 +8557,7 @@
       "answer": [
         2
       ],
-      "explanation": "Normal hospital pipeline supply pressure for oxygen, nitrous oxide, and medical air is maintained at approximately 50 to 55 psig[cite: 2].",
+      "explanation": "Normal hospital pipeline supply pressure for oxygen, nitrous oxide, and medical air is maintained at approximately 50 to 55 psig.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 26, 33",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -8589,7 +8589,7 @@
       "answer": [
         0
       ],
-      "explanation": "Stacking two or more washers increases the space between the cylinder valve and the yoke face, allowing the post to sit clear of the index pins and defeating the PISS safety mechanism[cite: 2].",
+      "explanation": "Stacking two or more washers increases the space between the cylinder valve and the yoke face, allowing the post to sit clear of the index pins and defeating the PISS safety mechanism.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 10, 20",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -8624,7 +8624,7 @@
         1,
         2
       ],
-      "explanation": "94% to 99% of OR contamination stems from provider technique[cite: 1]. Pausing fresh gas flows during intubation/disconnections and utilizing active scavenging reduce ambient trace gases by 90%[cite: 1].",
+      "explanation": "94% to 99% of OR contamination stems from provider technique. Pausing fresh gas flows during intubation/disconnections and utilizing active scavenging reduce ambient trace gases by 90%.",
       "citation": "CO₂ & Scavenging · Slides 10, 14",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -8656,7 +8656,7 @@
       "answer": [
         0
       ],
-      "explanation": "A curare cleft is an inspiratory notch in Phase III caused by patient spontaneous diaphragmatic effort as neuromuscular block wanes[cite: 3].",
+      "explanation": "A curare cleft is an inspiratory notch in Phase III caused by patient spontaneous diaphragmatic effort as neuromuscular block wanes.",
       "citation": "Monitoring · Slides 47, 51",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -8688,7 +8688,7 @@
       "answer": [
         1
       ],
-      "explanation": "The critical temperature of oxygen is -118.6°C[cite: 2]. Above this temperature, oxygen can only exist in a gaseous state regardless of applied pressure[cite: 2].",
+      "explanation": "The critical temperature of oxygen is -118.6°C. Above this temperature, oxygen can only exist in a gaseous state regardless of applied pressure.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 11",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -8724,7 +8724,7 @@
         2,
         3
       ],
-      "explanation": "ETT placement is confirmed by clinical assessment (bilateral breath sounds, chest expansion, exhaled tube condensation) and objective continuous EtCO2 across at least 3 consecutive breaths[cite: 3].",
+      "explanation": "ETT placement is confirmed by clinical assessment (bilateral breath sounds, chest expansion, exhaled tube condensation) and objective continuous EtCO2 across at least 3 consecutive breaths.",
       "citation": "Monitoring · Slides 41, 92, 93",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -8756,7 +8756,7 @@
       "answer": [
         0
       ],
-      "explanation": "At low flow rates, the annular space between the float and the tapered tube is tubular, resulting in laminar flow governed primarily by gas viscosity (Poiseuille's law)[cite: 2]. High flow is turbulent and density-dependent[cite: 2].",
+      "explanation": "At low flow rates, the annular space between the float and the tapered tube is tubular, resulting in laminar flow governed primarily by gas viscosity (Poiseuille's law). High flow is turbulent and density-dependent.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 43",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -8788,7 +8788,7 @@
       "answer": [
         0
       ],
-      "explanation": "Cuffs on laser tubes remain combustible[cite: 4]. Inflating them with saline quenches laser strikes, and methylene blue dye provides immediate visual detection of cuff puncture[cite: 4].",
+      "explanation": "Cuffs on laser tubes remain combustible. Inflating them with saline quenches laser strikes, and methylene blue dye provides immediate visual detection of cuff puncture.",
       "citation": "Airway Equipment · Slide 8",
       "topic": "Airway",
       "imageSvg": null,
@@ -8823,7 +8823,7 @@
         1,
         5
       ],
-      "explanation": "An open scavenging interface is valveless and relies on ports open to the atmosphere to prevent positive or negative pressure buildup[cite: 1]. Closed interfaces use dedicated reservoir bags and spring-loaded pop-off/pop-in valves[cite: 1].",
+      "explanation": "An open scavenging interface is valveless and relies on ports open to the atmosphere to prevent positive or negative pressure buildup. Closed interfaces use dedicated reservoir bags and spring-loaded pop-off/pop-in valves.",
       "citation": "CO₂ & Scavenging · Slide 20",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -8855,7 +8855,7 @@
       "answer": [
         2
       ],
-      "explanation": "Nitrous Oxide uses pin positions 3 and 5 under the Pin Index Safety System[cite: 2].",
+      "explanation": "Nitrous Oxide uses pin positions 3 and 5 under the Pin Index Safety System.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 18",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -8887,7 +8887,7 @@
       "answer": [
         0
       ],
-      "explanation": "Radiation (transfer of infrared heat energy from the warm body to cool operating room walls and environment) represents the largest source of heat loss in the surgical patient[cite: 3].",
+      "explanation": "Radiation (transfer of infrared heat energy from the warm body to cool operating room walls and environment) represents the largest source of heat loss in the surgical patient.",
       "citation": "Monitoring · Slide 80",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -8923,7 +8923,7 @@
         3,
         4
       ],
-      "explanation": "Simultaneous elevation of PIP and Pplat reflects decreased static and dynamic compliance (e.g., peritoneal insufflation, mainstem intubation, pulmonary edema)[cite: 3]. Tube kinking, secretions, and high flow elevate PIP alone[cite: 3].",
+      "explanation": "Simultaneous elevation of PIP and Pplat reflects decreased static and dynamic compliance (e.g., peritoneal insufflation, mainstem intubation, pulmonary edema). Tube kinking, secretions, and high flow elevate PIP alone.",
       "citation": "Monitoring · Slides 26, 32",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -8955,7 +8955,7 @@
       "answer": [
         0
       ],
-      "explanation": "At 20°C, the saturated vapor pressure of Sevoflurane is 160 mmHg[cite: 2]. Isoflurane is 240 mmHg, Halothane is 244 mmHg, and Desflurane is 669 mmHg[cite: 2].",
+      "explanation": "At 20°C, the saturated vapor pressure of Sevoflurane is 160 mmHg. Isoflurane is 240 mmHg, Halothane is 244 mmHg, and Desflurane is 669 mmHg.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -8987,7 +8987,7 @@
       "answer": [
         1
       ],
-      "explanation": "NIOSH guidelines mandate that occupational exposure to halogenated anesthetic agents alone shall not exceed a concentration greater than 2 ppm[cite: 1]. Nitrous oxide alone must not exceed 25 ppm[cite: 1].",
+      "explanation": "NIOSH guidelines mandate that occupational exposure to halogenated anesthetic agents alone shall not exceed a concentration greater than 2 ppm. Nitrous oxide alone must not exceed 25 ppm.",
       "citation": "CO₂ & Scavenging · Slides 9, 10",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -9022,7 +9022,7 @@
         2,
         5
       ],
-      "explanation": "The pumping effect is caused by intermittent backpressure fluctuations (from positive-pressure ventilation or depressing the O2 flush valve) compressing gas back into the vaporizing chamber, transiently increasing delivered output[cite: 2].",
+      "explanation": "The pumping effect is caused by intermittent backpressure fluctuations (from positive-pressure ventilation or depressing the O2 flush valve) compressing gas back into the vaporizing chamber, transiently increasing delivered output.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 72",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -9054,7 +9054,7 @@
       "answer": [
         2
       ],
-      "explanation": "The oxygen flush valve delivers unmetered pure O2 directly to the common gas outlet at a rate of 35–75 L/min at intermediate pressure (40–50 psig), completely bypassing flowmeters and vaporizers[cite: 2].",
+      "explanation": "The oxygen flush valve delivers unmetered pure O2 directly to the common gas outlet at a rate of 35–75 L/min at intermediate pressure (40–50 psig), completely bypassing flowmeters and vaporizers.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 36",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -9086,7 +9086,7 @@
       "answer": [
         1
       ],
-      "explanation": "The dicrotic notch marks the closure of the aortic valve and signifies the transition from ventricular systole to diastole[cite: 3].",
+      "explanation": "The dicrotic notch marks the closure of the aortic valve and signifies the transition from ventricular systole to diastole.",
       "citation": "Monitoring · Slide 72",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -9122,7 +9122,7 @@
         3,
         4
       ],
-      "explanation": "An OPA is sized corner-of-mouth to angle-of-mandible, its concavity lifts the tongue, and it aids mask seal in edentulous patients[cite: 4]. NPAs are better tolerated awake; OPAs stimulate reflexes/laryngospasm if light[cite: 4].",
+      "explanation": "An OPA is sized corner-of-mouth to angle-of-mandible, its concavity lifts the tongue, and it aids mask seal in edentulous patients. NPAs are better tolerated awake; OPAs stimulate reflexes/laryngospasm if light.",
       "citation": "Airway Equipment · Slide 5",
       "topic": "Airway",
       "imageSvg": null,
@@ -9154,7 +9154,7 @@
       "answer": [
         0
       ],
-      "explanation": "A standard medical oxygen E-cylinder contains ~660 L (range 625–700 L) at a full service pressure of 1900–2200 psig[cite: 2].",
+      "explanation": "A standard medical oxygen E-cylinder contains ~660 L (range 625–700 L) at a full service pressure of 1900–2200 psig.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 7, 12",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -9186,7 +9186,7 @@
       "answer": [
         1
       ],
-      "explanation": "According to Landesberg et al., lead V3 is the single most sensitive lead for ischemia detection (86.8%), followed by V4 (78.9%) and V5 (65.8%)[cite: 3]. Lead II is preferred for rhythm analysis[cite: 3].",
+      "explanation": "According to Landesberg et al., lead V3 is the single most sensitive lead for ischemia detection (86.8%), followed by V4 (78.9%) and V5 (65.8%). Lead II is preferred for rhythm analysis.",
       "citation": "Monitoring · Slides 57, 58",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -9221,7 +9221,7 @@
         4,
         5
       ],
-      "explanation": "The low-pressure system extends from downstream of the flow control needle valves to the common gas outlet, containing flowmeters, vaporizers, pressure relief valves, and outlet check valves[cite: 2]. Regulators and gauges belong to high/intermediate systems[cite: 2].",
+      "explanation": "The low-pressure system extends from downstream of the flow control needle valves to the common gas outlet, containing flowmeters, vaporizers, pressure relief valves, and outlet check valves. Regulators and gauges belong to high/intermediate systems.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 38, 39",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -9253,7 +9253,7 @@
       "answer": [
         0
       ],
-      "explanation": "Airflow obstruction and bronchospasm slow expiratory alveolar emptying, producing a prolonged Phase II upstroke and an upwardly tilted Phase III plateau known as the classic 'shark-fin' waveform[cite: 3].",
+      "explanation": "Airflow obstruction and bronchospasm slow expiratory alveolar emptying, producing a prolonged Phase II upstroke and an upwardly tilted Phase III plateau known as the classic 'shark-fin' waveform.",
       "citation": "Monitoring · Slides 45, 46, 51",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -9285,7 +9285,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ramping aligns the upper airway axes in obese patients by elevating the head, neck, and shoulders until the external auditory meatus is horizontally level with the sternal notch[cite: 4].",
+      "explanation": "Ramping aligns the upper airway axes in obese patients by elevating the head, neck, and shoulders until the external auditory meatus is horizontally level with the sternal notch.",
       "citation": "Airway Equipment · Slide 3",
       "topic": "Airway",
       "imageSvg": null,
@@ -9321,7 +9321,7 @@
         4,
         5
       ],
-      "explanation": "Under MS MAID, 'M' stands for Machine: performing a complete pre-use checkout, verifying the presence of an emergency resuscitation bag-valve-mask, and confirming a backup O2 cylinder is present and functional[cite: 3].",
+      "explanation": "Under MS MAID, 'M' stands for Machine: performing a complete pre-use checkout, verifying the presence of an emergency resuscitation bag-valve-mask, and confirming a backup O2 cylinder is present and functional.",
       "citation": "Monitoring · Slide 3",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -9353,7 +9353,7 @@
       "answer": [
         0
       ],
-      "explanation": "The interlock mechanism physically locks adjacent vaporizer dials, ensuring that only one vaporizer can be turned on at a time and preventing concurrent administration of multiple volatile agents[cite: 2].",
+      "explanation": "The interlock mechanism physically locks adjacent vaporizer dials, ensuring that only one vaporizer can be turned on at a time and preventing concurrent administration of multiple volatile agents.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 59, 73",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -9385,7 +9385,7 @@
       "answer": [
         1
       ],
-      "explanation": "Soda lime granules are sized 4 to 8 mesh to optimize surface area for rapid gas diffusion while preventing high resistance to ventilation within the breathing circuit[cite: 1].",
+      "explanation": "Soda lime granules are sized 4 to 8 mesh to optimize surface area for rapid gas diffusion while preventing high resistance to ventilation within the breathing circuit.",
       "citation": "CO₂ & Scavenging · Slide 5",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -9420,7 +9420,7 @@
         0,
         3
       ],
-      "explanation": "Conventional pulse oximeters utilize light-emitting diodes at 660 nm (red light, absorbed primarily by deoxyhemoglobin) and 940 nm (near-infrared light, absorbed primarily by oxyhemoglobin)[cite: 3].",
+      "explanation": "Conventional pulse oximeters utilize light-emitting diodes at 660 nm (red light, absorbed primarily by deoxyhemoglobin) and 940 nm (near-infrared light, absorbed primarily by oxyhemoglobin).",
       "citation": "Monitoring · Slide 74",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -9452,7 +9452,7 @@
       "answer": [
         0
       ],
-      "explanation": "NaOH and KOH function as catalysts to speed the initial neutralization reaction by forming carbonates; they are subsequently regenerated when reacting with calcium hydroxide[cite: 1].",
+      "explanation": "NaOH and KOH function as catalysts to speed the initial neutralization reaction by forming carbonates; they are subsequently regenerated when reacting with calcium hydroxide.",
       "citation": "CO₂ & Scavenging · Slide 2",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -9484,7 +9484,7 @@
       "answer": [
         0
       ],
-      "explanation": "Mean body temperature is clinically calculated as: Mean Temp = (0.85 * Tcore) + (0.15 * Tskin), reflecting the dominant contribution of the central core thermal compartment[cite: 3].",
+      "explanation": "Mean body temperature is clinically calculated as: Mean Temp = (0.85 * Tcore) + (0.15 * Tskin), reflecting the dominant contribution of the central core thermal compartment.",
       "citation": "Monitoring · Slide 81",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -9520,7 +9520,7 @@
         1,
         4
       ],
-      "explanation": "Increased EtCO2 results from increased metabolic production (malignant hyperthermia, sepsis, fever) or increased delivery (bicarbonate administration, tourniquet release)[cite: 3]. Embolism, hypothermia, and disconnections reduce EtCO2[cite: 3].",
+      "explanation": "Increased EtCO2 results from increased metabolic production (malignant hyperthermia, sepsis, fever) or increased delivery (bicarbonate administration, tourniquet release). Embolism, hypothermia, and disconnections reduce EtCO2.",
       "citation": "Monitoring · Slides 43, 50",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -9552,7 +9552,7 @@
       "answer": [
         0
       ],
-      "explanation": "The CO2 absorber is almost invariably placed in the inspiratory limb on the bag side so that apparatus resistance to inspiration is readily overcome by manual assisted or mechanical controlled ventilation[cite: 1].",
+      "explanation": "The CO2 absorber is almost invariably placed in the inspiratory limb on the bag side so that apparatus resistance to inspiration is readily overcome by manual assisted or mechanical controlled ventilation.",
       "citation": "CO₂ & Scavenging · Slide 8",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -9584,7 +9584,7 @@
       "answer": [
         0
       ],
-      "explanation": "The blood:gas partition coefficient of Desflurane is 0.42 (Sevoflurane is 0.65, Isoflurane is 1.46, and Halothane is 2.50)[cite: 2].",
+      "explanation": "The blood:gas partition coefficient of Desflurane is 0.42 (Sevoflurane is 0.65, Isoflurane is 1.46, and Halothane is 2.50).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -9619,7 +9619,7 @@
         1,
         2
       ],
-      "explanation": "To prevent hypoxia, the O2 knob is uniquely tactile (larger, fluted) and O2 is positioned furthest downstream (last on the right) so any upstream leaks will leak other gases rather than oxygen[cite: 2].",
+      "explanation": "To prevent hypoxia, the O2 knob is uniquely tactile (larger, fluted) and O2 is positioned furthest downstream (last on the right) so any upstream leaks will leak other gases rather than oxygen.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 40, 41",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -9651,7 +9651,7 @@
       "answer": [
         0
       ],
-      "explanation": "The Eschmann introducer (bougie) is an intubating stylet used to facilitate difficult endotracheal intubation when vocal cords cannot be fully visualized (Grade IIb/III views)[cite: 4].",
+      "explanation": "The Eschmann introducer (bougie) is an intubating stylet used to facilitate difficult endotracheal intubation when vocal cords cannot be fully visualized (Grade IIb/III views).",
       "citation": "Airway Equipment · Slide 9",
       "topic": "Airway",
       "imageSvg": null,
@@ -9683,7 +9683,7 @@
       "answer": [
         2
       ],
-      "explanation": "Soda lime absorbs approximately 19% of its weight in carbon dioxide; therefore, 100 g of soda lime absorbs approximately 26 L of CO2[cite: 1].",
+      "explanation": "Soda lime absorbs approximately 19% of its weight in carbon dioxide; therefore, 100 g of soda lime absorbs approximately 26 L of CO2.",
       "citation": "CO₂ & Scavenging · Slide 2",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -9719,7 +9719,7 @@
         2,
         4
       ],
-      "explanation": "An elevated baseline indicates rebreathing of CO2[cite: 3]. Causes include exhausted absorbent, incompetent inspiratory or expiratory valves, and inadequate fresh gas flow in semi-closed circuits[cite: 1, 3].",
+      "explanation": "An elevated baseline indicates rebreathing of CO2. Causes include exhausted absorbent, incompetent inspiratory or expiratory valves, and inadequate fresh gas flow in semi-closed circuits[cite: 1, 3].",
       "citation": "Monitoring · Slides 43, 50",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -9751,7 +9751,7 @@
       "answer": [
         0
       ],
-      "explanation": "The cricothyroid membrane is bounded superiorly by the inferior border of the thyroid cartilage and inferiorly by the superior border of the cricoid cartilage[cite: 4].",
+      "explanation": "The cricothyroid membrane is bounded superiorly by the inferior border of the thyroid cartilage and inferiorly by the superior border of the cricoid cartilage.",
       "citation": "Airway Equipment · Slide 15",
       "topic": "Airway",
       "imageSvg": null,
@@ -9783,7 +9783,7 @@
       "answer": [
         0
       ],
-      "explanation": "A cuff that is too large or wide transmits pressure over an excessively broad area, occluding the artery at lower cuff pressures and yielding falsely low blood pressure readings[cite: 3].",
+      "explanation": "A cuff that is too large or wide transmits pressure over an excessively broad area, occluding the artery at lower cuff pressures and yielding falsely low blood pressure readings.",
       "citation": "Monitoring · Slides 62, 90",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -9818,7 +9818,7 @@
         1,
         5
       ],
-      "explanation": "Carboxyhemoglobin (COHb) absorbs red light at 660 nm identically to oxyhemoglobin, causing conventional two-wavelength pulse oximeters to register falsely elevated readings despite severe tissue hypoxia[cite: 3].",
+      "explanation": "Carboxyhemoglobin (COHb) absorbs red light at 660 nm identically to oxyhemoglobin, causing conventional two-wavelength pulse oximeters to register falsely elevated readings despite severe tissue hypoxia.",
       "citation": "Monitoring · Slides 74, 75, 76",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -9850,7 +9850,7 @@
       "answer": [
         0
       ],
-      "explanation": "At 1 atmosphere, Desflurane boils at 22.8°C (Isoflurane boils at 48.5°C, Halothane at 50.2°C, and Sevoflurane at 58.6°C)[cite: 2].",
+      "explanation": "At 1 atmosphere, Desflurane boils at 22.8°C (Isoflurane boils at 48.5°C, Halothane at 50.2°C, and Sevoflurane at 58.6°C).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -9882,7 +9882,7 @@
       "answer": [
         0
       ],
-      "explanation": "During cardiac arrest, low cardiac output severely limits delivery of CO2 to the lungs[cite: 3]. Upon ROSC, the sudden restoration of pulmonary blood flow washes accumulated CO2 out of tissues into the alveoli, causing an abrupt surge in EtCO2[cite: 3].",
+      "explanation": "During cardiac arrest, low cardiac output severely limits delivery of CO2 to the lungs. Upon ROSC, the sudden restoration of pulmonary blood flow washes accumulated CO2 out of tissues into the alveoli, causing an abrupt surge in EtCO2.",
       "citation": "Monitoring · Slide 46",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -12225,33 +12225,33 @@
       "id": "371",
       "set": 4,
       "type": "single",
-      "stem": "What is the PISS pin configuration for a Medical Air E-cylinder?",
+      "stem": "An oxygen E-cylinder reads 950 psig. Using 660 L at 1900 psig, approximately how much oxygen remains?",
       "options": [
-        "Positions 1 and 5",
-        "Positions 2 and 5",
-        "Positions 3 and 5",
-        "Positions 1 and 6"
+        "165 L",
+        "330 L",
+        "495 L",
+        "660 L"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "Under the Pin Index Safety System, Medical Air uses pin coordinates 1 and 5. Oxygen uses 2 and 5; Nitrous oxide uses 3 and 5.",
-      "citation": "Medical Gas Systems in Anesthesia · Slide 18",
+      "explanation": "Compressed oxygen contents fall approximately linearly with pressure. At half of 1900 psig, about half of 660 L remains, or approximately 330 L.",
+      "citation": "Exam 1 Equipment Study Guide · p. 1",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "1",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 1",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "slides": "18",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 18"
+      "supp": null
     },
     {
       "id": "372",
@@ -12624,33 +12624,33 @@
       "id": "383",
       "set": 4,
       "type": "single",
-      "stem": "What is the PISS pin configuration for Nitrous Oxide?",
+      "stem": "Why can an N2O E-cylinder remain near 745 psig even while its contents are being used?",
       "options": [
-        "Positions 1 and 5",
-        "Positions 2 and 5",
-        "Positions 3 and 5",
-        "Positions 2 and 4"
+        "Its first-stage regulator fixes cylinder pressure at 745 psig",
+        "Liquid N2O continues vaporizing and maintains near-constant pressure while liquid remains",
+        "The Bourdon gauge reads pipeline pressure instead of cylinder pressure",
+        "The cylinder check valve stores pressure in the yoke"
       ],
       "answer": [
-        2
+        1
       ],
-      "explanation": "Nitrous oxide uses pin positions 3 and 5 on the PISS indexing system.",
-      "citation": "Medical Gas Systems in Anesthesia · Slide 18",
+      "explanation": "Nitrous oxide is stored as liquid and vapor at room temperature. Pressure stays nearly constant while liquid remains, so cylinder contents are determined by weight rather than pressure until the liquid is gone.",
+      "citation": "Exam 1 Equipment Study Guide · p. 1",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "1",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 1",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "slides": "18",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 18"
+      "supp": null
     },
     {
       "id": "384",
@@ -12786,70 +12786,66 @@
     {
       "id": "388",
       "set": 4,
-      "type": "multi",
-      "stem": "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
+      "type": "single",
+      "stem": "The oxygen pipeline is suspected of nitrogen contamination. What must be done to use the backup O2 cylinder safely?",
       "options": [
-        "Sudden massive pulmonary thromboembolism",
-        "Intravenous administration of sodium bicarbonate",
-        "Deflation and release of a lower extremity surgical tourniquet",
-        "Acute hypoventilation in a spontaneously breathing patient",
-        "Severe accidental hypothermia with core temperature < 32°C",
-        "Acute cardiac arrest with cessation of pulmonary blood flow"
+        "Open the cylinder but leave the pipeline attached",
+        "Disconnect the pipeline and open the O2 cylinder",
+        "Press the O2 flush continuously",
+        "Close the cylinder and increase the O2 flowmeter"
       ],
       "answer": [
-        1,
-        2,
-        3
+        1
       ],
-      "explanation": "Increased EtCO2 results from increased metabolic production, increased delivery to the lungs (bicarbonate bolus, tourniquet release), or decreased alveolar elimination (hypoventilation). Pulmonary embolism, hypothermia, and cardiac arrest decrease EtCO2.",
-      "citation": "Monitoring · Slides 41, 43, 50",
-      "topic": "Monitoring",
+      "explanation": "Opening the backup cylinder alone does not isolate a contaminated pipeline because pipeline pressure normally exceeds cylinder-regulator pressure. Disconnect the pipeline and open the O2 cylinder.",
+      "citation": "Exam 1 Equipment Study Guide · p. 2",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "2",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 2",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
-        ],
-        "slides": "41, 43, 50",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 41, 43, 50"
+      "supp": null
     },
     {
       "id": "389",
       "set": 4,
       "type": "single",
-      "stem": "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?",
+      "stem": "At low laminar flow through a Thorpe tube, which gas property primarily determines flow?",
       "options": [
-        "They act as catalysts/activators to accelerate the initial absorption reaction",
-        "They permanently bind CO2 without undergoing regeneration",
-        "They neutralize toxic carbon monoxide gas",
-        "They act as moisture desiccants to prevent rain-out in the circuit"
+        "Density",
+        "Viscosity",
+        "Critical temperature",
+        "Vapor pressure"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "NaOH and KOH function as catalysts to speed the initial neutralization reaction by forming carbonates; they are subsequently regenerated when reacting with calcium hydroxide.",
-      "citation": "CO₂ & Scavenging · Slide 2",
-      "topic": "CO₂ & Scavenging",
+      "explanation": "At low flow, gas movement is predominantly laminar and calibration depends mainly on viscosity. At high turbulent flow, density becomes more important.",
+      "citation": "Exam 1 Equipment Study Guide · p. 2",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "2",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 2",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "slides": "2",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 2"
+      "supp": null
     },
     {
       "id": "390",
@@ -12886,37 +12882,34 @@
     {
       "id": "391",
       "set": 4,
-      "type": "multi",
-      "stem": "Which of the following hemoglobin species will cause a deceptively normal or falsely elevated oxygen saturation reading on a conventional two-wavelength pulse oximeter? (Select 2)",
+      "type": "single",
+      "stem": "Why is the oxygen flowmeter positioned downstream, closest to the common gas outlet?",
       "options": [
-        "Methemoglobin",
-        "Carboxyhemoglobin",
-        "Sulfhemoglobin",
-        "Deoxyhemoglobin",
-        "Fetal hemoglobin",
-        "Oxyhemoglobin"
+        "To make O2 pressure higher than pipeline pressure",
+        "So an upstream flowmeter leak preferentially loses another gas rather than oxygen",
+        "To prevent the O2 flush from bypassing the vaporizer",
+        "So N2O can activate the fail-safe valve"
       ],
       "answer": [
-        1,
-        5
+        1
       ],
-      "explanation": "Carboxyhemoglobin (COHb) absorbs red light at 660 nm identically to oxyhemoglobin, causing conventional two-wavelength pulse oximeters to register falsely elevated readings despite severe tissue hypoxia.",
-      "citation": "Monitoring · Slides 74, 75, 76",
-      "topic": "Monitoring",
+      "explanation": "Placing oxygen last in the flowmeter sequence reduces the chance that an upstream tube leak will create a hypoxic mixture. A leak in the oxygen tube itself can still cause hypoxia.",
+      "citation": "Exam 1 Equipment Study Guide · p. 2",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "2",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 2",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
-        ],
-        "slides": "74, 75, 76",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 74, 75, 76"
+      "supp": null
     },
     {
       "id": "392",
@@ -12953,34 +12946,36 @@
     {
       "id": "393",
       "set": 4,
-      "type": "single",
-      "stem": "What capnographic finding appears when a patient breathes spontaneously against the ventilator due to waning neuromuscular blockade?",
+      "type": "multi",
+      "stem": "Which TWO components are bypassed when the oxygen flush valve is activated? (Select 2)",
       "options": [
-        "Curare cleft in Phase III",
-        "Shark-fin Phase II upstroke",
-        "Cardiac oscillations in Phase IV",
-        "Elevated baseline in Phase I"
+        "Flowmeters",
+        "Vaporizers",
+        "Common gas outlet",
+        "Intermediate-pressure oxygen supply",
+        "Breathing circuit"
       ],
       "answer": [
-        0
+        0,
+        1
       ],
-      "explanation": "Inadequate muscle relaxation allows spontaneous diaphragmatic contraction against controlled ventilation, producing an inspiratory dip or notch during the alveolar plateau known as a curare cleft.",
-      "citation": "Monitoring · Slides 47, 51",
-      "topic": "Monitoring",
+      "explanation": "The O2 flush sends 35–75 L/min of oxygen from the intermediate-pressure system directly toward the common gas outlet, bypassing both flowmeters and vaporizers.",
+      "citation": "Exam 1 Equipment Study Guide · p. 2",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "2",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 2",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
-        ],
-        "slides": "47, 51",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 47, 51"
+      "supp": null
     },
     {
       "id": "394",
@@ -13022,132 +13017,129 @@
       "id": "395",
       "set": 4,
       "type": "single",
-      "stem": "What is the PISS pin configuration for an Oxygen E-cylinder?",
+      "stem": "A vaporizer is set to 2% with fresh gas flow of 3 L/min. Using the lecture formula, approximately how much liquid agent is consumed per hour?",
       "options": [
-        "Positions 1 and 5",
-        "Positions 2 and 5",
-        "Positions 3 and 5",
-        "Positions 2 and 6"
+        "6 mL/hr",
+        "12 mL/hr",
+        "18 mL/hr",
+        "36 mL/hr"
       ],
       "answer": [
-        1
+        2
       ],
-      "explanation": "Under the Pin Index Safety System, Oxygen uses pin positions 2 and 5.",
-      "citation": "Medical Gas Systems in Anesthesia · Slide 18",
+      "explanation": "Liquid agent consumption is approximately vol% × fresh gas flow (L/min) × 3. Thus 2 × 3 × 3 = 18 mL/hr.",
+      "citation": "Exam 1 Equipment Study Guide · p. 3",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "3",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 3",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "slides": "18",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 18"
+      "supp": null
     },
     {
       "id": "396",
       "set": 4,
       "type": "single",
-      "stem": "What is the formula used to calculate Mean Body Temperature based on core and skin measurements?",
+      "stem": "A variable-bypass vaporizer is accidentally tipped. What corrective sequence does the study guide recommend?",
       "options": [
-        "Mean Temp = 0.85 * Tcore + 0.15 * Tskin",
-        "Mean Temp = 0.50 * Tcore + 0.50 * Tskin",
-        "Mean Temp = 0.67 * Tcore + 0.33 * Tskin",
-        "Mean Temp = 0.95 * Tcore + 0.05 * Tskin"
+        "Turn it off permanently and replace the machine",
+        "Drain it, run the highest setting at high fresh gas flow for about 30 minutes, then refill after analysis reads zero",
+        "Fill it completely and run at low flow",
+        "Place it in transport mode and continue using it"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "Mean body temperature is clinically calculated as: Mean Temp = (0.85 * Tcore) + (0.15 * Tskin), reflecting the dominant contribution of the central core thermal compartment.",
-      "citation": "Monitoring · Slide 81",
-      "topic": "Monitoring",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null,
+      "explanation": "Tipping can put liquid agent into the bypass and cause overdose. The guide recommends draining the vaporizer, running it at the highest setting with high fresh gas flow for about 30 minutes, and refilling after the analyzer reads zero.",
+      "citation": "Exam 1 Equipment Study Guide · p. 3",
       "sourceMeta": {
         "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
+          "Exam 1 Equipment Study Guide"
         ],
-        "slides": "81",
-        "citationFormat": "slides"
+        "pages": "3",
+        "citationFormat": "study-guide"
       },
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 81"
-    },
-    {
-      "id": "397",
-      "set": 4,
-      "type": "multi",
-      "stem": "Which of the following design features are incorporated into mechanical flowmeters on an anesthesia workstation to prevent delivery of a hypoxic gas mixture? (Select 2)",
-      "options": [
-        "Nitrous oxide is plumbed into an independent auxiliary manifold",
-        "Thorpe tubes have a uniform, non-tapered internal diameter",
-        "The oxygen flow control knob is physically larger and fluted",
-        "Flow control valves automatically increase fresh gas flow during apnea",
-        "Check valves prevent volatile agent from entering the glass tubes",
-        "Oxygen is always positioned last in the manifold sequence closest to the outlet"
-      ],
-      "answer": [
-        2,
-        5
-      ],
-      "explanation": "To prevent hypoxia, the O2 knob is uniquely tactile (larger, fluted) and O2 is positioned furthest downstream (last on the right) so any upstream leaks will leak other gases rather than oxygen.",
-      "citation": "Medical Gas Systems in Anesthesia · Slides 40, 41",
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 3",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
+      "supp": null
+    },
+    {
+      "id": "397",
+      "set": 4,
+      "type": "single",
+      "stem": "Which operating condition is characteristic of a Tec 6 desflurane vaporizer?",
+      "options": [
+        "Room temperature and atmospheric pressure",
+        "39°C and about 2 atm pressure",
+        "58.6°C and 760 mmHg",
+        "22.8°C and 45 psig"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The Tec 6 heats desflurane to about 39°C and pressurizes the vaporizer to roughly 2 atmospheres. It requires electrical power.",
+      "citation": "Exam 1 Equipment Study Guide · p. 3",
       "sourceMeta": {
         "families": [
-          "Medical Gas Systems in Anesthesia"
+          "Exam 1 Equipment Study Guide"
         ],
-        "slides": "40, 41",
-        "citationFormat": "slides"
+        "pages": "3",
+        "citationFormat": "study-guide"
       },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slides 40, 41"
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 3",
+      "topic": "Medical Gases",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null
     },
     {
       "id": "398",
       "set": 4,
       "type": "single",
-      "stem": "How much carbon dioxide can be absorbed by 100 g of fresh soda lime absorbent?",
+      "stem": "Which leak test is appropriate at the common gas outlet when the machine has an outlet check valve?",
       "options": [
-        "Approximately 5 L",
-        "Approximately 12 L",
-        "Approximately 26 L",
-        "Approximately 50 L"
+        "Positive-pressure leak test only",
+        "Negative-pressure leak test",
+        "No leak test is needed",
+        "Cylinder pressure decay test"
       ],
       "answer": [
-        2
+        1
       ],
-      "explanation": "Soda lime absorbs approximately 19% of its weight in carbon dioxide; therefore, 100 g of soda lime absorbs approximately 26 L of CO2.",
-      "citation": "CO₂ & Scavenging · Slide 2",
-      "topic": "CO₂ & Scavenging",
+      "explanation": "With an outlet check valve, downstream positive pressure cannot reliably test the low-pressure system, so a negative-pressure leak test is used. Without a check valve, a positive-pressure test can be used.",
+      "citation": "Exam 1 Equipment Study Guide · p. 3",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "3",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 3",
+      "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "slides": "2",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 2"
+      "supp": null
     },
     {
       "id": "399",
@@ -13227,7 +13219,7 @@
       "answer": [
         1
       ],
-      "explanation": "Using the formula: Total anesthetic used (mL/hr) = 3 (%) x 1.5 (L/min) x 3 = 13.5 mL/hr[cite: 2]. For a 2-hour case: 13.5 mL/hr x 2 hr = 27.0 mL[cite: 2].",
+      "explanation": "Using the formula: Total anesthetic used (mL/hr) = 3 (%) x 1.5 (L/min) x 3 = 13.5 mL/hr. For a 2-hour case: 13.5 mL/hr x 2 hr = 27.0 mL.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 52",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -13259,7 +13251,7 @@
       "answer": [
         1
       ],
-      "explanation": "Symmetrical truncation and flattening of both the inspiratory and expiratory limbs of a flow-volume loop is diagnostic of a fixed intra- or extra-thoracic large airway obstruction, such as severe tracheal stenosis, compression from a mediastinal mass, or a fixed foreign body[cite: 3].",
+      "explanation": "Symmetrical truncation and flattening of both the inspiratory and expiratory limbs of a flow-volume loop is diagnostic of a fixed intra- or extra-thoracic large airway obstruction, such as severe tracheal stenosis, compression from a mediastinal mass, or a fixed foreign body.",
       "citation": "Monitoring · Slides 30, 31",
       "topic": "Monitoring",
       "imageSvg": "<svg width=\"280\" height=\"180\" viewBox=\"0 0 280 180\" style=\"background:#fff; border:1px solid #cbd5e0; border-radius:6px;\">\n      <line x1=\"40\" y1=\"90\" x2=\"260\" y2=\"90\" stroke=\"#4a5568\" stroke-width=\"1.5\"/>\n      <line x1=\"150\" y1=\"15\" x2=\"150\" y2=\"165\" stroke=\"#4a5568\" stroke-width=\"1.5\"/>\n      <text x=\"10\" y=\"50\" font-size=\"9\" fill=\"#718096\" font-weight=\"bold\">Exp Flow</text>\n      <text x=\"10\" y=\"130\" font-size=\"9\" fill=\"#718096\" font-weight=\"bold\">Insp Flow</text>\n      <path d=\"M 60 90 Q 75 25 150 25 L 210 25 L 220 90 Q 205 155 150 155 L 90 155 Z\" fill=\"none\" stroke=\"#2b6cb0\" stroke-width=\"2.5\"/>\n      <text x=\"160\" y=\"55\" font-size=\"10\" fill=\"#2b6cb0\" font-weight=\"bold\">Truncated Plateaus</text>\n    </svg>",
@@ -13295,7 +13287,7 @@
         3,
         4
       ],
-      "explanation": "Decreased EtCO2 occurs with sudden increases in alveolar dead space (pulmonary embolism), acute circulatory collapse (cardiac arrest/severe hypoperfusion), or airway displacement/extubation[cite: 3]. Bicarbonate, malignant hyperthermia, and tourniquet release transiently increase EtCO2[cite: 3].",
+      "explanation": "Decreased EtCO2 occurs with sudden increases in alveolar dead space (pulmonary embolism), acute circulatory collapse (cardiac arrest/severe hypoperfusion), or airway displacement/extubation. Bicarbonate, malignant hyperthermia, and tourniquet release transiently increase EtCO2.",
       "citation": "Monitoring · Slides 41, 43, 50",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -13327,7 +13319,7 @@
       "answer": [
         0
       ],
-      "explanation": "Second-stage regulators receive gas from the pipeline (50–55 psig) or first-stage regulator (45 psig) and reduce it further (to 14–16 psig for O2) to dampen surges and provide ultra-stable pressure to flow control needle valves[cite: 2].",
+      "explanation": "Second-stage regulators receive gas from the pipeline (50–55 psig) or first-stage regulator (45 psig) and reduce it further (to 14–16 psig for O2) to dampen surges and provide ultra-stable pressure to flow control needle valves.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 26, 33",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -13359,7 +13351,7 @@
       "answer": [
         3
       ],
-      "explanation": "The critical temperature of N2O is +36.4°C[cite: 2]. Because this is above standard room temperature (20°C), compressed N2O in a cylinder remains a liquid in equilibrium with overlying vapor[cite: 2]. Oxygen is -118.6°C and CO2 is +31.0°C[cite: 2].",
+      "explanation": "The critical temperature of N2O is +36.4°C. Because this is above standard room temperature (20°C), compressed N2O in a cylinder remains a liquid in equilibrium with overlying vapor. Oxygen is -118.6°C and CO2 is +31.0°C.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 14",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -13394,7 +13386,7 @@
         4,
         5
       ],
-      "explanation": "ASA Standard 2.3 mandates continuous ECG display and continuous circulatory evaluation by pulse palpation, auscultation, intra-arterial tracing, Doppler, or pulse oximetry plethysmography[cite: 3]. NIBP must be recorded at least every 5 minutes, not every 15[cite: 3].",
+      "explanation": "ASA Standard 2.3 mandates continuous ECG display and continuous circulatory evaluation by pulse palpation, auscultation, intra-arterial tracing, Doppler, or pulse oximetry plethysmography. NIBP must be recorded at least every 5 minutes, not every 15.",
       "citation": "Monitoring · Slide 13",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -13426,7 +13418,7 @@
       "answer": [
         0
       ],
-      "explanation": "The curved Macintosh blade is inserted into the vallecula; lifting the blade stretches the glossoepiglottic ligament, which indirectly elevates the epiglottis forward to expose the vocal cords[cite: 4].",
+      "explanation": "The curved Macintosh blade is inserted into the vallecula; lifting the blade stretches the glossoepiglottic ligament, which indirectly elevates the epiglottis forward to expose the vocal cords.",
       "citation": "Airway Equipment · Slides 2, 10",
       "topic": "Airway",
       "imageSvg": null,
@@ -13458,7 +13450,7 @@
       "answer": [
         0
       ],
-      "explanation": "Cryogenic liquid oxygen passes through ambient finned vaporizers and superheater piping that absorb environmental heat, warming the gas to room temperature prior to pressure regulation into hospital pipelines[cite: 2].",
+      "explanation": "Cryogenic liquid oxygen passes through ambient finned vaporizers and superheater piping that absorb environmental heat, warming the gas to room temperature prior to pressure regulation into hospital pipelines.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 32",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -13490,7 +13482,7 @@
       "answer": [
         0
       ],
-      "explanation": "At high flow rates, the annular space between the float and the tube wall acts as an orifice, resulting in turbulent flow governed primarily by gas density (Graham's law)[cite: 2]. Low flows are laminar and governed by viscosity[cite: 2].",
+      "explanation": "At high flow rates, the annular space between the float and the tube wall acts as an orifice, resulting in turbulent flow governed primarily by gas density (Graham's law). Low flows are laminar and governed by viscosity.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 43",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -13526,7 +13518,7 @@
         4,
         5
       ],
-      "explanation": "An isolated increase in PIP with an unchanged Pplat signals increased airway resistance (e.g., tube kinking, bronchospasm, secretions)[cite: 3]. Mainstem intubation, pneumothorax, and peritoneal insufflation decrease compliance, causing both PIP and Pplat to rise simultaneously[cite: 3].",
+      "explanation": "An isolated increase in PIP with an unchanged Pplat signals increased airway resistance (e.g., tube kinking, bronchospasm, secretions). Mainstem intubation, pneumothorax, and peritoneal insufflation decrease compliance, causing both PIP and Pplat to rise simultaneously.",
       "citation": "Monitoring · Slides 26, 32",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -13558,7 +13550,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ethyl violet is the standard organic dye added to soda lime; it remains white when fresh and transitions to a vivid blue-violet as the pH drops below alkaline thresholds upon hydroxide exhaustion[cite: 1].",
+      "explanation": "Ethyl violet is the standard organic dye added to soda lime; it remains white when fresh and transitions to a vivid blue-violet as the pH drops below alkaline thresholds upon hydroxide exhaustion.",
       "citation": "CO₂ & Scavenging · Slide 4",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -13590,7 +13582,7 @@
       "answer": [
         0
       ],
-      "explanation": "Medical Air uses pin positions 1 and 5 under the Pin Index Safety System[cite: 2]. Oxygen is 2 and 5; Nitrous Oxide is 3 and 5[cite: 2].",
+      "explanation": "Medical Air uses pin positions 1 and 5 under the Pin Index Safety System. Oxygen is 2 and 5; Nitrous Oxide is 3 and 5.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 18",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -13625,7 +13617,7 @@
         0,
         3
       ],
-      "explanation": "Carbon monoxide generation requires a difluoromethyl ether moiety (-O-CHF2), present in Desflurane, Enflurane, and Isoflurane[cite: 1]. Sevoflurane and Halothane lack this structure and do not produce CO[cite: 1].",
+      "explanation": "Carbon monoxide generation requires a difluoromethyl ether moiety (-O-CHF2), present in Desflurane, Enflurane, and Isoflurane. Sevoflurane and Halothane lack this structure and do not produce CO.",
       "citation": "CO₂ & Scavenging · Slides 6, 7",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -13690,7 +13682,7 @@
       "answer": [
         1
       ],
-      "explanation": "At 20°C, the saturated vapor pressure of Isoflurane is 240 mmHg (Halothane is 244 mmHg, Sevoflurane is 160 mmHg, and Desflurane is 669 mmHg)[cite: 2].",
+      "explanation": "At 20°C, the saturated vapor pressure of Isoflurane is 240 mmHg (Halothane is 244 mmHg, Sevoflurane is 160 mmHg, and Desflurane is 669 mmHg).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -13726,7 +13718,7 @@
         1,
         4
       ],
-      "explanation": "A right shift of the oxyhemoglobin dissociation curve reduces hemoglobin oxygen affinity, improving peripheral delivery[cite: 3]. This occurs with acidosis, hypercapnia, hyperthermia, and increased 2,3-DPG[cite: 3]. Alkalosis, hypothermia, and low 2,3-DPG shift the curve left[cite: 3].",
+      "explanation": "A right shift of the oxyhemoglobin dissociation curve reduces hemoglobin oxygen affinity, improving peripheral delivery. This occurs with acidosis, hypercapnia, hyperthermia, and increased 2,3-DPG. Alkalosis, hypothermia, and low 2,3-DPG shift the curve left.",
       "citation": "Monitoring · Slides 74, 76",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -13758,7 +13750,7 @@
       "answer": [
         0
       ],
-      "explanation": "Tracheal entry produces palpable clicks as the angled coudé tip passes over cartilaginous rings and stops at the carina (~25–30 cm)[cite: 4]. Advancing into the esophagus feels completely smooth without clicks[cite: 4].",
+      "explanation": "Tracheal entry produces palpable clicks as the angled coudé tip passes over cartilaginous rings and stops at the carina (~25–30 cm). Advancing into the esophagus feels completely smooth without clicks.",
       "citation": "Airway Equipment · Slide 9",
       "topic": "Airway",
       "imageSvg": null,
@@ -13790,7 +13782,7 @@
       "answer": [
         0
       ],
-      "explanation": "The auxiliary O2 flowmeter provides pure oxygen (up to ~10 L/min) from the machine's pipeline connection for supplemental devices (cannula, face mask, self-inflating bag) without requiring disconnection or altering the main breathing circuit[cite: 2].",
+      "explanation": "The auxiliary O2 flowmeter provides pure oxygen (up to ~10 L/min) from the machine's pipeline connection for supplemental devices (cannula, face mask, self-inflating bag) without requiring disconnection or altering the main breathing circuit.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 44",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -13825,7 +13817,7 @@
         1,
         2
       ],
-      "explanation": "An open scavenging interface is valveless and relies on ports open to the atmosphere to prevent positive or negative pressure buildup[cite: 1]. Closed interfaces use dedicated reservoir bags and spring-loaded pop-off/pop-in safety valves[cite: 1].",
+      "explanation": "An open scavenging interface is valveless and relies on ports open to the atmosphere to prevent positive or negative pressure buildup. Closed interfaces use dedicated reservoir bags and spring-loaded pop-off/pop-in safety valves.",
       "citation": "CO₂ & Scavenging · Slide 20",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -13857,7 +13849,7 @@
       "answer": [
         0
       ],
-      "explanation": "As long as liquid N2O remains in the cylinder, it vaporizes into the headspace to maintain saturated vapor pressure equilibrium (745 psig at 20°C)[cite: 2]. Once all liquid has vaporized, only gaseous N2O remains (~253 L or ~16% remaining), and pressure drops linearly with gas consumption[cite: 2].",
+      "explanation": "As long as liquid N2O remains in the cylinder, it vaporizes into the headspace to maintain saturated vapor pressure equilibrium (745 psig at 20°C). Once all liquid has vaporized, only gaseous N2O remains (~253 L or ~16% remaining), and pressure drops linearly with gas consumption.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 14",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -13889,7 +13881,7 @@
       "answer": [
         1
       ],
-      "explanation": "In healthy supine patients under general anesthesia, alveolar dead space creates a normal PaCO2–EtCO2 gradient of approximately 2 to 5 mmHg (EtCO2 being slightly lower than PaCO2)[cite: 3].",
+      "explanation": "In healthy supine patients under general anesthesia, alveolar dead space creates a normal PaCO2–EtCO2 gradient of approximately 2 to 5 mmHg (EtCO2 being slightly lower than PaCO2).",
       "citation": "Monitoring · Slide 40",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -13925,7 +13917,7 @@
         2,
         4
       ],
-      "explanation": "Increased EtCO2 results from increased metabolic production, increased delivery to the lungs (bicarbonate bolus, tourniquet release), or decreased alveolar elimination (hypoventilation)[cite: 3]. Pulmonary embolism, hypothermia, and cardiac arrest decrease EtCO2[cite: 3].",
+      "explanation": "Increased EtCO2 results from increased metabolic production, increased delivery to the lungs (bicarbonate bolus, tourniquet release), or decreased alveolar elimination (hypoventilation). Pulmonary embolism, hypothermia, and cardiac arrest decrease EtCO2.",
       "citation": "Monitoring · Slides 41, 43, 50",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -13989,7 +13981,7 @@
       "answer": [
         0
       ],
-      "explanation": "Cricoid pressure uses the cricoid cartilage—the only complete cartilaginous ring in the upper airway—to compress the compliant esophagus posteriorly against the C6 vertebral body, preventing passive regurgitation of gastric contents[cite: 4].",
+      "explanation": "Cricoid pressure uses the cricoid cartilage—the only complete cartilaginous ring in the upper airway—to compress the compliant esophagus posteriorly against the C6 vertebral body, preventing passive regurgitation of gastric contents.",
       "citation": "Airway Equipment · Slide 3",
       "topic": "Airway",
       "imageSvg": null,
@@ -14024,7 +14016,7 @@
         1,
         5
       ],
-      "explanation": "The pumping effect is caused by rapid backpressure fluctuations (from positive-pressure ventilation or depressing the O2 flush valve) compressing gas back into the vaporizing chamber, transiently increasing delivered output[cite: 2].",
+      "explanation": "The pumping effect is caused by rapid backpressure fluctuations (from positive-pressure ventilation or depressing the O2 flush valve) compressing gas back into the vaporizing chamber, transiently increasing delivered output.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 72",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14056,7 +14048,7 @@
       "answer": [
         3
       ],
-      "explanation": "The blood:gas partition coefficient of Halothane is 2.50 (Isoflurane is 1.46, Sevoflurane is 0.65, and Desflurane is 0.42)[cite: 2].",
+      "explanation": "The blood:gas partition coefficient of Halothane is 2.50 (Isoflurane is 1.46, Sevoflurane is 0.65, and Desflurane is 0.42).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14088,7 +14080,7 @@
       "answer": [
         0
       ],
-      "explanation": "CO2 rebreathing is defined by an elevated Phase I baseline (>0 mmHg)[cite: 3]. During inspiration, CO2-containing gas is re-inspired, commonly caused by exhausted absorbent or incompetent unidirectional valves[cite: 1, 3].",
+      "explanation": "CO2 rebreathing is defined by an elevated Phase I baseline (>0 mmHg). During inspiration, CO2-containing gas is re-inspired, commonly caused by exhausted absorbent or incompetent unidirectional valves[cite: 1, 3].",
       "citation": "Monitoring · Slides 44, 50, 51",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -14124,7 +14116,7 @@
         3,
         5
       ],
-      "explanation": "An elevated baseline indicates rebreathing of CO2[cite: 3]. Causes include exhausted absorbent, incompetent inspiratory or expiratory valves, and inadequate fresh gas flow in semi-closed circuits[cite: 1, 3]. High flows prevent rebreathing; hypothermia and obstruction alter waveform height or slope[cite: 3].",
+      "explanation": "An elevated baseline indicates rebreathing of CO2. Causes include exhausted absorbent, incompetent inspiratory or expiratory valves, and inadequate fresh gas flow in semi-closed circuits[cite: 1, 3]. High flows prevent rebreathing; hypothermia and obstruction alter waveform height or slope.",
       "citation": "Monitoring · Slides 43, 50",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -14156,7 +14148,7 @@
       "answer": [
         2
       ],
-      "explanation": "The critical temperature of CO2 is +31.0°C[cite: 2]. Above this temperature, CO2 behaves strictly as a gas regardless of applied pressure[cite: 2]. Oxygen is -118.6°C and Nitrous Oxide is +36.4°C[cite: 2].",
+      "explanation": "The critical temperature of CO2 is +31.0°C. Above this temperature, CO2 behaves strictly as a gas regardless of applied pressure. Oxygen is -118.6°C and Nitrous Oxide is +36.4°C.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 7, 11, 14",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14188,7 +14180,7 @@
       "answer": [
         0
       ],
-      "explanation": "The CO2 absorber is placed in the inspiratory limb on the bag side so that apparatus resistance to inspiration is readily overcome by manual assisted or mechanical controlled ventilation[cite: 1].",
+      "explanation": "The CO2 absorber is placed in the inspiratory limb on the bag side so that apparatus resistance to inspiration is readily overcome by manual assisted or mechanical controlled ventilation.",
       "citation": "CO₂ & Scavenging · Slide 8",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -14223,7 +14215,7 @@
         2,
         5
       ],
-      "explanation": "DISS provides nationally standardized, diameter-specific, threaded connections designed to prevent accidental cross-connection of pipeline gas hoses at wall and machine inlet ports[cite: 2]. PISS regulates cylinders[cite: 2].",
+      "explanation": "DISS provides nationally standardized, diameter-specific, threaded connections designed to prevent accidental cross-connection of pipeline gas hoses at wall and machine inlet ports. PISS regulates cylinders.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 30",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14255,7 +14247,7 @@
       "answer": [
         1
       ],
-      "explanation": "At 1 atmosphere, Isoflurane boils at 48.5°C (Desflurane boils at 22.8°C, Halothane at 50.2°C, and Sevoflurane at 58.6°C)[cite: 2].",
+      "explanation": "At 1 atmosphere, Isoflurane boils at 48.5°C (Desflurane boils at 22.8°C, Halothane at 50.2°C, and Sevoflurane at 58.6°C).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14287,7 +14279,7 @@
       "answer": [
         1
       ],
-      "explanation": "Under the Pin Index Safety System, Oxygen uses pin positions 2 and 5[cite: 2].",
+      "explanation": "Under the Pin Index Safety System, Oxygen uses pin positions 2 and 5.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 18",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14323,7 +14315,7 @@
         2,
         4
       ],
-      "explanation": "Verification of ETT placement requires clinical assessment (bilateral breath sounds, chest expansion, exhaled condensation) and objective confirmation with continuous EtCO2 across at least 3 consecutive breaths[cite: 3].",
+      "explanation": "Verification of ETT placement requires clinical assessment (bilateral breath sounds, chest expansion, exhaled condensation) and objective confirmation with continuous EtCO2 across at least 3 consecutive breaths.",
       "citation": "Monitoring · Slides 41, 92, 93",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -14355,7 +14347,7 @@
       "answer": [
         2
       ],
-      "explanation": "The oxygen flush valve supplies unmetered pure O2 directly to the common gas outlet at a rate of 35–75 L/min at pipeline/intermediate pressure (40–50 psig), completely bypassing flowmeters and vaporizers[cite: 2].",
+      "explanation": "The oxygen flush valve supplies unmetered pure O2 directly to the common gas outlet at a rate of 35–75 L/min at pipeline/intermediate pressure (40–50 psig), completely bypassing flowmeters and vaporizers.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 36",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14387,7 +14379,7 @@
       "answer": [
         1
       ],
-      "explanation": "On a P-V loop, volume is on the vertical axis and airway pressure is on the horizontal axis[cite: 3]. When compliance decreases, higher pressure is required to deliver the same volume, tilting the loop down and to the right[cite: 3].",
+      "explanation": "On a P-V loop, volume is on the vertical axis and airway pressure is on the horizontal axis. When compliance decreases, higher pressure is required to deliver the same volume, tilting the loop down and to the right.",
       "citation": "Monitoring · Slide 28",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -14422,7 +14414,7 @@
         4,
         5
       ],
-      "explanation": "To prevent hypoxia, the O2 knob is uniquely tactile (larger, fluted) and O2 is positioned furthest downstream (last on the right) so any upstream leaks will leak other gases rather than oxygen[cite: 2].",
+      "explanation": "To prevent hypoxia, the O2 knob is uniquely tactile (larger, fluted) and O2 is positioned furthest downstream (last on the right) so any upstream leaks will leak other gases rather than oxygen.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 40, 41",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14454,7 +14446,7 @@
       "answer": [
         2
       ],
-      "explanation": "Nitrous oxide uses pin positions 3 and 5 on the PISS indexing system[cite: 2].",
+      "explanation": "Nitrous oxide uses pin positions 3 and 5 on the PISS indexing system.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 18",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14486,7 +14478,7 @@
       "answer": [
         2
       ],
-      "explanation": "Soda lime absorbs approximately 19% of its weight in carbon dioxide; therefore, 100 g of soda lime absorbs approximately 26 L of CO2[cite: 1].",
+      "explanation": "Soda lime absorbs approximately 19% of its weight in carbon dioxide; therefore, 100 g of soda lime absorbs approximately 26 L of CO2.",
       "citation": "CO₂ & Scavenging · Slide 2",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -14522,7 +14514,7 @@
         3,
         5
       ],
-      "explanation": "Under the MS MAID acronym, 'M' stands for Machine: performing a complete check, ensuring an emergency resuscitation bag-valve-mask is available, and confirming a backup O2 cylinder is present[cite: 3].",
+      "explanation": "Under the MS MAID acronym, 'M' stands for Machine: performing a complete check, ensuring an emergency resuscitation bag-valve-mask is available, and confirming a backup O2 cylinder is present.",
       "citation": "Monitoring · Slide 3",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -14554,7 +14546,7 @@
       "answer": [
         2
       ],
-      "explanation": "At 20°C, the saturated vapor pressure of Halothane is 244 mmHg (Isoflurane is 240 mmHg, Sevoflurane is 160 mmHg, and Desflurane is 669 mmHg)[cite: 2].",
+      "explanation": "At 20°C, the saturated vapor pressure of Halothane is 244 mmHg (Isoflurane is 240 mmHg, Sevoflurane is 160 mmHg, and Desflurane is 669 mmHg).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14586,7 +14578,7 @@
       "answer": [
         0
       ],
-      "explanation": "Mean body temperature is clinically calculated as: Mean Temp = (0.85 * Tcore) + (0.15 * Tskin), reflecting the dominant contribution of the central core thermal compartment[cite: 3].",
+      "explanation": "Mean body temperature is clinically calculated as: Mean Temp = (0.85 * Tcore) + (0.15 * Tskin), reflecting the dominant contribution of the central core thermal compartment.",
       "citation": "Monitoring · Slide 81",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -14621,7 +14613,7 @@
         0,
         3
       ],
-      "explanation": "Conventional pulse oximeters utilize light-emitting diodes at 660 nm (red light, absorbed primarily by deoxyhemoglobin) and 940 nm (near-infrared light, absorbed primarily by oxyhemoglobin)[cite: 3].",
+      "explanation": "Conventional pulse oximeters utilize light-emitting diodes at 660 nm (red light, absorbed primarily by deoxyhemoglobin) and 940 nm (near-infrared light, absorbed primarily by oxyhemoglobin).",
       "citation": "Monitoring · Slide 74",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -14653,7 +14645,7 @@
       "answer": [
         0
       ],
-      "explanation": "A standard medical oxygen E-cylinder contains ~660 L (range 625–700 L) at a full service pressure of 1900–2200 psig[cite: 2].",
+      "explanation": "A standard medical oxygen E-cylinder contains ~660 L (range 625–700 L) at a full service pressure of 1900–2200 psig.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 7, 12",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14685,7 +14677,7 @@
       "answer": [
         1
       ],
-      "explanation": "According to Landesberg et al. cited in the monitoring text, lead V3 detected ischemia earliest and most often (86.8%), followed by V4 (78.9%) and V5 (65.8%)[cite: 3]. Lead II is preferred for rhythm analysis[cite: 3].",
+      "explanation": "According to Landesberg et al. cited in the monitoring text, lead V3 detected ischemia earliest and most often (86.8%), followed by V4 (78.9%) and V5 (65.8%). Lead II is preferred for rhythm analysis.",
       "citation": "Monitoring · Slides 57, 58",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -14721,7 +14713,7 @@
         3,
         5
       ],
-      "explanation": "An OPA is sized from corner of mouth to angle of mandible, its concavity follows the anatomy to lift the tongue, and it aids bag-mask ventilation in edentulous patients[cite: 4]. It stimulates reflexes/laryngospasm if light, and NPAs are better tolerated awake[cite: 4].",
+      "explanation": "An OPA is sized from corner of mouth to angle of mandible, its concavity follows the anatomy to lift the tongue, and it aids bag-mask ventilation in edentulous patients. It stimulates reflexes/laryngospasm if light, and NPAs are better tolerated awake.",
       "citation": "Airway Equipment · Slide 5",
       "topic": "Airway",
       "imageSvg": null,
@@ -14753,7 +14745,7 @@
       "answer": [
         0
       ],
-      "explanation": "The interlock mechanism physically locks adjacent vaporizer dials, ensuring that only one vaporizer can be turned on at a time and preventing concurrent administration of multiple volatile agents[cite: 2].",
+      "explanation": "The interlock mechanism physically locks adjacent vaporizer dials, ensuring that only one vaporizer can be turned on at a time and preventing concurrent administration of multiple volatile agents.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 59, 73",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14785,7 +14777,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ramping aligns the upper airway axes in obese patients by elevating the head, neck, and shoulders until the external auditory meatus is horizontally level with the sternal notch[cite: 4].",
+      "explanation": "Ramping aligns the upper airway axes in obese patients by elevating the head, neck, and shoulders until the external auditory meatus is horizontally level with the sternal notch.",
       "citation": "Airway Equipment · Slide 3",
       "topic": "Airway",
       "imageSvg": null,
@@ -14820,7 +14812,7 @@
         1,
         2
       ],
-      "explanation": "The hypoxic guard mechanically/pneumatically links O2 and N2O flow valves to prevent dialing an FiO2 < 25%[cite: 2]. However, it senses pressure/valve mechanics, NOT gas identity, and cannot detect crossed pipelines or hypoxic tanks[cite: 2].",
+      "explanation": "The hypoxic guard mechanically/pneumatically links O2 and N2O flow valves to prevent dialing an FiO2 < 25%. However, it senses pressure/valve mechanics, NOT gas identity, and cannot detect crossed pipelines or hypoxic tanks.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 45, 46",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14852,7 +14844,7 @@
       "answer": [
         0
       ],
-      "explanation": "NaOH and KOH function as catalysts to speed the initial neutralization reaction by forming carbonates; they are subsequently regenerated when reacting with calcium hydroxide[cite: 1].",
+      "explanation": "NaOH and KOH function as catalysts to speed the initial neutralization reaction by forming carbonates; they are subsequently regenerated when reacting with calcium hydroxide.",
       "citation": "CO₂ & Scavenging · Slide 2",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -14884,7 +14876,7 @@
       "answer": [
         3
       ],
-      "explanation": "Nitrous oxide is a potent greenhouse gas that persists in the atmosphere for up to 114 years[cite: 1]. Desflurane persists for 14 years, isoflurane for 3.2 years, and sevoflurane for 1.1 years[cite: 1].",
+      "explanation": "Nitrous oxide is a potent greenhouse gas that persists in the atmosphere for up to 114 years. Desflurane persists for 14 years, isoflurane for 3.2 years, and sevoflurane for 1.1 years.",
       "citation": "CO₂ & Scavenging · Slide 22",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -14920,7 +14912,7 @@
         1,
         2
       ],
-      "explanation": "Decreased EtCO2 occurs with reduced CO2 production (hypothermia), reduced delivery to the lungs (hemorrhagic shock/hypoperfusion), or excessive alveolar washout (hyperventilation)[cite: 3]. Tourniquet release, exhausted absorbent, and shivering increase EtCO2[cite: 3].",
+      "explanation": "Decreased EtCO2 occurs with reduced CO2 production (hypothermia), reduced delivery to the lungs (hemorrhagic shock/hypoperfusion), or excessive alveolar washout (hyperventilation). Tourniquet release, exhausted absorbent, and shivering increase EtCO2.",
       "citation": "Monitoring · Slides 43, 50",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -14952,7 +14944,7 @@
       "answer": [
         1
       ],
-      "explanation": "The blood:gas partition coefficient of Sevoflurane is 0.65 (Desflurane is 0.42, Isoflurane is 1.46, and Halothane is 2.50)[cite: 2].",
+      "explanation": "The blood:gas partition coefficient of Sevoflurane is 0.65 (Desflurane is 0.42, Isoflurane is 1.46, and Halothane is 2.50).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -14984,7 +14976,7 @@
       "answer": [
         0
       ],
-      "explanation": "Inadequate muscle relaxation allows spontaneous diaphragmatic contraction against controlled ventilation, producing an inspiratory dip or notch during the alveolar plateau known as a curare cleft[cite: 3].",
+      "explanation": "Inadequate muscle relaxation allows spontaneous diaphragmatic contraction against controlled ventilation, producing an inspiratory dip or notch during the alveolar plateau known as a curare cleft.",
       "citation": "Monitoring · Slides 47, 51",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -15019,7 +15011,7 @@
         1,
         5
       ],
-      "explanation": "Carboxyhemoglobin (COHb) absorbs red light at 660 nm identically to oxyhemoglobin, causing conventional two-wavelength pulse oximeters to register falsely elevated readings despite severe tissue hypoxia[cite: 3].",
+      "explanation": "Carboxyhemoglobin (COHb) absorbs red light at 660 nm identically to oxyhemoglobin, causing conventional two-wavelength pulse oximeters to register falsely elevated readings despite severe tissue hypoxia.",
       "citation": "Monitoring · Slides 74, 75, 76",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -15051,7 +15043,7 @@
       "answer": [
         3
       ],
-      "explanation": "At 1 atmosphere, Sevoflurane boils at 58.6°C (Desflurane boils at 22.8°C, Isoflurane at 48.5°C, and Halothane at 50.2°C)[cite: 2].",
+      "explanation": "At 1 atmosphere, Sevoflurane boils at 58.6°C (Desflurane boils at 22.8°C, Isoflurane at 48.5°C, and Halothane at 50.2°C).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -15083,7 +15075,7 @@
       "answer": [
         0
       ],
-      "explanation": "Stacking two or more washers increases the space between the cylinder valve and the yoke face, allowing the post to sit clear of the index pins and defeating the PISS safety mechanism[cite: 2].",
+      "explanation": "Stacking two or more washers increases the space between the cylinder valve and the yoke face, allowing the post to sit clear of the index pins and defeating the PISS safety mechanism.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 10, 20",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -15119,7 +15111,7 @@
         1,
         5
       ],
-      "explanation": "Recommendations to reduce environmental greenhouse gas impact include avoiding N2O carrier gas, minimizing fresh gas flows (especially with desflurane, which has a 14-year atmospheric lifespan), and substituting regional/TIVA techniques when appropriate[cite: 1].",
+      "explanation": "Recommendations to reduce environmental greenhouse gas impact include avoiding N2O carrier gas, minimizing fresh gas flows (especially with desflurane, which has a 14-year atmospheric lifespan), and substituting regional/TIVA techniques when appropriate.",
       "citation": "CO₂ & Scavenging · Slides 22, 23",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -15151,7 +15143,7 @@
       "answer": [
         1
       ],
-      "explanation": "Recirculating OR ventilation systems must deliver 15 to 21 total air exchanges per hour, of which at least three exchanges must be fresh outside air[cite: 1].",
+      "explanation": "Recirculating OR ventilation systems must deliver 15 to 21 total air exchanges per hour, of which at least three exchanges must be fresh outside air.",
       "citation": "CO₂ & Scavenging · Slide 17",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -15183,7 +15175,7 @@
       "answer": [
         0
       ],
-      "explanation": "RSI with cricoid pressure is indicated when a patient is at high risk for pulmonary aspiration of gastric contents (e.g., non-fasted state, trauma, bowel obstruction, morbid obesity, pregnancy)[cite: 4].",
+      "explanation": "RSI with cricoid pressure is indicated when a patient is at high risk for pulmonary aspiration of gastric contents (e.g., non-fasted state, trauma, bowel obstruction, morbid obesity, pregnancy).",
       "citation": "Airway Equipment · Slide 3",
       "topic": "Airway",
       "imageSvg": null,
@@ -15218,7 +15210,7 @@
         2,
         5
       ],
-      "explanation": "The O2 flush valve delivers 35–75 L/min of unmetered, pure oxygen directly to the common gas outlet at intermediate pressure (40–50 psig), completely bypassing flowmeters and vaporizers[cite: 2]. Using it during inspiration risks barotrauma[cite: 2].",
+      "explanation": "The O2 flush valve delivers 35–75 L/min of unmetered, pure oxygen directly to the common gas outlet at intermediate pressure (40–50 psig), completely bypassing flowmeters and vaporizers. Using it during inspiration risks barotrauma.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 36, 37",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -15250,7 +15242,7 @@
       "answer": [
         0
       ],
-      "explanation": "A cuff that is too narrow requires higher inflation pressure to compress the artery, resulting in falsely elevated systolic and diastolic blood pressure readings[cite: 3].",
+      "explanation": "A cuff that is too narrow requires higher inflation pressure to compress the artery, resulting in falsely elevated systolic and diastolic blood pressure readings.",
       "citation": "Monitoring · Slides 61, 62, 90",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -15272,33 +15264,33 @@
       "id": "463",
       "set": 5,
       "type": "single",
-      "stem": "What is the saturated vapor pressure of Isoflurane at 20°C?",
+      "stem": "An open scavenging interface has too little vacuum during a case. What is the expected result?",
       "options": [
-        "160 mmHg",
-        "240 mmHg",
-        "244 mmHg",
-        "669 mmHg"
+        "Room air is entrained into the system",
+        "Waste gas spills into the operating room",
+        "The reservoir bag collapses",
+        "Negative pressure is transmitted directly to the breathing circuit"
       ],
       "answer": [
         1
       ],
-      "explanation": "At 20°C, the saturated vapor pressure of Isoflurane is 240 mmHg (Halothane is 244 mmHg, Sevoflurane is 160 mmHg, and Desflurane is 669 mmHg)[cite: 2].",
-      "citation": "Medical Gas Systems in Anesthesia · Slide 50",
-      "topic": "Medical Gases",
+      "explanation": "An open interface is valveless and open to room air. Too little vacuum allows waste anesthetic gas to spill into the room; excessive vacuum entrains room air.",
+      "citation": "Exam 1 Equipment Study Guide · p. 5",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "5",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 5",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "slides": "50",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 50"
+      "supp": null
     },
     {
       "id": "464",
@@ -15318,7 +15310,7 @@
         2,
         5
       ],
-      "explanation": "ASA Standard 2.3 mandates continuous ECG display, arterial BP/heart rate at least every 5 minutes, and continuous evaluation of circulation via palpation, auscultation, intra-arterial tracing, Doppler, or pulse oximetry plethysmography[cite: 3].",
+      "explanation": "ASA Standard 2.3 mandates continuous ECG display, arterial BP/heart rate at least every 5 minutes, and continuous evaluation of circulation via palpation, auscultation, intra-arterial tracing, Doppler, or pulse oximetry plethysmography.",
       "citation": "Monitoring · Slide 13",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -15350,7 +15342,7 @@
       "answer": [
         2
       ],
-      "explanation": "Normal hospital pipeline supply pressure for oxygen, nitrous oxide, and medical air is maintained at approximately 50 to 55 psig[cite: 2].",
+      "explanation": "Normal hospital pipeline supply pressure for oxygen, nitrous oxide, and medical air is maintained at approximately 50 to 55 psig.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 26, 33",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -15382,7 +15374,7 @@
       "answer": [
         0
       ],
-      "explanation": "The straight Miller blade is advanced underneath the epiglottis to directly trap and lift it forward, exposing the glottic opening[cite: 4].",
+      "explanation": "The straight Miller blade is advanced underneath the epiglottis to directly trap and lift it forward, exposing the glottic opening.",
       "citation": "Airway Equipment · Slide 10",
       "topic": "Airway",
       "imageSvg": null,
@@ -15417,7 +15409,7 @@
         4,
         5
       ],
-      "explanation": "Carbon monoxide production is specific to difluoromethyl ethers containing the -O-CHF2 group (Desflurane > Enflurane > Isoflurane)[cite: 1]. Sevoflurane and Halothane lack this moiety and do not produce CO[cite: 1].",
+      "explanation": "Carbon monoxide production is specific to difluoromethyl ethers containing the -O-CHF2 group (Desflurane > Enflurane > Isoflurane). Sevoflurane and Halothane lack this moiety and do not produce CO.",
       "citation": "CO₂ & Scavenging · Slides 6, 7",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -15449,7 +15441,7 @@
       "answer": [
         0
       ],
-      "explanation": "Calcium hydroxide constitutes ~80% of soda lime[cite: 1]. It reacts with sodium and potassium carbonates to precipitate calcium carbonate and regenerate the hydroxide catalysts[cite: 1].",
+      "explanation": "Calcium hydroxide constitutes ~80% of soda lime. It reacts with sodium and potassium carbonates to precipitate calcium carbonate and regenerate the hydroxide catalysts.",
       "citation": "CO₂ & Scavenging · Slides 2, 3",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -15481,7 +15473,7 @@
       "answer": [
         0
       ],
-      "explanation": "Channeling is the preferential flow of gas through paths of low resistance, such as along the smooth canister walls or through loosely packed granules, resulting in premature CO2 breakthrough despite unexhausted absorbent[cite: 1].",
+      "explanation": "Channeling is the preferential flow of gas through paths of low resistance, such as along the smooth canister walls or through loosely packed granules, resulting in premature CO2 breakthrough despite unexhausted absorbent.",
       "citation": "CO₂ & Scavenging · Slides 4, 5",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -15517,7 +15509,7 @@
         4,
         5
       ],
-      "explanation": "Decreased static compliance (and elevated Pplat) is caused by conditions affecting lung parenchyma, chest wall, or lung volume (ARDS, mainstem intubation, pulmonary edema, pneumothorax)[cite: 3]. Mucus plugging and bronchospasm increase airway resistance, elevating PIP alone while Pplat remains unchanged[cite: 3].",
+      "explanation": "Decreased static compliance (and elevated Pplat) is caused by conditions affecting lung parenchyma, chest wall, or lung volume (ARDS, mainstem intubation, pulmonary edema, pneumothorax). Mucus plugging and bronchospasm increase airway resistance, elevating PIP alone while Pplat remains unchanged.",
       "citation": "Monitoring · Slides 26, 32",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -15539,33 +15531,33 @@
       "id": "471",
       "set": 5,
       "type": "single",
-      "stem": "What is the PISS pin configuration for a Medical Air E-cylinder?",
+      "stem": "Hospital vacuum fails while a closed scavenging interface is in use. What happens first?",
       "options": [
-        "Positions 1 and 5",
-        "Positions 2 and 5",
-        "Positions 3 and 5",
-        "Positions 1 and 6"
+        "The reservoir bag distends and the positive-pressure relief valve may vent to the room",
+        "The reservoir bag collapses and the negative-pressure valve opens",
+        "The breathing circuit immediately goes to zero pressure",
+        "Room air is entrained through an open port"
       ],
       "answer": [
         0
       ],
-      "explanation": "Under the Pin Index Safety System, Medical Air uses pin coordinates 1 and 5[cite: 2]. Oxygen uses 2 and 5; Nitrous oxide uses 3 and 5[cite: 2].",
-      "citation": "Medical Gas Systems in Anesthesia · Slide 18",
-      "topic": "Medical Gases",
+      "explanation": "With vacuum failure in a closed interface, waste gas accumulates and the reservoir bag distends. The positive-pressure relief valve then vents excess gas to the room.",
+      "citation": "Exam 1 Equipment Study Guide · p. 5",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Equipment Study Guide"
+        ],
+        "pages": "5",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Equipment Study Guide",
+      "sourceLocator": "p. 5",
+      "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "slides": "18",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 18"
+      "supp": null
     },
     {
       "id": "472",
@@ -15581,7 +15573,7 @@
       "answer": [
         0
       ],
-      "explanation": "An unexplained, rapid rise in EtCO2 is the earliest and most sensitive sign of malignant hyperthermia, reflecting massive skeletal muscle hypermetabolism[cite: 3]. Hyperthermia itself is a late sign[cite: 3].",
+      "explanation": "An unexplained, rapid rise in EtCO2 is the earliest and most sensitive sign of malignant hyperthermia, reflecting massive skeletal muscle hypermetabolism. Hyperthermia itself is a late sign.",
       "citation": "Monitoring · Slides 43, 50, 82",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -15616,7 +15608,7 @@
         0,
         3
       ],
-      "explanation": "Second-generation LMAs incorporate an esophageal drain tube (to vent gastric air and pass an orogastric tube) and an engineered cuff design providing higher airway seal pressures (typically >30 cmH2O)[cite: 4]. They do NOT provide 100% protection against aspiration nor are they laser-resistant[cite: 4].",
+      "explanation": "Second-generation LMAs incorporate an esophageal drain tube (to vent gastric air and pass an orogastric tube) and an engineered cuff design providing higher airway seal pressures (typically >30 cmH2O). They do NOT provide 100% protection against aspiration nor are they laser-resistant.",
       "citation": "Airway Equipment · Slide 14",
       "topic": "Airway",
       "imageSvg": null,
@@ -15648,7 +15640,7 @@
       "answer": [
         2
       ],
-      "explanation": "The critical temperature of N2O is +36.4°C (above room temperature)[cite: 2]. Because of this, it remains a liquid under compression inside the cylinder at room temperature[cite: 2].",
+      "explanation": "The critical temperature of N2O is +36.4°C (above room temperature). Because of this, it remains a liquid under compression inside the cylinder at room temperature.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 14",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -15680,7 +15672,7 @@
       "answer": [
         0
       ],
-      "explanation": "The dicrotic notch on an arterial waveform marks the closure of the aortic valve and signifies the transition from systole to diastole[cite: 3].",
+      "explanation": "The dicrotic notch on an arterial waveform marks the closure of the aortic valve and signifies the transition from systole to diastole.",
       "citation": "Monitoring · Slide 72",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -15716,7 +15708,7 @@
         2,
         5
       ],
-      "explanation": "Compound A formation from sevoflurane is promoted by warm/dry absorbent, high concentrations of dialed agent, and low fresh gas flows[cite: 1]. High flows and adequate hydration protect against it[cite: 1].",
+      "explanation": "Compound A formation from sevoflurane is promoted by warm/dry absorbent, high concentrations of dialed agent, and low fresh gas flows. High flows and adequate hydration protect against it.",
       "citation": "CO₂ & Scavenging · Slide 6",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -15748,7 +15740,7 @@
       "answer": [
         0
       ],
-      "explanation": "When use stops, resting exhausted absorbent can undergo a temporary pH shift that bleaches ethyl violet back to white[cite: 1]. Upon resuming use, it rapidly turns purple again, misleading providers who rely solely on color[cite: 1].",
+      "explanation": "When use stops, resting exhausted absorbent can undergo a temporary pH shift that bleaches ethyl violet back to white. Upon resuming use, it rapidly turns purple again, misleading providers who rely solely on color.",
       "citation": "CO₂ & Scavenging · Slide 4",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -15780,7 +15772,7 @@
       "answer": [
         0
       ],
-      "explanation": "The blood:gas partition coefficient of Desflurane is 0.42 (Sevoflurane is 0.65, Isoflurane is 1.46, and Halothane is 2.50)[cite: 2].",
+      "explanation": "The blood:gas partition coefficient of Desflurane is 0.42 (Sevoflurane is 0.65, Isoflurane is 1.46, and Halothane is 2.50).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -15815,7 +15807,7 @@
         1,
         2
       ],
-      "explanation": "To prevent hypoxia, the O2 knob is uniquely tactile (larger, fluted) and O2 is positioned furthest downstream (last on the right) so any upstream leaks will leak other gases rather than oxygen[cite: 2].",
+      "explanation": "To prevent hypoxia, the O2 knob is uniquely tactile (larger, fluted) and O2 is positioned furthest downstream (last on the right) so any upstream leaks will leak other gases rather than oxygen.",
       "citation": "Medical Gas Systems in Anesthesia · Slides 40, 41",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -15880,7 +15872,7 @@
       "answer": [
         0
       ],
-      "explanation": "The cricothyroid membrane is bounded superiorly by the inferior border of the thyroid cartilage and inferiorly by the superior border of the cricoid cartilage[cite: 4].",
+      "explanation": "The cricothyroid membrane is bounded superiorly by the inferior border of the thyroid cartilage and inferiorly by the superior border of the cricoid cartilage.",
       "citation": "Airway Equipment · Slide 15",
       "topic": "Airway",
       "imageSvg": null,
@@ -15916,7 +15908,7 @@
         4,
         5
       ],
-      "explanation": "Pulmonary embolism (increased dead space), hypotension (decreased pulmonary perfusion), and airway displacement/extubation decrease delivery of CO2 to the sensor, reducing EtCO2[cite: 3]. Malignant hyperthermia, bicarbonate delivery, and tourniquet release transiently increase EtCO2[cite: 3].",
+      "explanation": "Pulmonary embolism (increased dead space), hypotension (decreased pulmonary perfusion), and airway displacement/extubation decrease delivery of CO2 to the sensor, reducing EtCO2. Malignant hyperthermia, bicarbonate delivery, and tourniquet release transiently increase EtCO2.",
       "citation": "Monitoring · Slides 43, 50",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -15938,33 +15930,33 @@
       "id": "483",
       "set": 5,
       "type": "single",
-      "stem": "What is the PISS pin configuration for Nitrous Oxide?",
+      "stem": "A conventional pulse oximeter is exposed to significant methemoglobin. Toward what saturation does the reading tend?",
       "options": [
-        "Positions 1 and 5",
-        "Positions 2 and 5",
-        "Positions 3 and 5",
-        "Positions 2 and 4"
+        "50%",
+        "70%",
+        "85%",
+        "100%"
       ],
       "answer": [
         2
       ],
-      "explanation": "Nitrous oxide uses pin positions 3 and 5 on the PISS indexing system[cite: 2].",
-      "citation": "Medical Gas Systems in Anesthesia · Slide 18",
-      "topic": "Medical Gases",
+      "explanation": "The Exam 1 quick-reference material notes that methemoglobinemia drives conventional pulse-oximetry readings toward approximately 85%, limiting the reliability of the displayed saturation.",
+      "citation": "Exam 1 Basics Study Guide · p. 3",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Basics Study Guide"
+        ],
+        "pages": "3",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Basics Study Guide",
+      "sourceLocator": "p. 3",
+      "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "slides": "18",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 18"
+      "supp": null
     },
     {
       "id": "484",
@@ -15980,7 +15972,7 @@
       "answer": [
         3
       ],
-      "explanation": "Lecture data shows that 94% to 99% of all OR anesthetic contamination stems from provider technique errors (e.g., leaving gas on during intubation, poorly seated masks/LMAs, unsealed ETT cuffs, liquid agent spillage)[cite: 1].",
+      "explanation": "Lecture data shows that 94% to 99% of all OR anesthetic contamination stems from provider technique errors (e.g., leaving gas on during intubation, poorly seated masks/LMAs, unsealed ETT cuffs, liquid agent spillage).",
       "citation": "CO₂ & Scavenging · Slide 14",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -16015,7 +16007,7 @@
         1,
         5
       ],
-      "explanation": "Carbon monoxide production is specific to difluoromethyl ethers containing the -O-CHF2 group (Desflurane > Enflurane > Isoflurane)[cite: 1]. Sevoflurane and Halothane lack this moiety and do not produce CO[cite: 1].",
+      "explanation": "Carbon monoxide production is specific to difluoromethyl ethers containing the -O-CHF2 group (Desflurane > Enflurane > Isoflurane). Sevoflurane and Halothane lack this moiety and do not produce CO.",
       "citation": "CO₂ & Scavenging · Slides 6, 7",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -16047,7 +16039,7 @@
       "answer": [
         2
       ],
-      "explanation": "For nonrecirculating operating room ventilation systems, a rate of 15 or more total air exchanges per hour is recommended[cite: 1].",
+      "explanation": "For nonrecirculating operating room ventilation systems, a rate of 15 or more total air exchanges per hour is recommended.",
       "citation": "CO₂ & Scavenging · Slide 16",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -16079,7 +16071,7 @@
       "answer": [
         3
       ],
-      "explanation": "At 20°C, the saturated vapor pressure of Desflurane is 669 mmHg (Halothane is 244 mmHg, Isoflurane is 240 mmHg, and Sevoflurane is 160 mmHg)[cite: 2].",
+      "explanation": "At 20°C, the saturated vapor pressure of Desflurane is 669 mmHg (Halothane is 244 mmHg, Isoflurane is 240 mmHg, and Sevoflurane is 160 mmHg).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -16100,70 +16092,66 @@
     {
       "id": "488",
       "set": 5,
-      "type": "multi",
-      "stem": "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
+      "type": "single",
+      "stem": "A noninvasive blood pressure cuff is too small for the patient's arm. What error is expected?",
       "options": [
-        "Sudden massive pulmonary thromboembolism",
-        "Severe accidental hypothermia with core temperature < 32°C",
-        "Intravenous administration of sodium bicarbonate",
-        "Acute cardiac arrest with cessation of pulmonary blood flow",
-        "Deflation and release of a lower extremity surgical tourniquet",
-        "Acute hypoventilation in a spontaneously breathing patient"
+        "Falsely low pressure",
+        "Falsely high pressure",
+        "No effect on systolic pressure",
+        "Only diastolic pressure is affected"
       ],
       "answer": [
-        2,
-        4,
-        5
+        1
       ],
-      "explanation": "Increased EtCO2 results from increased metabolic production, increased delivery to the lungs (bicarbonate bolus, tourniquet release), or decreased alveolar elimination (hypoventilation)[cite: 3]. Pulmonary embolism, hypothermia, and cardiac arrest decrease EtCO2[cite: 3].",
-      "citation": "Monitoring · Slides 41, 43, 50",
+      "explanation": "A cuff that is too small or loose tends to produce falsely high readings. The bladder should be about 40% of arm circumference in width and about 80% in length.",
+      "citation": "Exam 1 Basics Study Guide · p. 45",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Basics Study Guide"
+        ],
+        "pages": "45",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Basics Study Guide",
+      "sourceLocator": "p. 45",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
-        ],
-        "slides": "41, 43, 50",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 41, 43, 50"
+      "supp": null
     },
     {
       "id": "489",
       "set": 5,
       "type": "single",
-      "stem": "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?",
+      "stem": "Peak inspiratory pressure and plateau pressure both rise substantially. Which mechanism best fits this pattern?",
       "options": [
-        "They act as catalysts/activators to accelerate the initial absorption reaction",
-        "They permanently bind CO2 without undergoing regeneration",
-        "They neutralize toxic carbon monoxide gas",
-        "They act as moisture desiccants to prevent rain-out in the circuit"
+        "Increased airway resistance only",
+        "Decreased lung or chest-wall compliance",
+        "Sampling-line obstruction",
+        "Circuit disconnection"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "NaOH and KOH function as catalysts to speed the initial neutralization reaction by forming carbonates; they are subsequently regenerated when reacting with calcium hydroxide[cite: 1].",
-      "citation": "CO₂ & Scavenging · Slide 2",
-      "topic": "CO₂ & Scavenging",
+      "explanation": "When peak and plateau pressures rise together, the problem is reduced compliance or increased delivered tidal volume rather than isolated airway resistance.",
+      "citation": "Exam 1 Basics Study Guide · p. 38",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Basics Study Guide"
+        ],
+        "pages": "38",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Basics Study Guide",
+      "sourceLocator": "p. 38",
+      "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "slides": "2",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 2"
+      "supp": null
     },
     {
       "id": "490",
@@ -16179,7 +16167,7 @@
       "answer": [
         1
       ],
-      "explanation": "The critical temperature of oxygen is -118.6°C[cite: 2]. Above this temperature, oxygen can only exist in a gaseous state regardless of applied pressure[cite: 2].",
+      "explanation": "The critical temperature of oxygen is -118.6°C. Above this temperature, oxygen can only exist in a gaseous state regardless of applied pressure.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 11",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -16200,37 +16188,34 @@
     {
       "id": "491",
       "set": 5,
-      "type": "multi",
-      "stem": "Which of the following hemoglobin species will cause a deceptively normal or falsely elevated oxygen saturation reading on a conventional two-wavelength pulse oximeter? (Select 2)",
+      "type": "single",
+      "stem": "Peak inspiratory pressure rises while plateau pressure remains unchanged. What should be suspected?",
       "options": [
-        "Methemoglobin",
-        "Sulfhemoglobin",
-        "Carboxyhemoglobin",
-        "Deoxyhemoglobin",
-        "Fetal hemoglobin",
-        "Oxyhemoglobin"
+        "Reduced lung compliance",
+        "Increased airway resistance such as bronchospasm or a kinked ETT",
+        "Tension pneumothorax with falling compliance",
+        "Abdominal insufflation"
       ],
       "answer": [
-        2,
-        5
+        1
       ],
-      "explanation": "Carboxyhemoglobin (COHb) absorbs red light at 660 nm identically to oxyhemoglobin, causing conventional two-wavelength pulse oximeters to register falsely elevated readings despite severe tissue hypoxia[cite: 3].",
-      "citation": "Monitoring · Slides 74, 75, 76",
+      "explanation": "A rise in peak pressure with an unchanged plateau pressure points to increased resistance or inspiratory flow. Examples include bronchospasm, secretions, or a kinked endotracheal tube.",
+      "citation": "Exam 1 Basics Study Guide · p. 38",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Basics Study Guide"
+        ],
+        "pages": "38",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Basics Study Guide",
+      "sourceLocator": "p. 38",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
-        ],
-        "slides": "74, 75, 76",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 74, 75, 76"
+      "supp": null
     },
     {
       "id": "492",
@@ -16246,7 +16231,7 @@
       "answer": [
         2
       ],
-      "explanation": "The blood:gas partition coefficient of Isoflurane is 1.46 (Desflurane is 0.42, Sevoflurane is 0.65, and Halothane is 2.50)[cite: 2].",
+      "explanation": "The blood:gas partition coefficient of Isoflurane is 1.46 (Desflurane is 0.42, Sevoflurane is 0.65, and Halothane is 2.50).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -16268,33 +16253,33 @@
       "id": "493",
       "set": 5,
       "type": "single",
-      "stem": "What capnographic finding appears when a patient breathes spontaneously against the ventilator due to waning neuromuscular blockade?",
+      "stem": "The capnogram suddenly becomes flat at zero, but peak pressure and exhaled tidal volume remain unchanged. Which equipment problem is most likely?",
       "options": [
-        "Curare cleft in Phase III",
-        "Shark-fin Phase II upstroke",
-        "Cardiac oscillations in Phase IV",
-        "Elevated baseline in Phase I"
+        "Sampling-line disconnection or obstruction",
+        "Exhausted CO2 absorbent",
+        "Bronchospasm",
+        "Increased metabolic CO2 production"
       ],
       "answer": [
         0
       ],
-      "explanation": "Inadequate muscle relaxation allows spontaneous diaphragmatic contraction against controlled ventilation, producing an inspiratory dip or notch during the alveolar plateau known as a curare cleft[cite: 3].",
-      "citation": "Monitoring · Slides 47, 51",
+      "explanation": "A sudden loss of the capnogram with otherwise unchanged ventilation mechanics favors a sampling-line problem rather than loss of ventilation. Flat-line causes also include disconnection, apnea, or arrest, so the rest of the monitor data matter.",
+      "citation": "Exam 1 Basics Study Guide · p. 43",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Basics Study Guide"
+        ],
+        "pages": "43",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Basics Study Guide",
+      "sourceLocator": "p. 43",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
-        ],
-        "slides": "47, 51",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 47, 51"
+      "supp": null
     },
     {
       "id": "494",
@@ -16314,7 +16299,7 @@
         1,
         3
       ],
-      "explanation": "Increased EtCO2 results from increased metabolic production (malignant hyperthermia, sepsis, fever) or increased delivery (bicarbonate administration, tourniquet release)[cite: 3]. Embolism, hypothermia, and disconnections reduce EtCO2[cite: 3].",
+      "explanation": "Increased EtCO2 results from increased metabolic production (malignant hyperthermia, sepsis, fever) or increased delivery (bicarbonate administration, tourniquet release). Embolism, hypothermia, and disconnections reduce EtCO2.",
       "citation": "Monitoring · Slides 43, 50",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -16336,132 +16321,129 @@
       "id": "495",
       "set": 5,
       "type": "single",
-      "stem": "What is the PISS pin configuration for an Oxygen E-cylinder?",
+      "stem": "What does a capnogram baseline that fails to return to zero most strongly suggest?",
       "options": [
-        "Positions 1 and 5",
-        "Positions 2 and 5",
-        "Positions 3 and 5",
-        "Positions 2 and 6"
-      ],
-      "answer": [
-        1
-      ],
-      "explanation": "Under the Pin Index Safety System, Oxygen uses pin positions 2 and 5[cite: 2].",
-      "citation": "Medical Gas Systems in Anesthesia · Slide 18",
-      "topic": "Medical Gases",
-      "imageSvg": null,
-      "image": null,
-      "imageId": null,
-      "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Medical Gas Systems in Anesthesia"
-        ],
-        "slides": "18",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 18"
-    },
-    {
-      "id": "496",
-      "set": 5,
-      "type": "single",
-      "stem": "What is the formula used to calculate Mean Body Temperature based on core and skin measurements?",
-      "options": [
-        "Mean Temp = 0.85 * Tcore + 0.15 * Tskin",
-        "Mean Temp = 0.50 * Tcore + 0.50 * Tskin",
-        "Mean Temp = 0.67 * Tcore + 0.33 * Tskin",
-        "Mean Temp = 0.95 * Tcore + 0.05 * Tskin"
+        "Rebreathing",
+        "Pulmonary embolism",
+        "Hyperventilation",
+        "Cardiac arrest"
       ],
       "answer": [
         0
       ],
-      "explanation": "Mean body temperature is clinically calculated as: Mean Temp = (0.85 * Tcore) + (0.15 * Tskin), reflecting the dominant contribution of the central core thermal compartment[cite: 3].",
-      "citation": "Monitoring · Slide 81",
+      "explanation": "An elevated inspiratory baseline indicates inspired CO2 and therefore rebreathing. Causes include exhausted absorbent, an incompetent valve, or inadequate fresh gas flow.",
+      "citation": "Exam 1 Basics Study Guide · p. 43",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Basics Study Guide"
+        ],
+        "pages": "43",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Basics Study Guide",
+      "sourceLocator": "p. 43",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation"
-        ],
-        "slides": "81",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 81"
+      "supp": null
     },
     {
-      "id": "497",
+      "id": "496",
       "set": 5,
-      "type": "multi",
-      "stem": "Which of the following design features are incorporated into mechanical flowmeters on an anesthesia workstation to prevent delivery of a hypoxic gas mixture? (Select 2)",
+      "type": "single",
+      "stem": "During cardiopulmonary resuscitation, ETCO2 suddenly rises sharply. What event should be suspected?",
       "options": [
-        "Nitrous oxide is plumbed into an independent auxiliary manifold",
-        "Thorpe tubes have a uniform, non-tapered internal diameter",
-        "Flow control valves automatically increase fresh gas flow during apnea",
-        "Check valves prevent volatile agent from entering the glass tubes",
-        "The oxygen flow control knob is physically larger and fluted",
-        "Oxygen is always positioned last in the manifold sequence closest to the outlet"
+        "Worsening bronchospasm",
+        "Return of spontaneous circulation",
+        "Sampling-line occlusion",
+        "Esophageal intubation"
       ],
       "answer": [
-        4,
-        5
+        1
       ],
-      "explanation": "To prevent hypoxia, the O2 knob is uniquely tactile (larger, fluted) and O2 is positioned furthest downstream (last on the right) so any upstream leaks will leak other gases rather than oxygen[cite: 2].",
-      "citation": "Medical Gas Systems in Anesthesia · Slides 40, 41",
-      "topic": "Medical Gases",
+      "explanation": "A sudden rise in ETCO2 during CPR is a classic sign of return of spontaneous circulation because pulmonary blood flow and CO2 delivery to the lungs increase abruptly.",
+      "citation": "Exam 1 Basics Study Guide · p. 43",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Basics Study Guide"
+        ],
+        "pages": "43",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Basics Study Guide",
+      "sourceLocator": "p. 43",
+      "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
+      "supp": null
+    },
+    {
+      "id": "497",
+      "set": 5,
+      "type": "single",
+      "stem": "Which ECG leads does the Exam 1 monitoring guide emphasize displaying for rhythm and ischemia surveillance?",
+      "options": [
+        "I and aVR",
+        "II and V3",
+        "III and V6",
+        "aVL and V1"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "The guide emphasizes lead II for rhythm and V3 for ischemia surveillance, noting V3 had the highest sensitivity in the cited vascular-surgery data.",
+      "citation": "Exam 1 Basics Study Guide · p. 44",
       "sourceMeta": {
         "families": [
-          "Medical Gas Systems in Anesthesia"
+          "Exam 1 Basics Study Guide"
         ],
-        "slides": "40, 41",
-        "citationFormat": "slides"
+        "pages": "44",
+        "citationFormat": "study-guide"
       },
-      "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slides 40, 41"
+      "sourceTitle": "Exam 1 Basics Study Guide",
+      "sourceLocator": "p. 44",
+      "topic": "Monitoring",
+      "imageSvg": null,
+      "image": null,
+      "imageId": null,
+      "disc": null,
+      "supp": null
     },
     {
       "id": "498",
       "set": 5,
       "type": "single",
-      "stem": "How much carbon dioxide can be absorbed by 100 g of fresh soda lime absorbent?",
+      "stem": "How does underdamping of an arterial pressure monitoring system typically affect systolic pressure?",
       "options": [
-        "Approximately 5 L",
-        "Approximately 12 L",
-        "Approximately 26 L",
-        "Approximately 50 L"
+        "Underestimates it by 15–30 mmHg",
+        "Overestimates it by about 15–30 mmHg",
+        "Leaves systolic pressure unchanged",
+        "Forces MAP to zero"
       ],
       "answer": [
-        2
+        1
       ],
-      "explanation": "Soda lime absorbs approximately 19% of its weight in carbon dioxide; therefore, 100 g of soda lime absorbs approximately 26 L of CO2[cite: 1].",
-      "citation": "CO₂ & Scavenging · Slide 2",
-      "topic": "CO₂ & Scavenging",
+      "explanation": "Underdamping exaggerates waveform amplitude and can overestimate systolic pressure by roughly 15–30 mmHg.",
+      "citation": "Exam 1 Basics Study Guide · p. 45",
+      "sourceMeta": {
+        "families": [
+          "Exam 1 Basics Study Guide"
+        ],
+        "pages": "45",
+        "citationFormat": "study-guide"
+      },
+      "sourceTitle": "Exam 1 Basics Study Guide",
+      "sourceLocator": "p. 45",
+      "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
       "imageId": null,
       "disc": null,
-      "supp": null,
-      "sourceMeta": {
-        "families": [
-          "CO₂ Absorbents and Scavenging"
-        ],
-        "slides": "2",
-        "citationFormat": "slides"
-      },
-      "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 2"
+      "supp": null
     },
     {
       "id": "499",
@@ -16477,7 +16459,7 @@
       "answer": [
         0
       ],
-      "explanation": "At 20°C, the saturated vapor pressure of Sevoflurane is 160 mmHg (Isoflurane is 240 mmHg, Halothane is 244 mmHg, and Desflurane is 669 mmHg)[cite: 2].",
+      "explanation": "At 20°C, the saturated vapor pressure of Sevoflurane is 160 mmHg (Isoflurane is 240 mmHg, Halothane is 244 mmHg, and Desflurane is 669 mmHg).",
       "citation": "Medical Gas Systems in Anesthesia · Slide 50",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -16509,7 +16491,7 @@
       "answer": [
         0
       ],
-      "explanation": "During cardiac arrest, low cardiac output severely limits delivery of CO2 to the lungs[cite: 3]. Upon ROSC, the sudden restoration of pulmonary blood flow washes accumulated CO2 out of tissues into the alveoli, causing an abrupt surge in EtCO2[cite: 3].",
+      "explanation": "During cardiac arrest, low cardiac output severely limits delivery of CO2 to the lungs. Upon ROSC, the sudden restoration of pulmonary blood flow washes accumulated CO2 out of tissues into the alveoli, causing an abrupt surge in EtCO2.",
       "citation": "Monitoring · Slide 46",
       "topic": "Monitoring",
       "imageSvg": null,
