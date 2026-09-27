@@ -1,48 +1,92 @@
-.mbu-global-nav {
-  box-sizing: border-box;
-  display: flex; align-items: center; gap: 14px;
-  max-width: 1100px; min-height: 62px;
-  margin: 12px auto 18px; padding: 9px 14px;
-  background: #fff; border: 1px solid #cbd5e0; border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,.05);
-  color: #1a365d;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+.mbu-global-nav{
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  gap:18px;
+  width:calc(100% - 24px);
+  max-width:1120px;
+  min-height:58px;
+  margin:10px auto 18px;
+  padding:8px 12px 8px 16px;
+  background:#fff;
+  border:1px solid #d7dee8;
+  border-radius:14px;
+  box-shadow:0 2px 8px rgba(15,23,42,.045);
+  color:#1a365d;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
-.mbu-global-nav * { box-sizing: border-box; }
-.mbu-global-nav a { text-decoration: none; white-space: nowrap; }
-.mbu-global-nav__brand { flex: none; color: #1a365d; font-weight: 850; font-size: 16px; }
-.mbu-global-nav[data-page="bank1"],
-.mbu-global-nav[data-page="bank2"],
-.mbu-global-nav[data-page="bank3"],
-.mbu-global-nav[data-page="hazards"],
-.mbu-global-nav[data-page="haz1"],
-.mbu-global-nav[data-page="haz2"],
-.mbu-global-nav[data-page="haz3"],
-.mbu-global-nav[data-page="hh"] { width: calc(100% - 28px); max-width: 1040px; }
-.mbu-global-nav__crumb { display: flex; align-items: center; gap: 8px; color: #718096; font-size: 14px; }
-.mbu-global-nav__crumb a { color: #4a5568; font-weight: 650; }
-.mbu-global-nav__brand[aria-current="page"], .mbu-global-nav__crumb a[aria-current="page"] { color: #2b6cb0; }
-.mbu-global-nav__crumb a + a::before { content: '/'; margin-right: 8px; color: #a0aec0; }
-.mbu-global-nav__quick { display: flex; align-items: center; gap: 4px; margin-left: auto; }
-.mbu-global-nav__quick a { padding: 7px 11px; border-radius: 8px; color: #1a365d; font-size: 14px; font-weight: 700; text-align:center; line-height:1.15; }
-.mbu-global-nav__link-main,.mbu-global-nav__link-sub{display:block}.mbu-global-nav__link-sub{margin-top:2px;font-size:10px;font-weight:650;color:#718096}.mbu-global-nav__quick a[aria-current="page"] .mbu-global-nav__link-sub{color:#e2e8f0}
-.mbu-global-nav__quick a:hover, .mbu-global-nav__crumb a:hover { background: #edf2f7; color: #1a365d; }
-.mbu-global-nav__quick a[aria-current="page"] { background: #1a365d; color: #fff; }
-.mbu-global-nav a:focus-visible, .mbu-global-nav select:focus-visible { outline: 3px solid #2b6cb0; outline-offset: 2px; }
-.mbu-global-nav__picker, .mbu-global-nav__picker-label { display: none; }
-@media (max-width: 1100px) {
-  .mbu-global-nav { margin: 8px 10px 14px; min-height: 54px; padding: 8px 12px; gap: 10px; }
-  .mbu-global-nav__crumb, .mbu-global-nav__quick { display: none; }
-  .mbu-global-nav__picker-label { display: none; }
-  .mbu-global-nav__picker { display: block; flex: 1 1 140px; min-width: 0; max-width: min(180px,42vw); min-height: 38px; margin-left:auto; padding: 6px 8px; border: 1px solid #cbd5e0; border-radius: 8px; background: #fff; color: #1a365d; font: 700 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; cursor: pointer; }
+.mbu-global-nav *{box-sizing:border-box}
+.mbu-global-nav a{text-decoration:none;white-space:nowrap}
+.mbu-global-nav__brand{
+  flex:none;
+  color:#1a365d;
+  font-size:16px;
+  font-weight:850;
+  letter-spacing:-.01em;
 }
-button.mbu-return.mbu-return {
-  display: inline-flex; align-items: center; justify-content: center;
-  min-height: 38px; padding: 8px 12px;
-  border: 1px solid #1a365d; border-radius: 8px;
-  background: #fff; color: #1a365d;
-  font: 700 14px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  text-decoration: none; cursor: pointer;
+.mbu-global-nav__brand[aria-current="page"]{color:#1a365d}
+.mbu-global-nav__primary{
+  display:flex;
+  align-items:center;
+  gap:4px;
+  min-width:0;
 }
-button.mbu-return.mbu-return:hover { background: #edf2f7; border-color: #2b6cb0; }
-button.mbu-return.mbu-return:focus-visible { outline: 3px solid #2b6cb0; outline-offset: 2px; }
+.mbu-global-nav__primary-link{
+  min-height:36px;
+  display:inline-flex;
+  align-items:center;
+  padding:7px 10px;
+  border-radius:9px;
+  color:#475569;
+  font-size:14px;
+  font-weight:700;
+}
+.mbu-global-nav__primary-link:hover{background:#f1f5f9;color:#1e3a5f}
+.mbu-global-nav__primary-link[aria-current="page"]{background:#eef4fb;color:#1e4f82}
+.mbu-global-nav__bank-wrap{display:flex;align-items:center}
+.mbu-global-nav__picker{
+  min-width:128px;
+  max-width:180px;
+  min-height:36px;
+  padding:6px 30px 6px 10px;
+  border:1px solid transparent;
+  border-radius:9px;
+  background:#fff;
+  color:#475569;
+  font:700 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  cursor:pointer;
+}
+.mbu-global-nav__picker:hover{background:#f1f5f9;color:#1e3a5f}
+.mbu-global-nav__picker:focus-visible,.mbu-global-nav a:focus-visible{outline:3px solid #2b6cb0;outline-offset:2px}
+
+button.mbu-return.mbu-return{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:38px;padding:8px 12px;
+  border:1px solid #1a365d;border-radius:8px;
+  background:#fff;color:#1a365d;
+  font:700 14px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  text-decoration:none;cursor:pointer;
+}
+button.mbu-return.mbu-return:hover{background:#edf2f7;border-color:#2b6cb0}
+button.mbu-return.mbu-return:focus-visible{outline:3px solid #2b6cb0;outline-offset:2px}
+
+@media(max-width:900px){
+  .mbu-global-nav{gap:10px;margin:8px 10px 14px;width:calc(100% - 20px);padding:8px 10px}
+  .mbu-global-nav__brand{font-size:15px}
+  .mbu-global-nav__primary{margin-left:auto}
+  .mbu-global-nav__primary-link{padding:7px 8px;font-size:13px}
+  .mbu-global-nav__picker{min-width:112px;max-width:145px;font-size:13px}
+}
+@media(max-width:700px){
+  .mbu-global-nav{flex-wrap:wrap;gap:7px 10px;padding:8px 10px}
+  .mbu-global-nav__brand{flex:1 1 auto}
+  .mbu-global-nav__primary{order:2;flex:1 0 100%;width:100%;display:grid;grid-template-columns:auto auto minmax(0,1fr);gap:4px}
+  .mbu-global-nav__primary-link{justify-content:center}
+  .mbu-global-nav__bank-wrap{min-width:0}
+  .mbu-global-nav__picker{width:100%;max-width:none;min-width:0}
+}
+@media(max-width:430px){
+  .mbu-global-nav__brand{font-size:14px}
+  .mbu-global-nav__primary{grid-template-columns:1fr 1fr}
+  .mbu-global-nav__bank-wrap{grid-column:1/-1}
+}
