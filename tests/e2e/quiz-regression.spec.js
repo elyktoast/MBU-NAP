@@ -1801,7 +1801,7 @@ test.describe('canonical quiz regression', () => {
   test('Signed-in user can delete account and return to signed-out state', async ({ page }) => {
     await seedSignedIn(page);
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let deleted=0;
-    await page.route(cloud+'/functions/v1/snar-delete-account',route=>{deleted++;return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({deleted:true})})});
+    await page.route(cloud+'/functions/v1/delete-account',route=>{deleted++;return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({deleted:true})})});
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
     await waitForAuth(page);
     await page.locator('.mbu-global-nav__cloud').click();
