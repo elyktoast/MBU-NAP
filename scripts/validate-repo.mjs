@@ -629,5 +629,13 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ["APP_ROOT=new URL('../../'","/auth/v1/signup?redirect_to=",'consumeAuthRedirect','access_token','refresh_token',"history.replaceState(null,'',location.pathname+location.search)"])if(!cloud.includes(token))fail('Supabase confirmation flow missing '+token);
 }
 
+// Supabase periodic sync must remain enabled and visible in the shared Tools UI.
+{
+ const cloud=read('equipment/assets/supabase-sync.js'),core=read('equipment/assets/app-core.js');
+ for(const token of ['AUTO_SYNC_INTERVAL=5*60*1000','function startAutoSync()','setInterval(','autoSyncIntervalMs:AUTO_SYNC_INTERVAL','nextAutoSyncAt'])if(!cloud.includes(token))fail('Supabase automatic sync missing '+token);
+ for(const token of ['function cloudAutoSyncText(info)','data-cloud-auto','Auto sync: every '])if(!core.includes(token))fail('Cloud Tools auto-sync status missing '+token);
+}
+
+
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
 console.log('Repository validation passed: Banks 1-3 are 500 questions each; Combined is 150 questions; local assets, Studio sources, shared quiz runtimes, answer indexes, and build manifest are valid.');
