@@ -25,6 +25,8 @@ jobs:
         run: npm run validate
       - name: Validate question content integrity
         run: npm run test:content
+      - name: Run semantic content audit
+        run: npm run test:semantic
       - name: Enforce performance and architecture budgets
         run: npm run test:perf
 
