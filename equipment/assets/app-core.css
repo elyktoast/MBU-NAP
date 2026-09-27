@@ -99,15 +99,4 @@
   .mbu-cloud-row{align-items:flex-start}
 }
 
-html[data-mbu-auth="locked"] body>:not(#mbu-auth-gate){visibility:hidden!important}
-.mbu-auth-gate{display:none;position:fixed;inset:0;z-index:12000;align-items:center;justify-content:center;padding:16px;background:#edf2f7;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1a202c}
-.mbu-auth-gate.open{display:flex;visibility:visible!important}
-.mbu-auth-gate__card{width:min(480px,100%);max-height:calc(100vh - 32px);overflow:auto;padding:24px;border:1px solid #dbe4ee;border-radius:18px;background:#fff;box-shadow:0 18px 48px #0002}
-.mbu-auth-gate h1{margin:4px 0 8px;color:#1a365d;font-size:28px}
-.mbu-auth-gate__intro{margin:0 0 18px;color:#4a5568;line-height:1.5}
-.mbu-auth-gate label{display:block;margin:10px 0;color:#4a5568;font-size:13px;font-weight:700}
-.mbu-auth-gate input{box-sizing:border-box;width:100%;min-height:46px;margin-top:4px;padding:10px 11px;border:1px solid #cbd5e0;border-radius:9px;background:#fff;color:#1a202c;font:500 16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-.mbu-auth-gate__links{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
-.mbu-auth-gate__links button{padding:0;border:0;background:transparent;color:#2b6cb0;font:700 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;cursor:pointer;text-decoration:underline}
-.mbu-auth-gate__privacy{margin:18px 0 0;padding-top:14px;border-top:1px solid #e2e8f0;color:#718096;font-size:12px;line-height:1.5}
-@media(max-width:640px){.mbu-auth-gate{padding:10px;align-items:flex-start}.mbu-auth-gate__card{max-height:calc(100vh - 20px);padding:18px;border-radius:14px}}
+.mbu-account-privacy{margin:16px 0 0;padding-top:14px;border-top:1px solid #e2e8f0;color:#718096;font-size:12px;line-height:1.5}
