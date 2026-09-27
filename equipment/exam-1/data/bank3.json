@@ -5671,7 +5671,7 @@
       "answer": [
         2
       ],
-      "explanation": "1% of about 2100 mL total is 21 mL of sevo vapor. Sump outflow is 21% sevo, so 79 mL of carrier gas must enter the sump to pick up 21 mL. The remaining 2000 mL bypasses. 2000:79 is about 25:1. 21:1 confuses the sump concentration with the ratio.",
+      "explanation": "At 20 C, saturated sump gas is 21% sevoflurane. For a 1% delivered concentration, the bypass-to-sump carrier-gas splitting ratio is approximately (0.21/0.01 - 1) / (1 - 0.21), or about 25:1. In other words, roughly 25 parts of fresh gas bypass the sump for every 1 part entering it.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 55 (PDF p. 28)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -5986,7 +5986,7 @@
         5
       ],
       "explanation": "Core temperature can be estimated from the bladder, distal esophagus, ear canal, trachea, nasopharynx, rectum, or PA blood, and core sites are preferred. Skin temperature doesn't adequately represent mean body temperature. During active cooling or rewarming, rectal temperature can lag.",
-      "citation": "Monitoring · Slides 81, 85 (PDF p. 82, 86)",
+      "citation": "Monitoring · Slides 81, 84 (PDF p. 82, 85)",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -5998,12 +5998,12 @@
         "families": [
           "Intraoperative Assessment, Monitoring & Data Interpretation"
         ],
-        "slides": "81, 85",
-        "pdfPages": "82, 86",
+        "slides": "81, 84",
+        "pdfPages": "82, 85",
         "citationFormat": "document"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 81, 85 · PDF p. 82, 86"
+      "sourceLocator": "Slides 81, 84 · PDF p. 82, 85"
     },
     {
       "id": "S2-C22",
@@ -6077,17 +6077,17 @@
       "id": "S2-N37",
       "set": 2,
       "type": "single",
-      "stem": "Compared with the aorta, how do radial artery systolic and pulse pressures usually compare?",
+      "stem": "What general peripheral waveform effect does the lecture describe as an arterial pulse travels from the aorta toward the radial artery?",
       "options": [
-        "They are identical when the transducer is leveled",
-        "Both are higher, because wave reflection distorts the peripheral waveform",
-        "Both are lower, because resistance falls peripherally",
-        "Systolic is lower but pulse pressure is higher"
+        "Systolic and pulse pressures remain identical at all arterial sites",
+        "Systolic and pulse pressures are often amplified by wave reflection",
+        "Systolic and pulse pressures both fall because peripheral resistance is lower",
+        "Only mean arterial pressure rises while systolic and pulse pressure stay unchanged"
       ],
       "answer": [
         1
       ],
-      "explanation": "As the pulse moves peripherally, wave reflection exaggerates systolic and pulse pressures, so radial SBP usually exceeds aortic SBP. The lecture also notes radial pressures can underestimate central pressures when hand vascular resistance changes, and vasodilators accentuate the discrepancy.",
+      "explanation": "The lecture states that peripheral wave reflection distorts the waveform and commonly exaggerates systolic and pulse pressures, with radial systolic pressure often exceeding aortic systolic pressure. It also notes that changes in hand vascular resistance can make radial pressure underestimate more central pressure, so the stem now asks specifically for the general waveform effect rather than implying it occurs in every patient.",
       "citation": "Monitoring · Slide 70 (PDF p. 71)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -6353,18 +6353,18 @@
       "id": "S2-G37",
       "set": 2,
       "type": "single",
-      "stem": "The hospital's O2 manifold uses H-cylinders as its reserve. About how much O2 does each H-cylinder hold compared with an E-cylinder?",
+      "stem": "Which statement correctly compares the oxygen H-cylinder and E-cylinder roles described in the lecture?",
       "options": [
-        "1590 L vs about 660 L",
-        "6000-8000 L vs about 660 L",
-        "2000 L vs about 625 L",
-        "15,900 L vs about 1590 L"
+        "H-cylinders are portable transport cylinders, while E-cylinders supply the central manifold",
+        "H-cylinder banks can supply a central reserve, while E-cylinders are portable refillable cylinders",
+        "Both H- and E-cylinders store liquid oxygen at room temperature",
+        "E-cylinders are used only for bulk hospital storage"
       ],
       "answer": [
         1
       ],
-      "explanation": "From the cylinder table: O2 H-cylinders hold 6000-8000 L; E-cylinders hold about 625-700 L (660 L in the lecture's math). E-cylinders are the transport tank; H-cylinders are the hospital reservoir. 15,900 L and 1590 L are the N2O H- and E-cylinder values.",
-      "citation": "Medical Gas Systems in Anesthesia · Slide 7 (PDF p. 4)",
+      "explanation": "The lecture describes high-pressure H-cylinder banks connected by manifolds as an oxygen supply source and E-cylinders as portable, refillable cylinders. It gives a 660 L capacity for the E-cylinder but does not provide an H-cylinder volume in the cited material, so the question now tests the supported role distinction instead of an unsupported capacity figure.",
+      "citation": "Medical Gas Systems in Anesthesia · Slide 11 (PDF p. 6)",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -6376,12 +6376,12 @@
         "families": [
           "Medical Gas Systems in Anesthesia"
         ],
-        "slides": "7",
-        "pdfPages": "4",
+        "slides": "11",
+        "pdfPages": "6",
         "citationFormat": "document"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slide 7 · PDF p. 4"
+      "sourceLocator": "Slide 11 · PDF p. 6"
     },
     {
       "id": "S2-N22",
@@ -7165,7 +7165,7 @@
       "answer": [
         3
       ],
-      "explanation": "Every direct laryngoscope has a handle, blade, and light source. The room setup (MS MAID) includes an additional blade and handle, and stress making sure spare batteries and battery equipment work. Positioning and blade choice don't fix a failing light.",
+      "explanation": "Direct laryngoscopes require a functioning handle, blade, and light source. The room-setup lecture specifically calls for an additional blade and handle within reach and reminds the provider to verify spare batteries and battery-powered equipment. Positioning or blade choice will not correct a failing light source.",
       "citation": "Airway Equipment · Slide 11 (PDF p. 11); Monitoring · Slide 3 (PDF p. 3)",
       "topic": "Airway",
       "imageSvg": null,
@@ -7179,12 +7179,12 @@
           "Intraoperative Assessment, Monitoring & Data Interpretation",
           "Airway Equipment"
         ],
-        "slides": "11",
-        "pdfPages": "11",
+        "slides": "3, 11",
+        "pdfPages": "3, 11",
         "citationFormat": "document"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 11 · PDF p. 11"
+      "sourceLocator": "Slide 3 · PDF p. 3"
     },
     {
       "id": "S3-D17",
@@ -7381,7 +7381,7 @@
         3,
         5
       ],
-      "explanation": "Slide 49: sidestream systems may aspirate about 200 mL/min, a large fraction of ventilation in small infants; cuffless tubes can produce falsely low ETCO2; and an adult circuit used for pediatrics adds dead space. Hyperthermia and bicarbonate raise CO2 load, and rebreathing raises the baseline.",
+      "explanation": "The lecture lists cuffless neonatal tubes and high sidestream sampling rates as causes of falsely low ETCO2, and notes that sidestream systems may remove up to about 200 mL/min, which is important in very small infants. It also lists use of an adult circuit in pediatric patients among situations where ETCO2 may underestimate PaCO2. Hyperthermia and bicarbonate increase CO2 load, while rebreathing raises the baseline.",
       "citation": "Monitoring · Slide 49 (PDF p. 50)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -7684,17 +7684,17 @@
       "id": "S3-P34",
       "set": 3,
       "type": "single",
-      "stem": "How should an arterial pressure transducer be zeroed?",
+      "stem": "To minimize hydrostatic error, where should an arterial pressure transducer usually be leveled?",
       "options": [
-        "Opened to atmosphere at the level of the catheter insertion site",
-        "Zeroed with the stopcock closed to air at the level of the floor",
-        "Opened to atmosphere at the level of the right atrium",
-        "Zeroed against the NIBP reading at any height"
+        "At the arterial catheter insertion site",
+        "At the level of the operating-room floor",
+        "At the level of the right atrium",
+        "At the level of the NIBP cuff"
       ],
       "answer": [
         2
       ],
-      "explanation": "Slide 66: zero and level the transducer to the appropriate reference point, usually the right atrium. Zeroing sets atmospheric pressure as the reference; leveling to the RA removes the hydrostatic error from gravity. The insertion site isn't the reference, and matching to a cuff isn't zeroing.",
+      "explanation": "The lecture instructs the provider to zero and level the transducer to the appropriate reference point, usually the right atrium. A transducer positioned above or below that reference introduces a hydrostatic pressure error.",
       "citation": "Monitoring · Slide 66 (PDF p. 67)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -8112,7 +8112,7 @@
       "answer": [
         2
       ],
-      "explanation": "Box 18.1 lists pain, anxiety, and awareness or 'light' anesthesia under hyperventilation causing decreased ETCO2. Rapid breathing with tachycardia and hypertension after stimulation fits. PE would drop BP, and an LMA leak shows up as expired N2 with a distorted trace.",
+      "explanation": "Pain, anxiety, and light anesthesia can cause hyperventilation and a lower ETCO2 in a spontaneously breathing patient. Rapid respirations together with rising heart rate and blood pressure immediately after incision fit that pattern. Pulmonary embolism would more often reduce perfusion and blood pressure, while an LMA leak can introduce expired nitrogen and lower measured CO2.",
       "citation": "Monitoring · Slide 43 (PDF p. 43)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -8180,7 +8180,7 @@
       "answer": [
         1
       ],
-      "explanation": "A properly functioning scavenging system reduces trace WAG concentrations by about 90%, so 200 ppm falls to about 20 ppm. That's still close to NIOSH's 25 ppm N2O limit, which is why technique errors (the source of 94-99% of contamination) still matter.",
+      "explanation": "The lecture states that a properly functioning scavenging system reduces trace waste-anesthetic-gas concentrations by about 90%. A 90% reduction from 200 ppm leaves approximately 20 ppm.",
       "citation": "CO₂ & Scavenging · Slide 18 (PDF p. 9)",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
@@ -8248,7 +8248,7 @@
       "answer": [
         3
       ],
-      "explanation": "PPV or O2 flush transmits pressure back into the vaporizer. When pressure releases, saturated gas from the chamber expands into the bypass channel, so the outflow carries extra agent. It's worse at low FGF and low liquid levels, and an outlet check valve minimizes it.",
+      "explanation": "The lecture describes the pumping effect as retrograde pressure from the breathing circuit entering the vaporizer during positive-pressure ventilation or oxygen-flush use. This can contaminate the bypass channel and increase delivered anesthetic concentration. Low fresh gas flow and a low liquid-agent level worsen the effect, while an outlet check valve helps minimize it.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 72 (PDF p. 36)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -8378,17 +8378,17 @@
       "id": "S3-H01",
       "set": 3,
       "type": "single",
-      "stem": "During a long case, the N2O E-cylinder gauge begins falling from 745 psig and now reads 400 psig. What does this mean?",
+      "stem": "During a long case, the N2O E-cylinder gauge finally begins to fall below 745 psig. What does that indicate?",
       "options": [
-        "Contents are unchanged; N2O pressure never reflects volume",
-        "About half the N2O remains, since 400 is about half of 745 psig",
-        "The liquid is gone; remaining gas now falls with pressure, about 215 L at 400 psig",
-        "Liquid remains; the drop reflects a failing first-stage regulator"
+        "Liquid N2O still remains, and gauge pressure now shows exactly how much",
+        "The liquid phase is gone, so pressure now falls as the remaining gaseous N2O is used",
+        "The cylinder is still essentially full because N2O pressure never changes with use",
+        "The pressure drop by itself proves the first-stage regulator has failed"
       ],
       "answer": [
-        2
+        1
       ],
-      "explanation": "N2O holds at 745 psig while liquid and gas are in equilibrium. Once the last liquid vaporizes, only gas remains and pressure falls in proportion to volume. The lecture's figure shows about 215 L left at 400 psig, so the cylinder is nearly empty. The 'half full' reasoning applies the O2 rule to the liquid phase, which doesn't work.",
+      "explanation": "At room temperature, an N2O cylinder remains near 745 psig while liquid and gas coexist in equilibrium. Once the last liquid vaporizes, only gas remains and the cylinder pressure begins to fall as its contents are consumed. The cited lecture does not provide a specific remaining-liter value at 400 psig, so that unsupported calculation has been removed.",
       "citation": "Medical Gas Systems in Anesthesia · Slide 14 (PDF p. 7)",
       "topic": "Medical Gases",
       "imageSvg": null,
@@ -8412,17 +8412,17 @@
       "id": "S3-P07",
       "set": 3,
       "type": "single",
-      "stem": "During CPR on an intubated patient, ETCO2 reads 6 mmHg with a consistent waveform. What does the lecture recommend?",
+      "stem": "ETCO2 abruptly falls with a preserved waveform and unchanged ventilator settings, while blood pressure falls at the same time. Which category on the lecture's capnogram-change slide best fits this pattern?",
       "options": [
-        "Improve compression quality to keep ETCO2 at least 10 mmHg",
-        "Remove the tube, since ETCO2 under 10 means esophageal placement",
-        "Increase ventilation rate to raise ETCO2 above 10",
-        "Accept it, since any detectable CO2 confirms adequate CPR"
+        "Bronchospasm",
+        "Hypoventilation",
+        "Hyperventilation",
+        "Decreased perfusion"
       ],
       "answer": [
-        0
+        3
       ],
-      "explanation": "CPR assessment on slide 46: attempt to maintain a minimum ETCO2 of 10 mmHg, which reflects the pulmonary blood flow that compressions generate. A consistent waveform supports tracheal placement. Faster ventilation LOWERS ETCO2 instead of raising it.",
+      "explanation": "A simultaneous fall in ETCO2 and blood pressure with the waveform still present points toward decreased pulmonary blood flow or perfusion. The lecture's capnogram-change slide specifically shows decreased perfusion as a cause of a lower ETCO2 trace. Bronchospasm changes waveform shape, while hypoventilation raises ETCO2.",
       "citation": "Monitoring · Slide 46 (PDF p. 47)",
       "topic": "Monitoring",
       "imageSvg": null,
@@ -8561,7 +8561,7 @@
         1,
         4
       ],
-      "explanation": "An uncuffed tube too small for the trachea lets anesthetic gas leak into the room (CO2 lecture, slide 14). ETT leaks also appear in Box 18.1 among equipment causes of decreased ETCO2. A leak lowers pressure and delivered volume, and it doesn't cause rebreathing.",
+      "explanation": "An uncuffed tube that is too small for the trachea can allow anesthetic gas to leak into the operating room. The monitoring material also lists endotracheal-tube leaks among causes of decreased ETCO2. A leak does not cause CO2 rebreathing, and it does not increase delivered tidal volume or peak inspiratory pressure.",
       "citation": "Airway Equipment · Slide 7 (PDF p. 7); CO₂ & Scavenging · Slide 14 (PDF p. 7); Monitoring · Slide 43 (PDF p. 43)",
       "topic": "Airway",
       "imageSvg": null,
@@ -8572,22 +8572,22 @@
       "orig": "X22",
       "sourceMeta": {
         "families": [
-          "Intraoperative Assessment, Monitoring & Data Interpretation",
           "CO₂ Absorbents and Scavenging",
+          "Intraoperative Assessment, Monitoring & Data Interpretation",
           "Airway Equipment"
         ],
-        "slides": "7",
+        "slides": "14",
         "pdfPages": "7",
         "citationFormat": "document"
       },
-      "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slide 7 · PDF p. 7"
+      "sourceTitle": "CO₂ Absorbents and Scavenging",
+      "sourceLocator": "Slide 14 · PDF p. 7"
     },
     {
       "id": "S3-H29",
       "set": 3,
       "type": "single",
-      "stem": "Each agent is run at 1 MAC with the same fresh gas flow for one hour. Which uses the most liquid agent?",
+      "stem": "Using the lecture's volatile-anesthetic properties table, which agent has the highest MAC at age 40?",
       "options": [
         "Desflurane",
         "Sevoflurane",
@@ -8597,8 +8597,8 @@
       "answer": [
         0
       ],
-      "explanation": "Liquid used (mL/hr) = vol% x FGF x 3, so it scales with the dialed percent. MAC at age 40: des 6.6%, sevo 1.8%, iso 1.17%, halothane 0.76%. Des needs the highest vol%, so it uses the most liquid.",
-      "citation": "Medical Gas Systems in Anesthesia · Slides 50, 52 (PDF p. 25, 26)",
+      "explanation": "The lecture table lists MAC at age 40 as approximately 6.6% for desflurane, 1.8% for sevoflurane, 1.17% for isoflurane, and 0.76% for halothane. Desflurane therefore has the highest MAC of the listed agents.",
+      "citation": "Medical Gas Systems in Anesthesia · Slide 50 (PDF p. 25)",
       "topic": "Medical Gases",
       "imageSvg": null,
       "image": null,
@@ -8610,12 +8610,12 @@
         "families": [
           "Medical Gas Systems in Anesthesia"
         ],
-        "slides": "50, 52",
-        "pdfPages": "25, 26",
+        "slides": "50",
+        "pdfPages": "25",
         "citationFormat": "document"
       },
       "sourceTitle": "Medical Gas Systems in Anesthesia",
-      "sourceLocator": "Slides 50, 52 · PDF p. 25, 26"
+      "sourceLocator": "Slide 50 · PDF p. 25"
     },
     {
       "id": "S3-D15",
