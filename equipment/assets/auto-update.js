@@ -6,10 +6,21 @@
   const runtimeBuild = script ? new URL(script.src).searchParams.get('b') : null;
   const cachedBaseline = sessionStorage.getItem(BUILD_CACHE_KEY);
   let baseline = runtimeBuild || (cachedBaseline && cachedBaseline.trim() ? cachedBaseline.trim() : null);
-  if (runtimeBuild) sessionStorage.setItem(BUILD_CACHE_KEY, runtimeBuild);
+  if (runtimeBuild) {
+    sessionStorage.setItem(BUILD_CACHE_KEY, runtimeBuild);
+    clearReloadMarker(runtimeBuild);
+  }
   else if (!baseline && cachedBaseline !== null) sessionStorage.removeItem(BUILD_CACHE_KEY);
   let checking = false;
   let lastCheck = 0;
+
+  function clearReloadMarker(build) {
+    if (!build) return;
+    const current = new URL(location.href);
+    if (current.searchParams.get('_mbu_reload') !== build) return;
+    current.searchParams.delete('_mbu_reload');
+    history.replaceState(history.state, '', current.href);
+  }
 
   async function readBuild() {
     const response = await fetch(manifestUrl.href + '?t=' + Date.now(), {
@@ -44,6 +55,7 @@
         if (reload.searchParams.get('_mbu_reload') === latest) {
           baseline = latest;
           sessionStorage.setItem(BUILD_CACHE_KEY, baseline);
+          clearReloadMarker(latest);
           return;
         }
         reload.searchParams.set('_mbu_reload', latest);
