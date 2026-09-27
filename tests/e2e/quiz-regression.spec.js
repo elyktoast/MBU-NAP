@@ -2386,6 +2386,8 @@ test.describe('canonical quiz regression', () => {
     await page.locator('#tryAdaptiveBtn').click();
     await waitForStudio(page);
     await expect(page.locator('#mbu-account-panel')).toHaveClass(/open/);
+    await expect(page.locator('[data-auth-view="signin"]')).toBeVisible();
+    await expect(page.locator('[data-auth-view="signup"]')).toBeVisible();
     await expect(page.locator('#adaptiveToggle')).not.toBeChecked();
     expect(await page.locator('#sourceChecks input[type=checkbox]:checked').count()).toBeGreaterThan(0);
   });
@@ -2394,6 +2396,8 @@ test.describe('canonical quiz regression', () => {
     await seedSignedIn(page);
     await page.goto(exam + '/studio.html?mode=adaptive');await waitForStudio(page);
     await expect(page.locator('#adaptiveToggle')).toBeChecked();
+    await expect(page.locator('#count')).toHaveValue('100');
+    await expect(page.locator('.studio-start-btn')).toHaveText('Begin Adaptive Quiz');
     expect(await page.locator('#sourceChecks input[type=checkbox]:checked').count()).toBeGreaterThan(0);
     await expect(page.locator('#mbu-account-panel')).toHaveCount(0);
   });
