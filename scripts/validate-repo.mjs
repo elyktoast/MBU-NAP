@@ -346,7 +346,8 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
   for(const token of ['data-cloud-consent','Privacy & account','data-privacy-submit','Delete account & data'])if(!core.includes(token))fail('Account legal controls missing '+token);
   if(!supabase.includes('submitPrivacyRequest')||!supabase.includes('/rest/v1/snar_privacy_requests'))fail('Private privacy-request API is not wired');
   for(const token of ['signUp(email,password,accepted=false)','snar_terms_version','snar_privacy_version','snar_adult_ack','snar_accepted_at'])if(!supabase.includes(token))fail('Signup acknowledgement audit contract missing '+token);
-  if(!supabase.includes('/functions/v1/snar-delete-account'))fail('Self-service account deletion is not routed through the authenticated Edge Function');
+  if(!supabase.includes('/functions/v1/delete-account'))fail('Self-service account deletion is not routed through the authenticated Edge Function');
+  if(supabase.includes('/functions/v1/snar-delete-account'))fail('Self-service account deletion still references the retired snar-delete-account endpoint');
   if(!exists('supabase/functions/delete-account/index.ts')||!read('supabase/functions/delete-account/index.ts').includes('auth.admin.deleteUser(user.id)'))fail('Account deletion Edge Function source is missing');
   if(!exists('supabase/migrations/20260927044154_remove_obsolete_account_delete_rpc.sql'))fail('Obsolete account deletion RPC removal migration is missing');
   if(!exists('supabase/migrations/20260927050029_add_privacy_request_appeals.sql')||!read('supabase/migrations/20260927050029_add_privacy_request_appeals.sql').includes("'appeal'"))fail('Privacy request appeal migration is missing');
@@ -784,7 +785,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const core=read('equipment/assets/app-core.js'),cloud=read('equipment/assets/supabase-sync.js'),privacy=read('privacy.html'),terms=read('terms.html'),home=read('index.html');
  for(const token of ['Privacy Notice','Terms of Use','data-cloud-consent','at least 18','data-cloud-delete-account','data-privacy-submit'])if(!core.includes(token))fail('Account legal/privacy UI missing '+token);
- for(const token of ['deleteAccount','/functions/v1/snar-delete-account','submitPrivacyRequest','/rest/v1/snar_privacy_requests'])if(!cloud.includes(token))fail('Privacy/account backend client missing '+token);
+ for(const token of ['deleteAccount','/functions/v1/delete-account','submitPrivacyRequest','/rest/v1/snar_privacy_requests'])if(!cloud.includes(token))fail('Privacy/account backend client missing '+token);
  for(const token of ['Guest use','Adaptive Mode','Question reports','Privacy requests','does not sell personal data','at least 18 years old'])if(!privacy.includes(token))fail('Privacy Notice missing '+token);
  for(const token of ['Independent educational resource','Educational use only','Adaptive Mode','No guarantee','Privacy Notice'])if(!terms.includes(token))fail('Terms of Use missing '+token);
  if(!home.includes('href="privacy.html"')||!home.includes('href="terms.html"'))fail('Home footer does not link Privacy and Terms');
