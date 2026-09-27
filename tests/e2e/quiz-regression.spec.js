@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { exam, clearAppState, collectPageErrors, waitForStudio, storageJSON } = require('./helpers');
+const { exam, clearAppState, seedSignedIn, collectPageErrors, waitForStudio, storageJSON } = require('./helpers');
 
 async function clickIndexes(locator, indexes) {
   for (const index of indexes) await locator.nth(index).click();
@@ -1485,6 +1485,7 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Existing signed-in account is prompted to re-accept current legal versions before sync or Adaptive Mode', async ({ page }) => {
+    await seedSignedIn(page);
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
     await page.unroute(cloud+'/rest/v1/rpc/snar_has_current_legal_acceptance');
     await page.route(cloud+'/rest/v1/rpc/snar_has_current_legal_acceptance',route=>route.fulfill({status:200,contentType:'application/json',body:'false'}));
@@ -1510,6 +1511,7 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Signed-in account can submit a private privacy request', async ({ page }) => {
+    await seedSignedIn(page);
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let requestBody=null;
     await page.route(cloud+'/rest/v1/snar_privacy_requests',route=>{requestBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:201,contentType:'application/json',body:JSON.stringify([{id:17,...requestBody,status:'received'}])})});
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
@@ -1524,6 +1526,7 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Signed-in user can delete account and return to signed-out state', async ({ page }) => {
+    await seedSignedIn(page);
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let deleted=0;
     await page.route(cloud+'/functions/v1/snar-delete-account',route=>{deleted++;return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({deleted:true})})});
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
@@ -1915,6 +1918,7 @@ test.describe('canonical quiz regression', () => {
     await expect(page.getByRole('heading',{name:'Terms of Use'})).toBeVisible();
     await expect(page.locator('body')).toContainText('independent study resource');
 
+    await seedSignedIn(page);
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     await page.locator('.mbu-global-nav__cloud').click();
     await expect(page.locator('#mbu-account-panel')).toContainText('Privacy Notice');
@@ -1924,6 +1928,7 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Adaptive session toggle is opt-in, forward-only, and survives reload with its level', async ({ page }) => {
+    await seedSignedIn(page);
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     expect(await page.locator('#adaptiveToggle').isChecked()).toBe(false);
     await page.evaluate(()=>{
