@@ -91,6 +91,11 @@ async function updatePassword(password){
   recoveryMode=false;emit('signed-in',{email:s.user?.email||''});return true
 }
 function currentUser(){return session()?.user||null}
+async function deleteAccount(){
+  const s=await validSession();if(!s?.access_token)throw Error('Sign in to delete your account.');
+  await api('/rest/v1/rpc/snar_delete_my_account',{method:'POST',body:{}});
+  stopAutoSync();saveSession(null);remoteByKey.clear();calibrationByKey.clear();calibrationFetchedAt=0;emit('signed-out');return true
+}
 async function submitItemContribution(questionId,correct,responseMs=null,sessionMode='unknown'){
   const id=String(questionId||'').trim();if(!id)return false;
   const ms=responseMs==null?null:Math.max(0,Math.min(3600000,Math.round(Number(responseMs)||0)));
@@ -205,7 +210,7 @@ async function handleAuthRedirect(){
   startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100);return true
 }
 window.addEventListener('hashchange',()=>handleAuthRedirect().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth redirect failed',e)}));
-window.MBUSupabase={signIn,signUp,signOut,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,submitItemContribution,refreshCalibration,calibration,listDevices,removeDevice,listHistory,restoreVersion,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
+window.MBUSupabase={signIn,signUp,signOut,deleteAccount,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,submitItemContribution,refreshCalibration,calibration,listDevices,removeDevice,listHistory,restoreVersion,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
 const authReady=(async()=>{
   if(await handleAuthRedirect())return true;
   if(session()){
