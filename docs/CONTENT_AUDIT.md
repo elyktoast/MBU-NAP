@@ -128,7 +128,7 @@ This removes legacy variations such as `.pdf · 12`, `Slides 12, 13`, and mixed 
 
 ### Difficulty metadata
 
-Static Easy/Moderate/Hard labels were intentionally not assigned in Phase 2. There is no authoritative difficulty source in the canonical content, and guessing difficulty would create subjective metadata. MBU-NAP already has real performance data that can support an empirical difficulty model later if desired.
+Static Easy/Moderate/Hard labels were intentionally not assigned in Phase 2. There is no authoritative difficulty source in the canonical content, and guessing difficulty would create subjective metadata. SNAR Study Tool already has real performance data that can support an empirical difficulty model later if desired.
 
 ## Content-quality scorecard after Phases 1–2
 
