@@ -618,6 +618,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const boot=read('equipment/assets/build-bootstrap.js');
  for(const token of ["cache:'no-store'","u.searchParams.set('b',build)",'window.MBUPageReady=ready','readyGlobal','fetchJSON','jsonCache=new Map()'])if(!boot.includes(token))fail('Build bootstrap missing '+token);
+ for(const token of ['REQUEST_TIMEOUT=12000','ASSET_TIMEOUT=15000','fetchTimed','setTimeout(()=>ctl.abort()',"l.remove();reject(Error('Stylesheet timed out: '","s.remove();reject(Error('Script timed out: '"])if(!boot.includes(token))fail('Build bootstrap network-failure guard missing '+token);
 }
 
 // Shared asset/cache contract: every versioned shared asset reference uses the current release revision.
@@ -626,6 +627,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!updater.includes("sessionStorage.getItem(BUILD_CACHE_KEY)"))fail('Updater: build baseline is not retained per session');
  if(!updater.includes("searchParams.get('b')"))fail('Updater: canonical runtime build id is not used as the baseline');
  if(!updater.includes('const CHECK_COOLDOWN = 120000'))fail('Updater: update polling cooldown regressed');
+ for(const token of ['const REQUEST_TIMEOUT = 8000','new AbortController()','signal: controller.signal','clearTimeout(timer)'])if(!updater.includes(token))fail('Updater: bounded network request guard missing '+token);
  const studio=read('equipment/assets/studio-page.js');
  if(!studio.includes('await Promise.all(STUDIO_SOURCES.map(source=>hydrateStudioSource(source)))'))fail('Studio: bank hydration is not parallelized');
  if(studio.includes("localStorage.getItem('mbu_bank3_progress')")||studio.includes("localStorage.getItem('MBU_BANK3_PROGRESS')"))fail('Studio: obsolete Bank 3 storage-key fallbacks remain');
@@ -715,6 +717,8 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!boot.includes("loadScript('supabase-config.js')")||!boot.includes("loadScript('supabase-sync.js')"))fail('Supabase sync is not loaded by the shared bootstrap');
  if(!cfg.includes('sb_publishable_')||cfg.includes('sb_secret_')||cfg.includes('service_role'))fail('Supabase browser config must contain only a publishable key');
  for(const token of ['mbu_sync_state','mbu_sync_devices',"registerAdapter('supabase'",'/auth/v1/token?grant_type=password','/rest/v1/rpc/mbu_sync_write_state','p_expected_server_revision'])if(!cloud.includes(token))fail('Supabase adapter missing '+token);
+ for(const token of ['REQUEST_TIMEOUT=10000','new AbortController()','if([400,401,403].includes(Number(e?.status)))','if(session())return false'])if(!cloud.includes(token))fail('Supabase transient-network/session guard missing '+token);
+ if(cloud.includes("catch(e){saveSession(null);emit('signed-out'"))fail('Supabase refresh again clears sessions on every refresh failure');
  for(const token of ['mbu_sync_versions','mbu_sync_record_version','enable row level security'])if(!migration.includes(token))fail('Supabase migration missing '+token);
  if(!/\(\(select auth\.uid\(\)\)\s*=\s*user_id\)/.test(migration))fail('Supabase migration missing authenticated ownership policy');
  for(const token of ['security invoker','for update','server_revision<>expected','grant execute','auth.uid()'])if(!conflictMigration.includes(token))fail('Server-authoritative sync migration missing '+token);
