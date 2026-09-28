@@ -89,3 +89,15 @@ Course/exam learner state is isolated:
 - Cloud snapshot import/export accepts and retains recognized multi-course store prefixes, so syncing one course does not discard another course's state.
 
 Basic Principles Exam 1 is the first second-course shell and intentionally starts with an empty bank manifest. Shared quiz, Studio, CAT, search, sync, analytics, and study-intelligence code must not be copied into the Basic Principles folder.
+
+## Canonical Session v1
+
+Equipment Quiz Bank 1 Practice Set 1 defines the standard learner-facing quiz environment. Its stable identifier is `equipment-bank1-practice-set1-v1`.
+
+Future standard banks are content/configuration only: canonical JSON, optional images, and a manifest entry using `engine: "canonical"`. The shared `canonical-bank-page.js`, `quiz-engine.js`, and `bank1-quiz-ui.css` own the page shell and session behavior. New courses must not fork those modules.
+
+The canonical bank renderer is course-aware through `MBU_CONTEXT.examUrl` and can resolve a bank from `?bank=<id>`, allowing a course to use a single generic bank page.
+
+## Global CAT evidence
+
+First-attempt evidence is collected into one platform-wide Supabase contribution table for all courses. Each contribution carries a globally unique question ID plus `course_id`, `exam_id`, `bank_id`, `topic`, response correctness, optional response time, and session mode. This shared evidence pool supports platform-level item analysis while preserving course/exam scopes for CAT ability, blueprint, and future stopping-rule calibration. Learner-facing mastery and theta remain scoped rather than being collapsed into one cross-course score.
