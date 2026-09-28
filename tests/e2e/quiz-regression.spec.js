@@ -2548,9 +2548,10 @@ test.describe('canonical quiz regression', () => {
     });
     await expect(page.locator('#opts .opt').first()).not.toHaveClass(/strike/);
     await expect(page.locator('#opts .mbu-cross').first()).toHaveAttribute('aria-pressed','false');
+    const canonicalIndex=Number(await page.locator('#opts .opt').first().getAttribute('data-canonical'));
     await page.locator('#opts .mbu-cross').first().click();
     await expect(page.locator('#opts .opt').first()).toHaveClass(/strike/);
-    expect(await page.evaluate(()=>{const q=session[pos];return !!DB.active?.crosses?.[q.uid+':0']})).toBe(true);
+    expect(await page.evaluate(i=>{const q=session[pos];return !!DB.active?.crosses?.[q.uid+':'+i]},canonicalIndex)).toBe(true);
     await page.reload();await waitForStudio(page);
     await expect(page.locator('#opts .opt').first()).toHaveClass(/strike/);
     await expect(page.locator('#opts .mbu-cross').first()).toHaveAttribute('aria-pressed','true');
