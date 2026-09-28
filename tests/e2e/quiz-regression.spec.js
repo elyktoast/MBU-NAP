@@ -1836,15 +1836,26 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('[data-qa-trend]')).toContainText('2026-09-27');
     await expect(page.locator('[data-qa-trend]')).toContainText('316 first attempts');
     await expect(page.locator('[data-admin-question-analytics] a[href$="studio.html?question=b1-1"]')).toHaveAttribute('href',/studio\.html\?question=b1-1$/);
+    const questionReportsSection=page.locator('details').filter({hasText:'Question reports'});
+    await questionReportsSection.locator('summary').click();
     await expect(page.locator('[data-admin-question-reports]')).toContainText('Example reported question');
     await expect(page.locator('[data-admin-question-reports] a').filter({hasText:'Open exact question'})).toHaveAttribute('href',/studio\.html\?question=b1-1$/);
     await page.locator('[data-admin-question-report-status="9"]').selectOption('reviewing');
     await page.locator('[data-admin-question-report-save="9"]').click();
     await expect.poll(()=>reportStatus?.p_status).toBe('reviewing');
+
+    const suggestionsSection=page.locator('details').filter({hasText:'Suggestions'});
+    await suggestionsSection.locator('summary').click();
     await expect(page.locator('[data-admin-suggestions]')).toHaveText('No suggestions yet.');
+
+    const privacySection=page.locator('details').filter({hasText:'Privacy & compliance'});
+    await privacySection.locator('summary').click();
     page.once('dialog',dialog=>dialog.accept());
     await page.locator('[data-admin-retention]').click();
     await expect(page.locator('[data-account-message]')).toContainText('4 resolved question reports removed');
+
+    const accountsSection=page.locator('details').filter({hasText:'Accounts'});
+    await accountsSection.locator('summary').click();
     await expect(page.locator('[data-admin-accounts]')).toContainText('learner@example.com');
     await page.locator('[data-admin-accounts] [data-admin-access]').click();
     await expect.poll(()=>accessChange?.p_status).toBe('suspended');
