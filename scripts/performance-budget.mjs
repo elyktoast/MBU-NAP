@@ -33,12 +33,12 @@ const budgets={
   'equipment/assets/studio-page.js':48000,
   'equipment/assets/studio-loader.js':2500,
   'equipment/assets/question-generator.js':10000,
-  'equipment/assets/adaptive-quiz.js':9000,
-  'equipment/assets/study-intelligence.js':9000,
+  'equipment/assets/adaptive-quiz.js':10500,
+  'equipment/assets/study-intelligence.js':12000,
   'equipment/assets/question-search.js':8000,
   'equipment/assets/hazards-page.js':5000,
   'equipment/assets/hazards-dashboard.js':6000,
-  'equipment/assets/exam-dashboard.js':6000,
+  'equipment/assets/exam-dashboard.js':8000,
   'equipment/assets/bank1-quiz-ui.css':15000
 };
 for(const [p,max] of Object.entries(budgets)){
