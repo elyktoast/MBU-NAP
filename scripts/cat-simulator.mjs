@@ -42,8 +42,8 @@ function loadEngine(){
     crypto:{getRandomValues:a=>{a[0]=0x9e3779b9;return a}}
   };
   vm.createContext(sandbox);vm.runInContext(termination,sandbox,{filename:'cat-termination.js'});vm.runInContext(source,sandbox,{filename:'adaptive-quiz.js'});
-  if(!sandbox.window.MBUAdaptiveQuiz)throw new Error('Production CAT engine did not initialize');
-  return sandbox.window.MBUAdaptiveQuiz
+  if(!sandbox.window.MBUAdaptiveQuiz||!sandbox.window.MBUCATTermination)throw new Error('Production CAT engine did not initialize');
+  return{engine:sandbox.window.MBUAdaptiveQuiz,termination:sandbox.window.MBUCATTermination}
 }
 
 function rng(seed){
@@ -52,7 +52,7 @@ function rng(seed){
 }
 const logistic=x=>1/(1+Math.exp(-Math.max(-12,Math.min(12,x))));
 
-const questions=loadQuestions(),engine=loadEngine(),exposure=new Map(),sessions=[];
+const questions=loadQuestions(),runtime=loadEngine(),engine=runtime.engine,termination=runtime.termination,exposure=new Map(),sessions=[];
 let duplicateViolations=0,blueprintViolations=0,incompleteSessions=0;const duplicateExamples=[],blueprintExamples=[];
 for(const ability of abilities){
   for(let run=0;run<runsPerAbility;run++){
@@ -102,10 +102,10 @@ if(shouldWrite){
 }
 const terminationPolicy={mode:'observe',minQuestions:25,maxQuestions:75,cutTheta:0,confidenceZ:1.96,targetSE:.6,calibrationId:'simulated'};
 const terminationChecks={
-  early:sandbox.window.MBUCATTermination.evaluate({theta:1.4,se:.2,answered:24,maxQuestions:75},terminationPolicy),
-  above:sandbox.window.MBUCATTermination.evaluate({theta:1.0,se:.2,answered:25,maxQuestions:75},terminationPolicy),
-  below:sandbox.window.MBUCATTermination.evaluate({theta:-1.0,se:.2,answered:25,maxQuestions:75},terminationPolicy),
-  max:sandbox.window.MBUCATTermination.evaluate({theta:.1,se:.9,answered:75,maxQuestions:75},{mode:'observe',minQuestions:25,maxQuestions:75})
+  early:termination.evaluate({theta:1.4,se:.2,answered:24,maxQuestions:75},terminationPolicy),
+  above:termination.evaluate({theta:1.0,se:.2,answered:25,maxQuestions:75},terminationPolicy),
+  below:termination.evaluate({theta:-1.0,se:.2,answered:25,maxQuestions:75},terminationPolicy),
+  max:termination.evaluate({theta:.1,se:.9,answered:75,maxQuestions:75},{mode:'observe',minQuestions:25,maxQuestions:75})
 };
 
 if(shouldCheck){
