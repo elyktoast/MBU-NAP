@@ -14,7 +14,7 @@ It owns:
 - 7-day and 30-day summaries;
 - bank and topic analytics;
 - personal mastery estimates and confidence;
-- per-question learning priority used by Smart Review and Adaptive 2.0;
+- per-question learning priority used by Smart Review and Adaptive 2.1;
 - synchronized question-issue metadata.
 
 It does **not** replace each quiz runtime's native progress state. Native save formats remain authoritative for resuming an individual quiz. Study intelligence adds a normalized learning layer across those formats.
@@ -59,7 +59,7 @@ The displayed mastery percentage is a study estimate, not a certification-exam s
 
 ## Smart Review
 
-Smart Review and Adaptive 2.0 share one question-priority function. Priority increases for:
+Smart Review and Adaptive 2.1 share one question-priority function. Priority increases for:
 
 - currently due questions;
 - the last answer being incorrect;
@@ -81,12 +81,14 @@ The system maintains only the minimum private account-linked first-attempt recor
 
 Account authentication and private progress synchronization necessarily use account information separately from the testing/calibration dataset.
 
-## Adaptive Mode
+## Adaptive 2.1
 
 Adaptive Mode is deliberately separate from Smart Review and from normal quiz sessions. Normal study tools remain available without an account. Adaptive Mode requires a signed-in SNAR Study Tool account and runs only when the user enables the **Adaptive Mode** toggle while building a custom session.
 
-The implementation follows CAT principles used by major credentialing examinations without claiming formal psychometric equivalence:
+The precalibration implementation follows CAT principles without claiming formal psychometric equivalence:
 
+- the first six questions form a diagnostic opening that deliberately spreads challenge and topic coverage before stronger personalization begins;
+- every adaptive session derives a topic blueprint from the user-selected pool and preserves enough remaining slots to finish that blueprint exactly;
 - ability is represented internally on a continuous provisional logit-like scale;
 - the ability estimate is recalculated from the full adaptive-session response path after every answer;
 - candidate difficulty is based on item structure plus population calibration only after the existing minimum-cohort gate is met;
@@ -96,10 +98,13 @@ The implementation follows CAT principles used by major credentialing examinatio
 - source/topic representation is balanced against the distribution of the user-selected question pool;
 - questions already used in the current adaptive session are excluded;
 - recently seen questions and duplicate-content variants receive exposure penalties when alternatives are available;
+- recent concepts receive cooldown penalties so equally suitable alternatives are favored instead of clustering near-identical material;
+- selection is randomesque among similarly strong candidates using a saved session seed, so routes vary while reloads remain reproducible;
+- each provisional item difficulty carries uncertainty; uncertainty declines only when population calibration reaches the existing eligibility gate and is incorporated conservatively into scoring and ability information;
 - the selected focus reason is retained in adaptive session state so the UI can explain why a question was chosen;
 - the visible Challenge 1–5 indicator is only a friendly display mapped from the continuous internal estimate.
 
-The engine starts at the midpoint with a regularizing prior so one early answer cannot drive the estimate to an extreme. Precision improves as information accumulates.
+The engine starts at the midpoint with a regularizing prior so one early answer cannot drive the estimate to an extreme. Precision improves as information accumulates. A production-engine simulator now runs synthetic examinees across multiple provisional ability levels to check blueprint completion, duplicate avoidance, diagnostic breadth, exposure concentration, session completion, and ability-recovery stability before releases.
 
 Structural difficulty values remain provisional, and population calibration is used only when an item reaches the configured cohort threshold. The feature does not claim psychometric equivalence to a validated high-stakes CAT.
 
@@ -153,7 +158,7 @@ CI must fail if:
 
 - an answer runtime stops recording through study intelligence;
 - the study-intelligence store falls out of the sync contract;
-- Smart Review, Due Review, mastery, or Adaptive 2.0 wiring disappears;
+- Smart Review, Due Review, mastery, or Adaptive 2.1 wiring disappears;
 - Universal Search is no longer globally available;
 - semantic content auditing leaves the quality workflow;
 - duplicate cloud auth listeners return.
