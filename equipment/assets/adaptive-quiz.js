@@ -1,6 +1,6 @@
 /* Adaptive 2.1: precalibration CAT hardening with diagnostic sampling, blueprint constraints, exposure control, and uncertainty-aware selection. */
 (()=>{'use strict';
-const DIAGNOSTIC_LENGTH=6,TOP_CANDIDATES=8,CONCEPT_COOLDOWN=3,structuralCache=new WeakMap(),contentCache=new WeakMap(),conceptCache=new WeakMap();
+const DIAGNOSTIC_LENGTH=6,TOP_CANDIDATES=8,CONCEPT_COOLDOWN=3,TERMINATION_POLICY_VERSION=1,DEFAULT_MIN_QUESTIONS=25,DEFAULT_MAX_QUESTIONS=75,structuralCache=new WeakMap(),contentCache=new WeakMap(),conceptCache=new WeakMap();
 const plain=v=>!!v&&typeof v==='object'&&!Array.isArray(v);
 const clamp=(v,min,max)=>Math.max(min,Math.min(max,v));
 const clampLevel=v=>clamp(Number(v)||3,1,5);
@@ -66,6 +66,22 @@ function estimateAbility(path=[]){
   return{theta,se:1/Math.sqrt(information),information}
 }
 function normalizeCounts(raw){return Object.fromEntries(Object.entries(plain(raw)?raw:{}).map(([k,v])=>[String(k),Math.max(0,Number(v)||0)]))}
+function normalizeTerminationPolicy(raw={},sessionMax=DEFAULT_MAX_QUESTIONS){
+  const source=plain(raw)?raw:{},mode=source.mode==='active'?'active':'observe',sessionLimit=Math.max(DIAGNOSTIC_LENGTH,Math.min(200,Number(sessionMax)||DEFAULT_MAX_QUESTIONS)),requestedMax=Number(source.maxQuestions),maxQuestions=Math.max(DIAGNOSTIC_LENGTH,Math.min(sessionLimit,Number.isFinite(requestedMax)?requestedMax:Math.min(DEFAULT_MAX_QUESTIONS,sessionLimit))),requestedMin=Number(source.minQuestions),minQuestions=Math.max(DIAGNOSTIC_LENGTH,Math.min(maxQuestions,Number.isFinite(requestedMin)?requestedMin:Math.min(DEFAULT_MIN_QUESTIONS,maxQuestions))),cutTheta=Number(source.cutTheta),confidenceZ=Number(source.confidenceZ),targetSE=Number(source.targetSE);
+  return{version:TERMINATION_POLICY_VERSION,mode,minQuestions,maxQuestions,cutTheta:Number.isFinite(cutTheta)?clampLogit(cutTheta):null,confidenceZ:Number.isFinite(confidenceZ)&&confidenceZ>0?clamp(confidenceZ,.5,4):null,targetSE:Number.isFinite(targetSE)&&targetSE>0?clamp(targetSE,.1,2):null,calibrationId:String(source.calibrationId||''),calibratedAt:String(source.calibratedAt||'')}
+}
+function evaluateTermination(state,rawPolicy={}){
+  const s=normalize(state),policy=normalizeTerminationPolicy(rawPolicy,s.maxQuestions),answered=s.answered,theta=s.theta,se=Math.max(.0001,Number(s.se)||1.5),z=policy.confidenceZ,cut=policy.cutTheta,lower=z===null?null:theta-z*se,upper=z===null?null:theta+z*se,calibrated=cut!==null&&z!==null,precisionMet=policy.targetSE===null||se<=policy.targetSE;
+  let wouldStop=false,reason='continue',classification='undetermined';
+  if(answered>=policy.maxQuestions){wouldStop=true;reason='maximum_reached';classification=calibrated?(theta>=cut?'above_threshold':'below_threshold'):'unclassified'}
+  else if(answered<policy.minQuestions)reason='minimum_not_reached';
+  else if(!calibrated)reason='awaiting_calibration';
+  else if(!precisionMet)reason='precision_not_met';
+  else if(lower>cut){wouldStop=true;reason='confidence_above_threshold';classification='above_threshold'}
+  else if(upper<cut){wouldStop=true;reason='confidence_below_threshold';classification='below_threshold'}
+  else reason='threshold_uncertain';
+  return{version:TERMINATION_POLICY_VERSION,mode:policy.mode,active:policy.mode==='active'&&calibrated,wouldStop,shouldStop:policy.mode==='active'&&wouldStop,reason,classification,answered,minQuestions:policy.minQuestions,maxQuestions:policy.maxQuestions,theta,se,lower,upper,cutTheta:cut,confidenceZ:z,targetSE:policy.targetSE,precisionMet,calibrated,calibrationId:policy.calibrationId,calibratedAt:policy.calibratedAt}
+}
 function normalize(state,count=50){
   const s=plain(state)?state:{},seen=Array.isArray(s.seenUids)?[...new Set(s.seenUids.map(String).filter(Boolean))]:[],seenContentKeys=Array.isArray(s.seenContentKeys)?[...new Set(s.seenContentKeys.map(String).filter(Boolean))]:[],poolUids=Array.isArray(s.poolUids)?[...new Set(s.poolUids.map(String).filter(Boolean))]:[],path=Array.isArray(s.path)?s.path.filter(plain).slice(-200):[],estimate=path.length?estimateAbility(path):{theta:clampLogit(s.theta),se:Number(s.se)||1.5,information:Number(s.information)||0};
   return{mode:'adaptive',version:3,engine:'2.1',theta:estimate.theta,se:estimate.se,information:estimate.information,level:logitToLevel(estimate.theta),answered:Math.max(0,Number(s.answered)||path.length),correct:Math.max(0,Number(s.correct)||path.filter(x=>x.ok).length),maxQuestions:Math.max(1,Math.min(200,Number(s.maxQuestions)||Number(count)||50)),seenUids:seen,seenContentKeys,poolUids,topicCounts:normalizeCounts(s.topicCounts),focusCounts:normalizeCounts(s.focusCounts),blueprintTargets:normalizeCounts(s.blueprintTargets),path,selectionSeed:(Number(s.selectionSeed)>>>0)||1,selectionStep:Math.max(0,Number(s.selectionStep)||0),currentLevel:logitToLevel(estimate.theta),currentDifficulty:Number.isFinite(Number(s.currentDifficulty))?clampLogit(s.currentDifficulty):null,currentChallenge:Number.isFinite(Number(s.currentChallenge))?Number(s.currentChallenge):null,currentProbability:Number.isFinite(Number(s.currentProbability))?Number(s.currentProbability):null,currentUncertainty:Number.isFinite(Number(s.currentUncertainty))?Number(s.currentUncertainty):null,currentFocus:String(s.currentFocus||''),currentTopic:String(s.currentTopic||''),currentConcept:String(s.currentConcept||''),currentPhase:String(s.currentPhase||'')}
@@ -134,10 +150,10 @@ function advance(state,q,ok){
   const s=normalize(state),estimate=Number.isFinite(Number(s.currentDifficulty))?{difficulty:clampLogit(s.currentDifficulty),challenge:Number(s.currentChallenge)||challenge(q),uncertainty:Number(s.currentUncertainty)||difficultyEstimate(q).uncertainty}:difficultyEstimate(q),before=s.theta,path=[...s.path,{uid:String(q?.uid||''),ok:!!ok,difficulty:estimate.difficulty,challenge:estimate.challenge,uncertainty:estimate.uncertainty,focus:s.currentFocus,topic:s.currentTopic||topicOf(q),concept:s.currentConcept||conceptOf(q),phase:s.currentPhase||'',at:Date.now()}].slice(-200),ability=estimateAbility(path),after=ability.theta;
   return{...s,theta:after,se:ability.se,information:ability.information,level:logitToLevel(after),currentLevel:logitToLevel(after),currentDifficulty:null,currentChallenge:null,currentProbability:null,currentUncertainty:null,currentFocus:'',currentTopic:'',currentConcept:'',currentPhase:'',answered:s.answered+1,correct:s.correct+(ok?1:0),path:[...path.slice(0,-1),{...path[path.length-1],thetaBefore:before,thetaAfter:after}]}
 }
-function sessionProfile(state){
-  const s=normalize(state),accuracy=s.answered?Math.round(s.correct/s.answered*100):0,diagnosticRemaining=Math.max(0,DIAGNOSTIC_LENGTH-s.answered),blueprintRemaining={};
+function sessionProfile(state,terminationPolicy={}){
+  const s=normalize(state),accuracy=s.answered?Math.round(s.correct/s.answered*100):0,diagnosticRemaining=Math.max(0,DIAGNOSTIC_LENGTH-s.answered),blueprintRemaining={},termination=evaluateTermination(s,terminationPolicy);
   for(const [topic,target] of Object.entries(s.blueprintTargets))blueprintRemaining[topic]=Math.max(0,Number(target)-(Number(s.topicCounts[topic])||0));
-  return{version:3,engine:'2.1',answered:s.answered,correct:s.correct,accuracy,challengeLevel:s.level,precision:s.se<=.55?'higher':s.se<=.85?'building':'early',diagnosticRemaining,phase:diagnosticRemaining?'diagnostic':'adaptive',focusCounts:{...s.focusCounts},blueprintTargets:{...s.blueprintTargets},blueprintRemaining}
+  return{version:3,engine:'2.1',answered:s.answered,correct:s.correct,accuracy,challengeLevel:s.level,precision:s.se<=.55?'higher':s.se<=.85?'building':'early',diagnosticRemaining,phase:diagnosticRemaining?'diagnostic':'adaptive',focusCounts:{...s.focusCounts},blueprintTargets:{...s.blueprintTargets},blueprintRemaining,termination}
 }
-window.MBUAdaptiveQuiz={DIAGNOSTIC_LENGTH,challenge,difficultyEstimate,estimateAbility,blueprintTargets,normalize,start,pick,advance,sessionProfile,topicOf,conceptOf,contentKey};
+window.MBUAdaptiveQuiz={DIAGNOSTIC_LENGTH,TERMINATION_POLICY_VERSION,DEFAULT_MIN_QUESTIONS,DEFAULT_MAX_QUESTIONS,challenge,difficultyEstimate,estimateAbility,blueprintTargets,normalizeTerminationPolicy,evaluateTermination,normalize,start,pick,advance,sessionProfile,topicOf,conceptOf,contentKey};
 })();
