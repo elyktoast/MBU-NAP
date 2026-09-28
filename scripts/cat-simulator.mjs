@@ -1,0 +1,112 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import vm from 'node:vm';
+
+const root=process.cwd();
+const arg=(name,fallback)=>{const hit=process.argv.find(x=>x.startsWith('--'+name+'='));return hit?hit.slice(name.length+3):fallback};
+const runsPerAbility=Math.max(1,Number(arg('runs','25'))||25);
+const questionCount=Math.max(10,Math.min(100,Number(arg('questions','50'))||50));
+const shouldCheck=process.argv.includes('--check');
+const shouldWrite=process.argv.includes('--write');
+const abilities=[-1.25,-.6,0,.6,1.25];
+
+function loadQuestions(){
+  const specs=[
+    ['b1','bank1.json'],['b2','bank2.json'],['b3','bank3.json'],['combined','combined.json'],['hazards','hazards.json']
+  ],rows=[];
+  for(const [bank,file] of specs){
+    const full=path.join(root,'equipment','exam-1','data',file);
+    if(!fs.existsSync(full))continue;
+    const data=JSON.parse(fs.readFileSync(full,'utf8')),questions=Array.isArray(data.questions)?data.questions:[];
+    for(const q of questions){
+      const id=String(q.uid||q.id||q.seq||rows.length+1);
+      rows.push({...q,uid:String(q.uid||bank+'-'+id),bank:String(q.bank||bank)});
+    }
+  }
+  if(rows.length<questionCount)throw new Error('CAT simulator could not load enough questions');
+  return rows
+}
+
+function loadEngine(){
+  const source=fs.readFileSync(path.join(root,'equipment','assets','adaptive-quiz.js'),'utf8');
+  const sandbox={
+    window:{
+      MBUStudyIntelligence:{
+        questionStats:()=>null,
+        recentActivity:()=>[],
+        mastery:()=>({byTopic:{}}),
+        priorityForQuestion:q=>({score:0,reason:'Balanced practice',topic:String(q?.topic||'Other'),mastery:null,confidence:0,due:false,seen:false})
+      },
+      MBUSupabase:{calibration:()=>null}
+    },
+    console,Math,Date,Set,Map,Uint32Array,
+    crypto:{getRandomValues:a=>{a[0]=0x9e3779b9;return a}}
+  };
+  vm.createContext(sandbox);vm.runInContext(source,sandbox,{filename:'adaptive-quiz.js'});
+  if(!sandbox.window.MBUAdaptiveQuiz)throw new Error('Production CAT engine did not initialize');
+  return sandbox.window.MBUAdaptiveQuiz
+}
+
+function rng(seed){
+  let x=seed>>>0||1;
+  return()=>{x+=0x6D2B79F5;let t=x;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return((t^t>>>14)>>>0)/4294967296}
+}
+const logistic=x=>1/(1+Math.exp(-Math.max(-12,Math.min(12,x))));
+
+const questions=loadQuestions(),engine=loadEngine(),exposure=new Map(),sessions=[];
+let duplicateViolations=0,blueprintViolations=0,incompleteSessions=0;
+for(const ability of abilities){
+  for(let run=0;run<runsPerAbility;run++){
+    const seed=((Math.round((ability+2)*1000)+1)*2654435761+run*1013904223)>>>0,random=rng(seed^0xa5a5a5a5),seen=new Set(),diagnosticTopics=new Set(),diagnosticChallenges=[];
+    let picked=engine.start(questions,questionCount,{selectionSeed:seed}),state=picked.state;
+    while(picked.question&&state.answered<questionCount){
+      const q=picked.question,uid=String(q.uid);
+      if(seen.has(uid))duplicateViolations++;
+      seen.add(uid);exposure.set(uid,(exposure.get(uid)||0)+1);
+      if(state.answered<engine.DIAGNOSTIC_LENGTH){diagnosticTopics.add(engine.topicOf(q));diagnosticChallenges.push(Number(picked.challenge)||0)}
+      const trueDifficulty=engine.difficultyEstimate(q).difficulty,ok=random()<logistic(ability-trueDifficulty);
+      state=engine.advance(state,q,ok);
+      if(state.answered>=questionCount)break;
+      picked=engine.pick(questions,state);
+    }
+    if(state.answered!==questionCount)incompleteSessions++;
+    for(const [topic,target] of Object.entries(state.blueprintTargets||{}))if((Number(state.topicCounts?.[topic])||0)!==Number(target))blueprintViolations++;
+    sessions.push({ability,estimate:Number(state.theta),absError:Math.abs(Number(state.theta)-ability),answered:state.answered,diagnosticTopics:diagnosticTopics.size,diagnosticChallenges});
+  }
+}
+const totalSessions=sessions.length,totalSelections=[...exposure.values()].reduce((a,b)=>a+b,0),maxExposure=Math.max(0,...exposure.values()),mae=sessions.reduce((n,x)=>n+x.absError,0)/Math.max(1,totalSessions),diagnosticBreadth=sessions.reduce((n,x)=>n+x.diagnosticTopics,0)/Math.max(1,totalSessions);
+const byAbility=abilities.map(ability=>{const xs=sessions.filter(x=>x.ability===ability);return{ability,sessions:xs.length,meanEstimate:Number((xs.reduce((n,x)=>n+x.estimate,0)/xs.length).toFixed(3)),meanAbsError:Number((xs.reduce((n,x)=>n+x.absError,0)/xs.length).toFixed(3)),meanDiagnosticTopics:Number((xs.reduce((n,x)=>n+x.diagnosticTopics,0)/xs.length).toFixed(2))}});
+const report={
+  generatedAt:new Date().toISOString(),
+  engine:'2.1',
+  sourceQuestions:questions.length,
+  questionCount,
+  sessions:totalSessions,
+  abilities:byAbility,
+  metrics:{
+    meanAbsAbilityError:Number(mae.toFixed(3)),
+    meanDiagnosticTopicBreadth:Number(diagnosticBreadth.toFixed(2)),
+    duplicateViolations,
+    blueprintViolations,
+    incompleteSessions,
+    uniqueItemsExposed:exposure.size,
+    maxItemExposureRate:Number((maxExposure/Math.max(1,totalSessions)).toFixed(3)),
+    totalSelections
+  },
+  note:'Simulation validates algorithm behavior against the production provisional difficulty model. It is not empirical item calibration or evidence of certification-exam validity.'
+};
+console.log(JSON.stringify(report,null,2));
+if(shouldWrite){
+  const out=path.join(root,'reports','cat-simulation.json');fs.writeFileSync(out,JSON.stringify(report,null,2)+'\n');console.log('Wrote '+path.relative(root,out))
+}
+if(shouldCheck){
+  const failures=[];
+  if(duplicateViolations)failures.push('duplicate items appeared inside a CAT session');
+  if(blueprintViolations)failures.push('one or more sessions violated the derived content blueprint');
+  if(incompleteSessions)failures.push('one or more sessions ended before the requested length');
+  if(mae>.95)failures.push('mean provisional ability recovery error exceeded 0.95 logits');
+  if(diagnosticBreadth<3)failures.push('diagnostic opening averaged fewer than 3 topics');
+  if(maxExposure/Math.max(1,totalSessions)>.4)failures.push('a single item appeared in more than 40% of simulated sessions');
+  if(failures.length){console.error('\nCAT SIMULATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
+  console.log('CAT simulation checks passed.')
+}
