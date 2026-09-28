@@ -1017,8 +1017,8 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
   if(!exists('basic-principles/exam-1/bank.html'))fail('Basic Principles generic canonical bank page is missing');
   for(const token of ['ctx.examUrl','URLSearchParams(location.search)',env])if(!renderer.includes(token))fail('Cross-course canonical renderer missing '+token);
 
-  for(const token of ['courseId,examId','courseId:meta.courseId','examId:meta.examId','bankId:meta.bank','topic:meta.topic'])if(!intelligence.includes(token))fail('Global CAT evidence metadata missing '+token);
-  for(const token of ['mbu_submit_item_contribution_v2','p_course_id','p_exam_id','p_bank_id','p_topic'])if(!cloud.includes(token))fail('Scoped CAT transport missing '+token);
+  for(const token of ['courseId,examId','questionId:meta.uid','courseId:meta.courseId','examId:meta.examId','bankId:meta.bank','topic:meta.topic'])if(!intelligence.includes(token))fail('Global CAT evidence metadata missing '+token);
+  for(const token of ['mbu_submit_item_contribution_v2','p_course_id','p_exam_id','p_bank_id','p_topic','async function submitItemContribution(x)'])if(!cloud.includes(token))fail('Scoped CAT transport missing '+token);
   for(const p of ['supabase/migrations/20260928112827_global_cat_course_exam_metadata.sql','supabase/migrations/20260928113158_prefer_scoped_cat_metadata.sql'])if(!exists(p))fail('Global CAT migration missing '+p);
 }
 
