@@ -96,6 +96,10 @@ Server-side guards protect the two free-text submission workflows without changi
 
 These controls run inside the database RPCs, so bypassing browser controls does not bypass the limits.
 
+## Question-report RLS hardening
+
+The private question-report table now has Row Level Security enabled. Direct table privileges remain revoked from public, anon, and authenticated roles, and intended access continues through the existing authenticated submission RPC and admin-only review/update RPCs. This keeps the inbox RPC-only while adding database-level defense in depth.
+
 ## Report-workflow scale hardening
 
 Private question reports now have targeted indexes for question-level analytics and retention/workflow filtering:
