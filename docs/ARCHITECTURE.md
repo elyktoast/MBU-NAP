@@ -58,3 +58,14 @@ Repository validation and browser regression tests are the enforcement mechanism
 ## Foundation freeze
 
 The post-Phase-3 technical foundation is frozen at build `2026-09-28-foundation-freeze-v252`. See `docs/FOUNDATION_FREEZE.md` for the final audit findings, accepted non-blocking external items, and rules for future changes.
+
+## Phase 4 learning extensions
+
+The frozen foundation is extended, not replaced, by the first Phase 4 learning features:
+
+- personal mastery remains derived inside `study-intelligence.js` from the existing synchronized learning history;
+- the Exam dashboard renders that shared mastery model without creating a second learner-state store;
+- Adaptive 2.0 remains isolated in `adaptive-quiz.js` and consumes the same shared learning priority used by Smart Review;
+- personal weakness changes selection priority, not item difficulty;
+- population difficulty remains gated by the existing calibration cohort thresholds;
+- the learner-facing mastery estimate is explicitly a study estimate, not an exam-pass prediction.
