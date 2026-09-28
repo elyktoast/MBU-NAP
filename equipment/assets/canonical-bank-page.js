@@ -1,7 +1,7 @@
 /* Canonical Exam 1 bank page.
    Bank HTML provides identity only. Manifest config, shell markup, assets, and runtime wiring live here. */
 (()=>{'use strict';
-const bankId=document.body?.dataset.mbuBank||'',runtime=window.MBUBuild,exam=new URL('../exam-1/',runtime?.assetsBase||location.href);
+const ctx=window.MBU_CONTEXT||{},bankId=String(ctx.bankId||new URLSearchParams(location.search).get('bank')||document.body?.dataset.mbuBank||''),runtime=window.MBUBuild,exam=ctx.examUrl?new URL(ctx.examUrl,location.href):new URL('../exam-1/',runtime?.assetsBase||location.href);
 function shell(bank){
   const total=bank.total||((bank.sets?.length||0)*(bank.questionsPerSet||0));
   return '<div class="wrap">'+
@@ -14,8 +14,9 @@ async function start(){
   if(!bankId)throw Error('Canonical bank id is missing');
   const manifest=await runtime.fetchJSON(new URL('banks.json',exam),{cache:'no-store'}),bank=(manifest.banks||[]).find(x=>x.id===bankId);
   if(!bank||bank.engine!=='canonical')throw Error('Canonical bank config not found: '+bankId);
+  const sessionEnvironment=String(bank.sessionEnvironment||manifest.sessionEnvironment||'');if(sessionEnvironment!=='equipment-bank1-practice-set1-v1')throw Error('Unsupported quiz session environment: '+sessionEnvironment);
   document.title=bank.label+' | Practice Sets';document.body.className='mbu-bank1-ui';document.body.innerHTML=shell(bank);window.MBUAppCore?.ensureA11y?.();
-  window.MBU_QUIZ_CONFIG={id:bank.id,title:bank.label,studioBankKey:bank.studioKey,storageKey:bank.storageKey,dataUrl:bank.data,legacyFormat:bank.legacyFormat||null,imageBase:bank.imageBase||null};
+  window.MBU_QUIZ_CONFIG={id:bank.id,title:bank.label,studioBankKey:bank.studioKey,storageKey:bank.storageKey,dataUrl:bank.data,legacyFormat:bank.legacyFormat||null,imageBase:bank.imageBase||null,sessionEnvironment};
   await Promise.all([runtime.loadStyle('site-nav.css'),runtime.loadStyle('bank1-quiz-ui.css')]);
   await runtime.loadScript({src:'site-nav.js',data:{page:bank.id}});
   await runtime.loadScript('studio-sync.js');
