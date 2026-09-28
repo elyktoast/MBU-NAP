@@ -75,3 +75,17 @@ The frozen foundation is extended, not replaced, by the first Phase 4 learning f
 Adaptive 2.1 extends the frozen learning architecture without introducing a second learner model or item bank. The production selector now owns diagnostic opening behavior, pool-derived blueprint constraints, concept cooldown, provisional-difficulty uncertainty, and randomesque top-candidate selection. The session seed and all new selection state are persisted through the existing Studio sync sanitizer so reload and cloud sync preserve the same adaptive path.
 
 `scripts/cat-simulator.mjs` executes the production `adaptive-quiz.js` runtime inside a sandbox with synthetic response patterns. It is a behavioral/stability check only; it does not create empirical item calibration or establish certification-exam validity. CI runs the simulator before browser regression.
+
+
+## Multi-course foundation
+
+Equipment Exam 1 remains the reference implementation, but shared behavior is course-agnostic. New course pages set `window.MBU_CONTEXT` before the shared bootstrap loads. The context supplies a course ID, course label, course URL, and exam URL.
+
+Course/exam learner state is isolated:
+
+- Equipment Exam 1 preserves the original `mbu_exam1_studio_v1` and `mbu_study_intelligence_v1` stores for backward compatibility.
+- New exams use namespaced `mbu_studio_<course>_<exam>_v1` and `mbu_study_intelligence_<course>_<exam>_v1` stores.
+- New bank storage keys should use the `mbu_course_` prefix so backup and cloud sync can preserve them across course switches.
+- Cloud snapshot import/export accepts and retains recognized multi-course store prefixes, so syncing one course does not discard another course's state.
+
+Basic Principles Exam 1 is the first second-course shell and intentionally starts with an empty bank manifest. Shared quiz, Studio, CAT, search, sync, analytics, and study-intelligence code must not be copied into the Basic Principles folder.
