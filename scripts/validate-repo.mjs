@@ -860,7 +860,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!read('equipment/assets/studio-loader.js').includes("loadScript('adaptive-quiz.js')"))fail('Studio does not load the separate adaptive engine');
  if(!studio.includes("DB.active?.mode==='adaptive'&&reconcileActiveState()"))fail('Adaptive session does not auto-resume after reload');
  if(!studioSync.includes("v.mode==='adaptive'")||!studioSync.includes("out.mode='adaptive'")||!studioSync.includes('blueprintTargets:numericMap(a.blueprintTargets)')||!studioSync.includes('currentUncertainty:'))fail('Studio Adaptive 2.1 session normalization is missing');
- for(const token of ['function manifestURL()','ctx.examUrl','dynamicTrackedKey','mbu_studio_','mbu_study_intelligence_','m.sync?.studioStorageKey'])if(!core.includes(token))fail('Multi-course sync tracking missing '+token);
+ for(const token of ['function manifestURL()','ctx.examUrl','function dynamicTrackedKey','mbu_(studio|study_intelligence|generated_questions|course)_','m.sync?.studioStorageKey'])if(!core.includes(token))fail('Multi-course sync tracking missing '+token);
  for(const p of ['equipment/assets/quiz-engine.js','equipment/assets/hazards-standard-engine.js','equipment/assets/hazards-quiz-engine.js','equipment/assets/studio-page.js'])if(!read(p).includes('MBUStudyIntelligence'))fail(p+': answer path bypasses shared study intelligence');
 }
 
