@@ -14,15 +14,25 @@ errors.push(item);if(errors.length>25)errors.shift();return item
 }
 window.addEventListener('error',e=>record('window-error',e.error||e.message,{file:e.filename||'',line:e.lineno||0,column:e.colno||0}));
 window.addEventListener('unhandledrejection',e=>record('unhandled-rejection',e.reason));
+function manifestURL(){
+const ctx=window.MBU_CONTEXT||{};
+if(ctx.manifestUrl)return new URL(ctx.manifestUrl,location.href);
+if(ctx.examUrl)return new URL('banks.json',new URL(ctx.examUrl,location.href));
+return new URL('../exam-1/banks.json',runtime.assetsBase)
+}
 async function manifest(){
-if(!manifestPromise)manifestPromise=runtime.fetchJSON(new URL('../exam-1/banks.json',runtime.assetsBase),{cache:'no-store'}).catch(e=>{manifestPromise=null;throw e});
+if(!manifestPromise)manifestPromise=runtime.fetchJSON(manifestURL(),{cache:'no-store'}).catch(e=>{manifestPromise=null;throw e});
 return manifestPromise
 }
+function dynamicTrackedKey(key){return /^(mbu_(studio|study_intelligence|generated_questions|course)_)/.test(String(key||''))}
 async function trackedKeys(){
 const m=await manifest(),keys=new Set(['mbu_exam1_studio_v1','mbu_study_intelligence_v1']);
+if(m.sync?.studioStorageKey)keys.add(m.sync.studioStorageKey);
 for(const b of m.banks||[])if(b.storageKey)keys.add(b.storageKey);
 for(const p of m.hazards?.pages||[])if(p.storageKey)keys.add(p.storageKey);
 if(m.features?.questionGenerator?.storageKey)keys.add(m.features.questionGenerator.storageKey);
+for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i);if(dynamicTrackedKey(key))keys.add(key)}
+for(const key of Object.keys(readMeta()))if(dynamicTrackedKey(key))keys.add(key);
 return [...keys].sort()
 }
 function touchStore(key){
@@ -59,7 +69,7 @@ return s
 async function importSnapshot(input,{mode='newer'}={}){
 const s=validateSnapshot(input),allowed=new Set(await trackedKeys()),localMeta=readMeta(),nextMeta={...localMeta};let imported=0,skipped=0,unknown=0;
 for(const [key,raw] of Object.entries(s.stores)){
-if(!allowed.has(key)){unknown++;continue}
+if(!allowed.has(key)&&!dynamicTrackedKey(key)){unknown++;continue}
 const localRaw=localStorage.getItem(key),remoteMeta=plain(s.meta?.[key])?s.meta[key]:{updatedAt:Number(s.createdAt)||0,revision:0,deviceId:String(s.deviceId||'')},should=mode==='replace'||localRaw===null||isRemoteNewer(remoteMeta,localMeta[key]);
 if(!should){skipped++;continue}
 localStorage.setItem(key,raw);nextMeta[key]={revision:Number(remoteMeta.revision)||0,updatedAt:Number(remoteMeta.updatedAt)||Number(s.createdAt)||now(),deviceId:String(remoteMeta.deviceId||s.deviceId||'import'),serverRevision:Number(remoteMeta.serverRevision)||0,dirty:false};imported++
