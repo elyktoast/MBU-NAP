@@ -2118,7 +2118,7 @@ test.describe('canonical quiz regression', () => {
     expect(result.activity).toBe(1200);
     expect(result.adaptiveUid).not.toBe('');
     expect(result.poolContains).toBe(true);
-    await expect(page.locator('#analyticsSummary')).toContainText('Overall accuracy');
+    await expect(page.locator('#analyticsSummary')).toContainText('Personal mastery');
   });
 
   test('Server revision upgrade does not discard legacy unsynced local progress', async ({ page }) => {
@@ -2562,7 +2562,8 @@ test.describe('canonical quiz regression', () => {
       document.getElementById('adaptiveToggle').checked=true;
       startMode('custom');
     });
-    await expect(page.locator('#qmeta')).toContainText('Adaptive Challenge 3/5');
+    await expect(page.locator('#qmeta')).toContainText('Adaptive 2.0');
+    await expect(page.locator('#qmeta')).toContainText('Challenge 3/5');
     await expect(page.locator('#studioPrev')).toBeDisabled();
     await expect(page.locator('#studioNavToggle')).toBeHidden();
     const startTheta=await page.evaluate(()=>DB.active.adaptive.theta);
@@ -2698,7 +2699,7 @@ test.describe('canonical quiz regression', () => {
     expect(summary.overall.attempts).toBe(0);
     await expect(page.locator('#adaptiveToggle')).toBeVisible();
     expect(await page.locator('#adaptiveToggle').isChecked()).toBe(false);
-    await expect(page.locator('#analyticsSummary')).toContainText('Overall accuracy');
+    await expect(page.locator('#analyticsSummary')).toContainText('Personal mastery');
   });
 
   test('Universal question search is lazy, global, and routes results into Studio', async ({ page }) => {
@@ -2716,13 +2717,13 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#mbu-question-search')).not.toBeVisible();
   });
 
-  test('Studio exposes Smart Review, opt-in Adaptive Mode, Due Review, and multi-window analytics', async ({ page }) => {
+  test('Studio exposes Smart Review, opt-in Adaptive 2.0, Due Review, and multi-window mastery analytics', async ({ page }) => {
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     await expect(page.getByRole('button',{name:'Start Smart Review'})).toBeVisible();
     await expect(page.locator('#adaptiveToggle')).toBeVisible();
     expect(await page.locator('#adaptiveToggle').isChecked()).toBe(false);
     await expect(page.getByRole('button',{name:'Review Due'})).toBeVisible();
-    await expect(page.locator('#analyticsSummary')).toContainText('Overall accuracy');
+    await expect(page.locator('#analyticsSummary')).toContainText('Personal mastery');
     await expect(page.locator('#analyticsSummary')).toContainText('Last 7 days');
     await expect(page.locator('#analyticsSummary')).toContainText('Last 30 days');
   });
