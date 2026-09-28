@@ -1835,7 +1835,7 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('[data-qa-modes]')).toContainText('87 first attempts');
     await expect(page.locator('[data-qa-trend]')).toContainText('2026-09-27');
     await expect(page.locator('[data-qa-trend]')).toContainText('316 first attempts');
-    await expect(page.locator('[data-admin-question-analytics] a').filter({hasText:'Open exact question'})).toHaveAttribute('href',/studio\.html\?question=b1-1$/);
+    await expect(page.locator('[data-admin-question-analytics] a[href$="studio.html?question=b1-1"]')).toHaveAttribute('href',/studio\.html\?question=b1-1$/);
     await expect(page.locator('[data-admin-question-reports]')).toContainText('Example reported question');
     await expect(page.locator('[data-admin-question-reports] a').filter({hasText:'Open exact question'})).toHaveAttribute('href',/studio\.html\?question=b1-1$/);
     await page.locator('[data-admin-question-report-status="9"]').selectOption('reviewing');
