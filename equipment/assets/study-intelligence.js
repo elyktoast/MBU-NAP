@@ -31,7 +31,7 @@ function reviewInterval(attempt,ok){
   return streak===1?3:streak===2?7:streak===3?14:30
 }
 function questionMeta(bank,q,extra={}){
-  return{uid:uidOf(bank,q),bank:bankOf(bank,q),bankLabel:bankLabelOf(extra.bankLabel,bank,q),set:Number(extra.set??q?.set??q?.setn??1)||1,questionId:String(extra.questionId??q?.id??q?.seq??''),topic:topicOf(q),stem:String(q?.stem||q?.q||'').trim(),href:String(extra.href||location.href)}
+  return{uid:uidOf(bank,q),courseId,examId,bank:bankOf(bank,q),bankLabel:bankLabelOf(extra.bankLabel,bank,q),set:Number(extra.set??q?.set??q?.setn??1)||1,questionId:String(extra.questionId??q?.id??q?.seq??''),topic:topicOf(q),stem:String(q?.stem||q?.q||'').trim(),href:String(extra.href||location.href)}
 }
 function recordAnswer(bank,q,ok,extra={}){
   const d=db(),meta=questionMeta(bank,q,extra),t=Number(extra.at)||now(),prev=d.attempts[meta.uid]||{},correct=Number(prev.correct)||0,incorrect=Number(prev.incorrect)||0,attempts=Number(prev.attempts)||0,firstAttempt=attempts===0;
@@ -41,7 +41,7 @@ function recordAnswer(bank,q,ok,extra={}){
   d.activity.push({id:meta.uid+':'+t,at:t,type:'answer',uid:meta.uid,bank:meta.bank,bankLabel:meta.bankLabel,topic:meta.topic,ok:!!ok,href:meta.href});
   if(d.activity.length>MAX_ACTIVITY)d.activity.splice(0,d.activity.length-MAX_ACTIVITY);
   save(d);
-  if(firstAttempt)window.MBUSupabase?.submitItemContribution?.(meta.uid,!!ok,extra.responseMs??null,extra.sessionMode||'unknown')?.catch?.(()=>{});
+  if(firstAttempt)window.MBUSupabase?.submitItemContribution?.(meta.uid,!!ok,extra.responseMs??null,extra.sessionMode||'unknown',{courseId:meta.courseId,examId:meta.examId,bankId:meta.bank,topic:meta.topic})?.catch?.(()=>{});
   return next
 }
 function seedLegacy(records=[]){
