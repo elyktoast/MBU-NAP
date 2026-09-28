@@ -1,5 +1,6 @@
 (() => {
   const CHECK_COOLDOWN = 120000;
+  const REQUEST_TIMEOUT = 8000;
   const BUILD_CACHE_KEY = 'mbu_build_manifest_v1';
   const script = document.currentScript;
   const manifestUrl = new URL('../build.json', script?.src || location.href);
@@ -23,14 +24,21 @@
   }
 
   async function readBuild() {
-    const response = await fetch(manifestUrl.href + '?t=' + Date.now(), {
-      cache: 'no-store',
-      credentials: 'same-origin'
-    });
-    if (!response.ok) throw new Error('Update check failed: ' + response.status);
-    const data = await response.json();
-    if (!data || typeof data.build !== 'string' || !data.build) throw new Error('Invalid build manifest');
-    return data.build;
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT);
+    try {
+      const response = await fetch(manifestUrl.href + '?t=' + Date.now(), {
+        cache: 'no-store',
+        credentials: 'same-origin',
+        signal: controller.signal
+      });
+      if (!response.ok) throw new Error('Update check failed: ' + response.status);
+      const data = await response.json();
+      if (!data || typeof data.build !== 'string' || !data.build) throw new Error('Invalid build manifest');
+      return data.build;
+    } finally {
+      clearTimeout(timer);
+    }
   }
 
   async function establishBaseline() {
