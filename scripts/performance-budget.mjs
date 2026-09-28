@@ -87,7 +87,7 @@ const tests=read('tests/e2e/quiz-regression.spec.js');
 if(tests.includes('waitForTimeout('))fail('Browser regression suite contains a fixed sleep');
 
 const ci=read('.github/workflows/ci.yml');
-for(const token of ['cancel-in-progress: true','needs: quality','npm run validate','npm run test:semantic','npm run test:perf','npm run test:e2e'])if(!ci.includes(token))fail('CI workflow missing '+token);
+for(const token of ['cancel-in-progress: true','needs: quality','npm run validate','npm run test:semantic','npm run test:perf','npm run test:cat','npm run test:e2e'])if(!ci.includes(token))fail('CI workflow missing '+token);
 for(const p of ['.github/workflows/validate.yml','.github/workflows/browser-tests.yml'])if(fs.existsSync(path.join(root,p)))fail('Obsolete split CI workflow remains: '+p);
 
 if(failures.length){
