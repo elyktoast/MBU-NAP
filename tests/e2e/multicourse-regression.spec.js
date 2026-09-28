@@ -59,4 +59,19 @@ test.describe('multi-course foundation', () => {
     expect(manifest.defaultBankEngine).toBe('canonical');
     expect(manifest.bankPage).toBe('bank.html');
   });
+  test('guest navbar resolves from the app root instead of the site origin', async ({ page }) => {
+    await page.goto('/');
+    await page.evaluate(() => MBUPageReady);
+    const nav = page.locator('.mbu-global-nav');
+    await expect(nav.getByRole('link', { name: 'Equipment' })).toHaveAttribute('href', /\/equipment\/$/);
+    await expect(nav.getByRole('link', { name: 'Study Studio' })).toHaveAttribute('href', /\/equipment\/exam-1\/studio\.html$/);
+    await expect(nav.getByRole('link', { name: 'Adaptive' })).toHaveAttribute('href', /\/equipment\/exam-1\/studio\.html\?mode=adaptive$/);
+
+    await page.goto('/basic-principles/exam-1/');
+    await page.evaluate(() => MBUPageReady);
+    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Basic Principles' })).toHaveAttribute('href', /\/basic-principles\/$/);
+    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Study Studio' })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html$/);
+  });
+
+
 });
