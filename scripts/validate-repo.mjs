@@ -953,7 +953,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const quiz=read('equipment/assets/quiz-engine.js'),dash=read('equipment/assets/exam-dashboard.js'),hazards=read('equipment/assets/hazards-standard-engine.js'),hazardsAdvanced=read('equipment/assets/hazards-quiz-engine.js');
  for(const token of ["lastSet:null","db.lastSet=s","params.get('set')","SETS[requested])startSet(requested)"])if(!quiz.includes(token))fail('Canonical Continue Studying contract missing '+token);
- for(const token of ["Number(d.lastSet)","recentActivity?.(100)","states.filter(x=>x.incomplete&&x.started)","href:b.page+'?set='+encodeURIComponent(pick.set)"])if(!dash.includes(token))fail('Exam dashboard Continue Studying contract missing '+token);
+ for(const token of ["Number(d.lastSet)","recentActivity?.(100)","states.filter(x=>x.incomplete&&x.started)","page.includes('?')?'&':'?'","set='+encodeURIComponent(pick.set)"])if(!dash.includes(token))fail('Exam dashboard Continue Studying contract missing '+token);
  if(!hazards.includes("topic:q.topic||q.lec||q.concept||'Workstation Hazards'"))fail('Standard Hazards loader drops topic metadata');
  if(!hazardsAdvanced.includes("topic:q.topic||q.lec||q.concept||'Workstation Hazards'"))fail('Advanced Hazards loader drops topic metadata');
 }
