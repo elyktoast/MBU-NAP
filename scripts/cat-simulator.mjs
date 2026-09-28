@@ -65,7 +65,7 @@ for(const ability of abilities){
       const trueDifficulty=engine.difficultyEstimate(q).difficulty,ok=random()<logistic(ability-trueDifficulty);
       state=engine.advance(state,q,ok);
       if(state.answered>=questionCount)break;
-      picked=engine.pick(questions,state);
+      picked=engine.pick(questions,state);state=picked.state;
       if(picked.question)state=picked.state;
     }
     if(state.answered!==questionCount)incompleteSessions++;
