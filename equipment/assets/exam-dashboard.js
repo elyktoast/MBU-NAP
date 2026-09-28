@@ -47,7 +47,7 @@ function renderMastery(){
     '<div class="mastery-card"><span>Confidence</span><b>'+m.overall.confidence+'%</b><small>Based on practice volume and recency</small></div>'+
     '<div class="mastery-card"><span>Recent trend</span><b>'+esc(trendText(m.overall.trend))+'</b><small>Recent answers vs prior answers</small></div>'+
     '<div class="mastery-card"><span>Topics practiced</span><b>'+m.topicsPracticed+'</b><small>'+m.due+' due for review</small></div></div>'+
-    '<div class="mastery-actions"><a class="btn" href="studio.html?mode=weak">Review Weakest Topics →</a><a class="btn" href="studio.html?mode=adaptive">Start Adaptive 2.0 →</a></div>'+
+    '<div class="mastery-actions"><a class="btn" href="studio.html?mode=weak">Review Weakest Topics →</a><a class="btn" href="studio.html?mode=adaptive">Start Adaptive 2.1 →</a></div>'+
     '<div class="mastery-topics">'+topics.map(([name,x])=>'<div class="mastery-topic"><span><strong>'+esc(name)+'</strong><small>'+x.attempts+' attempts · '+esc(x.status)+' · '+x.confidence+'% confidence</small></span><b>'+x.mastery+'%</b><div class="mastery-bar" aria-label="'+esc(name)+' mastery '+x.mastery+' percent"><i style="width:'+x.mastery+'%"></i></div></div>').join('')+'</div>'+
     '<div class="mastery-note">Mastery is a personal study estimate from your own answer history, recent performance, and practice recency. It is not an exam-pass prediction.</div>'
 }
