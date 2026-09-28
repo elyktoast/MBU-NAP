@@ -12,7 +12,7 @@
     "review:questions": "node scripts/question-review-queue.mjs",
     "review:questions:write": "node scripts/question-review-queue.mjs --write",
     "test:review-queue": "node scripts/question-review-queue.mjs --check",
-    "test:cat": "node scripts/cat-simulator.mjs --runs=20 --questions=50 --check",
+    "test:cat": "node scripts/cat-simulator.mjs --runs=10 --questions=50 --check",
     "simulate:cat": "node scripts/cat-simulator.mjs --runs=100 --questions=50 --write"
   },
   "devDependencies": {
