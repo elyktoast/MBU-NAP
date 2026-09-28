@@ -2336,7 +2336,7 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#masteryPanel a[href="studio.html?mode=adaptive"]')).toBeVisible();
   });
 
-  test('Adaptive 2.0 prioritizes a weak topic when challenge fit is otherwise equal', async ({ page }) => {
+  test('Adaptive 2.1 prioritizes a weak topic when challenge fit is otherwise equal', async ({ page }) => {
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     const out=await page.evaluate(()=>{
       MBUStudyIntelligence.clearAll();
@@ -2551,6 +2551,71 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#opts .mbu-cross').first()).toHaveAttribute('aria-pressed','true');
   });
 
+  test('Adaptive 2.1 opens with diagnostic sampling before personalized targeting', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const result=await page.evaluate(()=>{
+      const topics=['Airway','Monitoring','Medical Gases','Pharmacology'];
+      const qs=Array.from({length:16},(_,i)=>({uid:'diag-'+i,bank:'b1',topic:topics[i%topics.length],sourceTitle:'Source '+(i%topics.length),stem:(i%4===0?'What is the primary purpose of this item?':i%4===1?'A patient undergoing anesthesia develops a change. Which response is most appropriate?':i%4===2?'Calculate the approximate dose for this patient based on the information provided.':'Which statement is NOT correct during this clinical scenario?'),opts:['A','B','C','D'],ans:[0]}));
+      let picked=MBUAdaptiveQuiz.start(qs,8,{selectionSeed:12345}),state=picked.state;const phases=[],seenTopics=[];
+      while(picked.question&&state.answered<7){phases.push(picked.phase);seenTopics.push(picked.topic);state=MBUAdaptiveQuiz.advance(state,picked.question,true);picked=MBUAdaptiveQuiz.pick(qs,state)}
+      return{version:state.version,engine:state.engine,phases,seenTopics:[...new Set(seenTopics)],profile:MBUAdaptiveQuiz.sessionProfile(state)};
+    });
+    expect(result.version).toBe(3);
+    expect(result.engine).toBe('2.1');
+    expect(result.phases.slice(0,6)).toEqual(Array(6).fill('diagnostic'));
+    expect(result.phases[6]).toBe('adaptive');
+    expect(result.seenTopics.length).toBeGreaterThanOrEqual(3);
+    expect(result.profile.diagnosticRemaining).toBe(0);
+  });
+
+  test('Adaptive 2.1 completes the derived topic blueprint exactly', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const result=await page.evaluate(()=>{
+      const qs=[
+        ...Array.from({length:6},(_,i)=>({uid:'bp-a-'+i,bank:'b1',topic:'Airway',sourceTitle:'Airway',stem:'Airway blueprint item '+i,opts:['A','B','C','D'],ans:[0]})),
+        ...Array.from({length:4},(_,i)=>({uid:'bp-b-'+i,bank:'b1',topic:'Monitoring',sourceTitle:'Monitoring',stem:'Monitoring blueprint item '+i,opts:['A','B','C','D'],ans:[0]}))
+      ];
+      let picked=MBUAdaptiveQuiz.start(qs,5,{selectionSeed:77}),state=picked.state;
+      while(picked.question&&state.answered<5){state=MBUAdaptiveQuiz.advance(state,picked.question,true);if(state.answered<5)picked=MBUAdaptiveQuiz.pick(qs,state)}
+      return{targets:state.blueprintTargets,counts:state.topicCounts,answered:state.answered};
+    });
+    expect(result.answered).toBe(5);
+    expect(result.counts).toEqual(result.targets);
+    expect(result.targets.Airway+result.targets.Monitoring).toBe(5);
+  });
+
+  test('Adaptive 2.1 concept cooldown prefers an equally matched different concept', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const result=await page.evaluate(()=>{
+      const same={uid:'concept-same',bank:'b1',topic:'Airway',sourceTitle:'Airway Equipment',stem:'A patient has an airway question with four choices.',opts:['A','B','C','D'],ans:[0]};
+      const different={uid:'concept-different',bank:'b1',topic:'Airway',sourceTitle:'Difficult Airway',stem:'A patient has an airway question with four choices.',opts:['A','B','C','D'],ans:[0]};
+      different.stem='A patient has another airway question with four choices.';
+      const prior={uid:'prior',ok:true,difficulty:0,uncertainty:.9,topic:'Airway',concept:MBUAdaptiveQuiz.conceptOf(same),phase:'diagnostic'};
+      const state=MBUAdaptiveQuiz.normalize({maxQuestions:3,poolUids:[same.uid,different.uid],path:[prior],answered:1,topicCounts:{Airway:1},selectionSeed:1,selectionStep:0},3);
+      const picked=MBUAdaptiveQuiz.pick([same,different],state);
+      return{uid:picked.question?.uid,concept:picked.concept,prior:prior.concept};
+    });
+    expect(result.uid).toBe('concept-different');
+    expect(result.concept).not.toBe(result.prior);
+  });
+
+  test('Adaptive 2.1 difficulty uncertainty decreases only after population calibration is eligible', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const result=await page.evaluate(()=>{
+      const q={uid:'uncertainty-item',bank:'b1',topic:'Monitoring',stem:'A patient has a monitoring change. Which action is most appropriate?',opts:['A','B','C','D'],ans:[0]};
+      const original=MBUSupabase.calibration;
+      MBUSupabase.calibration=()=>null;const structural=MBUAdaptiveQuiz.difficultyEstimate(q);
+      MBUSupabase.calibration=()=>({unique_learners:24,difficulty_logit:1.2});const under=MBUAdaptiveQuiz.difficultyEstimate(q);
+      MBUSupabase.calibration=()=>({unique_learners:25,difficulty_logit:1.2});const eligible=MBUAdaptiveQuiz.difficultyEstimate(q);
+      MBUSupabase.calibration=original;return{structural,under,eligible};
+    });
+    expect(result.structural.source).toBe('structural');
+    expect(result.under.source).toBe('structural');
+    expect(result.under.uncertainty).toBe(result.structural.uncertainty);
+    expect(result.eligible.source).toBe('blended');
+    expect(result.eligible.uncertainty).toBeLessThan(result.structural.uncertainty);
+  });
+
   test('Adaptive session is opt-in, sequentially reviewable, and survives reload with its level', async ({ page }) => {
     await seedSignedIn(page);
     await page.goto(exam + '/studio.html');await waitForStudio(page);
@@ -2562,7 +2627,7 @@ test.describe('canonical quiz regression', () => {
       document.getElementById('adaptiveToggle').checked=true;
       startMode('custom');
     });
-    await expect(page.locator('#qmeta')).toContainText('Adaptive 2.0');
+    await expect(page.locator('#qmeta')).toContainText('Adaptive 2.1');
     await expect(page.locator('#qmeta')).toContainText('Challenge 3/5');
     await expect(page.locator('#studioPrev')).toBeDisabled();
     await expect(page.locator('#studioNavToggle')).toBeHidden();
@@ -2571,10 +2636,10 @@ test.describe('canonical quiz regression', () => {
     await expect.poll(()=>page.evaluate(()=>DB.active?.adaptive?.theta)).toBeGreaterThan(startTheta);
     await expect.poll(()=>page.evaluate(()=>session.length)).toBe(2);
     const afterCorrectTheta=await page.evaluate(()=>DB.active.adaptive.theta);
-    const before=await page.evaluate(()=>({uids:[...DB.active.uids],level:DB.active.adaptive.level,theta:DB.active.adaptive.theta,se:DB.active.adaptive.se,pos:DB.active.pos}));
+    const before=await page.evaluate(()=>({uids:[...DB.active.uids],level:DB.active.adaptive.level,theta:DB.active.adaptive.theta,se:DB.active.adaptive.se,pos:DB.active.pos,engine:DB.active.adaptive.engine,selectionSeed:DB.active.adaptive.selectionSeed,blueprintTargets:DB.active.adaptive.blueprintTargets,currentUncertainty:DB.active.adaptive.currentUncertainty}));
     await page.reload();await waitForStudio(page);
     await expect.poll(()=>page.evaluate(()=>DB.active?.mode)).toBe('adaptive');
-    const after=await page.evaluate(()=>({uids:[...DB.active.uids],level:DB.active.adaptive.level,theta:DB.active.adaptive.theta,se:DB.active.adaptive.se,pos:DB.active.pos}));
+    const after=await page.evaluate(()=>({uids:[...DB.active.uids],level:DB.active.adaptive.level,theta:DB.active.adaptive.theta,se:DB.active.adaptive.se,pos:DB.active.pos,engine:DB.active.adaptive.engine,selectionSeed:DB.active.adaptive.selectionSeed,blueprintTargets:DB.active.adaptive.blueprintTargets,currentUncertainty:DB.active.adaptive.currentUncertainty}));
     expect(after).toEqual(before);
     await expect(page.locator('#studioPrev')).toBeEnabled();
     await expect(page.locator('#studioNavToggle')).toBeHidden();
@@ -2717,7 +2782,7 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#mbu-question-search')).not.toBeVisible();
   });
 
-  test('Studio exposes Smart Review, opt-in Adaptive 2.0, Due Review, and multi-window mastery analytics', async ({ page }) => {
+  test('Studio exposes Smart Review, opt-in Adaptive 2.1, Due Review, and multi-window mastery analytics', async ({ page }) => {
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     await expect(page.getByRole('button',{name:'Start Smart Review'})).toBeVisible();
     await expect(page.locator('#adaptiveToggle')).toBeVisible();
@@ -2728,10 +2793,10 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#analyticsSummary')).toContainText('Last 30 days');
   });
 
-  test('Adaptive 2.0 beta CTA is transparent and routes guests into the account-aware Studio flow', async ({ page }) => {
+  test('Adaptive 2.1 beta CTA is transparent and routes guests into the account-aware Studio flow', async ({ page }) => {
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
     const cta=page.locator('#adaptiveBetaCard');
-    await expect(cta).toContainText('Adaptive 2.0');
+    await expect(cta).toContainText('Adaptive 2.1');
     await expect(cta).toContainText('Account is required');
     await expect(cta).toContainText('testing and population calibration');
     await expect(page.locator('#tryAdaptiveBtn')).toHaveAttribute('href','studio.html?mode=adaptive');
