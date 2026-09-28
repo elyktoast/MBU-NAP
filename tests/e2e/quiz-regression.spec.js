@@ -2559,9 +2559,9 @@ test.describe('canonical quiz regression', () => {
   test('Adaptive 2.1 opens with diagnostic sampling before personalized targeting', async ({ page }) => {
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     const result=await page.evaluate(()=>{
-      const topics=['Airway','Monitoring','Medical Gases','Pharmacology'];
-      const qs=Array.from({length:16},(_,i)=>({uid:'diag-'+i,bank:'b1',topic:topics[i%topics.length],sourceTitle:'Source '+(i%topics.length),stem:(i%4===0?'What is the primary purpose of this item? ':i%4===1?'A patient undergoing anesthesia develops a change. Which response is most appropriate? ':i%4===2?'Calculate the approximate dose for this patient based on the information provided. ':'Which statement is NOT correct during this clinical scenario? ')+i,opts:['A','B','C','D'],ans:[0]}));
-      let picked=MBUAdaptiveQuiz.start(qs,8,{selectionSeed:12345}),state=picked.state;const phases=[],seenTopics=[];
+      const topics=['Airway','Monitoring','Medical Gases','Pharmacology','CO₂ & Scavenging','Hazards & Safety'];
+      const qs=Array.from({length:24},(_,i)=>({uid:'diag-'+i,bank:'b1',topic:topics[i%topics.length],sourceTitle:'Source '+(i%topics.length),stem:(i%4===0?'What is the primary purpose of this item? ':i%4===1?'A patient undergoing anesthesia develops a change. Which response is most appropriate? ':i%4===2?'Calculate the approximate dose for this patient based on the information provided. ':'Which statement is NOT correct during this clinical scenario? ')+i,opts:['A','B','C','D'],ans:[0]}));
+      let picked=MBUAdaptiveQuiz.start(qs,12,{selectionSeed:12345}),state=picked.state;const phases=[],seenTopics=[];
       while(picked.question&&state.answered<7){phases.push(picked.phase);seenTopics.push(picked.topic);state=MBUAdaptiveQuiz.advance(state,picked.question,true);if(state.answered<7){picked=MBUAdaptiveQuiz.pick(qs,state);state=picked.state}}
       return{version:state.version,engine:state.engine,phases,seenTopics:[...new Set(seenTopics)],profile:MBUAdaptiveQuiz.sessionProfile(state)};
     });
