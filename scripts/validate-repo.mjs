@@ -670,7 +670,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!exists('scripts/content-integrity.mjs'))fail('Content integrity validator is missing');
  if(!exists('scripts/cat-simulator.mjs'))fail('CAT simulation harness is missing');
  const catSim=read('scripts/cat-simulator.mjs');if(!catSim.includes('manifest.studioSources')||!catSim.includes("path.join(root,'equipment','exam-1','banks.json')"))fail('CAT simulator is not driven by Studio source manifest');
- if(!catSim.includes('if(picked.question)state=picked.state'))fail('CAT simulator drops selected CAT state between questions');
+ if(!catSim.includes('picked=engine.pick(questions,state);state=picked.state;'))fail('CAT simulator drops selected CAT state between questions');
 }
 
 // Question generation is scaffolded but intentionally disabled until a provider is chosen.
