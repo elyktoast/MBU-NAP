@@ -511,6 +511,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 {
  const src=read('equipment/assets/studio-page.js');
  if(!src.includes("searchText:(stem+' '+topic+' '+exp+' '+src).toLowerCase()"))fail('Studio: normalized questions do not preindex search text');
+ if(!src.includes("sourceTitle:String(q.sourceTitle||'')")||!src.includes("sourceMeta:q.sourceMeta&&typeof q.sourceMeta==='object'?q.sourceMeta:null"))fail('Studio: Adaptive concept metadata is not preserved through normalization');
  if(!src.includes("for(const q of ALL){if(q.searchText.includes(x)){r.push(q);if(r.length===100)break}}"))fail('Studio: search does not stop after the visible result cap');
 }
 
