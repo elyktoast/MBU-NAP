@@ -18,3 +18,9 @@ Use course/exam-unique Studio keys so question UIDs remain globally distinct fro
 - `bp1-combined`
 
 The content taxonomy in `../banks.json` should be populated from the actual Basic Principles Exam 1 source material rather than copied from Equipment.
+
+## Runtime rule
+
+All Basic Principles banks use Canonical Session v1: `equipment-bank1-practice-set1-v1`, modeled on Equipment Bank 1 Practice Set 1.
+
+Once question JSON exists, the manifest points the bank at the shared `bank.html?bank=<id>` entry. Do not create bank-specific quiz engines, shells, or styles.
