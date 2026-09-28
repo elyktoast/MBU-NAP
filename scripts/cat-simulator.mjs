@@ -19,11 +19,12 @@ function loadQuestions(){
     if(!fs.existsSync(full))continue;
     const data=JSON.parse(fs.readFileSync(full,'utf8')),questions=Array.isArray(data.questions)?data.questions:[];
     for(const q of questions){
-      const id=String(q.uid||q.id||q.seq||rows.length+1);
-      rows.push({...q,uid:String(q.uid||bank+'-'+id),bank:String(q.bank||bank)});
+      const id=String(q.id??q.seq??rows.length+1);
+      rows.push({...q,uid:bank+'-'+id,bank});
     }
   }
   if(rows.length<questionCount)throw new Error('CAT simulator could not load enough questions');
+  const uids=new Set(rows.map(q=>q.uid));if(uids.size!==rows.length)throw new Error('CAT simulator question normalization produced duplicate UIDs');
   return rows
 }
 
