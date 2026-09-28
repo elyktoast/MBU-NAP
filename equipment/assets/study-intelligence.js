@@ -41,7 +41,7 @@ function recordAnswer(bank,q,ok,extra={}){
   d.activity.push({id:meta.uid+':'+t,at:t,type:'answer',uid:meta.uid,bank:meta.bank,bankLabel:meta.bankLabel,topic:meta.topic,ok:!!ok,href:meta.href});
   if(d.activity.length>MAX_ACTIVITY)d.activity.splice(0,d.activity.length-MAX_ACTIVITY);
   save(d);
-  if(firstAttempt)window.MBUSupabase?.submitItemContribution?.(meta.uid,!!ok,extra.responseMs??null,extra.sessionMode||'unknown',{courseId:meta.courseId,examId:meta.examId,bankId:meta.bank,topic:meta.topic})?.catch?.(()=>{});
+  if(firstAttempt)window.MBUSupabase?.submitItemContribution?.({questionId:meta.uid,correct:!!ok,responseMs:extra.responseMs??null,sessionMode:extra.sessionMode||'unknown',courseId:meta.courseId,examId:meta.examId,bankId:meta.bank,topic:meta.topic})?.catch?.(()=>{});
   return next
 }
 function seedLegacy(records=[]){
