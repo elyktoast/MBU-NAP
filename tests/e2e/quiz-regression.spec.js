@@ -2727,12 +2727,12 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#analyticsSummary')).toContainText('Last 30 days');
   });
 
-  test('Adaptive Testing beta CTA is transparent and routes guests into the account-aware Studio flow', async ({ page }) => {
+  test('Adaptive 2.0 beta CTA is transparent and routes guests into the account-aware Studio flow', async ({ page }) => {
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
     const cta=page.locator('#adaptiveBetaCard');
-    await expect(cta).toContainText('Try Adaptive Testing');
+    await expect(cta).toContainText('Adaptive 2.0');
     await expect(cta).toContainText('Account is required');
-    await expect(cta).toContainText('test and calibrate Adaptive Mode');
+    await expect(cta).toContainText('testing and population calibration');
     await expect(page.locator('#tryAdaptiveBtn')).toHaveAttribute('href','studio.html?mode=adaptive');
     await page.locator('#tryAdaptiveBtn').click();
     await waitForStudio(page);
