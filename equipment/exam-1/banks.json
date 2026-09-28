@@ -20,7 +20,8 @@
       ],
       "questionsPerSet": 100,
       "storageKey": "SRNA_COMBINED_EXAM_SET_1_2026_V1",
-      "engine": "canonical"
+      "engine": "canonical",
+      "sessionEnvironment": "equipment-bank1-practice-set1-v1"
     },
     {
       "id": "bank2",
@@ -41,7 +42,8 @@
       "questionsPerSet": 100,
       "storageKey": "srna_all5_groundup_v1",
       "engine": "canonical",
-      "legacyFormat": "bank2"
+      "legacyFormat": "bank2",
+      "sessionEnvironment": "equipment-bank1-practice-set1-v1"
     },
     {
       "id": "bank3",
@@ -63,7 +65,8 @@
       "engine": "canonical",
       "storageKey": "srna_equipment_dashboard_v1",
       "imageBase": "images/bank3/",
-      "legacyFormat": "bank3"
+      "legacyFormat": "bank3",
+      "sessionEnvironment": "equipment-bank1-practice-set1-v1"
     },
     {
       "id": "combined",
@@ -83,7 +86,8 @@
       "engine": "canonical",
       "imageBase": "images/combined/",
       "legacyFormat": "combined",
-      "creator": "Claude"
+      "creator": "Claude",
+      "sessionEnvironment": "equipment-bank1-practice-set1-v1"
     },
     {
       "id": "hazards",
@@ -344,5 +348,7 @@
       "Exam 1 Equipment Study Guide",
       "Nurse Anesthesia, 7th ed. (Elisha et al.)"
     ]
-  }
+  },
+  "sessionEnvironment": "equipment-bank1-practice-set1-v1",
+  "defaultBankEngine": "canonical"
 }
