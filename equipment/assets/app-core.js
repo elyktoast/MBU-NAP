@@ -14,17 +14,12 @@ errors.push(item);if(errors.length>25)errors.shift();return item
 }
 window.addEventListener('error',e=>record('window-error',e.error||e.message,{file:e.filename||'',line:e.lineno||0,column:e.colno||0}));
 window.addEventListener('unhandledrejection',e=>record('unhandled-rejection',e.reason));
-function manifestURL(){
-const ctx=window.MBU_CONTEXT||{};
-if(ctx.manifestUrl)return new URL(ctx.manifestUrl,location.href);
-if(ctx.examUrl)return new URL('banks.json',new URL(ctx.examUrl,location.href));
-return new URL('../exam-1/banks.json',runtime.assetsBase)
-}
+function manifestURL(){const c=window.MBU_CONTEXT||{};return c.manifestUrl?new URL(c.manifestUrl,location.href):c.examUrl?new URL('banks.json',new URL(c.examUrl,location.href)):new URL('../exam-1/banks.json',runtime.assetsBase)}
 async function manifest(){
 if(!manifestPromise)manifestPromise=runtime.fetchJSON(manifestURL(),{cache:'no-store'}).catch(e=>{manifestPromise=null;throw e});
 return manifestPromise
 }
-function dynamicTrackedKey(key){return /^(mbu_(studio|study_intelligence|generated_questions|course)_)/.test(String(key||''))}
+function dynamicTrackedKey(k){return /^mbu_(studio|study_intelligence|generated_questions|course)_/.test(k||'')}
 async function trackedKeys(){
 const m=await manifest(),keys=new Set(['mbu_exam1_studio_v1','mbu_study_intelligence_v1']);
 if(m.sync?.studioStorageKey)keys.add(m.sync.studioStorageKey);
