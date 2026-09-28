@@ -1,6 +1,6 @@
 /* Adaptive 2.1: precalibration CAT hardening with diagnostic sampling, blueprint constraints, exposure control, and uncertainty-aware selection. */
 (()=>{'use strict';
-const DIAGNOSTIC_LENGTH=6,TOP_CANDIDATES=5,CONCEPT_COOLDOWN=3,structuralCache=new WeakMap(),contentCache=new WeakMap(),conceptCache=new WeakMap();
+const DIAGNOSTIC_LENGTH=6,TOP_CANDIDATES=8,CONCEPT_COOLDOWN=3,structuralCache=new WeakMap(),contentCache=new WeakMap(),conceptCache=new WeakMap();
 const plain=v=>!!v&&typeof v==='object'&&!Array.isArray(v);
 const clamp=(v,min,max)=>Math.max(min,Math.min(max,v));
 const clampLevel=v=>clamp(Number(v)||3,1,5);
@@ -106,7 +106,7 @@ function candidateScore(q,s,distribution,recent,recentContent,snapshot,index,tar
 }
 function chooseRandomesque(candidates,s){
   const sorted=[...candidates].sort((a,b)=>a.score-b.score||b.information-a.information||a.tie-b.tie),best=sorted[0];if(!best)return null;
-  const tolerance=s.answered<DIAGNOSTIC_LENGTH?.075:.04,near=sorted.filter(x=>x.score<=best.score+tolerance).slice(0,TOP_CANDIDATES);
+  const tolerance=s.answered<DIAGNOSTIC_LENGTH?.14:.09,near=sorted.filter(x=>x.score<=best.score+tolerance).slice(0,TOP_CANDIDATES);
   if(near.length===1)return near[0];
   const r=unitRandom(s.selectionSeed,s.selectionStep),index=Math.min(near.length-1,Math.floor(r*near.length));return near[index]
 }
