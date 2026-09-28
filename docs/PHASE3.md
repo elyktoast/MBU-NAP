@@ -140,3 +140,27 @@ The operator question-analytics workspace now merges the deterministic source/co
 ## Dedicated admin dashboard
 
 Operator controls now live in a separate Admin Dashboard opened from the signed-in account dashboard. The entry is hidden unless the server confirms the current account is an operator admin, and the dashboard rechecks admin status before mounting. All underlying admin RPCs retain their server-side admin authorization checks. The account dashboard no longer embeds administrative controls.
+
+
+## CAT termination foundation
+
+Adaptive CAT now includes a calibration-ready termination policy layer without changing live session behavior.
+
+Current defaults are intentionally non-authoritative:
+
+- policy mode is `observe`;
+- minimum length defaults to 25 questions;
+- maximum length defaults to 75 questions, bounded by the selected session size;
+- the calibrated decision threshold (`cutTheta`) is unset;
+- the confidence multiplier and optional target standard error are unset until supported by real population data.
+
+The termination evaluator already supports:
+
+1. **Minimum-length protection:** no confidence-based termination before the minimum question count.
+2. **Confidence-bound decisions:** once calibrated, a session can be classified above or below the decision threshold only when the entire configured confidence interval lies on one side of the threshold and any configured precision target is satisfied.
+3. **Maximum-length termination:** the evaluator always reports a stop at the configured maximum, even when the ability interval still overlaps the threshold.
+4. **Observe-only shadow evaluation:** `wouldStop` and the reason/classification can be inspected before the feature is allowed to end real sessions.
+5. **Active-mode gate:** `shouldStop` can become true only when the policy is explicitly switched to `active`; confidence-based active stopping also requires calibrated threshold inputs.
+6. **Calibration provenance:** policy objects can carry a calibration ID and calibration timestamp so future threshold changes remain auditable.
+
+The current 25/75 bounds are scaffolding, not validated psychometric claims. They can be changed from calibrated evidence without rewriting the CAT selector or learner model. Before active termination is enabled, real-user data should be used to choose the decision threshold, confidence rule, precision target, minimum length, and maximum length, then those settings should be validated in shadow mode and simulation.
