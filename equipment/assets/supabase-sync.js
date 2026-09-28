@@ -152,19 +152,13 @@ const rows=await api('/rest/v1/snar_privacy_requests',{method:'POST',body:{user_
 return Number(rows?.[0]?.id)||0
 }
 function requireLegal(){if(legalAccepted!==true)throw Error('Accept the current Terms and Privacy Notice first.')}
-async function submitItemContribution(questionId,correct,responseMs=null,sessionMode='unknown',scope={}){
-requireAccountAccess();
-const id=String(questionId||'').trim();if(!id)return false;
-const ms=responseMs==null?null:Math.max(0,Math.min(3600000,Math.round(Number(responseMs)||0))),ctx=window.MBU_CONTEXT||{};
-const courseId=String(scope.courseId||ctx.courseId||'equipment').trim().toLowerCase(),examId=String(scope.examId||ctx.examId||'exam-1').trim().toLowerCase(),bankId=String(scope.bankId||'unknown').trim().toLowerCase(),topic=String(scope.topic||'Other').trim()||'Other';
-const result=await api('/rest/v1/rpc/mbu_submit_item_contribution_v2',{method:'POST',body:{p_question_id:id,p_correct:!!correct,p_response_ms:ms,p_session_mode:String(sessionMode||'unknown'),p_course_id:courseId,p_exam_id:examId,p_bank_id:bankId,p_topic:topic}});
-return result===true
+async function submitItemContribution(x){
+requireAccountAccess();if(!x?.questionId)return false;
+return await api('/rest/v1/rpc/mbu_submit_item_contribution_v2',{method:'POST',body:{p_question_id:x.questionId,p_correct:!!x.correct,p_response_ms:x.responseMs??null,p_session_mode:x.sessionMode||'unknown',p_course_id:x.courseId||'equipment',p_exam_id:x.examId||'exam-1',p_bank_id:x.bankId||'unknown',p_topic:x.topic||'Other'}})===true
 }
 async function refreshCalibration(force=false){
-requireAccountAccess();
-if(!force&&calibrationFetchedAt&&Date.now()-calibrationFetchedAt<300000)return calibrationByKey;
-const rows=await api('/rest/v1/mbu_item_calibration?select=question_id,course_id,exam_id,bank_id,topic,unique_learners,correct_first_attempts,incorrect_first_attempts,adaptive_first_attempts,response_samples,avg_response_ms,p_value,difficulty_logit,standard_error,confidence,updated_at');
-calibrationByKey=new Map((rows||[]).map(row=>[String(row.question_id),row]));calibrationFetchedAt=Date.now();return calibrationByKey
+requireAccountAccess();if(!force&&calibrationFetchedAt&&Date.now()-calibrationFetchedAt<300000)return calibrationByKey;
+const rows=await api('/rest/v1/mbu_item_calibration?select=question_id,unique_learners,correct_first_attempts,incorrect_first_attempts,adaptive_first_attempts,response_samples,avg_response_ms,p_value,difficulty_logit,standard_error,confidence,updated_at');calibrationByKey=new Map((rows||[]).map(r=>[String(r.question_id),r]));calibrationFetchedAt=Date.now();return calibrationByKey
 }
 function calibration(questionId){return calibrationByKey.get(String(questionId||''))||null}
 async function listDevices(){
