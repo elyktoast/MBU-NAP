@@ -8,6 +8,7 @@ async function start(){
   await runtime.loadScript('studio-sync.js');
   await runtime.loadScript('navigator.js');
   await runtime.loadScript('calculator.js');
+  await runtime.loadScript('cat-termination.js');
   await runtime.loadScript('adaptive-quiz.js');
   await window.MBUSupabase?.refreshCalibration?.().catch(()=>{});
   await runtime.loadScript('studio-page.js');
