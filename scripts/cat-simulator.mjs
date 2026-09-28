@@ -66,6 +66,7 @@ for(const ability of abilities){
       state=engine.advance(state,q,ok);
       if(state.answered>=questionCount)break;
       picked=engine.pick(questions,state);
+      if(picked.question)state=picked.state;
     }
     if(state.answered!==questionCount)incompleteSessions++;
     for(const [topic,target] of Object.entries(state.blueprintTargets||{}))if((Number(state.topicCounts?.[topic])||0)!==Number(target)){blueprintViolations++;if(blueprintExamples.length<5)blueprintExamples.push({ability,run,topic,target:Number(target),actual:Number(state.topicCounts?.[topic])||0,answered:state.answered,targets:state.blueprintTargets,counts:state.topicCounts})}
