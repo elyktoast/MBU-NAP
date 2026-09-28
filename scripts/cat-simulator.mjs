@@ -11,19 +11,18 @@ const shouldWrite=process.argv.includes('--write');
 const abilities=[-1.25,-.6,0,.6,1.25];
 
 function loadQuestions(){
-  const manifest=JSON.parse(fs.readFileSync(path.join(root,'equipment','exam-1','banks.json'),'utf8')),sources=Array.isArray(manifest.studioSources)?manifest.studioSources:[],rows=[];
-  if(!sources.length)throw new Error('CAT simulator could not load Studio source manifest');
-  for(const source of sources){
-    const bank=String(source.key||''),full=path.join(root,'equipment','exam-1',String(source.data||''));
-    if(!bank||!fs.existsSync(full))throw new Error('CAT simulator source missing: '+bank);
-    const data=JSON.parse(fs.readFileSync(full,'utf8')),questions=Array.isArray(data.questions)?data.questions:[],raw=source.setFilter?questions.filter(q=>Number(q.set)===Number(source.setFilter)):questions;
-    raw.forEach((q,i)=>{
-      const studioSet=bank.startsWith('h')?1:(q.set||1),id=String(q.id??(studioSet+'-'+i));
-      rows.push({...q,uid:bank+'-'+id,bank,set:studioSet,bankLabel:String(source.label||bank)});
+  const manifest=JSON.parse(fs.readFileSync(path.join(root,'equipment','exam-1','banks.json'),'utf8')),rows=[];
+  if(!Array.isArray(manifest.studioSources))throw new Error('CAT simulator could not load Studio source manifest');
+  for(const source of manifest.studioSources){
+    const full=path.join(root,'equipment','exam-1',source.data),data=JSON.parse(fs.readFileSync(full,'utf8')),all=Array.isArray(data)?data:(Array.isArray(data.questions)?data.questions:[]);
+    const selected=source.setFilter?all.filter(q=>Number(q.set)===Number(source.setFilter)):all;
+    selected.forEach((q,i)=>{
+      const id=String(q.id??q.seq??i+1),studioSet=String(source.key).startsWith('h')?1:(Number(q.set)||1);
+      rows.push({...q,uid:String(source.key)+'-'+id,bank:String(source.key),set:studioSet});
     });
   }
   if(rows.length<questionCount)throw new Error('CAT simulator could not load enough questions');
-  const uids=new Set(rows.map(q=>q.uid));if(uids.size!==rows.length)throw new Error('CAT simulator production normalization produced duplicate UIDs');
+  const uids=new Set(rows.map(q=>q.uid));if(uids.size!==rows.length)throw new Error('CAT simulator question normalization produced duplicate UIDs');
   return rows
 }
 function loadEngine(){
