@@ -1852,7 +1852,7 @@ test.describe('canonical quiz regression', () => {
     await privacySection.locator('summary').click();
     page.once('dialog',dialog=>dialog.accept());
     await page.locator('[data-admin-retention]').click();
-    await expect(page.locator('[data-account-message]')).toContainText('4 resolved question reports removed');
+    await expect(page.locator('#mbu-admin-dashboard [data-account-message]')).toContainText('4 resolved question reports removed');
 
     const accountsSection=page.locator('details').filter({hasText:'Accounts'});
     await accountsSection.locator('summary').click();
