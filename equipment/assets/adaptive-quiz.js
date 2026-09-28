@@ -1,5 +1,6 @@
-/* Adaptive Mode 2.0: CAT-style challenge matching plus personal mastery/review priority. */
+/* Adaptive 2.1: precalibration CAT hardening with diagnostic sampling, blueprint constraints, exposure control, and uncertainty-aware selection. */
 (()=>{'use strict';
+const DIAGNOSTIC_LENGTH=6,TOP_CANDIDATES=5,CONCEPT_COOLDOWN=3;
 const plain=v=>!!v&&typeof v==='object'&&!Array.isArray(v);
 const clamp=(v,min,max)=>Math.max(min,Math.min(max,v));
 const clampLevel=v=>clamp(Number(v)||3,1,5);
@@ -8,9 +9,18 @@ const challengeToLogit=challenge=>clampLogit((clampLevel(challenge)-3)*1.25);
 const logitToLevel=logit=>clampLevel(Math.round(3+clampLogit(logit)/1.25));
 const logistic=x=>1/(1+Math.exp(-clamp(x,-12,12)));
 const popWeight=n=>n<25?0:n<100?.35:n<300?.6:.8;
-function tieRank(uid){let h=2166136261;for(const c of String(uid||'')){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
+const textOf=q=>String(q?.stem||q?.q||'');
+function hash32(value){let h=2166136261;for(const c of String(value??'')){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
+function unitRandom(seed,step){let x=(Number(seed)>>>0)^Math.imul((Number(step)||0)+1,0x9e3779b1);x^=x>>>16;x=Math.imul(x,0x7feb352d);x^=x>>>15;x=Math.imul(x,0x846ca68b);x^=x>>>16;return(x>>>0)/4294967296}
+function newSeed(){try{const a=new Uint32Array(1);crypto.getRandomValues(a);return a[0]||1}catch{return(hash32(Date.now()+':'+Math.random())||1)}}
 function topicOf(q){return String(q?.topic||q?.lec||q?.concept||'Other').trim()||'Other'}
-function contentKey(q){const stem=String(q?.stem||q?.q||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();return stem||('uid:'+String(q?.uid||q?.id||''))}
+function conceptOf(q){
+  const explicit=String(q?.concept||q?.disc||'').trim();if(explicit)return topicOf(q)+'|'+explicit;
+  const family=Array.isArray(q?.sourceMeta?.families)?String(q.sourceMeta.families[0]||'').trim():'';
+  const title=String(q?.sourceTitle||family||'').trim();
+  return topicOf(q)+'|'+(title||'general')
+}
+function contentKey(q){const stem=textOf(q).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();return stem||('uid:'+String(q?.uid||q?.id||''))}
 function questionStats(uid){return window.MBUStudyIntelligence?.questionStats?.(uid)||null}
 function populationStats(uid){return window.MBUSupabase?.calibration?.(uid)||null}
 function masterySnapshot(){return window.MBUStudyIntelligence?.mastery?.()||{byTopic:{}}}
@@ -21,67 +31,113 @@ function recentContentKeys(questions,limit=50){
   for(const uid of recent){const saved=questionStats(uid),q=byUid.get(uid);if(saved?.stem)keys.add(contentKey({stem:saved.stem,uid}));else if(q)keys.add(contentKey(q))}
   return keys
 }
-function challenge(q){
-  const multi=(Array.isArray(q?.ans)?q.ans:Array.isArray(q?.answer)?q.answer:[]).length>1;
-  let score=3+(multi?.65:0)+((q?.bank==='hh'||Number(q?.set)===7)?.7:0);
-  const pop=populationStats(q?.uid),learners=Number(pop?.unique_learners)||0,weight=popWeight(learners);
-  if(weight&&Number.isFinite(Number(pop?.difficulty_logit))){
-    const populationScore=clampLevel(3+clampLogit(pop.difficulty_logit)/1.25);score=score*(1-weight)+populationScore*weight
+function difficultyEstimate(q){
+  const stem=textOf(q),words=stem.trim().split(/\s+/).filter(Boolean).length,answers=Array.isArray(q?.ans)?q.ans:Array.isArray(q?.answer)?q.answer:[],options=Array.isArray(q?.options)?q.options:Array.isArray(q?.opts)?q.opts:[],multi=answers.length>1||String(q?.type||'').toLowerCase().includes('multi');
+  let structural=2.65;
+  if(multi)structural+=.5;
+  if(options.length>=5)structural+=.12;
+  if(words>=35)structural+=.22;
+  if(words>=60)structural+=.18;
+  if(/\b(patient|during|after|before|undergoing|receives|presents|intraoperative|preoperative|postoperative)\b/i.test(stem))structural+=.18;
+  if(/\b(calculate|approximately|dose|concentration|minute ventilation|psig|mg\/kg|mcg\/kg|ml\/kg|mac)\b|%/i.test(stem))structural+=.24;
+  if(/\b(not|except|least|incorrect)\b/i.test(stem))structural+=.12;
+  if(q?.image||q?.imageSvg||q?.imageId)structural+=.12;
+  if(words<18&&/^(what|which|how)\b/i.test(stem.trim()))structural-=.15;
+  structural=clampLevel(structural);
+  const structuralDifficulty=challengeToLogit(structural),pop=populationStats(q?.uid),learners=Number(pop?.unique_learners)||0,weight=popWeight(learners),popDifficulty=Number(pop?.difficulty_logit);
+  let difficulty=structuralDifficulty,uncertainty=.9,source='structural';
+  if(weight&&Number.isFinite(popDifficulty)){
+    difficulty=clampLogit(structuralDifficulty*(1-weight)+clampLogit(popDifficulty)*weight);
+    const popUncertainty=learners>=300?.22:learners>=100?.38:.58;
+    uncertainty=clamp(.9*(1-weight)+popUncertainty*weight,.15,.95);source='blended'
   }
-  return Math.round(clampLevel(score)*100)/100
+  return{challenge:Math.round(clampLevel(3+difficulty/1.25)*100)/100,difficulty,uncertainty,source,learners,structuralChallenge:Math.round(structural*100)/100}
 }
+function challenge(q){return difficultyEstimate(q).challenge}
 function estimateAbility(path=[]){
   const rows=Array.isArray(path)?path.filter(x=>plain(x)&&Number.isFinite(Number(x.difficulty))):[];
   let theta=0;const priorVar=2.25;
   for(let iter=0;iter<6;iter++){
     let gradient=-theta/priorVar,information=1/priorVar;
-    for(const row of rows){const b=clampLogit(row.difficulty),p=logistic(theta-b);gradient+=(row.ok?1:0)-p;information+=p*(1-p)}
+    for(const row of rows){const b=clampLogit(row.difficulty),p=logistic(theta-b),certainty=1-clamp(Number(row.uncertainty)||0,.05,.95)*.35;gradient+=(((row.ok?1:0)-p)*certainty);information+=p*(1-p)*certainty}
     const step=gradient/Math.max(.15,information);theta=clampLogit(theta+clamp(step,-1,1));if(Math.abs(step)<.001)break
   }
   let information=1/priorVar;
-  for(const row of rows){const p=logistic(theta-clampLogit(row.difficulty));information+=p*(1-p)}
+  for(const row of rows){const p=logistic(theta-clampLogit(row.difficulty)),certainty=1-clamp(Number(row.uncertainty)||0,.05,.95)*.35;information+=p*(1-p)*certainty}
   return{theta,se:1/Math.sqrt(information),information}
 }
+function normalizeCounts(raw){return Object.fromEntries(Object.entries(plain(raw)?raw:{}).map(([k,v])=>[String(k),Math.max(0,Number(v)||0)]))}
 function normalize(state,count=50){
-  const s=plain(state)?state:{},seen=Array.isArray(s.seenUids)?[...new Set(s.seenUids.map(String).filter(Boolean))]:[],seenContentKeys=Array.isArray(s.seenContentKeys)?[...new Set(s.seenContentKeys.map(String).filter(Boolean))]:[],topics=plain(s.topicCounts)?s.topicCounts:{},poolUids=Array.isArray(s.poolUids)?[...new Set(s.poolUids.map(String).filter(Boolean))]:[],path=Array.isArray(s.path)?s.path.filter(plain).slice(-200):[],focusCounts=plain(s.focusCounts)?s.focusCounts:{},estimate=path.length?estimateAbility(path):{theta:clampLogit(s.theta),se:Number(s.se)||1.5,information:Number(s.information)||0};
-  return{mode:'adaptive',version:2,theta:estimate.theta,se:estimate.se,information:estimate.information,level:logitToLevel(estimate.theta),answered:Math.max(0,Number(s.answered)||path.length),correct:Math.max(0,Number(s.correct)||path.filter(x=>x.ok).length),maxQuestions:Math.max(1,Math.min(200,Number(s.maxQuestions)||Number(count)||50)),seenUids:seen,seenContentKeys,poolUids,topicCounts:Object.fromEntries(Object.entries(topics).map(([k,v])=>[String(k),Math.max(0,Number(v)||0)])),focusCounts:Object.fromEntries(Object.entries(focusCounts).map(([k,v])=>[String(k),Math.max(0,Number(v)||0)])),path,currentLevel:logitToLevel(estimate.theta),currentDifficulty:Number.isFinite(Number(s.currentDifficulty))?clampLogit(s.currentDifficulty):null,currentChallenge:Number.isFinite(Number(s.currentChallenge))?Number(s.currentChallenge):null,currentProbability:Number.isFinite(Number(s.currentProbability))?Number(s.currentProbability):null,currentFocus:String(s.currentFocus||''),currentTopic:String(s.currentTopic||'')}
+  const s=plain(state)?state:{},seen=Array.isArray(s.seenUids)?[...new Set(s.seenUids.map(String).filter(Boolean))]:[],seenContentKeys=Array.isArray(s.seenContentKeys)?[...new Set(s.seenContentKeys.map(String).filter(Boolean))]:[],poolUids=Array.isArray(s.poolUids)?[...new Set(s.poolUids.map(String).filter(Boolean))]:[],path=Array.isArray(s.path)?s.path.filter(plain).slice(-200):[],estimate=path.length?estimateAbility(path):{theta:clampLogit(s.theta),se:Number(s.se)||1.5,information:Number(s.information)||0};
+  return{mode:'adaptive',version:3,engine:'2.1',theta:estimate.theta,se:estimate.se,information:estimate.information,level:logitToLevel(estimate.theta),answered:Math.max(0,Number(s.answered)||path.length),correct:Math.max(0,Number(s.correct)||path.filter(x=>x.ok).length),maxQuestions:Math.max(1,Math.min(200,Number(s.maxQuestions)||Number(count)||50)),seenUids:seen,seenContentKeys,poolUids,topicCounts:normalizeCounts(s.topicCounts),focusCounts:normalizeCounts(s.focusCounts),blueprintTargets:normalizeCounts(s.blueprintTargets),path,selectionSeed:(Number(s.selectionSeed)>>>0)||1,selectionStep:Math.max(0,Number(s.selectionStep)||0),currentLevel:logitToLevel(estimate.theta),currentDifficulty:Number.isFinite(Number(s.currentDifficulty))?clampLogit(s.currentDifficulty):null,currentChallenge:Number.isFinite(Number(s.currentChallenge))?Number(s.currentChallenge):null,currentProbability:Number.isFinite(Number(s.currentProbability))?Number(s.currentProbability):null,currentUncertainty:Number.isFinite(Number(s.currentUncertainty))?Number(s.currentUncertainty):null,currentFocus:String(s.currentFocus||''),currentTopic:String(s.currentTopic||''),currentConcept:String(s.currentConcept||''),currentPhase:String(s.currentPhase||'')}
 }
-function poolTopicCounts(questions,allowed){
-  const counts={},content=new Set();let total=0;
-  for(const q of questions){if(!q?.uid||allowed&&!allowed.has(String(q.uid)))continue;const key=contentKey(q);if(content.has(key))continue;content.add(key);const t=topicOf(q);counts[t]=(counts[t]||0)+1;total++}
-  return{counts,total}
+function uniquePool(questions,allowed){
+  const rows=[],seen=new Set();
+  for(const q of questions||[]){if(!q?.uid||allowed&&!allowed.has(String(q.uid)))continue;const key=contentKey(q);if(seen.has(key))continue;seen.add(key);rows.push(q)}
+  return rows
 }
-function candidateScore(q,s,distribution,recent,recentContent,snapshot,index){
-  const key=contentKey(q),c=challenge(q),difficulty=challengeToLogit(c),probability=logistic(s.theta-difficulty),information=probability*(1-probability),topic=topicOf(q),topicCount=Number(s.topicCounts[topic])||0,share=distribution.total?(distribution.counts[topic]||0)/distribution.total:0,expected=(s.answered+1)*share,balancePenalty=Math.max(0,topicCount-expected)*.07,personal=questionStats(q.uid),attempts=Math.max(0,Number(personal?.attempts)||0),recentPenalty=(recent.has(String(q.uid))||recentContent.has(key))?.16:0,priorExposurePenalty=Math.min(.14,attempts*.035),priority=learningPriority(q,snapshot),personalizationWeight=s.answered<5?.11:.24,priorityBonus=(priority.score/100)*personalizationWeight,newCoverageBonus=!priority.seen&&s.answered>=5?.025:0,score=Math.abs(probability-.5)+balancePenalty+recentPenalty+priorExposurePenalty-priorityBonus-newCoverageBonus;
-  return{q,challenge:c,difficulty,probability,information,topic,priority,score,tie:tieRank(q.uid||index)}
+function distributionOf(questions,allowed){
+  const counts={},rows=uniquePool(questions,allowed);for(const q of rows){const t=topicOf(q);counts[t]=(counts[t]||0)+1}
+  return{counts,total:rows.length,rows}
+}
+function blueprintTargets(distribution,maxQuestions){
+  const entries=Object.entries(distribution.counts),total=Math.max(1,distribution.total),limit=Math.min(maxQuestions,distribution.total),targets={},remainders=[];
+  let used=0;
+  for(const [topic,available] of entries){const raw=available/total*limit,base=Math.min(available,Math.floor(raw));targets[topic]=base;used+=base;remainders.push({topic,remainder:raw-base,available})}
+  remainders.sort((a,b)=>b.remainder-a.remainder||a.topic.localeCompare(b.topic));
+  while(used<limit){let placed=false;for(const row of remainders){if(targets[row.topic]<row.available){targets[row.topic]++;used++;placed=true;if(used>=limit)break}}if(!placed)break}
+  return targets
+}
+function blueprintFeasible(topic,s,targets){
+  const next={...s.topicCounts,[topic]:(Number(s.topicCounts[topic])||0)+1},remaining=Math.max(0,s.maxQuestions-(s.answered+1));
+  let deficits=0;for(const [name,target] of Object.entries(targets))deficits+=Math.max(0,Number(target)-(Number(next[name])||0));
+  return deficits<=remaining
+}
+function diagnosticTarget(answered){return[2,3,4,2.5,3.5,3][Math.min(DIAGNOSTIC_LENGTH-1,Math.max(0,Number(answered)||0))]}
+function conceptPenalty(q,s){
+  const concept=conceptOf(q),recent=s.path.slice(-CONCEPT_COOLDOWN).map(x=>String(x.concept||x.topic||'')),topic=topicOf(q);let penalty=0;
+  if(recent[recent.length-1]===concept)penalty+=.18;else if(recent.includes(concept))penalty+=.1;
+  if(s.path.at(-1)?.topic===topic)penalty+=.05;
+  return{concept,penalty}
+}
+function candidateScore(q,s,distribution,recent,recentContent,snapshot,index,targets){
+  const key=contentKey(q),estimate=difficultyEstimate(q),probability=logistic(s.theta-estimate.difficulty),information=probability*(1-probability),topic=topicOf(q),topicCount=Number(s.topicCounts[topic])||0,share=distribution.total?(distribution.counts[topic]||0)/distribution.total:0,expected=(s.answered+1)*share,balancePenalty=Math.max(0,topicCount-expected)*.055,personal=questionStats(q.uid),attempts=Math.max(0,Number(personal?.attempts)||0),recentPenalty=(recent.has(String(q.uid))||recentContent.has(key))?.15:0,priorExposurePenalty=Math.min(.12,attempts*.03),priority=learningPriority(q,snapshot),diagnostic=s.answered<DIAGNOSTIC_LENGTH,personalizationWeight=diagnostic?.025:.2,priorityBonus=(priority.score/100)*personalizationWeight,newCoverageBonus=!priority.seen&&!diagnostic?.025:0,uncertaintyPenalty=estimate.uncertainty*(diagnostic?.025:.055),concept=conceptPenalty(q,s),diagnosticPenalty=diagnostic?Math.abs(estimate.challenge-diagnosticTarget(s.answered))*.09:0,diagnosticTopicPenalty=diagnostic&&topicCount>0?.08*topicCount:0,abilityPenalty=diagnostic?0:Math.abs(probability-.5),score=abilityPenalty+diagnosticPenalty+diagnosticTopicPenalty+balancePenalty+recentPenalty+priorExposurePenalty+uncertaintyPenalty+concept.penalty-priorityBonus-newCoverageBonus;
+  return{q,...estimate,probability,information,topic,concept:concept.concept,priority,score,tie:hash32(q.uid||index),blueprintFeasible:blueprintFeasible(topic,s,targets)}
+}
+function chooseRandomesque(candidates,s){
+  const sorted=[...candidates].sort((a,b)=>a.score-b.score||b.information-a.information||a.tie-b.tie),best=sorted[0];if(!best)return null;
+  const tolerance=s.answered<DIAGNOSTIC_LENGTH?.075:.04,near=sorted.filter(x=>x.score<=best.score+tolerance).slice(0,TOP_CANDIDATES);
+  if(near.length===1)return near[0];
+  const r=unitRandom(s.selectionSeed,s.selectionStep),index=Math.min(near.length-1,Math.floor(r*r*near.length));return near[index]
 }
 function pick(questions,state){
   const s=normalize(state),seen=new Set(s.seenUids),allowed=s.poolUids.length?new Set(s.poolUids):null,seenContent=new Set(s.seenContentKeys);
   for(const q of questions)if(q?.uid&&seen.has(String(q.uid)))seenContent.add(contentKey(q));
-  const recent=recentUids(50),recentContent=recentContentKeys(questions,50),distribution=poolTopicCounts(questions,allowed),snapshot=masterySnapshot();let chosen=null,index=0;
+  const recent=recentUids(50),recentContent=recentContentKeys(questions,50),distribution=distributionOf(questions,allowed),targets=Object.keys(s.blueprintTargets).length?s.blueprintTargets:blueprintTargets(distribution,s.maxQuestions),snapshot=masterySnapshot(),candidates=[];let index=0;
   for(const q of questions){
     const key=contentKey(q);
     if(!q?.uid||seen.has(String(q.uid))||seenContent.has(key)||(allowed&&!allowed.has(String(q.uid)))){index++;continue}
-    const candidate=candidateScore(q,s,distribution,recent,recentContent,snapshot,index);
-    if(!chosen||candidate.score<chosen.score||(candidate.score===chosen.score&&(candidate.information>chosen.information||(candidate.information===chosen.information&&candidate.tie<chosen.tie))))chosen=candidate;
-    index++
+    candidates.push(candidateScore(q,s,distribution,recent,recentContent,snapshot,index,targets));index++
   }
-  if(!chosen)return{question:null,state:s};
-  const focus=chosen.priority.reason||'Balanced practice',topic=chosen.topic;
-  const next={...s,seenUids:[...s.seenUids,String(chosen.q.uid)],seenContentKeys:[...seenContent,contentKey(chosen.q)],topicCounts:{...s.topicCounts,[topic]:(Number(s.topicCounts[topic])||0)+1},focusCounts:{...s.focusCounts,[focus]:(Number(s.focusCounts[focus])||0)+1},currentLevel:logitToLevel(s.theta),currentDifficulty:chosen.difficulty,currentChallenge:chosen.challenge,currentProbability:chosen.probability,currentFocus:focus,currentTopic:topic};
-  return{question:chosen.q,state:next,challenge:chosen.challenge,difficulty:chosen.difficulty,probability:chosen.probability,information:chosen.information,focus,topic,priority:chosen.priority.score}
+  let eligible=candidates.filter(x=>x.blueprintFeasible);if(!eligible.length)eligible=candidates;
+  const chosen=chooseRandomesque(eligible,s);
+  if(!chosen)return{question:null,state:{...s,blueprintTargets:targets}};
+  const focus=s.answered<DIAGNOSTIC_LENGTH?'Diagnostic sampling':(chosen.priority.reason||'Balanced practice'),topic=chosen.topic,phase=s.answered<DIAGNOSTIC_LENGTH?'diagnostic':'adaptive';
+  const next={...s,blueprintTargets:targets,seenUids:[...s.seenUids,String(chosen.q.uid)],seenContentKeys:[...seenContent,contentKey(chosen.q)],topicCounts:{...s.topicCounts,[topic]:(Number(s.topicCounts[topic])||0)+1},focusCounts:{...s.focusCounts,[focus]:(Number(s.focusCounts[focus])||0)+1},selectionStep:s.selectionStep+1,currentLevel:logitToLevel(s.theta),currentDifficulty:chosen.difficulty,currentChallenge:chosen.challenge,currentProbability:chosen.probability,currentUncertainty:chosen.uncertainty,currentFocus:focus,currentTopic:topic,currentConcept:chosen.concept,currentPhase:phase};
+  return{question:chosen.q,state:next,challenge:chosen.challenge,difficulty:chosen.difficulty,probability:chosen.probability,information:chosen.information,uncertainty:chosen.uncertainty,difficultySource:chosen.source,focus,topic,concept:chosen.concept,phase,priority:chosen.priority.score,blueprint:{targets:{...targets},counts:{...next.topicCounts}}}
 }
-function start(questions,count=50){
-  const uniqueCount=new Set(questions.filter(q=>q?.uid).map(contentKey)).size,maxQuestions=Math.max(1,Math.min(Number(count)||50,uniqueCount||1));
-  return pick(questions,normalize({theta:0,maxQuestions,poolUids:questions.map(q=>String(q.uid)),seenContentKeys:[],focusCounts:{}},maxQuestions))
+function start(questions,count=50,options={}){
+  const uniqueCount=new Set(questions.filter(q=>q?.uid).map(contentKey)).size,maxQuestions=Math.max(1,Math.min(Number(count)||50,uniqueCount||1)),seed=(Number(options.selectionSeed)>>>0)||newSeed();
+  return pick(questions,normalize({theta:0,maxQuestions,poolUids:questions.map(q=>String(q.uid)),seenContentKeys:[],focusCounts:{},selectionSeed:seed},maxQuestions))
 }
 function advance(state,q,ok){
-  const s=normalize(state),difficulty=Number.isFinite(Number(s.currentDifficulty))?clampLogit(s.currentDifficulty):challengeToLogit(challenge(q)),presentedChallenge=Number.isFinite(Number(s.currentChallenge))?Number(s.currentChallenge):challenge(q),before=s.theta,path=[...s.path,{uid:String(q?.uid||''),ok:!!ok,difficulty,challenge:presentedChallenge,focus:s.currentFocus,topic:s.currentTopic,at:Date.now()}].slice(-200),estimate=estimateAbility(path),after=estimate.theta;
-  return{...s,theta:after,se:estimate.se,information:estimate.information,level:logitToLevel(after),currentLevel:logitToLevel(after),currentDifficulty:null,currentChallenge:null,currentProbability:null,currentFocus:'',currentTopic:'',answered:s.answered+1,correct:s.correct+(ok?1:0),path:[...path.slice(0,-1),{...path[path.length-1],thetaBefore:before,thetaAfter:after}]}
+  const s=normalize(state),estimate=Number.isFinite(Number(s.currentDifficulty))?{difficulty:clampLogit(s.currentDifficulty),challenge:Number(s.currentChallenge)||challenge(q),uncertainty:Number(s.currentUncertainty)||difficultyEstimate(q).uncertainty}:difficultyEstimate(q),before=s.theta,path=[...s.path,{uid:String(q?.uid||''),ok:!!ok,difficulty:estimate.difficulty,challenge:estimate.challenge,uncertainty:estimate.uncertainty,focus:s.currentFocus,topic:s.currentTopic||topicOf(q),concept:s.currentConcept||conceptOf(q),phase:s.currentPhase||'',at:Date.now()}].slice(-200),ability=estimateAbility(path),after=ability.theta;
+  return{...s,theta:after,se:ability.se,information:ability.information,level:logitToLevel(after),currentLevel:logitToLevel(after),currentDifficulty:null,currentChallenge:null,currentProbability:null,currentUncertainty:null,currentFocus:'',currentTopic:'',currentConcept:'',currentPhase:'',answered:s.answered+1,correct:s.correct+(ok?1:0),path:[...path.slice(0,-1),{...path[path.length-1],thetaBefore:before,thetaAfter:after}]}
 }
 function sessionProfile(state){
-  const s=normalize(state),accuracy=s.answered?Math.round(s.correct/s.answered*100):0;
-  return{version:2,answered:s.answered,correct:s.correct,accuracy,challengeLevel:s.level,precision:s.se<=.55?'higher':s.se<=.85?'building':'early',focusCounts:{...s.focusCounts}}
+  const s=normalize(state),accuracy=s.answered?Math.round(s.correct/s.answered*100):0,diagnosticRemaining=Math.max(0,DIAGNOSTIC_LENGTH-s.answered),blueprintRemaining={};
+  for(const [topic,target] of Object.entries(s.blueprintTargets))blueprintRemaining[topic]=Math.max(0,Number(target)-(Number(s.topicCounts[topic])||0));
+  return{version:3,engine:'2.1',answered:s.answered,correct:s.correct,accuracy,challengeLevel:s.level,precision:s.se<=.55?'higher':s.se<=.85?'building':'early',diagnosticRemaining,phase:diagnosticRemaining?'diagnostic':'adaptive',focusCounts:{...s.focusCounts},blueprintTargets:{...s.blueprintTargets},blueprintRemaining}
 }
-window.MBUAdaptiveQuiz={challenge,estimateAbility,normalize,start,pick,advance,sessionProfile};
+window.MBUAdaptiveQuiz={DIAGNOSTIC_LENGTH,challenge,difficultyEstimate,estimateAbility,blueprintTargets,normalize,start,pick,advance,sessionProfile,topicOf,conceptOf,contentKey};
 })();
