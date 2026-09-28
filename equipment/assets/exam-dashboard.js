@@ -1,6 +1,6 @@
 /* Exam 1 dashboard: continue studying, recent activity, personal mastery, and manifest-driven bank cards. */
 (()=>{'use strict';
-const host=document.getElementById('examCards'),runtime=window.MBUBuild,exam=new URL('../exam-1/',runtime.assetsBase);
+const host=document.getElementById('examCards'),runtime=window.MBUBuild,ctx=window.MBU_CONTEXT||{},exam=ctx.examUrl?new URL(ctx.examUrl,location.href):new URL('../exam-1/',runtime.assetsBase);
 const safe=key=>{try{return JSON.parse(localStorage.getItem(key)||'null')}catch{return null}};
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 function continueForBank(b){
@@ -12,13 +12,13 @@ function continueForBank(b){
     });
     const savedLast=Number(d.lastSet),recent=window.MBUStudyIntelligence?.recentActivity?.(100)||[],recentSet=Number(recent.find(x=>x.bank===b.studioKey)?.set)||0;
     const pick=states.find(x=>x.incomplete&&x.set===savedLast)||states.find(x=>x.incomplete&&x.set===recentSet)||states.filter(x=>x.incomplete&&x.started).sort((a,b)=>b.current-a.current||b.done-a.done||b.set-a.set)[0]||states.find(x=>x.incomplete);
-    if(pick)return{label:b.label,detail:'Practice Set '+pick.set+' · Question '+(pick.current+1)+' / '+pick.count,href:b.page+'?set='+encodeURIComponent(pick.set)}
+    if(pick){const page=b.page||'bank.html?bank='+encodeURIComponent(b.id),sep=page.includes('?')?'&':'?';return{label:b.label,detail:'Practice Set '+pick.set+' · Question '+(pick.current+1)+' / '+pick.count,href:page+sep+'set='+encodeURIComponent(pick.set)}}
   }
-  return{label:b.label,detail:'Review completed progress',href:b.page}
+  return{label:b.label,detail:'Review completed progress',href:b.page||('bank.html?bank='+encodeURIComponent(b.id))}
 }
 function continueCandidates(m){
-  const out=[],meta=safe('mbu_sync_meta_v1')||{},studio=safe('mbu_exam1_studio_v1');
-  if(studio?.active?.uids?.length)out.push({label:'Study Studio',detail:'Question '+((Number(studio.active.pos)||0)+1)+' / '+studio.active.uids.length,href:'studio.html',at:Number(studio.active.updated)||Number(meta.mbu_exam1_studio_v1?.updatedAt)||0});
+  const out=[],meta=safe('mbu_sync_meta_v1')||{},studioKey=m.sync?.studioStorageKey||'mbu_exam1_studio_v1',studio=safe(studioKey);
+  if(studio?.active?.uids?.length)out.push({label:'Study Studio',detail:'Question '+((Number(studio.active.pos)||0)+1)+' / '+studio.active.uids.length,href:'studio.html',at:Number(studio.active.updated)||Number(meta[studioKey]?.updatedAt)||0});
   for(const b of m.banks||[]){if(!b.storageKey)continue;const item=continueForBank(b);if(item)item.at=Number(meta[b.storageKey]?.updatedAt)||0,out.push(item)}
   for(const p of m.hazards?.pages||[]){const raw=localStorage.getItem(p.storageKey);if(!raw)continue;out.push({label:p.label,detail:'Continue saved progress',href:p.page,at:Number(meta[p.storageKey]?.updatedAt)||0})}
   return out.sort((a,b)=>b.at-a.at)
@@ -54,7 +54,7 @@ function renderMastery(){
 async function render(){
  try{
   const m=await runtime.fetchJSON(new URL('banks.json',exam),{cache:'no-store'});renderContinue(m);renderActivity();renderMastery();
-  for(const b of m.banks||[]){const c=document.createElement('div');c.className='card';const n=document.createElement('div');n.className='number';n.textContent=b.id==='bank1'?'1':b.id==='bank2'?'2':b.id==='bank3'?'3':b.id==='combined'?'C':b.id==='hazards'?'H':'•';const h=document.createElement('h2');h.textContent=b.label;const credit=document.createElement('div');credit.className='builder-credit';credit.textContent='Built with '+(b.creator||'Claude');const p=document.createElement('p');p.textContent=b.description||'';const a=document.createElement('a');a.className='btn';a.href=b.page;a.textContent='Open '+b.label+' →';c.append(n,h,credit,p,a);host.append(c)}
+  for(const b of m.banks||[]){const c=document.createElement('div');c.className='card';const n=document.createElement('div');n.className='number';n.textContent=b.id==='bank1'?'1':b.id==='bank2'?'2':b.id==='bank3'?'3':b.id==='combined'?'C':b.id==='hazards'?'H':'•';const h=document.createElement('h2');h.textContent=b.label;const credit=document.createElement('div');credit.className='builder-credit';credit.textContent='Built with '+(b.creator||'Claude');const p=document.createElement('p');p.textContent=b.description||'';const a=document.createElement('a');a.className='btn';a.href=b.page||((m.bankPage||'bank.html')+'?bank='+encodeURIComponent(b.id));a.textContent='Open '+b.label+' →';c.append(n,h,credit,p,a);host.append(c)}
  }catch(e){console.error('Exam bank manifest failed',e);const c=document.createElement('div');c.className='card';c.innerHTML='<h2>Quiz banks could not load</h2><p>Tap SRNA Study Tool to hard refresh this page.</p>';host.append(c)}
 }
 render()
