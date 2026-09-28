@@ -2304,6 +2304,59 @@ test.describe('canonical quiz regression', () => {
     expect(out.summary.overall.accuracy).toBe(50);
   });
 
+  test('Personal mastery separates weak and strong topics with evidence confidence', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const out=await page.evaluate(()=>{
+      MBUStudyIntelligence.clearAll();
+      const weak={uid:'mastery-weak-history',bank:'b1',topic:'Airway',stem:'Weak history'};
+      const strong={uid:'mastery-strong-history',bank:'b1',topic:'Monitoring',stem:'Strong history'};
+      for(let i=0;i<8;i++)MBUStudyIntelligence.recordAnswer('b1',weak,i>=6,{bankLabel:'Quiz Bank 1',at:Date.now()-i*1000});
+      for(let i=0;i<12;i++)MBUStudyIntelligence.recordAnswer('b1',strong,true,{bankLabel:'Quiz Bank 1',at:Date.now()-i*1000});
+      return MBUStudyIntelligence.mastery();
+    });
+    expect(out.byTopic.Airway.mastery).toBeLessThan(out.byTopic.Monitoring.mastery);
+    expect(out.byTopic.Monitoring.confidence).toBeGreaterThan(out.byTopic.Airway.confidence);
+    expect(out.weakest[0].topic).toBe('Airway');
+    expect(out.overall.mastery).toBeGreaterThan(0);
+  });
+
+  test('Exam dashboard renders personal mastery without presenting an exam prediction', async ({ page }) => {
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
+    await page.evaluate(()=>{
+      MBUStudyIntelligence.clearAll();
+      const q={uid:'dashboard-mastery',bank:'b1',topic:'Airway',stem:'Dashboard mastery'};
+      for(let i=0;i<6;i++)MBUStudyIntelligence.recordAnswer('b1',q,i>=3,{bankLabel:'Quiz Bank 1'});
+    });
+    await page.reload();await page.evaluate(() => MBUPageReady);
+    await expect(page.locator('#masteryPanel')).toContainText('Mastery estimate');
+    await expect(page.locator('#masteryPanel')).toContainText('Confidence');
+    await expect(page.locator('#masteryPanel')).toContainText('Airway');
+    await expect(page.locator('#masteryPanel')).toContainText('not an exam-pass prediction');
+    await expect(page.locator('#masteryPanel a[href="studio.html?mode=weak"]')).toBeVisible();
+    await expect(page.locator('#masteryPanel a[href="studio.html?mode=adaptive"]')).toBeVisible();
+  });
+
+  test('Adaptive 2.0 prioritizes a weak topic when challenge fit is otherwise equal', async ({ page }) => {
+    await page.goto(exam + '/studio.html');await waitForStudio(page);
+    const out=await page.evaluate(()=>{
+      MBUStudyIntelligence.clearAll();
+      const weakHistory={uid:'adaptive-weak-history',bank:'b1',topic:'Airway',stem:'Weak topic history',ans:[0]};
+      const strongHistory={uid:'adaptive-strong-history',bank:'b1',topic:'Monitoring',stem:'Strong topic history',ans:[0]};
+      for(let i=0;i<8;i++)MBUStudyIntelligence.recordAnswer('b1',weakHistory,false,{bankLabel:'Quiz Bank 1'});
+      for(let i=0;i<8;i++)MBUStudyIntelligence.recordAnswer('b1',strongHistory,true,{bankLabel:'Quiz Bank 1'});
+      const weak={uid:'adaptive-weak-candidate',bank:'b1',topic:'Airway',set:1,stem:'Weak candidate',ans:[0]};
+      const strong={uid:'adaptive-strong-candidate',bank:'b1',topic:'Monitoring',set:1,stem:'Strong candidate',ans:[0]};
+      const state=MBUAdaptiveQuiz.normalize({theta:0,maxQuestions:2,poolUids:[weak.uid,strong.uid]},2);
+      const picked=MBUAdaptiveQuiz.pick([strong,weak],state);
+      return{uid:picked.question?.uid,focus:picked.focus,topic:picked.topic,version:picked.state.version,profile:MBUAdaptiveQuiz.sessionProfile(picked.state)};
+    });
+    expect(out.uid).toBe('adaptive-weak-candidate');
+    expect(out.focus).toBe('Weak topic');
+    expect(out.topic).toBe('Airway');
+    expect(out.version).toBe(2);
+    expect(out.profile.version).toBe(2);
+  });
+
   test('Adaptive selection avoids recently seen duplicate-content variants when alternatives exist', async ({ page }) => {
     await page.goto(exam + '/studio.html');
     await waitForStudio(page);
