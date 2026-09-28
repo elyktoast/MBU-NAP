@@ -2353,8 +2353,8 @@ test.describe('canonical quiz regression', () => {
     expect(out.uid).toBe('adaptive-weak-candidate');
     expect(out.focus).toBe('Weak topic');
     expect(out.topic).toBe('Airway');
-    expect(out.version).toBe(2);
-    expect(out.profile.version).toBe(2);
+    expect(out.version).toBe(3);
+    expect(out.profile.version).toBe(3);
   });
 
   test('Adaptive selection avoids recently seen duplicate-content variants when alternatives exist', async ({ page }) => {
