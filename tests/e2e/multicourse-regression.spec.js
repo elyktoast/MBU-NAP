@@ -55,5 +55,8 @@ test.describe('multi-course foundation', () => {
     expect(manifest.banks).toEqual([]);
     expect(manifest.studioSources).toEqual([]);
     expect(manifest.contentTaxonomy.topics).toEqual([]);
+    expect(manifest.sessionEnvironment).toBe('equipment-bank1-practice-set1-v1');
+    expect(manifest.defaultBankEngine).toBe('canonical');
+    expect(manifest.bankPage).toBe('bank.html');
   });
 });
