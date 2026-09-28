@@ -285,6 +285,7 @@ if(session()){
 if(sessionStorage.getItem('mbu_cloud_reload')==='1')sessionStorage.removeItem('mbu_cloud_reload');
 const valid=await validSession();
 if(valid?.user?.id){const switched=await prepareLocalOwner(valid.user.id);if(switched){location.reload();return true}stopGuestHeartbeat();if(!recoveryMode&&!await refreshLegalAcceptance()){emit('legal-required',{email:valid.user?.email||''});return true}await refreshAccountAccess();if(!recoveryMode&&accountAccess!=='active'){emit('access-suspended',{email:valid.user?.email||''});return true}startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),400);setTimeout(()=>refreshCalibration().catch(()=>{}),250);emit(recoveryMode?'password-recovery':'signed-in',{email:valid.user?.email||''});return true}
+if(session())return false
 }
 emit('signed-out');startGuestHeartbeat();return false
 })().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth bootstrap failed',e);return false});
