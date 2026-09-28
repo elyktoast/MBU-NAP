@@ -717,7 +717,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!boot.includes("loadScript('supabase-config.js')")||!boot.includes("loadScript('supabase-sync.js')"))fail('Supabase sync is not loaded by the shared bootstrap');
  if(!cfg.includes('sb_publishable_')||cfg.includes('sb_secret_')||cfg.includes('service_role'))fail('Supabase browser config must contain only a publishable key');
  for(const token of ['mbu_sync_state','mbu_sync_devices',"registerAdapter('supabase'",'/auth/v1/token?grant_type=password','/rest/v1/rpc/mbu_sync_write_state','p_expected_server_revision'])if(!cloud.includes(token))fail('Supabase adapter missing '+token);
- for(const token of ['REQUEST_TIMEOUT=10000','new AbortController()','if([400,401,403].includes(Number(e?.status)))','if(session())return false'])if(!cloud.includes(token))fail('Supabase transient-network/session guard missing '+token);
+ for(const token of ['REQUEST_TIMEOUT=10000','new AbortController()','if([400,401,403].includes(e?.status))','if(session())return false'])if(!cloud.includes(token))fail('Supabase transient-network/session guard missing '+token);
  if(cloud.includes("catch(e){saveSession(null);emit('signed-out'"))fail('Supabase refresh again clears sessions on every refresh failure');
  for(const token of ['mbu_sync_versions','mbu_sync_record_version','enable row level security'])if(!migration.includes(token))fail('Supabase migration missing '+token);
  if(!/\(\(select auth\.uid\(\)\)\s*=\s*user_id\)/.test(migration))fail('Supabase migration missing authenticated ownership policy');
