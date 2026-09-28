@@ -99,8 +99,20 @@ console.log(JSON.stringify(report,null,2));
 if(shouldWrite){
   const out=path.join(root,'reports','cat-simulation.json');fs.writeFileSync(out,JSON.stringify(report,null,2)+'\n');console.log('Wrote '+path.relative(root,out))
 }
+const terminationPolicy={mode:'observe',minQuestions:25,maxQuestions:75,cutTheta:0,confidenceZ:1.96,targetSE:.6,calibrationId:'simulated'};
+const terminationChecks={
+  early:engine.evaluateTermination({theta:1.4,se:.2,answered:24,maxQuestions:75},terminationPolicy),
+  above:engine.evaluateTermination({theta:1.0,se:.2,answered:25,maxQuestions:75},terminationPolicy),
+  below:engine.evaluateTermination({theta:-1.0,se:.2,answered:25,maxQuestions:75},terminationPolicy),
+  max:engine.evaluateTermination({theta:.1,se:.9,answered:75,maxQuestions:75},{mode:'observe',minQuestions:25,maxQuestions:75})
+};
+
 if(shouldCheck){
   const failures=[];
+  if(terminationChecks.early.wouldStop||terminationChecks.early.reason!=='minimum_not_reached')failures.push('termination controller stopped before minimum length');
+  if(!terminationChecks.above.wouldStop||terminationChecks.above.classification!=='above_threshold')failures.push('termination controller did not classify a precise estimate above threshold');
+  if(!terminationChecks.below.wouldStop||terminationChecks.below.classification!=='below_threshold')failures.push('termination controller did not classify a precise estimate below threshold');
+  if(!terminationChecks.max.wouldStop||terminationChecks.max.reason!=='maximum_reached')failures.push('termination controller did not force stop at maximum length');
   if(duplicateViolations)failures.push('duplicate items appeared inside a CAT session');
   if(blueprintViolations)failures.push('one or more sessions violated the derived content blueprint');
   if(incompleteSessions)failures.push('one or more sessions ended before the requested length');
