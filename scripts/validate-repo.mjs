@@ -1002,5 +1002,25 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 }
 
 
+
+{
+  const env='equipment-bank1-practice-set1-v1';
+  const equipmentManifest=JSON.parse(read('equipment/exam-1/banks.json'));
+  const principlesManifest=JSON.parse(read('basic-principles/exam-1/banks.json'));
+  const renderer=read('equipment/assets/canonical-bank-page.js');
+  const intelligence=read('equipment/assets/study-intelligence.js');
+  const cloud=read('equipment/assets/supabase-sync.js');
+
+  if(equipmentManifest.sessionEnvironment!==env||equipmentManifest.defaultBankEngine!=='canonical')fail('Equipment canonical session declaration is missing');
+  for(const bank of equipmentManifest.banks.filter(x=>x.engine==='canonical'))if(bank.sessionEnvironment!==env)fail('Canonical bank '+bank.id+' is not on Canonical Session v1');
+  if(principlesManifest.sessionEnvironment!==env||principlesManifest.defaultBankEngine!=='canonical'||principlesManifest.bankPage!=='bank.html')fail('Basic Principles canonical session declaration is missing');
+  if(!exists('basic-principles/exam-1/bank.html'))fail('Basic Principles generic canonical bank page is missing');
+  for(const token of ['ctx.examUrl','URLSearchParams(location.search)',env])if(!renderer.includes(token))fail('Cross-course canonical renderer missing '+token);
+
+  for(const token of ['courseId,examId','courseId:meta.courseId','examId:meta.examId','bankId:meta.bank','topic:meta.topic'])if(!intelligence.includes(token))fail('Global CAT evidence metadata missing '+token);
+  for(const token of ['mbu_submit_item_contribution_v2','p_course_id','p_exam_id','p_bank_id','p_topic'])if(!cloud.includes(token))fail('Scoped CAT transport missing '+token);
+  for(const p of ['supabase/migrations/20260928112827_global_cat_course_exam_metadata.sql','supabase/migrations/20260928113158_prefer_scoped_cat_metadata.sql'])if(!exists(p))fail('Global CAT migration missing '+p);
+}
+
 if(failures.length){console.error('\nVALIDATION FAILED\n- '+failures.join('\n- '));process.exit(1)}
 console.log('Repository validation passed: Banks 1-3 are 500 questions each; Combined is 150 questions; local assets, Studio sources, shared quiz runtimes, answer indexes, and build manifest are valid.');
