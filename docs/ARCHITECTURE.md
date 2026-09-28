@@ -54,3 +54,7 @@ Future feature work should extend the existing shared modules rather than introd
 - Generated-question provider logic remains behind the disabled provider-neutral framework until deliberately enabled.
 
 Repository validation and browser regression tests are the enforcement mechanism for this baseline. A future architectural change should deliberately update those contracts rather than bypassing them.
+
+## Foundation freeze
+
+The post-Phase-3 technical foundation is frozen at build `2026-09-28-foundation-freeze-v252`. See `docs/FOUNDATION_FREEZE.md` for the final audit findings, accepted non-blocking external items, and rules for future changes.
