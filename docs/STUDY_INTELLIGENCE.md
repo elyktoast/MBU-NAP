@@ -13,6 +13,8 @@ It owns:
 - recent activity;
 - 7-day and 30-day summaries;
 - bank and topic analytics;
+- personal mastery estimates and confidence;
+- per-question learning priority used by Smart Review and Adaptive 2.0;
 - synchronized question-issue metadata.
 
 It does **not** replace each quiz runtime's native progress state. Native save formats remain authoritative for resuming an individual quiz. Study intelligence adds a normalized learning layer across those formats.
@@ -23,7 +25,7 @@ Local/cloud store:
 
 `mbu_study_intelligence_v1`
 
-The store participates in the normal SNAR Study Tool local-first backup and Supabase sync envelope.
+The store participates in the normal SRNA Study Tool local-first backup and Supabase sync envelope.
 
 Activity is intentionally capped so long-term use does not create an unbounded browser save.
 
@@ -41,16 +43,30 @@ An incorrect answer resets the streak.
 
 Due Review is sorted by actual due time, oldest overdue first.
 
+## Personal mastery
+
+Personal mastery is derived from the existing synchronized learning history. It does not create a second learner-state store.
+
+For each topic, the model combines:
+
+- lifetime answer performance with conservative smoothing;
+- the most recent answer window;
+- number of attempts;
+- number of unique questions practiced;
+- time since the most recent attempt.
+
+The displayed mastery percentage is a study estimate, not a certification-exam score or pass prediction. Confidence rises as evidence and breadth increase and decays gradually when practice becomes stale. The model also reports a recent trend by comparing the newer half of the recent answer window with the older half.
+
 ## Smart Review
 
-Smart Review ranks questions using the normalized learning history. Priority increases for:
+Smart Review and Adaptive 2.0 share one question-priority function. Priority increases for:
 
 - currently due questions;
-- the most overdue questions;
 - the last answer being incorrect;
-- low cumulative accuracy;
+- weak-topic mastery when there is enough evidence;
 - repeated misses;
-- questions not seen recently.
+- stale previously attempted questions;
+- unseen questions that improve coverage.
 
 Questions with no learning history remain eligible. Equal-priority questions use a deterministic UID hash as a tie-breaker so a cold-start review is distributed across the loaded repository instead of defaulting to the first bank.
 
@@ -73,16 +89,19 @@ The implementation follows CAT principles used by major credentialing examinatio
 
 - ability is represented internally on a continuous provisional logit-like scale;
 - the ability estimate is recalculated from the full adaptive-session response path after every answer;
-- each candidate question receives a provisional difficulty estimate from question structure plus the user's accumulated performance history;
-- item selection targets the question with an estimated success probability closest to 50%, maximizing information around the current ability estimate;
+- candidate difficulty is based on item structure plus population calibration only after the existing minimum-cohort gate is met;
+- personal weakness never changes an item's difficulty estimate;
+- item selection still favors questions near an estimated 50% success probability for information around the current provisional ability estimate;
+- after the initial diagnostic questions, selection increasingly incorporates the shared learning-priority score for due review, weak-topic mastery, repeated misses, stale material, and new coverage;
 - source/topic representation is balanced against the distribution of the user-selected question pool;
 - questions already used in the current adaptive session are excluded;
-- recently seen questions receive an exposure penalty when alternatives are available;
+- recently seen questions and duplicate-content variants receive exposure penalties when alternatives are available;
+- the selected focus reason is retained in adaptive session state so the UI can explain why a question was chosen;
 - the visible Challenge 1–5 indicator is only a friendly display mapped from the continuous internal estimate.
 
 The engine starts at the midpoint with a regularizing prior so one early answer cannot drive the estimate to an extreme. Precision improves as information accumulates.
 
-The current difficulty values are **provisional personal estimates**, not population-calibrated Rasch item parameters. A true high-stakes CAT requires item calibration from a sufficiently large examinee sample. If anonymous aggregate item-performance data is added in the future, those calibrated difficulty parameters can replace the provisional estimator without changing the Studio session interface.
+Structural difficulty values remain provisional, and population calibration is used only when an item reaches the configured cohort threshold. The feature does not claim psychometric equivalence to a validated high-stakes CAT.
 
 Adaptive sessions are forward-only. Normal custom sessions, Smart Review, Due Review, Missed Review, and Flagged Review remain non-adaptive unless Adaptive Mode is explicitly enabled.
 
@@ -104,9 +123,11 @@ The shared summary exposes:
 - number of topics practiced today;
 - questions due for review;
 - performance by bank;
-- performance by topic.
+- performance by topic;
+- overall and topic mastery estimates;
+- mastery confidence and recent trend.
 
-The Exam 1 dashboard uses the same source for Recent Activity. Study Studio uses it for the detailed analytics section.
+The Exam 1 dashboard uses the same source for Recent Activity and the Personal Mastery dashboard. Study Studio uses it for the detailed analytics section.
 
 ## Universal search
 
@@ -132,7 +153,7 @@ CI must fail if:
 
 - an answer runtime stops recording through study intelligence;
 - the study-intelligence store falls out of the sync contract;
-- Smart Review or Due Review wiring disappears;
+- Smart Review, Due Review, mastery, or Adaptive 2.0 wiring disappears;
 - Universal Search is no longer globally available;
 - semantic content auditing leaves the quality workflow;
 - duplicate cloud auth listeners return.
