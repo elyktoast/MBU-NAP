@@ -845,12 +845,12 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  const boot=read('equipment/assets/build-bootstrap.js'),intel=read('equipment/assets/study-intelligence.js'),search=read('equipment/assets/question-search.js'),studio=read('equipment/assets/studio-page.js'),dash=read('equipment/assets/exam-dashboard.js'),core=read('equipment/assets/app-core.js');
  if(!boot.includes("loadScript('study-intelligence.js')"))fail('Shared study runtime missing study-intelligence.js');
  if(boot.includes("loadScript('question-search.js')"))fail('Universal search is eagerly loaded by the bootstrap');
- for(const token of ['mbu_study_intelligence_v1','recordAnswer','smartReview','questionStats','topicStats','due','analytics','recentActivity','addIssue','firstAttempt=attempts===0','if(firstAttempt)window.MBUSupabase'])if(!intel.includes(token))fail('Study intelligence contract missing '+token);
- for(const token of ["m==='smart'","m==='custom'","m==='due'",'adaptiveToggle','MBUAdaptiveQuiz','analyticsSummary','seedLegacy',"sessionMode:DB.active?.mode||'custom'"])if(!studio.includes(token))fail('Studio intelligence integration missing '+token);
- for(const token of ['continuePanel','recentPanel','MBUStudyIntelligence'])if(!dash.includes(token))fail('Exam dashboard intelligence integration missing '+token);
+ for(const token of ['mbu_study_intelligence_v1','recordAnswer','smartReview','questionStats','topicStats','due','analytics','mastery','priorityForQuestion','recentActivity','addIssue','firstAttempt=attempts===0','if(firstAttempt)window.MBUSupabase'])if(!intel.includes(token))fail('Study intelligence contract missing '+token);
+ for(const token of ["m==='smart'","m==='custom'","m==='due'","m==='weak'",'adaptiveToggle','Adaptive 2.0','MBUAdaptiveQuiz','analyticsSummary','seedLegacy',"sessionMode:DB.active?.mode||'custom'","requested==='weak'"])if(!studio.includes(token))fail('Studio intelligence integration missing '+token);
+ for(const token of ['continuePanel','recentPanel','masteryPanel','renderMastery','MBUStudyIntelligence?.mastery'])if(!dash.includes(token))fail('Exam dashboard intelligence integration missing '+token);
  if(!read('equipment/exam-1/studio.html').includes('id="adaptiveToggle"'))fail('Studio adaptive opt-in toggle is missing');
  const adaptive=read('equipment/assets/adaptive-quiz.js'),studioSync=read('equipment/assets/studio-sync.js');
- for(const token of ['estimateAbility','probability-.5','poolUids','topicCounts','recentUids','popWeight','n<25?0'])if(!adaptive.includes(token))fail('Adaptive CAT engine missing '+token);
+ for(const token of ['version:2','estimateAbility','probability-.5','poolUids','topicCounts','focusCounts','learningPriority','masterySnapshot','personalizationWeight','sessionProfile','recentUids','popWeight','n<25?0'])if(!adaptive.includes(token))fail('Adaptive CAT engine missing '+token);
  if(!read('equipment/assets/studio-loader.js').includes("loadScript('adaptive-quiz.js')"))fail('Studio does not load the separate adaptive engine');
  if(!studio.includes("DB.active?.mode==='adaptive'&&reconcileActiveState()"))fail('Adaptive session does not auto-resume after reload');
  if(!studioSync.includes("v.mode==='adaptive'")||!studioSync.includes("out.mode='adaptive'"))fail('Studio adaptive session normalization is missing');
