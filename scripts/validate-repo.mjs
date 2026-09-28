@@ -1015,6 +1015,8 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
   for(const bank of equipmentManifest.banks.filter(x=>x.engine==='canonical'))if(bank.sessionEnvironment!==env)fail('Canonical bank '+bank.id+' is not on Canonical Session v1');
   if(principlesManifest.sessionEnvironment!==env||principlesManifest.defaultBankEngine!=='canonical'||principlesManifest.bankPage!=='bank.html')fail('Basic Principles canonical session declaration is missing');
   if(!exists('basic-principles/exam-1/bank.html'))fail('Basic Principles generic canonical bank page is missing');
+  const examDashboard=read('equipment/assets/exam-dashboard.js');
+  for(const token of ['ctx.examUrl','m.sync?.studioStorageKey','m.bankPage','encodeURIComponent(b.id)'])if(!examDashboard.includes(token))fail('Multi-course exam dashboard missing '+token);
   for(const token of ['ctx.examUrl','URLSearchParams(location.search)',env])if(!renderer.includes(token))fail('Cross-course canonical renderer missing '+token);
 
   for(const token of ['courseId,examId','questionId:meta.uid','courseId:meta.courseId','examId:meta.examId','bankId:meta.bank','topic:meta.topic'])if(!intelligence.includes(token))fail('Global CAT evidence metadata missing '+token);
