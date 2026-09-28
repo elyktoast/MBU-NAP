@@ -2,9 +2,11 @@
 
 ## Canonical source
 
-**Quiz Bank 1 (`equipment/exam-1/quiz-bank-1.html`) is the canonical model for every new quiz bank.**
+**Equipment Quiz Bank 1 → Practice Set 1 is Canonical Session v1 for every future standard quiz bank and generated/custom session.**
 
-New quiz banks must copy Bank 1's behavior and structure first, then change only bank-specific content such as:
+Canonical session identifier: `equipment-bank1-practice-set1-v1`.
+
+New quiz banks must not copy or fork the runtime. They use the shared canonical renderer/runtime and change only manifest/content fields such as:
 - bank title and return label
 - number of practice sets
 - questions per set
@@ -52,6 +54,8 @@ A new quiz bank must follow Bank 1's active-session pattern:
 ## Shared behavior
 
 Use the existing shared components instead of creating duplicate implementations:
+- `canonical-bank-page.js`
+- `quiz-engine.js`
 - `bank1-quiz-ui.css`
 - `site-nav.js` / `site-nav.css`
 - `navigator.js`
@@ -77,3 +81,11 @@ Canonical Hazards sources:
 - `hazards-quiz-engine.js` for Practice Set 3 and Challenge
 
 Studio, global navigation, and the Exam 1 dashboard must obtain Hazards metadata from `banks.json` rather than maintaining a separate hard-coded Hazards catalog.
+
+## Content-only bank rule
+
+For future courses, a bank is a manifest entry plus canonical question JSON and optional images. The standard session environment is selected by `sessionEnvironment: "equipment-bank1-practice-set1-v1"` and `engine: "canonical"`. A future standard bank must not introduce its own HTML quiz shell, grading handler, navigation handler, or CSS variant.
+
+A course may expose one generic `bank.html?bank=<id>` page. The shared canonical renderer resolves the bank ID from the URL and loads that course/exam's manifest through `MBU_CONTEXT.examUrl`.
+
+Studio, Smart Review, missed review, and Adaptive/CAT sessions must retain the same learner-facing answer-selection, submit, grading, explanation, cross-out, navigator, notes, report, and navigation conventions as Canonical Session v1. Session selection logic may differ; the quiz interaction environment does not.
