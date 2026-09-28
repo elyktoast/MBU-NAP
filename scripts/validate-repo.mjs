@@ -667,6 +667,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!nav.includes('mountNav')||!core.includes('Skip to main content')||!css.includes(':focus-visible')||!css.includes('prefers-reduced-motion'))fail('Shared accessibility/tools contract is incomplete');
  for(const p of ['README.md','docs/ARCHITECTURE.md','docs/SYNC.md','docs/CONTENT_AUDIT.md','docs/CONTENT_PHASE1_AUDIT.md','docs/QUESTION_GENERATION.md','docs/FOUNDATION_FREEZE.md','reports/content-phase1-audit.json','CONTRIBUTING.md'])if(!exists(p))fail('Documentation missing '+p);
  if(!exists('scripts/content-integrity.mjs'))fail('Content integrity validator is missing');
+ if(!exists('scripts/cat-simulator.mjs'))fail('CAT simulation harness is missing');
 }
 
 // Question generation is scaffolded but intentionally disabled until a provider is chosen.
@@ -850,7 +851,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ['continuePanel','recentPanel','masteryPanel','renderMastery','MBUStudyIntelligence?.mastery'])if(!dash.includes(token))fail('Exam dashboard intelligence integration missing '+token);
  if(!read('equipment/exam-1/studio.html').includes('id="adaptiveToggle"'))fail('Studio adaptive opt-in toggle is missing');
  const adaptive=read('equipment/assets/adaptive-quiz.js'),studioSync=read('equipment/assets/studio-sync.js');
- for(const token of ['version:2','estimateAbility','probability-.5','poolUids','topicCounts','focusCounts','learningPriority','masterySnapshot','personalizationWeight','sessionProfile','recentUids','popWeight','n<25?0'])if(!adaptive.includes(token))fail('Adaptive CAT engine missing '+token);
+ for(const token of ['version:3',"engine:'2.1'",'DIAGNOSTIC_LENGTH=6','difficultyEstimate','blueprintTargets','blueprintFeasible','diagnosticTarget','CONCEPT_COOLDOWN=3','chooseRandomesque','currentUncertainty','learningPriority','sessionProfile','recentUids','popWeight','n<25?0'])if(!adaptive.includes(token))fail('Adaptive CAT 2.1 engine missing '+token);
  if(!read('equipment/assets/studio-loader.js').includes("loadScript('adaptive-quiz.js')"))fail('Studio does not load the separate adaptive engine');
  if(!studio.includes("DB.active?.mode==='adaptive'&&reconcileActiveState()"))fail('Adaptive session does not auto-resume after reload');
  if(!studioSync.includes("v.mode==='adaptive'")||!studioSync.includes("out.mode='adaptive'"))fail('Studio adaptive session normalization is missing');
