@@ -41,7 +41,7 @@ function difficultyEstimate(q){
   if(/\b(patient|during|after|before|undergoing|receives|presents|intraoperative|preoperative|postoperative)\b/i.test(stem))structural+=.18;
   if(/\b(calculate|approximately|dose|concentration|minute ventilation|psig|mg\/kg|mcg\/kg|ml\/kg|mac)\b|%/i.test(stem))structural+=.24;
   if(/\b(not|except|least|incorrect)\b/i.test(stem))structural+=.12;
-  if(q?.image||q?.imageSvg||q?.imageId)structural+=.12;
+  if(q?.img||q?.image||q?.imageSvg||q?.imageId)structural+=.12;
   if(words<18&&/^(what|which|how)\b/i.test(stem.trim()))structural-=.15;
   structural=clampLevel(structural);
   const structuralDifficulty=challengeToLogit(structural),pop=populationStats(q?.uid),learners=Number(pop?.unique_learners)||0,weight=popWeight(learners),popDifficulty=Number(pop?.difficulty_logit);
