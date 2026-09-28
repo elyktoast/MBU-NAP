@@ -1014,6 +1014,8 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
   if(equipmentManifest.sessionEnvironment!==env||equipmentManifest.defaultBankEngine!=='canonical')fail('Equipment canonical session declaration is missing');
   for(const bank of equipmentManifest.banks.filter(x=>x.engine==='canonical'))if(bank.sessionEnvironment!==env)fail('Canonical bank '+bank.id+' is not on Canonical Session v1');
   if(principlesManifest.sessionEnvironment!==env||principlesManifest.defaultBankEngine!=='canonical'||principlesManifest.bankPage!=='bank.html')fail('Basic Principles canonical session declaration is missing');
+  if(principlesManifest.uidNamespace!=='bp1')fail('Basic Principles CAT UID namespace is missing');
+  for(const src of principlesManifest.studioSources||[])if(!String(src.key||'').startsWith(principlesManifest.uidNamespace+'-'))fail('Basic Principles source key is outside the CAT UID namespace: '+String(src.key||''));
   if(!exists('basic-principles/exam-1/bank.html'))fail('Basic Principles generic canonical bank page is missing');
   const examDashboard=read('equipment/assets/exam-dashboard.js');
   for(const token of ['ctx.examUrl','m.sync?.studioStorageKey','m.bankPage','encodeURIComponent(b.id)'])if(!examDashboard.includes(token))fail('Multi-course exam dashboard missing '+token);
