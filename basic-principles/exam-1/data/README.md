@@ -24,3 +24,7 @@ The content taxonomy in `../banks.json` should be populated from the actual Basi
 All Basic Principles banks use Canonical Session v1: `equipment-bank1-practice-set1-v1`, modeled on Equipment Bank 1 Practice Set 1.
 
 Once question JSON exists, the manifest points the bank at the shared `bank.html?bank=<id>` entry. Do not create bank-specific quiz engines, shells, or styles.
+
+## Global CAT UID namespace
+
+Basic Principles Exam 1 owns the `bp1` namespace. Every Studio source key must begin with `bp1-`, such as `bp1-b1`, `bp1-b2`, or `bp1-combined`. Raw question IDs may remain simple numbers; the shared Studio normalization combines the source key and raw ID into a globally unique question UID for the platform-wide CAT dataset.
