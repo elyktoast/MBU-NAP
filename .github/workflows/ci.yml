@@ -44,6 +44,8 @@ jobs:
         run: npm run analyze:questions
       - name: Verify content review queue
         run: npm run test:review-queue
+      - name: Simulate precalibration CAT behavior
+        run: npm run test:cat
 
   browser:
     name: Browser regression
