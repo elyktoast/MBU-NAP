@@ -65,7 +65,13 @@ The frozen foundation is extended, not replaced, by the first Phase 4 learning f
 
 - personal mastery remains derived inside `study-intelligence.js` from the existing synchronized learning history;
 - the Exam dashboard renders that shared mastery model without creating a second learner-state store;
-- Adaptive 2.0 remains isolated in `adaptive-quiz.js` and consumes the same shared learning priority used by Smart Review;
+- Adaptive 2.1 remains isolated in `adaptive-quiz.js` and consumes the same shared learning priority used by Smart Review;
 - personal weakness changes selection priority, not item difficulty;
 - population difficulty remains gated by the existing calibration cohort thresholds;
 - the learner-facing mastery estimate is explicitly a study estimate, not an exam-pass prediction.
+
+## Precalibration CAT hardening
+
+Adaptive 2.1 extends the frozen learning architecture without introducing a second learner model or item bank. The production selector now owns diagnostic opening behavior, pool-derived blueprint constraints, concept cooldown, provisional-difficulty uncertainty, and randomesque top-candidate selection. The session seed and all new selection state are persisted through the existing Studio sync sanitizer so reload and cloud sync preserve the same adaptive path.
+
+`scripts/cat-simulator.mjs` executes the production `adaptive-quiz.js` runtime inside a sandbox with synthetic response patterns. It is a behavioral/stability check only; it does not create empirical item calibration or establish certification-exam validity. CI runs the simulator before browser regression.
