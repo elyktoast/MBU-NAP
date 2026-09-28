@@ -1,7 +1,7 @@
 (()=>{'use strict';
 const cfg=window.MBU_SUPABASE_CONFIG||{},sync=window.MBUSync,SESSION_KEY='mbu_supabase_session_v1',OWNER_KEY='mbu_cloud_local_owner_v1',META_KEY='mbu_sync_meta_v1',STATUS_EVENT='mbu:supabase-status',script=document.currentScript,APP_ROOT=new URL('../../',script?.src||location.href).href;
 if(!cfg.url||!cfg.publishableKey||!sync){console.warn('Supabase sync is not configured');return}
-const base=cfg.url.replace(/\/$/,''),AUTO_SYNC_INTERVAL=5*60*1000,LEGAL_VERSION='2026-09-27-v6',LEGAL_TERMS_VERSION=LEGAL_VERSION,LEGAL_PRIVACY_VERSION=LEGAL_VERSION;
+const base=cfg.url.replace(/\/$/,''),REQUEST_TIMEOUT=10000,AUTO_SYNC_INTERVAL=5*60*1000,LEGAL_VERSION='2026-09-27-v6',LEGAL_TERMS_VERSION=LEGAL_VERSION,LEGAL_PRIVACY_VERSION=LEGAL_VERSION;
 let syncing=false,syncQueued=false,lastSyncAt=0,lastState='signed-out',remoteByKey=new Map(),calibrationByKey=new Map(),calibrationFetchedAt=0,timer=null,autoSyncTimer=null,guestTimer=null,recoveryMode=false,legalAccepted=null,accountAccess='signed_out';
 const safeJSON=(raw,fallback=null)=>{try{return JSON.parse(raw)}catch{return fallback}};
 const session=()=>safeJSON(localStorage.getItem(SESSION_KEY));
@@ -33,15 +33,18 @@ emit(recoveryMode?'password-recovery':'signed-in',{email:s.user?.email||''});
 return s
 }
 async function raw(path,{method='GET',body,token,headers={}}={}){
-const response=await fetch(base+path,{method,headers:{apikey:cfg.publishableKey,'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{}),...headers},body:body===undefined?undefined:JSON.stringify(body),signal:AbortSignal.timeout?AbortSignal.timeout(10000):undefined});
+const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),REQUEST_TIMEOUT);
+try{
+const response=await fetch(base+path,{method,headers:{apikey:cfg.publishableKey,'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{}),...headers},body:body===undefined?undefined:JSON.stringify(body),signal:ctl.signal});
 const text=await response.text();const data=text?safeJSON(text,text):null;
 if(!response.ok){const msg=(data&&typeof data==='object'&&(data.msg||data.message||data.error_description||data.error))||('HTTP '+response.status);const e=Error(String(msg));e.status=response.status;throw e}
 return data
+}finally{clearTimeout(timer)}
 }
 async function refresh(){
 const s=session();if(!s?.refresh_token)return null;
 try{const data=await raw('/auth/v1/token?grant_type=refresh_token',{method:'POST',body:{refresh_token:s.refresh_token}}),next=normalizeAuth(data);saveSession(next);return next}
-catch(e){saveSession(null);emit('signed-out',{error:e.message});return null}
+catch(e){if([400,401,403].includes(Number(e?.status))){saveSession(null);legalAccepted=null;accountAccess='signed_out';emit('signed-out',{error:e.message})}else emit('error',{error:'Session refresh failed: '+e.message});return null}
 }
 async function validSession(){
 let s=session();if(!s)return null;
@@ -128,7 +131,7 @@ async function deleteAccount(){
 const s=await validSession();if(!s?.access_token)throw Error('Sign in to delete your account.');
 await raw('/functions/v1/delete-account',{method:'POST',body:{},token:s.access_token});
 await clearTrackedLocalData();localStorage.removeItem(OWNER_KEY);
-resetCloudSession();localStorage.removeItem(META_KEY);localStorage.removeItem(OWNER_KEY);return true
+resetCloudSession();return true
 }
 async function submitSuggestion(category,message){
 requireAccountAccess();
