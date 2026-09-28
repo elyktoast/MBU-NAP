@@ -1959,6 +1959,25 @@ test.describe('canonical quiz regression', () => {
     expect(await page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(true);
   });
 
+  test('Transient session refresh failure preserves the saved session for retry', async ({ page }) => {
+    const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let attempts=0;
+    await page.addInitScript(()=>localStorage.setItem('mbu_supabase_session_v1',JSON.stringify({access_token:'expired-access',refresh_token:'retry-refresh',expires_at:1,user:{id:'00000000-0000-0000-0000-000000000001',email:'retry@example.com'}})));
+    await page.route(cloud+'/auth/v1/token?grant_type=refresh_token',route=>{
+      attempts++;
+      if(attempts===1)return route.abort('internetdisconnected');
+      return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'fresh-retry-access',refresh_token:'fresh-retry-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000001',email:'retry@example.com'}})});
+    });
+    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);await page.evaluate(() => MBUAuthReady);
+    const retained=await page.evaluate(()=>JSON.parse(localStorage.getItem('mbu_supabase_session_v1')||'null'));
+    expect(retained?.refresh_token).toBe('retry-refresh');
+    expect(await page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(true);
+    expect(await page.evaluate(()=>MBUSupabase.status().state)).toBe('error');
+    const refreshed=await page.evaluate(()=>MBUSupabase.refresh());
+    expect(refreshed?.access_token).toBe('fresh-retry-access');
+    expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('mbu_supabase_session_v1')||'null')?.access_token)).toBe('fresh-retry-access');
+    expect(attempts).toBe(2);
+  });
+
   test('Cloud failure leaves local quiz progress intact and reports sync error', async ({ page }) => {
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let failWrites=false;
     await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'test-access',refresh_token:'test-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000001',email:'offline@example.com'}})}));
