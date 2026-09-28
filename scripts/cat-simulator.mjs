@@ -26,6 +26,7 @@ function loadQuestions(){
   return rows
 }
 function loadEngine(){
+  const termination=fs.readFileSync(path.join(root,'equipment','assets','cat-termination.js'),'utf8');
   const source=fs.readFileSync(path.join(root,'equipment','assets','adaptive-quiz.js'),'utf8');
   const sandbox={
     window:{
@@ -40,7 +41,7 @@ function loadEngine(){
     console,Math,Date,Set,Map,Uint32Array,
     crypto:{getRandomValues:a=>{a[0]=0x9e3779b9;return a}}
   };
-  vm.createContext(sandbox);vm.runInContext(source,sandbox,{filename:'adaptive-quiz.js'});
+  vm.createContext(sandbox);vm.runInContext(termination,sandbox,{filename:'cat-termination.js'});vm.runInContext(source,sandbox,{filename:'adaptive-quiz.js'});
   if(!sandbox.window.MBUAdaptiveQuiz)throw new Error('Production CAT engine did not initialize');
   return sandbox.window.MBUAdaptiveQuiz
 }
@@ -101,10 +102,10 @@ if(shouldWrite){
 }
 const terminationPolicy={mode:'observe',minQuestions:25,maxQuestions:75,cutTheta:0,confidenceZ:1.96,targetSE:.6,calibrationId:'simulated'};
 const terminationChecks={
-  early:engine.evaluateTermination({theta:1.4,se:.2,answered:24,maxQuestions:75},terminationPolicy),
-  above:engine.evaluateTermination({theta:1.0,se:.2,answered:25,maxQuestions:75},terminationPolicy),
-  below:engine.evaluateTermination({theta:-1.0,se:.2,answered:25,maxQuestions:75},terminationPolicy),
-  max:engine.evaluateTermination({theta:.1,se:.9,answered:75,maxQuestions:75},{mode:'observe',minQuestions:25,maxQuestions:75})
+  early:sandbox.window.MBUCATTermination.evaluate({theta:1.4,se:.2,answered:24,maxQuestions:75},terminationPolicy),
+  above:sandbox.window.MBUCATTermination.evaluate({theta:1.0,se:.2,answered:25,maxQuestions:75},terminationPolicy),
+  below:sandbox.window.MBUCATTermination.evaluate({theta:-1.0,se:.2,answered:25,maxQuestions:75},terminationPolicy),
+  max:sandbox.window.MBUCATTermination.evaluate({theta:.1,se:.9,answered:75,maxQuestions:75},{mode:'observe',minQuestions:25,maxQuestions:75})
 };
 
 if(shouldCheck){
