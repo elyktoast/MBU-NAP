@@ -8,6 +8,7 @@ const clampLogit=v=>clamp(Number(v)||0,-2.5,2.5);
 const challengeToLogit=challenge=>clampLogit((clampLevel(challenge)-3)*1.25);
 const logitToLevel=logit=>clampLevel(Math.round(3+clampLogit(logit)/1.25));
 const logistic=x=>1/(1+Math.exp(-clamp(x,-12,12)));
+const rowCertainty=row=>1-clamp(Number.isFinite(Number(row?.uncertainty))?Number(row.uncertainty):.9,.05,.95)*.35;
 const popWeight=n=>n<25?0:n<100?.35:n<300?.6:.8;
 const textOf=q=>String(q?.stem||q?.q||'');
 function hash32(value){let h=2166136261;for(const c of String(value??'')){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
@@ -59,11 +60,11 @@ function estimateAbility(path=[]){
   let theta=0;const priorVar=2.25;
   for(let iter=0;iter<6;iter++){
     let gradient=-theta/priorVar,information=1/priorVar;
-    for(const row of rows){const b=clampLogit(row.difficulty),p=logistic(theta-b),certainty=1-clamp(Number(row.uncertainty)||0,.05,.95)*.35;gradient+=(((row.ok?1:0)-p)*certainty);information+=p*(1-p)*certainty}
+    for(const row of rows){const b=clampLogit(row.difficulty),p=logistic(theta-b),certainty=rowCertainty(row);gradient+=(((row.ok?1:0)-p)*certainty);information+=p*(1-p)*certainty}
     const step=gradient/Math.max(.15,information);theta=clampLogit(theta+clamp(step,-1,1));if(Math.abs(step)<.001)break
   }
   let information=1/priorVar;
-  for(const row of rows){const p=logistic(theta-clampLogit(row.difficulty)),certainty=1-clamp(Number(row.uncertainty)||0,.05,.95)*.35;information+=p*(1-p)*certainty}
+  for(const row of rows){const p=logistic(theta-clampLogit(row.difficulty)),certainty=rowCertainty(row);information+=p*(1-p)*certainty}
   return{theta,se:1/Math.sqrt(information),information}
 }
 function normalizeCounts(raw){return Object.fromEntries(Object.entries(plain(raw)?raw:{}).map(([k,v])=>[String(k),Math.max(0,Number(v)||0)]))}
