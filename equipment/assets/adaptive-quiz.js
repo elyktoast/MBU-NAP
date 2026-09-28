@@ -88,8 +88,9 @@ function blueprintTargets(distribution,maxQuestions){
   return targets
 }
 function blueprintFeasible(topic,s,targets){
-  const next={...s.topicCounts,[topic]:(Number(s.topicCounts[topic])||0)+1},remaining=Math.max(0,s.maxQuestions-(s.answered+1));
-  let deficits=0;for(const [name,target] of Object.entries(targets))deficits+=Math.max(0,Number(target)-(Number(next[name])||0));
+  const target=Number(targets[topic])||0,nextCount=(Number(s.topicCounts[topic])||0)+1;if(nextCount>target)return false;
+  const next={...s.topicCounts,[topic]:nextCount},remaining=Math.max(0,s.maxQuestions-(s.answered+1));
+  let deficits=0;for(const [name,goal] of Object.entries(targets))deficits+=Math.max(0,Number(goal)-(Number(next[name])||0));
   return deficits<=remaining
 }
 function diagnosticTarget(answered){return[2,3,4,2.5,3.5,3][Math.min(DIAGNOSTIC_LENGTH-1,Math.max(0,Number(answered)||0))]}
@@ -107,7 +108,7 @@ function chooseRandomesque(candidates,s){
   const sorted=[...candidates].sort((a,b)=>a.score-b.score||b.information-a.information||a.tie-b.tie),best=sorted[0];if(!best)return null;
   const tolerance=s.answered<DIAGNOSTIC_LENGTH?.075:.04,near=sorted.filter(x=>x.score<=best.score+tolerance).slice(0,TOP_CANDIDATES);
   if(near.length===1)return near[0];
-  const r=unitRandom(s.selectionSeed,s.selectionStep),index=Math.min(near.length-1,Math.floor(r*r*near.length));return near[index]
+  const r=unitRandom(s.selectionSeed,s.selectionStep),index=Math.min(near.length-1,Math.floor(r*near.length));return near[index]
 }
 function pick(questions,state){
   const s=normalize(state),seen=new Set(s.seenUids),allowed=s.poolUids.length?new Set(s.poolUids):null,seenContent=new Set(s.seenContentKeys);
