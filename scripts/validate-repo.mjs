@@ -669,6 +669,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const p of ['README.md','docs/ARCHITECTURE.md','docs/SYNC.md','docs/CONTENT_AUDIT.md','docs/CONTENT_PHASE1_AUDIT.md','docs/QUESTION_GENERATION.md','docs/FOUNDATION_FREEZE.md','reports/content-phase1-audit.json','CONTRIBUTING.md'])if(!exists(p))fail('Documentation missing '+p);
  if(!exists('scripts/content-integrity.mjs'))fail('Content integrity validator is missing');
  if(!exists('scripts/cat-simulator.mjs'))fail('CAT simulation harness is missing');
+ const catSim=read('scripts/cat-simulator.mjs');if(!catSim.includes('manifest.studioSources')||!catSim.includes("path.join(root,'equipment','exam-1','banks.json')"))fail('CAT simulator is not driven by Studio source manifest');
 }
 
 // Question generation is scaffolded but intentionally disabled until a provider is chosen.
