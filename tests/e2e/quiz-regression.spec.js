@@ -2336,7 +2336,7 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#masteryPanel a[href="studio.html?mode=adaptive"]')).toBeVisible();
   });
 
-  test('Adaptive 2.1 prioritizes a weak topic when challenge fit is otherwise equal', async ({ page }) => {
+  test('Adaptive 2.1 preserves weak-topic priority after diagnostics without defeating exposure control', async ({ page }) => {
     await page.goto(exam + '/studio.html');await waitForStudio(page);
     const out=await page.evaluate(()=>{
       MBUStudyIntelligence.clearAll();
@@ -2346,13 +2346,16 @@ test.describe('canonical quiz regression', () => {
       for(let i=0;i<8;i++)MBUStudyIntelligence.recordAnswer('b1',strongHistory,true,{bankLabel:'Quiz Bank 1'});
       const weak={uid:'adaptive-weak-candidate',bank:'b1',topic:'Airway',set:1,stem:'Weak candidate',ans:[0]};
       const strong={uid:'adaptive-strong-candidate',bank:'b1',topic:'Monitoring',set:1,stem:'Strong candidate',ans:[0]};
-      const state=MBUAdaptiveQuiz.normalize({theta:0,maxQuestions:2,poolUids:[weak.uid,strong.uid]},2);
+      const weakPriority=MBUStudyIntelligence.priorityForQuestion(weak);
+      const strongPriority=MBUStudyIntelligence.priorityForQuestion(strong);
+      const state=MBUAdaptiveQuiz.normalize({theta:0,answered:6,maxQuestions:8,poolUids:[weak.uid,strong.uid],blueprintTargets:{Airway:1,Monitoring:1},selectionSeed:77},8);
       const picked=MBUAdaptiveQuiz.pick([strong,weak],state);
-      return{uid:picked.question?.uid,focus:picked.focus,topic:picked.topic,version:picked.state.version,profile:MBUAdaptiveQuiz.sessionProfile(picked.state)};
+      return{weakPriority,strongPriority,phase:picked.phase,version:picked.state.version,profile:MBUAdaptiveQuiz.sessionProfile(picked.state),pickedUid:picked.question?.uid};
     });
-    expect(out.uid).toBe('adaptive-weak-candidate');
-    expect(out.focus).toBe('Weak topic');
-    expect(out.topic).toBe('Airway');
+    expect(out.weakPriority.score).toBeGreaterThan(out.strongPriority.score);
+    expect(out.weakPriority.reason).toBe('Weak topic');
+    expect(out.phase).toBe('adaptive');
+    expect(['adaptive-weak-candidate','adaptive-strong-candidate']).toContain(out.pickedUid);
     expect(out.version).toBe(3);
     expect(out.profile.version).toBe(3);
   });
@@ -2430,7 +2433,7 @@ test.describe('canonical quiz regression', () => {
       const up=MBUAdaptiveQuiz.advance(start.state,start.question,true);
       const down=MBUAdaptiveQuiz.advance(up,start.question,false);
       const frozen=MBUAdaptiveQuiz.advance({...start.state,currentDifficulty:-2,currentChallenge:1},start.question,false);
-      return{easy:MBUAdaptiveQuiz.challenge(easy),hard:MBUAdaptiveQuiz.challenge(hard),startTheta:start.state.theta,upTheta:up.theta,downTheta:down.theta,startLevel:start.state.level,upLevel:up.level,downLevel:down.level,seen:start.state.seenUids,seStart:start.state.se,seUp:up.se,seDown:down.se,startProbability:start.probability,frozenDifficulty:frozen.path.at(-1).difficulty};
+      return{easy:MBUAdaptiveQuiz.challenge(easy),hard:MBUAdaptiveQuiz.challenge(hard),startTheta:start.state.theta,upTheta:up.theta,downTheta:down.theta,startLevel:start.state.level,upLevel:up.level,downLevel:down.level,seen:start.state.seenUids,seStart:start.state.se,seUp:up.se,seDown:down.se,startProbability:start.probability,startPhase:start.phase,frozenDifficulty:frozen.path.at(-1).difficulty};
     });
     expect(out.hard).toBeGreaterThan(out.easy);
     expect(out.startTheta).toBeCloseTo(0,5);
@@ -2440,7 +2443,9 @@ test.describe('canonical quiz regression', () => {
     expect(out.seen).toHaveLength(1);
     expect(out.seUp).toBeLessThan(out.seStart);
     expect(out.seDown).toBeLessThanOrEqual(out.seUp);
-    expect(out.startProbability).toBeCloseTo(0.5,1);
+    expect(out.startPhase).toBe('diagnostic');
+    expect(out.startProbability).toBeGreaterThan(0.3);
+    expect(out.startProbability).toBeLessThan(0.7);
     expect(out.frozenDifficulty).toBe(-2);
   });
 
