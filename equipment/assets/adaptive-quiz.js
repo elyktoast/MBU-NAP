@@ -1,6 +1,6 @@
 /* Adaptive 2.1: precalibration CAT hardening with diagnostic sampling, blueprint constraints, exposure control, and uncertainty-aware selection. */
 (()=>{'use strict';
-const DIAGNOSTIC_LENGTH=6,TOP_CANDIDATES=5,CONCEPT_COOLDOWN=3;
+const DIAGNOSTIC_LENGTH=6,TOP_CANDIDATES=5,CONCEPT_COOLDOWN=3,structuralCache=new WeakMap(),contentCache=new WeakMap(),conceptCache=new WeakMap();
 const plain=v=>!!v&&typeof v==='object'&&!Array.isArray(v);
 const clamp=(v,min,max)=>Math.max(min,Math.min(max,v));
 const clampLevel=v=>clamp(Number(v)||3,1,5);
@@ -16,12 +16,15 @@ function unitRandom(seed,step){let x=(Number(seed)>>>0)^Math.imul((Number(step)|
 function newSeed(){try{const a=new Uint32Array(1);crypto.getRandomValues(a);return a[0]||1}catch{return(hash32(Date.now()+':'+Math.random())||1)}}
 function topicOf(q){return String(q?.topic||q?.lec||q?.concept||'Other').trim()||'Other'}
 function conceptOf(q){
-  const explicit=String(q?.concept||q?.disc||'').trim();if(explicit)return topicOf(q)+'|'+explicit;
-  const family=Array.isArray(q?.sourceMeta?.families)?String(q.sourceMeta.families[0]||'').trim():'';
-  const title=String(q?.sourceTitle||family||'').trim();
-  return topicOf(q)+'|'+(title||'general')
+  if(q&&typeof q==='object'&&conceptCache.has(q))return conceptCache.get(q);
+  const explicit=String(q?.concept||q?.disc||'').trim(),family=Array.isArray(q?.sourceMeta?.families)?String(q.sourceMeta.families[0]||'').trim():'',title=String(q?.sourceTitle||family||'').trim(),value=topicOf(q)+'|'+(explicit||title||'general');
+  if(q&&typeof q==='object')conceptCache.set(q,value);return value
 }
-function contentKey(q){const stem=textOf(q).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();return stem||('uid:'+String(q?.uid||q?.id||''))}
+function contentKey(q){
+  if(q&&typeof q==='object'&&contentCache.has(q))return contentCache.get(q);
+  const stem=textOf(q).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim(),value=stem||('uid:'+String(q?.uid||q?.id||''));
+  if(q&&typeof q==='object')contentCache.set(q,value);return value
+}
 function questionStats(uid){return window.MBUStudyIntelligence?.questionStats?.(uid)||null}
 function populationStats(uid){return window.MBUSupabase?.calibration?.(uid)||null}
 function masterySnapshot(){return window.MBUStudyIntelligence?.mastery?.()||{byTopic:{}}}
@@ -32,27 +35,22 @@ function recentContentKeys(questions,limit=50){
   for(const uid of recent){const saved=questionStats(uid),q=byUid.get(uid);if(saved?.stem)keys.add(contentKey({stem:saved.stem,uid}));else if(q)keys.add(contentKey(q))}
   return keys
 }
-function difficultyEstimate(q){
+function structuralEstimate(q){
+  if(q&&typeof q==='object'&&structuralCache.has(q))return structuralCache.get(q);
   const stem=textOf(q),words=stem.trim().split(/\s+/).filter(Boolean).length,answers=Array.isArray(q?.ans)?q.ans:Array.isArray(q?.answer)?q.answer:[],options=Array.isArray(q?.options)?q.options:Array.isArray(q?.opts)?q.opts:[],multi=answers.length>1||String(q?.type||'').toLowerCase().includes('multi');
   let structural=2.65;
-  if(multi)structural+=.5;
-  if(options.length>=5)structural+=.12;
-  if(words>=35)structural+=.22;
-  if(words>=60)structural+=.18;
+  if(multi)structural+=.5;if(options.length>=5)structural+=.12;if(words>=35)structural+=.22;if(words>=60)structural+=.18;
   if(/\b(patient|during|after|before|undergoing|receives|presents|intraoperative|preoperative|postoperative)\b/i.test(stem))structural+=.18;
   if(/\b(calculate|approximately|dose|concentration|minute ventilation|psig|mg\/kg|mcg\/kg|ml\/kg|mac)\b|%/i.test(stem))structural+=.24;
-  if(/\b(not|except|least|incorrect)\b/i.test(stem))structural+=.12;
-  if(q?.img||q?.image||q?.imageSvg||q?.imageId)structural+=.12;
-  if(words<18&&/^(what|which|how)\b/i.test(stem.trim()))structural-=.15;
-  structural=clampLevel(structural);
-  const structuralDifficulty=challengeToLogit(structural),pop=populationStats(q?.uid),learners=Number(pop?.unique_learners)||0,weight=popWeight(learners),popDifficulty=Number(pop?.difficulty_logit);
-  let difficulty=structuralDifficulty,uncertainty=.9,source='structural';
-  if(weight&&Number.isFinite(popDifficulty)){
-    difficulty=clampLogit(structuralDifficulty*(1-weight)+clampLogit(popDifficulty)*weight);
-    const popUncertainty=learners>=300?.22:learners>=100?.38:.58;
-    uncertainty=clamp(.9*(1-weight)+popUncertainty*weight,.15,.95);source='blended'
-  }
-  return{challenge:Math.round(clampLevel(3+difficulty/1.25)*100)/100,difficulty,uncertainty,source,learners,structuralChallenge:Math.round(structural*100)/100}
+  if(/\b(not|except|least|incorrect)\b/i.test(stem))structural+=.12;if(q?.img||q?.image||q?.imageSvg||q?.imageId)structural+=.12;if(words<18&&/^(what|which|how)\b/i.test(stem.trim()))structural-=.15;
+  structural=clampLevel(structural);const value={structuralChallenge:Math.round(structural*100)/100,structuralDifficulty:challengeToLogit(structural)};
+  if(q&&typeof q==='object')structuralCache.set(q,value);return value
+}
+function difficultyEstimate(q){
+  const base=structuralEstimate(q),pop=populationStats(q?.uid),learners=Number(pop?.unique_learners)||0,weight=popWeight(learners),popDifficulty=Number(pop?.difficulty_logit);
+  let difficulty=base.structuralDifficulty,uncertainty=.9,source='structural';
+  if(weight&&Number.isFinite(popDifficulty)){difficulty=clampLogit(base.structuralDifficulty*(1-weight)+clampLogit(popDifficulty)*weight);const popUncertainty=learners>=300?.22:learners>=100?.38:.58;uncertainty=clamp(.9*(1-weight)+popUncertainty*weight,.15,.95);source='blended'}
+  return{challenge:Math.round(clampLevel(3+difficulty/1.25)*100)/100,difficulty,uncertainty,source,learners,structuralChallenge:base.structuralChallenge}
 }
 function challenge(q){return difficultyEstimate(q).challenge}
 function estimateAbility(path=[]){
