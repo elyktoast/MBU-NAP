@@ -52,14 +52,14 @@ function rng(seed){
 const logistic=x=>1/(1+Math.exp(-Math.max(-12,Math.min(12,x))));
 
 const questions=loadQuestions(),engine=loadEngine(),exposure=new Map(),sessions=[];
-let duplicateViolations=0,blueprintViolations=0,incompleteSessions=0;
+let duplicateViolations=0,blueprintViolations=0,incompleteSessions=0;const duplicateExamples=[],blueprintExamples=[];
 for(const ability of abilities){
   for(let run=0;run<runsPerAbility;run++){
     const seed=((Math.round((ability+2)*1000)+1)*2654435761+run*1013904223)>>>0,random=rng(seed^0xa5a5a5a5),seen=new Set(),diagnosticTopics=new Set(),diagnosticChallenges=[];
     let picked=engine.start(questions,questionCount,{selectionSeed:seed}),state=picked.state;
     while(picked.question&&state.answered<questionCount){
       const q=picked.question,uid=String(q.uid);
-      if(seen.has(uid))duplicateViolations++;
+      if(seen.has(uid)){duplicateViolations++;if(duplicateExamples.length<5)duplicateExamples.push({uid,ability,run,answered:state.answered,stateSeenCount:Array.isArray(state.seenUids)?state.seenUids.length:null,stateContains:Array.isArray(state.seenUids)?state.seenUids.includes(uid):null,stateSeenTail:Array.isArray(state.seenUids)?state.seenUids.slice(-6):[],pathTail:Array.isArray(state.path)?state.path.slice(-3).map(x=>x.uid):[]})}
       seen.add(uid);exposure.set(uid,(exposure.get(uid)||0)+1);
       if(state.answered<engine.DIAGNOSTIC_LENGTH){diagnosticTopics.add(engine.topicOf(q));diagnosticChallenges.push(Number(picked.challenge)||0)}
       const trueDifficulty=engine.difficultyEstimate(q).difficulty,ok=random()<logistic(ability-trueDifficulty);
@@ -68,7 +68,7 @@ for(const ability of abilities){
       picked=engine.pick(questions,state);
     }
     if(state.answered!==questionCount)incompleteSessions++;
-    for(const [topic,target] of Object.entries(state.blueprintTargets||{}))if((Number(state.topicCounts?.[topic])||0)!==Number(target))blueprintViolations++;
+    for(const [topic,target] of Object.entries(state.blueprintTargets||{}))if((Number(state.topicCounts?.[topic])||0)!==Number(target)){blueprintViolations++;if(blueprintExamples.length<5)blueprintExamples.push({ability,run,topic,target:Number(target),actual:Number(state.topicCounts?.[topic])||0,answered:state.answered,targets:state.blueprintTargets,counts:state.topicCounts})}
     sessions.push({ability,estimate:Number(state.theta),absError:Math.abs(Number(state.theta)-ability),answered:state.answered,diagnosticTopics:diagnosticTopics.size,diagnosticChallenges});
   }
 }
@@ -89,7 +89,9 @@ const report={
     incompleteSessions,
     uniqueItemsExposed:exposure.size,
     maxItemExposureRate:Number((maxExposure/Math.max(1,totalSessions)).toFixed(3)),
-    totalSelections
+    totalSelections,
+    duplicateExamples,
+    blueprintExamples
   },
   note:'Simulation validates algorithm behavior against the production provisional difficulty model. It is not empirical item calibration or evidence of certification-exam validity.'
 };
