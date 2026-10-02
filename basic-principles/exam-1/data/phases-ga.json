@@ -2520,12 +2520,12 @@
       "id": "PHA-102",
       "set": 1,
       "type": "single",
-      "stem": "After a difficult intubation, which structures should be specifically inspected for procedure-related trauma?",
+      "stem": "After difficult laryngoscopy, a new chipped incisor and lip laceration are noted. Which category of post-induction complication occurred?",
       "options": [
-        "Teeth, lips, and oral or nasal structures",
-        "The vocal cords and arytenoids",
-        "The trachea below the vocal cords",
-        "The esophagus and pharynx"
+        "Airway-instrumentation trauma",
+        "Bronchospasm",
+        "Esophageal intubation",
+        "Anaphylaxis"
       ],
       "answer": [
         0
@@ -2568,12 +2568,12 @@
       "id": "PHA-104",
       "set": 1,
       "type": "single",
-      "stem": "After induction of a fasted healthy patient for a short knee arthroscopy, which airway choice is the key next decision?",
+      "stem": "A fasted healthy patient is induced for short supine knee arthroscopy with low aspiration risk. Which airway decision should now be individualized to procedure and patient factors?",
       "options": [
         "Supraglottic airway versus endotracheal tube",
-        "Nasal cannula versus face mask",
+        "Nasal cannula versus no airway device",
         "Tracheostomy versus cricothyrotomy",
-        "Oral airway versus nasal airway"
+        "Oral airway versus nasal airway as the definitive device"
       ],
       "answer": [
         0
@@ -2592,12 +2592,12 @@
       "id": "PHA-105",
       "set": 1,
       "type": "single",
-      "stem": "Condensation appears inside the ETT with each breath. How should this finding be interpreted?",
+      "stem": "After intubation, condensation appears inside the ETT with each breath but capnography is not yet connected. How much confidence should this finding provide?",
       "options": [
-        "Exhaled gas; supportive only",
-        "Esophageal placement, a definitive sign",
-        "Bronchospasm, a reliable sign",
-        "Cuff leak, a definitive sign"
+        "It supports gas movement but does not confirm tracheal placement",
+        "It definitively proves tracheal placement",
+        "It proves bronchospasm",
+        "It definitively identifies a cuff leak"
       ],
       "answer": [
         0
@@ -2644,11 +2644,11 @@
       "id": "PHA-107",
       "set": 1,
       "type": "single",
-      "stem": "A patient later recalls voices and the sensation of the ETT but no pain. What type of intraoperative awareness is this?",
+      "stem": "Postoperatively, a patient clearly recalls intraoperative voices and the sensation of the ETT. Which memory phenomenon is present?",
       "options": [
-        "Explicit recall from inadequate hypnosis",
-        "Implicit memory without conscious recall",
-        "Normal emergence recall",
+        "Explicit intraoperative recall",
+        "Implicit memory",
+        "Emergence delirium",
         "Dreaming without recall of operating-room events"
       ],
       "answer": [
@@ -2668,12 +2668,12 @@
       "id": "PHA-108",
       "set": 1,
       "type": "single",
-      "stem": "A patient has no conscious recall of surgery but develops anxiety when hearing a phrase spoken intraoperatively. What does this suggest?",
+      "stem": "A patient denies conscious recall of surgery but later has an emotional response to a phrase repeatedly spoken intraoperatively. Which phenomenon best fits?",
       "options": [
-        "Implicit memory without conscious recall",
+        "Implicit memory",
         "Explicit recall",
-        "Explicit recall of events during the case",
-        "Emergence delirium"
+        "Emergence delirium",
+        "Normal episodic recall"
       ],
       "answer": [
         0
@@ -2748,12 +2748,12 @@
       "id": "PHA-111",
       "set": 1,
       "type": "single",
-      "stem": "Why is there an awareness-risk gap during induction even after loss of responsiveness?",
+      "stem": "After an induction dose, a patient stops responding, but airway difficulty delays subsequent anesthetic dosing while paralysis is maintained. Why can awareness still occur?",
       "options": [
-        "Loss of responsiveness before adequate depth is reached",
-        "Excess depth before laryngoscopy causing hypotension",
-        "Early neuromuscular recovery before intubation",
-        "Prolonged time to emergence"
+        "Loss of responsiveness can precede adequate sustained hypnotic depth",
+        "Unresponsiveness guarantees amnesia until intubation",
+        "Neuromuscular blockade itself provides hypnosis",
+        "Airway difficulty lowers anesthetic requirement to zero"
       ],
       "answer": [
         0
@@ -2880,12 +2880,12 @@
       "id": "PHA-116",
       "set": 1,
       "type": "single",
-      "stem": "What common induction-related cause of awareness is emphasized in the lecture?",
+      "stem": "During a prolonged difficult intubation, the initial induction dose is not supplemented despite continued paralysis. Which preventable cause of awareness is most likely?",
       "options": [
-        "Not enough medication",
-        "Too much volatile agent",
-        "Excess opioids",
-        "Early reversal of NMB"
+        "Insufficient ongoing hypnotic medication",
+        "Excessive volatile anesthetic",
+        "Excessive opioid dosing",
+        "Premature neuromuscular reversal"
       ],
       "answer": [
         0
@@ -2932,12 +2932,12 @@
       "id": "PHA-118",
       "set": 1,
       "type": "single",
-      "stem": "Before RSI, the team is told Plan A, Plan B, and specific failure triggers. What communication concept does this create?",
+      "stem": "Before RSI, the leader states Plan A, Plan B, each person's role, and the trigger for switching plans. Which team property is being created?",
       "options": [
         "A shared mental model",
-        "A rapid sequence order set",
-        "A time-out checklist",
-        "A closed-loop handoff"
+        "A medication order set",
+        "A postoperative handoff",
+        "A surgical sign-out"
       ],
       "answer": [
         0
@@ -2980,12 +2980,12 @@
       "id": "PHA-120",
       "set": 1,
       "type": "single",
-      "stem": "Why is verbalizing induction drugs, doses, and major steps useful for an SRNA and the team?",
+      "stem": "An SRNA verbally confirms each induction drug and dose before administration. What is the main safety benefit?",
       "options": [
-        "It keeps the team informed and allows early correction",
-        "It slows induction to prevent awareness",
-        "It replaces the need for written documentation later",
-        "It replaces the need for a written record"
+        "The team can track the sequence and intercept an error before or as it occurs",
+        "Verbalization substitutes for chart documentation",
+        "It guarantees prevention of awareness",
+        "It intentionally slows induction"
       ],
       "answer": [
         0
@@ -3028,12 +3028,12 @@
       "id": "PHA-122",
       "set": 1,
       "type": "single",
-      "stem": "During airway management, what does using proper terminology accomplish?",
+      "stem": "During laryngoscopy, one provider says only, \"The view is bad.\" Which alternative communicates more useful airway information?",
       "options": [
-        "Use clear clinical terms like \"grade I view\"",
-        "Use casual language to reduce the patient's anxiety",
-        "Use local slang the team understands",
-        "Avoid describing airway views"
+        "State a standardized laryngoscopic view grade and relevant finding",
+        "Use local shorthand familiar only to the airway operator",
+        "Avoid describing the view until after intubation",
+        "Describe only whether intubation ultimately succeeded"
       ],
       "answer": [
         0
@@ -3079,12 +3079,12 @@
       "id": "PHA-124",
       "set": 1,
       "type": "single",
-      "stem": "Why should nonessential conversation stop while induction drugs are being given and the airway is being managed?",
+      "stem": "While induction drugs are administered, unrelated conversation continues and an early BP decline is missed. Which human-factors principle was violated?",
       "options": [
-        "Rapid changes need focus and roles",
-        "Induction is the longest phase of anesthesia",
-        "Induction has the lowest complication rate",
-        "The surgeon directs induction decisions"
+        "Critical phases require minimized distraction and clear attention to rapidly changing physiology",
+        "Induction should proceed silently without team communication",
+        "The surgeon should direct physiologic monitoring during induction",
+        "Distraction matters only during difficult airway management"
       ],
       "answer": [
         0
@@ -3127,12 +3127,12 @@
       "id": "PHA-126",
       "set": 1,
       "type": "single",
-      "stem": "The airway is secured, ETCO2 is confirmed, and hemodynamics are stabilized. Which anesthetic phase begins now?",
+      "stem": "The airway is secured, sustained ETCO2 is present, and post-induction hemodynamics are stabilized. Which phase of GA has been entered?",
       "options": [
         "Maintenance",
         "Induction",
         "Emergence",
-        "Recovery"
+        "Postanesthesia recovery"
       ],
       "answer": [
         0
@@ -3151,12 +3151,12 @@
       "id": "PHA-127",
       "set": 1,
       "type": "single",
-      "stem": "Three minutes before incision, BIS is 58 at 0.8 MAC sevoflurane. Why might anesthetic depth be increased now rather than after incision?",
+      "stem": "A CAD patient previously develops severe tachycardia and hypertension with incision. BIS is 58 and end-tidal sevoflurane is 0.8 age-adjusted MAC three minutes before incision. What principle supports adjusting anesthesia before stimulation?",
       "options": [
-        "To blunt the response to incision",
-        "To speed emergence later",
-        "To reduce PONV",
-        "To lower opioid needs postoperatively"
+        "Anticipate the upcoming nociceptive stimulus rather than reacting after the hemodynamic surge",
+        "Delay any change until movement occurs",
+        "Maintain fixed anesthetic depth throughout surgery",
+        "Reduce depth before incision to speed emergence"
       ],
       "answer": [
         0
@@ -3204,12 +3204,12 @@
       "id": "PHA-129",
       "set": 1,
       "type": "single",
-      "stem": "Anesthetic requirements change with incision, cementing, and major blood loss. What principle does this illustrate?",
+      "stem": "A stable anesthetic requirement changes abruptly with incision, pneumoperitoneum, and then major blood loss. Which maintenance principle best explains why fixed settings are unsafe?",
       "options": [
-        "Maintenance is dynamic",
-        "Maintenance is static once established",
-        "Requirements change with stimulation but not physiology",
-        "Requirements are set at induction"
+        "Anesthetic needs vary dynamically with stimulation and physiology",
+        "Maintenance requirements are determined entirely at induction",
+        "Only surgical stimulation changes anesthetic requirement",
+        "Blood loss does not affect anesthetic requirement"
       ],
       "answer": [
         0
@@ -3228,12 +3228,12 @@
       "id": "PHA-130",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 rises; you assess the cause, intervene, recheck, anticipate closure, and document. Which maintenance framework is being used?",
+      "stem": "ETCO2 rises. The provider identifies reduced minute ventilation, increases ventilation, confirms ETCO2 falls, then anticipates pneumoperitoneum and documents the change. Which reasoning cycle is demonstrated?",
       "options": [
-        "Assess, interpret, intervene, reassess",
-        "Airway, breathing, circulation",
+        "Assess, interpret, intervene, reassess, anticipate, and document",
+        "Airway, breathing, circulation only",
         "Induction, maintenance, emergence",
-        "Sign in, time-out, sign out"
+        "Sign-in, time-out, sign-out"
       ],
       "answer": [
         0
@@ -3252,12 +3252,12 @@
       "id": "PHA-131",
       "set": 1,
       "type": "single",
-      "stem": "Cefazolin was reportedly given, but there is no record of it. What documentation principle applies?",
+      "stem": "Cefazolin is said to have been administered, but neither the anesthesia record nor medication record contains it. What is the safest assumption for verification purposes?",
       "options": [
-        "No documentation, no proof",
-        "Verbal handoff is sufficient",
-        "The circulator documents antibiotics",
-        "The circulator's record is enough to confirm"
+        "Administration cannot be established from the documentation",
+        "Verbal recollection alone proves administration",
+        "The circulator's presence proves administration",
+        "Antibiotic documentation is optional"
       ],
       "answer": [
         0
@@ -3352,12 +3352,12 @@
       "id": "PHA-135",
       "set": 1,
       "type": "single",
-      "stem": "Why can a normal SpO2 on high FiO2 still coexist with important pulmonary dysfunction?",
+      "stem": "During one-lung ventilation, SpO2 remains 99% on FiO2 1.0 despite worsening V/Q mismatch. Which limitation of pulse oximetry is most relevant?",
       "options": [
-        "Normal SpO2 on high FiO2 can hide lung dysfunction",
-        "SpO2 reflects ventilation as well as oxygenation",
-        "SpO2 measures CO2",
-        "SpO2 below 94% always indicates shunt"
+        "High inspired oxygen can mask deterioration in pulmonary gas exchange until reserve is lost",
+        "SpO2 directly measures ventilation",
+        "SpO2 directly measures shunt fraction",
+        "A normal SpO2 excludes clinically important V/Q mismatch"
       ],
       "answer": [
         0
@@ -3429,12 +3429,12 @@
       "id": "PHA-138",
       "set": 1,
       "type": "single",
-      "stem": "Which intraoperative transitions should trigger heightened anticipation for desaturation?",
+      "stem": "Which event should prompt proactive reassessment of oxygenation and ventilation even before SpO2 changes?",
       "options": [
-        "After positioning, insufflation, or OLV",
-        "After extubation in PACU",
-        "Before induction during preoxygenation",
-        "During emergence and awakening"
+        "Major positioning, pneumoperitoneum, or initiation of one-lung ventilation",
+        "Routine skin closure",
+        "Completion of preoxygenation before induction",
+        "Transfer to PACU after extubation"
       ],
       "answer": [
         0
@@ -3453,12 +3453,12 @@
       "id": "PHA-139",
       "set": 1,
       "type": "single",
-      "stem": "What does the instruction \"treat the physiology, not the SpO2 value\" mean in practice?",
+      "stem": "After pneumoperitoneum, SpO2 falls to 92% and FiO2 is increased to 1.0, restoring SpO2 to 99%, but airway pressures remain high with dependent atelectasis. What does \"treat the physiology, not the SpO2\" imply?",
       "options": [
-        "Treat the cause, such as recruitment or PEEP",
-        "Raise FiO2 alone until SpO2 normalizes",
-        "Replace the pulse oximeter probe first",
-        "Deepen the volatile to reduce O2 demand"
+        "Address recruitment/PEEP and the underlying mechanics rather than accepting the normalized saturation alone",
+        "Continue FiO2 1.0 because the saturation is now normal",
+        "Replace the pulse-oximeter probe",
+        "Deepen anesthesia to lower oxygen consumption"
       ],
       "answer": [
         0
@@ -3477,12 +3477,12 @@
       "id": "PHA-140",
       "set": 1,
       "type": "single",
-      "stem": "Minute ventilation falls and a circuit leak is later found. Which pre-case check should have reduced this risk?",
+      "stem": "A breathing-circuit leak causes falling exhaled tidal volume shortly after induction. Which preventive check should have been completed before this anesthetic?",
       "options": [
-        "A leak test before every case",
-        "A daily machine check at the start of the day",
-        "A leak test after induction",
-        "A leak test when alarms sound"
+        "A leak test before the case",
+        "A machine check only at the start of the week",
+        "A leak test only after intubation",
+        "A leak test only after an alarm"
       ],
       "answer": [
         0
@@ -3558,12 +3558,12 @@
       "id": "PHA-143",
       "set": 1,
       "type": "single",
-      "stem": "Blood products are prepared before vascular dissection and a longer-acting opioid is started well before closure. Which maintenance skill does this demonstrate?",
+      "stem": "Before vascular dissection begins, blood is immediately available and a longer-acting analgesic is timed for expected closure. Which maintenance skill is being demonstrated?",
       "options": [
-        "Anticipate",
-        "Assess the current vital signs",
-        "Document the case events",
-        "Reassess after an intervention"
+        "Anticipation",
+        "Documentation",
+        "Retrospective reassessment",
+        "Alarm response"
       ],
       "answer": [
         0
@@ -3582,12 +3582,12 @@
       "id": "PHA-144",
       "set": 1,
       "type": "single",
-      "stem": "NIBP suddenly reads 68/34, but HR, ETCO2, and pleth are unchanged. What is the first step?",
+      "stem": "NIBP suddenly reads 68/34 mmHg, but pleth amplitude, ETCO2, HR, and the patient's appearance are unchanged. What should precede vasopressor treatment?",
       "options": [
-        "Confirm BP measurement accuracy",
-        "Give phenylephrine 100 mcg",
-        "Turn off the volatile agent",
-        "Open fluids wide"
+        "Confirm the pressure measurement and rapidly correlate it with the rest of the circulation",
+        "Give phenylephrine immediately because any low NIBP is true",
+        "Turn off all anesthetic agents",
+        "Administer a large fluid bolus before checking the cuff"
       ],
       "answer": [
         0
@@ -3664,12 +3664,12 @@
       "id": "PHA-147",
       "set": 1,
       "type": "single",
-      "stem": "During TIVA, BP and HR rise abruptly. Before giving more anesthetic, what should be verified first?",
+      "stem": "During propofol TIVA with paralysis, HR and BP rise abruptly and the infusion pump appears to be running. What should be verified before simply increasing the dose?",
       "options": [
-        "That drug is reaching the patient",
-        "That the patient's temperature is normal",
-        "That the surgeon has started",
-        "That the urine output is adequate"
+        "IV patency and actual drug delivery to the patient",
+        "Core temperature only",
+        "Urine output",
+        "Whether incision has already occurred"
       ],
       "answer": [
         0
@@ -3688,12 +3688,12 @@
       "id": "PHA-148",
       "set": 1,
       "type": "single",
-      "stem": "Hypotension persists despite phenylephrine and fluid, and the cause remains unclear. What is the best next escalation?",
+      "stem": "Persistent hypotension remains unexplained despite initial fluid and vasopressor therapy. Which escalation best improves continuous assessment and diagnostic precision?",
       "options": [
-        "Place advanced monitoring, such as an arterial line",
-        "Repeat phenylephrine every 2 minutes indefinitely",
-        "Increase the volatile to reduce stress response",
-        "Lighten anesthesia completely"
+        "Add advanced hemodynamic monitoring such as an arterial catheter as clinically appropriate",
+        "Continue intermittent rescue boluses indefinitely without reassessment",
+        "Increase volatile anesthetic",
+        "Remove standard monitors to reduce artifact"
       ],
       "answer": [
         0
@@ -3742,12 +3742,12 @@
       "id": "PHA-150",
       "set": 1,
       "type": "single",
-      "stem": "A required time-out item is unresolved, but the surgeon is ready to incise. What does a hard stop require?",
+      "stem": "During the surgical time-out, blood availability for a high-risk case cannot be confirmed. The surgeon asks to incise while it is being checked. What does a hard stop require?",
       "options": [
-        "No incision until every team member confirms",
-        "The surgeon may proceed if he confirms",
-        "The anesthesia provider may override the stop",
-        "The time-out can be completed after incision"
+        "Resolve the required item before incision proceeds",
+        "Proceed if the surgeon accepts the risk",
+        "Proceed if anesthesia documents the concern",
+        "Complete the time-out after incision"
       ],
       "answer": [
         0
