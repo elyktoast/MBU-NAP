@@ -22,14 +22,14 @@
     }
   ],
   "changes": {
-    "sourceGroundedReplacementQuestions": 87,
+    "sourceGroundedReplacementQuestions": 89,
     "bank1SameSetDuplicatesReplaced": 21,
     "hazardsSet2RepeatedSlotsRebuilt": 65,
     "savedProgressCompatibility": "Question IDs and set positions were preserved.",
     "answerKeyPolicy": "No answer key was changed solely because of a heuristic. Source support was required.",
     "distractorPolish": "Newly rebuilt items with obvious answer-length clues were balanced without changing their keyed concept.",
-    "bank1SameSetNearDuplicateReplaced": 1,
-    "latestPhase3Cleanup": "Bank 1 question 287 was replaced with a distinct source-grounded soda-lime reaction-step question while preserving its ID and Set 3 position."
+    "bank1SameSetNearDuplicateReplaced": 3,
+    "latestPhase3Cleanup": "Bank 1 questions 287, 382, and 482 were replaced with distinct source-grounded questions while preserving their IDs and set positions."
   },
   "finalChecks": {
     "missingRequiredFields": 0,
