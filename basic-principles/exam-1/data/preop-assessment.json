@@ -4994,12 +4994,12 @@
       "id": "PRE-205",
       "set": 1,
       "type": "single",
-      "stem": "During colectomy, a diabetic patient's glucose is 214 mg/dL. Which action best follows the lecture's treatment threshold?",
+      "stem": "During colectomy, a diabetic patient's glucose rises from 168 to 214 mg/dL. Which response best balances treatment of stress hyperglycemia against unnecessary delay?",
       "options": [
-        "Treat hyperglycemia because it exceeds 180 mg/dL",
-        "Observe until glucose exceeds 300 mg/dL",
-        "Treat only if ketones are present",
-        "Observe until glucose exceeds 250 mg/dL"
+        "Treat the hyperglycemia because it has crossed the perioperative treatment threshold",
+        "Delay treatment until glucose exceeds 250 mg/dL",
+        "Treat only if urine ketones become positive",
+        "Postpone the operation solely because glucose is above 200 mg/dL"
       ],
       "answer": [
         0
@@ -5223,12 +5223,12 @@
       "id": "PRE-214",
       "set": 1,
       "type": "single",
-      "stem": "A patient takes levothyroxine for controlled hypothyroidism. What is the best morning-of-surgery instruction?",
+      "stem": "A patient with well-controlled hypothyroidism takes levothyroxine and is NPO for elective surgery. Which medication plan is most appropriate?",
       "options": [
-        "Continue levothyroxine",
-        "Hold the dose",
-        "Take half the dose",
-        "Stop it one week before surgery"
+        "Continue the prescribed levothyroxine regimen",
+        "Hold levothyroxine because all oral medications are prohibited while NPO",
+        "Stop levothyroxine for one week to avoid intraoperative tachycardia",
+        "Replace levothyroxine with perioperative corticosteroids"
       ],
       "answer": [
         0
@@ -5343,12 +5343,12 @@
       "id": "PRE-219",
       "set": 1,
       "type": "single",
-      "stem": "Which steroid history is most concerning for clinically important HPA-axis suppression according to the lecture criteria?",
+      "stem": "Which steroid exposure should most strongly trigger concern for perioperative HPA-axis suppression under the lecture criteria?",
       "options": [
         "Prednisone 20 mg daily for more than 5 days within the past year",
-        "Prednisone 5 mg for one day",
-        "Topical hydrocortisone for one week",
-        "One dexamethasone dose for PONV"
+        "A single dexamethasone dose for postoperative nausea prophylaxis",
+        "Prednisone 5 mg for one day six months ago",
+        "Topical hydrocortisone applied for one week"
       ],
       "answer": [
         0
@@ -5367,11 +5367,11 @@
       "id": "PRE-220",
       "set": 1,
       "type": "single",
-      "stem": "A chronic steroid user becomes profoundly hypotensive after induction despite fluids and vasopressors. Which diagnosis should move high on the differential because standard support is failing?",
+      "stem": "A chronic steroid user develops profound hypotension after induction. Fluids and escalating vasopressors produce little response, and there is no rash, wheeze, or major blood loss. Which diagnosis should now move highest on the differential?",
       "options": [
         "Adrenal insufficiency",
         "Neuromuscular-blocker anaphylaxis",
-        "Simple NPO-related hypovolemia",
+        "Uncomplicated fasting-related hypovolemia",
         "Local anesthetic systemic toxicity"
       ],
       "answer": [
@@ -5466,12 +5466,12 @@
       "id": "PRE-224",
       "set": 1,
       "type": "single",
-      "stem": "Which intraoperative blood-pressure pattern is most characteristic of Conn syndrome?",
+      "stem": "A patient with primary hyperaldosteronism reaches adrenalectomy with persistent hypertension and corrected potassium. Which intraoperative event remains most characteristic when surgical stimulation increases?",
       "options": [
-        "Refractory hypertension with stimulation",
-        "Refractory hypotension with induction",
-        "Bradycardia with hypotension",
-        "Hypotension with hyperkalemia"
+        "Abrupt severe hypertension",
+        "Refractory hypotension from cortisol deficiency",
+        "Hyperkalemia with bradycardia",
+        "Loss of sympathetic responsiveness"
       ],
       "answer": [
         0
@@ -5610,11 +5610,11 @@
       "id": "PRE-230",
       "set": 1,
       "type": "single",
-      "stem": "Fatigue, hyperpigmentation, hypotension, and low cortisol most strongly suggest which adrenal disorder?",
+      "stem": "A patient has chronic fatigue, weight loss, hyperpigmentation, hypotension, hyponatremia, hyperkalemia, and low cortisol. Which diagnosis best unifies these findings?",
       "options": [
-        "Addison disease",
+        "Primary adrenal insufficiency (Addison disease)",
         "Cushing syndrome",
-        "Conn syndrome",
+        "Primary hyperaldosteronism (Conn syndrome)",
         "Pheochromocytoma"
       ],
       "answer": [
@@ -5782,12 +5782,12 @@
       "id": "PRE-237",
       "set": 1,
       "type": "single",
-      "stem": "Which fasting interval applies to infant formula or non-human milk?",
+      "stem": "An infant received formula 5 hours before an elective anesthetic and has had nothing since. Which interpretation is correct?",
       "options": [
-        "6 hours",
-        "4 hours",
-        "2 hours",
-        "8 hours"
+        "Fasting is still inadequate because formula requires 6 hours",
+        "Fasting is adequate because formula follows the 4-hour breast-milk interval",
+        "Fasting is adequate because all liquids require only 2 hours",
+        "The case requires an 8-hour fast because formula is a solid"
       ],
       "answer": [
         0
@@ -5854,12 +5854,12 @@
       "id": "PRE-240",
       "set": 1,
       "type": "single",
-      "stem": "A patient chewed gum 30 minutes before surgery. Which physiologic effect is the main concern highlighted by the lecture?",
+      "stem": "A properly fasted patient is found chewing gum shortly before elective induction. Which physiologic effect explains why gum use still matters during the aspiration-risk assessment?",
       "options": [
-        "Gum chewing stimulates gastric acid secretion",
-        "Gum is equivalent to a heavy meal",
-        "Gum reliably accelerates gastric emptying",
-        "Gum eliminates gastric contents"
+        "Chewing stimulates gastric acid secretion",
+        "Chewing converts gastric contents into particulate material",
+        "Chewing reliably accelerates gastric emptying enough to negate fasting",
+        "Chewing eliminates residual gastric volume"
       ],
       "answer": [
         0
@@ -5984,12 +5984,12 @@
       "id": "PRE-245",
       "set": 1,
       "type": "single",
-      "stem": "A patient on weekly semaglutide has met standard fasting times. Which residual concern means NPO duration alone may not establish an empty stomach?",
+      "stem": "A patient taking weekly semaglutide has satisfied standard fasting intervals but reports early satiety and intermittent nausea. Which assumption is least safe?",
       "options": [
-        "Delayed gastric emptying",
-        "Accelerated gastric emptying",
-        "Markedly increased gastric acidity alone",
-        "Need for a larger semaglutide dose"
+        "Standard NPO time alone proves the stomach is empty",
+        "The medication may delay gastric emptying",
+        "Symptoms may increase concern for retained gastric contents",
+        "Aspiration risk assessment should extend beyond elapsed fasting time"
       ],
       "answer": [
         0
@@ -6083,12 +6083,12 @@
       "id": "PRE-249",
       "set": 1,
       "type": "single",
-      "stem": "Why must fasting history be interpreted together with disease-specific aspiration risk?",
+      "stem": "Two patients have both fasted for 10 hours. One is healthy; the other has symptomatic gastroparesis. Why should their aspiration plans differ?",
       "options": [
-        "Some conditions cause retained gastric contents despite adequate fasting",
-        "Adequate fasting always makes gastric volume safe",
-        "Aspiration risk depends only on elapsed NPO time",
-        "Comorbidities matter less than fasting duration"
+        "Disease can cause retained gastric contents despite identical fasting duration",
+        "Elapsed fasting time determines aspiration risk independent of comorbidity",
+        "Gastroparesis matters only when fasting is shorter than 8 hours",
+        "Once fasting exceeds 8 hours, gastric contents are predictably absent"
       ],
       "answer": [
         0
