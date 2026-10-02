@@ -32,12 +32,12 @@
       "id": "PAIN-002",
       "set": 1,
       "type": "single",
-      "stem": "What happens during transduction?",
+      "stem": "A patient with an inflamed incision has spontaneous nociceptor firing before any signal reaches the dorsal horn. Which process occurred first?",
       "options": [
-        "Noxious thermal, chemical, or mechanical stimuli become action potentials",
-        "Signals travel from the dorsal horn up to the thalamus for relay to the cortex",
-        "The dorsal horn inhibits or amplifies incoming afferent signals",
-        "The cortex creates the emotional experience and awareness of pain"
+        "Transduction at the peripheral nociceptor",
+        "Transmission through the spinothalamic tract",
+        "Modulation within the dorsal horn",
+        "Perception within cortical networks"
       ],
       "answer": [
         0
@@ -156,12 +156,12 @@
       "id": "PAIN-007",
       "set": 1,
       "type": "single",
-      "stem": "During a peripheral nerve block, a patient loses pain sensation in the foot but can still feel light touch and knows where her toes are. Which sensations are preserved?",
+      "stem": "During a differential peripheral nerve block, pinprick pain disappears while light touch and joint position remain intact. Which sensory system is still functioning?",
       "options": [
-        "Epicritic sensations",
-        "Protopathic sensations",
-        "Visceral sensations",
-        "Nociceptive sensations"
+        "Epicritic sensation",
+        "Protopathic sensation",
+        "Visceral nociception",
+        "Polymodal C-fiber sensation"
       ],
       "answer": [
         0
@@ -252,12 +252,12 @@
       "id": "PAIN-011",
       "set": 1,
       "type": "single",
-      "stem": "A patient with chronic pelvic pain has no identifiable tissue damage, but her pain is severe and emotionally distressing. Does this fit the IASP definition of pain?",
+      "stem": "A patient reports severe pelvic pain despite no demonstrable tissue injury. Which finding would MOST directly support classifying the experience as pain under the IASP concept?",
       "options": [
-        "Yes; potential damage counts",
-        "No, pain requires actual tissue damage",
-        "No, emotional distress is excluded",
-        "Yes, if she has a psychiatric diagnosis"
+        "The experience is sensory and emotional and may relate to potential rather than proven tissue damage",
+        "Objective tissue injury is later demonstrated on imaging",
+        "A psychiatric diagnosis explains the emotional component",
+        "Autonomic changes confirm nociceptor activation"
       ],
       "answer": [
         0
@@ -300,7 +300,7 @@
       "id": "PAIN-013",
       "set": 1,
       "type": "multi",
-      "stem": "Which factors does the IASP slide say change the pain experience? (Select 2)",
+      "stem": "Two patients undergo identical procedures but report markedly different pain intensity despite similar tissue injury. Which patient variables specifically identified in the source can contribute to this difference? (Select 2)",
       "options": [
         "Gender",
         "Age",
@@ -399,12 +399,12 @@
       "id": "PAIN-017",
       "set": 1,
       "type": "single",
-      "stem": "Your preop clinic sees about 100 adults a week. Roughly how many would you expect to have chronic pain, based on worldwide prevalence?",
+      "stem": "A preoperative service evaluates 250 adults representative of the worldwide population. Using the cited chronic-pain prevalence, approximately how many would be expected to report chronic pain?",
       "options": [
-        "About 20",
-        "About 5",
-        "About 50",
-        "About 1"
+        "50",
+        "13",
+        "125",
+        "3"
       ],
       "answer": [
         0
@@ -474,7 +474,7 @@
       "id": "PAIN-020",
       "set": 1,
       "type": "multi",
-      "stem": "Which medication classes may be used for chronic pain with anxiety and depression? (Select 2)",
+      "stem": "A patient with chronic neuropathic pain also has anxiety, depressed mood, and poor sleep. Which two medication classes can address chronic-pain mechanisms while serving as common nonopioid adjuvants? (Select 2)",
       "options": [
         "Antidepressants",
         "Anticonvulsants",
@@ -624,12 +624,12 @@
       "id": "PAIN-026",
       "set": 1,
       "type": "single",
-      "stem": "A patient has incisional pain after a knee replacement without burning or electrical features. Which treatments are MOST effective?",
+      "stem": "A patient has severe nociceptive incisional pain after knee arthroplasty but no burning, shooting, or allodynic features. Which strategy BEST matches the dominant pain mechanism?",
       "options": [
-        "Opioids, NSAIDs, and blocks",
-        "Anticonvulsants alone",
-        "Antidepressants alone",
-        "Nonpharmacologic measures alone"
+        "Combine opioid/nonopioid analgesics with a regional technique when appropriate",
+        "Use an anticonvulsant as the sole analgesic",
+        "Use an antidepressant as the sole analgesic",
+        "Avoid pharmacologic therapy because nociceptive pain is self-limited"
       ],
       "answer": [
         0
@@ -676,12 +676,12 @@
       "id": "PAIN-028",
       "set": 1,
       "type": "single",
-      "stem": "Immediately after an incision, a patient feels sharp, well-defined pain. Which description fits this type of pain?",
+      "stem": "Seconds after incision, a patient experiences sharply localized pain that tracks the new tissue injury. Which interpretation BEST distinguishes this from chronic neuropathic pain?",
       "options": [
-        "Fast pain from tissue damage",
-        "Slow pain from a pathologic neurologic state",
-        "Pain lasting more than 3 months",
-        "Pain without biological value"
+        "It is fast nociceptive pain generated by tissue damage",
+        "It is slow pain caused by a pathologic neurologic state",
+        "Its duration already meets the definition of chronic pain",
+        "It lacks protective biologic value"
       ],
       "answer": [
         0
@@ -700,12 +700,12 @@
       "id": "PAIN-029",
       "set": 1,
       "type": "single",
-      "stem": "A PACU nurse says most surgical pain is neuropathic. What is correct?",
+      "stem": "A postoperative patient has aching incisional pain worsened by movement but no allodynia, electric shocks, or burning. Which mechanism should guide the initial analgesic plan?",
       "options": [
-        "Most is acute nociceptive pain",
-        "Most postoperative pain is neuropathic",
-        "Most postoperative pain is visceral",
-        "Most postoperative pain is chronic"
+        "Acute nociceptive pain",
+        "Peripheral neuropathic pain",
+        "Visceral pain exclusively",
+        "Chronic centralized pain"
       ],
       "answer": [
         0
@@ -748,12 +748,12 @@
       "id": "PAIN-031",
       "set": 1,
       "type": "single",
-      "stem": "Your PACU is choosing a standard pain scale. Why is the 0–10 numeric rating scale favored?",
+      "stem": "A verbal, cognitively intact PACU patient can reliably quantify pain. Which assessment approach provides the strongest standardized measure for serial reassessment?",
       "options": [
-        "Validated and reliable",
-        "It works for nonverbal and cognitively impaired patients",
-        "It measures pain objectively",
-        "It works best in nonverbal patients"
+        "A validated 0–10 numeric rating scale",
+        "A behavioral scale designed for nonverbal patients",
+        "Changes in sympathetic vital signs",
+        "The clinician's global observation"
       ],
       "answer": [
         0
@@ -844,12 +844,12 @@
       "id": "PAIN-035",
       "set": 1,
       "type": "single",
-      "stem": "An agitated PACU patient with OSA receives hydromorphone for presumed pain and then obstructs. What warning applies?",
+      "stem": "An opioid-naive patient with obstructive sleep apnea is agitated after surgery. Before treating presumed pain with repeated IV opioid doses, which risk should MOST alter the plan?",
       "options": [
-        "They can worsen hypoventilation",
-        "Analgesics improve breathing by easing splinting",
-        "Sedatives protect against obstruction",
-        "OSA patients need higher opioid doses"
+        "Parenteral analgesics and sedatives can worsen hypoventilation and upper-airway obstruction",
+        "Relieving pain reliably eliminates postoperative obstruction",
+        "Sedation reduces the ventilatory consequences of opioids",
+        "OSA generally creates opioid resistance requiring larger doses"
       ],
       "answer": [
         0
@@ -868,13 +868,13 @@
       "id": "PAIN-036",
       "set": 1,
       "type": "multi",
-      "stem": "A patient reports new pain. Which elements belong in your assessment? (Select 2)",
+      "stem": "A patient develops new severe postoperative pain despite previously adequate analgesia. Which two features are essential to characterize the pain itself before attributing it to routine incisional pain? (Select 2)",
       "options": [
         "Onset and temporal pattern",
         "Radiation and quality",
-        "Prior surgical history",
-        "Current vital signs",
-        "The PACU nurse's opinion",
+        "Remote surgical history",
+        "A single set of vital signs",
+        "The PACU nurse's impression",
         "Family history of chronic pain"
       ],
       "answer": [
