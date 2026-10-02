@@ -19,7 +19,7 @@ async function render(){
  const pages=await manifestPages(),byId=new Map(pages.map(x=>[x.id,x])),n=document.createElement('nav');
  n.className='mbu-global-nav';n.dataset.page=p;n.setAttribute('aria-label','Site navigation');
  const brand=link(byId.get('home')||pages[0],'mbu-global-nav__brand');brand.textContent='SRNA Study Tool';brand.title='Refresh SRNA Study Tool';
- brand.onclick=e=>{e.preventDefault();try{sessionStorage.removeItem('mbu_build_manifest_v1')}catch{}const u=new URL(home);u.searchParams.set('_mbu_refresh',Date.now().toString());location.assign(u.href)};
+ brand.onclick=e=>{e.preventDefault();try{sessionStorage.removeItem('mbu_build_manifest_v1')}catch{}const u=new URL(location.href);u.searchParams.set('_mbu_refresh',Date.now().toString());location.assign(u.href)};
  const primary=document.createElement('div');primary.className='mbu-global-nav__primary';
  for(const id of [courseId,'studio']){const x=byId.get(id);if(x)primary.append(link(x,'mbu-global-nav__primary-link'))}
  const adaptive=document.createElement('a');adaptive.href=new URL('studio.html?mode=adaptive',exam).href;adaptive.textContent='Adaptive';adaptive.className='mbu-global-nav__primary-link mbu-global-nav__adaptive';adaptive.setAttribute('aria-label','Try Adaptive Testing beta');primary.append(adaptive);
