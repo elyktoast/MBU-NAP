@@ -7,7 +7,7 @@
     "missingSourceTitle": 0,
     "missingSourceLocator": 0,
     "explanationsUnder8Words": 0,
-    "manualReviewCandidates": 35
+    "manualReviewCandidates": 29
   },
   "candidates": [
     {
@@ -149,19 +149,6 @@
       "severity": "manual_review",
       "similarity": 1,
       "questions": [
-        "b1-159",
-        "b1-250"
-      ],
-      "stems": [
-        "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
-        "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 2)"
-      ]
-    },
-    {
-      "type": "near_duplicate_key_variation",
-      "severity": "manual_review",
-      "similarity": 1,
-      "questions": [
         "b1-237",
         "b1-368"
       ],
@@ -181,32 +168,6 @@
       "stems": [
         "What is the primary role of calcium hydroxide [Ca(OH)2] in wet soda lime absorbent?",
         "What is the primary role of calcium hydroxide in wet soda lime absorbent?"
-      ]
-    },
-    {
-      "type": "near_duplicate_key_variation",
-      "severity": "manual_review",
-      "similarity": 1,
-      "questions": [
-        "b1-250",
-        "b1-322"
-      ],
-      "stems": [
-        "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 2)",
-        "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
-      ]
-    },
-    {
-      "type": "near_duplicate_key_variation",
-      "severity": "manual_review",
-      "similarity": 1,
-      "questions": [
-        "b1-250",
-        "b1-422"
-      ],
-      "stems": [
-        "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 2)",
-        "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
       ]
     },
     {
@@ -342,19 +303,6 @@
     {
       "type": "near_duplicate_key_variation",
       "severity": "manual_review",
-      "similarity": 1,
-      "questions": [
-        "b1-364",
-        "b1-406"
-      ],
-      "stems": [
-        "Which of the following monitoring modalities satisfy the requirements of ASA Standard II for continuous evaluation of patient circulation? (Select 3)",
-        "Which of the following monitoring modalities satisfy the requirements of ASA Standard II for continuous evaluation of patient circulation? (Select 2)"
-      ]
-    },
-    {
-      "type": "near_duplicate_key_variation",
-      "severity": "manual_review",
       "similarity": 0.93,
       "questions": [
         "b1-382",
@@ -389,32 +337,6 @@
       "stems": [
         "Which of the following clinical events will produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
         "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
-      ]
-    },
-    {
-      "type": "near_duplicate_key_variation",
-      "severity": "manual_review",
-      "similarity": 1,
-      "questions": [
-        "b1-406",
-        "b1-464"
-      ],
-      "stems": [
-        "Which of the following monitoring modalities satisfy the requirements of ASA Standard II for continuous evaluation of patient circulation? (Select 2)",
-        "Which of the following monitoring modalities satisfy the requirements of ASA Standard II for continuous evaluation of patient circulation? (Select 3)"
-      ]
-    },
-    {
-      "type": "near_duplicate_key_variation",
-      "severity": "manual_review",
-      "similarity": 1,
-      "questions": [
-        "b1-406",
-        "b1-60"
-      ],
-      "stems": [
-        "Which of the following monitoring modalities satisfy the requirements of ASA Standard II for continuous evaluation of patient circulation? (Select 3)",
-        "Which of the following monitoring modalities satisfy the requirements of ASA Standard II for continuous evaluation of patient circulation? (Select 2)"
       ]
     },
     {
