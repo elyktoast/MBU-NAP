@@ -947,7 +947,8 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  for(const p of ['scripts/question-review-queue.mjs','reports/question-content-review.json'])if(!exists(p))fail('Phase 3 content-review queue missing '+p);
  const reviewScript=read('scripts/question-review-queue.mjs'),review=JSON.parse(read('reports/question-content-review.json'));
- for(const token of ['--write','--check','exact_stem_variant','near_duplicate_key_variation'])if(!reviewScript.includes(token))fail('Content-review queue contract missing '+token);
+ for(const token of ['--write','--check','near_duplicate_cluster','cross_set_reinforcement','sameSetNearDuplicateClusters'])if(!reviewScript.includes(token))fail('Content-review queue contract missing '+token);
+ if(review.schema!==3||review.summary?.sameSetNearDuplicateClusters!==0||review.summary?.manualReviewCandidates!==0)fail('Content-review queue has unresolved actionable Phase 3 findings');
  if(review.totalQuestions!==2000||!Array.isArray(review.candidates))fail('Content-review queue report shape is invalid');
 }
 
@@ -1004,7 +1005,8 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const report=JSON.parse(read('reports/content-phase3-5-audit.json'));
  if(report?.scope?.questions!==2000)fail('Phase 3-5 audit scope is invalid');
- if(report?.changes?.sourceGroundedReplacementQuestions!==86||report?.changes?.bank1SameSetDuplicatesReplaced!==21||report?.changes?.hazardsSet2RepeatedSlotsRebuilt!==65)fail('Phase 3-5 replacement counts are invalid');
+ if(report?.changes?.sourceGroundedReplacementQuestions!==87||report?.changes?.bank1SameSetDuplicatesReplaced!==21||report?.changes?.bank1SameSetNearDuplicateReplaced!==1||report?.changes?.hazardsSet2RepeatedSlotsRebuilt!==65)fail('Phase 3-5 replacement counts are invalid');
+ if(report?.finalChecks?.sameSetNearDuplicateClusters!==0||report?.finalChecks?.actionableManualReviewClusters!==0)fail('Phase 3-5 audit reports unresolved near-duplicate content');
  if(report?.finalChecks?.missingRequiredFields!==0)fail('Phase 3-5 audit reports missing required content');
  if((report?.finalChecks?.sameSetDuplicateGroups||[]).length!==0)fail('Phase 3-5 audit reports unresolved same-set duplicates');
  if((report?.finalChecks?.sameStemSameOptionPoolKeyConflicts||[]).length!==0)fail('Phase 3-5 audit reports unresolved answer-key conflicts');
