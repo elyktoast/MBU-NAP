@@ -1223,7 +1223,7 @@
       "id": "AIR-051",
       "set": 1,
       "type": "single",
-      "stem": "A newborn has a scaphoid abdomen and bowel sounds in the chest. What abnormal development causes this?",
+      "stem": "A newborn has a scaphoid abdomen and bowel sounds in the chest. Which developmental defect best explains the respiratory problem?",
       "options": [
         "Pierre Robin sequence",
         "Congenital diaphragmatic hernia",
@@ -1247,7 +1247,7 @@
       "id": "AIR-052",
       "set": 1,
       "type": "single",
-      "stem": "The lining of the lower respiratory tract and its supporting tissues form from which germ layers?",
+      "stem": "Which germ layers give rise to the lower-respiratory epithelium and its supporting tissues?",
       "options": [
         "Endoderm and mesoderm",
         "Ectoderm alone",
@@ -1271,7 +1271,7 @@
       "id": "AIR-053",
       "set": 1,
       "type": "single",
-      "stem": "A developmental biology question asks which growth factors drive branching of the fetal lung and its vascular network. Which pair is correct?",
+      "stem": "Which growth-factor pair is central to fetal airway branching and pulmonary vascular development?",
       "options": [
         "EGF and IGF-1",
         "TGF-beta and PDGF",
@@ -1295,7 +1295,7 @@
       "id": "AIR-054",
       "set": 1,
       "type": "single",
-      "stem": "During swallowing, which structure helps protect the glottic opening from entering material?",
+      "stem": "During swallowing, which structure most directly helps deflect material away from the glottic opening?",
       "options": [
         "Cricoid cartilage",
         "Uvula",
@@ -1319,12 +1319,12 @@
       "id": "AIR-055",
       "set": 1,
       "type": "single",
-      "stem": "During DL, you see folds running from the epiglottis to the arytenoids on each side of the laryngeal inlet. What are they?",
+      "stem": "During laryngoscopy, folds extending from the epiglottis to the arytenoids border the laryngeal inlet. What are they?",
       "options": [
-        "The glossoepiglottic folds",
-        "The aryepiglottic folds",
-        "The vocal folds",
-        "The vestibular folds"
+        "Glossoepiglottic folds",
+        "Aryepiglottic folds",
+        "True vocal folds",
+        "Vestibular folds"
       ],
       "answer": [
         1
@@ -1343,7 +1343,7 @@
       "id": "AIR-056",
       "set": 1,
       "type": "single",
-      "stem": "What lies lateral to the aryepiglottic folds where foreign bodies often lodge?",
+      "stem": "A foreign body lodges lateral to the aryepiglottic fold. Which recess is it most likely in?",
       "options": [
         "Piriform recess",
         "Vallecula",
@@ -1367,12 +1367,12 @@
       "id": "AIR-057",
       "set": 1,
       "type": "single",
-      "stem": "After a thyroidectomy, a singer cannot reach high notes, though her voice is otherwise normal. Which muscle is likely affected?",
+      "stem": "After thyroid surgery, a singer loses the ability to reach high notes but has otherwise preserved phonation. Which muscle is most likely weak?",
       "options": [
-        "The posterior cricoarytenoid, which abducts the cords",
-        "The lateral cricoarytenoid, which adducts the cords",
-        "The thyroarytenoid, which relaxes the cords",
-        "The cricothyroid, which tenses the cords"
+        "Posterior cricoarytenoid",
+        "Lateral cricoarytenoid",
+        "Thyroarytenoid",
+        "Cricothyroid"
       ],
       "answer": [
         3
@@ -1391,7 +1391,7 @@
       "id": "AIR-058",
       "set": 1,
       "type": "single",
-      "stem": "After bilateral nerve injury, a patient's cords cannot open. Which muscle is the ONLY abductor of the vocal cords?",
+      "stem": "Bilateral injury leaves the vocal cords unable to abduct. Which muscle normally provides the only active abduction?",
       "options": [
         "Cricothyroid",
         "Thyroarytenoid",
@@ -1415,7 +1415,7 @@
       "id": "AIR-059",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, a patient develops laryngospasm with tightly closed cords. Which muscles produce this adduction?",
+      "stem": "During laryngospasm, which intrinsic laryngeal muscles are primarily responsible for forceful vocal-cord adduction?",
       "options": [
         "Interarytenoids and posterior cricoarytenoid",
         "Thyroarytenoid and lateral cricoarytenoid",
@@ -1439,12 +1439,12 @@
       "id": "AIR-060",
       "set": 1,
       "type": "single",
-      "stem": "You examine a patient with a short neck and limited mouth opening before an elective thyroidectomy. What is the main purpose of this evaluation?",
+      "stem": "A patient has a short neck and limited mouth opening before thyroidectomy. What is the main purpose of the airway evaluation?",
       "options": [
-        "Identifying challenges and forming a patient-specific airway plan",
-        "Predicting every difficult airway with certainty",
-        "Replacing the need for backup equipment",
-        "Determining the surgeon's positioning plan for the case"
+        "Identify likely challenges and build a patient-specific airway plan",
+        "Predict difficulty with certainty",
+        "Replace the need for backup equipment",
+        "Determine the surgeon's position"
       ],
       "answer": [
         0
@@ -1463,12 +1463,12 @@
       "id": "AIR-061",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a Mallampati I score but a thyromental distance of 4 cm and limited neck extension. How should you interpret these findings?",
+      "stem": "Mallampati is I, but thyromental distance is 4 cm and neck extension is limited. How should these findings be interpreted?",
       "options": [
-        "Trust the Mallampati score, which is the reliable test",
-        "Trust the thyromental distance alone",
-        "Rely on the neck extension finding alone",
-        "Combine them, since no single test reliably predicts difficulty"
+        "Trust Mallampati because it is most reliable",
+        "Trust thyromental distance alone",
+        "Trust neck extension alone",
+        "Combine predictors because no single test is sufficiently reliable"
       ],
       "answer": [
         3
@@ -1487,14 +1487,14 @@
       "id": "AIR-062",
       "set": 1,
       "type": "multi",
-      "stem": "Which four airway management areas should be assessed? (Select 4)",
+      "stem": "Which four components of airway management should be assessed before anesthesia? (Select 4)",
       "options": [
-        "Cricothyrotomy access",
-        "Direct or videolaryngoscopy with intubation",
-        "Central line placement",
-        "Epidural catheter placement",
+        "Emergency front-of-neck access",
+        "Direct or video laryngoscopy with intubation",
+        "Central venous access",
+        "Epidural placement",
         "Bag-mask ventilation",
-        "Supraglottic airway placement"
+        "Supraglottic-airway placement"
       ],
       "answer": [
         0,
@@ -1516,14 +1516,14 @@
       "id": "AIR-063",
       "set": 1,
       "type": "multi",
-      "stem": "Which historical clues suggest prior airway difficulty? (Select 2)",
+      "stem": "Which two historical clues most strongly suggest prior airway difficulty? (Select 2)",
       "options": [
-        "Prior uneventful LMA use",
+        "Prior uncomplicated LMA use",
         "Normal dentition",
-        "Short outpatient procedure",
-        "Chipped teeth after a prior anesthetic",
-        "Unexpected ICU admission after surgery",
-        "A prior uncomplicated spinal anesthetic"
+        "Short prior procedure",
+        "Chipped teeth after prior anesthesia",
+        "Unexpected postoperative ICU admission",
+        "Prior uncomplicated spinal anesthetic"
       ],
       "answer": [
         3,
@@ -1543,12 +1543,12 @@
       "id": "AIR-064",
       "set": 1,
       "type": "single",
-      "stem": "Your department performs 5,000 intubations a year. How many would you expect to be difficult?",
+      "stem": "A department performs 5,000 intubations annually. Based on the cited incidence, approximately how many difficult intubations should be expected?",
       "options": [
-        "About 75–425 (1.5%–8.5%)",
-        "About 15–25 (0.3%–0.5%)",
-        "About 500–1,000 (10%–20%)",
-        "Fewer than 5 (under 0.1%)"
+        "75–425",
+        "15–25",
+        "500–1,000",
+        "Fewer than 5"
       ],
       "answer": [
         0
@@ -1567,12 +1567,12 @@
       "id": "AIR-065",
       "set": 1,
       "type": "single",
-      "stem": "Of those same 5,000 intubations, how many would you expect to fail outright?",
+      "stem": "Of 5,000 intubations, approximately how many would be expected to fail outright based on the cited 0.3%–0.5% rate?",
       "options": [
-        "About 75–425 (1.5%–8.5%)",
-        "About 250–500 (5%–10%)",
-        "Fewer than 1 (0.001%)",
-        "About 15–25 (0.3%–0.5%)"
+        "75–425",
+        "250–500",
+        "Fewer than 1",
+        "15–25"
       ],
       "answer": [
         3
@@ -1591,12 +1591,12 @@
       "id": "AIR-066",
       "set": 1,
       "type": "single",
-      "stem": "A student examines a supine patient who says \"ahh\" during the Mallampati exam. What should be changed to perform the modified exam correctly?",
+      "stem": "A student performs Mallampati with the patient supine and phonating. How should the modified exam be corrected?",
       "options": [
-        "Have the patient phonate with the head flexed",
-        "Examine with the mouth half open",
-        "Seat the patient upright, tongue out, without phonation",
-        "Keep the patient supine with phonation"
+        "Head flexed with phonation",
+        "Mouth half open",
+        "Patient seated upright, tongue protruded, without phonation",
+        "Supine with phonation"
       ],
       "answer": [
         2
@@ -1615,7 +1615,7 @@
       "id": "AIR-067",
       "set": 1,
       "type": "single",
-      "stem": "On exam, you see the soft palate, the entire uvula, the fauces, and the tonsillar pillars. Which Mallampati class is this?",
+      "stem": "Soft palate, full uvula, fauces, and tonsillar pillars are visible. Which Mallampati class is this?",
       "options": [
         "Class IV",
         "Class I",
@@ -1639,12 +1639,12 @@
       "id": "AIR-068",
       "set": 1,
       "type": "single",
-      "stem": "On exam, you see the soft palate and only the base of the uvula. Which class is this, and what does it predict?",
+      "stem": "Only the soft palate and base of the uvula are visible. Which Mallampati class and implication are correct?",
       "options": [
-        "Class III, higher risk",
-        "Class II, with low risk",
-        "Class I, with low risk",
-        "Class IV, with no visible soft palate"
+        "Class III with increased difficult-laryngoscopy risk",
+        "Class II with low risk",
+        "Class I with low risk",
+        "Class IV with no visible soft palate"
       ],
       "answer": [
         0
@@ -1663,7 +1663,7 @@
       "id": "AIR-069",
       "set": 1,
       "type": "single",
-      "stem": "On exam, you see only the hard palate; the soft palate is hidden by the tongue. Which class is this?",
+      "stem": "Only the hard palate is visible during Mallampati assessment. Which class is this?",
       "options": [
         "Class III",
         "Class II",
@@ -1687,7 +1687,7 @@
       "id": "AIR-070",
       "set": 1,
       "type": "single",
-      "stem": "Four patients have Mallampati classes I, II, III, and IV. Which patients have increased risk of difficult laryngoscopy?",
+      "stem": "Which Mallampati classes are associated with increased risk of difficult laryngoscopy?",
       "options": [
         "Class I",
         "Class II",
@@ -1711,12 +1711,12 @@
       "id": "AIR-071",
       "set": 1,
       "type": "single",
-      "stem": "On a Mallampati exam, you can see the tip of the epiglottis above the tongue. What is this finding, and how common is it?",
+      "stem": "The epiglottis is visible during routine mouth opening before laryngoscopy. How is this classified?",
       "options": [
-        "A sign of a difficult airway in most cases",
-        "Class zero, seen in about 1.2% of patients",
-        "Class IV, seen in about 10%",
-        "Class I, seen in most patients"
+        "A common marker of difficult airway",
+        "Mallampati class 0, an uncommon finding",
+        "Mallampati class IV",
+        "Mallampati class I"
       ],
       "answer": [
         1
@@ -1735,12 +1735,12 @@
       "id": "AIR-072",
       "set": 1,
       "type": "single",
-      "stem": "A patient's Mallampati exam is done while saying \"ah.\" What is the problem?",
+      "stem": "Why should the patient avoid saying 'ah' during the modified Mallampati exam?",
       "options": [
-        "Phonation can falsely improve the view",
-        "Phonation worsens the class unpredictably",
+        "Phonation can falsely improve the oropharyngeal view",
+        "Phonation always worsens the class",
         "Phonation is required for accuracy",
-        "Phonation matters in children"
+        "Phonation matters only in children"
       ],
       "answer": [
         0
@@ -1759,11 +1759,11 @@
       "id": "AIR-073",
       "set": 1,
       "type": "multi",
-      "stem": "Which tests should be combined with Mallampati to improve prediction? (Select 3)",
+      "stem": "Which three additional measurements improve airway prediction when combined with Mallampati? (Select 3)",
       "options": [
         "Interincisor gap",
         "Neck circumference",
-        "Hemoglobin level",
+        "Hemoglobin",
         "Blood pressure",
         "Heart rate",
         "Thyromental distance"
@@ -1787,12 +1787,12 @@
       "id": "AIR-074",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, you document \"grade 2a.\" What does this grading system describe?",
+      "stem": "A postintubation note documents 'Cormack-Lehane grade IIa.' What does this grade describe?",
       "options": [
         "Neck mobility",
         "Mouth opening",
-        "The laryngoscopic view during intubation",
-        "The oropharyngeal view on preop exam"
+        "Laryngoscopic view during intubation",
+        "Preoperative oropharyngeal view"
       ],
       "answer": [
         2
@@ -1811,7 +1811,7 @@
       "id": "AIR-075",
       "set": 1,
       "type": "single",
-      "stem": "On DL, you see the entire glottic opening, including the anterior commissure. What is the CL grade?",
+      "stem": "Direct laryngoscopy shows the entire glottic opening. Which Cormack-Lehane grade is this?",
       "options": [
         "Grade III",
         "Grade I",
@@ -1835,7 +1835,7 @@
       "id": "AIR-076",
       "set": 1,
       "type": "single",
-      "stem": "On DL, you see the posterior half of the cords plus the arytenoids. What is the CL grade?",
+      "stem": "Direct laryngoscopy shows the posterior portion of the cords and arytenoids but not the full glottis. Which grade best fits?",
       "options": [
         "Grade IIa",
         "Grade I",
@@ -1859,7 +1859,7 @@
       "id": "AIR-077",
       "set": 1,
       "type": "single",
-      "stem": "On direct laryngoscopy, you see the epiglottis but no part of the glottic opening. What is the Cormack-Lehane grade?",
+      "stem": "The epiglottis is visible but no portion of the glottic opening can be seen. Which Cormack-Lehane grade is this?",
       "options": [
         "Grade IIb",
         "Grade I",
@@ -1883,7 +1883,7 @@
       "id": "AIR-078",
       "set": 1,
       "type": "single",
-      "stem": "On DL, you see only the soft palate, with no epiglottis or glottis. What is the CL grade?",
+      "stem": "Only the soft palate is visible during laryngoscopy; neither epiglottis nor glottis is seen. Which Cormack-Lehane grade is this?",
       "options": [
         "Grade IIb",
         "Grade IIa",
@@ -1907,9 +1907,9 @@
       "id": "AIR-079",
       "set": 1,
       "type": "single",
-      "stem": "Of CL grades I, IIa, IIb, III, and IV, which are generally easier intubations?",
+      "stem": "Which Cormack-Lehane views are generally considered easier for tracheal intubation?",
       "options": [
-        "Grade IV alone",
+        "Grade IV only",
         "Grades I and IIa",
         "Grades IIb and III",
         "Grades III and IV"
@@ -1931,7 +1931,7 @@
       "id": "AIR-080",
       "set": 1,
       "type": "single",
-      "stem": "You perform DL on a typical adult and see about half of the vocal cords. Which grade is this, and how common is it?",
+      "stem": "Direct laryngoscopy shows about half the vocal cords in a typical adult. Which grade and frequency best match?",
       "options": [
         "Grade II, the most common view",
         "Grade I, the most common view",
@@ -1955,12 +1955,12 @@
       "id": "AIR-081",
       "set": 1,
       "type": "single",
-      "stem": "On DL, you see no laryngeal structures at all, not even the epiglottis. What is the BEST next step?",
+      "stem": "Direct laryngoscopy reveals no epiglottis or glottic structures. Which next step best changes the geometry rather than repeating the same failed approach?",
       "options": [
-        "Proceed blindly with a Mac blade",
-        "Apply cricoid pressure and try again unchanged",
-        "Pass a bougie through the visible cords",
-        "Readjust or switch to videolaryngoscopy"
+        "Repeat blindly with the same blade",
+        "Apply cricoid pressure and repeat unchanged",
+        "Pass a bougie through visible cords",
+        "Reposition and/or switch to videolaryngoscopy"
       ],
       "answer": [
         3
@@ -1979,12 +1979,12 @@
       "id": "AIR-082",
       "set": 1,
       "type": "single",
-      "stem": "A student measures TMD with the patient's head flexed and mouth open. How should it be measured?",
+      "stem": "How should thyromental distance be measured correctly?",
       "options": [
-        "Hyoid to mentum, head neutral",
-        "Sternal notch to mentum, mouth closed",
-        "Thyroid notch to mentum, head extended, mouth closed",
-        "Thyroid notch to mentum, head flexed, mouth open"
+        "Hyoid to mentum with head neutral",
+        "Sternal notch to mentum with mouth closed",
+        "Thyroid notch to mentum with head extended and mouth closed",
+        "Thyroid notch to mentum with head flexed and mouth open"
       ],
       "answer": [
         2
@@ -2003,12 +2003,12 @@
       "id": "AIR-083",
       "set": 1,
       "type": "single",
-      "stem": "A patient's TMD is 2 fingerbreadths (about 4 cm). How does this compare with normal?",
+      "stem": "A thyromental distance of about 4 cm should be interpreted how?",
       "options": [
-        "It is normal; TMD does not matter",
-        "Short; normal is ≥6 cm",
-        "It is normal; normal is at least 4 cm",
-        "It is long; normal is under 3 cm"
+        "Normal",
+        "Short; normal is at least about 6 cm",
+        "Normal because 4 cm is adequate",
+        "Long"
       ],
       "answer": [
         1
@@ -2027,7 +2027,7 @@
       "id": "AIR-084",
       "set": 1,
       "type": "single",
-      "stem": "A thyromental distance of 10 cm should raise concern for which anatomic problem during direct laryngoscopy?",
+      "stem": "An unusually long thyromental distance of 10 cm may indicate which laryngeal position that can also complicate direct laryngoscopy?",
       "options": [
         "Caudally positioned larynx",
         "Universally easy airway",
@@ -2051,12 +2051,12 @@
       "id": "AIR-085",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a receding chin has a TMD of 4 cm. Why is laryngoscopy likely to be difficult?",
+      "stem": "A patient with retrognathia has a thyromental distance of 4 cm. Why can laryngoscopy be difficult?",
       "options": [
         "The epiglottis is too long",
-        "The cords are too far posterior",
-        "The larynx sits too low in the neck",
-        "No room to displace the tongue"
+        "The cords are too posterior",
+        "The larynx is too low",
+        "There is inadequate mandibular space to displace the tongue"
       ],
       "answer": [
         3
@@ -2075,7 +2075,7 @@
       "id": "AIR-086",
       "set": 1,
       "type": "multi",
-      "stem": "Which conditions are associated with abnormal TMD? (Select 2)",
+      "stem": "Which two conditions are associated with an abnormal thyromental distance? (Select 2)",
       "options": [
         "Hypothyroidism",
         "Hypertension",
@@ -2102,11 +2102,11 @@
       "id": "AIR-087",
       "set": 1,
       "type": "single",
-      "stem": "During a 3-3-2 assessment, which three distances are measured?",
+      "stem": "Which three distances make up the 3-3-2 airway assessment?",
       "options": [
         "Mouth opening, neck extension, and Mallampati",
-        "Interincisor gap, mentum to hyoid, and hyoid to thyroid",
-        "Mentum to sternum, thyroid to cricoid, and nose to chin",
+        "Interincisor gap, mentum-to-hyoid, and hyoid-to-thyroid",
+        "Mentum-to-sternum, thyroid-to-cricoid, and nose-to-chin",
         "Neck circumference, TMD, and SMD"
       ],
       "answer": [
@@ -2126,11 +2126,11 @@
       "id": "AIR-088",
       "set": 1,
       "type": "single",
-      "stem": "What does fewer than 2 fingerbreadths between the hyoid and thyroid notch suggest?",
+      "stem": "Fewer than two fingerbreadths between the hyoid and thyroid notch suggests what airway geometry?",
       "options": [
-        "An anterior larynx that is harder to visualize",
-        "A low larynx with a deep visual field",
-        "Normal laryngeal position for most adults",
+        "A more anterior larynx",
+        "A low larynx",
+        "Normal laryngeal position",
         "Limited mouth opening"
       ],
       "answer": [
@@ -2150,12 +2150,12 @@
       "id": "AIR-089",
       "set": 1,
       "type": "single",
-      "stem": "What does more than 2 fingerbreadths between the mandible-neck junction and thyroid notch suggest?",
+      "stem": "More than two fingerbreadths between the mandibular-neck junction and thyroid notch suggests what?",
       "options": [
-        "An anterior larynx that is harder to visualize",
+        "An anterior larynx",
         "Normal position",
         "Limited neck extension",
-        "A low larynx that is deeper and harder to see"
+        "A more caudal/deep larynx"
       ],
       "answer": [
         3
@@ -2174,12 +2174,12 @@
       "id": "AIR-090",
       "set": 1,
       "type": "single",
-      "stem": "A patient with TMJ disease opens her mouth 2.5 cm. What does this predict?",
+      "stem": "A patient with TMJ disease opens only 2.5 cm. Which consequence is most likely?",
       "options": [
-        "Difficult mask ventilation but easy intubation",
-        "Difficult mask ventilation alone",
-        "Difficult intubation, since the gap is under 3 cm",
-        "An easy intubation, since 2.5 cm is adequate"
+        "Mask difficulty but easy intubation",
+        "Mask difficulty only",
+        "Difficult intubation because blade and tube access are limited",
+        "Easy intubation"
       ],
       "answer": [
         2
@@ -2198,11 +2198,11 @@
       "id": "AIR-091",
       "set": 1,
       "type": "single",
-      "stem": "A patient's mouth opening is 2 fingerbreadths. Why does this make laryngoscopy hard?",
+      "stem": "Why does a two-fingerbreadth mouth opening make direct laryngoscopy difficult?",
       "options": [
-        "The tongue falls back and obstructs the view",
-        "The blade and tube cannot pass",
-        "The tongue becomes larger",
+        "The tongue always obstructs",
+        "The blade and tube may not have adequate passage",
+        "The tongue enlarges",
         "The epiglottis drops"
       ],
       "answer": [
@@ -2222,12 +2222,12 @@
       "id": "AIR-092",
       "set": 1,
       "type": "single",
-      "stem": "Large protruding upper incisors most directly worsen direct laryngoscopy by increasing which paired risks?",
+      "stem": "Large protruding upper incisors most directly increase which pair of laryngoscopy problems?",
       "options": [
-        "Dental injury and a less favorable line of sight",
-        "Easier laryngoscopy and less dental trauma",
+        "Dental injury risk and impaired line of sight",
+        "Easier laryngoscopy and less trauma",
         "Mask-ventilation difficulty only",
-        "Reduced aspiration risk and easier tube passage"
+        "Lower aspiration risk and easier tube passage"
       ],
       "answer": [
         0
@@ -2246,12 +2246,12 @@
       "id": "AIR-093",
       "set": 1,
       "type": "single",
-      "stem": "A student measures SMD with the mouth open and head flexed. How should it be measured?",
+      "stem": "How should sternomental distance be measured?",
       "options": [
-        "Thyroid notch to mentum, mouth open",
-        "Hyoid to mentum, head neutral",
-        "Sternal notch to hyoid, head flexed",
-        "Sternal notch to mentum, extended"
+        "Thyroid notch to mentum with mouth open",
+        "Hyoid to mentum with head neutral",
+        "Sternal notch to hyoid with head flexed",
+        "Sternal notch to mentum with the head extended"
       ],
       "answer": [
         3
@@ -2270,11 +2270,11 @@
       "id": "AIR-094",
       "set": 1,
       "type": "single",
-      "stem": "A patient's SMD with full extension is 11 cm. What does this predict?",
+      "stem": "A sternomental distance of 11 cm in full extension predicts what?",
       "options": [
-        "Difficult mask ventilation alone",
-        "Nothing, since SMD is not predictive",
-        "Difficult laryngoscopy, since SMD is under 12.5 cm",
+        "Mask difficulty alone",
+        "No useful information",
+        "Increased risk of difficult laryngoscopy",
         "Easy laryngoscopy"
       ],
       "answer": [
@@ -2294,12 +2294,12 @@
       "id": "AIR-095",
       "set": 1,
       "type": "single",
-      "stem": "A patient's SMD is 13 cm in neutral and 16 cm in full extension. Does the change suggest difficulty?",
+      "stem": "Sternomental distance increases only 3 cm from neutral to full extension. How should this change be interpreted?",
       "options": [
-        "Yes, if the SMD exceeds 20 cm",
-        "Yes; a change under 5 cm suggests difficulty",
-        "No; a 3 cm change is normal",
-        "No; SMD change is not predictive"
+        "Normal if under 20 cm",
+        "A change under about 5 cm suggests limited mobility and greater difficulty",
+        "A 3 cm change is normal",
+        "Change in SMD is not predictive"
       ],
       "answer": [
         1
@@ -2318,7 +2318,7 @@
       "id": "AIR-096",
       "set": 1,
       "type": "single",
-      "stem": "A healthy patient extends his head at the atlantooccipital joint. About how much extension is normal?",
+      "stem": "Approximately how much atlanto-occipital extension is expected in a healthy adult?",
       "options": [
         "Up to 35°",
         "Up to 10°",
@@ -2342,12 +2342,12 @@
       "id": "AIR-097",
       "set": 1,
       "type": "single",
-      "stem": "A patient with rheumatoid arthritis can extend the AO joint only 18°. What does this predict?",
+      "stem": "A patient with rheumatoid arthritis has only 18° of atlanto-occipital extension. What does this predict?",
       "options": [
-        "An easy airway",
-        "Difficult mask ventilation alone",
-        "No change in difficulty",
-        "Difficult laryngoscopy"
+        "Easy airway",
+        "Mask difficulty alone",
+        "No effect",
+        "Increased risk of difficult laryngoscopy"
       ],
       "answer": [
         3
@@ -2366,7 +2366,7 @@
       "id": "AIR-098",
       "set": 1,
       "type": "single",
-      "stem": "By how much does neck flexion/extension decrease from age 16 to 75?",
+      "stem": "From adolescence to older age, approximately how much can cervical flexion-extension decrease?",
       "options": [
         "About 50%",
         "About 75%",
@@ -2390,7 +2390,7 @@
       "id": "AIR-099",
       "set": 1,
       "type": "multi",
-      "stem": "Which conditions reduce atlantooccipital mobility? (Select 2)",
+      "stem": "Which two conditions commonly reduce atlanto-occipital mobility? (Select 2)",
       "options": [
         "Asthma",
         "Hypertension",
@@ -2417,12 +2417,12 @@
       "id": "AIR-100",
       "set": 1,
       "type": "single",
-      "stem": "A patient in a halo fixator has no cervical mobility. Which approaches are effective?",
+      "stem": "A patient in a halo fixator has essentially no cervical motion. Which intubation approaches are most appropriate?",
       "options": [
         "Videolaryngoscopy or flexible endoscopy",
         "Direct laryngoscopy with full extension",
         "Blind nasal intubation under GA",
-        "A Miller blade with neck flexion"
+        "Miller blade with neck flexion"
       ],
       "answer": [
         0
