@@ -6368,7 +6368,7 @@
       "id": "PHA-255",
       "set": 1,
       "type": "single",
-      "stem": "End-tidal sevoflurane approaches roughly 0.3–0.4 age-adjusted MAC as the patient begins responding to commands. Which MAC concept does this approximate?",
+      "stem": "Near emergence, end-tidal sevoflurane falls to roughly 0.3–0.4 age-adjusted MAC and the patient begins responding to commands. Which MAC concept does this transition approximate?",
       "options": [
         "MAC-awake",
         "MAC-BAR",
@@ -6572,7 +6572,7 @@
       "id": "PHA-263",
       "set": 1,
       "type": "single",
-      "stem": "During laryngospasm, firm bilateral pressure is applied at the laryngospasm notch behind the mandibular ramus near the mastoid. Which maneuver is being performed?",
+      "stem": "Complete laryngospasm persists despite jaw thrust and positive pressure. Firm bilateral pressure is applied behind the mandibular ramus near the mastoid while the jaw is displaced. Which maneuver is being used?",
       "options": [
         "Larson maneuver",
         "Sellick maneuver",
@@ -6886,7 +6886,7 @@
       "id": "PHA-275",
       "set": 1,
       "type": "single",
-      "stem": "An older PACU patient is quiet, drowsy, inattentive, and disoriented rather than agitated. Which delirium phenotype can be missed because of this presentation?",
+      "stem": "An older PACU patient is not combative but is newly drowsy, inattentive, disoriented, and withdrawn compared with baseline. Which delirium phenotype is particularly easy to miss in this presentation?",
       "options": [
         "Hypoactive delirium",
         "Hyperactive delirium",
@@ -6910,12 +6910,12 @@
       "id": "PHA-276",
       "set": 1,
       "type": "single",
-      "stem": "A 19-year-old becomes combative and tachycardic during emergence. Which population commonly shows this sympathetic pattern?",
+      "stem": "A 19-year-old becomes combative, tachycardic, and hypertensive while traversing emergence despite adequate oxygenation. Which age group commonly demonstrates this sympathetic emergence pattern?",
       "options": [
         "Children and young adults",
-        "Elderly patients",
-        "Patients on beta-blockers",
-        "Patients under spinal anesthesia"
+        "Older adults",
+        "Patients taking beta-blockers",
+        "Patients recovering from spinal anesthesia"
       ],
       "answer": [
         0
@@ -7006,7 +7006,7 @@
       "id": "PHA-280",
       "set": 1,
       "type": "single",
-      "stem": "Forty-five minutes after anesthetics are discontinued, a patient remains unresponsive with inadequate protective reflexes. Which problem should trigger a structured search for residual drugs, metabolic causes, and neurologic events?",
+      "stem": "Forty-five minutes after anesthetics are discontinued, a patient remains unresponsive with inadequate airway-protective reflexes despite ongoing supportive care. Which syndrome should trigger a structured search for residual drugs, metabolic causes, and neurologic events?",
       "options": [
         "Delayed emergence",
         "Normal emergence",
@@ -7449,12 +7449,12 @@
       "id": "PHA-297",
       "set": 1,
       "type": "single",
-      "stem": "Why should music and nonessential conversation be minimized during emergence?",
+      "stem": "As extubation approaches, unrelated conversation and music continue while the patient's airway reflexes and ventilation are rapidly changing. Why should these distractions be minimized?",
       "options": [
-        "Emergence is a high-risk phase for airway events",
-        "It is the longest phase of anesthesia",
-        "It is when the surgeon is least busy",
-        "It requires little monitoring"
+        "Emergence is a high-risk phase for rapidly evolving airway events",
+        "Emergence is always the longest anesthetic phase",
+        "The surgeon is least busy during emergence",
+        "Emergence requires little physiologic monitoring"
       ],
       "answer": [
         0
@@ -7473,10 +7473,10 @@
       "id": "PHA-298",
       "set": 1,
       "type": "single",
-      "stem": "An unstable patient is being transported urgently to the ICU, and the receiving team needs information before arrival. What is the purpose of a rolling handoff/call?",
+      "stem": "An unstable intubated patient is being transported urgently to the ICU, and vasoactive support may need to be ready on arrival. What is the main purpose of a rolling handoff call during transport?",
       "options": [
-        "Transmit essential report during transport so the receiving team can prepare before arrival",
-        "Replace all face-to-face handoff after arrival",
+        "Give essential information early so the receiving team can prepare before arrival",
+        "Replace the face-to-face handoff after arrival",
         "Delay communication until transport is complete",
         "Provide only the surgeon's report"
       ],
