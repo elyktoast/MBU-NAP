@@ -8809,7 +8809,7 @@
       "id": "PHA-352",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, sustained ETCO2 is present but left breath sounds are absent and airway pressure is increased. Which diagnosis is most likely?",
+      "stem": "After intubation, sustained capnography confirms tracheal ventilation, but breath sounds are absent on the left and peak airway pressure is increased. Which diagnosis is most likely?",
       "options": [
         "Right-mainstem intubation",
         "Esophageal intubation",
@@ -8929,9 +8929,9 @@
       "id": "PHA-357",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 rises abruptly after tourniquet release. What physiologic mechanism best explains this transient change?",
+      "stem": "Immediately after release of a prolonged tourniquet, ETCO2 transiently rises while ventilation is unchanged. Which mechanism best explains the timing?",
       "options": [
-        "Washout of CO2 from the ischemic limb",
+        "Washout of accumulated CO2 from the ischemic limb",
         "Malignant hyperthermia",
         "Pulmonary embolism released from the limb",
         "Esophageal intubation"
@@ -8977,10 +8977,10 @@
       "id": "PHA-359",
       "set": 1,
       "type": "single",
-      "stem": "Urine output abruptly falls to zero and the Foley tubing is kinked. What should be done first?",
+      "stem": "Urine output abruptly falls to zero despite stable hemodynamics; inspection shows a kinked Foley catheter. Which action prevents unnecessary fluid or vasoactive treatment?",
       "options": [
-        "Fix the catheter before treating renal hypoperfusion",
-        "Give a fluid bolus immediately for presumed hypovolemia",
+        "Correct the catheter obstruction first",
+        "Give a fluid bolus for presumed hypovolemia",
         "Start a vasopressor infusion",
         "Give a loop diuretic"
       ],
@@ -9145,12 +9145,12 @@
       "id": "PHA-366",
       "set": 1,
       "type": "single",
-      "stem": "A highly anxious 5-year-old without IV access needs tonsillectomy. Which induction strategy is most appropriate?",
+      "stem": "A highly anxious 5-year-old refuses IV placement before tonsillectomy and has no aspiration-risk indication for RSI. Which induction strategy best fits?",
       "options": [
-        "Sevoflurane mask induction, then IV placement",
-        "IV RSI with cricoid pressure after EMLA",
+        "Sevoflurane mask induction followed by IV placement",
+        "IV RSI with cricoid pressure",
         "Awake fiberoptic intubation with sedation",
-        "Desflurane mask induction, then IV placement"
+        "Desflurane mask induction followed by IV placement"
       ],
       "answer": [
         0
@@ -9241,7 +9241,7 @@
       "id": "PHA-370",
       "set": 1,
       "type": "single",
-      "stem": "A child develops bradycardia after succinylcholine. Which premedication could reduce this risk?",
+      "stem": "A child undergoing RSI develops marked bradycardia after succinylcholine. Which preplanned medication most directly addresses this known pediatric concern?",
       "options": [
         "Atropine",
         "Neostigmine",
@@ -9313,12 +9313,12 @@
       "id": "PHA-373",
       "set": 1,
       "type": "single",
-      "stem": "A patient with an established tracheostomy requires GA. Which induction approach is appropriate?",
+      "stem": "A patient with a mature, functioning tracheostomy already providing airway access requires general anesthesia. Which induction approach can use the established airway directly?",
       "options": [
-        "Inhalation induction via the in situ airway",
-        "Awake fiberoptic intubation through the stoma",
-        "RSI with cricoid pressure",
-        "LMA insertion"
+        "Inhalation induction through the in situ tracheostomy airway",
+        "Awake fiberoptic oral intubation despite the established airway",
+        "RSI with cricoid pressure as the only acceptable approach",
+        "LMA insertion as the primary airway"
       ],
       "answer": [
         0
@@ -9433,12 +9433,12 @@
       "id": "PHA-378",
       "set": 1,
       "type": "single",
-      "stem": "A loud nonessential discussion begins during induction. What should the anesthesia team do?",
+      "stem": "During induction, a loud unrelated discussion begins while the patient's ventilation and hemodynamics are changing rapidly. Which team response best protects situational awareness?",
       "options": [
-        "Ask for quiet and minimize distractions during induction",
-        "Encourage discussion to keep the team engaged",
-        "Proceed and ask for quiet after intubation",
-        "Pause monitoring until it is quiet"
+        "Request quiet and minimize nonessential distractions",
+        "Encourage conversation to keep the team engaged",
+        "Wait until after intubation to address it",
+        "Pause physiologic monitoring until the room is quiet"
       ],
       "answer": [
         0
@@ -9653,7 +9653,7 @@
       "id": "PHA-387",
       "set": 1,
       "type": "single",
-      "stem": "Gastric distention develops during high-flow nasal oxygen. What complication risk increases?",
+      "stem": "During high-flow nasal oxygen use, progressive gastric distention is noted in an aspiration-risk patient. Which competing hazard has increased?",
       "options": [
         "Regurgitation and aspiration",
         "Hypocarbia",
@@ -9749,12 +9749,12 @@
       "id": "PHA-391",
       "set": 1,
       "type": "single",
-      "stem": "Cricoid pressure causes gagging while the patient is awake. What force should be used now, and after loss of consciousness?",
+      "stem": "Cricoid pressure is needed for RSI, but the awake patient gags when excessive force is applied. Which traditional force sequence is appropriate before and after loss of consciousness?",
       "options": [
-        "About 10 N awake, increasing to about 30 N",
-        "About 30 N awake, increasing to about 50 N",
-        "About 50 N awake, staying at 50 N",
-        "About 5 N awake, staying at 5 N"
+        "About 10 N awake, then about 30 N after loss of consciousness",
+        "About 30 N awake, then about 50 N",
+        "About 50 N awake and unconscious",
+        "About 5 N throughout"
       ],
       "answer": [
         0
