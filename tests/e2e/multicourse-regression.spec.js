@@ -97,20 +97,28 @@ test.describe('multi-course foundation', () => {
     const state = await page.evaluate(() => ({
       count: ALL.length,
       uidCount: ALL_BY_UID.size,
-      groups: [...document.querySelectorAll('#sourceChecks > div > div > b')].map(x => x.textContent.trim()),
-      sources: document.querySelectorAll('#sourceChecks label').length,
+      unifiedHeading: document.querySelector('#sourcePickbox h4')?.textContent.trim(),
+      sourceChoices: [...document.querySelectorAll('#sourceChecks input')].map(x => x.value),
+      sourceText: document.querySelector('#sourceChecks')?.textContent.trim(),
       topics: document.querySelectorAll('#topicChecks input').length,
       jpg: ALL.some(q => q.img && q.img.kind === 'direct' && String(q.img.url).endsWith('.jpg')),
       svg: ALL.some(q => q.img && q.img.kind === 'direct' && String(q.img.url).endsWith('.svg'))
     }));
     expect(state.count).toBe(3500);
     expect(state.uidCount).toBe(3500);
-    expect(state.groups).toEqual(['Basic Principles Exam 1']);
-    expect(state.sources).toBe(7);
+    expect(state.unifiedHeading).toBe('Basic Principles Exam 1');
+    expect(state.sourceChoices).toEqual(['__all__']);
+    expect(state.sourceText).toContain('All Basic Principles Exam 1 questions');
+    expect(state.sourceText).not.toContain('Basic Airway Assessment & Management');
     expect(state.topics).toBeGreaterThan(7);
     expect(state.jpg).toBeTruthy();
     expect(state.svg).toBeTruthy();
     await expect(page.locator('#mbu-bank-picker option')).toHaveCount(1);
+    await page.locator('#sourceChecks input[value="__all__"]').check();
+    await page.locator('#count').selectOption('10');
+    await page.getByRole('button', { name: 'Start Quiz' }).click();
+    await expect(page.locator('#quiz')).toBeVisible();
+    expect(await page.evaluate(() => session.length)).toBe(10);
   });
 
 
