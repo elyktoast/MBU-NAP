@@ -8563,12 +8563,12 @@
       "id": "SED-351",
       "set": 1,
       "type": "single",
-      "stem": "Why is it incorrect to think MAC safety is only about ventilation?",
+      "stem": "A MAC safety plan focuses only on apnea and obstruction. Which additional hazards still require explicit preparation?",
       "options": [
-        "Respiratory problems lead, but other complications need planning",
-        "Respiratory problems are the meaningful MAC risk",
-        "Complications arise mainly at the moment of conversion to GA",
-        "Fire and LAST outnumber respiratory events in MAC claims"
+        "Aspiration, laryngospasm, hemodynamic instability, LAST, and fire where relevant",
+        "Only postoperative nausea",
+        "Only awareness",
+        "None if capnography is used"
       ],
       "answer": [
         0
@@ -8587,12 +8587,12 @@
       "id": "SED-352",
       "set": 1,
       "type": "single",
-      "stem": "A MAC patient develops partial obstruction with snoring. What is the best first intervention?",
+      "stem": "During MAC, snoring and paradoxical chest movement develop while a capnogram is still present. What is the best first intervention?",
       "options": [
-        "Jaw thrust or reposition the airway",
-        "Increase sedation to relax the airway",
-        "Give IV lidocaine to relax the airway",
-        "Give IV lidocaine"
+        "Reposition the head and perform a jaw thrust to relieve upper-airway obstruction",
+        "Deepen sedation",
+        "Give IV lidocaine",
+        "Wait for SpO2 to fall"
       ],
       "answer": [
         0
@@ -8611,12 +8611,12 @@
       "id": "SED-353",
       "set": 1,
       "type": "single",
-      "stem": "After propofol, the capnogram disappears and airway maneuvers fail. What is the next step?",
+      "stem": "After propofol, the capnogram disappears and basic airway maneuvers do not restore ventilation. What is the next priority?",
       "options": [
-        "Bag-mask ventilate and prepare for airway instrumentation",
-        "Wait briefly for propofol to redistribute and breathing",
-        "Give flumazenil and continue jaw thrust",
-        "Increase nasal cannula flow and reassess"
+        "Provide positive-pressure ventilation and escalate to an airway adjunct/advanced airway as needed",
+        "Increase nasal oxygen and wait",
+        "Give flumazenil",
+        "Continue the procedure until spontaneous breathing returns"
       ],
       "answer": [
         0
@@ -8635,12 +8635,12 @@
       "id": "SED-354",
       "set": 1,
       "type": "single",
-      "stem": "A patient with severe cardiomyopathy becomes hypotensive during propofol MAC. What is the most likely mechanism?",
+      "stem": "A patient with severe cardiomyopathy becomes hypotensive during propofol MAC. Which explanation is most likely?",
       "options": [
-        "Anesthetic drug effects combined with underlying heart disease",
-        "Supplemental oxygen during sedation",
-        "Supine positioning compressing the vena cava in an obese patient",
-        "Procedural anxiety before the incision"
+        "Propofol-related vasodilation/myocardial depression is poorly tolerated because cardiac reserve is limited",
+        "Supplemental oxygen causes systemic vasodilation severe enough to explain the event",
+        "Cardiomyopathy protects against propofol hypotension",
+        "The finding proves local anesthetic toxicity"
       ],
       "answer": [
         0
@@ -8659,12 +8659,12 @@
       "id": "SED-355",
       "set": 1,
       "type": "single",
-      "stem": "Which complication is especially associated with head-and-neck MAC using open oxygen and cautery?",
+      "stem": "Which complication is particularly associated with head-and-neck MAC when open oxygen is used near electrocautery?",
       "options": [
         "Surgical fire",
-        "LAST",
-        "POVL",
-        "Emergence delirium"
+        "Local anesthetic systemic toxicity",
+        "Postoperative visual loss",
+        "Malignant hyperthermia"
       ],
       "answer": [
         0
@@ -8683,12 +8683,12 @@
       "id": "SED-356",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives IV lidocaine plus a large field block. Which complication risk increases?",
+      "stem": "A patient receives IV lidocaine plus a large local field block. What should be tracked most carefully?",
       "options": [
-        "Local anesthetic systemic toxicity",
-        "Propofol infusion syndrome from the sedation",
-        "Fire risk",
-        "Hypothermia"
+        "The cumulative local-anesthetic dose and signs of systemic toxicity",
+        "Only the surgeon's infiltrated dose",
+        "Only the IV lidocaine dose",
+        "Propofol concentration"
       ],
       "answer": [
         0
@@ -8707,12 +8707,12 @@
       "id": "SED-357",
       "set": 1,
       "type": "single",
-      "stem": "Which anesthetic technique qualifies as true TIVA?",
+      "stem": "Which anesthetic is true total intravenous anesthesia (TIVA)?",
       "options": [
-        "Propofol and remifentanil with no inhaled agent",
-        "Propofol with 0.5 MAC sevoflurane",
+        "Propofol plus remifentanil with no volatile anesthetic",
+        "Propofol plus 0.5 MAC sevoflurane",
         "Sevoflurane alone",
-        "All three, since each includes at least one IV drug during the case"
+        "Nitrous oxide plus propofol"
       ],
       "answer": [
         0
@@ -8731,14 +8731,14 @@
       "id": "SED-358",
       "set": 1,
       "type": "multi",
-      "stem": "Which THREE factors favor TIVA for a patient with MH susceptibility, severe PONV history, and planned neuromonitoring? (Select 3)",
+      "stem": "Which THREE features favor propofol-based TIVA in a patient with malignant-hyperthermia susceptibility, severe PONV history, and planned evoked-potential monitoring? (Select 3)",
       "options": [
-        "Reduced PONV compared with volatiles",
-        "Malignant hyperthermia susceptibility",
-        "Easier SSEP and MEP monitoring",
-        "Measurement of end-tidal anesthetic concentration",
+        "Avoidance of volatile MH triggers",
+        "Lower PONV risk than volatile-based anesthesia",
+        "Less interference with evoked-potential monitoring",
+        "Ability to measure end-tidal propofol concentration",
         "No need for IV access",
-        "Long-lasting postoperative analgesia"
+        "Long postoperative analgesia from propofol"
       ],
       "answer": [
         0,
@@ -8759,12 +8759,12 @@
       "id": "SED-359",
       "set": 1,
       "type": "single",
-      "stem": "What key monitoring disadvantage distinguishes TIVA from volatile anesthesia?",
+      "stem": "What delivery-monitoring limitation is unique to TIVA compared with volatile anesthesia?",
       "options": [
-        "No end-tidal anesthetic concentration to confirm delivery",
-        "No capnography is possible during TIVA with an airway",
-        "No pulse oximetry during TIVA",
-        "No ECG during TIVA"
+        "There is no routine end-tidal anesthetic concentration confirming that the hypnotic actually reached the patient",
+        "Capnography cannot be used",
+        "Pulse oximetry becomes unreliable",
+        "ECG monitoring is unavailable"
       ],
       "answer": [
         0
@@ -8783,12 +8783,12 @@
       "id": "SED-360",
       "set": 1,
       "type": "single",
-      "stem": "Why is processed EEG particularly useful when a TIVA patient is fully paralyzed?",
+      "stem": "Why can processed EEG be especially useful during fully paralyzed TIVA?",
       "options": [
-        "Movement cannot signal inadequate hypnosis",
-        "It replaces the need for ASA monitors",
-        "It measures the depth of neuromuscular blockade",
-        "It confirms propofol plasma levels"
+        "Neuromuscular blockade removes movement as a clinical sign of inadequate hypnosis",
+        "Processed EEG measures neuromuscular blockade",
+        "It confirms plasma propofol concentration",
+        "It replaces standard physiologic monitoring"
       ],
       "answer": [
         0
@@ -8807,12 +8807,12 @@
       "id": "SED-361",
       "set": 1,
       "type": "single",
-      "stem": "Which drug combination is most commonly used for propofol-based TIVA?",
+      "stem": "Which pairing provides a common balanced TIVA technique?",
       "options": [
-        "Propofol for hypnosis with remifentanil for analgesia",
-        "Midazolam for hypnosis with ketamine for analgesia",
-        "Dexmedetomidine alone at high dose",
-        "Fospropofol with fentanyl boluses"
+        "Propofol for hypnosis plus remifentanil for rapidly titratable analgesia",
+        "Midazolam for analgesia plus ketamine for paralysis",
+        "Dexmedetomidine alone for surgical anesthesia in all cases",
+        "Fospropofol plus no analgesic for painful surgery"
       ],
       "answer": [
         0
@@ -8831,12 +8831,12 @@
       "id": "SED-362",
       "set": 1,
       "type": "single",
-      "stem": "Why must postoperative analgesia be established before stopping propofol-remifentanil TIVA?",
+      "stem": "Why should longer-acting postoperative analgesia be established before stopping propofol-remifentanil TIVA?",
       "options": [
-        "Both drugs leave little residual analgesia",
-        "Propofol causes hyperalgesia that blocks later opioids",
-        "Remifentanil lasts for hours",
-        "Propofol blocks other analgesics"
+        "Remifentanil effect dissipates rapidly and propofol provides little intrinsic analgesia",
+        "Propofol blocks all postoperative opioids",
+        "Remifentanil lasts for many hours",
+        "Propofol produces prolonged surgical analgesia"
       ],
       "answer": [
         0
@@ -8855,12 +8855,12 @@
       "id": "SED-363",
       "set": 1,
       "type": "single",
-      "stem": "The propofol pump alarms for occlusion, BIS rises, and HR increases. What is the most likely cause?",
+      "stem": "During TIVA, the propofol pump alarms for occlusion while processed EEG values and HR rise. What is the most likely problem?",
       "options": [
-        "Interrupted propofol delivery causing light anesthesia",
-        "Remifentanil-induced bradycardia",
-        "Hypothermia from long case",
-        "Hypercarbia from ventilator settings after positioning"
+        "Interrupted hypnotic delivery with increasing risk of awareness",
+        "Excessive propofol delivery",
+        "Remifentanil accumulation",
+        "Neuromuscular blockade is too deep"
       ],
       "answer": [
         0
@@ -8879,12 +8879,12 @@
       "id": "SED-364",
       "set": 1,
       "type": "single",
-      "stem": "What IV setup best reduces delivery failure during prone TIVA with tucked arms?",
+      "stem": "During prone TIVA with tucked arms, which IV setup best reduces the risk of unnoticed hypnotic-delivery failure?",
       "options": [
-        "A dedicated, visible line with minimal dead space",
-        "A shared carrier line running blood products",
-        "A long extension set routed under the drapes",
-        "A hand IV tucked out of sight under the drapes"
+        "A dedicated line whose site/connections remain observable, with minimal dead space",
+        "A hidden hand IV under drapes",
+        "A shared line repeatedly used for boluses and blood products",
+        "The longest extension tubing available"
       ],
       "answer": [
         0
@@ -8903,12 +8903,12 @@
       "id": "SED-365",
       "set": 1,
       "type": "single",
-      "stem": "BIS rises despite a pump that appears to be running normally. What should be checked first?",
+      "stem": "During TIVA, processed EEG values rise despite a pump display showing normal infusion. What should be checked immediately?",
       "options": [
-        "The line for disconnection, occlusion, or infiltration",
-        "Nothing yet, since the pump shows no occlusion alarm",
-        "Switching propofol to hand-timed boluses",
-        "Running propofol by gravity"
+        "The entire IV path for infiltration, disconnection, occlusion, or unintended flow diversion",
+        "Only the pump screen",
+        "The vaporizer concentration",
+        "Whether the patient is paralyzed"
       ],
       "answer": [
         0
@@ -8927,12 +8927,12 @@
       "id": "SED-366",
       "set": 1,
       "type": "single",
-      "stem": "During TIVA, surgical stimulation increases sharply. How should the infusions be adjusted?",
+      "stem": "During TIVA, surgical stimulation suddenly increases. How should drug delivery be adjusted?",
       "options": [
-        "Titrate to hemodynamics, stimulation, and signs of depth",
-        "Increase only the remifentanil and leave propofol fixed",
-        "Adjust to the BIS value alone",
-        "Adjust to heart rate changes alone"
+        "Titrate hypnotic and analgesic components to the patient's depth, hemodynamics, and changing stimulus rather than using a fixed response",
+        "Increase propofol based only on heart rate",
+        "Adjust only to a processed-EEG number",
+        "Increase remifentanil regardless of blood pressure or ventilation"
       ],
       "answer": [
         0
@@ -8951,11 +8951,11 @@
       "id": "SED-367",
       "set": 1,
       "type": "single",
-      "stem": "SSEP amplitude falls markedly while MEPs remain unchanged. Which pathway is most likely affected?",
+      "stem": "During spine surgery, SSEP amplitude decreases while MEPs remain unchanged. Which neural system is being specifically sampled by the abnormal modality?",
       "options": [
         "Sensory pathways",
         "Motor pathways",
-        "Both sensory and motor pathways equally",
+        "Neuromuscular junction only",
         "Autonomic pathways"
       ],
       "answer": [
@@ -8975,12 +8975,12 @@
       "id": "SED-368",
       "set": 1,
       "type": "single",
-      "stem": "MEPs disappear after rocuronium and increased sevoflurane. What best explains the signal loss?",
+      "stem": "MEPs disappear immediately after rocuronium while SSEPs remain unchanged. What best explains the pattern?",
       "options": [
-        "MEPs assess motor pathways and are sensitive to volatiles and NMB",
-        "MEPs assess sensory pathways and are unaffected by drugs",
-        "MEPs are affected by opioids and remifentanil but not by volatile agents",
-        "MEPs are unaffected by volatiles"
+        "Neuromuscular blockade suppresses muscle-recorded motor responses while sensory potentials can remain measurable",
+        "Rocuronium selectively injures motor tracts",
+        "SSEPs require neuromuscular transmission",
+        "The pattern proves spinal-cord ischemia"
       ],
       "answer": [
         0
@@ -8999,12 +8999,12 @@
       "id": "SED-369",
       "set": 1,
       "type": "single",
-      "stem": "How do volatile agents typically affect SSEP amplitude and latency?",
+      "stem": "Increasing volatile anesthetic concentration during SSEP monitoring typically causes which change?",
       "options": [
-        "Amplitude decreases and latency increases",
-        "Amplitude increases and latency decreases",
-        "No change in amplitude or latency",
-        "Latency decreases with no amplitude change"
+        "Decreased amplitude and increased latency",
+        "Increased amplitude and decreased latency",
+        "No change",
+        "Increased amplitude with unchanged latency"
       ],
       "answer": [
         0
@@ -9023,12 +9023,12 @@
       "id": "SED-370",
       "set": 1,
       "type": "single",
-      "stem": "If a volatile must briefly supplement TIVA during MEP monitoring, approximately what concentration may still preserve signals?",
+      "stem": "If a volatile anesthetic must supplement an evoked-potential anesthetic, what general strategy best preserves signals?",
       "options": [
-        "About 0.25 MAC",
-        "About 1.0 MAC",
-        "About 0.75 MAC",
-        "Any concentration with BIS under 40"
+        "Use the lowest stable concentration that permits adequate signals rather than making large or high-concentration changes",
+        "Use at least 1 MAC",
+        "Frequently vary concentration to test the monitor",
+        "Add deep neuromuscular blockade to improve MEPs"
       ],
       "answer": [
         0
@@ -9047,12 +9047,12 @@
       "id": "SED-371",
       "set": 1,
       "type": "single",
-      "stem": "The surgeon requests deeper paralysis during MEP monitoring. What is the best response?",
+      "stem": "The surgeon requests deeper paralysis during muscle-recorded MEP monitoring. What is the main anesthetic concern?",
       "options": [
-        "Avoid or carefully titrate NMB after intubation",
-        "Give full-dose paralysis to aid surgery",
-        "Switch to volatile anesthesia to relax muscles",
-        "Stop MEP monitoring to allow paralysis"
+        "Additional neuromuscular blockade can reduce or abolish MEP responses, so its use must be coordinated and carefully limited",
+        "Paralysis improves MEP amplitude",
+        "SSEPs and MEPs both require complete paralysis",
+        "Neuromuscular blockade affects only sensory pathways"
       ],
       "answer": [
         0
@@ -9071,12 +9071,12 @@
       "id": "SED-372",
       "set": 1,
       "type": "single",
-      "stem": "SSEPs deteriorate immediately after a rapid anesthetic concentration change. What should be considered before assuming neurologic injury?",
+      "stem": "SSEPs deteriorate immediately after a large abrupt anesthetic change. What should be considered before concluding neurologic injury occurred?",
       "options": [
-        "Abrupt anesthetic changes can mimic neurologic injury",
-        "The patient definitely has spinal cord injury",
-        "SSEPs are unaffected by propofol",
-        "The monitoring equipment is broken and needs replacing"
+        "Anesthetic changes themselves can alter evoked potentials and mimic a neurologic event",
+        "SSEPs are unaffected by anesthesia",
+        "The signal necessarily proves cord ischemia",
+        "Only equipment failure can cause abrupt signal change"
       ],
       "answer": [
         0
@@ -9095,14 +9095,14 @@
       "id": "SED-373",
       "set": 1,
       "type": "multi",
-      "stem": "Which FOUR factors should be kept stable when neuromonitoring signals deteriorate? (Select 4)",
+      "stem": "Which FOUR physiologic/anesthetic factors should be checked when evoked-potential signals deteriorate? (Select 4)",
       "options": [
-        "Adequate blood pressure",
-        "Hemoglobin and oxygenation",
+        "Blood pressure/perfusion",
+        "Oxygenation and hemoglobin",
         "Temperature",
-        "Consistent anesthetic depth",
-        "High volatile concentration",
-        "Deep neuromuscular blockade"
+        "Recent anesthetic-depth/concentration changes",
+        "High volatile concentration as a treatment",
+        "Additional neuromuscular blockade as a universal treatment"
       ],
       "answer": [
         0,
@@ -9124,12 +9124,12 @@
       "id": "SED-374",
       "set": 1,
       "type": "single",
-      "stem": "Why is propofol-opioid TIVA preferred over volatile anesthesia when both SSEPs and MEPs are needed?",
+      "stem": "Why is propofol-opioid TIVA commonly favored when both SSEPs and MEPs are important?",
       "options": [
-        "It minimizes anesthetic interference with evoked potentials",
-        "It provides better analgesia than volatile anesthesia does",
-        "It allows deeper paralysis",
-        "It shortens surgery"
+        "It generally interferes less with evoked potentials than clinically significant volatile concentrations",
+        "It permits unlimited neuromuscular blockade",
+        "Propofol increases MEP amplitude above awake baseline",
+        "It eliminates the need to control blood pressure"
       ],
       "answer": [
         0
@@ -9148,12 +9148,12 @@
       "id": "SED-375",
       "set": 1,
       "type": "single",
-      "stem": "BIS is 15 with burst suppression and hypotension during TIVA. What does this indicate?",
+      "stem": "During TIVA, processed EEG shows marked burst suppression with hypotension. What should be considered first?",
       "options": [
-        "Excessive depth; reduce the hypnotic",
-        "Ideal surgical depth",
-        "Light anesthesia with awareness risk",
-        "An artifact from electrocautery near the sensor"
+        "Excessive hypnotic effect; reduce anesthetic depth while treating the hemodynamic consequence as appropriate",
+        "Awareness; increase propofol",
+        "Insufficient neuromuscular blockade",
+        "Normal depth requiring no reassessment"
       ],
       "answer": [
         0
@@ -9172,12 +9172,12 @@
       "id": "SED-376",
       "set": 1,
       "type": "single",
-      "stem": "A calm awake patient has BIS 95 before induction. How should this be interpreted?",
+      "stem": "Before induction, a calm awake patient has a processed-EEG index near 95. How should this be interpreted?",
       "options": [
-        "Normal awake value",
-        "Moderate sedation",
-        "General anesthesia range",
-        "Deep hypnotic state"
+        "Consistent with an awake state",
+        "Typical general-anesthesia range",
+        "Evidence of burst suppression",
+        "Evidence of excessive propofol"
       ],
       "answer": [
         0
@@ -9196,12 +9196,12 @@
       "id": "SED-377",
       "set": 1,
       "type": "single",
-      "stem": "The IV site becomes swollen and cool while BIS rises during TIVA. What is the first action?",
+      "stem": "During TIVA, the IV site becomes swollen and cool while processed-EEG values rise. What is the first priority?",
       "options": [
-        "Check for infiltration and restore reliable IV delivery",
-        "Increase the propofol rate on the same line to compensate",
-        "Switch to inhaled agents immediately",
-        "Give neuromuscular blocker"
+        "Stop relying on that line and restore reliable IV anesthetic delivery",
+        "Increase the propofol rate through the infiltrated line",
+        "Give additional neuromuscular blocker",
+        "Ignore the site because the pump is running"
       ],
       "answer": [
         0
@@ -9222,10 +9222,10 @@
       "type": "single",
       "stem": "When does processed EEG add the most value during TIVA?",
       "options": [
-        "When clinical assessment of depth is limited",
-        "When volatile agents are used at high concentrations",
-        "When the patient is awake",
-        "When neuromuscular blockade is absent"
+        "When clinical signs of hypnotic depth are limited, such as during neuromuscular blockade",
+        "When it is used instead of standard monitoring",
+        "Only when the patient is awake",
+        "Only when volatile concentration is known"
       ],
       "answer": [
         0
@@ -9244,12 +9244,12 @@
       "id": "SED-379",
       "set": 1,
       "type": "single",
-      "stem": "A pump failure goes unnoticed until BIS rises. Which inherent limitation of TIVA contributed?",
+      "stem": "A pump-delivery failure is not recognized until processed-EEG values rise. Which TIVA limitation contributed?",
       "options": [
-        "No end-tidal agent concentration to confirm delivery",
-        "Higher PONV than volatiles",
-        "MH triggering",
-        "Slower emergence than volatiles in most patients"
+        "No routine end-tidal hypnotic concentration independently confirms drug delivery",
+        "TIVA always causes more PONV",
+        "TIVA triggers malignant hyperthermia",
+        "IV anesthetics cannot be delivered by pumps"
       ],
       "answer": [
         0
@@ -9268,14 +9268,14 @@
       "id": "SED-380",
       "set": 1,
       "type": "multi",
-      "stem": "Which THREE practices are essential for safe TIVA when the arms are tucked? (Select 3)",
+      "stem": "Which THREE practices reduce awareness risk during TIVA with tucked arms? (Select 3)",
       "options": [
-        "Accurate pump programming",
-        "A visible, dedicated IV line",
-        "Checks for disconnection or infiltration",
-        "Relying on end-tidal agent monitoring",
-        "Using long extension tubing under drapes",
-        "Hiding lines beneath the drapes"
+        "Verify accurate pump programming",
+        "Maintain an observable/reliable dedicated IV pathway",
+        "Repeatedly check for infiltration, disconnection, and occlusion",
+        "Rely on an end-tidal propofol concentration",
+        "Hide all tubing beneath drapes",
+        "Use maximal line dead space"
       ],
       "answer": [
         0,
@@ -9296,12 +9296,12 @@
       "id": "SED-381",
       "set": 1,
       "type": "single",
-      "stem": "A patient with strong family history of malignant hyperthermia requires GA. Which maintenance technique best avoids triggers?",
+      "stem": "A patient susceptible to malignant hyperthermia requires general anesthesia. Which maintenance approach avoids volatile triggering agents?",
       "options": [
-        "TIVA without inhaled agents",
-        "Sevoflurane after flushing the machine",
-        "Desflurane with dantrolene on hand",
-        "MAC with nitrous oxide"
+        "Trigger-free TIVA",
+        "Sevoflurane maintenance",
+        "Desflurane maintenance",
+        "Isoflurane maintenance"
       ],
       "answer": [
         0
@@ -9322,10 +9322,10 @@
       "type": "single",
       "stem": "MEPs disappear after rocuronium while SSEPs remain stable. What is the most likely explanation?",
       "options": [
-        "Neuromuscular blockade abolished the muscle-recorded MEPs",
-        "Spinal cord ischemia affecting sensory pathways",
-        "Volatile agents depressed the MEPs after the surgeon's request",
-        "Hypothermia depressed both signals"
+        "Neuromuscular blockade eliminated the muscle-recorded motor response",
+        "Selective sensory-pathway ischemia",
+        "Propofol selectively abolished SSEPs",
+        "Hypothermia selectively increased motor blockade"
       ],
       "answer": [
         0
@@ -9344,12 +9344,12 @@
       "id": "SED-383",
       "set": 1,
       "type": "single",
-      "stem": "MEP signals suddenly decrease during spine surgery. What should be done first?",
+      "stem": "MEP signals suddenly fall during spine surgery. What is the best response?",
       "options": [
-        "Investigate surgical, anesthetic, physiologic, and technical causes",
-        "Increase the volatile agent",
-        "Give more neuromuscular blocker",
-        "Observe until the case ends and recheck the signals once the patient is in PACU"
+        "Rapidly evaluate surgical, anesthetic, physiologic, and technical causes in a coordinated fashion",
+        "Assume surgical injury immediately and ignore anesthetic factors",
+        "Increase volatile anesthetic concentration",
+        "Administer more neuromuscular blocker"
       ],
       "answer": [
         0
@@ -9368,12 +9368,12 @@
       "id": "SED-384",
       "set": 1,
       "type": "single",
-      "stem": "How does propofol-based TIVA affect PONV risk compared with volatile anesthesia?",
+      "stem": "Compared with volatile-based general anesthesia, propofol-based TIVA has what effect on postoperative nausea and vomiting risk?",
       "options": [
-        "TIVA reduces PONV compared with volatile anesthesia",
-        "TIVA increases PONV",
-        "TIVA has the same PONV incidence as volatile-based anesthesia",
-        "TIVA reduces PONV in children but not adults"
+        "It generally reduces PONV risk",
+        "It markedly increases PONV risk",
+        "It has no relationship to PONV",
+        "It prevents all PONV"
       ],
       "answer": [
         0
@@ -9392,12 +9392,12 @@
       "id": "SED-385",
       "set": 1,
       "type": "single",
-      "stem": "BIS falls to 15 during TIVA. What is the best anesthetic adjustment?",
+      "stem": "During TIVA, a very low processed-EEG value is accompanied by burst suppression and hypotension. What is the most appropriate interpretation?",
       "options": [
-        "Reduce hypnotic dose because depth is excessive",
-        "Increase propofol to prevent awareness",
-        "Give neuromuscular blocker",
-        "Increase propofol, since BIS below 20 means awareness"
+        "Hypnotic depth may be excessive and should be reassessed rather than treating the index in isolation",
+        "The patient is definitely aware",
+        "The propofol infusion must be increased",
+        "The finding proves neuromuscular blockade is inadequate"
       ],
       "answer": [
         0
@@ -9416,12 +9416,12 @@
       "id": "SED-386",
       "set": 1,
       "type": "single",
-      "stem": "What does rapid, smooth awakening after well-titrated propofol-remifentanil TIVA demonstrate?",
+      "stem": "A patient awakens rapidly and smoothly after stopping well-titrated propofol-remifentanil TIVA. Which pharmacologic feature contributed?",
       "options": [
-        "It can be smooth and rapid when appropriately titrated",
-        "It is slower than volatile anesthesia",
-        "It requires reversal agents",
-        "It usually causes emergence delirium that requires a benzodiazepine"
+        "Both components can be titrated to allow rapid offset when appropriately dosed",
+        "Propofol has a specific reversal drug",
+        "Remifentanil provides hours of residual analgesia",
+        "TIVA always emerges faster than every volatile anesthetic"
       ],
       "answer": [
         0
@@ -9440,12 +9440,12 @@
       "id": "SED-387",
       "set": 1,
       "type": "single",
-      "stem": "Why is a second IV useful during prolonged TIVA?",
+      "stem": "Why may backup IV access be valuable during prolonged TIVA?",
       "options": [
-        "It provides backup delivery if the primary line fails",
-        "It allows a higher propofol concentration in the primary line",
-        "It is needed for blood draws",
-        "It prevents injection pain"
+        "Failure of the primary infusion line can interrupt hypnosis and delay rescue-drug delivery",
+        "A second IV prevents propofol hypotension",
+        "Propofol requires simultaneous administration through two veins",
+        "It eliminates line dead space"
       ],
       "answer": [
         0
@@ -9464,12 +9464,12 @@
       "id": "SED-388",
       "set": 1,
       "type": "single",
-      "stem": "Why can a large IV-line dead space delay the clinical response to a propofol-rate change?",
+      "stem": "Why can a large IV-line dead space make TIVA titration misleading?",
       "options": [
-        "Large dead space delaying drug delivery",
-        "Too short a carrier line between the pump and the patient",
-        "A dedicated line",
-        "A visible connection"
+        "A pump-rate change may not reach the patient immediately, delaying the clinical effect",
+        "It increases end-tidal propofol concentration",
+        "It prevents infiltration",
+        "It makes drug delivery instantaneous"
       ],
       "answer": [
         0
@@ -9488,14 +9488,14 @@
       "id": "SED-389",
       "set": 1,
       "type": "multi",
-      "stem": "Which TWO statements correctly describe SSEP and MEP monitoring? (Select 2)",
+      "stem": "Which TWO statements correctly distinguish SSEP and MEP monitoring? (Select 2)",
       "options": [
-        "SSEP assesses sensory pathways",
-        "MEP assesses motor pathways",
-        "Propofol abolishes SSEP signals at sedative doses",
-        "MEP is unaffected by NMB",
-        "SSEP latency decreases with volatiles",
-        "MEP works best with deep volatile anesthesia"
+        "SSEPs evaluate sensory pathway conduction",
+        "MEPs evaluate motor pathway conduction",
+        "MEPs are unaffected by neuromuscular blockade",
+        "Volatile anesthetics improve both modalities",
+        "SSEPs require intact neuromuscular transmission",
+        "MEPs are purely sensory"
       ],
       "answer": [
         0,
@@ -9515,12 +9515,12 @@
       "id": "SED-390",
       "set": 1,
       "type": "single",
-      "stem": "Which anesthetic plan best preserves MEP signals during spine surgery?",
+      "stem": "Which anesthetic plan generally best preserves muscle-recorded MEPs during spine surgery?",
       "options": [
-        "Propofol-opioid TIVA with minimal NMB",
-        "High-dose volatile with NMB",
-        "Nitrous oxide with deep paralysis",
-        "Sevoflurane at 1.5 MAC"
+        "Propofol-opioid TIVA with minimal or carefully managed neuromuscular blockade",
+        "High-dose volatile anesthesia with profound paralysis",
+        "1.5 MAC sevoflurane plus continuous rocuronium",
+        "Nitrous oxide with deep paralysis"
       ],
       "answer": [
         0
@@ -9539,12 +9539,12 @@
       "id": "SED-391",
       "set": 1,
       "type": "single",
-      "stem": "Frequent changes in propofol rate occur during neuromonitoring. Which principle is being violated?",
+      "stem": "Why are frequent large propofol-rate changes undesirable during critical neuromonitoring periods?",
       "options": [
-        "Keep anesthetic concentrations stable",
-        "Use the highest possible concentration",
-        "Change depth frequently",
-        "Avoid processed EEG"
+        "Changing anesthetic depth can alter signals and make neurologic interpretation more difficult",
+        "Propofol has no effect on evoked potentials",
+        "Rate changes improve signal reproducibility",
+        "Only opioids influence evoked potentials"
       ],
       "answer": [
         0
@@ -9563,12 +9563,12 @@
       "id": "SED-392",
       "set": 1,
       "type": "single",
-      "stem": "Why is propofol preferred as the hypnotic during spinal-cord tumor surgery with evoked-potential monitoring?",
+      "stem": "Why is propofol commonly chosen as the hypnotic during spinal-cord tumor surgery with evoked-potential monitoring?",
       "options": [
-        "It interferes minimally with evoked potentials",
-        "It provides long-lasting analgesia after stopping",
-        "It prevents hypotension",
-        "It is reversible with naloxone"
+        "Propofol-based TIVA generally preserves evoked potentials better than significant volatile concentrations",
+        "Propofol provides prolonged postoperative analgesia",
+        "Propofol guarantees stable blood pressure",
+        "Propofol is reversed with naloxone"
       ],
       "answer": [
         0
@@ -9587,12 +9587,12 @@
       "id": "SED-393",
       "set": 1,
       "type": "single",
-      "stem": "Stable vitals are present, but BIS is 85 during TIVA. What does this suggest?",
+      "stem": "During paralyzed TIVA, hemodynamics are stable but processed-EEG values abruptly rise into an awake-appearing range. What is the best response?",
       "options": [
-        "Possible light anesthesia and awareness risk",
-        "Excessively deep anesthesia with hemodynamic depression",
-        "Neuromuscular blockade is too deep",
-        "Hypothermia"
+        "Assess for inadequate hypnotic delivery, artifact, and clinical context rather than assuming stable vitals exclude awareness risk",
+        "Ignore the value because blood pressure is stable",
+        "Give additional neuromuscular blocker",
+        "Reduce propofol immediately"
       ],
       "answer": [
         0
@@ -9611,14 +9611,14 @@
       "id": "SED-394",
       "set": 1,
       "type": "multi",
-      "stem": "Which TWO reasons favor TIVA for brain tumor surgery? (Select 2)",
+      "stem": "Which TWO features may favor propofol-based TIVA during brain or spine surgery? (Select 2)",
       "options": [
-        "Easier SSEP and MEP monitoring",
-        "Reduced PONV",
-        "Deeper volatile anesthesia during monitoring",
-        "Increased volatile effect on MEPs",
-        "No need for BP monitoring",
-        "Long-lasting postoperative analgesia"
+        "Compatibility with evoked-potential monitoring",
+        "Reduced PONV risk",
+        "Ability to use deeper volatile anesthesia",
+        "Elimination of hemodynamic monitoring",
+        "Long-lasting analgesia from propofol",
+        "Guaranteed absence of awareness"
       ],
       "answer": [
         0,
@@ -9638,12 +9638,12 @@
       "id": "SED-395",
       "set": 1,
       "type": "single",
-      "stem": "BIS and HR rise abruptly after an IV-line change during TIVA. What should be checked first?",
+      "stem": "During TIVA, processed-EEG values and HR rise immediately after an IV tubing change. What should be checked first?",
       "options": [
-        "Line connection and pump delivery",
-        "Surgical blood loss and volume",
-        "Neuromuscular twitch response at the thumb",
-        "Core temperature trend"
+        "Pump-to-patient continuity, including connections, clamps, patency, and infiltration",
+        "Core temperature",
+        "Neuromuscular twitch response",
+        "Urine output"
       ],
       "answer": [
         0
@@ -9662,12 +9662,12 @@
       "id": "SED-396",
       "set": 1,
       "type": "single",
-      "stem": "Should the vaporizer be running during true TIVA?",
+      "stem": "Which statement defines true TIVA?",
       "options": [
-        "TIVA uses no inhaled anesthetics, so the vaporizer stays off",
-        "TIVA includes nitrous oxide",
-        "TIVA includes low-dose sevoflurane to supplement the propofol",
-        "TIVA uses inhaled agents for maintenance"
+        "General anesthesia maintained without volatile anesthetic agents",
+        "Any anesthetic that includes an IV induction drug",
+        "Propofol plus low-dose sevoflurane",
+        "Nitrous oxide plus IV opioid"
       ],
       "answer": [
         0
@@ -9686,12 +9686,12 @@
       "id": "SED-397",
       "set": 1,
       "type": "single",
-      "stem": "Why is 1 MAC sevoflurane undesirable during SSEP monitoring?",
+      "stem": "Why can 1 MAC sevoflurane be problematic during SSEP monitoring?",
       "options": [
-        "Explain that volatiles reduce SSEP amplitude and increase latency",
-        "Agree, because volatiles improve SSEP signal quality",
-        "Agree, since SSEPs tolerate 1 MAC of volatile without change",
-        "Suggest nitrous oxide to improve signals instead"
+        "Volatile anesthetics can dose-dependently reduce SSEP amplitude and increase latency",
+        "Sevoflurane reliably improves SSEP amplitude",
+        "SSEPs are completely insensitive to anesthetics",
+        "Only neuromuscular blockers affect SSEPs"
       ],
       "answer": [
         0
@@ -9710,12 +9710,12 @@
       "id": "SED-398",
       "set": 1,
       "type": "single",
-      "stem": "Compared with OR anesthesia, what pattern is reported in NORA closed-claims data?",
+      "stem": "Closed-claims analyses have historically identified what concern in non-operating-room anesthesia (NORA)?",
       "options": [
-        "A higher incidence of claims with more catastrophic outcomes",
-        "Fewer claims than the OR but higher payouts per claim on average",
-        "Equal claim rates and severity",
-        "Claims with fewer deaths"
+        "Severe respiratory events and catastrophic outcomes can occur in remote procedural settings, emphasizing OR-equivalent vigilance and rescue capability",
+        "NORA eliminates respiratory risk",
+        "NORA requires less monitoring because procedures are smaller",
+        "Claims prove all NORA care is riskier for every individual patient"
       ],
       "answer": [
         0
@@ -9734,12 +9734,12 @@
       "id": "SED-399",
       "set": 1,
       "type": "single",
-      "stem": "If 61% of NORA claims involve death versus 30% of OR claims, what is the best interpretation?",
+      "stem": "A historical closed-claims dataset reports a greater proportion of death among NORA claims than OR claims. What can appropriately be concluded?",
       "options": [
-        "NORA claims are about twice as likely to involve death",
-        "NORA claims are less likely to involve death",
-        "Death rates are similar in both settings once case mix is considered",
-        "NORA claims rarely involve death"
+        "The claims sample showed greater severity among reported NORA claims, but it does not by itself establish the incidence of death among all NORA anesthetics",
+        "Every NORA anesthetic carries twice the mortality of OR anesthesia",
+        "The data prove location alone causes death",
+        "Claims proportions equal population mortality rates"
       ],
       "answer": [
         0
@@ -9758,12 +9758,12 @@
       "id": "SED-400",
       "set": 1,
       "type": "single",
-      "stem": "If average OR claim payout is $500,000 and NORA payouts average 44% higher, what is the approximate NORA payout?",
+      "stem": "Why should closed-claims payout or mortality percentages be interpreted cautiously when assessing NORA risk?",
       "options": [
-        "About $720,000",
-        "About $544,000",
-        "About $280,000",
-        "About $1,000,000"
+        "Closed claims are a selected medicolegal sample and describe patterns among claims rather than true event incidence across all anesthetics",
+        "Closed claims are randomized trials",
+        "Payout size directly measures physiologic risk",
+        "Claim percentages can be applied directly to every current NORA patient"
       ],
       "answer": [
         0
