@@ -523,10 +523,10 @@
       "type": "single",
       "stem": "After traumatic intubation, an arytenoid is dislocated. Which classification correctly places this cartilage?",
       "options": [
-        "Part of the tracheal rings",
-        "Part of the hyoid bone",
-        "Paired laryngeal cartilage with the corniculate and cuneiform cartilages",
-        "Single laryngeal cartilage with the thyroid and cricoid"
+        "Tracheal cartilage ring",
+        "Hyoid-associated cartilage",
+        "Paired laryngeal cartilage",
+        "Unpaired laryngeal cartilage"
       ],
       "answer": [
         2
@@ -1127,7 +1127,7 @@
       "stem": "A parent asks when postnatal alveolar development is essentially complete enough to approach the adult pattern. Which answer best matches the lecture?",
       "options": [
         "By 6 months",
-        "Around 3 years of age and continuing with growth",
+        "Around 3 years and beyond",
         "At birth",
         "By 36 weeks' gestation"
       ],
@@ -2029,10 +2029,10 @@
       "type": "single",
       "stem": "A thyromental distance of 10 cm should raise concern for which anatomic problem during direct laryngoscopy?",
       "options": [
-        "A caudally positioned larynx that may be difficult to visualize",
-        "A universally easy airway",
-        "A high anterior larynx",
-        "A small mandible"
+        "Caudally positioned larynx",
+        "Universally easy airway",
+        "High anterior larynx",
+        "Small mandible"
       ],
       "answer": [
         0
@@ -3743,10 +3743,10 @@
       "type": "single",
       "stem": "A standard nasal cannula is used at 15 L/min for a prolonged period. Which complication becomes more likely?",
       "options": [
-        "Gastric rupture",
-        "Bronchospasm from low FiO2",
-        "Airway mucosal injury from excessive dry high flow",
-        "Hypercapnia from oxygen toxicity"
+        "Gastric distention",
+        "Bronchospasm",
+        "Dry-airway mucosal injury",
+        "Hypercapnia"
       ],
       "answer": [
         2
@@ -4772,9 +4772,9 @@
       "type": "single",
       "stem": "A pre-induction airway algorithm identifies several major concerns. Which response best follows the algorithm rather than forcing a routine induction?",
       "options": [
-        "Consider an alternative plan such as regional anesthesia or awake intubation",
-        "Proceed with RSI and an SGA backup",
-        "Cancel every such case",
+        "Use an alternative airway/anesthetic plan",
+        "Proceed with routine RSI",
+        "Cancel the case automatically",
         "Use deeper sedation"
       ],
       "answer": [
@@ -6600,10 +6600,10 @@
       "type": "single",
       "stem": "Oxygen is insufflated through the suction port during flexible-scope intubation. Which benefit is most useful during a prolonged attempt?",
       "options": [
-        "Provides the primary vocal-cord block",
-        "Decompresses the stomach",
-        "Supports oxygenation while helping keep the lens clear",
-        "Inflates the ETT cuff"
+        "Provide vocal-cord topicalization",
+        "Decompress the stomach",
+        "Support oxygenation and clear the lens",
+        "Inflate the ETT cuff"
       ],
       "answer": [
         2
@@ -8092,10 +8092,10 @@
       "type": "single",
       "stem": "After extubation, the patient makes strong inspiratory efforts but no air moves because the vocal cords have forcefully closed. Which process best explains this?",
       "options": [
-        "Bronchial smooth-muscle constriction",
+        "Bronchospasm",
         "Tracheomalacia",
         "Voluntary breath holding",
-        "Reflex laryngeal muscle contraction causing laryngospasm"
+        "Reflex laryngospasm"
       ],
       "answer": [
         3
@@ -8140,10 +8140,10 @@
       "type": "single",
       "stem": "Which afferent-efferent pathway most directly mediates laryngospasm?",
       "options": [
-        "Trigeminal to facial pathway",
-        "Superior laryngeal vagal afferents with recurrent-laryngeal motor response",
-        "Glossopharyngeal to hypoglossal pathway",
-        "Phrenic to vagus pathway"
+        "Trigeminal to facial",
+        "SLN afferent to RLN motor response",
+        "Glossopharyngeal to hypoglossal",
+        "Phrenic to vagus"
       ],
       "answer": [
         1
@@ -10117,8 +10117,8 @@
       "stem": "If an SGA is chosen for laparoscopic cholecystectomy, which design feature is most desirable?",
       "options": [
         "No airway device",
-        "Second-generation device with higher seal pressure and gastric drainage",
-        "First-generation device without gastric access",
+        "Second-generation SGA with gastric drainage",
+        "First-generation SGA without gastric drainage",
         "Nasopharyngeal airway"
       ],
       "answer": [
@@ -11488,8 +11488,8 @@
       "type": "single",
       "stem": "A patient with Down syndrome presents for anesthesia. Which paired airway concern is most important to anticipate?",
       "options": [
-        "Upper-airway obstruction plus limited cervical mobility",
-        "Low risk of difficult airway",
+        "Airway obstruction with limited neck mobility",
+        "Low difficult-airway risk",
         "Increased mouth opening",
         "Reduced tongue size"
       ],
