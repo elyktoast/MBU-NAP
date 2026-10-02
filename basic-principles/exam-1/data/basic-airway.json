@@ -9537,15 +9537,15 @@
       "type": "single",
       "stem": "A patient with basilar skull fracture requires airway control. Why should nasotracheal intubation be avoided?",
       "options": [
-        "Nasal topicalization",
-        "Transtracheal block",
-        "Glossopharyngeal block",
-        "SLN block"
+        "Risk of intracranial passage through a skull-base defect",
+        "Nasal vasoconstriction is ineffective",
+        "It prevents use of capnography",
+        "The nasal route always causes aspiration"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "The transtracheal block anesthetizes the cords and trachea.",
+      "explanation": "Basilar skull fracture is a contraindication to nasotracheal intubation because a tube may pass intracranially through a disrupted skull base.",
       "citation": "",
       "topic": "Integrated airway cases",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -9561,15 +9561,15 @@
       "type": "single",
       "stem": "A nasal ETT is advanced with its bevel facing the septum. Which complication is this technique more likely to cause?",
       "options": [
-        "Glossopharyngeal block",
-        "Transtracheal block below the cords",
-        "SLN block",
-        "Nasal topicalization"
+        "Turbinate or septal mucosal trauma and epistaxis",
+        "Laryngospasm from recurrent laryngeal stimulation",
+        "Tracheal cuff rupture",
+        "Esophageal perforation"
       ],
       "answer": [
         0
       ],
-      "explanation": "The glossopharyngeal block anesthetizes the posterior tongue and oropharynx.",
+      "explanation": "The nasal ETT bevel should face away from the septum to reduce mucosal and turbinate trauma and epistaxis.",
       "citation": "",
       "topic": "Integrated airway cases",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -9585,15 +9585,15 @@
       "type": "single",
       "stem": "A patient with anticipated difficult intubation is undergoing awake nasal fiberoptic intubation. Which premedication helps improve visualization by drying secretions?",
       "options": [
-        "Transtracheal block below the cords",
-        "Glossopharyngeal block",
-        "Nasal block",
-        "Superior laryngeal nerve block"
+        "Glycopyrrolate",
+        "Neostigmine",
+        "Ondansetron",
+        "Sugammadex"
       ],
       "answer": [
-        3
+        0
       ],
-      "explanation": "The SLN block covers the supraglottic region including the epiglottis.",
+      "explanation": "An antisialagogue such as glycopyrrolate dries secretions and improves visualization during awake flexible-scope intubation.",
       "citation": "",
       "topic": "Integrated airway cases",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -9633,15 +9633,15 @@
       "type": "single",
       "stem": "During awake airway topicalization, total lidocaine from all routes approaches the calculated maximum. What is the safest action?",
       "options": [
-        "Etomidate",
-        "Dexmedetomidine",
-        "Propofol bolus",
-        "Succinylcholine"
+        "Stop adding lidocaine and use non-local-anesthetic adjuncts as needed",
+        "Continue because topical lidocaine has no systemic maximum",
+        "Add benzocaine without considering cumulative toxicity",
+        "Double the remaining dose because airway absorption is negligible"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Dexmedetomidine provides sedation with minimal respiratory depression.",
+      "explanation": "All lidocaine routes contribute to the cumulative dose; approaching the maximum should prompt stopping further lidocaine and avoiding local-anesthetic systemic toxicity.",
       "citation": "",
       "topic": "Integrated airway cases",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -9657,15 +9657,15 @@
       "type": "single",
       "stem": "A patient receives topical benzocaine and develops cyanosis with unexpectedly preserved PaO2. Which complication is most likely?",
       "options": [
-        "Glycopyrrolate",
-        "Ondansetron before topicalization",
-        "Famotidine",
-        "Neostigmine"
+        "Methemoglobinemia",
+        "Malignant hyperthermia",
+        "Local-anesthetic systemic toxicity with seizures",
+        "Bronchospasm"
       ],
       "answer": [
         0
       ],
-      "explanation": "Antisialagogues like glycopyrrolate dry secretions.",
+      "explanation": "Benzocaine can cause methemoglobinemia, producing cyanosis despite an adequate PaO2.",
       "citation": "",
       "topic": "Integrated airway cases",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -9681,15 +9681,15 @@
       "type": "single",
       "stem": "A glossopharyngeal block is planned to suppress gagging during awake intubation. Which sensory territory is the primary target?",
       "options": [
-        "1 minute",
-        "45 minutes",
-        "2 hours",
-        "10–20 minutes"
+        "Posterior one-third of the tongue and oropharynx",
+        "Trachea below the vocal cords",
+        "Anterior two-thirds of the tongue",
+        "Nasal mucosa"
       ],
       "answer": [
-        3
+        0
       ],
-      "explanation": "Nebulization requires 10–20 minutes.",
+      "explanation": "Glossopharyngeal blockade anesthetizes the posterior tongue and oropharynx and helps suppress gagging.",
       "citation": "",
       "topic": "Integrated airway cases",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -9705,15 +9705,15 @@
       "type": "single",
       "stem": "During a glossopharyngeal block, blood is aspirated before injection. What should be done next?",
       "options": [
-        "Bronchospasm",
-        "Esophageal intubation",
-        "Methemoglobinemia",
-        "Laryngospasm"
+        "Do not inject; reposition away from the vessel and re-aspirate",
+        "Inject slowly because blood confirms the target",
+        "Advance deeper until air is aspirated",
+        "Convert the injection to an intravascular test dose"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "Benzocaine can cause methemoglobinemia.",
+      "explanation": "Blood aspiration indicates vascular placement; injection should be withheld and the needle repositioned before re-aspiration.",
       "citation": "",
       "topic": "Integrated airway cases",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -9729,15 +9729,15 @@
       "type": "single",
       "stem": "After bilateral superior laryngeal blocks, which airway region should have reduced sensation?",
       "options": [
-        "Switch to the glossopharyngeal block",
-        "Withdraw because the needle is in the pharynx",
-        "Inject, because air confirms the correct position",
-        "Advance further through the membrane"
+        "Supraglottic larynx above the vocal cords",
+        "Trachea below the vocal cords",
+        "Anterior tongue",
+        "Nasal septum"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Air means too deep (pharynx); withdraw and reposition.",
+      "explanation": "The internal branch of the superior laryngeal nerve supplies sensation to the supraglottic larynx.",
       "citation": "",
       "topic": "Integrated airway cases",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -9753,15 +9753,15 @@
       "type": "single",
       "stem": "During transtracheal injection, the patient coughs vigorously. Why is this response desirable?",
       "options": [
-        "Reposition; blood means you are not in the trachea",
-        "Inject anyway at a slower rate to limit toxicity",
-        "Advance the needle deeper",
-        "Inject during expiration"
+        "Coughing disperses local anesthetic over the vocal cords and tracheal mucosa",
+        "Coughing confirms glossopharyngeal blockade",
+        "It prevents systemic lidocaine absorption",
+        "It proves the patient is deeply anesthetized"
       ],
       "answer": [
         0
       ],
-      "explanation": "Air, not blood, confirms tracheal placement.",
+      "explanation": "Transtracheal lidocaine is injected during inspiration; the resulting cough helps spread local anesthetic over the cords and trachea.",
       "citation": "",
       "topic": "Integrated airway cases",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -9777,15 +9777,15 @@
       "type": "single",
       "stem": "A patient undergoing awake intubation still has intact sensation below the vocal cords despite good oropharyngeal and supraglottic anesthesia. Which block is missing?",
       "options": [
-        "Lidocaine abolished the cough reflex before injection",
-        "The block worked perfectly and no cough is expected",
-        "The patient had too much sedation",
-        "Injection was not during inspiration or not in the trachea"
+        "Transtracheal block",
+        "Glossopharyngeal block",
+        "Superior laryngeal nerve block",
+        "Lingual nerve block"
       ],
       "answer": [
-        3
+        0
       ],
-      "explanation": "Coughing after inspiratory injection spreads anesthetic; absence suggests poor placement or timing.",
+      "explanation": "A transtracheal block anesthetizes the recurrent-laryngeal sensory distribution at and below the vocal cords.",
       "citation": "",
       "topic": "Integrated airway cases",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -9801,15 +9801,15 @@
       "type": "single",
       "stem": "A patient with difficult laryngoscopy has successful mask ventilation. Which principle should guide repeated attempts?",
       "options": [
-        "5 N",
-        "60 N",
-        "30–40 N",
-        "10–20 N"
+        "Reoxygenate between attempts and change technique rather than repeating ineffective laryngoscopy",
+        "Continue attempts without interruption while mask ventilation remains possible",
+        "Avoid alternative devices until direct laryngoscopy has failed at least five times",
+        "Paralyze more deeply before every repeated attempt regardless of cause"
       ],
       "answer": [
-        2
+        0
       ],
-      "explanation": "This lecture lists 30–40 N after LOC.",
+      "explanation": "When oxygenation is possible, restore oxygenation between attempts and use a changed or improved strategy rather than accumulating trauma with repeated identical attempts.",
       "citation": "",
       "topic": "Integrated airway cases",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -9825,15 +9825,15 @@
       "type": "single",
       "stem": "A difficult-airway attempt has already failed twice with worsening edema and trauma. What is the best next strategy?",
       "options": [
-        "Proceed blindly without adjustment",
-        "Ease or release cricoid pressure to improve the view",
-        "Increase cricoid pressure to 60 N for better occlusion",
-        "Add BURP while keeping 60 N cricoid"
+        "Change approach and use the best available alternative technique",
+        "Repeat the identical attempt because prior failure predicts eventual success",
+        "Continue until edema prevents further instrumentation",
+        "Remove all rescue devices to simplify the setup"
       ],
       "answer": [
-        1
+        0
       ],
-      "explanation": "Cricoid pressure can impair visualization.",
+      "explanation": "Repeated failed attempts increase trauma and edema; after failures, change technique and escalate to the best alternative approach.",
       "citation": "",
       "topic": "Integrated airway cases",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -9849,15 +9849,15 @@
       "type": "single",
       "stem": "After a difficult intubation is finally successful, what should be documented and communicated for future anesthetics?",
       "options": [
-        "Remove the front of the collar while an assistant holds inline stabilization",
-        "Leave the collar on at all costs",
-        "Perform the cric through the collar",
-        "Delay the cric until the collar can be replaced with a new one"
+        "The difficulty encountered, devices/techniques used, successful rescue, and recommendations for future airway management",
+        "Only the final ETT size",
+        "Only the Cormack-Lehane grade",
+        "Nothing if oxygenation was maintained"
       ],
       "answer": [
         0
       ],
-      "explanation": "Neck impediments should be removed when possible, with manual inline stabilization maintained.",
+      "explanation": "A difficult airway should be clearly documented and communicated, including what was difficult, what worked, and recommendations for future anesthetics.",
       "citation": "",
       "topic": "Integrated airway cases",
       "sourceTitle": "Basic Airway Assessment & Management",
