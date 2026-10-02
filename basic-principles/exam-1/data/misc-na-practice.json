@@ -8586,12 +8586,12 @@
       "id": "MISC-351",
       "set": 1,
       "type": "single",
-      "stem": "After a fatigue-related wrong-drug event, which system-level intervention best addresses the contributing factor rather than blaming the individual?",
+      "stem": "After a wrong-drug event linked to a 20-hour shift, the review confirms the provider's technical knowledge was adequate but attention and label discrimination had deteriorated. Which intervention best addresses the upstream system contributor?",
       "options": [
         "Limit consecutive work hours and support restorative rest",
-        "Encourage more caffeine",
-        "Remove breaks to shorten shifts",
-        "Punish the provider"
+        "Encourage caffeine as the primary control",
+        "Remove breaks so shifts end sooner",
+        "Punish the provider without changing scheduling"
       ],
       "answer": [
         0
@@ -8658,7 +8658,7 @@
       "id": "MISC-354",
       "set": 1,
       "type": "single",
-      "stem": "When language barriers prevent meaningful anesthesia consent, which ethical principle is most directly threatened?",
+      "stem": "A Spanish-speaking patient cannot understand the proposed anesthetic options, and no qualified interpreter is available. Proceeding to consent under these conditions most directly threatens which ethical principle?",
       "options": [
         "Autonomy",
         "Beneficence",
@@ -8730,12 +8730,12 @@
       "id": "MISC-357",
       "set": 1,
       "type": "single",
-      "stem": "After intubating a patient with suspected TB, a CRNA touches clean equipment with the same contaminated gloves. Which infection-control principle is violated?",
+      "stem": "After intubating a patient with suspected tuberculosis, the CRNA reaches into the clean medication workspace with the same contaminated gloves. Which infection-control failure is most immediate?",
       "options": [
-        "Dirty-to-clean zone contamination without glove change or hand hygiene",
-        "Hand hygiene between clean zones",
-        "Use of PPE during AGPs",
-        "Terminal cleaning after the case"
+        "Dirty-to-clean zone contamination without glove change and hand hygiene",
+        "Failure to clean hands between two clean zones",
+        "Failure to wear PPE during an aerosol-generating procedure",
+        "Failure to perform terminal cleaning before emergence"
       ],
       "answer": [
         0
@@ -8880,12 +8880,12 @@
       "id": "MISC-363",
       "set": 1,
       "type": "single",
-      "stem": "Cefazolin was given 90 minutes before incision. Which interpretation is correct?",
+      "stem": "A deep incisional SSI develops after cefazolin had been completed 90 minutes before incision. Which prophylaxis issue should the review identify?",
       "options": [
-        "The timing was outside the usual 60-minute prophylaxis window",
-        "The timing was ideal",
-        "All antibiotics use a 120-minute window",
-        "Antibiotics should be given after incision"
+        "Cefazolin was outside the usual 60-minute preincision window",
+        "The timing was ideal for cefazolin",
+        "All prophylactic antibiotics use a 120-minute window",
+        "Cefazolin should have been delayed until after incision"
       ],
       "answer": [
         0
@@ -8952,12 +8952,12 @@
       "id": "MISC-366",
       "set": 1,
       "type": "single",
-      "stem": "Which CRM skill would most directly help a team recognize that hemorrhage, not anesthetic depth, is causing deterioration?",
+      "stem": "During presumed anesthetic-related hypotension, blood loss is accelerating but the team remains anchored on anesthetic depth. Which CRM capability would most directly help detect the competing cause before further deterioration?",
       "options": [
-        "Situational awareness and anticipation",
-        "Behavioral flexibility alone",
+        "Situational awareness with reassessment of the evolving surgical context",
+        "Behavioral flexibility without reassessing data",
         "Postevent evaluation",
-        "Communication alone"
+        "Communication without attention to clinical changes"
       ],
       "answer": [
         0
@@ -9288,12 +9288,12 @@
       "id": "MISC-380",
       "set": 1,
       "type": "single",
-      "stem": "During a PACU code, orders are repeated back and confirmed. Which CRM principle is demonstrated?",
+      "stem": "During a PACU code, the leader orders epinephrine; the nurse repeats the dose, administers it, and confirms completion. Which CRM communication pattern is demonstrated?",
       "options": [
-        "Communication",
-        "Leadership",
-        "Evaluation",
-        "Awareness"
+        "Closed-loop communication",
+        "Leadership role designation",
+        "Postevent evaluation",
+        "Situational awareness"
       ],
       "answer": [
         0
@@ -9384,12 +9384,12 @@
       "id": "MISC-384",
       "set": 1,
       "type": "single",
-      "stem": "Which action would best reduce the risk of artifact error when a monitor value seems implausible?",
+      "stem": "An automated cuff suddenly reports profound hypotension, but the waveform and patient's appearance seem inconsistent with the value. Which action best avoids both artifact error and inappropriate treatment?",
       "options": [
-        "Verify with another measurement and assess the patient",
-        "Accept the assumption and continue",
-        "Deepen anesthesia",
-        "Treat the value without confirmation"
+        "Assess the patient and verify the pressure with an independent measurement",
+        "Assume artifact and ignore the reading",
+        "Treat the value immediately without confirmation",
+        "Deepen anesthesia while waiting for the next automatic cycle"
       ],
       "answer": [
         0
@@ -9432,12 +9432,12 @@
       "id": "MISC-386",
       "set": 1,
       "type": "single",
-      "stem": "In the same case, which informed-consent issue is most important?",
+      "stem": "A patient can sign the consent form but cannot explain the anesthetic plan back in their own words because the discussion used unfamiliar medical terminology. Which consent problem should be corrected?",
       "options": [
-        "Communication matched to patient health literacy",
-        "Timing only",
-        "Emergency consent",
-        "Withheld information"
+        "Communication must be matched to the patient's health literacy and understanding",
+        "The signature makes further explanation unnecessary",
+        "Only the timing of consent is problematic",
+        "The case requires emergency consent"
       ],
       "answer": [
         0
@@ -9624,11 +9624,11 @@
       "id": "MISC-394",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA is simultaneously charting, preparing medication, and troubleshooting equipment and misses rising ETCO2. Which distraction mechanism is most relevant?",
+      "stem": "While simultaneously charting, preparing medication, and troubleshooting equipment, a CRNA misses a progressive ETCO2 rise despite an unobstructed view of the monitor. Which distraction mechanism best explains the failure?",
       "options": [
-        "Cognitive load",
+        "Excess cognitive load from competing tasks",
         "Auditory disruption",
-        "Visual distraction",
+        "Pure visual distraction",
         "Alarm fatigue"
       ],
       "answer": [
@@ -9768,14 +9768,14 @@
       "id": "MISC-400",
       "set": 1,
       "type": "multi",
-      "stem": "Which three domain-example pairings are correct? (Select 3)",
+      "stem": "A quality committee reviews several proposed interventions. Which three domain-example pairings correctly match the IOM quality domains? (Select 3)",
       "options": [
         "Safe: barcode scanning before medication administration",
         "Timely: staffing to reduce delays for emergent cases",
         "Efficient: reducing unnecessary supply waste",
-        "Equitable: shortening turnover time",
-        "Effective: following surgeon preference instead of evidence",
-        "Patient-centered: choosing the cheapest drug by default"
+        "Equitable: shortening turnover time for every case",
+        "Effective: following individual preference instead of evidence",
+        "Patient-centered: selecting the least expensive drug regardless of patient goals"
       ],
       "answer": [
         0,
