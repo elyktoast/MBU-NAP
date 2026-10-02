@@ -1221,12 +1221,12 @@
       "id": "SED-051",
       "set": 1,
       "type": "single",
-      "stem": "Before giving propofol to a patient with short neck and limited mouth opening, which planning question is most important?",
+      "stem": "Before propofol sedation in a patient with a short neck and limited mouth opening, which question should drive planning?",
       "options": [
-        "Can I ventilate or intubate if sedation goes deeper than planned?",
-        "Will this patient remember the procedure afterward?",
-        "Is the gastroenterologist comfortable with the sedation depth?",
-        "Will the patient tolerate supplemental oxygen during the case?"
+        "Can I oxygenate, ventilate, and secure the airway if sedation becomes deeper than intended?",
+        "Will the patient remember the procedure?",
+        "Does the proceduralist prefer deep sedation?",
+        "Will nasal oxygen be tolerated?"
       ],
       "answer": [
         0
@@ -1245,12 +1245,12 @@
       "id": "SED-052",
       "set": 1,
       "type": "single",
-      "stem": "Mallampati III is present with otherwise acceptable airway findings. Which additional finding most increases concern about rescue laryngoscopy?",
+      "stem": "Mallampati III is present. Which additional finding most increases concern about difficult rescue laryngoscopy?",
       "options": [
-        "Thyromental distance of two fingerbreadths",
-        "Capillary refill under two seconds",
-        "Mild jugular venous distension when supine",
-        "A soft left carotid bruit"
+        "Markedly short thyromental distance",
+        "Normal capillary refill",
+        "Mild jugular venous distention",
+        "Soft carotid bruit"
       ],
       "answer": [
         0
@@ -1269,12 +1269,12 @@
       "id": "SED-053",
       "set": 1,
       "type": "single",
-      "stem": "A receding chin with abnormal fingerbreadth measurements is identified during LEMON. Which letter addresses these measurements?",
+      "stem": "During LEMON assessment, mouth opening, mandibular space, and the position of the larynx are estimated with fingerbreadths. Which component is being used?",
       "options": [
-        "E: evaluate the 3-3-2 rule",
-        "L: look externally at the face and neck",
-        "M: Mallampati classification",
-        "N: neck mobility"
+        "Evaluate the 3-3-2 rule",
+        "Look externally",
+        "Mallampati",
+        "Neck mobility"
       ],
       "answer": [
         0
@@ -1293,12 +1293,12 @@
       "id": "SED-054",
       "set": 1,
       "type": "single",
-      "stem": "Only two fingerbreadths of mouth opening are present. Which airway task is most directly limited?",
+      "stem": "Only two fingerbreadths of mouth opening are present. Which rescue task is most directly compromised?",
       "options": [
-        "Limited mouth opening that hinders laryngoscopy and airway devices",
-        "A short mandibular space that limits tongue displacement on DL",
-        "A high larynx relative to the base of the tongue",
-        "Limited neck extension for the sniffing position"
+        "Insertion/manipulation of laryngoscopy and other oral airway devices",
+        "Mask seal around the nose and mouth",
+        "Neck extension into sniffing position",
+        "Assessment of thyromental distance"
       ],
       "answer": [
         0
@@ -1317,11 +1317,11 @@
       "id": "SED-055",
       "set": 1,
       "type": "single",
-      "stem": "Severe OSA and enlarged tonsils are present. Which LEMON category do these findings represent?",
+      "stem": "Severe OSA with markedly enlarged tonsils most directly maps to which LEMON concern?",
       "options": [
         "Obstruction",
         "Look externally",
-        "Mallampati score",
+        "Mallampati",
         "Neck mobility"
       ],
       "answer": [
@@ -1341,12 +1341,12 @@
       "id": "SED-056",
       "set": 1,
       "type": "single",
-      "stem": "A patient reports prior difficult mask ventilation and delayed awakening. Why is this history important before sedation?",
+      "stem": "A patient reports prior difficult mask ventilation and difficult intubation during anesthesia. Why is this history especially important before sedation?",
       "options": [
-        "It predicts difficult rescue if sedation becomes too deep",
-        "It predicts a higher propofol dose requirement today",
-        "It means sedation is contraindicated for this patient today",
-        "It predicts postoperative nausea and vomiting"
+        "It predicts potentially difficult rescue if sedation progresses deeper than intended",
+        "It predicts a higher sedative requirement",
+        "It makes all procedural sedation contraindicated",
+        "It primarily predicts PONV"
       ],
       "answer": [
         0
@@ -1365,12 +1365,12 @@
       "id": "SED-057",
       "set": 1,
       "type": "single",
-      "stem": "When should oxygen delivery and airway-rescue equipment be prepared for planned moderate sedation?",
+      "stem": "When should oxygen delivery, suction, bag-mask ventilation, and advanced airway-rescue equipment be ready for planned moderate sedation?",
       "options": [
-        "Before any sedative is given",
-        "When the patient first desaturates",
-        "When a difficult airway is predicted",
-        "After the proceduralist starts"
+        "Before sedative administration",
+        "After the first desaturation",
+        "Only when a difficult airway is predicted",
+        "After the procedure begins"
       ],
       "answer": [
         0
@@ -1389,12 +1389,12 @@
       "id": "SED-058",
       "set": 1,
       "type": "single",
-      "stem": "Why does gastroparesis increase concern during sedation for EGD?",
+      "stem": "A patient with symptomatic gastroparesis is scheduled for EGD under sedation. Why does this alter the risk-benefit assessment?",
       "options": [
-        "Sedation blunts protective reflexes while the airway stays unprotected",
-        "Sedatives increase gastric acid production",
-        "Sedation stops gastric emptying and raises gastric volume",
-        "Aspiration risk rules out sedation entirely for this patient and procedure"
+        "Delayed gastric emptying increases aspiration risk while sedation may impair protective airway reflexes without securing the airway",
+        "Sedatives increase gastric acid production enough to cause aspiration",
+        "Sedation itself completely stops gastric emptying",
+        "Gastroparesis absolutely prohibits sedation"
       ],
       "answer": [
         0
@@ -1413,12 +1413,12 @@
       "id": "SED-059",
       "set": 1,
       "type": "single",
-      "stem": "Which patient requires the least additional caution for routine sedation?",
+      "stem": "Which patient has the fewest patient-specific features requiring modification of a routine sedation plan?",
       "options": [
-        "A 40-year-old ASA I with a normal airway exam",
-        "A 70-year-old taking clonazepam nightly",
+        "A healthy ASA I adult with a normal airway examination",
+        "An older adult taking nightly clonazepam",
         "A patient with cirrhosis and ascites",
-        "A patient with bulbar weakness after a stroke"
+        "A patient with bulbar weakness and dysphagia"
       ],
       "answer": [
         0
@@ -1437,12 +1437,12 @@
       "id": "SED-060",
       "set": 1,
       "type": "single",
-      "stem": "A heavy alcohol user taking alprazolam needs unusually high sedative doses, then abruptly becomes apneic after another small dose. What best explains this pattern?",
+      "stem": "A heavy alcohol user taking chronic alprazolam requires unusually high sedative doses, then becomes apneic after a small additional dose. Which principle best explains the unpredictability?",
       "options": [
-        "Chronic exposure alters dose needs and makes response unpredictable",
-        "Alcohol reduces the risk of respiratory depression",
-        "Tolerance means sedative doses can be increased without risk",
-        "Benzodiazepine use protects against oversedation from propofol"
+        "Tolerance can alter dose requirements, while combined sedatives can still abruptly produce profound respiratory depression",
+        "Alcohol protects against respiratory depression",
+        "Tolerance eliminates the risk of oversedation",
+        "Chronic benzodiazepines prevent propofol-induced apnea"
       ],
       "answer": [
         0
@@ -1461,12 +1461,12 @@
       "id": "SED-061",
       "set": 1,
       "type": "single",
-      "stem": "A patient with cirrhosis and advanced CKD remains sedated for hours after standard midazolam dosing. What mechanism best explains this?",
+      "stem": "A patient with cirrhosis and advanced CKD remains sedated far longer than expected after midazolam. Which mechanism best explains the prolonged effect?",
       "options": [
-        "Altered drug disposition from renal and hepatic dysfunction",
-        "Increased drug absorption from the GI tract",
-        "Increased receptor tolerance to midazolam from chronic illness",
-        "Tolerance from chronic illness altering receptor sensitivity"
+        "Impaired metabolism/clearance of drug and active metabolites",
+        "Increased gastrointestinal absorption",
+        "Increased receptor tolerance",
+        "Accelerated redistribution"
       ],
       "answer": [
         0
@@ -1485,12 +1485,12 @@
       "id": "SED-062",
       "set": 1,
       "type": "single",
-      "stem": "Parkinson disease with dysphagia most directly increases which sedation-related risk category?",
+      "stem": "Parkinson disease with prominent dysphagia most directly increases which sedation concern?",
       "options": [
-        "Neurologic disease affecting airway reflexes",
-        "Chronic sedative or opioid use",
-        "Renal or hepatic dysfunction",
-        "Uncooperative or unwilling patient behavior"
+        "Impaired swallowing/airway protection with increased aspiration risk",
+        "Increased sedative tolerance",
+        "Accelerated renal drug clearance",
+        "Improved upper-airway tone"
       ],
       "answer": [
         0
@@ -1511,12 +1511,12 @@
       "type": "multi",
       "stem": "Which FOUR patients warrant added caution before procedural sedation? (Select 4)",
       "options": [
-        "A man whose wife reports loud snoring and witnessed apneas",
+        "A patient with witnessed apneas",
         "A frail 88-year-old with limited reserve",
-        "An uncooperative patient who refuses to stay still",
-        "A patient on long-term oxycodone",
+        "An uncooperative patient unable to remain still",
+        "A patient taking long-term opioids",
         "A healthy 30-year-old with a normal airway",
-        "A patient with mild seasonal allergies"
+        "A patient with isolated seasonal allergies"
       ],
       "answer": [
         0,
@@ -1538,12 +1538,12 @@
       "id": "SED-064",
       "set": 1,
       "type": "single",
-      "stem": "A full beard, small mandible, and facial trauma are noted during airway assessment. Which LEMON element captures these findings?",
+      "stem": "A full beard, small mandible, and facial trauma are identified before sedation. Which LEMON step captures these external predictors?",
       "options": [
-        "L: look externally",
-        "E: evaluate 3-3-2",
-        "M: Mallampati",
-        "O: obstruction"
+        "Look externally",
+        "Evaluate 3-3-2",
+        "Mallampati",
+        "Obstruction"
       ],
       "answer": [
         0
@@ -1562,12 +1562,12 @@
       "id": "SED-065",
       "set": 1,
       "type": "single",
-      "stem": "The lower incisors cannot protrude beyond the upper incisors. Which rescue maneuvers may therefore be more difficult?",
+      "stem": "The lower incisors cannot protrude beyond the upper incisors. Which rescue function may be more difficult?",
       "options": [
-        "Jaw thrust and laryngoscopy may be difficult",
-        "Mask seal will be easier than average",
-        "Neck extension will be limited",
-        "Mallampati class will improve with phonation"
+        "Mandibular advancement/jaw thrust and laryngoscopic tongue displacement",
+        "Obtaining a facemask seal solely because of dentition",
+        "Neck extension",
+        "Interpreting Mallampati class"
       ],
       "answer": [
         0
@@ -1586,12 +1586,12 @@
       "id": "SED-066",
       "set": 1,
       "type": "single",
-      "stem": "Why does untreated OSA predispose to recurrent obstruction even during light sedation?",
+      "stem": "Why can even light sedation precipitate recurrent obstruction in untreated OSA?",
       "options": [
-        "Sedatives reduce pharyngeal muscle tone and worsen upper airway collapse",
-        "Sedatives cause bronchospasm in OSA",
-        "OSA patients have reduced oxygen-carrying capacity from polycythemia",
-        "Sedatives raise CO2 production in OSA"
+        "Reduced pharyngeal dilator tone increases collapsibility of an already vulnerable upper airway",
+        "Sedatives primarily cause lower-airway bronchospasm in OSA",
+        "OSA reduces hemoglobin oxygen-carrying capacity",
+        "Sedatives markedly increase CO2 production"
       ],
       "answer": [
         0
@@ -1610,12 +1610,12 @@
       "id": "SED-067",
       "set": 1,
       "type": "single",
-      "stem": "Mallampati IV and limited mouth opening are present before EGD sedation. What must be established before starting?",
+      "stem": "Mallampati IV and limited mouth opening are present before planned EGD sedation. What must be established before administering sedatives?",
       "options": [
-        "Plan a conversion-to-GA and airway rescue strategy before starting",
-        "Proceed with titrated propofol since EGD is brief and stimulating",
-        "Give minimal sedation and accept poor tolerance of the scope",
-        "Intubate awake before sedation for every EGD patient"
+        "A specific oxygenation/ventilation rescue and conversion-to-GA strategy",
+        "That the procedure is brief enough to ignore rescue difficulty",
+        "That minimal sedation will necessarily prevent airway obstruction",
+        "That every such patient receives awake intubation"
       ],
       "answer": [
         0
@@ -1634,12 +1634,12 @@
       "id": "SED-068",
       "set": 1,
       "type": "single",
-      "stem": "For cataract surgery with facial drapes, which airway finding most increases concern about rescue access?",
+      "stem": "For cataract surgery with the face partially inaccessible under drapes, which finding most increases the consequence of sedation overshoot?",
       "options": [
         "Mallampati III with limited neck extension",
         "Controlled hypertension",
-        "Mild anxiety about the procedure",
-        "A short planned procedure time under 20 minutes"
+        "Mild procedural anxiety",
+        "Short expected procedure duration"
       ],
       "answer": [
         0
@@ -1658,12 +1658,12 @@
       "id": "SED-069",
       "set": 1,
       "type": "single",
-      "stem": "A frail 89-year-old with EF 30% needs sedation. Which caution category applies most directly?",
+      "stem": "A frail 89-year-old with EF 30% needs sedation. Which combination most directly increases risk?",
       "options": [
-        "Advanced age, frailty, or limited reserve",
-        "Chronic sedative or opioid use",
-        "Neurologic disease affecting airway reflexes",
-        "Uncooperative or unwilling patient"
+        "Advanced age plus limited cardiopulmonary reserve",
+        "Age-related opioid tolerance",
+        "Neurologic loss of airway reflexes by definition",
+        "Uncooperative behavior"
       ],
       "answer": [
         0
@@ -1682,12 +1682,12 @@
       "id": "SED-070",
       "set": 1,
       "type": "single",
-      "stem": "Is airway assessment necessary when only minimal oral sedation is planned, and why?",
+      "stem": "Why is an airway assessment still necessary when only minimal oral sedation is planned?",
       "options": [
-        "Yes, because depth can exceed the plan at any level",
-        "No, it is needed for planned deep sedation",
-        "No, it is needed when OSA is documented",
-        "No, oral premedication stays within minimal sedation"
+        "Individual response is variable and sedation can unintentionally progress beyond the target level",
+        "Oral drugs always produce deep sedation",
+        "Airway assessment is required only for OSA",
+        "Minimal sedation routinely requires laryngoscopy"
       ],
       "answer": [
         0
@@ -1706,12 +1706,12 @@
       "id": "SED-071",
       "set": 1,
       "type": "single",
-      "stem": "Mallampati assessment primarily evaluates what anatomic relationship?",
+      "stem": "Mallampati classification primarily estimates which anatomic relationship?",
       "options": [
-        "Visibility of oropharyngeal structures relative to tongue size",
+        "Oropharyngeal visibility relative to tongue/oral-cavity anatomy",
         "Mouth opening in fingerbreadths",
-        "Mandibular protrusion of the lower incisors past the upper incisors",
-        "Thyromental distance with the head fully extended"
+        "Mandibular protrusion",
+        "Neck flexion-extension"
       ],
       "answer": [
         0
@@ -1730,12 +1730,12 @@
       "id": "SED-072",
       "set": 1,
       "type": "single",
-      "stem": "A healthy patient previously tolerated colonoscopy poorly. What does that history most strongly predict for the next sedation plan?",
+      "stem": "A healthy patient previously tolerated colonoscopy poorly despite adequate local/procedural technique. How should that history influence planning?",
       "options": [
-        "Higher analgesic or sedative need than typical",
-        "A contraindication to sedation",
-        "An undiagnosed difficult airway",
-        "Need for general endotracheal anesthesia this time"
+        "Anticipate greater analgesic/sedative requirements and the accompanying respiratory risk",
+        "Treat it as an absolute contraindication to sedation",
+        "Assume a difficult airway",
+        "Plan endotracheal general anesthesia automatically"
       ],
       "answer": [
         0
@@ -1757,10 +1757,10 @@
       "stem": "Which THREE caution factors apply to an obese EGD patient with severe OSA and active regurgitation? (Select 3)",
       "options": [
         "Aspiration risk",
-        "Obesity or difficult airway features",
+        "Obesity/difficult rescue-airway features",
         "OSA",
         "Chronic benzodiazepine exposure",
-        "Renal dysfunction altering drug disposition",
+        "Renal dysfunction",
         "Uncooperative behavior"
       ],
       "answer": [
@@ -1782,12 +1782,12 @@
       "id": "SED-074",
       "set": 1,
       "type": "single",
-      "stem": "A patient with ankylosing spondylitis has almost no neck flexion or extension. Which LEMON element is abnormal?",
+      "stem": "A patient with ankylosing spondylitis has almost no cervical flexion or extension. Which LEMON component is abnormal?",
       "options": [
-        "N: neck mobility, which limits positioning for laryngoscopy",
-        "L: look externally, which predicts mask difficulty",
-        "E: 3-3-2, which measures mouth opening",
-        "O: obstruction, which suggests a mass or tumor in the airway"
+        "Neck mobility",
+        "Look externally",
+        "Evaluate 3-3-2",
+        "Obstruction"
       ],
       "answer": [
         0
@@ -1806,12 +1806,12 @@
       "id": "SED-075",
       "set": 1,
       "type": "single",
-      "stem": "A claustrophobic patient repeatedly refuses to remain still for MRI. How should this affect the sedation strategy?",
+      "stem": "A claustrophobic patient repeatedly cannot remain still for MRI despite preparation. How should this affect the anesthetic plan?",
       "options": [
-        "Treat non-cooperation as a patient caution and plan deeper care",
-        "Treat it as a procedure issue rather than a patient factor",
-        "Treat it as a contraindication to any anesthesia care",
-        "Treat it as a reason to keep sedation minimal"
+        "Recognize that required immobility and noncooperation may necessitate a deeper anesthetic plan with corresponding rescue/airway strategy",
+        "Classify this solely as a procedural issue unrelated to anesthetic depth",
+        "Keep sedation minimal regardless of movement",
+        "Assume all anesthesia is contraindicated"
       ],
       "answer": [
         0
@@ -1830,12 +1830,12 @@
       "id": "SED-076",
       "set": 1,
       "type": "single",
-      "stem": "In an obese patient with OSA, what additional risk does semaglutide contribute?",
+      "stem": "An obese patient with OSA taking semaglutide reports ongoing nausea and early satiety before sedation. Which additional concern is most relevant?",
       "options": [
-        "Higher aspiration risk from delayed gastric emptying",
-        "Greater hemodynamic instability from GLP-1 effects on volume",
-        "Greater sensitivity to propofol",
-        "Increased bleeding risk"
+        "Delayed gastric emptying with increased residual gastric-content/aspiration risk",
+        "Direct propofol hypersensitivity",
+        "Increased bleeding tendency",
+        "Reduced upper-airway collapsibility"
       ],
       "answer": [
         0
@@ -1854,12 +1854,12 @@
       "id": "SED-077",
       "set": 1,
       "type": "single",
-      "stem": "Why is supine positioning particularly relevant in a patient with untreated OSA undergoing MAC?",
+      "stem": "Why is the supine position particularly relevant during MAC in untreated OSA?",
       "options": [
-        "Supine position may worsen airway obstruction",
-        "Prone positioning limits airway access",
-        "Beach chair alters cerebral autoregulation",
-        "Lateral position reduces dependent-lung FRC"
+        "It can worsen pharyngeal collapse and upper-airway obstruction",
+        "It reliably prevents hypoventilation",
+        "It decreases aspiration risk",
+        "It improves functional residual capacity in obesity"
       ],
       "answer": [
         0
@@ -1878,12 +1878,12 @@
       "id": "SED-078",
       "set": 1,
       "type": "single",
-      "stem": "For a morbidly obese patient with OSA, which question should drive backup airway planning before MAC?",
+      "stem": "For a morbidly obese patient with OSA, which question should anchor the backup plan before MAC?",
       "options": [
-        "What will I do if this patient needs full ventilatory support?",
-        "How quickly can I bring this patient to a deep, comfortable level?",
-        "How much midazolam can I give before he falls asleep?",
-        "Can the proceduralist add more local later?"
+        "How will I rapidly oxygenate, ventilate, and secure the airway if sedation causes complete obstruction or apnea?",
+        "How quickly can I achieve deep sedation?",
+        "What is the maximum midazolam dose?",
+        "Can the proceduralist increase local anesthetic?"
       ],
       "answer": [
         0
@@ -1932,12 +1932,12 @@
       "id": "SED-080",
       "set": 1,
       "type": "single",
-      "stem": "A patient with severe OSA previously desaturated markedly under propofol. Which drug characteristic is most desirable for the next sedation?",
+      "stem": "A patient with severe OSA previously had profound obstruction and desaturation during propofol sedation. Which strategy best reduces recurrence while still allowing titratable sedation?",
       "options": [
-        "Use an agent with less respiratory depression, such as dexmedetomidine",
-        "Use larger propofol boluses to shorten the case and exposure",
-        "Add fentanyl to propofol so lower propofol doses can be used for the case",
-        "Use midazolam alone, since it spares ventilation"
+        "Favor the least respiratory-depressing effective regimen, with careful titration and full rescue readiness",
+        "Use larger propofol boluses to shorten exposure",
+        "Combine propofol and opioid routinely because each dose can then be smaller",
+        "Assume midazolam will preserve ventilation"
       ],
       "answer": [
         0
@@ -1956,12 +1956,12 @@
       "id": "SED-081",
       "set": 1,
       "type": "single",
-      "stem": "Why may remimazolam be advantageous over midazolam in combined hepatic and renal dysfunction?",
+      "stem": "Why may remimazolam have more predictable offset than midazolam in substantial hepatic or renal dysfunction?",
       "options": [
-        "Its tissue esterase metabolism avoids hepatic and renal accumulation",
-        "It provides analgesia that spares opioids",
-        "It provides analgesia that lets you cut opioid doses",
-        "Its effect is not reversed by flumazenil, so offset is predictable"
+        "It is rapidly metabolized by nonspecific tissue esterases rather than relying primarily on hepatic/renal clearance",
+        "It provides opioid-level analgesia",
+        "It cannot depress ventilation",
+        "It cannot be antagonized by flumazenil"
       ],
       "answer": [
         0
@@ -1980,12 +1980,12 @@
       "id": "SED-082",
       "set": 1,
       "type": "single",
-      "stem": "Large tonsils with witnessed apneas fall under which LEMON component?",
+      "stem": "Large tonsils and witnessed apneas most directly represent which LEMON category?",
       "options": [
-        "O: obstruction",
-        "L: look externally",
-        "E: evaluate 3-3-2",
-        "N: neck mobility"
+        "Obstruction",
+        "Look externally",
+        "Evaluate 3-3-2",
+        "Neck mobility"
       ],
       "answer": [
         0
@@ -2004,12 +2004,12 @@
       "id": "SED-083",
       "set": 1,
       "type": "single",
-      "stem": "How should sedation be dosed in a frail 88-year-old with EF 30%?",
+      "stem": "A frail 88-year-old with EF 30% requires sedation. Which dosing approach best matches the reduced physiologic reserve?",
       "options": [
-        "Reduce doses and titrate slowly with close monitoring",
-        "Use standard adult doses for a predictable effect",
-        "Avoid sedation entirely in a frail patient",
-        "Give one large bolus to shorten the exposure time"
+        "Use smaller incremental doses with slower titration and close reassessment",
+        "Use standard adult boluses",
+        "Give one large bolus to shorten exposure",
+        "Avoid all sedation solely because of age"
       ],
       "answer": [
         0
@@ -2028,12 +2028,12 @@
       "id": "SED-084",
       "set": 1,
       "type": "single",
-      "stem": "A patient with severe pulmonary hypertension and COPD is scheduled for TEE under MAC. Which physiologic derangements must be especially avoided?",
+      "stem": "A patient with severe pulmonary hypertension and COPD undergoes TEE under MAC. Which sedation complication is particularly dangerous because it can raise pulmonary vascular resistance and precipitate RV failure?",
       "options": [
-        "It is a high-risk condition; avoid hypoxemia and hypercarbia",
-        "It allows minimal sedation without capnography monitoring",
-        "It is a contraindication to capnography",
-        "It requires switching to an inhaled anesthetic"
+        "Hypoxemia and hypercapnia from hypoventilation/airway obstruction",
+        "Mild transient amnesia",
+        "Small decreases in procedural anxiety",
+        "A normal capnogram"
       ],
       "answer": [
         0
@@ -2052,12 +2052,12 @@
       "id": "SED-085",
       "set": 1,
       "type": "single",
-      "stem": "Which airway combination most predicts difficult bag-mask ventilation during rescue?",
+      "stem": "Which combination most strongly predicts difficult bag-mask rescue?",
       "options": [
-        "A full beard with OSA",
-        "Mallampati II with full dentition",
-        "A thyromental distance of 7 cm",
-        "Normal neck extension in a thin patient"
+        "A full beard plus OSA/obesity",
+        "Mallampati II with intact dentition",
+        "Normal thyromental distance",
+        "Full neck extension in a thin patient"
       ],
       "answer": [
         0
@@ -2076,12 +2076,12 @@
       "id": "SED-086",
       "set": 1,
       "type": "single",
-      "stem": "When choosing sedation drugs and depth, which procedural characteristic should be estimated first?",
+      "stem": "Before selecting sedatives for a procedure, which procedural characteristic most directly determines whether analgesic supplementation will be needed?",
       "options": [
-        "The analgesic requirement from the procedural stimulus",
-        "The expected blood product requirement for the case",
-        "The total intravenous fluid requirement",
-        "The supplemental oxygen flow requirement"
+        "Expected intensity and duration of noxious stimulation",
+        "Expected IV-fluid requirement",
+        "Supplemental oxygen flow rate",
+        "Estimated blood-product requirement"
       ],
       "answer": [
         0
@@ -2100,12 +2100,12 @@
       "id": "SED-087",
       "set": 1,
       "type": "single",
-      "stem": "A patient must perform neurologic commands during carotid stenting. What preoperative ability must be verified?",
+      "stem": "A patient must follow neurologic commands during carotid stenting. Which preoperative factor is essential to verify before choosing MAC?",
       "options": [
-        "His ability to cooperate with neurologic testing",
-        "Nothing more, since deep sedation will be used",
-        "His score on a pediatric cooperation scale",
-        "His processed EEG baseline before sedation"
+        "Ability to understand and cooperate with intraoperative neurologic testing",
+        "Processed-EEG baseline",
+        "Ability to tolerate deep sedation",
+        "Need for neuromuscular blockade"
       ],
       "answer": [
         0
@@ -2124,12 +2124,12 @@
       "id": "SED-088",
       "set": 1,
       "type": "single",
-      "stem": "Why is a prolonged supine MAC particularly risky in morbid obesity?",
+      "stem": "Why is a prolonged supine MAC especially risky in morbid obesity?",
       "options": [
-        "Supine obstruction plus a long unsecured-airway exposure",
-        "Beach chair plus short duration",
-        "Lateral position plus minimal sedation",
-        "Prone position with a secured airway for a long case"
+        "Obesity/supine positioning promotes obstruction while prolonged exposure increases cumulative sedation and unsecured-airway risk",
+        "Supine positioning protects the airway",
+        "Long duration decreases sedative accumulation",
+        "Obesity increases functional residual capacity"
       ],
       "answer": [
         0
@@ -2148,12 +2148,12 @@
       "id": "SED-089",
       "set": 1,
       "type": "single",
-      "stem": "Which EGD patient most strongly favors GA with a secured airway rather than MAC?",
+      "stem": "Which EGD patient most strongly favors a secured airway rather than routine MAC?",
       "options": [
-        "Active regurgitation, severe OSA, and Mallampati IV",
-        "Controlled hypertension and mild anxiety",
-        "A healthy 35-year-old with dyspepsia",
-        "A 60-year-old with stable asthma on an inhaler"
+        "A patient with active regurgitation, severe OSA, and a predicted difficult rescue airway",
+        "A patient with controlled hypertension and mild anxiety",
+        "A healthy young adult with dyspepsia",
+        "A patient with stable mild asthma"
       ],
       "answer": [
         0
@@ -2172,12 +2172,12 @@
       "id": "SED-090",
       "set": 1,
       "type": "single",
-      "stem": "Why does advanced age increase the risk of apnea and hypotension from a standard propofol dose?",
+      "stem": "Why can a standard propofol bolus produce disproportionately severe apnea and hypotension in an older frail adult?",
       "options": [
-        "Reduced reserve makes hemodynamic and respiratory changes less tolerable",
-        "Older patients metabolize propofol faster",
-        "Older patients have larger airways and more dead space to clear",
-        "Age alone predicts difficult intubation and failed mask ventilation"
+        "Greater pharmacodynamic sensitivity and reduced cardiopulmonary reserve make a given dose less tolerable",
+        "Older adults metabolize propofol much faster",
+        "Age increases functional residual capacity",
+        "Advanced age alone causes difficult mask ventilation"
       ],
       "answer": [
         0
@@ -2196,12 +2196,12 @@
       "id": "SED-091",
       "set": 1,
       "type": "single",
-      "stem": "A patient on chronic oxycodone is scheduled for colonoscopy. How should sedation dosing be approached?",
+      "stem": "A patient on chronic oxycodone is scheduled for colonoscopy. Which approach best accounts for both tolerance and synergistic respiratory depression?",
       "options": [
-        "Expect altered drug needs and titrate carefully",
-        "Avoid opioids to prevent synergy with propofol",
-        "Give naloxone before starting sedation",
-        "Dose exactly as for an opioid-naive adult"
+        "Expect altered analgesic requirements but titrate all sedative/opioid combinations carefully to effect",
+        "Dose exactly as for an opioid-naive patient",
+        "Give naloxone prophylactically",
+        "Avoid monitoring because opioid tolerance protects ventilation"
       ],
       "answer": [
         0
@@ -2220,12 +2220,12 @@
       "id": "SED-092",
       "set": 1,
       "type": "single",
-      "stem": "The rescue airway cart is stored in the hallway rather than the procedure room. What safety principle is violated?",
+      "stem": "The rescue airway cart is stored down the hallway from the procedure room. Why is this unsafe even for planned moderate sedation?",
       "options": [
-        "Rescue devices must be immediately available before sedation starts",
-        "Rescue devices are needed for planned deep sedation",
-        "Rescue devices are needed for patients with known OSA",
-        "Rescue devices can be retrieved from the hallway cart once a problem actually occurs"
+        "Unintended progression can occur rapidly, so rescue equipment must be immediately available before sedation begins",
+        "Advanced airway equipment is needed only for planned deep sedation",
+        "Rescue equipment is necessary only with known OSA",
+        "Equipment can safely be retrieved after desaturation begins"
       ],
       "answer": [
         0
@@ -2244,12 +2244,12 @@
       "id": "SED-093",
       "set": 1,
       "type": "single",
-      "stem": "Mallampati II, good mouth opening, and full neck motion are present, but thyromental distance is only two fingerbreadths. Which finding is most concerning?",
+      "stem": "Mallampati II, good mouth opening, and full neck motion are present, but thyromental distance is markedly short. Which finding should most alter rescue planning?",
       "options": [
         "The short thyromental distance",
-        "The Mallampati II score on a seated exam",
-        "The good mouth opening",
-        "The full neck motion"
+        "Mallampati II",
+        "Good mouth opening",
+        "Full neck motion"
       ],
       "answer": [
         0
@@ -2268,12 +2268,12 @@
       "id": "SED-094",
       "set": 1,
       "type": "single",
-      "stem": "An anxious cataract patient has OSA, Mallampati III, and limited airway access under drapes. What is the best sedation strategy?",
+      "stem": "An anxious cataract patient has OSA and a potentially difficult airway that will be partly inaccessible under surgical drapes. Which plan best balances comfort with rescue risk?",
       "options": [
-        "Explain what to expect and give light anxiolysis carefully",
-        "Plan deep sedation to prevent any awareness",
-        "Cancel, since anxiety predicts poor cooperation under drapes",
-        "Use topical anesthesia alone with no sedation"
+        "Use explanation/reassurance and carefully titrated light anxiolysis while preserving responsiveness and ventilation",
+        "Plan deep sedation so the patient cannot move",
+        "Give repeated opioid/benzodiazepine boluses until asleep",
+        "Ignore airway access because cataract surgery is brief"
       ],
       "answer": [
         0
@@ -2292,12 +2292,12 @@
       "id": "SED-095",
       "set": 1,
       "type": "single",
-      "stem": "A patient reports prior difficulty with endotracheal intubation. What should be done before proceeding with sedation?",
+      "stem": "A patient reports a prior difficult intubation but does not know the details. What is the most useful next step before sedation?",
       "options": [
-        "Obtain details and prior records to plan rescue",
-        "Reassure that sedation avoids airway problems",
-        "Proceed with deeper sedation to limit anxiety",
-        "Note it but proceed as usual"
+        "Clarify the prior event and obtain available airway records so the rescue plan reflects what actually worked or failed",
+        "Assume sedation avoids airway risk",
+        "Proceed unchanged because intubation is not planned",
+        "Deepen sedation to reduce anxiety about the prior event"
       ],
       "answer": [
         0
@@ -2316,12 +2316,12 @@
       "id": "SED-096",
       "set": 1,
       "type": "single",
-      "stem": "Once an anesthesia provider is delivering MAC, which monitoring standard applies?",
+      "stem": "An anesthesia professional is providing MAC. Which general monitoring principle applies regardless of whether the patient currently appears only lightly sedated?",
       "options": [
-        "All standard ASA monitors must be applied",
-        "Pulse oximetry alone is sufficient",
-        "Monitoring depends on the gastroenterologist's request",
-        "ECG may be omitted if the patient is ASA I"
+        "Standard anesthesia monitoring appropriate to MAC remains in place because the anesthetic can deepen and intervention may be required",
+        "Pulse oximetry alone is sufficient until deep sedation occurs",
+        "Monitoring is determined solely by the proceduralist",
+        "ECG is unnecessary in healthy patients receiving MAC"
       ],
       "answer": [
         0
@@ -2340,12 +2340,12 @@
       "id": "SED-097",
       "set": 1,
       "type": "single",
-      "stem": "According to the lecture table, how often should BP be measured during MAC?",
+      "stem": "During MAC, how should noninvasive blood pressure monitoring be scheduled when no arterial catheter is indicated?",
       "options": [
-        "At least every 3–5 minutes",
-        "At least every 10 minutes",
-        "At least every 15 minutes",
-        "Continuously by arterial line"
+        "At frequent regular intervals consistent with anesthesia monitoring standards and more often when clinically indicated",
+        "Only when heart rate changes",
+        "Every 15 minutes regardless of instability",
+        "Only before and after the procedure"
       ],
       "answer": [
         0
@@ -2364,12 +2364,12 @@
       "id": "SED-098",
       "set": 1,
       "type": "single",
-      "stem": "After conversion from sedation to TIVA/GA, how often should BP be measured at minimum?",
+      "stem": "Sedation unexpectedly progresses to general anesthesia/TIVA with hemodynamic instability. How should blood-pressure monitoring change?",
       "options": [
-        "At least every 3 minutes",
-        "At least every 5 minutes",
-        "Every 10 minutes",
-        "When the heart rate changes by more than 20%"
+        "Increase measurement frequency to match the deeper anesthetic and clinical instability",
+        "Decrease frequency because the patient is immobile",
+        "Stop NIBP if pulse oximetry is normal",
+        "Measure only after drug boluses"
       ],
       "answer": [
         0
@@ -2388,12 +2388,12 @@
       "id": "SED-099",
       "set": 1,
       "type": "single",
-      "stem": "A healthy patient receives nurse-administered moderate sedation, while another patient receives MAC from anesthesia. How do ECG requirements differ?",
+      "stem": "A healthy patient receives non-anesthesia procedural sedation, while another receives MAC from an anesthesia professional. Which statement best distinguishes monitoring expectations?",
       "options": [
-        "The MAC patient needs continuous ECG; the sedation patient's need depends on depth and risk",
-        "Neither needs ECG, since both are at sedation depths",
-        "Both need continuous ECG, since both received IV sedatives",
-        "The sedation patient needs ECG; the MAC patient does not, since an anesthetist is present"
+        "MAC follows anesthesia monitoring standards throughout; non-anesthesia procedural-sedation monitoring follows the applicable sedation standard and patient risk",
+        "Neither requires ECG or blood-pressure monitoring",
+        "Both require identical monitoring solely because IV sedatives are used",
+        "MAC requires less monitoring because an anesthesia professional is present"
       ],
       "answer": [
         0
@@ -2412,12 +2412,12 @@
       "id": "SED-100",
       "set": 1,
       "type": "single",
-      "stem": "Which monitor is continuous across procedural sedation, MAC, and TIVA/GA?",
+      "stem": "Which pair should be continuously observed during procedural sedation/MAC because oxygenation can remain normal briefly despite deteriorating ventilation?",
       "options": [
-        "Heart rate and pulse oximetry",
-        "Core temperature",
-        "Invasive arterial pressure",
-        "Advanced hemodynamic monitoring"
+        "Pulse oximetry plus ventilation monitoring such as capnography",
+        "Temperature plus urine output",
+        "Noninvasive BP plus temperature",
+        "ECG plus urine output"
       ],
       "answer": [
         0
