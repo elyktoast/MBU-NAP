@@ -4975,7 +4975,7 @@
       "id": "MON-201",
       "set": 1,
       "type": "single",
-      "stem": "When does NIBP predictive usefulness decline during changing hemodynamics?",
+      "stem": "During rapidly changing hemodynamics, at what NIBP cycle interval does predictive usefulness begin to decline?",
       "options": [
         "When intervals exceed about 3 minutes",
         "When intervals exceed 10 minutes",
@@ -4999,7 +4999,7 @@
       "id": "MON-202",
       "set": 1,
       "type": "single",
-      "stem": "In a premature infant with a PDA, which arm best reflects cerebral perfusion?",
+      "stem": "A premature infant with a PDA needs a pressure that best reflects cerebral perfusion. Which limb should be used?",
       "options": [
         "Right arm (preductal)",
         "Left arm (postductal)",
@@ -5023,7 +5023,7 @@
       "id": "MON-203",
       "set": 1,
       "type": "multi",
-      "stem": "Which factors impair NIBP reliability? (Select 4)",
+      "stem": "Which FOUR factors can make oscillometric NIBP less reliable? (Select 4)",
       "options": [
         "Arrhythmia",
         "Motion",
@@ -5052,7 +5052,7 @@
       "id": "MON-204",
       "set": 1,
       "type": "single",
-      "stem": "You are about to induce a 70-year-old with hypertension. How should you set the NIBP cycle?",
+      "stem": "A 70-year-old hypertensive patient is about to be induced. How should NIBP cycling be adjusted during this unstable period?",
       "options": [
         "More frequent, every 1–5 minutes",
         "Every 10 minutes to reduce cuff trauma",
@@ -5076,7 +5076,7 @@
       "id": "MON-205",
       "set": 1,
       "type": "single",
-      "stem": "What is the minimum NIBP frequency during anesthesia?",
+      "stem": "What is the longest acceptable routine interval between NIBP measurements during anesthesia?",
       "options": [
         "At least every 5 minutes",
         "At least every 10 minutes",
@@ -5100,7 +5100,7 @@
       "id": "MON-206",
       "set": 1,
       "type": "single",
-      "stem": "Why might more frequent BP checks be needed in patients with IHD?",
+      "stem": "Why should patients with ischemic heart disease often have BP measured more frequently than the minimum interval?",
       "options": [
         "Higher risk of perioperative MI and instability",
         "NIBP is inaccurate in IHD",
@@ -5124,7 +5124,7 @@
       "id": "MON-207",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a BMI of 52 has a conical upper arm. Why is cuff selection critical?",
+      "stem": "A patient with BMI 52 has a large conical upper arm. Why does cuff geometry matter?",
       "options": [
         "Larger, conical arms affect fit and accuracy",
         "Obese patients need a smaller cuff for a tight fit",
@@ -5148,7 +5148,7 @@
       "id": "MON-208",
       "set": 1,
       "type": "single",
-      "stem": "A patient has bilateral arm fistulas and both arms are tucked. Where can NIBP be measured?",
+      "stem": "Both upper extremities are unavailable because of dialysis fistulas and positioning. What is the best alternative NIBP site?",
       "options": [
         "The lower extremity",
         "Over one fistula",
@@ -5172,7 +5172,7 @@
       "id": "MON-209",
       "set": 1,
       "type": "single",
-      "stem": "A patient's NIBP is 180/100 with a cuff that is too small. What is the MOST likely true BP?",
+      "stem": "NIBP reads 180/100 with a visibly undersized cuff. How should the displayed pressure be interpreted?",
       "options": [
         "Lower than displayed",
         "Higher than displayed",
@@ -5196,7 +5196,7 @@
       "id": "MON-210",
       "set": 1,
       "type": "single",
-      "stem": "A patient's arm is elevated above heart level during surgery. NIBP reads 90/50. What is MOST likely?",
+      "stem": "An arm is elevated well above heart level and NIBP reads 90/50. What error should be suspected?",
       "options": [
         "The true BP may be higher than displayed",
         "The true BP is lower than displayed",
@@ -5220,7 +5220,7 @@
       "id": "MON-211",
       "set": 1,
       "type": "single",
-      "stem": "Which statement about oscillometric NIBP is correct?",
+      "stem": "Which statement best describes how oscillometric devices determine SBP and DBP?",
       "options": [
         "Systolic and diastolic are estimated with device algorithms",
         "Systolic is measured directly from Korotkoff sounds by the device",
@@ -5244,7 +5244,7 @@
       "id": "MON-212",
       "set": 1,
       "type": "multi",
-      "stem": "For a carotid endarterectomy in a patient with prior TIA, which additional monitors might you add beyond standard ASA monitors? (Select 3)",
+      "stem": "For carotid endarterectomy in a patient with prior TIA, which THREE additional monitors may be reasonable beyond standard ASA monitors? (Select 3)",
       "options": [
         "Cerebral oximetry",
         "Processed EEG",
@@ -5272,7 +5272,7 @@
       "id": "MON-213",
       "set": 1,
       "type": "single",
-      "stem": "During cross-clamping for a carotid endarterectomy, you want to detect falling cerebral oxygen delivery. Which monitor is designed for this?",
+      "stem": "During carotid cross-clamping, which monitor is specifically intended to detect reduced cerebral oxygenation?",
       "options": [
         "Cerebral oximetry",
         "Esophageal temperature probe",
@@ -5296,7 +5296,7 @@
       "id": "MON-214",
       "set": 1,
       "type": "single",
-      "stem": "During a sitting craniotomy, you place a precordial stethoscope. What sound are you listening for?",
+      "stem": "During sitting craniotomy, what finding is a precordial stethoscope intended to detect?",
       "options": [
         "A mill-wheel murmur from venous air embolism",
         "Carotid bruits during neck positioning",
@@ -5320,7 +5320,7 @@
       "id": "MON-215",
       "set": 1,
       "type": "single",
-      "stem": "You plan to use processed EEG to guide depth. When should you obtain a baseline reading?",
+      "stem": "Processed EEG will be used to guide anesthetic depth. When should the reference baseline be obtained?",
       "options": [
         "Before induction",
         "After intubation",
@@ -5344,7 +5344,7 @@
       "id": "MON-216",
       "set": 1,
       "type": "single",
-      "stem": "For a calm 8-year-old having a mask induction, when should monitors ideally be applied?",
+      "stem": "A calm 8-year-old is scheduled for mask induction. When should standard monitors ideally be applied if tolerated?",
       "options": [
         "While the child is awake, if tolerated",
         "After induction, to avoid upsetting the child",
@@ -5368,7 +5368,7 @@
       "id": "MON-217",
       "set": 1,
       "type": "single",
-      "stem": "A patient is in beach chair position with the arterial transducer taped to the bed rail at hip level. Where should it be zeroed and leveled?",
+      "stem": "In beach-chair position, an arterial transducer is attached at hip level. Where should it actually be leveled and zeroed?",
       "options": [
         "At the right atrium (phlebostatic axis)",
         "At the bed rail",
@@ -5392,7 +5392,7 @@
       "id": "MON-218",
       "set": 1,
       "type": "multi",
-      "stem": "Before treating an abrupt arterial pressure change, what should you verify first? (Select 3)",
+      "stem": "Before treating an abrupt invasive arterial-pressure change, which THREE technical factors should be verified first? (Select 3)",
       "options": [
         "Transducer leveling",
         "Tubing and catheter patency",
@@ -5420,7 +5420,7 @@
       "id": "MON-219",
       "set": 1,
       "type": "single",
-      "stem": "You are placing an arterial line for a routine major case. Which artery is MOST commonly cannulated?",
+      "stem": "Which artery is most commonly chosen for routine invasive arterial pressure monitoring?",
       "options": [
         "Radial artery",
         "Femoral artery",
@@ -5444,7 +5444,7 @@
       "id": "MON-220",
       "set": 1,
       "type": "single",
-      "stem": "Before placing a radial arterial line, a colleague performs the Allen test and reports it is normal. How reliable is this?",
+      "stem": "A normal Allen test is documented before radial cannulation. How should this result be interpreted?",
       "options": [
         "It is unreliable",
         "It is required before every radial line",
@@ -5468,7 +5468,7 @@
       "id": "MON-221",
       "set": 1,
       "type": "single",
-      "stem": "A hypotensive patient with weak, thready radial pulses needs an arterial line. When does ultrasound help most?",
+      "stem": "A profoundly hypotensive patient has weak radial pulses and small vessels. When does ultrasound offer the greatest advantage for arterial cannulation?",
       "options": [
         "When pulses are weak or vessels are small",
         "When pulses are strong",
@@ -5492,7 +5492,7 @@
       "id": "MON-222",
       "set": 1,
       "type": "multi",
-      "stem": "Which are indications for an arterial line? (Select 2)",
+      "stem": "Which TWO situations are clear indications for an arterial line? (Select 2)",
       "options": [
         "Anticipated rapid or extreme BP changes",
         "Vasoactive drips requiring titration",
@@ -5519,7 +5519,7 @@
       "id": "MON-223",
       "set": 1,
       "type": "multi",
-      "stem": "Which are contraindications to arterial cannulation? (Select 3)",
+      "stem": "Which THREE findings are contraindications to arterial cannulation at a proposed site? (Select 3)",
       "options": [
         "Compromised collateral supply",
         "Local infection",
@@ -5547,7 +5547,7 @@
       "id": "MON-224",
       "set": 1,
       "type": "single",
-      "stem": "An arterial line reads 168/60, while the NIBP reads 140/64 and MAPs agree. The fast-flush shows multiple oscillations. What is happening?",
+      "stem": "The arterial line reads 168/60 while NIBP reads 140/64, MAPs agree, and the fast-flush test shows multiple oscillations. What explains the discrepancy?",
       "options": [
         "Underdamping",
         "Overdamping underestimates systolic",
@@ -5571,7 +5571,7 @@
       "id": "MON-225",
       "set": 1,
       "type": "single",
-      "stem": "An arterial line trace looks rounded with no dicrotic notch, and its systolic is 20 mmHg lower than the NIBP. What is the problem?",
+      "stem": "The arterial waveform is rounded, lacks a dicrotic notch, and shows a systolic pressure 20 mmHg below NIBP. What is the most likely problem?",
       "options": [
         "Overdamping underestimates systolic pressure",
         "Underdamping overestimates systolic pressure",
@@ -5595,7 +5595,7 @@
       "id": "MON-226",
       "set": 1,
       "type": "multi",
-      "stem": "Which factors degrade arterial line fidelity? (Select 3)",
+      "stem": "Which THREE system features commonly degrade arterial waveform fidelity? (Select 3)",
       "options": [
         "Air bubbles",
         "Excessive tubing and stopcocks",
@@ -5623,7 +5623,7 @@
       "id": "MON-227",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the fast-flush test. Which trace shows optimal damping?",
+      "stem": "A fast-flush test produces one or two oscillations before returning promptly to baseline. How should this system be classified?",
       "options": [
         "Trace 1, with one or two oscillations",
         "Trace 2, with many oscillations",
@@ -5652,7 +5652,7 @@
       "id": "MON-228",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the fast-flush test. Trace 2 shows many oscillations after the flush. What does this indicate?",
+      "stem": "A fast-flush test produces many oscillations after release. What does this pattern indicate?",
       "options": [
         "Underdamping",
         "Overdamping",
@@ -5681,7 +5681,7 @@
       "id": "MON-229",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the fast-flush test. Trace 3 returns slowly to baseline with no oscillations. What does this indicate?",
+      "stem": "A fast-flush trace returns slowly to baseline with essentially no oscillation. What does this pattern indicate?",
       "options": [
         "Overdamping",
         "Underdamping",
@@ -5710,7 +5710,7 @@
       "id": "MON-230",
       "set": 1,
       "type": "single",
-      "stem": "A patient's arterial line shows many oscillations after a fast flush. What is the MOST likely effect on SBP?",
+      "stem": "An arterial system is underdamped. What error should be expected in the displayed systolic pressure?",
       "options": [
         "SBP is overestimated",
         "SBP is underestimated",
@@ -5734,7 +5734,7 @@
       "id": "MON-231",
       "set": 1,
       "type": "single",
-      "stem": "A patient's arterial line shows no oscillations and a sluggish return after fast flush. What is MOST likely?",
+      "stem": "An arterial waveform is sluggish and the fast-flush test shows no oscillations. Which technical problem is most likely?",
       "options": [
         "Overdamping from air or clot",
         "Underdamping from stiff tubing",
@@ -5758,7 +5758,7 @@
       "id": "MON-232",
       "set": 1,
       "type": "single",
-      "stem": "You squeeze the flush device and watch the trace oscillate. What does this fast-flush test estimate?",
+      "stem": "What two dynamic properties of an arterial-monitoring system are assessed by the fast-flush test?",
       "options": [
         "Damping and natural frequency",
         "Cardiac output",
@@ -5782,7 +5782,7 @@
       "id": "MON-233",
       "set": 1,
       "type": "single",
-      "stem": "An arterial line's readings are inaccurate despite correct leveling. Which properties determine its dynamic fidelity?",
+      "stem": "Despite correct leveling, an arterial waveform remains inaccurate. Which properties determine dynamic fidelity?",
       "options": [
         "Damping and natural frequency",
         "Catheter size alone",
@@ -5806,7 +5806,7 @@
       "id": "MON-234",
       "set": 1,
       "type": "single",
-      "stem": "On an arterial waveform, a small notch appears on the downslope after the systolic peak. What does this represent?",
+      "stem": "On the arterial waveform, what physiologic event produces the dicrotic notch?",
       "options": [
         "Aortic valve closure",
         "Mitral valve closure",
@@ -5830,7 +5830,7 @@
       "id": "MON-235",
       "set": 1,
       "type": "single",
-      "stem": "On the arterial waveform, what is the lowest point before the next upstroke?",
+      "stem": "On an arterial waveform, what does the lowest point immediately before the next systolic upstroke represent?",
       "options": [
         "Diastolic pressure",
         "Systolic pressure",
@@ -5854,7 +5854,7 @@
       "id": "MON-236",
       "set": 1,
       "type": "single",
-      "stem": "The arterial monitor shows a MAP that differs from the formula estimate. How does the monitor derive MAP?",
+      "stem": "Why can the monitor-displayed MAP differ slightly from the simple bedside formula estimate?",
       "options": [
         "From the area under the arterial curve",
         "From systolic pressure alone",
@@ -5878,7 +5878,7 @@
       "id": "MON-237",
       "set": 1,
       "type": "single",
-      "stem": "A patient's arterial BP is 160/60. What is the pulse pressure?",
+      "stem": "If invasive arterial pressure is 160/60 mmHg, what is the pulse pressure?",
       "options": [
         "100 mmHg",
         "60 mmHg",
@@ -5902,7 +5902,7 @@
       "id": "MON-238",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a radial and a dorsalis pedis arterial line. The pedal systolic is 20 mmHg higher than radial, though MAPs match. Why?",
+      "stem": "Radial and dorsalis pedis arterial lines show similar MAPs, but pedal SBP is 20 mmHg higher. What best explains this?",
       "options": [
         "Peripheral wave reflection",
         "The pedal line is overdamped",
@@ -5926,7 +5926,7 @@
       "id": "MON-239",
       "set": 1,
       "type": "single",
-      "stem": "In patients with severe PVD, which BP value should be used?",
+      "stem": "In severe peripheral vascular disease with markedly different limb pressures, which extremity pressure should guide management?",
       "options": [
         "The greater value among extremities",
         "The lower value among extremities",
@@ -5950,7 +5950,7 @@
       "id": "MON-240",
       "set": 1,
       "type": "single",
-      "stem": "While flushing an arterial line, a nurse squeezes the flush device with air in the tubing. What complication can result?",
+      "stem": "Air remains in pressurized arterial-line tubing and the flush device is activated. Which complication can result?",
       "options": [
         "Air embolism",
         "Arterial thrombosis",
@@ -5974,7 +5974,7 @@
       "id": "MON-241",
       "set": 1,
       "type": "single",
-      "stem": "A neonate's arterial line flush runs for 24 hours at the standard continuous rate. About how much fluid does this add?",
+      "stem": "A neonatal arterial line receives the standard continuous flush for 24 hours. Approximately how much fluid may this add?",
       "options": [
         "About 72–144 mL per day",
         "About 5–10 mL per day",
@@ -5998,7 +5998,7 @@
       "id": "MON-242",
       "set": 1,
       "type": "multi",
-      "stem": "A patient has had a radial arterial line for 3 days in the ICU. Which complications should you watch for? (Select 4)",
+      "stem": "A radial arterial catheter has been in place for several days. Which FOUR complications should be monitored for? (Select 4)",
       "options": [
         "Thrombosis",
         "Infection",
@@ -6027,7 +6027,7 @@
       "id": "MON-243",
       "set": 1,
       "type": "multi",
-      "stem": "Which pediatric arterial sites are common? (Select 3)",
+      "stem": "Which THREE arterial cannulation sites are commonly used in pediatric patients? (Select 3)",
       "options": [
         "Umbilical artery",
         "Radial artery",
@@ -6055,7 +6055,7 @@
       "id": "MON-244",
       "set": 1,
       "type": "single",
-      "stem": "A neonate has an umbilical artery catheter. Which complications are associated with it?",
+      "stem": "Which complications are particularly associated with umbilical arterial catheters in neonates?",
       "options": [
         "Aortic thrombosis and coarctation",
         "Pneumothorax",
@@ -6079,7 +6079,7 @@
       "id": "MON-245",
       "set": 1,
       "type": "single",
-      "stem": "An arterial line connects through 2 m of tubing and four stopcocks. The trace is distorted. Which change improves accuracy?",
+      "stem": "An arterial waveform is distorted by 2 meters of tubing and multiple stopcocks. Which change best improves fidelity?",
       "options": [
         "Shorter tubing with fewer stopcocks",
         "Longer tubing",
@@ -6103,7 +6103,7 @@
       "id": "MON-246",
       "set": 1,
       "type": "single",
-      "stem": "A transducer is accidentally lowered 10 cm below the right atrium. What happens to BP readings?",
+      "stem": "The arterial transducer is accidentally lowered 10 cm below the right atrium. How will the displayed pressure change?",
       "options": [
         "They become falsely high",
         "They become falsely low",
@@ -6127,7 +6127,7 @@
       "id": "MON-247",
       "set": 1,
       "type": "single",
-      "stem": "A transducer is raised above the right atrium. What happens to BP readings?",
+      "stem": "The arterial transducer is moved above the right atrium. How will the displayed pressure change?",
       "options": [
         "They become falsely low",
         "They become falsely high",
@@ -6151,7 +6151,7 @@
       "id": "MON-248",
       "set": 1,
       "type": "single",
-      "stem": "Why can radial artery pressure underestimate central pressure in some cases?",
+      "stem": "Why can radial arterial pressure underestimate more central arterial pressure in some patients?",
       "options": [
         "Changes in hand vascular resistance",
         "Increased wave reflection in the radial artery",
@@ -6175,7 +6175,7 @@
       "id": "MON-249",
       "set": 1,
       "type": "single",
-      "stem": "A pulse oximeter compares absorption at two wavelengths to calculate SpO2. Which wavelengths are used?",
+      "stem": "Which two wavelengths are used by a conventional pulse oximeter to estimate arterial oxygen saturation?",
       "options": [
         "660 nm red and 940 nm infrared",
         "4.3 microns and 660 nm",
@@ -6199,7 +6199,7 @@
       "id": "MON-250",
       "set": 1,
       "type": "single",
-      "stem": "Pulse oximetry calculates saturation from how much light passes through tissue. Which law underlies this?",
+      "stem": "Which physical law relates light absorption to chromophore concentration and path length in pulse oximetry?",
       "options": [
         "Beer-Lambert law",
         "Boyle's law",
