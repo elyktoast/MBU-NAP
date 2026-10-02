@@ -8,17 +8,11 @@
     "id": "exam-1",
     "label": "Exam 1"
   },
-  "canonicalBank": "bp1",
-  "banks": [
-    {
-      "id": "bp1",
-      "label": "Basic Principles Exam 1",
-      "count": 3500
-    }
-  ],
+  "canonicalBank": null,
+  "banks": [],
   "studioSources": [
     {
-      "key": "basic-airway",
+      "key": "bp1-basic-airway",
       "label": "Basic Airway Assessment & Management",
       "groupLabel": "Basic Principles Exam 1",
       "data": "data/basic-airway.json",
@@ -32,7 +26,7 @@
       "count": 500
     },
     {
-      "key": "monitoring",
+      "key": "bp1-monitoring",
       "label": "Intraoperative Monitoring & Data Interpretation",
       "groupLabel": "Basic Principles Exam 1",
       "data": "data/monitoring.json",
@@ -46,7 +40,7 @@
       "count": 500
     },
     {
-      "key": "preop-assessment",
+      "key": "bp1-preop-assessment",
       "label": "Perioperative Assessment & Evaluation",
       "groupLabel": "Basic Principles Exam 1",
       "data": "data/preop-assessment.json",
@@ -60,7 +54,7 @@
       "count": 500
     },
     {
-      "key": "phases-ga",
+      "key": "bp1-phases-ga",
       "label": "Phases of General Anesthesia",
       "groupLabel": "Basic Principles Exam 1",
       "data": "data/phases-ga.json",
@@ -74,7 +68,7 @@
       "count": 500
     },
     {
-      "key": "sedation-mac-tiva",
+      "key": "bp1-sedation-mac-tiva",
       "label": "Sedation, MAC & TIVA",
       "groupLabel": "Basic Principles Exam 1",
       "data": "data/sedation-mac-tiva.json",
@@ -88,7 +82,7 @@
       "count": 500
     },
     {
-      "key": "perioperative-pain",
+      "key": "bp1-perioperative-pain",
       "label": "Perioperative Pain Management",
       "groupLabel": "Basic Principles Exam 1",
       "data": "data/perioperative-pain.json",
@@ -102,7 +96,7 @@
       "count": 500
     },
     {
-      "key": "misc-na-practice",
+      "key": "bp1-misc-na-practice",
       "label": "Miscellaneous Topics in Nurse Anesthesia Practice",
       "groupLabel": "Basic Principles Exam 1",
       "data": "data/misc-na-practice.json",
@@ -152,7 +146,7 @@
       "Miscellaneous Topics in Nurse Anesthesia Practice"
     ]
   },
-  "sessionEnvironment": "basic-principles-exam1-v1",
+  "sessionEnvironment": "equipment-bank1-practice-set1-v1",
   "defaultBankEngine": "canonical",
   "bankPage": "bank.html",
   "uidNamespace": "bp1"
