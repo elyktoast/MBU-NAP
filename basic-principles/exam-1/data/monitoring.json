@@ -6217,12 +6217,12 @@
       "id": "MON-251",
       "set": 1,
       "type": "single",
-      "stem": "How does a conventional pulse oximeter distinguish arterial blood from venous blood and surrounding tissue?",
+      "stem": "A pulse-oximeter probe transmits light through a finger containing arterial blood, venous blood, bone, and soft tissue. How does the device preferentially identify the arterial component?",
       "options": [
-        "It isolates the pulsatile signal",
-        "It measures venous saturation separately",
-        "It uses a third wavelength for tissue",
-        "It measures blood flow directly"
+        "It analyzes the pulsatile change in light absorption with each heartbeat",
+        "It separately measures venous saturation and subtracts it",
+        "It uses a third wavelength specific to arterial hemoglobin",
+        "It directly measures arterial blood flow"
       ],
       "answer": [
         0
@@ -6241,12 +6241,12 @@
       "id": "MON-252",
       "set": 1,
       "type": "single",
-      "stem": "Which type of hemoglobin saturation is reported by standard pulse oximetry?",
+      "stem": "A standard two-wavelength pulse oximeter displays SpO2 96% in a patient without dyshemoglobinemia. Which saturation definition is it reporting?",
       "options": [
-        "Functional saturation",
-        "Fractional saturation",
-        "Mixed venous saturation",
-        "Tissue oxygen saturation"
+        "Functional saturation: oxyhemoglobin relative to oxyhemoglobin plus deoxyhemoglobin",
+        "Fractional saturation including COHb and MetHb in the denominator",
+        "Mixed venous oxygen saturation",
+        "Regional tissue oxygen saturation"
       ],
       "answer": [
         0
@@ -6265,12 +6265,12 @@
       "id": "MON-253",
       "set": 1,
       "type": "single",
-      "stem": "A patient develops methemoglobinemia. Toward what SpO2 value does the monitor tend to drift regardless of true saturation?",
+      "stem": "After benzocaine exposure, PaO2 is high on 100% oxygen but the pulse oximeter remains near 85%. Which property of methemoglobin explains this characteristic reading?",
       "options": [
-        "About 85%",
-        "About 70%",
-        "About 95%",
-        "About 60%"
+        "Similar absorption of the two pulse-oximeter wavelengths drives the ratio toward a displayed saturation near 85%",
+        "MetHb is interpreted entirely as oxyhemoglobin, driving SpO2 toward 100%",
+        "MetHb blocks the plethysmographic pulse signal",
+        "MetHb causes true PaO2 to fall to the value corresponding to 85% saturation"
       ],
       "answer": [
         0
@@ -6289,12 +6289,12 @@
       "id": "MON-254",
       "set": 1,
       "type": "single",
-      "stem": "How does carboxyhemoglobin typically bias a standard pulse-oximeter reading?",
+      "stem": "A smoke-inhalation patient is confused and tachycardic with SpO2 99%. Why can the displayed saturation be dangerously reassuring?",
       "options": [
-        "Falsely high readings",
-        "Falsely low readings",
-        "No predictable effect on the displayed saturation",
-        "Readings drop to 0%"
+        "Conventional pulse oximetry may interpret carboxyhemoglobin as oxyhemoglobin and read falsely high",
+        "Carboxyhemoglobin drives standard SpO2 toward 85%",
+        "Carbon monoxide prevents the probe from detecting a pulse",
+        "Standard pulse oximetry directly measures PaO2 rather than hemoglobin species"
       ],
       "answer": [
         0
@@ -6340,12 +6340,12 @@
       "id": "MON-256",
       "set": 1,
       "type": "single",
-      "stem": "A septic patient is febrile and acidotic. How will the oxyhemoglobin curve shift, and what is the physiologic effect?",
+      "stem": "A septic patient is febrile, hypercapnic, and acidotic. How do these conditions alter hemoglobin's oxygen affinity?",
       "options": [
-        "Right shift; better tissue O2 release",
-        "Left shift, raising Hb affinity",
-        "No shift",
-        "Right shift, raising Hb affinity"
+        "They shift the dissociation curve right, facilitating oxygen unloading to tissues",
+        "They shift the curve left and increase oxygen affinity",
+        "They produce no meaningful shift",
+        "They shift the curve right and impair tissue unloading"
       ],
       "answer": [
         0
@@ -6364,11 +6364,11 @@
       "id": "MON-257",
       "set": 1,
       "type": "single",
-      "stem": "An ABG shows PaO2 60 mmHg. Approximately what SpO2 corresponds to this point on the oxyhemoglobin curve?",
+      "stem": "An ABG shows PaO2 60 mmHg in a patient without dyshemoglobinemia. Which approximate SpO2 should be expected from the standard oxyhemoglobin dissociation curve?",
       "options": [
         "About 90%",
         "About 80%",
-        "About 95%",
+        "About 99%",
         "About 70%"
       ],
       "answer": [
@@ -6388,12 +6388,12 @@
       "id": "MON-258",
       "set": 1,
       "type": "single",
-      "stem": "Why does oxygen saturation begin to fall rapidly once PaO2 reaches the steep portion of the dissociation curve?",
+      "stem": "A patient's PaO2 falls from 100 to 60 mmHg with only a modest saturation change, then falls further below 60 mmHg and SpO2 declines rapidly. What property of the oxyhemoglobin curve explains this?",
       "options": [
-        "Desaturation accelerates rapidly",
-        "Desaturation slows down",
-        "SpO2 becomes unmeasurable",
-        "PaO2 rises in step with SpO2 on this portion"
+        "Below the shoulder, the curve becomes steep so small PaO2 decreases produce large saturation losses",
+        "The curve becomes flatter below PaO2 60 mmHg",
+        "Pulse oximetry stops responding below PaO2 60 mmHg",
+        "Hemoglobin affinity becomes fixed once saturation reaches 90%"
       ],
       "answer": [
         0
@@ -6412,12 +6412,12 @@
       "id": "MON-259",
       "set": 1,
       "type": "single",
-      "stem": "A pulse oximeter reads 92%. Given typical device accuracy, what range likely contains the true saturation?",
+      "stem": "A well-perfused patient has a stable pulse-oximeter reading of 92%. With typical device accuracy in this range, which statement is most appropriate?",
       "options": [
-        "About 89–95%",
-        "About 82–102%",
-        "Exactly 92%",
-        "About 70–100%"
+        "The true arterial saturation may reasonably be a few percentage points above or below the displayed value",
+        "The true saturation is exactly 92% if the waveform is good",
+        "A displayed 92% implies true saturation could routinely be 70%",
+        "Pulse oximeter accuracy improves to ±0.1% below 95%"
       ],
       "answer": [
         0
@@ -6465,12 +6465,12 @@
       "id": "MON-261",
       "set": 1,
       "type": "single",
-      "stem": "A sedated patient on 6 L/min nasal oxygen becomes apneic but SpO2 remains 99% for several minutes. What limitation of pulse oximetry does this demonstrate?",
+      "stem": "During deep sedation on supplemental oxygen, respiratory effort ceases but SpO2 remains 99% for several minutes. Which monitoring principle is illustrated?",
       "options": [
-        "Supplemental O2 delays desaturation after apnea",
-        "Pulse oximetry measures CO2",
-        "Pulse oximetry fails during apnea",
-        "Pulse oximetry overestimates ventilation"
+        "Pulse oximetry can lag behind apnea because supplemental oxygen preserves arterial saturation despite absent ventilation",
+        "Normal SpO2 confirms adequate ventilation",
+        "Pulse oximetry directly detects rising PaCO2",
+        "Supplemental oxygen causes pulse oximetry to read falsely high despite normal arterial saturation"
       ],
       "answer": [
         0
@@ -6513,12 +6513,12 @@
       "id": "MON-263",
       "set": 1,
       "type": "single",
-      "stem": "A septic patient has SpO2 98% but worsening mottling and lactate. What clinically important variable does SpO2 not measure?",
+      "stem": "A septic patient has SpO2 98% but worsening lactate, cool mottled skin, and oliguria. Which conclusion is most appropriate?",
       "options": [
-        "Tissue oxygen delivery or use",
-        "Arterial saturation",
-        "Pulse rate",
-        "Pulsatile flow"
+        "Normal arterial saturation does not establish adequate global or regional oxygen delivery and utilization",
+        "The high SpO2 excludes tissue hypoxia",
+        "Pulse oximetry directly measures tissue oxygen extraction",
+        "Lactate cannot reflect oxygen-delivery problems when SpO2 is normal"
       ],
       "answer": [
         0
@@ -6537,12 +6537,12 @@
       "id": "MON-264",
       "set": 1,
       "type": "single",
-      "stem": "Which monitor is required to distinguish carboxyhemoglobin from oxyhemoglobin after smoke inhalation?",
+      "stem": "After smoke inhalation, standard SpO2 is 99% but carbon-monoxide exposure is suspected. Which test is required to quantify dyshemoglobin species?",
       "options": [
-        "A laboratory co-oximeter",
-        "A standard pulse oximeter",
-        "A capnograph",
-        "A BIS monitor"
+        "Multiwavelength co-oximetry",
+        "Standard two-wavelength pulse oximetry",
+        "Capnography",
+        "Processed EEG"
       ],
       "answer": [
         0
@@ -6561,12 +6561,12 @@
       "id": "MON-265",
       "set": 1,
       "type": "single",
-      "stem": "A patient with carbon-monoxide poisoning has SpO2 99%. What is the best interpretation?",
+      "stem": "A patient rescued from an enclosed-space fire has headache, confusion, and SpO2 99%. Which next measurement is most important for evaluating the suspected oxygen-carrying abnormality?",
       "options": [
-        "SpO2 is falsely high; co-oximetry is needed",
-        "Oxygenation is adequate",
-        "The patient has methemoglobinemia",
-        "The probe is misplaced on a vasoconstricted finger"
+        "Co-oximetry for carboxyhemoglobin",
+        "Repeat standard pulse oximetry on another finger",
+        "End-tidal CO2 alone",
+        "Inspired oxygen concentration alone"
       ],
       "answer": [
         0
@@ -6585,12 +6585,12 @@
       "id": "MON-266",
       "set": 1,
       "type": "single",
-      "stem": "SpO2 falls immediately after methylene blue administration despite unchanged ventilation and hemodynamics. What is the most likely explanation?",
+      "stem": "Immediately after IV methylene blue, the pulse oximeter abruptly falls despite unchanged ETCO2, hemodynamics, and clinical appearance. What should be considered before treating true hypoxemia?",
       "options": [
-        "Dyes interfere with pulse oximetry",
-        "Methylene blue causes true desaturation",
-        "Methylene blue causes COHb",
-        "Methylene blue causes hyperthermia"
+        "Optical interference from the dye can transiently distort pulse-oximeter readings",
+        "Methylene blue necessarily causes acute arterial desaturation",
+        "Methylene blue converts hemoglobin to carboxyhemoglobin",
+        "The finding confirms malignant hyperthermia"
       ],
       "answer": [
         0
@@ -6633,12 +6633,12 @@
       "id": "MON-268",
       "set": 1,
       "type": "single",
-      "stem": "During deep hypothermia at 18 °C, the pulse oximeter loses its waveform. What is the most likely mechanism?",
+      "stem": "During deep hypothermia, the pulse-oximeter waveform disappears while ECG remains stable. Which mechanism most directly limits the device?",
       "options": [
-        "Poor perfusion reduces the pulsatile signal",
-        "Hypothermia changes light absorption",
-        "The probe overheats",
-        "Hypothermia causes methemoglobinemia"
+        "Peripheral vasoconstriction reduces the pulsatile arterial signal needed for analysis",
+        "Hypothermia changes hemoglobin into methemoglobin",
+        "Cold tissue emits infrared light that overwhelms the probe",
+        "Low temperature eliminates arterial pulsatility despite preserved flow"
       ],
       "answer": [
         0
@@ -6657,7 +6657,7 @@
       "id": "MON-269",
       "set": 1,
       "type": "single",
-      "stem": "In a cold OR, which mechanism accounts for the greatest proportion of perioperative heat loss?",
+      "stem": "During a long open operation in a cool OR, the patient is exposed to surrounding walls and equipment without direct contact. Which heat-loss mechanism typically contributes the largest share under anesthesia?",
       "options": [
         "Radiation",
         "Conduction",
@@ -6681,12 +6681,12 @@
       "id": "MON-270",
       "set": 1,
       "type": "single",
-      "stem": "About 200 g of water evaporates from exposed bowel during an open case. Approximately how much heat is lost?",
+      "stem": "During an open abdominal case, approximately 200 g of water evaporates from exposed tissue. Using about 0.58 kcal lost per gram evaporated, what heat loss is attributable to evaporation?",
       "options": [
         "About 116 kcal",
         "About 58 kcal",
         "About 200 kcal",
-        "About 11.6 kcal"
+        "About 12 kcal"
       ],
       "answer": [
         0
@@ -6734,12 +6734,12 @@
       "id": "MON-272",
       "set": 1,
       "type": "single",
-      "stem": "Core temperature is 36 °C and skin temperature is 32 °C. What is the approximate mean body temperature?",
+      "stem": "Core temperature is 36.0 °C and mean skin temperature is 32.0 °C. Using mean body temperature ≈ 0.85(core) + 0.15(skin), what is the approximate value?",
       "options": [
-        "About 35.4 °C",
-        "About 34.0 °C",
-        "About 36.0 °C",
-        "About 33.2 °C"
+        "35.4 °C",
+        "34.0 °C",
+        "36.0 °C",
+        "33.2 °C"
       ],
       "answer": [
         0
@@ -6758,12 +6758,12 @@
       "id": "MON-273",
       "set": 1,
       "type": "single",
-      "stem": "Which temperature site can lag substantially during rapid active cooling or rewarming?",
+      "stem": "During rapid active rewarming, pulmonary-artery temperature rises promptly but rectal temperature changes slowly. How should the discrepancy be interpreted?",
       "options": [
-        "Rectal temperature",
-        "Esophageal temperature",
-        "Pulmonary artery temperature",
-        "Tympanic temperature"
+        "Rectal temperature can lag behind rapidly changing core temperature",
+        "Pulmonary-artery temperature is unreliable during rewarming",
+        "Rectal temperature always best represents instantaneous core temperature",
+        "The discrepancy proves probe malfunction"
       ],
       "answer": [
         0
@@ -6782,12 +6782,12 @@
       "id": "MON-274",
       "set": 1,
       "type": "single",
-      "stem": "Skin temperature is 33 °C while distal esophageal temperature is 36.5 °C. Which statement best reflects whole-body heat content?",
+      "stem": "Distal esophageal temperature is 36.5 °C while skin temperature is 33 °C. Which statement best describes whole-body thermal status?",
       "options": [
-        "Neither alone; skin poorly reflects mean temperature",
-        "Skin, since it reflects heat loss",
-        "Esophageal alone, since it equals mean body temperature",
-        "An average of the two with equal weighting"
+        "Neither value alone equals mean body temperature; core is weighted much more heavily than skin",
+        "Skin temperature alone best represents whole-body heat content",
+        "Distal esophageal temperature numerically equals mean body temperature",
+        "Core and skin should be averaged with equal weighting"
       ],
       "answer": [
         0
@@ -6806,12 +6806,12 @@
       "id": "MON-275",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 rises rapidly despite increased ventilation and HR climbs to 130, but temperature is only 37.2 °C. Why does this NOT rule out malignant hyperthermia?",
+      "stem": "During volatile anesthesia, ETCO2 rises rapidly despite increased minute ventilation and heart rate climbs to 130/min, but core temperature is only 37.2 °C. Which interpretation is safest?",
       "options": [
-        "Hyperthermia is a late sign of MH",
-        "MH rarely causes hyperthermia",
-        "MH begins with fever in most cases",
-        "Rising ETCO2 rules out MH"
+        "Malignant hyperthermia remains possible because hypercarbia and tachycardia can precede marked hyperthermia",
+        "The normal-range temperature effectively excludes malignant hyperthermia",
+        "Rising ETCO2 argues against malignant hyperthermia",
+        "Malignant hyperthermia usually begins with high fever before hypercarbia"
       ],
       "answer": [
         0
@@ -6859,12 +6859,12 @@
       "id": "MON-277",
       "set": 1,
       "type": "single",
-      "stem": "A lightly sedated patient undergoes a 30-minute hand procedure under regional anesthesia. When might continuous temperature monitoring add little useful information?",
+      "stem": "A lightly sedated, awake patient undergoes a 30-minute hand procedure under regional anesthesia and maintains normal thermoregulatory responses. Why may continuous core-temperature monitoring add little in this specific setting?",
       "options": [
-        "Often not, since thermoregulation is intact",
-        "Yes, it is required for all sedation",
-        "Yes, skin temperature is the best guide",
-        "No, it is contraindicated"
+        "Short duration and preserved thermoregulation make a clinically significant temperature change less likely",
+        "Temperature monitoring is contraindicated during regional anesthesia",
+        "Skin temperature is always sufficient during sedation",
+        "Temperature is never relevant in awake patients"
       ],
       "answer": [
         0
@@ -6907,12 +6907,12 @@
       "id": "MON-279",
       "set": 1,
       "type": "single",
-      "stem": "A patient under spinal anesthesia and another under general anesthesia both become hypothermic. What do these anesthetics have in common regarding thermoregulation?",
+      "stem": "Both a patient under general anesthesia and one under neuraxial anesthesia develop perioperative hypothermia. Which shared mechanism contributes?",
       "options": [
-        "Both inhibit afferent and efferent control",
-        "They affect afferent pathways alone",
-        "GA inhibits thermoregulation; neuraxial spares it",
-        "GA affects thermoregulation but neuraxial does not"
+        "Both can impair afferent/efferent thermoregulatory control and alter vasoconstriction thresholds",
+        "Only general anesthesia affects thermoregulation; neuraxial anesthesia cannot",
+        "Both increase the vasoconstriction threshold above normal",
+        "Neuraxial anesthesia increases central heat production enough to cause redistribution"
       ],
       "answer": [
         0
@@ -6959,12 +6959,12 @@
       "id": "MON-281",
       "set": 1,
       "type": "single",
-      "stem": "Why may multiple temperature sites be useful during active rewarming after cardiopulmonary bypass?",
+      "stem": "During active rewarming after cardiopulmonary bypass, nasopharyngeal and rectal temperatures differ substantially. Why can monitoring more than one site be useful?",
       "options": [
-        "Different sites change at different rates",
-        "Rectal temperature is the accurate reference",
-        "Skin temperature is the best guide",
-        "PA temperature lags behind rectal during rewarming"
+        "Temperature compartments equilibrate at different rates during rapid thermal change",
+        "Rectal temperature always changes first",
+        "All core sites should be identical at every moment",
+        "Pulmonary-artery temperature lags behind peripheral sites during rewarming"
       ],
       "answer": [
         0
@@ -6983,12 +6983,12 @@
       "id": "MON-282",
       "set": 1,
       "type": "single",
-      "stem": "Which criterion determines when ASA temperature monitoring is required rather than case duration alone?",
+      "stem": "A short anesthetic is expected to cause little thermal disturbance, whereas another case involves deliberate cooling and rewarming. Which principle determines the need for temperature monitoring?",
       "options": [
-        "When significant changes are expected",
-        "For cardiac surgery",
-        "In pediatric patients",
-        "When MH is suspected"
+        "Monitor when clinically significant temperature changes are intended, anticipated, or suspected rather than using duration alone",
+        "Temperature monitoring is required only in cardiac surgery",
+        "Only pediatric patients require temperature monitoring",
+        "Temperature monitoring begins only after malignant hyperthermia is suspected"
       ],
       "answer": [
         0
@@ -7007,12 +7007,12 @@
       "id": "MON-283",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, ETCO2 values fall 34 → 22 → 9 → 0 over four breaths while SpO2 remains 98%. What diagnosis should be assumed?",
+      "stem": "After intubation, ETCO2 values fall 34 → 22 → 9 → 0 mmHg over four breaths while SpO2 remains 98%. What should be assumed until proven otherwise?",
       "options": [
-        "Esophageal intubation with washout of swallowed CO2",
-        "Bronchospasm causing a shark-fin trace that flattens",
-        "Right mainstem intubation reducing ventilated lung",
-        "Sampling line occlusion from condensation in the trap"
+        "Esophageal intubation with transient washout of swallowed/gastric CO2",
+        "Bronchospasm",
+        "Right-mainstem intubation",
+        "Stable tracheal intubation with sampling delay"
       ],
       "answer": [
         0
@@ -7031,12 +7031,12 @@
       "id": "MON-284",
       "set": 1,
       "type": "single",
-      "stem": "Immediately after pneumoperitoneum, both PIP and plateau rise while ETCO2 increases gradually. Which single process best explains both findings?",
+      "stem": "Immediately after CO2 pneumoperitoneum, PIP and plateau pressure both rise while ETCO2 gradually increases. Which mechanism BEST explains the combined pattern?",
       "options": [
-        "Reduced compliance plus CO2 absorption from pneumoperitoneum",
-        "Bronchospasm with rising airway resistance and hypoventilation",
-        "A kinked ETT with rebreathing through the expiratory valve",
-        "Malignant hyperthermia with rising CO2 production and rigidity"
+        "Reduced respiratory compliance plus systemic absorption of insufflated CO2",
+        "Isolated bronchospasm plus decreased CO2 production",
+        "Kinked ETT plus expiratory-valve failure",
+        "Malignant hyperthermia causing both airway resistance and rigidity"
       ],
       "answer": [
         0
@@ -7055,12 +7055,12 @@
       "id": "MON-285",
       "set": 1,
       "type": "single",
-      "stem": "Low exhaled tidal volume, low PIP, and low ETCO2 alarms activate together. What problem should be suspected first?",
+      "stem": "During controlled ventilation, low exhaled tidal volume, low PIP, and low ETCO2 alarms occur simultaneously. Which problem should be checked first?",
       "options": [
-        "Circuit disconnection",
-        "Bronchospasm with high airway resistance",
-        "Pulmonary embolism with increased dead space",
-        "Exhausted CO2 absorbent with rebreathing"
+        "Breathing-circuit disconnection",
+        "Bronchospasm",
+        "Pulmonary embolism",
+        "Exhausted CO2 absorbent"
       ],
       "answer": [
         0
@@ -7107,12 +7107,12 @@
       "id": "MON-287",
       "set": 1,
       "type": "single",
-      "stem": "Inspired CO2 rises to 7 mmHg during low-flow anesthesia. What is the best immediate response while troubleshooting the cause?",
+      "stem": "During low-flow anesthesia, inspired CO2 rises to 7 mmHg. While identifying whether absorbent exhaustion or valve dysfunction is responsible, what immediate maneuver reduces rebreathing?",
       "options": [
-        "Raise fresh gas flow and check the absorbent and valves",
-        "Increase tidal volume and respiratory rate",
-        "Deepen anesthesia to lower CO2 production",
-        "Give albuterol for presumed bronchospasm and recheck"
+        "Increase fresh-gas flow",
+        "Increase tidal volume alone",
+        "Deepen anesthesia",
+        "Give a bronchodilator"
       ],
       "answer": [
         0
@@ -7131,12 +7131,12 @@
       "id": "MON-288",
       "set": 1,
       "type": "single",
-      "stem": "A COPD patient has ETCO2 45 and PaCO2 58 with an obstructive capnogram. What best explains the widened gradient?",
+      "stem": "A COPD patient has ETCO2 45 mmHg, PaCO2 58 mmHg, and an obstructive capnogram. Which mechanism best explains the 13-mmHg arterial-to-end-tidal gradient?",
       "options": [
-        "V/Q mismatch and dead space from obstructive disease",
-        "Rebreathing from exhausted absorbent in the circuit",
-        "Sampling line leak diluting the exhaled gas sample",
-        "Increased CO2 production from light anesthesia"
+        "Increased dead space and V/Q heterogeneity from obstructive lung disease",
+        "CO2 rebreathing alone",
+        "Sampling-line dilution as the necessary cause",
+        "Increased metabolic CO2 production"
       ],
       "answer": [
         0
@@ -7155,12 +7155,12 @@
       "id": "MON-289",
       "set": 1,
       "type": "single",
-      "stem": "During hip arthroplasty, ETCO2 falls abruptly with a preserved waveform and hypotension develops. What should be suspected?",
+      "stem": "During hip arthroplasty, ETCO2 abruptly falls with a preserved waveform at the same time profound hypotension develops. Ventilator settings are unchanged. Which mechanism should be suspected?",
       "options": [
-        "Reduced pulmonary blood flow, such as embolism",
-        "Circuit disconnection at the Y-piece",
-        "Rebreathing from exhausted absorbent",
-        "Bronchospasm with rising resistance after positioning"
+        "Reduced pulmonary perfusion, including an embolic event",
+        "Circuit disconnection",
+        "CO2 rebreathing",
+        "Bronchospasm"
       ],
       "answer": [
         0
@@ -7179,12 +7179,12 @@
       "id": "MON-290",
       "set": 1,
       "type": "single",
-      "stem": "FiO2, ETCO2, and anesthetic-agent readings all fall near zero simultaneously, but chest rise and SpO2 remain normal. What is most likely?",
+      "stem": "FiO2, ETCO2, and measured anesthetic-agent concentration all abruptly fall near zero, yet chest excursion, SpO2, and hemodynamics remain unchanged. What is most likely?",
       "options": [
-        "A sampling line disconnection or occlusion",
-        "A sudden drop in cardiac output",
+        "A common gas-sampling line disconnection or occlusion",
+        "Sudden loss of cardiac output",
         "Malignant hyperthermia",
-        "Bronchospasm"
+        "Isolated bronchospasm"
       ],
       "answer": [
         0
@@ -7203,12 +7203,12 @@
       "id": "MON-291",
       "set": 1,
       "type": "single",
-      "stem": "Only ETCO2 rises from 38 to 55 while FiO2 and agent concentration remain stable. Which source should be investigated first?",
+      "stem": "During stable ventilation, ETCO2 alone rises from 38 to 55 mmHg while FiO2 and measured anesthetic-agent concentrations remain stable. Which category should be investigated first?",
       "options": [
-        "A patient cause",
-        "An equipment problem",
-        "A calibration problem",
-        "A power problem"
+        "A patient/ventilation or metabolic cause",
+        "A shared gas-analyzer failure",
+        "A total power failure",
+        "An inspired-O2 calibration problem"
       ],
       "answer": [
         0
@@ -7227,12 +7227,12 @@
       "id": "MON-292",
       "set": 1,
       "type": "single",
-      "stem": "A notch appears in every alveolar plateau and the surgeon reports increasing abdominal tone. What is the best next step?",
+      "stem": "During controlled ventilation, a notch appears in every alveolar plateau and the surgeon reports increasing abdominal tone long after the last rocuronium dose. What should be assessed next?",
       "options": [
-        "Assess neuromuscular block and consider redosing",
-        "Give albuterol for bronchospasm",
-        "Increase fresh gas flow for rebreathing",
-        "Replace the capnography sampling line and recheck"
+        "Quantitative neuromuscular blockade and the need for additional relaxation",
+        "CO2 absorbent exhaustion",
+        "Sampling-line obstruction",
+        "Bronchospasm"
       ],
       "answer": [
         0
@@ -7275,12 +7275,12 @@
       "id": "MON-294",
       "set": 1,
       "type": "single",
-      "stem": "FiO2 is 0.50, but SpO2 is 88% and PaO2 is 55 mmHg. What does this demonstrate about inspired-O2 monitoring?",
+      "stem": "FiO2 is confirmed at 0.50, yet SpO2 is 88% and PaO2 is 55 mmHg. Which conclusion is correct?",
       "options": [
-        "Adequate inspired O2 does not guarantee arterial oxygenation",
-        "The O2 analyzer is miscalibrated and must be replaced",
-        "The pulse oximeter is inaccurate at FiO2 0.5",
-        "The patient is hyperventilating on the ventilator"
+        "Adequate inspired oxygen delivery does not guarantee adequate arterial oxygenation when shunt or V/Q mismatch is present",
+        "The oxygen analyzer must be miscalibrated",
+        "Pulse oximetry is inherently inaccurate at FiO2 0.50",
+        "The findings establish hyperventilation"
       ],
       "answer": [
         0
@@ -7299,12 +7299,12 @@
       "id": "MON-295",
       "set": 1,
       "type": "single",
-      "stem": "A new galvanic O2 sensor reads 18% on room air during checkout. What should be done before the machine is used?",
+      "stem": "During machine checkout, a galvanic O2 sensor reads 18% while exposed to room air. Which action is appropriate before clinical use?",
       "options": [
-        "Recalibrate to room air or replace the sensor before use",
-        "Proceed since the value is close to 21%",
-        "Calibrate it to 100% oxygen instead",
-        "Disable the low-O2 alarm to avoid nuisance alerts during checkout"
+        "Recalibrate it to the expected room-air value or replace the sensor if calibration fails",
+        "Proceed because 18% is sufficiently close to 21%",
+        "Calibrate only against 100% oxygen",
+        "Disable the low-O2 alarm"
       ],
       "answer": [
         0
@@ -7323,12 +7323,12 @@
       "id": "MON-296",
       "set": 1,
       "type": "single",
-      "stem": "During low-flow anesthesia, inspired O2 falls from 50% to 32% despite unchanged settings. What is the most likely cause?",
+      "stem": "During low-flow anesthesia, inspired O2 falls from 50% to 32% despite unchanged flowmeter settings and no pipeline problem. Which mechanism should be considered?",
       "options": [
-        "Metabolic O2 consumption lowers circuit O2 at low flows",
-        "The vaporizer is diluting oxygen",
-        "The CO2 absorbent is consuming oxygen",
-        "The O2 analyzer is inaccurate at low fresh gas flows"
+        "Patient oxygen consumption becomes a substantial fraction of delivered fresh oxygen at low flow",
+        "The volatile vaporizer chemically consumes oxygen",
+        "The CO2 absorbent consumes enough oxygen to explain the decline",
+        "Oxygen analyzers cannot function at low fresh-gas flow"
       ],
       "answer": [
         0
@@ -7347,12 +7347,12 @@
       "id": "MON-297",
       "set": 1,
       "type": "single",
-      "stem": "A pediatric airway laser case is being conducted at FiO2 0.90. What is the most important hazard?",
+      "stem": "During pediatric airway laser surgery, FiO2 remains 0.90 despite adequate oxygenation at lower concentrations. What avoidable hazard is increased most directly?",
       "options": [
-        "Airway fire from high oxygen concentration",
-        "Retinopathy of prematurity in all children",
-        "Absorption atelectasis in the trachea",
-        "Hypercarbia from high FiO2"
+        "Airway fire from an oxygen-enriched environment",
+        "Retinopathy of prematurity in every pediatric patient",
+        "Hypercarbia caused by high FiO2",
+        "Laser-induced methemoglobinemia"
       ],
       "answer": [
         0
@@ -7371,12 +7371,12 @@
       "id": "MON-298",
       "set": 1,
       "type": "single",
-      "stem": "After smoke inhalation, SpO2 is 100% despite confusion and tachycardia. What should be suspected?",
+      "stem": "A patient rescued from an enclosed-space fire is confused and tachycardic, but SpO2 is 100%. Which diagnosis remains important despite the reassuring pulse-oximeter value?",
       "options": [
-        "Carbon monoxide poisoning masking hypoxemia",
-        "Methemoglobinemia with true hypoxemia",
-        "Accurate SpO2 with anxiety-driven tachycardia",
-        "Probe malposition causing false reading"
+        "Carbon monoxide poisoning",
+        "Methemoglobinemia as the characteristic cause of a 100% reading",
+        "Anxiety alone",
+        "Pulse-oximeter probe failure as the only explanation"
       ],
       "answer": [
         0
@@ -7395,12 +7395,12 @@
       "id": "MON-299",
       "set": 1,
       "type": "single",
-      "stem": "After benzocaine spray, SpO2 settles near 85% and does not improve with 100% oxygen. What is the most likely diagnosis?",
+      "stem": "After topical benzocaine, SpO2 settles near 85% and changes little with 100% oxygen. Which diagnosis best explains this saturation behavior?",
       "options": [
         "Methemoglobinemia",
         "Carbon monoxide poisoning",
-        "Hypoventilation from sedation",
-        "Bronchospasm from the spray"
+        "Simple opioid hypoventilation",
+        "Bronchospasm"
       ],
       "answer": [
         0
@@ -7419,12 +7419,12 @@
       "id": "MON-300",
       "set": 1,
       "type": "single",
-      "stem": "During pediatric anesthesia, SpO2 falls after head flexion while the ETCO2 waveform remains unchanged. Which airway problem is most likely?",
+      "stem": "During pediatric anesthesia, SpO2 falls after marked head flexion while a persistent ETCO2 waveform remains. Breath sounds are now asymmetric. Which airway problem is most likely?",
       "options": [
-        "Mainstem intubation detected by oximetry first",
-        "Esophageal intubation detected by oximetry first",
-        "Circuit disconnection with preserved CO2",
-        "Bronchospasm with shark-fin trace"
+        "Endobronchial migration of the ETT",
+        "Esophageal intubation",
+        "Complete circuit disconnection",
+        "Bronchospasm"
       ],
       "answer": [
         0
