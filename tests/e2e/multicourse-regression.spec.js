@@ -90,4 +90,27 @@ test.describe('multi-course foundation', () => {
   });
 
 
+
+  test('Basic Principles Studio loads one unified 3500-question pool', async ({ page }) => {
+    await page.goto('/basic-principles/exam-1/studio.html');
+    await waitForStudioReady(page);
+    const state = await page.evaluate(() => ({
+      count: ALL.length,
+      uidCount: ALL_BY_UID.size,
+      groups: [...document.querySelectorAll('#sourceChecks > div > b')].map(x => x.textContent.trim()),
+      sources: document.querySelectorAll('#sourceChecks label').length,
+      topics: document.querySelectorAll('#topicChecks input').length,
+      jpg: ALL.some(q => q.img && q.img.kind === 'direct' && String(q.img.url).endsWith('.jpg')),
+      svg: ALL.some(q => q.img && q.img.kind === 'direct' && String(q.img.url).endsWith('.svg'))
+    }));
+    expect(state.count).toBe(3500);
+    expect(state.uidCount).toBe(3500);
+    expect(state.groups).toEqual(['Basic Principles Exam 1']);
+    expect(state.sources).toBe(7);
+    expect(state.topics).toBeGreaterThan(7);
+    expect(state.jpg).toBeTruthy();
+    expect(state.svg).toBeTruthy();
+    await expect(page.locator('#mbu-bank-picker option')).toHaveCount(1);
+  });
+
 });
