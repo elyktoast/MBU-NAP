@@ -32,9 +32,9 @@
       "id": "PHA-002",
       "set": 1,
       "type": "single",
-      "stem": "At incision, the patient remains unconscious and immobile, yet HR and BP surge sharply. Which anesthetic component is inadequate?",
+      "stem": "At incision, a paralyzed patient remains unconscious and immobile, yet HR and BP surge sharply despite adequate hypnotic concentration. Which component is most likely inadequate?",
       "options": [
-        "Analgesia",
+        "Analgesia/nociceptive blunting",
         "Amnesia",
         "Immobility",
         "Hypnosis"
@@ -179,7 +179,7 @@
       "id": "PHA-008",
       "set": 1,
       "type": "single",
-      "stem": "A patient becomes disoriented and amnestic with intact reflexes early in induction. Which stage is this?",
+      "stem": "Early during inhalation induction, a patient becomes disoriented and amnestic but still has intact protective reflexes and regular breathing. Which Guedel stage best fits?",
       "options": [
         "Stage 1",
         "Stage 2",
@@ -299,7 +299,7 @@
       "id": "PHA-013",
       "set": 1,
       "type": "single",
-      "stem": "A patient deepens within stage 3 from light surgical anesthesia toward a plane approaching overdose. Which framework describes this progression?",
+      "stem": "A spontaneously breathing patient is already in surgical anesthesia, then progressively loses more reflexes and ventilatory drive as anesthetic depth increases without yet reaching medullary collapse. Which framework describes this progression?",
       "options": [
         "Four planes within stage 3",
         "Two planes within stage 3",
@@ -575,7 +575,7 @@
       "id": "PHA-024",
       "set": 1,
       "type": "single",
-      "stem": "Two patients on the schedule have identical names. Before induction, which information from the ID band most directly distinguishes the patient and flags a major exposure risk?",
+      "stem": "Two patients scheduled in adjacent rooms have the same name. Which ID-band information should be actively reconciled before induction to distinguish the correct patient and identify a major exposure hazard?",
       "options": [
         "Identity, date of birth, and allergies",
         "Procedure, surgeon, and room number",
@@ -770,12 +770,12 @@
       "id": "PHA-032",
       "set": 1,
       "type": "single",
-      "stem": "Induction occurs before surgical-site verification, creating risk for which preventable event?",
+      "stem": "The team begins induction before completing patient/procedure/site verification. Which sentinel event is this verification step specifically designed to prevent?",
       "options": [
         "Wrong-site surgery",
         "Surgical site infection",
         "Awareness under anesthesia",
-        "PONV"
+        "Postoperative nausea and vomiting"
       ],
       "answer": [
         0
@@ -818,12 +818,12 @@
       "id": "PHA-034",
       "set": 1,
       "type": "single",
-      "stem": "After several minutes of tight-mask preoxygenation, which end-tidal O2 value best supports near-complete denitrogenation before apnea?",
+      "stem": "After several minutes of tight-mask 100% oxygen, SpO2 is 100%. Which additional measurement best demonstrates near-complete denitrogenation rather than merely normal arterial saturation?",
       "options": [
-        "Approximately 90%",
-        "Approximately 70%",
-        "Approximately 60%",
-        "Exactly 100%"
+        "End-tidal O2 approximately 90%",
+        "End-tidal O2 approximately 70%",
+        "End-tidal O2 approximately 60%",
+        "Inspired O2 exactly 100%"
       ],
       "answer": [
         0
@@ -943,12 +943,12 @@
       "id": "PHA-039",
       "set": 1,
       "type": "single",
-      "stem": "Two otherwise similar patients are fully denitrogenated; one has a substantially larger FRC. Which difference should be expected?",
+      "stem": "Two fully denitrogenated adults have the same oxygen consumption, but one has a substantially larger FRC. Which tradeoff should be expected?",
       "options": [
-        "Longer time to fill the reservoir but longer safe-apnea time",
-        "Shorter denitrogenation and shorter safe-apnea time",
-        "Shorter denitrogenation but longer safe-apnea time",
-        "No difference in denitrogenation or apnea tolerance"
+        "More time to fill the reservoir but longer safe-apnea time",
+        "Less time to denitrogenate and shorter safe-apnea time",
+        "Less time to denitrogenate but longer safe-apnea time",
+        "No meaningful difference in either process"
       ],
       "answer": [
         0
@@ -1015,7 +1015,7 @@
       "id": "PHA-042",
       "set": 1,
       "type": "single",
-      "stem": "A fully preoxygenated adult becomes apneic with an oxygen-rich FRC reservoir. Which approximate resting oxygen consumption primarily determines how quickly that reservoir is depleted?",
+      "stem": "A fully preoxygenated adult becomes apneic with an oxygen-rich FRC reservoir. Which approximate resting oxygen consumption is most relevant when estimating how rapidly that reservoir will be depleted?",
       "options": [
         "250 mL/min",
         "50 mL/min",
@@ -1092,7 +1092,7 @@
       "id": "PHA-045",
       "set": 1,
       "type": "single",
-      "stem": "Which patient has the least pulmonary oxygen reserve and therefore the strongest intrinsic-lung indication for apneic oxygenation during a difficult intubation?",
+      "stem": "Four patients require potentially prolonged intubation. Which one has the least intrinsic pulmonary oxygen reserve and therefore the strongest lung-disease indication for apneic oxygenation?",
       "options": [
         "A patient with pulmonary fibrosis",
         "A patient with mild intermittent asthma between attacks",
@@ -1217,12 +1217,12 @@
       "id": "PHA-050",
       "set": 1,
       "type": "single",
-      "stem": "A difficult-airway patient receives high-flow nasal oxygen before induction. How should this technique be integrated with conventional preoxygenation when a tight mask is feasible?",
+      "stem": "A predicted difficult-airway patient can tolerate a tight face mask and will also receive high-flow nasal oxygen. Which strategy best maximizes denitrogenation while preserving apneic oxygenation?",
       "options": [
-        "Use nasal oxygen as an adjunct; sealed circuit preoxygenation remains more effective for denitrogenation",
-        "Replace mask preoxygenation because nasal oxygen is always superior",
-        "Avoid mask preoxygenation during RSI",
-        "Treat both methods as equivalent whenever nasal flow is high"
+        "Use sealed-circuit preoxygenation and keep nasal oxygen as an adjunct",
+        "Replace mask preoxygenation because high-flow nasal oxygen is always superior",
+        "Avoid mask preoxygenation whenever rapid sequence induction is planned",
+        "Treat both techniques as interchangeable once nasal flow is high"
       ],
       "answer": [
         0
