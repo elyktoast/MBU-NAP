@@ -2488,14 +2488,14 @@
       "id": "PAIN-101",
       "set": 1,
       "type": "multi",
-      "stem": "Which timing factors should guide analgesia planning? (Select 2)",
+      "stem": "A case is ending sooner than expected after a long-acting analgesic was given. Which two drug-time characteristics MOST directly determine whether its effect will overlap emergence? (Select 2)",
       "options": [
         "Onset and peak",
         "Duration of action",
-        "The patient's dietary preferences",
-        "Patient weight",
-        "OR room temperature",
-        "Route of administration"
+        "Dietary preference",
+        "Body weight alone",
+        "Operating-room temperature",
+        "Route without regard to kinetics"
       ],
       "answer": [
         0,
@@ -2515,12 +2515,12 @@
       "id": "PAIN-102",
       "set": 1,
       "type": "single",
-      "stem": "Two patients of similar size get the same opioid dose; one is oversedated and the other has poor relief. What may explain this?",
+      "stem": "Two opioid-naive patients of similar age and size receive identical doses. One is oversedated while the other has poor analgesia despite comparable physiology. Which explanation BEST accounts for this difference?",
       "options": [
-        "Genetic polymorphisms",
-        "Differences in when each patient last ate",
-        "Differences in body fat percentage",
-        "Differences in blood type"
+        "Genetic polymorphisms affecting metabolism, transport, or receptor response",
+        "Different preoperative fasting intervals",
+        "Minor differences in body-fat percentage alone",
+        "ABO blood type"
       ],
       "answer": [
         0
@@ -2720,12 +2720,12 @@
       "id": "PAIN-110",
       "set": 1,
       "type": "single",
-      "stem": "What is the risk of treating the stress response primarily with opioids?",
+      "stem": "A clinician repeatedly increases opioid dosing to suppress tachycardia attributed to the surgical stress response. Which emergence complication becomes MOST concerning?",
       "options": [
-        "The patient may not breathe at emergence",
-        "The patient will have more pain after surgery",
-        "The patient will need more NSAIDs",
-        "The patient will have less PONV"
+        "Respiratory depression with inadequate spontaneous ventilation",
+        "Rebound hyperalgesia from insufficient opioid",
+        "Increased NSAID requirement",
+        "Reduced postoperative nausea"
       ],
       "answer": [
         0
@@ -2768,12 +2768,12 @@
       "id": "PAIN-112",
       "set": 1,
       "type": "single",
-      "stem": "For ENT laryngoscopy with high stimulation but little postop pain, which opioid is highlighted?",
+      "stem": "Direct laryngoscopy produces intense brief stimulation, but the planned ENT procedure is expected to cause little postoperative pain. Which opioid profile BEST matches this mismatch?",
       "options": [
-        "Remifentanil",
-        "Morphine",
-        "Hydromorphone",
-        "Methadone"
+        "Remifentanil because profound short-lived intraoperative analgesia can dissipate rapidly",
+        "Morphine because prolonged effect is needed after minimal-pain surgery",
+        "Hydromorphone because delayed peak best matches laryngoscopy",
+        "Methadone because very long duration prevents emergence stimulation"
       ],
       "answer": [
         0
@@ -2869,12 +2869,12 @@
       "id": "PAIN-116",
       "set": 1,
       "type": "single",
-      "stem": "A patient with CKD, a GI bleed history, and OSA needs analgesia. Why does the problem list matter?",
+      "stem": "A patient with chronic kidney disease, prior gastrointestinal bleeding, and obstructive sleep apnea requires postoperative analgesia. Which planning principle is MOST important?",
       "options": [
-        "It guides drug choice and technique",
-        "It determines incision placement",
-        "It predicts surgery duration",
-        "It sets the PACU discharge criteria"
+        "Comorbidities should drive selection of drugs, doses, and regional techniques",
+        "Procedure type alone should determine the regimen",
+        "Standard opioid dosing is appropriate because competing risks cancel out",
+        "Discharge criteria determine which analgesics are physiologically safe"
       ],
       "answer": [
         0
@@ -2973,12 +2973,12 @@
       "id": "PAIN-120",
       "set": 1,
       "type": "single",
-      "stem": "A patient scheduled for a total knee asks when her pain plan will start. When does postoperative pain management begin?",
+      "stem": "A patient scheduled for total knee arthroplasty asks when postoperative pain treatment begins. Which answer BEST reflects effective perioperative planning?",
       "options": [
-        "Preoperatively, with assessment and education",
-        "In PACU after the first pain score",
-        "At incision with the first opioid dose",
-        "At emergence when she wakes"
+        "Before surgery, with assessment, education, and a planned multimodal strategy",
+        "After the first PACU pain score confirms treatment is necessary",
+        "At incision when nociceptive input begins",
+        "At emergence once the patient can report pain"
       ],
       "answer": [
         0
@@ -3100,12 +3100,12 @@
       "id": "PAIN-125",
       "set": 1,
       "type": "single",
-      "stem": "A patient arrives on a PCA. What must you know?",
+      "stem": "A patient arrives for surgery with an active PCA and appears mildly sedated. Which information is MOST important before adding intraoperative analgesics?",
       "options": [
-        "Last dose and time of analgesics that may affect your plan",
-        "The PCA concentration",
-        "The PCA drug concentration on the label",
-        "Whether the PCA has a basal rate running"
+        "The amount and timing of recent analgesic exposure that may potentiate the anesthetic plan",
+        "Only the labeled PCA concentration",
+        "Only whether the device contains a basal infusion",
+        "The brand of PCA pump"
       ],
       "answer": [
         0
@@ -3224,12 +3224,12 @@
       "id": "PAIN-130",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance, what should guide subsequent opioid dosing?",
+      "stem": "After a modest induction opioid dose, a patient becomes markedly bradypneic and miotic. How should this response influence subsequent opioid administration?",
       "options": [
-        "The patient's response to premedication and induction doses",
-        "A fixed dose every 30 minutes",
-        "The expected case duration alone",
-        "The patient's weight"
+        "Reduce and individualize later dosing based on the observed response",
+        "Continue a fixed weight-based schedule",
+        "Ignore the response because maintenance requirements are independent",
+        "Increase dosing because miosis indicates inadequate analgesia"
       ],
       "answer": [
         0
@@ -3320,12 +3320,12 @@
       "id": "PAIN-134",
       "set": 1,
       "type": "single",
-      "stem": "What assessment helps guide opioid dosing during maintenance?",
+      "stem": "During maintenance, an opioid-treated patient develops small pupils and a falling spontaneous respiratory rate. How should these findings affect further opioid dosing?",
       "options": [
-        "Pupil size and respiratory rate",
-        "Temperature",
-        "Urine output",
-        "BIS alone, with no clinical signs"
+        "Treat them as evidence of opioid effect and titrate cautiously",
+        "Use temperature instead because pupils and ventilation do not reflect opioid effect",
+        "Use urine output as the primary opioid endpoint",
+        "Use BIS alone because clinical signs are unreliable"
       ],
       "answer": [
         0
@@ -3426,12 +3426,12 @@
       "id": "PAIN-138",
       "set": 1,
       "type": "single",
-      "stem": "You are considering an IV lidocaine infusion for an open bowel resection. What benefit should you expect?",
+      "stem": "An open bowel-resection patient is at high risk for opioid-related ileus and nausea. Which expected effect makes IV lidocaine a useful multimodal adjunct?",
       "options": [
-        "Good analgesia with less opioid",
-        "Benefit limited to cardiac surgery with bypass",
-        "More opioid use and PONV",
-        "A higher postoperative ileus risk that contraindicates its use"
+        "Analgesia with reduced opioid exposure and potential improvement in bowel recovery",
+        "Benefit confined to cardiopulmonary-bypass surgery",
+        "Higher opioid requirement despite improved pain",
+        "Predictable worsening of postoperative ileus"
       ],
       "answer": [
         0
@@ -3546,12 +3546,12 @@
       "id": "PAIN-143",
       "set": 1,
       "type": "single",
-      "stem": "A fentanyl infusion runs for 1 hour in one patient and 8 hours in another. After stopping, the second patient takes far longer to wake. What concept explains this?",
+      "stem": "Two patients receive the same fentanyl infusion rate, one for 1 hour and one for 8 hours. After the infusion stops, the second patient's plasma concentration declines much more slowly. Which pharmacokinetic concept BEST explains this duration-dependent recovery?",
       "options": [
         "Context-sensitive half-time",
-        "Elimination half-life",
-        "Volume of distribution alone",
-        "Effect-site equilibration"
+        "Elimination half-life alone",
+        "Initial volume of distribution",
+        "Effect-site equilibration time alone"
       ],
       "answer": [
         0
@@ -3570,12 +3570,12 @@
       "id": "PAIN-144",
       "set": 1,
       "type": "single",
-      "stem": "In context-sensitive half-time, what does the \"context\" refer to?",
+      "stem": "A drug's recovery curve becomes progressively longer as its infusion continues. In the term context-sensitive half-time, what specifically is the 'context'?",
       "options": [
-        "How long the infusion has run",
-        "The patient's age",
-        "The drug's potency",
-        "The infusion rate alone"
+        "Duration of the infusion",
+        "Patient age",
+        "Drug potency",
+        "Infusion rate independent of duration"
       ],
       "answer": [
         0
@@ -3594,12 +3594,12 @@
       "id": "PAIN-145",
       "set": 1,
       "type": "single",
-      "stem": "Why does CSHT increase as an infusion runs longer?",
+      "stem": "Why can fentanyl recovery become slower after a prolonged infusion even though the drug's intrinsic elimination pathways have not changed?",
       "options": [
-        "Tissue saturation and redistribution",
-        "The liver stops metabolizing the drug",
-        "The kidneys stop excreting the drug",
-        "Receptor upregulation with infusion length"
+        "Peripheral tissue stores accumulate and redistribute drug back to plasma after the infusion stops",
+        "Hepatic metabolism ceases during long infusions",
+        "Renal excretion stops once steady state is reached",
+        "Opioid receptors upregulate and release stored fentanyl"
       ],
       "answer": [
         0
@@ -3700,12 +3700,12 @@
       "id": "PAIN-149",
       "set": 1,
       "type": "single",
-      "stem": "A sufentanil infusion is stopped at skin closure after a 6-hour case. The patient takes 50 minutes to wake. What principle was missed?",
+      "stem": "A long sufentanil infusion is stopped only at skin closure, and emergence is substantially delayed. Which planning change BEST addresses the pharmacokinetic cause?",
       "options": [
-        "Stop infusions earlier",
-        "Stop the infusion at induction",
-        "Continue it into PACU",
-        "Increase it at closure"
+        "Stop the infusion sufficiently before the expected end of surgery",
+        "Stop the infusion immediately after induction",
+        "Continue the infusion through PACU to prevent redistribution",
+        "Increase the infusion near closure to accelerate elimination"
       ],
       "answer": [
         0
