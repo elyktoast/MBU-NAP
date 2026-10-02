@@ -7352,7 +7352,7 @@
       "id": "PRE-301",
       "set": 1,
       "type": "multi",
-      "stem": "Which four cardiovascular effects are expected with acute cocaine use? (Select 4)",
+      "stem": "A patient admits using cocaine shortly before arriving for urgent surgery. Which four cardiovascular findings should be anticipated during the acute sympathomimetic phase? (Select 4)",
       "options": [
         "Coronary vasospasm",
         "Hypertension",
@@ -7457,12 +7457,12 @@
       "id": "PRE-305",
       "set": 1,
       "type": "single",
-      "stem": "Severe dental decay, weight loss, and persistent tachycardia are most suggestive of chronic use of which substance?",
+      "stem": "A thin patient with severe dental decay is persistently tachycardic and hypertensive and reports several nights with little sleep. Which substance history deserves the most targeted follow-up?",
       "options": [
-        "Methamphetamine",
-        "Alcohol",
-        "Marijuana",
-        "Benzodiazepines"
+        "Methamphetamine use",
+        "Chronic alcohol use",
+        "Marijuana use",
+        "Benzodiazepine use"
       ],
       "answer": [
         0
@@ -7601,12 +7601,12 @@
       "id": "PRE-311",
       "set": 1,
       "type": "single",
-      "stem": "A trainee lists ASA physical status I through V. Which category is missing from the standard classification?",
+      "stem": "A brain-dead organ donor is brought to the operating room for procurement. A trainee labels the patient ASA V. Which correction is required?",
       "options": [
-        "ASA VI for a brain-dead organ donor",
-        "ASA 0 for a healthy child",
-        "ASA VII for terminal illness",
-        "ASA IV-E as a separate class rather than a modifier"
+        "Use ASA VI because this category is specifically for a brain-dead organ donor",
+        "Use ASA V-E because procurement is emergent",
+        "Use ASA IV because physiologic support is ongoing",
+        "Use ASA I because systemic disease no longer affects the donor"
       ],
       "answer": [
         0
@@ -7678,7 +7678,7 @@
       "id": "PRE-314",
       "set": 1,
       "type": "single",
-      "stem": "A patient has well-controlled hypertension without functional limitation. Which ASA class best fits?",
+      "stem": "A patient has well-controlled hypertension, takes one medication, and has no functional limitation or other systemic disease. Which ASA physical status best fits?",
       "options": [
         "ASA II",
         "ASA I",
@@ -7774,7 +7774,7 @@
       "id": "PRE-318",
       "set": 1,
       "type": "single",
-      "stem": "A brain-dead patient is taken to the OR for organ procurement. Which ASA class applies?",
+      "stem": "A brain-dead patient maintained for organ donation is taken to the operating room for procurement. Which classification applies regardless of the severity of prior systemic disease?",
       "options": [
         "ASA VI",
         "ASA V",
@@ -8042,10 +8042,10 @@
       "id": "PRE-329",
       "set": 1,
       "type": "single",
-      "stem": "Which finding is an actual contraindication to giving midazolam for routine preoperative anxiolysis?",
+      "stem": "A patient requests routine midazolam premedication. Which history would make administration inappropriate rather than simply requiring dose adjustment or closer monitoring?",
       "options": [
         "Documented hypersensitivity to midazolam",
-        "Age over 50 years",
+        "Age 62 years",
         "Controlled hypertension",
         "Prior uncomplicated general anesthesia"
       ],
@@ -8234,12 +8234,12 @@
       "id": "PRE-337",
       "set": 1,
       "type": "single",
-      "stem": "A patient weighs 110 kg and is 1.75 m tall. Which BMI and category are correct?",
+      "stem": "A 110-kg patient is 1.75 m tall. Which calculation should most influence obesity-related preoperative risk stratification?",
       "options": [
-        "About 35.9 kg/m², obesity class II",
-        "About 31.4 kg/m², obesity class I",
-        "About 62.9 kg/m², obesity class III",
-        "About 40.2 kg/m², obesity class III"
+        "BMI ≈35.9 kg/m², obesity class II",
+        "BMI ≈31.4 kg/m², obesity class I",
+        "BMI ≈62.9 kg/m², obesity class III",
+        "BMI ≈40.2 kg/m², obesity class III"
       ],
       "answer": [
         0
@@ -8330,7 +8330,7 @@
       "id": "PRE-341",
       "set": 1,
       "type": "single",
-      "stem": "A BMI of 37.4 kg/m² falls into which category?",
+      "stem": "A patient has BMI 37.4 kg/m² with no other data yet available. Which obesity category should frame the subsequent comorbidity and airway screening?",
       "options": [
         "Obesity class II",
         "Obesity class I",
@@ -8402,12 +8402,12 @@
       "id": "PRE-344",
       "set": 1,
       "type": "single",
-      "stem": "According to the lecture, above what BMI should patients receive especially careful screening before outpatient surgery?",
+      "stem": "An ambulatory center uses the lecture threshold to trigger especially careful obesity-related screening. A patient has BMI 31 kg/m². Which interpretation is correct?",
       "options": [
-        "30 kg/m²",
-        "25 kg/m²",
-        "35 kg/m²",
-        "45 kg/m²"
+        "The patient crosses the >30 kg/m² threshold for especially careful screening",
+        "The trigger is not reached until BMI exceeds 35 kg/m²",
+        "The trigger is not reached until BMI exceeds 45 kg/m²",
+        "Only BMI below 25 kg/m² requires additional screening"
       ],
       "answer": [
         0
@@ -8450,7 +8450,7 @@
       "id": "PRE-346",
       "set": 1,
       "type": "single",
-      "stem": "Using the lecture's ideal-body-weight formula, what is the approximate IBW for a 6-foot man?",
+      "stem": "A 6-foot man weighs 122 kg. Using the lecture's ideal-body-weight formula, which approximate IBW should be used when a medication or ventilator setting is based on IBW rather than total weight?",
       "options": [
         "77.6 kg",
         "72.6 kg",
