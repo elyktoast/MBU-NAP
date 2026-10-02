@@ -1959,7 +1959,7 @@
       "id": "PRE-081",
       "set": 1,
       "type": "multi",
-      "stem": "Which activities show ≥4 METs? (Select 2)",
+      "stem": "Which two activities most strongly support functional capacity of at least 4 METs? (Select 2)",
       "options": [
         "Singles tennis",
         "Walking up a hill",
@@ -1986,10 +1986,10 @@
       "id": "PRE-082",
       "set": 1,
       "type": "single",
-      "stem": "An 82-year-old seems puzzled when asked about climbing stairs. Which questions would BEST estimate her METs?",
+      "stem": "An older adult cannot relate to stair-climbing questions. Which alternative history best estimates functional capacity using familiar daily activities?",
       "options": [
-        "Shopping, walking store to store, pushing a mower",
-        "Hours of sleep, naps, and night awakenings",
+        "Shopping, walking between stores, or pushing a mower",
+        "Hours of sleep and daytime naps",
         "Driving distance and time behind the wheel",
         "Meals per day and recent weight change"
       ],
@@ -2010,12 +2010,12 @@
       "id": "PRE-083",
       "set": 1,
       "type": "single",
-      "stem": "A patient has never had a stress test, but he climbs two flights of stairs daily without symptoms. Why is this information useful?",
+      "stem": "A patient climbs two flights of stairs daily without symptoms but has never undergone stress testing. Why is the activity history still useful?",
       "options": [
-        "It reflects cardiopulmonary reserve",
-        "It replaces the need for an airway exam",
-        "It measures his ejection fraction",
-        "It predicts PONV risk"
+        "It provides a practical estimate of cardiopulmonary reserve",
+        "It substitutes for the airway examination",
+        "It directly measures ejection fraction",
+        "It predicts postoperative nausea risk"
       ],
       "answer": [
         0
@@ -2034,12 +2034,12 @@
       "id": "PRE-084",
       "set": 1,
       "type": "single",
-      "stem": "A 69-year-old with diabetes and hypertension cannot walk far because of severe knee arthritis and is scheduled for an elevated-risk procedure. What is the BEST next step?",
+      "stem": "A patient with diabetes and hypertension cannot walk far because of severe knee arthritis and is scheduled for an elevated-risk procedure. How should the limitation be interpreted?",
       "options": [
-        "Treat capacity as unclear and pursue further risk assessment",
-        "Assume more than 4 METs since the limit is orthopedic",
-        "Assume less than 4 METs and order a stress test for everyone",
-        "Proceed, since orthopedic limitation does not reflect cardiac risk"
+        "Functional capacity is uncertain, so further risk assessment may be needed",
+        "Functional capacity should be assumed above 4 METs because the limitation is orthopedic",
+        "Functional capacity should be assumed below 4 METs and stress testing ordered automatically",
+        "Orthopedic limitation makes functional capacity irrelevant to perioperative assessment"
       ],
       "answer": [
         0
@@ -2058,12 +2058,12 @@
       "id": "PRE-085",
       "set": 1,
       "type": "single",
-      "stem": "A 66-year-old walks briskly up two flights of stairs daily but reports new chest pain at rest last week. Can additional cardiac testing be skipped?",
+      "stem": "A patient can climb stairs briskly but developed new chest pain at rest last week. Which finding should drive the preoperative decision?",
       "options": [
-        "No; he has an unstable cardiac condition",
-        "Yes, since stair climbing shows good capacity",
-        "Yes, since his METs exceed 4 on stair climbing",
-        "Yes, if his ASA class is II"
+        "The new rest pain because active cardiac symptoms override reassuring functional capacity",
+        "The stair-climbing ability because it demonstrates adequate reserve",
+        "The MET estimate because values above 4 exclude unstable disease",
+        "ASA physical status because it supersedes symptom history"
       ],
       "answer": [
         0
@@ -2082,12 +2082,12 @@
       "id": "PRE-086",
       "set": 1,
       "type": "single",
-      "stem": "A patient runs 3 miles weekly but reported new chest pain at rest last week. What is the BEST next step?",
+      "stem": "A patient runs regularly but reports new chest pain at rest. What is the best next step?",
       "options": [
-        "Evaluate the active cardiac symptoms before surgery",
-        "Proceed since functional capacity is excellent",
-        "Proceed after a single normal ECG",
-        "Treat as low risk because of exercise tolerance"
+        "Evaluate the active cardiac symptoms before elective surgery",
+        "Proceed because excellent exercise tolerance lowers risk enough",
+        "Proceed if a resting ECG is normal",
+        "Classify the patient as low risk based on exercise capacity alone"
       ],
       "answer": [
         0
@@ -2106,12 +2106,12 @@
       "id": "PRE-087",
       "set": 1,
       "type": "single",
-      "stem": "A 66-year-old has an RCRI of 1, 5 METs, and is ASA III. How should these three measures be used together?",
+      "stem": "A patient is ASA III with an RCRI of 1 and functional capacity around 5 METs. How should these measures be interpreted?",
       "options": [
-        "Combined to estimate overall risk and guide testing",
-        "RCRI alone decides whether surgery proceeds",
-        "METs alone decide whether surgery proceeds",
-        "ASA class alone decides whether surgery proceeds"
+        "Together, because each describes a different part of perioperative risk",
+        "Use RCRI alone to decide whether surgery proceeds",
+        "Use METs alone to decide whether surgery proceeds",
+        "Use ASA status alone to decide whether surgery proceeds"
       ],
       "answer": [
         0
@@ -2130,12 +2130,12 @@
       "id": "PRE-088",
       "set": 1,
       "type": "single",
-      "stem": "The notes say \"<4 METs = further cardiac assessment.\" What does this mean practically?",
+      "stem": "A patient has functional capacity below 4 METs before an elevated-risk procedure. What does that threshold imply?",
       "options": [
-        "Consider guideline-based testing or consultation",
-        "Proceed, since risk is driven by the procedure",
-        "Proceed if the RCRI is 0",
-        "Use regional anesthesia"
+        "Further guideline-based cardiac risk assessment may be appropriate",
+        "Proceed because procedural risk is the only factor that matters",
+        "Proceed automatically if the RCRI is zero",
+        "Choose regional anesthesia instead of further assessment"
       ],
       "answer": [
         0
@@ -2154,12 +2154,12 @@
       "id": "PRE-089",
       "set": 1,
       "type": "single",
-      "stem": "A patient scrubs floors and swims weekly without symptoms. Which conclusion is BEST?",
+      "stem": "A patient swims and performs heavy housework without symptoms. Which conclusion best follows from that history?",
       "options": [
-        "≥4 METs with adequate reserve",
-        "<4 METs with poor reserve",
-        "Capacity is uncertain without a stress test",
-        "Intermediate capacity, requiring CPET"
+        "Functional capacity is at least 4 METs with useful reserve",
+        "Functional capacity is below 4 METs",
+        "Functional capacity cannot be estimated without formal stress testing",
+        "Functional capacity is intermediate and requires CPET"
       ],
       "answer": [
         0
@@ -2178,12 +2178,12 @@
       "id": "PRE-090",
       "set": 1,
       "type": "single",
-      "stem": "A patient says he \"walks a lot,\" but his wife says he gets short of breath after half a block. Which limitation of METs does this show?",
+      "stem": "A patient says he 'walks a lot,' but collateral history reveals dyspnea after half a block. Which limitation of history-based MET estimation does this illustrate?",
       "options": [
-        "METs are subjective and depend on patient report",
-        "METs are measured objectively by echo",
-        "METs are validated in children",
-        "METs predict pulmonary complications rather than cardiac"
+        "It is subjective and depends on the accuracy of reported activity",
+        "It is an objective value derived from echocardiography",
+        "It is validated only in pediatric patients",
+        "It predicts pulmonary complications but not cardiovascular risk"
       ],
       "answer": [
         0
@@ -2202,12 +2202,12 @@
       "id": "PRE-091",
       "set": 1,
       "type": "single",
-      "stem": "Which patient BEST fits \"poor functional capacity\"?",
+      "stem": "Which patient most clearly demonstrates poor functional capacity?",
       "options": [
-        "Unable to climb one flight of stairs",
+        "One who cannot climb a single flight of stairs because of symptoms",
         "One who climbs one flight slowly without symptoms",
         "One who scrubs floors without symptoms",
-        "One who walks up a hill daily without stopping"
+        "One who walks uphill daily without stopping"
       ],
       "answer": [
         0
@@ -2226,12 +2226,12 @@
       "id": "PRE-092",
       "set": 1,
       "type": "single",
-      "stem": "A 74-year-old reports carrying groceries up two flights of stairs without symptoms and has no active cardiac conditions. What does this suggest?",
+      "stem": "A patient carries groceries up two flights of stairs without symptoms and has no active cardiac condition. Which inference is most appropriate?",
       "options": [
-        "More than 4 METs, suggesting adequate reserve",
-        "Less than 4 METs, requiring stress testing",
-        "No information about cardiac risk",
-        "A need for cardiology clearance"
+        "Functional capacity is above 4 METs and suggests adequate reserve",
+        "Functional capacity is below 4 METs and mandates stress testing",
+        "The history provides no useful cardiovascular information",
+        "Cardiology clearance is required solely because of age"
       ],
       "answer": [
         0
@@ -2250,12 +2250,12 @@
       "id": "PRE-093",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a drug-eluting stent placed 4 months ago and is scheduled for an elective cholecystectomy. What is the BEST plan?",
+      "stem": "A patient had a drug-eluting coronary stent placed 4 months ago and now needs elective noncardiac surgery. Which plan best reflects the lecture's timing and antiplatelet principles?",
       "options": [
-        "Proceed if 3–6 months have passed, continuing aspirin",
-        "Proceed and stop aspirin 7 days before",
-        "Delay until 12 months and stop all antiplatelets",
-        "Proceed after stopping DAPT for 60 days"
+        "Proceed if the 3–6 month interval is acceptable and continue aspirin",
+        "Proceed but stop aspirin 7 days before surgery",
+        "Delay 12 months and stop all antiplatelet therapy",
+        "Proceed after stopping dual antiplatelet therapy for 60 days"
       ],
       "answer": [
         0
@@ -2274,12 +2274,12 @@
       "id": "PRE-094",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a bare metal stent placed 5 weeks ago and needs an elective hernia repair. Is the timing acceptable?",
+      "stem": "A patient had a bare-metal coronary stent placed 5 weeks ago and now requests elective hernia repair. How should the timing be interpreted?",
       "options": [
-        "Yes, since more than 30 days have passed",
-        "No, wait at least 6 months",
-        "No, wait at least 12 months",
-        "Yes, since 7 days is enough for any stent type"
+        "The interval exceeds 30 days, so timing is acceptable by the lecture rule",
+        "Elective surgery must wait at least 6 months",
+        "Elective surgery must wait at least 12 months",
+        "Seven days is sufficient after any coronary stent"
       ],
       "answer": [
         0
@@ -2298,11 +2298,11 @@
       "id": "PRE-095",
       "set": 1,
       "type": "single",
-      "stem": "A patient had an MI 5 weeks ago treated medically without PCI or surgery and is scheduled for an elective knee replacement. What is the BEST recommendation?",
+      "stem": "A patient had a myocardial infarction 5 weeks ago that was managed medically without PCI or CABG. Which timing principle applies to elective surgery?",
       "options": [
-        "Delay at least 60 days from the MI",
-        "Proceed, since 30 days is sufficient",
-        "Proceed if METs exceed 4 by history",
+        "Delay until at least 60 days after the MI",
+        "Proceed because more than 30 days have passed",
+        "Proceed if functional capacity exceeds 4 METs",
         "Delay 6 months as after CABG"
       ],
       "answer": [
@@ -2322,12 +2322,12 @@
       "id": "PRE-096",
       "set": 1,
       "type": "single",
-      "stem": "A patient had CABG 4 months ago and wants an elective shoulder replacement. What is the BEST advice?",
+      "stem": "A patient had CABG 4 months ago and requests elective shoulder replacement. Which timing recommendation best follows from the lecture?",
       "options": [
-        "Wait until more than 6 months after CABG",
-        "Proceed, since 30 days have passed",
-        "Proceed, since 60 days have passed",
-        "Proceed after 3 months with aspirin"
+        "Delay until more than 6 months after CABG",
+        "Proceed because 30 days have passed",
+        "Proceed because 60 days have passed",
+        "Proceed after 3 months if aspirin is continued"
       ],
       "answer": [
         0
@@ -2346,12 +2346,12 @@
       "id": "PRE-097",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a DES placed 7 weeks ago and is on aspirin and clopidogrel. The surgeon wants to stop both for an elective hernia repair next week. What is the BEST response?",
+      "stem": "A patient had a drug-eluting stent placed 7 weeks ago and takes aspirin plus clopidogrel. The surgeon proposes stopping both drugs for elective surgery next week. Which concern should take priority?",
       "options": [
-        "Advise delay; DES timing and DAPT make this unsafe",
-        "Proceed after stopping both drugs for 5 days",
-        "Proceed and restart DAPT in PACU",
-        "Proceed if an ECG is normal today"
+        "Premature interruption of antiplatelet therapy with very recent DES placement increases stent-thrombosis risk",
+        "Stopping both drugs for 5 days makes the procedure acceptable",
+        "Restarting dual antiplatelet therapy in PACU removes the excess risk",
+        "A normal ECG would make early surgery acceptable"
       ],
       "answer": [
         0
@@ -2370,7 +2370,7 @@
       "id": "PRE-098",
       "set": 1,
       "type": "single",
-      "stem": "The notes describe the MI that \"requires no intervention\" as which type?",
+      "stem": "A patient develops myocardial injury during severe anemia and hypotension without evidence of plaque rupture. Which MI mechanism best fits this scenario?",
       "options": [
         "Type II supply-demand mismatch",
         "Type I plaque rupture",
@@ -2394,11 +2394,11 @@
       "id": "PRE-099",
       "set": 1,
       "type": "multi",
-      "stem": "A 60-year-old is scheduled for a femoral bypass. Which findings in his history are risk factors for ischemic heart disease? (Select 5)",
+      "stem": "Which five findings increase this vascular-surgery patient's baseline risk for ischemic heart disease? (Select 5)",
       "options": [
         "40 pack-year smoking history",
         "Type 2 diabetes",
-        "The peripheral vascular disease itself",
+        "Peripheral vascular disease",
         "Long-standing hypertension",
         "Age 60",
         "Well-controlled hypothyroidism"
@@ -2424,12 +2424,12 @@
       "id": "PRE-100",
       "set": 1,
       "type": "single",
-      "stem": "Patient A has had exertional chest pain at the same level for 3 years. Patient B has had new chest pain at rest twice this week. Both are scheduled for elective knee replacements. How should they be managed?",
+      "stem": "One patient has unchanged exertional angina for three years; another developed new rest angina twice this week. Which preoperative distinction matters most?",
       "options": [
-        "A may proceed; B needs cardiac evaluation first",
-        "Both need cardiac evaluation first",
-        "Both may proceed",
-        "B may proceed; A needs cardiac evaluation first"
+        "The stable patient may proceed based on overall risk, while the patient with new rest angina needs cardiac evaluation first",
+        "Both patients require the same cardiac evaluation before surgery",
+        "Both may proceed because both have known angina",
+        "The patient with rest angina may proceed while the stable patient requires evaluation"
       ],
       "answer": [
         0
@@ -2448,12 +2448,12 @@
       "id": "PRE-101",
       "set": 1,
       "type": "single",
-      "stem": "A 62-year-old's stress test is equivocal and the cardiologist wants a definitive answer about coronary disease before a major vascular case. Which test provides it?",
+      "stem": "An equivocal stress test leaves uncertainty about coronary anatomy before major vascular surgery. Which test provides the most definitive anatomic information?",
       "options": [
         "Cardiac catheterization",
         "Exercise stress ECG",
         "Resting 12-lead ECG",
-        "Transthoracic echocardiogram"
+        "Transthoracic echocardiography"
       ],
       "answer": [
         0
@@ -2472,12 +2472,12 @@
       "id": "PRE-102",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old with severe knee arthritis cannot walk a block and needs stress testing before an aortic repair. Which test is appropriate?",
+      "stem": "A patient requires ischemia evaluation but cannot exercise because of severe arthritis. Which testing strategy best preserves the purpose of stress testing?",
       "options": [
-        "Pharmacologic stress with dobutamine or adenosine",
-        "Treadmill stress at a lower workload",
-        "Holter monitoring over 24 to 48 hours",
-        "Tilt-table testing with continuous ECG recording"
+        "Pharmacologic stress using an agent such as dobutamine or adenosine",
+        "Treadmill testing at a very low workload",
+        "Holter monitoring for 24–48 hours",
+        "Tilt-table testing with continuous ECG"
       ],
       "answer": [
         0
@@ -2496,12 +2496,12 @@
       "id": "PRE-103",
       "set": 1,
       "type": "single",
-      "stem": "A 66-year-old with CAD says, \"My cardiologist saw me last month.\" What is the MOST useful next step in your assessment?",
+      "stem": "A patient with known CAD says a cardiologist evaluated him last month. Which next step yields the most actionable perioperative information?",
       "options": [
-        "Find the recent cardiology note or clearance",
-        "Ask whether he takes a statin",
-        "Ask how much coffee he drinks",
-        "Order a chest X-ray if none in the past year"
+        "Obtain the recent cardiology assessment and recommendations",
+        "Ask only whether the patient takes a statin",
+        "Ask about daily caffeine intake",
+        "Order a chest radiograph if none was obtained this year"
       ],
       "answer": [
         0
@@ -2520,12 +2520,12 @@
       "id": "PRE-104",
       "set": 1,
       "type": "single",
-      "stem": "Two patients are scheduled for a colectomy: one with an EF of 55% and one with an EF of 30%. How does the lower EF change your assessment?",
+      "stem": "Two patients face the same colectomy; one has EF 55% and the other EF 30%. Which consequence is most important for the lower-EF patient?",
       "options": [
-        "Higher perioperative risk",
-        "It matters mainly if the procedure is cardiac surgery",
-        "It lowers anesthetic requirements without changing risk",
-        "It matters for cardiac surgery"
+        "Greater perioperative risk with implications for hemodynamic management",
+        "No important difference unless the surgery is cardiac",
+        "Lower anesthetic requirements without a change in overall risk",
+        "Relevance only if cardiopulmonary bypass is planned"
       ],
       "answer": [
         0
@@ -2544,7 +2544,7 @@
       "id": "PRE-105",
       "set": 1,
       "type": "single",
-      "stem": "A patient's preop BP is 148/94 on two readings. How is this classified?",
+      "stem": "A patient's preoperative blood pressure is repeatedly 148/94 mmHg. How should it be classified?",
       "options": [
         "Stage 2 hypertension",
         "Stage 1 hypertension",
@@ -2568,12 +2568,12 @@
       "id": "PRE-106",
       "set": 1,
       "type": "single",
-      "stem": "A patient's BP is 162/98 on the morning of elective surgery with no symptoms or end-organ damage. Which lecture statement BEST guides the decision?",
+      "stem": "A patient presents for elective surgery with BP 162/98 mmHg, no symptoms, and no evidence of end-organ injury. Which interpretation best follows from the lecture?",
       "options": [
-        "BP <180/<110 is not an independent risk predictor",
-        "Any BP over 140/90 requires cancellation",
-        "Stage 2 hypertension requires a cardiology consult",
-        "BP over 160 systolic requires a beta-blocker bolus"
+        "A pressure below 180/110 mmHg is not by itself an independent predictor of perioperative cardiovascular complications",
+        "Any pressure above 140/90 mmHg requires cancellation",
+        "Stage 2 hypertension automatically requires cardiology consultation",
+        "A systolic pressure above 160 mmHg requires an immediate beta-blocker bolus"
       ],
       "answer": [
         0
