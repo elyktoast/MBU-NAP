@@ -42,10 +42,21 @@ async function start(){
   if(!protectedCourse&&postAuthTarget){
     const info=window.MBUSupabase?.status?.()||{};
     if(info.signedIn&&info.legalAccepted===true&&info.accessStatus==='active'&&!info.recoveryMode){
+      let target=null;try{const candidate=new URL(postAuthTarget,location.href),root=new URL('../../',assetsBase);if(candidate.origin===root.origin&&candidate.pathname.startsWith(root.pathname+'basic-principles/'))target=candidate.href}catch{}
       sessionStorage.removeItem('mbu_post_auth_target');
-      location.replace(postAuthTarget);
-      return build;
+      if(target){location.replace(target);return build}
     }
+  }
+  if(protectedCourse){
+    const enforceAccess=()=>{
+      const info=window.MBUSupabase?.status?.()||{};
+      if(!(info.signedIn&&info.legalAccepted===true&&info.accessStatus==='active')&&!info.recoveryMode){
+        sessionStorage.setItem('mbu_post_auth_target',location.href);
+        location.replace(new URL('../../',assetsBase).href);
+      }
+    };
+    window.addEventListener('mbu:supabase-status',enforceAccess);
+    window.addEventListener('pageshow',event=>{if(event.persisted)enforceAccess()});
   }
   await Promise.all((cfg.styles||[]).map(loadStyle));
   for(const entry of cfg.scripts||[])await loadScript(entry);
