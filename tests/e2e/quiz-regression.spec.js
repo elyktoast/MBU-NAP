@@ -463,11 +463,12 @@ test.describe('canonical quiz regression', () => {
 
   test('SRNA Study Tool brand returns to the app home without a cache-busting refresh', async ({ page }) => {
     await page.goto(exam + '/combined.html');
+    const expectedHome=new URL('../../',page.url());
     await Promise.all([
-      page.waitForURL(url => url.pathname.endsWith('/SRNA-STUDY-TOOL/') && !url.searchParams.has('_mbu_refresh'), { waitUntil:'domcontentloaded' }),
+      page.waitForURL(url => url.origin===expectedHome.origin && url.pathname===expectedHome.pathname && !url.searchParams.has('_mbu_refresh'), { waitUntil:'domcontentloaded' }),
       page.locator('.mbu-global-nav__brand').click()
     ]);
-    expect(new URL(page.url()).pathname).toBe('/SRNA-STUDY-TOOL/');
+    expect(new URL(page.url()).pathname).toBe(expectedHome.pathname);
     expect(new URL(page.url()).searchParams.has('_mbu_refresh')).toBe(false);
   });
 
