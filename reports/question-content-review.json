@@ -3,12 +3,13 @@
   "totalQuestions": 2000,
   "summary": {
     "sameSetExactGroups": 0,
+    "sameSetNearDuplicateClusters": 1,
     "crossBankExactGroups": 0,
     "missingSourceTitle": 0,
     "missingSourceLocator": 0,
     "explanationsUnder8Words": 0,
-    "manualReviewCandidates": 6,
-    "manualReviewPairs": 17
+    "manualReviewPairs": 17,
+    "manualReviewCandidates": 6
   },
   "candidates": [
     {
