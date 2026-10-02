@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { clearAppState } = require('./helpers');
+const { clearAppState, seedSignedIn } = require('./helpers');
 
 async function waitForPageReady(page) {
   await page.waitForFunction(() => window.MBUPageReady && typeof window.MBUPageReady.then === 'function');
@@ -13,7 +13,7 @@ async function waitForStudioReady(page) {
 }
 
 test.describe('multi-course foundation', () => {
-  test.beforeEach(async ({ page }) => clearAppState(page));
+  test.beforeEach(async ({ page }) => { await clearAppState(page); await seedSignedIn(page); });
   test('Basic Principles is reachable from the course home and exposes Exam 1', async ({ page }) => {
     await page.goto('/');
     await waitForPageReady(page);
