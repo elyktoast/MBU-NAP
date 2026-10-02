@@ -461,12 +461,12 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#mbu-calc-display')).toHaveValue('0');
   });
 
-  test('SRNA Study Tool brand hard refreshes the current page with a cache-busting URL', async ({ page }) => {
+  test('SRNA Study Tool brand returns to the app home without a cache-busting refresh', async ({ page }) => {
     await page.goto(exam + '/combined.html');
-    const beforePath = new URL(page.url()).pathname;
     await page.locator('.mbu-global-nav__brand').click();
-    await page.waitForURL(url => url.searchParams.has('_mbu_refresh'));
-    expect(new URL(page.url()).pathname).toBe(beforePath);
+    await page.waitForURL(url => url.pathname.endsWith('/SRNA-STUDY-TOOL/') && !url.searchParams.has('_mbu_refresh'));
+    expect(new URL(page.url()).pathname).toBe('/SRNA-STUDY-TOOL/');
+    expect(new URL(page.url()).searchParams.has('_mbu_refresh')).toBe(false);
   });
 
   test('Combined fetches only the needed image asset when an image question is opened', async ({ page }) => {
