@@ -110,9 +110,42 @@ for(const [set,count] of Object.entries(manifest.banks.find(b=>b.id==='hazards')
   if(actual!==Number(count))err('hazards: set '+set+' count '+actual+' != '+count);
 }
 
+
+const bpManifest=read('basic-principles/exam-1/banks.json'),bpRoot='basic-principles/exam-1/',bpSeenUid=new Set(),bpSeenStem=new Map();
+let bpTotal=0,bpImages=0;
+for(const source of bpManifest.studioSources||[]){
+  const payload=read(bpRoot+source.data),qs=Array.isArray(payload)?payload:(payload.questions||[]);
+  if(qs.length!==Number(source.count))err('Basic Principles '+source.key+': count '+qs.length+' != manifest '+source.count);
+  if(!bpManifest.contentTaxonomy?.topics?.includes(source.label))err('Basic Principles '+source.key+': label is missing from taxonomy');
+  for(let i=0;i<qs.length;i++){
+    const q=qs[i]||{},id=String(q.id??''),uid=String(q.uid||bpManifest.uidNamespace+'-'+source.key.replace(/^bp1-/,'')+'-'+id),identity=source.key+'::'+id;
+    bpTotal++;
+    if(!id)err('Basic Principles '+source.key+': question '+(i+1)+' has no id');
+    if(bpSeenUid.has(uid))err('Basic Principles: duplicate uid '+uid);bpSeenUid.add(uid);
+    const stem=String(q.stem??q.q??'').trim(),opts=q.options??q.c,raw=q.answer??q.correct??q.a,ans=(Array.isArray(raw)?raw:[raw]).map(Number);
+    if(!stem)err('Basic Principles '+identity+' has no stem');
+    if(!Array.isArray(opts)||opts.length<2)err('Basic Principles '+identity+' has fewer than 2 options');
+    else{
+      const normalized=opts.map(norm);if(normalized.some(x=>!x))err('Basic Principles '+identity+' has a blank option');
+      if(new Set(normalized).size!==normalized.length)err('Basic Principles '+identity+' has duplicate answer choices');
+      if(!ans.length||ans.some(x=>!Number.isInteger(x)||x<0||x>=opts.length))err('Basic Principles '+identity+' has invalid answer indexes');
+      if(new Set(ans).size!==ans.length)err('Basic Principles '+identity+' repeats an answer index');
+    }
+    if(!['single','multi'].includes(q.type))err('Basic Principles '+identity+' has invalid question type '+String(q.type));
+    if(q.type==='single'&&ans.length!==1)err('Basic Principles '+identity+' is single-answer but keys '+ans.length+' answers');
+    if(q.type==='multi'&&ans.length<2)err('Basic Principles '+identity+' is multi-answer but keys fewer than 2 answers');
+    const topic=String(q.topic??q.lec??q.concept??'').trim();if(topic!==source.label)err('Basic Principles '+identity+' topic does not match source label');
+    if(!String(q.explanation??q.exp??q.rationale??'').trim())err('Basic Principles '+identity+' has no explanation/rationale');
+    const stemKey=norm(stem);if(stemKey){const prior=bpSeenStem.get(stemKey);if(prior)warn('Basic Principles exact duplicate stem: '+prior+' and '+identity);else bpSeenStem.set(stemKey,identity)}
+    const image=String(q.img??q.imageSvg??q.image??'').trim();if(image){bpImages++;const imagePath=path.join(root,bpRoot,image);if(!fs.existsSync(imagePath))err('Basic Principles '+identity+' references missing figure '+image)}
+  }
+}
+if(bpTotal!==3500)err('Basic Principles: total question count '+bpTotal+' != 3500');
+if(bpImages!==369)err('Basic Principles: figure-linked question count '+bpImages+' != 369');
+
 for(const w of warnings)console.warn('CONTENT WARNING: '+w);
 if(errors.length){
   console.error('\nCONTENT INTEGRITY FAILED\n- '+errors.join('\n- '));
   process.exit(1);
 }
-console.log('Content integrity passed across '+sources.length+' canonical question sources. Warnings: '+warnings.length+'.');
+console.log('Content integrity passed across Equipment plus '+(bpManifest.studioSources||[]).length+' Basic Principles sources ('+bpTotal+' Basic Principles questions, '+bpImages+' figure-linked questions). Warnings: '+warnings.length+'.');
