@@ -111,7 +111,7 @@ for(const [set,count] of Object.entries(manifest.banks.find(b=>b.id==='hazards')
 }
 
 
-const bpManifest=read('basic-principles/exam-1/banks.json'),bpRoot='basic-principles/exam-1/',bpSeenUid=new Set(),bpSeenStem=new Map();
+const bpManifest=read('basic-principles/exam-1/banks.json'),bpRoot='basic-principles/exam-1/',bpSeenUid=new Set(),bpSeenRawId=new Set(),bpSeenStem=new Map();
 let bpTotal=0,bpImageRefs=0;const bpFigurePaths=new Set();
 for(const source of bpManifest.studioSources||[]){
   const payload=read(bpRoot+source.data),qs=Array.isArray(payload)?payload:(payload.questions||[]);
@@ -121,6 +121,7 @@ for(const source of bpManifest.studioSources||[]){
     const q=qs[i]||{},id=String(q.id??''),uid=String(q.uid||bpManifest.uidNamespace+'-'+source.key.replace(/^bp1-/,'')+'-'+id),identity=source.key+'::'+id;
     bpTotal++;
     if(!id)err('Basic Principles '+source.key+': question '+(i+1)+' has no id');
+    if(bpSeenRawId.has(id))err('Basic Principles: duplicate raw question id '+id);bpSeenRawId.add(id);
     if(bpSeenUid.has(uid))err('Basic Principles: duplicate uid '+uid);bpSeenUid.add(uid);
     const stem=String(q.stem??q.q??'').trim(),opts=q.options??q.c,raw=q.answer??q.correct??q.a,ans=(Array.isArray(raw)?raw:[raw]).map(Number);
     if(!stem)err('Basic Principles '+identity+' has no stem');
@@ -142,6 +143,7 @@ for(const source of bpManifest.studioSources||[]){
   }
 }
 if(bpTotal!==3500)err('Basic Principles: total question count '+bpTotal+' != 3500');
+if(bpSeenRawId.size!==3500)err('Basic Principles: global raw question IDs are not unique ('+bpSeenRawId.size+'/3500 unique)');
 if(bpFigurePaths.size!==369)err('Basic Principles: unique referenced figure count '+bpFigurePaths.size+' != 369');
 const figureRoot=path.join(root,bpRoot,'figures'),diskFigures=[];
 for(const dirent of fs.readdirSync(figureRoot,{withFileTypes:true}))if(dirent.isDirectory())for(const file of fs.readdirSync(path.join(figureRoot,dirent.name)))diskFigures.push('figures/'+dirent.name+'/'+file);
