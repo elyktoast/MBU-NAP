@@ -79,7 +79,7 @@ Adaptive 2.1 extends the frozen learning architecture without introducing a seco
 
 ## Multi-course foundation
 
-Equipment Exam 1 remains the reference implementation, but shared behavior is course-agnostic. New course pages set `window.MBU_CONTEXT` before the shared bootstrap loads. The context supplies a course ID, course label, course URL, and exam URL.
+Basic Principles is the only currently published course. Equipment Exam 1 remains an internal reference/regression implementation, but it must not appear in public course navigation. Shared behavior is course-agnostic. New course pages set `window.MBU_CONTEXT` before the shared bootstrap loads. The context supplies a course ID, course label, course URL, and exam URL.
 
 Course/exam learner state is isolated:
 
@@ -88,7 +88,7 @@ Course/exam learner state is isolated:
 - New bank storage keys should use the `mbu_course_` prefix so backup and cloud sync can preserve them across course switches.
 - Cloud snapshot import/export accepts and retains recognized multi-course store prefixes, so syncing one course does not discard another course's state.
 
-Basic Principles Exam 1 is the first second-course shell and intentionally starts with an empty bank manifest. Shared quiz, Studio, CAT, search, sync, analytics, and study-intelligence code must not be copied into the Basic Principles folder.
+Basic Principles Exam 1 is the active published course and intentionally uses an empty standalone-bank manifest because its Study Studio exposes one lecture-organized unified pool. Shared quiz, Studio, CAT, search, sync, analytics, and study-intelligence code must not be copied into the Basic Principles folder.
 
 ## Canonical Session v1
 
