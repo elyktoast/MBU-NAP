@@ -2605,7 +2605,7 @@
       "id": "MISC-106",
       "set": 1,
       "type": "single",
-      "stem": "During a stable case, a CRNA notices a subtle 6 mmHg rise in ETCO2 and investigates before an alarm occurs. Which human-performance concept is being demonstrated?",
+      "stem": "During a stable anesthetic, ETCO2 rises subtly from 36 to 42 mmHg before any alarm threshold is crossed. The CRNA notices the trend and investigates immediately. Which human-performance capability is most directly demonstrated?",
       "options": [
         "Vigilance",
         "Surgeon-timeline awareness",
@@ -2677,9 +2677,9 @@
       "id": "MISC-109",
       "set": 1,
       "type": "single",
-      "stem": "A provider relies heavily on automated alarms and stops actively scanning monitors. Which automation-related risk has developed?",
+      "stem": "A provider becomes accustomed to automation and waits for alarms rather than actively scanning waveforms and trends. Which human-factors hazard has developed?",
       "options": [
-        "A passive monitoring role with reduced vigilance",
+        "Passive monitoring with reduced vigilance",
         "Improved vigilance from lower workload",
         "Faster recognition because alarms are louder",
         "More active monitoring"
@@ -2802,12 +2802,12 @@
       "id": "MISC-114",
       "set": 1,
       "type": "single",
-      "stem": "During induction, nonessential discussion about lunch begins. Which communication principle should apply?",
+      "stem": "Nonessential conversation begins during a difficult induction while the anesthesia team is managing the airway. Which communication strategy best protects attention during this critical period?",
       "options": [
-        "Use a sterile-OR period with safety-related communication only",
-        "Apply the surgical time-out rule",
-        "Apply the handoff rule",
-        "Apply the sign-out rule"
+        "Use a sterile-OR interval with safety-related communication only",
+        "Repeat the surgical time-out",
+        "Begin the PACU handoff",
+        "Proceed to sign-out"
       ],
       "answer": [
         0
@@ -2878,10 +2878,10 @@
       "id": "MISC-117",
       "set": 1,
       "type": "single",
-      "stem": "After a 16-hour shift, a CRNA is so tired that drug calculations are impaired. How does the AANA define this state?",
+      "stem": "After a prolonged shift, a CRNA has overwhelming tiredness accompanied by impaired calculation and decision-making. Which AANA concept best describes this state?",
       "options": [
-        "Fatigue: overwhelming tiredness with impaired function",
-        "Normal end-of-shift tiredness",
+        "Fatigue with impaired function",
+        "Normal end-of-shift tiredness without impairment",
         "Sleepiness without performance effects",
         "Boredom"
       ],
@@ -3087,7 +3087,7 @@
       "id": "MISC-125",
       "set": 1,
       "type": "single",
-      "stem": "Which WHO hand-hygiene moment applies immediately before touching a patient?",
+      "stem": "Before the preoperative physical examination begins, the CRNA cleans their hands immediately before first patient contact. Which WHO hand-hygiene moment applies?",
       "options": [
         "Moment 1",
         "Moment 3",
@@ -3135,12 +3135,12 @@
       "id": "MISC-127",
       "set": 1,
       "type": "single",
-      "stem": "Which WHO hand-hygiene moment follows a body-fluid exposure risk?",
+      "stem": "After handling blood-contaminated tubing, the CRNA removes gloves. Which WHO hand-hygiene moment now applies?",
       "options": [
-        "Moment 3",
-        "Moment 2",
-        "Moment 4",
-        "Moment 5"
+        "Moment 3: after body-fluid exposure risk",
+        "Moment 2: before an aseptic procedure",
+        "Moment 4: after touching a patient",
+        "Moment 5: after touching surroundings"
       ],
       "answer": [
         0
@@ -3159,12 +3159,12 @@
       "id": "MISC-128",
       "set": 1,
       "type": "single",
-      "stem": "Which WHO hand-hygiene moment occurs after touching the patient?",
+      "stem": "After completing a physical examination and before moving to the clean anesthesia workstation, which WHO hand-hygiene moment applies?",
       "options": [
-        "Moment 4",
-        "Moment 1",
-        "Moment 3",
-        "Moment 5"
+        "Moment 4: after touching the patient",
+        "Moment 1: before touching the patient",
+        "Moment 3: after body-fluid exposure",
+        "Moment 5: after touching patient surroundings only"
       ],
       "answer": [
         0
@@ -3183,12 +3183,12 @@
       "id": "MISC-129",
       "set": 1,
       "type": "single",
-      "stem": "Which WHO hand-hygiene moment occurs after touching the patient's surroundings?",
+      "stem": "The CRNA adjusts the patient's bed rail and bedside equipment without touching the patient, then leaves the area. Which WHO hand-hygiene moment applies?",
       "options": [
-        "Moment 5",
-        "Moment 4",
-        "Moment 2",
-        "Moment 1"
+        "Moment 5: after touching patient surroundings",
+        "Moment 4: after touching the patient",
+        "Moment 2: before an aseptic procedure",
+        "Moment 1: before touching the patient"
       ],
       "answer": [
         0
@@ -3282,7 +3282,7 @@
       "id": "MISC-133",
       "set": 1,
       "type": "single",
-      "stem": "How frequently does the APSF recommendation cited in the lecture suggest hand hygiene during anesthesia care?",
+      "stem": "A department is benchmarking anesthesia hand-hygiene frequency against the APSF recommendation cited in the course. Which minimum frequency should it target during care?",
       "options": [
         "At least 8 times per hour",
         "At least once per case",
@@ -3383,12 +3383,12 @@
       "id": "MISC-137",
       "set": 1,
       "type": "single",
-      "stem": "A patient develops a preventable SSI after hip replacement. How does CMS generally treat this type of event in the cited framework?",
+      "stem": "A preventable surgical-site infection follows hip replacement and is classified under the cited CMS quality framework. Which financial implication is emphasized?",
       "options": [
-        "As preventable and not reimbursable",
-        "As unavoidable and fully reimbursed",
-        "As reimbursable if documented",
-        "As solely the surgeon's responsibility"
+        "The event may be treated as preventable and not reimbursable",
+        "It is considered unavoidable and fully reimbursed",
+        "Documentation alone guarantees reimbursement",
+        "Financial responsibility automatically belongs only to the surgeon"
       ],
       "answer": [
         0
