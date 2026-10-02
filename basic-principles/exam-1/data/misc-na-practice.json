@@ -6171,7 +6171,7 @@
       "id": "MISC-251",
       "set": 1,
       "type": "single",
-      "stem": "A patient with influenza coughs openly into the room. Which link in the chain of infection is being demonstrated?",
+      "stem": "A patient with influenza coughs infectious respiratory material from the airway into the environment. Which chain-of-infection link does the coughing event represent?",
       "options": [
         "Portal of exit",
         "Portal of entry",
@@ -6195,7 +6195,7 @@
       "id": "MISC-252",
       "set": 1,
       "type": "single",
-      "stem": "A central venous catheter provides bacteria a route into the bloodstream. Which link in the chain of infection does this represent?",
+      "stem": "A central venous catheter breaches the skin and gives microorganisms direct access to the bloodstream. Which chain-of-infection link does the catheter site represent?",
       "options": [
         "Portal of entry",
         "Portal of exit",
@@ -6387,7 +6387,7 @@
       "id": "MISC-260",
       "set": 1,
       "type": "single",
-      "stem": "What minimum hand-hygiene frequency during anesthesia care is cited by the APSF recommendation?",
+      "stem": "An anesthesia department audits hand-hygiene frequency during active care against the APSF recommendation cited in the course. Which minimum target should trigger compliance?",
       "options": [
         "8 events per hour",
         "2 events per hour",
@@ -6630,12 +6630,12 @@
       "id": "MISC-270",
       "set": 1,
       "type": "single",
-      "stem": "Cefazolin is administered 90 minutes before incision. Why is this timing suboptimal?",
+      "stem": "Cefazolin is completed 90 minutes before incision in an otherwise routine case. Why is this timing outside the usual prophylactic target?",
       "options": [
-        "Most prophylactic antibiotics should be given within 60 minutes before incision",
-        "Cefazolin is effective only if given more than 90 minutes early",
-        "All antibiotics use a 120-minute window",
-        "Prophylactic antibiotics should begin after incision"
+        "Most prophylactic antibiotics should be administered within 60 minutes before incision",
+        "Cefazolin must be completed more than 90 minutes before incision",
+        "All prophylactic antibiotics use a 120-minute window",
+        "Prophylaxis should begin only after incision"
       ],
       "answer": [
         0
@@ -6726,12 +6726,12 @@
       "id": "MISC-274",
       "set": 1,
       "type": "single",
-      "stem": "A spine fusion reaches hour 5 after cefazolin was given at incision, and the redosing interval is 4 hours. What should happen?",
+      "stem": "Cefazolin was administered at incision for a spine fusion. At hour 5, the case is ongoing and the institutional redosing interval is 4 hours. Which action best maintains prophylactic tissue concentrations?",
       "options": [
-        "Redose cefazolin",
+        "Redose cefazolin now",
         "Wait until hour 6",
-        "Stop antibiotics after incision",
-        "Switch automatically to vancomycin"
+        "Do not redose after incision",
+        "Automatically switch to vancomycin"
       ],
       "answer": [
         0
@@ -6870,7 +6870,7 @@
       "id": "MISC-280",
       "set": 1,
       "type": "single",
-      "stem": "During a code in a patient with respiratory infection, which procedure is listed as an AGP with less certain transmission risk?",
+      "stem": "During resuscitation of a patient with respiratory infection, the team reviews procedures whose aerosol-transmission risk is less certain in the cited material. Which procedure belongs in that category?",
       "options": [
         "Defibrillation",
         "Tracheal intubation",
@@ -7138,7 +7138,7 @@
       "id": "MISC-291",
       "set": 1,
       "type": "single",
-      "stem": "A provider selects labetalol instead of ephedrine because the vials look alike. Which APSF priority is most directly implicated?",
+      "stem": "A provider accidentally selects labetalol instead of ephedrine because the vials look alike and are stored adjacent to one another. Which APSF safety priority most directly addresses this hazard?",
       "options": [
         "Medication safety",
         "Infection control",
@@ -7162,7 +7162,7 @@
       "id": "MISC-292",
       "set": 1,
       "type": "single",
-      "stem": "A difficult airway deteriorates because appropriate equipment is not immediately available. Which APSF priority is most directly implicated?",
+      "stem": "A known difficult airway progresses to severe hypoxemia because advanced airway equipment cannot be located quickly. Which APSF priority most directly addresses the preventable system vulnerability?",
       "options": [
         "Airway management skills and equipment",
         "Medication safety",
@@ -7258,7 +7258,7 @@
       "id": "MISC-296",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA relies on automated blood-pressure cycling and stops actively observing the patient. Which human-factors risk is illustrated?",
+      "stem": "Automated blood-pressure cycling is functioning normally, so the CRNA stops visually assessing the patient and fails to notice evolving pallor and surgical blood loss between readings. Which human-factors risk is illustrated?",
       "options": [
         "Passive monitoring with reduced vigilance",
         "Improved vigilance",
@@ -7282,12 +7282,12 @@
       "id": "MISC-297",
       "set": 1,
       "type": "single",
-      "stem": "Three hours into an uneventful case, a CRNA notices attention drifting. What is the safest response?",
+      "stem": "Several hours into an uneventful case, a CRNA notices attention drifting despite stable monitors. Which action best protects vigilance before a physiologic change occurs?",
       "options": [
-        "Deliberately refocus and reduce distraction",
-        "Relax because the case is stable",
+        "Deliberately refocus, reduce distractions, and re-engage active scanning",
+        "Relax because stable cases require less monitoring",
         "Rely on alarms until stimulation increases",
-        "Wait until a parameter changes"
+        "Wait for a parameter to change before increasing attention"
       ],
       "answer": [
         0
