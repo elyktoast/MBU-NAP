@@ -11060,12 +11060,12 @@
       "id": "PAIN-451",
       "set": 1,
       "type": "single",
-      "stem": "A patient is receiving magnesium infusion and develops weakness. What is a concern?",
+      "stem": "During a magnesium analgesic infusion, a patient shows greater-than-expected weakness after a nondepolarizing neuromuscular blocker. Which interaction should be suspected?",
       "options": [
-        "Magnesium can potentiate neuromuscular weakness",
-        "Magnesium causes seizures at therapeutic levels",
-        "Magnesium increases opioid tolerance",
-        "Magnesium causes hypertension"
+        "Magnesium potentiation of neuromuscular blockade",
+        "Magnesium-induced seizure activity",
+        "Acute opioid tolerance caused by magnesium",
+        "Magnesium-mediated sympathetic hypertension"
       ],
       "answer": [
         0
@@ -11084,12 +11084,12 @@
       "id": "PAIN-452",
       "set": 1,
       "type": "single",
-      "stem": "A patient's pain plan includes a transdermal fentanyl patch. What is a concern during surgery?",
+      "stem": "A patient wearing a transdermal fentanyl patch is placed under an active warming device during a long operation. Which pharmacokinetic concern is MOST important?",
       "options": [
-        "Heat exposure can increase absorption",
-        "Transdermal fentanyl stops working under anesthesia",
-        "The patch causes local skin burns with cautery",
-        "Patches cause immediate withdrawal"
+        "Heat can increase transdermal fentanyl absorption and opioid exposure",
+        "General anesthesia stops transdermal absorption",
+        "Electrocautery predictably ignites fentanyl patches",
+        "Warming causes immediate opioid withdrawal"
       ],
       "answer": [
         0
@@ -11108,12 +11108,12 @@
       "id": "PAIN-453",
       "set": 1,
       "type": "single",
-      "stem": "A patient with chronic pain, anxiety, and PTSD is scheduled for surgery. What is the BEST approach?",
+      "stem": "A chronic-pain patient with severe anxiety and PTSD is scheduled for major surgery. Why should these comorbidities be addressed in the perioperative pain plan?",
       "options": [
-        "Manage the comorbid conditions as part of the pain plan",
-        "Treat psychiatric conditions after discharge",
-        "Use opioids alone",
-        "Avoid regional techniques"
+        "Psychological comorbidity can amplify pain experience and complicate analgesic management",
+        "Psychiatric symptoms should be deferred until surgical pain resolves",
+        "Opioids alone reliably treat both chronic pain and PTSD",
+        "Regional techniques are contraindicated when anxiety is present"
       ],
       "answer": [
         0
@@ -11132,12 +11132,12 @@
       "id": "PAIN-454",
       "set": 1,
       "type": "single",
-      "stem": "A patient's pain assessment shows radiation and burning quality. What type of pain is suspected?",
+      "stem": "After spine surgery, a patient describes burning pain radiating down the leg with electric shocks and allodynia. Which mechanism should be specifically targeted in addition to routine incisional analgesia?",
       "options": [
         "Neuropathic pain",
-        "Superficial somatic pain",
+        "Superficial somatic pain only",
         "Visceral pain",
-        "Deep somatic pain"
+        "Deep somatic pain only"
       ],
       "answer": [
         0
@@ -11228,12 +11228,12 @@
       "id": "PAIN-458",
       "set": 1,
       "type": "single",
-      "stem": "After a hernia repair, a patient is sweating and nauseated but rates her pain 2/10. Why aren't these signs reliable pain indicators?",
+      "stem": "After hernia repair, a patient is diaphoretic and nauseated but reports pain 2/10. Which interpretation BEST avoids unnecessary opioid administration?",
       "options": [
-        "They have other causes",
-        "They indicate severe pain",
-        "They rarely occur with pain",
-        "They are the best measure of pain"
+        "Autonomic and gastrointestinal signs are nonspecific and may have causes other than pain",
+        "Sweating and nausea prove severe pain despite the patient's report",
+        "Patient self-report should be ignored when autonomic signs are present",
+        "Nausea is the most specific physiologic measure of postoperative pain"
       ],
       "answer": [
         0
@@ -11252,12 +11252,12 @@
       "id": "PAIN-459",
       "set": 1,
       "type": "single",
-      "stem": "A unit relies on nurse estimates of pain instead of patient reports. What is the risk?",
+      "stem": "A unit routinely substitutes clinicians' visual estimates for patient-reported pain scores. Which error is MOST likely?",
       "options": [
-        "Experience-related bias",
-        "More accurate assessment",
-        "Less documentation",
-        "Faster discharge"
+        "Systematic observer bias related to experience and assumptions",
+        "More accurate assessment than patient self-report",
+        "Elimination of cultural influences on pain assessment",
+        "Improved detection of neuropathic pain"
       ],
       "answer": [
         0
@@ -11300,11 +11300,11 @@
       "id": "PAIN-461",
       "set": 1,
       "type": "single",
-      "stem": "A patient's postoperative pain plan includes ICU admission for epidural monitoring. When is this arranged?",
+      "stem": "A thoracic epidural will require a higher-acuity postoperative location and specialized follow-up. When should these resources be secured?",
       "options": [
-        "Before surgery",
-        "After PACU arrival",
-        "After the first dose",
+        "Before surgery as part of the analgesic plan",
+        "After PACU arrival if the epidural still works",
+        "Only after the first breakthrough-pain episode",
         "On postoperative day one"
       ],
       "answer": [
@@ -11396,12 +11396,12 @@
       "id": "PAIN-465",
       "set": 1,
       "type": "single",
-      "stem": "A patient on IV morphine alone after a colectomy has severe PONV and constipation. What is the BEST adjustment?",
+      "stem": "After colectomy, morphine monotherapy controls pain poorly and causes severe nausea and constipation. Which change BEST improves the therapeutic balance?",
       "options": [
-        "Add multimodal analgesia",
-        "Increase the morphine and add a basal PCA rate",
-        "Stop antiemetics",
-        "Avoid non-opioid agents"
+        "Add nonopioid and/or regional multimodal strategies to reduce opioid requirement",
+        "Increase morphine and add a basal PCA infusion",
+        "Stop antiemetics so nausea can guide opioid titration",
+        "Avoid all nonopioid agents to prevent drug interactions"
       ],
       "answer": [
         0
@@ -11444,12 +11444,12 @@
       "id": "PAIN-467",
       "set": 1,
       "type": "single",
-      "stem": "A patient is receiving a ketorolac infusion and has renal impairment. What should be considered?",
+      "stem": "A patient with significant renal impairment is receiving ketorolac as part of a multimodal regimen. Which adjustment is MOST appropriate?",
       "options": [
-        "NSAID risk and alternative multimodal options",
-        "Increase ketorolac dose",
-        "Continue ketorolac at the standard dose",
-        "Give ketorolac together with morphine for synergy"
+        "Reconsider the NSAID and use renal-appropriate multimodal alternatives",
+        "Increase ketorolac because renal impairment reduces its effect",
+        "Continue the standard regimen without reassessment",
+        "Add morphine specifically to protect renal function"
       ],
       "answer": [
         0
@@ -11468,12 +11468,12 @@
       "id": "PAIN-468",
       "set": 1,
       "type": "single",
-      "stem": "A 75 kg patient has a hernia repair under GA. The surgeon asks whether he can infiltrate 30 mL of 1% lidocaine. Using about 4.5 mg/kg plain, is this within the limit?",
+      "stem": "A 75-kg patient has received no other local anesthetic. The surgeon requests 30 mL of 1% plain lidocaine. Using a maximum of about 4.5 mg/kg, which assessment is correct?",
       "options": [
-        "Yes: 300 mg is under the ~337 mg limit",
-        "No: 300 mg exceeds the ~225 mg limit for 75 kg",
-        "Yes: 30 mg is well under the limit",
-        "No: 3,000 mg exceeds every limit"
+        "300 mg is below the calculated ~337.5 mg limit, but cumulative dosing must still be tracked",
+        "300 mg exceeds a calculated 225 mg limit",
+        "The dose is only 30 mg",
+        "The dose is 3,000 mg"
       ],
       "answer": [
         0
@@ -11492,7 +11492,7 @@
       "id": "PAIN-469",
       "set": 1,
       "type": "single",
-      "stem": "After a 20 mL interscalene with 0.5% ropivacaine, the surgeon plans 20 mL of 0.5% ropivacaine at the incision. What is the total ropivacaine dose?",
+      "stem": "A patient receives 20 mL of 0.5% ropivacaine for an interscalene block, then the surgeon requests another 20 mL of 0.5% ropivacaine for infiltration. What cumulative dose must be evaluated against the patient's safe limit?",
       "options": [
         "200 mg",
         "20 mg",
@@ -11540,12 +11540,12 @@
       "id": "PAIN-471",
       "set": 1,
       "type": "single",
-      "stem": "A PACU patient given hydromorphone and midazolam becomes somnolent with RR 6 and SpO2 90%. What is the BEST order of interventions?",
+      "stem": "A PACU patient becomes somnolent with RR 6/min and SpO2 90% after hydromorphone and midazolam. Which sequence BEST prioritizes immediate safety while attempting to preserve analgesia?",
       "options": [
-        "Ventilate, flumazenil, then naloxone",
-        "Give naloxone 2 mg, then flumazenil, then support ventilation",
-        "Give more hydromorphone, then reassess breathing",
-        "Give dexmedetomidine, then flumazenil, then naloxone"
+        "Support ventilation first, consider flumazenil for the benzodiazepine, then titrate naloxone if opioid reversal remains necessary",
+        "Give a large naloxone dose before supporting ventilation",
+        "Administer additional hydromorphone, then reassess",
+        "Give dexmedetomidine before either reversal drug"
       ],
       "answer": [
         0
@@ -11564,12 +11564,12 @@
       "id": "PAIN-472",
       "set": 1,
       "type": "single",
-      "stem": "During emergence after laparotomy, RR is 26 with dilated pupils, BP 170/95, and the patient is still intubated and coughing. What is the BEST move?",
+      "stem": "During emergence after laparotomy, an intubated patient is coughing, hypertensive, has dilated pupils, and breathes 26/min with adequate neuromuscular recovery. Which response BEST balances analgesia with extubation safety?",
       "options": [
-        "Titrate opioid toward RR 12–14 while judging extubation readiness",
-        "Give a large opioid bolus to normalize BP before extubation criteria are met",
-        "Give naloxone to speed emergence and assess pain after",
-        "Deepen volatile and extubate deep to avoid coughing"
+        "Carefully titrate opioid while reassessing ventilation and extubation readiness rather than treating blood pressure alone",
+        "Give a large opioid bolus solely to normalize blood pressure",
+        "Give naloxone to speed emergence",
+        "Deepen volatile anesthesia and extubate regardless of readiness"
       ],
       "answer": [
         0
@@ -11588,12 +11588,12 @@
       "id": "PAIN-473",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a femoral nerve catheter has no pain at rest but cannot participate in PT because of pain with movement. What does this show?",
+      "stem": "A femoral nerve catheter provides excellent resting analgesia, but knee pain prevents participation in physical therapy. Which conclusion BEST guides adjustment of the plan?",
       "options": [
-        "Analgesia must be judged with function, not rest alone",
-        "Pain at rest is the measure that matters",
-        "PT pain should be treated with naloxone to reverse tolerance",
-        "The catheter should be removed immediately"
+        "Analgesic success should include functional pain with movement, not resting pain alone",
+        "The block is adequate because resting pain is controlled",
+        "Movement-related pain should not influence postoperative analgesia",
+        "The catheter should be removed because any movement pain proves block toxicity"
       ],
       "answer": [
         0
@@ -11612,12 +11612,12 @@
       "id": "PAIN-474",
       "set": 1,
       "type": "single",
-      "stem": "A patient's pain score is 9/10 but HR 72 and BP 118/70. What is the BEST interpretation?",
+      "stem": "A patient reports pain 9/10 while HR is 72/min and BP is 118/70 mm Hg. Which principle should govern the assessment?",
       "options": [
-        "Believe the report; vitals do not rule out pain",
-        "Pain is exaggerated because vitals are normal",
-        "Pain is controlled because vitals are normal",
-        "Pain should be treated once HR rises"
+        "Normal vital signs do not exclude severe pain; the patient's report remains central",
+        "Normal vital signs prove the pain is exaggerated",
+        "Analgesia should wait until sympathetic signs develop",
+        "Blood pressure is more reliable than self-report"
       ],
       "answer": [
         0
@@ -11636,12 +11636,12 @@
       "id": "PAIN-475",
       "set": 1,
       "type": "single",
-      "stem": "Which patient has the HIGHEST risk of chronic postsurgical pain?",
+      "stem": "Which patient combines both a procedure strongly associated with chronic postsurgical pain and a modifiable perioperative risk factor?",
       "options": [
-        "After a lateral thoracotomy with poorly controlled acute pain",
-        "After a laparoscopic appendectomy with good pain control",
-        "After a cataract extraction",
-        "After a carpal tunnel release with minimal pain"
+        "A thoracotomy patient with severe poorly controlled acute postoperative pain",
+        "A laparoscopic appendectomy patient with effective analgesia",
+        "A cataract patient with minimal discomfort",
+        "A carpal-tunnel patient with well-controlled pain"
       ],
       "answer": [
         0
@@ -11660,12 +11660,12 @@
       "id": "PAIN-476",
       "set": 1,
       "type": "single",
-      "stem": "A patient on chronic buprenorphine has uncontrolled pain after surgery. Which approach BEST fits?",
+      "stem": "A patient maintained on buprenorphine has severe postoperative pain despite nonopioid adjuncts. Which strategy BEST avoids precipitating withdrawal while treating the new pain burden?",
       "options": [
-        "Continue buprenorphine and add full agonist and multimodal agents",
-        "Stop buprenorphine and give nalbuphine for pain",
-        "Give naltrexone to reset the receptors before more opioids",
-        "Avoid opioids and rely on ice and elevation alone"
+        "Continue buprenorphine and add appropriate full-mu agonist and multimodal therapy as needed",
+        "Stop buprenorphine and give nalbuphine",
+        "Give naltrexone before additional opioid",
+        "Avoid all opioid analgesia"
       ],
       "answer": [
         0
@@ -11684,12 +11684,12 @@
       "id": "PAIN-477",
       "set": 1,
       "type": "single",
-      "stem": "A patient with opioid dependence receives naloxone for mild sedation and becomes agitated and tachycardic. What was the error?",
+      "stem": "A physically opioid-dependent patient with only mild sedation receives a large naloxone dose and becomes acutely agitated, hypertensive, and tachycardic. Which error MOST directly caused the deterioration?",
       "options": [
-        "Naloxone precipitated withdrawal; use the lowest safe dose",
-        "Naloxone was given too slowly to reach the brain",
-        "Naloxone caused rebound respiratory depression",
-        "Naloxone increased opioid effect"
+        "Excessive antagonist dosing precipitated withdrawal; naloxone should be titrated to the minimum effect needed",
+        "Naloxone was administered too slowly",
+        "Naloxone produced rebound opioid overdose",
+        "Naloxone increased mu-receptor agonism"
       ],
       "answer": [
         0
@@ -11708,12 +11708,12 @@
       "id": "PAIN-478",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives a large fentanyl bolus at induction for a short case and has delayed emergence. What planning concept applies?",
+      "stem": "A short procedure is induced with a large fentanyl bolus, and the patient remains slow to emerge after the surgery ends quickly. Which planning principle was missed?",
       "options": [
-        "Match opioid peak and duration to case length",
-        "Give more opioid at emergence",
-        "Avoid preoxygenation to shorten emergence",
-        "Use long-acting opioids for short cases"
+        "Match opioid onset, peak, and duration to the intensity and length of surgical stimulation",
+        "Use additional opioid at emergence to accelerate redistribution",
+        "Avoid preoxygenation when using fentanyl",
+        "Prefer long-acting opioids for all short procedures"
       ],
       "answer": [
         0
@@ -11732,12 +11732,12 @@
       "id": "PAIN-479",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives ketorolac early in a vascular case and has increased bleeding. What lecture guidance was missed?",
+      "stem": "Ketorolac is given early during a vascular procedure before bleeding risk and surgical hemostasis are clarified. Which planning principle was missed?",
       "options": [
-        "No NSAIDs until the end, after surgeon discussion",
-        "NSAIDs should be given at induction for preemption",
-        "NSAIDs are safe at any point in the case",
-        "NSAIDs replace all opioids"
+        "Coordinate NSAID timing with the surgeon and bleeding context, often near the end of the case",
+        "NSAIDs should always be given at induction",
+        "NSAID timing is unrelated to surgical bleeding considerations",
+        "NSAIDs should replace all opioid therapy"
       ],
       "answer": [
         0
@@ -11832,12 +11832,12 @@
       "id": "PAIN-483",
       "set": 1,
       "type": "single",
-      "stem": "A patient is on a PCA with 1-hour limit of 3 mg hydromorphone and has used it all. What is the BEST response?",
+      "stem": "A PCA patient has reached the programmed 1-hour hydromorphone limit yet continues to report severe pain. Which action BEST distinguishes undertreatment from unsafe escalation?",
       "options": [
-        "Reassess pain and consider adjusting the plan safely",
-        "Remove the 1-hour limit immediately to improve pain",
-        "Add a large basal rate without assessment",
-        "Stop the PCA and give naloxone"
+        "Reassess pain mechanism, sedation, ventilation, PCA use, and the broader analgesic plan before changing settings",
+        "Immediately remove the hourly limit",
+        "Add a large basal infusion without reassessment",
+        "Stop the PCA and administer naloxone"
       ],
       "answer": [
         0
@@ -11880,11 +11880,11 @@
       "id": "PAIN-485",
       "set": 1,
       "type": "single",
-      "stem": "A patient with renal impairment needs analgesia. Which option is MOST appropriate?",
+      "stem": "A patient with significant renal impairment requires postoperative analgesia. Which strategy BEST minimizes avoidable renal and metabolite-related risk?",
       "options": [
-        "Acetaminophen and regional techniques",
+        "Acetaminophen plus appropriate regional/nonopioid techniques, with individualized opioid selection if needed",
         "High-dose ketorolac",
-        "A morphine PCA with a basal rate",
+        "Morphine PCA with a routine basal infusion",
         "Meperidine"
       ],
       "answer": [
@@ -11904,12 +11904,12 @@
       "id": "PAIN-486",
       "set": 1,
       "type": "single",
-      "stem": "A patient receiving a lidocaine infusion develops tinnitus. What is the FIRST step?",
+      "stem": "During an IV lidocaine infusion, a patient develops tinnitus and circumoral paresthesia. Which action has priority?",
       "options": [
-        "Stop the infusion and assess for LAST",
-        "Increase the infusion to treat breakthrough pain",
-        "Give naloxone for toxicity",
-        "Continue, since tinnitus is a common benign effect"
+        "Stop lidocaine and evaluate immediately for local-anesthetic systemic toxicity",
+        "Increase the infusion because symptoms indicate inadequate effect",
+        "Give naloxone",
+        "Continue unchanged because these are desired analgesic effects"
       ],
       "answer": [
         0
@@ -11952,12 +11952,12 @@
       "id": "PAIN-488",
       "set": 1,
       "type": "single",
-      "stem": "A patient is anxious about waking in pain after a block. What education helps?",
+      "stem": "A patient with a dense peripheral nerve block is being discharged and fears severe pain when sensation returns overnight. Which instruction BEST prevents a gap in analgesia?",
       "options": [
-        "Start oral analgesics before the block wears off",
-        "Wait until pain returns to take medication",
-        "Expect no pain for 72 hours",
-        "Take opioids once severe pain starts"
+        "Begin the planned oral multimodal regimen before the block fully resolves",
+        "Wait until severe pain returns before taking medication",
+        "Assume the block will last at least 72 hours",
+        "Delay all medication until normal sensation is completely restored"
       ],
       "answer": [
         0
@@ -12000,12 +12000,12 @@
       "id": "PAIN-490",
       "set": 1,
       "type": "single",
-      "stem": "A patient's opioid rotation is to methadone. Why is methadone useful?",
+      "stem": "A highly opioid-tolerant patient is rotated to methadone after poor response to escalating doses of another opioid. Which property may make methadone useful beyond simple mu agonism?",
       "options": [
-        "It is an NMDA antagonist and can restore sensitivity",
-        "It has minimal respiratory depression",
-        "It is a mixed agonist-antagonist at mu and kappa",
-        "It is metabolized by the kidneys"
+        "NMDA-receptor antagonism may help address tolerance/hyperalgesic mechanisms",
+        "It produces no respiratory depression",
+        "It is a mixed mu antagonist-kappa agonist",
+        "It depends primarily on renal activation"
       ],
       "answer": [
         0
@@ -12024,12 +12024,12 @@
       "id": "PAIN-491",
       "set": 1,
       "type": "single",
-      "stem": "A patient after thoracic surgery has epidural analgesia and hypotension. What should be assessed?",
+      "stem": "A thoracic epidural provides excellent analgesia but the patient becomes hypotensive. Which mechanism should be assessed along with intravascular volume?",
       "options": [
-        "Sympathectomy and volume status",
+        "Epidural sympathectomy causing vasodilation",
         "Opioid withdrawal",
         "Residual neuromuscular blockade",
-        "Pain severity, since hypotension is from pain"
+        "Pain-induced loss of sympathetic tone"
       ],
       "answer": [
         0
@@ -12048,12 +12048,12 @@
       "id": "PAIN-492",
       "set": 1,
       "type": "single",
-      "stem": "A patient with opioid tolerance is scheduled for major surgery. What preop planning step is key?",
+      "stem": "A chronic-opioid patient is scheduled for major surgery. Which preoperative step is MOST important before designing supplemental intraoperative and postoperative opioid doses?",
       "options": [
-        "Calculate baseline and go multimodal",
-        "Stop opioids 48 hours before surgery",
-        "Use regional anesthesia and no opioids",
-        "Give naltrexone preop to reduce opioid tolerance quickly"
+        "Determine the baseline daily opioid requirement/equivalent and build a multimodal plan around it",
+        "Stop opioids for 48 hours to reduce tolerance",
+        "Assume regional anesthesia eliminates the baseline requirement",
+        "Give naltrexone to rapidly reverse tolerance"
       ],
       "answer": [
         0
@@ -12072,12 +12072,12 @@
       "id": "PAIN-493",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a CPNB catheter develops sudden severe pain after the infusion is disconnected. What does this illustrate?",
+      "stem": "A continuous peripheral nerve catheter becomes disconnected, and a previously comfortable patient develops abrupt severe pain. Which interpretation BEST guides treatment?",
       "options": [
-        "Loss of continuous analgesia and rebound pain",
-        "Normal postoperative course",
-        "Opioid toxicity after the infusion was stopped",
-        "Local anesthetic systemic toxicity"
+        "Loss of continuous regional analgesia caused return or rebound of pain; restore/troubleshoot the block while providing bridge analgesia",
+        "The abrupt pain is the expected course and needs no intervention",
+        "Stopping local anesthetic caused opioid toxicity",
+        "The event indicates local-anesthetic systemic toxicity"
       ],
       "answer": [
         0
@@ -12096,12 +12096,12 @@
       "id": "PAIN-494",
       "set": 1,
       "type": "single",
-      "stem": "A 30-year-old woman needs laparoscopic cholecystectomy and has high PONV risk. Which analgesic approach is BEST?",
+      "stem": "A young woman with high PONV risk undergoes laparoscopic cholecystectomy. Which analgesic strategy BEST addresses both pain and a major modifiable PONV contributor?",
       "options": [
-        "Opioid-sparing multimodal plan with antiemetics",
-        "High-dose opioid plan with a basal PCA overnight",
-        "No analgesics at all",
-        "Morphine PCA"
+        "Use opioid-sparing multimodal analgesia with appropriate antiemetic prophylaxis",
+        "Use high-dose systemic opioid with a basal PCA",
+        "Withhold analgesia entirely",
+        "Use morphine PCA as the primary strategy"
       ],
       "answer": [
         0
@@ -12168,12 +12168,12 @@
       "id": "PAIN-497",
       "set": 1,
       "type": "single",
-      "stem": "A patient with long-term opioids reports worsening pain with increasing doses. What should be considered?",
+      "stem": "A long-term opioid user reports progressively worse diffuse pain as opioid doses are repeatedly increased. Which possibility should prompt a change in strategy rather than automatic dose escalation?",
       "options": [
-        "Tolerance or hyperalgesia requiring a change in strategy",
-        "Normal response to opioid increases",
-        "Need for mixed agonist-antagonists to reset receptors",
-        "Local anesthetic toxicity"
+        "Tolerance or opioid-induced hyperalgesia",
+        "Expected improvement from higher opioid exposure",
+        "A need for mixed agonist-antagonists in every patient",
+        "Local-anesthetic systemic toxicity"
       ],
       "answer": [
         0
@@ -12216,12 +12216,12 @@
       "id": "PAIN-499",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives an epidural with local anesthetic and opioid. Which monitoring change is expected?",
+      "stem": "An epidural infusion contains both local anesthetic and opioid. Compared with a local-anesthetic-only technique, which postoperative safety issue requires particular attention?",
       "options": [
-        "Extended monitoring for respiratory depression",
-        "No monitoring needed after PACU",
-        "Pain scores every 12 hours",
-        "Temperature checks for the first 24 hours"
+        "Respiratory depression from neuraxial opioid exposure",
+        "No additional monitoring issue once PACU discharge criteria are met",
+        "Only temperature instability",
+        "Loss of all motor function regardless of concentration"
       ],
       "answer": [
         0
@@ -12240,12 +12240,12 @@
       "id": "PAIN-500",
       "set": 1,
       "type": "single",
-      "stem": "A patient's family asks why pain control matters beyond comfort. What is the BEST answer?",
+      "stem": "A family asks why aggressive but safe postoperative pain control matters beyond comfort. Which answer BEST connects analgesia to recovery?",
       "options": [
-        "Uncontrolled pain harms heart, lungs, and recovery",
-        "Pain control improves comfort but not outcomes",
-        "It shortens the surgical procedure",
-        "Pain control delays recovery"
+        "Uncontrolled pain can impair pulmonary, cardiovascular, functional, and overall recovery",
+        "Pain control changes comfort but not physiologic outcomes",
+        "Analgesia primarily shortens the operation itself",
+        "Treating pain generally delays mobilization and recovery"
       ],
       "answer": [
         0
