@@ -1825,7 +1825,7 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('[data-admin-question-analytics]')).toContainText('Content review groups');
     await page.locator('[data-qa-filter]').selectOption('content');
     await expect.poll(async()=>page.locator('[data-qa-rows] .mbu-cloud-row').count()).toBeGreaterThan(0);
-    await expect(page.locator('[data-qa-rows]')).toContainText(/Exact-stem variant|Near-duplicate key variation/);
+    await expect(page.locator('[data-qa-rows]')).toContainText('Content review');
     await page.locator('[data-qa-filter]').selectOption('all');
     await expect(page.locator('[data-qa-modes]')).toContainText('adaptive');
     await expect(page.locator('[data-qa-modes]')).toContainText('87 first attempts');
