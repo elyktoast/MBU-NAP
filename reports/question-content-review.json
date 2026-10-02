@@ -11,7 +11,7 @@
   },
   "candidates": [
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 0.93,
       "questions": [
@@ -21,10 +21,11 @@
       "stems": [
         "Which of the following clinical factors will shift the oxyhemoglobin dissociation curve to the RIGHT, facilitating oxygen offloading to peripheral tissues? (Select 3)",
         "Which of the following clinical factors will shift the oxyhemoglobin dissociation curve to the RIGHT, facilitating oxygen offloading to tissues? (Select 3)"
-      ]
+      ],
+      "sameSource": true
     },
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 1,
       "questions": [
@@ -34,10 +35,11 @@
       "stems": [
         "What is the primary role of calcium hydroxide [Ca(OH)2] in wet soda lime absorbent?",
         "What is the primary role of calcium hydroxide in wet soda lime absorbent?"
-      ]
+      ],
+      "sameSource": true
     },
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 1,
       "questions": [
@@ -47,10 +49,11 @@
       "stems": [
         "What is the primary role of calcium hydroxide [Ca(OH)2] in wet soda lime absorbent?",
         "What is the primary role of calcium hydroxide in wet soda lime absorbent?"
-      ]
+      ],
+      "sameSource": true
     },
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 1,
       "questions": [
@@ -60,10 +63,11 @@
       "stems": [
         "What is the primary role of potassium hydroxide and sodium hydroxide in wet soda lime?",
         "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?"
-      ]
+      ],
+      "sameSource": true
     },
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 1,
       "questions": [
@@ -73,10 +77,11 @@
       "stems": [
         "What is the primary role of potassium hydroxide and sodium hydroxide in wet soda lime?",
         "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?"
-      ]
+      ],
+      "sameSource": true
     },
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 1,
       "questions": [
@@ -86,10 +91,11 @@
       "stems": [
         "What is the primary role of potassium hydroxide and sodium hydroxide in wet soda lime?",
         "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?"
-      ]
+      ],
+      "sameSource": true
     },
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 1,
       "questions": [
@@ -99,10 +105,11 @@
       "stems": [
         "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?",
         "What is the primary role of potassium hydroxide and sodium hydroxide in wet soda lime?"
-      ]
+      ],
+      "sameSource": true
     },
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 1,
       "questions": [
@@ -112,10 +119,11 @@
       "stems": [
         "Which statements about an oropharyngeal airway are supported by the lecture? Select 3.",
         "Which statements about an oropharyngeal airway are supported by the airway lecture? Select 3."
-      ]
+      ],
+      "sameSource": true
     },
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 0.93,
       "questions": [
@@ -125,10 +133,11 @@
       "stems": [
         "Which of the following clinical events will produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
         "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
-      ]
+      ],
+      "sameSource": true
     },
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 0.93,
       "questions": [
@@ -138,10 +147,11 @@
       "stems": [
         "Which of the following clinical events will produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
         "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
-      ]
+      ],
+      "sameSource": true
     },
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 0.93,
       "questions": [
@@ -151,10 +161,11 @@
       "stems": [
         "Which of the following clinical factors will shift the oxyhemoglobin dissociation curve to the RIGHT, facilitating oxygen offloading to peripheral tissues? (Select 3)",
         "Which of the following clinical factors will shift the oxyhemoglobin dissociation curve to the RIGHT, facilitating oxygen offloading to tissues? (Select 3)"
-      ]
+      ],
+      "sameSource": true
     },
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 1,
       "questions": [
@@ -164,10 +175,11 @@
       "stems": [
         "During general anesthesia, what capnographic finding confirms carbon dioxide rebreathing?",
         "What capnographic finding confirms carbon dioxide rebreathing during general anesthesia?"
-      ]
+      ],
+      "sameSource": true
     },
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 1,
       "questions": [
@@ -177,10 +189,11 @@
       "stems": [
         "Which statements about an oropharyngeal airway are supported by the lecture? Select 3.",
         "Which statements about an oropharyngeal airway are supported by the airway lecture? Select 3."
-      ]
+      ],
+      "sameSource": true
     },
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 0.93,
       "questions": [
@@ -190,10 +203,11 @@
       "stems": [
         "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
         "Which of the following clinical events will produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
-      ]
+      ],
+      "sameSource": true
     },
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 1,
       "questions": [
@@ -203,10 +217,11 @@
       "stems": [
         "During general anesthesia, what capnographic finding confirms carbon dioxide rebreathing?",
         "What capnographic finding confirms carbon dioxide rebreathing during general anesthesia?"
-      ]
+      ],
+      "sameSource": true
     },
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 0.93,
       "questions": [
@@ -216,10 +231,11 @@
       "stems": [
         "Which of the following clinical events will produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
         "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
-      ]
+      ],
+      "sameSource": true
     },
     {
-      "type": "near_duplicate_key_variation",
+      "type": "near_duplicate_variant",
       "severity": "manual_review",
       "similarity": 1,
       "questions": [
@@ -229,7 +245,8 @@
       "stems": [
         "Which statements about an oropharyngeal airway are supported by the lecture? Select 3.",
         "Which statements about an oropharyngeal airway are supported by the airway lecture? Select 3."
-      ]
+      ],
+      "sameSource": true
     }
   ]
 }
