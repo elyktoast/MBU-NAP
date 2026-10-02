@@ -1479,12 +1479,12 @@
       "id": "PRE-061",
       "set": 1,
       "type": "single",
-      "stem": "Four patients are on today's schedule. Which one MOST needs a detailed neuro exam before surgery?",
+      "stem": "Which patient most needs a detailed preoperative neurologic baseline because postoperative mental-status changes would otherwise be difficult to interpret?",
       "options": [
-        "An 84-year-old with dementia at high delirium risk",
+        "An 84-year-old with dementia and high delirium risk",
         "A healthy 30-year-old for knee arthroscopy",
         "A healthy 45-year-old for inguinal hernia repair",
-        "A 25-year-old for a dental extraction"
+        "A 25-year-old for dental extraction"
       ],
       "answer": [
         0
@@ -1503,12 +1503,12 @@
       "id": "PRE-062",
       "set": 1,
       "type": "single",
-      "stem": "A patient has an essential tremor. Why does this matter?",
+      "stem": "A patient has a chronic essential tremor. Which preoperative use of this finding is most important?",
       "options": [
-        "It sets a baseline and may affect regional or positioning plans",
-        "It predicts difficult laryngoscopy from tremor",
-        "It raises the risk of malignant hyperthermia with volatile triggers",
-        "It contraindicates regional anesthesia in that limb"
+        "Establish the neurologic baseline and consider its implications for positioning or regional assessment",
+        "Use the tremor as a predictor of difficult laryngoscopy",
+        "Treat the tremor as a marker of malignant hyperthermia susceptibility",
+        "Consider regional anesthesia contraindicated in the affected limb"
       ],
       "answer": [
         0
@@ -1527,11 +1527,11 @@
       "id": "PRE-063",
       "set": 1,
       "type": "single",
-      "stem": "The preop airway exam is reassuring in one patient and concerning in another. Which outcome does the exam help predict?",
+      "stem": "Which complication is the routine preoperative airway examination primarily intended to anticipate before induction?",
       "options": [
-        "Difficult mask ventilation or intubation",
-        "Difficult extubation alone",
-        "Postoperative nausea",
+        "Difficulty with mask ventilation or tracheal intubation",
+        "Difficulty with extubation alone",
+        "Postoperative nausea and vomiting",
         "Aspiration risk alone"
       ],
       "answer": [
@@ -1551,12 +1551,12 @@
       "id": "PRE-064",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a history of migraines triggered by bright light and stress. Which item does the neuro slide ask you to document?",
+      "stem": "A patient has recurrent migraines. Which history is most useful for distinguishing baseline symptoms from a perioperative neurologic problem?",
       "options": [
-        "Triggers, frequency, medications, and last episode",
-        "The medication name",
-        "The frequency of episodes",
-        "Whether they are migraines with or without aura"
+        "Pattern or type, frequency, triggers, medications, and last episode",
+        "Medication name alone",
+        "Attack frequency alone",
+        "Presence or absence of aura alone"
       ],
       "answer": [
         0
@@ -1575,12 +1575,12 @@
       "id": "PRE-065",
       "set": 1,
       "type": "single",
-      "stem": "A 55-year-old is scheduled for a cervical laminectomy for myelopathy. Which preop exam is indicated beyond the standard assessment?",
+      "stem": "A patient with cervical myelopathy is scheduled for laminectomy. Which additional preoperative examination is most important for interpreting postoperative neurologic findings?",
       "options": [
-        "A detailed neurologic exam",
-        "A cardiac exam in place of the neuro exam",
-        "A pulmonary exam in place of the neuro exam",
-        "An airway exam in place of the neuro exam"
+        "A detailed neurologic baseline examination",
+        "A cardiac examination instead of neurologic assessment",
+        "A pulmonary examination instead of neurologic assessment",
+        "An airway examination instead of neurologic assessment"
       ],
       "answer": [
         0
@@ -1599,12 +1599,12 @@
       "id": "PRE-066",
       "set": 1,
       "type": "single",
-      "stem": "A 55-year-old has a full beard, a short thick neck, and three fingerbreadths of mouth opening, with Mallampati II. How should you interpret this exam?",
+      "stem": "A patient has Mallampati II anatomy, three-fingerbreadth mouth opening, a full beard, and a short thick neck. Which conclusion best avoids false reassurance?",
       "options": [
-        "Several minor findings can add up to a difficult airway",
-        "The airway is normal since Mallampati is II",
-        "The beard matters most and the neck is less relevant",
-        "Mouth opening of three fingerbreadths rules out difficulty"
+        "Several modest findings can combine to make ventilation or intubation difficult",
+        "Mallampati II makes the airway low risk regardless of the other findings",
+        "The beard is the only finding that materially affects the plan",
+        "Three-fingerbreadth mouth opening rules out difficult laryngoscopy"
       ],
       "answer": [
         0
@@ -1623,12 +1623,12 @@
       "id": "PRE-067",
       "set": 1,
       "type": "single",
-      "stem": "A patient has prior neck radiation. Which lecture category does this fit?",
+      "stem": "A patient previously received extensive neck radiation and now has reduced tissue mobility. How should this history be classified during airway risk assessment?",
       "options": [
-        "Acquired anomaly affecting the airway",
-        "Congenital anomaly affecting the airway",
-        "Metabolic disease affecting the airway",
-        "Normal airway variant"
+        "An acquired airway anomaly",
+        "A congenital airway anomaly",
+        "A metabolic airway disorder",
+        "A normal airway variant"
       ],
       "answer": [
         0
@@ -1647,7 +1647,7 @@
       "id": "PRE-068",
       "set": 1,
       "type": "single",
-      "stem": "An 82-year-old takes 14 medications, including diphenhydramine, oxybutynin, and lorazepam, and is at high delirium risk. Which risk factor is MOST modifiable before surgery?",
+      "stem": "An older adult takes numerous medications, including several with deliriogenic effects. Which delirium risk factor is most amenable to preoperative modification?",
       "options": [
         "Polypharmacy",
         "Advanced age",
@@ -1671,7 +1671,7 @@
       "id": "PRE-069",
       "set": 1,
       "type": "single",
-      "stem": "A 68-year-old's hands shake when holding a cup, worse with action, and she takes propranolol. Which neurologic history item is this?",
+      "stem": "A patient has a long-standing action tremor controlled with propranolol. Which neurologic history item does this most likely represent?",
       "options": [
         "Essential tremor",
         "Glaucoma",
@@ -1695,12 +1695,12 @@
       "id": "PRE-070",
       "set": 1,
       "type": "single",
-      "stem": "A patient with an old stroke and left arm weakness is having a right shoulder block. What is the BEST preop action?",
+      "stem": "A patient with chronic left-arm weakness after stroke is scheduled for a right-sided regional block. Which action best prevents a preexisting deficit from being misattributed to the anesthetic?",
       "options": [
-        "Document baseline weakness before the block",
-        "Avoid the block because of prior stroke",
-        "Document strength after the block for comparison",
-        "Use GA to avoid any neuro changes"
+        "Document the baseline weakness before the block",
+        "Avoid the block solely because of the previous stroke",
+        "Document strength only after the block",
+        "Use general anesthesia to eliminate neurologic assessment concerns"
       ],
       "answer": [
         0
@@ -1719,12 +1719,12 @@
       "id": "PRE-071",
       "set": 1,
       "type": "single",
-      "stem": "An 86-year-old with cataracts and hearing aids is scheduled for hip surgery. Why do these sensory impairments matter?",
+      "stem": "An older adult uses hearing aids and has significant visual impairment. Why should these devices and deficits matter to the perioperative plan?",
       "options": [
-        "They impair orientation and raise delirium risk",
-        "They predict a difficult airway and mask ventilation",
-        "They raise malignant hyperthermia risk",
-        "They cause intraoperative awareness"
+        "Sensory impairment can worsen disorientation and increase delirium risk",
+        "They predict difficult mask ventilation",
+        "They increase malignant hyperthermia susceptibility",
+        "They independently cause intraoperative awareness"
       ],
       "answer": [
         0
@@ -1743,12 +1743,12 @@
       "id": "PRE-072",
       "set": 1,
       "type": "single",
-      "stem": "A patient for a carpal tunnel release under WALANT asks why you are looking in her mouth. What is the BEST explanation?",
+      "stem": "A patient is scheduled for carpal tunnel release under local anesthesia with no planned sedation. Why is an airway assessment still appropriate?",
       "options": [
-        "Any plan may need airway rescue",
-        "The airway exam determines the local dose",
-        "The surgeon requires it for WALANT",
-        "It predicts nausea after surgery"
+        "Unexpected deterioration or conversion can still require airway rescue",
+        "Airway anatomy determines the local anesthetic dose",
+        "The surgeon requires an airway score for local anesthesia",
+        "Airway findings predict postoperative nausea"
       ],
       "answer": [
         0
@@ -1767,7 +1767,7 @@
       "id": "PRE-073",
       "set": 1,
       "type": "single",
-      "stem": "A 70 kg patient's oxygen consumption at rest is about 245 mL/min. Climbing two flights of stairs raises it to about 1,000 mL/min. Roughly how many METs is that activity?",
+      "stem": "A 70-kg patient's resting oxygen consumption is about 245 mL/min and rises to about 1,000 mL/min with activity. Approximately what functional capacity does that represent?",
       "options": [
         "About 4 METs",
         "About 1 MET",
@@ -1791,12 +1791,12 @@
       "id": "PRE-074",
       "set": 1,
       "type": "single",
-      "stem": "A 64-year-old scheduled for a hip replacement walks two miles daily and does yard work without symptoms. What does his functional capacity suggest?",
+      "stem": "A patient walks two miles and performs yard work without chest pain or dyspnea. Which inference about functional capacity is most appropriate?",
       "options": [
-        "Good capacity above 4 METs, with adequate reserve",
-        "Poor capacity below 4 METs, needing stress testing",
-        "Unclear capacity, needing CPET",
-        "Good capacity once he exceeds 10 METs"
+        "Functional capacity is above 4 METs, suggesting useful cardiopulmonary reserve",
+        "Functional capacity is below 4 METs and mandates stress testing",
+        "Functional capacity cannot be estimated without CPET",
+        "Good functional capacity requires exceeding 10 METs"
       ],
       "answer": [
         0
@@ -1815,12 +1815,12 @@
       "id": "PRE-075",
       "set": 1,
       "type": "single",
-      "stem": "A 68-year-old says he climbs two flights of stairs daily without chest pain or dyspnea and has no unstable cardiac disease. What is the BEST interpretation for elective surgery?",
+      "stem": "A patient climbs two flights of stairs daily without chest pain or dyspnea and has no unstable cardiac condition. Which interpretation best follows from that history?",
       "options": [
-        "≥4 METs; further cardiac testing usually not needed",
-        "≥4 METs; stress testing still required due to age",
-        "<4 METs; cardiology referral before surgery",
-        "Capacity unclear; delay until an echo is done"
+        "Functional capacity is at least 4 METs, so additional cardiac testing is often unnecessary",
+        "Functional capacity is at least 4 METs, but age alone requires stress testing",
+        "Functional capacity is below 4 METs and requires cardiology referral",
+        "Functional capacity is indeterminate until echocardiography is performed"
       ],
       "answer": [
         0
@@ -1839,12 +1839,12 @@
       "id": "PRE-076",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old says she can do several activities without symptoms. Which one BEST shows she can achieve at least 4 METs?",
+      "stem": "Which reported activity most strongly supports functional capacity of at least 4 METs?",
       "options": [
         "Scrubbing floors or moving heavy furniture",
-        "Walking slowly around the house",
-        "Getting dressed without help",
-        "Eating, bathing, and dressing independently"
+        "Walking slowly inside the home",
+        "Getting dressed independently",
+        "Eating and bathing without assistance"
       ],
       "answer": [
         0
@@ -1863,12 +1863,12 @@
       "id": "PRE-077",
       "set": 1,
       "type": "single",
-      "stem": "A patient can dress and walk around her house but stops halfway up one flight of stairs because of dyspnea. What does this indicate?",
+      "stem": "A patient can perform basic activities of daily living but must stop halfway up one flight of stairs because of dyspnea. Which interpretation is most appropriate?",
       "options": [
-        "<4 METs; consider further cardiac risk assessment",
-        "≥4 METs, since she can do housework",
-        "Normal capacity for her age; no action needed",
-        "Pulmonary limitation, so cardiac risk is lower"
+        "Functional capacity is below 4 METs and warrants further risk assessment in the appropriate clinical context",
+        "Functional capacity is at least 4 METs because the patient is independent at home",
+        "Functional capacity is normal for age and adds no perioperative information",
+        "The dyspnea proves a pulmonary cause and lowers cardiac concern"
       ],
       "answer": [
         0
@@ -1887,12 +1887,12 @@
       "id": "PRE-078",
       "set": 1,
       "type": "single",
-      "stem": "A colleague charts \"5 METs\" for a patient based only on his description of yard work. How should this value be understood?",
+      "stem": "A clinician records '5 METs' based only on the patient's description of usual activity. How should that number be interpreted?",
       "options": [
-        "A subjective estimate of cardiopulmonary capacity",
-        "An objective value measured by CPET",
-        "An objective value derived from echo EF",
-        "A value calculated from BMI and resting HR"
+        "As a subjective estimate of functional capacity",
+        "As an objective CPET measurement",
+        "As a value derived from ejection fraction",
+        "As a calculation from BMI and resting heart rate"
       ],
       "answer": [
         0
@@ -1911,12 +1911,12 @@
       "id": "PRE-079",
       "set": 1,
       "type": "single",
-      "stem": "A 72-year-old's functional capacity is unclear from history. Which tests give an objective measure?",
+      "stem": "When functional capacity cannot be estimated reliably from history, which approach can provide an objective measurement?",
       "options": [
-        "Exercise testing or CPET",
-        "Transthoracic or dobutamine echo alone",
-        "A 12-lead ECG with 24-hour Holter monitoring",
-        "Spirometry with arterial blood gases"
+        "Exercise testing or cardiopulmonary exercise testing",
+        "Resting transthoracic echocardiography alone",
+        "A resting ECG with Holter monitoring",
+        "Spirometry with arterial blood gas analysis"
       ],
       "answer": [
         0
@@ -1935,12 +1935,12 @@
       "id": "PRE-080",
       "set": 1,
       "type": "single",
-      "stem": "Two patients have the same surgery. One can walk only to the mailbox before stopping; the other jogs daily. What does the first patient's capacity predict?",
+      "stem": "Two patients face the same procedure; one becomes symptomatic after a short walk while the other jogs daily without symptoms. What does the first patient's limited functional capacity generally signal?",
       "options": [
-        "Increased perioperative risk",
-        "Reduced anesthetic requirements",
-        "Lower risk of complications",
-        "No difference in risk"
+        "Higher perioperative risk",
+        "Lower anesthetic requirement",
+        "Lower complication risk",
+        "No meaningful difference in risk"
       ],
       "answer": [
         0
