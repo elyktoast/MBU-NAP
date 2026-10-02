@@ -8,14 +8,32 @@
     "missingSourceTitle": 0,
     "missingSourceLocator": 0,
     "explanationsUnder8Words": 0,
-    "manualReviewPairs": 13,
+    "manualReviewPairs": 23,
     "manualReviewCandidates": 0,
-    "informationalCrossSetClusters": 6
+    "informationalCrossSetClusters": 15
   },
   "candidates": [
     {
       "type": "near_duplicate_cluster",
       "severity": "informational",
+      "scope": "cross_set_reinforcement",
+      "questions": [
+        "b1-121",
+        "b1-331",
+        "b1-431",
+        "b1-75"
+      ],
+      "stems": [
+        "Which of the following statements regarding the Diameter Index Safety System (DISS) are true? (Select 2)"
+      ],
+      "sources": [
+        "Medical Gas Systems in Anesthesia · Slide 30"
+      ]
+    },
+    {
+      "type": "near_duplicate_cluster",
+      "severity": "informational",
+      "scope": "cross_set_reinforcement",
       "questions": [
         "b1-125",
         "b1-316",
@@ -27,12 +45,60 @@
       ],
       "sources": [
         "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 74, 76"
-      ],
-      "scope": "cross_set_reinforcement"
+      ]
     },
     {
       "type": "near_duplicate_cluster",
       "severity": "informational",
+      "scope": "cross_set_reinforcement",
+      "questions": [
+        "b1-151",
+        "b1-295",
+        "b1-328",
+        "b1-428"
+      ],
+      "stems": [
+        "Which of the following clinical factors can lead to an elevated baseline on the capnography waveform during general anesthesia? (Select 3)"
+      ],
+      "sources": [
+        "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 43, 50"
+      ]
+    },
+    {
+      "type": "near_duplicate_cluster",
+      "severity": "informational",
+      "scope": "cross_set_reinforcement",
+      "questions": [
+        "b1-159",
+        "b1-322",
+        "b1-422"
+      ],
+      "stems": [
+        "Which of the following clinical events will produce an acute INCREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
+      ],
+      "sources": [
+        "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 41, 43, 50"
+      ]
+    },
+    {
+      "type": "near_duplicate_cluster",
+      "severity": "informational",
+      "scope": "cross_set_reinforcement",
+      "questions": [
+        "b1-229",
+        "b1-410"
+      ],
+      "stems": [
+        "Which of the following clinical events are recognized causes of increased peak inspiratory pressure (PIP) with an UNCHANGED plateau pressure (Pplat)? (Select 3)"
+      ],
+      "sources": [
+        "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 26, 32"
+      ]
+    },
+    {
+      "type": "near_duplicate_cluster",
+      "severity": "informational",
+      "scope": "cross_set_reinforcement",
       "questions": [
         "b1-237",
         "b1-368",
@@ -44,12 +110,12 @@
       ],
       "sources": [
         "CO₂ Absorbents and Scavenging · Slides 2, 3"
-      ],
-      "scope": "cross_set_reinforcement"
+      ]
     },
     {
       "type": "near_duplicate_cluster",
       "severity": "informational",
+      "scope": "cross_set_reinforcement",
       "questions": [
         "b1-258",
         "b1-350",
@@ -63,12 +129,12 @@
       "sources": [
         "CO₂ Absorbents and Scavenging · Slide 2",
         "CO₂ Absorbents and Scavenging · Slides 2, 3"
-      ],
-      "scope": "cross_set_reinforcement"
+      ]
     },
     {
       "type": "near_duplicate_cluster",
       "severity": "informational",
+      "scope": "cross_set_reinforcement",
       "questions": [
         "b1-277",
         "b1-346",
@@ -81,31 +147,78 @@
       ],
       "sources": [
         "Airway Equipment · Slide 5"
-      ],
-      "scope": "cross_set_reinforcement"
+      ]
     },
     {
       "type": "near_duplicate_cluster",
       "severity": "informational",
+      "scope": "cross_set_reinforcement",
       "questions": [
-        "b1-303",
-        "b1-382",
-        "b1-403",
-        "b1-482"
+        "b1-283",
+        "b1-340",
+        "b1-440",
+        "b1-70"
       ],
       "stems": [
-        "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
+        "Which of the following items are verified under the 'M' (Machine) component of the pre-induction MS MAID room setup? (Select 3)"
+      ],
+      "sources": [
+        "Intraoperative Assessment, Monitoring & Data Interpretation · Slide 3"
+      ]
+    },
+    {
+      "type": "near_duplicate_cluster",
+      "severity": "informational",
+      "scope": "cross_set_reinforcement",
+      "questions": [
+        "b1-286",
+        "b1-343",
+        "b1-443",
+        "b1-85"
+      ],
+      "stems": [
+        "Which two wavelengths of light are emitted by conventional dual-wavelength pulse oximeters to differentiate oxyhemoglobin from deoxyhemoglobin? (Select 2)"
+      ],
+      "sources": [
+        "Intraoperative Assessment, Monitoring & Data Interpretation · Slide 74"
+      ]
+    },
+    {
+      "type": "near_duplicate_cluster",
+      "severity": "informational",
+      "scope": "cross_set_reinforcement",
+      "questions": [
+        "b1-303",
+        "b1-403"
+      ],
+      "stems": [
         "Which of the following clinical events will produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
       ],
       "sources": [
         "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 41, 43, 50",
         "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 43, 50"
-      ],
-      "scope": "cross_set_reinforcement"
+      ]
     },
     {
       "type": "near_duplicate_cluster",
       "severity": "informational",
+      "scope": "cross_set_reinforcement",
+      "questions": [
+        "b1-307",
+        "b1-94"
+      ],
+      "stems": [
+        "What is the primary function of the second-stage pressure regulator on an anesthesia machine?"
+      ],
+      "sources": [
+        "Medical Gas Systems in Anesthesia · Slide 33",
+        "Medical Gas Systems in Anesthesia · Slides 26, 33"
+      ]
+    },
+    {
+      "type": "near_duplicate_cluster",
+      "severity": "informational",
+      "scope": "cross_set_reinforcement",
       "questions": [
         "b1-327",
         "b1-40",
@@ -117,8 +230,40 @@
       ],
       "sources": [
         "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 44, 50, 51"
+      ]
+    },
+    {
+      "type": "near_duplicate_cluster",
+      "severity": "informational",
+      "scope": "cross_set_reinforcement",
+      "questions": [
+        "b1-334",
+        "b1-434",
+        "b1-80"
       ],
-      "scope": "cross_set_reinforcement"
+      "stems": [
+        "Which of the following clinical signs indicate successful endotracheal intubation? (Select 3)"
+      ],
+      "sources": [
+        "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 41, 92, 93"
+      ]
+    },
+    {
+      "type": "near_duplicate_cluster",
+      "severity": "informational",
+      "scope": "cross_set_reinforcement",
+      "questions": [
+        "b1-357",
+        "b1-457",
+        "b1-98"
+      ],
+      "stems": [
+        "What is the primary risk of using more than one washer (Bodok seal) when mounting an E-cylinder onto a hanger yoke?"
+      ],
+      "sources": [
+        "Medical Gas Systems in Anesthesia · Slides 10, 18, 21",
+        "Medical Gas Systems in Anesthesia · Slides 10, 20"
+      ]
     }
   ]
 }
