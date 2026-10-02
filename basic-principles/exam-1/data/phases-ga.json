@@ -5058,7 +5058,7 @@
       "id": "PHA-202",
       "set": 1,
       "type": "single",
-      "stem": "Near extubation, which quantitative neuromuscular-monitoring site is preferred because recovery there better reflects residual peripheral weakness?",
+      "stem": "Near extubation, facial-nerve monitoring shows strong recovery, but residual weakness remains a concern. Which quantitative monitoring site is preferred because recovery there better reflects residual peripheral blockade?",
       "options": [
         "Ulnar nerve at the adductor pollicis",
         "Facial nerve at the corrugator supercilii",
@@ -5154,7 +5154,7 @@
       "id": "PHA-206",
       "set": 1,
       "type": "single",
-      "stem": "A 70-kg patient has partial recovery and requires another hour of relaxation. Using a rocuronium maintenance redose of 0.1–0.2 mg/kg, which dose range is appropriate?",
+      "stem": "A 70-kg patient has partial neuromuscular recovery but requires another hour of surgical relaxation. Using a rocuronium maintenance redose of 0.1–0.2 mg/kg, which range is appropriate?",
       "options": [
         "7–14 mg",
         "42–84 mg",
@@ -5397,7 +5397,7 @@
       "id": "PHA-216",
       "set": 1,
       "type": "single",
-      "stem": "A stable patient requires routine intraoperative volume replacement without a specific indication for blood or colloid. Which fluid is the usual default?",
+      "stem": "A hemodynamically stable patient needs routine intraoperative volume replacement without hemorrhage or another indication for a specialized fluid. Which solution is the usual default?",
       "options": [
         "A balanced crystalloid",
         "Hypertonic saline",
@@ -5679,7 +5679,7 @@
       "id": "PHA-227",
       "set": 1,
       "type": "single",
-      "stem": "During recovery of consciousness, ascending arousal systems must again activate the cortex. Which structure serves as a major relay for these signals?",
+      "stem": "As anesthetic effect dissipates, ascending arousal pathways reactivate cortical consciousness. Which structure serves as a major relay for these arousal signals?",
       "options": [
         "Thalamus",
         "Cerebellum",
@@ -5703,7 +5703,7 @@
       "id": "PHA-228",
       "set": 1,
       "type": "single",
-      "stem": "Experimental reversal of anesthetic unconsciousness has been associated with stimulation of which receptor system involved in arousal?",
+      "stem": "A researcher attempts pharmacologic stimulation of arousal during anesthetic unconsciousness. Activation of which receptor system has been associated experimentally with reversal of anesthetic unconsciousness?",
       "options": [
         "Nicotinic cholinergic receptors",
         "Mu-opioid receptors",
@@ -5727,7 +5727,7 @@
       "id": "PHA-229",
       "set": 1,
       "type": "single",
-      "stem": "Which pair of central structures is most directly associated with sleep-wake regulation and ascending arousal during emergence?",
+      "stem": "A patient remains unusually slow to regain wakefulness despite declining anesthetic concentration. Which pair of central structures is most directly involved in sleep-wake regulation and ascending arousal?",
       "options": [
         "Hypothalamus and reticular formation",
         "Cerebellum and basal ganglia",
@@ -5799,7 +5799,7 @@
       "id": "PHA-232",
       "set": 1,
       "type": "single",
-      "stem": "According to the lecture, when should sufentanil generally be stopped before the end of surgery?",
+      "stem": "Sufentanil has been used throughout a case in which timely spontaneous ventilation is desired at emergence. According to the lecture, when should it generally be discontinued?",
       "options": [
         "30–45 minutes before the end",
         "5–10 minutes before the end",
@@ -5847,7 +5847,7 @@
       "id": "PHA-234",
       "set": 1,
       "type": "single",
-      "stem": "Repeated midazolam doses contribute to persistent sedation near the end of surgery after other causes are addressed. Which reversal agent may be considered?",
+      "stem": "Other common causes of delayed emergence have been addressed, but repeated midazolam doses are still contributing to clinically significant sedation. Which specific reversal agent may be considered?",
       "options": [
         "Flumazenil",
         "Naloxone",
@@ -5871,7 +5871,7 @@
       "id": "PHA-235",
       "set": 1,
       "type": "single",
-      "stem": "Persistent opioid-induced respiratory depression remains after surgery despite supportive measures. Which specific antagonist may be titrated when clinically indicated?",
+      "stem": "After surgery, clinically significant opioid-induced respiratory depression persists despite supportive measures. Which antagonist can be carefully titrated to reverse the opioid effect?",
       "options": [
         "Naloxone",
         "Flumazenil",
@@ -6238,12 +6238,12 @@
       "id": "PHA-250",
       "set": 1,
       "type": "single",
-      "stem": "In a patient at meaningful risk for laryngeal edema, what is the main purpose of assessing for a cuff leak before extubation?",
+      "stem": "After prolonged neck surgery, clinically important laryngeal edema is a concern. What information is a cuff-leak assessment intended to add before extubation?",
       "options": [
-        "Estimate whether airflow can pass around the deflated ETT as one clue to clinically important airway narrowing",
-        "Confirm complete neuromuscular recovery",
-        "Measure the exact diameter of the trachea",
-        "Prove that post-extubation obstruction cannot occur"
+        "Whether airflow can pass around the deflated ETT as one clue to airway narrowing",
+        "Whether neuromuscular recovery is complete",
+        "The exact internal diameter of the trachea",
+        "Proof that post-extubation obstruction cannot occur"
       ],
       "answer": [
         0
