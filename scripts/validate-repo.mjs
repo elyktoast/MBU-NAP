@@ -181,6 +181,9 @@ function checkRuntimeSafety(){
   const updater=read('equipment/assets/auto-update.js');
   if(updater.includes('location.replace(')||updater.includes("searchParams.set('_mbu_reload'"))fail('Updater: background build checks must not reload the active learner page');
   if(!updater.includes('sessionStorage.setItem(BUILD_CACHE_KEY, baseline)'))fail('Updater: latest build baseline is not retained without reloading');
+  const cloud=read('equipment/assets/supabase-sync.js');
+  const automaticCloud=cloud.replace(/async function restoreVersion[\s\S]*?function cloudSnapshot/,'function cloudSnapshot');
+  if(automaticCloud.includes('location.reload()'))fail('Cloud sync/auth: automatic runtime paths must not reload the active learner page');
 }
 function checkStudioData(){
   checkBank1();checkBank2();checkBank3();checkHazardsCanonical();
