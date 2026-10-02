@@ -8649,12 +8649,12 @@
       "id": "PAIN-351",
       "set": 1,
       "type": "single",
-      "stem": "A patient's pain lasts 4 months after surgery. What classification fits the IASP definition?",
+      "stem": "Four months after surgery, a patient still has pain at and beyond the operative site with no new acute injury. Which temporal classification now applies under the IASP definition?",
       "options": [
         "Chronic pain",
         "Acute pain",
-        "Neuropathic pain",
-        "Breakthrough pain"
+        "Breakthrough pain",
+        "Pain cannot be classified without proving neuropathy"
       ],
       "answer": [
         0
@@ -8700,7 +8700,7 @@
       "id": "PAIN-353",
       "set": 1,
       "type": "single",
-      "stem": "You want an opioid-sparing infusion with a good safety record for a spine fusion. Which adjunct has minimal serious adverse effects?",
+      "stem": "For a long spine fusion, an opioid-sparing infusion is desired but hypotension, bradycardia, and psychomimetic effects would be especially undesirable. Which adjunct in the source has a favorable serious-adverse-effect profile at studied doses?",
       "options": [
         "Magnesium",
         "Remifentanil",
@@ -8724,12 +8724,12 @@
       "id": "PAIN-354",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives IV lidocaine infusion during laparoscopic colectomy. Which outcome is expected?",
+      "stem": "A colectomy patient is at high risk for opioid-related ileus. Which expected effect makes perioperative IV lidocaine particularly attractive?",
       "options": [
-        "Less postoperative ileus",
-        "More postoperative ileus",
-        "Higher opioid consumption",
-        "Longer hospital stay"
+        "Reduced postoperative ileus along with opioid-sparing analgesia",
+        "Increased ileus but improved sedation",
+        "Higher opioid consumption with faster bowel recovery",
+        "Longer hospitalization from delayed gastrointestinal function"
       ],
       "answer": [
         0
@@ -8772,12 +8772,12 @@
       "id": "PAIN-356",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance, a patient's BP rises and pupils are dilated. What is the MOST likely cause?",
+      "stem": "During maintenance, blood pressure and heart rate rise with surgical stimulation and the pupils become dilated. Which interpretation BEST integrates these findings?",
       "options": [
-        "Inadequate analgesia",
-        "Excess opioid effect",
-        "Hypothermia",
-        "Opioid-induced miosis"
+        "Analgesic depth may be inadequate",
+        "The patient has excessive opioid effect",
+        "Opioid-induced miosis is causing hypertension",
+        "Residual neuromuscular blockade is the most likely cause"
       ],
       "answer": [
         0
@@ -8796,12 +8796,12 @@
       "id": "PAIN-357",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, a patient is breathing 24 breaths/min and restless. What is the BEST next step?",
+      "stem": "Near emergence, a patient is restless and breathing 24/min after a painful operation. Neuromuscular recovery and oxygenation are adequate. Which action BEST addresses the likely analgesic component?",
       "options": [
-        "Titrate opioid toward RR 12–14",
-        "Give naloxone",
-        "Increase neuromuscular blockade",
-        "Deepen volatile anesthesia"
+        "Carefully titrate short-acting opioid while reassessing ventilation and other causes of distress",
+        "Give naloxone because tachypnea indicates opioid excess",
+        "Reparalyze the patient to reduce respiratory rate",
+        "Deepen volatile anesthesia without reassessing analgesia"
       ],
       "answer": [
         0
@@ -8844,12 +8844,12 @@
       "id": "PAIN-359",
       "set": 1,
       "type": "single",
-      "stem": "A patient is given a large opioid bolus to control BP during emergence. What is the risk?",
+      "stem": "During emergence, hypertension from coughing is treated with a large opioid bolus just before extubation. Which complication is MOST likely after the airway is removed?",
       "options": [
-        "Respiratory depression after extubation",
-        "Faster emergence",
-        "Lower PONV risk",
-        "Improved airway reflexes and cough after extubation"
+        "Hypoventilation from residual opioid effect",
+        "Accelerated emergence",
+        "Improved airway reflexes",
+        "Reduced postoperative nausea"
       ],
       "answer": [
         0
@@ -8868,12 +8868,12 @@
       "id": "PAIN-360",
       "set": 1,
       "type": "single",
-      "stem": "A patient's PCA settings include a 10-minute lockout. What is the purpose?",
+      "stem": "A PCA uses a 10-minute lockout despite a patient who frequently presses the button. What safety problem is the lockout primarily designed to reduce?",
       "options": [
-        "Prevent dose stacking before peak effect",
-        "Increase analgesia by allowing more doses",
-        "Replace the need for a basal rate",
-        "Reduce the need for monitoring"
+        "Dose stacking before the effect of prior doses can be assessed",
+        "Insufficient opioid exposure from patient control",
+        "The need to prescribe a basal infusion",
+        "The need for respiratory monitoring"
       ],
       "answer": [
         0
@@ -8964,12 +8964,12 @@
       "id": "PAIN-364",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives neuraxial morphine and is sent to a floor without monitoring. What is the risk?",
+      "stem": "A patient receives neuraxial morphine and is transferred to an inadequately monitored floor because ventilation is normal in PACU. Which complication may still emerge later?",
       "options": [
-        "Delayed respiratory depression unrecognized",
-        "Immediate hypertension",
-        "Excessive pain",
-        "Early hypotension from neuraxial opioids"
+        "Delayed respiratory depression from rostral opioid spread",
+        "Immediate severe hypertension",
+        "Withdrawal from rapid neuraxial clearance",
+        "Local-anesthetic systemic toxicity from morphine"
       ],
       "answer": [
         0
@@ -9012,12 +9012,12 @@
       "id": "PAIN-366",
       "set": 1,
       "type": "single",
-      "stem": "A patient is apneic after midazolam and fentanyl. After flumazenil, breathing is still slow. What is the NEXT step?",
+      "stem": "A patient remains hypoventilating after midazolam and fentanyl despite flumazenil and ventilatory support. Which pharmacologic step is MOST appropriate next?",
       "options": [
-        "Give low-dose naloxone and support ventilation",
-        "Give more midazolam to smooth the emergence",
-        "Give dexmedetomidine",
-        "Give ketamine"
+        "Titrate low-dose naloxone to restore ventilation while minimizing loss of analgesia",
+        "Repeat midazolam to prevent agitation",
+        "Give dexmedetomidine to reverse fentanyl",
+        "Administer ketamine as an opioid antagonist"
       ],
       "answer": [
         0
@@ -9036,12 +9036,12 @@
       "id": "PAIN-367",
       "set": 1,
       "type": "single",
-      "stem": "A patient with opioid use disorder is prescribed naltrexone and needs surgery. Why is analgesia challenging?",
+      "stem": "A patient taking naltrexone for opioid use disorder presents for painful surgery. Why can conventional opioid analgesia be unusually difficult?",
       "options": [
-        "Opioid receptors are blocked, reducing opioid effect",
-        "Naltrexone increases opioid sensitivity at mu receptors",
-        "Naltrexone causes severe hypotension",
-        "Naltrexone enhances NSAID effects"
+        "Competitive opioid-receptor blockade can markedly reduce agonist effect",
+        "Naltrexone increases mu-receptor sensitivity and opioid potency",
+        "Naltrexone directly causes severe perioperative hypotension",
+        "Naltrexone potentiates NSAIDs enough to prevent opioid use"
       ],
       "answer": [
         0
@@ -9060,12 +9060,12 @@
       "id": "PAIN-368",
       "set": 1,
       "type": "single",
-      "stem": "A dependent patient receives naloxone and becomes hypertensive and diaphoretic. What happened?",
+      "stem": "A physically opioid-dependent patient receives a large naloxone dose and rapidly develops hypertension, diaphoresis, cramping, and agitation. Which mechanism BEST explains the change?",
       "options": [
-        "Opioid withdrawal",
-        "Serotonin syndrome",
-        "Local anesthetic systemic toxicity",
-        "Emergence delirium"
+        "Abrupt opioid-receptor antagonism precipitated withdrawal",
+        "Naloxone produced serotonin excess",
+        "Naloxone triggered local-anesthetic systemic toxicity",
+        "The patient developed isolated emergence delirium"
       ],
       "answer": [
         0
@@ -9204,12 +9204,12 @@
       "id": "PAIN-374",
       "set": 1,
       "type": "single",
-      "stem": "A patient's pain management plan fails and a second modality is added. What is the caution?",
+      "stem": "A second analgesic modality is added because the first provides incomplete relief. What should happen to dosing and monitoring when the modalities have overlapping sedative or hemodynamic effects?",
       "options": [
-        "Adding modalities can compound side effects",
-        "Adding modalities improves safety",
-        "Adding modalities reduces the need for monitoring",
-        "Adding modalities lowers each drug's efficacy"
+        "Reassess and titrate because combined therapies can compound adverse effects",
+        "Use full standalone doses because different mechanisms prevent interaction",
+        "Reduce monitoring because multimodal therapy is inherently protective",
+        "Increase each dose to ensure both modalities remain effective"
       ],
       "answer": [
         0
@@ -9396,12 +9396,12 @@
       "id": "PAIN-382",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a history of substance use disorder is scheduled for surgery. What does the guideline recommend?",
+      "stem": "A patient with substance use disorder and complex chronic pain presents for major surgery. Which planning step is MOST appropriate before escalating perioperative opioids?",
       "options": [
-        "Consider pain specialist consultation",
-        "Avoid all analgesics",
-        "Use opioids",
-        "Refuse surgery until opioid use is fully tapered"
+        "Consider consultation with a pain specialist as part of an individualized plan",
+        "Avoid all analgesia to prevent relapse",
+        "Use opioids without adjuncts to simplify management",
+        "Delay necessary surgery until all chronic analgesics are stopped"
       ],
       "answer": [
         0
@@ -9444,12 +9444,12 @@
       "id": "PAIN-384",
       "set": 1,
       "type": "single",
-      "stem": "A patient's pain plan is adjusted after nausea and sedation occur. Which guideline applies?",
+      "stem": "A multimodal plan provides good analgesia but causes troublesome nausea, sedation, and hypotension. Which response BEST reflects guideline-based reassessment?",
       "options": [
-        "Adjust plan based on adequacy and adverse events",
-        "Increase the opioid to overcome nausea",
-        "Increase opioid doses automatically",
-        "Stop all analgesics"
+        "Modify the regimen based on both analgesic adequacy and adverse effects",
+        "Increase opioid dosing because pain relief proves the plan is successful",
+        "Continue unchanged because adverse effects do not affect pain planning",
+        "Stop every analgesic rather than identify the contributing agents"
       ],
       "answer": [
         0
@@ -9468,12 +9468,12 @@
       "id": "PAIN-385",
       "set": 1,
       "type": "single",
-      "stem": "Case A: A 45-year-old on oxycodone 40 mg/day for back pain is scheduled for lumbar fusion. She skipped her morning dose. What is the FIRST step?",
+      "stem": "A patient taking oxycodone 40 mg/day for chronic back pain presents for lumbar fusion after skipping the morning dose. Which immediate preoperative action BEST prevents withdrawal without attempting to treat the entire surgical pain burden?",
       "options": [
-        "Give an equivalent opioid dose before induction",
-        "Give extra intraop opioid to make up for it",
-        "Give nalbuphine to cover baseline needs",
-        "Delay surgery 24 hours for withdrawal risk"
+        "Provide an appropriate equivalent of the missed baseline opioid requirement",
+        "Give a large intraoperative opioid bolus after induction instead",
+        "Use nalbuphine to replace the baseline mu agonist",
+        "Delay surgery solely because one scheduled dose was missed"
       ],
       "answer": [
         0
@@ -9544,12 +9544,12 @@
       "id": "PAIN-388",
       "set": 1,
       "type": "single",
-      "stem": "Case A: In PACU, she is in severe pain despite escalating hydromorphone. What is the BEST next strategy?",
+      "stem": "An opioid-tolerant lumbar-fusion patient has severe pain despite escalating hydromorphone, with adverse effects increasing faster than analgesia. Which strategy BEST addresses tolerance rather than simply escalating the same drug?",
       "options": [
         "Opioid rotation, such as to methadone",
-        "Butorphanol to enhance mu analgesia",
-        "Stopping all opioids and using ice",
-        "Naloxone to reset receptors"
+        "Add butorphanol to antagonize mu receptors",
+        "Stop all opioids abruptly",
+        "Give naloxone to reset opioid receptors"
       ],
       "answer": [
         0
@@ -9568,12 +9568,12 @@
       "id": "PAIN-389",
       "set": 1,
       "type": "single",
-      "stem": "Case A: A 45-year-old on oxycodone 40 mg/day for back pain is scheduled for lumbar fusion. She skipped her morning dose. Which PCA approach is reasonable for her?",
+      "stem": "An opioid-tolerant patient taking oxycodone chronically needs PCA after lumbar fusion. Which PCA feature may be reasonable after calculating the patient's baseline opioid requirement?",
       "options": [
-        "PCA with basal infusion and demand dosing",
-        "PCA with no basal and very low demand dose",
-        "No PCA because of addiction risk",
-        "PCA with nalbuphine"
+        "A basal infusion plus patient-controlled demand dosing",
+        "Elimination of demand doses",
+        "Avoidance of PCA because chronic use implies addiction",
+        "Use of a mixed agonist-antagonist as the PCA drug"
       ],
       "answer": [
         0
@@ -9592,12 +9592,12 @@
       "id": "PAIN-390",
       "set": 1,
       "type": "single",
-      "stem": "Case B: A 72-year-old with severe COPD has an open upper abdominal surgery. What is the MOST important analgesic goal?",
+      "stem": "A 72-year-old with severe COPD undergoes open upper-abdominal surgery. Which analgesic outcome is MOST important for reducing pulmonary complications?",
       "options": [
-        "Enable deep breathing and coughing to prevent pneumonia",
-        "Keep him sedated to limit oxygen consumption overnight",
-        "Avoid all regional to preserve diaphragm function",
-        "Maximize opioid dosing for comfort"
+        "Pain control sufficient for deep breathing, coughing, and mobilization",
+        "Sedation sufficient to reduce oxygen consumption overnight",
+        "Complete avoidance of regional analgesia",
+        "Maximum systemic opioid dosing regardless of ventilation"
       ],
       "answer": [
         0
@@ -9616,11 +9616,11 @@
       "id": "PAIN-391",
       "set": 1,
       "type": "single",
-      "stem": "Case B: A 72-year-old with severe COPD has an open upper abdominal surgery. Which technique BEST meets that goal?",
+      "stem": "For the same severe-COPD patient after open upper-abdominal surgery, which technique BEST supports coughing and deep breathing while limiting systemic opioid burden?",
       "options": [
-        "Thoracic epidural with local anesthetic",
-        "High-dose morphine PCA with basal rate",
-        "Oral oxycodone",
+        "Thoracic epidural local-anesthetic-based analgesia",
+        "High-dose morphine PCA with routine basal infusion",
+        "Oral oxycodone alone",
         "Intra-articular local anesthetic"
       ],
       "answer": [
@@ -9664,12 +9664,12 @@
       "id": "PAIN-393",
       "set": 1,
       "type": "single",
-      "stem": "Case C: A 28-year-old woman is having knee arthroscopy as an outpatient. Which spinal plan BEST supports fast discharge?",
+      "stem": "An ambulatory knee-arthroscopy patient needs spinal anesthesia but rapid return of motor function is important for discharge. Which intrathecal strategy BEST balances these goals?",
       "options": [
-        "Low-dose bupivacaine with fentanyl 10–25 mcg",
-        "Bupivacaine 15 mg with intrathecal morphine",
-        "Lidocaine 100 mg without opioid",
-        "High-dose ropivacaine 30 mg"
+        "Low-dose bupivacaine with a small dose of lipophilic opioid such as fentanyl",
+        "High-dose bupivacaine with intrathecal morphine",
+        "A large lidocaine dose without adjunct",
+        "High-dose ropivacaine to prolong motor block"
       ],
       "answer": [
         0
@@ -9740,12 +9740,12 @@
       "id": "PAIN-396",
       "set": 1,
       "type": "single",
-      "stem": "Case D: A 6-year-old undergoes tonsillectomy. He is crying and inconsolable in PACU. What is the BEST first step?",
+      "stem": "A 6-year-old is crying and inconsolable after tonsillectomy but cannot provide a reliable numeric score. Which first step BEST avoids both undertreatment and reflexive oversedation?",
       "options": [
-        "Assess pain using age-appropriate cues and treat accordingly",
-        "Give naloxone to reverse opioid effects on mood",
-        "Give extra sedation until he stops crying",
-        "Discharge immediately to reduce distress from the unit"
+        "Use an age-appropriate behavioral pain assessment and treat based on the full evaluation",
+        "Give naloxone because crying indicates opioid dysphoria",
+        "Sedate until crying stops without assessing pain",
+        "Discharge promptly because the environment is the likely cause"
       ],
       "answer": [
         0
@@ -9812,12 +9812,12 @@
       "id": "PAIN-399",
       "set": 1,
       "type": "single",
-      "stem": "Case E: A 55-year-old CYP2D6 poor metabolizer is prescribed codeine after surgery. What is the expected outcome?",
+      "stem": "A known CYP2D6 poor metabolizer receives codeine after surgery and reports minimal analgesia despite adherence. Which mechanism BEST explains the failure?",
       "options": [
-        "Poor analgesia",
-        "Opioid toxicity",
-        "Rapid respiratory depression",
-        "Serotonin syndrome"
+        "Reduced conversion of codeine to its active morphine metabolite",
+        "Accelerated conversion of codeine to morphine causing rapid clearance",
+        "Excess serotonin reuptake inhibition",
+        "Enhanced renal elimination of morphine from codeine"
       ],
       "answer": [
         0
@@ -9836,7 +9836,7 @@
       "id": "PAIN-400",
       "set": 1,
       "type": "single",
-      "stem": "Case E: A 55-year-old CYP2D6 poor metabolizer is prescribed codeine after surgery. Which alternative opioid avoids CYP2D6 activation dependence?",
+      "stem": "A CYP2D6 poor metabolizer had inadequate analgesia from codeine. Which alternative avoids reliance on CYP2D6 activation for its analgesic effect?",
       "options": [
         "Hydromorphone",
         "Tramadol",
