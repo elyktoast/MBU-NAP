@@ -3180,12 +3180,12 @@
       "id": "PRE-131",
       "set": 1,
       "type": "single",
-      "stem": "A harsh crescendo-decrescendo systolic murmur is heard at the right upper sternal border of a 78-year-old with exertional dyspnea. Which lesion pairing makes up the systolic group this murmur belongs to?",
+      "stem": "A 78-year-old with exertional dyspnea has a harsh crescendo-decrescendo systolic murmur at the right upper sternal border. Which lesion best fits both the timing and location?",
       "options": [
-        "Mitral regurgitation and aortic stenosis (MRASS)",
-        "Mitral stenosis and aortic regurgitation (MSARD)",
-        "Tricuspid stenosis and pulmonic regurgitation",
-        "Aortic regurgitation and mitral regurgitation"
+        "Aortic stenosis",
+        "Mitral stenosis",
+        "Aortic regurgitation",
+        "Tricuspid stenosis"
       ],
       "answer": [
         0
@@ -3204,12 +3204,12 @@
       "id": "PRE-132",
       "set": 1,
       "type": "single",
-      "stem": "Which murmur is holosystolic at the apex and radiates to the axilla?",
+      "stem": "A holosystolic murmur is loudest at the apex and radiates toward the axilla. Which lesion is most likely?",
       "options": [
         "Mitral regurgitation",
         "Aortic stenosis",
         "Mitral stenosis",
-        "Aortic insufficiency"
+        "Aortic regurgitation"
       ],
       "answer": [
         0
@@ -3228,7 +3228,7 @@
       "id": "PRE-133",
       "set": 1,
       "type": "single",
-      "stem": "Which murmur is midsystolic, crescendo-decrescendo, at the second parasternal interspace, radiating to the carotids?",
+      "stem": "A midsystolic crescendo-decrescendo murmur is heard at the second right interspace and radiates to the carotids. Which lesion best matches this pattern?",
       "options": [
         "Aortic stenosis",
         "Mitral regurgitation",
@@ -3252,10 +3252,10 @@
       "id": "PRE-134",
       "set": 1,
       "type": "single",
-      "stem": "Which murmur has an opening snap and a low-pitched middiastolic rumble at the apex?",
+      "stem": "A low-pitched middiastolic rumble with an opening snap is heard at the apex. Which lesion is most likely?",
       "options": [
         "Mitral stenosis",
-        "Aortic insufficiency",
+        "Aortic regurgitation",
         "Mitral regurgitation",
         "Aortic stenosis"
       ],
@@ -3276,12 +3276,12 @@
       "id": "PRE-135",
       "set": 1,
       "type": "single",
-      "stem": "A murmur gets louder with Valsalva and standing and softer with squatting. Which lesion fits?",
+      "stem": "A systolic murmur becomes louder with standing or Valsalva and softer with squatting. Which lesion is most consistent with this preload-sensitive pattern?",
       "options": [
         "Hypertrophic cardiomyopathy",
         "Aortic stenosis",
         "Mitral stenosis",
-        "Aortic insufficiency with wide pulse pressure"
+        "Aortic regurgitation"
       ],
       "answer": [
         0
@@ -3300,12 +3300,12 @@
       "id": "PRE-136",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old with heart failure has an EF of 58% on echo. How is this classified?",
+      "stem": "A patient has clinical heart failure but an ejection fraction of 58%. Which classification best describes the ventricular phenotype?",
       "options": [
-        "HFpEF, carrying lower perioperative risk than HFrEF",
-        "HFrEF, carrying higher risk",
+        "Heart failure with preserved ejection fraction",
+        "Heart failure with reduced ejection fraction",
         "Heart failure with mildly reduced ejection fraction",
-        "Normal function with no heart failure"
+        "Normal cardiac function with no heart failure"
       ],
       "answer": [
         0
@@ -3324,12 +3324,12 @@
       "id": "PRE-137",
       "set": 1,
       "type": "single",
-      "stem": "Two heart failure patients are scheduled for the same surgery: one with EF 58%, one with EF 32%. Which carries higher perioperative risk?",
+      "stem": "Two patients with heart failure face the same operation; one has EF 58% and the other EF 32%. Which feature most strongly identifies the higher-risk patient?",
       "options": [
-        "The patient with EF 32% (HFrEF)",
-        "The patient with EF 58% (HFpEF)",
-        "Both carry equal risk",
-        "Neither, since EF does not affect risk"
+        "Reduced EF of 32% consistent with HFrEF",
+        "Preserved EF of 58% consistent with HFpEF",
+        "The risks are equivalent because both have heart failure",
+        "Ejection fraction does not influence perioperative risk"
       ],
       "answer": [
         0
@@ -3348,10 +3348,10 @@
       "id": "PRE-138",
       "set": 1,
       "type": "multi",
-      "stem": "A 69-year-old with ischemic cardiomyopathy comes for preop evaluation. Which findings suggest decompensated LV dysfunction? (Select 4)",
+      "stem": "Which four findings most strongly support decompensated left-ventricular dysfunction before surgery? (Select 4)",
       "options": [
-        "Shortness of breath lying flat",
-        "Crackles from pulmonary edema",
+        "Orthopnea",
+        "Pulmonary crackles",
         "Jugular venous distension",
         "Resting tachycardia and tachypnea",
         "Hyperreflexia",
@@ -3377,7 +3377,7 @@
       "id": "PRE-139",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old has insulin-treated diabetes, a creatinine of 2.4, prior MI, and is scheduled for an open colectomy. How many RCRI points does she have?",
+      "stem": "A patient has insulin-treated diabetes, creatinine 2.4 mg/dL, prior myocardial infarction, and is scheduled for open colectomy. What RCRI score results from those findings?",
       "options": [
         "4",
         "2",
@@ -3401,12 +3401,12 @@
       "id": "PRE-140",
       "set": 1,
       "type": "single",
-      "stem": "Three patients have creatinines of 1.4, 1.9, and 2.3 mg/dL. Which one earns an RCRI point for renal function?",
+      "stem": "Which creatinine value meets the renal RCRI criterion?",
       "options": [
-        "The patient with 2.3 mg/dL",
-        "All three, since each is above normal",
-        "The patients with 1.9 and 2.3 mg/dL",
-        "Only the patient with 1.9 mg/dL"
+        "2.3 mg/dL",
+        "1.4 mg/dL",
+        "1.9 mg/dL",
+        "1.9 and 2.3 mg/dL both meet it"
       ],
       "answer": [
         0
@@ -3425,12 +3425,12 @@
       "id": "PRE-141",
       "set": 1,
       "type": "single",
-      "stem": "Patient A controls diabetes with metformin and diet. Patient B uses glargine and lispro. Which patient earns an RCRI point for diabetes?",
+      "stem": "Two patients have diabetes; one uses metformin only and the other uses basal-bolus insulin. Which patient gains an RCRI point for diabetes?",
       "options": [
-        "Patient B",
-        "Patient A, since metformin implies severe disease",
-        "Both patients, since both have diabetes",
-        "Neither, since HbA1c determines the point"
+        "The insulin-treated patient",
+        "The metformin-treated patient",
+        "Both patients",
+        "Neither patient unless HbA1c is elevated"
       ],
       "answer": [
         0
@@ -3449,7 +3449,7 @@
       "id": "PRE-142",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old on insulin with prior stroke and creatinine 2.4 is scheduled for open AAA repair. What is his RCRI score?",
+      "stem": "A patient uses insulin, has prior stroke, creatinine 2.4 mg/dL, and is scheduled for open AAA repair. What is the RCRI score?",
       "options": [
         "4",
         "3",
@@ -3473,12 +3473,12 @@
       "id": "PRE-143",
       "set": 1,
       "type": "single",
-      "stem": "What MACE risk corresponds to an RCRI score of 3 or more?",
+      "stem": "A patient has an RCRI score of 3. Which MACE risk estimate from the lecture best matches that score range?",
       "options": [
-        "5.4%",
-        "2.4%",
-        "1.0%",
-        "0.4%"
+        "About 5.4%",
+        "About 2.4%",
+        "About 1.0%",
+        "About 0.4%"
       ],
       "answer": [
         0
@@ -3497,12 +3497,12 @@
       "id": "PRE-144",
       "set": 1,
       "type": "single",
-      "stem": "A 52-year-old with no RCRI risk factors is scheduled for a laparoscopic cholecystectomy. What is her estimated risk of MACE?",
+      "stem": "A patient has no medical RCRI factors but is scheduled for laparoscopic cholecystectomy. What score and approximate MACE risk follow from the procedure itself?",
       "options": [
-        "About 0.4%",
-        "About 1.0%",
-        "About 2.4%",
-        "About 5.4%"
+        "RCRI 1 with about 1.0% risk",
+        "RCRI 0 with about 0.4% risk",
+        "RCRI 2 with about 2.4% risk",
+        "RCRI 3 with about 5.4% risk"
       ],
       "answer": [
         1
@@ -3521,7 +3521,7 @@
       "id": "PRE-145",
       "set": 1,
       "type": "multi",
-      "stem": "Which surgeries count as high-risk in the RCRI? (Select 3)",
+      "stem": "Which three procedure categories count as high-risk surgery in the RCRI? (Select 3)",
       "options": [
         "Intraperitoneal",
         "Intrathoracic",
@@ -3549,7 +3549,7 @@
       "id": "PRE-146",
       "set": 1,
       "type": "single",
-      "stem": "A patient with stable CAD and CHF is having laparoscopic cholecystectomy. What is his RCRI score?",
+      "stem": "A patient with stable ischemic heart disease and congestive heart failure is scheduled for laparoscopic cholecystectomy. What RCRI score results?",
       "options": [
         "3",
         "2",
@@ -3573,12 +3573,12 @@
       "id": "PRE-147",
       "set": 1,
       "type": "single",
-      "stem": "A patient has an RCRI of 0 but cannot climb stairs because of dyspnea and is ASA III. A colleague says, \"RCRI is zero, so no further thought is needed.\" What is the flaw?",
+      "stem": "A patient has RCRI 0, poor stair-climbing tolerance from dyspnea, and ASA III status. Why is it unsafe to stop the assessment at the RCRI score?",
       "options": [
-        "RCRI must be combined with METs and ASA",
-        "RCRI predicts pulmonary outcomes",
-        "RCRI applies to cardiac surgery",
-        "RCRI includes METs, so nothing else is needed"
+        "RCRI must be interpreted alongside functional capacity and overall disease burden",
+        "RCRI predicts pulmonary rather than cardiac outcomes",
+        "RCRI applies only to cardiac surgery",
+        "RCRI already contains METs and ASA status"
       ],
       "answer": [
         0
@@ -3597,7 +3597,7 @@
       "id": "PRE-148",
       "set": 1,
       "type": "single",
-      "stem": "A patient had an episode of pulmonary edema 2 years ago and now has an S3 and JVD. Which RCRI item does this satisfy?",
+      "stem": "A patient has a prior episode of pulmonary edema and now has an S3 with jugular venous distension. Which RCRI criterion is satisfied?",
       "options": [
         "Congestive heart failure",
         "Ischemic heart disease",
@@ -3621,12 +3621,12 @@
       "id": "PRE-149",
       "set": 1,
       "type": "single",
-      "stem": "A 60-year-old with prior rheumatic fever has a low-pitched rumbling diastolic murmur at the apex. Which lesion pairing makes up the diastolic group?",
+      "stem": "A patient with prior rheumatic fever has a low-pitched diastolic rumble at the apex. Which lesion best fits the finding?",
       "options": [
-        "Mitral stenosis and aortic regurgitation (MSARD)",
-        "Mitral regurgitation and aortic stenosis (MRASS)",
-        "Tricuspid regurgitation and pulmonic stenosis",
-        "Aortic stenosis and mitral stenosis"
+        "Mitral stenosis",
+        "Mitral regurgitation",
+        "Aortic stenosis",
+        "Tricuspid regurgitation"
       ],
       "answer": [
         0
@@ -3645,9 +3645,9 @@
       "id": "PRE-150",
       "set": 1,
       "type": "single",
-      "stem": "A blowing, holodiastolic murmur is heard at the third and fourth left parasternal spaces in a patient with a wide pulse pressure. Which lesion is MOST likely?",
+      "stem": "A blowing holodiastolic murmur is heard along the left sternal border in a patient with wide pulse pressure. Which lesion is most likely?",
       "options": [
-        "Aortic insufficiency",
+        "Aortic regurgitation",
         "Aortic stenosis",
         "Mitral regurgitation",
         "Mitral valve prolapse"
@@ -3669,11 +3669,11 @@
       "id": "PRE-151",
       "set": 1,
       "type": "single",
-      "stem": "A young woman has a midsystolic click followed by a late systolic murmur that moves earlier when she stands. Which lesion is MOST likely?",
+      "stem": "A patient has a midsystolic click followed by a late systolic murmur that becomes earlier with standing. Which lesion best fits?",
       "options": [
         "Mitral valve prolapse",
         "Aortic stenosis",
-        "Aortic insufficiency",
+        "Aortic regurgitation",
         "Mitral stenosis"
       ],
       "answer": [
@@ -3693,12 +3693,12 @@
       "id": "PRE-152",
       "set": 1,
       "type": "single",
-      "stem": "In adult surgical patients with valvular heart disease, which lesions will you encounter MOST often?",
+      "stem": "In adult surgical patients with valvular disease, which valve pair is encountered most commonly?",
       "options": [
-        "Aortic and mitral lesions",
-        "Tricuspid and pulmonic lesions",
-        "Aortic and pulmonic lesions",
-        "Mitral and tricuspid lesions"
+        "Aortic and mitral",
+        "Tricuspid and pulmonic",
+        "Aortic and pulmonic",
+        "Mitral and tricuspid"
       ],
       "answer": [
         0
@@ -3717,12 +3717,12 @@
       "id": "PRE-153",
       "set": 1,
       "type": "single",
-      "stem": "A 79-year-old with severe AS on an echo from 2 years ago is scheduled for elective hip replacement. What is the BEST next step?",
+      "stem": "A patient with previously severe aortic stenosis has only a 2-year-old echocardiogram and is now scheduled for elective hip replacement. Which information is most important before deciding whether to proceed?",
       "options": [
-        "Review current echo, cath, and symptoms",
-        "Proceed with spinal anesthesia without further review",
-        "Proceed if METs are above 4",
-        "Proceed if the murmur is soft today and BP is normal"
+        "Current symptoms plus updated echo and relevant catheterization data",
+        "Current METs alone",
+        "Today's murmur intensity and blood pressure alone",
+        "Planned use of spinal anesthesia alone"
       ],
       "answer": [
         0
@@ -3741,12 +3741,12 @@
       "id": "PRE-154",
       "set": 1,
       "type": "single",
-      "stem": "A 71-year-old with prior MI is scheduled for an open AAA repair (suprainguinal vascular). What is his RCRI score and MACE risk?",
+      "stem": "A patient with prior myocardial infarction is scheduled for open AAA repair. Which RCRI result is correct?",
       "options": [
-        "RCRI 2, with about 2.4% risk",
-        "RCRI 1, with about 1.0% risk",
-        "RCRI 3, with about 5.4% risk",
-        "RCRI 0, with about 0.4% risk"
+        "Score 2 with about 2.4% MACE risk",
+        "Score 1 with about 1.0% risk",
+        "Score 3 with about 5.4% risk",
+        "Score 0 with about 0.4% risk"
       ],
       "answer": [
         0
@@ -3765,7 +3765,7 @@
       "id": "PRE-155",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a TIA 6 months ago with full recovery. Which RCRI item does this satisfy?",
+      "stem": "A patient had a transient ischemic attack 6 months ago with complete recovery. Which RCRI criterion does that history satisfy?",
       "options": [
         "Cerebrovascular disease",
         "Ischemic heart disease",
@@ -3789,12 +3789,12 @@
       "id": "PRE-156",
       "set": 1,
       "type": "single",
-      "stem": "Four patients have arrhythmias on preop ECGs. Which one represents a generally benign finding for elective surgery?",
+      "stem": "Which preoperative rhythm finding is most compatible with proceeding to elective surgery when the patient is otherwise stable?",
       "options": [
-        "Rate-controlled atrial fibrillation at 76",
-        "SVT requiring antiarrhythmics with recent recurrence",
-        "New atrial fibrillation with RVR at 140",
-        "Nonsustained VT with a family history of sudden death"
+        "Rate-controlled atrial fibrillation at 76 beats/min",
+        "Recurrent SVT requiring antiarrhythmics",
+        "New atrial fibrillation with ventricular rate 140",
+        "Nonsustained ventricular tachycardia with family history of sudden death"
       ],
       "answer": [
         0
