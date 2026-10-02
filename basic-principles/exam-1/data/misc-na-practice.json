@@ -8586,12 +8586,12 @@
       "id": "MISC-351",
       "set": 1,
       "type": "single",
-      "stem": "Case B: A CRNA works a 20-hour shift, then misreads a syringe label and gives the wrong drug. Which system-level fix BEST addresses the fatigue contribution?",
+      "stem": "After a fatigue-related wrong-drug event, which system-level intervention best addresses the contributing factor rather than blaming the individual?",
       "options": [
-        "Limit consecutive work hours and support rest",
-        "Encourage extra caffeine on long shifts",
-        "Remove breaks to shorten cases and finish shifts sooner",
-        "Punish the individual provider"
+        "Limit consecutive work hours and support restorative rest",
+        "Encourage more caffeine",
+        "Remove breaks to shorten shifts",
+        "Punish the provider"
       ],
       "answer": [
         0
@@ -8610,12 +8610,12 @@
       "id": "MISC-352",
       "set": 1,
       "type": "single",
-      "stem": "Case C: A Spanish-speaking woman in labor receives GA for a non-urgent cesarean because no interpreter was available to discuss an epidural. Which equity priority applies?",
+      "stem": "A Spanish-speaking laboring patient receives general anesthesia for a nonurgent cesarean because no interpreter was available to discuss neuraxial options. Which equity priority is most directly implicated?",
       "options": [
-        "Maternal care disparities",
-        "Pediatric patient disparities",
-        "Access to health insurance",
-        "Access to pain management"
+        "Maternal-care disparities",
+        "Pediatric disparities",
+        "Health-insurance access",
+        "Chronic pain access"
       ],
       "answer": [
         0
@@ -8634,11 +8634,11 @@
       "id": "MISC-353",
       "set": 1,
       "type": "single",
-      "stem": "Case C: A Spanish-speaking woman in labor receives GA for a non-urgent cesarean because no interpreter was available to discuss an epidural. Which AANA recommendation was not met?",
+      "stem": "In the same case, which AANA recommendation was not met?",
       "options": [
         "Accommodate literacy and linguistic barriers",
-        "Collect health outcomes data for quality review",
-        "Encourage diverse students",
+        "Collect outcomes data",
+        "Recruit diverse students",
         "Use evidence-based protocols"
       ],
       "answer": [
@@ -8658,7 +8658,7 @@
       "id": "MISC-354",
       "set": 1,
       "type": "single",
-      "stem": "Case C: A Spanish-speaking woman in labor receives GA for a non-urgent cesarean because no interpreter was available to discuss an epidural. Which ethical pillar is MOST affected by lack of consent communication?",
+      "stem": "When language barriers prevent meaningful anesthesia consent, which ethical principle is most directly threatened?",
       "options": [
         "Autonomy",
         "Beneficence",
@@ -8682,7 +8682,7 @@
       "id": "MISC-355",
       "set": 1,
       "type": "single",
-      "stem": "Case C: A Spanish-speaking woman in labor receives GA for a non-urgent cesarean because no interpreter was available to discuss an epidural. Which quality domain is MOST violated?",
+      "stem": "When a patient receives a different anesthetic option because interpreter access is unavailable, which quality domain is most clearly violated?",
       "options": [
         "Equitable",
         "Efficient",
@@ -8706,12 +8706,12 @@
       "id": "MISC-356",
       "set": 1,
       "type": "single",
-      "stem": "Case C: A Spanish-speaking woman in labor receives GA for a non-urgent cesarean because no interpreter was available to discuss an epidural. Which system-level APSF strategy would help most?",
+      "stem": "Which system-level intervention would best reduce recurrence of interpreter-related inequity?",
       "options": [
-        "Provide health equity training and interpreter access policies",
-        "Recognize personal bias, at the clinician level",
-        "Individual continuing education for interested staff",
-        "Community outreach by one clinician"
+        "Create reliable interpreter-access policies and health-equity training",
+        "Rely only on individual bias recognition",
+        "Offer optional CE to interested staff",
+        "Depend on one clinician's community outreach"
       ],
       "answer": [
         0
@@ -8730,12 +8730,12 @@
       "id": "MISC-357",
       "set": 1,
       "type": "single",
-      "stem": "Case D: A CRNA intubates a patient with suspected TB, then adjusts the vaporizer and touches the keyboard with the same gloves. Which principle is violated?",
+      "stem": "After intubating a patient with suspected TB, a CRNA touches clean equipment with the same contaminated gloves. Which infection-control principle is violated?",
       "options": [
-        "Dirty-to-clean zone contamination without glove change",
-        "Hand hygiene between green zones",
-        "Use of PPE for aerosol-generating procedures",
-        "Environmental cleaning after the case"
+        "Dirty-to-clean zone contamination without glove change or hand hygiene",
+        "Hand hygiene between clean zones",
+        "Use of PPE during AGPs",
+        "Terminal cleaning after the case"
       ],
       "answer": [
         0
@@ -8754,12 +8754,12 @@
       "id": "MISC-358",
       "set": 1,
       "type": "single",
-      "stem": "Case D: A CRNA intubates a patient with suspected TB, then adjusts the vaporizer and touches the keyboard with the same gloves. What PPE should have been worn for intubation?",
+      "stem": "Which PPE set is appropriate for intubating a patient with suspected airborne respiratory infection?",
       "options": [
-        "Gloves, gown, eye protection, and N95 or surgical mask",
-        "Gloves and a surgical cap for a brief intubation",
-        "Eye protection and gloves",
-        "Surgical mask and gloves"
+        "Gloves, gown, eye protection, and appropriate respiratory protection such as an N95",
+        "Gloves and surgical cap only",
+        "Eye protection and gloves only",
+        "Surgical mask and gloves only"
       ],
       "answer": [
         0
@@ -8778,9 +8778,9 @@
       "id": "MISC-359",
       "set": 1,
       "type": "single",
-      "stem": "Case D: A CRNA intubates a patient with suspected TB, then adjusts the vaporizer and touches the keyboard with the same gloves. Which link in the chain of infection is interrupted by glove change and hand hygiene?",
+      "stem": "Glove change and hand hygiene after airway manipulation primarily interrupt which link in the chain of infection?",
       "options": [
-        "Transmission",
+        "Mode of transmission",
         "Reservoir",
         "Portal of exit",
         "Infectious agent"
@@ -8802,12 +8802,12 @@
       "id": "MISC-360",
       "set": 1,
       "type": "single",
-      "stem": "Case D: A CRNA intubates a patient with suspected TB, then adjusts the vaporizer and touches the keyboard with the same gloves. Which APSF strategy supports environmental safety after this case?",
+      "stem": "After care of a patient with suspected TB, which APSF infection-prevention strategy addresses contamination of the anesthesia workspace?",
       "options": [
-        "Environmental cleaning between cases and terminal cleaning",
-        "Patient decolonization, without environmental steps",
-        "Vascular care",
-        "Hand hygiene performed once per anesthesia case"
+        "Environmental cleaning between cases and terminal cleaning as indicated",
+        "Patient decolonization only",
+        "Vascular-access care",
+        "One hand-hygiene event per case"
       ],
       "answer": [
         0
@@ -8826,12 +8826,12 @@
       "id": "MISC-361",
       "set": 1,
       "type": "single",
-      "stem": "Case E: A patient develops a deep incisional SSI 25 days after hernia repair. What does this mean for reimbursement?",
+      "stem": "A deep incisional SSI occurs 25 days after hernia repair. In the cited CMS framework, how is this type of preventable event treated?",
       "options": [
-        "Care is not reimbursable because SSIs are preventable",
-        "Care is fully reimbursed as a surgical complication",
-        "It is reimbursed if documented as unavoidable",
-        "Reimbursement depends on the surgeon"
+        "As preventable and potentially nonreimbursable",
+        "As unavoidable and fully reimbursed",
+        "As reimbursable if documented",
+        "As solely the surgeon's responsibility"
       ],
       "answer": [
         0
@@ -8850,14 +8850,14 @@
       "id": "MISC-362",
       "set": 1,
       "type": "multi",
-      "stem": "Case E: A patient develops a deep incisional SSI 25 days after hernia repair. Which intraoperative factors should be reviewed? (Select 5)",
+      "stem": "Which five intraoperative factors should be reviewed after a preventable SSI? (Select 5)",
       "options": [
         "Antibiotic timing",
         "Temperature management",
         "Glucose control",
         "Oxygenation",
         "Volume status",
-        "Fresh gas flow rate"
+        "Fresh gas flow"
       ],
       "answer": [
         0,
@@ -8880,12 +8880,12 @@
       "id": "MISC-363",
       "set": 1,
       "type": "single",
-      "stem": "Case E: The antibiotic was given 90 minutes before incision. Was this appropriate if cefazolin was used?",
+      "stem": "Cefazolin was given 90 minutes before incision. Which interpretation is correct?",
       "options": [
-        "No, most antibiotics should be within 60 minutes",
-        "Yes, 90 minutes is ideal",
-        "Yes, all antibiotics allow 120 minutes",
-        "No, antibiotics should be given after incision"
+        "The timing was outside the usual 60-minute prophylaxis window",
+        "The timing was ideal",
+        "All antibiotics use a 120-minute window",
+        "Antibiotics should be given after incision"
       ],
       "answer": [
         0
@@ -8904,7 +8904,7 @@
       "id": "MISC-364",
       "set": 1,
       "type": "single",
-      "stem": "Case E: A patient develops a deep incisional SSI 25 days after hernia repair. Which NHQDR core area includes SSI reduction?",
+      "stem": "Reducing postoperative SSIs most directly improves which NHQDR core area?",
       "options": [
         "Patient safety",
         "Healthy living",
@@ -8928,10 +8928,10 @@
       "id": "MISC-365",
       "set": 1,
       "type": "single",
-      "stem": "Case F: During an unexpected hemorrhage, the CRNA fixates on anesthesia depth and ignores blood loss. Which fixation error is this?",
+      "stem": "During major hemorrhage, a CRNA keeps treating presumed anesthetic depth while ignoring obvious blood loss. Which fixation error best fits?",
       "options": [
         "Cognitive tunnel vision",
-        "Avoidance error from dismissing a rare cause",
+        "Avoidance error",
         "Artifact error",
         "Automation bias"
       ],
@@ -8952,12 +8952,12 @@
       "id": "MISC-366",
       "set": 1,
       "type": "single",
-      "stem": "Case F: During an unexpected hemorrhage, the CRNA fixates on anesthesia depth and ignores blood loss. Which CRM principle would help most?",
+      "stem": "Which CRM skill would most directly help a team recognize that hemorrhage, not anesthetic depth, is causing deterioration?",
       "options": [
         "Situational awareness and anticipation",
-        "Behavioral flexibility, without anticipation",
-        "Evaluation",
-        "Communication"
+        "Behavioral flexibility alone",
+        "Postevent evaluation",
+        "Communication alone"
       ],
       "answer": [
         0
@@ -8976,7 +8976,7 @@
       "id": "MISC-367",
       "set": 1,
       "type": "single",
-      "stem": "Case F: During an unexpected hemorrhage, the CRNA fixates on anesthesia depth and ignores blood loss. Which cognitive aid could guide hemorrhage management?",
+      "stem": "Which cognitive aid could support management of unexpected intraoperative hemorrhage?",
       "options": [
         "Stanford Emergency Manual",
         "WHO Surgical Safety Checklist",
@@ -9000,11 +9000,11 @@
       "id": "MISC-368",
       "set": 1,
       "type": "single",
-      "stem": "Case F: After the event, the team holds a debrief. Which CRM element is this?",
+      "stem": "After the hemorrhage event, the team debriefs to identify lessons. Which CRM element is being used?",
       "options": [
-        "Evaluation (error wisdom)",
-        "Awareness (attention)",
-        "Communication (call for help)",
+        "Evaluation: error wisdom",
+        "Awareness",
+        "Communication",
         "Behavioral flexibility"
       ],
       "answer": [
@@ -9024,12 +9024,12 @@
       "id": "MISC-369",
       "set": 1,
       "type": "single",
-      "stem": "Case G: A CRNA has loud music during induction and misses an early desaturation. Which distraction type is this?",
+      "stem": "Loud music during induction masks an early desaturation cue. Which distraction type is most directly responsible?",
       "options": [
         "Auditory disruption",
         "Visual distraction",
         "Cognitive load",
-        "Fatigue from a long day in the OR"
+        "Fatigue"
       ],
       "answer": [
         0
@@ -9048,12 +9048,12 @@
       "id": "MISC-370",
       "set": 1,
       "type": "single",
-      "stem": "Case G: A CRNA has loud music during induction and misses an early desaturation. Which strategy would reduce this risk?",
+      "stem": "Which intervention best reduces the risk from loud music during induction?",
       "options": [
-        "Minimize noise during induction",
-        "Allow music at low volume during induction",
-        "Lower alarm volumes during induction",
-        "Allow unrestricted device use"
+        "Minimize nonessential noise during critical periods",
+        "Allow low-volume music",
+        "Lower alarm volume",
+        "Permit unrestricted devices"
       ],
       "answer": [
         0
@@ -9072,12 +9072,12 @@
       "id": "MISC-371",
       "set": 1,
       "type": "single",
-      "stem": "Case G: A CRNA has loud music during induction and misses an early desaturation. Which APSF priority is relevant?",
+      "stem": "The missed desaturation due to side conversation and music falls under which APSF safety priority?",
       "options": [
         "Distractions in procedural areas",
         "Burnout",
         "Delirium",
-        "Safety in non-operating room locations"
+        "Non-OR safety"
       ],
       "answer": [
         0
@@ -9096,10 +9096,10 @@
       "id": "MISC-372",
       "set": 1,
       "type": "single",
-      "stem": "Case H: A clinician gives less analgesia to a Black patient based on beliefs about pain tolerance. Which ASA priority is involved?",
+      "stem": "A clinician gives less analgesia to a Black patient because of false beliefs about pain tolerance. Which ASA equity priority is most directly implicated?",
       "options": [
         "Access to pain management",
-        "Maternal care and obstetric anesthesia",
+        "Maternal care",
         "Pediatric care",
         "Health insurance"
       ],
@@ -9120,12 +9120,12 @@
       "id": "MISC-373",
       "set": 1,
       "type": "single",
-      "stem": "Case H: A clinician gives less analgesia to a Black patient based on beliefs about pain tolerance. Which clinician-level strategy is MOST relevant?",
+      "stem": "Which clinician-level strategy most directly addresses biased pain-treatment decisions?",
       "options": [
-        "Recognize personal bias",
-        "Provide financial incentives for equity",
-        "Create a culture of equity",
-        "Promote governance supporting equity"
+        "Recognize and actively counter personal bias",
+        "Use financial incentives",
+        "Create systemwide culture only",
+        "Rely on governance alone"
       ],
       "answer": [
         0
@@ -9144,7 +9144,7 @@
       "id": "MISC-374",
       "set": 1,
       "type": "single",
-      "stem": "Case H: A clinician gives less analgesia to a Black patient based on beliefs about pain tolerance. Which ethical pillar is MOST violated?",
+      "stem": "Providing less analgesia based on race most directly violates which ethical principle?",
       "options": [
         "Justice",
         "Autonomy",
@@ -9168,12 +9168,12 @@
       "id": "MISC-375",
       "set": 1,
       "type": "single",
-      "stem": "Case I: A patient with dementia is scheduled for surgery without a surrogate. What is the FIRST step?",
+      "stem": "A patient with dementia is scheduled for surgery and no surrogate is immediately available. What is the first step?",
       "options": [
-        "Assess capacity and identify a legal surrogate",
-        "Proceed with consent from the patient anyway",
+        "Assess decision-making capacity and identify a legal surrogate if needed",
+        "Proceed with the patient's signature regardless of capacity",
         "Let the surgeon consent for anesthesia",
-        "Proceed under implied consent"
+        "Assume implied consent"
       ],
       "answer": [
         0
@@ -9192,7 +9192,7 @@
       "id": "MISC-376",
       "set": 1,
       "type": "single",
-      "stem": "Case I: A patient with dementia is scheduled for surgery without a surrogate. Which ethical pillar is protected by this step?",
+      "stem": "Assessing capacity and involving an appropriate surrogate primarily protects which ethical principle?",
       "options": [
         "Autonomy",
         "Justice",
@@ -9216,10 +9216,10 @@
       "id": "MISC-377",
       "set": 1,
       "type": "single",
-      "stem": "Case I: A patient with dementia is scheduled for surgery without a surrogate. Which patient-centered care dimension is involved when family participates?",
+      "stem": "When family appropriately participates in care planning for a patient with dementia, which patient-centered-care dimension is most directly reflected?",
       "options": [
         "Involvement of family and friends",
-        "Access to care through telehealth follow-up",
+        "Access to care",
         "Physical comfort",
         "Continuity and transition"
       ],
@@ -9240,12 +9240,12 @@
       "id": "MISC-378",
       "set": 1,
       "type": "single",
-      "stem": "Case J: A researcher wants to study anesthesia outcomes in prisoners. What must be ensured?",
+      "stem": "Researchers want to enroll prisoners in an anesthesia-outcomes study. What must be added to ordinary research protections?",
       "options": [
-        "Additional protections for a vulnerable population",
-        "No consent is needed for prisoners in low-risk studies",
-        "Verbal consent is sufficient for prisoners",
-        "Consent from the warden on the prisoner's behalf"
+        "Additional safeguards for a vulnerable population",
+        "No consent for low-risk studies",
+        "Verbal consent only",
+        "Consent from the warden instead of the participant"
       ],
       "answer": [
         0
@@ -9264,12 +9264,12 @@
       "id": "MISC-379",
       "set": 1,
       "type": "single",
-      "stem": "Case J: A researcher wants to study anesthesia outcomes in prisoners. What must be clearly explained to participants?",
+      "stem": "Which consent element must be clearly explained to prisoner participants just as to other research participants?",
       "options": [
         "Anticipated risks and benefits",
-        "The potential benefits of participating",
-        "The study sponsor's name",
-        "The study duration"
+        "Only potential benefits",
+        "Sponsor name only",
+        "Study duration only"
       ],
       "answer": [
         0
@@ -9288,7 +9288,7 @@
       "id": "MISC-380",
       "set": 1,
       "type": "single",
-      "stem": "Case K: During a code in PACU, the team uses closed-loop communication. Which CRM principle is demonstrated?",
+      "stem": "During a PACU code, orders are repeated back and confirmed. Which CRM principle is demonstrated?",
       "options": [
         "Communication",
         "Leadership",
@@ -9312,10 +9312,10 @@
       "id": "MISC-381",
       "set": 1,
       "type": "single",
-      "stem": "Case K: The team leader assigns compressions, airway, and drugs. Which CRM principle is shown?",
+      "stem": "During the same code, the leader assigns compressions, airway, and medications to specific people. Which CRM principle is demonstrated?",
       "options": [
         "Leadership and role designation",
-        "Fixation error on a single cause of the arrest",
+        "Fixation",
         "Artifact error",
         "Avoidance error"
       ],
@@ -9336,7 +9336,7 @@
       "id": "MISC-382",
       "set": 1,
       "type": "single",
-      "stem": "Case K: During a code in PACU, the team uses closed-loop communication. Which cognitive aid is appropriate?",
+      "stem": "Which cognitive aid is most appropriate during unexpected cardiac arrest in PACU?",
       "options": [
         "Stanford Emergency Manual",
         "WHO Surgical Safety Checklist",
@@ -9360,7 +9360,7 @@
       "id": "MISC-383",
       "set": 1,
       "type": "single",
-      "stem": "Case L: A CRNA assumes a low BP reading is from a surgeon leaning on the cuff and does not recheck. Which error type is this?",
+      "stem": "A low BP reading is dismissed as cuff artifact without reassessment. Which fixation error is this?",
       "options": [
         "Artifact error",
         "Tunnel vision",
@@ -9384,12 +9384,12 @@
       "id": "MISC-384",
       "set": 1,
       "type": "single",
-      "stem": "Case L: A CRNA assumes a low BP reading is from a surgeon leaning on the cuff and does not recheck. Which step would reduce this error?",
+      "stem": "Which action would best reduce the risk of artifact error when a monitor value seems implausible?",
       "options": [
-        "Verify with another measurement or patient assessment",
-        "Accept the reading and continue",
-        "Increase anesthetic depth to treat presumed light anesthesia",
-        "Treat the BP immediately without rechecking"
+        "Verify with another measurement and assess the patient",
+        "Accept the assumption and continue",
+        "Deepen anesthesia",
+        "Treat the value without confirmation"
       ],
       "answer": [
         0
@@ -9408,7 +9408,7 @@
       "id": "MISC-385",
       "set": 1,
       "type": "single",
-      "stem": "Case M: A patient with low health literacy signs consent without understanding. Which SDOH domain is MOST involved?",
+      "stem": "A patient signs consent without understanding because of low health literacy. Which social-determinant domain is most directly involved?",
       "options": [
         "Education access and quality",
         "Neighborhood and built environment",
@@ -9432,10 +9432,10 @@
       "id": "MISC-386",
       "set": 1,
       "type": "single",
-      "stem": "Case M: A patient with low health literacy signs consent without understanding. Which consent consideration is MOST relevant?",
+      "stem": "In the same case, which informed-consent issue is most important?",
       "options": [
-        "Communication and patient health literacy",
-        "Timing of consent, not its content",
+        "Communication matched to patient health literacy",
+        "Timing only",
         "Emergency consent",
         "Withheld information"
       ],
@@ -9456,11 +9456,11 @@
       "id": "MISC-387",
       "set": 1,
       "type": "single",
-      "stem": "Case M: A patient with low health literacy signs consent without understanding. Which patient-centered dimension should be emphasized?",
+      "stem": "Which patient-centered-care dimension should be emphasized when using plain language and teach-back for a low-literacy patient?",
       "options": [
         "Information, communication, and education",
-        "Physical comfort and pain control",
-        "Access to care through transportation support",
+        "Physical comfort",
+        "Access to care",
         "Continuity and transition"
       ],
       "answer": [
@@ -9480,12 +9480,12 @@
       "id": "MISC-388",
       "set": 1,
       "type": "single",
-      "stem": "Case N: A patient without insurance does not receive PONV prophylaxis. Which study supports this disparity?",
+      "stem": "Which cited study supports a disparity in PONV prophylaxis by insurance or socioeconomic status?",
       "options": [
-        "Andreae et al. (2018) registry data",
-        "JAMA 2015 pediatric appendicitis study",
+        "Andreae et al. (2018)",
+        "Goyal et al. (2015)",
         "Landesberg vascular study",
-        "To Err Is Human (1999)"
+        "To Err Is Human"
       ],
       "answer": [
         0
@@ -9504,12 +9504,12 @@
       "id": "MISC-389",
       "set": 1,
       "type": "single",
-      "stem": "Case N: A patient without insurance does not receive PONV prophylaxis. Which ASA priority applies?",
+      "stem": "When lack of insurance contributes to worse perioperative care, which ASA equity priority is most directly implicated?",
       "options": [
         "Access to health insurance",
         "Maternal care",
         "Pediatric care",
-        "Access to pain management"
+        "Pain management"
       ],
       "answer": [
         0
@@ -9528,7 +9528,7 @@
       "id": "MISC-390",
       "set": 1,
       "type": "single",
-      "stem": "Case N: A patient without insurance does not receive PONV prophylaxis. Which quality domain is violated?",
+      "stem": "Clinically similar patients receive different PONV prophylaxis based on insurance status. Which quality domain is violated?",
       "options": [
         "Equitable",
         "Timely",
@@ -9552,10 +9552,10 @@
       "id": "MISC-391",
       "set": 1,
       "type": "single",
-      "stem": "Case O: A team skips the time-out to save time and operates on the wrong side. Which cognitive aid was bypassed?",
+      "stem": "A team skips the pre-incision time-out and performs wrong-site surgery. Which cognitive aid was bypassed?",
       "options": [
         "WHO Surgical Safety Checklist",
-        "Stanford Emergency Manual crisis checklists",
+        "Stanford Emergency Manual",
         "MH cart instructions",
         "Difficult airway algorithm"
       ],
@@ -9576,12 +9576,12 @@
       "id": "MISC-392",
       "set": 1,
       "type": "single",
-      "stem": "Case O: A team skips the time-out to save time and operates on the wrong side. Which CRM principle broke down?",
+      "stem": "Which CRM domain is most directly implicated when the team fails to communicate and confirm laterality before incision?",
       "options": [
         "Communication",
         "Dynamic decision making",
         "Evaluation",
-        "Situational awareness"
+        "Situational awareness alone"
       ],
       "answer": [
         0
@@ -9600,12 +9600,12 @@
       "id": "MISC-393",
       "set": 1,
       "type": "single",
-      "stem": "Case O: A team skips the time-out to save time and operates on the wrong side. What model explains the multiple failures leading to wrong-site surgery?",
+      "stem": "Wrong-site surgery occurs after multiple safeguards fail. Which model best explains how the event reached the patient?",
       "options": [
         "Swiss cheese model",
         "Chain of infection",
         "Four ethical pillars",
-        "WHO 5 moments"
+        "WHO hand-hygiene moments"
       ],
       "answer": [
         0
@@ -9624,7 +9624,7 @@
       "id": "MISC-394",
       "set": 1,
       "type": "single",
-      "stem": "Case P: A CRNA is multitasking and misses a rising ETCO2. Which distraction type is involved?",
+      "stem": "A CRNA is simultaneously charting, preparing medication, and troubleshooting equipment and misses rising ETCO2. Which distraction mechanism is most relevant?",
       "options": [
         "Cognitive load",
         "Auditory disruption",
@@ -9648,12 +9648,12 @@
       "id": "MISC-395",
       "set": 1,
       "type": "single",
-      "stem": "Case P: A CRNA is multitasking and misses a rising ETCO2. Which strategy would help?",
+      "stem": "Which strategy best reduces multitasking risk during critical periods?",
       "options": [
-        "Use the sterile OR rule during critical periods",
-        "Limit conversation to the surgeon and CRNA",
+        "Use a sterile-OR approach and minimize nonessential competing tasks",
+        "Limit conversation only to surgeon and CRNA",
         "Rely on alarms",
-        "Delegate monitoring to the surgeon during critical steps"
+        "Delegate monitoring to the surgeon"
       ],
       "answer": [
         0
@@ -9672,12 +9672,12 @@
       "id": "MISC-396",
       "set": 1,
       "type": "single",
-      "stem": "Case Q: A CRNA has an implicit bias toward a patient with substance use disorder and undertreats pain. Which AANA recommendation applies?",
+      "stem": "A clinician's bias toward a patient with substance-use disorder leads to undertreated pain. Which AANA recommendation applies most directly?",
       "options": [
-        "Be consciously aware of implicit bias",
-        "Collect outcomes data",
-        "Encourage diverse students",
-        "Use evidence-based protocols, without other steps"
+        "Be consciously aware of and counter implicit bias",
+        "Collect outcomes data only",
+        "Recruit diverse students",
+        "Use protocols without addressing bias"
       ],
       "answer": [
         0
@@ -9696,7 +9696,7 @@
       "id": "MISC-397",
       "set": 1,
       "type": "single",
-      "stem": "Case Q: A CRNA has an implicit bias toward a patient with substance use disorder and undertreats pain. Which ethical pillar is MOST affected?",
+      "stem": "Undertreating pain because of stigma toward substance-use disorder most directly violates which ethical principle?",
       "options": [
         "Justice",
         "Autonomy",
@@ -9720,11 +9720,11 @@
       "id": "MISC-398",
       "set": 1,
       "type": "single",
-      "stem": "Case R: A patient undergoes bronchoscopy with a known airborne infection. What classification applies?",
+      "stem": "Bronchoscopy in a patient with airborne respiratory infection should be classified how for infection control?",
       "options": [
-        "Additional AGP",
+        "Aerosol-generating procedure",
         "Unclear-risk AGP",
-        "Not an AGP",
+        "Non-AGP",
         "Low-risk procedure"
       ],
       "answer": [
@@ -9744,12 +9744,12 @@
       "id": "MISC-399",
       "set": 1,
       "type": "single",
-      "stem": "Case R: A patient undergoes bronchoscopy with a known airborne infection. Which PPE is required?",
+      "stem": "Which PPE set is appropriate for bronchoscopy in a patient with airborne infection?",
       "options": [
-        "Gloves, gown, eye protection, and a mask",
-        "Gloves, since the scope stays below the cords",
-        "Eye protection and gloves",
-        "Surgical mask and gloves"
+        "Gloves, gown, eye protection, and appropriate respiratory protection",
+        "Gloves only",
+        "Eye protection and gloves only",
+        "Surgical mask and gloves only"
       ],
       "answer": [
         0
@@ -9768,13 +9768,13 @@
       "id": "MISC-400",
       "set": 1,
       "type": "multi",
-      "stem": "Which pairing of quality domain and example is correct? (Select 3)",
+      "stem": "Which three domain-example pairings are correct? (Select 3)",
       "options": [
-        "Safe: using a barcode scanner before drug administration",
-        "Timely: staffing to avoid delays for emergent cases",
+        "Safe: barcode scanning before medication administration",
+        "Timely: staffing to reduce delays for emergent cases",
         "Efficient: reducing unnecessary supply waste",
         "Equitable: shortening turnover time",
-        "Effective: giving care based on surgeon preference alone",
+        "Effective: following surgeon preference instead of evidence",
         "Patient-centered: choosing the cheapest drug by default"
       ],
       "answer": [
