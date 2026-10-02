@@ -57,20 +57,12 @@
     lastCheck = now;
     try {
       const latest = await readBuild();
-      if (!baseline) { baseline = latest; sessionStorage.setItem(BUILD_CACHE_KEY, baseline); return; }
-      if (latest !== baseline) {
-        const reload = new URL(location.href);
-        if (reload.searchParams.get('_mbu_reload') === latest) {
-          baseline = latest;
-          sessionStorage.setItem(BUILD_CACHE_KEY, baseline);
-          clearReloadMarker(latest);
-          return;
-        }
-        reload.searchParams.set('_mbu_reload', latest);
-        location.replace(reload.href);
+      if (!baseline || latest !== baseline) {
+        baseline = latest;
+        sessionStorage.setItem(BUILD_CACHE_KEY, baseline);
       }
     } catch {
-      // Update checks are best-effort and never block quiz rendering.
+      // Update checks are best-effort. Never reload a page underneath the learner.
     } finally {
       checking = false;
     }
