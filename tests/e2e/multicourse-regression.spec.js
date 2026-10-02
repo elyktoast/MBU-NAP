@@ -86,7 +86,7 @@ test.describe('multi-course foundation', () => {
     await page.goto('/basic-principles/exam-1/');
     await waitForPageReady(page);
     await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Basic Principles', exact: true })).toHaveAttribute('href', /\/basic-principles\/$/);
-    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Basic Principles Exam 1 Study Studio', exact: true })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html$/);
+    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Study Studio', exact: true })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html$/);
   });
 
 
