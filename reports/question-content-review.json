@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "totalQuestions": 2000,
   "summary": {
     "sameSetExactGroups": 0,
@@ -7,154 +7,15 @@
     "missingSourceTitle": 0,
     "missingSourceLocator": 0,
     "explanationsUnder8Words": 0,
-    "manualReviewCandidates": 17
+    "manualReviewCandidates": 6,
+    "manualReviewPairs": 17
   },
   "candidates": [
     {
-      "type": "near_duplicate_variant",
+      "type": "near_duplicate_cluster",
       "severity": "manual_review",
-      "similarity": 0.93,
       "questions": [
         "b1-125",
-        "b1-416"
-      ],
-      "stems": [
-        "Which of the following clinical factors will shift the oxyhemoglobin dissociation curve to the RIGHT, facilitating oxygen offloading to peripheral tissues? (Select 3)",
-        "Which of the following clinical factors will shift the oxyhemoglobin dissociation curve to the RIGHT, facilitating oxygen offloading to tissues? (Select 3)"
-      ],
-      "sameSource": true
-    },
-    {
-      "type": "near_duplicate_variant",
-      "severity": "manual_review",
-      "similarity": 1,
-      "questions": [
-        "b1-237",
-        "b1-368"
-      ],
-      "stems": [
-        "What is the primary role of calcium hydroxide [Ca(OH)2] in wet soda lime absorbent?",
-        "What is the primary role of calcium hydroxide in wet soda lime absorbent?"
-      ],
-      "sameSource": true
-    },
-    {
-      "type": "near_duplicate_variant",
-      "severity": "manual_review",
-      "similarity": 1,
-      "questions": [
-        "b1-237",
-        "b1-468"
-      ],
-      "stems": [
-        "What is the primary role of calcium hydroxide [Ca(OH)2] in wet soda lime absorbent?",
-        "What is the primary role of calcium hydroxide in wet soda lime absorbent?"
-      ],
-      "sameSource": true
-    },
-    {
-      "type": "near_duplicate_variant",
-      "severity": "manual_review",
-      "similarity": 1,
-      "questions": [
-        "b1-258",
-        "b1-287"
-      ],
-      "stems": [
-        "What is the primary role of potassium hydroxide and sodium hydroxide in wet soda lime?",
-        "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?"
-      ],
-      "sameSource": true
-    },
-    {
-      "type": "near_duplicate_variant",
-      "severity": "manual_review",
-      "similarity": 1,
-      "questions": [
-        "b1-258",
-        "b1-350"
-      ],
-      "stems": [
-        "What is the primary role of potassium hydroxide and sodium hydroxide in wet soda lime?",
-        "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?"
-      ],
-      "sameSource": true
-    },
-    {
-      "type": "near_duplicate_variant",
-      "severity": "manual_review",
-      "similarity": 1,
-      "questions": [
-        "b1-258",
-        "b1-450"
-      ],
-      "stems": [
-        "What is the primary role of potassium hydroxide and sodium hydroxide in wet soda lime?",
-        "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?"
-      ],
-      "sameSource": true
-    },
-    {
-      "type": "near_duplicate_variant",
-      "severity": "manual_review",
-      "similarity": 1,
-      "questions": [
-        "b1-258",
-        "b1-77"
-      ],
-      "stems": [
-        "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?",
-        "What is the primary role of potassium hydroxide and sodium hydroxide in wet soda lime?"
-      ],
-      "sameSource": true
-    },
-    {
-      "type": "near_duplicate_variant",
-      "severity": "manual_review",
-      "similarity": 1,
-      "questions": [
-        "b1-277",
-        "b1-55"
-      ],
-      "stems": [
-        "Which statements about an oropharyngeal airway are supported by the lecture? Select 3.",
-        "Which statements about an oropharyngeal airway are supported by the airway lecture? Select 3."
-      ],
-      "sameSource": true
-    },
-    {
-      "type": "near_duplicate_variant",
-      "severity": "manual_review",
-      "similarity": 0.93,
-      "questions": [
-        "b1-303",
-        "b1-382"
-      ],
-      "stems": [
-        "Which of the following clinical events will produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
-        "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
-      ],
-      "sameSource": true
-    },
-    {
-      "type": "near_duplicate_variant",
-      "severity": "manual_review",
-      "similarity": 0.93,
-      "questions": [
-        "b1-303",
-        "b1-482"
-      ],
-      "stems": [
-        "Which of the following clinical events will produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
-        "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
-      ],
-      "sameSource": true
-    },
-    {
-      "type": "near_duplicate_variant",
-      "severity": "manual_review",
-      "similarity": 0.93,
-      "questions": [
         "b1-316",
         "b1-416"
       ],
@@ -162,55 +23,85 @@
         "Which of the following clinical factors will shift the oxyhemoglobin dissociation curve to the RIGHT, facilitating oxygen offloading to peripheral tissues? (Select 3)",
         "Which of the following clinical factors will shift the oxyhemoglobin dissociation curve to the RIGHT, facilitating oxygen offloading to tissues? (Select 3)"
       ],
-      "sameSource": true
+      "sources": [
+        "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 74, 76"
+      ]
     },
     {
-      "type": "near_duplicate_variant",
+      "type": "near_duplicate_cluster",
       "severity": "manual_review",
-      "similarity": 1,
       "questions": [
-        "b1-327",
-        "b1-40"
+        "b1-237",
+        "b1-368",
+        "b1-468"
       ],
       "stems": [
-        "During general anesthesia, what capnographic finding confirms carbon dioxide rebreathing?",
-        "What capnographic finding confirms carbon dioxide rebreathing during general anesthesia?"
+        "What is the primary role of calcium hydroxide [Ca(OH)2] in wet soda lime absorbent?",
+        "What is the primary role of calcium hydroxide in wet soda lime absorbent?"
       ],
-      "sameSource": true
+      "sources": [
+        "CO₂ Absorbents and Scavenging · Slides 2, 3"
+      ]
     },
     {
-      "type": "near_duplicate_variant",
+      "type": "near_duplicate_cluster",
       "severity": "manual_review",
-      "similarity": 1,
       "questions": [
+        "b1-258",
+        "b1-287",
+        "b1-350",
+        "b1-450",
+        "b1-77"
+      ],
+      "stems": [
+        "What is the primary role of potassium hydroxide and sodium hydroxide in wet soda lime?",
+        "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?"
+      ],
+      "sources": [
+        "CO₂ Absorbents and Scavenging · Slide 2",
+        "CO₂ Absorbents and Scavenging · Slides 2, 3"
+      ]
+    },
+    {
+      "type": "near_duplicate_cluster",
+      "severity": "manual_review",
+      "questions": [
+        "b1-277",
         "b1-346",
+        "b1-446",
         "b1-55"
       ],
       "stems": [
-        "Which statements about an oropharyngeal airway are supported by the lecture? Select 3.",
-        "Which statements about an oropharyngeal airway are supported by the airway lecture? Select 3."
+        "Which statements about an oropharyngeal airway are supported by the airway lecture? Select 3.",
+        "Which statements about an oropharyngeal airway are supported by the lecture? Select 3."
       ],
-      "sameSource": true
+      "sources": [
+        "Airway Equipment · Slide 5"
+      ]
     },
     {
-      "type": "near_duplicate_variant",
+      "type": "near_duplicate_cluster",
       "severity": "manual_review",
-      "similarity": 0.93,
       "questions": [
+        "b1-303",
         "b1-382",
-        "b1-403"
+        "b1-403",
+        "b1-482"
       ],
       "stems": [
         "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
         "Which of the following clinical events will produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
       ],
-      "sameSource": true
+      "sources": [
+        "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 41, 43, 50",
+        "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 43, 50"
+      ]
     },
     {
-      "type": "near_duplicate_variant",
+      "type": "near_duplicate_cluster",
       "severity": "manual_review",
-      "similarity": 1,
       "questions": [
+        "b1-327",
         "b1-40",
         "b1-427"
       ],
@@ -218,35 +109,9 @@
         "During general anesthesia, what capnographic finding confirms carbon dioxide rebreathing?",
         "What capnographic finding confirms carbon dioxide rebreathing during general anesthesia?"
       ],
-      "sameSource": true
-    },
-    {
-      "type": "near_duplicate_variant",
-      "severity": "manual_review",
-      "similarity": 0.93,
-      "questions": [
-        "b1-403",
-        "b1-482"
-      ],
-      "stems": [
-        "Which of the following clinical events will produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
-        "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)"
-      ],
-      "sameSource": true
-    },
-    {
-      "type": "near_duplicate_variant",
-      "severity": "manual_review",
-      "similarity": 1,
-      "questions": [
-        "b1-446",
-        "b1-55"
-      ],
-      "stems": [
-        "Which statements about an oropharyngeal airway are supported by the lecture? Select 3.",
-        "Which statements about an oropharyngeal airway are supported by the airway lecture? Select 3."
-      ],
-      "sameSource": true
+      "sources": [
+        "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 44, 50, 51"
+      ]
     }
   ]
 }
