@@ -8964,17 +8964,17 @@
       "id": "PRE-367",
       "set": 1,
       "type": "single",
-      "stem": "An obese patient's plan lists rocuronium 1.2 mg/kg but does not specify the weight scalar. What additional information is most important before dosing?",
+      "stem": "An obese patient's plan lists rocuronium 1.2 mg/kg but does not specify the dosing scalar. What should be clarified before administering the drug?",
       "options": [
-        "The ideal-body-weight calculation",
-        "The total-body-weight calculation only",
-        "The patient's blood type",
-        "The surgical history"
+        "Which body-size scalar is appropriate for this drug, dose, and clinical goal rather than assuming total or ideal body weight",
+        "Ideal body weight must always be used for rocuronium",
+        "Total body weight must always be used for rocuronium",
+        "Body size is irrelevant to neuromuscular-blocker dosing"
       ],
       "answer": [
         0
       ],
-      "explanation": "IBW calculations should be added to each care plan so weight-based doses are clear.",
+      "explanation": "Obesity changes drug distribution and dosing relationships. The appropriate scalar can vary with the drug and dosing objective, so a care plan should state the intended scalar rather than assuming IBW universally.",
       "citation": "",
       "topic": "Obesity, BMI, IBW, and Apfel",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -9036,17 +9036,17 @@
       "id": "PRE-370",
       "set": 1,
       "type": "single",
-      "stem": "A healthy woman of childbearing potential is scheduled for laparoscopic ovarian surgery. Which test is specifically relevant because the result could change anesthetic and surgical planning?",
+      "stem": "A healthy woman of childbearing potential is scheduled for laparoscopic ovarian surgery. When is urine or serum hCG testing most appropriate?",
       "options": [
-        "Urine or serum hCG",
-        "Troponin",
-        "BNP",
-        "PT/INR"
+        "When pregnancy is possible and knowing the result could alter anesthetic or surgical management, with informed discussion/consent",
+        "It is mandatory for every patient of childbearing potential",
+        "Only if the surgeon orders it after induction",
+        "It is unnecessary because pregnancy never changes perioperative planning"
       ],
       "answer": [
         0
       ],
-      "explanation": "Pregnancy testing is indicated in women of childbearing potential.",
+      "explanation": "Pregnancy testing may be offered when pregnancy is possible and the result would change management. It should not be framed as a universal mandatory test.",
       "citation": "",
       "topic": "Obesity, BMI, IBW, and Apfel",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -9086,15 +9086,15 @@
       "type": "single",
       "stem": "A patient has insulin-treated diabetes, creatinine 2.3 mg/dL, HFrEF, and is scheduled for colectomy; he stops after one flight of stairs. Which combined assessment is correct?",
       "options": [
-        "RCRI 4 with poor functional capacity below 4 METs",
-        "RCRI 3 with functional capacity at least 4 METs",
         "RCRI 3 with poor functional capacity",
+        "RCRI 4 with poor functional capacity",
+        "RCRI 3 with functional capacity at least 4 METs",
         "RCRI 4 with functional capacity at least 4 METs"
       ],
       "answer": [
         0
       ],
-      "explanation": "Insulin DM, Cr >2.0, CHF, and intraperitoneal surgery = 4. Stopping on one flight suggests <4 METs.",
+      "explanation": "Insulin-treated diabetes, creatinine above 2.0 mg/dL, and heart failure each add one RCRI point. Routine colectomy does not automatically add the high-risk-surgery point. Stopping after one flight of stairs suggests poor functional capacity.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -9108,17 +9108,17 @@
       "id": "PRE-373",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a drug-eluting stent 10 weeks ago and remains on aspirin plus ticagrelor. Which issue should drive management of elective shoulder arthroscopy?",
+      "stem": "A patient had a drug-eluting coronary stent 10 weeks ago and remains on aspirin plus ticagrelor. Which issue should drive management of elective shoulder arthroscopy?",
       "options": [
-        "The case is too soon after DES placement; postpone into the recommended interval while continuing aspirin",
+        "Recent PCI and the need to preserve appropriate antiplatelet therapy make deferral of elective surgery the default while timing is individualized to PCI indication and ischemic risk",
         "Proceed after stopping both antiplatelet agents",
-        "Proceed with heparin bridging",
+        "Proceed with heparin bridging as a substitute for antiplatelet therapy",
         "Proceed after holding aspirin only"
       ],
       "answer": [
         0
       ],
-      "explanation": "DES timing is 3–6 months with aspirin continued. At 10 weeks, elective surgery should wait.",
+      "explanation": "Elective surgery soon after drug-eluting stent placement is generally deferred, especially if antiplatelet therapy would need interruption. Recommended timing depends on whether PCI was for chronic coronary disease or acute coronary syndrome and on patient/stent risk.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -9156,7 +9156,7 @@
       "id": "PRE-375",
       "set": 1,
       "type": "single",
-      "stem": "A patient took lisinopril and hydrochlorothiazide on the morning of surgery. Which induction problem is most likely?",
+      "stem": "A patient taking lisinopril for hypertension and hydrochlorothiazide took both on the morning of major surgery. Which induction problem deserves increased vigilance?",
       "options": [
         "Marked hypotension that may be difficult to treat",
         "Hypertensive response to laryngoscopy",
@@ -9166,7 +9166,7 @@
       "answer": [
         0
       ],
-      "explanation": "ACEI and diuretics are held because they increase post-induction hypotension that may be refractory.",
+      "explanation": "Renin-angiotensin system inhibition can increase peri-induction hypotension, particularly in major surgery, and diuretic-associated volume depletion may compound it. Whether these drugs are withheld preoperatively should be individualized rather than treated as a universal rule.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -9228,17 +9228,17 @@
       "id": "PRE-378",
       "set": 1,
       "type": "single",
-      "stem": "A patient takes prednisone 20 mg daily for 3 months and is scheduled for colectomy. Which perioperative steroid regimen best matches the table's stress category?",
+      "stem": "A patient takes prednisone 20 mg daily for 3 months and is scheduled for colectomy. Which perioperative glucocorticoid principle is most appropriate?",
       "options": [
-        "Continue the usual dose plus hydrocortisone 50 mg IV, then 25 mg every 8 hours for 24 hours",
-        "Usual dose only",
-        "Hydrocortisone 100 mg IV followed by 200 mg over 24 hours",
-        "Stop steroids before surgery"
+        "Continue baseline glucocorticoid therapy and individualize supplemental parenteral coverage to HPA-axis suppression risk, oral intake, and surgical stress",
+        "Stop prednisone before surgery",
+        "Give the same fixed hydrocortisone regimen to every chronic steroid user",
+        "Withhold all glucocorticoids unless refractory hypotension develops"
       ],
       "answer": [
         0
       ],
-      "explanation": "Colon resection is moderate stress: usual dose, 50 mg IV before incision, then 25 mg q8h for 24 h.",
+      "explanation": "This exposure creates substantial concern for HPA-axis suppression. Chronic therapy should not be abruptly stopped; supplemental coverage is individualized to surgical stress and the ability to take the baseline regimen rather than dictated by one universal table dose.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -9588,17 +9588,17 @@
       "id": "PRE-393",
       "set": 1,
       "type": "single",
-      "stem": "A patient with recent cocaine use has severe hypertension and tachycardia. Which medication should generally be avoided because of unopposed alpha stimulation?",
+      "stem": "A patient with recent cocaine use has severe hypertension and tachycardia. Which initial treatment best addresses the acute sympathetic surge?",
       "options": [
-        "A pure beta-blocker",
-        "A benzodiazepine",
-        "Nitroglycerin",
-        "Phentolamine"
+        "Benzodiazepine sedation with additional vasodilator therapy as clinically indicated",
+        "A pure beta-blocker as mandatory first-line therapy",
+        "Phenylephrine",
+        "Epinephrine"
       ],
       "answer": [
         0
       ],
-      "explanation": "Beta-blockers can cause unopposed alpha stimulation in cocaine intoxication.",
+      "explanation": "Benzodiazepines reduce central sympathetic outflow and are first-line in acute cocaine toxicity. Vasodilators may be added for persistent hypertension or ischemia. Pure beta-blockade remains controversial and should not be taught through an absolute 'unopposed alpha' rule.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -9660,7 +9660,7 @@
       "id": "PRE-396",
       "set": 1,
       "type": "single",
-      "stem": "A 58-year-old man has BMI 36, snoring, hypertension, and neck circumference 43 cm. What is his STOP-BANG score?",
+      "stem": "Using the traditional STOP-BANG thresholds, a 58-year-old man has BMI 36, snoring, hypertension, and neck circumference 43 cm. What is his score?",
       "options": [
         "6",
         "5",
@@ -9670,7 +9670,7 @@
       "answer": [
         0
       ],
-      "explanation": "Snoring, pressure, BMI >35, age >50, neck >40, male = 6.",
+      "explanation": "Using traditional STOP-BANG thresholds: snoring, hypertension, BMI >35, age >50, neck >40 cm, and male sex each score 1, totaling 6.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
