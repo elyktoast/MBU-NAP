@@ -4894,12 +4894,12 @@
       "id": "SED-201",
       "set": 1,
       "type": "single",
-      "stem": "During a stable 3-hour MAC, the anesthesia provider leaves the room for 20 minutes and the patient becomes apneic. Which standard was violated?",
+      "stem": "During an otherwise stable MAC, the anesthesia professional leaves the room and the patient becomes apneic. Which principle was violated?",
       "options": [
-        "Continuous anesthesia-team presence throughout MAC",
-        "Presence required at induction and emergence, with phone contact between",
-        "Presence required during conversion to GA",
-        "Presence required for ASA IV patients"
+        "Continuous anesthesia-team vigilance/presence appropriate to the anesthetic",
+        "Presence only during induction and emergence",
+        "Presence only after conversion to general anesthesia",
+        "Presence only for ASA IV patients"
       ],
       "answer": [
         0
@@ -4918,11 +4918,11 @@
       "id": "SED-202",
       "set": 1,
       "type": "single",
-      "stem": "Which item is NOT a routine ASA requirement for MAC?",
+      "stem": "Which item is NOT routinely required solely because a case is performed under MAC?",
       "options": [
-        "Mandatory arterial line placement",
-        "Preanesthesia evaluation and plan",
-        "Airway management capability",
+        "Invasive arterial catheterization",
+        "Preanesthetic evaluation and plan",
+        "Airway-rescue capability",
         "Postanesthesia care"
       ],
       "answer": [
@@ -4942,14 +4942,14 @@
       "id": "SED-203",
       "set": 1,
       "type": "multi",
-      "stem": "Which FIVE elements belong in a facility policy for MAC? (Select 5)",
+      "stem": "Which FIVE elements belong in a safe MAC system? (Select 5)",
       "options": [
-        "Develop and document an anesthetic plan",
-        "Be prepared to convert to GA",
-        "Provide monitoring during recovery",
-        "Have a qualified anesthesia professional present",
-        "Have airway management equipment immediately available",
-        "Use inhaled agents for maintenance"
+        "Documented anesthetic plan",
+        "Readiness to convert to general anesthesia",
+        "Appropriate monitored recovery",
+        "Qualified anesthesia professional",
+        "Immediately available airway/ventilation equipment",
+        "Mandatory volatile-anesthetic maintenance"
       ],
       "answer": [
         0,
@@ -4972,12 +4972,12 @@
       "id": "SED-204",
       "set": 1,
       "type": "single",
-      "stem": "A MAC patient obstructs, but the only airway equipment in the room is a nasal cannula and suction. Which requirement was violated?",
+      "stem": "A MAC patient obstructs, but the room has only nasal oxygen and suction. What preparation was inadequate?",
       "options": [
-        "Airway equipment and ability to provide ventilatory support must be immediately available",
-        "A code team must be paged before MAC begins so they can respond to problems",
-        "The patient must be intubated before MAC",
-        "A nasal cannula and suction are sufficient for MAC"
+        "Equipment and capability for positive-pressure ventilation and advanced airway rescue were not immediately available",
+        "Every MAC patient should have been intubated initially",
+        "A code team should replace bedside rescue capability",
+        "Nasal oxygen and suction are sufficient for obstruction"
       ],
       "answer": [
         0
@@ -4996,12 +4996,12 @@
       "id": "SED-205",
       "set": 1,
       "type": "single",
-      "stem": "After MAC, a drowsy patient is sent directly toward discharge without monitored recovery. Which standard is being missed?",
+      "stem": "After MAC, a drowsy patient is sent toward discharge without monitored recovery or reassessment. What is missing?",
       "options": [
         "Postanesthesia monitoring, assessment, and documentation",
-        "Discharge once the patient can walk",
-        "Recording vital signs at discharge once the patient can walk",
-        "Discharge once the patient is awake and talking"
+        "Only an ambulation test",
+        "Only a final blood-pressure reading",
+        "Nothing if the patient can speak"
       ],
       "answer": [
         0
@@ -5020,12 +5020,12 @@
       "id": "SED-206",
       "set": 1,
       "type": "single",
-      "stem": "A MAC preop note includes only procedure, NPO status, and allergies despite OSA, GERD, and prior difficult intubation. What important assessment is missing?",
+      "stem": "A MAC preoperative note lists NPO status and allergies but omits severe OSA, GERD, medications, and prior difficult intubation. Which deficiency is most important?",
       "options": [
-        "History, medications, airway assessment, and aspiration risk",
-        "A recent ECG and chest X-ray",
-        "A repeat chest X-ray and CBC",
-        "The surgeon's operative plan and the expected length of the procedure"
+        "The evaluation failed to characterize airway, aspiration, medication, and comorbidity risks that could alter rescue planning",
+        "A routine chest radiograph is missing",
+        "A routine stress test is missing",
+        "The surgeon's preferred sedative is missing"
       ],
       "answer": [
         0
@@ -5044,12 +5044,12 @@
       "id": "SED-207",
       "set": 1,
       "type": "single",
-      "stem": "A propofol infusion is planned, but no infusion pump is available. What should be done before starting MAC?",
+      "stem": "A continuous propofol technique is planned, but no reliable infusion pump is available. What is the best response?",
       "options": [
-        "Obtain an infusion pump for the continuous agent",
-        "Run propofol by gravity and count drops",
-        "Give intermittent boluses instead of an infusion",
-        "Give propofol as intermittent boluses instead"
+        "Obtain appropriate controlled-infusion equipment or change to a safely deliverable anesthetic plan",
+        "Run propofol by gravity",
+        "Estimate the infusion by counting drops",
+        "Proceed because propofol dose precision is unnecessary during MAC"
       ],
       "answer": [
         0
@@ -5068,12 +5068,12 @@
       "id": "SED-208",
       "set": 1,
       "type": "single",
-      "stem": "Why does a crowded remote-procedure room with equipment blocking the head increase MAC risk?",
+      "stem": "Why does a remote procedure room with imaging equipment blocking the head increase MAC risk?",
       "options": [
-        "Procedural equipment and remote sites can limit airway access",
-        "It affects the OR schedule",
-        "It matters mainly in the main OR, where staff are close by",
-        "It limits the surgeon's sterile field"
+        "Restricted physical access can delay airway maneuvers and conversion to a secured airway",
+        "It increases only scheduling difficulty",
+        "It decreases the need for rescue equipment",
+        "Remote locations reduce sedation depth"
       ],
       "answer": [
         0
@@ -5092,12 +5092,12 @@
       "id": "SED-209",
       "set": 1,
       "type": "single",
-      "stem": "A sedation nurse is asked to deliver propofol for TAVR while the interventionalist works. What is the core problem?",
+      "stem": "A high-risk TAVR is planned under MAC. Why must the person providing the anesthetic have advanced airway and general-anesthesia rescue capability?",
       "options": [
-        "MAC with propofol requires an anesthesia provider able to rescue the airway",
-        "Nothing, since the nurse is credentialed in moderate sedation",
-        "The cardiologist should give the propofol himself while performing the TAVR",
-        "A respiratory therapist should give the propofol"
+        "MAC can deepen unexpectedly or require rapid conversion because of patient/procedural deterioration",
+        "Propofol automatically requires tracheal intubation",
+        "Only cardiovascular procedures require rescue capability",
+        "Moderate-sedation credentials are equivalent to MAC training"
       ],
       "answer": [
         0
@@ -5116,12 +5116,12 @@
       "id": "SED-210",
       "set": 1,
       "type": "single",
-      "stem": "Why can light sedation still be considered MAC when delivered by an anesthesia professional?",
+      "stem": "A patient remains lightly sedated and conversational throughout a procedure managed by an anesthesia professional as MAC. Why can the service still be MAC?",
       "options": [
-        "The nurse, because MAC is defined by the service, not depth",
-        "The colleague, because MAC means deep sedation",
-        "Both, since MAC depends on both the depth and the provider",
-        "Neither, since MAC requires GA"
+        "MAC is defined by the anesthesia service and preparedness, not a required depth",
+        "MAC requires deep sedation",
+        "MAC requires loss of verbal responsiveness",
+        "MAC requires general anesthesia at some point"
       ],
       "answer": [
         0
@@ -5140,12 +5140,12 @@
       "id": "SED-211",
       "set": 1,
       "type": "single",
-      "stem": "Which scenario most clearly represents MAC rather than nurse-administered moderate sedation?",
+      "stem": "Which scenario most clearly represents MAC?",
       "options": [
-        "A CRNA manages sedation and is ready to convert to GA",
-        "A nurse gives midazolam and fentanyl per protocol",
-        "An endoscopist gives propofol while scoping",
-        "A patient takes oral anxiolysis before an MRI"
+        "An anesthesia professional manages the anesthetic with full monitoring and readiness for airway rescue/conversion",
+        "A procedural nurse administers protocolized moderate sedation",
+        "A patient self-administers oral anxiolysis",
+        "A proceduralist gives sedative while simultaneously performing the procedure"
       ],
       "answer": [
         0
@@ -5164,12 +5164,12 @@
       "id": "SED-212",
       "set": 1,
       "type": "single",
-      "stem": "During MAC, agitation and coughing prevent the procedure from continuing safely. What should the anesthesia provider be prepared to do?",
+      "stem": "During MAC, coughing, agitation, and movement make the procedure unsafe despite attempts to correct reversible causes. What should the anesthesia professional be prepared to do?",
       "options": [
-        "Be prepared to convert when clinically necessary",
-        "Convert when the surgeon requests it",
-        "Obtain a second consent first",
-        "Convert after the procedure is finished so the surgeon is not interrupted"
+        "Change the anesthetic plan, including conversion to general anesthesia when clinically necessary",
+        "Continue escalating sedation indefinitely",
+        "Wait for the surgeon alone to decide whether airway rescue is needed",
+        "Finish the procedure before changing the anesthetic"
       ],
       "answer": [
         0
@@ -5188,14 +5188,14 @@
       "id": "SED-213",
       "set": 1,
       "type": "multi",
-      "stem": "A remote endoscopy room lacks capnography, positive-pressure ventilation equipment, and emergency drugs. Which THREE must be added? (Select 3)",
+      "stem": "A remote endoscopy room lacks capnography, positive-pressure ventilation equipment, and emergency drugs. Which THREE deficiencies must be corrected before anesthesia-provider MAC? (Select 3)",
       "options": [
-        "Capnography monitoring",
-        "A means of positive-pressure ventilation",
-        "Emergency drugs",
+        "Ventilation monitoring",
+        "Positive-pressure ventilation capability",
+        "Emergency medications",
         "A second endoscopist",
-        "An MRI-compatible monitor",
-        "A neuromonitoring technician"
+        "MRI-compatible monitoring",
+        "Neuromonitoring"
       ],
       "answer": [
         0,
@@ -5216,12 +5216,12 @@
       "id": "SED-214",
       "set": 1,
       "type": "single",
-      "stem": "A patient briefly becomes unresponsive to voice during cataract MAC. Does that alone mean the case is no longer MAC?",
+      "stem": "During cataract MAC, a patient briefly becomes unresponsive to voice after propofol. Does that change alone mean the anesthesia service is no longer MAC?",
       "options": [
-        "Yes, MAC is a service that can include deeper levels",
-        "No, the service must now be billed as GA",
-        "No, because MAC is limited to moderate sedation by definition",
-        "Yes, as long as the patient responds to pain"
+        "No; MAC describes the service, while the provider must recognize and manage the deeper anesthetic state",
+        "Yes; any loss of verbal response terminates MAC",
+        "Yes; it becomes nurse-administered moderate sedation",
+        "No; because MAC never requires airway intervention"
       ],
       "answer": [
         0
@@ -5240,12 +5240,12 @@
       "id": "SED-215",
       "set": 1,
       "type": "single",
-      "stem": "A facility wants to omit airway exams for healthy MAC patients. What standard applies?",
+      "stem": "Why should an airway assessment not be omitted simply because MAC rather than general anesthesia is planned?",
       "options": [
-        "The MAC preop evaluation should be as comprehensive as for GA",
-        "A brief evaluation is acceptable for ASA I–II",
-        "The airway exam is needed for ASA III or higher patients",
-        "The airway exam is needed when deep sedation is planned"
+        "Unintended deepening or procedural change may require immediate airway rescue or conversion",
+        "Airway assessment is relevant only to ASA III–IV patients",
+        "Airway assessment is needed only when deep sedation is planned",
+        "MAC cannot require intubation"
       ],
       "answer": [
         0
@@ -5264,12 +5264,12 @@
       "id": "SED-216",
       "set": 1,
       "type": "single",
-      "stem": "Monitors and sedatives are ready for MAC, but no laryngoscope, ETT, or induction plan has been identified. What is missing?",
+      "stem": "Monitors and sedatives are ready for MAC, but no airway device, induction medications, or conversion strategy has been prepared. What is missing?",
       "options": [
-        "A plan for conversion to GA",
-        "A plan for postoperative opioids",
-        "A plan for discharge timing",
-        "A plan for deep paralysis"
+        "A preplanned pathway for conversion to general anesthesia",
+        "A discharge plan",
+        "A postoperative opioid plan",
+        "A plan for routine neuromuscular blockade"
       ],
       "answer": [
         0
@@ -5288,14 +5288,14 @@
       "id": "SED-217",
       "set": 1,
       "type": "multi",
-      "stem": "Which FIVE patient factors substantially increase MAC risk? (Select 5)",
+      "stem": "Which FIVE factors can substantially increase risk during MAC? (Select 5)",
       "options": [
         "Pulmonary hypertension",
         "Morbid obesity",
-        "Chronic pain or opioid use",
+        "Chronic opioid exposure",
         "Severe obstructive sleep apnea",
-        "Advanced age",
-        "A remote ankle fracture"
+        "Advanced age/frailty",
+        "An isolated healed ankle fracture"
       ],
       "answer": [
         0,
@@ -5318,12 +5318,12 @@
       "id": "SED-218",
       "set": 1,
       "type": "single",
-      "stem": "Why does inability to tolerate a long painful position increase risk during MAC?",
+      "stem": "Why does inability to tolerate the required position or duration increase risk during MAC?",
       "options": [
-        "Intolerance leads to movement, which prompts more sedation and airway risk",
-        "Position tolerance affects surgical exposure more than sedation",
-        "Position tolerance determines antibiotic timing",
-        "Position tolerance determines which PACU bay the patient will go to afterward"
+        "Discomfort/restlessness may drive escalating sedation, increasing respiratory and airway risk",
+        "Position tolerance affects only surgical exposure",
+        "It determines antibiotic selection",
+        "It predicts postoperative nausea only"
       ],
       "answer": [
         0
@@ -5342,12 +5342,12 @@
       "id": "SED-219",
       "set": 1,
       "type": "single",
-      "stem": "Which planned position most strongly increases concern about losing airway access during MAC?",
+      "stem": "Which setup most compromises emergency airway access during MAC?",
       "options": [
-        "Prone positioning with the head turned away from you",
-        "Supine positioning with the face uncovered",
-        "A short procedure in the semi-upright position",
-        "A lateral position with the face visible"
+        "Prone positioning with the head turned away and partially inaccessible",
+        "Supine with the face unobstructed",
+        "Semi-upright with direct access to the head",
+        "Lateral with the face fully visible"
       ],
       "answer": [
         0
@@ -5366,12 +5366,12 @@
       "id": "SED-220",
       "set": 1,
       "type": "single",
-      "stem": "A regional block is combined with propofol sedation administered by a CRNA. How is the anesthetic best classified?",
+      "stem": "A regional block is combined with titrated propofol sedation managed by an anesthesia professional with full rescue capability. How is the anesthesia service best described?",
       "options": [
-        "MAC, which can accompany regional anesthesia",
-        "Regional anesthesia alone, since a block was placed",
-        "GA, since propofol was given",
-        "Moderate sedation, since the patient was arousable"
+        "MAC combined with regional anesthesia",
+        "Regional anesthesia only because a block was placed",
+        "General anesthesia solely because propofol was used",
+        "Moderate sedation solely because the patient remained arousable"
       ],
       "answer": [
         0
@@ -5390,12 +5390,12 @@
       "id": "SED-221",
       "set": 1,
       "type": "single",
-      "stem": "A patient remains drowsy and hypoventilates after light propofol MAC. What recovery requirement still applies?",
+      "stem": "After light propofol MAC, a patient remains drowsy and intermittently hypoventilates. What should happen next?",
       "options": [
-        "MAC requires postanesthesia care with monitoring like other anesthetics",
-        "Phase 2 recovery is enough after light propofol sedation",
-        "PACU is needed after GA but not after MAC",
-        "PACU is needed if the patient also received an opioid during the case"
+        "Continue appropriate monitored postanesthesia recovery until respiratory and discharge criteria are satisfied",
+        "Bypass recovery because the case was MAC",
+        "Discharge once the patient can answer questions",
+        "Send directly home if no opioid was used"
       ],
       "answer": [
         0
@@ -5414,12 +5414,12 @@
       "id": "SED-222",
       "set": 1,
       "type": "single",
-      "stem": "Two providers give the same sedation drugs. What primarily distinguishes the CRNA's care as MAC?",
+      "stem": "A procedural sedation nurse and a CRNA use similar drugs. What most clearly distinguishes the CRNA's MAC service?",
       "options": [
-        "Qualification and readiness to provide GA if needed",
-        "The use of propofol",
-        "The depth of sedation achieved and the drugs chosen for the case",
-        "The use of local anesthesia"
+        "Anesthesia-level evaluation, monitoring, rescue capability, and readiness to convert to general anesthesia",
+        "Use of propofol alone",
+        "Use of local anesthetic",
+        "Achievement of deep sedation in every case"
       ],
       "answer": [
         0
@@ -5438,12 +5438,12 @@
       "id": "SED-223",
       "set": 1,
       "type": "single",
-      "stem": "A 4-hour MAC record has ECG, SpO2, and BP but no capnography or temperature monitoring. Which monitoring elements are missing?",
+      "stem": "A prolonged MAC record shows ECG, SpO2, and NIBP but no ventilation monitoring; temperature is also omitted despite major exposure and heat-loss risk. Which elements are missing?",
       "options": [
-        "Ventilation monitoring and temperature monitoring",
+        "Ventilation monitoring and clinically indicated temperature monitoring",
         "Processed EEG and urine output",
-        "Arterial line pressure and cerebral oximetry",
-        "Nothing, since SpO2 covers ventilation"
+        "Arterial pressure and cerebral oximetry",
+        "Nothing because SpO2 measures ventilation"
       ],
       "answer": [
         0
@@ -5462,12 +5462,12 @@
       "id": "SED-224",
       "set": 1,
       "type": "single",
-      "stem": "Why does even a healthy patient need a full anesthesia preop evaluation before MAC?",
+      "stem": "Why does a healthy patient still require a meaningful anesthesia preoperative evaluation before MAC?",
       "options": [
-        "MAC can progress to GA, so its evaluation is comparable to GA",
-        "It replaces the gastroenterologist's own H&P",
-        "A full exam is required for ASA III or higher, and a brief one for ASA I–II",
-        "The exam replaces the gastroenterologist's H&P"
+        "The anesthetic can deepen or require conversion, so airway, aspiration, comorbidity, medication, and procedural risks still matter",
+        "MAC eliminates airway risk in healthy patients",
+        "Only ASA III–IV patients require preoperative evaluation",
+        "The evaluation is needed only for billing"
       ],
       "answer": [
         0
@@ -5486,12 +5486,12 @@
       "id": "SED-225",
       "set": 1,
       "type": "single",
-      "stem": "A patient under MAC becomes deeply sedated. Which statement correctly describes the service?",
+      "stem": "A patient under MAC transiently reaches a deep anesthetic state. Which statement is correct?",
       "options": [
-        "MAC is an anesthesia service, so the case remains MAC at any depth",
-        "MAC ends when the patient is deeply sedated",
-        "The case becomes moderate sedation once the patient is deeply sedated",
-        "The case becomes regional anesthesia"
+        "The provider must manage the actual depth appropriately; MAC itself describes the anesthesia service rather than a fixed depth",
+        "MAC automatically ends at deep sedation",
+        "The case becomes moderate sedation",
+        "Depth no longer needs to be documented"
       ],
       "answer": [
         0
@@ -5510,12 +5510,12 @@
       "id": "SED-226",
       "set": 1,
       "type": "single",
-      "stem": "Why do MAC cases require evaluation, monitoring, and provider presence standards comparable to GA?",
+      "stem": "Why are robust evaluation, monitoring, and rescue standards required during MAC?",
       "options": [
-        "Sedation can progress to general anesthesia at any time",
-        "MAC cases use inhaled agents",
-        "MAC cases last longer than comparable GA cases and need more oversight",
-        "MAC patients are ASA III or higher"
+        "The patient's depth and physiology can change unexpectedly, including progression requiring general-anesthesia rescue",
+        "MAC always uses inhaled anesthetics",
+        "MAC patients are always high ASA status",
+        "MAC cases are always longer than general anesthetics"
       ],
       "answer": [
         0
@@ -5534,12 +5534,12 @@
       "id": "SED-227",
       "set": 1,
       "type": "single",
-      "stem": "After MAC, the handoff is verbal but PACU assessment and vitals are not documented. Which requirement is missed?",
+      "stem": "After MAC, a verbal handoff occurs but recovery vital signs and postanesthesia assessment are never documented. Which element is missing?",
       "options": [
         "Postanesthesia monitoring and documentation",
-        "Inhaled agent maintenance",
-        "Surgeon approval of the planned sedation depth before discharge",
-        "Avoidance of airway equipment"
+        "Volatile-agent documentation",
+        "Neuromuscular monitoring",
+        "Surgical consent"
       ],
       "answer": [
         0
@@ -5558,12 +5558,12 @@
       "id": "SED-228",
       "set": 1,
       "type": "single",
-      "stem": "Why might an amnestic drug be useful during MAC even if analgesia is adequate?",
+      "stem": "Adequate local anesthesia controls pain, but the patient is anxious about recalling the procedure. Which drug property may be useful as part of a balanced MAC technique?",
       "options": [
-        "Patients may otherwise recall parts of the procedure",
-        "Amnestic agents provide analgesia",
-        "Amnestic agents prevent movement during stimulation",
-        "Amnestic agents reduce aspiration risk"
+        "Amnesia",
+        "Neuromuscular blockade",
+        "Bronchodilation",
+        "Diuresis"
       ],
       "answer": [
         0
@@ -5582,12 +5582,12 @@
       "id": "SED-229",
       "set": 1,
       "type": "single",
-      "stem": "IV midazolam and fentanyl titrated together for moderate sedation represent what type of delivery strategy?",
+      "stem": "Midazolam and fentanyl are titrated together for moderate sedation. What is the principal safety implication of this multimodal strategy?",
       "options": [
-        "Intravenous and multimodal",
-        "Oral premedication given in holding",
-        "Inhaled anesthetic delivery",
-        "Single-agent propofol boluses"
+        "Complementary effects may improve anxiolysis/analgesia but can synergistically depress ventilation",
+        "The combination prevents respiratory depression",
+        "Using two agents guarantees lighter sedation",
+        "Fentanyl prevents benzodiazepine-induced obstruction"
       ],
       "answer": [
         0
@@ -5606,12 +5606,12 @@
       "id": "SED-230",
       "set": 1,
       "type": "single",
-      "stem": "A remote IR suite lacks backup suction and capnography. What equipment standard applies?",
+      "stem": "A remote interventional-radiology suite lacks backup suction and capnography. What principle applies?",
       "options": [
-        "Standards and equipment must match the OR",
-        "Remote sites may use reduced equipment",
-        "Capnography can be replaced by SpO2 at remote sites",
-        "Backup suction is needed in the main OR, where cases are longer"
+        "Anesthesia safety and rescue capability should not be reduced simply because the procedure occurs outside the main OR",
+        "Remote locations may omit respiratory monitoring",
+        "Pulse oximetry substitutes for capnography remotely",
+        "Backup suction is needed only for general anesthesia"
       ],
       "answer": [
         0
@@ -5630,14 +5630,14 @@
       "id": "SED-231",
       "set": 1,
       "type": "multi",
-      "stem": "Which FIVE preop considerations matter most for a frail patient with COPD and kyphosis undergoing a long shoulder MAC? (Select 5)",
+      "stem": "Which FIVE issues matter most before prolonged shoulder MAC in a frail patient with COPD and kyphosis? (Select 5)",
       "options": [
-        "Whether he can tolerate the position for the expected duration",
-        "Likelihood of airway obstruction or loss of airway access",
-        "Ability to cooperate under the drapes",
-        "The analgesic requirement for the procedure",
-        "A plan for conversion to GA",
-        "Intraoperative BIS targets"
+        "Tolerance of required position/duration",
+        "Risk of obstruction or limited airway access",
+        "Ability to cooperate",
+        "Expected analgesic requirement",
+        "Conversion-to-GA plan",
+        "A predetermined BIS target"
       ],
       "answer": [
         0,
@@ -5662,10 +5662,10 @@
       "type": "single",
       "stem": "A patient with severe cardiovascular disease is scheduled for MAC. Which planning priority is most important?",
       "options": [
-        "Prepare for hemodynamic instability and conversion",
-        "Plan a lighter sedation level so instability is unlikely",
-        "Limit monitoring to SpO2 to reduce stimulation",
-        "Plan for inhaled induction"
+        "Anticipate limited hemodynamic reserve and prepare monitoring, drugs, and conversion/rescue accordingly",
+        "Use lighter sedation so instability cannot occur",
+        "Limit monitoring to reduce stimulation",
+        "Plan inhaled induction regardless of procedure"
       ],
       "answer": [
         0
@@ -5684,12 +5684,12 @@
       "id": "SED-233",
       "set": 1,
       "type": "single",
-      "stem": "A patient under MAC becomes unresponsive to pain. What is the correct interpretation of the service and provider responsibility?",
+      "stem": "During MAC, the patient becomes unresponsive to painful stimulation and ventilation becomes inadequate. What is the correct response?",
       "options": [
-        "It is still MAC, and the provider must manage the patient at GA depth",
-        "It is no longer MAC; it is now moderate sedation",
-        "It is no longer MAC; it requires a new consent",
-        "It is still MAC as long as the patient continues to respond to pain"
+        "Recognize general-anesthesia depth and immediately manage airway/ventilation while escalating the anesthetic plan as needed",
+        "Continue unchanged because the case is labeled MAC",
+        "Reclassify the patient as moderately sedated",
+        "Wait for spontaneous recovery before supporting ventilation"
       ],
       "answer": [
         0
@@ -5708,12 +5708,12 @@
       "id": "SED-234",
       "set": 1,
       "type": "single",
-      "stem": "Who meets the ASA requirement to provide MAC for a high-risk TAVR case?",
+      "stem": "Which provider capability is essential for high-risk MAC such as TAVR?",
       "options": [
-        "The CRNA, as a qualified anesthesia provider",
-        "The nurse educator, if credentialed in sedation",
-        "The surgeon, if ACLS-certified",
-        "Any of the three, depending on depth"
+        "An anesthesia professional able to manage major physiologic changes and rapidly rescue/convert the airway and anesthetic",
+        "Moderate-sedation credentialing alone",
+        "ACLS certification without anesthesia training",
+        "Ability to administer propofol only"
       ],
       "answer": [
         0
@@ -5732,12 +5732,12 @@
       "id": "SED-235",
       "set": 1,
       "type": "single",
-      "stem": "Which statement about MAC versus moderate sedation is false?",
+      "stem": "Which statement about MAC and moderate sedation is incorrect?",
       "options": [
-        "MAC and moderate sedation are identical services",
-        "MAC is provided by an anesthesia professional",
-        "MAC can include deeper levels than moderate sedation",
-        "Moderate sedation should not intentionally render the patient unresponsive"
+        "They are identical services distinguished only by the drug chosen",
+        "MAC is an anesthesia service",
+        "MAC may encompass changing depths",
+        "Intended moderate sedation preserves purposeful responsiveness"
       ],
       "answer": [
         0
@@ -5756,12 +5756,12 @@
       "id": "SED-236",
       "set": 1,
       "type": "single",
-      "stem": "Which causes most commonly lead MAC cases to convert to GA?",
+      "stem": "Which developments commonly force conversion from MAC to general anesthesia?",
       "options": [
-        "Failed block, intolerance of MAC, and hypoxia or obstruction",
-        "Aspiration, hypothermia, and loss of IV access",
-        "Hypercarbia, agitation, and prolonged surgery",
-        "Surgeon request, PONV, and refractory hemodynamic instability"
+        "Failed regional/local technique, inability to tolerate the procedure, or airway/oxygenation failure",
+        "Mild preoperative anxiety, brief nausea, or a single stable BP reading",
+        "Use of capnography, supplemental oxygen, or local anesthetic",
+        "Short duration, cooperation, and easy airway access"
       ],
       "answer": [
         0
@@ -5780,14 +5780,14 @@
       "id": "SED-237",
       "set": 1,
       "type": "multi",
-      "stem": "Which THREE developments during MAC should trigger consideration of conversion to GA? (Select 3)",
+      "stem": "Which THREE changes during MAC should prompt serious consideration of conversion/escalation? (Select 3)",
       "options": [
-        "ETCO2 rising to 62 despite stimulation",
-        "Infiltrated IV with no other access",
-        "The surgeon extends the incision into the abdomen",
-        "Mild anxiety before incision that settles with reassurance",
-        "Stable vital signs with a comfortable patient",
-        "A brief BP dip that responds to one dose of ephedrine"
+        "Persistent severe hypercapnia despite initial airway/ventilation maneuvers",
+        "Loss of reliable IV access when IV anesthesia/rescue drugs are required",
+        "A procedural change that substantially increases invasiveness/stimulation",
+        "Mild anxiety relieved by reassurance",
+        "Stable physiology with adequate comfort",
+        "A brief isolated BP decrease corrected immediately"
       ],
       "answer": [
         0,
@@ -5808,12 +5808,12 @@
       "id": "SED-238",
       "set": 1,
       "type": "single",
-      "stem": "Repeated coughing develops during MAC and threatens the procedure. How should this be treated conceptually?",
+      "stem": "Repeated coughing during MAC threatens procedural safety despite correction of obvious causes. What is the best interpretation?",
       "options": [
-        "Coughing is a trigger that may require conversion",
-        "Coughing resolves with more supplemental oxygen",
-        "Coughing means the block is working",
-        "Coughing should be treated with more propofol to deepen"
+        "The current anesthetic technique may no longer permit safe completion and conversion should be considered",
+        "More oxygen alone will reliably stop coughing",
+        "Coughing proves analgesia is adequate",
+        "Deepening sedation indefinitely is always safer than conversion"
       ],
       "answer": [
         0
@@ -5832,12 +5832,12 @@
       "id": "SED-239",
       "set": 1,
       "type": "single",
-      "stem": "A patient moves during a critical neural portion of surgery. When does conversion to GA become necessary?",
+      "stem": "A patient moves during a critical neural portion of surgery despite an otherwise adequate MAC plan. When is conversion appropriate?",
       "options": [
-        "When the procedure cannot continue safely under MAC",
-        "When SpO2 falls below 90% for more than 30 seconds",
-        "As soon as the patient stops responding to voice",
-        "When the case runs 30 minutes past its scheduled time"
+        "When movement or other conditions prevent the procedure from continuing safely under the current technique",
+        "Only after SpO2 remains below 90% for 30 seconds",
+        "Whenever the patient stops responding to voice",
+        "Only after the scheduled end time is exceeded"
       ],
       "answer": [
         0
@@ -5856,12 +5856,12 @@
       "id": "SED-240",
       "set": 1,
       "type": "single",
-      "stem": "The patient becomes agitated, BIS rises, and the IV is swollen and cool during propofol MAC. What is the best next step?",
+      "stem": "During propofol MAC, the patient becomes agitated, processed-EEG values rise, and the IV site is swollen and cool. What is the best immediate interpretation?",
       "options": [
-        "Treat this as loss of IV access and plan conversion or a new line",
-        "Increase the propofol rate on the same line to overcome the agitation",
-        "Give a propofol bolus through the same line",
-        "Add fentanyl through the same line"
+        "The IV has likely infiltrated, so drug delivery is unreliable and new access/anesthetic escalation is required",
+        "The patient needs a larger bolus through the same IV",
+        "The propofol concentration is too low",
+        "Agitation proves opioid overdose"
       ],
       "answer": [
         0
@@ -5880,12 +5880,12 @@
       "id": "SED-241",
       "set": 1,
       "type": "single",
-      "stem": "A stable MAC tempts the anesthesia provider to work on the next chart. Which safety principle is at risk?",
+      "stem": "A stable MAC case tempts the anesthesia professional to focus on unrelated chart work. Which safety principle is most threatened?",
       "options": [
-        "Continuous vigilance and readiness for airway control",
+        "Continuous vigilance for changing sedation depth, airway, ventilation, and hemodynamics",
         "Minimizing documentation",
-        "Deferring to the proceduralist",
-        "Reducing monitoring for stable patients to limit alarm fatigue"
+        "Delegating airway management to the proceduralist",
+        "Reducing alarms in stable patients"
       ],
       "answer": [
         0
@@ -5904,12 +5904,12 @@
       "id": "SED-242",
       "set": 1,
       "type": "single",
-      "stem": "Before MAC, what expectation should be set regarding wakefulness and recall?",
+      "stem": "Before MAC, what expectation about consciousness and recall should be discussed?",
       "options": [
-        "They may remain awake and remember parts of the procedure",
-        "They will be fully asleep with no recall",
-        "They will feel no discomfort at all",
-        "They will not need monitoring once they are comfortable"
+        "The patient may be awake or intermittently aware and may remember portions of the procedure",
+        "Complete unconsciousness and amnesia are guaranteed",
+        "No discomfort can occur",
+        "Monitoring can stop once the patient is comfortable"
       ],
       "answer": [
         0
@@ -5928,12 +5928,12 @@
       "id": "SED-243",
       "set": 1,
       "type": "single",
-      "stem": "A patient later complains, \"I was supposed to be asleep.\" Which preoperative step would most likely have prevented this mismatch?",
+      "stem": "After MAC, a patient complains, \"I was supposed to be completely asleep.\" Which preoperative intervention most directly reduces this mismatch?",
       "options": [
-        "Explaining MAC and that GA remains possible if needed",
-        "Removing airway equipment to calm the patient",
-        "Giving a larger midazolam dose before entering the OR",
-        "Giving prophylactic ondansetron before the start of the case"
+        "Explain the intended MAC experience, possible recall, and possibility of conversion to general anesthesia",
+        "Give enough midazolam to guarantee amnesia",
+        "Promise deeper sedation if the patient becomes anxious",
+        "Avoid discussing anesthetic depth"
       ],
       "answer": [
         0
@@ -5952,12 +5952,12 @@
       "id": "SED-244",
       "set": 1,
       "type": "single",
-      "stem": "Why should patients be warned that sore throat is possible even when MAC is planned?",
+      "stem": "Why is it reasonable to mention possible sore throat even when MAC is planned?",
       "options": [
-        "If the case converts to GA, an airway device may be placed",
-        "The nasal cannula irritates and dries the throat during long cases",
-        "Sedatives directly inflame the pharynx",
-        "The capnography line passes into the throat"
+        "Unexpected conversion may require an airway device",
+        "Nasal oxygen routinely injures the pharynx",
+        "Capnography tubing enters the trachea",
+        "All sedatives inflame the throat"
       ],
       "answer": [
         0
@@ -5976,14 +5976,14 @@
       "id": "SED-245",
       "set": 1,
       "type": "multi",
-      "stem": "Which TWO expectations should be discussed before MAC? (Select 2)",
+      "stem": "Which TWO expectations are appropriate to discuss before MAC? (Select 2)",
       "options": [
-        "Possible brief discomfort",
-        "Possible need to follow instructions",
-        "They will be fully asleep for the entire case",
-        "They will be fully asleep throughout",
-        "They will not need monitoring",
-        "They will be discharged directly from the OR"
+        "Brief discomfort or awareness may occur",
+        "The patient may need to follow instructions",
+        "Complete unconsciousness is guaranteed",
+        "Recall is impossible",
+        "Monitoring stops when comfortable",
+        "Direct discharge from the procedure room is guaranteed"
       ],
       "answer": [
         0,
@@ -6003,12 +6003,12 @@
       "id": "SED-246",
       "set": 1,
       "type": "single",
-      "stem": "During MAC for orthopedic surgery, the patient may intermittently hear saws and conversation. How should this be framed beforehand?",
+      "stem": "During orthopedic MAC, a patient may intermittently hear conversation or procedural sounds. How should this be framed beforehand?",
       "options": [
-        "Patients may hear sounds and wake intermittently",
-        "Orthopedic cases require GA",
-        "The patient will be fully asleep throughout",
-        "Hearing sounds means the block failed"
+        "Hearing sounds or having periods of awareness can be normal under MAC and does not by itself indicate anesthetic failure",
+        "Any auditory recall proves awareness under general anesthesia",
+        "Orthopedic MAC guarantees complete amnesia",
+        "Hearing sounds means the regional block failed"
       ],
       "answer": [
         0
@@ -6027,12 +6027,12 @@
       "id": "SED-247",
       "set": 1,
       "type": "single",
-      "stem": "A MAC patient obstructs and SpO2 falls to 84%. What is the first priority?",
+      "stem": "During MAC, the patient obstructs and SpO2 falls to 84%. What is the immediate priority?",
       "options": [
-        "Relieve the obstruction and support ventilation",
-        "Increase the propofol to prevent movement",
-        "Increase oxygen flow to 10 L/min by face mask",
-        "Ask the proceduralist to finish quickly"
+        "Open the airway and restore effective ventilation/oxygenation",
+        "Deepen propofol to prevent movement",
+        "Ask the proceduralist to finish before intervening",
+        "Wait for capnography to normalize spontaneously"
       ],
       "answer": [
         0
@@ -6051,12 +6051,12 @@
       "id": "SED-248",
       "set": 1,
       "type": "single",
-      "stem": "A patient becomes agitated and moves during a critical part of MAC. What is the best next step?",
+      "stem": "A patient becomes agitated and moves during a critical portion of MAC. What is the best next step?",
       "options": [
-        "Assess causes and prepare to convert if unsafe",
-        "Give a large propofol bolus immediately",
-        "Give a propofol bolus to hold still for the critical step",
-        "Ask the patient to hold still and continue"
+        "Rapidly assess reversible causes such as hypoxemia, pain, hypercapnia, or inadequate block and convert if safe completion is no longer possible",
+        "Give a large propofol bolus before assessing ventilation",
+        "Ignore the movement if SpO2 is normal",
+        "Use neuromuscular blockade without securing the airway"
       ],
       "answer": [
         0
@@ -6075,12 +6075,12 @@
       "id": "SED-249",
       "set": 1,
       "type": "single",
-      "stem": "During airway rescue, the video laryngoscope is dead and no induction drug is prepared. Which planning principle was violated?",
+      "stem": "During emergency conversion from MAC, the video laryngoscope has no power and induction medications were never prepared. Which planning failure occurred?",
       "options": [
-        "The conversion plan must be in place before the procedure starts",
-        "Conversion plans are needed for planned deep sedation cases",
-        "Conversion plans are needed for ASA IV patients having MAC",
-        "Conversion plans are made once problems arise"
+        "The conversion-to-general-anesthesia pathway was not made immediately executable before the case began",
+        "Conversion equipment is required only after deep sedation occurs",
+        "Only ASA IV patients require a conversion plan",
+        "Airway rescue can appropriately depend on equipment being retrieved after deterioration"
       ],
       "answer": [
         0
@@ -6099,12 +6099,12 @@
       "id": "SED-250",
       "set": 1,
       "type": "single",
-      "stem": "Vomiting with suspected aspiration occurs during EGD under MAC. What type of conversion trigger is this?",
+      "stem": "During EGD under MAC, vomiting occurs with suspected pulmonary aspiration and worsening oxygenation. What should this trigger?",
       "options": [
-        "Aspiration",
-        "Hypercarbia",
-        "Loss of IV access",
-        "Procedural change"
+        "Immediate airway/ventilation management and consideration of conversion to a secured airway/general anesthesia",
+        "Continuation of MAC because aspiration is unrelated to airway protection",
+        "Additional sedation to suppress coughing",
+        "Delay intervention until chest radiography is obtained"
       ],
       "answer": [
         0
