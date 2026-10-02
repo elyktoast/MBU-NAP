@@ -1,7 +1,8 @@
 const { test, expect } = require('@playwright/test');
+const { clearAppState } = require('./helpers');
 
 test.describe('multi-course foundation', () => {
-  test.setTimeout(60000);
+  test.beforeEach(async ({ page }) => clearAppState(page));
   test('Basic Principles is reachable from the course home and exposes Exam 1', async ({ page }) => {
     await page.goto('/');
     await page.evaluate(() => MBUPageReady);
