@@ -145,12 +145,12 @@ body.mbu-quiz-active #quiz{border:0;border-radius:10px}
 
     <section class="studio-section">
       <div class="studio-section__head"><div><h2>Build a Quiz</h2><p>Choose exactly what you want to practice, then set the session style.</p></div></div>
-      <div class="studio-builder-tabs"><button class="btn" id="buildSetsBtn" onclick="setBuildMode('sets')">Practice Sets</button><button class="btn out" id="buildTopicsBtn" onclick="setBuildMode('topics')">Topics</button></div>
-      <div class="mut" id="buildModeHelp">Choose one or more practice sets. Questions can come from any topic in those sets.</div>
+      <div class="studio-builder-tabs"><button class="btn" id="buildTopicsBtn" onclick="setBuildMode('topics')">Lecture Topics</button><button class="btn out" id="buildSetsBtn" onclick="setBuildMode('sets')">All Questions</button></div>
+      <div class="mut" id="buildModeHelp">Choose one or more of the seven Exam 1 lecture topics.</div>
       <div class="studio-builder-shell">
         <div class="studio-builder-main">
-          <div class="pickbox" id="sourcePickbox"><h4>Basic Principles Exam 1</h4><div class="pickactions"><button class="btn out tiny" onclick="setChecks('sourceChecks',true)">Select All</button><button class="btn out tiny" onclick="setChecks('sourceChecks',false)">Clear</button></div><div id="sourceChecks" class="checklist"></div></div>
-          <div class="pickbox hidden" id="topicPickbox"><h4>Topics</h4><div class="pickactions"><button class="btn out tiny" onclick="setChecks('topicChecks',true)">Select All</button><button class="btn out tiny" onclick="setChecks('topicChecks',false)">Clear</button></div><div id="topicChecks" class="checklist"></div></div>
+          <div class="pickbox hidden" id="sourcePickbox"><h4>Basic Principles Exam 1</h4><div class="pickactions"><button class="btn out tiny" onclick="setChecks('sourceChecks',true)">Select All</button><button class="btn out tiny" onclick="setChecks('sourceChecks',false)">Clear</button></div><div id="sourceChecks" class="checklist"></div></div>
+          <div class="pickbox" id="topicPickbox"><h4>7 Lecture Topics</h4><div class="pickactions"><button class="btn out tiny" onclick="setChecks('topicChecks',true)">Select All</button><button class="btn out tiny" onclick="setChecks('topicChecks',false)">Clear</button></div><div id="topicChecks" class="checklist"></div></div>
         </div>
         <aside class="studio-builder-options">
           <label class="studio-option-label" for="count">Question count</label>
@@ -159,7 +159,7 @@ body.mbu-quiz-active #quiz{border:0;border-radius:10px}
           <select id="order" class="field"><option value="random">Random</option><option value="sequential">Sequential</option></select>
           <div class="studio-adaptive-card"><label class="checkitem"><input type="checkbox" id="adaptiveToggle" onchange="adaptiveToggleChanged(this)"> <span><b>Adaptive 2.1</b> <span class="pill">Account required</span><span class="mut">Adds diagnostic sampling, content-blueprint control, concept cooldown, uncertainty-aware difficulty, and mastery-guided selection.</span></span></label></div>
           <button class="btn studio-start-btn" onclick="startMode('custom')">Start Quiz</button>
-          <div class="studio-builder-note">Build from the unified Exam 1 pool. Topic mode pulls matching questions across all included Basic Principles source material.</div>
+          <div class="studio-builder-note">Choose one or more lecture topics, or switch to All Questions to draw from the complete 3,500-question Exam 1 pool.</div>
         </aside>
       </div>
     </section>
