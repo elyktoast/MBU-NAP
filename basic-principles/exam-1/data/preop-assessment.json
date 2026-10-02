@@ -7381,17 +7381,17 @@
       "id": "PRE-302",
       "set": 1,
       "type": "single",
-      "stem": "A cocaine-intoxicated patient has severe hypertension and tachycardia. Why can a pure beta-blocker such as metoprolol be dangerous?",
+      "stem": "A cocaine-intoxicated patient has severe hypertension, tachycardia, and chest pain. Which initial management principle is best supported?",
       "options": [
-        "It can leave unopposed alpha-adrenergic vasoconstriction",
-        "It directly increases cocaine metabolism",
-        "It reliably causes bronchospasm in all patients",
-        "It reverses coronary vasospasm too quickly"
+        "Reduce central sympathetic stimulation with benzodiazepines and treat ischemia/vasoconstriction as indicated rather than reflexively giving a pure beta-blocker",
+        "Give metoprolol first because pure beta-blockade is universally preferred",
+        "Give phenylephrine to oppose cocaine-induced vasodilation",
+        "Avoid benzodiazepines because they worsen the catecholamine surge"
       ],
       "answer": [
         0
       ],
-      "explanation": "Blocking beta-2 vasodilation leaves alpha effects unopposed, worsening hypertension and coronary vasospasm.",
+      "explanation": "Benzodiazepines are first-line for agitation and sympathetic excess in acute cocaine toxicity. Historical concern about 'unopposed alpha' has made pure beta-blockers controversial; management should prioritize sedation and appropriate vasodilator/ischemia therapy rather than teaching the mechanism as an absolute prohibition.",
       "citation": "",
       "topic": "Allergies and social history",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -7894,17 +7894,17 @@
       "id": "PRE-323",
       "set": 1,
       "type": "single",
-      "stem": "A healthy 32-year-old woman presents for elective knee arthroscopy. Which routine test is specifically indicated because pregnancy status could change management?",
+      "stem": "A healthy 32-year-old woman presents for elective knee arthroscopy. When is preoperative pregnancy testing most appropriate?",
       "options": [
-        "Pregnancy testing",
-        "CBC",
-        "Basic metabolic panel",
-        "Coagulation panel"
+        "When pregnancy is possible and the result could alter perioperative management, after informed discussion/consent according to local policy",
+        "Routinely and mandatorily in every woman of reproductive age",
+        "Never, because pregnancy does not affect anesthetic planning",
+        "Only after a positive home pregnancy test"
       ],
       "answer": [
         0
       ],
-      "explanation": "Pregnancy testing is indicated for women of childbearing age; other labs depend on history.",
+      "explanation": "Pregnancy testing should not be treated as a universal mandatory laboratory test. It may be offered when pregnancy is possible and the result would change management, with informed consent and institutional policy considered.",
       "citation": "",
       "topic": "ASA class, labs, premedication, and consults",
       "sourceTitle": "Perioperative Assessment & Evaluation",
