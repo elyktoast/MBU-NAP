@@ -9796,7 +9796,7 @@
       "id": "MISC-401",
       "set": 1,
       "type": "single",
-      "stem": "A hospital eliminates unnecessary preoperative testing without compromising outcomes. Which IOM quality domain is most directly improved?",
+      "stem": "A hospital stops routine low-value preoperative testing in low-risk patients while outcomes remain unchanged. Which IOM quality domain is most directly improved?",
       "options": [
         "Efficient",
         "Timely",
@@ -9820,7 +9820,7 @@
       "id": "MISC-402",
       "set": 1,
       "type": "single",
-      "stem": "A department replaces an outdated anesthetic approach with an evidence-based regional technique that improves outcomes. Which IOM quality domain is most directly improved?",
+      "stem": "A department replaces an outdated anesthetic practice with a better-supported regional technique after evidence shows superior recovery outcomes. Which IOM quality domain is most directly improved?",
       "options": [
         "Effective",
         "Efficient",
@@ -10012,9 +10012,9 @@
       "id": "MISC-410",
       "set": 1,
       "type": "single",
-      "stem": "A laboring minority patient has no epidural and later requires emergency cesarean delivery under general anesthesia. Which disparity can contribute to this pattern?",
+      "stem": "A laboring minority patient who desired neuraxial analgesia never receives it because access is delayed; emergency cesarean delivery later requires general anesthesia. Which documented disparity can contribute to this sequence?",
       "options": [
-        "Lower use of neuraxial labor analgesia",
+        "Lower use or access to neuraxial labor analgesia",
         "Higher preference for elective cesarean delivery",
         "Prenatal care alone",
         "Larger infant size alone"
@@ -10207,7 +10207,7 @@
       "id": "MISC-418",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA avoids an invasive line because its risks exceed the expected benefit. Which ethical principle is most directly reflected?",
+      "stem": "An arterial line could provide additional data, but in a low-risk patient its procedural risks outweigh the expected clinical benefit. The CRNA decides not to place it. Which ethical principle is most directly applied?",
       "options": [
         "Non-maleficence",
         "Justice",
@@ -10231,7 +10231,7 @@
       "id": "MISC-419",
       "set": 1,
       "type": "single",
-      "stem": "A valid DNR order is reviewed before anesthesia and honored according to the patient's wishes. Which ethical principle is most directly reflected?",
+      "stem": "A patient with decision-making capacity has a valid DNR order. Before anesthesia, the team reviews how the directive applies perioperatively and follows the patient's stated choices. Which ethical principle is most directly protected?",
       "options": [
         "Autonomy",
         "Justice",
@@ -10399,12 +10399,12 @@
       "id": "MISC-426",
       "set": 1,
       "type": "single",
-      "stem": "Which informed-consent topic applies when relevant information is intentionally withheld from the patient?",
+      "stem": "A clinician intentionally omits a material anesthetic risk because disclosure might cause the patient to refuse the preferred plan. Which informed-consent problem is most direct?",
       "options": [
         "Withheld information",
         "Timing",
-        "Emergencies",
-        "Special populations"
+        "Emergency consent",
+        "Special-population status"
       ],
       "answer": [
         0
@@ -10423,11 +10423,11 @@
       "id": "MISC-427",
       "set": 1,
       "type": "single",
-      "stem": "Consent is obtained immediately before surgery, after significant time pressure has developed. Which informed-consent issue is most directly implicated?",
+      "stem": "A nonurgent anesthesia consent discussion is postponed until the patient is being wheeled toward the operating room and feels pressured to decide immediately. Which consent issue is most directly implicated?",
       "options": [
         "Timing",
         "Withheld information",
-        "Emergencies",
+        "Emergency consent",
         "Research consent"
       ],
       "answer": [
@@ -10618,7 +10618,7 @@
       "id": "MISC-435",
       "set": 1,
       "type": "single",
-      "stem": "Three hours into an uneventful case, a CRNA continues actively scanning and notices an unexpected small ETCO2 drift before any alarm or obvious clinical change. Which performance behavior is this?",
+      "stem": "Three hours into an uneventful case, no alarm has activated, but the CRNA's active scan detects a small unexpected ETCO2 drift and prompts reassessment. Which performance behavior is best demonstrated?",
       "options": [
         "Sustained vigilance",
         "Fixation",
@@ -10690,11 +10690,11 @@
       "id": "MISC-438",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA reads a long online article while monitoring a patient. Which distraction mechanism is most relevant?",
+      "stem": "A CRNA reads a complex online article during maintenance; the monitor remains visible, but attention is consumed by processing the article and a physiologic trend is missed. Which distraction mechanism is most relevant?",
       "options": [
-        "Cognitive load",
+        "Excess cognitive load",
         "Auditory disruption",
-        "Visual distraction alone",
+        "Pure visual obstruction",
         "Environmental noise"
       ],
       "answer": [
@@ -10858,7 +10858,7 @@
       "id": "MISC-445",
       "set": 1,
       "type": "single",
-      "stem": "Vaccinating a surgical patient against influenza most directly strengthens which link in the chain of infection?",
+      "stem": "Preoperative influenza vaccination does not remove a pathogen from the environment but decreases the patient's likelihood of becoming infected after exposure. Which chain-of-infection link is being modified?",
       "options": [
         "Susceptible host",
         "Infectious agent",
