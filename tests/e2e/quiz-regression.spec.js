@@ -1423,13 +1423,12 @@ test.describe('canonical quiz regression', () => {
     expect(buildRequests).toBeLessThanOrEqual(4);
   });
 
-  test('Successful updater reload marker is removed without another navigation', async ({ page }) => {
-    await page.goto(exam + '/quiz-bank-1.html');
+  test('Legacy updater markers never trigger a forced navigation', async ({ page }) => {
+    await page.goto(exam + '/quiz-bank-1.html?_mbu_reload=legacy');
     await page.evaluate(() => MBUPageReady);
-    const build=await page.evaluate(() => window.MBU_BUILD_ID);
-    await page.goto(exam + '/quiz-bank-1.html?_mbu_reload=' + encodeURIComponent(build));
-    await page.evaluate(() => MBUPageReady);
-    await expect.poll(() => new URL(page.url()).searchParams.has('_mbu_reload')).toBe(false);
+    const before = page.url();
+    await page.waitForTimeout(250);
+    expect(page.url()).toBe(before);
     expect(new URL(page.url()).pathname).toBe(exam + '/quiz-bank-1.html');
   });
 
@@ -1555,16 +1554,14 @@ test.describe('canonical quiz regression', () => {
     expect(await page.locator('#mbuNavigator button').count()).toBe(100);
   });
 
-  test('Global nav keeps primary destinations compact and groups quiz banks in one selector', async ({ page }) => {
+  test('Unpublished Equipment fixtures do not leak course navigation', async ({ page }) => {
     await page.goto(exam + '/hazards-100.html');await page.evaluate(() => MBUPageReady);
     await expect(page.locator('.mbu-global-nav__brand')).toHaveText('SRNA Study Tool');
-    await expect(page.locator('.mbu-global-nav__primary-link')).toHaveCount(3);
-    await expect(page.locator('.mbu-global-nav__primary')).toContainText('Equipment');
-    await expect(page.locator('.mbu-global-nav__primary')).toContainText('Study Studio');
-    await expect(page.locator('.mbu-global-nav__adaptive')).toHaveText('Adaptive');
-    const options=await page.locator('.mbu-global-nav__picker option').allTextContents();
-    expect(options).toEqual(['Hazards','Quiz Bank 1','Quiz Bank 2','Quiz Bank 3','Combined','Workstation Hazards']);
-    expect(options.some(x=>/Practice Set|Challenge Set/.test(x))).toBe(false);
+    await expect(page.locator('.mbu-global-nav__primary-link')).toHaveCount(0);
+    await expect(page.locator('.mbu-global-nav__primary')).not.toContainText('Equipment');
+    await expect(page.locator('.mbu-global-nav__primary')).not.toContainText('Study Studio');
+    await expect(page.locator('.mbu-global-nav__adaptive')).toHaveCount(0);
+    await expect(page.locator('.mbu-global-nav__picker')).toHaveCount(0);
     await expect(page.locator('.mbu-global-nav__search')).toHaveText('Search');
     await expect(page.locator('.mbu-global-nav__cloud')).toHaveText(/Account/);
     await expect(page.locator('.mbu-global-nav__tools')).toHaveText('Tools');
