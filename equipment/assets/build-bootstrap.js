@@ -63,6 +63,7 @@ async function start(){
   if(typeof cfg.ready==='function')await cfg.ready();
   return build
 }
-const ready=start().finally(()=>{delete document.documentElement.dataset.mbuBoot;gate.remove()}).catch(e=>{console.error('SRNA Study Tool bootstrap failed',e);throw e});
+const showFailure=e=>{let box=document.getElementById('mbu-bootstrap-failure');if(!box){box=document.createElement('div');box.id='mbu-bootstrap-failure';box.setAttribute('role','alert');box.style.cssText='max-width:720px;margin:48px auto;padding:24px;font:16px/1.5 system-ui,sans-serif;border:1px solid #cbd5e0;border-radius:12px;background:#fff;color:#1a202c';document.body.append(box)}box.innerHTML='<h1 style="margin-top:0;font-size:1.35rem">SRNA Study Tool could not finish loading</h1><p>Your saved study progress was not changed. Check your connection and try again.</p><button type="button" style="font:inherit;padding:9px 14px;cursor:pointer">Try again</button>';box.querySelector('button').onclick=()=>location.reload();return e};
+const ready=start().catch(e=>{console.error('SRNA Study Tool bootstrap failed',e);showFailure(e);throw e}).finally(()=>{delete document.documentElement.dataset.mbuBoot;gate.remove()});
 window.MBUPageReady=ready;if(cfg.readyGlobal)window[cfg.readyGlobal]=ready;
 })();
