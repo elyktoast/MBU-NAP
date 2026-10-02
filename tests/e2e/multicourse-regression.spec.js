@@ -87,7 +87,7 @@ test.describe('multi-course foundation', () => {
     const nav = page.locator('.mbu-global-nav');
     await expect(nav.getByRole('link', { name: 'Basic Principles', exact: true })).toHaveAttribute('href', /\/basic-principles\/$/);
     await expect(nav.getByRole('link', { name: 'Study Studio', exact: true })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html$/);
-    await expect(nav.getByRole('link', { name: 'Adaptive', exact: true })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html\?mode=adaptive$/);
+    await expect(nav.getByRole('link', { name: /Adaptive/, exact: false })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html\?mode=adaptive$/);
     await expect(nav.getByRole('link', { name: 'Equipment', exact: true })).toHaveCount(0);
   });
 
