@@ -2506,7 +2506,7 @@
       "id": "MON-101",
       "set": 1,
       "type": "single",
-      "stem": "FiO2 reads 0.50 throughout a case, but the patient's SpO2 falls to 84% from a right mainstem intubation. What limitation of inspired O2 monitoring does this show?",
+      "stem": "FiO2 remains 0.50, but SpO2 falls to 84% after right mainstem intubation. What limitation of inspired-O2 monitoring does this illustrate?",
       "options": [
         "Adequate FiO2 does not guarantee arterial oxygenation",
         "The O2 analyzer was miscalibrated",
@@ -2530,7 +2530,7 @@
       "id": "MON-102",
       "set": 1,
       "type": "single",
-      "stem": "The circuit disconnects at the Y-piece, and the inspired O2 alarm does not sound. Why?",
+      "stem": "The circuit disconnects at the Y-piece, but the inspired-O2 alarm does not activate. Why can FiO2 remain deceptively normal?",
       "options": [
         "O2 alarms miss disconnections",
         "The O2 sensor failed",
@@ -2554,7 +2554,7 @@
       "id": "MON-103",
       "set": 1,
       "type": "single",
-      "stem": "A galvanic O2 sensor wears out much faster than expected. Which exposure shortens its life?",
+      "stem": "A galvanic oxygen sensor fails much earlier than expected. Which exposure most likely shortened its lifespan?",
       "options": [
         "Carbon dioxide",
         "High humidity",
@@ -2578,7 +2578,7 @@
       "id": "MON-104",
       "set": 1,
       "type": "single",
-      "stem": "During laser airway surgery on a child, why is FiO2 kept as low as possible?",
+      "stem": "During laser airway surgery, why should FiO2 be kept as low as safely possible?",
       "options": [
         "Oxygen enrichment raises fire risk",
         "High FiO2 causes retinopathy in all children",
@@ -2602,7 +2602,7 @@
       "id": "MON-105",
       "set": 1,
       "type": "single",
-      "stem": "A firefighter after smoke inhalation has SpO2 99%, and a patient after benzocaine spray has SpO2 85% despite high FiO2. What explains both readings?",
+      "stem": "A smoke-inhalation patient has SpO2 99%, while a benzocaine-exposed patient sits near 85% despite high FiO2. Which dyshemoglobin effects explain these readings?",
       "options": [
         "COHb falsely raises SpO2; MetHb drives it toward 85%",
         "Anemia and hypovolemia distort the signal",
@@ -2626,7 +2626,7 @@
       "id": "MON-106",
       "set": 1,
       "type": "single",
-      "stem": "FiO2 reads 0.6 and seems fine, but the patient has severe ARDS. What does \"trust but verify\" mean for inspired O2 monitoring?",
+      "stem": "FiO2 is adequate in a patient with severe ARDS, yet arterial oxygenation is poor. What does 'trust but verify' mean here?",
       "options": [
         "Pair it with blood oxygenation monitoring",
         "Rely on FiO2 alone",
@@ -2650,7 +2650,7 @@
       "id": "MON-107",
       "set": 1,
       "type": "single",
-      "stem": "A patient asks whether there is any reason not to monitor inspired oxygen during her anesthetic. What is correct?",
+      "stem": "Which statement about clinical contraindications to inspired-O2 monitoring is correct?",
       "options": [
         "There are no clinical contraindications",
         "It is contraindicated in COPD",
@@ -2674,7 +2674,7 @@
       "id": "MON-108",
       "set": 1,
       "type": "single",
-      "stem": "Your gas analyzer measures oxygen by detecting pressure changes in the sample line as a magnetic field switches on and off. Which type is it?",
+      "stem": "An oxygen analyzer detects pressure changes caused by oxygen interacting with a switched magnetic field. Which analyzer is this?",
       "options": [
         "Paramagnetic",
         "Galvanic",
@@ -2698,7 +2698,7 @@
       "id": "MON-109",
       "set": 1,
       "type": "single",
-      "stem": "Which O2 sensor measures current as oxygen diffuses through a membrane and is reduced?",
+      "stem": "Which oxygen sensor measures current generated as O2 diffuses across a membrane and is reduced at an electrode?",
       "options": [
         "Polarographic",
         "Paramagnetic",
@@ -2722,7 +2722,7 @@
       "id": "MON-110",
       "set": 1,
       "type": "single",
-      "stem": "What should be verified during daily machine checkout for O2 analyzers?",
+      "stem": "During the daily machine checkout, which two oxygen-analyzer functions must be verified?",
       "options": [
         "Low-O2 alarm limits and calibration",
         "The high-O2 alarm",
@@ -2746,7 +2746,7 @@
       "id": "MON-111",
       "set": 1,
       "type": "single",
-      "stem": "Your gas analyzer measures CO2, N2O, and volatile agents by how much light each gas absorbs at specific wavelengths. Which technology is this?",
+      "stem": "A gas analyzer identifies CO2, N2O, and volatile agents by wavelength-specific light absorption. Which technology is being used?",
       "options": [
         "Infrared absorption",
         "Paramagnetic analysis",
@@ -2770,7 +2770,7 @@
       "id": "MON-112",
       "set": 1,
       "type": "single",
-      "stem": "An infrared capnometer is tuned to a wavelength where CO2 absorbs strongly. Which wavelength is it?",
+      "stem": "At approximately which infrared wavelength does CO2 absorb strongly for capnographic measurement?",
       "options": [
         "About 4.3 microns",
         "About 660 nm",
@@ -2794,7 +2794,7 @@
       "id": "MON-113",
       "set": 1,
       "type": "single",
-      "stem": "What is the typical ETCO2–PaCO2 gradient in a healthy supine patient under GA?",
+      "stem": "In a healthy supine patient under GA, what PaCO2–ETCO2 gradient is typically expected?",
       "options": [
         "About 5 mmHg (range 2–10)",
         "About 15 mmHg (range 10–20)",
@@ -2818,7 +2818,7 @@
       "id": "MON-114",
       "set": 1,
       "type": "single",
-      "stem": "A research protocol uses xenon as an anesthetic. Why will the standard infrared gas analyzer fail to measure it?",
+      "stem": "Why will a standard infrared gas analyzer fail to measure xenon?",
       "options": [
         "Xenon does not absorb infrared light",
         "Xenon absorbs at the same wavelength as CO2",
@@ -2842,7 +2842,7 @@
       "id": "MON-115",
       "set": 1,
       "type": "single",
-      "stem": "Immediately after inspiration ends, a normal capnogram remains at zero briefly before the expiratory upstroke begins. Why?",
+      "stem": "At the start of expiration, the capnogram remains at zero briefly before rising. Which gas is being exhaled during this phase?",
       "options": [
         "Dead space gas is exhaled first",
         "Alveolar gas is exhaled first",
@@ -2866,7 +2866,7 @@
       "id": "MON-116",
       "set": 1,
       "type": "single",
-      "stem": "Where on a normal time capnogram is end-tidal CO2 measured?",
+      "stem": "At what point on a normal time capnogram is ETCO2 measured?",
       "options": [
         "At the end of the alveolar plateau immediately before inspiration",
         "At the start of the expiratory upstroke",
@@ -2890,7 +2890,7 @@
       "id": "MON-117",
       "set": 1,
       "type": "single",
-      "stem": "What occurs during the inspiratory downstroke of a normal capnogram?",
+      "stem": "What physiologic event produces the rapid inspiratory downstroke on a normal capnogram?",
       "options": [
         "Fresh gas is inspired and measured CO2 rapidly falls toward baseline",
         "Alveolar gas is sampled at a stable plateau",
@@ -2914,7 +2914,7 @@
       "id": "MON-118",
       "set": 1,
       "type": "single",
-      "stem": "Two patients' capnograms differ: one has a sharp, vertical upstroke, the other a slow, sloped upstroke. What determines the slope of the B–C upstroke?",
+      "stem": "One patient has a near-vertical expiratory upstroke; another has a slow sloped upstroke. What primarily determines this difference?",
       "options": [
         "Evenness of alveolar emptying",
         "The respiratory rate alone",
@@ -2938,7 +2938,7 @@
       "id": "MON-119",
       "set": 1,
       "type": "single",
-      "stem": "A patient with COPD has a plateau that keeps rising during expiration instead of staying flat. What does this suggest?",
+      "stem": "A COPD capnogram shows an alveolar plateau that continues to rise rather than flatten. What does this reflect?",
       "options": [
         "Ventilation-perfusion mismatch",
         "Normal lungs",
@@ -2962,7 +2962,7 @@
       "id": "MON-120",
       "set": 1,
       "type": "single",
-      "stem": "After intubation in an asthmatic, the capnogram shows a slow upstroke and a shark-fin shape, and PIP rises. What does this indicate?",
+      "stem": "After intubation of an asthmatic, PIP rises and the capnogram becomes shark-fin shaped. What is the most likely mechanism?",
       "options": [
         "Expiratory obstruction",
         "Restrictive disease",
@@ -2986,7 +2986,7 @@
       "id": "MON-121",
       "set": 1,
       "type": "single",
-      "stem": "A COPD patient's capnogram shows a progressively rounded transition into the plateau. What does this rounding indicate?",
+      "stem": "In COPD, the transition from expiratory upstroke to plateau becomes increasingly rounded. What does greater rounding imply?",
       "options": [
         "More airway obstruction",
         "More dead space",
@@ -3010,7 +3010,7 @@
       "id": "MON-122",
       "set": 1,
       "type": "multi",
-      "stem": "A normally shaped capnogram with a rising ETCO2 suggests which causes? (Select 2)",
+      "stem": "A normally shaped capnogram shows progressively rising ETCO2. Which TWO mechanisms best explain this? (Select 2)",
       "options": [
         "Alveolar hypoventilation",
         "Increased CO2 production",
@@ -3037,7 +3037,7 @@
       "id": "MON-123",
       "set": 1,
       "type": "multi",
-      "stem": "Which events can cause a transient ETCO2 increase? (Select 2)",
+      "stem": "Which TWO events can transiently raise ETCO2 by washing accumulated CO2 back into circulation? (Select 2)",
       "options": [
         "Tourniquet release",
         "Aortic unclamping",
@@ -3064,7 +3064,7 @@
       "id": "MON-124",
       "set": 1,
       "type": "single",
-      "stem": "The capnogram suddenly goes flat during a stable case. What should you evaluate immediately?",
+      "stem": "A previously normal capnogram suddenly becomes flat. Which four domains should be assessed immediately?",
       "options": [
         "Airway, circuit, perfusion, sampling",
         "The vaporizer level",
@@ -3088,7 +3088,7 @@
       "id": "MON-125",
       "set": 1,
       "type": "single",
-      "stem": "What does stable ETCO2 for three breaths confirm about ETT placement?",
+      "stem": "Three stable ETCO2 waveforms appear after intubation. What does this confirm, and what does it NOT confirm?",
       "options": [
         "It is not esophageal, but may still be endobronchial",
         "It is correctly placed in the midtrachea",
@@ -3112,7 +3112,7 @@
       "id": "MON-126",
       "set": 1,
       "type": "single",
-      "stem": "During a case, FiO2, ETCO2, and end-tidal sevoflurane all drop sharply at the same moment. What is the MOST likely source?",
+      "stem": "FiO2, ETCO2, and end-tidal sevoflurane all fall abruptly at the same time. What should be suspected first?",
       "options": [
         "An equipment or sampling problem",
         "A patient physiologic problem",
@@ -3136,7 +3136,7 @@
       "id": "MON-127",
       "set": 1,
       "type": "single",
-      "stem": "During a case, ETCO2 drops from 38 to 24 while FiO2 and end-tidal sevoflurane are unchanged. Which category is MOST likely?",
+      "stem": "ETCO2 falls sharply while FiO2 and end-tidal sevoflurane remain unchanged. Which category of problem is more likely?",
       "options": [
         "A patient problem",
         "An equipment problem",
@@ -3160,7 +3160,7 @@
       "id": "MON-128",
       "set": 1,
       "type": "multi",
-      "stem": "Which conditions increase dead space and make ETCO2 underestimate PaCO2? (Select 5)",
+      "stem": "Which FIVE conditions increase dead space and widen the PaCO2–ETCO2 gradient? (Select 5)",
       "options": [
         "Pulmonary embolism",
         "Emphysema",
@@ -3190,7 +3190,7 @@
       "id": "MON-129",
       "set": 1,
       "type": "single",
-      "stem": "Why can an adult circuit on a pediatric patient cause falsely low ETCO2?",
+      "stem": "Why can using an adult breathing circuit in a small child make ETCO2 read falsely low?",
       "options": [
         "Increased dead space and dilution of exhaled gas",
         "Higher CO2 production in children",
@@ -3214,7 +3214,7 @@
       "id": "MON-130",
       "set": 1,
       "type": "single",
-      "stem": "A 1.2 kg premature infant is ventilated with a sidestream capnograph. Why might the reading be unreliable?",
+      "stem": "Why can sidestream capnography substantially distort ventilation and ETCO2 in a very small premature infant?",
       "options": [
         "Sampling is a large share of ventilation",
         "Sidestream monitors sample about 20 mL/min",
@@ -3238,7 +3238,7 @@
       "id": "MON-131",
       "set": 1,
       "type": "single",
-      "stem": "A 900 g premature infant is ventilated at 6 mL breaths, 40 times per minute, with a sidestream capnograph sampling 150 mL/min. Why is this a problem?",
+      "stem": "A 900-g infant has minute ventilation of 240 mL/min while the sidestream sample removes 150 mL/min. Why is this clinically important?",
       "options": [
         "The sample is about 60% of minute ventilation",
         "The sample is about 6% of minute ventilation",
@@ -3262,7 +3262,7 @@
       "id": "MON-132",
       "set": 1,
       "type": "single",
-      "stem": "Condensation keeps occluding a sidestream sampling line during a long humidified case. What simple step reduces water entry?",
+      "stem": "Condensation repeatedly occludes a sidestream sampling line. Which simple positioning change reduces water entry?",
       "options": [
         "Keep the sampling port pointing up",
         "Lower the sampling line below the circuit",
@@ -3286,7 +3286,7 @@
       "id": "MON-133",
       "set": 1,
       "type": "single",
-      "stem": "During a case, the capnogram baseline rises to 6 mmHg between breaths. What does this indicate?",
+      "stem": "The capnogram baseline no longer returns to zero and remains near 6 mmHg between breaths. What does this indicate?",
       "options": [
         "CO2 rebreathing",
         "Esophageal intubation",
@@ -3310,7 +3310,7 @@
       "id": "MON-134",
       "set": 1,
       "type": "multi",
-      "stem": "Inspired CO2 is 6 mmHg during a case. Which causes should you check? (Select 3)",
+      "stem": "Inspired CO2 is elevated. Which THREE circuit causes should be checked first? (Select 3)",
       "options": [
         "Exhausted CO2 absorbent",
         "A malfunctioning unidirectional valve",
@@ -3338,7 +3338,7 @@
       "id": "MON-135",
       "set": 1,
       "type": "single",
-      "stem": "Refer to Capnogram I. What is the MOST likely cause of the rising baseline on low fresh gas flow?",
+      "stem": "Inspired CO2 remains above zero on low fresh-gas flow. Which cause best fits this rebreathing pattern?",
       "options": [
         "Exhausted CO2 absorbent or a sticking valve",
         "Bronchospasm from light anesthesia",
@@ -3367,7 +3367,7 @@
       "id": "MON-136",
       "set": 1,
       "type": "single",
-      "stem": "Refer to Capnogram I. Fresh gas flow is 0.5 L/min, the absorbent has turned purple, and inspired CO2 is 7. What is the BEST immediate action?",
+      "stem": "Inspired CO2 is 7 mmHg, fresh-gas flow is 0.5 L/min, and the absorber is exhausted. What is the best immediate response?",
       "options": [
         "Raise flow; check absorbent and valves",
         "Increase the tidal volume alone",
@@ -3396,7 +3396,7 @@
       "id": "MON-137",
       "set": 1,
       "type": "multi",
-      "stem": "A sudden drop in ETCO2 to near zero with loss of waveform can indicate which problems? (Select 4)",
+      "stem": "Which FOUR problems can cause ETCO2 to fall abruptly to near zero with loss of waveform? (Select 4)",
       "options": [
         "Esophageal or pharyngeal tube malposition",
         "Cardiac arrest",
@@ -3425,7 +3425,7 @@
       "id": "MON-138",
       "set": 1,
       "type": "single",
-      "stem": "During a laparotomy, the capnogram plateau shows a notch in each breath, and the surgeon says the abdomen is tightening. What does the notch indicate?",
+      "stem": "A notch appears in the alveolar plateau as the abdomen tightens during surgery. What does this finding indicate?",
       "options": [
         "Spontaneous breathing effort",
         "Cardiogenic oscillations",
@@ -3449,7 +3449,7 @@
       "id": "MON-139",
       "set": 1,
       "type": "single",
-      "stem": "Refer to Capnogram H. The notch appears 70 minutes after the last rocuronium dose. What does it MOST suggest?",
+      "stem": "A plateau notch appears long after the last rocuronium dose. What is the most likely explanation?",
       "options": [
         "Returning spontaneous effort as blockade wears off",
         "Bronchospasm from surgical stimulation at a light plane",
@@ -3478,7 +3478,7 @@
       "id": "MON-140",
       "set": 1,
       "type": "single",
-      "stem": "Refer to Capnogram H. The surgeon complains of a tight abdomen and the notch persists. What does this suggest, and what should you consider?",
+      "stem": "A persistent curare cleft accompanies spontaneous effort against the ventilator. What management should be considered?",
       "options": [
         "Spontaneous effort; deepen NMB",
         "Apnea requiring reversal",
@@ -3507,7 +3507,7 @@
       "id": "MON-141",
       "set": 1,
       "type": "single",
-      "stem": "During a slow-rate ventilation case, small regular ripples appear on the end of the capnogram, synchronized with the ECG. What are they?",
+      "stem": "Small regular oscillations appear near end-expiration and are synchronized with the ECG. What are they?",
       "options": [
         "Cardiogenic oscillations",
         "A curare cleft",
@@ -3531,7 +3531,7 @@
       "id": "MON-142",
       "set": 1,
       "type": "single",
-      "stem": "The capnogram becomes triangular and sloping, exhaled volume is lower than set, and a hissing sound is heard. What is the MOST likely cause?",
+      "stem": "The capnogram becomes triangular, exhaled tidal volume falls, and a hissing sound is heard. What is the most likely cause?",
       "options": [
         "A leak in the circuit or ETT cuff",
         "Bronchospasm",
@@ -3555,7 +3555,7 @@
       "id": "MON-143",
       "set": 1,
       "type": "single",
-      "stem": "In a patient on high respiratory rates with stiff lungs, the capnogram curls into a pigtail shape. What does this suggest?",
+      "stem": "At high respiratory rates in stiff lungs, the capnogram curls into a pigtail shape. What does this suggest?",
       "options": [
         "Poor compliance or breath stacking",
         "Normal ventilation",
@@ -3579,7 +3579,7 @@
       "id": "MON-144",
       "set": 1,
       "type": "multi",
-      "stem": "A flat trace with no waveform can mean which problems? (Select 5)",
+      "stem": "Which FIVE problems can produce a completely flat capnogram? (Select 5)",
       "options": [
         "Esophageal intubation",
         "Apnea",
@@ -3609,7 +3609,7 @@
       "id": "MON-145",
       "set": 1,
       "type": "single",
-      "stem": "Which statement about capnography during TIVA is correct?",
+      "stem": "During TIVA, which statement about gas monitoring is correct?",
       "options": [
         "Expired agent monitoring is irrelevant, but ETCO2 is still required",
         "ETCO2 is not needed during TIVA",
@@ -3633,7 +3633,7 @@
       "id": "MON-146",
       "set": 1,
       "type": "single",
-      "stem": "Why is expired anesthetic gas monitoring helpful during low-flow anesthesia?",
+      "stem": "Why is expired anesthetic-agent monitoring especially useful during low-flow anesthesia?",
       "options": [
         "It guides volatile titration when circuit concentration differs",
         "It replaces the need for inspired O2 analysis at low flows",
@@ -3657,7 +3657,7 @@
       "id": "MON-147",
       "set": 1,
       "type": "multi",
-      "stem": "Capnography is required during which situations? (Select 2)",
+      "stem": "In which TWO situations is capnography routinely required by the lecture standards? (Select 2)",
       "options": [
         "General anesthesia",
         "Moderate sedation",
@@ -3684,7 +3684,7 @@
       "id": "MON-148",
       "set": 1,
       "type": "single",
-      "stem": "What does a sudden drop in ETCO2 with a preserved waveform MOST suggest?",
+      "stem": "ETCO2 suddenly falls, but the waveform remains present. Which physiologic problem should be suspected?",
       "options": [
         "Reduced pulmonary blood flow, such as embolism",
         "Esophageal intubation with washout of swallowed CO2",
@@ -3708,7 +3708,7 @@
       "id": "MON-149",
       "set": 1,
       "type": "single",
-      "stem": "A patient has ETCO2 of 28 with an ABG PaCO2 of 50. What does this gradient suggest?",
+      "stem": "ETCO2 is 28 mmHg while PaCO2 is 50 mmHg. What does this unusually wide gradient suggest?",
       "options": [
         "Increased dead space or V/Q mismatch",
         "Normal gradient for a healthy patient",
@@ -3732,7 +3732,7 @@
       "id": "MON-150",
       "set": 1,
       "type": "single",
-      "stem": "During one-lung ventilation, ETCO2 is lower than expected. Why?",
+      "stem": "During one-lung ventilation, why may ETCO2 substantially underestimate PaCO2?",
       "options": [
         "Dead space and V/Q mismatch increase",
         "CO2 production decreases dramatically",
