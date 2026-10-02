@@ -1364,12 +1364,12 @@
       "id": "PHA-056",
       "set": 1,
       "type": "single",
-      "stem": "A septic patient desaturates much faster than a healthy patient despite identical preoxygenation. Which physiologic factor best explains this?",
+      "stem": "A septic patient and a healthy patient have similar FRC and achieve the same EtO2 before induction, yet the septic patient desaturates much sooner during apnea. Which variable best explains the difference?",
       "options": [
         "Higher oxygen consumption",
         "A larger FRC",
-        "Less shunt",
-        "Better mask seal"
+        "Less intrapulmonary shunt",
+        "A better mask seal"
       ],
       "answer": [
         0
@@ -1532,7 +1532,7 @@
       "id": "PHA-063",
       "set": 1,
       "type": "multi",
-      "stem": "Which FOUR advantages favor IV induction in a cooperative adult with IV access? (Select 4)",
+      "stem": "A cooperative adult with reliable IV access requires rapid, controllable induction and has significant PONV history. Which four features favor IV over inhalation induction? (Select 4)",
       "options": [
         "Less PONV",
         "No unpleasant odor",
@@ -1638,12 +1638,12 @@
       "id": "PHA-067",
       "set": 1,
       "type": "single",
-      "stem": "A full-stomach patient loses protective reflexes after induction. Which timing goal minimizes the interval before a cuffed airway is secured during RSI?",
+      "stem": "A full-stomach patient loses consciousness and protective airway reflexes during RSI. Which airway-timing goal minimizes the duration of this unprotected interval?",
       "options": [
-        "Secure the airway in under about 60 seconds",
+        "Secure a cuffed airway in under about 60 seconds",
         "Secure the airway within about 3 minutes",
-        "Allow 5 minutes for complete drug equilibration",
-        "Secure the airway within 10 seconds regardless of conditions"
+        "Wait 5 minutes for complete drug equilibration",
+        "Secure the airway within 10 seconds regardless of intubating conditions"
       ],
       "answer": [
         0
@@ -1789,12 +1789,12 @@
       "id": "PHA-073",
       "set": 1,
       "type": "single",
-      "stem": "Cricoid pressure is started before induction. Which force best balances intended compression with awake tolerance?",
+      "stem": "Cricoid pressure is applied while an RSI patient is still awake. Which approximate initial force is traditionally used to balance intended compression against awake tolerance?",
       "options": [
-        "About 10 N",
-        "About 30 N",
-        "About 50 N",
-        "About 100 N"
+        "10 N",
+        "30 N",
+        "50 N",
+        "100 N"
       ],
       "answer": [
         0
@@ -1813,12 +1813,12 @@
       "id": "PHA-074",
       "set": 1,
       "type": "single",
-      "stem": "After loss of consciousness during RSI, cricoid pressure is continued. To what approximate force is it traditionally increased?",
+      "stem": "After loss of consciousness during RSI, the assistant maintains cricoid pressure. To what approximate force is it traditionally increased?",
       "options": [
-        "About 30 N",
-        "About 10 N",
-        "About 50 N",
-        "About 100 N"
+        "30 N",
+        "10 N",
+        "50 N",
+        "100 N"
       ],
       "answer": [
         0
@@ -2056,7 +2056,7 @@
       "id": "PHA-084",
       "set": 1,
       "type": "single",
-      "stem": "A cooperative adult has reliable IV access and no reason to preserve spontaneous ventilation during induction. Which route is generally preferred?",
+      "stem": "A cooperative adult has reliable IV access, normal aspiration risk, and no airway lesion requiring preservation of spontaneous ventilation. Which induction route is generally preferred?",
       "options": [
         "IV induction",
         "Inhalation induction",
@@ -2080,12 +2080,12 @@
       "id": "PHA-085",
       "set": 1,
       "type": "single",
-      "stem": "A frightened 4-year-old has no IV access and no aspiration-risk indication for RSI. Which induction route best fits the situation?",
+      "stem": "A frightened 4-year-old refuses IV placement, has no aspiration risk, and has no airway lesion requiring an awake technique. Which induction route best fits?",
       "options": [
         "Inhalation induction",
-        "IV RSI",
+        "IV rapid-sequence induction",
         "Awake intubation",
-        "MAC with nasal cannula"
+        "Monitored anesthesia care with nasal cannula"
       ],
       "answer": [
         0
@@ -2421,14 +2421,14 @@
       "id": "PHA-098",
       "set": 1,
       "type": "multi",
-      "stem": "Which TWO statements describe the correct sequence for securing an ETT? (Select 2)",
+      "stem": "After intubation, the tube is at an appropriate depth but tracheal placement has not yet been verified. Which two actions belong in the correct sequence? (Select 2)",
       "options": [
-        "Tape or tie the device",
-        "Confirm placement before securing",
+        "Confirm placement before final securing",
+        "Tape or tie the device after confirmation",
         "Secure the tube before confirming placement",
         "Avoid documenting depth",
-        "Secure with cricoid pressure maintained",
-        "Secure after incision"
+        "Maintain cricoid pressure as the securing method",
+        "Wait until incision to secure the tube"
       ],
       "answer": [
         0,
