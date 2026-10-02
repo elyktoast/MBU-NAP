@@ -2817,17 +2817,17 @@
       "id": "PRE-116",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a bare-metal coronary stent placed 3 weeks ago and requests elective cholecystectomy. Which timing issue should prevent routine progression to surgery?",
+      "stem": "A patient had a bare-metal coronary stent placed 3 weeks ago and requests elective cholecystectomy that would require interruption of antiplatelet therapy. Which issue should prevent routine progression to surgery?",
       "options": [
-        "The interval is still under the lecture's 30-day minimum after BMS placement",
-        "The case may proceed if dual antiplatelet therapy is continued",
-        "The case may proceed if aspirin is stopped",
-        "The case must be delayed 6 months, identical to CABG"
+        "Very recent PCI plus required antiplatelet interruption creates substantial stent-thrombosis and ischemic risk",
+        "The case is automatically safe if dual antiplatelet therapy is continued",
+        "The case becomes safe if aspirin alone is stopped",
+        "Bare-metal stents require the same fixed 6-month delay as every drug-eluting stent"
       ],
       "answer": [
         0
       ],
-      "explanation": "BMS requires >30 days before elective surgery.",
+      "explanation": "Elective noncardiac surgery very soon after PCI is hazardous when it requires interruption of antiplatelet therapy. Timing should reflect PCI indication, stent history, urgency, and the ability to continue appropriate antiplatelet therapy rather than a simplistic elapsed-time rule.",
       "citation": "",
       "topic": "Ischemic heart disease, testing, and hypertension",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -2940,17 +2940,17 @@
       "id": "PRE-121",
       "set": 1,
       "type": "single",
-      "stem": "A patient had an MI treated with PCI 2 months ago. Which missing procedural detail most directly determines whether the lecture's elective-surgery timing threshold has been met?",
+      "stem": "A patient had an MI treated with PCI 2 months ago and now needs noncardiac surgery. Which missing detail is most important for determining perioperative stent and antiplatelet risk?",
       "options": [
-        "Whether the PCI used a bare-metal or drug-eluting stent",
+        "The PCI indication, stent type/history, and required antiplatelet regimen",
         "Whether the infarct was inferior or anterior",
-        "Whether the patient required hospital admission",
-        "Whether peak troponin exceeded 10"
+        "Whether peak troponin exceeded 10",
+        "Whether the patient required more than one night in the hospital"
       ],
       "answer": [
         0
       ],
-      "explanation": "Timing rules differ for BMS (>30 days) and DES (3–6 months).",
+      "explanation": "After recent PCI, perioperative planning depends on why PCI was performed, stent-related risk, time since PCI, urgency of surgery, and whether antiplatelet therapy must be interrupted. Stent type alone does not establish that surgery is safe.",
       "citation": "",
       "topic": "Ischemic heart disease, testing, and hypertension",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -3377,17 +3377,17 @@
       "id": "PRE-139",
       "set": 1,
       "type": "single",
-      "stem": "A patient has insulin-treated diabetes, creatinine 2.4 mg/dL, prior myocardial infarction, and is scheduled for open colectomy. What RCRI score results from those findings?",
+      "stem": "A patient has insulin-treated diabetes, creatinine 2.4 mg/dL, prior myocardial infarction, and is scheduled for open colectomy. What classic RCRI score results from these findings?",
       "options": [
-        "4",
-        "2",
         "3",
+        "2",
+        "4",
         "5"
       ],
       "answer": [
         0
       ],
-      "explanation": "Insulin-treated diabetes, creatinine above 2.0, ischemic heart disease, and intraperitoneal surgery each add 1 point, for 4.",
+      "explanation": "Insulin-treated diabetes, creatinine above 2.0 mg/dL, and ischemic heart disease each add 1 point. An ordinary colectomy is not automatically an RCRI high-risk procedure; the original RCRI procedural criterion is intraperitoneal, intrathoracic, or suprainguinal vascular surgery only when classified as high risk in the original model, and modern implementations commonly reserve the point for high-risk surgery such as major vascular procedures.",
       "citation": "",
       "topic": "Valves, LV dysfunction, and RCRI",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -3497,17 +3497,17 @@
       "id": "PRE-144",
       "set": 1,
       "type": "single",
-      "stem": "A patient with no classic RCRI clinical risk factors is scheduled for intraperitoneal surgery. How does the procedure affect the score?",
+      "stem": "A patient with no other classic RCRI risk factors is scheduled for open abdominal aortic aneurysm repair. How does the procedure affect the score?",
       "options": [
         "The high-risk-surgery criterion adds one point",
         "The procedure adds no points because only patient diseases count",
-        "All abdominal surgery adds two points",
-        "Only vascular surgery can add a procedural point"
+        "Every abdominal operation adds two points",
+        "High-risk surgery adds two RCRI points"
       ],
       "answer": [
         0
       ],
-      "explanation": "Laparoscopic cholecystectomy is intraperitoneal, which is 1 RCRI point. With no other factors, her score is 1 and her MACE risk is about 1.0%.",
+      "explanation": "Open abdominal aortic aneurysm repair is major suprainguinal vascular surgery and satisfies the classic RCRI high-risk-surgery criterion, adding 1 point.",
       "citation": "",
       "topic": "Valves, LV dysfunction, and RCRI",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -3521,11 +3521,11 @@
       "id": "PRE-145",
       "set": 1,
       "type": "multi",
-      "stem": "Which THREE operations satisfy the classic RCRI high-risk-surgery category? (Select 3)",
+      "stem": "Which THREE operations are examples of procedures that may satisfy the classic RCRI high-risk-surgery category? (Select 3)",
       "options": [
-        "Intraperitoneal surgery",
-        "Intrathoracic surgery",
-        "Suprainguinal vascular surgery",
+        "Open abdominal aortic aneurysm repair",
+        "Major intrathoracic surgery such as pneumonectomy",
+        "Other major suprainguinal vascular surgery",
         "Cataract extraction",
         "Superficial hand surgery",
         "Endoscopy"
@@ -3535,7 +3535,7 @@
         1,
         2
       ],
-      "explanation": "High-risk surgery includes intraperitoneal, intrathoracic, or suprainguinal vascular procedures.",
+      "explanation": "The RCRI assigns one point for high-risk surgery. Major vascular surgery is the clearest contemporary example; major intrathoracic procedures may also fall into the high-risk category. Routine low-risk procedures such as cataract surgery, superficial hand surgery, and endoscopy do not.",
       "citation": "",
       "topic": "Valves, LV dysfunction, and RCRI",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -3549,7 +3549,7 @@
       "id": "PRE-146",
       "set": 1,
       "type": "single",
-      "stem": "A patient with ischemic heart disease and prior heart failure is scheduled for intraperitoneal surgery. What classic RCRI score results from those three findings?",
+      "stem": "A patient with ischemic heart disease and prior heart failure is scheduled for open abdominal aortic aneurysm repair. What classic RCRI score results from those three findings?",
       "options": [
         "3",
         "1",
@@ -3559,7 +3559,7 @@
       "answer": [
         0
       ],
-      "explanation": "IHD (1), CHF (1), and intraperitoneal surgery (1) = 3.",
+      "explanation": "Ischemic heart disease (1), congestive heart failure (1), and high-risk suprainguinal vascular surgery (1) produce an RCRI score of 3.",
       "citation": "",
       "topic": "Valves, LV dysfunction, and RCRI",
       "sourceTitle": "Perioperative Assessment & Evaluation",
