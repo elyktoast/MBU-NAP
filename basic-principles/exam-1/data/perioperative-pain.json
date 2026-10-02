@@ -3844,12 +3844,12 @@
       "id": "PAIN-155",
       "set": 1,
       "type": "single",
-      "stem": "You are transporting a patient who had a painful spine fusion to PACU. What should you bring to avoid gaps in pain control?",
+      "stem": "A patient with a painful spine fusion is transported to PACU before the receiving nurse can immediately access ordered rescue analgesics. Which preparation best prevents an avoidable gap in pain treatment during handoff?",
       "options": [
-        "Medications to treat pain during handoff",
-        "Nothing, since PACU pharmacy will supply them",
-        "A PCA started in the OR before transport",
-        "All medications left behind in the OR"
+        "Bring appropriate medications needed to treat pain during transport/handoff",
+        "Bring nothing because PACU pharmacy will eventually supply them",
+        "Start a PCA solely for the transport interval",
+        "Leave all analgesics in the OR"
       ],
       "answer": [
         0
@@ -3868,12 +3868,12 @@
       "id": "PAIN-156",
       "set": 1,
       "type": "single",
-      "stem": "At handoff, the PACU nurse asks about pain, but the record has no pain assessment. What should have been documented?",
+      "stem": "At PACU handoff, opioid doses are documented but no assessment of the patient's current pain or functional limitation appears in the record. Which missing element is necessary to judge treatment effectiveness?",
       "options": [
         "A pain evaluation",
-        "The opioid doses given",
-        "The vital signs",
-        "The surgical procedure"
+        "Another list of opioid doses",
+        "Vital signs alone",
+        "The procedure name"
       ],
       "answer": [
         0
@@ -4181,12 +4181,12 @@
       "id": "PAIN-168",
       "set": 1,
       "type": "single",
-      "stem": "What must you verify with drips during maintenance?",
+      "stem": "A ketamine infusion is supplying an important component of analgesia during a long case. Which maintenance check prevents an unplanned interruption near the end of surgery?",
       "options": [
-        "Enough drug for the whole case",
-        "Surgeon agreement on drip rate",
-        "The infusion line label",
-        "That the drip is on gravity"
+        "Verify enough drug remains for the intended duration",
+        "Obtain surgeon approval for every infusion-rate check",
+        "Confirm only that the line has a label",
+        "Convert the infusion to gravity"
       ],
       "answer": [
         0
@@ -4229,12 +4229,12 @@
       "id": "PAIN-170",
       "set": 1,
       "type": "single",
-      "stem": "A PACU order set includes only hydromorphone 0.2 mg every 10 minutes. A patient with severe pain needs ongoing coverage. What is generally needed?",
+      "stem": "A PACU regimen contains only small hydromorphone rescue doses for a patient expected to have substantial ongoing pain. Which planning principle best avoids repeated breakthrough-pain cycles?",
       "options": [
-        "Both short- and long-acting opioids",
-        "Short-acting opioids alone",
-        "Long-acting opioids alone",
-        "No opioids"
+        "Provide an appropriate strategy for both immediate rescue and sustained analgesic coverage",
+        "Use only short-acting rescue opioid indefinitely",
+        "Use only long-acting opioid without rescue capability",
+        "Avoid opioids regardless of pain severity"
       ],
       "answer": [
         0
@@ -4253,12 +4253,12 @@
       "id": "PAIN-171",
       "set": 1,
       "type": "single",
-      "stem": "A patient is arriving in PACU with an epidural and a CPNB catheter, but pharmacy needs an hour to prepare the infusions. What should have happened?",
+      "stem": "A patient arrives in PACU with epidural and continuous peripheral nerve-block catheters, but pharmacy needs an hour to prepare both infusions. Which systems failure created the analgesic gap?",
       "options": [
-        "Advance coordination with pharmacy",
-        "Starting the infusions in the OR",
-        "Delaying the infusions until postop day 1",
-        "Using IV opioids instead"
+        "Failure to coordinate needed infusions with pharmacy in advance",
+        "Failure to start every catheter infusion in the OR",
+        "Failure to delay analgesia until postoperative day 1",
+        "Failure to substitute IV opioids for regional analgesia"
       ],
       "answer": [
         0
@@ -4405,12 +4405,12 @@
       "id": "PAIN-177",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives intrathecal fentanyl and becomes apneic 15 minutes later. Which pattern does this fit?",
+      "stem": "Fifteen minutes after intrathecal fentanyl, a patient becomes markedly bradypneic. Which neuraxial-opioid pattern best explains the timing?",
       "options": [
         "Early respiratory depression from a lipophilic opioid",
         "Delayed respiratory depression from a hydrophilic opioid",
-        "Local anesthetic toxicity",
-        "Local anesthetic high spinal"
+        "Local-anesthetic systemic toxicity",
+        "High spinal from local anesthetic"
       ],
       "answer": [
         0
@@ -4429,12 +4429,12 @@
       "id": "PAIN-178",
       "set": 1,
       "type": "single",
-      "stem": "A patient received intrathecal morphine at 0800 and is found with RR 6 at 2000. Which pattern does this fit?",
+      "stem": "A patient receives intrathecal morphine at 0800 and develops RR 6/min at 2000. Which property best explains this delayed respiratory-depression pattern?",
       "options": [
-        "Delayed depression from morphine",
-        "Early respiratory depression from fentanyl",
-        "Local anesthetic toxicity",
-        "Delayed fentanyl effect"
+        "Delayed cephalad effect of hydrophilic morphine",
+        "Early lipophilic fentanyl effect",
+        "Local-anesthetic systemic toxicity",
+        "Delayed fentanyl redistribution"
       ],
       "answer": [
         0
@@ -4583,12 +4583,12 @@
       "id": "PAIN-184",
       "set": 1,
       "type": "single",
-      "stem": "A patient is deeply sedated and bradycardic after a large dexmedetomidine dose. What is the key limitation?",
+      "stem": "A patient is deeply sedated and bradycardic after excessive dexmedetomidine. Why must management rely mainly on supportive care and treatment of hemodynamic effects?",
       "options": [
-        "No reversal agent exists for it in humans",
-        "Its pruritus does not respond to naloxone",
-        "It is a strong mu agonist",
-        "It causes hypertension alone"
+        "There is no routinely available human reversal agent for dexmedetomidine",
+        "Naloxone cannot treat dexmedetomidine-induced pruritus",
+        "Dexmedetomidine is a strong mu-opioid agonist",
+        "Dexmedetomidine causes hypertension without sedation"
       ],
       "answer": [
         0
@@ -4727,12 +4727,12 @@
       "id": "PAIN-190",
       "set": 1,
       "type": "single",
-      "stem": "A patient vomits repeatedly after morphine with good pain control. How is this usually managed?",
+      "stem": "A patient has excellent analgesia after morphine but develops repeated nausea and vomiting without respiratory depression or other toxicity. Which treatment best preserves the useful opioid effect?",
       "options": [
-        "Antiemetics",
-        "Naloxone",
-        "More morphine",
-        "Flumazenil"
+        "Treat the nausea with antiemetics",
+        "Reverse morphine with naloxone",
+        "Give more morphine",
+        "Give flumazenil"
       ],
       "answer": [
         0
@@ -4948,7 +4948,7 @@
       "id": "PAIN-199",
       "set": 1,
       "type": "single",
-      "stem": "A patient needs 20 mg of oxycodone for the relief he once got from 10 mg. What is this?",
+      "stem": "A chronic opioid user now requires 20 mg oxycodone to achieve the analgesia previously produced by 10 mg, without withdrawal symptoms or compulsive use behavior. Which phenomenon is demonstrated?",
       "options": [
         "Tolerance",
         "Physical dependence",
