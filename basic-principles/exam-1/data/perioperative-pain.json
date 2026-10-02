@@ -32,7 +32,7 @@
       "id": "PAIN-002",
       "set": 1,
       "type": "single",
-      "stem": "A patient with an inflamed incision has spontaneous nociceptor firing before any signal reaches the dorsal horn. Which process occurred first?",
+      "stem": "Inflammatory mediators lower a nociceptor's activation threshold at an incision before any dorsal-horn processing occurs. Which pain-process step is being altered first?",
       "options": [
         "Transduction at the peripheral nociceptor",
         "Transmission through the spinothalamic tract",
@@ -56,12 +56,12 @@
       "id": "PAIN-003",
       "set": 1,
       "type": "single",
-      "stem": "An intrathecal opioid reduces a patient's surgical pain by acting where pain signals are inhibited or amplified before reaching the brain. Where does this modulation mainly occur?",
+      "stem": "An intrathecal opioid reduces incoming nociceptive signaling before it ascends to the brain. At which site does this spinal modulation primarily occur?",
       "options": [
-        "The dorsal horn of the spinal cord",
-        "The peripheral nociceptor at the injury site",
-        "The thalamus as it relays to the cortex",
-        "The sensory cortex during perception"
+        "Dorsal horn of the spinal cord",
+        "Peripheral nociceptor at the injury site",
+        "Thalamus during cortical relay",
+        "Primary sensory cortex"
       ],
       "answer": [
         0
@@ -180,7 +180,7 @@
       "id": "PAIN-008",
       "set": 1,
       "type": "single",
-      "stem": "After a skin graft harvest, a patient points to exactly where it hurts and describes a sharp, burning pain. What type of pain is this?",
+      "stem": "After a skin-graft harvest, a patient points precisely to the donor site and describes sharp burning pain confined to the injured skin. Which pain category best fits?",
       "options": [
         "Superficial somatic",
         "Deep somatic",
@@ -204,7 +204,7 @@
       "id": "PAIN-009",
       "set": 1,
       "type": "single",
-      "stem": "After a hip arthroplasty, a patient describes a dull ache he cannot pinpoint, deep in the joint. What type of pain is this?",
+      "stem": "After hip arthroplasty, a patient reports a poorly localized dull ache arising deep from the operated joint without burning or electric features. Which pain category best fits?",
       "options": [
         "Deep somatic",
         "Superficial somatic",
@@ -351,12 +351,12 @@
       "id": "PAIN-015",
       "set": 1,
       "type": "single",
-      "stem": "A patient asks how long her pain from a fractured ankle repair will last. Which description of acute pain fits?",
+      "stem": "Pain from an uncomplicated ankle fracture repair steadily decreases as tissue healing progresses and remains within the expected healing interval. Which feature most strongly supports classifying it as acute rather than chronic pain?",
       "options": [
-        "Minutes up to under six months, resolving as the cause heals",
-        "Less than 24 hours in most surgical patients",
-        "More than three months by definition, even after healing",
-        "As long as the anesthetic effects last"
+        "It resolves as the underlying cause heals within the expected acute interval",
+        "It must last less than 24 hours",
+        "Any postoperative pain is chronic once discharged",
+        "Its classification depends on anesthetic duration"
       ],
       "answer": [
         0
@@ -399,7 +399,7 @@
       "id": "PAIN-017",
       "set": 1,
       "type": "single",
-      "stem": "A preoperative service evaluates 250 adults representative of the worldwide population. Using the cited chronic-pain prevalence, approximately how many would be expected to report chronic pain?",
+      "stem": "A perioperative clinic evaluates 250 adults whose chronic-pain prevalence matches the cited worldwide estimate of about 20%. Approximately how many patients would be expected to report chronic pain?",
       "options": [
         "50",
         "13",
@@ -501,7 +501,7 @@
       "id": "PAIN-021",
       "set": 1,
       "type": "single",
-      "stem": "A patient after a hernia repair describes pain in the groin as \"electric shocks\" and \"burning.\" Which pain type does this describe?",
+      "stem": "Weeks after hernia repair, a patient describes burning electric shocks along the groin with pain triggered by light clothing. Which pain mechanism is most likely?",
       "options": [
         "Neuropathic",
         "Superficial somatic",
@@ -576,7 +576,7 @@
       "id": "PAIN-024",
       "set": 1,
       "type": "single",
-      "stem": "A patient has burning pain in both feet from long-standing diabetes. How is this classified?",
+      "stem": "A patient with long-standing diabetes has symmetric burning pain and paresthesias in both feet from distal nerve injury. How is this classified?",
       "options": [
         "Peripheral neuropathic pain",
         "Central neuropathic pain",
@@ -919,12 +919,12 @@
       "id": "PAIN-038",
       "set": 1,
       "type": "single",
-      "stem": "A patient with CAD is hypertensive and tachycardic with new ST depression from uncontrolled pain. How does adequate analgesia help?",
+      "stem": "A patient with coronary artery disease develops severe incisional pain, tachycardia, hypertension, and new ST depression. Which benefit of adequate analgesia is most immediately relevant?",
       "options": [
-        "It reduces the sympathetic response",
-        "It increases sympathetic tone",
-        "It increases coronary perfusion pressure directly",
-        "It raises myocardial oxygen demand"
+        "Reducing sympathetic activation and myocardial oxygen demand",
+        "Increasing sympathetic tone",
+        "Directly increasing coronary perfusion pressure regardless of BP",
+        "Raising myocardial oxygen demand"
       ],
       "answer": [
         0
@@ -1039,10 +1039,10 @@
       "id": "PAIN-043",
       "set": 1,
       "type": "single",
-      "stem": "A patient arrives in PACU after a total knee, and the team begins discussing whether to place a nerve block catheter. When should this plan have been made?",
+      "stem": "A total-knee patient is expected to need a continuous regional technique and specialized postoperative monitoring. When should this analgesic plan ideally be established so equipment, staffing, and disposition are ready?",
       "options": [
         "Before induction",
-        "In PACU",
+        "After arrival in PACU",
         "At discharge",
         "On postoperative day 1"
       ],
