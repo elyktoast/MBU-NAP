@@ -5034,7 +5034,7 @@
       "id": "PHA-201",
       "set": 1,
       "type": "multi",
-      "stem": "During a sevoflurane anesthetic in an 82-year-old receiving dexmedetomidine, you assess depth. Which questions apply? (Select 3)",
+      "stem": "An 82-year-old receiving dexmedetomidine is maintained on sevoflurane. Which THREE factors should be integrated when judging anesthetic depth? (Select 3)",
       "options": [
         "Is the correct agent running with adequate supply?",
         "Are inspired and end-tidal concentrations reviewed?",
@@ -5062,7 +5062,7 @@
       "id": "PHA-202",
       "set": 1,
       "type": "single",
-      "stem": "At the end of a case, you need to confirm full neuromuscular recovery before extubation. Which monitoring site is preferred?",
+      "stem": "Near extubation, which neuromuscular-monitoring site is preferred for assessing recovery?",
       "options": [
         "Ulnar nerve at the adductor pollicis",
         "Facial nerve at the orbicularis oculi",
@@ -5086,7 +5086,7 @@
       "id": "PHA-203",
       "set": 1,
       "type": "single",
-      "stem": "Both arms are tucked for a prone spine case. Which TOF site can you use instead?",
+      "stem": "Both arms are tucked and unavailable for ulnar-nerve monitoring. Which alternative TOF site is most practical?",
       "options": [
         "Facial nerve at the orbicularis oculi",
         "Ulnar nerve at the adductor pollicis",
@@ -5110,7 +5110,7 @@
       "id": "PHA-204",
       "set": 1,
       "type": "single",
-      "stem": "You monitor the facial nerve during induction and the ulnar nerve before extubation. Which phrase captures why?",
+      "stem": "Why is the facial nerve useful during onset while the adductor pollicis is preferred for recovery?",
       "options": [
         "Facial nerve for onset; thumb for recovery",
         "Thumb for onset; facial nerve for recovery",
@@ -5134,7 +5134,7 @@
       "id": "PHA-205",
       "set": 1,
       "type": "single",
-      "stem": "You redosed rocuronium 40 minutes ago during a long laparoscopy. How often should TOF be checked during maintenance?",
+      "stem": "How often should neuromuscular function generally be reassessed during maintenance when nondepolarizing blockade is being used?",
       "options": [
         "About every 15 minutes and around redosing or reversal",
         "Every 60 minutes",
@@ -5158,7 +5158,7 @@
       "id": "PHA-206",
       "set": 1,
       "type": "single",
-      "stem": "During a long case, TOF returns to 2 twitches and the surgeon needs relaxation for another hour. What rocuronium redose is appropriate for a 70 kg patient?",
+      "stem": "A 70-kg patient has 2 twitches and needs another hour of surgical relaxation. Which rocuronium redose range is appropriate?",
       "options": [
         "7–14 mg (0.1–0.2 mg/kg)",
         "42–84 mg (0.6–1.2 mg/kg)",
@@ -5182,7 +5182,7 @@
       "id": "PHA-207",
       "set": 1,
       "type": "single",
-      "stem": "The surgeon says the abdomen \"feels tight,\" and you plan to judge relaxation. Which monitoring method is the standard?",
+      "stem": "The surgeon reports inadequate relaxation. Which monitoring method should guide additional neuromuscular blocker dosing?",
       "options": [
         "Quantitative monitoring with a numeric TOF ratio",
         "Visual twitch count without numbers",
@@ -5206,7 +5206,7 @@
       "id": "PHA-208",
       "set": 1,
       "type": "single",
-      "stem": "TOF is 2 twitches during a laparoscopy, and you are about to redose rocuronium. What should you do first?",
+      "stem": "TOF has returned to 2 twitches near the end of laparoscopy. Before redosing rocuronium, what should be clarified?",
       "options": [
         "Ask the surgeon how close they are to finishing",
         "Redose every 30 minutes to keep zero twitches",
@@ -5230,7 +5230,7 @@
       "id": "PHA-209",
       "set": 1,
       "type": "single",
-      "stem": "At the end of surgery, Patient 1 has a TOFR of 0.65, Patient 2 has 0.95, and Patient 3 has only two twitches. Which patient is ready for extubation from a neuromuscular standpoint?",
+      "stem": "Three patients have TOFR 0.65, TOFR 0.95, and only 2 twitches. Which patient has adequate neuromuscular recovery for extubation?",
       "options": [
         "Patient 2, with TOFR 0.95",
         "Patient 1, with TOFR 0.65",
@@ -5254,7 +5254,7 @@
       "id": "PHA-210",
       "set": 1,
       "type": "single",
-      "stem": "At the end of surgery, T1 is 20 mm and T4 is 13 mm. What is the TOFR, and what should you do?",
+      "stem": "T1 is 20 mm and T4 is 13 mm. What is the TOF ratio, and how should it affect extubation planning?",
       "options": [
         "0.65; give more reversal",
         "0.65; extubate now",
@@ -5278,7 +5278,7 @@
       "id": "PHA-211",
       "set": 1,
       "type": "single",
-      "stem": "During a hip revision, a stable patient's hemoglobin is 6.8 g/dL. What is the BEST action?",
+      "stem": "During hip revision, hemoglobin is 6.8 g/dL in an otherwise stable patient. What management should be considered?",
       "options": [
         "Consider transfusing PRBCs",
         "Give crystalloid and recheck in 30 minutes",
@@ -5302,7 +5302,7 @@
       "id": "PHA-212",
       "set": 1,
       "type": "single",
-      "stem": "During a colectomy, hemoglobin is 8.4 g/dL with stable vitals and normal lactate. How should you decide on transfusion?",
+      "stem": "Hemoglobin is 8.4 g/dL with stable hemodynamics and normal lactate. How should transfusion be decided?",
       "options": [
         "Assess the patient and clinical context, not just the number",
         "Transfuse to keep Hgb above 10 g/dL",
@@ -5326,7 +5326,7 @@
       "id": "PHA-213",
       "set": 1,
       "type": "single",
-      "stem": "During a laparoscopy, BP is 82/48 after you have given 2 L of crystalloid. Before giving more fluid, what should you ask?",
+      "stem": "After 2 L of crystalloid, MAP remains low. What question should be answered before giving more fluid?",
       "options": [
         "Is the hypotension fluid responsive?",
         "Is the patient already on vasopressors?",
@@ -5350,7 +5350,7 @@
       "id": "PHA-214",
       "set": 1,
       "type": "multi",
-      "stem": "During major hemorrhage, which derangements should be anticipated? (Select 2)",
+      "stem": "Which TWO derangements should be anticipated during massive hemorrhage and transfusion? (Select 2)",
       "options": [
         "Hypocalcemia",
         "Hypothermia",
@@ -5377,7 +5377,7 @@
       "id": "PHA-215",
       "set": 1,
       "type": "single",
-      "stem": "During a trauma laparotomy, the surgeon estimates 300 mL blood loss, but HR is 125 and lap sponges are soaked. How should blood loss be estimated?",
+      "stem": "The surgeon estimates 300 mL blood loss, but the patient is tachycardic and laps are soaked. How should blood loss be estimated?",
       "options": [
         "Combine field, suction, sponges, drains, vitals, and labs",
         "Use canister volume alone",
@@ -5401,7 +5401,7 @@
       "id": "PHA-216",
       "set": 1,
       "type": "single",
-      "stem": "Which fluids are commonly used during maintenance?",
+      "stem": "Which fluid type is the usual default for routine intraoperative maintenance?",
       "options": [
         "Balanced crystalloids",
         "Hypertonic saline",
@@ -5425,7 +5425,7 @@
       "id": "PHA-217",
       "set": 1,
       "type": "single",
-      "stem": "Urine output is 5 mL over the last hour during a stable case. What should you check before blaming renal hypoperfusion?",
+      "stem": "Urine output falls to 5 mL in one hour during an otherwise stable case. What should be checked before assuming renal hypoperfusion?",
       "options": [
         "The catheter and tubing for obstruction or kinking",
         "The BIS value for depth",
@@ -5449,7 +5449,7 @@
       "id": "PHA-218",
       "set": 1,
       "type": "multi",
-      "stem": "Which time-dependent therapies should be tracked during maintenance? (Select 5)",
+      "stem": "Which FIVE time-dependent therapies should be actively tracked during maintenance? (Select 5)",
       "options": [
         "Antibiotic redosing",
         "Insulin and glucose checks",
@@ -5479,7 +5479,7 @@
       "id": "PHA-219",
       "set": 1,
       "type": "multi",
-      "stem": "During massive transfusion, the field oozes despite surgical control. Which tests help guide product replacement? (Select 3)",
+      "stem": "Diffuse oozing develops during massive transfusion. Which THREE tests or trends help guide product replacement? (Select 3)",
       "options": [
         "Conventional coagulation tests",
         "Viscoelastic testing such as TEG or ROTEM",
@@ -5507,7 +5507,7 @@
       "id": "PHA-220",
       "set": 1,
       "type": "single",
-      "stem": "Why should type and screen be verified during maintenance?",
+      "stem": "Why should blood type, screen, and product availability be reconfirmed when ongoing blood loss is possible?",
       "options": [
         "Blood products may be needed for ongoing loss",
         "It is required before every case",
@@ -5531,7 +5531,7 @@
       "id": "PHA-221",
       "set": 1,
       "type": "multi",
-      "stem": "Which balance should opioid dosing reflect during maintenance? (Select 3)",
+      "stem": "Which THREE patient factors should influence opioid dosing during maintenance? (Select 3)",
       "options": [
         "Age and tolerance",
         "OSA and respiratory risk",
@@ -5559,7 +5559,7 @@
       "id": "PHA-222",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives 6 L of crystalloid during a 4-hour bowel case and develops pulmonary edema. Another receives 500 mL and is oliguric with lactate rising. What principle was violated in both?",
+      "stem": "One patient develops pulmonary edema after excessive crystalloid while another is under-resuscitated with rising lactate. What principle links both errors?",
       "options": [
         "Avoid both hypovolemia and overload",
         "Maximize fluid to prevent any hypotension",
@@ -5583,7 +5583,7 @@
       "id": "PHA-223",
       "set": 1,
       "type": "single",
-      "stem": "Patient A has Hgb 7.5 with stable vitals and no ongoing loss. Patient B has Hgb 8.5 with HR 125, MAP 55, and active bleeding. Which is MORE likely to need transfusion?",
+      "stem": "Patient A has Hgb 7.5 and is stable; Patient B has Hgb 8.5 with active bleeding and MAP 55. Who is more likely to require transfusion?",
       "options": [
         "Patient B",
         "Patient A, since her number is lower",
@@ -5607,7 +5607,7 @@
       "id": "PHA-224",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives multiple units of blood and develops arrhythmias. Which electrolyte disturbance is MOST likely from citrate?",
+      "stem": "After multiple blood products, new arrhythmias develop. Which citrate-related electrolyte abnormality should be suspected?",
       "options": [
         "Hypocalcemia",
         "Hypercalcemia",
@@ -5631,7 +5631,7 @@
       "id": "PHA-225",
       "set": 1,
       "type": "single",
-      "stem": "After you turn off the sevoflurane at the end of a case, the patient gradually begins breathing, then opens her eyes. How is emergence best described?",
+      "stem": "After volatile anesthetic is discontinued, consciousness, ventilation, and airway control gradually return. How is emergence best characterized?",
       "options": [
         "A passive return from general anesthesia",
         "An active process requiring reversal of all drugs",
@@ -5655,7 +5655,7 @@
       "id": "PHA-226",
       "set": 1,
       "type": "multi",
-      "stem": "Which functions return during emergence? (Select 3)",
+      "stem": "Which THREE physiologic functions must return during successful emergence? (Select 3)",
       "options": [
         "Self-maintenance of airway patency",
         "Adequate spontaneous ventilation",
@@ -5683,7 +5683,7 @@
       "id": "PHA-227",
       "set": 1,
       "type": "single",
-      "stem": "During emergence research, anesthetic-induced unconsciousness is linked to disrupted signaling through a central relay station. Which structure relays arousal signals to the cortex?",
+      "stem": "Which central relay structure transmits arousal signals to the cortex during emergence?",
       "options": [
         "Thalamus",
         "Cerebellum",
@@ -5707,7 +5707,7 @@
       "id": "PHA-228",
       "set": 1,
       "type": "single",
-      "stem": "Researchers are studying drugs that might speed emergence. Which receptor activity is thought to help reverse loss of consciousness?",
+      "stem": "Which receptor activity has been associated with reversal of anesthetic-induced unconsciousness?",
       "options": [
         "Nicotinic receptor agonism",
         "Nicotinic receptor blockade",
@@ -5731,7 +5731,7 @@
       "id": "PHA-229",
       "set": 1,
       "type": "single",
-      "stem": "Which brain structures control the sleep-wake cycle and arousal involved in emergence?",
+      "stem": "Which brain regions are most involved in sleep-wake regulation and arousal during emergence?",
       "options": [
         "Hypothalamus and reticular formation",
         "Cerebellum and basal ganglia",
@@ -5755,7 +5755,7 @@
       "id": "PHA-230",
       "set": 1,
       "type": "single",
-      "stem": "You turn off sevoflurane and increase fresh gas flow at the end of a case. How is the agent MAINLY eliminated?",
+      "stem": "After sevoflurane is turned off and fresh-gas flow is increased, by what route is most agent eliminated?",
       "options": [
         "Exhaled through the lungs",
         "Metabolized by the liver",
@@ -5779,7 +5779,7 @@
       "id": "PHA-231",
       "set": 1,
       "type": "single",
-      "stem": "At the end of a case, quantitative monitoring shows a TOFR of 0.85. Can you document adequate recovery and extubate?",
+      "stem": "Quantitative monitoring shows TOFR 0.85 near extubation. How should this be interpreted?",
       "options": [
         "No; the TOFR must exceed 0.9",
         "Yes; a TOFR above 0.7 is adequate",
@@ -5803,7 +5803,7 @@
       "id": "PHA-232",
       "set": 1,
       "type": "single",
-      "stem": "When should sufentanil be stopped before the end of the case per the notes?",
+      "stem": "According to the lecture, when should sufentanil generally be stopped before the end of surgery?",
       "options": [
         "30–45 minutes before the end",
         "5–10 minutes before the end",
@@ -5827,7 +5827,7 @@
       "id": "PHA-233",
       "set": 1,
       "type": "single",
-      "stem": "A remifentanil infusion is running for a 3-hour laparoscopy. When should it be stopped, and what must accompany that?",
+      "stem": "Which opioid characteristic makes remifentanil useful when a rapid wake-up is needed?",
       "options": [
         "5–10 min before the end",
         "30–45 minutes before the end, with no other analgesia",
@@ -5851,7 +5851,7 @@
       "id": "PHA-234",
       "set": 1,
       "type": "single",
-      "stem": "How should infusions be titrated off during emergence?",
+      "stem": "A patient remains deeply sedated near the end of surgery after repeated midazolam doses. Which reversal agent may be appropriate?",
       "options": [
         "Based on context-sensitive half-time",
         "All stopped at the same time",
@@ -5875,7 +5875,7 @@
       "id": "PHA-235",
       "set": 1,
       "type": "single",
-      "stem": "Just before extubation, the patient is on 50% FiO2 with air. What gas should you deliver?",
+      "stem": "A patient has persistent respiratory depression after large opioid doses. Which reversal agent should be considered?",
       "options": [
         "100% oxygen",
         "50% oxygen with air",
@@ -5899,7 +5899,7 @@
       "id": "PHA-236",
       "set": 1,
       "type": "single",
-      "stem": "What is the ventilation goal during emergence?",
+      "stem": "Why should long-acting opioids be timed carefully before emergence?",
       "options": [
         "Resume adequate spontaneous ventilation",
         "Keep the patient apneic until extubation",
@@ -5923,7 +5923,7 @@
       "id": "PHA-237",
       "set": 1,
       "type": "single",
-      "stem": "Why reduce minute ventilation during emergence?",
+      "stem": "Which TWO strategies help reduce postoperative nausea and vomiting risk during emergence? (Select 2)",
       "options": [
         "To let CO2 rise and drive spontaneous breathing",
         "To increase oxygenation before extubation",
@@ -5947,7 +5947,7 @@
       "id": "PHA-238",
       "set": 1,
       "type": "single",
-      "stem": "What tradeoff does reducing minute ventilation create during emergence?",
+      "stem": "A patient with high PONV risk has received ondansetron and dexamethasone. Why is multimodal prophylaxis preferred?",
       "options": [
         "Slower clearance of inhaled anesthetics",
         "Faster clearance of inhaled anesthetics",
@@ -5971,7 +5971,7 @@
       "id": "PHA-239",
       "set": 1,
       "type": "single",
-      "stem": "Which ventilation mode can help during emergence per the notes?",
+      "stem": "Near closure, the patient remains deeply anesthetized despite minimal stimulation. What should happen to anesthetic depth?",
       "options": [
         "Pressure support",
         "Pressure control with high rate",
@@ -5995,7 +5995,7 @@
       "id": "PHA-240",
       "set": 1,
       "type": "multi",
-      "stem": "During closure of a spine case, the surgeon says, \"15 more minutes, then we turn supine.\" Which timing factors affect emergence planning? (Select 2)",
+      "stem": "Why is it unsafe to discontinue anesthetic depth too early while neuromuscular blockade is still profound?",
       "options": [
         "Surgical closure and positioning",
         "Pharmacokinetics and reversal timing",
@@ -6022,7 +6022,7 @@
       "id": "PHA-241",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a known difficult airway and a full stomach is ready for extubation. Which approach is safest?",
+      "stem": "What is the main goal of wake-up planning before the final dressing and transport phase?",
       "options": [
         "Awake extubation with intact airway reflexes",
         "Deep extubation to avoid coughing on the tube at emergence",
@@ -6046,7 +6046,7 @@
       "id": "PHA-242",
       "set": 1,
       "type": "single",
-      "stem": "A healthy 5-year-old has finished a tonsillectomy, and the plan is to remove the ETT before he wakes. Which population is this approach often used for?",
+      "stem": "A patient is fully reversed but still not following commands or maintaining the airway. Should extubation proceed?",
       "options": [
         "Pediatric patients",
         "Morbidly obese adults",
@@ -6070,7 +6070,7 @@
       "id": "PHA-243",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, the patient begins to swallow, grimace, and cough on the tube. Which cranial nerves restore these protective airway reflexes?",
+      "stem": "Which THREE respiratory criteria support readiness for extubation? (Select 3)",
       "options": [
         "V, VII, IX, and X",
         "II, III, IV, and VI",
@@ -6094,7 +6094,7 @@
       "id": "PHA-244",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, a patient's eyes begin to tear. Which cranial nerve mediates this sign of lightening anesthesia?",
+      "stem": "Which THREE neurologic or airway-protective findings support extubation readiness? (Select 3)",
       "options": [
         "CN VII (facial)",
         "CN V (trigeminal)",
@@ -6118,7 +6118,7 @@
       "id": "PHA-245",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, a patient begins to swallow and gag on the ETT. Which cranial nerves mediate these reflexes?",
+      "stem": "What does a sustained head lift demonstrate, and why is it insufficient by itself to prove full neuromuscular recovery?",
       "options": [
         "CN IX and X",
         "CN V and VII",
@@ -6142,7 +6142,7 @@
       "id": "PHA-246",
       "set": 1,
       "type": "single",
-      "stem": "Which cranial nerve provides the sensory input that detects a food bolus in the mouth, a reflex that returns during emergence?",
+      "stem": "A patient meets many clinical extubation criteria but TOFR is 0.82. What should be done?",
       "options": [
         "CN V (trigeminal)",
         "CN VII (facial)",
@@ -6166,7 +6166,7 @@
       "id": "PHA-247",
       "set": 1,
       "type": "single",
-      "stem": "What is the order of recovery during emergence?",
+      "stem": "Why should extubation be delayed if significant airway edema is suspected despite otherwise adequate recovery?",
       "options": [
         "Brainstem, cranial nerves, then cortex",
         "Cortex, cranial nerves, then brainstem",
@@ -6190,7 +6190,7 @@
       "id": "PHA-248",
       "set": 1,
       "type": "single",
-      "stem": "What BIS range reflects waking during emergence?",
+      "stem": "A patient with a known difficult airway is ready to emerge. What should the extubation plan include before removing the ETT?",
       "options": [
         "80–100",
         "40–60",
@@ -6214,7 +6214,7 @@
       "id": "PHA-249",
       "set": 1,
       "type": "single",
-      "stem": "What hemodynamic change is expected during emergence?",
+      "stem": "Before extubation after neck surgery, which finding most strongly raises concern for airway edema?",
       "options": [
         "Lower pressor needs; possible HTN and tachycardia",
         "Higher pressor needs with bradycardia",
@@ -6238,7 +6238,7 @@
       "id": "PHA-250",
       "set": 1,
       "type": "single",
-      "stem": "How does breathing change during emergence?",
+      "stem": "What is the primary purpose of a cuff-leak assessment before extubation in a high-risk airway?",
       "options": [
         "Irregular, then regular with improving tidal volumes",
         "Regular at first, then apneic",
