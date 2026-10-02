@@ -7449,7 +7449,7 @@
       "id": "MON-301",
       "set": 1,
       "type": "single",
-      "stem": "A cold, vasoconstricted patient has an intermittent SpO2 reading. What is the BEST action?",
+      "stem": "A cold, vasoconstricted patient has an intermittent SpO2 signal. What is the best first step to improve measurement reliability?",
       "options": [
         "Warm the site or move the probe to improve perfusion",
         "Assume hypoxemia and intubate immediately",
@@ -7473,7 +7473,7 @@
       "id": "MON-302",
       "set": 1,
       "type": "single",
-      "stem": "During sedation on 4 L O2, SpO2 stays 98% while ETCO2 climbs from 40 to 58. What is the BEST interpretation?",
+      "stem": "During sedation on supplemental oxygen, SpO2 remains 98% while ETCO2 rises from 40 to 58. What is the best interpretation?",
       "options": [
         "Hypoventilation masked by supplemental oxygen",
         "Normal ventilation with a sampling artifact",
@@ -7497,7 +7497,7 @@
       "id": "MON-303",
       "set": 1,
       "type": "single",
-      "stem": "The ETCO2 waveform disappears but the patient is talking during MAC. What is the MOST likely cause?",
+      "stem": "During MAC, the ETCO2 waveform disappears while the patient remains awake and talking. What is the most likely cause?",
       "options": [
         "Sampling line problem or mouth breathing",
         "Complete airway obstruction from the tongue during sedation",
@@ -7521,7 +7521,7 @@
       "id": "MON-304",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a sudden rise in PIP from 20 to 45 and wheeze, but plateau is unchanged. What is the BEST first action?",
+      "stem": "PIP suddenly rises from 20 to 45 cmH2O with wheezing, while plateau pressure is unchanged. What is the best first response?",
       "options": [
         "Check for kinks or secretions and treat bronchospasm",
         "Increase tidal volume to overcome resistance",
@@ -7545,7 +7545,7 @@
       "id": "MON-305",
       "set": 1,
       "type": "single",
-      "stem": "A patient's P–V loop shifts rightward after positioning in steep Trendelenburg. What is MOST likely?",
+      "stem": "After steep Trendelenburg, the pressure-volume loop shifts toward higher pressures for the same volume. What changed?",
       "options": [
         "Reduced compliance from abdominal contents on the diaphragm",
         "Increased compliance from gravity",
@@ -7569,7 +7569,7 @@
       "id": "MON-306",
       "set": 1,
       "type": "single",
-      "stem": "A P–V loop fails to close, with expiratory volume lower than inspiratory. What does this suggest?",
+      "stem": "A pressure-volume loop no longer closes because expiratory volume is less than inspiratory volume. What should be suspected?",
       "options": [
         "A leak in the circuit or cuff",
         "Bronchospasm with air trapping",
@@ -7593,7 +7593,7 @@
       "id": "MON-307",
       "set": 1,
       "type": "single",
-      "stem": "A flow–volume loop shows reduced expiratory flow and a scooped expiratory curve. What is the MOST likely condition?",
+      "stem": "A flow-volume loop develops a scooped expiratory limb with reduced expiratory flow. Which physiology does this represent?",
       "options": [
         "Obstructive airway disease or bronchospasm",
         "Restrictive disease from obesity",
@@ -7617,7 +7617,7 @@
       "id": "MON-308",
       "set": 1,
       "type": "single",
-      "stem": "A morbidly obese patient has high PIP and Pplat with small volumes on the loops. What is the MOST likely pattern?",
+      "stem": "A morbidly obese patient has high PIP and plateau pressures with small tidal volumes. Which mechanical pattern best fits?",
       "options": [
         "Restrictive physiology",
         "Obstructive physiology",
@@ -7641,7 +7641,7 @@
       "id": "MON-309",
       "set": 1,
       "type": "single",
-      "stem": "During a laparoscopic case, the capnogram looks restrictive and ETCO2 rises. Which is the BEST adjustment?",
+      "stem": "During laparoscopy, compliance falls and ETCO2 rises gradually. Which ventilatory adjustment is most appropriate?",
       "options": [
         "Increase minute ventilation and consider recruitment",
         "Decrease minute ventilation to reduce pressure",
@@ -7665,7 +7665,7 @@
       "id": "MON-310",
       "set": 1,
       "type": "single",
-      "stem": "A patient's ETCO2 suddenly drops to 0, but the ventilator shows normal PIP and exhaled Vt. What is MOST likely?",
+      "stem": "ETCO2 suddenly falls to zero, but ventilator PIP and exhaled tidal volume remain normal. What is most likely?",
       "options": [
         "Sampling line disconnection or occlusion",
         "Esophageal intubation",
@@ -7689,7 +7689,7 @@
       "id": "MON-311",
       "set": 1,
       "type": "single",
-      "stem": "A patient's ETCO2 waveform shows a gradually sloping downstroke and ETCO2 falls. PIP is lower than before. What is MOST likely?",
+      "stem": "A capnogram becomes triangular with a sloping downstroke while ETCO2 and PIP both fall. What should be suspected?",
       "options": [
         "A circuit or cuff leak",
         "Bronchospasm with obstruction",
@@ -7713,7 +7713,7 @@
       "id": "MON-312",
       "set": 1,
       "type": "single",
-      "stem": "During sedation, the capnogram is flat, the patient is apneic, and SpO2 is 99%. What is the FIRST step?",
+      "stem": "During sedation, the capnogram is flat and the patient is apneic despite SpO2 99%. What is the first action?",
       "options": [
         "Open the airway and ventilate",
         "Increase oxygen flow and stimulate the patient",
@@ -7737,7 +7737,7 @@
       "id": "MON-313",
       "set": 1,
       "type": "single",
-      "stem": "After bicarbonate administration, ETCO2 transiently rises. What is the BEST interpretation?",
+      "stem": "ETCO2 rises briefly after sodium bicarbonate administration. What best explains this change?",
       "options": [
         "Expected CO2 release from bicarbonate",
         "Malignant hyperthermia onset",
@@ -7761,7 +7761,7 @@
       "id": "MON-314",
       "set": 1,
       "type": "single",
-      "stem": "A patient's ETCO2 is 25 with a PaCO2 of 55 during one-lung ventilation. What does this reflect?",
+      "stem": "During one-lung ventilation, ETCO2 is 25 while PaCO2 is 55. What mechanism explains the widened gradient?",
       "options": [
         "Increased dead space and V/Q mismatch",
         "Normal gradient during OLV",
@@ -7785,7 +7785,7 @@
       "id": "MON-315",
       "set": 1,
       "type": "single",
-      "stem": "During an MRI under GA, the capnogram trace is delayed and ETCO2 is low. What is a likely cause?",
+      "stem": "During MRI under GA, capnography is delayed and ETCO2 reads low. Which technical factor is most likely responsible?",
       "options": [
         "Long sampling tubing and dilution",
         "Increased CO2 production from MRI heat",
@@ -7809,7 +7809,7 @@
       "id": "MON-316",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a rising baseline has an absorbent that is purple. What is the BEST action?",
+      "stem": "The capnogram baseline rises and the CO2 absorbent has changed color. What is the best corrective action?",
       "options": [
         "Change the CO2 absorbent",
         "Increase volatile concentration",
@@ -7833,7 +7833,7 @@
       "id": "MON-317",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 rises from 38 to 62 despite increased minute ventilation. HR is 130 and temperature 38.6 °C. What is MOST likely?",
+      "stem": "ETCO2 rises from 38 to 62 despite increased minute ventilation, with tachycardia and rising temperature. What should be suspected?",
       "options": [
         "Malignant hyperthermia with increased CO2 production",
         "Rebreathing from exhausted absorbent",
@@ -7857,7 +7857,7 @@
       "id": "MON-318",
       "set": 1,
       "type": "single",
-      "stem": "During a case, the inspired O2 analyzer alarms at 18%. What is the FIRST action?",
+      "stem": "The inspired-O2 analyzer alarms at 18%. What is the first priority?",
       "options": [
         "Switch to 100% O2 or the backup cylinder and investigate",
         "Check the pipeline pressure gauge first",
@@ -7881,7 +7881,7 @@
       "id": "MON-319",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, which alarm would MOST likely detect an esophageal intubation first?",
+      "stem": "After intubation, which alarm is most likely to detect esophageal placement before desaturation occurs?",
       "options": [
         "Low ETCO2",
         "Low SpO2",
@@ -7905,7 +7905,7 @@
       "id": "MON-320",
       "set": 1,
       "type": "single",
-      "stem": "During a case, PIP rises and ETCO2 shows a shark-fin, but breath sounds are equal. What is the MOST likely cause?",
+      "stem": "PIP rises and the capnogram becomes shark-fin shaped, but breath sounds remain bilateral. What is the most likely cause?",
       "options": [
         "Bronchospasm",
         "Pneumothorax",
@@ -7929,7 +7929,7 @@
       "id": "MON-321",
       "set": 1,
       "type": "single",
-      "stem": "A patient's PIP rises suddenly and breath sounds are absent on one side. What is MOST likely?",
+      "stem": "PIP rises abruptly and breath sounds disappear on one side. Which differential should move to the top?",
       "options": [
         "Pneumothorax or mainstem intubation",
         "Bronchospasm with bilateral wheeze",
@@ -7953,7 +7953,7 @@
       "id": "MON-322",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a low PIP alarm and low exhaled Vt but ETCO2 remains normal. What is MOST likely?",
+      "stem": "Low PIP and low exhaled tidal volume occur, but ETCO2 remains present. What is the most likely problem?",
       "options": [
         "A leak that is still allowing some ventilation",
         "Complete circuit disconnection",
@@ -7977,7 +7977,7 @@
       "id": "MON-323",
       "set": 1,
       "type": "single",
-      "stem": "During GA, the SpO2 alarm is silenced repeatedly because of motion artifact. What is the BEST approach?",
+      "stem": "Motion artifact repeatedly triggers the SpO2 alarm during GA. What is the best response?",
       "options": [
         "Fix the probe or site and keep the alarm active",
         "Widen the SpO2 limits for the rest of the case",
@@ -8001,7 +8001,7 @@
       "id": "MON-324",
       "set": 1,
       "type": "single",
-      "stem": "A provider lowers the SpO2 alarm to 80% to reduce nuisance alarms. Why is this a problem?",
+      "stem": "The low-SpO2 alarm is reset to 80% to reduce nuisance alarms. Why is this unsafe?",
       "options": [
         "Alarm limits must still meet practice standards",
         "The alarm will become too sensitive",
@@ -8025,7 +8025,7 @@
       "id": "MON-325",
       "set": 1,
       "type": "single",
-      "stem": "In the closed claims data, what was identified in every hypoventilation claim?",
+      "stem": "What monitoring failure was present in every hypoventilation claim reviewed in the lecture?",
       "options": [
         "Failure to monitor ventilation",
         "Failure to monitor temperature",
@@ -8049,7 +8049,7 @@
       "id": "MON-326",
       "set": 1,
       "type": "single",
-      "stem": "A capnogram shows a sudden sharp upward deflection before inspiration. What is this called?",
+      "stem": "A capnogram shows a sharp upward deflection just before inspiration. Which named pattern is this?",
       "options": [
         "Pigtail capnogram",
         "Curare cleft",
@@ -8073,7 +8073,7 @@
       "id": "MON-327",
       "set": 1,
       "type": "single",
-      "stem": "During a case, all monitors lose power. What equipment check would have mitigated this?",
+      "stem": "All electronic monitors lose power unexpectedly. Which setup step would have best reduced this vulnerability?",
       "options": [
         "Verifying spare batteries and battery-powered equipment",
         "Checking the vaporizer fill level",
@@ -8097,7 +8097,7 @@
       "id": "MON-328",
       "set": 1,
       "type": "single",
-      "stem": "A patient under GA has a high PEEP alarm. Which alarm category is this?",
+      "stem": "A high-PEEP alarm activates. Which broad ventilator-alarm category does this belong to?",
       "options": [
         "Ventilator pressure alarms",
         "Disconnect alarms",
@@ -8121,7 +8121,7 @@
       "id": "MON-329",
       "set": 1,
       "type": "single",
-      "stem": "A patient with emphysema has high compliance on the P–V loop. What does this mean?",
+      "stem": "Emphysema produces increased compliance on the pressure-volume loop. What does that mean mechanically?",
       "options": [
         "Less pressure is needed for the same volume",
         "More pressure is needed for the same volume",
@@ -8145,7 +8145,7 @@
       "id": "MON-330",
       "set": 1,
       "type": "single",
-      "stem": "What is the BEST way to confirm tube patency when PIP rises?",
+      "stem": "PIP rises suddenly. What is the quickest bedside test for ETT patency?",
       "options": [
         "Pass a suction catheter through the ETT",
         "Increase FiO2 and wait",
@@ -8169,7 +8169,7 @@
       "id": "MON-331",
       "set": 1,
       "type": "single",
-      "stem": "During a case, the capnogram shows a rising baseline and the absorbent is not exhausted. What else should be checked?",
+      "stem": "Inspired CO2 remains elevated despite fresh absorbent. Which circuit components should be checked next?",
       "options": [
         "Unidirectional valves and fresh gas flow",
         "The pulse oximeter probe",
@@ -8193,7 +8193,7 @@
       "id": "MON-332",
       "set": 1,
       "type": "single",
-      "stem": "During a case, ETCO2 is 20 and the waveform looks normal. ABG PaCO2 is 40. What is the MOST likely cause?",
+      "stem": "ETCO2 is 20 while PaCO2 is 40 with a normal waveform. What mechanism best explains the large gradient?",
       "options": [
         "Increased dead space or low cardiac output",
         "Hypoventilation from residual sedation",
@@ -8217,7 +8217,7 @@
       "id": "MON-333",
       "set": 1,
       "type": "single",
-      "stem": "A patient under GA has a sudden drop in ETCO2 to 10 with hypotension and bradycardia. What is MOST concerning?",
+      "stem": "ETCO2 drops abruptly to 10 with hypotension and bradycardia. Which life-threatening cause is most concerning?",
       "options": [
         "Impending cardiac arrest or massive embolism",
         "Circuit disconnection with stable perfusion",
@@ -8241,7 +8241,7 @@
       "id": "MON-334",
       "set": 1,
       "type": "single",
-      "stem": "During GA, capnography shows a normal waveform but ETCO2 is gradually rising. MV is unchanged. What should you consider?",
+      "stem": "ETCO2 rises gradually with preserved waveform shape and unchanged minute ventilation. What should be considered first?",
       "options": [
         "Hypoventilation or increased CO2 production",
         "Esophageal intubation",
@@ -8265,7 +8265,7 @@
       "id": "MON-335",
       "set": 1,
       "type": "single",
-      "stem": "A capnogram shows an elevated baseline right after replacing the absorbent. What is MOST likely?",
+      "stem": "A patient develops a progressive shark-fin capnogram after wheezing begins. Which process is worsening?",
       "options": [
         "Calibration error or valve malfunction",
         "Absorbent still exhausted after an incomplete canister change",
@@ -8289,7 +8289,7 @@
       "id": "MON-336",
       "set": 1,
       "type": "single",
-      "stem": "A patient under GA has low exhaled volume, high PIP, and shark-fin capnogram. What is MOST likely?",
+      "stem": "A sloped capnogram appears after prone positioning, but plateau pressure remains unchanged. Which mechanism is most likely?",
       "options": [
         "Bronchospasm with obstruction",
         "Circuit leak",
@@ -8313,7 +8313,7 @@
       "id": "MON-337",
       "set": 1,
       "type": "single",
-      "stem": "During GA, ETCO2 is 30, SpO2 is 99%, and BP drops suddenly. What is the BEST next step?",
+      "stem": "A capnogram baseline stays above zero despite adequate fresh-gas flow. What should be checked first?",
       "options": [
         "Evaluate perfusion and rule out embolism or low CO",
         "Assume equipment failure and replace sampling line",
@@ -8337,7 +8337,7 @@
       "id": "MON-338",
       "set": 1,
       "type": "single",
-      "stem": "During GA, the water trap fills with condensation. What is the likely effect?",
+      "stem": "A sudden fall in ETCO2 occurs during cemented arthroplasty with preserved waveform. What is the most likely physiologic cause?",
       "options": [
         "Sampling line occlusion and loss of ETCO2 waveform",
         "Falsely high SpO2 from moisture on the probe window",
@@ -8361,7 +8361,7 @@
       "id": "MON-339",
       "set": 1,
       "type": "single",
-      "stem": "During GA, the SpO2 waveform becomes flat after placing a BP cuff on the same arm. What is the MOST likely cause?",
+      "stem": "A patient has low ETCO2 and low SpO2 after head rotation. Which airway problem should be considered?",
       "options": [
         "Cuff inflation interrupting perfusion to the probe",
         "True hypoxemia from cuff placement",
@@ -8385,7 +8385,7 @@
       "id": "MON-340",
       "set": 1,
       "type": "single",
-      "stem": "During GA, SpO2 drops slowly and ETCO2 is normal. The FiO2 is 0.3. What is the FIRST action?",
+      "stem": "SpO2 falls while FiO2 and ETCO2 remain unchanged. Which category of problem becomes more likely?",
       "options": [
         "Increase FiO2 and assess for shunt or atelectasis",
         "Increase minute ventilation to lower ETCO2",
@@ -8409,7 +8409,7 @@
       "id": "MON-341",
       "set": 1,
       "type": "single",
-      "stem": "During GA, ETCO2 is 50 and rising, and the capnogram shows a curare cleft. What is the MOST likely cause?",
+      "stem": "SpO2 falls abruptly after electrocautery begins, but the pleth waveform is distorted. What is the best first step?",
       "options": [
         "Spontaneous effort with poor ventilation",
         "Bronchospasm with shark-fin",
@@ -8433,7 +8433,7 @@
       "id": "MON-342",
       "set": 1,
       "type": "single",
-      "stem": "During GA, a patient develops a sudden fall in ETCO2 after CO2 insufflation and hypotension. What should you consider?",
+      "stem": "Pulse oximetry becomes unreliable in a severely hypothermic, vasoconstricted patient. What technical limitation is responsible?",
       "options": [
         "CO2 embolism",
         "Rebreathing from absorbent",
@@ -8457,7 +8457,7 @@
       "id": "MON-343",
       "set": 1,
       "type": "single",
-      "stem": "The arterial line suddenly reads 70/40 while NIBP on the other arm reads 128/74, HR and ETCO2 unchanged. The bed was just raised. What is the MOST likely cause?",
+      "stem": "A septic patient has SpO2 100% but worsening lactate. What important limitation of pulse oximetry does this show?",
       "options": [
         "The transducer was not moved with the bed and is now above the RA",
         "True hypotension from anesthetic vasodilation after positioning",
@@ -8481,7 +8481,7 @@
       "id": "MON-344",
       "set": 1,
       "type": "single",
-      "stem": "An arterial trace shows SBP 190 with a sharp overshoot and ringing, but NIBP reads 142/78 and MAP values match. What is MOST likely?",
+      "stem": "A smoke-inhalation patient has a normal SpO2 despite neurologic symptoms. Which measurement is needed?",
       "options": [
         "Underdamping exaggerating the systolic peak",
         "Overdamping blunting the systolic peak",
@@ -8505,7 +8505,7 @@
       "id": "MON-345",
       "set": 1,
       "type": "single",
-      "stem": "An arterial trace looks rounded with no dicrotic notch and a narrow pulse pressure. NIBP systolic is higher. What is the BEST first step?",
+      "stem": "After benzocaine spray, SpO2 stabilizes near 85% despite oxygen. What dyshemoglobinemia should be suspected?",
       "options": [
         "Check for air, clot, or kink causing overdamping",
         "Treat hypotension with a vasopressor bolus",
@@ -8529,7 +8529,7 @@
       "id": "MON-346",
       "set": 1,
       "type": "single",
-      "stem": "A patient with severe PVD has right-arm BP 150/80 and left-arm BP 110/60. Which value should guide management?",
+      "stem": "A patient receives methylene blue and SpO2 drops transiently. How should this be interpreted?",
       "options": [
         "The higher value, 150/80",
         "The lower value, 110/60",
@@ -8553,7 +8553,7 @@
       "id": "MON-347",
       "set": 1,
       "type": "single",
-      "stem": "During vasodilator infusion, radial SBP reads much lower than femoral SBP. What explains this?",
+      "stem": "A patient with severe anemia has SpO2 100%. Why can tissue oxygen delivery still be inadequate?",
       "options": [
         "Changes in hand vascular resistance with vasodilators",
         "Wave reflection increasing radial SBP above the aorta",
@@ -8577,7 +8577,7 @@
       "id": "MON-348",
       "set": 1,
       "type": "single",
-      "stem": "A neonate has an umbilical arterial line. Which complication should you watch for?",
+      "stem": "A right shift of the oxyhemoglobin curve occurs. What happens to hemoglobin's oxygen affinity and tissue unloading?",
       "options": [
         "Aortic thrombosis",
         "Pneumothorax",
@@ -8601,7 +8601,7 @@
       "id": "MON-349",
       "set": 1,
       "type": "single",
-      "stem": "A neonate's arterial flush runs at 5 mL/hr. Why does this matter?",
+      "stem": "A left shift of the oxyhemoglobin curve occurs. What happens to hemoglobin's oxygen affinity?",
       "options": [
         "It can be a significant fluid volume for a neonate",
         "It will cause a dilutional anemia",
@@ -8625,7 +8625,7 @@
       "id": "MON-350",
       "set": 1,
       "type": "single",
-      "stem": "Four patients are scheduled for surgery. Which situation MOST warrants an arterial line?",
+      "stem": "A patient with PaO2 near 60 mmHg begins to desaturate. Why can SpO2 fall rapidly from this point?",
       "options": [
         "A vasoactive infusion case",
         "A healthy patient for cataract surgery",
