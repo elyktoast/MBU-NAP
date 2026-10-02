@@ -11002,12 +11002,12 @@
       "id": "MISC-451",
       "set": 1,
       "type": "single",
-      "stem": "Which workstation zone requires glove change or hand hygiene after contact?",
+      "stem": "After touching a contaminated red workstation zone, what is required before returning to clean tasks?",
       "options": [
-        "Red (dirty) zones",
-        "Green (clean) zones",
-        "Both zones equally",
-        "Neither zone"
+        "Glove change or hand hygiene",
+        "No action if the next surface is green",
+        "Only a gown change",
+        "Hand hygiene only at case end"
       ],
       "answer": [
         0
@@ -11026,7 +11026,7 @@
       "id": "MISC-452",
       "set": 1,
       "type": "single",
-      "stem": "You touch the clean drug drawer and then a clean syringe. No hand hygiene is required between them. Which zone contact is this?",
+      "stem": "A CRNA moves from a clean drug drawer to a clean syringe without contacting a dirty surface. Which zone transition is this?",
       "options": [
         "Green to green",
         "Green to red",
@@ -11050,12 +11050,12 @@
       "id": "MISC-453",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA draws up drugs from vials and injects into an IV port. What does APSF recommend for vascular care?",
+      "stem": "When drawing medications and accessing IV ports, which vascular-care practice best reduces microbial transmission?",
       "options": [
-        "Disinfect vials and injection ports",
-        "Reuse syringes between patients",
-        "Disinfect ports after each injection",
-        "Disinfect after injection"
+        "Disinfect vial tops and injection ports before access",
+        "Reuse syringes if the needle is changed",
+        "Disinfect ports only after injection",
+        "Rely on gloves instead of port disinfection"
       ],
       "answer": [
         0
@@ -11074,12 +11074,12 @@
       "id": "MISC-454",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a laparoscopic appendectomy on March 1 without implants and develops a wound infection on March 28. Does this count as an SSI?",
+      "stem": "A wound infection appears 27 days after laparoscopic appendectomy without an implant. Does the timing meet the SSI surveillance definition?",
       "options": [
-        "Yes, it falls within the 30-day window",
-        "No, it is outside the 30-day window",
-        "No, appendectomies are excluded",
-        "Yes, if an implant was placed"
+        "Yes, because it is within 30 days",
+        "No, because it is beyond 7 days",
+        "No, appendectomy infections are excluded",
+        "Only if an implant was placed"
       ],
       "answer": [
         0
@@ -11098,12 +11098,12 @@
       "id": "MISC-455",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a total knee replacement on January 1 and develops a deep joint infection on March 20. Does this count as an SSI?",
+      "stem": "A deep joint infection develops 78 days after total knee replacement. Does it meet the implant-associated SSI surveillance window?",
       "options": [
-        "Yes, within the 90-day window for implants",
-        "No, it is outside the 30-day window",
-        "No, joint infections are excluded",
-        "Yes, if it occurs within 7 days"
+        "Yes, because it is within 90 days",
+        "No, all SSIs end at 30 days",
+        "No, prosthetic-joint infections are excluded",
+        "Only infections within 7 days count"
       ],
       "answer": [
         0
@@ -11122,12 +11122,12 @@
       "id": "MISC-456",
       "set": 1,
       "type": "single",
-      "stem": "For a healthy colectomy patient, which oxygenation strategy has some evidence for reducing SSI?",
+      "stem": "In selected healthy colectomy patients, which intraoperative oxygen strategy has some evidence for reducing SSI risk?",
       "options": [
         "FiO2 above 0.8",
         "FiO2 below 0.3",
         "Room air throughout",
-        "FiO2 of 0.4"
+        "FiO2 exactly 0.4"
       ],
       "answer": [
         0
@@ -11146,12 +11146,12 @@
       "id": "MISC-457",
       "set": 1,
       "type": "single",
-      "stem": "At the end of a colectomy, the patient's temperature is 96.4 °F. Which SSI prevention target was missed?",
+      "stem": "A colectomy patient reaches the end of surgery at 96.4°F. Which SSI-prevention target was not met?",
       "options": [
-        "Normothermia above 97 °F",
+        "Normothermia above about 97°F",
         "Glucose below 180 mg/dL",
-        "FiO2 above 0.8",
-        "Antibiotics within 60 minutes"
+        "High inspired oxygen",
+        "Antibiotic timing"
       ],
       "answer": [
         0
@@ -11170,7 +11170,7 @@
       "id": "MISC-458",
       "set": 1,
       "type": "single",
-      "stem": "A diabetic patient's glucose is 245 mg/dL during a hip replacement. Which SSI prevention target applies?",
+      "stem": "A diabetic patient's intraoperative glucose is 245 mg/dL. Which SSI-prevention target applies?",
       "options": [
         "Keep glucose below 180 mg/dL",
         "Keep glucose above 200 mg/dL",
@@ -11194,11 +11194,11 @@
       "id": "MISC-459",
       "set": 1,
       "type": "single",
-      "stem": "Cefazolin is given at 0615 for an 0800 incision. Which SSI prevention target was missed?",
+      "stem": "Cefazolin is given 105 minutes before incision. Which prophylaxis target was missed?",
       "options": [
-        "Most antibiotics within 60 minutes before incision",
-        "Glucose below 180 mg/dL",
+        "Most antibiotics should be administered within 60 minutes before incision",
         "Normothermia",
+        "Glycemic control",
         "Normovolemia"
       ],
       "answer": [
@@ -11218,12 +11218,12 @@
       "id": "MISC-460",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a respiratory infection is placed on 60 L/min high-flow nasal oxygen. How is this classified?",
+      "stem": "A patient with respiratory infection receives high-flow nasal oxygen at 60 L/min. How is this classified for infection-control purposes?",
       "options": [
-        "An aerosol-generating procedure",
-        "A non-AGP",
-        "A contact precaution procedure",
-        "A droplet procedure"
+        "Aerosol-generating procedure",
+        "Non-AGP",
+        "Contact-only procedure",
+        "Droplet-only procedure"
       ],
       "answer": [
         0
@@ -11242,7 +11242,7 @@
       "id": "MISC-461",
       "set": 1,
       "type": "single",
-      "stem": "During a respiratory virus surge, which GI procedure is an AGP?",
+      "stem": "Which gastrointestinal procedure is considered aerosol-generating?",
       "options": [
         "Upper GI endoscopy",
         "Colonoscopy",
@@ -11266,12 +11266,12 @@
       "id": "MISC-462",
       "set": 1,
       "type": "single",
-      "stem": "Which AGP is associated with airway management at the end of surgery?",
+      "stem": "Which airway-management step at the end of surgery is treated as aerosol-generating?",
       "options": [
         "Extubation",
-        "Arterial line removal",
-        "Foley catheter removal",
-        "IV removal"
+        "Arterial-line removal",
+        "Urinary-catheter removal",
+        "Peripheral-IV removal"
       ],
       "answer": [
         0
@@ -11290,12 +11290,12 @@
       "id": "MISC-463",
       "set": 1,
       "type": "single",
-      "stem": "Which PPE element protects the eyes during AGPs?",
+      "stem": "Which PPE component specifically protects the eyes during an aerosol-generating procedure?",
       "options": [
         "Goggles or face shield",
         "Surgical cap",
         "Shoe covers",
-        "Sterile gloves, changed after the procedure"
+        "Sterile gloves alone"
       ],
       "answer": [
         0
@@ -11314,12 +11314,12 @@
       "id": "MISC-464",
       "set": 1,
       "type": "single",
-      "stem": "You are about to intubate a patient with a suspected respiratory infection. Which mask types are acceptable for this AGP?",
+      "stem": "Before intubating a patient with suspected respiratory infection, which respiratory protection best matches aerosol precautions?",
       "options": [
-        "A surgical mask or an N95",
-        "A cloth mask if fit-tested",
-        "A procedure mask without a fit check",
-        "An oxygen mask"
+        "An appropriately fitted respirator such as an N95",
+        "A cloth mask",
+        "An oxygen mask",
+        "No mask if eye protection is used"
       ],
       "answer": [
         0
@@ -11338,7 +11338,7 @@
       "id": "MISC-465",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA notices subtle tachycardia and rising ETCO2 and suspects MH before others do. Which non-technical skill is this?",
+      "stem": "A CRNA notices subtle tachycardia and rising ETCO2 and recognizes possible MH before others do. Which nontechnical skill is most directly demonstrated?",
       "options": [
         "Situational awareness",
         "Leadership",
@@ -11362,7 +11362,7 @@
       "id": "MISC-466",
       "set": 1,
       "type": "single",
-      "stem": "Which NTS is MOST related to making timely choices during crises?",
+      "stem": "Which nontechnical skill is most directly involved in choosing and committing to timely actions during a crisis?",
       "options": [
         "Decision making",
         "Teamwork",
@@ -11386,7 +11386,7 @@
       "id": "MISC-467",
       "set": 1,
       "type": "single",
-      "stem": "During an MH crisis, the CRNA says, \"I need help in OR 4 now.\" Which CRM principle is this?",
+      "stem": "During MH, the CRNA states clearly, 'I need help in OR 4 now.' Which CRM principle is most directly demonstrated?",
       "options": [
         "Communication",
         "Evaluation",
@@ -11410,7 +11410,7 @@
       "id": "MISC-468",
       "set": 1,
       "type": "single",
-      "stem": "After a crisis, the team reviews what went wrong and how to avoid it next time. Which CRM principle is this?",
+      "stem": "After a crisis, the team analyzes what happened and how to improve next time. Which CRM principle is this?",
       "options": [
         "Evaluation",
         "Communication",
@@ -11434,11 +11434,11 @@
       "id": "MISC-469",
       "set": 1,
       "type": "single",
-      "stem": "During a hemorrhage, the CRNA assigns one person to blood, one to lines, and one to labs. Which CRM principle is this?",
+      "stem": "During hemorrhage, the leader assigns blood products, vascular access, and laboratory work to different people. Which CRM principle is most directly demonstrated?",
       "options": [
-        "Dynamic prioritization",
-        "Communication",
-        "Awareness",
+        "Dynamic prioritization and workload distribution",
+        "Communication alone",
+        "Awareness alone",
         "Evaluation"
       ],
       "answer": [
@@ -11458,9 +11458,9 @@
       "id": "MISC-470",
       "set": 1,
       "type": "single",
-      "stem": "Before a liver resection, the CRNA plans for massive transfusion and has blood in the room. Which CRM principle is this?",
+      "stem": "Before liver resection, the CRNA anticipates massive blood loss and has blood immediately available. Which CRM principle is most directly demonstrated?",
       "options": [
-        "Awareness",
+        "Awareness through anticipation and planning",
         "Evaluation",
         "Communication",
         "Behavioral flexibility"
@@ -11482,7 +11482,7 @@
       "id": "MISC-471",
       "set": 1,
       "type": "single",
-      "stem": "During a code, the CRNA takes the role of medication manager because that is what the team needs. Which CRM principle is this?",
+      "stem": "During a code, a CRNA moves into the medication-manager role because that is where the team most needs help. Which CRM principle is demonstrated?",
       "options": [
         "Behavioral flexibility",
         "Communication",
@@ -11506,10 +11506,10 @@
       "id": "MISC-472",
       "set": 1,
       "type": "single",
-      "stem": "During hypotension, a CRNA keeps treating \"propofol vasodilation\" despite new unilateral breath sounds. Which fixation error is this?",
+      "stem": "During hypotension, a CRNA keeps treating presumed propofol vasodilation despite new unilateral breath sounds. Which fixation subtype is this?",
       "options": [
-        "Cognitive tunnel vision (\"this and only this\")",
-        "Artifact error (\"everything is okay\")",
+        "Cognitive tunnel vision: 'this and only this'",
+        "Artifact error",
         "Avoidance error",
         "Confirmation bias alone"
       ],
@@ -11530,12 +11530,12 @@
       "id": "MISC-473",
       "set": 1,
       "type": "single",
-      "stem": "SpO2 falls to 82%, and the CRNA assumes the probe is faulty without checking the patient. Which fixation error is this?",
+      "stem": "SpO2 falls to 82%, and the CRNA assumes the probe is faulty without checking the patient. Which fixation subtype is this?",
       "options": [
-        "Artifact error (\"everything is okay\")",
+        "Artifact error: 'everything is okay'",
         "Cognitive tunnel vision",
         "Avoidance error",
-        "Anchoring bias alone"
+        "Anchoring alone"
       ],
       "answer": [
         0
@@ -11554,7 +11554,7 @@
       "id": "MISC-474",
       "set": 1,
       "type": "single",
-      "stem": "During rising ETCO2 and tachycardia, the CRNA dismisses MH because \"it's too rare.\" Which fixation error is this?",
+      "stem": "ETCO2 and heart rate rise, but MH is dismissed because 'it is too rare.' Which fixation subtype is this?",
       "options": [
         "Avoidance error",
         "Artifact error",
@@ -11578,12 +11578,12 @@
       "id": "MISC-475",
       "set": 1,
       "type": "single",
-      "stem": "During LAST, a CRNA uses a laminated card to guide each step. What is the main purpose of this tool?",
+      "stem": "During LAST, a laminated stepwise card is used. What is the primary purpose of this tool?",
       "options": [
-        "Guiding providers through high-stress events",
-        "Replacing clinical judgment",
-        "Documenting the event",
-        "Training students"
+        "Guide providers through a rare high-stress event and reduce omissions",
+        "Replace clinical judgment",
+        "Document the event",
+        "Train students during the crisis"
       ],
       "answer": [
         0
@@ -11602,12 +11602,12 @@
       "id": "MISC-476",
       "set": 1,
       "type": "single",
-      "stem": "A department keeps a binder of crisis checklists for MH, LAST, and hemorrhage. Which resource is this?",
+      "stem": "A department keeps a set of crisis checklists for MH, LAST, hemorrhage, and other emergencies. Which resource best fits this description?",
       "options": [
-        "The Stanford Emergency Manual",
-        "The WHO Surgical Safety Checklist",
-        "The ASA difficult airway algorithm",
-        "The ACLS provider manual"
+        "Stanford Emergency Manual",
+        "WHO Surgical Safety Checklist",
+        "ASA difficult-airway algorithm",
+        "ACLS provider manual"
       ],
       "answer": [
         0
@@ -11626,12 +11626,12 @@
       "id": "MISC-477",
       "set": 1,
       "type": "single",
-      "stem": "Before incision, the team confirms patient, site, and procedure using a standard form. Which aid is this?",
+      "stem": "Before incision, the team confirms patient identity, procedure, and site using a standard checklist. Which cognitive aid is this?",
       "options": [
-        "The WHO Surgical Safety Checklist",
-        "The Stanford Emergency Manual",
-        "The MH cognitive aid",
-        "The ACLS algorithm"
+        "WHO Surgical Safety Checklist",
+        "Stanford Emergency Manual",
+        "MH checklist",
+        "ACLS algorithm"
       ],
       "answer": [
         0
@@ -11650,11 +11650,11 @@
       "id": "MISC-478",
       "set": 1,
       "type": "single",
-      "stem": "A department reviews outcomes after adopting crisis checklists. What benefit should it find?",
+      "stem": "After adopting crisis checklists, which outcome should a department expect if the aids are used effectively?",
       "options": [
-        "Fewer errors and more standardized crisis responses",
+        "Fewer omissions and more standardized crisis responses",
         "More errors",
-        "Slower responses",
+        "Slower response by design",
         "Less team communication"
       ],
       "answer": [
@@ -11674,12 +11674,12 @@
       "id": "MISC-479",
       "set": 1,
       "type": "single",
-      "stem": "During a crisis, a CRNA says, \"Let's check the emergency manual for anaphylaxis.\" Which CRM element is this?",
+      "stem": "During anaphylaxis, a team member is asked to read the emergency manual aloud. Which CRM element is most directly demonstrated?",
       "options": [
-        "Communication with cognitive aids",
+        "Communication using a cognitive aid",
         "Evaluation",
         "Awareness",
-        "Behavioral flexibility, by changing roles"
+        "Behavioral flexibility"
       ],
       "answer": [
         0
@@ -11698,12 +11698,12 @@
       "id": "MISC-480",
       "set": 1,
       "type": "single",
-      "stem": "A team ignores a new ETCO2 drop because they are focused on hypotension. What is the risk?",
+      "stem": "A team focuses so narrowly on hypotension that it ignores a new ETCO2 drop. What is the main risk?",
       "options": [
-        "Missing an alternative cause due to fixation",
-        "Improved focus on the correct diagnosis",
+        "Missing an alternative diagnosis because of fixation",
+        "Improved diagnostic focus",
         "Reduced need for cognitive aids",
-        "Faster diagnosis with fewer resources"
+        "Faster diagnosis"
       ],
       "answer": [
         0
@@ -11722,12 +11722,12 @@
       "id": "MISC-481",
       "set": 1,
       "type": "single",
-      "stem": "A patient is upset after an unexpected complication caused by a medication error and wants answers. What is required?",
+      "stem": "A medication error causes an unexpected complication, and the patient asks what happened. What professional obligation applies?",
       "options": [
-        "Disclosure of the error",
-        "Avoiding discussion to reduce liability",
-        "Telling the family but not the patient",
-        "Waiting for legal advice before any discussion"
+        "Disclose the error honestly according to policy",
+        "Avoid discussion to reduce liability",
+        "Tell only the family",
+        "Delay all discussion until legal review"
       ],
       "answer": [
         0
@@ -11746,7 +11746,7 @@
       "id": "MISC-482",
       "set": 1,
       "type": "multi",
-      "stem": "A new policy reduces surgical infections and saves costs. Which NHQDR areas improve? (Select 2)",
+      "stem": "A new infection-prevention policy lowers surgical infections and reduces cost. Which two NHQDR core areas are most directly improved? (Select 2)",
       "options": [
         "Patient safety",
         "Care affordability",
@@ -11773,12 +11773,12 @@
       "id": "MISC-483",
       "set": 1,
       "type": "single",
-      "stem": "A patient skips a follow-up appointment because of out-of-pocket costs. Which 2023 NHQDR finding relates to this?",
+      "stem": "A patient skips follow-up because out-of-pocket costs are too high. Which cited NHQDR trend does this illustrate?",
       "options": [
-        "More Americans report higher healthcare cost burden",
-        "Fewer Americans report cost burden",
-        "Healthcare costs have fallen",
-        "Cost burden is unchanged"
+        "A high and increasing healthcare cost burden for many Americans",
+        "A declining cost burden",
+        "Falling healthcare costs",
+        "No relationship between costs and access"
       ],
       "answer": [
         0
@@ -11797,7 +11797,7 @@
       "id": "MISC-484",
       "set": 1,
       "type": "single",
-      "stem": "A 28-year-old dies of a fentanyl overdose. Under which cause of premature death is this classified?",
+      "stem": "A fentanyl overdose death is classified under which major cause of premature death category?",
       "options": [
         "Unintentional injury",
         "Heart disease",
@@ -11821,12 +11821,12 @@
       "id": "MISC-485",
       "set": 1,
       "type": "single",
-      "stem": "A patient lives in a food desert with unsafe housing. Which SDOH domain does this reflect?",
+      "stem": "A patient lives in unsafe housing in a food desert. Which SDOH domain is most directly involved?",
       "options": [
         "Neighborhood and built environment",
         "Economic stability",
         "Social and community context",
-        "Health care access"
+        "Healthcare access and quality"
       ],
       "answer": [
         0
@@ -11845,10 +11845,10 @@
       "id": "MISC-486",
       "set": 1,
       "type": "single",
-      "stem": "A department ensures that every patient, regardless of background, receives evidence-based anesthesia. Which ASA equity priority is this?",
+      "stem": "A department ensures every patient receives the same evidence-based perioperative standards regardless of background. Which ASA equity priority does this most directly support?",
       "options": [
         "High-quality perioperative care for all populations",
-        "Access to pain management",
+        "Access to pain management only",
         "Pediatric respiratory risk",
         "Workforce diversity"
       ],
@@ -11869,7 +11869,7 @@
       "id": "MISC-487",
       "set": 1,
       "type": "single",
-      "stem": "If maternal mortality is 20 per 100,000 births in white women, what range would you expect in minority women given the reported disparity?",
+      "stem": "If pregnancy-related mortality is 20 per 100,000 births in White women, what range corresponds to a reported two-to-threefold disparity?",
       "options": [
         "About 40–60 per 100,000",
         "About 20 per 100,000",
@@ -11893,12 +11893,12 @@
       "id": "MISC-488",
       "set": 1,
       "type": "single",
-      "stem": "Two patients with the same long-bone fracture receive different analgesia based on race. What disparity does this show?",
+      "stem": "Two patients with identical long-bone fractures receive different analgesic treatment based solely on race. Which disparity does this illustrate?",
       "options": [
-        "Minorities receive less comprehensive pain treatment",
-        "Minorities receive more pain treatment",
-        "Pain treatment is equal across groups",
-        "Minorities need less analgesia"
+        "Minority patients receiving less comprehensive pain treatment",
+        "Minority patients receiving more analgesia",
+        "Equal pain treatment",
+        "A biologically appropriate dosing difference"
       ],
       "answer": [
         0
@@ -11917,12 +11917,12 @@
       "id": "MISC-489",
       "set": 1,
       "type": "single",
-      "stem": "A study finds minority children receive different perioperative care than white children with the same condition. What does this show?",
+      "stem": "A study finds clinically similar minority and White children receive different perioperative treatment. What does this demonstrate?",
       "options": [
-        "Minority children may receive disproportionate care",
-        "Children receive equal care",
-        "Minority children receive better care",
-        "Differences reflect differences in disease severity"
+        "Disproportionate care by race or ethnicity",
+        "Equal care",
+        "Better care for minority children",
+        "Differences necessarily caused by disease severity"
       ],
       "answer": [
         0
@@ -11941,11 +11941,11 @@
       "id": "MISC-490",
       "set": 1,
       "type": "single",
-      "stem": "Which factor is linked to receipt of antiemetics in the Andreae study?",
+      "stem": "Which socioeconomic factor was associated with antiemetic administration in the cited Andreae study?",
       "options": [
         "Insurance status or median income",
-        "Height and weight, not socioeconomic factors",
-        "Surgical specialty",
+        "Height and weight",
+        "Surgical specialty alone",
         "Provider age"
       ],
       "answer": [
@@ -11965,12 +11965,12 @@
       "id": "MISC-491",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA testifies before a state committee to support funding for rural anesthesia access. Which APSF strategy is this?",
+      "stem": "A CRNA testifies before a state committee to support funding for rural anesthesia access. Which APSF strategy does this represent?",
       "options": [
-        "Advocating for health equity at a legislative level",
-        "Encouraging intrinsic motivation",
-        "Creating facility policies",
-        "Changing departmental culture"
+        "Legislative advocacy for health equity",
+        "Intrinsic motivation only",
+        "Facility-policy development",
+        "Department-culture change"
       ],
       "answer": [
         0
@@ -11989,12 +11989,12 @@
       "id": "MISC-492",
       "set": 1,
       "type": "single",
-      "stem": "A hospital adopts a written policy prohibiting racist or discriminatory practices. Which AANA recommendation does this address?",
+      "stem": "A hospital adopts a written policy prohibiting racist and discriminatory practices. Which AANA recommendation does this most directly reflect?",
       "options": [
-        "Develop anti-racist and anti-discrimination policies",
+        "Develop and maintain anti-racist and anti-discrimination policies",
         "Recruit diverse students",
         "Share outcomes data",
-        "Be aware of implicit bias"
+        "Recognize implicit bias"
       ],
       "answer": [
         0
@@ -12013,7 +12013,7 @@
       "id": "MISC-493",
       "set": 1,
       "type": "single",
-      "stem": "Which ethical pillar is MOST involved in allocating ICU beds fairly?",
+      "stem": "Fair allocation of scarce ICU beds most directly reflects which ethical principle?",
       "options": [
         "Justice",
         "Autonomy",
@@ -12037,7 +12037,7 @@
       "id": "MISC-494",
       "set": 1,
       "type": "single",
-      "stem": "Which Code of Ethics responsibility includes societal obligations?",
+      "stem": "Which AANA Code of Ethics responsibility explicitly addresses obligations beyond the individual patient and profession?",
       "options": [
         "Responsibility to society",
         "Responsibility to patients",
@@ -12061,7 +12061,7 @@
       "id": "MISC-495",
       "set": 1,
       "type": "single",
-      "stem": "Which patient-centered dimension is MOST related to ensuring the patient can reach the facility?",
+      "stem": "Helping a patient overcome transportation barriers so they can reach the facility most directly supports which patient-centered-care dimension?",
       "options": [
         "Access to care",
         "Physical comfort",
@@ -12085,7 +12085,7 @@
       "id": "MISC-496",
       "set": 1,
       "type": "single",
-      "stem": "Which consent guidance topic applies to emergency surgery?",
+      "stem": "Which informed-consent guidance topic applies when immediate surgery is required and ordinary consent cannot be obtained?",
       "options": [
         "Emergencies",
         "Withheld information",
@@ -12109,10 +12109,10 @@
       "id": "MISC-497",
       "set": 1,
       "type": "single",
-      "stem": "Which is a goal of culturally competent care in nurse anesthesiology?",
+      "stem": "What is a central goal of culturally competent nurse-anesthesia care?",
       "options": [
-        "Reduce disparities during surgery and pain management",
-        "Standardize care without adapting to the patient",
+        "Reduce disparities while adapting communication and care to patient needs",
+        "Standardize care without adaptation",
         "Limit patient input",
         "Increase procedural speed"
       ],
@@ -12133,12 +12133,12 @@
       "id": "MISC-498",
       "set": 1,
       "type": "single",
-      "stem": "Which research practice protects participants from harm?",
+      "stem": "Which research practice most directly protects participants from preventable harm?",
       "options": [
-        "Appropriate boundaries and safeguards",
-        "Enrolling without consent",
-        "Sharing identifiable data publicly",
-        "Offering coercive incentives for enrollment"
+        "Appropriate safeguards and boundaries",
+        "Enrollment without consent",
+        "Public release of identifiable data",
+        "Coercive incentives"
       ],
       "answer": [
         0
@@ -12157,7 +12157,7 @@
       "id": "MISC-499",
       "set": 1,
       "type": "single",
-      "stem": "Which APSF priority addresses workforce well-being?",
+      "stem": "Which APSF safety priority most directly addresses anesthesia workforce well-being?",
       "options": [
         "Burnout",
         "Airway management",
@@ -12181,12 +12181,12 @@
       "id": "MISC-500",
       "set": 1,
       "type": "single",
-      "stem": "Which strategy is recommended to prevent alarm fatigue?",
+      "stem": "Which strategy best helps prevent alarm fatigue from degrading vigilance?",
       "options": [
-        "Follow alarm safety protocols",
-        "Widen alarm limits during stable periods",
-        "Lower all alarm volumes to zero",
-        "Widen limits after repeated alarms"
+        "Use appropriate alarm-safety protocols and settings",
+        "Widen alarm limits whenever nuisance alarms occur",
+        "Turn alarm volumes down to zero",
+        "Ignore repeated alerts once the case is stable"
       ],
       "answer": [
         0
