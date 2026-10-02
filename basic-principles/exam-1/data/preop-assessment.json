@@ -7035,17 +7035,17 @@
       "id": "PRE-288",
       "set": 1,
       "type": "single",
-      "stem": "A patient had hives and lip swelling after amoxicillin and needs an alternative surgical prophylactic antibiotic. Which option fits best?",
+      "stem": "A patient had hives and lip swelling after amoxicillin and cefazolin is preferred for surgical prophylaxis. Which approach best reflects current allergy guidance?",
       "options": [
-        "Clindamycin",
-        "Ampicillin",
-        "Amoxicillin-clavulanate",
-        "Penicillin G"
+        "Do not automatically substitute clindamycin; characterize the reaction because cefazolin can often still be used unless there is a specific cephalosporin allergy or severe delayed beta-lactam reaction",
+        "Use clindamycin solely because any penicillin allergy excludes cefazolin",
+        "Use ampicillin because hives do not represent hypersensitivity",
+        "Avoid every beta-lactam permanently"
       ],
       "answer": [
         0
       ],
-      "explanation": "Clindamycin is an alternative for a true penicillin allergy. The others are penicillins.",
+      "explanation": "Cefazolin has unique side chains and very low cross-reactivity with penicillins. Many patients with IgE-type penicillin histories can still receive cefazolin; severe delayed beta-lactam reactions or a specific cefazolin/cephalosporin allergy require different consideration.",
       "citation": "",
       "topic": "Allergies and social history",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -7328,17 +7328,17 @@
       "id": "PRE-300",
       "set": 1,
       "type": "single",
-      "stem": "A chronic heavy drinker recovers from rocuronium faster than expected. Which explanation best fits the lecture?",
+      "stem": "A chronic heavy drinker is receiving rocuronium. Which statement about neuromuscular blockade is safest?",
       "options": [
-        "Chronic alcohol use may increase metabolism of neuromuscular blockers",
-        "Alcohol always prolongs neuromuscular blockade",
-        "Alcohol affects sedatives but not neuromuscular blockers",
-        "Rocuronium recovery is unrelated to alcohol use"
+        "Use quantitative neuromuscular monitoring and titrate rocuronium to effect rather than assuming chronic alcohol use will reliably shorten blockade",
+        "Chronic alcohol use reliably accelerates rocuronium metabolism",
+        "Chronic alcohol use always prolongs rocuronium blockade",
+        "Alcohol history makes neuromuscular monitoring unnecessary"
       ],
       "answer": [
         0
       ],
-      "explanation": "Heavy drinkers may need larger doses and metabolize NMBs more rapidly.",
+      "explanation": "Neuromuscular-blocker response in chronic alcohol use is not reliably predicted by a simple faster-metabolism rule and may also be affected by hepatic disease, nutrition, medications, and physiology. Quantitative monitoring should guide dosing and recovery.",
       "citation": "",
       "topic": "Allergies and social history",
       "sourceTitle": "Perioperative Assessment & Evaluation",
