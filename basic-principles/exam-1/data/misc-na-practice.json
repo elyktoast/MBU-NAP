@@ -3741,7 +3741,7 @@
       "id": "MISC-151",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a suspected respiratory infection is scheduled for several procedures. Which one is aerosol-generating?",
+      "stem": "Which procedure is most clearly aerosol-generating in a patient with suspected respiratory infection?",
       "options": [
         "Upper GI endoscopy",
         "Colonoscopy",
@@ -3765,10 +3765,10 @@
       "id": "MISC-152",
       "set": 1,
       "type": "single",
-      "stem": "During an infectious outbreak, which surgical technique generates aerosols and requires added precautions?",
+      "stem": "Which surgical activity most clearly increases aerosol generation and therefore infection-control concern during an outbreak?",
       "options": [
-        "Surgery with high-speed devices such as drills",
-        "Laparoscopic suturing with standard instruments",
+        "Use of high-speed devices such as drills",
+        "Standard laparoscopic suturing",
         "Skin stapling",
         "Electrocardiography"
       ],
@@ -3789,12 +3789,12 @@
       "id": "MISC-153",
       "set": 1,
       "type": "single",
-      "stem": "During a crisis, a CRNA intubates quickly but fails to call for help or share the plan with the team. Which skill set was lacking?",
+      "stem": "A CRNA performs the technical task of intubation well but fails to call for help or share the plan during a crisis. Which skill domain was deficient?",
       "options": [
-        "Non-technical skills: cognitive, social, and personal skills",
-        "Manual skills such as intubation",
-        "Pharmacology and physiology knowledge",
-        "Equipment maintenance skills"
+        "Non-technical skills such as cognitive, social, and personal performance",
+        "Manual airway technique",
+        "Pharmacology knowledge",
+        "Equipment maintenance"
       ],
       "answer": [
         0
@@ -3813,7 +3813,7 @@
       "id": "MISC-154",
       "set": 1,
       "type": "multi",
-      "stem": "Which are non-technical skills? (Select 4)",
+      "stem": "Which four items are non-technical skills central to crisis management? (Select 4)",
       "options": [
         "Situational awareness",
         "Decision making",
@@ -3842,14 +3842,14 @@
       "id": "MISC-155",
       "set": 1,
       "type": "multi",
-      "stem": "What roles do non-technical skills play in crisis prevention? (Select 3)",
+      "stem": "Which three functions do non-technical skills serve in crisis prevention and management? (Select 3)",
       "options": [
-        "Minimizing errors",
-        "Early identification of potential crises",
-        "Adequate communication and leadership",
-        "Replacing technical skill training",
-        "Replacing protocols with clinical judgment",
-        "Reducing staffing needs"
+        "Reduce errors",
+        "Identify developing crises early",
+        "Support effective communication and leadership",
+        "Replace technical-skill training",
+        "Replace protocols",
+        "Reduce staffing needs"
       ],
       "answer": [
         0,
@@ -3870,9 +3870,9 @@
       "id": "MISC-156",
       "set": 1,
       "type": "single",
-      "stem": "During a crisis, a CRNA says \"Give epinephrine 1 mg IV,\" and the nurse replies \"Epinephrine 1 mg IV given.\" Which CRM principle is this?",
+      "stem": "During a code, the CRNA says, 'Give epinephrine 1 mg IV,' and the nurse responds, 'Epinephrine 1 mg IV given.' Which CRM principle is being demonstrated?",
       "options": [
-        "Communication",
+        "Closed-loop communication",
         "Leadership",
         "Situational awareness",
         "Resource use"
@@ -3894,13 +3894,13 @@
       "id": "MISC-157",
       "set": 1,
       "type": "multi",
-      "stem": "Which errors have resulted from CRM communication breakdowns? (Select 2)",
+      "stem": "Which two serious events have been associated with CRM communication failures? (Select 2)",
       "options": [
         "Retained foreign objects",
         "Wrong-sided nerve blocks",
-        "Shorter case durations",
-        "Improved patient outcomes",
-        "Faster room turnover",
+        "Shorter case duration",
+        "Improved outcomes",
+        "Faster turnover",
         "Lower infection rates"
       ],
       "answer": [
@@ -3921,9 +3921,9 @@
       "id": "MISC-158",
       "set": 1,
       "type": "single",
-      "stem": "During a code, the CRNA says, \"I'm leading; you do compressions, you manage drugs, you record.\" Which CRM principle is this?",
+      "stem": "During a code, the CRNA explicitly assigns compressions, medications, and documentation to specific team members. Which CRM principle is most directly shown?",
       "options": [
-        "Leadership with role designation",
+        "Leadership with clear role designation",
         "Communication alone",
         "Situational awareness",
         "Evaluation"
@@ -3945,7 +3945,7 @@
       "id": "MISC-159",
       "set": 1,
       "type": "single",
-      "stem": "During a massive hemorrhage, a CRNA anticipates the need for blood products and calls for the rapid infuser before BP falls. Which CRM principle is this?",
+      "stem": "During major hemorrhage, the CRNA anticipates the need for blood and calls for the rapid infuser before hypotension develops. Which CRM principle is most directly demonstrated?",
       "options": [
         "Situational awareness",
         "Leadership",
@@ -3969,7 +3969,7 @@
       "id": "MISC-160",
       "set": 1,
       "type": "single",
-      "stem": "During an MH crisis, the team leader asks members for input, then quickly decides to give dantrolene. Which CRM principle is this?",
+      "stem": "During an MH crisis, the team leader rapidly gathers input and then chooses the next action. Which CRM skill is being used?",
       "options": [
         "Dynamic decision making",
         "Role designation",
@@ -3993,12 +3993,12 @@
       "id": "MISC-161",
       "set": 1,
       "type": "single",
-      "stem": "During a CRM debrief, the team notes the CRNA anticipated the hemorrhage, planned ahead, and kept attention on the patient. Which CRM element is this?",
+      "stem": "During debrief, the team praises anticipation of hemorrhage, advance planning, and sustained attention to the patient. Which CRM element does this describe?",
       "options": [
         "Awareness: anticipation, planning, and attention",
-        "Airway assessment and management",
-        "Advocacy for the patient",
-        "Primary and secondary survey"
+        "Airway management",
+        "Advocacy",
+        "Primary survey"
       ],
       "answer": [
         0
@@ -4017,12 +4017,12 @@
       "id": "MISC-162",
       "set": 1,
       "type": "single",
-      "stem": "During a code, a CRNA steps out of the airway role to run medications because that is what the team needs. Which CRM element does this show?",
+      "stem": "During a code, a CRNA leaves the airway role to manage medications because that is the team's greatest need. Which CRM element is demonstrated?",
       "options": [
-        "Behavioral flexibility: building the team and filling the needed role",
-        "Breathing: oxygenation and ventilation",
-        "Bias recognition in team decisions",
-        "Briefing the plan before the procedure"
+        "Behavioral flexibility",
+        "Breathing assessment",
+        "Bias recognition",
+        "Preprocedure briefing"
       ],
       "answer": [
         0
@@ -4041,12 +4041,12 @@
       "id": "MISC-163",
       "set": 1,
       "type": "single",
-      "stem": "During an MH crisis, the CRNA calls for help and has a nurse read the MH cognitive aid aloud. Which CRM element is this?",
+      "stem": "During MH, the CRNA calls for help and has a nurse read the crisis checklist aloud. Which CRM element is most directly represented?",
       "options": [
-        "Communication: cognitive aids and calling for help",
-        "Circulation and hemodynamic management",
-        "Consent for crisis treatment",
-        "Coordination of case scheduling"
+        "Communication using cognitive aids and early help",
+        "Circulation management",
+        "Consent",
+        "Case scheduling"
       ],
       "answer": [
         0
@@ -4065,12 +4065,12 @@
       "id": "MISC-164",
       "set": 1,
       "type": "single",
-      "stem": "During a massive hemorrhage, the CRNA decides what to treat first and assigns blood, lines, and labs to different team members. Which CRM element is this?",
+      "stem": "During massive hemorrhage, the CRNA identifies the highest-priority tasks and delegates blood, lines, and labs. Which CRM element is most directly demonstrated?",
       "options": [
-        "Dynamic prioritization: decisions and workload distribution",
-        "Drug preparation and labeling",
-        "Documentation of the event",
-        "Debriefing after the event"
+        "Dynamic prioritization and workload distribution",
+        "Drug labeling",
+        "Documentation",
+        "Debriefing"
       ],
       "answer": [
         0
@@ -4089,12 +4089,12 @@
       "id": "MISC-165",
       "set": 1,
       "type": "single",
-      "stem": "After a near miss, the team reviews what went wrong and how the room setup contributed. Which CRM element does this reflect?",
+      "stem": "After a near miss, the team analyzes both its decisions and how the room setup contributed. Which CRM element does this represent?",
       "options": [
         "Evaluation: error wisdom and environment",
-        "Exposure for a full patient exam",
-        "Equipment checkout after the event",
-        "Calling an emergency code"
+        "Exposure",
+        "Equipment checkout",
+        "Emergency activation"
       ],
       "answer": [
         0
@@ -4113,10 +4113,10 @@
       "id": "MISC-166",
       "set": 1,
       "type": "single",
-      "stem": "During a crisis, the CRNA asks the circulator to bring the difficult airway cart and assigns a colleague to call for help. Which CRM element is demonstrated?",
+      "stem": "During unexpected hypoxemia, a CRNA assigns one person to obtain the airway cart and another to call for help. Which CRM element is best represented?",
       "options": [
         "Dynamic prioritization with workload distribution",
-        "Fixation on a single diagnosis during the event",
+        "Fixation on one diagnosis",
         "Avoidance error",
         "Artifact error"
       ],
@@ -4137,12 +4137,12 @@
       "id": "MISC-167",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA calls for help early during unexpected hypoxemia. Which CRM element does this reflect?",
+      "stem": "A CRNA calls for help early during unexpected hypoxemia. Which CRM behavior is most directly demonstrated?",
       "options": [
         "Communication: call for help",
-        "Behavioral flexibility: being in needed role",
-        "Evaluation: environment",
-        "Awareness: planning"
+        "Behavioral flexibility",
+        "Evaluation",
+        "Awareness"
       ],
       "answer": [
         0
@@ -4161,12 +4161,12 @@
       "id": "MISC-168",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA reviews what went wrong after an event to improve future care. Which CRM element is this?",
+      "stem": "After an event, the CRNA reviews what went wrong so future responses can improve. Which CRM element is this?",
       "options": [
         "Evaluation: error wisdom",
-        "Awareness: attention",
-        "Communication: call for help",
-        "Behavioral flexibility: team building"
+        "Awareness",
+        "Communication",
+        "Behavioral flexibility"
       ],
       "answer": [
         0
@@ -4185,12 +4185,12 @@
       "id": "MISC-169",
       "set": 1,
       "type": "single",
-      "stem": "During hypotension, a CRNA keeps giving phenylephrine for \"vasodilation from propofol\" and ignores the rising PIP and absent breath sounds on one side. What error is this?",
+      "stem": "During hypotension, a CRNA keeps treating presumed propofol vasodilation while ignoring rising airway pressures and unilateral breath sounds. Which cognitive error best fits?",
       "options": [
         "Fixation error",
         "Situational awareness",
         "Closed-loop communication",
-        "Cognitive aid use"
+        "Cognitive-aid use"
       ],
       "answer": [
         0
@@ -4209,12 +4209,12 @@
       "id": "MISC-170",
       "set": 1,
       "type": "single",
-      "stem": "\"The hypotension must be related to the anesthetic,\" while hemorrhage is ignored. Which fixation error is this?",
+      "stem": "A CRNA insists hypotension must be anesthetic-related and ignores accumulating evidence of hemorrhage. Which fixation subtype is this?",
       "options": [
-        "Cognitive tunnel vision (\"this and only this\")",
+        "Cognitive tunnel vision: 'this and only this'",
         "Avoidance error",
         "Artifact error",
-        "Confirmation of alternatives before treating"
+        "Confirmation of alternatives"
       ],
       "answer": [
         0
@@ -4233,12 +4233,12 @@
       "id": "MISC-171",
       "set": 1,
       "type": "single",
-      "stem": "\"It can't be anaphylaxis. That reaction is quite rare.\" Which fixation error is this?",
+      "stem": "A CRNA dismisses anaphylaxis solely because it is uncommon despite compatible findings. Which fixation subtype is this?",
       "options": [
         "Avoidance error",
         "Artifact error",
         "Tunnel vision",
-        "Cognitive aid error"
+        "Cognitive-aid error"
       ],
       "answer": [
         0
@@ -4257,12 +4257,12 @@
       "id": "MISC-172",
       "set": 1,
       "type": "single",
-      "stem": "\"It's just the surgeon leaning on the BP cuff; I'm sure it's fine.\" Which fixation error is this?",
+      "stem": "A CRNA assumes an abnormal blood pressure is just cuff artifact without adequately reassessing the patient. Which fixation subtype is this?",
       "options": [
-        "Artifact error (\"everything is okay\")",
+        "Artifact error: 'everything is okay'",
         "Avoidance error",
         "Tunnel vision",
-        "Confirmation of the working diagnosis"
+        "Confirmation bias"
       ],
       "answer": [
         0
@@ -4281,14 +4281,14 @@
       "id": "MISC-173",
       "set": 1,
       "type": "multi",
-      "stem": "Which strategies reduce fixation errors? (Select 3)",
+      "stem": "Which three strategies can reduce fixation errors during crises? (Select 3)",
       "options": [
         "Cognitive aids",
         "Mental breaks",
         "Simulation training",
-        "Ignoring team input",
-        "Relying on a single monitor",
-        "Avoiding checklists"
+        "Ignore team input",
+        "Rely on one monitor",
+        "Avoid checklists"
       ],
       "answer": [
         0,
@@ -4309,12 +4309,12 @@
       "id": "MISC-174",
       "set": 1,
       "type": "single",
-      "stem": "During an MH crisis, a nurse reads the MH checklist aloud step by step. What tool is being used?",
+      "stem": "During MH, a nurse reads the emergency checklist aloud step by step. What tool is being used?",
       "options": [
-        "A cognitive aid",
-        "A time-out",
-        "A sign-out",
-        "A handoff"
+        "Cognitive aid",
+        "Time-out",
+        "Sign-out",
+        "Handoff"
       ],
       "answer": [
         0
@@ -4333,12 +4333,12 @@
       "id": "MISC-175",
       "set": 1,
       "type": "multi",
-      "stem": "Which are examples of cognitive aids? (Select 5)",
+      "stem": "Which five resources are examples of cognitive aids? (Select 5)",
       "options": [
         "Stanford Emergency Manual",
         "WHO Surgical Safety Checklist",
-        "Malignant hyperthermia cart instructions",
-        "The difficult airway algorithm",
+        "MH cart instructions",
+        "Difficult airway algorithm",
         "ACLS reference cards",
         "A ventilator alarm"
       ],
@@ -4363,13 +4363,13 @@
       "id": "MISC-176",
       "set": 1,
       "type": "multi",
-      "stem": "How do cognitive aids help during crises? (Select 3)",
+      "stem": "Which three benefits do cognitive aids provide during crises? (Select 3)",
       "options": [
         "Reduce errors",
         "Prevent omission of key steps",
         "Standardize practice",
-        "Replace clinical judgment entirely",
-        "Replace the need for a team leader",
+        "Replace clinical judgment",
+        "Replace the need for leadership",
         "Remove the need for training"
       ],
       "answer": [
@@ -4391,12 +4391,12 @@
       "id": "MISC-177",
       "set": 1,
       "type": "single",
-      "stem": "During MH, the team uses the MH cart's step-by-step card. What is this an example of?",
+      "stem": "The team follows the stepwise instructions attached to the MH cart during a crisis. What is this an example of?",
       "options": [
-        "A cognitive aid",
-        "A fixation error",
-        "An avoidance error",
-        "A distraction"
+        "Cognitive-aid use",
+        "Fixation error",
+        "Avoidance error",
+        "Distraction"
       ],
       "answer": [
         0
@@ -4415,12 +4415,12 @@
       "id": "MISC-178",
       "set": 1,
       "type": "single",
-      "stem": "During a difficult airway, the team follows the difficult airway algorithm. What is this?",
+      "stem": "The team follows a difficult-airway algorithm during failed intubation. What type of tool is this?",
       "options": [
-        "A cognitive aid",
-        "An artifact error",
-        "A timing error",
-        "A distraction"
+        "Cognitive aid",
+        "Artifact error",
+        "Timing error",
+        "Distraction"
       ],
       "answer": [
         0
@@ -4439,12 +4439,12 @@
       "id": "MISC-179",
       "set": 1,
       "type": "single",
-      "stem": "Which cognitive aid supports the safety time-out before incision?",
+      "stem": "Which cognitive aid is specifically designed to support the pre-incision safety time-out?",
       "options": [
-        "The WHO Surgical Safety Checklist",
-        "The Stanford Emergency Manual",
-        "The MH hotline card",
-        "The ACLS algorithms"
+        "WHO Surgical Safety Checklist",
+        "Stanford Emergency Manual",
+        "MH hotline card",
+        "ACLS algorithm"
       ],
       "answer": [
         0
@@ -4463,12 +4463,12 @@
       "id": "MISC-180",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA draws up phenylephrine and ephedrine in identical syringes and gives the wrong one. After the event, the department adds color-coded labels and a barcode scanner. What is this response?",
+      "stem": "After a wrong-drug event, the department adds distinct labels and barcode scanning. Which response best reflects modern safety science?",
       "options": [
-        "A systems-focused quality improvement change",
-        "A punitive response to individual error",
-        "A diagnostic error correction",
-        "An equity intervention for underserved groups"
+        "Systems-focused quality improvement",
+        "Punishment of the individual provider",
+        "Diagnostic-error correction",
+        "Equity intervention"
       ],
       "answer": [
         0
@@ -4487,12 +4487,12 @@
       "id": "MISC-181",
       "set": 1,
       "type": "single",
-      "stem": "After a wrong-site block, the review looks at the time-out process, site marking, and staffing instead of just blaming the provider. What approach is this?",
+      "stem": "After a wrong-site block, the review examines site marking, time-out reliability, and staffing rather than blaming one person. Which approach is this?",
       "options": [
         "Continuous quality improvement focused on systems",
-        "Blame-based error management for the provider",
-        "Avoidance error analysis",
-        "Research ethics review"
+        "Blame-based error management",
+        "Avoidance-error analysis",
+        "Research-ethics review"
       ],
       "answer": [
         0
@@ -4511,12 +4511,12 @@
       "id": "MISC-182",
       "set": 1,
       "type": "single",
-      "stem": "A wrong-site surgery is reported as a sentinel event. What do QA programs focus on?",
+      "stem": "A wrong-site surgery is classified as a sentinel event. What should QA primarily examine?",
       "options": [
-        "Processes and systems that allowed the event",
-        "Identifying one person to punish",
-        "Hiding the event to protect reputation",
-        "Identifying the individual responsible for discipline"
+        "Processes and system conditions that allowed the event",
+        "Which single person should be punished",
+        "How to hide the event",
+        "Only the final provider action"
       ],
       "answer": [
         0
@@ -4535,12 +4535,12 @@
       "id": "MISC-183",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA discovers she gave a double dose of ondansetron. The patient has no harm. What should she do?",
+      "stem": "A CRNA discovers a double dose of ondansetron was given but no harm occurred. What obligation remains?",
       "options": [
-        "Disclose the error per policy",
+        "Disclose the error according to policy",
         "Say nothing because there was no harm",
-        "Chart that the dose was correct",
-        "Tell the surgeon privately"
+        "Alter the chart to show the intended dose",
+        "Tell only the surgeon"
       ],
       "answer": [
         0
@@ -4559,12 +4559,12 @@
       "id": "MISC-184",
       "set": 1,
       "type": "single",
-      "stem": "A patient's postoperative delirium is not recognized for a day because no one screened for it. Which error type is MOST applicable?",
+      "stem": "Postoperative delirium goes unrecognized for a day because no one identifies the diagnosis. Which error category best fits?",
       "options": [
-        "Diagnostic error (delay in finding the diagnosis)",
+        "Diagnostic error due to delayed recognition",
         "Treatment error",
-        "Communication breakdown between providers and staff",
-        "Preventative failure"
+        "Communication breakdown",
+        "Preventive failure"
       ],
       "answer": [
         0
@@ -4583,11 +4583,11 @@
       "id": "MISC-185",
       "set": 1,
       "type": "single",
-      "stem": "A PACU nurse was told the patient received morphine when it was actually hydromorphone, leading to overdosing. Which error type is this?",
+      "stem": "PACU is told the patient received morphine when hydromorphone was actually given, leading to overdose. Which error type best captures the primary failure?",
       "options": [
         "Communication breakdown",
-        "Diagnostic error in identifying the drug",
-        "Preventative failure",
+        "Diagnostic error",
+        "Preventive failure",
         "Treatment error"
       ],
       "answer": [
@@ -4607,9 +4607,9 @@
       "id": "MISC-186",
       "set": 1,
       "type": "single",
-      "stem": "A hospital stops routine anesthesia machine maintenance to cut costs, and a vaporizer fails. Which error type is this?",
+      "stem": "A hospital eliminates routine anesthesia-machine maintenance to save money and a vaporizer later fails. Which error category best fits?",
       "options": [
-        "Preventative failure",
+        "Preventive failure",
         "Diagnostic error",
         "Communication breakdown",
         "Treatment error"
@@ -4631,7 +4631,7 @@
       "id": "MISC-187",
       "set": 1,
       "type": "single",
-      "stem": "Which quality domain would a new ERAS protocol with evidence-based multimodal analgesia MOST support?",
+      "stem": "A new evidence-based ERAS protocol improves multimodal analgesia and recovery. Which IOM quality domain is most directly supported?",
       "options": [
         "Effective",
         "Efficient",
@@ -4655,7 +4655,7 @@
       "id": "MISC-188",
       "set": 1,
       "type": "single",
-      "stem": "A hospital tracks antiemetic administration by insurance status to find gaps. Which quality domain does this support?",
+      "stem": "A hospital compares antiemetic use by insurance status to identify treatment gaps. Which quality domain is it primarily assessing?",
       "options": [
         "Equitable",
         "Timely",
@@ -4679,7 +4679,7 @@
       "id": "MISC-189",
       "set": 1,
       "type": "single",
-      "stem": "A department reduces delays for emergent C-sections by staffing an in-house anesthesia team. Which domain is MOST improved?",
+      "stem": "A department staffs in-house anesthesia to reduce delays for emergency cesarean delivery. Which quality domain is most directly improved?",
       "options": [
         "Timely",
         "Efficient",
@@ -4703,10 +4703,10 @@
       "id": "MISC-190",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA adapts the anesthetic to the patient's religious beliefs after discussion. Which domain is MOST reflected?",
+      "stem": "A CRNA modifies the anesthetic plan after discussing and respecting a patient's religious beliefs. Which quality domain is most directly reflected?",
       "options": [
         "Patient-centered",
-        "Efficient, since the discussion took extra time",
+        "Efficient",
         "Timely",
         "Effective"
       ],
@@ -4727,7 +4727,7 @@
       "id": "MISC-191",
       "set": 1,
       "type": "single",
-      "stem": "A hospital introduces a bundle that lowers postoperative infections. Which NHQDR core area is improved?",
+      "stem": "A hospital bundle lowers postoperative infection rates. Which NHQDR core area is most directly improved?",
       "options": [
         "Patient safety",
         "Care affordability",
@@ -4751,7 +4751,7 @@
       "id": "MISC-192",
       "set": 1,
       "type": "single",
-      "stem": "An interdisciplinary team uses a shared plan for a complex patient across units. Which NHQDR core area is this?",
+      "stem": "An interdisciplinary team uses one shared plan across multiple units for a complex patient. Which NHQDR core area does this best represent?",
       "options": [
         "Care coordination",
         "Effective treatment",
@@ -4775,7 +4775,7 @@
       "id": "MISC-193",
       "set": 1,
       "type": "single",
-      "stem": "A clinic runs smoking cessation classes before elective surgery. Which NHQDR core area is this?",
+      "stem": "A clinic provides smoking-cessation classes before elective surgery. Which NHQDR core area is most directly addressed?",
       "options": [
         "Healthy living",
         "Care affordability",
@@ -4799,10 +4799,10 @@
       "id": "MISC-194",
       "set": 1,
       "type": "single",
-      "stem": "A hospital reduces out-of-pocket costs for surgical patients. Which NHQDR core area is this?",
+      "stem": "A hospital program reduces patients' out-of-pocket surgical expenses. Which NHQDR core area is most directly improved?",
       "options": [
         "Care affordability",
-        "Healthy living and prevention programs",
+        "Healthy living",
         "Patient safety",
         "Care coordination"
       ],
@@ -4823,12 +4823,12 @@
       "id": "MISC-195",
       "set": 1,
       "type": "single",
-      "stem": "A Black woman in labor is offered GA for a non-urgent cesarean while an epidural could have been used. Which equity concern does this reflect?",
+      "stem": "A Black laboring patient is offered general anesthesia for a nonurgent cesarean despite a usable neuraxial option. Which equity concern does this illustrate?",
       "options": [
-        "Disparity in anesthetic technique and bonding",
-        "An appropriate choice given her labor progress",
-        "Improved maternal safety from a secured airway",
-        "A cost-saving measure for the hospital"
+        "Disparity in anesthetic technique with implications for maternal risk and bonding",
+        "An appropriate choice based on labor progress",
+        "Improved maternal safety from GA",
+        "A cost-saving strategy"
       ],
       "answer": [
         0
@@ -4847,12 +4847,12 @@
       "id": "MISC-196",
       "set": 1,
       "type": "single",
-      "stem": "A Hispanic adolescent needs mental health services but cannot access them. Which 2023 finding does this reflect?",
+      "stem": "A Hispanic adolescent needs mental-health treatment but cannot access it. Which cited 2023 disparity does this reflect?",
       "options": [
-        "Limited access to adolescent mental health care",
+        "Limited access to adolescent mental-health care",
         "Improved access for low-income youth",
-        "Declining need for mental health services",
-        "Increased availability of pediatric psychiatrists"
+        "Declining mental-health need",
+        "Increased pediatric psychiatry availability"
       ],
       "answer": [
         0
@@ -4871,12 +4871,12 @@
       "id": "MISC-197",
       "set": 1,
       "type": "single",
-      "stem": "A patient with ESRD on dialysis asks about transplant but lacks access. Which 2023 finding does this reflect?",
+      "stem": "A patient with ESRD is an appropriate transplant candidate but cannot access transplantation. Which cited 2023 finding does this illustrate?",
       "options": [
-        "Few Americans have access to preferred transplant care",
-        "Dialysis outcomes have improved enough to replace transplant",
-        "Transplant access has expanded nationally",
-        "Kidney disease is not a leading cause of death in the US"
+        "Limited access to the preferred kidney-failure treatment",
+        "Dialysis has replaced transplantation as preferred care",
+        "Transplant access is broadly available",
+        "Kidney disease is not a major health burden"
       ],
       "answer": [
         0
@@ -4895,11 +4895,11 @@
       "id": "MISC-198",
       "set": 1,
       "type": "single",
-      "stem": "A clinician gives a Black patient less opioid than a white patient with the same fracture because \"they tolerate pain better.\" What does this represent?",
+      "stem": "A clinician gives less opioid to a Black patient with the same fracture severity because of a belief that Black patients tolerate pain better. What does this represent?",
       "options": [
-        "False beliefs that contribute to pain disparities",
-        "Appropriate biological dosing differences",
-        "The standard of care for pain management",
+        "False race-based beliefs contributing to pain disparities",
+        "Appropriate biologic dose adjustment",
+        "Standard pain-management practice",
         "A justified cost-saving measure"
       ],
       "answer": [
@@ -4919,11 +4919,11 @@
       "id": "MISC-199",
       "set": 1,
       "type": "single",
-      "stem": "A sickle cell patient with chronic pain lacks integrated pain care. Which ASA priority applies?",
+      "stem": "A patient with sickle-cell disease lacks coordinated chronic-pain care. Which ASA equity priority is most directly relevant?",
       "options": [
         "Access to pain management",
-        "Maternal care and obstetric anesthesia",
-        "Pediatric patients",
+        "Maternal care",
+        "Pediatric respiratory risk",
         "Health insurance"
       ],
       "answer": [
@@ -4943,7 +4943,7 @@
       "id": "MISC-200",
       "set": 1,
       "type": "single",
-      "stem": "A child from a minority background receives less analgesia for severe pain in the ED. Which ASA priority applies?",
+      "stem": "A child from a minority background receives less analgesia for severe ED pain than a clinically similar child. Which equity priority is most directly implicated?",
       "options": [
         "Pediatric patients",
         "Maternal care",
