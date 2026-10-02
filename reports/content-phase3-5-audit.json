@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27",
+  "generatedAt": "2026-10-02",
   "phase": "3-5",
   "scope": {
     "questions": 2000,
@@ -22,12 +22,14 @@
     }
   ],
   "changes": {
-    "sourceGroundedReplacementQuestions": 86,
+    "sourceGroundedReplacementQuestions": 87,
     "bank1SameSetDuplicatesReplaced": 21,
     "hazardsSet2RepeatedSlotsRebuilt": 65,
     "savedProgressCompatibility": "Question IDs and set positions were preserved.",
     "answerKeyPolicy": "No answer key was changed solely because of a heuristic. Source support was required.",
-    "distractorPolish": "Newly rebuilt items with obvious answer-length clues were balanced without changing their keyed concept."
+    "distractorPolish": "Newly rebuilt items with obvious answer-length clues were balanced without changing their keyed concept.",
+    "bank1SameSetNearDuplicateReplaced": 1,
+    "latestPhase3Cleanup": "Bank 1 question 287 was replaced with a distinct source-grounded soda-lime reaction-step question while preserving its ID and Set 3 position."
   },
   "finalChecks": {
     "missingRequiredFields": 0,
@@ -36,7 +38,10 @@
     "hazardsSet2Questions": 100,
     "hazardsSet2UniqueNormalizedStems": 100,
     "shortExplanationHeuristicCount": 94,
-    "longKeyedAnswerHeuristicCount": 34
+    "longKeyedAnswerHeuristicCount": 34,
+    "sameSetNearDuplicateClusters": 0,
+    "actionableManualReviewClusters": 0,
+    "informationalCrossSetReinforcementClusters": 6
   },
   "banks": {
     "bank1.json": {
@@ -93,7 +98,8 @@
     }
   },
   "limitations": [
-    "Exact stems may still recur across different practice sets when retained as repeated exposure; same-set duplicates are not allowed.",
+    "Exact or near-identical concepts may recur across different practice sets when retained as repeated exposure; same-set duplicate and near-duplicate concepts are not allowed.",
+    "Six cross-set reinforcement clusters remain informational review signals rather than content defects.",
     "Short-explanation and answer-length heuristics are review signals, not proof of a bad question.",
     "Static Easy/Moderate/Hard labels remain intentionally absent because no authoritative difficulty rubric was supplied."
   ]
