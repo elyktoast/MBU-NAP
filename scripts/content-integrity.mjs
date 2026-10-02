@@ -129,6 +129,7 @@ for(const source of bpManifest.studioSources||[]){
     else{
       const normalized=opts.map(norm);if(normalized.some(x=>!x))err('Basic Principles '+identity+' has a blank option');
       if(new Set(normalized).size!==normalized.length)err('Basic Principles '+identity+' has duplicate answer choices');
+      if(opts.length<3)warn('Basic Principles '+identity+' has fewer than 3 answer choices after normalization');
       if(!ans.length||ans.some(x=>!Number.isInteger(x)||x<0||x>=opts.length))err('Basic Principles '+identity+' has invalid answer indexes');
       if(new Set(ans).size!==ans.length)err('Basic Principles '+identity+' repeats an answer index');
     }
