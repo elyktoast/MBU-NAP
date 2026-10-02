@@ -2441,12 +2441,12 @@
       "id": "AIR-101",
       "set": 1,
       "type": "single",
-      "stem": "A patient tries to bite his upper lip with his lower incisors. What does this test assess?",
+      "stem": "During airway assessment, a patient can open widely but cannot advance the lower incisors beyond the upper incisors. Which function is the upper lip bite test primarily assessing?",
       "options": [
-        "Neck extension",
-        "Mouth opening alone",
-        "Tongue size",
-        "Incisor length and TMJ mobility"
+        "Cervical extension",
+        "Interincisor distance",
+        "Tongue-to-pharynx ratio",
+        "Mandibular protrusion and temporomandibular joint mobility"
       ],
       "answer": [
         3
@@ -2465,12 +2465,12 @@
       "id": "AIR-102",
       "set": 1,
       "type": "single",
-      "stem": "A patient cannot reach his upper lip with his lower incisors at all. Which ULBT class is this, and what does it suggest?",
+      "stem": "A patient cannot bring the lower incisors into contact with the upper lip despite adequate mouth opening. How should this ULBT finding change your airway assessment?",
       "options": [
-        "Class B, suggesting an easy airway",
-        "Class C, suggesting easy mask ventilation",
-        "Class C, suggesting difficult laryngoscopy",
-        "Class A, suggesting an easy airway"
+        "Class B; laryngoscopy is likely easy",
+        "Class C; mask ventilation is predicted to be easy",
+        "Class C; difficult laryngoscopy is more likely",
+        "Class A; laryngoscopy is likely easy"
       ],
       "answer": [
         2
@@ -2489,7 +2489,7 @@
       "id": "AIR-103",
       "set": 1,
       "type": "single",
-      "stem": "A patient bites well above the upper lip's vermilion border, covering it fully. Which ULBT class is this?",
+      "stem": "During the upper lip bite test, the lower incisors extend above the vermilion border of the upper lip. Which class is present?",
       "options": [
         "Class D",
         "Class A",
@@ -2513,12 +2513,12 @@
       "id": "AIR-104",
       "set": 1,
       "type": "single",
-      "stem": "An edentulous patient attempts the upper lip bite test. Why is the result less reliable?",
+      "stem": "An edentulous patient has a reassuring Mallampati score, but the upper lip bite test cannot be interpreted reliably. What is the main limitation?",
       "options": [
-        "The test depends on lower incisors",
-        "Edentulous patients have short necks",
-        "The test measures neck extension",
-        "Edentulous patients have difficult airways"
+        "The maneuver depends on the lower incisors",
+        "Edentulous patients usually have reduced cervical motion",
+        "The maneuver isolates neck extension rather than jaw movement",
+        "Edentulous status itself predicts a difficult laryngoscopy"
       ],
       "answer": [
         0
@@ -2537,12 +2537,12 @@
       "id": "AIR-105",
       "set": 1,
       "type": "single",
-      "stem": "A patient's neck circumference is 46 cm. What does this suggest?",
+      "stem": "Two patients have identical Mallampati scores. One has a 46-cm neck circumference. What does that additional finding imply?",
       "options": [
-        "A normal airway",
-        "Easier laryngoscopy",
-        "No relevance to the airway",
-        "Potential airway difficulty"
+        "It is reassuring if mouth opening is normal",
+        "It predicts easier direct laryngoscopy",
+        "It has no independent airway relevance",
+        "It adds concern for airway difficulty"
       ],
       "answer": [
         3
@@ -2561,13 +2561,13 @@
       "id": "AIR-106",
       "set": 1,
       "type": "multi",
-      "stem": "Which exam findings suggest difficult laryngoscopy? (Select 2)",
+      "stem": "Which TWO findings should increase concern for difficult direct laryngoscopy despite otherwise normal vital signs? (Select 2)",
       "options": [
-        "Full neck range of motion",
+        "Full cervical range of motion",
         "Thyromental distance of 7 cm",
         "Prominent overbite",
-        "Highly arched or narrow palate",
-        "A thyromental distance of 6.5 cm",
+        "High, narrow palate",
+        "Thyromental distance of 6.5 cm",
         "Mallampati class I"
       ],
       "answer": [
@@ -2588,12 +2588,12 @@
       "id": "AIR-107",
       "set": 1,
       "type": "single",
-      "stem": "A colleague says, \"With a videolaryngoscope, airway exams don't matter anymore.\" What is the BEST response?",
+      "stem": "A patient has several predictors of difficult laryngoscopy. A trainee argues that planned videolaryngoscopy makes the preoperative airway exam unnecessary. Which response is BEST?",
       "options": [
-        "VL replaces assessment in elective cases",
-        "VL does not replace assessment",
-        "VL makes airway assessment unnecessary",
-        "VL makes the Mallampati score irrelevant but not TMD"
+        "Videolaryngoscopy replaces assessment in elective cases",
+        "Videolaryngoscopy changes device choice but does not replace airway assessment",
+        "Videolaryngoscopy makes an airway exam unnecessary if oxygenation is normal",
+        "Only Mallampati becomes irrelevant; thyromental distance remains mandatory"
       ],
       "answer": [
         1
@@ -2612,12 +2612,12 @@
       "id": "AIR-108",
       "set": 1,
       "type": "single",
-      "stem": "A student measures from the mandible-neck junction to the thyroid notch. Which measurement is this?",
+      "stem": "A clinician measures from the mandible-neck junction to the thyroid notch rather than from the mentum. Which airway measurement is being obtained?",
       "options": [
-        "The modified hyomental distance",
-        "The thyromental distance",
-        "The sternomental distance",
-        "The 3-3-2 rule"
+        "Modified hyomental distance",
+        "Thyromental distance",
+        "Sternomental distance",
+        "3-3-2 assessment"
       ],
       "answer": [
         0
@@ -2636,12 +2636,12 @@
       "id": "AIR-109",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a reassuring Mallampati but a short TMD and limited neck extension. Why use multiple assessments?",
+      "stem": "Mallampati is class II, but thyromental distance is short and neck extension is limited. What is the best interpretation?",
       "options": [
-        "One test is enough",
-        "Multiple tests confuse planning",
-        "Each test measures the same structure",
-        "Combining tests improves predictive accuracy"
+        "The reassuring Mallampati overrides the other findings",
+        "The tests conflict, so none should influence planning",
+        "All three tests measure the same anatomic limitation",
+        "Combining the findings is more predictive than relying on one test"
       ],
       "answer": [
         3
@@ -2660,14 +2660,14 @@
       "id": "AIR-110",
       "set": 1,
       "type": "multi",
-      "stem": "Which predict difficult bag-mask ventilation? (Select 4)",
+      "stem": "Which FOUR findings increase the likelihood that bag-mask ventilation will be difficult? (Select 4)",
       "options": [
-        "Snoring or OSA",
+        "Snoring or obstructive sleep apnea",
         "Obesity",
-        "Young age with normal BMI",
+        "Young age with normal body mass index",
         "Full dentition",
         "Beard",
-        "Edentulous patient"
+        "Edentulous state"
       ],
       "answer": [
         0,
@@ -2689,12 +2689,12 @@
       "id": "AIR-111",
       "set": 1,
       "type": "single",
-      "stem": "Which patient has an age-related risk factor for difficult bag-mask ventilation?",
+      "stem": "Which patient has the strongest age-related contribution to difficult mask ventilation?",
       "options": [
-        "A 25-year-old with a full set of teeth",
-        "A 62-year-old with loss of tissue elasticity",
-        "A 30-year-old healthy adult",
-        "A 45-year-old athlete"
+        "25-year-old with intact dentition",
+        "62-year-old with reduced facial tissue elasticity",
+        "30-year-old with normal body mass index",
+        "45-year-old endurance athlete"
       ],
       "answer": [
         1
@@ -2713,12 +2713,12 @@
       "id": "AIR-112",
       "set": 1,
       "type": "single",
-      "stem": "A patient's BMI is 34. How does this affect your mask ventilation plan?",
+      "stem": "A patient has a BMI of 34, beard, and normal Mallampati score. Which finding still warrants planning for more difficult mask ventilation?",
       "options": [
-        "It predicts difficult BMV, since BMI exceeds 30",
-        "It does not matter until BMI exceeds 45",
-        "It predicts easier BMV",
-        "It matters when BMI is below 18"
+        "BMI above 30",
+        "BMI does not matter until it exceeds 45",
+        "Obesity makes mask ventilation easier",
+        "Only underweight patients have BMI-related mask difficulty"
       ],
       "answer": [
         0
@@ -2737,12 +2737,12 @@
       "id": "AIR-113",
       "set": 1,
       "type": "single",
-      "stem": "During BMV, the chest barely moves, ETCO2 is faint, and SpO2 drifts from 99% to 91%. What do these findings show?",
+      "stem": "After induction, mask ventilation produces minimal chest rise, a weak ETCO2 trace, and SpO2 falls to 91%. What is the best interpretation?",
       "options": [
-        "Adequate BMV, since SpO2 is above 85%",
-        "Adequate BMV, since some ETCO2 is present",
-        "A monitoring artifact",
-        "Inadequate BMV, with SpO2 below 92%"
+        "Ventilation is adequate because saturation remains above 85%",
+        "Ventilation is adequate because any ETCO2 trace is sufficient",
+        "The pattern is most consistent with pulse oximeter artifact",
+        "Mask ventilation is inadequate and should be escalated"
       ],
       "answer": [
         3
@@ -2761,12 +2761,12 @@
       "id": "AIR-114",
       "set": 1,
       "type": "single",
-      "stem": "You are using a structured approach to predict difficult laryngoscopy. Which elements belong in it?",
+      "stem": "Before induction, you deliberately assess external appearance, the 3-3-2 relationship, Mallampati class, obstruction, and neck mobility. Which structured assessment are you using?",
       "options": [
-        "Snoring, tiredness, observed apnea, pressure, and BMI",
-        "Machine, suction, monitors, airway, IV, and drugs",
-        "Look externally, 3-3-2, Mallampati, obstruction, and neck mobility",
-        "Surgery, hematoma, obesity, radiation, and tumor"
+        "STOP-BANG",
+        "MSMAIDS",
+        "LEMON",
+        "SHORT"
       ],
       "answer": [
         2
@@ -2785,13 +2785,13 @@
       "id": "AIR-115",
       "set": 1,
       "type": "multi",
-      "stem": "Which predict difficult SGA placement? (Select 4)",
+      "stem": "Which FOUR findings make supraglottic airway placement or ventilation through it less reliable? (Select 4)",
       "options": [
         "Distorted airway anatomy",
-        "Stiff lungs",
+        "Low pulmonary compliance or stiff lungs",
         "Upper airway obstruction",
         "Mallampati class I",
-        "Short procedure time",
+        "Short procedure duration",
         "Restricted mouth opening"
       ],
       "answer": [
@@ -2814,12 +2814,12 @@
       "id": "AIR-116",
       "set": 1,
       "type": "single",
-      "stem": "A patient had neck radiation for laryngeal cancer and a prior tracheostomy scar. Which mnemonic captures factors that make cricothyrotomy difficult?",
+      "stem": "A patient with prior neck surgery, radiation, and a large anterior neck tumor may require emergency front-of-neck access. Which mnemonic specifically highlights predictors of a difficult cricothyrotomy?",
       "options": [
-        "SHORT: surgery, hematoma, obesity, radiation, tumor",
-        "LEMON: look, evaluate, Mallampati, obstruction, neck",
-        "STOP-BANG: snoring, tiredness, apnea, pressure, BMI",
-        "MOANS: mask seal, obesity, age, no teeth, stiffness"
+        "SHORT",
+        "LEMON",
+        "STOP-BANG",
+        "MOANS"
       ],
       "answer": [
         0
@@ -2838,12 +2838,12 @@
       "id": "AIR-117",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a large neck mass and prior radiation is scheduled for GA. What should you do before induction?",
+      "stem": "A patient has prior neck radiation and a large neck mass, making rescue front-of-neck access potentially difficult. What is the most useful step BEFORE induction?",
       "options": [
-        "Avoid identifying it to prevent anxiety",
-        "Place a tracheostomy before induction",
-        "Rely on the surgeon to locate it if needed",
-        "Mark the cricothyroid membrane"
+        "Avoid discussing the neck because it may increase anxiety",
+        "Perform prophylactic tracheostomy in every such patient",
+        "Wait to identify landmarks until a rescue is needed",
+        "Identify and mark the cricothyroid membrane"
       ],
       "answer": [
         3
@@ -2862,12 +2862,12 @@
       "id": "AIR-118",
       "set": 1,
       "type": "single",
-      "stem": "During a CICO event, a patient has a large neck mass and prior radiation. Is cricothyrotomy contraindicated?",
+      "stem": "A cannot-intubate, cannot-oxygenate emergency occurs in a patient with prior neck radiation and obesity. How should those factors affect the decision to perform cricothyrotomy?",
       "options": [
-        "Yes; prior radiation is an absolute contraindication",
-        "Yes; obesity is an absolute contraindication",
-        "No; emergency access overrides difficulty",
-        "Yes; neck masses are an absolute contraindication"
+        "Radiation is an absolute contraindication",
+        "Obesity is an absolute contraindication",
+        "They increase technical difficulty but do not preclude emergency access",
+        "A neck mass makes cricothyrotomy absolutely contraindicated"
       ],
       "answer": [
         2
@@ -2886,12 +2886,12 @@
       "id": "AIR-119",
       "set": 1,
       "type": "single",
-      "stem": "A trauma patient with neck pain needs a cervical spine evaluation before airway planning. Which imaging is the gold standard for fractures?",
+      "stem": "A trauma patient requires airway management and has midline cervical tenderness. Which imaging study best evaluates a suspected cervical spine fracture?",
       "options": [
         "Ultrasound",
-        "CT scan",
-        "Plain X-ray",
-        "MRI"
+        "Computed tomography",
+        "Plain radiography",
+        "Magnetic resonance imaging"
       ],
       "answer": [
         1
@@ -2910,12 +2910,12 @@
       "id": "AIR-120",
       "set": 1,
       "type": "single",
-      "stem": "In a patient with a BMI of 55, you cannot palpate the cricothyroid membrane. What can help?",
+      "stem": "In a patient with BMI 55, the cricothyroid membrane cannot be palpated reliably before induction. Which bedside tool is most useful for localization?",
       "options": [
         "Point-of-care ultrasound",
-        "A chest X-ray",
-        "A Mallampati exam",
-        "A sternomental distance"
+        "Chest radiograph",
+        "Mallampati assessment",
+        "Sternomental distance"
       ],
       "answer": [
         0
@@ -2934,12 +2934,12 @@
       "id": "AIR-121",
       "set": 1,
       "type": "single",
-      "stem": "An airway ultrasound shows thick pretracheal soft tissue. What does this predict?",
+      "stem": "Preoperative airway ultrasound shows markedly increased pretracheal soft-tissue thickness. Which problem should this finding make you anticipate?",
       "options": [
-        "Easy laryngoscopy",
-        "Difficult extubation alone",
-        "Nothing",
-        "Difficult laryngoscopy"
+        "Easier direct laryngoscopy",
+        "Isolated difficult extubation only",
+        "No meaningful airway effect",
+        "More difficult laryngoscopy"
       ],
       "answer": [
         3
@@ -2958,10 +2958,10 @@
       "id": "AIR-122",
       "set": 1,
       "type": "single",
-      "stem": "Your department performs about 44,000 general anesthetics a year. Based on NAP4, about how many major airway complications would you expect?",
+      "stem": "A department performs 44,000 general anesthetics annually. Using a major airway complication rate of about 1 in 22,000, what is the expected annual number?",
       "options": [
         "About 200",
-        "Fewer than 1 in 10 years",
+        "Fewer than 1 every 10 years",
         "About 2",
         "About 20"
       ],
@@ -2982,7 +2982,7 @@
       "id": "AIR-123",
       "set": 1,
       "type": "single",
-      "stem": "Based on NAP4, how many airway-related deaths would you expect in 180,000 anesthetics?",
+      "stem": "If airway-related death occurs at roughly 1 per 180,000 anesthetics, what number would be expected across 180,000 anesthetics?",
       "options": [
         "About 100",
         "About 1",
@@ -3006,7 +3006,7 @@
       "id": "AIR-124",
       "set": 1,
       "type": "single",
-      "stem": "An obstetric unit performs 600 general anesthetics a year. Based on the estimated CICV rate, about how many CICV events would you expect?",
+      "stem": "An obstetric service performs 600 general anesthetics. If cannot-intubate, cannot-ventilate occurs about once per 300 obstetric anesthetics, how many events would be expected?",
       "options": [
         "About 2",
         "About 0.3",
@@ -3030,12 +3030,12 @@
       "id": "AIR-125",
       "set": 1,
       "type": "single",
-      "stem": "How does the CICV incidence in obstetric patients compare with non-obstetric patients?",
+      "stem": "The lecture gives a CICV incidence of about 1 in 300 in obstetrics versus 1 in 2,250 outside obstetrics. Approximately how do the rates compare?",
       "options": [
-        "About the same (1 in 2,250 each)",
-        "About 2 times higher",
-        "About 7.5 times lower",
-        "About 7.5 times higher"
+        "They are essentially equal",
+        "Obstetric CICV is about 2 times higher",
+        "Obstetric CICV is about 7.5 times lower",
+        "Obstetric CICV is about 7.5 times higher"
       ],
       "answer": [
         3
@@ -3054,12 +3054,12 @@
       "id": "AIR-126",
       "set": 1,
       "type": "single",
-      "stem": "In a department doing 2,000 inductions a year, about how many patients will be difficult to mask ventilate?",
+      "stem": "A service performs 2,000 inductions. If difficult facemask ventilation occurs in about 0.9%–7.8%, which range is most plausible?",
       "options": [
-        "About 200–400 (10%–20%)",
-        "About 4–22 (0.19%–1.1%)",
-        "About 18–156 (0.9%–7.8%)",
-        "About 1–7 (0.045%–0.35%)"
+        "200–400 patients",
+        "4–22 patients",
+        "18–156 patients",
+        "1–7 patients"
       ],
       "answer": [
         2
@@ -3078,12 +3078,12 @@
       "id": "AIR-127",
       "set": 1,
       "type": "single",
-      "stem": "In that same department, about how many supraglottic airway insertions will fail?",
+      "stem": "A service performs 2,000 supraglottic airway insertions. With a failure rate of about 0.19%–1.1%, which range is most plausible?",
       "options": [
-        "Fewer than 1 (0.001%)",
-        "About 4–22 (0.19%–1.1%)",
-        "About 18–156 (0.9%–7.8%)",
-        "About 100–200 (5%–10%)"
+        "Fewer than 1 patient",
+        "4–22 patients",
+        "18–156 patients",
+        "100–200 patients"
       ],
       "answer": [
         1
@@ -3102,11 +3102,11 @@
       "id": "AIR-128",
       "set": 1,
       "type": "multi",
-      "stem": "Which factors cause SAD failure? (Select 2)",
+      "stem": "Which TWO intraoperative conditions are specifically associated with supraglottic airway failure? (Select 2)",
       "options": [
         "Normal dentition with a good seal",
         "Female sex",
-        "Low BMI",
+        "Low body mass index",
         "Short procedure",
         "Poor seal",
         "Table rotation"
@@ -3129,12 +3129,12 @@
       "id": "AIR-129",
       "set": 1,
       "type": "single",
-      "stem": "How much more likely are adverse airway events causing death or brain damage in ED or ICU vs OR?",
+      "stem": "Compared with the operating room, adverse airway events causing death or brain damage are reported to be how much more likely in the emergency department or intensive care unit?",
       "options": [
-        "About 2–3 times more likely",
-        "5–10 times more likely",
-        "100 times more likely",
-        "30–60 times more likely"
+        "About 2–3 times",
+        "About 5–10 times",
+        "About 100 times",
+        "About 30–60 times"
       ],
       "answer": [
         3
@@ -3153,12 +3153,12 @@
       "id": "AIR-130",
       "set": 1,
       "type": "single",
-      "stem": "A paramedic program reviews prehospital airway data. Up to what percentage of prehospital airway cases require emergency cricothyrotomy?",
+      "stem": "When planning prehospital airway rescue training, what upper-end emergency cricothyrotomy rate should the team recognize from the lecture data?",
       "options": [
         "About 50%",
-        "None",
-        "Up to 11%",
-        "Under 1%"
+        "Essentially 0%",
+        "Up to about 11%",
+        "Always under 1%"
       ],
       "answer": [
         2
@@ -3177,12 +3177,12 @@
       "id": "AIR-131",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a supraglottic tumor is scheduled for laryngoscopy and biopsy. Roughly how often is intubation difficult in pharyngolaryngeal disease?",
+      "stem": "A patient with pharyngolaryngeal disease is scheduled for biopsy. Which approximate difficult-intubation rate best reflects the lecture data for this population?",
       "options": [
-        "About 50%",
-        "About 28%",
-        "About 3.8%",
-        "About 8.5%"
+        "50%",
+        "28%",
+        "3.8%",
+        "8.5%"
       ],
       "answer": [
         1
@@ -3201,12 +3201,12 @@
       "id": "AIR-132",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a normal preop airway exam cannot be intubated, and the scope shows a large mass at the base of the tongue. What is the MOST likely hidden cause?",
+      "stem": "Direct laryngoscopy unexpectedly fails despite a normal bedside airway exam. Flexible evaluation reveals bulky tissue at the tongue base. Which occult problem best explains the mismatch?",
       "options": [
         "Lingual tonsil hyperplasia",
-        "A short TMD",
+        "Short thyromental distance",
         "Mallampati class I",
-        "Loose teeth"
+        "Loose dentition"
       ],
       "answer": [
         0
@@ -3225,14 +3225,14 @@
       "id": "AIR-133",
       "set": 1,
       "type": "multi",
-      "stem": "Which clues suggest lingual tonsil hyperplasia? (Select 2)",
+      "stem": "Which TWO symptoms should increase suspicion for lingual tonsil hyperplasia in a patient whose routine airway exam is otherwise reassuring? (Select 2)",
       "options": [
         "Globus sensation",
         "Bradycardia",
         "Hypertension",
-        "Normal swallowing with no symptoms",
+        "Completely asymptomatic swallowing",
         "Chest pain",
-        "Sore throat"
+        "Persistent sore throat"
       ],
       "answer": [
         0,
@@ -3252,12 +3252,12 @@
       "id": "AIR-134",
       "set": 1,
       "type": "single",
-      "stem": "You are inducing a healthy adult for an elective case with an ETT. Which sequence is standard?",
+      "stem": "For a routine elective induction in a healthy adult, which sequence best preserves oxygenation while confirming the ability to ventilate before paralysis?",
       "options": [
-        "NMB, propofol, DL, BMV, then preoxygenate",
-        "Preoxygenate, NMB, propofol, BMV, then DL",
-        "Preoxygenate, propofol, BMV, NMB, then DL",
-        "Propofol, NMB, preoxygenate, DL, then BMV"
+        "Neuromuscular blocker → propofol → laryngoscopy → BMV → preoxygenation",
+        "Preoxygenation → neuromuscular blocker → propofol → BMV → laryngoscopy",
+        "Preoxygenation → propofol → confirm BMV → neuromuscular blocker → laryngoscopy",
+        "Propofol → neuromuscular blocker → preoxygenation → laryngoscopy → BMV"
       ],
       "answer": [
         2
@@ -3276,9 +3276,9 @@
       "id": "AIR-135",
       "set": 1,
       "type": "single",
-      "stem": "During preoxygenation, nitrogen in the FRC is replaced by oxygen. What is preoxygenation also called?",
+      "stem": "During preoxygenation, oxygen progressively replaces nitrogen within the functional residual capacity. What process is occurring?",
       "options": [
-        "Positive pressure ventilation",
+        "Positive-pressure ventilation",
         "Nitrogen washout",
         "Carbon dioxide washout",
         "Apneic oxygenation"
@@ -3300,12 +3300,12 @@
       "id": "AIR-136",
       "set": 1,
       "type": "single",
-      "stem": "How long of a safe apneic time can preoxygenation provide in healthy patients with normal FRC?",
+      "stem": "A healthy, fully preoxygenated adult with normal functional residual capacity becomes apneic after induction. Approximately how long may oxygen saturation remain acceptable under ideal conditions?",
       "options": [
-        "Up to 8 minutes",
-        "Up to 1 minute",
-        "Up to 3 minutes",
-        "Up to 20 minutes"
+        "Up to about 8 minutes",
+        "Up to about 1 minute",
+        "Up to about 3 minutes",
+        "Up to about 20 minutes"
       ],
       "answer": [
         0
@@ -3324,12 +3324,12 @@
       "id": "AIR-137",
       "set": 1,
       "type": "single",
-      "stem": "During preoxygenation, expired O2 rises to 75%. Per this lecture, has the goal been met? (Phases of GA used a higher target.)",
+      "stem": "During preoxygenation, expired oxygen reaches 75% with a tight mask and 100% inspired oxygen. Using the target taught in this airway lecture, how should this be interpreted?",
       "options": [
-        "No; this lecture lists above 90%",
-        "No; this lecture lists 100%",
-        "Yes; this lecture lists above 50%",
-        "Yes; this lecture lists above 70%"
+        "Inadequate; this lecture requires above 90%",
+        "Inadequate; this lecture requires 100%",
+        "Adequate only if above 50%",
+        "Adequate; this lecture lists a goal above 70%"
       ],
       "answer": [
         3
@@ -3348,12 +3348,12 @@
       "id": "AIR-138",
       "set": 1,
       "type": "single",
-      "stem": "A cooperative patient is being preoxygenated before an elective induction. Which technique is correct?",
+      "stem": "A cooperative elective patient has normal lungs and no urgency. Which preoxygenation method best maximizes oxygen reserve before induction?",
       "options": [
         "Loose mask with room air for 5 minutes",
-        "50% O2 with shallow breaths",
-        "Tight mask, 100% O2, 3–5 minutes",
-        "Nasal cannula at 2 L/min for 1 minute before induction"
+        "50% oxygen with shallow breathing",
+        "Tight seal with 100% oxygen for 3–5 minutes",
+        "Nasal cannula at 2 L/min for 1 minute"
       ],
       "answer": [
         2
@@ -3372,12 +3372,12 @@
       "id": "AIR-139",
       "set": 1,
       "type": "single",
-      "stem": "A patient needs urgent induction and there is no time for 3 minutes of tidal breathing. Which alternative preoxygenation technique works?",
+      "stem": "Urgent induction is required and there is not enough time for 3–5 minutes of tidal breathing. Which alternative provides effective rapid preoxygenation?",
       "options": [
-        "1 deep breath of 100% O2",
-        "8 vital capacity breaths in 60 seconds",
-        "3 vital capacity breaths over 3 minutes",
-        "20 tidal breaths on room air"
+        "One deep breath of 100% oxygen",
+        "Eight vital-capacity breaths over 60 seconds",
+        "Three vital-capacity breaths over 3 minutes",
+        "Twenty tidal breaths on room air"
       ],
       "answer": [
         1
@@ -3396,12 +3396,12 @@
       "id": "AIR-140",
       "set": 1,
       "type": "single",
-      "stem": "After induction, intubation fails twice and SpO2 is falling. Which skill becomes your initial rescue?",
+      "stem": "Two intubation attempts have failed and SpO2 is falling, but the patient can still potentially be ventilated by mask. What should be prioritized FIRST?",
       "options": [
-        "Bag-mask ventilation",
-        "Repeated DL with a Mac blade",
-        "Videolaryngoscopy without oxygenation",
-        "Immediate cricothyrotomy"
+        "Restore oxygenation with bag-mask ventilation",
+        "Repeat direct laryngoscopy immediately",
+        "Proceed directly to videolaryngoscopy without ventilating",
+        "Perform immediate cricothyrotomy"
       ],
       "answer": [
         0
@@ -3420,12 +3420,12 @@
       "id": "AIR-141",
       "set": 1,
       "type": "single",
-      "stem": "A student pushes the mask hard onto the face and gets a poor seal with no chest rise. What is the correct technique?",
+      "stem": "A trainee presses the mask downward and ventilation worsens because the mandible is displaced posteriorly. Which correction is most appropriate?",
       "options": [
-        "Pressing the mask firmly down onto the face",
-        "Holding the mask loosely to avoid pressure",
-        "Using the chin as a fulcrum for the thumb",
-        "C-E grip, pulling the jaw up into the mask"
+        "Increase downward pressure",
+        "Loosen the mask and accept a leak",
+        "Use the chin as a thumb fulcrum",
+        "Use a C-E grip while lifting the jaw into the mask"
       ],
       "answer": [
         3
@@ -3444,14 +3444,14 @@
       "id": "AIR-142",
       "set": 1,
       "type": "multi",
-      "stem": "Which signs confirm effective BMV? (Select 4)",
+      "stem": "Which FOUR findings together provide evidence that bag-mask ventilation is effective? (Select 4)",
       "options": [
         "Stable or rising SpO2",
-        "Mask leak sounds",
-        "Chest rise",
-        "Fog in the mask",
-        "ETCO2 waveform",
-        "Gastric distension"
+        "Audible mask leak",
+        "Visible chest rise",
+        "Condensation or fog in the mask",
+        "Consistent ETCO2 waveform",
+        "Progressive gastric distension"
       ],
       "answer": [
         0,
@@ -3473,12 +3473,12 @@
       "id": "AIR-143",
       "set": 1,
       "type": "single",
-      "stem": "What should be considered for patients with thick necks, beards, or OSA during BMV?",
+      "stem": "One-handed mask ventilation is marginal in a bearded patient with obstructive sleep apnea and a thick neck. Which next maneuver is most likely to improve ventilation?",
       "options": [
-        "A smaller mask with higher oxygen flow",
-        "Oral airway and two-hand mask technique",
-        "Higher pressure with a one-hand grip",
-        "Smaller mask with a tight seal"
+        "Use a smaller mask and simply increase oxygen flow",
+        "Insert an oral airway and use a two-hand mask technique",
+        "Increase inspiratory pressure while keeping the same one-hand grip",
+        "Switch to a smaller mask regardless of fit"
       ],
       "answer": [
         1
@@ -3497,12 +3497,12 @@
       "id": "AIR-144",
       "set": 1,
       "type": "single",
-      "stem": "After induction, BMV is inadequate with no chest rise. What is the FIRST step?",
+      "stem": "Immediately after induction, mask ventilation produces no chest rise. Before moving to a supraglottic airway or invasive rescue, what should be done FIRST?",
       "options": [
         "Reposition the head and neck",
-        "Place an LMA immediately",
-        "Perform a cricothyrotomy",
-        "Intubate without trying BMV again"
+        "Insert a laryngeal mask immediately",
+        "Perform cricothyrotomy",
+        "Attempt intubation without restoring ventilation"
       ],
       "answer": [
         0
@@ -3521,12 +3521,12 @@
       "id": "AIR-145",
       "set": 1,
       "type": "single",
-      "stem": "After induction, BMV is inadequate. Which escalation sequence is correct?",
+      "stem": "Mask ventilation remains inadequate after induction. Which escalation order is most appropriate?",
       "options": [
-        "OPA, cric, reposition, SGA, then ETT as the final step",
-        "SGA, reposition, OPA, cric, then ETT",
-        "Cric, SGA, OPA, reposition, then ETT",
-        "Reposition, OPA, two-hand seal, SGA or ETT, then cric"
+        "OPA → cricothyrotomy → reposition → SGA → ETT",
+        "SGA → reposition → OPA → cricothyrotomy → ETT",
+        "Cricothyrotomy → SGA → OPA → reposition → ETT",
+        "Reposition → OPA → two-hand seal → SGA or ETT → cricothyrotomy if oxygenation still fails"
       ],
       "answer": [
         3
@@ -3545,12 +3545,12 @@
       "id": "AIR-146",
       "set": 1,
       "type": "single",
-      "stem": "One provider cannot seal the mask on a bearded, obese patient. Refer to the two-person BMV figure. What is the advantage?",
+      "stem": "A bearded, obese patient cannot be ventilated effectively with a one-hand mask grip. What is the main advantage of switching to a two-person bag-mask technique?",
       "options": [
-        "It reduces gastric insufflation completely",
-        "It replaces the need for adjuncts",
-        "Two-handed seal plus ventilation",
-        "Two people can ventilate faster"
+        "It eliminates gastric insufflation",
+        "It makes airway adjuncts unnecessary",
+        "One provider can maintain a two-handed seal and jaw thrust while the other ventilates",
+        "It allows faster ventilation regardless of seal"
       ],
       "answer": [
         2
@@ -3569,14 +3569,14 @@
       "id": "AIR-147",
       "set": 1,
       "type": "multi",
-      "stem": "An obese, edentulous patient with an NG tube is predicted to be difficult to mask. Which steps improve BMV? (Select 3)",
+      "stem": "An obese, edentulous patient with a nasogastric tube is predicted to be difficult to mask ventilate. Which THREE steps can improve the chance of effective BMV? (Select 3)",
       "options": [
-        "Removing dentures in every patient",
-        "Laying the patient flat",
-        "Avoiding oral airways",
-        "Ramping",
-        "Leaving dentures in if they improve the seal",
-        "Considering removal of the NG tube"
+        "Remove dentures in every patient",
+        "Keep the patient flat",
+        "Avoid oral airways",
+        "Use a ramped position",
+        "Leave dentures in when they improve the mask seal",
+        "Consider removing the nasogastric tube"
       ],
       "answer": [
         3,
@@ -3597,12 +3597,12 @@
       "id": "AIR-148",
       "set": 1,
       "type": "single",
-      "stem": "A pregnant woman at term and a BMI 50 patient desaturate within 60 seconds of apnea. What do they share?",
+      "stem": "A term parturient and a patient with BMI 50 both desaturate rapidly during apnea despite similar preoxygenation. Which shared physiologic change best explains this?",
       "options": [
-        "Decreased FRC",
-        "Increased FRC",
-        "Lower oxygen consumption",
-        "Better preoxygenation"
+        "Reduced functional residual capacity",
+        "Increased functional residual capacity",
+        "Reduced oxygen consumption",
+        "More effective nitrogen washout"
       ],
       "answer": [
         0
@@ -3621,12 +3621,12 @@
       "id": "AIR-149",
       "set": 1,
       "type": "single",
-      "stem": "During apneic oxygenation, oxygen keeps entering the lungs even though the patient is not breathing. What is the mechanism?",
+      "stem": "During apnea, oxygen continues to move from the pharynx into the alveoli even without diaphragmatic movement. What creates this inward flow?",
       "options": [
-        "Residual negative pressure from the last breath",
-        "Positive pressure pushes oxygen in",
-        "The patient breathes spontaneously",
-        "O2 uptake outpaces CO2 return"
+        "Residual negative pressure from the final breath",
+        "Positive-pressure ventilation",
+        "Occult spontaneous respirations",
+        "Oxygen uptake exceeds carbon dioxide return, creating a pressure gradient"
       ],
       "answer": [
         3
@@ -3645,9 +3645,9 @@
       "id": "AIR-150",
       "set": 1,
       "type": "single",
-      "stem": "How much CO2 enters the alveoli per minute during apnea?",
+      "stem": "During apnea, oxygen uptake continues but relatively little carbon dioxide returns to the alveoli. Approximately how much CO2 enters the alveoli each minute?",
       "options": [
-        "About 100 mL/min at rest",
+        "About 100 mL/min",
         "About 1 mL/min",
         "About 8–20 mL/min",
         "About 250 mL/min"
