@@ -2539,7 +2539,7 @@
       "id": "PAIN-103",
       "set": 1,
       "type": "single",
-      "stem": "Your PACU is staffing for high-pain cases. Which surgical population has the highest overall pain severity?",
+      "stem": "When allocating extra PACU analgesia resources based on the source's procedure-level pain data, which surgical population has the highest overall pain severity?",
       "options": [
         "Orthopedics",
         "Ophthalmology",
@@ -2640,12 +2640,12 @@
       "id": "PAIN-107",
       "set": 1,
       "type": "single",
-      "stem": "A patient has adequate analgesia, but his glucose climbs and he has a negative nitrogen balance after a major case. What explains this?",
+      "stem": "A patient has excellent regional analgesia after major surgery yet still develops hyperglycemia and negative nitrogen balance. Which conclusion best explains the findings?",
       "options": [
-        "Stress response persists apart from pain",
-        "Pain control prevents catabolism after surgery",
-        "The stress response is caused by pain alone",
-        "Opioids directly cause hyperglycemia"
+        "The surgical stress response can persist despite good pain control",
+        "Pain control prevents postoperative catabolism",
+        "The stress response is caused by conscious pain alone",
+        "Opioids directly cause the entire metabolic response"
       ],
       "answer": [
         0
@@ -2744,12 +2744,12 @@
       "id": "PAIN-111",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old is positioned in beach chair for shoulder surgery under GA. How should you dose opioids at induction?",
+      "stem": "A 70-year-old will be positioned in beach chair for shoulder surgery, where hypotension may threaten cerebral perfusion. Which induction-opioid strategy best avoids compounding that risk?",
       "options": [
-        "Short-acting or minimal opioids at induction",
-        "Large long-acting boluses at induction",
-        "Long-acting opioids for postop comfort",
-        "Intrathecal morphine before positioning"
+        "Use short-acting or minimal opioid dosing at induction",
+        "Give a large long-acting opioid bolus",
+        "Front-load long-acting opioid for postoperative comfort",
+        "Give intrathecal morphine before positioning"
       ],
       "answer": [
         0
@@ -2893,12 +2893,12 @@
       "id": "PAIN-117",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a new cast reports throbbing pain that improves when the arm is elevated on pillows. What does this show?",
+      "stem": "A patient with a new extremity cast reports throbbing pain that decreases substantially when the limb is elevated. Which analgesic principle does this demonstrate?",
       "options": [
-        "Repositioning and elevation can reduce discomfort",
-        "Positioning replaces the need for analgesics",
-        "Positioning increases opioid needs",
-        "Positioning prevents PONV"
+        "Positioning and elevation can treat a mechanical contributor to discomfort",
+        "Positioning eliminates the need for pharmacologic analgesia",
+        "Elevation increases opioid requirements",
+        "Positioning primarily prevents PONV"
       ],
       "answer": [
         0
@@ -2997,12 +2997,12 @@
       "id": "PAIN-121",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a single-shot interscalene block for rotator cuff repair is being discharged at 4 p.m. What is the MOST important pain instruction?",
+      "stem": "A patient with a single-shot interscalene block is comfortable at ambulatory discharge, but the block is expected to resolve that evening. Which instruction best prevents a severe rebound-pain gap?",
       "options": [
-        "Start oral analgesics before the block wears off",
-        "Avoid oral analgesics until the block is gone",
-        "Expect no pain after the block",
-        "Use ice alone once the block resolves"
+        "Begin prescribed oral analgesics before block resolution",
+        "Wait until the block is completely gone before taking analgesics",
+        "Expect no pain once the block resolves",
+        "Use ice alone after block resolution"
       ],
       "answer": [
         0
@@ -3152,12 +3152,12 @@
       "id": "PAIN-127",
       "set": 1,
       "type": "single",
-      "stem": "During induction, what must be done with controlled substances?",
+      "stem": "During induction, controlled-substance syringes are prepared but not all have been administered. Which handling principle remains mandatory despite the team's attention being focused on the airway?",
       "options": [
-        "Keep them secured at all times",
-        "Leave them on the cart for easy access",
-        "Share them with other rooms as needed",
-        "Store them in the PACU until needed"
+        "Keep controlled substances secured at all times",
+        "Leave them unattended on the cart for rapid access",
+        "Share unused syringes with another room",
+        "Transfer them to PACU until needed"
       ],
       "answer": [
         0
@@ -3200,12 +3200,12 @@
       "id": "PAIN-129",
       "set": 1,
       "type": "single",
-      "stem": "You give 100 mcg fentanyl at induction, but the surgeon won't incise for another 20 minutes because of positioning. What should you plan for?",
+      "stem": "Fentanyl is given at induction, but positioning delays incision for 20 minutes. If significant nociceptive stimulation is expected at incision, which plan best matches opioid timing to effect?",
       "options": [
-        "Redose timed to the incision",
-        "Stopping all opioids before incision to avoid apnea",
-        "An NSAID at induction instead of any further opioid",
-        "Avoiding local anesthetic infiltration at the time of incision"
+        "Reassess and redose so analgesic effect is timed to incision",
+        "Stop all opioids before incision",
+        "Substitute an NSAID for any further opioid regardless of patient factors",
+        "Avoid local infiltration because fentanyl was already given"
       ],
       "answer": [
         0
@@ -3344,7 +3344,7 @@
       "id": "PAIN-135",
       "set": 1,
       "type": "single",
-      "stem": "For a colectomy, you want an infusion with analgesic, antihyperalgesic, and anti-inflammatory effects that also helps bowel recovery. Which fits?",
+      "stem": "An open colectomy patient is at risk for opioid-related ileus, and an infusion with analgesic, antihyperalgesic, and anti-inflammatory effects is desired. Which adjunct best fits?",
       "options": [
         "IV lidocaine",
         "IV morphine",
@@ -3498,9 +3498,9 @@
       "id": "PAIN-141",
       "set": 1,
       "type": "single",
-      "stem": "A 70 kg patient receives a magnesium infusion during a spine fusion. What outcome should you expect in the first 24 hours?",
+      "stem": "A patient receives perioperative magnesium as part of an opioid-sparing spine-fusion regimen. According to the cited evidence, which early postoperative outcome is expected?",
       "options": [
-        "Lower pain scores and less opioid use",
+        "Lower pain scores and reduced opioid use",
         "Higher pain scores",
         "No change in opioid use",
         "Severe hypotension in most patients"
@@ -3724,12 +3724,12 @@
       "id": "PAIN-150",
       "set": 1,
       "type": "single",
-      "stem": "Near the end of a laparoscopic case, the patient is breathing spontaneously on pressure support. How can you best titrate the remaining opioid?",
+      "stem": "Near the end of a laparoscopic case, a patient is breathing spontaneously on pressure support after receiving opioids. Which real-time physiologic endpoint can help titrate additional opioid while avoiding excessive ventilatory depression?",
       "options": [
-        "Titrate to respiratory rate during spontaneous breathing",
-        "Keep controlled ventilation until extubation criteria are met",
-        "Stop all opioids at incision",
-        "Give naloxone to speed emergence"
+        "Spontaneous respiratory rate and pattern",
+        "Maintain controlled ventilation so respiratory effect cannot be assessed",
+        "Stop all opioids regardless of pain",
+        "Give naloxone solely to speed emergence"
       ],
       "answer": [
         0
