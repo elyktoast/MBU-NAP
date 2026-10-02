@@ -109,7 +109,7 @@
       "id": "PRE-005",
       "set": 1,
       "type": "single",
-      "stem": "A 66-year-old takes metoprolol, lisinopril, furosemide, and glipizide. To avoid rebound sympathetic effects without increasing common peri-induction medication risks, which drug should be taken with a sip of water?",
+      "stem": "A 66-year-old takes metoprolol, lisinopril for hypertension, furosemide for uncomplicated hypertension, and glipizide. Which medication is most consistently continued on the morning of surgery to avoid withdrawal-related tachycardia and ischemia?",
       "options": [
         "Metoprolol",
         "Lisinopril",
@@ -119,7 +119,7 @@
       "answer": [
         0
       ],
-      "explanation": "Beta-blockers are continued to avoid rebound tachycardia and ischemia. ACE inhibitors, diuretics, and oral hypoglycemics are held.",
+      "explanation": "Chronic beta-blockers are generally continued perioperatively because abrupt withdrawal can cause tachycardia and ischemia. Management of renin-angiotensin system inhibitors and diuretics depends on indication, patient status, and procedural risk; oral sulfonylureas are withheld while fasting.",
       "citation": "",
       "topic": "Preop process, chart review, and home medications",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -133,7 +133,7 @@
       "id": "PRE-006",
       "set": 1,
       "type": "single",
-      "stem": "A patient takes losartan, amlodipine, and hydrochlorothiazide. Which morning-of-surgery plan best avoids medication-related hypotension or volume depletion while maintaining usual antihypertensive therapy?",
+      "stem": "A patient takes losartan for uncomplicated hypertension, amlodipine, and hydrochlorothiazide and is scheduled for major surgery with expected fluid shifts. Which plan is most consistent with limiting peri-induction hypotension while maintaining needed antihypertensive therapy?",
       "options": [
         "Take amlodipine; hold losartan and hydrochlorothiazide",
         "Take losartan; hold amlodipine and hydrochlorothiazide",
@@ -143,7 +143,7 @@
       "answer": [
         0
       ],
-      "explanation": "Most antihypertensives are taken, but ARBs, ACE inhibitors, and diuretics are held. Losartan and HCTZ are held; amlodipine is taken.",
+      "explanation": "Amlodipine is generally continued. For a patient taking an ARB for hypertension who is undergoing higher-risk surgery, withholding it before surgery may reduce intraoperative hypotension; a thiazide may also be withheld when fasting or volume depletion is a concern. ARBs used for heart failure require separate individualized consideration.",
       "citation": "",
       "topic": "Preop process, chart review, and home medications",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -157,9 +157,9 @@
       "id": "PRE-007",
       "set": 1,
       "type": "single",
-      "stem": "A 68-year-old takes lisinopril 40 mg every morning, including today, and is induced with propofol 150 mg. BP falls to 68/35 and responds only briefly to phenylephrine. What mechanism BEST explains this?",
+      "stem": "A 68-year-old taking lisinopril for hypertension takes the usual dose on the morning of major surgery. After induction, BP falls to 68/35 and responds poorly to phenylephrine. Which mechanism can contribute to this pattern?",
       "options": [
-        "Blunted renin-angiotensin response",
+        "Reduced angiotensin II-mediated vasoconstrictor compensation during anesthetic vasodilation",
         "Lisinopril causes direct myocardial depression with propofol",
         "Lisinopril causes hyperkalemia that depresses contractility",
         "Lisinopril prolongs propofol's redistribution half-life"
@@ -167,7 +167,7 @@
       "answer": [
         0
       ],
-      "explanation": "With the renin-angiotensin system blocked, the patient cannot compensate for anesthetic vasodilation, so hypotension is refractory to standard pressors. This is why ACE inhibitors and ARBs are commonly held.",
+      "explanation": "ACE inhibition reduces angiotensin II-mediated compensatory vasoconstriction, which can contribute to marked peri-induction hypotension and reduced responsiveness to catecholamine vasopressors. This is one reason preoperative continuation versus withholding is based on indication and surgical risk rather than a universal rule.",
       "citation": "",
       "topic": "Preop process, chart review, and home medications",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -695,10 +695,10 @@
       "id": "PRE-029",
       "set": 1,
       "type": "multi",
-      "stem": "A chart carries a difficult-airway alert, but the patient cannot recall details. Which two chart elements are most important to review before finalizing the airway plan? (Select 2)",
+      "stem": "A chart carries a difficult-airway alert, but the patient cannot recall details. Which two previous-record findings would be most useful before finalizing the airway plan? (Select 2)",
       "options": [
-        "Previous intubation or airway-management records",
-        "Current consent, allergies, and medication list",
+        "Previous laryngoscopic view and device used for intubation",
+        "Documentation of mask ventilation or supraglottic-airway difficulty",
         "The surgeon's postoperative dictation template",
         "The planned discharge destination",
         "The patient's preferred postoperative diet",
@@ -708,7 +708,7 @@
         0,
         1
       ],
-      "explanation": "Chart review covers ID, procedure, prior records including intubation notes, labs, risk stratification, consent, allergies, and medications.",
+      "explanation": "Prior airway records can reveal both intubation difficulty and difficulty with mask or supraglottic ventilation. Those details directly inform the primary airway strategy and rescue plan.",
       "citation": "",
       "topic": "Preop process, chart review, and home medications",
       "sourceTitle": "Perioperative Assessment & Evaluation",
