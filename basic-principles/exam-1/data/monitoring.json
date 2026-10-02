@@ -2842,7 +2842,7 @@
       "id": "MON-115",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the capnogram phases figure. Right after inspiration ends, the trace stays at zero briefly before rising. Why?",
+      "stem": "Immediately after inspiration ends, a normal capnogram remains at zero briefly before the expiratory upstroke begins. Why?",
       "options": [
         "Dead space gas is exhaled first",
         "Alveolar gas is exhaled first",
@@ -2856,12 +2856,7 @@
       "citation": "",
       "topic": "Capnography and expired gases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
-      "image": {
-        "kind": "direct",
-        "url": "figures/monitoring/fig-64.svg",
-        "id": 64,
-        "title": "Figure 64"
-      },
+      "image": null,
       "sourceMeta": {
         "sourcePackage": "Monitoring",
         "originalFigure": 64
@@ -2871,12 +2866,12 @@
       "id": "MON-116",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the capnogram phases figure. Which point is the ETCO2?",
+      "stem": "Where on a normal time capnogram is end-tidal CO2 measured?",
       "options": [
-        "Point D",
-        "Point B",
-        "Point C",
-        "Point E"
+        "At the end of the alveolar plateau immediately before inspiration",
+        "At the start of the expiratory upstroke",
+        "At the midpoint of the alveolar plateau",
+        "At the end of the inspiratory downstroke"
       ],
       "answer": [
         0
@@ -2885,12 +2880,7 @@
       "citation": "",
       "topic": "Capnography and expired gases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
-      "image": {
-        "kind": "direct",
-        "url": "figures/monitoring/fig-64.svg",
-        "id": 64,
-        "title": "Figure 64"
-      },
+      "image": null,
       "sourceMeta": {
         "sourcePackage": "Monitoring",
         "originalFigure": 64
@@ -2900,12 +2890,12 @@
       "id": "MON-117",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the capnogram phases figure. What happens during D–E?",
+      "stem": "What occurs during the inspiratory downstroke of a normal capnogram?",
       "options": [
-        "Inspiration brings fresh gas and CO2 falls to baseline",
-        "Alveolar gas is sampled at the plateau before inspiration",
-        "Dead space gas is exhaled first",
-        "CO2 rises steeply as alveoli empty"
+        "Fresh gas is inspired and measured CO2 rapidly falls toward baseline",
+        "Alveolar gas is sampled at a stable plateau",
+        "Dead-space gas is exhaled before CO2 appears",
+        "Mixed dead-space and alveolar gas causes the expiratory upstroke"
       ],
       "answer": [
         0
@@ -2914,12 +2904,7 @@
       "citation": "",
       "topic": "Capnography and expired gases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
-      "image": {
-        "kind": "direct",
-        "url": "figures/monitoring/fig-64.svg",
-        "id": 64,
-        "title": "Figure 64"
-      },
+      "image": null,
       "sourceMeta": {
         "sourcePackage": "Monitoring",
         "originalFigure": 64
