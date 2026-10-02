@@ -11002,12 +11002,12 @@
       "id": "MISC-451",
       "set": 1,
       "type": "single",
-      "stem": "After contact with which workstation zone should gloves be changed or hand hygiene performed before returning to clean tasks?",
+      "stem": "After airway manipulation, the CRNA's gloves have contacted oral secretions. Before opening a clean drug drawer, what transition requires glove change and hand hygiene?",
       "options": [
-        "Red or dirty zones",
-        "Green or clean zones",
-        "Both zones equally",
-        "Neither zone"
+        "Red or dirty zone to green or clean zone",
+        "Green zone to another green zone",
+        "Clean medication area to clean syringe area",
+        "No transition requires hygiene while gloves remain intact"
       ],
       "answer": [
         0
@@ -11074,12 +11074,12 @@
       "id": "MISC-454",
       "set": 1,
       "type": "single",
-      "stem": "A wound infection develops 27 days after laparoscopic appendectomy without an implant. Does the timing meet the SSI surveillance definition?",
+      "stem": "Purulent drainage develops at the incision 27 days after laparoscopic appendectomy with no implant. Does the timing remain within the SSI surveillance window described in the course?",
       "options": [
         "Yes, it is within the 30-day window",
-        "No, it is outside the 30-day window",
+        "No, surveillance ends before day 27",
         "No, appendectomy is excluded",
-        "Only if an implant was placed"
+        "Only infections involving an implant count after discharge"
       ],
       "answer": [
         0
@@ -11098,12 +11098,12 @@
       "id": "MISC-455",
       "set": 1,
       "type": "single",
-      "stem": "A deep prosthetic-joint infection is diagnosed 78 days after total knee replacement. Which feature makes it fall within the SSI surveillance window described in the lecture?",
+      "stem": "A deep prosthetic-joint infection is diagnosed 78 days after total knee replacement. Why can it still meet the SSI surveillance timing described in the course?",
       "options": [
         "The prosthetic implant extends surveillance to 90 days",
-        "All surgical wounds are monitored for 90 days",
-        "Deep infections have no time limit",
-        "Joint procedures are exempt from the 30-day rule"
+        "Every surgical wound is monitored for 90 days",
+        "Deep infection has no surveillance time limit",
+        "Joint procedures are exempt from standard surveillance"
       ],
       "answer": [
         0
@@ -11194,12 +11194,12 @@
       "id": "MISC-459",
       "set": 1,
       "type": "single",
-      "stem": "Cefazolin is given 105 minutes before an 0800 incision. Which prophylaxis target was missed?",
+      "stem": "Cefazolin is completed at 0615 for an 0800 incision. No special prolonged-infusion indication exists. Which prophylaxis problem should be corrected?",
       "options": [
-        "Most antibiotics should be given within 60 minutes before incision",
-        "Glucose control",
-        "Normothermia",
-        "Normovolemia"
+        "Administration occurred outside the usual 60-minute preincision window",
+        "The glucose target was missed",
+        "The patient requires active warming",
+        "The patient is necessarily hypovolemic"
       ],
       "answer": [
         0
@@ -11338,7 +11338,7 @@
       "id": "MISC-465",
       "set": 1,
       "type": "single",
-      "stem": "Subtle tachycardia and rising ETCO2 prompt a CRNA to suspect MH before overt deterioration. Which nontechnical skill is most directly demonstrated?",
+      "stem": "Before any alarm threshold is crossed, a CRNA recognizes the combination of progressively rising ETCO2 and tachycardia as possible malignant hyperthermia and broadens the assessment. Which nontechnical skill is most directly demonstrated?",
       "options": [
         "Situational awareness",
         "Leadership",
@@ -11506,12 +11506,12 @@
       "id": "MISC-472",
       "set": 1,
       "type": "single",
-      "stem": "During hypotension, a CRNA keeps treating presumed propofol vasodilation despite new unilateral breath sounds. Which fixation subtype best fits?",
+      "stem": "Hypotension after induction is initially attributed to propofol. Vasopressors fail, and new unilateral breath sounds appear, but the CRNA continues treating only vasodilation. Which fixation subtype best fits?",
       "options": [
         "Cognitive tunnel vision: 'this and only this'",
         "Artifact error",
         "Avoidance error",
-        "Confirmation bias alone"
+        "Confirmation bias without fixation"
       ],
       "answer": [
         0
@@ -11554,7 +11554,7 @@
       "id": "MISC-474",
       "set": 1,
       "type": "single",
-      "stem": "Rising ETCO2 and tachycardia occur, but the CRNA dismisses MH because it is rare. Which fixation subtype best fits?",
+      "stem": "ETCO2 and heart rate rise progressively after volatile anesthetic exposure, but the CRNA refuses to consider malignant hyperthermia solely because it is uncommon. Which fixation subtype best fits?",
       "options": [
         "Avoidance error",
         "Artifact error",
@@ -11698,12 +11698,12 @@
       "id": "MISC-480",
       "set": 1,
       "type": "single",
-      "stem": "A team ignores a new ETCO2 drop because all attention is fixed on hypotension. What is the main cognitive risk?",
+      "stem": "During treatment of severe hypotension, ETCO2 abruptly falls and the surgical field changes, but the team ignores both because all attention remains on blood pressure. What is the main cognitive danger?",
       "options": [
-        "Missing another important cause because of fixation",
-        "Improved focus on the correct diagnosis",
-        "Reduced need for cognitive aids",
-        "Faster diagnosis"
+        "Fixation can cause a second important process to be missed",
+        "Narrow focus improves diagnostic accuracy during crises",
+        "Cognitive aids become unnecessary once treatment starts",
+        "A single abnormal variable should always dominate attention"
       ],
       "answer": [
         0
@@ -12013,7 +12013,7 @@
       "id": "MISC-493",
       "set": 1,
       "type": "single",
-      "stem": "Fair allocation of limited ICU beds most directly invokes which ethical principle?",
+      "stem": "Only one ICU bed remains and two patients have comparable need. Allocation is based on transparent clinical criteria rather than wealth, status, or personal preference. Which ethical principle is most directly invoked?",
       "options": [
         "Justice",
         "Autonomy",
@@ -12181,12 +12181,12 @@
       "id": "MISC-500",
       "set": 1,
       "type": "single",
-      "stem": "Which strategy is recommended to reduce alarm fatigue without compromising safety?",
+      "stem": "Frequent nuisance alarms are causing desensitization, but clinically important alerts must remain detectable. Which response best reduces alarm fatigue without sacrificing safety?",
       "options": [
-        "Follow alarm-safety protocols and manage alarms appropriately",
+        "Use alarm-safety protocols and appropriately tailor actionable alarm settings",
         "Silence all alarms during stable periods",
         "Set alarm volumes to zero",
-        "Widen limits whenever repeated alarms occur"
+        "Widen every limit whenever an alarm repeats"
       ],
       "answer": [
         0
