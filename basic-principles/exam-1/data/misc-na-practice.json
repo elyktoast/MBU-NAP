@@ -5039,10 +5039,10 @@
       "id": "MISC-204",
       "set": 1,
       "type": "single",
-      "stem": "A hospital creates mandatory health-equity training for all staff. At what APSF intervention level does this primarily operate?",
+      "stem": "A hospital mandates health-equity training, changes policy, and measures compliance across every perioperative department. At which APSF intervention level is this primarily operating?",
       "options": [
         "System level",
-        "Clinician level",
+        "Individual clinician level",
         "Patient level",
         "Research level"
       ],
@@ -5063,7 +5063,7 @@
       "id": "MISC-205",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA volunteers at a community health fair to address local disparities. At what APSF intervention level does this primarily operate?",
+      "stem": "Outside required institutional programs, a CRNA independently participates in community outreach intended to reduce local health disparities. At which APSF intervention level does this action primarily occur?",
       "options": [
         "Clinician level",
         "System level",
@@ -5135,12 +5135,12 @@
       "id": "MISC-208",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA collects outcomes by race and ethnicity as part of approved quality improvement. Which AANA recommendation is being followed?",
+      "stem": "A quality project suspects a disparity in postoperative pain treatment. Which AANA-recommended action would allow the department to determine whether outcomes actually differ across racial and ethnic groups?",
       "options": [
-        "Collect health-outcomes data",
+        "Collect and analyze health-outcomes data",
         "Recruit diverse students",
-        "Address linguistic barriers",
-        "Develop anti-racist policy"
+        "Address linguistic barriers only",
+        "Issue an anti-discrimination statement without measurement"
       ],
       "answer": [
         0
@@ -5183,12 +5183,12 @@
       "id": "MISC-210",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA uses a standardized evidence-based PONV protocol to reduce unwarranted variation across patients. Which AANA recommendation does this best reflect?",
+      "stem": "An audit finds PONV prophylaxis varies by clinician despite identical patient risk. Which AANA-recommended approach most directly reduces unwarranted variation?",
       "options": [
-        "Use evidence-based protocols when possible",
-        "Collect outcomes data",
-        "Assess community needs",
-        "Address linguistic barriers"
+        "Use an evidence-based standardized protocol when appropriate",
+        "Collect outcomes without changing practice",
+        "Assess community needs only",
+        "Address linguistic barriers only"
       ],
       "answer": [
         0
@@ -5255,7 +5255,7 @@
       "id": "MISC-213",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA insists on additional monitoring for a high-risk patient despite cost pressure. Which ethical principle is most directly reflected?",
+      "stem": "Hospital administrators pressure the anesthesia team to omit additional monitoring in a high-risk patient because of cost. The CRNA refuses because doing so would expose the patient to avoidable harm. Which ethical principle is most directly applied?",
       "options": [
         "Non-maleficence",
         "Justice",
@@ -5375,12 +5375,12 @@
       "id": "MISC-218",
       "set": 1,
       "type": "single",
-      "stem": "A patient signs anesthesia consent after receiving enough sedative to impair understanding and recall. What is the primary concern?",
+      "stem": "A patient receives enough sedative to impair attention and recall, then is asked to sign anesthesia consent for a plan not previously discussed. What is the primary ethical concern?",
       "options": [
-        "Decision-making capacity may be impaired, making consent invalid",
-        "The signature alone guarantees valid consent",
-        "Sedation improves consent quality",
-        "The surgeon's consent covers anesthesia"
+        "Sedation may impair decision-making capacity, undermining valid consent",
+        "A signature alone guarantees valid consent",
+        "Sedation improves comprehension by reducing anxiety",
+        "The surgical consent automatically covers anesthesia"
       ],
       "answer": [
         0
@@ -5759,12 +5759,12 @@
       "id": "MISC-234",
       "set": 1,
       "type": "single",
-      "stem": "A study offers payment large enough that participants may feel unable to refuse. Which ethical protection is most threatened?",
+      "stem": "A low-income participant is offered a payment so large relative to usual income that declining the study may no longer feel realistic. Which research protection is most threatened?",
       "options": [
-        "Voluntary participation",
+        "Voluntary participation free of undue influence",
         "Confidentiality",
         "Privacy",
-        "IRB oversight"
+        "IRB existence"
       ],
       "answer": [
         0
@@ -5955,7 +5955,7 @@
       "id": "MISC-242",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA repeatedly silences nuisance alarms and later misses a clinically important alert. Which human-factors problem is this?",
+      "stem": "After repeatedly silencing nuisance alarms during a long case, a CRNA becomes desensitized and fails to respond promptly to a true desaturation alarm. Which human-factors problem best explains the miss?",
       "options": [
         "Alarm fatigue",
         "Avoidance error",
@@ -6099,9 +6099,9 @@
       "id": "MISC-248",
       "set": 1,
       "type": "single",
-      "stem": "A sleep-deprived CRNA notices reduced awareness of the surrounding environment before a case. What does this most likely indicate?",
+      "stem": "After severe sleep loss, a CRNA has slowed responses, poor concentration, and reduced awareness of the OR environment before induction. Which condition best explains this cluster?",
       "options": [
-        "Fatigue",
+        "Clinically important fatigue",
         "Normal alertness",
         "Improved vigilance",
         "Enhanced situational awareness"
@@ -6147,7 +6147,7 @@
       "id": "MISC-250",
       "set": 1,
       "type": "single",
-      "stem": "A contaminated stethoscope harbors microorganisms between patients. Which link in the chain of infection does it represent?",
+      "stem": "A contaminated stethoscope remains colonized between patients and serves as a place where microorganisms persist before transfer. Which link in the chain of infection does it most directly represent?",
       "options": [
         "Reservoir",
         "Portal of entry",
