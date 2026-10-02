@@ -4996,12 +4996,12 @@
       "id": "PAIN-201",
       "set": 1,
       "type": "single",
-      "stem": "A patient has developed tolerance to his opioid. Does this mean he is physically dependent?",
+      "stem": "A patient requires progressively larger opioid doses for the same analgesia but has never developed withdrawal when doses are missed. Which conclusion is MOST accurate?",
       "options": [
-        "No, tolerance does not equal dependence",
-        "Yes, tolerance means dependence",
-        "Yes, tolerance means addiction",
-        "Yes, tolerance and dependence always coexist"
+        "Tolerance can exist without physical dependence",
+        "Tolerance proves physical dependence",
+        "Tolerance establishes opioid use disorder",
+        "Tolerance and dependence are physiologically identical"
       ],
       "answer": [
         0
@@ -5073,14 +5073,14 @@
       "id": "PAIN-204",
       "set": 1,
       "type": "multi",
-      "stem": "A 50-year-old on oxycodone 60 mg/day is scheduled for a laminectomy. Which planning steps apply? (Select 4)",
+      "stem": "A patient taking oxycodone 60 mg/day presents for lumbar fusion. Which four actions BEST prevent both withdrawal and undertreatment? (Select 4)",
       "options": [
-        "Identify opioid dependence",
+        "Identify the degree of opioid dependence",
         "Calculate the baseline opioid requirement",
         "Prioritize multimodal and regional techniques",
-        "Plan when to restart home medications",
+        "Plan when chronic medications will resume",
         "Stop all home opioids before surgery",
-        "Avoid ketamine"
+        "Avoid ketamine because of opioid tolerance"
       ],
       "answer": [
         0,
@@ -5131,12 +5131,12 @@
       "id": "PAIN-206",
       "set": 1,
       "type": "single",
-      "stem": "A chronic pain patient on duloxetine and ondansetron asks for tramadol after surgery. What is the main concern?",
+      "stem": "A chronic-pain patient taking duloxetine will receive ondansetron for PONV prophylaxis and requests tramadol postoperatively. Which interaction should MOST influence the plan?",
       "options": [
-        "Serotonergic interactions",
-        "Ketorolac would cause more bleeding",
-        "Acetaminophen would injure her liver",
-        "Ondansetron would prolong her QT interval dangerously"
+        "Tramadol adds serotonergic activity and may interact with duloxetine; ondansetron may also reduce its analgesic effect",
+        "Tramadol primarily increases surgical bleeding when combined with duloxetine",
+        "Ondansetron converts tramadol into a more potent opioid metabolite",
+        "Duloxetine prevents opioid respiratory depression"
       ],
       "answer": [
         0
@@ -5155,12 +5155,12 @@
       "id": "PAIN-207",
       "set": 1,
       "type": "single",
-      "stem": "A patient takes oxycodone 30 mg twice daily and asks what to do on the morning of surgery. What is the correct instruction?",
+      "stem": "A physically opioid-dependent patient takes scheduled oxycodone and is NPO for surgery. Which principle should guide the morning-of-surgery plan?",
       "options": [
-        "Take the normal opioid dose",
-        "Skip the dose to reduce respiratory risk",
-        "Take half the usual dose",
-        "Take half the dose"
+        "Maintain the patient's usual baseline opioid exposure or provide an appropriate equivalent to prevent withdrawal",
+        "Withhold all opioid because fasting eliminates baseline requirements",
+        "Reduce the usual dose by half in every patient",
+        "Replace the opioid with a mixed agonist-antagonist"
       ],
       "answer": [
         0
@@ -5203,12 +5203,12 @@
       "id": "PAIN-209",
       "set": 1,
       "type": "single",
-      "stem": "A patient on buprenorphine for OUD needs more analgesia after surgery. Which opioids are recommended to supplement?",
+      "stem": "A patient maintained on buprenorphine has substantial postoperative pain despite multimodal therapy. Which supplemental opioid strategy BEST matches the source?",
       "options": [
-        "Morphine, hydromorphone, or fentanyl",
-        "Nalbuphine or butorphanol",
-        "Naltrexone",
-        "Methadone alone"
+        "Use a full agonist such as hydromorphone, fentanyl, or morphine as needed",
+        "Use nalbuphine because mu antagonism improves buprenorphine analgesia",
+        "Give naltrexone before a full agonist",
+        "Avoid all full agonists because they cannot provide any analgesia"
       ],
       "answer": [
         0
@@ -5255,12 +5255,12 @@
       "id": "PAIN-211",
       "set": 1,
       "type": "single",
-      "stem": "A patient on chronic oxycodone is given butorphanol for pain and becomes agitated, sweating, and nauseated. What happened?",
+      "stem": "A patient physically dependent on oxycodone receives butorphanol and rapidly develops diaphoresis, agitation, abdominal cramping, and tachycardia. What is the BEST explanation?",
       "options": [
-        "Precipitated withdrawal",
-        "Opioid overdose from additive effects",
-        "Butorphanol caused opioid overdose",
-        "The patient has serotonin syndrome"
+        "Mu antagonism from a mixed agonist-antagonist precipitated withdrawal",
+        "Additive full-mu agonism produced opioid overdose",
+        "The patient developed local anesthetic systemic toxicity",
+        "The symptoms demonstrate serotonin syndrome"
       ],
       "answer": [
         0
@@ -5351,12 +5351,12 @@
       "id": "PAIN-215",
       "set": 1,
       "type": "single",
-      "stem": "A patient on high-dose hydromorphone has little relief despite escalating doses. Which technique can restore analgesic sensitivity?",
+      "stem": "A highly opioid-tolerant patient receives escalating hydromorphone with diminishing benefit and increasing adverse effects. Which strategy may improve analgesic responsiveness without simply escalating the same opioid?",
       "options": [
         "Opioid rotation, commonly to methadone",
-        "Adding a basal infusion",
-        "Stopping all opioids",
-        "Adding a mixed agonist-antagonist"
+        "Add a basal infusion of the same opioid regardless of current exposure",
+        "Abruptly stop all opioids",
+        "Substitute a mixed agonist-antagonist"
       ],
       "answer": [
         0
@@ -5399,12 +5399,12 @@
       "id": "PAIN-217",
       "set": 1,
       "type": "single",
-      "stem": "An opioid-naive patient and an opioid-tolerant patient both need a PCA. For which patient might a basal infusion be considered?",
+      "stem": "Two patients need PCA after major surgery. One is opioid-naive; the other has substantial chronic opioid tolerance. In which patient may a basal infusion reasonably be considered?",
       "options": [
-        "The opioid-tolerant patient",
-        "The opioid-naive patient",
-        "Both patients equally",
-        "Neither patient"
+        "The opioid-tolerant patient after accounting for baseline requirements",
+        "The opioid-naive patient because a basal rate is safer",
+        "Both patients because basal infusions reduce respiratory depression",
+        "Neither patient under any circumstance"
       ],
       "answer": [
         0
@@ -5471,12 +5471,12 @@
       "id": "PAIN-220",
       "set": 1,
       "type": "single",
-      "stem": "A patient on chronic opioids receives no opioid all day to \"avoid respiratory depression\" and develops tachycardia, diaphoresis, and agitation. What should have been done?",
+      "stem": "A physically opioid-dependent patient receives no baseline opioid on the day of surgery to 'avoid respiratory depression' and later develops tachycardia, diaphoresis, cramping, and agitation. Which management error MOST directly caused this?",
       "options": [
-        "Give adequate opioid doses",
-        "Withhold opioids to prevent addiction",
-        "Give a mixed agonist-antagonist",
-        "Give naloxone"
+        "Failure to provide adequate baseline opioid exposure to prevent withdrawal",
+        "Failure to administer naloxone prophylactically",
+        "Failure to use a mixed agonist-antagonist",
+        "Excessive continuation of the patient's usual opioid"
       ],
       "answer": [
         0
@@ -5567,12 +5567,12 @@
       "id": "PAIN-224",
       "set": 1,
       "type": "single",
-      "stem": "A patient with cancer pain has intolerable sedation and constipation despite opioid rotation. When is an intrathecal delivery system considered?",
+      "stem": "A patient with cancer pain remains severely symptomatic despite optimized systemic opioids and develops intolerable sedation and constipation with further escalation. Which escalation strategy is MOST appropriate to consider?",
       "options": [
-        "When opioids fail or harm",
-        "As first-line therapy",
-        "When the patient is opioid-naive",
-        "For acute postoperative pain"
+        "Intrathecal drug delivery",
+        "Systemic opioid escalation without limit",
+        "NSAID monotherapy regardless of contraindications",
+        "Discontinuing analgesia to reset tolerance"
       ],
       "answer": [
         0
@@ -5619,12 +5619,12 @@
       "id": "PAIN-226",
       "set": 1,
       "type": "single",
-      "stem": "An 84-year-old reports only mild discomfort after a hip fracture repair, though her exam suggests more pain. What age-related change helps explain this?",
+      "stem": "An older adult reports surprisingly little pain after hip-fracture repair but becomes distressed quickly once pain is established. Which age-related pattern BEST fits the source?",
       "options": [
-        "Pain threshold increases with age",
-        "Pain threshold decreases with age",
-        "Pain threshold is unchanged",
-        "Pain perception disappears"
+        "Higher pain threshold with lower pain tolerance",
+        "Lower threshold with higher tolerance",
+        "Higher threshold with higher tolerance",
+        "Lower threshold with lower tolerance"
       ],
       "answer": [
         0
@@ -5771,12 +5771,12 @@
       "id": "PAIN-232",
       "set": 1,
       "type": "single",
-      "stem": "A child is calm until a visibly panicked parent enters PACU, after which the child cries harder and reports more pain. What principle does this show?",
+      "stem": "A child is calm in PACU until a visibly panicked parent arrives, after which crying and reported pain intensify. Which interpretation BEST supports family-centered pain care?",
       "options": [
-        "Parental anxiety can worsen the child's distress",
-        "Parents reliably reduce a child's anxiety in recovery",
-        "Parents should be excluded from recovery",
-        "Parents do not affect a child's pain"
+        "Parental distress can amplify the child's distress and should itself be addressed",
+        "Parental presence directly causes nociception and should always be prohibited",
+        "The child's pain report becomes invalid when a parent is anxious",
+        "Parental anxiety has no meaningful effect on pediatric distress"
       ],
       "answer": [
         0
@@ -5847,12 +5847,12 @@
       "id": "PAIN-235",
       "set": 1,
       "type": "single",
-      "stem": "Nurses on a surgical floor undertreat pain because they fear patients will become addicted. What is key to changing these attitudes?",
+      "stem": "A surgical unit consistently undertreats pain because staff equate appropriate postoperative opioid use with addiction. Which intervention MOST directly addresses this barrier?",
       "options": [
-        "Education",
-        "Stricter opioid policies",
-        "Avoiding pain assessment",
-        "Using vital signs alone"
+        "Targeted education correcting misconceptions about pain and opioid use",
+        "Eliminate standardized pain assessment",
+        "Use vital signs instead of patient reports",
+        "Adopt stricter blanket opioid avoidance"
       ],
       "answer": [
         0
@@ -5925,12 +5925,12 @@
       "id": "PAIN-238",
       "set": 1,
       "type": "single",
-      "stem": "A colleague claims older patients always need less analgesia. What does the research on geriatric pain show?",
+      "stem": "An older patient reports severe pain despite receiving a dose that another older patient tolerated poorly. Which conclusion BEST reflects the geriatric evidence in the source?",
       "options": [
-        "The research is conflicting",
-        "Older adults feel little pain",
-        "Older adults need more opioids",
-        "Older adults need higher doses"
+        "Geriatric pain findings are variable, so assessment and dosing must be individualized",
+        "Age alone reliably predicts a lower analgesic requirement",
+        "Older adults consistently require higher opioid doses",
+        "Older adults experience little clinically important pain"
       ],
       "answer": [
         0
@@ -5997,12 +5997,12 @@
       "id": "PAIN-241",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old with OSA is scheduled for total knee replacement. Which plan BEST reduces opioid-related respiratory risk?",
+      "stem": "A 70-year-old with obstructive sleep apnea undergoes total knee arthroplasty. Which plan BEST balances strong analgesia with reduced opioid-related ventilatory risk?",
       "options": [
-        "Regional block plus non-opioids",
-        "High-dose IV hydromorphone with a basal PCA infusion overnight",
-        "Intrathecal morphine with an opioid PCA basal rate",
-        "Opioid-based plan with oxycodone every 3 hours and a PCA"
+        "Regional analgesia plus scheduled nonopioid multimodal therapy and limited rescue opioid",
+        "High-dose IV hydromorphone with a routine basal PCA infusion",
+        "Intrathecal morphine plus a basal opioid PCA regardless of monitoring",
+        "Scheduled systemic opioids as the primary strategy without regional analgesia"
       ],
       "answer": [
         0
@@ -6117,12 +6117,12 @@
       "id": "PAIN-246",
       "set": 1,
       "type": "single",
-      "stem": "You give fentanyl 100 mcg at induction for a case with incision 30 minutes later. What is the MOST likely issue?",
+      "stem": "Fentanyl is given at induction, but positioning delays incision for 30 minutes. Hemodynamics rise sharply when incision finally occurs. Which planning error BEST explains the response?",
       "options": [
-        "Fentanyl may wane before incision, requiring redosing",
-        "Fentanyl will peak exactly at incision",
-        "Fentanyl will cause prolonged emergence from accumulation",
-        "Fentanyl will cause chest wall rigidity at incision"
+        "The opioid's peak and useful duration were not matched to the timing of surgical stimulation",
+        "Fentanyl necessarily peaks 30 minutes after administration",
+        "The induction dose accumulated excessively before incision",
+        "Chest-wall rigidity is the expected cause of incision-related tachycardia"
       ],
       "answer": [
         0
@@ -6141,12 +6141,12 @@
       "id": "PAIN-247",
       "set": 1,
       "type": "single",
-      "stem": "A patient becomes apneic after opioids during preoxygenation. What planning error occurred?",
+      "stem": "An obese, anxious patient receives a large opioid dose before preoxygenation, becomes somnolent and apneic, and fails to achieve an adequate end-tidal oxygen concentration. Which error MOST directly contributed?",
       "options": [
-        "Opioid timing did not account for peak effect during preoxygenation",
-        "Preoxygenation lasted too long before induction",
-        "The patient was given too little opioid",
-        "The patient was not placed on nasal cannula during preoxygenation"
+        "Opioid peak effect was allowed to impair cooperation and ventilation during preoxygenation",
+        "Preoxygenation itself caused opioid accumulation",
+        "The opioid dose was inadequate for preoxygenation",
+        "Nasal cannula oxygen would have eliminated opioid-induced apnea"
       ],
       "answer": [
         0
@@ -6165,12 +6165,12 @@
       "id": "PAIN-248",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance, a patient's RR is 22 with dilated pupils as you prepare for emergence. What does this suggest?",
+      "stem": "Near emergence, a spontaneously breathing patient has a respiratory rate of 22/min and dilated pupils after a painful procedure. Which interpretation BEST fits these combined findings?",
       "options": [
-        "Inadequate analgesia requiring additional opioid",
-        "Excessive opioid effect requiring naloxone",
-        "Ideal analgesia for extubation",
-        "Residual neuromuscular blockade"
+        "Residual analgesia is likely inadequate, so cautious additional opioid may be appropriate",
+        "The patient has excessive opioid effect requiring naloxone",
+        "This is the ideal opioid endpoint for extubation",
+        "The findings specifically diagnose residual neuromuscular blockade"
       ],
       "answer": [
         0
@@ -6213,12 +6213,12 @@
       "id": "PAIN-250",
       "set": 1,
       "type": "single",
-      "stem": "During emergence after a craniotomy, BP rises to 175/95 as the patient coughs. Which response risks respiratory depression after extubation?",
+      "stem": "After craniotomy, a patient coughs during emergence and transiently becomes hypertensive while ventilation remains adequate. Which intervention is MOST likely to create avoidable post-extubation hypoventilation?",
       "options": [
-        "Giving large opioid boluses to lower the BP before extubation",
-        "Using IV lidocaine to blunt the cough reflex at emergence",
-        "Using a short-acting antihypertensive",
-        "Timing extubation carefully with the team"
+        "Large opioid boluses given primarily to suppress the transient blood-pressure response",
+        "IV lidocaine used to blunt airway reflexes",
+        "A titratable short-acting antihypertensive",
+        "Careful coordination of extubation timing"
       ],
       "answer": [
         0
