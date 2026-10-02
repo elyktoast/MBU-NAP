@@ -1427,8 +1427,8 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/quiz-bank-1.html?_mbu_reload=legacy');
     await page.evaluate(() => MBUPageReady);
     const before = page.url();
-    await page.waitForTimeout(250);
-    expect(page.url()).toBe(before);
+    await expect(page.locator('#dashboard')).toBeVisible();
+    await expect(page).toHaveURL(before);
     expect(new URL(page.url()).pathname).toBe(exam + '/quiz-bank-1.html');
   });
 
