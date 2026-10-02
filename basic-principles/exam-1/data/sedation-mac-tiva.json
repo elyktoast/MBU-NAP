@@ -2436,7 +2436,7 @@
       "id": "SED-101",
       "set": 1,
       "type": "single",
-      "stem": "A MAC case for a shoulder arthroscopy converts to TIVA after the block fails. How does temperature monitoring change?",
+      "stem": "A MAC case converts to TIVA after regional anesthesia fails. How should temperature monitoring change?",
       "options": [
         "It becomes continuous; under MAC it was used when indicated",
         "It stays \"as indicated,\" since the case began under MAC",
@@ -2460,7 +2460,7 @@
       "id": "SED-102",
       "set": 1,
       "type": "single",
-      "stem": "A patient on 4 L nasal cannula during MAC has an SpO2 of 99% while her capnogram shows a respiratory rate of 5 and rising ETCO2. Why does capnography matter most here?",
+      "stem": "SpO2 remains 99% on supplemental oxygen while RR falls to 5 and ETCO2 rises. Why is capnography more informative at this moment?",
       "options": [
         "SpO2 lags behind hypoventilation on supplemental oxygen",
         "Capnography directly measures sedation depth",
@@ -2484,7 +2484,7 @@
       "id": "SED-103",
       "set": 1,
       "type": "single",
-      "stem": "A patient under propofol MAC has 4 L O2 by plain nasal cannula, SpO2 99%, and appears comfortable. The pump shows 150 mcg/kg/min. Twelve minutes later she is found with SpO2 82%. Which equipment change would have MOST likely detected the problem earliest?",
+      "stem": "A propofol MAC patient on oxygen appears stable, then is found profoundly desaturated minutes later. Which monitoring change would most likely have detected deterioration earlier?",
       "options": [
         "A sampling nasal cannula connected to capnography",
         "Increasing the oxygen flow to 6 L/min",
@@ -2508,7 +2508,7 @@
       "id": "SED-104",
       "set": 1,
       "type": "single",
-      "stem": "Refer to Capnogram A. A sedated patient's trace shows regular waveforms with a flat zero baseline and plateau values of 38–40. What is the BEST action?",
+      "stem": "A sedated patient has regular capnogram waveforms, a zero baseline, and ETCO2 38–40. What is the best interpretation?",
       "options": [
         "Continue current care, since ventilation is adequate",
         "Stimulate her and hold further sedative",
@@ -2537,7 +2537,7 @@
       "id": "SED-105",
       "set": 1,
       "type": "single",
-      "stem": "Refer to Capnogram B. SpO2 is 97% on 3 L nasal cannula. What is the BEST interpretation?",
+      "stem": "During propofol sedation, the capnogram shows progressively slower breaths and rising ETCO2 while SpO2 remains 97% on oxygen. What is happening?",
       "options": [
         "Progressive hypoventilation masked by supplemental oxygen",
         "Adequate ventilation because SpO2 is normal",
@@ -2566,7 +2566,7 @@
       "id": "SED-106",
       "set": 1,
       "type": "single",
-      "stem": "Refer to Capnogram B. During propofol sedation, the trace shows slow, widely spaced breaths with rising peak ETCO2. SpO2 is 97% on 4 L. What is the FIRST action?",
+      "stem": "Bradypnea and rising ETCO2 develop during propofol sedation while SpO2 remains normal on oxygen. What is the first action?",
       "options": [
         "Stimulate the patient, support ventilation, and hold further drug",
         "Increase oxygen flow to 6 L/min and continue the infusion at the same rate",
@@ -2595,7 +2595,7 @@
       "id": "SED-107",
       "set": 1,
       "type": "single",
-      "stem": "Refer to Capnogram C. The waveform suddenly flattens while SpO2 reads 99%. What is the BEST first step?",
+      "stem": "The capnogram abruptly becomes flat while SpO2 remains 99%. What should be assumed first?",
       "options": [
         "Check the patient for apnea or obstruction immediately",
         "Trust SpO2 and assume a sampling artifact for now",
@@ -2624,7 +2624,7 @@
       "id": "SED-108",
       "set": 1,
       "type": "single",
-      "stem": "During deep sedation with supplemental oxygen, ventilation stops but SpO2 remains near 99% for several minutes. Why?",
+      "stem": "Why can a deeply sedated apneic patient remain at SpO2 99% for several minutes on supplemental oxygen?",
       "options": [
         "Supplemental oxygen raises oxygen reserve and delays desaturation",
         "Pulse oximetry measures ventilation rather than oxygenation",
@@ -2648,7 +2648,7 @@
       "id": "SED-109",
       "set": 1,
       "type": "single",
-      "stem": "A patient receiving 6 L/min by nasal cannula becomes apneic at 10:00. If only pulse oximetry is monitored, when would the problem most likely first become apparent?",
+      "stem": "If apnea begins while only pulse oximetry is being followed on supplemental oxygen, when is the problem likely to become obvious?",
       "options": [
         "Several minutes after apnea begins",
         "Within seconds of apnea",
@@ -2672,7 +2672,7 @@
       "id": "SED-110",
       "set": 1,
       "type": "single",
-      "stem": "In Closed Claim Case 1, which monitors were in place when the patient was found apneic?",
+      "stem": "In the lecture's closed-claim case, which respiratory monitors were already present when apnea went unrecognized?",
       "options": [
         "ECG, inspired oxygen, and ETCO2",
         "Pulse oximetry alone",
@@ -2696,7 +2696,7 @@
       "id": "SED-111",
       "set": 1,
       "type": "single",
-      "stem": "In Closed Claim Case 1, the patient was found apneic even though ECG, inspired oxygen, and ETCO2 were all in place. What does this teach?",
+      "stem": "What is the central lesson from a closed-claim case in which appropriate monitors were applied but apnea still went unrecognized?",
       "options": [
         "Monitors help only when the provider is watching and acting on them",
         "More monitors would have prevented the event on their own",
@@ -2720,7 +2720,7 @@
       "id": "SED-112",
       "set": 1,
       "type": "single",
-      "stem": "In Closed Claim Case 2, a patient was sedated in holding and suffered an arrest during transport to the OR. What was the key failure?",
+      "stem": "A sedated patient arrests during transport from holding to the OR. Which systems failure is most important?",
       "options": [
         "No monitoring during transport after sedation",
         "The wrong sedative was used",
@@ -2744,7 +2744,7 @@
       "id": "SED-113",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old with severe AS is scheduled for TAVR under MAC, while a healthy 30-year-old is scheduled for MAC for a breast biopsy. What determines the use of advanced hemodynamic monitoring?",
+      "stem": "Why might advanced hemodynamic monitoring be appropriate for TAVR under MAC but unnecessary for a healthy patient having a breast biopsy?",
       "options": [
         "Patient condition and procedure factors",
         "It is required for every MAC case",
@@ -2768,7 +2768,7 @@
       "id": "SED-114",
       "set": 1,
       "type": "multi",
-      "stem": "You are providing MAC for a hand surgery under a brachial plexus block. Which must be continuously monitored? (Select 3)",
+      "stem": "Which THREE physiologic variables must be continuously monitored during MAC? (Select 3)",
       "options": [
         "Heart rate",
         "Pulse oximetry",
@@ -2796,7 +2796,7 @@
       "id": "SED-115",
       "set": 1,
       "type": "single",
-      "stem": "A chart audit of a 3-hour MAC case shows SpO2 and ECG recorded continuously, BP every 5 minutes, and no capnography or temperature documented. The case was a 3-hour burn excision in a cool room. Which required elements are missing?",
+      "stem": "A 3-hour burn excision under MAC has continuous ECG and SpO2 but no capnography or temperature monitoring. Which required elements are missing?",
       "options": [
         "Ventilation monitoring and temperature monitoring",
         "Processed EEG and invasive arterial pressure",
@@ -2820,7 +2820,7 @@
       "id": "SED-116",
       "set": 1,
       "type": "single",
-      "stem": "During sedation, ETCO2 climbs from 38 to 58 while SpO2 stays 98% on 4 L. Why should this concern you?",
+      "stem": "ETCO2 rises from 38 to 58 while SpO2 remains 98% on oxygen. What does this indicate?",
       "options": [
         "It shows hypoventilation before oxygenation fails",
         "It shows the cannula is malfunctioning",
@@ -2844,7 +2844,7 @@
       "id": "SED-117",
       "set": 1,
       "type": "single",
-      "stem": "A patient's nasal cannula capnogram reads 28 with a good waveform, but an ABG shows PaCO2 44. How should you use the cannula reading?",
+      "stem": "Nasal-cannula ETCO2 reads 28 while PaCO2 is 44. How should the capnography value be used?",
       "options": [
         "Trend it, since dilution makes the absolute value read low",
         "Trust it, since cannula readings match PaCO2",
@@ -2868,7 +2868,7 @@
       "id": "SED-118",
       "set": 1,
       "type": "single",
-      "stem": "A patient's capnogram shows no waveform, but she is talking. What is the MOST likely cause?",
+      "stem": "The capnogram disappears, but the patient is awake and talking. What is the most likely explanation?",
       "options": [
         "Mouth breathing or sampling line problem",
         "Apnea with preserved speech",
@@ -2892,7 +2892,7 @@
       "id": "SED-119",
       "set": 1,
       "type": "single",
-      "stem": "A proceduralist says pulse oximetry is enough because \"if she stops breathing, the sat will drop.\" Why is this wrong during moderate sedation?",
+      "stem": "Why is pulse oximetry alone insufficient to monitor ventilation during moderate sedation?",
       "options": [
         "SpO2 detects hypoxemia late and does not measure ventilation",
         "SpO2 overestimates oxygenation during sedation",
@@ -2916,7 +2916,7 @@
       "id": "SED-120",
       "set": 1,
       "type": "single",
-      "stem": "A department reviews 40 sedation adverse events: 22 involved hypoventilation or obstruction, 6 aspiration, 5 hypotension, 4 medication errors, and 3 allergic reactions. Which conclusion is BEST supported?",
+      "stem": "Most reviewed sedation adverse events involve obstruction, hypoventilation, or aspiration. What should this imply for the safety plan?",
       "options": [
         "Respiratory events are the dominant source and should drive the safety plan",
         "Cardiovascular events are the dominant source",
@@ -2940,7 +2940,7 @@
       "id": "SED-121",
       "set": 1,
       "type": "single",
-      "stem": "During MAC, the patient's SpO2 falls from 98% to 91%. ETCO2 waveform is absent. What does this sequence indicate?",
+      "stem": "SpO2 falls only after the ETCO2 waveform has already disappeared. What does this sequence imply?",
       "options": [
         "Ventilation failure has been ongoing and is now causing hypoxemia",
         "A new and brief event that just began",
@@ -2964,7 +2964,7 @@
       "id": "SED-122",
       "set": 1,
       "type": "single",
-      "stem": "During MAC for a bronchoscopy, the patient develops laryngospasm. Which monitor shows the problem FIRST?",
+      "stem": "During laryngospasm under MAC, which standard monitor should show the problem first?",
       "options": [
         "Capnography, with a flat or absent waveform",
         "Pulse oximetry, with an immediate drop",
@@ -2988,7 +2988,7 @@
       "id": "SED-123",
       "set": 1,
       "type": "single",
-      "stem": "A proceduralist asks you to remove the capnography cannula because it irritates the patient's nose during moderate sedation. What is the BEST response?",
+      "stem": "The proceduralist asks to remove capnography during moderate sedation because the cannula is uncomfortable. What is the best response?",
       "options": [
         "Keep capnography, since ETCO2 monitoring is required during sedation",
         "Remove it if SpO2 stays above 95% on supplemental oxygen",
@@ -3012,7 +3012,7 @@
       "id": "SED-124",
       "set": 1,
       "type": "single",
-      "stem": "A nurse-monitored sedation protocol for deep sedation lists BP checks every 15 minutes \"if vitals are stable.\" What is the correct minimum frequency?",
+      "stem": "A deep-sedation protocol permits BP checks every 15 minutes if stable. What interval is actually required?",
       "options": [
         "At least every 5 minutes during moderate or deep sedation",
         "Every 15 minutes, since the vitals are stable",
@@ -3036,7 +3036,7 @@
       "id": "SED-125",
       "set": 1,
       "type": "single",
-      "stem": "Two sedated patients each have an ETCO2 of 58. Patient A breathes 6 times per minute with large breaths. Patient B breathes 30 times per minute with tiny breaths. What do both readings MAINLY indicate?",
+      "stem": "Two sedated patients both have ETCO2 58, one bradypneic and one rapidly shallow-breathing. What do both patterns indicate?",
       "options": [
         "Inadequate alveolar ventilation in both",
         "Adequate ventilation in A, inadequate in B",
@@ -3060,7 +3060,7 @@
       "id": "SED-126",
       "set": 1,
       "type": "single",
-      "stem": "A deeply sedated patient on 6 L/min nasal cannula becomes apneic. Which sequence of monitor changes is MOST likely?",
+      "stem": "A deeply sedated patient on nasal oxygen becomes apneic. Which monitor changes first?",
       "options": [
         "ETCO2 drops at once; SpO2 stays normal for minutes",
         "SpO2 drops first; ETCO2 then confirms the apnea",
@@ -3084,7 +3084,7 @@
       "id": "SED-127",
       "set": 1,
       "type": "multi",
-      "stem": "Which of the following help detect hypoventilation during sedation? (Select 2)",
+      "stem": "Which TWO bedside measures directly help detect hypoventilation during sedation? (Select 2)",
       "options": [
         "Capnography waveform",
         "Respiratory rate and depth",
@@ -3111,7 +3111,7 @@
       "id": "SED-128",
       "set": 1,
       "type": "single",
-      "stem": "A patient under MAC has ETCO2 rising from 38 to 55 over 10 minutes with slowing respirations. SpO2 is 98%. What is the MOST likely cause?",
+      "stem": "During MAC, ETCO2 rises with slowing respirations while SpO2 remains normal. What is the most likely cause?",
       "options": [
         "Cumulative respiratory depression from drug synergy",
         "Rising CO2 production from hyperthermia under drapes",
@@ -3135,7 +3135,7 @@
       "id": "SED-129",
       "set": 1,
       "type": "single",
-      "stem": "A MAC case for a breast lumpectomy is converted to TIVA with an LMA. Which monitoring change is required?",
+      "stem": "A MAC case converts to TIVA with an LMA. Which monitoring requirement becomes more stringent?",
       "options": [
         "Temperature monitoring becomes continuous",
         "Heart rate monitoring becomes intermittent",
@@ -3159,7 +3159,7 @@
       "id": "SED-130",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old with CAD is receiving deep sedation for a cardioversion. Which statement about ECG monitoring is correct?",
+      "stem": "A 70-year-old with CAD undergoes deep sedation for cardioversion. How should ECG monitoring be handled?",
       "options": [
         "ECG is routinely used for deeper sedation",
         "ECG is unnecessary if SpO2 is continuous",
@@ -3183,7 +3183,7 @@
       "id": "SED-131",
       "set": 1,
       "type": "single",
-      "stem": "A patient with COPD is receiving MAC and has a baseline ETCO2 of 50. What matters MOST when interpreting her capnography?",
+      "stem": "A patient with chronic COPD has baseline ETCO2 50. What matters most when interpreting the capnogram during MAC?",
       "options": [
         "Changes from her baseline trend",
         "The absolute value compared with 40",
@@ -3207,7 +3207,7 @@
       "id": "SED-132",
       "set": 1,
       "type": "multi",
-      "stem": "A patient on 4 L oxygen under sedation has SpO2 99%. Which statements about pulse oximetry are correct? (Select 3)",
+      "stem": "Which THREE statements about pulse oximetry during sedation are correct? (Select 3)",
       "options": [
         "It is continuously monitored during sedation, MAC, and TIVA/GA",
         "It lags behind hypoventilation when oxygen is given",
@@ -3235,7 +3235,7 @@
       "id": "SED-133",
       "set": 1,
       "type": "single",
-      "stem": "During MAC, why must the provider keep eyes on both patient and monitors while the proceduralist talks?",
+      "stem": "Why must the anesthesia provider continue watching both patient and monitors despite conversation or distraction in the room?",
       "options": [
         "Distraction led to unrecognized apnea in a closed claim",
         "Talking disturbs the capnography sampling",
@@ -3259,7 +3259,7 @@
       "id": "SED-134",
       "set": 1,
       "type": "single",
-      "stem": "During TIVA for a craniotomy, propofol boluses are given every few minutes. The NIBP is set to cycle every 5 minutes, and a BP of 72/40 goes unnoticed for 4 minutes. What monitoring standard was missed?",
+      "stem": "During TIVA, NIBP is set to every 5 minutes. What monitoring standard is being missed?",
       "options": [
         "BP at least every 3 minutes under TIVA/GA",
         "BP at least every 5 minutes under TIVA/GA",
@@ -3283,7 +3283,7 @@
       "id": "SED-135",
       "set": 1,
       "type": "single",
-      "stem": "During MAC for a TEE, a patient's ECG leads are removed for probe positioning and not replaced for 15 minutes. SpO2 is 98% and NIBP is cycling. A brief run of VT occurs during this time but is not seen. What standard was violated?",
+      "stem": "ECG leads are removed during MAC and not replaced for 15 minutes. Which standard is violated?",
       "options": [
         "Continuous ECG display throughout MAC",
         "ECG display at induction and emergence",
@@ -3307,7 +3307,7 @@
       "id": "SED-136",
       "set": 1,
       "type": "single",
-      "stem": "After a sedation bolus, which is the EARLIEST sign of respiratory depression on standard monitors?",
+      "stem": "After a sedative bolus, which standard monitor usually shows respiratory depression first?",
       "options": [
         "Change in capnogram rate and waveform",
         "SpO2 falling below 90% on the monitor",
@@ -3331,7 +3331,7 @@
       "id": "SED-137",
       "set": 1,
       "type": "single",
-      "stem": "Three MAC cases are scheduled: a 15-minute cataract, a 20-minute colonoscopy, and a 4-hour burn dressing change with large exposed areas. In which case is temperature monitoring clearly indicated?",
+      "stem": "Which MAC case most clearly requires temperature monitoring?",
       "options": [
         "The 4-hour burn dressing change",
         "The 15-minute cataract surgery",
@@ -3355,7 +3355,7 @@
       "id": "SED-138",
       "set": 1,
       "type": "multi",
-      "stem": "A propofol and remifentanil sedation drifts too deep during the quiet middle of a case, then too light at the painful end. Which factors should guide titration? (Select 4)",
+      "stem": "Which FOUR factors should guide titration when sedation becomes too deep during low stimulation and too light during painful moments? (Select 4)",
       "options": [
         "Drug kinetics",
         "Effect-site delay",
@@ -3384,7 +3384,7 @@
       "id": "SED-139",
       "set": 1,
       "type": "single",
-      "stem": "You give a propofol bolus, see little effect after 30 seconds, and give another. A minute later, the patient is apneic. Why?",
+      "stem": "Two propofol boluses are given before the first reaches peak effect, and apnea follows. What pharmacologic error occurred?",
       "options": [
         "Peak effect lags injection, so the boluses stacked",
         "Propofol's rapid redistribution ended the first dose early",
@@ -3408,7 +3408,7 @@
       "id": "SED-140",
       "set": 1,
       "type": "single",
-      "stem": "A patient at moderate sedation shows ETCO2 of 45 with regular waveforms and RR 12. What is the BEST interpretation?",
+      "stem": "A moderately sedated patient has RR 12 with regular waveforms and stable ETCO2 45. What is the best interpretation?",
       "options": [
         "Adequate ventilation with a slightly elevated but stable value",
         "Severe hypoventilation needing immediate reversal agents given",
@@ -3432,7 +3432,7 @@
       "id": "SED-141",
       "set": 1,
       "type": "single",
-      "stem": "Which statement BEST summarizes monitoring requirements for any case involving an anesthesia provider?",
+      "stem": "When an anesthesia provider is involved, what overarching monitoring rule applies regardless of intended sedation depth?",
       "options": [
         "Standard ASA monitors are applied regardless of depth",
         "Monitoring intensity depends on ASA class",
@@ -3456,7 +3456,7 @@
       "id": "SED-142",
       "set": 1,
       "type": "single",
-      "stem": "During sedation, the capnogram disappears every time the patient opens her mouth wide to breathe. SpO2 and chest movement are normal. What is the MOST likely explanation?",
+      "stem": "The capnogram disappears whenever the patient breathes through the mouth, while SpO2 and chest movement remain normal. What is the most likely explanation?",
       "options": [
         "The nasal sampling line misses gas exhaled through the mouth",
         "She has become apneic from oversedation with propofol",
@@ -3480,7 +3480,7 @@
       "id": "SED-143",
       "set": 1,
       "type": "single",
-      "stem": "During deep sedation for a hip reduction, BP readings are 132/80 at 10:00, then 128/78 at 10:15, then 70/40 at 10:30. Which statement about this monitoring is correct?",
+      "stem": "During deep sedation, BP is measured only every 15 minutes. What is wrong with this setup?",
       "options": [
         "The interval was too long; BP should be checked at least every 5 minutes",
         "The interval was appropriate because the first readings were stable",
@@ -3504,7 +3504,7 @@
       "id": "SED-144",
       "set": 1,
       "type": "single",
-      "stem": "In both closed claims cases, monitors were available but the patient still suffered harm. What common gap explains both?",
+      "stem": "What common systems failure links closed-claim cases in which monitors were available but patient harm still occurred?",
       "options": [
         "A lapse in watching or applying monitors after sedation",
         "Defective monitoring equipment",
@@ -3528,7 +3528,7 @@
       "id": "SED-145",
       "set": 1,
       "type": "single",
-      "stem": "A patient's ETCO2 waveform becomes smaller and irregular, and you hear snoring. What is the MOST likely problem?",
+      "stem": "The capnogram becomes small and irregular while the patient snores. What is the most likely problem?",
       "options": [
         "Partial upper airway obstruction",
         "Complete laryngospasm with no air movement",
@@ -3552,7 +3552,7 @@
       "id": "SED-146",
       "set": 1,
       "type": "multi",
-      "stem": "You are setting up a remote endoscopy room for MAC. What must be immediately available? (Select 4)",
+      "stem": "Which FOUR items must be immediately available in a remote location where MAC is being provided? (Select 4)",
       "options": [
         "Suction",
         "Emergency drugs",
@@ -3581,7 +3581,7 @@
       "id": "SED-147",
       "set": 1,
       "type": "single",
-      "stem": "A 25-year-old receives only oral midazolam (minimal sedation) for a dental procedure, with an anesthesia provider present. What monitoring applies?",
+      "stem": "Minimal oral sedation is planned, but an anesthesia provider is present. Which monitoring framework applies?",
       "options": [
         "Standard ASA monitoring by the anesthesia provider",
         "BP every 3 minutes, as for TIVA",
@@ -3605,7 +3605,7 @@
       "id": "SED-148",
       "set": 1,
       "type": "single",
-      "stem": "A sedated patient's RR drops to 6 and ETCO2 rises, but SpO2 is still 96%. Why intervene now rather than waiting?",
+      "stem": "RR falls to 6 and ETCO2 rises while SpO2 is still 96%. Why should intervention occur now rather than after desaturation?",
       "options": [
         "Respiratory events worsen quickly once reserve is used",
         "SpO2 at 96% predicts a desaturation within seconds",
@@ -3629,7 +3629,7 @@
       "id": "SED-149",
       "set": 1,
       "type": "single",
-      "stem": "A patient is sedated with a simple face mask at 8 L/min. What is the MOST reliable way to assess her ventilation?",
+      "stem": "A sedated patient receives oxygen by simple face mask. What is the most reliable way to assess ventilation?",
       "options": [
         "Capnography sampled from the mask",
         "SpO2 alone",
@@ -3653,7 +3653,7 @@
       "id": "SED-150",
       "set": 1,
       "type": "single",
-      "stem": "A sedated patient has an ETCO2 of 0 but a regular pulse and SpO2 of 98%. The sampling line is intact. What is the BEST next step?",
+      "stem": "ETCO2 is zero with an intact sampling line while pulse and SpO2 remain normal. What is the first action?",
       "options": [
         "Assess breathing and open the airway",
         "Replace the capnography module",
