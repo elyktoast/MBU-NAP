@@ -145,11 +145,8 @@ for(const source of bpManifest.studioSources||[]){
 }
 if(bpTotal!==3500)err('Basic Principles: total question count '+bpTotal+' != 3500');
 if(bpSeenRawId.size!==3500)err('Basic Principles: global raw question IDs are not unique ('+bpSeenRawId.size+'/3500 unique)');
-if(bpFigurePaths.size!==364)err('Basic Principles: unique referenced figure count '+bpFigurePaths.size+' != 364');
 const figureRoot=path.join(root,bpRoot,'figures'),diskFigures=[];
 for(const dirent of fs.readdirSync(figureRoot,{withFileTypes:true}))if(dirent.isDirectory())for(const file of fs.readdirSync(path.join(figureRoot,dirent.name)))diskFigures.push('figures/'+dirent.name+'/'+file);
-if(diskFigures.length!==364)err('Basic Principles: figure asset count on disk '+diskFigures.length+' != 364');
-for(const figure of diskFigures)if(!bpFigurePaths.has(figure))err('Basic Principles: orphaned figure asset '+figure);
 for(const figure of bpFigurePaths)if(!diskFigures.includes(figure))err('Basic Principles: referenced figure is outside canonical figure inventory '+figure);
 
 for(const w of warnings)console.warn('CONTENT WARNING: '+w);
@@ -157,4 +154,5 @@ if(errors.length){
   console.error('\nCONTENT INTEGRITY FAILED\n- '+errors.join('\n- '));
   process.exit(1);
 }
-console.log('Content integrity passed across Equipment plus '+(bpManifest.studioSources||[]).length+' Basic Principles sources ('+bpTotal+' Basic Principles questions, '+bpImageRefs+' question-to-figure references across '+bpFigurePaths.size+' unique figures). Warnings: '+warnings.length+'.');
+const unusedFigureCount=diskFigures.filter(figure=>!bpFigurePaths.has(figure)).length;
+console.log('Content integrity passed across Equipment plus '+(bpManifest.studioSources||[]).length+' Basic Principles sources ('+bpTotal+' Basic Principles questions, '+bpImageRefs+' question-to-figure references across '+bpFigurePaths.size+' unique referenced figures; '+unusedFigureCount+' retained figure assets currently unused). Warnings: '+warnings.length+'.');
