@@ -4086,12 +4086,12 @@
       "id": "PHA-163",
       "set": 1,
       "type": "single",
-      "stem": "Near closure, reliable core temperature is 35.4 °C. Which interpretation is correct?",
+      "stem": "Near closure after a long case, esophageal temperature is 35.4 °C despite stable hemodynamics. Which interpretation should drive active warming and emergence planning?",
       "options": [
         "The patient is perioperatively hypothermic because core temperature is below 36 °C",
         "The patient is normothermic because temperature exceeds 35 °C",
         "The patient is mildly hyperthermic",
-        "Temperature is normal until it falls below 34 °C"
+        "Temperature is clinically normal until below 34 °C"
       ],
       "answer": [
         0
@@ -4382,7 +4382,7 @@
       "id": "PHA-175",
       "set": 1,
       "type": "single",
-      "stem": "Two otherwise similar patients receive equipotent 3-hour volatile anesthetics. Which agent's lower blood-gas solubility should permit the fastest washout and emergence?",
+      "stem": "Three otherwise similar patients receive equipotent volatile anesthetics for 3 hours. If rapid washout is now the priority, which agent's lower blood-gas solubility should favor the fastest emergence?",
       "options": [
         "Desflurane",
         "Sevoflurane",
@@ -4406,11 +4406,11 @@
       "id": "PHA-176",
       "set": 1,
       "type": "single",
-      "stem": "A healthy middle-aged adult has end-tidal sevoflurane near 2%. How should this concentration be interpreted approximately?",
+      "stem": "A healthy middle-aged adult is stable under sevoflurane with an end-tidal concentration near 2%. Before considering age or adjuncts, this is approximately what anesthetic potency?",
       "options": [
-        "About 1 MAC",
-        "About 0.5 MAC",
-        "About 2 MAC",
+        "1 MAC",
+        "0.5 MAC",
+        "2 MAC",
         "Below the usual MAC-awake concentration"
       ],
       "answer": [
@@ -4430,11 +4430,11 @@
       "id": "PHA-177",
       "set": 1,
       "type": "single",
-      "stem": "A healthy middle-aged adult has end-tidal desflurane near 6%. How should this concentration be interpreted approximately?",
+      "stem": "A healthy middle-aged adult has end-tidal desflurane near 6% during maintenance. Before adjusting for age or adjuncts, this is approximately what potency?",
       "options": [
-        "About 1 MAC",
-        "About 0.3 MAC",
-        "About 2 MAC",
+        "1 MAC",
+        "0.3 MAC",
+        "2 MAC",
         "Equivalent to 1 MAC sevoflurane by concentration"
       ],
       "answer": [
@@ -4454,11 +4454,11 @@
       "id": "PHA-178",
       "set": 1,
       "type": "single",
-      "stem": "A healthy middle-aged adult has end-tidal isoflurane near 1.15%. How should this concentration be interpreted approximately?",
+      "stem": "A healthy middle-aged adult has end-tidal isoflurane near 1.15% during maintenance. Before adjusting for age or adjuncts, this is approximately what potency?",
       "options": [
-        "About 1 MAC",
-        "About 0.5 MAC",
-        "About 2 MAC",
+        "1 MAC",
+        "0.5 MAC",
+        "2 MAC",
         "Equivalent to 1 MAC desflurane by concentration"
       ],
       "answer": [
@@ -4574,7 +4574,7 @@
       "id": "PHA-183",
       "set": 1,
       "type": "single",
-      "stem": "A case is maintained with desflurane after equilibrium is established and no rapid concentration change is needed. Which fresh-gas flow meets the lecture's low-flow quality target?",
+      "stem": "A stable desflurane anesthetic has reached equilibrium and no rapid concentration change is anticipated. Which fresh-gas flow meets the lecture's low-flow quality target while reducing waste?",
       "options": [
         "1 L/min or less",
         "2 L/min or less",
@@ -4598,7 +4598,7 @@
       "id": "PHA-184",
       "set": 1,
       "type": "single",
-      "stem": "A stable sevoflurane anesthetic is maintained after equilibrium. Which fresh-gas flow remains within the lecture's low-flow quality target?",
+      "stem": "A stable sevoflurane anesthetic has reached equilibrium. Which fresh-gas flow remains within the lecture's low-flow quality target?",
       "options": [
         "2 L/min or less",
         "Exactly 1 L/min or less only",
@@ -4926,12 +4926,12 @@
       "id": "PHA-197",
       "set": 1,
       "type": "single",
-      "stem": "A potent opioid infusion must run at a very low, precisely controlled rate. Which delivery device is best suited?",
+      "stem": "A remifentanil infusion must run at a very low rate where small delivery errors could meaningfully alter effect. Which device provides the most precise delivery?",
       "options": [
         "A syringe pump",
         "A gravity drip",
         "Intermittent manual boluses",
-        "A standard roller-clamp infusion"
+        "A roller-clamp infusion"
       ],
       "answer": [
         0
