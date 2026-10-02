@@ -8724,12 +8724,12 @@
       "id": "PRE-357",
       "set": 1,
       "type": "single",
-      "stem": "A nonsmoking woman with motion sickness will receive postoperative opioids. What is her Apfel score and risk?",
+      "stem": "A nonsmoking woman with motion sickness is expected to need postoperative opioids. What Apfel score and approximate PONV risk follow?",
       "options": [
-        "Score 4, about 80% risk",
-        "Score 3, about 60% risk",
-        "Score 2, about 40% risk",
-        "Score 1, about 20% risk"
+        "Score 4, about 80%",
+        "Score 3, about 60%",
+        "Score 2, about 40%",
+        "Score 1, about 20%"
       ],
       "answer": [
         0
@@ -8748,7 +8748,7 @@
       "id": "PRE-358",
       "set": 1,
       "type": "single",
-      "stem": "A 35-year-old woman, nonsmoker, with prior PONV, expected to need postop opioids. What is her Apfel score and risk?",
+      "stem": "A 35-year-old woman is a nonsmoker, has prior PONV, and will receive postoperative opioids. What Apfel score and approximate risk apply?",
       "options": [
         "Score 4, about 80%",
         "Score 3, about 60%",
@@ -8772,7 +8772,7 @@
       "id": "PRE-359",
       "set": 1,
       "type": "single",
-      "stem": "A male smoker with no PONV history, expected postop opioids. What is his Apfel score?",
+      "stem": "A male smoker has no PONV history but will receive postoperative opioids. What is the Apfel score?",
       "options": [
         "1",
         "0",
@@ -8796,12 +8796,12 @@
       "id": "PRE-360",
       "set": 1,
       "type": "single",
-      "stem": "A nonsmoking man with prior PONV has an Apfel score of 2. What is the BEST antiemetic plan?",
+      "stem": "A patient has an Apfel score of 2. Which prophylactic strategy is most appropriate?",
       "options": [
-        "Multimodal prophylaxis",
-        "No prophylaxis until the score reaches 4",
-        "A single agent once symptoms begin",
-        "Prophylaxis reserved for female patients"
+        "Use multimodal antiemetic prophylaxis",
+        "Give no prophylaxis unless the score reaches 4",
+        "Treat only after symptoms occur",
+        "Reserve prophylaxis for female patients"
       ],
       "answer": [
         0
@@ -8820,11 +8820,11 @@
       "id": "PRE-361",
       "set": 1,
       "type": "single",
-      "stem": "A patient denies prior PONV but has never had anesthesia. Which question BEST uncovers PONV risk?",
+      "stem": "A patient has never had anesthesia and therefore cannot report prior PONV. Which question best identifies an equivalent Apfel risk factor?",
       "options": [
-        "Do you get motion sick in a car?",
+        "Do you get motion sickness?",
         "Do you take vitamins?",
-        "Have you had nausea with opioids before?",
+        "Have opioids ever caused nausea?",
         "Do you exercise regularly?"
       ],
       "answer": [
@@ -8844,7 +8844,7 @@
       "id": "PRE-362",
       "set": 1,
       "type": "single",
-      "stem": "A patient's Apfel score is 3. What is the risk?",
+      "stem": "An Apfel score of 3 corresponds to what approximate PONV risk?",
       "options": [
         "60%",
         "40%",
@@ -8892,7 +8892,7 @@
       "id": "PRE-364",
       "set": 1,
       "type": "single",
-      "stem": "Which BMI class is associated with higher risk of OSA and difficult airway?",
+      "stem": "Which obesity class most strongly raises concern for OSA and difficult airway compared with lower BMI categories?",
       "options": [
         "Obesity class II",
         "Normal weight",
@@ -8916,7 +8916,7 @@
       "id": "PRE-365",
       "set": 1,
       "type": "single",
-      "stem": "A patient's BMI is 43. Which category applies?",
+      "stem": "A BMI of 43 kg/m² falls into which category?",
       "options": [
         "Obesity class III",
         "Obesity class II",
@@ -8940,7 +8940,7 @@
       "id": "PRE-366",
       "set": 1,
       "type": "single",
-      "stem": "A patient's BMI is 27.3. Which category applies?",
+      "stem": "A BMI of 27.3 kg/m² falls into which category?",
       "options": [
         "Overweight",
         "Normal weight",
@@ -8964,12 +8964,12 @@
       "id": "PRE-367",
       "set": 1,
       "type": "single",
-      "stem": "An obese patient's care plan lists rocuronium \"1.2 mg/kg\" with no dosing weight. What should be added?",
+      "stem": "An obese patient's plan lists rocuronium 1.2 mg/kg but does not specify the weight scalar. What additional information is most important before dosing?",
       "options": [
-        "The IBW calculation",
-        "The total body weight calculation",
+        "The ideal-body-weight calculation",
+        "The total-body-weight calculation only",
         "The patient's blood type",
-        "The patient's surgical history"
+        "The surgical history"
       ],
       "answer": [
         0
@@ -8988,12 +8988,12 @@
       "id": "PRE-368",
       "set": 1,
       "type": "single",
-      "stem": "Which lab is most important for a patient expected to have significant blood loss?",
+      "stem": "Which laboratory test most directly informs transfusion planning when substantial blood loss is expected?",
       "options": [
         "Hemoglobin and hematocrit",
-        "Human chorionic gonadotropin",
-        "Thyroid-stimulating hormone",
-        "Hemoglobin A1C"
+        "Pregnancy testing",
+        "TSH",
+        "Hemoglobin A1c"
       ],
       "answer": [
         0
@@ -9012,12 +9012,12 @@
       "id": "PRE-369",
       "set": 1,
       "type": "single",
-      "stem": "A healthy 35-year-old with no medical history is scheduled for a lipoma excision. Which lab approach is BEST?",
+      "stem": "A healthy patient with no comorbidities is scheduled for minor lipoma excision. Which preoperative testing approach is most appropriate?",
       "options": [
-        "No routine labs unless history suggests a need",
-        "A CBC and BMP for baseline values",
-        "A chest X-ray as a routine baseline",
-        "Arterial blood gases on room air"
+        "Do not order routine labs unless history or procedure indicates a need",
+        "Order CBC and BMP for baseline values",
+        "Order a routine chest radiograph",
+        "Obtain an arterial blood gas"
       ],
       "answer": [
         0
@@ -9036,10 +9036,10 @@
       "id": "PRE-370",
       "set": 1,
       "type": "single",
-      "stem": "A healthy 28-year-old woman is scheduled for a laparoscopic ovarian cystectomy. Which test is required?",
+      "stem": "A healthy woman of childbearing potential is scheduled for laparoscopic ovarian surgery. Which test is specifically relevant because the result could change anesthetic and surgical planning?",
       "options": [
-        "Urine or serum HCG",
-        "Troponin to screen for silent ischemia",
+        "Urine or serum hCG",
+        "Troponin",
         "BNP",
         "PT/INR"
       ],
@@ -9060,12 +9060,12 @@
       "id": "PRE-371",
       "set": 1,
       "type": "single",
-      "stem": "A woman is 5 feet 6 inches tall. What is her ideal body weight?",
+      "stem": "Using the lecture formula, what is the approximate ideal body weight for a 5-foot-6-inch woman?",
       "options": [
-        "About 59.3 kg",
-        "About 63.8 kg",
-        "About 56.9 kg",
-        "About 61.5 kg"
+        "59.3 kg",
+        "63.8 kg",
+        "56.9 kg",
+        "61.5 kg"
       ],
       "answer": [
         0
@@ -9084,12 +9084,12 @@
       "id": "PRE-372",
       "set": 1,
       "type": "single",
-      "stem": "A 67-year-old for elective colectomy has insulin-dependent diabetes, creatinine 2.3, and HFrEF. He climbs one flight before stopping. What is his RCRI score and functional status?",
+      "stem": "A patient has insulin-treated diabetes, creatinine 2.3 mg/dL, HFrEF, and is scheduled for colectomy; he stops after one flight of stairs. Which combined assessment is correct?",
       "options": [
-        "RCRI 4 with <4 METs",
-        "RCRI 3 with ≥4 METs",
-        "RCRI 3 with <4 METs",
-        "RCRI 4 with ≥4 METs"
+        "RCRI 4 with poor functional capacity below 4 METs",
+        "RCRI 3 with functional capacity at least 4 METs",
+        "RCRI 3 with poor functional capacity",
+        "RCRI 4 with functional capacity at least 4 METs"
       ],
       "answer": [
         0
@@ -9108,12 +9108,12 @@
       "id": "PRE-373",
       "set": 1,
       "type": "single",
-      "stem": "A 58-year-old had a DES 10 weeks ago, takes aspirin and ticagrelor, and needs elective shoulder arthroscopy. What is the BEST plan?",
+      "stem": "A patient had a drug-eluting stent 10 weeks ago and remains on aspirin plus ticagrelor. Which issue should drive management of elective shoulder arthroscopy?",
       "options": [
-        "Postpone until 3–6 months after DES, continuing aspirin",
-        "Proceed after holding both drugs for 5 days",
-        "Proceed and bridge with heparin",
-        "Proceed and hold aspirin for 5 days before the case"
+        "The case is too soon after DES placement; postpone into the recommended interval while continuing aspirin",
+        "Proceed after stopping both antiplatelet agents",
+        "Proceed with heparin bridging",
+        "Proceed after holding aspirin only"
       ],
       "answer": [
         0
@@ -9132,12 +9132,12 @@
       "id": "PRE-374",
       "set": 1,
       "type": "single",
-      "stem": "A 72-year-old with severe AS (valve area 0.8 cm²) reports new exertional syncope. He is booked for elective hip replacement. What is the BEST next step?",
+      "stem": "A patient with severe aortic stenosis now reports exertional syncope before elective hip replacement. Which finding should stop routine progression to surgery?",
       "options": [
-        "Postpone for cardiac evaluation",
-        "Proceed with spinal anesthesia since it avoids the airway",
-        "Proceed after confirming ≥4 METs by history",
-        "Proceed with GA and an arterial line, no further workup"
+        "New symptoms from severe AS require cardiac evaluation first",
+        "Spinal anesthesia avoids the hemodynamic risk",
+        "Good METs would override the syncope",
+        "An arterial line alone makes proceeding acceptable"
       ],
       "answer": [
         0
@@ -9156,11 +9156,11 @@
       "id": "PRE-375",
       "set": 1,
       "type": "single",
-      "stem": "A 45-year-old ASA II woman on lisinopril and HCTZ took both this morning. Which intraoperative issue is MOST likely?",
+      "stem": "A patient took lisinopril and hydrochlorothiazide on the morning of surgery. Which induction problem is most likely?",
       "options": [
-        "Induction hypotension poorly responsive to pressors",
-        "Hypertensive surge during laryngoscopy",
-        "Bradycardia from the HCTZ",
+        "Marked hypotension that may be difficult to treat",
+        "Hypertensive response to laryngoscopy",
+        "Bradycardia from hydrochlorothiazide",
         "Prolonged neuromuscular blockade"
       ],
       "answer": [
@@ -9180,12 +9180,12 @@
       "id": "PRE-376",
       "set": 1,
       "type": "single",
-      "stem": "A 61-year-old smoker (40 pack-years) with COPD has wheezes and used his albuterol 20 hours ago. He is scheduled for laparoscopic cholecystectomy. What is the FIRST optimization step?",
+      "stem": "A COPD patient is actively wheezing in preop and has not used albuterol since yesterday. What should happen first?",
       "options": [
-        "Give a bronchodilator treatment before induction",
-        "Proceed and treat wheeze after intubation",
-        "Give a beta-blocker to reduce tachycardia",
-        "Delay surgery 6 weeks for smoking cessation"
+        "Treat with a bronchodilator before induction",
+        "Proceed and treat only after intubation",
+        "Give a beta-blocker",
+        "Delay six weeks solely for smoking cessation"
       ],
       "answer": [
         0
@@ -9204,12 +9204,12 @@
       "id": "PRE-377",
       "set": 1,
       "type": "single",
-      "stem": "A 38-year-old man with a URI 10 days ago still coughs. He is scheduled for elective sinus surgery. What is the BEST recommendation?",
+      "stem": "An adult still has cough 10 days after a URI and is scheduled for elective sinus surgery. Which concern supports postponement?",
       "options": [
-        "Delay elective surgery up to 6 weeks",
-        "Proceed with an LMA to reduce stimulation",
-        "Proceed after one dose of steroids",
-        "Proceed since symptoms are mild"
+        "Airway hyperreactivity may persist for weeks after the infection",
+        "An LMA removes URI-related risk",
+        "One steroid dose normalizes airway reactivity",
+        "Mild symptoms make the risk negligible"
       ],
       "answer": [
         0
@@ -9228,12 +9228,12 @@
       "id": "PRE-378",
       "set": 1,
       "type": "single",
-      "stem": "A 52-year-old on prednisone 20 mg daily for 3 months needs colectomy. Which steroid plan fits the table?",
+      "stem": "A patient takes prednisone 20 mg daily for 3 months and is scheduled for colectomy. Which perioperative steroid regimen best matches the table's stress category?",
       "options": [
-        "Usual dose, hydrocortisone 50 mg IV, then 25 mg q8h for 24 h",
-        "Usual dose",
-        "Hydrocortisone 100 mg IV then 200 mg infusion",
-        "Stop steroids 24 hours before surgery to avoid infection"
+        "Continue the usual dose plus hydrocortisone 50 mg IV, then 25 mg every 8 hours for 24 hours",
+        "Usual dose only",
+        "Hydrocortisone 100 mg IV followed by 200 mg over 24 hours",
+        "Stop steroids before surgery"
       ],
       "answer": [
         0
@@ -9252,10 +9252,10 @@
       "id": "PRE-379",
       "set": 1,
       "type": "single",
-      "stem": "A 64-year-old with Cushing syndrome has BP 178/102, edema, and K 2.9. Which finding MOST needs correction before elective surgery?",
+      "stem": "A patient with Cushing syndrome has BP 178/102, edema, and potassium 2.9 mEq/L. Which abnormality requires the most immediate correction before elective anesthesia?",
       "options": [
         "Hypokalemia",
-        "Edema",
+        "Peripheral edema",
         "Hypertension alone",
         "Obesity"
       ],
@@ -9276,11 +9276,11 @@
       "id": "PRE-380",
       "set": 1,
       "type": "single",
-      "stem": "A 54-year-old with Conn syndrome has K 3.0 and BP 170/100. Why is K correction a priority?",
+      "stem": "A patient with Conn syndrome has potassium 3.0 mEq/L and BP 170/100. Why is potassium correction especially important before anesthesia?",
       "options": [
-        "Hypokalemia prolongs NMB and causes arrhythmias",
-        "Hypokalemia causes PONV",
-        "Hypokalemia causes adrenal crisis under anesthesia",
+        "Hypokalemia increases arrhythmia risk and may prolong neuromuscular blockade",
+        "Hypokalemia primarily causes PONV",
+        "Hypokalemia triggers adrenal crisis",
         "Hypokalemia increases MAC"
       ],
       "answer": [
@@ -9300,12 +9300,12 @@
       "id": "PRE-381",
       "set": 1,
       "type": "single",
-      "stem": "A 34-year-old woman with Graves disease has HR 128 and tremor. Labs show elevated free T4. The case is elective. What is the BEST decision?",
+      "stem": "A patient with Graves disease has HR 128, tremor, and elevated free T4 before elective surgery. Which risk should drive postponement?",
       "options": [
-        "Postpone until euthyroid to reduce thyroid storm risk",
-        "Proceed with esmolol ready in the OR",
-        "Proceed and add levothyroxine today",
-        "Proceed under regional anesthesia to avoid thyroid storm"
+        "Uncontrolled hyperthyroidism can precipitate thyroid storm",
+        "Esmolol alone makes the patient ready for surgery",
+        "Levothyroxine should be started immediately",
+        "Regional anesthesia eliminates thyroid risk"
       ],
       "answer": [
         0
@@ -9324,10 +9324,10 @@
       "id": "PRE-382",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old with hypothyroidism skipped levothyroxine for 2 weeks. What intraoperative issue is MOST likely?",
+      "stem": "A hypothyroid patient has missed levothyroxine for two weeks. Which intraoperative pattern is most consistent with poor control?",
       "options": [
-        "Hypotension and slow drug metabolism",
-        "Hypertension and tachycardia",
+        "Hypotension with slowed drug metabolism",
+        "Hypertension with tachycardia",
         "Hyperthermia",
         "Hypokalemia with ventricular ectopy"
       ],
@@ -9348,12 +9348,12 @@
       "id": "PRE-383",
       "set": 1,
       "type": "single",
-      "stem": "A patient on a GLP-1 agonist has nausea and bloating on the morning of surgery. What is the BEST plan?",
+      "stem": "A patient taking a GLP-1 agonist has nausea and bloating despite appropriate fasting. How should this modify aspiration planning?",
       "options": [
-        "Treat as full stomach; consider gastric POCUS or delay",
-        "Proceed as usual since NPO time is met",
-        "Give Bicitra and metoclopramide, then proceed",
-        "Encourage clear liquids to empty the stomach"
+        "Treat as potentially full stomach and consider gastric POCUS or delay",
+        "Proceed routinely because fasting time is adequate",
+        "Give prophylaxis and proceed without further assessment",
+        "Encourage clear liquids immediately before surgery"
       ],
       "answer": [
         0
@@ -9372,12 +9372,12 @@
       "id": "PRE-384",
       "set": 1,
       "type": "single",
-      "stem": "A patient drank a latte with milk 3 hours before surgery. What is the BEST decision?",
+      "stem": "A patient drank a latte containing milk 3 hours before anesthesia. Why is this different from black coffee?",
       "options": [
-        "Delay; milk requires 6 hours",
-        "Proceed; coffee is a clear liquid",
-        "Proceed; 2 hours is sufficient",
-        "Delay 8 hours for any coffee"
+        "Milk is not a clear liquid and requires a longer fasting interval",
+        "All coffee is a clear liquid",
+        "Two hours is adequate for any coffee beverage",
+        "Any coffee requires 8 hours"
       ],
       "answer": [
         0
@@ -9396,7 +9396,7 @@
       "id": "PRE-385",
       "set": 1,
       "type": "single",
-      "stem": "A 60-year-old with cirrhosis has bilirubin 4, albumin 2.4, INR 2.1, ascites, and mild encephalopathy. What Child-Pugh class is MOST likely?",
+      "stem": "A cirrhotic patient has bilirubin 4, albumin 2.4, INR 2.1, ascites, and mild encephalopathy. Which Child-Pugh class is most likely?",
       "options": [
         "Class C",
         "Class A",
@@ -9420,12 +9420,12 @@
       "id": "PRE-386",
       "set": 1,
       "type": "single",
-      "stem": "A cirrhotic patient's MELD is 18 and he is scheduled for elective hernia repair. What is the BEST next step?",
+      "stem": "A cirrhotic patient has MELD 18 and requests elective hernia repair. Which next step best follows the lecture threshold?",
       "options": [
-        "Refer for transplant evaluation before elective surgery",
-        "Proceed under GA with invasive lines",
-        "Proceed under regional to avoid hepatic load",
-        "Proceed after correcting INR with fresh frozen plasma"
+        "Transplant evaluation before elective surgery",
+        "Proceed with invasive monitoring",
+        "Choose regional anesthesia and proceed",
+        "Correct INR alone and proceed"
       ],
       "answer": [
         0
@@ -9444,12 +9444,12 @@
       "id": "PRE-387",
       "set": 1,
       "type": "single",
-      "stem": "A dialysis patient last dialyzed 2 days ago. K is 5.9. BP 168/96. What is the BEST next step before elective surgery?",
+      "stem": "A dialysis patient last dialyzed 2 days ago and now has potassium 5.9 mEq/L before elective surgery. Which issue should be corrected first?",
       "options": [
-        "Arrange dialysis or lower K before proceeding",
-        "Proceed with succinylcholine for RSI",
-        "Proceed and give potassium supplements after induction",
-        "Proceed if ECG is normal"
+        "Hyperkalemia, potentially with dialysis or other therapy",
+        "Blood pressure of 168/96 alone",
+        "Need for succinylcholine",
+        "Normal ECG if present"
       ],
       "answer": [
         0
@@ -9468,12 +9468,12 @@
       "id": "PRE-388",
       "set": 1,
       "type": "single",
-      "stem": "A dialysis patient needs postoperative pain control after a fistula revision. Which plan is BEST?",
+      "stem": "Which postoperative analgesic strategy is safest for a dialysis patient after fistula revision?",
       "options": [
-        "Avoid morphine, meperidine, and NSAIDs",
-        "Morphine PCA with a basal rate",
-        "Ketorolac as the main analgesic",
-        "Meperidine for both pain and shivering"
+        "Avoid morphine, meperidine, and NSAIDs when possible",
+        "Use morphine PCA with a basal infusion",
+        "Use ketorolac as primary analgesic",
+        "Use meperidine for pain and shivering"
       ],
       "answer": [
         0
@@ -9492,12 +9492,12 @@
       "id": "PRE-389",
       "set": 1,
       "type": "single",
-      "stem": "A patient with an AV fistula in the left arm arrives. Where should the BP cuff and IV go?",
+      "stem": "A patient has a functioning AV fistula in the left arm. Where should the BP cuff and IV be placed?",
       "options": [
-        "Right arm, avoiding the fistula arm",
-        "Left arm near the fistula",
-        "Left arm distal to the fistula",
-        "Either arm as long as monitoring is brief"
+        "On the right arm, avoiding the fistula extremity",
+        "On the left arm near the fistula",
+        "On the left arm distal to the fistula",
+        "Either arm if monitoring is brief"
       ],
       "answer": [
         0
@@ -9516,12 +9516,12 @@
       "id": "PRE-390",
       "set": 1,
       "type": "single",
-      "stem": "A 45-year-old reports \"anaphylaxis to rocuronium\" in 2019. What does this imply for anesthesia?",
+      "stem": "A patient reports prior anaphylaxis to rocuronium. What is the most appropriate implication for the anesthetic plan?",
       "options": [
-        "Avoid rocuronium and plan alternatives",
-        "Rocuronium is safe with premedication",
-        "Avoid rocuronium if surgery is short",
-        "Assume it was a mild adverse reaction"
+        "Avoid rocuronium and choose an alternative neuromuscular blocker strategy",
+        "Use rocuronium with premedication",
+        "Use rocuronium only for short cases",
+        "Assume the event was a minor side effect"
       ],
       "answer": [
         0
@@ -9540,12 +9540,12 @@
       "id": "PRE-391",
       "set": 1,
       "type": "single",
-      "stem": "A patient reports GI upset after ciprofloxacin. How should this be classified?",
+      "stem": "A patient reports gastrointestinal upset after ciprofloxacin without rash, swelling, bronchospasm, or hypotension. How should this be classified?",
       "options": [
-        "Adverse drug reaction, not true allergy",
-        "An IgE-mediated fluoroquinolone allergy",
-        "Anaphylaxis requiring avoidance",
-        "Non-IgE rash that requires avoidance of all quinolones"
+        "Adverse drug reaction rather than true allergy",
+        "IgE-mediated fluoroquinolone allergy",
+        "Anaphylaxis",
+        "A reaction requiring avoidance of all quinolones"
       ],
       "answer": [
         0
@@ -9564,12 +9564,12 @@
       "id": "PRE-392",
       "set": 1,
       "type": "single",
-      "stem": "A heavy drinker had his last drink 6 hours ago and is shaky and tachycardic. What is the BEST plan?",
+      "stem": "A chronic heavy drinker last drank 6 hours ago and is already tremulous and tachycardic. Which priority comes before elective anesthesia?",
       "options": [
-        "Treat the withdrawal before proceeding",
-        "Proceed with a benzodiazepine on induction",
-        "Give flumazenil to reverse alcohol's GABA effect",
-        "Delay surgery 6 months for full abstinence first"
+        "Treat active alcohol withdrawal",
+        "Proceed and treat only after induction",
+        "Give flumazenil",
+        "Delay six months before any surgery"
       ],
       "answer": [
         0
@@ -9588,10 +9588,10 @@
       "id": "PRE-393",
       "set": 1,
       "type": "single",
-      "stem": "A 30-year-old arrives after cocaine use last night with BP 190/110 and HR 125. Which drug should be avoided?",
+      "stem": "A patient with recent cocaine use has severe hypertension and tachycardia. Which medication should generally be avoided because of unopposed alpha stimulation?",
       "options": [
-        "Pure beta-blocker",
-        "Benzodiazepine",
+        "A pure beta-blocker",
+        "A benzodiazepine",
         "Nitroglycerin",
         "Phentolamine"
       ],
@@ -9612,12 +9612,12 @@
       "id": "PRE-394",
       "set": 1,
       "type": "single",
-      "stem": "A 32-year-old on buprenorphine for OUD needs knee surgery. Which analgesic strategy BEST fits?",
+      "stem": "A patient maintained on buprenorphine needs painful knee surgery. Which perioperative analgesic strategy is most appropriate?",
       "options": [
-        "Multimodal plus regional analgesia",
+        "Multimodal analgesia with regional techniques when appropriate",
         "High-dose morphine alone",
-        "NSAIDs",
-        "Stop buprenorphine and use no opioids"
+        "NSAIDs alone",
+        "Stop buprenorphine and avoid all opioids"
       ],
       "answer": [
         0
@@ -9636,7 +9636,7 @@
       "id": "PRE-395",
       "set": 1,
       "type": "single",
-      "stem": "A 48-year-old woman with BMI 42, OSA on CPAP, and HTN is scheduled for elective surgery. What ASA class does the AANA criterion assign?",
+      "stem": "A patient has BMI 42, OSA requiring CPAP, and hypertension. Which ASA class best reflects the overall systemic disease burden under the cited criterion?",
       "options": [
         "ASA III",
         "ASA II",
@@ -9660,7 +9660,7 @@
       "id": "PRE-396",
       "set": 1,
       "type": "single",
-      "stem": "A 58-year-old man, BMI 36, snores, HTN, neck 43 cm. What is his STOP-BANG score?",
+      "stem": "A 58-year-old man has BMI 36, snoring, hypertension, and neck circumference 43 cm. What is his STOP-BANG score?",
       "options": [
         "6",
         "5",
@@ -9684,7 +9684,7 @@
       "id": "PRE-397",
       "set": 1,
       "type": "single",
-      "stem": "A 45-year-old female nonsmoker with PONV history, no postop opioids. What is her Apfel score?",
+      "stem": "A 45-year-old woman is a nonsmoker with prior PONV and no planned postoperative opioids. What is her Apfel score?",
       "options": [
         "3",
         "2",
@@ -9708,7 +9708,7 @@
       "id": "PRE-398",
       "set": 1,
       "type": "single",
-      "stem": "A 74-year-old with dementia and poor vision is scheduled for hip surgery. Which risk is MOST emphasized in the neuro section?",
+      "stem": "An older patient with dementia and poor vision is scheduled for hip surgery. Which neurologic complication deserves particular attention during perioperative planning?",
       "options": [
         "Postoperative delirium",
         "Postoperative seizures",
@@ -9732,11 +9732,11 @@
       "id": "PRE-399",
       "set": 1,
       "type": "single",
-      "stem": "A 66-year-old with a pacemaker for complete heart block is having a lumbar laminectomy with monopolar cautery. What is the MOST important preop question?",
+      "stem": "A pacemaker patient with complete heart block is scheduled for a case using monopolar cautery. Which preoperative question most directly determines the consequence of pacing inhibition?",
       "options": [
-        "Is the patient pacemaker dependent?",
+        "Is the patient pacemaker-dependent?",
         "Is the device MRI conditional?",
-        "Does the device have rate response?",
+        "Is rate response enabled?",
         "When was the battery last replaced?"
       ],
       "answer": [
@@ -9756,12 +9756,12 @@
       "id": "PRE-400",
       "set": 1,
       "type": "single",
-      "stem": "An ICD patient had two shocks last month. What does this suggest preop?",
+      "stem": "An ICD patient reports two shocks in the past month. What should that history trigger before surgery?",
       "options": [
-        "Recent arrhythmias; evaluate device and rhythm",
-        "Normal device function; no concern",
-        "Battery depletion",
-        "No need for interrogation if the patient feels well"
+        "Evaluation of recent arrhythmias and device function",
+        "Assumption of normal device function",
+        "Diagnosis of battery depletion",
+        "No interrogation if the patient feels well"
       ],
       "answer": [
         0
@@ -9780,12 +9780,12 @@
       "id": "PRE-401",
       "set": 1,
       "type": "single",
-      "stem": "A 62-year-old with EF 30% and dyspnea at rest is scheduled for elective knee replacement. What is the BEST decision?",
+      "stem": "A patient has EF 30% and dyspnea at rest before elective knee replacement. Which finding should drive management?",
       "options": [
-        "Postpone for heart failure optimization",
-        "Proceed with spinal anesthesia",
-        "Proceed with GA and invasive lines",
-        "Proceed if BP is normal"
+        "Decompensated heart failure requires optimization before elective surgery",
+        "Spinal anesthesia makes immediate surgery acceptable",
+        "Invasive monitoring alone offsets the risk",
+        "Normal blood pressure would permit proceeding"
       ],
       "answer": [
         0
@@ -9804,12 +9804,12 @@
       "id": "PRE-402",
       "set": 1,
       "type": "single",
-      "stem": "A 50-year-old with stable CAD, prior MI 2 years ago, walks 3 miles daily without symptoms. Which is MOST appropriate?",
+      "stem": "A patient with remote MI and stable CAD walks 3 miles daily without symptoms. What does the functional history suggest?",
       "options": [
-        "Proceed without further testing",
-        "Stress test before surgery",
-        "Cardiology clearance is mandatory",
-        "Delay 6 months"
+        "Adequate reserve with no routine need for further cardiac testing in the absence of active disease",
+        "Mandatory stress testing",
+        "Mandatory cardiology clearance",
+        "A six-month surgical delay"
       ],
       "answer": [
         0
@@ -9828,12 +9828,12 @@
       "id": "PRE-403",
       "set": 1,
       "type": "single",
-      "stem": "A 55-year-old diabetic has a glucose of 240 mg/dL on the morning of a scheduled hernia repair. What is the BEST action?",
+      "stem": "A diabetic patient has glucose 240 mg/dL before scheduled surgery. Which approach best follows the lecture threshold?",
       "options": [
-        "Treat the hyperglycemia and proceed if appropriate",
-        "Delay the case for 24 hours",
-        "Give D5 at 100 mL/hr during the case",
-        "Proceed, since glucose under 300 needs no treatment"
+        "Treat the hyperglycemia and reassess whether proceeding is appropriate",
+        "Automatically delay exactly 24 hours",
+        "Start dextrose infusion",
+        "Ignore values below 300 mg/dL"
       ],
       "answer": [
         0
@@ -9852,12 +9852,12 @@
       "id": "PRE-404",
       "set": 1,
       "type": "single",
-      "stem": "A patient on chronic steroids is having a colonoscopy. What steroid plan fits the table?",
+      "stem": "A chronic steroid user is scheduled for colonoscopy. Which regimen best matches the table's minor-procedure recommendation?",
       "options": [
-        "Usual dose plus hydrocortisone 50 mg IV then 25 mg q8h",
-        "Usual daily dose",
-        "Hydrocortisone 100 mg IV plus 200 mg infusion over 24 h",
-        "No steroids needed"
+        "Usual dose plus hydrocortisone 50 mg IV, then 25 mg every 8 hours",
+        "Usual daily dose only",
+        "Hydrocortisone 100 mg IV plus 200 mg over 24 hours",
+        "No steroid coverage"
       ],
       "answer": [
         0
@@ -9876,12 +9876,12 @@
       "id": "PRE-405",
       "set": 1,
       "type": "single",
-      "stem": "A patient on chronic steroids is having a dental extraction. What steroid plan fits the table?",
+      "stem": "A chronic steroid user is scheduled for dental extraction. Which regimen best matches the lowest-stress category in the table?",
       "options": [
-        "The usual daily dose",
-        "Hydrocortisone 50 mg IV then 25 mg q8h",
+        "Continue the usual daily dose",
+        "Hydrocortisone 50 mg IV then 25 mg every 8 hours",
         "Hydrocortisone 100 mg IV then infusion",
-        "Stop steroids"
+        "Stop chronic steroids"
       ],
       "answer": [
         0
@@ -9900,12 +9900,12 @@
       "id": "PRE-406",
       "set": 1,
       "type": "single",
-      "stem": "A healthy 28-year-old woman is scheduled for diagnostic laparoscopy. Which preop labs are required?",
+      "stem": "A healthy woman of childbearing potential is scheduled for diagnostic laparoscopy. Which routine preoperative test is specifically indicated?",
       "options": [
-        "HCG",
-        "A full CMP and CBC",
-        "A chest X-ray and ECG",
-        "An ABG and PFTs"
+        "Pregnancy testing",
+        "Full CBC and metabolic panel",
+        "Chest radiograph and ECG",
+        "ABG and pulmonary function testing"
       ],
       "answer": [
         0
