@@ -6262,7 +6262,7 @@
       "id": "PHA-251",
       "set": 1,
       "type": "single",
-      "stem": "During a 3-hour laparoscopic colectomy, when should you begin planning for emergence?",
+      "stem": "For a 3-hour colectomy, when should emergence planning begin?",
       "options": [
         "During maintenance, well before closure",
         "At the final skin suture, once closure is underway",
@@ -6286,7 +6286,7 @@
       "id": "PHA-252",
       "set": 1,
       "type": "multi",
-      "stem": "Which factors must be anticipated during the transition to emergence? (Select 5)",
+      "stem": "Which FIVE risks should be anticipated before transitioning from maintenance to emergence? (Select 5)",
       "options": [
         "Airway edema",
         "Aspiration risk",
@@ -6316,7 +6316,7 @@
       "id": "PHA-253",
       "set": 1,
       "type": "single",
-      "stem": "A 45-year-old with OSA, a BMI of 41, and a difficult intubation is finishing surgery. What should determine awake versus deep extubation?",
+      "stem": "A patient with OSA, BMI 41, and a difficult airway is nearing extubation. What should determine awake versus deep extubation?",
       "options": [
         "Patient risk, procedure, airway, technique, and rescue options",
         "Choosing deep extubation for patient comfort and speed",
@@ -6340,7 +6340,7 @@
       "id": "PHA-254",
       "set": 1,
       "type": "multi",
-      "stem": "A nonsmoking woman with prior PONV is emerging from a laparoscopy with residual block. Which emergence medications are appropriate? (Select 3)",
+      "stem": "A high-PONV-risk patient also has residual neuromuscular blockade. Which THREE medication priorities belong in emergence planning? (Select 3)",
       "options": [
         "Neuromuscular reversal",
         "Antiemetics based on her Apfel score",
@@ -6368,7 +6368,7 @@
       "id": "PHA-255",
       "set": 1,
       "type": "single",
-      "stem": "At the end of a sevoflurane anesthetic, you lower the end-tidal concentration to about 0.3 MAC while waiting for spontaneous breathing. What concept is this?",
+      "stem": "End-tidal sevoflurane is reduced to about 0.3 MAC near wake-up. Which concept does this represent?",
       "options": [
         "MAC-awake, letting the patient wake with amnesia",
         "MAC-BAR, blocking adrenergic response",
@@ -6392,7 +6392,7 @@
       "id": "PHA-256",
       "set": 1,
       "type": "multi",
-      "stem": "A patient is bucking on the ETT during emergence but has not yet met extubation criteria. Which small-dose drugs can blunt this? (Select 4)",
+      "stem": "The patient is bucking on the ETT but does not yet meet extubation criteria. Which FOUR small-dose medications may blunt coughing while emergence continues? (Select 4)",
       "options": [
         "Lidocaine",
         "Dexmedetomidine",
@@ -6421,7 +6421,7 @@
       "id": "PHA-257",
       "set": 1,
       "type": "single",
-      "stem": "In PACU, a patient has weak hand grip, cannot lift her head, and has shallow breathing after a case with rocuronium. What is the MOST likely cause?",
+      "stem": "In PACU, weak grip, inability to sustain head lift, and shallow respirations follow rocuronium use. What is the most likely cause?",
       "options": [
         "Incomplete NMB recovery",
         "Opioid overdose",
@@ -6445,7 +6445,7 @@
       "id": "PHA-258",
       "set": 1,
       "type": "multi",
-      "stem": "Which risks increase with residual neuromuscular weakness after extubation? (Select 2)",
+      "stem": "Which TWO complications are increased by residual neuromuscular weakness after extubation? (Select 2)",
       "options": [
         "Respiratory distress",
         "Reintubation",
@@ -6472,7 +6472,7 @@
       "id": "PHA-259",
       "set": 1,
       "type": "multi",
-      "stem": "In PACU, a patient's TOFR is 0.7 and she has weak breathing. What interventions address residual neuromuscular weakness? (Select 3)",
+      "stem": "TOFR is 0.7 with weak ventilation after surgery. Which THREE interventions address residual neuromuscular blockade? (Select 3)",
       "options": [
         "Additional anticholinesterase or sugammadex",
         "Additional time for recovery",
@@ -6500,7 +6500,7 @@
       "id": "PHA-260",
       "set": 1,
       "type": "single",
-      "stem": "After extubation, a patient makes high-pitched inspiratory sounds, then no air moves despite chest effort. What is happening?",
+      "stem": "After extubation, high-pitched inspiratory noise progresses to complete absence of airflow despite respiratory effort. What is occurring?",
       "options": [
         "Laryngospasm, with involuntary closure of the vocal cords",
         "Bronchospasm of the bronchial smooth muscle",
@@ -6524,7 +6524,7 @@
       "id": "PHA-261",
       "set": 1,
       "type": "single",
-      "stem": "After extubation, the chest and abdomen show a rocking motion with no air movement and no sound. What does this indicate?",
+      "stem": "Rocking chest and abdominal motion occurs with no airflow or sound after extubation. What does this indicate?",
       "options": [
         "Complete laryngospasm, an emergency",
         "Partial laryngospasm with stridor",
@@ -6548,7 +6548,7 @@
       "id": "PHA-262",
       "set": 1,
       "type": "single",
-      "stem": "After extubation, a patient develops stridor and then no air movement. Blood is pooled on the cords. What is the FIRST step?",
+      "stem": "Postextubation stridor progresses to absent airflow with blood pooled at the cords. What is the first step?",
       "options": [
         "Remove the stimulus by suctioning",
         "Give succinylcholine",
@@ -6572,7 +6572,7 @@
       "id": "PHA-263",
       "set": 1,
       "type": "single",
-      "stem": "During laryngospasm, you press firmly behind the earlobes, between the ramus and the mastoid. What is this maneuver?",
+      "stem": "Firm pressure is applied behind the earlobes between the mandibular ramus and mastoid during laryngospasm. What maneuver is this?",
       "options": [
         "Larson maneuver",
         "Sellick maneuver",
@@ -6596,7 +6596,7 @@
       "id": "PHA-264",
       "set": 1,
       "type": "single",
-      "stem": "Complete laryngospasm persists after extubation despite positive pressure and the Larson maneuver, and SpO2 is 78%. What is the next drug?",
+      "stem": "Complete laryngospasm persists despite 100% O2, positive pressure, and Larson maneuver; SpO2 is 78%. What drug should be given next?",
       "options": [
         "Small-dose succinylcholine",
         "Neostigmine to strengthen the cords",
@@ -6620,7 +6620,7 @@
       "id": "PHA-265",
       "set": 1,
       "type": "single",
-      "stem": "Why might rocuronium be used instead of succinylcholine for laryngospasm after sugammadex?",
+      "stem": "Why might rocuronium be selected for laryngospasm rescue after sugammadex has already been given?",
       "options": [
         "The lecture lists roc RSI dosing post-sugammadex",
         "Succinylcholine is ineffective after sugammadex",
@@ -6644,7 +6644,7 @@
       "id": "PHA-266",
       "set": 1,
       "type": "single",
-      "stem": "After a prolonged laryngospasm, a young athletic patient develops pink, frothy sputum and SpO2 of 85%. What complication is this?",
+      "stem": "After prolonged laryngospasm, a young athletic patient develops pink frothy sputum and severe hypoxemia. What complication is most likely?",
       "options": [
         "Negative pressure pulmonary edema",
         "Aspiration pneumonitis",
@@ -6668,7 +6668,7 @@
       "id": "PHA-267",
       "set": 1,
       "type": "multi",
-      "stem": "After an episode of airway obstruction, which signs suggest negative pressure pulmonary edema? (Select 3)",
+      "stem": "Which THREE findings support negative-pressure pulmonary edema after upper-airway obstruction? (Select 3)",
       "options": [
         "Pink, frothy secretions",
         "Severe respiratory distress",
@@ -6696,7 +6696,7 @@
       "id": "PHA-268",
       "set": 1,
       "type": "multi",
-      "stem": "After a laryngospasm episode, a healthy 25-year-old develops pink frothy sputum and SpO2 of 86%. Which treatments are appropriate? (Select 3)",
+      "stem": "Which THREE treatments are appropriate for negative-pressure pulmonary edema after laryngospasm? (Select 3)",
       "options": [
         "Supplemental oxygen",
         "CPAP, BiPAP, or reintubation as needed",
@@ -6724,7 +6724,7 @@
       "id": "PHA-269",
       "set": 1,
       "type": "multi",
-      "stem": "What causes persistent apnea or hypoventilation after surgery? (Select 3)",
+      "stem": "Which THREE categories commonly cause persistent postoperative apnea or hypoventilation? (Select 3)",
       "options": [
         "Residual anesthetic or opioid",
         "Residual neuromuscular blockade",
@@ -6752,7 +6752,7 @@
       "id": "PHA-270",
       "set": 1,
       "type": "single",
-      "stem": "At the end of a case, TOF ratio is 0.95 but the patient remains apneic with a high ETCO2. What is the BEST action?",
+      "stem": "TOFR is 0.95, but the patient remains apneic and hypercarbic. What is the best action?",
       "options": [
         "Keep the tube in until ventilation recovers",
         "Extubate and support with a mask",
@@ -6776,7 +6776,7 @@
       "id": "PHA-271",
       "set": 1,
       "type": "multi",
-      "stem": "During emergence after a carotid endarterectomy, BP rises to 190/100 and HR to 115 as the patient coughs. Which steps are appropriate? (Select 3)",
+      "stem": "After carotid endarterectomy, coughing during emergence drives BP to 190/100 and HR to 115. Which THREE actions are appropriate? (Select 3)",
       "options": [
         "Remove the noxious stimulus",
         "Manage pain and agitation",
@@ -6804,7 +6804,7 @@
       "id": "PHA-272",
       "set": 1,
       "type": "multi",
-      "stem": "A child emerges combative and inconsolable. Which causes should you consider? (Select 5)",
+      "stem": "A child emerges combative and inconsolable. Which FIVE causes or risk factors should be considered? (Select 5)",
       "options": [
         "Severe pain",
         "Residual neuromuscular blockade",
@@ -6834,7 +6834,7 @@
       "id": "PHA-273",
       "set": 1,
       "type": "multi",
-      "stem": "A patient with a seizure history remains agitated and confused after emergence. Which neurologic causes should be ruled out? (Select 3)",
+      "stem": "A patient with seizure history remains agitated and confused after emergence. Which THREE neurologic or metabolic diagnoses should be considered? (Select 3)",
       "options": [
         "Seizure",
         "Metabolic derangement",
@@ -6862,7 +6862,7 @@
       "id": "PHA-274",
       "set": 1,
       "type": "single",
-      "stem": "A patient emerging from anesthesia is agitated and thrashing with weak, uncoordinated movements. Which often-overlooked cause should you check first?",
+      "stem": "An emerging patient is thrashing but movements are weak and poorly coordinated. Which often-missed cause should be checked early?",
       "options": [
         "Residual neuromuscular blockade",
         "Hypothermia",
@@ -6886,7 +6886,7 @@
       "id": "PHA-275",
       "set": 1,
       "type": "single",
-      "stem": "In PACU, an 80-year-old is drowsy, slow to respond, and disoriented but calm. Which type of delirium is this?",
+      "stem": "An older PACU patient is calm but drowsy, slow to respond, and disoriented. Which delirium phenotype is this?",
       "options": [
         "Hypoactive delirium",
         "Hyperactive delirium",
@@ -6910,7 +6910,7 @@
       "id": "PHA-276",
       "set": 1,
       "type": "single",
-      "stem": "A 19-year-old wakes combative and tachycardic after an uneventful tonsillectomy. Which population commonly has this sympathetic surge on emergence?",
+      "stem": "A 19-year-old becomes combative and tachycardic during emergence. Which population commonly shows this sympathetic pattern?",
       "options": [
         "Children and young adults",
         "Elderly patients",
@@ -6934,7 +6934,7 @@
       "id": "PHA-277",
       "set": 1,
       "type": "single",
-      "stem": "A patient emerging after a head and neck flap is thrashing and reaching for his tracheostomy. What is the FIRST priority?",
+      "stem": "A patient after head-and-neck surgery is thrashing and reaching for the tracheostomy. What is the first priority?",
       "options": [
         "Protect the patient and airway",
         "Find the cause before intervening",
@@ -6958,7 +6958,7 @@
       "id": "PHA-278",
       "set": 1,
       "type": "single",
-      "stem": "A PACU patient is severely agitated, pulling at lines and endangering himself after other causes are excluded. Which drug is appropriate?",
+      "stem": "After reversible causes are excluded, a PACU patient remains dangerously agitated and is pulling out lines. Which drug may be appropriate?",
       "options": [
         "Haloperidol",
         "Flumazenil",
@@ -6982,7 +6982,7 @@
       "id": "PHA-279",
       "set": 1,
       "type": "single",
-      "stem": "A child with a history of severe emergence delirium is having a tonsillectomy. Why might dexmedetomidine be used, and what is the trade-off?",
+      "stem": "Why might dexmedetomidine be used in a child with prior severe emergence delirium, and what is the tradeoff?",
       "options": [
         "It helps prevent delirium but can delay emergence",
         "It treats delirium without affecting emergence",
@@ -7006,7 +7006,7 @@
       "id": "PHA-280",
       "set": 1,
       "type": "single",
-      "stem": "Forty-five minutes after stopping all anesthetics, a patient is still unresponsive with weak protective reflexes. What is this called?",
+      "stem": "Forty-five minutes after all anesthetics are stopped, the patient remains unresponsive with weak protective reflexes. What is this called?",
       "options": [
         "Delayed emergence",
         "Normal emergence",
@@ -7030,7 +7030,7 @@
       "id": "PHA-281",
       "set": 1,
       "type": "multi",
-      "stem": "A patient fails to wake after a case. Which residual drugs may need reversal? (Select 4)",
+      "stem": "Which FOUR residual drug categories may require reversal in delayed emergence? (Select 4)",
       "options": [
         "Opioids",
         "Benzodiazepines",
@@ -7059,7 +7059,7 @@
       "id": "PHA-282",
       "set": 1,
       "type": "multi",
-      "stem": "A patient is still unresponsive 40 minutes after a case. Which metabolic causes should be assessed? (Select 2)",
+      "stem": "Which TWO metabolic problems should be assessed in a patient who remains unresponsive after anesthesia? (Select 2)",
       "options": [
         "Hypercapnia",
         "Glucose derangements",
@@ -7086,7 +7086,7 @@
       "id": "PHA-283",
       "set": 1,
       "type": "single",
-      "stem": "After a carotid endarterectomy, a patient has not awakened 45 minutes after all agents were stopped; glucose, temperature, and ABG are normal. What should you do?",
+      "stem": "After carotid endarterectomy, the patient has not awakened 45 minutes after anesthetics are stopped and routine metabolic causes are excluded. What should be suspected?",
       "options": [
         "Suspect a neurologic event",
         "Wait another hour",
@@ -7110,7 +7110,7 @@
       "id": "PHA-284",
       "set": 1,
       "type": "single",
-      "stem": "After a propofol and midazolam TIVA, a patient takes 50 minutes to wake. Why might poor TIVA titration delay emergence?",
+      "stem": "Why can poorly titrated propofol-midazolam TIVA delay emergence?",
       "options": [
         "Sedatives take time to wear off",
         "TIVA drugs are reversed by naloxone",
@@ -7134,7 +7134,7 @@
       "id": "PHA-285",
       "set": 1,
       "type": "multi",
-      "stem": "You have just extubated a patient and placed a face mask. Which checks confirm airway patency? (Select 3)",
+      "stem": "Immediately after extubation, which THREE findings help confirm airway patency? (Select 3)",
       "options": [
         "Mask seal and fog in the mask",
         "Reservoir bag movement",
@@ -7162,7 +7162,7 @@
       "id": "PHA-286",
       "set": 1,
       "type": "multi",
-      "stem": "Which items are assessed after extubation? (Select 5)",
+      "stem": "Which FIVE domains should be assessed immediately after extubation? (Select 5)",
       "options": [
         "Spontaneous ventilation",
         "Neurologic status",
@@ -7192,7 +7192,7 @@
       "id": "PHA-287",
       "set": 1,
       "type": "single",
-      "stem": "Special Scenario #3 documents which laryngospasm treatment?",
+      "stem": "Which treatment sequence is described for laryngospasm in the lecture scenario?",
       "options": [
         "100% O2 with mask seal, OA, and Larson's maneuver",
         "Immediate reintubation without mask ventilation",
@@ -7216,7 +7216,7 @@
       "id": "PHA-288",
       "set": 1,
       "type": "multi",
-      "stem": "You transport an intubated, hemodynamically unstable patient to the ICU. Which elements are required? (Select 3)",
+      "stem": "An intubated, unstable patient is transported to the ICU. Which THREE safety elements are required? (Select 3)",
       "options": [
         "Full monitors",
         "Emergency drugs and airway equipment",
@@ -7244,7 +7244,7 @@
       "id": "PHA-289",
       "set": 1,
       "type": "multi",
-      "stem": "During emergence, music is loud and the surgeon starts closing conversations. Which team behaviors are expected? (Select 3)",
+      "stem": "Which THREE team behaviors are expected during emergence and extubation? (Select 3)",
       "options": [
         "No music or distracting conversation",
         "Confirm readiness with the surgical team",
@@ -7272,7 +7272,7 @@
       "id": "PHA-290",
       "set": 1,
       "type": "multi",
-      "stem": "Before you begin emergence after an orthopedic case, which surgical readiness items should you confirm? (Select 3)",
+      "stem": "Before starting emergence after orthopedic surgery, which THREE surgical-readiness items should be confirmed? (Select 3)",
       "options": [
         "Any pending X-rays or biopsy results",
         "Need for a position change",
@@ -7300,7 +7300,7 @@
       "id": "PHA-291",
       "set": 1,
       "type": "single",
-      "stem": "The surgeon wants the patient extubated immediately to make the next case, but TOFR is 0.7. Who decides when to extubate?",
+      "stem": "The surgeon wants immediate extubation for turnover, but TOFR is 0.7. Who determines extubation timing?",
       "options": [
         "The anesthesia provider",
         "The surgeon, since the next case is waiting",
@@ -7324,7 +7324,7 @@
       "id": "PHA-292",
       "set": 1,
       "type": "single",
-      "stem": "You have just removed the ETT. Which statement BEST closes the loop with your team?",
+      "stem": "Which statement best demonstrates closed-loop communication immediately after extubation?",
       "options": [
         "\"Tube out, mask on, airway patent.\"",
         "\"Done.\"",
@@ -7348,7 +7348,7 @@
       "id": "PHA-293",
       "set": 1,
       "type": "multi",
-      "stem": "What should be called out during extubation as a novice? (Select 2)",
+      "stem": "Which TWO items should a novice explicitly call out during extubation? (Select 2)",
       "options": [
         "Extubation readiness criteria",
         "Suctioning and bite block placement",
@@ -7375,7 +7375,7 @@
       "id": "PHA-294",
       "set": 1,
       "type": "multi",
-      "stem": "At the end of a laparoscopic hysterectomy, which findings support extubation? (Select 3)",
+      "stem": "Which THREE findings support extubation readiness at the end of laparoscopic hysterectomy? (Select 3)",
       "options": [
         "Neuromuscular strength confirmed after reversal",
         "Adequate tidal volume and minute ventilation",
@@ -7403,7 +7403,7 @@
       "id": "PHA-295",
       "set": 1,
       "type": "single",
-      "stem": "Which phrase shows speaking up during emergence?",
+      "stem": "Which statement best demonstrates appropriate speaking up during a possible emergence airway crisis?",
       "options": [
         "\"Possible laryngospasm; I cannot move air.\"",
         "\"It's probably fine.\"",
@@ -7427,7 +7427,7 @@
       "id": "PHA-296",
       "set": 1,
       "type": "single",
-      "stem": "What does Special Scenario #4 document for ICU transport?",
+      "stem": "For ICU transport, which combination of monitoring, ventilation, sedation, and handoff is documented in the lecture scenario?",
       "options": [
         "Full ASA monitors, manual ventilation, propofol, report",
         "Extubated on room air with a pulse oximeter",
@@ -7451,7 +7451,7 @@
       "id": "PHA-297",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, the room is loud with music and the circulator is asking you questions. Why should distractions be minimized now?",
+      "stem": "Why should music and nonessential conversation be minimized during emergence?",
       "options": [
         "Emergence is a high-risk phase for airway events",
         "It is the longest phase of anesthesia",
@@ -7475,7 +7475,7 @@
       "id": "PHA-298",
       "set": 1,
       "type": "single",
-      "stem": "An unstable patient must be moved to the ICU immediately, with no time for a full report beforehand. What is a \"rolling call\"?",
+      "stem": "An unstable patient must be moved to the ICU immediately. What does a 'rolling call' mean?",
       "options": [
         "Report given during transport",
         "A phone call after arrival",
@@ -7499,7 +7499,7 @@
       "id": "PHA-299",
       "set": 1,
       "type": "single",
-      "stem": "Refer to Capnogram E. During hip arthroplasty just after cementing, ETCO2 drops from 36 to 18 with the waveform still present and BP 72/40. What does this combination MOST suggest?",
+      "stem": "Immediately after cementing during hip arthroplasty, ETCO2 drops from 36 to 18 with a preserved waveform and BP falls to 72/40. What does this pattern most strongly suggest?",
       "options": [
         "Sudden fall in pulmonary blood flow, such as embolism",
         "Circuit disconnection",
@@ -7528,7 +7528,7 @@
       "id": "PHA-300",
       "set": 1,
       "type": "single",
-      "stem": "Refer to Capnogram E. During a hip arthroplasty, ETCO2 abruptly drops from 38 to 15 and BP falls to 70/40. What are the immediate actions?",
+      "stem": "During hip arthroplasty, ETCO2 abruptly falls from 38 to 15 with hypotension. What are the immediate priorities?",
       "options": [
         "100% O2, alert surgeon, support BP",
         "Increase the volatile agent",
