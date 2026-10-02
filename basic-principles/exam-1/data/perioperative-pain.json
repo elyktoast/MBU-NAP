@@ -1442,7 +1442,7 @@
       "id": "PAIN-059",
       "set": 1,
       "type": "single",
-      "stem": "A 3-year-old will not take oral medication after a tonsillectomy. Which route is a useful alternative?",
+      "stem": "A 3-year-old after tonsillectomy refuses oral medication and does not have IV access. Which listed nonparenteral route can provide an alternative when an appropriate formulation is available?",
       "options": [
         "Rectal",
         "Intramuscular",
@@ -1466,7 +1466,7 @@
       "id": "PAIN-060",
       "set": 1,
       "type": "single",
-      "stem": "After shoulder arthroplasty, ropivacaine is infused for several days through a catheter positioned adjacent to the brachial plexus. Which analgesic strategy is being used?",
+      "stem": "After shoulder arthroplasty, ropivacaine is infused for several days through a catheter positioned adjacent to the brachial plexus. Which technique provides the ongoing regional analgesia?",
       "options": [
         "Continuous peripheral nerve block",
         "IV patient-controlled analgesia",
@@ -1595,12 +1595,12 @@
       "id": "PAIN-065",
       "set": 1,
       "type": "single",
-      "stem": "A patient received intrathecal morphine for a cesarean and is going to a postpartum unit. Why must her monitoring differ?",
+      "stem": "A cesarean patient receives intrathecal morphine and appears comfortable with normal ventilation on arrival to postpartum. Why is extended respiratory monitoring still required?",
       "options": [
         "Delayed respiratory depression can occur hours later",
-        "Neuraxial opioids cause immediate hypertension",
-        "Neuraxial opioids prevent respiratory depression",
-        "Neuraxial opioids cause early hypotension"
+        "Neuraxial opioids cause delayed hypertension",
+        "Normal early ventilation excludes later respiratory depression",
+        "Intrathecal morphine primarily causes early hypotension"
       ],
       "answer": [
         0
@@ -1667,12 +1667,12 @@
       "id": "PAIN-068",
       "set": 1,
       "type": "single",
-      "stem": "After a hysterectomy, a patient has painful bladder spasms with a Foley in place. Which rectal medication is sometimes used?",
+      "stem": "A hysterectomy patient has severe painful bladder spasms despite a functioning Foley and otherwise adequate incisional analgesia. Which rectal medication is sometimes used specifically for this problem?",
       "options": [
-        "A belladonna and opium suppository",
-        "An acetaminophen suppository",
-        "An ibuprofen suppository",
-        "A morphine suppository"
+        "Belladonna and opium suppository",
+        "Acetaminophen suppository",
+        "Ibuprofen suppository",
+        "Morphine suppository"
       ],
       "answer": [
         0
@@ -1815,10 +1815,10 @@
       "id": "PAIN-074",
       "set": 1,
       "type": "single",
-      "stem": "You want an opioid-sparing adjunct that also provides sedation and blunts sympathetic response. Which drugs act at alpha-2 receptors?",
+      "stem": "An opioid-sparing adjunct is desired that provides sedation, sympatholysis, and analgesic benefit through alpha-2 agonism. Which pair fits this mechanism?",
       "options": [
         "Dexmedetomidine and clonidine",
-        "Ketamine and magnesium sulfate",
+        "Ketamine and magnesium",
         "Gabapentin and pregabalin",
         "Methocarbamol and diazepam"
       ],
@@ -1839,7 +1839,7 @@
       "id": "PAIN-075",
       "set": 1,
       "type": "single",
-      "stem": "A patient with diabetic neuropathy is scheduled for surgery and you want an oral preop adjunct for neuropathic pain. Which antiepileptic fits?",
+      "stem": "A patient with diabetic neuropathy is scheduled for surgery and an oral preoperative adjunct targeting neuropathic pain is desired. Which listed antiepileptic is most appropriate?",
       "options": [
         "Gabapentin",
         "Amitriptyline",
@@ -1887,7 +1887,7 @@
       "id": "PAIN-077",
       "set": 1,
       "type": "single",
-      "stem": "A patient cannot tolerate morphine-derived agents and asks which listed opioid is fully synthetic rather than natural or semisynthetic. Which is the BEST example?",
+      "stem": "A patient cannot tolerate morphine-derived agents, and the team wants a fully synthetic opioid rather than a natural or semisynthetic compound. Which listed drug fits?",
       "options": [
         "Fentanyl",
         "Morphine",
@@ -2241,7 +2241,7 @@
       "id": "PAIN-091",
       "set": 1,
       "type": "single",
-      "stem": "A patient gets little relief from codeine and tramadol but responds well to morphine. Which enzyme MOST likely explains this?",
+      "stem": "A patient gets little analgesia from both codeine and tramadol yet responds normally to morphine. Reduced activity of which enzyme best explains failure to activate the first two drugs?",
       "options": [
         "CYP2D6",
         "CYP3A4",
@@ -2265,12 +2265,12 @@
       "id": "PAIN-092",
       "set": 1,
       "type": "single",
-      "stem": "A poor CYP2D6 metabolizer receives codeine after a tonsillectomy. What should you expect?",
+      "stem": "A known CYP2D6 poor metabolizer receives codeine. Which clinical effect is most likely because conversion to active morphine is reduced?",
       "options": [
         "Poor analgesia",
         "Toxicity from rapid conversion",
         "Normal analgesia",
-        "Prolonged sedation from codeine itself"
+        "Prolonged sedation from unchanged codeine"
       ],
       "answer": [
         0
@@ -2385,12 +2385,12 @@
       "id": "PAIN-097",
       "set": 1,
       "type": "single",
-      "stem": "A patient on ketoconazole has prolonged effects from oxycodone. What explains this?",
+      "stem": "A patient taking the CYP3A4 inhibitor ketoconazole has unexpectedly prolonged oxycodone effects. Which mechanism best explains the interaction?",
       "options": [
-        "CYP3A4 inhibition slows oxycodone metabolism",
-        "CYP2D6 induction speeds oxycodone metabolism",
-        "Ketoconazole is an opioid",
-        "Oxycodone is renally cleared"
+        "Reduced CYP3A4-mediated oxycodone metabolism",
+        "CYP2D6 induction accelerating oxycodone metabolism",
+        "Direct opioid activity of ketoconazole",
+        "Exclusive renal clearance of oxycodone"
       ],
       "answer": [
         0
