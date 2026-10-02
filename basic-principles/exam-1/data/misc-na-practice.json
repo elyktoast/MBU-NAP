@@ -200,12 +200,12 @@
       "id": "MISC-009",
       "set": 1,
       "type": "single",
-      "stem": "A board asks for the contemporary estimate of annual US deaths attributed to preventable hospital errors. Which range best matches the lecture?",
+      "stem": "A quality-improvement presentation contrasts the original IOM mortality estimate with later analyses suggesting a substantially larger burden of preventable hospital harm. Which range represents the later estimate cited in the course material?",
       "options": [
-        "250,000–400,000",
-        "44,000–98,000",
-        "10,000–20,000",
-        "More than 1 million"
+        "250,000–400,000 deaths annually",
+        "44,000–98,000 deaths annually",
+        "10,000–20,000 deaths annually",
+        "More than 1 million deaths annually"
       ],
       "answer": [
         0
@@ -224,7 +224,7 @@
       "id": "MISC-010",
       "set": 1,
       "type": "single",
-      "stem": "Which range was reported in the original IOM estimate of annual deaths from preventable hospital errors?",
+      "stem": "When comparing historical patient-safety estimates, which annual mortality range belongs specifically to the original IOM report rather than later higher estimates?",
       "options": [
         "44,000–98,000",
         "250,000–400,000",
@@ -488,7 +488,7 @@
       "id": "MISC-021",
       "set": 1,
       "type": "single",
-      "stem": "Who developed the Swiss cheese model used to explain how hazards pass through imperfect defense layers?",
+      "stem": "A root-cause analysis describes hazards crossing several imperfect defensive layers only when their weaknesses align. Which safety theorist developed this model?",
       "options": [
         "James Reason",
         "Donald Berwick",
@@ -536,12 +536,12 @@
       "id": "MISC-023",
       "set": 1,
       "type": "single",
-      "stem": "What should quality assurance and continuous quality improvement programs primarily examine?",
+      "stem": "A department's quality program reviews both an airway rescue that succeeded and a similar event that produced harm. What should the analysis primarily examine?",
       "options": [
-        "Processes and systems in both successful and failed care",
-        "Punishment of individuals who make errors",
-        "Staffing-cost reduction",
-        "Only sentinel events and never successful processes"
+        "Processes and systems that shaped both successful and failed care",
+        "Which individual should be punished",
+        "Staffing-cost reduction alone",
+        "Only the harmful event because successful care offers no useful data"
       ],
       "answer": [
         0
@@ -560,12 +560,12 @@
       "id": "MISC-024",
       "set": 1,
       "type": "single",
-      "stem": "A department tracks PONV and reintubation rates and reports them externally. What are such quality programs commonly linked to?",
+      "stem": "An anesthesia service tracks PONV, reintubation, and other outcomes for external quality reporting. Why can these measures influence operations beyond internal improvement?",
       "options": [
-        "Practice standards and reimbursement benchmarks",
-        "Surgeon preference scores",
-        "Surgeon productivity",
-        "Equipment purchasing"
+        "Quality measures may be linked to practice standards and reimbursement benchmarks",
+        "They primarily determine surgeon preference scores",
+        "They measure surgeon productivity",
+        "They directly determine equipment purchasing"
       ],
       "answer": [
         0
@@ -635,7 +635,7 @@
       "id": "MISC-027",
       "set": 1,
       "type": "single",
-      "stem": "Which NHQDR core area focuses on avoiding preventable errors and hospital-acquired infections?",
+      "stem": "A hospital initiative targets medication errors, falls, and healthcare-associated infections. Which NHQDR core area most directly encompasses these goals?",
       "options": [
         "Patient safety",
         "Care affordability",
@@ -731,7 +731,7 @@
       "id": "MISC-031",
       "set": 1,
       "type": "single",
-      "stem": "Which kidney-failure treatment is preferred but remains accessible to relatively few patients according to the cited report?",
+      "stem": "A patient with kidney failure asks which treatment offers the preferred long-term replacement option but remains available to relatively few eligible patients because of access limitations. Which treatment is described?",
       "options": [
         "Kidney transplantation",
         "Peritoneal dialysis",
@@ -832,7 +832,7 @@
       "id": "MISC-035",
       "set": 1,
       "type": "single",
-      "stem": "Which condition remains the leading cause of death in the United States and therefore a major perioperative risk focus?",
+      "stem": "When prioritizing population-level perioperative risk reduction, which condition remains the leading cause of death in the United States in the cited material?",
       "options": [
         "Heart disease",
         "Cancer",
@@ -856,7 +856,7 @@
       "id": "MISC-036",
       "set": 1,
       "type": "single",
-      "stem": "Where does unintentional injury rank among leading US causes of death in the cited material?",
+      "stem": "The cited mortality data place unintentional injury, including overdose, at what rank among leading U.S. causes of death?",
       "options": [
         "Third",
         "First",
@@ -1152,7 +1152,7 @@
       "id": "MISC-048",
       "set": 1,
       "type": "single",
-      "stem": "How much higher is pregnancy-related mortality reported to be among minority women in the cited material?",
+      "stem": "The cited maternal-health disparity data report pregnancy-related mortality among minority women at approximately what multiple of the comparison group?",
       "options": [
         "Two to three times higher",
         "About 10% higher",
