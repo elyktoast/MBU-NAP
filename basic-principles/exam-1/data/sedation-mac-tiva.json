@@ -6123,12 +6123,12 @@
       "id": "SED-251",
       "set": 1,
       "type": "single",
-      "stem": "Three MAC patients differ: one has persistent ETCO2 65 despite stimulation and jaw thrust; the others have mild anxiety or a small HR rise. Which patient has a true conversion trigger?",
+      "stem": "Three MAC patients differ: one has persistent ETCO2 65 mmHg despite airway maneuvers; one has mild preincision anxiety; one has a small isolated HR increase. Which finding most strongly supports escalation/conversion?",
       "options": [
-        "Patient A, with hypercarbia despite support",
-        "Patient B, with preincision anxiety",
-        "Patient C, with a small HR increase",
-        "None of them meets a conversion trigger at this point in the case"
+        "Persistent hypercapnia despite appropriate initial ventilatory support",
+        "Mild anxiety",
+        "A small isolated HR increase",
+        "All three equally"
       ],
       "answer": [
         0
@@ -6147,12 +6147,12 @@
       "id": "SED-252",
       "set": 1,
       "type": "single",
-      "stem": "A diagnostic laparoscopy unexpectedly becomes an open exploration. Why does this procedural change favor conversion to GA?",
+      "stem": "A diagnostic laparoscopy unexpectedly becomes an open abdominal exploration. Why should the anesthetic plan be reassessed?",
       "options": [
-        "The planned sedation no longer matches the procedure",
-        "It shortens the case",
-        "It reduces bleeding",
-        "It lowers infection risk by shortening the procedure"
+        "The new procedure may exceed the stimulation, duration, immobility, and airway requirements safely supported by the original MAC plan",
+        "Opening the abdomen reduces anesthetic requirements",
+        "The procedural change eliminates aspiration risk",
+        "MAC must always continue once started"
       ],
       "answer": [
         0
@@ -6171,12 +6171,12 @@
       "id": "SED-253",
       "set": 1,
       "type": "single",
-      "stem": "After additional midazolam, a MAC patient becomes more restless and combative. What is the best explanation?",
+      "stem": "After additional midazolam during MAC, a patient becomes more restless and disinhibited while ventilation begins to worsen. What is the best response?",
       "options": [
-        "Deeper sedation can cause disinhibition rather than calm",
-        "She needs more midazolam",
-        "She needs more midazolam to reach adequate depth",
-        "She has had an inadequate block that needs more sedation"
+        "Recognize possible paradoxical/disinhibitory or excessive sedative effect and avoid reflexively giving more benzodiazepine while reassessing airway and causes",
+        "Give progressively larger midazolam doses until immobile",
+        "Assume the regional block failed",
+        "Add neuromuscular blocker without securing the airway"
       ],
       "answer": [
         0
@@ -6195,14 +6195,14 @@
       "id": "SED-254",
       "set": 1,
       "type": "multi",
-      "stem": "Which THREE causes most commonly lead MAC cases to convert to GA? (Select 3)",
+      "stem": "Which THREE developments commonly lead to conversion from MAC to general anesthesia? (Select 3)",
       "options": [
-        "Failed neuraxial or regional anesthesia",
-        "Inability to tolerate MAC",
-        "Hypoxia or airway obstruction",
-        "Excessively deep BIS during TIVA",
-        "Normal intraoperative capnography",
-        "Stable blood pressure"
+        "Failed regional/neuraxial technique",
+        "Inability to tolerate the procedure under MAC",
+        "Hypoxemia or airway obstruction",
+        "Normal capnography",
+        "Stable blood pressure",
+        "Adequate regional anesthesia"
       ],
       "answer": [
         0,
@@ -6223,12 +6223,12 @@
       "id": "SED-255",
       "set": 1,
       "type": "single",
-      "stem": "A spinal anesthetic fails during hip surgery under MAC and the patient becomes uncomfortable. What is the best next step?",
+      "stem": "A spinal anesthetic is inadequate during hip surgery and escalating sedation would be required to tolerate surgical pain. What is the safest next step?",
       "options": [
-        "Consider conversion to GA",
-        "Increase sedation until the patient stops moving",
-        "Add propofol boluses until the patient stops moving",
-        "Give midazolam for anxiety and continue under MAC"
+        "Reassess the anesthetic and convert to a technique that reliably provides surgical anesthesia, including general anesthesia when appropriate",
+        "Continue escalating propofol until the patient no longer moves",
+        "Treat the pain with midazolam",
+        "Use paralysis without securing the airway"
       ],
       "answer": [
         0
@@ -6247,12 +6247,12 @@
       "id": "SED-256",
       "set": 1,
       "type": "single",
-      "stem": "A patient was promised complete sleep during MAC but later recalls the procedure. What complication is most likely to be reported?",
+      "stem": "A patient was promised complete unconsciousness during MAC but later recalls portions of the procedure. Which problem most directly contributed to dissatisfaction?",
       "options": [
-        "A complaint of awareness",
-        "Increased bleeding",
-        "Delayed emergence",
-        "Increased PONV"
+        "Preoperative expectations did not match the intended anesthetic experience",
+        "Recall necessarily proves anesthetic negligence",
+        "MAC guarantees amnesia",
+        "The regional block must have failed"
       ],
       "answer": [
         0
@@ -6271,12 +6271,12 @@
       "id": "SED-257",
       "set": 1,
       "type": "single",
-      "stem": "Two similar MAC patients receive different preop counseling. Which patient is more likely to report dissatisfaction from awareness?",
+      "stem": "Two otherwise similar MAC patients receive different counseling: one is told partial awareness/recall may occur; the other is promised complete sleep. Which factor most increases the second patient's risk of dissatisfaction afterward?",
       "options": [
-        "The second patient is more likely to report awareness and dissatisfaction",
-        "Both will report similar satisfaction",
-        "The first patient is more likely to complain, since she was told she may remember",
-        "The second patient is less likely to remember because expectations alter amnesia"
+        "Expectation mismatch if recall occurs",
+        "Counseling itself increases memory formation",
+        "Expectations determine pharmacologic amnesia",
+        "The first patient will necessarily receive less sedative"
       ],
       "answer": [
         0
@@ -6295,12 +6295,12 @@
       "id": "SED-258",
       "set": 1,
       "type": "single",
-      "stem": "During MAC, the patient becomes confused, combative, and unable to follow commands. Which conversion trigger applies?",
+      "stem": "During MAC, a patient becomes acutely confused, combative, and unable to cooperate. What is the best next step?",
       "options": [
-        "Altered mental status",
-        "Hypercarbia",
-        "Loss of IV access",
-        "Prolonged surgery"
+        "Assess causes such as hypoxemia, hypercapnia, pain, drug effect, or neurologic change and escalate/convert if safe continuation is impossible",
+        "Assume the only cause is inadequate sedation",
+        "Give a large propofol bolus before assessing ventilation",
+        "Ignore the change if SpO2 is normal"
       ],
       "answer": [
         0
@@ -6319,12 +6319,12 @@
       "id": "SED-259",
       "set": 1,
       "type": "single",
-      "stem": "Severe hypotension and bradycardia persist despite initial treatment during MAC. What should be considered next?",
+      "stem": "During MAC, severe hypotension and bradycardia persist despite appropriate initial treatment. What should be considered?",
       "options": [
-        "Hemodynamic instability may require conversion",
-        "Increase the propofol infusion to blunt the stress response",
-        "Increase sedation to reduce the patient's stress response",
-        "Remove the BP cuff"
+        "The current technique may no longer be safe; escalate resuscitation and consider conversion as clinically indicated",
+        "Increase propofol to reduce stress",
+        "Remove the blood-pressure cuff",
+        "Continue unchanged until the procedure ends"
       ],
       "answer": [
         0
@@ -6343,12 +6343,12 @@
       "id": "SED-260",
       "set": 1,
       "type": "single",
-      "stem": "Why should patients be told they may need to follow commands during MAC?",
+      "stem": "Why should a patient be told before MAC that they may need to follow commands?",
       "options": [
-        "Some procedures require cooperation",
-        "It prevents airway obstruction",
-        "It allows lighter overall sedation",
-        "It replaces monitoring"
+        "Some procedures depend on cooperation, positioning, or neurologic assessment",
+        "Following commands prevents airway obstruction",
+        "Commands replace physiologic monitoring",
+        "All MAC patients must remain fully awake"
       ],
       "answer": [
         0
@@ -6367,12 +6367,12 @@
       "id": "SED-261",
       "set": 1,
       "type": "single",
-      "stem": "During a quiet MAC, the anesthesia provider focuses on another patient's chart and waits for alarms to redirect attention. Which principle is violated?",
+      "stem": "During a quiet MAC, the anesthesia professional focuses on unrelated work and relies on alarms to regain attention. Which principle is violated?",
       "options": [
-        "Continuous vigilance with immediate airway readiness",
-        "Vigilance concentrated at induction and emergence",
-        "Vigilance when alarms sound or the surgeon asks",
-        "Vigilance focused on the proceduralist's needs"
+        "Continuous vigilance and readiness to intervene before deterioration reaches alarm thresholds",
+        "Documentation should occur only after the case",
+        "Stable patients require observation only at induction and emergence",
+        "The proceduralist should monitor the airway"
       ],
       "answer": [
         0
@@ -6391,12 +6391,12 @@
       "id": "SED-262",
       "set": 1,
       "type": "single",
-      "stem": "Which preoperative statement reveals unrealistic expectations about MAC and requires clarification?",
+      "stem": "Which preoperative statement most clearly requires correction before MAC?",
       "options": [
-        "\"I'll be completely asleep and won't remember anything.\"",
-        "\"I might hear some noises, and that's fine.\"",
-        "\"I may feel some pressure but not sharp pain.\"",
-        "\"You'll be watching my breathing the whole time.\""
+        "\"I was told I'll definitely be completely unconscious and remember nothing.\"",
+        "\"I may hear some sounds.\"",
+        "\"I might need to follow instructions.\"",
+        "\"You will keep monitoring my breathing.\""
       ],
       "answer": [
         0
@@ -6415,11 +6415,11 @@
       "id": "SED-263",
       "set": 1,
       "type": "single",
-      "stem": "When MAC must convert to GA, which resource must already be immediately available?",
+      "stem": "When MAC unexpectedly requires conversion to general anesthesia, which resource must already be immediately accessible?",
       "options": [
-        "Advanced airway equipment",
-        "A second anesthesia provider",
+        "Advanced airway and ventilation equipment",
         "An ICU bed",
+        "A second proceduralist",
         "A neuromonitoring team"
       ],
       "answer": [
@@ -6439,12 +6439,12 @@
       "id": "SED-264",
       "set": 1,
       "type": "single",
-      "stem": "Which event during MAC is NOT by itself a conversion trigger?",
+      "stem": "Which event during MAC is least likely, by itself, to justify conversion to general anesthesia?",
       "options": [
-        "Mild preprocedure anxiety that settles with reassurance",
-        "Persistent coughing that prevents the surgeon from working",
-        "Witnessed regurgitation with suspected aspiration",
-        "Hypotension that does not respond to treatment"
+        "Mild anxiety relieved by reassurance",
+        "Persistent coughing that prevents safe surgery",
+        "Suspected aspiration with respiratory compromise",
+        "Refractory hemodynamic instability"
       ],
       "answer": [
         0
@@ -6463,12 +6463,12 @@
       "id": "SED-265",
       "set": 1,
       "type": "single",
-      "stem": "A restless patient repeatedly reaches toward the field late in a MAC. What is the best response before giving more sedative?",
+      "stem": "Late in MAC, a patient repeatedly reaches toward the sterile field. What should happen before simply increasing sedation?",
       "options": [
-        "Reassess the cause and convert to GA if MAC is unsafe",
-        "Keep adding small boluses until the patient is still",
-        "Give larger sedative boluses until the patient stops moving",
-        "Give an opioid bolus and continue as planned"
+        "Assess pain, hypoxemia/hypercapnia, positioning, bladder discomfort, anxiety, and procedural tolerance; convert if safe MAC is no longer feasible",
+        "Give repeated propofol boluses until motion stops",
+        "Administer neuromuscular blocker",
+        "Ignore the behavior if BP is normal"
       ],
       "answer": [
         0
@@ -6487,12 +6487,12 @@
       "id": "SED-266",
       "set": 1,
       "type": "single",
-      "stem": "A patient asks whether memory is guaranteed to be absent during propofol MAC. What is the most accurate answer?",
+      "stem": "A patient asks whether propofol MAC guarantees no memory. What is the most accurate response?",
       "options": [
-        "You may remember parts of the procedure",
-        "You will remember nothing at all",
-        "You will be fully awake and remember everything",
-        "Memory is unaffected by sedation"
+        "Recall varies with dose, adjuncts, and depth; portions of the procedure may be remembered",
+        "Propofol guarantees complete amnesia at every sedating dose",
+        "Memory is unaffected by propofol",
+        "Any recall means the patient was never sedated"
       ],
       "answer": [
         0
@@ -6511,12 +6511,12 @@
       "id": "SED-267",
       "set": 1,
       "type": "single",
-      "stem": "A planned 1-hour MAC has extended to 3 hours, and the patient is restless, requiring more propofol and beginning to obstruct. Which conversion trigger is present?",
+      "stem": "A planned 1-hour MAC extends to 3 hours; the patient becomes restless, requires increasing propofol, and begins obstructing. What is the best interpretation?",
       "options": [
-        "Prolonged surgery; consider conversion to GA",
-        "Loss of IV access; place a new IV",
-        "Procedural change; obtain new consent",
-        "Patient anxiety; give more midazolam"
+        "Prolonged duration plus escalating sedation and obstruction indicate the original MAC plan may no longer be safe",
+        "More propofol is the only appropriate response",
+        "The problem is necessarily loss of IV access",
+        "Prolonged duration lowers airway risk"
       ],
       "answer": [
         0
@@ -6535,12 +6535,12 @@
       "id": "SED-268",
       "set": 1,
       "type": "single",
-      "stem": "During MAC, RR is 6 and ETCO2 62 despite repeated stimulation while SpO2 remains acceptable on oxygen. What does this mean for the plan?",
+      "stem": "During MAC, RR is 6/min and ETCO2 remains 62 mmHg despite stimulation and airway repositioning; SpO2 is acceptable on oxygen. What should drive management?",
       "options": [
-        "Persistent hypercarbia is a trigger to consider conversion",
-        "It is normal under deep sedation",
-        "The cannula is malfunctioning",
-        "It is acceptable while SpO2 stays above 90% on supplemental oxygen"
+        "Persistent inadequate ventilation despite initial maneuvers, not the temporarily preserved SpO2",
+        "Normal SpO2 proves ventilation is adequate",
+        "Hypercapnia is expected and needs no action",
+        "Increase oxygen flow without addressing ventilation"
       ],
       "answer": [
         0
@@ -6559,12 +6559,12 @@
       "id": "SED-269",
       "set": 1,
       "type": "single",
-      "stem": "A procedure unexpectedly becomes much more invasive while MAC is underway. What should be done?",
+      "stem": "A procedure unexpectedly becomes substantially more invasive during MAC. What should be done?",
       "options": [
-        "Reassess and consider conversion to GA",
-        "Continue MAC without change",
-        "Increase oxygen and continue with the current plan",
-        "Stop all sedation"
+        "Reassess whether the original anesthetic still provides adequate analgesia, immobility, physiologic control, and airway safety; convert if needed",
+        "Continue the original plan automatically",
+        "Stop all anesthesia",
+        "Increase oxygen only"
       ],
       "answer": [
         0
@@ -6583,14 +6583,14 @@
       "id": "SED-270",
       "set": 1,
       "type": "multi",
-      "stem": "Which FOUR expectations should be discussed before MAC? (Select 4)",
+      "stem": "Which FOUR expectations are appropriate to discuss before MAC? (Select 4)",
       "options": [
-        "She may remain awake",
-        "She may remember parts of the procedure",
-        "Conversion to general anesthesia is possible",
-        "She may hear conversations in the room",
-        "She will not need an airway device under any circumstances",
-        "She will not need monitoring"
+        "The patient may remain partly awake",
+        "Some recall may occur",
+        "Conversion to general anesthesia may become necessary",
+        "The patient may hear room/procedural sounds",
+        "An airway device can never be required",
+        "Physiologic monitoring will stop once comfortable"
       ],
       "answer": [
         0,
@@ -6612,7 +6612,7 @@
       "id": "SED-271",
       "set": 1,
       "type": "single",
-      "stem": "Which drug is most commonly used as the primary hypnotic for moderate-to-deep MAC sedation?",
+      "stem": "A short outpatient procedure requires rapidly titratable hypnosis with fast onset and recovery, while local anesthesia supplies analgesia. Which IV agent best fits?",
       "options": [
         "Propofol",
         "Midazolam",
@@ -6636,12 +6636,12 @@
       "id": "SED-272",
       "set": 1,
       "type": "single",
-      "stem": "Which receptor mechanism produces propofol's hypnotic effect?",
+      "stem": "Propofol produces hypnosis primarily through which receptor action?",
       "options": [
-        "Potentiation of GABA-A receptor activity",
-        "Antagonism of cortical NMDA receptors",
-        "Agonism at alpha-2 receptors",
-        "Agonism at mu-opioid receptors"
+        "Positive modulation/potentiation of GABA-A receptor activity",
+        "NMDA receptor antagonism",
+        "Alpha-2 adrenergic agonism",
+        "Mu-opioid receptor agonism"
       ],
       "answer": [
         0
@@ -6660,12 +6660,12 @@
       "id": "SED-273",
       "set": 1,
       "type": "single",
-      "stem": "Why can an elderly patient with poor cardiac reserve become profoundly hypotensive after a propofol dose tolerated by a younger healthy adult?",
+      "stem": "An elderly hypovolemic patient with poor cardiac reserve becomes profoundly hypotensive after a propofol bolus tolerated by a younger healthy adult. Why?",
       "options": [
-        "Propofol's effect depends on age, cardiac reserve, and volume status",
-        "Propofol causes more pain on injection in the elderly",
-        "Propofol has active metabolites that accumulate in heart failure",
-        "Older patients have a smaller volume of distribution only"
+        "Age, reduced reserve, volume depletion, and coadministered drugs can markedly increase propofol's hemodynamic effect",
+        "Propofol has active metabolites that accumulate only in older adults",
+        "Older adults metabolize propofol faster",
+        "Injection pain directly causes prolonged hypotension"
       ],
       "answer": [
         0
@@ -6684,12 +6684,12 @@
       "id": "SED-274",
       "set": 1,
       "type": "single",
-      "stem": "A deeply sedated patient still withdraws and moans at incision while receiving propofol alone. What important drug property explains this?",
+      "stem": "A patient is deeply hypnotized with propofol alone but still shows a marked response to incision. Which property explains this?",
       "options": [
-        "Propofol provides no analgesia",
-        "The propofol dose was too low for sedation",
-        "Propofol causes paradoxical agitation",
-        "The patient has developed tolerance to propofol"
+        "Propofol is not a primary analgesic",
+        "Propofol cannot produce hypnosis",
+        "Propofol routinely causes opioid tolerance",
+        "Propofol provides analgesia only at low doses"
       ],
       "answer": [
         0
@@ -6708,14 +6708,14 @@
       "id": "SED-275",
       "set": 1,
       "type": "multi",
-      "stem": "Which FOUR strategies reduce propofol injection pain? (Select 4)",
+      "stem": "Which FOUR strategies can reduce propofol injection pain? (Select 4)",
       "options": [
-        "Use a larger antecubital vein",
-        "Pretreat with lidocaine and venous occlusion",
-        "Inject into a fast-running IV line",
+        "Use a larger proximal vein when possible",
+        "Pretreat with lidocaine using an effective technique",
+        "Administer through a well-running carrier IV",
         "Inject more slowly",
-        "Inject rapidly into the hand vein",
-        "Chill the propofol before injection"
+        "Inject rapidly into a small hand vein",
+        "Use a smaller distal vein"
       ],
       "answer": [
         0,
@@ -6737,12 +6737,12 @@
       "id": "SED-276",
       "set": 1,
       "type": "single",
-      "stem": "Propofol burns through a small hand IV. What is the best immediate technique change?",
+      "stem": "Propofol causes severe burning through a small hand IV. Which change is most likely to reduce discomfort while maintaining IV administration?",
       "options": [
-        "Slow the injection and give it into a fast-flowing carrier",
-        "Push faster to shorten the exposure time",
-        "Move to a smaller vein distal to the IV",
-        "Mix the propofol with an equal volume of saline first"
+        "Use a larger/proximal vein or well-running carrier and slow the injection, with lidocaine pretreatment when appropriate",
+        "Push the same dose faster",
+        "Move to a smaller distal vein",
+        "Stop carrier fluid"
       ],
       "answer": [
         0
@@ -6761,12 +6761,12 @@
       "id": "SED-277",
       "set": 1,
       "type": "single",
-      "stem": "Which pharmacokinetic property makes propofol useful for both brief sedation and prolonged TIVA?",
+      "stem": "Which pharmacokinetic characteristic makes propofol easy to titrate for brief sedation?",
       "options": [
-        "Rapid onset with rapid redistribution, allowing easy titration",
-        "Long duration of action that suits lengthy procedures without redosing",
-        "Strong analgesia that reduces opioid needs",
-        "Reversibility with a specific antagonist"
+        "Rapid onset and redistribution produce fast changes in clinical effect after dose adjustment",
+        "A very long fixed duration prevents fluctuations",
+        "Active metabolites sustain hypnosis",
+        "A specific reversal agent permits instant awakening"
       ],
       "answer": [
         0
@@ -6790,8 +6790,8 @@
         "Respiratory depression",
         "Hypotension",
         "Apnea",
-        "Emergence reactions",
-        "Chest wall rigidity",
+        "Dissociative emergence reaction",
+        "Opioid chest-wall rigidity",
         "Hypersalivation"
       ],
       "answer": [
@@ -6813,12 +6813,12 @@
       "id": "SED-279",
       "set": 1,
       "type": "single",
-      "stem": "A patient receiving propofol no longer responds to voice. What change in risk should be recognized immediately?",
+      "stem": "During propofol sedation, the patient no longer responds purposefully even to painful stimulation and ventilation becomes inadequate. What should be recognized?",
       "options": [
-        "Sedation may now carry the risks of GA with an open airway",
-        "The patient is at ideal moderate sedation for EGD",
-        "The patient has dropped to minimal sedation depth",
-        "The patient needs flumazenil to restore responsiveness"
+        "The patient has reached general-anesthesia depth and requires immediate airway/ventilatory management",
+        "This remains moderate sedation because propofol was used for MAC",
+        "The patient needs flumazenil",
+        "Loss of responsiveness decreases airway risk"
       ],
       "answer": [
         0
@@ -6837,12 +6837,12 @@
       "id": "SED-280",
       "set": 1,
       "type": "single",
-      "stem": "Why is a second IV reasonable during prolonged deep propofol sedation?",
+      "stem": "Why may backup IV access be valuable during prolonged deep propofol anesthesia/sedation when the only existing IV is difficult to observe?",
       "options": [
-        "Deep propofol cases depend on reliable IV delivery",
-        "Propofol requires two IVs for dilution of the emulsion",
-        "A second IV is required for blood draws",
-        "A second IV prevents injection pain"
+        "Loss or infiltration of the sole IV can abruptly interrupt hypnosis and delay delivery of rescue drugs",
+        "Propofol chemically requires two IVs",
+        "A second IV prevents injection pain",
+        "Two IVs eliminate hypotension"
       ],
       "answer": [
         0
@@ -6861,12 +6861,12 @@
       "id": "SED-281",
       "set": 1,
       "type": "single",
-      "stem": "A sedative causes delayed onset followed by perineal tingling and pruritus. Which agent is most likely?",
+      "stem": "An IV sedative has delayed onset and is followed by characteristic perineal paresthesia/pruritus. Which agent best fits?",
       "options": [
-        "Fospropofol, a water-soluble prodrug converted to propofol",
-        "Propofol, a lipid emulsion that causes burning in small veins",
-        "Midazolam, a benzodiazepine",
-        "Dexmedetomidine, an alpha-2 agonist"
+        "Fospropofol",
+        "Propofol",
+        "Midazolam",
+        "Dexmedetomidine"
       ],
       "answer": [
         0
@@ -6885,12 +6885,12 @@
       "id": "SED-282",
       "set": 1,
       "type": "single",
-      "stem": "Compared with propofol, what onset-and-recovery pattern should be expected with fospropofol?",
+      "stem": "Compared with direct propofol administration, why is fospropofol onset slower?",
       "options": [
-        "The fospropofol patient takes longer to fall asleep and to wake up",
-        "The fospropofol patient falls asleep faster",
-        "Both have identical onset and recovery",
-        "The propofol patient takes longer to wake up because of redistribution"
+        "It must undergo enzymatic conversion to active propofol",
+        "It is an NMDA antagonist",
+        "It is stored only in adipose tissue before activation",
+        "It requires renal conversion to midazolam"
       ],
       "answer": [
         0
@@ -6909,12 +6909,12 @@
       "id": "SED-283",
       "set": 1,
       "type": "single",
-      "stem": "Perineal paresthesia and generalized itching occur after an IV sedative without rash. Which drug is most likely responsible?",
+      "stem": "Perineal tingling and generalized pruritus without an allergic rash occur after administration of a propofol prodrug. Which agent is most likely?",
       "options": [
         "Fospropofol",
         "Propofol",
-        "Dexmedetomidine",
-        "Ketamine"
+        "Ketamine",
+        "Dexmedetomidine"
       ],
       "answer": [
         0
@@ -6933,12 +6933,12 @@
       "id": "SED-284",
       "set": 1,
       "type": "single",
-      "stem": "What is the current U.S. status of fospropofol according to the lecture?",
+      "stem": "A lecture question asks about fospropofol's U.S. clinical status. Which statement best matches the source material?",
       "options": [
-        "It is not currently approved for use in the United States",
-        "It is approved in the US for both GA and MAC sedation",
-        "It is approved in the US for MAC but not GA",
-        "It is approved in the US for ICU sedation"
+        "It is not currently marketed/approved for routine U.S. clinical use",
+        "It is a first-line U.S. induction agent",
+        "It is approved only for neuromuscular blockade",
+        "It is the preferred U.S. ICU sedative"
       ],
       "answer": [
         0
@@ -6957,12 +6957,12 @@
       "id": "SED-285",
       "set": 1,
       "type": "single",
-      "stem": "For which clinical use was fospropofol originally developed?",
+      "stem": "Fospropofol was developed primarily to provide which type of anesthetic effect?",
       "options": [
-        "MAC sedation",
-        "GA induction",
-        "ICU sedation",
-        "Postoperative analgesia"
+        "IV sedation through conversion to propofol",
+        "Neuromuscular blockade",
+        "Local anesthesia",
+        "Opioid analgesia"
       ],
       "answer": [
         0
@@ -6981,12 +6981,12 @@
       "id": "SED-286",
       "set": 1,
       "type": "single",
-      "stem": "Why would fospropofol be expected to cause less injection pain than propofol?",
+      "stem": "Why does fospropofol produce less classic lipid-emulsion injection pain than propofol?",
       "options": [
-        "Less injection pain, since fospropofol is water-soluble",
-        "More injection pain, since fospropofol is more concentrated",
-        "The same injection pain, since both become propofol",
-        "Injection pain that occurs mainly in children and small veins"
+        "It is a water-soluble prodrug rather than the standard propofol lipid emulsion",
+        "It blocks peripheral sodium channels",
+        "It contains lidocaine intrinsically",
+        "It is administered intramuscularly"
       ],
       "answer": [
         0
@@ -7005,12 +7005,12 @@
       "id": "SED-287",
       "set": 1,
       "type": "single",
-      "stem": "A fospropofol sedation protocol proposes pulse oximetry alone and no airway cart. What is the major safety flaw?",
+      "stem": "A fospropofol sedation protocol proposes pulse oximetry alone with no airway-rescue equipment. What is the major flaw?",
       "options": [
-        "Providers must be ready to rescue from deep sedation or GA",
-        "Nothing, since fospropofol lacks respiratory depression",
-        "Pulse oximetry alone is enough for this drug",
-        "Airway equipment is unnecessary for prodrugs"
+        "Conversion to active propofol can still produce clinically important respiratory depression, so ventilation monitoring and rescue capability remain necessary",
+        "Fospropofol cannot affect ventilation",
+        "A prodrug eliminates deep-sedation risk",
+        "Airway equipment is needed only for inhaled anesthetics"
       ],
       "answer": [
         0
@@ -7029,7 +7029,7 @@
       "id": "SED-288",
       "set": 1,
       "type": "single",
-      "stem": "Which sedative best fits a short outpatient procedure requiring rapid onset and rapid recovery?",
+      "stem": "For a brief outpatient procedure requiring rapid titration and rapid recovery, which agent generally best fits among these choices?",
       "options": [
         "Propofol",
         "Fospropofol",
@@ -7053,12 +7053,12 @@
       "id": "SED-289",
       "set": 1,
       "type": "single",
-      "stem": "Why can chronic benzodiazepine exposure make propofol response less predictable?",
+      "stem": "A patient receives midazolam before propofol and becomes apneic after a smaller propofol dose than expected. Which principle best explains this?",
       "options": [
-        "Co-administered or chronic sedative exposure alters effect",
-        "Benzodiazepines speed propofol metabolism",
-        "Benzodiazepines block propofol metabolism in the liver",
-        "Propofol is antagonized by GABA agonists"
+        "Sedative drug interactions can be synergistic, reducing the propofol dose needed while increasing respiratory risk",
+        "Midazolam antagonizes propofol",
+        "Benzodiazepines accelerate propofol clearance",
+        "Propofol blocks GABA receptors"
       ],
       "answer": [
         0
@@ -7077,12 +7077,12 @@
       "id": "SED-290",
       "set": 1,
       "type": "single",
-      "stem": "Propofol alone produces hypnosis and amnesia, but the patient still reacts to incision. Which component is missing?",
+      "stem": "Propofol provides adequate hypnosis and amnesia, but the patient still responds strongly to incision. Which anesthetic component is missing?",
       "options": [
-        "It provides hypnosis and amnesia; analgesia is missing",
-        "It provides analgesia; amnesia is missing",
-        "It provides analgesia and amnesia; hypnosis is missing",
-        "It provides dissociation; amnesia is missing"
+        "Analgesia",
+        "Hypnosis",
+        "Amnesia",
+        "Neuromuscular transmission"
       ],
       "answer": [
         0
@@ -7101,12 +7101,12 @@
       "id": "SED-291",
       "set": 1,
       "type": "single",
-      "stem": "A hypovolemic patient with active GI bleeding receives propofol. Which hemodynamic effect is most likely exaggerated?",
+      "stem": "A hypovolemic patient with active GI bleeding receives a standard propofol bolus and becomes profoundly hypotensive. Which mechanism contributes most?",
       "options": [
-        "Exaggerated hypotension",
-        "Hypertension",
-        "No change in BP",
-        "Bradycardia without hypotension"
+        "Propofol-related vasodilation and myocardial depression are poorly tolerated when preload/reserve are already reduced",
+        "Propofol causes acute hypervolemia",
+        "Propofol increases systemic vascular resistance",
+        "Hypovolemia prevents propofol from reaching the brain"
       ],
       "answer": [
         0
@@ -7125,12 +7125,12 @@
       "id": "SED-292",
       "set": 1,
       "type": "single",
-      "stem": "Which strategy best reduces propofol injection pain when only small peripheral veins are available?",
+      "stem": "Only a small peripheral IV is available and propofol injection pain is anticipated. Which strategy is most appropriate?",
       "options": [
-        "Opioid pretreatment, lidocaine with venous occlusion, and a fast-running carrier",
-        "Rapid injection into a small vein",
-        "Chilling the propofol, then injecting quickly to shorten the exposure time",
-        "Diluting propofol in dextrose"
+        "Use a well-running carrier, slower injection, and lidocaine pretreatment when appropriate",
+        "Inject as rapidly as possible",
+        "Stop IV fluid during injection",
+        "Use the smallest distal vein available"
       ],
       "answer": [
         0
@@ -7149,7 +7149,7 @@
       "id": "SED-293",
       "set": 1,
       "type": "single",
-      "stem": "An 80-kg patient receives propofol 100 mcg/kg/min from a 10 mg/mL solution. What pump rate is required?",
+      "stem": "An 80-kg patient receives propofol at 100 mcg/kg/min from a 10 mg/mL solution. What pump rate is required?",
       "options": [
         "48 mL/hr",
         "8 mL/hr",
@@ -7173,12 +7173,12 @@
       "id": "SED-294",
       "set": 1,
       "type": "single",
-      "stem": "Why is loss of verbal responsiveness during propofol sedation a critical warning point?",
+      "stem": "Why is loss of purposeful responsiveness during propofol sedation clinically important?",
       "options": [
-        "Propofol can quickly deepen to GA with loss of airway reflexes",
-        "Propofol stops working at this point",
-        "Propofol causes seizures when verbal response is lost",
-        "Propofol causes hypertension and tachycardia once verbal response is lost"
+        "It may signal progression toward general-anesthesia depth with increasing risk of airway and ventilatory failure",
+        "It proves analgesia is adequate",
+        "It indicates propofol has stopped working",
+        "It eliminates aspiration risk"
       ],
       "answer": [
         0
@@ -7197,7 +7197,7 @@
       "id": "SED-295",
       "set": 1,
       "type": "single",
-      "stem": "Which common sedation drug provides hypnosis without analgesia?",
+      "stem": "Which drug provides potent hypnosis but little or no intrinsic analgesia?",
       "options": [
         "Propofol",
         "Ketamine",
@@ -7221,7 +7221,7 @@
       "id": "SED-296",
       "set": 1,
       "type": "single",
-      "stem": "A 70-kg patient needs propofol 50 mcg/kg/min from a 10 mg/mL solution. What pump rate is required?",
+      "stem": "A 70-kg patient receives propofol at 50 mcg/kg/min from a 10 mg/mL solution. What pump rate is required?",
       "options": [
         "21 mL/hr",
         "3.5 mL/hr",
@@ -7245,7 +7245,7 @@
       "id": "SED-297",
       "set": 1,
       "type": "single",
-      "stem": "Which sedative is especially useful when preserving spontaneous ventilation is a priority in severe OSA?",
+      "stem": "A patient with severe OSA requires cooperative sedation while preservation of spontaneous ventilation is especially important. Which agent may be advantageous because it causes relatively little respiratory depression?",
       "options": [
         "Dexmedetomidine",
         "Propofol",
@@ -7269,12 +7269,12 @@
       "id": "SED-298",
       "set": 1,
       "type": "single",
-      "stem": "For MRI sedation in severe OSA, which drug profile best balances sedation with preservation of ventilation?",
+      "stem": "For sedation in severe OSA, which dexmedetomidine tradeoff should be anticipated?",
       "options": [
-        "Dexmedetomidine with slower onset and bradycardia risk",
-        "Propofol with rapid onset and apnea risk",
-        "Remifentanil with rapid titration and respiratory depression",
-        "Midazolam with anterograde amnesia"
+        "Less respiratory depression but slower onset and risk of bradycardia/hypotension",
+        "Rapid onset with frequent apnea",
+        "Strong analgesia with chest-wall rigidity",
+        "Complete absence of hemodynamic effects"
       ],
       "answer": [
         0
@@ -7293,11 +7293,11 @@
       "id": "SED-299",
       "set": 1,
       "type": "single",
-      "stem": "A dexmedetomidine load is followed by marked bradycardia and hypotension. How should this be interpreted?",
+      "stem": "After a dexmedetomidine loading dose, marked bradycardia and hypotension develop without respiratory depression. Which explanation best fits?",
       "options": [
-        "Expected dexmedetomidine bradycardia and hypotension",
-        "An emergence reaction from dissociative effects",
-        "Opioid-related chest wall rigidity",
+        "Expected alpha-2 agonist hemodynamic effects",
+        "Dissociative emergence reaction",
+        "Opioid chest-wall rigidity",
         "Propofol infusion syndrome"
       ],
       "answer": [
@@ -7317,7 +7317,7 @@
       "id": "SED-300",
       "set": 1,
       "type": "single",
-      "stem": "A 70-kg patient needs dexmedetomidine 1 mcg/kg over 10 minutes from a 4 mcg/mL solution. What pump rate delivers the load?",
+      "stem": "A 70-kg patient is ordered dexmedetomidine 1 mcg/kg over 10 minutes from a 4 mcg/mL solution. What pump rate delivers the loading dose?",
       "options": [
         "105 mL/hr for 10 minutes",
         "17.5 mL/hr for 10 minutes",
