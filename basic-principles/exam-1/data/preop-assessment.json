@@ -7505,12 +7505,12 @@
       "id": "PRE-307",
       "set": 1,
       "type": "single",
-      "stem": "A patient in recovery from opioid use disorder asks whether her surgery pain will be harder to control. What is the accurate answer?",
+      "stem": "A patient in recovery from opioid use disorder asks whether postoperative pain may be harder to control. Which explanation is most accurate?",
       "options": [
-        "Yes, with hyperalgesia and higher needs",
-        "No, cross-tolerance lowers her opioid needs",
-        "No, cross-tolerance will lower her needs",
-        "Her MAC requirement changes but not her pain"
+        "Opioid tolerance and hyperalgesia can increase analgesic requirements",
+        "Cross-tolerance lowers opioid requirements",
+        "Prior opioid exposure eliminates postoperative pain",
+        "Only MAC changes; pain sensitivity does not"
       ],
       "answer": [
         0
@@ -7529,11 +7529,11 @@
       "id": "PRE-308",
       "set": 1,
       "type": "single",
-      "stem": "A patient is agitated and tachycardic in preop, and his history suggests stimulant use he denies. What is the BEST step?",
+      "stem": "A patient is agitated and tachycardic in preop, and stimulant use is suspected despite denial. Which next step best resolves the uncertainty before elective anesthesia?",
       "options": [
-        "Send a toxicology screen",
-        "Proceed, since history is unreliable",
-        "Delay until a urine drug screen is negative",
+        "Obtain toxicology testing when it will change management",
+        "Proceed because substance history is unreliable",
+        "Delay until a urine test is negative regardless of symptoms",
         "Give naloxone prophylactically"
       ],
       "answer": [
@@ -7553,12 +7553,12 @@
       "id": "PRE-309",
       "set": 1,
       "type": "single",
-      "stem": "The chart lists no allergies, but in preop the patient mentions she \"swelled up\" after a sulfa antibiotic. Why does this matter?",
+      "stem": "The chart says 'no known allergies,' but the patient reports prior swelling after a sulfonamide antibiotic. What is the most important lesson?",
       "options": [
-        "Chart allergies can be inaccurate or incomplete",
-        "The sulfa reaction predicts reactions to sulfonylureas",
-        "Sulfa reactions cross-react with furosemide",
-        "The chart is the definitive allergy source"
+        "The preoperative interview must verify allergies because the chart may be incomplete",
+        "Sulfonamide antibiotic allergy predicts sulfonylurea allergy",
+        "Sulfonamide allergy guarantees reaction to furosemide",
+        "The chart should override patient-reported reactions"
       ],
       "answer": [
         0
@@ -7577,12 +7577,12 @@
       "id": "PRE-310",
       "set": 1,
       "type": "single",
-      "stem": "Smoking rates in your clinic have dropped over 10 years, but more young patients now report vaping. How should your pulmonary history reflect this?",
+      "stem": "Cigarette use is declining in a clinic, but vaping is increasingly common among younger patients. How should the pulmonary history adapt?",
       "options": [
-        "Ask directly about vaping",
-        "Ask about cigarettes, since vaping risks are unknown",
+        "Ask specifically about vaping rather than relying on cigarette questions alone",
+        "Ask only about cigarettes",
         "Record vaping as nonsmoking",
-        "Ask only if the patient has respiratory symptoms"
+        "Ask about vaping only if respiratory symptoms are present"
       ],
       "answer": [
         0
@@ -7601,12 +7601,12 @@
       "id": "PRE-311",
       "set": 1,
       "type": "single",
-      "stem": "A trainee classifies patients as ASA I–V. Which category did she leave out?",
+      "stem": "A trainee lists ASA physical status I through V. Which category is missing from the standard classification?",
       "options": [
-        "ASA VI, a brain-dead organ donor",
-        "ASA 0, a healthy child",
-        "ASA VII, a terminal patient",
-        "ASA IV-E, an emergency"
+        "ASA VI for a brain-dead organ donor",
+        "ASA 0 for a healthy child",
+        "ASA VII for terminal illness",
+        "ASA IV-E as a separate class rather than a modifier"
       ],
       "answer": [
         0
@@ -7625,12 +7625,12 @@
       "id": "PRE-312",
       "set": 1,
       "type": "single",
-      "stem": "The same healthy patient has a carpal tunnel release one month and a Whipple procedure the next. How does her ASA class change?",
+      "stem": "The same healthy patient undergoes a minor procedure one month and a major Whipple procedure the next. What happens to ASA physical status?",
       "options": [
-        "It stays the same",
-        "It increases for the Whipple",
-        "It decreases for the carpal tunnel",
-        "It depends on the anesthetic type"
+        "It remains based on the patient's systemic health rather than procedural magnitude",
+        "It increases solely because the Whipple is larger",
+        "It decreases for the minor procedure",
+        "It depends primarily on anesthetic technique"
       ],
       "answer": [
         0
@@ -7649,14 +7649,14 @@
       "id": "PRE-313",
       "set": 1,
       "type": "multi",
-      "stem": "A surgery center asks how ASA classification affects its operations. Which uses apply? (Select 4)",
+      "stem": "Which four operational decisions can ASA physical status influence even though it does not describe the procedure itself? (Select 4)",
       "options": [
-        "Inpatient versus ambulatory decisions",
-        "Provider assignments and staffing ratios",
+        "Inpatient versus ambulatory suitability",
+        "Provider assignment and staffing",
         "Billing modifiers",
-        "Need for transfer arrangements",
-        "Choosing the surgical incision",
-        "Predicting blood type"
+        "Need for transfer capability",
+        "Choice of surgical incision",
+        "Prediction of blood type"
       ],
       "answer": [
         0,
@@ -7678,7 +7678,7 @@
       "id": "PRE-314",
       "set": 1,
       "type": "single",
-      "stem": "A 50-year-old with well-controlled hypertension and no functional limitation. Which ASA class?",
+      "stem": "A patient has well-controlled hypertension without functional limitation. Which ASA class best fits?",
       "options": [
         "ASA II",
         "ASA I",
@@ -7702,7 +7702,7 @@
       "id": "PRE-315",
       "set": 1,
       "type": "single",
-      "stem": "A 65-year-old with a prior MI and diabetes having surgery. Which ASA class?",
+      "stem": "A patient has prior myocardial infarction and diabetes but is not currently unstable. Which ASA class best fits the chronic disease burden?",
       "options": [
         "ASA III",
         "ASA II",
@@ -7726,7 +7726,7 @@
       "id": "PRE-316",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old with advanced COPD and unstable angina needs urgent surgery. Which ASA class?",
+      "stem": "A patient has advanced COPD plus unstable angina and needs urgent surgery. Which ASA category best reflects severe systemic disease that is a constant threat to life?",
       "options": [
         "ASA IV",
         "ASA III",
@@ -7750,11 +7750,11 @@
       "id": "PRE-317",
       "set": 1,
       "type": "single",
-      "stem": "A 56-year-old with severe head injury and increased ICP needs immediate surgery. Which ASA class?",
+      "stem": "A patient with severe head injury and markedly elevated ICP requires immediate surgery and is not expected to survive without the operation. Which classification fits?",
       "options": [
-        "ASA V E",
-        "ASA IV E",
-        "ASA III E",
+        "ASA V-E",
+        "ASA IV-E",
+        "ASA III-E",
         "ASA VI"
       ],
       "answer": [
@@ -7774,7 +7774,7 @@
       "id": "PRE-318",
       "set": 1,
       "type": "single",
-      "stem": "A patient declared brain dead is brought to the OR for organ procurement. What is his ASA class?",
+      "stem": "A brain-dead patient is taken to the OR for organ procurement. Which ASA class applies?",
       "options": [
         "ASA VI",
         "ASA V",
@@ -7798,7 +7798,7 @@
       "id": "PRE-319",
       "set": 1,
       "type": "single",
-      "stem": "A healthy 30-year-old nonsmoker, not obese, on no medications. Which ASA class?",
+      "stem": "A healthy nonsmoking adult with no systemic disease takes no medications. Which ASA class applies?",
       "options": [
         "ASA I",
         "ASA II",
@@ -7822,7 +7822,7 @@
       "id": "PRE-320",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a BMI of 41 and no other disease. What ASA class does the AANA 2025 criterion assign?",
+      "stem": "A patient has BMI 41 kg/m² but no other diagnosed disease. Under the cited AANA criterion, which ASA class applies?",
       "options": [
         "ASA III",
         "ASA II",
@@ -7846,7 +7846,7 @@
       "id": "PRE-321",
       "set": 1,
       "type": "single",
-      "stem": "A 68-year-old had an MI 3 weeks ago and needs urgent surgery. Which ASA class fits?",
+      "stem": "A patient had myocardial infarction 3 weeks ago and now needs urgent surgery. Which ASA class best reflects the recent serious cardiac event?",
       "options": [
         "ASA IV",
         "ASA III",
@@ -7870,12 +7870,12 @@
       "id": "PRE-322",
       "set": 1,
       "type": "single",
-      "stem": "A patient with controlled hypertension (ASA II) needs an appendectomy for acute appendicitis. How should her ASA class be written?",
+      "stem": "A patient with controlled hypertension is otherwise ASA II but now needs emergency appendectomy. How should the classification be written?",
       "options": [
         "ASA II-E",
         "ASA III",
         "ASA IV-E",
-        "ASA II"
+        "ASA II without an emergency modifier"
       ],
       "answer": [
         0
@@ -7894,11 +7894,11 @@
       "id": "PRE-323",
       "set": 1,
       "type": "single",
-      "stem": "A healthy 32-year-old woman is scheduled for an elective knee arthroscopy. Which lab is routinely indicated?",
+      "stem": "A healthy 32-year-old woman presents for elective knee arthroscopy. Which routine test is specifically indicated because pregnancy status could change management?",
       "options": [
-        "HCG",
+        "Pregnancy testing",
         "CBC",
-        "BMP",
+        "Basic metabolic panel",
         "Coagulation panel"
       ],
       "answer": [
@@ -7918,12 +7918,12 @@
       "id": "PRE-324",
       "set": 1,
       "type": "single",
-      "stem": "Which patient MOST needs a preoperative hemoglobin and hematocrit?",
+      "stem": "Which patient most clearly warrants preoperative hemoglobin/hematocrit because meaningful blood loss is plausible?",
       "options": [
-        "A patient having a revision hip arthroplasty",
-        "A healthy patient for an outpatient knee scope",
-        "A healthy child for ear tubes",
-        "A healthy adult for a cataract extraction"
+        "Revision hip arthroplasty",
+        "Healthy outpatient knee arthroscopy",
+        "Healthy child for ear tubes",
+        "Healthy adult for cataract extraction"
       ],
       "answer": [
         0
@@ -7942,12 +7942,12 @@
       "id": "PRE-325",
       "set": 1,
       "type": "single",
-      "stem": "A health system wants a standard preop lab panel for all surgical patients. What is the BEST evidence-based approach?",
+      "stem": "A hospital wants one universal preoperative laboratory panel for every surgical patient. Which approach is most evidence-based?",
       "options": [
-        "Order labs based on history and comorbidities",
-        "Order a full panel for every patient",
-        "Avoid preop labs entirely",
-        "Let the surgeon decide on all labs for each patient"
+        "Order testing selectively from history, examination, and comorbidities",
+        "Order CBC, CMP, coagulation studies, and ECG for everyone",
+        "Eliminate all preoperative testing",
+        "Let procedure type alone determine every test"
       ],
       "answer": [
         0
@@ -7966,12 +7966,12 @@
       "id": "PRE-326",
       "set": 1,
       "type": "single",
-      "stem": "A patient's last labs were drawn 9 months ago and she has CKD. Are they recent enough for planning?",
+      "stem": "A patient with chronic kidney disease has laboratory results from 9 months ago. Why are these inadequate for current planning?",
       "options": [
-        "No; recent labs are best within 6 months",
-        "Yes; labs are valid for 1 year",
-        "Yes; labs are valid indefinitely",
-        "No; labs must be from the morning of surgery"
+        "Relevant labs should generally be more recent because renal function and electrolytes can change",
+        "All labs remain valid for one year",
+        "Chronic kidney disease values rarely change",
+        "All labs must instead be drawn on the morning of surgery"
       ],
       "answer": [
         0
@@ -7990,7 +7990,7 @@
       "id": "PRE-327",
       "set": 1,
       "type": "single",
-      "stem": "A diabetic with gastroparesis is scheduled for surgery. Which premedication increases gastric emptying?",
+      "stem": "A diabetic patient has gastroparesis and increased aspiration risk. Which premedication specifically promotes gastric emptying?",
       "options": [
         "Metoclopramide",
         "Ondansetron",
@@ -8014,14 +8014,14 @@
       "id": "PRE-328",
       "set": 1,
       "type": "multi",
-      "stem": "A 30-year-old nonsmoking woman with prior PONV is scheduled for a laparoscopic cholecystectomy. Which agents can be part of her antiemetic plan? (Select 3)",
+      "stem": "A nonsmoking woman with prior PONV is scheduled for laparoscopic surgery. Which three agents can contribute to a multimodal antiemetic plan? (Select 3)",
       "options": [
         "Ondansetron",
-        "Scopolamine patch",
+        "Scopolamine",
         "Dexamethasone",
         "Rocuronium",
         "Sugammadex",
-        "Midazolam alone as an antiemetic"
+        "Midazolam as the sole antiemetic"
       ],
       "answer": [
         0,
@@ -8042,12 +8042,12 @@
       "id": "PRE-329",
       "set": 1,
       "type": "single",
-      "stem": "You plan midazolam for an anxious patient in preop. Which situation is a contraindication to the anxiolytic?",
+      "stem": "Which finding is an actual contraindication to giving midazolam for routine preoperative anxiolysis?",
       "options": [
-        "A documented midazolam allergy",
-        "Age over 50",
-        "Well-controlled hypertension",
-        "A prior uncomplicated anesthetic"
+        "Documented hypersensitivity to midazolam",
+        "Age over 50 years",
+        "Controlled hypertension",
+        "Prior uncomplicated general anesthesia"
       ],
       "answer": [
         0
@@ -8066,12 +8066,12 @@
       "id": "PRE-330",
       "set": 1,
       "type": "single",
-      "stem": "A patient with PTSD and panic disorder is visibly distressed in preop. What does this history suggest?",
+      "stem": "A patient with PTSD and panic disorder is visibly distressed before surgery. Which implication is most appropriate?",
       "options": [
-        "Truly consider preoperative anxiolysis",
-        "Avoid all anxiolytics",
-        "Delay surgery until the anxiety resolves",
-        "Give anxiolysis if the patient is ASA IV"
+        "Consider individualized preoperative anxiolysis after weighing respiratory and hemodynamic risk",
+        "Avoid all anxiolysis because psychiatric history increases risk",
+        "Delay surgery until anxiety completely resolves",
+        "Reserve anxiolysis only for ASA IV patients"
       ],
       "answer": [
         0
@@ -8090,12 +8090,12 @@
       "id": "PRE-331",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old reports new exertional chest pressure over the past month and is scheduled for an elective colectomy. Which consult is MOST appropriate?",
+      "stem": "A patient reports new exertional chest pressure over the past month before elective colectomy. Which consultation is most directly indicated by the new symptom pattern?",
       "options": [
-        "Cardiology for new cardiac symptoms",
-        "Pulmonology for any smoking history",
-        "Neurology for diabetes",
-        "Endocrinology for obesity"
+        "Cardiology",
+        "Pulmonology",
+        "Neurology",
+        "Endocrinology"
       ],
       "answer": [
         0
@@ -8114,11 +8114,11 @@
       "id": "PRE-332",
       "set": 1,
       "type": "single",
-      "stem": "A cardiology consult is requested for a patient with an unclear functional capacity before an aortic repair. Which tests might the consult include?",
+      "stem": "A cardiology consultation is requested because functional capacity is unclear before major vascular surgery. Which tests might appropriately clarify cardiac risk?",
       "options": [
         "Echocardiography or stress testing",
         "Colonoscopy",
-        "Bone density and carotid ultrasound",
+        "Bone density testing and carotid ultrasound",
         "Skin biopsy"
       ],
       "answer": [
@@ -8138,12 +8138,12 @@
       "id": "PRE-333",
       "set": 1,
       "type": "single",
-      "stem": "Why might a patient with poorly controlled pulmonary disease need optimization before elective surgery?",
+      "stem": "Why should poorly controlled pulmonary disease be optimized before elective surgery?",
       "options": [
-        "To reduce perioperative respiratory complications",
-        "To shorten the surgical procedure",
-        "To reduce total anesthesia time",
-        "To allow shorter NPO requirements before surgery"
+        "Optimization can reduce perioperative respiratory complications",
+        "It shortens the surgical procedure",
+        "It reduces total anesthesia time regardless of disease",
+        "It allows shorter fasting intervals"
       ],
       "answer": [
         0
@@ -8162,7 +8162,7 @@
       "id": "PRE-334",
       "set": 1,
       "type": "single",
-      "stem": "A patient has well-controlled hypertension and is a current smoker with no functional limitation. Which ASA class fits?",
+      "stem": "A patient has controlled hypertension and currently smokes but has no functional limitation. Which ASA class best fits?",
       "options": [
         "ASA II",
         "ASA I",
@@ -8186,7 +8186,7 @@
       "id": "PRE-335",
       "set": 1,
       "type": "single",
-      "stem": "A patient has poorly controlled diabetes with nephropathy and a BMI of 42, limiting her activity. Which ASA class fits?",
+      "stem": "A patient has poorly controlled diabetes with nephropathy, BMI 42, and activity limitation. Which ASA class best reflects the systemic disease burden?",
       "options": [
         "ASA III",
         "ASA II",
@@ -8210,12 +8210,12 @@
       "id": "PRE-336",
       "set": 1,
       "type": "single",
-      "stem": "A patient with ESRD on dialysis and poorly controlled HTN. What ASA class is MOST appropriate?",
+      "stem": "A patient has ESRD on dialysis and poorly controlled hypertension. Which ASA range is most defensible based on severity and current stability?",
       "options": [
         "ASA III or IV depending on severity",
-        "ASA II, since disease is treated",
-        "ASA I, since dialysis controls it",
-        "ASA V, since ESRD threatens life"
+        "ASA II because dialysis treats the disease",
+        "ASA I because dialysis controls renal function",
+        "ASA V solely because ESRD is present"
       ],
       "answer": [
         0
@@ -8234,12 +8234,12 @@
       "id": "PRE-337",
       "set": 1,
       "type": "single",
-      "stem": "A patient weighs 110 kg and is 1.75 m tall. What is his BMI, and which category is it?",
+      "stem": "A patient weighs 110 kg and is 1.75 m tall. Which BMI and category are correct?",
       "options": [
-        "About 35.9, obesity class II",
-        "About 31.4, obesity class I",
-        "About 62.9, obesity class III",
-        "About 40.2, obesity class III"
+        "About 35.9 kg/m², obesity class II",
+        "About 31.4 kg/m², obesity class I",
+        "About 62.9 kg/m², obesity class III",
+        "About 40.2 kg/m², obesity class III"
       ],
       "answer": [
         0
@@ -8258,12 +8258,12 @@
       "id": "PRE-338",
       "set": 1,
       "type": "single",
-      "stem": "A patient weighs 200 lb and is 70 inches tall. What is her BMI?",
+      "stem": "A patient weighs 200 lb and is 70 inches tall. Which BMI is closest?",
       "options": [
-        "About 28.7",
-        "About 20.0",
-        "About 34.5",
-        "About 40.8"
+        "28.7 kg/m²",
+        "20.0 kg/m²",
+        "34.5 kg/m²",
+        "40.8 kg/m²"
       ],
       "answer": [
         0
@@ -8282,12 +8282,12 @@
       "id": "PRE-339",
       "set": 1,
       "type": "single",
-      "stem": "A patient weighs 100 kg and is 1.80 m tall. What is the BMI?",
+      "stem": "A patient weighs 100 kg and is 1.80 m tall. Which BMI is closest?",
       "options": [
-        "About 30.9",
-        "About 25.0",
-        "About 35.6",
-        "About 28.4"
+        "30.9 kg/m²",
+        "25.0 kg/m²",
+        "35.6 kg/m²",
+        "28.4 kg/m²"
       ],
       "answer": [
         0
@@ -8306,12 +8306,12 @@
       "id": "PRE-340",
       "set": 1,
       "type": "single",
-      "stem": "A patient weighs 220 lb and is 66 inches tall. What is the BMI?",
+      "stem": "A patient weighs 220 lb and is 66 inches tall. Which BMI is closest?",
       "options": [
-        "About 35.5",
-        "About 30.5",
-        "About 40.2",
-        "About 32.8"
+        "35.5 kg/m²",
+        "30.5 kg/m²",
+        "40.2 kg/m²",
+        "32.8 kg/m²"
       ],
       "answer": [
         0
@@ -8330,7 +8330,7 @@
       "id": "PRE-341",
       "set": 1,
       "type": "single",
-      "stem": "A patient's BMI is 37.4. Which category applies?",
+      "stem": "A BMI of 37.4 kg/m² falls into which category?",
       "options": [
         "Obesity class II",
         "Obesity class I",
@@ -8354,7 +8354,7 @@
       "id": "PRE-342",
       "set": 1,
       "type": "single",
-      "stem": "A patient's BMI is 31.2. Which category applies?",
+      "stem": "A BMI of 31.2 kg/m² falls into which category?",
       "options": [
         "Obesity class I",
         "Overweight",
@@ -8378,12 +8378,12 @@
       "id": "PRE-343",
       "set": 1,
       "type": "single",
-      "stem": "A frail patient weighs 45 kg at 1.65 m. What is her BMI, and what concern does it raise?",
+      "stem": "A frail patient weighs 45 kg at 1.65 m. Which BMI and implication are most accurate?",
       "options": [
-        "About 16.5; poor nutritional reserve",
-        "About 27.3, suggesting overweight",
-        "About 22.0, normal",
-        "About 18.9, normal"
+        "About 16.5 kg/m² with concern for poor nutritional reserve",
+        "About 27.3 kg/m² indicating overweight",
+        "About 22.0 kg/m² and normal reserve",
+        "About 18.9 kg/m² with no nutritional concern"
       ],
       "answer": [
         0
@@ -8402,12 +8402,12 @@
       "id": "PRE-344",
       "set": 1,
       "type": "single",
-      "stem": "The notes say BMI above which value should be carefully screened before outpatient surgery?",
+      "stem": "According to the lecture, above what BMI should patients receive especially careful screening before outpatient surgery?",
       "options": [
-        "30",
-        "25",
-        "35",
-        "45"
+        "30 kg/m²",
+        "25 kg/m²",
+        "35 kg/m²",
+        "45 kg/m²"
       ],
       "answer": [
         0
@@ -8426,12 +8426,12 @@
       "id": "PRE-345",
       "set": 1,
       "type": "single",
-      "stem": "A patient's BMI is 46. What does this mean for anesthesia planning?",
+      "stem": "A patient has BMI 46 kg/m². Which conclusion is most appropriate for anesthesia planning?",
       "options": [
-        "Significant anesthesia risk",
-        "No added risk",
-        "Risk if diabetes is present",
-        "Risk mainly for laparoscopic procedures"
+        "Severe obesity itself adds meaningful anesthetic risk and warrants specific planning",
+        "There is no added risk without diabetes",
+        "Risk increases only for laparoscopic procedures",
+        "BMI matters only if obstructive sleep apnea is already diagnosed"
       ],
       "answer": [
         0
@@ -8450,12 +8450,12 @@
       "id": "PRE-346",
       "set": 1,
       "type": "single",
-      "stem": "A man is 6 feet tall. What is his ideal body weight?",
+      "stem": "Using the lecture's ideal-body-weight formula, what is the approximate IBW for a 6-foot man?",
       "options": [
-        "About 77.6 kg",
-        "About 72.6 kg",
-        "About 82.8 kg",
-        "About 63.0 kg"
+        "77.6 kg",
+        "72.6 kg",
+        "82.8 kg",
+        "63.0 kg"
       ],
       "answer": [
         0
@@ -8474,12 +8474,12 @@
       "id": "PRE-347",
       "set": 1,
       "type": "single",
-      "stem": "A woman is 5 feet 2 inches tall. What is her ideal body weight?",
+      "stem": "Using the lecture's ideal-body-weight formula, what is the approximate IBW for a 5-foot-2-inch woman?",
       "options": [
-        "About 50.1 kg",
-        "About 54.6 kg",
-        "About 45.5 kg",
-        "About 59.3 kg"
+        "50.1 kg",
+        "54.6 kg",
+        "45.5 kg",
+        "59.3 kg"
       ],
       "answer": [
         0
@@ -8498,7 +8498,7 @@
       "id": "PRE-348",
       "set": 1,
       "type": "single",
-      "stem": "A man is 5'10\" tall. What is his IBW?",
+      "stem": "Using the lecture formula, what is the approximate ideal body weight for a 5-foot-10-inch man?",
       "options": [
         "73 kg",
         "68.5 kg",
@@ -8522,7 +8522,7 @@
       "id": "PRE-349",
       "set": 1,
       "type": "single",
-      "stem": "A woman is 5'4\" tall. What is her IBW?",
+      "stem": "Using the lecture formula, what is the approximate ideal body weight for a 5-foot-4-inch woman?",
       "options": [
         "54.7 kg",
         "59.3 kg",
@@ -8546,7 +8546,7 @@
       "id": "PRE-350",
       "set": 1,
       "type": "single",
-      "stem": "A woman is 5'6\" tall. What is her IBW?",
+      "stem": "Using the lecture formula, what is the approximate ideal body weight for a 5-foot-6-inch woman?",
       "options": [
         "59.3 kg",
         "54.7 kg",
@@ -8570,7 +8570,7 @@
       "id": "PRE-351",
       "set": 1,
       "type": "single",
-      "stem": "A man is 6'0\" tall. What is his IBW?",
+      "stem": "Using the lecture formula, what is the approximate ideal body weight for a 6-foot man?",
       "options": [
         "77.6 kg",
         "73 kg",
@@ -8594,12 +8594,12 @@
       "id": "PRE-352",
       "set": 1,
       "type": "single",
-      "stem": "A 160 kg patient needs rocuronium and propofol. Why might the dosing weight differ between drugs?",
+      "stem": "A patient weighs 160 kg and will receive both rocuronium and propofol. Why might the appropriate dosing scalar differ between the two drugs?",
       "options": [
-        "Drug lipophilicity determines the dosing weight",
-        "All drugs are dosed by total body weight",
-        "All drugs are dosed by IBW",
-        "Weight does not affect drug dosing"
+        "Drug distribution and lipophilicity differ, so total, ideal, or lean body weight may not apply equally",
+        "All medications should use total body weight",
+        "All medications should use ideal body weight",
+        "Body size does not influence anesthetic dosing"
       ],
       "answer": [
         0
@@ -8618,12 +8618,12 @@
       "id": "PRE-353",
       "set": 1,
       "type": "multi",
-      "stem": "A 45-year-old with a BMI of 52 is scheduled for a gastric bypass. Which issues need specific planning? (Select 4)",
+      "stem": "Which four issues deserve specific planning in a patient with BMI 52 undergoing gastric bypass? (Select 4)",
       "options": [
-        "History of OSA",
+        "Possible obstructive sleep apnea",
         "Redundant facial and neck tissue",
-        "Comorbidities such as diabetes and hypertension",
-        "Drug dosing by appropriate weight scalar",
+        "Associated diabetes or hypertension",
+        "Drug dosing using the appropriate weight scalar",
         "Lower aspiration risk",
         "Easier mask ventilation"
       ],
@@ -8647,12 +8647,12 @@
       "id": "PRE-354",
       "set": 1,
       "type": "single",
-      "stem": "The notes say \"Not everyone who is obese has OSA but...\" What is the rest?",
+      "stem": "Obesity does not guarantee obstructive sleep apnea. What should the anesthesia provider do instead of assuming either way?",
       "options": [
-        "Screen for it",
-        "Treat everyone with CPAP",
-        "Assume all have OSA",
-        "Assume all obese patients have OSA"
+        "Screen for OSA",
+        "Treat every obese patient with CPAP",
+        "Assume all obese patients have OSA",
+        "Assume obesity and OSA are unrelated"
       ],
       "answer": [
         0
@@ -8671,7 +8671,7 @@
       "id": "PRE-355",
       "set": 1,
       "type": "multi",
-      "stem": "A 40-year-old nonsmoking woman with prior PONV will receive postoperative opioids. Which of her characteristics are Apfel risk factors? (Select 4)",
+      "stem": "A nonsmoking woman with prior PONV will receive postoperative opioids. Which four Apfel risk factors are present? (Select 4)",
       "options": [
         "Female sex",
         "History of PONV",
@@ -8700,12 +8700,12 @@
       "id": "PRE-356",
       "set": 1,
       "type": "single",
-      "stem": "A nonsmoking man with a history of PONV is having a procedure with no postoperative opioids planned. What is his Apfel score and risk?",
+      "stem": "A nonsmoking man has a history of PONV and no postoperative opioids are planned. What Apfel score and approximate risk follow?",
       "options": [
-        "Score 2, about 40% risk",
-        "Score 1, about 20% risk",
-        "Score 3, about 60% risk",
-        "Score 4, about 80% risk"
+        "Score 2, about 40%",
+        "Score 1, about 20%",
+        "Score 3, about 60%",
+        "Score 4, about 80%"
       ],
       "answer": [
         0
