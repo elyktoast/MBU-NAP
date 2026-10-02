@@ -224,6 +224,8 @@ checkHazardNavigators();
  const nav=read('equipment/assets/site-nav.js');
  if(!nav.includes("const core=[{id:'home',label:'SRNA Study Tool',url:home}"))fail('Site nav: SRNA Study Tool brand is not rooted at the application home');
  if(nav.includes("u.searchParams.set('_mbu_refresh'")||nav.includes("brand.onclick=e=>"))fail('Site nav: SRNA Study Tool brand must navigate home without forcing a current-page refresh');
+ if(!nav.includes("const coursePublished=courseId==='basic-principles'"))fail('Site nav: published-course boundary is not explicit');
+ for(const stale of ['Quiz Bank 1','Quiz Bank 2','Quiz Bank 3','Workstation Hazards'])if(nav.includes(stale))fail('Site nav: unpublished legacy destination remains: '+stale);
 }
 function checkCanonicalSubmission(){
   const engine=read('equipment/assets/quiz-engine.js');
