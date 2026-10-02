@@ -4972,7 +4972,7 @@
       "id": "PAIN-200",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the dose-response figure. The orange curve sits to the right of the original. What does it represent?",
+      "stem": "After months of daily opioid exposure, a patient's opioid dose-response curve shifts to the right. What does this represent?",
       "options": [
         "Tolerance",
         "Increased sensitivity",
@@ -4986,12 +4986,7 @@
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
-      "image": {
-        "kind": "direct",
-        "url": "figures/perioperative-pain/fig-48.svg",
-        "id": 48,
-        "title": "Figure 48"
-      },
+      "image": null,
       "sourceMeta": {
         "sourcePackage": "Perioperative_Pain_Management",
         "originalFigure": 48
