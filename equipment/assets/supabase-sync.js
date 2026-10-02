@@ -103,18 +103,18 @@ await refreshAccountAccess();
 if(accountAccess!=='active'){emit('access-suspended',{email:s.user?.email||''});return true}
 emit('signed-in',{email:s.user?.email||''});
 stopGuestHeartbeat();startAutoSync();
-setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),50);
+setTimeout(()=>fullSync({reloadOnImport:false}).catch(()=>{}),50);
 setTimeout(()=>refreshCalibration(true).catch(()=>{}),100);
 return true
 }
 async function signIn(email,password){
 emit('signing-in');const data=await raw('/auth/v1/token?grant_type=password',{method:'POST',body:{email:String(email||'').trim(),password:String(password||'')}});
-const s=normalizeAuth(data);if(!s)throw Error('Supabase did not return a session.');const switched=await prepareLocalOwner(s.user?.id);saveSession(s);stopGuestHeartbeat();if(switched){emit('local-owner-changed',{email:s.user?.email||email});return s}if(!await refreshLegalAcceptance()){emit('legal-required',{email:s.user?.email||email});return s}await refreshAccountAccess();if(accountAccess!=='active'){emit('access-suspended',{email:s.user?.email||email});return s}emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});startAutoSync();return s
+const s=normalizeAuth(data);if(!s)throw Error('Supabase did not return a session.');const switched=await prepareLocalOwner(s.user?.id);saveSession(s);stopGuestHeartbeat();if(switched){emit('local-owner-changed',{email:s.user?.email||email});return s}if(!await refreshLegalAcceptance()){emit('legal-required',{email:s.user?.email||email});return s}await refreshAccountAccess();if(accountAccess!=='active'){emit('access-suspended',{email:s.user?.email||email});return s}emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:false});startAutoSync();return s
 }
 async function signUp(email,password,accepted=false){
 if(accepted!==true)throw Error('You must confirm that you are 18+ and agree to the Terms and Privacy Notice before creating an account.');
 const acceptedAt=new Date().toISOString();emit('signing-up');const data=await raw('/auth/v1/signup?redirect_to='+encodeURIComponent(APP_ROOT),{method:'POST',body:{email:String(email||'').trim(),password:String(password||''),data:{snar_terms_version:LEGAL_TERMS_VERSION,snar_privacy_version:LEGAL_PRIVACY_VERSION,snar_adult_ack:true,snar_accepted_at:acceptedAt}}}),s=normalizeAuth(data);
-if(s){const switched=await prepareLocalOwner(s.user?.id);saveSession(s);stopGuestHeartbeat();if(switched){emit('local-owner-changed',{email:s.user?.email||email});return{session:s,confirmationRequired:false}}if(!await refreshLegalAcceptance())await acceptCurrentLegal(true);else{await refreshAccountAccess();if(accountAccess==='active'){emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:true});startAutoSync()}else emit('access-suspended',{email:s.user?.email||email})}return{session:s,confirmationRequired:false}}
+if(s){const switched=await prepareLocalOwner(s.user?.id);saveSession(s);stopGuestHeartbeat();if(switched){emit('local-owner-changed',{email:s.user?.email||email});return{session:s,confirmationRequired:false}}if(!await refreshLegalAcceptance())await acceptCurrentLegal(true);else{await refreshAccountAccess();if(accountAccess==='active'){emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:false});startAutoSync()}else emit('access-suspended',{email:s.user?.email||email})}return{session:s,confirmationRequired:false}}
 emit('confirmation-required',{email:String(email||'').trim()});return{session:null,confirmationRequired:true}
 }
 function resetCloudSession(){stopAutoSync();saveSession(null);legalAccepted=null;accountAccess='signed_out';remoteByKey.clear();calibrationByKey.clear();calibrationFetchedAt=0;emit('signed-out');startGuestHeartbeat()}
@@ -193,7 +193,7 @@ const restoredRow=result?.row||{store_key:version.store_key,payload:version.payl
 remoteByKey.set(version.store_key,restoredRow);
 const merged=await sync.importSnapshot(cloudSnapshot([restoredRow],s.user),{mode:'replace'});
 await fullSync({reloadOnImport:false});
-if(merged?.imported>0){sessionStorage.setItem('mbu_cloud_reload','1');location.reload()}
+if(merged?.imported>0)emit('restore-applied',{email:s.user?.email||'',storeKey:version.store_key})
 return{storeKey:version.store_key,savedAt:version.saved_at}
 }
 function cloudSnapshot(rows,user){
@@ -259,7 +259,7 @@ function scheduleSync(delay=1500){if(!session()||legalAccepted!==true||accountAc
 function stopAutoSync(){if(autoSyncTimer){clearInterval(autoSyncTimer);autoSyncTimer=null}}
 function startAutoSync(){
 stopAutoSync();if(!session()||legalAccepted!==true||accountAccess!=='active')return;
-autoSyncTimer=setInterval(()=>{if(session()&&legalAccepted===true&&accountAccess==='active'&&navigator.onLine)fullSync({reloadOnImport:true}).catch(()=>{})},AUTO_SYNC_INTERVAL)
+autoSyncTimer=setInterval(()=>{if(session()&&legalAccepted===true&&accountAccess==='active'&&navigator.onLine)fullSync({reloadOnImport:false}).catch(()=>{})},AUTO_SYNC_INTERVAL)
 }
 async function adminStatus(){const s=await validSession();if(!s?.access_token||legalAccepted!==true)return{is_admin:false,role:null};return await api('/rest/v1/rpc/snar_admin_status',{method:'POST',body:{}})}
 function status(){const s=session();return{signedIn:!!s?.access_token,email:s?.user?.email||'',state:lastState,lastSyncAt,user:s?.user||null,recoveryMode,legalAccepted,accessStatus:accountAccess,termsVersion:LEGAL_TERMS_VERSION,privacyVersion:LEGAL_PRIVACY_VERSION,autoSyncIntervalMs:AUTO_SYNC_INTERVAL,nextAutoSyncAt:s?.access_token&&legalAccepted===true&&accountAccess==='active'?(lastSyncAt||Date.now())+AUTO_SYNC_INTERVAL:0}}
@@ -270,15 +270,15 @@ const redirected=await consumeAuthRedirect();if(!redirected)return false;
 const switched=await prepareLocalOwner(redirected.user?.id);if(switched)emit('local-owner-changed',{email:redirected.user?.email||''})
 if(!recoveryMode&&!await refreshLegalAcceptance()){emit('legal-required',{email:redirected.user?.email||''});return true}
 await refreshAccountAccess();if(accountAccess!=='active'){emit('access-suspended',{email:redirected.user?.email||''});return true}
-stopGuestHeartbeat();startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),100);return true
+stopGuestHeartbeat();startAutoSync();setTimeout(()=>fullSync({reloadOnImport:false}).catch(()=>{}),100);return true
 }
 window.addEventListener('hashchange',()=>handleAuthRedirect().catch(e=>{emit('error',{error:e.message});console.error('Supabase auth redirect failed',e)}));
-window.MBUSupabase={signIn,signUp,signOut,deleteAccount,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,refreshLegalAcceptance,refreshAccountAccess,acceptCurrentLegal,submitPrivacyRequest,submitSuggestion,submitQuestionReport,submitItemContribution,refreshCalibration,calibration,listDevices,removeDevice,listHistory,restoreVersion,adminStatus,adminRpc,syncNow:()=>fullSync({reloadOnImport:true}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
+window.MBUSupabase={signIn,signUp,signOut,deleteAccount,resendConfirmation,requestPasswordReset,updatePassword,status,currentUser,refreshLegalAcceptance,refreshAccountAccess,acceptCurrentLegal,submitPrivacyRequest,submitSuggestion,submitQuestionReport,submitItemContribution,refreshCalibration,calibration,listDevices,removeDevice,listHistory,restoreVersion,adminStatus,adminRpc,syncNow:()=>fullSync({reloadOnImport:false}),scheduleSync,refresh,appRoot:APP_ROOT,autoSyncIntervalMs:AUTO_SYNC_INTERVAL};
 const authReady=(async()=>{
 if(await handleAuthRedirect())return true;
 if(session()){
 const valid=await validSession();
-if(valid?.user?.id){const switched=await prepareLocalOwner(valid.user.id);if(switched)emit('local-owner-changed',{email:valid.user?.email||''});stopGuestHeartbeat();if(!recoveryMode&&!await refreshLegalAcceptance()){emit('legal-required',{email:valid.user?.email||''});return true}await refreshAccountAccess();if(!recoveryMode&&accountAccess!=='active'){emit('access-suspended',{email:valid.user?.email||''});return true}startAutoSync();setTimeout(()=>fullSync({reloadOnImport:true}).catch(()=>{}),400);setTimeout(()=>refreshCalibration().catch(()=>{}),250);emit(recoveryMode?'password-recovery':'signed-in',{email:valid.user?.email||''});return true}
+if(valid?.user?.id){const switched=await prepareLocalOwner(valid.user.id);if(switched)emit('local-owner-changed',{email:valid.user?.email||''});stopGuestHeartbeat();if(!recoveryMode&&!await refreshLegalAcceptance()){emit('legal-required',{email:valid.user?.email||''});return true}await refreshAccountAccess();if(!recoveryMode&&accountAccess!=='active'){emit('access-suspended',{email:valid.user?.email||''});return true}startAutoSync();setTimeout(()=>fullSync({reloadOnImport:false}).catch(()=>{}),400);setTimeout(()=>refreshCalibration().catch(()=>{}),250);emit(recoveryMode?'password-recovery':'signed-in',{email:valid.user?.email||''});return true}
 if(session())return false
 }
 emit('signed-out');startGuestHeartbeat();return false
