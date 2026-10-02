@@ -7669,12 +7669,12 @@
       "id": "PHA-305",
       "set": 1,
       "type": "single",
-      "stem": "Why is rising ETCO2 despite increased minute ventilation an especially concerning sign of a hypermetabolic crisis?",
+      "stem": "During suspected malignant hyperthermia, ETCO2 continues rising despite a substantial increase in minute ventilation. Why is this finding more concerning than an isolated high ETCO2 from hypoventilation?",
       "options": [
-        "It shows CO2 production exceeds what ventilation can clear",
-        "It proves the circuit is disconnected",
-        "It shows hyperventilation is working",
-        "It rules out a hypermetabolic state in this patient"
+        "Metabolic CO2 production is exceeding the increased ventilatory clearance",
+        "It proves the sampling line is obstructed",
+        "It confirms hyperventilation is correcting the crisis",
+        "It rules out a hypermetabolic state"
       ],
       "answer": [
         0
@@ -7941,7 +7941,7 @@
       "id": "PHA-316",
       "set": 1,
       "type": "single",
-      "stem": "During surgical traction, HR falls to 32 and BP to 65/35. What is the immediate first step?",
+      "stem": "During traction on the peritoneum, HR abruptly falls to 32/min and BP to 65/35 mmHg. Before reaching for a chronotropic drug, which immediate action addresses the likely trigger?",
       "options": [
         "Ask the surgeon to stop stimulation",
         "Give neostigmine",
@@ -7965,11 +7965,11 @@
       "id": "PHA-317",
       "set": 1,
       "type": "single",
-      "stem": "Bradycardia persists after surgical stimulation stops. Which medication class is most appropriate?",
+      "stem": "The surgeon stops traction, but severe bradycardia persists with hypotension. Which medication class now most directly addresses the heart-rate problem?",
       "options": [
         "Atropine or glycopyrrolate",
         "Esmolol",
-        "Nitroglycerin to improve coronary flow",
+        "Nitroglycerin",
         "Sugammadex"
       ],
       "answer": [
@@ -8113,7 +8113,7 @@
       "id": "PHA-323",
       "set": 1,
       "type": "single",
-      "stem": "BP rises after a tourniquet has been inflated for 90 minutes. What is the most likely cause?",
+      "stem": "Ninety minutes after tourniquet inflation, BP and HR gradually rise despite stable ETCO2 and apparently adequate anesthetic delivery. Which cause should move high on the differential?",
       "options": [
         "Tourniquet pain response",
         "Hypovolemia",
@@ -8161,7 +8161,7 @@
       "id": "PHA-325",
       "set": 1,
       "type": "single",
-      "stem": "HR and BP rise and the bladder is markedly distended. What is the best intervention?",
+      "stem": "HR and BP rise during an otherwise stable anesthetic; examination reveals a markedly distended bladder and no other new stimulus. Which intervention treats the likely cause rather than the vital signs alone?",
       "options": [
         "Decompress the bladder",
         "Deepen anesthesia",
@@ -8185,7 +8185,7 @@
       "id": "PHA-326",
       "set": 1,
       "type": "single",
-      "stem": "Hypotension develops after spinal anesthesia before GA induction. What mechanism is most likely?",
+      "stem": "A patient becomes hypotensive shortly after spinal anesthesia and before general-anesthetic induction, with no bleeding or allergic features. Which mechanism is most likely?",
       "options": [
         "Sympathectomy",
         "Hypercarbia",
@@ -8257,11 +8257,11 @@
       "id": "PHA-329",
       "set": 1,
       "type": "single",
-      "stem": "Core temperature falls to 35.4 °C during a long case. What is the most appropriate response?",
+      "stem": "During a long case, core temperature falls to 35.4 °C while large volumes of unwarmed fluid have been given. Which response best addresses the abnormality?",
       "options": [
-        "Active warming with forced-air and warmed fluids",
-        "Stop all warming to reduce sweating",
-        "Increase volatile to reduce shivering",
+        "Active warming with forced air and warmed fluids",
+        "Stop warming to reduce sweating",
+        "Increase volatile anesthetic",
         "Give neuromuscular blocker to prevent shivering"
       ],
       "answer": [
@@ -8497,12 +8497,12 @@
       "id": "PHA-339",
       "set": 1,
       "type": "single",
-      "stem": "Partial laryngospasm with stridor develops immediately after extubation. What is the first treatment?",
+      "stem": "Immediately after extubation, inspiratory stridor develops but some airflow remains. Which initial treatment is most appropriate before escalating to paralytic rescue?",
       "options": [
-        "Positive pressure with 100% O2 and jaw thrust",
-        "Give succinylcholine immediately, before positive pressure",
-        "Give naloxone",
-        "Remove oxygen"
+        "100% O2 with positive pressure and jaw thrust",
+        "Immediate succinylcholine before airway maneuvers",
+        "Naloxone",
+        "Remove supplemental oxygen"
       ],
       "answer": [
         0
@@ -8521,10 +8521,10 @@
       "id": "PHA-340",
       "set": 1,
       "type": "single",
-      "stem": "Laryngospasm resolves, but pink frothy secretions appear. What complication should be suspected?",
+      "stem": "After forceful inspiratory efforts against laryngospasm, the obstruction resolves but hypoxemia persists and pink frothy secretions appear. Which complication should be suspected?",
       "options": [
-        "Negative pressure pulmonary edema",
-        "Aspiration of gastric contents",
+        "Negative-pressure pulmonary edema",
+        "Aspiration pneumonitis alone",
         "Bronchospasm",
         "Pneumothorax"
       ],
@@ -8593,12 +8593,12 @@
       "id": "PHA-343",
       "set": 1,
       "type": "single",
-      "stem": "Delayed emergence is accompanied by a glucose of 45 mg/dL. What is the immediate treatment?",
+      "stem": "A patient remains slow to awaken despite adequate ventilation and neuromuscular recovery; point-of-care glucose is 45 mg/dL. Which intervention addresses the identified reversible cause?",
       "options": [
-        "Treat hypoglycemia with dextrose",
-        "Give naloxone for suspected opioid effect",
+        "Administer dextrose to correct hypoglycemia",
+        "Give naloxone",
         "Give flumazenil",
-        "Increase volatile agent"
+        "Increase volatile anesthetic"
       ],
       "answer": [
         0
