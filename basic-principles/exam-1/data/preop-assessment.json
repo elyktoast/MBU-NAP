@@ -2592,14 +2592,14 @@
       "id": "PRE-107",
       "set": 1,
       "type": "multi",
-      "stem": "A 61-year-old's BP is 168/98 in preop. Which questions BEST assess his hypertension? (Select 3)",
+      "stem": "A patient presents with BP 168/98 mmHg before surgery. Which three findings most directly determine whether this represents uncomplicated chronic hypertension or a higher-risk perioperative problem? (Select 3)",
       "options": [
-        "Is there end-organ dysfunction?",
-        "Has he had syncope or dizziness?",
-        "Which medications, doses, and last dose time?",
-        "What was his BP at the last dental visit?",
-        "Does he prefer a left or right arm cuff?",
-        "Is his BP higher at night than in the morning?"
+        "Evidence of end-organ dysfunction",
+        "Symptoms such as syncope or dizziness",
+        "Antihypertensive medications, doses, and last dose time",
+        "Blood pressure at the last dental visit",
+        "Preferred arm for cuff placement",
+        "Whether blood pressure is usually higher at night"
       ],
       "answer": [
         0,
@@ -2620,12 +2620,12 @@
       "id": "PRE-108",
       "set": 1,
       "type": "single",
-      "stem": "A patient takes lisinopril, amlodipine, metoprolol, and chlorthalidone, all this morning. Why does the number of antihypertensives and their timing matter?",
+      "stem": "A patient took lisinopril, amlodipine, metoprolol, and chlorthalidone on the morning of surgery. Why is the exact medication list and timing clinically important before induction?",
       "options": [
-        "They predict induction hemodynamics",
-        "They determine the surgical approach",
-        "They determine antibiotic choice",
-        "They predict PONV"
+        "It helps anticipate peri-induction hemodynamic responses",
+        "It determines the surgical approach",
+        "It determines antibiotic selection",
+        "It predicts postoperative nausea"
       ],
       "answer": [
         0
@@ -2644,12 +2644,12 @@
       "id": "PRE-109",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a DES from 8 months ago and is on aspirin only. What is the BEST plan for elective surgery?",
+      "stem": "A patient had a drug-eluting coronary stent 8 months ago and now takes aspirin alone. Which plan best follows the lecture's perioperative principles for elective surgery?",
       "options": [
         "Proceed and continue aspirin",
-        "Delay another 4 months",
+        "Delay surgery another 4 months",
         "Stop aspirin 7 days before surgery",
-        "Restart clopidogrel before surgery"
+        "Restart clopidogrel solely for the operation"
       ],
       "answer": [
         0
@@ -2668,12 +2668,12 @@
       "id": "PRE-110",
       "set": 1,
       "type": "single",
-      "stem": "A 72-year-old with a remote MI is seen for a colectomy. What is the main goal of your cardiac assessment?",
+      "stem": "A patient with remote myocardial infarction presents for colectomy. Which cardiac-assessment goal is most useful for building the anesthetic plan?",
       "options": [
-        "Baseline, active disease, risk, and monitoring plan",
-        "Diagnose all coronary disease before any surgery",
-        "Obtain cardiology clearance for any cardiac history at all",
-        "Avoid elective surgery in every patient with known CAD"
+        "Establish baseline function, identify active disease, estimate risk, and plan monitoring",
+        "Diagnose every possible coronary lesion before surgery",
+        "Obtain cardiology clearance for any history of CAD",
+        "Avoid elective surgery in all patients with previous MI"
       ],
       "answer": [
         0
@@ -2692,14 +2692,14 @@
       "id": "PRE-111",
       "set": 1,
       "type": "multi",
-      "stem": "Which findings are red flags requiring evaluation before elective surgery? (Select 4)",
+      "stem": "Which four findings should interrupt routine elective-surgery planning until further cardiac evaluation is considered? (Select 4)",
       "options": [
         "Decompensated heart failure",
         "Unexplained syncope",
         "Recent myocardial infarction",
         "Active unstable angina",
-        "Remote PCI with no symptoms",
-        "Stable rate-controlled AF"
+        "Remote PCI without symptoms",
+        "Stable rate-controlled atrial fibrillation"
       ],
       "answer": [
         0,
@@ -2721,7 +2721,7 @@
       "id": "PRE-112",
       "set": 1,
       "type": "single",
-      "stem": "Four cases are booked for patients with similar CAD. Which procedure carries the HIGHEST cardiac risk?",
+      "stem": "Four patients with similar coronary disease are scheduled for different procedures. Which operation contributes the greatest additional cardiac stress from procedural risk?",
       "options": [
         "Open abdominal aortic aneurysm repair",
         "Cataract extraction",
@@ -2745,10 +2745,10 @@
       "id": "PRE-113",
       "set": 1,
       "type": "single",
-      "stem": "A patient with CAD and 3 METs is scheduled for one of four procedures. Which procedure carries the LOWEST cardiac risk?",
+      "stem": "A patient with CAD and poor functional capacity is scheduled for one of four procedures. Which operation adds the least procedural cardiac risk?",
       "options": [
         "Cataract extraction",
-        "Open AAA repair",
+        "Open abdominal aortic aneurysm repair",
         "Esophagectomy",
         "Open colectomy"
       ],
@@ -2769,12 +2769,12 @@
       "id": "PRE-114",
       "set": 1,
       "type": "single",
-      "stem": "A patient's last cardiology note is 2 years old, and he now reports increasing dyspnea on exertion. What is the MOST appropriate action?",
+      "stem": "A cardiology note from two years ago describes stable disease, but the patient now reports worsening exertional dyspnea. Which information should drive today's decision?",
       "options": [
-        "Obtain updated cardiac evaluation before elective surgery",
-        "Proceed, since a cardiology note exists on file",
-        "Proceed with regional anesthesia to limit stress",
-        "Proceed after a normal resting ECG this morning in holding"
+        "The new symptom pattern, prompting updated cardiac evaluation before elective surgery",
+        "The old cardiology note because it remains in the chart",
+        "The option to use regional anesthesia instead of further evaluation",
+        "A single normal resting ECG obtained this morning"
       ],
       "answer": [
         0
@@ -2793,12 +2793,12 @@
       "id": "PRE-115",
       "set": 1,
       "type": "single",
-      "stem": "A 68-year-old on amiodarone with a prior MI has a preop ECG. What should you review on it?",
+      "stem": "A patient with prior MI takes amiodarone. Which ECG review is most complete for identifying findings that could alter the anesthetic plan?",
       "options": [
-        "Rhythm, conduction, infarct patterns, ischemia, and QT",
-        "Axis and voltage, since rhythm is on the monitor",
-        "Rate and rhythm, since ischemia needs echo",
-        "P waves and QRS width, since QT is not relevant"
+        "Rhythm, conduction, prior infarct patterns, ischemic changes, and QT interval",
+        "Axis and voltage only because rhythm will be monitored intraoperatively",
+        "Rate and rhythm only because ischemia requires echocardiography",
+        "P waves and QRS width only because QT is not clinically relevant"
       ],
       "answer": [
         0
@@ -2817,12 +2817,12 @@
       "id": "PRE-116",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a BMS placed 3 weeks ago is scheduled for elective cholecystectomy. What is the BEST decision?",
+      "stem": "A patient had a bare-metal coronary stent placed 3 weeks ago and requests elective cholecystectomy. Which timing issue should prevent routine progression to surgery?",
       "options": [
-        "Delay until more than 30 days after BMS",
-        "Proceed if DAPT is continued through surgery",
-        "Proceed if aspirin is stopped",
-        "Delay 6 months, the same as after CABG"
+        "The interval is still under the lecture's 30-day minimum after BMS placement",
+        "The case may proceed if dual antiplatelet therapy is continued",
+        "The case may proceed if aspirin is stopped",
+        "The case must be delayed 6 months, identical to CABG"
       ],
       "answer": [
         0
@@ -2841,12 +2841,12 @@
       "id": "PRE-117",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a stent placed 4 months ago and takes aspirin and ticagrelor. What type of stent is MOST likely?",
+      "stem": "A patient is 4 months after PCI and remains on aspirin plus ticagrelor. Which stent history is most consistent with the continued dual-antiplatelet requirement described in the lecture?",
       "options": [
-        "A drug-eluting stent requiring dual antiplatelet therapy",
-        "A bare metal stent requiring no antiplatelets",
-        "A stent whose DAPT stopped right after PCI",
-        "A CABG graft that is managed with dual antiplatelets"
+        "Drug-eluting stent",
+        "Bare-metal stent requiring no antiplatelet therapy",
+        "A stent for which DAPT ended immediately after PCI",
+        "A CABG graft treated as a coronary stent"
       ],
       "answer": [
         0
@@ -2865,12 +2865,12 @@
       "id": "PRE-118",
       "set": 1,
       "type": "single",
-      "stem": "Which preop cardiac note BEST describes a patient who needs no further cardiac workup before an intermediate-risk case?",
+      "stem": "Which preoperative profile most strongly supports proceeding to an intermediate-risk operation without additional cardiac testing?",
       "options": [
-        "RRR, no JVD, >4 METs, BP controlled",
-        "Irregular rhythm, holosystolic murmur, and JVD",
-        "Tachycardia with an S3 and crackles",
-        "Bradycardia with a gallop and leg edema"
+        "Regular rhythm, no JVD, controlled blood pressure, and functional capacity above 4 METs",
+        "Irregular rhythm with a holosystolic murmur and JVD",
+        "Tachycardia with S3 and pulmonary crackles",
+        "Bradycardia with gallop and peripheral edema"
       ],
       "answer": [
         0
@@ -2889,12 +2889,12 @@
       "id": "PRE-119",
       "set": 1,
       "type": "single",
-      "stem": "A patient has stable angina with exertion that has not changed for 3 years and ≥4 METs. Which is MOST appropriate?",
+      "stem": "A patient has unchanged exertional angina for three years, functional capacity above 4 METs, and no new symptoms. Which distinction is most important?",
       "options": [
-        "Proceed with elective surgery with standard monitoring",
-        "Cancel for urgent catheterization before surgery",
-        "Stop beta-blocker to avoid bradycardia",
-        "Delay 6 months"
+        "Stable symptoms with adequate functional capacity do not represent an active cardiac condition",
+        "Any angina requires urgent catheterization before elective surgery",
+        "Chronic beta-blockade should be stopped to prevent bradycardia",
+        "Elective surgery must be delayed six months"
       ],
       "answer": [
         0
@@ -2913,12 +2913,12 @@
       "id": "PRE-120",
       "set": 1,
       "type": "multi",
-      "stem": "Which physical findings suggest heart failure per the cardiac history notes? (Select 2)",
+      "stem": "Which two physical findings most strongly suggest volume-overloaded heart failure during preoperative assessment? (Select 2)",
       "options": [
         "Jugular venous distension",
         "Pulmonary crackles",
-        "Bradycardia with clear lung fields",
-        "Clubbing",
+        "Bradycardia with clear lungs",
+        "Digital clubbing",
         "Pupillary constriction",
         "Hyperreflexia"
       ],
@@ -2940,12 +2940,12 @@
       "id": "PRE-121",
       "set": 1,
       "type": "single",
-      "stem": "A patient has an MI treated with PCI 2 months ago. Which detail MOST changes your plan?",
+      "stem": "A patient had an MI treated with PCI 2 months ago. Which missing procedural detail most directly determines whether the lecture's elective-surgery timing threshold has been met?",
       "options": [
-        "Whether a BMS or DES was placed",
-        "Whether the MI was inferior or anterior",
-        "Whether the patient was admitted",
-        "Whether troponin peaked above 10"
+        "Whether the PCI used a bare-metal or drug-eluting stent",
+        "Whether the infarct was inferior or anterior",
+        "Whether the patient required hospital admission",
+        "Whether peak troponin exceeded 10"
       ],
       "answer": [
         0
@@ -2964,12 +2964,12 @@
       "id": "PRE-122",
       "set": 1,
       "type": "single",
-      "stem": "Two patients have BP 168/98. One is asymptomatic; the other reports headaches, blurred vision, and new proteinuria. Why does this difference matter?",
+      "stem": "Two patients both have BP 168/98 mmHg. One is asymptomatic; the other has headache, blurred vision, and new proteinuria. Why should the second patient be treated differently in the risk assessment?",
       "options": [
-        "Symptoms suggest end-organ effects",
-        "The asymptomatic patient is at higher risk",
-        "Both patients have identical risk",
-        "Symptoms matter once BP exceeds 200/120"
+        "The symptoms and proteinuria suggest end-organ involvement",
+        "The asymptomatic patient carries greater perioperative risk",
+        "Identical pressures imply identical risk regardless of symptoms",
+        "End-organ symptoms matter only above 200/120 mmHg"
       ],
       "answer": [
         0
@@ -2988,12 +2988,12 @@
       "id": "PRE-123",
       "set": 1,
       "type": "single",
-      "stem": "A family member asks how serious \"just high blood pressure\" is. Which statement is accurate?",
+      "stem": "Which statement best conveys why chronic hypertension matters in perioperative assessment even when a single preoperative reading is not extreme?",
       "options": [
-        "It contributes to ~0.5 million deaths yearly",
+        "It is highly prevalent and contributes substantially to cardiovascular morbidity and mortality",
         "It affects fewer than 1% of adults",
-        "It is uncommon in surgical patients under 65 years old",
-        "It causes fewer deaths each year than asthma does"
+        "It is unusual among surgical patients younger than 65",
+        "It contributes fewer deaths than asthma"
       ],
       "answer": [
         0
@@ -3012,7 +3012,7 @@
       "id": "PRE-124",
       "set": 1,
       "type": "single",
-      "stem": "A patient's preop BP is 134/86 on repeat. How is this classified?",
+      "stem": "Repeated preoperative blood pressures average 134/86 mmHg. Which category best matches those values?",
       "options": [
         "Stage 1 hypertension",
         "Elevated blood pressure",
@@ -3036,7 +3036,7 @@
       "id": "PRE-125",
       "set": 1,
       "type": "single",
-      "stem": "Four patients with heart murmurs are scheduled for elective surgery. Which valve lesion carries the MOST perioperative concern?",
+      "stem": "Four patients with valve disease are scheduled for elective noncardiac surgery. Which lesion creates the greatest concern for perioperative hemodynamic collapse?",
       "options": [
         "Severe aortic stenosis",
         "Mild mitral regurgitation",
@@ -3060,12 +3060,12 @@
       "id": "PRE-126",
       "set": 1,
       "type": "single",
-      "stem": "An echo shows aortic valve area 0.8 cm², mean gradient 44 mmHg, and peak velocity 4.2 m/s. How is this graded, and what does it imply?",
+      "stem": "An echocardiogram shows aortic valve area 0.8 cm², mean gradient 44 mmHg, and peak velocity 4.2 m/s. Which interpretation best connects the measurements to perioperative risk?",
       "options": [
-        "Severe AS with high risk",
-        "Moderate AS, with low perioperative risk",
-        "Mild AS, with no special precautions",
-        "Aortic sclerosis, with no stenosis"
+        "The findings meet severe aortic stenosis criteria and indicate high perioperative risk",
+        "The findings represent moderate aortic stenosis with low perioperative risk",
+        "The findings represent mild aortic stenosis with no special precautions",
+        "The findings show aortic sclerosis without stenosis"
       ],
       "answer": [
         0
@@ -3084,7 +3084,7 @@
       "id": "PRE-127",
       "set": 1,
       "type": "single",
-      "stem": "A patient's echo shows AS with jet velocity 4.3 m/s and mean gradient 46 mmHg. How is this graded?",
+      "stem": "An echocardiogram shows aortic jet velocity 4.3 m/s and mean gradient 46 mmHg. Which severity category is supported by both measurements?",
       "options": [
         "Severe aortic stenosis",
         "Moderate aortic stenosis",
@@ -3108,12 +3108,12 @@
       "id": "PRE-128",
       "set": 1,
       "type": "single",
-      "stem": "An echo shows AS with velocity 3.4 m/s, gradient 28 mmHg, area 1.2 cm². Which grade is this?",
+      "stem": "An echocardiogram shows aortic jet velocity 3.4 m/s, mean gradient 28 mmHg, and valve area 1.2 cm². Which severity category is most consistent across all three measurements?",
       "options": [
-        "Moderate",
-        "Mild",
-        "Severe",
-        "Critical"
+        "Moderate aortic stenosis",
+        "Mild aortic stenosis",
+        "Severe aortic stenosis",
+        "Critical aortic stenosis"
       ],
       "answer": [
         0
@@ -3132,12 +3132,12 @@
       "id": "PRE-129",
       "set": 1,
       "type": "single",
-      "stem": "What does the note on the AS grading slide say about severe AS?",
+      "stem": "Why does severe aortic stenosis change anesthetic planning even before symptoms or technique are considered?",
       "options": [
-        "High risk of intraoperative events",
-        "Low risk if asymptomatic",
-        "Safe for most anesthetic techniques",
-        "Treated after surgery"
+        "It carries a high risk of serious intraoperative hemodynamic events",
+        "It is low risk whenever the patient is asymptomatic",
+        "It is compatible with any anesthetic technique without special preparation",
+        "It can generally be addressed after surgery"
       ],
       "answer": [
         0
@@ -3156,12 +3156,12 @@
       "id": "PRE-130",
       "set": 1,
       "type": "single",
-      "stem": "A 74-year-old has a known valve lesion and is scheduled for a hip replacement. What information is MOST important to review?",
+      "stem": "A patient with known valvular disease presents for elective hip replacement. Which information most directly defines the lesion's current severity and physiologic significance?",
       "options": [
-        "Echo and catheterization reports and current symptoms",
-        "Chest X-ray and spirometry",
+        "Current symptoms plus echocardiography and relevant catheterization data",
+        "Chest radiography and spirometry",
         "Carotid ultrasound and CT angiography",
-        "The murmur description and the ECG findings alone"
+        "Murmur description and ECG findings alone"
       ],
       "answer": [
         0
