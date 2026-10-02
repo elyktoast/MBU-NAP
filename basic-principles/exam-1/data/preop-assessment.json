@@ -9996,12 +9996,12 @@
       "id": "PRE-410",
       "set": 1,
       "type": "single",
-      "stem": "Which murmur pattern best matches mitral regurgitation?",
+      "stem": "A patient has a holosystolic murmur loudest at the apex that radiates toward the axilla. Which valve lesion best explains the finding?",
       "options": [
-        "Holosystolic at the apex with radiation to the axilla",
-        "Midsystolic at the second interspace",
-        "Middiastolic at the apex with an opening snap",
-        "Holodiastolic along the left sternal border"
+        "Mitral regurgitation",
+        "Aortic stenosis",
+        "Mitral stenosis",
+        "Aortic regurgitation"
       ],
       "answer": [
         0
@@ -10116,12 +10116,12 @@
       "id": "PRE-415",
       "set": 1,
       "type": "single",
-      "stem": "A patient is acutely intoxicated with alcohol and needs emergency surgery. How should acute intoxication affect expected anesthetic requirement?",
+      "stem": "An acutely alcohol-intoxicated patient requires emergency surgery. Compared with the same patient when sober, what change in volatile anesthetic requirement should be anticipated?",
       "options": [
-        "It decreases MAC",
-        "It increases MAC",
-        "It has no effect",
-        "It increases MAC through enzyme induction"
+        "Lower MAC",
+        "Higher MAC",
+        "No MAC change",
+        "Higher MAC from acute enzyme induction"
       ],
       "answer": [
         0
@@ -10284,12 +10284,12 @@
       "id": "PRE-422",
       "set": 1,
       "type": "single",
-      "stem": "Why is DDD pacing useful in patients who need coordinated atrial and ventricular activity?",
+      "stem": "A patient benefits hemodynamically from maintaining coordinated atrial contraction followed by ventricular contraction. Which feature of DDD pacing is most relevant?",
       "options": [
-        "It preserves AV synchrony",
-        "It is an asynchronous mode",
-        "It paces only the atrium",
-        "It provides rate response by definition"
+        "Preservation of AV synchrony",
+        "Asynchronous ventricular output",
+        "Atrial-only pacing",
+        "Mandatory rate responsiveness"
       ],
       "answer": [
         0
@@ -10452,12 +10452,12 @@
       "id": "PRE-429",
       "set": 1,
       "type": "single",
-      "stem": "Why should St. John's wort be held before surgery?",
+      "stem": "A patient reports taking St. John's wort daily but did not list it under medications. Why is identifying this supplement relevant before anesthesia?",
       "options": [
         "It can interact with anesthetic and perioperative medications",
-        "Stopping it creates dangerous withdrawal",
-        "Half-dosing avoids all interactions",
-        "It has no clinically relevant anesthetic effects"
+        "Abrupt discontinuation predictably causes life-threatening withdrawal",
+        "Reducing it to half-dose eliminates all perioperative interactions",
+        "Herbal supplements have no clinically relevant anesthetic effects"
       ],
       "answer": [
         0
@@ -10548,12 +10548,12 @@
       "id": "PRE-433",
       "set": 1,
       "type": "single",
-      "stem": "A patient became acutely confused and agitated during emergence from a previous anesthetic. Which history category does this belong to?",
+      "stem": "A patient reports becoming acutely confused, combative, and disoriented while waking from a previous anesthetic, without nausea or allergic symptoms. Which prior anesthetic complication should be documented?",
       "options": [
         "Emergence delirium",
-        "PONV",
-        "Coagulation",
-        "Endocrine"
+        "Postoperative nausea and vomiting",
+        "Coagulopathy",
+        "Endocrine crisis"
       ],
       "answer": [
         0
@@ -10644,7 +10644,7 @@
       "id": "PRE-437",
       "set": 1,
       "type": "single",
-      "stem": "Using the lecture formula, what is the approximate ideal body weight for a 5-foot-2-inch woman?",
+      "stem": "A 5-foot-2-inch woman with obesity needs a medication dosed using ideal body weight. Using the lecture formula, which approximate IBW is correct?",
       "options": [
         "50.1 kg",
         "54.7 kg",
@@ -10668,7 +10668,7 @@
       "id": "PRE-438",
       "set": 1,
       "type": "single",
-      "stem": "A patient weighs 110 kg at 1.65 m. Which BMI class applies?",
+      "stem": "A patient weighs 110 kg at 1.65 m and is being screened for obesity-related anesthetic risk. Which BMI category applies?",
       "options": [
         "Obesity class III",
         "Obesity class II",
@@ -10884,12 +10884,12 @@
       "id": "PRE-447",
       "set": 1,
       "type": "single",
-      "stem": "An echocardiogram shows aortic stenosis with mean gradient 18 mmHg and valve area 1.7 cm². Which severity category is most consistent?",
+      "stem": "An asymptomatic patient has an aortic valve area of 1.7 cm² and mean gradient 18 mmHg. Which severity category best matches both measurements?",
       "options": [
-        "Mild",
-        "Moderate",
-        "Severe",
-        "Critical"
+        "Mild aortic stenosis",
+        "Moderate aortic stenosis",
+        "Severe aortic stenosis",
+        "Critical aortic stenosis"
       ],
       "answer": [
         0
@@ -10908,7 +10908,7 @@
       "id": "PRE-448",
       "set": 1,
       "type": "single",
-      "stem": "A patient with prior rheumatic fever has a low-pitched diastolic apical rumble with an opening snap. Which lesion is most likely?",
+      "stem": "A patient with prior rheumatic fever has exertional dyspnea and a low-pitched diastolic apical rumble preceded by an opening snap. Which lesion is most likely?",
       "options": [
         "Mitral stenosis",
         "Mitral regurgitation",
@@ -10956,9 +10956,9 @@
       "id": "PRE-450",
       "set": 1,
       "type": "single",
-      "stem": "A patient takes metformin and glipizide. Which morning-of-surgery instruction best reduces fasting hypoglycemia risk?",
+      "stem": "A fasting patient with type 2 diabetes normally takes metformin and glipizide in the morning. Which instruction best limits medication-related hypoglycemia on the day of surgery?",
       "options": [
-        "Hold oral hypoglycemic agents",
+        "Hold the oral hypoglycemic agents",
         "Take both medications as usual",
         "Take metformin only",
         "Take metformin and hold glipizide"
