@@ -5042,12 +5042,12 @@
       "id": "PRE-207",
       "set": 1,
       "type": "single",
-      "stem": "A type 2 diabetic takes glipizide and NPH insulin. What morning-of-surgery instructions are appropriate?",
+      "stem": "A patient with type 2 diabetes takes glipizide and NPH insulin. Which morning-of-surgery plan best limits both fasting hypoglycemia and excessive hyperglycemia?",
       "options": [
-        "Hold the oral agent and take about half the insulin dose",
-        "Take all medications as usual with a sip of water",
-        "Take the full insulin dose to prevent hyperglycemia",
-        "Stop all insulin for 48 hours before surgery"
+        "Hold glipizide and give about half the usual NPH dose",
+        "Take both medications at full dose",
+        "Take the full insulin dose and hold only glipizide",
+        "Stop all insulin for 48 hours"
       ],
       "answer": [
         0
@@ -5066,7 +5066,7 @@
       "id": "PRE-208",
       "set": 1,
       "type": "multi",
-      "stem": "A 64-year-old with diabetes and nephropathy is scheduled for surgery. Which labs are MOST relevant? (Select 3)",
+      "stem": "Which three laboratory values most directly help assess chronic diabetic control, current glucose status, and a common end-organ complication before surgery? (Select 3)",
       "options": [
         "HbA1c",
         "Morning blood glucose",
@@ -5094,12 +5094,12 @@
       "id": "PRE-209",
       "set": 1,
       "type": "single",
-      "stem": "A diabetic patient's glucose is 140 before a laparoscopic cholecystectomy. You give dexamethasone 8 mg for PONV. Two hours later the glucose is 238. What explains this?",
+      "stem": "A diabetic patient's glucose rises from 140 to 238 mg/dL after dexamethasone 8 mg for PONV prophylaxis. Which explanation is most likely?",
       "options": [
-        "Dexamethasone raises blood glucose",
-        "Surgery lowers insulin needs",
-        "Fasting causes hyperglycemia by itself",
-        "Ondansetron raises glucose"
+        "Dexamethasone can raise blood glucose",
+        "Surgery lowers insulin requirements",
+        "Fasting alone explains the rise",
+        "Ondansetron causes the hyperglycemia"
       ],
       "answer": [
         0
@@ -5118,11 +5118,11 @@
       "id": "PRE-210",
       "set": 1,
       "type": "multi",
-      "stem": "A 66-year-old with long-standing diabetes is scheduled for a laparotomy. Which associated conditions should you look for? (Select 4)",
+      "stem": "Which four comorbid conditions should be actively sought in a patient with long-standing diabetes because they may alter anesthetic management? (Select 4)",
       "options": [
         "Hypertension",
         "Peripheral vascular disease",
-        "Slow GI motility",
+        "Delayed gastric emptying",
         "Coronary artery disease",
         "Hyperthyroidism",
         "Asthma"
@@ -5147,12 +5147,12 @@
       "id": "PRE-211",
       "set": 1,
       "type": "multi",
-      "stem": "A type 1 diabetic with an insulin pump is scheduled for a 4-hour prone spine case with fluoroscopy. Which pump considerations apply? (Select 3)",
+      "stem": "A patient with an insulin pump is scheduled for a 4-hour prone spine case using fluoroscopy and electrocautery. Which three considerations most directly determine whether the pump can remain in use? (Select 3)",
       "options": [
-        "Length of the procedure",
-        "Positioning concerns",
-        "Radiation, magnetic fields, and electrocautery",
-        "Pump insulin type",
+        "Procedure duration",
+        "Patient positioning",
+        "Radiation, magnetic fields, and electrocautery exposure",
+        "Insulin brand",
         "Pump alarm volume",
         "Tubing length"
       ],
@@ -5175,12 +5175,12 @@
       "id": "PRE-212",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a CGM and insulin pump is going for MRI-guided surgery. What does the note suggest?",
+      "stem": "A patient with a CGM and insulin pump is scheduled for MRI-guided surgery. Which device concern should be anticipated?",
       "options": [
-        "The CGM/pump may need to be removed",
-        "The pump should be increased",
-        "The pump should be left in place",
-        "The pump replaces glucose checks"
+        "The CGM and pump may need removal before MRI exposure",
+        "The pump rate should be increased automatically",
+        "Both devices should remain in place regardless of MRI",
+        "The pump eliminates the need for glucose checks"
       ],
       "answer": [
         0
@@ -5199,12 +5199,12 @@
       "id": "PRE-213",
       "set": 1,
       "type": "single",
-      "stem": "A nondiabetic patient fasted 12 hours, received no dextrose, and has a glucose of 168 during an open colectomy. What explains this?",
+      "stem": "A nondiabetic patient develops glucose 168 mg/dL during major surgery despite fasting and no dextrose infusion. Which mechanism best explains this?",
       "options": [
-        "The stress response and pain raise glucose",
-        "Fasting raises glucose",
-        "Anesthetics block insulin secretion completely",
-        "The lab result is likely an error"
+        "Surgical stress hormones increase glucose production and insulin resistance",
+        "Fasting alone causes marked hyperglycemia",
+        "Anesthetic drugs completely stop insulin secretion",
+        "The value is probably a laboratory error"
       ],
       "answer": [
         0
@@ -5223,12 +5223,12 @@
       "id": "PRE-214",
       "set": 1,
       "type": "single",
-      "stem": "A 55-year-old takes levothyroxine for hypothyroidism and is scheduled for surgery. What is the correct instruction?",
+      "stem": "A patient takes levothyroxine for controlled hypothyroidism. What is the best morning-of-surgery instruction?",
       "options": [
         "Continue levothyroxine",
-        "Hold it the morning of surgery",
-        "Reduce the dose by half on the morning of surgery",
-        "Stop it for 1 week before surgery"
+        "Hold the dose",
+        "Take half the dose",
+        "Stop it one week before surgery"
       ],
       "answer": [
         0
@@ -5247,12 +5247,12 @@
       "id": "PRE-215",
       "set": 1,
       "type": "single",
-      "stem": "A patient with hyperthyroidism takes propylthiouracil and propranolol. What should she do on the morning of surgery?",
+      "stem": "A patient with hyperthyroidism takes propylthiouracil and propranolol. Which morning-of-surgery plan best reduces risk of thyroid-related hemodynamic instability?",
       "options": [
-        "Take both medications",
+        "Continue both medications",
         "Hold both medications",
-        "Take propranolol and hold propylthiouracil",
-        "Take propylthiouracil and hold propranolol"
+        "Take propranolol but hold propylthiouracil",
+        "Take propylthiouracil but hold propranolol"
       ],
       "answer": [
         0
@@ -5271,12 +5271,12 @@
       "id": "PRE-216",
       "set": 1,
       "type": "single",
-      "stem": "A patient for elective hernia repair has HR 128, tremor, weight loss, and a TSH below detection. What is the BEST plan?",
+      "stem": "A patient scheduled for elective hernia repair has HR 128, tremor, weight loss, and undetectable TSH. Which issue should drive the decision to postpone?",
       "options": [
-        "Postpone to treat hyperthyroidism",
-        "Proceed with a beta-blocker bolus",
-        "Proceed under regional anesthesia",
-        "Proceed, since hernia repair is minor"
+        "Poorly controlled hyperthyroidism increases perioperative instability risk",
+        "A beta-blocker bolus makes immediate surgery equivalent to optimization",
+        "Regional anesthesia eliminates the thyroid-related risk",
+        "Minor surgery does not require euthyroid status"
       ],
       "answer": [
         0
@@ -5295,12 +5295,12 @@
       "id": "PRE-217",
       "set": 1,
       "type": "single",
-      "stem": "The note says \"non-euthyroid can cause swings during surgery.\" Which swing is expected in hypothyroidism?",
+      "stem": "Which hemodynamic and pharmacologic pattern is most consistent with significant hypothyroidism during anesthesia?",
       "options": [
-        "Hypotension and slowed drug metabolism",
-        "Hypertension and tachycardia",
-        "Hyperthermia and tachyarrhythmia",
-        "Hypokalemia and hypertension from high cortisol"
+        "Hypotension with slowed drug metabolism",
+        "Hypertension with tachycardia",
+        "Hyperthermia with tachyarrhythmia",
+        "Hypokalemia with severe hypertension"
       ],
       "answer": [
         0
@@ -5319,7 +5319,7 @@
       "id": "PRE-218",
       "set": 1,
       "type": "single",
-      "stem": "A patient with known hypothyroidism on levothyroxine is scheduled for elective surgery. Which test is essential to confirm control?",
+      "stem": "A patient with known hypothyroidism is taking levothyroxine. Which test best confirms whether replacement therapy is adequately controlling the disorder before elective surgery?",
       "options": [
         "TSH",
         "Free T3 alone",
@@ -5343,12 +5343,12 @@
       "id": "PRE-219",
       "set": 1,
       "type": "single",
-      "stem": "Which steroid exposure places a patient at risk for HPA axis suppression?",
+      "stem": "Which steroid history is most concerning for clinically important HPA-axis suppression according to the lecture criteria?",
       "options": [
-        "Prednisone 20 mg daily >5 days in the past year",
-        "5 mg prednisone for a single day",
-        "Topical hydrocortisone cream for 1 week",
-        "One dexamethasone dose given for PONV prophylaxis"
+        "Prednisone 20 mg daily for more than 5 days within the past year",
+        "Prednisone 5 mg for one day",
+        "Topical hydrocortisone for one week",
+        "One dexamethasone dose for PONV"
       ],
       "answer": [
         0
@@ -5367,12 +5367,12 @@
       "id": "PRE-220",
       "set": 1,
       "type": "single",
-      "stem": "A patient on chronic steroids becomes hypotensive after induction, unresponsive to fluids and vasopressors. What is the MOST likely cause?",
+      "stem": "A chronic steroid user becomes profoundly hypotensive after induction despite fluids and vasopressors. Which diagnosis should move high on the differential because standard support is failing?",
       "options": [
         "Adrenal insufficiency",
-        "Anaphylaxis to NMB",
-        "Hypovolemia from NPO",
-        "Local anesthetic toxicity"
+        "Neuromuscular-blocker anaphylaxis",
+        "Simple NPO-related hypovolemia",
+        "Local anesthetic systemic toxicity"
       ],
       "answer": [
         0
@@ -5391,11 +5391,11 @@
       "id": "PRE-221",
       "set": 1,
       "type": "single",
-      "stem": "A patient with Addison disease presents for surgery with hypotension, hyponatremia, and hyperkalemia. What treatment addresses the cause?",
+      "stem": "A patient with Addison disease presents with hypotension, hyponatremia, and hyperkalemia. Which treatment addresses the underlying endocrine problem rather than only supporting blood pressure?",
       "options": [
-        "Corticosteroids and electrolytes",
-        "IV fluids alone",
-        "Vasopressors alone",
+        "Corticosteroid replacement with electrolyte management",
+        "IV fluid alone",
+        "Vasopressor alone",
         "Potassium supplementation"
       ],
       "answer": [
@@ -5415,14 +5415,14 @@
       "id": "PRE-222",
       "set": 1,
       "type": "multi",
-      "stem": "Which findings are typical in Cushing syndrome? (Select 2)",
+      "stem": "Which two findings are most consistent with cortisol excess in Cushing syndrome? (Select 2)",
       "options": [
         "Hypervolemia",
         "Severe hypertension",
         "Bradycardia",
         "Hypotension",
         "Hyperkalemia",
-        "Hypokalemia is absent"
+        "Absent hypokalemia"
       ],
       "answer": [
         0,
@@ -5442,12 +5442,12 @@
       "id": "PRE-223",
       "set": 1,
       "type": "single",
-      "stem": "A patient with Conn syndrome has a potassium of 2.8 before an adrenalectomy. Why must this be corrected first?",
+      "stem": "A patient with Conn syndrome has potassium 2.8 mEq/L before adrenalectomy. Why is correction important before anesthesia?",
       "options": [
-        "Prolonged NMB and arrhythmias",
-        "Hypokalemia speeds emergence",
-        "Hypokalemia lowers BP",
-        "Hypokalemia prevents bleeding"
+        "Hypokalemia increases arrhythmia risk and may prolong neuromuscular blockade",
+        "Hypokalemia accelerates emergence",
+        "Hypokalemia lowers blood pressure and protects the heart",
+        "Hypokalemia reduces surgical bleeding"
       ],
       "answer": [
         0
@@ -5466,7 +5466,7 @@
       "id": "PRE-224",
       "set": 1,
       "type": "single",
-      "stem": "What intraoperative BP problem is characteristic of Conn syndrome?",
+      "stem": "Which intraoperative blood-pressure pattern is most characteristic of Conn syndrome?",
       "options": [
         "Refractory hypertension with stimulation",
         "Refractory hypotension with induction",
@@ -5490,12 +5490,12 @@
       "id": "PRE-225",
       "set": 1,
       "type": "single",
-      "stem": "A patient on prednisone 10 mg daily for years needs a superficial skin lesion excision under local. What steroid coverage is appropriate?",
+      "stem": "A patient takes prednisone 10 mg daily chronically and is having a superficial skin procedure under local anesthesia. Which steroid plan best matches the table's stress level?",
       "options": [
-        "His usual daily dose",
-        "Hydrocortisone 50 mg IV, then 25 mg every 8 hours",
-        "Hydrocortisone 100 mg IV, then 200 mg over 24 hours",
-        "No steroid at all on the day of surgery"
+        "Continue the usual daily dose",
+        "Hydrocortisone 50 mg IV then 25 mg every 8 hours",
+        "Hydrocortisone 100 mg IV then 200 mg over 24 hours",
+        "Withhold steroids on the day of surgery"
       ],
       "answer": [
         0
@@ -5514,12 +5514,12 @@
       "id": "PRE-226",
       "set": 1,
       "type": "single",
-      "stem": "What is the perioperative steroid plan for a minor procedure like inguinal hernia?",
+      "stem": "A chronic steroid user is having a minor procedure such as inguinal hernia repair. Which supplemental regimen best matches the table?",
       "options": [
-        "Usual dose plus hydrocortisone 50 mg IV then 25 mg q8h for 24 h",
-        "Usual daily dose",
-        "Hydrocortisone 100 mg IV then 200 mg infusion over 24 h",
-        "No steroid needed"
+        "Usual dose plus hydrocortisone 50 mg IV, then 25 mg every 8 hours for 24 hours",
+        "Usual dose only",
+        "Hydrocortisone 100 mg IV then 200 mg over 24 hours",
+        "No steroid coverage"
       ],
       "answer": [
         0
@@ -5538,12 +5538,12 @@
       "id": "PRE-227",
       "set": 1,
       "type": "single",
-      "stem": "A patient on chronic prednisone is having total joint replacement. What coverage does the table list?",
+      "stem": "A chronic prednisone user is scheduled for total joint replacement. Which perioperative steroid regimen best matches the table's moderate-stress category?",
       "options": [
-        "Usual dose plus hydrocortisone 50 mg IV then 25 mg q8h for 24 h",
-        "Hydrocortisone 100 mg IV plus 200 mg infusion over 24 h",
-        "Usual daily dose",
-        "No steroids needed for orthopedic surgery"
+        "Usual dose plus hydrocortisone 50 mg IV, then 25 mg every 8 hours for 24 hours",
+        "Hydrocortisone 100 mg IV plus 200 mg over 24 hours",
+        "Usual daily dose only",
+        "No supplemental steroid for orthopedic surgery"
       ],
       "answer": [
         0
@@ -5562,11 +5562,11 @@
       "id": "PRE-228",
       "set": 1,
       "type": "single",
-      "stem": "A patient on chronic steroids is scheduled for esophagectomy. What does the table recommend?",
+      "stem": "A chronic steroid user is scheduled for esophagectomy. Which regimen best matches the table's major-surgery recommendation?",
       "options": [
-        "Hydrocortisone 100 mg IV, then 200 mg over 24 h",
-        "Hydrocortisone 50 mg IV, then 25 mg q8h for 24 h",
-        "Usual daily dose",
+        "Hydrocortisone 100 mg IV followed by 200 mg over 24 hours",
+        "Hydrocortisone 50 mg IV then 25 mg every 8 hours",
+        "Usual daily dose only",
         "Hydrocortisone 25 mg once"
       ],
       "answer": [
@@ -5586,12 +5586,12 @@
       "id": "PRE-229",
       "set": 1,
       "type": "single",
-      "stem": "How is steroid dosing tapered after major surgery per the table?",
+      "stem": "After major surgery, how does the table recommend returning from stress-dose steroids to the chronic regimen?",
       "options": [
-        "Taper by 50% per day to the usual dose",
-        "Stop abruptly after 24 hours",
+        "Reduce the supplemental dose by about 50% per day until the usual dose is reached",
+        "Stop all supplemental steroid abruptly after 24 hours",
         "Return immediately to the usual dose after surgery",
-        "Continue 200 mg daily for 2 weeks"
+        "Continue 200 mg daily for two weeks"
       ],
       "answer": [
         0
@@ -5610,7 +5610,7 @@
       "id": "PRE-230",
       "set": 1,
       "type": "single",
-      "stem": "A patient has fatigue, hyperpigmentation, hypotension, and low cortisol. Which disorder fits?",
+      "stem": "Fatigue, hyperpigmentation, hypotension, and low cortisol most strongly suggest which adrenal disorder?",
       "options": [
         "Addison disease",
         "Cushing syndrome",
@@ -5634,14 +5634,14 @@
       "id": "PRE-231",
       "set": 1,
       "type": "multi",
-      "stem": "Which questions do the notes ask about steroid use? (Select 3)",
+      "stem": "Which three steroid-history questions most directly determine risk of HPA suppression and need for perioperative replacement? (Select 3)",
       "options": [
-        "How long on steroids?",
-        "Last dose?",
-        "Does the patient need replacement?",
-        "Was it taken with food?",
-        "Was it oral or inhaled?",
-        "Who prescribed it?"
+        "Duration of steroid therapy",
+        "Time of the last dose",
+        "Whether perioperative replacement may be needed",
+        "Whether the dose was taken with food",
+        "Whether the prescription was generic",
+        "Who prescribed it"
       ],
       "answer": [
         0,
@@ -5662,12 +5662,12 @@
       "id": "PRE-232",
       "set": 1,
       "type": "single",
-      "stem": "A diabetic patient reports symptoms when glucose drops to 60. Why ask this?",
+      "stem": "A diabetic patient becomes symptomatic when glucose reaches about 60 mg/dL. Why is that personal threshold worth documenting before anesthesia?",
       "options": [
-        "It helps recognize hypoglycemia risk and symptoms",
+        "It helps anticipate and recognize hypoglycemia in a patient who may be unable to report symptoms",
         "It predicts difficult airway from gastroparesis",
-        "It sets the patient's ASA classification",
-        "It predicts the patient's PONV risk"
+        "It determines ASA class",
+        "It predicts PONV risk"
       ],
       "answer": [
         0
@@ -5686,11 +5686,11 @@
       "id": "PRE-233",
       "set": 1,
       "type": "single",
-      "stem": "Two diabetic patients are in preop. Patient A's glucose is 58 and Patient B's is 310. Which interventions fit?",
+      "stem": "One diabetic patient has glucose 58 mg/dL and another has glucose 310 mg/dL in preop. Which paired treatment best addresses the immediate metabolic problems?",
       "options": [
-        "D10 for A; insulin for B",
+        "Dextrose for the hypoglycemic patient and insulin for the markedly hyperglycemic patient",
         "Insulin for both",
-        "D10 for both",
+        "Dextrose for both",
         "No treatment for either"
       ],
       "answer": [
@@ -5710,12 +5710,12 @@
       "id": "PRE-234",
       "set": 1,
       "type": "single",
-      "stem": "A diabetic patient's glucose stays above 250 throughout a long case. What outcomes are associated with this?",
+      "stem": "A diabetic patient's glucose remains above 250 mg/dL throughout a long case. Which postoperative consequence becomes more likely?",
       "options": [
-        "Infection and poor wound healing",
+        "Infection and impaired wound healing",
         "Faster wound healing",
         "Lower infection risk",
-        "Higher PONV rates alone"
+        "PONV as the only meaningful consequence"
       ],
       "answer": [
         0
@@ -5734,12 +5734,12 @@
       "id": "PRE-235",
       "set": 1,
       "type": "single",
-      "stem": "A patient drank black coffee at 0700 for a 0930 case. Is she appropriately fasted?",
+      "stem": "A patient drank plain black coffee at 0700 for a 0930 case. Under the lecture fasting rules, how should this be interpreted?",
       "options": [
-        "Yes; clear liquids need 2 hours",
-        "No; coffee needs 6 hours",
-        "No; coffee needs 4 hours",
-        "No; any liquid needs 8 hours"
+        "The interval is acceptable because black coffee is a clear liquid requiring 2 hours",
+        "The case must wait 6 hours",
+        "The case must wait 4 hours",
+        "All liquids require 8 hours"
       ],
       "answer": [
         0
@@ -5758,12 +5758,12 @@
       "id": "PRE-236",
       "set": 1,
       "type": "single",
-      "stem": "An infant breastfed at 0500 and had formula at 0400. Surgery is at 0930. Is the infant appropriately fasted?",
+      "stem": "An infant received formula at 0400 and breast milk at 0500 for a 0930 case. Which intake determines whether fasting is adequate?",
       "options": [
-        "No; formula needs 6 hours",
-        "Yes; breast milk needs 4 hours and 4.5 hours have passed",
-        "Yes; both need 4 hours",
-        "No; breast milk needs 6 hours"
+        "The formula, because it requires 6 hours and only 5.5 hours have elapsed",
+        "The breast milk, because 4 hours have elapsed",
+        "Both are acceptable after 4 hours",
+        "The breast milk, because it requires 6 hours"
       ],
       "answer": [
         0
@@ -5782,7 +5782,7 @@
       "id": "PRE-237",
       "set": 1,
       "type": "single",
-      "stem": "What is the minimum fasting time for infant formula or non-human milk?",
+      "stem": "Which fasting interval applies to infant formula or non-human milk?",
       "options": [
         "6 hours",
         "4 hours",
@@ -5806,12 +5806,12 @@
       "id": "PRE-238",
       "set": 1,
       "type": "single",
-      "stem": "A patient ate plain toast at 0500 for an 1100 case. Is she appropriately fasted?",
+      "stem": "A patient ate plain toast at 0500 for an 1100 case. Which fasting interpretation is correct?",
       "options": [
-        "Yes; a light meal requires 6 hours",
-        "No; a light meal requires 8 hours",
-        "No; any solid food requires 12 hours",
-        "Yes; a light meal requires 4 hours"
+        "Six hours is adequate for a light meal",
+        "A light meal requires 8 hours",
+        "All solids require 12 hours",
+        "A light meal requires only 4 hours"
       ],
       "answer": [
         0
@@ -5830,12 +5830,12 @@
       "id": "PRE-239",
       "set": 1,
       "type": "single",
-      "stem": "A patient ate bacon and eggs at 0600 for a 1200 case. What is the BEST decision?",
+      "stem": "A patient ate bacon and eggs at 0600 for a 1200 case. Why is six hours insufficient?",
       "options": [
-        "Delay; a heavy fatty meal needs 8 hours or more",
-        "Proceed; 6 hours is enough for any meal",
-        "Proceed; fried food empties faster",
-        "Delay 24 hours for any meal containing protein"
+        "Fatty or heavy meals require at least 8 hours because gastric emptying is slower",
+        "Six hours is adequate for any meal",
+        "Fried foods empty faster than light meals",
+        "Any meal containing protein requires 24 hours"
       ],
       "answer": [
         0
@@ -5854,12 +5854,12 @@
       "id": "PRE-240",
       "set": 1,
       "type": "single",
-      "stem": "A patient chewed gum in the waiting room 30 minutes before surgery. What is the main physiologic concern?",
+      "stem": "A patient chewed gum 30 minutes before surgery. Which physiologic effect is the main concern highlighted by the lecture?",
       "options": [
-        "It stimulates gastric acid secretion",
-        "It counts as a heavy meal",
-        "It speeds gastric emptying",
-        "It speeds gastric emptying to zero"
+        "Gum chewing stimulates gastric acid secretion",
+        "Gum is equivalent to a heavy meal",
+        "Gum reliably accelerates gastric emptying",
+        "Gum eliminates gastric contents"
       ],
       "answer": [
         0
@@ -5878,12 +5878,12 @@
       "id": "PRE-241",
       "set": 1,
       "type": "single",
-      "stem": "A patient sucked on a hard candy 1 hour before induction. Why is this a concern?",
+      "stem": "A patient sucked on hard candy one hour before induction. Why is this not treated like a clear liquid?",
       "options": [
-        "Sugar is a particulate",
-        "Candy counts as a clear liquid",
-        "Candy causes reflex bradycardia",
-        "Candy raises PONV risk without aspiration risk"
+        "The sugar is considered particulate material",
+        "Candy is absorbed like water",
+        "Candy mainly causes reflex bradycardia",
+        "Candy increases PONV without aspiration relevance"
       ],
       "answer": [
         0
@@ -5902,11 +5902,11 @@
       "id": "PRE-242",
       "set": 1,
       "type": "multi",
-      "stem": "A 34-year-old with obesity and GERD is scheduled for a laparoscopic cholecystectomy. Which premedications reduce aspiration risk? (Select 3)",
+      "stem": "Which three medications most directly reduce aspiration injury risk by decreasing gastric volume, increasing emptying, or reducing acidity? (Select 3)",
       "options": [
         "Metoclopramide",
         "Famotidine",
-        "15 mL sodium citrate (Bicitra)",
+        "Nonparticulate sodium citrate",
         "Magnesium sulfate",
         "Promethazine",
         "Scopolamine patch"
@@ -5930,12 +5930,12 @@
       "id": "PRE-243",
       "set": 1,
       "type": "single",
-      "stem": "A pregnant patient needs aspiration prophylaxis before a cesarean. Why is sodium citrate chosen over a magnesium-aluminum antacid?",
+      "stem": "Why is sodium citrate preferred over a particulate magnesium-aluminum antacid for aspiration prophylaxis before cesarean delivery?",
       "options": [
-        "It is nonparticulate",
-        "It is particulate, which coats the stomach",
-        "It speeds gastric emptying",
-        "It reduces gastric volume"
+        "It is nonparticulate if aspirated",
+        "It coats the stomach as a particulate barrier",
+        "It primarily accelerates gastric emptying",
+        "It primarily reduces gastric volume"
       ],
       "answer": [
         0
@@ -5954,7 +5954,7 @@
       "id": "PRE-244",
       "set": 1,
       "type": "multi",
-      "stem": "Which factors increase aspiration risk per the notes? (Select 5)",
+      "stem": "Which five factors keep aspiration risk elevated even when standard fasting times are met? (Select 5)",
       "options": [
         "GI obstruction",
         "Pregnancy",
@@ -5984,12 +5984,12 @@
       "id": "PRE-245",
       "set": 1,
       "type": "single",
-      "stem": "A 50-year-old on weekly semaglutide followed standard NPO guidelines for an elective case. What is the main concern?",
+      "stem": "A patient on weekly semaglutide has met standard fasting times. Which residual concern means NPO duration alone may not establish an empty stomach?",
       "options": [
-        "Delayed gastric emptying may require longer fasting",
-        "Semaglutide speeds gastric emptying",
-        "Semaglutide increases gastric acidity",
-        "Semaglutide doses should be increased before surgery"
+        "Delayed gastric emptying",
+        "Accelerated gastric emptying",
+        "Markedly increased gastric acidity alone",
+        "Need for a larger semaglutide dose"
       ],
       "answer": [
         0
@@ -6008,12 +6008,12 @@
       "id": "PRE-246",
       "set": 1,
       "type": "single",
-      "stem": "A patient on semaglutide reports nausea and bloating despite fasting 10 hours. Which bedside test can assess gastric contents?",
+      "stem": "A semaglutide user remains nauseated and bloated after 10 hours of fasting. Which bedside test can directly help assess residual gastric contents?",
       "options": [
         "Gastric point-of-care ultrasound",
-        "Portable chest X-ray",
-        "CT of the abdomen",
-        "Upper GI contrast study with fluoroscopy"
+        "Portable chest radiograph",
+        "Abdominal CT",
+        "Upper-GI contrast fluoroscopy"
       ],
       "answer": [
         0
@@ -6032,13 +6032,13 @@
       "id": "PRE-247",
       "set": 1,
       "type": "multi",
-      "stem": "Prolonged fasting is associated with which problems per the notes? (Select 2)",
+      "stem": "Which two complications can result from unnecessarily prolonged preoperative fasting? (Select 2)",
       "options": [
         "Dehydration",
         "Hypoglycemia",
-        "Lower postoperative pain scores",
+        "Lower postoperative pain",
         "Improved hemodynamic stability",
-        "Reduced aspiration risk",
+        "Guaranteed reduction in aspiration",
         "Lower PONV"
       ],
       "answer": [
@@ -6059,12 +6059,12 @@
       "id": "PRE-248",
       "set": 1,
       "type": "single",
-      "stem": "A patient with SBO is scheduled urgently. What is the MOST important NPO-related concern?",
+      "stem": "A patient with small-bowel obstruction has been NPO for 10 hours and needs urgent surgery. Which principle should guide airway planning?",
       "options": [
-        "High aspiration risk regardless of fasting time",
-        "Low aspiration risk due to NPO status",
-        "NPO time can be shortened because of urgency",
-        "Clear liquids reduce risk"
+        "Obstruction creates high aspiration risk despite prolonged fasting",
+        "Ten hours of fasting makes aspiration risk low",
+        "Urgency shortens the required fasting interval",
+        "Giving clear liquid reduces gastric volume"
       ],
       "answer": [
         0
@@ -6083,12 +6083,12 @@
       "id": "PRE-249",
       "set": 1,
       "type": "single",
-      "stem": "Which of the following BEST explains why NPO status must be assessed with aspiration risk?",
+      "stem": "Why must fasting history be interpreted together with disease-specific aspiration risk?",
       "options": [
-        "Some patients remain high risk despite fasting",
-        "Fasting reduces gastric volume to a safe level in most patients",
-        "Aspiration risk depends on NPO time alone",
-        "NPO time matters more than comorbidities"
+        "Some conditions cause retained gastric contents despite adequate fasting",
+        "Adequate fasting always makes gastric volume safe",
+        "Aspiration risk depends only on elapsed NPO time",
+        "Comorbidities matter less than fasting duration"
       ],
       "answer": [
         0
@@ -6107,12 +6107,12 @@
       "id": "PRE-250",
       "set": 1,
       "type": "single",
-      "stem": "A pregnant patient is scheduled for cesarean delivery. Which aspiration consideration is MOST relevant?",
+      "stem": "Why is pregnancy treated as an aspiration-risk condition in preoperative planning?",
       "options": [
-        "Pregnancy increases aspiration risk",
+        "Pregnancy increases aspiration risk despite otherwise appropriate fasting",
         "Pregnancy decreases gastric acid",
-        "Pregnancy speeds gastric emptying",
-        "Pregnancy reduces gastric acidity"
+        "Pregnancy consistently accelerates gastric emptying",
+        "Pregnancy eliminates clinically important gastric acidity"
       ],
       "answer": [
         0
@@ -6131,12 +6131,12 @@
       "id": "PRE-251",
       "set": 1,
       "type": "single",
-      "stem": "A patient asks why she cannot eat before surgery. What is the main purpose of fasting?",
+      "stem": "What is the primary safety objective of preoperative fasting guidelines?",
       "options": [
-        "Reducing the risk of pulmonary aspiration of gastric contents",
-        "Reducing postoperative pain and opioid use",
-        "Reducing anesthetic drug requirements",
-        "Reducing PONV after anesthesia"
+        "Reduce pulmonary aspiration of gastric contents",
+        "Reduce postoperative pain",
+        "Reduce anesthetic requirements",
+        "Prevent PONV"
       ],
       "answer": [
         0
@@ -6155,12 +6155,12 @@
       "id": "PRE-252",
       "set": 1,
       "type": "single",
-      "stem": "A patient drank pulp-free apple juice 2.5 hours before surgery. Is this acceptable?",
+      "stem": "A patient drank pulp-free apple juice 2.5 hours before surgery. Which fasting interpretation is correct?",
       "options": [
-        "Yes; clear liquids require 2 hours",
-        "No; juice requires 6 hours",
-        "No; juice requires 8 hours",
-        "Yes, as long as the volume was under 100 mL"
+        "The interval is acceptable because pulp-free juice is a clear liquid",
+        "Juice requires 6 hours",
+        "Juice requires 8 hours",
+        "Clear liquids are allowed only if under 100 mL"
       ],
       "answer": [
         0
@@ -6179,12 +6179,12 @@
       "id": "PRE-253",
       "set": 1,
       "type": "single",
-      "stem": "A patient with diabetes and gastroparesis ate a light meal 6 hours ago. What is the BEST plan?",
+      "stem": "A patient with diabetic gastroparesis ate a light meal 6 hours ago. Why should this not be treated as a routine 6-hour fast?",
       "options": [
-        "Treat as high risk; consider POCUS or delay",
-        "Proceed as a standard NPO patient",
-        "Give clear liquids now and proceed",
-        "Delay 24 hours for every diabetic patient"
+        "Delayed gastric emptying may leave residual contents, so additional assessment such as gastric ultrasound or delay may be appropriate",
+        "Six hours guarantees an empty stomach",
+        "Giving clear liquids now will reduce aspiration risk",
+        "All diabetic patients require a 24-hour fast"
       ],
       "answer": [
         0
@@ -6203,12 +6203,12 @@
       "id": "PRE-254",
       "set": 1,
       "type": "single",
-      "stem": "A patient asks why she can drink clear liquids until 2 hours before surgery when her mother was told \"nothing after midnight.\" What explains the change?",
+      "stem": "Why can current fasting instructions allow clear liquids until 2 hours before anesthesia instead of requiring 'nothing after midnight' for everyone?",
       "options": [
-        "Guidelines liberalized clear liquids to 2 hours",
-        "Clear liquids no longer affect aspiration risk",
-        "The rule changed for healthy adults only",
-        "Midnight fasting is still the standard"
+        "Modern guidelines permit a shorter clear-liquid interval",
+        "Clear liquids carry zero aspiration risk",
+        "The shorter interval applies only to healthy adults",
+        "Nothing-after-midnight remains the universal standard"
       ],
       "answer": [
         0
@@ -6227,12 +6227,12 @@
       "id": "PRE-255",
       "set": 1,
       "type": "single",
-      "stem": "A patient in severe pain after trauma is NPO for 10 hours. What aspiration risk remains?",
+      "stem": "A trauma patient in severe pain has been NPO for 10 hours. Why can aspiration risk remain elevated?",
       "options": [
-        "Pain can delay gastric emptying and increase risk",
-        "Pain speeds emptying, so risk is lower",
-        "Fasting for 10 hours removes the risk",
-        "Pain lowers gastric acid, so aspiration is benign"
+        "Pain can delay gastric emptying",
+        "Pain reliably accelerates gastric emptying",
+        "Ten hours of fasting eliminates retained gastric contents",
+        "Pain lowers gastric acidity enough to prevent injury"
       ],
       "answer": [
         0
@@ -6251,12 +6251,12 @@
       "id": "PRE-256",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a BMI of 44 and active GERD is scheduled for an urgent laparoscopy. Which intervention reduces aspiration harm?",
+      "stem": "A patient with BMI 44 and active GERD needs urgent laparoscopy. Which prophylactic approach best reduces the severity of potential aspiration?",
       "options": [
-        "An H2 blocker and a nonparticulate antacid",
-        "No premedication, since fasting is enough",
-        "A particulate antacid to raise gastric pH",
-        "Gum chewing to increase swallowing"
+        "An H2 blocker plus a nonparticulate antacid",
+        "No medication because fasting alone is sufficient",
+        "A particulate antacid",
+        "Gum chewing before induction"
       ],
       "answer": [
         0
