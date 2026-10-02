@@ -3677,12 +3677,12 @@
       "id": "SED-151",
       "set": 1,
       "type": "single",
-      "stem": "Why is SpO2 a late warning sign of hypoventilation when supplemental oxygen is being given?",
+      "stem": "Why can pulse oximetry provide a dangerously late warning of respiratory depression during sedation with supplemental oxygen?",
       "options": [
-        "Desaturation appears late after hypoventilation",
-        "SpO2 alarms lag because of probe placement",
-        "SpO2 readings stay unaffected by apnea on oxygen",
-        "SpO2 alarms trigger too early"
+        "Oxygenation may remain acceptable for a period despite worsening hypoventilation or apnea",
+        "Probe processing always delays SpO2 by several minutes",
+        "SpO2 is completely unaffected by apnea",
+        "Pulse oximetry measures ventilation rather than oxygenation"
       ],
       "answer": [
         0
@@ -3701,12 +3701,12 @@
       "id": "SED-152",
       "set": 1,
       "type": "single",
-      "stem": "A brief intensely painful biopsy and a long mildly stimulating endoscopy are both planned under sedation. Which procedural feature most strongly differentiates their depth requirements?",
+      "stem": "A brief intensely painful biopsy and a long minimally stimulating endoscopy are planned. Which feature most directly determines the peak analgesic/sedative requirement?",
       "options": [
         "Intensity and variability of noxious stimulation",
-        "The expected duration of each procedure",
-        "Availability of an anesthesia machine in the room",
-        "Whether the patient had sedation before"
+        "Duration alone",
+        "Availability of an anesthesia machine",
+        "Prior exposure to sedation alone"
       ],
       "answer": [
         0
@@ -3725,12 +3725,12 @@
       "id": "SED-153",
       "set": 1,
       "type": "single",
-      "stem": "Why does inability to rapidly interrupt a procedure favor a secured airway over MAC?",
+      "stem": "Why does a procedure that cannot be rapidly paused for airway rescue make deep sedation with an unsecured airway less attractive?",
       "options": [
-        "Some procedures cannot stop quickly if the airway fails",
-        "Interrupting a procedure shortens recovery",
-        "Interrupting a procedure reduces infection risk by shortening it",
-        "Interrupting a procedure lowers the total drug dose"
+        "Airway deterioration may occur while procedural access prevents immediate rescue",
+        "Interrupting a procedure increases infection risk",
+        "Longer procedures always require general anesthesia",
+        "Sedation cannot be used outside the operating room"
       ],
       "answer": [
         0
@@ -3749,12 +3749,12 @@
       "id": "SED-154",
       "set": 1,
       "type": "single",
-      "stem": "Which listed procedure is most commonly suitable for sedation rather than GA?",
+      "stem": "Which procedure is generally most compatible with sedation when patient and procedural factors are otherwise favorable?",
       "options": [
         "Flexible sigmoidoscopy",
         "Open cholecystectomy",
-        "Craniotomy for tumor",
-        "Cemented hip arthroplasty"
+        "Major craniotomy under full immobility",
+        "Cemented total hip arthroplasty without regional anesthesia"
       ],
       "answer": [
         0
@@ -3773,12 +3773,12 @@
       "id": "SED-155",
       "set": 1,
       "type": "single",
-      "stem": "Which cardiovascular procedure most commonly requires only a brief period of deep sedation, and why?",
+      "stem": "Which cardiovascular procedure often requires a brief period of deep sedation because the stimulus is intense but extremely short?",
       "options": [
-        "The cardioversion, because the shock is brief but intensely stimulating",
-        "The angiogram, because it is long and painful",
-        "The generator change, because it requires immobility for several hours",
-        "None, since all three are done under minimal sedation"
+        "Synchronized electrical cardioversion",
+        "Routine diagnostic angiography",
+        "Pacemaker generator change under effective local anesthesia",
+        "Ambulatory ECG placement"
       ],
       "answer": [
         0
@@ -3797,12 +3797,12 @@
       "id": "SED-156",
       "set": 1,
       "type": "single",
-      "stem": "Why does EGD generally create more airway-rescue risk than colonoscopy at the same sedation depth?",
+      "stem": "Why does upper endoscopy generally create more difficult airway rescue than colonoscopy at the same sedation depth?",
       "options": [
-        "The endoscopist shares the airway with you",
-        "EGD takes longer than colonoscopy",
-        "EGD requires prone positioning",
-        "EGD is more painful than colonoscopy"
+        "The endoscope shares the oropharyngeal airway and can impede access during rescue",
+        "Upper endoscopy is always longer",
+        "Upper endoscopy requires prone positioning",
+        "Upper endoscopy is always more painful"
       ],
       "answer": [
         0
@@ -3821,12 +3821,12 @@
       "id": "SED-157",
       "set": 1,
       "type": "single",
-      "stem": "During awake craniotomy, which procedural requirement most limits sedation depth?",
+      "stem": "During awake craniotomy, which procedural requirement most constrains sedative depth?",
       "options": [
-        "The need for patient cooperation and neurologic testing",
-        "High bleeding risk from the vascular tumor bed alone",
-        "The supine position",
-        "A short procedure time"
+        "The patient must remain able to cooperate with neurologic testing",
+        "The procedure is performed supine",
+        "The incision is short",
+        "Blood loss is always minimal"
       ],
       "answer": [
         0
@@ -3845,14 +3845,14 @@
       "id": "SED-158",
       "set": 1,
       "type": "multi",
-      "stem": "For MRI sedation, which TWO procedure factors most increase risk? (Select 2)",
+      "stem": "Which TWO MRI characteristics most increase anesthetic risk during sedation? (Select 2)",
       "options": [
-        "Expected duration and need for immobility",
-        "Position and accessibility of the airway",
-        "Intense noxious stimulation during the scan",
-        "Need for neurologic testing",
-        "High bleeding risk",
-        "Need for gastric decompression"
+        "Need for prolonged immobility",
+        "Restricted physical access to the airway/patient in the scanner environment",
+        "Intense noxious stimulation throughout scanning",
+        "Need for continuous neurologic commands",
+        "High surgical bleeding risk",
+        "Gastric insufflation"
       ],
       "answer": [
         0,
@@ -3872,12 +3872,12 @@
       "id": "SED-159",
       "set": 1,
       "type": "single",
-      "stem": "During lateral-position MAC, oxygenation worsens. Which mechanical change most likely explains this?",
+      "stem": "A laterally positioned sedated patient develops worsening oxygenation. Which change can contribute?",
       "options": [
-        "Reduced compliance and FRC in the dependent lung",
-        "Increased FRC in the dependent lung",
-        "Better ventilation of the dependent lung",
-        "Improved V/Q matching in the lateral position"
+        "Compression of the dependent lung can reduce its compliance and FRC",
+        "The dependent lung always gains FRC",
+        "Lateral positioning guarantees improved V/Q matching",
+        "Lateral positioning prevents atelectasis"
       ],
       "answer": [
         0
@@ -3896,12 +3896,12 @@
       "id": "SED-160",
       "set": 1,
       "type": "single",
-      "stem": "A beach-chair patient under MAC becomes hypotensive. Which perfusion risk is most concerning?",
+      "stem": "During beach-chair MAC, systemic hypotension develops. Which positioning-related consequence is most concerning?",
       "options": [
-        "Reduced cerebral perfusion with altered autoregulation",
-        "Atelectasis of the dependent lung from the upright position",
-        "Airway edema from the prone position",
-        "Worsened obstruction from the lateral position"
+        "Cerebral perfusion pressure at the brain may be substantially lower than the arm-cuff pressure suggests",
+        "Dependent-lung FRC always falls to zero",
+        "Prone facial edema develops",
+        "Upper-airway obstruction is eliminated by the upright position"
       ],
       "answer": [
         0
@@ -3920,12 +3920,12 @@
       "id": "SED-161",
       "set": 1,
       "type": "single",
-      "stem": "During a prolonged prone spine case, which factor most increases postoperative visual-loss risk?",
+      "stem": "During a prolonged prone operation, which combination most increases postoperative visual-loss risk?",
       "options": [
-        "Substantial blood loss with anemia",
-        "The short procedure duration",
-        "Supine positioning at the end",
-        "Local anesthetic infiltration at the incision"
+        "Major blood loss/anemia with prolonged prone positioning",
+        "Short duration with minimal blood loss",
+        "Normal hemoglobin and neutral head position",
+        "Effective local infiltration"
       ],
       "answer": [
         0
@@ -3946,11 +3946,11 @@
       "type": "multi",
       "stem": "Which THREE measures help reduce postoperative visual-loss risk in prolonged prone surgery? (Select 3)",
       "options": [
-        "Avoid direct pressure on the eyes",
+        "Avoid direct external pressure on the eyes",
         "Maintain adequate perfusion and oxygenation",
-        "Keep the head neutral and level with or above the heart",
-        "Lower the head below the heart",
-        "Tolerate more blood loss",
+        "Keep the head neutral and, when feasible, level with or above the heart",
+        "Deliberately position the head below the heart",
+        "Accept profound anemia to reduce transfusion",
         "Use deeper sedation"
       ],
       "answer": [
@@ -3972,12 +3972,12 @@
       "id": "SED-163",
       "set": 1,
       "type": "single",
-      "stem": "Why is prolonged prone MAC with the head turned especially high risk?",
+      "stem": "Why is prolonged prone deep sedation with an unsecured airway especially hazardous?",
       "options": [
-        "Airway access is difficult and edema can develop",
-        "Prone position increases dependent lung compliance",
-        "Prone position prevents capnography sampling",
-        "Prone position requires a secured airway in every patient"
+        "Airway access is restricted and airway/facial edema can make rescue progressively harder",
+        "Prone positioning guarantees improved airway patency",
+        "Capnography cannot function prone",
+        "Every prone procedure automatically requires neuromuscular blockade"
       ],
       "answer": [
         0
@@ -3996,12 +3996,12 @@
       "id": "SED-164",
       "set": 1,
       "type": "single",
-      "stem": "What airway effect should be anticipated when a morbidly obese patient with severe OSA is sedated supine?",
+      "stem": "A morbidly obese patient with severe OSA is sedated supine. Which airway change should be anticipated?",
       "options": [
-        "More airway obstruction once sedated",
-        "Better FRC and oxygenation from the flat position",
-        "Lower aspiration risk",
-        "Lower sedative requirements"
+        "Loss of pharyngeal tone can markedly worsen upper-airway obstruction",
+        "Supine positioning increases FRC",
+        "Aspiration risk becomes negligible",
+        "Sedative sensitivity decreases"
       ],
       "answer": [
         0
@@ -4020,12 +4020,12 @@
       "id": "SED-165",
       "set": 1,
       "type": "single",
-      "stem": "Why does a 4-hour MAC generally carry more airway risk than a 20-minute MAC in a similar patient?",
+      "stem": "Why can a 4-hour MAC create more airway risk than a 20-minute MAC in an otherwise similar patient?",
       "options": [
-        "Longer exposure to an unsecured airway",
-        "Lower total drug use",
-        "Less patient restlessness",
-        "Less need for monitoring once the patient is settled"
+        "Longer unsecured-airway exposure and cumulative drug/stimulation changes increase opportunities for deterioration",
+        "Longer cases require less total sedative",
+        "Restlessness becomes less likely with time",
+        "Monitoring can be reduced after the first hour"
       ],
       "answer": [
         0
@@ -4044,12 +4044,12 @@
       "id": "SED-166",
       "set": 1,
       "type": "single",
-      "stem": "A patient must follow commands during carotid stenting. How does this constrain sedation depth?",
+      "stem": "A patient must follow commands during carotid stenting. How should this requirement influence sedation?",
       "options": [
-        "It limits how deep sedation can go",
-        "It allows deeper sedation",
-        "It means sedation should be avoided",
-        "It requires adding an opioid to the plan"
+        "Preserve sufficient responsiveness for reliable neurologic testing",
+        "Use deep sedation throughout",
+        "Use neuromuscular blockade to prevent movement",
+        "Avoid local anesthesia"
       ],
       "answer": [
         0
@@ -4068,12 +4068,12 @@
       "id": "SED-167",
       "set": 1,
       "type": "single",
-      "stem": "For head-and-neck procedures using open oxygen near the face, which procedural hazard becomes especially important?",
+      "stem": "During facial surgery under MAC, supplemental oxygen accumulates beneath drapes near electrocautery. Which hazard becomes a major anesthetic concern?",
       "options": [
-        "Fire risk in an oxygen-enriched environment",
-        "Need for cooperation or neurologic testing",
-        "Intensity and variability of stimulation",
-        "Expected duration and need for immobility"
+        "Operating-room fire in an oxygen-enriched field",
+        "Postoperative visual loss",
+        "Local anesthetic systemic toxicity by definition",
+        "Malignant hyperthermia"
       ],
       "answer": [
         0
@@ -4092,12 +4092,12 @@
       "id": "SED-168",
       "set": 1,
       "type": "single",
-      "stem": "TEE and cardioversion belong to which procedural category for sedation planning?",
+      "stem": "TEE and synchronized cardioversion are examples of what procedural group commonly managed with carefully selected sedation techniques?",
       "options": [
         "Short cardiovascular procedures",
         "Gastrointestinal procedures",
-        "Minor diagnostic procedures",
-        "Ophthalmologic procedures"
+        "Ophthalmic procedures",
+        "Peripheral nerve procedures"
       ],
       "answer": [
         0
@@ -4116,12 +4116,12 @@
       "id": "SED-169",
       "set": 1,
       "type": "single",
-      "stem": "For EGD in a patient with severe COPD, difficult airway, and food impaction, what should determine whether sedation is appropriate?",
+      "stem": "A patient with severe COPD, predicted difficult airway, and esophageal food impaction is scheduled for EGD. Which principle should determine MAC versus a secured airway?",
       "options": [
-        "Airway, comorbidities, complexity, and expected stimulation",
-        "The procedure type alone, since EGD is usually sedation",
-        "The patient's wish to be asleep or awake",
-        "The expected duration of the procedure alone"
+        "Integrate aspiration risk, airway rescue difficulty, comorbidity, and procedural requirements rather than relying on the usual anesthetic for EGD",
+        "Use MAC because EGD is usually performed under sedation",
+        "Choose solely according to patient preference",
+        "Use procedure duration alone"
       ],
       "answer": [
         0
@@ -4140,12 +4140,12 @@
       "id": "SED-170",
       "set": 1,
       "type": "single",
-      "stem": "A percutaneous liver biopsy has substantial bleeding risk. Which sedation-planning concern does this primarily affect?",
+      "stem": "A percutaneous biopsy carries meaningful hemorrhage risk. How should that risk affect sedation planning?",
       "options": [
-        "Risk of sudden physiologic change requiring rapid response",
-        "Need for patient cooperation and neurologic testing",
-        "Intensity of noxious stimulation",
-        "Patient positioning on the biopsy table"
+        "Ensure monitoring/access and a plan for sudden hemodynamic deterioration or escalation of care",
+        "It primarily determines Mallampati class",
+        "It eliminates the need for airway planning",
+        "It guarantees general anesthesia is unnecessary"
       ],
       "answer": [
         0
@@ -4164,12 +4164,12 @@
       "id": "SED-171",
       "set": 1,
       "type": "single",
-      "stem": "Why is shoulder-dislocation reduction often well suited to brief deep sedation?",
+      "stem": "Why is shoulder-dislocation reduction often well suited to brief deep sedation in an appropriately selected patient?",
       "options": [
-        "Short, intense stimulation with a need for rapid recovery",
-        "Long duration with low stimulation",
-        "Need for patient cooperation throughout the reduction",
-        "A shared airway with the proceduralist"
+        "The stimulus is intense but short, and rapid recovery is desirable",
+        "It requires hours of immobility",
+        "The patient must follow commands throughout reduction",
+        "The proceduralist shares the airway"
       ],
       "answer": [
         0
@@ -4188,12 +4188,12 @@
       "id": "SED-172",
       "set": 1,
       "type": "single",
-      "stem": "During beach-chair MAC, BP falls to 85/50. Which physiologic concern is most important?",
+      "stem": "During beach-chair MAC, arm BP falls to 85/50 mmHg. Which concern should drive prompt reassessment and treatment?",
       "options": [
-        "Reduced cerebral perfusion from altered autoregulation",
-        "Airway edema from prolonged head-down position",
-        "Dependent-lung atelectasis with falling FRC",
-        "Postoperative visual loss from direct eye pressure"
+        "Cerebral perfusion at head level may be even lower than the arm pressure indicates",
+        "Upright positioning prevents cerebral hypoperfusion",
+        "The main risk is prone airway edema",
+        "Blood pressure is irrelevant if SpO2 is normal"
       ],
       "answer": [
         0
@@ -4212,12 +4212,12 @@
       "id": "SED-173",
       "set": 1,
       "type": "single",
-      "stem": "The patient's head is turned away from the anesthesia provider during shoulder surgery. Which rescue risk increases?",
+      "stem": "During shoulder surgery, the patient's head is turned away and airway access is partly obstructed by the setup. What risk increases if sedation deepens?",
       "options": [
-        "Difficult airway access during rescue",
+        "Delay or difficulty performing airway rescue",
         "Increased FRC",
         "Reduced aspiration risk",
-        "Less need for capnography with the head turned"
+        "Elimination of the need for capnography"
       ],
       "answer": [
         0
@@ -4236,12 +4236,12 @@
       "id": "SED-174",
       "set": 1,
       "type": "single",
-      "stem": "Which combination of procedure features most strongly favors GA over MAC?",
+      "stem": "Which procedural combination most strongly argues against deep sedation with an unsecured airway?",
       "options": [
-        "Intense, variable stimulation with poor airway access",
+        "Intense variable stimulation plus poor airway access and inability to pause quickly",
         "Low stimulation with easy airway access",
-        "A short case with a cooperative patient and easy access",
-        "A procedure that can be paused at any time"
+        "Short duration with a cooperative patient",
+        "A procedure that can be stopped immediately"
       ],
       "answer": [
         0
@@ -4260,14 +4260,14 @@
       "id": "SED-175",
       "set": 1,
       "type": "multi",
-      "stem": "Which FIVE procedure factors matter when deciding whether a long interventional-radiology case is suitable for sedation? (Select 5)",
+      "stem": "Which FIVE factors matter when deciding whether a long interventional-radiology case is suitable for sedation? (Select 5)",
       "options": [
-        "Expected duration and need for immobility",
-        "Risk of bleeding or aspiration",
-        "Position and access to the airway",
-        "Ability to pause or interrupt the procedure",
+        "Expected duration/immobility",
+        "Bleeding or aspiration risk",
+        "Position and airway access",
+        "Ability to interrupt the procedure",
         "Need for patient cooperation",
-        "Availability of a PACU nurse that afternoon"
+        "Availability of a particular PACU nurse"
       ],
       "answer": [
         0,
@@ -4290,12 +4290,12 @@
       "id": "SED-176",
       "set": 1,
       "type": "single",
-      "stem": "A previously calm patient becomes restless late in a long MAC. What is the main danger of simply escalating sedative dosing?",
+      "stem": "Late in a prolonged MAC, a previously comfortable patient becomes restless. What should occur before simply escalating sedative doses?",
       "options": [
-        "Deeper-than-intended sedation with an unprotected airway",
-        "Recovery of airway tone as drugs redistribute",
-        "Lower aspiration risk as the stomach empties",
-        "Less monitoring needed now that the patient settled"
+        "Evaluate reversible causes such as pain, position, bladder discomfort, hypoxemia, or inadequate local anesthesia because extra sedative may cause airway compromise",
+        "Assume restlessness always means inadequate hypnosis",
+        "Give repeated propofol boluses until immobile",
+        "Reduce monitoring to minimize stimulation"
       ],
       "answer": [
         0
@@ -4314,12 +4314,12 @@
       "id": "SED-177",
       "set": 1,
       "type": "single",
-      "stem": "Deep sedation is requested for a prone patient with an unsecured airway. What is the safest planning response?",
+      "stem": "Deep sedation is requested for a prone patient whose airway would be difficult to access. What is the safest planning response?",
       "options": [
-        "Discuss a secured airway because rescue access is limited",
-        "Proceed with deep sedation and monitor SpO2 closely",
-        "Use minimal sedation and accept movement during the case",
-        "Place the patient supine for rescue if needed"
+        "Reconsider whether a secured airway/general anesthetic offers a safer rescue profile",
+        "Proceed because pulse oximetry will identify problems early enough",
+        "Use deep sedation without capnography",
+        "Assume the patient can be rapidly turned supine during any emergency"
       ],
       "answer": [
         0
@@ -4338,12 +4338,12 @@
       "id": "SED-178",
       "set": 1,
       "type": "single",
-      "stem": "Why can oxygenation worsen in the lateral position during MAC?",
+      "stem": "A laterally positioned patient under MAC develops mild hypoxemia. Which mechanical change can contribute?",
       "options": [
-        "The dependent lung's compliance and FRC decrease",
-        "Lateral positioning improves V/Q matching",
-        "Lateral positioning increases FRC in both lungs",
-        "Lateral positioning reduces oxygen consumption"
+        "Reduced FRC/compliance in the dependent lung",
+        "Increased dependent-lung FRC",
+        "Elimination of atelectasis",
+        "Improved oxygen reserve in both lungs"
       ],
       "answer": [
         0
@@ -4362,12 +4362,12 @@
       "id": "SED-179",
       "set": 1,
       "type": "single",
-      "stem": "How should postoperative visual loss after prolonged prone surgery be characterized?",
+      "stem": "Why is postoperative visual loss emphasized despite its low incidence after prolonged prone surgery?",
       "options": [
-        "It is rare but can be permanent",
-        "It is common and usually reversible",
-        "It occurs mainly in short procedures",
-        "It occurs mainly in supine procedures"
+        "The injury is rare but potentially permanent and devastating",
+        "It is common but always reversible",
+        "It occurs mainly after brief supine cases",
+        "It is caused only by direct eye pressure"
       ],
       "answer": [
         0
@@ -4386,12 +4386,12 @@
       "id": "SED-180",
       "set": 1,
       "type": "single",
-      "stem": "Which common sedation case most often needs only a brief period of deep sedation for a very intense stimulus?",
+      "stem": "Which common procedure most often pairs a very brief but intense stimulus with a need for rapid recovery?",
       "options": [
         "Electrical cardioversion",
         "Routine colonoscopy",
-        "Image-guided lung biopsy",
-        "Superficial abscess drainage"
+        "Superficial abscess drainage with adequate local anesthesia",
+        "Diagnostic ultrasound"
       ],
       "answer": [
         0
@@ -4410,12 +4410,12 @@
       "id": "SED-181",
       "set": 1,
       "type": "single",
-      "stem": "During colonoscopy, external abdominal pressure is applied while the airway remains unprotected. What risk increases?",
+      "stem": "During colonoscopy under deep sedation, forceful external abdominal pressure is applied while protective reflexes are depressed. Which risk may increase?",
       "options": [
-        "Increased aspiration risk from pressure on the stomach",
-        "Increased bleeding from the colon",
-        "Bradycardia from vagal stimulation by the colonoscope",
-        "Higher sedative requirements"
+        "Regurgitation/aspiration",
+        "Malignant hyperthermia",
+        "Pneumothorax",
+        "Local anesthetic systemic toxicity"
       ],
       "answer": [
         0
@@ -4434,12 +4434,12 @@
       "id": "SED-182",
       "set": 1,
       "type": "single",
-      "stem": "Which procedural question best predicts how much sedation and analgesia will be required?",
+      "stem": "When planning procedural sedation, which question best predicts peak analgesic requirement?",
       "options": [
-        "How intense and variable is the noxious stimulus?",
-        "How long has the proceduralist practiced?",
-        "How long is the procedure expected to last?",
-        "How many staff members will be in the room during the procedure?"
+        "How intense and variable will the noxious stimulation be?",
+        "How many staff are in the room?",
+        "How experienced is the proceduralist?",
+        "What oxygen flow rate will be used?"
       ],
       "answer": [
         0
@@ -4458,12 +4458,12 @@
       "id": "SED-183",
       "set": 1,
       "type": "single",
-      "stem": "Why can wide-awake local anesthesia with minimal sedation work well for carpal-tunnel release?",
+      "stem": "Why can carpal-tunnel release often be performed with effective local anesthesia and only minimal systemic sedation?",
       "options": [
-        "Low systemic stimulation with effective local anesthesia",
-        "Intense, variable stimulation",
-        "Long duration with a shared airway and deep immobility",
-        "A need for deep immobility"
+        "Adequate local anesthesia can blunt the procedural nociceptive input, reducing the need for systemic drugs",
+        "The procedure requires intense variable stimulation despite local anesthesia",
+        "The airway is shared with the surgeon",
+        "Neuromuscular blockade is routinely required"
       ],
       "answer": [
         0
@@ -4482,12 +4482,12 @@
       "id": "SED-184",
       "set": 1,
       "type": "single",
-      "stem": "Why is pediatric MRI sedation riskier than the same anesthetic in a main OR?",
+      "stem": "Why does MRI sedation demand special rescue planning even though the scan itself is painless?",
       "options": [
-        "Remote location, limited airway access, and need for MRI-compatible equipment",
-        "Shorter procedures with more available staff and simpler equipment",
-        "A healthier patient population and better lighting",
-        "Less need for monitoring because the scan is painless"
+        "The remote environment, scanner bore, and MRI-compatibility constraints can delay physical access and airway rescue",
+        "MRI increases noxious stimulation",
+        "Monitoring is unnecessary because no incision occurs",
+        "The scanner improves airway access"
       ],
       "answer": [
         0
@@ -4506,12 +4506,12 @@
       "id": "SED-185",
       "set": 1,
       "type": "single",
-      "stem": "A supine patient with severe OSA repeatedly obstructs during bronchoscopy sedation. Which repositioning is most likely to help?",
+      "stem": "A supine patient with severe OSA repeatedly obstructs during sedation. Which positional adjustment may improve upper-airway patency if the procedure permits?",
       "options": [
-        "Lateral or semi-upright positioning",
-        "Flat supine with the head extended",
+        "Head-elevated/semi-upright or lateral positioning",
         "Trendelenburg",
-        "Supine with a pillow under the head"
+        "Flatter supine positioning",
+        "Head-down lateral positioning"
       ],
       "answer": [
         0
@@ -4530,12 +4530,12 @@
       "id": "SED-186",
       "set": 1,
       "type": "single",
-      "stem": "During sedated TEE, airway rescue becomes difficult when hypoxemia develops. Which procedural factor is contributing?",
+      "stem": "During sedated TEE, hypoxemia develops and airway maneuvers are difficult. Which procedural factor contributes directly?",
       "options": [
-        "The probe shares and partially occupies the airway",
-        "The procedure is long and painful",
-        "The patient must cooperate with neurologic testing",
-        "The patient is prone"
+        "The probe occupies the pharyngeal space and may impede airway access until withdrawn",
+        "TEE requires prone positioning",
+        "TEE requires neuromuscular blockade",
+        "The patient must perform neurologic testing"
       ],
       "answer": [
         0
@@ -4554,12 +4554,12 @@
       "id": "SED-187",
       "set": 1,
       "type": "single",
-      "stem": "A procedure alternates between minimal stimulation and brief intense pain. What does this mean for sedation titration?",
+      "stem": "A procedure alternates between minimal stimulation and brief intense pain. What is the principal titration challenge?",
       "options": [
-        "Depth needs may change quickly during the procedure",
-        "Depth needs stay constant",
-        "Deeper sedation should be given from the start",
-        "Sedation should be avoided"
+        "Drug effect may outlast the painful stimulus, causing oversedation when stimulation suddenly falls",
+        "Sedation requirements remain constant",
+        "The deepest required level should be maintained throughout",
+        "Changing stimulation affects analgesia but never sedation depth"
       ],
       "answer": [
         0
@@ -4578,12 +4578,12 @@
       "id": "SED-188",
       "set": 1,
       "type": "single",
-      "stem": "In beach-chair MAC, confusion develops while arm BP is 92/54. What positioning issue should be suspected?",
+      "stem": "During beach-chair MAC, a patient becomes confused with arm BP 92/54 mmHg. Which explanation should be considered urgently?",
       "options": [
-        "Altered cerebral autoregulation and perfusion",
-        "Dependent lung collapse from the upright position",
-        "Prone-related airway edema",
-        "Eye pressure causing visual loss"
+        "Cerebral perfusion pressure at head level may be inadequate despite the arm-cuff value",
+        "Upright positioning guarantees adequate cerebral perfusion",
+        "Dependent-lung collapse is the only likely cause",
+        "Direct eye pressure is causing the confusion"
       ],
       "answer": [
         0
@@ -4602,12 +4602,12 @@
       "id": "SED-189",
       "set": 1,
       "type": "single",
-      "stem": "Why does patient position matter so much during MAC even when GA is not planned?",
+      "stem": "Why must position be considered during MAC even when no airway device is planned?",
       "options": [
-        "It affects airway patency, airway access, and physiology",
-        "It matters mainly for GA cases",
-        "It matters mainly for prone cases",
-        "It matters mainly for surgical exposure and instrument access"
+        "Position can alter airway patency, rescue access, ventilation, and perfusion",
+        "Position matters only during general anesthesia",
+        "Position matters only when prone",
+        "Position affects only surgical exposure"
       ],
       "answer": [
         0
@@ -4626,12 +4626,12 @@
       "id": "SED-190",
       "set": 1,
       "type": "single",
-      "stem": "A lateral-position patient under MAC desaturates mildly. Which physiologic change is most likely?",
+      "stem": "A lateral-position patient under MAC develops mild desaturation without obvious obstruction. Which positional physiology may contribute?",
       "options": [
-        "Reduced FRC in the dependent lung",
-        "Increased compliance in the dependent lung",
-        "Airway edema from prone position",
-        "Cerebral autoregulation failure"
+        "Reduced dependent-lung FRC and compliance",
+        "Increased dependent-lung compliance",
+        "Prone airway edema",
+        "Beach-chair cerebral hypoperfusion"
       ],
       "answer": [
         0
@@ -4650,12 +4650,12 @@
       "id": "SED-191",
       "set": 1,
       "type": "single",
-      "stem": "Which patient factor most increases postoperative visual-loss risk during a prolonged prone case?",
+      "stem": "Which patient/procedure combination increases postoperative visual-loss risk during a prolonged prone operation?",
       "options": [
-        "Obesity with peripheral vascular disease",
-        "Young age with an athletic build and low BMI",
-        "A normal preoperative hemoglobin",
-        "A short procedure under two hours"
+        "Obesity/vascular disease combined with prolonged duration, blood loss, or anemia",
+        "Young age with normal hemoglobin and short duration",
+        "Normal perfusion and no eye pressure",
+        "A brief supine procedure"
       ],
       "answer": [
         0
@@ -4674,12 +4674,12 @@
       "id": "SED-192",
       "set": 1,
       "type": "single",
-      "stem": "Why is saying \"moderate sedation is not MAC\" conceptually incorrect?",
+      "stem": "Why is it incorrect to treat MAC as a fixed depth between moderate and deep sedation?",
       "options": [
-        "MAC is an anesthesia service, not a sedation depth",
-        "MAC is deeper than moderate sedation by definition",
-        "MAC excludes local or regional anesthesia",
-        "MAC sits between moderate and deep sedation"
+        "MAC describes an anesthesia service and preparedness, not a single sedation depth",
+        "MAC is synonymous with deep sedation",
+        "MAC excludes local/regional anesthesia",
+        "MAC always means general anesthesia"
       ],
       "answer": [
         0
@@ -4698,12 +4698,12 @@
       "id": "SED-193",
       "set": 1,
       "type": "single",
-      "stem": "A patient under MAC briefly stops responding to voice after propofol. Does this mean MAC has ended?",
+      "stem": "During MAC, a propofol bolus briefly makes the patient unresponsive and ventilation requires support. Does the label MAC itself cease to apply solely because depth changed?",
       "options": [
-        "Yes, MAC is a service whose depth can range from minimal sedation to GA",
-        "No, MAC ends once the patient stops responding to voice",
-        "No, this has become moderate sedation",
-        "Yes, as long as the patient was moderately sedated when the case began"
+        "No; MAC is the anesthesia service, while the patient may transiently enter deeper sedation or general anesthesia requiring rescue",
+        "Yes; MAC ends whenever verbal responsiveness is lost",
+        "Yes; the case automatically becomes nurse-administered moderate sedation",
+        "No; because MAC cannot include airway intervention"
       ],
       "answer": [
         0
@@ -4722,12 +4722,12 @@
       "id": "SED-194",
       "set": 1,
       "type": "single",
-      "stem": "Why can a nurse credentialed for moderate sedation not simply take over a MAC case?",
+      "stem": "Why is credentialing for nurse-administered moderate sedation not equivalent to providing MAC?",
       "options": [
-        "MAC requires a qualified anesthesia professional ready to manage the airway",
-        "Nothing, since moderate sedation credentialing also covers MAC",
-        "The proceduralist should provide MAC while scoping",
-        "An ACLS-certified sedation technician could provide MAC while the CRNA starts another room"
+        "MAC is an anesthesia service requiring an anesthesia professional prepared for deeper anesthesia, airway rescue, and conversion to general anesthesia",
+        "Both roles are identical if propofol is not used",
+        "MAC requires no airway expertise",
+        "Moderate-sedation credentials automatically authorize general anesthesia"
       ],
       "answer": [
         0
@@ -4749,11 +4749,11 @@
       "stem": "Which THREE components are part of the MAC anesthesia service? (Select 3)",
       "options": [
         "Preprocedure evaluation",
-        "Intraprocedure care",
-        "Postprocedure management",
-        "Intraprocedure monitoring only",
-        "Postoperative pain control only",
-        "Performing the surgical procedure"
+        "Intraprocedure anesthetic care",
+        "Postprocedure anesthesia management",
+        "Surgical performance",
+        "Only intraoperative monitoring",
+        "Only postoperative analgesia"
       ],
       "answer": [
         0,
@@ -4774,12 +4774,12 @@
       "id": "SED-196",
       "set": 1,
       "type": "single",
-      "stem": "Which medication categories may be combined as part of a MAC technique?",
+      "stem": "Which medication strategy can be part of MAC when appropriate to the procedure and patient?",
       "options": [
-        "Anxiolytic, hypnotic, analgesic, and amnestic agents",
-        "Benzodiazepines and opioids, but not propofol or local anesthetics",
-        "Local anesthetics alone",
-        "Neuromuscular blockers for stillness"
+        "A tailored combination of anxiolytic, hypnotic, analgesic, and/or amnestic drugs with local/regional anesthesia as applicable",
+        "Neuromuscular blockade solely to keep an unsecured-airway patient still",
+        "Local anesthetic only by definition",
+        "Benzodiazepines and opioids are the only permissible agents"
       ],
       "answer": [
         0
@@ -4798,12 +4798,12 @@
       "id": "SED-197",
       "set": 1,
       "type": "single",
-      "stem": "A field block fails during MAC, severe pain persists, and more sedation causes obstruction. What must the anesthesia provider be prepared to do?",
+      "stem": "During MAC, a field block fails; severe pain persists, and attempts to deepen sedation repeatedly cause obstruction. What should the anesthesia provider be prepared to do?",
       "options": [
-        "Convert to general anesthesia with a secured airway",
-        "Keep adding propofol until the patient stops moving",
-        "Ask the surgeon to finish quickly under the current plan",
-        "Stop all sedation and let the patient wake fully"
+        "Change the anesthetic plan, including conversion to general anesthesia with a secured airway when needed",
+        "Continue escalating propofol despite recurrent obstruction",
+        "Use neuromuscular blockade without securing the airway",
+        "Ignore pain until the procedure ends"
       ],
       "answer": [
         0
@@ -4822,12 +4822,12 @@
       "id": "SED-198",
       "set": 1,
       "type": "single",
-      "stem": "A surgery center wants to skip the airway exam for a MAC patient. What standard applies?",
+      "stem": "A facility proposes skipping the airway assessment because a patient is scheduled for MAC rather than general anesthesia. What is the key flaw?",
       "options": [
-        "MAC requires the same evaluation and monitoring standards as GA",
-        "MAC requires less evaluation since no airway device is planned",
-        "MAC requires a full evaluation for ASA IV patients and a brief one for others",
-        "MAC requires a focused exam limited to the airway"
+        "MAC requires preanesthetic evaluation and readiness for airway rescue/conversion because depth can change",
+        "Airway assessment is relevant only when intubation is planned",
+        "MAC cannot progress to general anesthesia",
+        "Only the proceduralist needs to assess the airway"
       ],
       "answer": [
         0
@@ -4846,12 +4846,12 @@
       "id": "SED-199",
       "set": 1,
       "type": "single",
-      "stem": "The surgeon requires absolute immobility during shoulder surgery. What capability does GA offer that MAC does not?",
+      "stem": "Absolute immobility is required for a procedure despite adequate analgesia. Which capability can general anesthesia provide that routine MAC cannot safely guarantee?",
       "options": [
-        "Neuromuscular blockade to prevent movement",
-        "Deeper amnesia without any airway device",
-        "Faster recovery than MAC",
-        "Avoidance of all IV drugs"
+        "Controlled immobility including neuromuscular blockade with a secured anesthetic plan when indicated",
+        "Amnesia",
+        "Supplemental oxygen",
+        "Local anesthetic infiltration"
       ],
       "answer": [
         0
@@ -4870,12 +4870,12 @@
       "id": "SED-200",
       "set": 1,
       "type": "single",
-      "stem": "How does nurse-administered moderate sedation differ fundamentally from MAC provided by an anesthesia professional?",
+      "stem": "What fundamentally distinguishes intended moderate sedation from an anesthesia-provider MAC service?",
       "options": [
-        "Moderate sedation should not intentionally render the patient unresponsive",
-        "Moderate sedation requires an anesthesia provider at the bedside for every case",
-        "MAC is limited to minimal sedation",
-        "MAC excludes local anesthesia"
+        "Moderate sedation targets preserved purposeful responsiveness, whereas MAC is a broader anesthesia service prepared for changing depth and rescue/conversion",
+        "MAC is always deeper than moderate sedation",
+        "Moderate sedation requires an anesthesia professional in every case",
+        "MAC excludes local or regional anesthesia"
       ],
       "answer": [
         0
