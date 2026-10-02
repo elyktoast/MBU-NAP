@@ -11195,7 +11195,7 @@
       "id": "PHA-451",
       "set": 1,
       "type": "single",
-      "stem": "A patient's temperature is 35.5 °C at emergence and he is shivering. Which risk is MOST relevant?",
+      "stem": "At emergence, core temperature is 35.5 °C and the patient is shivering. Which complication is most concerning in a patient with limited cardiac reserve?",
       "options": [
         "Increased myocardial oxygen demand",
         "Lower oxygen consumption from cooling",
@@ -11219,7 +11219,7 @@
       "id": "PHA-452",
       "set": 1,
       "type": "single",
-      "stem": "A patient's emergence is delayed and glucose is 280. Which lecture category applies?",
+      "stem": "Delayed emergence is accompanied by a glucose of 280 mg/dL. Which broad cause category does this fit?",
       "options": [
         "Metabolic derangement",
         "Normal emergence",
@@ -11243,7 +11243,7 @@
       "id": "PHA-453",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a seizure disorder and becomes agitated after emergence. Which cause should be ruled out?",
+      "stem": "A patient with seizure disorder becomes agitated after emergence. Which neurologic diagnosis should be ruled out first?",
       "options": [
         "Seizure",
         "Hypothermia",
@@ -11267,7 +11267,7 @@
       "id": "PHA-454",
       "set": 1,
       "type": "single",
-      "stem": "A patient is extubated and O2 is weaned in PACU. Which lecture item confirms readiness for transport?",
+      "stem": "Which finding best supports readiness for transport after extubation and initial recovery?",
       "options": [
         "Stable VS and self-maintained airway",
         "BIS below 40",
@@ -11291,7 +11291,7 @@
       "id": "PHA-455",
       "set": 1,
       "type": "multi",
-      "stem": "A patient's awareness risk is high due to trauma and hemodynamic instability. What measures reduce risk? (Select 3)",
+      "stem": "A trauma patient has high awareness risk because anesthetic depth is intentionally limited by hemodynamic instability. Which THREE measures reduce risk? (Select 3)",
       "options": [
         "Processed EEG monitoring",
         "End-tidal agent monitoring",
@@ -11319,7 +11319,7 @@
       "id": "PHA-456",
       "set": 1,
       "type": "single",
-      "stem": "A patient had awareness during a previous anesthetic. Which strategy is appropriate now?",
+      "stem": "A patient reports prior intraoperative awareness. Which strategy is most appropriate for the current anesthetic?",
       "options": [
         "Use depth monitoring and avoid unnecessary paralysis",
         "Use deeper paralysis to prevent movement",
@@ -11343,7 +11343,7 @@
       "id": "PHA-457",
       "set": 1,
       "type": "single",
-      "stem": "A patient's airway was difficult at induction and the surgeon wants deep extubation. What is the BEST response?",
+      "stem": "A patient had a difficult intubation, but deep extubation is requested for comfort. What is the safer plan?",
       "options": [
         "Explain awake extubation is safer given airway risk",
         "Agree to deep extubation for comfort",
@@ -11367,7 +11367,7 @@
       "id": "PHA-458",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives a large fluid volume and has rising airway pressures near emergence. What is MOST concerning?",
+      "stem": "After large-volume resuscitation, airway pressures rise near emergence. What complication is most concerning?",
       "options": [
         "Airway or pulmonary edema",
         "Residual neuromuscular blockade",
@@ -11391,7 +11391,7 @@
       "id": "PHA-459",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance, you discover the patient's arms are tucked and the IV is not visible. What is the BEST action?",
+      "stem": "Both arms are tucked and the only IV cannot be seen during TIVA. What should be done to reduce delivery risk?",
       "options": [
         "Ensure line patency and consider a second IV",
         "Leave it, since the IV was working at induction",
@@ -11415,7 +11415,7 @@
       "id": "PHA-460",
       "set": 1,
       "type": "single",
-      "stem": "A patient's eyes are not taped during a prone case. What complication is MOST concerning?",
+      "stem": "During a prone case, the eyes were not taped or checked. Which complication is most concerning?",
       "options": [
         "Eye injury from exposure or pressure",
         "Hypothermia from prolonged exposure of the head",
@@ -11439,7 +11439,7 @@
       "id": "PHA-461",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance, the IV infiltrates and the TIVA is interrupted. What is the BEST backup plan?",
+      "stem": "The TIVA IV infiltrates during maintenance. What is the best immediate backup strategy?",
       "options": [
         "Switch to volatile or establish new IV quickly",
         "Give IM ketamine and continue",
@@ -11463,7 +11463,7 @@
       "id": "PHA-462",
       "set": 1,
       "type": "single",
-      "stem": "A patient's ETCO2 is 50 and rising slowly during a long laparoscopic case. What is MOST likely?",
+      "stem": "During prolonged laparoscopy, ETCO2 rises slowly to 50 with stable hemodynamics and temperature. What is the most likely cause?",
       "options": [
         "CO2 absorption from insufflation",
         "Early malignant hyperthermia from sevoflurane",
@@ -11487,7 +11487,7 @@
       "id": "PHA-463",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance, the patient's HR rises after a new infusion of remifentanil is stopped. What is the BEST action?",
+      "stem": "HR rises soon after remifentanil is discontinued. What is the best response?",
       "options": [
         "Provide analgesia to replace remifentanil",
         "Give a neuromuscular blocker",
@@ -11511,7 +11511,7 @@
       "id": "PHA-464",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance, you notice BIS 30 with stable BP and HR. What should you consider?",
+      "stem": "During maintenance, BIS is 30 with otherwise stable physiology. How should this be interpreted?",
       "options": [
         "Possible excessive hypnotic effect in context",
         "Awareness risk is high at this BIS value",
@@ -11535,7 +11535,7 @@
       "id": "PHA-465",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, a patient becomes hypertensive after the ETT is manipulated. What is the MOST likely cause?",
+      "stem": "During emergence, BP rises immediately after ETT manipulation. What is the most likely mechanism?",
       "options": [
         "Sympathetic response to airway stimulation",
         "Hypothermia",
@@ -11559,7 +11559,7 @@
       "id": "PHA-466",
       "set": 1,
       "type": "single",
-      "stem": "A patient in PACU has a TOFR of 0.8 and weak cough. What is the BEST action?",
+      "stem": "In PACU, TOFR is 0.8 with a weak cough. What is the best action?",
       "options": [
         "Treat residual blockade and monitor",
         "Discharge from PACU",
@@ -11583,7 +11583,7 @@
       "id": "PHA-467",
       "set": 1,
       "type": "single",
-      "stem": "A patient is extubated and immediately has vomiting. What is the FIRST step?",
+      "stem": "Vomiting occurs immediately after extubation. What is the first priority?",
       "options": [
         "Position and suction to protect the airway",
         "Give neuromuscular blocker",
@@ -11607,7 +11607,7 @@
       "id": "PHA-468",
       "set": 1,
       "type": "single",
-      "stem": "A patient's HR drops after an oculocardiac reflex during surgery. What is the BEST first step?",
+      "stem": "An oculocardiac reflex causes marked bradycardia during surgery. What is the first intervention?",
       "options": [
         "Ask surgeon to stop traction",
         "Give esmolol to protect against rebound",
@@ -11631,7 +11631,7 @@
       "id": "PHA-469",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, the patient becomes apneic after naloxone wears off. What is MOST likely?",
+      "stem": "Respiratory depression recurs 20 minutes after naloxone. What is the most likely explanation?",
       "options": [
         "Renarcotization from a longer-acting opioid",
         "Malignant hyperthermia",
@@ -11655,7 +11655,7 @@
       "id": "PHA-470",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, a patient's ETCO2 is 55 and he is breathing slowly. What is the BEST action?",
+      "stem": "During emergence, ETCO2 is 55 and respirations are slow. What is the best next step?",
       "options": [
         "Encourage breathing and consider opioid reversal",
         "Give NMB",
@@ -11679,7 +11679,7 @@
       "id": "PHA-471",
       "set": 1,
       "type": "single",
-      "stem": "A patient is emerging and has a distended stomach from mask ventilation. What risk increases?",
+      "stem": "Gastric distention from mask ventilation is present during emergence. Which complication risk is increased?",
       "options": [
         "Regurgitation and aspiration",
         "Hypothermia",
@@ -11703,7 +11703,7 @@
       "id": "PHA-472",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a history of PONV and receives desflurane. At emergence, what should be anticipated?",
+      "stem": "A patient with strong PONV history received a volatile anesthetic. What should be anticipated during emergence?",
       "options": [
         "Higher PONV risk; plan prophylaxis",
         "No added PONV risk",
@@ -11727,7 +11727,7 @@
       "id": "PHA-473",
       "set": 1,
       "type": "single",
-      "stem": "During laparoscopy, SpO2 drifts from 99% to 93% on FiO2 0.5 after insufflation. Peak pressure rose modestly, breath sounds are equal, and ETCO2 is 42. What is the BEST first intervention?",
+      "stem": "After pneumoperitoneum, SpO2 drifts to 93% with equal breath sounds and only a modest rise in airway pressure. What is the best first intervention?",
       "options": [
         "Recruitment maneuver and add PEEP",
         "Raise FiO2 to 1.0 and leave settings unchanged",
@@ -11751,7 +11751,7 @@
       "id": "PHA-474",
       "set": 1,
       "type": "single",
-      "stem": "A patient on FiO2 1.0 has SpO2 97% and a PaO2 of 85 mmHg on ABG. What does this MOST suggest?",
+      "stem": "On FiO2 1.0, SpO2 is 97% but PaO2 is only 85 mmHg. What does this most strongly suggest?",
       "options": [
         "Significant shunt hidden by high FiO2",
         "Normal gas exchange for FiO2 1.0",
@@ -11775,7 +11775,7 @@
       "id": "PHA-475",
       "set": 1,
       "type": "single",
-      "stem": "Twenty minutes after induction with sevoflurane and rocuronium, HR rises from 70 to 110 and BP from 118/70 to 165/95 at skin incision. ETCO2 38, BIS 38. What is the MOST likely cause?",
+      "stem": "At skin incision, HR and BP rise sharply while BIS is 38 and ETCO2 is normal. What anesthetic component is most likely inadequate?",
       "options": [
         "Inadequate analgesia for the incision",
         "Inadequate hypnosis with awareness",
@@ -11799,7 +11799,7 @@
       "id": "PHA-476",
       "set": 1,
       "type": "single",
-      "stem": "Which finding would MOST distinguish hypovolemia from vasodilation as the cause of intraoperative hypotension?",
+      "stem": "Which finding best distinguishes hypovolemia from pure vasodilation as a cause of intraoperative hypotension?",
       "options": [
         "High pulse pressure variation on the arterial line",
         "A heart rate of 95",
@@ -11823,7 +11823,7 @@
       "id": "PHA-477",
       "set": 1,
       "type": "single",
-      "stem": "After cementing during hip arthroplasty, ETCO2 falls, BP drops, and SpO2 dips. Which mechanism links all three?",
+      "stem": "Immediately after cementing, ETCO2, BP, and SpO2 all fall. Which mechanism links these changes?",
       "options": [
         "Embolic obstruction of pulmonary blood flow",
         "Bronchospasm from cement fumes",
@@ -11847,7 +11847,7 @@
       "id": "PHA-478",
       "set": 1,
       "type": "single",
-      "stem": "During MH treatment, why must the volatile be stopped and fresh gas flow increased?",
+      "stem": "During malignant hyperthermia treatment, why are the volatile agent stopped and fresh-gas flow increased?",
       "options": [
         "To remove the trigger and wash volatile from the circuit",
         "To raise PaCO2 and stimulate breathing during treatment",
@@ -11871,7 +11871,7 @@
       "id": "PHA-479",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 rises from 38 to 52 over 20 minutes in a laparoscopic case, with stable HR and temperature. Ventilation increase brings it back to 40. What is the MOST likely cause?",
+      "stem": "During laparoscopy, ETCO2 rises gradually but normalizes after increasing minute ventilation; HR and temperature remain stable. What is the most likely cause?",
       "options": [
         "CO2 absorption from insufflation",
         "Early malignant hyperthermia",
@@ -11895,7 +11895,7 @@
       "id": "PHA-480",
       "set": 1,
       "type": "single",
-      "stem": "Inspired CO2 on the capnogram is 6 mmHg and the baseline does not return to zero. What is the MOST likely cause?",
+      "stem": "Inspired CO2 is 6 mmHg and the capnogram baseline does not return to zero. What is the most likely cause?",
       "options": [
         "Exhausted CO2 absorbent or incompetent valve",
         "Early malignant hyperthermia with rising production",
@@ -11919,7 +11919,7 @@
       "id": "PHA-481",
       "set": 1,
       "type": "single",
-      "stem": "A 70 kg patient received rocuronium 0.6 mg/kg at induction. At 50 minutes, TOF is 3/4, and the surgeon needs 90 more minutes of relaxation. What is the BEST redose?",
+      "stem": "A 70-kg patient has TOF 3/4 and needs 90 more minutes of relaxation. What rocuronium redose is most appropriate?",
       "options": [
         "Rocuronium 7–14 mg, guided by TOF",
         "Rocuronium 42 mg to restart the block",
@@ -11943,7 +11943,7 @@
       "id": "PHA-482",
       "set": 1,
       "type": "single",
-      "stem": "The arms are tucked and TOF is monitored at the orbicularis oculi. It shows 0/4 twitches, but the patient is breathing against the ventilator. What explains this?",
+      "stem": "TOF at the orbicularis oculi is 0/4, yet the patient is breathing against the ventilator. What best explains this discrepancy?",
       "options": [
         "Facial muscles overestimate block compared with the thumb",
         "Diaphragm is more sensitive than facial muscles to blockade",
@@ -11967,7 +11967,7 @@
       "id": "PHA-483",
       "set": 1,
       "type": "single",
-      "stem": "Hgb is 7.6 g/dL, HR 118, MAP 58, and lactate rising despite fluids during ongoing surgical bleeding. What is the BEST action?",
+      "stem": "Hgb is 7.6 g/dL with ongoing bleeding, MAP 58, tachycardia, and rising lactate despite fluids. What is the best action?",
       "options": [
         "Transfuse PRBCs based on the clinical picture",
         "Hold transfusion because Hgb is above 7",
@@ -11991,7 +11991,7 @@
       "id": "PHA-484",
       "set": 1,
       "type": "single",
-      "stem": "During massive transfusion, the patient develops hypotension and a prolonged QT. Which treatment is MOST appropriate?",
+      "stem": "During massive transfusion, hypotension and QT prolongation develop. Which treatment is most appropriate?",
       "options": [
         "Calcium chloride or gluconate",
         "Magnesium sulfate for the QT prolongation",
@@ -12015,7 +12015,7 @@
       "id": "PHA-485",
       "set": 1,
       "type": "single",
-      "stem": "At closure, sevoflurane is off and ETCO2 is 34 on controlled ventilation. The patient has no spontaneous breaths. TOFR is 0.95. What is the BEST next step?",
+      "stem": "At closure, TOFR is 0.95 but the patient remains apneic with ETCO2 34 on controlled ventilation. What is the best next step?",
       "options": [
         "Lower minute ventilation to let CO2 rise",
         "Give more sugammadex",
@@ -12039,7 +12039,7 @@
       "id": "PHA-486",
       "set": 1,
       "type": "single",
-      "stem": "At emergence, TOFR is 0.92, the patient opens eyes to command, and tidal volumes are 450 mL. BP is 170/95 during suctioning. What is the BEST action?",
+      "stem": "TOFR is 0.92, the patient follows commands, and tidal volumes are adequate; BP transiently rises during suctioning. What is the best extubation decision?",
       "options": [
         "Extubate, since readiness criteria are met",
         "Deepen anesthesia and extubate deep",
@@ -12063,7 +12063,7 @@
       "id": "PHA-487",
       "set": 1,
       "type": "single",
-      "stem": "A child is extubated deep. Which condition must be present for deep extubation?",
+      "stem": "For deep extubation in a child, which condition must be present?",
       "options": [
         "Adequate depth to avoid stage 2 and a patent airway",
         "The child is fully awake with a cough",
@@ -12087,7 +12087,7 @@
       "id": "PHA-488",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, stage 2 appears with breath-holding and coughing on the ETT. What should you AVOID?",
+      "stem": "During stage 2 emergence, breath-holding and coughing occur around the ETT. What should be avoided?",
       "options": [
         "Suctioning or manipulating the airway at this moment",
         "Maintaining 100% oxygen through the circuit",
@@ -12111,7 +12111,7 @@
       "id": "PHA-489",
       "set": 1,
       "type": "single",
-      "stem": "A patient becomes apneic 20 minutes after naloxone in PACU. Which drug profile BEST explains this?",
+      "stem": "Apnea recurs after naloxone initially reversed respiratory depression. What pharmacologic mismatch explains this?",
       "options": [
         "The opioid outlasts naloxone's effect",
         "Naloxone causes delayed respiratory depression",
@@ -12135,7 +12135,7 @@
       "id": "PHA-490",
       "set": 1,
       "type": "single",
-      "stem": "A patient was given glycopyrrolate and neostigmine. TOFR is 0.6 at 15 minutes. What is the BEST next step?",
+      "stem": "Fifteen minutes after neostigmine and glycopyrrolate, TOFR remains 0.6. What is the best next step?",
       "options": [
         "Continue ventilation and monitoring, consider sugammadex",
         "Extubate, since neostigmine was already given",
@@ -12159,7 +12159,7 @@
       "id": "PHA-491",
       "set": 1,
       "type": "single",
-      "stem": "A patient is extubated and SpO2 falls. The chest rises but there are no breath sounds. What is MOST likely?",
+      "stem": "After extubation, SpO2 falls and the chest moves without any audible airflow. What is the most likely diagnosis?",
       "options": [
         "Complete laryngospasm with paradoxical chest movement",
         "Normal post-extubation breathing",
@@ -12183,7 +12183,7 @@
       "id": "PHA-492",
       "set": 1,
       "type": "single",
-      "stem": "During emergence after a long case, the patient's temperature is 34.9 °C and TOFR is 0.7. Which factor explains both delayed emergence and slow NMB recovery?",
+      "stem": "At emergence, temperature is 34.9 °C and TOFR is 0.7. What single factor can explain both delayed awakening and prolonged blockade?",
       "options": [
         "Hypothermia slows drug metabolism",
         "Hyperthermia speeds drug metabolism",
@@ -12207,7 +12207,7 @@
       "id": "PHA-493",
       "set": 1,
       "type": "single",
-      "stem": "A patient is slow to emerge after a long TIVA with propofol and remifentanil. Which drug is MOST likely responsible?",
+      "stem": "After prolonged propofol-remifentanil TIVA, emergence is slow. Which drug is more likely responsible and why?",
       "options": [
         "Propofol due to prolonged CSHT",
         "Remifentanil due to long CSHT",
@@ -12231,7 +12231,7 @@
       "id": "PHA-494",
       "set": 1,
       "type": "single",
-      "stem": "A patient is agitated in PACU and has a distended bladder and TOFR 0.8. Which cause should be addressed FIRST?",
+      "stem": "A PACU patient is agitated with a distended bladder and TOFR 0.8. Which problem should be addressed first?",
       "options": [
         "Residual neuromuscular blockade",
         "Distended bladder as a noxious stimulus",
@@ -12255,7 +12255,7 @@
       "id": "PHA-495",
       "set": 1,
       "type": "single",
-      "stem": "During induction, the patient loses consciousness, but the surgeon begins positioning before the airway is secure. Which risk increases?",
+      "stem": "The patient loses consciousness during induction and is repositioned before the airway is secured. Which risk increases most?",
       "options": [
         "Airway compromise and hemodynamic instability",
         "Faster emergence",
@@ -12279,7 +12279,7 @@
       "id": "PHA-496",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance, the vaporizer is empty and you switch to TIVA. What must you confirm immediately?",
+      "stem": "The vaporizer is empty and anesthesia is switched to TIVA. What must be confirmed immediately?",
       "options": [
         "IV patency and pump programming",
         "Surgical instrument count before continuing the case",
@@ -12303,7 +12303,7 @@
       "id": "PHA-497",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance, ETCO2 falls from 38 to 25 while BP is stable. Which cause is MOST likely?",
+      "stem": "ETCO2 falls from 38 to 25 while BP remains stable and the waveform is normal. What is the most likely cause?",
       "options": [
         "Increased minute ventilation",
         "Pulmonary embolism with rising dead space",
@@ -12327,7 +12327,7 @@
       "id": "PHA-498",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, the patient's BP falls and HR rises after stopping volatile. What is MOST likely?",
+      "stem": "After volatile is discontinued, BP falls and HR rises during emergence. What should be suspected?",
       "options": [
         "Hypovolemia unmasked as anesthetic depth decreases",
         "Normal emergence response",
@@ -12351,7 +12351,7 @@
       "id": "PHA-499",
       "set": 1,
       "type": "single",
-      "stem": "A patient is extubated and becomes hypoxemic with wheeze. What is the MOST likely cause?",
+      "stem": "After extubation, hypoxemia develops with diffuse wheezing. What is the most likely cause?",
       "options": [
         "Bronchospasm after extubation",
         "Laryngospasm without wheeze",
@@ -12375,7 +12375,7 @@
       "id": "PHA-500",
       "set": 1,
       "type": "single",
-      "stem": "At emergence, TOFR is 0.95 but tidal volumes are small and the patient is somnolent. What is MOST likely?",
+      "stem": "At emergence, TOFR is 0.95 but the patient is somnolent with small tidal volumes. What is the most likely explanation?",
       "options": [
         "Residual anesthetic or opioid effect",
         "Residual neuromuscular blockade",
