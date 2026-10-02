@@ -2520,7 +2520,7 @@
       "id": "PHA-102",
       "set": 1,
       "type": "single",
-      "stem": "After difficult laryngoscopy, a new chipped incisor and lip laceration are noted. Which category of post-induction complication occurred?",
+      "stem": "After a difficult laryngoscopy requiring repeated blade repositioning, a previously intact incisor is chipped and the lip is lacerated. Which complication category best captures the mechanism?",
       "options": [
         "Airway-instrumentation trauma",
         "Bronchospasm",
@@ -2644,7 +2644,7 @@
       "id": "PHA-107",
       "set": 1,
       "type": "single",
-      "stem": "Postoperatively, a patient clearly recalls intraoperative voices and the sensation of the ETT. Which memory phenomenon is present?",
+      "stem": "In PACU, a patient accurately recounts intraoperative voices and the sensation of the endotracheal tube during a period of intended general anesthesia. Which memory phenomenon is present?",
       "options": [
         "Explicit intraoperative recall",
         "Implicit memory",
@@ -2668,7 +2668,7 @@
       "id": "PHA-108",
       "set": 1,
       "type": "single",
-      "stem": "A patient denies conscious recall of surgery but later has an emotional response to a phrase repeatedly spoken intraoperatively. Which phenomenon best fits?",
+      "stem": "A patient has no conscious recollection of surgery but later shows a reproducible emotional response to a phrase repeatedly spoken intraoperatively. Which memory phenomenon best fits?",
       "options": [
         "Implicit memory",
         "Explicit recall",
@@ -2932,7 +2932,7 @@
       "id": "PHA-118",
       "set": 1,
       "type": "single",
-      "stem": "Before RSI, the leader states Plan A, Plan B, each person's role, and the trigger for switching plans. Which team property is being created?",
+      "stem": "Before RSI, the leader states the primary airway plan, rescue plan, each person's role, and the exact trigger for switching strategies. Which human-factors benefit is this briefing designed to create?",
       "options": [
         "A shared mental model",
         "A medication order set",
@@ -3127,7 +3127,7 @@
       "id": "PHA-126",
       "set": 1,
       "type": "single",
-      "stem": "The airway is secured, sustained ETCO2 is present, and post-induction hemodynamics are stabilized. Which phase of GA has been entered?",
+      "stem": "The airway is secured, sustained capnography confirms ventilation, hemodynamics are stabilized after induction, and surgery is beginning. Which anesthetic phase has now been entered?",
       "options": [
         "Maintenance",
         "Induction",
@@ -3228,7 +3228,7 @@
       "id": "PHA-130",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 rises. The provider identifies reduced minute ventilation, increases ventilation, confirms ETCO2 falls, then anticipates pneumoperitoneum and documents the change. Which reasoning cycle is demonstrated?",
+      "stem": "ETCO2 rises after pneumoperitoneum. The provider identifies reduced effective ventilation, increases minute ventilation, confirms ETCO2 falls, anticipates further CO2 absorption, and records the intervention. Which reasoning cycle is demonstrated?",
       "options": [
         "Assess, interpret, intervene, reassess, anticipate, and document",
         "Airway, breathing, circulation only",
@@ -3328,12 +3328,12 @@
       "id": "PHA-134",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance, SpO2 suddenly falls to 88%. Which order should guide initial troubleshooting?",
+      "stem": "During otherwise stable maintenance, SpO2 abruptly falls from 99% to 88%. Before assuming monitor or machine failure, which troubleshooting priority should guide the initial assessment?",
       "options": [
         "Patient, then airway, then machine",
-        "Check the machine first, then the patient",
+        "Machine first, then patient",
         "Call for help before any assessment",
-        "Change the pulse oximeter probe first"
+        "Replace the pulse-oximeter probe first"
       ],
       "answer": [
         0
@@ -3558,7 +3558,7 @@
       "id": "PHA-143",
       "set": 1,
       "type": "single",
-      "stem": "Before vascular dissection begins, blood is immediately available and a longer-acting analgesic is timed for expected closure. Which maintenance skill is being demonstrated?",
+      "stem": "Before a high-risk vascular dissection begins, the team confirms blood is immediately available; later, longer-acting analgesia is timed to expected closure rather than given reactively. Which maintenance skill links both decisions?",
       "options": [
         "Anticipation",
         "Documentation",
@@ -3742,12 +3742,12 @@
       "id": "PHA-150",
       "set": 1,
       "type": "single",
-      "stem": "During the surgical time-out, blood availability for a high-risk case cannot be confirmed. The surgeon asks to incise while it is being checked. What does a hard stop require?",
+      "stem": "During the time-out for a case with major hemorrhage risk, required blood availability cannot be confirmed. The surgeon asks to begin incision while the issue is checked. What does treating the time-out as a hard stop require?",
       "options": [
-        "Resolve the required item before incision proceeds",
+        "Resolve the required item before incision",
         "Proceed if the surgeon accepts the risk",
         "Proceed if anesthesia documents the concern",
-        "Complete the time-out after incision"
+        "Finish the time-out after incision"
       ],
       "answer": [
         0
