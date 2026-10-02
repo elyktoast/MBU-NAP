@@ -3813,12 +3813,12 @@
       "id": "PRE-157",
       "set": 1,
       "type": "single",
-      "stem": "Four patients report arrhythmia histories. Which one is potentially malignant and warrants further evaluation before elective surgery?",
+      "stem": "Which arrhythmia history should raise the greatest concern before elective surgery?",
       "options": [
-        "SVT on flecainide with sudden death history",
-        "Occasional PACs found on a routine ECG",
-        "Rate-controlled atrial fibrillation at 72 on metoprolol",
-        "Isolated unifocal PVCs without symptoms"
+        "SVT requiring flecainide plus a family history of sudden death",
+        "Occasional asymptomatic PACs",
+        "Rate-controlled atrial fibrillation at 72 beats/min",
+        "Isolated asymptomatic unifocal PVCs"
       ],
       "answer": [
         0
@@ -3837,12 +3837,12 @@
       "id": "PRE-158",
       "set": 1,
       "type": "single",
-      "stem": "A 62-year-old reports palpitations that started 2 days ago, and his ECG shows atrial fibrillation at 132. He is scheduled for an elective knee replacement. What is the BEST plan?",
+      "stem": "A patient has new palpitations and atrial fibrillation with ventricular rate 132 two days before elective knee replacement. What should happen before surgery?",
       "options": [
-        "Postpone for a cardiac workup of the new arrhythmia",
-        "Proceed with rate control in the OR",
-        "Proceed, since AF is a benign rhythm",
-        "Proceed after one dose of metoprolol in preop"
+        "Evaluate the new arrhythmia before proceeding",
+        "Proceed and manage the rate intraoperatively",
+        "Proceed because atrial fibrillation is always benign",
+        "Give one dose of metoprolol and proceed"
       ],
       "answer": [
         0
@@ -3861,14 +3861,14 @@
       "id": "PRE-159",
       "set": 1,
       "type": "multi",
-      "stem": "What must you know about a patient's CIED before surgery? (Select 4)",
+      "stem": "Which four CIED details most directly determine perioperative management? (Select 4)",
       "options": [
         "Indication for implantation",
         "Pacemaker dependence and underlying rhythm",
         "Date of last interrogation",
         "Device type and current programming",
-        "Manufacturer and model number only",
-        "Size of the generator"
+        "Manufacturer and model number alone",
+        "Generator size"
       ],
       "answer": [
         0,
@@ -3890,12 +3890,12 @@
       "id": "PRE-160",
       "set": 1,
       "type": "single",
-      "stem": "During a case with monopolar cautery near a pacemaker, the device inhibits and the HR falls to 30. You need to place a magnet. What should you have known before the case?",
+      "stem": "Monopolar cautery inhibits a pacemaker and the heart rate falls to 30. Which preoperative information would have enabled the fastest appropriate response?",
       "options": [
-        "Magnet location and device response",
-        "The device's battery manufacturer",
-        "The device's battery voltage",
-        "The implant surgeon's name"
+        "The magnet location and the device's magnet response",
+        "Battery manufacturer",
+        "Battery voltage",
+        "Implanting surgeon's name"
       ],
       "answer": [
         0
@@ -3914,12 +3914,12 @@
       "id": "PRE-161",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a pacemaker is having surgery near the generator with monopolar cautery. Why is this a concern?",
+      "stem": "Why is monopolar cautery near a pacemaker generator clinically important?",
       "options": [
-        "EMI can inhibit or disrupt device function",
-        "Cautery improves device sensing",
-        "Cautery turns off the device permanently",
-        "EMI affects ICDs but not pacemakers"
+        "Electromagnetic interference can inhibit pacing or alter device function",
+        "Cautery improves sensing accuracy",
+        "Cautery permanently turns the device off",
+        "Electromagnetic interference affects ICDs but not pacemakers"
       ],
       "answer": [
         0
@@ -3938,7 +3938,7 @@
       "id": "PRE-162",
       "set": 1,
       "type": "single",
-      "stem": "Which pacemaker mode is the most common backup mode and often used perioperatively?",
+      "stem": "Which pacing mode is commonly used as a ventricular backup because it senses and paces the ventricle and inhibits output when intrinsic activity is present?",
       "options": [
         "VVI",
         "AAI",
@@ -3962,12 +3962,12 @@
       "id": "PRE-163",
       "set": 1,
       "type": "single",
-      "stem": "A patient with sick sinus syndrome and intact AV conduction has a pacemaker. Later he develops complete heart block. Which pacing mode would now FAIL to maintain ventricular rate?",
+      "stem": "A patient with AAI pacing later develops complete AV block. Why can the existing mode fail?",
       "options": [
-        "AAI",
-        "DDD",
-        "VVI",
-        "VOO"
+        "AAI depends on intact AV conduction to activate the ventricles",
+        "AAI paces the ventricle but cannot sense it",
+        "AAI becomes asynchronous in complete block",
+        "AAI suppresses all intrinsic ventricular activity"
       ],
       "answer": [
         0
@@ -3986,11 +3986,11 @@
       "id": "PRE-164",
       "set": 1,
       "type": "single",
-      "stem": "A pacemaker-dependent patient is having a laparotomy with monopolar cautery near the abdomen. Which mode is used temporarily to prevent EMI from inhibiting pacing?",
+      "stem": "A pacemaker-dependent patient will undergo surgery with substantial monopolar cautery. Which temporary pacing strategy avoids inhibition from sensed EMI?",
       "options": [
-        "VOO (asynchronous)",
-        "VVI",
-        "AAI",
+        "Asynchronous ventricular pacing such as VOO",
+        "VVI sensing",
+        "AAI pacing",
         "DDD with rate response"
       ],
       "answer": [
@@ -4010,7 +4010,7 @@
       "id": "PRE-165",
       "set": 1,
       "type": "single",
-      "stem": "You place a magnet over a dual-chamber pacemaker in a pacemaker-dependent patient. The rhythm changes to fixed-rate pacing of both chambers. Which mode is this?",
+      "stem": "A magnet causes a dual-chamber pacemaker to pace atrium and ventricle at a fixed rate regardless of sensed activity. Which mode is being produced?",
       "options": [
         "DOO",
         "VOO",
@@ -4034,7 +4034,7 @@
       "id": "PRE-166",
       "set": 1,
       "type": "single",
-      "stem": "A patient with complete heart block has a dual-chamber pacemaker that senses the atrium and paces the ventricle after each P wave. Which mode preserves this AV synchrony?",
+      "stem": "A patient with complete heart block has a device that senses atrial activity and coordinates ventricular pacing to preserve AV synchrony. Which mode best accomplishes this?",
       "options": [
         "DDD",
         "VVI",
@@ -4058,7 +4058,7 @@
       "id": "PRE-167",
       "set": 1,
       "type": "single",
-      "stem": "Which mode senses both atrium and ventricle but paces the ventricle only?",
+      "stem": "Which mode senses both chambers but delivers pacing only to the ventricle?",
       "options": [
         "VDD",
         "DDD",
@@ -4082,12 +4082,12 @@
       "id": "PRE-168",
       "set": 1,
       "type": "single",
-      "stem": "A patient's pacemaker is set to DDDR. During exercise his paced rate rises from 70 to 110. What does the \"R\" add?",
+      "stem": "A DDDR pacemaker increases the paced rate during activity. What does the final 'R' indicate?",
       "options": [
-        "Rate response that increases HR with activity",
-        "Reverse pacing from ventricle to atrium",
-        "Rate reduction during sleep",
-        "Resistance to EMI"
+        "Rate-responsive pacing",
+        "Reverse ventricular-to-atrial pacing",
+        "Automatic rate reduction during sleep only",
+        "Resistance to electromagnetic interference"
       ],
       "answer": [
         0
@@ -4106,7 +4106,7 @@
       "id": "PRE-169",
       "set": 1,
       "type": "multi",
-      "stem": "Which tachyarrhythmia therapies are provided by an ICD? (Select 3)",
+      "stem": "Which three therapies can an ICD deliver for tachyarrhythmias? (Select 3)",
       "options": [
         "Anti-tachycardia pacing",
         "Cardioversion",
@@ -4134,14 +4134,14 @@
       "id": "PRE-170",
       "set": 1,
       "type": "multi",
-      "stem": "Which facts about an ICD must the anesthesia provider know? (Select 2)",
+      "stem": "Which two ICD-specific facts most directly affect the intraoperative plan? (Select 2)",
       "options": [
         "Whether the patient is pacemaker-dependent",
         "Whether tachy therapies are active or suspended",
-        "The name of the hospital where it was implanted",
-        "The generator's implant side",
-        "The date the leads were placed",
-        "The manufacturer's warranty status"
+        "Hospital of implantation",
+        "Generator side alone",
+        "Lead implantation date alone",
+        "Warranty status"
       ],
       "answer": [
         0,
@@ -4161,12 +4161,12 @@
       "id": "PRE-171",
       "set": 1,
       "type": "single",
-      "stem": "A patient with an ICD cannot say why it was placed or when the battery was changed. What do the notes suggest?",
+      "stem": "A patient with an ICD cannot explain why it was implanted and has no recent device records. What is the safest next step?",
       "options": [
-        "Possible noncompliance; obtain device records",
-        "No concern if the device is working",
-        "Proceed with magnet placement without records",
-        "Assume the device is a pacemaker"
+        "Obtain device records and interrogation information",
+        "Assume the device is functioning normally",
+        "Apply a magnet and proceed without records",
+        "Assume the device is only a pacemaker"
       ],
       "answer": [
         0
@@ -4185,11 +4185,11 @@
       "id": "PRE-172",
       "set": 1,
       "type": "single",
-      "stem": "A patient has an ICD and you review the interrogation report. Which bradycardia pacing modes are typically programmed in ICDs?",
+      "stem": "Which set contains standard bradycardia pacing modes that may be programmed in an ICD?",
       "options": [
         "VVI, DDD, and AAI",
         "VOO, DOO, and AOO",
-        "VDD, DDDR, and AAI",
+        "VDD, DDDR, and AAI only",
         "VVI, VOO, and DOO"
       ],
       "answer": [
@@ -4209,12 +4209,12 @@
       "id": "PRE-173",
       "set": 1,
       "type": "single",
-      "stem": "A pacemaker's lower rate is 60 and an ICD's VT detection rate is 170. During surgery, the HR rises to 175 from sinus tachycardia. Why does knowing these settings matter?",
+      "stem": "An ICD detects ventricular tachycardia at 170 beats/min, but the patient develops sinus tachycardia to 175 during surgery. Why does that programmed threshold matter?",
       "options": [
-        "Sinus tachycardia could trigger a shock",
-        "Knowing the rates determines the ETT size",
-        "The lower rate predicts PONV",
-        "The settings matter after surgery"
+        "Sinus tachycardia may be misclassified and trigger inappropriate therapy",
+        "It determines endotracheal tube size",
+        "It predicts postoperative nausea",
+        "It matters only after surgery"
       ],
       "answer": [
         0
@@ -4233,12 +4233,12 @@
       "id": "PRE-174",
       "set": 1,
       "type": "single",
-      "stem": "A patient's ICD was last interrogated 3 years ago, and he reports two shocks last month. Why is the interrogation date important?",
+      "stem": "An ICD was last interrogated 3 years ago and delivered two shocks last month. Which concern should take priority?",
       "options": [
-        "It confirms current function and settings",
-        "It determines antibiotic timing",
-        "It predicts the surgical duration",
-        "It matters for pacemakers, not ICDs"
+        "Current function, settings, and cause of recent therapies need reassessment",
+        "Antibiotic timing",
+        "Expected surgical duration",
+        "Interrogation matters only for pacemakers"
       ],
       "answer": [
         0
@@ -4257,12 +4257,12 @@
       "id": "PRE-175",
       "set": 1,
       "type": "single",
-      "stem": "A patient with an ICD is having surgery with monopolar cautery above the umbilicus. Which question is specific to ICDs?",
+      "stem": "An ICD patient will undergo monopolar cautery above the umbilicus. Which management issue is unique to the defibrillator function?",
       "options": [
-        "Can tachy therapies be suspended?",
-        "Is the device atrial-pacing?",
-        "Is the device programmed in a rate-responsive mode?",
-        "Who manufactured the leads?"
+        "Whether tachyarrhythmia therapies should be suspended",
+        "Whether atrial pacing is enabled",
+        "Whether rate response is active",
+        "Who manufactured the leads"
       ],
       "answer": [
         0
@@ -4281,12 +4281,12 @@
       "id": "PRE-176",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a CIED is having a hand procedure without cautery. Which question is LEAST relevant?",
+      "stem": "For a CIED patient having a hand procedure without cautery, which issue is least relevant to EMI planning?",
       "options": [
-        "Is the surgical site near the pulse generator?",
-        "Is the patient pacemaker dependent for every beat?",
-        "When was the last interrogation?",
-        "What is the indication for the device?"
+        "Proximity of the surgical site to the pulse generator",
+        "Pacemaker dependence",
+        "Date of last interrogation",
+        "Reason for device implantation"
       ],
       "answer": [
         0
@@ -4305,12 +4305,12 @@
       "id": "PRE-177",
       "set": 1,
       "type": "single",
-      "stem": "Which question MOST helps plan for EMI during surgery?",
+      "stem": "Which surgical detail most directly predicts the need for a CIED electromagnetic-interference plan?",
       "options": [
-        "Will monopolar cautery be used?",
-        "What is the patient's EF?",
-        "Is the patient taking dual antiplatelet therapy?",
-        "What is the patient's BMI?"
+        "Use of monopolar cautery",
+        "Left ventricular ejection fraction",
+        "Dual antiplatelet therapy",
+        "Body mass index"
       ],
       "answer": [
         0
@@ -4329,7 +4329,7 @@
       "id": "PRE-178",
       "set": 1,
       "type": "single",
-      "stem": "A preop clinic sees four patients with CIEDs this week. Which type of device is MOST likely to be the most common?",
+      "stem": "Which CIED is most commonly encountered in routine perioperative practice?",
       "options": [
         "Pacemaker",
         "ICD",
@@ -4353,12 +4353,12 @@
       "id": "PRE-179",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old with COPD has spirometry showing an FEV1/FVC of 0.55. What does this indicate for anesthesia?",
+      "stem": "Spirometry shows FEV1/FVC 0.55 in a patient with COPD. Which anesthetic implication follows most directly?",
       "options": [
-        "Obstruction with low reserve and bronchospasm risk",
-        "Restriction with preserved reserve",
-        "Normal flow with small lung volumes",
-        "Fully reversible obstruction with no added risk"
+        "Obstructive physiology with limited reserve and increased bronchospasm risk",
+        "Restrictive physiology with preserved reserve",
+        "Normal airflow with reduced lung volumes only",
+        "Fully reversible obstruction without added anesthetic risk"
       ],
       "answer": [
         0
@@ -4377,12 +4377,12 @@
       "id": "PRE-180",
       "set": 1,
       "type": "single",
-      "stem": "A COPD patient's room-air ABG is pH 7.37, PaCO2 52, PaO2 62, HCO3 30. He feels at his baseline. How should you interpret this?",
+      "stem": "A COPD patient's baseline ABG is pH 7.37, PaCO2 52, PaO2 62, HCO3 30. Which interpretation best fits the compensated pattern?",
       "options": [
-        "Chronic compensated hypercarbia with baseline hypoxemia",
-        "Acute respiratory acidosis needing intubation",
+        "Chronic hypercapnia with metabolic compensation and baseline hypoxemia",
+        "Acute respiratory acidosis requiring immediate intubation",
         "Metabolic acidosis with respiratory compensation",
-        "A normal ABG for his age"
+        "Normal gas exchange for age"
       ],
       "answer": [
         0
@@ -4401,12 +4401,12 @@
       "id": "PRE-181",
       "set": 1,
       "type": "single",
-      "stem": "A COPD patient's chest X-ray is reviewed before surgery. Which findings would be typical of his disease?",
+      "stem": "Which chest-radiograph pattern is most compatible with advanced COPD rather than cardiogenic pulmonary edema?",
       "options": [
-        "Bullae, hyperlucency, or effusions",
+        "Hyperlucency and bullous change",
         "Kerley B lines and cephalization",
-        "A boot-shaped heart",
-        "A deep sulcus sign of pneumothorax"
+        "Boot-shaped heart",
+        "Deep sulcus sign alone"
       ],
       "answer": [
         0
@@ -4425,12 +4425,12 @@
       "id": "PRE-182",
       "set": 1,
       "type": "single",
-      "stem": "A COPD patient is wheezing in preop, and his last inhaler dose was 18 hours ago. What is the BEST step before induction?",
+      "stem": "A COPD patient is actively wheezing in preop and has not used a bronchodilator since yesterday. What should occur before induction?",
       "options": [
-        "Give a bronchodilator aerosol treatment",
-        "Proceed and treat the wheeze after intubation",
-        "Delay 6 weeks for pulmonary rehabilitation",
-        "Deepen induction with volatile to bronchodilate"
+        "Treat bronchospasm with inhaled bronchodilator therapy",
+        "Proceed and treat only after intubation",
+        "Delay all surgery for six weeks",
+        "Rely on volatile anesthetic after induction as the first treatment"
       ],
       "answer": [
         0
@@ -4449,14 +4449,14 @@
       "id": "PRE-183",
       "set": 1,
       "type": "multi",
-      "stem": "Which information about inhalers should you obtain? (Select 3)",
+      "stem": "Which three inhaler details are most useful for judging pulmonary control before surgery? (Select 3)",
       "options": [
-        "Which inhalers are used",
+        "Which inhalers are prescribed",
         "How often they are used",
         "When the last dose was taken",
-        "Which spacer device is used",
-        "Whether the inhaler is generic",
-        "The inhaler's expiration date"
+        "Spacer brand",
+        "Generic versus brand name",
+        "Expiration date"
       ],
       "answer": [
         0,
@@ -4477,10 +4477,10 @@
       "id": "PRE-184",
       "set": 1,
       "type": "single",
-      "stem": "A 24-year-old's wheezing resolves completely after albuterol. Which condition does this BEST fit?",
+      "stem": "Wheezing resolves completely after albuterol. Which diagnosis is most consistent with that reversible airflow limitation?",
       "options": [
-        "Asthma, with reversible airflow obstruction",
-        "COPD, with irreversible airway destruction",
+        "Asthma",
+        "COPD",
         "Restrictive lung disease",
         "Pulmonary vascular disease"
       ],
@@ -4501,10 +4501,10 @@
       "id": "PRE-185",
       "set": 1,
       "type": "multi",
-      "stem": "A 30-year-old with asthma is scheduled for surgery. Which history items are known asthma triggers? (Select 4)",
+      "stem": "Which four factors are recognized asthma triggers and therefore relevant to preoperative control? (Select 4)",
       "options": [
         "Exercise",
-        "Respiratory infections",
+        "Respiratory infection",
         "Emotional stress",
         "Allergens",
         "Warm humidified air",
@@ -4530,12 +4530,12 @@
       "id": "PRE-186",
       "set": 1,
       "type": "single",
-      "stem": "A 28-year-old with asthma uses fluticasone and albuterol. What should she do with these before surgery?",
+      "stem": "A patient with asthma uses inhaled fluticasone and albuterol. What is the best morning-of-surgery medication plan?",
       "options": [
-        "Continue them through the morning of surgery",
-        "Stop them 24 hours before surgery",
-        "Hold the inhaled steroid the morning of surgery",
-        "Start oral steroids the day of surgery"
+        "Continue both prescribed inhalers",
+        "Stop both 24 hours before surgery",
+        "Hold the inhaled steroid only",
+        "Replace inhalers with oral steroids on the day of surgery"
       ],
       "answer": [
         0
@@ -4554,12 +4554,12 @@
       "id": "PRE-187",
       "set": 1,
       "type": "single",
-      "stem": "An asthmatic reports a prednisone taper last month. Which issue should you consider?",
+      "stem": "A patient completed a prednisone taper last month. Which perioperative issue should be considered if exposure was sufficient to suppress the HPA axis?",
       "options": [
-        "Possible HPA axis suppression and stress-dose steroids",
-        "Increased MAC from chronic steroid use",
-        "Prolonged neuromuscular block from steroids",
-        "Lower glucose from steroid withdrawal during fasting"
+        "Need for perioperative steroid supplementation",
+        "Higher MAC requirement",
+        "Prolonged neuromuscular blockade",
+        "Hypoglycemia from steroid withdrawal"
       ],
       "answer": [
         0
@@ -4578,12 +4578,12 @@
       "id": "PRE-188",
       "set": 1,
       "type": "single",
-      "stem": "A patient with asthma has bronchospasm triggered by stress, and she is very anxious in preop. Why might an anxiolytic be part of her asthma plan?",
+      "stem": "A patient's asthma is strongly stress-triggered and she is very anxious before surgery. Why may anxiolysis help reduce respiratory risk?",
       "options": [
-        "Stress triggers bronchospasm",
-        "Anxiolytics are bronchodilators",
-        "Anxiolytics replace inhalers",
-        "Anxiolytics prevent PONV"
+        "Emotional stress can precipitate bronchospasm",
+        "Anxiolytics directly bronchodilate",
+        "Anxiolytics replace maintenance inhalers",
+        "Anxiolytics prevent aspiration"
       ],
       "answer": [
         0
@@ -4602,9 +4602,9 @@
       "id": "PRE-189",
       "set": 1,
       "type": "single",
-      "stem": "How long should elective adult surgery be delayed after a URI?",
+      "stem": "An adult still has residual cough after a recent URI and elective surgery is planned. Which interval is recommended by the lecture to allow airway hyperreactivity to subside?",
       "options": [
-        "6 weeks",
+        "About 6 weeks",
         "1 week",
         "2 weeks",
         "3 months"
@@ -4626,12 +4626,12 @@
       "id": "PRE-190",
       "set": 1,
       "type": "single",
-      "stem": "A 4-year-old has clear rhinorrhea, no fever, and normal activity on the day of ear tube placement. What is the BEST plan?",
+      "stem": "A 4-year-old has mild clear rhinorrhea, no fever, and normal activity before ear tubes. Which distinction makes proceeding more reasonable than in an adult with an active URI?",
       "options": [
-        "Proceed, since he is afebrile and mildly symptomatic",
-        "Delay 6 weeks, as recommended for adults with URI",
-        "Delay 2 weeks and reassess",
-        "Proceed after a clear chest X-ray"
+        "Mild afebrile pediatric URI may be managed case by case rather than automatically delayed 6 weeks",
+        "Children do not develop airway hyperreactivity",
+        "A chest radiograph excludes anesthetic risk",
+        "All pediatric URIs are lower risk than adult URIs"
       ],
       "answer": [
         0
@@ -4650,12 +4650,12 @@
       "id": "PRE-191",
       "set": 1,
       "type": "single",
-      "stem": "Why is a 6-week delay after URI often not feasible in children?",
+      "stem": "Why is a fixed 6-week postponement after every URI often impractical in children?",
       "options": [
-        "Children get frequent URIs",
-        "Children do not have airway hyperreactivity",
-        "Children require GA for all procedures",
-        "Children's URIs rarely affect anesthesia"
+        "Young children experience frequent recurrent URIs",
+        "Children do not develop airway hyperreactivity",
+        "Children always require general anesthesia",
+        "Pediatric URIs do not affect airway risk"
       ],
       "answer": [
         0
@@ -4674,14 +4674,14 @@
       "id": "PRE-192",
       "set": 1,
       "type": "multi",
-      "stem": "A 58-year-old with a BMI of 41 snores loudly and is scheduled for a hernia repair. Which pulmonary screening steps apply? (Select 3)",
+      "stem": "Which three assessments belong in routine pulmonary screening for an obese patient who snores? (Select 3)",
       "options": [
         "STOP-BANG screening",
-        "Asking about diagnosed OSA and CPAP use",
-        "Auscultating heart and lungs",
-        "Peak flow testing in all patients",
+        "History of diagnosed OSA and CPAP use",
+        "Heart and lung auscultation",
+        "Peak flow in every patient",
         "Chest CT in all smokers",
-        "Arterial blood gas in every patient"
+        "ABG in every patient"
       ],
       "answer": [
         0,
@@ -4702,7 +4702,7 @@
       "id": "PRE-193",
       "set": 1,
       "type": "single",
-      "stem": "A 54-year-old man snores loudly, is tired during the day, has hypertension, a BMI of 33, and a neck circumference of 42 cm. No one has observed apneas. What is his STOP-BANG score?",
+      "stem": "A 54-year-old man snores, is tired, has hypertension, BMI 33, neck circumference 42 cm, and is male. No apnea has been observed. What is the STOP-BANG score?",
       "options": [
         "6",
         "4",
@@ -4726,12 +4726,12 @@
       "id": "PRE-194",
       "set": 1,
       "type": "single",
-      "stem": "A 48-year-old woman has a BMI of 37, a neck circumference of 38 cm, and treated hypertension. Which STOP-BANG thresholds does she meet?",
+      "stem": "A 48-year-old woman has BMI 37, neck circumference 38 cm, and hypertension. Which STOP-BANG criteria are positive?",
       "options": [
-        "BMI and pressure",
+        "BMI and blood pressure",
         "BMI, age, and neck circumference",
-        "Age, neck circumference, and pressure",
-        "BMI, neck circumference, and pressure"
+        "Age, neck circumference, and blood pressure",
+        "BMI, neck circumference, and blood pressure"
       ],
       "answer": [
         0
@@ -4750,7 +4750,7 @@
       "id": "PRE-195",
       "set": 1,
       "type": "single",
-      "stem": "A 54-year-old man with snoring, treated HTN, and BMI 32 is screened. What is his STOP-BANG score?",
+      "stem": "A 54-year-old man snores, has treated hypertension, BMI 32, and is male. What is his STOP-BANG score?",
       "options": [
         "4",
         "3",
@@ -4774,12 +4774,12 @@
       "id": "PRE-196",
       "set": 1,
       "type": "single",
-      "stem": "A patient scores 4 on STOP-BANG. How should this shape your plan?",
+      "stem": "A STOP-BANG score of 4 should be interpreted how for perioperative planning?",
       "options": [
-        "Intermediate risk; plan for possible OSA with caution",
-        "Low risk; no changes needed",
-        "High risk; cancel elective surgery",
-        "No interpretation possible without a sleep study"
+        "Intermediate OSA risk requiring appropriate precautions",
+        "Low risk requiring no change",
+        "High risk requiring automatic cancellation",
+        "Uninterpretable without polysomnography"
       ],
       "answer": [
         0
@@ -4798,12 +4798,12 @@
       "id": "PRE-197",
       "set": 1,
       "type": "single",
-      "stem": "A 62-year-old woman who snores, is tired, has observed apnea, HTN, and BMI 37. What is her STOP-BANG risk?",
+      "stem": "A 62-year-old woman snores, is tired, has witnessed apnea, hypertension, and BMI 37. What STOP-BANG risk category does this produce?",
       "options": [
-        "High (score 6)",
-        "Intermediate (score 4)",
-        "Low (score 2)",
-        "High (score 8)"
+        "High risk with a score of 6",
+        "Intermediate risk with a score of 4",
+        "Low risk with a score of 2",
+        "High risk only if the score is 8"
       ],
       "answer": [
         0
@@ -4822,12 +4822,12 @@
       "id": "PRE-198",
       "set": 1,
       "type": "single",
-      "stem": "A thin 35-year-old woman who does not snore has a STOP-BANG of 1 (tiredness). How should you classify her?",
+      "stem": "A 35-year-old thin woman has only daytime tiredness as a positive STOP-BANG item. How should she be classified?",
       "options": [
-        "Low risk, since 0–2 is low risk",
+        "Low risk",
         "Intermediate risk",
         "High risk",
-        "Unable to classify without a sleep study"
+        "Unclassifiable without a sleep study"
       ],
       "answer": [
         0
@@ -4846,7 +4846,7 @@
       "id": "PRE-199",
       "set": 1,
       "type": "multi",
-      "stem": "Which STOP-BANG items relate to physical measurement? (Select 3)",
+      "stem": "Which three STOP-BANG components are based on patient characteristics or measurements rather than symptoms? (Select 3)",
       "options": [
         "BMI",
         "Neck circumference",
@@ -4874,12 +4874,12 @@
       "id": "PRE-200",
       "set": 1,
       "type": "single",
-      "stem": "A COPD patient with FEV1/FVC 55% is scheduled for an open colectomy. Which intraoperative risk is MOST likely?",
+      "stem": "A COPD patient with FEV1/FVC 55% is scheduled for open colectomy. Which intraoperative respiratory problem is most plausible?",
       "options": [
-        "Bronchospasm with little respiratory reserve",
+        "Bronchospasm with limited ventilatory reserve",
         "Postoperative seizures",
         "Malignant hyperthermia",
-        "Emergence delirium from postoperative hypoxemia"
+        "Emergence delirium as the primary pulmonary complication"
       ],
       "answer": [
         0
@@ -4898,12 +4898,12 @@
       "id": "PRE-201",
       "set": 1,
       "type": "single",
-      "stem": "A 22-year-old says he quit cigarettes but now vapes daily. Which statement about his pulmonary assessment is accurate?",
+      "stem": "A patient denies smoking cigarettes but reports daily vaping. What is the best preoperative history approach?",
       "options": [
-        "Vaping is rising; ask directly",
-        "Vaping carries no airway risk",
-        "Vaping is declining as smoking increases",
-        "Vaping carries the same risks as smoking cigarettes"
+        "Ask directly about vaping because it may otherwise be missed",
+        "Ignore vaping because it carries no airway relevance",
+        "Assume vaping is declining and less important than cigarettes",
+        "Treat vaping as identical to cigarette exposure in every respect"
       ],
       "answer": [
         0
@@ -4922,12 +4922,12 @@
       "id": "PRE-202",
       "set": 1,
       "type": "single",
-      "stem": "A patient with asthma has frequent rescue inhaler use this week. What is the BEST interpretation?",
+      "stem": "A patient with asthma has needed the rescue inhaler repeatedly this week. Which conclusion should drive elective-surgery planning?",
       "options": [
-        "Poor control; optimize before elective surgery",
-        "Adequate control; proceed as scheduled",
-        "Mild disease; no change in the anesthetic plan",
-        "Requires a mandatory 6-week delay"
+        "Control is poor and should be optimized before surgery",
+        "Frequent rescue use indicates adequate control",
+        "The disease is mild and requires no plan change",
+        "A fixed six-week postponement is mandatory"
       ],
       "answer": [
         0
@@ -4946,12 +4946,12 @@
       "id": "PRE-203",
       "set": 1,
       "type": "single",
-      "stem": "A 30-year-old adult had a URI 2 weeks ago and still coughs. The case is elective. What is the BEST plan?",
+      "stem": "An adult had a URI 2 weeks ago and still has cough before elective surgery. Which concern supports postponement?",
       "options": [
-        "Delay to allow airway recovery up to 6 weeks",
-        "Proceed since symptoms are mild",
-        "Proceed with an LMA",
-        "Give steroids and proceed today with an LMA"
+        "Persistent airway hyperreactivity may last several weeks",
+        "Mild symptoms eliminate bronchospasm risk",
+        "An LMA removes the URI-associated risk",
+        "Steroids make immediate surgery equivalent to waiting"
       ],
       "answer": [
         0
@@ -4970,12 +4970,12 @@
       "id": "PRE-204",
       "set": 1,
       "type": "single",
-      "stem": "A COPD patient has expiratory wheezes in preop and last used albuterol yesterday. Which optimization question applies?",
+      "stem": "A COPD patient has expiratory wheezing in preop and last used albuterol yesterday. Which question is most actionable before induction?",
       "options": [
-        "Does he need a bronchodilator now?",
-        "Does he need a chest CT before induction?",
-        "Does he need antibiotics before induction?",
-        "Does he need a sleep study before induction?"
+        "Does the patient need bronchodilator treatment now?",
+        "Does the patient need a chest CT?",
+        "Does the patient need prophylactic antibiotics?",
+        "Does the patient need a sleep study?"
       ],
       "answer": [
         0
@@ -4994,12 +4994,12 @@
       "id": "PRE-205",
       "set": 1,
       "type": "single",
-      "stem": "A diabetic patient's intraoperative glucose is 214 mg/dL during a colectomy. What is the BEST action?",
+      "stem": "During colectomy, a diabetic patient's glucose is 214 mg/dL. Which action best follows the lecture's treatment threshold?",
       "options": [
-        "Treat, since the threshold is above 180 mg/dL",
-        "Observe until it exceeds 300 mg/dL on recheck",
-        "Treat when ketones are also present",
-        "Observe until it exceeds 250 mg/dL"
+        "Treat hyperglycemia because it exceeds 180 mg/dL",
+        "Observe until glucose exceeds 300 mg/dL",
+        "Treat only if ketones are present",
+        "Observe until glucose exceeds 250 mg/dL"
       ],
       "answer": [
         0
@@ -5018,12 +5018,12 @@
       "id": "PRE-206",
       "set": 1,
       "type": "single",
-      "stem": "A type 2 diabetic's fingerstick is 325 mg/dL on the morning of an elective hernia repair. What is the BEST plan?",
+      "stem": "A patient with type 2 diabetes has a morning glucose of 325 mg/dL before elective hernia repair. Which plan is most appropriate?",
       "options": [
-        "Consider delaying to optimize glucose control",
-        "Proceed with an insulin infusion during the case",
-        "Give one insulin dose and proceed if it falls below 300",
-        "Cancel and refer for lifelong management"
+        "Consider postponement for better glucose control",
+        "Proceed routinely with an insulin infusion",
+        "Give one insulin dose and proceed once below 300 mg/dL",
+        "Cancel permanently and refer for long-term management"
       ],
       "answer": [
         0
