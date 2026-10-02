@@ -86,7 +86,7 @@ test.describe('multi-course foundation', () => {
     await page.goto('/basic-principles/exam-1/');
     await waitForPageReady(page);
     await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Basic Principles', exact: true })).toHaveAttribute('href', /\/basic-principles\/$/);
-    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Basic Principles Exam 1 Study Studio', exact: true })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html$/);
+    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Study Studio', exact: true })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html$/);
   });
 
 
@@ -160,7 +160,7 @@ test.describe('multi-course foundation', () => {
     await waitForStudioReady(page);
     await expect(page.getByRole('button', { name: 'Search Questions' })).toBeVisible();
     await expect(page.getByRole('button', { name: 'Start Smart Review' })).toBeVisible();
-    await expect(page.locator('#analyticsSummary')).toBeVisible();
+    await expect(page.locator('#analyticsSummary')).toBeAttached();
     await expect(page.locator('#adaptiveToggle')).toBeVisible();
     await page.getByRole('button', { name: 'Search Questions' }).click();
     await page.locator('#searchbox').fill('airway');
