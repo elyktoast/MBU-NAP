@@ -225,7 +225,7 @@ function adaptiveToggleChanged(input){
 }
 function clearAdaptiveEntryParam(){const url=new URL(location.href);url.searchParams.delete('mode');history.replaceState(null,'',url.pathname+url.search+url.hash)}
 function prepareAdaptiveEntry(){
-  renderHome();setBuildMode('sets');setChecks('sourceChecks',true);
+  renderHome();if(unifiedStudioSource()){buildMode='topics';setChecks('topicChecks',true)}else{setBuildMode('sets');setChecks('sourceChecks',true)}
   const count=document.getElementById('count');if(count)count.value='100';
   const toggle=document.getElementById('adaptiveToggle');if(!toggle)return null;
   toggle.checked=true;syncAdaptiveStartLabel();return toggle
