@@ -258,11 +258,12 @@ window.addEventListener('mbu:supabase-status',()=>{
   adaptiveEntryPending=false;clearAdaptiveEntryParam();window.MBUAppCore?.closeAccount?.();focusAdaptiveStart()
 });
 function unifiedStudioSource(){return BANK_MANIFEST?.studio?.sourceMode==='unified'}
-function setBuildMode(mode){buildMode=mode==='topics'?'topics':'sets';document.getElementById('sourcePickbox').classList.toggle('hidden',buildMode!=='sets');document.getElementById('topicPickbox').classList.toggle('hidden',buildMode!=='topics');document.getElementById('buildSetsBtn').classList.toggle('out',buildMode!=='sets');document.getElementById('buildTopicsBtn').classList.toggle('out',buildMode!=='topics');document.getElementById('buildModeHelp').textContent=buildMode==='sets'?(unifiedStudioSource()?'Use the full unified Exam 1 question pool. Switch to Topics to build a focused quiz.':'Choose one or more practice sets. Questions can come from any topic in those sets.'):'Choose one or more topics. Studio will pull matching questions from the full loaded question pool.'}
+function setBuildMode(mode){buildMode=mode==='topics'?'topics':'sets';document.getElementById('sourcePickbox').classList.toggle('hidden',buildMode!=='sets');document.getElementById('topicPickbox').classList.toggle('hidden',buildMode!=='topics');document.getElementById('buildSetsBtn').classList.toggle('out',buildMode!=='sets');document.getElementById('buildTopicsBtn').classList.toggle('out',buildMode!=='topics');document.getElementById('buildModeHelp').textContent=buildMode==='sets'?(unifiedStudioSource()?'Use the complete unified 3,500-question Exam 1 pool.':'Choose one or more practice sets. Questions can come from any topic in those sets.'):(unifiedStudioSource()?'Choose one or more of the seven Exam 1 lecture topics.':'Choose one or more topics. Studio will pull matching questions from the full loaded question pool.')}
 function setChecks(id,on){document.querySelectorAll('#'+id+' input[type=checkbox]').forEach(x=>x.checked=on)}
 function checkedValues(id){return [...document.querySelectorAll('#'+id+' input[type=checkbox]:checked')].map(x=>x.value)}
 function setLabel(q){if(q.bank==='hh')return 'Challenge Set';if(q.bank==='h1'||q.bank==='h2'||q.bank==='h3')return q.bankLabel;return q.set===7?'Challenge Set':'Practice Set '+q.set}
 function sourceSetKey(q){return q.bank+':'+q.set}
+function initialStudioBuildMode(){if(unifiedStudioSource())setBuildMode('topics')}
 function buildTopics(){
   const selectedSources=new Set(checkedValues('sourceChecks')),selectedTopics=new Set(checkedValues('topicChecks')),sourceHost=document.getElementById('sourceChecks');
   if(unifiedStudioSource()){
