@@ -2250,17 +2250,17 @@
       "id": "PRE-093",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a drug-eluting coronary stent placed 4 months ago and now needs elective noncardiac surgery. Which plan best reflects the lecture's timing and antiplatelet principles?",
+      "stem": "A patient had a drug-eluting coronary stent placed 4 months ago for chronic coronary disease and now requests elective noncardiac surgery that would require interruption of an antiplatelet agent. Which plan best reflects current perioperative guidance?",
       "options": [
-        "Proceed if the 3–6 month interval is acceptable and continue aspirin",
-        "Proceed but stop aspirin 7 days before surgery",
-        "Delay 12 months and stop all antiplatelet therapy",
-        "Proceed after stopping dual antiplatelet therapy for 60 days"
+        "Delay elective surgery when feasible because 6 months after DES placement for chronic coronary disease is the preferred interval",
+        "Proceed because every DES is safe after 3 months",
+        "Proceed after stopping all antiplatelet therapy for 7 days",
+        "Delay all noncardiac surgery for 12 months after every DES"
       ],
       "answer": [
         0
       ],
-      "explanation": "Elective surgery after a DES is acceptable at 3–6 months with aspirin continued to reduce stent thrombosis.",
+      "explanation": "After drug-eluting stent placement for chronic coronary disease, delaying elective noncardiac surgery for at least 6 months is generally reasonable. Time-sensitive surgery may sometimes be considered earlier when the harm of delay exceeds cardiac risk.",
       "citation": "",
       "topic": "Ischemic heart disease, testing, and hypertension",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -2274,17 +2274,17 @@
       "id": "PRE-094",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a bare-metal coronary stent placed 5 weeks ago and now requests elective hernia repair. How should the timing be interpreted?",
+      "stem": "A patient had a bare-metal coronary stent placed 5 weeks ago and now requests elective hernia repair that would require interruption of antiplatelet therapy. Which concern is most important?",
       "options": [
-        "The interval exceeds 30 days, so timing is acceptable by the lecture rule",
-        "Elective surgery must wait at least 6 months",
-        "Elective surgery must wait at least 12 months",
-        "Seven days is sufficient after any coronary stent"
+        "Recent stent placement makes elective interruption of antiplatelet therapy hazardous; timing and antiplatelet management require individualized planning",
+        "The interval exceeds 30 days, so surgery is automatically acceptable",
+        "Elective surgery always requires a 12-month delay after a bare-metal stent",
+        "Antiplatelet therapy can be stopped safely once 7 days have passed"
       ],
       "answer": [
         0
       ],
-      "explanation": "Elective surgery can proceed more than 30 days after a bare metal stent.",
+      "explanation": "A fixed elapsed-time rule alone is insufficient. Surgery soon after PCI, especially when antiplatelet interruption is required, carries stent-thrombosis and ischemic risk and should be planned according to urgency, PCI indication, stent history, and antiplatelet requirements.",
       "citation": "",
       "topic": "Ischemic heart disease, testing, and hypertension",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -2298,17 +2298,17 @@
       "id": "PRE-095",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a myocardial infarction 5 weeks ago that was managed medically without PCI or CABG. Which timing principle applies to elective surgery?",
+      "stem": "A patient had a myocardial infarction 5 weeks ago that was managed medically without revascularization and now requests elective surgery. Which principle is most appropriate?",
       "options": [
-        "Delay until at least 60 days after the MI",
+        "Postpone elective surgery and reassess ischemic risk rather than relying on a universal 60-day cutoff",
         "Proceed because more than 30 days have passed",
-        "Proceed if functional capacity exceeds 4 METs",
-        "Delay 6 months as after CABG"
+        "Proceed if functional capacity exceeds 4 METs regardless of the recent MI",
+        "Treat the patient as having the same timing recommendation as uncomplicated CABG"
       ],
       "answer": [
         0
       ],
-      "explanation": "After an MI managed without intervention, wait at least 60 days before elective surgery.",
+      "explanation": "A recent myocardial infarction substantially increases perioperative cardiac risk. Contemporary guidance emphasizes evaluation and individualized timing rather than using the older universal 60-day rule as a stand-alone clearance threshold.",
       "citation": "",
       "topic": "Ischemic heart disease, testing, and hypertension",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -2322,17 +2322,17 @@
       "id": "PRE-096",
       "set": 1,
       "type": "single",
-      "stem": "A patient had CABG 4 months ago and requests elective shoulder replacement. Which timing recommendation best follows from the lecture?",
+      "stem": "A patient underwent CABG 4 months ago, has recovered without recurrent ischemic symptoms, and requests elective shoulder replacement. How should the prior CABG affect timing?",
       "options": [
-        "Delay until more than 6 months after CABG",
-        "Proceed because 30 days have passed",
-        "Proceed because 60 days have passed",
-        "Proceed after 3 months if aspirin is continued"
+        "Assess recovery, symptoms, surgical risk, and the indication for further testing rather than applying a universal 6-month prohibition",
+        "Elective surgery is absolutely prohibited until more than 6 months after CABG",
+        "Proceed automatically once 30 days have passed",
+        "Proceed automatically once 60 days have passed"
       ],
       "answer": [
         0
       ],
-      "explanation": "Elective surgery should wait more than 6 months after CABG.",
+      "explanation": "Current perioperative decision-making after CABG is individualized. There is not a universal rule that every elective noncardiac operation must wait more than 6 months; recovery, residual symptoms, urgency, and overall cardiac and procedural risk matter.",
       "citation": "",
       "topic": "Ischemic heart disease, testing, and hypertension",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -2356,7 +2356,7 @@
       "answer": [
         0
       ],
-      "explanation": "DES patients are on DAPT and elective surgery is delayed 3–6 months with aspirin continued. Stopping DAPT early risks stent thrombosis.",
+      "explanation": "Very recent drug-eluting stent placement plus interruption of antiplatelet therapy creates substantial stent-thrombosis and ischemic risk. Elective surgery requiring interruption should generally be deferred, with perioperative antiplatelet decisions coordinated among the treating teams.",
       "citation": "",
       "topic": "Ischemic heart disease, testing, and hypertension",
       "sourceTitle": "Perioperative Assessment & Evaluation",
