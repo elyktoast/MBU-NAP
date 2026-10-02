@@ -1,7 +1,7 @@
 /* Immutable SRNA Study Tool build bootstrap.
    Page behavior is always loaded from build-versioned assets; this file only resolves the current build and sequences them. */
 (()=>{'use strict';
-const script=document.currentScript,cfg=window.MBU_BOOT||{},assetsBase=new URL(cfg.assetsBase||'./',script?.src||location.href),buildUrl=new URL(cfg.buildUrl||'../build.json',script?.src||location.href);document.documentElement.dataset.mbuBoot='loading';const gate=document.createElement('style');gate.textContent='html[data-mbu-boot="loading"] body>*{pointer-events:none}html[data-mbu-boot="loading"] body>#srna-legal-gate{pointer-events:auto}';document.head.append(gate);
+const script=document.currentScript,cfg=window.MBU_BOOT||{},assetsBase=new URL(cfg.assetsBase||'./',script?.src||location.href),buildUrl=new URL(cfg.buildUrl||'../build.json',script?.src||location.href);document.documentElement.dataset.mbuBoot='loading';const gate=document.createElement('style');gate.textContent='html[data-mbu-boot="loading"] body{visibility:hidden}html[data-mbu-boot="loading"] body>#srna-legal-gate{visibility:visible}';document.head.append(gate);
 const specOf=x=>typeof x==='string'?{src:x}:x||{},REQUEST_TIMEOUT=12000,ASSET_TIMEOUT=15000;
 const fetchTimed=async(url,opts={},timeout=REQUEST_TIMEOUT)=>{const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),timeout);try{return await fetch(url,{...opts,signal:ctl.signal})}finally{clearTimeout(timer)}};
 async function start(){
