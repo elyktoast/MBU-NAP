@@ -27,6 +27,26 @@ async function start(){
   await loadScript('answer-order.js');
   await loadScript('supabase-config.js');
   await loadScript('supabase-sync.js');
+  if(window.MBUAuthReady&&typeof window.MBUAuthReady.then==='function')await window.MBUAuthReady;
+  const ctx=window.MBU_CONTEXT||{},protectedCourse=ctx.courseId==='basic-principles';
+  if(protectedCourse){
+    const info=window.MBUSupabase?.status?.()||{};
+    if(!(info.signedIn&&info.legalAccepted===true&&info.accessStatus==='active')&&!info.recoveryMode){
+      const home=new URL('../../',assetsBase).href;
+      sessionStorage.setItem('mbu_post_auth_target',location.href);
+      location.replace(home);
+      return build;
+    }
+  }
+  const postAuthTarget=sessionStorage.getItem('mbu_post_auth_target');
+  if(!protectedCourse&&postAuthTarget){
+    const info=window.MBUSupabase?.status?.()||{};
+    if(info.signedIn&&info.legalAccepted===true&&info.accessStatus==='active'&&!info.recoveryMode){
+      sessionStorage.removeItem('mbu_post_auth_target');
+      location.replace(postAuthTarget);
+      return build;
+    }
+  }
   await Promise.all((cfg.styles||[]).map(loadStyle));
   for(const entry of cfg.scripts||[])await loadScript(entry);
   if(typeof cfg.ready==='function')await cfg.ready();
