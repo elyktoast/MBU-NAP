@@ -990,12 +990,12 @@
       "id": "PRE-041",
       "set": 1,
       "type": "single",
-      "stem": "A patient discloses during the interview that she has hepatitis C and a history of IV drug use. Which purpose of the preop evaluation does this information directly serve?",
+      "stem": "During preoperative interview, a patient discloses hepatitis C and prior IV drug use that were not documented in the chart. Which risk-assessment function is most directly served by obtaining this history?",
       "options": [
-        "Assessing risk to patient and provider",
+        "Identifying exposure-related risk relevant to both patient and perioperative team",
         "Determining the surgical incision",
-        "Scheduling OR time",
-        "Choosing the surgeon"
+        "Estimating operating-room turnover time",
+        "Choosing which surgeon should perform the procedure"
       ],
       "answer": [
         0
@@ -1014,12 +1014,12 @@
       "id": "PRE-042",
       "set": 1,
       "type": "single",
-      "stem": "A patient seems guarded and gives short answers in preop. Why does a professional introduction at the start of the interview matter?",
+      "stem": "A guarded patient gives minimal answers until the anesthesia clinician introduces themself clearly, explains the purpose of the interview, and addresses the patient respectfully. Why can this change the quality of the assessment?",
       "options": [
-        "It builds trust for an honest history and valid consent",
-        "It shortens the total interview time",
-        "It replaces the need for a chart review",
-        "It shortens the time needed for the interview"
+        "Improved trust increases the likelihood of a complete history and meaningful consent",
+        "A professional introduction shortens every interview regardless of complexity",
+        "Rapport eliminates the need to verify the chart",
+        "A courteous introduction substitutes for formal consent"
       ],
       "answer": [
         0
@@ -1038,12 +1038,12 @@
       "id": "PRE-043",
       "set": 1,
       "type": "single",
-      "stem": "A patient is scheduled for an ankle fracture repair under a popliteal block with minimal sedation. Why is a full airway exam still required?",
+      "stem": "A patient is scheduled for ankle fixation under a popliteal block with minimal sedation. Which reason best justifies performing the same airway assessment used before general anesthesia?",
       "options": [
-        "Any plan may need emergent airway control",
-        "The block may need supplemental sedation",
-        "It determines the local anesthetic dose",
-        "Regional failure rates are higher in fracture patients"
+        "Regional or MAC plans can fail or deepen, making unplanned airway rescue necessary",
+        "Any sedative dose automatically requires tracheal intubation",
+        "Airway findings determine the local anesthetic dose",
+        "Fracture surgery has a uniquely high regional-anesthesia failure rate"
       ],
       "answer": [
         0
@@ -1062,12 +1062,12 @@
       "id": "PRE-044",
       "set": 1,
       "type": "single",
-      "stem": "A patient has Mallampati II, three-fingerbreadth mouth opening, a full beard, a short thick neck, and limited extension. Each finding alone is minor. How should you interpret the exam?",
+      "stem": "A patient has Mallampati II, adequate mouth opening, a full beard, a short thick neck, and limited cervical extension. Which interpretation is most useful for planning?",
       "options": [
-        "The findings combine to predict a difficult airway",
-        "The airway is normal, since Mallampati is II",
-        "The beard is the finding that matters",
-        "The neck extension is the finding that matters"
+        "Multiple modest predictors can combine to create difficult mask ventilation or laryngoscopy",
+        "Mallampati II makes the remaining findings clinically unimportant",
+        "The beard alone determines the airway plan",
+        "Limited neck extension alone determines the airway plan"
       ],
       "answer": [
         0
@@ -1086,12 +1086,12 @@
       "id": "PRE-045",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a full beard, BMI 38, and a Mallampati III. Which lecture planning step BEST fits?",
+      "stem": "A patient with BMI 38, Mallampati III, a full beard, and a short neck requires general anesthesia. Which preparation best matches the combined airway findings without overcommitting to one technique?",
       "options": [
-        "Prepare video laryngoscopy, positioning aids, and the airway cart",
-        "Proceed with standard setup since no single finding is severe",
-        "Plan awake fiberoptic intubation for every patient like this",
-        "Cancel until the beard is shaved"
+        "Prepare optimized positioning, video laryngoscopy, and difficult-airway rescue equipment",
+        "Use only the standard airway setup because no single finding guarantees difficulty",
+        "Plan awake fiberoptic intubation for every patient with this combination",
+        "Delay surgery until the patient shaves the beard"
       ],
       "answer": [
         0
@@ -1110,12 +1110,12 @@
       "id": "PRE-046",
       "set": 1,
       "type": "single",
-      "stem": "You are examining the airway of a 60-year-old with rheumatoid arthritis. Which structures should you inspect?",
+      "stem": "A patient with rheumatoid arthritis is undergoing focused airway assessment before general anesthesia. Which examination set best targets structures relevant to ventilation and laryngoscopy?",
       "options": [
-        "Teeth, mouth, mandibular space, and neck",
+        "Teeth, oral cavity, mandibular space, and neck",
         "Tonsils, sinuses, ears, and neck",
         "Teeth, tongue, chest wall, and neck",
-        "Mouth, larynx, trachea, and lungs"
+        "Oral cavity, trachea, lungs, and abdomen"
       ],
       "answer": [
         0
@@ -1134,12 +1134,12 @@
       "id": "PRE-047",
       "set": 1,
       "type": "single",
-      "stem": "A patient has acromegaly, another has a large goiter, and a third has Pierre Robin sequence. How are these airway concerns categorized?",
+      "stem": "Acromegaly, a large goiter, and Pierre Robin sequence can all complicate airway management, but for different reasons. Which categorization best matches them?",
       "options": [
         "Metabolic, structural, and congenital",
-        "Infectious, vascular, and traumatic lesions",
-        "Cardiac, pulmonary, and renal disease processes",
-        "Infectious, inflammatory, and traumatic causes"
+        "Infectious, vascular, and traumatic",
+        "Cardiac, pulmonary, and renal",
+        "Inflammatory, infectious, and traumatic"
       ],
       "answer": [
         0
@@ -1158,12 +1158,12 @@
       "id": "PRE-048",
       "set": 1,
       "type": "single",
-      "stem": "A patient with Parkinson's disease is scheduled for surgery. Which neuro history item should you document?",
+      "stem": "A patient with Parkinson disease is scheduled for surgery. Which preoperative finding is most important to establish as a neurologic baseline rather than treating it as a new postoperative complication later?",
       "options": [
-        "Baseline tremor and medications",
-        "Her last migraine trigger",
+        "Usual tremor pattern and current antiparkinsonian medications",
+        "Most recent migraine trigger",
         "Prior response to spinal anesthesia",
-        "Visual acuity"
+        "Baseline visual acuity"
       ],
       "answer": [
         0
@@ -1182,12 +1182,12 @@
       "id": "PRE-049",
       "set": 1,
       "type": "single",
-      "stem": "A 30-year-old with epilepsy is scheduled for a shoulder repair. Which seizure history is MOST useful for planning?",
+      "stem": "A patient with epilepsy is scheduled for surgery. Which history provides the most useful basis for perioperative seizure-risk planning?",
       "options": [
-        "Type, frequency, triggers, medications, and last episode",
-        "Last episode alone, since it predicts intraop risk",
-        "Seizure type alone, since medications are charted",
-        "Medication list alone, since triggers do not apply"
+        "Seizure type, frequency, triggers, medications, and time of last event",
+        "Time of last seizure alone",
+        "Seizure classification alone because medications are in the chart",
+        "Medication list alone because triggers do not affect perioperative risk"
       ],
       "answer": [
         0
@@ -1206,11 +1206,11 @@
       "id": "PRE-050",
       "set": 1,
       "type": "single",
-      "stem": "A 76-year-old had a stroke two years ago and is scheduled for a carotid endarterectomy. What must you document before surgery?",
+      "stem": "A patient with a remote stroke is scheduled for carotid endarterectomy. Which preoperative neurologic documentation is most useful for distinguishing a new perioperative event from an old deficit?",
       "options": [
-        "Baseline motor weakness or other deficits",
+        "Baseline motor, sensory, speech, or other residual deficits",
         "Pupil size alone",
-        "Lower extremity deep tendon reflexes alone",
+        "Lower-extremity reflexes alone",
         "Speech fluency alone"
       ],
       "answer": [
@@ -1230,12 +1230,12 @@
       "id": "PRE-051",
       "set": 1,
       "type": "single",
-      "stem": "A patient reports neuralgia in the extremities. What does this change?",
+      "stem": "A patient reports chronic neuralgia in the operative-side extremity. Which planning consequence is most appropriate?",
       "options": [
-        "Positioning needs careful attention",
-        "Regional anesthesia is contraindicated",
-        "Neuromuscular blockers are contraindicated",
-        "Induction should be inhalational"
+        "Document the baseline symptoms and protect the extremity carefully during positioning",
+        "Treat regional anesthesia as absolutely contraindicated",
+        "Avoid neuromuscular blocking drugs",
+        "Use inhalational induction to prevent symptom worsening"
       ],
       "answer": [
         0
@@ -1254,14 +1254,14 @@
       "id": "PRE-052",
       "set": 1,
       "type": "multi",
-      "stem": "Which are delirium and postoperative cognitive risk factors on the neuro slide? (Select 5)",
+      "stem": "Which five findings increase concern for postoperative delirium or cognitive complications and therefore strengthen the need for a documented baseline? (Select 5)",
       "options": [
         "Advanced age",
         "Hearing or vision impairment",
         "Polypharmacy",
         "Prior postoperative delirium",
         "Baseline cognitive impairment",
-        "Short procedure time"
+        "Short procedure duration"
       ],
       "answer": [
         0,
@@ -1284,12 +1284,12 @@
       "id": "PRE-053",
       "set": 1,
       "type": "single",
-      "stem": "An 84-year-old with hearing loss, mild dementia, and 11 home medications is booked for a hip repair. Which risk is MOST emphasized in the neuro section?",
+      "stem": "An 84-year-old with hearing loss, mild dementia, and 11 home medications presents for hip repair. Which postoperative complication is most strongly suggested by this cluster of preoperative findings?",
       "options": [
-        "Postoperative delirium",
-        "Postoperative seizures",
+        "Delirium",
+        "Seizure",
         "Malignant hyperthermia",
-        "Local anesthetic toxicity"
+        "Local anesthetic systemic toxicity"
       ],
       "answer": [
         0
@@ -1308,13 +1308,13 @@
       "id": "PRE-054",
       "set": 1,
       "type": "multi",
-      "stem": "Which patients need a detailed neuro exam before surgery? (Select 2)",
+      "stem": "Which two patients most clearly require a detailed neurologic baseline because postoperative findings could otherwise be difficult to interpret? (Select 2)",
       "options": [
         "A patient with diabetic neuropathy before a popliteal block",
         "A patient scheduled for carotid endarterectomy",
         "A healthy patient for cataract surgery",
         "A healthy patient for dental extraction",
-        "A patient for laparoscopic cholecystectomy with no neuro history",
+        "A patient for laparoscopic cholecystectomy with no neurologic history",
         "A healthy adult for hernia repair"
       ],
       "answer": [
@@ -1335,12 +1335,12 @@
       "id": "PRE-055",
       "set": 1,
       "type": "single",
-      "stem": "Why is a detailed neuro exam important before regional anesthesia in a patient with baseline deficits?",
+      "stem": "A patient with preexisting lower-extremity sensory loss is scheduled for regional anesthesia. Why is a detailed neurologic examination before the block especially important?",
       "options": [
-        "It documents a baseline to compare postop findings",
+        "It establishes which deficits were present before the procedure for postoperative comparison",
         "It proves regional anesthesia is contraindicated",
-        "It predicts local anesthetic toxicity",
-        "It determines ASA class"
+        "It predicts local anesthetic systemic toxicity",
+        "It determines ASA physical status"
       ],
       "answer": [
         0
@@ -1359,12 +1359,12 @@
       "id": "PRE-056",
       "set": 1,
       "type": "single",
-      "stem": "A patient scheduled for carotid endarterectomy has a recent TIA. Which is the MOST appropriate preop step?",
+      "stem": "A patient with a recent TIA is scheduled for carotid endarterectomy. Which preoperative step most directly improves detection of a new perioperative neurologic injury?",
       "options": [
-        "Perform and document a detailed neuro exam",
-        "Rely on the neurologist's note from the TIA admission",
-        "Delay surgery for 6 weeks",
-        "Document the airway exam before carotid surgery"
+        "Perform and document a detailed neurologic baseline examination",
+        "Rely only on the neurologist's admission note",
+        "Delay surgery a fixed six weeks regardless of indication",
+        "Document only the airway examination"
       ],
       "answer": [
         0
@@ -1383,12 +1383,12 @@
       "id": "PRE-057",
       "set": 1,
       "type": "single",
-      "stem": "The notes say \"anesthesia is the airway expert.\" What does this imply for MAC or regional cases?",
+      "stem": "A patient is planned for MAC with local infiltration, and the surgeon expects no airway intervention. Which assessment should still be completed because the anesthetic may unexpectedly deepen or convert?",
       "options": [
-        "Airway evaluation is still required",
-        "Airway evaluation is needed if conversion is planned",
-        "Airway evaluation is done by the surgeon",
-        "Airway evaluation is done when GA is planned"
+        "A complete airway evaluation",
+        "An airway evaluation only if conversion is already planned",
+        "No airway evaluation because the surgeon controls the airway",
+        "An airway evaluation only when general anesthesia is selected"
       ],
       "answer": [
         0
@@ -1431,11 +1431,11 @@
       "id": "PRE-059",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old with new confusion and a subdural hematoma needs urgent surgery. What exam is required before induction?",
+      "stem": "A patient with a subdural hematoma has new confusion and needs urgent surgery. Which preinduction examination is most important for later determining whether neurologic status changed perioperatively?",
       "options": [
-        "A detailed neurologic exam",
-        "A Mallampati assessment alone",
-        "A six-week delay for neuro recovery",
+        "A detailed neurologic baseline examination",
+        "Mallampati assessment alone",
+        "A six-week delay for neurologic recovery",
         "Pulmonary function testing"
       ],
       "answer": [
@@ -1455,12 +1455,12 @@
       "id": "PRE-060",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a Mallampati IV airway and limited neck extension is scheduled for a thyroidectomy. Which preparation BEST fits the anticipated difficult airway?",
+      "stem": "A thyroidectomy patient has Mallampati IV anatomy and limited cervical extension. Which preparation best addresses the anticipated difficulty before induction?",
       "options": [
-        "A videolaryngoscope and the difficult airway cart",
-        "A nasogastric tube, suction, and a standard blade",
-        "Supplemental oxygen by nasal cannula",
-        "An extra peripheral IV line"
+        "Have video laryngoscopy and the difficult-airway cart immediately available",
+        "Prepare a nasogastric tube, suction, and a standard blade only",
+        "Use supplemental oxygen by nasal cannula as the primary backup plan",
+        "Place an additional peripheral IV instead of preparing advanced airway equipment"
       ],
       "answer": [
         0
