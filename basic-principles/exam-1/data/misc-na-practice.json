@@ -8,11 +8,11 @@
       "id": "MISC-001",
       "set": 1,
       "type": "single",
-      "stem": "A quality committee lists its goals: no harm from care, evidence-based treatment, respect for preferences, no harmful delays, no waste, and equal care for all. Which framework is it using?",
+      "stem": "A quality initiative targets six defects at once: avoidable harm, nonevidence-based care, disregard of patient preferences, harmful delays, waste, and unequal treatment. Which framework organizes these targets?",
       "options": [
         "The six IOM quality domains",
         "The five WHO hand hygiene moments",
-        "The four ethical pillars",
+        "The four ethical principles",
         "The six NHQDR core areas"
       ],
       "answer": [
@@ -32,7 +32,7 @@
       "id": "MISC-002",
       "set": 1,
       "type": "single",
-      "stem": "A patient waits four hours in preop because the OR schedule was mismanaged, and his glucose drops. Which quality domain was MOST violated?",
+      "stem": "A patient experiences hypoglycemia after waiting four hours in preop because of a scheduling failure. The care itself was appropriate once delivered. Which quality domain was primarily breached?",
       "options": [
         "Timely",
         "Efficient",
@@ -56,7 +56,7 @@
       "id": "MISC-003",
       "set": 1,
       "type": "single",
-      "stem": "A department opens and discards unused airway kits for every case, wasting supplies. Which quality domain is violated?",
+      "stem": "A department routinely opens airway kits before they are needed and discards many unused, without causing direct patient harm. Which quality domain is most directly compromised?",
       "options": [
         "Efficient",
         "Timely",
@@ -80,7 +80,7 @@
       "id": "MISC-004",
       "set": 1,
       "type": "single",
-      "stem": "A provider withholds epidural analgesia from a patient because of her insurance status. Which quality domain is violated?",
+      "stem": "Two clinically identical patients request epidural analgesia, but one is denied solely because of insurance status. Which quality domain is violated?",
       "options": [
         "Equitable",
         "Efficient",
@@ -104,7 +104,7 @@
       "id": "MISC-005",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA gives an outdated drug regimen that evidence shows is inferior. Which domain is violated?",
+      "stem": "A faster and cheaper perioperative regimen is chosen even though current evidence shows it produces worse outcomes than the recommended treatment. Which quality domain is most directly violated?",
       "options": [
         "Effective",
         "Efficient",
@@ -128,10 +128,10 @@
       "id": "MISC-006",
       "set": 1,
       "type": "single",
-      "stem": "A provider ignores a patient's stated wish to avoid a certain sedative without discussion. Which domain is violated?",
+      "stem": "A sedative plan is medically reasonable, but the provider ignores the patient's clearly stated preference to avoid that drug and does not discuss alternatives. Which domain is most directly violated?",
       "options": [
         "Patient-centered",
-        "Efficient, since resources were not wasted",
+        "Efficient",
         "Timely",
         "Effective"
       ],
@@ -152,7 +152,7 @@
       "id": "MISC-007",
       "set": 1,
       "type": "single",
-      "stem": "A hospital adds barcode scanning to prevent wrong-drug errors. Which quality domain does this MOST directly target?",
+      "stem": "Barcode medication scanning is introduced specifically to reduce wrong-drug administration, even though it may slow workflow slightly. Which quality domain is the intervention primarily designed to improve?",
       "options": [
         "Safe",
         "Timely",
@@ -176,7 +176,7 @@
       "id": "MISC-008",
       "set": 1,
       "type": "single",
-      "stem": "Your department's new quality committee wants to ground its safety goals in the two IOM reports that launched the modern quality and safety movement. Which reports should it cite?",
+      "stem": "A department is tracing the historical basis for the modern US patient-safety and quality movement. Which pair of IOM reports should anchor that review?",
       "options": [
         "To Err Is Human (1999) and Crossing the Quality Chasm (2001)",
         "Healthy People 2030 and the National Healthcare Quality Report",
@@ -248,12 +248,12 @@
       "id": "MISC-011",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA plans to give cefazolin but the syringe actually contains vancomycin; another chooses the wrong drug for a known allergy. How are both events classified?",
+      "stem": "In one event, the intended cefazolin syringe actually contains vancomycin; in another, the clinician intentionally chooses a contraindicated drug because the allergy history was misunderstood. What common classification applies to both?",
       "options": [
-        "Medical errors: a planned action failed or the plan was wrong",
-        "Adverse events, since harm may follow",
-        "Complications despite correct care",
-        "Deviations from the surgeon's preference"
+        "Medical errors: either execution failed or the plan itself was wrong",
+        "Adverse events, because both necessarily caused harm",
+        "Expected complications despite correct care",
+        "Deviations from surgeon preference"
       ],
       "answer": [
         0
@@ -272,7 +272,7 @@
       "id": "MISC-012",
       "set": 1,
       "type": "single",
-      "stem": "A root cause analysis reviews a year of medication events in your department. What will MOST of them likely trace back to?",
+      "stem": "A department reviews medication events using the lecture's broad error categories. Which contributor is expected to account for the largest share, even when system conditions influence the mistake?",
       "options": [
         "Human error",
         "Equipment failure",
@@ -296,7 +296,7 @@
       "id": "MISC-013",
       "set": 1,
       "type": "single",
-      "stem": "A radiologist misreads a chest film and pneumonia is missed for two days. Which error type is this?",
+      "stem": "A chest radiograph is obtained promptly, but pneumonia is missed because the image is interpreted incorrectly, delaying treatment for two days. Which error category best fits the primary failure?",
       "options": [
         "Diagnostic error",
         "Treatment error",
@@ -320,7 +320,7 @@
       "id": "MISC-014",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA gives cefazolin instead of the ordered clindamycin to a penicillin-allergic patient. Which error type is this?",
+      "stem": "The correct antibiotic plan is clindamycin because of a documented allergy, but cefazolin is administered instead. Which error category best describes the event?",
       "options": [
         "Treatment error",
         "Diagnostic error",
@@ -344,7 +344,7 @@
       "id": "MISC-015",
       "set": 1,
       "type": "single",
-      "stem": "A patient's allergy was stated in preop but not passed on in handoff to the OR team. Which error type is this?",
+      "stem": "A serious allergy is correctly identified in preop, but that information is not transmitted during handoff and the OR team never sees it. Which error category best captures the primary breakdown?",
       "options": [
         "Communication breakdown",
         "Diagnostic error",
@@ -368,7 +368,7 @@
       "id": "MISC-016",
       "set": 1,
       "type": "single",
-      "stem": "A facility skips routine safety rules like the anesthesia machine checkout. Which error type is this?",
+      "stem": "No equipment malfunction occurs, but the team knowingly bypasses the routine anesthesia-machine checkout and a preventable hazard goes undetected. Which error category best fits the failure?",
       "options": [
         "Preventative failure",
         "Treatment error",
@@ -392,12 +392,12 @@
       "id": "MISC-017",
       "set": 1,
       "type": "single",
-      "stem": "During a case, you give a 10-fold overdose of a vasopressor that causes brief hypertension with no lasting harm. What is your obligation?",
+      "stem": "A 10-fold vasopressor overdose causes only transient hypertension and no lasting injury. What obligation remains despite the absence of permanent harm?",
       "options": [
         "Disclose the error to the patient",
-        "Disclose it if harm occurred",
-        "Report it to risk management without telling the patient",
-        "Leave disclosure to the surgeon's discretion"
+        "Disclose only if permanent harm occurred",
+        "Report internally without informing the patient",
+        "Leave disclosure entirely to the surgeon"
       ],
       "answer": [
         0
@@ -416,12 +416,12 @@
       "id": "MISC-018",
       "set": 1,
       "type": "single",
-      "stem": "A wrong-drug error occurred despite barcode scanning, pharmacy checks, and a second-provider check. In the Swiss cheese model, what do the scanning, pharmacy check, and second check represent?",
+      "stem": "Barcode scanning, pharmacy verification, and an independent double-check are all intended to block the same medication error. In the Swiss cheese model, what do these safeguards represent?",
       "options": [
-        "Slices, each a layer of defense",
-        "Holes, each a system flaw",
-        "The hazard itself",
-        "The adverse outcome"
+        "Slices, with each slice serving as a layer of defense",
+        "Holes, with each safeguard itself representing a system flaw",
+        "The hazard moving through the system",
+        "The final adverse outcome"
       ],
       "answer": [
         0
@@ -440,12 +440,12 @@
       "id": "MISC-019",
       "set": 1,
       "type": "single",
-      "stem": "During the same error, the scanner was broken and the pharmacist was covering two units. In the Swiss cheese model, what do these problems represent?",
+      "stem": "The barcode scanner is broken, pharmacy staffing is thin, and the independent double-check is skipped. In the Swiss cheese model, what do these conditions represent?",
       "options": [
-        "Holes, system flaws in the defenses",
-        "Slices, layers of defense",
-        "The final outcome",
-        "The patient's risk factors"
+        "Holes, or weaknesses within defensive layers",
+        "Slices, or intact layers of defense",
+        "The final adverse outcome",
+        "Patient-specific risk factors"
       ],
       "answer": [
         0
@@ -464,12 +464,12 @@
       "id": "MISC-020",
       "set": 1,
       "type": "single",
-      "stem": "A wrong-site surgery occurred even though the site was marked, a time-out was held, and the consent was checked, because each step had a small lapse. Which model explains this?",
+      "stem": "Wrong-site surgery occurs despite site marking, consent verification, and a time-out because small weaknesses in each safeguard align during the same case. Which model best explains the event?",
       "options": [
-        "The Swiss cheese model: holes in multiple layers lined up",
-        "A single layer failed completely",
-        "One provider made a mistake",
-        "The patient had too many comorbidities"
+        "The Swiss cheese model: holes in multiple defenses aligned",
+        "A single defense layer failed completely",
+        "One provider's error alone explains the event",
+        "The patient's comorbidities overwhelmed the system"
       ],
       "answer": [
         0
