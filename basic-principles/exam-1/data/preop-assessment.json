@@ -6131,12 +6131,12 @@
       "id": "PRE-251",
       "set": 1,
       "type": "single",
-      "stem": "What is the primary safety objective of preoperative fasting guidelines?",
+      "stem": "A healthy elective patient asks why fasting is required when modern airway devices are available. Which complication are the fasting intervals primarily designed to reduce?",
       "options": [
-        "Reduce pulmonary aspiration of gastric contents",
-        "Reduce postoperative pain",
-        "Reduce anesthetic requirements",
-        "Prevent PONV"
+        "Pulmonary aspiration of gastric contents",
+        "Postoperative nausea and vomiting",
+        "Awareness under anesthesia",
+        "Excess anesthetic requirement"
       ],
       "answer": [
         0
@@ -6275,12 +6275,12 @@
       "id": "PRE-257",
       "set": 1,
       "type": "single",
-      "stem": "A patient ate a heavy meal containing meat before elective surgery. Which minimum fasting interval applies?",
+      "stem": "A patient ate a cheeseburger and fries 7 hours before elective anesthesia. Which decision best applies the fasting guideline?",
       "options": [
-        "8 hours or more",
-        "6 hours",
-        "4 hours",
-        "12 hours"
+        "Delay because a fatty meal requires at least 8 hours",
+        "Proceed because all solid food requires only 6 hours",
+        "Proceed because meat is treated as a light meal",
+        "Delay until 12 hours because any fried food requires that interval"
       ],
       "answer": [
         0
@@ -6400,12 +6400,12 @@
       "id": "PRE-262",
       "set": 1,
       "type": "single",
-      "stem": "At what MELD threshold does the lecture recommend transplant evaluation before elective nonhepatic surgery?",
+      "stem": "A patient with cirrhosis has a MELD score of 17 and is being evaluated for elective nonhepatic surgery. Which additional step is supported by the lecture threshold?",
       "options": [
-        "Above 15",
-        "Above 10",
-        "Above 20",
-        "Above 25"
+        "Formal transplant evaluation before proceeding with elective surgery planning",
+        "Proceed because transplant evaluation is not considered until MELD exceeds 25",
+        "Use Child-Pugh alone because MELD is irrelevant to nonhepatic surgery",
+        "Correct the INR and proceed without further liver-risk assessment"
       ],
       "answer": [
         0
@@ -6620,12 +6620,12 @@
       "id": "PRE-271",
       "set": 1,
       "type": "single",
-      "stem": "How recent should a potassium level be before surgery in a renal-failure patient according to the lecture?",
+      "stem": "A patient with end-stage renal disease had dialysis yesterday and is scheduled for surgery this morning. Which laboratory value requires confirmation within 24 hours of incision?",
       "options": [
-        "Within 24 hours",
-        "Within 1 week",
-        "Within 72 hours",
-        "Within 30 days"
+        "Serum potassium",
+        "Hemoglobin A1c",
+        "Thyroid-stimulating hormone",
+        "Serum bilirubin"
       ],
       "answer": [
         0
@@ -6644,12 +6644,12 @@
       "id": "PRE-272",
       "set": 1,
       "type": "single",
-      "stem": "A dialysis patient has potassium 6.4 mEq/L before elective surgery. Which principle should guide the decision?",
+      "stem": "An asymptomatic dialysis patient arrives for elective surgery with potassium 6.4 mEq/L and a normal-appearing ECG. Which finding should determine whether the case proceeds?",
       "options": [
-        "Correct the hyperkalemia before proceeding",
-        "Proceed if the patient is asymptomatic",
-        "Proceed after succinylcholine",
-        "Proceed if the ECG is normal"
+        "The severe hyperkalemia itself requires correction before elective anesthesia",
+        "The normal ECG makes the potassium acceptable",
+        "Absence of symptoms permits routine induction",
+        "The potassium is acceptable if succinylcholine is avoided"
       ],
       "answer": [
         0
@@ -6795,7 +6795,7 @@
       "id": "PRE-278",
       "set": 1,
       "type": "single",
-      "stem": "A dialysis patient develops a seizure after meperidine. Which metabolite is responsible for the renal-failure-specific toxicity?",
+      "stem": "A patient with end-stage renal disease receives meperidine and later develops agitation, myoclonus, and a seizure. Accumulation of which metabolite best explains the toxicity?",
       "options": [
         "Normeperidine",
         "Morphine-6-glucuronide",
@@ -6915,12 +6915,12 @@
       "id": "PRE-283",
       "set": 1,
       "type": "single",
-      "stem": "How should Child-Pugh B disease generally be characterized for elective nonhepatic surgery?",
+      "stem": "A patient with Child-Pugh B cirrhosis is being considered for elective nonhepatic surgery. Which risk description is most appropriate?",
       "options": [
-        "Moderate operative risk",
-        "Low-risk compensated disease",
-        "Decompensated disease in which surgery is always discouraged",
-        "No additional risk"
+        "Moderate operative risk requiring individualized assessment and optimization",
+        "Low risk equivalent to compensated Child-Pugh A disease",
+        "A categorical contraindication to all elective surgery",
+        "No additional perioperative risk if aminotransferases are normal"
       ],
       "answer": [
         0
@@ -7011,12 +7011,12 @@
       "id": "PRE-287",
       "set": 1,
       "type": "single",
-      "stem": "A patient reports a remote childhood penicillin rash and needs cefazolin prophylaxis. Which statement best reflects the lecture's cross-reactivity point?",
+      "stem": "A patient reports a remote, nonanaphylactic childhood rash after penicillin and is scheduled for a procedure for which cefazolin is preferred. Which principle is most relevant when evaluating cefazolin use?",
       "options": [
-        "Cross-reactivity is very low",
-        "Cross-reactivity is extremely high",
-        "All cephalosporins are contraindicated",
-        "Cross-reactivity is about 10% so cefazolin should be avoided"
+        "Penicillin-cephalosporin cross-reactivity is very low and the reaction history should be characterized",
+        "All cephalosporins are absolutely contraindicated after any penicillin reaction",
+        "Cross-reactivity is high enough that cefazolin should routinely be avoided",
+        "The childhood reaction should be documented as anaphylaxis regardless of symptoms"
       ],
       "answer": [
         0
@@ -7160,12 +7160,12 @@
       "id": "PRE-293",
       "set": 1,
       "type": "single",
-      "stem": "A smoker scheduled for elective surgery in 10 weeks asks when cessation provides the greatest benefit. Which answer best matches the lecture?",
+      "stem": "A smoker scheduled for elective surgery 10 weeks from now asks when to stop. Which advice captures both the maximal and immediate perioperative benefit?",
       "options": [
-        "More than 2 months before surgery",
-        "The night before surgery only",
-        "One week before surgery",
-        "Timing does not affect benefit"
+        "Stop now; more than 2 months offers the greatest pulmonary benefit, while even shorter abstinence can still help",
+        "Wait until 48 hours before surgery because earlier cessation adds no benefit",
+        "Continue smoking until surgery to avoid increased secretions",
+        "Switch to vaping because it eliminates perioperative pulmonary risk"
       ],
       "answer": [
         0
@@ -7280,12 +7280,12 @@
       "id": "PRE-298",
       "set": 1,
       "type": "single",
-      "stem": "A patient presents intoxicated with a blood alcohol level of 250 mg/dL. How should acute alcohol exposure affect expected anesthetic requirement?",
+      "stem": "Two otherwise similar patients require anesthesia: one is acutely intoxicated with alcohol, while the other has chronic heavy use but is currently sober. How should their volatile anesthetic requirements generally differ?",
       "options": [
-        "Acute intoxication decreases MAC",
-        "Acute intoxication increases MAC",
-        "MAC is unchanged",
-        "MAC increases because of enzyme induction"
+        "Acute intoxication tends to decrease MAC, whereas chronic use tends to increase MAC",
+        "Both acute and chronic exposure increase MAC",
+        "Both acute and chronic exposure decrease MAC",
+        "Acute intoxication increases MAC, whereas chronic use decreases MAC"
       ],
       "answer": [
         0
