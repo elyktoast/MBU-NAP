@@ -112,7 +112,7 @@ for(const [set,count] of Object.entries(manifest.banks.find(b=>b.id==='hazards')
 
 
 const bpManifest=read('basic-principles/exam-1/banks.json'),bpRoot='basic-principles/exam-1/',bpSeenUid=new Set(),bpSeenStem=new Map();
-let bpTotal=0,bpImages=0;
+let bpTotal=0,bpImageRefs=0;const bpFigurePaths=new Set();
 for(const source of bpManifest.studioSources||[]){
   const payload=read(bpRoot+source.data),qs=Array.isArray(payload)?payload:(payload.questions||[]);
   if(qs.length!==Number(source.count))err('Basic Principles '+source.key+': count '+qs.length+' != manifest '+source.count);
@@ -138,15 +138,15 @@ for(const source of bpManifest.studioSources||[]){
     if(String(q.sourceTitle||'').trim()!==source.label)err('Basic Principles '+identity+' sourceTitle does not match lecture source label');
     if(!String(q.explanation??q.exp??q.rationale??'').trim())err('Basic Principles '+identity+' has no explanation/rationale');
     const stemKey=norm(stem);if(stemKey){const prior=bpSeenStem.get(stemKey);if(prior)warn('Basic Principles exact duplicate stem: '+prior+' and '+identity);else bpSeenStem.set(stemKey,identity)}
-    const image=String(q.img??q.imageSvg??q.image??'').trim();if(image){bpImages++;const imagePath=path.join(root,bpRoot,image);if(!fs.existsSync(imagePath))err('Basic Principles '+identity+' references missing figure '+image)}
+    const image=String(q.img??q.imageSvg??q.image??'').trim();if(image){bpImageRefs++;if(image.includes('..')||path.isAbsolute(image))err('Basic Principles '+identity+' has unsafe figure path '+image);else{bpFigurePaths.add(image);const imagePath=path.join(root,bpRoot,image);if(!fs.existsSync(imagePath))err('Basic Principles '+identity+' references missing figure '+image)}}
   }
 }
 if(bpTotal!==3500)err('Basic Principles: total question count '+bpTotal+' != 3500');
-if(bpImages!==369)err('Basic Principles: figure-linked question count '+bpImages+' != 369');
+if(bpFigurePaths.size!==369)err('Basic Principles: unique referenced figure count '+bpFigurePaths.size+' != 369');
 
 for(const w of warnings)console.warn('CONTENT WARNING: '+w);
 if(errors.length){
   console.error('\nCONTENT INTEGRITY FAILED\n- '+errors.join('\n- '));
   process.exit(1);
 }
-console.log('Content integrity passed across Equipment plus '+(bpManifest.studioSources||[]).length+' Basic Principles sources ('+bpTotal+' Basic Principles questions, '+bpImages+' figure-linked questions). Warnings: '+warnings.length+'.');
+console.log('Content integrity passed across Equipment plus '+(bpManifest.studioSources||[]).length+' Basic Principles sources ('+bpTotal+' Basic Principles questions, '+bpImageRefs+' question-to-figure references across '+bpFigurePaths.size+' unique figures). Warnings: '+warnings.length+'.');
