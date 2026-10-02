@@ -75,18 +75,20 @@ test.describe('multi-course foundation', () => {
     expect(manifest.defaultBankEngine).toBe('canonical');
     expect(manifest.bankPage).toBe('bank.html');
   });
-  test('guest navbar resolves from the app root instead of the site origin', async ({ page }) => {
+  test('public navigation exposes only the published Basic Principles course', async ({ page }) => {
     await page.goto('/');
     await waitForPageReady(page);
-    const nav = page.locator('.mbu-global-nav');
-    await expect(nav.getByRole('link', { name: 'Equipment' })).toHaveAttribute('href', /\/equipment\/$/);
-    await expect(nav.getByRole('link', { name: 'Study Studio' })).toHaveAttribute('href', /\/equipment\/exam-1\/studio\.html$/);
-    await expect(nav.getByRole('link', { name: 'Adaptive' })).toHaveAttribute('href', /\/equipment\/exam-1\/studio\.html\?mode=adaptive$/);
+    const homeNav = page.locator('.mbu-global-nav');
+    await expect(homeNav.getByRole('link', { name: 'SRNA Study Tool', exact: true })).toHaveAttribute('href', /\/SRNA-STUDY-TOOL\/$|\/$/);
+    await expect(homeNav.getByRole('link', { name: 'Equipment', exact: true })).toHaveCount(0);
 
     await page.goto('/basic-principles/exam-1/');
     await waitForPageReady(page);
-    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Basic Principles', exact: true })).toHaveAttribute('href', /\/basic-principles\/$/);
-    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Study Studio', exact: true })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html$/);
+    const nav = page.locator('.mbu-global-nav');
+    await expect(nav.getByRole('link', { name: 'Basic Principles', exact: true })).toHaveAttribute('href', /\/basic-principles\/$/);
+    await expect(nav.getByRole('link', { name: 'Study Studio', exact: true })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html$/);
+    await expect(nav.getByRole('link', { name: 'Adaptive', exact: true })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html\?mode=adaptive$/);
+    await expect(nav.getByRole('link', { name: 'Equipment', exact: true })).toHaveCount(0);
   });
 
 
