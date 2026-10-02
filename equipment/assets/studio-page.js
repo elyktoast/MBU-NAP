@@ -264,7 +264,7 @@ function setLabel(q){if(q.bank==='hh')return 'Challenge Set';if(q.bank==='h1'||q
 function sourceSetKey(q){return q.bank+':'+q.set}
 function buildTopics(){
   const selectedSources=new Set(checkedValues('sourceChecks')),selectedTopics=new Set(checkedValues('topicChecks'));
-  const groupDefs=[...STUDIO_BANK_LABELS.entries()].map(([bank,label])=>({label,banks:[bank]})).concat({label:'Workstation Hazards',banks:['h1','h2','h3','hh']});
+  const grouped=new Map();for(const [bank,label] of STUDIO_BANK_LABELS.entries()){if(!grouped.has(label))grouped.set(label,[]);grouped.get(label).push(bank)}const groupDefs=[...grouped.entries()].map(([label,banks])=>({label,banks}));if(['h1','h2','h3','hh'].some(bank=>STUDIO_SET_NAMES.has(bank+':1')))groupDefs.push({label:'Workstation Hazards',banks:['h1','h2','h3','hh']});
   document.getElementById('sourceChecks').innerHTML=groupDefs.map(g=>{
     const keys=[...STUDIO_SET_NAMES.keys()].filter(k=>g.banks.includes(k.split(':')[0]));
     if(g.label==='Workstation Hazards'){const order=['h1:1','h2:1','h3:1','hh:1'];keys.sort((a,b)=>order.indexOf(a)-order.indexOf(b))}
