@@ -5343,17 +5343,17 @@
       "id": "PRE-219",
       "set": 1,
       "type": "single",
-      "stem": "Which steroid exposure should most strongly trigger concern for perioperative HPA-axis suppression under the lecture criteria?",
+      "stem": "Which glucocorticoid history most strongly raises concern for clinically meaningful HPA-axis suppression before surgery?",
       "options": [
-        "Prednisone 20 mg daily for more than 5 days within the past year",
+        "Prednisone 20 mg daily for several weeks with recent use",
         "A single dexamethasone dose for postoperative nausea prophylaxis",
         "Prednisone 5 mg for one day six months ago",
-        "Topical hydrocortisone applied for one week"
+        "Low-potency topical hydrocortisone used briefly on a small area"
       ],
       "answer": [
         0
       ],
-      "explanation": "Higher-dose steroid replacement, such as 20 mg prednisone for >5 days in the prior year, suggests HPA suppression risk.",
+      "explanation": "Risk of HPA-axis suppression depends on glucocorticoid dose, duration, route, timing, and patient factors. Sustained systemic prednisone at moderate-to-high doses is substantially more concerning than a single dose or brief low-dose exposure.",
       "citation": "",
       "topic": "Endocrine: diabetes, thyroid, adrenal, steroids",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -5466,17 +5466,17 @@
       "id": "PRE-224",
       "set": 1,
       "type": "single",
-      "stem": "A patient with primary hyperaldosteronism reaches adrenalectomy with persistent hypertension and corrected potassium. Which intraoperative event remains most characteristic when surgical stimulation increases?",
+      "stem": "A patient with primary hyperaldosteronism reaches adrenalectomy with persistent hypertension and potassium 2.8 mEq/L. Which abnormality most directly increases immediate anesthetic risk?",
       "options": [
-        "Abrupt severe hypertension",
-        "Refractory hypotension from cortisol deficiency",
-        "Hyperkalemia with bradycardia",
-        "Loss of sympathetic responsiveness"
+        "Hypokalemia predisposing to dysrhythmias and altered neuromuscular-blocker response",
+        "Catecholamine release causing classic tumor-manipulation hypertensive crises",
+        "Cortisol deficiency causing refractory vasodilatory shock before gland removal",
+        "Hyperkalemia causing bradycardia"
       ],
       "answer": [
         0
       ],
-      "explanation": "Excess aldosterone can cause sudden severe BP spikes with surgical stimulation.",
+      "explanation": "Primary hyperaldosteronism commonly produces hypertension and hypokalemia. Significant hypokalemia increases dysrhythmia risk and can alter neuromuscular-blocker effects. Tumor-manipulation catecholamine surges are characteristic of pheochromocytoma, not Conn syndrome.",
       "citation": "",
       "topic": "Endocrine: diabetes, thyroid, adrenal, steroids",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -5514,17 +5514,17 @@
       "id": "PRE-226",
       "set": 1,
       "type": "single",
-      "stem": "A chronic steroid user is having a minor procedure such as inguinal hernia repair. Which supplemental regimen best matches the table?",
+      "stem": "A patient taking chronic glucocorticoids is having inguinal hernia repair. Which principle best guides perioperative steroid management?",
       "options": [
-        "Usual dose plus hydrocortisone 50 mg IV, then 25 mg every 8 hours for 24 hours",
-        "Usual dose only",
-        "Hydrocortisone 100 mg IV then 200 mg over 24 hours",
-        "No steroid coverage"
+        "Continue the patient's usual glucocorticoid and individualize supplemental hydrocortisone to HPA-axis suppression risk and surgical stress",
+        "Give hydrocortisone 50 mg IV plus 25 mg every 8 hours to every chronic steroid user",
+        "Stop the usual glucocorticoid on the day of surgery",
+        "Give hydrocortisone 100 mg IV plus 200 mg over 24 hours for every minor procedure"
       ],
       "answer": [
         0
       ],
-      "explanation": "Minor surgery: usual dose, hydrocortisone 50 mg IV before incision, then 25 mg q8h for 24 h.",
+      "explanation": "Current practice avoids a single large stress-dose regimen for every chronic steroid user. The usual glucocorticoid is generally continued, while supplemental parenteral hydrocortisone is tailored to the likelihood of HPA-axis suppression, oral intake, and surgical stress.",
       "citation": "",
       "topic": "Endocrine: diabetes, thyroid, adrenal, steroids",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -5538,17 +5538,17 @@
       "id": "PRE-227",
       "set": 1,
       "type": "single",
-      "stem": "A chronic prednisone user is scheduled for total joint replacement. Which perioperative steroid regimen best matches the table's moderate-stress category?",
+      "stem": "A patient taking chronic prednisone is scheduled for total joint replacement. Which approach best reflects contemporary perioperative glucocorticoid management?",
       "options": [
-        "Usual dose plus hydrocortisone 50 mg IV, then 25 mg every 8 hours for 24 hours",
-        "Hydrocortisone 100 mg IV plus 200 mg over 24 hours",
-        "Usual daily dose only",
-        "No supplemental steroid for orthopedic surgery"
+        "Continue the baseline glucocorticoid and provide supplemental parenteral glucocorticoid when indicated by HPA-axis suppression risk and surgical stress",
+        "Automatically give hydrocortisone 100 mg IV plus 200 mg over 24 hours to every patient",
+        "Stop prednisone before surgery to restore endogenous cortisol production",
+        "Withhold all glucocorticoids unless hypotension develops"
       ],
       "answer": [
         0
       ],
-      "explanation": "Moderate procedures (colon resection, joint replacement) get usual dose, 50 mg IV before incision, then 25 mg q8h for 24 h.",
+      "explanation": "Perioperative glucocorticoid coverage should be individualized. Patients should not have chronic therapy abruptly stopped; supplemental dosing depends on HPA-axis suppression risk, ability to take the usual dose, and magnitude of surgical stress.",
       "citation": "",
       "topic": "Endocrine: diabetes, thyroid, adrenal, steroids",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -5562,17 +5562,17 @@
       "id": "PRE-228",
       "set": 1,
       "type": "single",
-      "stem": "A chronic steroid user is scheduled for esophagectomy. Which regimen best matches the table's major-surgery recommendation?",
+      "stem": "A chronic glucocorticoid user with probable HPA-axis suppression is scheduled for major surgery and cannot take the usual oral dose perioperatively. Which principle is most appropriate?",
       "options": [
-        "Hydrocortisone 100 mg IV followed by 200 mg over 24 hours",
-        "Hydrocortisone 50 mg IV then 25 mg every 8 hours",
-        "Usual daily dose only",
-        "Hydrocortisone 25 mg once"
+        "Provide parenteral glucocorticoid coverage appropriate to major surgical stress, then return toward the baseline regimen as clinically appropriate",
+        "Withhold glucocorticoids until refractory hypotension occurs",
+        "Use the same small supplemental dose used for superficial procedures",
+        "Discontinue chronic glucocorticoids permanently after surgery"
       ],
       "answer": [
         0
       ],
-      "explanation": "Major procedures: 100 mg IV before incision, then 200 mg infusion over 24 h (or 50 mg q8h), then taper.",
+      "explanation": "Patients with probable HPA-axis suppression who cannot take their baseline glucocorticoid need parenteral coverage scaled to surgical stress. Excessively large historical regimens are not automatically required for every patient.",
       "citation": "",
       "topic": "Endocrine: diabetes, thyroid, adrenal, steroids",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -5586,17 +5586,17 @@
       "id": "PRE-229",
       "set": 1,
       "type": "single",
-      "stem": "After major surgery, how does the table recommend returning from stress-dose steroids to the chronic regimen?",
+      "stem": "After perioperative supplemental glucocorticoids are no longer required, what is the appropriate goal for a patient who remains on chronic steroid therapy?",
       "options": [
-        "Reduce the supplemental dose by about 50% per day until the usual dose is reached",
-        "Stop all supplemental steroid abruptly after 24 hours",
-        "Return immediately to the usual dose after surgery",
-        "Continue 200 mg daily for two weeks"
+        "Return to the patient's baseline chronic regimen as oral intake and clinical status permit",
+        "Stop all glucocorticoids abruptly",
+        "Continue high-dose hydrocortisone for two weeks regardless of recovery",
+        "Taper the patient's chronic maintenance steroid to zero solely because surgery is complete"
       ],
       "answer": [
         0
       ],
-      "explanation": "The table says taper by 50% per day until the usual daily dose is reached.",
+      "explanation": "Supplemental perioperative glucocorticoids are reduced as surgical stress resolves, while patients who require chronic therapy return to their baseline regimen. The exact transition is individualized rather than governed by a universal 50%-per-day rule.",
       "citation": "",
       "topic": "Endocrine: diabetes, thyroid, adrenal, steroids",
       "sourceTitle": "Perioperative Assessment & Evaluation",
