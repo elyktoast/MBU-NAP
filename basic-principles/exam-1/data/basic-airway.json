@@ -8,11 +8,11 @@
       "id": "AIR-001",
       "set": 1,
       "type": "single",
-      "stem": "A patient has angioedema involving the lips, tongue, and arytenoids, with a normal trachea on CT. Which region of the airway is affected?",
+      "stem": "A patient has angioedema of the lips, tongue, and arytenoids while CT shows a normal trachea. Which airway region is primarily involved?",
       "options": [
-        "The lower airway: trachea and mainstem bronchi",
-        "The mouth, larynx, trachea, and bronchioles",
-        "The pharynx, larynx, trachea, and carina below the cords",
+        "The lower airway",
+        "The entire airway from mouth to bronchioles",
+        "The pharynx through carina",
         "The upper airway"
       ],
       "answer": [
@@ -32,12 +32,12 @@
       "id": "AIR-002",
       "set": 1,
       "type": "single",
-      "stem": "A CT shows a mass narrowing the left mainstem bronchus 3 cm below the carina. Which part of the airway is involved?",
+      "stem": "CT shows a mass narrowing the left mainstem bronchus 3 cm below the carina. Which airway division is involved?",
       "options": [
-        "The hypopharynx",
-        "The supraglottic larynx",
-        "The lower airway",
-        "The upper airway, which includes the larynx and pharynx"
+        "Hypopharynx",
+        "Supraglottic larynx",
+        "Lower airway",
+        "Upper airway"
       ],
       "answer": [
         2
@@ -56,12 +56,12 @@
       "id": "AIR-003",
       "set": 1,
       "type": "single",
-      "stem": "An infant has micrognathia and a cleft palate from abnormal first-arch development. Which embryologic structures give rise to the airway?",
+      "stem": "An infant has micrognathia and cleft palate from abnormal first-arch development. Which embryologic structures contribute to airway formation?",
       "options": [
-        "The somites",
+        "Somites",
         "Pharyngeal arches 1–4 and 6",
-        "Pharyngeal arches 1–3",
-        "The neural crest alone"
+        "Pharyngeal arches 1–3 only",
+        "Neural crest alone"
       ],
       "answer": [
         1
@@ -80,10 +80,10 @@
       "id": "AIR-004",
       "set": 1,
       "type": "multi",
-      "stem": "A patient breathing through a tracheostomy loses the normal functions of the nose. Which functions are bypassed? (Select 2)",
+      "stem": "A patient breathing through a tracheostomy bypasses which two important functions of the nose? (Select 2)",
       "options": [
         "Protection against aspiration",
-        "Warming of the trachea from the outside",
+        "External warming of the trachea",
         "Humidification",
         "Filtration",
         "Phonation",
@@ -107,7 +107,7 @@
       "id": "AIR-005",
       "set": 1,
       "type": "single",
-      "stem": "Before a nasal intubation, you topicalize the nasal mucosa. Which nerves carry sensation from the nose?",
+      "stem": "Before nasal intubation, which sensory innervation must be blocked to anesthetize the nasal mucosa effectively?",
       "options": [
         "Glossopharyngeal nerve",
         "Superior laryngeal nerve",
@@ -131,10 +131,10 @@
       "id": "AIR-006",
       "set": 1,
       "type": "single",
-      "stem": "A nasal intubation causes brisk epistaxis. Which arteries supply the nasal mucosa?",
+      "stem": "Brisk epistaxis occurs during nasal intubation. Which arterial supply is most relevant?",
       "options": [
         "Vertebral and basilar arteries",
-        "Inferior thyroid artery alone",
+        "Inferior thyroid artery",
         "Maxillary, ophthalmic, and facial arteries",
         "Superior thyroid and lingual arteries"
       ],
@@ -155,7 +155,7 @@
       "id": "AIR-007",
       "set": 1,
       "type": "single",
-      "stem": "Loss of upper-airway muscle tone during anesthesia produces obstruction behind the tongue. Which additional structure commonly contributes to the same collapsible segment?",
+      "stem": "Loss of upper-airway tone during anesthesia allows the tongue to obstruct the pharynx. Which structure commonly collapses with it?",
       "options": [
         "Hyoid bone",
         "Soft palate",
@@ -179,7 +179,7 @@
       "id": "AIR-008",
       "set": 1,
       "type": "multi",
-      "stem": "A pediatric anesthesia team is preparing for several children with known airway problems. Which congenital conditions predispose to airway obstruction? (Select 2)",
+      "stem": "Which two congenital conditions are especially associated with upper-airway obstruction? (Select 2)",
       "options": [
         "Marfan syndrome",
         "Cystic fibrosis",
@@ -206,12 +206,12 @@
       "id": "AIR-009",
       "set": 1,
       "type": "single",
-      "stem": "During a Mallampati exam, you see the soft palate rise as the patient breathes. Which statement about the palate is correct?",
+      "stem": "During airway examination, which palate description is anatomically correct?",
       "options": [
-        "The hard palate is posterior and mobile",
-        "The soft palate is anterior and fixed",
-        "Both segments are mobile",
-        "Hard palate anterior and fixed"
+        "Hard palate is posterior and mobile",
+        "Soft palate is anterior and fixed",
+        "Both palates are mobile",
+        "Hard palate is anterior and fixed"
       ],
       "answer": [
         3
@@ -230,12 +230,12 @@
       "id": "AIR-010",
       "set": 1,
       "type": "single",
-      "stem": "On an airway exam, you see the arches leading from the mouth into the throat, with the tonsils between them. What is this opening?",
+      "stem": "During oral examination, the opening bounded by the faucial arches with the tonsils between them is called what?",
       "options": [
-        "The piriform sinus",
-        "The glottis",
-        "The fauces",
-        "The vallecula"
+        "Piriform sinus",
+        "Glottis",
+        "Fauces",
+        "Vallecula"
       ],
       "answer": [
         2
@@ -254,12 +254,12 @@
       "id": "AIR-011",
       "set": 1,
       "type": "single",
-      "stem": "On a Mallampati exam, you see the soft palate, uvula, and fauces. Why does the fauces matter?",
+      "stem": "Why is visibility of the fauces useful during Mallampati assessment?",
       "options": [
-        "It marks the cricothyroid membrane",
-        "It distinguishes Mallampati class I and II from class III",
-        "It determines the ETT size",
-        "It predicts difficult mask ventilation alone"
+        "It identifies the cricothyroid membrane",
+        "It helps distinguish lower Mallampati classes from class III",
+        "It determines ETT size",
+        "It predicts mask ventilation alone"
       ],
       "answer": [
         1
@@ -278,12 +278,12 @@
       "id": "AIR-012",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a hypopharyngeal tumor seen on CT at about the level of C5–C6. Which pharyngeal segment is involved?",
+      "stem": "A tumor lies at approximately C5–C6 within the pharynx. Which segment is involved?",
       "options": [
-        "Hypopharynx, at C5–C6",
-        "Nasopharynx, at C1",
-        "Oropharynx, at C2–C3",
-        "Larynx, at C1–C2"
+        "Hypopharynx",
+        "Nasopharynx",
+        "Oropharynx",
+        "Larynx"
       ],
       "answer": [
         0
@@ -302,12 +302,12 @@
       "id": "AIR-013",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a deep propofol anesthetic regurgitates gastric contents into the pharynx. Which structure normally prevents this?",
+      "stem": "During deep anesthesia, regurgitated gastric contents reach the pharynx. Which structure normally acts as the principal barrier at the top of the esophagus?",
       "options": [
-        "The lower esophageal sphincter alone",
-        "The epiglottis",
-        "The vocal cords",
-        "The upper esophageal sphincter"
+        "Lower esophageal sphincter",
+        "Epiglottis",
+        "Vocal cords",
+        "Upper esophageal sphincter"
       ],
       "answer": [
         3
@@ -326,12 +326,12 @@
       "id": "AIR-014",
       "set": 1,
       "type": "single",
-      "stem": "During an awake fiberoptic intubation, the patient coughs as the scope touches the epiglottis despite a glossopharyngeal block. Which nerve was not blocked?",
+      "stem": "During awake fiberoptic intubation, touching the epiglottis still triggers coughing despite a glossopharyngeal block. Which sensory nerve was likely not anesthetized?",
       "options": [
-        "The glossopharyngeal nerve",
-        "The hypoglossal nerve",
-        "Internal superior laryngeal nerve",
-        "The recurrent laryngeal nerve"
+        "Glossopharyngeal nerve",
+        "Hypoglossal nerve",
+        "Internal branch of the superior laryngeal nerve",
+        "Recurrent laryngeal nerve"
       ],
       "answer": [
         2
@@ -350,7 +350,7 @@
       "id": "AIR-015",
       "set": 1,
       "type": "single",
-      "stem": "Which nerve provides motor innervation to all intrinsic laryngeal muscles except the cricothyroid?",
+      "stem": "Which nerve supplies motor function to all intrinsic laryngeal muscles except the cricothyroid?",
       "options": [
         "Hypoglossal nerve",
         "Recurrent laryngeal nerve",
@@ -374,7 +374,7 @@
       "id": "AIR-016",
       "set": 1,
       "type": "single",
-      "stem": "After neck surgery, a patient cannot tense the vocal cord effectively but has preserved recurrent-laryngeal motor function. Which muscle is most likely affected?",
+      "stem": "After neck surgery, a patient can move the vocal cords but cannot tense them effectively. Which muscle is most likely affected?",
       "options": [
         "Cricothyroid",
         "Posterior cricoarytenoid",
@@ -398,10 +398,10 @@
       "id": "AIR-017",
       "set": 1,
       "type": "single",
-      "stem": "After a thyroidectomy, a patient has a weak, breathy voice and coughs when drinking water. What is the MOST likely injury?",
+      "stem": "After thyroidectomy, a patient has a breathy voice and coughs when drinking liquids but no severe airway obstruction. Which injury is most likely?",
       "options": [
         "Bilateral superior laryngeal nerve injury",
-        "Hypoglossal nerve injury",
+        "Hypoglossal injury",
         "Facial nerve injury",
         "Unilateral recurrent laryngeal nerve injury"
       ],
@@ -422,12 +422,12 @@
       "id": "AIR-018",
       "set": 1,
       "type": "single",
-      "stem": "After a total thyroidectomy, a patient develops stridor and severe respiratory distress immediately after extubation. Her cords sit near midline and do not move. What is happening?",
+      "stem": "Immediately after thyroidectomy, a patient develops stridor and severe distress; both vocal cords are immobile near midline. What is the most likely cause?",
       "options": [
-        "Superior laryngeal nerve injury with voice fatigue",
-        "Laryngospasm that resolves with time",
-        "Bilateral RLN injury with both cords near midline",
-        "Unilateral RLN injury with normal breathing"
+        "Superior laryngeal nerve injury",
+        "Transient laryngospasm",
+        "Bilateral recurrent laryngeal nerve injury",
+        "Unilateral recurrent laryngeal nerve injury"
       ],
       "answer": [
         2
@@ -446,7 +446,7 @@
       "id": "AIR-019",
       "set": 1,
       "type": "multi",
-      "stem": "Which two cranial nerves provide the major motor and sensory innervation of the pharynx and larynx? (Select 2)",
+      "stem": "Which two cranial nerves provide the major sensory and motor innervation of the pharynx and larynx? (Select 2)",
       "options": [
         "Vagus nerve",
         "Phrenic nerve",
@@ -473,12 +473,12 @@
       "id": "AIR-020",
       "set": 1,
       "type": "single",
-      "stem": "On a neck CT, the larynx spans from the hyoid level down to the cricoid. Between which vertebral levels does it extend?",
+      "stem": "The larynx extends from the hyoid region to the cricoid. Which vertebral range best matches its location?",
       "options": [
-        "C3 to C6",
-        "C1 to C3",
-        "C6 to T1",
-        "T1 to T4"
+        "C3–C6",
+        "C1–C3",
+        "C6–T1",
+        "T1–T4"
       ],
       "answer": [
         0
@@ -497,12 +497,12 @@
       "id": "AIR-021",
       "set": 1,
       "type": "single",
-      "stem": "A trauma patient has fractures of the thyroid cartilage, the cricoid, and the epiglottis. Which group of cartilages are these?",
+      "stem": "A trauma patient fractures the thyroid cartilage, cricoid, and epiglottis. How are these structures classified?",
       "options": [
-        "The paired laryngeal cartilages",
-        "The tracheal rings",
-        "The bronchial cartilages",
-        "The three single laryngeal cartilages"
+        "Paired laryngeal cartilages",
+        "Tracheal rings",
+        "Bronchial cartilages",
+        "Three unpaired laryngeal cartilages"
       ],
       "answer": [
         3
@@ -521,9 +521,9 @@
       "id": "AIR-022",
       "set": 1,
       "type": "single",
-      "stem": "After traumatic intubation, an arytenoid is dislocated. Which classification correctly places this cartilage?",
+      "stem": "An arytenoid is dislocated after traumatic intubation. Which cartilage category does it belong to?",
       "options": [
-        "Tracheal cartilage ring",
+        "Tracheal ring",
         "Hyoid-associated cartilage",
         "Paired laryngeal cartilage",
         "Unpaired laryngeal cartilage"
@@ -545,14 +545,14 @@
       "id": "AIR-023",
       "set": 1,
       "type": "multi",
-      "stem": "Which are functions of the larynx? (Select 2)",
+      "stem": "Which two functions are primarily performed by the larynx? (Select 2)",
       "options": [
-        "Produces surfactant",
-        "Protects the lower airway from aspiration",
-        "Enables gag and cough reflexes",
-        "Regulates gastric emptying",
-        "Warms and humidifies inspired air",
-        "Performs gas exchange"
+        "Surfactant production",
+        "Protection of the lower airway from aspiration",
+        "Gag and cough reflex participation",
+        "Regulation of gastric emptying",
+        "Humidification",
+        "Gas exchange"
       ],
       "answer": [
         1,
@@ -572,12 +572,12 @@
       "id": "AIR-024",
       "set": 1,
       "type": "single",
-      "stem": "During a CICO emergency, you palpate a soft depression between the thyroid and cricoid cartilages. What is this structure?",
+      "stem": "During a cannot-intubate/cannot-oxygenate emergency, you palpate the membrane between thyroid and cricoid cartilages. Which structure is this?",
       "options": [
-        "The cricothyroid membrane",
-        "The thyrohyoid membrane",
-        "The tracheal ring",
-        "The hyoid bone"
+        "Cricothyroid membrane",
+        "Thyrohyoid membrane",
+        "Tracheal ring",
+        "Hyoid bone"
       ],
       "answer": [
         0
@@ -596,12 +596,12 @@
       "id": "AIR-025",
       "set": 1,
       "type": "single",
-      "stem": "To find the cricothyroid membrane, you first locate the \"Adam's apple.\" Where does the thyroid cartilage fuse anteriorly?",
+      "stem": "When identifying the cricothyroid membrane by landmarks, which anterior feature of the thyroid cartilage is palpated first?",
       "options": [
-        "At the cricoid ring",
-        "At the hyoid bone",
-        "At the vallecula",
-        "At the thyroid notch"
+        "Cricoid ring",
+        "Hyoid bone",
+        "Vallecula",
+        "Thyroid notch"
       ],
       "answer": [
         3
@@ -620,7 +620,7 @@
       "id": "AIR-026",
       "set": 1,
       "type": "single",
-      "stem": "Bleeding from the supraglottic larynx is traced to a branch of the superior thyroid artery. Which vessel is involved?",
+      "stem": "Bleeding from the supraglottic larynx is traced to a branch of the superior thyroid artery. Which branch is most likely involved?",
       "options": [
         "Facial artery",
         "Vertebral artery",
@@ -644,7 +644,7 @@
       "id": "AIR-027",
       "set": 1,
       "type": "single",
-      "stem": "Bleeding from the infraglottic larynx is traced to a branch of the inferior thyroid artery. Which vessel is involved?",
+      "stem": "Bleeding from the infraglottic larynx is traced to a branch of the inferior thyroid artery. Which vessel is most likely involved?",
       "options": [
         "Facial artery",
         "Inferior laryngeal artery",
@@ -668,7 +668,7 @@
       "id": "AIR-028",
       "set": 1,
       "type": "single",
-      "stem": "After a laryngeal nerve injury, a patient cannot fully close his glottis or tense his cords. Which muscles control these functions?",
+      "stem": "A laryngeal nerve injury prevents normal glottic closure and vocal-cord tension. Which muscle group performs these functions?",
       "options": [
         "Intrinsic laryngeal muscles",
         "Extrinsic laryngeal muscles",
@@ -692,7 +692,7 @@
       "id": "AIR-029",
       "set": 1,
       "type": "single",
-      "stem": "A patient after neck surgery has trouble elevating his larynx when swallowing. Which muscles position the larynx during swallowing and breathing?",
+      "stem": "A patient has impaired elevation and positioning of the larynx during swallowing. Which muscle group is most directly involved?",
       "options": [
         "Intrinsic laryngeal muscles",
         "Pharyngeal constrictors",
@@ -716,12 +716,12 @@
       "id": "AIR-030",
       "set": 1,
       "type": "single",
-      "stem": "During DL, you see a small pocket between the base of the tongue and the epiglottis. What is it?",
+      "stem": "During direct laryngoscopy, the depression between the tongue base and epiglottis is identified. What is it?",
       "options": [
-        "The glottis",
-        "The fauces",
-        "The vallecula",
-        "The piriform sinus"
+        "Glottis",
+        "Fauces",
+        "Vallecula",
+        "Piriform sinus"
       ],
       "answer": [
         2
@@ -740,12 +740,12 @@
       "id": "AIR-031",
       "set": 1,
       "type": "single",
-      "stem": "You use a Macintosh 3 blade and need to lift the epiglottis indirectly. Where should the tip be placed?",
+      "stem": "With a Macintosh blade, where should the tip be placed to elevate the epiglottis indirectly?",
       "options": [
-        "At the posterior pharyngeal wall",
-        "In the vallecula",
+        "Posterior pharyngeal wall",
+        "Vallecula",
         "Under the epiglottis",
-        "In the piriform sinus"
+        "Piriform sinus"
       ],
       "answer": [
         1
@@ -764,12 +764,12 @@
       "id": "AIR-032",
       "set": 1,
       "type": "single",
-      "stem": "An ETT tip sits 1 cm below the cricoid ring. Which part of the airway has it entered?",
+      "stem": "An ETT tip sits just below the cricoid cartilage. Which airway segment has it entered?",
       "options": [
-        "The upper trachea",
-        "The larynx above the cords",
-        "The right mainstem bronchus",
-        "The carina"
+        "Upper trachea",
+        "Larynx above the cords",
+        "Right mainstem bronchus",
+        "Carina"
       ],
       "answer": [
         0
@@ -788,12 +788,12 @@
       "id": "AIR-033",
       "set": 1,
       "type": "single",
-      "stem": "An adult's ETT is advanced through the cords. About how long is the trachea it travels down?",
+      "stem": "Approximately how long is the adult trachea from cricoid to carina?",
       "options": [
-        "About 2–5 cm",
-        "About 25–30 cm",
-        "About 40 cm",
-        "About 10–20 cm"
+        "2–5 cm",
+        "25–30 cm",
+        "40 cm",
+        "10–20 cm"
       ],
       "answer": [
         3
@@ -812,7 +812,7 @@
       "id": "AIR-034",
       "set": 1,
       "type": "single",
-      "stem": "On a bronchoscopy, you count the tracheal rings. About how many C-shaped rings should there be?",
+      "stem": "Bronchoscopy shows the normal adult tracheal cartilaginous framework. About how many C-shaped rings are expected?",
       "options": [
         "30–40",
         "60",
@@ -836,12 +836,12 @@
       "id": "AIR-035",
       "set": 1,
       "type": "single",
-      "stem": "An ETT cuff causes pressure injury at the narrowest complete ring in the airway. Which cartilage is this?",
+      "stem": "Which airway cartilage forms a complete ring and is especially important as a fixed anatomic landmark?",
       "options": [
-        "The first tracheal ring",
-        "The cricoid cartilage",
-        "The thyroid cartilage",
-        "The epiglottis"
+        "First tracheal ring",
+        "Cricoid cartilage",
+        "Thyroid cartilage",
+        "Epiglottis"
       ],
       "answer": [
         1
@@ -860,12 +860,12 @@
       "id": "AIR-036",
       "set": 1,
       "type": "single",
-      "stem": "When a patient coughs, the posterior tracheal wall narrows the lumen. Which structure does this, and what else does it allow?",
+      "stem": "During coughing, which posterior tracheal structure contracts to narrow the lumen while also permitting esophageal expansion when relaxed?",
       "options": [
-        "The trachealis muscle, which also allows esophageal expansion",
-        "The cricoid, which prevents esophageal reflux",
-        "The thyroid cartilage, which closes the glottis",
-        "The cricothyroid membrane, which controls tension"
+        "Trachealis muscle",
+        "Cricoid cartilage",
+        "Thyroid cartilage",
+        "Cricothyroid membrane"
       ],
       "answer": [
         0
@@ -884,12 +884,12 @@
       "id": "AIR-037",
       "set": 1,
       "type": "single",
-      "stem": "A patient with asthma has bronchoconstriction in the smallest airways, which lack cartilage. At what diameter does cartilage disappear?",
+      "stem": "Bronchiolar smooth-muscle constriction is prominent in asthma. At what approximate airway diameter is cartilage no longer present?",
       "options": [
-        "About 5 mm, at the segmental bronchi",
-        "About 2 cm, at the trachea",
-        "About 1 cm, at the mainstem bronchi",
-        "About 0.6–0.8 mm, at the bronchioles"
+        "About 5 mm",
+        "About 2 cm",
+        "About 1 cm",
+        "About 0.6–0.8 mm"
       ],
       "answer": [
         3
@@ -908,12 +908,12 @@
       "id": "AIR-038",
       "set": 1,
       "type": "single",
-      "stem": "An ETT is advanced too far and enters a mainstem bronchus. Which mainstem bronchus has a steeper angle from the trachea?",
+      "stem": "An ETT advanced too far is more likely to enter the right mainstem bronchus. Which anatomic angle best explains this?",
       "options": [
-        "The right, at about 45–55°",
-        "The left, at about 10°",
-        "The right, at about 25–30°",
-        "The left, at about 25–30°"
+        "Right bronchus about 45–55°",
+        "Left bronchus about 10°",
+        "Right bronchus about 25–30°",
+        "Left bronchus about 25–30°"
       ],
       "answer": [
         2
@@ -932,10 +932,10 @@
       "id": "AIR-039",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, breath sounds are absent on the left. Why does endobronchial intubation usually go right?",
+      "stem": "Why does inadvertent mainstem intubation usually enter the right bronchus?",
       "options": [
         "The left bronchus is steeper",
-        "The right is steeper and straighter",
+        "The right bronchus is more vertical and straighter",
         "The left bronchus is shorter",
         "The right bronchus is narrower"
       ],
@@ -956,11 +956,11 @@
       "id": "AIR-040",
       "set": 1,
       "type": "single",
-      "stem": "A patient intubated with a right-sided double-lumen tube develops right upper lobe collapse. Why is the right upper lobe vulnerable?",
+      "stem": "A right-sided double-lumen tube causes right upper-lobe collapse. Which anatomy explains the vulnerability?",
       "options": [
-        "Its bronchus takes off about 2.5 cm below the carina",
-        "Its bronchus takes off 10 cm below the carina",
-        "Its bronchus is narrower than the left upper lobe bronchus",
+        "The right upper-lobe bronchus originates about 2.5 cm below the carina",
+        "It originates about 10 cm below the carina",
+        "It is narrower than the left upper-lobe bronchus",
         "It arises from the left mainstem"
       ],
       "answer": [
@@ -980,12 +980,12 @@
       "id": "AIR-041",
       "set": 1,
       "type": "single",
-      "stem": "A patient develops bronchoconstriction from vagal stimulation during airway manipulation. Which nerve provides parasympathetic innervation to the trachea?",
+      "stem": "Airway manipulation triggers vagally mediated bronchoconstriction. Which nerve supplies this parasympathetic input to the tracheobronchial tree?",
       "options": [
-        "The phrenic nerve",
-        "The glossopharyngeal nerve",
-        "The hypoglossal nerve",
-        "The vagus nerve"
+        "Phrenic nerve",
+        "Glossopharyngeal nerve",
+        "Hypoglossal nerve",
+        "Vagus nerve"
       ],
       "answer": [
         3
@@ -1004,12 +1004,12 @@
       "id": "AIR-042",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, the ETT is advanced too far and the patient coughs violently with a spike in BP and HR. Which structure is MOST likely being stimulated?",
+      "stem": "An ETT is advanced too deeply and causes violent coughing with sympathetic activation. Which structure is most likely being stimulated?",
       "options": [
-        "The cricoid ring at C6",
-        "The epiglottis in the upper airway",
-        "The carina, which is highly sensitive",
-        "The vocal cords, which are insensitive under GA"
+        "Cricoid ring",
+        "Epiglottis",
+        "Carina",
+        "Vocal cords"
       ],
       "answer": [
         2
@@ -1028,12 +1028,12 @@
       "id": "AIR-043",
       "set": 1,
       "type": "single",
-      "stem": "During which embryonic stage does the lung bud form?",
+      "stem": "During which stage of lung development does the lung bud first appear?",
       "options": [
-        "Terminal sac stage, weeks 24–36",
-        "Embryonic stage, weeks 4–7",
-        "Pseudoglandular stage, weeks 6–16",
-        "Canalicular stage, weeks 16–26"
+        "Terminal sac stage",
+        "Embryonic stage",
+        "Pseudoglandular stage",
+        "Canalicular stage"
       ],
       "answer": [
         1
@@ -1052,11 +1052,11 @@
       "id": "AIR-044",
       "set": 1,
       "type": "single",
-      "stem": "A fetal lung development lecture covers branching of the airway into its segments. By what point do bronchopulmonary segments appear?",
+      "stem": "By approximately what developmental time are bronchopulmonary segments recognizable?",
       "options": [
-        "By day 42",
-        "By week 26",
-        "By week 36",
+        "Day 42",
+        "Week 26",
+        "Week 36",
         "After birth"
       ],
       "answer": [
@@ -1076,12 +1076,12 @@
       "id": "AIR-045",
       "set": 1,
       "type": "single",
-      "stem": "A 25-week preterm infant needs surfactant therapy. During which stage does surfactant production begin?",
+      "stem": "A 25-week premature infant requires exogenous surfactant. During which stage does endogenous surfactant production begin?",
       "options": [
-        "The pseudoglandular stage, weeks 5–16",
-        "The embryonic stage, weeks 3–5",
-        "The alveolar stage after birth",
-        "The canalicular stage, weeks 16–26"
+        "Pseudoglandular stage",
+        "Embryonic stage",
+        "Alveolar stage",
+        "Canalicular stage"
       ],
       "answer": [
         3
@@ -1100,12 +1100,12 @@
       "id": "AIR-046",
       "set": 1,
       "type": "single",
-      "stem": "A 24-week infant has severe respiratory failure. Why is gas exchange so limited at this age?",
+      "stem": "Why is gas exchange severely limited in an infant born at 24 weeks?",
       "options": [
         "Surfactant is overproduced",
-        "The airway is fully branched",
-        "The barrier is still forming",
-        "Alveoli are fully mature at 24 weeks"
+        "Airway branching is complete",
+        "The alveolar-capillary barrier is still developing",
+        "Alveoli are fully mature"
       ],
       "answer": [
         2
@@ -1124,12 +1124,12 @@
       "id": "AIR-047",
       "set": 1,
       "type": "single",
-      "stem": "A parent asks when postnatal alveolar development is essentially complete enough to approach the adult pattern. Which answer best matches the lecture?",
+      "stem": "When does postnatal alveolar development substantially approach the mature pattern described in the lecture?",
       "options": [
         "By 6 months",
         "Around 3 years and beyond",
         "At birth",
-        "By 36 weeks' gestation"
+        "By 36 weeks gestation"
       ],
       "answer": [
         1
@@ -1148,10 +1148,10 @@
       "id": "AIR-048",
       "set": 1,
       "type": "single",
-      "stem": "During which stage does rapid branching (≥16 generations) and terminal bronchiole formation occur?",
+      "stem": "During which stage does extensive branching produce terminal bronchioles?",
       "options": [
         "Pseudoglandular stage",
-        "Canalicular stage, weeks 16–26",
+        "Canalicular stage",
         "Terminal sac stage",
         "Maturation stage"
       ],
@@ -1172,12 +1172,12 @@
       "id": "AIR-049",
       "set": 1,
       "type": "single",
-      "stem": "After an interscalene block, a patient has dyspnea and an elevated hemidiaphragm. Which nerve was affected, and what are its roots?",
+      "stem": "After interscalene block, a patient develops ipsilateral diaphragmatic paralysis. Which nerve and roots were affected?",
       "options": [
-        "The vagus nerve, CN X",
-        "The recurrent laryngeal nerve, C6–C7",
-        "The accessory nerve, C1–C2",
-        "The phrenic nerve, C3–C5"
+        "Vagus nerve, CN X",
+        "Recurrent laryngeal nerve, C6–C7",
+        "Accessory nerve, C1–C2",
+        "Phrenic nerve, C3–C5"
       ],
       "answer": [
         3
@@ -1196,7 +1196,7 @@
       "id": "AIR-050",
       "set": 1,
       "type": "multi",
-      "stem": "Which two embryologic structures make major contributions to diaphragm development? (Select 2)",
+      "stem": "Which two embryologic structures make major contributions to diaphragm formation? (Select 2)",
       "options": [
         "First pharyngeal pouch",
         "Pharyngeal arches",
