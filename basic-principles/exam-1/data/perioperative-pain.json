@@ -7467,12 +7467,12 @@
       "id": "PAIN-302",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance, when should NSAIDs be discussed with the surgeon?",
+      "stem": "Near the end of a case, ketorolac is being considered but surgical hemostasis is still being assessed. Which step best integrates analgesia with procedure-specific bleeding concerns?",
       "options": [
-        "Before giving them, typically at the end of the case",
-        "After the patient is discharged from PACU",
-        "When pain is uncontrolled in PACU",
-        "Anesthesia decides on NSAIDs without the surgeon"
+        "Discuss NSAID use with the surgeon before administration",
+        "Wait until after PACU discharge",
+        "Give it automatically whenever pain is expected",
+        "Avoid involving the surgeon because NSAID decisions are exclusively anesthetic"
       ],
       "answer": [
         0
@@ -7563,9 +7563,9 @@
       "id": "PAIN-306",
       "set": 1,
       "type": "single",
-      "stem": "A patient becomes hypotensive after histamine-releasing opioids. What mechanism is MOST likely?",
+      "stem": "Shortly after morphine, a patient develops flushing and hypotension without bradycardia or evidence of hemorrhage. Which mechanism best explains the hemodynamic change?",
       "options": [
-        "Histamine-induced vasodilation",
+        "Histamine-mediated vasodilation",
         "Increased myocardial contractility",
         "Increased preload",
         "Alpha-adrenergic stimulation"
@@ -7587,12 +7587,12 @@
       "id": "PAIN-307",
       "set": 1,
       "type": "single",
-      "stem": "After a hip arthroplasty, a patient has an epidural infusion. How does epidural analgesia compare with systemic opioids?",
+      "stem": "After a major painful procedure, systemic opioid alone provides incomplete dynamic analgesia and causes sedation. Which expected advantage supports an appropriately selected epidural technique?",
       "options": [
-        "It provides superior analgesia",
-        "It is inferior to oral opioids",
-        "It is equal to IV opioids",
-        "It is contraindicated after hip surgery"
+        "Superior analgesia with potential opioid sparing",
+        "Inferior analgesia to oral opioids",
+        "No meaningful analgesic difference from systemic opioid",
+        "Universal contraindication after major surgery"
       ],
       "answer": [
         0
@@ -7611,12 +7611,12 @@
       "id": "PAIN-308",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a CPNB catheter for shoulder surgery. What outcome is expected?",
+      "stem": "A shoulder-surgery patient has a functioning continuous peripheral nerve-block catheter and requires little systemic opioid. Which outcome is most consistent with the technique?",
       "options": [
-        "Better analgesia with fewer opioid side effects",
-        "More opioid-related side effects",
-        "Higher infection risk than systemic opioids",
-        "No difference in pain control"
+        "Improved analgesia with fewer opioid-related adverse effects",
+        "More opioid-related adverse effects",
+        "No difference in pain control",
+        "Inevitable catheter infection"
       ],
       "answer": [
         0
@@ -7851,7 +7851,7 @@
       "id": "PAIN-318",
       "set": 1,
       "type": "single",
-      "stem": "How many mL of 1% lidocaine equal 270 mg?",
+      "stem": "A 60 kg patient has a calculated plain-lidocaine ceiling of 270 mg. If 1% lidocaine contains 10 mg/mL, what volume reaches that dose?",
       "options": [
         "27 mL",
         "2.7 mL",
@@ -8019,7 +8019,7 @@
       "id": "PAIN-325",
       "set": 1,
       "type": "single",
-      "stem": "You are planning PACU staffing. Which procedure type has the highest overall pain severity?",
+      "stem": "A hospital uses procedure-level pain severity to anticipate PACU analgesic workload. Which surgical category in the cited data has the highest overall pain severity?",
       "options": [
         "Orthopedic procedures",
         "Ophthalmologic procedures",
@@ -8121,12 +8121,12 @@
       "id": "PAIN-329",
       "set": 1,
       "type": "single",
-      "stem": "After a major case, a patient's glucose stays high and his wound heals slowly. Which effect of surgical stress contributes?",
+      "stem": "Despite adequate analgesia after major surgery, a patient develops hyperglycemia, protein catabolism, and delayed recovery. Which component of the surgical stress response best explains this pattern?",
       "options": [
-        "Catabolism and hyperglycemia",
+        "Catabolic neuroendocrine response with hyperglycemia",
         "Improved protein synthesis",
-        "Reduced cortisol",
-        "Lower glucose"
+        "Reduced cortisol release",
+        "Enhanced insulin sensitivity"
       ],
       "answer": [
         0
@@ -8193,12 +8193,12 @@
       "id": "PAIN-332",
       "set": 1,
       "type": "single",
-      "stem": "A patient undergoing MRI under sedation has pain from positioning. What is a nonpharmacologic intervention?",
+      "stem": "During MRI sedation, discomfort arises primarily from prolonged positioning rather than the underlying procedure. Which intervention addresses the mechanical cause without adding respiratory depressant medication?",
       "options": [
         "Repositioning and padding",
-        "Increase the opioid dose",
-        "Deepen sedation until the patient stops moving",
-        "Stop sedation immediately"
+        "Increase opioid dose",
+        "Deepen sedation until immobile",
+        "Stop all sedation immediately"
       ],
       "answer": [
         0
@@ -8385,7 +8385,7 @@
       "id": "PAIN-340",
       "set": 1,
       "type": "single",
-      "stem": "A patient with chronic pain has a neuropathic component. Which adjunct is MOST appropriate?",
+      "stem": "A chronic-pain patient describes a burning electric component with allodynia in addition to nociceptive back pain. Which adjunct specifically targets the neuropathic component?",
       "options": [
         "Gabapentin",
         "Acetaminophen alone",
@@ -8577,10 +8577,10 @@
       "id": "PAIN-348",
       "set": 1,
       "type": "single",
-      "stem": "A patient has sharp, well-localized incisional pain. What type is this?",
+      "stem": "Immediately after a skin incision, pain is sharp, precisely localized, and confined to superficial tissues without electric or referred features. Which category best fits?",
       "options": [
         "Superficial somatic pain",
-        "Deep somatic pain from muscle and fascia",
+        "Deep somatic pain",
         "Visceral pain",
         "Neuropathic pain"
       ],
@@ -8601,7 +8601,7 @@
       "id": "PAIN-349",
       "set": 1,
       "type": "single",
-      "stem": "A patient has dull, aching bone pain after fracture repair. What type is this?",
+      "stem": "After fracture repair, pain is dull, aching, and localized deep to the operative site in bone and surrounding tissues. Which category best fits?",
       "options": [
         "Deep somatic pain",
         "Superficial somatic pain",
