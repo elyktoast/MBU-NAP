@@ -8,10 +8,10 @@
       "id": "MISC-001",
       "set": 1,
       "type": "single",
-      "stem": "A quality initiative targets six defects at once: avoidable harm, nonevidence-based care, disregard of patient preferences, harmful delays, waste, and unequal treatment. Which framework organizes these targets?",
+      "stem": "A safety committee wants one framework that simultaneously targets preventable harm, evidence-based care, patient preferences, delays, waste, and unequal treatment. Which framework fits all six aims?",
       "options": [
         "The six IOM quality domains",
-        "The five WHO hand hygiene moments",
+        "The five WHO hand-hygiene moments",
         "The four ethical principles",
         "The six NHQDR core areas"
       ],
@@ -32,7 +32,7 @@
       "id": "MISC-002",
       "set": 1,
       "type": "single",
-      "stem": "A patient experiences hypoglycemia after waiting four hours in preop because of a scheduling failure. The care itself was appropriate once delivered. Which quality domain was primarily breached?",
+      "stem": "A patient becomes hypoglycemic after a four-hour preop delay caused by scheduling failure, although the eventual treatment is correct. Which quality aim was most directly violated?",
       "options": [
         "Timely",
         "Efficient",
@@ -56,7 +56,7 @@
       "id": "MISC-003",
       "set": 1,
       "type": "single",
-      "stem": "A department routinely opens airway kits before they are needed and discards many unused, without causing direct patient harm. Which quality domain is most directly compromised?",
+      "stem": "A department routinely opens airway kits that are never used and then discards them. Which quality aim is most directly compromised even if no patient is harmed?",
       "options": [
         "Efficient",
         "Timely",
@@ -80,7 +80,7 @@
       "id": "MISC-004",
       "set": 1,
       "type": "single",
-      "stem": "Two clinically identical patients request epidural analgesia, but one is denied solely because of insurance status. Which quality domain is violated?",
+      "stem": "Two clinically identical patients request epidural analgesia, but one is denied solely because of insurance status. Which quality aim is violated?",
       "options": [
         "Equitable",
         "Efficient",
@@ -104,7 +104,7 @@
       "id": "MISC-005",
       "set": 1,
       "type": "single",
-      "stem": "A faster and cheaper perioperative regimen is chosen even though current evidence shows it produces worse outcomes than the recommended treatment. Which quality domain is most directly violated?",
+      "stem": "A cheaper perioperative regimen is chosen despite evidence that it produces worse outcomes than the recommended treatment. Which quality domain is most directly violated?",
       "options": [
         "Effective",
         "Efficient",
@@ -128,7 +128,7 @@
       "id": "MISC-006",
       "set": 1,
       "type": "single",
-      "stem": "A sedative plan is medically reasonable, but the provider ignores the patient's clearly stated preference to avoid that drug and does not discuss alternatives. Which domain is most directly violated?",
+      "stem": "A medically reasonable sedative plan is chosen without discussing a patient's clearly stated preference to avoid that medication. Which quality domain is most directly compromised?",
       "options": [
         "Patient-centered",
         "Efficient",
@@ -152,7 +152,7 @@
       "id": "MISC-007",
       "set": 1,
       "type": "single",
-      "stem": "Barcode medication scanning is introduced specifically to reduce wrong-drug administration, even though it may slow workflow slightly. Which quality domain is the intervention primarily designed to improve?",
+      "stem": "Barcode medication scanning is introduced even though it adds a small workflow delay. Which quality aim is the intervention primarily intended to improve?",
       "options": [
         "Safe",
         "Timely",
@@ -176,12 +176,12 @@
       "id": "MISC-008",
       "set": 1,
       "type": "single",
-      "stem": "A department is tracing the historical basis for the modern US patient-safety and quality movement. Which pair of IOM reports should anchor that review?",
+      "stem": "A department is tracing the foundation of the modern US patient-safety movement. Which pair of landmark IOM reports should anchor the review?",
       "options": [
         "To Err Is Human (1999) and Crossing the Quality Chasm (2001)",
         "Healthy People 2030 and the National Healthcare Quality Report",
         "The Belmont Report and the AANA Code of Ethics",
-        "The WHO Surgical Safety Checklist and the APSF priorities"
+        "The WHO Surgical Safety Checklist and APSF priorities"
       ],
       "answer": [
         0
@@ -200,12 +200,12 @@
       "id": "MISC-009",
       "set": 1,
       "type": "single",
-      "stem": "A hospital board asks how many US deaths each year are now estimated to result from preventable hospital errors. Which range reflects current estimates?",
+      "stem": "A board asks for the contemporary estimate of annual US deaths attributed to preventable hospital errors. Which range best matches the lecture?",
       "options": [
         "250,000–400,000",
         "44,000–98,000",
         "10,000–20,000",
-        "Over 1 million"
+        "More than 1 million"
       ],
       "answer": [
         0
@@ -224,7 +224,7 @@
       "id": "MISC-010",
       "set": 1,
       "type": "single",
-      "stem": "What was the original IOM estimate of annual deaths from preventable hospital errors?",
+      "stem": "Which range was reported in the original IOM estimate of annual deaths from preventable hospital errors?",
       "options": [
         "44,000–98,000",
         "250,000–400,000",
@@ -248,12 +248,12 @@
       "id": "MISC-011",
       "set": 1,
       "type": "single",
-      "stem": "In one event, the intended cefazolin syringe actually contains vancomycin; in another, the clinician intentionally chooses a contraindicated drug because the allergy history was misunderstood. What common classification applies to both?",
+      "stem": "One case involves a mislabeled syringe; another involves choosing the wrong drug because the allergy history was misunderstood. What do the two events have in common?",
       "options": [
-        "Medical errors: either execution failed or the plan itself was wrong",
-        "Adverse events, because both necessarily caused harm",
-        "Expected complications despite correct care",
-        "Deviations from surgeon preference"
+        "Both are medical errors, whether execution failed or the plan itself was wrong",
+        "Both are adverse events only if permanent harm occurred",
+        "Both are expected complications of anesthesia",
+        "Both are deviations from surgeon preference rather than medical errors"
       ],
       "answer": [
         0
@@ -272,7 +272,7 @@
       "id": "MISC-012",
       "set": 1,
       "type": "single",
-      "stem": "A department reviews medication events using the lecture's broad error categories. Which contributor is expected to account for the largest share, even when system conditions influence the mistake?",
+      "stem": "When medication events are classified broadly, which contributor is expected to account for the largest share even though system conditions often shape the event?",
       "options": [
         "Human error",
         "Equipment failure",
@@ -296,11 +296,11 @@
       "id": "MISC-013",
       "set": 1,
       "type": "single",
-      "stem": "A chest radiograph is obtained promptly, but pneumonia is missed because the image is interpreted incorrectly, delaying treatment for two days. Which error category best fits the primary failure?",
+      "stem": "A chest radiograph is obtained on time, but pneumonia is missed because the image is interpreted incorrectly. Which error category best fits the primary failure?",
       "options": [
         "Diagnostic error",
         "Treatment error",
-        "Preventative failure",
+        "Preventive failure",
         "Communication breakdown"
       ],
       "answer": [
@@ -320,11 +320,11 @@
       "id": "MISC-014",
       "set": 1,
       "type": "single",
-      "stem": "The correct antibiotic plan is clindamycin because of a documented allergy, but cefazolin is administered instead. Which error category best describes the event?",
+      "stem": "The correct antibiotic is clindamycin because of a known allergy, but cefazolin is administered instead. Which error category best describes the event?",
       "options": [
         "Treatment error",
         "Diagnostic error",
-        "Preventative failure",
+        "Preventive failure",
         "Communication breakdown"
       ],
       "answer": [
@@ -344,12 +344,12 @@
       "id": "MISC-015",
       "set": 1,
       "type": "single",
-      "stem": "A serious allergy is correctly identified in preop, but that information is not transmitted during handoff and the OR team never sees it. Which error category best captures the primary breakdown?",
+      "stem": "A serious allergy is identified correctly in preop, but the information is lost during handoff and the OR team never sees it. Which error category best captures the primary failure?",
       "options": [
         "Communication breakdown",
         "Diagnostic error",
         "Treatment error",
-        "Preventative failure in routine safety checks"
+        "Preventive failure"
       ],
       "answer": [
         0
@@ -368,9 +368,9 @@
       "id": "MISC-016",
       "set": 1,
       "type": "single",
-      "stem": "No equipment malfunction occurs, but the team knowingly bypasses the routine anesthesia-machine checkout and a preventable hazard goes undetected. Which error category best fits the failure?",
+      "stem": "The team knowingly skips the routine anesthesia-machine checkout and a preventable hazard goes undetected. Which error category best fits this failure?",
       "options": [
-        "Preventative failure",
+        "Preventive failure",
         "Treatment error",
         "Diagnostic error",
         "Communication breakdown"
@@ -392,11 +392,11 @@
       "id": "MISC-017",
       "set": 1,
       "type": "single",
-      "stem": "A 10-fold vasopressor overdose causes only transient hypertension and no lasting injury. What obligation remains despite the absence of permanent harm?",
+      "stem": "A 10-fold vasopressor overdose causes only transient hypertension without lasting injury. Which professional obligation remains?",
       "options": [
         "Disclose the error to the patient",
         "Disclose only if permanent harm occurred",
-        "Report internally without informing the patient",
+        "Report internally but do not inform the patient",
         "Leave disclosure entirely to the surgeon"
       ],
       "answer": [
@@ -416,11 +416,11 @@
       "id": "MISC-018",
       "set": 1,
       "type": "single",
-      "stem": "Barcode scanning, pharmacy verification, and an independent double-check are all intended to block the same medication error. In the Swiss cheese model, what do these safeguards represent?",
+      "stem": "Barcode scanning, pharmacy verification, and an independent double-check all exist to stop the same medication error. In the Swiss cheese model, what do these safeguards represent?",
       "options": [
-        "Slices, with each slice serving as a layer of defense",
-        "Holes, with each safeguard itself representing a system flaw",
-        "The hazard moving through the system",
+        "Separate defensive layers, or slices",
+        "Holes within the defenses",
+        "The hazard itself",
         "The final adverse outcome"
       ],
       "answer": [
@@ -440,11 +440,11 @@
       "id": "MISC-019",
       "set": 1,
       "type": "single",
-      "stem": "The barcode scanner is broken, pharmacy staffing is thin, and the independent double-check is skipped. In the Swiss cheese model, what do these conditions represent?",
+      "stem": "The barcode scanner is broken, pharmacy staffing is thin, and the independent double-check is skipped. In the Swiss cheese model, what do these weaknesses represent?",
       "options": [
-        "Holes, or weaknesses within defensive layers",
-        "Slices, or intact layers of defense",
-        "The final adverse outcome",
+        "Holes within defensive layers",
+        "Intact defensive slices",
+        "The adverse outcome itself",
         "Patient-specific risk factors"
       ],
       "answer": [
@@ -464,12 +464,12 @@
       "id": "MISC-020",
       "set": 1,
       "type": "single",
-      "stem": "Wrong-site surgery occurs despite site marking, consent verification, and a time-out because small weaknesses in each safeguard align during the same case. Which model best explains the event?",
+      "stem": "Wrong-site surgery occurs because small weaknesses in site marking, consent verification, and the time-out align in the same case. Which concept best explains the event?",
       "options": [
-        "The Swiss cheese model: holes in multiple defenses aligned",
-        "A single defense layer failed completely",
-        "One provider's error alone explains the event",
-        "The patient's comorbidities overwhelmed the system"
+        "Swiss cheese model with aligned holes across multiple defenses",
+        "Failure of a single defense layer",
+        "One provider's mistake alone",
+        "Patient comorbidity overwhelming the system"
       ],
       "answer": [
         0
@@ -488,12 +488,12 @@
       "id": "MISC-021",
       "set": 1,
       "type": "single",
-      "stem": "A safety lecture uses a diagram of stacked cheese slices with holes to explain how errors pass through defenses. Who developed this model?",
+      "stem": "Who developed the Swiss cheese model used to explain how hazards pass through imperfect defense layers?",
       "options": [
-        "James Reason, 1990",
-        "Donald Berwick, 1999",
-        "Avedis Donabedian, 1966",
-        "Lucian Leape, 2001"
+        "James Reason",
+        "Donald Berwick",
+        "Avedis Donabedian",
+        "Lucian Leape"
       ],
       "answer": [
         0
@@ -512,12 +512,12 @@
       "id": "MISC-022",
       "set": 1,
       "type": "single",
-      "stem": "A wrong-drug event occurs: the pharmacy labeled a syringe incorrectly, the double-check was skipped, and the barcode scanner was broken. How does the Swiss cheese model explain this?",
+      "stem": "A wrong-drug event follows an incorrect pharmacy label, skipped double-check, and broken barcode scanner. Which interpretation best matches the Swiss cheese model?",
       "options": [
-        "Several layered defenses failed at once, letting the error through",
-        "Two failed layers, either of which alone would cause harm",
-        "The patient's condition made the error unavoidable",
-        "The error proves checklists and double-checks do not work"
+        "Multiple defense failures aligned and allowed the hazard to reach the patient",
+        "Any one failed layer would necessarily have caused harm by itself",
+        "The patient's condition made the event unavoidable",
+        "The event proves layered safeguards are ineffective"
       ],
       "answer": [
         0
@@ -536,12 +536,12 @@
       "id": "MISC-023",
       "set": 1,
       "type": "single",
-      "stem": "What is the focus of quality assurance and continuous quality improvement programs?",
+      "stem": "What should quality assurance and continuous quality improvement programs primarily examine?",
       "options": [
-        "Processes and systems in both successes and failures",
-        "Punishing individuals who make errors",
-        "Reducing staffing costs",
-        "Reviewing sentinel events and ignoring successes"
+        "Processes and systems in both successful and failed care",
+        "Punishment of individuals who make errors",
+        "Staffing-cost reduction",
+        "Only sentinel events and never successful processes"
       ],
       "answer": [
         0
@@ -560,12 +560,12 @@
       "id": "MISC-024",
       "set": 1,
       "type": "single",
-      "stem": "Your department's QA program tracks PONV and reintubation rates and reports them to payers. What are such programs commonly tied to?",
+      "stem": "A department tracks PONV and reintubation rates and reports them externally. What are such quality programs commonly linked to?",
       "options": [
-        "Reimbursement benchmarks and practice standards",
+        "Practice standards and reimbursement benchmarks",
         "Surgeon preference scores",
-        "Surgeon productivity metrics",
-        "Equipment purchasing decisions"
+        "Surgeon productivity",
+        "Equipment purchasing"
       ],
       "answer": [
         0
@@ -584,7 +584,7 @@
       "id": "MISC-025",
       "set": 1,
       "type": "multi",
-      "stem": "Which six core areas does the National Healthcare Quality and Disparities Report grade? (Select 2)",
+      "stem": "Which two items are among the NHQDR core quality areas? (Select 2)",
       "options": [
         "Patient safety",
         "Care coordination",
@@ -611,7 +611,7 @@
       "id": "MISC-026",
       "set": 1,
       "type": "single",
-      "stem": "A health system expands vaccination clinics and smoking cessation programs. Which NHQDR core area does this address?",
+      "stem": "A health system expands vaccination clinics and smoking-cessation programs. Which NHQDR core area is being addressed?",
       "options": [
         "Healthy living",
         "Patient safety",
@@ -635,7 +635,7 @@
       "id": "MISC-027",
       "set": 1,
       "type": "single",
-      "stem": "Which NHQDR core area covers protection from avoidable errors and hospital-acquired infections?",
+      "stem": "Which NHQDR core area focuses on avoiding preventable errors and hospital-acquired infections?",
       "options": [
         "Patient safety",
         "Care affordability",
@@ -659,12 +659,12 @@
       "id": "MISC-028",
       "set": 1,
       "type": "single",
-      "stem": "A hospital had 12.5 postoperative sepsis cases per 1,000 surgeries in 2016. If it matched the national 31.9% drop by 2020, about what would its rate be?",
+      "stem": "A hospital's postoperative sepsis rate is 12.5 per 1,000 operations. If it improves by the same 31.9% reported nationally, approximately what rate would remain?",
       "options": [
-        "About 8.5 per 1,000",
-        "About 4.0 per 1,000",
-        "About 10.5 per 1,000",
-        "About 11.9 per 1,000"
+        "8.5 per 1,000",
+        "4.0 per 1,000",
+        "10.5 per 1,000",
+        "11.9 per 1,000"
       ],
       "answer": [
         0
@@ -683,12 +683,12 @@
       "id": "MISC-029",
       "set": 1,
       "type": "single",
-      "stem": "Your state cut opioid prescription limits years ago, yet overdose deaths keep rising. What MOST explains the modest effect?",
+      "stem": "Opioid prescribing restrictions were implemented, yet overdose deaths continued to rise. Which trend best explains why prescription limits alone had only modest impact?",
       "options": [
-        "Much of the recent rise comes from synthetic opioids such as illicit fentanyl",
-        "Prescribing limits were not enforced",
-        "Most deaths now come from benzodiazepines",
-        "Natural opioids cause most deaths"
+        "A growing share of deaths involved synthetic opioids such as illicit fentanyl",
+        "Prescription limits were never enforced",
+        "Benzodiazepines became the leading cause of overdose death",
+        "Natural opioids caused most recent deaths"
       ],
       "answer": [
         0
@@ -707,10 +707,10 @@
       "id": "MISC-030",
       "set": 1,
       "type": "single",
-      "stem": "A pediatric anesthesia practice notes rising adolescent anxiety and depression among its patients. Which group has the most limited access to mental health treatment?",
+      "stem": "A pediatric anesthesia practice is addressing rising anxiety and depression among adolescents. Which group is described as having the most limited access to mental-health treatment?",
       "options": [
         "Low-income and Hispanic youth",
-        "Adults over 65",
+        "Adults older than 65",
         "Privately insured urban adults",
         "Rural surgical patients"
       ],
@@ -731,7 +731,7 @@
       "id": "MISC-031",
       "set": 1,
       "type": "single",
-      "stem": "What kidney failure treatment does the 2023 report say is preferred but accessible to relatively few?",
+      "stem": "Which kidney-failure treatment is preferred but remains accessible to relatively few patients according to the cited report?",
       "options": [
         "Kidney transplantation",
         "Peritoneal dialysis",
@@ -755,11 +755,11 @@
       "id": "MISC-032",
       "set": 1,
       "type": "single",
-      "stem": "Which group reports a higher burden of healthcare costs per the 2023 findings?",
+      "stem": "Which insurance group was reported to experience a higher burden of healthcare costs in the cited findings?",
       "options": [
-        "Those with private health insurance",
-        "Those with Medicare, not private coverage",
-        "Those with no insurance",
+        "People with private health insurance",
+        "People with Medicare rather than private insurance",
+        "People without insurance",
         "Veterans"
       ],
       "answer": [
@@ -779,12 +779,12 @@
       "id": "MISC-033",
       "set": 1,
       "type": "single",
-      "stem": "A health policy class compares the US with peer nations. Which 2021 life expectancy comparison is accurate?",
+      "stem": "Which 2021 life-expectancy comparison best reflects the cited US-versus-peer-nation data?",
       "options": [
-        "US 76.1 years versus 82.4 in similar nations",
-        "US 82.4 years versus 76.1 in similar nations",
-        "US 70.2 years versus 78.5 in similar nations",
-        "US 79.0 years versus 80.0 in similar nations"
+        "US 76.1 years versus 82.4 years in similar nations",
+        "US 82.4 years versus 76.1 years in similar nations",
+        "US 70.2 years versus 78.5 years in similar nations",
+        "US 79.0 years versus 80.0 years in similar nations"
       ],
       "answer": [
         0
@@ -803,7 +803,7 @@
       "id": "MISC-034",
       "set": 1,
       "type": "multi",
-      "stem": "A public health report explains why US life expectancy lags peer nations. Which causes of premature death contribute? (Select 4)",
+      "stem": "Which four causes contribute importantly to premature US mortality compared with peer nations? (Select 4)",
       "options": [
         "Unintentional injury such as overdose",
         "Liver disease",
@@ -832,7 +832,7 @@
       "id": "MISC-035",
       "set": 1,
       "type": "single",
-      "stem": "In a preop clinic, you counsel patients on cardiovascular risk. Which is the leading cause of death in the US?",
+      "stem": "Which condition remains the leading cause of death in the United States and therefore a major perioperative risk focus?",
       "options": [
         "Heart disease",
         "Cancer",
@@ -856,7 +856,7 @@
       "id": "MISC-036",
       "set": 1,
       "type": "single",
-      "stem": "A trauma prevention program notes that injuries such as overdoses and crashes rank high among US causes of death. Where does unintentional injury rank?",
+      "stem": "Where does unintentional injury rank among leading US causes of death in the cited material?",
       "options": [
         "Third",
         "First",
@@ -880,12 +880,12 @@
       "id": "MISC-037",
       "set": 1,
       "type": "single",
-      "stem": "Two patients receive identical surgical care, but one lives in unstable housing with no transportation and has worse outcomes. How do social determinants compare with healthcare delivery in shaping outcomes?",
+      "stem": "Two patients receive equivalent medical care, but one has unstable housing and no transportation and experiences worse outcomes. What principle does this illustrate?",
       "options": [
-        "SDOH have a stronger influence on outcomes",
-        "SDOH have a weaker influence on outcomes",
-        "SDOH matter about as much as healthcare delivery",
-        "SDOH matter mainly in pediatric patients"
+        "Social determinants can influence outcomes more strongly than healthcare delivery alone",
+        "Social determinants have little effect compared with clinical care",
+        "Social determinants matter only in pediatrics",
+        "Healthcare delivery fully determines outcomes"
       ],
       "answer": [
         0
@@ -904,7 +904,7 @@
       "id": "MISC-038",
       "set": 1,
       "type": "multi",
-      "stem": "Which are the Healthy People 2030 SDOH domains? (Select 4)",
+      "stem": "Which four items are Healthy People 2030 social-determinants-of-health domains? (Select 4)",
       "options": [
         "Economic stability",
         "Neighborhood and built environment",
@@ -933,7 +933,7 @@
       "id": "MISC-039",
       "set": 1,
       "type": "single",
-      "stem": "A patient cannot afford transportation to preop testing and misses the appointment. Which SDOH domain is MOST involved?",
+      "stem": "A patient misses preop testing because transportation is unaffordable. Which social-determinant domain is most directly involved?",
       "options": [
         "Economic stability",
         "Education access and quality",
@@ -957,11 +957,11 @@
       "id": "MISC-040",
       "set": 1,
       "type": "single",
-      "stem": "A patient lives in an area with no pharmacy and unsafe walking routes. Which SDOH domain applies?",
+      "stem": "A patient lives in an area without a pharmacy and with unsafe walking routes. Which social-determinant domain best fits?",
       "options": [
         "Neighborhood and built environment",
         "Education access and quality",
-        "Economic stability and household income",
+        "Economic stability",
         "Social and community context"
       ],
       "answer": [
@@ -981,7 +981,7 @@
       "id": "MISC-041",
       "set": 1,
       "type": "single",
-      "stem": "A patient has low health literacy and cannot understand discharge instructions. Which SDOH domain is MOST involved?",
+      "stem": "A patient cannot understand discharge instructions because of low health literacy. Which social-determinant domain is most directly involved?",
       "options": [
         "Education access and quality",
         "Neighborhood and built environment",
@@ -1005,12 +1005,12 @@
       "id": "MISC-042",
       "set": 1,
       "type": "single",
-      "stem": "A patient scheduled for outpatient surgery lives alone, has no car, and cannot afford her medications. When should these needs be assessed?",
+      "stem": "A patient scheduled for outpatient surgery lives alone, lacks transportation, and cannot afford medications. When should these barriers be identified?",
       "options": [
-        "During care coordination, where they are prioritized",
-        "At discharge, when follow-up is planned",
-        "For uninsured patients alone",
-        "After a complication has occurred"
+        "During care coordination before they disrupt the plan",
+        "Only at discharge",
+        "Only if the patient is uninsured",
+        "After a complication occurs"
       ],
       "answer": [
         0
@@ -1029,12 +1029,12 @@
       "id": "MISC-043",
       "set": 1,
       "type": "single",
-      "stem": "An anesthesia department launches a project to make sure its rural satellite site follows the same evidence-based protocols as the main campus. Which ASA equity priority does this reflect?",
+      "stem": "An anesthesia department standardizes evidence-based protocols across both its main hospital and rural satellite. Which equity priority does this most directly support?",
       "options": [
         "High-quality perioperative care for all populations",
-        "Access to pain management",
-        "Pediatric respiratory risk",
-        "Lowering anesthesia costs"
+        "Access to pain management only",
+        "Pediatric respiratory safety",
+        "Lower anesthesia costs"
       ],
       "answer": [
         0
@@ -1053,7 +1053,7 @@
       "id": "MISC-044",
       "set": 1,
       "type": "single",
-      "stem": "Black, American Indian, and Alaska Native patients received lower quality care than White patients for what share of measures?",
+      "stem": "According to the cited disparity data, Black, American Indian, and Alaska Native patients received lower-quality care than White patients for approximately what proportion of measures?",
       "options": [
         "About 40%",
         "About 10%",
@@ -1077,14 +1077,14 @@
       "id": "MISC-045",
       "set": 1,
       "type": "multi",
-      "stem": "Which safety measures showed \"worse care\" for Black adults? (Select 2)",
+      "stem": "Which two postoperative safety measures were cited as showing worse care for Black adults? (Select 2)",
       "options": [
         "Postoperative sepsis diagnoses",
         "Postoperative pulmonary embolism",
-        "Lower rates of postoperative delirium",
-        "Lower rates of PONV",
+        "Lower delirium rates",
+        "Lower PONV rates",
         "Shorter hospital stays",
-        "Fewer surgical site infections"
+        "Fewer surgical-site infections"
       ],
       "answer": [
         0,
@@ -1104,12 +1104,12 @@
       "id": "MISC-046",
       "set": 1,
       "type": "single",
-      "stem": "A labor unit audit finds that Black and Hispanic women receive epidurals at lower rates than white women with similar pain scores. What disparity does this show?",
+      "stem": "An audit finds Black and Hispanic women with similar labor pain scores receive epidural analgesia less often than White women. What disparity does this demonstrate?",
       "options": [
-        "Minority women less often receive epidural labor analgesia",
-        "Minority women request epidurals more often",
-        "Epidural use is equal across groups",
-        "Minority women have lower pain scores"
+        "Lower access to epidural labor analgesia among minority women",
+        "Higher epidural-request rates among minority women",
+        "Equal epidural use across groups",
+        "Lower pain severity among minority women"
       ],
       "answer": [
         0
@@ -1128,12 +1128,12 @@
       "id": "MISC-047",
       "set": 1,
       "type": "single",
-      "stem": "A woman without a labor epidural needs an emergency cesarean and receives GA. Why does this matter in the equity discussion?",
+      "stem": "Why can lower epidural use during labor matter when an emergency cesarean becomes necessary?",
       "options": [
-        "GA raises risk and delays bonding with the newborn",
-        "GA is safer than neuraxial for cesarean",
-        "GA shortens the recovery",
-        "GA is faster to place in an emergency"
+        "Without a functioning neuraxial catheter, general anesthesia may be required, adding risk and delaying maternal-newborn interaction",
+        "General anesthesia is safer than neuraxial anesthesia for cesarean delivery",
+        "General anesthesia shortens recovery",
+        "General anesthesia eliminates airway risk"
       ],
       "answer": [
         0
@@ -1152,12 +1152,12 @@
       "id": "MISC-048",
       "set": 1,
       "type": "single",
-      "stem": "How much more likely are minority women to die of pregnancy-related causes?",
+      "stem": "How much higher is pregnancy-related mortality reported to be among minority women in the cited material?",
       "options": [
-        "Two to three times",
-        "About 10% more than white women",
-        "About 50% more",
-        "Ten times"
+        "Two to three times higher",
+        "About 10% higher",
+        "About 50% higher",
+        "Ten times higher"
       ],
       "answer": [
         0
@@ -1176,11 +1176,11 @@
       "id": "MISC-049",
       "set": 1,
       "type": "single",
-      "stem": "A department creates a program to ensure patients with sickle cell disease get timely, adequate analgesia in the ED and OR. Which ASA equity priority is this?",
+      "stem": "A program ensures patients with sickle cell disease receive timely and adequate analgesia in the ED and OR. Which ASA equity priority does this most directly address?",
       "options": [
         "Access to pain management",
-        "High-quality perioperative care for all",
-        "Pediatric respiratory risk",
+        "High-quality perioperative care for all populations",
+        "Pediatric respiratory safety",
         "Anesthesia workforce diversity"
       ],
       "answer": [
@@ -1200,10 +1200,10 @@
       "id": "MISC-050",
       "set": 1,
       "type": "single",
-      "stem": "A study shows Black patients with long-bone fractures receive less analgesia than white patients with the same injuries. What contributes to this disparity?",
+      "stem": "Black patients with long-bone fractures receive less analgesia than White patients with comparable injuries. Which factor is cited as contributing to this disparity?",
       "options": [
         "False clinician beliefs about biological differences in pain",
-        "True biological differences in pain perception by race",
+        "True race-based biological differences in pain perception",
         "Patient refusal of analgesics",
         "National opioid shortages"
       ],
