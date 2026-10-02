@@ -1241,12 +1241,12 @@
       "id": "PAIN-051",
       "set": 1,
       "type": "single",
-      "stem": "A PACU charts pain only as \"comfortable\" or \"uncomfortable.\" What does the guideline require?",
+      "stem": "A PACU patient is quiet after opioid administration but still reports substantial pain when asked. Which documentation method BEST supports serial treatment decisions?",
       "options": [
-        "A validated pain assessment tool",
-        "Vital signs to judge pain",
-        "The surgeon's estimate",
-        "No standardized tool"
+        "Record scores using a validated pain assessment tool",
+        "Document only whether the patient appears comfortable",
+        "Use heart rate and blood pressure as the primary pain measure",
+        "Use the clinician's impression instead of patient report"
       ],
       "answer": [
         0
@@ -1265,12 +1265,12 @@
       "id": "PAIN-052",
       "set": 1,
       "type": "single",
-      "stem": "What happens when pain is poorly managed after surgery?",
+      "stem": "A patient has severe postoperative pain that remains poorly controlled for days. Which consequence is MOST important when planning early aggressive analgesia?",
       "options": [
-        "PNS and CNS changes can produce chronic pain",
-        "Pain resolves without long-term effects",
-        "Opioid requirements decrease",
-        "The patient recovers faster"
+        "Persistent nociceptive input can drive peripheral and central nervous system changes associated with chronic pain",
+        "Untreated acute pain usually reduces later analgesic requirements",
+        "Persistent pain prevents central sensitization through adaptation",
+        "Long-term pain risk is unrelated to acute postoperative pain control"
       ],
       "answer": [
         0
@@ -1394,12 +1394,12 @@
       "id": "PAIN-057",
       "set": 1,
       "type": "single",
-      "stem": "For most surgical patients, which route of analgesic delivery is used MOST often perioperatively?",
+      "stem": "A patient needs rapidly titratable analgesia during the immediate perioperative period. Which delivery route BEST permits repeated dose adjustment to effect?",
       "options": [
-        "IV push, infusion, or PCA",
-        "Rectal",
-        "Intramuscular",
-        "Transdermal"
+        "IV push, infusion, or patient-controlled analgesia",
+        "Transdermal delivery",
+        "Intramuscular injection",
+        "Rectal administration"
       ],
       "answer": [
         0
@@ -1418,12 +1418,12 @@
       "id": "PAIN-058",
       "set": 1,
       "type": "single",
-      "stem": "An ambulatory patient is ready for discharge after a knee arthroscopy and will manage pain at home. Which routes are MOST useful now?",
+      "stem": "An ambulatory patient has controlled pain, tolerates intake, and is preparing for discharge after knee arthroscopy. Which analgesic route is MOST practical for continued home management?",
       "options": [
-        "Oral and transdermal routes",
-        "IV boluses titrated in PACU",
-        "Epidural infusion at home",
-        "Intrathecal morphine"
+        "Oral medication, with transdermal therapy when otherwise appropriate",
+        "Repeated IV boluses after discharge",
+        "Continuous epidural analgesia for routine home use",
+        "Single-shot intrathecal morphine as the routine discharge plan"
       ],
       "answer": [
         0
@@ -1466,11 +1466,11 @@
       "id": "PAIN-060",
       "set": 1,
       "type": "single",
-      "stem": "After a shoulder replacement, a catheter near the brachial plexus infuses ropivacaine for 3 days. What is this technique called?",
+      "stem": "After shoulder arthroplasty, ropivacaine is infused for several days through a catheter positioned adjacent to the brachial plexus. Which analgesic strategy is being used?",
       "options": [
-        "CPNB",
-        "Patient-controlled analgesia",
-        "Epidural analgesia",
+        "Continuous peripheral nerve block",
+        "IV patient-controlled analgesia",
+        "Continuous epidural analgesia",
         "Intrathecal infusion"
       ],
       "answer": [
@@ -1490,12 +1490,12 @@
       "id": "PAIN-061",
       "set": 1,
       "type": "single",
-      "stem": "What spinal technique is recommended for ambulatory surgery to avoid prolonged motor block?",
+      "stem": "For ambulatory knee arthroscopy, the anesthetic plan must provide surgical spinal anesthesia yet minimize delayed ambulation from motor block. Which strategy BEST fits that goal?",
       "options": [
-        "Smaller local anesthetic doses plus a lipophilic opioid",
-        "Larger local anesthetic doses without opioid",
-        "Intrathecal morphine alone",
-        "Epinephrine added to high-dose hyperbaric bupivacaine"
+        "Use a smaller intrathecal local-anesthetic dose with a lipophilic opioid",
+        "Increase the intrathecal local-anesthetic dose and omit opioid",
+        "Use intrathecal morphine alone as the surgical anesthetic",
+        "Add epinephrine to a high-dose bupivacaine spinal to prolong motor block"
       ],
       "answer": [
         0
@@ -1619,12 +1619,12 @@
       "id": "PAIN-066",
       "set": 1,
       "type": "single",
-      "stem": "A colleague asks whether an epidural is worth the effort for a thoracotomy. What did meta-analyses show?",
+      "stem": "A thoracotomy patient is expected to have severe dynamic pain that could impair coughing and ventilation. Compared with systemic opioids alone, what does the cited evidence support for epidural analgesia?",
       "options": [
-        "Epidural analgesia is superior to systemic opioids",
-        "Systemic opioids are superior to epidural analgesia",
-        "Epidural and systemic opioids are equal",
-        "Epidurals increase pain scores"
+        "Superior analgesia",
+        "Inferior analgesia",
+        "Equivalent analgesia with no meaningful difference",
+        "Higher pain scores despite opioid sparing"
       ],
       "answer": [
         0
@@ -1691,12 +1691,12 @@
       "id": "PAIN-069",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives acetaminophen, celecoxib, a TAP block, and low-dose hydromorphone after a colectomy. What is this approach?",
+      "stem": "After colectomy, a patient receives acetaminophen, celecoxib, a transversus abdominis plane block, and small rescue doses of hydromorphone. Which principle BEST explains the regimen?",
       "options": [
-        "Multimodal analgesia",
-        "Preemptive analgesia alone",
-        "Monotherapy",
-        "Opioid-based analgesia"
+        "Multimodal analgesia targets pain through different mechanisms and techniques",
+        "Preemptive analgesia requires all drugs to be given before incision",
+        "Monotherapy is preserved because only one opioid is used",
+        "Opioid-based analgesia excludes regional techniques"
       ],
       "answer": [
         0
@@ -1715,12 +1715,12 @@
       "id": "PAIN-070",
       "set": 1,
       "type": "single",
-      "stem": "An 80-year-old receives gabapentin, ketamine, dexmedetomidine, and hydromorphone and becomes deeply sedated and hypotensive. What is the concern?",
+      "stem": "An older adult receives gabapentin, ketamine, dexmedetomidine, and hydromorphone, then develops excessive sedation and hypotension despite individually reasonable doses. Which principle BEST explains the event?",
       "options": [
-        "Polypharmacy side effects",
-        "Multimodal drugs rarely interact",
-        "The doses were too low",
-        "Multimodal analgesia increases pain"
+        "Multimodal agents can produce additive or synergistic adverse effects",
+        "Different analgesic classes prevent pharmacodynamic interaction",
+        "Using several adjuncts makes dose reduction unnecessary",
+        "Opioid-sparing combinations eliminate sedation risk"
       ],
       "answer": [
         0
@@ -1739,12 +1739,12 @@
       "id": "PAIN-071",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a history of GI bleeding asks why you chose acetaminophen instead of ibuprofen. How do they compare?",
+      "stem": "A patient with prior gastrointestinal bleeding needs a nonopioid analgesic. Acetaminophen is selected instead of an NSAID. Which tradeoff BEST supports that choice?",
       "options": [
-        "Acetaminophen is 20–30% less analgesic but has a safer profile",
-        "Acetaminophen is 20–30% more analgesic with more GI risk",
-        "They are equal in analgesia and risk",
-        "Acetaminophen is weaker and causes more GI bleeding"
+        "Somewhat less analgesic efficacy but avoidance of typical NSAID gastrointestinal and bleeding risks",
+        "Greater analgesic efficacy but increased gastrointestinal bleeding",
+        "Equivalent analgesia with identical gastrointestinal risk",
+        "Less analgesia with greater platelet inhibition"
       ],
       "answer": [
         0
@@ -1787,7 +1787,7 @@
       "id": "PAIN-073",
       "set": 1,
       "type": "multi",
-      "stem": "Which drugs are NMDA receptor antagonists in the drug class list? (Select 3)",
+      "stem": "A patient at high risk for central sensitization is receiving an NMDA-targeted analgesic strategy. Which three agents in the source have NMDA-antagonist activity? (Select 3)",
       "options": [
         "Ketamine",
         "Magnesium",
@@ -1887,7 +1887,7 @@
       "id": "PAIN-077",
       "set": 1,
       "type": "single",
-      "stem": "A patient asks which of her pain medicines is \"made entirely in a lab.\" Which opioid is fully synthetic?",
+      "stem": "A patient cannot tolerate morphine-derived agents and asks which listed opioid is fully synthetic rather than natural or semisynthetic. Which is the BEST example?",
       "options": [
         "Fentanyl",
         "Morphine",
@@ -2067,12 +2067,12 @@
       "id": "PAIN-084",
       "set": 1,
       "type": "single",
-      "stem": "For a total knee replacement, the surgeon wants to inject local anesthetic into the joint at closure. What is this technique?",
+      "stem": "During total knee arthroplasty, the surgeon deposits local anesthetic directly into the operative joint at closure as part of multimodal analgesia. How is this technique classified?",
       "options": [
-        "Intra-articular local",
-        "Paravertebral block placed before the incision",
-        "TAP block",
-        "Interscalene block"
+        "Intra-articular local anesthetic administration",
+        "Paravertebral blockade",
+        "Transversus abdominis plane blockade",
+        "Interscalene blockade"
       ],
       "answer": [
         0
@@ -2091,12 +2091,12 @@
       "id": "PAIN-085",
       "set": 1,
       "type": "single",
-      "stem": "A patient wants to limit medications after surgery. Which nonpharmacologic therapies fit a multimodal plan?",
+      "stem": "A patient wants a multimodal plan that includes a nonpharmacologic modality with established use in the source material. Which pairing BEST fits?",
       "options": [
-        "Cognitive modalities and TENS",
-        "Hypnosis and acupuncture alone",
-        "Cryotherapy alone",
-        "Acupuncture and massage only"
+        "Cognitive modalities and transcutaneous electrical nerve stimulation",
+        "Hypnosis and acupuncture as the only analgesics",
+        "Cryotherapy as the sole multimodal component",
+        "Massage and acupuncture only"
       ],
       "answer": [
         0
@@ -2115,12 +2115,12 @@
       "id": "PAIN-086",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives ketamine and a regional block before incision. What is the goal of this preventive analgesia?",
+      "stem": "Ketamine and an effective regional block are started before incision and maintained to limit sustained nociceptive input. Which pathophysiologic process is the strategy primarily intended to prevent?",
       "options": [
-        "To prevent windup",
-        "To speed emergence",
-        "To prevent PONV",
-        "To reduce surgical bleeding"
+        "Wind-up and subsequent central sensitization",
+        "Delayed emergence",
+        "Postoperative nausea and vomiting",
+        "Surgical blood loss"
       ],
       "answer": [
         0
@@ -2217,12 +2217,12 @@
       "id": "PAIN-090",
       "set": 1,
       "type": "single",
-      "stem": "When combining drugs in a multimodal plan, why consider each drug's pharmacokinetics and pharmacodynamics?",
+      "stem": "Two adjuncts provide similar analgesia, but one has a delayed peak and long context-sensitive effect while the other is rapidly titratable. Which principle should drive their timing within a multimodal plan?",
       "options": [
-        "They guide timing and dosing",
-        "They determine the surgical approach",
-        "They matter for opioids but not adjuncts",
-        "They predict PONV"
+        "Pharmacokinetic and pharmacodynamic differences",
+        "The surgical approach alone",
+        "Only opioid-specific metabolism",
+        "Expected postoperative nausea risk alone"
       ],
       "answer": [
         0
@@ -2337,7 +2337,7 @@
       "id": "PAIN-095",
       "set": 1,
       "type": "single",
-      "stem": "Which population has the LOWEST frequency of poor CYP2D6 metabolizers?",
+      "stem": "When anticipating inadequate activation of CYP2D6-dependent opioid prodrugs, which population in the cited material has the LOWEST frequency of poor CYP2D6 metabolizers?",
       "options": [
         "Asian populations",
         "White populations",
@@ -2361,12 +2361,12 @@
       "id": "PAIN-096",
       "set": 1,
       "type": "single",
-      "stem": "A poor CYP2D6 metabolizer gets little relief from hydrocodone. Why?",
+      "stem": "A CYP2D6 poor metabolizer has unexpectedly weak analgesia from hydrocodone. Which metabolic step is reduced?",
       "options": [
-        "CYP2D6 converts hydrocodone to hydromorphone",
-        "CYP3A4 converts hydrocodone to oxycodone",
-        "Hydrocodone is cleared by CYP3A4 alone",
-        "Hydrocodone works through NMDA receptors"
+        "Conversion of hydrocodone to the more potent hydromorphone",
+        "Conversion of hydrocodone to oxycodone by CYP3A4",
+        "Renal activation of unchanged hydrocodone",
+        "NMDA-mediated activation of hydrocodone"
       ],
       "answer": [
         0
@@ -2464,12 +2464,12 @@
       "id": "PAIN-100",
       "set": 1,
       "type": "single",
-      "stem": "A man and a woman have the same laparoscopic procedure and similar pain scores. How do their postoperative opioid needs typically compare?",
+      "stem": "Two otherwise similar patients undergo the same laparoscopic procedure and report comparable postoperative pain. Based on the source's sex-related pain findings, which pattern is expected on average?",
       "options": [
-        "Women typically report more pain and need more opioid",
-        "Women typically report less pain and need less opioid",
-        "Men and women respond the same",
-        "Women are opioid-resistant but have less pain"
+        "Women tend to report greater pain and require more opioid for comparable relief",
+        "Women tend to report less pain and require less opioid",
+        "Sex does not affect reported pain or opioid requirement",
+        "Women require more opioid despite consistently reporting less pain"
       ],
       "answer": [
         0
