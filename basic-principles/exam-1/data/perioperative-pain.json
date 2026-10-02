@@ -7443,12 +7443,12 @@
       "id": "PAIN-301",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives celecoxib and acetaminophen preop. Why?",
+      "stem": "A patient with obstructive sleep apnea receives celecoxib and acetaminophen before surgery. Which rationale BEST supports this choice?",
       "options": [
-        "Multimodal opioid-sparing preoperative analgesia",
-        "To prevent postoperative nausea and vomiting",
-        "To treat anxiety",
-        "To reverse opioids"
+        "Preoperative multimodal analgesia can reduce later opioid requirements",
+        "The combination primarily prevents postoperative nausea",
+        "The drugs provide preoperative anxiolysis",
+        "They reverse residual opioid effect"
       ],
       "answer": [
         0
@@ -7491,12 +7491,12 @@
       "id": "PAIN-303",
       "set": 1,
       "type": "single",
-      "stem": "The surgeon asks how much local anesthetic has been given. Who should know this?",
+      "stem": "A peripheral block was performed preoperatively, and the surgeon now requests additional local-anesthetic infiltration at closure. Which responsibility is MOST important before approving the dose?",
       "options": [
-        "The anesthesia provider tracking all doses",
-        "The circulating nurse, who records all drugs given",
-        "The pharmacy after surgery",
-        "The surgeon alone"
+        "Account for the cumulative local-anesthetic dose from all sources",
+        "Count only doses personally administered by anesthesia",
+        "Ask pharmacy to reconcile the dose after surgery",
+        "Allow the surgeon to track infiltration independently"
       ],
       "answer": [
         0
@@ -7515,12 +7515,12 @@
       "id": "PAIN-304",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance, pupils become pinpoint and RR is 6. What does this suggest?",
+      "stem": "During spontaneous ventilation near emergence, a patient's respiratory rate falls to 6/min and the pupils are pinpoint after repeated opioid dosing. Which interpretation BEST fits the pattern?",
       "options": [
         "Excess opioid effect",
         "Inadequate analgesia",
-        "Normal maintenance response",
-        "Neuromuscular blockade"
+        "Normal emergence physiology",
+        "Residual neuromuscular blockade alone"
       ],
       "answer": [
         0
@@ -7539,12 +7539,12 @@
       "id": "PAIN-305",
       "set": 1,
       "type": "single",
-      "stem": "A patient is on a dexmedetomidine infusion and becomes bradycardic. What is the BEST first action?",
+      "stem": "During dexmedetomidine infusion, heart rate falls from 72 to 40/min and blood pressure begins to decline. Which action has priority?",
       "options": [
-        "Reduce or stop the infusion and assess BP",
-        "Give naloxone",
-        "Increase the infusion to deepen sedation",
-        "Give flumazenil"
+        "Reduce or stop dexmedetomidine and assess hemodynamic significance",
+        "Administer naloxone to reverse the alpha-2 agonist",
+        "Increase dexmedetomidine to suppress the sympathetic response",
+        "Give flumazenil before changing the infusion"
       ],
       "answer": [
         0
@@ -7635,12 +7635,12 @@
       "id": "PAIN-309",
       "set": 1,
       "type": "single",
-      "stem": "A patient with chronic pain has high preop opioid tolerance. Why might preventive analgesia be less effective?",
+      "stem": "A patient with longstanding severe chronic pain already demonstrates central sensitization before surgery. Why may preventive analgesia be less effective than in an opioid-naive patient without chronic pain?",
       "options": [
-        "Pre-existing sensitization limits response",
-        "Chronic pain patients do not have NMDA receptors",
-        "Preventive analgesia works mainly in children",
-        "Opioids block preventive analgesia"
+        "Established sensitization cannot be fully prevented by blocking new perioperative nociceptive input",
+        "Chronic-pain patients lack functional NMDA receptors",
+        "Preventive analgesia works only in pediatric patients",
+        "Opioids pharmacologically block all preventive techniques"
       ],
       "answer": [
         0
@@ -7659,12 +7659,12 @@
       "id": "PAIN-310",
       "set": 1,
       "type": "single",
-      "stem": "A preventive analgesia plan covers only the incision site, not the entire field. Which principle is violated?",
+      "stem": "A preventive analgesic technique completely blocks the incision but leaves the remainder of a wide surgical field unblocked. Which requirement has failed?",
       "options": [
-        "Extent must include the entire surgical field",
-        "Depth must block all nociceptive input",
-        "Duration must include postop period",
-        "Timing must begin after incision to avoid tolerance"
+        "Extent of blockade",
+        "Depth of blockade",
+        "Duration of blockade",
+        "Postoperative reassessment"
       ],
       "answer": [
         0
@@ -7683,12 +7683,12 @@
       "id": "PAIN-311",
       "set": 1,
       "type": "single",
-      "stem": "A preventive analgesia plan stops at the end of surgery. Which principle is violated?",
+      "stem": "A dense regional technique covers the entire surgical field but is discontinued at skin closure despite substantial expected postoperative nociception. Which preventive-analgesia requirement is missing?",
       "options": [
-        "Duration must include the postsurgical period",
-        "Extent must include the entire surgical field",
-        "Depth must be adequate",
-        "Multimodal must be avoided"
+        "Adequate duration into the postsurgical period",
+        "Adequate anatomic extent",
+        "Adequate block depth during incision",
+        "Preoperative opioid loading"
       ],
       "answer": [
         0
@@ -7707,12 +7707,12 @@
       "id": "PAIN-312",
       "set": 1,
       "type": "single",
-      "stem": "A preventive analgesia plan uses a light block that allows nociceptive input. Which principle is violated?",
+      "stem": "A regional technique covers the entire operative field and persists postoperatively, but nociceptive input continues because the block is incomplete. Which requirement has failed?",
       "options": [
-        "Depth must block all nociceptive input",
-        "Duration must include the postoperative period",
-        "Extent must include the entire field",
-        "Timing must be preoperative"
+        "Depth sufficient to suppress nociceptive input",
+        "Duration into the postoperative period",
+        "Anatomic extent of the block",
+        "Use of a single rather than multimodal technique"
       ],
       "answer": [
         0
@@ -7899,12 +7899,12 @@
       "id": "PAIN-320",
       "set": 1,
       "type": "single",
-      "stem": "After a 100 mg bupivacaine block, the surgeon wants to infiltrate 30 mL of 0.25% bupivacaine. What is the added dose and total?",
+      "stem": "A patient has already received 100 mg bupivacaine for a block. At closure, the surgeon requests 30 mL of 0.25% bupivacaine infiltration. What dose will be added, and what cumulative dose must be evaluated for toxicity?",
       "options": [
-        "75 mg added; 175 mg total",
-        "7.5 mg added; 107.5 mg total",
-        "150 mg added; 250 mg total",
-        "30 mg added; 130 mg total"
+        "75 mg added; 175 mg cumulative",
+        "7.5 mg added; 107.5 mg cumulative",
+        "150 mg added; 250 mg cumulative",
+        "30 mg added; 130 mg cumulative"
       ],
       "answer": [
         0
@@ -7947,12 +7947,12 @@
       "id": "PAIN-322",
       "set": 1,
       "type": "single",
-      "stem": "A patient in beach chair position for shoulder surgery develops hypotension and bradycardia after induction with fentanyl. What lecture principle applies?",
+      "stem": "A patient in the beach-chair position becomes hypotensive and bradycardic after induction that included a large fentanyl dose. Which modification would BEST reduce recurrence while preserving analgesia?",
       "options": [
-        "Use short-acting or minimal opioids at induction in beach chair",
-        "Use large opioid doses to prevent hypertension at positioning",
-        "Avoid regional anesthesia in beach chair",
-        "Give long-acting opioids before positioning"
+        "Use minimal or shorter-acting opioid at induction and rely on the broader multimodal plan",
+        "Give a larger long-acting opioid dose before positioning",
+        "Avoid regional analgesia because it worsens every beach-chair event",
+        "Treat positioning-related hypotension primarily with additional opioid"
       ],
       "answer": [
         0
@@ -7971,10 +7971,10 @@
       "id": "PAIN-323",
       "set": 1,
       "type": "single",
-      "stem": "A patient undergoing direct laryngoscopy with high stimulation but minimal postop pain. Which analgesic strategy is BEST?",
+      "stem": "Direct laryngoscopy will create intense brief stimulation, but the procedure is expected to cause little postoperative pain. Which opioid strategy BEST matches that temporal profile?",
       "options": [
-        "Remifentanil infusion",
-        "Hydromorphone boluses",
+        "Remifentanil infusion with transition analgesia only if postoperative pain warrants it",
+        "Repeated hydromorphone boluses",
         "Intrathecal morphine",
         "Long-acting methadone"
       ],
@@ -7995,12 +7995,12 @@
       "id": "PAIN-324",
       "set": 1,
       "type": "single",
-      "stem": "During carotid dissection under GA, HR drops to 44. You were planning dexmedetomidine for a smooth emergence. What should you consider?",
+      "stem": "During carotid dissection, heart rate falls to 44/min. Dexmedetomidine had been planned for smooth emergence. Which change is MOST appropriate?",
       "options": [
-        "Avoiding the alpha-2 agonist given the bradycardia",
-        "Increasing dexmedetomidine to calm the patient",
-        "Large opioid boluses",
-        "Avoiding all local anesthetic"
+        "Avoid or substantially reduce the alpha-2 agonist because it may worsen bradycardia",
+        "Increase dexmedetomidine to suppress the carotid reflex",
+        "Give a large opioid bolus instead of reassessing the plan",
+        "Avoid all local anesthetic because it causes the bradycardia"
       ],
       "answer": [
         0
@@ -8097,12 +8097,12 @@
       "id": "PAIN-328",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives only opioids to treat the stress response during a long case. What emergence risk increases?",
+      "stem": "A long operation is managed primarily by escalating opioid whenever the surgical stress response appears. Which emergence problem becomes increasingly likely?",
       "options": [
-        "Apnea or poor respiratory drive at emergence",
-        "Rapid emergence with agitation and hypertension",
-        "Low PONV risk",
-        "Hypothermia from opioids"
+        "Inadequate spontaneous ventilation from excessive residual opioid effect",
+        "Rapid emergence caused by opioid antagonism",
+        "Reduced postoperative nausea from high opioid exposure",
+        "Withdrawal immediately after discontinuing anesthesia"
       ],
       "answer": [
         0
@@ -8169,12 +8169,12 @@
       "id": "PAIN-331",
       "set": 1,
       "type": "single",
-      "stem": "For an outpatient knee arthroscopy, which analgesic plan is MOST appropriate?",
+      "stem": "An ambulatory knee-arthroscopy patient needs effective analgesia without delaying discharge. Which strategy BEST fits both goals?",
       "options": [
-        "Multimodal oral plus regional",
-        "High-dose IV morphine",
-        "No analgesia",
-        "An epidural infusion"
+        "Multimodal oral/nonopioid therapy plus an appropriate regional technique",
+        "High-dose IV morphine as the primary strategy",
+        "No analgesia until pain occurs at home",
+        "Routine continuous epidural infusion"
       ],
       "answer": [
         0
@@ -8241,12 +8241,12 @@
       "id": "PAIN-334",
       "set": 1,
       "type": "single",
-      "stem": "A patient undergoing IR procedure receives dexmedetomidine and hydromorphone. What should be considered?",
+      "stem": "During an interventional-radiology procedure, dexmedetomidine and hydromorphone are combined. Which dosing principle BEST accounts for their overlapping effects?",
       "options": [
-        "Lower individual doses due to synergy",
-        "Use full doses of each drug for adequate effect",
-        "Avoid monitoring due to low risk",
-        "Add benzodiazepines for synergy"
+        "Reduce and titrate individual doses because synergistic sedation and hemodynamic effects may occur",
+        "Use the full standalone dose of each because mechanisms differ",
+        "Monitoring can be reduced because multimodal regimens are inherently safer",
+        "Add a benzodiazepine to counter opioid-alpha-2 synergy"
       ],
       "answer": [
         0
@@ -8265,12 +8265,12 @@
       "id": "PAIN-335",
       "set": 1,
       "type": "single",
-      "stem": "A patient with severe OSA is scheduled for outpatient surgery. What pain plan is safest?",
+      "stem": "A patient with severe obstructive sleep apnea is scheduled for ambulatory surgery. Which analgesic strategy BEST reduces the chance that pain control prevents safe discharge?",
       "options": [
-        "Opioid-sparing multimodal plan with regional techniques",
-        "High-dose opioid plan to prevent pain at discharge",
-        "No analgesics to avoid respiratory risk",
-        "IV opioids in PACU"
+        "Regional and nonopioid multimodal analgesia with carefully limited rescue opioid",
+        "High-dose systemic opioid before discharge",
+        "Withhold all analgesia to eliminate respiratory risk",
+        "Use IV opioids as the primary PACU strategy"
       ],
       "answer": [
         0
@@ -8337,12 +8337,12 @@
       "id": "PAIN-338",
       "set": 1,
       "type": "single",
-      "stem": "A patient on methadone maintenance needs surgery. What is the key principle?",
+      "stem": "A patient on daily methadone maintenance presents for painful surgery. Which principle BEST separates baseline dependence treatment from surgical analgesia?",
       "options": [
-        "Continue baseline opioid and add analgesia for surgery",
-        "Stop methadone to avoid respiratory depression",
-        "Replace methadone with nalbuphine",
-        "Use NSAIDs postoperatively and hold methadone"
+        "Continue the baseline opioid requirement and provide additional analgesia for the new surgical pain",
+        "Stop methadone because surgical opioids replace the maintenance requirement",
+        "Substitute nalbuphine to avoid additive mu agonism",
+        "Hold methadone and use NSAIDs alone postoperatively"
       ],
       "answer": [
         0
@@ -8361,12 +8361,12 @@
       "id": "PAIN-339",
       "set": 1,
       "type": "single",
-      "stem": "A patient's baseline opioid dose is not known. What is the FIRST step?",
+      "stem": "A chronic-opioid patient's exact home regimen is unclear immediately before surgery. Which information should be established FIRST to prevent both withdrawal and unsafe supplementation?",
       "options": [
-        "Calculate baseline dose and equivalency",
-        "Give a standard adult dose and titrate",
-        "Use regional anesthesia alone",
-        "Give a mixed agonist-antagonist"
+        "Baseline daily opioid exposure and an appropriate equivalent dose",
+        "A standard adult rescue dose",
+        "Whether regional anesthesia can eliminate every opioid requirement",
+        "Which mixed agonist-antagonist is available"
       ],
       "answer": [
         0
@@ -8409,12 +8409,12 @@
       "id": "PAIN-341",
       "set": 1,
       "type": "single",
-      "stem": "A patient in PACU has uncontrolled pain after a long surgery. What is a likely contributing factor?",
+      "stem": "A patient arrives in PACU after a long painful operation with severe uncontrolled pain and no transition analgesic plan. Which upstream failure MOST likely contributed?",
       "options": [
-        "Poor analgesic planning before leaving the OR",
-        "Excessive regional anesthesia masking the incision",
-        "Too much acetaminophen",
-        "Too little monitoring"
+        "Analgesia was not adequately planned and established before leaving the OR",
+        "Regional anesthesia concealed the pain until PACU",
+        "Excess acetaminophen produced rebound pain",
+        "Excessive physiologic monitoring delayed opioid administration"
       ],
       "answer": [
         0
@@ -8457,12 +8457,12 @@
       "id": "PAIN-343",
       "set": 1,
       "type": "single",
-      "stem": "A nurse with 20 years of experience charts \"pain 2/10\" while the patient says it is 7/10. What tendency does this reflect?",
+      "stem": "A patient reports pain 7/10, while an experienced nurse documents an impression of only 2/10 based on appearance. Which principle should govern treatment decisions?",
       "options": [
-        "Experienced nurses tend to underestimate pain",
-        "Experienced nurses tend to overestimate pain",
-        "Experienced nurses overestimate pain",
-        "Patients tend to underestimate pain"
+        "The patient's report should remain central because experienced clinicians may underestimate pain",
+        "Clinical experience should replace patient self-report",
+        "The lower observer score should be used to prevent opioid exposure",
+        "Pain should be treated only when vital signs corroborate the nurse's estimate"
       ],
       "answer": [
         0
@@ -8481,12 +8481,12 @@
       "id": "PAIN-344",
       "set": 1,
       "type": "single",
-      "stem": "A patient with neuropathic pain after nerve injury has allodynia. What does allodynia mean?",
+      "stem": "After nerve injury, light brushing of the skin produces severe burning pain. Which sensory abnormality is present?",
       "options": [
-        "Pain from a normally non-painful stimulus",
-        "Reduced pain response to painful stimuli",
-        "Pain with an extreme stimulus",
-        "Complete loss of sensation"
+        "Allodynia",
+        "Hypoalgesia",
+        "Hyperesthesia without pain",
+        "Anesthesia"
       ],
       "answer": [
         0
@@ -8625,12 +8625,12 @@
       "id": "PAIN-350",
       "set": 1,
       "type": "single",
-      "stem": "A patient has referred shoulder pain after laparoscopy. What type is this?",
+      "stem": "After laparoscopy, a patient has shoulder-tip pain despite minimal tenderness at the shoulder itself. Which mechanism BEST explains this pattern?",
       "options": [
-        "Visceral pain referred from the peritoneum/diaphragm",
-        "Superficial somatic pain",
-        "Neuropathic pain from phrenic nerve injury during dissection",
-        "Deep somatic pain from the port site muscles"
+        "Referred visceral pain from diaphragmatic/peritoneal irritation",
+        "Superficial somatic pain from the shoulder skin",
+        "Direct neuropathic pain from surgical transection of the phrenic nerve",
+        "Deep somatic pain from shoulder muscle injury"
       ],
       "answer": [
         0
