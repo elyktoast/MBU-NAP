@@ -182,7 +182,7 @@ footer {
             medical gases, breathing systems, and related concepts.
         </p>
 
-        <a class="button" href="equipment/">
+        <a class="button" href="equipment/" data-course-link>
             Open Equipment →
         </a>
     </div>
@@ -195,7 +195,7 @@ footer {
             and core principles with a unified 3,500-question Exam 1 Study Studio.
         </p>
 
-        <a class="button" href="basic-principles/">
+        <a class="button" href="basic-principles/" data-course-link>
             Open Basic Principles →
         </a>
     </div>
@@ -211,5 +211,25 @@ footer {
 
 
 <script>window.MBU_BOOT={styles:['site-nav.css'],scripts:[{src:'site-nav.js',data:{page:'home'}},'auto-update.js']};</script><script src="equipment/assets/build-bootstrap.js"></script>
+<script>
+(async()=>{
+  try{if(window.MBUPageReady&&typeof window.MBUPageReady.then==='function')await window.MBUPageReady}catch{}
+  document.querySelectorAll('[data-course-link]').forEach(link=>link.addEventListener('click',async event=>{
+    const info=window.MBUSupabase?.status?.()||{};
+    if(info.signedIn&&info.legalAccepted===true&&info.accessStatus==='active')return;
+    event.preventDefault();
+    const target=link.href;
+    const continueWhenReady=()=>{
+      const next=window.MBUSupabase?.status?.()||{};
+      if(next.signedIn&&next.legalAccepted===true&&next.accessStatus==='active'){
+        window.removeEventListener('mbu:supabase-status',continueWhenReady);
+        location.assign(target);
+      }
+    };
+    window.addEventListener('mbu:supabase-status',continueWhenReady);
+    window.MBUAppCore?.openAccount?.(link);
+  }));
+})();
+</script>
 </body>
 </html>
