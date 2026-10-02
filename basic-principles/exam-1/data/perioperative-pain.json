@@ -9884,10 +9884,10 @@
       "id": "PAIN-402",
       "set": 1,
       "type": "single",
-      "stem": "Case F: After intrathecal morphine for cesarean delivery, she develops itching 2 hours later. What is the BEST treatment?",
+      "stem": "Two hours after intrathecal morphine, a cesarean patient has severe pruritus but remains alert with normal ventilation and excellent analgesia. Which treatment best targets the adverse effect while preserving analgesia?",
       "options": [
-        "Low-dose naloxone",
-        "High-dose naloxone bolus",
+        "Titrate very low-dose naloxone",
+        "Give a large naloxone bolus",
         "Increase intrathecal morphine",
         "Give flumazenil"
       ],
@@ -9956,12 +9956,12 @@
       "id": "PAIN-405",
       "set": 1,
       "type": "single",
-      "stem": "Case G: A patient receives dexmedetomidine, hydromorphone, and ketamine intraop and becomes bradycardic and hypotensive in PACU. Which reversal is NOT available for this regimen?",
+      "stem": "Dexmedetomidine, hydromorphone, and ketamine contribute to excessive sedation and hemodynamic depression in PACU. Which component lacks a routinely available human reversal agent?",
       "options": [
-        "Dexmedetomidine reversal in humans",
-        "Naloxone for opioids given during the case",
-        "Flumazenil for benzodiazepines",
-        "Sugammadex for rocuronium"
+        "Dexmedetomidine",
+        "Hydromorphone",
+        "A benzodiazepine, if one had been given",
+        "Rocuronium, if one had been given"
       ],
       "answer": [
         0
@@ -10052,12 +10052,12 @@
       "id": "PAIN-409",
       "set": 1,
       "type": "single",
-      "stem": "Case I: After an upper abdominal surgery with poorly controlled pain and shallow breathing, the patient develops pneumonia. What pain-related factor likely contributed?",
+      "stem": "After open upper-abdominal surgery, poorly controlled pain causes splinting and ineffective cough; pneumonia develops later. Which pain-related mechanism most directly contributed?",
       "options": [
-        "Pain limiting deep breathing",
-        "Excessive regional anesthesia",
-        "Too much acetaminophen causing hepatic injury",
-        "Early ambulation that aggravated the incision"
+        "Pain limited deep inspiration and airway clearance",
+        "Regional anesthesia excessively suppressed ventilation",
+        "Acetaminophen impaired pulmonary defense",
+        "Early ambulation worsened the incision"
       ],
       "answer": [
         0
@@ -10100,12 +10100,12 @@
       "id": "PAIN-411",
       "set": 1,
       "type": "single",
-      "stem": "Case J: A patient receiving remifentanil during ENT surgery is extubated in severe pain. What would have been a better plan?",
+      "stem": "A patient receiving remifentanil for ENT surgery is approaching emergence with substantial expected postoperative pain. Which transition plan best prevents severe pain when the infusion stops?",
       "options": [
-        "Give longer-acting opioid or nonopioid before stopping remi",
-        "Continue remifentanil in PACU",
-        "Avoid opioids in ENT cases to prevent apnea",
-        "Give naloxone at the end of surgery to speed emergence"
+        "Establish longer-acting opioid and/or nonopioid analgesia before discontinuing remifentanil",
+        "Continue remifentanil routinely on an unmonitored ward",
+        "Avoid all opioids because ENT surgery carries airway risk",
+        "Give naloxone at closure"
       ],
       "answer": [
         0
@@ -10220,12 +10220,12 @@
       "id": "PAIN-416",
       "set": 1,
       "type": "single",
-      "stem": "Case M: A patient on dexmedetomidine infusion during surgery is slow to wake. What is a key limitation?",
+      "stem": "Dexmedetomidine contributes to delayed awakening after a prolonged infusion. Which limitation prevents rapid pharmacologic reversal of its sedative effect?",
       "options": [
-        "No reversal agent for dexmedetomidine",
-        "Naloxone fully reverses it",
-        "Flumazenil fully reverses it",
-        "Dexmedetomidine has a long elimination half-life"
+        "No routinely available reversal agent exists for humans",
+        "Naloxone incompletely reverses it",
+        "Flumazenil incompletely reverses it",
+        "Its only limitation is an extremely long elimination half-life"
       ],
       "answer": [
         0
@@ -10676,12 +10676,12 @@
       "id": "PAIN-435",
       "set": 1,
       "type": "single",
-      "stem": "Case V: A patient receives neuraxial fentanyl and develops early respiratory depression. Why is fentanyl's effect early?",
+      "stem": "Clinically significant respiratory depression occurs soon after neuraxial fentanyl. Which property explains why the effect tends to appear early rather than many hours later?",
       "options": [
-        "Lipophilicity leads to rapid uptake",
-        "Hydrophilicity leads to cephalad spread",
-        "Slow metabolism prolongs effect",
-        "It is a mixed agonist-antagonist"
+        "High lipophilicity promotes rapid tissue/systemic uptake",
+        "Hydrophilicity promotes slow cephalad CSF spread",
+        "Slow metabolism creates delayed rostral migration",
+        "Mixed agonist-antagonist activity accelerates onset"
       ],
       "answer": [
         0
@@ -10748,12 +10748,12 @@
       "id": "PAIN-438",
       "set": 1,
       "type": "single",
-      "stem": "Case X: A patient on methadone arrives for surgery. What is a key consideration?",
+      "stem": "A patient maintained on methadone has an unexpectedly variable response to perioperative dosing despite adherence. Which property of methadone complicates prediction of dose and effect?",
       "options": [
-        "Genetic variability in methadone response",
-        "Methadone has a short half-life",
-        "Methadone is metabolized by UGT",
-        "Methadone has no NMDA activity"
+        "Substantial interpatient pharmacokinetic and genetic variability",
+        "A uniformly short elimination half-life",
+        "Exclusive UGT metabolism",
+        "Absence of NMDA-receptor activity"
       ],
       "answer": [
         0
@@ -10820,12 +10820,12 @@
       "id": "PAIN-441",
       "set": 1,
       "type": "single",
-      "stem": "Case Y: A patient reports \"morphine allergy\" with itching only. If the patient reports facial swelling and vomiting, what does this suggest?",
+      "stem": "A patient previously labeled 'morphine allergic' now reports that the historical reaction included facial swelling rather than isolated itching. How should this new information change the assessment?",
       "options": [
-        "Possible true allergic reaction",
-        "A normal opioid effect needing observation",
-        "Opioid withdrawal",
-        "Local anesthetic toxicity"
+        "It raises concern for a potentially serious hypersensitivity reaction and warrants further evaluation",
+        "It confirms a routine opioid adverse effect only",
+        "It indicates opioid withdrawal",
+        "It suggests local-anesthetic systemic toxicity"
       ],
       "answer": [
         0
@@ -10916,12 +10916,12 @@
       "id": "PAIN-445",
       "set": 1,
       "type": "single",
-      "stem": "A patient's pain is uncontrolled and she is at high risk for inadequate control. What guideline applies?",
+      "stem": "Despite a structured multimodal plan, a high-risk patient continues to have difficult-to-control pain with complex chronic opioid exposure. Which systems resource should be available?",
       "options": [
-        "Access to pain specialist consultation",
-        "Avoid additional analgesics",
-        "Discharge to home",
-        "Use acetaminophen until discharge"
+        "Pain-specialist consultation",
+        "Automatic discharge home",
+        "Avoidance of further analgesic assessment",
+        "Acetaminophen alone until discharge"
       ],
       "answer": [
         0
@@ -11036,11 +11036,11 @@
       "id": "PAIN-450",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives low-dose ketamine and reports vivid dreams. What should you consider?",
+      "stem": "During a low-dose ketamine infusion, a patient remains hemodynamically stable but develops vivid dreams and perceptual disturbances. Which drug effect best explains the symptoms?",
       "options": [
         "Ketamine psychomimetic effects",
         "Opioid withdrawal",
-        "Magnesium toxicity from accumulation",
+        "Magnesium toxicity",
         "Lidocaine toxicity"
       ],
       "answer": [
