@@ -1,5 +1,5 @@
 {
-  "schema": 2,
+  "schema": 3,
   "totalQuestions": 2000,
   "summary": {
     "sameSetExactGroups": 0,
@@ -9,12 +9,13 @@
     "missingSourceLocator": 0,
     "explanationsUnder8Words": 0,
     "manualReviewPairs": 13,
-    "manualReviewCandidates": 6
+    "manualReviewCandidates": 0,
+    "informationalCrossSetClusters": 6
   },
   "candidates": [
     {
       "type": "near_duplicate_cluster",
-      "severity": "manual_review",
+      "severity": "informational",
       "questions": [
         "b1-125",
         "b1-316",
@@ -26,11 +27,12 @@
       ],
       "sources": [
         "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 74, 76"
-      ]
+      ],
+      "scope": "cross_set_reinforcement"
     },
     {
       "type": "near_duplicate_cluster",
-      "severity": "manual_review",
+      "severity": "informational",
       "questions": [
         "b1-237",
         "b1-368",
@@ -42,11 +44,12 @@
       ],
       "sources": [
         "CO₂ Absorbents and Scavenging · Slides 2, 3"
-      ]
+      ],
+      "scope": "cross_set_reinforcement"
     },
     {
       "type": "near_duplicate_cluster",
-      "severity": "manual_review",
+      "severity": "informational",
       "questions": [
         "b1-258",
         "b1-350",
@@ -60,11 +63,12 @@
       "sources": [
         "CO₂ Absorbents and Scavenging · Slide 2",
         "CO₂ Absorbents and Scavenging · Slides 2, 3"
-      ]
+      ],
+      "scope": "cross_set_reinforcement"
     },
     {
       "type": "near_duplicate_cluster",
-      "severity": "manual_review",
+      "severity": "informational",
       "questions": [
         "b1-277",
         "b1-346",
@@ -77,11 +81,12 @@
       ],
       "sources": [
         "Airway Equipment · Slide 5"
-      ]
+      ],
+      "scope": "cross_set_reinforcement"
     },
     {
       "type": "near_duplicate_cluster",
-      "severity": "manual_review",
+      "severity": "informational",
       "questions": [
         "b1-303",
         "b1-382",
@@ -95,11 +100,12 @@
       "sources": [
         "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 41, 43, 50",
         "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 43, 50"
-      ]
+      ],
+      "scope": "cross_set_reinforcement"
     },
     {
       "type": "near_duplicate_cluster",
-      "severity": "manual_review",
+      "severity": "informational",
       "questions": [
         "b1-327",
         "b1-40",
@@ -111,7 +117,8 @@
       ],
       "sources": [
         "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 44, 50, 51"
-      ]
+      ],
+      "scope": "cross_set_reinforcement"
     }
   ]
 }
