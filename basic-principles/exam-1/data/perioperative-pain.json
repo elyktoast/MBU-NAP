@@ -6285,12 +6285,12 @@
       "id": "PAIN-253",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives magnesium 50 mg/kg bolus and 8 mg/kg/hr infusion. What effect is expected?",
+      "stem": "A spine-fusion patient receives magnesium 50 mg/kg followed by 8 mg/kg/hr as part of multimodal analgesia. Which postoperative effect would support the intended purpose of the infusion?",
       "options": [
-        "Lower pain scores and opioid sparing",
-        "Increased opioid requirements after surgery",
+        "Lower pain scores with reduced opioid use",
+        "Increased opioid requirement",
         "Increased PONV",
-        "Prolonged emergence"
+        "Predictably prolonged emergence"
       ],
       "answer": [
         0
@@ -6309,12 +6309,12 @@
       "id": "PAIN-254",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives low-dose ketamine 0.2 mg/kg then 0.15 mg/kg/hr. What is the purpose?",
+      "stem": "Low-dose ketamine 0.2 mg/kg followed by 0.15 mg/kg/hr is added to a painful spine case. Which therapeutic goal best matches this subanesthetic regimen?",
       "options": [
         "Opioid-sparing analgesia and antihyperalgesia",
-        "Deep sedation for intubation and airway control",
+        "Deep sedation sufficient for intubation",
         "Neuromuscular blockade",
-        "Antiemetic prophylaxis"
+        "Primary antiemetic prophylaxis"
       ],
       "answer": [
         0
@@ -6381,12 +6381,12 @@
       "id": "PAIN-257",
       "set": 1,
       "type": "single",
-      "stem": "A patient arrives in PACU with 9/10 pain, and PACU orders haven't been entered yet. What would have prevented the delay?",
+      "stem": "A patient reaches PACU with 9/10 pain, but no rescue analgesic is immediately available because postoperative orders are still pending. Which perioperative planning step would most directly have prevented this treatment gap?",
       "options": [
-        "Bringing analgesics from the OR for handoff",
-        "Waiting for the surgeon to enter orders",
-        "Asking the surgeon to order analgesics in PACU",
-        "Delaying treatment until pharmacy arrives"
+        "Ensure appropriate analgesics/orders are available for transport and handoff before leaving the OR",
+        "Wait for the surgeon to enter orders after arrival",
+        "Delay treatment until pharmacy rounds",
+        "Rely on intraoperative opioid to cover all PACU pain"
       ],
       "answer": [
         0
@@ -6501,11 +6501,11 @@
       "id": "PAIN-262",
       "set": 1,
       "type": "single",
-      "stem": "A patient received intrathecal morphine 6 hours ago and now has RR 6. What is MOST likely?",
+      "stem": "Six hours after intrathecal morphine, a patient who was previously stable develops RR 6/min. Which mechanism best fits the timing?",
       "options": [
-        "Delayed respiratory depression from cephalad spread",
-        "Immediate depression from lipophilic fentanyl spread",
-        "Local anesthetic toxicity",
+        "Delayed respiratory depression from cephalad spread of hydrophilic morphine",
+        "Immediate depression from lipophilic fentanyl",
+        "Local-anesthetic systemic toxicity",
         "Surgical bleeding"
       ],
       "answer": [
@@ -6525,12 +6525,12 @@
       "id": "PAIN-263",
       "set": 1,
       "type": "single",
-      "stem": "A patient received intrathecal fentanyl 20 minutes ago and has RR 7. What is MOST likely?",
+      "stem": "Twenty minutes after intrathecal fentanyl, a patient develops RR 7/min. Which neuraxial-opioid pattern best fits this early event?",
       "options": [
-        "Early respiratory depression from lipophilic opioid",
-        "Delayed respiratory depression from morphine spread",
+        "Early respiratory depression from a lipophilic opioid",
+        "Delayed respiratory depression from hydrophilic morphine",
         "Opioid withdrawal",
-        "Delayed respiratory depression"
+        "Delayed fentanyl effect occurring many hours later"
       ],
       "answer": [
         0
@@ -6573,12 +6573,12 @@
       "id": "PAIN-265",
       "set": 1,
       "type": "single",
-      "stem": "A patient is sedated after dexmedetomidine. What is the key limitation?",
+      "stem": "A patient remains deeply sedated after dexmedetomidine, with airway and hemodynamics currently supportable. Which pharmacologic limitation shapes management?",
       "options": [
-        "No reversal agent exists in humans",
-        "Naloxone reverses it quickly at low doses",
-        "Flumazenil reverses it quickly",
-        "Physostigmine reverses it"
+        "No routinely available human reversal agent exists",
+        "Naloxone rapidly reverses dexmedetomidine",
+        "Flumazenil reverses dexmedetomidine",
+        "Physostigmine is the specific antidote"
       ],
       "answer": [
         0
@@ -6645,12 +6645,12 @@
       "id": "PAIN-268",
       "set": 1,
       "type": "single",
-      "stem": "A patient reports nausea after opioids. What is the BEST management?",
+      "stem": "A patient has good opioid analgesia but develops nausea without respiratory depression or other toxicity. Which intervention best treats the adverse effect while preserving analgesia?",
       "options": [
-        "Give antiemetics",
-        "Stop all analgesics",
-        "Give naloxone",
-        "Increase opioid dose"
+        "Administer an antiemetic",
+        "Stop all analgesia",
+        "Reverse the opioid with naloxone",
+        "Increase the opioid dose"
       ],
       "answer": [
         0
@@ -6813,12 +6813,12 @@
       "id": "PAIN-275",
       "set": 1,
       "type": "single",
-      "stem": "A highly tolerant patient has poor analgesia with escalating hydromorphone. Which strategy is suggested?",
+      "stem": "A highly opioid-tolerant patient has diminishing analgesic benefit and increasing adverse effects despite escalating hydromorphone. Which strategy may improve response without simply increasing the same drug?",
       "options": [
         "Opioid rotation, often to methadone",
-        "Stop opioids and use NSAIDs",
-        "Use nalbuphine for rotation",
-        "Add a basal hydromorphone infusion"
+        "Stop opioids and use NSAIDs alone",
+        "Switch to nalbuphine",
+        "Automatically add a basal hydromorphone infusion"
       ],
       "answer": [
         0
@@ -6987,12 +6987,12 @@
       "id": "PAIN-282",
       "set": 1,
       "type": "single",
-      "stem": "A 4-year-old is inconsolable and crying after a tonsillectomy. How should you interpret this?",
+      "stem": "A 4-year-old who cannot reliably use a numeric scale is crying, grimacing, and inconsolable after tonsillectomy. Which interpretation is most appropriate?",
       "options": [
-        "Likely pain, since crying and inconsolability are pain expressions",
-        "Hunger from prolonged fasting",
-        "Hunger from prolonged preoperative fasting and dehydration",
-        "Normal behavior for a sleepy child"
+        "The behavior is consistent with postoperative pain and warrants age-appropriate assessment",
+        "The behavior most likely reflects hunger only",
+        "The behavior should be ignored without a numeric score",
+        "This is normal sleepy-child behavior"
       ],
       "answer": [
         0
@@ -7275,7 +7275,7 @@
       "id": "PAIN-294",
       "set": 1,
       "type": "single",
-      "stem": "A patient has poor hydrocodone effect and more side effects. Which metabolizer type is likely?",
+      "stem": "Hydrocodone provides unexpectedly weak analgesia in a patient known to form little hydromorphone from it. Which metabolic phenotype best explains the response?",
       "options": [
         "Poor CYP2D6 metabolizer",
         "Extensive CYP2D6 metabolizer",
