@@ -23,7 +23,8 @@
       "setLabels": {
         "1": "Basic Airway Assessment & Management"
       },
-      "count": 500
+      "count": 500,
+      "sourceTitleContract": "Basic Airway Assessment & Management"
     },
     {
       "key": "bp1-monitoring",
@@ -37,7 +38,8 @@
       "setLabels": {
         "1": "Intraoperative Monitoring & Data Interpretation"
       },
-      "count": 500
+      "count": 500,
+      "sourceTitleContract": "Intraoperative Monitoring & Data Interpretation"
     },
     {
       "key": "bp1-preop-assessment",
@@ -51,7 +53,8 @@
       "setLabels": {
         "1": "Perioperative Assessment & Evaluation"
       },
-      "count": 500
+      "count": 500,
+      "sourceTitleContract": "Perioperative Assessment & Evaluation"
     },
     {
       "key": "bp1-phases-ga",
@@ -65,7 +68,8 @@
       "setLabels": {
         "1": "Phases of General Anesthesia"
       },
-      "count": 500
+      "count": 500,
+      "sourceTitleContract": "Phases of General Anesthesia"
     },
     {
       "key": "bp1-sedation-mac-tiva",
@@ -79,7 +83,8 @@
       "setLabels": {
         "1": "Sedation, MAC & TIVA"
       },
-      "count": 500
+      "count": 500,
+      "sourceTitleContract": "Sedation, MAC & TIVA"
     },
     {
       "key": "bp1-perioperative-pain",
@@ -93,7 +98,8 @@
       "setLabels": {
         "1": "Perioperative Pain Management"
       },
-      "count": 500
+      "count": 500,
+      "sourceTitleContract": "Perioperative Pain Management"
     },
     {
       "key": "bp1-misc-na-practice",
@@ -107,7 +113,8 @@
       "setLabels": {
         "1": "Miscellaneous Topics in Nurse Anesthesia Practice"
       },
-      "count": 500
+      "count": 500,
+      "sourceTitleContract": "Miscellaneous Topics in Nurse Anesthesia Practice"
     }
   ],
   "sync": {
