@@ -655,7 +655,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
   if((src.match(/build-bootstrap\.js/g)||[]).length!==1)fail('Phase 5: '+p+' must load exactly one build bootstrap');
  }
  const boot=read('equipment/assets/build-bootstrap.js');
- if(!boot.includes("document.documentElement.dataset.mbuBoot='loading'")||!boot.includes("pointer-events:none"))fail('Phase 5: runtime readiness interaction gate is missing');
+ if(!boot.includes("document.documentElement.dataset.mbuBoot='loading'")||!boot.includes("*:not(#srna-legal-gate){visibility:hidden;pointer-events:none}"))fail('Phase 5: runtime readiness visual and interaction gate is missing');
 }
 
 // Phases 6-9: shared app core, sync groundwork, accessibility, diagnostics, and documentation are release contracts.
@@ -788,7 +788,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!boot.includes("loadScript('legal-gate.js')")||!boot.includes('SRNALegalReady'))fail('Versioned legal gate is not enforced by the shared bootstrap');
  for(const token of ["VERSION='2026-09-27-v6'",'I agree to the','Terms of Use','Privacy Notice','localStorage.setItem(KEY','data-legal-continue','pointer-events:auto'])if(!gate.includes(token))fail('Legal gate missing '+token);
  if(boot.includes('html[data-mbu-boot="loading"] body{pointer-events:none}'))fail('Legal gate is blocked by bootstrap pointer-events');
- if(!boot.includes('body>#srna-legal-gate{pointer-events:auto}'))fail('Bootstrap does not keep the legal gate interactive while loading');
+ if(!boot.includes('body>#srna-legal-gate{visibility:visible;pointer-events:auto}'))fail('Bootstrap does not keep the legal gate visible and interactive while loading');
  for(const token of ["LEGAL_VERSION='2026-09-27-v6'","LEGAL_TERMS_VERSION=LEGAL_VERSION","LEGAL_PRIVACY_VERSION=LEGAL_VERSION",'snar_terms_version:LEGAL_TERMS_VERSION','snar_privacy_version:LEGAL_PRIVACY_VERSION','snar_adult_ack:true','snar_has_current_legal_acceptance','snar_accept_current_legal','acceptCurrentLegal','legalAccepted','refreshCalibration(true)'])if(!cloud.includes(token))fail('Account legal acknowledgement contract missing '+token);
  if(!core.includes('data-cloud-reaccept')||!core.includes('Updated account agreement required')||!core.includes("info.legalAccepted!==true?'Action required'")||!core.includes('data-cloud-legal-required'))fail('Authenticated legal re-acceptance UI/state handling is missing');
 }
