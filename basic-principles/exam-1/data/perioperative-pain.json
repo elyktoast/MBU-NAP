@@ -306,7 +306,7 @@
         "Age",
         "Baseline blood pressure",
         "Blood type",
-        "Blood type",
+        "Eye color",
         "Height"
       ],
       "answer": [
@@ -2293,7 +2293,7 @@
       "options": [
         "Toxic morphine levels",
         "Codeine accumulates without conversion",
-        "Codeine accumulates without conversion",
+        "Codeine is excreted unchanged before conversion",
         "The child is a poor metabolizer"
       ],
       "answer": [
@@ -2797,7 +2797,7 @@
         "To promote pulmonary toilet and prevent pneumonia",
         "To avoid all intraoperative anesthetics and opioids",
         "To reduce surgical bleeding",
-        "To reduce surgical bleeding"
+        "To eliminate the need for postoperative respiratory assessment"
       ],
       "answer": [
         0
@@ -5915,7 +5915,7 @@
       "options": [
         "Better outcomes and satisfaction",
         "It shortens surgery",
-        "It shortens surgery",
+        "It eliminates postoperative nausea",
         "It reduces anesthetic requirements"
       ],
       "answer": [
@@ -6107,7 +6107,7 @@
       "options": [
         "Yes, unless oversedated and unable to understand",
         "No, any opioid invalidates consent",
-        "No, any opioid invalidates consent",
+        "Only general anesthesia invalidates consent",
         "Yes, if a family member co-signs"
       ],
       "answer": [
@@ -9094,7 +9094,7 @@
       "options": [
         "Opioid withdrawal",
         "Serotonin syndrome",
-        "Serotonin syndrome",
+        "Local anesthetic systemic toxicity",
         "Emergence delirium"
       ],
       "answer": [
