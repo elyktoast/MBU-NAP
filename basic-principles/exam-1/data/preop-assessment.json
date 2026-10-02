@@ -2448,12 +2448,12 @@
       "id": "PRE-101",
       "set": 1,
       "type": "single",
-      "stem": "An equivocal stress test leaves uncertainty about coronary anatomy before major vascular surgery. Which test provides the most definitive anatomic information?",
+      "stem": "A patient with poor functional capacity has an abnormal noninvasive ischemia study before major vascular surgery, and the result will change management. Which test can directly define coronary anatomy when further invasive evaluation is indicated?",
       "options": [
-        "Cardiac catheterization",
-        "Exercise stress ECG",
-        "Resting 12-lead ECG",
-        "Transthoracic echocardiography"
+        "Coronary angiography/cardiac catheterization",
+        "Repeat resting ECG",
+        "Holter monitoring",
+        "Transthoracic echocardiography alone"
       ],
       "answer": [
         0
@@ -2544,7 +2544,7 @@
       "id": "PRE-105",
       "set": 1,
       "type": "single",
-      "stem": "A patient's preoperative blood pressure is repeatedly 148/94 mmHg. How should it be classified?",
+      "stem": "Repeated preoperative blood pressures average 148/94 mmHg without acute symptoms. Which classification describes the pressure itself?",
       "options": [
         "Stage 2 hypertension",
         "Stage 1 hypertension",
@@ -2644,12 +2644,12 @@
       "id": "PRE-109",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a drug-eluting coronary stent 8 months ago and now takes aspirin alone. Which plan best follows the lecture's perioperative principles for elective surgery?",
+      "stem": "A patient had a drug-eluting coronary stent 8 months ago and takes aspirin alone. What is the most important preoperative issue before deciding whether aspirin should be interrupted?",
       "options": [
-        "Proceed and continue aspirin",
-        "Delay surgery another 4 months",
-        "Stop aspirin 7 days before surgery",
-        "Restart clopidogrel solely for the operation"
+        "Balance surgical bleeding risk against coronary thrombotic risk using the stent history and current indication",
+        "Stop aspirin routinely because more than 6 months have passed",
+        "Restart dual antiplatelet therapy solely for surgery",
+        "Delay every elective operation until 12 months after any drug-eluting stent"
       ],
       "answer": [
         0
@@ -2841,12 +2841,12 @@
       "id": "PRE-117",
       "set": 1,
       "type": "single",
-      "stem": "A patient is 4 months after PCI and remains on aspirin plus ticagrelor. Which stent history is most consistent with the continued dual-antiplatelet requirement described in the lecture?",
+      "stem": "A patient is 4 months after PCI and still requires aspirin plus a P2Y12 inhibitor. Which detail is most important when judging the hazard of interrupting therapy for elective surgery?",
       "options": [
-        "Drug-eluting stent",
-        "Bare-metal stent requiring no antiplatelet therapy",
-        "A stent for which DAPT ended immediately after PCI",
-        "A CABG graft treated as a coronary stent"
+        "The stent type, indication for PCI, and required duration of antiplatelet therapy",
+        "Whether the infarct was anterior or inferior",
+        "The patient's resting heart rate",
+        "Whether the patient has ever received general anesthesia"
       ],
       "answer": [
         0
@@ -2988,12 +2988,12 @@
       "id": "PRE-123",
       "set": 1,
       "type": "single",
-      "stem": "Which statement best conveys why chronic hypertension matters in perioperative assessment even when a single preoperative reading is not extreme?",
+      "stem": "A patient with long-standing hypertension has a preoperative pressure of 154/92 mmHg but no acute symptoms. Why does the history still matter even if this single value does not mandate cancellation?",
       "options": [
-        "It is highly prevalent and contributes substantially to cardiovascular morbidity and mortality",
-        "It affects fewer than 1% of adults",
-        "It is unusual among surgical patients younger than 65",
-        "It contributes fewer deaths than asthma"
+        "Chronic hypertension may reflect target-organ disease and altered cardiovascular reserve that affect perioperative management",
+        "Any chronic hypertension independently requires cancellation",
+        "The diagnosis predicts difficult intubation",
+        "The diagnosis eliminates the need to assess symptoms"
       ],
       "answer": [
         0
@@ -3132,12 +3132,12 @@
       "id": "PRE-129",
       "set": 1,
       "type": "single",
-      "stem": "Why does severe aortic stenosis change anesthetic planning even before symptoms or technique are considered?",
+      "stem": "A patient with severe aortic stenosis is scheduled for major surgery. Which physiologic problem makes abrupt anesthetic-induced hypotension especially dangerous?",
       "options": [
-        "It carries a high risk of serious intraoperative hemodynamic events",
-        "It is low risk whenever the patient is asymptomatic",
-        "It is compatible with any anesthetic technique without special preparation",
-        "It can generally be addressed after surgery"
+        "A fixed outflow obstruction limits the ability to increase forward flow when coronary perfusion pressure falls",
+        "The ventricle can easily increase stroke volume to compensate",
+        "Severe aortic stenosis primarily causes excessive vasodilation",
+        "Tachycardia reliably improves diastolic filling and coronary perfusion"
       ],
       "answer": [
         0
@@ -3401,12 +3401,12 @@
       "id": "PRE-140",
       "set": 1,
       "type": "single",
-      "stem": "Which creatinine value meets the renal RCRI criterion?",
+      "stem": "A patient has creatinine 2.3 mg/dL before elevated-risk noncardiac surgery. How does this affect the classic RCRI?",
       "options": [
-        "2.3 mg/dL",
-        "1.4 mg/dL",
-        "1.9 mg/dL",
-        "1.9 and 2.3 mg/dL both meet it"
+        "It satisfies the renal-risk criterion",
+        "It does not count unless creatinine exceeds 3.0 mg/dL",
+        "It counts only if dialysis is required",
+        "It adds two RCRI points"
       ],
       "answer": [
         0
@@ -3425,12 +3425,12 @@
       "id": "PRE-141",
       "set": 1,
       "type": "single",
-      "stem": "Two patients have diabetes; one uses metformin only and the other uses basal-bolus insulin. Which patient gains an RCRI point for diabetes?",
+      "stem": "Two patients with diabetes undergo the same operation. One uses metformin only; the other requires basal-bolus insulin. Which difference changes the classic RCRI?",
       "options": [
-        "The insulin-treated patient",
-        "The metformin-treated patient",
-        "Both patients",
-        "Neither patient unless HbA1c is elevated"
+        "Insulin treatment adds the diabetes criterion; metformin treatment alone does not",
+        "Both receive the same diabetes point",
+        "Only metformin treatment adds the criterion",
+        "Neither counts unless HbA1c exceeds 8%"
       ],
       "answer": [
         0
@@ -3473,12 +3473,12 @@
       "id": "PRE-143",
       "set": 1,
       "type": "single",
-      "stem": "A patient has an RCRI score of 3. Which MACE risk estimate from the lecture best matches that score range?",
+      "stem": "A patient's classic RCRI score is 3. How should the score be used?",
       "options": [
-        "About 5.4%",
-        "About 2.4%",
-        "About 1.0%",
-        "About 0.4%"
+        "As one estimate of cardiac risk that should be integrated with current symptoms, functional capacity, procedure, and other clinical factors",
+        "As a precise individualized probability that replaces clinical assessment",
+        "As a reason to cancel surgery automatically",
+        "As a tool that already incorporates frailty and functional capacity"
       ],
       "answer": [
         0
@@ -3497,12 +3497,12 @@
       "id": "PRE-144",
       "set": 1,
       "type": "single",
-      "stem": "A patient has no medical RCRI factors but is scheduled for laparoscopic cholecystectomy. What score and approximate MACE risk follow from the procedure itself?",
+      "stem": "A patient with no classic RCRI clinical risk factors is scheduled for intraperitoneal surgery. How does the procedure affect the score?",
       "options": [
-        "RCRI 1 with about 1.0% risk",
-        "RCRI 0 with about 0.4% risk",
-        "RCRI 2 with about 2.4% risk",
-        "RCRI 3 with about 5.4% risk"
+        "The high-risk-surgery criterion adds one point",
+        "The procedure adds no points because only patient diseases count",
+        "All abdominal surgery adds two points",
+        "Only vascular surgery can add a procedural point"
       ],
       "answer": [
         0
@@ -3521,14 +3521,14 @@
       "id": "PRE-145",
       "set": 1,
       "type": "multi",
-      "stem": "Which three procedure categories count as high-risk surgery in the RCRI? (Select 3)",
+      "stem": "Which THREE operations satisfy the classic RCRI high-risk-surgery category? (Select 3)",
       "options": [
-        "Intraperitoneal",
-        "Intrathoracic",
-        "Suprainguinal vascular",
+        "Intraperitoneal surgery",
+        "Intrathoracic surgery",
+        "Suprainguinal vascular surgery",
         "Cataract extraction",
-        "Hand surgery",
-        "Superficial skin excision"
+        "Superficial hand surgery",
+        "Endoscopy"
       ],
       "answer": [
         0,
@@ -3549,11 +3549,11 @@
       "id": "PRE-146",
       "set": 1,
       "type": "single",
-      "stem": "A patient with stable ischemic heart disease and congestive heart failure is scheduled for laparoscopic cholecystectomy. What RCRI score results?",
+      "stem": "A patient with ischemic heart disease and prior heart failure is scheduled for intraperitoneal surgery. What classic RCRI score results from those three findings?",
       "options": [
         "3",
-        "2",
         "1",
+        "2",
         "4"
       ],
       "answer": [
