@@ -16,7 +16,7 @@
         "Pharynx through carina"
       ],
       "answer": [
-        3
+        0
       ],
       "explanation": "The upper airway includes the nose, mouth, pharynx, hypopharynx, larynx, and cricoid cartilage; the lower airway starts at the trachea.",
       "citation": "",
@@ -40,7 +40,7 @@
         "Upper airway"
       ],
       "answer": [
-        2
+        0
       ],
       "explanation": "The lower airway begins at the trachea and includes the bronchi, bronchioles, and alveoli.",
       "citation": "",
@@ -64,7 +64,7 @@
         "Neural crest alone"
       ],
       "answer": [
-        1
+        0
       ],
       "explanation": "Airway structures derive from pharyngeal arches 1–4 and 6; first-arch problems affect the mandible and palate.",
       "citation": "",
@@ -90,8 +90,8 @@
         "Gas exchange"
       ],
       "answer": [
-        2,
-        3
+        0,
+        1
       ],
       "explanation": "The nose humidifies, filters, and adds resistance to airflow. Gas exchange happens in the alveoli, and phonation at the larynx.",
       "citation": "",
@@ -115,7 +115,7 @@
         "Facial nerve"
       ],
       "answer": [
-        3
+        0
       ],
       "explanation": "Nasal sensation comes from the ophthalmic (V1) and maxillary (V2) branches of the trigeminal nerve.",
       "citation": "",
@@ -139,7 +139,7 @@
         "Superior thyroid and lingual arteries"
       ],
       "answer": [
-        2
+        0
       ],
       "explanation": "The nose is supplied by branches of the maxillary, ophthalmic, and facial arteries; vasoconstrictors reduce bleeding.",
       "citation": "",
@@ -163,7 +163,7 @@
         "Trachea"
       ],
       "answer": [
-        1
+        0
       ],
       "explanation": "Relaxation of the tongue and soft palate can obstruct the airway.",
       "citation": "",
@@ -189,8 +189,8 @@
         "Tetralogy of Fallot"
       ],
       "answer": [
-        4,
-        5
+        0,
+        1
       ],
       "explanation": "Pierre Robin (micrognathia, glossoptosis) and Down syndrome (macroglossia, small airway) predispose to obstruction.",
       "citation": "",
@@ -214,7 +214,7 @@
         "Both palates are mobile"
       ],
       "answer": [
-        3
+        0
       ],
       "explanation": "The hard palate is the fixed anterior two-thirds; the soft palate is the mobile posterior third.",
       "citation": "",
@@ -238,7 +238,7 @@
         "Vallecula"
       ],
       "answer": [
-        2
+        0
       ],
       "explanation": "The fauces is the opening from the oral cavity into the oropharynx.",
       "citation": "",
@@ -262,7 +262,7 @@
         "It predicts mask ventilation alone"
       ],
       "answer": [
-        1
+        0
       ],
       "explanation": "Seeing the fauces is part of the Mallampati classification, distinguishing lower classes from class III and IV.",
       "citation": "",
@@ -310,7 +310,7 @@
         "Vocal cords"
       ],
       "answer": [
-        3
+        0
       ],
       "explanation": "The upper esophageal sphincter prevents regurgitation into the pharynx, and anesthetics relax it.",
       "citation": "",
@@ -334,7 +334,7 @@
         "Recurrent laryngeal nerve"
       ],
       "answer": [
-        2
+        0
       ],
       "explanation": "The internal SLN provides sensation above the cords, including the epiglottis; it needs its own block or topicalization.",
       "citation": "",
@@ -358,7 +358,7 @@
         "Glossopharyngeal nerve"
       ],
       "answer": [
-        1
+        0
       ],
       "explanation": "The RLN is motor to the larynx except the cricothyroid.",
       "citation": "",
@@ -406,7 +406,7 @@
         "Facial nerve injury"
       ],
       "answer": [
-        3
+        0
       ],
       "explanation": "Unilateral RLN injury causes hoarseness and aspiration; bilateral injury can cause respiratory distress.",
       "citation": "",
@@ -430,7 +430,7 @@
         "Unilateral recurrent laryngeal nerve injury"
       ],
       "answer": [
-        2
+        0
       ],
       "explanation": "Bilateral RLN injury leaves both cords near midline, obstructing the airway, and often requires reintubation.",
       "citation": "",
@@ -457,7 +457,7 @@
       ],
       "answer": [
         0,
-        5
+        1
       ],
       "explanation": "The glossopharyngeal and vagus nerves supply the pharynx and larynx. The phrenic, facial, trigeminal, and hypoglossal nerves do not.",
       "citation": "",
@@ -505,7 +505,7 @@
         "Bronchial cartilages"
       ],
       "answer": [
-        3
+        0
       ],
       "explanation": "The thyroid, cricoid, and epiglottis are the three single (unpaired) laryngeal cartilages.",
       "citation": "",
@@ -529,7 +529,7 @@
         "Unpaired laryngeal cartilage"
       ],
       "answer": [
-        2
+        0
       ],
       "explanation": "The arytenoid, corniculate, and cuneiform cartilages are paired.",
       "citation": "",
@@ -555,8 +555,8 @@
         "Gas exchange"
       ],
       "answer": [
-        1,
-        2
+        0,
+        1
       ],
       "explanation": "The larynx protects the lower airway from aspiration and enables gag and cough reflexes, along with phonation and patency.",
       "citation": "",
@@ -604,7 +604,7 @@
         "Vallecula"
       ],
       "answer": [
-        3
+        0
       ],
       "explanation": "The thyroid cartilage laminae fuse anteriorly at the thyroid notch.",
       "citation": "",
@@ -628,7 +628,7 @@
         "Inferior laryngeal artery"
       ],
       "answer": [
-        2
+        0
       ],
       "explanation": "The superior laryngeal artery, from the superior thyroid artery, supplies the supraglottic larynx.",
       "citation": "",
@@ -652,7 +652,7 @@
         "Lingual artery"
       ],
       "answer": [
-        1
+        0
       ],
       "explanation": "The inferior laryngeal artery, from the inferior thyroid artery, supplies the infraglottic larynx.",
       "citation": "",
@@ -700,7 +700,7 @@
         "Muscles of mastication"
       ],
       "answer": [
-        3
+        0
       ],
       "explanation": "Extrinsic laryngeal muscles position the larynx during phonation, breathing, and swallowing.",
       "citation": "",
@@ -724,7 +724,7 @@
         "Piriform sinus"
       ],
       "answer": [
-        2
+        0
       ],
       "explanation": "The vallecula lies between the base of the tongue and the epiglottis.",
       "citation": "",
@@ -748,7 +748,7 @@
         "Piriform sinus"
       ],
       "answer": [
-        1
+        0
       ],
       "explanation": "The Mac blade tip sits in the vallecula and lifts the epiglottis via the hyoepiglottic ligament.",
       "citation": "",
@@ -796,7 +796,7 @@
         "40 cm"
       ],
       "answer": [
-        3
+        0
       ],
       "explanation": "The adult trachea is about 10–20 cm long, so a tube can easily be advanced too far.",
       "citation": "",
@@ -820,7 +820,7 @@
         "5–8"
       ],
       "answer": [
-        2
+        0
       ],
       "explanation": "The trachea contains 16–20 C-shaped cartilage rings.",
       "citation": "",
@@ -844,7 +844,7 @@
         "Epiglottis"
       ],
       "answer": [
-        1
+        0
       ],
       "explanation": "The cricoid is the only complete cartilage ring in the airway.",
       "citation": "",
@@ -892,7 +892,7 @@
         "About 1 cm"
       ],
       "answer": [
-        3
+        0
       ],
       "explanation": "Cartilage disappears at about 0.6–0.8 mm, so bronchiolar patency depends on smooth muscle tone.",
       "citation": "",
@@ -916,7 +916,7 @@
         "Left bronchus about 25–30°"
       ],
       "answer": [
-        2
+        0
       ],
       "explanation": "The right mainstem leaves the trachea at about 25–30°, making it more in line with the trachea than the left.",
       "citation": "",
@@ -940,7 +940,7 @@
         "The right bronchus is narrower"
       ],
       "answer": [
-        1
+        0
       ],
       "explanation": "The right mainstem is wider, shorter, and more vertical, so a deep tube tends to enter it.",
       "citation": "",
@@ -988,7 +988,7 @@
         "Hypoglossal nerve"
       ],
       "answer": [
-        3
+        0
       ],
       "explanation": "The vagus nerve provides parasympathetic innervation to the trachea and bronchi.",
       "citation": "",
@@ -1012,7 +1012,7 @@
         "Vocal cords"
       ],
       "answer": [
-        2
+        0
       ],
       "explanation": "The carina is highly sensitive; contact causes coughing, bronchospasm, and hemodynamic responses.",
       "citation": "",
@@ -1036,7 +1036,7 @@
         "Canalicular stage"
       ],
       "answer": [
-        1
+        0
       ],
       "explanation": "The laryngotracheal groove and lung bud form in the embryonic stage.",
       "citation": "",
@@ -1084,7 +1084,7 @@
         "Alveolar stage"
       ],
       "answer": [
-        3
+        0
       ],
       "explanation": "Surfactant production begins in the canalicular stage (weeks 16–26).",
       "citation": "",
@@ -1108,7 +1108,7 @@
         "Alveoli are fully mature"
       ],
       "answer": [
-        2
+        0
       ],
       "explanation": "The blood-gas barrier begins forming around week 26, so earlier infants have limited gas exchange.",
       "citation": "",
@@ -1132,7 +1132,7 @@
         "By 36 weeks gestation"
       ],
       "answer": [
-        1
+        0
       ],
       "explanation": "Alveolar development continues until about 3 years of age and beyond with growth.",
       "citation": "",
@@ -1180,7 +1180,7 @@
         "Accessory nerve, C1–C2"
       ],
       "answer": [
-        3
+        0
       ],
       "explanation": "The phrenic nerve (C3–C5) innervates the diaphragm and is often blocked by interscalene injections.",
       "citation": "",
@@ -1206,8 +1206,8 @@
         "Notochord"
       ],
       "answer": [
-        4,
-        5
+        0,
+        1
       ],
       "explanation": "The diaphragm develops from the septum transversum and pleuroperitoneal folds, along with the dorsal esophageal mesentery and body wall.",
       "citation": "",
