@@ -3073,10 +3073,7 @@ test.describe('canonical quiz regression', () => {
       localStorage.setItem('mbu_exam1_studio_v1',JSON.stringify({dirtyLocal:true}));
       MBUAppCore.touchStore('mbu_exam1_studio_v1');
     });
-    const restoredNavigation=page.waitForNavigation({waitUntil:'domcontentloaded'});
-    await page.evaluate(() => { MBUSupabase.restoreVersion(45).catch(()=>{}); });
-    await restoredNavigation;
-    await page.evaluate(() => MBUPageReady);
+    await page.evaluate(() => MBUSupabase.restoreVersion(45));
     await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('mbu_exam1_studio_v1')||'{}').restored)).toBe(true);
   });
 
