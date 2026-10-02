@@ -1224,7 +1224,7 @@
       "id": "MISC-051",
       "set": 1,
       "type": "multi",
-      "stem": "A patient's postoperative pain is repeatedly undertreated. Which long-term consequences can follow? (Select 3)",
+      "stem": "Repeated undertreatment of postoperative pain can produce which three long-term harms? (Select 3)",
       "options": [
         "Disability",
         "Drug dependence",
@@ -1252,7 +1252,7 @@
       "id": "MISC-052",
       "set": 1,
       "type": "single",
-      "stem": "A patient with frequent sickle cell crises keeps receiving fragmented ED care. Which resource does the ASA highlight for integrated pain care?",
+      "stem": "A patient with frequent sickle-cell crises receives fragmented episodic pain care. Which resource does the ASA highlight for more integrated management?",
       "options": [
         "Sickle cell centers",
         "Urgent care clinics",
@@ -1276,11 +1276,11 @@
       "id": "MISC-053",
       "set": 1,
       "type": "single",
-      "stem": "An ED audit of children with appendicitis and moderate to severe pain finds a racial gap in treatment. What did a 2015 JAMA study show?",
+      "stem": "A pediatric ED audit asks whether analgesia differs by race for children with appendicitis and moderate-to-severe pain. What did the cited 2015 JAMA study report?",
       "options": [
         "Black children were less likely to receive analgesia",
         "White children were less likely to receive analgesia",
-        "No racial difference in analgesia",
+        "No racial difference was found",
         "Black children received more opioids"
       ],
       "answer": [
@@ -1300,12 +1300,12 @@
       "id": "MISC-054",
       "set": 1,
       "type": "single",
-      "stem": "A rural hospital without pediatric anesthesiologists cares for a 2-year-old with an upper respiratory infection for ear tubes. Why are pediatric patients an equity priority?",
+      "stem": "A rural hospital lacks pediatric anesthesia specialists and is caring for a young child with a URI. Why are pediatric patients emphasized in equity discussions?",
       "options": [
-        "Higher respiratory risk and less access to pediatric specialists",
-        "Children have lower anesthesia risk",
-        "Children have higher rates of PONV",
-        "Children need no specialized care"
+        "They may have higher respiratory risk while also facing less access to pediatric specialists",
+        "Children have lower anesthesia risk than adults",
+        "Children mainly differ because of PONV",
+        "Children rarely need specialized perioperative care"
       ],
       "answer": [
         0
@@ -1324,7 +1324,7 @@
       "id": "MISC-055",
       "set": 1,
       "type": "single",
-      "stem": "Of 1,000 uninsured patients seen in a county clinic, about how many would you expect to be from minority groups?",
+      "stem": "If more than half of uninsured patients are from minority groups, approximately how many of 1,000 uninsured patients would that represent?",
       "options": [
         "More than 500",
         "About 100",
@@ -1348,7 +1348,7 @@
       "id": "MISC-056",
       "set": 1,
       "type": "single",
-      "stem": "A registry review finds that patients with low income or no insurance received fewer antiemetics despite similar PONV risk. Which study found this?",
+      "stem": "Which cited study found fewer antiemetics were given to low-income or uninsured patients despite similar PONV risk?",
       "options": [
         "Andreae (2018)",
         "Goyal (2015)",
@@ -1372,7 +1372,7 @@
       "id": "MISC-057",
       "set": 1,
       "type": "multi",
-      "stem": "Besides lack of insurance, which factors limit access to quality care? (Select 4)",
+      "stem": "Which four barriers can limit access to quality care beyond insurance status? (Select 4)",
       "options": [
         "Lack of paid sick leave",
         "Low health literacy",
@@ -1401,14 +1401,14 @@
       "id": "MISC-058",
       "set": 1,
       "type": "multi",
-      "stem": "Which APSF clinician-level strategies mitigate disparities? (Select 2)",
+      "stem": "Which two APSF strategies operate primarily at the individual clinician level? (Select 2)",
       "options": [
         "Recognize personal bias",
         "Participate in education about disparities",
         "Tie department bonuses to equity metrics",
         "Provide financial incentives for equity measures",
-        "Promote governance supporting equity",
-        "Create a culture of equity systemwide"
+        "Build systemwide governance for equity",
+        "Create a systemwide culture of equity"
       ],
       "answer": [
         0,
@@ -1428,14 +1428,14 @@
       "id": "MISC-059",
       "set": 1,
       "type": "multi",
-      "stem": "Which APSF strategies are system-level? (Select 3)",
+      "stem": "Which three APSF strategies are primarily system-level interventions? (Select 3)",
       "options": [
         "Create a culture of equity",
-        "Provide health equity training",
-        "Financial incentives tied to equity measures",
-        "Recognize personal bias",
-        "Engage in community outreach as an individual",
-        "Personal continuing education"
+        "Provide health-equity training",
+        "Use financial incentives tied to equity measures",
+        "Recognize one's own personal bias",
+        "Individual community outreach",
+        "Personal continuing education alone"
       ],
       "answer": [
         0,
@@ -1456,10 +1456,10 @@
       "id": "MISC-060",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA notices she spends less time explaining risks to non-English-speaking patients and wants to change. Which AANA recommended action applies?",
+      "stem": "A CRNA notices she gives shorter explanations to patients with limited English proficiency. Which AANA-recommended action is the most direct first step?",
       "options": [
-        "Be consciously aware of one's own implicit bias",
-        "Avoid interacting with patients from other cultures",
+        "Consciously recognize and address one's own implicit bias",
+        "Avoid cross-cultural interactions",
         "Use family members as interpreters",
         "Rely on intuition rather than reflection"
       ],
@@ -1480,12 +1480,12 @@
       "id": "MISC-061",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA completes a cultural sensitivity module and says, \"Now I'm culturally competent.\" How does the AANA frame cultural humility?",
+      "stem": "A CRNA completes one cultural-sensitivity course and says the work is finished. How does the AANA frame cultural humility instead?",
       "options": [
-        "As a life-long process",
+        "As a lifelong process of reflection and learning",
         "As a one-time training requirement",
-        "As a requirement for managers",
-        "As a requirement for cultural competency certification"
+        "As a requirement only for managers",
+        "As a certification endpoint"
       ],
       "answer": [
         0
@@ -1504,13 +1504,13 @@
       "id": "MISC-062",
       "set": 1,
       "type": "multi",
-      "stem": "Which AANA recommendations address the workforce? (Select 2)",
+      "stem": "Which two AANA recommendations most directly strengthen the nurse-anesthesia workforce and practice environment? (Select 2)",
       "options": [
         "Encourage diverse students to consider nurse anesthesiology",
-        "Incorporate cultural competency training into practice",
+        "Incorporate cultural-competency training into practice",
         "Limit outcomes data to hospital leadership",
-        "Limit recruitment to a single background",
-        "Remove outcomes data collection",
+        "Recruit from a single background",
+        "Remove outcomes-data collection",
         "Avoid discussing community needs"
       ],
       "answer": [
@@ -1531,12 +1531,12 @@
       "id": "MISC-063",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA arranges an interpreter for a Spanish-speaking patient before consent. Which AANA recommendation does this follow?",
+      "stem": "A CRNA arranges a qualified interpreter before anesthesia consent. Which AANA recommendation is being applied?",
       "options": [
         "Accommodate literacy needs and linguistic barriers",
-        "Collect health outcomes data",
-        "Encourage diverse students to join the profession",
-        "Develop anti-discrimination policy at the facility"
+        "Collect health-outcomes data",
+        "Recruit diverse students",
+        "Develop facility anti-discrimination policy"
       ],
       "answer": [
         0
@@ -1555,7 +1555,7 @@
       "id": "MISC-064",
       "set": 1,
       "type": "multi",
-      "stem": "Which are the four ethical pillars? (Select 4)",
+      "stem": "Which four principles make up the classic biomedical-ethics framework? (Select 4)",
       "options": [
         "Beneficence",
         "Autonomy",
@@ -1584,7 +1584,7 @@
       "id": "MISC-065",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA places a nerve block to reduce opioid use and speed recovery for a patient. Which ethical pillar does this action reflect?",
+      "stem": "A CRNA places a nerve block to reduce opioid exposure and improve recovery. Which ethical principle is most directly reflected?",
       "options": [
         "Beneficence",
         "Non-maleficence",
@@ -1608,7 +1608,7 @@
       "id": "MISC-066",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA declines to give a drug to which the patient had a prior reaction, choosing a safer alternative. Which ethical pillar does this reflect?",
+      "stem": "A CRNA avoids a medication that previously caused a serious reaction and selects a safer alternative. Which ethical principle is most directly reflected?",
       "options": [
         "Non-maleficence",
         "Beneficence",
@@ -1632,7 +1632,7 @@
       "id": "MISC-067",
       "set": 1,
       "type": "single",
-      "stem": "A competent Jehovah's Witness refuses blood products after a full discussion. The CRNA respects the refusal. Which pillar is MOST upheld?",
+      "stem": "A competent Jehovah's Witness refuses blood products after informed discussion. Respecting the refusal most directly upholds which principle?",
       "options": [
         "Autonomy",
         "Beneficence",
@@ -1656,7 +1656,7 @@
       "id": "MISC-068",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA gives the same attention and analgesic options to an uninsured patient as to a VIP. Which pillar is upheld?",
+      "stem": "An uninsured patient receives the same analgesic options and attention as a VIP patient. Which ethical principle is most clearly upheld?",
       "options": [
         "Justice",
         "Autonomy",
@@ -1680,7 +1680,7 @@
       "id": "MISC-069",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA declines to give a sedative that would benefit the surgeon's workflow but raise the patient's aspiration risk. Which pillar is upheld?",
+      "stem": "A sedative would make workflow easier but meaningfully increase aspiration risk, so the CRNA declines to give it. Which principle is most directly upheld?",
       "options": [
         "Non-maleficence",
         "Justice",
@@ -1704,7 +1704,7 @@
       "id": "MISC-070",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA places a regional block to reduce opioid use and improve recovery. Which pillar does this primarily reflect?",
+      "stem": "A regional block is placed primarily to improve recovery and reduce opioid burden. Which ethical principle is most directly reflected?",
       "options": [
         "Beneficence",
         "Justice",
@@ -1728,7 +1728,7 @@
       "id": "MISC-071",
       "set": 1,
       "type": "single",
-      "stem": "A patient wants a spinal, but the CRNA insists on GA because it is \"easier\" without discussing risks. Which pillar is MOST violated?",
+      "stem": "A patient prefers spinal anesthesia, but the CRNA chooses general anesthesia simply because it is easier and never discusses alternatives. Which principle is most clearly violated?",
       "options": [
         "Autonomy",
         "Justice",
@@ -1752,7 +1752,7 @@
       "id": "MISC-072",
       "set": 1,
       "type": "single",
-      "stem": "A department schedules uninsured patients last every day, causing longer NPO times and delays. Which pillar is violated?",
+      "stem": "A department routinely schedules uninsured patients last, creating longer fasting and delays. Which ethical principle is most directly violated?",
       "options": [
         "Justice",
         "Autonomy",
@@ -1776,13 +1776,13 @@
       "id": "MISC-073",
       "set": 1,
       "type": "multi",
-      "stem": "Which topics does the AANA Code of Ethics address? (Select 2)",
+      "stem": "Which two broad responsibilities are explicitly addressed in the AANA Code of Ethics? (Select 2)",
       "options": [
         "Responsibility to patients",
         "Responsibility as a professional",
-        "Responsibility to maximize operating room efficiency",
+        "Responsibility to maximize OR efficiency",
         "Responsibility to hospital shareholders",
-        "Responsibility to the hospital's financial goals",
+        "Responsibility to hospital financial goals",
         "Responsibility to the surgeon's schedule"
       ],
       "answer": [
@@ -1803,7 +1803,7 @@
       "id": "MISC-074",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA delays a case because the patient's dignity is being compromised by leaving her uncovered during positioning. Which core principle of the Code applies?",
+      "stem": "A CRNA stops positioning because a patient's dignity is being compromised by unnecessary exposure. Which Code principle best applies?",
       "options": [
         "Patients first: safety, comfort, and dignity",
         "Responsibility in business practice",
@@ -1827,7 +1827,7 @@
       "id": "MISC-075",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA reports an unsafe practice by a colleague to protect patients. Which core principle is this?",
+      "stem": "A CRNA reports an unsafe practice by a colleague because patients may be harmed. Which Code principle is most directly reflected?",
       "options": [
         "Advocacy",
         "Skill maintenance",
@@ -1851,10 +1851,10 @@
       "id": "MISC-076",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA completes annual simulation and continuing education. Which core principle is this?",
+      "stem": "A CRNA completes simulation, continuing education, and required competency updates. Which Code principle is being demonstrated?",
       "options": [
         "Skill maintenance",
-        "Advocacy for patients and colleagues",
+        "Advocacy",
         "Fairness",
         "Patients first"
       ],
@@ -1875,7 +1875,7 @@
       "id": "MISC-077",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA identifies and corrects bias in how she assesses pain in different groups. Which core principle is this?",
+      "stem": "A CRNA identifies and corrects bias in pain assessment across patient groups. Which Code principle is most directly reflected?",
       "options": [
         "Fairness",
         "Skill maintenance",
@@ -1899,7 +1899,7 @@
       "id": "MISC-078",
       "set": 1,
       "type": "single",
-      "stem": "Which core principle helps patients make the best, safest choices for their own care?",
+      "stem": "Which Code principle most directly supports helping patients make informed, safe choices among available options?",
       "options": [
         "Informed consent",
         "Fairness",
@@ -1923,7 +1923,7 @@
       "id": "MISC-079",
       "set": 1,
       "type": "single",
-      "stem": "A senior CRNA mentors students, maintains certification, and models professional behavior. Which responsibility in the Code does this reflect?",
+      "stem": "A senior CRNA mentors students, maintains certification, and models professional conduct. Which Code responsibility does this best reflect?",
       "options": [
         "Responsibility as a professional",
         "Responsibility to patients",
@@ -1947,7 +1947,7 @@
       "id": "MISC-080",
       "set": 1,
       "type": "single",
-      "stem": "A patient experience committee builds its survey around the dimensions of patient-centered care. How many dimensions should it include?",
+      "stem": "A patient-experience committee builds its survey around the recognized dimensions of patient-centered care. How many dimensions should it include?",
       "options": [
         "Eight",
         "Four",
@@ -1971,14 +1971,14 @@
       "id": "MISC-081",
       "set": 1,
       "type": "multi",
-      "stem": "Which are dimensions of patient-centered care? (Select 4)",
+      "stem": "Which four items are dimensions of patient-centered care? (Select 4)",
       "options": [
         "Emotional support",
         "Physical comfort",
         "Involvement of family and friends",
         "Access to information and education",
         "Cost containment",
-        "Operating room efficiency"
+        "Operating-room efficiency"
       ],
       "answer": [
         0,
@@ -2000,10 +2000,10 @@
       "id": "MISC-082",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA explains each step of induction to an anxious patient and answers questions. Which dimension is MOST reflected?",
+      "stem": "A CRNA explains each step of induction to an anxious patient and answers questions. Which patient-centered-care dimension is most directly reflected?",
       "options": [
         "Information, communication, and education",
-        "Access to care and scheduling convenience",
+        "Access to care",
         "Continuity and transition",
         "Coordination of care"
       ],
@@ -2024,10 +2024,10 @@
       "id": "MISC-083",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA gives a thorough handoff to PACU including pain plan and concerns. Which dimension is reflected?",
+      "stem": "A CRNA gives PACU a detailed handoff including the pain plan and unresolved concerns. Which patient-centered-care dimension is most directly reflected?",
       "options": [
         "Continuity and transition",
-        "Physical comfort during the transfer",
+        "Physical comfort",
         "Access to care",
         "Emotional support"
       ],
@@ -2048,7 +2048,7 @@
       "id": "MISC-084",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA warms the patient and pads pressure points. Which dimension is reflected?",
+      "stem": "A CRNA actively warms the patient and pads pressure points. Which patient-centered-care dimension is most directly reflected?",
       "options": [
         "Physical comfort",
         "Emotional support",
@@ -2072,10 +2072,10 @@
       "id": "MISC-085",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA lets a child's parent stay for mask induction. Which dimension is reflected?",
+      "stem": "A child's parent is allowed to remain for mask induction when appropriate. Which patient-centered-care dimension is most directly reflected?",
       "options": [
         "Involvement of family and friends",
-        "Access to care through transportation help",
+        "Access to care",
         "Continuity and transition",
         "Coordination of care"
       ],
@@ -2096,14 +2096,14 @@
       "id": "MISC-086",
       "set": 1,
       "type": "multi",
-      "stem": "Which informed consent topics does the AANA guidance address? (Select 4)",
+      "stem": "Which four issues are specifically addressed in AANA informed-consent guidance? (Select 4)",
       "options": [
         "Timing of consent",
         "Emergencies",
         "Withheld information",
         "Literacy and language barriers",
         "OR scheduling priorities",
-        "Anesthesia machine checkout"
+        "Anesthesia-machine checkout"
       ],
       "answer": [
         0,
@@ -2125,14 +2125,14 @@
       "id": "MISC-087",
       "set": 1,
       "type": "multi",
-      "stem": "Which patients need special attention during the anesthesia consent process? (Select 3)",
+      "stem": "Which three patients require special attention during anesthesia consent because capacity, pain, or communication may complicate the process? (Select 3)",
       "options": [
-        "A laboring patient in pain",
+        "A laboring patient in severe pain",
         "A patient with dementia",
         "A patient with limited English proficiency",
         "A healthy adult having a repeat procedure",
         "A patient with prior surgery",
-        "A healthy patient over age 40"
+        "A healthy patient older than 40"
       ],
       "answer": [
         0,
@@ -2153,10 +2153,10 @@
       "id": "MISC-088",
       "set": 1,
       "type": "single",
-      "stem": "A patient with limited English proficiency is scheduled for surgery. What is the BEST way to obtain consent?",
+      "stem": "A patient with limited English proficiency needs anesthesia consent. Which approach best supports valid informed consent?",
       "options": [
         "Use a qualified medical interpreter",
-        "Ask a family member to translate quickly",
+        "Use a family member for rapid translation",
         "Use gestures and proceed",
         "Have the patient sign without explanation"
       ],
@@ -2177,12 +2177,12 @@
       "id": "MISC-089",
       "set": 1,
       "type": "single",
-      "stem": "A surgery center wants a streamlined consent form that skips some state-required elements. Which requirements must consent follow?",
+      "stem": "A surgery center wants to simplify its consent form by omitting some state-required elements. Which standard governs whether that is acceptable?",
       "options": [
-        "Federal, state, local, facility, and accreditation requirements",
-        "Facility policy, which can modify state requirements",
-        "Hospital policy but not state law",
-        "Anesthesia department guidelines alone"
+        "Consent must comply with applicable federal, state, local, facility, and accreditation requirements",
+        "Facility policy can override state requirements",
+        "Hospital policy replaces state law",
+        "Anesthesia-department guidance alone is sufficient"
       ],
       "answer": [
         0
@@ -2201,12 +2201,12 @@
       "id": "MISC-090",
       "set": 1,
       "type": "single",
-      "stem": "A patient in labor is in severe pain when asked to consent for an epidural. What consent consideration applies?",
+      "stem": "A laboring patient is in severe pain when epidural consent is discussed. Which issue makes this a special consent situation?",
       "options": [
-        "Special population considerations for obstetric consent",
-        "Consent is not needed during labor",
-        "Her partner must consent during active labor",
-        "Consent must be delayed until after delivery"
+        "Pain and the obstetric context may affect the consent process and require special attention",
+        "Consent is unnecessary during labor",
+        "A partner must consent during active labor",
+        "Consent must wait until after delivery"
       ],
       "answer": [
         0
@@ -2225,12 +2225,12 @@
       "id": "MISC-091",
       "set": 1,
       "type": "single",
-      "stem": "A patient with dementia is scheduled for hip surgery. What consent consideration applies?",
+      "stem": "A patient with dementia is scheduled for hip surgery. What should happen before relying on the patient's signature alone?",
       "options": [
-        "Assess capacity and involve a legal surrogate if needed",
-        "Obtain consent from the patient without assessment",
-        "Have the surgeon sign on her behalf",
-        "Let the surgeon consent for anesthesia"
+        "Assess decision-making capacity and involve a legal surrogate if needed",
+        "Obtain the signature without assessing capacity",
+        "Have the surgeon sign for the patient",
+        "Let the surgeon provide anesthesia consent"
       ],
       "answer": [
         0
@@ -2249,12 +2249,12 @@
       "id": "MISC-092",
       "set": 1,
       "type": "single",
-      "stem": "In an emergency with an unconscious patient and no surrogate, how is consent addressed?",
+      "stem": "An unconscious patient needs emergency surgery and no surrogate is available. How is consent generally addressed?",
       "options": [
-        "Emergency provisions per law and policy",
-        "Two-physician consent is required before any care",
-        "The patient must be woken to consent",
-        "Anesthesia is withheld until consent is obtained"
+        "Use emergency-consent provisions consistent with law and policy",
+        "Wait for two physicians to sign before any treatment",
+        "Wake the patient before proceeding",
+        "Withhold anesthesia until a surrogate is found"
       ],
       "answer": [
         0
@@ -2273,12 +2273,12 @@
       "id": "MISC-093",
       "set": 1,
       "type": "single",
-      "stem": "A hospital trains staff to adjust communication, respect beliefs, and change policies to serve diverse patients. What does this describe?",
+      "stem": "A hospital adapts communication, respects health beliefs, and changes policies to better serve diverse patients. What concept does this describe?",
       "options": [
         "Culturally competent care",
-        "Knowing the religious beliefs of every patient",
-        "Providing identical care to every patient",
-        "Providing care in the patient's native language at all times"
+        "Knowing every patient's religious beliefs in advance",
+        "Providing identical care to everyone",
+        "Always using the patient's native language"
       ],
       "answer": [
         0
@@ -2297,13 +2297,13 @@
       "id": "MISC-094",
       "set": 1,
       "type": "multi",
-      "stem": "Which are risks of failing at cultural competence? (Select 2)",
+      "stem": "Which two harms can result from poor cultural competence? (Select 2)",
       "options": [
-        "Patients fail to seek or trust care",
+        "Patients may avoid or distrust care",
         "Miscommunication during care",
         "Higher procedure volume",
-        "Improved patient satisfaction",
-        "Lower rates of disparities",
+        "Improved satisfaction",
+        "Lower disparities",
         "Shorter hospital stays"
       ],
       "answer": [
@@ -2324,12 +2324,12 @@
       "id": "MISC-095",
       "set": 1,
       "type": "single",
-      "stem": "A department trains staff to adapt communication to patients' beliefs and use interpreters. What outcomes is this culturally competent care meant to produce?",
+      "stem": "Staff are trained to adapt communication to patient beliefs and to use interpreters appropriately. What outcomes is this culturally competent care intended to improve?",
       "options": [
-        "Trust, safety, and fewer disparities",
+        "Trust, safety, and reduction of disparities",
         "Shorter case times",
         "Lower drug costs",
-        "Fewer staff"
+        "Reduced staffing needs"
       ],
       "answer": [
         0
@@ -2348,12 +2348,12 @@
       "id": "MISC-096",
       "set": 1,
       "type": "single",
-      "stem": "A patient's culture discourages eye contact, and the CRNA adjusts communication style. What does this show?",
+      "stem": "A patient's culture discourages direct eye contact, and the CRNA adjusts communication without compromising care. What does this demonstrate?",
       "options": [
-        "Recognition of diverse health-related beliefs and values",
+        "Recognition and respect for diverse health-related beliefs and values",
         "Failure to maintain professional standards",
-        "Paternalism in care decisions for the patient",
-        "Avoidance of patient involvement in cultural decisions"
+        "Paternalism",
+        "Avoidance of patient involvement"
       ],
       "answer": [
         0
@@ -2372,7 +2372,7 @@
       "id": "MISC-097",
       "set": 1,
       "type": "multi",
-      "stem": "You are designing a study comparing two antiemetic regimens. Which ethical principles must the protocol uphold? (Select 3)",
+      "stem": "A study comparing two antiemetic regimens must uphold which three ethical principles? (Select 3)",
       "options": [
         "Autonomy",
         "Beneficence",
@@ -2400,14 +2400,14 @@
       "id": "MISC-098",
       "set": 1,
       "type": "multi",
-      "stem": "Which protections does research ethics promote? (Select 4)",
+      "stem": "Which four protections are fundamental to ethical human-subject research? (Select 4)",
       "options": [
         "Voluntary participation",
         "Confidentiality",
         "Participant privacy",
-        "The right to withdraw at any time",
+        "Right to withdraw at any time",
         "Public release of identities",
-        "Payment that encourages participation"
+        "Payment designed to pressure participation"
       ],
       "answer": [
         0,
@@ -2429,12 +2429,12 @@
       "id": "MISC-099",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA wants to study a new antiemetic regimen in patients. Which body must approve and oversee the study?",
+      "stem": "A CRNA proposes a prospective study of a new antiemetic regimen. Which body must approve and oversee the human-subject research?",
       "options": [
-        "An institutional review board",
-        "The hospital finance committee",
-        "The surgeon's department",
-        "The pharmacy and therapeutics committee"
+        "Institutional review board",
+        "Hospital finance committee",
+        "Surgeon's department",
+        "Pharmacy and therapeutics committee"
       ],
       "answer": [
         0
@@ -2453,7 +2453,7 @@
       "id": "MISC-100",
       "set": 1,
       "type": "multi",
-      "stem": "An IRB reviews your proposed perioperative study. Which groups require added protections as vulnerable populations? (Select 4)",
+      "stem": "Which four groups require added protections as vulnerable populations in human-subject research? (Select 4)",
       "options": [
         "Pregnant women and fetuses",
         "Minors",
