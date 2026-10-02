@@ -9796,7 +9796,7 @@
       "id": "MISC-401",
       "set": 1,
       "type": "single",
-      "stem": "A hospital eliminates unnecessary preoperative testing without compromising safety. Which IOM quality domain is most directly improved?",
+      "stem": "A hospital eliminates unnecessary preoperative testing without compromising outcomes. Which IOM quality domain is most directly improved?",
       "options": [
         "Efficient",
         "Timely",
@@ -9820,7 +9820,7 @@
       "id": "MISC-402",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives an evidence-based regional technique instead of an outdated approach with worse outcomes. Which IOM domain is most directly improved?",
+      "stem": "A department replaces an outdated anesthetic approach with an evidence-based regional technique that improves outcomes. Which IOM quality domain is most directly improved?",
       "options": [
         "Effective",
         "Efficient",
@@ -9844,7 +9844,7 @@
       "id": "MISC-403",
       "set": 1,
       "type": "single",
-      "stem": "A department lists safe, effective, patient-centered, timely, efficient, equitable, and affordable as the IOM domains. Which item does not belong?",
+      "stem": "A department lists seven IOM quality domains: safe, effective, patient-centered, timely, efficient, equitable, and affordable. Which item does not belong?",
       "options": [
         "Affordable",
         "Timely",
@@ -9868,7 +9868,7 @@
       "id": "MISC-404",
       "set": 1,
       "type": "single",
-      "stem": "A quality dashboard adds surgical volume to the six NHQDR core areas. Which item is not one of the core areas?",
+      "stem": "A quality dashboard adds surgical volume to the NHQDR core areas. Which item should be removed?",
       "options": [
         "Surgical volume",
         "Patient safety",
@@ -9916,7 +9916,7 @@
       "id": "MISC-406",
       "set": 1,
       "type": "single",
-      "stem": "Which event contributed most to the sharp US life-expectancy decline in 2020–2021?",
+      "stem": "Which event most directly explains the sharp decline in US life expectancy during 2020–2021?",
       "options": [
         "The COVID-19 pandemic",
         "Lower smoking rates",
@@ -9940,7 +9940,7 @@
       "id": "MISC-407",
       "set": 1,
       "type": "single",
-      "stem": "A patient has no nearby family or social support and no one available to drive her home after surgery. Which SDOH domain is most directly involved?",
+      "stem": "A patient has no nearby family, no social support, and no one available to drive her home after surgery. Which SDOH domain is most directly involved?",
       "options": [
         "Social and community context",
         "Economic stability",
@@ -9988,9 +9988,9 @@
       "id": "MISC-409",
       "set": 1,
       "type": "single",
-      "stem": "A preop clinic serves a low-income, largely minority community. Which access pattern should the team anticipate?",
+      "stem": "A preop clinic serves a low-income, largely minority community. Which access pattern should the team be prepared to encounter?",
       "options": [
-        "Less access to primary and preventive care",
+        "Reduced access to primary and preventive care",
         "Greater access to preventive care",
         "Lower chronic-disease burden",
         "Higher specialty-care use"
@@ -10012,10 +10012,10 @@
       "id": "MISC-410",
       "set": 1,
       "type": "single",
-      "stem": "A minority laboring patient has no epidural and later requires emergency cesarean under general anesthesia. Which disparity can contribute to this pattern?",
+      "stem": "A laboring minority patient has no epidural and later requires emergency cesarean delivery under general anesthesia. Which disparity can contribute to this pattern?",
       "options": [
-        "Differences in labor care, including lower epidural use",
-        "Higher elective cesarean preference",
+        "Lower use of neuraxial labor analgesia",
+        "Higher preference for elective cesarean delivery",
         "Prenatal care alone",
         "Larger infant size alone"
       ],
@@ -10063,9 +10063,9 @@
       "id": "MISC-412",
       "set": 1,
       "type": "single",
-      "stem": "A rural patient must travel three hours for chronic-pain care. What does the ASA position cited in the lecture suggest?",
+      "stem": "A rural patient must travel three hours for chronic-pain care. What does the cited ASA position suggest?",
       "options": [
-        "Chronic-pain care should be more widely available and financially supported",
+        "Pain care should be more widely available and financially supported",
         "Current access is already adequate",
         "Pain care should remain limited to academic centers",
         "Financial support is unnecessary"
@@ -10111,12 +10111,12 @@
       "id": "MISC-414",
       "set": 1,
       "type": "single",
-      "stem": "An uninsured adult misses preventive screening and presents later with advanced disease. Which access problem best explains the worse outcome?",
+      "stem": "An uninsured adult misses preventive screening and later presents with advanced disease. Which access problem best explains the delayed outcome?",
       "options": [
-        "Lower use of critical and preventive services",
+        "Lower use of preventive and other critical services",
         "Greater preventive-service use",
         "Lower surgical risk",
-        "More baseline comorbidities in every uninsured patient"
+        "More comorbidities in every uninsured patient"
       ],
       "answer": [
         0
@@ -10135,7 +10135,7 @@
       "id": "MISC-415",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA recognizes personal bias and becomes motivated to change counseling behavior. Which APSF clinician-level strategy does this reflect?",
+      "stem": "A CRNA recognizes a personal bias and becomes motivated to change counseling behavior. Which clinician-level APSF strategy does this reflect?",
       "options": [
         "Intrinsic motivation to change behavior",
         "Legislative advocacy",
@@ -10183,12 +10183,12 @@
       "id": "MISC-417",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA believes a cultural-competence course completed five years ago means no further growth is needed. What principle is being missed?",
+      "stem": "A CRNA believes a cultural-competence course completed five years ago means no further growth is needed. Which principle is being missed?",
       "options": [
         "Cultural humility is an ongoing lifelong process",
         "Cultural humility is a one-time requirement",
         "Cultural humility applies only to managers",
-        "Cultural humility is optional after certification"
+        "Cultural humility ends after certification"
       ],
       "answer": [
         0
@@ -10207,7 +10207,7 @@
       "id": "MISC-418",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA avoids placing an unnecessary invasive line because the risks outweigh the benefit. Which ethical principle is most directly reflected?",
+      "stem": "A CRNA avoids an invasive line because its risks exceed the expected benefit. Which ethical principle is most directly reflected?",
       "options": [
         "Non-maleficence",
         "Justice",
@@ -10231,7 +10231,7 @@
       "id": "MISC-419",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a valid DNR order that is reviewed before anesthesia and honored according to the patient's wishes. Which ethical principle is most directly reflected?",
+      "stem": "A valid DNR order is reviewed before anesthesia and honored according to the patient's wishes. Which ethical principle is most directly reflected?",
       "options": [
         "Autonomy",
         "Justice",
@@ -10255,7 +10255,7 @@
       "id": "MISC-420",
       "set": 1,
       "type": "single",
-      "stem": "Clinically similar patients are offered the same regional-anesthesia options regardless of social status. Which ethical principle is most directly reflected?",
+      "stem": "Clinically similar patients receive the same regional-anesthesia options regardless of social status. Which ethical principle is most directly reflected?",
       "options": [
         "Justice",
         "Autonomy",
@@ -10327,7 +10327,7 @@
       "id": "MISC-423",
       "set": 1,
       "type": "single",
-      "stem": "Which Code of Ethics principle most directly supports treating patients fairly and correcting bias?",
+      "stem": "Which Code principle most directly supports treating patients fairly and correcting bias?",
       "options": [
         "Fairness",
         "Advocacy",
@@ -10375,7 +10375,7 @@
       "id": "MISC-425",
       "set": 1,
       "type": "single",
-      "stem": "Warm blankets and active pain relief most directly support which patient-centered-care dimension?",
+      "stem": "Active warming and prompt pain relief primarily support which patient-centered-care dimension?",
       "options": [
         "Physical comfort",
         "Access to care",
@@ -10399,7 +10399,7 @@
       "id": "MISC-426",
       "set": 1,
       "type": "single",
-      "stem": "Which informed-consent topic applies when relevant information is intentionally not disclosed to the patient?",
+      "stem": "Which informed-consent topic applies when relevant information is intentionally withheld from the patient?",
       "options": [
         "Withheld information",
         "Timing",
@@ -10423,7 +10423,7 @@
       "id": "MISC-427",
       "set": 1,
       "type": "single",
-      "stem": "Which informed-consent topic is most directly involved when consent is obtained immediately before surgery?",
+      "stem": "Consent is obtained immediately before surgery, after significant time pressure has developed. Which informed-consent issue is most directly implicated?",
       "options": [
         "Timing",
         "Withheld information",
@@ -10447,7 +10447,7 @@
       "id": "MISC-428",
       "set": 1,
       "type": "single",
-      "stem": "A provider repeatedly dismisses culturally important practices and generates patient complaints. Which risk of poor cultural competence does this most directly create?",
+      "stem": "A provider repeatedly dismisses culturally important practices and generates patient complaints. Which risk of poor cultural competence is most directly demonstrated?",
       "options": [
         "Failure to maintain professional standards",
         "Improved trust",
@@ -10471,9 +10471,9 @@
       "id": "MISC-429",
       "set": 1,
       "type": "single",
-      "stem": "A preop clinic redesigns its environment and communication so patients from diverse backgrounds feel respected. What is the primary goal?",
+      "stem": "A preop clinic redesigns communication and the environment so patients from diverse backgrounds feel respected. What is the primary goal?",
       "options": [
-        "Create a comfortable environment based on mutual respect",
+        "Create a respectful environment built on mutual trust",
         "Shorten appointments",
         "Reduce costs",
         "Eliminate interpreter use"
@@ -10495,7 +10495,7 @@
       "id": "MISC-430",
       "set": 1,
       "type": "single",
-      "stem": "A research consent process allows participants to withdraw at any time without penalty. Which ethical principle is most directly protected?",
+      "stem": "Research participants are told they may withdraw at any time without penalty. Which ethical principle is most directly protected?",
       "options": [
         "Autonomy",
         "Justice",
@@ -10570,7 +10570,7 @@
       "id": "MISC-433",
       "set": 1,
       "type": "single",
-      "stem": "A PACU nurse is not told about a difficult intubation and removes airway support too early. Which APSF priority is most directly implicated?",
+      "stem": "PACU is not told about a difficult intubation and removes airway support too early. Which APSF safety priority is most directly implicated?",
       "options": [
         "Communication and transitions of care",
         "Medication safety",
@@ -10594,7 +10594,7 @@
       "id": "MISC-434",
       "set": 1,
       "type": "single",
-      "stem": "A department adopts monitoring protocols that improve safety without unnecessary cost. Which APSF priority does this best match?",
+      "stem": "A department adopts monitoring protocols that improve safety without unnecessary cost. Which APSF priority best matches this goal?",
       "options": [
         "Cost-effective protocols that improve safety",
         "Medication safety",
@@ -10618,7 +10618,7 @@
       "id": "MISC-435",
       "set": 1,
       "type": "single",
-      "stem": "During a stable case, a CRNA notices a subtle 4 mmHg ETCO2 rise and investigates before an alarm. Which concept is most directly demonstrated?",
+      "stem": "During a stable case, a CRNA notices a subtle 4 mmHg rise in ETCO2 and investigates before any alarm. Which human-performance concept is most directly demonstrated?",
       "options": [
         "Vigilance",
         "Future-oriented situational awareness only",
@@ -10738,7 +10738,7 @@
       "id": "MISC-440",
       "set": 1,
       "type": "single",
-      "stem": "A department wants to address personal-phone use during anesthesia care. Which strategy is most appropriate?",
+      "stem": "A department wants to reduce unsafe personal-phone use during anesthesia care. Which strategy is most appropriate?",
       "options": [
         "Establish and enforce acceptable-use policies",
         "Ban all monitors",
@@ -10762,7 +10762,7 @@
       "id": "MISC-441",
       "set": 1,
       "type": "single",
-      "stem": "After a near miss, the team meets to discuss what happened and how communication can improve. Which safety strategy is this?",
+      "stem": "After a near miss, the team reviews what happened and how communication can improve. Which safety strategy is being used?",
       "options": [
         "Structured debriefing and communication improvement",
         "Device-use regulation",
@@ -10906,7 +10906,7 @@
       "id": "MISC-447",
       "set": 1,
       "type": "single",
-      "stem": "Covering coughs and using appropriate PPE most directly interrupts which link in the chain of infection?",
+      "stem": "Covering coughs and using appropriate source-control measures most directly interrupts which link in the chain of infection?",
       "options": [
         "Portal of exit",
         "Portal of entry",
