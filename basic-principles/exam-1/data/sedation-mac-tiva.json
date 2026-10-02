@@ -11003,12 +11003,12 @@
       "id": "SED-451",
       "set": 1,
       "type": "single",
-      "stem": "During TIVA with MEP monitoring, bilateral signal amplitude falls immediately after a propofol bolus while BP and Hgb remain stable. What is the best first interpretation?",
+      "stem": "During TIVA with MEP monitoring, bilateral signals fall immediately after a large propofol bolus while MAP, oxygenation, temperature, and hemoglobin remain stable. What should be considered first?",
       "options": [
-        "Anesthetic change is a likely cause; stabilize dosing and recheck",
-        "Bilateral cord injury from instrumentation until proven otherwise",
-        "Volatile contamination of the circuit",
-        "Neuromuscular blockade wore off"
+        "A global anesthetic effect from the abrupt depth change",
+        "A focal surgical injury",
+        "Neuromuscular blockade wearing off",
+        "Unilateral cord ischemia"
       ],
       "answer": [
         0
@@ -11027,12 +11027,12 @@
       "id": "SED-452",
       "set": 1,
       "type": "single",
-      "stem": "During TIVA with MEP monitoring, only left-sided signals deteriorate immediately after pedicle-screw placement while anesthetic depth and physiology remain stable. What should be suspected?",
+      "stem": "During TIVA, only left-sided MEPs deteriorate immediately after pedicle-screw placement while anesthetic depth and physiology remain unchanged. What requires urgent evaluation?",
       "options": [
-        "A surgical cause needs urgent evaluation",
-        "An anesthetic cause from propofol",
-        "A global physiologic cause from hypotension",
-        "Neuromuscular blockade"
+        "A focal surgical/neurologic cause",
+        "A global propofol effect",
+        "Systemic hypotension",
+        "Global hypothermia"
       ],
       "answer": [
         0
@@ -11051,12 +11051,12 @@
       "id": "SED-453",
       "set": 1,
       "type": "single",
-      "stem": "A patient with MH susceptibility needs spine surgery with MEP monitoring. Which anesthetic plan satisfies both constraints?",
+      "stem": "A patient susceptible to malignant hyperthermia requires spine surgery with muscle-recorded MEPs. Which plan best satisfies both constraints?",
       "options": [
-        "Propofol-remifentanil TIVA with minimal NMB after intubation",
-        "Sevoflurane 0.25 MAC with a rocuronium infusion for stillness",
-        "Desflurane at low MAC with dantrolene prophylaxis",
-        "Nitrous oxide with propofol boluses"
+        "Trigger-free propofol-opioid TIVA with neuromuscular blockade minimized after intubation",
+        "Sevoflurane with continuous rocuronium",
+        "Desflurane with prophylactic dantrolene",
+        "Isoflurane with deep paralysis"
       ],
       "answer": [
         0
@@ -11075,12 +11075,12 @@
       "id": "SED-454",
       "set": 1,
       "type": "single",
-      "stem": "During propofol-remifentanil TIVA, BIS is 42 but HR and BP surge at incision. Which anesthetic component is most likely inadequate?",
+      "stem": "During propofol-remifentanil TIVA, processed EEG remains in the intended hypnotic range but HR and BP surge at incision. Which component most likely needs adjustment?",
       "options": [
-        "Inadequate analgesia rather than inadequate hypnosis",
-        "Inadequate hypnosis despite the reassuring BIS value",
-        "Neuromuscular blockade wearing off",
-        "Light anesthesia from pump occlusion"
+        "Analgesia/antinociception",
+        "Hypnosis automatically",
+        "Neuromuscular reversal",
+        "IV fluid solely because any tachycardia proves hypovolemia"
       ],
       "answer": [
         0
@@ -11099,12 +11099,12 @@
       "id": "SED-455",
       "set": 1,
       "type": "single",
-      "stem": "A TIVA patient wakes in severe pain immediately after remifentanil is stopped. What part of emergence planning was missed?",
+      "stem": "A patient awakens in severe pain immediately after remifentanil is stopped. Which emergence step was missed?",
       "options": [
-        "Longer-acting analgesia planned before emergence",
-        "A longer propofol infusion continued into emergence",
-        "Neuromuscular reversal before extubation",
-        "Processed EEG to guide emergence timing"
+        "Establishing longer-lasting analgesia before the ultra-short opioid wore off",
+        "Continuing propofol after extubation",
+        "Giving additional neuromuscular blocker",
+        "Stopping all analgesics before emergence"
       ],
       "answer": [
         0
@@ -11123,12 +11123,12 @@
       "id": "SED-456",
       "set": 1,
       "type": "single",
-      "stem": "A failed field block causes restlessness, and repeated propofol boluses then cause apnea. What management error occurred?",
+      "stem": "A failed field block causes pain and movement; repeated propofol boluses then produce apnea. What management error occurred?",
       "options": [
-        "Treating poor analgesia with deeper sedation",
-        "Using too little propofol for the stimulation level",
-        "Giving opioids for pain",
-        "Converting to GA too early"
+        "Pain was treated primarily by deepening hypnosis rather than correcting analgesia/anesthetic technique",
+        "Too little propofol was given",
+        "Conversion was considered too early",
+        "The patient received excessive local anesthesia by definition"
       ],
       "answer": [
         0
@@ -11147,12 +11147,12 @@
       "id": "SED-457",
       "set": 1,
       "type": "single",
-      "stem": "Hypercarbia persists despite reducing sedation and stimulating the patient during MAC. What is the next step?",
+      "stem": "During MAC, hypercapnia persists despite reducing sedative delivery, stimulation, repositioning, and basic airway maneuvers. What is the next priority?",
       "options": [
-        "Support ventilation and consider conversion if persistent",
-        "Increase oxygen and continue monitoring",
-        "Give more sedation to improve comfort",
-        "Switch capnography to a mask and recheck in 15 minutes"
+        "Provide effective ventilatory support and escalate/convert the airway plan if inadequate ventilation persists",
+        "Increase oxygen alone",
+        "Deepen sedation",
+        "Ignore ETCO2 if SpO2 is acceptable"
       ],
       "answer": [
         0
@@ -11171,12 +11171,12 @@
       "id": "SED-458",
       "set": 1,
       "type": "single",
-      "stem": "During colonoscopy MAC, the capnography alarm sounds while the provider is charting. What should be done first?",
+      "stem": "During colonoscopy MAC, the capnography apnea alarm sounds while the provider is charting. What should happen first?",
       "options": [
-        "Look at the patient and airway first",
-        "Check that the sampling line is connected",
-        "Increase the propofol rate",
-        "Look at the SpO2 trend before going to the patient"
+        "Immediately assess the patient and ventilation while verifying the signal",
+        "Finish charting, then inspect the waveform",
+        "Increase propofol",
+        "Wait for SpO2 to fall"
       ],
       "answer": [
         0
@@ -11195,12 +11195,12 @@
       "id": "SED-459",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives midazolam and fentanyl in holding before transport. What is the safest transport plan?",
+      "stem": "A patient receives midazolam and fentanyl in holding immediately before transport. Which transport plan is safest?",
       "options": [
-        "Transport with monitoring and airway equipment",
-        "Transport with SpO2 monitoring only, since the OR is close",
-        "Transport with SpO2 if the patient is stable",
-        "Transport after giving more sedation"
+        "Continue appropriate physiologic monitoring with personnel and equipment capable of airway/ventilatory rescue",
+        "Use no monitoring if the trip is short",
+        "Use only a pretransport SpO2 reading",
+        "Give more sedative so movement does not interrupt transport"
       ],
       "answer": [
         0
@@ -11219,12 +11219,12 @@
       "id": "SED-460",
       "set": 1,
       "type": "single",
-      "stem": "OSA-related obstruction repeatedly recurs whenever jaw thrust is released. What is the best next step?",
+      "stem": "A patient with OSA obstructs every time jaw thrust is released during MAC. What does this recurrent pattern suggest?",
       "options": [
-        "Place an airway adjunct or consider conversion",
-        "Increase sedation to reduce snoring",
-        "Deepen sedation, since obstruction is from anxiety",
-        "Continue, since SpO2 is still normal on oxygen"
+        "Basic positioning alone is insufficient; use an airway adjunct or escalate the airway/anesthetic plan as needed",
+        "More sedative will improve pharyngeal tone",
+        "Normal SpO2 on oxygen proves the airway is safe",
+        "The obstruction can be ignored if the procedure is brief"
       ],
       "answer": [
         0
@@ -11243,12 +11243,12 @@
       "id": "SED-461",
       "set": 1,
       "type": "single",
-      "stem": "A patient with EF 30% becomes profoundly hypotensive during propofol-remifentanil TIVA. What is the best response?",
+      "stem": "A patient with EF 30% becomes profoundly hypotensive during propofol-remifentanil TIVA. What is the best immediate anesthetic response?",
       "options": [
-        "Reduce propofol and support BP",
-        "Increase remifentanil to blunt sympathetic tone",
-        "Increase propofol to deepen anesthesia",
-        "Increase remifentanil to blunt the stress response"
+        "Reduce contributing anesthetic doses as appropriate, assess cause, and support perfusion",
+        "Increase propofol",
+        "Increase remifentanil",
+        "Ignore hypotension if processed EEG is acceptable"
       ],
       "answer": [
         0
@@ -11267,10 +11267,10 @@
       "id": "SED-462",
       "set": 1,
       "type": "single",
-      "stem": "Dexmedetomidine causes HR 38 and BP 80/40. What should be done first?",
+      "stem": "During dexmedetomidine sedation, HR falls to 38/min with BP 80/40 mmHg and poor perfusion. What should occur first?",
       "options": [
-        "Reduce or stop dexmedetomidine and treat bradycardia",
-        "Increase dexmedetomidine to deepen sedation further",
+        "Reduce/stop the contributing infusion and treat clinically significant bradycardia/hypotension",
+        "Increase dexmedetomidine",
         "Give flumazenil",
         "Give naloxone"
       ],
@@ -11291,12 +11291,12 @@
       "id": "SED-463",
       "set": 1,
       "type": "single",
-      "stem": "During EGD, coughing and desaturation occur and gastric contents are suctioned. What is the next priority?",
+      "stem": "During EGD, coughing and desaturation occur and gastric contents are suctioned from the pharynx. What is the priority?",
       "options": [
-        "Secure the airway and manage aspiration",
-        "Increase sedation to stop coughing",
-        "Remove the endoscope and continue sedation",
-        "Continue, since SpO2 recovers after suctioning"
+        "Manage suspected aspiration and oxygenation/ventilation, with airway control if needed",
+        "Deepen sedation to suppress coughing",
+        "Continue once SpO2 briefly recovers",
+        "Delay airway intervention until imaging"
       ],
       "answer": [
         0
@@ -11315,12 +11315,12 @@
       "id": "SED-464",
       "set": 1,
       "type": "single",
-      "stem": "Ketamine sedation is complicated by copious secretions and laryngospasm. What preventive measure should be emphasized in future cases?",
+      "stem": "Ketamine sedation is complicated by copious secretions followed by laryngospasm. What preparation is especially important when using ketamine in a patient at risk for this problem?",
       "options": [
-        "Anticipate secretions; have suction ready",
-        "Deepen ketamine to suppress reflexes",
-        "Switch to propofol boluses to dry secretions",
-        "Avoid suction to prevent airway stimulation"
+        "Anticipate secretions and ensure immediate suction and airway-rescue capability",
+        "Avoid suction equipment",
+        "Deepen ketamine solely to abolish airway reflexes",
+        "Assume spontaneous ventilation prevents laryngospasm"
       ],
       "answer": [
         0
@@ -11339,12 +11339,12 @@
       "id": "SED-465",
       "set": 1,
       "type": "single",
-      "stem": "Which sedative is most likely to cause prolonged recovery in severe liver failure?",
+      "stem": "Which benzodiazepine is more likely to have prolonged effect in severe hepatic dysfunction because its clearance depends substantially on hepatic metabolism?",
       "options": [
         "Midazolam",
         "Remimazolam",
-        "Propofol",
-        "Remifentanil"
+        "Neither because all benzodiazepines use esterases",
+        "Flumazenil"
       ],
       "answer": [
         0
@@ -11363,11 +11363,11 @@
       "id": "SED-466",
       "set": 1,
       "type": "single",
-      "stem": "After large-volume lidocaine infiltration during MAC, bradycardia and hypotension develop. What complication should be suspected?",
+      "stem": "After a large local-anesthetic field infiltration during MAC, the patient develops neurologic symptoms followed by bradycardia and hypotension. What complication should be suspected?",
       "options": [
         "Local anesthetic systemic toxicity",
         "Propofol injection pain",
-        "Airway obstruction from oversedation during the block",
+        "Isolated upper-airway obstruction",
         "Surgical fire"
       ],
       "answer": [
@@ -11387,12 +11387,12 @@
       "id": "SED-467",
       "set": 1,
       "type": "single",
-      "stem": "During thyroid biopsy under MAC, oxygen is flowing by face mask and cautery is planned. What is the best fire-prevention step?",
+      "stem": "During thyroid biopsy under MAC, open oxygen is being delivered near the face and electrocautery is planned. What is the safest fire-prevention principle?",
       "options": [
-        "Reduce oxygen or secure the airway before cautery",
-        "Increase oxygen to prevent desaturation",
-        "Cover the face fully with drapes to contain the oxygen",
-        "Use bipolar cautery and keep oxygen at 6 L/min"
+        "Minimize oxygen enrichment near the ignition site and coordinate oxygen management before cautery",
+        "Increase oxygen concentration immediately before cautery",
+        "Trap oxygen under drapes",
+        "Assume bipolar cautery eliminates all fire risk"
       ],
       "answer": [
         0
@@ -11411,11 +11411,11 @@
       "id": "SED-468",
       "set": 1,
       "type": "single",
-      "stem": "During TIVA, BIS is 20 and BP is 80/40. What is the best anesthetic adjustment?",
+      "stem": "During TIVA, processed EEG shows marked burst suppression and BP is 80/40 mmHg. What anesthetic adjustment should be considered?",
       "options": [
-        "Reduce propofol and support BP",
-        "Increase propofol to prevent awareness",
-        "Increase remifentanil",
+        "Reduce excessive hypnotic effect while simultaneously supporting perfusion as needed",
+        "Increase propofol",
+        "Increase remifentanil regardless of stimulus",
         "Give neuromuscular blocker"
       ],
       "answer": [
@@ -11435,12 +11435,12 @@
       "id": "SED-469",
       "set": 1,
       "type": "single",
-      "stem": "Why is a single large propofol bolus especially risky in a frail 90-year-old?",
+      "stem": "Why should propofol boluses generally be reduced and carefully titrated in a frail 90-year-old?",
       "options": [
-        "It carries a higher risk of apnea and hypotension",
-        "It causes awareness because propofol redistributes too fast",
-        "It prolongs the procedure",
-        "It increases PONV"
+        "Reduced physiologic reserve and increased drug sensitivity increase the risk of hypotension and respiratory depression",
+        "Propofol causes more PONV with age",
+        "Older adults cannot metabolize propofol",
+        "Propofol cannot produce hypnosis in older adults"
       ],
       "answer": [
         0
@@ -11459,12 +11459,12 @@
       "id": "SED-470",
       "set": 1,
       "type": "single",
-      "stem": "A patient with CKD and OSA needs brief sedation. Which drug best matches the lecture's preferred profile?",
+      "stem": "A patient with renal dysfunction needs brief benzodiazepine sedation with rapid predictable offset. Which agent's esterase metabolism may be advantageous?",
       "options": [
         "Remimazolam",
         "Midazolam",
-        "Morphine",
-        "Fospropofol"
+        "Lorazepam",
+        "Diazepam"
       ],
       "answer": [
         0
@@ -11483,12 +11483,12 @@
       "id": "SED-471",
       "set": 1,
       "type": "single",
-      "stem": "Rapid fentanyl administration causes chest-wall rigidity. What is the best treatment?",
+      "stem": "After rapid high-dose fentanyl, severe chest-wall rigidity makes ventilation ineffective. What is the priority?",
       "options": [
-        "Support ventilation; consider neuromuscular blockade",
-        "Give flumazenil and continue bag-mask ventilation",
-        "Give more fentanyl to blunt rigidity",
-        "Increase nasal cannula flow and observe"
+        "Support/secure ventilation and treat the opioid effect; neuromuscular blockade may be required in severe rigidity",
+        "Give flumazenil",
+        "Increase fentanyl",
+        "Use nasal oxygen alone"
       ],
       "answer": [
         0
@@ -11507,12 +11507,12 @@
       "id": "SED-472",
       "set": 1,
       "type": "single",
-      "stem": "Propofol causes significant injection pain. Which technique change is most appropriate?",
+      "stem": "Propofol causes severe burning through a small hand IV. Which change is most likely to reduce injection pain?",
       "options": [
-        "Slow the injection into a fast-flowing line",
-        "Push faster to shorten vein exposure",
-        "Switch to a smaller distal hand vein",
-        "Chill the propofol before injecting it slowly"
+        "Use a larger/proximal well-running vein, slow administration, and consider lidocaine pretreatment",
+        "Inject faster through the same small vein",
+        "Stop carrier fluid",
+        "Move to a smaller distal vein"
       ],
       "answer": [
         0
@@ -11531,12 +11531,12 @@
       "id": "SED-473",
       "set": 1,
       "type": "single",
-      "stem": "A patient with malignant hyperthermia susceptibility needs laparoscopic GA. Which plan is best?",
+      "stem": "A patient susceptible to malignant hyperthermia requires laparoscopic general anesthesia. Which maintenance plan is trigger-free?",
       "options": [
-        "TIVA without volatile agents",
+        "TIVA without volatile anesthetics or succinylcholine",
         "Sevoflurane with dantrolene available",
-        "Desflurane with clean machine",
-        "Nitrous oxide with a propofol induction"
+        "Desflurane after machine preparation",
+        "Isoflurane at low MAC"
       ],
       "answer": [
         0
@@ -11555,12 +11555,12 @@
       "id": "SED-474",
       "set": 1,
       "type": "single",
-      "stem": "A MAC patient becomes restless with SpO2 90% and ETCO2 60. What is the most likely cause of the agitation?",
+      "stem": "During MAC, a patient becomes restless as ETCO2 rises to 60 mmHg and oxygenation begins to fall. What should be considered before giving more sedative?",
       "options": [
-        "Hypoventilation and hypercarbia",
-        "Anxiety from light sedation",
-        "Pain from surgical stimulus under the drapes",
-        "Local anesthetic toxicity"
+        "Hypercapnia/hypoxemia from inadequate ventilation may be causing the agitation",
+        "Agitation proves insufficient hypnosis",
+        "More sedative will correct hypercapnia",
+        "Local anesthetic toxicity is the only possible cause"
       ],
       "answer": [
         0
@@ -11579,12 +11579,12 @@
       "id": "SED-475",
       "set": 1,
       "type": "single",
-      "stem": "SpO2 remains 99% on oxygen, but the capnogram is flat during propofol MAC. What is most likely occurring?",
+      "stem": "During propofol MAC, SpO2 remains 99% on supplemental oxygen but the capnogram becomes flat. What is the immediate concern?",
       "options": [
-        "Apnea masked by supplemental oxygen",
-        "Normal ventilation with sampling error",
-        "Hyperventilation",
-        "Airway fire"
+        "Apnea or loss of sampled ventilation can precede desaturation, so assess the patient and airway immediately",
+        "Normal SpO2 proves ventilation is adequate",
+        "The patient is hyperventilating",
+        "The flat capnogram proves pulmonary embolism"
       ],
       "answer": [
         0
@@ -11603,12 +11603,12 @@
       "id": "SED-476",
       "set": 1,
       "type": "single",
-      "stem": "What effect should nitrous oxide have on SSEP monitoring?",
+      "stem": "How can nitrous oxide affect SSEP monitoring?",
       "options": [
-        "Reduced SSEP amplitude",
-        "Increased SSEP amplitude",
-        "Shorter SSEP latency with stable amplitude",
-        "Improved MEP signals"
+        "It can depress evoked-potential signal quality, including reducing amplitude, especially when combined with other inhaled agents",
+        "It reliably increases SSEP amplitude",
+        "It has no effect on evoked potentials",
+        "It improves MEPs during paralysis"
       ],
       "answer": [
         0
@@ -11627,12 +11627,12 @@
       "id": "SED-477",
       "set": 1,
       "type": "single",
-      "stem": "In beach-chair MAC, arm BP is 90/50. Which perfusion concern is most important?",
+      "stem": "During beach-chair MAC, an arm-cuff pressure is 90/50 mmHg. Why may this be more concerning than the same reading supine?",
       "options": [
-        "Cerebral perfusion may be lower than arm BP suggests",
-        "Arm BP overestimates perfusion in the prone position",
-        "Dependent-lung atelectasis lowers SpO2",
-        "LAST from the interscalene block"
+        "Hydrostatic height difference can make pressure at brain level lower than the arm measurement",
+        "Upright positioning raises cerebral pressure above arm pressure",
+        "Arm pressure directly equals cerebral perfusion pressure in every position",
+        "Beach-chair position eliminates cerebral autoregulation in every patient"
       ],
       "answer": [
         0
@@ -11651,12 +11651,12 @@
       "id": "SED-478",
       "set": 1,
       "type": "single",
-      "stem": "A cataract MAC patient becomes unresponsive beneath facial drapes. What is the first action?",
+      "stem": "A cataract MAC patient becomes unresponsive beneath facial drapes. What is the first priority?",
       "options": [
-        "Lift the drapes to assess airway and breathing",
-        "Increase oxygen flow under the drapes and continue",
-        "Give additional sedation",
-        "Increase oxygen flow and recheck SpO2"
+        "Gain airway access and directly assess breathing/ventilation",
+        "Increase oxygen under the drapes and continue surgery",
+        "Give more sedative",
+        "Wait for SpO2 to fall"
       ],
       "answer": [
         0
@@ -11675,12 +11675,12 @@
       "id": "SED-479",
       "set": 1,
       "type": "single",
-      "stem": "A patient becomes apneic inside the MRI scanner after propofol. What is the best immediate response?",
+      "stem": "A patient becomes apneic while positioned inside the MRI scanner. What should occur immediately?",
       "options": [
-        "Stop the scan and move the patient to access the airway",
-        "Finish the current sequence, then reassess",
-        "Increase sedation",
-        "Give flumazenil and continue the scan to finish quickly"
+        "Stop image acquisition and obtain safe physical access to the patient for airway/ventilatory rescue",
+        "Finish the current sequence",
+        "Give flumazenil regardless of the sedative used",
+        "Increase sedation"
       ],
       "answer": [
         0
@@ -11699,12 +11699,12 @@
       "id": "SED-480",
       "set": 1,
       "type": "single",
-      "stem": "Remifentanil causes apnea during MAC. What is the most appropriate next step?",
+      "stem": "Remifentanil causes apnea during MAC. What is the immediate priority?",
       "options": [
-        "Stop remifentanil and support ventilation",
+        "Stop/reduce opioid delivery and restore effective ventilation",
         "Increase remifentanil",
         "Give flumazenil",
-        "Continue the infusion, since it wears off in minutes"
+        "Wait solely because remifentanil has a short offset"
       ],
       "answer": [
         0
@@ -11723,12 +11723,12 @@
       "id": "SED-481",
       "set": 1,
       "type": "single",
-      "stem": "A COPD patient under MAC rises from baseline ETCO2 50 to 70. What is the best interpretation?",
+      "stem": "A patient with COPD has baseline ETCO2 50 mmHg; after sedation it rises progressively to 70 mmHg with decreasing respiratory rate. How should this be interpreted?",
       "options": [
-        "Worsening hypoventilation from sedation",
-        "Expected chronic baseline for a patient with COPD",
+        "Acute worsening hypoventilation relative to the patient's baseline",
+        "Normal COPD physiology requiring no response",
         "Improved ventilation",
-        "Capnography malfunction"
+        "Definite capnography failure"
       ],
       "answer": [
         0
@@ -11747,12 +11747,12 @@
       "id": "SED-482",
       "set": 1,
       "type": "single",
-      "stem": "Which feature most strongly favors TIVA over volatile anesthesia in a patient with severe prior PONV?",
+      "stem": "A patient has severe prior PONV and otherwise suitable indications for either maintenance technique. Which feature favors propofol-based TIVA?",
       "options": [
-        "TIVA reduces PONV",
-        "TIVA increases analgesia",
-        "TIVA allows deeper anesthesia without hypotension",
-        "TIVA allows end-tidal monitoring"
+        "Propofol-based TIVA generally lowers PONV risk compared with volatile anesthesia",
+        "TIVA provides complete postoperative analgesia",
+        "TIVA permits end-tidal hypnotic monitoring",
+        "TIVA prevents all hypotension"
       ],
       "answer": [
         0
@@ -11771,12 +11771,12 @@
       "id": "SED-483",
       "set": 1,
       "type": "single",
-      "stem": "Which sedative most likely caused new bradycardia and hypotension during MAC?",
+      "stem": "During cooperative sedation, new bradycardia and hypotension appear shortly after the sedative infusion is started. Which agent most strongly fits this adverse-effect pattern?",
       "options": [
         "Dexmedetomidine",
         "Ketamine",
-        "Remifentanil",
-        "Remimazolam"
+        "Remimazolam",
+        "Fospropofol"
       ],
       "answer": [
         0
@@ -11795,12 +11795,12 @@
       "id": "SED-484",
       "set": 1,
       "type": "single",
-      "stem": "Which drug profile best matches hypotension plus apnea during MAC?",
+      "stem": "Which sedative's adverse-effect profile most strongly combines dose-dependent hypotension with respiratory depression/apnea?",
       "options": [
         "Propofol",
         "Ketamine",
         "Dexmedetomidine",
-        "Remimazolam"
+        "Low-dose local lidocaine"
       ],
       "answer": [
         0
@@ -11819,7 +11819,7 @@
       "id": "SED-485",
       "set": 1,
       "type": "single",
-      "stem": "During spontaneous ventilation through an LMA under TIVA, which monitor best detects hypoventilation and airway compromise?",
+      "stem": "During spontaneous ventilation through an LMA under TIVA, which monitor provides continuous information about ventilation and airway gas flow?",
       "options": [
         "Capnography",
         "Processed EEG",
@@ -11843,12 +11843,12 @@
       "id": "SED-486",
       "set": 1,
       "type": "single",
-      "stem": "Hypertension develops during ketofol sedation. Which component is most likely responsible?",
+      "stem": "During ketamine-containing sedation, hypertension and tachycardia develop without hypoxemia or pain. Which drug effect may be contributing?",
       "options": [
-        "Ketamine",
-        "Propofol",
-        "Dexmedetomidine",
-        "Remifentanil"
+        "Ketamine-associated sympathetic stimulation",
+        "Propofol-induced vasodilation",
+        "Dexmedetomidine-induced sympatholysis",
+        "Remifentanil-induced bradycardia"
       ],
       "answer": [
         0
@@ -11867,12 +11867,12 @@
       "id": "SED-487",
       "set": 1,
       "type": "single",
-      "stem": "Apnea develops after midazolam and fentanyl. Which antagonists may be needed after supporting ventilation?",
+      "stem": "After midazolam plus fentanyl, severe respiratory depression persists despite ventilatory support and dose reduction. Which antagonists target the two drug classes?",
       "options": [
-        "Naloxone and flumazenil",
+        "Flumazenil for the benzodiazepine and naloxone for the opioid",
         "Sugammadex and neostigmine",
         "Dantrolene and lipid emulsion",
-        "Glycopyrrolate and atropine"
+        "Atropine and glycopyrrolate"
       ],
       "answer": [
         0
@@ -11891,12 +11891,12 @@
       "id": "SED-488",
       "set": 1,
       "type": "single",
-      "stem": "During TIVA, BIS rises to 70 with increasing HR even though the pump appears to be running. What should be checked next?",
+      "stem": "During paralyzed TIVA, processed EEG rises and HR increases although the pump display appears normal. What should be checked immediately?",
       "options": [
-        "IV line patency and infiltration",
-        "Temperature",
-        "Neuromuscular monitor",
-        "End-tidal agent concentration on the monitor"
+        "The complete IV delivery path for infiltration, disconnection, occlusion, or flow interruption",
+        "End-tidal propofol concentration",
+        "Only core temperature",
+        "Only neuromuscular blockade depth"
       ],
       "answer": [
         0
@@ -11915,12 +11915,12 @@
       "id": "SED-489",
       "set": 1,
       "type": "single",
-      "stem": "A flat capnogram and desaturation resolve immediately with jaw thrust. What is the most likely diagnosis?",
+      "stem": "During MAC, a flat/attenuated capnogram and desaturation resolve immediately with jaw thrust. What mechanism is most likely?",
       "options": [
-        "Upper airway obstruction",
-        "Local anesthetic toxicity",
+        "Upper-airway obstruction relieved by pharyngeal airway opening",
         "Pulmonary embolism",
-        "Airway fire"
+        "Local anesthetic toxicity",
+        "Operating-room fire"
       ],
       "answer": [
         0
@@ -11939,12 +11939,12 @@
       "id": "SED-490",
       "set": 1,
       "type": "single",
-      "stem": "Persistent coughing develops during propofol EGD sedation. What should be done next?",
+      "stem": "During propofol EGD sedation, persistent coughing develops with new desaturation. What should be assessed urgently?",
       "options": [
-        "Assess for irritation or aspiration; consider conversion",
-        "Deepen propofol until coughing stops, then continue",
-        "Give fentanyl to suppress the cough",
-        "Withdraw the scope briefly and continue as before"
+        "Airway irritation, inadequate airway protection, or aspiration, with escalation if safe continuation is not possible",
+        "Only whether more propofol will suppress coughing",
+        "Whether neuromuscular blockade can be given without airway control",
+        "Whether the procedure can continue despite respiratory change"
       ],
       "answer": [
         0
@@ -11963,12 +11963,12 @@
       "id": "SED-491",
       "set": 1,
       "type": "single",
-      "stem": "A patient requests guaranteed no awareness during a minor procedure planned as MAC. How should this goal affect the plan?",
+      "stem": "A patient requests guaranteed unconsciousness and no recall for a minor procedure originally planned as MAC. What is the best planning response?",
       "options": [
-        "Explain MAC may include awareness; consider GA",
-        "Promise complete amnesia with midazolam",
-        "Plan deep propofol sedation without a secured airway",
-        "Plan minimal sedation and reassure her"
+        "Explain that MAC does not guarantee unconsciousness/amnesia and discuss whether general anesthesia better matches the agreed goal",
+        "Promise amnesia with midazolam",
+        "Use deep sedation without discussing rescue risk",
+        "Ignore the preference"
       ],
       "answer": [
         0
@@ -11987,12 +11987,12 @@
       "id": "SED-492",
       "set": 1,
       "type": "single",
-      "stem": "Why must a conversion-to-GA plan exist before MAC begins?",
+      "stem": "Why should a conversion-to-general-anesthesia plan be executable before MAC begins?",
       "options": [
-        "A rapid transition may be needed for the airway or hemodynamics",
-        "It shortens the case if problems occur",
-        "It reduces procedure time",
-        "It allows deeper sedation without needing airway equipment"
+        "Airway, ventilation, hemodynamic, analgesic, or procedural failure may require rapid escalation",
+        "It allows monitoring to be reduced",
+        "It guarantees MAC will never fail",
+        "It eliminates the need for airway equipment"
       ],
       "answer": [
         0
@@ -12011,12 +12011,12 @@
       "id": "SED-493",
       "set": 1,
       "type": "single",
-      "stem": "During colonoscopy, external abdominal pressure is used while the patient is sedated. What is the most relevant added risk?",
+      "stem": "During deeply sedated colonoscopy, repeated external abdominal pressure is required. Why can this matter to the anesthesia professional?",
       "options": [
-        "Aspiration from abdominal pressure",
-        "Laryngospasm from colonic insufflation",
-        "Hypotension from bowel preparation",
-        "Airway obstruction from lateral position"
+        "Increased intra-abdominal pressure may contribute to regurgitation risk while airway reflexes are depressed",
+        "It eliminates aspiration risk",
+        "It causes malignant hyperthermia",
+        "It improves pharyngeal tone"
       ],
       "answer": [
         0
@@ -12035,12 +12035,12 @@
       "id": "SED-494",
       "set": 1,
       "type": "single",
-      "stem": "Which complication is most likely when severe OSA is combined with midazolam and fentanyl?",
+      "stem": "Why is midazolam plus fentanyl particularly hazardous in severe OSA?",
       "options": [
-        "Airway obstruction and hypoventilation",
-        "Hypertension and tachycardia from airway stimulation",
-        "Emergence delirium",
-        "Hypersalivation"
+        "Sedative-opioid synergy can worsen hypoventilation while reduced pharyngeal tone increases upper-airway obstruction",
+        "The combination causes hypertension",
+        "OSA protects against opioid respiratory depression",
+        "Midazolam prevents airway collapse"
       ],
       "answer": [
         0
@@ -12059,12 +12059,12 @@
       "id": "SED-495",
       "set": 1,
       "type": "single",
-      "stem": "Remimazolam causes hypotension during MAC. How should this be interpreted?",
+      "stem": "A patient becomes hypotensive after remimazolam sedation. Which interpretation is most appropriate?",
       "options": [
-        "Hypotension remains possible despite hemodynamic stability",
-        "Remimazolam has an active metabolite causing hypotension",
-        "Hypotension means flumazenil should be given",
-        "Hypotension means the dose was too low"
+        "Relative hemodynamic stability does not mean hypotension is impossible; reassess dose, volume status, comorbidity, and other causes",
+        "Hypotension proves the drug was underdosed",
+        "Flumazenil is automatically required for any hypotension",
+        "Remimazolam cannot contribute to hemodynamic change"
       ],
       "answer": [
         0
@@ -12083,12 +12083,12 @@
       "id": "SED-496",
       "set": 1,
       "type": "single",
-      "stem": "MEPs disappear immediately after rocuronium during spine TIVA while vital signs remain stable. What is the most likely cause?",
+      "stem": "MEPs disappear immediately after rocuronium while SSEPs and physiology remain stable. What is the most likely explanation?",
       "options": [
-        "Neuromuscular blockade",
-        "Propofol overdose from the infusion",
-        "Hypothermia",
-        "Remifentanil"
+        "Neuromuscular blockade suppressed the muscle-recorded motor response",
+        "Global spinal-cord ischemia",
+        "Propofol selectively abolished motor tracts",
+        "SSEP failure"
       ],
       "answer": [
         0
@@ -12107,12 +12107,12 @@
       "id": "SED-497",
       "set": 1,
       "type": "single",
-      "stem": "Perineal tingling occurs after fospropofol. What is the best explanation?",
+      "stem": "After fospropofol, a patient reports transient perineal tingling and pruritus without other toxicity signs. What is the most likely explanation?",
       "options": [
-        "Known fospropofol adverse effect",
-        "LAST",
-        "Propofol-type injection pain after conversion",
-        "Early local anesthetic systemic toxicity"
+        "A characteristic fospropofol adverse effect",
+        "Local anesthetic systemic toxicity",
+        "Propofol injection pain at the IV site",
+        "Opioid chest-wall rigidity"
       ],
       "answer": [
         0
@@ -12131,12 +12131,12 @@
       "id": "SED-498",
       "set": 1,
       "type": "single",
-      "stem": "Hallucinations occur on emergence after ketamine MAC. What is the most likely cause?",
+      "stem": "A patient experiences vivid hallucinations and dysphoria during recovery from dissociative sedation. Which drug most likely contributed?",
       "options": [
-        "Ketamine emergence reaction",
-        "Propofol-related dysphoria",
-        "Dexmedetomidine withdrawal",
-        "Remifentanil hyperalgesia"
+        "Ketamine",
+        "Propofol",
+        "Dexmedetomidine",
+        "Remifentanil"
       ],
       "answer": [
         0
@@ -12155,12 +12155,12 @@
       "id": "SED-499",
       "set": 1,
       "type": "single",
-      "stem": "Snoring, desaturation, and small irregular capnogram waveforms develop during MAC. What is the first intervention?",
+      "stem": "During MAC, snoring, desaturation, and small irregular capnogram waveforms develop. What is the first intervention?",
       "options": [
-        "Reposition the airway with jaw thrust",
-        "Deepen sedation to stop the snoring",
-        "Give flumazenil to restore tone",
-        "Increase oxygen flow and observe"
+        "Open/reposition the upper airway with head adjustment and jaw thrust while reassessing ventilation",
+        "Deepen sedation",
+        "Give flumazenil automatically",
+        "Increase oxygen and ignore ventilation"
       ],
       "answer": [
         0
@@ -12179,12 +12179,12 @@
       "id": "SED-500",
       "set": 1,
       "type": "single",
-      "stem": "During propofol colonoscopy sedation, RR falls from 14 to 8 and ETCO2 rises from 36 to 49 while SpO2 stays 99% and the patient still answers to name. What is the best next step?",
+      "stem": "During propofol colonoscopy sedation, RR falls from 14 to 8/min and ETCO2 rises from 36 to 49 mmHg while SpO2 remains 99% on oxygen and the patient is still arousable. What is the best next step?",
       "options": [
-        "Pause dosing and stimulate; watch whether ETCO2 settles",
-        "Continue the infusion, since SpO2 and response are normal",
-        "Raise O2 to 6 L/min to protect saturation and continue",
-        "Give naloxone, since slow breathing means opioid effect"
+        "Pause/reduce sedative delivery, stimulate/reposition as needed, and closely reassess ventilation before deterioration progresses",
+        "Continue unchanged because SpO2 is normal",
+        "Increase oxygen flow and ignore the ETCO2 trend",
+        "Give naloxone despite no opioid exposure"
       ],
       "answer": [
         0
