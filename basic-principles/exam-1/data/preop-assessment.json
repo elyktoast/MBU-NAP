@@ -11124,11 +11124,11 @@
       "id": "PRE-457",
       "set": 1,
       "type": "single",
-      "stem": "A dialysis patient's last dialysis was this morning. Which lab is MOST important?",
+      "stem": "A dialysis patient completed dialysis this morning. Which laboratory set is most important before proceeding because dialysis can rapidly change electrolytes and renal indices?",
       "options": [
-        "Current K, creatinine, and BUN",
-        "HCG and TSH",
-        "A1C and glucose",
+        "Current potassium, creatinine, and BUN",
+        "hCG and TSH",
+        "HbA1c and glucose",
         "Liver enzymes and bilirubin"
       ],
       "answer": [
@@ -11148,12 +11148,12 @@
       "id": "PRE-458",
       "set": 1,
       "type": "single",
-      "stem": "A dialysis patient has an AV fistula and needs an arterial line. Which arm should be used?",
+      "stem": "A dialysis patient has a functioning AV fistula in one arm and needs an arterial line. Which site best protects future dialysis access?",
       "options": [
         "The non-fistula arm",
         "The fistula arm",
         "Either arm",
-        "Neither arm; use the leg"
+        "A leg in every case"
       ],
       "answer": [
         0
@@ -11172,7 +11172,7 @@
       "id": "PRE-459",
       "set": 1,
       "type": "single",
-      "stem": "A 38-year-old with a history of anaphylaxis to cefazolin needs surgery. Which antibiotic alternative is suggested?",
+      "stem": "A patient had anaphylaxis to cefazolin and needs perioperative antibiotic prophylaxis. Which alternative from the lecture is most appropriate?",
       "options": [
         "Clindamycin",
         "Ampicillin",
@@ -11196,7 +11196,7 @@
       "id": "PRE-460",
       "set": 1,
       "type": "single",
-      "stem": "Which drug is a histamine releaser that may cause flushing and hypotension?",
+      "stem": "Which medication is well known for histamine-mediated flushing and hypotension during infusion?",
       "options": [
         "Vancomycin",
         "Fentanyl",
@@ -11220,12 +11220,12 @@
       "id": "PRE-461",
       "set": 1,
       "type": "single",
-      "stem": "A 52-year-old with a 35 pack-year history has chronic cough with morning sputum. What does this suggest for anesthesia?",
+      "stem": "A long-term smoker has chronic morning cough and sputum production. Which anesthetic implication follows most directly?",
       "options": [
-        "Likely COPD with more secretions and reactive airways",
-        "No added pulmonary risk",
-        "A higher MAC requirement without lung changes",
-        "Lower bronchospasm risk from airway desensitization"
+        "Possible COPD with increased secretions and reactive-airway risk",
+        "No meaningful pulmonary risk",
+        "Higher MAC without pulmonary consequences",
+        "Lower bronchospasm risk from chronic airway exposure"
       ],
       "answer": [
         0
@@ -11244,12 +11244,12 @@
       "id": "PRE-462",
       "set": 1,
       "type": "single",
-      "stem": "A 45-year-old drinks 8 beers daily and needs major elective surgery. What is the BEST recommendation?",
+      "stem": "A patient drinks 8 beers daily and is scheduled for major elective surgery. Which preoperative strategy best reduces alcohol-related complications when time allows?",
       "options": [
-        "Abstain 4 or more weeks if possible and plan for withdrawal",
-        "Keep drinking until surgery to avoid withdrawal",
-        "Abstain for 24 hours before surgery to limit bleeding",
-        "Stop drinking the morning of surgery"
+        "Aim for at least 4 weeks of abstinence and plan for withdrawal risk",
+        "Continue drinking until surgery",
+        "Abstain only for 24 hours",
+        "Stop only on the morning of surgery"
       ],
       "answer": [
         0
@@ -11268,10 +11268,10 @@
       "id": "PRE-463",
       "set": 1,
       "type": "single",
-      "stem": "A cocaine user with HTN and tachycardia needs sedation. What is the first-line drug class?",
+      "stem": "A cocaine-intoxicated patient is hypertensive, tachycardic, and agitated. Which drug class should be used first to blunt the central sympathetic surge?",
       "options": [
         "Benzodiazepines",
-        "Beta-blockers",
+        "Pure beta-blockers",
         "Opioids",
         "Antihistamines"
       ],
@@ -11292,12 +11292,12 @@
       "id": "PRE-464",
       "set": 1,
       "type": "single",
-      "stem": "A patient on naltrexone needs surgery. What is the MOST relevant concern?",
+      "stem": "A patient maintained on naltrexone requires surgery. Which analgesic problem should be anticipated?",
       "options": [
-        "Opioid analgesia may be less effective",
-        "Increased sensitivity to opioid respiratory depression",
-        "Lower pain scores",
-        "Opioids will cause prolonged sedation"
+        "Opioid analgesia may be less effective because receptors are antagonized",
+        "Markedly increased opioid sensitivity",
+        "Lower pain intensity than expected",
+        "Prolonged opioid sedation"
       ],
       "answer": [
         0
@@ -11316,7 +11316,7 @@
       "id": "PRE-465",
       "set": 1,
       "type": "single",
-      "stem": "A 55-year-old man with a 10-year history of controlled HTN and diabetes on metformin, no limitations. Which ASA class fits?",
+      "stem": "A patient has controlled hypertension and diabetes managed with metformin, with no functional limitation. Which ASA class best fits?",
       "options": [
         "ASA II",
         "ASA I",
@@ -11340,7 +11340,7 @@
       "id": "PRE-466",
       "set": 1,
       "type": "single",
-      "stem": "A 72-year-old with poorly controlled HTN and prior MI. Which ASA class fits?",
+      "stem": "A patient has poorly controlled hypertension plus prior myocardial infarction but no current life-threatening instability. Which ASA class best fits?",
       "options": [
         "ASA III",
         "ASA II",
@@ -11364,11 +11364,11 @@
       "id": "PRE-467",
       "set": 1,
       "type": "single",
-      "stem": "A 40-year-old with a ruptured AAA needs emergency surgery. Which ASA class fits?",
+      "stem": "A patient with ruptured abdominal aortic aneurysm requires immediate life-saving surgery and is unlikely to survive without it. Which classification applies?",
       "options": [
-        "ASA V E",
-        "ASA IV E",
-        "ASA III E",
+        "ASA V-E",
+        "ASA IV-E",
+        "ASA III-E",
         "ASA VI"
       ],
       "answer": [
@@ -11388,7 +11388,7 @@
       "id": "PRE-468",
       "set": 1,
       "type": "single",
-      "stem": "A patient with Apfel score 1 is scheduled. What is the expected PONV risk?",
+      "stem": "An Apfel score of 1 corresponds to what approximate PONV risk?",
       "options": [
         "20%",
         "10%",
@@ -11412,7 +11412,7 @@
       "id": "PRE-469",
       "set": 1,
       "type": "single",
-      "stem": "A patient with Apfel score 0 is scheduled. What is the expected PONV risk?",
+      "stem": "An Apfel score of 0 corresponds to what approximate PONV risk?",
       "options": [
         "10%",
         "20%",
@@ -11436,12 +11436,12 @@
       "id": "PRE-470",
       "set": 1,
       "type": "single",
-      "stem": "A patient's airway exam shows a small mouth opening and a beard, but Mallampati II. What should you do?",
+      "stem": "An airway exam shows Mallampati II but also a small mouth opening and beard. Which interpretation is most appropriate?",
       "options": [
-        "Plan for possible difficult airway because minor findings combine",
-        "Proceed, since Mallampati II predicts an easy view",
-        "Proceed with standard equipment and no backup",
-        "Plan a standard induction since Mallampati is II"
+        "Multiple modest predictors can combine, so prepare for possible difficulty",
+        "Mallampati II overrides the other findings",
+        "No backup equipment is needed",
+        "A routine airway should be assumed"
       ],
       "answer": [
         0
@@ -11460,12 +11460,12 @@
       "id": "PRE-471",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a detailed neuro exam requirement is having carotid surgery. Why?",
+      "stem": "Why is a detailed neurologic baseline especially important before carotid surgery?",
       "options": [
-        "To document baseline and detect new deficits",
-        "To decide whether regional anesthesia is allowed",
-        "To predict PONV",
-        "To choose NPO time"
+        "It allows new postoperative neurologic deficits to be distinguished from preexisting findings",
+        "It determines whether regional anesthesia is permitted",
+        "It predicts PONV",
+        "It determines fasting time"
       ],
       "answer": [
         0
@@ -11484,12 +11484,12 @@
       "id": "PRE-472",
       "set": 1,
       "type": "single",
-      "stem": "A patient with URI symptoms and fever is a child scheduled for elective surgery. What is BEST?",
+      "stem": "A child has URI symptoms plus fever before elective surgery. Which feature should drive postponement?",
       "options": [
-        "Delay because the child is febrile",
-        "Proceed because children get frequent URIs",
-        "Proceed with an LMA",
-        "Proceed with regional anesthesia"
+        "Fever suggests more significant active infection",
+        "Children commonly have URIs, so proceed",
+        "Using an LMA removes the concern",
+        "Regional anesthesia eliminates URI-related risk"
       ],
       "answer": [
         0
@@ -11508,12 +11508,12 @@
       "id": "PRE-473",
       "set": 1,
       "type": "single",
-      "stem": "A patient with COPD has baseline ABG PaCO2 52. What does this mean for planning?",
+      "stem": "A COPD patient's stable baseline PaCO2 is 52 mmHg. How should that value be interpreted during perioperative planning?",
       "options": [
-        "Baseline hypercarbia may be normal for this patient",
-        "Immediate intubation is required",
-        "The patient is acutely hyperventilating from anxiety",
-        "The patient has metabolic alkalosis"
+        "Chronic compensated hypercapnia may be normal for this patient",
+        "It mandates immediate intubation",
+        "It indicates acute hyperventilation",
+        "It proves primary metabolic alkalosis"
       ],
       "answer": [
         0
@@ -11532,11 +11532,11 @@
       "id": "PRE-474",
       "set": 1,
       "type": "single",
-      "stem": "A patient with asthma stopped inhalers 2 days ago. What is the BEST instruction?",
+      "stem": "A patient with asthma stopped maintenance and rescue inhalers 2 days ago before surgery. What is the best instruction?",
       "options": [
-        "Resume meds up to surgery",
-        "Continue holding until after surgery",
-        "Use albuterol in preop only",
+        "Resume prescribed inhalers through the perioperative period",
+        "Continue holding all inhalers",
+        "Use albuterol only in preop and omit maintenance therapy",
         "Replace inhalers with IV steroids"
       ],
       "answer": [
@@ -11556,12 +11556,12 @@
       "id": "PRE-475",
       "set": 1,
       "type": "single",
-      "stem": "A patient with hypothyroidism takes levothyroxine. What is the BEST instruction?",
+      "stem": "A patient takes levothyroxine for hypothyroidism. Which perioperative medication plan best maintains euthyroid control?",
       "options": [
-        "Continue the medication",
-        "Hold it for 24 hours before surgery",
-        "Hold for 1 week",
-        "Hold it the morning of surgery"
+        "Continue levothyroxine",
+        "Hold it for 24 hours",
+        "Hold it for one week",
+        "Omit only the morning dose"
       ],
       "answer": [
         0
@@ -11580,10 +11580,10 @@
       "id": "PRE-476",
       "set": 1,
       "type": "single",
-      "stem": "A patient with diabetes has glucose 55 mg/dL in preop. What is the MOST appropriate action?",
+      "stem": "A diabetic patient has glucose 55 mg/dL in preop. Which problem takes priority before anesthesia?",
       "options": [
-        "Treat hypoglycemia with dextrose",
-        "Give 4 oz of juice and proceed",
+        "Treat hypoglycemia with dextrose and reassess",
+        "Proceed after oral juice regardless of procedure timing",
         "Give insulin",
         "Give insulin and recheck"
       ],
@@ -11604,12 +11604,12 @@
       "id": "PRE-477",
       "set": 1,
       "type": "single",
-      "stem": "A 79-year-old on warfarin needs urgent surgery for a strangulated hernia, and her INR is 2.8. What is the BEST approach?",
+      "stem": "A patient on warfarin needs urgent surgery and has INR 2.8. Which principle best guides reversal?",
       "options": [
-        "Individualize anticoagulant reversal",
-        "Give vitamin K and proceed immediately",
-        "Stop warfarin and proceed immediately",
-        "Give vitamin K to every patient on warfarin"
+        "Individualize reversal to bleeding risk, urgency, and thromboembolic risk",
+        "Give vitamin K and proceed immediately in every case",
+        "Stop warfarin and proceed without further consideration",
+        "Give vitamin K routinely to every warfarin patient"
       ],
       "answer": [
         0
@@ -11628,12 +11628,12 @@
       "id": "PRE-478",
       "set": 1,
       "type": "single",
-      "stem": "A patient with OSA is scheduled for outpatient surgery. BMI 38 and STOP-BANG 6. What is the MOST appropriate consideration?",
+      "stem": "A patient with BMI 38 and STOP-BANG 6 is being considered for outpatient surgery. Which issue should most influence postoperative planning?",
       "options": [
-        "High OSA risk; consider monitoring and disposition carefully",
-        "Low risk; proceed with standard outpatient discharge",
-        "Intermediate risk; no changes needed",
-        "OSA does not affect outpatient disposition or monitoring decisions"
+        "High OSA risk warrants careful monitoring and disposition decisions",
+        "The score represents low risk",
+        "No change is needed because the case is outpatient",
+        "OSA does not affect discharge planning"
       ],
       "answer": [
         0
@@ -11652,12 +11652,12 @@
       "id": "PRE-479",
       "set": 1,
       "type": "single",
-      "stem": "A patient with an ICD is scheduled for surgery with monopolar cautery. What is the BEST plan?",
+      "stem": "An ICD patient will undergo monopolar cautery. Which device-specific plan should be established before surgery?",
       "options": [
-        "Know the plan for tachy therapies",
-        "Place a magnet and proceed without a programming plan",
-        "Remove the ICD generator before the surgical procedure",
-        "Use bipolar cautery without any device assessment"
+        "How tachyarrhythmia therapies will be suspended and restored",
+        "Apply a magnet without knowing device response",
+        "Remove the generator",
+        "Use bipolar cautery and skip device assessment"
       ],
       "answer": [
         0
@@ -11676,12 +11676,12 @@
       "id": "PRE-480",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a pacemaker set to AAI has new AV block. What is the MOST relevant issue?",
+      "stem": "A patient with AAI pacing develops new complete AV block. Why is the existing mode now inadequate?",
       "options": [
-        "AAI requires intact AV conduction",
+        "AAI depends on intact AV conduction to activate the ventricles",
         "AAI provides ventricular pacing",
         "AAI is asynchronous",
-        "AAI has rate response"
+        "AAI always includes rate response"
       ],
       "answer": [
         0
@@ -11700,12 +11700,12 @@
       "id": "PRE-481",
       "set": 1,
       "type": "single",
-      "stem": "A 68-year-old with a pacemaker had interrogation 3 years ago. What is the BEST step?",
+      "stem": "A pacemaker was last interrogated 3 years ago before elective surgery. What is the most appropriate next step?",
       "options": [
-        "Obtain recent interrogation before surgery",
-        "Rely on the last interrogation if the device is working",
+        "Obtain a current interrogation",
+        "Rely on the old interrogation if the patient feels well",
         "Replace the pacemaker",
-        "Use VOO mode for all surgery without interrogation"
+        "Use VOO for every procedure"
       ],
       "answer": [
         0
@@ -11724,12 +11724,12 @@
       "id": "PRE-482",
       "set": 1,
       "type": "single",
-      "stem": "A patient's H&P notes \"no history of anesthesia.\" What should you anticipate?",
+      "stem": "A patient has never previously received anesthesia. Which uncertainty should remain part of the preoperative assessment?",
       "options": [
-        "Unknown drug reactions and airway history",
-        "No risk because no prior complications",
-        "A normal response, since there were no prior problems",
-        "Assume a low PONV risk"
+        "Prior airway behavior and anesthetic drug reactions are unknown",
+        "Absence of prior complications proves low risk",
+        "A normal anesthetic response can be assumed",
+        "PONV risk is automatically low"
       ],
       "answer": [
         0
@@ -11748,12 +11748,12 @@
       "id": "PRE-483",
       "set": 1,
       "type": "single",
-      "stem": "A healthy 30-year-old man is scheduled for an outpatient knee arthroscopy and has no preop labs. Is this acceptable?",
+      "stem": "A healthy adult is scheduled for minor outpatient knee arthroscopy and has no routine laboratory studies. Which interpretation is most appropriate?",
       "options": [
-        "Yes, labs are based on history",
-        "No, every surgical patient needs a CBC and BMP",
-        "No, every surgical patient needs an ECG",
-        "No, every surgical patient needs a chest X-ray"
+        "This can be appropriate because testing should be history- and procedure-driven",
+        "Every surgical patient needs CBC and BMP",
+        "Every surgical patient needs an ECG",
+        "Every surgical patient needs a chest radiograph"
       ],
       "answer": [
         0
@@ -11772,12 +11772,12 @@
       "id": "PRE-484",
       "set": 1,
       "type": "single",
-      "stem": "A patient is scheduled for surgery with an anticipated 1,000 mL blood loss. Which lab is needed?",
+      "stem": "A procedure is expected to involve about 1,000 mL of blood loss. Which laboratory test most directly informs preoperative anemia and transfusion planning?",
       "options": [
-        "H&H",
-        "HCG",
+        "Hemoglobin and hematocrit",
+        "Pregnancy testing",
         "TSH",
-        "A1C"
+        "HbA1c"
       ],
       "answer": [
         0
@@ -11796,10 +11796,10 @@
       "id": "PRE-485",
       "set": 1,
       "type": "single",
-      "stem": "A 58-year-old man has BMI 29 and no OSA symptoms. What BMI class is he?",
+      "stem": "A BMI of 29 kg/m² falls into which category?",
       "options": [
         "Overweight",
-        "Normal",
+        "Normal weight",
         "Obesity class I",
         "Obesity class II"
       ],
@@ -11820,12 +11820,12 @@
       "id": "PRE-486",
       "set": 1,
       "type": "single",
-      "stem": "A patient with BMI 33 is scheduled for outpatient surgery. What does the note suggest?",
+      "stem": "A patient with BMI 33 is being considered for outpatient surgery. What does the lecture suggest?",
       "options": [
-        "Screen carefully before outpatient placement",
+        "Screen carefully for obesity-related comorbidities and ambulatory suitability",
         "Automatically cancel outpatient surgery",
-        "No screening needed",
-        "Require inpatient admission for all"
+        "No additional screening is needed",
+        "Require inpatient admission solely because BMI exceeds 30"
       ],
       "answer": [
         0
@@ -11844,12 +11844,12 @@
       "id": "PRE-487",
       "set": 1,
       "type": "single",
-      "stem": "A 66-year-old with CAD and prior MI is scheduled for cataract surgery. Which procedure risk category applies?",
+      "stem": "A patient with stable CAD and remote MI is scheduled for cataract surgery. Which procedure-related cardiac risk category applies?",
       "options": [
-        "Low-risk procedure",
-        "Intermediate-risk procedure",
-        "High-risk procedure",
-        "Emergency procedure"
+        "Low risk",
+        "Intermediate risk",
+        "High risk",
+        "Emergency risk"
       ],
       "answer": [
         0
@@ -11868,12 +11868,12 @@
       "id": "PRE-488",
       "set": 1,
       "type": "single",
-      "stem": "A 62-year-old with CAD needs open abdominal surgery. Which procedure risk category applies?",
+      "stem": "A patient with CAD is scheduled for major open abdominal surgery. How should the procedural cardiac stress be characterized relative to a superficial procedure?",
       "options": [
-        "Intermediate to high-risk procedure",
-        "Low-risk procedure",
-        "No risk category",
-        "Minor superficial procedure with little risk"
+        "Intermediate to high risk",
+        "Low risk",
+        "No procedural risk category applies",
+        "Equivalent to minor superficial surgery"
       ],
       "answer": [
         0
@@ -11892,12 +11892,12 @@
       "id": "PRE-489",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a DES and aspirin is scheduled for surgery 4 months after placement. What is the BEST plan?",
+      "stem": "A patient is 4 months after drug-eluting stent placement and takes aspirin. Which plan best follows the lecture's timing guidance?",
       "options": [
-        "Proceed if timing meets 3–6 months and continue aspirin",
-        "Stop aspirin 7 days before surgery",
-        "Delay surgery until 12 months after DES",
-        "Replace aspirin with bridging heparin until surgery"
+        "Proceed if the 3–6 month interval is acceptable and continue aspirin",
+        "Stop aspirin for 7 days",
+        "Delay every DES case until 12 months",
+        "Replace aspirin with heparin bridging"
       ],
       "answer": [
         0
@@ -11916,12 +11916,12 @@
       "id": "PRE-490",
       "set": 1,
       "type": "single",
-      "stem": "A patient has an allergy to latex. What is the MOST important step?",
+      "stem": "A patient has a documented latex allergy. Which intervention most directly prevents perioperative exposure?",
       "options": [
         "Prepare a latex-safe environment",
-        "Proceed with standard gloves",
-        "Use latex gloves with premedication",
-        "Premedicate with diphenhydramine and use standard gloves"
+        "Use standard latex gloves",
+        "Use latex with antihistamine premedication",
+        "Premedicate and otherwise use standard supplies"
       ],
       "answer": [
         0
@@ -11940,12 +11940,12 @@
       "id": "PRE-491",
       "set": 1,
       "type": "single",
-      "stem": "A patient's family history includes MH. What is the BEST next step?",
+      "stem": "A patient's family history is strongly suggestive of malignant hyperthermia. Which anesthetic preparation is most appropriate?",
       "options": [
-        "Plan MH-safe anesthesia",
-        "Proceed with volatile anesthetic",
-        "Use succinylcholine for RSI",
-        "Proceed with sevoflurane since the patient had no reaction"
+        "Use an MH-safe non-triggering anesthetic",
+        "Use volatile anesthesia routinely",
+        "Give prophylactic dantrolene to every such patient",
+        "Use succinylcholine for rapid-sequence induction"
       ],
       "answer": [
         0
@@ -11964,11 +11964,11 @@
       "id": "PRE-492",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a history of PONV is scheduled for laparoscopy. What is the BEST plan?",
+      "stem": "A patient with prior PONV is scheduled for laparoscopy. Which strategy best addresses the combined patient and procedural risk?",
       "options": [
-        "Plan multimodal PONV prophylaxis",
-        "No prophylaxis needed",
-        "Use a volatile-based anesthetic",
+        "Use multimodal PONV prophylaxis",
+        "Withhold prophylaxis unless symptoms occur",
+        "Prefer volatile anesthesia to reduce nausea",
         "Avoid antiemetics"
       ],
       "answer": [
@@ -11988,12 +11988,12 @@
       "id": "PRE-493",
       "set": 1,
       "type": "single",
-      "stem": "A patient says she has \"allergy to morphine\" because of itching. What is the BEST classification?",
+      "stem": "A patient labels morphine as an allergy because it caused isolated itching without airway or hemodynamic symptoms. Which interpretation is most likely?",
       "options": [
-        "Likely histamine release, not true allergy",
-        "True IgE-mediated anaphylaxis",
-        "An IgE-mediated morphine allergy",
-        "Cross-reactive allergy to all opioids"
+        "Histamine-mediated side effect rather than true IgE allergy",
+        "IgE-mediated anaphylaxis",
+        "Confirmed allergy to all opioids",
+        "Angioedema"
       ],
       "answer": [
         0
@@ -12012,12 +12012,12 @@
       "id": "PRE-494",
       "set": 1,
       "type": "single",
-      "stem": "A patient with morbid obesity is scheduled for surgery. Why calculate IBW?",
+      "stem": "Why is ideal body weight calculated in a patient with severe obesity?",
       "options": [
-        "To guide dosing for certain medications",
-        "To determine the patient's ASA class",
-        "To predict the patient's PONV risk",
-        "To set the patient's NPO time"
+        "Some anesthetic medications require a weight scalar other than total body weight",
+        "It determines ASA class",
+        "It predicts PONV",
+        "It determines fasting interval"
       ],
       "answer": [
         0
@@ -12036,12 +12036,12 @@
       "id": "PRE-495",
       "set": 1,
       "type": "single",
-      "stem": "A patient with renal failure requests ketorolac for pain. What is BEST?",
+      "stem": "A patient with renal failure requests ketorolac. Which concern should guide the analgesic plan?",
       "options": [
-        "Avoid NSAIDs due to kidney injury risk",
-        "Give ketorolac at standard dose",
-        "Give ketorolac at half dose",
-        "Give ketorolac together with a morphine PCA"
+        "Avoid NSAIDs because they can worsen renal injury",
+        "Use standard-dose ketorolac",
+        "Use half-dose ketorolac routinely",
+        "Combine ketorolac with morphine PCA"
       ],
       "answer": [
         0
@@ -12060,7 +12060,7 @@
       "id": "PRE-496",
       "set": 1,
       "type": "single",
-      "stem": "A patient's STOP-BANG is 2. What is the risk category?",
+      "stem": "A STOP-BANG score of 2 corresponds to which risk category?",
       "options": [
         "Low",
         "Intermediate",
@@ -12084,7 +12084,7 @@
       "id": "PRE-497",
       "set": 1,
       "type": "single",
-      "stem": "A patient's STOP-BANG is 5. What is the risk category?",
+      "stem": "A STOP-BANG score of 5 corresponds to which risk category?",
       "options": [
         "High",
         "Intermediate",
@@ -12108,12 +12108,12 @@
       "id": "PRE-498",
       "set": 1,
       "type": "single",
-      "stem": "A 71-year-old woman on insulin with CHF (EF 35%) and creatinine 2.2 is booked for elective TKA. She stops after half a flight of stairs. What BEST describes her risk picture?",
+      "stem": "A patient uses insulin, has CHF with EF 35%, creatinine 2.2 mg/dL, and is scheduled for total knee arthroplasty; she stops after half a flight of stairs. Which combined risk assessment is correct?",
       "options": [
-        "RCRI 3 with <4 METs; further cardiac assessment first",
-        "RCRI 4 with <4 METs; proceed with spinal anesthesia",
-        "RCRI 2 with <4 METs; further assessment",
-        "RCRI 3 with ≥4 METs; proceed without testing"
+        "RCRI 3 with poor functional capacity below 4 METs, supporting further cardiac assessment",
+        "RCRI 4 with poor functional capacity and automatic progression to spinal anesthesia",
+        "RCRI 2 with poor functional capacity",
+        "RCRI 3 with functional capacity at least 4 METs"
       ],
       "answer": [
         0
@@ -12132,12 +12132,12 @@
       "id": "PRE-499",
       "set": 1,
       "type": "single",
-      "stem": "A patient took lisinopril this morning and ate a heavy breakfast at 0700 for a noon case. Which issue delays the case, and which only changes the plan?",
+      "stem": "A patient took lisinopril this morning and ate a heavy breakfast at 0700 for a noon elective case. Which issue changes timing, and which primarily changes anesthetic planning?",
       "options": [
-        "The meal delays the case; the ACEI raises hypotension risk",
-        "The ACEI delays the case; the meal needs Bicitra",
-        "Both delay the case by 24 hours",
-        "Neither matters if the patient feels well this morning"
+        "The heavy meal delays the case; lisinopril increases induction-hypotension risk",
+        "Lisinopril delays the case; the meal can be addressed with Bicitra",
+        "Both require a 24-hour delay",
+        "Neither matters if the patient feels well"
       ],
       "answer": [
         0
@@ -12156,12 +12156,12 @@
       "id": "PRE-500",
       "set": 1,
       "type": "single",
-      "stem": "A 63-year-old cocaine user with chest pain has BP 200/115 and HR 130 in preop. After a benzodiazepine, BP stays 190/110. Which agent is the BEST next choice?",
+      "stem": "A cocaine-intoxicated patient has chest pain, BP 200/115, and HR 130. Benzodiazepine treatment does not adequately reduce severe hypertension. Which next agent best treats coronary ischemia and hypertension without pure beta-blockade?",
       "options": [
         "Nitroglycerin infusion",
         "Esmolol infusion",
-        "Metoprolol IV bolus",
-        "Labetalol IV bolus"
+        "Metoprolol IV",
+        "Labetalol IV"
       ],
       "answer": [
         0
