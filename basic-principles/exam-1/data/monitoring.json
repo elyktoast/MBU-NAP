@@ -3756,12 +3756,12 @@
       "id": "MON-151",
       "set": 1,
       "type": "single",
-      "stem": "A neonate with a cuffless ETT has unexpectedly low ETCO2 despite adequate ventilation. What is a likely explanation?",
+      "stem": "A neonate with a cuffless ETT has adequate chest excursion and a PaCO2 of 42 mmHg, but sidestream ETCO2 is unexpectedly low. Which explanation BEST fits the discrepancy?",
       "options": [
-        "Leak around the cuffless tube and high sampling rate",
-        "Increased CO2 production in neonates relative to adults",
-        "Normal gradient in neonates",
-        "Rebreathing from exhausted absorbent"
+        "Leak around the cuffless tube plus dilution/removal from a relatively high sampling flow",
+        "Increased neonatal CO2 production should make ETCO2 falsely low",
+        "A normal neonatal PaCO2–ETCO2 gradient is routinely this large",
+        "CO2 rebreathing from exhausted absorbent lowers ETCO2"
       ],
       "answer": [
         0
@@ -3780,12 +3780,12 @@
       "id": "MON-152",
       "set": 1,
       "type": "single",
-      "stem": "After CO2 pneumoperitoneum, ETCO2 rises while respiratory mechanics become stiffer. Which combined pattern is expected?",
+      "stem": "After CO2 pneumoperitoneum, PIP and plateau pressure rise together while ETCO2 gradually increases despite unchanged minute ventilation. Which combination BEST explains the changes?",
       "options": [
-        "A restrictive pattern with rising ETCO2",
-        "An obstructive pattern with falling ETCO2",
-        "No change in ETCO2",
-        "A flat line"
+        "Reduced respiratory compliance plus systemic absorption of insufflated CO2",
+        "Increased airway resistance plus reduced CO2 production",
+        "Circuit disconnection plus rebreathing",
+        "Improved compliance plus decreased pulmonary perfusion"
       ],
       "answer": [
         0
@@ -3804,12 +3804,12 @@
       "id": "MON-153",
       "set": 1,
       "type": "single",
-      "stem": "During hip arthroplasty, ETCO2 falls from 38 to 24 while waveform shape is preserved and BP drops to 75/40. What does this most strongly indicate?",
+      "stem": "During hip arthroplasty, ETCO2 abruptly falls from 38 to 24 mmHg while the waveform remains recognizable and BP falls to 75/40 mmHg. Ventilator settings are unchanged. Which mechanism BEST explains the ETCO2 change?",
       "options": [
-        "Decreased pulmonary perfusion",
-        "Hyperventilation",
-        "Esophageal intubation",
-        "Rebreathing"
+        "Reduced CO2 delivery to the lungs from decreased pulmonary perfusion",
+        "Sudden alveolar hyperventilation",
+        "Persistent esophageal intubation",
+        "CO2 rebreathing"
       ],
       "answer": [
         0
@@ -3828,11 +3828,11 @@
       "id": "MON-154",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 suddenly disappears during a previously stable case. What should be checked first?",
+      "stem": "During a previously stable anesthetic, the capnogram abruptly disappears immediately after patient repositioning. SpO2 is still 99%. What should be done FIRST?",
       "options": [
-        "Check the patient and airway immediately",
-        "Replace the water trap and recalibrate",
-        "Increase fresh gas flow",
+        "Assess the patient, airway, and ventilation connection immediately rather than waiting for desaturation",
+        "Replace the water trap before examining the patient",
+        "Increase fresh-gas flow",
         "Reduce anesthetic depth"
       ],
       "answer": [
@@ -3852,12 +3852,12 @@
       "id": "MON-155",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 rises from 38 to 60 with a normal waveform and unchanged ventilation. Which physiologic cause should be considered?",
+      "stem": "During an otherwise stable anesthetic, ETCO2 rises from 38 to 60 mmHg with a normal waveform despite unchanged minute ventilation; temperature and heart rate are also rising. Which cause is MOST concerning?",
       "options": [
-        "Increased CO2 production, such as MH",
+        "Markedly increased CO2 production such as malignant hyperthermia",
         "Circuit disconnection",
         "Esophageal intubation",
-        "Exhausted absorbent with rebreathing of CO2"
+        "Isolated sampling-line occlusion"
       ],
       "answer": [
         0
@@ -3876,12 +3876,12 @@
       "id": "MON-156",
       "set": 1,
       "type": "single",
-      "stem": "In a healthy patient with good V/Q matching, which noninvasive value best approximates alveolar CO2?",
+      "stem": "In a healthy anesthetized patient with good V/Q matching, ETCO2 is 35 mmHg. Which physiologic value does this most closely approximate?",
       "options": [
-        "ETCO2",
-        "SpO2",
-        "FiO2",
-        "Inspired CO2"
+        "Alveolar CO2 near end expiration",
+        "Arterial oxygen tension",
+        "Inspired oxygen concentration",
+        "Mixed venous CO2"
       ],
       "answer": [
         0
@@ -3924,12 +3924,12 @@
       "id": "MON-158",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 falls to near zero while blood pressure remains stable. Which cause becomes most likely?",
+      "stem": "ETCO2 abruptly falls to near zero, but arterial pressure and ECG remain stable and the patient continues to receive mechanical breaths. Which cause should move higher on the differential?",
       "options": [
-        "Disconnection or sampling line failure",
-        "Massive pulmonary embolism with preserved waveform",
-        "Sudden severe hypotension",
-        "Cardiac arrest"
+        "Capnography sampling failure or a circuit/airway disconnection affecting the sample",
+        "Massive pulmonary embolism causing cardiovascular collapse",
+        "Cardiac arrest",
+        "Severe systemic hypotension"
       ],
       "answer": [
         0
@@ -3948,12 +3948,12 @@
       "id": "MON-159",
       "set": 1,
       "type": "single",
-      "stem": "Which capnogram pattern is most characteristic of bronchospasm?",
+      "stem": "A patient develops wheezing, rising PIP with unchanged plateau pressure, and a progressively sloped expiratory capnogram. Which waveform description BEST matches the process?",
       "options": [
-        "Shark-fin waveform with slow upstroke",
-        "Elevated baseline from rebreathing",
-        "Notch in the plateau",
-        "Flat trace with no waveform"
+        "Shark-fin morphology from expiratory airflow obstruction",
+        "Elevated inspiratory baseline from rebreathing",
+        "Curare cleft from spontaneous effort",
+        "Flat trace from absent ventilation"
       ],
       "answer": [
         0
@@ -3972,12 +3972,12 @@
       "id": "MON-160",
       "set": 1,
       "type": "single",
-      "stem": "During a long humidified case, capnography becomes erratic and then disappears. What technical limitation most likely explains this?",
+      "stem": "During a long humidified case, the capnogram becomes intermittently damped and then disappears while ventilation and hemodynamics remain unchanged. Which technical problem is MOST likely?",
       "options": [
-        "Condensation can occlude the sampling line",
-        "Capnography fails in long cases",
-        "Humidity raises ETCO2",
-        "Capnography reads falsely low during humidification"
+        "Condensation obstructing the sidestream sampling line",
+        "Capnography becoming unreliable solely because case duration is long",
+        "Humidity causing true hypercapnia",
+        "Humidification causing systematic low arterial CO2"
       ],
       "answer": [
         0
@@ -4020,12 +4020,12 @@
       "id": "MON-162",
       "set": 1,
       "type": "single",
-      "stem": "Before the patient is connected, the capnogram baseline already reads 4 mmHg with fresh gas flowing. What should be suspected?",
+      "stem": "Before the patient is connected, the capnograph displays a persistent 4-mmHg baseline despite fresh gas flowing through the circuit. Which explanation is MOST likely?",
       "options": [
-        "Device miscalibration",
-        "Patient rebreathing",
-        "Exhausted absorbent",
-        "A circuit leak"
+        "Analyzer zeroing/calibration error",
+        "Patient CO2 rebreathing",
+        "Exhausted absorbent caused by the patient",
+        "Bronchospasm"
       ],
       "answer": [
         0
@@ -4044,12 +4044,12 @@
       "id": "MON-163",
       "set": 1,
       "type": "single",
-      "stem": "A shark-fin capnogram is accompanied by rising peak airway pressure. Which problem is most likely?",
+      "stem": "During controlled ventilation, PIP rises while plateau pressure remains stable and the capnogram becomes shark-fin shaped. Which problem category BEST unifies these findings?",
       "options": [
-        "Bronchospasm or partial ETT kink",
+        "Increased airway resistance from bronchospasm or partial ETT obstruction",
         "Esophageal intubation",
-        "Rebreathing from exhausted absorbent",
-        "Cardiogenic oscillations"
+        "CO2 rebreathing",
+        "Cardiogenic oscillation"
       ],
       "answer": [
         0
@@ -4068,12 +4068,12 @@
       "id": "MON-164",
       "set": 1,
       "type": "single",
-      "stem": "During a prone spine case, a new shark-fin capnogram and PIP of 38 develop after positioning. What should be suspected first?",
+      "stem": "Immediately after prone positioning for spine surgery, PIP rises to 38 cmH2O, plateau remains near baseline, and a new shark-fin capnogram appears. Which cause should be investigated FIRST?",
       "options": [
-        "A partially kinked ETT",
-        "A circuit disconnect",
-        "Esophageal intubation",
-        "Malignant hyperthermia"
+        "Partial ETT kinking or obstruction related to positioning",
+        "Circuit disconnection",
+        "Malignant hyperthermia",
+        "Reduced lung compliance from pneumoperitoneum"
       ],
       "answer": [
         0
@@ -4092,12 +4092,12 @@
       "id": "MON-165",
       "set": 1,
       "type": "single",
-      "stem": "Why can ETCO2 transiently rise immediately after tourniquet release?",
+      "stem": "Immediately after tourniquet release, ETCO2 transiently rises despite unchanged ventilation. What is the most likely mechanism?",
       "options": [
-        "Washout of CO2 from ischemic tissue",
-        "Exhausted CO2 absorbent",
-        "Esophageal intubation",
-        "Increased dead space from reduced limb perfusion"
+        "Washout of accumulated CO2 from the previously ischemic limb into the circulation",
+        "Sudden exhaustion of CO2 absorbent",
+        "New esophageal intubation",
+        "Acute increase in alveolar dead space"
       ],
       "answer": [
         0
@@ -4116,12 +4116,12 @@
       "id": "MON-166",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, several small capnogram waveforms appear and then fade to zero. What does this pattern suggest?",
+      "stem": "Immediately after attempted intubation, several small CO2 waveforms appear but rapidly diminish to zero with continued ventilation. Which interpretation is MOST concerning?",
       "options": [
-        "Esophageal intubation",
+        "Transient washout of swallowed/gastric CO2 after esophageal intubation",
         "Bronchospasm",
-        "Right mainstem intubation",
-        "Normal intubation"
+        "Right-mainstem intubation",
+        "Secure tracheal intubation"
       ],
       "answer": [
         0
@@ -4140,12 +4140,12 @@
       "id": "MON-167",
       "set": 1,
       "type": "single",
-      "stem": "A low-ETCO2 alarm activates. Which assessment priority is most appropriate?",
+      "stem": "A low-ETCO2 alarm activates during a previously stable anesthetic. Which initial approach BEST avoids anchoring on a single cause?",
       "options": [
-        "Assess patient, airway, circuit, perfusion",
-        "Increase the respiratory rate",
-        "Increase the alarm limits",
-        "Check the sampling line first"
+        "Assess the patient and airway while rapidly checking circuit/sampling integrity and perfusion",
+        "Increase respiratory rate before assessing the cause",
+        "Widen the alarm limit",
+        "Check only the sampling line because low ETCO2 is usually technical"
       ],
       "answer": [
         0
@@ -4164,12 +4164,12 @@
       "id": "MON-168",
       "set": 1,
       "type": "single",
-      "stem": "During sedation, respiratory rate slows and ETCO2 rises gradually. What is the most likely cause?",
+      "stem": "During propofol-opioid sedation, respiratory rate falls from 14 to 6/min and ETCO2 rises progressively while SpO2 remains 98% on supplemental oxygen. Which process is occurring?",
       "options": [
-        "Hypoventilation from sedatives or opioids",
-        "Rebreathing from absorbent exhaustion",
-        "Esophageal intubation",
-        "Increased dead space from PE"
+        "Sedative/opioid-induced alveolar hypoventilation",
+        "CO2 rebreathing from an exhausted absorber",
+        "Pulmonary embolism",
+        "Esophageal intubation"
       ],
       "answer": [
         0
@@ -4188,12 +4188,12 @@
       "id": "MON-169",
       "set": 1,
       "type": "single",
-      "stem": "A COPD patient has a sloped plateau and elevated ETCO2. What is the best interpretation?",
+      "stem": "A COPD patient has prolonged expiration, a sloped alveolar plateau, and elevated ETCO2. Which mechanism BEST explains the waveform morphology?",
       "options": [
-        "V/Q mismatch with obstruction",
-        "Normal capnogram",
-        "Esophageal intubation",
-        "Rebreathing from an exhausted absorbent"
+        "Heterogeneous emptying from airflow obstruction and V/Q mismatch",
+        "Normal uniform alveolar emptying",
+        "Persistent esophageal intubation",
+        "Isolated CO2 rebreathing"
       ],
       "answer": [
         0
@@ -4212,12 +4212,12 @@
       "id": "MON-170",
       "set": 1,
       "type": "single",
-      "stem": "During acute pulmonary embolism, how should ETCO2 and the PaCO2–ETCO2 gradient change?",
+      "stem": "During acute pulmonary embolism, PaCO2 remains 42 mmHg while ETCO2 falls from 36 to 24 mmHg. Which change in respiratory physiology BEST explains the widened gradient?",
       "options": [
-        "ETCO2 falls and the gradient widens",
-        "ETCO2 rises and the gradient narrows",
-        "ETCO2 equals PaCO2",
-        "ETCO2 is unaffected"
+        "Increased alveolar dead space from ventilated but underperfused lung",
+        "Increased CO2 rebreathing",
+        "Improved V/Q matching",
+        "Reduced anatomic dead space"
       ],
       "answer": [
         0
@@ -4284,12 +4284,12 @@
       "id": "MON-173",
       "set": 1,
       "type": "single",
-      "stem": "A patient with CAD needs simultaneous rhythm and ischemia surveillance. Which lead pair best covers both goals?",
+      "stem": "A patient with coronary disease requires both reliable atrial/rhythm surveillance and sensitive perioperative ischemia monitoring. Which lead strategy BEST addresses both goals according to the lecture?",
       "options": [
-        "Lead II and V3",
-        "Lead I and aVL",
-        "V1 and V6",
-        "Lead III and aVR"
+        "Monitor lead II for rhythm together with a precordial ischemia-sensitive lead such as V3",
+        "Use lead II alone because rhythm and ischemia sensitivity are equivalent",
+        "Use aVR and aVL only",
+        "Use V1 alone for both atrial activity and ischemia"
       ],
       "answer": [
         0
@@ -4332,12 +4332,12 @@
       "id": "MON-175",
       "set": 1,
       "type": "single",
-      "stem": "Preop ECG shows ST depression in V4 and V5. How should intraoperative lead selection be individualized?",
+      "stem": "A patient's preoperative ECG shows reproducible ST depression in V4 and V5 during prior ischemic episodes. Which intraoperative strategy best applies ECG 'fingerprinting'?",
       "options": [
-        "Choose leads that match his preop changes",
-        "Monitor lead II alone",
-        "Monitor aVR and V1",
-        "Choose leads based on surgical site alone"
+        "Prioritize monitoring leads that reproduce the patient's known ischemic pattern",
+        "Use lead II alone regardless of prior changes",
+        "Choose leads only according to surgical site",
+        "Avoid ST trending because baseline abnormalities invalidate monitoring"
       ],
       "answer": [
         0
@@ -4356,12 +4356,12 @@
       "id": "MON-176",
       "set": 1,
       "type": "single",
-      "stem": "A high-risk CAD patient is monitored only in lead II. What important limitation does this create?",
+      "stem": "A high-risk CAD patient is monitored only in lead II throughout major vascular surgery. What is the principal limitation?",
       "options": [
-        "Ischemia in other territories may be missed",
-        "Arrhythmias will be missed",
-        "Arrhythmia detection will be delayed",
-        "Lead II overdiagnoses ischemia"
+        "Ischemia occurring in territories poorly represented by lead II may go undetected",
+        "Lead II cannot detect arrhythmias",
+        "Lead II always overdiagnoses ST depression",
+        "Lead II prevents automated ST analysis"
       ],
       "answer": [
         0
@@ -4458,12 +4458,12 @@
       "id": "MON-180",
       "set": 1,
       "type": "single",
-      "stem": "Lead II shows unexpected inverted P waves immediately after electrodes were placed by someone else. What is the best first step?",
+      "stem": "Immediately after electrode placement, lead II unexpectedly shows inverted P waves in a patient whose preoperative tracing had upright P waves. What should be checked FIRST?",
       "options": [
-        "Check electrode placement",
-        "Treat as ectopic atrial rhythm",
-        "Switch to V5",
-        "Treat as an ectopic atrial rhythm"
+        "Electrode placement and lead configuration",
+        "Treat immediately for ectopic atrial rhythm",
+        "Switch to V5 without checking electrodes",
+        "Administer an antiarrhythmic"
       ],
       "answer": [
         0
@@ -4482,12 +4482,12 @@
       "id": "MON-181",
       "set": 1,
       "type": "single",
-      "stem": "The usual left chest electrode lies within a thoracotomy field. What is the best adjustment?",
+      "stem": "The usual precordial electrode location overlaps the sterile thoracotomy field. Which adjustment BEST preserves monitoring?",
       "options": [
-        "Move electrodes away from the field",
-        "Remove the ECG entirely",
-        "Use lead I alone",
-        "Place electrodes in the field"
+        "Relocate electrodes outside the field while maintaining an appropriate lead vector",
+        "Remove ECG monitoring during the thoracic portion",
+        "Place the electrode beneath the sterile field",
+        "Use pulse oximetry in place of ECG"
       ],
       "answer": [
         0
@@ -4534,12 +4534,12 @@
       "id": "MON-183",
       "set": 1,
       "type": "single",
-      "stem": "A baseline ECG already shows abnormalities in III and aVF. Which leads should be prioritized intraoperatively?",
+      "stem": "A patient has a characteristic preoperative ischemic ST pattern in leads III and aVF. Which intraoperative approach BEST uses that baseline information?",
       "options": [
-        "III and aVF",
-        "V1 and V2",
-        "I and aVL",
-        "V5 and V6"
+        "Include III and aVF in surveillance so new deviation can be compared with the patient's known pattern",
+        "Avoid those leads because baseline abnormalities make them unusable",
+        "Use V1 and V2 exclusively",
+        "Use lead II alone because inferior leads add no information"
       ],
       "answer": [
         0
@@ -4558,12 +4558,12 @@
       "id": "MON-184",
       "set": 1,
       "type": "single",
-      "stem": "ECG monitoring is disconnected during transfer before the patient leaves the OR. Which ASA requirement is violated?",
+      "stem": "At the end of anesthesia, ECG electrodes are disconnected for transfer while the patient is still in the OR and anesthesia care is ongoing. Which requirement is no longer met?",
       "options": [
-        "Continuous display until leaving the room",
-        "Display during surgery",
-        "Display during induction",
-        "Display for cardiac patients"
+        "Continuous ECG display through the period before leaving the anesthetizing location",
+        "ECG display only during surgical stimulation",
+        "ECG display only during induction",
+        "ECG monitoring only for patients with cardiac disease"
       ],
       "answer": [
         0
@@ -4606,12 +4606,12 @@
       "id": "MON-186",
       "set": 1,
       "type": "single",
-      "stem": "Which ECG change is most common during perioperative myocardial ischemia?",
+      "stem": "During vascular surgery, a patient develops a new horizontal ST-segment depression without QRS widening or electrolyte abnormalities. Which perioperative process should be considered?",
       "options": [
-        "ST depression",
-        "ST elevation in all leads",
-        "QRS widening",
-        "Peaked T waves"
+        "Myocardial ischemia",
+        "Hyperkalemia",
+        "Bundle-branch block",
+        "Normal atrial repolarization"
       ],
       "answer": [
         0
@@ -4630,12 +4630,12 @@
       "id": "MON-187",
       "set": 1,
       "type": "single",
-      "stem": "Which NIBP bladder dimensions best match correct cuff sizing?",
+      "stem": "An adult's mid-arm circumference is 35 cm. Which cuff bladder dimensions most closely match standard sizing principles?",
       "options": [
-        "Width about 40% and length about 80% of arm circumference",
-        "Width about 20% and length about 50% of arm circumference",
-        "Width about 60% and length about 100% of arm circumference",
-        "Width about 80% and length about 40% of arm circumference"
+        "Width about 14 cm and length about 28 cm",
+        "Width about 7 cm and length about 18 cm",
+        "Width about 21 cm and length about 35 cm",
+        "Width about 28 cm and length about 14 cm"
       ],
       "answer": [
         0
@@ -4654,12 +4654,12 @@
       "id": "MON-188",
       "set": 1,
       "type": "single",
-      "stem": "A cuff that is too small produces a much higher BP than the arterial line. Why?",
+      "stem": "NIBP repeatedly reads 178/96 mmHg while a well-leveled arterial line reads 145/82 mmHg. The cuff bladder is visibly too narrow for the arm. Which explanation is MOST likely?",
       "options": [
-        "A cuff that is too small reads falsely high",
-        "A cuff that is too large reads falsely high",
-        "The arterial line is overdamped",
-        "The patient is hypertensive"
+        "An undersized cuff requires excessive pressure to occlude the artery and reads falsely high",
+        "An undersized cuff reads falsely low",
+        "The discrepancy proves the arterial line is overdamped",
+        "Cuff size affects diastolic but not systolic pressure"
       ],
       "answer": [
         0
@@ -4678,12 +4678,12 @@
       "id": "MON-189",
       "set": 1,
       "type": "single",
-      "stem": "A thigh cuff used on a thin arm produces a much lower BP than a properly sized cuff. Why?",
+      "stem": "A very large thigh cuff is used on a thin upper arm and reads substantially below a simultaneous appropriately sized cuff. Which mechanism BEST explains the bias?",
       "options": [
-        "A cuff that is too large reads falsely low",
-        "A cuff that is too small reads falsely low",
-        "Both readings are accurate",
-        "The arm is above heart level"
+        "The oversized bladder occludes the artery at a lower cuff pressure, producing a falsely low reading",
+        "Oversized cuffs systematically read falsely high",
+        "The thin arm must be positioned below the heart",
+        "Large cuffs affect only pulse pressure"
       ],
       "answer": [
         0
@@ -4702,12 +4702,12 @@
       "id": "MON-190",
       "set": 1,
       "type": "single",
-      "stem": "If the NIBP cuff is positioned below heart level, how will the reading be biased?",
+      "stem": "A patient's NIBP cuff is 20 cm below the level of the right atrium. Compared with a heart-level measurement, what direction of error is expected?",
       "options": [
-        "Falsely high",
-        "Falsely low",
-        "No change",
-        "Unmeasurable"
+        "Falsely high because of the hydrostatic pressure column",
+        "Falsely low because of the hydrostatic pressure column",
+        "No meaningful change",
+        "Only diastolic pressure changes"
       ],
       "answer": [
         0
@@ -4726,12 +4726,12 @@
       "id": "MON-191",
       "set": 1,
       "type": "single",
-      "stem": "If the NIBP cuff is positioned above heart level, how will the reading be biased?",
+      "stem": "A patient's NIBP cuff is positioned well above the level of the right atrium during lateral surgery. Compared with a heart-level measurement, what bias is expected?",
       "options": [
         "Falsely low",
         "Falsely high",
         "No change",
-        "Unmeasurable"
+        "Only systolic pressure rises"
       ],
       "answer": [
         0
@@ -4802,12 +4802,12 @@
       "id": "MON-194",
       "set": 1,
       "type": "single",
-      "stem": "If one arm contains a functioning IV, where should the NIBP cuff generally be placed?",
+      "stem": "A functioning peripheral IV is infusing vasoactive medication in the right arm and both upper limbs are otherwise usable. Where should the routine NIBP cuff preferentially be placed?",
       "options": [
-        "On the contralateral limb",
-        "On the same arm as the IV",
-        "On the forearm of the IV arm",
-        "On the neck"
+        "On the contralateral arm to avoid repeated interruption of the infusion",
+        "On the same arm so both therapies are monitored together",
+        "Over the IV site to detect infiltration",
+        "On the forearm of the IV arm regardless of cuff fit"
       ],
       "answer": [
         0
@@ -4855,12 +4855,12 @@
       "id": "MON-196",
       "set": 1,
       "type": "single",
-      "stem": "Why is repeated NIBP cycling concerning on an arm after axillary lymph-node dissection?",
+      "stem": "A patient has prior axillary lymph-node dissection with chronic ipsilateral arm edema. Why is repeated NIBP cycling on that arm undesirable when another site is available?",
       "options": [
-        "Risk of edema, skin injury, and nerve compression",
-        "Risk of falsely low readings without tissue injury",
-        "Risk of pneumothorax",
-        "Risk of arterial rupture"
+        "Repeated compression may worsen edema and contribute to skin or nerve injury",
+        "The cuff will always read falsely low but causes no tissue risk",
+        "It creates a pneumothorax risk",
+        "It commonly ruptures the brachial artery"
       ],
       "answer": [
         0
@@ -4879,12 +4879,12 @@
       "id": "MON-197",
       "set": 1,
       "type": "single",
-      "stem": "During oscillometric NIBP measurement, which point in the oscillation envelope corresponds most directly to MAP?",
+      "stem": "During oscillometric NIBP measurement, the monitor directly identifies one pressure from the point of maximal cuff-pressure oscillations and algorithmically derives the others. Which pressure is most directly measured?",
       "options": [
-        "At the point of maximal oscillation amplitude",
-        "When the first oscillation appears",
-        "When oscillations disappear",
-        "At the midpoint between first and last oscillation"
+        "Mean arterial pressure",
+        "Systolic pressure",
+        "Diastolic pressure",
+        "Pulse pressure"
       ],
       "answer": [
         0
@@ -4903,7 +4903,7 @@
       "id": "MON-198",
       "set": 1,
       "type": "single",
-      "stem": "If BP is 150/90 mmHg, what is the approximate MAP?",
+      "stem": "A patient has NIBP 150/90 mmHg with a regular rhythm. Using the common approximation, what is the MAP?",
       "options": [
         "110 mmHg",
         "120 mmHg",
@@ -4927,10 +4927,10 @@
       "id": "MON-199",
       "set": 1,
       "type": "single",
-      "stem": "During a code, the cuff is deflated while palpating the radial pulse; the pulse returns at 85 mmHg. What pressure does this estimate?",
+      "stem": "During severe hypotension, Korotkoff sounds are difficult to hear. While slowly deflating the cuff, the radial pulse first reappears at 85 mmHg. What does this palpated value approximate?",
       "options": [
-        "Systolic pressure",
-        "Diastolic pressure",
+        "Systolic arterial pressure",
+        "Diastolic arterial pressure",
         "Mean arterial pressure",
         "Pulse pressure"
       ],
@@ -4951,12 +4951,12 @@
       "id": "MON-200",
       "set": 1,
       "type": "single",
-      "stem": "During manual auscultatory BP measurement, Korotkoff sounds begin at 140 and disappear at 85 mmHg. What do these values represent?",
+      "stem": "During manual BP measurement, Korotkoff sounds first appear at 140 mmHg and disappear at 85 mmHg. How should the measurement be recorded?",
       "options": [
-        "Systolic 140 and diastolic 85",
-        "Mean pressure",
-        "Pulse pressure",
-        "Systolic, with MAP calculated"
+        "Approximately 140/85 mmHg",
+        "MAP 140 mmHg",
+        "Pulse pressure 85 mmHg",
+        "Systolic 140 mmHg with no estimate of diastolic pressure"
       ],
       "answer": [
         0
