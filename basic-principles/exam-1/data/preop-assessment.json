@@ -32,12 +32,12 @@
       "id": "PRE-002",
       "set": 1,
       "type": "single",
-      "stem": "A stable elective patient has no major comorbidity and will be assessed by phone rather than in clinic. Which scheduling interval is consistent with the preoperative assessment process?",
+      "stem": "A healthy patient cannot attend an in-person preoperative clinic but can complete a structured phone assessment. Which plan preserves the intended preoperative process?",
       "options": [
-        "1–30 days before surgery",
-        "1–7 days before surgery",
-        "7–60 days before surgery",
-        "Only within 24 hours of surgery"
+        "Complete the assessment within the accepted preoperative window, then repeat a focused interview on the day of surgery",
+        "Delay all assessment until the morning of surgery",
+        "Require an in-person clinic visit solely because the interview is remote",
+        "Use the phone assessment as a substitute for all day-of-surgery reassessment"
       ],
       "answer": [
         0
@@ -575,12 +575,12 @@
       "id": "PRE-024",
       "set": 1,
       "type": "single",
-      "stem": "At the start of the preoperative interview, which form of address best follows the lecture's strategy for establishing professional rapport?",
+      "stem": "A patient appears guarded at the start of the preoperative interview. Which opening approach is most likely to improve disclosure without sacrificing professionalism?",
       "options": [
-        "Address the patient by surname unless invited to do otherwise",
-        "Use the patient's first name immediately to appear informal",
-        "Use a nickname if one is visible in the chart",
-        "Avoid using the patient's name until consent is signed"
+        "Introduce yourself and your role, address the patient respectfully, and explain the purpose of the interview",
+        "Begin with rapid closed-ended questions before introducing yourself",
+        "Use an informal nickname from the chart to reduce distance",
+        "Delay explaining your role until consent is discussed"
       ],
       "answer": [
         0
@@ -671,12 +671,12 @@
       "id": "PRE-028",
       "set": 1,
       "type": "single",
-      "stem": "A facility allows physicians, CRNAs, NPs, and PAs to perform the formal preanesthesia assessment. A preoperative holding RN offers to complete it independently. Which statement is correct?",
+      "stem": "A preoperative holding RN obtains an excellent history and airway screen. What remains necessary before anesthesia under the facility's stated assessment policy?",
       "options": [
-        "The RN may collect data but is not one of the listed clinicians who may perform the formal assessment",
-        "The RN may perform it if the patient is ASA I or II",
-        "The RN may perform it when a CRNA cosigns later",
-        "The RN may perform it for regional anesthesia but not general anesthesia"
+        "An authorized clinician such as an anesthesiologist, CRNA, NP, or PA must perform the formal preanesthesia assessment",
+        "The RN's assessment is sufficient for ASA I–II patients",
+        "A later cosign automatically converts the RN assessment into the formal assessment",
+        "Only the surgeon must review the RN assessment"
       ],
       "answer": [
         0
@@ -770,12 +770,12 @@
       "id": "PRE-032",
       "set": 1,
       "type": "single",
-      "stem": "A 40-year-old has never received anesthesia and has no documented drug allergies. Which conclusion is safest during preoperative planning?",
+      "stem": "A patient has never received anesthesia and reports no known drug allergies. How should this history affect planning?",
       "options": [
-        "Absence of prior exposure means reactions to common anesthetic drugs or antibiotics are still unknown",
-        "The patient is at increased PONV risk but not at risk for drug reactions",
-        "The patient will require a higher volatile anesthetic concentration",
-        "The patient should automatically be classified ASA II"
+        "Do not infer tolerance to anesthetic drugs from the absence of prior exposure; maintain standard readiness for unexpected reactions",
+        "Classify the patient as higher ASA status solely because anesthetic exposure is unknown",
+        "Avoid common anesthetic drugs because first exposure predicts allergy",
+        "Assume low reaction risk eliminates the need to verify allergy history"
       ],
       "answer": [
         0
@@ -1110,12 +1110,12 @@
       "id": "PRE-046",
       "set": 1,
       "type": "single",
-      "stem": "A patient with rheumatoid arthritis is undergoing focused airway assessment before general anesthesia. Which examination set best targets structures relevant to ventilation and laryngoscopy?",
+      "stem": "A patient with rheumatoid arthritis has limited cervical motion and is scheduled for general anesthesia. Which focused examination best characterizes the structures most relevant to mask ventilation and laryngoscopy?",
       "options": [
-        "Teeth, oral cavity, mandibular space, and neck",
-        "Tonsils, sinuses, ears, and neck",
-        "Teeth, tongue, chest wall, and neck",
-        "Oral cavity, trachea, lungs, and abdomen"
+        "Dentition/oral cavity, mandibular space, and cervical mobility",
+        "Sinuses, ears, chest wall, and abdomen",
+        "Pupils, tonsils, trachea, and lower-extremity reflexes",
+        "Skin, thyroid function, renal status, and gait"
       ],
       "answer": [
         0
@@ -1134,12 +1134,12 @@
       "id": "PRE-047",
       "set": 1,
       "type": "single",
-      "stem": "Acromegaly, a large goiter, and Pierre Robin sequence can all complicate airway management, but for different reasons. Which categorization best matches them?",
+      "stem": "A patient has acromegaly, another has a large goiter, and a third has Pierre Robin sequence. Why do these diagnoses matter during airway assessment?",
       "options": [
-        "Metabolic, structural, and congenital",
-        "Infectious, vascular, and traumatic",
-        "Cardiac, pulmonary, and renal",
-        "Inflammatory, infectious, and traumatic"
+        "Different systemic, structural, or congenital processes can alter airway anatomy and make ventilation or laryngoscopy difficult",
+        "Each diagnosis predicts the same airway problem and requires the same technique",
+        "Only the goiter is relevant because metabolic and congenital disease do not affect the airway",
+        "All three mandate awake intubation regardless of examination"
       ],
       "answer": [
         0
