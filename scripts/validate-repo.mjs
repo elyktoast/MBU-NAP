@@ -1005,7 +1005,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const report=JSON.parse(read('reports/content-phase3-5-audit.json'));
  if(report?.scope?.questions!==2000)fail('Phase 3-5 audit scope is invalid');
- if(report?.changes?.sourceGroundedReplacementQuestions!==87||report?.changes?.bank1SameSetDuplicatesReplaced!==21||report?.changes?.bank1SameSetNearDuplicateReplaced!==1||report?.changes?.hazardsSet2RepeatedSlotsRebuilt!==65)fail('Phase 3-5 replacement counts are invalid');
+ const changes=report?.changes||{},replacementComponents=Number(changes.bank1SameSetDuplicatesReplaced||0)+Number(changes.bank1SameSetNearDuplicateReplaced||0)+Number(changes.hazardsSet2RepeatedSlotsRebuilt||0);if(changes.sourceGroundedReplacementQuestions!==replacementComponents||changes.bank1SameSetDuplicatesReplaced!==21||changes.bank1SameSetNearDuplicateReplaced!==3||changes.hazardsSet2RepeatedSlotsRebuilt!==65)fail('Phase 3-5 replacement counts are invalid');
  if(report?.finalChecks?.sameSetNearDuplicateClusters!==0||report?.finalChecks?.actionableManualReviewClusters!==0)fail('Phase 3-5 audit reports unresolved near-duplicate content');
  if(report?.finalChecks?.missingRequiredFields!==0)fail('Phase 3-5 audit reports missing required content');
  if((report?.finalChecks?.sameSetDuplicateGroups||[]).length!==0)fail('Phase 3-5 audit reports unresolved same-set duplicates');
