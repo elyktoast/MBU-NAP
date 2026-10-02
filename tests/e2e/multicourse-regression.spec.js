@@ -110,7 +110,7 @@ test.describe('multi-course foundation', () => {
     expect(state.sourceChoices).toEqual(['__all__']);
     expect(state.sourceText).toContain('All Basic Principles Exam 1 questions');
     expect(state.sourceText).not.toContain('Basic Airway Assessment & Management');
-    expect(state.topics).toBeGreaterThan(7);
+    expect(state.topics).toBe(7);
     expect(state.jpg).toBeTruthy();
     expect(state.svg).toBeTruthy();
     await expect(page.locator('#mbu-bank-picker option')).toHaveCount(1);
@@ -122,7 +122,7 @@ test.describe('multi-course foundation', () => {
   });
 
 
-  test('Basic Principles Studio topic filtering and direct figures work across the unified pool', async ({ page }) => {
+  test('Basic Principles Studio lecture filtering and direct figures work across the unified pool', async ({ page }) => {
     await page.goto('/basic-principles/exam-1/studio.html');
     await waitForStudioReady(page);
     const ids = await page.evaluate(() => ({
@@ -138,14 +138,16 @@ test.describe('multi-course foundation', () => {
     await expect(page.locator('#qimage img')).toHaveAttribute('src', /[.]svg$/i);
     await page.evaluate(() => renderHome());
 
-    await page.getByRole('button', { name: 'Topics' }).click();
+    await page.getByRole('button', { name: 'Lecture Topics' }).click();
     const choice = page.locator('#topicChecks input').first();
     await choice.check();
     const topic = await choice.inputValue();
+    expect(await page.locator('#topicChecks input').count()).toBe(7);
+    expect(await page.locator('#topicChecks').textContent()).toContain('(500)');
     await page.selectOption('#count', '10');
     await page.getByRole('button', { name: 'Start Quiz' }).click();
     expect(await page.evaluate(() => session.length)).toBe(10);
-    expect(await page.evaluate(() => [...new Set(session.map(q => q.topic))])).toEqual([topic]);
+    expect(await page.evaluate(() => [...new Set(session.map(q => q.bankLabel))])).toEqual([topic]);
   });
 
 
