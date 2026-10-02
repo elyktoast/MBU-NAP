@@ -95,7 +95,7 @@ async function hydrateStudioSource(source){
     if(!Array.isArray(all))throw Error('canonical question data is invalid');
     const raw=meta.setFilter?all.filter(q=>Number(q.set)===Number(meta.setFilter)):all;
     if(Number.isFinite(Number(meta.count))&&raw.length!==Number(meta.count))throw Error('question count '+raw.length+' does not match manifest '+meta.count);
-    if(raw.some(q=>String(q.sourceTitle||'').trim()&&String(q.sourceTitle).trim()!==label))throw Error('sourceTitle does not match manifest lecture label');
+    if(meta.sourceTitleContract&&raw.some(q=>String(q.sourceTitle||'').trim()!==String(meta.sourceTitleContract)))throw Error('sourceTitle does not match manifest source contract');
     const qs=raw.map((q,i)=>{
       let img=q.imageSvg||q.image||null;
       if(meta.imageBase){
