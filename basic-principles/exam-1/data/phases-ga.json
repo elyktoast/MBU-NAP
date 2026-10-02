@@ -11193,12 +11193,12 @@
       "id": "PHA-451",
       "set": 1,
       "type": "single",
-      "stem": "At emergence, core temperature is 35.5 °C and the patient is shivering. Which complication is most concerning in a patient with limited cardiac reserve?",
+      "stem": "At emergence, core temperature is 35.5 °C and vigorous shivering begins in a patient with severe CAD. Which consequence is most concerning?",
       "options": [
-        "Increased myocardial oxygen demand",
-        "Lower oxygen consumption from cooling",
-        "Faster emergence",
-        "Improved coagulation"
+        "A marked rise in metabolic and myocardial oxygen demand",
+        "Reduced myocardial oxygen consumption",
+        "Improved coagulation",
+        "Faster anesthetic elimination"
       ],
       "answer": [
         0
@@ -11217,12 +11217,12 @@
       "id": "PHA-452",
       "set": 1,
       "type": "single",
-      "stem": "Delayed emergence is accompanied by a glucose of 280 mg/dL. Which broad cause category does this fit?",
+      "stem": "Delayed awakening is accompanied by marked hyperglycemia after other major causes are assessed. How should this finding be classified in the differential?",
       "options": [
-        "Metabolic derangement",
-        "Normal emergence",
-        "Residual NMB",
-        "Laryngospasm with hypoxemia"
+        "A metabolic derangement that may contribute to abnormal recovery",
+        "Residual neuromuscular blockade",
+        "Normal emergence by definition",
+        "Upper-airway obstruction"
       ],
       "answer": [
         0
@@ -11241,12 +11241,12 @@
       "id": "PHA-453",
       "set": 1,
       "type": "single",
-      "stem": "A patient with seizure disorder becomes agitated after emergence. Which neurologic diagnosis should be ruled out first?",
+      "stem": "A patient with epilepsy becomes confused and agitated after an otherwise uncomplicated emergence; oxygenation, ventilation, pain, and TOFR are adequate. Which neurologic cause should remain in the differential?",
       "options": [
-        "Seizure",
-        "Hypothermia",
-        "Normal emergence",
-        "Malignant hyperthermia"
+        "Perioperative seizure or postictal state",
+        "Hypothermia despite normal temperature",
+        "Malignant hyperthermia without hypermetabolism",
+        "Normal emergence only"
       ],
       "answer": [
         0
@@ -11265,12 +11265,12 @@
       "id": "PHA-454",
       "set": 1,
       "type": "single",
-      "stem": "Which finding best supports readiness for transport after extubation and initial recovery?",
+      "stem": "Which finding best supports safe transport after extubation and initial recovery?",
       "options": [
-        "Stable VS and self-maintained airway",
-        "BIS below 40",
-        "Absent gag reflex with a quiet, sedated patient",
-        "High pressor needs"
+        "Stable hemodynamics with adequate oxygenation/ventilation and a self-maintained airway",
+        "Processed-EEG index below 40",
+        "Absent airway reflexes with deep sedation",
+        "Increasing vasopressor requirement without explanation"
       ],
       "answer": [
         0
@@ -11289,14 +11289,14 @@
       "id": "PHA-455",
       "set": 1,
       "type": "multi",
-      "stem": "A trauma patient has high awareness risk because anesthetic depth is intentionally limited by hemodynamic instability. Which THREE measures reduce risk? (Select 3)",
+      "stem": "A hemodynamically unstable trauma patient requires intentionally reduced anesthetic dosing and neuromuscular blockade. Which THREE measures help reduce unrecognized-awareness risk? (Select 3)",
       "options": [
-        "Processed EEG monitoring",
-        "End-tidal agent monitoring",
-        "Avoid unnecessary NMB",
-        "Deep paralysis to prevent movement",
-        "No depth monitoring",
-        "Very low anesthetic doses"
+        "Use processed EEG when appropriate",
+        "Monitor end-tidal anesthetic concentration when volatile is used",
+        "Continuously verify actual hypnotic delivery and clinical depth",
+        "Increase paralysis to eliminate movement",
+        "Ignore depth monitoring because hypotension limits anesthetic dose",
+        "Accept prolonged gaps in hypnotic delivery"
       ],
       "answer": [
         0,
@@ -11317,12 +11317,12 @@
       "id": "PHA-456",
       "set": 1,
       "type": "single",
-      "stem": "A patient reports prior intraoperative awareness. Which strategy is most appropriate for the current anesthetic?",
+      "stem": "A patient reports previous explicit intraoperative awareness and now requires GA with neuromuscular blockade. Which strategy best addresses the increased risk?",
       "options": [
-        "Use depth monitoring and avoid unnecessary paralysis",
-        "Use deeper paralysis to prevent movement",
-        "Avoid benzodiazepines",
-        "Use lower anesthetic doses to limit hypotension"
+        "Plan reliable anesthetic delivery with appropriate depth/end-tidal monitoring and minimize unnecessary paralysis when feasible",
+        "Use deeper paralysis as the primary prevention strategy",
+        "Intentionally lower hypnotic dosing",
+        "Avoid all benzodiazepines regardless of indication"
       ],
       "answer": [
         0
@@ -11341,12 +11341,12 @@
       "id": "PHA-457",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a difficult intubation, but deep extubation is requested for comfort. What is the safer plan?",
+      "stem": "A patient had a very difficult intubation, but deep extubation is requested to avoid coughing. Which concern should outweigh the comfort benefit?",
       "options": [
-        "Explain awake extubation is safer given airway risk",
-        "Agree to deep extubation for comfort",
-        "Extubate deep with an OA in place to avoid coughing",
-        "Let the surgeon choose the timing"
+        "Loss of airway control could require difficult reintubation, favoring an awake strategy with rescue readiness",
+        "Deep extubation eliminates reintubation risk",
+        "Cough prevention is more important than airway rescue capability",
+        "The surgeon should determine extubation depth"
       ],
       "answer": [
         0
@@ -11365,12 +11365,12 @@
       "id": "PHA-458",
       "set": 1,
       "type": "single",
-      "stem": "After large-volume resuscitation, airway pressures rise near emergence. What complication is most concerning?",
+      "stem": "After massive resuscitation, airway pressures rise and facial/tongue edema are present near emergence. Which complication should most alter the extubation plan?",
       "options": [
-        "Airway or pulmonary edema",
-        "Residual neuromuscular blockade",
+        "Upper-airway and/or pulmonary edema",
+        "Residual neuromuscular blockade despite a normal TOFR",
         "Hypercalcemia",
-        "Bronchospasm from airway reactivity"
+        "Isolated emergence hypertension"
       ],
       "answer": [
         0
@@ -11389,12 +11389,12 @@
       "id": "PHA-459",
       "set": 1,
       "type": "single",
-      "stem": "Both arms are tucked and the only IV cannot be seen during TIVA. What should be done to reduce delivery risk?",
+      "stem": "Both arms are tucked and the sole IV carrying TIVA cannot be inspected after positioning. Which preventive strategy best reduces catastrophic delivery interruption?",
       "options": [
-        "Ensure line patency and consider a second IV",
-        "Leave it, since the IV was working at induction",
-        "Give neuromuscular blocker to prevent movement",
-        "Increase volatile"
+        "Verify secure patency before tucking and consider reliable additional access/visible connections",
+        "Assume an IV working at induction will remain reliable",
+        "Use paralysis to hide movement if delivery fails",
+        "Increase opioid infusion to compensate for possible hypnotic interruption"
       ],
       "answer": [
         0
@@ -11413,12 +11413,12 @@
       "id": "PHA-460",
       "set": 1,
       "type": "single",
-      "stem": "During a prone case, the eyes were not taped or checked. Which complication is most concerning?",
+      "stem": "During a prolonged prone anesthetic, the eyes were neither taped nor checked for external pressure. Which preventable injury is the major concern?",
       "options": [
-        "Eye injury from exposure or pressure",
-        "Hypothermia from prolonged exposure of the head",
+        "Corneal/exposure injury or pressure-related ocular injury",
         "Laryngospasm",
-        "Bronchospasm"
+        "Bronchospasm",
+        "Residual neuromuscular blockade"
       ],
       "answer": [
         0
@@ -11437,12 +11437,12 @@
       "id": "PHA-461",
       "set": 1,
       "type": "single",
-      "stem": "The TIVA IV infiltrates during maintenance. What is the best immediate backup strategy?",
+      "stem": "During paralyzed TIVA, the propofol IV infiltrates and processed-EEG values begin rising. What is the immediate backup strategy?",
       "options": [
-        "Switch to volatile or establish new IV quickly",
-        "Give IM ketamine and continue",
-        "Give a neuromuscular blocker",
-        "Increase remifentanil until a new IV is placed"
+        "Restore hypnosis through a new reliable IV or an available inhaled anesthetic while correcting access",
+        "Continue the infiltrated infusion at a higher rate",
+        "Give neuromuscular blocker",
+        "Increase remifentanil alone as a substitute for hypnosis"
       ],
       "answer": [
         0
@@ -11461,12 +11461,12 @@
       "id": "PHA-462",
       "set": 1,
       "type": "single",
-      "stem": "During prolonged laparoscopy, ETCO2 rises slowly to 50 with stable hemodynamics and temperature. What is the most likely cause?",
+      "stem": "During prolonged laparoscopy, ETCO2 gradually rises to 50 mmHg but normalizes after minute ventilation is increased; temperature and hemodynamics remain stable. Which cause best fits?",
       "options": [
-        "CO2 absorption from insufflation",
-        "Early malignant hyperthermia from sevoflurane",
+        "Systemic absorption of insufflated CO2",
+        "Early malignant hyperthermia",
         "Esophageal intubation",
-        "Hypothermia"
+        "Pulmonary embolism"
       ],
       "answer": [
         0
@@ -11485,12 +11485,12 @@
       "id": "PHA-463",
       "set": 1,
       "type": "single",
-      "stem": "HR rises soon after remifentanil is discontinued. What is the best response?",
+      "stem": "Soon after remifentanil is discontinued, HR and BP rise during continued surgical stimulation. What is the best first response if hypnosis is otherwise adequate?",
       "options": [
-        "Provide analgesia to replace remifentanil",
-        "Give a neuromuscular blocker",
-        "Increase FiO2",
-        "Give esmolol for HR and continue as planned"
+        "Replace the rapidly lost analgesic effect with an appropriate analgesic strategy",
+        "Give neuromuscular blocker",
+        "Treat the HR alone with esmolol without addressing nociception",
+        "Increase FiO2"
       ],
       "answer": [
         0
@@ -11509,12 +11509,12 @@
       "id": "PHA-464",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance, BIS is 30 with otherwise stable physiology. How should this be interpreted?",
+      "stem": "During TIVA, processed-EEG index is persistently near 30 with stable physiology and minimal stimulation. After excluding artifact, how should this be interpreted?",
       "options": [
-        "Possible excessive hypnotic effect in context",
-        "Awareness risk is high at this BIS value",
-        "Immediate increase in anesthetic",
-        "Neuromuscular recovery"
+        "Possible excessive hypnotic effect that should be integrated with the clinical context",
+        "Definite awareness",
+        "An indication to increase propofol immediately",
+        "Evidence of neuromuscular recovery"
       ],
       "answer": [
         0
@@ -11533,12 +11533,12 @@
       "id": "PHA-465",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, BP rises immediately after ETT manipulation. What is the most likely mechanism?",
+      "stem": "During emergence, BP and HR rise abruptly during ETT suctioning while other physiology is stable. Which mechanism best explains the transient response?",
       "options": [
-        "Sympathetic response to airway stimulation",
-        "Hypothermia",
+        "Sympathetic stimulation from airway manipulation",
         "Hypovolemia",
-        "Excessive anesthetic depth before extubation"
+        "Excessive anesthetic depth",
+        "Hypothermia"
       ],
       "answer": [
         0
@@ -11557,12 +11557,12 @@
       "id": "PHA-466",
       "set": 1,
       "type": "single",
-      "stem": "In PACU, TOFR is 0.8 with a weak cough. What is the best action?",
+      "stem": "In PACU, a weak cough and upper-airway weakness are present with quantitative TOFR 0.80. What is the safest action?",
       "options": [
-        "Treat residual blockade and monitor",
-        "Discharge from PACU",
-        "Give more rocuronium",
-        "Observe, since breathing is adequate"
+        "Treat/support residual neuromuscular blockade and continue quantitative monitoring",
+        "Discharge because spontaneous breathing is present",
+        "Give additional rocuronium",
+        "Observe without intervention because four twitches may be present"
       ],
       "answer": [
         0
@@ -11581,12 +11581,12 @@
       "id": "PHA-467",
       "set": 1,
       "type": "single",
-      "stem": "Vomiting occurs immediately after extubation. What is the first priority?",
+      "stem": "Immediately after extubation, the patient vomits while still drowsy. What is the first priority?",
       "options": [
-        "Position and suction to protect the airway",
-        "Give neuromuscular blocker",
-        "Deepen with volatile until vomiting stops",
-        "Give flumazenil"
+        "Position and suction to protect the airway while supporting oxygenation/ventilation",
+        "Administer additional neuromuscular blocker",
+        "Deepen anesthesia with volatile agent",
+        "Give flumazenil before protecting the airway"
       ],
       "answer": [
         0
@@ -11605,12 +11605,12 @@
       "id": "PHA-468",
       "set": 1,
       "type": "single",
-      "stem": "An oculocardiac reflex causes marked bradycardia during surgery. What is the first intervention?",
+      "stem": "During ophthalmic surgery, traction produces abrupt profound bradycardia from an oculocardiac reflex. What should happen first?",
       "options": [
-        "Ask surgeon to stop traction",
-        "Give esmolol to protect against rebound",
-        "Increase volatile",
-        "Give NMB"
+        "Ask the surgeon to stop the provoking traction",
+        "Give esmolol",
+        "Increase volatile concentration",
+        "Administer neuromuscular blocker"
       ],
       "answer": [
         0
@@ -11629,12 +11629,12 @@
       "id": "PHA-469",
       "set": 1,
       "type": "single",
-      "stem": "Respiratory depression recurs 20 minutes after naloxone. What is the most likely explanation?",
+      "stem": "Naloxone initially restores ventilation after a long-acting opioid, but respiratory depression returns 20 minutes later. Which mechanism explains this?",
       "options": [
-        "Renarcotization from a longer-acting opioid",
-        "Malignant hyperthermia",
-        "Residual volatile anesthetic redistributing from fat",
-        "Bronchospasm"
+        "The opioid effect outlasted naloxone, producing renarcotization",
+        "Naloxone itself caused delayed respiratory depression",
+        "Volatile anesthetic redistributed from fat",
+        "Neuromuscular blockade recurred because of naloxone"
       ],
       "answer": [
         0
@@ -11653,12 +11653,12 @@
       "id": "PHA-470",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, ETCO2 is 55 and respirations are slow. What is the best next step?",
+      "stem": "During emergence, ETCO2 is 55 mmHg with slow shallow respirations after substantial opioid dosing; TOFR is adequate. What is the best next step?",
       "options": [
-        "Encourage breathing and consider opioid reversal",
-        "Give NMB",
-        "Extubate and observe in PACU",
-        "Deepen volatile to blunt coughing until extubation"
+        "Support/stimulate ventilation and titrate opioid reversal if clinically indicated",
+        "Give neuromuscular blocker",
+        "Extubate solely because TOFR is adequate",
+        "Deepen volatile anesthesia"
       ],
       "answer": [
         0
@@ -11677,12 +11677,12 @@
       "id": "PHA-471",
       "set": 1,
       "type": "single",
-      "stem": "Gastric distention from mask ventilation is present during emergence. Which complication risk is increased?",
+      "stem": "Significant gastric distention occurred during difficult mask ventilation. Why does this matter when planning emergence/extubation?",
       "options": [
-        "Regurgitation and aspiration",
-        "Hypothermia",
-        "Bradycardia",
-        "Laryngospasm at extubation"
+        "Increased gastric volume/pressure can increase regurgitation and aspiration risk",
+        "It decreases aspiration risk",
+        "It primarily causes hypothermia",
+        "It guarantees laryngospasm"
       ],
       "answer": [
         0
@@ -11701,12 +11701,12 @@
       "id": "PHA-472",
       "set": 1,
       "type": "single",
-      "stem": "A patient with strong PONV history received a volatile anesthetic. What should be anticipated during emergence?",
+      "stem": "A patient with strong prior PONV history received volatile anesthesia and perioperative opioids. Which emergence plan best addresses the combined risk?",
       "options": [
-        "Higher PONV risk; plan prophylaxis",
-        "No added PONV risk",
-        "Faster emergence and lower PONV with desflurane",
-        "PONV is unlikely with desflurane"
+        "Use risk-based multimodal prophylaxis and minimize avoidable emetogenic exposures",
+        "No prophylaxis because volatile anesthetics do not affect PONV",
+        "Rely on a single rescue antiemetic only after vomiting",
+        "Increase opioid dosing to blunt nausea"
       ],
       "answer": [
         0
@@ -11725,12 +11725,12 @@
       "id": "PHA-473",
       "set": 1,
       "type": "single",
-      "stem": "After pneumoperitoneum, SpO2 drifts to 93% with equal breath sounds and only a modest rise in airway pressure. What is the best first intervention?",
+      "stem": "After pneumoperitoneum, SpO2 drifts to 93% with equal breath sounds and a modest pressure rise. FiO2 is already high. Which intervention best treats the likely physiology?",
       "options": [
-        "Recruitment maneuver and add PEEP",
-        "Raise FiO2 to 1.0 and leave settings unchanged",
-        "Withdraw the ETT 2 cm",
-        "Give albuterol through the circuit"
+        "Recruit dependent lung and apply appropriate PEEP",
+        "Raise FiO2 alone and leave mechanics unchanged",
+        "Withdraw the ETT despite equal breath sounds",
+        "Treat as bronchospasm without wheeze or obstructive capnogram"
       ],
       "answer": [
         0
@@ -11749,12 +11749,12 @@
       "id": "PHA-474",
       "set": 1,
       "type": "single",
-      "stem": "On FiO2 1.0, SpO2 is 97% but PaO2 is only 85 mmHg. What does this most strongly suggest?",
+      "stem": "On FiO2 1.0, SpO2 is 97% but PaO2 is only 85 mmHg. What does this discrepancy most strongly indicate?",
       "options": [
-        "Significant shunt hidden by high FiO2",
-        "Normal gas exchange for FiO2 1.0",
-        "Pulse oximeter malfunction",
-        "Hypoventilation with normal oxygenation"
+        "Severe V/Q mismatch or shunt masked by the flat upper portion of the oxyhemoglobin curve",
+        "Normal gas exchange on 100% oxygen",
+        "Pulse-oximeter failure because SpO2 exceeds PaO2 numerically",
+        "Isolated hypoventilation with otherwise normal oxygen transfer"
       ],
       "answer": [
         0
@@ -11773,12 +11773,12 @@
       "id": "PHA-475",
       "set": 1,
       "type": "single",
-      "stem": "At skin incision, HR and BP rise sharply while BIS is 38 and ETCO2 is normal. What anesthetic component is most likely inadequate?",
+      "stem": "At incision, HR and BP rise sharply while processed-EEG index is 38, end-tidal anesthetic concentration is appropriate, and ETCO2 is normal. Which component is most likely inadequate?",
       "options": [
-        "Inadequate analgesia for the incision",
-        "Inadequate hypnosis with awareness",
-        "Hypercarbia from hypoventilation",
-        "Malignant hyperthermia"
+        "Analgesia/nociceptive control",
+        "Hypnosis",
+        "Ventilation",
+        "Neuromuscular blockade"
       ],
       "answer": [
         0
@@ -11797,12 +11797,12 @@
       "id": "PHA-476",
       "set": 1,
       "type": "single",
-      "stem": "Which finding best distinguishes hypovolemia from pure vasodilation as a cause of intraoperative hypotension?",
+      "stem": "A mechanically ventilated patient becomes hypotensive. Which finding most supports preload dependence from hypovolemia rather than isolated vasodilation, assuming appropriate rhythm and ventilation?",
       "options": [
-        "High pulse pressure variation on the arterial line",
-        "A heart rate of 95",
-        "A normal ETCO2 waveform with a stable plateau",
-        "BIS of 45"
+        "Marked respiratory variation in arterial pulse pressure",
+        "Heart rate of 95/min",
+        "Normal capnogram morphology",
+        "Processed-EEG index of 45"
       ],
       "answer": [
         0
@@ -11821,12 +11821,12 @@
       "id": "PHA-477",
       "set": 1,
       "type": "single",
-      "stem": "Immediately after cementing, ETCO2, BP, and SpO2 all fall. Which mechanism links these changes?",
+      "stem": "Immediately after cementing during arthroplasty, ETCO2, arterial pressure, and SpO2 all fall abruptly. Which mechanism best links the three findings?",
       "options": [
-        "Embolic obstruction of pulmonary blood flow",
-        "Bronchospasm from cement fumes",
-        "Hypoventilation from surgical positioning",
-        "Circuit leak at the Y-piece"
+        "Acute obstruction of pulmonary blood flow with reduced cardiac output and increased dead space",
+        "Isolated bronchospasm",
+        "Simple hypoventilation",
+        "A sampling-line leak"
       ],
       "answer": [
         0
@@ -11845,12 +11845,12 @@
       "id": "PHA-478",
       "set": 1,
       "type": "single",
-      "stem": "During malignant hyperthermia treatment, why are the volatile agent stopped and fresh-gas flow increased?",
+      "stem": "During malignant hyperthermia treatment, why are volatile anesthetics stopped and high fresh-gas flows with 100% O2 used?",
       "options": [
-        "To remove the trigger and wash volatile from the circuit",
-        "To raise PaCO2 and stimulate breathing during treatment",
-        "To lower FiO2 and reduce oxygen toxicity",
-        "To slow CO2 absorption by the canister"
+        "Remove the triggering agent, purge the circuit, maximize oxygen delivery, and help clear excess CO2",
+        "Raise PaCO2 to stimulate breathing",
+        "Reduce inspired oxygen concentration",
+        "Increase rebreathing"
       ],
       "answer": [
         0
@@ -11869,10 +11869,10 @@
       "id": "PHA-479",
       "set": 1,
       "type": "single",
-      "stem": "During laparoscopy, ETCO2 rises gradually but normalizes after increasing minute ventilation; HR and temperature remain stable. What is the most likely cause?",
+      "stem": "During laparoscopy, ETCO2 rises gradually but falls after minute ventilation is increased; HR and temperature remain stable and inspired CO2 is zero. Which cause is most likely?",
       "options": [
-        "CO2 absorption from insufflation",
-        "Early malignant hyperthermia",
+        "Absorption of insufflated CO2",
+        "Malignant hyperthermia",
         "Exhausted CO2 absorbent",
         "Pulmonary embolism"
       ],
@@ -11893,10 +11893,10 @@
       "id": "PHA-480",
       "set": 1,
       "type": "single",
-      "stem": "Inspired CO2 is 6 mmHg and the capnogram baseline does not return to zero. What is the most likely cause?",
+      "stem": "Inspired CO2 is 6 mmHg and the capnogram baseline no longer returns to zero. Which fault best explains the pattern?",
       "options": [
-        "Exhausted CO2 absorbent or incompetent valve",
-        "Early malignant hyperthermia with rising production",
+        "Rebreathing from exhausted absorbent or an incompetent unidirectional valve",
+        "Malignant hyperthermia",
         "Bronchospasm",
         "Esophageal intubation"
       ],
@@ -11917,12 +11917,12 @@
       "id": "PHA-481",
       "set": 1,
       "type": "single",
-      "stem": "A 70-kg patient has TOF 3/4 and needs 90 more minutes of relaxation. What rocuronium redose is most appropriate?",
+      "stem": "A 70-kg patient has TOF 3/4 and requires another 90 minutes of surgical relaxation. Using a rocuronium maintenance redose of 0.1–0.2 mg/kg, which range is appropriate?",
       "options": [
-        "Rocuronium 7–14 mg, guided by TOF",
-        "Rocuronium 42 mg to restart the block",
-        "Rocuronium 84 mg for a long duration",
-        "No redose, since relaxation is not needed"
+        "7–14 mg, titrated to quantitative monitoring and surgical need",
+        "42–84 mg",
+        "70–140 mg",
+        "No redose can ever be given with 3 twitches"
       ],
       "answer": [
         0
@@ -11941,12 +11941,12 @@
       "id": "PHA-482",
       "set": 1,
       "type": "single",
-      "stem": "TOF at the orbicularis oculi is 0/4, yet the patient is breathing against the ventilator. What best explains this discrepancy?",
+      "stem": "Facial-nerve TOF shows 0/4, yet the patient begins breathing against the ventilator. Which principle best explains the apparent discrepancy?",
       "options": [
-        "Facial muscles overestimate block compared with the thumb",
-        "Diaphragm is more sensitive than facial muscles to blockade",
-        "TOF at the eye underestimates the block",
-        "The patient is in stage 4 anesthesia"
+        "Different muscle groups have different sensitivity and recovery; facial monitoring does not reliably represent diaphragm or adductor-pollicis recovery",
+        "The diaphragm is always more sensitive to nondepolarizing blockade than facial muscles",
+        "A facial TOF of 0/4 proves all muscles are completely paralyzed",
+        "Spontaneous breathing proves quantitative monitoring is malfunctioning"
       ],
       "answer": [
         0
@@ -11965,12 +11965,12 @@
       "id": "PHA-483",
       "set": 1,
       "type": "single",
-      "stem": "Hgb is 7.6 g/dL with ongoing bleeding, MAP 58, tachycardia, and rising lactate despite fluids. What is the best action?",
+      "stem": "Hgb is 7.6 g/dL with active hemorrhage, MAP 58 mmHg, tachycardia, and rising lactate despite initial resuscitation. What is the best next step?",
       "options": [
-        "Transfuse PRBCs based on the clinical picture",
-        "Hold transfusion because Hgb is above 7",
-        "Give more crystalloid until Hgb falls below 7",
-        "Start diuretics to clear lactate"
+        "Transfuse packed red blood cells as part of ongoing hemorrhage resuscitation",
+        "Withhold blood solely because hemoglobin exceeds 7 g/dL",
+        "Continue crystalloid until hemoglobin falls below 7",
+        "Administer diuretic to lower lactate"
       ],
       "answer": [
         0
@@ -11989,12 +11989,12 @@
       "id": "PHA-484",
       "set": 1,
       "type": "single",
-      "stem": "During massive transfusion, hypotension and QT prolongation develop. Which treatment is most appropriate?",
+      "stem": "During massive transfusion, hypotension, prolonged QT, and reduced myocardial contractility develop. Which treatment addresses a likely citrate-related abnormality?",
       "options": [
-        "Calcium chloride or gluconate",
-        "Magnesium sulfate for the QT prolongation",
-        "Sodium bicarbonate",
-        "Potassium chloride"
+        "Calcium replacement guided by ionized calcium",
+        "Potassium chloride",
+        "Loop diuretic",
+        "Naloxone"
       ],
       "answer": [
         0
@@ -12013,12 +12013,12 @@
       "id": "PHA-485",
       "set": 1,
       "type": "single",
-      "stem": "At closure, TOFR is 0.95 but the patient remains apneic with ETCO2 34 on controlled ventilation. What is the best next step?",
+      "stem": "At closure, quantitative TOFR is 0.95, but controlled ventilation keeps ETCO2 at 34 mmHg and no spontaneous effort has returned. Other sedative causes are minimal. Which adjustment may help restore respiratory drive?",
       "options": [
-        "Lower minute ventilation to let CO2 rise",
+        "Reduce excessive minute ventilation and allow CO2 to rise appropriately",
         "Give more sugammadex",
-        "Give naloxone to start breathing",
-        "Increase the rate to clear sevoflurane"
+        "Increase respiratory rate",
+        "Give additional neuromuscular blocker"
       ],
       "answer": [
         0
@@ -12037,12 +12037,12 @@
       "id": "PHA-486",
       "set": 1,
       "type": "single",
-      "stem": "TOFR is 0.92, the patient follows commands, and tidal volumes are adequate; BP transiently rises during suctioning. What is the best extubation decision?",
+      "stem": "Quantitative TOFR is 0.92, the patient follows commands, maintains adequate ventilation and airway control, and oxygenation is acceptable. BP briefly rises during suctioning. What is the best extubation decision?",
       "options": [
-        "Extubate, since readiness criteria are met",
-        "Deepen anesthesia and extubate deep",
-        "Give more reversal before extubation",
-        "Treat BP with esmolol before deciding"
+        "Proceed with extubation if the overall airway plan and remaining criteria are satisfied",
+        "Delay solely because suctioning transiently increased BP",
+        "Give more reversal despite adequate quantitative recovery",
+        "Deepen anesthesia and extubate deep regardless of airway risk"
       ],
       "answer": [
         0
@@ -12061,12 +12061,12 @@
       "id": "PHA-487",
       "set": 1,
       "type": "single",
-      "stem": "For deep extubation in a child, which condition must be present?",
+      "stem": "A child is selected for deep extubation. Which condition is essential to reduce airway-reflex complications?",
       "options": [
-        "Adequate depth to avoid stage 2 and a patent airway",
-        "The child is fully awake with a cough",
-        "BIS above 90 with the child starting to move",
-        "Residual neuromuscular block to prevent coughing"
+        "Maintain an adequately deep plane with a patent airway and appropriate spontaneous ventilation, avoiding the excitatory stage",
+        "Wait until the child is fully awake and then call it deep extubation",
+        "Extubate during active stage-II coughing",
+        "Maintain residual neuromuscular blockade to prevent coughing"
       ],
       "answer": [
         0
@@ -12085,12 +12085,12 @@
       "id": "PHA-488",
       "set": 1,
       "type": "single",
-      "stem": "During stage 2 emergence, breath-holding and coughing occur around the ETT. What should be avoided?",
+      "stem": "During stage-II emergence, the patient develops breath-holding and coughing around the ETT. Which action should be avoided if not urgently required?",
       "options": [
-        "Suctioning or manipulating the airway at this moment",
-        "Maintaining 100% oxygen through the circuit",
-        "Continuing monitoring",
-        "Allowing spontaneous ventilation to return"
+        "Airway stimulation such as unnecessary suctioning/manipulation",
+        "Continued oxygen delivery",
+        "Physiologic monitoring",
+        "Allowing spontaneous ventilation while moving deliberately through the stage"
       ],
       "answer": [
         0
@@ -12109,12 +12109,12 @@
       "id": "PHA-489",
       "set": 1,
       "type": "single",
-      "stem": "Apnea recurs after naloxone initially reversed respiratory depression. What pharmacologic mismatch explains this?",
+      "stem": "Respiratory depression returns after an initially effective naloxone dose. Which pharmacologic mismatch is responsible?",
       "options": [
-        "The opioid outlasts naloxone's effect",
-        "Naloxone causes delayed respiratory depression",
-        "Volatile anesthetic rebound",
-        "Delayed neuromuscular recovery"
+        "A longer-acting opioid can outlast naloxone's shorter antagonistic effect",
+        "Naloxone accumulates and later suppresses ventilation",
+        "Volatile anesthetic rebound is caused by naloxone",
+        "Naloxone prolongs neuromuscular blockade"
       ],
       "answer": [
         0
@@ -12133,12 +12133,12 @@
       "id": "PHA-490",
       "set": 1,
       "type": "single",
-      "stem": "Fifteen minutes after neostigmine and glycopyrrolate, TOFR remains 0.6. What is the best next step?",
+      "stem": "Fifteen minutes after neostigmine/glycopyrrolate, quantitative TOFR remains 0.60 with inadequate respiratory strength. What is the safest next step?",
       "options": [
-        "Continue ventilation and monitoring, consider sugammadex",
-        "Extubate, since neostigmine was already given",
-        "Give more rocuronium",
-        "Give dantrolene for rigidity and weakness"
+        "Continue ventilatory support and quantitative monitoring while allowing further recovery and considering appropriate additional reversal based on the blocker used",
+        "Extubate because reversal was already administered",
+        "Give additional rocuronium",
+        "Treat with dantrolene"
       ],
       "answer": [
         0
@@ -12157,12 +12157,12 @@
       "id": "PHA-491",
       "set": 1,
       "type": "single",
-      "stem": "After extubation, SpO2 falls and the chest moves without any audible airflow. What is the most likely diagnosis?",
+      "stem": "After extubation, vigorous inspiratory effort produces paradoxical chest/abdominal movement but essentially no airflow. Which diagnosis is most likely?",
       "options": [
-        "Complete laryngospasm with paradoxical chest movement",
-        "Normal post-extubation breathing",
-        "Bronchospasm with wheeze",
-        "Pulmonary edema with crackles and pink secretions"
+        "Complete laryngospasm",
+        "Normal postextubation breathing",
+        "Bronchospasm with expiratory wheeze",
+        "Pulmonary edema"
       ],
       "answer": [
         0
@@ -12181,12 +12181,12 @@
       "id": "PHA-492",
       "set": 1,
       "type": "single",
-      "stem": "At emergence, temperature is 34.9 °C and TOFR is 0.7. What single factor can explain both delayed awakening and prolonged blockade?",
+      "stem": "At emergence, core temperature is 34.9 °C and quantitative neuromuscular recovery is unexpectedly slow. Which single factor can contribute to both delayed awakening and prolonged blockade?",
       "options": [
-        "Hypothermia slows drug metabolism",
-        "Hyperthermia speeds drug metabolism",
-        "Hypercarbia speeds recovery",
-        "Hyperoxia delays recovery"
+        "Hypothermia slows drug metabolism/clearance and neuromuscular recovery",
+        "Hyperthermia",
+        "Hyperoxia",
+        "Mild respiratory alkalosis"
       ],
       "answer": [
         0
@@ -12205,12 +12205,12 @@
       "id": "PHA-493",
       "set": 1,
       "type": "single",
-      "stem": "After prolonged propofol-remifentanil TIVA, emergence is slow. Which drug is more likely responsible and why?",
+      "stem": "After prolonged propofol-remifentanil TIVA, awakening is slower than expected even though remifentanil effect has dissipated rapidly. Which drug is more likely contributing?",
       "options": [
-        "Propofol due to prolonged CSHT",
-        "Remifentanil due to long CSHT",
-        "Rocuronium due to short CSHT",
-        "Sevoflurane due to accumulation"
+        "Propofol because prolonged infusion increases its context-sensitive decrement time relative to remifentanil",
+        "Remifentanil because its context-sensitive half-time rises markedly with infusion duration",
+        "Rocuronium because it is a hypnotic",
+        "Sevoflurane because it accumulated during TIVA"
       ],
       "answer": [
         0
@@ -12229,12 +12229,12 @@
       "id": "PHA-494",
       "set": 1,
       "type": "single",
-      "stem": "A PACU patient is agitated with a distended bladder and TOFR 0.8. Which problem should be addressed first?",
+      "stem": "A PACU patient is agitated with a distended bladder but also has weak ventilation and quantitative TOFR 0.80. Which problem has the highest immediate priority?",
       "options": [
-        "Residual neuromuscular blockade",
-        "Distended bladder as a noxious stimulus",
-        "Pain",
-        "Hypothermia"
+        "Residual neuromuscular blockade because it threatens ventilation and airway protection",
+        "Bladder distention because discomfort always outranks respiratory weakness",
+        "Pain regardless of respiratory status",
+        "Agitation itself without searching for a cause"
       ],
       "answer": [
         0
@@ -12253,12 +12253,12 @@
       "id": "PHA-495",
       "set": 1,
       "type": "single",
-      "stem": "The patient loses consciousness during induction and is repositioned before the airway is secured. Which risk increases most?",
+      "stem": "After induction and loss of airway tone, the patient is repositioned before the airway is secured and ventilation becomes difficult. Which hazard did the timing create?",
       "options": [
-        "Airway compromise and hemodynamic instability",
-        "Faster emergence",
-        "Lower awareness risk because depth is already adequate",
-        "Improved oxygenation"
+        "Loss of airway access/patency during a vulnerable transition before ventilation was secured",
+        "Reduced awareness risk",
+        "Improved oxygen reserve",
+        "Faster emergence"
       ],
       "answer": [
         0
@@ -12277,12 +12277,12 @@
       "id": "PHA-496",
       "set": 1,
       "type": "single",
-      "stem": "The vaporizer is empty and anesthesia is switched to TIVA. What must be confirmed immediately?",
+      "stem": "The vaporizer unexpectedly empties and the anesthetic is converted to TIVA. What must be confirmed immediately before relying on the infusion for hypnosis?",
       "options": [
-        "IV patency and pump programming",
-        "Surgical instrument count before continuing the case",
-        "Pump alarm volume",
-        "Remaining case duration"
+        "A patent IV with secure connections plus correct pump/drug programming and active delivery",
+        "Surgical instrument count",
+        "Only pump alarm volume",
+        "Only estimated remaining case duration"
       ],
       "answer": [
         0
@@ -12301,10 +12301,10 @@
       "id": "PHA-497",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 falls from 38 to 25 while BP remains stable and the waveform is normal. What is the most likely cause?",
+      "stem": "ETCO2 falls from 38 to 25 mmHg after respiratory rate is increased; BP and waveform morphology remain stable. Which cause best fits?",
       "options": [
-        "Increased minute ventilation",
-        "Pulmonary embolism with rising dead space",
+        "Increased alveolar minute ventilation",
+        "Pulmonary embolism",
         "Hypovolemia",
         "Malignant hyperthermia"
       ],
@@ -12325,12 +12325,12 @@
       "id": "PHA-498",
       "set": 1,
       "type": "single",
-      "stem": "After volatile is discontinued, BP falls and HR rises during emergence. What should be suspected?",
+      "stem": "As volatile anesthetic is reduced during emergence, BP falls while HR rises and vasopressor need increases rather than decreases. Which problem should be suspected?",
       "options": [
-        "Hypovolemia unmasked as anesthetic depth decreases",
-        "Normal emergence response",
-        "Malignant hyperthermia",
-        "Residual neuromuscular blockade causing weakness"
+        "Uncorrected hypovolemia/bleeding or another cause of impaired perfusion",
+        "Normal emergence physiology",
+        "Residual neuromuscular blockade",
+        "Excessive anesthetic depth as the only possible cause"
       ],
       "answer": [
         0
@@ -12349,12 +12349,12 @@
       "id": "PHA-499",
       "set": 1,
       "type": "single",
-      "stem": "After extubation, hypoxemia develops with diffuse wheezing. What is the most likely cause?",
+      "stem": "After extubation, hypoxemia develops with diffuse expiratory wheezing and prolonged expiration. Which diagnosis is most likely?",
       "options": [
-        "Bronchospasm after extubation",
-        "Laryngospasm without wheeze",
-        "Pulmonary embolism without wheeze",
-        "Hypothermia without wheeze"
+        "Bronchospasm",
+        "Complete laryngospasm",
+        "Pulmonary embolism",
+        "Hypothermia"
       ],
       "answer": [
         0
@@ -12373,11 +12373,11 @@
       "id": "PHA-500",
       "set": 1,
       "type": "single",
-      "stem": "At emergence, TOFR is 0.95 but the patient is somnolent with small tidal volumes. What is the most likely explanation?",
+      "stem": "At emergence, quantitative TOFR is 0.95 but the patient remains somnolent with small tidal volumes after substantial opioid and anesthetic exposure. Which explanation is most likely?",
       "options": [
-        "Residual anesthetic or opioid effect",
-        "Residual neuromuscular blockade",
-        "Malignant hyperthermia with hypercarbia",
+        "Residual sedative/anesthetic or opioid effect rather than residual neuromuscular blockade",
+        "Residual neuromuscular blockade despite adequate quantitative recovery",
+        "Malignant hyperthermia",
         "Hyperthermia"
       ],
       "answer": [
