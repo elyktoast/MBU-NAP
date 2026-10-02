@@ -94,6 +94,10 @@ test.describe('multi-course foundation', () => {
   test('Basic Principles Studio loads one unified 3500-question pool', async ({ page }) => {
     await page.goto('/basic-principles/exam-1/studio.html');
     await waitForStudioReady(page);
+    await expect(page.locator('#topicPickbox')).toBeVisible();
+    await expect(page.locator('#sourcePickbox')).toBeHidden();
+    await expect(page.getByRole('button', { name: 'Lecture Topics' })).not.toHaveClass(/out/);
+    await expect(page.locator('#topicChecks input')).toHaveCount(7);
     const state = await page.evaluate(() => ({
       count: ALL.length,
       uidCount: ALL_BY_UID.size,
