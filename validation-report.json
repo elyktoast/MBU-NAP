@@ -1,0 +1,63 @@
+{
+  "totalQuestions": 3500,
+  "uniqueUIDs": 3500,
+  "topics": [
+    {
+      "slug": "basic-airway",
+      "label": "Basic Airway Assessment & Management",
+      "questions": 500,
+      "figures": 62,
+      "figureRefs": 323,
+      "subtopics": 14
+    },
+    {
+      "slug": "monitoring",
+      "label": "Intraoperative Monitoring & Data Interpretation",
+      "questions": 500,
+      "figures": 68,
+      "figureRefs": 490,
+      "subtopics": 13
+    },
+    {
+      "slug": "preop-assessment",
+      "label": "Perioperative Assessment & Evaluation",
+      "questions": 500,
+      "figures": 52,
+      "figureRefs": 486,
+      "subtopics": 14
+    },
+    {
+      "slug": "phases-ga",
+      "label": "Phases of General Anesthesia",
+      "questions": 500,
+      "figures": 61,
+      "figureRefs": 461,
+      "subtopics": 17
+    },
+    {
+      "slug": "sedation-mac-tiva",
+      "label": "Sedation, MAC & TIVA",
+      "questions": 500,
+      "figures": 36,
+      "figureRefs": 362,
+      "subtopics": 13
+    },
+    {
+      "slug": "perioperative-pain",
+      "label": "Perioperative Pain Management",
+      "questions": 500,
+      "figures": 50,
+      "figureRefs": 500,
+      "subtopics": 14
+    },
+    {
+      "slug": "misc-na-practice",
+      "label": "Miscellaneous Topics in Nurse Anesthesia Practice",
+      "questions": 500,
+      "figures": 40,
+      "figureRefs": 500,
+      "subtopics": 14
+    }
+  ],
+  "errors": []
+}

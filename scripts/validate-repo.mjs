@@ -222,7 +222,7 @@ checkHazardNavigators();
 
 {
  const nav=read('equipment/assets/site-nav.js');
- if(!nav.includes("sessionStorage.removeItem('mbu_build_manifest_v1')")||!nav.includes("u.searchParams.set('_mbu_refresh',Date.now().toString())")||!nav.includes('new URL(home)')||!nav.includes('location.assign(u.href)'))fail('Site nav: SRNA Study Tool brand does not perform a cache-busting home navigation');
+ if(!nav.includes("sessionStorage.removeItem('mbu_build_manifest_v1')")||!nav.includes("u.searchParams.set('_mbu_refresh',Date.now().toString())")||!nav.includes('new URL(location.href)')||!nav.includes('location.assign(u.href)'))fail('Site nav: SRNA Study Tool brand does not perform a cache-busting current-page refresh');
 }
 function checkCanonicalSubmission(){
   const engine=read('equipment/assets/quiz-engine.js');
