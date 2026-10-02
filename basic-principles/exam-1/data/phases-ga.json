@@ -5230,7 +5230,7 @@
       "id": "PHA-209",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the TOF figure. Patient 1 has a TOFR of 0.65, Patient 2 has 0.95, and Patient 3 has two twitches. Which patient is ready for extubation from a neuromuscular standpoint?",
+      "stem": "At the end of surgery, Patient 1 has a TOFR of 0.65, Patient 2 has 0.95, and Patient 3 has only two twitches. Which patient is ready for extubation from a neuromuscular standpoint?",
       "options": [
         "Patient 2, with TOFR 0.95",
         "Patient 1, with TOFR 0.65",
@@ -5244,12 +5244,7 @@
       "citation": "",
       "topic": "Neuromuscular blockade, fluids, and time-dependent drugs",
       "sourceTitle": "Phases of General Anesthesia",
-      "image": {
-        "kind": "direct",
-        "url": "figures/phases-ga/fig-61.svg",
-        "id": 61,
-        "title": "Figure 61"
-      },
+      "image": null,
       "sourceMeta": {
         "sourcePackage": "Phases_of_GA",
         "originalFigure": 61
@@ -5259,7 +5254,7 @@
       "id": "PHA-210",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the TOF figure. Patient 1's fourth twitch is 13 mm high and the first is 20 mm. What is the TOFR, and what should you do?",
+      "stem": "At the end of surgery, T1 is 20 mm and T4 is 13 mm. What is the TOFR, and what should you do?",
       "options": [
         "0.65; give more reversal",
         "0.65; extubate now",
@@ -5273,12 +5268,7 @@
       "citation": "",
       "topic": "Neuromuscular blockade, fluids, and time-dependent drugs",
       "sourceTitle": "Phases of General Anesthesia",
-      "image": {
-        "kind": "direct",
-        "url": "figures/phases-ga/fig-61.svg",
-        "id": 61,
-        "title": "Figure 61"
-      },
+      "image": null,
       "sourceMeta": {
         "sourcePackage": "Phases_of_GA",
         "originalFigure": 61
