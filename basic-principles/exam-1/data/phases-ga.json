@@ -8,7 +8,7 @@
       "id": "PHA-001",
       "set": 1,
       "type": "single",
-      "stem": "Your lecture notes reduce the definition of general anesthesia to three core elements. Which set is it?",
+      "stem": "Which THREE elements define general anesthesia in the lecture's core formulation?",
       "options": [
         "Amnesia, unconsciousness, immobility",
         "Analgesia, amnesia, muscle relaxation",
@@ -32,7 +32,7 @@
       "id": "PHA-002",
       "set": 1,
       "type": "single",
-      "stem": "At skin incision, a patient with an adequate end-tidal sevoflurane does not move, but HR jumps from 72 to 118 and BP from 120/70 to 175/100. Which component of GA is inadequate?",
+      "stem": "At incision, the patient remains unconscious and immobile, yet HR and BP surge sharply. Which anesthetic component is inadequate?",
       "options": [
         "Analgesia",
         "Amnesia",
@@ -56,7 +56,7 @@
       "id": "PHA-003",
       "set": 1,
       "type": "single",
-      "stem": "During an inhalation induction, a child becomes agitated, flails, and has irregular breathing with disconjugate gaze. Which stage is this?",
+      "stem": "During inhalation induction, a child becomes agitated with irregular respirations and disconjugate gaze. Which stage is this?",
       "options": [
         "Stage 2, excitement",
         "Stage 1, analgesia",
@@ -80,7 +80,7 @@
       "id": "PHA-004",
       "set": 1,
       "type": "single",
-      "stem": "During a slow mask induction, a child develops irregular breathing, dilated pupils, and breath-holding. The resident wants to place an oral airway now. Why is this risky?",
+      "stem": "A child in stage 2 has irregular breathing and breath-holding. Why should airway instrumentation be minimized at this point?",
       "options": [
         "Stage 2 airway reflexes are hypersensitive, risking laryngospasm",
         "Stage 2 relaxes the jaw too much for an oral airway",
@@ -104,7 +104,7 @@
       "id": "PHA-005",
       "set": 1,
       "type": "multi",
-      "stem": "Which findings place a patient in stage 3, surgical anesthesia? (Select 2)",
+      "stem": "Which TWO findings best identify stage 3 surgical anesthesia? (Select 2)",
       "options": [
         "Loss of eyelash and swallowing reflexes",
         "Regular, depressed ventilation",
@@ -131,7 +131,7 @@
       "id": "PHA-006",
       "set": 1,
       "type": "single",
-      "stem": "During a long case, the vaporizer is accidentally left at 8% sevoflurane. The patient now has fixed, dilated pupils, BP 55/30, and no spontaneous effort. Which stage is this, and what is the action?",
+      "stem": "A patient has fixed dilated pupils, profound hypotension, and absent spontaneous ventilation during excessive volatile anesthesia. Which stage is present and what is the priority?",
       "options": [
         "Stage 4; stop the agent",
         "Stage 3 plane 4; continue as planned",
@@ -155,7 +155,7 @@
       "id": "PHA-007",
       "set": 1,
       "type": "single",
-      "stem": "The notes point out that a patient under GA can do what?",
+      "stem": "Which finding can still occur during general anesthesia and therefore does NOT exclude GA?",
       "options": [
         "Ventilate spontaneously",
         "Respond purposefully to pain",
@@ -179,7 +179,7 @@
       "id": "PHA-008",
       "set": 1,
       "type": "single",
-      "stem": "As a mask induction starts, the patient becomes confused, says the pain in her leg is gone, and later cannot recall the first minute. Reflexes are intact. Which stage was she in?",
+      "stem": "A patient becomes disoriented and amnestic with intact reflexes early in induction. Which stage is this?",
       "options": [
         "Stage 1",
         "Stage 2",
@@ -203,7 +203,7 @@
       "id": "PHA-009",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a T4 spinal for a cesarean, and another has GA with sevoflurane for a colectomy. Both are ready for incision. Which stage of anesthesia do both reflect for surgery?",
+      "stem": "Which stage represents the surgical-anesthesia target once conditions are adequate for incision?",
       "options": [
         "Stage 3, surgical anesthesia",
         "Stage 1, analgesia",
@@ -227,7 +227,7 @@
       "id": "PHA-010",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, a patient coughs violently and becomes hypertensive with the ETT still in. Which stage should you \"beware\" of here?",
+      "stem": "During emergence, violent coughing and hypertension develop while the ETT remains in place. Which stage is the patient likely traversing?",
       "options": [
         "Stage 2",
         "Stage 1",
@@ -251,7 +251,7 @@
       "id": "PHA-011",
       "set": 1,
       "type": "single",
-      "stem": "A patient under sevoflurane does not move or respond to a sternal rub or incision and needs controlled ventilation. Where does this fall on the ASA continuum?",
+      "stem": "A patient is unresponsive even to painful stimulation and requires controlled ventilation. Where does this fall on the ASA sedation continuum?",
       "options": [
         "General anesthesia, unarousable even to painful stimuli",
         "Deep sedation, responsive to repeated painful stimuli",
@@ -275,7 +275,7 @@
       "id": "PHA-012",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, a patient becomes hypertensive and tachycardic, breathes irregularly, and starts thrashing. Which stage is he passing through?",
+      "stem": "During emergence, irregular breathing, tachycardia, hypertension, and purposeless movement develop. Which stage is most likely?",
       "options": [
         "Stage 2, excitement",
         "Stage 1, analgesia",
@@ -299,7 +299,7 @@
       "id": "PHA-013",
       "set": 1,
       "type": "single",
-      "stem": "A student describes stage 3 as \"one level.\" How is stage 3 actually divided?",
+      "stem": "How is stage 3 surgical anesthesia subdivided?",
       "options": [
         "Four planes",
         "Into two planes",
@@ -323,7 +323,7 @@
       "id": "PHA-014",
       "set": 1,
       "type": "single",
-      "stem": "During stable stage 3 anesthesia with spontaneous ventilation through an LMA, ETCO2 rises from 40 to 52 while the breathing pattern stays smooth. What explains this?",
+      "stem": "During stage 3 with spontaneous ventilation, breathing remains regular but ETCO2 rises. What physiologic change best explains this?",
       "options": [
         "Ventilation in stage 3 is regular but depressed",
         "Ventilation in stage 3 is irregular with breath-holding",
@@ -347,7 +347,7 @@
       "id": "PHA-015",
       "set": 1,
       "type": "single",
-      "stem": "The surgeon completed a full H&P in clinic 3 weeks ago. In preop today, the patient mentions new chest tightness since last week. What must the anesthesia provider do?",
+      "stem": "A recent H&P exists, but the patient reports new chest tightness today. What is the anesthesia provider required to do?",
       "options": [
         "Review the H&P and determine what has changed",
         "Accept the surgeon's H&P without review",
@@ -371,7 +371,7 @@
       "id": "PHA-016",
       "set": 1,
       "type": "multi",
-      "stem": "Just before induction, you notice the consent is unsigned and the patient's BP is 210/115, new since yesterday. Which immediate pre-anesthesia items are failing? (Select 2)",
+      "stem": "Immediately before induction, consent is unsigned and BP is newly 210/115. Which TWO preanesthesia checks have failed? (Select 2)",
       "options": [
         "Consent signed and site marked",
         "Physiologic changes since the preop evaluation",
@@ -398,7 +398,7 @@
       "id": "PHA-017",
       "set": 1,
       "type": "multi",
-      "stem": "An intubated trauma patient on norepinephrine and receiving blood is brought straight from the ICU to the OR. Which handoff items are essential? (Select 4)",
+      "stem": "An intubated trauma patient arrives directly from the ICU on norepinephrine and blood products. Which FOUR handoff elements are essential? (Select 4)",
       "options": [
         "Report from the ICU nurse or team",
         "Active drips, fluids, and blood products",
@@ -427,7 +427,7 @@
       "id": "PHA-018",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old with CAD is about to be induced with propofol. How should you set the NIBP cycle during induction?",
+      "stem": "A 70-year-old with CAD is about to receive propofol. How frequently should NIBP cycle during induction?",
       "options": [
         "Every 2–3 minutes",
         "Every 5 minutes",
@@ -451,7 +451,7 @@
       "id": "PHA-019",
       "set": 1,
       "type": "single",
-      "stem": "Seconds after induction, a patient vomits. Your suction tubing is coiled on the machine and not connected. What standard was missed?",
+      "stem": "A patient vomits immediately after induction, but suction is not connected. Which preinduction preparation step was missed?",
       "options": [
         "Suction turned on, connected, and within reach",
         "Suction connected for RSI cases",
@@ -475,7 +475,7 @@
       "id": "PHA-020",
       "set": 1,
       "type": "single",
-      "stem": "You are setting up for a routine induction in a 65-year-old with hypertension. Which drugs should be drawn up and immediately available before induction?",
+      "stem": "Before routine induction in an older hypertensive patient, which TWO emergency drugs should be immediately available?",
       "options": [
         "A vasopressor and succinylcholine",
         "Reversal agents and antiemetics",
@@ -499,7 +499,7 @@
       "id": "PHA-021",
       "set": 1,
       "type": "multi",
-      "stem": "Before induction, which IV setup items must be confirmed? (Select 3)",
+      "stem": "Which THREE IV-related checks should be completed before induction? (Select 3)",
       "options": [
         "A patent IV with fluids flowing",
         "IV ports cleaned",
@@ -527,7 +527,7 @@
       "id": "PHA-022",
       "set": 1,
       "type": "single",
-      "stem": "After moving a patient onto the OR table, you notice the ECG cable is under her back and one arm is hanging off the board. What should you correct before induction?",
+      "stem": "After transfer to the OR table, one arm is unsupported and ECG cables are beneath the patient. What should be corrected before induction?",
       "options": [
         "Support both arms and remove wires from under the patient",
         "Tuck both arms at the sides for every case",
@@ -551,7 +551,7 @@
       "id": "PHA-023",
       "set": 1,
       "type": "single",
-      "stem": "During a case, the patient desaturates for 2 minutes before anyone notices, because the SpO2 alarm volume was turned to zero. Which immediate assessment item was missed?",
+      "stem": "A desaturation alarm is not heard because the SpO2 volume is muted. Which immediate preanesthesia safety check was missed?",
       "options": [
         "Alarms on and audible",
         "The ID band scanned",
@@ -575,7 +575,7 @@
       "id": "PHA-024",
       "set": 1,
       "type": "single",
-      "stem": "Two patients named John Smith are in preop. One has a penicillin allergy. Scanning the ID band confirms which items?",
+      "stem": "When two patients share the same name, which identifiers should be confirmed from the ID band before induction?",
       "options": [
         "Identity, date of birth, and allergies",
         "Identity, procedure, and surgical site",
@@ -599,7 +599,7 @@
       "id": "PHA-025",
       "set": 1,
       "type": "single",
-      "stem": "A patient's chart weight is 90 kg from 6 months ago, but she has since lost 25 kg. You plan rocuronium 1.2 mg/kg. What dose difference results from using the old weight?",
+      "stem": "A current weight of 65 kg is ignored and an old 90-kg weight is used for rocuronium 1.2 mg/kg. About how much extra drug would be given?",
       "options": [
         "108 mg versus 78 mg, about 30 mg too much",
         "90 mg versus 65 mg, about 25 mg too much",
@@ -623,7 +623,7 @@
       "id": "PHA-026",
       "set": 1,
       "type": "single",
-      "stem": "Special Scenario #1 describes transport from the ICU. Which element shows ventilation was maintained?",
+      "stem": "During transport of an intubated ICU patient, which finding best documents that ventilation was maintained?",
       "options": [
         "100% O2 via Ambu to ETT with adequate chest rise",
         "Nasal cannula at 4 L/min during the transport",
@@ -647,7 +647,7 @@
       "id": "PHA-027",
       "set": 1,
       "type": "single",
-      "stem": "You set up for a routine GA with an ETT. Which airway setup is required before induction?",
+      "stem": "For a routine GA with ETT, what airway equipment strategy should be prepared before induction?",
       "options": [
         "Primary device, backup airway, and video or emergency aids",
         "Primary device, with backup kept in the hallway",
@@ -671,7 +671,7 @@
       "id": "PHA-028",
       "set": 1,
       "type": "multi",
-      "stem": "After propofol 200 mg, BP falls to 60/30 and you have to draw up phenylephrine from scratch. Which preparation would have prevented the delay? (Select 2)",
+      "stem": "Propofol causes severe hypotension, but vasopressor medication is not ready. Which TWO setup steps were incomplete? (Select 2)",
       "options": [
         "Induction agents ready",
         "Emergency vasopressors ready",
@@ -698,7 +698,7 @@
       "id": "PHA-029",
       "set": 1,
       "type": "single",
-      "stem": "The oxygen pipeline fails just as you begin preoxygenation. Which pre-induction check should have confirmed you could still deliver oxygen?",
+      "stem": "The central oxygen supply fails during preoxygenation. Which backup should already have been confirmed?",
       "options": [
         "100% O2 with a backup cylinder",
         "Room-air ventilation as the backup",
@@ -722,7 +722,7 @@
       "id": "PHA-030",
       "set": 1,
       "type": "single",
-      "stem": "A patient arrives from the ED directly to the OR with a trauma. What must still be reviewed?",
+      "stem": "A trauma patient arrives directly from the ED to the OR. Which information still requires anesthesia review before proceeding?",
       "options": [
         "Chart, report, active drugs, airway, and vent settings",
         "The surgical consent",
@@ -746,7 +746,7 @@
       "id": "PHA-031",
       "set": 1,
       "type": "single",
-      "stem": "You are preparing monitors for an elective induction. Which setup is correct?",
+      "stem": "Which monitoring setup is most appropriate immediately before elective induction?",
       "options": [
         "ASA monitors, NIBP every 2–3 minutes, and O2 and gas analysis",
         "ASA monitors, NIBP every 5 minutes, and SpO2 until intubation",
@@ -770,7 +770,7 @@
       "id": "PHA-032",
       "set": 1,
       "type": "single",
-      "stem": "A patient is induced before the site is marked, and the surgeon begins prepping the wrong knee. Which risk does site confirmation prevent?",
+      "stem": "Induction occurs before surgical-site verification, creating risk for which preventable event?",
       "options": [
         "Wrong-site surgery",
         "Surgical site infection",
@@ -794,7 +794,7 @@
       "id": "PHA-033",
       "set": 1,
       "type": "single",
-      "stem": "A patient's BP has risen to 190/110 since the preop visit yesterday. What does the immediate assessment require?",
+      "stem": "BP is newly 190/110 compared with yesterday's preop evaluation. What should happen before induction?",
       "options": [
         "Recognize the change and reassess before induction",
         "Proceed because the preop visit was normal",
@@ -818,7 +818,7 @@
       "id": "PHA-034",
       "set": 1,
       "type": "single",
-      "stem": "During preoxygenation, the gas analyzer shows expired O2 rising. At what end-tidal O2 is denitrogenation nearly complete?",
+      "stem": "At approximately what end-tidal O2 concentration is denitrogenation considered nearly complete?",
       "options": [
         "About 90%",
         "About 70%",
@@ -842,7 +842,7 @@
       "id": "PHA-035",
       "set": 1,
       "type": "single",
-      "stem": "During preoxygenation, the EtO2 plateaus at 72% despite 3 minutes of tidal breathing. What is the MOST likely cause?",
+      "stem": "EtO2 plateaus at 72% despite several minutes of tidal preoxygenation. What is the most likely problem?",
       "options": [
         "Mask leak preventing a tight seal",
         "FRC that is too large",
@@ -866,7 +866,7 @@
       "id": "PHA-036",
       "set": 1,
       "type": "single",
-      "stem": "You are preoxygenating a patient for an RSI and want the highest possible FiO2 at the mask. What fresh gas flow should you use?",
+      "stem": "For maximal preoxygenation before RSI, what fresh-gas flow is most appropriate?",
       "options": [
         "Greater than 10 L/min",
         "4–6 L/min to limit rebreathing",
@@ -890,7 +890,7 @@
       "id": "PHA-037",
       "set": 1,
       "type": "single",
-      "stem": "A cooperative patient will be preoxygenated with normal breathing. Which technique is correct?",
+      "stem": "Which technique best describes standard tidal-volume preoxygenation in a cooperative adult?",
       "options": [
         "Tight mask with 100% O2 above 10 L/min for 3–5 minutes",
         "Loose mask with 50% O2 for 1 minute",
@@ -914,7 +914,7 @@
       "id": "PHA-038",
       "set": 1,
       "type": "multi",
-      "stem": "Which patients will desaturate faster during apnea because of a reduced FRC? (Select 4)",
+      "stem": "Which FOUR patients are expected to desaturate faster during apnea because of reduced FRC? (Select 4)",
       "options": [
         "A patient with a BMI of 45",
         "A woman at 38 weeks' gestation",
@@ -943,7 +943,7 @@
       "id": "PHA-039",
       "set": 1,
       "type": "single",
-      "stem": "Two patients are preoxygenated identically. One has a large FRC, the other a small one. How does the large FRC affect the process?",
+      "stem": "Compared with a small FRC, what tradeoff does a larger FRC create during preoxygenation?",
       "options": [
         "It takes longer to fill but delays desaturation",
         "It fills faster and shortens time to desaturation",
@@ -967,7 +967,7 @@
       "id": "PHA-040",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a BMI of 48 desaturates quickly during a prior induction. How should you position her this time to improve FRC?",
+      "stem": "A patient with BMI 48 previously desaturated rapidly during induction. Which position best improves FRC before the next attempt?",
       "options": [
         "Ramp her in reverse Trendelenburg",
         "Supine with the bed flat",
@@ -991,7 +991,7 @@
       "id": "PHA-041",
       "set": 1,
       "type": "single",
-      "stem": "A pregnant patient desaturates quickly during apnea. Which two factors explain this?",
+      "stem": "Why does late pregnancy shorten safe-apnea time?",
       "options": [
         "Decreased FRC and increased O2 consumption",
         "Increased FRC and decreased O2 consumption",
@@ -1015,7 +1015,7 @@
       "id": "PHA-042",
       "set": 1,
       "type": "single",
-      "stem": "A preoxygenated patient becomes apneic. At what approximate rate is oxygen consumed from the FRC reservoir?",
+      "stem": "In a preoxygenated apneic adult, approximately how rapidly is oxygen consumed from the FRC reservoir?",
       "options": [
         "About 250 mL/min",
         "About 100 mL/min",
@@ -1039,7 +1039,7 @@
       "id": "PHA-043",
       "set": 1,
       "type": "single",
-      "stem": "During a difficult intubation in an obese patient, a nasal cannula at 15 L/min is left on during apnea. SpO2 stays above 95% for 6 minutes. What is this technique doing?",
+      "stem": "A nasal cannula at 15 L/min is left on during difficult intubation and delays desaturation. What technique is being used?",
       "options": [
         "Delaying hypoxia during apnea",
         "Ventilating the patient and removing CO2",
@@ -1063,7 +1063,7 @@
       "id": "PHA-044",
       "set": 1,
       "type": "multi",
-      "stem": "Which patients should get apneic oxygenation during intubation? (Select 4)",
+      "stem": "Which FOUR patients should be prioritized for apneic oxygenation during intubation? (Select 4)",
       "options": [
         "A patient with a BMI of 48",
         "A patient with a predicted difficult airway",
@@ -1092,7 +1092,7 @@
       "id": "PHA-045",
       "set": 1,
       "type": "single",
-      "stem": "Which patient is MOST likely to benefit from apneic oxygenation because of intrinsic lung disease?",
+      "stem": "Which intrinsic lung disease most clearly shortens safe-apnea time and increases the value of apneic oxygenation?",
       "options": [
         "A patient with pulmonary fibrosis",
         "A patient with mild intermittent asthma",
@@ -1116,7 +1116,7 @@
       "id": "PHA-046",
       "set": 1,
       "type": "multi",
-      "stem": "Which patients will make a tight mask seal harder during preoxygenation? (Select 4)",
+      "stem": "Which FOUR factors make an effective mask seal during preoxygenation more difficult? (Select 4)",
       "options": [
         "An edentulous 80-year-old",
         "A man with a full beard",
@@ -1145,7 +1145,7 @@
       "id": "PHA-047",
       "set": 1,
       "type": "single",
-      "stem": "An obese patient's EtO2 stalls at 80% with tidal breathing on a tight mask. You add CPAP of 10 cmH2O, and EtO2 reaches 90%. What type of preoxygenation is this?",
+      "stem": "CPAP is added because standard tidal preoxygenation is inadequate in an obese patient. What type of preoxygenation is this?",
       "options": [
         "Active preoxygenation",
         "Passive preoxygenation",
@@ -1169,7 +1169,7 @@
       "id": "PHA-048",
       "set": 1,
       "type": "single",
-      "stem": "During preoxygenation, adding 5–10 cmH2O PEEP speeds EtO2 rise and lengthens safe apnea time in an obese patient. Why?",
+      "stem": "Why does adding 5–10 cmH2O PEEP during preoxygenation help an obese patient?",
       "options": [
         "PEEP increases FRC by recruiting collapsed alveoli",
         "PEEP increases oxygen consumption",
@@ -1193,7 +1193,7 @@
       "id": "PHA-049",
       "set": 1,
       "type": "single",
-      "stem": "You plan high-flow nasal oxygen for preoxygenation. What limitation should you expect?",
+      "stem": "What is an important limitation of high-flow nasal oxygen for preoxygenation?",
       "options": [
         "Uncertain FiO2 and EtO2 measurement, plus gastric insufflation",
         "It delivers a fixed, known FiO2 at all flows",
@@ -1217,7 +1217,7 @@
       "id": "PHA-050",
       "set": 1,
       "type": "single",
-      "stem": "A colleague suggests using nasal cannula alone instead of the circuit mask for preoxygenation. How do they compare?",
+      "stem": "How should nasal oxygen techniques be viewed relative to tight-mask circuit preoxygenation?",
       "options": [
         "Nasal options help but are less effective than a mask on the circuit",
         "Nasal options are superior to a mask on the circuit",
