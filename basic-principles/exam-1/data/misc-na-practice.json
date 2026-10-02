@@ -7378,10 +7378,10 @@
       "id": "MISC-301",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 rises steadily with tachycardia, but the CRNA insists it is just light anesthesia and never considers MH. Which error type fits?",
+      "stem": "ETCO2 rises steadily with tachycardia, but the CRNA repeatedly treats only 'light anesthesia' and never reopens the differential. Which cognitive error best fits?",
       "options": [
         "Cognitive tunnel vision",
-        "Artifact error from assuming monitor noise",
+        "Artifact error",
         "Avoidance error",
         "Handoff error"
       ],
@@ -7402,12 +7402,12 @@
       "id": "MISC-302",
       "set": 1,
       "type": "single",
-      "stem": "Which action MOST directly counters fixation during a crisis?",
+      "stem": "Which action most directly interrupts fixation during a deteriorating case?",
       "options": [
-        "Asking the team, \"What else could this be?\"",
-        "Repeating the same treatment at higher doses",
-        "Silencing alarms to think clearly",
-        "Increasing the dose of the current treatment"
+        "Ask the team, 'What else could this be?'",
+        "Repeat the same treatment at higher doses",
+        "Silence alarms to reduce distraction",
+        "Escalate the current therapy without reassessment"
       ],
       "answer": [
         0
@@ -7426,14 +7426,14 @@
       "id": "MISC-303",
       "set": 1,
       "type": "multi",
-      "stem": "Which tools help counter fixation errors? (Select 3)",
+      "stem": "Which three strategies can help counter fixation during crises? (Select 3)",
       "options": [
         "Cognitive aids",
-        "Teamwork and fresh eyes",
+        "Team input and fresh eyes",
         "Simulation training",
         "Increasing medication doses",
         "Ignoring new information",
-        "Avoiding breaks"
+        "Avoiding mental breaks"
       ],
       "answer": [
         0,
@@ -7454,10 +7454,10 @@
       "id": "MISC-304",
       "set": 1,
       "type": "single",
-      "stem": "During a difficult airway, the CRNA repeatedly tries direct laryngoscopy without changing approach. What CRM principle is violated?",
+      "stem": "During a difficult airway, the CRNA repeats direct laryngoscopy without changing technique despite repeated failure. Which CRM principle is most clearly violated?",
       "options": [
         "Behavioral flexibility",
-        "Communication through closed-loop orders",
+        "Closed-loop communication",
         "Evaluation",
         "Awareness"
       ],
@@ -7478,10 +7478,10 @@
       "id": "MISC-305",
       "set": 1,
       "type": "single",
-      "stem": "During an MH crisis, the CRNA assigns one person to mix dantrolene, another to cool, and another to draw labs. Which CRM principle is shown?",
+      "stem": "During MH, the leader assigns dantrolene mixing, active cooling, and laboratory tasks to different team members. Which CRM principle is most directly demonstrated?",
       "options": [
         "Dynamic prioritization with workload distribution",
-        "Fixation on a single diagnosis during the event",
+        "Fixation on one diagnosis",
         "Artifact error",
         "Avoidance error"
       ],
@@ -7502,12 +7502,12 @@
       "id": "MISC-306",
       "set": 1,
       "type": "single",
-      "stem": "During a crisis, the leader states clearly, \"I'm leading; Sam, you're on the airway.\" Which CRM principle is this?",
+      "stem": "During a crisis, the leader states, 'I'm leading; Sam, manage the airway.' Which CRM principle is being used?",
       "options": [
-        "Leadership and role designation",
-        "Situational awareness of available resources",
+        "Leadership with role designation",
+        "Situational awareness",
         "Evaluation",
-        "Avoidance error"
+        "Avoidance-error prevention"
       ],
       "answer": [
         0
@@ -7526,9 +7526,9 @@
       "id": "MISC-307",
       "set": 1,
       "type": "single",
-      "stem": "During a code, the team uses closed-loop orders like \"Epi 1 mg given.\" Which CRM principle is this?",
+      "stem": "During a code, orders are repeated back and confirmed after completion. Which CRM principle is most directly demonstrated?",
       "options": [
-        "Communication",
+        "Closed-loop communication",
         "Leadership",
         "Evaluation",
         "Awareness"
@@ -7550,12 +7550,12 @@
       "id": "MISC-308",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA anticipates bleeding in a redo cardiac case and has blood in the room. Which CRM principle is shown?",
+      "stem": "Before a redo cardiac case, the CRNA anticipates major bleeding and has blood and rapid-infusion capability ready. Which CRM principle is most directly demonstrated?",
       "options": [
         "Situational awareness and anticipation",
         "Behavioral flexibility",
         "Evaluation",
-        "Dynamic decision making, without anticipation"
+        "Decision making without anticipation"
       ],
       "answer": [
         0
@@ -7574,10 +7574,10 @@
       "id": "MISC-309",
       "set": 1,
       "type": "single",
-      "stem": "During a crisis, team members offer input on possible causes and the leader decides quickly. Which CRM principle is shown?",
+      "stem": "During a crisis, team members offer possible diagnoses and the leader quickly chooses a plan. Which CRM skill is most directly demonstrated?",
       "options": [
         "Dynamic decision making",
-        "Fixation error",
+        "Fixation",
         "Communication breakdown",
         "Leadership failure"
       ],
@@ -7598,12 +7598,12 @@
       "id": "MISC-310",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA calls for help early during unanticipated difficult ventilation. Which CRM element is this?",
+      "stem": "A CRNA calls for help early during unexpected difficult ventilation. Which CRM behavior is this?",
       "options": [
-        "Communication (call for help)",
-        "Evaluation (error wisdom)",
-        "Awareness (planning)",
-        "Behavioral flexibility in changing roles"
+        "Communication: call for help",
+        "Evaluation",
+        "Awareness only",
+        "Behavioral flexibility"
       ],
       "answer": [
         0
@@ -7622,11 +7622,11 @@
       "id": "MISC-311",
       "set": 1,
       "type": "single",
-      "stem": "After a crisis, the team holds a debrief to learn from what happened. Which CRM element is this?",
+      "stem": "After a crisis, the team debriefs to identify lessons for future events. Which CRM element is being used?",
       "options": [
-        "Evaluation (error wisdom)",
-        "Communication (call for help)",
-        "Awareness (attention)",
+        "Evaluation: error wisdom",
+        "Communication",
+        "Awareness",
         "Behavioral flexibility"
       ],
       "answer": [
@@ -7646,12 +7646,12 @@
       "id": "MISC-312",
       "set": 1,
       "type": "single",
-      "stem": "During a fire, the team uses a fire safety checklist. What is this?",
+      "stem": "During an OR fire, the team follows a fire-response checklist. What type of tool is this?",
       "options": [
-        "A cognitive aid",
-        "A fixation error",
-        "A communication breakdown",
-        "An avoidance error"
+        "Cognitive aid",
+        "Fixation error",
+        "Communication breakdown",
+        "Avoidance error"
       ],
       "answer": [
         0
@@ -7670,12 +7670,12 @@
       "id": "MISC-313",
       "set": 1,
       "type": "single",
-      "stem": "During a LAST event, the team follows an emergency manual checklist. What is the benefit?",
+      "stem": "During LAST, the team follows an emergency manual. Which benefit is most important?",
       "options": [
-        "Reducing omission of key steps",
+        "Preventing omission of critical management steps",
         "Replacing all clinical judgment",
-        "Allowing any team member to lead",
-        "Removing the need for training"
+        "Allowing anyone to lead without coordination",
+        "Eliminating the need for training"
       ],
       "answer": [
         0
@@ -7694,7 +7694,7 @@
       "id": "MISC-314",
       "set": 1,
       "type": "single",
-      "stem": "Which cognitive aid would be MOST useful during an unexpected cardiac arrest in the OR?",
+      "stem": "Which cognitive aid is most broadly useful during an unexpected intraoperative cardiac arrest?",
       "options": [
         "Stanford Emergency Manual",
         "WHO Surgical Safety Checklist",
@@ -7718,12 +7718,12 @@
       "id": "MISC-315",
       "set": 1,
       "type": "single",
-      "stem": "A retained sponge is discovered after closure. Which CRM principle breakdown is MOST associated?",
+      "stem": "A retained sponge is discovered after closure. Which CRM failure is most closely associated with this type of event?",
       "options": [
-        "Communication",
-        "Leadership",
+        "Communication failure",
+        "Leadership alone",
         "Dynamic decision making",
-        "Evaluation"
+        "Postevent evaluation"
       ],
       "answer": [
         0
@@ -7742,11 +7742,11 @@
       "id": "MISC-316",
       "set": 1,
       "type": "single",
-      "stem": "A wrong-sided nerve block is performed. Which CRM principle breakdown is MOST associated?",
+      "stem": "A wrong-sided nerve block is performed despite a team process intended to prevent it. Which CRM failure is most closely associated?",
       "options": [
-        "Communication",
-        "Leadership",
-        "Situational awareness",
+        "Communication failure",
+        "Leadership alone",
+        "Situational awareness alone",
         "Evaluation"
       ],
       "answer": [
@@ -7766,11 +7766,11 @@
       "id": "MISC-317",
       "set": 1,
       "type": "single",
-      "stem": "A postoperative infection increase is traced to poor team leadership and unclear roles. Which CRM principle broke down?",
+      "stem": "A rise in postoperative infections is traced to unclear roles and weak team direction. Which CRM domain is most directly deficient?",
       "options": [
         "Leadership and team management",
-        "Communication through closed-loop orders",
-        "Awareness",
+        "Closed-loop communication only",
+        "Awareness only",
         "Dynamic decision making"
       ],
       "answer": [
@@ -7790,10 +7790,10 @@
       "id": "MISC-318",
       "set": 1,
       "type": "single",
-      "stem": "During a crisis, the team lacks awareness of available equipment. Which CRM principle is weak?",
+      "stem": "During a crisis, the team does not know what rescue equipment is available or where it is located. Which CRM domain is weakest?",
       "options": [
-        "Situational awareness including resources",
-        "Leadership with clear role designation and direction",
+        "Situational awareness of available resources",
+        "Leadership",
         "Communication",
         "Evaluation"
       ],
@@ -7814,10 +7814,10 @@
       "id": "MISC-319",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA says, \"I'm going to treat this as anaphylaxis until proven otherwise,\" despite uncertainty. What does this reflect?",
+      "stem": "A CRNA says, 'I'm treating this as anaphylaxis until we prove otherwise,' while continuing to reassess alternatives. What cognitive behavior does this reflect?",
       "options": [
-        "Avoiding fixation by keeping serious diagnoses open",
-        "Tunnel vision on a single diagnosis during the crisis",
+        "Avoiding premature closure on the differential",
+        "Tunnel vision",
         "Artifact error",
         "Avoidance error"
       ],
@@ -7838,10 +7838,10 @@
       "id": "MISC-320",
       "set": 1,
       "type": "single",
-      "stem": "During a crisis, the team stops briefly to reassess. What strategy does this reflect?",
+      "stem": "During a crisis, the team briefly pauses to reassess the working diagnosis and response to treatment. What strategy is this?",
       "options": [
-        "A mental break to reduce fixation",
-        "Delaying care unnecessarily during the event",
+        "A mental break that can reduce fixation",
+        "Unnecessary delay",
         "Avoidance error",
         "Artifact error"
       ],
@@ -7862,12 +7862,12 @@
       "id": "MISC-321",
       "set": 1,
       "type": "single",
-      "stem": "During simulation, a team practices hemorrhage response. Which benefit is emphasized?",
+      "stem": "A team repeatedly practices hemorrhage management in simulation. Which nontechnical benefit is emphasized?",
       "options": [
-        "Reducing fixation and improving crisis response",
-        "Replacing real clinical experience with simulation",
-        "Faster technical skills",
-        "Removing the need for cognitive aids"
+        "Reduced fixation and improved crisis response",
+        "Replacement of real clinical experience",
+        "Faster technical skills only",
+        "Elimination of cognitive aids"
       ],
       "answer": [
         0
@@ -7886,12 +7886,12 @@
       "id": "MISC-322",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA fixates on a kinked tube during desaturation and misses a pneumothorax. What mitigation would help?",
+      "stem": "During desaturation, a CRNA fixates on a kinked tube and misses pneumothorax. Which intervention would best broaden the differential?",
       "options": [
-        "Use a cognitive aid or ask the team for alternatives",
-        "Continue troubleshooting the tube alone before calling help",
+        "Use a cognitive aid or ask the team for alternative causes",
+        "Continue troubleshooting the tube alone",
         "Increase FiO2 and wait",
-        "Increase FiO2 and keep checking the tube"
+        "Repeat the same tube check"
       ],
       "answer": [
         0
@@ -7910,12 +7910,12 @@
       "id": "MISC-323",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA refuses help and insists on handling a crisis alone. Which CRM principle is violated?",
+      "stem": "A CRNA refuses to call for help and insists on handling a worsening crisis alone. Which CRM principle is most clearly violated?",
       "options": [
-        "Communication (call for help)",
+        "Communication: call for help",
         "Evaluation",
         "Behavioral flexibility",
-        "Awareness through anticipation"
+        "Awareness"
       ],
       "answer": [
         0
@@ -7934,12 +7934,12 @@
       "id": "MISC-324",
       "set": 1,
       "type": "single",
-      "stem": "During a crisis, the CRNA shifts from provider to leader role when a colleague arrives. Which CRM principle is shown?",
+      "stem": "When a colleague arrives during a crisis, the CRNA shifts from hands-on provider to team leader because that role is now needed. Which CRM principle is shown?",
       "options": [
-        "Behavioral flexibility (being in the needed role)",
-        "Evaluation of the event through error wisdom",
-        "Communication",
-        "Awareness"
+        "Behavioral flexibility",
+        "Evaluation",
+        "Communication only",
+        "Awareness only"
       ],
       "answer": [
         0
@@ -7958,12 +7958,12 @@
       "id": "MISC-325",
       "set": 1,
       "type": "single",
-      "stem": "A team reviews an emergency manual before a high-risk case. Which CRM principle is shown?",
+      "stem": "Before a high-risk case, the team reviews likely emergencies and relevant cognitive aids. Which CRM principle is most directly demonstrated?",
       "options": [
-        "Awareness: anticipation and planning",
-        "Evaluation: error wisdom",
-        "Communication: call for help",
-        "Behavioral flexibility in taking on new roles"
+        "Awareness through anticipation and planning",
+        "Evaluation",
+        "Communication only",
+        "Behavioral flexibility"
       ],
       "answer": [
         0
@@ -7982,7 +7982,7 @@
       "id": "MISC-326",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA refuses to consider a cardiac cause of hypotension because the patient is young. Which fixation error is this?",
+      "stem": "A CRNA dismisses a cardiac cause of hypotension solely because the patient is young. Which fixation subtype is this?",
       "options": [
         "Avoidance error",
         "Artifact error",
@@ -8006,7 +8006,7 @@
       "id": "MISC-327",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA sees a sudden ECG change and assumes cautery artifact without checking the pulse. Which fixation error is this?",
+      "stem": "A sudden ECG change is assumed to be cautery artifact without checking the pulse or patient. Which fixation subtype is this?",
       "options": [
         "Artifact error",
         "Avoidance error",
@@ -8030,11 +8030,11 @@
       "id": "MISC-328",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA notices a slow ETCO2 rise, anticipates MH, calls for help, and starts treatment early. What made this possible?",
+      "stem": "A slow ETCO2 rise is recognized early as possible MH, prompting help and treatment before severe deterioration. What enabled this response?",
       "options": [
-        "Non-technical skills that recognize and act on crises early",
-        "Manual intubation skills",
-        "Equipment maintenance",
+        "Nontechnical skills that support early recognition and action",
+        "Manual airway skill",
+        "Equipment maintenance alone",
         "Pharmacology knowledge alone"
       ],
       "answer": [
@@ -8054,7 +8054,7 @@
       "id": "MISC-329",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA on a 24-hour shift uses caffeine and scheduled breaks to stay sharp overnight. Which non-technical skill is this?",
+      "stem": "A CRNA uses scheduled breaks and other strategies during a long shift to reduce performance decline. Which nontechnical skill is this?",
       "options": [
         "Management of stress and fatigue",
         "Situational awareness",
@@ -8078,12 +8078,12 @@
       "id": "MISC-330",
       "set": 1,
       "type": "single",
-      "stem": "During a crisis, the CRNA remains calm and delegates tasks. Which NTS is demonstrated?",
+      "stem": "During a crisis, the CRNA remains composed, assigns tasks, and maintains team direction. Which nontechnical skills are most directly demonstrated?",
       "options": [
         "Leadership and stress management",
-        "Technical skill, such as fast intubation",
-        "Fixation error",
-        "Avoidance error"
+        "Technical airway skill",
+        "Fixation",
+        "Avoidance"
       ],
       "answer": [
         0
@@ -8102,12 +8102,12 @@
       "id": "MISC-331",
       "set": 1,
       "type": "single",
-      "stem": "A team discusses possible complications before a complex case. Which NTS is this?",
+      "stem": "Before a complex case, the CRNA and team discuss likely complications and contingency plans. Which nontechnical skills are being used?",
       "options": [
         "Situational awareness and teamwork",
-        "Technical skill, such as line placement",
-        "Fixation error",
-        "Artifact error"
+        "Technical line placement",
+        "Fixation",
+        "Artifact recognition"
       ],
       "answer": [
         0
@@ -8126,12 +8126,12 @@
       "id": "MISC-332",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA quickly chooses to convert to GA after failed sedation. Which NTS is this?",
+      "stem": "Sedation is failing, and the CRNA promptly decides to convert to general anesthesia. Which nontechnical skill is most directly demonstrated?",
       "options": [
         "Decision making",
-        "Artifact error",
-        "Avoidance error",
-        "Fatigue"
+        "Artifact recognition",
+        "Avoidance",
+        "Fatigue management"
       ],
       "answer": [
         0
@@ -8150,12 +8150,12 @@
       "id": "MISC-333",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA and surgeon discuss a plan to manage bleeding. Which NTS is this?",
+      "stem": "The CRNA and surgeon agree in advance on how major bleeding will be managed. Which nontechnical skill is most directly demonstrated?",
       "options": [
         "Teamwork",
         "Fixation",
-        "Artifact error",
-        "Avoidance error"
+        "Artifact recognition",
+        "Avoidance"
       ],
       "answer": [
         0
@@ -8174,12 +8174,12 @@
       "id": "MISC-334",
       "set": 1,
       "type": "single",
-      "stem": "Which cognitive aid is MOST useful during an unanticipated difficult airway?",
+      "stem": "Which cognitive aid is most appropriate during an unanticipated difficult airway?",
       "options": [
         "Difficult airway algorithm",
         "WHO Surgical Safety Checklist",
         "MH cart card",
-        "Stanford manual hemorrhage page"
+        "Hemorrhage page from an emergency manual"
       ],
       "answer": [
         0
@@ -8198,12 +8198,12 @@
       "id": "MISC-335",
       "set": 1,
       "type": "single",
-      "stem": "A surgeon begins prepping the wrong knee, and the team catches it during a check before incision. Which cognitive aid MOST prevented this?",
+      "stem": "A wrong-knee preparation is caught before incision during the formal safety check. Which cognitive aid most directly contributed?",
       "options": [
-        "The WHO Surgical Safety Checklist",
-        "The Stanford Emergency Manual",
-        "The MH cognitive aid",
-        "The ACLS algorithm"
+        "WHO Surgical Safety Checklist",
+        "Stanford Emergency Manual",
+        "MH checklist",
+        "ACLS algorithm"
       ],
       "answer": [
         0
@@ -8222,11 +8222,11 @@
       "id": "MISC-336",
       "set": 1,
       "type": "single",
-      "stem": "During MH, why is an MH cart with instructions helpful?",
+      "stem": "Why is an MH cart with stepwise instructions valuable during a rare crisis?",
       "options": [
-        "It provides step-by-step management in a crisis",
-        "It replaces the need to give dantrolene quickly",
-        "It replaces the need for dantrolene dosing knowledge",
+        "It supports rapid, standardized management and reduces omitted steps",
+        "It replaces the need for dantrolene",
+        "It eliminates the need to know dosing",
         "It prevents MH from occurring"
       ],
       "answer": [
@@ -8246,12 +8246,12 @@
       "id": "MISC-337",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA uses a checklist during a rare event to avoid missing steps. Which benefit does this show?",
+      "stem": "A checklist is used during a rare event specifically so critical steps are not forgotten. Which benefit is being demonstrated?",
       "options": [
         "Reduced omission of key steps",
         "Increased cognitive load",
-        "More fixation errors",
-        "Slower response during the crisis"
+        "More fixation",
+        "Slower response"
       ],
       "answer": [
         0
@@ -8270,10 +8270,10 @@
       "id": "MISC-338",
       "set": 1,
       "type": "single",
-      "stem": "A department adopts checklists for LAST, MH, and hemorrhage. What benefit should it expect?",
+      "stem": "A department adopts standardized checklists for LAST, MH, and hemorrhage. Which outcome is most consistent with the purpose of cognitive aids?",
       "options": [
-        "More standardized practice and better outcomes",
-        "Longer crisis responses",
+        "More standardized crisis management with fewer omissions",
+        "Longer crisis response",
         "More errors",
         "Less team communication"
       ],
@@ -8294,12 +8294,12 @@
       "id": "MISC-339",
       "set": 1,
       "type": "multi",
-      "stem": "During a crisis, the CRNA asks the circulator to read the emergency manual aloud. Which CRM elements are shown? (Select 3)",
+      "stem": "During a crisis, the circulator reads the emergency manual while the leader assigns tasks and reprioritizes work. Which three CRM elements are shown? (Select 3)",
       "options": [
         "Communication with cognitive aids",
-        "Distribution of workload",
+        "Workload distribution",
         "Dynamic prioritization",
-        "Fixation error",
+        "Fixation",
         "Avoidance error",
         "Artifact error"
       ],
@@ -8322,12 +8322,12 @@
       "id": "MISC-340",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA assumes hypotension is from positioning and ignores rising airway pressures. What is the risk?",
+      "stem": "A CRNA attributes hypotension to positioning and ignores rising airway pressures. What is the main cognitive risk?",
       "options": [
-        "Missing an alternative diagnosis due to fixation",
-        "Faster diagnosis of the true cause",
-        "Improved patient outcomes",
-        "Reduced need for teamwork and cognitive aids"
+        "Missing an alternative diagnosis because of fixation",
+        "Faster recognition of the correct cause",
+        "Improved outcomes",
+        "Reduced need for teamwork"
       ],
       "answer": [
         0
@@ -8346,10 +8346,10 @@
       "id": "MISC-341",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA calls a \"time-out\" in a crisis to reassess the situation. What does this support?",
+      "stem": "During a crisis, the team deliberately pauses to reassess the diagnosis and response to treatment. What does this support?",
       "options": [
-        "Evaluation and prevention of fixation",
-        "Delaying care unnecessarily during the crisis",
+        "Evaluation and reduction of fixation",
+        "Unnecessary delay",
         "Avoidance error",
         "Artifact error"
       ],
@@ -8370,12 +8370,12 @@
       "id": "MISC-342",
       "set": 1,
       "type": "single",
-      "stem": "Case A: In the MRI suite, a sedated child desaturates. The capnograph line was left in the OR, the airway cart was not restocked, and the CRNA was new to the suite. Which model BEST explains how this reached the patient?",
+      "stem": "In the MRI suite, a sedated child desaturates after several safeguards fail: capnography is unavailable, the airway cart is incomplete, and the provider is unfamiliar with the suite. Which model best explains the event?",
       "options": [
-        "Swiss cheese model, with several failed layers aligning",
-        "A single provider error by the new CRNA",
-        "A diagnostic error from misread monitors",
-        "An unavoidable complication of pediatric sedation in MRI"
+        "Swiss cheese model with aligned failures across multiple layers",
+        "A single-provider error",
+        "A diagnostic error only",
+        "An unavoidable pediatric complication"
       ],
       "answer": [
         0
@@ -8394,12 +8394,12 @@
       "id": "MISC-343",
       "set": 1,
       "type": "single",
-      "stem": "Case A: In the MRI suite, a sedated child desaturates. The capnograph line was left in the OR, the airway cart was not restocked, and the CRNA was new to the suite. Which APSF priority does this event MOST represent?",
+      "stem": "The same MRI sedation event occurs in a remote location with limited resources. Which APSF priority is most directly implicated?",
       "options": [
-        "Safety in non-operating room locations",
-        "Burnout among anesthesia staff",
-        "Perioperative delirium and brain health",
-        "Hospital-acquired infections"
+        "Safety in non-operating-room locations",
+        "Burnout",
+        "Delirium",
+        "Infection control"
       ],
       "answer": [
         0
@@ -8418,9 +8418,9 @@
       "id": "MISC-344",
       "set": 1,
       "type": "single",
-      "stem": "Case A: In the MRI suite, a sedated child desaturates. The capnograph line was left in the OR, the airway cart was not restocked, and the CRNA was new to the suite. Which error type is the missing capnography line?",
+      "stem": "In the MRI event, the missing capnography setup reflects which error category?",
       "options": [
-        "Preventative failure",
+        "Preventive failure",
         "Diagnostic error",
         "Treatment error",
         "Communication breakdown"
@@ -8442,12 +8442,12 @@
       "id": "MISC-345",
       "set": 1,
       "type": "single",
-      "stem": "Case A: In the MRI suite, a sedated child desaturates. The capnograph line was left in the OR, the airway cart was not restocked, and the CRNA was new to the suite. Which equity priority applies to pediatric patients like this child?",
+      "stem": "Why does the pediatric patient's age add an equity concern in the MRI event?",
       "options": [
-        "Higher respiratory risk and less access to pediatric specialists",
-        "Lower perioperative risk than adults",
-        "Greater access to pediatric anesthesia specialists",
-        "Fewer respiratory infections than adults and older teens"
+        "Children may have higher respiratory risk and less access to pediatric specialists",
+        "Children have lower perioperative risk",
+        "Children have greater specialist access",
+        "Children have fewer respiratory infections"
       ],
       "answer": [
         0
@@ -8466,12 +8466,12 @@
       "id": "MISC-346",
       "set": 1,
       "type": "single",
-      "stem": "Case A: After the event, the department adds a NORA equipment checklist. What is this?",
+      "stem": "After the MRI event, the department adds a standardized NORA equipment checklist. How should this intervention be classified?",
       "options": [
-        "A cognitive aid and systems QI change",
-        "A punitive response to the provider",
+        "A cognitive aid and systems-level quality-improvement change",
+        "A punitive response",
         "An avoidance error",
-        "A research protocol for the NORA suite"
+        "A research protocol"
       ],
       "answer": [
         0
@@ -8490,12 +8490,12 @@
       "id": "MISC-347",
       "set": 1,
       "type": "single",
-      "stem": "Case A: In the MRI suite, a sedated child desaturates. The capnograph line was left in the OR, the airway cart was not restocked, and the CRNA was new to the suite. What must happen regarding the event and the family?",
+      "stem": "After the MRI event, what should the team do regarding disclosure to the family?",
       "options": [
-        "Disclose the event honestly",
-        "Withhold details to avoid liability",
-        "Disclose if the child is harmed permanently",
-        "Let the surgeon decide on disclosure"
+        "Disclose the event honestly according to policy",
+        "Withhold details to reduce liability",
+        "Disclose only if permanent harm occurred",
+        "Leave disclosure solely to the surgeon"
       ],
       "answer": [
         0
@@ -8514,12 +8514,12 @@
       "id": "MISC-348",
       "set": 1,
       "type": "single",
-      "stem": "Case B: A CRNA works a 20-hour shift, then misreads a syringe label and gives the wrong drug. What contributing factor is MOST evident?",
+      "stem": "A CRNA works a 20-hour shift, then misreads a syringe label and gives the wrong drug. Which contributing factor is most evident?",
       "options": [
-        "Fatigue impairing vigilance and decision-making",
-        "Appropriate caution under pressure",
-        "Improved performance from years of experience",
-        "Cognitive aid overuse"
+        "Fatigue impairing vigilance and decision making",
+        "Appropriate caution",
+        "Improved performance from experience",
+        "Cognitive-aid overuse"
       ],
       "answer": [
         0
@@ -8538,11 +8538,11 @@
       "id": "MISC-349",
       "set": 1,
       "type": "single",
-      "stem": "Case B: A CRNA works a 20-hour shift, then misreads a syringe label and gives the wrong drug. Which error type is the wrong-drug administration?",
+      "stem": "In the same case, how should the wrong-drug administration itself be classified?",
       "options": [
         "Treatment error",
         "Diagnostic error",
-        "Preventative failure",
+        "Preventive failure",
         "Communication breakdown"
       ],
       "answer": [
@@ -8562,7 +8562,7 @@
       "id": "MISC-350",
       "set": 1,
       "type": "single",
-      "stem": "Case B: A CRNA works a 20-hour shift, then misreads a syringe label and gives the wrong drug. Which APSF priority applies?",
+      "stem": "The fatigue-related wrong-drug event most directly falls under which APSF safety priority?",
       "options": [
         "Medication safety",
         "Delirium and brain health",
