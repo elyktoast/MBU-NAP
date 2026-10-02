@@ -2482,12 +2482,12 @@
       "id": "MISC-101",
       "set": 1,
       "type": "single",
-      "stem": "A researcher wants to enroll ICU patients who are sedated and cannot consent. What consideration applies?",
+      "stem": "A researcher wants to enroll sedated ICU patients who cannot provide consent. Which ethical issue is most important?",
       "options": [
-        "They are vulnerable and need special protections",
-        "They can be enrolled without consent",
-        "They can be enrolled with deferred consent in any study",
-        "Consent is not needed for minimal risk studies"
+        "They are a vulnerable population requiring added protections",
+        "They may be enrolled without consent",
+        "Deferred consent is acceptable in any study",
+        "Consent is unnecessary for all minimal-risk studies"
       ],
       "answer": [
         0
@@ -2506,12 +2506,12 @@
       "id": "MISC-102",
       "set": 1,
       "type": "single",
-      "stem": "A research consent form describes the study drug but omits possible side effects. What is missing?",
+      "stem": "A research consent form explains the study drug but omits its possible harms. Which required element is missing?",
       "options": [
         "Anticipated risks and benefits",
-        "The researchers' salaries",
-        "The hospital's market share",
-        "The drug's price"
+        "Researcher salaries",
+        "Hospital market share",
+        "Drug price"
       ],
       "answer": [
         0
@@ -2530,12 +2530,12 @@
       "id": "MISC-103",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA collects outcome data on disparities with IRB approval and de-identified data. Which ethical principle is protected?",
+      "stem": "A CRNA studies disparities using IRB approval and de-identified data. Which participant protection is most directly supported?",
       "options": [
         "Confidentiality and privacy",
-        "Paternalism in how results are reported",
+        "Paternalism",
         "Coercion",
-        "Beneficence"
+        "Profitability"
       ],
       "answer": [
         0
@@ -2554,12 +2554,12 @@
       "id": "MISC-104",
       "set": 1,
       "type": "multi",
-      "stem": "Which are APSF perioperative safety priorities (2021)? (Select 2)",
+      "stem": "Which two topics are among the APSF perioperative safety priorities cited in the lecture? (Select 2)",
       "options": [
-        "Safety in non-operating room locations",
+        "Safety in non-operating-room locations",
         "Perioperative delirium and brain health",
-        "Reducing turnover time between cases",
-        "Expanding anesthesia workforce training programs",
+        "Reducing turnover time",
+        "Expanding workforce training",
         "Increasing OR turnover speed",
         "Surgeon preference compliance"
       ],
@@ -2581,7 +2581,7 @@
       "id": "MISC-105",
       "set": 1,
       "type": "single",
-      "stem": "A patient's allergy was not passed on during an OR-to-PACU handoff, and she received the allergen. Which APSF priority addresses this?",
+      "stem": "A serious allergy is lost during OR-to-PACU handoff and the patient later receives the allergen. Which APSF safety priority most directly targets this failure?",
       "options": [
         "Communication and transitions of care",
         "Medication safety alone",
@@ -2605,12 +2605,12 @@
       "id": "MISC-106",
       "set": 1,
       "type": "single",
-      "stem": "During a stable 4-hour case, a CRNA notices a subtle 6 mmHg ETCO2 rise and investigates. Which concept does this illustrate?",
+      "stem": "During a stable case, a CRNA notices a subtle 6 mmHg rise in ETCO2 and investigates before an alarm occurs. Which human-performance concept is being demonstrated?",
       "options": [
-        "Vigilance: readiness to detect and respond to small, random changes",
-        "Constant awareness of the surgeon's timeline",
-        "Monitoring when alarms sound",
-        "Recording vitals every five minutes"
+        "Vigilance",
+        "Surgeon-timeline awareness",
+        "Alarm dependence",
+        "Documentation compliance"
       ],
       "answer": [
         0
@@ -2629,12 +2629,12 @@
       "id": "MISC-107",
       "set": 1,
       "type": "single",
-      "stem": "During a case, a CRNA recalls the patient's preop BP, notes the current trend, and predicts hypotension when the surgeon clamps the aorta. What does this describe?",
+      "stem": "A CRNA integrates the patient's prior BP, the current trend, and the expected effect of aortic clamping. Which concept best describes this mental model?",
       "options": [
         "Situational awareness across past, present, and future",
-        "Vigilance for random events alone",
-        "A fixation error",
-        "A sterile OR period"
+        "Vigilance for random events only",
+        "Fixation error",
+        "Sterile OR behavior"
       ],
       "answer": [
         0
@@ -2653,10 +2653,10 @@
       "id": "MISC-108",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA reviews the patient's history of difficult airway, watches current monitors, and prepares for possible bronchospasm. Which concept is this?",
+      "stem": "A CRNA recalls prior difficult airway history, monitors the current respiratory pattern, and prepares for possible bronchospasm. Which concept is most directly illustrated?",
       "options": [
         "Situational awareness",
-        "Fixation error on one airway problem",
+        "Fixation error",
         "Automation bias",
         "Alarm fatigue"
       ],
@@ -2677,11 +2677,11 @@
       "id": "MISC-109",
       "set": 1,
       "type": "single",
-      "stem": "A provider relies on automated alarms and stops actively scanning the monitors during a long case. What risk does automation pose?",
+      "stem": "A provider relies heavily on automated alarms and stops actively scanning monitors. Which automation-related risk has developed?",
       "options": [
-        "A passive role with fatigue and less vigilance",
-        "Better vigilance through reduced workload",
-        "Faster recognition from louder alarms",
+        "A passive monitoring role with reduced vigilance",
+        "Improved vigilance from lower workload",
+        "Faster recognition because alarms are louder",
         "More active monitoring"
       ],
       "answer": [
@@ -2701,12 +2701,12 @@
       "id": "MISC-110",
       "set": 1,
       "type": "single",
-      "stem": "Loud music in the OR masks the SpO2 tone, and desaturation goes unnoticed. What type of distraction is this?",
+      "stem": "Loud OR music masks the pulse-oximeter tone and delays recognition of desaturation. Which distraction type is primarily responsible?",
       "options": [
-        "Auditory disruption",
+        "Auditory distraction",
         "Visual distraction",
         "Cognitive load",
-        "Personal device use"
+        "Personal-device use"
       ],
       "answer": [
         0
@@ -2725,10 +2725,10 @@
       "id": "MISC-111",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA looks at a phone during maintenance. Which type of distraction is this?",
+      "stem": "A CRNA looks at a phone during maintenance and misses a monitor change. Which distraction type is most direct?",
       "options": [
         "Visual distraction",
-        "Auditory disruption",
+        "Auditory distraction",
         "Cognitive load",
         "Alarm fatigue"
       ],
@@ -2749,12 +2749,12 @@
       "id": "MISC-112",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA is preparing drugs for the next case while monitoring the current patient. Which type of distraction is this?",
+      "stem": "A CRNA prepares medications for the next case while simultaneously monitoring the current patient. Which distraction mechanism is most relevant?",
       "options": [
-        "Cognitive load",
-        "Visual distraction",
-        "Auditory disruption",
-        "Fatigue"
+        "Increased cognitive load",
+        "Visual distraction only",
+        "Auditory distraction only",
+        "Fatigue alone"
       ],
       "answer": [
         0
@@ -2773,14 +2773,14 @@
       "id": "MISC-113",
       "set": 1,
       "type": "multi",
-      "stem": "Which strategies reduce distractions? (Select 4)",
+      "stem": "Which four strategies reduce distraction during critical perioperative periods? (Select 4)",
       "options": [
         "Minimize noise during induction and emergence",
-        "Follow alarm safety protocols",
+        "Follow alarm-safety protocols",
         "Control OR traffic",
-        "Focused participation in time-outs",
-        "Allow personal device use during induction",
-        "Allow phones for clinical reference only"
+        "Use focused participation during time-outs",
+        "Permit personal-device use during induction",
+        "Allow unrestricted phones for clinical reference"
       ],
       "answer": [
         0,
@@ -2802,12 +2802,12 @@
       "id": "MISC-114",
       "set": 1,
       "type": "single",
-      "stem": "During induction, the circulator starts asking about lunch orders. Which rule should apply?",
+      "stem": "During induction, nonessential discussion about lunch begins. Which communication principle should apply?",
       "options": [
-        "The sterile OR rule: safety-related communication only",
-        "The time-out rule",
-        "The handoff rule",
-        "The sign-out rule"
+        "Use a sterile-OR period with safety-related communication only",
+        "Apply the surgical time-out rule",
+        "Apply the handoff rule",
+        "Apply the sign-out rule"
       ],
       "answer": [
         0
@@ -2826,12 +2826,12 @@
       "id": "MISC-115",
       "set": 1,
       "type": "single",
-      "stem": "During induction, the surgeon wants to discuss a weekend plan. What should the CRNA do?",
+      "stem": "The surgeon starts discussing weekend plans during induction. What should the CRNA do?",
       "options": [
-        "Politely defer non-case conversation until after induction",
-        "Keep talking quietly while inducing",
-        "Ask the circulator to answer the surgeon for you",
-        "Stop induction to finish the conversation first"
+        "Politely defer nonessential conversation until the critical period is over",
+        "Continue the conversation quietly",
+        "Ask someone else to continue the conversation",
+        "Stop induction until the conversation ends"
       ],
       "answer": [
         0
@@ -2850,13 +2850,13 @@
       "id": "MISC-116",
       "set": 1,
       "type": "multi",
-      "stem": "Which policies help reduce distractions? (Select 3)",
+      "stem": "Which three department-level policies can reduce distractions? (Select 3)",
       "options": [
-        "Personal electronic device policies",
+        "Personal electronic-device policies",
         "Checklists and guidelines",
         "Monitoring adherence to time-outs",
-        "Unlimited device use in the OR",
-        "Leaving time-out format to each team",
+        "Unlimited device use",
+        "Letting each team invent its own time-out",
         "Avoiding debriefs"
       ],
       "answer": [
@@ -2878,12 +2878,12 @@
       "id": "MISC-117",
       "set": 1,
       "type": "single",
-      "stem": "After a 16-hour shift, a CRNA feels overwhelmingly tired and miscalculates a drug dose. How does the AANA define fatigue?",
+      "stem": "After a 16-hour shift, a CRNA is so tired that drug calculations are impaired. How does the AANA define this state?",
       "options": [
-        "Overwhelming tiredness with impaired function",
-        "Normal tiredness at the end of a shift",
-        "Sleepiness without functional effects",
-        "Boredom from long cases"
+        "Fatigue: overwhelming tiredness with impaired function",
+        "Normal end-of-shift tiredness",
+        "Sleepiness without performance effects",
+        "Boredom"
       ],
       "answer": [
         0
@@ -2902,7 +2902,7 @@
       "id": "MISC-118",
       "set": 1,
       "type": "multi",
-      "stem": "Which are signs of fatigue? (Select 2)",
+      "stem": "Which two findings are classic signs of clinically important fatigue? (Select 2)",
       "options": [
         "Diminished reflexes",
         "Impaired decision-making",
@@ -2929,7 +2929,7 @@
       "id": "MISC-119",
       "set": 1,
       "type": "multi",
-      "stem": "A CRNA has been awake for 26 hours after a busy call shift. What effects should be expected? (Select 3)",
+      "stem": "A CRNA has been awake for 26 hours. Which three performance effects should be expected? (Select 3)",
       "options": [
         "More accidents and errors",
         "Impaired vigilance",
@@ -2957,7 +2957,7 @@
       "id": "MISC-120",
       "set": 1,
       "type": "multi",
-      "stem": "What steps are recommended to reduce fatigue risk? (Select 5)",
+      "stem": "Which five strategies are recommended to reduce fatigue-related risk? (Select 5)",
       "options": [
         "Minimize consecutive work hours",
         "Promote sleep hygiene",
@@ -2987,12 +2987,12 @@
       "id": "MISC-121",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA after a 24-hour shift keeps rechecking a drug label and misses a falling BP. What does this reflect?",
+      "stem": "After a 24-hour shift, a CRNA repeatedly rechecks one drug label and misses a falling blood pressure. Which explanation best fits?",
       "options": [
-        "Fatigue impairing vigilance",
-        "Appropriate caution under time pressure",
-        "Cognitive aid use",
-        "Normal performance"
+        "Fatigue has impaired vigilance and attention allocation",
+        "This is appropriate caution",
+        "This is effective cognitive-aid use",
+        "This reflects normal performance"
       ],
       "answer": [
         0
@@ -3011,7 +3011,7 @@
       "id": "MISC-122",
       "set": 1,
       "type": "multi",
-      "stem": "Which are links in the chain of infection? (Select 3)",
+      "stem": "Which three items are links in the chain of infection? (Select 3)",
       "options": [
         "Infectious agent",
         "Reservoir",
@@ -3039,7 +3039,7 @@
       "id": "MISC-123",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA cleans her hands and wears gloves before touching the patient's IV. Which link in the chain of infection does this break?",
+      "stem": "A CRNA performs hand hygiene and dons gloves before manipulating an IV. Which chain-of-infection link is being interrupted?",
       "options": [
         "Mode of transmission",
         "Infectious agent",
@@ -3063,12 +3063,12 @@
       "id": "MISC-124",
       "set": 1,
       "type": "single",
-      "stem": "A patient on chemotherapy with an ANC of 300 is scheduled for a port placement. Which chain of infection link does he represent?",
+      "stem": "A chemotherapy patient with ANC 300 is scheduled for port placement. Which chain-of-infection link does this patient most clearly represent?",
       "options": [
-        "A susceptible, high-risk host",
-        "An infectious agent",
-        "A reservoir",
-        "A portal of exit"
+        "Susceptible host",
+        "Infectious agent",
+        "Reservoir",
+        "Portal of exit"
       ],
       "answer": [
         0
@@ -3087,7 +3087,7 @@
       "id": "MISC-125",
       "set": 1,
       "type": "single",
-      "stem": "Which WHO moment of hand hygiene occurs before touching a patient?",
+      "stem": "Which WHO hand-hygiene moment applies immediately before touching a patient?",
       "options": [
         "Moment 1",
         "Moment 3",
@@ -3111,11 +3111,11 @@
       "id": "MISC-126",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA is about to place an arterial line. Which WHO hand hygiene moment applies right before insertion?",
+      "stem": "A CRNA is about to insert an arterial line. Which WHO hand-hygiene moment applies immediately beforehand?",
       "options": [
         "Moment 2: before a clean or aseptic procedure",
         "Moment 1: before touching a patient",
-        "Moment 3: after body fluid exposure",
+        "Moment 3: after body-fluid exposure",
         "Moment 5: after touching surroundings"
       ],
       "answer": [
@@ -3135,7 +3135,7 @@
       "id": "MISC-127",
       "set": 1,
       "type": "single",
-      "stem": "Which WHO moment occurs after body fluid exposure risk?",
+      "stem": "Which WHO hand-hygiene moment follows a body-fluid exposure risk?",
       "options": [
         "Moment 3",
         "Moment 2",
@@ -3159,7 +3159,7 @@
       "id": "MISC-128",
       "set": 1,
       "type": "single",
-      "stem": "Which WHO moment occurs after touching a patient?",
+      "stem": "Which WHO hand-hygiene moment occurs after touching the patient?",
       "options": [
         "Moment 4",
         "Moment 1",
@@ -3183,7 +3183,7 @@
       "id": "MISC-129",
       "set": 1,
       "type": "single",
-      "stem": "Which WHO moment occurs after touching patient surroundings?",
+      "stem": "Which WHO hand-hygiene moment occurs after touching the patient's surroundings?",
       "options": [
         "Moment 5",
         "Moment 4",
@@ -3207,12 +3207,12 @@
       "id": "MISC-130",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA intubates and then touches the anesthesia cart without changing gloves. Which zone rule is violated?",
+      "stem": "A CRNA intubates, then immediately reaches into the clean anesthesia cart without changing gloves or cleaning hands. Which contamination principle is violated?",
       "options": [
-        "Contaminating a clean zone after touching a dirty zone",
-        "Hand hygiene between clean zones",
-        "Glove change between green zones",
-        "Wearing gloves for all tasks at the workstation"
+        "A dirty zone contaminated a clean zone",
+        "Hand hygiene is required only between two clean zones",
+        "Gloves must be changed between all green zones",
+        "Gloves eliminate workstation contamination"
       ],
       "answer": [
         0
@@ -3231,12 +3231,12 @@
       "id": "MISC-131",
       "set": 1,
       "type": "single",
-      "stem": "You touch the clean drug drawer, then a clean syringe on the workstation. Both are green zones. Is hand hygiene required between them?",
+      "stem": "A CRNA touches a clean drug drawer and then a clean syringe on the same workstation. Both are designated green zones. Is hand hygiene required between these two contacts?",
       "options": [
-        "No, between green zones it is not required",
+        "No, not solely because of movement between green zones",
         "Yes, between any two contacts",
         "Yes, after touching any drawer",
-        "Yes, when gloves are worn"
+        "Yes whenever gloves are worn"
       ],
       "answer": [
         0
@@ -3255,14 +3255,14 @@
       "id": "MISC-132",
       "set": 1,
       "type": "multi",
-      "stem": "After which actions should hands be cleaned per the workstation slide? (Select 2)",
+      "stem": "Which two actions should prompt hand hygiene before returning to the clean anesthesia workspace? (Select 2)",
       "options": [
         "Touching a cellphone",
-        "Picking items off the floor",
+        "Picking an item up from the floor",
         "Reading the anesthesia record",
-        "Touching a green zone after another green zone",
-        "Reading the monitor",
-        "Speaking to the patient"
+        "Moving between two green zones",
+        "Looking at the monitor",
+        "Speaking with the patient"
       ],
       "answer": [
         0,
@@ -3282,12 +3282,12 @@
       "id": "MISC-133",
       "set": 1,
       "type": "single",
-      "stem": "How often does APSF recommend hand hygiene during anesthesia care?",
+      "stem": "How frequently does the APSF recommendation cited in the lecture suggest hand hygiene during anesthesia care?",
       "options": [
         "At least 8 times per hour",
         "At least once per case",
         "Every 2 hours",
-        "After induction and after emergence"
+        "Only after induction and emergence"
       ],
       "answer": [
         0
@@ -3306,10 +3306,10 @@
       "id": "MISC-134",
       "set": 1,
       "type": "multi",
-      "stem": "Your department wants to lower its perioperative infection rates. Which strategies are supported? (Select 4)",
+      "stem": "Which four interventions are supported for reducing perioperative infection? (Select 4)",
       "options": [
         "Patient decolonization",
-        "Disinfecting IV ports before access",
+        "Disinfect IV ports before access",
         "Environmental cleaning of the workspace",
         "Hand hygiene",
         "Routine antibiotics for staff",
@@ -3335,12 +3335,12 @@
       "id": "MISC-135",
       "set": 1,
       "type": "single",
-      "stem": "An SSI occurs 20 days after an appendectomy. Does it qualify as an SSI?",
+      "stem": "A patient develops an infection 20 days after appendectomy. Does the timing meet the standard definition of an SSI?",
       "options": [
-        "Yes, within 30 days postoperatively",
-        "No, SSIs are counted within 7 days",
-        "No, SSIs require an implant to count",
-        "Yes, but it counts if he is readmitted"
+        "Yes, because it occurred within 30 days",
+        "No, only infections within 7 days count",
+        "No, an implant is required",
+        "Only if the patient is readmitted"
       ],
       "answer": [
         0
@@ -3359,12 +3359,12 @@
       "id": "MISC-136",
       "set": 1,
       "type": "single",
-      "stem": "An infection develops 70 days after a total knee replacement. Does it qualify as an SSI?",
+      "stem": "A prosthetic-joint infection develops 70 days after total knee replacement. Does the timing meet the SSI surveillance window described in the lecture?",
       "options": [
-        "Yes, within 90 days with prosthetic implant",
-        "No, beyond 30 days",
-        "No, because it is an implant",
-        "Yes, but it counts if the infection is superficial"
+        "Yes, because implants extend surveillance to 90 days",
+        "No, all SSI surveillance ends at 30 days",
+        "No, implant cases are excluded",
+        "Only superficial infection counts after 30 days"
       ],
       "answer": [
         0
@@ -3383,12 +3383,12 @@
       "id": "MISC-137",
       "set": 1,
       "type": "single",
-      "stem": "A patient develops an SSI after a hip replacement. How does CMS treat this?",
+      "stem": "A patient develops a preventable SSI after hip replacement. How does CMS generally treat this type of event in the cited framework?",
       "options": [
         "As preventable and not reimbursable",
         "As unavoidable and fully reimbursed",
-        "As reimbursable with documentation",
-        "As the surgeon's sole responsibility"
+        "As reimbursable if documented",
+        "As solely the surgeon's responsibility"
       ],
       "answer": [
         0
@@ -3407,12 +3407,12 @@
       "id": "MISC-138",
       "set": 1,
       "type": "single",
-      "stem": "Incision is planned for 0800. When should cefazolin be given?",
+      "stem": "Incision is scheduled for 0800. Which cefazolin timing best meets prophylaxis guidance?",
       "options": [
-        "Between 0700 and 0800",
-        "Between 0600 and 0700",
-        "After incision at 0815",
-        "At 0500 in preop holding"
+        "Administer between 0700 and 0800",
+        "Administer between 0600 and 0700",
+        "Administer after incision",
+        "Administer at 0500"
       ],
       "answer": [
         0
@@ -3431,12 +3431,12 @@
       "id": "MISC-139",
       "set": 1,
       "type": "single",
-      "stem": "Incision is planned for 0900. A patient with MRSA needs vancomycin. When can the infusion start?",
+      "stem": "A patient needs vancomycin for a 0900 incision. Why may the infusion need to begin as early as 0700?",
       "options": [
-        "As early as 0700",
-        "No earlier than 0800",
-        "At 0900",
-        "After incision"
+        "Vancomycin requires a longer infusion window before incision",
+        "Vancomycin must always finish 2 hours before incision",
+        "Vancomycin is ineffective if started after 0800",
+        "Vancomycin should be given only after incision"
       ],
       "answer": [
         0
@@ -3455,12 +3455,12 @@
       "id": "MISC-140",
       "set": 1,
       "type": "single",
-      "stem": "A colectomy patient's temperature is 96.2 °F at the end of the case. What normothermia target supports SSI prevention?",
+      "stem": "A patient's temperature is 96.2°F at the end of colectomy. Which normothermia goal supports SSI prevention?",
       "options": [
-        "Above 97 °F",
-        "Above 95 °F",
-        "Above 99 °F",
-        "Below 97 °F"
+        "Above 97°F",
+        "Above 95°F",
+        "Above 99°F",
+        "Below 97°F"
       ],
       "answer": [
         0
@@ -3479,12 +3479,12 @@
       "id": "MISC-141",
       "set": 1,
       "type": "single",
-      "stem": "A diabetic patient's intraoperative glucose is 228 mg/dL during a colectomy. What glucose target supports SSI prevention?",
+      "stem": "A diabetic patient's intraoperative glucose is 228 mg/dL. Which SSI-prevention target has been exceeded?",
       "options": [
-        "Below 180 mg/dL",
-        "Below 120 mg/dL",
-        "Below 250 mg/dL",
-        "Above 200 mg/dL"
+        "Keep glucose below 180 mg/dL",
+        "Keep glucose below 120 mg/dL",
+        "Keep glucose below 250 mg/dL",
+        "Keep glucose above 200 mg/dL"
       ],
       "answer": [
         0
@@ -3503,12 +3503,12 @@
       "id": "MISC-142",
       "set": 1,
       "type": "single",
-      "stem": "For a healthy patient having a colectomy, a protocol suggests higher intraoperative oxygen to reduce SSIs. What FiO2 does some evidence support?",
+      "stem": "In selected patients, what inspired-oxygen fraction has some evidence supported as part of SSI-reduction bundles?",
       "options": [
-        "Above 0.8",
-        "Below 0.3",
+        "FiO2 above 0.8",
+        "FiO2 below 0.3",
         "Exactly 0.5",
-        "Room air to limit oxidative stress"
+        "Room air"
       ],
       "answer": [
         0
@@ -3527,12 +3527,12 @@
       "id": "MISC-143",
       "set": 1,
       "type": "single",
-      "stem": "During a colectomy, a patient receives 6 L of crystalloid and develops bowel edema. Which fluid goal supports SSI prevention?",
+      "stem": "A colectomy patient receives 6 L crystalloid and develops bowel edema. Which fluid-management principle was missed?",
       "options": [
-        "Normovolemia",
-        "Liberal fluid loading",
-        "Severe fluid restriction",
-        "Colloid-based fluids"
+        "Maintain normovolemia rather than liberal fluid loading",
+        "Give liberal fluid routinely",
+        "Use severe fluid restriction",
+        "Use colloid for all replacement"
       ],
       "answer": [
         0
@@ -3551,14 +3551,14 @@
       "id": "MISC-144",
       "set": 1,
       "type": "multi",
-      "stem": "Which are SSI prevention strategies? (Select 5)",
+      "stem": "Which five measures are part of SSI-prevention strategy? (Select 5)",
       "options": [
         "Timely antibiotic prophylaxis",
         "Normothermia",
         "Glycemic control",
         "Adequate oxygenation",
         "Normovolemia",
-        "Hyperglycemia tolerance"
+        "Tolerance of hyperglycemia"
       ],
       "answer": [
         0,
@@ -3581,12 +3581,12 @@
       "id": "MISC-145",
       "set": 1,
       "type": "single",
-      "stem": "During intubation of a patient with influenza, fine droplets and droplet nuclei are released. How does the WHO define this procedure?",
+      "stem": "Tracheal intubation of a patient with influenza generates fine droplets and droplet nuclei. How is the procedure classified for infection-control purposes?",
       "options": [
-        "An aerosol-generating procedure",
-        "A droplet procedure",
-        "A contact procedure",
-        "A non-infectious procedure"
+        "Aerosol-generating procedure",
+        "Droplet-only procedure",
+        "Contact-only procedure",
+        "Noninfectious procedure"
       ],
       "answer": [
         0
@@ -3605,12 +3605,12 @@
       "id": "MISC-146",
       "set": 1,
       "type": "multi",
-      "stem": "Which PPE is recommended for AGPs? (Select 2)",
+      "stem": "Which two PPE components are explicitly appropriate for aerosol-generating procedures? (Select 2)",
       "options": [
         "Gloves",
-        "Long-sleeved gowns",
-        "A cloth mask",
-        "Cloth masks only",
+        "Long-sleeved gown",
+        "Cloth mask",
+        "Cloth mask alone",
         "Surgical cap and shoe covers only",
         "Shoe covers only"
       ],
@@ -3632,14 +3632,14 @@
       "id": "MISC-147",
       "set": 1,
       "type": "multi",
-      "stem": "Which procedures carry higher infection transmission risk based on evidence? (Select 3)",
+      "stem": "Which three procedures have evidence of higher respiratory-pathogen transmission risk? (Select 3)",
       "options": [
         "Tracheal intubation",
-        "Non-invasive ventilation or CPAP",
+        "Noninvasive ventilation or CPAP",
         "Manual ventilation before intubation",
-        "Placing a peripheral IV",
-        "Taking a blood pressure",
-        "Applying ECG leads"
+        "Peripheral IV placement",
+        "Blood-pressure measurement",
+        "ECG-lead application"
       ],
       "answer": [
         0,
@@ -3660,13 +3660,13 @@
       "id": "MISC-148",
       "set": 1,
       "type": "multi",
-      "stem": "During a respiratory virus surge, which procedures require airborne precautions as aerosol-generating? (Select 4)",
+      "stem": "Which four procedures are treated as aerosol-generating during respiratory-virus precautions? (Select 4)",
       "options": [
         "Extubation",
         "Bronchoscopy",
         "High-flow nasal oxygen",
         "Open airway suctioning",
-        "Arterial line placement",
+        "Arterial-line placement",
         "Peripheral nerve stimulation"
       ],
       "answer": [
@@ -3689,11 +3689,11 @@
       "id": "MISC-149",
       "set": 1,
       "type": "multi",
-      "stem": "Which AGPs have unclear risk? (Select 3)",
+      "stem": "Which three procedures have less certain or unclear aerosol-transmission risk in the cited material? (Select 3)",
       "options": [
         "Chest compressions",
-        "Nebulizers",
-        "NG tube insertion",
+        "Nebulizer therapy",
+        "Nasogastric-tube insertion",
         "Tracheal intubation",
         "Bronchoscopy",
         "Tracheostomy"
@@ -3717,12 +3717,12 @@
       "id": "MISC-150",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA is about to extubate a patient with a respiratory infection. Which PPE is appropriate?",
+      "stem": "A CRNA is about to extubate a patient with a respiratory infection. Which PPE strategy best reflects aerosol precautions?",
       "options": [
-        "Gloves, gown, eye protection, and a surgical or N95 mask",
-        "Gloves, since extubation is brief and low risk",
-        "Surgical mask",
-        "Surgical mask and gloves"
+        "Gloves, gown, eye protection, and appropriate respiratory protection",
+        "Gloves alone",
+        "Surgical mask alone",
+        "Surgical mask and gloves only"
       ],
       "answer": [
         0
