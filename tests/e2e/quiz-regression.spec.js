@@ -1674,11 +1674,8 @@ test.describe('canonical quiz regression', () => {
     await page.locator('.mbu-global-nav__cloud').click();
     await page.locator('[data-cloud-email]').fill('second@example.com');
     await page.locator('[data-cloud-password]').fill('correct horse battery staple');
-    await Promise.all([
-      page.waitForNavigation(),
-      page.locator('[data-cloud-signin]').click()
-    ]);
-    await page.evaluate(() => MBUPageReady);
+    await page.locator('[data-cloud-signin]').click();
+    await expect.poll(async () => page.evaluate(() => MBUSupabase.status().signedIn)).toBe(true);
     expect(await page.evaluate(()=>localStorage.getItem('mbu_exam1_studio_v1'))).toBeNull();
     expect(await page.evaluate(()=>localStorage.getItem('mbu_sync_meta_v1'))).toBeNull();
     expect(await page.evaluate(()=>localStorage.getItem('mbu_cloud_local_owner_v1'))).toBe(newId);
@@ -3068,10 +3065,8 @@ test.describe('canonical quiz regression', () => {
     });
     await page.route(cloud+'/rest/v1/mbu_sync_devices?*',route=>route.fulfill({status:201,contentType:'application/json',body:''}));
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
-    const signInNavigation=page.waitForNavigation({waitUntil:'domcontentloaded'});
-    await page.evaluate(() => { void MBUSupabase.signIn('test@example.com','correct horse battery staple'); });
-    await signInNavigation;
-    await page.evaluate(() => MBUPageReady);
+    await page.evaluate(() => MBUSupabase.signIn('test@example.com','correct horse battery staple'));
+    await expect.poll(async () => page.evaluate(() => MBUSupabase.status().signedIn)).toBe(true);
     await page.evaluate(()=>{
       localStorage.setItem('mbu_exam1_studio_v1',JSON.stringify({dirtyLocal:true}));
       MBUAppCore.touchStore('mbu_exam1_studio_v1');
