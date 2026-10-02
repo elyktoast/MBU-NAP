@@ -4967,12 +4967,12 @@
       "id": "MISC-201",
       "set": 1,
       "type": "single",
-      "stem": "An uninsured patient delays surgery until an emergency occurs. Which ASA priority applies?",
+      "stem": "An uninsured patient delays needed surgery until the condition becomes an emergency. Which ASA equity priority is most directly implicated?",
       "options": [
         "Access to health insurance",
         "Maternal care",
         "Pediatric patients",
-        "Pain management access for chronic pain"
+        "Pain-management access"
       ],
       "answer": [
         0
@@ -4991,12 +4991,12 @@
       "id": "MISC-202",
       "set": 1,
       "type": "single",
-      "stem": "A patient works hourly without paid sick leave and misses two preop testing appointments. Which barrier is affecting access?",
+      "stem": "An hourly worker without paid sick leave repeatedly misses preoperative testing. Which access barrier is most directly responsible?",
       "options": [
         "Lack of paid sick leave",
         "Insurance status alone",
-        "Nothing related to paid leave",
-        "Language barriers alone"
+        "No socioeconomic barrier",
+        "Language barrier alone"
       ],
       "answer": [
         0
@@ -5015,12 +5015,12 @@
       "id": "MISC-203",
       "set": 1,
       "type": "single",
-      "stem": "A patient distrusts the healthcare system due to past discrimination. Which barrier is this?",
+      "stem": "A patient avoids recommended care because prior discrimination created deep distrust of the healthcare system. Which access barrier does this illustrate?",
       "options": [
         "Long-standing distrust of the healthcare system",
-        "Low health literacy that prevents understanding",
+        "Low health literacy",
         "Language barrier",
-        "Insurance status"
+        "Insurance status alone"
       ],
       "answer": [
         0
@@ -5039,12 +5039,12 @@
       "id": "MISC-204",
       "set": 1,
       "type": "single",
-      "stem": "A department creates a health equity training program for all staff. Which APSF level is this?",
+      "stem": "A hospital creates mandatory health-equity training for all staff. At what APSF intervention level does this primarily operate?",
       "options": [
-        "System-level strategy",
-        "Clinician-level strategy",
-        "Patient-level strategy",
-        "Research-level strategy"
+        "System level",
+        "Clinician level",
+        "Patient level",
+        "Research level"
       ],
       "answer": [
         0
@@ -5063,12 +5063,12 @@
       "id": "MISC-205",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA volunteers at a community health fair to address disparities. Which APSF level is this?",
+      "stem": "A CRNA volunteers at a community health fair to address local disparities. At what APSF intervention level does this primarily operate?",
       "options": [
-        "Clinician-level strategy",
-        "System-level strategy",
-        "Governance strategy",
-        "Financial incentive strategy"
+        "Clinician level",
+        "System level",
+        "Governance level",
+        "Financial-incentive level"
       ],
       "answer": [
         0
@@ -5087,12 +5087,12 @@
       "id": "MISC-206",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA seeks CE courses on disparities in anesthesia care. Which APSF level is this?",
+      "stem": "A CRNA independently pursues continuing education on disparities in anesthesia care. Which APSF intervention level is this?",
       "options": [
-        "Clinician-level strategy",
-        "System-level strategy",
-        "Governance strategy",
-        "Financial incentive strategy"
+        "Clinician level",
+        "System level",
+        "Governance level",
+        "Financial-incentive level"
       ],
       "answer": [
         0
@@ -5111,11 +5111,11 @@
       "id": "MISC-207",
       "set": 1,
       "type": "single",
-      "stem": "A hospital ties bonuses to closing disparities in PONV prophylaxis. Which APSF level is this?",
+      "stem": "A hospital ties departmental bonuses to closing disparities in PONV prophylaxis. Which APSF intervention level is this?",
       "options": [
-        "System-level strategy",
-        "Clinician-level strategy",
-        "Personal bias recognition",
+        "System level",
+        "Clinician level",
+        "Personal-bias recognition",
         "Community outreach"
       ],
       "answer": [
@@ -5135,12 +5135,12 @@
       "id": "MISC-208",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA collects outcomes by race and ethnicity for QI with permission. Which AANA recommendation does this follow?",
+      "stem": "A CRNA collects outcomes by race and ethnicity as part of approved quality improvement. Which AANA recommendation is being followed?",
       "options": [
-        "Collect health outcomes data",
-        "Encourage diverse students to join",
-        "Accommodate linguistic barriers",
-        "Develop anti-racist policies"
+        "Collect health-outcomes data",
+        "Recruit diverse students",
+        "Address linguistic barriers",
+        "Develop anti-racist policy"
       ],
       "answer": [
         0
@@ -5159,11 +5159,11 @@
       "id": "MISC-209",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA mentors a high school student from an underrepresented group. Which AANA recommendation does this follow?",
+      "stem": "A CRNA mentors a high-school student from an underrepresented group who is interested in healthcare. Which AANA recommendation does this support?",
       "options": [
         "Encourage diverse students to consider nurse anesthesiology",
-        "Collect health outcomes data by race and ethnicity",
-        "Maintain anti-racist policies at the facility level",
+        "Collect outcomes data",
+        "Maintain facility anti-racist policy",
         "Use evidence-based protocols"
       ],
       "answer": [
@@ -5183,12 +5183,12 @@
       "id": "MISC-210",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA uses a standardized PONV prophylaxis protocol for all patients to reduce variation. Which AANA recommendation does this follow?",
+      "stem": "A CRNA uses a standardized evidence-based PONV protocol to reduce unwarranted variation across patients. Which AANA recommendation does this best reflect?",
       "options": [
         "Use evidence-based protocols when possible",
-        "Collect outcomes data for quality review",
-        "Be aware of community needs",
-        "Accommodate linguistic barriers"
+        "Collect outcomes data",
+        "Assess community needs",
+        "Address linguistic barriers"
       ],
       "answer": [
         0
@@ -5207,12 +5207,12 @@
       "id": "MISC-211",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA considers local community health needs when planning outreach. Which AANA recommendation applies?",
+      "stem": "A CRNA considers local disease burden and access barriers when planning outreach. Which AANA recommendation is most directly applied?",
       "options": [
         "Be aware of community needs",
         "Collect outcomes data",
         "Use evidence-based protocols",
-        "Encourage diverse students"
+        "Recruit diverse students"
       ],
       "answer": [
         0
@@ -5231,12 +5231,12 @@
       "id": "MISC-212",
       "set": 1,
       "type": "single",
-      "stem": "A competent adult refuses a regional block despite clear benefits. What should the CRNA do?",
+      "stem": "A competent adult refuses a regional block after risks, benefits, and alternatives are explained. What should the CRNA do?",
       "options": [
         "Respect the refusal and offer alternatives",
-        "Place the block after sedation anyway",
-        "Decline to provide anesthesia for the case",
-        "Ask the surgeon to consent for the patient"
+        "Perform the block after sedation",
+        "Refuse to provide anesthesia",
+        "Ask the surgeon to override the decision"
       ],
       "answer": [
         0
@@ -5255,7 +5255,7 @@
       "id": "MISC-213",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA advocates for extra monitoring for a high-risk patient despite pushback about cost. Which pillar is primarily reflected?",
+      "stem": "A CRNA insists on additional monitoring for a high-risk patient despite cost pressure. Which ethical principle is most directly reflected?",
       "options": [
         "Non-maleficence",
         "Justice",
@@ -5279,7 +5279,7 @@
       "id": "MISC-214",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA provides the same PONV prophylaxis to all patients regardless of insurance. Which pillar is reflected?",
+      "stem": "A CRNA provides the same PONV prophylaxis to clinically similar patients regardless of insurance status. Which ethical principle is most directly reflected?",
       "options": [
         "Justice",
         "Autonomy",
@@ -5303,7 +5303,7 @@
       "id": "MISC-215",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA declines to perform a block in a patient with infection at the site. Which pillar is reflected?",
+      "stem": "A CRNA declines to place a block through infected skin because the procedure could cause harm. Which principle is most directly reflected?",
       "options": [
         "Non-maleficence",
         "Autonomy",
@@ -5327,7 +5327,7 @@
       "id": "MISC-216",
       "set": 1,
       "type": "single",
-      "stem": "A patient asks for a nerve block to reduce opioids; the CRNA explains risks and benefits and places it. Which pillars are MOST involved?",
+      "stem": "A patient requests a nerve block to reduce opioid use; after informed discussion, the CRNA agrees and performs it. Which two ethical principles are most directly involved?",
       "options": [
         "Autonomy and beneficence",
         "Justice and non-maleficence",
@@ -5351,7 +5351,7 @@
       "id": "MISC-217",
       "set": 1,
       "type": "single",
-      "stem": "A patient with limited English is consented using a hospital interpreter. Which ethical principle is supported?",
+      "stem": "A qualified interpreter is used so a patient with limited English proficiency can meaningfully participate in anesthesia consent. Which principle is most directly supported?",
       "options": [
         "Autonomy through informed consent",
         "Justice through equal staffing",
@@ -5375,12 +5375,12 @@
       "id": "MISC-218",
       "set": 1,
       "type": "single",
-      "stem": "A patient is consented after receiving a large dose of sedative and cannot recall the discussion. What is the problem?",
+      "stem": "A patient signs anesthesia consent after receiving enough sedative to impair understanding and recall. What is the primary concern?",
       "options": [
-        "Consent may not be valid due to impaired capacity",
-        "Consent is valid once the form is signed",
-        "Sedatives improve consent quality",
-        "The surgeon's consent already covers anesthesia"
+        "Decision-making capacity may be impaired, making consent invalid",
+        "The signature alone guarantees valid consent",
+        "Sedation improves consent quality",
+        "The surgeon's consent covers anesthesia"
       ],
       "answer": [
         0
@@ -5399,12 +5399,12 @@
       "id": "MISC-219",
       "set": 1,
       "type": "single",
-      "stem": "A surgeon asks the CRNA to skip explaining anesthesia risks to save time. What should the CRNA do?",
+      "stem": "A surgeon asks the CRNA to skip anesthesia-risk discussion to save time. Which response best protects valid consent?",
       "options": [
-        "Complete anesthesia consent per requirements",
-        "Accept the surgeon's consent as covering anesthesia",
+        "Complete the anesthesia consent process as required",
+        "Rely on the surgeon's consent",
         "Obtain consent after surgery",
-        "Let the patient sign without an explanation of risks"
+        "Have the patient sign without discussion"
       ],
       "answer": [
         0
@@ -5423,12 +5423,12 @@
       "id": "MISC-220",
       "set": 1,
       "type": "single",
-      "stem": "A patient declines blood products for religious reasons. What does patient-centered care require?",
+      "stem": "A competent patient refuses blood products for religious reasons. What does patient-centered care require?",
       "options": [
         "Respect the patient's values and plan accordingly",
-        "Give blood if needed despite refusal",
-        "Refuse to provide anesthesia without blood consent",
-        "Ask the surgeon to override the decision"
+        "Give blood if clinically indicated despite refusal",
+        "Refuse anesthesia unless blood is accepted",
+        "Ask the surgeon to override the refusal"
       ],
       "answer": [
         0
@@ -5447,7 +5447,7 @@
       "id": "MISC-221",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA arranges a follow-up call with a patient after an awareness event. Which dimension of patient-centered care is reflected?",
+      "stem": "A CRNA arranges follow-up contact after a patient experiences intraoperative awareness. Which patient-centered-care dimension is most directly reflected?",
       "options": [
         "Emotional support",
         "Access to care",
@@ -5471,10 +5471,10 @@
       "id": "MISC-222",
       "set": 1,
       "type": "single",
-      "stem": "A patient's family is included in the preop discussion with permission. Which dimension is reflected?",
+      "stem": "With the patient's permission, family members are included in preoperative discussion. Which patient-centered-care dimension does this reflect?",
       "options": [
         "Involvement of family and friends",
-        "Access to care through scheduling support",
+        "Access to care",
         "Physical comfort",
         "Coordination of care"
       ],
@@ -5495,10 +5495,10 @@
       "id": "MISC-223",
       "set": 1,
       "type": "single",
-      "stem": "A patient's anesthesia plan is coordinated with cardiology and nephrology. Which dimension is reflected?",
+      "stem": "The anesthesia plan is coordinated with cardiology and nephrology for a complex patient. Which patient-centered-care dimension is most directly reflected?",
       "options": [
         "Coordination of care",
-        "Emotional support during the perioperative period",
+        "Emotional support",
         "Physical comfort",
         "Access to care"
       ],
@@ -5519,7 +5519,7 @@
       "id": "MISC-224",
       "set": 1,
       "type": "single",
-      "stem": "A patient has transportation issues, and the team schedules telehealth preop. Which dimension is reflected?",
+      "stem": "A patient cannot travel easily, so telehealth preop is arranged. Which patient-centered-care dimension is most directly improved?",
       "options": [
         "Access to care",
         "Continuity and transition",
@@ -5543,12 +5543,12 @@
       "id": "MISC-225",
       "set": 1,
       "type": "single",
-      "stem": "A patient is transferred to ICU with a detailed anesthesia handoff. Which dimension is reflected?",
+      "stem": "A patient is transferred to the ICU with a detailed anesthesia handoff and clear next-step plan. Which patient-centered-care dimension is most directly reflected?",
       "options": [
         "Continuity and transition",
         "Coordination of care",
         "Access to care",
-        "Emotional support after the procedure"
+        "Emotional support"
       ],
       "answer": [
         0
@@ -5567,10 +5567,10 @@
       "id": "MISC-226",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA respects a patient's request to keep her head covered for religious reasons. Which dimension is reflected?",
+      "stem": "A patient requests that her head covering remain in place for religious reasons whenever safely possible. Which patient-centered-care dimension is most directly reflected?",
       "options": [
         "Respect for preferences and values",
-        "Access to care through flexible scheduling",
+        "Access to care",
         "Coordination of care",
         "Continuity and transition"
       ],
@@ -5591,11 +5591,11 @@
       "id": "MISC-227",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA uses teach-back to confirm understanding of postop instructions. Which dimension is reflected?",
+      "stem": "A CRNA uses teach-back to verify understanding of postoperative instructions. Which patient-centered-care dimension is most directly reflected?",
       "options": [
         "Information, communication, and education",
-        "Physical comfort during recovery",
-        "Access to care through scheduling support",
+        "Physical comfort",
+        "Access to care",
         "Continuity and transition"
       ],
       "answer": [
@@ -5615,10 +5615,10 @@
       "id": "MISC-228",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA avoids assumptions about a patient's culture and asks about preferences. Which concept is shown?",
+      "stem": "A CRNA avoids assumptions and asks a patient directly about cultural preferences that may affect care. Which concept is being demonstrated?",
       "options": [
         "Culturally competent care",
-        "Paternalism in deciding what the patient needs",
+        "Paternalism",
         "Avoidance error",
         "Fixation error"
       ],
@@ -5639,10 +5639,10 @@
       "id": "MISC-229",
       "set": 1,
       "type": "single",
-      "stem": "A patient refuses care because of prior negative experiences with providers. Which cultural competence risk is illustrated?",
+      "stem": "A patient refuses recommended care because prior negative healthcare experiences destroyed trust. Which cultural-competence risk is illustrated?",
       "options": [
-        "Failure to seek or trust medical care",
-        "Improved compliance with postoperative instructions",
+        "Failure to seek or trust care",
+        "Improved adherence",
         "Reduced liability",
         "Enhanced communication"
       ],
@@ -5663,7 +5663,7 @@
       "id": "MISC-230",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA misunderstands a patient's pain description due to cultural differences and undertreats pain. Which risk is illustrated?",
+      "stem": "A clinician misinterprets a patient's culturally influenced pain description and undertreats pain. Which risk of poor cultural competence is illustrated?",
       "options": [
         "Miscommunication during care",
         "Improved outcomes",
@@ -5687,11 +5687,11 @@
       "id": "MISC-231",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA completes cultural competency training through the department. Which concept is supported?",
+      "stem": "A CRNA completes structured training in cross-cultural communication. Which cultural-competence principle is being supported?",
       "options": [
-        "Pursuit of education in cross-cultural encounters",
+        "Ongoing education for cross-cultural encounters",
         "Avoidance of patient preferences",
-        "Standardized care without cultural adaptation",
+        "Rigidly standardized care",
         "Reduction of communication"
       ],
       "answer": [
@@ -5711,12 +5711,12 @@
       "id": "MISC-232",
       "set": 1,
       "type": "single",
-      "stem": "A research study enrolls prisoners without additional protections. What is the ethical problem?",
+      "stem": "A study enrolls prisoners without additional safeguards. What is the primary research-ethics problem?",
       "options": [
-        "Prisoners are a vulnerable population needing safeguards",
-        "Prisoners may only join studies with direct benefit",
+        "Prisoners are a vulnerable population requiring added protections",
+        "Prisoners may participate only in direct-benefit studies",
         "Prisoners are not vulnerable",
-        "Prisoners do not need informed consent for low-risk studies"
+        "Low-risk studies do not require consent"
       ],
       "answer": [
         0
@@ -5735,12 +5735,12 @@
       "id": "MISC-233",
       "set": 1,
       "type": "single",
-      "stem": "A research team plans to enroll 15-year-olds without parental consent because the study is \"minimal risk.\" What is the problem?",
+      "stem": "Researchers plan to enroll 15-year-olds without parental permission simply because the study is minimal risk. What is the problem?",
       "options": [
-        "Minors are vulnerable and need additional protections",
-        "Minors can consent for themselves at 15",
-        "Minimal-risk studies need only verbal consent",
-        "Parental consent is optional for all research"
+        "Minors are a vulnerable population requiring additional protections",
+        "All 15-year-olds may consent independently",
+        "Minimal-risk research needs verbal consent only",
+        "Parental permission is always optional"
       ],
       "answer": [
         0
@@ -5759,12 +5759,12 @@
       "id": "MISC-234",
       "set": 1,
       "type": "single",
-      "stem": "A study offers large payments that may coerce participation. Which research principle is threatened?",
+      "stem": "A study offers payment large enough that participants may feel unable to refuse. Which ethical protection is most threatened?",
       "options": [
         "Voluntary participation",
         "Confidentiality",
         "Privacy",
-        "IRB oversight of the study protocol"
+        "IRB oversight"
       ],
       "answer": [
         0
@@ -5783,12 +5783,12 @@
       "id": "MISC-235",
       "set": 1,
       "type": "single",
-      "stem": "A researcher publishes identifiable patient data without consent. Which principle is violated?",
+      "stem": "A researcher publishes identifiable patient data without permission. Which participant protection is directly violated?",
       "options": [
         "Confidentiality and privacy",
-        "Beneficence toward future patients who benefit",
+        "Beneficence",
         "Justice",
-        "Autonomy"
+        "Convenience"
       ],
       "answer": [
         0
@@ -5807,12 +5807,12 @@
       "id": "MISC-236",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, the room is loud with music and conversation and the CRNA misses the low SpO2 alarm. Which distraction type is MOST responsible?",
+      "stem": "During emergence, loud music and conversation mask the pulse-oximeter alarm. Which distraction type is primarily responsible?",
       "options": [
         "Auditory disruption",
         "Visual distraction",
         "Cognitive load",
-        "Fatigue from repeated alarms over time"
+        "Fatigue"
       ],
       "answer": [
         0
@@ -5831,7 +5831,7 @@
       "id": "MISC-237",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA checks email on a tablet during maintenance and misses rising ETCO2. Which distraction type is this?",
+      "stem": "A CRNA checks email on a tablet and misses rising ETCO2. Which distraction type is most direct?",
       "options": [
         "Visual distraction",
         "Auditory disruption",
@@ -5855,11 +5855,11 @@
       "id": "MISC-238",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA is simultaneously charting, preparing a PCA, and troubleshooting a pump. Which distraction type is this?",
+      "stem": "A CRNA charts, prepares a PCA, and troubleshoots equipment simultaneously. Which distraction mechanism is most relevant?",
       "options": [
-        "Cognitive load",
-        "Visual distraction",
-        "Auditory disruption",
+        "Excess cognitive load",
+        "Visual distraction alone",
+        "Auditory distraction alone",
         "Alarm fatigue"
       ],
       "answer": [
@@ -5879,14 +5879,14 @@
       "id": "MISC-239",
       "set": 1,
       "type": "multi",
-      "stem": "The OR is loud with music and side conversations. During which periods should noise be minimized? (Select 3)",
+      "stem": "During which three periods should OR noise be especially minimized? (Select 3)",
       "options": [
         "Induction",
         "Emergence",
-        "During complications",
+        "Active complications or crises",
         "Routine maintenance only",
-        "After surgery ends",
-        "During time-outs only"
+        "After surgery",
+        "Time-out only"
       ],
       "answer": [
         0,
@@ -5907,12 +5907,12 @@
       "id": "MISC-240",
       "set": 1,
       "type": "single",
-      "stem": "A team member keeps entering and leaving during induction. What distraction strategy applies?",
+      "stem": "Team members repeatedly enter and leave during induction. Which distraction-control strategy is most appropriate?",
       "options": [
         "Control OR traffic",
-        "Lower the alarm volume",
-        "Ask for quiet only after intubation",
-        "Allow personal devices"
+        "Lower alarm volume",
+        "Wait until after intubation to request quiet",
+        "Allow personal-device use"
       ],
       "answer": [
         0
@@ -5931,7 +5931,7 @@
       "id": "MISC-241",
       "set": 1,
       "type": "single",
-      "stem": "The surgeon asks everyone to stop talking during a critical step. Which concept is this?",
+      "stem": "The team intentionally limits communication to essential safety-related discussion during a critical step. Which concept is this?",
       "options": [
         "Sterile OR rule",
         "Alarm fatigue",
@@ -5955,7 +5955,7 @@
       "id": "MISC-242",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA silences alarms repeatedly due to nuisance alerts and misses a true event. Which issue is this?",
+      "stem": "A CRNA repeatedly silences nuisance alarms and later misses a clinically important alert. Which human-factors problem is this?",
       "options": [
         "Alarm fatigue",
         "Avoidance error",
@@ -5979,12 +5979,12 @@
       "id": "MISC-243",
       "set": 1,
       "type": "single",
-      "stem": "During the time-out, the CRNA keeps charting and does not look up. What is the BEST practice?",
+      "stem": "During the surgical time-out, a CRNA continues charting without engaging. What is the best practice?",
       "options": [
-        "Stop and participate in the time-out with full attention",
-        "Have the circulator read it while you finish charting",
-        "Let the circulator handle it alone",
-        "Confirm the key items afterward with the surgeon"
+        "Stop and participate with full attention",
+        "Let the circulator complete it alone",
+        "Review the key items afterward",
+        "Continue charting if the case is routine"
       ],
       "answer": [
         0
@@ -6003,12 +6003,12 @@
       "id": "MISC-244",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA wants to check her phone during a stable case. What practice applies?",
+      "stem": "A CRNA wants to use a personal phone during a stable portion of the case. Which principle should guide the decision?",
       "options": [
-        "Follow policies on acceptable device use",
+        "Follow institutional policies on acceptable device use",
         "Use the phone freely during maintenance",
         "Use the phone during induction",
-        "Phones are banned in all hospitals"
+        "Assume phones are universally prohibited"
       ],
       "answer": [
         0
@@ -6027,12 +6027,12 @@
       "id": "MISC-245",
       "set": 1,
       "type": "single",
-      "stem": "After a 16-hour shift, a CRNA feels exhausted and has trouble concentrating. What should be done?",
+      "stem": "After a 16-hour shift, a CRNA is exhausted and cannot concentrate reliably. What is the safest response?",
       "options": [
-        "Recognize fatigue and seek relief to protect safety",
-        "Continue working and drink more coffee",
-        "Drink caffeine and finish the case",
-        "Delegate monitoring to the surgeon while resting"
+        "Recognize fatigue and seek relief to protect patient safety",
+        "Continue with caffeine alone",
+        "Finish the case despite impairment",
+        "Delegate monitoring to the surgeon"
       ],
       "answer": [
         0
@@ -6051,12 +6051,12 @@
       "id": "MISC-246",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA with fatigue has impaired memory and misses a medication dose. Which effect of fatigue is illustrated?",
+      "stem": "A fatigued CRNA has impaired memory and misses a medication dose. Which fatigue effect is illustrated?",
       "options": [
-        "Impaired decision-making and memory",
+        "Impaired cognition and memory",
         "Improved vigilance",
         "Faster reflexes",
-        "Enhanced situational awareness from adrenaline"
+        "Enhanced situational awareness"
       ],
       "answer": [
         0
@@ -6075,12 +6075,12 @@
       "id": "MISC-247",
       "set": 1,
       "type": "single",
-      "stem": "A department analyzes errors and finds most occurred late in long shifts. What explains this?",
+      "stem": "A department finds errors cluster late in prolonged shifts. Which explanation best fits the pattern?",
       "options": [
-        "Accidents and errors increase with fatigue",
+        "Fatigue increases accidents and errors",
         "Fatigue reduces errors",
-        "Fatigue mainly affects physical tasks, not judgment",
-        "Errors cluster at shift start"
+        "Fatigue affects only physical tasks",
+        "Errors cluster mainly at shift start"
       ],
       "answer": [
         0
@@ -6099,12 +6099,12 @@
       "id": "MISC-248",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA arrives for a case after little sleep and notices decreased awareness of surroundings. What is this a sign of?",
+      "stem": "A sleep-deprived CRNA notices reduced awareness of the surrounding environment before a case. What does this most likely indicate?",
       "options": [
         "Fatigue",
         "Normal alertness",
         "Improved vigilance",
-        "Situational awareness"
+        "Enhanced situational awareness"
       ],
       "answer": [
         0
@@ -6123,9 +6123,9 @@
       "id": "MISC-249",
       "set": 1,
       "type": "single",
-      "stem": "A patient with an immunocompromised state is scheduled for surgery. Which link in the chain of infection is highlighted?",
+      "stem": "An immunocompromised patient is scheduled for surgery. Which link in the chain of infection is most clearly highlighted?",
       "options": [
-        "High-risk host",
+        "Susceptible host",
         "Infectious agent",
         "Reservoir",
         "Portal of exit"
@@ -6147,11 +6147,11 @@
       "id": "MISC-250",
       "set": 1,
       "type": "single",
-      "stem": "A contaminated stethoscope serves as a source of germs. Which link in the chain is this?",
+      "stem": "A contaminated stethoscope harbors microorganisms between patients. Which link in the chain of infection does it represent?",
       "options": [
         "Reservoir",
         "Portal of entry",
-        "Transmission",
+        "Mode of transmission",
         "Susceptible host"
       ],
       "answer": [
