@@ -95,15 +95,17 @@ test.describe('multi-course foundation', () => {
     await page.goto('/basic-principles/exam-1/studio.html');
     await waitForStudioReady(page);
     await expect(page.locator('#topicPickbox')).toBeVisible();
-    await expect(page.locator('#sourcePickbox')).toBeHidden();
-    await expect(page.getByRole('button', { name: 'Lecture Topics' })).not.toHaveClass(/out/);
+    await expect(page.locator('#sourcePickbox')).toHaveCount(0);
+    await expect(page.locator('#buildSetsBtn')).toHaveCount(0);
+    await expect(page.locator('#buildTopicsBtn')).toHaveCount(0);
+    await expect(page.locator('#order')).toHaveCount(0);
     await expect(page.locator('#topicChecks input')).toHaveCount(7);
     const state = await page.evaluate(() => ({
       count: ALL.length,
       uidCount: ALL_BY_UID.size,
       unifiedHeading: document.querySelector('#sourcePickbox h4')?.textContent.trim(),
       sourceChoices: [...document.querySelectorAll('#sourceChecks input')].map(x => x.value),
-      sourceText: document.querySelector('#sourceChecks')?.textContent.trim(),
+      sourceText: document.querySelector('#sourceChecks')?.textContent.trim() || '',
       topics: document.querySelectorAll('#topicChecks input').length,
       jpg: ALL.some(q => q.img && q.img.kind === 'direct' && String(q.img.url).endsWith('.jpg')),
       svg: ALL.some(q => q.img && q.img.kind === 'direct' && String(q.img.url).endsWith('.svg'))
@@ -111,14 +113,13 @@ test.describe('multi-course foundation', () => {
     expect(state.count).toBe(3500);
     expect(state.uidCount).toBe(3500);
     expect(state.unifiedHeading).toBe('Basic Principles Exam 1');
-    expect(state.sourceChoices).toEqual(['__all__']);
-    expect(state.sourceText).toContain('All Basic Principles Exam 1 questions');
-    expect(state.sourceText).not.toContain('Basic Airway Assessment & Management');
+    expect(state.sourceChoices).toEqual([]);
+    expect(state.sourceText).toBe('');
     expect(state.topics).toBe(7);
     expect(state.jpg).toBeTruthy();
     expect(state.svg).toBeTruthy();
     await expect(page.locator('#mbu-bank-picker option')).toHaveCount(1);
-    await page.locator('#sourceChecks input[value="__all__"]').check();
+    await page.locator('#topicChecks input').first().check();
     await page.locator('#count').selectOption('10');
     await page.getByRole('button', { name: 'Start Quiz' }).click();
     await expect(page.locator('#quiz')).toBeVisible();
@@ -142,7 +143,6 @@ test.describe('multi-course foundation', () => {
     await expect(page.locator('#qimage img')).toHaveAttribute('src', /[.]svg$/i);
     await page.evaluate(() => renderHome());
 
-    await page.getByRole('button', { name: 'Lecture Topics' }).click();
     const choice = page.locator('#topicChecks input').first();
     await choice.check();
     const topic = await choice.inputValue();
