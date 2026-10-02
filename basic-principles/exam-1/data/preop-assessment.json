@@ -9060,17 +9060,17 @@
       "id": "PRE-371",
       "set": 1,
       "type": "single",
-      "stem": "Using the lecture formula, what is the approximate ideal body weight for a 5-foot-6-inch woman?",
+      "stem": "Using the lecture formula, what is the approximate ideal body weight for a 5-foot-7-inch woman?",
       "options": [
+        "61.6 kg",
         "59.3 kg",
         "63.8 kg",
-        "56.9 kg",
-        "61.5 kg"
+        "57.0 kg"
       ],
       "answer": [
         0
       ],
-      "explanation": "Devine IBW for women is 45.5 + 2.3 × (66 − 60) = 45.5 + 13.8 = 59.3 kg.",
+      "explanation": "Devine IBW for women is 45.5 + 2.3 × inches over 5 feet. At 67 inches: 45.5 + 2.3 × 7 = 61.6 kg.",
       "citation": "",
       "topic": "Obesity, BMI, IBW, and Apfel",
       "sourceTitle": "Perioperative Assessment & Evaluation",
