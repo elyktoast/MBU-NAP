@@ -3693,12 +3693,12 @@
       "id": "PRE-152",
       "set": 1,
       "type": "single",
-      "stem": "In adult surgical patients with valvular disease, which valve pair is encountered most commonly?",
+      "stem": "A patient has a new murmur and exertional dyspnea before elective surgery. Which next step is more useful than identifying whether aortic or mitral lesions are statistically more common?",
       "options": [
-        "Aortic and mitral",
-        "Tricuspid and pulmonic",
-        "Aortic and pulmonic",
-        "Mitral and tricuspid"
+        "Characterize the murmur, symptoms, and current valve severity because those findings determine perioperative significance",
+        "Assume an aortic lesion because it is common",
+        "Assume a mitral lesion because it is common",
+        "Proceed without further assessment because prevalence does not affect management"
       ],
       "answer": [
         0
@@ -3741,12 +3741,12 @@
       "id": "PRE-154",
       "set": 1,
       "type": "single",
-      "stem": "A patient with prior myocardial infarction is scheduled for open AAA repair. Which RCRI result is correct?",
+      "stem": "A patient with prior myocardial infarction is scheduled for suprainguinal vascular surgery and has no other classic RCRI factors. What score results?",
       "options": [
-        "Score 2 with about 2.4% MACE risk",
-        "Score 1 with about 1.0% risk",
-        "Score 3 with about 5.4% risk",
-        "Score 0 with about 0.4% risk"
+        "2",
+        "1",
+        "3",
+        "4"
       ],
       "answer": [
         0
@@ -3938,12 +3938,12 @@
       "id": "PRE-162",
       "set": 1,
       "type": "single",
-      "stem": "Which pacing mode is commonly used as a ventricular backup because it senses and paces the ventricle and inhibits output when intrinsic activity is present?",
+      "stem": "A pacemaker is programmed VVI. What response occurs when an intrinsic ventricular beat is sensed?",
       "options": [
-        "VVI",
-        "AAI",
-        "DDD",
-        "VDD"
+        "Ventricular pacing is inhibited for that cycle",
+        "An atrial pacing stimulus is delivered",
+        "Both chambers are paced asynchronously",
+        "The ventricular pacing rate doubles"
       ],
       "answer": [
         0
@@ -4010,12 +4010,12 @@
       "id": "PRE-165",
       "set": 1,
       "type": "single",
-      "stem": "A magnet causes a dual-chamber pacemaker to pace atrium and ventricle at a fixed rate regardless of sensed activity. Which mode is being produced?",
+      "stem": "A dual-chamber pacemaker is intentionally placed into an asynchronous mode during a period of significant EMI risk. Which mode paces both chambers without sensing inhibition?",
       "options": [
         "DOO",
-        "VOO",
-        "AAI",
-        "DDD"
+        "DDD",
+        "VVI",
+        "AAI"
       ],
       "answer": [
         0
@@ -4058,12 +4058,12 @@
       "id": "PRE-167",
       "set": 1,
       "type": "single",
-      "stem": "Which mode senses both chambers but delivers pacing only to the ventricle?",
+      "stem": "A device is programmed VDD. Which function distinguishes this mode from DDD?",
       "options": [
-        "VDD",
-        "DDD",
-        "AAI",
-        "VVI"
+        "It senses atrial and ventricular activity but paces only the ventricle",
+        "It paces both chambers but senses only the ventricle",
+        "It paces the atrium only",
+        "It is fully asynchronous"
       ],
       "answer": [
         0
@@ -4082,12 +4082,12 @@
       "id": "PRE-168",
       "set": 1,
       "type": "single",
-      "stem": "A DDDR pacemaker increases the paced rate during activity. What does the final 'R' indicate?",
+      "stem": "A DDDR pacemaker accelerates the paced rate when the patient becomes active despite no change in intrinsic atrial rate. Which programmed feature explains this?",
       "options": [
-        "Rate-responsive pacing",
-        "Reverse ventricular-to-atrial pacing",
-        "Automatic rate reduction during sleep only",
-        "Resistance to electromagnetic interference"
+        "Rate responsiveness",
+        "Asynchronous pacing",
+        "Tachyarrhythmia therapy",
+        "Magnet mode"
       ],
       "answer": [
         0
@@ -4185,12 +4185,12 @@
       "id": "PRE-172",
       "set": 1,
       "type": "single",
-      "stem": "Which set contains standard bradycardia pacing modes that may be programmed in an ICD?",
+      "stem": "A patient with an ICD also needs bradycardia support. Which statement best reflects the device's pacing capability?",
       "options": [
-        "VVI, DDD, and AAI",
-        "VOO, DOO, and AOO",
-        "VDD, DDDR, and AAI only",
-        "VVI, VOO, and DOO"
+        "An ICD may also provide conventional bradycardia pacing using modes such as VVI or DDD",
+        "ICDs cannot provide bradycardia pacing",
+        "All ICDs pace asynchronously",
+        "ICD pacing is limited to atrial pacing only"
       ],
       "answer": [
         0
@@ -4281,12 +4281,12 @@
       "id": "PRE-176",
       "set": 1,
       "type": "single",
-      "stem": "For a CIED patient having a hand procedure without cautery, which issue is least relevant to EMI planning?",
+      "stem": "A CIED patient is having a hand procedure with no electrocautery or other meaningful EMI source. Which factor becomes less central to an EMI-specific plan than it would during monopolar cautery near the generator?",
       "options": [
-        "Proximity of the surgical site to the pulse generator",
+        "Distance between the operative field and pulse generator",
         "Pacemaker dependence",
-        "Date of last interrogation",
-        "Reason for device implantation"
+        "Current device function/interrogation status",
+        "Underlying rhythm"
       ],
       "answer": [
         0
@@ -4329,12 +4329,12 @@
       "id": "PRE-178",
       "set": 1,
       "type": "single",
-      "stem": "Which CIED is most commonly encountered in routine perioperative practice?",
+      "stem": "A patient reports an implanted cardiac device but cannot identify whether it is a pacemaker or ICD. What should happen before a procedure in which EMI is expected?",
       "options": [
-        "Pacemaker",
-        "ICD",
-        "Biventricular ICD",
-        "Implantable loop recorder"
+        "Identify the device and its current function/programming rather than assuming the most common device type",
+        "Assume it is a pacemaker",
+        "Apply a magnet without determining device type",
+        "Proceed because all CIEDs respond identically to magnets"
       ],
       "answer": [
         0
@@ -4401,12 +4401,12 @@
       "id": "PRE-181",
       "set": 1,
       "type": "single",
-      "stem": "Which chest-radiograph pattern is most compatible with advanced COPD rather than cardiogenic pulmonary edema?",
+      "stem": "A COPD patient has hyperinflated lungs and large bullae on chest imaging. Which anesthetic concern follows most directly?",
       "options": [
-        "Hyperlucency and bullous change",
-        "Kerley B lines and cephalization",
-        "Boot-shaped heart",
-        "Deep sulcus sign alone"
+        "Positive-pressure ventilation and expansion of closed gas spaces can increase barotrauma risk; nitrous oxide may enlarge bullae",
+        "The findings indicate cardiogenic pulmonary edema",
+        "The findings require high tidal volumes to reopen collapsed alveoli",
+        "The findings eliminate concern for air trapping"
       ],
       "answer": [
         0
@@ -4477,12 +4477,12 @@
       "id": "PRE-184",
       "set": 1,
       "type": "single",
-      "stem": "Wheezing resolves completely after albuterol. Which diagnosis is most consistent with that reversible airflow limitation?",
+      "stem": "A patient has episodic wheezing that returns to baseline after bronchodilator therapy and is triggered by allergens and exercise. Which physiology best fits the history?",
       "options": [
-        "Asthma",
-        "COPD",
-        "Restrictive lung disease",
-        "Pulmonary vascular disease"
+        "Reversible airflow obstruction consistent with asthma",
+        "Fixed restrictive physiology",
+        "Irreversible airflow obstruction by definition",
+        "Pulmonary vascular obstruction"
       ],
       "answer": [
         0
@@ -4602,12 +4602,12 @@
       "id": "PRE-189",
       "set": 1,
       "type": "single",
-      "stem": "An adult still has residual cough after a recent URI and elective surgery is planned. Which interval is recommended by the lecture to allow airway hyperreactivity to subside?",
+      "stem": "An adult recently recovered from a URI but still has cough and airway irritability before an elective case requiring airway instrumentation. What is the key planning issue?",
       "options": [
-        "About 6 weeks",
-        "1 week",
-        "2 weeks",
-        "3 months"
+        "Postinfectious airway hyperreactivity can persist for weeks, so timing should be individualized to residual symptoms, procedure, and patient risk",
+        "A fixed delay is unnecessary because airway reactivity ends when fever resolves",
+        "Every adult URI requires exactly 6 weeks of cancellation regardless of symptoms or urgency",
+        "A normal SpO2 eliminates the increased airway risk"
       ],
       "answer": [
         0
@@ -4650,12 +4650,12 @@
       "id": "PRE-191",
       "set": 1,
       "type": "single",
-      "stem": "Why is a fixed 6-week postponement after every URI often impractical in children?",
+      "stem": "Why is pediatric URI decision-making usually individualized rather than based on a rigid postponement interval?",
       "options": [
-        "Young children experience frequent recurrent URIs",
+        "Children have frequent URIs, so severity, fever, secretions, airway surgery, comorbidity, and anesthetic needs must be weighed together",
         "Children do not develop airway hyperreactivity",
-        "Children always require general anesthesia",
-        "Pediatric URIs do not affect airway risk"
+        "Pediatric URIs never increase respiratory events",
+        "All children with rhinorrhea should proceed"
       ],
       "answer": [
         0
@@ -4774,12 +4774,12 @@
       "id": "PRE-196",
       "set": 1,
       "type": "single",
-      "stem": "A STOP-BANG score of 4 should be interpreted how for perioperative planning?",
+      "stem": "A patient has a STOP-BANG score of 4. What is the most useful perioperative implication?",
       "options": [
-        "Intermediate OSA risk requiring appropriate precautions",
-        "Low risk requiring no change",
-        "High risk requiring automatic cancellation",
-        "Uninterpretable without polysomnography"
+        "The screen indicates meaningful OSA risk that should influence sedative/opioid dosing, airway planning, and postoperative monitoring",
+        "The score diagnoses OSA and mandates cancellation",
+        "The score excludes severe OSA",
+        "No precautions are needed until polysomnography confirms OSA"
       ],
       "answer": [
         0
@@ -4822,12 +4822,12 @@
       "id": "PRE-198",
       "set": 1,
       "type": "single",
-      "stem": "A 35-year-old thin woman has only daytime tiredness as a positive STOP-BANG item. How should she be classified?",
+      "stem": "A young patient has only one positive STOP-BANG item. What can be concluded from the screening tool?",
       "options": [
-        "Low risk",
-        "Intermediate risk",
-        "High risk",
-        "Unclassifiable without a sleep study"
+        "The screening score is low, but clinical assessment still determines whether other evidence of sleep-disordered breathing matters",
+        "OSA is impossible",
+        "No postoperative respiratory monitoring can ever be needed",
+        "The score replaces airway assessment"
       ],
       "answer": [
         0
