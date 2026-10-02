@@ -139,7 +139,7 @@ for(const source of bpManifest.studioSources||[]){
     if(String(q.sourceTitle||'').trim()!==source.label)err('Basic Principles '+identity+' sourceTitle does not match lecture source label');
     if(!String(q.explanation??q.exp??q.rationale??'').trim())err('Basic Principles '+identity+' has no explanation/rationale');
     const stemKey=norm(stem);if(stemKey){const prior=bpSeenStem.get(stemKey);if(prior)warn('Basic Principles exact duplicate stem: '+prior+' and '+identity);else bpSeenStem.set(stemKey,identity)}
-    const image=String(q.img??q.imageSvg??q.image??'').trim();if(image){bpImageRefs++;if(image.includes('..')||path.isAbsolute(image))err('Basic Principles '+identity+' has unsafe figure path '+image);else{bpFigurePaths.add(image);const imagePath=path.join(root,bpRoot,image);if(!fs.existsSync(imagePath))err('Basic Principles '+identity+' references missing figure '+image)}}
+    const rawImage=q.img??q.imageSvg??q.image??'',image=String(typeof rawImage==='object'?(rawImage.url||''):rawImage).trim();if(rawImage&&typeof rawImage==='object'&&rawImage.kind!=='direct')err('Basic Principles '+identity+' has unsupported figure object kind '+String(rawImage.kind));if(image){bpImageRefs++;if(image.includes('..')||path.isAbsolute(image))err('Basic Principles '+identity+' has unsafe figure path '+image);else{bpFigurePaths.add(image);const imagePath=path.join(root,bpRoot,image);if(!fs.existsSync(imagePath))err('Basic Principles '+identity+' references missing figure '+image)}}
   }
 }
 if(bpTotal!==3500)err('Basic Principles: total question count '+bpTotal+' != 3500');
