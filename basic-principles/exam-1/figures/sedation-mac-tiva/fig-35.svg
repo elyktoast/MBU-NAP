@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" font-family="Helvetica,Arial,sans-serif">
+<rect width="760" height="330" rx="10" fill="#0b1411"/>
+<text x="20" y="28" fill="#e9f3ee" font-size="16" font-weight="700">Apnea timeline under sedation with supplemental O2</text>
+<text x="20" y="48" fill="#9fb8ad" font-size="12">Breathing stops at minute 1. Values are illustrative.</text>
+<line x1="60" x2="60" y1="70" y2="280" stroke="#1d2b26"/><text x="56" y="300" fill="#6f8f84" font-size="11">0</text><line x1="140" x2="140" y1="70" y2="280" stroke="#1d2b26"/><text x="136" y="300" fill="#6f8f84" font-size="11">1</text><line x1="220" x2="220" y1="70" y2="280" stroke="#1d2b26"/><text x="216" y="300" fill="#6f8f84" font-size="11">2</text><line x1="300" x2="300" y1="70" y2="280" stroke="#1d2b26"/><text x="296" y="300" fill="#6f8f84" font-size="11">3</text><line x1="380" x2="380" y1="70" y2="280" stroke="#1d2b26"/><text x="376" y="300" fill="#6f8f84" font-size="11">4</text><line x1="460" x2="460" y1="70" y2="280" stroke="#1d2b26"/><text x="456" y="300" fill="#6f8f84" font-size="11">5</text><line x1="540" x2="540" y1="70" y2="280" stroke="#1d2b26"/><text x="536" y="300" fill="#6f8f84" font-size="11">6</text><line x1="620" x2="620" y1="70" y2="280" stroke="#1d2b26"/><text x="616" y="300" fill="#6f8f84" font-size="11">7</text><line x1="700" x2="700" y1="70" y2="280" stroke="#1d2b26"/><text x="696" y="300" fill="#6f8f84" font-size="11">8</text>
+<text x="360" y="320" fill="#6f8f84" font-size="11">minutes</text>
+<polyline fill="none" stroke="#5fd0ff" stroke-width="3" points="60,62.5 140,62.5 220,62.5 300,70.0 380,85.0 460,122.5 540,175.0 620,235.0 700,265.0"/>
+<polyline fill="none" stroke="#f2d64b" stroke-width="3" points="60,158.39999999999998 136.0,158.39999999999998 140,280.0 700,280.0"/>
+<text x="484.0" y="114.5" fill="#5fd0ff" font-size="13">SpO2</text>
+<text x="68.0" y="150.39999999999998" fill="#f2d64b" font-size="13">EtCO2</text>
+<line x1="140" x2="140" y1="70" y2="280" stroke="#ff6b6b" stroke-dasharray="5 4"/><text x="146" y="84" fill="#ff6b6b" font-size="12">apnea begins</text>
+<line x1="412.0" x2="412.0" y1="70" y2="280" stroke="#ff6b6b" stroke-dasharray="5 4"/><text x="418.0" y="84" fill="#ff6b6b" font-size="12">SpO2 alarm (&lt;93%)</text>
+</svg>

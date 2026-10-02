@@ -8,9 +8,114 @@
     "id": "exam-1",
     "label": "Exam 1"
   },
-  "canonicalBank": null,
-  "banks": [],
-  "studioSources": [],
+  "canonicalBank": "bp1",
+  "banks": [
+    {
+      "id": "bp1",
+      "label": "Basic Principles Exam 1",
+      "count": 3500
+    }
+  ],
+  "studioSources": [
+    {
+      "key": "basic-airway",
+      "label": "Basic Airway Assessment & Management",
+      "groupLabel": "Basic Principles Exam 1",
+      "data": "data/basic-airway.json",
+      "format": "canonical",
+      "sets": [
+        1
+      ],
+      "setLabels": {
+        "1": "Basic Airway Assessment & Management"
+      },
+      "count": 500
+    },
+    {
+      "key": "monitoring",
+      "label": "Intraoperative Monitoring & Data Interpretation",
+      "groupLabel": "Basic Principles Exam 1",
+      "data": "data/monitoring.json",
+      "format": "canonical",
+      "sets": [
+        1
+      ],
+      "setLabels": {
+        "1": "Intraoperative Monitoring & Data Interpretation"
+      },
+      "count": 500
+    },
+    {
+      "key": "preop-assessment",
+      "label": "Perioperative Assessment & Evaluation",
+      "groupLabel": "Basic Principles Exam 1",
+      "data": "data/preop-assessment.json",
+      "format": "canonical",
+      "sets": [
+        1
+      ],
+      "setLabels": {
+        "1": "Perioperative Assessment & Evaluation"
+      },
+      "count": 500
+    },
+    {
+      "key": "phases-ga",
+      "label": "Phases of General Anesthesia",
+      "groupLabel": "Basic Principles Exam 1",
+      "data": "data/phases-ga.json",
+      "format": "canonical",
+      "sets": [
+        1
+      ],
+      "setLabels": {
+        "1": "Phases of General Anesthesia"
+      },
+      "count": 500
+    },
+    {
+      "key": "sedation-mac-tiva",
+      "label": "Sedation, MAC & TIVA",
+      "groupLabel": "Basic Principles Exam 1",
+      "data": "data/sedation-mac-tiva.json",
+      "format": "canonical",
+      "sets": [
+        1
+      ],
+      "setLabels": {
+        "1": "Sedation, MAC & TIVA"
+      },
+      "count": 500
+    },
+    {
+      "key": "perioperative-pain",
+      "label": "Perioperative Pain Management",
+      "groupLabel": "Basic Principles Exam 1",
+      "data": "data/perioperative-pain.json",
+      "format": "canonical",
+      "sets": [
+        1
+      ],
+      "setLabels": {
+        "1": "Perioperative Pain Management"
+      },
+      "count": 500
+    },
+    {
+      "key": "misc-na-practice",
+      "label": "Miscellaneous Topics in Nurse Anesthesia Practice",
+      "groupLabel": "Basic Principles Exam 1",
+      "data": "data/misc-na-practice.json",
+      "format": "canonical",
+      "sets": [
+        1
+      ],
+      "setLabels": {
+        "1": "Miscellaneous Topics in Nurse Anesthesia Practice"
+      },
+      "count": 500
+    }
+  ],
   "sync": {
     "schema": 1,
     "mode": "local-first",
@@ -28,10 +133,26 @@
     }
   },
   "contentTaxonomy": {
-    "topics": [],
-    "sourceTitles": []
+    "topics": [
+      "Basic Airway Assessment & Management",
+      "Intraoperative Monitoring & Data Interpretation",
+      "Perioperative Assessment & Evaluation",
+      "Phases of General Anesthesia",
+      "Sedation, MAC & TIVA",
+      "Perioperative Pain Management",
+      "Miscellaneous Topics in Nurse Anesthesia Practice"
+    ],
+    "sourceTitles": [
+      "Basic Airway Assessment & Management",
+      "Intraoperative Monitoring & Data Interpretation",
+      "Perioperative Assessment & Evaluation",
+      "Phases of General Anesthesia",
+      "Sedation, MAC & TIVA",
+      "Perioperative Pain Management",
+      "Miscellaneous Topics in Nurse Anesthesia Practice"
+    ]
   },
-  "sessionEnvironment": "equipment-bank1-practice-set1-v1",
+  "sessionEnvironment": "basic-principles-exam1-v1",
   "defaultBankEngine": "canonical",
   "bankPage": "bank.html",
   "uidNamespace": "bp1"
