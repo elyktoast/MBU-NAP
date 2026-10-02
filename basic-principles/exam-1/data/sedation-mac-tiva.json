@@ -7341,7 +7341,7 @@
       "id": "SED-301",
       "set": 1,
       "type": "single",
-      "stem": "A frail 82-year-old with cirrhosis needs 20 minutes of sedation and a quick wake-up. Which benzodiazepine fits BEST?",
+      "stem": "A frail 82-year-old with cirrhosis needs brief sedation and rapid recovery. Which benzodiazepine best fits?",
       "options": [
         "Remimazolam, an ultra-short esterase-metabolized benzodiazepine",
         "Midazolam, since it is short-acting and well tolerated in older adults",
@@ -7365,7 +7365,7 @@
       "id": "SED-302",
       "set": 1,
       "type": "single",
-      "stem": "Patient A has cirrhosis, and Patient B has dialysis-dependent renal failure. Both receive remimazolam for a procedure. How will their recovery compare with a healthy patient?",
+      "stem": "How should recovery after remimazolam differ in severe hepatic or renal failure compared with a healthy patient?",
       "options": [
         "Similar in both, since tissue esterases metabolize it",
         "Prolonged in A, since it is cleared by the liver",
@@ -7389,7 +7389,7 @@
       "id": "SED-303",
       "set": 1,
       "type": "single",
-      "stem": "After remimazolam and fentanyl for a bronchoscopy, a patient is somnolent with RR 7. You support ventilation. Which reversal agent targets the remimazolam?",
+      "stem": "After remimazolam and fentanyl, a patient is somnolent and hypoventilating. Which antagonist reverses the benzodiazepine component?",
       "options": [
         "Flumazenil",
         "Naloxone",
@@ -7413,7 +7413,7 @@
       "id": "SED-304",
       "set": 1,
       "type": "single",
-      "stem": "A patient with cirrhosis and CKD needs sedation for EGD. Which drug BEST matches the note on organ-independent metabolism?",
+      "stem": "Which sedative best matches organ-independent esterase metabolism in combined hepatic and renal dysfunction?",
       "options": [
         "Remimazolam",
         "Midazolam",
@@ -7437,7 +7437,7 @@
       "id": "SED-305",
       "set": 1,
       "type": "single",
-      "stem": "A frail 82-year-old with severe aortic stenosis needs sedation for a bronchoscopy, and you want minimal hemodynamic change and a predictable wake-up. Which drug fits BEST?",
+      "stem": "A frail patient with severe aortic stenosis needs short sedation with minimal hemodynamic disturbance and predictable recovery. Which drug best fits?",
       "options": [
         "Remimazolam",
         "Ketamine",
@@ -7461,7 +7461,7 @@
       "id": "SED-306",
       "set": 1,
       "type": "multi",
-      "stem": "You consider remimazolam for a frail patient's bronchoscopy. Which statements are true? (Select 2)",
+      "stem": "Which TWO statements about remimazolam are correct? (Select 2)",
       "options": [
         "It enhances GABA-A activity",
         "It is reversible with flumazenil",
@@ -7488,7 +7488,7 @@
       "id": "SED-307",
       "set": 1,
       "type": "single",
-      "stem": "Two older patients receive sedation for colonoscopy: one with midazolam, one with remimazolam. Two hours later, one is still drowsy. Which patient, and why?",
+      "stem": "Compared with remimazolam, why is midazolam more likely to prolong recovery in an older patient?",
       "options": [
         "The midazolam patient, since midazolam can prolong recovery",
         "The remimazolam patient, since it accumulates in older adults",
@@ -7512,7 +7512,7 @@
       "id": "SED-308",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives midazolam and fentanyl for sedation. What is the MOST important risk?",
+      "stem": "Why is the combination of midazolam and fentanyl particularly risky for ventilation?",
       "options": [
         "Respiratory depression from synergy",
         "Hypertension from sympathetic activation",
@@ -7536,7 +7536,7 @@
       "id": "SED-309",
       "set": 1,
       "type": "single",
-      "stem": "You need sedation for a burn dressing change in a patient with an unstable BP and severe pain, and you want spontaneous breathing preserved. Which drug fits BEST?",
+      "stem": "A hypotensive patient requires painful burn dressing care while preserving spontaneous ventilation. Which drug best fits?",
       "options": [
         "Ketamine",
         "Propofol",
@@ -7560,7 +7560,7 @@
       "id": "SED-310",
       "set": 1,
       "type": "multi",
-      "stem": "A patient receives 0.5 mg/kg ketamine for a burn dressing change. Which effects should you anticipate? (Select 3)",
+      "stem": "Which THREE effects should be anticipated after subanesthetic ketamine? (Select 3)",
       "options": [
         "Emergence reactions",
         "Hypersalivation",
@@ -7588,7 +7588,7 @@
       "id": "SED-311",
       "set": 1,
       "type": "single",
-      "stem": "A child receives ketamine for laceration repair and keeps breathing on her own. A trainee suggests removing the capnograph since \"ketamine doesn't stop breathing.\" What is the BEST response?",
+      "stem": "A child breathes spontaneously after ketamine. Why should capnography and airway rescue equipment still remain in use?",
       "options": [
         "Airway complications remain possible; keep monitoring",
         "Ketamine's preserved reflexes make capnography optional",
@@ -7612,7 +7612,7 @@
       "id": "SED-312",
       "set": 1,
       "type": "single",
-      "stem": "For a fracture reduction in a healthy patient, you mix ketamine and propofol 1:1. What is the rationale?",
+      "stem": "Why can a ketamine-propofol combination be advantageous for a brief painful procedure?",
       "options": [
         "Ketamine adds analgesia and offsets propofol's hypotension",
         "Propofol adds analgesia to ketamine",
@@ -7636,7 +7636,7 @@
       "id": "SED-313",
       "set": 1,
       "type": "single",
-      "stem": "For a brief, very painful procedure, you want highly titratable analgesia that wears off quickly. Which drug fits, and what is the trade-off?",
+      "stem": "Which drug best provides rapidly titratable, short-lived analgesia for a brief painful stimulus, and what is its major tradeoff?",
       "options": [
         "Remifentanil, with significant respiratory depression",
         "Morphine, with a long duration that outlasts the procedure",
@@ -7660,7 +7660,7 @@
       "id": "SED-314",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives a rapid 250 mcg fentanyl bolus and the chest becomes rigid, making ventilation impossible. What happened?",
+      "stem": "After a rapid high-dose fentanyl bolus, ventilation becomes impossible because the chest is rigid. What complication occurred?",
       "options": [
         "Opioid-induced chest wall rigidity",
         "Bronchospasm from histamine release",
@@ -7684,7 +7684,7 @@
       "id": "SED-315",
       "set": 1,
       "type": "single",
-      "stem": "A patient receiving remifentanil during MAC has RR 6 with rising ETCO2. What is the BEST action?",
+      "stem": "During remifentanil MAC, RR falls to 6 and ETCO2 rises. What is the best immediate response?",
       "options": [
         "Decrease remifentanil and support ventilation",
         "Increase remifentanil for comfort",
@@ -7708,7 +7708,7 @@
       "id": "SED-316",
       "set": 1,
       "type": "single",
-      "stem": "Which drug choice BEST fits a patient needing analgesia for a painful procedure with rapid onset?",
+      "stem": "Which common sedative adjunct provides rapid-onset analgesia rather than hypnosis?",
       "options": [
         "Fentanyl",
         "Midazolam",
@@ -7732,7 +7732,7 @@
       "id": "SED-317",
       "set": 1,
       "type": "multi",
-      "stem": "You need to add analgesia to a propofol sedation. Which drugs provide analgesia? (Select 4)",
+      "stem": "Which FOUR drugs provide clinically useful analgesia during sedation? (Select 4)",
       "options": [
         "Fentanyl",
         "Remifentanil",
@@ -7761,7 +7761,7 @@
       "id": "SED-318",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a history of emergence reactions requests sedation. Which drug would you MOST likely avoid?",
+      "stem": "A patient has a strong history of unpleasant emergence reactions. Which sedative would be least attractive?",
       "options": [
         "Ketamine",
         "Propofol",
@@ -7785,7 +7785,7 @@
       "id": "SED-319",
       "set": 1,
       "type": "single",
-      "stem": "During sedation for a carotid angiogram, the HR drifts to 42 with stable SpO2. Which agent in the infusion is MOST likely responsible?",
+      "stem": "During carotid angiography, HR falls to 42 after starting sedation. Which agent is the most likely cause?",
       "options": [
         "Dexmedetomidine",
         "Ketamine",
@@ -7809,7 +7809,7 @@
       "id": "SED-320",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives midazolam 2 mg and fentanyl 50 mcg for a colonoscopy. Which drug provides most of the pain relief, and why?",
+      "stem": "A patient receives midazolam plus fentanyl. Which drug provides the analgesic component?",
       "options": [
         "Fentanyl, since midazolam has no analgesic effect",
         "Midazolam, since it has strong analgesic effects",
@@ -7833,7 +7833,7 @@
       "id": "SED-321",
       "set": 1,
       "type": "single",
-      "stem": "A patient needs rapid, titratable sedation with amnesia and quick recovery but has severe liver disease. Which drug BEST fits?",
+      "stem": "Severe liver disease is present, but rapid titration, amnesia, and quick recovery are needed. Which benzodiazepine best fits?",
       "options": [
         "Remimazolam",
         "Midazolam",
@@ -7857,7 +7857,7 @@
       "id": "SED-322",
       "set": 1,
       "type": "single",
-      "stem": "A patient becomes oversedated after a benzodiazepine for a procedure. Which agent can be reversed with flumazenil?",
+      "stem": "Which of these sedatives can be reversed with flumazenil?",
       "options": [
         "Remimazolam",
         "Propofol",
@@ -7881,7 +7881,7 @@
       "id": "SED-323",
       "set": 1,
       "type": "single",
-      "stem": "You start a dexmedetomidine load 5 minutes before a procedure and the patient is still awake. What explains this?",
+      "stem": "A dexmedetomidine load is started shortly before the procedure, but the patient remains awake after 5 minutes. What best explains this?",
       "options": [
         "Dexmedetomidine has a slower onset than many sedatives",
         "The dose was too low",
@@ -7905,7 +7905,7 @@
       "id": "SED-324",
       "set": 1,
       "type": "single",
-      "stem": "Which is the BEST drug choice for a patient requiring sedation with minimal respiratory depression and no need for rapid onset?",
+      "stem": "Which sedative best preserves ventilation when rapid onset is not essential?",
       "options": [
         "Dexmedetomidine",
         "Propofol",
@@ -7929,7 +7929,7 @@
       "id": "SED-325",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives ketamine for a painful dressing change and develops copious secretions. Which drug effect is this?",
+      "stem": "Copious secretions develop after ketamine. Which adverse effect is responsible?",
       "options": [
         "Hypersalivation from ketamine",
         "Emergence reaction from ketamine",
@@ -7953,7 +7953,7 @@
       "id": "SED-326",
       "set": 1,
       "type": "single",
-      "stem": "A patient with chronic pain needs sedation for a painful procedure and you want analgesia with sedation and possible dissociation. Which drug's mechanism is NMDA antagonism?",
+      "stem": "Which sedative-analgesic produces dissociation primarily through NMDA antagonism?",
       "options": [
         "Ketamine",
         "Dexmedetomidine",
@@ -7977,7 +7977,7 @@
       "id": "SED-327",
       "set": 1,
       "type": "single",
-      "stem": "A 70 kg patient needs a remifentanil infusion at 0.1 mcg/kg/min. The concentration is 50 mcg/mL. What pump rate in mL/hr is needed?",
+      "stem": "A 70-kg patient needs remifentanil 0.1 mcg/kg/min from a 50 mcg/mL solution. What pump rate is required?",
       "options": [
         "8.4 mL/hr",
         "0.14 mL/hr",
@@ -8001,7 +8001,7 @@
       "id": "SED-328",
       "set": 1,
       "type": "single",
-      "stem": "Which drug would you AVOID in a patient with severe bradycardia if choosing a sedative?",
+      "stem": "Which sedative should generally be avoided or used very cautiously in severe baseline bradycardia?",
       "options": [
         "Dexmedetomidine",
         "Ketamine",
@@ -8025,7 +8025,7 @@
       "id": "SED-329",
       "set": 1,
       "type": "multi",
-      "stem": "You give midazolam 2 mg before a cataract case. Which effects is it intended to provide? (Select 3)",
+      "stem": "Which THREE effects are expected from midazolam used for procedural sedation? (Select 3)",
       "options": [
         "Anxiolysis",
         "Sedation",
@@ -8053,7 +8053,7 @@
       "id": "SED-330",
       "set": 1,
       "type": "single",
-      "stem": "A 72-year-old receives midazolam 1 mg and fentanyl 25 mcg and becomes apneic. Each dose alone was small. What explains this?",
+      "stem": "Small doses of midazolam and fentanyl together cause apnea. What pharmacologic interaction explains this?",
       "options": [
         "Sedatives and opioids have synergistic respiratory depression",
         "Each drug alone caused apnea",
@@ -8077,7 +8077,7 @@
       "id": "SED-331",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives propofol and remifentanil for sedation. Which risk should be anticipated?",
+      "stem": "Propofol and remifentanil are combined for sedation. Which adverse-effect pairing should be anticipated?",
       "options": [
         "Apnea and hypotension",
         "Hypertension and tachycardia",
@@ -8101,7 +8101,7 @@
       "id": "SED-332",
       "set": 1,
       "type": "single",
-      "stem": "During a MAC tonsil-area biopsy, the surgeon is using electrocautery and you have 4 L/min O2 flowing under the drapes. Which complication is MOST specifically tied to this setup?",
+      "stem": "Electrocautery is used near the face while oxygen flows beneath drapes. Which complication is most specifically increased?",
       "options": [
         "Surgical fire from an oxygen-enriched environment",
         "Local anesthetic systemic toxicity",
@@ -8125,7 +8125,7 @@
       "id": "SED-333",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the MAC OR photo. The patient is having a facial lesion excised under MAC with 4 L oxygen by nasal cannula, and the surgeon plans to use electrocautery. Which visible factor MOST raises fire risk?",
+      "stem": "During facial MAC with open oxygen, what visible draping feature most increases fire risk?",
       "options": [
         "Drapes tented near the face where oxygen can collect",
         "The pulse oximeter on the finger",
@@ -8149,7 +8149,7 @@
       "id": "SED-334",
       "set": 1,
       "type": "single",
-      "stem": "A patient under MAC for a hand case receives a 40 mL axillary block plus IV lidocaine for propofol pain, then the surgeon infiltrates more local. The patient reports tinnitus and a metallic taste. What is the MOST likely diagnosis?",
+      "stem": "During head-and-neck MAC with electrocautery, what oxygen-delivery principle best reduces fire risk?",
       "options": [
         "Local anesthetic systemic toxicity",
         "Propofol infusion syndrome",
@@ -8173,7 +8173,7 @@
       "id": "SED-335",
       "set": 1,
       "type": "single",
-      "stem": "During a lightly sedated EGD, the patient gags as the scope passes, then develops inspiratory stridor with no air movement. What is the MOST likely cause?",
+      "stem": "A patient suddenly coughs and moves during electrocautery near the face. What immediate safety concern becomes dominant?",
       "options": [
         "Laryngospasm from airway stimulation at a light plane",
         "Bronchospasm from deep TIVA with a secured airway in place",
@@ -8197,7 +8197,7 @@
       "id": "SED-336",
       "set": 1,
       "type": "single",
-      "stem": "During EGD under deep sedation, the capnogram flattens and you hear high-pitched inspiratory noise that then goes silent. What is the FIRST action?",
+      "stem": "During MAC, the patient regurgitates and desaturates. What should be the first priority?",
       "options": [
         "Stop stimulation, jaw thrust, positive pressure with 100% O2",
         "Raise nasal cannula flow to 6 L/min and observe",
@@ -8221,7 +8221,7 @@
       "id": "SED-337",
       "set": 1,
       "type": "multi",
-      "stem": "You are preparing for MAC for a facial skin cancer excision with local infiltration and supplemental oxygen under drapes. Which complications should you plan for? (Select 4)",
+      "stem": "Which THREE findings should raise immediate concern for aspiration during MAC? (Select 3)",
       "options": [
         "Laryngospasm needing positive pressure",
         "Local anesthetic systemic toxicity",
@@ -8250,7 +8250,7 @@
       "id": "SED-338",
       "set": 1,
       "type": "single",
-      "stem": "A patient under MAC for colonoscopy vomits and you hear gurgling with new crackles. How did aspiration occur when the patient was \"only sedated\"?",
+      "stem": "During MAC, ETCO2 rises and the patient becomes progressively somnolent despite normal SpO2 on oxygen. What complication is developing?",
       "options": [
         "Protective reflexes were impaired without a secured airway",
         "Sedatives raise gastric acid production and volume",
@@ -8274,7 +8274,7 @@
       "id": "SED-339",
       "set": 1,
       "type": "single",
-      "stem": "A patient with stable CAD develops HR 42 and BP 72/40 after dexmedetomidine loading for MAC. Which complication category fits BEST?",
+      "stem": "A deeply sedated patient becomes hypotensive after repeated propofol boluses. What mechanism is most likely?",
       "options": [
         "Cardiovascular instability from anesthetic drugs",
         "Local anesthetic systemic toxicity from the block",
@@ -8298,7 +8298,7 @@
       "id": "SED-340",
       "set": 1,
       "type": "single",
-      "stem": "During a head and neck MAC case, which step BEST reduces fire risk while keeping the patient oxygenated?",
+      "stem": "During sedation, a patient becomes apneic immediately after an opioid bolus. Which complication should be considered first?",
       "options": [
         "Use the lowest O2 needed and avoid oxygen pooling under drapes",
         "Increase O2 flow to prevent desaturation",
@@ -8322,7 +8322,7 @@
       "id": "SED-341",
       "set": 1,
       "type": "single",
-      "stem": "A patient under MAC for a carotid case receives regional block and becomes suddenly agitated then seizes. What is the MOST likely cause?",
+      "stem": "A patient under MAC develops upper-airway obstruction with snoring and falling tidal volumes. What is the best first maneuver?",
       "options": [
         "Local anesthetic systemic toxicity",
         "Propofol emergence delirium",
@@ -8346,7 +8346,7 @@
       "id": "SED-342",
       "set": 1,
       "type": "single",
-      "stem": "During MAC for a bronchoscopy, laryngospasm develops and SpO2 falls to 82% despite jaw thrust and 100% O2. What may be needed next?",
+      "stem": "Jaw thrust fails to relieve obstruction and SpO2 continues to fall. What is the next priority?",
       "options": [
         "Positive-pressure ventilation or airway instrumentation",
         "Continued nasal oxygen while waiting it out",
@@ -8370,7 +8370,7 @@
       "id": "SED-343",
       "set": 1,
       "type": "single",
-      "stem": "During MAC, three complications occur in three patients: a fire, LAST, and laryngospasm. Which pairing of complication and cause is correct?",
+      "stem": "A patient vomits during MAC but remains spontaneously breathing. What airway-protection concern should dominate management?",
       "options": [
         "Fire: oxygen-enriched environment during head and neck cases",
         "LAST: propofol infusion given without local anesthetic",
@@ -8394,7 +8394,7 @@
       "id": "SED-344",
       "set": 1,
       "type": "single",
-      "stem": "A patient with COPD under MAC becomes somnolent with ETCO2 of 68. Which complication has occurred?",
+      "stem": "During MAC in a remote location, severe hypotension develops and no vasopressors are immediately available. Which systems failure is exposed?",
       "options": [
         "Respiratory depression with hypercarbia",
         "Laryngospasm from airway stimulation",
@@ -8418,7 +8418,7 @@
       "id": "SED-345",
       "set": 1,
       "type": "single",
-      "stem": "What is the BEST way to reduce LAST risk during MAC with regional techniques?",
+      "stem": "A patient becomes profoundly bradycardic after dexmedetomidine. What should the provider do first?",
       "options": [
         "Track the total local anesthetic dose from all sources",
         "Give extra propofol to prevent seizures",
@@ -8442,7 +8442,7 @@
       "id": "SED-346",
       "set": 1,
       "type": "multi",
-      "stem": "Which of the following raise laryngospasm risk during MAC? (Select 2)",
+      "stem": "During ketamine sedation, laryngospasm develops despite preserved spontaneous breathing beforehand. What does this illustrate?",
       "options": [
         "Light sedation with airway stimulation",
         "Secretions near the vocal cords",
@@ -8469,7 +8469,7 @@
       "id": "SED-347",
       "set": 1,
       "type": "single",
-      "stem": "A patient under MAC in a remote GI suite becomes apneic, and help takes 6 minutes to arrive. Why do NORA settings raise the risk of catastrophic outcomes?",
+      "stem": "After a sedative bolus, the patient becomes unresponsive, apneic, and hypotensive. Which overall transition has most likely occurred?",
       "options": [
         "Remote sites limit access to help and airway resources",
         "NORA procedures last longer than comparable OR cases",
@@ -8493,7 +8493,7 @@
       "id": "SED-348",
       "set": 1,
       "type": "single",
-      "stem": "A sedated patient's respiratory rate slows to 4 while SpO2 stays 98% on oxygen. Which complication does capnography MOST directly help prevent?",
+      "stem": "A patient under MAC repeatedly obstructs because the procedural position limits airway access. What should be considered before giving more sedative?",
       "options": [
         "Unrecognized respiratory depression",
         "Hypothermia from cold irrigation fluids in the GI suite",
@@ -8517,7 +8517,7 @@
       "id": "SED-349",
       "set": 1,
       "type": "single",
-      "stem": "A patient under MAC suddenly develops wheezing and desaturation during EGD. Which complication is MOST likely?",
+      "stem": "In a high-fire-risk facial procedure, why is oxygen concentration more important than total flow alone?",
       "options": [
         "Aspiration with impaired protective reflexes",
         "Laryngospasm from the endoscope",
@@ -8541,7 +8541,7 @@
       "id": "SED-350",
       "set": 1,
       "type": "single",
-      "stem": "A patient under MAC for eye surgery becomes hypotensive and bradycardic after a retrobulbar block. Which complication category is MOST relevant?",
+      "stem": "A remote-procedure team lacks a clear plan for who will stop the procedure during an airway emergency. Which safety principle is missing?",
       "options": [
         "Cardiovascular instability from drugs or procedure",
         "Local anesthetic systemic toxicity",
