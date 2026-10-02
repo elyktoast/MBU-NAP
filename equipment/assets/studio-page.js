@@ -70,6 +70,7 @@ function renderStudioLoadState(){
 }
 function addLoadedQuestions(qs){
   if(!qs.length)return;
+  for(const q of qs)if(ALL_BY_UID.has(q.uid))throw Error('duplicate question uid '+q.uid);
   ALL.push(...qs);
   for(const q of qs){
     ALL_BY_UID.set(q.uid,q);
