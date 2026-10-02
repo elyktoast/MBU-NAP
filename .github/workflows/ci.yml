@@ -53,8 +53,12 @@ jobs:
         run: npm run test:cat
 
   browser:
-    name: Browser regression
+    name: Browser regression (${{ matrix.shard }})
     needs: quality
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1/4, 2/4, 3/4, 4/4]
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -67,12 +71,12 @@ jobs:
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
       - name: Run browser regression suite
-        run: npm run test:e2e
+        run: npx playwright test --shard=${{ matrix.shard }}
       - name: Upload Playwright report on failure
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-report-${{ github.run_id }}
+          name: playwright-report-${{ github.run_id }}-${{ strategy.job-index }}
           path: |
             playwright-report/
             test-results/
