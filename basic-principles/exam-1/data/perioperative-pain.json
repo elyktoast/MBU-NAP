@@ -5049,11 +5049,11 @@
       "id": "PAIN-203",
       "set": 1,
       "type": "single",
-      "stem": "At the receptor level, what changes produce opioid tolerance?",
+      "stem": "A chronic opioid user requires progressively larger doses despite unchanged painful pathology. Which receptor adaptation most directly contributes to pharmacodynamic tolerance?",
       "options": [
         "Receptor downregulation and uncoupling",
         "Increased receptor sensitivity",
-        "Increased receptor numbers",
+        "Increased receptor number",
         "Enhanced G-protein coupling"
       ],
       "answer": [
@@ -5179,11 +5179,11 @@
       "id": "PAIN-208",
       "set": 1,
       "type": "single",
-      "stem": "An opioid-naive patient would need about 20 mg of IV morphine in the first 24 hours after a knee replacement. A patient on chronic opioids is having the same surgery. What range should you anticipate?",
+      "stem": "An opioid-naive patient would require about 20 mg IV morphine during the first 24 hours after knee replacement. Using the source's expected 30–100% increase for chronic opioid exposure, which requirement should be anticipated?",
       "options": [
         "About 26–40 mg",
         "About 10–15 mg",
-        "About 20 mg",
+        "Exactly 20 mg",
         "About 60–80 mg"
       ],
       "answer": [
@@ -5279,7 +5279,7 @@
       "id": "PAIN-212",
       "set": 1,
       "type": "single",
-      "stem": "Buprenorphine relieves pain but has a ceiling effect on respiratory depression. Which receptor property explains this?",
+      "stem": "Buprenorphine provides mu-receptor analgesia but exhibits a ceiling on some opioid effects. Which receptor behavior best explains this?",
       "options": [
         "Partial agonism",
         "Full agonism",
@@ -5303,7 +5303,7 @@
       "id": "PAIN-213",
       "set": 1,
       "type": "single",
-      "stem": "Butorphanol relieves pain through kappa receptors but blocks mu receptors. What type of drug is this?",
+      "stem": "Butorphanol provides kappa agonism while antagonizing mu receptors, a combination that can precipitate withdrawal in mu-dependent patients. How is it classified?",
       "options": [
         "Mixed agonist-antagonist",
         "Partial agonist",
@@ -5447,12 +5447,12 @@
       "id": "PAIN-219",
       "set": 1,
       "type": "single",
-      "stem": "A patient arrives for surgery wearing a fentanyl patch for chronic pain. What decision must be made?",
+      "stem": "A chronic-pain patient arrives wearing a fentanyl patch that contributes to baseline opioid exposure. Which perioperative decision must be made deliberately rather than allowing the patch to be managed by default?",
       "options": [
-        "Whether to keep or remove the patch",
-        "Whether to replace it with an IV infusion",
+        "Whether to continue or remove it while maintaining appropriate baseline analgesia",
+        "Whether to replace it automatically with an IV infusion",
         "Whether to apply a second patch",
-        "Whether to cut the patch in half"
+        "Whether to cut the patch to reduce its dose"
       ],
       "answer": [
         0
@@ -5519,7 +5519,7 @@
       "id": "PAIN-222",
       "set": 1,
       "type": "single",
-      "stem": "A patient with metastatic cancer has severe bone pain. What is the mainstay of treatment?",
+      "stem": "A patient with metastatic cancer has severe multifocal bone pain without a focal target for regional intervention. Which medication class remains the mainstay for severe cancer pain?",
       "options": [
         "Opioids",
         "NSAIDs alone",
@@ -5543,12 +5543,12 @@
       "id": "PAIN-223",
       "set": 1,
       "type": "single",
-      "stem": "A patient with pancreatic cancer has severe abdominal pain despite opioids. Which intervention helps?",
+      "stem": "A patient with pancreatic cancer has severe visceral upper-abdominal pain despite systemic opioids and develops dose-limiting sedation. Which targeted intervention can reduce transmission through the visceral sympathetic pathway?",
       "options": [
         "Visceral sympathetic neurolysis",
         "Interscalene block",
         "Femoral block",
-        "Increasing NSAIDs"
+        "Escalating NSAIDs alone"
       ],
       "answer": [
         0
@@ -5695,12 +5695,12 @@
       "id": "PAIN-229",
       "set": 1,
       "type": "single",
-      "stem": "A 24-week preterm infant needs surgery. Is the nociceptive system functional?",
+      "stem": "A 24-week preterm infant requires surgery. Which statement best reflects development of nociception at this gestational age?",
       "options": [
-        "Yes, by 20–24 weeks' gestation",
-        "No, it develops at term",
-        "No, it develops after birth",
-        "After 1 year of age"
+        "The nociceptive system is functional by approximately 20–24 weeks' gestation",
+        "Nociception develops only at term",
+        "Nociception begins only after birth",
+        "Pain pathways are absent until about 1 year"
       ],
       "answer": [
         0
@@ -5901,12 +5901,12 @@
       "id": "PAIN-237",
       "set": 1,
       "type": "single",
-      "stem": "Why is pain control treated as an expected part of postoperative care?",
+      "stem": "A postoperative pathway treats effective pain control as a core recovery goal rather than an optional comfort measure. Which outcome rationale best supports that approach?",
       "options": [
-        "Better outcomes and satisfaction",
-        "It shortens surgery",
-        "It eliminates postoperative nausea",
-        "It reduces anesthetic requirements"
+        "Effective analgesia supports recovery outcomes and patient satisfaction",
+        "Analgesia shortens the surgical procedure",
+        "Analgesia eliminates all postoperative nausea",
+        "Analgesia removes the need for anesthetic drugs"
       ],
       "answer": [
         0
@@ -6189,7 +6189,7 @@
       "id": "PAIN-249",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, RR is 8 with pinpoint pupils. What is MOST likely?",
+      "stem": "During emergence, a spontaneously breathing patient has RR 8/min with pinpoint pupils after repeated opioid doses, while quantitative neuromuscular recovery is adequate. Which cause is most likely?",
       "options": [
         "Excess opioid effect",
         "Inadequate analgesia",
