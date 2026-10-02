@@ -1527,12 +1527,12 @@
       "id": "PRE-063",
       "set": 1,
       "type": "single",
-      "stem": "Which complication is the routine preoperative airway examination primarily intended to anticipate before induction?",
+      "stem": "A patient has reassuring Mallampati anatomy but a full beard, obesity, and limited cervical extension. Why should the airway examination integrate all of these findings?",
       "options": [
-        "Difficulty with mask ventilation or tracheal intubation",
-        "Difficulty with extubation alone",
-        "Postoperative nausea and vomiting",
-        "Aspiration risk alone"
+        "Mask ventilation and tracheal intubation difficulty arise from different predictors, and several modest abnormalities can combine to increase rescue difficulty",
+        "Mallampati class alone predicts both mask ventilation and intubation",
+        "A beard affects laryngoscopy but not mask seal",
+        "Limited cervical extension matters only after extubation"
       ],
       "answer": [
         0
@@ -1623,12 +1623,12 @@
       "id": "PRE-067",
       "set": 1,
       "type": "single",
-      "stem": "A patient previously received extensive neck radiation and now has reduced tissue mobility. How should this history be classified during airway risk assessment?",
+      "stem": "A patient previously received extensive neck radiation and now has fixed, poorly compliant anterior neck tissues despite a modest Mallampati score. What is the key implication?",
       "options": [
-        "An acquired airway anomaly",
-        "A congenital airway anomaly",
-        "A metabolic airway disorder",
-        "A normal airway variant"
+        "An acquired anatomic change may make airway management more difficult than the Mallampati score alone suggests",
+        "Radiation history is irrelevant if mouth opening is normal",
+        "The finding predicts only postoperative nausea",
+        "Neck radiation mandates regional anesthesia"
       ],
       "answer": [
         0
@@ -1671,12 +1671,12 @@
       "id": "PRE-069",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a long-standing action tremor controlled with propranolol. Which neurologic history item does this most likely represent?",
+      "stem": "A patient with long-standing action tremor takes propranolol and has no rigidity or resting tremor. Why should this history be documented before surgery?",
       "options": [
-        "Essential tremor",
-        "Glaucoma",
-        "Tinnitus",
-        "Carpal tunnel syndrome"
+        "It establishes a neurologic baseline and identifies a chronic beta-blocker that may affect perioperative medication planning",
+        "It predicts malignant hyperthermia",
+        "It contraindicates regional anesthesia",
+        "It indicates a difficult airway"
       ],
       "answer": [
         0
@@ -1767,12 +1767,12 @@
       "id": "PRE-073",
       "set": 1,
       "type": "single",
-      "stem": "A 70-kg patient's resting oxygen consumption is about 245 mL/min and rises to about 1,000 mL/min with activity. Approximately what functional capacity does that represent?",
+      "stem": "A 70-kg patient's resting oxygen consumption is about 245 mL/min. During an activity it rises to roughly 1,000 mL/min. Approximately what functional capacity does this represent?",
       "options": [
-        "About 4 METs",
-        "About 1 MET",
-        "About 10 METs",
-        "About 2 METs"
+        "4 METs",
+        "1 MET",
+        "2 METs",
+        "10 METs"
       ],
       "answer": [
         0
@@ -1839,12 +1839,12 @@
       "id": "PRE-076",
       "set": 1,
       "type": "single",
-      "stem": "Which reported activity most strongly supports functional capacity of at least 4 METs?",
+      "stem": "Which activity history most strongly reassures you that a patient can achieve at least moderate functional capacity without symptoms?",
       "options": [
         "Scrubbing floors or moving heavy furniture",
-        "Walking slowly inside the home",
-        "Getting dressed independently",
-        "Eating and bathing without assistance"
+        "Dressing independently",
+        "Eating without assistance",
+        "Walking slowly inside the home"
       ],
       "answer": [
         0
@@ -1887,12 +1887,12 @@
       "id": "PRE-078",
       "set": 1,
       "type": "single",
-      "stem": "A clinician records '5 METs' based only on the patient's description of usual activity. How should that number be interpreted?",
+      "stem": "A patient reports activities corresponding to about 5 METs but has never undergone exercise testing. How should the recorded value be interpreted?",
       "options": [
-        "As a subjective estimate of functional capacity",
-        "As an objective CPET measurement",
-        "As a value derived from ejection fraction",
-        "As a calculation from BMI and resting heart rate"
+        "As a history-based estimate whose accuracy depends on the patient's report",
+        "As a directly measured oxygen-consumption value",
+        "As an objective measurement equivalent to CPET",
+        "As a value calculated from ejection fraction"
       ],
       "answer": [
         0
@@ -1911,12 +1911,12 @@
       "id": "PRE-079",
       "set": 1,
       "type": "single",
-      "stem": "When functional capacity cannot be estimated reliably from history, which approach can provide an objective measurement?",
+      "stem": "A patient's arthritis makes activity history unreliable before an elevated-risk operation. Which test can objectively quantify functional capacity when such measurement would change management?",
       "options": [
-        "Exercise testing or cardiopulmonary exercise testing",
-        "Resting transthoracic echocardiography alone",
-        "A resting ECG with Holter monitoring",
-        "Spirometry with arterial blood gas analysis"
+        "Cardiopulmonary exercise testing or an appropriate exercise test",
+        "Resting ECG alone",
+        "Resting echocardiography alone",
+        "Chest radiography"
       ],
       "answer": [
         0
@@ -1935,12 +1935,12 @@
       "id": "PRE-080",
       "set": 1,
       "type": "single",
-      "stem": "Two patients face the same procedure; one becomes symptomatic after a short walk while the other jogs daily without symptoms. What does the first patient's limited functional capacity generally signal?",
+      "stem": "Two patients face the same elevated-risk procedure. One develops dyspnea after a short walk; the other performs strenuous activity without symptoms. What does the contrast contribute to risk assessment?",
       "options": [
-        "Higher perioperative risk",
-        "Lower anesthetic requirement",
-        "Lower complication risk",
-        "No meaningful difference in risk"
+        "The first patient's limited functional capacity suggests less cardiopulmonary reserve and potentially greater perioperative risk",
+        "Functional capacity is irrelevant when the procedure is the same",
+        "The first patient necessarily has pulmonary rather than cardiac disease",
+        "The second patient requires more cardiac testing because strenuous activity raises myocardial demand"
       ],
       "answer": [
         0
@@ -2010,12 +2010,12 @@
       "id": "PRE-083",
       "set": 1,
       "type": "single",
-      "stem": "A patient climbs two flights of stairs daily without symptoms but has never undergone stress testing. Why is the activity history still useful?",
+      "stem": "A patient climbs two flights of stairs without symptoms but has never had formal exercise testing. Why is that history still clinically useful?",
       "options": [
-        "It provides a practical estimate of cardiopulmonary reserve",
-        "It substitutes for the airway examination",
+        "It provides a practical estimate of functional capacity and cardiopulmonary reserve that can inform whether further testing is likely to add value",
         "It directly measures ejection fraction",
-        "It predicts postoperative nausea risk"
+        "It excludes all coronary disease",
+        "It replaces assessment for active cardiac symptoms"
       ],
       "answer": [
         0
@@ -2154,12 +2154,12 @@
       "id": "PRE-089",
       "set": 1,
       "type": "single",
-      "stem": "A patient swims and performs heavy housework without symptoms. Which conclusion best follows from that history?",
+      "stem": "A patient swims laps and performs heavy housework without chest pain or dyspnea. How should this history influence preoperative cardiac assessment?",
       "options": [
-        "Functional capacity is at least 4 METs with useful reserve",
-        "Functional capacity is below 4 METs",
-        "Functional capacity cannot be estimated without formal stress testing",
-        "Functional capacity is intermediate and requires CPET"
+        "It supports at least moderate functional capacity, but active cardiac symptoms and overall procedural risk still take precedence",
+        "It proves coronary disease is absent",
+        "It mandates CPET because the activities are strenuous",
+        "It eliminates the need to ask about new cardiac symptoms"
       ],
       "answer": [
         0
@@ -2202,12 +2202,12 @@
       "id": "PRE-091",
       "set": 1,
       "type": "single",
-      "stem": "Which patient most clearly demonstrates poor functional capacity?",
+      "stem": "Which history most strongly suggests functional capacity below the commonly used 4-MET threshold?",
       "options": [
-        "One who cannot climb a single flight of stairs because of symptoms",
-        "One who climbs one flight slowly without symptoms",
-        "One who scrubs floors without symptoms",
-        "One who walks uphill daily without stopping"
+        "Stopping during a single flight of stairs because of dyspnea",
+        "Climbing one flight slowly without symptoms",
+        "Scrubbing floors without symptoms",
+        "Walking uphill daily without stopping"
       ],
       "answer": [
         0
@@ -2226,12 +2226,12 @@
       "id": "PRE-092",
       "set": 1,
       "type": "single",
-      "stem": "A patient carries groceries up two flights of stairs without symptoms and has no active cardiac condition. Which inference is most appropriate?",
+      "stem": "A patient carries groceries up two flights of stairs without symptoms and has no active cardiac condition. What is the most useful implication?",
       "options": [
-        "Functional capacity is above 4 METs and suggests adequate reserve",
-        "Functional capacity is below 4 METs and mandates stress testing",
-        "The history provides no useful cardiovascular information",
-        "Cardiology clearance is required solely because of age"
+        "The history supports adequate functional capacity and may reduce the value of additional cardiac testing when no other indication exists",
+        "Stress testing is mandatory because stairs are not objective",
+        "The history excludes coronary artery disease",
+        "Age alone determines whether cardiology consultation is required"
       ],
       "answer": [
         0
@@ -2370,12 +2370,12 @@
       "id": "PRE-098",
       "set": 1,
       "type": "single",
-      "stem": "A patient develops myocardial injury during severe anemia and hypotension without evidence of plaque rupture. Which MI mechanism best fits this scenario?",
+      "stem": "A patient develops perioperative myocardial injury during profound anemia and hypotension without evidence of acute plaque rupture. Which mechanism best explains the event?",
       "options": [
-        "Type II supply-demand mismatch",
-        "Type I plaque rupture",
-        "Type III sudden cardiac death",
-        "Type IV PCI-related MI"
+        "Myocardial oxygen supply-demand imbalance",
+        "Acute coronary plaque rupture with thrombosis",
+        "PCI-related coronary injury",
+        "Sudden cardiac death without biomarker evidence"
       ],
       "answer": [
         0
