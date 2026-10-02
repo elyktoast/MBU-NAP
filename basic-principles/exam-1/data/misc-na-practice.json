@@ -6171,7 +6171,7 @@
       "id": "MISC-251",
       "set": 1,
       "type": "single",
-      "stem": "A patient with influenza coughs into the room without a mask. Which link in the chain of infection is this?",
+      "stem": "A patient with influenza coughs openly into the room. Which link in the chain of infection is being demonstrated?",
       "options": [
         "Portal of exit",
         "Portal of entry",
@@ -6195,7 +6195,7 @@
       "id": "MISC-252",
       "set": 1,
       "type": "single",
-      "stem": "A central line provides a pathway for bacteria into the bloodstream. Which link is this?",
+      "stem": "A central venous catheter provides bacteria a route into the bloodstream. Which link in the chain of infection does this represent?",
       "options": [
         "Portal of entry",
         "Portal of exit",
@@ -6219,9 +6219,9 @@
       "id": "MISC-253",
       "set": 1,
       "type": "single",
-      "stem": "Hand hygiene before touching a patient breaks which link?",
+      "stem": "Hand hygiene before patient contact most directly interrupts which link in the chain of infection?",
       "options": [
-        "Transmission",
+        "Mode of transmission",
         "Reservoir",
         "Infectious agent",
         "Susceptible host"
@@ -6243,12 +6243,12 @@
       "id": "MISC-254",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA disinfects a stopcock before injecting medication. Which APSF strategy is this?",
+      "stem": "A CRNA disinfects an IV stopcock before injecting medication. Which APSF infection-prevention strategy is being used?",
       "options": [
-        "Vascular care with disinfection of ports",
-        "Patient decolonization with nasal antiseptic",
+        "Vascular access care with port disinfection",
+        "Patient decolonization",
         "Environmental cleaning",
-        "Hand hygiene"
+        "Hand hygiene alone"
       ],
       "answer": [
         0
@@ -6267,7 +6267,7 @@
       "id": "MISC-255",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives nasal decolonization before surgery. Which APSF strategy is this?",
+      "stem": "A patient undergoes nasal antiseptic treatment before surgery. Which infection-prevention strategy is this?",
       "options": [
         "Patient decolonization",
         "Vascular care",
@@ -6291,7 +6291,7 @@
       "id": "MISC-256",
       "set": 1,
       "type": "single",
-      "stem": "The anesthesia workstation is cleaned thoroughly between cases. Which APSF strategy is this?",
+      "stem": "The anesthesia workstation is disinfected thoroughly between cases. Which infection-prevention strategy is this?",
       "options": [
         "Environmental cleaning",
         "Vascular care",
@@ -6315,12 +6315,12 @@
       "id": "MISC-257",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA touches a patient's mouth during intubation then adjusts the vaporizer without glove change. Which infection-control principle is violated?",
+      "stem": "After touching the patient's mouth during intubation, a CRNA adjusts a clean vaporizer without changing gloves or cleaning hands. Which principle is violated?",
       "options": [
-        "Clean hands after airway manipulation before clean zones",
-        "Hand hygiene needed after cases",
-        "Gloves are required for sterile procedures",
-        "The vaporizer is a dirty zone and must not be touched"
+        "Perform hand hygiene after airway contamination before touching clean zones",
+        "Hand hygiene is needed only after the case",
+        "Gloves remove the need for hand hygiene",
+        "The vaporizer is considered a dirty zone"
       ],
       "answer": [
         0
@@ -6339,12 +6339,12 @@
       "id": "MISC-258",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA drops a syringe cap on the floor, picks it up, and continues without hand hygiene. What is required?",
+      "stem": "A syringe cap falls to the floor; the CRNA picks it up and then continues working. What should occur before returning to clean tasks?",
       "options": [
-        "Clean hands after picking items off the floor",
-        "No hand hygiene needed if gloves are on",
-        "Wipe the syringe cap and continue the task",
-        "Change gowns, since gloves were on"
+        "Hand hygiene",
+        "No action if gloves are worn",
+        "Wipe the cap and continue",
+        "Change the gown"
       ],
       "answer": [
         0
@@ -6363,12 +6363,12 @@
       "id": "MISC-259",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA uses her cell phone and then prepares medications. What is required?",
+      "stem": "A CRNA uses a cellphone and then begins medication preparation. What should happen first?",
       "options": [
-        "Hand hygiene after touching a cellphone",
-        "Wipe the phone instead of cleaning hands",
-        "Glove change after surgery",
-        "Wipe the medication vial"
+        "Hand hygiene",
+        "Wipe the phone only",
+        "Change gloves after surgery",
+        "Wipe the medication vial only"
       ],
       "answer": [
         0
@@ -6387,12 +6387,12 @@
       "id": "MISC-260",
       "set": 1,
       "type": "single",
-      "stem": "During anesthesia care, how many hand hygiene events per hour does APSF recommend at minimum?",
+      "stem": "What minimum hand-hygiene frequency during anesthesia care is cited by the APSF recommendation?",
       "options": [
-        "8",
-        "2",
-        "4",
-        "12"
+        "8 events per hour",
+        "2 events per hour",
+        "4 events per hour",
+        "12 events per hour"
       ],
       "answer": [
         0
@@ -6411,12 +6411,12 @@
       "id": "MISC-261",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA is about to insert a urinary catheter. Which WHO moment applies?",
+      "stem": "Immediately before urinary-catheter insertion, which WHO hand-hygiene moment applies?",
       "options": [
         "Before a clean or aseptic procedure",
         "After touching patient surroundings",
-        "After body fluid exposure",
-        "Before touching a patient"
+        "After body-fluid exposure",
+        "Before touching the patient"
       ],
       "answer": [
         0
@@ -6435,9 +6435,9 @@
       "id": "MISC-262",
       "set": 1,
       "type": "single",
-      "stem": "Which WHO moment applies after suctioning oral secretions?",
+      "stem": "After suctioning oral secretions, which WHO hand-hygiene moment applies?",
       "options": [
-        "After body fluid exposure risk",
+        "After body-fluid exposure risk",
         "Before touching the patient",
         "Before a clean procedure",
         "After touching patient surroundings"
@@ -6459,10 +6459,10 @@
       "id": "MISC-263",
       "set": 1,
       "type": "single",
-      "stem": "Which WHO moment applies after adjusting the patient's bed rails without touching the patient?",
+      "stem": "After adjusting bed rails without touching the patient, which WHO hand-hygiene moment applies?",
       "options": [
         "After touching patient surroundings",
-        "After touching the patient directly",
+        "After touching the patient",
         "Before touching the patient",
         "Before a clean procedure"
       ],
@@ -6483,11 +6483,11 @@
       "id": "MISC-264",
       "set": 1,
       "type": "single",
-      "stem": "Which WHO moment applies after taking a patient's pulse?",
+      "stem": "After taking a patient's pulse, which WHO hand-hygiene moment applies?",
       "options": [
-        "After touching a patient",
+        "After touching the patient",
         "Before a clean procedure",
-        "After body fluid exposure",
+        "After body-fluid exposure",
         "After touching surroundings"
       ],
       "answer": [
@@ -6507,10 +6507,10 @@
       "id": "MISC-265",
       "set": 1,
       "type": "single",
-      "stem": "A superficial infection appears at the incision on day 10 after surgery. What category is this?",
+      "stem": "An infection limited to skin and subcutaneous tissue appears at the incision on postoperative day 10. Which SSI category is this?",
       "options": [
         "Superficial incisional SSI",
-        "Deep incisional SSI of the fascia",
+        "Deep incisional SSI",
         "Organ/space SSI",
         "Not an SSI"
       ],
@@ -6531,7 +6531,7 @@
       "id": "MISC-266",
       "set": 1,
       "type": "single",
-      "stem": "An infection involving fascia and muscle appears 3 weeks after surgery. What category is this?",
+      "stem": "An infection involving fascia and muscle appears three weeks after surgery. Which SSI category best fits?",
       "options": [
         "Deep incisional SSI",
         "Superficial incisional SSI",
@@ -6555,7 +6555,7 @@
       "id": "MISC-267",
       "set": 1,
       "type": "single",
-      "stem": "An abscess forms in the abdominal cavity 25 days after bowel surgery. What category is this?",
+      "stem": "An intra-abdominal abscess forms 25 days after bowel surgery. Which SSI category best fits?",
       "options": [
         "Organ/space SSI",
         "Superficial incisional SSI",
@@ -6579,12 +6579,12 @@
       "id": "MISC-268",
       "set": 1,
       "type": "single",
-      "stem": "A hospital asks why it must report its SSI rates. What is the reason?",
+      "stem": "Why do hospitals track and report SSI rates?",
       "options": [
-        "Surveillance and tracking are expected",
-        "It is required for physician credentialing",
-        "Tracking is required for surgeons",
-        "Tracking replaces prevention"
+        "Surveillance and quality tracking are expected components of prevention",
+        "Only physician credentialing requires it",
+        "Only surgeons are responsible for tracking",
+        "Tracking replaces prevention efforts"
       ],
       "answer": [
         0
@@ -6603,12 +6603,12 @@
       "id": "MISC-269",
       "set": 1,
       "type": "multi",
-      "stem": "What effects do SSIs have? (Select 2)",
+      "stem": "Which two consequences are commonly associated with surgical-site infections? (Select 2)",
       "options": [
-        "Increased length of stay",
+        "Longer hospital stay",
         "Readmission",
         "Fewer outpatient visits",
-        "Shorter hospital stay",
+        "Shorter hospitalization",
         "Lower mortality",
         "Reduced costs"
       ],
@@ -6630,12 +6630,12 @@
       "id": "MISC-270",
       "set": 1,
       "type": "single",
-      "stem": "Cefazolin is given 90 minutes before incision for a hip replacement. Is the timing appropriate?",
+      "stem": "Cefazolin is administered 90 minutes before incision. Why is this timing suboptimal?",
       "options": [
-        "No; most antibiotics should be given within 60 minutes of incision",
-        "Yes; 90 minutes is acceptable for cefazolin",
-        "Yes; all antibiotics can be given within 120 minutes",
-        "No; antibiotics should be given after incision"
+        "Most prophylactic antibiotics should be given within 60 minutes before incision",
+        "Cefazolin is effective only if given more than 90 minutes early",
+        "All antibiotics use a 120-minute window",
+        "Prophylactic antibiotics should begin after incision"
       ],
       "answer": [
         0
@@ -6654,12 +6654,12 @@
       "id": "MISC-271",
       "set": 1,
       "type": "single",
-      "stem": "Vancomycin was started at 0720 for a 0900 incision. Is this appropriate?",
+      "stem": "Vancomycin is started 100 minutes before incision. Which interpretation is correct?",
       "options": [
-        "Yes, 100 minutes is within the 120-minute window",
-        "No, it must start within 60 minutes",
-        "No, it must start after incision",
-        "No, it must start 3 hours before"
+        "The timing is appropriate because vancomycin may begin within a 120-minute window",
+        "It must begin within 60 minutes",
+        "It should start after incision",
+        "It must start at least 3 hours before incision"
       ],
       "answer": [
         0
@@ -6678,11 +6678,11 @@
       "id": "MISC-272",
       "set": 1,
       "type": "single",
-      "stem": "A patient's temperature is 95.8 °F at the end of surgery. Which SSI prevention measure was missed?",
+      "stem": "A patient's temperature is 95.8°F at the end of surgery. Which SSI-prevention target was not met?",
       "options": [
-        "Normothermia (>97 °F)",
-        "Glycemic control (<180 mg/dL)",
-        "Adequate oxygenation (FiO2 >0.8)",
+        "Normothermia above about 97°F",
+        "Glycemic control below 180 mg/dL",
+        "High inspired oxygen",
         "Normovolemia"
       ],
       "answer": [
@@ -6702,11 +6702,11 @@
       "id": "MISC-273",
       "set": 1,
       "type": "single",
-      "stem": "A diabetic patient has intraop glucose of 240 mg/dL. Which SSI prevention measure is not met?",
+      "stem": "A diabetic patient's intraoperative glucose is 240 mg/dL. Which SSI-prevention target was not met?",
       "options": [
-        "Glycemic control under 180 mg/dL",
-        "Normothermia above 97 °F",
-        "Antibiotic timing within 60 minutes",
+        "Glycemic control below 180 mg/dL",
+        "Normothermia above 97°F",
+        "Antibiotic timing",
         "Normovolemia"
       ],
       "answer": [
@@ -6726,12 +6726,12 @@
       "id": "MISC-274",
       "set": 1,
       "type": "single",
-      "stem": "A spine fusion reaches hour 5, and the cefazolin given at incision has a 4-hour redosing interval. What should you do?",
+      "stem": "A spine fusion reaches hour 5 after cefazolin was given at incision, and the redosing interval is 4 hours. What should happen?",
       "options": [
-        "Redose the antibiotic",
-        "Wait until 6 hours, since the case is clean",
+        "Redose cefazolin",
+        "Wait until hour 6",
         "Stop antibiotics after incision",
-        "Switch to vancomycin automatically"
+        "Switch automatically to vancomycin"
       ],
       "answer": [
         0
@@ -6750,12 +6750,12 @@
       "id": "MISC-275",
       "set": 1,
       "type": "single",
-      "stem": "An ERAS colectomy pathway emphasizes goal-directed fluid therapy. Which SSI prevention measure does this align with?",
+      "stem": "A colectomy ERAS pathway uses goal-directed fluid therapy. Which SSI-prevention principle does this support?",
       "options": [
         "Normovolemia",
         "Liberal fluid loading",
         "Hypothermia",
-        "Hyperglycemia"
+        "Permissive hyperglycemia"
       ],
       "answer": [
         0
@@ -6774,12 +6774,12 @@
       "id": "MISC-276",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA intubates a patient with suspected influenza. Which PPE is recommended?",
+      "stem": "A CRNA intubates a patient with suspected influenza. Which PPE set best matches aerosol precautions?",
       "options": [
-        "Gloves, gown, eye protection, and a mask",
-        "Gloves, since intubation is quick",
-        "Surgical mask and gloves",
-        "Gloves and a face shield"
+        "Gloves, gown, eye protection, and appropriate respiratory protection",
+        "Gloves only",
+        "Surgical mask and gloves only",
+        "Gloves and face shield only"
       ],
       "answer": [
         0
@@ -6798,12 +6798,12 @@
       "id": "MISC-277",
       "set": 1,
       "type": "single",
-      "stem": "A patient with an active respiratory infection needs several procedures. Which carries a higher transmission risk as an AGP?",
+      "stem": "Which procedure in a patient with active respiratory infection carries the higher aerosol-transmission risk?",
       "options": [
         "Tracheostomy insertion or suctioning",
         "Peripheral IV insertion",
-        "Ultrasound-guided arterial line placement",
-        "Urinary catheter insertion"
+        "Arterial-line placement",
+        "Urinary-catheter insertion"
       ],
       "answer": [
         0
@@ -6822,12 +6822,12 @@
       "id": "MISC-278",
       "set": 1,
       "type": "single",
-      "stem": "During an influenza surge, a patient needs bag-mask ventilation before intubation. How is this classified?",
+      "stem": "Bag-mask ventilation before intubation in a patient with influenza is classified how for infection control?",
       "options": [
-        "An AGP with higher transmission risk",
+        "A higher-risk aerosol-generating procedure",
         "A low-risk procedure",
         "An unclear-risk AGP",
-        "A non-AGP procedure"
+        "A non-AGP"
       ],
       "answer": [
         0
@@ -6846,12 +6846,12 @@
       "id": "MISC-279",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA places a patient with influenza on CPAP in PACU. How should this be classified for infection control?",
+      "stem": "A patient with influenza is placed on CPAP in PACU. How should this be treated for infection-control purposes?",
       "options": [
-        "An AGP with increased transmission risk",
-        "A low-risk procedure needing no PPE",
-        "An unclear-risk AGP",
-        "Not an AGP, since CPAP is a closed system"
+        "As an aerosol-generating procedure with increased transmission risk",
+        "As a low-risk procedure",
+        "As a non-AGP because the system is closed",
+        "As a routine oxygen-delivery method without added precautions"
       ],
       "answer": [
         0
@@ -6870,7 +6870,7 @@
       "id": "MISC-280",
       "set": 1,
       "type": "single",
-      "stem": "During a code in a patient with a respiratory infection, which procedure is classified as an AGP with unclear risk?",
+      "stem": "During a code in a patient with respiratory infection, which procedure is listed as an AGP with less certain transmission risk?",
       "options": [
         "Defibrillation",
         "Tracheal intubation",
@@ -6894,12 +6894,12 @@
       "id": "MISC-281",
       "set": 1,
       "type": "single",
-      "stem": "A patient requires open suctioning of secretions. What classification applies?",
+      "stem": "Open suctioning of airway secretions is classified as what?",
       "options": [
-        "Additional AGP",
-        "Unclear-risk AGP",
+        "An additional aerosol-generating procedure",
+        "An unclear-risk AGP only",
         "Not an AGP",
-        "Low-risk procedure"
+        "A low-risk procedure"
       ],
       "answer": [
         0
@@ -6918,12 +6918,12 @@
       "id": "MISC-282",
       "set": 1,
       "type": "single",
-      "stem": "A patient requires high-frequency oscillatory ventilation. What classification applies?",
+      "stem": "High-frequency oscillatory ventilation is classified as what?",
       "options": [
-        "Additional AGP",
-        "Unclear-risk AGP",
+        "An additional aerosol-generating procedure",
+        "An unclear-risk AGP",
         "Not an AGP",
-        "Low-risk procedure"
+        "A low-risk procedure"
       ],
       "answer": [
         0
@@ -6942,12 +6942,12 @@
       "id": "MISC-283",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA adjusts a non-invasive ventilation mask. How is this categorized?",
+      "stem": "Adjustment of a noninvasive-ventilation mask is categorized how in the cited material?",
       "options": [
-        "Unclear-risk AGP",
-        "High-risk AGP",
+        "An unclear-risk AGP",
+        "A definitively high-risk AGP",
         "Not an AGP",
-        "Additional AGP with known higher risk"
+        "A proven additional AGP"
       ],
       "answer": [
         0
@@ -6966,12 +6966,12 @@
       "id": "MISC-284",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives nebulized albuterol in PACU. How is this categorized?",
+      "stem": "Nebulized albuterol in PACU is categorized how in the cited material?",
       "options": [
-        "Unclear-risk AGP",
-        "High-risk AGP",
+        "An unclear-risk AGP",
+        "A definitively high-risk AGP",
         "Not an AGP",
-        "Additional AGP with known higher risk"
+        "A proven additional AGP"
       ],
       "answer": [
         0
@@ -6990,10 +6990,10 @@
       "id": "MISC-285",
       "set": 1,
       "type": "single",
-      "stem": "A ventilator circuit is disconnected for a circuit change in a patient with influenza. How is this categorized?",
+      "stem": "Disconnecting a ventilator circuit for a circuit change in a patient with influenza is categorized how?",
       "options": [
         "An unclear-risk AGP",
-        "A high-risk AGP",
+        "A definitively high-risk AGP",
         "A non-AGP",
         "A low-risk procedure"
       ],
@@ -7014,10 +7014,10 @@
       "id": "MISC-286",
       "set": 1,
       "type": "multi",
-      "stem": "Which surgical procedures are AGPs? (Select 3)",
+      "stem": "Which three procedures are considered aerosol-generating surgical or procedural activities? (Select 3)",
       "options": [
         "Upper airway surgery",
-        "Surgery with high-speed devices",
+        "Surgery using high-speed devices",
         "Upper GI endoscopy",
         "Skin grafting",
         "Carpal tunnel release",
@@ -7042,7 +7042,7 @@
       "id": "MISC-287",
       "set": 1,
       "type": "single",
-      "stem": "A department improves N95 use during AGPs. Which APSF safety priority does this support?",
+      "stem": "A department improves N95 use during AGPs. Which APSF safety priority is most directly supported?",
       "options": [
         "Infection and microbial transmission",
         "Medication safety",
@@ -7066,9 +7066,9 @@
       "id": "MISC-288",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA reports burnout and emotional exhaustion. Which APSF priority applies?",
+      "stem": "A CRNA reports severe emotional exhaustion and burnout symptoms. Which APSF priority does this fall under?",
       "options": [
-        "Burnout",
+        "Burnout and clinician well-being",
         "Airway management",
         "Medication safety",
         "Non-OR safety"
@@ -7090,11 +7090,11 @@
       "id": "MISC-289",
       "set": 1,
       "type": "single",
-      "stem": "A patient in the MRI suite suffers an airway emergency with limited resources. Which APSF priority applies?",
+      "stem": "An airway emergency occurs in the MRI suite where resources and access are limited. Which APSF priority is most directly implicated?",
       "options": [
-        "Safety in non-operating room locations",
+        "Safety in non-operating-room locations",
         "Burnout",
-        "Medication safety and labeling practices",
+        "Medication safety",
         "Delirium"
       ],
       "answer": [
@@ -7114,12 +7114,12 @@
       "id": "MISC-290",
       "set": 1,
       "type": "single",
-      "stem": "A patient develops postoperative delirium after surgery. Which APSF priority applies?",
+      "stem": "A patient develops postoperative delirium. Which APSF priority is most directly relevant?",
       "options": [
         "Perioperative delirium and brain health",
-        "Burnout among anesthesia professionals and staff",
+        "Burnout",
         "Handoffs",
-        "Infections"
+        "Infection control"
       ],
       "answer": [
         0
@@ -7138,11 +7138,11 @@
       "id": "MISC-291",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA grabs a vial of labetalol instead of ephedrine because the vials look alike. Which APSF priority applies?",
+      "stem": "A provider selects labetalol instead of ephedrine because the vials look alike. Which APSF priority is most directly implicated?",
       "options": [
         "Medication safety",
         "Infection control",
-        "Workforce burnout",
+        "Burnout",
         "Perioperative delirium"
       ],
       "answer": [
@@ -7162,10 +7162,10 @@
       "id": "MISC-292",
       "set": 1,
       "type": "single",
-      "stem": "A team struggles to secure a difficult airway without proper equipment. Which APSF priority applies?",
+      "stem": "A difficult airway deteriorates because appropriate equipment is not immediately available. Which APSF priority is most directly implicated?",
       "options": [
-        "Airway management difficulties, skills, and equipment",
-        "Medication safety and prevention of drug errors",
+        "Airway management skills and equipment",
+        "Medication safety",
         "Burnout",
         "Non-OR safety"
       ],
@@ -7186,12 +7186,12 @@
       "id": "MISC-293",
       "set": 1,
       "type": "single",
-      "stem": "A patient deteriorates on the ward after surgery but early warning signs were missed. Which APSF priority applies?",
+      "stem": "A postoperative patient deteriorates on the ward because early warning signs are missed. Which APSF priority applies?",
       "options": [
         "Preventing, detecting, and mitigating clinical deterioration",
         "Burnout",
-        "Medication safety across the perioperative period",
-        "Non-OR safety during remote procedures"
+        "Medication safety",
+        "Non-OR safety"
       ],
       "answer": [
         0
@@ -7210,11 +7210,11 @@
       "id": "MISC-294",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA is distracted by a colleague's conversation during emergence and misses laryngospasm. Which APSF priority applies?",
+      "stem": "During emergence, a colleague's conversation distracts the CRNA and laryngospasm is missed. Which APSF priority applies?",
       "options": [
         "Distractions in procedural areas",
         "Medication safety",
-        "Delirium and cognitive dysfunction after surgery",
+        "Delirium",
         "Infection control"
       ],
       "answer": [
@@ -7234,12 +7234,12 @@
       "id": "MISC-295",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA continuously watches the patient, field, and monitors, and understands how each finding fits the case. What does this describe?",
+      "stem": "A CRNA continuously integrates the patient, monitors, surgical field, and evolving context rather than relying on isolated data points. What does this describe?",
       "options": [
-        "Situational awareness through continuous observation",
-        "Memorizing the surgeon's steps",
-        "Reviewing the chart once before induction",
-        "Relying on monitor alarms to detect problems"
+        "Situational awareness",
+        "Memorizing surgical steps",
+        "Single-time chart review",
+        "Alarm dependence"
       ],
       "answer": [
         0
@@ -7258,12 +7258,12 @@
       "id": "MISC-296",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA relies on automated BP cycling and stops looking at the patient. What risk does this illustrate?",
+      "stem": "A CRNA relies on automated blood-pressure cycling and stops actively observing the patient. Which human-factors risk is illustrated?",
       "options": [
-        "Passive monitoring and reduced vigilance",
-        "Improved vigilance from automation",
-        "Reduced fatigue from automation",
-        "Improved situational awareness through automation"
+        "Passive monitoring with reduced vigilance",
+        "Improved vigilance",
+        "Reduced fatigue without tradeoff",
+        "Improved situational awareness"
       ],
       "answer": [
         0
@@ -7282,12 +7282,12 @@
       "id": "MISC-297",
       "set": 1,
       "type": "single",
-      "stem": "Three hours into a stable laparoscopy, a CRNA notices her attention drifting. What is the BEST response?",
+      "stem": "Three hours into an uneventful case, a CRNA notices attention drifting. What is the safest response?",
       "options": [
-        "Make a deliberate effort to avoid distraction and refocus",
-        "Relax attention since the case is stable",
+        "Deliberately refocus and reduce distraction",
+        "Relax because the case is stable",
         "Rely on alarms until stimulation increases",
-        "Rely on alarms until something changes"
+        "Wait until a parameter changes"
       ],
       "answer": [
         0
@@ -7306,10 +7306,10 @@
       "id": "MISC-298",
       "set": 1,
       "type": "single",
-      "stem": "During sudden hypotension, the CRNA keeps increasing phenylephrine and turning down the volatile, sure it is anesthetic depth, while the suction canister fills with blood. Which fixation error is this?",
+      "stem": "During sudden hypotension, a CRNA keeps treating presumed anesthetic depth while the suction canister rapidly fills with blood. Which fixation error is this?",
       "options": [
         "Cognitive tunnel vision",
-        "Avoidance error from dismissing hemorrhage",
+        "Avoidance error",
         "Artifact error",
         "Alarm fatigue"
       ],
@@ -7330,7 +7330,7 @@
       "id": "MISC-299",
       "set": 1,
       "type": "single",
-      "stem": "Hives and hypotension appear after cefazolin, but the CRNA says \"anaphylaxis is too rare\" and treats as light anesthesia. Which fixation error is this?",
+      "stem": "Hives and hypotension follow cefazolin, but the CRNA dismisses anaphylaxis because it is uncommon. Which fixation error is this?",
       "options": [
         "Avoidance error",
         "Tunnel vision",
@@ -7354,12 +7354,12 @@
       "id": "MISC-300",
       "set": 1,
       "type": "single",
-      "stem": "The SpO2 reads 82% and the CRNA assumes the probe slipped, without checking the patient. Which fixation error is this?",
+      "stem": "SpO2 reads 82%, and the CRNA assumes the probe slipped without checking the patient. Which fixation error is this?",
       "options": [
         "Artifact error",
         "Avoidance error",
         "Tunnel vision",
-        "Cognitive aid error"
+        "Cognitive-aid error"
       ],
       "answer": [
         0
