@@ -11156,7 +11156,7 @@
       "id": "PAIN-455",
       "set": 1,
       "type": "single",
-      "stem": "A patient's pain assessment shows it worsens with coughing. What does this identify?",
+      "stem": "A postoperative patient reports that pain is tolerable at rest but becomes severe with coughing. In a structured pain history, how should coughing be classified?",
       "options": [
         "An exacerbating factor",
         "A relieving factor",
@@ -11180,7 +11180,7 @@
       "id": "PAIN-456",
       "set": 1,
       "type": "single",
-      "stem": "A patient says ice helps her pain. What does this identify?",
+      "stem": "A patient reports that applying ice consistently decreases incisional pain. In a structured pain assessment, what does this identify?",
       "options": [
         "A relieving factor",
         "An exacerbating factor",
@@ -11204,11 +11204,11 @@
       "id": "PAIN-457",
       "set": 1,
       "type": "single",
-      "stem": "A patient says pain interferes with walking. Which assessment feature is this?",
+      "stem": "A patient says postoperative pain prevents walking to the bathroom despite tolerable pain at rest. Which assessment domain is most directly affected?",
       "options": [
-        "Interference with activities of daily living",
-        "Temporal pattern of the pain",
-        "Radiation of the pain into the leg or buttock",
+        "Interference with function and activities of daily living",
+        "Temporal pattern",
+        "Radiation",
         "Associated psychological symptoms"
       ],
       "answer": [
@@ -11324,12 +11324,12 @@
       "id": "PAIN-462",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives opioids and has constipation. Which adverse effect category is this?",
+      "stem": "A patient receiving repeated opioids develops constipation without signs of withdrawal or another acute abdominal process. How should this finding be classified?",
       "options": [
-        "Opioid adverse effect",
+        "A common opioid adverse effect",
         "Opioid-induced hyperalgesia",
-        "Local anesthetic toxicity",
-        "Withdrawal symptom"
+        "Local-anesthetic toxicity",
+        "Opioid withdrawal"
       ],
       "answer": [
         0
@@ -11372,10 +11372,10 @@
       "id": "PAIN-464",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives opioids and has urinary retention. What should be done?",
+      "stem": "After neuraxial and systemic opioid exposure, a patient develops suprapubic fullness and inability to void. Which response best addresses this recognized opioid adverse effect?",
       "options": [
-        "Monitor bladder and manage retention",
-        "Continue, since retention is expected and self-limited",
+        "Assess bladder volume and manage urinary retention",
+        "Ignore it because retention is always self-limited",
         "Increase opioid dose",
         "Give flumazenil"
       ],
@@ -11756,12 +11756,12 @@
       "id": "PAIN-480",
       "set": 1,
       "type": "single",
-      "stem": "The surgeon begins closing after a laparoscopic hernia repair and has not injected local anesthetic. What should you do?",
+      "stem": "As closure begins after laparoscopic hernia repair, the planned local infiltration has not yet been performed and the cumulative local-anesthetic dose remains acceptable. Which action best preserves the multimodal plan?",
       "options": [
-        "Remind the surgeon to infiltrate before emergence",
-        "Give extra IV opioid at emergence",
-        "Give extra opioids instead",
-        "Skip local anesthetic"
+        "Prompt the surgeon to perform the planned infiltration before emergence",
+        "Replace the infiltration automatically with extra IV opioid",
+        "Wait until severe PACU pain develops",
+        "Omit local anesthetic because closure has started"
       ],
       "answer": [
         0
@@ -11856,12 +11856,12 @@
       "id": "PAIN-484",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives opioids and becomes hypotensive with a HR of 50. What should be checked first?",
+      "stem": "After opioid and sedative administration, a patient becomes hypotensive with HR 50/min. Before reflexively giving another analgesic or reversal drug, which immediate assessment best characterizes the hemodynamic problem?",
       "options": [
-        "Rhythm and blood pressure",
-        "Pain score and last opioid dose",
-        "Temperature",
-        "Glucose"
+        "Confirm rhythm, blood pressure, perfusion, and medication context",
+        "Repeat the pain score only",
+        "Check temperature first",
+        "Check glucose before evaluating circulation"
       ],
       "answer": [
         0
@@ -11928,12 +11928,12 @@
       "id": "PAIN-487",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives dexamethasone for PONV and analgesia. What is a planning consideration?",
+      "stem": "Dexamethasone is planned for both PONV prophylaxis and a modest analgesic benefit during a several-hour case. Which timing principle best supports its use?",
       "options": [
-        "Plan timing based on onset and effects",
-        "Give it in PACU",
-        "Avoid in all diabetics without discussion",
-        "Give it after extubation"
+        "Administer with enough lead time for its delayed onset to contribute to the intended effects",
+        "Wait until PACU because onset is immediate",
+        "Avoid it in every patient with diabetes",
+        "Give it only after extubation"
       ],
       "answer": [
         0
@@ -11976,12 +11976,12 @@
       "id": "PAIN-489",
       "set": 1,
       "type": "single",
-      "stem": "A patient with chronic pain uses gabapentin daily. Should it be continued?",
+      "stem": "A chronic-pain patient takes gabapentin daily and has a neuropathic component to the expected postoperative pain. Which perioperative approach best avoids an unnecessary gap in multimodal therapy?",
       "options": [
-        "Consider continuing as part of the multimodal plan",
-        "Stop it the week before surgery",
+        "Consider continuing/resuming gabapentin as part of the individualized plan",
+        "Stop it routinely one week before surgery",
         "Replace it with nalbuphine",
-        "Double it the morning of surgery"
+        "Automatically double the morning dose"
       ],
       "answer": [
         0
@@ -12120,12 +12120,12 @@
       "id": "PAIN-495",
       "set": 1,
       "type": "single",
-      "stem": "A patient has visceral pain after bowel surgery. Which description fits?",
+      "stem": "After bowel surgery, a patient describes diffuse cramping abdominal pain that is difficult to localize and occasionally referred away from the operative site. Which pain type best fits?",
       "options": [
-        "Poorly localized, cramping, possibly referred",
-        "Sharp, well localized, and throbbing at the incision",
-        "Electric and shooting",
-        "Superficial and throbbing"
+        "Visceral pain",
+        "Superficial somatic pain",
+        "Peripheral neuropathic pain",
+        "Deep somatic pain"
       ],
       "answer": [
         0
