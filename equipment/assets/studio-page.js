@@ -157,7 +157,7 @@ function norm(q,b,set,i,label,forcedTopic){
   const opts=Array.isArray(q.options)?q.options:(Array.isArray(q.c)?q.c:[]);
   const rawSrc=q.citation??((q.src||'')+(q.page?' · '+q.page:''))??'';
   const src=Array.isArray(rawSrc)?rawSrc.join('; '):String(rawSrc||((q.ref||[]).join('; ')));
-  const stem=String(q.stem||q.q||''),exp=String(q.explanation||q.why||q.exp||''),topic=canonicalTopic(forcedTopic||inferredTopic(q));return{uid:b+'-'+(q.id??(set+'-'+i)),bank:b,bankLabel:label||b,set,seq:i,topic,stem,opts,ans,exp,src,img:q.imageSvg||q.img||q.image||null,type:String(q.type||''),concept:String(q.concept||''),disc:String(q.disc||''),sourceTitle:String(q.sourceTitle||''),sourceMeta:q.sourceMeta&&typeof q.sourceMeta==='object'?q.sourceMeta:null,searchText:(stem+' '+topic+' '+exp+' '+src).toLowerCase()}
+  const stem=String(q.stem||q.q||''),exp=String(q.explanation||q.why||q.exp||''),topic=canonicalTopic(forcedTopic||inferredTopic(q));return{uid:b+'-'+(q.id??(set+'-'+i)),bank:b,bankLabel:label||b,set,seq:i,topic,stem,opts,ans,exp,src,img:q.img||q.imageSvg||q.image||null,type:String(q.type||''),concept:String(q.concept||''),disc:String(q.disc||''),sourceTitle:String(q.sourceTitle||''),sourceMeta:q.sourceMeta&&typeof q.sourceMeta==='object'?q.sourceMeta:null,searchText:(stem+' '+topic+' '+exp+' '+src).toLowerCase()}
 }
 function syncBankData(){
   let syncChanged=false;
