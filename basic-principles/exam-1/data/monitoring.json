@@ -9844,12 +9844,12 @@
       "id": "MON-401",
       "set": 1,
       "type": "single",
-      "stem": "A cooperative 3-year-old tolerates a pulse oximeter before mask induction. What is the main value of applying it before anesthetic exposure?",
+      "stem": "A cooperative 3-year-old tolerates pulse oximetry before mask induction. Why is obtaining the preinduction value useful?",
       "options": [
-        "Baseline values before induction",
-        "No monitors needed after induction",
-        "Prevention of emergence delirium",
-        "Less need for capnography"
+        "It establishes a baseline against which changes after anesthetic exposure can be interpreted",
+        "It eliminates the need for pulse oximetry after induction",
+        "It predicts emergence delirium",
+        "It replaces capnography after airway placement"
       ],
       "answer": [
         0
@@ -9868,12 +9868,12 @@
       "id": "MON-402",
       "set": 1,
       "type": "single",
-      "stem": "In a patient with severe obesity, which NIBP problem is most likely if cuff selection is not individualized?",
+      "stem": "A patient with severe obesity has a short, conical upper arm and inconsistent oscillometric pressures. Which technical issue should be corrected before treating the values?",
       "options": [
-        "Cuff size mismatch leading to inaccurate readings",
-        "Falsely low readings from cuff placement",
-        "Loss of oscillometric signal from adipose tissue",
-        "Inability to measure BP noninvasively"
+        "Cuff bladder size and fit may be inappropriate for the arm geometry",
+        "Adipose tissue makes noninvasive pressure measurement impossible",
+        "Oscillometry always reads falsely low in obesity",
+        "The cuff should be made as tight and narrow as possible"
       ],
       "answer": [
         0
@@ -9892,12 +9892,12 @@
       "id": "MON-403",
       "set": 1,
       "type": "single",
-      "stem": "Why is frequent BP monitoring especially important during induction of general anesthesia in pregnancy?",
+      "stem": "A pregnant patient undergoing GA becomes hypotensive shortly after induction and supine positioning. Why is frequent BP reassessment especially important at this point?",
       "options": [
-        "Anesthetic drugs and position can cause rapid hypotension",
-        "Pregnancy prevents NIBP accuracy",
-        "Pregnancy requires arterial lines for GA cases",
-        "Pregnancy increases cuff injury risk"
+        "Anesthetic vasodilation plus aortocaval compression can produce rapid hemodynamic change",
+        "Pregnancy makes all oscillometric measurements inaccurate",
+        "General anesthesia in pregnancy always requires an arterial catheter",
+        "Frequent cuff cycling prevents aortocaval compression"
       ],
       "answer": [
         0
@@ -9916,12 +9916,12 @@
       "id": "MON-404",
       "set": 1,
       "type": "single",
-      "stem": "A provider uses only SpO2 to judge ventilation during anesthesia. What dangerous limitation does this create?",
+      "stem": "During deep sedation on supplemental oxygen, respiratory rate falls and ETCO2 rises while SpO2 remains 99%. Why would relying on SpO2 alone be dangerous?",
       "options": [
-        "SpO2 may lag hypoventilation by minutes",
-        "SpO2 is inaccurate at 98%",
-        "SpO2 detects apnea faster than ETCO2",
-        "SpO2 measures CO2 directly"
+        "Supplemental oxygen can delay desaturation despite clinically important hypoventilation",
+        "SpO2 directly measures PaCO2",
+        "Normal SpO2 proves alveolar ventilation is adequate",
+        "Pulse oximetry detects apnea before capnography"
       ],
       "answer": [
         0
@@ -9940,12 +9940,12 @@
       "id": "MON-405",
       "set": 1,
       "type": "single",
-      "stem": "SpO2 reads 92%, and the provider assumes artifact without checking the patient. What should be done first?",
+      "stem": "SpO2 abruptly reads 92% after having been 99%. The provider suspects artifact because the probe has been troublesome. What should occur before dismissing the alarm?",
       "options": [
-        "Evaluate the patient and signal before dismissing",
-        "Reposition the probe before looking at the patient",
-        "Lower the alarm limit to 85%",
-        "Replace the probe without assessing the patient first"
+        "Assess the patient and signal quality, then correct the probe if artifact is confirmed",
+        "Lower the alarm threshold",
+        "Replace the probe without examining the patient",
+        "Assume artifact because prior alarms were false"
       ],
       "answer": [
         0
@@ -9964,12 +9964,12 @@
       "id": "MON-406",
       "set": 1,
       "type": "single",
-      "stem": "A provider checks a phone repeatedly during GA. Which category of vigilance impairment does this represent?",
+      "stem": "During an otherwise stable GA, the anesthesia provider repeatedly diverts attention to personal phone use. Which vigilance threat is this?",
       "options": [
         "Self-initiated distraction",
         "Circadian disruption",
-        "Alarm fatigue",
-        "Production pressure from a busy schedule"
+        "Equipment malfunction",
+        "Unavoidable alarm fatigue"
       ],
       "answer": [
         0
@@ -9988,12 +9988,12 @@
       "id": "MON-407",
       "set": 1,
       "type": "single",
-      "stem": "A provider is markedly sleep-deprived during a long case. Which class of risk factor does this represent?",
+      "stem": "A provider is severely sleep-deprived during an overnight emergency case. Which mechanism most directly threatens vigilance?",
       "options": [
-        "Human factors such as fatigue and sleep deprivation",
-        "External distractions such as alarms and music",
-        "Equipment malfunction",
-        "Alarm fatigue"
+        "Fatigue and circadian disruption impair sustained attention and judgment",
+        "External noise is the primary problem",
+        "Equipment failure becomes more common solely because it is nighttime",
+        "Sleep deprivation affects documentation but not monitoring"
       ],
       "answer": [
         0
@@ -10012,12 +10012,12 @@
       "id": "MON-408",
       "set": 1,
       "type": "single",
-      "stem": "Loud music makes alarm localization difficult. Which vigilance hazard is most relevant?",
+      "stem": "Loud music prevents the provider from immediately identifying which device generated an alarm. Which human-factors hazard is illustrated?",
       "options": [
-        "External distractions impair vigilance",
-        "Human factors from fatigue",
-        "Equipment failure",
-        "Alarm fatigue from frequent false alarms"
+        "An external auditory distraction interfering with alarm recognition",
+        "Circadian disruption",
+        "Equipment malfunction",
+        "Self-initiated cognitive offloading"
       ],
       "answer": [
         0
@@ -10036,12 +10036,12 @@
       "id": "MON-409",
       "set": 1,
       "type": "single",
-      "stem": "A rising inspired CO2 baseline develops from exhausted absorbent. Which routine sweep item could have identified the problem earlier?",
+      "stem": "During a systematic workstation sweep, the CO2 absorbent is noted to be exhausted before inspired CO2 rises. What is the safety advantage of this check?",
       "options": [
-        "CO2 absorbent color change",
-        "Vaporizer fill level",
-        "Pulse oximeter probe position",
-        "Temperature probe placement"
+        "It identifies a developing rebreathing risk before a physiologic alarm necessarily occurs",
+        "It confirms vaporizer output",
+        "It verifies pulse-oximeter calibration",
+        "It predicts arterial oxygen content"
       ],
       "answer": [
         0
@@ -10060,12 +10060,12 @@
       "id": "MON-410",
       "set": 1,
       "type": "single",
-      "stem": "The vaporizer unexpectedly runs dry mid-case. Which sweep element was missed?",
+      "stem": "During a long volatile anesthetic, end-tidal agent concentration begins falling despite an unchanged vaporizer dial. Which simple workstation check should be included immediately?",
       "options": [
-        "Vaporizer fill level",
-        "ETCO2 water trap",
-        "Fresh gas flow setting",
-        "Surgical field"
+        "Verify vaporizer agent level and delivery",
+        "Replace the capnography water trap first",
+        "Increase fresh-gas flow without checking the vaporizer",
+        "Check only the surgical field"
       ],
       "answer": [
         0
@@ -10084,12 +10084,12 @@
       "id": "MON-411",
       "set": 1,
       "type": "single",
-      "stem": "Capnography becomes erratic because the sampling line and water trap are obstructed. Which sweep item addresses this?",
+      "stem": "Capnography becomes intermittently damped during a humidified case while ventilation remains clinically unchanged. Which workstation component should be inspected early?",
       "options": [
-        "ETCO2 water trap and sampling line",
-        "Vaporizer fill level",
-        "Patient eye protection",
-        "Blood loss in the laps and suction canister"
+        "The water trap and sampling line for condensation or obstruction",
+        "The vaporizer fill level",
+        "The patient's eye protection",
+        "The NIBP cuff"
       ],
       "answer": [
         0
@@ -10108,12 +10108,12 @@
       "id": "MON-412",
       "set": 1,
       "type": "single",
-      "stem": "An IV infiltrates and anesthetic drugs are no longer delivered. Which patient-sweep item should have detected this?",
+      "stem": "Hemodynamics and anesthetic depth change unexpectedly after an IV infusion is started. Inspection shows swelling at the catheter site. Which routine patient-sweep item would detect this?",
       "options": [
-        "IVs functional and not infiltrated",
-        "Eyes taped and free from pressure",
-        "Surgical field status",
-        "Vaporizer fill level"
+        "Verify that IV access remains patent and noninfiltrated",
+        "Inspect eye protection",
+        "Check vaporizer fill level",
+        "Estimate blood loss only"
       ],
       "answer": [
         0
@@ -10132,12 +10132,12 @@
       "id": "MON-413",
       "set": 1,
       "type": "single",
-      "stem": "A surgical retractor rests against the patient's face near the airway. Which sweep concern applies?",
+      "stem": "A surgical retractor is resting against the patient's face and partially compressing the breathing circuit. Which systematic sweep should detect this hazard?",
       "options": [
-        "Surgical equipment not on pressure points or airway",
-        "Vaporizer fill level",
-        "ETCO2 water trap",
-        "NIBP cuff size and cycling interval on the arm"
+        "Inspection of the patient/airway and surgical field for equipment pressure or obstruction",
+        "Vaporizer fill check",
+        "CO2 absorbent inspection",
+        "NIBP calibration"
       ],
       "answer": [
         0
@@ -10156,12 +10156,12 @@
       "id": "MON-414",
       "set": 1,
       "type": "single",
-      "stem": "Estimated blood loss is falsely low because only the suction canister was checked. What additional field-sweep elements should have been assessed?",
+      "stem": "Estimated blood loss appears low when only the suction canister is considered, but many saturated sponges are present. Which field-sweep practice prevents this error?",
       "options": [
-        "Check laps, sponges, suction, and floor",
-        "Check vaporizer level",
-        "Check ETCO2 water trap",
-        "Check the temperature probe and warming blanket settings"
+        "Integrate suction volume with laps/sponges and blood elsewhere in the field",
+        "Use suction volume alone because it is objective",
+        "Estimate blood loss from NIBP trends only",
+        "Use ETCO2 as the primary blood-loss monitor"
       ],
       "answer": [
         0
@@ -10180,12 +10180,12 @@
       "id": "MON-415",
       "set": 1,
       "type": "single",
-      "stem": "A long case is approaching a highly stimulating phase followed by rapid emergence. Why should the anesthesia provider track the surgical timeline?",
+      "stem": "A long case is approaching a highly stimulating phase followed soon by emergence. Why is tracking surgical progress part of anesthetic vigilance?",
       "options": [
-        "To anticipate physiologic transitions before they occur",
-        "To tell the surgeon when the case must end",
-        "To reduce documentation",
-        "To decide when monitoring can be relaxed"
+        "It allows anticipated changes in stimulation, hemodynamics, ventilation, and anesthetic requirements to be managed proactively",
+        "It determines when physiologic monitoring may stop",
+        "It allows anesthesia to control the operative schedule",
+        "It replaces current patient assessment"
       ],
       "answer": [
         0
@@ -10204,12 +10204,12 @@
       "id": "MON-416",
       "set": 1,
       "type": "single",
-      "stem": "Lighted instruments lie close to oxygen-enriched drapes. Which field-sweep concern becomes most important?",
+      "stem": "An ignition source is being used close to oxygen-enriched drapes. Which field-sweep concern takes priority?",
       "options": [
-        "Surgical field fire prevention",
-        "Patient eye protection and taping",
-        "Vaporizer fill level",
-        "Electrical safety of the monitors"
+        "Recognize and reduce the fire triad risk before activation",
+        "Increase FiO2 to shorten the procedure",
+        "Ignore the setup if no flame is visible",
+        "Focus on vaporizer fill level"
       ],
       "answer": [
         0
@@ -10228,12 +10228,12 @@
       "id": "MON-417",
       "set": 1,
       "type": "single",
-      "stem": "A strong volatile-agent odor is detected near the breathing circuit. What should be suspected?",
+      "stem": "A new volatile-agent odor is noticed near the workstation while measured agent concentration begins drifting. Which problem should be investigated?",
       "options": [
-        "A circuit leak",
-        "Normal vaporizer function",
+        "A leak in the breathing system or anesthetic-gas delivery pathway",
+        "Normal low-flow anesthesia",
         "Esophageal intubation",
-        "Rebreathing from absorbent"
+        "CO2 absorbent exhaustion alone"
       ],
       "answer": [
         0
@@ -10252,12 +10252,12 @@
       "id": "MON-418",
       "set": 1,
       "type": "single",
-      "stem": "Stridor is heard immediately after extubation. Which sensory channel provided the first warning?",
+      "stem": "Immediately after extubation, the monitor values have not yet changed but inspiratory stridor is heard. What does this illustrate?",
       "options": [
-        "Hearing",
-        "Smell",
-        "Touch",
-        "Sight"
+        "Direct sensory assessment can identify airway obstruction before monitor trends change",
+        "Pulse oximetry should always change before airway sounds",
+        "Stridor is an expected benign emergence finding",
+        "Capnography eliminates the need to listen to the patient"
       ],
       "answer": [
         0
@@ -10276,12 +10276,12 @@
       "id": "MON-419",
       "set": 1,
       "type": "single",
-      "stem": "No air movement is felt at the mask despite visible respiratory effort. Which sensory assessment identified this?",
+      "stem": "A sedated patient shows chest effort but no airflow is felt at the mask. Which conclusion is most appropriate?",
       "options": [
-        "Touch",
-        "Smell",
-        "Hearing",
-        "Sight"
+        "Respiratory effort does not guarantee effective ventilation; assess and relieve airway obstruction",
+        "Visible effort confirms adequate ventilation",
+        "Normal SpO2 would exclude obstruction",
+        "Capnography is unnecessary when chest movement is visible"
       ],
       "answer": [
         0
@@ -10300,12 +10300,12 @@
       "id": "MON-420",
       "set": 1,
       "type": "single",
-      "stem": "Condensation is visible in the ETT with each breath. Which component of multisensory monitoring is being used?",
+      "stem": "During ventilation, condensation appears and disappears synchronously within the clear ETT while chest excursion is present. What can this visual finding contribute?",
       "options": [
-        "Sight",
-        "Hearing",
-        "Touch",
-        "Smell"
+        "It is a supportive clinical sign of airflow but does not replace sustained capnographic confirmation",
+        "It alone proves correct tube depth",
+        "It directly measures tidal volume",
+        "It excludes endobronchial intubation"
       ],
       "answer": [
         0
@@ -10324,12 +10324,12 @@
       "id": "MON-421",
       "set": 1,
       "type": "single",
-      "stem": "Sustained ETCO2 confirms tracheal placement, but left breath sounds are absent. What is the best next step?",
+      "stem": "Sustained exhaled CO2 confirms tracheal ventilation, but left breath sounds are absent after intubation. Which next step is most appropriate?",
       "options": [
-        "Reassess tube depth for mainstem intubation",
-        "Accept placement since ETCO2 is present",
-        "Remove the ETT and reintubate immediately",
-        "Increase FiO2 and continue"
+        "Assess ETT depth and exclude right-mainstem intubation while considering other unilateral causes",
+        "Accept tube position because capnography is present",
+        "Remove the ETT immediately without assessment",
+        "Ignore the asymmetry if SpO2 remains normal"
       ],
       "answer": [
         0
@@ -10348,12 +10348,12 @@
       "id": "MON-422",
       "set": 1,
       "type": "single",
-      "stem": "After repositioning, ETCO2 remains stable but SpO2 falls from 99% to 90%. What should be checked first?",
+      "stem": "After head repositioning, ETCO2 remains present but SpO2 falls and breath sounds become asymmetric. Which cause should be checked promptly?",
       "options": [
-        "Check tube position and breath sounds",
-        "Replace the capnography line",
-        "Increase anesthetic depth",
-        "Replace the capnography line, since ETCO2 is stable"
+        "ETT migration, including endobronchial positioning",
+        "Capnography sampling-line obstruction as the sole cause",
+        "Anesthetic depth",
+        "CO2 absorbent exhaustion"
       ],
       "answer": [
         0
@@ -10372,12 +10372,12 @@
       "id": "MON-423",
       "set": 1,
       "type": "single",
-      "stem": "A 4-hour open abdominal case proceeds without temperature monitoring. Which standard is not being met?",
+      "stem": "A 4-hour open abdominal operation proceeds without any temperature measurement. Why is this a monitoring deficiency?",
       "options": [
-        "ASA 2.4 temperature monitoring when changes are expected",
-        "ASA 2.2 ventilation monitoring",
-        "ASA 2.3 circulation monitoring",
-        "ASA 2.1 oxygenation monitoring with an inspired O2 analyzer"
+        "Clinically significant temperature change is reasonably anticipated during a long open procedure",
+        "Temperature monitoring is required only after hypothermia occurs",
+        "Open surgery affects skin but not core temperature",
+        "Temperature monitoring is unnecessary if forced-air warming is used"
       ],
       "answer": [
         0
@@ -10396,12 +10396,12 @@
       "id": "MON-424",
       "set": 1,
       "type": "single",
-      "stem": "The oxygen analyzer is located in the expiratory limb. What critical hazard may therefore go undetected?",
+      "stem": "The oxygen analyzer samples the expiratory rather than inspired limb. Which safety objective is compromised?",
       "options": [
-        "Failure to detect hypoxic gas delivery",
-        "Falsely high ETCO2 readings",
-        "Increased rebreathing",
-        "Improved detection of disconnection"
+        "Early detection of a hypoxic mixture being delivered to the patient",
+        "Detection of bronchospasm",
+        "Measurement of arterial oxygen saturation",
+        "Detection of neuromuscular recovery"
       ],
       "answer": [
         0
@@ -10420,12 +10420,12 @@
       "id": "MON-425",
       "set": 1,
       "type": "single",
-      "stem": "A circuit disconnect occurs, yet the inspired-O2 alarm remains normal. Why is this not surprising?",
+      "stem": "The breathing circuit disconnects while the inspired-O2 analyzer initially continues to display a normal concentration. Why?",
       "options": [
-        "O2 alarms miss disconnections",
-        "The analyzer is in the inspiratory limb",
-        "The alarm works during induction",
-        "The patient is breathing spontaneously"
+        "Fresh gas can still pass the inspired-O2 sensor even though ventilation to the patient is lost",
+        "A normal inspired-O2 value proves the patient remains connected",
+        "The O2 analyzer directly measures exhaled tidal volume",
+        "Circuit disconnection always causes inspired O2 to fall immediately"
       ],
       "answer": [
         0
@@ -10444,12 +10444,12 @@
       "id": "MON-426",
       "set": 1,
       "type": "single",
-      "stem": "SpO2 is 99%, but PaO2 is only 60 mmHg. Which explanation should be considered rather than assuming the ABG is wrong?",
+      "stem": "PaO2 is 60 mmHg but the pulse oximeter persistently reads 99%. Which response is most appropriate?",
       "options": [
-        "SpO2 may be falsely high or the curve is shifted",
-        "The ABG is inaccurate",
-        "SpO2 matches PaO2 exactly",
-        "The patient has hypercarbia, not hypoxemia"
+        "Investigate the discordance, including dyshemoglobinemia, signal error, and sample/measurement validity rather than assuming either value is correct",
+        "Accept the SpO2 because pulse oximetry is always more accurate than ABG",
+        "Assume the ABG is wrong",
+        "The values are normally equivalent"
       ],
       "answer": [
         0
@@ -10468,12 +10468,12 @@
       "id": "MON-427",
       "set": 1,
       "type": "single",
-      "stem": "PaO2 is 60 mmHg with SpO2 about 90%. Why is this clinically important?",
+      "stem": "PaO2 is approximately 60 mmHg with SpO2 near 90%. Why does further loss of PaO2 become especially concerning?",
       "options": [
-        "The patient is near the steep part of the curve",
-        "The patient is safely on the flat part of the curve",
-        "SpO2 is falsely high due to COHb",
-        "The oximeter is miscalibrated"
+        "The patient is near the steep portion of the oxyhemoglobin dissociation curve, where saturation can fall rapidly",
+        "The curve becomes flatter below this point",
+        "Hemoglobin becomes fully saturated at this PaO2",
+        "Pulse oximetry stops reflecting saturation below 90%"
       ],
       "answer": [
         0
@@ -10492,12 +10492,12 @@
       "id": "MON-428",
       "set": 1,
       "type": "single",
-      "stem": "A patient becomes acidotic and hyperthermic. How does this alter hemoglobin's oxygen unloading?",
+      "stem": "Acidosis, hypercapnia, and hyperthermia develop during a case. What happens to hemoglobin-oxygen affinity?",
       "options": [
-        "Right shift improves oxygen unloading",
-        "Left shift improves oxygen unloading",
-        "No change in oxygen delivery",
-        "Oxygen delivery stops"
+        "It decreases, shifting the curve right and facilitating tissue unloading",
+        "It increases, shifting the curve left",
+        "It is unchanged",
+        "Oxygen unloading stops"
       ],
       "answer": [
         0
@@ -10516,12 +10516,12 @@
       "id": "MON-429",
       "set": 1,
       "type": "single",
-      "stem": "SpO2 has fallen to 90% and continues to drop. What does the oxyhemoglobin curve predict from this point?",
+      "stem": "SpO2 reaches about 90% and continues falling. Why can subsequent desaturation accelerate?",
       "options": [
-        "Desaturation may accelerate rapidly",
-        "Desaturation will slow at this level",
-        "SpO2 will stabilize near 88%",
-        "SpO2 is independent of PaO2"
+        "The corresponding PaO2 is entering the steep portion of the dissociation curve",
+        "The curve becomes increasingly flat below 90% saturation",
+        "SpO2 becomes independent of PaO2",
+        "Hemoglobin affinity abruptly becomes infinite"
       ],
       "answer": [
         0
@@ -10540,12 +10540,12 @@
       "id": "MON-430",
       "set": 1,
       "type": "single",
-      "stem": "SpO2 drops abruptly after injection of a dark blue dye despite stable ventilation. What is the most likely explanation?",
+      "stem": "Immediately after injection of a strongly colored intravascular dye, SpO2 falls abruptly while arterial waveform, ETCO2, and clinical appearance remain stable. What should be considered?",
       "options": [
-        "Dye interference with pulse oximetry",
-        "True hypoxemia from dye",
-        "Methemoglobinemia caused by the injected dye",
-        "COHb from dye"
+        "Transient optical interference with pulse oximetry",
+        "Certain true hypoxemia caused by the dye",
+        "Carbon monoxide poisoning",
+        "Circuit disconnection"
       ],
       "answer": [
         0
@@ -10564,12 +10564,12 @@
       "id": "MON-431",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a high carboxyhemoglobin concentration. Which monitoring method gives the most accurate hemoglobin-species assessment?",
+      "stem": "A smoke-inhalation patient has suspected carbon monoxide poisoning despite normal standard SpO2. Which measurement best quantifies the relevant hemoglobin species?",
       "options": [
-        "Use co-oximetry for accurate saturation",
-        "Rely on SpO2 alone, since it detects carboxyhemoglobin",
-        "Use capnography to measure O2",
-        "Use temperature monitoring"
+        "Multiwavelength co-oximetry",
+        "Standard two-wavelength pulse oximetry",
+        "Capnography",
+        "Inspired-O2 analysis"
       ],
       "answer": [
         0
@@ -10588,12 +10588,12 @@
       "id": "MON-432",
       "set": 1,
       "type": "single",
-      "stem": "A patient with methemoglobinemia has SpO2 near 85% despite a high PaO2. What explains this?",
+      "stem": "After benzocaine exposure, SpO2 remains near 85% despite high PaO2. Which optical behavior explains this pattern?",
       "options": [
-        "MetHb absorbs red and IR light equally",
-        "MetHb increases oxygen binding",
-        "MetHb causes falsely high SpO2 near 100%",
-        "MetHb reduces pulse amplitude"
+        "Methemoglobin absorbs the two conventional pulse-oximeter wavelengths similarly, driving the ratio toward about 85%",
+        "Methemoglobin is read entirely as oxyhemoglobin",
+        "Methemoglobin lowers PaO2 in direct proportion to SpO2",
+        "The plethysmographic pulse disappears in all methemoglobinemia"
       ],
       "answer": [
         0
@@ -10612,12 +10612,12 @@
       "id": "MON-433",
       "set": 1,
       "type": "single",
-      "stem": "An SpO2 probe is exposed directly to bright operating-room lights. What error can result?",
+      "stem": "A pulse-oximeter probe is directly exposed to intense surgical lighting and the displayed value becomes erratic. Which corrective action is appropriate?",
       "options": [
-        "Inaccurate readings from ambient light",
-        "Improved accuracy because more light reaches the detector",
-        "Falsely low SpO2 from cooling",
-        "Slower pulse detection"
+        "Shield/reposition the probe and reassess signal quality",
+        "Treat the erratic number as definite hypoxemia",
+        "Increase ambient light further",
+        "Use the same probe without checking because ambient light cannot interfere"
       ],
       "answer": [
         0
@@ -10636,12 +10636,12 @@
       "id": "MON-434",
       "set": 1,
       "type": "single",
-      "stem": "Electrocautery produces a wide-complex ECG artifact. What is the best way to verify whether the rhythm is real?",
+      "stem": "Electrocautery produces an apparent wide-complex tachyarrhythmia on ECG, but the arterial waveform and pulse-oximeter pulse rate remain unchanged. What is the best interpretation?",
       "options": [
-        "Recognize artifact and confirm rhythm with pulse or arterial trace",
-        "Treat as ventricular tachycardia and prepare to defibrillate now",
-        "Set ECG filter to monitor mode and continue",
-        "Switch to a single-lead display"
+        "ECG artifact is likely; verify the patient's true rhythm using independent pulse/perfusion signals",
+        "Treat ventricular tachycardia immediately based only on ECG",
+        "The arterial line is necessarily wrong",
+        "Pulse signals cannot help distinguish electrical artifact"
       ],
       "answer": [
         0
@@ -10660,12 +10660,12 @@
       "id": "MON-435",
       "set": 1,
       "type": "single",
-      "stem": "New ST depression appears in lead II only. What is the best next monitoring step?",
+      "stem": "New ST depression appears in lead II during hypotension. Which next monitoring step best strengthens the assessment before deciding whether it represents ischemia?",
       "options": [
-        "Check V3 and other leads for ischemia",
-        "Treat it as a rhythm change, since lead II is for rhythm",
-        "Treat as artifact without further review",
-        "Switch to a single-lead display"
+        "Verify signal/electrode quality and examine additional ischemia-sensitive leads while correcting supply-demand abnormalities",
+        "Dismiss the change because lead II is primarily a rhythm lead",
+        "Remove all precordial leads",
+        "Wait for ST elevation"
       ],
       "answer": [
         0
@@ -10684,12 +10684,12 @@
       "id": "MON-436",
       "set": 1,
       "type": "single",
-      "stem": "Heart rate is 45 and the low alarm is set at 40. What is the best approach to alarm management?",
+      "stem": "Heart rate is 45/min and the low alarm is set at 40/min. The patient is hemodynamically stable. What is the best approach?",
       "options": [
-        "Evaluate the patient and adjust limits only within standards",
-        "Widen the HR alarm range to 30",
-        "Lower the limit to 30 to avoid alarms",
-        "Leave the limit as is, since the alarm has not yet sounded"
+        "Assess the clinical significance and set individualized alarm limits that remain appropriately protective",
+        "Lower the limit to 30 solely to avoid future alarms",
+        "Ignore the trend because no alarm has sounded",
+        "Disable the heart-rate alarm"
       ],
       "answer": [
         0
@@ -10708,12 +10708,12 @@
       "id": "MON-437",
       "set": 1,
       "type": "single",
-      "stem": "Several alarms activate simultaneously. What is the first priority?",
+      "stem": "Multiple alarms activate simultaneously after patient repositioning. What should guide the initial response?",
       "options": [
-        "Evaluate the patient and identify the most critical alarm",
-        "Silence the nonurgent alarms first",
-        "Assume equipment failure",
-        "Call biomedical engineering to troubleshoot the monitor first"
+        "Rapid patient assessment while prioritizing threats to oxygenation, ventilation, and circulation and checking for a common cause",
+        "Silence every alarm before looking at the patient",
+        "Assume monitor malfunction",
+        "Call biomedical engineering before assessing the airway"
       ],
       "answer": [
         0
@@ -10732,12 +10732,12 @@
       "id": "MON-438",
       "set": 1,
       "type": "single",
-      "stem": "Repeated nuisance SpO2 alarms are ignored because the probe often dislodges. What human-factors problem is this?",
+      "stem": "Repeated false alarms from a poorly secured probe eventually cause staff to ignore subsequent alarms. Which human-factors problem has developed?",
       "options": [
         "Alarm fatigue",
         "Proactive vigilance",
-        "Production pressure",
-        "Cognitive offloading"
+        "Situational awareness",
+        "Closed-loop communication"
       ],
       "answer": [
         0
@@ -10756,12 +10756,12 @@
       "id": "MON-439",
       "set": 1,
       "type": "single",
-      "stem": "A provider performs a deliberate left-to-right scan of the patient, machine, monitors, and field every few minutes. What is this called?",
+      "stem": "A provider repeatedly scans the patient, airway, IVs, monitors, workstation, and surgical field in a consistent sequence. What is the principal benefit?",
       "options": [
-        "A sweep",
-        "Alarm fatigue",
-        "Passive monitoring",
-        "A time-out"
+        "A systematic sweep reduces omission and helps detect subtle changes before threshold alarms",
+        "It replaces alarm systems",
+        "It guarantees the cause of every abnormality",
+        "It eliminates the need for direct patient assessment"
       ],
       "answer": [
         0
@@ -10780,12 +10780,12 @@
       "id": "MON-440",
       "set": 1,
       "type": "single",
-      "stem": "PIP, exhaled tidal volume, and ETCO2 drift down slightly before any alarm threshold is reached. What does this pattern suggest?",
+      "stem": "PIP, exhaled tidal volume, and ETCO2 drift downward together but remain above alarm thresholds. Which developing problem should be considered?",
       "options": [
-        "Early detection of a small leak",
-        "Normal variation with no action needed",
-        "Hyperventilation from pain",
-        "Increased CO2 production"
+        "A small breathing-system leak",
+        "Increased CO2 production",
+        "Bronchospasm with rising resistance",
+        "Improving compliance as the only explanation"
       ],
       "answer": [
         0
@@ -10804,12 +10804,12 @@
       "id": "MON-441",
       "set": 1,
       "type": "single",
-      "stem": "Which monitor provides the earliest routine evidence of esophageal intubation?",
+      "stem": "After intubation, SpO2 remains 100% from preoxygenation but sustained exhaled CO2 is absent. Which monitor provides the earliest routine warning of persistent esophageal placement?",
       "options": [
         "Capnography",
         "Pulse oximetry",
-        "Temperature",
-        "NIBP"
+        "NIBP",
+        "Temperature"
       ],
       "answer": [
         0
@@ -10828,12 +10828,12 @@
       "id": "MON-442",
       "set": 1,
       "type": "single",
-      "stem": "Alarm thresholds are widened beyond accepted standards to reduce nuisance alerts. What is the main safety consequence?",
+      "stem": "Alarm limits are widened far beyond clinically appropriate ranges solely to reduce nuisance alerts. What is the major consequence?",
       "options": [
-        "Delayed recognition of critical events",
-        "Better detection of trends",
-        "Fewer equipment failures",
-        "Faster response to alarms because fewer of them sound"
+        "Important deterioration may progress substantially before an alarm activates",
+        "Trend detection becomes more sensitive",
+        "Equipment failures become less likely",
+        "The physiologic measurements become more accurate"
       ],
       "answer": [
         0
@@ -10852,12 +10852,12 @@
       "id": "MON-443",
       "set": 1,
       "type": "single",
-      "stem": "A precordial stethoscope is used in a small child. What continuous information does it provide?",
+      "stem": "In a small child, a precordial stethoscope is used in addition to electronic monitors. What unique continuous information can it provide?",
       "options": [
-        "Continuous heart and breath sound monitoring",
-        "Measuring ETCO2 directly from the chest wall surface",
-        "Measuring temperature",
-        "Measuring SpO2"
+        "Direct heart and breath sounds that may reveal mechanical or airway changes",
+        "Direct ETCO2 concentration",
+        "Arterial oxygen saturation",
+        "Core temperature"
       ],
       "answer": [
         0
@@ -10876,12 +10876,12 @@
       "id": "MON-444",
       "set": 1,
       "type": "single",
-      "stem": "During carotid cross-clamping, which monitor is specifically useful for detecting reduced cerebral oxygenation?",
+      "stem": "During carotid cross-clamping, systemic SpO2 remains normal but concern exists for regional cerebral hypoperfusion. Which monitor can provide regional cerebral oxygenation information?",
       "options": [
         "Cerebral oximetry",
-        "A temperature probe",
-        "A urine output monitor",
-        "A peripheral nerve stimulator"
+        "Urine output",
+        "Peripheral nerve stimulation",
+        "Skin temperature"
       ],
       "answer": [
         0
@@ -10900,12 +10900,12 @@
       "id": "MON-445",
       "set": 1,
       "type": "single",
-      "stem": "A hypoxic gas mixture is delivered after the machine checkout was skipped. Which equipment-safety failure does this exemplify?",
+      "stem": "A hypoxic gas mixture reaches the circuit after the workstation check was omitted, despite the machine itself functioning as designed. Which safety lesson best applies?",
       "options": [
-        "Operator failure to verify machine function",
-        "Device malfunction as the main cause",
-        "Temperature monitoring failure",
-        "Alarm fatigue from frequent false alarms in the room"
+        "Failure to verify equipment setup/function can create hazards even without intrinsic device malfunction",
+        "True device malfunction is the only meaningful equipment risk",
+        "Inspired-O2 monitoring is unnecessary after checkout",
+        "A successful previous case proves the workstation remains safe"
       ],
       "answer": [
         0
@@ -10924,12 +10924,12 @@
       "id": "MON-446",
       "set": 1,
       "type": "single",
-      "stem": "A provider is unfamiliar with the ventilator and cannot locate the PEEP control. What does closed-claims experience identify as the main risk?",
+      "stem": "A clinician unfamiliar with a ventilator cannot promptly locate or adjust a critical setting during deterioration. Which equipment-safety principle is illustrated?",
       "options": [
-        "Unfamiliarity drives mishaps",
-        "Ventilator modes rarely affect safety",
-        "Device failure is the main equipment risk",
-        "Biomedical staff are the ones who need to know the modes"
+        "User familiarity and competent operation are essential parts of equipment safety",
+        "Modern ventilators are safe regardless of user familiarity",
+        "Only biomedical personnel need to understand ventilator controls",
+        "Equipment checkout eliminates the need to know how controls work"
       ],
       "answer": [
         0
@@ -10948,12 +10948,12 @@
       "id": "MON-447",
       "set": 1,
       "type": "single",
-      "stem": "Vitals are charted every 5 minutes, but the patient has not been directly assessed for 20 minutes. What principle is being violated?",
+      "stem": "Vitals are automatically charted every 5 minutes, but the provider has not directly reassessed the patient, airway, or field for 20 minutes. What principle is being missed?",
       "options": [
-        "Monitor data must be interpreted alongside patient assessment",
-        "Monitors alone are sufficient for safety",
-        "Charting every 5 minutes is too infrequent",
-        "Monitors replace judgment when limits are set"
+        "Recorded monitor data do not replace active clinical assessment and interpretation",
+        "Automatic documentation constitutes adequate vigilance",
+        "Five-minute charting eliminates the need for visual assessment",
+        "Alarm limits can substitute for situational awareness"
       ],
       "answer": [
         0
@@ -10972,12 +10972,12 @@
       "id": "MON-448",
       "set": 1,
       "type": "single",
-      "stem": "The ETT holder is compressing the patient's lips. Which patient-sweep check should detect this?",
+      "stem": "An ETT securing device is compressing the patient's lip beneath the drapes. Which routine assessment should detect this before tissue injury develops?",
       "options": [
-        "Nose and lips free from pressure",
-        "Arms secured and head midline",
-        "Vaporizer fill level",
-        "ETCO2 water trap"
+        "A direct patient sweep for pressure on the nose, lips, eyes, and other vulnerable areas",
+        "Vaporizer inspection",
+        "CO2 absorbent inspection",
+        "NIBP calibration"
       ],
       "answer": [
         0
@@ -10996,12 +10996,12 @@
       "id": "MON-449",
       "set": 1,
       "type": "single",
-      "stem": "The eyelids are left unprotected during GA. Which complication becomes more likely?",
+      "stem": "The eyelids are not fully closed or protected during GA. Which preventable complication is most directly increased?",
       "options": [
-        "Corneal injury",
-        "Increased ETCO2",
-        "Falsely low SpO2",
-        "Hyperthermia"
+        "Corneal abrasion/injury",
+        "Hypercapnia",
+        "Methemoglobinemia",
+        "Malignant hyperthermia"
       ],
       "answer": [
         0
@@ -11020,12 +11020,12 @@
       "id": "MON-450",
       "set": 1,
       "type": "single",
-      "stem": "The capnogram loses its sharp alpha angle and develops a slow sloped upstroke. Which respiratory pattern does this indicate?",
+      "stem": "PIP rises, plateau pressure remains stable, wheezing appears, and the capnogram loses its sharp alpha angle with a prolonged sloped expiratory phase. Which pattern is present?",
       "options": [
-        "Obstructive pattern such as bronchospasm",
-        "Normal ventilation",
-        "Rebreathing",
-        "A circuit leak with a sloping, triangular downstroke"
+        "Expiratory airflow obstruction such as bronchospasm",
+        "CO2 rebreathing",
+        "Circuit leak",
+        "Reduced compliance without increased resistance"
       ],
       "answer": [
         0
