@@ -8,7 +8,7 @@
       "id": "MON-001",
       "set": 1,
       "type": "single",
-      "stem": "During a stable MAC case, every monitor is functioning and alarms are set appropriately. The CRNA steps out to grab supplies. Which \"monitor\" has just been removed that ASA Standard I treats as most important?",
+      "stem": "All monitors are functioning during a stable MAC case, but the anesthesia provider leaves the room briefly. Which requirement of ASA Standard I is no longer met?",
       "options": [
         "The qualified anesthesia provider",
         "Continuous waveform capnography with audible alarms",
@@ -32,7 +32,7 @@
       "id": "MON-002",
       "set": 1,
       "type": "single",
-      "stem": "A chart audit of a 3-hour GA case shows continuous SpO2, ETCO2, ECG, and BP every 5 minutes. No temperature was recorded during a laparotomy with large fluid shifts. Which ASA Standard II element is missing?",
+      "stem": "A 3-hour open laparotomy has continuous ECG, SpO2, ETCO2, and BP every 5 minutes, but no temperature data. Which ASA Standard II domain is missing?",
       "options": [
         "Temperature",
         "Oxygenation",
@@ -56,7 +56,7 @@
       "id": "MON-003",
       "set": 1,
       "type": "single",
-      "stem": "Under ASA 2.3, how often must arterial blood pressure and heart rate be determined?",
+      "stem": "During GA without an arterial line, what is the longest acceptable interval between determinations of arterial pressure and heart rate?",
       "options": [
         "At least every five minutes",
         "At least every ten minutes, more often if unstable",
@@ -80,7 +80,7 @@
       "id": "MON-004",
       "set": 1,
       "type": "multi",
-      "stem": "ASA 2.3 requires circulatory function to be evaluated by at least one additional method beyond ECG and BP. Which of these qualify? (Select 4)",
+      "stem": "Beyond ECG and blood pressure, which FOUR methods satisfy ASA 2.3 for evaluating circulation? (Select 4)",
       "options": [
         "Palpation of a pulse",
         "Pulse plethysmography or oximetry",
@@ -109,7 +109,7 @@
       "id": "MON-005",
       "set": 1,
       "type": "single",
-      "stem": "The ECG is disconnected for transfer onto the OR table after induction and reconnected 10 minutes later. Under ASA 2.3, when must the ECG be displayed?",
+      "stem": "After induction, ECG leads are removed for positioning and not replaced for 10 minutes. Which monitoring requirement has been violated?",
       "options": [
         "From induction until leaving the room",
         "From incision until closure",
@@ -133,7 +133,7 @@
       "id": "MON-006",
       "set": 1,
       "type": "single",
-      "stem": "What does ASA 2.1 require during every general anesthetic given with an anesthesia machine?",
+      "stem": "During every general anesthetic using an anesthesia machine, which oxygen-safety monitor is specifically required?",
       "options": [
         "An O2 analyzer in the breathing system with a low-O2 alarm",
         "Arterial blood gases at least once per hour of anesthesia",
@@ -157,7 +157,7 @@
       "id": "MON-007",
       "set": 1,
       "type": "single",
-      "stem": "During GA, the gas analyzer shows FiO2 0.50 and FeO2 0.45. What does this difference reflect?",
+      "stem": "During GA, inspired O2 is 50% and expired O2 is 45% with stable ventilation. What best explains the difference?",
       "options": [
         "Expected oxygen uptake by the patient",
         "A circuit leak drawing in room air",
@@ -181,7 +181,7 @@
       "id": "MON-008",
       "set": 1,
       "type": "single",
-      "stem": "During GA with an ETT, a provider relies on chest rise and breath sounds because the capnograph \"keeps alarming.\" What does ASA 2.2 require?",
+      "stem": "During GA with an ETT, capnography alarms repeatedly and the provider considers relying only on chest rise and breath sounds. What does ASA 2.2 require?",
       "options": [
         "Continual expired CO2 monitoring plus clinical signs",
         "Clinical signs alone are adequate",
@@ -205,7 +205,7 @@
       "id": "MON-009",
       "set": 1,
       "type": "single",
-      "stem": "On a Monday morning, the first case shows a rising inspired CO2 baseline. The machine sat over the weekend with high fresh gas flow running. What is the MOST likely cause?",
+      "stem": "The first case after a weekend shows a persistently elevated inspired CO2 baseline. The machine had been left with high fresh-gas flow. What is the most likely cause?",
       "options": [
         "Desiccated or exhausted absorbent allowing rebreathing",
         "Hypoxic gas delivery from the pipeline",
@@ -229,7 +229,7 @@
       "id": "MON-010",
       "set": 1,
       "type": "single",
-      "stem": "Three cases are scheduled: a 15-minute knee scope, a 4-hour open colectomy, and a cardiac case with planned cooling. In which cases is temperature monitoring required under ASA 2.4?",
+      "stem": "Which patients most clearly require temperature monitoring under ASA 2.4: a 15-minute knee scope, a 4-hour open colectomy, and a cardiac case with planned cooling?",
       "options": [
         "The colectomy and the cardiac case",
         "The knee scope alone",
@@ -253,7 +253,7 @@
       "id": "MON-011",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives rocuronium at induction. No twitch monitor is used, and you extubate based on a 5-second head lift. What does AANA Standard 8e require?",
+      "stem": "Rocuronium was given, but no twitch monitor is used and extubation is based only on a 5-second head lift. Which AANA monitoring expectation is not met?",
       "options": [
         "Monitor depth and recovery, quantitatively",
         "Clinical signs before extubation",
@@ -277,7 +277,7 @@
       "id": "MON-012",
       "set": 1,
       "type": "single",
-      "stem": "Before reversing rocuronium at the end of a case, you want the most reliable measure of recovery. Which method should you use?",
+      "stem": "Before reversing rocuronium, which method gives the most reliable evidence of neuromuscular recovery?",
       "options": [
         "Quantitative monitoring such as acceleromyography",
         "A visual twitch count at the ulnar nerve",
@@ -301,7 +301,7 @@
       "id": "MON-013",
       "set": 1,
       "type": "single",
-      "stem": "A department reviews hypoventilation-related closed claims. What pattern was found across every one of them?",
+      "stem": "A closed-claims review finds a common feature in every hypoventilation claim. What was it?",
       "options": [
         "Failure to monitor ventilation",
         "Equipment malfunction",
@@ -325,7 +325,7 @@
       "id": "MON-014",
       "set": 1,
       "type": "single",
-      "stem": "Of 100 anesthesia closed claims reviewed, about how many would you expect to involve errors in judgment?",
+      "stem": "If 100 anesthesia closed claims are reviewed, approximately how many would be expected to involve errors in judgment?",
       "options": [
         "More than 65",
         "About 10",
@@ -349,7 +349,7 @@
       "id": "MON-015",
       "set": 1,
       "type": "single",
-      "stem": "Which event type is the most common preventable cause of claims and payouts?",
+      "stem": "Which category of event is the most common preventable source of anesthesia claims and payouts?",
       "options": [
         "Respiratory events",
         "Medication errors during induction",
@@ -373,7 +373,7 @@
       "id": "MON-016",
       "set": 1,
       "type": "single",
-      "stem": "A hospital reviews airway claims before and after universal capnography. Which adverse event would you expect to have dropped the most?",
+      "stem": "After universal capnography is adopted, which serious airway event should decline most?",
       "options": [
         "Unrecognized esophageal intubation",
         "Awareness under anesthesia",
@@ -397,7 +397,7 @@
       "id": "MON-017",
       "set": 1,
       "type": "multi",
-      "stem": "On a long overnight case, the CRNA has been awake 20 hours, music is loud, and he checks his phone between vitals. Which factors impair his vigilance? (Select 3)",
+      "stem": "An overnight provider has been awake 20 hours, loud music is playing, and phone use occurs between vital checks. Which THREE factors impair vigilance? (Select 3)",
       "options": [
         "Loud music and noise",
         "Fatigue and circadian disruption",
@@ -425,7 +425,7 @@
       "id": "MON-018",
       "set": 1,
       "type": "single",
-      "stem": "After a hypoxic event, a provider blames \"a faulty ventilator.\" The device later checks out normally. What does outcome data say about this pattern?",
+      "stem": "After a hypoxic event, the ventilator is blamed but later tests normally. What does closed-claims experience suggest about this pattern?",
       "options": [
         "Device failure rarely causes adverse outcomes",
         "Device failure is the leading cause of adverse outcomes",
@@ -449,7 +449,7 @@
       "id": "MON-019",
       "set": 1,
       "type": "single",
-      "stem": "Misuse of which equipment was about three times more prevalent among closed claims?",
+      "stem": "Which equipment category is disproportionately represented in closed claims because of misuse?",
       "options": [
         "Anesthesia gas delivery systems",
         "Infusion pumps for TIVA",
@@ -473,7 +473,7 @@
       "id": "MON-020",
       "set": 1,
       "type": "single",
-      "stem": "A new CRNA cannot find the ventilator's PEEP control and skips the machine check because \"it was checked yesterday.\" What are the most frequent causes of equipment mishaps?",
+      "stem": "A provider unfamiliar with the ventilator skips the machine check because it was used yesterday. Which two human factors most commonly underlie equipment mishaps?",
       "options": [
         "Unfamiliarity and failure to check",
         "Manufacturer defects",
@@ -497,7 +497,7 @@
       "id": "MON-021",
       "set": 1,
       "type": "single",
-      "stem": "The first case of the day starts without a machine check because \"the night team used it.\" Which AANA standard is violated?",
+      "stem": "The first case begins without a machine checkout because the night team used it. Which AANA standard is violated?",
       "options": [
         "Standard 5",
         "Standard 9: alarm limits must be used",
@@ -521,7 +521,7 @@
       "id": "MON-022",
       "set": 1,
       "type": "single",
-      "stem": "During a case, the SpO2 alarm limit is set to 70% and the volume is muted. Which AANA standard does this violate?",
+      "stem": "SpO2 alarm volume is muted and the low limit is set to 70%. Which AANA standard is violated?",
       "options": [
         "Standard 9",
         "Standard 5: equipment verification",
@@ -545,7 +545,7 @@
       "id": "MON-023",
       "set": 1,
       "type": "single",
-      "stem": "While drawing up drugs, you hear the pulse oximeter tone drop in pitch and look up to find SpO2 at 89%. Which feature allowed this?",
+      "stem": "While attention is elsewhere, the pulse-oximeter tone drops in pitch before you look at the screen. Which safety feature provided the warning?",
       "options": [
         "A variable-pitch tone",
         "A fixed tone at every heartbeat",
@@ -569,7 +569,7 @@
       "id": "MON-024",
       "set": 1,
       "type": "multi",
-      "stem": "Which factors contribute to alarm fatigue? (Select 2)",
+      "stem": "Which TWO conditions most strongly promote alarm fatigue? (Select 2)",
       "options": [
         "Frequent noncritical or false alarms",
         "Difficulty localizing alarms in a noisy room",
@@ -596,7 +596,7 @@
       "id": "MON-025",
       "set": 1,
       "type": "multi",
-      "stem": "What are the results of alarm fatigue? (Select 3)",
+      "stem": "Which THREE consequences are typical of alarm fatigue? (Select 3)",
       "options": [
         "Ignoring or disabling alarms",
         "Delayed recognition of critical events",
@@ -624,7 +624,7 @@
       "id": "MON-026",
       "set": 1,
       "type": "single",
-      "stem": "A healthy marathon runner has a resting HR of 48, and the low HR alarm (set at 50) sounds constantly. What is the BEST response?",
+      "stem": "A healthy athlete has a baseline HR of 48 and repeatedly triggers a low-HR alarm set at 50. What is the best response?",
       "options": [
         "Adjust the limit while keeping it within practice standards",
         "Turn the HR alarm off since the rate is baseline",
@@ -648,7 +648,7 @@
       "id": "MON-027",
       "set": 1,
       "type": "single",
-      "stem": "SpO2 reads 86% with a noisy waveform. The provider assumes it is a poor signal and silences the alarm without checking the patient. What error occurred?",
+      "stem": "SpO2 reads 86% with a noisy waveform, and the alarm is dismissed as artifact without checking the patient. What cognitive error occurred?",
       "options": [
         "Cognitive bias leading to a dismissed valid alarm",
         "Appropriate artifact filtering to prevent fatigue",
@@ -672,7 +672,7 @@
       "id": "MON-028",
       "set": 1,
       "type": "single",
-      "stem": "The ETCO2 low alarm sounds briefly during a stable laparoscopy, then clears. What is the BEST response?",
+      "stem": "A low ETCO2 alarm briefly sounds during a stable case and then self-resolves. What is the best response?",
       "options": [
         "Evaluate the cause even though it cleared",
         "Recheck the alarm limits before assessing the patient",
@@ -696,7 +696,7 @@
       "id": "MON-029",
       "set": 1,
       "type": "single",
-      "stem": "A new CRNA says, \"The monitors will tell me if something is wrong.\" What is the problem with this view?",
+      "stem": "A trainee says, 'The monitors will tell me if anything is wrong.' What is the flaw in this reasoning?",
       "options": [
         "Monitors must be interpreted and acted on by the provider",
         "Technology alone prevents most patient harm",
@@ -720,7 +720,7 @@
       "id": "MON-030",
       "set": 1,
       "type": "single",
-      "stem": "Every 5 minutes, you scan from the patient's face across the monitors, machine, IV lines, and surgical field. What is this technique?",
+      "stem": "Every few minutes you deliberately scan the patient, monitors, machine, IVs, and surgical field in the same sequence. What is this vigilance technique?",
       "options": [
         "A sweep",
         "A time-out",
@@ -744,7 +744,7 @@
       "id": "MON-031",
       "set": 1,
       "type": "multi",
-      "stem": "Which senses does proactive vigilance use? (Select 3)",
+      "stem": "Which THREE senses are explicitly part of proactive vigilance beyond monitor data? (Select 3)",
       "options": [
         "Sight",
         "Hearing",
@@ -772,7 +772,7 @@
       "id": "MON-032",
       "set": 1,
       "type": "multi",
-      "stem": "During your machine sweep at hour 3 of a case, which items should you check? (Select 4)",
+      "stem": "During a machine sweep several hours into a case, which FOUR items should be checked? (Select 4)",
       "options": [
         "Vaporizer delivery and fill level",
         "The ETCO2 water trap",
@@ -801,7 +801,7 @@
       "id": "MON-033",
       "set": 1,
       "type": "multi",
-      "stem": "Which patient items belong in the sweep? (Select 2)",
+      "stem": "Which TWO patient-positioning checks belong in a routine anesthesia sweep? (Select 2)",
       "options": [
         "Eyes taped and free from pressure",
         "Arms secured and head midline",
@@ -828,7 +828,7 @@
       "id": "MON-034",
       "set": 1,
       "type": "multi",
-      "stem": "Which surgical field items belong in the sweep? (Select 4)",
+      "stem": "Which FOUR surgical-field elements belong in the anesthesia sweep? (Select 4)",
       "options": [
         "Blood loss in laps, suction, and floor",
         "Case status and critical points",
@@ -857,7 +857,7 @@
       "id": "MON-035",
       "set": 1,
       "type": "single",
-      "stem": "You are using MS MAID to set up your room. What should you check first?",
+      "stem": "Using MS MAID for room setup, which category is checked first?",
       "options": [
         "The machine",
         "The monitors",
@@ -881,7 +881,7 @@
       "id": "MON-036",
       "set": 1,
       "type": "single",
-      "stem": "During your MS MAID machine check, which items belong under \"Machine\"?",
+      "stem": "Under MS MAID, what should be included in the 'Machine' check beyond the workstation itself?",
       "options": [
         "Full check plus a bag-mask and spare O2 cylinder",
         "The vaporizer level and ventilator settings",
@@ -905,7 +905,7 @@
       "id": "MON-037",
       "set": 1,
       "type": "single",
-      "stem": "At induction, the patient vomits and the suction tubing is connected but the canister valve is closed. What should the MS MAID suction check have confirmed?",
+      "stem": "At induction, the patient vomits and suction fails because the canister valve is closed. What should the preinduction suction check have verified?",
       "options": [
         "Suction on, working, and in reach",
         "A Yankauer was available",
@@ -929,7 +929,7 @@
       "id": "MON-038",
       "set": 1,
       "type": "multi",
-      "stem": "Which airway items should be available in the room per MS MAID? (Select 4)",
+      "stem": "Which FOUR airway items should be immediately available in the room under MS MAID? (Select 4)",
       "options": [
         "LMA",
         "OPA and NPA",
@@ -958,7 +958,7 @@
       "id": "MON-039",
       "set": 1,
       "type": "single",
-      "stem": "You set up for a \"routine\" ETT case with a healthy patient. Which rescue device should be in the room for every case?",
+      "stem": "Even for a routine elective ETT case, which rescue airway should already be available in the room?",
       "options": [
         "An LMA",
         "A cricothyrotomy kit opened on the field",
@@ -982,7 +982,7 @@
       "id": "MON-040",
       "set": 1,
       "type": "single",
-      "stem": "During a power outage, the video laryngoscope will not turn on and the backup monitor's battery is dead. Which MS MAID note was missed?",
+      "stem": "During a power failure, battery-powered airway equipment is unusable. Which MS MAID preparation step was missed?",
       "options": [
         "Spare batteries checked",
         "Extra ETT sizes",
@@ -1006,7 +1006,7 @@
       "id": "MON-041",
       "set": 1,
       "type": "single",
-      "stem": "A patient enters the OR and you begin applying monitors. Which should go on first?",
+      "stem": "As a patient enters the OR and standard monitors are applied, which monitor should be placed first according to the lecture sequence?",
       "options": [
         "Pulse oximeter",
         "ECG with a baseline strip",
@@ -1030,7 +1030,7 @@
       "id": "MON-042",
       "set": 1,
       "type": "single",
-      "stem": "During preoxygenation, what end point does the pre-induction slide use?",
+      "stem": "Which preoxygenation endpoint best matches the preinduction monitoring slide?",
       "options": [
         "FiO2 100% for 3–5 minutes or expired O2 ≥90%",
         "FiO2 50% for 1 minute or expired O2 ≥60%",
@@ -1054,7 +1054,7 @@
       "id": "MON-043",
       "set": 1,
       "type": "single",
-      "stem": "You need both hands to draw up drugs during preoxygenation of a patient who cannot hold the mask. What helps keep the seal?",
+      "stem": "A patient cannot hold the mask during preoxygenation and both of your hands are needed elsewhere. What can maintain a reliable seal?",
       "options": [
         "Head straps on the mask",
         "A loose mask with higher flow",
@@ -1078,7 +1078,7 @@
       "id": "MON-044",
       "set": 1,
       "type": "single",
-      "stem": "After placing an LMA, you hear breath sounds bilaterally but have not checked ETCO2. What does ASA require to verify placement?",
+      "stem": "After LMA placement, bilateral breath sounds are present. What additional confirmation is required?",
       "options": [
         "Clinical assessment plus ETCO2",
         "Breath sounds alone",
@@ -1102,7 +1102,7 @@
       "id": "MON-045",
       "set": 1,
       "type": "single",
-      "stem": "How long must continual ETCO2 analysis be in use for an ETT or SGA?",
+      "stem": "For an ETT or SGA, how long should continuous ETCO2 monitoring remain in use?",
       "options": [
         "From placement until removal or transfer to postop care",
         "From placement until the end of surgery",
@@ -1126,7 +1126,7 @@
       "id": "MON-046",
       "set": 1,
       "type": "single",
-      "stem": "What must be in continuous use when ventilation is controlled by a mechanical ventilator?",
+      "stem": "When a mechanical ventilator is controlling ventilation, which additional safety device must remain continuously active?",
       "options": [
         "A device that detects breathing system disconnection with an audible alarm",
         "A second capnograph on the expiratory limb",
@@ -1150,7 +1150,7 @@
       "id": "MON-047",
       "set": 1,
       "type": "single",
-      "stem": "During MAC with moderate or deep sedation, how is ventilation evaluated?",
+      "stem": "During moderate or deep sedation under MAC, how should ventilation be monitored?",
       "options": [
         "Qualitative signs plus continuous exhaled CO2",
         "Qualitative signs alone without capnography",
@@ -1174,7 +1174,7 @@
       "id": "MON-048",
       "set": 1,
       "type": "single",
-      "stem": "During regional anesthesia with minimal or no sedation, how is ventilation evaluated?",
+      "stem": "During regional anesthesia with minimal or no sedation, what level of ventilation monitoring is required?",
       "options": [
         "Continual observation of qualitative clinical signs",
         "Continuous capnography via nasal cannula",
@@ -1198,7 +1198,7 @@
       "id": "MON-049",
       "set": 1,
       "type": "multi",
-      "stem": "Which multisensory findings help verify airway placement? (Select 2)",
+      "stem": "Which TWO bedside findings can support airway placement while capnography provides definitive confirmation? (Select 2)",
       "options": [
         "Condensation in the airway device",
         "Chest wall excursion",
@@ -1225,7 +1225,7 @@
       "id": "MON-050",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, you see one capnogram waveform, then a flatter one. How many full consecutive waveforms should you see before calling placement confirmed?",
+      "stem": "After intubation, how many full consecutive ETCO2 waveforms does this lecture require before calling placement confirmed?",
       "options": [
         "Three",
         "One with CO2 above 20",
