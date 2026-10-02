@@ -9439,18 +9439,18 @@
       "id": "287",
       "set": 3,
       "type": "single",
-      "stem": "What is the primary role of sodium hydroxide and potassium hydroxide in wet soda lime?",
+      "stem": "During carbon dioxide absorption by wet soda lime, what happens after sodium and potassium carbonates are formed?",
       "options": [
-        "They act as catalytic activators to accelerate the initial absorption reaction",
-        "They permanently bind CO2 without undergoing regeneration",
-        "They neutralize toxic carbon monoxide gas",
-        "They act as moisture desiccants to prevent rain-out in the circuit"
+        "They react with calcium hydroxide to form calcium carbonate and regenerate the hydroxide catalysts",
+        "They permanently store carbon dioxide and remain unchanged until the canister is discarded",
+        "They react with ethyl violet to prevent the indicator dye from changing color",
+        "They decompose volatile anesthetics into carbon monoxide as part of normal carbon dioxide absorption"
       ],
       "answer": [
         0
       ],
-      "explanation": "NaOH and KOH function as catalysts to speed the initial neutralization reaction by forming carbonates; they are subsequently regenerated when reacting with calcium hydroxide.",
-      "citation": "CO₂ & Scavenging · Slide 2",
+      "explanation": "Sodium and potassium hydroxide first form intermediate carbonates. Those carbonates then react with calcium hydroxide to form calcium carbonate while regenerating the hydroxide catalysts.",
+      "citation": "CO₂ & Scavenging · Slides 2, 3",
       "topic": "CO₂ & Scavenging",
       "imageSvg": null,
       "image": null,
@@ -9461,11 +9461,11 @@
         "families": [
           "CO₂ Absorbents and Scavenging"
         ],
-        "slides": "2",
+        "slides": "2, 3",
         "citationFormat": "slides"
       },
       "sourceTitle": "CO₂ Absorbents and Scavenging",
-      "sourceLocator": "Slide 2"
+      "sourceLocator": "Slides 2, 3"
     },
     {
       "id": "288",
