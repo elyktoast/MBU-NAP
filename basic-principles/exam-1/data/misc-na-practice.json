@@ -10954,17 +10954,17 @@
       "id": "MISC-449",
       "set": 1,
       "type": "single",
-      "stem": "Immediately before urinary-catheter insertion, which WHO hand-hygiene moment applies?",
+      "stem": "After urinary-catheter insertion, the CRNA removes gloves after contact with urine. Which WHO hand-hygiene moment now applies?",
       "options": [
+        "After body-fluid exposure risk",
         "Before a clean or aseptic procedure",
         "After touching patient surroundings",
-        "After body-fluid exposure",
         "Before touching the patient"
       ],
       "answer": [
         0
       ],
-      "explanation": "Urinary catheter insertion is a clean or aseptic procedure (moment 2).",
+      "explanation": "Contact with urine creates body-fluid exposure risk, so WHO Moment 3 applies after the task.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
