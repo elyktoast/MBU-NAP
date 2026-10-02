@@ -6275,12 +6275,12 @@
       "id": "PRE-257",
       "set": 1,
       "type": "single",
-      "stem": "What is the minimum fasting time for a heavy meal with meat?",
+      "stem": "A patient ate a heavy meal containing meat before elective surgery. Which minimum fasting interval applies?",
       "options": [
         "8 hours or more",
-        "6 hours minimum",
-        "4 hours minimum",
-        "12 hours minimum"
+        "6 hours",
+        "4 hours",
+        "12 hours"
       ],
       "answer": [
         0
@@ -6299,7 +6299,7 @@
       "id": "PRE-258",
       "set": 1,
       "type": "single",
-      "stem": "A patient has delayed gastric emptying and increased aspiration risk. Which condition on the aspiration list is metabolic?",
+      "stem": "Which metabolic condition can prolong gastric emptying and therefore increase aspiration risk despite standard fasting?",
       "options": [
         "Hypothyroidism",
         "Pregnancy",
@@ -6323,12 +6323,12 @@
       "id": "PRE-259",
       "set": 1,
       "type": "single",
-      "stem": "A cirrhotic patient with tense ascites and encephalopathy needs urgent surgery. What airway plan is MOST appropriate?",
+      "stem": "A cirrhotic patient with tense ascites and encephalopathy requires urgent surgery. Which airway strategy best addresses the aspiration risk?",
       "options": [
-        "Rapid sequence induction",
+        "Rapid-sequence induction",
         "Mask induction with spontaneous ventilation",
-        "LMA without RSI",
-        "Awake extubation without RSI"
+        "LMA without rapid-sequence precautions",
+        "Routine induction without aspiration precautions"
       ],
       "answer": [
         0
@@ -6347,7 +6347,7 @@
       "id": "PRE-260",
       "set": 1,
       "type": "multi",
-      "stem": "Which variables are included in the Child-Pugh score? (Select 4)",
+      "stem": "Which four variables are components of the Child-Pugh score? (Select 4)",
       "options": [
         "Bilirubin",
         "Albumin",
@@ -6376,7 +6376,7 @@
       "id": "PRE-261",
       "set": 1,
       "type": "single",
-      "stem": "A cirrhotic patient's labs show bilirubin 3.1, INR 1.9, creatinine 1.6, and sodium 128. Albumin is 2.6, and he has ascites. Which of these values feed the MELD score?",
+      "stem": "A cirrhotic patient has bilirubin 3.1, INR 1.9, creatinine 1.6, sodium 128, albumin 2.6, and ascites. Which values are used in the MELD calculation?",
       "options": [
         "Bilirubin, INR, creatinine, and sodium",
         "Bilirubin, albumin, ascites, and INR",
@@ -6400,12 +6400,12 @@
       "id": "PRE-262",
       "set": 1,
       "type": "single",
-      "stem": "A MELD score above which value prompts transplant evaluation before elective non-hepatic surgery?",
+      "stem": "At what MELD threshold does the lecture recommend transplant evaluation before elective nonhepatic surgery?",
       "options": [
-        "15",
-        "10",
-        "20",
-        "25"
+        "Above 15",
+        "Above 10",
+        "Above 20",
+        "Above 25"
       ],
       "answer": [
         0
@@ -6424,12 +6424,12 @@
       "id": "PRE-263",
       "set": 1,
       "type": "single",
-      "stem": "Three cirrhotic patients have Child-Pugh scores of 6, 8, and 12. Which can be considered compensated with acceptable surgical risk?",
+      "stem": "Three patients have Child-Pugh scores of 6, 8, and 12. Which patient has the most compensated disease and the lowest operative risk?",
       "options": [
-        "The patient with a score of 6 (class A)",
-        "The patient with a score of 8 (class B)",
-        "The patient with a score of 12 (class C)",
-        "None, since any cirrhosis prohibits surgery"
+        "Score 6, class A",
+        "Score 8, class B",
+        "Score 12, class C",
+        "All have equivalent operative risk"
       ],
       "answer": [
         0
@@ -6448,12 +6448,12 @@
       "id": "PRE-264",
       "set": 1,
       "type": "single",
-      "stem": "A 58-year-old with cirrhosis has ascites, encephalopathy, bilirubin 4.2, albumin 2.4, and INR 2.1 (Child-Pugh C). He wants an elective hernia repair. What is the BEST recommendation?",
+      "stem": "A patient with Child-Pugh C cirrhosis has ascites, encephalopathy, bilirubin 4.2, albumin 2.4, and INR 2.1 and requests elective hernia repair. Which recommendation best follows the risk stratification?",
       "options": [
-        "Elective surgery is highly discouraged",
+        "Elective surgery is strongly discouraged",
         "Proceed with standard anesthesia",
-        "Proceed once the INR is corrected",
-        "Delay 1 week, then proceed"
+        "Proceed once INR alone is corrected",
+        "Delay one week and proceed"
       ],
       "answer": [
         0
@@ -6472,13 +6472,13 @@
       "id": "PRE-265",
       "set": 1,
       "type": "multi",
-      "stem": "Which liver findings are red flags that should postpone elective surgery? (Select 3)",
+      "stem": "Which three liver findings should postpone elective surgery because they signal active or severe hepatic disease? (Select 3)",
       "options": [
         "Acute viral or alcoholic hepatitis",
         "Hepatic encephalopathy",
         "Severe drug-induced liver injury",
         "Stable compensated cirrhosis",
-        "Mildly elevated ALT only",
+        "Mild isolated ALT elevation",
         "Normal INR and albumin"
       ],
       "answer": [
@@ -6500,12 +6500,12 @@
       "id": "PRE-266",
       "set": 1,
       "type": "single",
-      "stem": "A patient with cirrhosis has asterixis and confusion. What is the preop management per the notes?",
+      "stem": "A cirrhotic patient has confusion and asterixis before surgery. Which intervention addresses the reversible cause that should be treated before proceeding?",
       "options": [
-        "Treat encephalopathy with lactulose before surgery",
-        "Proceed with surgery immediately",
-        "Give benzodiazepines for agitation and proceed",
-        "Give NSAIDs for pain"
+        "Lactulose for hepatic encephalopathy",
+        "Immediate surgery without treatment",
+        "Benzodiazepines for agitation",
+        "NSAIDs for discomfort"
       ],
       "answer": [
         0
@@ -6524,12 +6524,12 @@
       "id": "PRE-267",
       "set": 1,
       "type": "single",
-      "stem": "A patient with liver disease has normal ALT and AST but an INR of 2.0 and albumin of 2.4. What do these findings indicate?",
+      "stem": "A patient with liver disease has normal aminotransferases but INR 2.0 and albumin 2.4. Which hepatic function is most clearly impaired?",
       "options": [
-        "Impaired hepatic synthetic function",
-        "Active hepatocellular injury",
-        "Isolated biliary obstruction",
-        "Normal liver function"
+        "Synthetic function",
+        "Hepatocellular injury only",
+        "Bile drainage only",
+        "No clinically important function"
       ],
       "answer": [
         0
@@ -6548,12 +6548,12 @@
       "id": "PRE-268",
       "set": 1,
       "type": "single",
-      "stem": "A cirrhotic patient's CBC shows Hgb 9.8 and platelets 62,000. What do these findings MOST likely reflect?",
+      "stem": "A cirrhotic patient has hemoglobin 9.8 g/dL and platelets 62,000/µL without acute bleeding. Which mechanism best explains this pattern?",
       "options": [
-        "Splenic sequestration",
-        "Acute blood loss from surgery",
-        "A lab error from hemolysis",
-        "Dilution from IV fluids"
+        "Splenic sequestration from portal hypertension",
+        "Acute surgical blood loss",
+        "Hemolysis from specimen error",
+        "Dilution from intraoperative crystalloid"
       ],
       "answer": [
         0
@@ -6572,7 +6572,7 @@
       "id": "PRE-269",
       "set": 1,
       "type": "single",
-      "stem": "A patient with elevated liver enzymes is scheduled for surgery. Which exposures should you specifically ask about?",
+      "stem": "When evaluating elevated liver enzymes, which exposure history is especially important because both can cause hepatotoxicity?",
       "options": [
         "Alcohol and acetaminophen",
         "Aspirin and ibuprofen",
@@ -6596,12 +6596,12 @@
       "id": "PRE-270",
       "set": 1,
       "type": "single",
-      "stem": "A hemodialysis patient is scheduled for a fistula revision. What is the FIRST question to ask?",
+      "stem": "A hemodialysis patient presents for fistula revision. Which question should be answered first because it affects volume status and electrolytes today?",
       "options": [
         "When was the last dialysis session?",
         "Is the patient on insulin?",
         "Does the patient have a pacemaker?",
-        "What is the patient's BMI?"
+        "What is the BMI?"
       ],
       "answer": [
         0
@@ -6620,7 +6620,7 @@
       "id": "PRE-271",
       "set": 1,
       "type": "single",
-      "stem": "How recent should potassium be before incision in a renal patient per the notes?",
+      "stem": "How recent should a potassium level be before surgery in a renal-failure patient according to the lecture?",
       "options": [
         "Within 24 hours",
         "Within 1 week",
@@ -6644,12 +6644,12 @@
       "id": "PRE-272",
       "set": 1,
       "type": "single",
-      "stem": "A dialysis patient has K 6.4 before elective surgery. What is the BEST action?",
+      "stem": "A dialysis patient has potassium 6.4 mEq/L before elective surgery. Which principle should guide the decision?",
       "options": [
-        "Postpone and lower potassium first",
-        "Proceed with standard anesthesia",
-        "Proceed after giving succinylcholine",
-        "Proceed if ECG is normal"
+        "Correct the hyperkalemia before proceeding",
+        "Proceed if the patient is asymptomatic",
+        "Proceed after succinylcholine",
+        "Proceed if the ECG is normal"
       ],
       "answer": [
         0
@@ -6668,12 +6668,12 @@
       "id": "PRE-273",
       "set": 1,
       "type": "multi",
-      "stem": "A dialysis patient's preop potassium is 6.8 mEq/L with peaked T waves. Which treatments lower potassium or protect the heart? (Select 3)",
+      "stem": "A dialysis patient has potassium 6.8 mEq/L with peaked T waves. Which three therapies either stabilize the myocardium or lower serum potassium? (Select 3)",
       "options": [
         "Insulin with dextrose",
         "Calcium gluconate",
         "Emergency dialysis",
-        "A normal saline bolus",
+        "Normal saline bolus",
         "Succinylcholine",
         "Potassium chloride"
       ],
@@ -6696,12 +6696,12 @@
       "id": "PRE-274",
       "set": 1,
       "type": "single",
-      "stem": "A dialysis patient receives 3 L of crystalloid during a 4-hour case and develops pulmonary edema in PACU. What principle was missed?",
+      "stem": "A dialysis patient receives 3 L crystalloid during surgery and develops pulmonary edema. Which physiologic limitation was underestimated?",
       "options": [
-        "Renal failure patients cannot excrete large fluid volumes",
-        "Renal patients need large fluid boluses",
-        "Crystalloids are cleared faster in renal failure",
-        "Dialysis removed too little fluid before surgery"
+        "Inability to excrete a large fluid load",
+        "Need for routine large fluid boluses",
+        "Accelerated crystalloid clearance",
+        "Excessive dialysis before surgery"
       ],
       "answer": [
         0
@@ -6720,12 +6720,12 @@
       "id": "PRE-275",
       "set": 1,
       "type": "single",
-      "stem": "A dialysis patient has a left forearm AV fistula and needs a BP cuff, IV, and labs. Which plan protects the fistula?",
+      "stem": "A dialysis patient has a left forearm AV fistula and needs blood pressure monitoring, IV access, and laboratory draws. Which plan best preserves the access?",
       "options": [
-        "Place everything on the right arm",
-        "Place the IV on the left and the cuff on the right",
-        "Place the cuff on the left above the fistula",
-        "Draw labs from the fistula to save veins"
+        "Use the right arm for all of them",
+        "Place the IV in the fistula arm and cuff on the other",
+        "Place the cuff above the fistula",
+        "Draw blood directly from the fistula"
       ],
       "answer": [
         0
@@ -6744,11 +6744,11 @@
       "id": "PRE-276",
       "set": 1,
       "type": "multi",
-      "stem": "Which drugs are restricted in renal failure per the notes? (Select 2)",
+      "stem": "Which two analgesics are specifically problematic in renal failure because active metabolites can accumulate? (Select 2)",
       "options": [
         "Morphine",
         "Meperidine",
-        "Remifentanil infusion",
+        "Remifentanil",
         "Fentanyl",
         "Propofol",
         "Rocuronium with sugammadex"
@@ -6771,12 +6771,12 @@
       "id": "PRE-277",
       "set": 1,
       "type": "single",
-      "stem": "A dialysis patient receives morphine 10 mg in PACU and is somnolent with RR 6 for many hours. What explains the prolonged effect?",
+      "stem": "A dialysis patient remains markedly somnolent with respiratory depression for hours after morphine. Which pharmacokinetic issue best explains the prolonged effect?",
       "options": [
-        "Active metabolites accumulate without renal clearance",
+        "Renally cleared active metabolites accumulate",
         "Morphine is metabolized faster in renal failure",
-        "Morphine causes seizures in renal failure",
-        "Renal failure prevents morphine from reaching the CNS"
+        "Morphine directly causes seizures",
+        "Renal failure prevents CNS penetration"
       ],
       "answer": [
         0
@@ -6795,12 +6795,12 @@
       "id": "PRE-278",
       "set": 1,
       "type": "single",
-      "stem": "A dialysis patient receives meperidine for shivering and later has a seizure. What explains this?",
+      "stem": "A dialysis patient develops a seizure after meperidine. Which metabolite is responsible for the renal-failure-specific toxicity?",
       "options": [
-        "Normeperidine accumulation",
-        "Meperidine directly blocks GABA receptors",
-        "Hyponatremia from dialysis",
-        "Uremic encephalopathy from missed dialysis"
+        "Normeperidine",
+        "Morphine-6-glucuronide",
+        "Norcocaine",
+        "Meperidine sulfate"
       ],
       "answer": [
         0
@@ -6819,12 +6819,12 @@
       "id": "PRE-279",
       "set": 1,
       "type": "single",
-      "stem": "A dialysis patient's baseline BP is 170/95. After induction it falls to 105/60. How should you interpret this?",
+      "stem": "A dialysis patient's usual blood pressure is 170/95, then falls to 105/60 after induction. Why can this still represent clinically important hypotension?",
       "options": [
-        "Relative hypotension that risks hypoperfusion; treat it",
-        "An ideal target that protects fistula flow",
-        "A safe value since the systolic stays above 100 mmHg",
-        "A reason to deepen anesthesia further"
+        "The large relative drop may compromise organ perfusion",
+        "Any systolic pressure above 100 is adequate",
+        "Lower pressure always improves fistula flow",
+        "The pressure indicates anesthesia should be deepened"
       ],
       "answer": [
         0
@@ -6843,11 +6843,11 @@
       "id": "PRE-280",
       "set": 1,
       "type": "single",
-      "stem": "A dialysis patient's last session was yesterday. Which labs are MOST important before surgery?",
+      "stem": "A dialysis patient was treated yesterday. Which laboratory set is most important before today's surgery?",
       "options": [
         "Potassium, creatinine, and BUN",
         "HbA1c and glucose",
-        "Liver enzymes and bilirubin",
+        "AST, ALT, and bilirubin",
         "TSH and cortisol"
       ],
       "answer": [
@@ -6867,12 +6867,12 @@
       "id": "PRE-281",
       "set": 1,
       "type": "single",
-      "stem": "A cirrhotic patient with tense ascites needs urgent surgery. What airway consideration applies?",
+      "stem": "Why does tense ascites in a cirrhotic patient increase concern during induction?",
       "options": [
-        "Plan for a rapid sequence induction",
-        "Low aspiration risk",
-        "Lower intra-abdominal pressure than normal",
-        "No NPO requirement"
+        "Increased intra-abdominal pressure raises aspiration risk and supports rapid-sequence precautions",
+        "Ascites lowers aspiration risk",
+        "Ascites reduces intra-abdominal pressure",
+        "Ascites removes the need for fasting"
       ],
       "answer": [
         0
@@ -6891,12 +6891,12 @@
       "id": "PRE-282",
       "set": 1,
       "type": "single",
-      "stem": "A patient has jaundice with a total bilirubin of 6.2 and alkaline phosphatase of 580, while ALT is only mildly elevated. Which process do these labs suggest?",
+      "stem": "A jaundiced patient has bilirubin 6.2 mg/dL and alkaline phosphatase 580 U/L with only mild ALT elevation. Which pattern is most likely?",
       "options": [
         "Cholestasis",
-        "Impaired synthetic function",
-        "Acute hepatocellular injury",
-        "Normal liver function"
+        "Isolated synthetic failure",
+        "Acute hepatocellular necrosis",
+        "Normal hepatic function"
       ],
       "answer": [
         0
@@ -6915,11 +6915,11 @@
       "id": "PRE-283",
       "set": 1,
       "type": "single",
-      "stem": "A patient with Child-Pugh B needs elective surgery. What is the BEST description of risk?",
+      "stem": "How should Child-Pugh B disease generally be characterized for elective nonhepatic surgery?",
       "options": [
-        "Moderate surgical risk",
-        "Safe compensated liver",
-        "Decompensated; surgery discouraged",
+        "Moderate operative risk",
+        "Low-risk compensated disease",
+        "Decompensated disease in which surgery is always discouraged",
         "No additional risk"
       ],
       "answer": [
@@ -6939,12 +6939,12 @@
       "id": "PRE-284",
       "set": 1,
       "type": "single",
-      "stem": "A dialysis patient is hypotensive during surgery. Which fluid strategy is BEST?",
+      "stem": "A dialysis patient becomes hypotensive intraoperatively. Which fluid strategy best balances perfusion against the risk of volume overload?",
       "options": [
-        "Goal-directed therapy with small boluses",
-        "Large boluses until BP normalizes",
-        "No fluid at all during the case",
-        "Colloids for all fluid replacement"
+        "Goal-directed small boluses",
+        "Large empiric boluses until pressure normalizes",
+        "No fluid under any circumstance",
+        "Routine colloid-only resuscitation"
       ],
       "answer": [
         0
@@ -6963,11 +6963,11 @@
       "id": "PRE-285",
       "set": 1,
       "type": "single",
-      "stem": "A patient lists \"morphine allergy\" and says it made him nauseated. How should you classify this?",
+      "stem": "A patient lists 'morphine allergy' but describes nausea without rash, swelling, bronchospasm, or hypotension. How should this history be classified?",
       "options": [
-        "An adverse drug reaction rather than a true allergy",
-        "A true allergy requiring all opioids be avoided",
-        "Anaphylaxis requiring avoidance of all opioids",
+        "Adverse drug effect rather than true allergy",
+        "IgE-mediated allergy requiring avoidance of all opioids",
+        "Prior anaphylaxis",
         "Angioedema"
       ],
       "answer": [
@@ -6987,12 +6987,12 @@
       "id": "PRE-286",
       "set": 1,
       "type": "single",
-      "stem": "During induction, a patient develops hypotension, bronchospasm, and hives. Which drug classes are the most common triggers?",
+      "stem": "During induction, hypotension, bronchospasm, and urticaria occur abruptly. Which drug classes are among the most common perioperative anaphylaxis triggers?",
       "options": [
         "Neuromuscular blockers and antibiotics",
         "Propofol and ketamine",
         "Local anesthetics and synthetic opioids",
-        "Inhaled anesthetics and oxygen"
+        "Volatile agents and oxygen"
       ],
       "answer": [
         0
@@ -7011,12 +7011,12 @@
       "id": "PRE-287",
       "set": 1,
       "type": "single",
-      "stem": "A patient reports penicillin rash as a child. What does the note say about cross-reactivity?",
+      "stem": "A patient reports a remote childhood penicillin rash and needs cefazolin prophylaxis. Which statement best reflects the lecture's cross-reactivity point?",
       "options": [
-        "Cross-reaction is very low",
-        "Cross-reaction is extremely high",
+        "Cross-reactivity is very low",
+        "Cross-reactivity is extremely high",
         "All cephalosporins are contraindicated",
-        "Cross-reaction is about 10%, so avoid cefazolin"
+        "Cross-reactivity is about 10% so cefazolin should be avoided"
       ],
       "answer": [
         0
@@ -7035,7 +7035,7 @@
       "id": "PRE-288",
       "set": 1,
       "type": "single",
-      "stem": "A patient had hives and lip swelling after amoxicillin as a child and needs surgical prophylaxis. Which antibiotic is an appropriate alternative?",
+      "stem": "A patient had hives and lip swelling after amoxicillin and needs an alternative surgical prophylactic antibiotic. Which option fits best?",
       "options": [
         "Clindamycin",
         "Ampicillin",
@@ -7059,7 +7059,7 @@
       "id": "PRE-289",
       "set": 1,
       "type": "multi",
-      "stem": "A patient develops flushing and hypotension after an induction drug. Which drugs are known histamine releasers? (Select 4)",
+      "stem": "Which four medications are known to cause clinically relevant histamine release? (Select 4)",
       "options": [
         "Atracurium",
         "Morphine",
@@ -7088,12 +7088,12 @@
       "id": "PRE-290",
       "set": 1,
       "type": "single",
-      "stem": "A patient reports nausea after morphine but no rash, swelling, or hypotension. How should this be classified?",
+      "stem": "A patient reports nausea after morphine with no rash, airway symptoms, or hypotension. Which distinction matters most for future anesthetic planning?",
       "options": [
-        "Adverse drug reaction, not a true allergy",
-        "A true IgE-mediated allergy",
-        "Anaphylaxis requiring avoidance",
-        "A pseudoallergic reaction requiring avoidance of all opioids"
+        "This is an adverse effect, not evidence of IgE-mediated allergy",
+        "This proves opioid anaphylaxis",
+        "All opioids must be avoided permanently",
+        "This represents angioedema"
       ],
       "answer": [
         0
@@ -7112,11 +7112,11 @@
       "id": "PRE-291",
       "set": 1,
       "type": "single",
-      "stem": "A nurse with frequent glove use reports itchy hands and swelling after a dental visit. Which allergy should you specifically ask about?",
+      "stem": "A healthcare worker with frequent glove exposure reports pruritic hands and prior swelling after dental care. Which allergy history deserves targeted follow-up?",
       "options": [
         "Latex",
         "Oxygen",
-        "Saline",
+        "Normal saline",
         "Warm blankets"
       ],
       "answer": [
@@ -7136,12 +7136,12 @@
       "id": "PRE-292",
       "set": 1,
       "type": "single",
-      "stem": "A patient smoked 1.5 packs per day for 30 years. What is his pack-year history, and what does it suggest?",
+      "stem": "A patient smoked 1.5 packs per day for 30 years. What exposure does that represent, and what should it raise concern for?",
       "options": [
-        "45 pack-years; likely COPD",
-        "30 pack-years; minimal lung risk",
-        "20 pack-years; no added lung risk",
-        "15 pack-years; minimal lung risk"
+        "45 pack-years with substantial COPD risk",
+        "30 pack-years with minimal pulmonary risk",
+        "20 pack-years with no added pulmonary risk",
+        "15 pack-years with minimal pulmonary risk"
       ],
       "answer": [
         0
@@ -7160,12 +7160,12 @@
       "id": "PRE-293",
       "set": 1,
       "type": "single",
-      "stem": "A patient scheduled for elective surgery in 10 weeks asks when to quit smoking. What timeframe gives the most benefit?",
+      "stem": "A smoker scheduled for elective surgery in 10 weeks asks when cessation provides the greatest benefit. Which answer best matches the lecture?",
       "options": [
         "More than 2 months before surgery",
-        "The night before surgery",
+        "The night before surgery only",
         "One week before surgery",
-        "Timing makes no difference"
+        "Timing does not affect benefit"
       ],
       "answer": [
         0
@@ -7184,12 +7184,12 @@
       "id": "PRE-294",
       "set": 1,
       "type": "single",
-      "stem": "A patient says, \"It's too late to quit, my surgery is in 3 days.\" What is the BEST response?",
+      "stem": "A smoker says surgery is in 3 days so quitting now is pointless. Which response best reflects perioperative evidence presented in the lecture?",
       "options": [
-        "Stopping even a few days can help",
-        "There is no benefit unless you quit for 2 months",
-        "Continue smoking to avoid withdrawal",
-        "Increase vaping instead of smoking"
+        "Even a few days of abstinence can provide benefit",
+        "There is no benefit unless abstinence exceeds 2 months",
+        "Smoking should continue to prevent withdrawal",
+        "Vaping is a preferable substitute"
       ],
       "answer": [
         0
@@ -7208,12 +7208,12 @@
       "id": "PRE-295",
       "set": 1,
       "type": "single",
-      "stem": "A patient drinks 10 beers daily and is scheduled for an elective colectomy in 3 weeks. How long should he abstain?",
+      "stem": "A patient drinks about 10 beers daily and has elective colectomy planned in 3 weeks. What abstinence interval does the lecture recommend when possible?",
       "options": [
         "At least 4 weeks",
-        "24 hours before surgery",
-        "1 week before surgery",
-        "No abstinence is needed"
+        "24 hours",
+        "1 week",
+        "No abstinence"
       ],
       "answer": [
         0
@@ -7232,12 +7232,12 @@
       "id": "PRE-296",
       "set": 1,
       "type": "single",
-      "stem": "A 52-year-old who drinks a fifth of vodka daily last drank 18 hours ago and is scheduled for an open reduction. Which approach BEST prevents withdrawal perioperatively?",
+      "stem": "A patient who drinks a fifth of vodka daily last drank 18 hours ago and now needs surgery. Which medication strategy best addresses impending alcohol withdrawal risk?",
       "options": [
-        "Consider a longer-acting benzodiazepine based on timing",
-        "Avoid all sedatives to prevent postoperative delirium",
-        "Give naloxone to block withdrawal",
-        "Give flumazenil to reset GABA tone"
+        "Use a longer-acting benzodiazepine based on withdrawal timing and severity",
+        "Avoid all sedatives",
+        "Give naloxone",
+        "Give flumazenil"
       ],
       "answer": [
         0
@@ -7256,7 +7256,7 @@
       "id": "PRE-297",
       "set": 1,
       "type": "single",
-      "stem": "On postoperative day 1, a heavy drinker is tremulous, tachycardic, and hypertensive. Which adjuncts reduce the sympathetic symptoms of withdrawal?",
+      "stem": "A heavy drinker becomes tremulous, tachycardic, and hypertensive postoperatively. Which adjuncts can reduce sympathetic overactivity during withdrawal?",
       "options": [
         "Dexmedetomidine and clonidine",
         "Naloxone and flumazenil",
@@ -7280,12 +7280,12 @@
       "id": "PRE-298",
       "set": 1,
       "type": "single",
-      "stem": "A patient arrives for emergency surgery with a blood alcohol level of 250 mg/dL. How will his anesthetic requirement compare with baseline?",
+      "stem": "A patient presents intoxicated with a blood alcohol level of 250 mg/dL. How should acute alcohol exposure affect expected anesthetic requirement?",
       "options": [
-        "Lower, since acute intoxication decreases MAC",
-        "Higher, since acute intoxication increases MAC",
-        "Unchanged",
-        "Higher, since alcohol induces liver enzymes"
+        "Acute intoxication decreases MAC",
+        "Acute intoxication increases MAC",
+        "MAC is unchanged",
+        "MAC increases because of enzyme induction"
       ],
       "answer": [
         0
@@ -7304,12 +7304,12 @@
       "id": "PRE-299",
       "set": 1,
       "type": "single",
-      "stem": "A patient who drinks heavily every day is sober today for surgery. How will his anesthetic requirement compare with a nondrinker's?",
+      "stem": "A chronic heavy drinker is sober on the day of surgery. How does chronic alcohol exposure usually alter anesthetic requirement compared with a nondrinker?",
       "options": [
-        "Higher; chronic use increases MAC",
-        "Lower, since chronic use decreases MAC",
-        "Unchanged",
-        "Lower, since alcohol damages the liver"
+        "It increases MAC",
+        "It decreases MAC",
+        "It has no effect",
+        "It always lowers requirement because of liver disease"
       ],
       "answer": [
         0
@@ -7328,12 +7328,12 @@
       "id": "PRE-300",
       "set": 1,
       "type": "single",
-      "stem": "A patient who drinks heavily every day recovers twitches faster than expected after rocuronium. What explains this?",
+      "stem": "A chronic heavy drinker recovers from rocuronium faster than expected. Which explanation best fits the lecture?",
       "options": [
-        "Heavy drinkers may metabolize NMBs more rapidly",
-        "Alcohol prolongs neuromuscular blockade",
-        "Alcohol makes patients resistant to sedatives but not NMBs",
-        "Alcohol prolongs recovery from rocuronium"
+        "Chronic alcohol use may increase metabolism of neuromuscular blockers",
+        "Alcohol always prolongs neuromuscular blockade",
+        "Alcohol affects sedatives but not neuromuscular blockers",
+        "Rocuronium recovery is unrelated to alcohol use"
       ],
       "answer": [
         0
@@ -7352,7 +7352,7 @@
       "id": "PRE-301",
       "set": 1,
       "type": "multi",
-      "stem": "A 30-year-old used cocaine 2 hours before arriving for an emergency appendectomy. Which effects should you anticipate? (Select 4)",
+      "stem": "Which four cardiovascular effects are expected with acute cocaine use? (Select 4)",
       "options": [
         "Coronary vasospasm",
         "Hypertension",
@@ -7381,12 +7381,12 @@
       "id": "PRE-302",
       "set": 1,
       "type": "single",
-      "stem": "A cocaine-intoxicated patient has BP 220/120 and HR 140. A colleague wants to give metoprolol. Why is this dangerous?",
+      "stem": "A cocaine-intoxicated patient has severe hypertension and tachycardia. Why can a pure beta-blocker such as metoprolol be dangerous?",
       "options": [
-        "Unopposed alpha stimulation",
-        "Beta-blockers cause bronchospasm in most patients",
-        "Beta-blockers increase cocaine metabolism",
-        "Beta-blockers worsen bronchospasm from cocaine"
+        "It can leave unopposed alpha-adrenergic vasoconstriction",
+        "It directly increases cocaine metabolism",
+        "It reliably causes bronchospasm in all patients",
+        "It reverses coronary vasospasm too quickly"
       ],
       "answer": [
         0
@@ -7405,7 +7405,7 @@
       "id": "PRE-303",
       "set": 1,
       "type": "single",
-      "stem": "A patient with cocaine toxicity is agitated with HR 135 and BP 195/110. What is the FIRST-line treatment?",
+      "stem": "A cocaine-intoxicated patient is agitated, tachycardic, and severely hypertensive. Which treatment addresses the sympathetic surge first?",
       "options": [
         "Benzodiazepines",
         "Beta-blockers",
@@ -7429,7 +7429,7 @@
       "id": "PRE-304",
       "set": 1,
       "type": "multi",
-      "stem": "After cocaine use, a patient's BP is 220/120 with chest pain. Which drugs are appropriate vasodilators? (Select 3)",
+      "stem": "A patient has cocaine-associated severe hypertension and chest pain. Which three vasodilators are appropriate options? (Select 3)",
       "options": [
         "Nitroprusside",
         "Nitroglycerin",
@@ -7457,7 +7457,7 @@
       "id": "PRE-305",
       "set": 1,
       "type": "single",
-      "stem": "A 30-year-old has severe dental decay, weight loss, and tachycardia. Which substance does this pattern suggest?",
+      "stem": "Severe dental decay, weight loss, and persistent tachycardia are most suggestive of chronic use of which substance?",
       "options": [
         "Methamphetamine",
         "Alcohol",
@@ -7481,12 +7481,12 @@
       "id": "PRE-306",
       "set": 1,
       "type": "single",
-      "stem": "A 34-year-old on buprenorphine for opioid use disorder is scheduled for an ankle fracture repair. Which pain strategy is BEST?",
+      "stem": "A patient takes buprenorphine for opioid use disorder and needs painful orthopedic surgery. Which analgesic strategy best minimizes inadequate pain control while avoiding reliance on a single opioid?",
       "options": [
-        "Multimodal plus regional or neuraxial",
-        "High-dose morphine as the sole analgesic",
-        "Stopping buprenorphine and avoiding all opioids",
-        "NSAIDs alone to avoid opioid exposure"
+        "Multimodal analgesia with regional or neuraxial techniques when appropriate",
+        "High-dose morphine alone",
+        "Stop buprenorphine and avoid all opioids",
+        "NSAIDs alone regardless of surgical pain"
       ],
       "answer": [
         0
