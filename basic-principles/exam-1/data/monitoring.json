@@ -56,12 +56,12 @@
       "id": "MON-003",
       "set": 1,
       "type": "single",
-      "stem": "During GA without an arterial line, what is the longest acceptable interval between determinations of arterial pressure and heart rate?",
+      "stem": "During stable GA without an arterial catheter, the NIBP cuff is changed from cycling every 5 minutes to every 10 minutes because repeated readings are normal. Which statement is correct?",
       "options": [
-        "At least every five minutes",
-        "At least every ten minutes, more often if unstable",
-        "Continuously by invasive line in every GA case",
-        "At least every fifteen minutes after induction"
+        "This violates the requirement to determine and evaluate arterial pressure and heart rate at least every 5 minutes",
+        "The longer interval is acceptable once three consecutive pressures are stable",
+        "Ten-minute cycling is acceptable if continuous ECG and pulse oximetry are present",
+        "The interval is acceptable unless vasoactive drugs are being administered"
       ],
       "answer": [
         0
@@ -109,12 +109,12 @@
       "id": "MON-005",
       "set": 1,
       "type": "single",
-      "stem": "After induction, ECG leads are removed for positioning and not replaced for 10 minutes. Which monitoring requirement has been violated?",
+      "stem": "During prone positioning after induction, ECG electrodes are removed and not replaced for 10 minutes while pulse oximetry and NIBP continue. Which requirement is specifically unmet?",
       "options": [
-        "From induction until leaving the room",
-        "From incision until closure",
-        "During induction and emergence",
-        "When the patient has cardiac disease"
+        "Continuous ECG display from the beginning of anesthesia until preparing to leave the anesthetizing location",
+        "ECG monitoring only from incision until closure",
+        "ECG monitoring only during induction and emergence",
+        "ECG monitoring only in patients with known cardiovascular disease"
       ],
       "answer": [
         0
@@ -301,12 +301,12 @@
       "id": "MON-013",
       "set": 1,
       "type": "single",
-      "stem": "A closed-claims review finds a common feature in every hypoventilation claim. What was it?",
+      "stem": "A patient under deep sedation becomes progressively hypercapnic while SpO2 remains normal on supplemental oxygen. Which monitoring failure most closely mirrors the recurring problem identified in hypoventilation closed claims?",
       "options": [
         "Failure to monitor ventilation",
-        "Equipment malfunction",
-        "Failure to monitor oxygenation with pulse oximetry",
-        "Wrong-site surgery"
+        "Failure to obtain intermittent arterial blood gases",
+        "Failure to use invasive blood pressure monitoring",
+        "Failure to monitor anesthetic depth"
       ],
       "answer": [
         0
@@ -325,12 +325,12 @@
       "id": "MON-014",
       "set": 1,
       "type": "single",
-      "stem": "If 100 anesthesia closed claims are reviewed, approximately how many would be expected to involve errors in judgment?",
+      "stem": "A closed-claims dataset reports that more than 65% of claims involved errors in judgment. In a review of 200 similar claims, approximately how many would be expected to fall into that category?",
       "options": [
-        "More than 65",
-        "About 10",
-        "About 25",
-        "About 45"
+        "More than 130",
+        "About 20",
+        "About 50",
+        "About 90"
       ],
       "answer": [
         0
@@ -373,12 +373,12 @@
       "id": "MON-016",
       "set": 1,
       "type": "single",
-      "stem": "After universal capnography is adopted, which serious airway event should decline most?",
+      "stem": "Immediately after intubation, bilateral chest movement appears present and SpO2 remains 100% from preoxygenation, but no sustained exhaled CO2 waveform appears. Which safety advance is designed to prevent the catastrophic error most associated with this pattern?",
       "options": [
-        "Unrecognized esophageal intubation",
-        "Awareness under anesthesia",
-        "Postoperative visual loss",
-        "Dental injury at intubation"
+        "Routine capnographic confirmation to detect esophageal intubation",
+        "Processed EEG monitoring to detect awareness",
+        "Continuous temperature monitoring",
+        "Quantitative neuromuscular monitoring"
       ],
       "answer": [
         0
@@ -425,12 +425,12 @@
       "id": "MON-018",
       "set": 1,
       "type": "single",
-      "stem": "After a hypoxic event, the ventilator is blamed but later tests normally. What does closed-claims experience suggest about this pattern?",
+      "stem": "After a hypoxic event, the team initially attributes the problem to a ventilator defect, but testing shows normal equipment function and review reveals an incomplete pre-use check. Which closed-claims lesson BEST applies?",
       "options": [
-        "Device failure rarely causes adverse outcomes",
-        "Device failure is the leading cause of adverse outcomes",
-        "Device failure causes half of adverse outcomes",
-        "Device failure causes most hypoxic events"
+        "User error and failure to check equipment are more common contributors than true device malfunction",
+        "Device malfunction remains the most likely cause of anesthesia adverse events",
+        "A normal post-event device test excludes any equipment-related contribution",
+        "Equipment checks add little because most failures are unpredictable"
       ],
       "answer": [
         0
@@ -449,12 +449,12 @@
       "id": "MON-019",
       "set": 1,
       "type": "single",
-      "stem": "Which equipment category is disproportionately represented in closed claims because of misuse?",
+      "stem": "A preventable event follows incorrect use of the anesthesia workstation rather than failure of the device itself. Which equipment category has been disproportionately represented in closed claims from misuse?",
       "options": [
-        "Anesthesia gas delivery systems",
-        "Infusion pumps for TIVA",
-        "Noninvasive blood pressure cuffs",
-        "Warming devices and blankets"
+        "Anesthesia gas-delivery systems",
+        "TIVA infusion pumps",
+        "NIBP cuffs",
+        "Forced-air warming devices"
       ],
       "answer": [
         0
@@ -497,12 +497,12 @@
       "id": "MON-021",
       "set": 1,
       "type": "single",
-      "stem": "The first case begins without a machine checkout because the night team used it. Which AANA standard is violated?",
+      "stem": "The first anesthetic of the day begins without a workstation checkout because the machine functioned normally overnight. Which AANA requirement is most directly violated?",
       "options": [
-        "Standard 5",
-        "Standard 9: alarm limits must be used",
-        "Standard 8e: NM monitoring",
-        "Standard 1: provider presence"
+        "Verification of anesthesia equipment function before each anesthetic",
+        "Use of patient-specific audible alarm limits",
+        "Quantitative neuromuscular monitoring",
+        "Continuous provider presence"
       ],
       "answer": [
         0
@@ -545,12 +545,12 @@
       "id": "MON-023",
       "set": 1,
       "type": "single",
-      "stem": "While attention is elsewhere, the pulse-oximeter tone drops in pitch before you look at the screen. Which safety feature provided the warning?",
+      "stem": "During surgery, the pulse-oximeter tone progressively drops in pitch while the provider is looking at the surgical field. What information is being conveyed before the numerical SpO2 is viewed?",
       "options": [
-        "A variable-pitch tone",
-        "A fixed tone at every heartbeat",
-        "A visual alarm on the screen",
-        "An automatic BP cycle"
+        "A falling oxygen saturation through the variable-pitch pulse tone",
+        "A change in blood pressure through pulse-tone frequency",
+        "A capnography alarm encoded in the pulse tone",
+        "An ECG rhythm change independent of oxygen saturation"
       ],
       "answer": [
         0
@@ -648,12 +648,12 @@
       "id": "MON-027",
       "set": 1,
       "type": "single",
-      "stem": "SpO2 reads 86% with a noisy waveform, and the alarm is dismissed as artifact without checking the patient. What cognitive error occurred?",
+      "stem": "SpO2 suddenly reads 86% with a noisy pleth waveform. Because prior alarms were artifact, the provider silences it without examining the patient or sensor. Which cognitive failure is MOST important?",
       "options": [
-        "Cognitive bias leading to a dismissed valid alarm",
-        "Appropriate artifact filtering to prevent fatigue",
-        "Correct use of variable-pitch tone recognition",
-        "Alarm fatigue caused by default settings"
+        "Prematurely attributing a potentially valid alarm to artifact without verification",
+        "Appropriate filtering of nuisance alarms",
+        "Correct application of patient-specific alarm limits",
+        "Failure to use an arterial catheter"
       ],
       "answer": [
         0
@@ -672,12 +672,12 @@
       "id": "MON-028",
       "set": 1,
       "type": "single",
-      "stem": "A low ETCO2 alarm briefly sounds during a stable case and then self-resolves. What is the best response?",
+      "stem": "A low-ETCO2 alarm sounds briefly during a previously stable anesthetic and then the value returns to baseline without intervention. What is the safest response?",
       "options": [
-        "Evaluate the cause even though it cleared",
-        "Recheck the alarm limits before assessing the patient",
-        "Check monitor settings before the patient",
-        "Increase fresh gas flow and observe"
+        "Determine why the alarm occurred despite spontaneous normalization",
+        "Assume transient artifact because the value recovered",
+        "Change the alarm threshold before evaluating the patient",
+        "Increase fresh-gas flow and wait for recurrence"
       ],
       "answer": [
         0
@@ -720,12 +720,12 @@
       "id": "MON-030",
       "set": 1,
       "type": "single",
-      "stem": "Every few minutes you deliberately scan the patient, monitors, machine, IVs, and surgical field in the same sequence. What is this vigilance technique?",
+      "stem": "A stable anesthetic becomes unexpectedly hypotensive shortly after surgical positioning. The provider deliberately scans the patient, monitors, airway, machine, IVs, and surgical field in a fixed sequence. What is the principal advantage of this technique?",
       "options": [
-        "A sweep",
-        "A time-out",
-        "A handoff",
-        "A sign-out"
+        "It reduces omission by forcing a systematic search across patient, equipment, and field",
+        "It replaces the need to respond to individual alarms",
+        "It establishes the cause before any intervention is started",
+        "It satisfies the formal surgical time-out requirement"
       ],
       "answer": [
         0
@@ -857,12 +857,12 @@
       "id": "MON-035",
       "set": 1,
       "type": "single",
-      "stem": "Using MS MAID for room setup, which category is checked first?",
+      "stem": "During room preparation, suction and airway equipment are ready, but the workstation has not yet been checked. Using MS MAID, which setup element remains the first priority?",
       "options": [
-        "The machine",
-        "The monitors",
-        "The medications",
-        "The mask"
+        "Machine",
+        "Monitors",
+        "Medications",
+        "Mask"
       ],
       "answer": [
         0
@@ -905,12 +905,12 @@
       "id": "MON-037",
       "set": 1,
       "type": "single",
-      "stem": "At induction, the patient vomits and suction fails because the canister valve is closed. What should the preinduction suction check have verified?",
+      "stem": "Immediately after induction, the patient regurgitates. A Yankauer is present but produces no suction because the canister valve was never opened. Which preinduction verification would have prevented this failure?",
       "options": [
-        "Suction on, working, and in reach",
-        "A Yankauer was available",
-        "Suction was connected for RSI cases",
-        "The canister was empty"
+        "Confirm suction is assembled, on, functional, and immediately reachable",
+        "Confirm only that a Yankauer is physically present",
+        "Test suction only in patients undergoing RSI",
+        "Verify that the suction canister is empty"
       ],
       "answer": [
         0
@@ -1006,12 +1006,12 @@
       "id": "MON-041",
       "set": 1,
       "type": "single",
-      "stem": "As a patient enters the OR and standard monitors are applied, which monitor should be placed first according to the lecture sequence?",
+      "stem": "A patient enters the OR for induction and no standard monitors are yet attached. According to the lecture sequence, which monitor should be applied first?",
       "options": [
         "Pulse oximeter",
         "ECG with a baseline strip",
         "NIBP cuff",
-        "The oxygen mask"
+        "Capnography nasal cannula"
       ],
       "answer": [
         0
@@ -1030,12 +1030,12 @@
       "id": "MON-042",
       "set": 1,
       "type": "single",
-      "stem": "Which preoxygenation endpoint best matches the preinduction monitoring slide?",
+      "stem": "A healthy patient has SpO2 100% after 30 seconds of preoxygenation, but expired oxygen is only 72%. Which finding BEST indicates that adequate denitrogenation has not yet occurred?",
       "options": [
-        "FiO2 100% for 3–5 minutes or expired O2 ≥90%",
-        "FiO2 50% for 1 minute or expired O2 ≥60%",
-        "FiO2 100% until SpO2 is 100%",
-        "FiO2 100% until EtO2 reaches 70%"
+        "Expired oxygen remains below the target of about 90%",
+        "SpO2 has already reached 100%",
+        "Inspired oxygen is 100%",
+        "Heart rate is unchanged from baseline"
       ],
       "answer": [
         0
@@ -1078,12 +1078,12 @@
       "id": "MON-044",
       "set": 1,
       "type": "single",
-      "stem": "After LMA placement, bilateral breath sounds are present. What additional confirmation is required?",
+      "stem": "After LMA placement, chest excursion and bilateral breath sounds appear normal and SpO2 remains 100%. What additional finding is required to confirm ventilation through the device?",
       "options": [
-        "Clinical assessment plus ETCO2",
-        "Breath sounds alone",
-        "A chest X-ray",
-        "Pulse oximetry alone"
+        "Sustained identification of exhaled CO2 in addition to clinical assessment",
+        "A normal chest radiograph",
+        "Stable pulse oximetry for 5 minutes",
+        "An unchanged blood pressure"
       ],
       "answer": [
         0
@@ -1126,12 +1126,12 @@
       "id": "MON-046",
       "set": 1,
       "type": "single",
-      "stem": "When a mechanical ventilator is controlling ventilation, which additional safety device must remain continuously active?",
+      "stem": "During controlled ventilation, the capnogram suddenly disappears because the breathing circuit separates from the ventilator. Which required safety feature should independently alert the provider to this event?",
       "options": [
-        "A device that detects breathing system disconnection with an audible alarm",
+        "An audible breathing-system disconnection detector",
         "A second capnograph on the expiratory limb",
-        "A backup ventilator and bag immediately available in the room",
-        "A processed EEG monitor for depth"
+        "A processed EEG monitor",
+        "An automatic arterial blood-gas analyzer"
       ],
       "answer": [
         0
@@ -1150,12 +1150,12 @@
       "id": "MON-047",
       "set": 1,
       "type": "single",
-      "stem": "During moderate or deep sedation under MAC, how should ventilation be monitored?",
+      "stem": "During deep propofol sedation, a patient receives supplemental oxygen and maintains SpO2 99% while respiratory effort progressively decreases. Which monitoring combination is required to detect the problem before oxygen desaturation?",
       "options": [
-        "Qualitative signs plus continuous exhaled CO2",
-        "Qualitative signs alone without capnography",
-        "SpO2 alone with a low alarm limit",
-        "Periodic ABGs every 30 minutes"
+        "Qualitative assessment of ventilation plus continuous exhaled CO2 monitoring",
+        "Pulse oximetry alone",
+        "Intermittent auscultation without capnography",
+        "Periodic arterial blood gases"
       ],
       "answer": [
         0
@@ -1225,12 +1225,12 @@
       "id": "MON-050",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, how many full consecutive ETCO2 waveforms does this lecture require before calling placement confirmed?",
+      "stem": "Immediately after intubation, the first two capnograms appear appropriate. According to this monitoring lecture, what additional evidence is required before tube placement is considered confirmed?",
       "options": [
-        "Three",
-        "One with CO2 above 20",
-        "Six with rising values",
-        "Ten over one minute"
+        "A third full consecutive ETCO2 waveform",
+        "One waveform with ETCO2 above 20 mm Hg",
+        "Six consecutive waveforms",
+        "Stable SpO2 for one minute"
       ],
       "answer": [
         0
