@@ -2496,7 +2496,7 @@
       "id": "PHA-101",
       "set": 1,
       "type": "single",
-      "stem": "During a laparoscopy with an LMA, peak pressure is 24, you hear a loud leak, and exhaled tidal volume is half the set volume. What is the problem?",
+      "stem": "During laparoscopy with an LMA, peak pressure is 24 cmH2O, an audible leak is present, and exhaled tidal volume is half the set value. What is the most likely problem?",
       "options": [
         "A leaking, poorly fitting SGA",
         "Bronchospasm from light anesthesia",
@@ -2520,7 +2520,7 @@
       "id": "PHA-102",
       "set": 1,
       "type": "single",
-      "stem": "Which damage should be assessed after intubation?",
+      "stem": "After a difficult intubation, which structures should be specifically inspected for procedure-related trauma?",
       "options": [
         "Teeth, lips, and oral or nasal structures",
         "The vocal cords and arytenoids",
@@ -2544,7 +2544,7 @@
       "id": "PHA-103",
       "set": 1,
       "type": "single",
-      "stem": "A patient becomes difficult to ventilate after induction with wheezing. Which post-induction complication is MOST likely?",
+      "stem": "Ventilation becomes difficult immediately after induction and diffuse wheezing develops. Which complication is most likely?",
       "options": [
         "Bronchospasm",
         "Esophageal intubation",
@@ -2568,7 +2568,7 @@
       "id": "PHA-104",
       "set": 1,
       "type": "single",
-      "stem": "After induction for a 40-minute knee arthroscopy in a fasted healthy patient, what airway decision do you make next?",
+      "stem": "After induction of a fasted healthy patient for a short knee arthroscopy, which airway choice is the key next decision?",
       "options": [
         "Supraglottic airway versus endotracheal tube",
         "Nasal cannula versus face mask",
@@ -2592,7 +2592,7 @@
       "id": "PHA-105",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, you see condensation appear and clear inside the ETT with each breath. What does this indicate, and how reliable is it?",
+      "stem": "Condensation appears inside the ETT with each breath. How should this finding be interpreted?",
       "options": [
         "Exhaled gas; supportive only",
         "Esophageal placement, a definitive sign",
@@ -2616,7 +2616,7 @@
       "id": "PHA-106",
       "set": 1,
       "type": "multi",
-      "stem": "After two failed laryngoscopy attempts, the patient is still mask ventilating but with effort. Which questions should guide the next step? (Select 3)",
+      "stem": "After two failed laryngoscopy attempts, mask ventilation is becoming more difficult. Which THREE questions should guide the next step? (Select 3)",
       "options": [
         "Is mask ventilation getting harder?",
         "Who should make the next attempt?",
@@ -2644,7 +2644,7 @@
       "id": "PHA-107",
       "set": 1,
       "type": "single",
-      "stem": "A patient reports hearing the surgeon say \"start closing\" and feeling the tube in her throat, but no pain. What type of awareness is this?",
+      "stem": "A patient later recalls voices and the sensation of the ETT but no pain. What type of intraoperative awareness is this?",
       "options": [
         "Explicit recall from inadequate hypnosis",
         "Implicit memory without conscious recall",
@@ -2668,7 +2668,7 @@
       "id": "PHA-108",
       "set": 1,
       "type": "single",
-      "stem": "After surgery, a patient has no memory of the procedure, but she becomes anxious whenever she hears a phrase spoken during the case. What does this suggest?",
+      "stem": "A patient has no conscious recall of surgery but develops anxiety when hearing a phrase spoken intraoperatively. What does this suggest?",
       "options": [
         "Implicit memory without conscious recall",
         "Explicit recall",
@@ -2692,7 +2692,7 @@
       "id": "PHA-109",
       "set": 1,
       "type": "multi",
-      "stem": "A patient reports recall of voices and paralysis during her prior surgery. Which psychological effects is she at risk for? (Select 3)",
+      "stem": "Which THREE psychological sequelae are associated with explicit intraoperative awareness? (Select 3)",
       "options": [
         "Anxiety",
         "PTSD",
@@ -2720,7 +2720,7 @@
       "id": "PHA-110",
       "set": 1,
       "type": "multi",
-      "stem": "A patient reports explicit recall of her surgery. What are your ethical responsibilities? (Select 3)",
+      "stem": "A patient reports explicit intraoperative recall. Which THREE responsibilities follow? (Select 3)",
       "options": [
         "Document the complication in the record",
         "Disclose promptly and discuss what happened",
@@ -2748,7 +2748,7 @@
       "id": "PHA-111",
       "set": 1,
       "type": "single",
-      "stem": "During induction, what causes the awareness risk gap?",
+      "stem": "Why is there an awareness-risk gap during induction even after loss of responsiveness?",
       "options": [
         "Loss of responsiveness before adequate depth is reached",
         "Excess depth before laryngoscopy causing hypotension",
@@ -2772,7 +2772,7 @@
       "id": "PHA-112",
       "set": 1,
       "type": "multi",
-      "stem": "Which factors increase awareness risk during induction? (Select 2)",
+      "stem": "Which TWO induction scenarios increase awareness risk? (Select 2)",
       "options": [
         "RSII",
         "Difficult airway",
@@ -2799,7 +2799,7 @@
       "id": "PHA-113",
       "set": 1,
       "type": "multi",
-      "stem": "Which maintenance patients carry higher risk of awareness? (Select 4)",
+      "stem": "Which FOUR maintenance scenarios carry increased awareness risk? (Select 4)",
       "options": [
         "A woman having an emergency cesarean under GA",
         "A hypotensive trauma patient receiving minimal anesthetic",
@@ -2828,7 +2828,7 @@
       "id": "PHA-114",
       "set": 1,
       "type": "multi",
-      "stem": "Which measures reduce awareness risk during maintenance? (Select 3)",
+      "stem": "Which THREE strategies reduce awareness risk during maintenance? (Select 3)",
       "options": [
         "Processed EEG monitoring",
         "End-tidal inhaled agent monitoring",
@@ -2856,7 +2856,7 @@
       "id": "PHA-115",
       "set": 1,
       "type": "single",
-      "stem": "At the end of a case, the vaporizer is turned off while TOF is 0/4 and you wait for reversal. Why does this create awareness risk?",
+      "stem": "The vaporizer is turned off while TOF remains 0/4. Why does this create an awareness hazard?",
       "options": [
         "Depth is falling while paralysis still hides movement",
         "Paralysis increases anesthetic depth",
@@ -2880,7 +2880,7 @@
       "id": "PHA-116",
       "set": 1,
       "type": "single",
-      "stem": "The note on the awareness slide says which cause is common during induction?",
+      "stem": "What common induction-related cause of awareness is emphasized in the lecture?",
       "options": [
         "Not enough medication",
         "Too much volatile agent",
@@ -2904,7 +2904,7 @@
       "id": "PHA-117",
       "set": 1,
       "type": "multi",
-      "stem": "Which team behaviors are expected during induction? (Select 3)",
+      "stem": "Which THREE team behaviors are expected during induction as a critical phase? (Select 3)",
       "options": [
         "No music or distracting conversations",
         "Anesthesia timeout with plan A and B",
@@ -2932,7 +2932,7 @@
       "id": "PHA-118",
       "set": 1,
       "type": "single",
-      "stem": "Before an RSI, you tell the team: \"Plan A is VL with a bougie; if two attempts fail, I'll place an LMA. Watch for SpO2 below 90%.\" What does this build?",
+      "stem": "Before RSI, the team is told Plan A, Plan B, and specific failure triggers. What communication concept does this create?",
       "options": [
         "A shared mental model",
         "A rapid sequence order set",
@@ -2956,7 +2956,7 @@
       "id": "PHA-119",
       "set": 1,
       "type": "single",
-      "stem": "During a difficult intubation, you say, \"Bougie please.\" Which reply completes closed-loop communication?",
+      "stem": "Which response best demonstrates closed-loop communication after the request, \"Bougie please\"?",
       "options": [
         "\"Bougie is in, rings felt.\"",
         "Silently handing over the bougie",
@@ -2980,7 +2980,7 @@
       "id": "PHA-120",
       "set": 1,
       "type": "single",
-      "stem": "As an SRNA inducing your first patient, you say aloud, \"Propofol 150 given, starting mask ventilation, rocuronium 50 in.\" Why is this practice valuable?",
+      "stem": "Why is verbalizing induction drugs, doses, and major steps useful for an SRNA and the team?",
       "options": [
         "It keeps the team informed and allows early correction",
         "It slows induction to prevent awareness",
@@ -3004,7 +3004,7 @@
       "id": "PHA-121",
       "set": 1,
       "type": "single",
-      "stem": "Which statement is the BEST example of speaking up during induction?",
+      "stem": "Which statement best demonstrates appropriate speaking up during deteriorating mask ventilation?",
       "options": [
         "\"I can't ventilate despite repositioning and an OA.\"",
         "\"Ventilation is a little hard, but let's continue.\"",
@@ -3028,7 +3028,7 @@
       "id": "PHA-122",
       "set": 1,
       "type": "single",
-      "stem": "What does \"use proper terminology\" mean during induction?",
+      "stem": "During airway management, what does using proper terminology accomplish?",
       "options": [
         "Use clear clinical terms like \"grade I view\"",
         "Use casual language to reduce the patient's anxiety",
@@ -3052,7 +3052,7 @@
       "id": "PHA-123",
       "set": 1,
       "type": "multi",
-      "stem": "During the anesthesia timeout before an RSI, what should be confirmed? (Select 2)",
+      "stem": "Which TWO items should be explicitly confirmed during the anesthesia timeout before RSI? (Select 2)",
       "options": [
         "Drug doses and sequence",
         "The airway management plan",
@@ -3079,7 +3079,7 @@
       "id": "PHA-124",
       "set": 1,
       "type": "single",
-      "stem": "During induction, a nurse asks you about the next case while you are giving drugs and SpO2 drops. Why is induction treated as a critical phase?",
+      "stem": "Why should nonessential conversation stop while induction drugs are being given and the airway is being managed?",
       "options": [
         "Rapid changes need focus and roles",
         "Induction is the longest phase of anesthesia",
@@ -3103,7 +3103,7 @@
       "id": "PHA-125",
       "set": 1,
       "type": "single",
-      "stem": "What should a novice request during difficult mask ventilation?",
+      "stem": "Difficult mask ventilation persists despite basic maneuvers. What team resource should a novice request early?",
       "options": [
         "Two-person ventilation assistance",
         "An LMA before trying any adjunct",
@@ -3127,7 +3127,7 @@
       "id": "PHA-126",
       "set": 1,
       "type": "single",
-      "stem": "You have just intubated a patient, confirmed ETCO2, and BP has stabilized after induction. Which phase begins now?",
+      "stem": "The airway is secured, ETCO2 is confirmed, and hemodynamics are stabilized. Which anesthetic phase begins now?",
       "options": [
         "Maintenance",
         "Induction",
@@ -3151,7 +3151,7 @@
       "id": "PHA-127",
       "set": 1,
       "type": "single",
-      "stem": "Three minutes before incision, the patient's BIS is 58 on 0.8 MAC sevoflurane. Why deepen anesthesia now?",
+      "stem": "Three minutes before incision, BIS is 58 at 0.8 MAC sevoflurane. Why might anesthetic depth be increased now rather than after incision?",
       "options": [
         "To blunt the response to incision",
         "To speed emergence later",
@@ -3175,7 +3175,7 @@
       "id": "PHA-128",
       "set": 1,
       "type": "multi",
-      "stem": "You have just secured the airway for a 3-hour colectomy. Which are goals of the maintenance phase? (Select 4)",
+      "stem": "Which FOUR goals define effective maintenance of general anesthesia? (Select 4)",
       "options": [
         "Stage III surgical anesthesia",
         "Physiologic homeostasis",
@@ -3204,7 +3204,7 @@
       "id": "PHA-129",
       "set": 1,
       "type": "single",
-      "stem": "During a hip replacement, anesthetic needs rise at incision, fall during cementing, and change again with 1.2 L blood loss. What concept does this illustrate?",
+      "stem": "Anesthetic requirements change with incision, cementing, and major blood loss. What principle does this illustrate?",
       "options": [
         "Maintenance is dynamic",
         "Maintenance is static once established",
@@ -3228,7 +3228,7 @@
       "id": "PHA-130",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance, ETCO2 rises. You check the ventilator, increase the rate, recheck ETCO2, think ahead to closure, and chart the change. Which framework did you follow?",
+      "stem": "ETCO2 rises; you assess the cause, intervene, recheck, anticipate closure, and document. Which maintenance framework is being used?",
       "options": [
         "Assess, interpret, intervene, reassess",
         "Airway, breathing, circulation",
@@ -3252,7 +3252,7 @@
       "id": "PHA-131",
       "set": 1,
       "type": "single",
-      "stem": "A patient later disputes that he received antibiotics, and the record shows nothing, although you remember giving cefazolin. What principle applies?",
+      "stem": "Cefazolin was reportedly given, but there is no record of it. What documentation principle applies?",
       "options": [
         "No documentation, no proof",
         "Verbal handoff is sufficient",
@@ -3276,7 +3276,7 @@
       "id": "PHA-132",
       "set": 1,
       "type": "multi",
-      "stem": "After a prone repositioning for a spine case, which airway checks are priorities? (Select 3)",
+      "stem": "After turning a patient prone, which THREE airway checks should be repeated or documented? (Select 3)",
       "options": [
         "Continuous waveform ETCO2",
         "Recheck the ETT after positioning or table movement",
@@ -3304,7 +3304,7 @@
       "id": "PHA-133",
       "set": 1,
       "type": "single",
-      "stem": "After turning the patient prone, SpO2 falls and peak pressure rises. What is the FIRST step?",
+      "stem": "After prone positioning, SpO2 falls and peak pressure rises. What is the first action?",
       "options": [
         "Recheck airway position and circuit integrity",
         "Increase FiO2 and continue the case",
@@ -3328,7 +3328,7 @@
       "id": "PHA-134",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance, SpO2 falls to 88%. A novice reaches for the machine settings first. Which order should the novice approach follow?",
+      "stem": "During maintenance, SpO2 suddenly falls to 88%. Which order should guide initial troubleshooting?",
       "options": [
         "Patient, then airway, then machine",
         "Check the machine first, then the patient",
@@ -3352,7 +3352,7 @@
       "id": "PHA-135",
       "set": 1,
       "type": "single",
-      "stem": "What does \"oxygenation is more than SpO2\" mean?",
+      "stem": "Why can a normal SpO2 on high FiO2 still coexist with important pulmonary dysfunction?",
       "options": [
         "Normal SpO2 on high FiO2 can hide lung dysfunction",
         "SpO2 reflects ventilation as well as oxygenation",
@@ -3376,7 +3376,7 @@
       "id": "PHA-136",
       "set": 1,
       "type": "single",
-      "stem": "During a laparoscopy, SpO2 falls to 89%. Using the advanced approach, put these checks in order: O2 supply, airway, patient, monitor, ventilation/circuit.",
+      "stem": "For intraoperative desaturation, which troubleshooting sequence best prioritizes patient causes before equipment?",
       "options": [
         "Patient, airway, circuit, O2, monitor",
         "Monitor, O2 supply, patient, airway, circuit",
@@ -3400,7 +3400,7 @@
       "id": "PHA-137",
       "set": 1,
       "type": "multi",
-      "stem": "During maintenance, SpO2 falls from 98% to 90%. Which are common causes to consider? (Select 4)",
+      "stem": "Which FOUR causes commonly belong on the differential for new intraoperative desaturation? (Select 4)",
       "options": [
         "Atelectasis",
         "Endobronchial intubation",
@@ -3429,7 +3429,7 @@
       "id": "PHA-138",
       "set": 1,
       "type": "single",
-      "stem": "During which events in a case should you anticipate desaturation?",
+      "stem": "Which intraoperative transitions should trigger heightened anticipation for desaturation?",
       "options": [
         "After positioning, insufflation, or OLV",
         "After extubation in PACU",
@@ -3453,7 +3453,7 @@
       "id": "PHA-139",
       "set": 1,
       "type": "single",
-      "stem": "What does \"treat the physiology, not the SpO2 value\" mean?",
+      "stem": "What does the instruction \"treat the physiology, not the SpO2 value\" mean in practice?",
       "options": [
         "Treat the cause, such as recruitment or PEEP",
         "Raise FiO2 alone until SpO2 normalizes",
@@ -3477,7 +3477,7 @@
       "id": "PHA-140",
       "set": 1,
       "type": "single",
-      "stem": "During a case, the patient's minute ventilation falls and a hissing sound comes from the circuit. Which check would have prevented this?",
+      "stem": "Minute ventilation falls and a circuit leak is later found. Which pre-case check should have reduced this risk?",
       "options": [
         "A leak test before every case",
         "A daily machine check at the start of the day",
@@ -3501,7 +3501,7 @@
       "id": "PHA-141",
       "set": 1,
       "type": "multi",
-      "stem": "During a long case, you do an ABCDE sweep. Which components does it include? (Select 3)",
+      "stem": "Which THREE broad domains are included in the ABCDE maintenance sweep? (Select 3)",
       "options": [
         "Airway patency and security",
         "Drugs and depth",
@@ -3529,7 +3529,7 @@
       "id": "PHA-142",
       "set": 1,
       "type": "multi",
-      "stem": "During your ABCDE sweep, you reach \"E.\" Which equipment checks belong there? (Select 4)",
+      "stem": "During the \"E\" portion of an ABCDE sweep, which FOUR equipment checks belong there? (Select 4)",
       "options": [
         "Oxygen supply and breathing circuit",
         "CO2 absorbent and vaporizer level",
@@ -3558,7 +3558,7 @@
       "id": "PHA-143",
       "set": 1,
       "type": "single",
-      "stem": "During a Whipple, you draw up blood products before the vascular dissection and start a longer-acting opioid an hour before closure. Which mental model step is this?",
+      "stem": "Blood products are prepared before vascular dissection and a longer-acting opioid is started well before closure. Which maintenance skill does this demonstrate?",
       "options": [
         "Anticipate",
         "Assess the current vital signs",
@@ -3582,7 +3582,7 @@
       "id": "PHA-144",
       "set": 1,
       "type": "single",
-      "stem": "The NIBP suddenly reads 68/34 while HR, ETCO2, and SpO2 waveform are unchanged. What is the FIRST step?",
+      "stem": "NIBP suddenly reads 68/34, but HR, ETCO2, and pleth are unchanged. What is the first step?",
       "options": [
         "Confirm BP measurement accuracy",
         "Give phenylephrine 100 mcg",
@@ -3606,7 +3606,7 @@
       "id": "PHA-145",
       "set": 1,
       "type": "multi",
-      "stem": "During maintenance, BP falls to 78/40. Which mechanisms should you consider? (Select 5)",
+      "stem": "Which FIVE mechanisms should be considered for significant intraoperative hypotension? (Select 5)",
       "options": [
         "Vasodilation from anesthetic agents",
         "Myocardial depression",
@@ -3636,7 +3636,7 @@
       "id": "PHA-146",
       "set": 1,
       "type": "multi",
-      "stem": "Two hours into a knee replacement, HR rises from 70 to 110 and BP from 120/70 to 165/95. Before deepening anesthesia, which causes should you consider? (Select 3)",
+      "stem": "HR and BP rise during knee arthroplasty. Before assuming light anesthesia, which THREE alternative causes should be considered? (Select 3)",
       "options": [
         "Hypercarbia",
         "Bladder distention",
@@ -3664,7 +3664,7 @@
       "id": "PHA-147",
       "set": 1,
       "type": "single",
-      "stem": "During TIVA, BP rises to 180/100 and HR to 115. Before treating \"light anesthesia,\" what should you check first?",
+      "stem": "During TIVA, BP and HR rise abruptly. Before giving more anesthetic, what should be verified first?",
       "options": [
         "That drug is reaching the patient",
         "That the patient's temperature is normal",
@@ -3688,7 +3688,7 @@
       "id": "PHA-148",
       "set": 1,
       "type": "single",
-      "stem": "During a case, BP falls to 75/40. Two phenylephrine doses and a fluid bolus produce only brief improvement, and you cannot find a cause. What is the BEST next step?",
+      "stem": "Hypotension persists despite phenylephrine and fluid, and the cause remains unclear. What is the best next escalation?",
       "options": [
         "Place advanced monitoring, such as an arterial line",
         "Repeat phenylephrine every 2 minutes indefinitely",
@@ -3712,7 +3712,7 @@
       "id": "PHA-149",
       "set": 1,
       "type": "multi",
-      "stem": "Which items belong in the surgical time-out? (Select 5)",
+      "stem": "Which FIVE elements belong in the surgical time-out? (Select 5)",
       "options": [
         "Correct patient, procedure, and site",
         "Antibiotic administration",
@@ -3742,7 +3742,7 @@
       "id": "PHA-150",
       "set": 1,
       "type": "single",
-      "stem": "During the time-out, the circulator has not confirmed the implants, but the surgeon picks up the scalpel. What does \"hard stop\" require?",
+      "stem": "A required time-out item is unresolved, but the surgeon is ready to incise. What does a hard stop require?",
       "options": [
         "No incision until every team member confirms",
         "The surgeon may proceed if he confirms",
