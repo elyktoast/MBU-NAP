@@ -97,7 +97,7 @@ test.describe('multi-course foundation', () => {
     const state = await page.evaluate(() => ({
       count: ALL.length,
       uidCount: ALL_BY_UID.size,
-      groups: [...document.querySelectorAll('#sourceChecks > div > b')].map(x => x.textContent.trim()),
+      groups: [...document.querySelectorAll('#sourceChecks > div > div > b')].map(x => x.textContent.trim()),
       sources: document.querySelectorAll('#sourceChecks label').length,
       topics: document.querySelectorAll('#topicChecks input').length,
       jpg: ALL.some(q => q.img && q.img.kind === 'direct' && String(q.img.url).endsWith('.jpg')),
