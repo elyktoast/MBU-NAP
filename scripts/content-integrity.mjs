@@ -134,7 +134,8 @@ for(const source of bpManifest.studioSources||[]){
     if(!['single','multi'].includes(q.type))err('Basic Principles '+identity+' has invalid question type '+String(q.type));
     if(q.type==='single'&&ans.length!==1)err('Basic Principles '+identity+' is single-answer but keys '+ans.length+' answers');
     if(q.type==='multi'&&ans.length<2)err('Basic Principles '+identity+' is multi-answer but keys fewer than 2 answers');
-    const topic=String(q.topic??q.lec??q.concept??'').trim();if(topic!==source.label)err('Basic Principles '+identity+' topic does not match source label');
+    const topic=String(q.topic??q.lec??q.concept??'').trim();if(!topic)err('Basic Principles '+identity+' has no detailed topic');
+    if(String(q.sourceTitle||'').trim()!==source.label)err('Basic Principles '+identity+' sourceTitle does not match lecture source label');
     if(!String(q.explanation??q.exp??q.rationale??'').trim())err('Basic Principles '+identity+' has no explanation/rationale');
     const stemKey=norm(stem);if(stemKey){const prior=bpSeenStem.get(stemKey);if(prior)warn('Basic Principles exact duplicate stem: '+prior+' and '+identity);else bpSeenStem.set(stemKey,identity)}
     const image=String(q.img??q.imageSvg??q.image??'').trim();if(image){bpImages++;const imagePath=path.join(root,bpRoot,image);if(!fs.existsSync(imagePath))err('Basic Principles '+identity+' references missing figure '+image)}
