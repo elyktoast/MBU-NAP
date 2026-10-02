@@ -4991,12 +4991,12 @@
       "id": "AIR-205",
       "set": 1,
       "type": "single",
-      "stem": "What is the main indication for awake intubation?",
+      "stem": "A patient is expected to be difficult to intubate, and losing spontaneous ventilation could make rescue impossible. Which airway strategy best preserves safety?",
       "options": [
-        "Anticipated difficult airway needing spontaneous ventilation",
-        "Routine elective surgery with a normal airway",
-        "A full stomach with an otherwise easy airway",
-        "Patient preference for sedation during intubation"
+        "Awake intubation while maintaining spontaneous ventilation",
+        "Routine IV induction and direct laryngoscopy",
+        "Rapid-sequence induction because the stomach may be full",
+        "Deep sedation without securing the airway"
       ],
       "answer": [
         0
@@ -5363,12 +5363,12 @@
       "id": "AIR-220",
       "set": 1,
       "type": "single",
-      "stem": "What is a \"lidocaine lollipop\"?",
+      "stem": "During awake airway topicalization, 5% lidocaine paste is applied to a tongue blade against the posterior tongue. Which technique is being used?",
       "options": [
-        "5% lidocaine paste on a tongue blade for posterior tongue",
-        "2% lidocaine jelly applied to an ETT cuff",
-        "4% lidocaine delivered through a nebulizer mask",
-        "10% lidocaine spray applied to the vocal cords"
+        "A lidocaine lollipop",
+        "Lidocaine jelly on the ETT cuff",
+        "Nebulized lidocaine",
+        "Direct vocal-cord spray"
       ],
       "answer": [
         0
@@ -5555,12 +5555,12 @@
       "id": "AIR-228",
       "set": 1,
       "type": "single",
-      "stem": "What is the injection sequence for the SLN block?",
+      "stem": "For a superior laryngeal nerve block, which injection sequence best matches the technique described in the lecture?",
       "options": [
-        "1 mL above the membrane, then 2 mL after advancing 2–3 mm",
-        "5 mL through the cricothyroid membrane in one pass",
-        "2 mL into the vallecula",
-        "1 mL into the palatoglossal arch"
+        "Inject 1 mL above the membrane, advance 2–3 mm, then inject 2 mL",
+        "Inject 5 mL through the cricothyroid membrane",
+        "Inject 2 mL into the vallecula",
+        "Inject 1 mL into the palatoglossal arch"
       ],
       "answer": [
         0
@@ -5843,12 +5843,12 @@
       "id": "AIR-240",
       "set": 1,
       "type": "single",
-      "stem": "What does MRI show about cricoid pressure?",
+      "stem": "Why does MRI evidence weaken the assumption that cricoid pressure reliably compresses the esophagus?",
       "options": [
-        "Lateral esophageal displacement in 50–90% of cases",
-        "Complete esophageal occlusion in most patients",
-        "No change in esophageal position",
-        "Tracheal collapse in most cases"
+        "The esophagus is displaced laterally in many patients",
+        "The esophagus is completely occluded in nearly all patients",
+        "The esophagus does not change position",
+        "The trachea collapses in most patients"
       ],
       "answer": [
         0
@@ -6150,7 +6150,7 @@
       "id": "AIR-252",
       "set": 1,
       "type": "single",
-      "stem": "What is the incidence of aspiration with SGAs?",
+      "stem": "When counseling about supraglottic airway aspiration risk, which incidence best reflects the low but nonzero event rate?",
       "options": [
         "About 1–2 per 10,000 cases",
         "About 1 per 100 cases",
@@ -6446,12 +6446,12 @@
       "id": "AIR-264",
       "set": 1,
       "type": "single",
-      "stem": "What is an advantage of AECs over bougies?",
+      "stem": "Why can an airway exchange catheter be safer to leave temporarily after difficult extubation than a bougie?",
       "options": [
-        "They allow breathing, phonation, and secretion clearance",
-        "They are stiffer and easier to insert than a bougie",
-        "They are stiffer than bougies",
-        "They must be removed immediately"
+        "It can permit breathing, phonation, and secretion clearance",
+        "It is intentionally much stiffer than a bougie",
+        "It must be removed immediately after extubation",
+        "It cannot serve as a guide for reintubation"
       ],
       "answer": [
         0
@@ -6598,12 +6598,12 @@
       "id": "AIR-270",
       "set": 1,
       "type": "single",
-      "stem": "What does oxygen insufflation through the FIS suction port do?",
+      "stem": "During flexible intubation, oxygen is insufflated through the scope's suction port. What is the main benefit?",
       "options": [
-        "Aids oxygenation and clears the lens",
-        "Inflates the ETT cuff during advancement",
-        "Numbs the vocal cords",
-        "Deflates the stomach"
+        "Support oxygenation while helping clear the lens",
+        "Inflate the ETT cuff",
+        "Topicalize the vocal cords",
+        "Decompress the stomach"
       ],
       "answer": [
         0
@@ -6773,12 +6773,12 @@
       "id": "AIR-277",
       "set": 1,
       "type": "single",
-      "stem": "What is the GlideScope hyperangulated blade bend?",
+      "stem": "Why does a standard stylet often fail with a hyperangulated GlideScope blade?",
       "options": [
-        "60° anterior bend",
-        "30° anterior bend",
-        "90° anterior bend",
-        "15° anterior bend"
+        "The blade has about a 60° anterior bend that requires matching tube shape",
+        "The blade has only a 15° bend",
+        "The blade is straight and requires no stylet",
+        "The blade bends posteriorly"
       ],
       "answer": [
         0
@@ -7189,12 +7189,12 @@
       "id": "AIR-294",
       "set": 1,
       "type": "single",
-      "stem": "Which is the MOST serious TTJV complication?",
+      "stem": "During transtracheal jet ventilation, which complication is most immediately life-threatening if exhalation is inadequate?",
       "options": [
         "Barotrauma",
-        "Hypocarbia",
-        "Tracheal stenosis immediately",
-        "Hypocarbia from overventilation"
+        "Mild hypocarbia",
+        "Immediate tracheal stenosis",
+        "Transient hypocarbia alone"
       ],
       "answer": [
         0
@@ -8090,11 +8090,11 @@
       "id": "AIR-329",
       "set": 1,
       "type": "single",
-      "stem": "What is laryngospasm?",
+      "stem": "After extubation, the vocal cords close forcefully despite respiratory effort. Which process best explains the obstruction?",
       "options": [
-        "Involuntary reflex contraction of laryngeal muscles",
-        "Bronchial smooth muscle constriction from irritation",
-        "Tracheal collapse from malacia",
+        "Reflex involuntary contraction of laryngeal muscles",
+        "Bronchial smooth-muscle constriction",
+        "Tracheomalacia",
         "Voluntary breath holding"
       ],
       "answer": [
@@ -8238,12 +8238,12 @@
       "id": "AIR-335",
       "set": 1,
       "type": "single",
-      "stem": "What is the Larson maneuver?",
+      "stem": "A patient has persistent laryngospasm despite CPAP. The provider applies a forceful jaw thrust plus pressure at the laryngospasm notch. Which maneuver is this?",
       "options": [
-        "Jaw thrust with pressure at the laryngospasm notch",
-        "Chin lift with cricoid pressure applied",
-        "BURP pressure on the thyroid cartilage",
-        "Abdominal thrusts to dislodge an obstruction"
+        "Larson maneuver",
+        "BURP maneuver",
+        "Sellick maneuver",
+        "Abdominal thrust maneuver"
       ],
       "answer": [
         0
@@ -8262,10 +8262,10 @@
       "id": "AIR-336",
       "set": 1,
       "type": "single",
-      "stem": "What is given if laryngospasm desaturation persists?",
+      "stem": "Laryngospasm persists and oxygen saturation continues to fall despite airway-opening maneuvers and positive pressure. Which drug should be given next?",
       "options": [
         "Succinylcholine",
-        "Neostigmine to strengthen the cords",
+        "Neostigmine",
         "Flumazenil",
         "Epinephrine"
       ],
@@ -8310,12 +8310,12 @@
       "id": "AIR-338",
       "set": 1,
       "type": "single",
-      "stem": "What is postextubation croup?",
+      "stem": "A child develops inspiratory stridor after extubation from subglottic airway swelling. Which diagnosis best fits?",
       "options": [
-        "Subglottic inflammation and edema",
-        "Supraglottic edema from secretions",
-        "Bronchospasm with wheezing",
-        "Vocal cord paralysis"
+        "Postextubation croup",
+        "Supraglottic edema only",
+        "Bronchospasm",
+        "Vocal-cord paralysis"
       ],
       "answer": [
         0
@@ -8510,11 +8510,11 @@
       "id": "AIR-346",
       "set": 1,
       "type": "single",
-      "stem": "What is the most common anesthesia malpractice claim?",
+      "stem": "Which airway-related injury generates the greatest number of anesthesia malpractice claims?",
       "options": [
         "Dental injury",
         "Awareness",
-        "Nerve injury",
+        "Peripheral nerve injury",
         "Esophageal intubation"
       ],
       "answer": [
@@ -8610,12 +8610,12 @@
       "id": "AIR-350",
       "set": 1,
       "type": "single",
-      "stem": "What is the mortality of mediastinitis from esophageal perforation?",
+      "stem": "Why is esophageal perforation treated as a major emergency even if the initial airway problem is corrected?",
       "options": [
-        "About 50%",
-        "About 5%",
-        "About 20%",
-        "About 90%"
+        "Mediastinitis carries mortality of about 50%",
+        "Mortality is only about 5%",
+        "The main consequence is transient dysphagia",
+        "The complication is usually self-limited"
       ],
       "answer": [
         0
@@ -8664,7 +8664,7 @@
       "id": "AIR-352",
       "set": 1,
       "type": "single",
-      "stem": "What is the incidence of clinically significant aspiration?",
+      "stem": "Clinically significant pulmonary aspiration is uncommon. Which incidence best reflects the rate cited in the lecture?",
       "options": [
         "About 1 in 35,000 anesthetics",
         "About 1 in 500 anesthetics",
@@ -8789,12 +8789,12 @@
       "id": "AIR-357",
       "set": 1,
       "type": "single",
-      "stem": "What is the most reliable method to confirm ETT placement?",
+      "stem": "After intubation, chest movement and breath sounds appear reassuring but remain nonspecific. Which finding most reliably confirms tracheal placement?",
       "options": [
-        "End-tidal CO2 capnography",
-        "Bilateral breath sounds on auscultation",
-        "Chest wall movement",
-        "Tube condensation"
+        "Persistent end-tidal CO2 on capnography",
+        "Bilateral breath sounds alone",
+        "Symmetric chest rise alone",
+        "Condensation in the tube"
       ],
       "answer": [
         0
@@ -10618,10 +10618,10 @@
       "id": "AIR-432",
       "set": 1,
       "type": "single",
-      "stem": "What is the BEST initial treatment for postextubation croup?",
+      "stem": "A child develops postextubation stridor consistent with croup but is still moving air adequately. Which initial treatment is most appropriate?",
       "options": [
-        "Humidified oxygen and racemic epinephrine",
-        "Immediate reintubation with a larger-size ETT",
+        "Humidified oxygen plus racemic epinephrine",
+        "Immediate reintubation with a larger tube",
         "Neostigmine",
         "Succinylcholine"
       ],
