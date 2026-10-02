@@ -3890,17 +3890,17 @@
       "id": "PRE-160",
       "set": 1,
       "type": "single",
-      "stem": "Monopolar cautery inhibits a pacemaker and the heart rate falls to 30. Which preoperative information would have enabled the fastest appropriate response?",
+      "stem": "Monopolar cautery inhibits pacing in a pacemaker-dependent patient and the heart rate falls to 30. Which preoperative information is essential before relying on a magnet as part of the response?",
       "options": [
-        "The magnet location and the device's magnet response",
-        "Battery manufacturer",
-        "Battery voltage",
-        "Implanting surgeon's name"
+        "The specific device's programmed magnet response and whether the magnet can be positioned reliably",
+        "Battery manufacturer alone",
+        "Implanting surgeon's name",
+        "Generator size"
       ],
       "answer": [
         0
       ],
-      "explanation": "A magnet is usually in the OR; knowing its location and the device's magnet response lets you act quickly when EMI causes inhibition.",
+      "explanation": "Magnet behavior is device- and programming-dependent. Before relying on a magnet, the perioperative team should know the expected response and whether the magnet can remain properly positioned; reprogramming may be required in some situations.",
       "citation": "",
       "topic": "Arrhythmias and CIEDs",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -4020,7 +4020,7 @@
       "answer": [
         0
       ],
-      "explanation": "A magnet converts many dual-chamber pacemakers to DOO, asynchronous pacing of atrium and ventricle.",
+      "explanation": "DOO is asynchronous dual-chamber pacing. A magnet may produce asynchronous pacing in many pacemakers, but the actual response depends on the device and its programming and should not be assumed.",
       "citation": "",
       "topic": "Arrhythmias and CIEDs",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -4702,7 +4702,7 @@
       "id": "PRE-193",
       "set": 1,
       "type": "single",
-      "stem": "A 54-year-old man snores, is tired, has hypertension, BMI 33, neck circumference 42 cm, and is male. No apnea has been observed. What is the STOP-BANG score?",
+      "stem": "A 54-year-old man snores, is tired, has hypertension, BMI 33, neck circumference 42 cm, and is male. No apnea has been observed. Using the traditional STOP-BANG scoring thresholds, what is the score?",
       "options": [
         "6",
         "4",
@@ -4712,7 +4712,7 @@
       "answer": [
         0
       ],
-      "explanation": "Snoring, tiredness, pressure, age over 50, neck over 40 cm, and male sex score 6. BMI 33 is below 35 and no apneas were observed.",
+      "explanation": "Using the traditional STOP-BANG thresholds: snoring, tiredness, hypertension, age over 50, neck circumference over 40 cm, and male sex each score 1, for a total of 6. BMI 33 does not meet the traditional >35 threshold and no witnessed apnea is reported.",
       "citation": "",
       "topic": "Pulmonary, OSA, and URI",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -4726,7 +4726,7 @@
       "id": "PRE-194",
       "set": 1,
       "type": "single",
-      "stem": "A 48-year-old woman has BMI 37, neck circumference 38 cm, and hypertension. Which STOP-BANG criteria are positive?",
+      "stem": "Using the traditional STOP-BANG scoring thresholds, a 48-year-old woman has BMI 37, neck circumference 38 cm, and hypertension. Which criteria are positive?",
       "options": [
         "BMI and blood pressure",
         "BMI, age, and neck circumference",
@@ -4736,7 +4736,7 @@
       "answer": [
         0
       ],
-      "explanation": "She meets BMI over 35 and pressure. Age 48 is not over 50, and 38 cm is not over 40 cm.",
+      "explanation": "Using the traditional STOP-BANG thresholds, BMI over 35 and hypertension are positive. Age 48 does not meet the >50 criterion, and a 38-cm neck does not meet the traditional >40-cm criterion.",
       "citation": "",
       "topic": "Pulmonary, OSA, and URI",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -4750,7 +4750,7 @@
       "id": "PRE-195",
       "set": 1,
       "type": "single",
-      "stem": "A 54-year-old man snores, has treated hypertension, BMI 32, and is male. What is his STOP-BANG score?",
+      "stem": "Using the traditional STOP-BANG scoring thresholds, a 54-year-old man snores, has treated hypertension, BMI 32, and is male. What is his score?",
       "options": [
         "4",
         "3",
@@ -4760,7 +4760,7 @@
       "answer": [
         0
       ],
-      "explanation": "Snoring (1), pressure (1), age >50 (1), male (1) = 4. BMI 32 does not meet >35.",
+      "explanation": "Using the traditional STOP-BANG thresholds: snoring (1), hypertension (1), age over 50 (1), and male sex (1) total 4. BMI 32 does not meet the >35 threshold.",
       "citation": "",
       "topic": "Pulmonary, OSA, and URI",
       "sourceTitle": "Perioperative Assessment & Evaluation",
