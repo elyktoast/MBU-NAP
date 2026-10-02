@@ -7402,10 +7402,10 @@
       "id": "MISC-302",
       "set": 1,
       "type": "single",
-      "stem": "Which action most directly interrupts fixation during a deteriorating case?",
+      "stem": "During unexplained deterioration, the team has repeated the same treatment twice without improvement. Which action most directly interrupts fixation before a third attempt?",
       "options": [
-        "Ask the team, 'What else could this be?'",
-        "Repeat the same treatment at higher doses",
+        "Ask the team, 'What else could this be?' and reopen the differential",
+        "Repeat the same treatment at a higher dose",
         "Silence alarms to reduce distraction",
         "Escalate the current therapy without reassessment"
       ],
@@ -7454,12 +7454,12 @@
       "id": "MISC-304",
       "set": 1,
       "type": "single",
-      "stem": "During a difficult airway, the CRNA repeats direct laryngoscopy without changing technique despite repeated failure. Which CRM principle is most clearly violated?",
+      "stem": "After two failed direct-laryngoscopy attempts with worsening oxygenation, the CRNA prepares an identical third attempt despite other airway options being available. Which CRM principle is most clearly violated?",
       "options": [
         "Behavioral flexibility",
         "Closed-loop communication",
-        "Evaluation",
-        "Awareness"
+        "Postevent evaluation",
+        "Situational awareness"
       ],
       "answer": [
         0
@@ -7670,12 +7670,12 @@
       "id": "MISC-313",
       "set": 1,
       "type": "single",
-      "stem": "During LAST, the team follows an emergency manual. Which benefit is most important?",
+      "stem": "During local-anesthetic systemic toxicity, cognitive load is high and several treatments must occur in sequence. Why is an emergency manual particularly useful?",
       "options": [
-        "Preventing omission of critical management steps",
-        "Replacing all clinical judgment",
-        "Allowing anyone to lead without coordination",
-        "Eliminating the need for training"
+        "It reduces omission of critical management steps while supporting team execution",
+        "It replaces all clinical judgment",
+        "It allows crisis management without leadership",
+        "It eliminates the need for prior training"
       ],
       "answer": [
         0
@@ -7814,10 +7814,10 @@
       "id": "MISC-319",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA says, 'I'm treating this as anaphylaxis until we prove otherwise,' while continuing to reassess alternatives. What cognitive behavior does this reflect?",
+      "stem": "During sudden hypotension, the CRNA treats anaphylaxis as the leading diagnosis but continues checking for hemorrhage, tension pneumothorax, and other alternatives. Which cognitive behavior is demonstrated?",
       "options": [
-        "Avoiding premature closure on the differential",
-        "Tunnel vision",
+        "Avoiding premature closure while maintaining a working diagnosis",
+        "Cognitive tunnel vision",
         "Artifact error",
         "Avoidance error"
       ],
@@ -7838,9 +7838,9 @@
       "id": "MISC-320",
       "set": 1,
       "type": "single",
-      "stem": "During a crisis, the team briefly pauses to reassess the working diagnosis and response to treatment. What strategy is this?",
+      "stem": "A presumed diagnosis is not responding to treatment. The team deliberately pauses for several seconds to reassess data and generate alternatives. Which anti-fixation strategy is being used?",
       "options": [
-        "A mental break that can reduce fixation",
+        "A mental break",
         "Unnecessary delay",
         "Avoidance error",
         "Artifact error"
@@ -8030,10 +8030,10 @@
       "id": "MISC-328",
       "set": 1,
       "type": "single",
-      "stem": "A slow ETCO2 rise is recognized early as possible MH, prompting help and treatment before severe deterioration. What enabled this response?",
+      "stem": "During an otherwise stable anesthetic, a subtle progressive ETCO2 rise and tachycardia are recognized before severe hypermetabolism develops; the CRNA calls for help and initiates the MH response. What most distinguishes this early rescue from technical skill alone?",
       "options": [
-        "Nontechnical skills that support early recognition and action",
-        "Manual airway skill",
+        "Nontechnical situational awareness and timely team action",
+        "Manual airway technique",
         "Equipment maintenance alone",
         "Pharmacology knowledge alone"
       ],
@@ -8126,7 +8126,7 @@
       "id": "MISC-332",
       "set": 1,
       "type": "single",
-      "stem": "Sedation is failing, and the CRNA promptly decides to convert to general anesthesia. Which nontechnical skill is most directly demonstrated?",
+      "stem": "During monitored anesthesia care, escalating sedation still fails to provide acceptable operating conditions and airway obstruction is recurring. The CRNA promptly converts to general anesthesia. Which nontechnical skill is most directly demonstrated?",
       "options": [
         "Decision making",
         "Artifact recognition",
@@ -8222,12 +8222,12 @@
       "id": "MISC-336",
       "set": 1,
       "type": "single",
-      "stem": "Why is an MH cart with stepwise instructions valuable during a rare crisis?",
+      "stem": "Malignant hyperthermia is rare, time-critical, and requires multiple simultaneous actions. Why is a stocked MH cart with stepwise instructions especially valuable?",
       "options": [
-        "It supports rapid, standardized management and reduces omitted steps",
+        "It supports rapid standardized management and reduces omitted steps under cognitive load",
         "It replaces the need for dantrolene",
-        "It eliminates the need to know dosing",
-        "It prevents MH from occurring"
+        "It eliminates the need to know medication dosing",
+        "It prevents susceptible patients from developing MH"
       ],
       "answer": [
         0
@@ -8322,12 +8322,12 @@
       "id": "MISC-340",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA attributes hypotension to positioning and ignores rising airway pressures. What is the main cognitive risk?",
+      "stem": "After beach-chair positioning, hypotension is attributed to anesthetic vasodilation even as peak airway pressure rises and unilateral breath sounds appear. What is the primary cognitive danger?",
       "options": [
-        "Missing an alternative diagnosis because of fixation",
-        "Faster recognition of the correct cause",
-        "Improved outcomes",
-        "Reduced need for teamwork"
+        "Fixation can delay recognition of a competing diagnosis",
+        "The initial diagnosis becomes more reliable as conflicting data accumulate",
+        "Team input is unnecessary once a cause is selected",
+        "Higher airway pressure confirms vasodilation"
       ],
       "answer": [
         0
@@ -8346,7 +8346,7 @@
       "id": "MISC-341",
       "set": 1,
       "type": "single",
-      "stem": "During a crisis, the team deliberately pauses to reassess the diagnosis and response to treatment. What does this support?",
+      "stem": "Vasopressors have not corrected presumed anesthetic-related hypotension. The team pauses, reassesses the working diagnosis, and reviews the response to treatment before proceeding. What does this action support?",
       "options": [
         "Evaluation and reduction of fixation",
         "Unnecessary delay",
