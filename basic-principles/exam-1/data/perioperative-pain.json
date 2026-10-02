@@ -3748,12 +3748,12 @@
       "id": "PAIN-151",
       "set": 1,
       "type": "single",
-      "stem": "What respiratory rate and pupil findings suggest more opioid is needed before emergence?",
+      "stem": "Near emergence, a spontaneously breathing patient has a respiratory rate of 22/min with large pupils despite adequate neuromuscular recovery. Which interpretation BEST guides opioid titration?",
       "options": [
-        "RR above 18–20 with dilated pupils",
-        "RR below 8 with pinpoint pupils",
-        "RR 12–14 with moderately miotic pupils",
-        "RR 10 with dilated pupils"
+        "The pattern suggests inadequate analgesic effect and may justify cautious additional opioid",
+        "The pattern indicates opioid excess and requires naloxone",
+        "The respiratory rate is already at the desired opioid endpoint",
+        "Pupil size is unrelated to opioid effect"
       ],
       "answer": [
         0
@@ -3772,12 +3772,12 @@
       "id": "PAIN-152",
       "set": 1,
       "type": "single",
-      "stem": "At the end of a case, a spontaneously breathing patient has a RR of 6 and pinpoint pupils. What are the targets for opioid titration?",
+      "stem": "At emergence, a spontaneously breathing patient has a respiratory rate of 6/min and pinpoint pupils after repeated opioid doses. Which endpoint would indicate a safer balance of analgesia and ventilation?",
       "options": [
-        "RR 12–14, small pupils",
-        "RR about 6–8 with pinpoint pupils",
-        "RR over 25 with dilated pupils",
-        "Apnea with pinpoint pupils"
+        "Respiratory rate about 12–14/min with moderately small pupils",
+        "Respiratory rate 6–8/min with pinpoint pupils",
+        "Respiratory rate above 25/min with dilated pupils",
+        "Apnea with persistent miosis"
       ],
       "answer": [
         0
@@ -3796,12 +3796,12 @@
       "id": "PAIN-153",
       "set": 1,
       "type": "single",
-      "stem": "At emergence, a patient is slow to breathe after opioids. If you give naloxone, how should you dose it?",
+      "stem": "An opioid-treated patient remains too bradypneic for safe extubation but still requires substantial postoperative analgesia. How should naloxone be used?",
       "options": [
-        "Use the lowest dose that restores breathing",
-        "Give a large dose to speed extubation",
-        "Avoid naloxone in every case",
-        "Give it routinely before extubation"
+        "Titrate the smallest dose that restores adequate ventilation while preserving analgesia",
+        "Give a large reversal dose to eliminate all opioid effect",
+        "Avoid naloxone regardless of ventilation",
+        "Administer naloxone routinely before every opioid-based emergence"
       ],
       "answer": [
         0
@@ -3820,12 +3820,12 @@
       "id": "PAIN-154",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, BP rises to 180/100 as the patient coughs on the tube. What should you avoid?",
+      "stem": "During emergence, a patient coughs forcefully on the tube and transiently becomes hypertensive. Ventilation is otherwise adequate. Which response carries the greatest risk of creating a new problem after extubation?",
       "options": [
-        "Large opioid doses for vital signs",
-        "Using lidocaine to blunt the cough",
-        "Planning the extubation carefully with the surgical team",
-        "Checking the neuromuscular block"
+        "Giving a large opioid bolus solely to normalize the transient vital-sign response",
+        "Using lidocaine as part of a planned strategy to blunt coughing",
+        "Coordinating extubation timing with the surgical team",
+        "Confirming adequate neuromuscular recovery"
       ],
       "answer": [
         0
@@ -3916,12 +3916,12 @@
       "id": "PAIN-158",
       "set": 1,
       "type": "single",
-      "stem": "A patient leaves the OR with 9/10 pain after a total knee. What is a likely consequence?",
+      "stem": "A total-knee patient reaches PACU with severe uncontrolled pain despite stable physiology. Which downstream effect is MOST likely?",
       "options": [
-        "A prolonged PACU stay",
-        "Faster discharge",
-        "Lower PONV risk",
-        "Better patient satisfaction"
+        "Prolonged PACU recovery because analgesia must be established before discharge criteria are met",
+        "Faster discharge because severe pain increases alertness",
+        "Reduced postoperative nausea risk",
+        "Improved satisfaction despite delayed treatment"
       ],
       "answer": [
         0
@@ -3993,12 +3993,12 @@
       "id": "PAIN-161",
       "set": 1,
       "type": "single",
-      "stem": "A 45-year-old opioid-naive patient needs a PCA after a hysterectomy. Should a background infusion be added?",
+      "stem": "An opioid-naive patient requires PCA after hysterectomy and can activate the device appropriately. Which order feature should generally be avoided because it adds opioid exposure independent of patient demand?",
       "options": [
-        "No; not for opioid-naive patients",
-        "Yes, a background rate is standard for every PCA order",
-        "Yes, it prevents respiratory depression",
-        "Yes, it reduces total opioid use over the first 24 hours"
+        "A continuous background infusion",
+        "A patient-triggered demand dose",
+        "A defined lockout interval",
+        "A maximum hourly dose"
       ],
       "answer": [
         0
@@ -4133,12 +4133,12 @@
       "id": "PAIN-166",
       "set": 1,
       "type": "single",
-      "stem": "A hydromorphone PCA is ordered with \"demand 0.2 mg\" but no lockout, and the patient presses repeatedly. What is the main risk?",
+      "stem": "A hydromorphone PCA order specifies a demand dose but omits the lockout interval. Why is this omission dangerous?",
       "options": [
-        "Overdose and respiratory depression",
-        "Underdosing and uncontrolled pain",
-        "Pump malfunction",
-        "Faster recovery"
+        "Repeated successful demands could deliver excessive opioid and cause respiratory depression",
+        "The pump will necessarily underdose the patient",
+        "The PCA cannot contain hydromorphone without a basal infusion",
+        "The omission only affects documentation, not dosing"
       ],
       "answer": [
         0
@@ -4205,12 +4205,12 @@
       "id": "PAIN-169",
       "set": 1,
       "type": "single",
-      "stem": "What is the purpose of titrating opioids to respiratory rate during emergence?",
+      "stem": "Near emergence, why can spontaneous respiratory rate be useful when titrating the final opioid doses?",
       "options": [
-        "Balance analgesia with adequate ventilation",
-        "Ensure the patient is apneic for extubation",
-        "Avoid all opioids during emergence",
-        "Increase CO2 to deepen anesthesia"
+        "It helps balance residual analgesic effect against ventilatory depression",
+        "The goal is to create apnea before extubation",
+        "It eliminates the need to assess other opioid effects",
+        "A rising carbon dioxide level is intentionally used to deepen anesthesia"
       ],
       "answer": [
         0
@@ -4328,12 +4328,12 @@
       "id": "PAIN-174",
       "set": 1,
       "type": "single",
-      "stem": "A fentanyl infusion runs for 8 hours and is stopped at closure. What is the risk?",
+      "stem": "A fentanyl infusion has run for 8 hours and is still infusing as closure begins. Which concern should MOST influence when it is stopped?",
       "options": [
-        "Prolonged emergence",
-        "Faster emergence",
-        "Immediate withdrawal",
-        "Hypertension at emergence"
+        "Accumulation can lengthen context-sensitive recovery and delay emergence",
+        "Longer infusion duration makes fentanyl clear faster",
+        "Stopping fentanyl causes immediate physiologic withdrawal in opioid-naive patients",
+        "Late discontinuation reliably prevents emergence hypertension without respiratory cost"
       ],
       "answer": [
         0
@@ -4381,12 +4381,12 @@
       "id": "PAIN-176",
       "set": 1,
       "type": "single",
-      "stem": "Hours after intrathecal morphine, a patient develops itching and slow breathing. What causes these effects?",
+      "stem": "Hours after neuraxial morphine, a patient develops pruritus followed by respiratory slowing. Which pharmacologic behavior BEST explains the delayed respiratory risk?",
       "options": [
-        "Cephalad CSF spread and uptake",
-        "Local anesthetic toxicity",
-        "Delayed absorption from the injection site",
-        "Local anesthetic spread to the brainstem"
+        "Cephalad cerebrospinal-fluid spread with central opioid-receptor effect",
+        "Local-anesthetic systemic toxicity",
+        "Slow absorption from a peripheral injection site",
+        "Local anesthetic migration to the brainstem"
       ],
       "answer": [
         0
@@ -4511,12 +4511,12 @@
       "id": "PAIN-181",
       "set": 1,
       "type": "single",
-      "stem": "A patient has bothersome itching after intrathecal morphine and is breathing normally. Which naloxone approach is appropriate?",
+      "stem": "A patient has troublesome pruritus after intrathecal morphine but remains awake with normal ventilation and excellent analgesia. Which reversal strategy BEST treats the adverse effect while minimizing loss of analgesia?",
       "options": [
-        "A low-dose infusion or 40 mcg IV push",
-        "2 mg IV push every 2 minutes",
-        "10 mg IM once",
-        "0.4 mg IV bolus repeated every 2 minutes until resolved"
+        "Very low-dose naloxone, such as 40 mcg IV or a low-dose infusion",
+        "Repeated 2 mg naloxone boluses",
+        "A 10 mg intramuscular naloxone dose",
+        "Repeated 0.4 mg boluses until all opioid effects disappear"
       ],
       "answer": [
         0
@@ -4535,12 +4535,12 @@
       "id": "PAIN-182",
       "set": 1,
       "type": "single",
-      "stem": "A PACU patient is oversedated after midazolam and hydromorphone. Which reversal should you consider FIRST once ventilation is supported?",
+      "stem": "A PACU patient is hypoventilating after receiving both midazolam and hydromorphone. Ventilation is supported while reversal is considered. Which approach can improve alertness while initially preserving opioid analgesia?",
       "options": [
-        "Flumazenil for the benzodiazepine",
-        "Atipamezole for dexmedetomidine",
-        "Physostigmine for ketamine",
-        "Flumazenil for propofol"
+        "Reverse the benzodiazepine component with flumazenil",
+        "Give atipamezole to reverse hydromorphone",
+        "Give physostigmine to reverse midazolam",
+        "Use flumazenil to reverse the opioid"
       ],
       "answer": [
         0
@@ -4607,12 +4607,12 @@
       "id": "PAIN-185",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives dexmedetomidine, ketamine, and hydromorphone, each at the full usual dose. What should you expect from this synergy?",
+      "stem": "Dexmedetomidine, ketamine, and hydromorphone are combined at full usual doses. The patient becomes more sedated and hypotensive than expected from any one agent. Which principle BEST explains this?",
       "options": [
-        "More effect and more side effects",
-        "Less efficacy with fewer side effects",
-        "No change in effect",
-        "Shorter duration"
+        "Pharmacodynamic synergy can amplify both desired effects and adverse effects",
+        "Different drug classes cannot produce additive effects",
+        "Combining agents reliably shortens each drug's duration",
+        "Multimodal analgesia prevents hemodynamic interaction"
       ],
       "answer": [
         0
@@ -4631,12 +4631,12 @@
       "id": "PAIN-186",
       "set": 1,
       "type": "single",
-      "stem": "You plan dexmedetomidine, hydromorphone, and ketamine for a spine case. How should you adjust doses?",
+      "stem": "A multimodal spine plan includes dexmedetomidine, hydromorphone, and ketamine. How should the presence of overlapping analgesic and sedative effects influence dosing?",
       "options": [
-        "Lower the dose of each agent",
-        "Give the full dose of each agent",
-        "Reduce only the ketamine",
-        "Avoid dose changes"
+        "Use lower individualized doses of the component agents",
+        "Use the full standalone dose of every agent",
+        "Reduce only ketamine because opioids do not interact with alpha-2 agonists",
+        "No dose adjustment is needed when mechanisms differ"
       ],
       "answer": [
         0
@@ -4751,12 +4751,12 @@
       "id": "PAIN-191",
       "set": 1,
       "type": "single",
-      "stem": "A patient reports itching after opioids but no rash or swelling. How should this be classified?",
+      "stem": "After morphine, a patient develops isolated generalized itching without urticaria, facial swelling, bronchospasm, or hypotension. Which interpretation is MOST appropriate?",
       "options": [
-        "Adverse effect, not true allergy",
-        "Pseudoallergy requiring avoidance of all opioids",
-        "Anaphylaxis",
-        "Serotonin syndrome from opioid excess"
+        "A common opioid adverse effect rather than evidence of true allergy",
+        "Anaphylaxis requiring permanent avoidance of every opioid",
+        "Serotonin syndrome caused by morphine",
+        "A definitive IgE-mediated opioid allergy"
       ],
       "answer": [
         0
@@ -4828,12 +4828,12 @@
       "id": "PAIN-194",
       "set": 1,
       "type": "single",
-      "stem": "A colleague wants to place an interscalene block in a hallway without monitors or lipid emulsion. What principle applies?",
+      "stem": "A clinician proposes performing an interscalene block in an unmonitored area without immediate airway equipment or lipid emulsion. Which principle should determine the response?",
       "options": [
-        "Block only where rescue is possible",
-        "Perform blocks wherever is convenient",
-        "Lipid emulsion is unnecessary",
-        "The block is safe if the patient is awake"
+        "Regional anesthesia should be performed where complications can be recognized and resuscitation can begin immediately",
+        "An awake patient makes monitoring and rescue capability unnecessary",
+        "Lipid emulsion is unnecessary for peripheral blocks",
+        "Convenience outweighs rescue readiness for single-shot blocks"
       ],
       "answer": [
         0
@@ -4876,12 +4876,12 @@
       "id": "PAIN-196",
       "set": 1,
       "type": "single",
-      "stem": "What is the first step if a patient is excessively sedated after opioids and benzodiazepines?",
+      "stem": "An excessively sedated patient received both a benzodiazepine and opioid. Ventilation is being supported and preserving analgesia is desirable. Which reversal sequence is emphasized in the source?",
       "options": [
-        "Consider flumazenil before naloxone",
-        "Give naloxone 2 mg immediately",
-        "Increase opioid for pain",
-        "Give ketamine to stimulate breathing"
+        "Consider flumazenil for the benzodiazepine before titrating naloxone",
+        "Give a large naloxone dose first regardless of analgesic need",
+        "Increase opioid to prevent withdrawal before reversal",
+        "Use ketamine as a respiratory reversal agent"
       ],
       "answer": [
         0
@@ -4924,7 +4924,7 @@
       "id": "PAIN-198",
       "set": 1,
       "type": "single",
-      "stem": "A patient on daily opioids develops sweating, diarrhea, and yawning 12 hours after a missed dose, which resolve with the drug. What is this?",
+      "stem": "A patient taking opioids daily develops yawning, sweating, diarrhea, and autonomic symptoms after an abrupt missed dose; symptoms resolve when the opioid is restored. Which phenomenon is demonstrated?",
       "options": [
         "Physical dependence",
         "Addiction",
@@ -4972,12 +4972,12 @@
       "id": "PAIN-200",
       "set": 1,
       "type": "single",
-      "stem": "After months of daily opioid exposure, a patient's opioid dose-response curve shifts to the right. What does this represent?",
+      "stem": "A patient requires progressively larger opioid concentrations to achieve the same analgesic response, shifting the dose-response curve to the right. Which adaptation does this represent?",
       "options": [
         "Tolerance",
-        "Increased sensitivity",
-        "Withdrawal",
-        "Increased receptor sensitivity"
+        "Increased opioid sensitivity",
+        "Acute withdrawal",
+        "Receptor hypersensitivity"
       ],
       "answer": [
         0
