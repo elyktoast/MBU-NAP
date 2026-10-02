@@ -10092,17 +10092,17 @@
       "id": "PRE-414",
       "set": 1,
       "type": "single",
-      "stem": "A chronic heavy drinker is sober on the day of surgery. How does chronic alcohol exposure usually affect anesthetic requirement?",
+      "stem": "A chronic heavy drinker is sober today. A colleague expects a lower MAC because acute alcohol lowers anesthetic requirement. What is the better interpretation?",
       "options": [
-        "It increases MAC",
-        "It decreases MAC",
-        "It has no effect",
+        "Chronic tolerance tends to increase MAC when the patient is not acutely intoxicated",
+        "Chronic use lowers MAC for the same reason as acute intoxication",
+        "Acute and chronic alcohol have no meaningful effect on MAC",
         "MAC depends only on age"
       ],
       "answer": [
         0
       ],
-      "explanation": "Chronic alcohol use increases MAC.",
+      "explanation": "Acute intoxication decreases MAC, whereas chronic alcohol exposure produces tolerance and tends to increase MAC when the patient is sober.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -10404,17 +10404,17 @@
       "id": "PRE-427",
       "set": 1,
       "type": "single",
-      "stem": "A patient has unstable angina plus severe COPD and needs urgent surgery. Which ASA category best reflects disease that is a constant threat to life?",
+      "stem": "A patient with severe COPD is usually ASA III, but he now has unstable angina before urgent surgery. Which finding is what elevates the classification to ASA IV?",
       "options": [
-        "ASA IV",
-        "ASA III",
-        "ASA II",
-        "ASA V"
+        "Unstable angina creating a constant threat to life",
+        "The diagnosis of COPD alone",
+        "The urgent timing of surgery alone",
+        "The patient's age"
       ],
       "answer": [
         0
       ],
-      "explanation": "Severe disease that is a constant threat to life is ASA IV.",
+      "explanation": "ASA IV reflects severe systemic disease that is a constant threat to life. In this scenario, unstable angina is the feature that pushes the classification beyond ASA III.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -10860,17 +10860,17 @@
       "id": "PRE-446",
       "set": 1,
       "type": "single",
-      "stem": "A patient had CABG 4 months ago and requests elective shoulder surgery. Which timing recommendation best follows the lecture?",
+      "stem": "A patient is 4 months after CABG, has excellent functional capacity, and wants elective shoulder surgery. How should the reassuring functional status affect the lecture's CABG timing recommendation?",
       "options": [
-        "Delay until more than 6 months after CABG",
-        "Proceed because 60 days is enough",
-        "Regional anesthesia eliminates the timing concern",
-        "Functional capacity alone overrides CABG timing"
+        "It should not override the recommendation to wait more than 6 months after CABG",
+        "It permits immediate surgery because functional capacity is adequate",
+        "It reduces the waiting interval to 60 days",
+        "It eliminates the timing concern if regional anesthesia is used"
       ],
       "answer": [
         0
       ],
-      "explanation": "CABG timing is >6 months for elective surgery.",
+      "explanation": "Good functional capacity does not replace the lecture's timing recommendation to wait more than 6 months after CABG for elective surgery.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
