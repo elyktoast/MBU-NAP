@@ -185,6 +185,10 @@ function checkRuntimeSafety(){
   if(cloud.includes('location.reload()'))fail('Cloud sync/auth: runtime must not reload the active learner page');
   if(cloud.includes("sessionStorage.setItem('mbu_cloud_reload'"))fail('Cloud sync/auth: obsolete reload marker remains');
   if(cloud.includes('fullSync({reloadOnImport:true})'))fail('Cloud sync/auth: reload-on-import mode remains enabled');
+  if(!cloud.includes("recoveryMode=false;if(!await refreshLegalAcceptance())")||!cloud.includes("await refreshAccountAccess();if(accountAccess==='active')"))fail('Cloud auth: password recovery does not revalidate legal and account access state');
+  const appCore=read('equipment/assets/app-core.js');
+  if(appCore.includes("message.textContent='Deleted. Reloading…';location.reload()"))fail('Account deletion: obsolete protected-page reload remains');
+  if(!appCore.includes("message.textContent='Account deleted.';closeAccount();location.assign(ROOT_URL.href)"))fail('Account deletion: successful deletion does not return explicitly to public home');
 }
 function checkStudioData(){
   checkBank1();checkBank2();checkBank3();checkHazardsCanonical();
