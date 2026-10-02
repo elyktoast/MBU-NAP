@@ -503,12 +503,12 @@
       "id": "PRE-021",
       "set": 1,
       "type": "single",
-      "stem": "The \"Set up for success\" slide advises asking who is present. What is the specific reason?",
+      "stem": "A healthy ambulatory patient has a responsible adult available to drive home after anesthesia, but no one can stay with the patient afterward. Which discharge-planning issue should be identified before proceeding?",
       "options": [
-        "Identify who will care for the patient 24 hours after anesthesia",
-        "Decide which family member may watch induction",
-        "Determine which relative signs the consent form",
-        "Confirm who will drive them to and from the hospital that day"
+        "No responsible adult is available for the first 24 hours after anesthesia",
+        "Transportation home is adequate, so no additional support is needed",
+        "A family member must be present during induction",
+        "The surgical consent requires a relative's signature"
       ],
       "answer": [
         0
@@ -527,12 +527,12 @@
       "id": "PRE-022",
       "set": 1,
       "type": "single",
-      "stem": "A patient's chart shows diabetes, OSA on CPAP, and a prior difficult intubation. You have 10 minutes in preop. Which interview approach is MOST efficient?",
+      "stem": "The chart already documents OSA on CPAP, diabetes, and a previous difficult intubation. With limited preoperative interview time, which approach best reduces the chance of missing a new risk?",
       "options": [
-        "Confirm known issues, then fill gaps",
-        "Start a full history from the beginning, ignoring the chart",
-        "Ask about the items the chart already documents",
-        "Review only the chart items flagged as abnormal"
+        "Verify the known high-risk findings, then deliberately probe for gaps or interval changes",
+        "Repeat the entire history without using the chart",
+        "Ask only about diagnoses already listed in the chart",
+        "Review abnormal chart items and omit questions about unchanged systems"
       ],
       "answer": [
         0
@@ -551,12 +551,12 @@
       "id": "PRE-023",
       "set": 1,
       "type": "single",
-      "stem": "A first-semester SRNA keeps forgetting parts of the preop interview under time pressure. What is the MOST practical fix?",
+      "stem": "An SRNA repeatedly omits important preoperative questions when cases become busy. Which change most directly reduces omission errors without replacing clinical judgment?",
       "options": [
-        "Build and use a structured interview template",
-        "Watch a scripted consent video before each case",
-        "Rely on a preprinted order set",
-        "Use a patient questionnaire in place of the interview"
+        "Use a consistent structured interview template",
+        "Use a scripted consent video before each case",
+        "Rely on the preoperative order set to capture the history",
+        "Substitute a patient questionnaire for the interview"
       ],
       "answer": [
         0
@@ -575,12 +575,12 @@
       "id": "PRE-024",
       "set": 1,
       "type": "single",
-      "stem": "How does the \"Set up for success\" slide recommend addressing the patient?",
+      "stem": "At the start of the preoperative interview, which form of address best follows the lecture's strategy for establishing professional rapport?",
       "options": [
-        "Use their surname to show respect",
-        "Use their first name to build rapport",
-        "Use a nickname if the patient requests",
-        "Avoid names to protect privacy"
+        "Address the patient by surname unless invited to do otherwise",
+        "Use the patient's first name immediately to appear informal",
+        "Use a nickname if one is visible in the chart",
+        "Avoid using the patient's name until consent is signed"
       ],
       "answer": [
         0
@@ -599,12 +599,12 @@
       "id": "PRE-025",
       "set": 1,
       "type": "single",
-      "stem": "A 74-year-old on apixaban for atrial fibrillation is scheduled for a total knee with a planned spinal. How should the apixaban be managed?",
+      "stem": "A 74-year-old takes apixaban for atrial fibrillation and is scheduled for total knee arthroplasty with a planned spinal. Which principle should drive the perioperative anticoagulation plan?",
       "options": [
-        "An individualized bleeding-versus-clot plan",
-        "Continue it through surgery with standard dosing",
-        "Stop it the morning of surgery and proceed with spinal",
-        "Replace it with aspirin the day before"
+        "Balance thromboembolic risk against surgical and neuraxial bleeding risk",
+        "Continue apixaban through surgery because atrial fibrillation is chronic",
+        "Hold only the morning dose and proceed with spinal anesthesia",
+        "Replace apixaban with aspirin the day before surgery"
       ],
       "answer": [
         0
@@ -623,12 +623,12 @@
       "id": "PRE-026",
       "set": 1,
       "type": "single",
-      "stem": "A 72-year-old with exertional chest pain is found at the preop visit 3 weeks before an elective hip replacement and is sent for a stress test that shows ischemia. Which purpose of perioperative evaluation does this illustrate?",
+      "stem": "Three weeks before elective hip replacement, a patient reports exertional chest pain and subsequent testing demonstrates inducible ischemia. Which function of the preoperative process is most clearly demonstrated?",
       "options": [
-        "Finding patients needing workup",
-        "Scheduling OR time efficiently",
-        "Replacing the surgeon's history and physical",
-        "Confirming the patient is fit for outpatient discharge"
+        "Identifying a problem early enough for additional evaluation or optimization",
+        "Improving operating-room turnover by completing testing early",
+        "Replacing the surgeon's history and physical examination",
+        "Determining whether the patient can be discharged the same day"
       ],
       "answer": [
         0
@@ -647,11 +647,11 @@
       "id": "PRE-027",
       "set": 1,
       "type": "single",
-      "stem": "A patient took glipizide the morning of surgery by mistake. What is the MOST relevant concern?",
+      "stem": "A fasting patient accidentally takes the usual morning glipizide dose before surgery. Which immediate preoperative risk should receive priority surveillance?",
       "options": [
-        "Hypoglycemia during the fasting period",
-        "Hyperkalemia after induction",
-        "Refractory hypotension after induction",
+        "Hypoglycemia",
+        "Hyperkalemia",
+        "Refractory vasodilatory hypotension",
         "Prolonged neuromuscular blockade"
       ],
       "answer": [
@@ -671,12 +671,12 @@
       "id": "PRE-028",
       "set": 1,
       "type": "single",
-      "stem": "Four clinicians offer to do the preanesthesia assessment: a CRNA, an NP, a PA, and an RN in preop holding. Which one may NOT perform it?",
+      "stem": "A facility allows physicians, CRNAs, NPs, and PAs to perform the formal preanesthesia assessment. A preoperative holding RN offers to complete it independently. Which statement is correct?",
       "options": [
-        "The preop RN",
-        "The CRNA",
-        "The NP",
-        "The PA"
+        "The RN may collect data but is not one of the listed clinicians who may perform the formal assessment",
+        "The RN may perform it if the patient is ASA I or II",
+        "The RN may perform it when a CRNA cosigns later",
+        "The RN may perform it for regional anesthesia but not general anesthesia"
       ],
       "answer": [
         0
@@ -695,14 +695,14 @@
       "id": "PRE-029",
       "set": 1,
       "type": "multi",
-      "stem": "During chart review for a patient with a \"difficult airway\" sticker, which items are essential to review before the interview? (Select 2)",
+      "stem": "A chart carries a difficult-airway alert, but the patient cannot recall details. Which two chart elements are most important to review before finalizing the airway plan? (Select 2)",
       "options": [
-        "Previous intubation notes",
-        "Consent, allergies, and medications",
-        "The surgeon's dictated postoperative plan",
+        "Previous intubation or airway-management records",
+        "Current consent, allergies, and medication list",
+        "The surgeon's postoperative dictation template",
         "The planned discharge destination",
         "The patient's preferred postoperative diet",
-        "The patient's prior PONV prophylaxis"
+        "The surgeon's usual airway preference"
       ],
       "answer": [
         0,
@@ -722,12 +722,12 @@
       "id": "PRE-030",
       "set": 1,
       "type": "single",
-      "stem": "A patient reports being told he \"stopped breathing in recovery\" after a prior surgery. Which history category does this fit, and what is the risk?",
+      "stem": "A patient reports that after a prior anesthetic he became apneic in PACU and required prolonged respiratory support. Which preoperative interpretation is most appropriate?",
       "options": [
-        "Anesthesia history; possible OSA or opioid sensitivity",
-        "Medication history; possible benzodiazepine sensitivity",
-        "Social history; possible drug misuse after surgery",
-        "Surgical history; wrong-site risk"
+        "Treat it as an anesthesia-history signal for conditions such as OSA or heightened respiratory-depressant sensitivity",
+        "Classify it only as a medication-history issue from benzodiazepine exposure",
+        "Classify it as social history suggesting substance misuse",
+        "Classify it as surgical history because it occurred after the operation"
       ],
       "answer": [
         0
@@ -746,10 +746,10 @@
       "id": "PRE-031",
       "set": 1,
       "type": "single",
-      "stem": "An 81-year-old's daughter says her father \"wasn't himself for three days\" after his last anesthetic. Where does this belong in your preop assessment?",
+      "stem": "An 81-year-old was confused and not at baseline for three days after a previous anesthetic. Where should this information be captured because it may alter the current anesthetic and recovery plan?",
       "options": [
-        "Anesthesia history, as emergence delirium",
-        "Medication history, as an opioid side effect",
+        "Prior anesthesia history, including postoperative delirium or delayed recovery",
+        "Medication history as an isolated opioid adverse effect",
         "Coagulation history",
         "Endocrine history"
       ],
@@ -770,12 +770,12 @@
       "id": "PRE-032",
       "set": 1,
       "type": "single",
-      "stem": "A 40-year-old reports she has never had anesthesia before. Which lecture caution applies?",
+      "stem": "A 40-year-old has never received anesthesia and has no documented drug allergies. Which conclusion is safest during preoperative planning?",
       "options": [
-        "Unknown reactions, including to NMB and antibiotics",
-        "She is at higher risk for PONV but not reactions",
-        "She will need a higher MAC",
-        "She is automatically ASA II"
+        "Absence of prior exposure means reactions to common anesthetic drugs or antibiotics are still unknown",
+        "The patient is at increased PONV risk but not at risk for drug reactions",
+        "The patient will require a higher volatile anesthetic concentration",
+        "The patient should automatically be classified ASA II"
       ],
       "answer": [
         0
@@ -794,12 +794,12 @@
       "id": "PRE-033",
       "set": 1,
       "type": "single",
-      "stem": "An 84-year-old on warfarin for a mechanical mitral valve presents with a hip fracture. INR is 3.1. What is the BEST approach?",
+      "stem": "An 84-year-old with a mechanical mitral valve takes warfarin and presents with a hip fracture and INR 3.1. Which approach best reflects the competing perioperative risks?",
       "options": [
-        "Individualize anticoagulant management with the team",
-        "Continue warfarin and give FFP in the OR as needed",
-        "Stop warfarin and proceed immediately",
-        "Substitute aspirin and proceed"
+        "Coordinate an individualized plan for reversal, timing, and thromboembolic protection",
+        "Continue warfarin unchanged and treat bleeding only if it occurs",
+        "Stop warfarin and proceed immediately without further planning",
+        "Replace warfarin with aspirin and proceed"
       ],
       "answer": [
         0
@@ -818,12 +818,12 @@
       "id": "PRE-034",
       "set": 1,
       "type": "single",
-      "stem": "A patient was risk-stratified as low risk at a preop visit 3 weeks ago. This morning his potassium is 6.1 and his ECG shows new peaked T waves. What does the day-of-surgery chart review need to confirm?",
+      "stem": "A patient was considered low risk three weeks ago, but this morning potassium is 6.1 mEq/L with new peaked T waves. What must the day-of-surgery review do first with the prior assessment?",
       "options": [
-        "Whether the risk stratification and plan are still appropriate",
-        "That consent is signed and witnessed",
-        "That the patient is NPO",
-        "That the original plan stands, since it was already approved"
+        "Reassess whether the previous risk stratification and anesthetic plan remain valid",
+        "Confirm only that surgical consent is signed",
+        "Confirm NPO status and keep the prior plan unchanged",
+        "Accept the original plan because it was completed within 30 days"
       ],
       "answer": [
         0
@@ -842,12 +842,12 @@
       "id": "PRE-035",
       "set": 1,
       "type": "single",
-      "stem": "Four patients give these histories: seasonal allergies; a brother who developed high fever and rigidity during anesthesia; mild PONV after a dental case; and a remote appendectomy. Which history MOST changes the anesthetic technique?",
+      "stem": "Which history should trigger the largest change in anesthetic preparation before an otherwise routine elective case?",
       "options": [
-        "The brother's reaction",
-        "The mild PONV after a dental case",
-        "Mild PONV after a dental case",
-        "The remote appendectomy"
+        "A first-degree relative developed severe hyperthermia and rigidity during anesthesia",
+        "The patient had mild nausea after a previous dental anesthetic",
+        "The patient has seasonal allergic rhinitis",
+        "The patient had an uncomplicated appendectomy years ago"
       ],
       "answer": [
         0
@@ -866,12 +866,12 @@
       "id": "PRE-036",
       "set": 1,
       "type": "single",
-      "stem": "A patient on metoprolol for rate control forgot to take it. HR is 118 in AF. What is the MOST relevant consequence?",
+      "stem": "A patient with atrial fibrillation misses the usual morning metoprolol dose and arrives with HR 118/min. Which consequence best explains why chronic beta-blocker therapy is ordinarily continued?",
       "options": [
-        "Loss of rate control and higher ischemic risk",
-        "Prolonged neuromuscular blockade",
-        "Rebound hypertension from beta-blocker withdrawal",
-        "Refractory hypotension after induction from withdrawal"
+        "Loss of rate control with rebound sympathetic activity and greater myocardial oxygen demand",
+        "Prolonged neuromuscular blockade from beta-receptor upregulation",
+        "Refractory vasodilatory hypotension from beta-blocker withdrawal",
+        "Reduced MAC requirement from acute beta-blocker discontinuation"
       ],
       "answer": [
         0
@@ -890,12 +890,12 @@
       "id": "PRE-037",
       "set": 1,
       "type": "single",
-      "stem": "You discuss GA with an LMA with a patient but do not mention the possible need for intubation or the option of a spinal. She signs the consent. What is the problem?",
+      "stem": "A patient consents to general anesthesia with an LMA after hearing only the planned technique; possible intubation and neuraxial alternatives were not discussed. Which element of informed consent is deficient?",
       "options": [
-        "Consent should follow discussion of risks and alternatives",
-        "Consent must be signed before any discussion",
-        "Spinal anesthesia does not need to be discussed",
-        "Intubation risks are covered by the surgical consent"
+        "Meaningful discussion of material risks and reasonable alternatives",
+        "The consent was signed after, rather than before, the discussion",
+        "Regional anesthesia is not an alternative that needs discussion",
+        "Airway risks are covered automatically by the surgical consent"
       ],
       "answer": [
         0
@@ -914,12 +914,12 @@
       "id": "PRE-038",
       "set": 1,
       "type": "single",
-      "stem": "A patient with severe COPD is scheduled for a total knee replacement. When discussing the plan, which option is MOST important to raise?",
+      "stem": "A patient with severe COPD is scheduled for total knee arthroplasty. Which anesthetic option deserves explicit discussion because it may reduce the need for airway instrumentation and systemic respiratory depressants?",
       "options": [
         "Neuraxial or regional anesthesia",
-        "GA as the standard choice for knee surgery",
-        "Postoperative ICU admission for every patient",
-        "Avoiding any analgesia to protect breathing"
+        "General anesthesia because it is mandatory for knee surgery",
+        "Routine postoperative ICU admission regardless of technique",
+        "Withholding postoperative analgesia"
       ],
       "answer": [
         0
@@ -938,14 +938,14 @@
       "id": "PRE-039",
       "set": 1,
       "type": "multi",
-      "stem": "After evaluating a 68-year-old with OSA and CAD for a colectomy, you build your plan. Which elements belong in it? (Select 3)",
+      "stem": "After evaluating a patient with OSA and coronary disease for colectomy, which three decisions belong directly in the anesthesia plan generated from the assessment? (Select 3)",
       "options": [
-        "Preoperative medications",
-        "Monitoring choices",
-        "Positioning and equipment setup",
-        "Surgical incision type",
+        "Preoperative medication strategy",
+        "Monitoring strategy",
+        "Positioning and required equipment",
+        "Exact surgical incision",
         "Hospital discharge date",
-        "The expected length of the hospital stay"
+        "Expected hospital length of stay"
       ],
       "answer": [
         0,
@@ -966,12 +966,12 @@
       "id": "PRE-040",
       "set": 1,
       "type": "single",
-      "stem": "A patient takes St. John's wort, ginkgo, and vitamin E daily and is scheduled for a laminectomy. What should you recommend?",
+      "stem": "A patient takes St. John's wort, ginkgo, and vitamin E before a spine procedure. Which instruction best addresses medication-interaction and bleeding concerns?",
       "options": [
-        "Hold the vitamins and herbals before surgery",
-        "Continue them to avoid withdrawal",
-        "Take half doses on the morning of surgery",
-        "Continue the ginkgo and hold the others"
+        "Hold the vitamins and herbal products before surgery",
+        "Continue all three to prevent withdrawal",
+        "Take half-doses on the morning of surgery",
+        "Continue ginkgo but hold St. John's wort and vitamin E"
       ],
       "answer": [
         0
