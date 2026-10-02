@@ -8748,11 +8748,11 @@
       "id": "PAIN-355",
       "set": 1,
       "type": "single",
-      "stem": "A patient is receiving ketamine infusion and becomes agitated. What is a possible cause?",
+      "stem": "During a subanesthetic ketamine infusion, a patient develops agitation with vivid perceptual disturbances despite stable ventilation and hemodynamics. Which drug effect best explains the change?",
       "options": [
         "Ketamine psychomimetic effects",
-        "Magnesium toxicity from the infusion rate",
-        "Early local anesthetic toxicity",
+        "Magnesium toxicity",
+        "Early local-anesthetic systemic toxicity",
         "Opioid withdrawal"
       ],
       "answer": [
@@ -8820,12 +8820,12 @@
       "id": "PAIN-358",
       "set": 1,
       "type": "single",
-      "stem": "A patient's pupils are moderately miotic and RR is 12. What does this suggest?",
+      "stem": "Near emergence, a spontaneously breathing patient has RR 12/min, moderate miosis, adequate ventilation, and no signs of distress after opioid titration. Which interpretation best fits the combined findings?",
       "options": [
-        "Appropriate opioid titration",
-        "Excessive opioid effect needing naloxone",
-        "Inadequate analgesia",
-        "Residual paralysis"
+        "A reasonable balance of analgesia and ventilatory effect",
+        "Excess opioid effect requiring naloxone",
+        "Clearly inadequate analgesia",
+        "Residual neuromuscular blockade"
       ],
       "answer": [
         0
@@ -8988,11 +8988,11 @@
       "id": "PAIN-365",
       "set": 1,
       "type": "single",
-      "stem": "A patient has pruritus and urinary retention after neuraxial opioids. What should be considered?",
+      "stem": "A patient has excellent neuraxial-opioid analgesia but develops intense pruritus and urinary retention without respiratory depression. Which management best preserves analgesia while addressing these adverse effects?",
       "options": [
-        "Low-dose naloxone for pruritus and bladder management",
-        "Increase the neuraxial opioid dose to deepen analgesia",
-        "Stop all fluids",
+        "Consider very low-dose naloxone for pruritus and manage bladder dysfunction",
+        "Increase the neuraxial opioid dose",
+        "Restrict all fluids",
         "Give succinylcholine"
       ],
       "answer": [
@@ -9084,11 +9084,11 @@
       "id": "PAIN-369",
       "set": 1,
       "type": "single",
-      "stem": "An opioid-tolerant patient needs higher doses than expected. What concept explains this?",
+      "stem": "A chronic opioid user needs progressively higher doses to achieve the same effect, with the dose-response relationship shifted rightward. Which adaptation does this represent?",
       "options": [
-        "Tolerance with a rightward shift",
-        "Hypersensitivity with a leftward shift",
-        "Physical dependence",
+        "Tolerance",
+        "Hypersensitivity",
+        "Physical dependence alone",
         "Opioid-induced hypotension"
       ],
       "answer": [
@@ -9156,12 +9156,12 @@
       "id": "PAIN-372",
       "set": 1,
       "type": "single",
-      "stem": "A child has developmental delays and cannot report pain. What is the challenge?",
+      "stem": "A developmentally delayed child cannot self-report pain reliably after surgery. Which assessment problem is most important?",
       "options": [
-        "Difficulty evaluating pain and treatment effectiveness",
-        "Children do not feel pain",
-        "Pain assessment is not required",
-        "Relying on vital signs to judge pain in children"
+        "Pain and treatment response must be evaluated with developmentally appropriate behavioral methods",
+        "Children without self-report do not experience pain",
+        "Pain assessment is unnecessary without a numeric score",
+        "Vital signs alone reliably quantify pediatric pain"
       ],
       "answer": [
         0
@@ -9228,12 +9228,12 @@
       "id": "PAIN-375",
       "set": 1,
       "type": "single",
-      "stem": "A patient with language barriers has uncontrolled pain. What barrier is this?",
+      "stem": "A patient with limited English proficiency cannot communicate pain quality or treatment preferences reliably because no interpreter has been used. Which barrier is most directly affecting care?",
       "options": [
-        "Cultural and language barriers",
-        "Staff bias",
+        "Language and cultural communication barrier",
+        "Staff bias by definition",
         "Opioid tolerance",
-        "Genetic polymorphism affecting metabolism"
+        "Genetic polymorphism"
       ],
       "answer": [
         0
@@ -9252,7 +9252,7 @@
       "id": "PAIN-376",
       "set": 1,
       "type": "single",
-      "stem": "A patient's family believes pain medicine causes addiction. What barrier is this?",
+      "stem": "A patient's family repeatedly refuses appropriate opioid rescue because they believe any perioperative opioid exposure inevitably causes addiction. Which barrier is demonstrated?",
       "options": [
         "Opiophobia",
         "Stoicism",
@@ -9300,11 +9300,11 @@
       "id": "PAIN-378",
       "set": 1,
       "type": "single",
-      "stem": "A patient complains of pain from an ETT at emergence. What intervention may help?",
+      "stem": "During emergence, an otherwise ready-to-extubate patient reports throat discomfort and repeatedly reacts to the endotracheal tube. Which intervention removes the provoking stimulus when extubation criteria are met?",
       "options": [
-        "Extubation when appropriate",
-        "Increase opioid dose before extubation",
-        "Give neuromuscular blocker",
+        "Proceed with appropriately timed extubation",
+        "Give a large opioid bolus before extubation",
+        "Administer neuromuscular blocker",
         "Increase volatile concentration"
       ],
       "answer": [
@@ -9348,12 +9348,12 @@
       "id": "PAIN-380",
       "set": 1,
       "type": "single",
-      "stem": "A patient is being discharged after ambulatory surgery. Which route is MOST helpful?",
+      "stem": "An ambulatory patient has controlled pain, tolerates oral intake, and is leaving the facility. Which route is generally most practical for continued home analgesia?",
       "options": [
-        "Oral or transdermal",
+        "Oral therapy, with transdermal treatment only when otherwise appropriate",
         "IV PCA",
-        "Epidural infusion",
-        "Intrathecal morphine"
+        "Continuous epidural infusion",
+        "New intrathecal morphine at discharge"
       ],
       "answer": [
         0
@@ -9688,12 +9688,12 @@
       "id": "PAIN-394",
       "set": 1,
       "type": "single",
-      "stem": "Case C: A 28-year-old woman is having knee arthroscopy as an outpatient. At discharge, which route is MOST appropriate for analgesics?",
+      "stem": "An ambulatory knee-arthroscopy patient is ready for discharge with controlled pain and oral intake tolerated. Which route best supports practical home analgesia?",
       "options": [
-        "Oral medications with a multimodal plan",
+        "Oral medications within a multimodal plan",
         "IV PCA at home",
-        "Epidural infusion at home",
-        "Intrathecal morphine placed before discharge"
+        "Routine epidural infusion at home",
+        "Intrathecal morphine administered at discharge"
       ],
       "answer": [
         0
