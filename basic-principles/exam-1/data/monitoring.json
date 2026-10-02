@@ -11044,12 +11044,12 @@
       "id": "MON-451",
       "set": 1,
       "type": "single",
-      "stem": "Only a skin temperature probe is being used during a long anesthetic. What is the main limitation of this measurement?",
+      "stem": "During a long anesthetic, a skin probe reads 34.0 °C while distal esophageal temperature is 36.0 °C. Which value should guide assessment of core temperature?",
       "options": [
-        "Skin temperature does not represent core temperature",
-        "Skin temperature is too high to be useful",
-        "Skin probes cause burns under forced-air warming",
-        "Skin temperature detects MH early"
+        "The distal esophageal value because skin temperature does not reliably represent core temperature",
+        "The skin value because it detects hypothermia earlier",
+        "The arithmetic mean of both",
+        "Neither unless a pulmonary-artery catheter is present"
       ],
       "answer": [
         0
@@ -11068,12 +11068,12 @@
       "id": "MON-452",
       "set": 1,
       "type": "single",
-      "stem": "An esophageal temperature probe is positioned too proximally. Why can the reading be misleading?",
+      "stem": "An esophageal temperature probe is left high in the esophagus near the airway. Why may it poorly represent core temperature?",
       "options": [
-        "It may read tracheal gas temperature instead of core",
-        "It will read higher than core because of heat from the heart",
-        "It will measure skin temperature",
-        "It will measure bladder temperature"
+        "Proximal placement can be influenced by respiratory gases; distal esophageal placement better reflects central temperature",
+        "Proximal placement always reads pulmonary-artery temperature",
+        "The probe measures skin temperature when placed proximally",
+        "Esophageal temperature is never a core measurement"
       ],
       "answer": [
         0
@@ -11092,12 +11092,12 @@
       "id": "MON-453",
       "set": 1,
       "type": "single",
-      "stem": "Core temperature falls to 34 °C. Which complication is most likely?",
+      "stem": "Core temperature reaches 34 °C during a prolonged operation. Which pair of consequences should be anticipated?",
       "options": [
-        "Coagulopathy and delayed drug metabolism",
-        "Hypercoagulability",
-        "Faster emergence",
-        "Lower O2 consumption and slower CO2 production overall"
+        "Impaired coagulation and prolonged drug effects",
+        "Hypercoagulability and faster emergence",
+        "Accelerated drug metabolism and reduced bleeding",
+        "Improved wound defense and reduced shivering"
       ],
       "answer": [
         0
@@ -11116,12 +11116,12 @@
       "id": "MON-454",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 and PaCO2 are both low with a normal capnogram shape. What is the most likely explanation?",
+      "stem": "ETCO2 is 27 mmHg and simultaneous PaCO2 is 31 mmHg with a normal waveform and high minute ventilation. Which interpretation best fits?",
       "options": [
-        "Hyperventilation",
-        "Increased dead space",
-        "Esophageal intubation",
-        "Rebreathing"
+        "Alveolar hyperventilation",
+        "Marked increase in alveolar dead space",
+        "CO2 rebreathing",
+        "Persistent esophageal intubation"
       ],
       "answer": [
         0
@@ -11140,12 +11140,12 @@
       "id": "MON-455",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 is 45 mmHg and PaCO2 is 50 mmHg. How should this gradient be interpreted?",
+      "stem": "ETCO2 is 45 mmHg and simultaneous PaCO2 is 50 mmHg. How should the arterial-to-end-tidal gradient be interpreted in an otherwise uncomplicated anesthetic?",
       "options": [
-        "5 mmHg; normal",
-        "5 mmHg; abnormal",
-        "15 mmHg; normal",
-        "10 mmHg; abnormal"
+        "A 5-mmHg gradient is within the expected range",
+        "A 5-mmHg gradient proves major dead space",
+        "A 15-mmHg gradient is present",
+        "ETCO2 should normally exceed PaCO2 by 5 mmHg"
       ],
       "answer": [
         0
@@ -11164,12 +11164,12 @@
       "id": "MON-456",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 is 25 mmHg while PaCO2 is 50 mmHg. What does this large gradient suggest?",
+      "stem": "ETCO2 is 25 mmHg while simultaneous PaCO2 is 50 mmHg despite a sustained capnogram. Which mechanism best explains the 25-mmHg gradient?",
       "options": [
-        "25 mmHg; increased dead space",
-        "5 mmHg; normal",
-        "25 mmHg; hypoventilation from a low respiratory rate",
-        "10 mmHg; rebreathing"
+        "Markedly increased alveolar dead space or V/Q mismatch",
+        "Simple hypoventilation alone",
+        "CO2 rebreathing",
+        "Normal physiology"
       ],
       "answer": [
         0
@@ -11188,12 +11188,12 @@
       "id": "MON-457",
       "set": 1,
       "type": "single",
-      "stem": "A sloping alveolar plateau appears while PIP rises. What is the best next step?",
+      "stem": "PIP rises while plateau pressure remains stable and the capnogram develops a sloped expiratory plateau. What should be assessed first?",
       "options": [
-        "Assess for obstruction and treat bronchospasm",
-        "Increase fresh gas flow for rebreathing",
-        "Replace the sampling line",
-        "Decrease FiO2 to limit absorption atelectasis"
+        "Airway obstruction from bronchospasm, secretions, or ETT kinking",
+        "Reduced compliance from pneumoperitoneum alone",
+        "CO2 absorbent exhaustion",
+        "Increased metabolic CO2 production"
       ],
       "answer": [
         0
@@ -11212,12 +11212,12 @@
       "id": "MON-458",
       "set": 1,
       "type": "single",
-      "stem": "Immediately after intubation, capnography is flat. What should be assumed and acted on first?",
+      "stem": "Immediately after intubation, no sustained exhaled CO2 is detected. SpO2 remains 100% from preoxygenation. What is the safest response?",
       "options": [
-        "Remove the ETT and ventilate by mask",
-        "Increase FiO2 and wait",
-        "Replace the capnography module",
-        "Give bronchodilators for suspected bronchospasm"
+        "Assume esophageal placement or failed ventilation until rapidly proven otherwise and re-establish effective ventilation",
+        "Wait for SpO2 to fall before acting",
+        "Increase FiO2 and observe",
+        "Treat bronchospasm before checking tube position"
       ],
       "answer": [
         0
@@ -11236,12 +11236,12 @@
       "id": "MON-459",
       "set": 1,
       "type": "single",
-      "stem": "A bleeding patient has large BP swings between 5-minute cuff cycles. How should BP monitoring be escalated?",
+      "stem": "A bleeding patient has rapid pressure swings between routine 5-minute cuff measurements and requires repeated vasoactive treatment. How should monitoring be escalated?",
       "options": [
-        "Increase NIBP frequency or place an arterial line",
-        "Keep 5-minute intervals, since that meets the standard",
-        "Decrease the interval to every 10 minutes",
-        "Switch to 15-minute cycles to reduce cuff trauma"
+        "Increase measurement frequency and strongly consider beat-to-beat invasive arterial monitoring",
+        "Keep 5-minute intervals because they satisfy the minimum",
+        "Lengthen cuff cycles to avoid compression injury",
+        "Use pulse oximetry as the primary pressure trend"
       ],
       "answer": [
         0
@@ -11260,12 +11260,12 @@
       "id": "MON-460",
       "set": 1,
       "type": "single",
-      "stem": "The upper arm is inaccessible, so NIBP is obtained from the forearm. What bias should be anticipated?",
+      "stem": "Because the upper arm is inaccessible, NIBP is measured at the forearm. How should the result be interpreted?",
       "options": [
-        "BP may be overestimated",
-        "BP will be underestimated",
-        "BP will be unchanged",
-        "BP will be unmeasurable"
+        "Forearm values may differ systematically from upper-arm measurements and can overestimate BP, so site/cuff limitations should be considered",
+        "Forearm BP is always lower than brachial BP",
+        "Forearm and upper-arm values are interchangeable regardless of cuff size",
+        "Forearm pressure cannot be measured oscillometrically"
       ],
       "answer": [
         0
@@ -11284,12 +11284,12 @@
       "id": "MON-461",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 and PIP fall together and SpO2 begins to drop. What is the most likely cause?",
+      "stem": "PIP, exhaled tidal volume, and ETCO2 all fall abruptly, followed by decreasing SpO2. Which problem should be checked immediately?",
       "options": [
-        "Circuit disconnection or large leak",
+        "A breathing-circuit disconnection or major leak",
         "Bronchospasm",
         "Malignant hyperthermia",
-        "Increased CO2 production from a hypermetabolic state"
+        "Increased CO2 production"
       ],
       "answer": [
         0
@@ -11308,12 +11308,12 @@
       "id": "MON-462",
       "set": 1,
       "type": "single",
-      "stem": "PIP rises while the lightly anesthetized patient coughs against the ventilator. What is the most likely explanation?",
+      "stem": "PIP rises abruptly as a lightly anesthetized patient coughs and moves against controlled ventilation; plateau pressure normalizes when coughing stops. Which explanation best fits?",
       "options": [
-        "Patient bucking against the ventilator",
+        "Patient-ventilator dyssynchrony/bucking",
         "Circuit disconnection",
-        "Rebreathing",
-        "Hypoventilation from an inadequate set tidal volume"
+        "CO2 rebreathing",
+        "Reduced set tidal volume"
       ],
       "answer": [
         0
@@ -11332,12 +11332,12 @@
       "id": "MON-463",
       "set": 1,
       "type": "single",
-      "stem": "A pneumothorax develops. How should respiratory compliance change on the pressure-volume loop?",
+      "stem": "After sudden unilateral loss of breath sounds, PIP and plateau pressure rise and a pneumothorax is diagnosed. What happens to respiratory-system compliance?",
       "options": [
-        "Decreased compliance with more pressure needed",
-        "Increased compliance with less pressure needed",
-        "No change in compliance",
-        "A leak pattern"
+        "It decreases, requiring greater pressure for a given volume",
+        "It increases",
+        "It remains unchanged",
+        "Only airway resistance changes"
       ],
       "answer": [
         0
@@ -11356,12 +11356,12 @@
       "id": "MON-464",
       "set": 1,
       "type": "single",
-      "stem": "Pulmonary edema develops. What change in compliance should be expected?",
+      "stem": "Pulmonary edema develops and both PIP and plateau pressure rise for the same delivered tidal volume. Which mechanical change is expected?",
       "options": [
-        "Decreased compliance",
+        "Reduced respiratory-system compliance",
         "Increased compliance",
-        "No change",
-        "Increased resistance with normal compliance"
+        "Isolated airway resistance with unchanged compliance",
+        "A major circuit leak"
       ],
       "answer": [
         0
@@ -11380,12 +11380,12 @@
       "id": "MON-465",
       "set": 1,
       "type": "single",
-      "stem": "Severe emphysema is present. What change in compliance should be expected?",
+      "stem": "In severe emphysema, less elastic recoil allows a given volume at relatively low distending pressure. Which mechanical property is increased?",
       "options": [
-        "Increased compliance",
-        "Decreased compliance",
-        "No change",
-        "Increased resistance with normal compliance"
+        "Lung compliance",
+        "Airway resistance only",
+        "Elastic recoil",
+        "Chest-wall stiffness"
       ],
       "answer": [
         0
@@ -11404,12 +11404,12 @@
       "id": "MON-466",
       "set": 1,
       "type": "single",
-      "stem": "A partially kinked ETT increases airway resistance. Which ventilator loop best displays this change?",
+      "stem": "After head repositioning, expiratory flow falls and PIP rises while plateau remains stable. Which ventilator display is particularly useful for visualizing the change in airway resistance?",
       "options": [
-        "Flow–volume loop",
-        "Pressure–volume loop",
-        "Oxyhemoglobin curve",
-        "The capnogram"
+        "Flow-volume loop",
+        "Pressure-volume loop alone",
+        "Oxyhemoglobin dissociation curve",
+        "ECG"
       ],
       "answer": [
         0
@@ -11428,12 +11428,12 @@
       "id": "MON-467",
       "set": 1,
       "type": "single",
-      "stem": "Compliance falls after pneumoperitoneum. Which loop best demonstrates the change?",
+      "stem": "After pneumoperitoneum, more pressure is required to deliver the same tidal volume. Which ventilator display most directly demonstrates the change in compliance?",
       "options": [
-        "Pressure–volume loop",
-        "Flow–volume loop",
-        "Capnogram shape during expiration",
-        "ECG trace"
+        "Pressure-volume loop",
+        "Flow-volume loop",
+        "ECG",
+        "Pulse-oximeter plethysmogram"
       ],
       "answer": [
         0
@@ -11452,12 +11452,12 @@
       "id": "MON-468",
       "set": 1,
       "type": "single",
-      "stem": "Temperature and ETCO2 both rise despite increased minute ventilation. Which diagnosis is most concerning?",
+      "stem": "ETCO2 rises despite increased minute ventilation, followed by tachycardia and increasing core temperature. Which diagnosis is most concerning?",
       "options": [
         "Malignant hyperthermia",
-        "Hypothermia",
-        "Rebreathing",
-        "Esophageal intubation"
+        "Simple hypothermia",
+        "Esophageal intubation",
+        "Circuit disconnection"
       ],
       "answer": [
         0
@@ -11476,12 +11476,12 @@
       "id": "MON-469",
       "set": 1,
       "type": "single",
-      "stem": "The pulse-oximeter tone subtly drops in pitch before the numeric value changes. What safety advantage does this provide?",
+      "stem": "While the provider is looking away from the monitor, the pulse-oximeter tone progressively decreases in pitch. What useful information does this convey?",
       "options": [
-        "Early recognition of desaturation by sound",
-        "Measurement of ETCO2",
-        "Detection of esophageal intubation by tone change",
-        "Measurement of temperature"
+        "A falling oxygen saturation can be recognized acoustically before the numeric display is viewed",
+        "ETCO2 is falling",
+        "The airway is esophageally intubated",
+        "Core temperature is decreasing"
       ],
       "answer": [
         0
@@ -11500,12 +11500,12 @@
       "id": "MON-470",
       "set": 1,
       "type": "single",
-      "stem": "A high-risk vascular patient is monitored with only one ECG lead. What is the main limitation?",
+      "stem": "A high-risk vascular patient is monitored with only one ECG lead throughout the case. What is the major limitation?",
       "options": [
-        "Ischemia detection is reduced without multiple leads",
-        "Single-lead ECG detects ischemia better",
-        "Single-lead ECG is required by ASA",
-        "Single-lead ECG prevents artifact from electrocautery"
+        "Ischemic changes outside the territory represented by that lead may be missed",
+        "A single lead cannot detect any arrhythmia",
+        "Multiple leads eliminate electrocautery artifact",
+        "ASA standards prohibit displaying a single lead"
       ],
       "answer": [
         0
@@ -11524,12 +11524,12 @@
       "id": "MON-471",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 suddenly falls to zero with no waveform, but the spontaneously breathing patient remains clinically stable. What is most likely?",
+      "stem": "During MAC, ETCO2 abruptly becomes zero with no waveform, but the awake patient continues talking and breathing comfortably. Which cause is most likely?",
       "options": [
-        "Sampling line disconnection",
+        "Sampling-line/cannula displacement or obstruction",
         "Cardiac arrest",
         "Massive pulmonary embolism with collapse",
-        "Esophageal intubation"
+        "Complete apnea"
       ],
       "answer": [
         0
@@ -11548,12 +11548,12 @@
       "id": "MON-472",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 is 60 mmHg with a normal waveform and low minute ventilation. What is the most likely mechanism?",
+      "stem": "ETCO2 is 60 mmHg with a normal waveform, slow respiratory rate, and low minute ventilation. Which mechanism best explains the hypercapnia?",
       "options": [
-        "Hypoventilation",
+        "Alveolar hypoventilation",
         "Increased dead space",
         "Esophageal intubation",
-        "Rebreathing"
+        "Circuit leak"
       ],
       "answer": [
         0
@@ -11572,12 +11572,12 @@
       "id": "MON-473",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 remains 60 mmHg despite high minute ventilation and a normal waveform. What should be suspected?",
+      "stem": "ETCO2 remains 60 mmHg despite substantially increased minute ventilation; tachycardia and rising temperature develop. Which mechanism should move higher on the differential?",
       "options": [
-        "Increased CO2 production",
-        "Hypoventilation",
+        "Markedly increased metabolic CO2 production",
+        "Simple hypoventilation",
         "Esophageal intubation",
-        "Circuit leak lowering exhaled volume"
+        "Circuit leak"
       ],
       "answer": [
         0
@@ -11596,12 +11596,12 @@
       "id": "MON-474",
       "set": 1,
       "type": "single",
-      "stem": "SpO2 is 100% on high FiO2 despite a large shunt. What monitoring limitation does this illustrate?",
+      "stem": "A patient on high FiO2 maintains SpO2 100% despite significant underlying shunt physiology. What limitation does this illustrate?",
       "options": [
-        "Oxygenation monitors can mask underlying lung dysfunction",
-        "Shunt is ruled out because SpO2 is 100% on high FiO2",
-        "FiO2 is too low",
-        "SpO2 measures shunt directly"
+        "A normal saturation on supplemental oxygen does not establish normal pulmonary gas exchange",
+        "A saturation of 100% excludes shunt",
+        "Pulse oximetry directly quantifies shunt fraction",
+        "High FiO2 makes pulse oximetry invalid"
       ],
       "answer": [
         0
@@ -11620,12 +11620,12 @@
       "id": "MON-475",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 is 38 with a normal waveform and SpO2 is 99%. Which interpretation is most appropriate?",
+      "stem": "ETCO2 is 38 mmHg with a normal waveform and SpO2 is 99% in a stable patient. Which conclusion is appropriately limited to these data?",
       "options": [
-        "Adequate ventilation and oxygenation",
-        "Hypoventilation",
-        "Esophageal intubation",
-        "Rebreathing from a partially exhausted absorbent"
+        "Current monitored ventilation and arterial oxygen saturation appear acceptable, but these values do not exclude every respiratory problem",
+        "All aspects of pulmonary function are normal",
+        "Dead space and shunt are definitively absent",
+        "The airway position cannot change while these values remain normal"
       ],
       "answer": [
         0
@@ -11644,12 +11644,12 @@
       "id": "MON-476",
       "set": 1,
       "type": "single",
-      "stem": "SpO2 reads 95%, but the pleth waveform is weak and erratic. What is the best next step?",
+      "stem": "SpO2 reads 95%, but the pleth waveform is weak and erratic in a vasoconstricted patient. What is the best response?",
       "options": [
-        "Improve signal quality before trusting the value",
-        "Accept the value as accurate",
-        "Increase FiO2 without checking the signal or the patient",
-        "Continue, since SpO2 is normal"
+        "Improve perfusion/signal quality and assess the patient before relying on the displayed saturation",
+        "Accept 95% as exact",
+        "Increase FiO2 solely because of the displayed value",
+        "Ignore the signal because the number is above 90%"
       ],
       "answer": [
         0
@@ -11668,12 +11668,12 @@
       "id": "MON-477",
       "set": 1,
       "type": "single",
-      "stem": "An NIBP cuff is placed over a PICC line. What complication can result?",
+      "stem": "A NIBP cuff is placed over an upper-arm PICC and repeatedly cycles. Which avoidable problem can result?",
       "options": [
-        "Line damage or occlusion",
-        "Improved accuracy from a firmer cuff surface",
-        "Falsely high SpO2 on that arm",
-        "Improved accuracy from a firmer surface"
+        "Compression may obstruct or damage the catheter and interrupt infusion",
+        "The cuff becomes more accurate",
+        "SpO2 on that arm becomes falsely high",
+        "PICC placement eliminates cuff-related compression"
       ],
       "answer": [
         0
@@ -11692,12 +11692,12 @@
       "id": "MON-478",
       "set": 1,
       "type": "single",
-      "stem": "An arterial line is planned in a limb with severe peripheral vascular disease. What is the main concern?",
+      "stem": "Radial arterial cannulation is considered in a limb with severe peripheral vascular disease and poor distal perfusion. What is the principal concern?",
       "options": [
-        "Compromised collateral supply and inaccurate readings",
-        "Improved accuracy in PVD",
-        "No change in risk compared with a healthy radial artery",
-        "More accurate readings from stiff vessels"
+        "Further compromising an already limited arterial supply and increasing ischemic risk",
+        "Peripheral vascular disease improves collateral circulation",
+        "Stiff vessels guarantee more accurate pressure measurement",
+        "There is no additional risk if the catheter is small"
       ],
       "answer": [
         0
@@ -11716,12 +11716,12 @@
       "id": "MON-479",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 is zero with a flat trace and the patient is pulseless. What is the most likely cause?",
+      "stem": "The capnogram becomes flat and ETCO2 reads zero at the same moment the patient becomes pulseless. Which physiologic explanation is most likely?",
       "options": [
-        "Cardiac arrest",
-        "Sampling line occlusion",
-        "Esophageal intubation",
-        "Circuit leak"
+        "Loss of pulmonary blood flow from cardiac arrest",
+        "Sampling-line occlusion as the primary explanation",
+        "CO2 rebreathing",
+        "Isolated bronchospasm"
       ],
       "answer": [
         0
@@ -11740,12 +11740,12 @@
       "id": "MON-480",
       "set": 1,
       "type": "single",
-      "stem": "During CPR, ETCO2 abruptly rises from 10 to 35 mmHg. What does this suggest?",
+      "stem": "During CPR, ETCO2 abruptly increases from 10 to 35 mmHg without a ventilation change and a pulse becomes detectable. What does the change suggest?",
       "options": [
-        "Return of spontaneous circulation or improved perfusion",
+        "Return of spontaneous circulation with increased pulmonary perfusion",
         "Esophageal intubation",
         "Circuit leak",
-        "Rebreathing from an exhausted absorbent during compressions"
+        "CO2 absorbent exhaustion"
       ],
       "answer": [
         0
@@ -11764,12 +11764,12 @@
       "id": "MON-481",
       "set": 1,
       "type": "single",
-      "stem": "A nasopharyngeal probe is used for temperature monitoring. How should this site be classified?",
+      "stem": "A nasopharyngeal temperature probe is appropriately positioned during GA. How should this site be classified?",
       "options": [
-        "Yes",
-        "No",
-        "In children",
-        "During cardiac surgery"
+        "A core-temperature monitoring site",
+        "A skin-temperature site",
+        "A peripheral temperature site only",
+        "A site usable only during cardiopulmonary bypass"
       ],
       "answer": [
         0
@@ -11788,12 +11788,12 @@
       "id": "MON-482",
       "set": 1,
       "type": "single",
-      "stem": "PIP rises suddenly immediately after prone positioning. What should be checked first?",
+      "stem": "Immediately after prone positioning, PIP rises abruptly while plateau pressure remains near baseline. What should be checked first?",
       "options": [
-        "Check tube position and airway obstruction",
-        "Increase FiO2",
-        "Increase anesthetic depth",
-        "Increase anesthetic depth since prone raises PIP"
+        "ETT/circuit kinking, migration, secretions, or other causes of increased airway resistance",
+        "Increase FiO2 without assessing the airway",
+        "Increase anesthetic depth as the only intervention",
+        "Assume pneumoperitoneum-related compliance loss"
       ],
       "answer": [
         0
@@ -11812,12 +11812,12 @@
       "id": "MON-483",
       "set": 1,
       "type": "single",
-      "stem": "A spontaneously breathing patient with an LMA has ETCO2 55 mmHg. What is the best response?",
+      "stem": "A spontaneously breathing patient with an LMA has ETCO2 55 mmHg, respiratory rate 6/min, and adequate SpO2 on supplemental oxygen. Which response best addresses the primary problem?",
       "options": [
-        "Assist ventilation or reduce anesthetic depth",
-        "Increase anesthetic depth to slow the respiratory rate",
-        "Switch to sedation-level monitoring",
-        "Continue, since an LMA is in place"
+        "Support ventilation and correct excessive anesthetic/opioid depression as appropriate",
+        "Increase anesthetic depth",
+        "Treat the normal SpO2 as evidence that no intervention is needed",
+        "Remove capnography because an LMA is present"
       ],
       "answer": [
         0
@@ -11836,12 +11836,12 @@
       "id": "MON-484",
       "set": 1,
       "type": "single",
-      "stem": "Three stable ETCO2 waveforms are present after intubation. What does this confirm?",
+      "stem": "After intubation, three sustained exhaled CO2 waveforms are present. What does this finding establish, and what does it not establish?",
       "options": [
-        "Tracheal (non-esophageal) placement",
-        "Correct depth in the trachea",
-        "Correct cuff pressure",
-        "Correct lung isolation for one-lung ventilation"
+        "It strongly supports tracheal ventilation but does not confirm optimal ETT depth",
+        "It confirms both tracheal placement and ideal depth",
+        "It confirms correct cuff pressure",
+        "It confirms correct lung isolation"
       ],
       "answer": [
         0
@@ -11860,12 +11860,12 @@
       "id": "MON-485",
       "set": 1,
       "type": "single",
-      "stem": "Several alarms sound at once. What is the best initial approach?",
+      "stem": "Several alarms activate simultaneously after an abrupt patient change. Which initial strategy is safest?",
       "options": [
-        "Evaluate the patient and identify each cause",
-        "Silence the alarms to hear the most critical one",
-        "Ask the surgeon to interpret the alarms",
-        "Address the alarm that sounded first"
+        "Assess the patient first while rapidly determining whether the alarms share a common oxygenation, ventilation, circulatory, or equipment cause",
+        "Silence all alarms before looking at the patient",
+        "Address only the first alarm chronologically",
+        "Assume equipment failure"
       ],
       "answer": [
         0
@@ -11884,12 +11884,12 @@
       "id": "MON-486",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 rises transiently immediately after aortic unclamping. What is the best interpretation?",
+      "stem": "Immediately after aortic unclamping, ETCO2 transiently rises despite unchanged ventilation. Which mechanism best explains this?",
       "options": [
-        "Transient CO2 release from reperfused tissue",
-        "Early malignant hyperthermia triggered by reperfusion",
+        "Washout of accumulated CO2 from reperfused tissues",
+        "Malignant hyperthermia triggered by unclamping",
         "Esophageal intubation",
-        "Rebreathing"
+        "CO2 absorbent exhaustion"
       ],
       "answer": [
         0
@@ -11908,12 +11908,12 @@
       "id": "MON-487",
       "set": 1,
       "type": "single",
-      "stem": "Suction was not checked before induction. Which MS MAID component was missed?",
+      "stem": "Before induction, the Yankauer is present but suction has not been connected or tested. Which preparation failure is most important?",
       "options": [
-        "Suction",
-        "Machine",
-        "Monitors",
-        "Airway"
+        "Functional suction was not verified before anesthetic induction",
+        "The workstation was not checked",
+        "The pulse oximeter was not calibrated",
+        "The IV warmer was omitted"
       ],
       "answer": [
         0
@@ -11932,12 +11932,12 @@
       "id": "MON-488",
       "set": 1,
       "type": "single",
-      "stem": "An LMA was not brought into the room before induction. Which MS MAID component was missed?",
+      "stem": "Before induction, standard intubation equipment is present but no supraglottic rescue airway is immediately available. Which preparation domain is incomplete?",
       "options": [
-        "Airway",
-        "Machine",
-        "Drugs",
-        "IV"
+        "Airway rescue equipment",
+        "Suction",
+        "IV setup",
+        "Temperature monitoring"
       ],
       "answer": [
         0
@@ -11956,12 +11956,12 @@
       "id": "MON-489",
       "set": 1,
       "type": "single",
-      "stem": "Emergency medications were not prepared before induction. Which MS MAID component was missed?",
+      "stem": "Before induction of a hemodynamically fragile patient, routine induction drugs are prepared but no rescue vasopressor is immediately available. Which setup domain is incomplete?",
       "options": [
-        "Drugs",
-        "Airway",
-        "Monitors",
-        "Suction"
+        "Medication/emergency-drug preparation",
+        "Airway equipment",
+        "Suction",
+        "Temperature monitoring"
       ],
       "answer": [
         0
@@ -11980,12 +11980,12 @@
       "id": "MON-490",
       "set": 1,
       "type": "single",
-      "stem": "A fluid warmer was omitted for a case with expected major blood loss. Which MS MAID component was missed?",
+      "stem": "Major blood loss is expected, but no rapid infusion or fluid-warming capability has been prepared. Which setup domain is incomplete?",
       "options": [
-        "IV",
-        "Airway",
-        "Monitors",
-        "Suction"
+        "IV/fluid-delivery preparation",
+        "Airway preparation",
+        "Suction preparation",
+        "ECG setup"
       ],
       "answer": [
         0
@@ -12004,12 +12004,12 @@
       "id": "MON-491",
       "set": 1,
       "type": "single",
-      "stem": "Temperature monitoring is indicated but was not connected. Which MS MAID component was missed?",
+      "stem": "A long case with expected temperature change begins without a temperature probe or warming plan. Which preparation domain was inadequately addressed?",
       "options": [
-        "Monitors",
-        "Machine",
-        "Airway",
-        "Drugs"
+        "Monitoring/thermal management preparation",
+        "Airway rescue",
+        "Suction",
+        "Vaporizer filling"
       ],
       "answer": [
         0
@@ -12028,12 +12028,12 @@
       "id": "MON-492",
       "set": 1,
       "type": "single",
-      "stem": "A full backup oxygen cylinder is confirmed before the case. Which MS MAID category does this satisfy?",
+      "stem": "A full backup oxygen cylinder is confirmed before the anesthetic. Which workstation-safety function does this provide?",
       "options": [
-        "Machine",
-        "Suction",
-        "Airway",
-        "Drugs"
+        "An alternate oxygen source if the primary supply fails",
+        "A substitute for inspired-O2 analysis",
+        "A substitute for circuit-disconnect monitoring",
+        "A means of measuring ETCO2"
       ],
       "answer": [
         0
@@ -12052,12 +12052,12 @@
       "id": "MON-493",
       "set": 1,
       "type": "single",
-      "stem": "During laparoscopy, ETCO2 falls abruptly with hypotension and a mill-wheel murmur. What is the most likely cause?",
+      "stem": "During CO2 insufflation, ETCO2 suddenly falls, severe hypotension develops, and a mill-wheel murmur is heard. Which diagnosis best unifies the findings?",
       "options": [
-        "CO2 or air gas embolism",
-        "Right mainstem intubation after insufflation",
-        "Circuit disconnection at the Y-piece",
-        "Exhausted absorbent with rebreathing"
+        "Venous gas embolism",
+        "Right-mainstem intubation",
+        "Simple circuit disconnection",
+        "CO2 rebreathing"
       ],
       "answer": [
         0
@@ -12076,12 +12076,12 @@
       "id": "MON-494",
       "set": 1,
       "type": "single",
-      "stem": "The arterial line shows a narrow spiky SBP of 168, NIBP is 138/74, and both MAPs are 94. Which value should guide treatment while the waveform is corrected?",
+      "stem": "The arterial line shows a sharp systolic peak of 168 mmHg while NIBP is 138/74; both methods report MAP near 94 mmHg and the invasive system appears underdamped. Which pressure should be weighted most while the system is corrected?",
       "options": [
-        "MAP, since it is least affected by damping error",
-        "Arterial SBP, since invasive values are correct",
-        "NIBP SBP, since cuffs are more reliable than lines",
-        "Diastolic pressure, since it avoids wave reflection"
+        "MAP, because it is generally less distorted by damping than systolic pressure",
+        "The invasive systolic value because invasive measurements are always superior",
+        "The NIBP systolic value because cuffs cannot be affected by technical error",
+        "Pulse pressure alone"
       ],
       "answer": [
         0
@@ -12100,12 +12100,12 @@
       "id": "MON-495",
       "set": 1,
       "type": "single",
-      "stem": "A curare cleft appears, TOF is 4/4 with ratio 0.5, and the surgeon needs 30 more minutes of relaxation. What is the best plan?",
+      "stem": "A curare cleft appears, quantitative TOF is 4/4 with ratio 0.5, and surgery still requires immobility for another 30 minutes. What is the most appropriate plan?",
       "options": [
-        "Redose a small amount of NMB and keep monitoring",
-        "Deepen volatile to 2 MAC instead of NMB",
-        "Give sugammadex so the patient breathes better",
-        "Continue, since ETCO2 is normal"
+        "Titrate additional neuromuscular blocker to surgical need and continue quantitative monitoring",
+        "Reverse the block immediately",
+        "Use extreme volatile depth instead of neuromuscular blockade",
+        "Ignore the spontaneous effort because ETCO2 is normal"
       ],
       "answer": [
         0
@@ -12124,12 +12124,12 @@
       "id": "MON-496",
       "set": 1,
       "type": "single",
-      "stem": "During checkout, the oxygen analyzer reads 100% while exposed to room air. What is the most likely problem?",
+      "stem": "During checkout, the oxygen analyzer reads 100% while exposed to room air. What should occur before clinical use?",
       "options": [
-        "Calibration error requiring recalibration",
-        "Normal reading for a galvanic cell",
-        "Oxygen leaking into the room",
-        "A paramagnetic analyzer placed in the wrong limb"
+        "Recalibrate/verify the analyzer and replace the sensor if it cannot correctly read room air",
+        "Accept the value as normal for a galvanic cell",
+        "Disable the low-O2 alarm",
+        "Proceed if the pipeline pressure is normal"
       ],
       "answer": [
         0
@@ -12148,12 +12148,12 @@
       "id": "MON-497",
       "set": 1,
       "type": "single",
-      "stem": "During rapid rewarming after bypass, bladder temperature is 36.9 °C and rectal temperature is 35.6 °C. Which better reflects current core temperature?",
+      "stem": "During rapid rewarming after bypass, bladder temperature is 36.9 °C and rectal temperature is 35.6 °C. Which interpretation is most appropriate?",
       "options": [
-        "The bladder temperature, since rectal lags during rewarming",
-        "The rectal temperature, since it is the gold standard",
-        "Neither, since skin reflects mean temperature",
-        "The average, since both are core sites"
+        "Rectal temperature can lag during rapid thermal change, so the higher central-site trend may better reflect current rewarming",
+        "Rectal temperature is always the instantaneous gold standard",
+        "Both values should be averaged equally",
+        "The discrepancy proves both probes are malfunctioning"
       ],
       "answer": [
         0
@@ -12172,12 +12172,12 @@
       "id": "MON-498",
       "set": 1,
       "type": "single",
-      "stem": "During sedation, oxygen raises SpO2 from 94% to 99%, but ETCO2 remains 52 with a slow respiratory rate. What problem persists?",
+      "stem": "During deep sedation, supplemental oxygen raises SpO2 from 94% to 99%, but ETCO2 remains 52 mmHg and respiratory rate is 7/min. Which problem persists?",
       "options": [
-        "Hypoventilation is still present despite better SpO2",
-        "The problem has resolved with oxygen",
-        "The capnograph is now inaccurate on oxygen",
-        "The patient now has increased dead space from oxygen"
+        "Alveolar hypoventilation despite improved oxygen saturation",
+        "The respiratory problem has resolved",
+        "Oxygen has made capnography inaccurate",
+        "The patient now has increased dead space solely because oxygen was administered"
       ],
       "answer": [
         0
@@ -12196,12 +12196,12 @@
       "id": "MON-499",
       "set": 1,
       "type": "single",
-      "stem": "A 5-lead ECG is displaying only lead II during vascular surgery. What change would improve ischemia detection?",
+      "stem": "A 5-lead ECG is available during major vascular surgery, but only lead II is displayed. Which change would improve ischemia surveillance while preserving rhythm monitoring?",
       "options": [
-        "Display V3 as well for ischemia detection",
-        "Keep lead II to reduce artifact",
-        "Switch to aVR for better sensitivity",
-        "Remove chest leads to avoid the field"
+        "Add an ischemia-sensitive precordial lead such as V3 while continuing an appropriate rhythm lead",
+        "Use lead II alone",
+        "Switch to aVR only",
+        "Remove chest electrodes to reduce artifact"
       ],
       "answer": [
         0
@@ -12220,12 +12220,12 @@
       "id": "MON-500",
       "set": 1,
       "type": "single",
-      "stem": "During laparoscopy, ETCO2 rises slowly from 38 to 48 over 30 minutes while airway pressures, HR, and temperature remain stable. What is the most likely explanation?",
+      "stem": "During laparoscopy, ETCO2 gradually rises from 38 to 48 mmHg over 30 minutes while airway pressures, heart rate, and temperature remain stable. Which mechanism is most likely?",
       "options": [
-        "CO2 absorption from pneumoperitoneum",
+        "Systemic absorption of insufflated CO2",
         "Malignant hyperthermia",
-        "Exhausted CO2 absorbent with rebreathing through the circle",
-        "Pulmonary embolism"
+        "Pulmonary embolism",
+        "A complete breathing-circuit disconnection"
       ],
       "answer": [
         0
