@@ -8570,7 +8570,7 @@
       "id": "PRE-351",
       "set": 1,
       "type": "single",
-      "stem": "Using the lecture formula, what is the approximate ideal body weight for a 6-foot man?",
+      "stem": "A 6-foot man with severe obesity is being evaluated for a plan that requires ideal rather than total body weight. Using the lecture formula, which approximate IBW is correct?",
       "options": [
         "77.6 kg",
         "73 kg",
@@ -8647,12 +8647,12 @@
       "id": "PRE-354",
       "set": 1,
       "type": "single",
-      "stem": "Obesity does not guarantee obstructive sleep apnea. What should the anesthesia provider do instead of assuming either way?",
+      "stem": "A patient with BMI 46 denies having obstructive sleep apnea but reports loud snoring and daytime sleepiness. Which approach avoids both under- and over-assuming risk?",
       "options": [
-        "Screen for OSA",
-        "Treat every obese patient with CPAP",
-        "Assume all obese patients have OSA",
-        "Assume obesity and OSA are unrelated"
+        "Perform formal OSA screening rather than inferring the diagnosis from BMI alone",
+        "Assume OSA is present solely because of obesity",
+        "Exclude OSA because the patient has never been diagnosed",
+        "Start CPAP solely from the BMI without further assessment"
       ],
       "answer": [
         0
@@ -8772,7 +8772,7 @@
       "id": "PRE-359",
       "set": 1,
       "type": "single",
-      "stem": "A male smoker has no PONV history but will receive postoperative opioids. What is the Apfel score?",
+      "stem": "A male smoker has no history of PONV or motion sickness but will require postoperative opioids. Which Apfel score applies?",
       "options": [
         "1",
         "0",
@@ -8844,7 +8844,7 @@
       "id": "PRE-362",
       "set": 1,
       "type": "single",
-      "stem": "An Apfel score of 3 corresponds to what approximate PONV risk?",
+      "stem": "A patient's Apfel assessment identifies three independent risk factors. What approximate PONV probability should inform the prophylaxis plan?",
       "options": [
         "60%",
         "40%",
@@ -8892,7 +8892,7 @@
       "id": "PRE-364",
       "set": 1,
       "type": "single",
-      "stem": "Which obesity class most strongly raises concern for OSA and difficult airway compared with lower BMI categories?",
+      "stem": "A patient with progressively increasing obesity is being screened for perioperative respiratory and airway risk. Which listed category carries the greatest concern among these choices?",
       "options": [
         "Obesity class II",
         "Normal weight",
@@ -8916,7 +8916,7 @@
       "id": "PRE-365",
       "set": 1,
       "type": "single",
-      "stem": "A BMI of 43 kg/m² falls into which category?",
+      "stem": "A patient with BMI 43 kg/m² presents for ambulatory surgery. Which classification best communicates the severity of obesity during risk assessment?",
       "options": [
         "Obesity class III",
         "Obesity class II",
@@ -9060,7 +9060,7 @@
       "id": "PRE-371",
       "set": 1,
       "type": "single",
-      "stem": "Using the lecture formula, what is the approximate ideal body weight for a 5-foot-7-inch woman?",
+      "stem": "A 5-foot-7-inch woman with obesity needs a calculation based on ideal body weight. Using the lecture formula, which approximate value is correct?",
       "options": [
         "61.6 kg",
         "59.3 kg",
@@ -9252,7 +9252,7 @@
       "id": "PRE-379",
       "set": 1,
       "type": "single",
-      "stem": "A patient with Cushing syndrome has BP 178/102, edema, and potassium 2.9 mEq/L. Which abnormality requires the most immediate correction before elective anesthesia?",
+      "stem": "A patient with Cushing syndrome has BP 178/102, edema, and potassium 2.9 mEq/L before elective anesthesia. Which abnormality creates the most immediate arrhythmic and neuromuscular concern requiring correction?",
       "options": [
         "Hypokalemia",
         "Peripheral edema",
@@ -9372,12 +9372,12 @@
       "id": "PRE-384",
       "set": 1,
       "type": "single",
-      "stem": "A patient drank a latte containing milk 3 hours before anesthesia. Why is this different from black coffee?",
+      "stem": "A patient drank a latte containing milk 3 hours before elective anesthesia, while another drank plain black coffee at the same time. Why can their fasting status differ?",
       "options": [
-        "Milk is not a clear liquid and requires a longer fasting interval",
-        "All coffee is a clear liquid",
-        "Two hours is adequate for any coffee beverage",
-        "Any coffee requires 8 hours"
+        "Milk makes the latte a non-clear liquid requiring a longer interval",
+        "All coffee beverages qualify as clear liquids",
+        "Both are acceptable after 2 hours regardless of additives",
+        "Black coffee requires a longer interval than milk-containing coffee"
       ],
       "answer": [
         0
@@ -9684,7 +9684,7 @@
       "id": "PRE-397",
       "set": 1,
       "type": "single",
-      "stem": "A 45-year-old woman is a nonsmoker with prior PONV and no planned postoperative opioids. What is her Apfel score?",
+      "stem": "A 45-year-old woman is a nonsmoker with prior PONV, and the plan avoids postoperative opioids. Which Apfel score should guide prophylaxis?",
       "options": [
         "3",
         "2",
