@@ -23,7 +23,7 @@ async function render(){
  const primary=document.createElement('div');primary.className='mbu-global-nav__primary';
  for(const id of [courseId,'studio']){const x=byId.get(id);if(x)primary.append(link(x,'mbu-global-nav__primary-link'))}
  const adaptive=document.createElement('a');adaptive.href=new URL('studio.html?mode=adaptive',exam).href;adaptive.textContent='Adaptive';adaptive.className='mbu-global-nav__primary-link mbu-global-nav__adaptive';adaptive.setAttribute('aria-label','Try Adaptive Testing beta');primary.append(adaptive);
- primary.append(makeBankPicker(byId));
+ if(courseId!=='basic-principles')primary.append(makeBankPicker(byId));
  n.append(brand,primary);document.body.prepend(n);window.MBUAppCore?.mountNav?.(n)
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',render,{once:true});else render()})();
