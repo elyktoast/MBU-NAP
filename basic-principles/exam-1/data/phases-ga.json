@@ -1241,12 +1241,12 @@
       "id": "PHA-051",
       "set": 1,
       "type": "single",
-      "stem": "After denitrogenation with 100% oxygen, why can dependent alveoli collapse more readily?",
+      "stem": "After maximal 100% O2 preoxygenation, dependent alveoli collapse more readily once ventilation begins. Which mechanism best explains this tradeoff?",
       "options": [
-        "Alveolar collapse as oxygen is absorbed",
-        "Nitrogen accumulation in alveoli after preoxygenation",
-        "Excess CO2 retention in alveoli",
-        "Surfactant overproduction"
+        "Rapid absorption of alveolar oxygen after nitrogen washout promotes absorption atelectasis",
+        "Nitrogen accumulates after denitrogenation and collapses alveoli",
+        "CO2 retention directly removes surfactant",
+        "High FiO2 increases alveolar nitrogen tension"
       ],
       "answer": [
         0
@@ -1292,12 +1292,12 @@
       "id": "PHA-053",
       "set": 1,
       "type": "single",
-      "stem": "Apneic oxygenation maintains SpO2 during a prolonged difficult airway, but PaCO2 becomes 88 mmHg. What best explains this?",
+      "stem": "During prolonged apneic oxygenation, SpO2 remains acceptable but PaCO2 rises from 40 to 88 mmHg. Which principle explains the divergence?",
       "options": [
-        "CO2 rose about 3–6 mmHg per minute without ventilation",
-        "Apneic oxygenation causes metabolic acidosis",
-        "The SpO2 reading was falsely high",
-        "The patient was hyperventilating"
+        "Oxygenation can continue by mass flow while CO2 accumulates without ventilation",
+        "Apneic oxygenation provides adequate CO2 elimination but causes metabolic acidosis",
+        "Normal SpO2 means the PaCO2 result is spurious",
+        "The patient must be hyperventilating"
       ],
       "answer": [
         0
@@ -1316,12 +1316,12 @@
       "id": "PHA-054",
       "set": 1,
       "type": "single",
-      "stem": "SpO2 remains normal during apneic oxygenation, but the first ETCO2 after intubation is 68 mmHg. Why?",
+      "stem": "After a prolonged apneic intubation attempt, SpO2 remains 98% but the first ETCO2 after ventilation resumes is 68 mmHg. Which statement best explains both findings?",
       "options": [
-        "Oxygen diffused; CO2 accumulated",
-        "Ventilation by the apneic patient maintained oxygenation",
-        "Oxygenation requires ventilation to continue",
-        "CO2 falls during apnea"
+        "Apneic oxygenation can preserve oxygenation while ventilation-dependent CO2 elimination stops",
+        "Apneic oxygenation provides full alveolar ventilation",
+        "Normal SpO2 excludes significant hypercapnia",
+        "CO2 production falls to near zero during apnea"
       ],
       "answer": [
         0
@@ -1340,12 +1340,12 @@
       "id": "PHA-055",
       "set": 1,
       "type": "single",
-      "stem": "CPAP during preoxygenation causes abdominal distention. What new risk does this create?",
+      "stem": "CPAP improves EtO2 in an obese full-stomach patient but causes progressive gastric distention. Which competing risk has increased?",
       "options": [
-        "Gastric insufflation with regurgitation and aspiration risk",
-        "Hypocarbia with seizures from hyperventilation by CPAP",
-        "Hypotension from absent venous return",
-        "Bradycardia from a vagal response"
+        "Regurgitation and aspiration from gastric insufflation",
+        "Severe hypocarbia from excessive ventilation",
+        "Loss of all venous return",
+        "Reflex bradycardia from alveolar recruitment"
       ],
       "answer": [
         0
@@ -1388,12 +1388,12 @@
       "id": "PHA-057",
       "set": 1,
       "type": "single",
-      "stem": "An RSI must begin after only 1 minute of preoxygenation. Which technique gives the best rapid denitrogenation?",
+      "stem": "An urgent RSI allows only about 60 seconds for preoxygenation in a cooperative adult. Which alternative most rapidly approaches effective denitrogenation?",
       "options": [
-        "8 vital capacity breaths in 60 seconds",
-        "3 tidal breaths of room air",
-        "1 deep breath of 100% O2",
-        "Nasal cannula at 4 L/min for 1 minute"
+        "Eight vital-capacity breaths with a tight mask and 100% O2",
+        "Three tidal breaths of room air",
+        "One vital-capacity breath of oxygen",
+        "Standard nasal cannula at 4 L/min"
       ],
       "answer": [
         0
@@ -1460,12 +1460,12 @@
       "id": "PHA-060",
       "set": 1,
       "type": "single",
-      "stem": "Why is standard nasal cannula at 5 L/min inadequate as the sole preoxygenation method for RSI?",
+      "stem": "A full-stomach patient receives only standard nasal cannula oxygen at 5 L/min before RSI. Why is this inadequate as the sole preoxygenation method?",
       "options": [
-        "Flow and FiO2 are too low to fully denitrogenate",
-        "Nasal cannula causes gastric insufflation at any flow",
-        "Nasal cannula is contraindicated in RSI",
-        "Nasal cannula raises CO2"
+        "Delivered flow and FiO2 are insufficient for reliable maximal denitrogenation",
+        "Any nasal oxygen causes gastric insufflation",
+        "Nasal oxygen is contraindicated whenever RSI is planned",
+        "Low-flow nasal oxygen causes clinically important CO2 retention before induction"
       ],
       "answer": [
         0
@@ -1508,12 +1508,12 @@
       "id": "PHA-062",
       "set": 1,
       "type": "single",
-      "stem": "Why does an 85-year-old generally have a shorter safe-apnea time than a healthy 40-year-old after identical preoxygenation?",
+      "stem": "An 85-year-old and a healthy 40-year-old reach similar EtO2 before induction. Why may the older patient still desaturate sooner during apnea?",
       "options": [
-        "Decreased FRC",
-        "Increased FRC with age",
-        "Lower oxygen consumption with age",
-        "Larger airways with age"
+        "Reduced FRC and increased closing tendency decrease usable oxygen reserve",
+        "Aging increases FRC and therefore shortens apnea tolerance",
+        "Lower resting oxygen consumption accelerates reservoir depletion",
+        "Larger airways reduce oxygen storage"
       ],
       "answer": [
         0
@@ -1614,12 +1614,12 @@
       "id": "PHA-066",
       "set": 1,
       "type": "single",
-      "stem": "Approximately how long does a standard IV induction usually take from drug administration to airway readiness?",
+      "stem": "Routine IV induction is progressing uneventfully. Compared with RSI, why is there usually more time to assess mask ventilation and drug effect before securing the airway?",
       "options": [
-        "About 3 minutes",
-        "Under 1 minute",
-        "About 10 minutes",
-        "About 30 seconds"
+        "Routine induction commonly unfolds over several minutes rather than targeting a subminute airway sequence",
+        "Routine induction uses drugs with instantaneous peak effect",
+        "Routine induction assumes a full stomach",
+        "RSI deliberately delays neuromuscular blocker administration"
       ],
       "answer": [
         0
@@ -1638,12 +1638,12 @@
       "id": "PHA-067",
       "set": 1,
       "type": "single",
-      "stem": "What is the target induction-to-secured-airway time during RSI?",
+      "stem": "A full-stomach patient loses protective reflexes after induction. Which timing goal minimizes the interval before a cuffed airway is secured during RSI?",
       "options": [
-        "Under 60 seconds",
-        "About 3 minutes",
-        "About 5 minutes",
-        "Under 10 seconds"
+        "Secure the airway in under about 60 seconds",
+        "Secure the airway within about 3 minutes",
+        "Allow 5 minutes for complete drug equilibration",
+        "Secure the airway within 10 seconds regardless of conditions"
       ],
       "answer": [
         0
@@ -1689,12 +1689,12 @@
       "id": "PHA-069",
       "set": 1,
       "type": "single",
-      "stem": "Why can routine induction include confirmation of mask ventilation before neuromuscular blockade while classic RSI does not?",
+      "stem": "During routine induction, mask ventilation is confirmed before neuromuscular blockade. Why is this step commonly feasible compared with classic RSI?",
       "options": [
-        "The slower sequence leaves time to assess ventilation",
-        "Aspiration risk is negligible in elective cases",
-        "Rocuronium has a slower onset than succinylcholine",
-        "Mask ventilation is not needed in RSI"
+        "The slower sequence permits assessment of ventilation before paralysis",
+        "Aspiration risk is absent in every elective patient",
+        "Rocuronium cannot be used until mask ventilation is proven",
+        "Classic RSI does not require oxygenation"
       ],
       "answer": [
         0
@@ -1713,12 +1713,12 @@
       "id": "PHA-070",
       "set": 1,
       "type": "single",
-      "stem": "Which airway device is avoided as the primary definitive airway in a full-stomach RSI?",
+      "stem": "A full-stomach patient undergoes RSI. Which device should not be planned as the primary definitive airway because it does not provide the same aspiration protection?",
       "options": [
         "A laryngeal mask airway",
         "A cuffed endotracheal tube",
-        "An oral airway for brief mask support",
-        "A videolaryngoscope"
+        "A videolaryngoscope",
+        "An oral airway used transiently during rescue ventilation"
       ],
       "answer": [
         0
@@ -1765,12 +1765,12 @@
       "id": "PHA-072",
       "set": 1,
       "type": "single",
-      "stem": "Why should atropine be immediately available during pediatric RSI using succinylcholine?",
+      "stem": "A child receives succinylcholine during RSI and develops marked bradycardia. Which preplanned rescue drug directly addresses this known concern?",
       "options": [
-        "Succinylcholine can cause bradycardia",
-        "Atropine speeds intubation",
-        "Atropine prevents aspiration",
-        "Atropine blocks laryngospasm triggered by secretions"
+        "Atropine",
+        "Sodium citrate",
+        "Esmolol",
+        "Ondansetron"
       ],
       "answer": [
         0
@@ -1789,12 +1789,12 @@
       "id": "PHA-073",
       "set": 1,
       "type": "single",
-      "stem": "While the patient is still awake, approximately how much cricoid force is appropriate?",
+      "stem": "Cricoid pressure is started before induction. Which force best balances intended compression with awake tolerance?",
       "options": [
-        "About 10 N, roughly 1 kg of pressure",
-        "About 30 N, roughly 3 kg of pressure",
-        "About 50 N, roughly 5 kg of pressure",
-        "About 100 N, roughly 10 kg of pressure"
+        "About 10 N",
+        "About 30 N",
+        "About 50 N",
+        "About 100 N"
       ],
       "answer": [
         0
@@ -1813,12 +1813,12 @@
       "id": "PHA-074",
       "set": 1,
       "type": "single",
-      "stem": "After loss of consciousness, approximately how much cricoid force is recommended?",
+      "stem": "After loss of consciousness during RSI, cricoid pressure is continued. To what approximate force is it traditionally increased?",
       "options": [
         "About 30 N",
         "About 10 N",
         "About 50 N",
-        "About 20 N"
+        "About 100 N"
       ],
       "answer": [
         0
@@ -1837,12 +1837,12 @@
       "id": "PHA-075",
       "set": 1,
       "type": "single",
-      "stem": "What is the correct direction of force when applying cricoid pressure?",
+      "stem": "During RSI, an assistant presses the thyroid cartilage laterally and worsens the laryngoscopic view. Which correction describes proper cricoid-pressure mechanics?",
       "options": [
-        "Press the cricoid backward against the vertebrae",
-        "Push the thyroid cartilage to the right",
-        "Press the cricoid upward toward the chin",
-        "Squeeze the trachea from both sides"
+        "Apply posterior force to the cricoid ring toward the cervical vertebrae",
+        "Displace the thyroid cartilage to the right",
+        "Lift the cricoid toward the chin",
+        "Compress the trachea from both sides"
       ],
       "answer": [
         0
@@ -1888,12 +1888,12 @@
       "id": "PHA-077",
       "set": 1,
       "type": "single",
-      "stem": "Mask ventilation becomes impossible immediately after cricoid pressure is applied. What mechanism should be considered?",
+      "stem": "Immediately after cricoid pressure is applied, mask ventilation becomes impossible and the laryngoscopic view worsens. What is the most appropriate interpretation?",
       "options": [
-        "Cricoid pressure can occlude the airway",
-        "Cricoid pressure reliably prevents aspiration in this setting",
-        "Cricoid pressure improves glottic views",
-        "Cricoid pressure prevents bradycardia"
+        "Cricoid pressure itself can obstruct the airway or impair the view and may need to be eased",
+        "The deterioration confirms aspiration",
+        "More force should be applied because cricoid pressure always improves ventilation",
+        "The findings indicate inadequate neuromuscular blockade only"
       ],
       "answer": [
         0
@@ -1936,12 +1936,12 @@
       "id": "PHA-079",
       "set": 1,
       "type": "single",
-      "stem": "A full-stomach patient also has limited mouth opening. Which preparation step is essential before induction?",
+      "stem": "A full-stomach patient also has severely limited mouth opening. Which preparation becomes especially important before administering an RSI induction dose?",
       "options": [
-        "Backup emergency airway equipment in the room",
-        "A postoperative ICU bed",
-        "Neuromuscular reversal drawn up in advance",
-        "A TIVA pump ready for maintenance"
+        "Have a clearly executable backup/emergency airway plan and equipment immediately available",
+        "Draw up postoperative reversal medication",
+        "Prepare a TIVA pump before assessing the airway",
+        "Reserve an ICU bed before airway planning"
       ],
       "answer": [
         0
@@ -1960,12 +1960,12 @@
       "id": "PHA-080",
       "set": 1,
       "type": "single",
-      "stem": "A patient with small-bowel obstruction requires emergency laparotomy. Which induction strategy is most appropriate?",
+      "stem": "A patient with small-bowel obstruction requires emergency laparotomy and has no contraindication to standard RSI drugs. Which induction strategy best limits aspiration exposure?",
       "options": [
-        "RSI",
-        "Normal induction with mask ventilation",
-        "Inhalation induction",
-        "Awake sedation with local infiltration"
+        "Rapid-sequence induction with a cuffed ETT",
+        "Routine induction with prolonged mask ventilation",
+        "Inhalation induction with an unprotected airway",
+        "Deep sedation with local infiltration"
       ],
       "answer": [
         0
@@ -1984,12 +1984,12 @@
       "id": "PHA-081",
       "set": 1,
       "type": "single",
-      "stem": "A trauma patient needs RSI but also has predicted difficult laryngoscopy. What important planning principle does this illustrate?",
+      "stem": "A trauma patient has both a full stomach and predicted difficult laryngoscopy. Which planning error would be most dangerous?",
       "options": [
-        "RSI cases often come with predicted airway difficulty",
-        "RSI is reserved for airways predicted to be easy",
-        "RSI avoids the airway difficulty",
-        "RSI prevents airway difficulty"
+        "Treating aspiration risk as though it eliminates the need for a difficult-airway rescue strategy",
+        "Preparing video laryngoscopy and rescue devices before induction",
+        "Optimizing preoxygenation before airway manipulation",
+        "Considering how oxygenation will be maintained if first-pass intubation fails"
       ],
       "answer": [
         0
@@ -2008,12 +2008,12 @@
       "id": "PHA-082",
       "set": 1,
       "type": "single",
-      "stem": "In a patient with CAD, what is the main purpose of induction adjuvants such as opioid, lidocaine, or esmolol?",
+      "stem": "A patient with severe CAD becomes markedly hypertensive and tachycardic with prior laryngoscopy. Why might fentanyl, lidocaine, or esmolol be added to induction?",
       "options": [
-        "Blunting the response to laryngoscopy",
-        "Speeding drug onset",
-        "Preventing aspiration",
-        "Replacing the induction agent"
+        "To blunt the sympathetic response and myocardial oxygen-demand surge from laryngoscopy",
+        "To replace the hypnotic induction agent",
+        "To prevent aspiration by increasing LES tone",
+        "To accelerate neuromuscular-blocker onset"
       ],
       "answer": [
         0
@@ -2032,12 +2032,12 @@
       "id": "PHA-083",
       "set": 1,
       "type": "single",
-      "stem": "Why is sodium citrate given before RSI in some aspiration-risk patients?",
+      "stem": "A full-stomach patient receives sodium citrate shortly before RSI. What benefit is intended if aspiration occurs despite precautions?",
       "options": [
-        "Nonparticulate antacid that raises gastric pH",
-        "Prokinetic that speeds gastric emptying",
-        "H2 blocker that reduces acid production",
-        "Antiemetic that prevents vomiting"
+        "Raise gastric pH with a nonparticulate antacid to reduce acid injury",
+        "Accelerate gastric emptying through a prokinetic effect",
+        "Suppress new acid secretion through H2 blockade",
+        "Prevent vomiting through dopamine antagonism"
       ],
       "answer": [
         0
@@ -2056,7 +2056,7 @@
       "id": "PHA-084",
       "set": 1,
       "type": "single",
-      "stem": "For a cooperative adult with reliable IV access, which induction route is most commonly used?",
+      "stem": "A cooperative adult has reliable IV access and no reason to preserve spontaneous ventilation during induction. Which route is generally preferred?",
       "options": [
         "IV induction",
         "Inhalation induction",
@@ -2080,7 +2080,7 @@
       "id": "PHA-085",
       "set": 1,
       "type": "single",
-      "stem": "A 4-year-old without IV access needs anesthesia. Which induction route is most appropriate?",
+      "stem": "A frightened 4-year-old has no IV access and no aspiration-risk indication for RSI. Which induction route best fits the situation?",
       "options": [
         "Inhalation induction",
         "IV RSI",
@@ -2104,12 +2104,12 @@
       "id": "PHA-086",
       "set": 1,
       "type": "single",
-      "stem": "Why does classic RSI avoid routine mask ventilation before intubation?",
+      "stem": "Classic RSI minimizes routine positive-pressure mask ventilation between induction and intubation. What competing risk drives this choice?",
       "options": [
-        "No time, and it can insufflate the stomach",
-        "Succinylcholine prevents mask ventilation",
-        "Cricoid pressure makes mask ventilation ineffective",
-        "The ETT is already in place"
+        "Positive pressure may insufflate the stomach while the airway is unprotected",
+        "Succinylcholine makes mask ventilation mechanically impossible",
+        "Cricoid pressure guarantees adequate oxygenation",
+        "Mask ventilation delays neuromuscular-blocker onset"
       ],
       "answer": [
         0
@@ -2157,12 +2157,12 @@
       "id": "PHA-088",
       "set": 1,
       "type": "single",
-      "stem": "Laryngoscopy is attempted only 30 seconds after propofol and rocuronium, and the patient coughs and bucks. What principle was violated?",
+      "stem": "Thirty seconds after propofol and rocuronium, laryngoscopy triggers coughing, bucking, and hypertension. Which error most likely contributed?",
       "options": [
-        "Drugs need time to reach peak effect before laryngoscopy",
-        "The surgeon sets the timing of intubation",
-        "Intubation must occur within 10 seconds of induction",
-        "Timing determines the ETT size"
+        "Airway instrumentation occurred before adequate hypnotic/neuromuscular effect",
+        "The ETT was too small",
+        "The patient was over-preoxygenated",
+        "Cricoid pressure was released too late"
       ],
       "answer": [
         0
@@ -2181,12 +2181,12 @@
       "id": "PHA-089",
       "set": 1,
       "type": "single",
-      "stem": "According to this lecture, how many sustained capnogram breaths should confirm tracheal placement after intubation?",
+      "stem": "After intubation, one exhaled CO2 waveform is seen and then the tracing becomes uncertain. According to the lecture's confirmation approach, what is required before accepting tracheal placement?",
       "options": [
-        "Six",
-        "One",
-        "Three",
-        "Ten"
+        "Sustained capnography for six breaths together with clinical confirmation",
+        "Any single ETCO2 value above zero",
+        "Improved SpO2 alone",
+        "Fogging inside the ETT alone"
       ],
       "answer": [
         0
@@ -2291,12 +2291,12 @@
       "id": "PHA-093",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, breath sounds are heard only on the right and peak pressure rises. What is the most likely problem?",
+      "stem": "After intubation, sustained ETCO2 is present but breath sounds are absent on the left and peak pressure rises. Which problem is most likely?",
       "options": [
-        "Right mainstem intubation",
+        "Right-mainstem intubation",
         "Esophageal intubation",
-        "Bronchospasm",
-        "Pneumothorax on the right"
+        "Diffuse bronchospasm",
+        "Right pneumothorax"
       ],
       "answer": [
         0
@@ -2373,12 +2373,12 @@
       "id": "PHA-096",
       "set": 1,
       "type": "single",
-      "stem": "Which difficult-airway documentation detail is especially important for future anesthetics?",
+      "stem": "A patient had difficult intubation with several devices and operators. Which documentation detail most directly helps plan the next anesthetic?",
       "options": [
-        "Attempts by each provider with view grade",
-        "The final ETT size",
-        "The time of intubation",
-        "The name of the attending who intubated"
+        "Each attempt, operator/device, and laryngoscopic view grade",
+        "The final ETT size alone",
+        "The clock time of successful intubation",
+        "The attending's name alone"
       ],
       "answer": [
         0
@@ -2397,12 +2397,12 @@
       "id": "PHA-097",
       "set": 1,
       "type": "single",
-      "stem": "After multiple attempts by different providers, why should each attempt, operator, view, and device be documented?",
+      "stem": "Three providers attempted intubation using different devices before success. Why should each attempt, operator, view, and device be recorded rather than documenting only the final success?",
       "options": [
-        "It guides future providers",
-        "It is required for the quality database alone",
-        "It determines the surgical time",
-        "It predicts PONV"
+        "The sequence identifies what failed and what worked for future airway planning",
+        "It primarily determines operating-room billing",
+        "It predicts postoperative nausea",
+        "It determines surgical duration"
       ],
       "answer": [
         0
@@ -2448,12 +2448,12 @@
       "id": "PHA-099",
       "set": 1,
       "type": "single",
-      "stem": "Why must suction be powered on and immediately accessible throughout airway management?",
+      "stem": "Regurgitation occurs unexpectedly during induction. Which preinduction setup prevents a correctable delay in clearing the airway?",
       "options": [
-        "Secretions, blood, or vomit may need immediate clearing",
-        "It improves oxygen delivery during apnea",
-        "It prevents bradycardia from laryngoscopy and suction",
-        "It confirms ETT placement after intubation"
+        "Powered, connected suction immediately within reach",
+        "A second pulse-oximeter probe",
+        "A prefilled antiemetic syringe",
+        "A processed EEG monitor"
       ],
       "answer": [
         0
@@ -2472,12 +2472,12 @@
       "id": "PHA-100",
       "set": 1,
       "type": "single",
-      "stem": "How does an oral airway improve difficult mask ventilation caused by upper-airway obstruction?",
+      "stem": "Mask ventilation is difficult because the anesthetized patient's tongue is obstructing the pharynx despite an adequate mask seal. Which adjunct most directly addresses the obstruction?",
       "options": [
-        "It relieves tongue obstruction to improve mask ventilation",
-        "It confirms tracheal placement of the ETT after intubation",
-        "It prevents laryngospasm during induction",
-        "It replaces jaw thrust in most patients"
+        "An oral airway",
+        "A larger facemask",
+        "Higher volatile concentration",
+        "Cricoid pressure"
       ],
       "answer": [
         0
