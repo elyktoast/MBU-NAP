@@ -85,8 +85,8 @@ test.describe('multi-course foundation', () => {
 
     await page.goto('/basic-principles/exam-1/');
     await waitForPageReady(page);
-    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Basic Principles' })).toHaveAttribute('href', /\/basic-principles\/$/);
-    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Study Studio' })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html$/);
+    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Basic Principles', exact: true })).toHaveAttribute('href', /\/basic-principles\/$/);
+    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Basic Principles Exam 1 Study Studio', exact: true })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html$/);
   });
 
 
@@ -103,7 +103,7 @@ test.describe('multi-course foundation', () => {
     const state = await page.evaluate(() => ({
       count: ALL.length,
       uidCount: ALL_BY_UID.size,
-      unifiedHeading: document.querySelector('#sourcePickbox h4')?.textContent.trim(),
+      unifiedHeading: document.querySelector('#topicPickbox h4')?.textContent.trim(),
       sourceChoices: [...document.querySelectorAll('#sourceChecks input')].map(x => x.value),
       sourceText: document.querySelector('#sourceChecks')?.textContent.trim() || '',
       topics: document.querySelectorAll('#topicChecks input').length,
@@ -112,13 +112,13 @@ test.describe('multi-course foundation', () => {
     }));
     expect(state.count).toBe(3500);
     expect(state.uidCount).toBe(3500);
-    expect(state.unifiedHeading).toBe('Basic Principles Exam 1');
+    expect(state.unifiedHeading).toBe('Lecture Topics');
     expect(state.sourceChoices).toEqual([]);
     expect(state.sourceText).toBe('');
     expect(state.topics).toBe(7);
     expect(state.jpg).toBeTruthy();
     expect(state.svg).toBeTruthy();
-    await expect(page.locator('#mbu-bank-picker option')).toHaveCount(1);
+    await expect(page.locator('#mbu-bank-picker')).toHaveCount(0);
     await page.locator('#topicChecks input').first().check();
     await page.locator('#count').selectOption('10');
     await page.getByRole('button', { name: 'Start Quiz' }).click();
