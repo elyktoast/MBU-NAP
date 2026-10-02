@@ -8,12 +8,12 @@
       "id": "PHA-001",
       "set": 1,
       "type": "single",
-      "stem": "Which THREE elements define general anesthesia in the lecture's core formulation?",
+      "stem": "A patient receives hypnosis and neuromuscular blockade but no analgesic before incision. He remains unconscious and immobile while HR and BP surge. Which component of the broader anesthetic state is most clearly inadequate?",
       "options": [
-        "Amnesia, unconsciousness, immobility",
-        "Analgesia, amnesia, muscle relaxation",
-        "Unconsciousness, analgesia, apnea",
-        "Immobility, apnea, autonomic blockade"
+        "Analgesia/autonomic blunting",
+        "Amnesia",
+        "Unconsciousness",
+        "Immobility"
       ],
       "answer": [
         0
@@ -155,12 +155,12 @@
       "id": "PHA-007",
       "set": 1,
       "type": "single",
-      "stem": "Which finding can still occur during general anesthesia and therefore does NOT exclude GA?",
+      "stem": "During GA with a supraglottic airway, the patient resumes spontaneous breathing but remains unresponsive to painful stimulation. Which interpretation is correct?",
       "options": [
-        "Ventilate spontaneously",
-        "Respond purposefully to pain",
-        "Protect the airway fully",
-        "Maintain normal cardiovascular function"
+        "Spontaneous ventilation can occur during GA and does not by itself indicate emergence",
+        "Spontaneous ventilation excludes GA",
+        "GA requires complete apnea",
+        "Purposeful responsiveness is expected during GA"
       ],
       "answer": [
         0
@@ -203,12 +203,12 @@
       "id": "PHA-009",
       "set": 1,
       "type": "single",
-      "stem": "Which stage represents the surgical-anesthesia target once conditions are adequate for incision?",
+      "stem": "After induction, the patient has lost protective reflexes and has regular but depressed ventilation with adequate conditions for incision. Which Guedel stage best fits?",
       "options": [
         "Stage 3, surgical anesthesia",
         "Stage 1, analgesia",
         "Stage 2, excitement",
-        "Stage 4, overdose"
+        "Stage 4, medullary depression"
       ],
       "answer": [
         0
@@ -299,12 +299,12 @@
       "id": "PHA-013",
       "set": 1,
       "type": "single",
-      "stem": "How is stage 3 surgical anesthesia subdivided?",
+      "stem": "A patient deepens within stage 3 from light surgical anesthesia toward a plane approaching overdose. Which framework describes this progression?",
       "options": [
-        "Four planes",
-        "Into two planes",
-        "Into three planes",
-        "Into three planes of increasing depth"
+        "Four planes within stage 3",
+        "Two planes within stage 3",
+        "Three planes within stage 3",
+        "Stage 3 is not subdivided"
       ],
       "answer": [
         0
@@ -427,12 +427,12 @@
       "id": "PHA-018",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old with CAD is about to receive propofol. How frequently should NIBP cycle during induction?",
+      "stem": "A 70-year-old with CAD becomes hypotensive within 90 seconds of propofol induction. Which preinduction monitor setting would best limit delay in recognizing this change?",
       "options": [
-        "Every 2–3 minutes",
-        "Every 5 minutes",
-        "Every 10 minutes",
-        "Every 15 minutes"
+        "NIBP cycling about every 2–3 minutes",
+        "NIBP cycling every 5 minutes",
+        "NIBP cycling every 10 minutes",
+        "NIBP cycling every 15 minutes"
       ],
       "answer": [
         0
@@ -475,12 +475,12 @@
       "id": "PHA-020",
       "set": 1,
       "type": "single",
-      "stem": "Before routine induction in an older hypertensive patient, which TWO emergency drugs should be immediately available?",
+      "stem": "Immediately after induction, severe hypotension develops and laryngospasm follows airway manipulation. Which pair of drugs should have been immediately available to address these two early threats?",
       "options": [
         "A vasopressor and succinylcholine",
-        "Reversal agents and antiemetics",
-        "Antibiotics and steroids",
-        "Extra opioid and benzodiazepine doses"
+        "An antiemetic and opioid",
+        "A reversal agent and antibiotic",
+        "A benzodiazepine and steroid"
       ],
       "answer": [
         0
@@ -575,12 +575,12 @@
       "id": "PHA-024",
       "set": 1,
       "type": "single",
-      "stem": "When two patients share the same name, which identifiers should be confirmed from the ID band before induction?",
+      "stem": "Two patients on the schedule have identical names. Before induction, which information from the ID band most directly distinguishes the patient and flags a major exposure risk?",
       "options": [
         "Identity, date of birth, and allergies",
-        "Identity, procedure, and surgical site",
-        "Surgical consent and site marking",
-        "NPO time and last medication dose"
+        "Procedure, surgeon, and room number",
+        "Consent status, site mark, and NPO time",
+        "ASA class, weight, and airway grade"
       ],
       "answer": [
         0
@@ -623,12 +623,12 @@
       "id": "PHA-026",
       "set": 1,
       "type": "single",
-      "stem": "During transport of an intubated ICU patient, which finding best documents that ventilation was maintained?",
+      "stem": "An intubated ICU patient is manually ventilated during transport to the OR. Which documentation most directly supports that ventilation was actually maintained en route?",
       "options": [
-        "100% O2 via Ambu to ETT with adequate chest rise",
-        "Nasal cannula at 4 L/min during the transport",
-        "Spontaneous ventilation on room air",
-        "Ventilator left in the ICU"
+        "100% O2 via bag to ETT with observed adequate chest rise",
+        "The transport ventilator remained in the ICU",
+        "Nasal oxygen was applied during transport",
+        "The patient had been ventilated normally before leaving the ICU"
       ],
       "answer": [
         0
@@ -698,12 +698,12 @@
       "id": "PHA-029",
       "set": 1,
       "type": "single",
-      "stem": "The central oxygen supply fails during preoxygenation. Which backup should already have been confirmed?",
+      "stem": "Pipeline oxygen fails during preoxygenation. Which preinduction check determines whether oxygen delivery can continue immediately?",
       "options": [
-        "100% O2 with a backup cylinder",
-        "Room-air ventilation as the backup",
-        "Nitrous oxide as a backup gas",
-        "The suction canister volume"
+        "Verification of a full, functional backup oxygen cylinder",
+        "Verification of suction canister volume",
+        "Verification of nitrous oxide supply",
+        "Verification of volatile-agent level"
       ],
       "answer": [
         0
@@ -746,12 +746,12 @@
       "id": "PHA-031",
       "set": 1,
       "type": "single",
-      "stem": "Which monitoring setup is most appropriate immediately before elective induction?",
+      "stem": "A hemodynamically fragile patient is about to undergo induction. Which setup best supports early detection of rapid physiologic change?",
       "options": [
-        "ASA monitors, NIBP every 2–3 minutes, and O2 and gas analysis",
-        "ASA monitors, NIBP every 5 minutes, and SpO2 until intubation",
-        "ECG and SpO2, with NIBP started after incision",
-        "ASA monitors plus processed EEG for every case"
+        "Standard monitors with frequent NIBP cycling plus inspired/expired gas analysis",
+        "ECG and SpO2 with BP deferred until after intubation",
+        "Standard monitors with NIBP every 10 minutes",
+        "Processed EEG in place of frequent BP measurement"
       ],
       "answer": [
         0
@@ -818,12 +818,12 @@
       "id": "PHA-034",
       "set": 1,
       "type": "single",
-      "stem": "At approximately what end-tidal O2 concentration is denitrogenation considered nearly complete?",
+      "stem": "After several minutes of tight-mask preoxygenation, which end-tidal O2 value best supports near-complete denitrogenation before apnea?",
       "options": [
-        "About 90%",
-        "About 70%",
-        "About 60%",
-        "100%"
+        "Approximately 90%",
+        "Approximately 70%",
+        "Approximately 60%",
+        "Exactly 100%"
       ],
       "answer": [
         0
@@ -866,12 +866,12 @@
       "id": "PHA-036",
       "set": 1,
       "type": "single",
-      "stem": "For maximal preoxygenation before RSI, what fresh-gas flow is most appropriate?",
+      "stem": "During RSI preparation, room air is being entrained despite a tight mask because patient inspiratory flow exceeds fresh-gas delivery. Which adjustment best supports maximal denitrogenation?",
       "options": [
-        "Greater than 10 L/min",
-        "4–6 L/min to limit rebreathing",
-        "6–8 L/min",
-        "2–4 L/min"
+        "Increase fresh-gas flow above 10 L/min",
+        "Reduce flow to 4–6 L/min",
+        "Reduce flow below minute ventilation",
+        "Add nitrous oxide to the circuit"
       ],
       "answer": [
         0
@@ -890,12 +890,12 @@
       "id": "PHA-037",
       "set": 1,
       "type": "single",
-      "stem": "Which technique best describes standard tidal-volume preoxygenation in a cooperative adult?",
+      "stem": "A cooperative adult with normal lungs requires maximal conventional preoxygenation before induction. Which technique is most appropriate?",
       "options": [
-        "Tight mask with 100% O2 above 10 L/min for 3–5 minutes",
-        "Loose mask with 50% O2 for 1 minute",
-        "Nasal cannula at 4 L/min for 10 minutes before induction",
-        "Room air with deep breaths for 5 minutes"
+        "Tight mask, 100% O2 at >10 L/min, tidal breathing for 3–5 minutes",
+        "Loose mask, 100% O2 at 4 L/min for 1 minute",
+        "Nasal cannula at 4 L/min as the sole technique for 10 minutes",
+        "Room-air vital-capacity breaths for 5 minutes"
       ],
       "answer": [
         0
@@ -943,12 +943,12 @@
       "id": "PHA-039",
       "set": 1,
       "type": "single",
-      "stem": "Compared with a small FRC, what tradeoff does a larger FRC create during preoxygenation?",
+      "stem": "Two otherwise similar patients are fully denitrogenated; one has a substantially larger FRC. Which difference should be expected?",
       "options": [
-        "It takes longer to fill but delays desaturation",
-        "It fills faster and shortens time to desaturation",
-        "It fills faster and shortens safe apnea time",
-        "It changes neither the filling time nor desaturation time"
+        "Longer time to fill the reservoir but longer safe-apnea time",
+        "Shorter denitrogenation and shorter safe-apnea time",
+        "Shorter denitrogenation but longer safe-apnea time",
+        "No difference in denitrogenation or apnea tolerance"
       ],
       "answer": [
         0
@@ -1015,12 +1015,12 @@
       "id": "PHA-042",
       "set": 1,
       "type": "single",
-      "stem": "In a preoxygenated apneic adult, approximately how rapidly is oxygen consumed from the FRC reservoir?",
+      "stem": "A fully preoxygenated adult becomes apneic with an oxygen-rich FRC reservoir. Which approximate resting oxygen consumption primarily determines how quickly that reservoir is depleted?",
       "options": [
-        "About 250 mL/min",
-        "About 100 mL/min",
-        "About 500 mL/min",
-        "About 50 mL/min"
+        "250 mL/min",
+        "50 mL/min",
+        "100 mL/min",
+        "500 mL/min"
       ],
       "answer": [
         0
@@ -1039,12 +1039,12 @@
       "id": "PHA-043",
       "set": 1,
       "type": "single",
-      "stem": "A nasal cannula at 15 L/min is left on during difficult intubation and delays desaturation. What technique is being used?",
+      "stem": "During a prolonged intubation attempt, nasal oxygen at 15 L/min delays desaturation but PaCO2 continues to rise. Which mechanism explains the benefit and limitation?",
       "options": [
-        "Delaying hypoxia during apnea",
-        "Ventilating the patient and removing CO2",
-        "Preventing absorption atelectasis",
-        "Replacing the need for preoxygenation"
+        "Oxygen mass flow supports oxygenation during apnea but does not provide meaningful CO2 clearance",
+        "The cannula provides full alveolar ventilation and removes CO2",
+        "It prevents absorption atelectasis but does not deliver oxygen",
+        "It replaces the need for effective preoxygenation"
       ],
       "answer": [
         0
@@ -1092,12 +1092,12 @@
       "id": "PHA-045",
       "set": 1,
       "type": "single",
-      "stem": "Which intrinsic lung disease most clearly shortens safe-apnea time and increases the value of apneic oxygenation?",
+      "stem": "Which patient has the least pulmonary oxygen reserve and therefore the strongest intrinsic-lung indication for apneic oxygenation during a difficult intubation?",
       "options": [
         "A patient with pulmonary fibrosis",
-        "A patient with mild intermittent asthma",
-        "A healthy patient with a resolved pneumonia",
-        "A patient with remote treated TB"
+        "A patient with mild intermittent asthma between attacks",
+        "A healthy patient after resolved pneumonia",
+        "A patient with remote treated tuberculosis"
       ],
       "answer": [
         0
@@ -1145,12 +1145,12 @@
       "id": "PHA-047",
       "set": 1,
       "type": "single",
-      "stem": "CPAP is added because standard tidal preoxygenation is inadequate in an obese patient. What type of preoxygenation is this?",
+      "stem": "An obese patient remains below target EtO2 despite tight-mask tidal breathing. CPAP is added and EtO2 improves. What distinguishes this approach from passive preoxygenation?",
       "options": [
-        "Active preoxygenation",
-        "Passive preoxygenation",
-        "Apneic oxygenation",
-        "Vital capacity breathing"
+        "Positive pressure recruits lung and increases the oxygen reservoir",
+        "It lowers oxygen consumption during apnea",
+        "It removes CO2 during subsequent apnea",
+        "It uses a lower inspired oxygen concentration"
       ],
       "answer": [
         0
@@ -1169,12 +1169,12 @@
       "id": "PHA-048",
       "set": 1,
       "type": "single",
-      "stem": "Why does adding 5–10 cmH2O PEEP during preoxygenation help an obese patient?",
+      "stem": "An obese patient has dependent atelectasis before induction. Why can 5–10 cmH2O PEEP improve preoxygenation?",
       "options": [
-        "PEEP increases FRC by recruiting collapsed alveoli",
-        "PEEP increases oxygen consumption",
-        "PEEP lowers FiO2 to a safer level",
-        "PEEP lowers oxygen consumption during apnea"
+        "Recruitment increases FRC and the available oxygen reservoir",
+        "PEEP lowers metabolic oxygen consumption",
+        "PEEP prevents all absorption atelectasis",
+        "PEEP reduces inspired oxygen concentration"
       ],
       "answer": [
         0
@@ -1193,12 +1193,12 @@
       "id": "PHA-049",
       "set": 1,
       "type": "single",
-      "stem": "What is an important limitation of high-flow nasal oxygen for preoxygenation?",
+      "stem": "High-flow nasal oxygen is used instead of a sealed circuit for preoxygenation. Which limitation makes adequacy of denitrogenation harder to verify?",
       "options": [
-        "Uncertain FiO2 and EtO2 measurement, plus gastric insufflation",
-        "It delivers a fixed, known FiO2 at all flows",
-        "It requires a tight-fitting mask seal",
-        "Its flow is capped well below peak inspiratory flow rates"
+        "Delivered FiO2 and end-tidal O2 are less certain, and gastric insufflation can occur",
+        "It cannot deliver high oxygen flows",
+        "It requires a sealed face mask",
+        "It always produces a lower FiO2 than standard nasal cannula"
       ],
       "answer": [
         0
@@ -1217,12 +1217,12 @@
       "id": "PHA-050",
       "set": 1,
       "type": "single",
-      "stem": "How should nasal oxygen techniques be viewed relative to tight-mask circuit preoxygenation?",
+      "stem": "A difficult-airway patient receives high-flow nasal oxygen before induction. How should this technique be integrated with conventional preoxygenation when a tight mask is feasible?",
       "options": [
-        "Nasal options help but are less effective than a mask on the circuit",
-        "Nasal options are superior to a mask on the circuit",
-        "Nasal options are required for every RSI",
-        "Nasal options are equivalent to a tight mask at high flow"
+        "Use nasal oxygen as an adjunct; sealed circuit preoxygenation remains more effective for denitrogenation",
+        "Replace mask preoxygenation because nasal oxygen is always superior",
+        "Avoid mask preoxygenation during RSI",
+        "Treat both methods as equivalent whenever nasal flow is high"
       ],
       "answer": [
         0
