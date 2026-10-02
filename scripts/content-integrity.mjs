@@ -145,10 +145,10 @@ for(const source of bpManifest.studioSources||[]){
 }
 if(bpTotal!==3500)err('Basic Principles: total question count '+bpTotal+' != 3500');
 if(bpSeenRawId.size!==3500)err('Basic Principles: global raw question IDs are not unique ('+bpSeenRawId.size+'/3500 unique)');
-if(bpFigurePaths.size!==369)err('Basic Principles: unique referenced figure count '+bpFigurePaths.size+' != 369');
+if(bpFigurePaths.size!==364)err('Basic Principles: unique referenced figure count '+bpFigurePaths.size+' != 364');
 const figureRoot=path.join(root,bpRoot,'figures'),diskFigures=[];
 for(const dirent of fs.readdirSync(figureRoot,{withFileTypes:true}))if(dirent.isDirectory())for(const file of fs.readdirSync(path.join(figureRoot,dirent.name)))diskFigures.push('figures/'+dirent.name+'/'+file);
-if(diskFigures.length!==369)err('Basic Principles: figure asset count on disk '+diskFigures.length+' != 369');
+if(diskFigures.length!==364)err('Basic Principles: figure asset count on disk '+diskFigures.length+' != 364');
 for(const figure of diskFigures)if(!bpFigurePaths.has(figure))err('Basic Principles: orphaned figure asset '+figure);
 for(const figure of bpFigurePaths)if(!diskFigures.includes(figure))err('Basic Principles: referenced figure is outside canonical figure inventory '+figure);
 
