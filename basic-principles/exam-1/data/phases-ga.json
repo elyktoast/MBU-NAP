@@ -8785,12 +8785,12 @@
       "id": "PHA-351",
       "set": 1,
       "type": "single",
-      "stem": "After extubation, the patient cannot maintain airway patency despite basic support. What is the best next step?",
+      "stem": "After extubation, an obtunded patient cannot maintain airway patency despite repositioning, jaw thrust, and an oral airway. Ventilation remains inadequate. What is the next priority?",
       "options": [
-        "Provide airway support and consider reintubation",
-        "Send to PACU on nasal cannula and observe closely",
-        "Give flumazenil and observe",
-        "Remove oxygen to test drive"
+        "Provide effective assisted ventilation and prepare to re-establish a definitive airway if basic support fails",
+        "Send the patient to PACU on nasal cannula",
+        "Remove oxygen to stimulate respiratory drive",
+        "Give flumazenil without assessing the cause"
       ],
       "answer": [
         0
@@ -8809,12 +8809,12 @@
       "id": "PHA-352",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 is present after intubation, but left breath sounds are absent. What is the most likely cause?",
+      "stem": "After intubation, sustained ETCO2 is present but left breath sounds are absent and airway pressure is increased. Which diagnosis is most likely?",
       "options": [
-        "Right mainstem intubation",
+        "Right-mainstem intubation",
         "Esophageal intubation",
-        "Malignant hyperthermia",
-        "Circuit disconnection"
+        "Circuit disconnection",
+        "Malignant hyperthermia"
       ],
       "answer": [
         0
@@ -8833,12 +8833,12 @@
       "id": "PHA-353",
       "set": 1,
       "type": "single",
-      "stem": "Mask ventilation remains impossible despite head tilt and jaw thrust. Which call-out best reflects appropriate escalation?",
+      "stem": "Mask ventilation remains ineffective despite optimal positioning and jaw thrust. Which communication best supports rapid escalation?",
       "options": [
-        "\"I can't ventilate; I need two-person help and an OA.\"",
-        "\"Ventilation is hard, but I'll keep trying alone.\"",
-        "\"Let's give succinylcholine and try again.\"",
-        "\"Let's give rocuronium and try intubating.\""
+        "\"I cannot ventilate. I need two-person mask ventilation and an airway adjunct now.\"",
+        "\"Ventilation is difficult, but I will keep trying alone.\"",
+        "\"Give another induction dose and wait.\"",
+        "\"Continue without calling for assistance until SpO2 falls.\""
       ],
       "answer": [
         0
@@ -8857,12 +8857,12 @@
       "id": "PHA-354",
       "set": 1,
       "type": "single",
-      "stem": "After multiple difficult-airway attempts, which documentation details are most important for future anesthetics?",
+      "stem": "A patient required several difficult intubation attempts using different devices. Which documentation will be most useful at the next anesthetic?",
       "options": [
-        "Each attempt, view grade, equipment, and confirmation",
-        "The final ETT size and depth",
-        "The surgeon's comments",
-        "Complications that occurred during the attempts"
+        "Each attempt, operator/device, laryngoscopic view, successful technique, confirmation, and any trauma",
+        "Final ETT size and depth only",
+        "The surgeon's impression of difficulty",
+        "Only the complications, without describing successful technique"
       ],
       "answer": [
         0
@@ -8881,12 +8881,12 @@
       "id": "PHA-355",
       "set": 1,
       "type": "single",
-      "stem": "Immediately after induction, hypotension develops with a normal capnogram and no other alarming findings. What mechanism is most likely?",
+      "stem": "Immediately after propofol induction, MAP falls substantially while ETCO2, airway pressures, and surgical conditions are otherwise unchanged. Which mechanism is most likely?",
       "options": [
-        "Vasodilation from induction agents",
+        "Induction-related vasodilation and cardiovascular depression",
         "Esophageal intubation",
         "Malignant hyperthermia",
-        "Bronchospasm with falling venous return"
+        "Bronchospasm"
       ],
       "answer": [
         0
@@ -8905,10 +8905,10 @@
       "id": "PHA-356",
       "set": 1,
       "type": "single",
-      "stem": "Hives, hypotension, and wheezing develop soon after induction. What diagnosis should be presumed?",
+      "stem": "Seconds after a perioperative drug is administered, severe hypotension, wheezing, and generalized urticaria develop. Which diagnosis should drive immediate treatment?",
       "options": [
         "Anaphylaxis",
-        "Bronchospasm from light anesthesia",
+        "Isolated bronchospasm from light anesthesia",
         "Malignant hyperthermia",
         "Esophageal intubation"
       ],
@@ -8953,12 +8953,12 @@
       "id": "PHA-358",
       "set": 1,
       "type": "single",
-      "stem": "Why may an antibiotic need to be redosed several hours into a long procedure?",
+      "stem": "A long operation exceeds the recommended redosing interval for the prophylactic antibiotic while blood loss is ongoing. Why may another dose be needed?",
       "options": [
-        "Redosing based on drug half-life and duration",
-        "To prevent postoperative nausea and vomiting later",
-        "To reduce intraoperative blood loss",
-        "To treat developing hypothermia"
+        "Maintain adequate tissue antimicrobial concentrations as time and blood loss reduce effective exposure",
+        "Reduce postoperative nausea",
+        "Treat intraoperative hypothermia",
+        "Reduce blood loss through antifibrinolysis"
       ],
       "answer": [
         0
@@ -9001,12 +9001,12 @@
       "id": "PHA-360",
       "set": 1,
       "type": "single",
-      "stem": "BP falls immediately after the surgeon places a large retractor or pack. Which mechanism should be considered?",
+      "stem": "MAP falls abruptly when a large abdominal retractor is placed; ETCO2 also decreases and there is no major blood loss. Which mechanism should be considered?",
       "options": [
-        "Obstruction of venous return",
-        "Hyperthermia",
+        "Mechanical reduction in venous return and cardiac output",
         "Light anesthesia",
-        "Bladder distention causing reflex vasodilation"
+        "Bladder distention",
+        "Hypermetabolism"
       ],
       "answer": [
         0
@@ -9025,12 +9025,12 @@
       "id": "PHA-361",
       "set": 1,
       "type": "single",
-      "stem": "HR rises soon after a remifentanil infusion is stopped. What is the most likely explanation?",
+      "stem": "A remifentanil infusion is stopped well before a highly stimulating portion of surgery, followed rapidly by tachycardia and hypertension. Which explanation best fits?",
       "options": [
-        "Loss of analgesia with sympathetic response",
+        "Rapid loss of analgesic effect because remifentanil has a very short context-sensitive offset",
         "Hypothermia",
         "Malignant hyperthermia",
-        "Hypovolemia unmasked by the vasodilating opioid"
+        "Delayed remifentanil accumulation"
       ],
       "answer": [
         0
@@ -9049,12 +9049,12 @@
       "id": "PHA-362",
       "set": 1,
       "type": "single",
-      "stem": "An elderly patient becomes hypotensive at a deep volatile concentration. What is the best response?",
+      "stem": "An 84-year-old becomes hypotensive while receiving a relatively high age-adjusted volatile concentration. Which response best addresses a likely contributor?",
       "options": [
-        "Reduce volatile and support BP",
-        "Increase volatile to deepen",
-        "Give NMB",
-        "Give phenylephrine and keep the volatile unchanged"
+        "Reduce excessive volatile exposure and support hemodynamics while reassessing depth",
+        "Increase volatile concentration",
+        "Administer neuromuscular blocker",
+        "Treat BP without reassessing anesthetic depth"
       ],
       "answer": [
         0
@@ -9073,12 +9073,12 @@
       "id": "PHA-363",
       "set": 1,
       "type": "single",
-      "stem": "A 34-week pregnant patient requires urgent GA. Which preoxygenation strategy best maximizes oxygen reserve?",
+      "stem": "A 34-week pregnant patient requires urgent GA and has no contraindication to head-up positioning. Which preoxygenation plan best addresses reduced FRC and increased oxygen consumption?",
       "options": [
-        "Head-up position, tight mask above 10 L/min, plus apneic oxygenation",
-        "Supine flat with nasal cannula at 4 L/min",
-        "Trendelenburg with a loose mask and high-flow nasal oxygen",
-        "Room air with vital capacity breaths"
+        "Head-up positioning with a tight mask, high-flow 100% O2, and apneic oxygenation as an adjunct",
+        "Supine positioning with low-flow nasal oxygen alone",
+        "Trendelenburg with a loose mask",
+        "Room-air vital-capacity breaths"
       ],
       "answer": [
         0
@@ -9097,12 +9097,12 @@
       "id": "PHA-364",
       "set": 1,
       "type": "single",
-      "stem": "A patient with BMI 48 reaches EtO2 only 86% despite prolonged tidal preoxygenation. Which change would most improve reserve?",
+      "stem": "A patient with BMI 48 remains below the target EtO2 despite a tight mask and adequate fresh-gas flow. Which intervention most directly increases the usable oxygen reservoir?",
       "options": [
-        "Add CPAP/PEEP with head-up ramping",
-        "Lower fresh gas flow to 4 L/min",
-        "Lay the patient flat",
-        "Switch to nasal cannula"
+        "Head-up/ramped positioning with CPAP or PEEP to recruit dependent lung",
+        "Lower fresh-gas flow",
+        "Place the patient flat",
+        "Replace the mask with low-flow nasal cannula"
       ],
       "answer": [
         0
@@ -9121,12 +9121,12 @@
       "id": "PHA-365",
       "set": 1,
       "type": "single",
-      "stem": "Why is apneic oxygenation particularly valuable in pulmonary fibrosis?",
+      "stem": "A patient with pulmonary fibrosis is expected to desaturate rapidly during apnea despite effective preoxygenation. Why is apneic oxygenation especially useful as an adjunct?",
       "options": [
-        "Intrinsic lung disease shortens safe apnea time",
+        "Restrictive lung disease reduces usable oxygen reserve and shortens safe apnea time",
         "Pulmonary fibrosis increases FRC",
-        "Pulmonary fibrosis lowers O2 consumption during apnea",
-        "Pulmonary fibrosis prevents atelectasis"
+        "Pulmonary fibrosis eliminates oxygen consumption during apnea",
+        "Fibrotic lungs prevent absorption atelectasis"
       ],
       "answer": [
         0
@@ -9193,12 +9193,12 @@
       "id": "PHA-368",
       "set": 1,
       "type": "single",
-      "stem": "A trauma patient ate one hour ago and now needs emergency surgery. Which induction plan is most appropriate?",
+      "stem": "A trauma patient ate one hour ago and requires emergency surgery. Which plan best balances rapid airway protection with aspiration risk?",
       "options": [
-        "RSI with preoxygenation and suction ready",
-        "Normal induction with mask ventilation assessment",
-        "Inhalation induction to maintain spontaneous breathing",
-        "LMA placement after propofol"
+        "Rapid-sequence induction with optimized preoxygenation, suction ready, and a rescue-airway plan",
+        "Routine induction with prolonged mask ventilation regardless of oxygenation",
+        "Inhalation induction solely to avoid intubation",
+        "Propofol followed by a supraglottic airway as the definitive plan"
       ],
       "answer": [
         0
@@ -9217,12 +9217,12 @@
       "id": "PHA-369",
       "set": 1,
       "type": "single",
-      "stem": "During RSI, cricoid pressure worsens the laryngoscopic view. What is the best response?",
+      "stem": "During RSI, applied cricoid pressure markedly worsens the laryngoscopic view and impedes airway management. What should be done?",
       "options": [
-        "Ask the assistant to adjust or release cricoid pressure",
-        "Increase cricoid pressure to 50 N",
-        "Keep it unchanged, since releasing risks aspiration",
-        "Proceed without changing the pressure"
+        "Ask for the pressure to be adjusted or released as needed to secure the airway",
+        "Increase force regardless of the view",
+        "Maintain unchanged pressure even if intubation becomes impossible",
+        "Abandon oxygenation attempts"
       ],
       "answer": [
         0
@@ -9265,12 +9265,12 @@
       "id": "PHA-371",
       "set": 1,
       "type": "single",
-      "stem": "After a failed RSI attempt, SpO2 falls to 88%. What is the best next step before another laryngoscopy attempt?",
+      "stem": "After a failed RSI intubation attempt, SpO2 falls to 88% but mask ventilation is possible. What takes priority before another attempt?",
       "options": [
-        "Gentle mask ventilation to reoxygenate before the next attempt",
-        "Repeated laryngoscopy without ventilation",
-        "Deepen the volatile and wait",
-        "Proceed immediately to a second attempt"
+        "Reoxygenate with gentle effective ventilation, then reassess and optimize the next attempt",
+        "Repeat laryngoscopy immediately without ventilation",
+        "Wait for spontaneous saturation recovery",
+        "Proceed directly to another identical attempt"
       ],
       "answer": [
         0
@@ -9289,12 +9289,12 @@
       "id": "PHA-372",
       "set": 1,
       "type": "single",
-      "stem": "A large goiter significantly compresses the trachea. Which induction approach best preserves safety?",
+      "stem": "A large goiter causes critical fixed tracheal narrowing, and loss of spontaneous breathing could make ventilation impossible. Which induction principle is most important?",
       "options": [
-        "Inhalation induction maintaining spontaneous ventilation",
-        "Rapid IV induction with paralysis and cricoid pressure",
-        "Deep propofol bolus without airway plan",
-        "Awake extubation technique"
+        "Preserve spontaneous ventilation until the airway is secured when clinically appropriate",
+        "Use routine paralysis before confirming a ventilation strategy",
+        "Administer a large propofol bolus without a rescue plan",
+        "Treat aspiration risk as the only airway consideration"
       ],
       "answer": [
         0
@@ -9337,12 +9337,12 @@
       "id": "PHA-374",
       "set": 1,
       "type": "single",
-      "stem": "Loss of lash reflex, apnea, and easy mask ventilation are present after induction. What is the next step?",
+      "stem": "After routine IV induction, the patient is apneic and mask ventilation is easy with adequate depth for airway instrumentation. What is the next step in the planned sequence?",
       "options": [
-        "Proceed with advanced airway placement",
-        "Give a second dose of propofol first",
-        "Give reversal agents",
-        "Lower FiO2 to 50%"
+        "Proceed with the selected advanced airway when conditions are appropriate",
+        "Give another hypnotic dose solely because apnea is present",
+        "Administer reversal agents",
+        "Reduce oxygen concentration before airway placement"
       ],
       "answer": [
         0
@@ -9361,12 +9361,12 @@
       "id": "PHA-375",
       "set": 1,
       "type": "single",
-      "stem": "Mask ventilation remains difficult despite an oral airway. What should be requested next?",
+      "stem": "Mask ventilation remains difficult despite positioning and an oral airway. Which escalation should occur next while oxygenation is still being maintained?",
       "options": [
-        "Two-person mask ventilation",
-        "Immediate surgical incision",
-        "Neuromuscular reversal",
-        "Removal of monitors"
+        "Use two-person mask ventilation and continue the difficult-ventilation algorithm as needed",
+        "Proceed to surgical incision",
+        "Remove monitoring",
+        "Reverse anesthesia before requesting help"
       ],
       "answer": [
         0
@@ -9385,12 +9385,12 @@
       "id": "PHA-376",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, only two small ETCO2 waveforms appear and then disappear while SpO2 remains 99%. What is the most likely problem?",
+      "stem": "After intubation, two small transient CO2 waveforms appear and then disappear while SpO2 remains high from preoxygenation. Which diagnosis should be assumed until proven otherwise?",
       "options": [
-        "Esophageal placement",
-        "Correct tracheal placement",
-        "Bronchospasm",
-        "Pulmonary embolism"
+        "Esophageal intubation or loss of effective tracheal ventilation",
+        "Secure tracheal placement",
+        "Pulmonary embolism",
+        "Malignant hyperthermia"
       ],
       "answer": [
         0
@@ -9409,12 +9409,12 @@
       "id": "PHA-377",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 confirms tracheal placement, but breath sounds are much louder on the right. What is the best next step?",
+      "stem": "Sustained ETCO2 confirms tracheal ventilation, but breath sounds are markedly reduced on the left after intubation. What is the best immediate maneuver?",
       "options": [
-        "Withdraw the ETT slightly and reassess",
-        "Advance the ETT deeper",
-        "Remove the ETT and reintubate under direct view",
-        "Accept placement since ETCO2 is present"
+        "Withdraw the ETT slightly while reassessing depth, breath sounds, and ventilation",
+        "Advance the ETT farther",
+        "Accept the position because ETCO2 is present",
+        "Remove the tube without checking depth"
       ],
       "answer": [
         0
@@ -9485,12 +9485,12 @@
       "id": "PHA-380",
       "set": 1,
       "type": "single",
-      "stem": "Severe hypotension follows propofol administration. Which preinduction preparation most directly reduces treatment delay?",
+      "stem": "A frail patient develops severe hypotension immediately after induction. Which preparation most directly prevents avoidable delay in treatment?",
       "options": [
-        "Vasopressors drawn up and available",
-        "NMB reversal drawn up and labeled",
-        "Antiemetics given early",
-        "Oral airway removed from setup"
+        "Having appropriate vasopressors immediately prepared and available",
+        "Having neuromuscular reversal drawn up instead",
+        "Administering antiemetics before induction",
+        "Removing airway adjuncts from the setup"
       ],
       "answer": [
         0
@@ -9509,12 +9509,12 @@
       "id": "PHA-381",
       "set": 1,
       "type": "single",
-      "stem": "An intubated ICU patient arrives on norepinephrine. Which preinduction information is most critical to verify?",
+      "stem": "An intubated ICU patient arrives for surgery on norepinephrine and mechanical ventilation. Which information must be actively reconciled before transition to the OR anesthetic?",
       "options": [
-        "Review active drips and vent parameters",
-        "Repeat NPO confirmation",
-        "Ask about PONV history",
-        "Switch the infusion to a bag before transport"
+        "Current vasoactive/sedative infusions, doses, access, ventilator settings, and recent physiologic trends",
+        "PONV history before reviewing life-sustaining therapies",
+        "Only the patient's NPO status",
+        "Only the ETT size"
       ],
       "answer": [
         0
@@ -9533,12 +9533,12 @@
       "id": "PHA-382",
       "set": 1,
       "type": "single",
-      "stem": "For direct ICU-to-OR transport of an intubated patient, which documentation set best reflects a complete anesthesia handoff?",
+      "stem": "An intubated ICU patient is transported directly to the OR. Which handoff best preserves continuity of anesthesia care?",
       "options": [
-        "ID, chart review, report, monitors, and ventilation",
-        "Surgery time, OR number, and the surgeon on call",
-        "ETT size and depth",
-        "Weight and allergies only"
+        "Verify identity/record, receive focused clinical report, maintain appropriate monitoring and ventilation, and reconcile active therapies",
+        "Document only ETT size and depth",
+        "Remove monitors during transport because the airway is secured",
+        "Delay review of active infusions until after induction"
       ],
       "answer": [
         0
@@ -9557,12 +9557,12 @@
       "id": "PHA-383",
       "set": 1,
       "type": "single",
-      "stem": "After succinylcholine, rigidity develops and ETCO2 rises rapidly. What complication should be presumed?",
+      "stem": "Soon after succinylcholine, generalized rigidity develops with rapidly rising ETCO2 despite increased ventilation. Which emergency should be presumed and treated?",
       "options": [
         "Malignant hyperthermia",
         "Esophageal intubation",
-        "Bronchospasm",
-        "Right mainstem intubation"
+        "Isolated bronchospasm",
+        "Right-mainstem intubation"
       ],
       "answer": [
         0
@@ -9581,12 +9581,12 @@
       "id": "PHA-384",
       "set": 1,
       "type": "single",
-      "stem": "A front tooth is chipped during intubation. What must be documented?",
+      "stem": "A maxillary incisor is chipped during difficult intubation. Which documentation is appropriate?",
       "options": [
-        "The injury and discussion with the patient",
-        "Nothing, unless the patient complains afterward",
-        "The ETT size",
-        "The view grade"
+        "Document the injury, airway circumstances, and communication/disclosure to the patient or representative",
+        "Omit the injury unless the patient complains",
+        "Document only ETT size",
+        "Record only the laryngoscopic view"
       ],
       "answer": [
         0
@@ -9605,12 +9605,12 @@
       "id": "PHA-385",
       "set": 1,
       "type": "single",
-      "stem": "A patient with obesity desaturates rapidly after only brief apnea. Which physiologic factor most likely contributed?",
+      "stem": "A patient with severe obesity desaturates rapidly despite successful preoxygenation. Which physiologic feature primarily shortens safe apnea time?",
       "options": [
-        "Reduced FRC from obesity",
-        "High FRC from head-up positioning",
-        "Low O2 consumption",
-        "Excessive fresh gas flow"
+        "Reduced functional residual capacity relative to oxygen demand",
+        "Increased FRC",
+        "Reduced oxygen consumption",
+        "Excessive fresh-gas flow"
       ],
       "answer": [
         0
@@ -9629,12 +9629,12 @@
       "id": "PHA-386",
       "set": 1,
       "type": "single",
-      "stem": "A beard and NG tube prevent an adequate mask seal for preoxygenation. Which adjunct may help despite its limitations?",
+      "stem": "A beard and nasogastric tube make a tight face-mask seal difficult during preoxygenation. Which adjunct can improve oxygen delivery while the seal problem is addressed?",
       "options": [
-        "High-flow nasal oxygen, noting its limitations",
-        "Proceed with tidal breathing for 3 minutes",
-        "Use room air to avoid atelectasis",
-        "Place a loose-fitting mask with nasal cannula underneath"
+        "High-flow nasal oxygen, recognizing that it does not guarantee complete denitrogenation",
+        "Room air to avoid absorption atelectasis",
+        "Low-flow oxygen only after induction",
+        "A loose mask with no attempt to improve seal"
       ],
       "answer": [
         0
@@ -9677,12 +9677,12 @@
       "id": "PHA-388",
       "set": 1,
       "type": "single",
-      "stem": "After one failed intubation attempt, SpO2 falls to 90%. What is the best overall approach before trying again?",
+      "stem": "After one failed intubation attempt, SpO2 falls to 90% and mask ventilation is possible. What should happen before another attempt?",
       "options": [
-        "Reoxygenate, reassess, and change the plan if needed",
-        "Keep trying the same approach without oxygen",
-        "Wake the patient without ventilating",
-        "Increase the remifentanil"
+        "Reoxygenate, reassess the cause of failure, and optimize/change device, operator, or technique as needed",
+        "Repeat the identical attempt immediately",
+        "Continue attempts without ventilation until saturation is critical",
+        "Increase opioid dosing instead of revising the airway plan"
       ],
       "answer": [
         0
@@ -9701,12 +9701,12 @@
       "id": "PHA-389",
       "set": 1,
       "type": "single",
-      "stem": "Hypertension and irregular breathing develop in stage 2. What airway-management strategy is safest?",
+      "stem": "During inhalation induction, the patient develops irregular breathing, movement, and heightened airway reflexes consistent with stage II. Which approach is safest?",
       "options": [
-        "Avoid airway stimulation and deepen or lighten deliberately",
-        "Perform laryngoscopy now while the patient is still moving",
-        "Extubate at this stage",
-        "Increase stimulation to wake the patient"
+        "Avoid unnecessary airway stimulation and deliberately deepen or lighten through the excitatory plane",
+        "Perform laryngoscopy immediately because airway reflexes are strongest",
+        "Increase stimulation to accelerate emergence",
+        "Treat stage II as equivalent to surgical anesthesia"
       ],
       "answer": [
         0
@@ -9725,12 +9725,12 @@
       "id": "PHA-390",
       "set": 1,
       "type": "single",
-      "stem": "During induction, no one knows who is assigned to call for help. Which preinduction step was missed?",
+      "stem": "During a difficult induction, team members hesitate because no one was assigned to call for additional airway help or obtain rescue equipment. Which preparation step was missed?",
       "options": [
-        "Role identification during the anesthesia timeout",
-        "A surgical time-out after incision is already made",
-        "PACU handoff before induction",
-        "A debrief after emergence"
+        "Explicit role assignment during the preinduction briefing/time-out",
+        "PACU handoff",
+        "Postoperative debrief",
+        "Surgical sign-out"
       ],
       "answer": [
         0
@@ -9773,12 +9773,12 @@
       "id": "PHA-392",
       "set": 1,
       "type": "single",
-      "stem": "A full-stomach patient requires urgent surgery. Which induction strategy best addresses aspiration risk?",
+      "stem": "A patient with bowel obstruction and a full stomach requires urgent GA. Which strategy most directly addresses aspiration exposure during induction?",
       "options": [
-        "RSI with aspiration precautions",
-        "Normal induction with mask ventilation",
-        "Inhalation induction without airway protection",
-        "LMA with propofol"
+        "Rapid-sequence induction with optimized preoxygenation and an airway rescue plan",
+        "Routine induction with prolonged mask ventilation regardless of need",
+        "Inhalation induction without definitive airway protection",
+        "Planned supraglottic airway as the definitive aspiration-protection strategy"
       ],
       "answer": [
         0
@@ -9797,12 +9797,12 @@
       "id": "PHA-393",
       "set": 1,
       "type": "single",
-      "stem": "SpO2 remains 98% during apnea while no ETCO2 is present. What principle does this illustrate?",
+      "stem": "During a prolonged apneic intubation attempt, nasal oxygen keeps SpO2 at 98% while no effective ventilation occurs. Which statement is correct?",
       "options": [
-        "Oxygenation can persist without ventilation",
-        "Ventilation is adequate even without an ETCO2 trace",
-        "SpO2 measures ventilation",
-        "The patient is hyperventilating"
+        "Oxygenation can temporarily persist despite absent ventilation and accumulating CO2",
+        "Normal SpO2 proves ventilation is adequate",
+        "Pulse oximetry directly measures PaCO2",
+        "Apneic oxygenation prevents hypercapnia"
       ],
       "answer": [
         0
@@ -9821,11 +9821,11 @@
       "id": "PHA-394",
       "set": 1,
       "type": "single",
-      "stem": "After 100% O2 preoxygenation, which strategy best reduces absorption atelectasis?",
+      "stem": "After maximal 100% O2 preoxygenation, which post-induction strategy can limit dependent absorption atelectasis while maintaining oxygenation?",
       "options": [
-        "Use PEEP or recruitment after induction",
-        "Increase FiO2 to 1.0 without PEEP",
-        "Extend apnea time",
+        "Use appropriate PEEP/recruitment and titrate FiO2 to clinical need once the airway is secured",
+        "Maintain zero PEEP solely because FiO2 was 1.0",
+        "Prolong apnea",
         "Avoid positive pressure after induction"
       ],
       "answer": [
@@ -9845,12 +9845,12 @@
       "id": "PHA-395",
       "set": 1,
       "type": "single",
-      "stem": "Why is apneic oxygenation particularly valuable in sepsis?",
+      "stem": "A septic patient is expected to desaturate rapidly during airway management. Why can apneic oxygenation be particularly useful as an adjunct?",
       "options": [
-        "High O2 use and low reserve shorten safe apnea",
-        "Sepsis increases FRC and slows preoxygenation",
-        "Sepsis lowers O2 consumption during apnea",
-        "Sepsis prevents absorption atelectasis"
+        "Increased oxygen consumption and limited reserve can shorten safe apnea time",
+        "Sepsis reliably increases FRC",
+        "Sepsis reduces metabolic oxygen consumption",
+        "Sepsis prevents atelectasis"
       ],
       "answer": [
         0
@@ -9869,12 +9869,12 @@
       "id": "PHA-396",
       "set": 1,
       "type": "single",
-      "stem": "Which patient is the best candidate for a routine rather than rapid-sequence induction?",
+      "stem": "Which patient is the best candidate for a routine IV induction with the opportunity to assess mask ventilation before definitive airway placement?",
       "options": [
-        "An elective, fasted patient",
-        "A patient with a bowel obstruction",
-        "A trauma patient who ate an hour ago",
-        "A woman at term needing urgent GA"
+        "An elective fasted patient without meaningful aspiration risk",
+        "A patient with small-bowel obstruction",
+        "A trauma patient who ate one hour ago",
+        "A term pregnant patient requiring urgent GA"
       ],
       "answer": [
         0
@@ -9893,12 +9893,12 @@
       "id": "PHA-397",
       "set": 1,
       "type": "single",
-      "stem": "Jaw relaxation and loss of lash reflex are present, but mask ventilation is still difficult. What should be done before progressing?",
+      "stem": "After induction, jaw relaxation and loss of lash reflex are present, but mask ventilation remains difficult. What should occur before simply advancing the routine plan?",
       "options": [
-        "Optimize mask ventilation with OA and two hands",
-        "Intubate immediately without further mask attempts",
-        "Give reversal agent",
-        "Give a neuromuscular blocker"
+        "Optimize oxygenation and mask ventilation with positioning, adjuncts, two-person technique, and escalation as needed",
+        "Assume loss of lash reflex guarantees ventilation",
+        "Remove monitoring to improve access",
+        "Proceed without addressing the ventilation problem"
       ],
       "answer": [
         0
@@ -9917,12 +9917,12 @@
       "id": "PHA-398",
       "set": 1,
       "type": "single",
-      "stem": "After propofol induction in a 78-year-old, which monitor most directly detects early hemodynamic depression?",
+      "stem": "A 78-year-old develops rapid hypotension after propofol induction. Which routine monitor provides the most direct repeated measurement of this hemodynamic effect?",
       "options": [
-        "Frequent NIBP checks",
-        "ETCO2 monitoring",
-        "Temperature monitoring",
-        "BIS monitoring"
+        "Frequent noninvasive blood pressure measurement",
+        "End-tidal CO2",
+        "Core temperature",
+        "Processed EEG"
       ],
       "answer": [
         0
@@ -9941,12 +9941,12 @@
       "id": "PHA-399",
       "set": 1,
       "type": "single",
-      "stem": "After antibiotic administration in a patient with allergy history, which acute complication requires immediate vigilance?",
+      "stem": "Seconds after prophylactic antibiotic administration, hypotension and wheezing develop in a patient with a significant allergy history. Which complication requires immediate consideration?",
       "options": [
-        "Severe allergic reaction",
+        "Anaphylaxis",
         "Malignant hyperthermia",
-        "Esophageal intubation",
-        "Stage 2 excitement"
+        "Stage-II excitement",
+        "Right-mainstem intubation"
       ],
       "answer": [
         0
@@ -9965,12 +9965,12 @@
       "id": "PHA-400",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, SpO2 falls and gurgling secretions are heard. What is the first action?",
+      "stem": "After intubation, oxygen saturation falls and copious gurgling secretions are heard in the ETT. What should occur immediately while oxygenation and ventilation are supported?",
       "options": [
-        "Suction the airway",
-        "Increase volatile",
-        "Remove the ETT immediately",
-        "Give NMB"
+        "Suction the airway and assess the source of obstruction/contamination",
+        "Increase volatile anesthetic",
+        "Remove the ETT before suctioning",
+        "Administer additional neuromuscular blocker"
       ],
       "answer": [
         0
