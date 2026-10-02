@@ -140,4 +140,18 @@ test.describe('multi-course foundation', () => {
     expect(await page.evaluate(() => [...new Set(session.map(q => q.topic))])).toEqual([topic]);
   });
 
+
+  test('Basic Principles unified pool is available to search, Smart Review, analytics, and Adaptive entry', async ({ page }) => {
+    await page.goto('/basic-principles/exam-1/studio.html');
+    await waitForStudioReady(page);
+    await expect(page.getByRole('button', { name: 'Search Questions' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Start Smart Review' })).toBeVisible();
+    await expect(page.locator('#analyticsSummary')).toBeVisible();
+    await expect(page.locator('#adaptiveToggle')).toBeVisible();
+    await page.getByRole('button', { name: 'Search Questions' }).click();
+    await page.locator('#searchbox').fill('airway');
+    await expect(page.locator('#searchresults')).not.toBeEmpty();
+    expect(await page.evaluate(() => window.MBUStudyIntelligence.smartReview(ALL, 50).length)).toBeGreaterThan(0);
+  });
+
 });
