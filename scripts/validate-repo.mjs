@@ -170,6 +170,7 @@ function checkStudio(){
   for(const id of ['bank1','bank2','bank3','combined','hazards'])if(!manifest.banks.some(b=>b.id===id))fail('Studio: central bank manifest is missing '+id);
   if(!Array.isArray(manifest.studioSources)||manifest.studioSources.length<8)fail('Studio: complete manifest source catalog is missing');
   for(const srcDef of manifest.studioSources){if(srcDef.format!=='canonical')fail('Studio: noncanonical source format remains for '+srcDef.key);if(!exists('equipment/exam-1/'+srcDef.data))fail('Studio: manifest data source missing '+srcDef.data)}
+  const studioExpectedCounts={b1:500,b2:500,b3:500,combined:150,h1:100,h2:100,h3:100,hh:50};for(const srcDef of manifest.studioSources){if(studioExpectedCounts[srcDef.key]!==Number(srcDef.count))fail('Studio: manifest source count mismatch for '+srcDef.key)}
   for(const bit of ["studioFetch('banks.json')","BANK_MANIFEST.studioSources.map","STUDIO_SOURCES=BANK_MANIFEST.studioSources.map","meta.format!=='canonical'"])if(!src.includes(bit))fail('Studio: manifest-driven hydration contract missing '+bit);
   if(!src.includes("if(ALL_BY_UID.has(q.uid))throw Error('duplicate question uid '+q.uid)"))fail('Studio: duplicate question identities can silently overwrite loaded questions');
   if(!src.includes("raw.length!==Number(meta.count)")||!src.includes("meta.sourceTitleContract")||!src.includes("sourceTitle does not match manifest source contract"))fail('Studio: hydrated sources are not checked against manifest count and declared source-title contracts');
