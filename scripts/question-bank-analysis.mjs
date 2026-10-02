@@ -103,6 +103,15 @@ const report={
   }
 };
 
+
+const bpManifest=JSON.parse(fs.readFileSync(path.join(root,'basic-principles/exam-1/banks.json'),'utf8')),bp={total:0,lectures:{},topics:{},types:{},figures:{references:0,unique:0},explanations:{missing:0},citations:{missing:0}},bpFigures=new Set();
+for(const source of bpManifest.studioSources||[]){
+ const payload=JSON.parse(fs.readFileSync(path.join(root,'basic-principles/exam-1',source.data),'utf8')),qs=Array.isArray(payload)?payload:(payload.questions||[]);
+ bp.lectures[source.label]={count:qs.length,topics:{}};
+ for(const q of qs){bp.total++;const topic=String(q.topic||'Unspecified'),type=String(q.type||'unspecified');bp.topics[topic]=(bp.topics[topic]||0)+1;bp.types[type]=(bp.types[type]||0)+1;bp.lectures[source.label].topics[topic]=(bp.lectures[source.label].topics[topic]||0)+1;if(!String(q.explanation??q.exp??q.rationale??'').trim())bp.explanations.missing++;if(!String(q.citation??q.src??'').trim())bp.citations.missing++;const image=String(q.img??q.imageSvg??q.image??'').trim();if(image){bp.figures.references++;bpFigures.add(image)}}
+}
+bp.figures.unique=bpFigures.size;report.basicPrinciples=bp;
+
 console.log('Phase 2 question-bank analysis');
 console.log('Total questions:',report.totalQuestions);
 for(const [bank,s] of Object.entries(report.banks)){
@@ -115,6 +124,6 @@ for(const [bank,s] of Object.entries(report.banks)){
   console.log('  explanation words avg/median:',s.explanationWords.average+'/'+s.explanationWords.median);
   console.log('  missing source title/locator:',s.sourceMetadata.missingSourceTitle+'/'+s.sourceMetadata.missingLocator);
 }
-console.log('\nExact duplicate stem groups:',report.duplication.exactStemGroups,'Same-set:',report.duplication.sameSetExactGroups,'Cross-set:',report.duplication.crossSetExactGroups,'Cross-bank:',report.duplication.crossBankExactGroups);
+console.log('\nExact duplicate stem groups:',report.duplication.exactStemGroups,'Same-set:',report.duplication.sameSetExactGroups,'Cross-set:',report.duplication.crossSetExactGroups,'Cross-bank:',report.duplication.crossBankExactGroups);console.log('Basic Principles:',bp.total+' questions across '+Object.keys(bp.lectures).length+' lectures; '+Object.keys(bp.topics).length+' detailed topics; '+bp.figures.references+' figure references / '+bp.figures.unique+' unique figures; missing explanations/citations '+bp.explanations.missing+'/'+bp.citations.missing);
 
 if(process.argv.includes('--json'))console.log('\nJSON_REPORT_START\n'+JSON.stringify(report,null,2)+'\nJSON_REPORT_END');
