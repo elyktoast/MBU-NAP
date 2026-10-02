@@ -113,4 +113,31 @@ test.describe('multi-course foundation', () => {
     await expect(page.locator('#mbu-bank-picker option')).toHaveCount(1);
   });
 
+
+  test('Basic Principles Studio topic filtering and direct figures work across the unified pool', async ({ page }) => {
+    await page.goto('/basic-principles/exam-1/studio.html');
+    await waitForStudioReady(page);
+    const ids = await page.evaluate(() => ({
+      jpg: ALL.find(q => q.img && q.img.kind === 'direct' && String(q.img.url).endsWith('.jpg')).uid,
+      svg: ALL.find(q => q.img && q.img.kind === 'direct' && String(q.img.url).endsWith('.svg')).uid
+    }));
+    await page.evaluate(uid => practiceSearch(uid), ids.jpg);
+    await expect(page.locator('#qimage img')).toBeVisible();
+    await expect(page.locator('#qimage img')).toHaveAttribute('src', /[.]jpg$/i);
+    await page.evaluate(() => renderHome());
+    await page.evaluate(uid => practiceSearch(uid), ids.svg);
+    await expect(page.locator('#qimage img')).toBeVisible();
+    await expect(page.locator('#qimage img')).toHaveAttribute('src', /[.]svg$/i);
+    await page.evaluate(() => renderHome());
+
+    await page.getByRole('button', { name: 'Topics' }).click();
+    const choice = page.locator('#topicChecks input').first();
+    await choice.check();
+    const topic = await choice.inputValue();
+    await page.selectOption('#count', '10');
+    await page.getByRole('button', { name: 'Start Quiz' }).click();
+    expect(await page.evaluate(() => session.length)).toBe(10);
+    expect(await page.evaluate(() => [...new Set(session.map(q => q.topic))])).toEqual([topic]);
+  });
+
 });
