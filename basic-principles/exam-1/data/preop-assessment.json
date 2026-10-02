@@ -701,7 +701,7 @@
         "Consent, allergies, and medications",
         "The surgeon's dictated postoperative plan",
         "The planned discharge destination",
-        "The planned discharge destination",
+        "The patient's preferred postoperative diet",
         "The patient's prior PONV prophylaxis"
       ],
       "answer": [
@@ -3406,7 +3406,7 @@
         "The patient with 2.3 mg/dL",
         "All three, since each is above normal",
         "The patients with 1.9 and 2.3 mg/dL",
-        "The patients with 1.9 and 2.3 mg/dL"
+        "Only the patient with 1.9 mg/dL"
       ],
       "answer": [
         0
@@ -5227,7 +5227,7 @@
       "options": [
         "Continue levothyroxine",
         "Hold it the morning of surgery",
-        "Hold it the morning of surgery",
+        "Reduce the dose by half on the morning of surgery",
         "Stop it for 1 week before surgery"
       ],
       "answer": [
@@ -5422,7 +5422,7 @@
         "Bradycardia",
         "Hypotension",
         "Hyperkalemia",
-        "Hyperkalemia"
+        "Hypokalemia is absent"
       ],
       "answer": [
         0,
@@ -5590,7 +5590,7 @@
       "options": [
         "Taper by 50% per day to the usual dose",
         "Stop abruptly after 24 hours",
-        "Stop abruptly after 24 hours",
+        "Return immediately to the usual dose after surgery",
         "Continue 200 mg daily for 2 weeks"
       ],
       "answer": [
@@ -6776,7 +6776,7 @@
         "Active metabolites accumulate without renal clearance",
         "Morphine is metabolized faster in renal failure",
         "Morphine causes seizures in renal failure",
-        "Morphine is metabolized faster in renal failure"
+        "Renal failure prevents morphine from reaching the CNS"
       ],
       "answer": [
         0
@@ -7359,7 +7359,7 @@
         "Tachycardia",
         "Arrhythmias",
         "Bradycardia",
-        "Bradycardia"
+        "Marked hypotension"
       ],
       "answer": [
         0,
