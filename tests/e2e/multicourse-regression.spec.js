@@ -1,26 +1,37 @@
 const { test, expect } = require('@playwright/test');
 const { clearAppState } = require('./helpers');
 
+async function waitForPageReady(page) {
+  await page.waitForFunction(() => window.MBUPageReady && typeof window.MBUPageReady.then === 'function');
+  await page.evaluate(() => window.MBUPageReady);
+}
+
+async function waitForStudioReady(page) {
+  await waitForPageReady(page);
+  await page.waitForFunction(() => window.MBUStudioPageReady && typeof window.MBUStudioPageReady.then === 'function');
+  await page.evaluate(() => window.MBUStudioPageReady);
+}
+
 test.describe('multi-course foundation', () => {
   test.beforeEach(async ({ page }) => clearAppState(page));
   test('Basic Principles is reachable from the course home and exposes Exam 1', async ({ page }) => {
     await page.goto('/');
-    await page.evaluate(() => MBUPageReady);
+    await waitForPageReady(page);
     await expect(page.getByRole('heading', { name: 'Basic Principles' })).toBeVisible();
 
     await page.goto('/basic-principles/');
-    await page.evaluate(() => MBUPageReady);
+    await waitForPageReady(page);
     await expect(page.getByRole('heading', { name: 'Basic Principles' })).toBeVisible();
     await expect(page.getByRole('link', { name: /Open Exam 1 Dashboard/ })).toHaveAttribute('href', 'exam-1/');
 
     await page.goto('/basic-principles/exam-1/');
-    await page.evaluate(() => MBUPageReady);
+    await waitForPageReady(page);
     await expect(page.getByRole('heading', { name: 'Basic Principles — Exam 1' })).toBeVisible();
   });
 
   test('Basic Principles learner stores are isolated from Equipment Exam 1', async ({ page }) => {
     await page.goto('/equipment/exam-1/studio.html');
-    await page.evaluate(async () => { await MBUPageReady; await MBUStudioPageReady; });
+    await waitForStudioReady(page);
     const equipment = await page.evaluate(() => ({
       studio: MBUStudio.STORE,
       intelligence: MBUStudyIntelligence.STORE,
@@ -33,7 +44,7 @@ test.describe('multi-course foundation', () => {
     });
 
     await page.goto('/basic-principles/exam-1/studio.html');
-    await page.evaluate(async () => { await MBUPageReady; await MBUStudioPageReady; });
+    await waitForStudioReady(page);
     const principles = await page.evaluate(() => ({
       studio: MBUStudio.STORE,
       intelligence: MBUStudyIntelligence.STORE,
@@ -66,14 +77,14 @@ test.describe('multi-course foundation', () => {
   });
   test('guest navbar resolves from the app root instead of the site origin', async ({ page }) => {
     await page.goto('/');
-    await page.evaluate(() => MBUPageReady);
+    await waitForPageReady(page);
     const nav = page.locator('.mbu-global-nav');
     await expect(nav.getByRole('link', { name: 'Equipment' })).toHaveAttribute('href', /\/equipment\/$/);
     await expect(nav.getByRole('link', { name: 'Study Studio' })).toHaveAttribute('href', /\/equipment\/exam-1\/studio\.html$/);
     await expect(nav.getByRole('link', { name: 'Adaptive' })).toHaveAttribute('href', /\/equipment\/exam-1\/studio\.html\?mode=adaptive$/);
 
     await page.goto('/basic-principles/exam-1/');
-    await page.evaluate(() => MBUPageReady);
+    await waitForPageReady(page);
     await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Basic Principles' })).toHaveAttribute('href', /\/basic-principles\/$/);
     await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Study Studio' })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html$/);
   });
