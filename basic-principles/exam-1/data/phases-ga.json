@@ -3766,7 +3766,7 @@
       "id": "PHA-151",
       "set": 1,
       "type": "multi",
-      "stem": "What are typical signs of bronchospasm during maintenance? (Select 2)",
+      "stem": "During maintenance, which TWO findings most strongly support bronchospasm rather than reduced compliance? (Select 2)",
       "options": [
         "Increased peak airway pressure",
         "Prolonged expiration with wheeze",
@@ -3793,7 +3793,7 @@
       "id": "PHA-152",
       "set": 1,
       "type": "single",
-      "stem": "Refer to Capnogram D. After intubation in an asthmatic patient, the capnogram shows a steep upslope without a plateau and PIP rises to 40. What does this suggest?",
+      "stem": "After intubation of an asthmatic patient, PIP rises to 40 cmH2O and the capnogram develops a shark-fin pattern. What is the most likely diagnosis?",
       "options": [
         "Bronchospasm",
         "Esophageal intubation",
@@ -3822,7 +3822,7 @@
       "id": "PHA-153",
       "set": 1,
       "type": "single",
-      "stem": "Refer to Capnogram D. The patient was just repositioned with rising stimulation. What is the MOST likely cause?",
+      "stem": "A patient develops bronchospasm immediately after repositioning and increasing surgical stimulation. What is the most likely trigger?",
       "options": [
         "Light anesthesia during stimulation",
         "Hypothermia from positioning",
@@ -3851,7 +3851,7 @@
       "id": "PHA-154",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, peak pressures rise to 42 with wheezing and a shark-fin capnogram. What is the BEST initial treatment?",
+      "stem": "PIP rises to 42 cmH2O with wheezing and a shark-fin capnogram. What is the best initial treatment?",
       "options": [
         "Increase FiO2 and deepen anesthesia with propofol",
         "Decrease FiO2 and lighten anesthesia",
@@ -3875,7 +3875,7 @@
       "id": "PHA-155",
       "set": 1,
       "type": "multi",
-      "stem": "If signs of bronchospasm persist, which mechanical causes should be excluded? (Select 4)",
+      "stem": "If presumed bronchospasm does not improve, which FOUR mechanical causes should be excluded? (Select 4)",
       "options": [
         "Kinked tubing",
         "Mucous plug",
@@ -3904,7 +3904,7 @@
       "id": "PHA-156",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the ventilator trend. Peak pressure jumps from 20 to 42 and Vt falls at minute 3. What should you check FIRST?",
+      "stem": "Peak pressure jumps from 20 to 42 cmH2O and tidal volume falls abruptly. What should be checked first?",
       "options": [
         "Patient and airway: breath sounds, tube, kinks",
         "Replace the CO2 absorbent and recheck the pressures",
@@ -3933,7 +3933,7 @@
       "id": "PHA-157",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the ventilator trend. Breath sounds are absent on the left after a laparoscopic trocar placement near the diaphragm. What is the MOST likely cause?",
+      "stem": "After trocar placement near the diaphragm, breath sounds disappear on the left and airway pressure rises. What is the most likely cause?",
       "options": [
         "Left pneumothorax",
         "Right mainstem intubation",
@@ -3962,7 +3962,7 @@
       "id": "PHA-158",
       "set": 1,
       "type": "single",
-      "stem": "During a case with an LMA, you hear noisy, croupy inspiratory sounds and see rising airway pressures. What should you suspect?",
+      "stem": "With an LMA in place, noisy croup-like inspiratory sounds and rising airway pressures develop. What should be suspected?",
       "options": [
         "Bronchospasm or laryngospasm presenting through the LMA",
         "A normal LMA leak with no airway problem",
@@ -3986,7 +3986,7 @@
       "id": "PHA-159",
       "set": 1,
       "type": "multi",
-      "stem": "During a spine fusion, which findings suggest hemorrhage? (Select 3)",
+      "stem": "During spine fusion, which THREE findings support significant hemorrhage? (Select 3)",
       "options": [
         "Hypotension and tachycardia",
         "Increased pulse pressure or stroke volume variation",
@@ -4014,7 +4014,7 @@
       "id": "PHA-160",
       "set": 1,
       "type": "single",
-      "stem": "During a liver resection, the surgeon reports a torn hepatic vein and suction canisters fill rapidly. What is your FIRST set of actions?",
+      "stem": "A hepatic vein is torn and suction canisters fill rapidly. What should the first resuscitative actions include?",
       "options": [
         "Call for help, give 100% FiO2, and open fluids",
         "Give a vasopressor and wait for labs",
@@ -4038,7 +4038,7 @@
       "id": "PHA-161",
       "set": 1,
       "type": "single",
-      "stem": "During a long orthopedic case, BP drifts down and HR rises, but the surgeon reports minimal bleeding. What should you do?",
+      "stem": "BP drifts down and HR rises despite the surgeon reporting minimal blood loss. What should the anesthesia provider do next?",
       "options": [
         "Walk around and check laps, the floor, and canisters",
         "Verify the sponge count with the circulator",
@@ -4062,7 +4062,7 @@
       "id": "PHA-162",
       "set": 1,
       "type": "single",
-      "stem": "A patient is scheduled for a revision hip arthroplasty with expected large blood loss. What IV access is BEST?",
+      "stem": "A revision hip arthroplasty is expected to produce major blood loss. Which IV-access strategy is best?",
       "options": [
         "Two large-bore IVs",
         "One 22-gauge IV",
@@ -4086,7 +4086,7 @@
       "id": "PHA-163",
       "set": 1,
       "type": "single",
-      "stem": "At the end of a long abdominal case, the esophageal temperature reads 35.4 °C. How is this classified?",
+      "stem": "At closure, core temperature is 35.4 °C. How should this be classified?",
       "options": [
         "Hypothermia, since it is below 36 °C",
         "Normothermia, since it is above 35 °C",
@@ -4110,7 +4110,7 @@
       "id": "PHA-164",
       "set": 1,
       "type": "multi",
-      "stem": "A patient's core temperature is 34.8 °C at the end of a 5-hour case. Which complications should you anticipate? (Select 4)",
+      "stem": "A core temperature of 34.8 °C persists near the end of a long case. Which FOUR complications should be anticipated? (Select 4)",
       "options": [
         "Bleeding from impaired platelets and clotting",
         "Wound infection",
@@ -4139,7 +4139,7 @@
       "id": "PHA-165",
       "set": 1,
       "type": "single",
-      "stem": "In PACU, a hypothermic 72-year-old with CAD is shivering violently and develops ST depression. What links the two?",
+      "stem": "A hypothermic patient with CAD develops ST depression while shivering in PACU. What links these findings?",
       "options": [
         "Shivering increases myocardial oxygen demand",
         "Shivering lowers HR and BP",
@@ -4163,7 +4163,7 @@
       "id": "PHA-166",
       "set": 1,
       "type": "single",
-      "stem": "A patient's core temperature was 34.8 °C for most of a colectomy, and she later develops a wound infection. What mechanism links these?",
+      "stem": "A patient remained hypothermic for most of surgery and later develops a wound infection. Which mechanism best explains the association?",
       "options": [
         "Vasoconstriction and impaired immunity",
         "Hypothermia increases tissue oxygen",
@@ -4187,7 +4187,7 @@
       "id": "PHA-167",
       "set": 1,
       "type": "single",
-      "stem": "A hypothermic patient (34.5 °C) remains weak and sedated an hour after a case despite standard doses. What explains this?",
+      "stem": "A patient at 34.5 °C remains weak and sedated much longer than expected despite standard dosing. Why?",
       "options": [
         "Drug metabolism slows, prolonging drug effects",
         "Hypothermia speeds drug metabolism",
@@ -4211,7 +4211,7 @@
       "id": "PHA-168",
       "set": 1,
       "type": "single",
-      "stem": "A patient's temperature is 35.2 °C near closure. Which emergence effect is MOST likely?",
+      "stem": "Core temperature is 35.2 °C near closure. What effect on emergence is most likely?",
       "options": [
         "Delayed emergence",
         "Faster emergence",
@@ -4235,7 +4235,7 @@
       "id": "PHA-169",
       "set": 1,
       "type": "single",
-      "stem": "Case 1: Ten minutes after incision, BP falls from 125/75 to 72/38, HR 92, ETCO2 unchanged, no obvious bleeding. What is the FIRST step?",
+      "stem": "Ten minutes after incision, BP falls to 72/38 while HR and ETCO2 are unchanged and bleeding is not obvious. What is the first step?",
       "options": [
         "Confirm BP accuracy, then evaluate the mechanism",
         "Give a unit of blood immediately for suspected bleeding",
@@ -4259,7 +4259,7 @@
       "id": "PHA-170",
       "set": 1,
       "type": "single",
-      "stem": "Case 1: The BP is confirmed low. Volatile is at 1.3 MAC and a large bolus of fentanyl was just given. What is the MOST likely mechanism?",
+      "stem": "The low BP is confirmed; volatile is 1.3 MAC and a large fentanyl bolus was just given. What mechanism is most likely?",
       "options": [
         "Anesthetic-induced vasodilation",
         "Hemorrhage from surgical field",
@@ -4283,7 +4283,7 @@
       "id": "PHA-171",
       "set": 1,
       "type": "single",
-      "stem": "Which clinical sign during hemorrhage suggests fluid responsiveness?",
+      "stem": "During hemorrhage, which dynamic hemodynamic finding suggests fluid responsiveness?",
       "options": [
         "Increased pulse pressure variation",
         "Decreased pulse pressure variation",
@@ -4307,7 +4307,7 @@
       "id": "PHA-172",
       "set": 1,
       "type": "single",
-      "stem": "During ongoing hemorrhage in a vascular case, you need frequent labs and beat-to-beat BP. What is the key next step?",
+      "stem": "Ongoing vascular hemorrhage requires frequent labs and beat-to-beat pressure monitoring. What is the key next step?",
       "options": [
         "Place an arterial line",
         "Stop all fluids to avoid dilution",
@@ -4331,7 +4331,7 @@
       "id": "PHA-173",
       "set": 1,
       "type": "single",
-      "stem": "A patient becomes hypotensive after a tourniquet is released. Which mechanism is MOST likely?",
+      "stem": "Hypotension develops immediately after tourniquet release. What mechanism is most likely?",
       "options": [
         "Vasodilation from reperfusion",
         "Hypercarbia from hypoventilation",
@@ -4355,7 +4355,7 @@
       "id": "PHA-174",
       "set": 1,
       "type": "multi",
-      "stem": "A hypothermic patient bleeds more than expected and develops chest pain in PACU. Which effects of hypothermia explain this? (Select 2)",
+      "stem": "A hypothermic patient bleeds more than expected and later develops myocardial ischemia. Which TWO effects of hypothermia help explain this? (Select 2)",
       "options": [
         "Increased myocardial oxygen demand",
         "Impaired platelet function",
@@ -4382,7 +4382,7 @@
       "id": "PHA-175",
       "set": 1,
       "type": "single",
-      "stem": "Three patients receive desflurane, sevoflurane, and isoflurane at 1 MAC for identical cases. Which agent will allow the fastest emergence, and why?",
+      "stem": "Among desflurane, sevoflurane, and isoflurane at equipotent MAC, which agent allows the fastest emergence?",
       "options": [
         "Desflurane",
         "Sevoflurane, because it is the least pungent",
@@ -4406,7 +4406,7 @@
       "id": "PHA-176",
       "set": 1,
       "type": "single",
-      "stem": "You are running sevoflurane in a healthy 40-year-old. What end-tidal concentration is about 1 MAC?",
+      "stem": "For a healthy middle-aged adult, approximately what end-tidal sevoflurane concentration equals 1 MAC?",
       "options": [
         "About 2.0%",
         "About 1.15%",
@@ -4430,7 +4430,7 @@
       "id": "PHA-177",
       "set": 1,
       "type": "single",
-      "stem": "You switch a patient to desflurane. What end-tidal concentration is about 1 MAC?",
+      "stem": "Approximately what end-tidal desflurane concentration equals 1 MAC in a healthy middle-aged adult?",
       "options": [
         "About 6.0%",
         "About 2.0%",
@@ -4454,7 +4454,7 @@
       "id": "PHA-178",
       "set": 1,
       "type": "single",
-      "stem": "A patient is maintained on isoflurane. What end-tidal concentration is about 1 MAC?",
+      "stem": "Approximately what end-tidal isoflurane concentration equals 1 MAC in a healthy middle-aged adult?",
       "options": [
         "About 1.15%",
         "About 2.0%",
@@ -4478,7 +4478,7 @@
       "id": "PHA-179",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance, desflurane is abruptly increased from 6% to 12%. HR rises to 125 and BP to 170/95. What explains this?",
+      "stem": "Desflurane is rapidly increased from 6% to 12%, followed by tachycardia and hypertension. What explains this response?",
       "options": [
         "Pungency-driven sympathetic stimulation",
         "Desflurane causes bradycardia",
@@ -4502,7 +4502,7 @@
       "id": "PHA-180",
       "set": 1,
       "type": "single",
-      "stem": "A child with asthma needs a mask induction. Which agent fits BEST?",
+      "stem": "A child with asthma needs an inhalation induction. Which volatile agent is best suited?",
       "options": [
         "Sevoflurane",
         "Desflurane, which is pungent",
@@ -4526,7 +4526,7 @@
       "id": "PHA-181",
       "set": 1,
       "type": "single",
-      "stem": "Two identical patients receive isoflurane and sevoflurane for 3-hour cases. The isoflurane patient takes longer to wake. Why?",
+      "stem": "After identical 3-hour anesthetics, the isoflurane patient wakes more slowly than the sevoflurane patient. Why?",
       "options": [
         "Higher blood-gas solubility",
         "Isoflurane has lower potency",
@@ -4550,7 +4550,7 @@
       "id": "PHA-182",
       "set": 1,
       "type": "single",
-      "stem": "A 30-year-old and an 80-year-old both receive sevoflurane at 2.0%. Which patient is MORE likely to become hypotensive, and why?",
+      "stem": "A 30-year-old and an 80-year-old both receive 2% sevoflurane. Which patient is more likely to be excessively deep and hypotensive?",
       "options": [
         "The 80-year-old, because MAC decreases with age",
         "The 30-year-old, because MAC increases with age",
@@ -4574,7 +4574,7 @@
       "id": "PHA-183",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance with desflurane, which fresh gas flow meets the ASA low-flow quality measure?",
+      "stem": "What fresh-gas-flow threshold meets the lecture's low-flow quality target for desflurane?",
       "options": [
         "1 L/min or less",
         "2 L/min or less",
@@ -4598,7 +4598,7 @@
       "id": "PHA-184",
       "set": 1,
       "type": "single",
-      "stem": "During maintenance with sevoflurane, which fresh gas flow meets the ASA low-flow quality measure?",
+      "stem": "What fresh-gas-flow threshold meets the lecture's low-flow quality target for sevoflurane?",
       "options": [
         "2 L/min or less",
         "1 L/min or less",
@@ -4622,7 +4622,7 @@
       "id": "PHA-185",
       "set": 1,
       "type": "multi",
-      "stem": "Your department is adopting a low-flow anesthesia policy. Which benefits support it? (Select 3)",
+      "stem": "Which THREE benefits support low-flow volatile anesthesia? (Select 3)",
       "options": [
         "Lower volatile consumption",
         "Reduced cost and waste",
@@ -4650,7 +4650,7 @@
       "id": "PHA-186",
       "set": 1,
       "type": "single",
-      "stem": "You are running sevoflurane at 1 L/min and need to rapidly deepen for incision. What adjustment is appropriate?",
+      "stem": "Sevoflurane is running at low flow, but anesthetic depth must increase rapidly before incision. What adjustment speeds the change?",
       "options": [
         "Briefly raise fresh gas flow",
         "Keep low flow and wait",
@@ -4674,7 +4674,7 @@
       "id": "PHA-187",
       "set": 1,
       "type": "multi",
-      "stem": "Which cases favor TIVA during maintenance? (Select 2)",
+      "stem": "Which TWO situations particularly favor TIVA during maintenance? (Select 2)",
       "options": [
         "Neuromonitoring",
         "Significant PONV history",
@@ -4701,7 +4701,7 @@
       "id": "PHA-188",
       "set": 1,
       "type": "single",
-      "stem": "An 84-year-old with mild cognitive impairment is scheduled for a hip fracture repair under GA. Why might TIVA be chosen?",
+      "stem": "Why might TIVA be favored in an older patient with cognitive vulnerability?",
       "options": [
         "Less postoperative delirium",
         "Older patients clear propofol faster than volatile agents",
@@ -4725,7 +4725,7 @@
       "id": "PHA-189",
       "set": 1,
       "type": "multi",
-      "stem": "You plan TIVA for a spine case with neuromonitoring. Which drugs are commonly used? (Select 3)",
+      "stem": "Which THREE drugs are commonly used as components of TIVA? (Select 3)",
       "options": [
         "Propofol",
         "Remifentanil",
@@ -4753,7 +4753,7 @@
       "id": "PHA-190",
       "set": 1,
       "type": "multi",
-      "stem": "You are setting up TIVA for a 6-hour spine case. Which safety steps are essential? (Select 4)",
+      "stem": "Which FOUR setup steps are essential for safe TIVA during a long case? (Select 4)",
       "options": [
         "Enough drug drawn up or available for the full case",
         "The pump on emergency power with a charged battery",
@@ -4782,7 +4782,7 @@
       "id": "PHA-191",
       "set": 1,
       "type": "single",
-      "stem": "Halfway through a TIVA case, the propofol syringe runs out and pharmacy is slow to restock. What principle would have prevented a gap in anesthesia?",
+      "stem": "The propofol syringe empties mid-case and replacement is delayed. Which planning principle would have prevented the anesthetic gap?",
       "options": [
         "Always have a backup plan and enough drug",
         "Use one drug for simplicity",
@@ -4806,7 +4806,7 @@
       "id": "PHA-192",
       "set": 1,
       "type": "single",
-      "stem": "Case 9: BP and HR rise, and BIS increases. You discover the TIVA infusion is not being delivered. What is the FIRST action?",
+      "stem": "During TIVA, HR, BP, and BIS all rise because the infusion is not reaching the patient. What is the first action?",
       "options": [
         "Restore anesthesia immediately with a bolus or volatile",
         "Increase the infusion rate on the same line",
@@ -4830,7 +4830,7 @@
       "id": "PHA-193",
       "set": 1,
       "type": "single",
-      "stem": "A paralyzed patient becomes light during a case. Why might you not notice?",
+      "stem": "Why can inadequate anesthetic depth be harder to detect in a fully paralyzed patient?",
       "options": [
         "NMB removes movement as a warning sign",
         "NMB increases anesthetic depth",
@@ -4854,7 +4854,7 @@
       "id": "PHA-194",
       "set": 1,
       "type": "single",
-      "stem": "During TIVA, which monitor helps confirm adequate hypnosis since you cannot measure end-tidal agent?",
+      "stem": "During TIVA, which monitor is especially useful because there is no end-tidal anesthetic concentration to follow?",
       "options": [
         "Processed EEG",
         "End-tidal agent analysis",
@@ -4878,7 +4878,7 @@
       "id": "PHA-195",
       "set": 1,
       "type": "single",
-      "stem": "An 85-year-old with dementia has a BIS of 32 at 0.6 MAC, and a nearby cautery causes BIS spikes. How should you interpret these values?",
+      "stem": "An older patient with dementia has BIS 32, and cautery causes abrupt spikes. How should these processed-EEG values be interpreted?",
       "options": [
         "Several factors alter the reading",
         "A low BIS means excessive depth in every patient",
@@ -4902,7 +4902,7 @@
       "id": "PHA-196",
       "set": 1,
       "type": "single",
-      "stem": "You can give fentanyl as repeated boluses or as an infusion during a long case. What advantage does a continuous infusion offer?",
+      "stem": "During a long case, what advantage can an opioid infusion offer over repeated boluses?",
       "options": [
         "Stable plasma levels with a lower total dose",
         "Faster emergence after long cases",
@@ -4926,7 +4926,7 @@
       "id": "PHA-197",
       "set": 1,
       "type": "single",
-      "stem": "A remifentanil infusion needs very precise delivery at a low rate. Which device is MOST precise?",
+      "stem": "A low-rate remifentanil infusion requires highly precise delivery. Which device is most appropriate?",
       "options": [
         "A syringe pump",
         "A gravity drip",
@@ -4950,7 +4950,7 @@
       "id": "PHA-198",
       "set": 1,
       "type": "multi",
-      "stem": "Your ambulatory center adopts opioid-sparing ERAS for laparoscopic cholecystectomy. Which benefits might you see? (Select 3)",
+      "stem": "Which THREE benefits may result from an opioid-sparing ERAS pathway? (Select 3)",
       "options": [
         "Shorter time to discharge",
         "Fewer unplanned admissions",
@@ -4978,7 +4978,7 @@
       "id": "PHA-199",
       "set": 1,
       "type": "multi",
-      "stem": "You are building an opioid-sparing plan for a laparoscopic colectomy. Which nonopioid adjuncts fit? (Select 4)",
+      "stem": "Which FOUR nonopioid adjuncts fit an opioid-sparing plan for major abdominal surgery? (Select 4)",
       "options": [
         "NSAIDs",
         "Acetaminophen",
@@ -5007,7 +5007,7 @@
       "id": "PHA-200",
       "set": 1,
       "type": "multi",
-      "stem": "Your group is rolling out opioid-sparing anesthesia. Which challenges should you expect? (Select 2)",
+      "stem": "Which TWO implementation challenges commonly accompany opioid-sparing anesthesia pathways? (Select 2)",
       "options": [
         "Technical demands of regional blocks",
         "Need for interdisciplinary collaboration",
