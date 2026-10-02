@@ -43,6 +43,27 @@ for(const group of buckets.values()){
 }
 const hazards=rows.filter(r=>r.file==='hazards.json'),hazSet2=hazards.filter(r=>r.set===2),uniqueHaz2=new Set(hazSet2.map(r=>r.norm)).size;
 if(hazSet2.length===100&&uniqueHaz2<95)failures.push('Hazards Set 2 regressed to only '+uniqueHaz2+' unique normalized stems across 100 questions.');
+
+const bpManifest=JSON.parse(fs.readFileSync(path.join(root,'basic-principles/exam-1/banks.json'),'utf8')),bpRows=[],bpIds=new Set();
+for(const source of bpManifest.studioSources||[]){
+ const payload=JSON.parse(fs.readFileSync(path.join(root,'basic-principles/exam-1',source.data),'utf8')),qs=Array.isArray(payload)?payload:(payload.questions||[]);
+ for(const q of qs){
+  const id=String(q.id??''),globalId=source.key+'::'+id,opts=(q.options??q.c??[]).map(norm),stem=String(q.stem??q.q??''),answers=keyed(q);
+  if(bpIds.has(globalId))failures.push('Basic Principles duplicate global id '+globalId);bpIds.add(globalId);
+  bpRows.push({source:source.key,id,globalId,stem,norm:norm(stem),key:answers,optionSig:JSON.stringify([...opts].sort()),recordSig:JSON.stringify([norm(stem),[...opts].sort(),answers])});
+ }
+}
+const bpExact=new Map(),bpRecords=new Map();
+for(const r of bpRows){if(r.norm){if(!bpExact.has(r.norm))bpExact.set(r.norm,[]);bpExact.get(r.norm).push(r)}if(!bpRecords.has(r.recordSig))bpRecords.set(r.recordSig,[]);bpRecords.get(r.recordSig).push(r)}
+let bpExactGroups=0,bpDuplicateRecords=0;
+for(const group of bpExact.values()){
+ if(group.length<2)continue;bpExactGroups++;
+ const sameOptions=new Map();for(const item of group){if(!sameOptions.has(item.optionSig))sameOptions.set(item.optionSig,[]);sameOptions.get(item.optionSig).push(item)}
+ for(const same of sameOptions.values())if(same.length>1&&new Set(same.map(x=>JSON.stringify(x.key))).size>1)failures.push('Basic Principles same stem/options have conflicting keyed answers: '+same.map(x=>x.globalId).join(', '));
+}
+for(const group of bpRecords.values())if(group.length>1){bpDuplicateRecords++;warnings.push('Basic Principles duplicate normalized record: '+group.map(x=>x.globalId).join(', '))}
+if(bpRows.length!==3500)failures.push('Basic Principles semantic audit saw '+bpRows.length+' questions instead of 3500');
+
 for(const w of warnings.slice(0,50))console.warn('SEMANTIC WARNING: '+w);
 if(failures.length){console.error('\nSEMANTIC CONTENT AUDIT FAILED\n- '+failures.join('\n- '));process.exit(1)}
-console.log('Semantic content audit passed across '+rows.length+' questions: '+exactGroups+' exact duplicate groups, '+crossSetExact+' cross-set exact groups, '+nearPairs+' near-duplicate pairs, '+warnings.length+' warnings, no conflicting exact-answer keys.');
+console.log('Semantic content audit passed across '+rows.length+' Equipment and '+bpRows.length+' Basic Principles questions: Basic Principles '+bpExactGroups+' exact-stem groups, '+bpDuplicateRecords+' duplicate normalized-record groups; '+warnings.length+' total warnings; no conflicting exact-answer keys.');
