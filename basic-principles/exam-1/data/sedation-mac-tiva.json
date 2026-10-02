@@ -2624,7 +2624,7 @@
       "id": "SED-108",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the apnea timeline. Why does SpO2 stay near 99% for several minutes after breathing stops?",
+      "stem": "During deep sedation with supplemental oxygen, ventilation stops but SpO2 remains near 99% for several minutes. Why?",
       "options": [
         "Supplemental oxygen raises oxygen reserve and delays desaturation",
         "Pulse oximetry measures ventilation rather than oxygenation",
@@ -2638,12 +2638,7 @@
       "citation": "",
       "topic": "Monitoring and capnography",
       "sourceTitle": "Sedation, MAC & TIVA",
-      "image": {
-        "kind": "direct",
-        "url": "figures/sedation-mac-tiva/fig-35.svg",
-        "id": 35,
-        "title": "Figure 35"
-      },
+      "image": null,
       "sourceMeta": {
         "sourcePackage": "Sedation_MAC_TIVA",
         "originalFigure": 35
@@ -2653,7 +2648,7 @@
       "id": "SED-109",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the apnea timeline. A patient on 6 L nasal cannula becomes apneic at 10:00. If only pulse oximetry were monitored, when would the problem first appear?",
+      "stem": "A patient receiving 6 L/min by nasal cannula becomes apneic at 10:00. If only pulse oximetry is monitored, when would the problem most likely first become apparent?",
       "options": [
         "Several minutes after apnea begins",
         "Within seconds of apnea",
@@ -2667,12 +2662,7 @@
       "citation": "",
       "topic": "Monitoring and capnography",
       "sourceTitle": "Sedation, MAC & TIVA",
-      "image": {
-        "kind": "direct",
-        "url": "figures/sedation-mac-tiva/fig-35.svg",
-        "id": 35,
-        "title": "Figure 35"
-      },
+      "image": null,
       "sourceMeta": {
         "sourcePackage": "Sedation_MAC_TIVA",
         "originalFigure": 35
@@ -3070,7 +3060,7 @@
       "id": "SED-126",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the apnea timeline. A patient on 6 L nasal cannula stops breathing at minute 2. Which sequence of monitor changes is MOST likely?",
+      "stem": "A deeply sedated patient on 6 L/min nasal cannula becomes apneic. Which sequence of monitor changes is MOST likely?",
       "options": [
         "ETCO2 drops at once; SpO2 stays normal for minutes",
         "SpO2 drops first; ETCO2 then confirms the apnea",
@@ -3084,12 +3074,7 @@
       "citation": "",
       "topic": "Monitoring and capnography",
       "sourceTitle": "Sedation, MAC & TIVA",
-      "image": {
-        "kind": "direct",
-        "url": "figures/sedation-mac-tiva/fig-35.svg",
-        "id": 35,
-        "title": "Figure 35"
-      },
+      "image": null,
       "sourceMeta": {
         "sourcePackage": "Sedation_MAC_TIVA",
         "originalFigure": 35
