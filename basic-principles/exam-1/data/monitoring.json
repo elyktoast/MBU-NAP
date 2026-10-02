@@ -6223,7 +6223,7 @@
       "id": "MON-251",
       "set": 1,
       "type": "single",
-      "stem": "How does a pulse oximeter separate arterial blood from venous blood and tissue?",
+      "stem": "How does a conventional pulse oximeter distinguish arterial blood from venous blood and surrounding tissue?",
       "options": [
         "It isolates the pulsatile signal",
         "It measures venous saturation separately",
@@ -6247,7 +6247,7 @@
       "id": "MON-252",
       "set": 1,
       "type": "single",
-      "stem": "What type of saturation does SpO2 measure?",
+      "stem": "Which type of hemoglobin saturation is reported by standard pulse oximetry?",
       "options": [
         "Functional saturation",
         "Fractional saturation",
@@ -6271,7 +6271,7 @@
       "id": "MON-253",
       "set": 1,
       "type": "single",
-      "stem": "Methemoglobinemia tends to drive SpO2 toward what value?",
+      "stem": "A patient develops methemoglobinemia. Toward what SpO2 value does the monitor tend to drift regardless of true saturation?",
       "options": [
         "About 85%",
         "About 70%",
@@ -6295,7 +6295,7 @@
       "id": "MON-254",
       "set": 1,
       "type": "single",
-      "stem": "How does carboxyhemoglobin affect SpO2?",
+      "stem": "How does carboxyhemoglobin typically bias a standard pulse-oximeter reading?",
       "options": [
         "Falsely high readings",
         "Falsely low readings",
@@ -6319,7 +6319,7 @@
       "id": "MON-255",
       "set": 1,
       "type": "multi",
-      "stem": "Which conditions shift the oxyhemoglobin curve to the right? (Select 2)",
+      "stem": "Which TWO conditions shift the oxyhemoglobin dissociation curve to the right? (Select 2)",
       "options": [
         "Hypercapnia",
         "Acidosis",
@@ -6346,7 +6346,7 @@
       "id": "MON-256",
       "set": 1,
       "type": "single",
-      "stem": "A septic patient is febrile and acidotic. How does this shift the oxyhemoglobin curve, and what is the effect?",
+      "stem": "A septic patient is febrile and acidotic. How will the oxyhemoglobin curve shift, and what is the physiologic effect?",
       "options": [
         "Right shift; better tissue O2 release",
         "Left shift, raising Hb affinity",
@@ -6370,7 +6370,7 @@
       "id": "MON-257",
       "set": 1,
       "type": "single",
-      "stem": "An ABG shows PaO2 60 mmHg in a patient breathing room air in PACU. What SpO2 would you expect?",
+      "stem": "An ABG shows PaO2 60 mmHg. Approximately what SpO2 corresponds to this point on the oxyhemoglobin curve?",
       "options": [
         "About 90%",
         "About 80%",
@@ -6394,7 +6394,7 @@
       "id": "MON-258",
       "set": 1,
       "type": "single",
-      "stem": "What happens once PaO2 falls onto the steep portion of the curve?",
+      "stem": "Why does oxygen saturation begin to fall rapidly once PaO2 reaches the steep portion of the dissociation curve?",
       "options": [
         "Desaturation accelerates rapidly",
         "Desaturation slows down",
@@ -6418,7 +6418,7 @@
       "id": "MON-259",
       "set": 1,
       "type": "single",
-      "stem": "A pulse oximeter reads 92%. Within what range is the true saturation likely to fall?",
+      "stem": "A pulse oximeter reads 92%. Given typical device accuracy, what range likely contains the true saturation?",
       "options": [
         "About 89–95%",
         "About 82–102%",
@@ -6442,7 +6442,7 @@
       "id": "MON-260",
       "set": 1,
       "type": "multi",
-      "stem": "Which factors impair pulse oximetry accuracy? (Select 4)",
+      "stem": "Which FOUR factors can significantly degrade pulse-oximeter accuracy? (Select 4)",
       "options": [
         "Motion",
         "Low perfusion",
@@ -6471,7 +6471,7 @@
       "id": "MON-261",
       "set": 1,
       "type": "single",
-      "stem": "A sedated patient on 6 L nasal cannula becomes apneic. SpO2 stays 99% for 4 minutes. Why is pulse oximetry a poor indicator of ventilation?",
+      "stem": "A sedated patient on 6 L/min nasal oxygen becomes apneic but SpO2 remains 99% for several minutes. What limitation of pulse oximetry does this demonstrate?",
       "options": [
         "Supplemental O2 delays desaturation after apnea",
         "Pulse oximetry measures CO2",
@@ -6495,7 +6495,7 @@
       "id": "MON-262",
       "set": 1,
       "type": "single",
-      "stem": "In pediatric anesthesia, pulse oximetry is more sensitive than capnography for detecting what?",
+      "stem": "In pediatric anesthesia, pulse oximetry may detect which ETT-position problem sooner than capnography?",
       "options": [
         "Unrecognized mainstem intubation",
         "Esophageal intubation before CO2 fades from the trace",
@@ -6519,7 +6519,7 @@
       "id": "MON-263",
       "set": 1,
       "type": "single",
-      "stem": "A patient in septic shock has SpO2 of 98%, but lactate is rising and she is mottled. What does pulse oximetry NOT measure?",
+      "stem": "A septic patient has SpO2 98% but worsening mottling and lactate. What clinically important variable does SpO2 not measure?",
       "options": [
         "Tissue oxygen delivery or use",
         "Arterial saturation",
@@ -6543,7 +6543,7 @@
       "id": "MON-264",
       "set": 1,
       "type": "single",
-      "stem": "A smoke-inhalation patient has SpO2 99% but is confused. Which device can identify COHb?",
+      "stem": "Which monitor is required to distinguish carboxyhemoglobin from oxyhemoglobin after smoke inhalation?",
       "options": [
         "A laboratory co-oximeter",
         "A standard pulse oximeter",
@@ -6567,7 +6567,7 @@
       "id": "MON-265",
       "set": 1,
       "type": "single",
-      "stem": "A patient with CO poisoning has SpO2 99%. What is the BEST interpretation?",
+      "stem": "A patient with carbon-monoxide poisoning has SpO2 99%. What is the best interpretation?",
       "options": [
         "SpO2 is falsely high; co-oximetry is needed",
         "Oxygenation is adequate",
@@ -6591,7 +6591,7 @@
       "id": "MON-266",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives methylene blue and SpO2 drops. Why?",
+      "stem": "SpO2 falls immediately after methylene blue administration despite unchanged ventilation and hemodynamics. What is the most likely explanation?",
       "options": [
         "Dyes interfere with pulse oximetry",
         "Methylene blue causes true desaturation",
@@ -6615,7 +6615,7 @@
       "id": "MON-267",
       "set": 1,
       "type": "single",
-      "stem": "A patient asks if there is any reason not to use a pulse oximeter on her. What is correct?",
+      "stem": "Which statement about contraindications to pulse oximetry is correct?",
       "options": [
         "There are no clinical contraindications",
         "It is contraindicated in sickle cell",
@@ -6639,7 +6639,7 @@
       "id": "MON-268",
       "set": 1,
       "type": "single",
-      "stem": "During deep hypothermic arrest at 18 °C, the pulse oximeter loses its signal. Why?",
+      "stem": "During deep hypothermia at 18 °C, the pulse oximeter loses its waveform. What is the most likely mechanism?",
       "options": [
         "Poor perfusion reduces the pulsatile signal",
         "Hypothermia changes light absorption",
@@ -6663,7 +6663,7 @@
       "id": "MON-269",
       "set": 1,
       "type": "single",
-      "stem": "A patient in a cold OR is losing heat. Which mechanism accounts for the largest share?",
+      "stem": "In a cold OR, which mechanism accounts for the greatest proportion of perioperative heat loss?",
       "options": [
         "Radiation",
         "Conduction",
@@ -6687,7 +6687,7 @@
       "id": "MON-270",
       "set": 1,
       "type": "single",
-      "stem": "During an open abdominal case, 200 g of water evaporates from the exposed bowel. About how much heat is lost?",
+      "stem": "About 200 g of water evaporates from exposed bowel during an open case. Approximately how much heat is lost?",
       "options": [
         "About 116 kcal",
         "About 58 kcal",
@@ -6711,7 +6711,7 @@
       "id": "MON-271",
       "set": 1,
       "type": "multi",
-      "stem": "Which are core temperature sites? (Select 4)",
+      "stem": "Which FOUR sites are appropriate core-temperature measurement locations? (Select 4)",
       "options": [
         "Distal esophagus",
         "Bladder",
@@ -6740,7 +6740,7 @@
       "id": "MON-272",
       "set": 1,
       "type": "single",
-      "stem": "A patient's core temperature is 36 °C and skin temperature is 32 °C. What is the approximate mean body temperature?",
+      "stem": "Core temperature is 36 °C and skin temperature is 32 °C. What is the approximate mean body temperature?",
       "options": [
         "About 35.4 °C",
         "About 34.0 °C",
@@ -6764,7 +6764,7 @@
       "id": "MON-273",
       "set": 1,
       "type": "single",
-      "stem": "Which site may lag during active cooling or rewarming?",
+      "stem": "Which temperature site can lag substantially during rapid active cooling or rewarming?",
       "options": [
         "Rectal temperature",
         "Esophageal temperature",
@@ -6788,7 +6788,7 @@
       "id": "MON-274",
       "set": 1,
       "type": "single",
-      "stem": "A patient's skin temperature reads 33 °C but his esophageal temperature is 36.5 °C. Which value represents body heat content?",
+      "stem": "Skin temperature is 33 °C while distal esophageal temperature is 36.5 °C. Which statement best reflects whole-body heat content?",
       "options": [
         "Neither alone; skin poorly reflects mean temperature",
         "Skin, since it reflects heat loss",
@@ -6812,7 +6812,7 @@
       "id": "MON-275",
       "set": 1,
       "type": "single",
-      "stem": "During a sevoflurane case, ETCO2 rises from 38 to 70 despite increased ventilation, and HR climbs to 130. Temperature is 37.2 °C. A colleague says it cannot be MH since there's no fever. What is wrong with this reasoning?",
+      "stem": "ETCO2 rises rapidly despite increased ventilation and HR climbs to 130, but temperature is only 37.2 °C. Why does this NOT rule out malignant hyperthermia?",
       "options": [
         "Hyperthermia is a late sign of MH",
         "MH rarely causes hyperthermia",
@@ -6836,7 +6836,7 @@
       "id": "MON-276",
       "set": 1,
       "type": "multi",
-      "stem": "At the end of a 6-hour case, a patient's temperature is 34.9 °C. Which complications should you expect? (Select 4)",
+      "stem": "At the end of a 6-hour case, core temperature is 34.9 °C. Which FOUR complications should be anticipated? (Select 4)",
       "options": [
         "Shivering with higher oxygen consumption",
         "Impaired coagulation",
@@ -6865,7 +6865,7 @@
       "id": "MON-277",
       "set": 1,
       "type": "single",
-      "stem": "A patient is lightly sedated for a 30-minute hand case under a block. Is continuous temperature monitoring useful?",
+      "stem": "A lightly sedated patient undergoes a 30-minute hand procedure under regional anesthesia. When might continuous temperature monitoring add little useful information?",
       "options": [
         "Often not, since thermoregulation is intact",
         "Yes, it is required for all sedation",
@@ -6889,7 +6889,7 @@
       "id": "MON-278",
       "set": 1,
       "type": "single",
-      "stem": "During a cardiac case with a PA catheter, which temperature site gives the strongest estimate of core temperature?",
+      "stem": "During a cardiac case with a pulmonary-artery catheter, which site provides the best direct estimate of core temperature?",
       "options": [
         "Pulmonary artery blood",
         "Skin surface",
@@ -6913,7 +6913,7 @@
       "id": "MON-279",
       "set": 1,
       "type": "single",
-      "stem": "A patient under a spinal and another under GA both become hypothermic. How do these anesthetics affect thermoregulation?",
+      "stem": "A patient under spinal anesthesia and another under general anesthesia both become hypothermic. What do these anesthetics have in common regarding thermoregulation?",
       "options": [
         "Both inhibit afferent and efferent control",
         "They affect afferent pathways alone",
@@ -6937,7 +6937,7 @@
       "id": "MON-280",
       "set": 1,
       "type": "multi",
-      "stem": "A patient in a cold OR loses heat to the walls, the cold table, and moving air. Which mechanisms are involved? (Select 3)",
+      "stem": "Heat is lost to cool walls, the operating table, and moving air. Which THREE mechanisms are involved? (Select 3)",
       "options": [
         "Radiation",
         "Conduction",
@@ -6965,7 +6965,7 @@
       "id": "MON-281",
       "set": 1,
       "type": "single",
-      "stem": "A patient is actively rewarmed after cardiopulmonary bypass. Why might multiple temperature sites be needed?",
+      "stem": "Why may multiple temperature sites be useful during active rewarming after cardiopulmonary bypass?",
       "options": [
         "Different sites change at different rates",
         "Rectal temperature is the accurate reference",
@@ -6989,7 +6989,7 @@
       "id": "MON-282",
       "set": 1,
       "type": "single",
-      "stem": "A 20-minute cataract case and a 6-hour open case are scheduled. When does ASA require temperature monitoring?",
+      "stem": "Which criterion determines when ASA temperature monitoring is required rather than case duration alone?",
       "options": [
         "When significant changes are expected",
         "For cardiac surgery",
@@ -7013,7 +7013,7 @@
       "id": "MON-283",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, ETCO2 reads 34, 22, 9, then 0 over four breaths while SpO2 is 98%. What is the MOST likely cause?",
+      "stem": "After intubation, ETCO2 values fall 34 → 22 → 9 → 0 over four breaths while SpO2 remains 98%. What diagnosis should be assumed?",
       "options": [
         "Esophageal intubation with washout of swallowed CO2",
         "Bronchospasm causing a shark-fin trace that flattens",
@@ -7037,7 +7037,7 @@
       "id": "MON-284",
       "set": 1,
       "type": "single",
-      "stem": "Laparoscopic cholecystectomy: PIP goes from 22 to 34 and Pplat from 18 to 30 right after insufflation. ETCO2 rises slowly from 36 to 44. What BEST explains both findings?",
+      "stem": "Immediately after pneumoperitoneum, both PIP and plateau rise while ETCO2 increases gradually. Which single process best explains both findings?",
       "options": [
         "Reduced compliance plus CO2 absorption from pneumoperitoneum",
         "Bronchospasm with rising airway resistance and hypoventilation",
@@ -7061,7 +7061,7 @@
       "id": "MON-285",
       "set": 1,
       "type": "single",
-      "stem": "During a case, low exhaled Vt, low PIP, and low ETCO2 alarms all sound together. What is the MOST likely problem?",
+      "stem": "Low exhaled tidal volume, low PIP, and low ETCO2 alarms activate together. What problem should be suspected first?",
       "options": [
         "Circuit disconnection",
         "Bronchospasm with high airway resistance",
@@ -7085,7 +7085,7 @@
       "id": "MON-286",
       "set": 1,
       "type": "multi",
-      "stem": "A small cuff leak develops. Which early signs may appear before alarms? (Select 3)",
+      "stem": "A small cuff leak develops before any alarm threshold is crossed. Which THREE subtle trends may appear first? (Select 3)",
       "options": [
         "Subtle fall in PIP",
         "Lower exhaled volume than set",
@@ -7113,7 +7113,7 @@
       "id": "MON-287",
       "set": 1,
       "type": "single",
-      "stem": "Mid-case, ETCO2 creeps up and the inspired CO2 reads 7 mmHg. FGF is 0.5 L/min. What is the BEST first move?",
+      "stem": "Inspired CO2 rises to 7 mmHg during low-flow anesthesia. What is the best immediate response while troubleshooting the cause?",
       "options": [
         "Raise fresh gas flow and check the absorbent and valves",
         "Increase tidal volume and respiratory rate",
@@ -7137,7 +7137,7 @@
       "id": "MON-288",
       "set": 1,
       "type": "single",
-      "stem": "A COPD patient's capnogram shows a slanted upstroke and ETCO2 of 45. ABG PaCO2 is 58. What explains the gradient?",
+      "stem": "A COPD patient has ETCO2 45 and PaCO2 58 with an obstructive capnogram. What best explains the widened gradient?",
       "options": [
         "V/Q mismatch and dead space from obstructive disease",
         "Rebreathing from exhausted absorbent in the circuit",
@@ -7161,7 +7161,7 @@
       "id": "MON-289",
       "set": 1,
       "type": "single",
-      "stem": "During a hip replacement, ETCO2 falls from 38 to 22 with a normal waveform and BP falls. What is MOST likely?",
+      "stem": "During hip arthroplasty, ETCO2 falls abruptly with a preserved waveform and hypotension develops. What should be suspected?",
       "options": [
         "Reduced pulmonary blood flow, such as embolism",
         "Circuit disconnection at the Y-piece",
@@ -7185,7 +7185,7 @@
       "id": "MON-290",
       "set": 1,
       "type": "single",
-      "stem": "Midway through a case, inspired O2, ETCO2, and agent concentration all read near zero, but the patient's chest rises normally and SpO2 is 99%. What is MOST likely?",
+      "stem": "FiO2, ETCO2, and anesthetic-agent readings all fall near zero simultaneously, but chest rise and SpO2 remain normal. What is most likely?",
       "options": [
         "A sampling line disconnection or occlusion",
         "A sudden drop in cardiac output",
@@ -7209,7 +7209,7 @@
       "id": "MON-291",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 rises from 38 to 55 while FiO2 and end-tidal agent stay unchanged. Which category should you investigate first?",
+      "stem": "Only ETCO2 rises from 38 to 55 while FiO2 and agent concentration remain stable. Which source should be investigated first?",
       "options": [
         "A patient cause",
         "An equipment problem",
@@ -7233,7 +7233,7 @@
       "id": "MON-292",
       "set": 1,
       "type": "single",
-      "stem": "A patient under GA has a notch in the plateau of each capnogram breath and the surgeon reports tight abdominal muscles. What is the BEST action?",
+      "stem": "A notch appears in every alveolar plateau and the surgeon reports increasing abdominal tone. What is the best next step?",
       "options": [
         "Assess neuromuscular block and consider redosing",
         "Give albuterol for bronchospasm",
@@ -7257,7 +7257,7 @@
       "id": "MON-293",
       "set": 1,
       "type": "single",
-      "stem": "A patient's capnogram shows small regular oscillations on the downstroke that match the heart rate. What are they?",
+      "stem": "Small regular oscillations on the capnogram match the heart rate. What are they?",
       "options": [
         "Cardiogenic oscillations",
         "Curare cleft from spontaneous effort",
@@ -7281,7 +7281,7 @@
       "id": "MON-294",
       "set": 1,
       "type": "single",
-      "stem": "The O2 analyzer reads FiO2 0.50, but SpO2 falls to 88% and PaO2 is 55. What does this demonstrate?",
+      "stem": "FiO2 is 0.50, but SpO2 is 88% and PaO2 is 55 mmHg. What does this demonstrate about inspired-O2 monitoring?",
       "options": [
         "Adequate inspired O2 does not guarantee arterial oxygenation",
         "The O2 analyzer is miscalibrated and must be replaced",
@@ -7305,7 +7305,7 @@
       "id": "MON-295",
       "set": 1,
       "type": "single",
-      "stem": "A new galvanic O2 sensor reads 18% on room air during checkout. What is the BEST action?",
+      "stem": "A new galvanic O2 sensor reads 18% on room air during checkout. What should be done before the machine is used?",
       "options": [
         "Recalibrate to room air or replace the sensor before use",
         "Proceed since the value is close to 21%",
@@ -7329,7 +7329,7 @@
       "id": "MON-296",
       "set": 1,
       "type": "single",
-      "stem": "During low-flow anesthesia at 0.5 L/min, inspired O2 falls from 50% to 32%. Why?",
+      "stem": "During low-flow anesthesia, inspired O2 falls from 50% to 32% despite unchanged settings. What is the most likely cause?",
       "options": [
         "Metabolic O2 consumption lowers circuit O2 at low flows",
         "The vaporizer is diluting oxygen",
@@ -7353,7 +7353,7 @@
       "id": "MON-297",
       "set": 1,
       "type": "single",
-      "stem": "During a pediatric airway laser case, FiO2 is set at 0.9. What is the MOST important risk?",
+      "stem": "A pediatric airway laser case is being conducted at FiO2 0.90. What is the most important hazard?",
       "options": [
         "Airway fire from high oxygen concentration",
         "Retinopathy of prematurity in all children",
@@ -7377,7 +7377,7 @@
       "id": "MON-298",
       "set": 1,
       "type": "single",
-      "stem": "A patient's SpO2 reads 100% after smoke inhalation, but he is confused and tachycardic. What is MOST likely?",
+      "stem": "After smoke inhalation, SpO2 is 100% despite confusion and tachycardia. What should be suspected?",
       "options": [
         "Carbon monoxide poisoning masking hypoxemia",
         "Methemoglobinemia with true hypoxemia",
@@ -7401,7 +7401,7 @@
       "id": "MON-299",
       "set": 1,
       "type": "single",
-      "stem": "After benzocaine spray, SpO2 falls to 85% and does not improve with 100% O2. What is MOST likely?",
+      "stem": "After benzocaine spray, SpO2 settles near 85% and does not improve with 100% oxygen. What is the most likely diagnosis?",
       "options": [
         "Methemoglobinemia",
         "Carbon monoxide poisoning",
@@ -7425,7 +7425,7 @@
       "id": "MON-300",
       "set": 1,
       "type": "single",
-      "stem": "During a peds case, SpO2 falls from 99% to 92% after the head is flexed, but ETCO2 waveform is unchanged. What is MOST likely?",
+      "stem": "During pediatric anesthesia, SpO2 falls after head flexion while the ETCO2 waveform remains unchanged. Which airway problem is most likely?",
       "options": [
         "Mainstem intubation detected by oximetry first",
         "Esophageal intubation detected by oximetry first",
