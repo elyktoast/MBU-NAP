@@ -108,7 +108,7 @@ const bpManifest=JSON.parse(fs.readFileSync(path.join(root,'basic-principles/exa
 for(const source of bpManifest.studioSources||[]){
  const payload=JSON.parse(fs.readFileSync(path.join(root,'basic-principles/exam-1',source.data),'utf8')),qs=Array.isArray(payload)?payload:(payload.questions||[]);
  bp.lectures[source.label]={count:qs.length,topics:{}};
- for(const q of qs){bp.total++;const topic=String(q.topic||'Unspecified'),type=String(q.type||'unspecified');bp.topics[topic]=(bp.topics[topic]||0)+1;bp.types[type]=(bp.types[type]||0)+1;bp.lectures[source.label].topics[topic]=(bp.lectures[source.label].topics[topic]||0)+1;if(!String(q.explanation??q.exp??q.rationale??'').trim())bp.explanations.missing++;if(!String(q.citation??q.src??'').trim())bp.citations.missing++;const image=String(q.img??q.imageSvg??q.image??'').trim();if(image){bp.figures.references++;bpFigures.add(image)}}
+ for(const q of qs){bp.total++;const topic=String(q.topic||'Unspecified'),type=String(q.type||'unspecified');bp.topics[topic]=(bp.topics[topic]||0)+1;bp.types[type]=(bp.types[type]||0)+1;bp.lectures[source.label].topics[topic]=(bp.lectures[source.label].topics[topic]||0)+1;if(!String(q.explanation??q.exp??q.rationale??'').trim())bp.explanations.missing++;if(!String(q.citation??q.src??'').trim())bp.citations.missing++;const rawImage=q.img??q.imageSvg??q.image??'',image=String(typeof rawImage==='object'?(rawImage.url||''):rawImage).trim();if(image){bp.figures.references++;bpFigures.add(image)}}
 }
 bp.figures.unique=bpFigures.size;report.basicPrinciples=bp;
 
