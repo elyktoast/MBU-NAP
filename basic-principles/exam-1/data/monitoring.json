@@ -1249,7 +1249,7 @@
       "id": "MON-051",
       "set": 1,
       "type": "single",
-      "stem": "During a case, you notice a sweet smell near the machine. Why does the multisensory vigilance approach include smell?",
+      "stem": "During a stable case, a sweet volatile odor is noticed near the machine. Which hazard can the sense of smell help detect?",
       "options": [
         "To detect volatile agent leaks",
         "To detect infection",
@@ -1273,7 +1273,7 @@
       "id": "MON-052",
       "set": 1,
       "type": "single",
-      "stem": "Two hours into a stable case, all vitals are normal. Which approach to vigilance is correct?",
+      "stem": "Two hours into an uneventful case, all values are stable. How should provider vigilance change?",
       "options": [
         "Vigilance stays continuous, not intermittent",
         "Vigilance is needed mainly during induction",
@@ -1297,7 +1297,7 @@
       "id": "MON-053",
       "set": 1,
       "type": "single",
-      "stem": "A facility's policy allows NIBP every 10 minutes during GA \"to reduce cuff trauma.\" Which source defines the minimum standard of care?",
+      "stem": "A facility policy permits NIBP every 10 minutes during GA. Which standard determines the minimum acceptable monitoring interval?",
       "options": [
         "The ASA and AANA monitoring standards",
         "Facility policy, which overrides national standards",
@@ -1321,7 +1321,7 @@
       "id": "MON-054",
       "set": 1,
       "type": "single",
-      "stem": "The notes say \"GETA backup to everything.\" What does this imply for MAC or regional cases?",
+      "stem": "The lecture states 'GETA backup to everything.' What should that change about preparation for MAC or regional anesthesia?",
       "options": [
         "Be ready to convert to general anesthesia with an ETT",
         "Start with GETA before any regional technique",
@@ -1345,7 +1345,7 @@
       "id": "MON-055",
       "set": 1,
       "type": "multi",
-      "stem": "Which drug categories does MS MAID list? (Select 3)",
+      "stem": "Which THREE broad drug categories are included in MS MAID preparation? (Select 3)",
       "options": [
         "Induction and maintenance",
         "Emergency drugs",
@@ -1373,7 +1373,7 @@
       "id": "MON-056",
       "set": 1,
       "type": "multi",
-      "stem": "You are setting up IV equipment for a trauma laparotomy. Which items belong in your IV setup? (Select 3)",
+      "stem": "For a trauma laparotomy, which THREE elements belong in IV setup planning? (Select 3)",
       "options": [
         "Fluid type and tubing",
         "Pumps and a rapid infuser",
@@ -1401,7 +1401,7 @@
       "id": "MON-057",
       "set": 1,
       "type": "single",
-      "stem": "What is the standard ASA monitor list on the MS MAID slide?",
+      "stem": "Which combination best matches the standard monitor list presented on the MS MAID slide?",
       "options": [
         "ECG, NIBP, ETCO2, SpO2, EMG, Fi and Fe gases",
         "ECG, NIBP, SpO2, and temperature",
@@ -1425,7 +1425,7 @@
       "id": "MON-058",
       "set": 1,
       "type": "single",
-      "stem": "Why is it important to know where you are in the case timeline?",
+      "stem": "Why should the anesthesia provider continuously know where the surgeon is in the case?",
       "options": [
         "To anticipate stimulation, blood loss, and emergence",
         "To tell the surgeon how long they have left",
@@ -1449,7 +1449,7 @@
       "id": "MON-059",
       "set": 1,
       "type": "single",
-      "stem": "A department installs advanced monitoring and expects adverse events to disappear. What is the BEST response?",
+      "stem": "A department buys advanced monitors and expects technology alone to eliminate adverse events. What is the most important limitation of that assumption?",
       "options": [
         "Monitors help but do not prevent harm without action",
         "Monitors prevent most harm when alarms are set correctly",
@@ -1473,7 +1473,7 @@
       "id": "MON-060",
       "set": 1,
       "type": "single",
-      "stem": "During a case, PIP rises from 20 to 35 while plateau pressure stays at 17. Which compliance has changed?",
+      "stem": "PIP rises from 20 to 35 cmH2O while plateau remains 17. Which component of respiratory mechanics has changed?",
       "options": [
         "Dynamic compliance, reflected by PIP",
         "Static compliance, reflected by plateau",
@@ -1497,7 +1497,7 @@
       "id": "MON-061",
       "set": 1,
       "type": "single",
-      "stem": "A patient's tidal volume is 500 mL, plateau pressure is 25, and PEEP is 5. What is his static compliance?",
+      "stem": "Tidal volume is 500 mL, plateau pressure 25 cmH2O, and PEEP 5 cmH2O. What is static compliance?",
       "options": [
         "25 mL/cmH2O",
         "20 mL/cmH2O",
@@ -1521,7 +1521,7 @@
       "id": "MON-062",
       "set": 1,
       "type": "single",
-      "stem": "In a patient without lung disease, how do PIP and plateau pressure compare?",
+      "stem": "In a patient with normal respiratory mechanics, how should PIP compare with plateau pressure?",
       "options": [
         "PIP equals or is slightly greater than plateau",
         "PIP is at least 15 cmH2O above plateau",
@@ -1545,7 +1545,7 @@
       "id": "MON-063",
       "set": 1,
       "type": "single",
-      "stem": "PIP and plateau pressure both rise by the same amount. What does this imply?",
+      "stem": "PIP and plateau pressure both rise by approximately the same amount. Which mechanism is most likely?",
       "options": [
         "Increased tidal volume or decreased compliance",
         "Increased airway resistance or inspiratory flow",
@@ -1569,7 +1569,7 @@
       "id": "MON-064",
       "set": 1,
       "type": "single",
-      "stem": "PIP rises while plateau pressure stays the same. What does this signal?",
+      "stem": "PIP rises markedly while plateau pressure is unchanged. Which mechanism is most likely?",
       "options": [
         "Increased airway resistance or inspiratory flow",
         "Decreased compliance from pneumoperitoneum",
@@ -1593,7 +1593,7 @@
       "id": "MON-065",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the airway pressure traces. What does Trace J (PIP 38, Pplat 19) MOST suggest?",
+      "stem": "A pressure trace shows PIP 38 and plateau 19 cmH2O. Which problem does this pattern most strongly suggest?",
       "options": [
         "Increased airway resistance, such as a kink or bronchospasm",
         "Decreased lung compliance from abdominal insufflation",
@@ -1622,7 +1622,7 @@
       "id": "MON-066",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the airway pressure traces. What does Trace K (PIP 36, Pplat 33) MOST suggest?",
+      "stem": "A pressure trace shows PIP 36 and plateau 33 cmH2O. Which problem does this pattern most strongly suggest?",
       "options": [
         "Decreased compliance, such as insufflation or pneumothorax",
         "Increased resistance from a kinked ETT",
@@ -1651,7 +1651,7 @@
       "id": "MON-067",
       "set": 1,
       "type": "single",
-      "stem": "PIP rises from 22 to 38 while plateau is unchanged. What is the quickest bedside step to rule out secretions or a kinked ETT?",
+      "stem": "PIP rises from 22 to 38 while plateau remains unchanged. What is the quickest bedside maneuver to evaluate for an ETT obstruction?",
       "options": [
         "Pass a suction catheter down the tube",
         "Increase inspiratory flow and recheck PIP",
@@ -1675,7 +1675,7 @@
       "id": "MON-068",
       "set": 1,
       "type": "multi",
-      "stem": "Which causes increase PIP WITHOUT changing plateau pressure? (Select 2)",
+      "stem": "Which TWO problems raise PIP without significantly changing plateau pressure? (Select 2)",
       "options": [
         "Kinked endotracheal tube",
         "Bronchospasm",
@@ -1702,7 +1702,7 @@
       "id": "MON-069",
       "set": 1,
       "type": "multi",
-      "stem": "Which causes increase BOTH PIP and plateau pressure? (Select 4)",
+      "stem": "Which FOUR conditions can raise both PIP and plateau pressure? (Select 4)",
       "options": [
         "Laparoscopic insufflation",
         "Pneumothorax",
@@ -1731,7 +1731,7 @@
       "id": "MON-070",
       "set": 1,
       "type": "single",
-      "stem": "A student draws a pressure-volume loop with pressure on the vertical axis. What is the correct orientation?",
+      "stem": "A trainee plots pressure vertically and volume horizontally on a pressure-volume loop. What is the correct axis orientation?",
       "options": [
         "Volume vertical, pressure horizontal",
         "Pressure vertical, volume horizontal",
@@ -1755,7 +1755,7 @@
       "id": "MON-071",
       "set": 1,
       "type": "single",
-      "stem": "After a patient is placed in steep Trendelenburg, the P-V loop flattens and rotates toward the pressure axis. What does this loop primarily assess?",
+      "stem": "After steep Trendelenburg, the pressure-volume loop flattens toward the pressure axis. Which respiratory property is primarily being assessed?",
       "options": [
         "Lung compliance",
         "Airway resistance",
@@ -1779,7 +1779,7 @@
       "id": "MON-072",
       "set": 1,
       "type": "single",
-      "stem": "An asthmatic patient's flow-volume loop shows a scooped, reduced expiratory limb. What does this loop primarily assess?",
+      "stem": "An asthmatic patient develops a scooped expiratory limb on the flow-volume loop. Which respiratory property is primarily abnormal?",
       "options": [
         "Airway resistance",
         "Lung compliance",
@@ -1803,7 +1803,7 @@
       "id": "MON-073",
       "set": 1,
       "type": "multi",
-      "stem": "Which conditions DECREASE compliance on a P–V loop? (Select 4)",
+      "stem": "Which FOUR conditions decrease respiratory compliance on a pressure-volume loop? (Select 4)",
       "options": [
         "Pneumothorax",
         "Laparoscopic insufflation",
@@ -1832,7 +1832,7 @@
       "id": "MON-074",
       "set": 1,
       "type": "single",
-      "stem": "A patient with severe emphysema has a P-V loop that rotates toward the volume axis. What change does this indicate?",
+      "stem": "A patient with severe emphysema has a pressure-volume loop shifted toward the volume axis. What mechanical change does this represent?",
       "options": [
         "Increased compliance",
         "Decreased compliance",
@@ -1856,7 +1856,7 @@
       "id": "MON-075",
       "set": 1,
       "type": "single",
-      "stem": "After insufflation, the same 500 mL tidal volume now requires 32 cmH2O instead of 20. How does the P-V loop change?",
+      "stem": "After pneumoperitoneum, the same 500-mL tidal volume requires substantially more pressure. How should the pressure-volume loop change?",
       "options": [
         "It flattens toward the pressure axis",
         "It rotates toward the volume axis",
@@ -1880,7 +1880,7 @@
       "id": "MON-076",
       "set": 1,
       "type": "single",
-      "stem": "A partially kinked ETT increases airway resistance. How does the flow-volume loop change?",
+      "stem": "A partially kinked ETT increases airway resistance. What change should appear on the flow-volume loop?",
       "options": [
         "Expiratory flow falls",
         "Expiratory flow rises",
@@ -1904,7 +1904,7 @@
       "id": "MON-077",
       "set": 1,
       "type": "multi",
-      "stem": "Which causes increase resistance on a flow–volume loop? (Select 2)",
+      "stem": "Which TWO conditions primarily increase airway resistance rather than reduce compliance? (Select 2)",
       "options": [
         "Kinked or obstructed ETT",
         "Bronchospasm",
@@ -1931,7 +1931,7 @@
       "id": "MON-078",
       "set": 1,
       "type": "single",
-      "stem": "A COPD patient has a high residual volume, prolonged expiration, and a scooped expiratory limb. Which pattern is this?",
+      "stem": "High residual volume, prolonged expiration, and a scooped expiratory limb are present. Which pulmonary pattern is this?",
       "options": [
         "Obstructive: trouble getting air out, with larger volumes",
         "Restrictive: trouble getting air in, with smaller volumes",
@@ -1955,7 +1955,7 @@
       "id": "MON-079",
       "set": 1,
       "type": "single",
-      "stem": "A patient with pulmonary fibrosis has small lung volumes and a narrow but normally shaped flow-volume loop. Which pattern is this?",
+      "stem": "Small lung volumes with a narrow but preserved flow-volume shape are present. Which pulmonary pattern is this?",
       "options": [
         "Restrictive: trouble getting air in, with smaller volumes",
         "Obstructive: trouble getting air out, with larger volumes",
@@ -1979,7 +1979,7 @@
       "id": "MON-080",
       "set": 1,
       "type": "multi",
-      "stem": "Flow-volume loops show reduced volumes with preserved flow in two patients. Which conditions are restrictive? (Select 2)",
+      "stem": "Which TWO conditions produce a restrictive flow-volume pattern? (Select 2)",
       "options": [
         "Pulmonary fibrosis",
         "Morbid obesity",
@@ -2006,7 +2006,7 @@
       "id": "MON-081",
       "set": 1,
       "type": "single",
-      "stem": "During a case, the expiratory limb of the loop starts to flatten before the PIP alarm sounds. Which tool detected the problem early?",
+      "stem": "The expiratory limb begins to flatten before any pressure alarm activates. Which monitoring tool detected the change first?",
       "options": [
         "Spirometry loops",
         "Pulse oximetry",
@@ -2030,7 +2030,7 @@
       "id": "MON-082",
       "set": 1,
       "type": "single",
-      "stem": "After insufflation for a laparoscopic cholecystectomy, the loops show reduced volumes and higher pressures. Which pattern does this resemble?",
+      "stem": "After laparoscopic insufflation, respiratory loops show smaller volumes and higher pressures. Which mechanical pattern does this resemble?",
       "options": [
         "A restrictive pattern",
         "An obstructive shark-fin pattern",
@@ -2054,7 +2054,7 @@
       "id": "MON-083",
       "set": 1,
       "type": "multi",
-      "stem": "The circuit disconnects at the Y-piece during mechanical ventilation. Which alarms should activate? (Select 3)",
+      "stem": "The breathing circuit disconnects at the Y-piece. Which THREE alarms should be expected first? (Select 3)",
       "options": [
         "Low peak inspiratory pressure",
         "Low exhaled tidal volume",
@@ -2082,7 +2082,7 @@
       "id": "MON-084",
       "set": 1,
       "type": "multi",
-      "stem": "Which are the three disconnect alarms? (Select 3)",
+      "stem": "Which THREE alarm trends together should immediately suggest a circuit disconnection? (Select 3)",
       "options": [
         "Low peak inspiratory pressure",
         "Low exhaled tidal volume",
@@ -2110,7 +2110,7 @@
       "id": "MON-085",
       "set": 1,
       "type": "single",
-      "stem": "How might a small leak be detected before an alarm threshold is reached?",
+      "stem": "Before a formal disconnect alarm threshold is reached, which trend may reveal a small circuit leak?",
       "options": [
         "Subtle drops in PIP, exhaled volume, or ETCO2",
         "A sudden rise in inspired O2 concentration",
@@ -2134,7 +2134,7 @@
       "id": "MON-086",
       "set": 1,
       "type": "multi",
-      "stem": "Besides disconnect alarms, which ventilator alarms help you detect circuit or patient problems? (Select 4)",
+      "stem": "Beyond disconnect detection, which FOUR ventilator alarms help identify dangerous circuit or patient conditions? (Select 4)",
       "options": [
         "High peak inspiratory pressure",
         "Sustained high airway pressure",
@@ -2163,7 +2163,7 @@
       "id": "MON-087",
       "set": 1,
       "type": "multi",
-      "stem": "Which ventilator parameters should be scanned during a sweep? (Select 2)",
+      "stem": "During a routine ventilator sweep, which TWO parameter groups should be reviewed? (Select 2)",
       "options": [
         "Tidal volume and frequency",
         "Peak and mean airway pressure",
@@ -2190,7 +2190,7 @@
       "id": "MON-088",
       "set": 1,
       "type": "multi",
-      "stem": "Which gases are displayed as inspired and expired concentrations? (Select 3)",
+      "stem": "Which THREE gases are routinely displayed as both inspired and expired concentrations? (Select 3)",
       "options": [
         "O2",
         "CO2",
@@ -2218,7 +2218,7 @@
       "id": "MON-089",
       "set": 1,
       "type": "single",
-      "stem": "A patient is moved into steep Trendelenburg and plateau pressure rises from 18 to 26 with unchanged settings. What changed?",
+      "stem": "After steep Trendelenburg, plateau pressure rises from 18 to 26 with unchanged ventilator settings. Which respiratory property changed?",
       "options": [
         "Compliance",
         "Oxygen consumption",
@@ -2242,7 +2242,7 @@
       "id": "MON-090",
       "set": 1,
       "type": "single",
-      "stem": "During laparoscopy, Pplat rises from 18 to 28 and PIP from 22 to 32. What is the MOST likely cause?",
+      "stem": "During laparoscopy, PIP rises from 22 to 32 and plateau from 18 to 28. Which cause best fits this parallel increase?",
       "options": [
         "Reduced compliance from pneumoperitoneum",
         "Kinked ETT from positioning",
@@ -2266,7 +2266,7 @@
       "id": "MON-091",
       "set": 1,
       "type": "single",
-      "stem": "During a case, PIP rises from 22 to 40 while Pplat stays 18. Breath sounds are equal, and suctioning returns thick secretions. What was the cause?",
+      "stem": "PIP rises from 22 to 40 while plateau remains 18; suctioning retrieves thick secretions. Which mechanism caused the pressure change?",
       "options": [
         "Increased resistance from secretions",
         "Reduced compliance from pneumothorax",
@@ -2290,7 +2290,7 @@
       "id": "MON-092",
       "set": 1,
       "type": "single",
-      "stem": "During a laparoscopy, the patient starts coughing against the ventilator, and the P-V loop flattens toward the pressure axis. What is the MOST likely cause?",
+      "stem": "During laparoscopy, the patient coughs against the ventilator and the pressure-volume loop flattens toward the pressure axis. What is the most likely cause?",
       "options": [
         "Inadequate muscle relaxation",
         "Emphysema",
@@ -2314,7 +2314,7 @@
       "id": "MON-093",
       "set": 1,
       "type": "single",
-      "stem": "A patient with ARDS is ventilated with plateau pressures near 30. Why monitor spirometry loops continuously?",
+      "stem": "A patient with ARDS has plateau pressures approaching 30 cmH2O. Why are continuous spirometry loops useful?",
       "options": [
         "To catch injurious mechanics early",
         "To measure cardiac output",
@@ -2338,7 +2338,7 @@
       "id": "MON-094",
       "set": 1,
       "type": "single",
-      "stem": "Your machine's O2 analyzer responds within seconds and needs no consumable sensor. It works because oxygen is attracted to a magnetic field. Which type is it?",
+      "stem": "An oxygen analyzer responds rapidly, has no consumable sensor, and works because oxygen is attracted to a magnetic field. Which analyzer is this?",
       "options": [
         "Paramagnetic",
         "Galvanic",
@@ -2362,7 +2362,7 @@
       "id": "MON-095",
       "set": 1,
       "type": "single",
-      "stem": "Which O2 sensor is consumed during use?",
+      "stem": "Which oxygen sensor is gradually consumed by the electrochemical reaction that generates its signal?",
       "options": [
         "Galvanic cell",
         "Paramagnetic analyzer",
@@ -2386,7 +2386,7 @@
       "id": "MON-096",
       "set": 1,
       "type": "single",
-      "stem": "An older machine's O2 sensor uses a Clark electrode with an applied voltage. Which reaction occurs at the cathode?",
+      "stem": "A polarographic Clark electrode is used for oxygen analysis. Which reaction occurs at the cathode?",
       "options": [
         "O2 + 2H2O + 4e⁻ → 4OH⁻",
         "2H2O → O2 + 4H⁺ + 4e⁻",
@@ -2410,7 +2410,7 @@
       "id": "MON-097",
       "set": 1,
       "type": "single",
-      "stem": "A technician moves the O2 sensor to the expiratory limb to \"measure what the patient exhales.\" Where should it be placed?",
+      "stem": "A technician places the oxygen sensor in the expiratory limb. Where should it be located to detect hypoxic gas delivery?",
       "options": [
         "The inspired limb",
         "In the expiratory limb",
@@ -2434,7 +2434,7 @@
       "id": "MON-098",
       "set": 1,
       "type": "single",
-      "stem": "A removable galvanic O2 sensor reads 18% on room air during the morning check. What should be done?",
+      "stem": "A removable galvanic oxygen sensor reads 18% while exposed to room air during the morning checkout. What should be done?",
       "options": [
         "Calibrate to room air (21%)",
         "Calibrate to 50% oxygen",
@@ -2458,7 +2458,7 @@
       "id": "MON-099",
       "set": 1,
       "type": "single",
-      "stem": "You are evaluating a new oxygen analyzer for purchase. Which performance specifications are appropriate?",
+      "stem": "Which response-time and accuracy specifications best match an acceptable oxygen analyzer?",
       "options": [
         "Response in about 2–10 seconds with ±2% accuracy",
         "Response in 30–60 seconds with ±5% accuracy",
@@ -2482,7 +2482,7 @@
       "id": "MON-100",
       "set": 1,
       "type": "single",
-      "stem": "Why is inspired O2 monitoring especially important during low-flow anesthesia?",
+      "stem": "During low-flow anesthesia, why is continuous inspired oxygen monitoring particularly important?",
       "options": [
         "Metabolic O2 use can lower circuit FiO2",
         "Low flow increases oxygen toxicity risk",
