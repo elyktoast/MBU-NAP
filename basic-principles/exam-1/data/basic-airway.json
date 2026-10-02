@@ -7366,7 +7366,7 @@
       "id": "AIR-301",
       "set": 1,
       "type": "single",
-      "stem": "Why is tracheotomy not preferred for emergent access?",
+      "stem": "A CICO emergency requires immediate airway access. Why is surgical tracheotomy generally not the first emergency choice?",
       "options": [
         "It is contraindicated in emergencies",
         "It is less invasive than a cricothyrotomy",
@@ -7390,7 +7390,7 @@
       "id": "AIR-302",
       "set": 1,
       "type": "multi",
-      "stem": "Which are tracheotomy complications? (Select 2)",
+      "stem": "Which TWO complications are specifically associated with tracheotomy? (Select 2)",
       "options": [
         "Facial nerve palsy",
         "Phrenic nerve paralysis",
@@ -7417,7 +7417,7 @@
       "id": "AIR-303",
       "set": 1,
       "type": "single",
-      "stem": "What is the target site for all emergency front-of-neck access?",
+      "stem": "In a true emergency front-of-neck airway, which structure is the primary target?",
       "options": [
         "Cricotracheal ligament",
         "Cricothyroid membrane",
@@ -7441,7 +7441,7 @@
       "id": "AIR-304",
       "set": 1,
       "type": "single",
-      "stem": "What role does ultrasound play in FONA?",
+      "stem": "In an obese patient with poorly palpable neck landmarks, how can ultrasound most directly improve FONA preparation?",
       "options": [
         "Locating the cricothyroid membrane in difficult anatomy",
         "Guiding jet ventilation pressures and the respiratory rate",
@@ -7465,7 +7465,7 @@
       "id": "AIR-305",
       "set": 1,
       "type": "multi",
-      "stem": "What are the goals of extubation planning? (Select 3)",
+      "stem": "Which THREE outcomes are central goals of extubation planning rather than simply removing the tube early? (Select 3)",
       "options": [
         "Allow early PACU discharge",
         "Minimize cardiopulmonary disturbances",
@@ -7493,7 +7493,7 @@
       "id": "AIR-306",
       "set": 1,
       "type": "single",
-      "stem": "A patient had an easy intubation for a long neck dissection. A trainee says extubation needs no planning. What is the BEST response?",
+      "stem": "A long neck dissection had an easy intubation, but significant edema is expected. Which principle should guide extubation?",
       "options": [
         "Extubation is lower risk than intubation in most patients",
         "Extubation has no associated complications",
@@ -7517,7 +7517,7 @@
       "id": "AIR-307",
       "set": 1,
       "type": "single",
-      "stem": "Before extubation, quantitative monitoring shows a TOF ratio of 0.82. Is reversal adequate?",
+      "stem": "Quantitative neuromuscular monitoring shows a TOF ratio of 0.82 before extubation. How should this be interpreted?",
       "options": [
         "Yes; a ratio above 0.3 is adequate here",
         "No; the TOF ratio should exceed 0.9",
@@ -7541,7 +7541,7 @@
       "id": "AIR-308",
       "set": 1,
       "type": "multi",
-      "stem": "Which neuromuscular tests are in the extubation criteria? (Select 5)",
+      "stem": "Which FIVE findings support adequate neuromuscular recovery before extubation? (Select 5)",
       "options": [
         "Head lift for more than 5 seconds",
         "TOF ratio above 0.9",
@@ -7571,7 +7571,7 @@
       "id": "AIR-309",
       "set": 1,
       "type": "single",
-      "stem": "A 70 kg patient's vital capacity before extubation is 900 mL. Does this meet criteria?",
+      "stem": "A 70-kg patient has a vital capacity of 900 mL before extubation. How does this compare with the target threshold?",
       "options": [
         "Yes; it exceeds 5 mL/kg",
         "No; it should exceed 30 mL/kg, or 2,100 mL",
@@ -7595,7 +7595,7 @@
       "id": "AIR-310",
       "set": 1,
       "type": "single",
-      "stem": "A patient's negative inspiratory force is −14 cmH2O before planned extubation. How should you interpret it?",
+      "stem": "A patient generates a negative inspiratory force of −14 cmH2O. What does this imply about extubation readiness?",
       "options": [
         "Inadequate; NIF should be more negative than −60 cmH2O",
         "Adequate; NIF should be more positive than +20 cmH2O",
@@ -7619,7 +7619,7 @@
       "id": "AIR-311",
       "set": 1,
       "type": "single",
-      "stem": "An 80 kg patient breathes spontaneously with tidal volumes of 250 mL before extubation. Does this meet criteria?",
+      "stem": "An 80-kg patient has spontaneous tidal volumes of 250 mL. Does this satisfy the usual extubation target?",
       "options": [
         "No; tidal volume should be at least 15 mL/kg",
         "No; tidal volume should be at least 4–5 mL/kg (320–400 mL)",
@@ -7643,7 +7643,7 @@
       "id": "AIR-312",
       "set": 1,
       "type": "single",
-      "stem": "On FiO2 0.4, a patient has SpO2 93% and PaO2 72 mmHg before extubation. Do these meet the oxygenation criteria?",
+      "stem": "On FiO2 0.40, SpO2 is 93% and PaO2 is 72 mmHg. Do these oxygenation values meet the lecture's extubation criteria?",
       "options": [
         "Yes; criteria are SpO2 above 90% and PaO2 above 60 on FiO2 under 50%",
         "No; SpO2 must exceed 99% and PaO2 200",
@@ -7667,7 +7667,7 @@
       "id": "AIR-313",
       "set": 1,
       "type": "multi",
-      "stem": "Which global criteria are required for extubation? (Select 4)",
+      "stem": "Which FOUR global conditions should be present before extubation? (Select 4)",
       "options": [
         "Normothermia",
         "Return of laryngeal and cough reflexes",
@@ -7696,7 +7696,7 @@
       "id": "AIR-314",
       "set": 1,
       "type": "single",
-      "stem": "A patient meets all criteria and is extubated, then struggles to breathe within minutes. What does this show about extubation?",
+      "stem": "A patient meets standard criteria but develops respiratory failure minutes after extubation. What does this illustrate about extubation?",
       "options": [
         "It tests neuromuscular function and nothing else",
         "It replaces PACU respiratory monitoring",
@@ -7720,7 +7720,7 @@
       "id": "AIR-315",
       "set": 1,
       "type": "single",
-      "stem": "During which Guedel stage should extubation be avoided?",
+      "stem": "Which Guedel stage should be avoided for extubation because airway reflexes are hyperactive and laryngospasm risk is high?",
       "options": [
         "Stage I",
         "Stage II, the excitatory phase",
@@ -7744,7 +7744,7 @@
       "id": "AIR-316",
       "set": 1,
       "type": "single",
-      "stem": "When should extubation be performed?",
+      "stem": "For a routine patient, which timing choices are generally safest for extubation?",
       "options": [
         "Deeply anesthetized (stage III) or fully awake",
         "During stage II excitement, as reflexes return",
@@ -7768,7 +7768,7 @@
       "id": "AIR-317",
       "set": 1,
       "type": "single",
-      "stem": "When should high-risk patients be extubated?",
+      "stem": "A patient is at high risk for reintubation difficulty. When should extubation occur?",
       "options": [
         "Deep in stage III to avoid any coughing on the tube",
         "As soon as surgery ends",
@@ -7792,7 +7792,7 @@
       "id": "AIR-318",
       "set": 1,
       "type": "multi",
-      "stem": "Which drugs reduce cardiovascular stimulation during awake extubation? (Select 4)",
+      "stem": "Which FOUR drug classes can blunt the cardiovascular response to awake extubation? (Select 4)",
       "options": [
         "Beta-blockers",
         "Calcium channel blockers",
@@ -7821,7 +7821,7 @@
       "id": "AIR-319",
       "set": 1,
       "type": "multi",
-      "stem": "Which drugs minimize coughing and straining at extubation? (Select 3)",
+      "stem": "Which THREE strategies can reduce coughing and straining during extubation? (Select 3)",
       "options": [
         "Intracuff lidocaine",
         "Opioids, with caution",
@@ -7849,7 +7849,7 @@
       "id": "AIR-320",
       "set": 1,
       "type": "single",
-      "stem": "What proportion of airway emergencies occur during extubation or recovery?",
+      "stem": "Why should the extubation/recovery phase receive the same attention as induction in airway planning?",
       "options": [
         "Up to one-third",
         "Less than 1% of events",
@@ -7873,7 +7873,7 @@
       "id": "AIR-321",
       "set": 1,
       "type": "multi",
-      "stem": "Which extubation techniques are used for high-risk patients? (Select 4)",
+      "stem": "Which FOUR techniques are reasonable for extubating a high-risk airway while preserving rescue options? (Select 4)",
       "options": [
         "Delayed extubation with continued ventilation",
         "Extubation during stage II",
@@ -7902,7 +7902,7 @@
       "id": "AIR-322",
       "set": 1,
       "type": "single",
-      "stem": "What should be done before extubating a difficult airway?",
+      "stem": "Before extubating a known difficult airway, what team action is most important?",
       "options": [
         "Avoid telling the team to reduce anxiety",
         "Extubate quickly without preparation",
@@ -7926,7 +7926,7 @@
       "id": "AIR-323",
       "set": 1,
       "type": "multi",
-      "stem": "Which patient risk factors predict difficult extubation? (Select 4)",
+      "stem": "Which FOUR patient factors increase the risk of difficult extubation or reintubation? (Select 4)",
       "options": [
         "Short outpatient surgery",
         "Generalized airway edema",
@@ -7955,7 +7955,7 @@
       "id": "AIR-324",
       "set": 1,
       "type": "multi",
-      "stem": "Which surgical risk factors predict difficult extubation? (Select 5)",
+      "stem": "Which FIVE surgical factors increase the likelihood of a difficult extubation? (Select 5)",
       "options": [
         "Airway or head and neck surgery",
         "Prolonged surgery",
@@ -7985,7 +7985,7 @@
       "id": "AIR-325",
       "set": 1,
       "type": "multi",
-      "stem": "Which anesthetic risk factors predict difficult extubation? (Select 4)",
+      "stem": "Which FOUR anesthetic factors should increase concern about extubation failure? (Select 4)",
       "options": [
         "Excessive volume resuscitation",
         "Lack of cuff leak",
@@ -8014,7 +8014,7 @@
       "id": "AIR-326",
       "set": 1,
       "type": "single",
-      "stem": "Why is a lack of cuff leak concerning before extubation?",
+      "stem": "A patient has no cuff leak after prolonged airway surgery. What is the most concerning interpretation?",
       "options": [
         "It proves adequate NMB reversal",
         "It indicates normal lung compliance",
@@ -8038,7 +8038,7 @@
       "id": "AIR-327",
       "set": 1,
       "type": "multi",
-      "stem": "Which complications result from residual neuromuscular blockade? (Select 3)",
+      "stem": "Which THREE complications are consistent with residual neuromuscular blockade after extubation? (Select 3)",
       "options": [
         "Hypertension from excess strength",
         "Lower aspiration risk",
@@ -8066,7 +8066,7 @@
       "id": "AIR-328",
       "set": 1,
       "type": "single",
-      "stem": "How does sugammadex reverse rocuronium?",
+      "stem": "Rocuronium effect is rapidly reversed with sugammadex. What mechanism explains this reversal?",
       "options": [
         "Cyclodextrin encapsulation that inactivates the drug",
         "Acetylcholinesterase inhibition at the synapse",
@@ -8090,7 +8090,7 @@
       "id": "AIR-329",
       "set": 1,
       "type": "single",
-      "stem": "After extubation, the patient makes strong inspiratory efforts but no air moves because the vocal cords have forcefully closed. Which process best explains this?",
+      "stem": "Immediately after extubation, the patient makes forceful inspiratory efforts but no air moves and the cords are tightly closed. What is the diagnosis?",
       "options": [
         "Bronchospasm",
         "Tracheomalacia",
@@ -8114,7 +8114,7 @@
       "id": "AIR-330",
       "set": 1,
       "type": "single",
-      "stem": "In what percentage of laryngospasm cases does desaturation occur?",
+      "stem": "When laryngospasm occurs, approximately how often can oxygen desaturation develop?",
       "options": [
         "Up to 20%",
         "Nearly 100%",
@@ -8138,7 +8138,7 @@
       "id": "AIR-331",
       "set": 1,
       "type": "single",
-      "stem": "Which afferent-efferent pathway most directly mediates laryngospasm?",
+      "stem": "Which sensory-motor reflex pathway most directly mediates laryngospasm?",
       "options": [
         "Trigeminal to facial",
         "SLN afferent to RLN motor response",
@@ -8162,7 +8162,7 @@
       "id": "AIR-332",
       "set": 1,
       "type": "single",
-      "stem": "Which type of closure is complete obstruction by extrinsic muscles?",
+      "stem": "Complete airway closure occurs from extrinsic laryngeal muscle contraction. Which pattern is this?",
       "options": [
         "Ball-valve closure",
         "Glottic shutter",
@@ -8186,7 +8186,7 @@
       "id": "AIR-333",
       "set": 1,
       "type": "single",
-      "stem": "Which type of closure is partial obstruction by intrinsic muscles?",
+      "stem": "Partial glottic closure occurs from intrinsic laryngeal muscle contraction. Which pattern is this?",
       "options": [
         "Ball-valve closure",
         "Complete laryngospasm",
@@ -8210,7 +8210,7 @@
       "id": "AIR-334",
       "set": 1,
       "type": "multi",
-      "stem": "Which are causes of laryngospasm? (Select 3)",
+      "stem": "Which THREE conditions commonly trigger laryngospasm around extubation? (Select 3)",
       "options": [
         "Fully awake extubation",
         "Absence of airway stimulation",
@@ -8238,7 +8238,7 @@
       "id": "AIR-335",
       "set": 1,
       "type": "single",
-      "stem": "A patient has persistent laryngospasm despite CPAP. The provider applies a forceful jaw thrust plus pressure at the laryngospasm notch. Which maneuver is this?",
+      "stem": "Persistent laryngospasm continues despite CPAP. Jaw thrust plus firm pressure at the laryngospasm notch is applied. Which maneuver is being used?",
       "options": [
         "Abdominal thrust maneuver",
         "Larson maneuver",
@@ -8262,7 +8262,7 @@
       "id": "AIR-336",
       "set": 1,
       "type": "single",
-      "stem": "Laryngospasm persists and oxygen saturation continues to fall despite airway-opening maneuvers and positive pressure. Which drug should be given next?",
+      "stem": "Laryngospasm persists despite airway-opening maneuvers and positive pressure, and SpO2 continues to fall. Which medication should be given next?",
       "options": [
         "Succinylcholine",
         "Neostigmine",
@@ -8286,7 +8286,7 @@
       "id": "AIR-337",
       "set": 1,
       "type": "single",
-      "stem": "What complication must be prevented after laryngospasm?",
+      "stem": "After a severe laryngospasm episode with strong inspiratory efforts against a closed glottis, which pulmonary complication is a major concern?",
       "options": [
         "Malignant hyperthermia from succinylcholine",
         "Tracheal stenosis",
@@ -8310,7 +8310,7 @@
       "id": "AIR-338",
       "set": 1,
       "type": "single",
-      "stem": "A child develops inspiratory stridor after extubation from subglottic airway swelling. Which diagnosis best fits?",
+      "stem": "A child develops inspiratory stridor after extubation due to subglottic edema. Which diagnosis best fits?",
       "options": [
         "Bronchospasm",
         "Vocal-cord paralysis",
@@ -8334,7 +8334,7 @@
       "id": "AIR-339",
       "set": 1,
       "type": "multi",
-      "stem": "Which signs characterize postextubation croup? (Select 2)",
+      "stem": "Which TWO findings most strongly support postextubation croup rather than bronchospasm? (Select 2)",
       "options": [
         "Wheezing only",
         "Silent chest with apnea",
@@ -8361,7 +8361,7 @@
       "id": "AIR-340",
       "set": 1,
       "type": "single",
-      "stem": "When does postextubation croup typically occur?",
+      "stem": "A child is extubated uneventfully but develops barky cough and stridor shortly afterward. When does postextubation croup most commonly appear?",
       "options": [
         "Within 3 hours after extubation",
         "Within 24–48 hours after extubation",
@@ -8385,7 +8385,7 @@
       "id": "AIR-341",
       "set": 1,
       "type": "multi",
-      "stem": "Which are causes of postextubation croup? (Select 4)",
+      "stem": "Which FOUR factors increase the risk of postextubation croup? (Select 4)",
       "options": [
         "Short procedure without movement",
         "Multiple intubation attempts",
@@ -8414,7 +8414,7 @@
       "id": "AIR-342",
       "set": 1,
       "type": "single",
-      "stem": "A 3-year-old develops barky cough and stridor in PACU after extubation. What is the correct racemic epinephrine dose?",
+      "stem": "A 3-year-old develops barky cough and stridor in PACU. Which nebulized racemic epinephrine dose matches the lecture?",
       "options": [
         "0.1 mL of 1% in 10 mL NS",
         "2 mL of 0.5% epinephrine in 5 mL NS, nebulized",
@@ -8438,7 +8438,7 @@
       "id": "AIR-343",
       "set": 1,
       "type": "single",
-      "stem": "A 15 kg child has postextubation croup. What dexamethasone dose range is appropriate?",
+      "stem": "A 15-kg child has postextubation croup. Which dexamethasone dose range is appropriate?",
       "options": [
         "75 mg (5 mg/kg)",
         "1.5–7.5 mg (0.1–0.5 mg/kg)",
@@ -8462,7 +8462,7 @@
       "id": "AIR-344",
       "set": 1,
       "type": "single",
-      "stem": "Why is heliox used for croup?",
+      "stem": "Heliox is chosen as an adjunct for croup. What physical property makes it useful?",
       "options": [
         "Its low density reduces airflow resistance",
         "It raises inspired oxygen content above 100%",
@@ -8486,7 +8486,7 @@
       "id": "AIR-345",
       "set": 1,
       "type": "single",
-      "stem": "Why is croup more severe in pediatric patients?",
+      "stem": "Why does a similar degree of subglottic edema create more severe obstruction in children than adults?",
       "options": [
         "Larger airway diameter",
         "Stronger cough reflex",
@@ -8510,7 +8510,7 @@
       "id": "AIR-346",
       "set": 1,
       "type": "single",
-      "stem": "Which airway-related injury generates the greatest number of anesthesia malpractice claims?",
+      "stem": "Which airway-related injury accounts for the greatest number of anesthesia malpractice claims?",
       "options": [
         "Peripheral nerve injury",
         "Esophageal intubation",
@@ -8534,7 +8534,7 @@
       "id": "AIR-347",
       "set": 1,
       "type": "single",
-      "stem": "Which teeth are most often injured during laryngoscopy?",
+      "stem": "During laryngoscopy, which teeth are most vulnerable to injury from improper blade leverage?",
       "options": [
         "Mandibular canines",
         "Maxillary central incisors",
@@ -8558,7 +8558,7 @@
       "id": "AIR-348",
       "set": 1,
       "type": "multi",
-      "stem": "After a difficult intubation, a patient has persistent hoarseness and a weak voice for weeks. Which laryngeal injuries could explain this? (Select 3)",
+      "stem": "Weeks after a difficult intubation, a patient remains hoarse with a weak voice. Which THREE laryngeal injuries could explain this? (Select 3)",
       "options": [
         "Vocal cord paralysis",
         "Granuloma or polyp formation",
@@ -8586,7 +8586,7 @@
       "id": "AIR-349",
       "set": 1,
       "type": "single",
-      "stem": "What signs suggest esophageal injury after difficult intubation?",
+      "stem": "After traumatic intubation, which combination of findings should raise concern for esophageal perforation?",
       "options": [
         "Hypertension, bradycardia, and miosis",
         "Hoarseness, without other findings",
@@ -8610,7 +8610,7 @@
       "id": "AIR-350",
       "set": 1,
       "type": "single",
-      "stem": "Why is esophageal perforation treated as a major emergency even if the initial airway problem is corrected?",
+      "stem": "Why does suspected esophageal perforation require urgent treatment even after the airway has been secured?",
       "options": [
         "The main consequence is transient dysphagia",
         "The complication is usually self-limited",
