@@ -3789,9 +3789,9 @@
       "id": "MISC-153",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA performs the technical task of intubation well but fails to call for help or share the plan during a crisis. Which skill domain was deficient?",
+      "stem": "During failed intubation, a CRNA performs laryngoscopy competently but never verbalizes the backup plan, calls for help late, and fails to coordinate the team. Which performance domain is primarily deficient?",
       "options": [
-        "Non-technical skills such as cognitive, social, and personal performance",
+        "Non-technical cognitive, social, and personal skills",
         "Manual airway technique",
         "Pharmacology knowledge",
         "Equipment maintenance"
@@ -3870,10 +3870,10 @@
       "id": "MISC-156",
       "set": 1,
       "type": "single",
-      "stem": "During a code, the CRNA says, 'Give epinephrine 1 mg IV,' and the nurse responds, 'Epinephrine 1 mg IV given.' Which CRM principle is being demonstrated?",
+      "stem": "During a code, the leader says, 'Epinephrine 1 mg IV,' and the nurse administers it but gives no verbal confirmation. Which CRM element is missing?",
       "options": [
         "Closed-loop communication",
-        "Leadership",
+        "Leadership role assignment",
         "Situational awareness",
         "Resource use"
       ],
@@ -3921,12 +3921,12 @@
       "id": "MISC-158",
       "set": 1,
       "type": "single",
-      "stem": "During a code, the CRNA explicitly assigns compressions, medications, and documentation to specific team members. Which CRM principle is most directly shown?",
+      "stem": "During a crisis, several clinicians begin duplicating the same tasks while other essential jobs are unattended. Which leader action best corrects the CRM failure?",
       "options": [
-        "Leadership with clear role designation",
-        "Communication alone",
-        "Situational awareness",
-        "Evaluation"
+        "Explicitly assign roles and responsibilities",
+        "Increase monitor-alarm volume",
+        "Perform every critical task personally",
+        "Delay delegation until the diagnosis is certain"
       ],
       "answer": [
         0
@@ -3969,12 +3969,12 @@
       "id": "MISC-160",
       "set": 1,
       "type": "single",
-      "stem": "During an MH crisis, the team leader rapidly gathers input and then chooses the next action. Which CRM skill is being used?",
+      "stem": "During malignant hyperthermia treatment, new information changes rapidly as temperature, ETCO2, and potassium evolve. The leader repeatedly gathers input and updates the treatment plan. Which CRM skill is being used?",
       "options": [
         "Dynamic decision making",
-        "Role designation",
-        "Debriefing",
-        "Evaluation"
+        "Static role designation",
+        "Postevent debriefing",
+        "Retrospective evaluation"
       ],
       "answer": [
         0
@@ -4017,7 +4017,7 @@
       "id": "MISC-162",
       "set": 1,
       "type": "single",
-      "stem": "During a code, a CRNA leaves the airway role to manage medications because that is the team's greatest need. Which CRM element is demonstrated?",
+      "stem": "During a code, the airway is stabilized but medication preparation becomes the team's limiting task. A CRNA leaves the airway role to assist with drugs after ensuring coverage. Which CRM capability is demonstrated?",
       "options": [
         "Behavioral flexibility",
         "Breathing assessment",
@@ -4161,12 +4161,12 @@
       "id": "MISC-168",
       "set": 1,
       "type": "single",
-      "stem": "After an event, the CRNA reviews what went wrong so future responses can improve. Which CRM element is this?",
+      "stem": "After a near miss, the team reconstructs its decisions, identifies why the error nearly reached the patient, and changes its future response. Which CRM element is most directly demonstrated?",
       "options": [
-        "Evaluation: error wisdom",
-        "Awareness",
-        "Communication",
-        "Behavioral flexibility"
+        "Evaluation and error wisdom",
+        "Awareness during the original event",
+        "Closed-loop communication",
+        "Behavioral flexibility during the event"
       ],
       "answer": [
         0
@@ -4309,12 +4309,12 @@
       "id": "MISC-174",
       "set": 1,
       "type": "single",
-      "stem": "During MH, a nurse reads the emergency checklist aloud step by step. What tool is being used?",
+      "stem": "During malignant hyperthermia, cognitive load is high and the team risks omitting treatment steps. A nurse reads the emergency manual aloud while actions are completed. What safety tool is being used?",
       "options": [
-        "Cognitive aid",
-        "Time-out",
-        "Sign-out",
-        "Handoff"
+        "A cognitive aid",
+        "A surgical time-out",
+        "A sign-out",
+        "A routine handoff"
       ],
       "answer": [
         0
@@ -4391,7 +4391,7 @@
       "id": "MISC-177",
       "set": 1,
       "type": "single",
-      "stem": "The team follows the stepwise instructions attached to the MH cart during a crisis. What is this an example of?",
+      "stem": "During malignant hyperthermia, the team uses the stepwise instructions attached to the MH cart rather than relying on memory alone. Which safety strategy is this?",
       "options": [
         "Cognitive-aid use",
         "Fixation error",
@@ -4415,12 +4415,12 @@
       "id": "MISC-178",
       "set": 1,
       "type": "single",
-      "stem": "The team follows a difficult-airway algorithm during failed intubation. What type of tool is this?",
+      "stem": "After two failed intubation attempts, the team follows a difficult-airway algorithm to determine the next step and avoid repeated ineffective attempts. What type of tool is guiding the response?",
       "options": [
-        "Cognitive aid",
-        "Artifact error",
-        "Timing error",
-        "Distraction"
+        "A cognitive aid",
+        "An artifact-error heuristic",
+        "A timing-error rule",
+        "A distraction-control policy"
       ],
       "answer": [
         0
@@ -4511,12 +4511,12 @@
       "id": "MISC-182",
       "set": 1,
       "type": "single",
-      "stem": "A wrong-site surgery is classified as a sentinel event. What should QA primarily examine?",
+      "stem": "After wrong-site surgery, the final clinician action is obvious, but several verification defenses also failed. What should the quality review prioritize?",
       "options": [
-        "Processes and system conditions that allowed the event",
-        "Which single person should be punished",
-        "How to hide the event",
-        "Only the final provider action"
+        "Processes and system conditions that allowed multiple defenses to fail",
+        "Punishment of the final clinician only",
+        "Suppressing details to reduce liability",
+        "Only the last action before incision"
       ],
       "answer": [
         0
