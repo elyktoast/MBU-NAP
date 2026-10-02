@@ -8264,7 +8264,7 @@
       "answer": [
         0
       ],
-      "explanation": "Elevated baseline can also occur with calibration errors or valve issues.",
+      "explanation": "Bronchospasm increases airway resistance, producing a rising PIP with relatively unchanged plateau pressure and a progressively sloped shark-fin capnogram.",
       "citation": "",
       "topic": "Respiratory monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -8312,7 +8312,7 @@
       "answer": [
         0
       ],
-      "explanation": "A drop in BP with low ETCO2 suggests perfusion problems.",
+      "explanation": "Persistent inspired CO2 despite adequate fresh-gas flow suggests rebreathing from unidirectional-valve dysfunction or an analyzer zero/calibration problem.",
       "citation": "",
       "topic": "Respiratory monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -8336,7 +8336,7 @@
       "answer": [
         0
       ],
-      "explanation": "Condensation can occlude sampling lines.",
+      "explanation": "An abrupt ETCO2 decrease with a preserved waveform plus hypotension during cemented arthroplasty suggests an acute reduction in pulmonary perfusion from an embolic event.",
       "citation": "",
       "topic": "Respiratory monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -8360,7 +8360,7 @@
       "answer": [
         0
       ],
-      "explanation": "BP cuff inflation can interrupt the SpO2 signal.",
+      "explanation": "Head rotation can migrate or kink the ETT; falling SpO2/ETCO2 with asymmetric breath sounds requires immediate assessment for endobronchial migration or partial obstruction.",
       "citation": "",
       "topic": "Respiratory monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -8384,7 +8384,7 @@
       "answer": [
         0
       ],
-      "explanation": "Hypoxemia with normal ETCO2 suggests oxygenation issues; raise FiO2 and assess.",
+      "explanation": "Falling SpO2 with stable FiO2, ETCO2, and ventilation points toward an oxygenation problem such as atelectasis, shunt, or V/Q mismatch.",
       "citation": "",
       "topic": "Respiratory monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -8408,7 +8408,7 @@
       "answer": [
         0
       ],
-      "explanation": "Curare cleft indicates spontaneous effort; ventilation may be inadequate.",
+      "explanation": "Electrocautery can distort pulse-oximeter signals; assess the patient and pleth waveform before treating an isolated abrupt saturation change as true hypoxemia.",
       "citation": "",
       "topic": "Respiratory monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -8432,7 +8432,7 @@
       "answer": [
         0
       ],
-      "explanation": "Sudden ETCO2 drop with hypotension during insufflation suggests gas embolism.",
+      "explanation": "Severe hypothermia causes peripheral vasoconstriction and weak pulsatile flow, reducing the signal pulse oximetry requires.",
       "citation": "",
       "topic": "Respiratory monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -8456,7 +8456,7 @@
       "answer": [
         0
       ],
-      "explanation": "Raising the patient while the transducer stays fixed puts it relatively above the RA and gives falsely low readings. Check leveling before treating.",
+      "explanation": "Pulse oximetry measures arterial hemoglobin saturation, not tissue oxygen delivery or utilization; tissue hypoperfusion can exist despite SpO2 100%.",
       "citation": "",
       "topic": "Hemodynamic and temperature monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -9054,8 +9054,7 @@
         "Lower oxygen demand during postoperative shivering"
       ],
       "answer": [
-        0,
-        1
+        0
       ],
       "explanation": "Hypothermia prolongs drug effects and increases bleeding. Shivering raises oxygen demand.",
       "citation": "",
