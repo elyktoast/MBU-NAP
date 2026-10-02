@@ -9784,7 +9784,7 @@
       "id": "SED-401",
       "set": 1,
       "type": "single",
-      "stem": "A sedated patient aspirates during an EGD in the GI suite. Closed claims data show which complication occurs nearly twice as often in NORA as in the OR?",
+      "stem": "Which complication appears nearly twice as often in NORA closed claims as in OR claims?",
       "options": [
         "Aspiration pneumonitis",
         "Dental injury",
@@ -9808,7 +9808,7 @@
       "id": "SED-402",
       "set": 1,
       "type": "single",
-      "stem": "NORA death claims are most often tied to which problem during MAC?",
+      "stem": "Which problem most often underlies fatal NORA claims during MAC?",
       "options": [
         "Respiratory depression or inadequate ventilation",
         "Hemodynamic instability in cardiology suites",
@@ -9832,7 +9832,7 @@
       "id": "SED-403",
       "set": 1,
       "type": "single",
-      "stem": "You are planning NORA staffing. Where should you expect hemodynamic instability to be MOST concerning?",
+      "stem": "Which NORA locations are most associated with major hemodynamic instability?",
       "options": [
         "Cardiology and radiology suites",
         "GI endoscopy suites with shared airways and aspiration risk",
@@ -9856,7 +9856,7 @@
       "id": "SED-404",
       "set": 1,
       "type": "single",
-      "stem": "NORA has a higher claim rate per case but fewer total claims than the OR. Which explanation fits?",
+      "stem": "How can NORA have a higher claim rate per case but fewer total claims than the OR?",
       "options": [
         "Fewer procedures are done in NORA than in the OR",
         "NORA patients are healthier",
@@ -9880,7 +9880,7 @@
       "id": "SED-405",
       "set": 1,
       "type": "multi",
-      "stem": "Your hospital is expanding NORA services. Which claim patterns should you expect? (Select 4)",
+      "stem": "Which FOUR patterns characterize NORA closed claims? (Select 4)",
       "options": [
         "Respiratory depression and inadequate ventilation",
         "Aspiration pneumonitis nearly twice as common",
@@ -9909,7 +9909,7 @@
       "id": "SED-406",
       "set": 1,
       "type": "single",
-      "stem": "In Case 1, what was the provider doing when the patient became apneic?",
+      "stem": "What provider behavior contributed to the apnea in Closed Claim Case 1?",
       "options": [
         "Talking with the gastroenterologist, not watching monitors",
         "Placing an arterial line for blood pressure",
@@ -9933,7 +9933,7 @@
       "id": "SED-407",
       "set": 1,
       "type": "single",
-      "stem": "In Closed Claim Case 1, the patient was found apneic and pulseless. An LMA was placed during resuscitation. Which earlier action would MOST likely have prevented the arrest?",
+      "stem": "In Closed Claim Case 1, which earlier response would most likely have prevented progression to arrest?",
       "options": [
         "Responding to the capnography change when apnea began",
         "Placing an LMA before sedation",
@@ -9957,7 +9957,7 @@
       "id": "SED-408",
       "set": 1,
       "type": "single",
-      "stem": "In Closed Claim Case 1, prolonged apnea led to asystole and death. Which sequence BEST describes how this progresses?",
+      "stem": "Which sequence best describes untreated sedation-induced apnea progressing to asystole?",
       "options": [
         "Apnea, hypoxemia and hypercarbia, bradycardia, then asystole",
         "Apnea, hypertension, then ventricular fibrillation from catecholamine surge",
@@ -9981,7 +9981,7 @@
       "id": "SED-409",
       "set": 1,
       "type": "single",
-      "stem": "In Closed Claim Case 1, capnography was in use but the apnea went unrecognized. What lesson does this teach about situational awareness?",
+      "stem": "What is the main situational-awareness lesson from a case in which capnography was present but apnea went unrecognized?",
       "options": [
         "Capnography alarms help only if the provider notices them",
         "Capnography does not detect apnea",
@@ -10005,7 +10005,7 @@
       "id": "SED-410",
       "set": 1,
       "type": "single",
-      "stem": "In Closed Claim Case 2, sedatives were given in preop holding before transport. Why does this setting raise risk?",
+      "stem": "Why is giving sedatives in preop holding risky when transport follows soon afterward?",
       "options": [
         "Monitoring and airway readiness may lapse before the OR",
         "Holding areas have more staff",
@@ -10029,7 +10029,7 @@
       "id": "SED-411",
       "set": 1,
       "type": "single",
-      "stem": "In Closed Claim Case 2, the patient was transported unmonitored and arrived apneic. Which practice would have prevented this?",
+      "stem": "Which practice would have prevented the unmonitored-transport event in Closed Claim Case 2?",
       "options": [
         "Continuous monitoring and airway equipment during transport",
         "Giving a larger sedative dose in holding",
@@ -10053,7 +10053,7 @@
       "id": "SED-412",
       "set": 1,
       "type": "multi",
-      "stem": "Which comorbidities did the Case 2 patient have? (Select 4)",
+      "stem": "Which FOUR comorbidities were present in the Closed Claim Case 2 patient? (Select 4)",
       "options": [
         "Coronary stents",
         "Congestive heart failure",
@@ -10082,7 +10082,7 @@
       "id": "SED-413",
       "set": 1,
       "type": "single",
-      "stem": "Which closed-claims finding was identified in Case 2, and which patient factor made it worse?",
+      "stem": "Which systems failure and patient factor combined to worsen Closed Claim Case 2?",
       "options": [
         "No monitoring during transport, worsened by CHF and limited reserve",
         "Wrong-site surgery, worsened by a missed time-out",
@@ -10106,7 +10106,7 @@
       "id": "SED-414",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives midazolam in holding and is about to be wheeled to the OR. What does Case 2 teach?",
+      "stem": "A patient receives midazolam in holding and is then transported. What monitoring principle applies?",
       "options": [
         "Continue monitoring during transport after sedation",
         "Monitoring can stop until the OR",
@@ -10130,7 +10130,7 @@
       "id": "SED-415",
       "set": 1,
       "type": "single",
-      "stem": "In Closed Claim Case 2, which factor MOST increased the patient's risk before transport?",
+      "stem": "Which patient factor most reduced physiologic reserve in Closed Claim Case 2?",
       "options": [
         "Limited reserve from CHF and recent pulmonary edema",
         "Young age",
@@ -10154,7 +10154,7 @@
       "id": "SED-416",
       "set": 1,
       "type": "single",
-      "stem": "Closed Claim Case 1 involved MAC in the OR, and Case 2 involved holding-area sedation. What common failure links them?",
+      "stem": "What common failure links Closed Claim Cases 1 and 2?",
       "options": [
         "Respiratory arrest from sedation that was not recognized in time",
         "Inadequate preoperative airway evaluation",
@@ -10178,7 +10178,7 @@
       "id": "SED-417",
       "set": 1,
       "type": "single",
-      "stem": "Which strategy BEST prevents Case 1–type events?",
+      "stem": "Which single practice best prevents Case 1-type events?",
       "options": [
         "Continuous attention to capnography and patient status",
         "Relying on SpO2 alarms",
@@ -10202,7 +10202,7 @@
       "id": "SED-418",
       "set": 1,
       "type": "single",
-      "stem": "Scenario 1: A 76-year-old with mild OSA, Mallampati III, and face under drapes for cataract surgery. Which anesthetic plan BEST fits?",
+      "stem": "A cataract patient has mild OSA, Mallampati III, and limited airway access beneath drapes. Which anesthetic plan best fits?",
       "options": [
         "MAC with light anxiolysis and topical anesthesia",
         "TIVA with propofol and remifentanil",
@@ -10226,7 +10226,7 @@
       "id": "SED-419",
       "set": 1,
       "type": "single",
-      "stem": "In Scenario 1, the cataract patient has OSA, Mallampati III, and drapes over her face. Why is deep sedation risky?",
+      "stem": "Why is deep sedation especially risky in the cataract scenario with OSA and limited airway access?",
       "options": [
         "Limited airway access plus OSA and Mallampati III",
         "Cataract surgery is very painful",
@@ -10250,7 +10250,7 @@
       "id": "SED-420",
       "set": 1,
       "type": "single",
-      "stem": "Scenario 1: A 76-year-old with mild OSA, Mallampati III, and face under drapes for cataract surgery. Which drug choice BEST balances anxiety relief with airway safety?",
+      "stem": "Which drug strategy best balances anxiolysis with airway safety in the cataract scenario?",
       "options": [
         "Small titrated midazolam or dexmedetomidine",
         "Propofol bolus to ensure she is fully asleep",
@@ -10274,7 +10274,7 @@
       "id": "SED-421",
       "set": 1,
       "type": "single",
-      "stem": "In Scenario 1, the patient receives oxygen under drapes during a facial procedure with cautery. What fire-safety step is MOST relevant?",
+      "stem": "During facial surgery with cautery and oxygen under drapes, what fire-safety step is most important?",
       "options": [
         "Limit oxygen under the drapes",
         "Cover the face with drapes for sterility",
@@ -10298,7 +10298,7 @@
       "id": "SED-422",
       "set": 1,
       "type": "single",
-      "stem": "Scenario 2: A 58-year-old ASA II with prior poor colonoscopy tolerance. Which plan BEST fits?",
+      "stem": "A healthy patient previously tolerated colonoscopy poorly. Which anesthetic plan best fits the next procedure?",
       "options": [
         "MAC with propofol and analgesic support",
         "Minimal sedation with oral anxiolytic",
@@ -10322,7 +10322,7 @@
       "id": "SED-423",
       "set": 1,
       "type": "single",
-      "stem": "In Scenario 2, a patient under sedation for colonoscopy has the nurse pressing on the abdomen to advance the scope. Which aspiration risk does this create?",
+      "stem": "During colonoscopy, external abdominal pressure is applied while the airway is unprotected. What risk increases?",
       "options": [
         "Abdominal pressure pushing gastric contents upward",
         "A full stomach from the bowel prep",
@@ -10346,7 +10346,7 @@
       "id": "SED-424",
       "set": 1,
       "type": "single",
-      "stem": "In Scenario 2, the patient receives propofol MAC for a colonoscopy. Which monitoring requirement is MOST important?",
+      "stem": "Which monitor is most important for early detection of respiratory depression during propofol MAC for colonoscopy?",
       "options": [
         "Continuous capnography",
         "Processed EEG",
@@ -10370,7 +10370,7 @@
       "id": "SED-425",
       "set": 1,
       "type": "single",
-      "stem": "Scenario 3: A 64-year-old with BMI 42, severe OSA, GERD with regurgitation, semaglutide, Mallampati IV, and deep sedation request for EGD. What is the BEST plan?",
+      "stem": "An obese patient with severe OSA, active regurgitation, semaglutide use, and Mallampati IV requests deep sedation for EGD. Which plan best addresses the competing airway and aspiration risks?",
       "options": [
         "Consider GA with secured airway",
         "Proceed with deep propofol sedation",
@@ -10394,7 +10394,7 @@
       "id": "SED-426",
       "set": 1,
       "type": "single",
-      "stem": "In Scenario 3, the patient has GERD, regurgitation when supine, and takes semaglutide. Which factor MOST increases aspiration risk?",
+      "stem": "Which combination most strongly increases aspiration risk in the high-risk EGD scenario?",
       "options": [
         "Regurgitation when supine combined with semaglutide",
         "Controlled hypertension",
@@ -10418,7 +10418,7 @@
       "id": "SED-427",
       "set": 1,
       "type": "multi",
-      "stem": "Scenario 3: A 64-year-old with BMI 42, severe OSA, GERD with regurgitation, semaglutide, Mallampati IV, and deep sedation request for EGD. Which of the following are caution factors? (Select 2)",
+      "stem": "Which TWO airway-related caution factors are present in the high-risk EGD scenario? (Select 2)",
       "options": [
         "Severe OSA requiring CPAP",
         "Mallampati IV with limited mouth opening",
@@ -10445,7 +10445,7 @@
       "id": "SED-428",
       "set": 1,
       "type": "single",
-      "stem": "Scenario 4: A 45-year-old ASA I for carpal tunnel with WALANT and mild anxiety. What anesthetic plan is BEST?",
+      "stem": "A healthy patient undergoes WALANT carpal-tunnel surgery with mild anxiety. Which anesthetic plan best fits?",
       "options": [
         "Local anesthesia with minimal or no sedation",
         "GA with an LMA for patient comfort",
@@ -10469,7 +10469,7 @@
       "id": "SED-429",
       "set": 1,
       "type": "single",
-      "stem": "In Scenario 4, the patient is having a WALANT hand procedure with minimal sedation. What concern should be addressed in planning?",
+      "stem": "What expectation should be addressed before a minimally sedated WALANT procedure?",
       "options": [
         "Hearing conversations and seeing the procedure",
         "Need for intubation",
@@ -10493,7 +10493,7 @@
       "id": "SED-430",
       "set": 1,
       "type": "single",
-      "stem": "Scenario 5: A 69-year-old with CAD, EF 45%, CKD 3, prior PONV, and wants no awareness for lumpectomy. Which plan BEST fits?",
+      "stem": "A patient with CAD, reduced EF, CKD, prior PONV, and a strong preference for no awareness undergoes lumpectomy. Which plan best fits?",
       "options": [
         "TIVA with propofol to reduce PONV",
         "Volatile GA with nitrous oxide",
@@ -10517,7 +10517,7 @@
       "id": "SED-431",
       "set": 1,
       "type": "single",
-      "stem": "In Scenario 5, a patient with CAD, CKD, and PONV history is having a lumpectomy. Why might a regional block help?",
+      "stem": "Why can a regional block improve the anesthetic plan for lumpectomy in a patient with CAD, CKD, and prior PONV?",
       "options": [
         "It reduces analgesic needs and opioid use",
         "It prevents PONV completely after the lumpectomy",
@@ -10541,7 +10541,7 @@
       "id": "SED-432",
       "set": 1,
       "type": "single",
-      "stem": "In Scenario 5, which comorbidity MOST influences propofol dosing?",
+      "stem": "Which comorbidity most strongly argues for reducing propofol dose in the lumpectomy scenario?",
       "options": [
         "EF 45% with CAD",
         "CKD stage 3",
@@ -10565,7 +10565,7 @@
       "id": "SED-433",
       "set": 1,
       "type": "single",
-      "stem": "Scenario 6: A 52-year-old with severe claustrophobia must remain prone and motionless in MRI for 60 minutes. Which plan BEST fits?",
+      "stem": "A severely claustrophobic patient must remain prone and motionless in MRI for 60 minutes. Which anesthetic plan best fits?",
       "options": [
         "Deep sedation or GA with MRI-safe equipment",
         "Oral anxiolysis alone",
@@ -10589,7 +10589,7 @@
       "id": "SED-434",
       "set": 1,
       "type": "multi",
-      "stem": "Scenario 6: A 52-year-old with severe claustrophobia must remain prone and motionless in MRI for 60 minutes. Which factors increase risk in the MRI suite? (Select 3)",
+      "stem": "Which THREE features make the MRI sedation scenario especially high risk? (Select 3)",
       "options": [
         "Limited airway access",
         "Remote location",
@@ -10617,7 +10617,7 @@
       "id": "SED-435",
       "set": 1,
       "type": "single",
-      "stem": "In Scenario 6, the patient must lie prone in the MRI for 60 minutes under sedation. Why is prone positioning risky?",
+      "stem": "Why does prone positioning increase risk during prolonged MRI sedation?",
       "options": [
         "Airway access is limited and edema can develop",
         "Prone positioning prevents capnography sampling from the nose",
@@ -10641,7 +10641,7 @@
       "id": "SED-436",
       "set": 1,
       "type": "multi",
-      "stem": "You are building a plan for a complex sedation case. Which domains should the plan address? (Select 5)",
+      "stem": "Which FIVE domains belong in a complete sedation plan? (Select 5)",
       "options": [
         "Anesthetic selection",
         "Patient selection",
@@ -10671,7 +10671,7 @@
       "id": "SED-437",
       "set": 1,
       "type": "single",
-      "stem": "Scenario 2: A 58-year-old ASA II with prior poor colonoscopy tolerance. If the patient becomes apneic during propofol sedation, what is the FIRST action?",
+      "stem": "A patient becomes apneic during propofol colonoscopy MAC. What is the first action?",
       "options": [
         "Stop propofol and support ventilation",
         "Increase propofol to deepen sedation",
@@ -10695,7 +10695,7 @@
       "id": "SED-438",
       "set": 1,
       "type": "single",
-      "stem": "Scenario 1: A 76-year-old with mild OSA, Mallampati III, and face under drapes for cataract surgery. If the patient becomes agitated under drapes, what is the BEST next step?",
+      "stem": "A cataract patient becomes agitated beneath drapes. What should be assessed before giving more sedative?",
       "options": [
         "Assess oxygenation and ventilation before adding sedation",
         "Give a propofol bolus to control movement under the drapes",
@@ -10719,7 +10719,7 @@
       "id": "SED-439",
       "set": 1,
       "type": "single",
-      "stem": "Scenario 3: A 64-year-old with BMI 42, severe OSA, GERD with regurgitation, semaglutide, Mallampati IV, and deep sedation request for EGD. Which monitoring is MOST essential if deep sedation is chosen?",
+      "stem": "If deep sedation is chosen for the high-risk EGD patient, which monitoring and rescue setup is essential?",
       "options": [
         "Continuous capnography with airway rescue ready",
         "Pulse oximetry with lower alarm threshold",
@@ -10743,7 +10743,7 @@
       "id": "SED-440",
       "set": 1,
       "type": "single",
-      "stem": "Scenario 4: A 45-year-old ASA I for carpal tunnel with WALANT and mild anxiety. What is the BEST monitoring approach for WALANT with minimal sedation?",
+      "stem": "What monitoring framework applies when an anesthesia provider gives even minimal sedation for WALANT?",
       "options": [
         "Standard ASA monitors since anesthesia is involved",
         "Pulse oximetry, since sedation is minimal",
@@ -10767,7 +10767,7 @@
       "id": "SED-441",
       "set": 1,
       "type": "single",
-      "stem": "In Scenario 5, the patient says she wants no awareness at all during her lumpectomy. How does this affect the plan?",
+      "stem": "A patient says she wants guaranteed no awareness during lumpectomy. How should that goal affect anesthetic choice?",
       "options": [
         "It favors GA rather than MAC",
         "It favors minimal sedation",
@@ -10791,7 +10791,7 @@
       "id": "SED-442",
       "set": 1,
       "type": "single",
-      "stem": "In Scenario 6, sedation is planned in the MRI suite. What is the MOST important equipment consideration?",
+      "stem": "Which equipment requirement is unique to safe sedation in the MRI environment?",
       "options": [
         "MRI-compatible monitors and airway equipment",
         "Pulse oximetry alone",
@@ -10815,7 +10815,7 @@
       "id": "SED-443",
       "set": 1,
       "type": "single",
-      "stem": "Scenario 3: For the 64-year-old with BMI 42, severe OSA, active regurgitation, semaglutide, and Mallampati IV, the endoscopist insists on deep sedation without an airway. What is the BEST response?",
+      "stem": "The endoscopist insists on deep sedation despite severe OSA, aspiration risk, and a difficult airway. What is the best response?",
       "options": [
         "Explain aspiration and airway risk and recommend GA",
         "Agree to avoid conflict",
@@ -10839,7 +10839,7 @@
       "id": "SED-444",
       "set": 1,
       "type": "single",
-      "stem": "In Scenario 2, the patient is having a colonoscopy under MAC. Which drug combination is MOST commonly used?",
+      "stem": "Which drug combination is most commonly used for colonoscopy MAC in a low-risk patient?",
       "options": [
         "Propofol with a small-dose opioid",
         "Ketamine alone",
@@ -10863,7 +10863,7 @@
       "id": "SED-445",
       "set": 1,
       "type": "single",
-      "stem": "In Scenario 1, which airway assessment finding is MOST relevant for planning?",
+      "stem": "Which airway finding is most important in planning rescue for the cataract scenario?",
       "options": [
         "Mallampati III with limited neck extension",
         "Controlled hypertension",
@@ -10887,7 +10887,7 @@
       "id": "SED-446",
       "set": 1,
       "type": "single",
-      "stem": "Midazolam 2 mg and fentanyl 100 mcg are given for bronchoscopy. RR falls to 5, ETCO2 rises to 62, patient answers to name. After airway support, which reversal addresses the drug MOST likely driving the hypoventilation?",
+      "stem": "After midazolam and fentanyl, RR falls to 5 and ETCO2 rises while the patient still responds to name. Which reversal most directly targets the likely driver of hypoventilation?",
       "options": [
         "Naloxone, since opioids drive respiratory rate depression",
         "Flumazenil, since the patient is still verbal",
@@ -10911,7 +10911,7 @@
       "id": "SED-447",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives remimazolam for EGD and becomes apneic despite jaw thrust. Bag-mask ventilation is effective. Which reversal agent could shorten the event?",
+      "stem": "Remimazolam sedation causes apnea despite jaw thrust, but bag-mask ventilation is effective. Which reversal agent can shorten the benzodiazepine effect?",
       "options": [
         "Flumazenil",
         "Naloxone",
@@ -10935,7 +10935,7 @@
       "id": "SED-448",
       "set": 1,
       "type": "single",
-      "stem": "During a propofol infusion for colonoscopy, the patient becomes apneic. A colleague reaches for flumazenil. What is the BEST response?",
+      "stem": "Propofol causes apnea and a colleague reaches for flumazenil. What is the correct response?",
       "options": [
         "Flumazenil will not reverse propofol; support ventilation",
         "Give flumazenil, since it reverses all sedatives",
@@ -10959,7 +10959,7 @@
       "id": "SED-449",
       "set": 1,
       "type": "single",
-      "stem": "A patient with severe OSA needs sedation for a 45-minute MRI and is to remain still. Which drug choice BEST balances immobility with preserved breathing?",
+      "stem": "A patient with severe OSA needs 45 minutes of MRI sedation with minimal respiratory depression. Which drug strategy best fits?",
       "options": [
         "Slow dexmedetomidine load with capnography",
         "Propofol boluses titrated to stillness",
@@ -10983,7 +10983,7 @@
       "id": "SED-450",
       "set": 1,
       "type": "single",
-      "stem": "A healthy patient under MAC receives ketofol for a fracture reduction. What is the rationale for the mix?",
+      "stem": "What is the main pharmacologic rationale for ketofol during a brief painful procedure?",
       "options": [
         "Ketamine offsets propofol's lack of analgesia and its hypotension",
         "Propofol offsets ketamine's emergence reactions and hypertension",
