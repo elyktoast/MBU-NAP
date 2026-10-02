@@ -3184,7 +3184,8 @@ test.describe('canonical quiz regression', () => {
             const links=[...document.querySelectorAll('.mbu-global-nav__primary-link')].map(el=>el.getBoundingClientRect());
             const nav=document.querySelector('.mbu-global-nav')?.getBoundingClientRect();
             return{
-              linkTopSpread:links.length?Math.max(...links.map(x=>x.top))-Math.min(...links.map(x=>x.top)):999,
+              linkCount:links.length,
+              linkTopSpread:links.length>1?Math.max(...links.map(x=>x.top))-Math.min(...links.map(x=>x.top)):0,
               navWidth:nav?.width||0,
               viewportWidth:document.documentElement.clientWidth
             }
