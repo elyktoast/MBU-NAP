@@ -11193,9 +11193,9 @@
       "id": "PHA-451",
       "set": 1,
       "type": "single",
-      "stem": "At emergence, core temperature is 35.5 °C and vigorous shivering begins in a patient with severe CAD. Which consequence is most concerning?",
+      "stem": "At emergence, core temperature is 35.5 °C and vigorous shivering begins in a patient with severe coronary artery disease. Which physiologic consequence makes rapid warming especially important in this patient?",
       "options": [
-        "A marked rise in metabolic and myocardial oxygen demand",
+        "Marked increase in metabolic and myocardial oxygen demand",
         "Reduced myocardial oxygen consumption",
         "Improved coagulation",
         "Faster anesthetic elimination"
@@ -11217,9 +11217,9 @@
       "id": "PHA-452",
       "set": 1,
       "type": "single",
-      "stem": "Delayed awakening is accompanied by marked hyperglycemia after other major causes are assessed. How should this finding be classified in the differential?",
+      "stem": "A patient remains slow to awaken after ventilation, temperature, and drug effects are addressed; glucose is markedly elevated with associated metabolic abnormalities. Where does this finding belong in the delayed-emergence differential?",
       "options": [
-        "A metabolic derangement that may contribute to abnormal recovery",
+        "Metabolic derangement contributing to abnormal recovery",
         "Residual neuromuscular blockade",
         "Normal emergence by definition",
         "Upper-airway obstruction"
@@ -11533,7 +11533,7 @@
       "id": "PHA-465",
       "set": 1,
       "type": "single",
-      "stem": "During emergence, BP and HR rise abruptly during ETT suctioning while other physiology is stable. Which mechanism best explains the transient response?",
+      "stem": "During otherwise smooth emergence, BP and HR rise abruptly only while the ETT is suctioned, then begin returning toward baseline when stimulation stops. Which mechanism best explains the transient response?",
       "options": [
         "Sympathetic stimulation from airway manipulation",
         "Hypovolemia",
@@ -11605,7 +11605,7 @@
       "id": "PHA-468",
       "set": 1,
       "type": "single",
-      "stem": "During ophthalmic surgery, traction produces abrupt profound bradycardia from an oculocardiac reflex. What should happen first?",
+      "stem": "During ophthalmic surgery, traction on an extraocular muscle produces abrupt profound bradycardia. Before administering an anticholinergic, which action addresses the initiating mechanism?",
       "options": [
         "Ask the surgeon to stop the provoking traction",
         "Give esmolol",
@@ -11629,12 +11629,12 @@
       "id": "PHA-469",
       "set": 1,
       "type": "single",
-      "stem": "Naloxone initially restores ventilation after a long-acting opioid, but respiratory depression returns 20 minutes later. Which mechanism explains this?",
+      "stem": "Naloxone restores ventilation after a long-acting opioid, but respiratory depression recurs 20 minutes later. Which pharmacokinetic mismatch best explains the recurrence?",
       "options": [
-        "The opioid effect outlasted naloxone, producing renarcotization",
+        "The opioid effect outlasted naloxone, causing renarcotization",
         "Naloxone itself caused delayed respiratory depression",
         "Volatile anesthetic redistributed from fat",
-        "Neuromuscular blockade recurred because of naloxone"
+        "Naloxone caused recurrent neuromuscular blockade"
       ],
       "answer": [
         0
@@ -11677,12 +11677,12 @@
       "id": "PHA-471",
       "set": 1,
       "type": "single",
-      "stem": "Significant gastric distention occurred during difficult mask ventilation. Why does this matter when planning emergence/extubation?",
+      "stem": "After difficult mask ventilation, marked gastric distention is present as emergence begins. Which competing risk should make the team more cautious about airway protection at extubation?",
       "options": [
-        "Increased gastric volume/pressure can increase regurgitation and aspiration risk",
-        "It decreases aspiration risk",
-        "It primarily causes hypothermia",
-        "It guarantees laryngospasm"
+        "Increased regurgitation and aspiration risk from greater gastric volume/pressure",
+        "Reduced aspiration risk",
+        "Hypothermia",
+        "Guaranteed laryngospasm"
       ],
       "answer": [
         0
@@ -11893,7 +11893,7 @@
       "id": "PHA-480",
       "set": 1,
       "type": "single",
-      "stem": "Inspired CO2 is 6 mmHg and the capnogram baseline no longer returns to zero. Which fault best explains the pattern?",
+      "stem": "During controlled ventilation, inspired CO2 rises to 6 mmHg and the capnogram baseline no longer returns to zero between breaths. Which equipment problem best explains both findings?",
       "options": [
         "Rebreathing from exhausted absorbent or an incompetent unidirectional valve",
         "Malignant hyperthermia",
@@ -12109,11 +12109,11 @@
       "id": "PHA-489",
       "set": 1,
       "type": "single",
-      "stem": "Respiratory depression returns after an initially effective naloxone dose. Which pharmacologic mismatch is responsible?",
+      "stem": "After an initially effective naloxone dose, respiratory depression returns while the long-acting opioid remains active. Which principle should guide continued monitoring and possible redosing?",
       "options": [
-        "A longer-acting opioid can outlast naloxone's shorter antagonistic effect",
+        "The opioid can outlast naloxone's shorter antagonistic effect",
         "Naloxone accumulates and later suppresses ventilation",
-        "Volatile anesthetic rebound is caused by naloxone",
+        "Naloxone causes volatile-anesthetic rebound",
         "Naloxone prolongs neuromuscular blockade"
       ],
       "answer": [
@@ -12301,7 +12301,7 @@
       "id": "PHA-497",
       "set": 1,
       "type": "single",
-      "stem": "ETCO2 falls from 38 to 25 mmHg after respiratory rate is increased; BP and waveform morphology remain stable. Which cause best fits?",
+      "stem": "ETCO2 falls from 38 to 25 mmHg immediately after respiratory rate is increased; arterial pressure and capnogram morphology remain stable. Which explanation best fits the isolated change?",
       "options": [
         "Increased alveolar minute ventilation",
         "Pulmonary embolism",
@@ -12349,7 +12349,7 @@
       "id": "PHA-499",
       "set": 1,
       "type": "single",
-      "stem": "After extubation, hypoxemia develops with diffuse expiratory wheezing and prolonged expiration. Which diagnosis is most likely?",
+      "stem": "After extubation, hypoxemia develops with diffuse expiratory wheezing, prolonged expiration, and continued airflow rather than silent inspiratory obstruction. Which diagnosis is most likely?",
       "options": [
         "Bronchospasm",
         "Complete laryngospasm",
