@@ -11076,7 +11076,7 @@
       "id": "PRE-455",
       "set": 1,
       "type": "single",
-      "stem": "A cirrhotic patient has INR 1.8 and albumin 2.6 g/dL. Which hepatic function do these abnormalities primarily reflect?",
+      "stem": "A cirrhotic patient has normal aminotransferases but INR 1.8 and albumin 2.6 g/dL. Which hepatic function is most clearly impaired despite the absence of marked injury markers?",
       "options": [
         "Synthetic function",
         "Excretory function",
@@ -11196,7 +11196,7 @@
       "id": "PRE-460",
       "set": 1,
       "type": "single",
-      "stem": "Which medication is well known for histamine-mediated flushing and hypotension during infusion?",
+      "stem": "During an antibiotic infusion, a patient develops flushing and hypotension without the broader pattern of IgE-mediated anaphylaxis. Which medication is classically associated with histamine-mediated infusion reactions?",
       "options": [
         "Vancomycin",
         "Fentanyl",
@@ -11388,7 +11388,7 @@
       "id": "PRE-468",
       "set": 1,
       "type": "single",
-      "stem": "An Apfel score of 1 corresponds to what approximate PONV risk?",
+      "stem": "A patient has exactly one Apfel risk factor. What approximate baseline PONV probability should be used when deciding the intensity of prophylaxis?",
       "options": [
         "20%",
         "10%",
@@ -11412,7 +11412,7 @@
       "id": "PRE-469",
       "set": 1,
       "type": "single",
-      "stem": "An Apfel score of 0 corresponds to what approximate PONV risk?",
+      "stem": "A patient has none of the four Apfel risk factors. What approximate PONV probability remains even with a score of zero?",
       "options": [
         "10%",
         "20%",
@@ -11556,12 +11556,12 @@
       "id": "PRE-475",
       "set": 1,
       "type": "single",
-      "stem": "A patient takes levothyroxine for hypothyroidism. Which perioperative medication plan best maintains euthyroid control?",
+      "stem": "A patient with controlled hypothyroidism takes levothyroxine daily and is NPO for elective surgery. Which perioperative plan best preserves thyroid control?",
       "options": [
         "Continue levothyroxine",
         "Hold it for 24 hours",
         "Hold it for one week",
-        "Omit only the morning dose"
+        "Omit it solely because the patient is NPO"
       ],
       "answer": [
         0
@@ -11796,7 +11796,7 @@
       "id": "PRE-485",
       "set": 1,
       "type": "single",
-      "stem": "A BMI of 29 kg/m² falls into which category?",
+      "stem": "A patient with BMI 29 kg/m² has no diagnosed comorbidities. Which weight category should be documented before evaluating additional risk factors?",
       "options": [
         "Overweight",
         "Normal weight",
@@ -12060,12 +12060,12 @@
       "id": "PRE-496",
       "set": 1,
       "type": "single",
-      "stem": "A STOP-BANG score of 2 corresponds to which risk category?",
+      "stem": "OSA screening yields a STOP-BANG score of 2. Which risk category should guide perioperative interpretation?",
       "options": [
-        "Low",
-        "Intermediate",
-        "High",
-        "Very high"
+        "Low risk",
+        "Intermediate risk",
+        "High risk",
+        "Very high risk"
       ],
       "answer": [
         0
@@ -12084,12 +12084,12 @@
       "id": "PRE-497",
       "set": 1,
       "type": "single",
-      "stem": "A STOP-BANG score of 5 corresponds to which risk category?",
+      "stem": "OSA screening yields a STOP-BANG score of 5 before ambulatory surgery. Which risk category should influence monitoring and disposition planning?",
       "options": [
-        "High",
-        "Intermediate",
-        "Low",
-        "Very low"
+        "High risk",
+        "Intermediate risk",
+        "Low risk",
+        "Very low risk"
       ],
       "answer": [
         0
