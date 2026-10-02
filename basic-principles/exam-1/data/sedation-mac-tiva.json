@@ -8,7 +8,7 @@
       "id": "SED-001",
       "set": 1,
       "type": "single",
-      "stem": "A patient opens her eyes and says \"okay\" only after repeated trapezius squeeze during colonoscopy. Which sedation level is present?",
+      "stem": "During colonoscopy, a patient opens her eyes and follows a command only after repeated trapezius squeeze. Which sedation level best fits?",
       "options": [
         "Deep sedation",
         "Moderate sedation",
@@ -32,12 +32,12 @@
       "id": "SED-002",
       "set": 1,
       "type": "single",
-      "stem": "During propofol sedation, the patient responds to painful stimulation only with reflex withdrawal and needs a jaw thrust. How should the depth be interpreted?",
+      "stem": "During propofol sedation, painful stimulation produces only reflex withdrawal and a jaw thrust is required to maintain airflow. How should the depth be interpreted?",
       "options": [
-        "At least deep sedation; reflex withdrawal is not a purposeful response",
-        "Moderate sedation; any movement to pain counts as purposeful",
-        "Minimal sedation; he responded to touch",
-        "Moderate sedation, since he is still breathing on his own with support"
+        "The patient has progressed beyond deep sedation into general anesthesia",
+        "The patient remains deeply sedated because any movement to pain is purposeful",
+        "The patient is moderately sedated because spontaneous breathing persists",
+        "The patient is minimally sedated because withdrawal is present"
       ],
       "answer": [
         0
@@ -56,12 +56,12 @@
       "id": "SED-003",
       "set": 1,
       "type": "single",
-      "stem": "With increasing propofol, airway support becomes necessary and the patient is unresponsive to pain. Which physiologic function is the last one the ASA continuum describes as becoming impaired?",
+      "stem": "As propofol depth increases from moderate sedation through general anesthesia, which physiologic domain is generally preserved the longest on the ASA continuum?",
       "options": [
-        "Cardiovascular function, at general anesthesia",
-        "Cardiovascular function, at deep sedation",
-        "Spontaneous ventilation, at moderate sedation",
-        "Airway patency, at minimal sedation"
+        "Cardiovascular function",
+        "Spontaneous ventilation",
+        "Airway patency without intervention",
+        "Normal response to voice"
       ],
       "answer": [
         0
@@ -82,10 +82,10 @@
       "type": "single",
       "stem": "Among minimal, moderate, and deep sedation, at which level does airway intervention first become potentially necessary?",
       "options": [
-        "Patient C, at deep sedation",
-        "Patient B, at moderate sedation",
-        "Patient A, at minimal sedation",
-        "None of them, because airway intervention begins at GA"
+        "Deep sedation",
+        "Moderate sedation",
+        "Minimal sedation",
+        "Only general anesthesia"
       ],
       "answer": [
         0
@@ -104,12 +104,12 @@
       "id": "SED-005",
       "set": 1,
       "type": "single",
-      "stem": "A patient remains conversational after midazolam but has impaired coordination. Which sedation level best fits?",
+      "stem": "After a small midazolam dose, a patient remains conversational but has impaired coordination. Which level best fits?",
       "options": [
-        "Minimal sedation, since coordination may be impaired",
-        "Moderate sedation, since coordination is impaired",
-        "Deep sedation, since motor function is depressed",
-        "Minimal sedation, as long as coordination is intact"
+        "Minimal sedation",
+        "Moderate sedation",
+        "Deep sedation",
+        "General anesthesia"
       ],
       "answer": [
         0
@@ -128,12 +128,12 @@
       "id": "SED-006",
       "set": 1,
       "type": "single",
-      "stem": "Oral midazolam is intended only for anxiolysis before MRI. Which change would indicate the patient has progressed beyond minimal sedation?",
+      "stem": "Oral midazolam is intended only for MRI anxiolysis. Which change most clearly indicates progression beyond minimal sedation?",
       "options": [
-        "She stops responding normally to conversation",
-        "She reports feeling less anxious about the scanner",
-        "She keeps a normal respiratory rate and SpO2",
-        "She remembers parts of the procedure afterward"
+        "Loss of a normal response to verbal interaction",
+        "Reduced anxiety",
+        "Normal respiratory rate and SpO2",
+        "Partial amnesia"
       ],
       "answer": [
         0
@@ -152,12 +152,12 @@
       "id": "SED-007",
       "set": 1,
       "type": "single",
-      "stem": "A patient becomes intermittently apneic and no longer responds purposefully to pain during propofol sedation. Which level and ventilation descriptor best fit?",
+      "stem": "During propofol sedation, the patient becomes intermittently apneic and is unarousable even to painful stimulation. Which classification best fits?",
       "options": [
-        "Ventilation frequently inadequate, at general anesthesia",
-        "Ventilation may be inadequate, at deep sedation with a jaw thrust",
-        "Ventilation adequate, at moderate sedation",
-        "Ventilation unaffected, at minimal sedation"
+        "General anesthesia with frequently inadequate ventilation",
+        "Deep sedation with reliably adequate ventilation",
+        "Moderate sedation with possible airway intervention",
+        "Minimal sedation with unaffected ventilation"
       ],
       "answer": [
         0
@@ -176,12 +176,12 @@
       "id": "SED-008",
       "set": 1,
       "type": "single",
-      "stem": "Moderate sedation is planned for a patient with OSA. What rescue capability must be available before starting?",
+      "stem": "Moderate sedation is planned for a patient with OSA. What level of rescue capability must the sedation provider possess?",
       "options": [
-        "Rescue from deep sedation, one level beyond the plan",
-        "Rescue from moderate sedation, the planned level",
-        "Rescue from minimal sedation, matching the oral premedication",
-        "Airway rescue by the code team, called when needed"
+        "Ability to rescue from deep sedation",
+        "Ability to rescue only from the intended moderate level",
+        "Ability to rescue only from minimal sedation",
+        "Reliance on a separate code team for deeper sedation"
       ],
       "answer": [
         0
@@ -200,12 +200,12 @@
       "id": "SED-009",
       "set": 1,
       "type": "single",
-      "stem": "During propofol sedation, sustained jaw thrust is required to maintain airflow. What does this imply about rescue preparedness?",
+      "stem": "During intended moderate sedation, sustained jaw thrust becomes necessary to maintain airflow and the patient responds only to painful stimulation. What should the provider recognize?",
       "options": [
-        "You must be ready to manage GA, including laryngoscopy",
-        "You should now proceed with routine intubation",
-        "A secured airway should have been placed before starting",
-        "Laryngoscopy is the first move for any obstruction"
+        "The patient is deeply sedated and rescue capability for progression to general anesthesia must be immediately available",
+        "Routine tracheal intubation is mandatory for every deeply sedated patient",
+        "The patient remains moderately sedated because spontaneous ventilation continues",
+        "Jaw thrust alone proves general anesthesia"
       ],
       "answer": [
         0
@@ -224,12 +224,12 @@
       "id": "SED-010",
       "set": 1,
       "type": "single",
-      "stem": "A patient is conversational early in colonoscopy but later becomes snoring and hypoxemic after stimulation decreases. What principle does this illustrate?",
+      "stem": "A patient is conversational early in colonoscopy but later snores and obstructs after the stimulating portion ends despite no additional drug. Which principle best explains this?",
       "options": [
-        "Depth shifts quickly with drug peaks and changing stimulation",
-        "Moderate sedation requires continuous core temperature monitoring",
-        "Cardiovascular function is usually impaired at moderate depth",
-        "Propofol accumulates once the infusion passes 20 minutes"
+        "Sedation depth reflects both drug effect and changing procedural stimulation",
+        "Moderate sedation requires continuous core-temperature monitoring",
+        "Cardiovascular function must be impaired before airway obstruction occurs",
+        "Propofol begins accumulating only after 20 minutes"
       ],
       "answer": [
         0
@@ -248,12 +248,12 @@
       "id": "SED-011",
       "set": 1,
       "type": "single",
-      "stem": "One patient responds purposefully to voice without support; another responds only to painful stimulation and needs jaw thrust. Which statement correctly distinguishes their sedation levels?",
+      "stem": "Patient A responds purposefully to voice without airway support. Patient B responds only to painful stimulation and requires jaw thrust. Which comparison is correct?",
       "options": [
-        "A is moderate with no airway intervention; B is deep and may need it",
-        "A is minimal and B is moderate, since both respond to stimulation",
-        "A and B are both deep, since both need stimulation",
-        "A is deep and B is general anesthesia"
+        "A is moderately sedated; B is deeply sedated",
+        "A is minimally sedated; B is moderately sedated",
+        "Both are deeply sedated",
+        "A is deeply sedated; B is under general anesthesia"
       ],
       "answer": [
         0
@@ -272,12 +272,12 @@
       "id": "SED-012",
       "set": 1,
       "type": "single",
-      "stem": "A patient planned for moderate sedation now responds only to a firm sternal rub. What is the best interpretation?",
+      "stem": "A patient intended for moderate sedation now follows a command only after firm sternal rub. What is the best interpretation?",
       "options": [
-        "He is now deeply sedated and airway readiness must increase",
-        "He remains moderately sedated because he spoke",
-        "He is under general anesthesia because he needed a painful stimulus",
-        "He is minimally sedated because he can still speak"
+        "The patient has progressed to deep sedation and airway/ventilation readiness should increase",
+        "The patient remains moderately sedated because a response is present",
+        "The patient is under general anesthesia because painful stimulation was needed",
+        "The patient is minimally sedated because a command was followed"
       ],
       "answer": [
         0
@@ -296,12 +296,12 @@
       "id": "SED-013",
       "set": 1,
       "type": "single",
-      "stem": "A drowsy patient opens her eyes and follows a command when her name is spoken with light touch. Which sedation level is present?",
+      "stem": "A drowsy patient opens her eyes and follows a command when her name is spoken with light touch. Which level is present?",
       "options": [
-        "Moderate sedation, also called conscious sedation",
-        "Minimal sedation, since she follows a command",
-        "Deep sedation, since her eyes are closed",
-        "General anesthesia, since she needed touch"
+        "Moderate sedation",
+        "Minimal sedation",
+        "Deep sedation",
+        "General anesthesia"
       ],
       "answer": [
         0
@@ -320,12 +320,12 @@
       "id": "SED-014",
       "set": 1,
       "type": "single",
-      "stem": "As propofol depth increases, cough to pooled secretions weakens and then disappears. What does this demonstrate about protective airway reflexes?",
+      "stem": "As propofol depth increases, cough to pooled secretions weakens and disappears. Which principle does this illustrate?",
       "options": [
-        "Protective airway reflexes fade progressively with depth",
-        "Airway reflexes stay intact until general anesthesia",
-        "Airway reflexes disappear at minimal sedation",
-        "Airway reflexes strengthen as sedation deepens"
+        "Protective airway reflexes become progressively less reliable as depth increases",
+        "Airway reflexes remain intact until general anesthesia begins",
+        "Airway reflexes disappear during minimal sedation",
+        "Protective reflexes strengthen as sedation deepens"
       ],
       "answer": [
         0
@@ -344,12 +344,12 @@
       "id": "SED-015",
       "set": 1,
       "type": "single",
-      "stem": "Low-dose midazolam followed by low-dose fentanyl produces severe hypoventilation. What pharmacodynamic principle best explains this?",
+      "stem": "Small doses of midazolam and fentanyl together produce much greater hypoventilation than either dose would be expected to cause alone. Which principle best explains this?",
       "options": [
-        "The drugs' respiratory depression is synergistic, not just additive",
-        "Fentanyl's peak effect arrived later than midazolam's",
-        "Fentanyl's chest wall rigidity is preventing breathing",
-        "Midazolam's effect peaked late and caused this by itself"
+        "Synergistic respiratory depression",
+        "Delayed fentanyl peak effect alone",
+        "Opioid-induced chest-wall rigidity at routine low dose",
+        "A paradoxical benzodiazepine reaction"
       ],
       "answer": [
         0
@@ -368,14 +368,14 @@
       "id": "SED-016",
       "set": 1,
       "type": "multi",
-      "stem": "A patient responds only after painful stimulation and needs jaw thrust while BP remains stable. Which TWO statements describe this state? (Select 2)",
+      "stem": "A patient responds purposefully only after painful stimulation and requires jaw thrust while BP remains stable. Which TWO statements are correct? (Select 2)",
       "options": [
-        "She is not easily aroused",
-        "Her ability to maintain ventilation may be impaired",
-        "Spontaneous ventilation is reliably adequate without support",
-        "No airway intervention should be required",
-        "Cardiovascular function is usually impaired at this level",
-        "She has a normal response to verbal commands"
+        "The patient is not easily aroused",
+        "Spontaneous ventilation may be inadequate",
+        "No airway intervention should be necessary",
+        "Cardiovascular function is expected to be severely impaired",
+        "The patient has a normal response to verbal commands",
+        "The patient meets the definition of moderate sedation"
       ],
       "answer": [
         0,
@@ -397,12 +397,12 @@
       "type": "multi",
       "stem": "Which FOUR features are expected during moderate sedation? (Select 4)",
       "options": [
-        "Continuous capnography is required",
-        "Spontaneous ventilation should remain adequate",
-        "The goal is a patient who still responds purposefully",
-        "No airway intervention should routinely be needed",
-        "Cardiovascular function is frequently impaired",
-        "Pulse oximetry alone is enough to monitor ventilation"
+        "Purposeful response to verbal or light tactile stimulation",
+        "Spontaneous ventilation is expected to remain adequate",
+        "Airway intervention is not routinely required",
+        "Cardiovascular function is usually maintained",
+        "Airway intervention is often required",
+        "Spontaneous ventilation is frequently inadequate"
       ],
       "answer": [
         0,
@@ -424,12 +424,12 @@
       "id": "SED-018",
       "set": 1,
       "type": "single",
-      "stem": "A patient receiving propofol for EGD no longer responds to verbal stimulation. What should the provider recognize?",
+      "stem": "During propofol for EGD, the patient no longer responds purposefully even to painful stimulation and ventilation becomes inadequate. What should the provider recognize?",
       "options": [
-        "Sedation may now carry the risk profile of general anesthesia",
-        "She has reached ideal moderate sedation for EGD",
-        "Propofol has produced analgesia sufficient for biopsy",
-        "Verbal response is lost first but reflexes stay protected"
+        "The patient has crossed into general anesthesia and requires rescue of airway/ventilation as needed",
+        "This is ideal moderate sedation for upper endoscopy",
+        "Propofol has supplied sufficient analgesia for the procedure",
+        "Loss of responsiveness does not change airway risk"
       ],
       "answer": [
         0
@@ -448,12 +448,12 @@
       "id": "SED-019",
       "set": 1,
       "type": "single",
-      "stem": "A minimally sedated patient develops a large blood-pressure decrease despite remaining conversational. How should this be interpreted?",
+      "stem": "A minimally sedated patient remains normally conversational but develops a large blood-pressure decrease. How should this be interpreted?",
       "options": [
-        "Unexpected, since cardiovascular function should be unaffected at minimal sedation",
-        "Expected, since minimal sedation usually impairs cardiovascular function",
-        "Expected, since cardiovascular function may be impaired at minimal sedation",
-        "Expected, since midazolam vasodilates even at minimal sedation"
+        "The hypotension is not explained by the expected physiology of minimal sedation and another cause should be sought",
+        "Cardiovascular depression is expected at minimal sedation",
+        "The patient must have progressed to deep sedation solely because BP fell",
+        "Minimal sedation routinely produces major vasodilation"
       ],
       "answer": [
         0
@@ -472,7 +472,7 @@
       "id": "SED-020",
       "set": 1,
       "type": "single",
-      "stem": "Which sedation-level and airway-intervention pairing correctly matches the ASA continuum?",
+      "stem": "Which airway-intervention descriptor correctly matches the ASA sedation continuum?",
       "options": [
         "General anesthesia: intervention often required",
         "Deep sedation: no intervention required",
@@ -520,12 +520,12 @@
       "id": "SED-022",
       "set": 1,
       "type": "single",
-      "stem": "Only minimal sedation is planned. Rescue from which next deeper level must still be possible?",
+      "stem": "Only minimal sedation is planned. From which next-deeper level must the provider still be able to rescue the patient?",
       "options": [
-        "Rescue from moderate sedation",
-        "Rescue from minimal sedation, the planned level",
-        "Rescue from general anesthesia",
-        "No rescue planning, since oral midazolam is mild"
+        "Moderate sedation",
+        "Minimal sedation",
+        "General anesthesia",
+        "No deeper-level rescue is needed"
       ],
       "answer": [
         0
@@ -544,12 +544,12 @@
       "id": "SED-023",
       "set": 1,
       "type": "single",
-      "stem": "A patient is unarousable even to painful stimulation and hypoventilating. Which responsiveness descriptor applies?",
+      "stem": "A patient is unarousable even to painful stimulation and hypoventilating. Which responsiveness category applies?",
       "options": [
-        "Unarousable even with painful stimulation",
-        "Purposeful response after repeated painful stimulation",
-        "Purposeful response to verbal or light tactile stimulation",
-        "Normal response to verbal stimulation"
+        "General anesthesia",
+        "Deep sedation",
+        "Moderate sedation",
+        "Minimal sedation"
       ],
       "answer": [
         0
@@ -568,12 +568,12 @@
       "id": "SED-024",
       "set": 1,
       "type": "single",
-      "stem": "A moderately sedated patient becomes restless late in a long case and the proceduralist requests more sedative. What is the key risk of simply escalating dosing?",
+      "stem": "Late in a long procedure, a moderately sedated patient becomes restless as stimulation increases. Why is simply giving repeated sedative boluses risky?",
       "options": [
-        "The patient slides into deeper-than-intended sedation",
-        "Emergence delirium that prevents further sedation",
-        "Paradoxical agitation from the midazolam already given",
-        "Hypertension that will require beta blockade"
+        "When stimulation falls, accumulated drug effect may push the patient into deeper-than-intended sedation",
+        "Restlessness proves the patient cannot become oversedated",
+        "Additional sedative will necessarily improve ventilation",
+        "The main risk is hypertension rather than airway/ventilatory depression"
       ],
       "answer": [
         0
@@ -592,12 +592,12 @@
       "id": "SED-025",
       "set": 1,
       "type": "single",
-      "stem": "Repeated painful stimulation produces only reflex withdrawal, not purposeful movement. What does this imply about depth?",
+      "stem": "Repeated painful stimulation produces only reflex withdrawal without purposeful response. Which depth is most consistent with the ASA continuum?",
       "options": [
-        "She has passed beyond deep sedation, since withdrawal is reflexive",
-        "She is at deep sedation, since she responds to painful stimulation",
-        "She is at moderate sedation, since she moved",
-        "She is at minimal sedation, since she withdrew"
+        "General anesthesia",
+        "Deep sedation",
+        "Moderate sedation",
+        "Minimal sedation"
       ],
       "answer": [
         0
@@ -616,12 +616,12 @@
       "id": "SED-026",
       "set": 1,
       "type": "single",
-      "stem": "The term \"conscious sedation\" corresponds to which ASA level, and what airway support is normally expected?",
+      "stem": "\"Conscious sedation\" corresponds to which ASA level and expected airway state?",
       "options": [
-        "Moderate sedation, with no airway intervention required",
-        "Minimal sedation, with an unaffected airway",
-        "Deep sedation, with airway intervention possibly required",
-        "Any level of sedation, depending on the drug"
+        "Moderate sedation; airway intervention is not routinely required",
+        "Minimal sedation; airway intervention may be required",
+        "Deep sedation; airway intervention is never required",
+        "General anesthesia; airway remains unaffected"
       ],
       "answer": [
         0
@@ -640,12 +640,12 @@
       "id": "SED-027",
       "set": 1,
       "type": "single",
-      "stem": "Repeated equal propofol boluses eventually cause airway obstruction despite initially producing only moderate sedation. What principle explains this?",
+      "stem": "Repeated equal propofol boluses eventually produce obstruction after initially producing only moderate sedation. Which principle best explains this?",
       "options": [
-        "Depth moves along a continuum without clear boundaries between levels",
-        "Each bolus produces the same fixed depth",
-        "Propofol accumulates after the fifth bolus in most patients",
-        "Depth depends on the drug chosen and not on the cumulative dose given"
+        "Sedation is a continuum, and cumulative drug effect can move a patient across levels",
+        "Each equal bolus produces a fixed, reproducible depth",
+        "Propofol cannot deepen sedation without a change in stimulus",
+        "Sedation level depends only on the drug selected, not dose or patient response"
       ],
       "answer": [
         0
@@ -664,12 +664,12 @@
       "id": "SED-028",
       "set": 1,
       "type": "single",
-      "stem": "At deep sedation, RR falls to 7 with shallow breaths. How should this be interpreted on the ASA continuum?",
+      "stem": "During deep sedation, RR falls to 7/min with shallow breaths. How should this be interpreted?",
       "options": [
-        "An expected possibility that may need support",
-        "Unexpected and signals general anesthesia",
-        "Normal because ventilation is unaffected",
-        "Expected only at general anesthesia, not deep sedation"
+        "Ventilation may be inadequate at this depth and should be assessed/supported",
+        "The finding proves general anesthesia",
+        "Ventilation is expected to remain unaffected during deep sedation",
+        "Respiratory depression occurs only during general anesthesia"
       ],
       "answer": [
         0
@@ -688,12 +688,12 @@
       "id": "SED-029",
       "set": 1,
       "type": "single",
-      "stem": "A patient progresses from normal conversation to response only to voice, then only to pain, then no response. What is the correct sequence of levels?",
+      "stem": "A patient progresses from normal response to voice, to purposeful response only when directly stimulated, to purposeful response only after painful stimulation, then to no purposeful response. Which sequence fits?",
       "options": [
-        "Minimal, moderate, deep, general anesthesia",
-        "Moderate, minimal, deep, general anesthesia",
-        "Minimal, deep, moderate, general anesthesia",
-        "Anxiolysis, deep, moderate, general anesthesia"
+        "Minimal → moderate → deep → general anesthesia",
+        "Moderate → minimal → deep → general anesthesia",
+        "Minimal → deep → moderate → general anesthesia",
+        "Minimal → moderate → general anesthesia → deep"
       ],
       "answer": [
         0
@@ -712,12 +712,12 @@
       "id": "SED-030",
       "set": 1,
       "type": "single",
-      "stem": "A patient initially at moderate sedation later responds only to repeated shaking. What should the provider conclude?",
+      "stem": "A patient intended for moderate sedation later follows commands only after repeated stimulation. What should the provider do?",
       "options": [
-        "She has likely moved to deep sedation; reassess and hold further drug",
-        "She is still at moderate sedation; continue the plan as written",
-        "She is at minimal sedation, since she responded",
-        "She is at general anesthesia, since she needed touch"
+        "Recognize progression to deep sedation, hold further dosing, and reassess airway/ventilation",
+        "Continue dosing because any command-following defines moderate sedation",
+        "Classify the patient as minimally sedated",
+        "Assume general anesthesia and intubate regardless of ventilation"
       ],
       "answer": [
         0
@@ -738,12 +738,12 @@
       "type": "multi",
       "stem": "Which FOUR features characterize general anesthesia on the ASA sedation continuum? (Select 4)",
       "options": [
-        "Unarousable even to painful stimulus",
+        "Unarousable even with painful stimulation",
         "Airway intervention often required",
+        "Spontaneous ventilation frequently inadequate",
         "Cardiovascular function may be impaired",
-        "Spontaneous ventilation is frequently inadequate",
-        "Purposeful response after repeated stimulation",
-        "Cardiovascular function is unaffected"
+        "Purposeful response after repeated painful stimulation",
+        "Airway unaffected"
       ],
       "answer": [
         0,
@@ -765,12 +765,12 @@
       "id": "SED-032",
       "set": 1,
       "type": "single",
-      "stem": "One patient converses normally after midazolam; another answers only when directly addressed. What distinguishes their sedation levels?",
+      "stem": "Patient A converses normally after midazolam. Patient B gives a purposeful answer only when directly addressed. Which comparison is most accurate?",
       "options": [
-        "A responds normally (minimal); B responds purposefully but not normally (moderate)",
-        "A is moderate and B is deep",
-        "Both are minimal, since both answer questions when spoken to",
-        "Both are moderate, since both received midazolam and both answer questions when spoken to"
+        "A is minimally sedated; B is moderately sedated",
+        "A is moderately sedated; B is deeply sedated",
+        "Both are minimally sedated",
+        "Both are moderately sedated"
       ],
       "answer": [
         0
@@ -789,12 +789,12 @@
       "id": "SED-033",
       "set": 1,
       "type": "single",
-      "stem": "In the GI suite, what specific aspiration mechanism is highlighted as a sedation hazard?",
+      "stem": "During GI sedation, external abdominal pressure is applied while protective airway reflexes are depressed. Which hazard is increased?",
       "options": [
-        "Aspiration from abdominal pressure on the stomach",
-        "Hypothermia from prolonged bowel preparation",
-        "Hypotension from vasovagal response to insufflation",
-        "Laryngospasm from the endoscope at the cords"
+        "Regurgitation and aspiration of gastric contents",
+        "Malignant hyperthermia",
+        "Local anesthetic systemic toxicity",
+        "Pneumothorax"
       ],
       "answer": [
         0
@@ -813,12 +813,12 @@
       "id": "SED-034",
       "set": 1,
       "type": "single",
-      "stem": "A patient lightens when procedural stimulation increases, prompting more drug, then risks oversedation when stimulation falls. What principle does this illustrate?",
+      "stem": "A patient appears lighter during intense procedural stimulation, receives additional sedative, then obstructs when stimulation abruptly stops. What caused the overshoot?",
       "options": [
-        "More stimulation lightens him, prompting more drug and deeper risk",
-        "More stimulation deepens him without added drug",
-        "Ketamine holds him at a fixed depth whatever the stimulus",
-        "Dexmedetomidine's alpha-2 effect will hold him at his current depth"
+        "Drug dosing was titrated to transient stimulation rather than anticipating the subsequent fall in stimulus",
+        "Procedural stimulation directly deepened sedation",
+        "Sedation depth is independent of procedural stimulation",
+        "The airway obstruction proves an allergic reaction"
       ],
       "answer": [
         0
@@ -837,12 +837,12 @@
       "id": "SED-035",
       "set": 1,
       "type": "single",
-      "stem": "Which finding most clearly indicates progression from minimal to moderate sedation?",
+      "stem": "Which finding most clearly marks progression from minimal to moderate sedation?",
       "options": [
-        "He answers only when spoken to directly, not in normal conversation",
-        "He reports feeling relaxed",
-        "His respiratory rate is 14 with a normal capnogram waveform",
-        "His BP is unchanged from baseline and his heart rate is stable"
+        "Purposeful but diminished response to verbal stimulation rather than a normal conversational response",
+        "Feeling relaxed",
+        "Normal respiratory rate and capnogram",
+        "Stable blood pressure"
       ],
       "answer": [
         0
@@ -861,12 +861,12 @@
       "id": "SED-036",
       "set": 1,
       "type": "single",
-      "stem": "A patient with EF 25% becomes hypotensive during deep sedation. Why is \"cardiovascular function is usually maintained\" not reassuring enough?",
+      "stem": "A patient with EF 25% becomes hypotensive during deep sedation. Why does the continuum's phrase \"cardiovascular function usually maintained\" not exclude sedation as a contributor?",
       "options": [
-        "\"Usually maintained\" does not protect patients with limited reserve",
-        "Cardiovascular function is usually impaired at deep sedation",
-        "The cuff is likely too large for her arm",
-        "She has moved to minimal sedation as the drug wore off"
+        "Population-level descriptors do not guarantee hemodynamic tolerance in a patient with limited reserve",
+        "Cardiovascular function is always severely impaired during deep sedation",
+        "Deep sedation cannot affect vascular tone",
+        "Hypotension proves the patient is minimally sedated"
       ],
       "answer": [
         0
@@ -885,12 +885,12 @@
       "id": "SED-037",
       "set": 1,
       "type": "single",
-      "stem": "Which common brief procedure most often requires deep rather than moderate sedation?",
+      "stem": "A synchronized cardioversion requires immobility for a brief but intensely painful stimulus. Which sedation target is commonly appropriate when full rescue capability is present?",
       "options": [
-        "Electrical cardioversion",
-        "Routine colonoscopy",
-        "Flexible sigmoidoscopy",
-        "Image-guided liver biopsy"
+        "Brief deep sedation",
+        "Minimal anxiolysis",
+        "Routine moderate sedation regardless of response",
+        "No sedation because the stimulus is brief"
       ],
       "answer": [
         0
@@ -909,12 +909,12 @@
       "id": "SED-038",
       "set": 1,
       "type": "single",
-      "stem": "A patient progresses from purposeful response to voice, to response only to repeated stimulation, to no purposeful response. How many sedation levels has the patient crossed?",
+      "stem": "A patient moves from purposeful response to voice, to purposeful response only after repeated/painful stimulation, to no purposeful response. Which transition occurred?",
       "options": [
-        "Two levels, from moderate sedation to general anesthesia",
-        "One level, from moderate to deep sedation",
-        "One level, from minimal to moderate sedation",
-        "Three levels, from minimal sedation to general anesthesia"
+        "Moderate sedation → deep sedation → general anesthesia",
+        "Minimal sedation → moderate sedation only",
+        "Deep sedation → moderate sedation → general anesthesia",
+        "Minimal sedation → deep sedation only"
       ],
       "answer": [
         0
@@ -933,12 +933,12 @@
       "id": "SED-039",
       "set": 1,
       "type": "single",
-      "stem": "For planned anxiolysis, what response to voice and airway state should be preserved?",
+      "stem": "For planned anxiolysis, which combination should be preserved?",
       "options": [
-        "Normal response to voice with an unaffected airway",
-        "Purposeful response with no airway intervention needed",
-        "Response after repeated stimulation, airway possibly at risk",
-        "No response, with airway intervention often required"
+        "Normal response to verbal stimulation with an unaffected airway",
+        "Purposeful response only to painful stimulation with possible airway intervention",
+        "No response to pain with frequent ventilatory inadequacy",
+        "Diminished response to voice with airway intervention often required"
       ],
       "answer": [
         0
@@ -957,12 +957,12 @@
       "id": "SED-040",
       "set": 1,
       "type": "single",
-      "stem": "A patient initially pushes away painful stimulation but no longer responds after another propofol bolus. What transition has occurred?",
+      "stem": "A patient initially pushes away painful stimulation purposefully but, after another propofol bolus, has no purposeful response to pain. Which transition occurred?",
       "options": [
-        "Transition from deep sedation to general anesthesia",
-        "Transition from moderate to deep sedation",
-        "Transition from minimal to moderate sedation",
-        "No change in level, since he is still breathing spontaneously"
+        "Deep sedation to general anesthesia",
+        "Moderate to deep sedation",
+        "Minimal to moderate sedation",
+        "No change because spontaneous breathing may persist"
       ],
       "answer": [
         0
@@ -981,12 +981,12 @@
       "id": "SED-041",
       "set": 1,
       "type": "single",
-      "stem": "During deep sedation, the patient becomes unresponsive to pain with severe hypoventilation. What state has been entered, and what must the provider do?",
+      "stem": "During intended deep sedation, the patient becomes unresponsive to pain with severe hypoventilation. What is the correct response?",
       "options": [
-        "General anesthesia; rescue the airway and ventilation",
-        "Moderate sedation; lighten the infusion and observe",
-        "Emergence delirium; give a benzodiazepine",
-        "Local anesthetic toxicity; give lipid emulsion"
+        "Recognize general anesthesia and rescue airway/ventilation",
+        "Label this moderate sedation and observe",
+        "Treat as emergence delirium",
+        "Give lipid emulsion"
       ],
       "answer": [
         0
@@ -1005,12 +1005,12 @@
       "id": "SED-042",
       "set": 1,
       "type": "single",
-      "stem": "A quiet, still patient on propofol has regular respirations. What is the best way to determine actual sedation depth?",
+      "stem": "A quiet patient on propofol has regular respirations and SpO2 99% on oxygen. What is the best way to determine actual sedation depth?",
       "options": [
-        "Stimulate her and observe her response",
-        "Rely on the steady breathing pattern",
-        "Check that her SpO2 is above 95%",
-        "Rely on the dose given so far"
+        "Assess response to appropriate verbal/tactile or painful stimulation",
+        "Infer depth from SpO2",
+        "Infer depth from respiratory regularity",
+        "Infer depth from propofol dose alone"
       ],
       "answer": [
         0
@@ -1029,12 +1029,12 @@
       "id": "SED-043",
       "set": 1,
       "type": "single",
-      "stem": "During moderate sedation, what is the best monitor for confirming adequacy of ventilation?",
+      "stem": "During moderate sedation with supplemental oxygen, which monitor detects hypoventilation most directly and earlier than pulse oximetry?",
       "options": [
         "Continuous capnography",
-        "Pulse oximetry on supplemental oxygen",
-        "Visual inspection of chest movement alone",
-        "Her ability to respond to her name"
+        "Pulse oximetry",
+        "Intermittent blood pressure",
+        "ECG"
       ],
       "answer": [
         0
@@ -1053,12 +1053,12 @@
       "id": "SED-044",
       "set": 1,
       "type": "single",
-      "stem": "A patient still responds to name, but RR falls to 6 and ETCO2 rises. What should guide management?",
+      "stem": "A patient still responds purposefully to voice, but RR falls to 6/min and ETCO2 rises. What should drive immediate management?",
       "options": [
-        "Responsiveness and ventilation are diverging; treat the ventilation",
-        "She remains at moderate sedation, so no action is needed now",
-        "She is at GA because her ventilation is now inadequate",
-        "Rising ETCO2 means she is lightening from the sedation"
+        "The ventilatory failure should be treated despite the preserved responsiveness",
+        "No action is needed because responsiveness defines moderate sedation",
+        "The patient must be under general anesthesia",
+        "Rising ETCO2 indicates inadequate sedation"
       ],
       "answer": [
         0
@@ -1077,12 +1077,12 @@
       "id": "SED-045",
       "set": 1,
       "type": "single",
-      "stem": "Which ASA physiologic descriptor remains the same when moving from moderate to deep sedation?",
+      "stem": "Which ASA descriptor is unchanged when moving from moderate to deep sedation?",
       "options": [
-        "Cardiovascular function usually maintained",
-        "Response to voice",
+        "Cardiovascular function is usually maintained",
+        "Response to verbal stimulation",
         "Need for airway intervention",
-        "Adequacy of spontaneous ventilation without support"
+        "Adequacy of spontaneous ventilation"
       ],
       "answer": [
         0
@@ -1101,12 +1101,12 @@
       "id": "SED-046",
       "set": 1,
       "type": "single",
-      "stem": "Brief deep sedation is planned for cardioversion. Which rescue equipment must be immediately available?",
+      "stem": "Brief deep sedation is planned for cardioversion. Which preparation is required before drug administration?",
       "options": [
-        "Full airway rescue equipment, including laryngoscopy",
-        "Nasal cannula, suction, and an oral airway at the bedside",
-        "A bag-mask device and oral airway",
-        "Equipment for minimal sedation kept nearby"
+        "Immediate capability and equipment to rescue from general anesthesia, including advanced airway management",
+        "Only a nasal cannula because the procedure is brief",
+        "Only an oral airway and suction",
+        "No advanced rescue preparation if spontaneous ventilation is expected"
       ],
       "answer": [
         0
@@ -1125,12 +1125,12 @@
       "id": "SED-047",
       "set": 1,
       "type": "single",
-      "stem": "A patient with intermittent apnea still responds purposefully to painful stimulation. Which depth best fits?",
+      "stem": "A patient has intermittent apnea but still purposefully pushes away painful stimulation. Which classification best fits?",
       "options": [
-        "Deep sedation with inadequate ventilation",
-        "Moderate sedation with intact ventilation",
-        "Minimal sedation with a vasovagal response",
-        "General anesthesia with preserved reflexes"
+        "Deep sedation with impaired ventilation",
+        "Moderate sedation with reliably adequate ventilation",
+        "Minimal sedation",
+        "General anesthesia because any apnea defines GA"
       ],
       "answer": [
         0
@@ -1149,12 +1149,12 @@
       "id": "SED-048",
       "set": 1,
       "type": "single",
-      "stem": "Responsiveness, airway reflexes, ventilation, and finally hemodynamics progressively decline as more drug is given. Which model describes this?",
+      "stem": "Responsiveness, airway reflexes, ventilation, and eventually cardiovascular function progressively decline as drug effect increases. Which model does this describe?",
       "options": [
-        "A continuum where function declines as depth increases",
-        "A scale defined by processed EEG values",
-        "A classification used outside the operating room",
-        "A fixed set of separate, stable levels"
+        "The sedation-anesthesia continuum",
+        "A fixed classification determined by drug name",
+        "A processed-EEG staging system",
+        "Four physiologically isolated states with sharp boundaries"
       ],
       "answer": [
         0
@@ -1173,12 +1173,12 @@
       "id": "SED-049",
       "set": 1,
       "type": "single",
-      "stem": "A calm patient under oral midazolam answers normally and breathes unaided. Which airway descriptor fits this level?",
+      "stem": "A calm patient after oral midazolam responds normally to conversation and breathes unaided. Which airway descriptor best fits?",
       "options": [
-        "Airway unaffected, as expected at minimal sedation",
-        "No intervention required, as described for moderate sedation",
-        "Intervention may be required, as at deep sedation",
-        "Airway likely needs intervention, as at GA"
+        "Airway unaffected",
+        "Airway intervention may be required",
+        "Airway intervention often required",
+        "Airway is protected only by an endotracheal tube"
       ],
       "answer": [
         0
@@ -1197,12 +1197,12 @@
       "id": "SED-050",
       "set": 1,
       "type": "single",
-      "stem": "A patient intended for moderate sedation now responds only to painful stimulation. What is the first action?",
+      "stem": "A patient intended for moderate sedation now responds purposefully only to painful stimulation. What is the first priority?",
       "options": [
-        "Assess airway and ventilation and stop further dosing",
-        "Give flumazenil to restore moderate sedation",
-        "Proceed, since a purposeful response is still present",
-        "Intubate because deep sedation was not planned"
+        "Recognize deep sedation, stop further dosing, and assess/support airway and ventilation",
+        "Give flumazenil automatically",
+        "Proceed unchanged because purposeful response persists",
+        "Intubate automatically even if ventilation is adequate"
       ],
       "answer": [
         0
