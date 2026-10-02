@@ -8,12 +8,12 @@
       "id": "PRE-001",
       "set": 1,
       "type": "single",
-      "stem": "A 58-year-old had a phone preanesthesia interview 12 days before a knee replacement, and her chart is complete. She arrives on the morning of surgery. What is still required?",
+      "stem": "A healthy patient completed a phone preanesthesia interview 12 days ago. The chart is complete and nothing has changed. Which requirement still cannot be omitted on the morning of surgery?",
       "options": [
         "A day-of-surgery preoperative interview",
-        "A repeat interview if her labs have changed",
-        "No further interview since the phone visit was signed",
-        "An in-person interview if she is ASA III or above"
+        "A repeat interview only if laboratory values changed",
+        "No further interview because the phone assessment remains valid",
+        "An in-person clinic interview because the prior assessment was remote"
       ],
       "answer": [
         0
@@ -32,12 +32,12 @@
       "id": "PRE-002",
       "set": 1,
       "type": "single",
-      "stem": "A preop clinic wants to schedule phone assessments for elective cases. Which timing window before surgery is appropriate?",
+      "stem": "A stable elective patient has no major comorbidity and will be assessed by phone rather than in clinic. Which scheduling interval is consistent with the preoperative assessment process?",
       "options": [
         "1–30 days before surgery",
         "1–7 days before surgery",
         "7–60 days before surgery",
-        "Within 24 hours of surgery"
+        "Only within 24 hours of surgery"
       ],
       "answer": [
         0
@@ -56,12 +56,12 @@
       "id": "PRE-003",
       "set": 1,
       "type": "single",
-      "stem": "A patient with EF 25%, CKD 4, and insulin-dependent diabetes is booked for elective colectomy. When should this patient be seen in the preop testing center?",
+      "stem": "An elective colectomy patient has EF 25%, stage 4 CKD, and insulin-dependent diabetes but is not acutely decompensated. What timing best preserves an opportunity for optimization rather than merely identifying risk on the day of surgery?",
       "options": [
         "At least a week before surgery",
         "The afternoon before surgery",
         "The morning of surgery",
-        "Within 30 days if symptoms develop"
+        "Any time within 30 days if symptoms develop"
       ],
       "answer": [
         0
@@ -80,14 +80,14 @@
       "id": "PRE-004",
       "set": 1,
       "type": "multi",
-      "stem": "A hospital is deciding whether to fund an in-person preop testing clinic visit for elective patients. Which benefits support it? (Select 4)",
+      "stem": "A hospital is deciding whether an in-person preoperative testing clinic adds value beyond a day-of-surgery interview. Which benefits justify the clinic? (Select 4)",
       "options": [
-        "Educating the patient and reducing anxiety",
-        "One-stop testing for labs, imaging, and studies",
+        "Patient education and anxiety reduction",
+        "Consolidated testing such as labs, imaging, and other studies",
         "Fewer preventable day-of-surgery cancellations",
         "Time to optimize medical conditions before surgery",
-        "Replacing the day-of-surgery interview",
-        "Allowing the surgeon to skip the history and physical"
+        "Elimination of the day-of-surgery interview",
+        "Replacement of the surgeon's history and physical"
       ],
       "answer": [
         0,
@@ -109,7 +109,7 @@
       "id": "PRE-005",
       "set": 1,
       "type": "single",
-      "stem": "A 66-year-old takes metoprolol, lisinopril, furosemide, and glipizide. Which should he take with a sip of water on the morning of surgery?",
+      "stem": "A 66-year-old takes metoprolol, lisinopril, furosemide, and glipizide. To avoid rebound sympathetic effects without increasing common peri-induction medication risks, which drug should be taken with a sip of water?",
       "options": [
         "Metoprolol",
         "Lisinopril",
@@ -133,12 +133,12 @@
       "id": "PRE-006",
       "set": 1,
       "type": "single",
-      "stem": "A patient takes losartan, amlodipine, and hydrochlorothiazide and asks which to take on the morning of surgery. What is the correct instruction?",
+      "stem": "A patient takes losartan, amlodipine, and hydrochlorothiazide. Which morning-of-surgery plan best avoids medication-related hypotension or volume depletion while maintaining usual antihypertensive therapy?",
       "options": [
-        "Take the amlodipine and hold the other two",
-        "Take the losartan and hold the other two",
+        "Take amlodipine; hold losartan and hydrochlorothiazide",
+        "Take losartan; hold amlodipine and hydrochlorothiazide",
         "Take all three as usual",
-        "Take the hydrochlorothiazide and amlodipine"
+        "Take hydrochlorothiazide and amlodipine; hold losartan"
       ],
       "answer": [
         0
@@ -181,12 +181,12 @@
       "id": "PRE-008",
       "set": 1,
       "type": "single",
-      "stem": "A patient with a drug-eluting stent on clopidogrel and aspirin, and another on rivaroxaban for AF, are both scheduled for surgery. How should these drug classes be managed?",
+      "stem": "One patient has a drug-eluting coronary stent and takes aspirin plus clopidogrel; another takes rivaroxaban for atrial fibrillation. Which management principle applies to both before surgery?",
       "options": [
-        "Case by case, weighing bleeding against thrombosis",
-        "Both continued through surgery as a fixed rule",
-        "Both held the morning of surgery as a fixed rule",
-        "Replaced with low-dose aspirin the day before"
+        "Individualize interruption or continuation by balancing bleeding and thrombosis",
+        "Continue both drug classes through surgery as a fixed rule",
+        "Hold both drug classes only on the morning of surgery as a fixed rule",
+        "Replace either regimen with low-dose aspirin the day before surgery"
       ],
       "answer": [
         0
@@ -205,12 +205,12 @@
       "id": "PRE-009",
       "set": 1,
       "type": "single",
-      "stem": "A patient with Parkinson's disease and a seizure disorder asks whether to skip carbidopa-levodopa and levetiracetam before surgery. What is the BEST instruction?",
+      "stem": "A patient with Parkinson disease and a seizure disorder is NPO for surgery and asks whether carbidopa-levodopa and levetiracetam should be skipped. Which instruction best prevents avoidable perioperative deterioration?",
       "options": [
         "Take both on the morning of surgery",
-        "Hold both to reduce drug interactions",
-        "Take levetiracetam and hold carbidopa-levodopa",
-        "Hold both until the patient is in PACU"
+        "Hold both to minimize anesthetic interactions",
+        "Take levetiracetam but hold carbidopa-levodopa",
+        "Hold both until PACU"
       ],
       "answer": [
         0
@@ -229,7 +229,7 @@
       "id": "PRE-010",
       "set": 1,
       "type": "multi",
-      "stem": "A 70-year-old's home list includes furosemide, glyburide, a multivitamin, fish oil, and an albuterol inhaler. Which should be held on the morning of surgery? (Select 4)",
+      "stem": "A 70-year-old takes furosemide, glyburide, a multivitamin, fish oil, an albuterol inhaler, and metoprolol. Which four are ordinarily held on the morning of surgery? (Select 4)",
       "options": [
         "Furosemide",
         "Glyburide",
@@ -258,12 +258,12 @@
       "id": "PRE-011",
       "set": 1,
       "type": "single",
-      "stem": "A 52-year-old on oxycodone 10 mg every 8 hours for chronic back pain asks whether to skip her morning dose before a laminectomy. What is the BEST instruction?",
+      "stem": "A patient takes oxycodone 10 mg every 8 hours chronically and is scheduled for a painful laminectomy. Which morning-of-surgery instruction best limits withdrawal and worsening postoperative analgesic requirements?",
       "options": [
         "Take the usual morning dose",
-        "Hold it to reduce respiratory depression",
+        "Hold the dose to reduce intraoperative respiratory depression",
         "Take half of the usual dose",
-        "Hold it and rely on a postoperative PCA"
+        "Hold the dose and substitute only a postoperative PCA"
       ],
       "answer": [
         0
@@ -282,12 +282,12 @@
       "id": "PRE-012",
       "set": 1,
       "type": "single",
-      "stem": "A new SRNA asks what the preoperative evaluation is meant to achieve. Which answer captures its goals?",
+      "stem": "Which preoperative action best reflects the purpose of evaluation rather than simply completing documentation?",
       "options": [
-        "Lower risk, prepare the patient, and build an anesthetic plan",
-        "Diagnose new disease, order labs, and schedule surgery",
-        "Obtain consent, give premedication, and start the IV",
-        "Assign ASA class, calculate RCRI, and staff the room"
+        "Identify modifiable risk, prepare the patient, and build an anesthetic plan",
+        "Diagnose every untreated disease, order routine labs, and schedule surgery",
+        "Obtain consent, administer premedication, and start an IV",
+        "Assign ASA class, calculate one risk score, and determine staffing"
       ],
       "answer": [
         0
@@ -306,12 +306,12 @@
       "id": "PRE-013",
       "set": 1,
       "type": "single",
-      "stem": "You open the chart for your first patient of the day. Before reviewing labs or prior anesthetics, what should you confirm?",
+      "stem": "You begin chart review for the first case of the day. Which verification comes before interpreting comorbidities, laboratory values, or prior anesthetic records?",
       "options": [
         "Patient identity and the planned procedure",
-        "The risk stratification and anesthetic plan",
-        "The most recent lab and imaging results",
-        "The most recent labs and imaging results"
+        "Risk stratification and the provisional anesthetic plan",
+        "The most recent laboratory values and imaging",
+        "The surgeon's preferred anesthetic technique"
       ],
       "answer": [
         0
@@ -330,12 +330,12 @@
       "id": "PRE-014",
       "set": 1,
       "type": "single",
-      "stem": "During chart review, you find a prior anesthesia record noting \"grade 4 view, intubated with bougie and VL.\" What is the MOST important use of this finding?",
+      "stem": "A prior anesthetic record documents a grade 4 laryngoscopic view with successful bougie-assisted video laryngoscopy. What should this finding change before induction?",
       "options": [
-        "Plan difficult airway equipment before induction",
-        "Document it but proceed with a standard plan",
-        "Plan an RSI with a Mac 4 blade as the primary approach",
-        "Plan a regional technique to avoid the airway"
+        "Prepare a difficult-airway strategy and equipment in advance",
+        "Document it but begin with the usual airway plan",
+        "Use rapid-sequence induction with a Mac 4 blade as the default first attempt",
+        "Choose regional anesthesia solely to avoid airway management"
       ],
       "answer": [
         0
@@ -354,14 +354,14 @@
       "id": "PRE-015",
       "set": 1,
       "type": "multi",
-      "stem": "A 72-year-old says, \"Last time I was confused for two days and threw up all night.\" Which anesthesia history items does this interview need to capture? (Select 4)",
+      "stem": "A 72-year-old reports severe postoperative nausea and vomiting and two days of confusion after a prior anesthetic. Which additional anesthesia-history elements belong in the same focused review? (Select 4)",
       "options": [
-        "PONV",
-        "Emergence delirium or slow emergence",
+        "Prior PONV",
+        "Emergence delirium or delayed emergence",
         "Personal or family history of malignant hyperthermia",
         "Prior difficult airway",
-        "Prior response to regional anesthesia",
-        "The name of the prior surgeon"
+        "Response to regional anesthesia",
+        "Name of the prior surgeon"
       ],
       "answer": [
         0,
@@ -383,12 +383,12 @@
       "id": "PRE-016",
       "set": 1,
       "type": "single",
-      "stem": "A patient says his father \"had a high fever and stiff muscles during surgery and nearly died.\" Which history category does this fall under, and why does it matter?",
+      "stem": "A patient's father developed marked hyperthermia and muscle rigidity during anesthesia and nearly died. Which interpretation has the greatest anesthetic consequence?",
       "options": [
-        "Anesthesia history; possible family MH changes the plan",
-        "Social history; it predicts alcohol withdrawal risk after surgery",
-        "Cardiac history; it predicts ischemia",
-        "Family history; it predicts a pseudocholinesterase deficiency"
+        "This is anesthesia history suggesting possible familial malignant hyperthermia susceptibility",
+        "This is social history suggesting postoperative alcohol withdrawal risk",
+        "This is cardiac history predicting perioperative ischemia",
+        "This is family history primarily suggesting pseudocholinesterase deficiency"
       ],
       "answer": [
         0
@@ -407,12 +407,12 @@
       "id": "PRE-017",
       "set": 1,
       "type": "single",
-      "stem": "A patient's chart lists no prior complications, but in the interview she mentions she \"woke up gasping and needed a breathing tube again\" after a past surgery. What does this show?",
+      "stem": "The chart lists no prior anesthetic complications, but the patient recalls awakening after surgery, becoming severely dyspneic, and requiring reintubation. What is the most important lesson for the current evaluation?",
       "options": [
-        "Complications may be missing from the chart",
-        "The chart is legally inadmissible for planning",
-        "Patients prefer that their chart not be reviewed",
-        "The interview can replace the need for consent"
+        "Important anesthetic complications may be absent from the existing chart",
+        "The prior chart should no longer be used for planning",
+        "Patient recollection should replace review of previous records",
+        "The interview removes the need for formal consent"
       ],
       "answer": [
         0
@@ -431,12 +431,12 @@
       "id": "PRE-018",
       "set": 1,
       "type": "single",
-      "stem": "A patient lists \"codeine allergy\" and says it made her nauseated and itchy. Another lists \"penicillin\" with hives and lip swelling. What distinction should you document?",
+      "stem": "One patient lists codeine as an allergy because of nausea and pruritus; another reports penicillin-associated hives and lip swelling. What distinction should be explicitly documented because it changes how each entry is interpreted?",
       "options": [
         "Immune-mediated versus non-immune reactions",
-        "Delayed versus immediate reactions alone",
-        "Food versus environmental reactions",
-        "Drug versus latex reactions"
+        "Delayed versus immediate timing alone",
+        "Food versus environmental sensitivity",
+        "Drug versus latex exposure"
       ],
       "answer": [
         0
@@ -455,12 +455,12 @@
       "id": "PRE-019",
       "set": 1,
       "type": "single",
-      "stem": "You have 10 minutes for a day-of-surgery physical before a hernia repair. Which systems belong in the focused exam?",
+      "stem": "You have limited time for a focused day-of-surgery examination before an uncomplicated hernia repair. Which examination set is most aligned with anesthesia-specific risk detection?",
       "options": [
-        "Airway, neuro, cardiovascular, pulmonary, GI",
-        "Airway, cardiovascular, renal, skin, musculoskeletal",
-        "Neuro, cardiovascular, endocrine, renal, GI",
-        "Airway, pulmonary, hematologic, renal, skin"
+        "Airway, neurologic, cardiovascular, pulmonary, and gastrointestinal",
+        "Airway, cardiovascular, renal, skin, and musculoskeletal",
+        "Neurologic, cardiovascular, endocrine, renal, and gastrointestinal",
+        "Airway, pulmonary, hematologic, renal, and skin"
       ],
       "answer": [
         0
@@ -479,12 +479,12 @@
       "id": "PRE-020",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a preop testing visit 2 weeks ago with a full physical. On the morning of surgery, she reports new ankle swelling. What must happen before induction?",
+      "stem": "A patient had a complete preoperative clinic examination two weeks ago but now reports new bilateral ankle swelling. What is required before induction?",
       "options": [
-        "A focused day-of-surgery physical",
-        "Nothing, since the full physical was done 2 weeks ago",
-        "A repeat full physical if labs have changed",
-        "Rescheduling the case for cardiology clearance first"
+        "A focused day-of-surgery physical addressing the interval change",
+        "No further examination because a full physical was already completed",
+        "A repeat complete physical only if laboratory values also changed",
+        "Automatic cancellation pending cardiology clearance"
       ],
       "answer": [
         0
