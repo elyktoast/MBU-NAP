@@ -794,6 +794,9 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ["VERSION='2026-09-27-v6'",'I agree to the','Terms of Use','Privacy Notice','localStorage.setItem(KEY','data-legal-continue','pointer-events:auto'])if(!gate.includes(token))fail('Legal gate missing '+token);
  if(boot.includes('html[data-mbu-boot="loading"] body{pointer-events:none}'))fail('Legal gate is blocked by bootstrap pointer-events');
  if(!boot.includes('body>#srna-legal-gate{visibility:visible;pointer-events:auto}'))fail('Bootstrap does not keep the legal gate visible and interactive while loading');
+ if(!boot.includes("protectedCourse=ctx.courseId==='basic-principles'"))fail('Bootstrap: Basic Principles protected-course boundary is missing');
+ if(!boot.includes("sessionStorage.setItem('mbu_post_auth_target',location.href)")||!boot.includes("location.replace(home)"))fail('Bootstrap: protected deep links do not preserve destination and return guests home');
+ if(!boot.includes("sessionStorage.removeItem('mbu_post_auth_target')")||!boot.includes("location.replace(postAuthTarget)"))fail('Bootstrap: successful authentication does not resume the protected destination');
  for(const token of ["LEGAL_VERSION='2026-09-27-v6'","LEGAL_TERMS_VERSION=LEGAL_VERSION","LEGAL_PRIVACY_VERSION=LEGAL_VERSION",'snar_terms_version:LEGAL_TERMS_VERSION','snar_privacy_version:LEGAL_PRIVACY_VERSION','snar_adult_ack:true','snar_has_current_legal_acceptance','snar_accept_current_legal','acceptCurrentLegal','legalAccepted','refreshCalibration(true)'])if(!cloud.includes(token))fail('Account legal acknowledgement contract missing '+token);
  if(!core.includes('data-cloud-reaccept')||!core.includes('Updated account agreement required')||!core.includes("info.legalAccepted!==true?'Action required'")||!core.includes('data-cloud-legal-required'))fail('Authenticated legal re-acceptance UI/state handling is missing');
 }
