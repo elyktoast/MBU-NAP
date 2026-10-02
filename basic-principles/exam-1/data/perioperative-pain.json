@@ -6237,12 +6237,12 @@
       "id": "PAIN-251",
       "set": 1,
       "type": "single",
-      "stem": "A patient is extubated and in severe pain. You planned to give naloxone for sedation earlier. What is the risk?",
+      "stem": "An opioid-treated patient is hypoventilating, but severe surgical pain is expected immediately after extubation. What is the main danger of giving a large naloxone dose?",
       "options": [
-        "Abrupt severe pain from reversal",
-        "Improved analgesia from naloxone",
-        "Increased sedation after naloxone",
-        "No change in pain"
+        "Abrupt reversal can produce severe pain while eliminating needed analgesia",
+        "Naloxone potentiates opioid analgesia",
+        "Naloxone causes prolonged sedation",
+        "Naloxone has no effect on postoperative pain"
       ],
       "answer": [
         0
@@ -6261,12 +6261,12 @@
       "id": "PAIN-252",
       "set": 1,
       "type": "single",
-      "stem": "For a laparoscopic colectomy, you want an infusion that improves analgesia, reduces ileus, and speeds discharge. Which fits?",
+      "stem": "After laparoscopic colectomy, the team wants an adjunct that can reduce opioid exposure while also improving bowel recovery. Which infusion BEST fits both goals?",
       "options": [
         "IV lidocaine",
         "IV morphine",
         "IV hydromorphone",
-        "IV dexmedetomidine"
+        "IV dexmedetomidine alone"
       ],
       "answer": [
         0
@@ -6333,12 +6333,12 @@
       "id": "PAIN-255",
       "set": 1,
       "type": "single",
-      "stem": "A long fentanyl infusion is stopped at skin closure. Emergence is delayed. What concept explains this?",
+      "stem": "A fentanyl infusion has run throughout a long operation and is stopped only at skin closure. The patient remains slow to emerge despite normal organ function. Which mechanism BEST explains this?",
       "options": [
-        "Increasing context-sensitive half-time",
-        "Fentanyl accumulation in renal failure",
-        "Rapid redistribution into the brain",
-        "Zero-order metabolism"
+        "Prolongation of context-sensitive half-time from tissue accumulation and redistribution",
+        "Renal accumulation unique to fentanyl",
+        "Rapid redistribution from plasma into the brain after stopping the infusion",
+        "Zero-order elimination at clinical concentrations"
       ],
       "answer": [
         0
@@ -6357,12 +6357,12 @@
       "id": "PAIN-256",
       "set": 1,
       "type": "single",
-      "stem": "A patient on remifentanil infusion wakes in severe pain after it is stopped. What should have been done?",
+      "stem": "A remifentanil infusion provides excellent intraoperative analgesia, but the patient awakens with immediate severe pain when it is discontinued. Which transition was missed?",
       "options": [
-        "Give longer-acting analgesia before stopping remifentanil",
-        "Continue remifentanil into PACU at a lower rate",
-        "Give naloxone to prevent rebound pain",
-        "Increase volatile concentration to cover the loss of analgesia"
+        "Establish longer-acting analgesia before remifentanil is stopped",
+        "Continue remifentanil routinely on the unmonitored ward",
+        "Give naloxone before discontinuation",
+        "Increase volatile anesthetic at closure to provide postoperative analgesia"
       ],
       "answer": [
         0
@@ -6405,12 +6405,12 @@
       "id": "PAIN-258",
       "set": 1,
       "type": "single",
-      "stem": "A hydromorphone PCA order has a demand dose of 0.4 mg but no lockout interval. The patient presses the button 20 times in an hour. What is the risk?",
+      "stem": "A hydromorphone PCA order includes a 0.4-mg demand dose but accidentally omits the lockout interval. Why is this especially dangerous?",
       "options": [
-        "Excessive dosing and respiratory depression",
-        "Underdosing and poor pain control",
-        "Pump failure",
-        "No risk, since the patient controls dosing"
+        "Repeated successful demands could rapidly deliver excessive opioid and cause respiratory depression",
+        "The patient will necessarily receive too little opioid",
+        "The pump cannot function without a basal rate",
+        "Patient control prevents overdose even without a lockout"
       ],
       "answer": [
         0
@@ -6429,12 +6429,12 @@
       "id": "PAIN-259",
       "set": 1,
       "type": "single",
-      "stem": "A PCA order for an opioid-naive patient includes a basal infusion. What is the problem?",
+      "stem": "An opioid-naive patient is prescribed PCA after major surgery. Which order feature MOST unnecessarily increases respiratory risk?",
       "options": [
-        "Basal infusions are not recommended in opioid-naive patients",
-        "Basal infusions are required for all PCA patients",
-        "Basal infusions reduce total opioid use",
-        "Basal infusions reduce the need for respiratory monitoring overnight"
+        "A continuous basal infusion",
+        "An appropriate demand dose",
+        "A defined lockout interval",
+        "A maximum dose limit"
       ],
       "answer": [
         0
@@ -6453,12 +6453,12 @@
       "id": "PAIN-260",
       "set": 1,
       "type": "single",
-      "stem": "A patient on a PCA has RR 8 and is difficult to arouse. What is the FIRST step?",
+      "stem": "A PCA patient is difficult to arouse with a respiratory rate of 8/min. Which action has priority while the cause is addressed?",
       "options": [
-        "Stop the PCA and support ventilation",
-        "Increase the PCA dose to treat pain",
-        "Give flumazenil without assessment",
-        "Increase the basal rate"
+        "Stop further opioid delivery and support ventilation",
+        "Increase the demand dose because pain may cause somnolence",
+        "Increase the basal infusion to stabilize plasma concentration",
+        "Delay intervention until a formal pain score is obtained"
       ],
       "answer": [
         0
@@ -6477,12 +6477,12 @@
       "id": "PAIN-261",
       "set": 1,
       "type": "single",
-      "stem": "A patient has intense itching 4 hours after intrathecal morphine, with RR 14 and good analgesia. What is the BEST treatment?",
+      "stem": "Four hours after intrathecal morphine, a patient has excellent analgesia, normal ventilation, and severe pruritus. Which treatment BEST preserves analgesia?",
       "options": [
-        "Low-dose naloxone",
-        "A high-dose naloxone bolus",
-        "More intrathecal morphine",
-        "Succinylcholine"
+        "Titrate very low-dose naloxone",
+        "Give a large naloxone bolus",
+        "Administer more intrathecal morphine",
+        "Use a neuromuscular blocker"
       ],
       "answer": [
         0
@@ -6549,12 +6549,12 @@
       "id": "PAIN-264",
       "set": 1,
       "type": "single",
-      "stem": "After midazolam and fentanyl for a procedure, a patient is drowsy with RR 8 but responds to voice. Which reversal should come first?",
+      "stem": "After midazolam and fentanyl sedation, a patient is drowsy and hypoventilating but still has a painful procedure site. Ventilation is supported. Which reversal sequence may improve breathing while initially preserving opioid analgesia?",
       "options": [
-        "Flumazenil, then naloxone if needed",
-        "Naloxone first to avoid any risk of rebound pain",
-        "Dexmedetomidine to reduce agitation",
-        "Ketamine to stimulate breathing"
+        "Reverse the benzodiazepine with flumazenil, then titrate naloxone only if needed",
+        "Give naloxone first in a dose sufficient to eliminate all opioid effect",
+        "Give dexmedetomidine to reverse midazolam",
+        "Give ketamine as a pharmacologic reversal agent"
       ],
       "answer": [
         0
@@ -6597,12 +6597,12 @@
       "id": "PAIN-266",
       "set": 1,
       "type": "single",
-      "stem": "A patient has hypotension after analgesics with HR 110 and sinus rhythm. What is the MOST appropriate next step?",
+      "stem": "After several analgesic agents, a patient becomes hypotensive with sinus tachycardia. Which response BEST avoids treating a number without identifying the cause?",
       "options": [
-        "Assess volume status and consider fluids or vasopressor",
-        "Give more opioid, since the tachycardia reflects pain",
-        "Give naloxone immediately",
-        "Give flumazenil immediately"
+        "Assess volume status and hemodynamics, then give fluid or vasopressor as indicated",
+        "Give more opioid because tachycardia proves pain",
+        "Give naloxone before assessing perfusion",
+        "Give flumazenil regardless of medications received"
       ],
       "answer": [
         0
@@ -6669,12 +6669,12 @@
       "id": "PAIN-269",
       "set": 1,
       "type": "single",
-      "stem": "A patient says they are \"allergic to morphine\" because it made them itchy. What is the BEST response?",
+      "stem": "A patient lists 'morphine allergy' because prior morphine caused isolated itching without swelling, bronchospasm, or hypotension. What is the BEST next step?",
       "options": [
-        "Clarify reaction; itching alone is an adverse effect",
-        "Chart it as a true allergy",
-        "Give epinephrine prophylactically",
-        "Treat as anaphylaxis"
+        "Clarify and document the reaction because isolated pruritus is commonly an opioid adverse effect",
+        "Label all opioids as absolutely contraindicated",
+        "Administer prophylactic epinephrine before any analgesic",
+        "Treat the history as prior anaphylaxis"
       ],
       "answer": [
         0
@@ -6693,12 +6693,12 @@
       "id": "PAIN-270",
       "set": 1,
       "type": "single",
-      "stem": "The surgeon plans to infiltrate 40 mL of 0.5% bupivacaine after a 30 mL block. What should you do?",
+      "stem": "A regional block has already delivered bupivacaine, and the surgeon plans a large additional bupivacaine infiltration at closure. What should determine whether the infiltration proceeds?",
       "options": [
-        "Calculate total dose against the weight-based maximum",
-        "Allow it, since surgeon doses are counted separately",
-        "Proceed if infiltration is subcutaneous",
-        "Allow it, since surgeon infiltration is dosed separately"
+        "The cumulative dose from every source relative to the patient's safe weight-based limit",
+        "Only the surgeon's infiltration dose because block doses are counted separately",
+        "The tissue plane, because subcutaneous dosing cannot cause systemic toxicity",
+        "Whether the injections are separated by different clinicians"
       ],
       "answer": [
         0
@@ -6765,12 +6765,12 @@
       "id": "PAIN-273",
       "set": 1,
       "type": "single",
-      "stem": "A 34-year-old on buprenorphine 16 mg daily for OUD needs an ankle ORIF. What is the BEST plan?",
+      "stem": "A patient maintained on buprenorphine 16 mg/day for opioid use disorder requires ankle ORIF. Which perioperative strategy BEST maintains treatment while addressing surgical pain?",
       "options": [
-        "Continue buprenorphine and add full agonist opioids as needed",
-        "Stop buprenorphine and give nalbuphine",
-        "Avoid opioids entirely and use NSAIDs alone afterward",
-        "Give naltrexone to block cravings"
+        "Continue buprenorphine and use multimodal therapy with supplemental full agonists when needed",
+        "Stop buprenorphine and substitute nalbuphine",
+        "Avoid all opioid analgesia regardless of pain severity",
+        "Administer naltrexone before surgery"
       ],
       "answer": [
         0
@@ -6789,12 +6789,12 @@
       "id": "PAIN-274",
       "set": 1,
       "type": "single",
-      "stem": "A dependent patient receives butorphanol for pain and becomes tachycardic and diaphoretic. What happened?",
+      "stem": "An opioid-dependent patient receives butorphanol and shortly develops tachycardia, diaphoresis, cramping, and agitation. Which receptor-level effect BEST explains the event?",
       "options": [
-        "Precipitated withdrawal from a mixed agonist-antagonist",
-        "Opioid overdose from additive effects",
-        "Serotonin syndrome from butorphanol's SNRI activity",
-        "Excessive analgesia from butorphanol"
+        "A mixed agonist-antagonist displaced full mu agonist effect and precipitated withdrawal",
+        "Additive full-mu agonism produced overdose",
+        "Butorphanol's serotonin reuptake inhibition caused serotonin syndrome",
+        "Excess kappa antagonism produced respiratory depression"
       ],
       "answer": [
         0
@@ -6837,12 +6837,12 @@
       "id": "PAIN-276",
       "set": 1,
       "type": "single",
-      "stem": "A patient on 120 mg of oral morphine equivalents daily needs a PCA after a laminectomy. What is appropriate?",
+      "stem": "A patient taking 120 mg oral morphine equivalents daily needs PCA after laminectomy. Which feature may be reasonable specifically because substantial baseline opioid tolerance already exists?",
       "options": [
-        "A PCA with a basal rate",
-        "A PCA without demand doses",
-        "No PCA; oral opioids alone",
-        "A PCA with a 60-minute lockout"
+        "A carefully calculated basal infusion in addition to demand dosing",
+        "Elimination of patient-controlled demand doses",
+        "A fixed 60-minute lockout regardless of analgesic response",
+        "Withholding baseline opioid exposure"
       ],
       "answer": [
         0
@@ -6963,12 +6963,12 @@
       "id": "PAIN-281",
       "set": 1,
       "type": "single",
-      "stem": "An elderly patient has cognitive impairment and cannot reliably report pain. What should guide assessment?",
+      "stem": "An older adult with cognitive impairment cannot provide a reliable numeric pain score after surgery. Which approach BEST balances undertreatment and drug sensitivity?",
       "options": [
-        "Behavioral cues and careful titration with frequent reassessment",
-        "Avoid analgesics to prevent confusion",
-        "Give standard adult opioid doses and reassess daily",
-        "Rely on vital signs and grimacing to guide opioid dosing"
+        "Use an appropriate behavioral assessment, titrate cautiously, and reassess frequently",
+        "Avoid analgesics because self-report is unreliable",
+        "Give standard adult doses and reassess the following day",
+        "Use vital signs alone as the pain score"
       ],
       "answer": [
         0
@@ -7083,12 +7083,12 @@
       "id": "PAIN-286",
       "set": 1,
       "type": "single",
-      "stem": "A patient in PACU is tachycardic and hypotensive after a large blood loss, and asks for pain medication. What is the BEST first action?",
+      "stem": "A PACU patient reports pain after major blood loss and is tachycardic and hypotensive. Which action should occur BEFORE reflexively escalating opioid?",
       "options": [
-        "Assess for hypovolemia before giving opioids",
-        "Give hydromorphone immediately",
-        "Give ketorolac to avoid respiratory depression",
-        "Give a benzodiazepine for anxiety"
+        "Evaluate and treat possible hypovolemia or ongoing bleeding",
+        "Give hydromorphone because pain is the most likely cause of hypotension",
+        "Give ketorolac because it cannot worsen bleeding",
+        "Give a benzodiazepine to distinguish anxiety from pain"
       ],
       "answer": [
         0
@@ -7155,12 +7155,12 @@
       "id": "PAIN-289",
       "set": 1,
       "type": "single",
-      "stem": "A patient's pain seems out of proportion to the procedure. What should be considered?",
+      "stem": "A patient develops pain far more severe than expected for the procedure despite appropriate initial analgesia. Which response BEST reflects safe postoperative assessment?",
       "options": [
-        "Surgical complication or unrelated condition",
-        "Normal postoperative pain",
-        "Opioid tolerance from prior exposure",
-        "Anxiety"
+        "Reassess for a surgical complication or unrelated pathologic cause before assuming routine pain",
+        "Assume normal postoperative variability and continue escalating opioid",
+        "Attribute the pain to anxiety if vital signs are normal",
+        "Treat the pain score without reconsidering the diagnosis"
       ],
       "answer": [
         0
@@ -7203,7 +7203,7 @@
       "id": "PAIN-291",
       "set": 1,
       "type": "single",
-      "stem": "A patient is a CYP2D6 poor metabolizer. Which opioids may be ineffective?",
+      "stem": "A known CYP2D6 poor metabolizer reports little analgesia from two common opioid prodrugs. Which pair is MOST likely affected?",
       "options": [
         "Codeine and tramadol",
         "Morphine and fentanyl",
@@ -7251,12 +7251,12 @@
       "id": "PAIN-293",
       "set": 1,
       "type": "single",
-      "stem": "A patient on diltiazem receives oxycodone. Which risk increases?",
+      "stem": "A patient taking diltiazem receives oxycodone and develops greater-than-expected sedation. Which interaction BEST explains the response?",
       "options": [
-        "Oxycodone toxicity from CYP3A4 inhibition",
-        "Reduced oxycodone effect from enzyme induction",
-        "Serotonin syndrome",
-        "Opioid withdrawal"
+        "CYP3A4 inhibition can reduce oxycodone clearance and increase exposure",
+        "CYP3A4 induction rapidly converts oxycodone to an inactive metabolite",
+        "Diltiazem converts oxycodone into a serotonergic drug",
+        "Diltiazem precipitates opioid withdrawal"
       ],
       "answer": [
         0
@@ -7371,12 +7371,12 @@
       "id": "PAIN-298",
       "set": 1,
       "type": "single",
-      "stem": "A patient's pain is controlled at rest but severe with coughing after abdominal surgery. What does this mean?",
+      "stem": "After upper abdominal surgery, a patient reports minimal pain at rest but severe pain with coughing and cannot take a deep breath. Which conclusion BEST guides management?",
       "options": [
-        "Analgesia may be inadequate for function and breathing",
-        "Pain control is adequate",
-        "The patient is exaggerating pain",
-        "Opioids should be stopped because pain occurs with movement"
+        "Resting comfort is insufficient; analgesia must support functional breathing and coughing",
+        "Analgesia is adequate because resting pain is controlled",
+        "Movement-related pain should not influence treatment",
+        "Opioids should be stopped because pain appears only with activity"
       ],
       "answer": [
         0
@@ -7395,12 +7395,12 @@
       "id": "PAIN-299",
       "set": 1,
       "type": "single",
-      "stem": "After a laparoscopy, a 30-year-old reports 8/10 pain with HR 90 and normal BP. A colleague says \"vitals look fine.\" What is the BEST response?",
+      "stem": "After laparoscopy, a patient reports 8/10 pain but has normal heart rate and blood pressure. Which principle should guide treatment?",
       "options": [
-        "Treat her reported pain",
-        "Withhold opioids since her vitals are normal",
-        "Require higher vitals before treating",
-        "Discount the pain score until objective signs appear"
+        "Normal vital signs do not invalidate the patient's pain report",
+        "Opioids should be withheld until sympathetic signs appear",
+        "Objective vital-sign changes are required before analgesia",
+        "A pain score is unreliable unless blood pressure rises"
       ],
       "answer": [
         0
@@ -7419,12 +7419,12 @@
       "id": "PAIN-300",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives multiple sedating drugs in PACU and becomes obtunded. What principle was violated?",
+      "stem": "A PACU patient receives repeated doses of several sedating analgesic adjuncts and gradually becomes obtunded. Which process failure MOST likely allowed this?",
       "options": [
-        "Continuous reassessment to avoid over-administration",
-        "Opioids should be given in larger, less frequent boluses",
-        "PACU patients do not need reassessment",
-        "Pain scores are unnecessary after surgery"
+        "Failure to reassess arousal, ventilation, and hemodynamics between interventions",
+        "Use of smaller divided doses rather than a single large dose",
+        "Excessive reliance on repeated pain assessments",
+        "Avoidance of a continuous basal opioid infusion"
       ],
       "answer": [
         0
