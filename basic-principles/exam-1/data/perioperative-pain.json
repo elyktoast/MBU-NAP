@@ -9860,12 +9860,12 @@
       "id": "PAIN-401",
       "set": 1,
       "type": "single",
-      "stem": "Case F: A patient receives intrathecal morphine for cesarean delivery. What monitoring is needed postop?",
+      "stem": "A cesarean patient has excellent analgesia and normal ventilation in PACU after intrathecal morphine. Which postoperative plan is still required because of the drug's neuraxial kinetics?",
       "options": [
         "Extended respiratory monitoring for delayed depression",
-        "No monitoring after PACU discharge if pain is controlled",
-        "Temperature monitoring",
-        "Pain scores every 8 hours"
+        "No further respiratory monitoring if the PACU course is normal",
+        "Temperature monitoring alone",
+        "Pain scoring every 8 hours without respiratory assessment"
       ],
       "answer": [
         0
@@ -9908,12 +9908,12 @@
       "id": "PAIN-403",
       "set": 1,
       "type": "single",
-      "stem": "Case F: Eight hours after intrathecal morphine for cesarean delivery, she becomes somnolent with RR 7. What is MOST likely?",
+      "stem": "Eight hours after intrathecal morphine for cesarean delivery, a patient becomes somnolent with a respiratory rate of 7/min. Which mechanism BEST explains the timing?",
       "options": [
-        "Delayed respiratory depression from morphine",
-        "Local anesthetic toxicity from the spinal dose",
-        "Opioid withdrawal",
-        "Residual local anesthetic effect"
+        "Delayed cephalad CSF spread of hydrophilic morphine",
+        "Immediate systemic uptake of a lipophilic opioid",
+        "Opioid withdrawal as the spinal resolves",
+        "Residual local-anesthetic motor block"
       ],
       "answer": [
         0
@@ -9932,12 +9932,12 @@
       "id": "PAIN-404",
       "set": 1,
       "type": "single",
-      "stem": "Case G: A patient receives dexmedetomidine, hydromorphone, and ketamine intraop and becomes bradycardic and hypotensive in PACU. What is the MOST likely cause?",
+      "stem": "A patient receives dexmedetomidine, hydromorphone, and ketamine intraoperatively and reaches PACU bradycardic, hypotensive, and deeply sedated. Which explanation should be considered FIRST?",
       "options": [
-        "Synergistic effects from multimodal drugs",
-        "Isolated ketamine toxicity from the infusion",
-        "Opioid withdrawal",
-        "Residual neuromuscular blockade"
+        "Additive or synergistic pharmacodynamic effects from the multimodal regimen",
+        "Isolated ketamine toxicity because ketamine predictably causes bradycardia",
+        "Opioid withdrawal from hydromorphone",
+        "Residual neuromuscular blockade as the sole cause of hypotension"
       ],
       "answer": [
         0
@@ -9980,12 +9980,12 @@
       "id": "PAIN-406",
       "set": 1,
       "type": "single",
-      "stem": "Case H: A patient in PACU has pain 8/10, HR 120, BP 88/50, and abdominal distension. What is the BEST next step?",
+      "stem": "A PACU patient reports 8/10 abdominal pain with HR 120/min, BP 88/50 mm Hg, and increasing abdominal distension. Which action takes priority over additional opioid?",
       "options": [
-        "Evaluate for bleeding and hypovolemia before analgesics",
-        "Give hydromorphone immediately",
-        "Give ketorolac for pain",
-        "Give a beta-blocker for tachycardia before analgesics"
+        "Evaluate urgently for bleeding and hypovolemia",
+        "Give hydromorphone because severe pain explains all three findings",
+        "Give ketorolac to avoid opioid hypotension",
+        "Treat tachycardia with a beta blocker before investigating the abdomen"
       ],
       "answer": [
         0
@@ -10004,12 +10004,12 @@
       "id": "PAIN-407",
       "set": 1,
       "type": "single",
-      "stem": "Case H: A patient in PACU has pain 8/10, HR 120, BP 88/50, and abdominal distension. If hypovolemia is confirmed, why could opioids worsen hypotension?",
+      "stem": "The same patient is confirmed to be hypovolemic. Why can a large opioid dose produce further hemodynamic deterioration?",
       "options": [
-        "Loss of sympathetic tone and vasodilation",
-        "Opioids increase blood volume through fluid retention",
-        "Opioids cause vasoconstriction",
-        "Opioids raise cardiac contractility"
+        "Reducing pain-driven sympathetic tone and causing vasodilation can unmask or worsen hypotension",
+        "Opioids acutely expand circulating volume",
+        "Opioids reliably produce systemic vasoconstriction",
+        "Mu agonism markedly increases myocardial contractility"
       ],
       "answer": [
         0
@@ -10028,12 +10028,12 @@
       "id": "PAIN-408",
       "set": 1,
       "type": "single",
-      "stem": "Case I: A patient after thoracotomy has severe pain and poor cough. What analgesic intervention is MOST beneficial?",
+      "stem": "After thoracotomy, a patient has severe dynamic pain, splints with inspiration, and cannot cough effectively. Which analgesic strategy BEST addresses both pain and pulmonary function?",
       "options": [
-        "Paravertebral or epidural block",
-        "IV morphine titrated to sleep",
-        "Oral acetaminophen",
-        "Ketorolac"
+        "Thoracic epidural or paravertebral regional analgesia",
+        "IV morphine titrated until the patient sleeps",
+        "Acetaminophen alone",
+        "Ketorolac alone"
       ],
       "answer": [
         0
@@ -10076,12 +10076,12 @@
       "id": "PAIN-410",
       "set": 1,
       "type": "single",
-      "stem": "Case J: A patient receiving remifentanil during ENT surgery is extubated in severe pain. What was the error?",
+      "stem": "A remifentanil infusion is stopped at the end of an ENT procedure and the patient is extubated into severe pain despite a smooth intraoperative course. Which planning failure MOST directly explains this?",
       "options": [
-        "No longer-acting analgesic before stopping remifentanil",
-        "Remifentanil was stopped too late in the case",
-        "Remifentanil caused prolonged emergence",
-        "Remifentanil caused delayed respiratory depression"
+        "No longer-acting transition analgesia was established before remifentanil offset",
+        "Remifentanil was discontinued too late",
+        "Remifentanil accumulated and prolonged emergence",
+        "Delayed respiratory depression masked pain until extubation"
       ],
       "answer": [
         0
@@ -10124,12 +10124,12 @@
       "id": "PAIN-412",
       "set": 1,
       "type": "single",
-      "stem": "Case K: A patient in PACU has pain with shivering and PONV. What should be treated first?",
+      "stem": "A PACU patient is shivering, nauseated, retching, and reporting severe pain. Which approach BEST avoids unnecessary opioid escalation?",
       "options": [
-        "PONV and temperature, then reassess pain",
-        "Increase opioids first, then treat nausea",
-        "Give naloxone to reduce nausea",
-        "Warm later, after pain is treated"
+        "Treat temperature-related discomfort and PONV, then reassess the residual pain",
+        "Escalate opioid first because every distress behavior represents pain",
+        "Give naloxone because nausea proves opioid excess",
+        "Delay warming until the pain score is zero"
       ],
       "answer": [
         0
@@ -10172,12 +10172,12 @@
       "id": "PAIN-414",
       "set": 1,
       "type": "single",
-      "stem": "Case L: A patient with chronic pain has preexisting sensitization. What is the preventive analgesia implication?",
+      "stem": "A chronic-pain patient already has substantial central sensitization before surgery. Which limitation of preventive analgesia should shape expectations?",
       "options": [
-        "Preventive analgesia may be less effective",
-        "Preventive analgesia is more effective in these patients",
-        "Preventive analgesia is unnecessary",
-        "Preventive analgesia causes more pain"
+        "Blocking new perioperative nociceptive input cannot fully prevent sensitization that already exists",
+        "Preexisting sensitization makes preventive analgesia more effective",
+        "Preventive analgesia becomes unnecessary once chronic pain develops",
+        "Preventive analgesia predictably worsens chronic pain"
       ],
       "answer": [
         0
@@ -10244,12 +10244,12 @@
       "id": "PAIN-417",
       "set": 1,
       "type": "single",
-      "stem": "Case M: A patient on dexmedetomidine infusion during surgery is slow to wake. What planning step would reduce this problem next time?",
+      "stem": "A dexmedetomidine infusion contributes to delayed emergence after a long case. Which future planning change BEST addresses the problem without abandoning the drug entirely?",
       "options": [
-        "Adjust dose and stop timing based on CSHT",
-        "Increase the infusion at the end of the case",
-        "Start the infusion in PACU",
-        "Avoid all sedatives"
+        "Adjust infusion dose and discontinuation timing to its duration-dependent recovery profile",
+        "Increase the infusion near closure to accelerate clearance",
+        "Begin the infusion only after PACU arrival",
+        "Avoid every sedative adjunct in future anesthetics"
       ],
       "answer": [
         0
@@ -10412,12 +10412,12 @@
       "id": "PAIN-424",
       "set": 1,
       "type": "single",
-      "stem": "Case Q: A patient scheduled for an inguinal hernia repair asks about long-term pain. What is accurate?",
+      "stem": "A patient scheduled for inguinal hernia repair asks why long-term pain is discussed for a relatively routine operation. Which response is MOST accurate?",
       "options": [
-        "Inguinal hernia repair carries a risk of chronic postsurgical pain",
-        "Hernia repair does not cause chronic pain",
-        "Chronic pain follows amputation but not hernia repair",
-        "Chronic pain occurs after cancer surgery but not hernia repair"
+        "Inguinal herniorrhaphy is among procedures associated with chronic postsurgical pain",
+        "Chronic postsurgical pain occurs only after amputations",
+        "Hernia repair has no recognized chronic-pain risk",
+        "Chronic pain is limited to oncologic surgery"
       ],
       "answer": [
         0
@@ -10436,12 +10436,12 @@
       "id": "PAIN-425",
       "set": 1,
       "type": "single",
-      "stem": "Case Q: A patient scheduled for an inguinal hernia repair asks about long-term pain. Which strategy may reduce chronic pain risk?",
+      "stem": "For a procedure associated with chronic postsurgical pain, which preventive strategy is MOST consistent with limiting central sensitization?",
       "options": [
-        "Preventive analgesia with adequate depth, extent, and duration",
-        "Avoiding all analgesics to prevent tolerance from forming",
-        "Opioids at emergence",
-        "No regional anesthesia"
+        "Provide analgesia with sufficient depth and field coverage that extends into the postoperative period",
+        "Avoid perioperative analgesia to prevent tolerance",
+        "Wait until emergence to begin opioid therapy",
+        "Avoid regional techniques because they mask early chronic pain"
       ],
       "answer": [
         0
@@ -10460,12 +10460,12 @@
       "id": "PAIN-426",
       "set": 1,
       "type": "single",
-      "stem": "Case R: A 68-year-old has mild cognitive impairment and is receiving opioids. What risk is increased?",
+      "stem": "An older adult with mild cognitive impairment becomes intermittently confused after repeated opioid doses. Which age-related concern should MOST influence further treatment?",
       "options": [
-        "Oversedation and delirium",
-        "Opioid tolerance from age-related receptor changes",
-        "Higher pain tolerance",
-        "Faster drug metabolism"
+        "Greater vulnerability to oversedation and delirium requires cautious titration and reassessment",
+        "Older age reliably produces opioid tolerance",
+        "Higher pain tolerance requires larger routine opioid doses",
+        "Faster drug metabolism shortens every opioid effect"
       ],
       "answer": [
         0
@@ -10508,12 +10508,12 @@
       "id": "PAIN-428",
       "set": 1,
       "type": "single",
-      "stem": "Case S: A patient on SSRIs receives tramadol and becomes agitated and tachycardic. What is a concern?",
+      "stem": "A patient taking an SSRI becomes agitated and tachycardic after tramadol. Which pharmacologic property makes this combination concerning?",
       "options": [
-        "Serotonergic effects from tramadol's SNRI activity",
-        "Opioid withdrawal from tramadol's weaker mu activity",
-        "Opioid withdrawal",
-        "Local anesthetic toxicity"
+        "Tramadol has serotonergic/norepinephrine reuptake effects in addition to opioid activity",
+        "Tramadol is a pure mu agonist with no monoamine effect",
+        "Tramadol directly antagonizes SSRIs and precipitates opioid withdrawal",
+        "Tramadol is a local anesthetic that causes systemic toxicity"
       ],
       "answer": [
         0
@@ -10556,12 +10556,12 @@
       "id": "PAIN-430",
       "set": 1,
       "type": "single",
-      "stem": "Case T: A patient with chronic pain arrives on a PCA. What should be verified?",
+      "stem": "A chronic-pain patient arrives for surgery with a PCA already in use. Before adding anesthetic opioids, which information is MOST important?",
       "options": [
-        "Last dose and timing of analgesics",
-        "The PCA pump settings only",
-        "The patient's weight",
-        "The current pump settings, not doses given"
+        "Recent delivered doses and timing, along with the current PCA regimen",
+        "The pump model alone",
+        "Patient weight without medication history",
+        "Only the programmed settings, regardless of doses actually received"
       ],
       "answer": [
         0
@@ -10604,12 +10604,12 @@
       "id": "PAIN-432",
       "set": 1,
       "type": "single",
-      "stem": "Case U: A patient undergoes laparoscopic cholecystectomy and has referred shoulder pain. What is the cause?",
+      "stem": "After laparoscopic cholecystectomy, a patient has shoulder-tip pain without shoulder injury. Which mechanism BEST explains the symptom?",
       "options": [
-        "Visceral pain referred from diaphragm irritation",
-        "Superficial somatic pain at the incision site",
-        "Neuropathic pain from nerve injury",
-        "Deep somatic pain from bone"
+        "Referred visceral pain from diaphragmatic/peritoneal irritation",
+        "Superficial somatic pain from shoulder skin",
+        "Peripheral neuropathy from surgical transection at the shoulder",
+        "Deep somatic pain from bone injury"
       ],
       "answer": [
         0
@@ -10652,12 +10652,12 @@
       "id": "PAIN-434",
       "set": 1,
       "type": "single",
-      "stem": "Case V: A patient receives neuraxial fentanyl and develops early respiratory depression. What is the BEST action?",
+      "stem": "Soon after neuraxial fentanyl, a patient develops clinically significant hypoventilation. Which response has priority?",
       "options": [
-        "Support ventilation and consider naloxone",
-        "Wait for delayed depression before intervening",
-        "Increase fentanyl dose",
-        "Give flumazenil"
+        "Support ventilation and titrate naloxone if opioid reversal is required",
+        "Wait because only delayed respiratory depression is clinically important",
+        "Administer more fentanyl to prevent withdrawal",
+        "Give flumazenil as the opioid antagonist"
       ],
       "answer": [
         0
@@ -10724,12 +10724,12 @@
       "id": "PAIN-437",
       "set": 1,
       "type": "single",
-      "stem": "Case W: A patient has pain and hypertension after a tourniquet. If the patient is also hypoxemic, what should be done first?",
+      "stem": "A patient with tourniquet discomfort becomes hypertensive but is also newly hypoxemic. Which problem takes priority before escalating analgesia?",
       "options": [
-        "Treat hypoxemia before analgesics",
-        "Give opioids first, then check saturation",
-        "Give NSAIDs first",
-        "Give NSAIDs first, then recheck saturation"
+        "Correct and investigate the hypoxemia",
+        "Give opioid first because hypertension proves pain is primary",
+        "Give NSAID first because it cannot affect ventilation",
+        "Treat the blood pressure without addressing oxygenation"
       ],
       "answer": [
         0
@@ -10772,12 +10772,12 @@
       "id": "PAIN-439",
       "set": 1,
       "type": "single",
-      "stem": "Case X: For a patient maintained on methadone who arrives for surgery, which analgesic strategy is MOST appropriate?",
+      "stem": "A patient maintained on methadone presents for a painful operation. Which strategy BEST separates maintenance therapy from the additional surgical analgesic requirement?",
       "options": [
-        "Continue methadone and add multimodal analgesia",
-        "Stop methadone and use nalbuphine for rotation",
-        "Stop all opioids",
-        "Use acetaminophen alone"
+        "Continue baseline methadone and add individualized multimodal perioperative analgesia",
+        "Stop methadone and substitute nalbuphine",
+        "Stop all opioids until postoperative pain is measurable",
+        "Use acetaminophen alone because maintenance methadone covers surgical pain"
       ],
       "answer": [
         0
@@ -10796,12 +10796,12 @@
       "id": "PAIN-440",
       "set": 1,
       "type": "single",
-      "stem": "Case Y: A patient reports \"morphine allergy\" with itching only. What should be done?",
+      "stem": "A patient reports a 'morphine allergy' consisting only of prior generalized itching without swelling, bronchospasm, or hypotension. Which action is MOST appropriate?",
       "options": [
-        "Clarify it as a side effect",
-        "Avoid all opioids permanently and chart as anaphylaxis",
-        "Treat as anaphylaxis and give epinephrine now",
-        "Give epinephrine"
+        "Clarify and document the reaction as a likely opioid adverse effect rather than automatically labeling anaphylaxis",
+        "Permanently contraindicate every opioid",
+        "Treat the historical event as active anaphylaxis",
+        "Give prophylactic epinephrine before any opioid"
       ],
       "answer": [
         0
@@ -10844,12 +10844,12 @@
       "id": "PAIN-442",
       "set": 1,
       "type": "single",
-      "stem": "Case Z: A patient in PACU has pain and a pain score of 8, but is sleeping and RR 8. What is the BEST action?",
+      "stem": "A PACU patient reports pain 8/10 but repeatedly falls asleep and has a respiratory rate of 8/min after opioid therapy. Which action BEST balances the pain report with immediate safety?",
       "options": [
-        "Reassess level of arousal and avoid further opioids",
-        "Give a large opioid dose to treat the reported pain",
-        "Give naloxone automatically",
-        "Give naloxone automatically for the low RR"
+        "Reassess arousal and ventilation and withhold further opioid until respiratory safety is established",
+        "Give a large opioid bolus because self-reported pain always overrides sedation",
+        "Administer naloxone automatically without assessing ventilation",
+        "Ignore the pain score because sleeping proves the patient is comfortable"
       ],
       "answer": [
         0
@@ -10892,12 +10892,12 @@
       "id": "PAIN-444",
       "set": 1,
       "type": "single",
-      "stem": "A patient with severe anxiety rates pain 10/10 and is hyperventilating despite adequate opioid doses. What is the BEST non-opioid intervention?",
+      "stem": "A severely anxious PACU patient hyperventilates and reports 10/10 pain despite substantial opioid already producing adequate analgesic exposure. Which next step BEST avoids compounding opioid toxicity?",
       "options": [
-        "Reduce anxiety with IV or PO agents",
-        "Withhold analgesics",
-        "Use opioids alone",
-        "Remove the patient from monitoring"
+        "Address anxiety with reassurance and an appropriate nonopioid/anxiolytic strategy while reassessing pain",
+        "Continue escalating opioid until the patient sleeps",
+        "Withhold all treatment because anxiety invalidates the pain report",
+        "Remove monitoring to reduce environmental stimulation"
       ],
       "answer": [
         0
@@ -10940,12 +10940,12 @@
       "id": "PAIN-446",
       "set": 1,
       "type": "single",
-      "stem": "A patient has breakthrough pain after an epidural stops working. What is the BEST next step?",
+      "stem": "An epidural that had provided good analgesia stops functioning and breakthrough pain develops. Which next step BEST avoids compounding toxicity from a rescue modality?",
       "options": [
-        "Reassess and carefully add a second modality",
-        "Increase the epidural rate without assessment",
-        "Stop all analgesics",
-        "Give naloxone"
+        "Reassess the epidural and patient, then add or change therapy with attention to overlapping effects",
+        "Increase every epidural medication without checking the catheter or block",
+        "Stop all analgesia to determine the true pain score",
+        "Give naloxone before troubleshooting the epidural"
       ],
       "answer": [
         0
@@ -10964,12 +10964,12 @@
       "id": "PAIN-447",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives a combination of opioids and benzodiazepines and becomes apneic. What is the MOST important immediate action?",
+      "stem": "A patient becomes apneic after receiving both opioid and benzodiazepine. Which intervention takes priority before deciding which reversal drug to use?",
       "options": [
-        "Support ventilation",
-        "Give opioids for pain",
-        "Give flumazenil",
-        "Give flumazenil before ventilating"
+        "Immediate ventilatory support",
+        "Additional opioid for possible pain",
+        "Flumazenil before airway support",
+        "Naloxone before ensuring ventilation"
       ],
       "answer": [
         0
@@ -10988,12 +10988,12 @@
       "id": "PAIN-448",
       "set": 1,
       "type": "single",
-      "stem": "A patient is receiving IV lidocaine infusion and reports perioral numbness. What should you suspect?",
+      "stem": "During an IV lidocaine infusion, a patient reports new circumoral numbness and metallic taste. Which action is MOST appropriate?",
       "options": [
-        "Early local anesthetic toxicity",
-        "Opioid withdrawal",
-        "Normal lidocaine effect",
-        "Hypocalcemia from citrate"
+        "Suspect early local-anesthetic systemic toxicity, stop the infusion, and assess immediately",
+        "Treat as opioid withdrawal",
+        "Continue because these are expected analgesic endpoints",
+        "Treat empirically for hypocalcemia without changing lidocaine"
       ],
       "answer": [
         0
@@ -11012,12 +11012,12 @@
       "id": "PAIN-449",
       "set": 1,
       "type": "single",
-      "stem": "A patient receives a regional block in a room without emergency airway equipment. What is the risk?",
+      "stem": "A peripheral nerve block is proposed in a room without immediate airway/resuscitation equipment or lipid emulsion. Which safety concern should determine whether to proceed?",
       "options": [
-        "Delayed management of complications",
-        "Improved outcomes from fewer interruptions",
-        "Reduced complications",
-        "Fewer complications from faster placement"
+        "A serious block complication could occur before rescue resources arrive",
+        "Remote placement reduces complications because there are fewer interruptions",
+        "Emergency equipment is unnecessary for ultrasound-guided blocks",
+        "Lowering the local-anesthetic dose eliminates the need for rescue capability"
       ],
       "answer": [
         0
