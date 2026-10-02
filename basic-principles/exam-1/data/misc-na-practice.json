@@ -10618,17 +10618,17 @@
       "id": "MISC-435",
       "set": 1,
       "type": "single",
-      "stem": "During a stable case, a CRNA notices a subtle 4 mmHg rise in ETCO2 and investigates before any alarm. Which human-performance concept is most directly demonstrated?",
+      "stem": "Three hours into an uneventful case, a CRNA continues actively scanning and notices an unexpected small ETCO2 drift before any alarm or obvious clinical change. Which performance behavior is this?",
       "options": [
-        "Vigilance",
-        "Future-oriented situational awareness only",
+        "Sustained vigilance",
         "Fixation",
-        "Passive monitoring"
+        "Passive monitoring",
+        "Postevent evaluation"
       ],
       "answer": [
         0
       ],
-      "explanation": "Vigilance is readiness to detect and respond to small changes that occur at random.",
+      "explanation": "Vigilance is sustained readiness to detect and respond to small, unexpected changes even during long stable periods.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11098,17 +11098,17 @@
       "id": "MISC-455",
       "set": 1,
       "type": "single",
-      "stem": "A deep prosthetic-joint infection develops 78 days after total knee replacement. Does it meet the SSI surveillance window?",
+      "stem": "A deep prosthetic-joint infection is diagnosed 78 days after total knee replacement. Which feature makes it fall within the SSI surveillance window described in the lecture?",
       "options": [
-        "Yes, implant-associated surveillance extends to 90 days",
-        "No, all SSI surveillance ends at 30 days",
-        "No, joint infections are excluded",
-        "Only infections within 7 days count"
+        "The prosthetic implant extends surveillance to 90 days",
+        "All surgical wounds are monitored for 90 days",
+        "Deep infections have no time limit",
+        "Joint procedures are exempt from the 30-day rule"
       ],
       "answer": [
         0
       ],
-      "explanation": "Surgeries with prosthetic implants use a 90-day SSI window; day 78 counts.",
+      "explanation": "The prosthetic implant extends the SSI surveillance window to 90 days, so an infection on day 78 is included.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
