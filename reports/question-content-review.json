@@ -3,12 +3,12 @@
   "totalQuestions": 2000,
   "summary": {
     "sameSetExactGroups": 0,
-    "sameSetNearDuplicateClusters": 1,
+    "sameSetNearDuplicateClusters": 0,
     "crossBankExactGroups": 0,
     "missingSourceTitle": 0,
     "missingSourceLocator": 0,
     "explanationsUnder8Words": 0,
-    "manualReviewPairs": 17,
+    "manualReviewPairs": 13,
     "manualReviewCandidates": 6
   },
   "candidates": [
@@ -49,7 +49,6 @@
       "severity": "manual_review",
       "questions": [
         "b1-258",
-        "b1-287",
         "b1-350",
         "b1-450",
         "b1-77"
