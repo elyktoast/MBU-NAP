@@ -12584,23 +12584,19 @@
     {
       "id": "382",
       "set": 4,
-      "type": "multi",
-      "stem": "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
+      "type": "single",
+      "stem": "During cardiopulmonary resuscitation, what capnographic change most strongly suggests return of spontaneous circulation (ROSC)?",
       "options": [
-        "Sudden pulmonary artery embolism",
-        "Malignant hyperthermia crisis",
-        "Intravenous administration of sodium bicarbonate",
-        "Severe systemic hypotension",
-        "Accidental extubation into the hypopharynx",
-        "Release of an extremity tourniquet"
+        "An abrupt sustained increase in end-tidal carbon dioxide",
+        "A progressive fall of the capnogram baseline to zero",
+        "Development of a curare cleft in the alveolar plateau",
+        "A gradual widening of the PaCO2–EtCO2 gradient"
       ],
       "answer": [
-        0,
-        3,
-        4
+        0
       ],
-      "explanation": "Pulmonary embolism (increased dead space), hypotension (decreased pulmonary perfusion), and airway displacement/extubation decrease delivery of CO2 to the sensor, reducing EtCO2. Malignant hyperthermia, bicarbonate delivery, and tourniquet release transiently increase EtCO2.",
-      "citation": "Monitoring · Slides 43, 50",
+      "explanation": "Return of spontaneous circulation abruptly restores pulmonary blood flow and delivery of carbon dioxide to the lungs, producing a sudden sustained rise in end-tidal carbon dioxide.",
+      "citation": "Intraoperative Assessment, Monitoring & Data Interpretation · Slide 46",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -12611,11 +12607,11 @@
         "families": [
           "Intraoperative Assessment, Monitoring & Data Interpretation"
         ],
-        "slides": "43, 50",
+        "slides": "46",
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 43, 50"
+      "sourceLocator": "Slide 46"
     },
     {
       "id": "383",
@@ -15893,23 +15889,19 @@
     {
       "id": "482",
       "set": 5,
-      "type": "multi",
-      "stem": "Which of the following clinical events produce an acute DECREASE in measured end-tidal carbon dioxide (EtCO2)? (Select 3)",
+      "type": "single",
+      "stem": "A capnogram develops a downward notch in the alveolar plateau as neuromuscular blockade begins to wear off. What does this finding represent?",
       "options": [
-        "Malignant hyperthermia crisis",
-        "Sudden pulmonary artery embolism",
-        "Intravenous administration of sodium bicarbonate",
-        "Release of an extremity tourniquet",
-        "Severe systemic hypotension",
-        "Accidental extubation into the hypopharynx"
+        "A curare cleft caused by spontaneous diaphragmatic effort",
+        "Carbon dioxide rebreathing from exhausted absorbent",
+        "A circuit leak causing loss of the alveolar plateau",
+        "Cardiac oscillations from transmission of the arterial pulse"
       ],
       "answer": [
-        1,
-        4,
-        5
+        0
       ],
-      "explanation": "Pulmonary embolism (increased dead space), hypotension (decreased pulmonary perfusion), and airway displacement/extubation decrease delivery of CO2 to the sensor, reducing EtCO2. Malignant hyperthermia, bicarbonate delivery, and tourniquet release transiently increase EtCO2.",
-      "citation": "Monitoring · Slides 43, 50",
+      "explanation": "As neuromuscular blockade wanes, spontaneous diaphragmatic effort can interrupt the Phase III alveolar plateau and create the characteristic downward notch called a curare cleft.",
+      "citation": "Intraoperative Assessment, Monitoring & Data Interpretation · Slides 47, 51",
       "topic": "Monitoring",
       "imageSvg": null,
       "image": null,
@@ -15920,11 +15912,11 @@
         "families": [
           "Intraoperative Assessment, Monitoring & Data Interpretation"
         ],
-        "slides": "43, 50",
+        "slides": "47, 51",
         "citationFormat": "slides"
       },
       "sourceTitle": "Intraoperative Assessment, Monitoring & Data Interpretation",
-      "sourceLocator": "Slides 43, 50"
+      "sourceLocator": "Slides 47, 51"
     },
     {
       "id": "483",
