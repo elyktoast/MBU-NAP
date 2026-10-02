@@ -179,8 +179,8 @@ function checkRuntimeSafety(){
   if(!engine.includes("kind==='bank2'")||!engine.includes("kind==='bank3'")||!engine.includes("kind==='combined'"))fail('Canonical quiz engine: legacy progress migration adapters are incomplete');
   if(/document\.getElementById\(["'][^"']+["']\)\.style/.test(read('equipment/assets/auto-update.js')))fail('Updater: unsafe required DOM access');
   const updater=read('equipment/assets/auto-update.js');
-  if(!updater.includes("reload.searchParams.get('_mbu_reload') === latest"))fail('Updater: no duplicate-build reload guard');
-  if(!updater.includes("searchParams.delete('_mbu_reload')")||!updater.includes('history.replaceState'))fail('Updater: successful reload marker cleanup is missing');
+  if(updater.includes('location.replace(')||updater.includes("searchParams.set('_mbu_reload'"))fail('Updater: background build checks must not reload the active learner page');
+  if(!updater.includes('sessionStorage.setItem(BUILD_CACHE_KEY, baseline)'))fail('Updater: latest build baseline is not retained without reloading');
 }
 function checkStudioData(){
   checkBank1();checkBank2();checkBank3();checkHazardsCanonical();
@@ -222,7 +222,8 @@ checkHazardNavigators();
 
 {
  const nav=read('equipment/assets/site-nav.js');
- if(!nav.includes("sessionStorage.removeItem('mbu_build_manifest_v1')")||!nav.includes("u.searchParams.set('_mbu_refresh',Date.now().toString())")||!nav.includes('new URL(location.href)')||!nav.includes('location.assign(u.href)'))fail('Site nav: SRNA Study Tool brand does not perform a cache-busting current-page refresh');
+ if(!nav.includes("const core=[{id:'home',label:'SRNA Study Tool',url:home}"))fail('Site nav: SRNA Study Tool brand is not rooted at the application home');
+ if(nav.includes("u.searchParams.set('_mbu_refresh'")||nav.includes("brand.onclick=e=>"))fail('Site nav: SRNA Study Tool brand must navigate home without forcing a current-page refresh');
 }
 function checkCanonicalSubmission(){
   const engine=read('equipment/assets/quiz-engine.js');
