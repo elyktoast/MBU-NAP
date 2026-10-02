@@ -1,6 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 test.describe('multi-course foundation', () => {
+  test.setTimeout(60000);
   test('Basic Principles is reachable from the course home and exposes Exam 1', async ({ page }) => {
     await page.goto('/');
     await page.evaluate(() => MBUPageReady);
@@ -46,15 +47,18 @@ test.describe('multi-course foundation', () => {
     });
   });
 
-  test('Basic Principles empty manifest is valid and does not invent Equipment content', async ({ page }) => {
+  test('Basic Principles manifest exposes one unified 3,500-question Study Studio pool', async ({ page }) => {
     const response = await page.request.get('/basic-principles/exam-1/banks.json');
     expect(response.ok()).toBeTruthy();
     const manifest = await response.json();
     expect(manifest.course.id).toBe('basic-principles');
     expect(manifest.exam.id).toBe('exam-1');
     expect(manifest.banks).toEqual([]);
-    expect(manifest.studioSources).toEqual([]);
-    expect(manifest.contentTaxonomy.topics).toEqual([]);
+    expect(manifest.studioSources).toHaveLength(7);
+    expect(manifest.studioSources.reduce((sum, source) => sum + source.count, 0)).toBe(3500);
+    expect(manifest.studioSources.every(source => source.key.startsWith('bp1-'))).toBeTruthy();
+    expect(new Set(manifest.studioSources.map(source => source.groupLabel))).toEqual(new Set(['Basic Principles Exam 1']));
+    expect(manifest.contentTaxonomy.topics).toHaveLength(7);
     expect(manifest.sessionEnvironment).toBe('equipment-bank1-practice-set1-v1');
     expect(manifest.defaultBankEngine).toBe('canonical');
     expect(manifest.bankPage).toBe('bank.html');
