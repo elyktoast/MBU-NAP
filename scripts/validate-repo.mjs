@@ -510,7 +510,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 // Modular Studio boundary: core owns data/orchestration, runtime owns UI/session behavior, and loader starts only after both exist.
 {
  const core=read('equipment/assets/studio-page.js'),runtime=read('equipment/assets/studio-runtime.js'),loader=read('equipment/assets/studio-loader.js');
- for(const token of ['function loadBanks()','window.MBUStudioCoreReady=loadBanks'])if(!core.includes(token))fail('Studio core initialization contract missing: '+token);
+ for(const token of ['function loadBanks()','studioCorePromise=loadBanks()'])if(!core.includes(token))fail('Studio core initialization contract missing: '+token);
  for(const token of ['function buildTopics()','function renderHome()','function startMode(','function showQ()','function grade()','function nextQ()'])if(!runtime.includes(token))fail('Studio runtime boundary missing: '+token);
  if(core.includes('function showQ()')||core.includes('function renderHome()'))fail('Studio UI/session behavior leaked back into the core module');
  const coreLoad=loader.indexOf("runtime.loadScript('studio-page.js')"),runtimeLoad=loader.indexOf("runtime.loadScript('studio-runtime.js')"),start=loader.indexOf('window.MBUStudioCoreReady()');
@@ -714,6 +714,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!gemini.includes("registerProvider('gemini'")||!gemini.includes('/functions/v1/generate-questions')||gemini.includes('GEMINI_API_KEY'))fail('Gemini browser provider is missing or exposes server credentials');
  if(!edge.includes('Deno.env.get("GEMINI_API_KEY")')||!edge.includes('allowed.has(origin)')||!edge.includes('material.length>50000')||!edge.includes('Math.min(20'))fail('Gemini edge function security/input guards are incomplete');
  if(!genUi.includes("api.generate('gemini'")||!genUi.includes('approveDraft')||!genUi.includes('rejectDraft'))fail('Gemini draft review workbench is incomplete');
+ try{new Function(genUi)}catch(e){fail('Generator popup JavaScript does not parse: '+e.message)}
  for(const token of ["'material-ingest.js'","'source-material-storage.js'","'source-material-library.js'","loadScript?.('question-generator-ui.js')"])if(!studio.includes(token))fail('Generator lazy-load dependency missing '+token);
  for(const token of ['MAX_FILE_BYTES=40*1024*1024','MAX_CHARS=50000','extractPdf','extractPptx','ocrBlob'])if(!ingest.includes(token))fail('Material ingestion contract missing '+token);
  for(const token of ["BUCKET='source-materials'",'Sign in before saving source material.','x-upsert',"Object.freeze({save,list,download,remove})"])if(!storage.includes(token))fail('Private source-material storage contract missing '+token);
