@@ -3740,17 +3740,17 @@
       "id": "PAIN-151",
       "set": 1,
       "type": "single",
-      "stem": "Near emergence, a spontaneously breathing patient has a respiratory rate of 22/min with large pupils despite adequate neuromuscular recovery. Which interpretation BEST guides opioid titration?",
+      "stem": "Near emergence, a spontaneously breathing patient is tachypneic with large pupils after a painful procedure, but oxygenation, ventilation, temperature, and hemodynamics are otherwise acceptable. Which interpretation is most appropriate?",
       "options": [
-        "The pattern suggests inadequate analgesic effect and may justify cautious additional opioid",
-        "The pattern indicates opioid excess and requires naloxone",
-        "The respiratory rate is already at the desired opioid endpoint",
-        "Pupil size is unrelated to opioid effect"
+        "Inadequate analgesia is one possibility, but the pattern should be interpreted with the full clinical context before additional opioid",
+        "Tachypnea and large pupils prove opioid withdrawal",
+        "A specific respiratory-rate threshold mandates an opioid bolus",
+        "Pupil size alone determines the opioid dose"
       ],
       "answer": [
         0
       ],
-      "explanation": "RR >18–20 and dilated pupils suggest inadequate analgesia.",
+      "explanation": "Tachypnea and mydriasis can accompany inadequate analgesia but are nonspecific. Opioids should be titrated to the overall clinical picture, including pain/stimulation, ventilation, arousability, hemodynamics, and other causes of tachypnea.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3764,17 +3764,17 @@
       "id": "PAIN-152",
       "set": 1,
       "type": "single",
-      "stem": "At emergence, a spontaneously breathing patient has a respiratory rate of 6/min and pinpoint pupils after repeated opioid doses. Which endpoint would indicate a safer balance of analgesia and ventilation?",
+      "stem": "At emergence, a spontaneously breathing patient has RR 6/min and pinpoint pupils after repeated opioid doses. Which finding best indicates that opioid effect is excessive?",
       "options": [
-        "Respiratory rate about 12–14/min with moderately small pupils",
-        "Respiratory rate 6–8/min with pinpoint pupils",
-        "Respiratory rate above 25/min with dilated pupils",
-        "Apnea with persistent miosis"
+        "Clinically important bradypnea with miosis and impaired ventilatory reserve",
+        "Failure to reach a fixed RR of exactly 12–14/min",
+        "Any pupil constriction despite normal ventilation",
+        "Spontaneous breathing by itself"
       ],
       "answer": [
         0
       ],
-      "explanation": "Titrate opioids to a RR of about 12–14 with moderately miotic pupils; RR 6 with pinpoint pupils means too much.",
+      "explanation": "Bradypnea with marked miosis after repeated opioid dosing strongly suggests excessive opioid effect. Safe emergence is based on adequate ventilation, gas exchange, arousability, airway protection, and the full clinical context rather than a single target respiratory rate.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3932,14 +3932,14 @@
       "id": "PAIN-159",
       "set": 1,
       "type": "multi",
-      "stem": "You are writing a hydromorphone PCA order. Which variables must you specify? (Select 4)",
+      "stem": "Which FOUR programming elements are fundamental to a demand-only IV PCA prescription? (Select 4)",
       "options": [
-        "Bolus (loading) dose",
+        "Opioid and concentration",
+        "Patient demand dose",
         "Lockout interval",
-        "1-hour and 4-hour limits",
-        "Demand dose",
-        "Patient weight alone",
-        "PCA concentration"
+        "Dose limit when used by the institution/device",
+        "Mandatory continuous background infusion",
+        "Patient weight as the only dosing variable"
       ],
       "answer": [
         0,
@@ -3947,7 +3947,7 @@
         2,
         3
       ],
-      "explanation": "The five PCA variables are bolus, demand dose, lockout, background infusion, and 1- and 4-hour limits.",
+      "explanation": "A safe PCA order identifies the drug/concentration, demand dose, lockout interval, and applicable dose limits. A continuous background infusion is optional and is generally avoided in opioid-naive patients unless there is a specific indication.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3961,17 +3961,17 @@
       "id": "PAIN-160",
       "set": 1,
       "type": "single",
-      "stem": "A PACU nurse asks you to complete a PCA order. What is the minimum set of elements that must be defined?",
+      "stem": "Which statement about PCA programming is most accurate?",
       "options": [
-        "Bolus, demand dose, lockout, background rate, and hourly limits",
-        "Drug name, patient weight, and the ordering surgeon",
-        "Drug concentration, demand dose, and lockout only",
-        "Demand dose and diagnosis"
+        "The order must clearly define the drug/concentration, demand dose, lockout, applicable limits, and whether a background infusion is intentionally used or omitted",
+        "Every PCA requires a continuous background infusion",
+        "Patient weight and diagnosis are sufficient programming instructions",
+        "A lockout interval is optional if the demand dose is small"
       ],
       "answer": [
         0
       ],
-      "explanation": "A PCA order must specify the bolus dose, demand dose, lockout, background infusion, and 1- and 4-hour limits.",
+      "explanation": "PCA programming must be explicit enough to prevent unintended dosing. Background infusion is not mandatory and can increase respiratory-depression risk, especially in opioid-naive patients.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -4009,7 +4009,7 @@
       "id": "PAIN-162",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the PCA diagram. Element (3) is the minimum time between successful demand doses. What is it called?",
+      "stem": "In PCA programming, what is the minimum time that must elapse before another patient-triggered dose can be delivered called?",
       "options": [
         "Lockout interval",
         "Demand dose",
@@ -4023,12 +4023,7 @@
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
-      "image": {
-        "kind": "direct",
-        "url": "figures/perioperative-pain/fig-50.svg",
-        "id": 50,
-        "title": "Figure 50"
-      },
+      "image": null,
       "sourceMeta": {
         "sourcePackage": "Perioperative_Pain_Management",
         "originalFigure": 50
@@ -4038,7 +4033,7 @@
       "id": "PAIN-163",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the PCA diagram. Element (4) delivers drug continuously regardless of button presses. What is it called?",
+      "stem": "In PCA programming, what term describes opioid delivered continuously regardless of patient button presses?",
       "options": [
         "Basal infusion",
         "Lockout interval",
@@ -4052,12 +4047,7 @@
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
-      "image": {
-        "kind": "direct",
-        "url": "figures/perioperative-pain/fig-50.svg",
-        "id": 50,
-        "title": "Figure 50"
-      },
+      "image": null,
       "sourceMeta": {
         "sourcePackage": "Perioperative_Pain_Management",
         "originalFigure": 50
@@ -4067,7 +4057,7 @@
       "id": "PAIN-164",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the PCA diagram. Element (1) is given at the start to establish analgesia. What is it called?",
+      "stem": "In PCA therapy, what is the initial clinician-administered dose used to establish analgesia before patient demand dosing called?",
       "options": [
         "Loading dose",
         "Demand dose",
@@ -4081,12 +4071,7 @@
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
-      "image": {
-        "kind": "direct",
-        "url": "figures/perioperative-pain/fig-50.svg",
-        "id": 50,
-        "title": "Figure 50"
-      },
+      "image": null,
       "sourceMeta": {
         "sourcePackage": "Perioperative_Pain_Management",
         "originalFigure": 50
@@ -4096,7 +4081,7 @@
       "id": "PAIN-165",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the PCA diagram. Element (2) is delivered each time the patient presses the button. What is it called?",
+      "stem": "In PCA therapy, what is the patient-triggered amount delivered after an eligible button press called?",
       "options": [
         "Incremental (demand) dose",
         "Loading dose",
@@ -4110,12 +4095,7 @@
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
-      "image": {
-        "kind": "direct",
-        "url": "figures/perioperative-pain/fig-50.svg",
-        "id": 50,
-        "title": "Figure 50"
-      },
+      "image": null,
       "sourceMeta": {
         "sourcePackage": "Perioperative_Pain_Management",
         "originalFigure": 50
@@ -4503,17 +4483,17 @@
       "id": "PAIN-181",
       "set": 1,
       "type": "single",
-      "stem": "A patient has troublesome pruritus after intrathecal morphine but remains awake with normal ventilation and excellent analgesia. Which reversal strategy BEST treats the adverse effect while minimizing loss of analgesia?",
+      "stem": "A patient has troublesome pruritus after intrathecal morphine but remains awake with normal ventilation and excellent analgesia. Which strategy can treat neuraxial opioid pruritus while limiting loss of analgesia?",
       "options": [
-        "Very low-dose naloxone, such as 40 mcg IV or a low-dose infusion",
-        "Repeated 2 mg naloxone boluses",
-        "A 10 mg intramuscular naloxone dose",
-        "Repeated 0.4 mg boluses until all opioid effects disappear"
+        "Carefully titrated low-dose naloxone or another evidence-based antipruritic strategy",
+        "Large naloxone boluses until all opioid effects disappear",
+        "Additional intrathecal morphine",
+        "Flumazenil as the primary opioid antagonist"
       ],
       "answer": [
         0
       ],
-      "explanation": "Low-dose naloxone (infusion or 40 mcg IV) treats pruritus without reversing analgesia.",
+      "explanation": "Neuraxial opioid pruritus is centrally mediated and may respond to carefully titrated low-dose naloxone or other targeted therapies. Large naloxone doses can reverse analgesia and precipitate acute pain or withdrawal in susceptible patients.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4527,17 +4507,17 @@
       "id": "PAIN-182",
       "set": 1,
       "type": "single",
-      "stem": "A PACU patient is hypoventilating after receiving both midazolam and hydromorphone. Ventilation is supported while reversal is considered. Which approach can improve alertness while initially preserving opioid analgesia?",
+      "stem": "A PACU patient is hypoventilating after both midazolam and hydromorphone. What is the immediate management priority?",
       "options": [
-        "Reverse the benzodiazepine component with flumazenil",
-        "Give atipamezole to reverse hydromorphone",
-        "Give physostigmine to reverse midazolam",
-        "Use flumazenil to reverse the opioid"
+        "Support the airway and ventilation, stop contributing sedatives, then use drug-specific antagonists selectively based on likely cause and patient risk",
+        "Give flumazenil automatically before assessing ventilation",
+        "Give naloxone only after oxygen saturation falls",
+        "Use flumazenil to reverse both drugs"
       ],
       "answer": [
         0
       ],
-      "explanation": "Reversing the benzodiazepine first can restore ventilation while preserving opioid analgesia.",
+      "explanation": "Airway and ventilatory support come first. Flumazenil and naloxone may be used selectively, but reversal should reflect the suspected drug contribution and patient-specific risks; flumazenil can precipitate seizures or withdrawal in susceptible benzodiazepine-dependent patients.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4647,17 +4627,17 @@
       "id": "PAIN-187",
       "set": 1,
       "type": "single",
-      "stem": "A patient becomes hypotensive after analgesics. What is the FIRST assessment?",
+      "stem": "A patient becomes hypotensive after analgesic administration. What is the best immediate approach?",
       "options": [
-        "Check HR and rhythm to determine the cause",
-        "Give a vasopressor immediately without assessment",
-        "Increase opioid dose to treat pain",
-        "Give naloxone to reverse opioids"
+        "Assess perfusion and likely cause, including heart rate/rhythm, volume status, anesthetic effects, and other contributors, while treating clinically significant hypotension",
+        "Give a vasopressor without any assessment in every case",
+        "Assume the opioid is the sole cause",
+        "Give naloxone for all postoperative hypotension"
       ],
       "answer": [
         0
       ],
-      "explanation": "First check HR and rhythm, then manage the cause.",
+      "explanation": "Hypotension after analgesia can reflect vasodilation, bradycardia, hypovolemia, bleeding, anesthetic depth, or other causes. Rapid assessment and simultaneous support of perfusion should guide targeted treatment.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4695,17 +4675,17 @@
       "id": "PAIN-189",
       "set": 1,
       "type": "single",
-      "stem": "A patient's HR falls to 40 with BP 85/45 after analgesics. Which drugs are appropriate to treat the bradycardia?",
+      "stem": "A patient develops symptomatic bradycardia with hypotension after sedative-analgesic administration. Which management principle is most appropriate?",
       "options": [
-        "Ephedrine or glycopyrrolate",
-        "Esmolol or labetalol",
-        "Nitroglycerin or nicardipine",
-        "Neostigmine or edrophonium"
+        "Reduce contributing drugs, assess the cause, support perfusion, and use an appropriate chronotropic/vasopressor treatment based on the clinical situation",
+        "Glycopyrrolate is mandatory for every episode",
+        "Ephedrine is the only acceptable treatment",
+        "Observe without intervention whenever the heart rate is above 30/min"
       ],
       "answer": [
         0
       ],
-      "explanation": "Ephedrine and glycopyrrolate treat analgesic-related bradycardia.",
+      "explanation": "Clinically important bradycardia with hypotension requires cause-directed treatment and perfusion support. The appropriate agent may include atropine, ephedrine, epinephrine, or another therapy depending on mechanism and severity; no single drug is correct for every case.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4753,7 +4733,7 @@
       "answer": [
         0
       ],
-      "explanation": "Itching and nausea are adverse effects; erythema, facial swelling, and vomiting suggest allergy.",
+      "explanation": "Pruritus is a common opioid adverse effect and, particularly with morphine, can also reflect non-IgE-mediated histamine release. Isolated itching without features such as urticaria, angioedema, bronchospasm, or cardiovascular collapse does not by itself establish true IgE-mediated allergy.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
