@@ -48,7 +48,7 @@ function activeButton(){
   const host=document.getElementById('home'),b=document.createElement('button'),anchor=document.getElementById('studioQuickModes');b.id='resumeActive';b.className='btn';b.textContent='▶ Resume Active Quiz · Question '+(active.pos+1)+' / '+active.uids.length;b.onclick=resumeActive;anchor?.parentNode?.insertBefore(b,anchor)
 }
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
-async function studioFetch(url){return window.MBUBuild.fetchJSON(new URL(url,location.href),{cache:url==='banks.json'?'no-store':'force-cache',timeout:12000})}
+async function studioFetch(url){const requestUrl=new URL(url,location.href);if(url!=='banks.json'&&window.MBU_BUILD_ID)requestUrl.searchParams.set('b',window.MBU_BUILD_ID);return window.MBUBuild.fetchJSON(requestUrl,{cache:url==='banks.json'?'no-store':'force-cache',timeout:12000})}
 function showLoadErrors(errors){
   const el=document.getElementById('loadmsg');
   if(!el)return;
