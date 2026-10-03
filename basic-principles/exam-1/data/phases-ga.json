@@ -11299,7 +11299,7 @@
         1,
         2
       ],
-      "explanation": "BIS, ETAG monitoring, avoiding NMB, and clinical assessment reduce risk.",
+      "explanation": "Awareness prevention in a hemodynamically unstable, paralyzed patient centers on reliable hypnotic delivery, end-tidal anesthetic concentration when volatile anesthesia is used, clinical assessment, and processed EEG when appropriate. Neuromuscular blockade does not provide hypnosis and can remove movement as a warning sign.",
       "citation": "",
       "topic": "Cross-phase cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -12019,7 +12019,7 @@
       "answer": [
         0
       ],
-      "explanation": "With full NM recovery, apnea at a low CO2 means no drive. Reduce ventilation to raise PaCO2 above 40.",
+      "explanation": "With adequate neuromuscular recovery, excessive controlled ventilation can lower PaCO2 below the patient's apneic threshold. Reducing minute ventilation may allow spontaneous respiratory drive to return; a fixed PaCO2 or ETCO2 above 40 mmHg is not universally required.",
       "citation": "",
       "topic": "Cross-phase cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -12043,7 +12043,7 @@
       "answer": [
         0
       ],
-      "explanation": "TOFR >0.9, command following, and adequate tidal volumes meet criteria. Suctioning causes transient hypertension.",
+      "explanation": "A TOF ratio of at least 0.9 at the adductor pollicis supports adequate neuromuscular recovery. Extubation still requires the overall airway, ventilation, oxygenation, mental-status, and surgical criteria to be satisfied; a transient response to suctioning alone does not necessarily preclude it.",
       "citation": "",
       "topic": "Cross-phase cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -12139,7 +12139,7 @@
       "answer": [
         0
       ],
-      "explanation": "Residual weakness after reversal needs more time or additional reversal with continued monitoring.",
+      "explanation": "A TOFR of 0.60 represents clinically important residual blockade. Continue ventilatory support and quantitative monitoring. Additional reversal depends on the blocker, depth of block, timing and dose of prior reversal, and available agent; repeated neostigmine should not be given reflexively.",
       "citation": "",
       "topic": "Cross-phase cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -12369,17 +12369,17 @@
       "id": "PHA-500",
       "set": 1,
       "type": "single",
-      "stem": "At emergence, quantitative TOFR is 0.95 but the patient remains somnolent with small tidal volumes after substantial opioid and anesthetic exposure. Which explanation is most likely?",
+      "stem": "At emergence, quantitative TOFR is 0.95 at the adductor pollicis but the patient remains somnolent with small tidal volumes after substantial opioid and anesthetic exposure. Which explanation should move higher on the differential?",
       "options": [
-        "Residual sedative/anesthetic or opioid effect rather than residual neuromuscular blockade",
-        "Residual neuromuscular blockade despite adequate quantitative recovery",
+        "Residual sedative/anesthetic or opioid effect",
+        "Clinically important residual neuromuscular blockade as the leading explanation despite adequate quantitative recovery",
         "Malignant hyperthermia",
         "Hyperthermia"
       ],
       "answer": [
         0
       ],
-      "explanation": "TOFR >0.9 rules out residual NMB; somnolence suggests residual anesthetic or opioid effect.",
+      "explanation": "A TOF ratio of at least 0.9 makes clinically important residual nondepolarizing neuromuscular blockade much less likely when the measurement is valid and obtained at the adductor pollicis. Persistent somnolence and hypoventilation should prompt evaluation of residual anesthetic/opioid effects and other causes rather than claiming TOFR alone absolutely rules out every weakness-related problem.",
       "citation": "",
       "topic": "Cross-phase cases",
       "sourceTitle": "Phases of General Anesthesia",
