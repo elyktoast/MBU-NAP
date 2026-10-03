@@ -8622,7 +8622,7 @@
       "answer": [
         0
       ],
-      "explanation": "Minority women are less likely to receive epidurals and more likely to receive GA.",
+      "explanation": "The scenario illustrates a maternal-care equity concern because a language-access barrier altered access to an otherwise clinically available anesthetic option. Population-level disparities should be evaluated with attention to clinical factors, patient preferences, access, and potential bias rather than attributed to race or ethnicity alone.",
       "citation": "",
       "topic": "Integrated case series",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -8828,17 +8828,17 @@
       "id": "MISC-361",
       "set": 1,
       "type": "single",
-      "stem": "A deep incisional SSI occurs 25 days after hernia repair. In the cited CMS framework, how is this type of preventable event treated?",
+      "stem": "A deep incisional SSI occurs after a procedure included in a CMS hospital-acquired-condition payment policy. What is the most accurate interpretation of the payment implication?",
       "options": [
-        "As preventable and potentially nonreimbursable",
-        "As unavoidable and fully reimbursed",
-        "As reimbursable if documented",
-        "As solely the surgeon's responsibility"
+        "Payment consequences depend on whether the infection meets the specific CMS policy and coding criteria",
+        "Every postoperative SSI is automatically nonreimbursable",
+        "Every SSI is fully reimbursed if documented",
+        "SSI payment policy applies only to surgeon professional fees"
       ],
       "answer": [
         0
       ],
-      "explanation": "CMS considers SSIs preventable and not reimbursable.",
+      "explanation": "CMS payment policies do not make every SSI categorically nonreimbursable. Payment consequences depend on the applicable program, procedure, diagnosis and coding criteria, whether the condition was present on admission, and other policy requirements.",
       "citation": "",
       "topic": "Integrated case series",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -9172,15 +9172,15 @@
       "type": "single",
       "stem": "A patient with dementia is scheduled for surgery and no surrogate is immediately available. What is the first step?",
       "options": [
-        "Assess decision-making capacity and identify a legal surrogate if needed",
-        "Proceed with the patient's signature regardless of capacity",
-        "Let the surgeon consent for anesthesia",
-        "Assume implied consent"
+        "Assess the patient's decision-making capacity for the specific decision and identify an authorized surrogate if capacity is lacking",
+        "Assume dementia automatically eliminates capacity",
+        "Let the surgeon provide consent on the patient's behalf",
+        "Assume implied consent for an elective procedure"
       ],
       "answer": [
         0
       ],
-      "explanation": "Cognitively impaired patients require capacity assessment and surrogate consent.",
+      "explanation": "A diagnosis of dementia does not by itself establish incapacity. Decision-making capacity is assessed for the specific decision; if the patient lacks capacity, an appropriately authorized surrogate or other legally recognized process is used when required.",
       "citation": "",
       "topic": "Integrated case series",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -9588,7 +9588,7 @@
       "answer": [
         0
       ],
-      "explanation": "Communication breakdowns cause wrong-sided procedures.",
+      "explanation": "Failure to exchange and confirm critical information such as procedure and laterality is a communication failure and can contribute to wrong-site events. Formal verification processes are designed to catch these discrepancies before incision.",
       "citation": "",
       "topic": "Integrated case series",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -9746,17 +9746,17 @@
       "id": "MISC-399",
       "set": 1,
       "type": "single",
-      "stem": "Which PPE set is appropriate for bronchoscopy in a patient with airborne infection?",
+      "stem": "Which PPE approach is appropriate for bronchoscopy when airborne/AGP precautions are indicated for the patient's respiratory infection?",
       "options": [
         "Gloves, gown, eye protection, and appropriate respiratory protection",
         "Gloves only",
         "Eye protection and gloves only",
-        "Surgical mask and gloves only"
+        "A surgical mask and gloves only"
       ],
       "answer": [
         0
       ],
-      "explanation": "AGPs require full PPE.",
+      "explanation": "Bronchoscopy can generate aerosols. When airborne or AGP precautions are indicated for the pathogen and setting, personnel use appropriate respiratory protection with other recommended PPE according to current infection-control guidance.",
       "citation": "",
       "topic": "Integrated case series",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
