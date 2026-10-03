@@ -7600,17 +7600,17 @@
       "id": "MISC-310",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA calls for help early during unexpected difficult ventilation. Which CRM behavior is this?",
+      "stem": "During unexpected difficult ventilation, the first call for help brings one additional clinician, but oxygenation continues to worsen. What CRM principle should guide the next step?",
       "options": [
-        "Communication: call for help",
-        "Evaluation",
-        "Awareness only",
-        "Behavioral flexibility"
+        "Escalate resources again early rather than assuming the first help request was sufficient",
+        "Avoid further calls because too many people always worsen crises",
+        "Continue alone until cardiac arrest occurs",
+        "Wait for the procedure to end before requesting specialized airway help"
       ],
       "answer": [
         0
       ],
-      "explanation": "Calling for help early is an essential crisis communication behavior because it expands personnel, expertise, and equipment before deterioration becomes severe. It is a strength in resource management, not a failure of independence.",
+      "explanation": "Calling for help is dynamic rather than a one-time checkbox. If the crisis continues to outstrip available personnel, expertise, or equipment, the leader should escalate resources early and explicitly.",
       "citation": "",
       "topic": "CRM and fixation scenarios",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -9002,17 +9002,17 @@
       "id": "MISC-368",
       "set": 1,
       "type": "single",
-      "stem": "After the hemorrhage event, the team debriefs to identify lessons. Which CRM element is being used?",
+      "stem": "A hemorrhage debrief identifies that blood arrived late because nobody had been assigned to activate the massive-transfusion pathway. What is the strongest follow-up action?",
       "options": [
-        "Evaluation: error wisdom",
-        "Awareness",
-        "Communication",
-        "Behavioral flexibility"
+        "Convert the lesson into a specific role assignment or protocol change for future hemorrhage events",
+        "Document only that the team should try harder",
+        "Avoid changing the process because the patient survived",
+        "Remove debriefing from future cases"
       ],
       "answer": [
         0
       ],
-      "explanation": "Debriefing is evaluation because the team examines decisions, system factors, and outcomes after the event to build error wisdom. The purpose is actionable learning rather than blame.",
+      "explanation": "Debriefing is valuable when lessons become concrete system or team changes. Assigning ownership for massive-transfusion activation strengthens the workflow and makes the learning actionable rather than leaving it as a vague reminder.",
       "citation": "",
       "topic": "Integrated case series",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -9338,17 +9338,17 @@
       "id": "MISC-382",
       "set": 1,
       "type": "single",
-      "stem": "Which cognitive aid is most appropriate during unexpected cardiac arrest in PACU?",
+      "stem": "A PACU cardiac arrest begins before the emergency manual is retrieved. What should the team do?",
       "options": [
-        "Stanford Emergency Manual",
-        "WHO Surgical Safety Checklist",
-        "MH cart instructions",
-        "Difficult airway algorithm"
+        "Begin indicated resuscitation immediately while another team member obtains the cognitive aid",
+        "Delay compressions until the manual is open",
+        "Search for a specific branded manual before treating",
+        "Wait for the anesthesia record to be completed"
       ],
       "answer": [
         0
       ],
-      "explanation": "A perioperative emergency manual can support unexpected PACU arrest with structured crisis guidance, while current ACLS algorithms and local resuscitation resources remain authoritative for specific treatment. The value is rapid access to a familiar cognitive aid.",
+      "explanation": "Cognitive aids support crisis management but should not delay immediately indicated resuscitation. The team can begin current resuscitation actions while another member retrieves the emergency manual or local algorithm for ongoing support.",
       "citation": "",
       "topic": "Integrated case series",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -9410,17 +9410,17 @@
       "id": "MISC-385",
       "set": 1,
       "type": "single",
-      "stem": "A patient signs consent without understanding because of low health literacy. Which social-determinant domain is most directly involved?",
+      "stem": "A patient with limited health literacy correctly signs the consent form but cannot explain the planned anesthetic in their own words. What is the best next step?",
       "options": [
-        "Education access and quality",
-        "Neighborhood and built environment",
-        "Economic stability",
-        "Social and community context"
+        "Use plain language and teach-back to clarify understanding before proceeding with nonurgent consent",
+        "Assume the signature proves comprehension",
+        "Ask the patient to reread the same technical form silently",
+        "Cancel the procedure permanently"
       ],
       "answer": [
         0
       ],
-      "explanation": "Low health literacy is closely linked to the education access and quality domain in the Healthy People framework. Clinically, however, literacy should be assessed and communication adapted individually rather than inferred from formal education.",
+      "explanation": "Health literacy affects how information is understood, but a signed form does not establish comprehension. Plain language and teach-back allow the clinician to identify misunderstanding and support valid informed decision-making.",
       "citation": "",
       "topic": "Integrated case series",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -10257,17 +10257,17 @@
       "id": "MISC-420",
       "set": 1,
       "type": "single",
-      "stem": "Clinically similar patients receive the same regional-anesthesia options regardless of social status. Which ethical principle is most directly reflected?",
+      "stem": "Two clinically similar patients request different regional-anesthesia options after receiving the same balanced explanation. Which approach best reflects justice and autonomy together?",
       "options": [
-        "Justice",
-        "Autonomy",
-        "Beneficence",
-        "Non-maleficence"
+        "Offer equitable access to appropriate options while allowing each informed patient to choose differently",
+        "Require both patients to select the same technique",
+        "Use social status to determine which option is offered",
+        "Ignore patient preference to make outcomes look identical"
       ],
       "answer": [
         0
       ],
-      "explanation": "Justice requires comparable access to appropriate treatment regardless of social status. Offering the same clinically relevant regional options to similar patients demonstrates equitable decision-making.",
+      "explanation": "Justice requires fair access to clinically appropriate options, while autonomy allows informed patients to make different choices. Equity does not require identical final treatment when preferences differ after comparable access and counseling.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
