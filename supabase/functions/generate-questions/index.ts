@@ -42,7 +42,7 @@ Deno.serve(async(req:Request)=>{
 14. Key position is NOT part of item design. Do not intentionally favor A/B/C/D or create answer-letter patterns; downstream application code will shuffle options and remap the key atomically.\n\nAdditional requirements: favor application/analysis; use plausible distractors that could attract a partially knowledgeable examinee; avoid throwaway, joke, absolute, all/none-of-the-above, combination, grammatical, and length cues; answer contains zero-based option indexes; for multi-select key every correct option; citation should use the supplied citation when available; sourceExcerpt must be a short supporting excerpt or faithful concise source statement from the supplied material. Do not invent facts beyond the source.\n\nSource: ${sourceName||"Provided material"}\nCitation: ${citation||"Provided material"}\n\nSOURCE MATERIAL:\n${material}`;
   const response=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,{
     method:"POST",headers:{"Content-Type":"application/json","x-goog-api-key":key},
-    body:JSON.stringify({contents:[{parts:[{text:prompt}]}],generationConfig:{responseFormat:{text:{mimeType:"application/json",schema}},temperature:.65}})
+    body:JSON.stringify({contents:[{parts:[{text:prompt}]}],generationConfig:{responseMimeType:"application/json",responseSchema:schema,temperature:.65}})
   });
   const data=await response.json().catch(()=>null);
   if(!response.ok){const detail=String(data?.error?.message||"").slice(0,1000);console.error("Gemini API error",response.status,detail);return json({error:"Gemini generation failed.",status:response.status,detail},502,origin);}
