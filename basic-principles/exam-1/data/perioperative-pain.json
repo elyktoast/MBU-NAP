@@ -8657,7 +8657,7 @@
         0,
         1
       ],
-      "explanation": "Nociceptive postoperative pain responds best to opioids and NSAIDs, along with acetaminophen. Anticonvulsants target neuropathic pain.",
+      "explanation": "Acute nociceptive postoperative pain commonly responds to multimodal combinations of acetaminophen, NSAIDs when appropriate, regional/local anesthesia, and opioids for moderate-to-severe breakthrough pain. Anticonvulsants are more specifically useful when a neuropathic mechanism is present.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8681,7 +8681,7 @@
       "answer": [
         0
       ],
-      "explanation": "Magnesium lowers pain scores and opioid use without serious adverse effects at the studied doses.",
+      "explanation": "Magnesium has been studied as an opioid-sparing NMDA-modulating adjunct and may reduce pain or opioid consumption without major adverse effects in selected study populations. It can still cause hypotension and potentiate neuromuscular blockade, particularly with excessive exposure or impaired renal clearance.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8705,7 +8705,7 @@
       "answer": [
         0
       ],
-      "explanation": "Lidocaine attenuates postoperative ileus.",
+      "explanation": "Systemic lidocaine can reduce opioid requirements in selected abdominal surgery and may lessen postoperative ileus, making it attractive when bowel recovery is important. Benefit should be weighed against cumulative local-anesthetic exposure and neurologic/cardiac toxicity risk.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8729,7 +8729,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ketamine can cause emergence reactions and agitation.",
+      "explanation": "Ketamine can produce dose-related psychomimetic effects including dysphoria, vivid dreams, hallucinations, or agitation even when ventilation is preserved. Recognizing the characteristic CNS effect prevents mislabeling the change as pain or inadequate anesthesia alone.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8753,7 +8753,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dilated pupils and hypertension suggest inadequate analgesia.",
+      "explanation": "Hypertension, tachycardia, and mydriasis during surgical stimulation can accompany inadequate antinociception, but each is nonspecific. Analgesic depth should be reassessed together with anesthetic depth, volume status, ventilation, medications, and the intensity of surgical stimulation.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8777,7 +8777,7 @@
       "answer": [
         0
       ],
-      "explanation": "Tachypnea and restlessness after a painful operation may reflect inadequate analgesia, but they are nonspecific. If other causes are excluded, cautious titration of short-acting analgesia with continued assessment of ventilation and arousability is appropriate; there is no universal respiratory-rate target.",
+      "explanation": "Restlessness and tachypnea can reflect pain but also hypoxemia, hypercapnia, anxiety, bladder discomfort, temperature disturbance, or other causes. Once those are assessed, short-acting analgesia can be cautiously titrated while ventilation and arousability are repeatedly reassessed.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8801,7 +8801,7 @@
       "answer": [
         0
       ],
-      "explanation": "A respiratory rate near 12/min with adequate tidal ventilation, gas exchange, arousability, airway protection, and no distress may be compatible with an acceptable opioid effect. A fixed respiratory-rate or pupil-size target alone does not establish safe emergence.",
+      "explanation": "A respiratory rate of 12/min and moderate miosis can be compatible with an acceptable opioid effect when tidal ventilation, gas exchange, arousability, and airway protection are adequate. No fixed respiratory rate or pupil size alone establishes safe emergence.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8825,7 +8825,7 @@
       "answer": [
         0
       ],
-      "explanation": "Treating vital signs with opioids before extubation risks respiratory depression.",
+      "explanation": "A large opioid bolus just before extubation can outlast the brief coughing stimulus it was intended to suppress. After the airway is removed, residual opioid may depress ventilatory drive and worsen upper-airway obstruction, producing hypoventilation.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8849,7 +8849,7 @@
       "answer": [
         0
       ],
-      "explanation": "Lockout intervals prevent excessive dosing.",
+      "explanation": "The lockout interval prevents another PCA demand from being delivered before enough time has passed to observe the effect of previous doses. This reduces rapid dose stacking and the progression from analgesia to excessive sedation and respiratory depression.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8873,7 +8873,7 @@
       "answer": [
         0
       ],
-      "explanation": "A 10-minute lockout allows 6 doses per hour, or 24 in 4 hours: 24 × 0.2 = 4.8 mg. The 4-hour limit caps the total at 4 mg.",
+      "explanation": "A 10-minute lockout permits six successful 0.2-mg doses per hour, or 24 doses in four hours. That equals 4.8 mg, so a programmed four-hour limit of 4 mg becomes the binding safety cap.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8897,7 +8897,7 @@
       "answer": [
         0
       ],
-      "explanation": "Bolus dose is one of the five key PCA variables.",
+      "explanation": "A loading or clinician bolus dose is distinct from the patient-activated demand dose and may be used to establish analgesia before demand-only dosing maintains it. If the order requires such a parameter, omitting it makes the PCA prescription incomplete.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8921,7 +8921,7 @@
       "answer": [
         0
       ],
-      "explanation": "The demand dose is the patient-activated dose.",
+      "explanation": "The incremental or demand dose is the amount delivered after a successful patient activation once lockout requirements are satisfied. It is separate from any clinician loading dose, basal infusion, lockout interval, or cumulative dose limit.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8945,7 +8945,7 @@
       "answer": [
         0
       ],
-      "explanation": "Neuraxial morphine can cause delayed respiratory depression requiring monitoring.",
+      "explanation": "Normal ventilation immediately after surgery does not eliminate delayed risk from hydrophilic neuraxial morphine. Rostral CSF spread can produce respiratory depression hours later, so disposition must provide the monitoring required by the neuraxial-opioid protocol.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8969,7 +8969,7 @@
       "answer": [
         0
       ],
-      "explanation": "Pruritus often responds to naloxone; retention needs bladder management.",
+      "explanation": "Neuraxial opioid pruritus can often be reduced with very low-dose opioid antagonism while attempting to preserve analgesia. Urinary retention requires bladder assessment and management; neither adverse effect automatically requires abandoning otherwise effective neuraxial analgesia.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9017,7 +9017,7 @@
       "answer": [
         0
       ],
-      "explanation": "Naltrexone is an opioid antagonist, reducing opioid effectiveness.",
+      "explanation": "Naltrexone competitively blocks opioid receptors and can markedly reduce the effect of conventional opioid agonists. Perioperative planning therefore depends on formulation and timing of the last dose and should emphasize multimodal/regional strategies rather than simply escalating opioid blindly.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9041,7 +9041,7 @@
       "answer": [
         0
       ],
-      "explanation": "Naloxone can precipitate withdrawal in dependent patients.",
+      "explanation": "Naloxone rapidly displaces opioid agonists from mu receptors. In a physically dependent patient, abrupt loss of receptor stimulation can precipitate acute withdrawal with sympathetic activation, gastrointestinal symptoms, pain, and agitation.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9065,7 +9065,7 @@
       "answer": [
         0
       ],
-      "explanation": "Tolerance shifts the dose–response curve right.",
+      "explanation": "Tolerance is demonstrated when progressively larger doses are required to achieve the same effect, producing a rightward shift in the dose-response relationship. It is distinct from physical dependence and from opioid use disorder.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9137,7 +9137,7 @@
       "answer": [
         0
       ],
-      "explanation": "Developmental and communication issues make pain evaluation difficult.",
+      "explanation": "When developmental delay prevents reliable self-report, pain assessment should use a validated behavioral tool appropriate to the child's developmental level plus caregiver knowledge and physiologic/functional context. Treatment response must be reassessed using the same individualized approach.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9185,7 +9185,7 @@
       "answer": [
         0
       ],
-      "explanation": "Take particular care when adding a second technique.",
+      "explanation": "Adding another modality can improve analgesia but also compound sedation, respiratory depression, hypotension, or motor effects. Doses and monitoring should therefore be reassessed whenever therapies with overlapping adverse effects are combined.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9209,7 +9209,7 @@
       "answer": [
         0
       ],
-      "explanation": "Language and cultural barriers limit effective pain management.",
+      "explanation": "Language discordance can prevent accurate assessment of pain quality, intensity, goals, and medication concerns. Qualified interpretation and culturally responsive communication reduce this barrier rather than relying on assumptions or family translation alone.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9233,7 +9233,7 @@
       "answer": [
         0
       ],
-      "explanation": "Opiophobia is fear of opioids and addiction.",
+      "explanation": "Opiophobia is disproportionate fear of opioid use or addiction that leads to avoidance of appropriate analgesia. Education should distinguish short-term monitored analgesic use, tolerance, physical dependence, and opioid use disorder while still addressing genuine opioid risks.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9257,7 +9257,7 @@
       "answer": [
         0
       ],
-      "explanation": "Reducing anxiety is a listed non-opioid intervention.",
+      "explanation": "Anxiety can amplify the pain experience and increase distress. Reassurance, explanation, environmental calming, distraction, and carefully selected anxiolysis can complement analgesia, but anxiety should not be assumed to be the sole cause of a high pain report.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9281,7 +9281,7 @@
       "answer": [
         0
       ],
-      "explanation": "Extubation can reduce discomfort once criteria are met.",
+      "explanation": "An endotracheal tube itself is a potent noxious stimulus. When the patient otherwise meets extubation criteria, appropriately timed removal eliminates that mechanical source of throat discomfort without adding unnecessary sedating medication.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9329,7 +9329,7 @@
       "answer": [
         0
       ],
-      "explanation": "Oral and transdermal routes are helpful for discharge.",
+      "explanation": "Oral medication is generally practical for home use once the ambulatory patient can tolerate intake and has an appropriate regimen. Transdermal opioids are not routine treatment for acute postoperative pain and should only continue when otherwise indicated, such as established chronic therapy.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9377,7 +9377,7 @@
       "answer": [
         0
       ],
-      "explanation": "Pain specialist consultation is recommended for high-risk patients.",
+      "explanation": "Substance use disorder and complex chronic pain increase the risk of withdrawal, undertreatment, relapse, drug interactions, and unsafe escalation. Early pain/addiction expertise can help preserve maintenance therapy, build multimodal analgesia, and define a safe discharge plan.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9425,7 +9425,7 @@
       "answer": [
         0
       ],
-      "explanation": "Guideline 6 says adjust the plan based on pain relief and adverse events.",
+      "explanation": "A successful multimodal regimen is judged by both analgesia/function and treatment burden. Nausea, sedation, hypotension, motor block, or respiratory effects should trigger dose or technique adjustment even when the numeric pain score improves.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9449,7 +9449,7 @@
       "answer": [
         0
       ],
-      "explanation": "If the usual dose is missed, give an equivalent preoperatively to avoid withdrawal.",
+      "explanation": "The missed chronic opioid dose represents baseline physiologic exposure, not the entire analgesic requirement for lumbar fusion. Replacing an appropriate equivalent helps prevent withdrawal; additional procedure-specific pain should then be treated with multimodal and supplemental analgesia.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9473,7 +9473,7 @@
       "answer": [
         0
       ],
-      "explanation": "Opioid tolerance can increase perioperative opioid requirements, but the magnitude is highly variable. Maintain or replace baseline exposure and titrate additional analgesia to the procedure, multimodal plan, pain, function, and adverse effects rather than applying a fixed percentage.",
+      "explanation": "Opioid tolerance can increase acute perioperative requirements, but the magnitude varies widely. Maintain or replace baseline exposure and titrate additional therapy to surgical stimulus, multimodal techniques, pain, function, sedation, and ventilation rather than applying a fixed percentage increase.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9525,7 +9525,7 @@
       "answer": [
         0
       ],
-      "explanation": "When escalating one opioid produces diminishing benefit and increasing toxicity, reassess the diagnosis and multimodal strategy. Opioid rotation, including to methadone in selected experienced settings, can be considered but is not universally required and requires careful equianalgesic conversion.",
+      "explanation": "Diminishing benefit with increasing toxicity should prompt reassessment of pain mechanism, complications, and the multimodal plan rather than automatic dose escalation. Opioid rotation can be considered because cross-tolerance is incomplete, but conversion must be conservative and individualized.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9549,7 +9549,7 @@
       "answer": [
         0
       ],
-      "explanation": "Opioid-tolerant patients may need a basal infusion.",
+      "explanation": "In a substantially opioid-tolerant patient, a carefully calculated basal PCA infusion may replace part of the established baseline opioid requirement while demand dosing addresses breakthrough surgical pain. This rationale does not apply automatically to opioid-naive patients.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9573,7 +9573,7 @@
       "answer": [
         0
       ],
-      "explanation": "Regional analgesia promotes pulmonary toilet after upper abdominal surgery.",
+      "explanation": "Open upper-abdominal pain can cause splinting and ineffective cough, particularly dangerous in severe COPD. Analgesia that permits deep breathing, coughing, mobilization, and pulmonary toilet is therefore more clinically meaningful than a low resting pain score alone.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9597,7 +9597,7 @@
       "answer": [
         0
       ],
-      "explanation": "Epidural analgesia supports pulmonary function and is superior to systemic opioids.",
+      "explanation": "Thoracic epidural local anesthetic can provide strong segmental dynamic analgesia while reducing systemic opioid exposure, supporting cough and ventilation in severe COPD. Hypotension, motor block, anticoagulation, and catheter risks must still be considered.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9621,7 +9621,7 @@
       "answer": [
         0
       ],
-      "explanation": "Epidural planning includes postop location, monitoring, and follow-up.",
+      "explanation": "A thoracic epidural requires a postoperative destination capable of the necessary monitoring and a clearly responsible service for assessment, dosing, adverse effects, anticoagulation coordination, and removal. Those arrangements should be made before surgery.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9645,7 +9645,7 @@
       "answer": [
         0
       ],
-      "explanation": "Low local anesthetic dose plus lipophilic opioid minimizes motor block.",
+      "explanation": "Reducing intrathecal local-anesthetic dose shortens motor block, while a small lipophilic opioid can augment analgesia without proportionally prolonging motor recovery. The combination can support ambulatory discharge when matched to procedure duration and patient risk.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9669,7 +9669,7 @@
       "answer": [
         0
       ],
-      "explanation": "Oral routes are most useful for ambulatory discharge.",
+      "explanation": "Oral multimodal medication is practical for home use once pain is controlled and oral intake is tolerated. Discharge planning should also address breakthrough medication, adverse effects, activity/function goals, and safe opioid storage/disposal when opioids are prescribed.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9721,7 +9721,7 @@
       "answer": [
         0
       ],
-      "explanation": "Crying and inconsolability are pediatric pain expressions.",
+      "explanation": "Crying and inconsolability can indicate pain but are not specific for it. A validated age-appropriate behavioral tool, examination, and consideration of other causes of distress allow analgesia to be titrated without relying on either undertreatment or reflexive sedative dosing.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9745,7 +9745,7 @@
       "answer": [
         0
       ],
-      "explanation": "Family-centered care reduces parental stress, which helps the child.",
+      "explanation": "Children often respond to caregiver emotional state. Family-centered care includes calming and coaching parents, giving clear information, and involving them constructively while the child's pain is independently assessed and treated.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9793,7 +9793,7 @@
       "answer": [
         0
       ],
-      "explanation": "Poor metabolizers form little morphine from codeine.",
+      "explanation": "Codeine is a prodrug whose analgesic activity depends substantially on CYP2D6 conversion to morphine. A poor metabolizer forms less morphine and can therefore have inadequate analgesia despite taking the prescribed dose.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9817,7 +9817,7 @@
       "answer": [
         0
       ],
-      "explanation": "Hydromorphone does not need CYP2D6 activation, unlike codeine, tramadol, and hydrocodone.",
+      "explanation": "Hydromorphone is directly active and does not require CYP2D6 conversion to produce its opioid effect. It therefore avoids the activation problem that can make codeine or tramadol unreliable in a CYP2D6 poor metabolizer.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
