@@ -6270,7 +6270,7 @@
       "answer": [
         0
       ],
-      "explanation": "MetHb absorbs red and IR 1:1, driving SpO2 toward ~85%.",
+      "explanation": "Methemoglobin absorbs the two wavelengths used by conventional pulse oximeters more equally than normal oxyhemoglobin and deoxyhemoglobin. As methemoglobin rises, the calculated ratio therefore tends to drive the displayed SpO2 toward about 85%, even when PaO2 is high.",
       "citation": "",
       "topic": "Pulse oximetry",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -6470,7 +6470,7 @@
       "answer": [
         0
       ],
-      "explanation": "With supplemental oxygen, patients can be apneic for minutes before SpO2 falls.",
+      "explanation": "Pulse oximetry measures oxygenation, not ventilation. Supplemental oxygen enlarges the oxygen reservoir and can delay desaturation after apnea, so severe hypoventilation or complete apnea may exist for minutes while SpO2 remains reassuring.",
       "citation": "",
       "topic": "Pulse oximetry",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -6518,7 +6518,7 @@
       "answer": [
         0
       ],
-      "explanation": "SpO2 measures arterial saturation, not oxygen delivery to or use by tissues.",
+      "explanation": "A normal SpO2 confirms that a high proportion of arterial hemoglobin is oxygenated, but tissue oxygen delivery also depends on hemoglobin concentration, cardiac output, and regional perfusion. Shock can therefore impair tissue oxygenation despite a normal saturation.",
       "citation": "",
       "topic": "Pulse oximetry",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -7036,7 +7036,7 @@
       "answer": [
         0
       ],
-      "explanation": "Both pressures rose together (compliance), and ETCO2 rose gradually from CO2 absorption.",
+      "explanation": "CO2 pneumoperitoneum has two simultaneous effects: cephalad diaphragmatic displacement reduces compliance, raising both peak and plateau pressures, while systemic absorption of insufflated CO2 progressively raises ETCO2 unless ventilation is increased.",
       "citation": "",
       "topic": "Respiratory monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -7160,7 +7160,7 @@
       "answer": [
         0
       ],
-      "explanation": "A sudden fall with the waveform present and hypotension points to reduced perfusion.",
+      "explanation": "With ventilator settings unchanged and a waveform still present, the combination of abrupt ETCO2 decline and profound hypotension indicates reduced pulmonary blood flow. A major fall in cardiac output or an embolic event should be considered rather than isolated hypoventilation.",
       "citation": "",
       "topic": "Respiratory monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
