@@ -6581,17 +6581,17 @@
       "id": "MISC-268",
       "set": 1,
       "type": "single",
-      "stem": "Why do hospitals track and report SSI rates?",
+      "stem": "Why do healthcare facilities perform surgical-site infection surveillance?",
       "options": [
-        "Surveillance and quality tracking are expected components of prevention",
-        "Only physician credentialing requires it",
-        "Only surgeons are responsible for tracking",
-        "Tracking replaces prevention efforts"
+        "To identify infection patterns, support prevention efforts, and evaluate quality improvement",
+        "Only to satisfy physician credentialing requirements",
+        "Because surveillance is solely the surgeon's responsibility",
+        "Because surveillance can replace infection-prevention practices"
       ],
       "answer": [
         0
       ],
-      "explanation": "Facilities are expected to track and report SSIs.",
+      "explanation": "SSI surveillance helps facilities identify trends, compare performance using defined methods, and evaluate prevention efforts. Specific reporting requirements depend on the procedure, payer, jurisdiction, and surveillance program.",
       "citation": "",
       "topic": "Safety and infection-control scenarios",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -6680,17 +6680,17 @@
       "id": "MISC-272",
       "set": 1,
       "type": "single",
-      "stem": "A patient's temperature is 95.8°F at the end of surgery. Which SSI-prevention target was not met?",
+      "stem": "A patient's core temperature is 95.8°F (35.4°C) near the end of surgery. Which SSI-prevention goal has not been met?",
       "options": [
-        "Normothermia above about 97°F",
-        "Glycemic control below 180 mg/dL",
-        "High inspired oxygen",
-        "Normovolemia"
+        "Maintenance of perioperative normothermia",
+        "Perioperative glucose management",
+        "Appropriate antimicrobial prophylaxis",
+        "Maintenance of euvolemia"
       ],
       "answer": [
         0
       ],
-      "explanation": "Normothermia target is typically >97 °F.",
+      "explanation": "A core temperature of 35.4°C represents perioperative hypothermia. Active warming and maintenance of normothermia are components of perioperative care and can reduce complications, including SSI risk in relevant populations.",
       "citation": "",
       "topic": "Safety and infection-control scenarios",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -6776,17 +6776,17 @@
       "id": "MISC-276",
       "set": 1,
       "type": "single",
-      "stem": "A CRNA intubates a patient with suspected influenza. Which PPE set best matches aerosol precautions?",
+      "stem": "A CRNA performs endotracheal intubation on a patient with suspected influenza. Which PPE approach is most appropriate when aerosol-generating-procedure precautions are indicated?",
       "options": [
-        "Gloves, gown, eye protection, and appropriate respiratory protection",
+        "Gloves, gown, eye protection, and a fit-tested respirator or other recommended respiratory protection",
         "Gloves only",
-        "Surgical mask and gloves only",
+        "A surgical mask and gloves only",
         "Gloves and face shield only"
       ],
       "answer": [
         0
       ],
-      "explanation": "Intubation is an AGP requiring full PPE.",
+      "explanation": "Endotracheal intubation can generate aerosols. When AGP precautions are indicated for the suspected pathogen, appropriate respiratory protection is used with eye protection, gown, and gloves according to current infection-control guidance.",
       "citation": "",
       "topic": "Safety and infection-control scenarios",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
