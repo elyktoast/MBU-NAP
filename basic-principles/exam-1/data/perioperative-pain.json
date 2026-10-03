@@ -6257,17 +6257,17 @@
       "id": "PAIN-253",
       "set": 1,
       "type": "single",
-      "stem": "A spine-fusion patient receives magnesium 50 mg/kg followed by 8 mg/kg/hr as part of multimodal analgesia. Which postoperative effect would support the intended purpose of the infusion?",
+      "stem": "Perioperative magnesium is added to a multimodal spine-surgery plan. Which outcome would support its intended role?",
       "options": [
-        "Lower pain scores with reduced opioid use",
+        "Reduced postoperative pain and/or opioid requirement",
         "Increased opioid requirement",
-        "Increased PONV",
-        "Predictably prolonged emergence"
+        "Predictable elimination of all postoperative pain",
+        "Neuromuscular blockade as the primary analgesic mechanism"
       ],
       "answer": [
         0
       ],
-      "explanation": "Magnesium is opioid sparing with lower pain scores.",
+      "explanation": "Magnesium has been studied as an opioid-sparing adjunct and may reduce postoperative pain or opioid consumption. Regimens vary, and dosing should account for renal function, hemodynamics, and potentiation of neuromuscular blockade.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6281,17 +6281,17 @@
       "id": "PAIN-254",
       "set": 1,
       "type": "single",
-      "stem": "Low-dose ketamine 0.2 mg/kg followed by 0.15 mg/kg/hr is added to a painful spine case. Which therapeutic goal best matches this subanesthetic regimen?",
+      "stem": "Subanesthetic ketamine is added to a painful spine case. Which therapeutic goal best matches this strategy?",
       "options": [
-        "Opioid-sparing analgesia and antihyperalgesia",
-        "Deep sedation sufficient for intubation",
+        "Opioid-sparing analgesia and attenuation of central sensitization/hyperalgesia",
         "Neuromuscular blockade",
-        "Primary antiemetic prophylaxis"
+        "Primary antiemetic prophylaxis",
+        "A mandatory dissociative anesthetic state"
       ],
       "answer": [
         0
       ],
-      "explanation": "Low-dose ketamine reduces opioid needs and hyperalgesia.",
+      "explanation": "Subanesthetic ketamine provides analgesic and antihyperalgesic effects through NMDA-receptor antagonism and can reduce opioid requirements. Effective bolus and infusion regimens vary; no single dose pair is universally required.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6521,17 +6521,17 @@
       "id": "PAIN-264",
       "set": 1,
       "type": "single",
-      "stem": "After midazolam and fentanyl sedation, a patient is drowsy and hypoventilating but still has a painful procedure site. Ventilation is supported. Which reversal sequence may improve breathing while initially preserving opioid analgesia?",
+      "stem": "After midazolam and fentanyl sedation, a patient is drowsy and hypoventilating. What is the immediate priority?",
       "options": [
-        "Reverse the benzodiazepine with flumazenil, then titrate naloxone only if needed",
-        "Give naloxone first in a dose sufficient to eliminate all opioid effect",
-        "Give dexmedetomidine to reverse midazolam",
-        "Give ketamine as a pharmacologic reversal agent"
+        "Support airway and ventilation, stop contributing sedatives, and then selectively titrate drug-specific reversal when indicated",
+        "Give flumazenil automatically before assessing the airway",
+        "Give enough naloxone to abolish all analgesia",
+        "Wait for oxygen desaturation before intervening"
       ],
       "answer": [
         0
       ],
-      "explanation": "Reversing the benzodiazepine first may restore ventilation while preserving opioid analgesia.",
+      "explanation": "Ventilatory support is the first priority. Flumazenil or naloxone may be appropriate depending on the suspected contribution and patient-specific risks, but neither should replace immediate airway/ventilatory management or be used by a rigid sequence.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6593,17 +6593,17 @@
       "id": "PAIN-267",
       "set": 1,
       "type": "single",
-      "stem": "During a dexmedetomidine infusion, HR is 38 and BP is 80/40. Besides stopping the infusion, which drugs are appropriate?",
+      "stem": "During a dexmedetomidine infusion, HR is 38/min and BP is 80/40 mm Hg. Besides reducing or stopping the infusion, which approach is most appropriate?",
       "options": [
-        "Glycopyrrolate or ephedrine",
-        "Esmolol",
-        "Nitroglycerin",
-        "Naloxone to reverse the sedative and bradycardic effects"
+        "Treat symptomatic bradycardia and hypotension according to mechanism and severity with appropriate chronotropic and/or vasopressor support",
+        "Glycopyrrolate is mandatory in every case",
+        "Naloxone is the specific dexmedetomidine antidote",
+        "Observe without treatment because dexmedetomidine bradycardia is always benign"
       ],
       "answer": [
         0
       ],
-      "explanation": "Ephedrine or glycopyrrolate treat dexmedetomidine bradycardia; naloxone has no effect on it.",
+      "explanation": "Severe bradycardia with hypotension requires prompt hemodynamic support. Depending on the clinical situation, anticholinergic therapy, ephedrine, epinephrine, fluids, or other vasopressor/chronotropic treatment may be appropriate; there is no single mandatory drug.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6833,23 +6833,22 @@
       "id": "PAIN-277",
       "set": 1,
       "type": "multi",
-      "stem": "Which adjuncts are recommended for opioid-tolerant patients? (Select 5)",
+      "stem": "Which FOUR strategies can be useful components of perioperative analgesia for an opioid-tolerant patient? (Select 4)",
       "options": [
-        "Higher-dose gabapentinoids",
-        "Ketamine",
-        "Magnesium",
-        "Regional anesthetic techniques",
-        "Opioid rotation",
-        "Neuromuscular blockers"
+        "Ketamine when appropriate",
+        "Regional anesthetic/analgesic techniques when feasible",
+        "Nonopioid multimodal analgesics selected for patient risk",
+        "Individualized continuation/replacement of baseline opioid with carefully titrated supplemental opioid",
+        "Mandatory high-dose gabapentinoids for every patient",
+        "Mixed agonist-antagonists to precipitate withdrawal"
       ],
       "answer": [
         0,
         1,
         2,
-        3,
-        4
+        3
       ],
-      "explanation": "Gabapentinoids, ketamine, magnesium, and regional techniques are recommended.",
+      "explanation": "Opioid-tolerant patients benefit from maintaining baseline opioid exposure, individualized supplemental opioid, and multimodal/regional strategies when appropriate. No single adjunct, including a high-dose gabapentinoid, is mandatory for every patient.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7103,17 +7102,17 @@
       "id": "PAIN-288",
       "set": 1,
       "type": "single",
-      "stem": "A PACU patient is restless and moaning, and also retching. What should you address first?",
+      "stem": "A PACU patient is restless, moaning, and actively retching. What is the best approach?",
       "options": [
-        "Treat the PONV before assuming pain",
-        "Increase the opioid dose for presumed pain",
-        "Give naloxone for the agitation",
-        "Treat pain first and nausea later"
+        "Assess and treat both nausea and possible pain rather than assuming either symptom is the sole cause of distress",
+        "Treat PONV first in every patient and defer pain assessment",
+        "Escalate opioid because moaning proves pain",
+        "Give naloxone because agitation indicates opioid toxicity"
       ],
       "answer": [
         0
       ],
-      "explanation": "PONV is a differential to pain; treating nausea may relieve the distress without more opioid.",
+      "explanation": "Postoperative distress may have multiple simultaneous causes. Active PONV deserves prompt treatment, but pain and other causes should be assessed concurrently rather than applying a universal sequence.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7271,17 +7270,17 @@
       "id": "PAIN-295",
       "set": 1,
       "type": "single",
-      "stem": "A man and a woman have the same laparoscopic procedure. How do their postoperative pain and opioid needs typically compare?",
+      "stem": "Two patients undergo the same laparoscopic procedure but report different pain intensity and opioid effects. Which principle should guide dosing?",
       "options": [
-        "The woman, typically",
-        "The man reports more pain and needs more opioid",
-        "They report equal pain",
-        "The woman needs less opioid"
+        "Individualize treatment to each patient's pain, function, prior opioid exposure, comorbidities, and response rather than using sex alone to predict dose",
+        "Women universally require more opioid than men",
+        "Men universally report more postoperative pain than women",
+        "Sex determines an exact opioid dose for a given procedure"
       ],
       "answer": [
         0
       ],
-      "explanation": "Women report more pain and need more opioid for similar relief.",
+      "explanation": "Group-level sex differences in pain and analgesic response have been reported, but substantial individual variation prevents sex alone from reliably determining an individual patient's opioid requirement.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
