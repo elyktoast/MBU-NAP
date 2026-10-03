@@ -3282,17 +3282,17 @@
       "id": "MISC-133",
       "set": 1,
       "type": "single",
-      "stem": "A department is benchmarking anesthesia hand-hygiene frequency against the APSF recommendation cited in the course. Which minimum frequency should it target during care?",
+      "stem": "A department wants to improve anesthesia hand hygiene. Which approach is most defensible?",
       "options": [
-        "At least 8 times per hour",
-        "At least once per case",
-        "Every 2 hours",
-        "Only after induction and emergence"
+        "Perform hand hygiene at indicated moments and after contamination risks rather than relying only on a fixed hourly quota",
+        "Clean hands only once per case",
+        "Clean hands only after induction and emergence",
+        "Avoid hand hygiene when gloves are used"
       ],
       "answer": [
         0
       ],
-      "explanation": "APSF recommends hand hygiene at least 8 times per hour.",
+      "explanation": "Hand hygiene should occur at clinically indicated moments, including before aseptic tasks and after patient, body-fluid, contaminated-surface, or dirty-zone contact. A fixed number per hour may be used as a local process metric but should not replace indication-based practice.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3335,9 +3335,9 @@
       "id": "MISC-135",
       "set": 1,
       "type": "single",
-      "stem": "A patient develops an infection 20 days after appendectomy. Does the timing meet the standard definition of an SSI?",
+      "stem": "A patient develops a superficial incisional infection 20 days after appendectomy. Does the timing fall within the usual 30-day surveillance window for this type of SSI?",
       "options": [
-        "Yes, because it occurred within 30 days",
+        "Yes",
         "No, only infections within 7 days count",
         "No, an implant is required",
         "Only if the patient is readmitted"
@@ -3345,7 +3345,7 @@
       "answer": [
         0
       ],
-      "explanation": "SSIs include infections within 30 days postop.",
+      "explanation": "Many superficial incisional SSI definitions use a 30-day postoperative surveillance period. Surveillance definitions vary by SSI category and procedure, so the procedure-specific criteria should be applied.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3359,17 +3359,17 @@
       "id": "MISC-136",
       "set": 1,
       "type": "single",
-      "stem": "A prosthetic-joint infection develops 70 days after total knee replacement. Does the timing meet the SSI surveillance window described in the lecture?",
+      "stem": "A deep or organ-space infection is suspected 70 days after total knee arthroplasty. How should SSI surveillance timing be determined?",
       "options": [
-        "Yes, because implants extend surveillance to 90 days",
-        "No, all SSI surveillance ends at 30 days",
-        "No, implant cases are excluded",
-        "Only superficial infection counts after 30 days"
+        "Use the procedure-specific surveillance period and infection category rather than assuming every implant automatically creates the same window",
+        "All SSI surveillance ends at 30 days",
+        "Every implant automatically creates a universal 90-day window for every SSI category",
+        "Implant cases are excluded from SSI surveillance"
       ],
       "answer": [
         0
       ],
-      "explanation": "SSIs involving prosthetic implants count up to 90 days.",
+      "explanation": "SSI surveillance periods are defined by the surveillance system, procedure, and infection category. Implant presence alone should not be taught as a universal rule that every postoperative infection is surveilled for exactly 90 days.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3383,17 +3383,17 @@
       "id": "MISC-137",
       "set": 1,
       "type": "single",
-      "stem": "A preventable surgical-site infection follows hip replacement and is classified under the cited CMS quality framework. Which financial implication is emphasized?",
+      "stem": "A hospital tracks selected postoperative infections because they can affect quality reporting and payment. Which statement is most accurate?",
       "options": [
-        "The event may be treated as preventable and not reimbursable",
-        "It is considered unavoidable and fully reimbursed",
-        "Documentation alone guarantees reimbursement",
+        "Payment consequences depend on the specific CMS program, procedure, condition, and reporting rules",
+        "CMS refuses payment for every surgical-site infection",
+        "Every postoperative infection is fully reimbursed regardless of quality programs",
         "Financial responsibility automatically belongs only to the surgeon"
       ],
       "answer": [
         0
       ],
-      "explanation": "CMS classifies SSIs as preventable and does not reimburse them.",
+      "explanation": "CMS quality and payment programs can create financial consequences for selected hospital-acquired conditions and quality measures, but it is inaccurate to state that CMS simply does not reimburse every SSI.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3455,17 +3455,17 @@
       "id": "MISC-140",
       "set": 1,
       "type": "single",
-      "stem": "A patient's temperature is 96.2°F at the end of colectomy. Which normothermia goal supports SSI prevention?",
+      "stem": "A colectomy patient reaches the end of surgery with a core temperature of 35.7°C (96.3°F). Which SSI-prevention principle is most appropriate?",
       "options": [
-        "Above 97°F",
-        "Above 95°F",
-        "Above 99°F",
-        "Below 97°F"
+        "Actively maintain perioperative normothermia, generally targeting at least about 36°C unless patient-specific factors dictate otherwise",
+        "Accept mild hypothermia because it reduces SSI risk",
+        "Target a temperature below 35°C",
+        "Temperature management has no relationship to perioperative outcomes"
       ],
       "answer": [
         0
       ],
-      "explanation": "Maintaining normothermia, typically above 97 °F, reduces surgical site infection.",
+      "explanation": "Perioperative hypothermia is associated with adverse outcomes, including increased SSI risk in some settings. Active warming is commonly used to maintain core temperature around or above 36°C rather than relying on an arbitrary Fahrenheit cutoff.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3503,17 +3503,17 @@
       "id": "MISC-142",
       "set": 1,
       "type": "single",
-      "stem": "In selected patients, what inspired-oxygen fraction has some evidence supported as part of SSI-reduction bundles?",
+      "stem": "Which statement best reflects the role of supplemental inspired oxygen in SSI prevention?",
       "options": [
-        "FiO2 above 0.8",
-        "FiO2 below 0.3",
-        "Exactly 0.5",
-        "Room air"
+        "Adequate oxygenation is important, but a high FiO2 should be individualized rather than treated as a universal SSI-prevention requirement",
+        "Every surgical patient should receive FiO2 above 0.8 solely to prevent SSI",
+        "FiO2 below 0.3 is required to prevent SSI",
+        "Inspired oxygen concentration has no physiologic relevance"
       ],
       "answer": [
         0
       ],
-      "explanation": "Some evidence supports FiO2 above 0.8 to lower SSI risk.",
+      "explanation": "Some guidelines and trials have evaluated perioperative FiO2 around 0.8 for selected intubated patients, but evidence and recommendations are not uniform. Oxygen should meet patient needs while avoiding a rigid universal high-FiO2 rule.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3605,20 +3605,22 @@
       "id": "MISC-146",
       "set": 1,
       "type": "multi",
-      "stem": "Which two PPE components are explicitly appropriate for aerosol-generating procedures? (Select 2)",
+      "stem": "During an aerosol-generating airway procedure on a patient requiring airborne respiratory precautions, which FOUR PPE components are appropriate? (Select 4)",
       "options": [
         "Gloves",
         "Long-sleeved gown",
-        "Cloth mask",
+        "Eye protection",
+        "Fit-tested N95 or equivalent/higher-level respirator",
         "Cloth mask alone",
-        "Surgical cap and shoe covers only",
-        "Shoe covers only"
+        "Shoe covers as the only additional protection"
       ],
       "answer": [
         0,
-        1
+        1,
+        2,
+        3
       ],
-      "explanation": "PPE for AGPs includes gloves, long-sleeved gowns, eye protection, and a surgical or N95 mask.",
+      "explanation": "For aerosol-generating procedures when airborne respiratory precautions are indicated, appropriate PPE includes gloves, gown, eye protection, and a fit-tested N95 or equivalent/higher-level respirator. A standard surgical or cloth mask should not be presented as equivalent respiratory protection for that scenario.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
