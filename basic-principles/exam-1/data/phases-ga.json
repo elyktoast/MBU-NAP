@@ -5232,7 +5232,7 @@
       "answer": [
         0
       ],
-      "explanation": "A TOF ratio above 0.9 indicates adequate recovery; 0.65 and two twitches indicate residual block.",
+      "explanation": "A quantitative TOF ratio of at least 0.9 at the adductor pollicis indicates adequate neuromuscular recovery; 0.65 and a count of only two twitches indicate residual block.",
       "citation": "",
       "topic": "Neuromuscular blockade, fluids, and time-dependent drugs",
       "sourceTitle": "Phases of General Anesthesia",
@@ -5471,11 +5471,11 @@
       "id": "PHA-219",
       "set": 1,
       "type": "multi",
-      "stem": "Diffuse oozing develops during massive transfusion. Which THREE tests or trends help guide product replacement? (Select 3)",
+      "stem": "Diffuse oozing develops during massive transfusion. Which THREE laboratory approaches help guide ongoing hemostatic and blood-component resuscitation? (Select 3)",
       "options": [
-        "Conventional coagulation tests",
+        "Conventional coagulation testing including fibrinogen when available",
         "Viscoelastic testing such as TEG or ROTEM",
-        "Trending hemoglobin and hematocrit",
+        "Serial hemoglobin/hematocrit as part of overall red-cell loss assessment",
         "BNP",
         "TSH",
         "A1C"
@@ -5485,7 +5485,7 @@
         1,
         2
       ],
-      "explanation": "Coagulation is assessed with conventional and viscoelastic testing, and Hgb/Hct are trended with significant loss.",
+      "explanation": "Conventional coagulation tests and fibrinogen, or viscoelastic testing when available, can guide hemostatic therapy. Serial hemoglobin/hematocrit contributes to assessment of red-cell loss but must be interpreted with bleeding rate, perfusion, and dilution.",
       "citation": "",
       "topic": "Neuromuscular blockade, fluids, and time-dependent drugs",
       "sourceTitle": "Phases of General Anesthesia",
@@ -5914,7 +5914,7 @@
     {
       "id": "PHA-237",
       "set": 1,
-      "type": "single",
+      "type": "multi",
       "stem": "A high-PONV-risk patient is approaching emergence. Which TWO strategies are most appropriate? (Select 2)",
       "options": [
         "Use multimodal antiemetic prophylaxis",
@@ -5925,7 +5925,8 @@
         "Maintain deep neuromuscular blockade through extubation"
       ],
       "answer": [
-        0
+        0,
+        1
       ],
       "explanation": "Higher-risk patients benefit from multimodal PONV prophylaxis and reduction of avoidable emetogenic exposures, including excessive perioperative opioids and volatile anesthetic when clinically feasible.",
       "citation": "",
@@ -5988,7 +5989,7 @@
     {
       "id": "PHA-240",
       "set": 1,
-      "type": "multi",
+      "type": "single",
       "stem": "The volatile anesthetic is turned off early while quantitative TOF still shows profound blockade and closure continues. Why is this unsafe?",
       "options": [
         "Hypnosis may dissipate while paralysis masks movement, creating an awareness window",
@@ -5997,10 +5998,9 @@
         "Early anesthetic discontinuation guarantees faster safe extubation"
       ],
       "answer": [
-        0,
-        1
+        0
       ],
-      "explanation": "Profound neuromuscular blockade can hide movement while hypnotic depth falls, so anesthetic reduction must be coordinated with surgical timing and recovery from paralysis.",
+      "explanation": "Profound neuromuscular blockade can hide movement while hypnotic depth falls, so anesthetic reduction must be coordinated with surgical timing and maintenance of adequate hypnosis.",
       "citation": "",
       "topic": "Emergence",
       "sourceTitle": "Phases of General Anesthesia",
@@ -6061,7 +6061,7 @@
     {
       "id": "PHA-243",
       "set": 1,
-      "type": "single",
+      "type": "multi",
       "stem": "Which THREE respiratory findings support extubation readiness? (Select 3)",
       "options": [
         "Adequate spontaneous tidal volumes/minute ventilation",
@@ -6072,7 +6072,9 @@
         "Dependence on controlled ventilation"
       ],
       "answer": [
-        0
+        0,
+        1,
+        2
       ],
       "explanation": "Extubation readiness includes adequate spontaneous ventilation, acceptable oxygenation, and the ability to sustain ventilation without significant apnea or obstruction.",
       "citation": "",
@@ -6087,7 +6089,7 @@
     {
       "id": "PHA-244",
       "set": 1,
-      "type": "single",
+      "type": "multi",
       "stem": "Which THREE neurologic or airway-protective findings support awake extubation readiness? (Select 3)",
       "options": [
         "Purposeful response to command when appropriate",
@@ -6098,7 +6100,9 @@
         "Inability to handle secretions"
       ],
       "answer": [
-        0
+        0,
+        1,
+        2
       ],
       "explanation": "Awake extubation readiness includes purposeful responsiveness when appropriate, airway-protective reflexes/handling of secretions, and the ability to maintain airway patency.",
       "citation": "",
