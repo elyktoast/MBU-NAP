@@ -1,6 +1,6 @@
 /* Provider-neutral question generation framework. Disabled until a generation provider is explicitly chosen. */
 (()=>{'use strict';
-const STORE='mbu_generated_questions_v1',SCHEMA=1,providers=new Map();
+const ctx=window.MBU_CONTEXT||{},courseId=String(ctx.courseId||''),examId=String(ctx.examId||''),STORE=courseId==='equipment'&&examId==='exam-1'?'mbu_generated_questions_v1':`mbu_generated_questions_${courseId}_${examId}_v1`,SCHEMA=1,providers=new Map();
 const now=()=>Date.now();
 const safeJSON=(raw,fallback)=>{try{return JSON.parse(raw)??fallback}catch{return fallback}};
 const id=()=>{try{return crypto.randomUUID()}catch{return 'gen-'+now().toString(36)+'-'+Math.random().toString(36).slice(2)}};
