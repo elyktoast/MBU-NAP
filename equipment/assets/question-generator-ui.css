@@ -20,3 +20,14 @@
 #generated-question-workbench .gen-bank{margin:18px 0 0;color:#475569;font-size:.9rem}
 #gen-open{margin:8px 0 14px}
 @media(max-width:700px){#generated-question-workbench{width:calc(100vw - 20px);max-height:calc(100vh - 20px)}#generated-question-workbench .gen-shell{max-height:calc(100vh - 20px)}#generated-question-workbench .gen-head{padding:18px 18px 14px}#generated-question-workbench .gen-body{padding:16px 18px 20px}#generated-question-workbench .gen-grid{grid-template-columns:1fr}#generated-question-workbench textarea{min-height:180px}#generated-question-workbench .gen-actions{align-items:flex-start;flex-direction:column}}
+
+#generated-question-workbench .gen-upload{display:flex;align-items:center;gap:12px;padding:14px;border:1px dashed #9fb3c8;border-radius:12px;background:#fff;margin-bottom:8px}
+#generated-question-workbench .gen-upload>div{display:grid;gap:3px;flex:1}#generated-question-workbench .gen-upload span{color:#64748b;font-size:.78rem}
+#generated-question-workbench .gen-file-btn,#generated-question-workbench #gen-extract{display:inline-flex!important;align-items:center;justify-content:center;gap:6px;border:1px solid #b8c5d4;border-radius:9px;background:#fff;color:#173b67;padding:9px 12px;font-weight:800;cursor:pointer;white-space:nowrap}
+#generated-question-workbench .gen-file-btn input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+#generated-question-workbench #gen-extract{background:#173b67;color:#fff;border-color:#173b67}#generated-question-workbench #gen-extract:disabled{opacity:.55;cursor:wait}
+#generated-question-workbench .gen-file-status{min-height:20px;color:#475569;font-size:.82rem;line-height:1.4}
+#generated-question-workbench .gen-divider{display:flex;align-items:center;gap:10px;margin:10px 0 14px;color:#94a3b8;font-size:.75rem;text-transform:uppercase;font-weight:800;letter-spacing:.04em}
+#generated-question-workbench .gen-divider:before,#generated-question-workbench .gen-divider:after{content:"";height:1px;background:#dbe3ec;flex:1}
+#generated-question-workbench .gen-material-meta{display:flex;justify-content:space-between;gap:16px;margin-top:6px;color:#64748b;font-size:.75rem;line-height:1.35}
+@media(max-width:700px){#generated-question-workbench .gen-upload{align-items:stretch;flex-direction:column}#generated-question-workbench .gen-material-meta{flex-direction:column;gap:4px}}
