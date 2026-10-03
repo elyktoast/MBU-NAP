@@ -4597,17 +4597,17 @@
       "id": "PHA-184",
       "set": 1,
       "type": "single",
-      "stem": "A stable sevoflurane anesthetic has reached equilibrium. Which fresh-gas flow remains within the lecture's low-flow quality target?",
+      "stem": "During a stable low-flow sevoflurane anesthetic, the inspired concentration is increased but the end-tidal concentration changes slowly. Which principle explains the delay?",
       "options": [
-        "2 L/min or less",
-        "Exactly 1 L/min or less only",
-        "0.5 L/min or less only",
-        "4 L/min or less"
+        "Low fresh-gas flow slows change in circuit anesthetic concentration",
+        "Sevoflurane cannot be used with low fresh-gas flow",
+        "End-tidal concentration is independent of delivered concentration",
+        "Low flow eliminates uptake into blood"
       ],
       "answer": [
         0
       ],
-      "explanation": "Sevoflurane is allowed up to 2 L/min under the low-flow measure.",
+      "explanation": "At low fresh-gas flow, the circuit is less rapidly refreshed, so changes in vaporizer setting take longer to alter inspired and alveolar concentration. Temporary flow increases can speed wash-in or wash-out when a rapid change is needed.",
       "citation": "",
       "topic": "Volatiles, low flow, TIVA, depth, opioids, ERAS",
       "sourceTitle": "Phases of General Anesthesia",
@@ -8805,17 +8805,17 @@
       "id": "PHA-352",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, sustained capnography confirms tracheal ventilation, but breath sounds are absent on the left and peak airway pressure is increased. Which diagnosis is most likely?",
+      "stem": "After intubation, capnography is sustained but peak pressure rises and left breath sounds are absent. The tube is withdrawn 2 cm and bilateral breath sounds return. What is the best interpretation?",
       "options": [
-        "Right-mainstem intubation",
-        "Esophageal intubation",
-        "Circuit disconnection",
-        "Malignant hyperthermia"
+        "The original tube depth produced right-mainstem intubation",
+        "The patient has fixed left-sided bronchospasm",
+        "The capnogram proves the tube was never too deep",
+        "The finding indicates esophageal intubation"
       ],
       "answer": [
         0
       ],
-      "explanation": "Present ETCO2 with absent left sounds suggests right mainstem intubation.",
+      "explanation": "Restoration of bilateral ventilation after withdrawing an overly deep tube strongly supports prior right-mainstem intubation. The corrected tube should be secured and position reconfirmed.",
       "citation": "",
       "topic": "Maintenance cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -10129,17 +10129,17 @@
       "id": "PHA-407",
       "set": 1,
       "type": "single",
-      "stem": "At the adductor pollicis, quantitative TOFR is 0.85 after reversal. The patient otherwise appears strong. What should occur before extubation?",
+      "stem": "Quantitative adductor-pollicis monitoring shows TOFR 0.85 after reversal. Which risk remains even if the patient appears clinically strong?",
       "options": [
-        "Continue recovery/reversal management until quantitative TOFR is at least 0.9",
-        "Extubate because clinical strength overrides quantitative monitoring",
-        "Administer more neuromuscular blocker",
-        "Remove the monitor and extubate based on four visible twitches"
+        "Residual weakness can still impair upper-airway function and ventilatory reserve",
+        "A TOFR above 0.8 guarantees normal pharyngeal function",
+        "The value proves excessive reversal dosing",
+        "The patient must still be fully paralyzed"
       ],
       "answer": [
         0
       ],
-      "explanation": "A quantitative TOF ratio of at least 0.9 at the adductor pollicis should be confirmed before extubation after nondepolarizing neuromuscular blockade.",
+      "explanation": "Clinical strength tests are insensitive to residual neuromuscular blockade. A TOFR of at least 0.9 at the adductor pollicis is generally sought because lower ratios can leave clinically important pharyngeal and respiratory muscle dysfunction.",
       "citation": "",
       "topic": "Emergence cases",
       "sourceTitle": "Phases of General Anesthesia",
