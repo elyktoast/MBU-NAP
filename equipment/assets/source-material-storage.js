@@ -1,7 +1,7 @@
 (()=>{'use strict';
 const cfg=window.MBU_SUPABASE_CONFIG||{},SESSION='mbu_supabase_session_v1',BUCKET='source-materials';
 function session(){try{return JSON.parse(localStorage.getItem(SESSION)||'null')||{}}catch{return{}}}
-function userId(jwt){try{const p=jwt.split('.')[1].replace(/-/g,'+').replace(/_/g,'/');return JSON.parse(atob(p.padEnd(Math.ceil(p.length/4)*4,'='))).sub||''}catch{return''}}
+function userId(jwt){try{const p=jwt.split('.')[1].replace(/-/g,'+').replace(/_/g,'/');return JSON.parse(atob(p.padEnd(Math.ceil(p.length/4)*4,'='))).sub||''}catch{return session().user?.id||''}}
 function safeName(name){return String(name||'material').replace(/[^a-zA-Z0-9._-]+/g,'_').replace(/^_+|_+$/g,'').slice(-180)||'material'}
 async function save(file){
  if(!file)throw Error('Choose a file first.');
