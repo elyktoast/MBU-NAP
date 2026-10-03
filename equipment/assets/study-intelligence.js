@@ -1,6 +1,6 @@
 /* Shared study intelligence: attempts, spaced review, mastery, activity, reports, analytics, and adaptive priority. */
 (()=>{'use strict';
-const ctx=window.MBU_CONTEXT||{},courseId=String(ctx.courseId||'equipment'),examId=String(ctx.examId||'exam-1'),STORE=courseId==='equipment'&&examId==='exam-1'?'mbu_study_intelligence_v1':`mbu_study_intelligence_${courseId}_${examId}_v1`,SCHEMA=1,MAX_ACTIVITY=1200,DAY=86400000;
+const ctx=window.MBU_CONTEXT||{},courseId=String(ctx.courseId||''),examId=String(ctx.examId||''),STORE=courseId==='equipment'&&examId==='exam-1'?'mbu_study_intelligence_v1':`mbu_study_intelligence_${courseId}_${examId}_v1`,SCHEMA=1,MAX_ACTIVITY=1200,DAY=86400000;
 let cache=null,lastSerialized='';
 const plain=v=>!!v&&typeof v==='object'&&!Array.isArray(v);
 const safeJSON=(raw,fallback)=>{try{return JSON.parse(raw)??fallback}catch{return fallback}};
