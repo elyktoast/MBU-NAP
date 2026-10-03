@@ -81,7 +81,17 @@ test.describe('multi-course foundation', () => {
     const homeNav = page.locator('.mbu-global-nav');
     await expect(homeNav).toBeVisible();
     await expect(homeNav.getByRole('link', { name: 'SRNA Study Tool', exact: true })).toHaveAttribute('href', /\/SRNA-STUDY-TOOL\/$|\/$/);
-    await expect(homeNav.getByRole('link', { name: 'Equipment', exact: true })).toHaveAttribute('href', /\/equipment\/$/);
+    await expect(homeNav.getByRole('link', { name: 'Equipment', exact: true })).toHaveCount(0);
+    await expect(homeNav.getByRole('link', { name: 'Study Studio', exact: true })).toHaveCount(0);
+    await expect(homeNav.getByRole('link', { name: /Adaptive/, exact: false })).toHaveCount(0);
+
+    await page.goto('/equipment/exam-1/');
+    await waitForPageReady(page);
+    const equipmentNav = page.locator('.mbu-global-nav');
+    await expect(equipmentNav).toBeVisible();
+    await expect(equipmentNav.getByRole('link', { name: 'Equipment', exact: true })).toHaveAttribute('href', /\/equipment\/$/);
+    await expect(equipmentNav.getByRole('link', { name: 'Study Studio', exact: true })).toHaveAttribute('href', /\/equipment\/exam-1\/studio\.html$/);
+    await expect(equipmentNav.getByRole('link', { name: /Adaptive/, exact: false })).toHaveAttribute('href', /\/equipment\/exam-1\/studio\.html\?mode=adaptive$/);
 
     await page.goto('/basic-principles/exam-1/');
     await waitForPageReady(page);
