@@ -2462,6 +2462,15 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#srna-legal-gate')).toHaveCount(0);
   });
 
+  test('Signed-out users can remain on public home and legal pages', async ({ page }) => {
+    await page.addInitScript(() => localStorage.removeItem('mbu_supabase_session_v1'));
+    for(const path of ['/', '/privacy.html', '/terms.html']){
+      await page.goto(path);
+      await page.evaluate(() => MBUPageReady);
+      expect(new URL(page.url()).pathname).toBe(path);
+    }
+  });
+
   test('Account panel separates sign in and account creation cleanly', async ({ page }) => {
     await page.addInitScript(() => {
       sessionStorage.setItem('mbu_skip_seed_session','1');
