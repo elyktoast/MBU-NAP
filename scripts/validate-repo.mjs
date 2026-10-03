@@ -507,6 +507,12 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(studio.includes("syncCanonical('combined'"))fail('Studio Phase 3 still applies the index-based sync path to Combined ID-keyed state');
 }
 
+// Shared mobile foundation must remain global so every bootstrapped page gets the same small-screen safety contract.
+{
+ const mobile=read('equipment/assets/app-core.css');
+ for(const token of ['overflow-x:hidden','env(safe-area-inset-left)','height:100dvh','#generated-question-workbench','.gen-library-row'])if(!mobile.includes(token))fail('Shared mobile layout contract missing: '+token);
+}
+
 // Build assets are single-execution dependencies. Concurrent requests must share the same load promise.
 {
  const boot=read('equipment/assets/build-bootstrap.js');
