@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { exam, clearAppState, seedSignedIn, waitForAuth, collectPageErrors, waitForStudio, storageJSON } = require('./helpers');
+const { exam, clearAppState, useGuestState, seedSignedIn, waitForAuth, collectPageErrors, waitForStudio, storageJSON } = require('./helpers');
 
 async function clickIndexes(locator, indexes) {
   for (const index of indexes) {
@@ -1571,6 +1571,7 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Header cloud status opens account controls without any secret browser credential', async ({ page }) => {
+    await useGuestState(page);
     await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
     await expect(page.locator('.mbu-global-nav__cloud')).toContainText('Account');
     await page.locator('.mbu-global-nav__cloud').click();
@@ -1597,6 +1598,7 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Supabase adapter signs in and writes progress through server-revision guard', async ({ page }) => {
+    await useGuestState(page);
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co',writes=[];
     await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'test-access',refresh_token:'test-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000001',email:'test@example.com'}})}));
     await page.route(cloud+'/rest/v1/mbu_sync_state?*',route=>route.fulfill({status:200,contentType:'application/json',body:'[]'}));
@@ -1662,6 +1664,7 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Switching accounts clears the previous account local study stores before cloud sync', async ({ page }) => {
+    await useGuestState(page);
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co',newId='00000000-0000-0000-0000-000000000002';
     await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'switch-access',refresh_token:'switch-refresh',expires_in:3600,user:{id:newId,email:'second@example.com'}})}));
     await page.route(cloud+'/rest/v1/rpc/snar_has_current_legal_acceptance',route=>route.fulfill({status:200,contentType:'application/json',body:'true'}));
@@ -1697,6 +1700,7 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Account creation requires adult Terms and Privacy acknowledgement', async ({ page }) => {
+    await useGuestState(page);
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let signupCalls=0;
     let signupBody=null;await page.route(cloud+'/auth/v1/signup?*',route=>{signupCalls++;signupBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({user:{id:'new-user',email:'new@example.com'},session:null})})});
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
@@ -1753,6 +1757,7 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Suspended accounts keep privacy and deletion controls but cannot sync or use Adaptive Mode', async ({ page }) => {
+    await useGuestState(page);
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
     await page.route(cloud+'/auth/v1/token?grant_type=password',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'suspended-access',refresh_token:'suspended-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000009',email:'suspended@example.com'}})}));
     await page.route(cloud+'/rest/v1/rpc/snar_has_current_legal_acceptance',route=>route.fulfill({status:200,contentType:'application/json',body:'true'}));
@@ -1938,6 +1943,7 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Cloud account reports the five-minute automatic sync schedule', async ({ page }) => {
+    await useGuestState(page);
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
     expect(await page.evaluate(() => MBUSupabase.status().autoSyncIntervalMs)).toBe(300000);
     await page.locator('.mbu-global-nav__cloud').click();
@@ -1995,6 +2001,7 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Cloud account can request password recovery and resend confirmation', async ({ page }) => {
+    await useGuestState(page);
     const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';let recoverBody=null,resendBody=null;
     await page.route(cloud+'/auth/v1/recover?*',route=>{recoverBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:'{}'})});
     await page.route(cloud+'/auth/v1/resend?*',route=>{resendBody=JSON.parse(route.request().postData()||'{}');return route.fulfill({status:200,contentType:'application/json',body:'{}'})});
@@ -2464,14 +2471,16 @@ test.describe('canonical quiz regression', () => {
 
   test('Signed-out users can remain on public home and legal pages', async ({ page }) => {
     await page.addInitScript(() => localStorage.removeItem('mbu_supabase_session_v1'));
+    await useGuestState(page);
     for(const path of ['/', '/privacy.html', '/terms.html']){
       await page.goto(path);
-      await page.evaluate(() => MBUPageReady);
+      if(path==='/')await page.evaluate(() => MBUPageReady);
       expect(new URL(page.url()).pathname).toBe(path);
     }
   });
 
   test('Account panel separates sign in and account creation cleanly', async ({ page }) => {
+    await useGuestState(page);
     await page.addInitScript(() => {
       sessionStorage.setItem('mbu_skip_seed_session','1');
       localStorage.removeItem('mbu_supabase_session_v1');
@@ -2490,6 +2499,7 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Guest users must sign in before entering a course', async ({ page }) => {
+    await useGuestState(page);
     await page.addInitScript(() => {
       sessionStorage.setItem('mbu_skip_seed_session','1');
       localStorage.removeItem('mbu_supabase_session_v1');
