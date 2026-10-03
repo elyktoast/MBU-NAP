@@ -10681,17 +10681,17 @@
       "id": "PHA-430",
       "set": 1,
       "type": "single",
-      "stem": "Which statement best demonstrates closed-loop communication immediately after extubation?",
+      "stem": "Immediately after extubation, the surgeon asks whether the patient can leave the OR while the CRNA is still managing intermittent airway obstruction. Which response best demonstrates assertive CRM communication?",
       "options": [
-        "\"ETT out, mask on, airway patent.\"",
-        "\"We're done here.\"",
-        "\"Tube's out, let's go.\"",
-        "\"I think it went fine; mask is nearby if needed.\""
+        "Say nothing until the issue resolves",
+        "State clearly that transfer is unsafe until airway patency and ventilation are stable",
+        "Agree to transfer because the procedure is finished",
+        "Ask the receiving unit to decide after arrival"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "Closed-loop communication confirms each step.",
+      "explanation": "Assertive CRM communication states the safety concern and the condition required before proceeding. Transfer should wait until the immediate airway problem is controlled and appropriate transport criteria are met.",
       "citation": "",
       "topic": "Emergence cases",
       "sourceTitle": "Phases of General Anesthesia",
