@@ -517,6 +517,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 {
  const core=read('equipment/assets/studio-page.js'),runtime=read('equipment/assets/studio-runtime.js'),loader=read('equipment/assets/studio-loader.js');
  for(const token of ['function loadBanks()','studioCorePromise=loadBanks()'])if(!core.includes(token))fail('Studio core initialization contract missing: '+token);
+ for(const token of ['STUDIO_LOAD_GENERATION=0','const generation=++STUDIO_LOAD_GENERATION','generation!==STUDIO_LOAD_GENERATION','hydrateStudioSource(source,generation)'])if(!core.includes(token))fail('Studio hydration generation contract missing: '+token);
  for(const token of ['function buildTopics()','function renderHome()','function startMode(','function showQ()','function grade()','function nextQ()'])if(!runtime.includes(token))fail('Studio runtime boundary missing: '+token);
  if(core.includes('function showQ()')||core.includes('function renderHome()'))fail('Studio UI/session behavior leaked back into the core module');
  const coreLoad=loader.indexOf("runtime.loadScript('studio-page.js')"),runtimeLoad=loader.indexOf("runtime.loadScript('studio-runtime.js')"),start=loader.indexOf('window.MBUStudioCoreReady()');
