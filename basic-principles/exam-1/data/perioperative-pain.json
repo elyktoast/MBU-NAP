@@ -3045,17 +3045,17 @@
       "id": "PAIN-123",
       "set": 1,
       "type": "single",
-      "stem": "In preop, a patient received 50 mcg fentanyl for a painful hip fracture. She is calm, alert, and can explain the risks back to you. Can she consent?",
+      "stem": "In preop, a patient received fentanyl for a painful hip fracture. She is awake, can explain the proposed procedure, risks, alternatives, and consequences of her choice, and communicates a consistent decision. What determines whether she can provide valid consent?",
       "options": [
-        "Yes, analgesics do not prevent consent unless she is oversedated",
-        "No, any opioid invalidates consent",
-        "No, consent must be signed before any premedication is given",
-        "No, opioids impair decision-making at any dose given"
+        "Her decision-making capacity at the time of consent, not opioid exposure by itself",
+        "Any opioid dose automatically invalidates consent",
+        "Consent is valid only if signed before all analgesia",
+        "A normal respiratory rate alone proves capacity"
       ],
       "answer": [
         0
       ],
-      "explanation": "Analgesics do not prevent consent unless they cause oversedation that impairs understanding.",
+      "explanation": "Medication exposure does not automatically eliminate decision-making capacity. Valid consent depends on the patient's ability to understand relevant information, appreciate consequences, reason about options, and communicate a choice; sedation, delirium, or other impairment may compromise that capacity.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3245,17 +3245,17 @@
       "id": "PAIN-131",
       "set": 1,
       "type": "single",
-      "stem": "During a laparoscopic hysterectomy, you plan ketorolac. When is the BEST time to give it?",
+      "stem": "Ketorolac is being considered during laparoscopic hysterectomy. What should determine its perioperative timing?",
       "options": [
-        "At the end of the case, after discussing it with the surgeon",
-        "At induction to prevent incisional pain",
-        "At incision before bleeding starts",
-        "In PACU without involving the surgeon in the decision"
+        "The desired analgesic timing balanced against renal function, bleeding risk, surgical hemostasis, and the overall multimodal plan",
+        "A universal rule that it must be given only at skin closure",
+        "A universal rule that it must be given before incision",
+        "The PACU pain score alone"
       ],
       "answer": [
         0
       ],
-      "explanation": "NSAIDs are typically given near the end after confirming with the surgeon that bleeding risk is acceptable.",
+      "explanation": "There is no universal requirement to delay ketorolac until the end of every operation. Timing should be individualized to analgesic goals, renal function, bleeding risk, procedure-specific considerations, and surgical hemostasis.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3447,17 +3447,17 @@
       "id": "PAIN-139",
       "set": 1,
       "type": "single",
-      "stem": "You plan a magnesium infusion as an opioid-sparing adjunct. Which regimen is correct?",
+      "stem": "Magnesium is considered as an opioid-sparing perioperative adjunct. Which principle is most appropriate?",
       "options": [
-        "50 mg/kg over 30 minutes, then 8 mg/kg/hr",
-        "5 mg/kg over 30 minutes, then 1 mg/kg/hr",
-        "100 mg/kg bolus, then 20 mg/kg/hr",
-        "2 mg/kg bolus, then 0.5 mg/kg/hr"
+        "Use a protocol- and patient-specific regimen while considering renal function, neuromuscular effects, and hemodynamics",
+        "50 mg/kg followed by 8 mg/kg/hr is mandatory for every patient",
+        "Magnesium has no interaction with neuromuscular blockade",
+        "Renal function does not affect magnesium safety"
       ],
       "answer": [
         0
       ],
-      "explanation": "Magnesium: 50 mg/kg over 30 minutes, then 8 mg/kg/hr.",
+      "explanation": "Perioperative magnesium regimens vary across studies and protocols. Dosing should be individualized, particularly because magnesium is renally cleared and can potentiate neuromuscular blockade and contribute to hypotension or other toxicity at excessive concentrations.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3471,17 +3471,17 @@
       "id": "PAIN-140",
       "set": 1,
       "type": "single",
-      "stem": "You plan low-dose ketamine as an antihyperalgesic adjunct for a spine fusion. Which regimen is correct?",
+      "stem": "Low-dose ketamine is planned as an opioid-sparing/antihyperalgesic adjunct for spine surgery. Which dosing principle is most appropriate?",
       "options": [
-        "0.2 mg/kg bolus, then 0.15 mg/kg/hr",
-        "1 mg/kg bolus, then 1 mg/kg/hr",
-        "0.05 mg/kg bolus, then 0.01 mg/kg/hr",
-        "2 mg/kg bolus, then 0.5 mg/kg/hr"
+        "Use a subanesthetic, protocol-based regimen titrated to patient factors and clinical effect rather than one universal bolus/infusion pair",
+        "A 1 mg/kg bolus followed by 1 mg/kg/hr is required for every patient",
+        "Ketamine must be dosed identically regardless of age or comorbidity",
+        "Only dissociative doses provide perioperative analgesic benefit"
       ],
       "answer": [
         0
       ],
-      "explanation": "Low-dose ketamine is 0.2 mg/kg bolus, then 0.15 mg/kg/hr.",
+      "explanation": "Subanesthetic ketamine can reduce opioid requirements and help limit central sensitization, but published bolus and infusion regimens vary. Dose and duration should follow the clinical context and local protocol rather than a single universal formula.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3615,7 +3615,7 @@
       "id": "PAIN-146",
       "set": 1,
       "type": "single",
-      "stem": "Refer to the CSHT figure. One drug's CSHT stays flat at about 4 minutes no matter how long it runs. Which drug behaves this way?",
+      "stem": "Which opioid has a very short context-sensitive half-time that remains relatively stable even after prolonged infusion because of rapid nonspecific esterase metabolism?",
       "options": [
         "Remifentanil, because esterases metabolize it",
         "Fentanyl, because it is lipophilic",
@@ -3625,16 +3625,11 @@
       "answer": [
         0
       ],
-      "explanation": "Remifentanil is metabolized by plasma and tissue esterases, so its CSHT stays short regardless of duration.",
+      "explanation": "Remifentanil is rapidly hydrolyzed by nonspecific blood and tissue esterases, producing a very short context-sensitive half-time with little increase as infusion duration lengthens.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
-      "image": {
-        "kind": "direct",
-        "url": "figures/perioperative-pain/fig-47.svg",
-        "id": 47,
-        "title": "Figure 47"
-      },
+      "image": null,
       "sourceMeta": {
         "sourcePackage": "Perioperative_Pain_Management",
         "originalFigure": 47
@@ -3731,7 +3726,7 @@
       "answer": [
         0
       ],
-      "explanation": "Spontaneous breathing lets you titrate opioid to a respiratory rate of about 12–14 before extubation.",
+      "explanation": "During spontaneous ventilation, respiratory rate, pattern, tidal ventilation, gas exchange, arousability, and the overall clinical context can help reveal opioid effect. There is no single respiratory-rate target that guarantees adequate analgesia or safe extubation.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
