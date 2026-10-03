@@ -36,20 +36,11 @@ function renderActivity(){
   if(!s||!s.overall.attempts){panel.innerHTML='<div class="dash-empty">Activity and accuracy trends will appear after you answer questions.</div>';return}
   panel.innerHTML='<div class="activity-metric"><span>Today</span><b>'+s.today.answered+'</b><small>questions</small></div><div class="activity-metric"><span>Today accuracy</span><b>'+s.today.accuracy+'%</b><small>'+s.today.topics+' topics</small></div><div class="activity-metric"><span>Last 7 days</span><b>'+s.last7.accuracy+'%</b><small>'+s.last7.answered+' answers</small></div><div class="activity-metric"><span>Due review</span><b>'+s.due+'</b><small>questions</small></div>'
 }
-function trendText(value){const n=Number(value)||0;return n>0?'+'+n+' pts':n<0?n+' pts':'Stable'}
 function renderMastery(){
-  const panel=document.getElementById('masteryPanel'),m=window.MBUStudyIntelligence?.mastery?.();
-  if(!panel)return;
-  if(!m||!m.overall.attempts){panel.innerHTML='<div class="dash-empty">Answer questions in any bank or Study Studio to build your personal mastery profile.</div>';return}
-  const topics=Object.entries(m.byTopic||{}).filter(([,x])=>x.attempts).sort((a,b)=>a[1].mastery-b[1].mastery||b[1].confidence-a[1].confidence||a[0].localeCompare(b[0])).slice(0,8);
-  panel.innerHTML='<div class="mastery-summary">'+
-    '<div class="mastery-card"><span>Mastery estimate</span><b>'+m.overall.mastery+'%</b><small>'+esc(m.overall.status)+'</small></div>'+
-    '<div class="mastery-card"><span>Confidence</span><b>'+m.overall.confidence+'%</b><small>Based on practice volume and recency</small></div>'+
-    '<div class="mastery-card"><span>Recent trend</span><b>'+esc(trendText(m.overall.trend))+'</b><small>Recent answers vs prior answers</small></div>'+
-    '<div class="mastery-card"><span>Topics practiced</span><b>'+m.topicsPracticed+'</b><small>'+m.due+' due for review</small></div></div>'+
-    '<div class="mastery-actions"><a class="btn" href="studio.html?mode=weak">Review Weakest Topics →</a><a class="btn" href="studio.html?mode=adaptive">Start Adaptive 2.1 →</a></div>'+
-    '<div class="mastery-topics">'+topics.map(([name,x])=>'<div class="mastery-topic"><span><strong>'+esc(name)+'</strong><small>'+x.attempts+' attempts · '+esc(x.status)+' · '+x.confidence+'% confidence</small></span><b>'+x.mastery+'%</b><div class="mastery-bar" aria-label="'+esc(name)+' mastery '+x.mastery+' percent"><i style="width:'+x.mastery+'%"></i></div></div>').join('')+'</div>'+
-    '<div class="mastery-note">Mastery is a personal study estimate from your own answer history, recent performance, and practice recency. It is not an exam-pass prediction.</div>'
+  const panel=document.getElementById('masteryPanel'),m=window.MBUStudyIntelligence?.mastery?.(),s=window.MBUStudyIntelligence?.summary?.();if(!panel)return;
+  if(!m||!m.overall.attempts){panel.innerHTML='<div class="dash-empty">Your topic performance will appear after you answer questions.</div>';return}
+  const bankRows=Object.entries(m.byBank||{}).filter(([,x])=>x.attempts).sort((a,b)=>a[0].localeCompare(b[0]));
+  panel.innerHTML='<div class="mastery-summary"><div class="mastery-card"><span>Overall accuracy</span><b>'+s.overall.accuracy+'%</b><small>'+s.overall.attempts+' attempts</small></div><div class="mastery-card"><span>Personal mastery</span><b>'+m.overall.mastery+'%</b><small>'+m.overall.confidence+'% confidence</small></div><div class="mastery-card"><span>Last 7 days</span><b>'+s.last7.accuracy+'%</b><small>'+s.last7.answered+' answers</small></div><div class="mastery-card"><span>Due for review</span><b>'+m.due+'</b><small>questions</small></div></div><div class="topic-head"><h3>Topic Performance</h3><a href="studio.html?mode=weak">Review weak areas →</a></div><div class="mastery-topics">'+bankRows.map(([name,x])=>'<div class="mastery-topic"><span><strong>'+esc(name)+'</strong><small>'+x.attempts+' attempts</small></span><b>'+x.mastery+'%</b><div class="mastery-bar"><i style="width:'+x.mastery+'%"></i></div></div>').join('')+'</div>'
 }
 async function render(){
  try{
