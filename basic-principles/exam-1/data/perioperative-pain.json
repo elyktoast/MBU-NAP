@@ -8777,7 +8777,7 @@
       "answer": [
         0
       ],
-      "explanation": "Titrate opioids to RR 12–14 and moderate miosis.",
+      "explanation": "Tachypnea and restlessness after a painful operation may reflect inadequate analgesia, but they are nonspecific. If other causes are excluded, cautious titration of short-acting analgesia with continued assessment of ventilation and arousability is appropriate; there is no universal respiratory-rate target.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8801,7 +8801,7 @@
       "answer": [
         0
       ],
-      "explanation": "The target is RR 12–14 with moderately miotic pupils.",
+      "explanation": "A respiratory rate near 12/min with adequate tidal ventilation, gas exchange, arousability, airway protection, and no distress may be compatible with an acceptable opioid effect. A fixed respiratory-rate or pupil-size target alone does not establish safe emergence.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8983,17 +8983,17 @@
       "id": "PAIN-366",
       "set": 1,
       "type": "single",
-      "stem": "A patient remains hypoventilating after midazolam and fentanyl despite flumazenil and ventilatory support. Which pharmacologic step is MOST appropriate next?",
+      "stem": "A patient remains hypoventilating after midazolam and fentanyl despite initial supportive measures. Which principle should guide further management?",
       "options": [
-        "Titrate low-dose naloxone to restore ventilation while minimizing loss of analgesia",
-        "Repeat midazolam to prevent agitation",
-        "Give dexmedetomidine to reverse fentanyl",
-        "Administer ketamine as an opioid antagonist"
+        "Continue airway/ventilatory support and selectively titrate the antagonist that addresses the clinically important residual drug effect while considering reversal risks",
+        "Flumazenil must always be exhausted before naloxone can be used",
+        "Naloxone should be delayed until apnea occurs",
+        "Give another sedative to prevent awareness"
       ],
       "answer": [
         0
       ],
-      "explanation": "After reversing benzodiazepines, naloxone may be needed.",
+      "explanation": "Airway and ventilation remain the priority. Flumazenil and naloxone are drug-specific antagonists and should be used selectively according to the suspected residual effect, severity, and patient-specific risks rather than a mandatory reversal sequence.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9079,17 +9079,17 @@
       "id": "PAIN-370",
       "set": 1,
       "type": "single",
-      "stem": "A patient with metastatic cancer has burning neuropathic pain. How effective are opioids?",
+      "stem": "A patient with metastatic cancer has burning neuropathic pain. Which treatment principle is most appropriate?",
       "options": [
-        "Effective, though higher doses may be needed",
-        "Ineffective for neuropathic pain",
-        "Best avoided entirely",
-        "Effective when combined with NSAIDs but not alone"
+        "Use multimodal therapy directed at neuropathic mechanisms; opioids may still contribute when pain is moderate to severe",
+        "Opioids are universally ineffective for neuropathic cancer pain",
+        "Neuropathic cancer pain should be treated with NSAIDs alone",
+        "Avoid adjuvant analgesics whenever opioids are used"
       ],
       "answer": [
         0
       ],
-      "explanation": "Opioids remain effective for neuropathic cancer pain, often at higher doses, alongside adjuvants.",
+      "explanation": "Neuropathic cancer pain often benefits from adjuvant agents such as gabapentinoids or antidepressants, while opioids may remain useful for moderate-to-severe cancer pain. Requirements vary and should be individualized rather than assuming a fixed higher opioid dose.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9103,17 +9103,17 @@
       "id": "PAIN-371",
       "set": 1,
       "type": "single",
-      "stem": "An elderly patient has peripheral neuropathy. How might this affect pain perception?",
+      "stem": "An older adult with peripheral neuropathy requires postoperative pain assessment. Which principle is most accurate?",
       "options": [
-        "Pain threshold increases",
-        "Pain threshold decreases",
-        "Pain tolerance increases",
-        "Pain perception is unaffected"
+        "Neuropathy can alter sensory perception, so pain assessment should be individualized rather than assuming a predictable age-related threshold shift",
+        "Peripheral neuropathy always raises pain threshold",
+        "Peripheral neuropathy always lowers pain threshold",
+        "Age and neuropathy make self-report invalid"
       ],
       "answer": [
         0
       ],
-      "explanation": "Neuropathies contribute to increased pain threshold in the elderly.",
+      "explanation": "Aging and peripheral neuropathy can alter nociceptive processing, but effects vary by patient and disease. A universal increase in pain threshold should not be assumed.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9161,7 +9161,7 @@
       "answer": [
         0
       ],
-      "explanation": "Pain pathways are functional by 20–24 weeks' gestation, so preterm infants need analgesia.",
+      "explanation": "Preterm infants demonstrate nociceptive and stress responses and require appropriate analgesia. Development of pain processing is complex, so analgesic care should not depend on a single gestational-age cutoff.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -9463,17 +9463,17 @@
       "id": "PAIN-386",
       "set": 1,
       "type": "single",
-      "stem": "Case A: A 45-year-old on oxycodone 40 mg/day for back pain is scheduled for lumbar fusion. She skipped her morning dose. How much greater opioid need should you anticipate intraoperatively for her?",
+      "stem": "Case A: A 45-year-old taking oxycodone chronically is scheduled for lumbar fusion. How should her intraoperative and postoperative opioid requirement be anticipated?",
       "options": [
-        "30–100% above typical requirements",
-        "5–10% above typical requirements",
-        "No difference from opioid-naive patients",
-        "200–300% above typical requirements"
+        "Potentially higher than an opioid-naive patient's, but individualized after accounting for baseline exposure, surgical stimulus, multimodal therapy, and observed response",
+        "Exactly 30–100% above typical requirements",
+        "Exactly twice the opioid-naive requirement",
+        "No different from an opioid-naive patient"
       ],
       "answer": [
         0
       ],
-      "explanation": "Opioid-dependent patients need 30–100% more.",
+      "explanation": "Opioid tolerance can increase perioperative opioid requirements, but the magnitude is highly variable. Maintain or replace baseline exposure and titrate additional analgesia to the procedure, multimodal plan, pain, function, and adverse effects rather than applying a fixed percentage.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9487,21 +9487,21 @@
       "id": "PAIN-387",
       "set": 1,
       "type": "multi",
-      "stem": "Case A: A 45-year-old on oxycodone 40 mg/day for back pain is scheduled for lumbar fusion. She skipped her morning dose. Which multimodal adjuncts BEST fit this patient? (Select 3)",
+      "stem": "Case A: A patient taking chronic oxycodone is scheduled for lumbar fusion. Which THREE strategies can appropriately reduce reliance on escalating full-agonist opioid alone? (Select 3)",
       "options": [
-        "Ketamine infusion",
-        "Magnesium infusion",
-        "Higher-dose gabapentinoid preop",
-        "Butorphanol for breakthrough pain",
-        "Naltrexone preop",
-        "Nalbuphine for pruritus"
+        "Ketamine when appropriate",
+        "Regional/local techniques when feasible",
+        "Patient-specific nonopioid multimodal analgesia",
+        "Mandatory high-dose gabapentinoid regardless of risk",
+        "Butorphanol to antagonize mu receptors",
+        "Naltrexone before induction"
       ],
       "answer": [
         0,
         1,
         2
       ],
-      "explanation": "Ketamine, magnesium, and gabapentinoids help tolerant patients; avoid agonist-antagonists.",
+      "explanation": "Opioid-tolerant patients benefit from individualized multimodal therapy, which can include ketamine, regional/local techniques, and appropriate nonopioid analgesics. High-dose gabapentinoids are not mandatory and may increase sedation or respiratory risk.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9515,17 +9515,17 @@
       "id": "PAIN-388",
       "set": 1,
       "type": "single",
-      "stem": "An opioid-tolerant lumbar-fusion patient has severe pain despite escalating hydromorphone, with adverse effects increasing faster than analgesia. Which strategy BEST addresses tolerance rather than simply escalating the same drug?",
+      "stem": "An opioid-tolerant lumbar-fusion patient has severe pain despite escalating hydromorphone, with adverse effects increasing faster than analgesia. Which next principle is most appropriate?",
       "options": [
-        "Opioid rotation, such as to methadone",
-        "Add butorphanol to antagonize mu receptors",
-        "Stop all opioids abruptly",
+        "Reassess the pain mechanism and multimodal plan; opioid rotation may be considered in selected patients rather than simply escalating the same opioid",
+        "Methadone is mandatory for all opioid-tolerant patients",
+        "Add butorphanol to precipitate withdrawal",
         "Give naloxone to reset opioid receptors"
       ],
       "answer": [
         0
       ],
-      "explanation": "Opioid rotation, often to methadone, can restore analgesic sensitivity in tolerant patients.",
+      "explanation": "When escalating one opioid produces diminishing benefit and increasing toxicity, reassess the diagnosis and multimodal strategy. Opioid rotation, including to methadone in selected experienced settings, can be considered but is not universally required and requires careful equianalgesic conversion.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
