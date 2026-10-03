@@ -874,6 +874,11 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(boot.includes("loadScript('question-search.js')"))fail('Universal search is eagerly loaded by the bootstrap');
  for(const token of ['mbu_study_intelligence_v1','recordAnswer','smartReview','questionStats','topicStats','due','analytics','mastery','priorityForQuestion','recentActivity','addIssue','firstAttempt=attempts===0','if(firstAttempt)window.MBUSupabase'])if(!intel.includes(token))fail('Study intelligence contract missing '+token);
  for(const token of ["m==='smart'","m==='custom'","m==='due'","m==='weak'",'adaptiveToggle','Adaptive 2.1','MBUAdaptiveQuiz','analyticsSummary','seedLegacy',"sessionMode:DB.active?.mode||'custom'","requested==='weak'"])if(!studio.includes(token))fail('Studio intelligence integration missing '+token);
+ if(!studio.includes('majorityBalancedSample')||!studio.includes('MBUAdaptiveQuiz?.start?.(pool,limit)')||!studio.includes('MBUAdaptiveQuiz?.pick?.(ALL,DB.active.adaptive)'))fail('Studio/CAT selection architecture is incomplete');
+ const adaptiveBranch=studio.indexOf('if(adaptive){'),balancedBranch=studio.indexOf('majorityBalancedSample(pool,+n');
+ if(adaptiveBranch<0||balancedBranch<0||adaptiveBranch>balancedBranch||!studio.slice(adaptiveBranch,balancedBranch).includes('return}'))fail('Adaptive CAT must exit before the custom 80/20 Studio sampler');
+ const generator=read('equipment/assets/question-generator.js');
+ if(!generator.includes("courseId==='equipment'&&examId==='exam-1'?'mbu_generated_questions_v1':`mbu_generated_questions_${courseId}_${examId}_v1`"))fail('Generated-question storage is not isolated by course/exam');
  for(const token of ['continuePanel','recentPanel','masteryPanel','renderMastery','MBUStudyIntelligence?.mastery'])if(!dash.includes(token))fail('Exam dashboard intelligence integration missing '+token);
  if(!read('equipment/exam-1/studio.html').includes('id="adaptiveToggle"'))fail('Studio adaptive opt-in toggle is missing');
  const adaptive=read('equipment/assets/adaptive-quiz.js'),termination=read('equipment/assets/cat-termination.js'),studioSync=read('equipment/assets/studio-sync.js');
