@@ -802,7 +802,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  for(const token of ["VERSION='2026-09-27-v6'",'I agree to the','Terms of Use','Privacy Notice','localStorage.setItem(KEY','data-legal-continue','pointer-events:auto'])if(!gate.includes(token))fail('Legal gate missing '+token);
  if(boot.includes('html[data-mbu-boot="loading"] body{pointer-events:none}'))fail('Legal gate is blocked by bootstrap pointer-events');
  if(!boot.includes('body>#srna-legal-gate{visibility:visible;pointer-events:auto}'))fail('Bootstrap does not keep the legal gate visible and interactive while loading');
- if(!boot.includes("protectedCourse=['equipment/','basic-principles/'].some(course=>path.startsWith(root.pathname+course))"))fail('Bootstrap: published-course protected boundary is missing');
+ if(!boot.includes("protectedCourse=['equipment/','basic-principles/'].some(x=>path.startsWith(root.pathname+x))"))fail('Bootstrap: published-course protected boundary is missing');
  if(!boot.includes("sessionStorage.setItem('mbu_post_auth_target',location.href)")||!boot.includes("location.replace(home)"))fail('Bootstrap: protected deep links do not preserve destination and return guests home');
  if(!boot.includes("sessionStorage.removeItem('mbu_post_auth_target')")||!boot.includes("location.replace(target)"))fail('Bootstrap: successful authentication does not safely resume the protected destination');
  if(!boot.includes("candidate.origin===root.origin")||!boot.includes("['equipment/','basic-principles/'].some(course=>candidate.pathname.startsWith(root.pathname+course))"))fail('Bootstrap: remembered auth destination is not restricted to local published courses');
@@ -1046,7 +1046,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
   for(const token of ['courseId,examId','questionId:meta.uid','courseId:meta.courseId','examId:meta.examId','bankId:meta.bank','topic:meta.topic'])if(!intelligence.includes(token))fail('Global CAT evidence metadata missing '+token);
   const bootstrap=read('equipment/assets/build-bootstrap.js'),home=read('index.html'),migration=read('supabase/migrations/20260927041827_add_anonymous_item_calibration.sql');
   for(const course of ['equipment','basic-principles'])if(!home.includes('href="'+course+'/" data-course-link'))fail('Home is missing published course '+course);
-  if(!bootstrap.includes("protectedCourse=['equipment/','basic-principles/'].some(course=>path.startsWith(root.pathname+course))"))fail('Published courses are not uniformly account protected');
+  if(!bootstrap.includes("protectedCourse=['equipment/','basic-principles/'].some(x=>path.startsWith(root.pathname+x))"))fail('Published courses are not uniformly account protected');
   if(!migration.includes('primary key (user_id, question_id)'))fail('CAT first-attempt uniqueness must remain one contribution per user/question');
   if(!intelligence.includes('firstAttempt=attempts===0')||!intelligence.includes('if(firstAttempt)window.MBUSupabase?.submitItemContribution'))fail('CAT contribution must remain first-answer-only');
 
