@@ -174,4 +174,23 @@ test.describe('multi-course foundation', () => {
     expect(await page.evaluate(() => window.MBUStudyIntelligence.smartReview(ALL, 50).length)).toBeGreaterThan(0);
   });
 
+  test('published navigation remains usable at 360px phone width', async ({ page }) => {
+    await page.setViewportSize({ width: 360, height: 800 });
+    for (const route of ['/', '/equipment/exam-1/', '/basic-principles/exam-1/']) {
+      await page.goto(route);
+      await waitForPageReady(page);
+      const nav = page.locator('.mbu-global-nav');
+      await expect(nav).toBeVisible();
+      const box = await nav.boundingBox();
+      expect(box).not.toBeNull();
+      expect(box.x).toBeGreaterThanOrEqual(0);
+      expect(box.x + box.width).toBeLessThanOrEqual(360);
+      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(360);
+    }
+    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Basic Principles', exact: true })).toBeVisible();
+    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Study Studio', exact: true })).toBeVisible();
+    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: /Adaptive/, exact: false })).toBeVisible();
+  });
+
+
 });
