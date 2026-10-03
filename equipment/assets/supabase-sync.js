@@ -117,7 +117,7 @@ const acceptedAt=new Date().toISOString();emit('signing-up');const data=await ra
 if(s){const switched=await prepareLocalOwner(s.user?.id);saveSession(s);stopGuestHeartbeat();if(switched){emit('local-owner-changed',{email:s.user?.email||email});return{session:s,confirmationRequired:false}}if(!await refreshLegalAcceptance())await acceptCurrentLegal(true);else{await refreshAccountAccess();if(accountAccess==='active'){emit('signed-in',{email:s.user?.email||email});await fullSync({reloadOnImport:false});startAutoSync()}else emit('access-suspended',{email:s.user?.email||email})}return{session:s,confirmationRequired:false}}
 emit('confirmation-required',{email:String(email||'').trim()});return{session:null,confirmationRequired:true}
 }
-function resetCloudSession(){stopAutoSync();saveSession(null);legalAccepted=null;accountAccess='signed_out';remoteByKey.clear();calibrationByKey.clear();calibrationFetchedAt=0;emit('signed-out');startGuestHeartbeat()}
+function resetCloudSession(){stopAutoSync();saveSession(null);sessionStorage.removeItem('mbu_post_auth_target');legalAccepted=null;accountAccess='signed_out';remoteByKey.clear();calibrationByKey.clear();calibrationFetchedAt=0;emit('signed-out');startGuestHeartbeat()}
 async function signOut(){
 const s=session();if(s?.access_token&&legalAccepted===true&&accountAccess==='active')try{await fullSync()}catch{}
 try{if(s?.access_token)await raw('/auth/v1/logout',{method:'POST',token:s.access_token})}catch{}
