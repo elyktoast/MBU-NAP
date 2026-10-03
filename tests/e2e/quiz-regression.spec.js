@@ -1913,9 +1913,8 @@ test.describe('canonical quiz regression', () => {
     ]);
     await expect.poll(()=>deleted).toBe(1);
     await page.waitForURL(url=>url.pathname==='/');
-    await page.waitForLoadState('domcontentloaded');
-    await page.locator('[data-course-link]').first().waitFor();
-    await page.evaluate(() => MBUAppCore.openAccount(document.querySelector('[data-course-link]')));
+    await page.evaluate(() => MBUPageReady);
+    await page.evaluate(() => MBUAppCore.openAccount());
     await expect(page.locator('[data-cloud-signed-out]')).toBeVisible();
     expect(await page.evaluate(()=>localStorage.getItem('mbu_exam1_studio_v1'))).toBeNull();
     expect(await page.evaluate(()=>localStorage.getItem('mbu_sync_meta_v1'))).toBeNull();
