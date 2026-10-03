@@ -7341,7 +7341,7 @@
       "id": "SED-301",
       "set": 1,
       "type": "single",
-      "stem": "A frail older adult with advanced hepatic dysfunction needs brief benzodiazepine sedation with rapid recovery. Which agent's organ-independent esterase metabolism is advantageous?",
+      "stem": "A patient with renal dysfunction needs brief benzodiazepine sedation with rapid recovery. Which agent is rapidly hydrolyzed by carboxylesterase metabolism and has an inactive metabolite?",
       "options": [
         "Remimazolam",
         "Midazolam",
@@ -7351,7 +7351,7 @@
       "answer": [
         0
       ],
-      "explanation": "Remimazolam's esterase metabolism gives a short, predictable offset even with hepatic disease. Midazolam can accumulate in cirrhosis and older patients.",
+      "explanation": "Remimazolam is rapidly hydrolyzed mainly by carboxylesterase 1 to an inactive metabolite. Renal impairment has relatively little effect on parent-drug pharmacokinetics, but severe hepatic impairment can prolong its effect, so 'organ-independent' metabolism should not be interpreted as complete independence from liver function.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7365,17 +7365,17 @@
       "id": "SED-302",
       "set": 1,
       "type": "single",
-      "stem": "Why can remimazolam recovery remain relatively predictable despite significant hepatic or renal dysfunction?",
+      "stem": "Which statement best describes remimazolam disposition?",
       "options": [
-        "It is primarily metabolized by tissue esterases rather than relying on hepatic or renal clearance",
+        "It is rapidly hydrolyzed by carboxylesterase 1 to a largely inactive metabolite",
         "It is eliminated unchanged only by the kidneys",
-        "It has no active pharmacologic effect",
-        "It is metabolized exclusively by CYP3A4"
+        "It requires CYP3A4 oxidation as its principal termination pathway",
+        "It has no clinically relevant effect from severe hepatic dysfunction"
       ],
       "answer": [
         0
       ],
-      "explanation": "Remimazolam is metabolized by tissue esterases, independent of liver and kidney function.",
+      "explanation": "Remimazolam undergoes rapid carboxylesterase-mediated hydrolysis, producing an inactive metabolite. Renal impairment has limited effect on the parent drug, whereas severe hepatic impairment can slow clearance and prolong recovery.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7413,7 +7413,7 @@
       "id": "SED-304",
       "set": 1,
       "type": "single",
-      "stem": "Which benzodiazepine best matches rapid titration plus esterase metabolism when hepatic and renal dysfunction coexist?",
+      "stem": "Which benzodiazepine best matches rapid titration and carboxylesterase-mediated hydrolysis when renal dysfunction is present?",
       "options": [
         "Remimazolam",
         "Midazolam",
@@ -7423,7 +7423,7 @@
       "answer": [
         0
       ],
-      "explanation": "The note says esterase metabolism makes remimazolam good for liver/kidney problems and OSA patients.",
+      "explanation": "Remimazolam is rapidly hydrolyzed by carboxylesterase 1 and can have a predictable short offset. Severe hepatic impairment can still prolong its effect, so it should not be described as completely organ-independent.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7833,7 +7833,7 @@
       "id": "SED-321",
       "set": 1,
       "type": "single",
-      "stem": "Severe hepatic dysfunction is present, but rapid titration, amnesia, and relatively predictable benzodiazepine recovery are desired. Which agent best fits?",
+      "stem": "Significant renal dysfunction is present, but rapid titration, amnesia, and relatively predictable benzodiazepine recovery are desired. Which agent best fits?",
       "options": [
         "Remimazolam",
         "Midazolam",
@@ -7843,7 +7843,7 @@
       "answer": [
         0
       ],
-      "explanation": "Remimazolam provides rapid, titratable sedation and amnesia with organ-independent esterase metabolism.",
+      "explanation": "Remimazolam provides titratable benzodiazepine sedation and amnesia with rapid carboxylesterase-mediated hydrolysis. Severe hepatic impairment can prolong clearance, so renal dysfunction is the cleaner comparison here.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8159,7 +8159,7 @@
       "answer": [
         0
       ],
-      "explanation": "Tinnitus and metallic taste are early LAST signs. Your note flags \"lots of lidocaine IV + local → LAST.\" Doses from every source add together.",
+      "explanation": "Fire risk is reduced by using only the oxygen concentration and flow needed for adequate oxygenation, preventing oxygen from pooling under drapes, and coordinating oxygen delivery with use of ignition sources near the airway or face.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8183,7 +8183,7 @@
       "answer": [
         0
       ],
-      "explanation": "Gagging at a light plane with secretions or a scope near the larynx can trigger laryngospasm, which may need positive pressure or airway instrumentation.",
+      "explanation": "Electrocautery provides an ignition source; accumulated supplemental oxygen beneath facial drapes creates an oxidizer-enriched environment. Cautery should pause while the team corrects the fire-risk conditions.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8207,7 +8207,7 @@
       "answer": [
         0
       ],
-      "explanation": "Stridor progressing to silence suggests laryngospasm moving to complete closure. Stop stimulation, open the airway, and give CPAP/positive pressure; deepen or paralyze if it persists.",
+      "explanation": "Suspected aspiration requires immediate airway-focused management: stop stimulation/procedure as feasible, suction and position the patient, restore oxygenation and ventilation, and secure the airway when clinically necessary.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8233,10 +8233,9 @@
       "answer": [
         0,
         1,
-        2,
-        3
+        2
       ],
-      "explanation": "MAC complications include respiratory depression and obstruction, aspiration, laryngospasm, cardiovascular instability, LAST with local or regional techniques, and fire in head and neck cases.",
+      "explanation": "Witnessed regurgitation plus new hypoxemia and new cough, wheeze, or abnormal breath sounds strongly support clinically significant aspiration. A stable capnogram without respiratory symptoms does not.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8260,7 +8259,7 @@
       "answer": [
         0
       ],
-      "explanation": "Sedation depresses protective reflexes while leaving the airway unprotected. NORA closed claims show aspiration nearly twice as often.",
+      "explanation": "Supplemental oxygen can preserve SpO2 despite worsening alveolar hypoventilation. Rising ETCO2 with increasing somnolence therefore requires attention to ventilation rather than reassurance from oxygen saturation alone.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8284,7 +8283,7 @@
       "answer": [
         0
       ],
-      "explanation": "Cardiovascular instability from anesthetic drugs or underlying disease is a listed complication. Dexmedetomidine causes bradycardia and hypotension.",
+      "explanation": "Propofol can produce dose-related vasodilation and myocardial depression, making repeated boluses a plausible cause of hypotension, especially in patients with limited preload or cardiovascular reserve.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8308,7 +8307,7 @@
       "answer": [
         0
       ],
-      "explanation": "Fire risk comes from oxygen enrichment near ignition sources. Minimizing O2 and venting the drapes lowers risk; a secured airway may be safer if high O2 is needed.",
+      "explanation": "Opioid-induced apnea is first managed by restoring airway patency and effective ventilation. Opioid administration should be reduced or stopped and naloxone considered when clinically indicated.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8332,7 +8331,7 @@
       "answer": [
         0
       ],
-      "explanation": "Agitation followed by seizure after regional anesthesia is classic LAST. It is listed when MAC accompanies regional techniques.",
+      "explanation": "Snoring with reduced tidal movement during sedation suggests upper-airway obstruction. Repositioning the head and applying jaw thrust are appropriate initial maneuvers while ventilation and oxygenation are reassessed.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8356,7 +8355,7 @@
       "answer": [
         0
       ],
-      "explanation": "Laryngospasm during MAC can require positive-pressure ventilation or airway instrumentation, sometimes with a muscle relaxant.",
+      "explanation": "Persistent obstruction with worsening oxygenation despite basic maneuvers requires active ventilation and escalation to airway adjuncts or an advanced airway as needed.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8380,7 +8379,7 @@
       "answer": [
         0
       ],
-      "explanation": "Fire risk comes from oxygen enrichment near cautery in head and neck cases. LAST requires local anesthetic, and laryngospasm comes from airway stimulation at light planes.",
+      "explanation": "Vomiting during sedation creates immediate aspiration and airway-protection concerns. Suction, positioning, oxygenation/ventilation support, and airway control take priority over recall or comfort issues.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8404,7 +8403,7 @@
       "answer": [
         0
       ],
-      "explanation": "Rising CO2 and somnolence show respiratory depression. Hypercarbia is also a trigger for conversion.",
+      "explanation": "Remote anesthesia locations require emergency drugs, monitoring, ventilation/airway equipment, and rescue capability appropriate to the anesthetic. Lack of immediately available vasopressors during severe hypotension is a preparedness failure.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8428,7 +8427,7 @@
       "answer": [
         0
       ],
-      "explanation": "LAST risk comes from cumulative dose. IV lidocaine, blocks, and surgical infiltration all count toward the maximum.",
+      "explanation": "Dexmedetomidine can cause clinically important bradycardia and hypotension. Reduce or stop the contributing infusion as appropriate, assess perfusion, and treat the hemodynamic disturbance based on severity and cause.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8441,7 +8440,7 @@
     {
       "id": "SED-346",
       "set": 1,
-      "type": "multi",
+      "type": "single",
       "stem": "During ketamine sedation, laryngospasm develops despite previously preserved spontaneous ventilation. What does this illustrate?",
       "options": [
         "Preserved spontaneous breathing does not eliminate the risk of airway reflex complications such as laryngospasm",
@@ -8450,10 +8449,9 @@
         "Capnography causes laryngospasm"
       ],
       "answer": [
-        0,
-        1
+        0
       ],
-      "explanation": "Laryngospasm is triggered by airway stimulation at light planes, such as secretions near the cords. Topical anesthesia of the cords blunts the reflex rather than triggering it.",
+      "explanation": "Ketamine often preserves spontaneous ventilation, but it does not guarantee airway protection. Laryngospasm and other airway complications remain possible, so monitoring and rescue capability are still required.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8477,7 +8475,7 @@
       "answer": [
         0
       ],
-      "explanation": "NORA locations are remote, with limited help and airway resources, so respiratory events can become catastrophic.",
+      "explanation": "Unresponsiveness to stimulation with apnea indicates general-anesthesia depth on the sedation continuum; hypotension further signals significant anesthetic effect and requires immediate physiologic support.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8501,7 +8499,7 @@
       "answer": [
         0
       ],
-      "explanation": "Capnography detects hypoventilation and apnea early, preventing unrecognized respiratory depression.",
+      "explanation": "Prone positioning can make airway rescue difficult. Recurrent obstruction plus poor access should prompt reassessment of whether continued sedation is safe or whether a secured airway is preferable.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8525,7 +8523,7 @@
       "answer": [
         0
       ],
-      "explanation": "Aspiration can cause bronchospasm and hypoxemia. EGD increases aspiration risk under sedation.",
+      "explanation": "An oxygen-enriched environment supports easier ignition and more vigorous combustion. Open oxygen near facial drapes and an ignition source therefore requires deliberate fire-risk mitigation.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8549,7 +8547,7 @@
       "answer": [
         0
       ],
-      "explanation": "Cardiovascular instability is a listed complication. Vagal responses or drug effects can cause hypotension and bradycardia.",
+      "explanation": "Remote or access-limited procedures need an executable rescue plan: the procedure must be able to stop rapidly and the anesthesia team must be able to reach and manage the airway.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
