@@ -1251,7 +1251,7 @@
       "answer": [
         0
       ],
-      "explanation": "Guidelines require a validated pain assessment tool.",
+      "explanation": "Serial pain documentation is most useful when the same validated scale is used before and after intervention and paired with functional goals such as coughing, deep breathing, ambulation, or sleep. This allows treatment response to be assessed rather than merely recording that medication was administered.",
       "citation": "",
       "topic": "Assessment, concepts, and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -1275,7 +1275,7 @@
       "answer": [
         0
       ],
-      "explanation": "Poorly managed acute pain can produce chronicity.",
+      "explanation": "Persistent intense nociceptive input can increase peripheral nociceptor sensitivity and dorsal-horn excitability, contributing to central sensitization. Poorly controlled acute postoperative pain is therefore associated with greater risk of persistent postsurgical pain, although analgesia cannot guarantee prevention.",
       "citation": "",
       "topic": "Assessment, concepts, and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -1304,7 +1304,7 @@
         2,
         3
       ],
-      "explanation": "Differentials include MH, anaphylaxis, bleeding, hypovolemia, hypoxemia, acidemia, cerebral hypoperfusion, fever, and PONV.",
+      "explanation": "Agitation, tachycardia, hypertension, or apparent distress in PACU can result from conditions other than pain, including hypoxemia, hypovolemia/bleeding, acid-base disturbance, PONV, anaphylaxis, hyperthermia syndromes, or neurologic compromise. Treating presumed pain without considering these alternatives can delay management of a dangerous cause.",
       "citation": "",
       "topic": "Differentials, routes, and neuraxial analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1328,7 +1328,7 @@
       "answer": [
         0
       ],
-      "explanation": "Hypoxemia is a differential to pain; treat it first.",
+      "explanation": "Hypoxemia can cause agitation, anxiety, confusion, tachycardia, and distress that resemble pain. Oxygenation and ventilation are immediate physiologic priorities; additional opioid before correcting hypoxemia may worsen respiratory depression.",
       "citation": "",
       "topic": "Differentials, routes, and neuraxial analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1352,7 +1352,7 @@
       "answer": [
         0
       ],
-      "explanation": "Bleeding and hypovolemia can mimic pain; rule them out.",
+      "explanation": "Rising heart rate with falling blood pressure and abdominal distension suggests hemorrhage or volume loss rather than uncomplicated pain alone. Opioids may blunt compensatory sympathetic tone, so circulation and the surgical cause should be evaluated before simply escalating analgesia.",
       "citation": "",
       "topic": "Differentials, routes, and neuraxial analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1380,7 +1380,7 @@
         1,
         2
       ],
-      "explanation": "Cerebral hypoperfusion from high ICP, bleeding, hypotension, or stroke can look like pain or agitation.",
+      "explanation": "Restlessness or apparent pain after carotid surgery may reflect cerebral hypoperfusion or an intracranial/neurologic complication. New neurologic dysfunction, hypotension, hemorrhage, or increased intracranial pressure should be considered before sedating the examination with additional opioid.",
       "citation": "",
       "topic": "Differentials, routes, and neuraxial analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1404,7 +1404,7 @@
       "answer": [
         0
       ],
-      "explanation": "IV delivery by push, infusion, or PCA is the most common perioperative route.",
+      "explanation": "IV administration permits rapid onset and repeated titration by bolus, infusion, or PCA, making it useful when analgesic requirements are changing quickly. The same rapid effect also increases the need for respiratory and hemodynamic monitoring during dose escalation.",
       "citation": "",
       "topic": "Differentials, routes, and neuraxial analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1476,7 +1476,7 @@
       "answer": [
         0
       ],
-      "explanation": "CPNB is a continuous catheter infusion of local anesthetic near a peripheral nerve.",
+      "explanation": "A catheter placed adjacent to a peripheral nerve or plexus can continuously deliver dilute local anesthetic after surgery. Continuous peripheral nerve blocks extend regional analgesia beyond a single injection and can reduce systemic opioid requirements while requiring monitoring for block-specific complications.",
       "citation": "",
       "topic": "Differentials, routes, and neuraxial analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1500,7 +1500,7 @@
       "answer": [
         0
       ],
-      "explanation": "Smaller doses plus lipophilic opioids prolong analgesia while minimizing motor block.",
+      "explanation": "Reducing intrathecal local-anesthetic dose can shorten motor block, while a small lipophilic neuraxial opioid such as fentanyl can supplement analgesia without proportionally prolonging motor recovery. The exact spinal regimen should still be tailored to procedure duration, patient factors, and discharge requirements.",
       "citation": "",
       "topic": "Differentials, routes, and neuraxial analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1552,7 +1552,7 @@
       "answer": [
         0
       ],
-      "explanation": "Lipophilic opioids such as fentanyl 10–25 mcg or sufentanil 5–10 mcg prolong analgesia without delaying discharge.",
+      "explanation": "Small intrathecal doses of lipophilic opioids such as fentanyl or sufentanil can augment spinal analgesia with relatively rapid onset and limited prolongation of motor block. They still carry opioid adverse effects including pruritus, nausea, urinary retention, and respiratory depression.",
       "citation": "",
       "topic": "Differentials, routes, and neuraxial analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1581,7 +1581,7 @@
         2,
         3
       ],
-      "explanation": "Epidural planning covers postoperative location, removal timing, anticoagulation, and who follows the patient.",
+      "explanation": "Epidural planning must include where the patient will be monitored postoperatively, who manages the catheter, when removal is expected, and how anticoagulant timing will be coordinated. These decisions affect both analgesic feasibility and neuraxial bleeding safety.",
       "citation": "",
       "topic": "Differentials, routes, and neuraxial analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1605,7 +1605,7 @@
       "answer": [
         0
       ],
-      "explanation": "Neuraxial opioids, especially morphine, can cause delayed respiratory depression requiring extended monitoring.",
+      "explanation": "Intrathecal morphine is hydrophilic and can remain in cerebrospinal fluid with rostral spread for hours, so respiratory depression may occur well after initial recovery. Normal ventilation on arrival to postpartum does not eliminate the need for protocol-based delayed respiratory monitoring.",
       "citation": "",
       "topic": "Differentials, routes, and neuraxial analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1629,7 +1629,7 @@
       "answer": [
         0
       ],
-      "explanation": "Meta-analyses found epidural analgesia superior to systemic opioids.",
+      "explanation": "Thoracic epidural analgesia can provide strong dynamic pain relief after thoracotomy and facilitate coughing, deep breathing, and mobilization while reducing systemic opioid exposure. Benefit must be balanced against hypotension, urinary retention, motor effects, anticoagulation constraints, and catheter complications.",
       "citation": "",
       "topic": "Differentials, routes, and neuraxial analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1653,7 +1653,7 @@
       "answer": [
         0
       ],
-      "explanation": "Continuous peripheral nerve blocks are superior to opioids with fewer side effects and rare complications.",
+      "explanation": "A continuous interscalene catheter can provide prolonged site-specific analgesia and reduce systemic opioid use after major shoulder surgery. Its advantages must be balanced against catheter failure, local-anesthetic toxicity, infection, and block-specific effects such as phrenic nerve impairment.",
       "citation": "",
       "topic": "Differentials, routes, and neuraxial analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1701,7 +1701,7 @@
       "answer": [
         0
       ],
-      "explanation": "Multimodal analgesia combines multiple drug classes, routes, and techniques.",
+      "explanation": "Multimodal analgesia combines therapies with different mechanisms and sites of action so adequate pain control can be achieved with lower exposure to any one drug. Acetaminophen, an NSAID/COX-2 inhibitor, regional/local anesthesia, and limited rescue opioid are complementary rather than redundant.",
       "citation": "",
       "topic": "Multimodal analgesia, drug classes, and preventive analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1725,7 +1725,7 @@
       "answer": [
         0
       ],
-      "explanation": "Combining drugs can produce additive or synergistic side effects, so caution and dose reduction are needed.",
+      "explanation": "Multimodal does not mean that every adjunct should be combined at full dose. Gabapentinoids, alpha-2 agonists, ketamine, and opioids can produce overlapping sedation, respiratory, or hemodynamic effects, so doses must be reduced and individualized when therapies are layered.",
       "citation": "",
       "topic": "Multimodal analgesia, drug classes, and preventive analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1749,7 +1749,7 @@
       "answer": [
         0
       ],
-      "explanation": "Acetaminophen is about 20–30% less effective than NSAIDs but avoids NSAID bleeding and GI risks.",
+      "explanation": "Acetaminophen avoids platelet inhibition and the characteristic gastrointestinal and renal toxicities of NSAIDs, making it useful when those risks are important. It has its own dose-related hepatotoxicity risk, so total daily exposure from all combination products must still be tracked.",
       "citation": "",
       "topic": "Multimodal analgesia, drug classes, and preventive analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1773,7 +1773,7 @@
       "answer": [
         0
       ],
-      "explanation": "Combining acetaminophen and NSAIDs improves analgesia and reduces opioid use.",
+      "explanation": "Acetaminophen and NSAIDs act through different analgesic mechanisms and often provide better pain control together than either alone, reducing rescue opioid requirements. The combination is appropriate only when neither drug's patient-specific contraindications are present.",
       "citation": "",
       "topic": "Multimodal analgesia, drug classes, and preventive analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1801,7 +1801,7 @@
         1,
         2
       ],
-      "explanation": "Ketamine, magnesium, and methadone are NMDA antagonists.",
+      "explanation": "Ketamine is a clinically important NMDA-receptor antagonist, while magnesium can reduce NMDA-channel activity and methadone has NMDA-antagonist properties in addition to mu-opioid agonism. These mechanisms can be useful in multimodal strategies aimed at central sensitization or opioid tolerance.",
       "citation": "",
       "topic": "Multimodal analgesia, drug classes, and preventive analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1825,7 +1825,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dexmedetomidine and clonidine are alpha-2 agonists.",
+      "explanation": "Dexmedetomidine and clonidine are alpha-2 adrenergic agonists that reduce central sympathetic outflow and can contribute sedation and analgesic-sparing effects. Bradycardia and hypotension are important dose-limiting adverse effects.",
       "citation": "",
       "topic": "Multimodal analgesia, drug classes, and preventive analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1849,7 +1849,7 @@
       "answer": [
         0
       ],
-      "explanation": "Gabapentin is an antiepileptic used as an analgesic adjunct for neuropathic pain.",
+      "explanation": "Gabapentin binds the alpha-2-delta subunit of voltage-gated calcium channels and can reduce excitatory neurotransmitter release in neuropathic pain pathways. Perioperative use should be individualized because dizziness, sedation, renal accumulation, and respiratory depression with opioids can offset opioid-sparing benefit.",
       "citation": "",
       "topic": "Multimodal analgesia, drug classes, and preventive analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1873,7 +1873,7 @@
       "answer": [
         0
       ],
-      "explanation": "Amitriptyline is a TCA used for neuropathic pain.",
+      "explanation": "Amitriptyline is a tricyclic antidepressant commonly used as an adjuvant for neuropathic pain through monoamine reuptake inhibition and other mechanisms. Anticholinergic effects, orthostasis, sedation, and cardiac conduction concerns can limit use in some patients.",
       "citation": "",
       "topic": "Multimodal analgesia, drug classes, and preventive analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -1977,7 +1977,7 @@
       "answer": [
         0
       ],
-      "explanation": "Tramadol has weak opioid effects plus SNRI activity, which can cause serotonin syndrome with other serotonergic drugs.",
+      "explanation": "Tramadol combines weak mu-opioid agonism with inhibition of serotonin and norepinephrine reuptake. Adding it to serotonergic drugs such as sertraline can increase serotonin-toxicity risk, while its opioid metabolite formation also varies with CYP2D6 activity.",
       "citation": "",
       "topic": "Multimodal analgesia, drug classes, and preventive analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -2029,7 +2029,7 @@
         1,
         2
       ],
-      "explanation": "Laparotomy options include opioids, NSAIDs or acetaminophen, gabapentinoids, IV ketamine or lidocaine, TAP block, and epidural.",
+      "explanation": "Open abdominal surgery can be treated with multimodal systemic agents plus regional/local techniques. IV lidocaine or ketamine may reduce opioid exposure in selected patients, while a TAP block or epidural can target abdominal wall or neuraxial nociceptive transmission depending on the operation.",
       "citation": "",
       "topic": "Multimodal analgesia, drug classes, and preventive analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -2053,7 +2053,7 @@
       "answer": [
         0
       ],
-      "explanation": "Paravertebral block is a listed regional option for thoracotomy.",
+      "explanation": "Paravertebral blockade can provide unilateral thoracic somatic analgesia and is a recognized alternative when thoracic epidural analgesia is contraindicated or undesirable. Choice depends on surgical extent, anticoagulation, pulmonary reserve, expertise, and the expected risk-benefit profile.",
       "citation": "",
       "topic": "Multimodal analgesia, drug classes, and preventive analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -2125,7 +2125,7 @@
       "answer": [
         0
       ],
-      "explanation": "Preventive analgesia blocks sustained pain by preventing NMDA activation, windup, and central sensitization.",
+      "explanation": "Sustained perioperative nociceptive input can activate NMDA-dependent spinal plasticity, producing wind-up and central sensitization. Effective analgesia begun before incision and continued through the period of significant nociceptive input aims to reduce that amplification rather than merely treating pain after it is established.",
       "citation": "",
       "topic": "Multimodal analgesia, drug classes, and preventive analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -2153,7 +2153,7 @@
         1,
         2
       ],
-      "explanation": "Preventive analgesia is broader than simply giving a drug before incision. The strategy should provide adequate analgesic intensity and coverage and persist through the clinically important period of perioperative nociceptive input.",
+      "explanation": "Preventive analgesia is defined by effective suppression of clinically important nociceptive input across the perioperative period, not simply by administering a drug before incision. Adequate intensity, appropriate timing, and sufficient duration are therefore central features.",
       "citation": "",
       "topic": "Multimodal analgesia, drug classes, and preventive analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -2177,7 +2177,7 @@
       "answer": [
         0
       ],
-      "explanation": "Patients with chronic pain often have pre-existing central sensitization, limiting preventive benefit.",
+      "explanation": "Long-standing chronic pain may already involve established peripheral and central sensitization before surgery. Preventive strategies can still be useful, but they cannot fully prevent a sensitization process that predates the operation.",
       "citation": "",
       "topic": "Multimodal analgesia, drug classes, and preventive analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -2228,7 +2228,7 @@
       "answer": [
         0
       ],
-      "explanation": "Pharmacokinetic and pharmacodynamic principles guide drug selection, timing, and combination.",
+      "explanation": "The same nominal analgesic effect does not mean two drugs should be timed identically. Onset, time to peak, redistribution, elimination, context-sensitive behavior, and duration determine when a drug should be started or stopped relative to surgical stimulation and emergence.",
       "citation": "",
       "topic": "Multimodal analgesia, drug classes, and preventive analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -2252,7 +2252,7 @@
       "answer": [
         0
       ],
-      "explanation": "Codeine and tramadol are prodrugs converted to active metabolites by CYP2D6; poor metabolizers get poor analgesia.",
+      "explanation": "Codeine requires CYP2D6 conversion to morphine for much of its analgesic effect, and tramadol requires CYP2D6 formation of a more potent opioid metabolite. Reduced CYP2D6 activity can therefore blunt both drugs while leaving direct-acting morphine analgesia relatively preserved.",
       "citation": "",
       "topic": "Pharmacogenetics and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -2300,7 +2300,7 @@
       "answer": [
         0
       ],
-      "explanation": "CYP2D6 converts codeine to morphine. Ultrarapid conversion can produce unexpectedly high morphine exposure and life-threatening respiratory depression. Codeine should not be used for post-tonsillectomy/adenoidectomy pain in children.",
+      "explanation": "Children with ultrarapid CYP2D6 metabolism can convert codeine to morphine unexpectedly quickly, producing dangerously high morphine exposure and life-threatening respiratory depression. Codeine is therefore contraindicated for pain after tonsillectomy/adenoidectomy in children.",
       "citation": "",
       "topic": "Pharmacogenetics and planning",
       "sourceTitle": "Perioperative Pain Management",
