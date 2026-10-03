@@ -154,7 +154,7 @@ return Number(rows?.[0]?.id)||0
 function requireLegal(){if(legalAccepted!==true)throw Error('Accept the current Terms and Privacy Notice first.')}
 async function submitItemContribution(x){
 requireAccountAccess();if(!x?.questionId)return false;
-return await api('/rest/v1/rpc/mbu_submit_item_contribution_v2',{method:'POST',body:{p_question_id:x.questionId,p_correct:!!x.correct,p_response_ms:x.responseMs??null,p_session_mode:x.sessionMode||'unknown',p_course_id:x.courseId||'equipment',p_exam_id:x.examId||'exam-1',p_bank_id:x.bankId||'unknown',p_topic:x.topic||'Other'}})===true
+return await api('/rest/v1/rpc/mbu_submit_item_contribution_v2',{method:'POST',body:{p_question_id:x.questionId,p_correct:!!x.correct,p_response_ms:x.responseMs??null,p_session_mode:x.sessionMode||'unknown',p_course_id:x.courseId||window.MBU_CONTEXT?.courseId||'unknown',p_exam_id:x.examId||window.MBU_CONTEXT?.examId||'unknown',p_bank_id:x.bankId||'unknown',p_topic:x.topic||'Other'}})===true
 }
 async function refreshCalibration(force=false){
 requireAccountAccess();if(!force&&calibrationFetchedAt&&Date.now()-calibrationFetchedAt<300000)return calibrationByKey;
