@@ -2771,20 +2771,20 @@
       "id": "PHA-112",
       "set": 1,
       "type": "multi",
-      "stem": "Which TWO induction scenarios increase awareness risk? (Select 2)",
+      "stem": "Which TWO induction scenarios can increase awareness risk when hypnotic dosing is not maintained appropriately? (Select 2)",
       "options": [
-        "RSII",
-        "Difficult airway",
-        "Volatile maintenance with end-tidal monitoring",
-        "Benzodiazepine premedication",
-        "Adequate hypnotic dose",
-        "Slow titrated induction with volatile"
+        "Rapid-sequence induction",
+        "Prolonged difficult-airway management after the induction dose",
+        "Volatile maintenance with measured end-tidal agent concentration",
+        "Adequate ongoing hypnotic administration",
+        "Routine preoxygenation",
+        "Quantitative neuromuscular monitoring"
       ],
       "answer": [
         0,
         1
       ],
-      "explanation": "RSI and difficult airways raise awareness risk because hypnotic dosing may lapse during intubation. Volatile anesthesia with ETAG monitoring lowers risk.",
+      "explanation": "Rapid sequence induction and prolonged difficult-airway management can create awareness risk if the initial hypnotic effect wanes before maintenance anesthesia is established. The risk comes from inadequate hypnotic delivery, not from RSI itself.",
       "citation": "",
       "topic": "Awareness and team communication",
       "sourceTitle": "Phases of General Anesthesia",
@@ -2827,21 +2827,21 @@
       "id": "PHA-114",
       "set": 1,
       "type": "multi",
-      "stem": "Which THREE strategies reduce awareness risk during maintenance? (Select 3)",
+      "stem": "Which THREE strategies can reduce accidental awareness risk in appropriate patients? (Select 3)",
       "options": [
-        "Processed EEG monitoring",
-        "End-tidal inhaled agent monitoring",
-        "Avoiding unnecessary neuromuscular blockade",
-        "Higher volatile concentrations in every patient",
-        "Deep paralysis to prevent movement",
-        "TIVA without depth monitoring"
+        "Monitor end-tidal anesthetic concentration when volatile anesthesia is used",
+        "Verify continuous IV drug delivery during TIVA",
+        "Use processed EEG when clinically indicated, particularly when anesthetic concentration cannot be directly measured",
+        "Maintain a high processed-EEG dose target in every patient",
+        "Use deep neuromuscular blockade to prevent awareness",
+        "Assume normal BP excludes awareness"
       ],
       "answer": [
         0,
         1,
         2
       ],
-      "explanation": "Reduced risk with BIS, ETAG monitoring, avoiding NMB, and assessing clinical signs.",
+      "explanation": "Prevention centers on reliable anesthetic delivery. End-tidal agent monitoring is useful with volatile anesthesia; IV patency and pump delivery are critical during TIVA; processed EEG can be useful in selected higher-risk situations. Neuromuscular blockade does not provide hypnosis.",
       "citation": "",
       "topic": "Awareness and team communication",
       "sourceTitle": "Phases of General Anesthesia",
@@ -3327,17 +3327,17 @@
       "id": "PHA-134",
       "set": 1,
       "type": "single",
-      "stem": "During otherwise stable maintenance, SpO2 abruptly falls from 99% to 88%. Before assuming monitor or machine failure, which troubleshooting priority should guide the initial assessment?",
+      "stem": "During otherwise stable maintenance, SpO2 abruptly falls from 99% to 88%. Which immediate approach best balances patient rescue with rapid equipment troubleshooting?",
       "options": [
-        "Patient, then airway, then machine",
-        "Machine first, then patient",
-        "Call for help before any assessment",
-        "Replace the pulse-oximeter probe first"
+        "Increase inspired oxygen and assess the patient and airway while simultaneously checking ventilation, circuit, oxygen supply, and signal quality",
+        "Assume monitor failure until proven otherwise",
+        "Replace the pulse-oximeter probe before assessing ventilation",
+        "Ignore the value until a second monitor confirms it"
       ],
       "answer": [
         0
       ],
-      "explanation": "The novice approach to desaturation starts with the patient, then the airway, then the machine.",
+      "explanation": "Unexpected desaturation requires immediate oxygenation support and a rapid systematic assessment of the patient, airway, ventilation/circuit, oxygen supply, and monitor. The sequence should not delay treatment of a potentially real hypoxemic event.",
       "citation": "",
       "topic": "Maintenance framework, airway, and breathing",
       "sourceTitle": "Phases of General Anesthesia",
@@ -3375,17 +3375,17 @@
       "id": "PHA-136",
       "set": 1,
       "type": "single",
-      "stem": "For intraoperative desaturation, which troubleshooting sequence best prioritizes patient causes before equipment?",
+      "stem": "For new intraoperative desaturation, which systematic sequence best organizes troubleshooting after immediate oxygenation support is provided?",
       "options": [
-        "Patient, airway, circuit, O2, monitor",
-        "Monitor, O2 supply, patient, airway, circuit",
-        "Airway, patient, monitor, circuit, O2 supply",
-        "O2 supply, monitor, circuit, airway, patient"
+        "Patient and airway, ventilation/circuit, oxygen supply, then monitor/signal",
+        "Monitor first, then oxygen supply, then patient",
+        "Replace the pulse-oximeter probe before assessing the airway",
+        "Machine troubleshooting only until a fault is found"
       ],
       "answer": [
         0
       ],
-      "explanation": "The advanced approach goes patient, airway, ventilation and circuit, O2 supply, then monitor.",
+      "explanation": "A systematic assessment prioritizes the patient and airway, then ventilation and circuit, oxygen supply, and monitoring signal while corrective oxygenation and ventilation occur in parallel.",
       "citation": "",
       "topic": "Maintenance framework, airway, and breathing",
       "sourceTitle": "Phases of General Anesthesia",
