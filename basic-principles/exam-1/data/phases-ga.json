@@ -11635,7 +11635,7 @@
       "answer": [
         0
       ],
-      "explanation": "Longer-acting opioids can outlast naloxone, causing recurrent respiratory depression.",
+      "explanation": "Naloxone can restore ventilation while its receptor antagonism persists, but many opioids have a longer duration of action. When naloxone effect wanes first, opioid toxicity can recur, so continued respiratory monitoring and repeat dosing or infusion may be necessary.",
       "citation": "",
       "topic": "Cross-phase cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -11755,7 +11755,7 @@
       "answer": [
         0
       ],
-      "explanation": "On 100% oxygen, PaO2 should be several hundred. A PaO2 of 85 shows large V/Q mismatch or shunt that a normal SpO2 conceals.",
+      "explanation": "SpO2 lies on the flat upper portion of the oxyhemoglobin dissociation curve, so saturation can remain near normal across a wide range of high PaO2 values. On FiO2 1.0, a PaO2 of only 85 mmHg is therefore profoundly abnormal and indicates major impairment of oxygen transfer despite the reassuring saturation.",
       "citation": "",
       "topic": "Cross-phase cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -11827,7 +11827,7 @@
       "answer": [
         0
       ],
-      "explanation": "Emboli from cementing reduce pulmonary perfusion, lowering ETCO2 (more dead space), cardiac output, and oxygenation.",
+      "explanation": "An embolic event during cementing can acutely obstruct pulmonary vessels, increasing dead space and reducing right-to-left cardiac output. Less CO2 reaches the lungs, systemic pressure falls, and oxygenation deteriorates, explaining the simultaneous decrease in ETCO2, blood pressure, and SpO2.",
       "citation": "",
       "topic": "Cross-phase cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -11995,7 +11995,7 @@
       "answer": [
         0
       ],
-      "explanation": "Citrate in blood products binds calcium; hypocalcemia causes hypotension and QT prolongation. The lecture lists hypocalcemia to anticipate.",
+      "explanation": "Stored blood contains citrate, which chelates ionized calcium. Rapid large-volume transfusion can deliver citrate faster than it is metabolized, producing hypocalcemia with impaired myocardial contractility, vasodilation or hypotension, and QT prolongation; ionized calcium guides replacement.",
       "citation": "",
       "topic": "Cross-phase cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -12379,7 +12379,7 @@
       "answer": [
         0
       ],
-      "explanation": "A TOF ratio of at least 0.9 makes clinically important residual nondepolarizing neuromuscular blockade much less likely when the measurement is valid and obtained at the adductor pollicis. Persistent somnolence and hypoventilation should prompt evaluation of residual anesthetic/opioid effects and other causes rather than claiming TOFR alone absolutely rules out every weakness-related problem.",
+      "explanation": "A valid adductor-pollicis TOFR of at least 0.9 makes clinically important residual nondepolarizing blockade less likely. Persistent somnolence with small tidal volumes should therefore shift attention toward residual opioid or hypnotic effect, hypercapnia, metabolic abnormalities, or other causes while ventilation remains supported.",
       "citation": "",
       "topic": "Cross-phase cases",
       "sourceTitle": "Phases of General Anesthesia",
