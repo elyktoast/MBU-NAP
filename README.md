@@ -4,7 +4,7 @@
 
 **Stable 1.x / Phase 3 validation, intelligence, and scale pass complete** — canonical quiz runtimes, balanced answer presentation, duplicate-aware Studio/Adaptive sessions, conservative CAT calibration gates, cumulative Weak Areas, Review Next guidance, private in-app question reporting, operator question/mode/trend analytics, deterministic content-review queues, responsive mobile layouts, local-first persistence, Supabase cross-device sync, retention visibility, accessibility guardrails, and automated release gates are in place.
 
-SRNA Study Tool is a local-first nurse anesthesia study application. Basic Principles is the currently published course; the Equipment implementation is retained internally as a shared-engine regression/reference fixture.
+SRNA Study Tool is a local-first nurse anesthesia study application. Equipment and Basic Principles are published courses. Shared study intelligence and CAT calibration infrastructure operate across courses.
 
 ## Current architecture
 
