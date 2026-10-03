@@ -3703,7 +3703,7 @@
       "answer": [
         0
       ],
-      "explanation": "Apneic oxygenation requires a patent upper airway for oxygen to reach the alveoli.",
+      "explanation": "Apneic oxygenation depends on an open path from the oxygen source to the alveoli. Complete pharyngeal obstruction prevents oxygen from reaching the lungs, so saturation can fall despite an adequate nasal-cannula flow rate.",
       "citation": "",
       "topic": "Preoxygenation, BMV, and apneic oxygenation",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -3727,7 +3727,7 @@
       "answer": [
         3
       ],
-      "explanation": "Apneic oxygenation maintains oxygenation but not ventilation, so CO2 accumulates.",
+      "explanation": "Apneic oxygenation can continue supplying oxygen without removing carbon dioxide. SpO2 may therefore remain acceptable while PaCO2 rises and respiratory acidosis progresses, which is why oxygenation is not equivalent to ventilation.",
       "citation": "",
       "topic": "Preoxygenation, BMV, and apneic oxygenation",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -3895,7 +3895,7 @@
       "answer": [
         0
       ],
-      "explanation": "Levering on teeth risks damage.",
+      "explanation": "Using the maxillary teeth as a fulcrum concentrates force on the incisors and can cause dental trauma. The laryngoscope should be lifted along its handle rather than rocked backward against the teeth.",
       "citation": "",
       "topic": "Laryngoscopy, ETT, and positioning",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -4015,7 +4015,7 @@
       "answer": [
         3
       ],
-      "explanation": "Nitrous oxide diffuses into air-filled cuffs and raises their pressure.",
+      "explanation": "Nitrous oxide diffuses into an air-filled endotracheal-tube cuff faster than nitrogen diffuses out. Cuff volume and pressure can therefore rise during nitrous oxide anesthesia even when no additional air is injected.",
       "citation": "",
       "topic": "Laryngoscopy, ETT, and positioning",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -4063,7 +4063,7 @@
       "answer": [
         1
       ],
-      "explanation": "Resistance varies with 1/r⁴: (7/6)⁴ ≈ 1.85, about 85% higher.",
+      "explanation": "For laminar flow, resistance varies inversely with the fourth power of radius. Even a modest decrease in endotracheal-tube diameter therefore produces a large increase in resistance; the cited 7-to-6 comparison is roughly an 85% increase.",
       "citation": "",
       "topic": "Laryngoscopy, ETT, and positioning",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -4804,7 +4804,7 @@
       "answer": [
         3
       ],
-      "explanation": "Airway planning should begin before induction of anesthesia.",
+      "explanation": "A predicted difficult airway should have a primary plan, rescue options, equipment, and help identified before induction. Waiting until the first failure wastes time after oxygen reserve and airway control may already be deteriorating.",
       "citation": "",
       "topic": "Difficult airway and algorithms",
       "sourceTitle": "Basic Airway Assessment & Management",
