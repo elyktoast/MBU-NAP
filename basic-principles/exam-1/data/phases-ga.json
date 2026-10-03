@@ -10019,7 +10019,7 @@
       "answer": [
         0
       ],
-      "explanation": "Sufentanil infusions should stop about 30–45 minutes before the end; remifentanil can run until 5–10 minutes before.",
+      "explanation": "A longer-acting opioid infusion continued too near emergence can contribute to delayed awakening and respiratory depression. Timing should be individualized to dose, duration, patient factors, surgical stimulation, and the desired transition rather than a fixed 30–45 minute cutoff.",
       "citation": "",
       "topic": "Emergence cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -10067,7 +10067,7 @@
       "answer": [
         0
       ],
-      "explanation": "Emergence requires letting CO2 rise (40+ mmHg) to stimulate breathing.",
+      "explanation": "Excessive controlled ventilation can lower PaCO2 below the patient's apneic threshold and delay spontaneous respiratory effort. Allowing CO2 to return toward an appropriate physiologic level may help, but there is no requirement to force ETCO2 above a fixed 40-mmHg threshold.",
       "citation": "",
       "topic": "Emergence cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -10139,7 +10139,7 @@
       "answer": [
         0
       ],
-      "explanation": "Extubation requires documented TOFR >0.9.",
+      "explanation": "A quantitative TOF ratio of at least 0.9 at the adductor pollicis should be confirmed before extubation after nondepolarizing neuromuscular blockade.",
       "citation": "",
       "topic": "Emergence cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -10499,7 +10499,7 @@
       "answer": [
         0
       ],
-      "explanation": "NPPE is treated with oxygen, CPAP/BiPAP, and diuretics as needed.",
+      "explanation": "Negative-pressure pulmonary edema is managed primarily with relief of obstruction, oxygen, and positive airway pressure, escalating to intubation/PEEP when necessary. Diuretics are not routine because the edema is not primarily caused by fluid overload.",
       "citation": "",
       "topic": "Emergence cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -11119,15 +11119,15 @@
       "type": "single",
       "stem": "Processed-EEG index is 90 and the patient appears awake but cannot move; quantitative TOF shows only 1/4 twitches. Which explanation best fits?",
       "options": [
-        "Residual neuromuscular blockade is masking motor response despite light hypnosis/awareness",
-        "Deep volatile anesthesia",
-        "Normal complete recovery",
-        "Hypothermia as the only possible cause"
+        "Residual neuromuscular blockade can mask movement despite inadequate hypnotic depth",
+        "Deep volatile anesthesia is proven by the TOF count",
+        "A TOF count of 1 confirms normal complete recovery",
+        "Processed EEG directly measures neuromuscular strength"
       ],
       "answer": [
         0
       ],
-      "explanation": "A high BIS with minimal movement suggests residual paralysis.",
+      "explanation": "Neuromuscular blockade suppresses motor response but does not provide hypnosis or amnesia. A high processed-EEG value is not diagnostic by itself, but together with clinical evidence of wakefulness it should prompt immediate assessment of anesthetic delivery and possible awareness.",
       "citation": "",
       "topic": "Cross-phase cases",
       "sourceTitle": "Phases of General Anesthesia",
