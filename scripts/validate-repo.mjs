@@ -507,6 +507,16 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(studio.includes("syncCanonical('combined'"))fail('Studio Phase 3 still applies the index-based sync path to Combined ID-keyed state');
 }
 
+// Modular Studio boundary: core owns data/orchestration, runtime owns UI/session behavior, and loader starts only after both exist.
+{
+ const core=read('equipment/assets/studio-page.js'),runtime=read('equipment/assets/studio-runtime.js'),loader=read('equipment/assets/studio-loader.js');
+ for(const token of ['function loadBanks()','window.MBUStudioCoreReady=loadBanks'])if(!core.includes(token))fail('Studio core initialization contract missing: '+token);
+ for(const token of ['function buildTopics()','function renderHome()','function startMode(','function showQ()','function grade()','function nextQ()'])if(!runtime.includes(token))fail('Studio runtime boundary missing: '+token);
+ if(core.includes('function showQ()')||core.includes('function renderHome()'))fail('Studio UI/session behavior leaked back into the core module');
+ const coreLoad=loader.indexOf("runtime.loadScript('studio-page.js')"),runtimeLoad=loader.indexOf("runtime.loadScript('studio-runtime.js')"),start=loader.indexOf('window.MBUStudioCoreReady()');
+ if(coreLoad<0||runtimeLoad<0||start<0||!(coreLoad<runtimeLoad&&runtimeLoad<start))fail('Studio modular startup order must be core -> runtime -> initialize');
+}
+
 // Studio runtime and shared assets are build-driven, not duplicated in HTML.
 {
  const page=read('equipment/exam-1/studio.html'),loader=read('equipment/assets/studio-loader.js');
