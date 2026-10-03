@@ -240,7 +240,7 @@ checkHazardNavigators();
 }
 function checkCanonicalSubmission(){
   const engine=read('equipment/assets/quiz-engine.js');
-  const studio=read('equipment/assets/studio-page.js');
+  const studio=read('equipment/assets/studio-page.js'),studioRuntime=read('equipment/assets/studio-runtime.js');
   const standard=read('equipment/assets/hazards-standard-engine.js');
   const challenge=read('equipment/assets/hazards-quiz-engine.js');
   for(const bit of [
