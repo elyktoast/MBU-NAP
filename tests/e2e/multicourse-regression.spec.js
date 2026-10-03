@@ -79,12 +79,14 @@ test.describe('multi-course foundation', () => {
     await page.goto('/');
     await waitForPageReady(page);
     const homeNav = page.locator('.mbu-global-nav');
+    await expect(homeNav).toBeVisible();
     await expect(homeNav.getByRole('link', { name: 'SRNA Study Tool', exact: true })).toHaveAttribute('href', /\/SRNA-STUDY-TOOL\/$|\/$/);
     await expect(homeNav.getByRole('link', { name: 'Equipment', exact: true })).toHaveAttribute('href', /\/equipment\/$/);
 
     await page.goto('/basic-principles/exam-1/');
     await waitForPageReady(page);
     const nav = page.locator('.mbu-global-nav');
+    await expect(nav).toBeVisible();
     await expect(nav.getByRole('link', { name: 'Basic Principles', exact: true })).toHaveAttribute('href', /\/basic-principles\/$/);
     await expect(nav.getByRole('link', { name: 'Study Studio', exact: true })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html$/);
     await expect(nav.getByRole('link', { name: /Adaptive/, exact: false })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html\?mode=adaptive$/);
