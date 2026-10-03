@@ -2463,8 +2463,9 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Account panel separates sign in and account creation cleanly', async ({ page }) => {
-    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
-    await page.locator('.mbu-global-nav__cloud').click();
+    await page.evaluate(()=>localStorage.removeItem('mbu_supabase_session_v1'));
+    await page.goto('/');
+    await page.locator('a[href="equipment/"][data-course-link]').click();
     await expect(page.locator('[data-auth-signin]')).toBeVisible();
     await expect(page.locator('[data-auth-signup]')).toBeHidden();
     await page.locator('[data-auth-view="signup"]').click();
@@ -2474,28 +2475,14 @@ test.describe('canonical quiz regression', () => {
     await page.locator('[data-account-close]').click();
   });
 
-  test('Guest users can study normally but Adaptive Mode requires an account', async ({ page }) => {
-    await page.evaluate(()=>{localStorage.removeItem('mbu_supabase_session_v1');sessionStorage.clear()});
-    await page.goto(exam + '/studio.html');
-    await waitForStudio(page);
-    expect(await page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(false);
-    await expect(page.getByRole('button',{name:'Start Smart Review'})).toBeVisible();
-    await expect(page.locator('#adaptiveToggle')).toBeVisible();
-    await page.locator('#adaptiveToggle').click();
-    await expect(page.locator('#adaptiveToggle')).not.toBeChecked();
+  test('Guest users must sign in before entering a course', async ({ page }) => {
+    await page.evaluate(()=>localStorage.removeItem('mbu_supabase_session_v1'));
+    await page.goto('/');
+    await page.locator('a[href="equipment/"][data-course-link]').click();
     await expect(page.locator('#mbu-account-panel')).toBeVisible();
-    await expect(page.locator('#mbu-account-panel')).toContainText('Sync progress and access Adaptive Mode.');
-    await page.locator('[data-account-close]').click();
-    const selected=await page.evaluate(()=>{
-      const first=document.querySelector('#sourceChecks input[type=checkbox]');
-      if(first)first.checked=true;
-      document.getElementById('count').value='10';
-      document.getElementById('adaptiveToggle').checked=false;
-      startMode('custom');
-      return session.length;
-    });
-    expect(selected).toBeGreaterThan(0);
-    await expect(page.locator('#quiz')).toBeVisible();
+    await expect(page.locator('[data-auth-signin]')).toBeVisible();
+    await expect(page.locator('[data-auth-signup]')).toBeHidden();
+    expect(new URL(page.url()).pathname.endsWith('/equipment/')).toBe(false);
   });
 
   test('Privacy, Terms, consent, and account controls are accessible without disrupting study flow', async ({ page }) => {
@@ -2796,7 +2783,8 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#analyticsSummary')).toContainText('Last 30 days');
   });
 
-  test('Adaptive 2.1 beta CTA is transparent and routes guests into the account-aware Studio flow', async ({ page }) => {
+  test('Adaptive 2.1 beta CTA is transparent and remains inside the signed-in course flow', async ({ page }) => {
+    await seedSignedIn(page);
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
     const cta=page.locator('#adaptiveBetaCard');
     await expect(cta).toContainText('Adaptive 2.1');
@@ -2805,10 +2793,7 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#tryAdaptiveBtn')).toHaveAttribute('href','studio.html?mode=adaptive');
     await page.locator('#tryAdaptiveBtn').click();
     await waitForStudio(page);
-    await expect(page.locator('#mbu-account-panel')).toHaveClass(/open/);
-    await expect(page.locator('[data-auth-view="signin"]')).toBeVisible();
-    await expect(page.locator('[data-auth-view="signup"]')).toBeVisible();
-    await expect(page.locator('#adaptiveToggle')).not.toBeChecked();
+    await expect(page.locator('#adaptiveToggle')).toBeChecked();
     expect(await page.locator('#sourceChecks input[type=checkbox]:checked').count()).toBeGreaterThan(0);
   });
 
