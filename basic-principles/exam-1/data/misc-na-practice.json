@@ -3743,17 +3743,17 @@
       "id": "MISC-151",
       "set": 1,
       "type": "single",
-      "stem": "Which procedure is most clearly aerosol-generating in a patient with suspected respiratory infection?",
+      "stem": "During upper GI endoscopy in a patient with a transmissible respiratory infection, which feature most increases concern for respiratory aerosol exposure?",
       "options": [
-        "Upper GI endoscopy",
-        "Colonoscopy",
-        "Cataract surgery",
-        "Carpal tunnel release"
+        "Airway manipulation, coughing, gagging, or suctioning during the procedure",
+        "Passage of the endoscope through the GI tract alone guarantees aerosol transmission",
+        "Colonoscopy creates the same respiratory aerosol risk",
+        "ECG monitoring is aerosol-generating"
       ],
       "answer": [
         0
       ],
-      "explanation": "Upper GI endoscopy is an aerosol-generating procedure; colonoscopy is not.",
+      "explanation": "Upper GI endoscopy can provoke coughing/gagging and may involve airway suctioning or other aerosol-generating activities. Infection-control precautions should reflect the respiratory pathogen, procedure details, and current guidance rather than treating every endoscopy as identical.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -4825,17 +4825,17 @@
       "id": "MISC-195",
       "set": 1,
       "type": "single",
-      "stem": "A Black laboring patient is offered general anesthesia for a nonurgent cesarean despite a usable neuraxial option. Which equity concern does this illustrate?",
+      "stem": "An audit finds that Black patients undergoing comparable cesarean deliveries receive general anesthesia more often than White patients even after clinically relevant differences are considered. What concern should the team investigate?",
       "options": [
-        "Disparity in anesthetic technique with implications for maternal risk and bonding",
-        "An appropriate choice based on labor progress",
-        "Improved maternal safety from GA",
-        "A cost-saving strategy"
+        "A potential disparity in anesthetic technique and access to neuraxial care",
+        "General anesthesia is inherently the preferred technique for Black patients",
+        "Race itself determines the safest anesthetic",
+        "The pattern cannot represent an equity issue"
       ],
       "answer": [
         0
       ],
-      "explanation": "Black women are more likely to receive GA, increasing risk and reducing bonding.",
+      "explanation": "A systematic difference in anesthetic technique across racial groups warrants evaluation for differences in access, clinical pathways, patient preferences, comorbidities, urgency, and potential bias. A single patient's anesthetic choice alone does not establish a disparity.",
       "citation": "",
       "topic": "Quality, equity, and ethics scenarios",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -4873,17 +4873,17 @@
       "id": "MISC-197",
       "set": 1,
       "type": "single",
-      "stem": "A patient with ESRD is an appropriate transplant candidate but cannot access transplantation. Which cited 2023 finding does this illustrate?",
+      "stem": "An appropriate kidney-transplant candidate faces major barriers to transplant evaluation and listing. Which health-equity issue does this illustrate?",
       "options": [
-        "Limited access to the preferred kidney-failure treatment",
-        "Dialysis has replaced transplantation as preferred care",
-        "Transplant access is broadly available",
-        "Kidney disease is not a major health burden"
+        "Unequal access to kidney transplantation",
+        "Dialysis has eliminated the need for transplantation",
+        "Transplant access is uniform across eligible populations",
+        "Kidney failure does not create long-term access issues"
       ],
       "answer": [
         0
       ],
-      "explanation": "Transplant is preferred but relatively few have access.",
+      "explanation": "Kidney transplantation can provide substantial survival and quality-of-life benefits for appropriate candidates, but access to evaluation, listing, organs, and transplantation is not equal across populations.",
       "citation": "",
       "topic": "Quality, equity, and ethics scenarios",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
