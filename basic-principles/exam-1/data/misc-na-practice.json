@@ -2492,7 +2492,7 @@
       "answer": [
         0
       ],
-      "explanation": "Those who lack ability to consent require additional protections.",
+      "explanation": "Patients who cannot provide informed consent may have limited ability to protect their own interests in research. Enrollment therefore requires added safeguards appropriate to the study, including legally authorized permission when applicable and minimization of unnecessary risk.",
       "citation": "",
       "topic": "Cultural competence and research ethics",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2516,7 +2516,7 @@
       "answer": [
         0
       ],
-      "explanation": "Research consent must clearly describe anticipated risks and benefits.",
+      "explanation": "Valid research consent must describe reasonably foreseeable risks and potential benefits, not merely identify the intervention. Omitting possible harms prevents participants from making an adequately informed voluntary decision.",
       "citation": "",
       "topic": "Cultural competence and research ethics",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2540,7 +2540,7 @@
       "answer": [
         0
       ],
-      "explanation": "De-identification protects confidentiality and privacy.",
+      "explanation": "De-identification reduces the connection between research data and a participant's identity, supporting confidentiality and privacy. It does not eliminate every re-identification risk, so data-access, storage, and IRB-approved protections still matter.",
       "citation": "",
       "topic": "Cultural competence and research ethics",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2567,7 +2567,7 @@
         0,
         1
       ],
-      "explanation": "APSF priorities include NORA safety and perioperative delirium and brain health, along with culture of safety, medication safety, burnout, and distractions.",
+      "explanation": "The cited APSF priorities include safety in non-operating-room anesthesia locations and perioperative delirium/brain health among broader patient-safety concerns. Priority lists can evolve, so this answer is anchored to the lecture's cited framework.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2591,7 +2591,7 @@
       "answer": [
         0
       ],
-      "explanation": "Handoff errors fall under patient-related communication and transitions of care.",
+      "explanation": "An accurately identified allergy that disappears during transfer of care is a communication and transition failure. Standardized handoffs and closed-loop confirmation of critical information help keep high-risk facts from being lost between teams.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2615,7 +2615,7 @@
       "answer": [
         0
       ],
-      "explanation": "Vigilance is readiness to detect and respond to small changes that occur at random intervals.",
+      "explanation": "Vigilance is sustained readiness to detect small, unpredictable changes before they become obvious crises. Recognizing a subtle ETCO2 trend before an alarm threshold is crossed demonstrates active monitoring rather than alarm-dependent observation.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2639,7 +2639,7 @@
       "answer": [
         0
       ],
-      "explanation": "Situational awareness includes past, present, and projected future status.",
+      "explanation": "Situational awareness combines perception of current data, comprehension of what those data mean in context, and projection of what is likely to happen next. Integrating baseline pressure, the current trend, and expected aortic-clamp physiology demonstrates all three.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2663,7 +2663,7 @@
       "answer": [
         0
       ],
-      "explanation": "Perceiving past, present, and projecting future risk is situational awareness.",
+      "explanation": "The clinician is integrating historical information, current respiratory observations, and anticipated future deterioration. That temporal integration is characteristic of situational awareness rather than simple recall or isolated vigilance.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2687,7 +2687,7 @@
       "answer": [
         0
       ],
-      "explanation": "Automation can shift providers into a passive role, reducing vigilance.",
+      "explanation": "Automation can reduce workload but can also promote complacency and passive monitoring when clinicians begin relying on alarms to direct attention. Active scanning of waveforms, trends, the patient, and equipment remains necessary even when automated alerts are available.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2711,7 +2711,7 @@
       "answer": [
         0
       ],
-      "explanation": "Loud music that masks alarms is an auditory disruption.",
+      "explanation": "The competing sound directly interferes with perception of an auditory monitor cue, making auditory distraction the primary mechanism. The safety consequence is not merely annoyance; masking a changing pulse-oximeter tone can delay recognition of deterioration.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2735,7 +2735,7 @@
       "answer": [
         0
       ],
-      "explanation": "Devices that divert the eyes are visual distractions.",
+      "explanation": "Looking at a phone diverts visual attention from the patient and monitors, making visual distraction the most direct category. It can simultaneously add cognitive distraction, but the immediate missed monitor change follows loss of visual attention.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2759,7 +2759,7 @@
       "answer": [
         0
       ],
-      "explanation": "Multitasking and preparing for other patients increase cognitive load.",
+      "explanation": "Preparing medications for another patient requires working memory, planning, and task switching while vigilance is still required for the current anesthetic. That competing mental workload increases cognitive load and can impair detection or decision-making.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2788,7 +2788,7 @@
         2,
         3
       ],
-      "explanation": "Strategies include noise limits, alarm protocols, focused time-outs, and OR traffic control.",
+      "explanation": "Reducing nonessential noise and traffic, preserving attention during time-outs, and using disciplined alarm practices all protect limited attentional resources during critical periods. These strategies redesign the environment rather than relying solely on individual willpower.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2812,7 +2812,7 @@
       "answer": [
         0
       ],
-      "explanation": "The sterile OR rule limits communication to safety-related topics during critical periods.",
+      "explanation": "A sterile-OR interval restricts communication to information relevant to immediate patient care during a high-risk task. During difficult airway management, this reduces competing cognitive and auditory demands without suppressing essential closed-loop communication.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2836,7 +2836,7 @@
       "answer": [
         0
       ],
-      "explanation": "Minimize distractions during critical periods like induction.",
+      "explanation": "Induction is a high-workload period in which airway, hemodynamic, and medication changes can occur quickly. Politely postponing unrelated conversation preserves team attention while still allowing all safety-relevant communication.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2864,7 +2864,7 @@
         1,
         2
       ],
-      "explanation": "Policies include device rules, checklists, and time-out adherence.",
+      "explanation": "Device rules, standardized checklists, and monitoring of time-out adherence are department-level controls that shape the environment for many clinicians. They supplement rather than replace individual responsibility for attention.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2888,7 +2888,7 @@
       "answer": [
         0
       ],
-      "explanation": "The AANA defines fatigue as overwhelming tiredness with impaired physical or cognitive function.",
+      "explanation": "Fatigue is more than feeling sleepy; clinically important fatigue degrades cognitive or physical performance. Impaired calculations and decisions after a prolonged shift therefore fit fatigue with functional impairment.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2915,7 +2915,7 @@
         0,
         1
       ],
-      "explanation": "Fatigue causes diminished reflexes and impaired decision-making, along with memory lapses and repeated rechecking of finished tasks.",
+      "explanation": "Fatigue can slow reflexes and degrade judgment, attention, memory, and decision-making. These findings matter because a clinician may remain awake yet no longer perform reliably enough for high-risk anesthesia tasks.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2943,7 +2943,7 @@
         1,
         2
       ],
-      "explanation": "Prolonged wakefulness impairs alertness, performance, cognition, and vigilance.",
+      "explanation": "Extended wakefulness impairs alertness, vigilance, reaction time, cognition, and judgment and increases error risk. The magnitude varies among individuals, so the safety conclusion should focus on impaired performance rather than a precise universal equivalence to another intoxicant.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2973,7 +2973,7 @@
         3,
         4
       ],
-      "explanation": "Minimize consecutive hours, promote sleep and wellness, and address threats to safety.",
+      "explanation": "Fatigue risk is best addressed through system and individual measures: limiting excessive consecutive hours, protecting sleep, providing breaks, promoting wellness, and escalating recognized safety threats. No single countermeasure substitutes for adequate restorative sleep.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2997,7 +2997,7 @@
       "answer": [
         0
       ],
-      "explanation": "Multiple rechecks and missed changes are signs of fatigue.",
+      "explanation": "Repeatedly rechecking a completed task while failing to detect a falling pressure suggests impaired attention allocation and vigilance. Fatigue can narrow or destabilize attention, causing both perseveration on one task and omission of another.",
       "citation": "",
       "topic": "Patient safety, vigilance, and fatigue",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3025,7 +3025,7 @@
         1,
         2
       ],
-      "explanation": "The chain includes infectious agent, reservoir, exit, transmission, entry, and susceptible host.",
+      "explanation": "The chain of infection includes an infectious agent, reservoir, portal of exit, mode of transmission, portal of entry, and susceptible host. Breaking any link can reduce transmission.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3049,7 +3049,7 @@
       "answer": [
         0
       ],
-      "explanation": "Hand hygiene and PPE break the transmission link.",
+      "explanation": "Hand hygiene and gloves reduce transfer of organisms between contaminated sources, hands, equipment, and patients. They therefore primarily interrupt the mode-of-transmission link, although proper aseptic technique can also protect portals of entry.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3073,7 +3073,7 @@
       "answer": [
         0
       ],
-      "explanation": "An immunocompromised patient is a susceptible host at high risk of infection.",
+      "explanation": "Severe neutropenia markedly reduces host defense against infection. The patient therefore represents the susceptible-host link, emphasizing why exposure prevention and aseptic practice are especially important.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3097,7 +3097,7 @@
       "answer": [
         0
       ],
-      "explanation": "Moment 1 is before touching a patient.",
+      "explanation": "WHO Moment 1 is hand hygiene before touching the patient. Cleaning hands immediately before the preoperative physical examination protects the patient from organisms carried on the clinician's hands.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3121,7 +3121,7 @@
       "answer": [
         0
       ],
-      "explanation": "Moment 2 is before a clean or aseptic procedure.",
+      "explanation": "WHO Moment 2 occurs before a clean or aseptic procedure. Arterial-line insertion breaches the skin and enters the vascular system, so hand hygiene immediately beforehand is required even if the clinician recently touched only the same patient.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3145,7 +3145,7 @@
       "answer": [
         0
       ],
-      "explanation": "Moment 3 is after body fluid exposure risk.",
+      "explanation": "WHO Moment 3 follows body-fluid exposure risk. Gloves do not replace hand hygiene, so hands should be cleaned after removing gloves used for blood-contaminated tubing.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3169,7 +3169,7 @@
       "answer": [
         0
       ],
-      "explanation": "Moment 4 is after touching a patient.",
+      "explanation": "WHO Moment 4 is after touching a patient. Cleaning hands before moving from the patient examination to a clean anesthesia workspace helps prevent organisms acquired from the patient from contaminating equipment and medications.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3193,7 +3193,7 @@
       "answer": [
         0
       ],
-      "explanation": "Moment 5 is after touching patient surroundings.",
+      "explanation": "WHO Moment 5 is after touching patient surroundings even without direct patient contact. Bed rails and bedside equipment can carry organisms and transfer them to the clinician's hands.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3217,7 +3217,7 @@
       "answer": [
         0
       ],
-      "explanation": "Clean hands or change gloves after dirty (red) zone contact before touching clean (green) zones.",
+      "explanation": "Airway manipulation is a contamination-prone task, and contaminated gloves should not move directly into medication drawers or other clean work areas. Hand hygiene and glove change as appropriate prevent transfer from the dirty zone into the clean zone.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3241,7 +3241,7 @@
       "answer": [
         0
       ],
-      "explanation": "Hand hygiene is not required between green (clean) zone contacts.",
+      "explanation": "Movement between surfaces that remain within the same clean zone does not itself create a new hand-hygiene indication. Hand hygiene becomes necessary when an established indication occurs or contamination is suspected.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3268,7 +3268,7 @@
         0,
         1
       ],
-      "explanation": "Clean hands after touching a cellphone or picking items off the floor, and after airway manipulation.",
+      "explanation": "Cellphones and floor-contact items are commonly contaminated environmental surfaces. After touching them, hand hygiene is appropriate before returning to medication preparation or other clean anesthesia-workspace tasks.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3292,7 +3292,7 @@
       "answer": [
         0
       ],
-      "explanation": "Hand hygiene should occur at clinically indicated moments, including before aseptic tasks and after patient, body-fluid, contaminated-surface, or dirty-zone contact. A fixed number per hour may be used as a local process metric but should not replace indication-based practice.",
+      "explanation": "Hand hygiene should be driven by clinical indications such as WHO moments, aseptic tasks, body-fluid exposure, patient contact, and contaminated surfaces. A numeric hourly target can support quality measurement but cannot replace cleaning hands when an actual contamination risk occurs.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3321,7 +3321,7 @@
         2,
         3
       ],
-      "explanation": "Perioperative infection strategies include decolonization, hand hygiene, vascular access care, and environmental cleaning.",
+      "explanation": "Effective perioperative infection prevention uses multiple barriers, including appropriate patient decolonization when indicated, hand hygiene, disinfection of vascular-access ports, and cleaning of contaminated anesthesia-workspace surfaces. No single intervention substitutes for the bundle.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3345,7 +3345,7 @@
       "answer": [
         0
       ],
-      "explanation": "Many superficial incisional SSI definitions use a 30-day postoperative surveillance period. Surveillance definitions vary by SSI category and procedure, so the procedure-specific criteria should be applied.",
+      "explanation": "A superficial incisional infection appearing 20 days after surgery falls within the commonly used 30-day surveillance period for superficial incisional SSI. Final classification still requires the relevant surveillance definition and clinical criteria, not timing alone.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3369,7 +3369,7 @@
       "answer": [
         0
       ],
-      "explanation": "SSI surveillance periods are defined by the surveillance system, procedure, and infection category. Implant presence alone should not be taught as a universal rule that every postoperative infection is surveilled for exactly 90 days.",
+      "explanation": "SSI surveillance windows are determined by the surveillance system, operative procedure, and infection category. The presence of an implant does not create one universal surveillance duration for every infection, so the procedure-specific definition should be applied.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3393,7 +3393,7 @@
       "answer": [
         0
       ],
-      "explanation": "CMS quality and payment programs can create financial consequences for selected hospital-acquired conditions and quality measures, but it is inaccurate to state that CMS simply does not reimburse every SSI.",
+      "explanation": "CMS does not apply a blanket rule that every SSI is simply unpaid. Financial effects depend on the particular hospital-acquired-condition, quality-reporting, value-based purchasing, or other payment program and its current eligibility and coding rules.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3417,7 +3417,7 @@
       "answer": [
         0
       ],
-      "explanation": "Most prophylactic antibiotics should be given within 60 minutes before incision.",
+      "explanation": "For cefazolin and most standard surgical prophylactic antibiotics, administration should generally begin so the dose is completed within 60 minutes before incision. For an 0800 incision, 0700 to 0800 fits that timing window.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3441,7 +3441,7 @@
       "answer": [
         0
       ],
-      "explanation": "Vancomycin and fluoroquinolones may start up to 120 minutes before incision.",
+      "explanation": "Vancomycin requires slower infusion to reduce infusion-related reactions and therefore may need to begin earlier than antibiotics that can be administered quickly. Prophylaxis guidance commonly allows initiation within 120 minutes before incision for vancomycin and fluoroquinolones.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3465,7 +3465,7 @@
       "answer": [
         0
       ],
-      "explanation": "Perioperative hypothermia is associated with adverse outcomes, including increased SSI risk in some settings. Active warming is commonly used to maintain core temperature around or above 36°C rather than relying on an arbitrary Fahrenheit cutoff.",
+      "explanation": "A core temperature of 35.7 degrees C is perioperative hypothermia. Active warming and temperature monitoring are used to maintain normothermia, commonly around or above 36 degrees C, because hypothermia is associated with adverse outcomes including impaired coagulation, delayed drug metabolism, discomfort, and in some settings increased SSI risk.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3489,7 +3489,7 @@
       "answer": [
         0
       ],
-      "explanation": "Glycemic control below 180 mg/dL reduces surgical site infection.",
+      "explanation": "A glucose of 228 mg/dL exceeds the commonly used perioperative target of less than 180 mg/dL in many surgical patients. Hyperglycemia is associated with infection and other complications, while overly aggressive treatment that causes hypoglycemia is also harmful.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3513,7 +3513,7 @@
       "answer": [
         0
       ],
-      "explanation": "Some guidelines and trials have evaluated perioperative FiO2 around 0.8 for selected intubated patients, but evidence and recommendations are not uniform. Oxygen should meet patient needs while avoiding a rigid universal high-FiO2 rule.",
+      "explanation": "Adequate tissue oxygenation is important for wound healing and host defense, but routine high inspired oxygen for every patient is not a universally accepted SSI-prevention requirement. FiO2 should meet oxygenation needs and applicable procedure-specific guidance while avoiding a rigid one-size-fits-all target.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3537,7 +3537,7 @@
       "answer": [
         0
       ],
-      "explanation": "Normovolemia (euvolemia) supports SSI prevention.",
+      "explanation": "Large liberal crystalloid loads can cause interstitial and bowel edema without improving useful perfusion. Goal-directed maintenance of euvolemia seeks adequate organ and wound perfusion while avoiding both hypovolemia and unnecessary fluid overload.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3567,7 +3567,7 @@
         3,
         4
       ],
-      "explanation": "Prevention includes antibiotics, normothermia, glucose control, oxygenation, and normovolemia.",
+      "explanation": "SSI prevention is multifactorial: timely antimicrobial prophylaxis, normothermia, reasonable glycemic control, adequate oxygenation, and euvolemia each address different contributors to infection risk. The exact bundle should follow procedure- and patient-specific guidance.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3591,7 +3591,7 @@
       "answer": [
         0
       ],
-      "explanation": "An AGP is a procedure that produces aerosols, including droplet nuclei.",
+      "explanation": "Tracheal intubation is treated as an aerosol-generating procedure in respiratory infection-control guidance because airway manipulation can disperse respiratory particles. Appropriate precautions depend on the pathogen and current transmission-based recommendations.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3620,7 +3620,7 @@
         2,
         3
       ],
-      "explanation": "For aerosol-generating procedures when airborne respiratory precautions are indicated, appropriate PPE includes gloves, gown, eye protection, and a fit-tested N95 or equivalent/higher-level respirator. A standard surgical or cloth mask should not be presented as equivalent respiratory protection for that scenario.",
+      "explanation": "When airborne respiratory precautions are indicated during an aerosol-generating airway procedure, protection includes gloves, gown, eye protection, and a fit-tested N95 or equivalent/higher-level respirator. A standard surgical mask does not provide equivalent respirator-level protection for that scenario.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3648,7 +3648,7 @@
         1,
         2
       ],
-      "explanation": "Higher-risk AGPs include intubation, NIV/CPAP, tracheostomy, and manual ventilation.",
+      "explanation": "Tracheal intubation, noninvasive positive-pressure ventilation, and manual ventilation around intubation have been associated with increased transmission risk in respiratory-outbreak literature. Risk depends on pathogen, technique, environment, and protective measures.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3677,7 +3677,7 @@
         2,
         3
       ],
-      "explanation": "AGPs include extubation, open suctioning, bronchoscopy, airway surgery, HFNO, and upper GI endoscopy.",
+      "explanation": "Extubation, bronchoscopy, open airway suctioning, and high-flow nasal oxygen are commonly managed with aerosol precautions in respiratory-virus guidance. Classification can vary with pathogen and evolving evidence, so current institutional infection-control policy should guide practice.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3705,7 +3705,7 @@
         1,
         2
       ],
-      "explanation": "Unclear-risk AGPs include compressions, defibrillation, NG tubes, NIV mask adjustment, nebulizers, and ventilator disconnection.",
+      "explanation": "Evidence for aerosol generation or transmission risk is less consistent for some activities such as chest compressions, nebulizer therapy, and nasogastric-tube insertion. Uncertainty should be distinguished from proof of no risk, and current pathogen-specific guidance should govern precautions.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -3729,7 +3729,7 @@
       "answer": [
         0
       ],
-      "explanation": "Extubation is an AGP requiring full PPE.",
+      "explanation": "Extubation involves airway manipulation and can provoke coughing and respiratory-particle dispersion. When aerosol precautions are indicated, gloves, gown, eye protection, and appropriate respirator-level protection should be in place before the procedure begins.",
       "citation": "",
       "topic": "Infection control and SSIs",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
