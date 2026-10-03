@@ -18,7 +18,7 @@
       "answer": [
         0
       ],
-      "explanation": "Safe, effective, patient-centered, timely, efficient, and equitable are the six IOM domains of healthcare quality.",
+      "explanation": "The Institute of Medicine's six quality aims are safe, effective, patient-centered, timely, efficient, and equitable care. Because the scenario explicitly spans preventable harm, evidence, preferences, delay, waste, and disparity, the six-domain framework is the only choice that captures all targets together.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -42,7 +42,7 @@
       "answer": [
         0
       ],
-      "explanation": "Timely care avoids lengthy waits and delays that could be harmful.",
+      "explanation": "Timeliness addresses harmful waits and delays in receiving needed care. The eventual treatment may be clinically correct, but a scheduling delay that causes hypoglycemia still represents a quality failure because care was not delivered when needed.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -66,7 +66,7 @@
       "answer": [
         0
       ],
-      "explanation": "Efficient care avoids waste of equipment, supplies, ideas, and energy.",
+      "explanation": "Efficiency means avoiding waste of equipment, supplies, time, and other resources while preserving quality. Routinely opening and discarding unused airway kits consumes resources without adding patient benefit, so the primary domain affected is efficiency.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -90,7 +90,7 @@
       "answer": [
         0
       ],
-      "explanation": "Equitable care does not vary in quality based on patient characteristics, location, or socioeconomic status.",
+      "explanation": "Equity requires that care quality not differ because of socioeconomic or other nonclinical characteristics. Denying an otherwise appropriate epidural solely because of insurance status creates a treatment difference unrelated to medical need.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -114,7 +114,7 @@
       "answer": [
         0
       ],
-      "explanation": "Effective care provides evidence- and science-based services to those who could benefit.",
+      "explanation": "Effectiveness means providing care supported by the best available evidence to patients likely to benefit and avoiding inferior care simply because it is cheaper. Choosing a knowingly worse regimen therefore primarily violates effectiveness.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -138,7 +138,7 @@
       "answer": [
         0
       ],
-      "explanation": "Patient-centered care is respectful and responsive to individual preferences, needs, and values.",
+      "explanation": "Patient-centered care incorporates the patient's preferences, needs, and values into clinically appropriate decisions. A medically reasonable plan can still fail this domain if a clearly expressed preference is ignored without discussion.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -162,7 +162,7 @@
       "answer": [
         0
       ],
-      "explanation": "The safe domain is the avoidance of harm from care meant to help patients.",
+      "explanation": "Barcode scanning is a defensive system intended to prevent wrong-patient, wrong-drug, wrong-dose, and related medication errors. Its primary quality target is safety even if the verification step modestly slows workflow.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -186,7 +186,7 @@
       "answer": [
         0
       ],
-      "explanation": "To Err Is Human (IOM, 1999) and Crossing the Quality Chasm (IOM, 2001) are the foundation of the quality domains.",
+      "explanation": "To Err Is Human (1999) brought national attention to preventable harm and systems-based patient safety, while Crossing the Quality Chasm (2001) articulated broader aims for healthcare quality. Together they are foundational Institute of Medicine reports in the modern U.S. quality movement.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -210,7 +210,7 @@
       "answer": [
         0
       ],
-      "explanation": "The original IOM report estimated 44,000–98,000 deaths annually. Later analyses produced higher estimates, including figures in roughly the 250,000–400,000 range; these estimates depend heavily on definitions and methods and should not be presented as a single current definitive count.",
+      "explanation": "Later publications produced estimates substantially above the original IOM figure, with widely cited values in roughly the 250,000 to 400,000 annual range. These figures are method-dependent estimates, not a single definitive current count, so they should be interpreted as historical estimates rather than a precise mortality statistic.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -234,7 +234,7 @@
       "answer": [
         0
       ],
-      "explanation": "To Err Is Human estimated 44,000–98,000 deaths per year.",
+      "explanation": "To Err Is Human cited an estimated 44,000 to 98,000 annual hospital deaths associated with preventable medical errors based on studies available at the time. Later analyses used different methods and produced higher figures, so the ranges should not be conflated.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -258,7 +258,7 @@
       "answer": [
         0
       ],
-      "explanation": "A medical error is the failure of a planned action to occur as intended, or the use of a wrong plan.",
+      "explanation": "A medical error can occur because a correct plan is executed incorrectly or because the selected plan itself is wrong. The mislabeled syringe illustrates execution failure, while choosing a contraindicated drug from a misunderstood history illustrates faulty planning.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -282,7 +282,7 @@
       "answer": [
         0
       ],
-      "explanation": "Human actions often contribute to adverse events, but modern safety analysis examines latent system conditions, workflow, design, communication, and defenses rather than stopping at individual blame.",
+      "explanation": "Modern safety science does not stop at identifying the person who made the final mistake. It examines latent conditions such as labeling, interruptions, staffing, workflow, interface design, and failed defenses that made the active error more likely to reach the patient.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -306,7 +306,7 @@
       "answer": [
         0
       ],
-      "explanation": "Diagnostic errors include delays in diagnosis, misread tests, and failure to order tests.",
+      "explanation": "The diagnostic process includes obtaining, interpreting, and acting on diagnostic information. The image was obtained on time, but incorrect interpretation caused the diagnosis to be missed, making diagnostic error the primary category.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -330,7 +330,7 @@
       "answer": [
         0
       ],
-      "explanation": "Medication administration mistakes are treatment errors. The classification describes where the failure occurred; a systems analysis should still examine why the syringe confusion was possible.",
+      "explanation": "The therapeutic plan selected the correct medication, but administration of a different syringe caused the failure during treatment delivery. Classification as a treatment error identifies where the failure manifested; systems analysis should still examine why the confusion was possible.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -354,7 +354,7 @@
       "answer": [
         0
       ],
-      "explanation": "Communication breakdowns involve erroneous information between providers or with patients.",
+      "explanation": "The allergy was identified correctly but failed to reach the clinicians who needed it. That makes information transfer and handoff the primary failure, illustrating how communication breakdown can defeat otherwise accurate assessment.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -378,7 +378,7 @@
       "answer": [
         0
       ],
-      "explanation": "Preventative failures include missed routine checks and ignoring safety rules.",
+      "explanation": "Routine equipment checks are preventive defenses intended to detect hazards before patient exposure. Knowingly bypassing the anesthesia-machine checkout removes that defense, so the primary failure is preventive rather than diagnostic or therapeutic.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -402,7 +402,7 @@
       "answer": [
         0
       ],
-      "explanation": "A clinically meaningful medication error should be addressed transparently according to professional disclosure standards and institutional policy even when permanent injury does not occur. Disclosure should focus on what happened, known consequences, and next steps.",
+      "explanation": "Absence of permanent injury does not erase a clinically meaningful medication error. Transparent disclosure should follow professional and institutional standards and explain what occurred, known consequences, current condition, and next steps without speculation.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -426,7 +426,7 @@
       "answer": [
         0
       ],
-      "explanation": "Each slice is a defense layer; harm occurs when holes in several slices line up.",
+      "explanation": "In Reason's Swiss cheese model, each verification process is a separate defensive layer intended to intercept a hazard. Redundancy matters because one layer can fail while another still prevents the error from reaching the patient.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -450,7 +450,7 @@
       "answer": [
         0
       ],
-      "explanation": "Holes are weaknesses in each defense; when they align, an error reaches the patient.",
+      "explanation": "The holes are weaknesses or failures within otherwise protective layers. A broken scanner, inadequate staffing, and skipped double-check become dangerous when their vulnerabilities align so no remaining defense stops the hazard.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -474,7 +474,7 @@
       "answer": [
         0
       ],
-      "explanation": "In the Swiss cheese model, harm reaches the patient when weaknesses in several defensive layers align.",
+      "explanation": "The Swiss cheese model explains harm as penetration through multiple imperfect defenses when their weaknesses temporarily align. Site marking, consent verification, and the time-out are separate layers, so simultaneous weakness in all three can permit wrong-site surgery.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -498,7 +498,7 @@
       "answer": [
         0
       ],
-      "explanation": "The Swiss cheese model of accident causation is attributed to James Reason (1990).",
+      "explanation": "James Reason developed the Swiss cheese model to illustrate how active failures and latent system conditions interact across multiple defensive barriers. Harm occurs when vulnerabilities in those barriers align.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -522,7 +522,7 @@
       "answer": [
         0
       ],
-      "explanation": "Multiple aligned system flaws allowed the error to reach the patient.",
+      "explanation": "The event is not adequately explained by the final clinician action alone. Incorrect labeling, a missed independent check, and unavailable barcode verification represent multiple failed defenses whose alignment allowed the wrong drug to reach the patient.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -546,7 +546,7 @@
       "answer": [
         0
       ],
-      "explanation": "QA/CQI programs focus on processes and systems involved in successes and failures.",
+      "explanation": "Quality assurance and continuous quality improvement examine the processes, structures, and system conditions that shape outcomes. Studying both successful rescue and harmful events can reveal which defenses are reliable and where processes need redesign.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -570,7 +570,7 @@
       "answer": [
         0
       ],
-      "explanation": "QA and CQI programs are often tied to reimbursement benchmarks and practice standards.",
+      "explanation": "Quality measures can serve several purposes simultaneously: internal improvement, benchmarking, accreditation or practice expectations, and in some programs payment incentives or penalties. That external linkage is why outcome tracking can influence operational decisions beyond local CQI.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -597,7 +597,7 @@
         0,
         1
       ],
-      "explanation": "The six graded areas are patient safety, person-centered care, care coordination, effective treatment, healthy living, and care affordability.",
+      "explanation": "The National Healthcare Quality and Disparities Report organizes performance across areas that include patient safety and care coordination, along with person-centered care, effective treatment, healthy living, and affordability/access-related measures.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -621,7 +621,7 @@
       "answer": [
         0
       ],
-      "explanation": "Healthy living covers wellness promotion and preventive care.",
+      "explanation": "Healthy living emphasizes prevention, health promotion, and behaviors or services that reduce future disease burden. Vaccination and smoking cessation therefore fit this domain rather than treatment of an already established acute illness.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -645,7 +645,7 @@
       "answer": [
         0
       ],
-      "explanation": "Patient safety includes healthcare quality, protection from avoidable errors, and HAIs.",
+      "explanation": "Medication errors, falls, and healthcare-associated infections are classic preventable harms arising during healthcare delivery. Reducing them directly targets patient safety.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -669,7 +669,7 @@
       "answer": [
         0
       ],
-      "explanation": "A 31.9% drop removes about 4.0 cases: 12.5 × 0.681 ≈ 8.5 per 1,000.",
+      "explanation": "A 31.9% reduction leaves 68.1% of the original rate. Multiplying 12.5 per 1,000 by 0.681 gives about 8.51 per 1,000, which rounds to approximately 8.5 per 1,000.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -693,7 +693,7 @@
       "answer": [
         0
       ],
-      "explanation": "Recent opioid mortality is driven largely by synthetic opioids, which prescribing limits do not address.",
+      "explanation": "Restricting prescription opioids addresses only one source of exposure. As illicitly manufactured synthetic opioids, particularly fentanyl, became a dominant contributor to overdose mortality, prescription-focused interventions alone could not address the major changing source of risk.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -717,7 +717,7 @@
       "answer": [
         0
       ],
-      "explanation": "Adolescent mental health need has grown, with access especially limited among low-income and Hispanic youths.",
+      "explanation": "The item is tied to the cited course findings, which identify particularly limited treatment access among low-income and Hispanic youth. This is an access disparity rather than evidence that mental-health need is confined to those groups.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -741,7 +741,7 @@
       "answer": [
         0
       ],
-      "explanation": "Transplantation offers better quality of life and life expectancy but is accessible to relatively few.",
+      "explanation": "Kidney transplantation generally offers superior long-term survival and quality of life compared with remaining on dialysis for eligible patients, but organ scarcity, eligibility barriers, referral, evaluation, and other access constraints limit how many patients receive a transplant.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -765,7 +765,7 @@
       "answer": [
         0
       ],
-      "explanation": "More Americans, particularly those with private insurance, report a higher cost burden.",
+      "explanation": "The answer reflects the specific cited findings rather than a universal rule about every privately insured patient. Cost burden depends on premiums, deductibles, copayments, income, plan design, and healthcare use, so insurance status alone does not determine an individual's burden.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -789,7 +789,7 @@
       "answer": [
         0
       ],
-      "explanation": "In 2021, US life expectancy lagged at 76.1 years versus 82.4 years in comparable nations.",
+      "explanation": "The cited 2021 comparison reports U.S. life expectancy of about 76.1 years versus about 82.4 years across comparable peer nations. Because life expectancy changes over time and differs by source methodology, the numbers should remain explicitly anchored to 2021.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -818,7 +818,7 @@
         2,
         3
       ],
-      "explanation": "Important causes of premature death include unintentional injury, heart disease, liver disease, and suicide.",
+      "explanation": "The cited comparative mortality material highlights unintentional injury, including overdose, along with heart disease, liver disease, and suicide as important contributors to premature U.S. mortality relative to peer countries. The item concerns population-level comparative mortality, not individual perioperative risk.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -842,7 +842,7 @@
       "answer": [
         0
       ],
-      "explanation": "Heart disease leads, followed by cancer and unintentional injury.",
+      "explanation": "In the cited U.S. mortality material, heart disease is the leading cause of death. The question is intentionally anchored to that dataset because rankings and counts can change across years.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -866,7 +866,7 @@
       "answer": [
         0
       ],
-      "explanation": "In the cited course dataset, the order was heart disease, cancer, then unintentional injury. Cause-of-death rankings can change by year, so the item is explicitly tied to the cited dataset.",
+      "explanation": "In the cited course dataset, unintentional injury ranked third after heart disease and cancer. Because national cause-of-death rankings can change by year and classification, the answer should be understood as dataset-specific rather than timeless.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -890,7 +890,7 @@
       "answer": [
         0
       ],
-      "explanation": "Evidence shows SDOH have a stronger influence on outcomes than healthcare delivery itself.",
+      "explanation": "Health outcomes reflect social and structural conditions as well as clinical treatment. Housing instability and transportation barriers can alter medication access, follow-up, nutrition, safety, and continuity of care even when the medical treatment itself is equivalent.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -919,7 +919,7 @@
         2,
         3
       ],
-      "explanation": "The five domains are economic stability, education, healthcare access, neighborhood/built environment, and social/community context.",
+      "explanation": "Healthy People 2030 groups social determinants into economic stability, education access and quality, healthcare access and quality, neighborhood and built environment, and social and community context. The four listed correct options are four of those five domains.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -943,7 +943,7 @@
       "answer": [
         0
       ],
-      "explanation": "Financial limits affecting access relate to economic stability.",
+      "explanation": "Inability to afford transportation is fundamentally a financial-resource barrier, placing it primarily within economic stability. It can secondarily impair healthcare access, illustrating that social-determinant domains often interact.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -967,7 +967,7 @@
       "answer": [
         0
       ],
-      "explanation": "The physical environment falls under neighborhood and built environment.",
+      "explanation": "Pharmacy availability, transportation infrastructure, walkability, and neighborhood safety are features of the physical environment in which a patient lives. They therefore fit the neighborhood and built-environment domain.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -991,7 +991,7 @@
       "answer": [
         0
       ],
-      "explanation": "Health literacy connects to education access and quality.",
+      "explanation": "Health literacy is closely linked to the ability to obtain, understand, and use health information and is addressed within education access and quality in this framework. Clinically, instructions should still be adapted to the individual's communication needs rather than assuming literacy from education level.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -1015,7 +1015,7 @@
       "answer": [
         0
       ],
-      "explanation": "SDOH should be assessed and prioritized during care coordination so the plan can address them early.",
+      "explanation": "Transportation, medication affordability, and absence of home support can make an otherwise appropriate ambulatory plan unsafe or impossible. Identifying them during preoperative coordination allows disposition, transportation, prescriptions, and support to be addressed before they cause cancellation or unsafe discharge.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -1039,7 +1039,7 @@
       "answer": [
         0
       ],
-      "explanation": "The ASA's first equity priority is high-quality perioperative care for all populations.",
+      "explanation": "Standardizing evidence-based protocols across geographically different sites reduces unwarranted variation in care quality. The equity goal is consistent high-quality perioperative care regardless of where or in which population a patient receives treatment.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -1063,7 +1063,7 @@
       "answer": [
         0
       ],
-      "explanation": "They received lower quality care for 40% of quality measures (AHRQ, 2021).",
+      "explanation": "The approximately 40% figure is tied to the cited AHRQ disparity dataset and should not be generalized to every quality measure or every individual encounter. It summarizes measured population-level differences across the specified comparison groups and reporting period.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -1090,7 +1090,7 @@
         0,
         1
       ],
-      "explanation": "Worse care for Black adults included postoperative sepsis and pulmonary embolism, along with physiologic or metabolic derangements and AKI.",
+      "explanation": "The cited disparity findings include worse measured outcomes for Black adults in postoperative sepsis and pulmonary embolism, among other measures. These are population-level quality disparities and do not establish a biologic racial cause; clinical and structural factors must be distinguished from race itself.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -1114,7 +1114,7 @@
       "answer": [
         0
       ],
-      "explanation": "Minority women are less likely to receive epidural labor analgesia, which affects later cesarean anesthesia.",
+      "explanation": "Lower epidural use among Black and Hispanic women with comparable labor pain represents a disparity in access or receipt of neuraxial labor analgesia. The observation describes a population-level difference and should prompt examination of access, counseling, institutional, and clinician factors rather than assumptions about patient preference.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -1138,7 +1138,7 @@
       "answer": [
         0
       ],
-      "explanation": "A functioning labor epidural can often be extended for urgent cesarean anesthesia. When neuraxial anesthesia is unavailable or unsuitable, general anesthesia may be required and introduces maternal airway, aspiration, awareness, and neonatal drug-exposure considerations.",
+      "explanation": "A functioning labor epidural can often be extended rapidly for cesarean anesthesia. Without usable neuraxial access, urgent cesarean delivery may require spinal placement if time and circumstances permit or general anesthesia when neuraxial anesthesia is unavailable or unsuitable, introducing maternal airway, aspiration, awareness, and neonatal drug-exposure considerations.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -1162,7 +1162,7 @@
       "answer": [
         0
       ],
-      "explanation": "Racial and ethnic minority women are two to three times more likely to die from pregnancy-related causes.",
+      "explanation": "The cited material reports pregnancy-related mortality roughly two to three times higher among certain racial and ethnic minority groups than the comparison group. This is a population-level disparity shaped by multiple clinical, access, social, and structural factors rather than evidence of an inherent biologic racial difference.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -1186,7 +1186,7 @@
       "answer": [
         0
       ],
-      "explanation": "The ASA's third equity priority is access to pain management.",
+      "explanation": "Ensuring timely adequate analgesia for patients with sickle cell disease directly addresses equitable access to pain management. The clinical goal is treatment based on pain and medical need rather than stereotypes or nonclinical patient characteristics.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -1210,7 +1210,7 @@
       "answer": [
         0
       ],
-      "explanation": "Clinicians' false beliefs about racial biological differences contribute to disparities in pain treatment.",
+      "explanation": "Research has documented false beliefs about biologic racial differences in pain and pain tolerance among some clinicians, which can contribute to undertreatment. Race is a social rather than a reliable biologic proxy for analgesic need, so treatment should be based on the individual patient's condition and response.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
