@@ -6823,7 +6823,7 @@
       "answer": [
         0
       ],
-      "explanation": "Loss of verbal responsiveness should prompt recognition that sedation may be approaching GA with an unprotected airway.",
+      "explanation": "No purposeful response even to painful stimulation is consistent with general-anesthesia depth on the sedation continuum, particularly when ventilation is inadequate. Immediate airway and ventilatory support takes priority; the fact that propofol was administered during a planned MAC does not change the physiologic state.",
       "citation": "",
       "topic": "Propofol and fospropofol",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -6933,9 +6933,9 @@
       "id": "SED-284",
       "set": 1,
       "type": "single",
-      "stem": "A lecture question asks about fospropofol's U.S. clinical status. Which statement best matches the source material?",
+      "stem": "Fospropofol was previously approved in the United States for monitored anesthesia care sedation but is no longer marketed. Which statement best reflects its current practical status?",
       "options": [
-        "It is not currently marketed/approved for routine U.S. clinical use",
+        "It is not currently marketed for routine U.S. clinical use",
         "It is a first-line U.S. induction agent",
         "It is approved only for neuromuscular blockade",
         "It is the preferred U.S. ICU sedative"
@@ -6943,7 +6943,7 @@
       "answer": [
         0
       ],
-      "explanation": "Fospropofol is not currently approved for use in the US, and it is not approved for GA.",
+      "explanation": "Fospropofol (Lusedra) received prior U.S. approval for MAC sedation but was later discontinued from the market. Saying it was never U.S.-approved is inaccurate; the practical point is that it is not currently marketed for routine U.S. use.",
       "citation": "",
       "topic": "Propofol and fospropofol",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -6957,9 +6957,9 @@
       "id": "SED-285",
       "set": 1,
       "type": "single",
-      "stem": "Fospropofol was developed primarily to provide which type of anesthetic effect?",
+      "stem": "Fospropofol was developed to provide which pharmacologic effect?",
       "options": [
-        "IV sedation through conversion to propofol",
+        "IV sedation after enzymatic conversion to propofol",
         "Neuromuscular blockade",
         "Local anesthesia",
         "Opioid analgesia"
@@ -6967,7 +6967,7 @@
       "answer": [
         0
       ],
-      "explanation": "Fospropofol was developed for MAC sedation; it is not approved for GA.",
+      "explanation": "Fospropofol is a water-soluble prodrug converted to propofol and was developed as an IV sedative. Its historical regulatory status should be kept separate from its pharmacology.",
       "citation": "",
       "topic": "Propofol and fospropofol",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7255,7 +7255,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dexmedetomidine provides sedation and anxiolysis with minimal respiratory depression, which makes it attractive for OSA and awake intubation.",
+      "explanation": "Dexmedetomidine generally causes less respiratory depression than propofol, benzodiazepines, or opioids and can be useful when cooperative sedation and spontaneous ventilation are priorities. OSA still requires careful airway monitoring because no sedative eliminates obstruction risk.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7279,7 +7279,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dexmedetomidine has minimal respiratory depression but slower onset and risk of bradycardia and hypotension.",
+      "explanation": "Dexmedetomidine tends to preserve ventilation better than many sedatives, but onset can be slower and clinically important bradycardia and hypotension may occur, especially with loading doses or susceptible patients.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
