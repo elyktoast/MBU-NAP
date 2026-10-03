@@ -2463,7 +2463,10 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Account panel separates sign in and account creation cleanly', async ({ page }) => {
-    await page.evaluate(()=>localStorage.removeItem('mbu_supabase_session_v1'));
+    await page.addInitScript(() => {
+      sessionStorage.setItem('mbu_skip_seed_session','1');
+      localStorage.removeItem('mbu_supabase_session_v1');
+    });
     await page.goto('/');
     await page.evaluate(() => MBUPageReady);
     await page.evaluate(() => MBUAppCore.openAccount(document.querySelector('[data-course-link]')));
@@ -2478,7 +2481,10 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Guest users must sign in before entering a course', async ({ page }) => {
-    await page.evaluate(()=>localStorage.removeItem('mbu_supabase_session_v1'));
+    await page.addInitScript(() => {
+      sessionStorage.setItem('mbu_skip_seed_session','1');
+      localStorage.removeItem('mbu_supabase_session_v1');
+    });
     await page.goto('/');
     await page.evaluate(() => MBUPageReady);
     await page.evaluate(() => MBUAppCore.openAccount(document.querySelector('[data-course-link]')));
