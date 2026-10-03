@@ -21,7 +21,11 @@ async function clearAppState(page) {
 }
 
 async function useGuestState(page){
-  await page.addInitScript(() => localStorage.removeItem('mbu_supabase_session_v1'));
+  await page.addInitScript(() => {
+    if(sessionStorage.getItem('mbu_e2e_guest_initialized')==='1')return;
+    sessionStorage.setItem('mbu_e2e_guest_initialized','1');
+    localStorage.removeItem('mbu_supabase_session_v1');
+  });
 }
 
 async function seedSignedIn(page,email='e2e@example.com') {
