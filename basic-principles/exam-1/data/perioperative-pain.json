@@ -11487,17 +11487,17 @@
       "id": "PAIN-470",
       "set": 1,
       "type": "single",
-      "stem": "A 60 kg woman is on a plan with ketamine 0.2 mg/kg then 0.15 mg/kg/hr and magnesium 50 mg/kg then 8 mg/kg/hr. Which set is correct?",
+      "stem": "A protocol uses ketamine 0.2 mg/kg then 0.15 mg/kg/hr and magnesium 50 mg/kg then 8 mg/kg/hr. For a 60 kg patient, which set of calculated doses is correct?",
       "options": [
-        "Ketamine 12 mg then 9 mg/hr; Mg 3 g then 480 mg/hr",
-        "Ketamine 6 mg then 4.5 mg/hr; Mg 1.5 g then 240 mg/hr",
-        "Ketamine 24 mg then 18 mg/hr; Mg 6 g then 960 mg/hr",
-        "Ketamine 12 mg then 90 mg/hr; Mg 300 mg then 48 mg/hr"
+        "Ketamine 12 mg then 9 mg/hr; magnesium 3 g then 480 mg/hr",
+        "Ketamine 6 mg then 4.5 mg/hr; magnesium 1.5 g then 240 mg/hr",
+        "Ketamine 24 mg then 18 mg/hr; magnesium 6 g then 960 mg/hr",
+        "Ketamine 12 mg then 90 mg/hr; magnesium 300 mg then 48 mg/hr"
       ],
       "answer": [
         0
       ],
-      "explanation": "0.2 × 60 = 12; 0.15 × 60 = 9; 50 × 60 = 3,000 mg; 8 × 60 = 480 mg/hr.",
+      "explanation": "Using the stated protocol: ketamine 0.2 × 60 = 12 mg and 0.15 × 60 = 9 mg/hr; magnesium 50 × 60 = 3,000 mg and 8 × 60 = 480 mg/hr. These are calculations, not universal dosing recommendations.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -11511,17 +11511,17 @@
       "id": "PAIN-471",
       "set": 1,
       "type": "single",
-      "stem": "A PACU patient becomes somnolent with RR 6/min and SpO2 90% after hydromorphone and midazolam. Which sequence BEST prioritizes immediate safety while attempting to preserve analgesia?",
+      "stem": "A PACU patient becomes somnolent with RR 6/min after hydromorphone and midazolam. Which principle best guides immediate management?",
       "options": [
-        "Support ventilation first, consider flumazenil for the benzodiazepine, then titrate naloxone if opioid reversal remains necessary",
+        "Support airway and ventilation first, then selectively titrate drug-specific reversal according to the suspected residual effects and patient-specific risks",
+        "Flumazenil must always be given before naloxone",
         "Give a large naloxone dose before supporting ventilation",
-        "Administer additional hydromorphone, then reassess",
-        "Give dexmedetomidine before either reversal drug"
+        "Wait for apnea before intervening"
       ],
       "answer": [
         0
       ],
-      "explanation": "Airway support comes first; reversing the benzodiazepine before naloxone may avoid abrupt pain.",
+      "explanation": "Airway and ventilation are the immediate priorities. Naloxone and flumazenil can be used selectively when indicated, but there is no universal requirement to reverse the benzodiazepine first; flumazenil itself has important contraindications and seizure risk.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -11545,7 +11545,7 @@
       "answer": [
         0
       ],
-      "explanation": "Titrate to RR and pupils; avoid treating vital signs alone with large opioid doses.",
+      "explanation": "Coughing, tachypnea, hypertension, and mydriasis may accompany inadequate analgesia but are nonspecific. Titrate analgesia cautiously while reassessing ventilation, anesthetic depth, neuromuscular recovery, and extubation readiness rather than targeting a fixed respiratory rate or pupil size.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -11713,7 +11713,7 @@
       "answer": [
         0
       ],
-      "explanation": "The lecture says no NSAIDs until the end and discuss with the surgeon.",
+      "explanation": "NSAID use should reflect procedure-specific bleeding risk, renal risk, surgical hemostasis, and team planning. There is no universal rule that NSAIDs can only be given at the end of every operation.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -11861,7 +11861,7 @@
       "answer": [
         0
       ],
-      "explanation": "Avoid NSAIDs and renally cleared opioids; use acetaminophen and regional options.",
+      "explanation": "Renal impairment changes the risk-benefit profile of NSAIDs and opioids with renally cleared active metabolites. Acetaminophen, regional techniques, and carefully selected/titrated opioids can reduce avoidable risk; treatment should be individualized rather than assuming all NSAIDs or all renally cleared opioids are absolutely prohibited.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -12163,17 +12163,17 @@
       "id": "PAIN-498",
       "set": 1,
       "type": "single",
-      "stem": "A patient's pain plan includes both short- and long-acting opioids for PACU. Why?",
+      "stem": "A PACU patient has severe acute postoperative pain but will also need sustained analgesia after initial titration. Which prescribing principle is most appropriate?",
       "options": [
-        "Titration plus sustained relief",
-        "To reduce PACU costs and nursing time per patient",
-        "To avoid multimodal agents and simplify PACU orders",
-        "To avoid all opioid side effects"
+        "Use a titratable rescue strategy for immediate pain and establish longer-lasting multimodal analgesia appropriate to the procedure and patient",
+        "Every PACU patient requires both a short- and long-acting opioid",
+        "Use only long-acting opioid so reassessment is unnecessary",
+        "Avoid nonopioid analgesia when opioids are prescribed"
       ],
       "answer": [
         0
       ],
-      "explanation": "PACU orders generally need both.",
+      "explanation": "Immediate PACU pain often requires carefully titratable rescue therapy, while sustained control should come from an individualized multimodal plan. A long-acting opioid is not mandatory for every PACU patient.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
