@@ -7961,17 +7961,17 @@
       "id": "PHA-317",
       "set": 1,
       "type": "single",
-      "stem": "The surgeon stops traction, but severe bradycardia persists with hypotension. Which medication class now most directly addresses the heart-rate problem?",
+      "stem": "The surgeon stops traction, but severe vagally mediated bradycardia persists with hypotension. Which medication is the most appropriate immediate antimuscarinic treatment?",
       "options": [
-        "Atropine or glycopyrrolate",
+        "Atropine",
+        "Glycopyrrolate as the preferred rescue for severe unstable bradycardia",
         "Esmolol",
-        "Nitroglycerin",
-        "Sugammadex"
+        "Nitroglycerin"
       ],
       "answer": [
         0
       ],
-      "explanation": "Anticholinergics treat vagally mediated bradycardia.",
+      "explanation": "Atropine has a rapid onset and is the standard antimuscarinic for clinically significant symptomatic bradycardia. Glycopyrrolate can increase heart rate but has a slower onset and is not the preferred rescue for severe unstable bradycardia.",
       "citation": "",
       "topic": "Maintenance cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -8311,7 +8311,7 @@
       "answer": [
         0
       ],
-      "explanation": "MAC falls with age, so 2.0% sevoflurane is more than 1 MAC for this patient and is causing hypotension.",
+      "explanation": "MAC decreases with advancing age, so 2.0% end-tidal sevoflurane represents a greater age-adjusted MAC multiple in an 82-year-old than in a younger adult. Excess anesthetic exposure should be considered among the contributors to hypotension rather than assumed to be the sole cause.",
       "citation": "",
       "topic": "Maintenance cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -8455,7 +8455,7 @@
       "answer": [
         0
       ],
-      "explanation": "Fade indicates residual blockade; reverse and confirm TOFR >0.9.",
+      "explanation": "Visible fade indicates residual blockade. Provide reversal as appropriate and use quantitative monitoring at the adductor pollicis to confirm a TOF ratio of at least 0.9 before extubation.",
       "citation": "",
       "topic": "Maintenance cases",
       "sourceTitle": "Phases of General Anesthesia",
