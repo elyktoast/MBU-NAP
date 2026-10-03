@@ -9920,7 +9920,7 @@
       "answer": [
         0
       ],
-      "explanation": "SpO2 is a poor ventilation monitor, especially with supplemental O2.",
+      "explanation": "Pulse oximetry reflects arterial oxygen saturation, not carbon-dioxide elimination. Supplemental oxygen can maintain a normal SpO2 despite progressively inadequate alveolar ventilation, so the falling respiratory rate and rising ETCO2 reveal a problem that SpO2 alone can temporarily conceal.",
       "citation": "",
       "topic": "Applied monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -10328,7 +10328,7 @@
       "answer": [
         0
       ],
-      "explanation": "ETCO2 confirms tracheal placement but not endobronchial position.",
+      "explanation": "Sustained exhaled CO2 supports that the tube communicates with the tracheobronchial tree, but it does not establish how far the tube has advanced. Unilateral breath sounds therefore require assessment of depth and possible endobronchial migration despite persistent capnography.",
       "citation": "",
       "topic": "Applied monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -10448,7 +10448,7 @@
       "answer": [
         0
       ],
-      "explanation": "SpO2 can be falsely high with COHb, or the curve can shift.",
+      "explanation": "A PaO2 near 60 mmHg would not ordinarily correspond to an SpO2 of 99% on the standard dissociation curve. The marked discordance should therefore prompt verification of both measurements and consideration of causes such as dyshemoglobinemia rather than automatic acceptance of either value.",
       "citation": "",
       "topic": "Applied monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -10640,7 +10640,7 @@
       "answer": [
         0
       ],
-      "explanation": "Cautery can cause artifact; confirm with another monitor.",
+      "explanation": "Electrocautery can generate electrical artifact that resembles an arrhythmia on ECG. An unchanged arterial pulse waveform and pulse-oximeter pulse rate provide independent mechanical evidence that the displayed wide-complex rhythm may not represent the patient's true cardiac rhythm.",
       "citation": "",
       "topic": "Applied monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -10808,7 +10808,7 @@
       "answer": [
         0
       ],
-      "explanation": "Capnography detects esophageal intubation earliest.",
+      "explanation": "Preoxygenation can preserve saturation temporarily after esophageal intubation, so SpO2 may remain 100% despite absent effective lung ventilation. Failure to obtain sustained exhaled CO2 therefore provides the earlier routine warning that tracheal placement has not been confirmed.",
       "citation": "",
       "topic": "Applied monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
