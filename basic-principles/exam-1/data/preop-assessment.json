@@ -10980,17 +10980,17 @@
       "id": "PRE-451",
       "set": 1,
       "type": "single",
-      "stem": "A patient with type 1 diabetes uses basal glargine and will be fasting for surgery. Which insulin strategy best balances hypoglycemia against complete insulin omission?",
+      "stem": "A patient with type 1 diabetes uses basal glargine and will be fasting for surgery. Which insulin principle best balances hypoglycemia risk against ketosis from complete insulin omission?",
       "options": [
-        "Give about half the usual basal dose",
-        "Hold all insulin",
-        "Give the full usual dose",
-        "Give the full dose specifically to prevent ketosis"
+        "Continue basal insulin but reduce the dose according to the patient's regimen, hypoglycemia risk, and perioperative protocol",
+        "Hold all basal insulin",
+        "Give exactly half the basal dose to every patient",
+        "Give extra basal insulin because fasting increases insulin requirements"
       ],
       "answer": [
         0
       ],
-      "explanation": "Insulin is typically reduced by about half on the day of surgery; type 1 diabetics need some basal insulin.",
+      "explanation": "Patients with type 1 diabetes require basal insulin even while fasting. Long-acting basal insulin is commonly continued at a reduced dose, often roughly 75–80% of usual, with larger reductions in selected high-risk patients; a universal 50% rule is inappropriate.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -11004,17 +11004,17 @@
       "id": "PRE-452",
       "set": 1,
       "type": "single",
-      "stem": "A chronic prednisone user is scheduled for laparoscopic cholecystectomy. Which regimen best matches the table's moderate-stress coverage?",
+      "stem": "A chronic glucocorticoid user is scheduled for laparoscopic cholecystectomy. Which perioperative steroid approach is most appropriate?",
       "options": [
-        "Usual dose plus hydrocortisone 50 mg IV, then 25 mg every 8 hours",
-        "Usual daily dose only",
-        "Hydrocortisone 100 mg IV then 200 mg over 24 hours",
-        "No supplemental steroids"
+        "Continue baseline glucocorticoid therapy and individualize supplemental parenteral coverage to HPA-axis suppression risk, oral intake, and surgical stress",
+        "Give the same fixed hydrocortisone regimen to every chronic steroid user",
+        "Stop the usual steroid before surgery",
+        "Withhold glucocorticoids unless refractory hypotension develops"
       ],
       "answer": [
         0
       ],
-      "explanation": "Lap chole is similar to minor to moderate stress; the table gives usual dose plus 50 mg IV then 25 mg q8h.",
+      "explanation": "Chronic glucocorticoids should not be abruptly stopped. Supplemental perioperative coverage is individualized to HPA-axis suppression risk, surgical stress, and ability to take the baseline regimen rather than dictated by one universal table dose.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -11028,17 +11028,17 @@
       "id": "PRE-453",
       "set": 1,
       "type": "single",
-      "stem": "A chronic steroid user is scheduled for major cardiac surgery. Which regimen best matches the table's major-stress recommendation?",
+      "stem": "A chronic glucocorticoid user is scheduled for major cardiac surgery. Which perioperative principle is most appropriate?",
       "options": [
-        "Hydrocortisone 100 mg IV followed by 200 mg over 24 hours",
-        "Hydrocortisone 50 mg IV then 25 mg every 8 hours",
-        "Usual dose only",
-        "Stop steroids"
+        "Continue baseline therapy and provide stress-appropriate parenteral glucocorticoid coverage when HPA-axis suppression is likely",
+        "Stop chronic steroids before bypass",
+        "Use the same supplemental dose used for a superficial procedure",
+        "Delay all glucocorticoid dosing until hypotension occurs"
       ],
       "answer": [
         0
       ],
-      "explanation": "Major surgery requires 100 mg IV and 200 mg over 24 h, then taper.",
+      "explanation": "Major surgery creates substantial physiologic stress. Patients at risk for HPA-axis suppression should continue baseline glucocorticoid therapy and receive appropriate perioperative parenteral coverage; exact regimens vary by guideline and patient factors.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -11124,17 +11124,17 @@
       "id": "PRE-457",
       "set": 1,
       "type": "single",
-      "stem": "A dialysis patient completed dialysis this morning. Which laboratory set is most important before proceeding because dialysis can rapidly change electrolytes and renal indices?",
+      "stem": "A dialysis patient completed dialysis this morning. Which laboratory value deserves particular attention before anesthesia because dialysis can change it rapidly?",
       "options": [
-        "Current potassium, creatinine, and BUN",
-        "hCG and TSH",
-        "HbA1c and glucose",
-        "Liver enzymes and bilirubin"
+        "Current serum potassium",
+        "Creatinine alone",
+        "BUN alone",
+        "Hemoglobin A1c"
       ],
       "answer": [
         0
       ],
-      "explanation": "The notes want a current renal panel, especially if recently dialyzed.",
+      "explanation": "A recent potassium level is especially important after dialysis because clinically important hypo- or hyperkalemia directly affects cardiac conduction and anesthetic management. Creatinine and BUN reflect renal failure but are not immediate clearance targets in the same way.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -11868,17 +11868,17 @@
       "id": "PRE-488",
       "set": 1,
       "type": "single",
-      "stem": "A patient with CAD is scheduled for major open abdominal surgery. How should the procedural cardiac stress be characterized relative to a superficial procedure?",
+      "stem": "A patient with CAD is scheduled for major open abdominal surgery. Which statement best describes the procedure's role in cardiac risk assessment?",
       "options": [
-        "Intermediate to high risk",
-        "Low risk",
-        "No procedural risk category applies",
-        "Equivalent to minor superficial surgery"
+        "Major abdominal surgery contributes procedural risk, but routine intraperitoneal surgery is not itself an RCRI high-risk-surgery criterion",
+        "Every intraperitoneal operation automatically earns the RCRI high-risk-surgery point",
+        "Open abdominal surgery is always a low-risk procedure",
+        "Procedure type is irrelevant to perioperative cardiac risk"
       ],
       "answer": [
         0
       ],
-      "explanation": "Abdominal procedures are intermediate risk, and intraperitoneal surgery counts as high-risk in RCRI.",
+      "explanation": "Surgical stress matters in overall perioperative risk assessment, but the original RCRI high-risk-surgery criterion is limited to intraperitoneal vascular, intrathoracic, and suprainguinal vascular surgery; routine intraperitoneal surgery should not automatically receive that point.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -11892,17 +11892,17 @@
       "id": "PRE-489",
       "set": 1,
       "type": "single",
-      "stem": "A patient is 4 months after drug-eluting stent placement and takes aspirin. Which plan best follows the lecture's timing guidance?",
+      "stem": "A patient is 4 months after drug-eluting coronary stent placement and takes aspirin. Which information is most important before scheduling elective noncardiac surgery?",
       "options": [
-        "Proceed if the 3–6 month interval is acceptable and continue aspirin",
-        "Stop aspirin for 7 days",
-        "Delay every DES case until 12 months",
-        "Replace aspirin with heparin bridging"
+        "The PCI indication, ischemic/stent risk, urgency and bleeding risk of surgery, and whether antiplatelet therapy must be interrupted",
+        "Only whether 3 months have elapsed",
+        "Only whether aspirin can be stopped for 7 days",
+        "Only whether the planned anesthetic is regional"
       ],
       "answer": [
         0
       ],
-      "explanation": "DES timing is 3–6 months with aspirin continued.",
+      "explanation": "DES timing is not a universal 3–6 month rule. Elective surgery is generally delayed at least 6 months after DES for chronic coronary disease and about 12 months after DES placed for acute coronary syndrome when feasible; earlier time-sensitive surgery requires individualized risk assessment.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -12166,7 +12166,7 @@
       "answer": [
         0
       ],
-      "explanation": "Benzodiazepines come first; vasodilators like nitroprusside or nitroglycerin are next. Beta-blockers risk unopposed alpha stimulation and coronary vasospasm.",
+      "explanation": "Benzodiazepines reduce central sympathetic excess first. Persistent cocaine-associated hypertension or coronary ischemia can be treated with vasodilators such as nitroglycerin. The historical concern about pure beta-blockade should not be taught as an absolute 'unopposed alpha' mechanism.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
