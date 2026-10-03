@@ -11,6 +11,7 @@
   else if (!baseline && cachedBaseline !== null) sessionStorage.removeItem(BUILD_CACHE_KEY);
   let checking = false;
   let lastCheck = 0;
+  let reloadPending = false;
 
   async function readBuild() {
     const controller = new AbortController();
@@ -46,9 +47,16 @@
     lastCheck = now;
     try {
       const latest = await readBuild();
-      if (!baseline || latest !== baseline) {
+      if (!baseline) {
         baseline = latest;
         sessionStorage.setItem(BUILD_CACHE_KEY, baseline);
+      } else if (latest !== baseline && !reloadPending) {
+        reloadPending = true;
+        sessionStorage.setItem(BUILD_CACHE_KEY, latest);
+        // A new published build is available. Reload once so build-bootstrap
+        // fetches the new manifest and cache-busted assets.
+        location.reload();
+        return;
       }
     } catch {
       // Update checks are best-effort. Never reload a page underneath the learner.
