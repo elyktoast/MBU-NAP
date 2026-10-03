@@ -19,7 +19,7 @@ async function clearAppState(page) {
 }
 
 async function useGuestState(page){
-  await page.evaluate(() => localStorage.removeItem('mbu_supabase_session_v1'));
+  await page.addInitScript(() => localStorage.removeItem('mbu_supabase_session_v1'));
 }
 
 async function seedSignedIn(page,email='e2e@example.com') {
@@ -31,7 +31,7 @@ async function seedSignedIn(page,email='e2e@example.com') {
   await page.route(cloud+'/rest/v1/rpc/snar_account_access_status', route => route.fulfill({status:200,contentType:'application/json',body:'"active"'}));
   await page.route(cloud+'/rest/v1/rpc/snar_admin_status', route => route.fulfill({ status:200, contentType:'application/json', body:JSON.stringify({is_admin:false,role:null}) }));
   await page.route(cloud+'/rest/v1/mbu_item_calibration?*', route => route.fulfill({ status:200, contentType:'application/json', body:'[]' }));
-  await page.evaluate(email => {
+  await page.addInitScript(email => {
     const now=Math.floor(Date.now()/1000);
     localStorage.setItem('mbu_supabase_session_v1',JSON.stringify({
       access_token:'e2e-access',refresh_token:'e2e-refresh',expires_at:now+3600,
