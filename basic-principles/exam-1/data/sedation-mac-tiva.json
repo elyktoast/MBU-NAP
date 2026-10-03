@@ -9790,7 +9790,7 @@
       "answer": [
         0
       ],
-      "explanation": "Aspiration pneumonitis occurs nearly twice as often in NORA claims.",
+      "explanation": "Historical claims analyses can appropriately flag aspiration as an important NORA hazard and justify strong prevention/rescue systems. Because claims lack a denominator of all anesthetics, a claims proportion should not be presented as the patient's population incidence or relative risk.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9862,7 +9862,7 @@
       "answer": [
         0
       ],
-      "explanation": "Higher incidence with lower total volume means fewer procedures are done in NORA.",
+      "explanation": "Closed claims are selected medicolegal cases and do not include the denominator of all procedures performed. They can reveal recurring failure patterns and severity but cannot, by themselves, establish a per-case complication incidence.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10048,7 +10048,7 @@
     {
       "id": "SED-412",
       "set": 1,
-      "type": "multi",
+      "type": "single",
       "stem": "Which patient profile has the least reserve for an episode of sedation-induced hypoventilation during transport?",
       "options": [
         "Heart failure with recent pulmonary edema and significant coronary disease",
@@ -10057,12 +10057,9 @@
         "Remote history of uncomplicated appendectomy"
       ],
       "answer": [
-        0,
-        1,
-        2,
-        4
+        0
       ],
-      "explanation": "She had coronary stents, CHF, a pacemaker, and recent pulmonary edema.",
+      "explanation": "Heart failure, recent pulmonary edema, and significant coronary disease reduce cardiopulmonary reserve, increasing the potential consequence of hypoxemia, hypercapnia, and delayed recognition of respiratory depression.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10326,7 +10323,7 @@
       "answer": [
         0
       ],
-      "explanation": "External abdominal pressure during colonoscopy can push gastric contents up, which matters with an unprotected airway.",
+      "explanation": "Deep sedation depresses protective airway responses. During colonoscopy, factors that increase regurgitation risk or gastric pressure should heighten attention to aspiration, particularly when the airway is unsecured; aspiration risk still depends on the patient's overall fasting and gastrointestinal risk profile.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10621,7 +10618,7 @@
       "answer": [
         0
       ],
-      "explanation": "Prone positioning limits airway access for rescue and can cause airway edema.",
+      "explanation": "Prone positioning makes direct airway access, mask ventilation, and rapid repositioning more difficult if respiratory deterioration occurs. Prone positioning does not itself guarantee airway edema.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10747,7 +10744,7 @@
       "answer": [
         0
       ],
-      "explanation": "If an anesthesia provider is involved, all ASA monitors must be applied.",
+      "explanation": "Monitoring should be selected according to the anesthesia service, applicable standards, actual sedation depth, patient condition, and procedure. Conversational responsiveness does not make systemic sedation risk-free, and no single monitor substitutes for the rest of appropriate physiologic assessment.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10819,7 +10816,7 @@
       "answer": [
         0
       ],
-      "explanation": "High aspiration and airway risk makes GA safer. Discuss the risk and alternative.",
+      "explanation": "Severe OSA, active regurgitation, and predicted difficult airway management materially change the risk of deep sedation with an unsecured airway. The final plan should integrate aspiration risk, rescue difficulty, procedural needs, and patient goals rather than follow the proceduralist's depth preference alone.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10963,7 +10960,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dexmedetomidine has minimal respiratory depression. Its slower onset means loading early, and bradycardia or hypotension must be watched.",
+      "explanation": "Dexmedetomidine generally produces relatively limited respiratory depression compared with many hypnotic-opioid techniques, which can be useful when cooperative sedation and spontaneous ventilation are priorities. OSA still carries obstruction risk, and bradycardia, hypotension, and slower onset remain important tradeoffs.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
