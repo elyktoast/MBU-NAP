@@ -322,10 +322,10 @@
   },
   "features": {
     "questionGenerator": {
-      "enabled": false,
-      "status": "unconfigured",
+      "enabled": true,
+      "status": "configured",
       "storageKey": "mbu_generated_questions_v1",
-      "provider": null
+      "provider": "gemini"
     }
   },
   "contentTaxonomy": {
