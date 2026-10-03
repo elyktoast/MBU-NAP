@@ -63,7 +63,7 @@ for(const p of appPages){
   if(/[?&]v=\d+/.test(src))fail(p+': manual cache revision returned');
 }
 
-const studio=read('equipment/assets/studio-page.js'),generator=read('equipment/assets/question-generator.js');
+const studio=read('equipment/assets/studio-page.js')+'\n'+read('equipment/assets/studio-runtime.js'),generator=read('equipment/assets/question-generator.js');
 if(studio.includes('ALL.find('))fail('Studio: O(n) UID lookup returned');
 if(studio.includes('bank3-images.js')||studio.includes('combined-images.js')||studio.includes('hazards-images.json'))fail('Studio: monolithic image bundle reference returned');
 for(const token of ['registerProvider','generate','approveDraft','validateQuestion','studioQuestions'])if(!generator.includes(token))fail('Question generator framework missing '+token);
