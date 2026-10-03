@@ -1564,13 +1564,13 @@ test.describe('canonical quiz regression', () => {
     expect(await page.locator('#mbuNavigator button').count()).toBe(100);
   });
 
-  test('Unpublished Equipment fixtures do not leak course navigation', async ({ page }) => {
+  test('Equipment fixtures retain published course navigation', async ({ page }) => {
     await page.goto(exam + '/hazards-100.html');await page.evaluate(() => MBUPageReady);
     await expect(page.locator('.mbu-global-nav__brand')).toHaveText('SRNA Study Tool');
-    await expect(page.locator('.mbu-global-nav__primary-link')).toHaveCount(0);
-    await expect(page.locator('.mbu-global-nav__primary')).not.toContainText('Equipment');
-    await expect(page.locator('.mbu-global-nav__primary')).not.toContainText('Study Studio');
-    await expect(page.locator('.mbu-global-nav__adaptive')).toHaveCount(0);
+    await expect(page.locator('.mbu-global-nav__primary-link')).toHaveCount(3);
+    await expect(page.locator('.mbu-global-nav__primary')).toContainText('Equipment');
+    await expect(page.locator('.mbu-global-nav__primary')).toContainText('Study Studio');
+    await expect(page.locator('.mbu-global-nav__adaptive')).toHaveCount(1);
     await expect(page.locator('.mbu-global-nav__picker')).toHaveCount(0);
     await expect(page.locator('.mbu-global-nav__search')).toHaveText('Search');
     await expect(page.locator('.mbu-global-nav__cloud')).toHaveText(/Account/);
@@ -1771,11 +1771,9 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('[data-privacy-submit]')).toBeVisible();
     await expect(page.locator('[data-cloud-delete-account]')).toBeVisible();
 
-    await page.goto(exam + '/studio.html');await waitForStudio(page);
-    await page.evaluate(()=>{document.querySelectorAll('#sourceChecks input[type=checkbox]').forEach((x,i)=>x.checked=i===0)});
-    await page.locator('#adaptiveToggle').click();
-    await expect(page.locator('#adaptiveToggle')).not.toBeChecked();
-    await expect(page.locator('#mbu-account-panel')).toHaveClass(/open/);
+    await page.goto(exam + '/studio.html');
+    await page.waitForURL(url=>url.pathname==='/');
+    expect(new URL(page.url()).pathname).toBe('/');
   });
 
   test('Privacy Notice and Terms are publicly accessible and independently branded', async ({ page }) => {
@@ -1967,7 +1965,7 @@ test.describe('canonical quiz regression', () => {
       if(attempts===1)return route.abort('internetdisconnected');
       return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({access_token:'fresh-retry-access',refresh_token:'fresh-retry-refresh',expires_in:3600,user:{id:'00000000-0000-0000-0000-000000000001',email:'retry@example.com'}})});
     });
-    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);await page.evaluate(() => MBUAuthReady);
+    await page.goto('/');await page.evaluate(() => MBUPageReady);await page.evaluate(() => MBUAuthReady);
     const retained=await page.evaluate(()=>JSON.parse(localStorage.getItem('mbu_supabase_session_v1')||'null'));
     expect(retained?.refresh_token).toBe('retry-refresh');
     expect(await page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(true);
