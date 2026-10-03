@@ -61,7 +61,7 @@ function collectPageErrors(page) {
 }
 
 async function waitForStudio(page) {
-  await page.evaluate(async()=>{if(window.MBUStudioDataReady)await window.MBUStudioDataReady});
+  await page.evaluate(async()=>{if(!window.MBUStudioDataReady)throw Error('Studio readiness promise missing');const state=await window.MBUStudioDataReady;if(state?.failed?.length)throw Error('Studio sources failed: '+state.failed.join(','))});
   await expect.poll(
     async () => {
       try {
