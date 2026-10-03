@@ -66,7 +66,7 @@
       "answer": [
         0
       ],
-      "explanation": "Modulation alters afferent transmission mainly in the dorsal horn, which is where neuraxial opioids act.",
+      "explanation": "Pain modulation occurs prominently in the dorsal horn, where incoming primary afferent signals are altered by local interneurons and descending pathways before ascending transmission. Neuraxial opioids act at spinal opioid receptors in this region to reduce nociceptive neurotransmission.",
       "citation": "",
       "topic": "Pain physiology and definitions",
       "sourceTitle": "Perioperative Pain Management",
@@ -94,7 +94,7 @@
         1,
         2
       ],
-      "explanation": "Modulation involves GABA, glycine, norepinephrine, serotonin, the periaqueductal gray, the nucleus raphe magnus, and spinal mechanisms.",
+      "explanation": "Pain modulation involves inhibitory neurotransmitters including GABA and glycine and descending monoaminergic pathways using serotonin and norepinephrine. Supraspinal structures such as the periaqueductal gray and nucleus raphe magnus participate in descending control of dorsal-horn nociceptive transmission.",
       "citation": "",
       "topic": "Pain physiology and definitions",
       "sourceTitle": "Perioperative Pain Management",
@@ -118,7 +118,7 @@
       "answer": [
         0
       ],
-      "explanation": "Central sensitization in the spinal cord is called wind-up. It is the target of preventive analgesia.",
+      "explanation": "Repeated C-fiber input can progressively increase dorsal-horn neuron excitability, producing wind-up and contributing to central sensitization. The result can include hyperalgesia, allodynia, and expansion of painful receptive fields beyond the original injury.",
       "citation": "",
       "topic": "Pain physiology and definitions",
       "sourceTitle": "Perioperative Pain Management",
@@ -166,7 +166,7 @@
       "answer": [
         0
       ],
-      "explanation": "Epicritic sensations include light touch, pressure, proprioception, and temperature discrimination; protopathic sensation is pain.",
+      "explanation": "Epicritic pathways carry discriminative sensory information such as light touch, vibration, pressure, and proprioception. Loss of pinprick pain with preservation of these modalities indicates that nociceptive/protopathic transmission has been preferentially blocked while epicritic sensation remains.",
       "citation": "",
       "topic": "Pain physiology and definitions",
       "sourceTitle": "Perioperative Pain Management",
@@ -313,7 +313,7 @@
         0,
         1
       ],
-      "explanation": "The pain experience differs by gender and age, along with brain activation patterns and coping skills.",
+      "explanation": "Pain experience and reporting vary among individuals and can be influenced by age, sex/gender, prior experiences, psychological state, coping, culture, and social context. Population-level associations should not be used to predict an individual patient's pain intensity without direct assessment.",
       "citation": "",
       "topic": "Pain physiology and definitions",
       "sourceTitle": "Perioperative Pain Management",
@@ -337,7 +337,7 @@
       "answer": [
         0
       ],
-      "explanation": "Postoperative neuropathic pain is associated with progression to chronic pain, so early recognition and treatment matter.",
+      "explanation": "Burning and electric qualities after surgery suggest a neuropathic component from somatosensory nerve injury rather than purely nociceptive incisional pain. Neuropathic features are associated with persistent postsurgical pain risk and may require mechanism-specific adjuncts.",
       "citation": "",
       "topic": "Pain physiology and definitions",
       "sourceTitle": "Perioperative Pain Management",
@@ -436,7 +436,7 @@
         0,
         1
       ],
-      "explanation": "Chronic pain brings sleep disturbance, limited motion, tight muscles, low energy, irritability, and withdrawal.",
+      "explanation": "Chronic pain can affect sleep, energy, mood, mobility, muscle tension, social participation, and overall function. These associated effects help characterize the burden of chronic pain but do not substitute for the patient's own pain report.",
       "citation": "",
       "topic": "Acute, chronic, and neuropathic pain",
       "sourceTitle": "Perioperative Pain Management",
@@ -487,7 +487,7 @@
         0,
         1
       ],
-      "explanation": "Chronic pain with anxiety and depression may be treated with antidepressants and anticonvulsants, plus anxiolytics, muscle relaxants, and opioids as needed.",
+      "explanation": "Antidepressants such as serotonin-norepinephrine reuptake inhibitors or tricyclics and anticonvulsants such as gabapentinoids are common nonopioid adjuvants for neuropathic chronic pain. Selection should match the pain mechanism, comorbidities, adverse-effect profile, and concurrent medications.",
       "citation": "",
       "topic": "Acute, chronic, and neuropathic pain",
       "sourceTitle": "Perioperative Pain Management",
@@ -610,7 +610,7 @@
       "answer": [
         0
       ],
-      "explanation": "Postoperative neuropathic pain comes from accidental nerve cutting, traction, compression, or entrapment.",
+      "explanation": "Burning, shooting pain in a discrete postoperative nerve distribution suggests injury or dysfunction of the somatosensory system. Surgical mechanisms include direct nerve transection, traction, compression, ischemia, or later entrapment in scar or repair material.",
       "citation": "",
       "topic": "Acute, chronic, and neuropathic pain",
       "sourceTitle": "Perioperative Pain Management",
@@ -634,7 +634,7 @@
       "answer": [
         0
       ],
-      "explanation": "Nociceptive pain responds best to opioids, NSAIDs, acetaminophen, and regional techniques.",
+      "explanation": "Acute nociceptive pain from tissue injury responds to multimodal treatment that targets peripheral inflammation, central nociceptive processing, and transmission. Acetaminophen/NSAIDs when appropriate, opioids for rescue or severe pain, and regional techniques can reduce reliance on any single modality.",
       "citation": "",
       "topic": "Acute, chronic, and neuropathic pain",
       "sourceTitle": "Perioperative Pain Management",
@@ -662,7 +662,7 @@
         1,
         2
       ],
-      "explanation": "Neuropathic pain may benefit from NMDA antagonists, alpha-2 agonists, and α2–δ calcium channel ligands.",
+      "explanation": "Neuropathic pain may respond to agents that reduce central sensitization or abnormal neuronal excitability, including ketamine through NMDA antagonism, alpha-2 agonists, and alpha-2-delta calcium-channel ligands such as gabapentinoids. These are adjuncts rather than interchangeable universal treatments.",
       "citation": "",
       "topic": "Acute, chronic, and neuropathic pain",
       "sourceTitle": "Perioperative Pain Management",
@@ -734,7 +734,7 @@
       "answer": [
         0
       ],
-      "explanation": "The patient's own report, using a validated tool, is the best measure of analgesia.",
+      "explanation": "When a patient can communicate reliably, self-report using a validated scale is the primary measure of pain intensity. Vital signs, behavior, and functional ability provide important context but can remain normal despite severe pain and should not override the patient's report.",
       "citation": "",
       "topic": "Assessment, concepts, and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -782,7 +782,7 @@
       "answer": [
         0
       ],
-      "explanation": "HR, RR, sweating, and nausea may reflect pain, but they are unreliable measures of its presence or severity.",
+      "explanation": "Tachycardia, hypertension, tachypnea, diaphoresis, or nausea can accompany pain but are neither sensitive nor specific for its presence or intensity. Normal vital signs therefore do not invalidate a reliable self-report of severe pain.",
       "citation": "",
       "topic": "Assessment, concepts, and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -806,7 +806,7 @@
       "answer": [
         0
       ],
-      "explanation": "Pain out of proportion to the procedure may signal a complication such as bleeding or bowel injury.",
+      "explanation": "Pain that is unexpectedly severe, changes abruptly, or is disproportionate to the expected procedure should trigger evaluation for a surgical or medical complication before it is attributed to routine incisional pain. Bleeding, ischemia, compartment syndrome, visceral injury, and other causes may require treatment beyond analgesic escalation.",
       "citation": "",
       "topic": "Assessment, concepts, and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -830,7 +830,7 @@
       "answer": [
         0
       ],
-      "explanation": "Pain with movement and breathing limits coughing and mobility, increasing pulmonary complications.",
+      "explanation": "Resting pain scores can underestimate clinically important dynamic pain. Pain that prevents coughing, deep breathing, mobilization, or participation in therapy can impair pulmonary toilet and recovery even when the patient appears comfortable at rest.",
       "citation": "",
       "topic": "Assessment, concepts, and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -854,7 +854,7 @@
       "answer": [
         0
       ],
-      "explanation": "Parenteral analgesics and sedatives can worsen hypoventilation, obstruction, and hypotension, especially in OSA.",
+      "explanation": "OSA increases vulnerability to upper-airway collapse, while opioids and sedatives depress ventilatory drive and airway tone. Agitation should therefore be evaluated for hypoxemia, hypercapnia, pain, and other causes before repeated IV opioids are given.",
       "citation": "",
       "topic": "Assessment, concepts, and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -905,7 +905,7 @@
       "answer": [
         0
       ],
-      "explanation": "Pain must truly be assessed, which means asking the patient and checking function, not assuming.",
+      "explanation": "Sleep or quiet behavior does not prove adequate analgesia. When the patient can communicate, pain should be assessed directly with a validated tool and paired with functional assessment rather than inferred from appearance alone.",
       "citation": "",
       "topic": "Assessment, concepts, and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -929,7 +929,7 @@
       "answer": [
         0
       ],
-      "explanation": "Analgesia reduces sympathetic stimulation, avoiding hypertension, tachycardia, and dysrhythmias.",
+      "explanation": "Severe pain activates the sympathetic nervous system, increasing heart rate and blood pressure and therefore myocardial oxygen demand. In coronary disease, reducing excessive nociceptive stress can help limit demand-related ischemia while avoiding analgesic-induced hypotension or respiratory depression.",
       "citation": "",
       "topic": "Assessment, concepts, and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -953,7 +953,7 @@
       "answer": [
         0
       ],
-      "explanation": "Pain-driven sympathetic tone can mask hypovolemia; relieving it unmasks the low volume.",
+      "explanation": "Pain can maintain sympathetic vasoconstriction and tachycardia that partially support blood pressure despite volume depletion. Analgesia may remove that compensatory sympathetic tone, revealing previously masked hypovolemia as abrupt hypotension.",
       "citation": "",
       "topic": "Assessment, concepts, and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -1001,7 +1001,7 @@
       "answer": [
         0
       ],
-      "explanation": "Some opioids such as morphine release histamine, causing vasodilation and hypotension.",
+      "explanation": "Morphine can promote histamine release, producing peripheral vasodilation and sometimes flushing or hypotension. The effect can be more clinically important in hypovolemic or hemodynamically fragile patients.",
       "citation": "",
       "topic": "Assessment, concepts, and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -1049,7 +1049,7 @@
       "answer": [
         0
       ],
-      "explanation": "Extended postoperative analgesia plans should be set before induction.",
+      "explanation": "Analgesic plans that require catheters, specialized monitoring, anticoagulation coordination, or a particular postoperative unit should be established before induction whenever possible. Early planning prevents an otherwise effective technique from becoming impractical or unsafe after surgery.",
       "citation": "",
       "topic": "Assessment, concepts, and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -1102,7 +1102,7 @@
       "answer": [
         0
       ],
-      "explanation": "Adding a second analgesic technique increases side effect risk, especially respiratory depression.",
+      "explanation": "Combining neuraxial opioid/local anesthetic therapy with systemic opioids can improve analgesia but also adds sedation, respiratory depression, hypotension, and other adverse effects. A second technique should therefore be deliberately dosed and accompanied by appropriate monitoring rather than layered on reflexively.",
       "citation": "",
       "topic": "Assessment, concepts, and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -1155,7 +1155,7 @@
       "answer": [
         0
       ],
-      "explanation": "Guidelines recommend multimodal analgesia combined with nonpharmacologic interventions.",
+      "explanation": "Contemporary perioperative pain care favors individualized multimodal analgesia, often combining nonopioid medications, regional/local techniques, limited opioids, and appropriate nonpharmacologic measures. The goal is better pain and functional control while reducing dose-dependent toxicity from any single therapy.",
       "citation": "",
       "topic": "Assessment, concepts, and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -1179,7 +1179,7 @@
       "answer": [
         0
       ],
-      "explanation": "Guidelines call for teaching patients about safe storage, disposal, and tapering.",
+      "explanation": "Discharge opioid education should include how and when to take the medication, common adverse effects and warning signs, safe locked storage, avoidance of unsafe combinations, tapering as pain improves, and proper disposal of unused tablets.",
       "citation": "",
       "topic": "Assessment, concepts, and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -1203,7 +1203,7 @@
       "answer": [
         0
       ],
-      "explanation": "Clinicians should have access to a pain specialist when pain is poorly controlled or risk is high.",
+      "explanation": "Pain-specialist involvement is particularly useful when pain remains poorly controlled despite an appropriate plan or when complexity is high, such as chronic opioid therapy, substance-use disorder, difficult neuropathic pain, or major adverse-effect risk.",
       "citation": "",
       "topic": "Assessment, concepts, and planning",
       "sourceTitle": "Perioperative Pain Management",
