@@ -9841,7 +9841,7 @@
       "answer": [
         0
       ],
-      "explanation": "Neuraxial morphine requires monitoring for delayed depression.",
+      "explanation": "Intrathecal morphine is hydrophilic and can remain in CSF with rostral spread for hours. Respiratory depression may therefore occur after an initially normal PACU assessment, requiring extended protocol-based monitoring rather than reassurance from early stability alone.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9865,7 +9865,7 @@
       "answer": [
         0
       ],
-      "explanation": "Pruritus from neuraxial opioids often responds to naloxone.",
+      "explanation": "Neuraxial opioid pruritus is largely centrally opioid-receptor mediated. Very low-dose naloxone can reduce itching while attempting to preserve analgesia, whereas larger antagonist doses are more likely to reverse the desired pain relief.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9889,7 +9889,7 @@
       "answer": [
         0
       ],
-      "explanation": "Morphine's hydrophilicity causes delayed depression.",
+      "explanation": "Hydrophilic morphine persists in cerebrospinal fluid and can migrate rostrally toward respiratory centers over several hours. Somnolence and bradypnea eight hours later therefore fit delayed neuraxial opioid respiratory depression.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9913,7 +9913,7 @@
       "answer": [
         0
       ],
-      "explanation": "Multimodal synergy increases side effects; lower doses when combining.",
+      "explanation": "Multimodal agents can have additive or synergistic adverse effects even when each dose is individually reasonable. The combined regimen must be considered when sedation and hemodynamic effects occur together.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9937,7 +9937,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dexmedetomidine cannot be reversed in humans.",
+      "explanation": "Hydromorphone has naloxone as an opioid antagonist, while dexmedetomidine has no routinely available specific reversal agent in human perioperative care. Excess dexmedetomidine effect is managed primarily by stopping or reducing the drug and providing supportive care.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9961,7 +9961,7 @@
       "answer": [
         0
       ],
-      "explanation": "Rule out bleeding and hypovolemia before treating pain.",
+      "explanation": "Tachycardia, hypotension, and increasing abdominal distension after surgery are concerning for hemorrhage and hypovolemia. Additional opioid can obscure deterioration and reduce compensatory sympathetic tone, so circulation and the bleeding source take priority.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -9985,7 +9985,7 @@
       "answer": [
         0
       ],
-      "explanation": "Analgesia reduces sympathetic tone and can unmask hypovolemia.",
+      "explanation": "Pain-driven sympathetic tone can partially support vascular tone and blood pressure during hypovolemia. Opioids reduce that compensatory response and may add vasodilation, revealing or worsening hypotension when circulating volume is inadequate.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10009,7 +10009,7 @@
       "answer": [
         0
       ],
-      "explanation": "Regional techniques improve pulmonary function after thoracotomy.",
+      "explanation": "Thoracotomy produces severe dynamic pain that can prevent deep inspiration and effective cough. Thoracic epidural or paravertebral analgesia can provide strong regional pain control with less systemic opioid burden, supporting pulmonary toilet and ventilation.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10033,7 +10033,7 @@
       "answer": [
         0
       ],
-      "explanation": "Poor analgesia reduces pulmonary toilet and increases pneumonia risk.",
+      "explanation": "Severe upper-abdominal or thoracic pain causes splinting, shallow breaths, and ineffective cough. Reduced lung expansion and secretion clearance promote atelectasis and pulmonary infection, linking inadequate dynamic analgesia to later pneumonia risk.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10057,7 +10057,7 @@
       "answer": [
         0
       ],
-      "explanation": "Remifentanil's short CSHT requires transitional analgesia.",
+      "explanation": "Remifentanil has an extremely short context-sensitive half-time and provides little residual analgesia after discontinuation. Without a longer-acting systemic, local, or regional technique established before offset, severe postoperative pain can appear abruptly.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10081,7 +10081,7 @@
       "answer": [
         0
       ],
-      "explanation": "Plan transitional analgesia for remifentanil cases.",
+      "explanation": "When postoperative pain will persist beyond remifentanil, another analgesic must be active before the infusion ends. Longer-acting opioid, nonopioid multimodal therapy, and regional or local analgesia can provide that bridge.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10105,7 +10105,7 @@
       "answer": [
         0
       ],
-      "explanation": "PONV and fever/temperature issues are pain differentials.",
+      "explanation": "Shivering and active PONV can independently create major postoperative distress and autonomic activation that may be mistaken for uncontrolled pain. Treating these contributors and then reassessing prevents unnecessary opioid escalation.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10153,7 +10153,7 @@
       "answer": [
         0
       ],
-      "explanation": "Pre-existing sensitization reduces response.",
+      "explanation": "Preventive analgesia reduces new perioperative nociceptive amplification but cannot erase central sensitization that is already established before surgery. Expectations should focus on reducing additional input and optimizing multimodal control.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10177,7 +10177,7 @@
       "answer": [
         0
       ],
-      "explanation": "Chronic pain patients benefit most from multimodal and regional techniques.",
+      "explanation": "Chronic pain with established sensitization often requires multiple complementary mechanisms rather than escalating a single systemic drug. Regional or local techniques and individualized multimodal therapy can reduce new nociceptive input while addressing sensitization components.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10201,7 +10201,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dexmedetomidine cannot be reversed.",
+      "explanation": "Dexmedetomidine does not have a routinely available specific antagonist for rapid reversal in human perioperative practice. Delayed awakening from residual effect therefore relies on drug discontinuation, time, and supportive management.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10225,7 +10225,7 @@
       "answer": [
         0
       ],
-      "explanation": "Timing of drip stop matters to avoid prolonged emergence.",
+      "explanation": "Recovery from dexmedetomidine depends on dose and duration of administration, so a prolonged infusion stopped at the end of surgery may contribute to delayed awakening. Reducing late-case dosing or stopping earlier can better match the desired emergence time.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10345,7 +10345,7 @@
       "answer": [
         0
       ],
-      "explanation": "0.5% = 5 mg/mL; 25 mL × 5 = 125 mg.",
+      "explanation": "A 0.5% ropivacaine solution contains 5 mg/mL. Multiplying 25 mL by 5 mg/mL gives 125 mg, which must be included in the cumulative local-anesthetic dose.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10369,7 +10369,7 @@
       "answer": [
         0
       ],
-      "explanation": "0.25% = 2.5 mg/mL; 20 mL × 2.5 = 50 mg.",
+      "explanation": "A 0.25% ropivacaine solution contains 2.5 mg/mL. Multiplying 20 mL by 2.5 mg/mL gives an additional 50 mg that must be added to all prior ropivacaine exposure.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10393,7 +10393,7 @@
       "answer": [
         0
       ],
-      "explanation": "Inguinal herniorrhaphy is among procedures associated with chronic postsurgical pain.",
+      "explanation": "Inguinal hernia repair is among operations associated with persistent postsurgical pain, sometimes from nerve injury or sensitization. The association justifies counseling and thoughtful perioperative analgesia but does not mean chronic pain is inevitable.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10417,7 +10417,7 @@
       "answer": [
         0
       ],
-      "explanation": "Preventive analgesia aims to block central sensitization.",
+      "explanation": "Preventive analgesia requires more than preincisional timing. The technique should suppress clinically important nociceptive input with sufficient intensity, cover the relevant surgical field, and persist while substantial postoperative input continues.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10441,7 +10441,7 @@
       "answer": [
         0
       ],
-      "explanation": "Elderly patients have altered drug metabolism and cognitive vulnerability.",
+      "explanation": "Older adults may have altered pharmacokinetics, reduced physiologic reserve, and greater susceptibility to opioid-related sedation and delirium. New confusion after repeated doses should prompt dose reduction and reassessment rather than assuming undertreated pain.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10465,7 +10465,7 @@
       "answer": [
         0
       ],
-      "explanation": "Titrate carefully in geriatric patients.",
+      "explanation": "In an older adult with cognitive vulnerability, use smaller individualized doses, titrate to function and observed response, and use opioid-sparing multimodal strategies when appropriate. Frequent reassessment is more reliable than a fixed age-based dose reduction.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10489,7 +10489,7 @@
       "answer": [
         0
       ],
-      "explanation": "Tramadol has SNRI activity and interactions.",
+      "explanation": "Tramadol inhibits serotonin and norepinephrine reuptake in addition to weak mu-opioid activity. Combining it with an SSRI increases serotonergic toxicity risk, making agitation and autonomic activation concerning.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10513,7 +10513,7 @@
       "answer": [
         0
       ],
-      "explanation": "Tramadol has SNRI activity and CYP2D6 dependence, creating many interactions.",
+      "explanation": "Tramadol is pharmacologically complex because it has serotonergic and noradrenergic activity, depends partly on CYP2D6 for an active opioid metabolite, and interacts with multiple CNS medications. It should not be treated as a simple interchangeable opioid.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10537,7 +10537,7 @@
       "answer": [
         0
       ],
-      "explanation": "Know last dose/time of analgesics that affect your plan.",
+      "explanation": "Recent PCA delivery determines the patient's current opioid burden. Knowing the drug, concentration, basal rate if present, demand dose, successful doses, last delivery, and clinical response helps prevent additive oversedation or inadvertent loss of baseline therapy.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10561,7 +10561,7 @@
       "answer": [
         0
       ],
-      "explanation": "Prior dosing affects safety and effectiveness of your plan.",
+      "explanation": "Ignoring prior PCA exposure can lead to excessive supplemental dosing if substantial opioid was recently delivered, or withdrawal and undertreatment if chronic baseline therapy is interrupted. Medication reconciliation must precede new dosing.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10585,7 +10585,7 @@
       "answer": [
         0
       ],
-      "explanation": "Visceral pain can be referred to the shoulder.",
+      "explanation": "Pneumoperitoneum can irritate the diaphragm and adjacent peritoneum, with afferent convergence producing pain perceived at the shoulder rather than the abdomen. This is a classic referred visceral pain pattern.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10633,7 +10633,7 @@
       "answer": [
         0
       ],
-      "explanation": "Early respiratory depression from fentanyl needs airway support and possible naloxone.",
+      "explanation": "Clinically significant hypoventilation after neuraxial fentanyl is an airway and ventilation problem first. Support ventilation, stop further depressant dosing, and titrate naloxone when opioid antagonism is needed.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10657,7 +10657,7 @@
       "answer": [
         0
       ],
-      "explanation": "Lipophilic opioids act quickly.",
+      "explanation": "Fentanyl is highly lipophilic, producing rapid spinal tissue uptake and systemic absorption after neuraxial administration. Its respiratory effects therefore tend to occur earlier than the delayed rostral-spread pattern of hydrophilic morphine.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10705,7 +10705,7 @@
       "answer": [
         0
       ],
-      "explanation": "Hypoxemia is a pain differential to treat first.",
+      "explanation": "New hypoxemia can itself cause agitation and distress and represents an immediate physiologic threat. Oxygenation and ventilation should be corrected and the cause investigated before hypertension is attributed solely to tourniquet pain.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10753,7 +10753,7 @@
       "answer": [
         0
       ],
-      "explanation": "Continue baseline opioid and add multimodal analgesia.",
+      "explanation": "Maintenance methadone covers the patient's baseline opioid requirement and helps prevent withdrawal, but it does not automatically provide adequate analgesia for a new painful operation. Continue baseline therapy and add individualized procedure-specific multimodal analgesia.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10825,7 +10825,7 @@
       "answer": [
         0
       ],
-      "explanation": "Reassess arousal and respiratory status before giving more.",
+      "explanation": "A high pain score does not justify additional opioid when the patient is already difficult to keep awake and bradypneic. Immediate safety requires reassessing airway, ventilation, gas exchange, and sedation and withholding further opioid until respiratory stability is established.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10849,7 +10849,7 @@
       "answer": [
         0
       ],
-      "explanation": "Continuous reassessment prevents over-administration.",
+      "explanation": "Pain treatment is iterative rather than dose-and-forget. Repeated assessment of pain, function, arousability, respiratory status, and adverse effects is necessary because severe pain can coexist with unsafe opioid effect.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10873,7 +10873,7 @@
       "answer": [
         0
       ],
-      "explanation": "Anxiety amplifies pain, and treating it is a non-opioid intervention.",
+      "explanation": "Anxiety can magnify distress and pain reporting, while additional opioid in a patient with substantial existing exposure may add toxicity without addressing the dominant problem. Reassurance and carefully selected nonopioid or anxiolytic strategies should accompany reassessment.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10897,7 +10897,7 @@
       "answer": [
         0
       ],
-      "explanation": "Guideline 7 supports pain specialist consultation.",
+      "explanation": "High-risk chronic opioid exposure with persistent uncontrolled pain benefits from specialist input because management may require complex opioid conversion, maintenance therapy, regional techniques, neuropathic agents, and discharge planning.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10921,7 +10921,7 @@
       "answer": [
         0
       ],
-      "explanation": "Adding a second modality requires care.",
+      "explanation": "Sudden breakthrough pain after a previously effective epidural may reflect catheter migration, disconnection, pump failure, inadequate spread, or a new complication. Troubleshooting the primary technique before indiscriminately adding systemic rescue therapy reduces overlapping toxicity.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10945,7 +10945,7 @@
       "answer": [
         0
       ],
-      "explanation": "Airway support comes first; reversal may follow.",
+      "explanation": "Apnea after sedative and opioid administration requires immediate airway opening and ventilatory support regardless of which drug is responsible. Drug-specific antagonists may then be selected according to the suspected residual effect and patient-specific risks.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10969,7 +10969,7 @@
       "answer": [
         0
       ],
-      "explanation": "Perioral numbness suggests LAST; stop the infusion and assess.",
+      "explanation": "Circumoral numbness and metallic taste are classic early neurologic symptoms of local-anesthetic systemic toxicity. Stop lidocaine immediately, assess the patient, and prepare for escalation according to a LAST protocol if symptoms progress.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10993,7 +10993,7 @@
       "answer": [
         0
       ],
-      "explanation": "Regional anesthesia requires emergency equipment.",
+      "explanation": "Peripheral nerve blocks can cause complications that deteriorate rapidly. Appropriate monitoring, resuscitation equipment, and lipid emulsion must be immediately available rather than located elsewhere where treatment would be delayed.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -11017,7 +11017,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ketamine can cause dissociative effects.",
+      "explanation": "Ketamine can produce dissociation, vivid dreams, hallucinations, and other psychomimetic effects even at subanesthetic doses. Stable ventilation and hemodynamics with perceptual disturbance support this drug effect.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
