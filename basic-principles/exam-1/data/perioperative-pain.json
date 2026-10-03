@@ -4733,7 +4733,7 @@
       "answer": [
         0
       ],
-      "explanation": "Pruritus is a common opioid adverse effect and, particularly with morphine, can also reflect non-IgE-mediated histamine release. Isolated itching without features such as urticaria, angioedema, bronchospasm, or cardiovascular collapse does not by itself establish true IgE-mediated allergy.",
+      "explanation": "Conventional maximum recommended doses are commonly expressed in mg/kg but should be treated as approximate safety ceilings rather than thresholds below which toxicity is impossible. Patient factors, injection site, cumulative dosing, and inadvertent intravascular injection can produce toxicity at lower totals.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4757,7 +4757,7 @@
       "answer": [
         0
       ],
-      "explanation": "Lidocaine: 4.5 mg/kg plain (315 mg) and 7 mg/kg with epinephrine (490 mg) for 70 kg.",
+      "explanation": "Using the conventional limits in the question, 4.5 mg/kg × 70 kg gives 315 mg plain lidocaine and 7 mg/kg × 70 kg gives 490 mg with epinephrine. These calculated maxima do not replace clinical judgment or cumulative-dose tracking.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4786,7 +4786,7 @@
         2,
         3
       ],
-      "explanation": "Regional anesthesia requires emergency airway, vascular access, ACLS drugs, chest dart, and lipids.",
+      "explanation": "Regional anesthesia should be performed where oxygenation and ventilation can be supported, vascular access and resuscitation drugs are available, and LAST can be treated immediately. The exact equipment set should match the block and environment, but airway-rescue capability and lipid emulsion are core preparedness elements.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4810,7 +4810,7 @@
       "answer": [
         0
       ],
-      "explanation": "\"Safety first\" means performing blocks only where monitoring and resuscitation are available.",
+      "explanation": "An interscalene block can cause local-anesthetic toxicity, high neuraxial spread, phrenic impairment, pneumothorax, or other complications that may require immediate resuscitation. Performing it in an unmonitored area without airway equipment or lipid emulsion removes the ability to recognize and treat those complications promptly.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4834,7 +4834,7 @@
       "answer": [
         0
       ],
-      "explanation": "20 mL of 1% is 200 mg; 150 + 200 = 350 mg, over 4.5 × 60 = 270 mg. Cumulative doses must be counted.",
+      "explanation": "Twenty milliliters of 1% lidocaine contains 200 mg. Adding that to the existing 150 mg gives 350 mg, which exceeds the question's conventional plain-lidocaine limit of 4.5 mg/kg × 60 kg = 270 mg; doses from all sources must be counted cumulatively.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4858,7 +4858,7 @@
       "answer": [
         0
       ],
-      "explanation": "The slide recommends reversing benzodiazepines before naloxone.",
+      "explanation": "When both benzodiazepine and opioid contribute to oversedation, ventilation remains the immediate priority. If preserving opioid analgesia is important and benzodiazepine effect is substantial, cautious flumazenil may reduce sedation before naloxone is titrated, but seizure/withdrawal risk and the actual drug contribution must be considered.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4882,7 +4882,7 @@
       "answer": [
         0
       ],
-      "explanation": "Opioid pruritus often responds to low-dose naloxone because it is mu-mediated.",
+      "explanation": "Neuraxial opioid pruritus is primarily centrally mediated through opioid receptors rather than histamine release. Very low-dose naloxone can reduce mu-mediated itching while attempting to preserve analgesia, although other antipruritic strategies may also be used.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4906,7 +4906,7 @@
       "answer": [
         0
       ],
-      "explanation": "Physical dependence is adaptation with withdrawal on abstinence that is relieved by the drug.",
+      "explanation": "Physical dependence is a physiologic adaptation in which abrupt cessation or antagonism produces a withdrawal syndrome. Relief of yawning, sweating, diarrhea, and autonomic symptoms when the opioid is restored supports dependence rather than tolerance or opioid use disorder by itself.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -4930,7 +4930,7 @@
       "answer": [
         0
       ],
-      "explanation": "Tolerance shifts the dose-response curve to the right, requiring higher doses.",
+      "explanation": "Tolerance means a larger dose is required to produce an effect previously achieved with a smaller dose. It is distinct from physical dependence, which is demonstrated by withdrawal, and from opioid use disorder, which is defined by maladaptive behavioral criteria rather than dose requirement alone.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -4954,7 +4954,7 @@
       "answer": [
         0
       ],
-      "explanation": "A rightward shift means more drug is needed for the same effect.",
+      "explanation": "A rightward shift in the dose-response relationship means higher drug concentrations are needed to achieve the same effect, which is pharmacodynamic tolerance. This can occur through receptor and downstream signaling adaptations during chronic opioid exposure.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -4978,7 +4978,7 @@
       "answer": [
         0
       ],
-      "explanation": "Tolerance and dependence often coexist but are not the same.",
+      "explanation": "Tolerance and physical dependence are related adaptations but neither requires the other to be demonstrated in a particular patient. Increasing dose requirement establishes tolerance; dependence specifically requires a withdrawal syndrome after reduction, cessation, or antagonism.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5007,7 +5007,7 @@
         2,
         3
       ],
-      "explanation": "Withdrawal causes sympathetic and parasympathetic responses: hypertension, tachycardia, diaphoresis, cramping, diarrhea.",
+      "explanation": "Opioid withdrawal commonly produces autonomic hyperactivity and gastrointestinal symptoms such as tachycardia, hypertension, diaphoresis, cramping, nausea/vomiting, and diarrhea. It is usually intensely uncomfortable but differs physiologically from opioid intoxication, which causes sedation and respiratory depression.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5031,7 +5031,7 @@
       "answer": [
         0
       ],
-      "explanation": "Tolerance involves receptor downregulation, internalization, and G-protein uncoupling.",
+      "explanation": "Chronic opioid exposure can cause receptor phosphorylation, internalization/downregulation, and altered G-protein signaling, reducing response to the same agonist concentration. These pharmacodynamic changes contribute to the rightward dose-response shift of tolerance.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5060,7 +5060,7 @@
         2,
         3
       ],
-      "explanation": "Chronic pain planning identifies dependence, calculates baseline needs, prioritizes multimodal and regional techniques, and plans restarting home meds.",
+      "explanation": "Perioperative planning for chronic opioid therapy should identify the patient's actual baseline exposure and dependence, prevent withdrawal by continuing or replacing that baseline, add multimodal/regional analgesia when feasible, and separately titrate additional medication for new surgical pain.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5089,7 +5089,7 @@
         2,
         3
       ],
-      "explanation": "Adjuncts include ketamine, magnesium, gabapentin, tramadol, methocarbamol, and diazepam.",
+      "explanation": "Ketamine, magnesium, gabapentinoids, and selected muscle-relaxant or other adjuvant therapies can reduce reliance on escalating opioids in tolerant patients when matched to the pain mechanism. Each has distinct sedation, hemodynamic, renal, or drug-interaction risks, so adjuncts should be selected rather than automatically stacked.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5113,7 +5113,7 @@
       "answer": [
         0
       ],
-      "explanation": "Tramadol has many interactions, including serotonin syndrome risk with SNRIs and reduced effect with ondansetron.",
+      "explanation": "Tramadol inhibits serotonin and norepinephrine reuptake in addition to opioid activity, so combining it with duloxetine increases serotonergic toxicity risk. Its analgesia also depends partly on CYP2D6 activation, and multiple perioperative drug interactions make it less predictable than a simple direct-acting opioid.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5137,7 +5137,7 @@
       "answer": [
         0
       ],
-      "explanation": "Opioid-dependent patients should take their usual dose to prevent withdrawal.",
+      "explanation": "Abruptly withholding baseline opioid from a physically dependent patient can precipitate withdrawal and complicate perioperative pain control. The usual opioid exposure should generally be continued or replaced with an appropriate equivalent while additional surgical analgesia is managed separately.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5161,7 +5161,7 @@
       "answer": [
         0
       ],
-      "explanation": "Opioid-tolerant patients often need more opioid than opioid-naive patients, but the magnitude varies widely. Maintain or replace baseline opioid exposure, use multimodal analgesia, and titrate additional opioid to pain, function, and adverse effects rather than using a universal 30–100% rule.",
+      "explanation": "Opioid-tolerant patients often require more opioid for acute surgical pain than opioid-naive patients, but the increase is highly variable. Baseline exposure should be maintained/replaced, multimodal and regional techniques used when appropriate, and supplemental opioid titrated to pain, function, sedation, and ventilation rather than a fixed percentage rule.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5185,7 +5185,7 @@
       "answer": [
         0
       ],
-      "explanation": "Full agonists such as morphine, hydromorphone, or fentanyl are used to supplement buprenorphine.",
+      "explanation": "Buprenorphine's high-affinity partial mu agonism can make supplemental analgesia challenging, but full mu agonists with high receptor affinity such as hydromorphone or fentanyl can still be titrated when needed as part of a multimodal plan. Perioperative buprenorphine management should follow the patient's maintenance indication and current institutional guidance rather than automatic discontinuation.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5213,7 +5213,7 @@
         1,
         2
       ],
-      "explanation": "Mixed agonist-antagonists precipitate withdrawal.",
+      "explanation": "Mixed agonist-antagonist opioids such as nalbuphine, butorphanol, and pentazocine can antagonize mu-receptor effects while activating other opioid receptors. In a patient physically dependent on a full mu agonist, that displacement can precipitate acute withdrawal.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5237,7 +5237,7 @@
       "answer": [
         0
       ],
-      "explanation": "Mixed agonist-antagonists can precipitate withdrawal in opioid-dependent patients.",
+      "explanation": "Butorphanol has mixed agonist-antagonist activity and can reduce mu-receptor signaling in a patient dependent on full mu agonism. The abrupt decrease in effective mu stimulation can precipitate autonomic and gastrointestinal withdrawal symptoms despite administration of an opioid-class drug.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5261,7 +5261,7 @@
       "answer": [
         0
       ],
-      "explanation": "A partial agonist activates the receptor submaximally, producing a ceiling effect.",
+      "explanation": "A partial agonist binds the receptor but produces less maximal signaling than a full agonist even with high receptor occupancy. Buprenorphine's high-affinity partial mu agonism therefore creates a ceiling on some opioid effects while still providing analgesia and suppressing withdrawal.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5285,7 +5285,7 @@
       "answer": [
         0
       ],
-      "explanation": "A mixed agonist-antagonist is an agonist at one receptor type and an antagonist at another.",
+      "explanation": "Butorphanol acts primarily as a kappa agonist with mu-antagonist/partial-antagonist properties, so it is classified as a mixed agonist-antagonist. Its mu-antagonist behavior explains why it can precipitate withdrawal in patients dependent on full mu agonists.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5333,7 +5333,7 @@
       "answer": [
         0
       ],
-      "explanation": "Opioid rotation, often to methadone, restores sensitivity in highly tolerant patients.",
+      "explanation": "When escalating one opioid produces diminishing analgesic benefit with increasing toxicity, switching to a different opioid can exploit incomplete cross-tolerance and different receptor/pharmacokinetic properties. Methadone may be useful in selected highly tolerant patients because of mu agonism and NMDA antagonism, but conversion is complex and requires conservative dosing and expertise.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5381,7 +5381,7 @@
       "answer": [
         0
       ],
-      "explanation": "A basal infusion may be considered for opioid-tolerant patients; it is not recommended for opioid-naive patients.",
+      "explanation": "A basal PCA infusion may be appropriate in selected opioid-tolerant patients when it replaces part of a known baseline opioid requirement. In opioid-naive patients, a background infusion can continue dosing during sleep or sedation and increases respiratory-depression risk without the demand-button feedback safeguard.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5405,7 +5405,7 @@
       "answer": [
         0
       ],
-      "explanation": "Management of opioid tolerance is individualized. Prevent withdrawal by maintaining baseline exposure, add multimodal and regional analgesia when appropriate, and titrate supplemental opioids; opioid rotation may help selected patients but is not universally required.",
+      "explanation": "The opioid-tolerant patient has two separate needs: continuation or replacement of baseline opioid to prevent withdrawal and additional treatment for new surgical pain. Multimodal and regional techniques can reduce supplemental opioid burden, while rescue dosing should be individualized to response and adverse effects.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5429,7 +5429,7 @@
       "answer": [
         0
       ],
-      "explanation": "Transdermal opioid patches require a decision to keep or remove them perioperatively.",
+      "explanation": "A transdermal fentanyl patch may represent a substantial component of baseline opioid exposure, and heat, perfusion changes, or removal can alter delivery. The perioperative plan should explicitly decide whether it remains in place and how baseline opioid will be maintained if it is removed.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5453,7 +5453,7 @@
       "answer": [
         0
       ],
-      "explanation": "Opioid-dependent patients still need adequate dosing to avoid acute withdrawal.",
+      "explanation": "Avoiding all opioid in a physically dependent patient does not eliminate risk; it creates abrupt loss of baseline mu-receptor stimulation and can precipitate withdrawal. Baseline opioid should be maintained or equivalently replaced while additional analgesia is titrated safely.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5477,7 +5477,7 @@
       "answer": [
         0
       ],
-      "explanation": "Late discovery of chronic opioid use requires rapid medication reconciliation and an individualized plan to prevent withdrawal while treating acute surgical pain safely. The key issue is the patient's actual exposure and physiology, not how commonly disclosure occurs at a particular time.",
+      "explanation": "Late discovery of daily oxycodone use should trigger rapid medication reconciliation: exact formulation, dose, schedule, indication, last dose, duration, tolerance/dependence, and other CNS depressants. That information determines withdrawal prevention, expected acute-pain requirements, and respiratory risk.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5501,7 +5501,7 @@
       "answer": [
         0
       ],
-      "explanation": "Opioids are the mainstay of cancer pain management.",
+      "explanation": "Systemic opioids remain central for moderate-to-severe cancer pain because they can be titrated across diffuse or multifocal pain when no single regional target exists. Adjuvants, disease-directed treatment, and interventional techniques should be added according to mechanism and adverse effects.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -5525,7 +5525,7 @@
       "answer": [
         0
       ],
-      "explanation": "Visceral sympathetic neurolysis, such as celiac plexus block, helps abdominal or pelvic cancer pain.",
+      "explanation": "Upper-abdominal visceral pain from pancreatic cancer is transmitted in part through sympathetic pathways associated with the celiac plexus. Celiac plexus block or neurolysis can reduce that nociceptive transmission and may lower systemic opioid requirements when sedation or other opioid toxicity becomes limiting.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -5549,7 +5549,7 @@
       "answer": [
         0
       ],
-      "explanation": "Intrathecal drug delivery is considered when systemic opioids fail or cause unacceptable side effects.",
+      "explanation": "Intrathecal drug delivery places analgesic near spinal receptors and can provide analgesia with lower systemic exposure in selected refractory cancer pain. It is considered when optimized systemic therapy is ineffective or causes unacceptable toxicity and requires appropriate procedural expertise and follow-up.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -5577,7 +5577,7 @@
         1,
         2
       ],
-      "explanation": "Most cancer pain is managed with opioids, anticonvulsants, and antidepressants.",
+      "explanation": "Cancer pain often has mixed nociceptive and neuropathic mechanisms. Opioids remain central for severe nociceptive pain, while anticonvulsants and antidepressants can treat neuropathic components; the regimen should be individualized to pain mechanism and treatment goals.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -5601,7 +5601,7 @@
       "answer": [
         0
       ],
-      "explanation": "Pain threshold increases in the elderly, while pain tolerance decreases.",
+      "explanation": "Population studies of pain threshold and tolerance in older adults are variable and should not be treated as a fixed bedside rule. The clinically useful point is to assess each older patient directly because sensory changes, cognition, neuropathy, frailty, and pharmacologic sensitivity can alter both pain reporting and treatment response.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -5625,7 +5625,7 @@
       "answer": [
         0
       ],
-      "explanation": "In older adults the pain threshold rises while pain tolerance decreases.",
+      "explanation": "Age-related pain research is heterogeneous, so a universal claim that every older adult has a higher threshold and lower tolerance should be applied cautiously. Individual assessment is more reliable because neuropathy, cognition, prior pain, mood, culture, and physiologic reserve vary widely.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -5653,7 +5653,7 @@
         1,
         2
       ],
-      "explanation": "Geriatric factors include neuropathies, skin changes, cognitive impairment, and altered metabolism.",
+      "explanation": "Peripheral neuropathy and age-related sensory changes can alter nociceptive input, while cognitive impairment can limit self-report and altered pharmacokinetics/pharmacodynamics can change treatment response. These factors make individualized geriatric pain assessment and dosing essential.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -5705,7 +5705,7 @@
         1,
         2
       ],
-      "explanation": "Pediatric pain shows through facial expression, crying, body movement, and inconsolability.",
+      "explanation": "Young children may communicate pain through facial expression, crying, guarding/body movement, sleep or activity change, and inability to be consoled. Age-appropriate validated behavioral tools should be used when reliable self-report is not possible.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -5753,7 +5753,7 @@
       "answer": [
         0
       ],
-      "explanation": "Parental distress can make the child's distress worse, so family-centered care includes supporting parents.",
+      "explanation": "A parent's visible distress can increase a child's fear and behavioral distress, which can intensify the pain experience or its expression. Family-centered care therefore includes supporting and coaching caregivers as part of the child's perioperative comfort plan.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -5777,7 +5777,7 @@
       "answer": [
         0
       ],
-      "explanation": "Family-centered care reduces parental stress, which helps the child.",
+      "explanation": "Family-centered pediatric pain care recognizes that caregiver anxiety and behavior influence the child's distress and coping. Clear information, reassurance, and involving parents appropriately can reduce distress while validated pain assessment and analgesic treatment continue.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -5805,7 +5805,7 @@
         1,
         2
       ],
-      "explanation": "Barriers include cultural and language issues, stoicism, opiophobia, inadequate education, and staff bias.",
+      "explanation": "Stoicism can suppress pain reporting, opiophobia can cause refusal because of addiction fears, and clinician bias can lead to undertreatment despite patient need. Identifying these barriers allows education and culturally responsive assessment rather than assuming low reported treatment demand means low pain.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -5829,7 +5829,7 @@
       "answer": [
         0
       ],
-      "explanation": "Education is key to changing caregiver attitudes about pain.",
+      "explanation": "When staff conflate appropriate short-term postoperative opioid treatment with addiction, education should distinguish expected analgesic use, tolerance, physical dependence, and opioid use disorder while reinforcing safe prescribing and monitoring. Correcting the misconception directly targets the identified barrier to treatment.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -5859,7 +5859,7 @@
         3,
         4
       ],
-      "explanation": "Poorly managed pain causes cardiovascular, pulmonary, GI, renal, immune, and psychological effects.",
+      "explanation": "Poorly controlled pain can activate sympathetic cardiovascular responses, impair deep breathing and cough, slow gastrointestinal and urinary function, alter immune/endocrine responses, disturb sleep and mood, and delay mobilization. The consequences extend beyond discomfort and can interfere with recovery.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -5883,7 +5883,7 @@
       "answer": [
         0
       ],
-      "explanation": "Effective pain control improves outcomes and satisfaction.",
+      "explanation": "Effective analgesia supports breathing, mobilization, sleep, participation in therapy, and patient experience while reducing excessive stress responses and rescue-treatment delays. Outcomes depend on balancing pain relief with adverse effects rather than pursuing a pain score of zero at any cost.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -5907,7 +5907,7 @@
       "answer": [
         0
       ],
-      "explanation": "Research on pain in older adults is conflicting, so assessment must be individualized.",
+      "explanation": "Older adults vary substantially in nociception, communication, cognition, comorbidity, and sensitivity to analgesics. A dose tolerated poorly by one patient should not be used to invalidate another patient's report; treatment should be titrated to that individual's pain, function, and adverse effects.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -5931,7 +5931,7 @@
       "answer": [
         0
       ],
-      "explanation": "Thoracotomy calls for epidural or paravertebral block plus multimodal systemic agents.",
+      "explanation": "Open thoracotomy produces severe dynamic pain that can impair ventilation and coughing. Thoracic epidural or paravertebral analgesia combined with multimodal systemic therapy can provide strong pain control and reduce opioid burden, with technique choice based on contraindications and patient-specific risk.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -5955,7 +5955,7 @@
       "answer": [
         0
       ],
-      "explanation": "Regional analgesia promotes pulmonary toilet after thoracic and upper abdominal surgery.",
+      "explanation": "Thoracic pain causes splinting, shallow breathing, and ineffective cough, increasing atelectasis and pulmonary complication risk. Regional analgesia can improve dynamic pain enough to support deep breathing, coughing, mobilization, and pulmonary toilet.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -5979,7 +5979,7 @@
       "answer": [
         0
       ],
-      "explanation": "Multimodal and regional techniques reduce opioid needs in OSA patients.",
+      "explanation": "OSA increases sensitivity to opioid-related ventilatory depression and upper-airway obstruction. Regional analgesia plus scheduled nonopioid multimodal therapy reduces opioid requirement, reserving carefully titrated systemic opioid for breakthrough pain while maintaining appropriate respiratory monitoring.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6003,7 +6003,7 @@
       "answer": [
         0
       ],
-      "explanation": "Smaller LA doses plus fentanyl or sufentanil prolong analgesia with less motor block.",
+      "explanation": "For short ambulatory procedures, excessive intrathecal local anesthetic can prolong motor recovery and delay walking or discharge. A smaller local-anesthetic dose supplemented by a lipophilic intrathecal opioid can preserve analgesia while reducing duration of motor block when clinically appropriate.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6027,7 +6027,7 @@
       "answer": [
         0
       ],
-      "explanation": "Starting oral analgesia before block resolution avoids rebound pain.",
+      "explanation": "The block may resolve faster than an oral rescue analgesic begins working. Taking the prescribed medication before sensory block resolution creates pharmacologic overlap and reduces the abrupt transition from near-complete regional analgesia to severe surgical pain.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6051,7 +6051,7 @@
       "answer": [
         0
       ],
-      "explanation": "Fear of addiction is a barrier. Education and a multimodal plan respect her wishes while controlling pain.",
+      "explanation": "Fear of addiction is a recognized barrier that should be addressed with accurate education and shared planning rather than dismissed. A multimodal plan can emphasize nonopioid and regional options while preserving carefully monitored opioid rescue if needed for function and humane pain control.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6075,7 +6075,7 @@
       "answer": [
         0
       ],
-      "explanation": "Opioid exposure does not automatically invalidate consent. The relevant question is whether medication or another condition has impaired decision-making capacity at the time consent is obtained.",
+      "explanation": "Medication exposure alone does not invalidate consent. Capacity depends on the patient's present ability to understand relevant information, appreciate how it applies personally, reason among options, and communicate a consistent choice; sedation or delirium matters only insofar as it impairs those abilities.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6099,7 +6099,7 @@
       "answer": [
         0
       ],
-      "explanation": "Fentanyl's onset and duration may not match incision timing.",
+      "explanation": "Analgesic dosing should be synchronized with the expected noxious stimulus. A 30-minute delay can separate fentanyl's peak effect from incision, so failure to reassess and retitrate before the eventual incision leaves inadequate antinociception at the moment it is needed.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6123,7 +6123,7 @@
       "answer": [
         0
       ],
-      "explanation": "Balance opioid peak with the patient's ability to cooperate.",
+      "explanation": "Preoxygenation depends on adequate ventilation and patient cooperation. A large opioid dose peaking before denitrogenation is complete can cause somnolence, hypoventilation, or apnea, preventing an adequate end-tidal oxygen concentration and reducing safe apnea time.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6147,7 +6147,7 @@
       "answer": [
         0
       ],
-      "explanation": "Tachypnea and mydriasis may accompany pain but are nonspecific. Opioid titration should reflect the entire clinical picture rather than a fixed respiratory-rate threshold or pupil finding.",
+      "explanation": "Tachypnea and dilated pupils can suggest pain or inadequate antinociception but are not specific. Near emergence, additional opioid should be based on the full picture including ventilation, arousability, hemodynamics, temperature, anxiety, residual stimulation, and other causes to avoid trading transient signs for post-extubation respiratory depression.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6171,7 +6171,7 @@
       "answer": [
         0
       ],
-      "explanation": "Low RR and pinpoint pupils indicate opioid excess.",
+      "explanation": "Bradypnea and pinpoint pupils after repeated opioid dosing are characteristic of excessive opioid effect, especially when quantitative neuromuscular recovery is adequate. Management should prioritize adequate ventilation and arousability and reduce or reverse opioid effect as clinically necessary.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6195,7 +6195,7 @@
       "answer": [
         0
       ],
-      "explanation": "Treating emergence vital signs with opioids before extubation leads to post-extubation hypoventilation.",
+      "explanation": "Coughing can transiently raise blood pressure during emergence, but a large opioid bolus may outlast that brief stimulus. Once the tube is removed, the residual opioid can depress ventilatory drive and worsen upper-airway obstruction, creating avoidable post-extubation hypoventilation.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
