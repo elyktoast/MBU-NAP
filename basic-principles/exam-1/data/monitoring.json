@@ -3790,7 +3790,7 @@
       "answer": [
         0
       ],
-      "explanation": "Insufflation reduces compliance and CO2 is absorbed from the abdomen, raising ETCO2.",
+      "explanation": "Pneumoperitoneum pushes the diaphragm cephalad, reducing respiratory-system compliance and raising both peak and plateau pressures. At the same time, absorbed insufflated CO2 enters the circulation and is exhaled, causing ETCO2 to rise if ventilation is not increased.",
       "citation": "",
       "topic": "Capnography and expired gases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -3838,7 +3838,7 @@
       "answer": [
         0
       ],
-      "explanation": "Loss of ETCO2 is an emergency until proven otherwise.",
+      "explanation": "Abrupt loss of the capnogram after repositioning can represent circuit disconnection, airway displacement, sampling failure, or loss of ventilation. SpO2 may remain normal temporarily because of the patient's oxygen reserve, so the airway and breathing system require immediate assessment.",
       "citation": "",
       "topic": "Capnography and expired gases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -4174,7 +4174,7 @@
       "answer": [
         0
       ],
-      "explanation": "Rising ETCO2 with slower RR suggests hypoventilation.",
+      "explanation": "A falling respiratory rate with progressively rising ETCO2 indicates inadequate alveolar ventilation from sedative-opioid respiratory depression. Supplemental oxygen can mask the problem on pulse oximetry, allowing SpO2 to remain normal while CO2 accumulates.",
       "citation": "",
       "topic": "Capnography and expired gases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -4222,7 +4222,7 @@
       "answer": [
         0
       ],
-      "explanation": "PE increases dead space, lowering ETCO2 and widening the gradient.",
+      "explanation": "Pulmonary embolism creates ventilated alveoli that receive little or no perfusion, increasing alveolar dead space. Less CO2 reaches those alveoli for exhalation, so ETCO2 falls while PaCO2 may remain unchanged or rise, widening the gradient.",
       "citation": "",
       "topic": "Capnography and expired gases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -4712,7 +4712,7 @@
       "answer": [
         0
       ],
-      "explanation": "A limb below the heart gives falsely high readings.",
+      "explanation": "A cuff below heart level is exposed to additional hydrostatic pressure from the vertical blood column. The measured pressure is therefore higher than the pressure at the right atrium even though the patient's true central arterial pressure has not changed.",
       "citation": "",
       "topic": "Noninvasive blood pressure",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
