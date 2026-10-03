@@ -1435,7 +1435,7 @@
       "answer": [
         0
       ],
-      "explanation": "Knowing case status helps anticipate critical points.",
+      "explanation": "Surgical events can abruptly change preload, afterload, blood loss, ventilation, or embolic risk. Knowing that vascular clamping is imminent lets the anesthesia provider anticipate the physiologic change and prepare monitoring and treatment rather than reacting after deterioration occurs.",
       "citation": "",
       "topic": "Standards, vigilance, alarms, and setup",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -1555,7 +1555,7 @@
       "answer": [
         0
       ],
-      "explanation": "A parallel rise in PIP and plateau means higher Vt or lower pulmonary compliance.",
+      "explanation": "Peak pressure reflects both resistive and elastic loads, whereas plateau pressure more closely reflects alveolar pressure and respiratory-system compliance. A parallel rise in both after Trendelenburg therefore points toward reduced compliance rather than an isolated increase in airway resistance.",
       "citation": "",
       "topic": "Ventilator pressures, loops, and alarms",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -1661,7 +1661,7 @@
       "answer": [
         0
       ],
-      "explanation": "A suction catheter quickly identifies kinks or secretions.",
+      "explanation": "When peak pressure rises but plateau remains unchanged, the added pressure is occurring in the conducting airway rather than from reduced lung compliance. Passing a suction catheter directly tests tube patency and may identify secretions or a kink.",
       "citation": "",
       "topic": "Ventilator pressures, loops, and alarms",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -2252,7 +2252,7 @@
       "answer": [
         0
       ],
-      "explanation": "Both pressures rose together, consistent with reduced compliance from insufflation.",
+      "explanation": "Pneumoperitoneum displaces the diaphragm cephalad and reduces respiratory-system compliance. Because the elastic load rises, both peak and plateau pressures increase together rather than producing the isolated peak-pressure rise expected from airway resistance.",
       "citation": "",
       "topic": "Ventilator pressures, loops, and alarms",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -2492,7 +2492,7 @@
       "answer": [
         0
       ],
-      "explanation": "With low fresh gas flow, oxygen consumption can reduce the circuit FiO2.",
+      "explanation": "At low fresh-gas flows, rebreathed circuit gas contributes substantially to the inspired mixture. Ongoing patient oxygen uptake can therefore lower circuit oxygen concentration despite a normal pipeline supply, making direct inspired-O2 measurement essential.",
       "citation": "",
       "topic": "Inspired oxygen analysis",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
