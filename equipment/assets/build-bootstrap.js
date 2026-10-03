@@ -19,6 +19,8 @@ async function start(){
   const loadStyle=src=>new Promise((resolve,reject)=>{const l=document.createElement('link'),timer=setTimeout(()=>{l.remove();reject(Error('Stylesheet timed out: '+src))},ASSET_TIMEOUT);l.rel='stylesheet';l.href=urlFor(src).href;l.onload=()=>{clearTimeout(timer);resolve()};l.onerror=()=>{clearTimeout(timer);l.remove();reject(Error('Stylesheet failed: '+src))};document.head.append(l)});
   const loadScript=async raw=>{const spec=specOf(raw);await new Promise((resolve,reject)=>{const s=document.createElement('script'),timer=setTimeout(()=>{s.remove();reject(Error('Script timed out: '+spec.src))},ASSET_TIMEOUT);s.src=urlFor(spec.src).href;for(const [k,v] of Object.entries(spec.data||{}))s.dataset[k]=String(v);s.onload=()=>{clearTimeout(timer);resolve()};s.onerror=()=>{clearTimeout(timer);s.remove();reject(Error('Script failed: '+spec.src))};document.body.append(s)});if(spec.waitFor){const pending=window[spec.waitFor];if(pending&&typeof pending.then==='function')await pending}};
   window.MBU_BUILD_ID=build;window.MBUBuild={id:build,assetsBase,buildUrl,urlFor,loadStyle,loadScript,fetchJSON};
+  const root=new URL('../../',assetsBase),path=location.pathname,relativePath=path.slice(root.pathname.length),courseId=relativePath.startsWith('equipment/')?'equipment':relativePath.startsWith('basic-principles/')?'basic-principles':'';
+  if(courseId){const prior=window.MBU_CONTEXT||{},examId=String(prior.examId||'exam-1');window.MBU_CONTEXT={...prior,courseId,examId,courseLabel:prior.courseLabel||(courseId==='equipment'?'Equipment':'Basic Principles'),courseUrl:prior.courseUrl||new URL(courseId+'/',root).href,examUrl:prior.examUrl||new URL(courseId+'/'+examId+'/',root).href}}
   await loadStyle('app-core.css');
   await loadScript('app-core.js');
   await loadScript('legal-gate.js');
@@ -28,7 +30,7 @@ async function start(){
   await loadScript('supabase-config.js');
   await loadScript('supabase-sync.js');
   if(window.MBUAuthReady&&typeof window.MBUAuthReady.then==='function')await window.MBUAuthReady;
-  const ctx=window.MBU_CONTEXT||{},root=new URL('../../',assetsBase),path=location.pathname,protectedCourse=['equipment/','basic-principles/'].some(x=>path.startsWith(root.pathname+x));
+  const ctx=window.MBU_CONTEXT||{},protectedCourse=!!ctx.courseId;
   if(protectedCourse){
     const info=window.MBUSupabase?.status?.()||{};
     if(!(info.signedIn&&info.legalAccepted===true&&info.accessStatus==='active')&&!info.recoveryMode){
