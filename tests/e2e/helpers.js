@@ -8,7 +8,9 @@ async function clearAppState(page) {
   await page.route(cloud+'/rest/v1/rpc/snar_has_current_legal_acceptance', route => route.fulfill({ status:200, contentType:'application/json', body:'true' }));
   await page.route(cloud+'/rest/v1/rpc/snar_account_access_status', route => route.fulfill({ status:200, contentType:'application/json', body:'"active"' }));
   await page.addInitScript(() => {
+    if(sessionStorage.getItem('mbu_e2e_initialized')==='1')return;
     localStorage.clear();sessionStorage.clear();
+    sessionStorage.setItem('mbu_e2e_initialized','1');
     const now=Math.floor(Date.now()/1000);
     localStorage.setItem('snar_legal_acceptance_v6',JSON.stringify({version:'2026-09-27-v6',acceptedAt:new Date().toISOString()}));
     localStorage.setItem('mbu_supabase_session_v1',JSON.stringify({
