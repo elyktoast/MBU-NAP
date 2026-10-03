@@ -3,28 +3,36 @@ const { expect } = require('@playwright/test');
 const exam = '/equipment/exam-1';
 
 async function clearAppState(page) {
-  await page.route('https://xqyasyambwdyhsjkftqu.supabase.co/rest/v1/rpc/snar_guest_heartbeat', route => route.fulfill({ status:200, contentType:'application/json', body:'true' }));
-  await page.route('https://xqyasyambwdyhsjkftqu.supabase.co/rest/v1/rpc/snar_has_current_legal_acceptance', route =>
-    route.fulfill({ status: 200, contentType: 'application/json', body: 'true' })
-  );
-  await page.route('https://xqyasyambwdyhsjkftqu.supabase.co/rest/v1/rpc/snar_account_access_status', route =>
-    route.fulfill({ status: 200, contentType: 'application/json', body: '"active"' })
-  );
+  const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
+  await page.route(cloud+'/rest/v1/rpc/snar_guest_heartbeat', route => route.fulfill({ status:200, contentType:'application/json', body:'true' }));
+  await page.route(cloud+'/rest/v1/rpc/snar_has_current_legal_acceptance', route => route.fulfill({ status:200, contentType:'application/json', body:'true' }));
+  await page.route(cloud+'/rest/v1/rpc/snar_account_access_status', route => route.fulfill({ status:200, contentType:'application/json', body:'"active"' }));
   await page.addInitScript(() => {
+    if(sessionStorage.getItem('mbu_e2e_guest')==='1'){
+      localStorage.removeItem('mbu_supabase_session_v1');
+      return;
+    }
     const now=Math.floor(Date.now()/1000);
-    localStorage.setItem('snar_legal_acceptance_v6', JSON.stringify({version:'2026-09-27-v6',acceptedAt:new Date().toISOString()}));
+    localStorage.setItem('snar_legal_acceptance_v6',JSON.stringify({version:'2026-09-27-v6',acceptedAt:new Date().toISOString()}));
     localStorage.setItem('mbu_supabase_session_v1',JSON.stringify({
       access_token:'e2e-access',refresh_token:'e2e-refresh',expires_at:now+3600,
       user:{id:'00000000-0000-0000-0000-000000000001',email:'e2e@example.com'}
     }));
   });
-  await page.goto(exam + '/index.html');
+  await page.goto('/');
   await page.evaluate(() => window.MBUPageReady);
   await page.evaluate(() => {
     const legal=localStorage.getItem('snar_legal_acceptance_v6'),session=localStorage.getItem('mbu_supabase_session_v1');
     localStorage.clear();sessionStorage.clear();
     if(legal)localStorage.setItem('snar_legal_acceptance_v6',legal);
     if(session)localStorage.setItem('mbu_supabase_session_v1',session);
+  });
+}
+
+async function useGuestState(page){
+  await page.addInitScript(() => {
+    sessionStorage.setItem('mbu_e2e_guest','1');
+    localStorage.removeItem('mbu_supabase_session_v1');
   });
 }
 
@@ -88,4 +96,4 @@ async function storageJSON(page, key) {
   }, key);
 }
 
-module.exports = { exam, clearAppState, seedSignedIn, waitForAuth, collectPageErrors, waitForStudio, storageJSON };
+module.exports = { exam, clearAppState, useGuestState, seedSignedIn, waitForAuth, collectPageErrors, waitForStudio, storageJSON };
