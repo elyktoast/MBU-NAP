@@ -4650,17 +4650,17 @@
       "id": "SED-191",
       "set": 1,
       "type": "single",
-      "stem": "Which patient/procedure combination increases postoperative visual-loss risk during a prolonged prone operation?",
+      "stem": "A patient in steep Trendelenburg for prolonged robotic surgery develops marked facial and conjunctival edema. Which emergence concern should this finding raise most directly?",
       "options": [
-        "Obesity/vascular disease combined with prolonged duration, blood loss, or anemia",
-        "Young age with normal hemoglobin and short duration",
-        "Normal perfusion and no eye pressure",
-        "A brief supine procedure"
+        "Potential upper-airway edema and difficult extubation",
+        "Postoperative visual loss is guaranteed",
+        "The patient no longer needs neuromuscular monitoring",
+        "The edema proves fluid deficit"
       ],
       "answer": [
         0
       ],
-      "explanation": "Obesity, vascular disease, anemia, blood loss, and prolonged surgery are POVL risk factors.",
+      "explanation": "Prolonged steep Trendelenburg can produce facial and upper-airway edema. Marked external edema should prompt reassessment of airway swelling and extubation readiness rather than being used as a specific diagnosis of postoperative visual loss.",
       "citation": "",
       "topic": "Procedure selection and positioning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -6583,22 +6583,17 @@
       "id": "SED-270",
       "set": 1,
       "type": "multi",
-      "stem": "Which FOUR expectations are appropriate to discuss before MAC? (Select 4)",
+      "stem": "Before MAC for a painful procedure, which discussion most directly prepares the patient for possible conversion of the anesthetic plan?",
       "options": [
-        "The patient may remain partly awake",
-        "Some recall may occur",
-        "Conversion to general anesthesia may become necessary",
-        "The patient may hear room/procedural sounds",
-        "An airway device can never be required",
-        "Physiologic monitoring will stop once comfortable"
+        "Explain that deeper sedation or general anesthesia may become necessary if comfort, immobility, airway patency, or procedural conditions cannot be maintained safely",
+        "Promise the patient will remain awake regardless of events",
+        "State that conversion is impossible once MAC begins",
+        "Avoid discussing conversion because it increases anxiety"
       ],
       "answer": [
-        0,
-        1,
-        2,
-        3
+        0
       ],
-      "explanation": "Appropriate MAC counseling includes the possibility of being partly awake, hearing or remembering portions of the procedure, needing to follow commands, and requiring conversion to general anesthesia if conditions change. Discussing these possibilities aligns expectations with the variable depth and rescue requirements of MAC.",
+      "explanation": "MAC requires a plan for rescue and possible conversion when the intended sedation level cannot safely meet procedural or patient needs. Discussing that possibility beforehand supports informed expectations and avoids presenting sedation depth as a guarantee.",
       "citation": "",
       "topic": "Conversion to GA and patient expectations",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -6813,17 +6808,17 @@
       "id": "SED-279",
       "set": 1,
       "type": "single",
-      "stem": "During propofol sedation, the patient no longer responds purposefully even to painful stimulation and ventilation becomes inadequate. What should be recognized?",
+      "stem": "During intended moderate sedation, the patient becomes unresponsive to verbal commands and requires repeated airway maneuvers to maintain ventilation. What principle should guide management?",
       "options": [
-        "The patient has reached general-anesthesia depth and requires immediate airway/ventilatory management",
-        "This remains moderate sedation because propofol was used for MAC",
-        "The patient needs flumazenil",
-        "Loss of responsiveness decreases airway risk"
+        "Sedation exists on a continuum, so the provider must rescue the patient from a deeper-than-intended level",
+        "The procedure must continue because the intended level was moderate",
+        "Airway support is unnecessary unless SpO2 reaches zero",
+        "The event automatically converts the case to general anesthesia billing"
       ],
       "answer": [
         0
       ],
-      "explanation": "No purposeful response even to painful stimulation is consistent with general-anesthesia depth on the sedation continuum, particularly when ventilation is inadequate. Immediate airway and ventilatory support takes priority; the fact that propofol was administered during a planned MAC does not change the physiologic state.",
+      "explanation": "Sedation depth can unintentionally progress beyond the intended level. The provider must recognize the actual clinical state and be capable of rescuing airway and ventilation while reducing or stopping sedative administration as appropriate.",
       "citation": "",
       "topic": "Propofol and fospropofol",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7221,17 +7216,17 @@
       "id": "SED-296",
       "set": 1,
       "type": "single",
-      "stem": "A 70-kg patient receives propofol at 50 mcg/kg/min from a 10 mg/mL solution. What pump rate is required?",
+      "stem": "A propofol infusion is running at 50 mcg/kg/min. The procedure becomes more stimulating and the patient begins purposeful movement without airway obstruction. Which response best reflects rational titration?",
       "options": [
-        "21 mL/hr",
-        "3.5 mL/hr",
-        "35 mL/hr",
-        "210 mL/hr"
+        "Increase the infusion incrementally while reassessing responsiveness, ventilation, and hemodynamics",
+        "Immediately double the rate without reassessment",
+        "Give a neuromuscular blocker while maintaining the same sedation",
+        "Ignore movement because propofol has a fixed effective dose"
       ],
       "answer": [
         0
       ],
-      "explanation": "50 × 70 = 3,500 mcg/min = 3.5 mg/min = 210 mg/hr. At 10 mg/mL, that is 21 mL/hr.",
+      "explanation": "Propofol should be titrated to clinical effect because stimulation, age, comorbidity, and coadministered drugs change dose requirements. Incremental adjustment with repeated assessment is safer than treating a calculated infusion rate as a fixed endpoint.",
       "citation": "",
       "topic": "Propofol and fospropofol",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9318,17 +9313,17 @@
       "id": "SED-382",
       "set": 1,
       "type": "single",
-      "stem": "MEPs disappear after rocuronium while SSEPs remain stable. What is the most likely explanation?",
+      "stem": "During spine surgery, MEP amplitudes progressively decline while SSEPs also worsen and mean arterial pressure has fallen substantially. What is the most appropriate interpretation?",
       "options": [
-        "Neuromuscular blockade eliminated the muscle-recorded motor response",
-        "Selective sensory-pathway ischemia",
-        "Propofol selectively abolished SSEPs",
-        "Hypothermia selectively increased motor blockade"
+        "A global physiologic or perfusion problem should be corrected before attributing the change solely to neuromuscular blockade",
+        "Rocuronium selectively depresses SSEPs",
+        "The changes prove spinal-cord injury",
+        "MEPs are unaffected by blood pressure"
       ],
       "answer": [
         0
       ],
-      "explanation": "Rocuronium prevents acetylcholine-mediated neuromuscular transmission, so a muscle-recorded MEP cannot generate its final muscle response even if the central motor pathway is intact. SSEPs bypass the neuromuscular junction and can remain stable.",
+      "explanation": "Simultaneous deterioration of MEPs and SSEPs with hypotension suggests a physiologic or perfusion contributor. The team should correct reversible factors such as blood pressure, oxygenation, ventilation, temperature, and anesthetic effects while coordinating with the surgical and monitoring teams.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -12078,17 +12073,17 @@
       "id": "SED-496",
       "set": 1,
       "type": "single",
-      "stem": "MEPs disappear immediately after rocuronium while SSEPs and physiology remain stable. What is the most likely explanation?",
+      "stem": "SSEPs remain stable, but MEPs abruptly disappear immediately after a neuromuscular-blocking drug is administered. Why are MEPs affected more strongly?",
       "options": [
-        "Neuromuscular blockade suppressed the muscle-recorded motor response",
-        "Global spinal-cord ischemia",
-        "Propofol selectively abolished motor tracts",
-        "SSEP failure"
+        "MEPs depend on an intact motor pathway to peripheral muscle, so neuromuscular blockade can abolish the recorded response",
+        "SSEPs require neuromuscular transmission but MEPs do not",
+        "Neuromuscular blockers selectively stop cortical sensory conduction",
+        "The finding proves spinal-cord ischemia"
       ],
       "answer": [
         0
       ],
-      "explanation": "Muscle-recorded MEPs require intact neuromuscular transmission to convert descending motor pathway activation into a measurable muscle response. Rocuronium blocks that final step, so MEPs can disappear while SSEPs and systemic physiology remain unchanged.",
+      "explanation": "Motor-evoked potentials are recorded from muscle and therefore depend on neuromuscular transmission, whereas somatosensory-evoked potentials assess sensory pathways and are much less affected by neuromuscular blockade. The temporal relationship makes the drug effect the leading explanation.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
