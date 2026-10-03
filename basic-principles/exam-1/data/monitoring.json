@@ -10774,17 +10774,17 @@
       "id": "MON-440",
       "set": 1,
       "type": "single",
-      "stem": "PIP, exhaled tidal volume, and ETCO2 drift downward together but remain above alarm thresholds. Which developing problem should be considered?",
+      "stem": "During volume-controlled ventilation, inspired tidal volume remains set at 500 mL, but exhaled tidal volume falls to 320 mL while the bellows no longer fully return and ETCO2 gradually decreases. What problem should be prioritized?",
       "options": [
-        "A small breathing-system leak",
-        "Increased CO2 production",
-        "Bronchospasm with rising resistance",
-        "Improving compliance as the only explanation"
+        "A circuit or airway leak causing loss of delivered volume",
+        "Increasing lung compliance",
+        "Isolated increased metabolic CO2 production",
+        "Overdamped arterial-line tubing"
       ],
       "answer": [
         0
       ],
-      "explanation": "Subtle decreases can detect leaks before alarm thresholds.",
+      "explanation": "A falling exhaled tidal volume with incomplete bellows return and declining ETCO2 suggests loss of gas from the breathing system or airway. The clinician should inspect the circuit, connections, cuff, and airway rather than treating the capnogram in isolation.",
       "citation": "",
       "topic": "Applied monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -10870,17 +10870,17 @@
       "id": "MON-444",
       "set": 1,
       "type": "single",
-      "stem": "During carotid cross-clamping, systemic SpO2 remains normal but concern exists for regional cerebral hypoperfusion. Which monitor can provide regional cerebral oxygenation information?",
+      "stem": "Cerebral oximetry falls from 72% to 54% after carotid cross-clamping while systemic SpO2 remains 100%. Which limitation is most important when interpreting this change?",
       "options": [
-        "Cerebral oximetry",
-        "Urine output",
-        "Peripheral nerve stimulation",
-        "Skin temperature"
+        "Cerebral oximetry directly measures intracranial pressure",
+        "The value is regional and trend-based, so extracranial contamination and baseline variability must be considered",
+        "A normal systemic SpO2 makes the cerebral change impossible",
+        "The monitor measures only venous oxygen saturation from the jugular bulb"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "Cerebral oximetry detects falling cerebral oxygenation during carotid clamping.",
+      "explanation": "Near-infrared cerebral oximetry provides a regional, predominantly venous-weighted oxygenation estimate and is generally interpreted as a trend from baseline. Extracranial contamination, sensor position, and interpatient variability limit use of a single absolute threshold.",
       "citation": "",
       "topic": "Applied monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
