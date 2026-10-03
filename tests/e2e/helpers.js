@@ -38,6 +38,8 @@ async function seedSignedIn(page,email='e2e@example.com') {
   await page.route(cloud+'/rest/v1/rpc/snar_admin_status', route => route.fulfill({ status:200, contentType:'application/json', body:JSON.stringify({is_admin:false,role:null}) }));
   await page.route(cloud+'/rest/v1/mbu_item_calibration?*', route => route.fulfill({ status:200, contentType:'application/json', body:'[]' }));
   await page.addInitScript(email => {
+    if(sessionStorage.getItem('mbu_e2e_signed_in_initialized')==='1')return;
+    sessionStorage.setItem('mbu_e2e_signed_in_initialized','1');
     const now=Math.floor(Date.now()/1000);
     localStorage.setItem('mbu_supabase_session_v1',JSON.stringify({
       access_token:'e2e-access',refresh_token:'e2e-refresh',expires_at:now+3600,
