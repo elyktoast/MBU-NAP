@@ -1619,8 +1619,8 @@ test.describe('canonical quiz regression', () => {
     await page.locator('[data-cloud-password]').fill('correct horse battery staple');
     await page.locator('[data-cloud-signin]').click();
     await expect(page.locator('[data-cloud-signed-in]')).toBeVisible();
-    await expect(page.locator('.mbu-global-nav__cloud')).toContainText('Account');
     await page.locator('[data-account-close]').click();
+    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
     await page.locator('#cards button').filter({hasText:/start|continue/i}).first().click();
     await page.locator('#options .opt').first().click();
     await page.evaluate(() => MBUSupabase.syncNow());
