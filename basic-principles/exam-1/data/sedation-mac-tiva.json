@@ -2436,17 +2436,17 @@
       "id": "SED-101",
       "set": 1,
       "type": "single",
-      "stem": "A MAC case converts to TIVA/general anesthesia after regional anesthesia fails. Which monitoring domain now requires continuous measurement when clinically feasible?",
+      "stem": "A MAC case converts to TIVA/general anesthesia after regional anesthesia fails. Which monitoring domain should now be actively managed to prevent clinically significant unintended temperature change?",
       "options": [
-        "Temperature",
-        "Urine output",
-        "Processed EEG",
-        "Central venous pressure"
+        "Body temperature",
+        "Urine output in every case",
+        "Processed EEG in every case",
+        "Central venous pressure in every case"
       ],
       "answer": [
         0
       ],
-      "explanation": "Temperature is continuous during TIVA/GA and used when clinically indicated during procedural sedation and MAC.",
+      "explanation": "During general anesthesia, temperature should be measured when clinically significant changes are intended, anticipated, or suspected. It is not accurate to teach that continuous core-temperature measurement is mandatory for every TIVA/GA case.",
       "citation": "",
       "topic": "Monitoring and capnography",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -2518,7 +2518,7 @@
       "answer": [
         0
       ],
-      "explanation": "Regular waveforms with a normal ETCO2 and zero baseline show adequate ventilation with no rebreathing.",
+      "explanation": "A regular exhaled CO2 waveform with a stable trend supports ongoing exhaled ventilation at that moment. A nasal or mask ETCO2 value does not by itself prove normal PaCO2, define sedation depth, exclude aspiration risk, or confirm intact airway reflexes.",
       "citation": "",
       "topic": "Monitoring and capnography",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -3135,9 +3135,9 @@
       "id": "SED-129",
       "set": 1,
       "type": "single",
-      "stem": "A MAC case converts to TIVA/general anesthesia. Which monitoring requirement becomes more stringent?",
+      "stem": "A MAC case converts to TIVA/general anesthesia. Which monitoring consideration becomes especially important as anesthetic depth, duration, and heat loss increase?",
       "options": [
-        "Continuous temperature monitoring when clinically feasible",
+        "Assess and monitor temperature when clinically significant change is intended, anticipated, or suspected",
         "Heart rate becomes intermittent",
         "ECG becomes optional",
         "Pulse oximetry can be discontinued"
@@ -3145,7 +3145,7 @@
       "answer": [
         0
       ],
-      "explanation": "Moving to TIVA/GA makes temperature monitoring continuous. Heart rate, SpO2, and ECG stay continuous.",
+      "explanation": "General anesthesia increases the importance of thermal management, but ASA standards do not require continuous temperature measurement in every case. Temperature is measured when clinically significant changes are intended, anticipated, or suspected; oxygenation and circulation monitoring continue.",
       "citation": "",
       "topic": "Monitoring and capnography",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -3269,7 +3269,7 @@
       "answer": [
         0
       ],
-      "explanation": "TIVA/GA requires BP at least every 3 minutes; the 5-minute interval applies to moderate and deep procedural sedation.",
+      "explanation": "During anesthesia, arterial blood pressure and heart rate are evaluated at least every 5 minutes under ASA basic monitoring standards. Active hemodynamic change may justify substantially more frequent measurements or invasive monitoring, but a universal 3-minute requirement for TIVA/GA is not the ASA standard.",
       "citation": "",
       "topic": "Monitoring and capnography",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -3490,7 +3490,7 @@
       "answer": [
         0
       ],
-      "explanation": "Moderate and deep procedural sedation requires BP at least every 5 minutes; 15-minute intervals allowed hypotension to go unnoticed.",
+      "explanation": "A 15-minute blood-pressure interval can delay recognition of important hypotension. During anesthesia care, blood pressure and heart rate are evaluated at least every 5 minutes, with greater frequency when clinically indicated.",
       "citation": "",
       "topic": "Monitoring and capnography",
       "sourceTitle": "Sedation, MAC & TIVA",
