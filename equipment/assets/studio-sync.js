@@ -1,5 +1,5 @@
 (function(){
-  const ctx=window.MBU_CONTEXT||{},courseId=String(ctx.courseId||'equipment'),examId=String(ctx.examId||'exam-1');
+  const ctx=window.MBU_CONTEXT||{},courseId=String(ctx.courseId||''),examId=String(ctx.examId||'');
   const STORE=courseId==='equipment'&&examId==='exam-1'?'mbu_exam1_studio_v1':`mbu_studio_${courseId}_${examId}_v1`;
   let cache=null,reportContext=null;
 
