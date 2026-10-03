@@ -9080,7 +9080,7 @@
       "answer": [
         0
       ],
-      "explanation": "Anesthesia inhibits thermoregulation; radiation is the largest loss.",
+      "explanation": "General anesthesia impairs normal vasoconstriction and thermoregulatory control, allowing heat stored in the core to redistribute rapidly into peripheral tissues. This redistribution is a major reason core temperature falls early after induction, before prolonged environmental heat loss has occurred.",
       "citation": "",
       "topic": "Hemodynamic and temperature monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -9200,7 +9200,7 @@
       "answer": [
         0
       ],
-      "explanation": "Verify the line before treating.",
+      "explanation": "A sudden isolated invasive-pressure change that conflicts with the cuff pressure, pulse, ETCO2, and clinical picture may be measurement artifact. Checking transducer level and zero, tubing and catheter patency, and waveform fidelity prevents treating a faulty signal as true hypotension.",
       "citation": "",
       "topic": "Hemodynamic and temperature monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -9296,7 +9296,7 @@
       "answer": [
         0
       ],
-      "explanation": "Upright positioning means brain pressure is lower than heart-level pressure.",
+      "explanation": "Hydrostatic pressure decreases with vertical height above the transducer reference. In the beach-chair position, the brain is above the heart, so a MAP measured with the transducer at the right atrium can overstate the pressure actually present at cerebral level.",
       "citation": "",
       "topic": "Hemodynamic and temperature monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -9560,7 +9560,7 @@
       "answer": [
         0
       ],
-      "explanation": "Higher frequency monitoring is recommended during induction.",
+      "explanation": "Routine 5-minute NIBP cycling can miss brief but clinically important pressure changes during unstable periods. Shorter intervals, or beat-to-beat invasive monitoring when warranted by the patient's condition and procedure, reduce that blind interval.",
       "citation": "",
       "topic": "Hemodynamic and temperature monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -9800,7 +9800,7 @@
       "answer": [
         0
       ],
-      "explanation": "NMB requires monitoring of depth and recovery.",
+      "explanation": "Clinical signs alone can miss residual neuromuscular weakness after rocuronium. Objective neuromuscular assessment allows the provider to determine block depth, guide reversal, and verify adequate recovery before extubation.",
       "citation": "",
       "topic": "Applied monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
