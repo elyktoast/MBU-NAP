@@ -7472,7 +7472,7 @@
       "answer": [
         0
       ],
-      "explanation": "Supplemental O2 keeps SpO2 normal while CO2 rises from hypoventilation.",
+      "explanation": "Supplemental oxygen can maintain arterial saturation while alveolar ventilation deteriorates. The falling respiratory rate and rising ETCO2 therefore identify hypoventilation before pulse oximetry necessarily shows desaturation.",
       "citation": "",
       "topic": "Respiratory monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -7520,7 +7520,7 @@
       "answer": [
         0
       ],
-      "explanation": "PIP up with stable plateau suggests resistance; check tube and treat bronchospasm.",
+      "explanation": "Peak pressure includes resistance plus elastic pressure, while plateau pressure primarily reflects the elastic load. A sharp rise in peak pressure with unchanged plateau localizes the problem to increased airway resistance, making tube/circuit obstruction and bronchospasm the immediate targets.",
       "citation": "",
       "topic": "Respiratory monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -7760,7 +7760,7 @@
       "answer": [
         0
       ],
-      "explanation": "OLV increases dead space and widens the gradient.",
+      "explanation": "One-lung ventilation creates marked V/Q inequality and increases alveolar dead space. Poorly perfused ventilated units dilute exhaled CO2, so ETCO2 can substantially underestimate PaCO2 and the arterial-to-end-tidal gradient widens.",
       "citation": "",
       "topic": "Respiratory monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -7832,7 +7832,7 @@
       "answer": [
         0
       ],
-      "explanation": "Rising ETCO2 despite increased ventilation suggests increased CO2 production such as MH.",
+      "explanation": "If ETCO2 continues to rise despite increased minute ventilation, simple hypoventilation becomes less adequate as an explanation. When tachycardia and increasing temperature accompany it during anesthesia, markedly increased metabolic CO2 production such as malignant hyperthermia requires urgent consideration.",
       "citation": "",
       "topic": "Respiratory monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -8192,7 +8192,7 @@
       "answer": [
         0
       ],
-      "explanation": "A large gradient suggests dead space or low perfusion.",
+      "explanation": "PaCO2 reflects arterial CO2, whereas ETCO2 reflects gas from ventilated alveoli reaching the airway. A large PaCO2-ETCO2 gap with a sustained waveform indicates that a substantial fraction of ventilation is going to poorly perfused or unperfused alveoli, as occurs with increased dead space or low pulmonary blood flow.",
       "citation": "",
       "topic": "Respiratory monitoring cases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
