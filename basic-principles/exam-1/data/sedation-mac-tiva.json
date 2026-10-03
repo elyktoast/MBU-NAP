@@ -1966,7 +1966,7 @@
       "answer": [
         0
       ],
-      "explanation": "Remimazolam is broken down by tissue esterases, so it does not accumulate in liver or kidney failure. It still depresses breathing, provides no analgesia, and is reversible with flumazenil.",
+      "explanation": "Remimazolam is rapidly hydrolyzed mainly by tissue carboxylesterases to an inactive metabolite, so its offset is less dependent on hepatic CYP metabolism than midazolam. Severe organ dysfunction and patient factors can still alter clinical recovery; it can depress ventilation, provides little analgesia, and is antagonized by flumazenil.",
       "citation": "",
       "topic": "Airway assessment and patient selection",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -2350,7 +2350,7 @@
       "answer": [
         0
       ],
-      "explanation": "The table lists BP at least every 3–5 minutes for MAC, every 5 minutes for moderate/deep procedural sedation, and at least every 3 minutes for TIVA/GA.",
+      "explanation": "During anesthesia care, arterial blood pressure and heart rate are evaluated at least every 5 minutes under ASA basic monitoring standards, with more frequent measurement when the patient's condition or anesthetic warrants it. A universal 3-minute MAC interval should not be taught as the standard.",
       "citation": "",
       "topic": "Monitoring and capnography",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -2366,15 +2366,15 @@
       "type": "single",
       "stem": "Sedation unexpectedly progresses to general anesthesia/TIVA with hemodynamic instability. How should blood-pressure monitoring change?",
       "options": [
-        "Increase measurement frequency to match the deeper anesthetic and clinical instability",
+        "Increase measurement frequency beyond the routine interval as needed to manage the instability",
         "Decrease frequency because the patient is immobile",
         "Stop NIBP if pulse oximetry is normal",
-        "Measure only after drug boluses"
+        "Use a fixed 3-minute interval as the only acceptable response"
       ],
       "answer": [
         0
       ],
-      "explanation": "TIVA/GA calls for BP at least every 3 minutes, compared with at least every 5 minutes for MAC and moderate/deep sedation.",
+      "explanation": "ASA basic monitoring requires arterial blood pressure and heart rate assessment at least every 5 minutes during anesthesia, but unstable physiology may require more frequent noninvasive measurements or invasive monitoring. The response should be driven by clinical need rather than a universal 3-minute rule.",
       "citation": "",
       "topic": "Monitoring and capnography",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -2422,7 +2422,7 @@
       "answer": [
         0
       ],
-      "explanation": "Heart rate and pulse oximetry are continuous across procedural sedation, MAC, and TIVA/GA. Temperature and advanced hemodynamics depend on the setting and the patient.",
+      "explanation": "Oxygenation and ventilation are distinct. Pulse oximetry continuously tracks oxygen saturation, while capnography or another appropriate ventilation monitor can identify hypoventilation or apnea before oxygen saturation falls, particularly when supplemental oxygen is used.",
       "citation": "",
       "topic": "Monitoring and capnography",
       "sourceTitle": "Sedation, MAC & TIVA",
