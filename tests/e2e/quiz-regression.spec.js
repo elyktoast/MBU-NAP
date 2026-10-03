@@ -2165,8 +2165,8 @@ test.describe('canonical quiz regression', () => {
     const status=await page.evaluate(()=>{
       const api=MBUQuestionGenerator;
       const draft=api.addDraft({
-        stem:'Which statement is correct?',options:['Correct answer','Distractor'],answer:[0],type:'single',
-        explanation:'The source material supports the first answer.',sourceExcerpt:'This is the supporting source excerpt.',sourceName:'Test material'
+        stem:'Which statement is correct?',options:['Correct answer','Distractor one','Distractor two','Distractor three'],answer:[0],type:'single',
+        explanation:'The Core Concept: Core principle. Why the Correct Answer Wins: The decisive parameter supports option A. The Trap Identified: Option B is tempting because it ignores the constraint. Distractor Breakdown: Options B, C, and D each miss the decisive parameter.',sourceExcerpt:'This is the supporting source excerpt.',sourceName:'Test material'
       });
       const approved=api.approveDraft(draft.id),keys=MBUSync.trackedKeys();
       return Promise.resolve(keys).then(tracked=>({enabled:api.enabled(),providers:api.providerNames(),approved:api.list().approved.length,approvedStem:approved.stem,tracked:tracked.includes(api.STORE),feature:window.MBU_FEATURES.questionGenerator}))
