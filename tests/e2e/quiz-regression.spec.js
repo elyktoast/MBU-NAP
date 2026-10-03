@@ -2165,6 +2165,8 @@ test.describe('canonical quiz regression', () => {
     await expect(page.locator('#generated-question-workbench')).not.toBeVisible();
     await page.locator('#gen-open').click();
     await expect(page.locator('#generated-question-workbench')).toBeVisible();
+    await expect(page.locator('link[href*="question-generator-ui.css"]')).toHaveCount(1);
+    await expect(page.locator('#generated-question-workbench')).toHaveCSS('border-radius','16px');
     const status=await page.evaluate(()=>{
       const api=MBUQuestionGenerator;
       const draft=api.addDraft({
