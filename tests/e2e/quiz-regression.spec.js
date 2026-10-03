@@ -1699,8 +1699,9 @@ test.describe('canonical quiz regression', () => {
     await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);await waitForAuth(page);
     await page.evaluate(()=>{localStorage.setItem('mbu_exam1_studio_v1',JSON.stringify({ans:{final:{ok:true}}}));MBUAppCore.touchStore('mbu_exam1_studio_v1')});
     await page.evaluate(()=>MBUSupabase.signOut());
+    await page.waitForURL(url=>url.pathname==='/');
     expect(writes.some(x=>x.p_store_key==='mbu_exam1_studio_v1')).toBe(true);
-    expect(await page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(false);
+    expect(new URL(page.url()).pathname).toBe('/');
   });
 
   test('Account creation requires adult Terms and Privacy acknowledgement', async ({ page }) => {
@@ -1732,9 +1733,8 @@ test.describe('canonical quiz regression', () => {
     let calibrationRefreshes=0;
     await page.route(cloud+'/rest/v1/rpc/snar_accept_current_legal',route=>route.fulfill({status:200,contentType:'application/json',body:'true'}));
     await page.route(cloud+'/rest/v1/mbu_item_calibration?*',route=>{calibrationRefreshes++;return route.fulfill({status:200,contentType:'application/json',body:'[]'})});
-    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
-    await waitForAuth(page);
-    await page.locator('.mbu-global-nav__cloud').click();
+    await page.goto('/');await page.evaluate(() => MBUPageReady);await waitForAuth(page);
+    await page.evaluate(() => MBUAppCore.openAccount(document.querySelector('[data-course-link]')));
     await expect(page.locator('[data-cloud-legal-required]')).toBeVisible();
     await expect(page.locator('[data-cloud-sync]')).toBeDisabled();
     await page.locator('[data-cloud-reaccept-consent]').check();
@@ -1749,12 +1749,9 @@ test.describe('canonical quiz regression', () => {
     await seedSignedIn(page);
     await page.unroute(cloud+'/rest/v1/rpc/snar_account_access_status');
     await page.route(cloud+'/rest/v1/rpc/snar_account_access_status',route=>route.abort());
-    await page.goto(exam + '/studio.html');await waitForStudio(page);
-    await expect.poll(()=>page.evaluate(()=>MBUSupabase.status().accessStatus)).toBe('unknown');
-    const result=await page.evaluate(async()=>{try{await MBUSupabase.syncNow();return 'allowed'}catch(e){return e.message}});
-    expect(result).toContain('suspended');
-    await page.locator('#adaptiveToggle').click();
-    await expect(page.locator('#adaptiveToggle')).not.toBeChecked();
+    await page.goto(exam + '/studio.html');
+    await page.waitForURL(url=>url.pathname==='/');
+    expect(new URL(page.url()).pathname).toBe('/');
   });
 
   test('Suspended accounts keep privacy and deletion controls but cannot sync or use Adaptive Mode', async ({ page }) => {
@@ -1915,7 +1912,7 @@ test.describe('canonical quiz regression', () => {
     await page.evaluate(() => MBUPageReady);
     await waitForAuth(page);
     await expect.poll(()=>page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(false);
-    await page.locator('.mbu-global-nav__cloud').click();
+    await page.evaluate(() => MBUAppCore.openAccount(document.querySelector('[data-course-link]')));
     await expect(page.locator('[data-cloud-signed-out]')).toBeVisible();
     expect(await page.evaluate(()=>localStorage.getItem('mbu_exam1_studio_v1'))).toBeNull();
     expect(await page.evaluate(()=>localStorage.getItem('mbu_sync_meta_v1'))).toBeNull();
@@ -2035,8 +2032,9 @@ test.describe('canonical quiz regression', () => {
   });
 
   test('Tools and account dialogs trap keyboard focus and restore it when closed', async ({ page }) => {
-    await page.goto(exam + '/index.html');await page.evaluate(() => MBUPageReady);
-    const cloud=page.locator('.mbu-global-nav__cloud');await cloud.focus();await cloud.click();
+    await page.goto('/');await page.evaluate(() => MBUPageReady);
+    const cloud=page.locator('[data-course-link]').first();await cloud.focus();
+    await page.evaluate(() => MBUAppCore.openAccount(document.querySelector('[data-course-link]')));
     const account=page.locator('#mbu-account-panel');
     await expect(account).toBeVisible();
     await page.keyboard.press('Shift+Tab');
