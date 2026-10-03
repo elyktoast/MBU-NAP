@@ -692,13 +692,18 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const manifest=JSON.parse(read('equipment/exam-1/banks.json')),loader=read('equipment/assets/studio-loader.js'),generator=read('equipment/assets/question-generator.js'),studio=read('equipment/assets/studio-page.js'),core=read('equipment/assets/app-core.js');
  const cfg=manifest.features?.questionGenerator;
- if(!cfg||cfg.enabled!==false||cfg.status!=='unconfigured'||cfg.provider!==null||cfg.storageKey!=='mbu_generated_questions_v1')fail('Question generator must remain disabled/unconfigured by default');
+ if(!cfg||cfg.enabled!==true||cfg.status!=='configured'||cfg.provider!=='gemini'||cfg.storageKey!=='mbu_generated_questions_v1')fail('Equipment Gemini question generator configuration is incomplete');
  for(const token of ['registerProvider','providerNames','generate','addDraft','approveDraft','rejectDraft','validateQuestion','studioQuestions'])if(!generator.includes(token))fail('Question generator framework missing '+token);
- if(loader.includes("runtime.loadScript('question-generator.js')"))fail('Disabled question generator is eagerly loaded by Studio');
+ if(loader.includes("runtime.loadScript('question-generator.js')"))fail('Question generator must remain feature-gated rather than eagerly loaded by Studio');
  if(!studio.includes("window.MBU_FEATURES.questionGenerator?.enabled&&!window.MBUQuestionGenerator")||!studio.includes("loadScript?.('question-generator.js')"))fail('Studio question generator lazy-load gate is missing');
  if(!studio.includes('MBUQuestionGenerator?.enabled?.()')||!studio.includes("const key='generated',label='Generated Bank'"))fail('Studio generated-bank bridge is missing');
  if(!core.includes('m.features?.questionGenerator?.storageKey'))fail('Generated question store is not in sync tracking');
- if(generator.includes('ollama')||generator.includes('openai')||generator.includes('anthropic'))fail('Question generator prematurely hardcodes a provider');
+ if(generator.includes('ollama')||generator.includes('openai')||generator.includes('anthropic')||generator.includes('GEMINI_API_KEY'))fail('Provider-neutral generator framework contains provider credentials or implementation details');
+ const gemini=read('equipment/assets/question-generator-gemini.js'),genUi=read('equipment/assets/question-generator-ui.js'),edge=read('supabase/functions/generate-questions/index.ts'),bpManifest=JSON.parse(read('basic-principles/exam-1/banks.json'));
+ if(!gemini.includes("registerProvider('gemini'")||!gemini.includes('/functions/v1/generate-questions')||gemini.includes('GEMINI_API_KEY'))fail('Gemini browser provider is missing or exposes server credentials');
+ if(!edge.includes('Deno.env.get("GEMINI_API_KEY")')||!edge.includes('Authorization')||!edge.includes('material.length>50000')||!edge.includes('Math.min(20'))fail('Gemini edge function security/input guards are incomplete');
+ if(!genUi.includes("api.generate('gemini'")||!genUi.includes('approveDraft')||!genUi.includes('rejectDraft'))fail('Gemini draft review workbench is incomplete');
+ if(bpManifest.features?.questionGenerator?.enabled!==true||bpManifest.features?.questionGenerator?.provider!=='gemini')fail('Basic Principles Gemini question generator configuration is incomplete');
 }
 
 // Accessibility release gate across shared runtimes and application shells.
