@@ -2605,7 +2605,7 @@
       "answer": [
         0
       ],
-      "explanation": "Loss of the capnogram is apnea, obstruction, or disconnection until proven otherwise. SpO2 lags, so assess the patient before attributing it to artifact.",
+      "explanation": "Naloxone reverses opioid-mediated respiratory depression, but rapid or excessive antagonism can also remove analgesia and precipitate acute withdrawal in an opioid-dependent patient. It is therefore titrated to restore adequate ventilation rather than automatically to produce complete opioid reversal.",
       "citation": "",
       "topic": "Monitoring and capnography",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -2782,7 +2782,7 @@
         1,
         2
       ],
-      "explanation": "During MAC, heart rate, SpO2, and ECG are continuous, along with ventilation. Temperature is used when indicated, and invasive or advanced monitoring depends on the patient.",
+      "explanation": "Older adults often have greater pharmacodynamic sensitivity and reduced physiologic reserve, while drug clearance may also be slower. Smaller initial doses and slower titration reduce overshoot into hypotension, airway obstruction, or prolonged sedation.",
       "citation": "",
       "topic": "Monitoring and capnography",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -2998,7 +2998,7 @@
       "answer": [
         0
       ],
-      "explanation": "Capnography is required during moderate and deep sedation. Reposition or change the cannula, but keep monitoring ventilation.",
+      "explanation": "Obesity and obstructive sleep apnea reduce the margin for respiratory depression because pharyngeal collapsibility is increased and oxygen reserve may be reduced. Sedatives and opioids should therefore be titrated cautiously with direct ventilation monitoring and immediate airway-rescue capability.",
       "citation": "",
       "topic": "Monitoring and capnography",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -3341,7 +3341,7 @@
       "answer": [
         0
       ],
-      "explanation": "Temperature monitoring during MAC is required when clinically indicated, such as long cases with large exposed surface areas. It is continuous under TIVA/GA.",
+      "explanation": "Hypotension during propofol sedation can result from vasodilation, reduced sympathetic tone, and decreased preload or contractility. Management should assess depth, volume status, heart rate, and other causes while reducing anesthetic effect and using fluids or vasoactive support according to the mechanism.",
       "citation": "",
       "topic": "Monitoring and capnography",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -3615,7 +3615,7 @@
       "answer": [
         0
       ],
-      "explanation": "Once oxygen reserve is depleted, desaturation and arrest can follow rapidly, so early intervention matters.",
+      "explanation": "Capnography samples ventilation, whereas pulse oximetry samples oxygenation. With supplemental oxygen, apnea or severe hypoventilation can be present while SpO2 remains normal, making the capnogram an earlier warning of respiratory compromise.",
       "citation": "",
       "topic": "Monitoring and capnography",
       "sourceTitle": "Sedation, MAC & TIVA",
