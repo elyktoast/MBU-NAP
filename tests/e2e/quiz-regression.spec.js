@@ -2159,42 +2159,24 @@ test.describe('canonical quiz regression', () => {
     expect(result.meta.serverRevision).toBe(5);
   });
 
-  test('Question generator framework is provider-neutral and disabled by default', async ({ page }) => {
+  test('Gemini question generator is feature-gated, reviewable, and keeps credentials server-side', async ({ page }) => {
     await page.goto(exam + '/studio.html');await waitForStudio(page);
-    expect(await page.evaluate(()=>typeof window.MBUQuestionGenerator)).toBe('undefined');
-    await page.evaluate(()=>MBUBuild.loadScript('question-generator.js'));
-    const status=await page.evaluate(async()=>{
+    await expect(page.locator('#generated-question-workbench')).toBeVisible();
+    const status=await page.evaluate(()=>{
       const api=MBUQuestionGenerator;
-      let disabledError='';
-      try{await api.generate('anything',{material:'test'})}catch(e){disabledError=e.message}
       const draft=api.addDraft({
-        stem:'Which statement is correct?',
-        options:['Correct answer','Distractor'],
-        answer:[0],
-        type:'single',
-        explanation:'The source material supports the first answer.',
-        sourceExcerpt:'This is the supporting source excerpt.',
-        sourceName:'Test material'
+        stem:'Which statement is correct?',options:['Correct answer','Distractor'],answer:[0],type:'single',
+        explanation:'The source material supports the first answer.',sourceExcerpt:'This is the supporting source excerpt.',sourceName:'Test material'
       });
-      const approved=api.approveDraft(draft.id);
-      const keys=await MBUSync.trackedKeys();
-      return{
-        enabled:api.enabled(),
-        providers:api.providerNames(),
-        disabledError,
-        approved:api.list().approved.length,
-        approvedStem:approved.stem,
-        tracked:keys.includes(api.STORE),
-        feature:window.MBU_FEATURES.questionGenerator
-      }
+      const approved=api.approveDraft(draft.id),keys=MBUSync.trackedKeys();
+      return Promise.resolve(keys).then(tracked=>({enabled:api.enabled(),providers:api.providerNames(),approved:api.list().approved.length,approvedStem:approved.stem,tracked:tracked.includes(api.STORE),feature:window.MBU_FEATURES.questionGenerator}))
     });
-    expect(status.enabled).toBe(false);
-    expect(status.providers).toEqual([]);
-    expect(status.disabledError).toContain('not enabled');
+    expect(status.enabled).toBe(true);
+    expect(status.providers).toContain('gemini');
     expect(status.approved).toBe(1);
     expect(status.approvedStem).toBe('Which statement is correct?');
     expect(status.tracked).toBe(true);
-    expect(status.feature).toMatchObject({enabled:false,status:'unconfigured',provider:null});
+    expect(status.feature).toMatchObject({enabled:true,status:'configured',provider:'gemini'});
   });
 
   test('Generated questions require source traceability before approval', async ({ page }) => {
