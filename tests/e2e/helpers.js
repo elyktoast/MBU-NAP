@@ -7,11 +7,10 @@ async function clearAppState(page) {
   await page.route(cloud+'/rest/v1/rpc/snar_guest_heartbeat', route => route.fulfill({ status:200, contentType:'application/json', body:'true' }));
   await page.route(cloud+'/rest/v1/rpc/snar_has_current_legal_acceptance', route => route.fulfill({ status:200, contentType:'application/json', body:'true' }));
   await page.route(cloud+'/rest/v1/rpc/snar_account_access_status', route => route.fulfill({ status:200, contentType:'application/json', body:'"active"' }));
-  await page.addInitScript(() => {
-    if(sessionStorage.getItem('mbu_e2e_guest')==='1'){
-      localStorage.removeItem('mbu_supabase_session_v1');
-      return;
-    }
+  await page.goto('/');
+  await page.evaluate(() => window.MBUPageReady);
+  await page.evaluate(() => {
+    localStorage.clear();sessionStorage.clear();
     const now=Math.floor(Date.now()/1000);
     localStorage.setItem('snar_legal_acceptance_v6',JSON.stringify({version:'2026-09-27-v6',acceptedAt:new Date().toISOString()}));
     localStorage.setItem('mbu_supabase_session_v1',JSON.stringify({
@@ -19,47 +18,28 @@ async function clearAppState(page) {
       user:{id:'00000000-0000-0000-0000-000000000001',email:'e2e@example.com'}
     }));
   });
-  await page.goto('/');
-  await page.evaluate(() => window.MBUPageReady);
-  await page.evaluate(() => {
-    const legal=localStorage.getItem('snar_legal_acceptance_v6'),session=localStorage.getItem('mbu_supabase_session_v1');
-    localStorage.clear();sessionStorage.clear();
-    if(legal)localStorage.setItem('snar_legal_acceptance_v6',legal);
-    if(session)localStorage.setItem('mbu_supabase_session_v1',session);
-  });
 }
 
 async function useGuestState(page){
-  await page.addInitScript(() => {
-    sessionStorage.setItem('mbu_e2e_guest','1');
-    localStorage.removeItem('mbu_supabase_session_v1');
-  });
+  await page.evaluate(() => localStorage.removeItem('mbu_supabase_session_v1'));
 }
 
 async function seedSignedIn(page,email='e2e@example.com') {
   const cloud='https://xqyasyambwdyhsjkftqu.supabase.co';
-  await page.route(cloud+'/rest/v1/mbu_sync_state?*', route =>
-    route.fulfill({ status: 200, contentType: 'application/json', body: '[]' })
-  );
-  await page.route(cloud+'/rest/v1/mbu_sync_devices?*', route => {
-    if(route.request().method()==='GET')return route.fulfill({ status: 200, contentType: 'application/json', body: '[]' });
-    return route.fulfill({ status: 201, contentType: 'application/json', body: '' });
-  });
+  await page.route(cloud+'/rest/v1/mbu_sync_state?*', route => route.fulfill({ status:200, contentType:'application/json', body:'[]' }));
+  await page.route(cloud+'/rest/v1/mbu_sync_devices?*', route => route.request().method()==='GET'
+    ? route.fulfill({ status:200, contentType:'application/json', body:'[]' })
+    : route.fulfill({ status:201, contentType:'application/json', body:'' }));
   await page.route(cloud+'/rest/v1/rpc/snar_account_access_status', route => route.fulfill({status:200,contentType:'application/json',body:'"active"'}));
   await page.route(cloud+'/rest/v1/rpc/snar_admin_status', route => route.fulfill({ status:200, contentType:'application/json', body:JSON.stringify({is_admin:false,role:null}) }));
-  await page.route(cloud+'/rest/v1/mbu_item_calibration?*', route =>
-    route.fulfill({ status: 200, contentType: 'application/json', body: '[]' })
-  );
-  await page.addInitScript(({email}) => {
-    if(sessionStorage.getItem('mbu_skip_seed_session')==='1')return;
+  await page.route(cloud+'/rest/v1/mbu_item_calibration?*', route => route.fulfill({ status:200, contentType:'application/json', body:'[]' }));
+  await page.evaluate(email => {
     const now=Math.floor(Date.now()/1000);
     localStorage.setItem('mbu_supabase_session_v1',JSON.stringify({
-      access_token:'e2e-access',
-      refresh_token:'e2e-refresh',
-      expires_at:now+3600,
+      access_token:'e2e-access',refresh_token:'e2e-refresh',expires_at:now+3600,
       user:{id:'00000000-0000-0000-0000-000000000001',email}
     }));
-  }, {email});
+  },email);
 }
 
 async function waitForAuth(page) {
