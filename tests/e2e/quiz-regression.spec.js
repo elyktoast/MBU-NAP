@@ -1569,10 +1569,10 @@ test.describe('canonical quiz regression', () => {
   test('Equipment fixtures retain published course navigation', async ({ page }) => {
     await page.goto(exam + '/hazards-100.html');await page.evaluate(() => MBUPageReady);
     await expect(page.locator('.mbu-global-nav__brand')).toHaveText('SRNA Study Tool');
-    await expect(page.locator('.mbu-global-nav__primary-link')).toHaveCount(3);
+    await expect(page.locator('.mbu-global-nav__primary-link')).toHaveCount(1);
     await expect(page.locator('.mbu-global-nav__primary')).toContainText('Equipment');
-    await expect(page.locator('.mbu-global-nav__primary')).toContainText('Study Studio');
-    await expect(page.locator('.mbu-global-nav__adaptive')).toHaveCount(1);
+    await expect(page.locator('.mbu-global-nav__primary')).not.toContainText('Study Studio');
+    await expect(page.locator('.mbu-global-nav__adaptive')).toHaveCount(0);
     await expect(page.locator('.mbu-global-nav__picker')).toHaveCount(0);
     await expect(page.locator('.mbu-global-nav__search')).toHaveText('Search');
     await expect(page.locator('.mbu-global-nav__cloud')).toHaveText(/Account/);
@@ -2171,7 +2171,7 @@ test.describe('canonical quiz regression', () => {
       const api=MBUQuestionGenerator;
       const draft=api.addDraft({
         stem:'Which statement is correct?',options:['Correct answer','Distractor one','Distractor two','Distractor three'],answer:[0],type:'single',
-        explanation:'The Core Concept: Core principle. Why the Correct Answer Wins: The decisive parameter supports option A. The Trap Identified: Option B is tempting because it ignores the constraint. Distractor Breakdown: Options B, C, and D each miss the decisive parameter.',sourceExcerpt:'This is the supporting source excerpt.',sourceName:'Test material'
+        explanation:'The Core Concept: Core principle. Why the Correct Answer Wins: The decisive parameter supports the keyed answer. The Trap Identified: One distractor is tempting because it ignores the constraint. Distractor Breakdown: Each distractor misses the decisive parameter.',sourceExcerpt:'This is the supporting source excerpt.',sourceName:'Test material',distractorTypes:['wrong context','wrong mechanism','sequencing error']
       });
       const approved=api.approveDraft(draft.id),keys=MBUSync.trackedKeys();
       return Promise.resolve(keys).then(tracked=>({enabled:api.enabled(),providers:api.providerNames(),approved:api.list().approved.length,approvedStem:approved.stem,tracked:tracked.includes(api.STORE),feature:window.MBU_FEATURES.questionGenerator}))
@@ -2317,12 +2317,12 @@ test.describe('canonical quiz regression', () => {
       for(let i=0;i<6;i++)MBUStudyIntelligence.recordAnswer('b1',q,i>=3,{bankLabel:'Quiz Bank 1'});
     });
     await page.reload();await page.evaluate(() => MBUPageReady);
-    await expect(page.locator('#masteryPanel')).toContainText('Mastery estimate');
-    await expect(page.locator('#masteryPanel')).toContainText('Confidence');
-    await expect(page.locator('#masteryPanel')).toContainText('Airway');
-    await expect(page.locator('#masteryPanel')).toContainText('not an exam-pass prediction');
+    await expect(page.locator('#masteryPanel')).toContainText('Personal mastery');
+    await expect(page.locator('#masteryPanel')).toContainText('confidence');
+    await expect(page.locator('#masteryPanel')).toContainText('Topic Performance');
+    await expect(page.locator('#masteryPanel')).not.toContainText('exam-pass prediction');
     await expect(page.locator('#masteryPanel a[href="studio.html?mode=weak"]')).toBeVisible();
-    await expect(page.locator('#masteryPanel a[href="studio.html?mode=adaptive"]')).toBeVisible();
+    await expect(page.locator('#masteryPanel a[href="studio.html?mode=adaptive"]')).toHaveCount(0);
   });
 
   test('Adaptive 2.1 preserves weak-topic priority after diagnostics without defeating exposure control', async ({ page }) => {
