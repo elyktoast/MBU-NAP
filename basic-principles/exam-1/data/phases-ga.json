@@ -6474,19 +6474,19 @@
       "type": "multi",
       "stem": "TOFR is 0.7 with weak ventilation after surgery. Which THREE interventions address residual neuromuscular blockade? (Select 3)",
       "options": [
-        "Additional anticholinesterase or sugammadex",
-        "Additional time for recovery",
-        "Continued neuromuscular monitoring",
+        "Provide additional reversal when appropriate for the blocker, depth, and prior reversal given",
+        "Allow additional time for spontaneous recovery with ventilatory support",
+        "Continue quantitative neuromuscular monitoring",
         "Immediate extubation",
-        "More rocuronium",
-        "Stopping monitoring"
+        "Give more rocuronium",
+        "Stop monitoring"
       ],
       "answer": [
         0,
         1,
         2
       ],
-      "explanation": "Residual weakness is treated with additional reversal, time, and continued monitoring.",
+      "explanation": "Residual blockade requires continued airway/ventilatory support, quantitative monitoring, time, and reversal appropriate to the specific neuromuscular blocker, depth of block, and reversal already administered. Repeated anticholinesterase dosing should not be reflexive.",
       "citation": "",
       "topic": "Emergence complications",
       "sourceTitle": "Phases of General Anesthesia",
@@ -6696,21 +6696,20 @@
       "id": "PHA-268",
       "set": 1,
       "type": "multi",
-      "stem": "Which THREE treatments are appropriate for negative-pressure pulmonary edema after laryngospasm? (Select 3)",
+      "stem": "Which TWO treatments form the core supportive management of negative-pressure pulmonary edema after relief of laryngospasm? (Select 2)",
       "options": [
         "Supplemental oxygen",
-        "CPAP, BiPAP, or reintubation as needed",
-        "Diuretics",
+        "Positive airway pressure such as CPAP/BiPAP or intubation with PEEP when needed",
+        "Routine diuretics for every patient",
+        "Routine antibiotics",
         "Beta-blockers",
-        "Antibiotics alone",
         "Deep extubation"
       ],
       "answer": [
         0,
-        1,
-        2
+        1
       ],
-      "explanation": "Negative-pressure pulmonary edema is treated supportively with oxygen, positive pressure, and diuretics.",
+      "explanation": "Management is primarily supportive after relief of the obstruction: oxygen and positive airway pressure, escalating to intubation/PEEP when necessary. Diuretics are not routinely required because the edema is not primarily caused by fluid overload.",
       "citation": "",
       "topic": "Emergence complications",
       "sourceTitle": "Phases of General Anesthesia",
@@ -7030,22 +7029,21 @@
       "id": "PHA-281",
       "set": 1,
       "type": "multi",
-      "stem": "Which FOUR residual drug categories may require reversal in delayed emergence? (Select 4)",
+      "stem": "Which THREE residual drug effects have specific antagonists or reversal strategies that may be considered during delayed emergence? (Select 3)",
       "options": [
-        "Opioids",
-        "Benzodiazepines",
-        "Neuromuscular blockers",
-        "Anticholinergics such as scopolamine",
-        "Volatile agents",
-        "Propofol"
+        "Opioid effect with naloxone",
+        "Benzodiazepine effect with flumazenil in appropriate patients",
+        "Residual nondepolarizing neuromuscular blockade with appropriate reversal",
+        "Volatile anesthetic with a receptor antagonist",
+        "Propofol with a specific antagonist",
+        "Routine scopolamine effect with naloxone"
       ],
       "answer": [
         0,
         1,
-        2,
-        3
+        2
       ],
-      "explanation": "Opioids, benzodiazepines, NMBs, and central anticholinergics may need reversal; volatiles and propofol need time.",
+      "explanation": "Opioids, benzodiazepines, and residual nondepolarizing neuromuscular blockade have specific antagonists or reversal approaches when clinically appropriate. Volatile agents and propofol have no specific receptor antagonist used for routine emergence.",
       "citation": "",
       "topic": "Emergence complications",
       "sourceTitle": "Phases of General Anesthesia",
@@ -7133,20 +7131,18 @@
     {
       "id": "PHA-285",
       "set": 1,
-      "type": "multi",
-      "stem": "Immediately after extubation, SpO2 remains 99% on oxygen but the patient is obstructing. Which bedside findings are more useful for confirming actual airway patency than saturation alone?",
+      "type": "single",
+      "stem": "Immediately after extubation, SpO2 remains 99% on supplemental oxygen but the patient appears obstructed. Which assessment best confirms actual airway patency rather than relying on saturation alone?",
       "options": [
-        "Visible/auscultated airflow, reservoir-bag or chest movement, and the patient's ability to maintain the airway",
+        "Direct evidence of airflow with appropriate chest movement and ability to maintain the upper airway",
         "SpO2 alone",
         "Blood pressure and heart rate alone",
         "Pain score"
       ],
       "answer": [
-        0,
-        1,
-        2
+        0
       ],
-      "explanation": "Patency is confirmed by mask seal, fog, bag movement, and the patient maintaining the airway.",
+      "explanation": "Supplemental oxygen can delay desaturation despite obstruction. Airway patency is assessed directly through airflow, respiratory effort/chest movement, breath sounds or capnography when available, and the patient's ability to maintain the airway.",
       "citation": "",
       "topic": "Post-emergence and extubation teamwork",
       "sourceTitle": "Phases of General Anesthesia",
