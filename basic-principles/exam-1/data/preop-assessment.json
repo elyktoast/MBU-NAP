@@ -8306,17 +8306,17 @@
       "id": "PRE-340",
       "set": 1,
       "type": "single",
-      "stem": "A patient weighs 220 lb and is 66 inches tall. Which BMI is closest?",
+      "stem": "A patient with BMI 35 kg/m² has loud snoring, daytime somnolence, and hypertension. Which additional preoperative issue is most important to assess before ambulatory anesthesia?",
       "options": [
-        "35.5 kg/m²",
-        "30.5 kg/m²",
-        "40.2 kg/m²",
-        "32.8 kg/m²"
+        "Whether obesity alone requires an arterial line",
+        "Risk of obstructive sleep apnea and the postoperative monitoring/analgesic plan",
+        "Whether all sedatives are contraindicated",
+        "Whether BMI should be converted to ideal body weight before assigning ASA class"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "(220 × 703) ÷ 4356 = 35.5.",
+      "explanation": "Obesity plus snoring, somnolence, and hypertension raises concern for obstructive sleep apnea. Preoperative assessment should characterize OSA risk and plan airway management, opioid-sparing analgesia, postoperative respiratory monitoring, and disposition rather than treating BMI as an isolated number.",
       "citation": "",
       "topic": "Obesity, BMI, IBW, and Apfel",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -8546,17 +8546,17 @@
       "id": "PRE-350",
       "set": 1,
       "type": "single",
-      "stem": "Using the lecture formula, what is the approximate ideal body weight for a 5-foot-6-inch woman?",
+      "stem": "A patient with severe obesity requires tidal-volume selection for controlled ventilation. Which body-size scalar is generally preferred for setting initial tidal volume?",
       "options": [
-        "59.3 kg",
-        "54.7 kg",
-        "63.8 kg",
-        "61.5 kg"
+        "Actual body weight",
+        "Predicted or ideal body weight based primarily on height and sex",
+        "Body mass index alone",
+        "Total body surface area"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "66 inches: 45.5 + 2.3 × 6 = 59.3 kg.",
+      "explanation": "Initial tidal volume is generally based on predicted or ideal body weight because lung size correlates more closely with height and sex than with excess adipose mass. Using actual body weight in severe obesity can produce unnecessarily large tidal volumes.",
       "citation": "",
       "topic": "Obesity, BMI, IBW, and Apfel",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -9276,17 +9276,17 @@
       "id": "PRE-380",
       "set": 1,
       "type": "single",
-      "stem": "A patient with Conn syndrome has potassium 3.0 mEq/L and BP 170/100. Why is potassium correction especially important before anesthesia?",
+      "stem": "A patient with primary hyperaldosteronism is hypertensive and hypokalemic before adrenalectomy. Beyond correcting potassium, which chronic physiologic effect should influence preoperative assessment?",
       "options": [
-        "Hypokalemia increases arrhythmia risk and may prolong neuromuscular blockade",
-        "Hypokalemia primarily causes PONV",
-        "Hypokalemia triggers adrenal crisis",
-        "Hypokalemia increases MAC"
+        "Persistent volume expansion and hypertension",
+        "Severe chronic hypovolemia from mineralocorticoid loss",
+        "Obligate hyperkalemia",
+        "Primary respiratory acidosis"
       ],
       "answer": [
         0
       ],
-      "explanation": "Low K prolongs NMB effects and causes heart rhythm issues.",
+      "explanation": "Excess aldosterone promotes sodium retention, volume expansion, hypertension, and renal potassium loss. Preoperative planning therefore addresses both electrolyte abnormalities and the cardiovascular consequences of chronic hypertension and volume expansion.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -9660,17 +9660,17 @@
       "id": "PRE-396",
       "set": 1,
       "type": "single",
-      "stem": "Using the traditional STOP-BANG thresholds, a 58-year-old man has BMI 36, snoring, hypertension, and neck circumference 43 cm. What is his score?",
+      "stem": "A patient screens high risk for obstructive sleep apnea by STOP-BANG but has no formal sleep study. Which perioperative implication is most appropriate?",
       "options": [
-        "6",
-        "5",
-        "4",
-        "7"
+        "Cancel every elective procedure until polysomnography is completed",
+        "Plan as an increased respiratory-risk patient with opioid-sparing analgesia and appropriate postoperative monitoring",
+        "Avoid regional anesthesia because it can mask apnea",
+        "Assume CPAP is unnecessary without a laboratory diagnosis"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "Using traditional STOP-BANG thresholds: snoring, hypertension, BMI >35, age >50, neck >40 cm, and male sex each score 1, totaling 6.",
+      "explanation": "A high-risk screen does not by itself mandate cancellation or establish a definitive diagnosis, but it should influence airway planning, sedative and opioid use, postoperative monitoring, and disposition. Management should reflect clinical risk while further evaluation is arranged when appropriate.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -9996,17 +9996,17 @@
       "id": "PRE-410",
       "set": 1,
       "type": "single",
-      "stem": "A patient has a holosystolic murmur loudest at the apex that radiates toward the axilla. Which valve lesion best explains the finding?",
+      "stem": "A patient with chronic mitral regurgitation presents for noncardiac surgery. Which hemodynamic change is most likely to increase the regurgitant fraction?",
       "options": [
-        "Mitral regurgitation",
-        "Aortic stenosis",
-        "Mitral stenosis",
-        "Aortic regurgitation"
+        "Marked bradycardia with increased systemic vascular resistance",
+        "Mildly increased heart rate with preserved forward flow",
+        "Avoidance of acute afterload increases",
+        "Maintenance of adequate preload without overload"
       ],
       "answer": [
         0
       ],
-      "explanation": "MR is holosystolic at the apex radiating to the axilla.",
+      "explanation": "In chronic mitral regurgitation, marked bradycardia lengthens systole and high systemic vascular resistance increases impedance to forward ejection, favoring regurgitant flow. Management generally avoids abrupt afterload increases and profound bradycardia while maintaining adequate forward flow.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -10644,17 +10644,17 @@
       "id": "PRE-437",
       "set": 1,
       "type": "single",
-      "stem": "A 5-foot-2-inch woman with obesity needs a medication dosed using ideal body weight. Using the lecture formula, which approximate IBW is correct?",
+      "stem": "A patient with severe obesity needs an aminoglycoside whose dosing strategy uses an adjusted body-weight scalar rather than total or ideal weight alone. Why can a dosing scalar differ from the one used for tidal volume?",
       "options": [
-        "50.1 kg",
-        "54.7 kg",
-        "45.5 kg",
-        "52.3 kg"
+        "Every drug distributes exactly like lung volume",
+        "Drug distribution and clearance depend on pharmacokinetics, so the appropriate weight scalar is drug-specific",
+        "Ideal body weight is never used for medications",
+        "Actual body weight is always safest for hydrophilic drugs"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "62 inches: 45.5 + 2.3 × 2 = 50.1 kg.",
+      "explanation": "Weight scalars are purpose-specific. Ventilator tidal volume reflects lung size, whereas drug dosing depends on distribution, clearance, lipid solubility, and the medication's validated dosing method; one body-size scalar should not be applied automatically to every drug.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -10812,17 +10812,17 @@
       "id": "PRE-444",
       "set": 1,
       "type": "single",
-      "stem": "A patient uses insulin, has prior TIA, creatinine 1.6 mg/dL, and is scheduled for total knee arthroplasty. What is the RCRI score?",
+      "stem": "A patient uses insulin, has a prior TIA, creatinine 1.6 mg/dL, and is scheduled for total knee arthroplasty. Using the traditional Revised Cardiac Risk Index, what score is assigned?",
       "options": [
+        "1",
         "2",
         "3",
-        "1",
         "4"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "Insulin DM (1) and cerebrovascular disease (1) = 2. Cr 1.6 does not count; knee is not high-risk surgery.",
+      "explanation": "The traditional RCRI assigns one point for insulin-treated diabetes and one for cerebrovascular disease. Creatinine contributes only when it exceeds 2.0 mg/dL, and total knee arthroplasty is not one of the original high-risk surgery categories, giving a score of 2.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -11076,17 +11076,17 @@
       "id": "PRE-455",
       "set": 1,
       "type": "single",
-      "stem": "A cirrhotic patient has normal aminotransferases but INR 1.8 and albumin 2.6 g/dL. Which hepatic function is most clearly impaired despite the absence of marked injury markers?",
+      "stem": "A patient with cirrhosis has ascites, splenomegaly, and esophageal varices despite only modest aminotransferase elevation. Which pathophysiologic process best links these findings?",
       "options": [
-        "Synthetic function",
-        "Excretory function",
-        "Renal function",
-        "Hematologic function alone"
+        "Portal hypertension",
+        "Isolated hepatocellular enzyme release",
+        "Primary hyperaldosteronism",
+        "Acute hemolysis"
       ],
       "answer": [
         0
       ],
-      "explanation": "INR and albumin reflect synthetic liver function.",
+      "explanation": "Ascites, splenomegaly, and varices are classic consequences of portal hypertension. Aminotransferase values reflect hepatocellular injury and can be modest even when advanced cirrhosis has major portal and synthetic consequences.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -11100,17 +11100,17 @@
       "id": "PRE-456",
       "set": 1,
       "type": "single",
-      "stem": "A cirrhotic patient has platelets 60,000/µL without acute bleeding. Which mechanism is most likely?",
+      "stem": "A cirrhotic patient has INR 1.8, platelets 60,000/µL, and no active bleeding. Which interpretation is most appropriate before an invasive procedure?",
       "options": [
-        "Splenic sequestration from portal hypertension",
-        "Hepatorenal syndrome",
-        "Alcohol withdrawal",
-        "Hypothyroidism"
+        "INR alone precisely predicts procedural bleeding risk",
+        "Cirrhosis produces complex rebalanced hemostasis, so bleeding assessment must integrate procedure, platelets, fibrinogen, clinical history, and other factors",
+        "Thrombocytopenia proves disseminated intravascular coagulation",
+        "Normal aminotransferases would eliminate bleeding concern"
       ],
       "answer": [
-        0
+        1
       ],
-      "explanation": "Thrombocytopenia in cirrhosis is largely from splenomegaly and sequestration.",
+      "explanation": "Cirrhosis alters both procoagulant and anticoagulant pathways, so INR alone does not fully represent bleeding tendency. Procedural planning should integrate platelet count, fibrinogen, clinical bleeding history, procedure risk, and institution-specific testing or guidance.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -11268,17 +11268,17 @@
       "id": "PRE-463",
       "set": 1,
       "type": "single",
-      "stem": "A cocaine-intoxicated patient is hypertensive, tachycardic, and agitated. Which drug class should be used first to blunt the central sympathetic surge?",
+      "stem": "A cocaine-intoxicated patient remains severely hypertensive and tachycardic. Why is isolated pure beta blockade generally avoided during acute intoxication?",
       "options": [
-        "Benzodiazepines",
-        "Pure beta-blockers",
-        "Opioids",
-        "Antihistamines"
+        "It can leave alpha-adrenergic vasoconstriction unopposed and worsen hypertension or coronary vasospasm",
+        "It always causes malignant hyperthermia",
+        "It reverses benzodiazepine sedation",
+        "It predictably produces profound hyperkalemia"
       ],
       "answer": [
         0
       ],
-      "explanation": "Cocaine toxicity produces a central catecholaminergic sympathetic surge with agitation, tachycardia, and hypertension. Benzodiazepines reduce central stimulation and are therefore first-line supportive pharmacologic therapy while temperature, ischemia, dysrhythmias, and blood pressure are managed.",
+      "explanation": "During acute cocaine toxicity, intense catecholaminergic stimulation includes alpha-mediated vasoconstriction. Isolated pure beta blockade has traditionally been avoided because of concern for unopposed alpha effects; initial therapy emphasizes benzodiazepines and treatment tailored to persistent cardiovascular abnormalities.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -11676,17 +11676,17 @@
       "id": "PRE-480",
       "set": 1,
       "type": "single",
-      "stem": "A patient with AAI pacing develops new complete AV block. Why is the existing mode now inadequate?",
+      "stem": "A patient with an AAI pacemaker is scheduled for surgery using monopolar electrocautery above the umbilicus. Which device-specific issue should be clarified preoperatively?",
       "options": [
-        "AAI depends on intact AV conduction to activate the ventricles",
-        "AAI provides ventricular pacing",
-        "AAI is asynchronous",
-        "AAI always includes rate response"
+        "Whether the patient has reliable intrinsic AV conduction and how electromagnetic interference will affect sensing/pacing",
+        "Whether AAI provides ventricular defibrillation",
+        "Whether the device can pace both ventricles asynchronously by definition",
+        "Whether every pacemaker requires magnet application"
       ],
       "answer": [
         0
       ],
-      "explanation": "AAI pacing senses and paces only the atrium and relies on the patient's native AV node and His-Purkinje system to conduct each atrial impulse to the ventricles. Complete AV block breaks that pathway, so atrial pacing alone can no longer ensure an adequate ventricular rate.",
+      "explanation": "AAI pacing depends on intact AV conduction and atrial sensing. Preoperative device planning should determine pacing dependence, underlying rhythm and conduction, expected electromagnetic interference, device-specific magnet behavior, and whether reprogramming is needed.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -11772,17 +11772,17 @@
       "id": "PRE-484",
       "set": 1,
       "type": "single",
-      "stem": "A procedure is expected to involve about 1,000 mL of blood loss. Which laboratory test most directly informs preoperative anemia and transfusion planning?",
+      "stem": "A patient is scheduled for a procedure with substantial expected blood loss and has no current type-and-screen specimen. Which preoperative action most directly improves readiness for urgent transfusion?",
       "options": [
-        "Hemoglobin and hematocrit",
-        "Pregnancy testing",
-        "TSH",
-        "HbA1c"
+        "Obtain appropriate blood-bank testing and determine whether crossmatched units should be available",
+        "Repeat serum sodium only",
+        "Order a D-dimer",
+        "Measure troponin regardless of cardiac history"
       ],
       "answer": [
         0
       ],
-      "explanation": "H&H is indicated for significant blood loss.",
+      "explanation": "When significant blood loss is expected, current blood-bank testing and an appropriate plan for compatible blood availability reduce delay if transfusion becomes necessary. Hemoglobin informs anemia severity, but type-and-screen or crossmatch addresses compatibility and logistics.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
