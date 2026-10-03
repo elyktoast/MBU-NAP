@@ -12,6 +12,7 @@ async function start(){
   await runtime.loadScript('adaptive-quiz.js');
   await window.MBUSupabase?.refreshCalibration?.().catch(()=>{});
   await runtime.loadScript('studio-page.js');
+  await runtime.loadScript('studio-runtime.js');
   await runtime.loadScript('auto-update.js');
   return true
 }
