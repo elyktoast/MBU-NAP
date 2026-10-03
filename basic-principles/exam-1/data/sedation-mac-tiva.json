@@ -8767,7 +8767,7 @@
       "answer": [
         0
       ],
-      "explanation": "Volatile anesthesia has end-tidal agent monitoring; TIVA has no equivalent, so line checks and processed EEG matter.",
+      "explanation": "Unlike volatile anesthesia, routine TIVA does not provide a measured end-tidal hypnotic concentration that confirms delivery to the patient. This makes reliable IV access, pump/line surveillance, and multimodal assessment of anesthetic depth especially important; processed EEG is an adjunct rather than a direct propofol concentration monitor.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8791,7 +8791,7 @@
       "answer": [
         0
       ],
-      "explanation": "With neuromuscular blockade, movement is unavailable as a sign of light anesthesia. Processed EEG helps assess hypnotic depth.",
+      "explanation": "Neuromuscular blockade removes movement as one clinical sign of inadequate anesthesia. Processed EEG can add information about hypnotic state during TIVA, but it does not measure paralysis or plasma propofol concentration and does not replace standard monitoring.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9228,7 +9228,7 @@
       "answer": [
         0
       ],
-      "explanation": "Processed EEG is an adjunct when depth is hard to judge clinically, as in TIVA with paralysis.",
+      "explanation": "Processed EEG may be particularly useful as an adjunct when usual clinical signs of hypnotic depth are limited, including TIVA with neuromuscular blockade. Its value must be interpreted with the full clinical context and standard monitors.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9595,7 +9595,7 @@
       "answer": [
         0
       ],
-      "explanation": "BIS in the 80s suggests lighter hypnotic depth, especially in TIVA where end-tidal agent is not available.",
+      "explanation": "An abrupt processed-EEG increase during paralyzed TIVA should prompt assessment of the entire drug-delivery pathway, anesthetic dose, artifact, and other clinical signs. Stable hemodynamics do not by themselves exclude inadequate hypnosis or awareness risk.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9718,7 +9718,7 @@
       "answer": [
         0
       ],
-      "explanation": "NORA has a higher incidence of malpractice claims and more catastrophic outcomes, including more deaths.",
+      "explanation": "Closed-claims analyses have identified severe respiratory events and catastrophic outcomes in NORA claims. Because claims databases are selected medicolegal samples, they highlight recurring hazards and system vulnerabilities but do not directly measure the incidence of complications in all NORA anesthetics.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9742,7 +9742,7 @@
       "answer": [
         0
       ],
-      "explanation": "61% versus 30% means NORA claims involve death about twice as often as OR claims.",
+      "explanation": "A greater proportion of death among NORA claims describes the severity distribution within that selected claims dataset. It cannot be converted directly into a mortality rate or relative risk for all NORA versus OR anesthetics.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9766,7 +9766,7 @@
       "answer": [
         0
       ],
-      "explanation": "A 44% increase on $500,000 is $220,000, for about $720,000.",
+      "explanation": "Closed-claims databases contain selected adverse medicolegal cases rather than a denominator of all anesthetics. Their percentages are useful for identifying patterns and hazards, but they cannot establish population incidence or be applied directly to an individual patient's absolute risk.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
