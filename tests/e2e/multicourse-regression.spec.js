@@ -90,16 +90,16 @@ test.describe('multi-course foundation', () => {
     const equipmentNav = page.locator('.mbu-global-nav');
     await expect(equipmentNav).toBeVisible();
     await expect(equipmentNav.getByRole('link', { name: 'Equipment', exact: true })).toHaveAttribute('href', /\/equipment\/$/);
-    await expect(equipmentNav.getByRole('link', { name: 'Study Studio', exact: true })).toHaveAttribute('href', /\/equipment\/exam-1\/studio\.html$/);
-    await expect(equipmentNav.getByRole('link', { name: /Adaptive/, exact: false })).toHaveAttribute('href', /\/equipment\/exam-1\/studio\.html\?mode=adaptive$/);
+    await expect(equipmentNav.getByRole('link', { name: 'Study Studio', exact: true })).toHaveCount(0);
+    await expect(equipmentNav.getByRole('link', { name: /Adaptive/, exact: false })).toHaveCount(0);
 
     await page.goto('/basic-principles/exam-1/');
     await waitForPageReady(page);
     const nav = page.locator('.mbu-global-nav');
     await expect(nav).toBeVisible();
     await expect(nav.getByRole('link', { name: 'Basic Principles', exact: true })).toHaveAttribute('href', /\/basic-principles\/$/);
-    await expect(nav.getByRole('link', { name: 'Study Studio', exact: true })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html$/);
-    await expect(nav.getByRole('link', { name: /Adaptive/, exact: false })).toHaveAttribute('href', /\/basic-principles\/exam-1\/studio\.html\?mode=adaptive$/);
+    await expect(nav.getByRole('link', { name: 'Study Studio', exact: true })).toHaveCount(0);
+    await expect(nav.getByRole('link', { name: /Adaptive/, exact: false })).toHaveCount(0);
     await expect(nav.getByRole('link', { name: 'Equipment', exact: true })).toHaveCount(0);
   });
 
