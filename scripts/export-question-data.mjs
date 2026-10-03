@@ -1,0 +1,9 @@
+import fs from'node:fs';import path from'node:path';
+const sources={
+'Basic Principles':['basic-principles/exam-1/data/basic-airway.json','basic-principles/exam-1/data/monitoring.json','basic-principles/exam-1/data/preop-assessment.json','basic-principles/exam-1/data/phases-ga.json','basic-principles/exam-1/data/sedation-mac-tiva.json','basic-principles/exam-1/data/perioperative-pain.json','basic-principles/exam-1/data/misc-na-practice.json'],
+'Equipment':['equipment/exam-1/data/bank1.json','equipment/exam-1/data/bank2.json','equipment/exam-1/data/bank3.json','equipment/exam-1/data/combined.json','equipment/exam-1/data/hazards.json']};
+const omit=new Set(['difficulty','difficultyLevel','difficulty_level','challenge','challengeLevel','challenge_level','theta','discrimination','guessing','calibration','calibrationCount','calibration_count','empiricalDifficulty','empirical_difficulty','irt','itemParameters','item_parameters','populationDifficulty','population_difficulty']);
+const clean=x=>Array.isArray(x)?x.map(clean):x&&typeof x==='object'?Object.fromEntries(Object.entries(x).filter(([k])=>!omit.has(k)).map(([k,v])=>[k,clean(v)])):x;
+const out={schema:1,description:'SRNA Study Tool question-content export. Difficulty and CAT calibration metadata omitted.',courses:[]};let total=0;
+for(const [course,files]of Object.entries(sources)){const banks=[];let count=0;for(const file of files){const data=clean(JSON.parse(fs.readFileSync(file,'utf8'))),questions=data.questions||[];count+=questions.length;banks.push({id:data.id||path.basename(file,'.json'),title:data.title||path.basename(file,'.json'),count:questions.length,questions})}total+=count;out.courses.push({course,exam:'Exam 1',count,banks})}
+out.totalQuestions=total;fs.mkdirSync('exports',{recursive:true});fs.writeFileSync('exports/srna-question-data-no-difficulty.json',JSON.stringify(out,null,2)+'\n');console.log('Exported',total,'question records');
