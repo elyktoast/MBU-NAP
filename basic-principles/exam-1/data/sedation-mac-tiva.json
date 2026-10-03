@@ -11080,7 +11080,7 @@
       "answer": [
         0
       ],
-      "explanation": "BIS reflects hypnosis. A sympathetic surge with adequate BIS suggests remifentanil needs adjustment.",
+      "explanation": "A processed-EEG value can support assessment of hypnotic state but does not measure analgesia or nociception directly. With an otherwise appropriate hypnotic state and a stimulus-linked sympathetic response, inadequate antinociception is an important possibility; the full clinical context should guide titration.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11334,17 +11334,17 @@
       "id": "SED-465",
       "set": 1,
       "type": "single",
-      "stem": "Which benzodiazepine is more likely to have prolonged effect in severe hepatic dysfunction because its clearance depends substantially on hepatic metabolism?",
+      "stem": "Which statement about benzodiazepine recovery in severe hepatic dysfunction is most accurate?",
       "options": [
-        "Midazolam",
-        "Remimazolam",
-        "Neither because all benzodiazepines use esterases",
-        "Flumazenil"
+        "Midazolam clearance can be reduced and its effect prolonged; remimazolam can also have prolonged clearance in severe hepatic impairment",
+        "Remimazolam is completely unaffected by severe hepatic dysfunction",
+        "All benzodiazepines are cleared only by renal excretion",
+        "Flumazenil prevents hepatic accumulation"
       ],
       "answer": [
         0
       ],
-      "explanation": "Midazolam is hepatically metabolized and can prolong recovery. Remimazolam has esterase metabolism.",
+      "explanation": "Midazolam depends substantially on hepatic CYP3A metabolism and may have prolonged effects in liver disease. Remimazolam undergoes rapid carboxylesterase-mediated hydrolysis, but severe hepatic impairment can still reduce clearance and prolong recovery, so it should not be described as completely liver-independent.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11416,7 +11416,7 @@
       "answer": [
         0
       ],
-      "explanation": "BIS 20 is too deep and hypotension suggests excess anesthetic. Reduce propofol.",
+      "explanation": "Marked burst suppression with hypotension can indicate excessive hypnotic effect, although processed-EEG values should be interpreted with clinical context and artifact assessment. Reassess and reduce hypnotic dosing when appropriate while simultaneously supporting perfusion.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11464,7 +11464,7 @@
       "answer": [
         0
       ],
-      "explanation": "Remimazolam's esterase metabolism makes it good for renal/hepatic disease and OSA.",
+      "explanation": "Remimazolam is rapidly hydrolyzed by carboxylesterase 1 to an inactive metabolite, and renal impairment has relatively little effect on parent-drug pharmacokinetics. Severe hepatic impairment can still prolong its clearance and recovery.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11632,7 +11632,7 @@
       "answer": [
         0
       ],
-      "explanation": "Beach chair alters cerebral autoregulation, and upright positioning can reduce cerebral perfusion.",
+      "explanation": "In the beach-chair position, a cuff on the arm may sit below the brain. The hydrostatic gradient means arterial pressure at brain level can therefore be lower than the displayed arm pressure unless the measurement is appropriately referenced; upright positioning does not simply abolish cerebral autoregulation.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -12016,7 +12016,7 @@
       "answer": [
         0
       ],
-      "explanation": "The note highlights aspiration risk from pushing on the stomach.",
+      "explanation": "Deep sedation depresses airway-protective responses. External abdominal pressure may increase intra-abdominal pressure, so regurgitation/aspiration should remain part of the risk assessment when other patient or procedural factors also favor reflux; the maneuver alone does not establish aspiration risk.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
