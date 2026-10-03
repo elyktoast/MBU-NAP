@@ -28,7 +28,7 @@ Deno.serve(async(req:Request)=>{
   if(!key)return json({error:"Question generation is not configured."},503,origin);
   let body:any;try{body=await req.json()}catch{return json({error:"Invalid JSON body"},400,origin)}
   const material=String(body?.material||"").trim(),sourceName=String(body?.sourceName||"").trim(),citation=String(body?.citation||"").trim();
-  const count=Math.max(1,Math.min(20,Number(body?.count)||5));
+  const requested=Number(body?.count),count=Math.max(1,Math.min(20,Number.isFinite(requested)?Math.trunc(requested):5));
   if(!material)return json({error:"Source material is required."},400,origin);
   if(material.length>50000)return json({error:"Source material exceeds the 50,000 character limit."},413,origin);
   const model=Deno.env.get("GEMINI_MODEL")||"gemini-3.8-flash";
@@ -49,5 +49,6 @@ Deno.serve(async(req:Request)=>{
   const text=data?.candidates?.[0]?.content?.parts?.map((p:any)=>p?.text||"").join("")||"";
   let questions;try{questions=JSON.parse(text)}catch{return json({error:"Gemini returned invalid structured output."},502,origin)}
   if(!Array.isArray(questions))return json({error:"Gemini returned an invalid question list."},502,origin);
+  if(questions.length!==count)return json({error:"Gemini returned the wrong number of questions.",detail:`Requested ${count}; received ${questions.length}.`},502,origin);
   return json({questions,model},200,origin);
 });
