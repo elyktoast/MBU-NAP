@@ -7702,17 +7702,17 @@
       "id": "PAIN-313",
       "set": 1,
       "type": "single",
-      "stem": "An 80 kg patient will receive an intraoperative magnesium infusion (50 mg/kg, then 8 mg/kg/hr). What are the bolus and hourly doses?",
+      "stem": "A protocol uses magnesium 50 mg/kg as a loading dose followed by 8 mg/kg/hr. For an 80 kg patient, what doses does that protocol calculate?",
       "options": [
-        "4 g over 30 minutes, then 640 mg/hr",
-        "400 mg over 30 minutes, then 64 mg/hr",
-        "8 g over 30 minutes, then 1.6 g/hr",
-        "2 g over 30 minutes, then 320 mg/hr"
+        "4 g loading dose, then 640 mg/hr",
+        "400 mg loading dose, then 64 mg/hr",
+        "8 g loading dose, then 1.6 g/hr",
+        "2 g loading dose, then 320 mg/hr"
       ],
       "answer": [
         0
       ],
-      "explanation": "50 mg/kg × 80 kg = 4 g; 8 mg/kg/hr × 80 kg = 640 mg/hr.",
+      "explanation": "Using the stated protocol, 50 mg/kg × 80 kg = 4,000 mg (4 g), and 8 mg/kg/hr × 80 kg = 640 mg/hr. This tests dose calculation; actual magnesium regimens vary and require patient-specific safety assessment.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7726,7 +7726,7 @@
       "id": "PAIN-314",
       "set": 1,
       "type": "single",
-      "stem": "A 70 kg patient will receive low-dose ketamine (0.2 mg/kg, then 0.15 mg/kg/hr). What are the bolus and hourly doses?",
+      "stem": "A protocol uses ketamine 0.2 mg/kg as a bolus followed by 0.15 mg/kg/hr. For a 70 kg patient, what doses does that protocol calculate?",
       "options": [
         "14 mg bolus, then 10.5 mg/hr",
         "70 mg bolus, then 35 mg/hr",
@@ -7736,7 +7736,7 @@
       "answer": [
         0
       ],
-      "explanation": "0.2 × 70 = 14 mg; 0.15 × 70 = 10.5 mg/hr.",
+      "explanation": "Using the stated protocol, 0.2 mg/kg × 70 kg = 14 mg and 0.15 mg/kg/hr × 70 kg = 10.5 mg/hr. This is a calculation exercise; subanesthetic ketamine regimens vary by indication and protocol.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7750,7 +7750,7 @@
       "id": "PAIN-315",
       "set": 1,
       "type": "single",
-      "stem": "A 100 kg patient will receive the magnesium regimen. What is the bolus dose?",
+      "stem": "A protocol specifies a magnesium loading dose of 50 mg/kg. What loading dose does that protocol calculate for a 100 kg patient?",
       "options": [
         "5 g",
         "500 mg",
@@ -7760,7 +7760,7 @@
       "answer": [
         0
       ],
-      "explanation": "50 mg/kg × 100 kg = 5,000 mg = 5 g.",
+      "explanation": "50 mg/kg × 100 kg = 5,000 mg = 5 g. The calculation does not imply that this regimen is appropriate for every patient.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7774,7 +7774,7 @@
       "id": "PAIN-316",
       "set": 1,
       "type": "single",
-      "stem": "A 60 kg patient on the ketamine regimen. What is the hourly infusion?",
+      "stem": "A protocol specifies ketamine 0.15 mg/kg/hr. What infusion rate does that protocol calculate for a 60 kg patient?",
       "options": [
         "9 mg/hr",
         "12 mg/hr",
@@ -7784,7 +7784,7 @@
       "answer": [
         0
       ],
-      "explanation": "0.15 mg/kg/hr × 60 kg = 9 mg/hr.",
+      "explanation": "0.15 mg/kg/hr × 60 kg = 9 mg/hr. This is a dose-calculation item; clinical ketamine infusion rates are individualized.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7894,17 +7894,17 @@
       "id": "PAIN-321",
       "set": 1,
       "type": "single",
-      "stem": "A patient after a vaginal hysterectomy has severe suprapubic cramping with a Foley in place despite IV opioids. Which adjunct targets the cause?",
+      "stem": "After pelvic surgery, a patient with a Foley catheter has severe suprapubic cramping despite incisional analgesia. Which next step best targets the likely mechanism?",
       "options": [
-        "A belladonna and opium suppository",
-        "A ketorolac infusion",
-        "A methadone bolus",
-        "Gabapentin 1200 mg given in PACU for the cramping"
+        "Assess for catheter-related bladder discomfort or bladder spasm and use an appropriate antispasmodic strategy if indicated",
+        "Escalate opioid without evaluating the catheter or bladder",
+        "Assume all suprapubic discomfort is incisional pain",
+        "Give a large gabapentin dose as the specific first-line treatment for acute bladder spasm"
       ],
       "answer": [
         0
       ],
-      "explanation": "Belladonna and opium suppositories relieve bladder spasm after uterine and urologic surgery.",
+      "explanation": "Catheter-related bladder discomfort can produce urgency and suprapubic spasm despite otherwise adequate analgesia. Management includes checking catheter function and considering appropriate antimuscarinic or other targeted therapy; belladonna-opium suppositories are not a universal first-line answer.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8404,17 +8404,17 @@
       "id": "PAIN-342",
       "set": 1,
       "type": "single",
-      "stem": "A new-graduate PACU nurse rates a patient's pain much higher than the patient does. What tendency does this reflect?",
+      "stem": "A PACU clinician's observational estimate of pain differs substantially from a communicative patient's self-report. Which principle is most appropriate?",
       "options": [
-        "Inexperienced nurses tend to overestimate pain",
-        "Inexperienced nurses tend to underestimate pain",
-        "Staff assessment matches patient report",
-        "Physicians assess pain more accurately"
+        "Use the patient's reliable self-report as a central measure and integrate function, behavior, and clinical context rather than assuming observer experience predicts accuracy",
+        "A novice clinician's estimate should replace self-report",
+        "An experienced clinician's estimate should replace self-report",
+        "Average the observer and patient scores"
       ],
       "answer": [
         0
       ],
-      "explanation": "Inexperienced nurses tend to overestimate pain, and experienced nurses tend to underestimate it.",
+      "explanation": "Observers can both under- and overestimate pain. When a patient can communicate reliably, validated self-report remains central, supplemented by functional assessment and clinical context.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -8438,7 +8438,7 @@
       "answer": [
         0
       ],
-      "explanation": "Experienced nurses tend to underestimate pain, which is why the patient's report matters.",
+      "explanation": "Clinician observation can under- or overestimate pain regardless of experience. When the patient can communicate reliably, self-report should remain central while function, sedation, respiratory status, and other clinical findings guide safe treatment.",
       "citation": "",
       "topic": "Surgical and dosing cases",
       "sourceTitle": "Perioperative Pain Management",
