@@ -34,6 +34,8 @@ const budgets={
   'equipment/assets/studio-page.js':46000,
   'equipment/assets/studio-loader.js':2500,
   'equipment/assets/question-generator.js':10000,
+  'equipment/assets/question-generator-ui.js':6000,
+  'equipment/assets/question-generator-ui.css':6000,
   'equipment/assets/adaptive-quiz.js':17000,
   'equipment/assets/study-intelligence.js':12000,
   'equipment/assets/question-search.js':8000,
