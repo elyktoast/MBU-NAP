@@ -616,7 +616,7 @@ test.describe('canonical quiz regression', () => {
 
   test('Studio isolates a failed source and retries only that source', async ({ page }) => {
     let failBank3 = true;
-    await page.route('**/data/bank3.json', async route => {
+    await page.route('**/data/bank3.json*', async route => {
       if (failBank3) {
         failBank3 = false;
         await route.fulfill({ status: 503, body: 'temporary failure' });
@@ -665,7 +665,7 @@ test.describe('canonical quiz regression', () => {
     const uid=await page.evaluate(() => (BANK_QUESTIONS.get('b3')||[])[0].uid);
     await page.evaluate(uid => {DB.active={uids:[uid],pos:0,answers:{},updated:Date.now()};save()},uid);
     let failBank3=true;
-    await page.route('**/data/bank3.json', async route => {if(failBank3){failBank3=false;await route.fulfill({status:503,body:'temporary failure'})}else await route.continue()});
+    await page.route('**/data/bank3.json*', async route => {if(failBank3){failBank3=false;await route.fulfill({status:503,body:'temporary failure'})}else await route.continue()});
     await page.reload();
     await expect(page.locator('#studioLoadSummary')).toContainText('1 failed');
     await expect(page.locator('#resumeActive')).toBeDisabled();
