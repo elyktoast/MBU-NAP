@@ -4985,7 +4985,7 @@
       "answer": [
         0
       ],
-      "explanation": "The chapter suggests usefulness declines when intervals exceed about 3 minutes.",
+      "explanation": "Five minutes is the routine maximum interval, not a requirement to wait five minutes between assessments. During induction, blood pressure can change rapidly after anesthetic and vasoactive drugs, so shorter cycling intervals provide clinically useful information while the hemodynamics are unstable.",
       "citation": "",
       "topic": "Noninvasive blood pressure",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -5398,7 +5398,7 @@
       "answer": [
         0
       ],
-      "explanation": "Verify leveling, tubing, catheter patency, and waveform fidelity before treating.",
+      "explanation": "A large discrepancy between invasive and cuff pressure in an otherwise unchanged patient should trigger validation of the measurement before treatment. Incorrect leveling or zeroing, tubing problems, catheter obstruction, or poor dynamic response can create a falsely low arterial value.",
       "citation": "",
       "topic": "Invasive arterial pressure",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -5570,7 +5570,7 @@
       "answer": [
         0
       ],
-      "explanation": "Overdamping from air, clot, or kinks blunts the trace and underestimates systolic.",
+      "explanation": "Air, clot, kinking, or excessive compliance can overdamp an arterial system, removing high-frequency components of the waveform. The result is a rounded trace with loss of the dicrotic notch and an underestimated systolic pressure, while MAP is often less affected.",
       "citation": "",
       "topic": "Invasive arterial pressure",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -5651,7 +5651,7 @@
       "answer": [
         0
       ],
-      "explanation": "Multiple oscillations after a fast flush indicate an underdamped system.",
+      "explanation": "An underdamped system resonates after the fast flush, producing multiple oscillations before settling. That resonance exaggerates waveform amplitude and typically makes systolic pressure appear higher than the true value.",
       "citation": "",
       "topic": "Invasive arterial pressure",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -6102,7 +6102,7 @@
       "answer": [
         0
       ],
-      "explanation": "A transducer below RA level reads falsely high due to hydrostatic pressure.",
+      "explanation": "Pressure changes by roughly 0.74 mmHg for each centimeter of vertical height difference in a blood column. Lowering the transducer below the reference level therefore adds hydrostatic pressure and produces a falsely elevated displayed pressure.",
       "citation": "",
       "topic": "Invasive arterial pressure",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
