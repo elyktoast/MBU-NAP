@@ -11008,7 +11008,7 @@
       "answer": [
         0
       ],
-      "explanation": "Abrupt anesthetic changes can mimic injury. A bolus explains a global drop, but surgical and physiologic causes still need review.",
+      "explanation": "Anesthetic effects usually alter neuromonitoring globally rather than producing an isolated unilateral change. Because the bilateral MEP decrease immediately followed a large propofol bolus while perfusion, oxygenation, temperature, and hemoglobin remained stable, the abrupt increase in hypnotic depth is a leading reversible explanation while surgical and technical causes are simultaneously reviewed.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11032,7 +11032,7 @@
       "answer": [
         0
       ],
-      "explanation": "Unilateral change with stable anesthetic and physiology points to a surgical cause. Anesthetic effects tend to be global.",
+      "explanation": "A unilateral MEP loss immediately after pedicle-screw placement is anatomically and temporally more concerning for a focal surgical or neurologic problem than for a systemic anesthetic effect. Stable anesthetic depth and physiology strengthen that concern, although technical causes should also be checked urgently.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11056,7 +11056,7 @@
       "answer": [
         0
       ],
-      "explanation": "TIVA avoids MH triggers and preserves MEPs. Volatiles are triggers and NMB suppresses muscle-recorded MEPs.",
+      "explanation": "MH susceptibility requires avoidance of volatile anesthetics and succinylcholine, while muscle-recorded MEPs require intact neuromuscular transmission. Propofol-opioid TIVA satisfies the trigger-free requirement and generally preserves evoked potentials, with neuromuscular blockade minimized after intubation.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11104,7 +11104,7 @@
       "answer": [
         0
       ],
-      "explanation": "Remifentanil and propofol have little residual analgesia, so longer-acting analgesia must be established before emergence.",
+      "explanation": "Remifentanil has an extremely short offset, and propofol contributes essentially no postoperative analgesia. If longer-acting analgesia is not established before the infusion stops, the patient can transition from profound intraoperative opioid effect to severe pain within minutes.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11128,7 +11128,7 @@
       "answer": [
         0
       ],
-      "explanation": "Restlessness from pain should be treated with analgesia or conversion, not deeper hypnosis, which risks apnea.",
+      "explanation": "Propofol treats hypnosis, not the nociceptive source created by a failed block. Repeatedly deepening hypnosis to suppress pain-driven movement can cross into apnea or general-anesthesia depth without providing adequate analgesia, so the block/analgesic plan should be corrected or the anesthetic converted.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11152,7 +11152,7 @@
       "answer": [
         0
       ],
-      "explanation": "Persistent hypercarbia is a conversion trigger. Support ventilation and prepare to convert if it does not resolve.",
+      "explanation": "Persistent hypercapnia after sedative reduction, stimulation, repositioning, and basic airway maneuvers means spontaneous ventilation remains inadequate despite initial rescue. Effective positive-pressure ventilation and escalation to an airway adjunct or secured airway should follow if ventilation cannot be restored.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11176,7 +11176,7 @@
       "answer": [
         0
       ],
-      "explanation": "The closed claim case shows how inattention causes harm. Respond to the patient first.",
+      "explanation": "A capnography apnea alarm can represent true apnea, obstruction, or a sampling problem, and supplemental oxygen may delay desaturation. The provider should immediately assess the patient and ventilation first, then verify the monitor signal rather than finishing documentation.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11200,7 +11200,7 @@
       "answer": [
         0
       ],
-      "explanation": "Case 2 shows how quickly sedation can cause apnea during transport. Monitoring must continue.",
+      "explanation": "Midazolam and fentanyl can produce synergistic respiratory depression that may worsen after leaving the holding area. Because transport does not end the period of drug effect, appropriate monitoring and personnel/equipment capable of airway and ventilatory rescue should accompany the patient.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11224,7 +11224,7 @@
       "answer": [
         0
       ],
-      "explanation": "Persistent obstruction despite maneuvers needs an adjunct or conversion to a secured airway.",
+      "explanation": "Obstruction that recurs whenever jaw thrust is removed demonstrates that the patient cannot independently maintain upper-airway patency at the current depth. A persistent need for manual airway support should prompt an adjunct, lighter sedation, or escalation to a more secure airway plan.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11248,7 +11248,7 @@
       "answer": [
         0
       ],
-      "explanation": "Propofol causes hypotension and effect depends on cardiac reserve. Reduce dose and support BP.",
+      "explanation": "Propofol and remifentanil can both contribute to hypotension, and an ejection fraction of 30% limits compensatory reserve. Immediate management should reduce contributing anesthetic effect when appropriate, evaluate other causes such as hypovolemia or bleeding, and restore organ perfusion with fluids or vasoactive support as indicated.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11272,7 +11272,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dexmedetomidine causes bradycardia and hypotension. Stop the infusion and treat hemodynamics.",
+      "explanation": "Heart rate 38/min with hypotension and poor perfusion represents clinically significant dexmedetomidine-associated hemodynamic depression rather than an asymptomatic expected effect. The infusion should be reduced or stopped and bradycardia/hypotension treated while other causes are assessed.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11296,7 +11296,7 @@
       "answer": [
         0
       ],
-      "explanation": "Aspiration is a trigger for conversion and needs airway protection.",
+      "explanation": "Coughing, desaturation, and visible gastric contents in the pharynx strongly suggest regurgitation with possible aspiration. Immediate priorities are suction, positioning, oxygenation and ventilation, followed by airway control when needed to protect the lungs and permit safe continuation.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11320,7 +11320,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ketamine causes hypersalivation, which can trigger laryngospasm. Anticipate and manage secretions.",
+      "explanation": "Ketamine can increase oral and airway secretions, and laryngospasm remains a recognized airway complication despite relative preservation of spontaneous ventilation. Immediate suction and full airway-rescue capability are therefore important when secretion burden or airway reactivity is a concern.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11368,7 +11368,7 @@
       "answer": [
         0
       ],
-      "explanation": "LAST can cause cardiovascular instability, especially with large local doses.",
+      "explanation": "Neurologic symptoms followed by bradycardia and hypotension after substantial local-anesthetic exposure fit progression of local anesthetic systemic toxicity from central nervous system manifestations to cardiovascular toxicity. Treatment requires immediate resuscitative support and lipid-emulsion therapy according to LAST protocols.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11392,7 +11392,7 @@
       "answer": [
         0
       ],
-      "explanation": "High oxygen near the face increases fire risk. Reduce oxygen or secure the airway.",
+      "explanation": "Open oxygen near the face can accumulate beneath drapes, while electrocautery supplies an ignition source and drapes provide fuel. Fire prevention therefore focuses on minimizing oxygen enrichment near the field and coordinating oxygen delivery with cautery use rather than relying on sedation depth alone.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11440,7 +11440,7 @@
       "answer": [
         0
       ],
-      "explanation": "Frail patients are sensitive to propofol, so large boluses risk apnea and hypotension.",
+      "explanation": "Advanced age and frailty are associated with greater sensitivity to propofol and reduced cardiovascular and respiratory reserve. Smaller, slower, titrated doses reduce the chance that a routine adult bolus will produce disproportionate hypotension, apnea, or prolonged effect.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11488,7 +11488,7 @@
       "answer": [
         0
       ],
-      "explanation": "Chest wall rigidity from rapid opioid dosing can prevent ventilation. Support ventilation and consider NMB.",
+      "explanation": "Opioid-induced rigidity after rapid high-dose fentanyl can make ventilation mechanically ineffective despite an open upper airway. The immediate goal is effective oxygenation and ventilation; severe rigidity may require neuromuscular blockade, with opioid antagonism considered according to the clinical context.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11512,7 +11512,7 @@
       "answer": [
         0
       ],
-      "explanation": "Slow injection and fast-running line reduce propofol injection pain.",
+      "explanation": "Propofol injection pain is more common in small distal veins because local drug concentration and endothelial exposure are greater. A larger proximal well-running vein, slower injection, and lidocaine pretreatment when appropriate can reduce the discomfort.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11536,7 +11536,7 @@
       "answer": [
         0
       ],
-      "explanation": "TIVA avoids MH triggers.",
+      "explanation": "Malignant hyperthermia can be triggered by volatile anesthetics and succinylcholine. A trigger-free TIVA technique avoids both classes while using intravenous hypnotic, analgesic, and nondepolarizing neuromuscular-blocking agents as needed.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11560,7 +11560,7 @@
       "answer": [
         0
       ],
-      "explanation": "Hypercarbia and hypoxemia can cause agitation. Check ventilation first.",
+      "explanation": "Agitation during sedation is not always inadequate hypnosis. Rising ETCO2 and falling oxygenation indicate worsening ventilation, and cerebral effects of hypercapnia/hypoxemia can cause restlessness; giving more sedative could further depress ventilation and worsen the cause.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11584,7 +11584,7 @@
       "answer": [
         0
       ],
-      "explanation": "Supplemental oxygen can maintain SpO2 despite apnea. The flat capnogram is the early warning.",
+      "explanation": "Supplemental oxygen can maintain a normal SpO2 for a period after ventilation stops. A newly flat capnogram therefore requires immediate assessment for apnea, complete obstruction, or sampling failure rather than reassurance from the oxygen saturation.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11608,7 +11608,7 @@
       "answer": [
         0
       ],
-      "explanation": "Inhaled agents reduce SSEP amplitude; TIVA is preferred.",
+      "explanation": "Nitrous oxide can depress evoked-potential amplitude and may compound signal suppression when combined with other inhaled anesthetics. When high-quality SSEP/MEP signals are essential, minimizing inhaled anesthetic exposure and maintaining a stable technique improves interpretability.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11656,7 +11656,7 @@
       "answer": [
         0
       ],
-      "explanation": "Drapes limit airway access. Assess the airway directly.",
+      "explanation": "Facial drapes can conceal chest movement and delay access to the airway. When a sedated patient becomes unresponsive, direct assessment of airway patency and ventilation takes priority because obstruction or apnea can progress before pulse oximetry falls.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11680,7 +11680,7 @@
       "answer": [
         0
       ],
-      "explanation": "Airway rescue requires access; the MRI procedure must be interrupted.",
+      "explanation": "The MRI bore restricts physical access, and some resuscitation equipment cannot safely enter the magnet environment. Image acquisition should stop and the patient should be rapidly moved to a safe accessible position where airway and ventilatory rescue can be performed.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11704,7 +11704,7 @@
       "answer": [
         0
       ],
-      "explanation": "Remifentanil causes significant respiratory depression. Stop the infusion and support breathing.",
+      "explanation": "Remifentanil can cause abrupt profound respiratory depression despite its short duration. Reducing or stopping the infusion and immediately restoring airway patency and effective ventilation are priorities; waiting for spontaneous offset is unsafe when ventilation is inadequate.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11728,7 +11728,7 @@
       "answer": [
         0
       ],
-      "explanation": "A rise from baseline indicates worsening ventilation even in COPD.",
+      "explanation": "Chronic COPD may produce an elevated baseline ETCO2, so the absolute number must be interpreted relative to the patient's usual state. A rise from 50 to 70 mmHg with a decreasing respiratory rate represents acute superimposed hypoventilation and requires intervention.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11752,7 +11752,7 @@
       "answer": [
         0
       ],
-      "explanation": "TIVA reduces PONV compared with volatile agents.",
+      "explanation": "Propofol-based TIVA generally lowers PONV risk compared with volatile-anesthetic maintenance. In a patient with a severe prior history, that baseline-sparing effect can be one component of a broader multimodal PONV-prevention strategy.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11776,7 +11776,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dexmedetomidine causes bradycardia and hypotension.",
+      "explanation": "Dexmedetomidine reduces central sympathetic outflow through alpha-2 agonism and characteristically can cause bradycardia and hypotension. The temporal relationship to starting the infusion makes this drug effect more likely than the typical sympathetic stimulation seen with ketamine.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11800,7 +11800,7 @@
       "answer": [
         0
       ],
-      "explanation": "Propofol's key considerations are hypotension, apnea, and respiratory depression.",
+      "explanation": "Propofol produces dose-dependent respiratory depression that can progress to apnea and commonly lowers blood pressure through vasodilation with some myocardial depression. That paired respiratory-hemodynamic profile is a central limitation when boluses or infusion depth are increased.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11824,7 +11824,7 @@
       "answer": [
         0
       ],
-      "explanation": "Capnography detects hypoventilation and airway problems during TIVA.",
+      "explanation": "Capnography continuously displays exhaled carbon dioxide and therefore provides breath-to-breath information about ventilation and gas flow through the airway device. It can reveal hypoventilation, apnea, obstruction, or disconnection earlier than pulse oximetry when supplemental oxygen is present.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11848,7 +11848,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ketamine can cause hypertension through sympathetic stimulation.",
+      "explanation": "Ketamine often increases sympathetic outflow, producing tachycardia and hypertension even when oxygenation and analgesia are adequate. This response may be useful in some hypotensive patients but undesirable in patients who poorly tolerate increases in heart rate or blood pressure.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11872,7 +11872,7 @@
       "answer": [
         0
       ],
-      "explanation": "Naloxone reverses opioids and flumazenil reverses benzodiazepines.",
+      "explanation": "Flumazenil antagonizes benzodiazepine effects such as midazolam sedation, whereas naloxone antagonizes opioid effects such as fentanyl respiratory depression. In mixed-drug toxicity, ventilation remains the immediate priority while reversal is targeted to the contributing drug classes.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11896,7 +11896,7 @@
       "answer": [
         0
       ],
-      "explanation": "IV infiltration or disconnection can reduce delivery and cause light anesthesia.",
+      "explanation": "A normal pump display confirms programming, not successful delivery into the circulation. During paralyzed TIVA, rising processed EEG and heart rate should prompt immediate inspection from pump to patient for disconnection, occlusion, infiltration, closed clamps, or unintended flow diversion.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11920,7 +11920,7 @@
       "answer": [
         0
       ],
-      "explanation": "Improvement with jaw thrust suggests upper airway obstruction.",
+      "explanation": "Snoring and attenuated capnography during sedation suggest partial pharyngeal collapse. Immediate normalization with jaw thrust strongly supports upper-airway obstruction because the maneuver advances the mandible and reopens the pharyngeal airway.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11944,7 +11944,7 @@
       "answer": [
         0
       ],
-      "explanation": "Coughing is a conversion trigger and may indicate aspiration or airway irritation.",
+      "explanation": "Persistent coughing with new desaturation during upper-GI endoscopy can signal airway irritation, regurgitation/aspiration, laryngospasm, or inadequate airway protection. The procedure and sedation should be reassessed while oxygenation, ventilation, suction, and airway control are addressed as needed.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11968,7 +11968,7 @@
       "answer": [
         0
       ],
-      "explanation": "Setting expectations prevents awareness complaints. If no awareness is required, GA may be better.",
+      "explanation": "MAC can include varying depths of sedation and does not guarantee continuous unconsciousness or amnesia. If guaranteed unconsciousness and no recall are essential to the patient's agreed anesthetic goal, the anesthesia plan should be reconsidered rather than promising an outcome MAC may not reliably provide.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -11992,7 +11992,7 @@
       "answer": [
         0
       ],
-      "explanation": "Problems during MAC can require rapid conversion to GA, so the plan must be ready beforehand.",
+      "explanation": "MAC can fail because of airway obstruction, apnea, aspiration, hemodynamic instability, inadequate analgesia, patient intolerance, or an unexpected procedural change. Conversion is safest when airway equipment, drugs, personnel, positioning access, and a clear escalation plan are ready before deterioration occurs.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -12040,7 +12040,7 @@
       "answer": [
         0
       ],
-      "explanation": "Sedatives and opioids worsen airway collapse in OSA and cause hypoventilation.",
+      "explanation": "OSA predisposes to pharyngeal collapse as sedatives reduce upper-airway muscle tone, while fentanyl also depresses ventilatory drive. Midazolam and fentanyl can act synergistically, so severe OSA increases concern for both obstructive and central hypoventilatory respiratory compromise.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -12064,7 +12064,7 @@
       "answer": [
         0
       ],
-      "explanation": "Remimazolam is hemodynamically stable but hypotension remains possible.",
+      "explanation": "Remimazolam may produce less hemodynamic depression than some alternative sedatives in selected settings, but hypotension still occurs. A hypotensive episode should therefore prompt assessment of dose, coadministered drugs, volume status, comorbidity, procedural factors, and other causes rather than assuming the drug cannot be responsible.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -12088,7 +12088,7 @@
       "answer": [
         0
       ],
-      "explanation": "MEPs are sensitive to NMB; avoid or carefully titrate after intubation.",
+      "explanation": "Muscle-recorded MEPs require intact neuromuscular transmission to convert descending motor pathway activation into a measurable muscle response. Rocuronium blocks that final step, so MEPs can disappear while SSEPs and systemic physiology remain unchanged.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -12112,7 +12112,7 @@
       "answer": [
         0
       ],
-      "explanation": "Fospropofol causes pruritus and paresthesias, especially perineal.",
+      "explanation": "Transient perineal paresthesia and pruritus are characteristic adverse effects reported with fospropofol and do not by themselves imply allergy or local anesthetic toxicity. The clinical context still determines whether other symptoms require evaluation for a more serious reaction.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -12136,7 +12136,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ketamine is associated with emergence reactions.",
+      "explanation": "Ketamine's dissociative NMDA-antagonist state can be followed by emergence phenomena including vivid dreams, hallucinations, dysphoria, or agitation. These psychoperceptual effects distinguish it from the typical recovery profile of propofol.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -12160,7 +12160,7 @@
       "answer": [
         0
       ],
-      "explanation": "Snoring and irregular waveforms suggest obstruction; airway maneuvers are first-line.",
+      "explanation": "Snoring, desaturation, and small irregular capnography waveforms indicate partial upper-airway obstruction with impaired airflow. Head repositioning and jaw thrust are first-line because they mechanically reopen the pharyngeal airway while ventilation and oxygenation are reassessed.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -12184,7 +12184,7 @@
       "answer": [
         0
       ],
-      "explanation": "A slowing rate with climbing ETCO2 is early hypoventilation even though he is verbal and saturating well. Holding dose and stimulating is the proportionate first step; raising O2 only delays the SpO2 warning, and no opioid was given.",
+      "explanation": "A falling respiratory rate with rising ETCO2 is early objective evidence of hypoventilation even though supplemental oxygen is maintaining SpO2 and the patient remains arousable. Pausing or reducing propofol, stimulating and repositioning as needed, and reassessing ventilation addresses the cause before progression to apnea; simply increasing oxygen would mask deterioration rather than correct it.",
       "citation": "",
       "topic": "Integrated clinical reasoning",
       "sourceTitle": "Sedation, MAC & TIVA",
