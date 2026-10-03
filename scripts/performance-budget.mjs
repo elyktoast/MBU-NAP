@@ -17,6 +17,7 @@ const budgets={
   'equipment/exam-1/hazards-bank-3.html':8000,
   'equipment/exam-1/hazards-harder.html':8000,
   'equipment/assets/build-bootstrap.js':6600,
+  'equipment/assets/course-context.js':800,
   'equipment/assets/app-core.js':38100,
   'equipment/assets/legal-gate.js':6000,
   'equipment/assets/supabase-config.js':1000,
@@ -75,6 +76,7 @@ for(const p of ['equipment/assets/canonical-bank-page.js','equipment/assets/haza
 const core=read('equipment/assets/app-core.js');
 for(const token of ['exportSnapshot','importSnapshot','registerAdapter','syncWith','touchStore'])if(!core.includes(token))fail('App core sync contract missing '+token);
 if(!read('equipment/assets/build-bootstrap.js').includes("loadScript('app-core.js')"))fail('Build bootstrap does not load the shared app core');
+if(!boot.includes("loadScript('course-context.js')")||boot.indexOf("loadScript('course-context.js')")>boot.indexOf("loadScript('study-intelligence.js')"))fail('Build bootstrap must establish course context before learner-state modules');
 
 const quizEngine=read('equipment/assets/quiz-engine.js'),appCore=read('equipment/assets/app-core.js');
 if(!quizEngine.includes('function updateSelectionUI(')||!quizEngine.includes('function renderNavigator()'))fail('Canonical quiz lost local interaction/lazy navigator paths');
