@@ -6219,7 +6219,7 @@
       "answer": [
         0
       ],
-      "explanation": "Naloxone can precipitate severe pain; use the lowest safe dose.",
+      "explanation": "Naloxone reverses opioid analgesia along with ventilatory depression. A large dose can abruptly produce severe pain and sympathetic activation, so when complete reversal is unnecessary it should be titrated to restore adequate ventilation while preserving as much analgesia as possible.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6315,7 +6315,7 @@
       "answer": [
         0
       ],
-      "explanation": "Longer infusions increase CSHT and prolong recovery.",
+      "explanation": "Fentanyl accumulates in peripheral tissues during prolonged infusion and later redistributes into plasma after the infusion stops. This lengthens its context-sensitive half-time and can delay emergence even when organ function is normal.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6339,7 +6339,7 @@
       "answer": [
         0
       ],
-      "explanation": "Remifentanil offsets quickly; transition analgesia is needed.",
+      "explanation": "Remifentanil is hydrolyzed rapidly by nonspecific esterases, so its analgesic effect disappears within minutes of stopping even after a long infusion. Longer-acting systemic or regional analgesia should therefore be established before discontinuation when substantial postoperative pain is expected.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6387,7 +6387,7 @@
       "answer": [
         0
       ],
-      "explanation": "Without a lockout, the patient could receive 8 mg in an hour, risking respiratory depression.",
+      "explanation": "The PCA lockout limits how frequently another demand dose can be delivered. Omitting it removes a major programming safeguard and can permit rapid dose stacking, excessive sedation, and respiratory depression.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6411,7 +6411,7 @@
       "answer": [
         0
       ],
-      "explanation": "Background infusions in opioid-naive patients increase risk.",
+      "explanation": "A basal infusion continues delivering opioid even after an opioid-naive patient becomes sedated and stops pressing the demand button. This removes the self-limiting feedback of demand-only PCA and increases respiratory-depression risk.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6435,7 +6435,7 @@
       "answer": [
         0
       ],
-      "explanation": "Stop opioid delivery and support breathing.",
+      "explanation": "Difficulty arousing a PCA patient with bradypnea suggests clinically important opioid effect. Stop additional opioid delivery, support the airway and ventilation, assess oxygenation and ventilation, and use reversal when clinically indicated.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6459,7 +6459,7 @@
       "answer": [
         0
       ],
-      "explanation": "Low-dose naloxone treats neuraxial opioid pruritus without reversing analgesia.",
+      "explanation": "Neuraxial opioid pruritus is largely centrally opioid-receptor mediated rather than a histamine allergy. Very low-dose naloxone can reduce itching while attempting to preserve analgesia; larger antagonistic doses are more likely to reverse pain relief.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6483,7 +6483,7 @@
       "answer": [
         0
       ],
-      "explanation": "Morphine causes delayed depression due to cephalad CSF spread.",
+      "explanation": "Intrathecal morphine is hydrophilic, remains in cerebrospinal fluid longer, and can spread rostrally over hours. This explains delayed respiratory depression after an initially stable period and the need for extended respiratory monitoring.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6507,7 +6507,7 @@
       "answer": [
         0
       ],
-      "explanation": "Fentanyl causes early respiratory depression.",
+      "explanation": "Lipophilic neuraxial opioids such as fentanyl enter spinal tissues and systemic circulation rapidly, so respiratory depression tends to occur earlier than with hydrophilic morphine. Bradypnea shortly after dosing fits this early pattern.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6555,7 +6555,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dexmedetomidine cannot be reversed in humans.",
+      "explanation": "Dexmedetomidine has no routinely used specific reversal drug in human perioperative practice. Management relies on reducing or stopping the infusion and supporting airway, ventilation, heart rate, and blood pressure as needed while the drug effect dissipates.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6579,7 +6579,7 @@
       "answer": [
         0
       ],
-      "explanation": "Assess cause; fluids or vasopressor may be needed.",
+      "explanation": "Tachycardic hypotension after analgesic therapy can reflect hypovolemia, vasodilation, bleeding, or other causes. Assess perfusion and volume status first, then use fluid, vasopressor, or other targeted therapy according to the mechanism.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6651,7 +6651,7 @@
       "answer": [
         0
       ],
-      "explanation": "Distinguish true allergy from adverse effects.",
+      "explanation": "Isolated opioid-associated itching is a common adverse effect and may reflect central mu-receptor effects or histamine release rather than true allergy. Clarifying the exact reaction prevents an inaccurate allergy label from unnecessarily restricting future analgesic choices.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6675,7 +6675,7 @@
       "answer": [
         0
       ],
-      "explanation": "Track total local anesthetic doses from all sources.",
+      "explanation": "Local-anesthetic toxicity risk reflects cumulative systemic exposure, so bupivacaine administered in the block and by surgical infiltration must be totaled. The additional dose should proceed only if cumulative exposure and patient-specific risk remain acceptable.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6699,7 +6699,7 @@
       "answer": [
         0
       ],
-      "explanation": "Regional blocks require immediate access to emergency equipment and lipids.",
+      "explanation": "Regional anesthesia can produce complications requiring immediate recognition and treatment. A site without appropriate monitoring, airway/resuscitation equipment, and lipid emulsion is not an appropriate environment until those resources are available.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6723,7 +6723,7 @@
       "answer": [
         0
       ],
-      "explanation": "Opioid-dependent patients should take their normal dose.",
+      "explanation": "Chronic daily opioid exposure may produce physical dependence, and abrupt omission can precipitate withdrawal while worsening perioperative pain. Baseline opioid exposure should generally be continued or appropriately replaced, with additional surgical analgesia managed separately.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6747,7 +6747,7 @@
       "answer": [
         0
       ],
-      "explanation": "Buprenorphine may continue, with supplemental morphine, hydromorphone, or fentanyl and multimodal analgesia.",
+      "explanation": "Current perioperative strategies commonly favor continuing buprenorphine for opioid use disorder rather than routinely stopping it. Multimodal and regional analgesia should be maximized, with supplemental full agonists titrated when needed for additional acute pain.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6771,7 +6771,7 @@
       "answer": [
         0
       ],
-      "explanation": "Mixed agonist-antagonists precipitate withdrawal.",
+      "explanation": "Butorphanol's mixed agonist-antagonist activity can reduce effective mu-receptor stimulation in a patient dependent on a full mu agonist. That abrupt receptor-level change can precipitate autonomic and gastrointestinal withdrawal.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6795,7 +6795,7 @@
       "answer": [
         0
       ],
-      "explanation": "Opioid rotation restores sensitivity; methadone is common.",
+      "explanation": "Opioid rotation can exploit incomplete cross-tolerance when escalating one opioid produces more toxicity without proportional analgesia. Methadone may be useful in selected tolerant patients, but its long variable half-life and complex conversion require conservative dosing and expertise.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6819,7 +6819,7 @@
       "answer": [
         0
       ],
-      "explanation": "For opioid-tolerant patients, a PCA with a basal infusion may be considered.",
+      "explanation": "A basal PCA infusion can be considered in selected opioid-tolerant patients when it replaces part of a known baseline opioid requirement. It should be derived conservatively from actual prior exposure and paired with close reassessment.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6872,7 +6872,7 @@
       "answer": [
         0
       ],
-      "explanation": "The slide raises whether to keep or remove patches.",
+      "explanation": "A fentanyl patch may provide a major portion of baseline opioid exposure, while heat, perfusion, or removal can change drug delivery. The perioperative plan should explicitly decide whether to continue it and how baseline opioid will be replaced if removed.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6896,7 +6896,7 @@
       "answer": [
         0
       ],
-      "explanation": "Intrathecal drug delivery systems help when opioids fail or cause unacceptable side effects.",
+      "explanation": "Intrathecal drug delivery can provide spinal analgesia with lower systemic drug exposure in selected patients whose cancer pain remains refractory or whose systemic adverse effects are unacceptable. It is an escalation strategy requiring procedural expertise and follow-up.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6920,7 +6920,7 @@
       "answer": [
         0
       ],
-      "explanation": "Neurolysis of the visceral sympathetic system relieves abdominal cancer pain and lowers opioid needs.",
+      "explanation": "Pancreatic visceral pain is transmitted in part through sympathetic afferents associated with the celiac plexus. Celiac plexus block or neurolysis can interrupt that pathway and may reduce pain and systemic opioid requirements.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6944,7 +6944,7 @@
       "answer": [
         0
       ],
-      "explanation": "Cognitive impairment complicates assessment; titrate carefully.",
+      "explanation": "When reliable self-report is unavailable because of cognitive impairment, use a validated observational or behavioral tool plus collateral history and functional cues. Small titrated doses with frequent reassessment help balance undertreatment against drug sensitivity.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6968,7 +6968,7 @@
       "answer": [
         0
       ],
-      "explanation": "Crying and inability to be consoled are pediatric expressions of pain.",
+      "explanation": "Crying, grimacing, guarding, and inability to be consoled are recognized behavioral manifestations of pain in young children who cannot provide reliable numeric self-report. They should prompt age-appropriate validated behavioral assessment while other causes of distress are considered.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6992,7 +6992,7 @@
       "answer": [
         0
       ],
-      "explanation": "Parental anxiety can worsen a child's distress, so family-centered care includes calming and coaching the parents.",
+      "explanation": "Children can mirror caregiver fear, and escalating parental anxiety can amplify the child's distress. Calm explanation and coaching caregivers are part of family-centered care while the child's pain and physiologic status are assessed directly.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7064,7 +7064,7 @@
       "answer": [
         0
       ],
-      "explanation": "Hypovolemia can be masked by pain; opioids may worsen hypotension.",
+      "explanation": "Tachycardia with hypotension after major blood loss suggests inadequate circulating volume or ongoing hemorrhage. Opioids can remove compensatory sympathetic tone and worsen hypotension, so circulation and bleeding require assessment before reflexive analgesic escalation.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7136,7 +7136,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ensure pain is appropriate for the procedure.",
+      "explanation": "Pain that is abruptly new, escalating, or disproportionate to the expected procedure should trigger reassessment for a surgical or medical complication. Repeated analgesic dosing alone can mask deterioration without correcting the source.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7160,7 +7160,7 @@
       "answer": [
         0
       ],
-      "explanation": "Neuropathic pain benefits from NMDA antagonists and α2–δ ligands.",
+      "explanation": "Neuropathic postoperative pain reflects abnormal somatosensory signaling rather than only tissue nociception. NMDA antagonists and alpha-2-delta ligands can target sensitization or neuronal excitability, with selection based on patient-specific adverse-effect risk.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7184,7 +7184,7 @@
       "answer": [
         0
       ],
-      "explanation": "Codeine and tramadol require CYP2D6 activation.",
+      "explanation": "Codeine requires CYP2D6 conversion to morphine for much of its analgesic activity, while tramadol requires CYP2D6 formation of a more potent opioid metabolite. A poor metabolizer can therefore have reduced analgesia from both.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7208,7 +7208,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ultrarapid metabolizers can have toxicity from codeine's active metabolite.",
+      "explanation": "Ultrarapid CYP2D6 metabolism can convert codeine to morphine unusually quickly, producing unexpectedly high morphine exposure and severe respiratory depression. This pharmacogenetic risk contributes to major restrictions on codeine use.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7232,7 +7232,7 @@
       "answer": [
         0
       ],
-      "explanation": "CYP3A4 inhibitors increase oxycodone levels.",
+      "explanation": "Oxycodone is substantially metabolized through CYP3A4. Inhibition by drugs such as diltiazem can reduce clearance and increase oxycodone exposure, making sedation and respiratory depression more likely.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7256,7 +7256,7 @@
       "answer": [
         0
       ],
-      "explanation": "Poor metabolizers report weaker effects and more adverse effects.",
+      "explanation": "CYP2D6 contributes to conversion of hydrocodone to hydromorphone. Reduced CYP2D6 activity can lower formation of that more potent metabolite and may blunt analgesic response, although hydrocodone itself remains active.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7304,7 +7304,7 @@
       "answer": [
         0
       ],
-      "explanation": "Epidural planning includes who follows the patient.",
+      "explanation": "A postoperative epidural requires clearly assigned ownership for assessment, dose adjustment, adverse-effect management, anticoagulation coordination, and catheter removal. The responsible service should be established before surgery.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7328,7 +7328,7 @@
       "answer": [
         0
       ],
-      "explanation": "Extended analgesia plans must be established before entering the OR.",
+      "explanation": "If an analgesic technique requires ICU-level monitoring, specialized equipment, or staffing, those resources should be arranged before the procedure begins. Early coordination prevents postoperative disposition from disrupting the planned analgesic strategy.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7352,7 +7352,7 @@
       "answer": [
         0
       ],
-      "explanation": "Consider pain with movement and breathing.",
+      "explanation": "A low resting pain score can coexist with severe dynamic pain that prevents deep breathing and cough. Functional analgesic goals after upper-abdominal surgery include adequate ventilation, pulmonary toilet, mobilization, and participation in recovery.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7376,7 +7376,7 @@
       "answer": [
         0
       ],
-      "explanation": "Vital signs may or may not change with pain and should not override the patient's report.",
+      "explanation": "Heart rate and blood pressure are nonspecific and may remain normal despite substantial pain. When a patient can communicate reliably, validated self-report remains central and should be interpreted alongside function and clinical context.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7400,7 +7400,7 @@
       "answer": [
         0
       ],
-      "explanation": "Continuously re-evaluate arousal and CV/pulmonary status.",
+      "explanation": "Sedating adjuncts can have additive or synergistic effects even when each individual dose appears reasonable. Reassessment of consciousness, respiratory pattern, gas exchange, and hemodynamics after interventions helps prevent unnoticed dose stacking.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
