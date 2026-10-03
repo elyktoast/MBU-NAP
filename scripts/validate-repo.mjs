@@ -703,7 +703,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!gemini.includes("registerProvider('gemini'")||!gemini.includes('/functions/v1/generate-questions')||gemini.includes('GEMINI_API_KEY'))fail('Gemini browser provider is missing or exposes server credentials');
  if(!edge.includes('Deno.env.get("GEMINI_API_KEY")')||!edge.includes('allowed.has(origin)')||!edge.includes('material.length>50000')||!edge.includes('Math.min(20'))fail('Gemini edge function security/input guards are incomplete');
  if(!genUi.includes("api.generate('gemini'")||!genUi.includes('approveDraft')||!genUi.includes('rejectDraft'))fail('Gemini draft review workbench is incomplete');
- if(!loader.includes("loadStyle?.('question-generator-ui.css')")||loader.includes("loadCSS?.('question-generator-ui.css')"))fail('Gemini generator stylesheet is not wired through the shared style loader');
+ if(!studio.includes("loadStyle?.('question-generator-ui.css')")||studio.includes("loadCSS?.('question-generator-ui.css')"))fail('Gemini generator stylesheet is not wired through the shared style loader');
  if(!edge.includes('LEVEL 8.5 ITEM-WRITING RULES')||!edge.includes('Context-Elimination Test')||!edge.includes('Avoid crisis creep')||!edge.includes('Name the trap')||!edge.includes('minItems:4,maxItems:4'))fail('Gemini Level 8.5 item-writing directive/schema is incomplete');
  for(const token of ['Level 8.5 questions require exactly four answer choices.','The Core Concept:','Why the Correct Answer Wins:','The Trap Identified:','Distractor Breakdown:','no more than three sentences'])if(!generator.includes(token))fail('Generated-question Level 8.5 approval guard missing '+token);
  if(bpManifest.features?.questionGenerator?.enabled!==true||bpManifest.features?.questionGenerator?.provider!=='gemini')fail('Basic Principles Gemini question generator configuration is incomplete');
@@ -1056,7 +1056,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
   for(const src of principlesManifest.studioSources||[])if(!String(src.key||'').startsWith(principlesManifest.uidNamespace+'-'))fail('Basic Principles source key is outside the CAT UID namespace: '+String(src.key||''));
   if(!exists('basic-principles/exam-1/bank.html'))fail('Basic Principles generic canonical bank page is missing');
   const examDashboard=read('equipment/assets/exam-dashboard.js');
-  for(const token of ['ctx.examUrl','m.sync?.studioStorageKey','m.bankPage','encodeURIComponent(b.id)'])if(!examDashboard.includes(token))fail('Multi-course exam dashboard missing '+token);
+  for(const token of ['ctx.examUrl','m.sync?.studioStorageKey',"b.page||'bank.html?bank='",'encodeURIComponent(b.id)'])if(!examDashboard.includes(token))fail('Multi-course exam dashboard missing '+token);
   for(const token of ['ctx.examUrl','URLSearchParams(location.search)',env])if(!renderer.includes(token))fail('Cross-course canonical renderer missing '+token);
 
   for(const token of ['courseId,examId','questionId:meta.uid','courseId:meta.courseId','examId:meta.examId','bankId:meta.bank','topic:meta.topic'])if(!intelligence.includes(token))fail('Global CAT evidence metadata missing '+token);
