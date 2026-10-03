@@ -35,7 +35,7 @@ test.describe('multi-course foundation', () => {
     const equipment = await page.evaluate(() => ({
       studio: MBUStudio.STORE,
       intelligence: MBUStudyIntelligence.STORE,
-      course: window.MBU_CONTEXT?.courseId || 'equipment'
+      course: window.MBU_CONTEXT?.courseId
     }));
     expect(equipment).toEqual({
       studio: 'mbu_exam1_studio_v1',
