@@ -2161,6 +2161,9 @@ test.describe('canonical quiz regression', () => {
 
   test('Gemini question generator is feature-gated, reviewable, and keeps credentials server-side', async ({ page }) => {
     await page.goto(exam + '/studio.html');await waitForStudio(page);
+    await expect(page.locator('#gen-open')).toBeVisible();
+    await expect(page.locator('#generated-question-workbench')).not.toBeVisible();
+    await page.locator('#gen-open').click();
     await expect(page.locator('#generated-question-workbench')).toBeVisible();
     const status=await page.evaluate(()=>{
       const api=MBUQuestionGenerator;
