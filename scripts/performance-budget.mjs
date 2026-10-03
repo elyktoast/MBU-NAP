@@ -30,7 +30,7 @@ const budgets={
   'equipment/assets/app-panels.css':15000,
   'equipment/assets/canonical-bank-page.js':8000,
   'equipment/assets/quiz-engine.js':30000,
-  'equipment/assets/studio-page.js':48000,
+  'equipment/assets/studio-page.js':46000,
   'equipment/assets/studio-loader.js':2500,
   'equipment/assets/question-generator.js':10000,
   'equipment/assets/adaptive-quiz.js':17000,
