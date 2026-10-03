@@ -652,7 +652,8 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
 {
  const boot=read('equipment/assets/build-bootstrap.js');
  if(!boot.includes('const jsonCache=new Map()')||!boot.includes('fetchJSON')||!boot.includes('jsonCache.delete(key)'))fail('Phase 5: shared JSON request cache is missing or cannot retry failures');
- for(const p of ['equipment/assets/site-nav.js','equipment/assets/canonical-bank-page.js','equipment/assets/hazards-page.js']){const src=read(p);if(!src.includes('runtime.fetchJSON('))fail('Phase 5: '+p+' bypasses the shared JSON request cache');if(src.includes("fetch(new URL('banks.json'"))fail('Phase 5: '+p+' directly refetches banks.json')}
+ const nav=read('equipment/assets/site-nav.js');if(nav.includes('fetchJSON(')||nav.includes("fetch(new URL('banks.json'"))||nav.includes('manifestPages'))fail('Phase 5: site navigation must render from page context without manifest I/O');
+ for(const p of ['equipment/assets/canonical-bank-page.js','equipment/assets/hazards-page.js']){const src=read(p);if(!src.includes('runtime.fetchJSON('))fail('Phase 5: '+p+' bypasses the shared JSON request cache');if(src.includes("fetch(new URL('banks.json'"))fail('Phase 5: '+p+' directly refetches banks.json')}
  const studio=read('equipment/assets/studio-page.js');if(!studio.includes('MBUBuild.fetchJSON(')||studio.includes('STUDIO_SOURCE_CACHE'))fail('Phase 5: Studio does not use the central JSON request cache');
  const exam=read('equipment/exam-1/index.html'),dash=read('equipment/assets/exam-dashboard.js');if(!exam.includes("'exam-dashboard.js'")||!dash.includes('runtime.fetchJSON('))fail('Phase 5: Exam dashboard manifest rendering bypasses shared runtime');
 }
