@@ -1130,7 +1130,9 @@ test.describe('canonical quiz regression', () => {
 
 
   test('Calculator resets its display and Ans value after closing', async ({ page }) => {
-    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
+    await page.goto(exam + '/quiz-bank-1.html');
+    await page.evaluate(() => MBUQuizReady);
+    await expect(page.locator('#cards button').filter({hasText:/start|continue/i}).first()).toBeVisible();
     await page.locator('#cards button').filter({hasText:/start|continue/i}).first().click();
     await page.evaluate(() => MBUCalculator.besideFlag());
     await page.locator('#mbu-calc-open').click();
@@ -1907,8 +1909,8 @@ test.describe('canonical quiz regression', () => {
       page.locator('[data-cloud-delete-account]').click()
     ]);
     await expect.poll(()=>deleted).toBe(1);
+    await page.waitForURL(url=>url.pathname==='/');
     await page.evaluate(() => MBUPageReady);
-    await waitForAuth(page);
     await expect.poll(()=>page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(false);
     await page.evaluate(() => MBUAppCore.openAccount(document.querySelector('[data-course-link]')));
     await expect(page.locator('[data-cloud-signed-out]')).toBeVisible();
