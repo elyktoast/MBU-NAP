@@ -5151,17 +5151,17 @@
       "id": "PAIN-208",
       "set": 1,
       "type": "single",
-      "stem": "An opioid-naive patient would require about 20 mg IV morphine during the first 24 hours after knee replacement. Using the source's expected 30–100% increase for chronic opioid exposure, which requirement should be anticipated?",
+      "stem": "An opioid-tolerant patient presents for major surgery. How should postoperative opioid requirements be anticipated?",
       "options": [
-        "About 26–40 mg",
-        "About 10–15 mg",
-        "Exactly 20 mg",
-        "About 60–80 mg"
+        "Expect potentially higher requirements than in an opioid-naive patient, but calculate baseline exposure and titrate rescue dosing to individual response rather than applying a fixed percentage increase",
+        "Increase every opioid dose by exactly 30%",
+        "Double every opioid dose automatically",
+        "Use the same doses as an opioid-naive patient because tolerance affects only euphoria"
       ],
       "answer": [
         0
       ],
-      "explanation": "Opioid-dependent patients need 30% to 100% more: 20 mg × 1.3 to 2.0 = 26 to 40 mg.",
+      "explanation": "Opioid-tolerant patients often need more opioid than opioid-naive patients, but the magnitude varies widely. Maintain or replace baseline opioid exposure, use multimodal analgesia, and titrate additional opioid to pain, function, and adverse effects rather than using a universal 30–100% rule.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5347,17 +5347,17 @@
       "id": "PAIN-216",
       "set": 1,
       "type": "single",
-      "stem": "An opioid-tolerant patient will receive gabapentin before surgery. What dosing is suggested?",
+      "stem": "An opioid-tolerant patient is being considered for perioperative gabapentin. Which principle is most appropriate?",
       "options": [
-        "Over 800–1,000 mg",
-        "100 mg",
-        "300 mg",
-        "No gabapentin"
+        "Use patient-specific dosing and weigh opioid-sparing benefit against sedation, respiratory risk, age, renal function, and concomitant CNS depressants",
+        "Give more than 800–1,000 mg to every opioid-tolerant patient",
+        "Gabapentin has no clinically important respiratory interaction with opioids",
+        "Renal function does not affect gabapentin dosing"
       ],
       "answer": [
         0
       ],
-      "explanation": "Higher gabapentinoid doses, over 800–1,000 mg, are suggested for opioid-tolerant patients.",
+      "explanation": "Gabapentinoids can reduce pain or opioid use in selected patients but can also increase sedation and respiratory depression, especially with opioids and in higher-risk patients. Gabapentin is renally eliminated, so dosing should be individualized rather than using a mandatory high preoperative dose.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5395,17 +5395,17 @@
       "id": "PAIN-218",
       "set": 1,
       "type": "single",
-      "stem": "A highly opioid-tolerant patient needs a major spine fusion. Which two strategies are MOST effective for restoring analgesia?",
+      "stem": "A highly opioid-tolerant patient needs a major spine fusion. Which overall strategy is most appropriate?",
       "options": [
-        "Regional techniques and opioid rotation to methadone",
-        "NSAIDs and acetaminophen alone",
-        "Ketamine and magnesium alone without any regional technique",
-        "Propofol and dexmedetomidine"
+        "Continue/replace baseline opioid exposure, use multimodal and regional techniques when feasible, and individualize supplemental opioid therapy",
+        "Abruptly stop baseline opioids and rely on acetaminophen alone",
+        "Use a mixed agonist-antagonist to reverse tolerance",
+        "Escalate one full agonist without adding other analgesic mechanisms"
       ],
       "answer": [
         0
       ],
-      "explanation": "Regional analgesia and rotation to methadone are key strategies for highly tolerant patients.",
+      "explanation": "Management of opioid tolerance is individualized. Prevent withdrawal by maintaining baseline exposure, add multimodal and regional analgesia when appropriate, and titrate supplemental opioids; opioid rotation may help selected patients but is not universally required.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5467,17 +5467,17 @@
       "id": "PAIN-221",
       "set": 1,
       "type": "single",
-      "stem": "A patient discloses he takes oxycodone daily only as you are about to induce anesthesia. How common is this timing?",
+      "stem": "A patient discloses daily oxycodone use only shortly before induction. What is the most important immediate response?",
       "options": [
-        "Common, often just before surgery",
-        "Rare; dependency is documented in advance",
-        "Common in children",
-        "Rare in surgical patients"
+        "Clarify the drug, dose, timing, indication, tolerance/dependence, and last dose, then adapt the perioperative analgesic plan",
+        "Assume the history is too late to change management",
+        "Withhold all perioperative opioids",
+        "Give a mixed agonist-antagonist to test for dependence"
       ],
       "answer": [
         0
       ],
-      "explanation": "Opioid dependence is often identified moments before surgery, so plans must adapt.",
+      "explanation": "Late discovery of chronic opioid use requires rapid medication reconciliation and an individualized plan to prevent withdrawal while treating acute surgical pain safely. The key issue is the patient's actual exposure and physiology, not how commonly disclosure occurs at a particular time.",
       "citation": "",
       "topic": "Dependence, tolerance, and the opioid-dependent patient",
       "sourceTitle": "Perioperative Pain Management",
@@ -5667,17 +5667,17 @@
       "id": "PAIN-229",
       "set": 1,
       "type": "single",
-      "stem": "A 24-week preterm infant requires surgery. Which statement best reflects development of nociception at this gestational age?",
+      "stem": "A very preterm infant requires surgery. Which statement best reflects contemporary understanding of neonatal pain?",
       "options": [
-        "The nociceptive system is functional by approximately 20–24 weeks' gestation",
-        "Nociception develops only at term",
-        "Nociception begins only after birth",
-        "Pain pathways are absent until about 1 year"
+        "Preterm infants can mount nociceptive responses and require appropriate analgesia; a single gestational-age cutoff should not be used to deny pain treatment",
+        "Pain perception begins only at term",
+        "Pain pathways are absent until after birth",
+        "Analgesia is unnecessary before 28 weeks' gestation"
       ],
       "answer": [
         0
       ],
-      "explanation": "The nociceptive system is functional by 20–24 weeks' gestation.",
+      "explanation": "Preterm neonates have developing nociceptive pathways and demonstrate physiologic and behavioral responses to noxious stimulation. Exact developmental milestones are complex and should not be reduced to a single cutoff for whether an infant can experience or respond to pain.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -5719,17 +5719,17 @@
       "id": "PAIN-231",
       "set": 1,
       "type": "single",
-      "stem": "A 10-year-old and an adult have the same procedure. How does the child's pain threshold compare?",
+      "stem": "A 10-year-old undergoes the same procedure as an adult. Which principle should guide postoperative pain assessment?",
       "options": [
-        "Lower than an adult's",
-        "Higher than an adult's",
-        "The same as an adult's",
-        "Absent until adolescence"
+        "Use an age-appropriate validated self-report or behavioral tool and treat the child's report individually rather than assuming a fixed pain threshold relative to adults",
+        "Assume every child has a lower pain threshold than every adult",
+        "Assume children tolerate pain better than adults",
+        "Use heart rate alone because pediatric self-report is unreliable"
       ],
       "answer": [
         0
       ],
-      "explanation": "Children ages 5–18 have a lower pain threshold than adults.",
+      "explanation": "Pain experience varies among individuals and across development. Children who can self-report should be assessed with age-appropriate validated tools; broad claims that all children have a uniformly lower or higher pain threshold than adults are not reliable for individual care.",
       "citation": "",
       "topic": "Cancer pain, geriatrics, pediatrics, and barriers",
       "sourceTitle": "Perioperative Pain Management",
@@ -6065,17 +6065,17 @@
       "id": "PAIN-245",
       "set": 1,
       "type": "single",
-      "stem": "A patient received hydromorphone in preop and is drowsy but oriented. Can she consent?",
+      "stem": "A patient received hydromorphone preoperatively and is drowsy but conversant. What determines whether she can provide valid consent?",
       "options": [
-        "Yes, unless oversedated and unable to understand",
-        "No, any opioid invalidates consent",
-        "Only general anesthesia invalidates consent",
-        "Yes, if a family member co-signs"
+        "Whether she currently has decision-making capacity, including understanding, appreciation, reasoning, and ability to communicate a choice",
+        "Any opioid exposure automatically invalidates consent",
+        "A family member can make her consent valid by co-signing",
+        "Normal vital signs alone establish capacity"
       ],
       "answer": [
         0
       ],
-      "explanation": "Analgesics do not prevent consent unless overdone.",
+      "explanation": "Opioid exposure does not automatically invalidate consent. The relevant question is whether medication or another condition has impaired decision-making capacity at the time consent is obtained.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -6137,17 +6137,17 @@
       "id": "PAIN-248",
       "set": 1,
       "type": "single",
-      "stem": "Near emergence, a spontaneously breathing patient has a respiratory rate of 22/min and dilated pupils after a painful procedure. Which interpretation BEST fits these combined findings?",
+      "stem": "Near emergence, a spontaneously breathing patient is tachypneic with dilated pupils after a painful procedure. Which interpretation is best?",
       "options": [
-        "Residual analgesia is likely inadequate, so cautious additional opioid may be appropriate",
-        "The patient has excessive opioid effect requiring naloxone",
-        "This is the ideal opioid endpoint for extubation",
-        "The findings specifically diagnose residual neuromuscular blockade"
+        "Inadequate analgesia is possible, but these findings are nonspecific and should be integrated with ventilation, arousability, hemodynamics, temperature, and other causes before giving more opioid",
+        "The findings prove inadequate analgesia and mandate an opioid bolus",
+        "The findings prove opioid withdrawal",
+        "The respiratory rate alone determines extubation readiness"
       ],
       "answer": [
         0
       ],
-      "explanation": "RR >18–20 with dilated pupils indicates insufficient analgesia.",
+      "explanation": "Tachypnea and mydriasis may accompany pain but are nonspecific. Opioid titration should reflect the entire clinical picture rather than a fixed respiratory-rate threshold or pupil finding.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
