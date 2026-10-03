@@ -3726,7 +3726,7 @@
       "answer": [
         0
       ],
-      "explanation": "During spontaneous ventilation, respiratory rate, pattern, tidal ventilation, gas exchange, arousability, and the overall clinical context can help reveal opioid effect. There is no single respiratory-rate target that guarantees adequate analgesia or safe extubation.",
+      "explanation": "During spontaneous ventilation, opioid effect can be judged partly from respiratory rate and pattern, tidal movement, capnography/gas exchange, arousability, and response to stimulation. No single respiratory-rate target proves adequate analgesia or readiness for extubation, so additional opioid should be titrated to the complete clinical picture.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3750,7 +3750,7 @@
       "answer": [
         0
       ],
-      "explanation": "Tachypnea and mydriasis can accompany inadequate analgesia but are nonspecific. Opioids should be titrated to the overall clinical picture, including pain/stimulation, ventilation, arousability, hemodynamics, and other causes of tachypnea.",
+      "explanation": "Tachypnea and mydriasis can accompany pain or inadequate antinociception, but they are nonspecific and may also reflect anxiety, hypercapnia, hypoxemia, fever, light anesthesia, or other causes. Additional opioid should be based on the overall pattern, especially ventilation and arousability near emergence.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3774,7 +3774,7 @@
       "answer": [
         0
       ],
-      "explanation": "Bradypnea with marked miosis after repeated opioid dosing strongly suggests excessive opioid effect. Safe emergence is based on adequate ventilation, gas exchange, arousability, airway protection, and the full clinical context rather than a single target respiratory rate.",
+      "explanation": "Repeated opioid dosing followed by marked bradypnea and pinpoint pupils strongly supports excessive opioid effect. Safe extubation requires adequate ventilation, gas exchange, arousability, airway protection, and neuromuscular recovery rather than achievement of a single respiratory-rate cutoff.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3798,7 +3798,7 @@
       "answer": [
         0
       ],
-      "explanation": "The lowest effective naloxone dose restores ventilation without causing abrupt severe pain.",
+      "explanation": "A large naloxone dose can abruptly remove analgesia and provoke severe pain, sympathetic activation, or withdrawal in dependent patients. When immediate full reversal is not required, small titrated doses can restore adequate ventilation while preserving as much analgesia as possible.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3822,7 +3822,7 @@
       "answer": [
         0
       ],
-      "explanation": "Treating emergence vital signs with opioids before extubation risks respiratory depression afterward.",
+      "explanation": "Transient coughing-related hypertension at emergence is not by itself an indication for a large opioid bolus. Near extubation, excess opioid can outlast airway stimulation and produce delayed hypoventilation or obstruction after the endotracheal tube is removed.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3846,7 +3846,7 @@
       "answer": [
         0
       ],
-      "explanation": "Bringing analgesics avoids delays while PACU orders and pharmacy catch up.",
+      "explanation": "Analgesic responsibility continues through transport and handoff. If rescue medication will not be immediately available in PACU, carrying an appropriate secured medication supply prevents an avoidable treatment gap while maintaining controlled-substance accountability.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3870,7 +3870,7 @@
       "answer": [
         0
       ],
-      "explanation": "Pain evaluation must be documented in the handoff and post-anesthesia evaluation.",
+      "explanation": "Medication administration alone does not show whether treatment worked. Handoff should include the current validated pain assessment, relevant functional limitation, sedation/respiratory status, drugs and regional techniques used, and response so the receiving team can safely continue the plan.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3894,7 +3894,7 @@
       "answer": [
         0
       ],
-      "explanation": "Controlled substance dosing and waste must match the record exactly.",
+      "explanation": "Controlled-substance records must reconcile the amount obtained with the amount administered, wasted, or returned. A discrepancy between signed-out fentanyl and documented administration/waste is both a medication-safety and diversion-accountability problem that requires resolution.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3918,7 +3918,7 @@
       "answer": [
         0
       ],
-      "explanation": "Poorly controlled pain leaving the OR leads to long PACU stays and more complications.",
+      "explanation": "Severe uncontrolled pain can prevent mobilization, breathing exercises, oral intake, or satisfaction of discharge criteria and often requires repeated rescue dosing and reassessment. Arriving in PACU without an effective analgesic plan can therefore prolong recovery even when vital signs are stable.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3947,7 +3947,7 @@
         2,
         3
       ],
-      "explanation": "A safe PCA order identifies the drug/concentration, demand dose, lockout interval, and applicable dose limits. A continuous background infusion is optional and is generally avoided in opioid-naive patients unless there is a specific indication.",
+      "explanation": "A demand-only PCA order must clearly identify the opioid/concentration, patient demand dose, lockout interval, and any dose limit used by the institution. A continuous basal infusion is a separate optional setting and generally adds respiratory risk in opioid-naive patients.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3971,7 +3971,7 @@
       "answer": [
         0
       ],
-      "explanation": "PCA programming must be explicit enough to prevent unintended dosing. Background infusion is not mandatory and can increase respiratory-depression risk, especially in opioid-naive patients.",
+      "explanation": "PCA safety depends on unambiguous programming of drug/concentration, demand dose, lockout, dose limits, and whether a basal infusion is intentionally present. The background infusion should never be assumed to be a required component of PCA therapy.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3995,7 +3995,7 @@
       "answer": [
         0
       ],
-      "explanation": "Background infusions in opioid-naive patients raise respiratory depression risk without clear benefit.",
+      "explanation": "PCA allows the patient to self-administer small IV opioid doses within programmed safety limits, reducing delays between pain onset and treatment. Only the patient should activate the demand button unless a specifically authorized protocol provides otherwise, because proxy dosing can bypass the patient's sedation-limited self-protection.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -4019,7 +4019,7 @@
       "answer": [
         0
       ],
-      "explanation": "The lockout interval is the minimum time between demand doses.",
+      "explanation": "A basal opioid infusion continues even when an opioid-naive patient becomes sleepy and stops pressing the PCA button, removing an important feedback safeguard. This can increase cumulative opioid exposure and respiratory depression, especially during sleep or in OSA.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -4043,7 +4043,7 @@
       "answer": [
         0
       ],
-      "explanation": "The background infusion runs continuously regardless of demand.",
+      "explanation": "PCA-related respiratory risk rises with basal infusions, concurrent sedatives, OSA, advanced age, organ dysfunction, and other factors that increase opioid sensitivity or accumulation. Monitoring intensity should match the patient's risk and institutional protocol rather than relying on the PCA lockout alone.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -4067,7 +4067,7 @@
       "answer": [
         0
       ],
-      "explanation": "The initial bolus establishes analgesia before demand dosing.",
+      "explanation": "Continuous pulse oximetry can detect oxygenation failure but supplemental oxygen may delay desaturation during opioid hypoventilation. Ventilation assessment, including capnography when indicated and feasible, adds earlier information about apnea or hypoventilation in high-risk patients.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -4091,7 +4091,7 @@
       "answer": [
         0
       ],
-      "explanation": "The incremental or demand dose is delivered with each successful button press.",
+      "explanation": "Sedation often precedes severe opioid-induced respiratory depression. A patient who is increasingly difficult to arouse after PCA dosing should be assessed immediately for airway patency and ventilation, with opioid delivery stopped/reduced and reversal/support provided as clinically indicated.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -4115,7 +4115,7 @@
       "answer": [
         0
       ],
-      "explanation": "Incomplete PCA orders can lead to dosing errors and overdose.",
+      "explanation": "Neuraxial opioids can produce respiratory depression, pruritus, nausea, and urinary retention without the dense motor block expected from local anesthetic. Hydrophilic morphine has delayed rostral spread and therefore requires prolonged respiratory surveillance.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -4139,7 +4139,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dexamethasone has a slow onset, so timing is planned around its goals, usually early in the case.",
+      "explanation": "Lipophilic neuraxial opioids such as fentanyl and sufentanil have rapid spinal uptake and relatively rapid onset, while hydrophilic morphine remains in CSF longer and can provide prolonged analgesia with delayed respiratory-depression risk. Drug choice should match desired duration and monitoring capability.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -4163,7 +4163,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ensure enough drug for the whole case.",
+      "explanation": "Epidural local anesthetic can produce sympathectomy, sensory block, and motor block depending on concentration and level. Hypotension or unexpected motor weakness should prompt assessment of block extent, dose, catheter position, and other causes rather than simply increasing the infusion.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -4187,7 +4187,7 @@
       "answer": [
         0
       ],
-      "explanation": "Titration balances pain control and ventilation.",
+      "explanation": "Unexpected dense motor block from a postoperative epidural can signal excessive local-anesthetic effect or catheter migration and may impair mobility or mask neurologic findings. The infusion and catheter should be reassessed promptly rather than treating motor weakness as an expected analgesic endpoint.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -4211,7 +4211,7 @@
       "answer": [
         0
       ],
-      "explanation": "PACU orders generally include both short- and long-acting opioids.",
+      "explanation": "Anticoagulant timing around neuraxial catheter placement and removal affects spinal/epidural hematoma risk. The plan must follow current drug-specific neuraxial guidelines and account for renal function, traumatic placement, concurrent hemostatic drugs, and the exact timing of doses.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -4235,7 +4235,7 @@
       "answer": [
         0
       ],
-      "explanation": "Epidural and CPNB infusions may need preparation, so pharmacy should be coordinated in advance.",
+      "explanation": "New severe back pain, progressive motor or sensory deficit, or bowel/bladder dysfunction after neuraxial instrumentation can indicate compressive spinal hematoma. This is a time-sensitive neurologic emergency requiring immediate evaluation and urgent imaging/decompression pathways rather than routine analgesic adjustment.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -4259,7 +4259,7 @@
       "answer": [
         0
       ],
-      "explanation": "Analgesic drips are started before or after induction according to planned goals.",
+      "explanation": "Continuous peripheral nerve blocks can provide strong site-specific analgesia with less systemic opioid exposure, but catheter migration, infection, local-anesthetic toxicity, motor weakness, and block-specific nerve effects remain possible. Discharge education must include protection of the insensate limb and when to seek help.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -4286,7 +4286,7 @@
         0,
         1
       ],
-      "explanation": "Maintenance analgesic infusions include remifentanil and ketamine, along with dexmedetomidine.",
+      "explanation": "Motor weakness from a peripheral block can increase fall risk even when analgesia is excellent. Technique and concentration should be selected to balance analgesia with preservation of function, and ambulation precautions should match the expected motor effect.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -4310,7 +4310,7 @@
       "answer": [
         0
       ],
-      "explanation": "Long fentanyl infusions accumulate, so stopping late prolongs emergence.",
+      "explanation": "A numb extremity is vulnerable to pressure, heat, and mechanical injury because protective sensation is reduced. Patients discharged with an active block should receive explicit instructions about limb protection, weight bearing, fall prevention, catheter care, and signs of toxicity or neurologic concern.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -4339,7 +4339,7 @@
         2,
         3
       ],
-      "explanation": "Analgesic adverse effects include pruritus, retention, respiratory depression, sedation, PONV, hypotension, constipation, anaphylaxis, and LAST.",
+      "explanation": "Local anesthetic systemic toxicity can begin with circumoral numbness, metallic taste, tinnitus, agitation, or seizures and progress to conduction disturbance, arrhythmia, hypotension, or cardiovascular collapse. Suspected LAST requires immediate airway/circulatory support and lipid-emulsion therapy according to current protocols.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4363,7 +4363,7 @@
       "answer": [
         0
       ],
-      "explanation": "Neuraxial opioids cause pruritus and respiratory depression through vascular uptake and cephalad CSF spread.",
+      "explanation": "Intravascular injection can produce abrupt high local-anesthetic concentrations before total dose limits are reached. Incremental injection, aspiration, appropriate test dosing when relevant, monitoring, and communication reduce risk but cannot eliminate it.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4387,7 +4387,7 @@
       "answer": [
         0
       ],
-      "explanation": "Lipophilic fentanyl causes early respiratory depression when given neuraxially.",
+      "explanation": "Maximum local-anesthetic dose tables are safety guides rather than guarantees of toxicity-free dosing. Patient size, age, pregnancy, organ dysfunction, injection site vascularity, epinephrine use, and cumulative exposure from all sources can change systemic concentration and risk.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4411,7 +4411,7 @@
       "answer": [
         0
       ],
-      "explanation": "Hydrophilic morphine spreads rostrally in CSF and can cause respiratory depression up to 12–24 hours later.",
+      "explanation": "Epinephrine can reduce systemic absorption of some local anesthetics and increase the conventional maximum recommended dose, but it does not make unlimited dosing safe. Total exposure, injection site, comorbidities, and signs of intravascular injection still determine risk.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4435,7 +4435,7 @@
       "answer": [
         0
       ],
-      "explanation": "Intrathecal morphine has a delayed peak in respiratory depression risk.",
+      "explanation": "Dose calculations must use the actual drug concentration: 1% solution equals 10 mg/mL, 0.5% equals 5 mg/mL, and so forth. Converting percentage to mg/mL before multiplying by volume prevents common local-anesthetic dosing errors.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4464,7 +4464,7 @@
       "answer": [
         0
       ],
-      "explanation": "Intrathecal fentanyl has an early peak in respiratory depression risk.",
+      "explanation": "Cumulative local-anesthetic exposure includes every route and administrator. A regional block plus surgeon infiltration can exceed a recommended limit even when each individual dose appears acceptable, so the total milligram dose should be reconciled before additional drug is given.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4493,7 +4493,7 @@
       "answer": [
         0
       ],
-      "explanation": "Neuraxial opioid pruritus is centrally mediated and may respond to carefully titrated low-dose naloxone or other targeted therapies. Large naloxone doses can reverse analgesia and precipitate acute pain or withdrawal in susceptible patients.",
+      "explanation": "Lipid emulsion is a core component of resuscitation for severe LAST, but treatment also requires airway/ventilatory support, seizure control, modified cardiovascular resuscitation, and avoidance of drugs that can worsen toxicity. Teams performing regional anesthesia should have an immediately accessible LAST protocol and lipid supply.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4517,7 +4517,7 @@
       "answer": [
         0
       ],
-      "explanation": "Airway and ventilatory support come first. Flumazenil and naloxone may be used selectively, but reversal should reflect the suspected drug contribution and patient-specific risks; flumazenil can precipitate seizures or withdrawal in susceptible benzodiazepine-dependent patients.",
+      "explanation": "LAST-related cardiac arrest is managed with high-quality resuscitation plus lipid emulsion and modifications to standard ACLS because local-anesthetic toxicity alters myocardial conduction and contractility. Current LAST guidance should be followed rather than assuming routine arrest pharmacology is sufficient.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4541,7 +4541,7 @@
       "answer": [
         0
       ],
-      "explanation": "Four doses of 0.2 mg is 0.8 mg; one more 0.2 mg dose reaches the 1 mg total.",
+      "explanation": "Bupivacaine is particularly cardiotoxic because of strong, persistent binding to cardiac sodium channels. Severe toxicity can produce refractory ventricular arrhythmias and cardiovascular collapse, making prevention and rapid lipid-based resuscitation especially important.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4565,7 +4565,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dexmedetomidine cannot be reversed in humans, so management is supportive.",
+      "explanation": "Ropivacaine is generally less cardiotoxic than bupivacaine but can still cause seizures, arrhythmias, or cardiovascular collapse at sufficiently high systemic concentrations. Relative safety does not eliminate the need for dose limits and LAST preparedness.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4589,7 +4589,7 @@
       "answer": [
         0
       ],
-      "explanation": "Synergistic combinations increase efficacy but also side effects and duration.",
+      "explanation": "Ultrasound can improve needle visualization and may reduce vascular puncture or required local-anesthetic volume in some blocks, but it does not eliminate intravascular injection or systemic absorption. Standard incremental-injection and toxicity precautions remain necessary.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4613,7 +4613,7 @@
       "answer": [
         0
       ],
-      "explanation": "Combining sedating analgesics calls for lower doses of each agent.",
+      "explanation": "A negative aspiration test cannot exclude intravascular needle or catheter position because the vessel may collapse or the needle tip may migrate. Incremental dosing with ongoing clinical monitoring remains necessary even after negative aspiration.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4637,7 +4637,7 @@
       "answer": [
         0
       ],
-      "explanation": "Hypotension after analgesia can reflect vasodilation, bradycardia, hypovolemia, bleeding, anesthetic depth, or other causes. Rapid assessment and simultaneous support of perfusion should guide targeted treatment.",
+      "explanation": "Early CNS symptoms can precede cardiovascular collapse in LAST, but heavily sedated or anesthetized patients may not report warning symptoms. Continuous physiologic monitoring and attention to unexplained hemodynamic or electrical changes are therefore essential during regional techniques.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4661,7 +4661,7 @@
       "answer": [
         0
       ],
-      "explanation": "Assess rhythm and BP, then treat with ephedrine or glycopyrrolate as appropriate.",
+      "explanation": "Seizure from LAST increases oxygen consumption and acidosis, which can worsen local-anesthetic cardiotoxicity. Immediate oxygenation/ventilation and benzodiazepine treatment are priorities while lipid-emulsion therapy and circulatory support are initiated as indicated.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4685,7 +4685,7 @@
       "answer": [
         0
       ],
-      "explanation": "Clinically important bradycardia with hypotension requires cause-directed treatment and perfusion support. The appropriate agent may include atropine, ephedrine, epinephrine, or another therapy depending on mechanism and severity; no single drug is correct for every case.",
+      "explanation": "Local-anesthetic dose should generally be calculated using an appropriate weight scalar and capped at accepted maximums while accounting for patient-specific risk and cumulative dosing. Obesity does not justify proportionally unlimited milligram dosing simply because total body weight is high.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
@@ -4709,7 +4709,7 @@
       "answer": [
         0
       ],
-      "explanation": "Opioid-related nausea is usually managed with antiemetics.",
+      "explanation": "Epinephrine-containing local-anesthetic solutions may be undesirable where intense vasoconstriction could threaten perfusion or in patients particularly vulnerable to adrenergic effects. The decision should reflect site, concentration, dose, vascular status, and patient comorbidities rather than a blanket rule.",
       "citation": "",
       "topic": "Adverse effects and reversal",
       "sourceTitle": "Perioperative Pain Management",
