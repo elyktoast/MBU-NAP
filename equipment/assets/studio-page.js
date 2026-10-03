@@ -142,4 +142,4 @@ function setLabel(q){if(q.bank==='hh')return 'Challenge Set';if(q.bank==='h1'||q
 function sourceSetKey(q){return q.bank+':'+q.set}
 function initialStudioBuildMode(){if(unifiedStudioSource()){buildMode='topics';return}setBuildMode('sets')}
 
-window.MBUStudioCoreReady=loadBanks;
+let studioCorePromise=null;window.MBUStudioCoreReady=()=>studioCorePromise||(studioCorePromise=loadBanks());
