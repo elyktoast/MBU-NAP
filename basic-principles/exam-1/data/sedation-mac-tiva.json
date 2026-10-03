@@ -3906,7 +3906,7 @@
       "answer": [
         0
       ],
-      "explanation": "Beach chair position alters cerebral autoregulation, and brain perfusion pressure is lower than arm pressure in the upright patient. Hypotension here risks cerebral ischemia.",
+      "explanation": "In the beach-chair position, hydrostatic height differences mean pressure at brain level may be lower than a cuff measured on the arm unless the gradient is accounted for. Hypotension can therefore threaten cerebral perfusion; the issue is not that upright positioning itself simply 'alters autoregulation.'",
       "citation": "",
       "topic": "Procedure selection and positioning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -4198,7 +4198,7 @@
       "answer": [
         0
       ],
-      "explanation": "Beach chair alters cerebral autoregulation. Hypotension in an upright patient can reduce brain perfusion.",
+      "explanation": "In the upright beach-chair position, arterial pressure at brain level may be lower than an arm-cuff measurement because of the hydrostatic gradient. Promptly reassess the measurement reference and treat clinically important hypotension to protect cerebral perfusion.",
       "citation": "",
       "topic": "Procedure selection and positioning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -4588,7 +4588,7 @@
       "answer": [
         0
       ],
-      "explanation": "Beach chair positioning alters cerebral autoregulation. With the cuff at the arm, brain perfusion pressure is lower than the reading, so confusion is a warning sign.",
+      "explanation": "Confusion during beach-chair positioning should prompt urgent evaluation of cerebral perfusion and other causes. If pressure is measured at the arm, the hydrostatic gradient can make pressure at brain level lower than the displayed cuff value.",
       "citation": "",
       "topic": "Procedure selection and positioning",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -4698,17 +4698,17 @@
       "id": "SED-193",
       "set": 1,
       "type": "single",
-      "stem": "During MAC, a propofol bolus briefly makes the patient unresponsive and ventilation requires support. Does the label MAC itself cease to apply solely because depth changed?",
+      "stem": "During a case planned as MAC, a propofol bolus makes the patient unresponsive to painful stimulation and ventilation requires support. What is the most accurate interpretation?",
       "options": [
-        "No; MAC is the anesthesia service, while the patient may transiently enter deeper sedation or general anesthesia requiring rescue",
-        "Yes; MAC ends whenever verbal responsiveness is lost",
-        "Yes; the case automatically becomes nurse-administered moderate sedation",
-        "No; because MAC cannot include airway intervention"
+        "The patient has entered general anesthesia depth and must be managed/rescued accordingly; documentation and anesthetic classification should reflect the actual care delivered",
+        "The patient remains at moderate sedation because the case was booked as MAC",
+        "The event automatically becomes nurse-administered moderate sedation",
+        "Airway intervention is incompatible with MAC preparedness"
       ],
       "answer": [
         0
       ],
-      "explanation": "MAC is defined by the anesthesia service, not depth, and can range up to GA while the provider is prepared to manage it.",
+      "explanation": "MAC describes a planned anesthesia service, not a guaranteed depth. If the patient becomes unarousable even to painful stimulation, the physiologic depth is general anesthesia and must be managed accordingly. Billing/documentation terminology should reflect the actual anesthetic care rather than implying that a MAC label overrides the observed depth.",
       "citation": "",
       "topic": "MAC concept and ASA requirements",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -4732,7 +4732,7 @@
       "answer": [
         0
       ],
-      "explanation": "MAC must be provided by a qualified anesthesia professional prepared to manage the airway and physiologic changes, including conversion to GA.",
+      "explanation": "MAC is a specific anesthesia service furnished by a qualified anesthesia professional who performs a preanesthetic evaluation, provides intra-procedure anesthesia care, and is prepared to rescue the airway or convert the anesthetic when necessary. Scope and credentialing for non-anesthesia moderate sedation are governed separately.",
       "citation": "",
       "topic": "MAC concept and ASA requirements",
       "sourceTitle": "Sedation, MAC & TIVA",
