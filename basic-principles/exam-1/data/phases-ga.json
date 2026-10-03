@@ -4354,20 +4354,20 @@
       "id": "PHA-174",
       "set": 1,
       "type": "multi",
-      "stem": "A hypothermic patient bleeds more than expected and later develops myocardial ischemia. Which TWO effects of hypothermia help explain this? (Select 2)",
+      "stem": "A hypothermic patient develops increased surgical bleeding and then vigorous postoperative shivering with myocardial ischemia. Which TWO effects of hypothermia help explain this? (Select 2)",
       "options": [
-        "Increased myocardial oxygen demand",
-        "Impaired platelet function",
-        "Lower blood viscosity",
-        "Improved coagulation",
-        "Lower oxygen demand",
-        "Vasodilation"
+        "Impaired platelet/coagulation function",
+        "Shivering-related increase in myocardial oxygen demand",
+        "Improved coagulation enzyme activity",
+        "Reduced myocardial oxygen demand during shivering",
+        "Increased platelet function",
+        "Guaranteed coronary vasodilation"
       ],
       "answer": [
         0,
         1
       ],
-      "explanation": "Hypothermia impairs platelets and coagulation and increases myocardial oxygen demand through shivering.",
+      "explanation": "Hypothermia impairs platelet function and coagulation, increasing bleeding. Postoperative shivering substantially raises oxygen consumption and myocardial oxygen demand, which can worsen ischemia in susceptible patients.",
       "citation": "",
       "topic": "Hemodynamics, bronchospasm, hemorrhage, and hypothermia",
       "sourceTitle": "Phases of General Anesthesia",
@@ -4700,17 +4700,17 @@
       "id": "PHA-188",
       "set": 1,
       "type": "single",
-      "stem": "An older patient at high risk for postoperative cognitive complications is being considered for TIVA. Which potential advantage motivates this choice in the lecture?",
+      "stem": "An older patient at high risk for postoperative delirium is being considered for propofol TIVA rather than volatile maintenance. Which statement best reflects the evidence?",
       "options": [
-        "A possible reduction in postoperative delirium/cognitive dysfunction",
-        "Older adults clear propofol faster than all volatile agents",
-        "TIVA prevents hypotension",
-        "TIVA eliminates the need to assess anesthetic depth"
+        "Some studies suggest a lower delirium incidence with propofol TIVA, but the benefit is not sufficiently consistent to guarantee prevention",
+        "TIVA reliably prevents postoperative delirium",
+        "Older adults universally clear propofol faster than volatile agents",
+        "TIVA eliminates the need to avoid excessively deep anesthesia"
       ],
       "answer": [
         0
       ],
-      "explanation": "TIVA has been associated with reduced postoperative delirium and cognitive dysfunction in older patients.",
+      "explanation": "Some comparative studies and meta-analyses have reported less postoperative delirium with propofol-based TIVA than volatile anesthesia, but findings are heterogeneous. TIVA should not be presented as reliably preventing delirium or cognitive complications.",
       "citation": "",
       "topic": "Volatiles, low flow, TIVA, depth, opioids, ERAS",
       "sourceTitle": "Phases of General Anesthesia",
@@ -4948,20 +4948,18 @@
     {
       "id": "PHA-198",
       "set": 1,
-      "type": "multi",
+      "type": "single",
       "stem": "An ERAS pathway reduces perioperative opioid exposure while maintaining analgesia. Which outcome pattern is most consistent with its intended short-term benefits?",
       "options": [
-        "Less PACU opioid use with potentially faster discharge and fewer unplanned admissions",
+        "Lower opioid requirements with fewer opioid-related adverse effects and potentially faster recovery",
         "Guaranteed lifelong opioid avoidance",
-        "Longer PACU stay with higher opioid use",
+        "Higher PACU opioid requirements",
         "Universal elimination of PONV"
       ],
       "answer": [
-        0,
-        1,
-        2
+        0
       ],
-      "explanation": "Opioid-sparing pathways shorten discharge, reduce unplanned admissions, and lower PACU opioid use. Long-term benefit is less certain.",
+      "explanation": "Multimodal opioid-sparing pathways aim to reduce perioperative opioid requirements and opioid-related adverse effects while supporting recovery. They do not guarantee elimination of PONV, admission, or long-term opioid use.",
       "citation": "",
       "topic": "Volatiles, low flow, TIVA, depth, opioids, ERAS",
       "sourceTitle": "Phases of General Anesthesia",
@@ -5003,7 +5001,7 @@
     {
       "id": "PHA-200",
       "set": 1,
-      "type": "multi",
+      "type": "single",
       "stem": "A service wants to implement an opioid-sparing pathway across multiple surgical specialties. Which barrier is most realistic even if the pharmacologic rationale is sound?",
       "options": [
         "Regional-technique skill requirements and interdisciplinary coordination",
@@ -5012,10 +5010,9 @@
         "Inevitable increase in PACU opioid use"
       ],
       "answer": [
-        0,
-        1
+        0
       ],
-      "explanation": "Challenges include block skill demands, collaboration across teams, ongoing opioid use after discharge, and uncertain long-term benefit.",
+      "explanation": "Implementation can be limited by regional-anesthesia skill requirements, workflow differences, and coordination across anesthesia, surgery, nursing, pharmacy, and recovery teams.",
       "citation": "",
       "topic": "Volatiles, low flow, TIVA, depth, opioids, ERAS",
       "sourceTitle": "Phases of General Anesthesia",
