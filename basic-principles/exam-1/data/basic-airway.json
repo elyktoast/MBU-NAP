@@ -2636,17 +2636,17 @@
       "id": "AIR-109",
       "set": 1,
       "type": "single",
-      "stem": "Mallampati is class II, but thyromental distance is short and neck extension is limited. What is the best interpretation?",
+      "stem": "A patient has Mallampati II, a short thyromental distance, limited neck extension, and prominent upper incisors. What is the most important planning implication?",
       "options": [
-        "The reassuring Mallampati overrides the other findings",
-        "The tests conflict, so none should influence planning",
-        "All three tests measure the same anatomic limitation",
-        "Combining the findings is more predictive than relying on one test"
+        "Mallampati II rules out difficult laryngoscopy",
+        "Multiple unfavorable airway features should prompt a difficult-airway strategy despite a reassuring Mallampati class",
+        "Only the thyromental distance matters for airway planning",
+        "An awake technique is mandatory in every patient with two abnormal predictors"
       ],
       "answer": [
-        3
+        1
       ],
-      "explanation": "Mallampati evaluates only one component of airway anatomy. A short thyromental distance and limited neck extension add independent concerns, so the combined assessment is more informative than allowing a reassuring single test to override the others.",
+      "explanation": "No single bedside airway test reliably predicts difficulty. Several unfavorable findings increase concern even when Mallampati class is relatively reassuring, so the airway plan should integrate all predictors, available rescue options, and the consequences of failed ventilation or intubation.",
       "citation": "",
       "topic": "Airway assessment tools",
       "sourceTitle": "Basic Airway Assessment & Management",
@@ -5795,17 +5795,17 @@
       "id": "AIR-238",
       "set": 1,
       "type": "single",
-      "stem": "After loss of consciousness during RSI, what cricoid force does this lecture recommend?",
+      "stem": "During RSI, cricoid pressure clearly worsens laryngoscopic view and impedes tube passage. What is the best response?",
       "options": [
-        "50–60 N",
-        "5–10 N",
-        "30–40 N",
-        "10–20 N"
+        "Increase cricoid force until the esophagus is fully compressed",
+        "Release or adjust cricoid pressure if it is interfering with airway management",
+        "Continue unchanged because cricoid pressure must never be released",
+        "Convert immediately to a surgical airway"
       ],
       "answer": [
-        2
+        1
       ],
-      "explanation": "30–40 N after LOC.",
+      "explanation": "Cricoid pressure should not be allowed to obstruct ventilation, laryngoscopy, or tracheal intubation. If it worsens the view or tube passage, the force should be adjusted or released while the team continues aspiration-risk management and secures the airway.",
       "citation": "",
       "topic": "Cricoid pressure",
       "sourceTitle": "Basic Airway Assessment & Management",
