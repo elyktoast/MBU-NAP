@@ -13,13 +13,18 @@ async function clearAppState(page) {
   await page.addInitScript(() => {
     const now=Math.floor(Date.now()/1000);
     localStorage.setItem('snar_legal_acceptance_v6', JSON.stringify({version:'2026-09-27-v6',acceptedAt:new Date().toISOString()}));
+    localStorage.setItem('mbu_supabase_session_v1',JSON.stringify({
+      access_token:'e2e-access',refresh_token:'e2e-refresh',expires_at:now+3600,
+      user:{id:'00000000-0000-0000-0000-000000000001',email:'e2e@example.com'}
+    }));
   });
   await page.goto(exam + '/index.html');
   await page.evaluate(() => window.MBUPageReady);
   await page.evaluate(() => {
-    const legal=localStorage.getItem('snar_legal_acceptance_v6');
+    const legal=localStorage.getItem('snar_legal_acceptance_v6'),session=localStorage.getItem('mbu_supabase_session_v1');
     localStorage.clear();sessionStorage.clear();
     if(legal)localStorage.setItem('snar_legal_acceptance_v6',legal);
+    if(session)localStorage.setItem('mbu_supabase_session_v1',session);
   });
 }
 
