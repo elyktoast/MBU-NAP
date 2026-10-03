@@ -311,7 +311,7 @@
       "answer": [
         0
       ],
-      "explanation": "Every hypoventilation claim involved failure to monitor ventilation.",
+      "explanation": "Supplemental oxygen can preserve SpO2 despite progressively inadequate ventilation, so pulse oximetry may not reveal early hypoventilation. Monitoring ventilation, including exhaled CO2 when indicated, detects the problem before oxygen desaturation necessarily occurs.",
       "citation": "",
       "topic": "Standards, vigilance, alarms, and setup",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -383,7 +383,7 @@
       "answer": [
         0
       ],
-      "explanation": "Capnography significantly reduced unrecognized esophageal intubation.",
+      "explanation": "Preoxygenation can keep SpO2 normal for a period even when the tube is not in the trachea, and chest movement can be misleading. Sustained exhaled CO2 therefore provides the critical routine confirmation that ventilation is occurring through the tracheobronchial tree.",
       "citation": "",
       "topic": "Standards, vigilance, alarms, and setup",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -555,7 +555,7 @@
       "answer": [
         0
       ],
-      "explanation": "Variable-pitch tones let you hear desaturation without looking at the monitor.",
+      "explanation": "Pulse-oximeter tone pitch tracks measured oxygen saturation, so a progressive fall in pitch can alert the provider to falling saturation without looking away from the patient or surgical field.",
       "citation": "",
       "topic": "Standards, vigilance, alarms, and setup",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -730,7 +730,7 @@
       "answer": [
         0
       ],
-      "explanation": "A sweep is a methodical scan of patient, equipment, and field.",
+      "explanation": "A fixed sweep prevents attention from remaining anchored on a single abnormal number. Systematically scanning the patient, airway, monitors, machine, IVs, and field reduces omissions and can expose causes such as positioning, equipment, access, or surgical changes.",
       "citation": "",
       "topic": "Standards, vigilance, alarms, and setup",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -1160,7 +1160,7 @@
       "answer": [
         0
       ],
-      "explanation": "Moderate/deep sedation requires qualitative signs and continuous exhaled CO2.",
+      "explanation": "Supplemental oxygen may keep SpO2 normal while propofol-related respiratory depression progresses. Continuous exhaled CO2 plus clinical observation detects decreasing ventilation earlier than waiting for hypoxemia.",
       "citation": "",
       "topic": "Standards, vigilance, alarms, and setup",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
