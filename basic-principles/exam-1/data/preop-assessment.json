@@ -8522,17 +8522,17 @@
       "id": "PRE-349",
       "set": 1,
       "type": "single",
-      "stem": "Using the lecture formula, what is the approximate ideal body weight for a 5-foot-4-inch woman?",
+      "stem": "A patient with obesity has total body weight 120 kg and ideal body weight 60 kg. A drug protocol specifies adjusted body weight = IBW + 0.4(TBW − IBW). What adjusted body weight should be used?",
       "options": [
-        "54.7 kg",
-        "59.3 kg",
-        "50 kg",
-        "57.5 kg"
+        "60 kg",
+        "72 kg",
+        "84 kg",
+        "120 kg"
       ],
       "answer": [
-        0
+        2
       ],
-      "explanation": "64 inches: 45.5 + 2.3 × 4 = 54.7 kg.",
+      "explanation": "Adjusted body weight = 60 + 0.4(120 − 60) = 60 + 24 = 84 kg. This calculation illustrates why some drug protocols use a scalar between ideal and total body weight rather than either value alone.",
       "citation": "",
       "topic": "Obesity, BMI, IBW, and Apfel",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -8940,17 +8940,17 @@
       "id": "PRE-366",
       "set": 1,
       "type": "single",
-      "stem": "A BMI of 27.3 kg/m² falls into which category?",
+      "stem": "A patient with BMI 27.3 kg/m² has hypertension and suspected obstructive sleep apnea. Which statement best interprets the BMI during preoperative assessment?",
       "options": [
-        "Overweight",
-        "Normal weight",
-        "Obesity class I",
-        "Obesity class II"
+        "The BMI is in the overweight range, but comorbidities and functional risk matter more than the category alone",
+        "The BMI establishes ASA III by itself",
+        "The BMI excludes obstructive sleep apnea",
+        "The BMI requires cancellation of elective surgery"
       ],
       "answer": [
         0
       ],
-      "explanation": "Overweight is 25.0–29.9.",
+      "explanation": "A BMI of 27.3 kg/m² is in the overweight range, but BMI category alone does not determine anesthetic risk or ASA class. Preoperative assessment should integrate comorbid disease, OSA risk, functional status, airway findings, and the planned procedure.",
       "citation": "",
       "topic": "Obesity, BMI, IBW, and Apfel",
       "sourceTitle": "Perioperative Assessment & Evaluation",
