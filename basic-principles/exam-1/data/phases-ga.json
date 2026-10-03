@@ -1532,22 +1532,21 @@
       "id": "PHA-063",
       "set": 1,
       "type": "multi",
-      "stem": "A cooperative adult with reliable IV access requires rapid, controllable induction and has significant PONV history. Which four features favor IV over inhalation induction? (Select 4)",
+      "stem": "A cooperative adult with reliable IV access requires rapid, controllable induction and has significant PONV history. Which THREE features favor IV over inhalation induction? (Select 3)",
       "options": [
-        "Less PONV",
-        "No unpleasant odor",
-        "Easy dose titration",
-        "Rapid onset that suits RSI needs",
-        "Maintains spontaneous ventilation with an airway mass",
-        "Preferred when IV access is difficult"
+        "Rapid onset that suits RSI when needed",
+        "No unpleasant inhaled-agent odor",
+        "Lower early PONV when propofol is used for induction",
+        "IV induction drugs are always easier to titrate than inhaled agents",
+        "Maintains spontaneous ventilation more reliably than inhalation induction",
+        "Preferred when IV access is unavailable"
       ],
       "answer": [
         0,
         1,
-        2,
-        3
+        2
       ],
-      "explanation": "IV induction offers rapid onset, suits RSI, causes less PONV, has no odor, and is easily titrated. Inhalational induction preserves spontaneous ventilation and suits patients without IV access.",
+      "explanation": "IV induction is rapid and avoids an inhaled-agent odor; propofol induction also reduces early PONV compared with volatile induction. 'Easy titration' is not a universal advantage of every IV induction drug over inhaled agents.",
       "citation": "",
       "topic": "Induction options, RSI, and cricoid pressure",
       "sourceTitle": "Phases of General Anesthesia",
@@ -1638,17 +1637,17 @@
       "id": "PHA-067",
       "set": 1,
       "type": "single",
-      "stem": "A full-stomach patient loses consciousness and protective airway reflexes during RSI. Which airway-timing goal minimizes the duration of this unprotected interval?",
+      "stem": "A full-stomach patient loses consciousness and protective airway reflexes during RSI. Which airway-timing principle minimizes the unprotected interval?",
       "options": [
-        "Secure a cuffed airway in under about 60 seconds",
-        "Secure the airway within about 3 minutes",
-        "Wait 5 minutes for complete drug equilibration",
-        "Secure the airway within 10 seconds regardless of intubating conditions"
+        "Proceed efficiently to a cuffed tracheal airway once adequate intubating conditions are achieved",
+        "Wait a fixed 3 minutes before laryngoscopy",
+        "Secure the airway within an absolute 60-second deadline regardless of intubating conditions",
+        "Intubate within 10 seconds even if neuromuscular blockade is incomplete"
       ],
       "answer": [
         0
       ],
-      "explanation": "RSI aims to secure the airway in under 60 seconds to limit the unprotected period.",
+      "explanation": "RSI is designed to minimize the interval between loss of protective reflexes and placement of a cuffed tracheal tube. Drug choice and onset determine when adequate intubating conditions occur; a universal sub-60-second deadline should not override safe airway conditions.",
       "citation": "",
       "topic": "Induction options, RSI, and cricoid pressure",
       "sourceTitle": "Phases of General Anesthesia",
@@ -1737,21 +1736,21 @@
       "id": "PHA-071",
       "set": 1,
       "type": "multi",
-      "stem": "Which THREE premedication categories may be appropriate before RSI in an aspiration-risk patient? (Select 3)",
+      "stem": "Which THREE measures may be appropriate adjuncts when preparing an aspiration-risk patient for RSI? (Select 3)",
       "options": [
-        "An anxiolytic",
-        "GI medications to reduce acid and volume",
-        "Atropine if bradycardia is a concern",
-        "Neuromuscular reversal",
-        "An epinephrine infusion",
-        "Magnesium sulfate"
+        "Thorough preoxygenation",
+        "Selected acid-reduction or nonparticulate-antacid therapy when indicated",
+        "Atropine when a patient-specific bradycardia risk warrants it",
+        "Routine anxiolytic premedication for every RSI patient",
+        "Neuromuscular reversal before induction",
+        "An epinephrine infusion"
       ],
       "answer": [
         0,
         1,
         2
       ],
-      "explanation": "RSI premedication can include anxiolytics, GI medications, atropine, and preoxygenation.",
+      "explanation": "RSI preparation prioritizes preoxygenation and an airway/rescue plan. Acid-reduction therapy and atropine can be appropriate in selected patients. Routine anxiolysis is not required and may be undesirable when it worsens airway protection or respiratory status.",
       "citation": "",
       "topic": "Induction options, RSI, and cricoid pressure",
       "sourceTitle": "Phases of General Anesthesia",
@@ -1847,7 +1846,7 @@
       "answer": [
         0
       ],
-      "explanation": "Cricoid pressure compresses the esophagus by pressing the cricoid ring backward against the cervical vertebrae.",
+      "explanation": "Traditional cricoid pressure applies posterior force to the cricoid cartilage. Its ability to prevent aspiration is uncertain, and anatomic studies show the esophagus is not reliably centered behind the cricoid; pressure should be reduced or released if it impairs ventilation or laryngoscopy.",
       "citation": "",
       "topic": "Induction options, RSI, and cricoid pressure",
       "sourceTitle": "Phases of General Anesthesia",
@@ -2181,9 +2180,9 @@
       "id": "PHA-089",
       "set": 1,
       "type": "single",
-      "stem": "After intubation, one exhaled CO2 waveform is seen and then the tracing becomes uncertain. According to the lecture's confirmation approach, what is required before accepting tracheal placement?",
+      "stem": "After intubation, one exhaled CO2 waveform is seen and then the tracing becomes uncertain. What finding provides the strongest confirmation of tracheal placement?",
       "options": [
-        "Sustained capnography for six breaths together with clinical confirmation",
+        "Sustained exhaled CO2 waveforms with ventilation, interpreted with the clinical context",
         "Any single ETCO2 value above zero",
         "Improved SpO2 alone",
         "Fogging inside the ETT alone"
@@ -2191,7 +2190,7 @@
       "answer": [
         0
       ],
-      "explanation": "Confirmation includes sustained capnography for six breaths with bilateral breath sounds, chest rise, and fog.",
+      "explanation": "Continuous waveform capnography showing sustained exhaled CO2 is the most reliable routine confirmation of tracheal intubation when pulmonary blood flow is present. A single CO2 value, tube fogging, or SpO2 alone is insufficient.",
       "citation": "",
       "topic": "Airway management and post-induction complications",
       "sourceTitle": "Phases of General Anesthesia",
@@ -2215,7 +2214,7 @@
       "answer": [
         0
       ],
-      "explanation": "CO2 from swallowed air can appear briefly and then fade. Sustained capnography for six breaths is required to confirm tracheal placement.",
+      "explanation": "Several small CO2 waveforms can appear after esophageal intubation because gas containing CO2 may be present in the stomach, then rapidly disappear. Sustained waveform capnography is required to confirm tracheal placement.",
       "citation": "",
       "topic": "Airway management and post-induction complications",
       "sourceTitle": "Phases of General Anesthesia",
@@ -2263,11 +2262,11 @@
       "id": "PHA-092",
       "set": 1,
       "type": "multi",
-      "stem": "Which THREE findings should be combined to confirm tracheal placement after intubation? (Select 3)",
+      "stem": "Which THREE findings support correct tracheal placement after intubation? (Select 3)",
       "options": [
-        "Bilateral equal breath sounds",
-        "Sustained ETCO2 over several breaths",
+        "Sustained waveform capnography",
         "Bilateral chest rise",
+        "Bilateral breath sounds",
         "A single ETCO2 reading above 5",
         "Improved SpO2 by itself",
         "Gastric distension with ventilation"
@@ -2277,7 +2276,7 @@
         1,
         2
       ],
-      "explanation": "Confirmation uses bilateral breath sounds, sustained ETCO2, bilateral chest rise, and fog. One ETCO2 reading can come from the stomach.",
+      "explanation": "Sustained waveform capnography is the key routine confirmation of tracheal placement and should be interpreted with bilateral chest rise and breath sounds. A single CO2 reading or SpO2 improvement alone is not sufficient.",
       "citation": "",
       "topic": "Airway management and post-induction complications",
       "sourceTitle": "Phases of General Anesthesia",
