@@ -60,3 +60,21 @@
   .mbu-global-nav__cloud [data-cloud-chip-label]{max-width:58px;font-size:11px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Shared mobile foundation: every bootstrapped page inherits safe, touch-friendly small-screen behavior. */
+img,video,canvas,svg{max-width:100%}
+html,body{max-width:100%;overflow-x:hidden}
+@media(max-width:700px){
+  html{-webkit-text-size-adjust:100%}
+  body{min-width:0}
+  .container,.wrap{width:100%!important;max-width:100%!important;padding-left:max(14px,env(safe-area-inset-left))!important;padding-right:max(14px,env(safe-area-inset-right))!important}
+  input,select,textarea{max-width:100%;font-size:16px!important}
+  button,a.btn,a.button,.btn,.button{max-width:100%;touch-action:manipulation}
+  table{max-width:100%}
+  pre,code{overflow-wrap:anywhere}
+  .srna-legal-footer{padding-bottom:max(24px,env(safe-area-inset-bottom))}
+}
+@media(max-width:430px){
+  .container,.wrap{padding-left:max(12px,env(safe-area-inset-left))!important;padding-right:max(12px,env(safe-area-inset-right))!important}
+  .panel{max-width:100%}
+}
