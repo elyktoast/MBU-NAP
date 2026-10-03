@@ -599,7 +599,7 @@
       "id": "PHA-025",
       "set": 1,
       "type": "single",
-      "stem": "A current weight of 65 kg is ignored and an old 90-kg weight is used for rocuronium 1.2 mg/kg. About how much extra drug would be given?",
+      "stem": "A current weight of 65 kg is ignored and an old 90-kg weight is used to calculate a medication ordered at 1.2 mg/kg using total body weight. About how much extra drug would be given?",
       "options": [
         "108 mg versus 78 mg, about 30 mg too much",
         "90 mg versus 65 mg, about 25 mg too much",
@@ -609,7 +609,7 @@
       "answer": [
         0
       ],
-      "explanation": "1.2 × 90 = 108 mg; 1.2 × 65 = 78 mg. Current weight matters because drug dosing depends on it.",
+      "explanation": "For a drug explicitly ordered at 1.2 mg/kg using total body weight, 1.2 × 90 = 108 mg and 1.2 × 65 = 78 mg, a 30-mg difference. The stem specifies the dosing scalar so the calculation does not imply that every rocuronium dose in obesity should use total body weight.",
       "citation": "",
       "topic": "Immediate pre-anesthesia assessment and pre-induction",
       "sourceTitle": "Phases of General Anesthesia",
@@ -1041,15 +1041,15 @@
       "type": "single",
       "stem": "During a prolonged intubation attempt, nasal oxygen at 15 L/min delays desaturation but PaCO2 continues to rise. Which mechanism explains the benefit and limitation?",
       "options": [
-        "Oxygen mass flow supports oxygenation during apnea but does not provide meaningful CO2 clearance",
-        "The cannula provides full alveolar ventilation and removes CO2",
+        "Oxygen mass flow supports oxygenation during apnea, while CO2 clearance remains limited without effective ventilation",
+        "The cannula provides full alveolar ventilation and completely prevents CO2 accumulation",
         "It prevents absorption atelectasis but does not deliver oxygen",
         "It replaces the need for effective preoxygenation"
       ],
       "answer": [
         0
       ],
-      "explanation": "Apneic oxygenation keeps the FRC filled with oxygen by mass flow during apnea, delaying desaturation. It does not remove CO2.",
+      "explanation": "Apneic oxygenation can prolong the time to desaturation by maintaining oxygen delivery during apnea. Carbon dioxide still accumulates because there is no effective alveolar ventilation, although high-flow systems may provide limited CO2 washout.",
       "citation": "",
       "topic": "Preoxygenation and apneic oxygenation",
       "sourceTitle": "Phases of General Anesthesia",
@@ -1195,7 +1195,7 @@
       "type": "single",
       "stem": "High-flow nasal oxygen is used instead of a sealed circuit for preoxygenation. Which limitation makes adequacy of denitrogenation harder to verify?",
       "options": [
-        "Delivered FiO2 and end-tidal O2 are less certain, and gastric insufflation can occur",
+        "End-tidal oxygen is harder to measure reliably without a sealed circuit, so denitrogenation is less directly verified",
         "It cannot deliver high oxygen flows",
         "It requires a sealed face mask",
         "It always produces a lower FiO2 than standard nasal cannula"
@@ -1203,7 +1203,7 @@
       "answer": [
         0
       ],
-      "explanation": "HFNO makes FiO2 and EtO2 hard to measure and can insufflate the stomach.",
+      "explanation": "High-flow nasal oxygen can provide effective preoxygenation in selected patients, but without a sealed circuit end-tidal oxygen is difficult to measure reliably. That makes objective confirmation of denitrogenation less straightforward than with tight-mask circuit preoxygenation.",
       "citation": "",
       "topic": "Preoxygenation and apneic oxygenation",
       "sourceTitle": "Phases of General Anesthesia",
@@ -1217,17 +1217,17 @@
       "id": "PHA-050",
       "set": 1,
       "type": "single",
-      "stem": "A predicted difficult-airway patient can tolerate a tight face mask and will also receive high-flow nasal oxygen. Which strategy best maximizes denitrogenation while preserving apneic oxygenation?",
+      "stem": "A predicted difficult-airway patient tolerates a tight face mask and will also receive high-flow nasal oxygen. Which strategy best combines reliable denitrogenation with oxygen delivery during subsequent apnea?",
       "options": [
-        "Use sealed-circuit preoxygenation and keep nasal oxygen as an adjunct",
+        "Use tight-mask circuit preoxygenation to a measured endpoint and keep nasal oxygen running as an apneic-oxygenation adjunct",
         "Replace mask preoxygenation because high-flow nasal oxygen is always superior",
         "Avoid mask preoxygenation whenever rapid sequence induction is planned",
-        "Treat both techniques as interchangeable once nasal flow is high"
+        "Assume the two techniques are equivalent without assessing preoxygenation quality"
       ],
       "answer": [
         0
       ],
-      "explanation": "Nasal techniques can supplement oxygenation, but a tight mask on the circuit remains more effective for preoxygenation.",
+      "explanation": "A tight mask connected to the anesthesia circuit allows end-tidal oxygen to verify denitrogenation, while nasal oxygen can remain in place to extend oxygen delivery during apnea. HFNO is also an accepted preoxygenation technique in appropriate patients, so neither method should be described as universally superior.",
       "citation": "",
       "topic": "Preoxygenation and apneic oxygenation",
       "sourceTitle": "Phases of General Anesthesia",
