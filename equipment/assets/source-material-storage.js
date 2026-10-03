@@ -13,17 +13,17 @@ async function save(file){
  return {path,name:file.name,size:file.size,type:file.type||'',savedAt:new Date().toISOString()}
 }
 async function request(path,opts={}){
- const s=session(),jwt=s.access_token||'';if(!jwt)throw Error('Sign in to view source materials.');
+ const s=session(),jwt=s.access_token||'';if(!jwt)throw Error('Sign in to view source materials.');if(!cfg.url||!cfg.publishableKey)throw Error('Source material storage is not configured.');
  const res=await fetch(cfg.url+'/storage/v1/'+path,{...opts,headers:{Authorization:'Bearer '+jwt,apikey:cfg.publishableKey,...(opts.headers||{})}});
  const data=await res.json().catch(()=>null);if(!res.ok)throw Error(data?.message||data?.error||'Source material request failed.');return data
 }
 async function list(){
- const s=session(),uid=userId(s.access_token||'');if(!uid)return[];
+ const s=session(),jwt=s.access_token||'',uid=userId(jwt);if(!jwt)return[];if(!uid)throw Error('Could not identify the signed-in account.');
  const rows=await request('object/list/'+BUCKET,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({prefix:uid+'/',limit:100,offset:0,sortBy:{column:'created_at',order:'desc'}})});
  return (rows||[]).map(x=>({name:String(x.name||'').replace(/^\d+-/,''),objectName:x.name,path:uid+'/'+x.name,createdAt:x.created_at,size:Number(x.metadata?.size||0),type:x.metadata?.mimetype||''}))
 }
 async function download(path,name){
- const s=session(),jwt=s.access_token||'';const res=await fetch(cfg.url+'/storage/v1/object/authenticated/'+BUCKET+'/'+path,{headers:{Authorization:'Bearer '+jwt,apikey:cfg.publishableKey}});
+ const s=session(),jwt=s.access_token||'';if(!jwt)throw Error('Sign in to download source material.');if(!cfg.url||!cfg.publishableKey)throw Error('Source material storage is not configured.');const res=await fetch(cfg.url+'/storage/v1/object/authenticated/'+BUCKET+'/'+path,{headers:{Authorization:'Bearer '+jwt,apikey:cfg.publishableKey}});
  if(!res.ok)throw Error('Could not download source material.');const blob=await res.blob(),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name||'source-material';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)
 }
 async function remove(path){await request('object/'+BUCKET+'/'+path,{method:'DELETE'});}
