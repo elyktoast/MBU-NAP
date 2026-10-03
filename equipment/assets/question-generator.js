@@ -5,7 +5,9 @@ const now=()=>Date.now();
 const safeJSON=(raw,fallback)=>{try{return JSON.parse(raw)??fallback}catch{return fallback}};
 const id=()=>{try{return crypto.randomUUID()}catch{return 'gen-'+now().toString(36)+'-'+Math.random().toString(36).slice(2)}};
 const blank=()=>({schema:SCHEMA,updatedAt:0,drafts:[],approved:[]});
+const numericOption=s=>/^\s*[<>≤≥~≈]?\s*\d+(?:\.\d+)?(?:\s*[-–]\s*\d+(?:\.\d+)?)?\s*(?:%|mg(?:\/kg)?|mcg(?:\/kg)?|g|mL|L|min|minutes?|sec|seconds?|h|hr|hours?)?\s*$/i.test(String(s||''));
 function shuffleOptions(options,answer){
+  if(options.length===4&&options.every(numericOption))return{options:[...options],answer:[...answer]};
   const rows=options.map((text,i)=>({text,i}));
   for(let i=rows.length-1;i>0;i--){const a=new Uint32Array(1);crypto.getRandomValues(a);const j=a[0]%(i+1);[rows[i],rows[j]]=[rows[j],rows[i]]}
   const keyed=new Set(answer),nextAnswer=[];rows.forEach((row,i)=>{if(keyed.has(row.i))nextAnswer.push(i)});
