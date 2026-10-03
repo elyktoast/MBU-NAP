@@ -1528,7 +1528,7 @@
         1,
         2
       ],
-      "explanation": "Low doses (lidocaine 30–40 mg, bupivacaine 3–10 mg, ropivacaine 5–10 mg) with a lipophilic opioid speed recovery.",
+      "explanation": "Low-dose intrathecal local anesthetic can shorten motor recovery for ambulatory procedures. Agent selection also matters: intrathecal lidocaine has a recognized association with transient neurologic symptoms, so contemporary practice often favors alternatives when appropriate rather than treating these dose examples as interchangeable.",
       "citation": "",
       "topic": "Differentials, routes, and neuraxial analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -2139,20 +2139,21 @@
       "id": "PAIN-087",
       "set": 1,
       "type": "multi",
-      "stem": "Which are the three critical principles for successful preventive analgesia? (Select 2)",
+      "stem": "Which THREE features are central to a preventive analgesic strategy intended to limit sustained perioperative nociceptive input? (Select 3)",
       "options": [
-        "Depth adequate to block all nociceptive input",
-        "Extent covers the entire surgical field",
-        "It must rely on a single opioid infusion",
-        "Only one drug should be used",
-        "It must begin after incision",
-        "It must be given only after emergence"
+        "Adequate intensity to suppress clinically important nociceptive input",
+        "Coverage of the relevant surgical field/mechanisms",
+        "Duration that extends across the period of significant nociceptive input",
+        "Reliance on a single opioid infusion",
+        "Initiation only after severe postoperative pain develops",
+        "Use of only one drug class"
       ],
       "answer": [
         0,
-        1
+        1,
+        2
       ],
-      "explanation": "Preventive analgesia needs adequate depth to block nociceptive input and an extent covering the whole field, and its duration must span surgery and the postoperative period.",
+      "explanation": "Preventive analgesia is broader than simply giving a drug before incision. The strategy should provide adequate analgesic intensity and coverage and persist through the clinically important period of perioperative nociceptive input.",
       "citation": "",
       "topic": "Multimodal analgesia, drug classes, and preventive analgesia",
       "sourceTitle": "Perioperative Pain Management",
@@ -2289,7 +2290,7 @@
       "id": "PAIN-093",
       "set": 1,
       "type": "single",
-      "stem": "A child who is a CYP2D6 ultrarapid metabolizer receives codeine after a tonsillectomy and becomes apneic. What explains this?",
+      "stem": "Why is codeine unsafe after tonsillectomy/adenoidectomy in children, particularly when CYP2D6 activity is high?",
       "options": [
         "Toxic morphine levels",
         "Codeine accumulates without conversion",
@@ -2299,7 +2300,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ultrarapid metabolizers convert codeine to morphine quickly, producing toxic levels and respiratory depression.",
+      "explanation": "CYP2D6 converts codeine to morphine. Ultrarapid conversion can produce unexpectedly high morphine exposure and life-threatening respiratory depression. Codeine should not be used for post-tonsillectomy/adenoidectomy pain in children.",
       "citation": "",
       "topic": "Pharmacogenetics and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -2313,17 +2314,17 @@
       "id": "PAIN-094",
       "set": 1,
       "type": "single",
-      "stem": "In a clinic serving 200 white patients, about how many would you expect to be poor CYP2D6 metabolizers?",
+      "stem": "Why is a patient's self-identified race or ethnicity an unreliable substitute for CYP2D6 phenotype when considering codeine or tramadol?",
       "options": [
-        "About 16",
-        "About 2",
-        "About 40",
-        "About 80"
+        "CYP2D6 activity varies substantially within populations, so genotype/phenotype cannot be assigned reliably from race or ethnicity",
+        "Every member of a racial group has the same CYP2D6 phenotype",
+        "Race determines opioid receptor density with clinical certainty",
+        "CYP2D6 phenotype is determined only by kidney function"
       ],
       "answer": [
         0
       ],
-      "explanation": "About 8% of white populations are poor CYP2D6 metabolizers: 0.08 × 200 = 16.",
+      "explanation": "CYP2D6 allele frequencies differ among populations, but there is substantial within-population variation. Race or ethnicity should not be used to assign an individual patient's metabolizer phenotype.",
       "citation": "",
       "topic": "Pharmacogenetics and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -2337,17 +2338,17 @@
       "id": "PAIN-095",
       "set": 1,
       "type": "single",
-      "stem": "When anticipating inadequate activation of CYP2D6-dependent opioid prodrugs, which population in the cited material has the LOWEST frequency of poor CYP2D6 metabolizers?",
+      "stem": "A patient has an unknown CYP2D6 phenotype and needs postoperative analgesia. Which principle is safest when considering codeine or tramadol?",
       "options": [
-        "Asian populations",
-        "White populations",
-        "African populations",
-        "Hispanic populations"
+        "Do not infer metabolizer status from race or ethnicity; consider drug-specific safety guidance, interactions, and patient factors",
+        "Assume phenotype from the patient's racial group",
+        "Use codeine because CYP2D6 variation does not affect it",
+        "Use tramadol because CYP2D6 variation affects only codeine"
       ],
       "answer": [
         0
       ],
-      "explanation": "Poor CYP2D6 metabolism is least common in Asian populations.",
+      "explanation": "Both codeine and tramadol are affected by CYP2D6 activity. Individual phenotype cannot be reliably inferred from race or ethnicity, and drug-specific contraindications and interaction risks remain important.",
       "citation": "",
       "topic": "Pharmacogenetics and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -2435,22 +2436,18 @@
     {
       "id": "PAIN-099",
       "set": 1,
-      "type": "multi",
-      "stem": "Methadone is affected by genetic variation in which components? (Select 3)",
+      "type": "single",
+      "stem": "Which statement best describes methadone pharmacokinetics when planning perioperative dosing?",
       "options": [
-        "CYP2D6",
-        "OPRM1 mu receptor",
-        "ABCB1 transporter",
-        "COX-2 enzyme",
-        "NMDA receptor gene only",
-        "UGT1A1 only"
+        "Its metabolism is variable and involves multiple CYP pathways, with CYP2B6 playing an important role; its long and variable half-life requires careful titration",
+        "CYP2D6 alone determines methadone clearance",
+        "Methadone is eliminated unchanged only by the kidneys",
+        "Its half-life is short and predictable, so accumulation is negligible"
       ],
       "answer": [
-        0,
-        1,
-        2
+        0
       ],
-      "explanation": "Methadone varies with CYP2D6, OPRM1, and ABCB1 polymorphisms.",
+      "explanation": "Methadone has complex, variable metabolism involving multiple CYP enzymes, with CYP2B6 an important determinant. Its long and variable elimination half-life and potential for accumulation make careful individualized dosing essential; CYP2D6 should not be taught as the sole or dominant clearance pathway.",
       "citation": "",
       "topic": "Pharmacogenetics and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -2464,17 +2461,17 @@
       "id": "PAIN-100",
       "set": 1,
       "type": "single",
-      "stem": "Two otherwise similar patients undergo the same laparoscopic procedure and report comparable postoperative pain. Based on the source's sex-related pain findings, which pattern is expected on average?",
+      "stem": "Two patients undergo the same procedure but report different pain intensity and opioid effects. Which principle should guide treatment?",
       "options": [
-        "Women tend to report greater pain and require more opioid for comparable relief",
-        "Women tend to report less pain and require less opioid",
-        "Sex does not affect reported pain or opioid requirement",
-        "Women require more opioid despite consistently reporting less pain"
+        "Assess each patient's pain, function, prior opioid exposure, comorbidities, and response rather than predicting dose from sex alone",
+        "Use a fixed opioid dose based on sex",
+        "Assume identical procedures produce identical analgesic requirements",
+        "Use vital signs instead of patient report to avoid biologic variability"
       ],
       "answer": [
         0
       ],
-      "explanation": "Women generally experience more pain and require more opioid for similar relief.",
+      "explanation": "Pain experience and opioid response vary widely among individuals. Sex-related group differences have been reported in research, but they are not sufficiently deterministic to replace individualized assessment and titration.",
       "citation": "",
       "topic": "Pharmacogenetics and planning",
       "sourceTitle": "Perioperative Pain Management",
