@@ -30,7 +30,7 @@ async function start(){
   await loadScript('supabase-config.js');
   await loadScript('supabase-sync.js');
   if(window.MBUAuthReady&&typeof window.MBUAuthReady.then==='function')await window.MBUAuthReady;
-  const ctx=window.MBU_CONTEXT||{},protectedCourse=!!ctx.courseId;
+  const protectedCourse=!!window.MBU_CONTEXT?.courseId;
   if(protectedCourse){
     const info=window.MBUSupabase?.status?.()||{};
     if(!(info.signedIn&&info.legalAccepted===true&&info.accessStatus==='active')&&!info.recoveryMode){
