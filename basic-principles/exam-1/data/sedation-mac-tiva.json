@@ -8571,7 +8571,7 @@
       "answer": [
         0
       ],
-      "explanation": "Respiratory depression and obstruction are central, but aspiration, laryngospasm, cardiovascular instability, LAST, and fire also need planning.",
+      "explanation": "A complete MAC rescue plan must extend beyond routine hypoventilation and obstruction. Aspiration, laryngospasm, hemodynamic collapse, local anesthetic systemic toxicity when local anesthetics are used, and surgical fire in oxygen-enriched fields can all require immediate, rehearsed intervention.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8595,7 +8595,7 @@
       "answer": [
         0
       ],
-      "explanation": "Partial obstruction often responds to airway maneuvers. Increasing sedation worsens obstruction.",
+      "explanation": "Snoring and paradoxical chest movement indicate inspiratory effort against a partially obstructed upper airway. Head repositioning and jaw thrust directly relieve pharyngeal collapse and are preferable to increasing sedative depth, which can further reduce airway tone.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8619,7 +8619,7 @@
       "answer": [
         0
       ],
-      "explanation": "If airway maneuvers fail, provide positive-pressure ventilation and be ready for advanced airway management.",
+      "explanation": "A disappearing capnogram after propofol may represent apnea, complete obstruction, disconnection, or sampling failure, so the patient must be assessed immediately. If basic airway maneuvers do not restore effective ventilation, positive-pressure ventilation and escalation to an airway adjunct or advanced airway take priority.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8643,7 +8643,7 @@
       "answer": [
         0
       ],
-      "explanation": "Cardiovascular instability during MAC comes from anesthetic drugs or the patient's underlying disease.",
+      "explanation": "Propofol decreases vascular tone and can depress myocardial performance. A patient with severe cardiomyopathy has limited ability to compensate for reductions in preload, afterload, or contractility, making otherwise routine doses capable of causing substantial hypotension.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8667,7 +8667,7 @@
       "answer": [
         0
       ],
-      "explanation": "Fire risk is highest in oxygen-enriched head and neck procedures with cautery.",
+      "explanation": "Head-and-neck procedures can place an ignition source such as electrocautery close to combustible material while open oxygen accumulates beneath drapes. This combination creates a particularly high surgical-fire risk and requires active control of oxygen enrichment and ignition timing.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8691,7 +8691,7 @@
       "answer": [
         0
       ],
-      "explanation": "IV lidocaine plus local infiltration raises cumulative dose and LAST risk.",
+      "explanation": "Systemic toxicity depends on the total local-anesthetic exposure, absorption rate, injection site, and patient factors rather than whether the drug was given intravenously or infiltrated locally. Combining IV lidocaine with a large field block therefore requires tracking cumulative dose and monitoring for neurologic and cardiovascular signs of LAST.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8715,7 +8715,7 @@
       "answer": [
         0
       ],
-      "explanation": "TIVA is GA delivered only with IV agents, without any inhaled anesthetic.",
+      "explanation": "Total intravenous anesthesia means general anesthesia maintained entirely with intravenous anesthetic drugs rather than volatile anesthetics. Propofol can provide hypnosis and remifentanil analgesia/antinociception, making the combination a classic balanced TIVA technique.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8743,7 +8743,7 @@
         1,
         2
       ],
-      "explanation": "TIVA reduces PONV, avoids MH triggers, and supports neuromonitoring. It lacks end-tidal agent measurement and depends on IV access.",
+      "explanation": "Propofol-based TIVA avoids volatile malignant-hyperthermia triggers, generally lowers PONV risk compared with volatile maintenance, and interferes less with SSEP/MEP monitoring. These benefits must be balanced against dependence on reliable IV delivery and the lack of an end-tidal hypnotic concentration.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8815,7 +8815,7 @@
       "answer": [
         0
       ],
-      "explanation": "Propofol with remifentanil or another opioid is the common TIVA combination.",
+      "explanation": "Balanced TIVA separates major anesthetic components: propofol provides titratable hypnosis and amnesia, while remifentanil supplies rapidly adjustable opioid analgesia/antinociception. Their short, titratable effects can facilitate rapid emergence when appropriately dosed.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8839,7 +8839,7 @@
       "answer": [
         0
       ],
-      "explanation": "Remifentanil wears off within minutes and propofol has no analgesia, so a longer-acting analgesic must be given before emergence.",
+      "explanation": "Remifentanil's effect dissipates within minutes after stopping an infusion, and propofol provides little intrinsic analgesia. Without a longer-acting analgesic strategy established before emergence, the patient can awaken rapidly with severe untreated postoperative pain.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8863,7 +8863,7 @@
       "answer": [
         0
       ],
-      "explanation": "Pumps must be checked for disconnection, occlusion, or infiltration. Loss of delivery causes lightening and awareness risk.",
+      "explanation": "An occlusion alarm indicates that programmed pump delivery may not be reaching the patient. Rising processed-EEG values and heart rate are consistent with decreasing anesthetic effect, so the infusion path and IV access should be restored promptly to reduce awareness risk.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8887,7 +8887,7 @@
       "answer": [
         0
       ],
-      "explanation": "A dedicated, visible line with minimal dead space ensures reliable delivery. Infiltration or disconnection under the drapes can cause awareness.",
+      "explanation": "TIVA safety depends on uninterrupted drug delivery because there is no exhaled anesthetic concentration to confirm hypnotic administration. A dedicated line with visible connections and minimal dead space makes infiltration, disconnection, occlusion, and delayed dose changes easier to detect.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8911,7 +8911,7 @@
       "answer": [
         0
       ],
-      "explanation": "Pumps can run normally while drug never reaches the patient. Check the line for disconnection, occlusion, or infiltration first.",
+      "explanation": "A pump can display a normal rate even when the catheter has infiltrated, tubing is disconnected, a clamp is closed, or flow is diverted. An unexpected rise in processed EEG should therefore trigger inspection of the entire pump-to-patient pathway before simply increasing the programmed dose.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8959,7 +8959,7 @@
       "answer": [
         0
       ],
-      "explanation": "SSEPs monitor sensory pathways; MEPs monitor motor pathways.",
+      "explanation": "Somatosensory evoked potentials assess conduction through sensory pathways from peripheral stimulation toward the cortex, whereas motor evoked potentials assess descending motor pathways. An isolated SSEP abnormality therefore specifically implicates the monitored sensory system, although technical and physiologic causes must also be considered.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8983,7 +8983,7 @@
       "answer": [
         0
       ],
-      "explanation": "MEPs assess motor pathways and are suppressed by volatile agents and neuromuscular blockade.",
+      "explanation": "Muscle-recorded MEPs require transmission through the neuromuscular junction to generate a measurable muscle response. Rocuronium blocks that final pathway and can abolish MEPs, while SSEPs do not depend on neuromuscular transmission and may remain intact.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9007,7 +9007,7 @@
       "answer": [
         0
       ],
-      "explanation": "Volatile agents depress SSEPs by decreasing amplitude and increasing latency.",
+      "explanation": "Volatile anesthetics depress cortical and subcortical evoked responses in a dose-dependent fashion, typically reducing SSEP amplitude and prolonging latency. Large or abrupt concentration changes can therefore mimic neurologic deterioration.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9031,7 +9031,7 @@
       "answer": [
         0
       ],
-      "explanation": "Low volatile concentrations, about 0.25 MAC, may be used if MEP signals stay adequate. Higher concentrations depress MEPs.",
+      "explanation": "Volatile agents suppress evoked potentials in a concentration-dependent manner, especially MEPs. If one must be used, maintaining the lowest stable concentration that still permits adequate anesthesia and interpretable signals is preferable to high concentrations or abrupt changes.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9055,7 +9055,7 @@
       "answer": [
         0
       ],
-      "explanation": "NMB should be avoided or carefully titrated after intubation when muscle-recorded MEPs are monitored.",
+      "explanation": "Muscle-recorded MEPs require functional neuromuscular transmission, so additional paralysis can reduce or abolish the signal independent of spinal-cord function. Neuromuscular blockade after intubation must therefore be minimized or deliberately titrated in coordination with the monitoring team.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9079,7 +9079,7 @@
       "answer": [
         0
       ],
-      "explanation": "The clinical pearl says abrupt changes in anesthetic concentration can alter SSEP/MEP signals and mimic neurologic injury.",
+      "explanation": "Evoked potentials respond not only to neural injury but also to anesthetic concentration, blood pressure, oxygenation, hemoglobin, temperature, and technical factors. A deterioration immediately following a large anesthetic change should therefore trigger correction/review of that change while surgical and other causes are assessed.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9108,7 +9108,7 @@
         2,
         3
       ],
-      "explanation": "Stable BP, hemoglobin, oxygenation, temperature, and consistent depth all support reliable evoked potentials.",
+      "explanation": "Evoked-potential quality depends on adequate neural perfusion and physiologic stability. Blood pressure, oxygenation, hemoglobin, temperature, and anesthetic depth should be kept stable and reviewed promptly when signals deteriorate because abnormalities in any of these can mimic or worsen neurologic compromise.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9132,7 +9132,7 @@
       "answer": [
         0
       ],
-      "explanation": "Propofol-opioid TIVA interferes less with SSEPs and MEPs than volatile agents.",
+      "explanation": "Propofol-opioid TIVA generally depresses SSEP and especially MEP signals less than clinically significant volatile anesthetic concentrations. It is therefore commonly chosen when signal quality is critical, while stable dosing and adequate physiologic perfusion remain essential.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9156,7 +9156,7 @@
       "answer": [
         0
       ],
-      "explanation": "A BIS under 20 is too deep. Reduce the hypnotic and treat hypotension.",
+      "explanation": "Marked burst suppression suggests profound cortical depression, and concurrent hypotension increases concern that anesthetic effect is excessive for the patient's current state. The hypnotic should be reassessed and reduced when appropriate while perfusion is supported; the processed-EEG number should not be treated without clinical context.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9180,7 +9180,7 @@
       "answer": [
         0
       ],
-      "explanation": "BIS 90–100 is awake; 40–60 is the general anesthesia target.",
+      "explanation": "Processed-EEG indices near 90–100 are generally consistent with wakefulness, while lower values accompany increasing hypnotic effect. The index is an adjunct and can be affected by artifact, but a calm awake patient near 95 is an expected baseline finding.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9204,7 +9204,7 @@
       "answer": [
         0
       ],
-      "explanation": "Infiltration interrupts drug delivery and causes light anesthesia. Restore reliable IV access first.",
+      "explanation": "Swelling and coolness at the IV site suggest infiltration, meaning the programmed propofol may not be entering the circulation. Rising processed EEG reinforces concern for inadequate hypnosis, so reliable IV delivery must be restored rather than increasing infusion through the compromised catheter.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9252,7 +9252,7 @@
       "answer": [
         0
       ],
-      "explanation": "Without end-tidal agent monitoring, TIVA delivery failures may go undetected.",
+      "explanation": "Volatile anesthesia provides an end-tidal anesthetic concentration that helps confirm delivery to the lungs. Routine TIVA lacks an analogous direct delivery measurement, so pump or IV failure can interrupt hypnosis despite an apparently normal programmed rate.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9280,7 +9280,7 @@
         1,
         2
       ],
-      "explanation": "Accurate programming, visible dedicated lines, and checks for disconnection, occlusion, or infiltration prevent awareness or overdose during TIVA.",
+      "explanation": "Awareness risk during TIVA is reduced by verifying pump programming, using a dedicated observable infusion pathway, and repeatedly checking the IV and tubing for infiltration, disconnection, occlusion, or unintended flow changes. These safeguards are especially important when the arms and IV sites become inaccessible.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9304,7 +9304,7 @@
       "answer": [
         0
       ],
-      "explanation": "TIVA avoids triggering agents and is useful when inhaled anesthetics are contraindicated, such as MH susceptibility.",
+      "explanation": "Volatile anesthetics and succinylcholine are malignant-hyperthermia triggers. A properly prepared trigger-free anesthetic using intravenous agents avoids volatile maintenance and is therefore appropriate for an MH-susceptible patient.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9328,7 +9328,7 @@
       "answer": [
         0
       ],
-      "explanation": "MEPs are recorded from muscle, so neuromuscular blockade abolishes them; SSEPs are unaffected by NMB.",
+      "explanation": "Rocuronium prevents acetylcholine-mediated neuromuscular transmission, so a muscle-recorded MEP cannot generate its final muscle response even if the central motor pathway is intact. SSEPs bypass the neuromuscular junction and can remain stable.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9352,7 +9352,7 @@
       "answer": [
         0
       ],
-      "explanation": "Signal changes require a systematic check of surgical, anesthetic, physiologic, and technical causes.",
+      "explanation": "An MEP change can arise from surgical injury, anesthetic changes, hypotension or other physiologic disturbance, neuromuscular blockade, or technical failure. The safest response is rapid coordinated evaluation of all categories rather than assuming a single cause.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9376,7 +9376,7 @@
       "answer": [
         0
       ],
-      "explanation": "TIVA with propofol reduces PONV compared with volatile anesthesia.",
+      "explanation": "Propofol-based TIVA is associated with less postoperative nausea and vomiting than volatile-anesthetic maintenance, making it useful in patients with high baseline PONV risk. The benefit does not eliminate the need for multimodal prophylaxis when overall risk remains high.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9400,7 +9400,7 @@
       "answer": [
         0
       ],
-      "explanation": "BIS below 20 is too deep. Reduce hypnotic dose while maintaining stability.",
+      "explanation": "A very low processed-EEG value with burst suppression suggests profound hypnotic effect, while hypotension may reflect clinically important anesthetic depression. The correct response is to reassess the patient, artifact, and dosing and reduce excessive hypnotic delivery when appropriate rather than targeting the monitor number alone.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9448,7 +9448,7 @@
       "answer": [
         0
       ],
-      "explanation": "A second IV gives backup access if the TIVA line fails, preventing awareness.",
+      "explanation": "Because TIVA depends entirely on intravenous drug delivery, failure of the sole infusion line can abruptly interrupt hypnosis and also remove access for emergency medications. Backup IV access provides an alternate route when loss of the primary line would be difficult to correct quickly.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9472,7 +9472,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dead space in the line delays delivery and the response to rate changes.",
+      "explanation": "Drug already present in IV tubing must traverse the line's dead space before a new pump rate or concentration reaches the circulation. Large dead space therefore creates a delay between a programming change and its clinical effect, which can lead to premature repeat adjustments or overshoot.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9499,7 +9499,7 @@
         0,
         1
       ],
-      "explanation": "SSEPs assess sensory pathways and MEPs assess motor pathways. Volatiles reduce amplitude and increase latency, and MEPs are sensitive to NMB.",
+      "explanation": "SSEPs evaluate ascending sensory conduction, whereas muscle-recorded MEPs evaluate descending motor pathways and require intact neuromuscular transmission. Volatile anesthetics can depress both modalities, while neuromuscular blockade particularly compromises muscle-recorded MEPs.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9523,7 +9523,7 @@
       "answer": [
         0
       ],
-      "explanation": "Propofol-opioid TIVA with little or no NMB best preserves MEP signals.",
+      "explanation": "Propofol-opioid TIVA generally preserves MEPs better than substantial volatile anesthesia, and avoiding or minimizing neuromuscular blockade preserves the muscle response required for recording. Stable anesthetic and physiologic conditions further improve interpretability.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9547,7 +9547,7 @@
       "answer": [
         0
       ],
-      "explanation": "Stable anesthetic concentrations keep neuromonitoring signals stable and interpretable.",
+      "explanation": "Evoked-potential amplitude and latency can change with anesthetic depth. Frequent large propofol adjustments introduce global signal variability that can obscure or mimic a true neurologic change, so a stable anesthetic is preferred during critical monitoring periods.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9571,7 +9571,7 @@
       "answer": [
         0
       ],
-      "explanation": "Propofol-opioid TIVA minimizes interference with SSEP and MEP monitoring compared with volatile agents.",
+      "explanation": "Propofol-opioid TIVA generally causes less suppression of SSEP and MEP signals than clinically significant volatile concentrations. This improves signal reliability during procedures in which rapid detection of neural pathway compromise is important.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9670,7 +9670,7 @@
       "answer": [
         0
       ],
-      "explanation": "TIVA is GA with IV agents only.",
+      "explanation": "TIVA refers to general anesthesia maintained using intravenous agents without volatile anesthetic maintenance. Nitrous oxide or volatile supplementation means the technique is no longer strictly total intravenous anesthesia.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9694,7 +9694,7 @@
       "answer": [
         0
       ],
-      "explanation": "Volatiles decrease SSEP amplitude and increase latency. TIVA is preferred for neuromonitoring.",
+      "explanation": "Volatile anesthetics suppress SSEPs in a dose-dependent manner, typically decreasing amplitude and increasing latency. At approximately 1 MAC, that depression can materially degrade monitoring quality, which is why propofol-based TIVA is often preferred when robust signals are needed.",
       "citation": "",
       "topic": "TIVA and neuromonitoring",
       "sourceTitle": "Sedation, MAC & TIVA",
