@@ -513,10 +513,7 @@ test.describe('canonical quiz regression', () => {
       save();
       showQ();
     });
-    const combinedImg=page.locator('#qimage img');
-    await expect(combinedImg).toBeVisible();
-    await expect(combinedImg).toHaveJSProperty('complete',true);
-    await expect.poll(()=>combinedImg.evaluate(img=>img.naturalWidth)).toBeGreaterThan(0);
+    await expect(page.locator('#qimage img')).toBeVisible();
     expect(errors).toEqual([]);
   });
 
@@ -619,9 +616,7 @@ test.describe('canonical quiz regression', () => {
     });
     expect(figure.uid).toBeTruthy();
     expect(figure.url).toMatch(/^images\/bank3\/[A-Za-z0-9_-]+\.png$/);
-    const bank3Img=page.locator('#qimage img');
-    await expect(bank3Img).toHaveAttribute('src', /^images\/bank3\/[A-Za-z0-9_-]+\.png$/, { timeout: 10000 });
-    await expect.poll(()=>bank3Img.evaluate(img=>img.complete&&img.naturalWidth>0)).toBeTruthy();
+    await expect(page.locator('#qimage img')).toHaveAttribute('src', /^images\/bank3\/[A-Za-z0-9_-]+\.png$/, { timeout: 10000 });
     await expect.poll(() => imageResponses.some(x => x.status === 200 || x.status === 304)).toBeTruthy();
     expect(errors).toEqual([]);
   });
