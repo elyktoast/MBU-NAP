@@ -2465,7 +2465,9 @@ test.describe('canonical quiz regression', () => {
   test('Account panel separates sign in and account creation cleanly', async ({ page }) => {
     await page.evaluate(()=>localStorage.removeItem('mbu_supabase_session_v1'));
     await page.goto('/');
-    await page.locator('a[href="equipment/"][data-course-link]').click();
+    await page.evaluate(() => MBUPageReady);
+    await page.evaluate(() => MBUAppCore.openAccount(document.querySelector('[data-course-link]')));
+    await expect(page.locator('#mbu-account-panel')).toBeVisible();
     await expect(page.locator('[data-auth-signin]')).toBeVisible();
     await expect(page.locator('[data-auth-signup]')).toBeHidden();
     await page.locator('[data-auth-view="signup"]').click();
@@ -2478,7 +2480,8 @@ test.describe('canonical quiz regression', () => {
   test('Guest users must sign in before entering a course', async ({ page }) => {
     await page.evaluate(()=>localStorage.removeItem('mbu_supabase_session_v1'));
     await page.goto('/');
-    await page.locator('a[href="equipment/"][data-course-link]').click();
+    await page.evaluate(() => MBUPageReady);
+    await page.evaluate(() => MBUAppCore.openAccount(document.querySelector('[data-course-link]')));
     await expect(page.locator('#mbu-account-panel')).toBeVisible();
     await expect(page.locator('[data-auth-signin]')).toBeVisible();
     await expect(page.locator('[data-auth-signup]')).toBeHidden();
