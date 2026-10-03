@@ -7351,7 +7351,7 @@
       "answer": [
         0
       ],
-      "explanation": "Remimazolam is rapidly hydrolyzed mainly by carboxylesterase 1 to an inactive metabolite. Renal impairment has relatively little effect on parent-drug pharmacokinetics, but severe hepatic impairment can prolong its effect, so 'organ-independent' metabolism should not be interpreted as complete independence from liver function.",
+      "explanation": "Remimazolam is an ultra-short-acting benzodiazepine hydrolyzed primarily by carboxylesterase 1 to a metabolite with very low pharmacologic activity. Renal impairment has relatively little effect on parent-drug disposition, although severe hepatic impairment can reduce clearance and prolong recovery.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7447,7 +7447,7 @@
       "answer": [
         0
       ],
-      "explanation": "Remimazolam offers hemodynamic stability and predictable recovery from esterase metabolism. Hypotension and respiratory depression remain possible, so titrate carefully.",
+      "explanation": "Remimazolam's rapid carboxylesterase-mediated hydrolysis can limit prolonged accumulation and support predictable recovery compared with conventional longer-acting benzodiazepines. It can still cause hypotension and respiratory depression, especially with other depressants, so frailty still warrants careful titration.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7474,7 +7474,7 @@
         0,
         1
       ],
-      "explanation": "Remimazolam enhances GABA-A activity and is reversed by flumazenil. Esterase metabolism gives a short offset; it provides no analgesia and can depress breathing.",
+      "explanation": "Remimazolam is a benzodiazepine positive modulator at GABA-A receptors and its sedative effect can be antagonized by flumazenil. It does not provide analgesia, and despite its short offset it can still produce respiratory depression, particularly with opioids.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7498,7 +7498,7 @@
       "answer": [
         0
       ],
-      "explanation": "Midazolam can prolong recovery, especially in older patients; remimazolam has a short, predictable offset.",
+      "explanation": "Midazolam depends substantially on hepatic CYP3A metabolism and has active metabolites whose effects can become prolonged in older or organ-impaired patients. Remimazolam is rapidly hydrolyzed by carboxylesterase 1, generally producing a shorter, more predictable offset, although severe hepatic impairment can still slow its clearance.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7546,7 +7546,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ketamine provides dissociative sedation and analgesia, supports BP, and usually preserves ventilation.",
+      "explanation": "Ketamine provides both analgesia and dissociative sedation and usually stimulates sympathetic tone, tending to preserve blood pressure better than propofol in a patient with limited hemodynamic reserve. Spontaneous ventilation is often maintained, but apnea, obstruction, vomiting, secretions, and laryngospasm remain possible.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7574,7 +7574,7 @@
         1,
         2
       ],
-      "explanation": "Ketamine considerations include emergence reactions, hypersalivation, hypertension, and possible airway complications.",
+      "explanation": "Ketamine commonly produces sympathetic stimulation, increased salivation, and psychoperceptual emergence phenomena. Its relative preservation of spontaneous ventilation does not eliminate airway complications, including laryngospasm, so suction and airway rescue capability remain necessary.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7622,7 +7622,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ketofol combines ketamine's analgesia and sympathetic support with propofol's hypnosis, balancing their side effects.",
+      "explanation": "The drugs complement rather than duplicate each other: ketamine supplies analgesia and sympathetic support, while propofol supplies rapidly titratable hypnosis and can blunt some ketamine-related emergence effects. The combination still requires careful titration because respiratory and hemodynamic complications remain possible.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7646,7 +7646,7 @@
       "answer": [
         0
       ],
-      "explanation": "Remifentanil is highly titratable and short-acting but causes significant respiratory depression.",
+      "explanation": "Remifentanil is rapidly metabolized by nonspecific blood and tissue esterases, giving it a very short context-sensitive half-time and allowing rapid adjustment to brief painful stimulation. That same potency can cause abrupt respiratory depression or apnea, so ventilation must be closely monitored.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7670,7 +7670,7 @@
       "answer": [
         0
       ],
-      "explanation": "Rapid or high-dose fentanyl can cause chest wall rigidity, treated with neuromuscular blockade.",
+      "explanation": "Rapid administration of a large fentanyl dose can cause marked truncal and chest-wall rigidity that makes ventilation difficult even when the upper airway is patent. Management centers on restoring ventilation, with opioid antagonism and/or neuromuscular blockade considered according to severity and the clinical setting.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7747,7 +7747,7 @@
         2,
         3
       ],
-      "explanation": "Opioids and ketamine provide analgesia. Propofol and benzodiazepines do not.",
+      "explanation": "Fentanyl and remifentanil are opioid analgesics, while ketamine provides substantial analgesia through NMDA-receptor antagonism; other analgesic adjuncts may also contribute depending on the listed choices. Propofol and benzodiazepines provide hypnosis, sedation, or amnesia but do not supply reliable procedural analgesia.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7891,7 +7891,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dexmedetomidine has a slower onset, so loading should start earlier.",
+      "explanation": "Dexmedetomidine generally has a slower onset than propofol, so beginning a loading infusion only minutes before stimulation may not yet produce the desired sedative effect. This slower onset must be balanced against its advantage of relatively limited respiratory depression.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7915,7 +7915,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dexmedetomidine has minimal respiratory depression but slower onset.",
+      "explanation": "Dexmedetomidine produces cooperative sedation through central alpha-2 agonism and usually depresses ventilation less than propofol, benzodiazepine-opioid combinations, or potent opioids. Its slower onset and potential for bradycardia and hypotension remain important tradeoffs.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7939,7 +7939,7 @@
       "answer": [
         0
       ],
-      "explanation": "Hypersalivation is a listed ketamine adverse effect.",
+      "explanation": "Ketamine can increase salivary and tracheobronchial secretions rather than suppress them. Copious secretions can obstruct visualization and contribute to airway irritation, so suction and airway-rescue readiness are important.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -7963,7 +7963,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ketamine is an NMDA antagonist that provides sedation, analgesia, and dissociative anesthesia.",
+      "explanation": "Ketamine primarily antagonizes NMDA glutamate receptors, producing a dissociative state with both sedation and analgesia. This distinguishes it from GABAergic hypnotics such as propofol and benzodiazepines, which do not provide comparable intrinsic analgesia.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8011,7 +8011,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dexmedetomidine can cause bradycardia and hypotension.",
+      "explanation": "Dexmedetomidine decreases central sympathetic outflow through alpha-2 agonism and can produce clinically important bradycardia and hypotension. Severe baseline bradycardia therefore increases concern for further heart-rate reduction during loading or infusion.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8039,7 +8039,7 @@
         1,
         2
       ],
-      "explanation": "Midazolam provides anxiolysis, sedation, and amnesia but no analgesia.",
+      "explanation": "Midazolam provides anxiolysis, sedation, and anterograde amnesia through benzodiazepine modulation of GABA-A receptors. It does not provide meaningful analgesia, and respiratory depression becomes more important when it is combined with opioids.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8063,7 +8063,7 @@
       "answer": [
         0
       ],
-      "explanation": "Sedatives and opioids depress breathing synergistically, so small doses together can cause apnea.",
+      "explanation": "Benzodiazepines and opioids both depress ventilatory drive and upper-airway tone, and their combined respiratory effect can be synergistic rather than merely additive. Consequently, doses that appear modest individually can produce profound hypoventilation or apnea when given together.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8087,7 +8087,7 @@
       "answer": [
         0
       ],
-      "explanation": "Propofol causes apnea and hypotension; remifentanil causes significant respiratory depression. Together, apnea is likely.",
+      "explanation": "Propofol commonly causes dose-dependent hypotension and respiratory depression/apnea, while remifentanil adds potent opioid respiratory depression and can also contribute to hemodynamic depression. Combining them therefore requires anticipation of both inadequate ventilation and hypotension.",
       "citation": "",
       "topic": "Other sedation drugs",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8111,7 +8111,7 @@
       "answer": [
         0
       ],
-      "explanation": "Fire risk rises when oxygen pools near an ignition source in head and neck procedures. Reduce FiO2 to the lowest safe level and let oxygen disperse before cautery.",
+      "explanation": "Electrocautery supplies an ignition source, supplemental oxygen supplies an oxidizer, and drapes or other materials can act as fuel. Oxygen accumulation near the face therefore creates the classic fire-triad conditions; oxygen concentration and pooling should be minimized and cautery coordinated with the team.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8135,7 +8135,7 @@
       "answer": [
         0
       ],
-      "explanation": "Tented drapes trap oxygen near the face, creating an oxygen-enriched environment where cautery can ignite a fire.",
+      "explanation": "Tented facial drapes can trap supplemental oxygen, creating an oxygen-enriched pocket immediately adjacent to electrocautery or another ignition source. Preventing oxygen accumulation is therefore as important as limiting delivered oxygen concentration when feasible.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8159,7 +8159,7 @@
       "answer": [
         0
       ],
-      "explanation": "Fire risk is reduced by using only the oxygen concentration and flow needed for adequate oxygenation, preventing oxygen from pooling under drapes, and coordinating oxygen delivery with use of ignition sources near the airway or face.",
+      "explanation": "Fire risk depends on the interaction of an ignition source, fuel, and an oxidizer-enriched environment. Using the lowest oxygen concentration and flow that safely maintains oxygenation, avoiding pooling under drapes, and coordinating with the proceduralist before cautery reduce the oxidizer component of that risk.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8183,7 +8183,7 @@
       "answer": [
         0
       ],
-      "explanation": "Electrocautery provides an ignition source; accumulated supplemental oxygen beneath facial drapes creates an oxidizer-enriched environment. Cautery should pause while the team corrects the fire-risk conditions.",
+      "explanation": "Movement is important, but the immediate hazard is the simultaneous presence of electrocautery and accumulated oxygen near combustible drapes. Cautery should pause while oxygen enrichment is corrected and the team re-establishes safe conditions.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8235,7 +8235,7 @@
         1,
         2
       ],
-      "explanation": "Witnessed regurgitation plus new hypoxemia and new cough, wheeze, or abnormal breath sounds strongly support clinically significant aspiration. A stable capnogram without respiratory symptoms does not.",
+      "explanation": "Witnessed regurgitation or vomiting establishes exposure risk, while new hypoxemia and new cough, wheeze, or abnormal breath sounds support clinically important pulmonary aspiration. No single sign defines severity, so airway, oxygenation, ventilation, and the evolving respiratory examination guide management.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8283,7 +8283,7 @@
       "answer": [
         0
       ],
-      "explanation": "Propofol can produce dose-related vasodilation and myocardial depression, making repeated boluses a plausible cause of hypotension, especially in patients with limited preload or cardiovascular reserve.",
+      "explanation": "Propofol reduces systemic vascular resistance and can depress myocardial contractility, so repeated boluses can cause dose-related hypotension. The effect is amplified by hypovolemia, advanced age, limited cardiac reserve, and other sedative or vasodilating drugs.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8331,7 +8331,7 @@
       "answer": [
         0
       ],
-      "explanation": "Snoring with reduced tidal movement during sedation suggests upper-airway obstruction. Repositioning the head and applying jaw thrust are appropriate initial maneuvers while ventilation and oxygenation are reassessed.",
+      "explanation": "Snoring with reduced tidal movement during sedation is a classic sign of partial pharyngeal obstruction from loss of upper-airway tone. Head repositioning and jaw thrust are appropriate first maneuvers because they mechanically reopen the airway while ventilation is reassessed.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8403,7 +8403,7 @@
       "answer": [
         0
       ],
-      "explanation": "Remote anesthesia locations require emergency drugs, monitoring, ventilation/airway equipment, and rescue capability appropriate to the anesthetic. Lack of immediately available vasopressors during severe hypotension is a preparedness failure.",
+      "explanation": "NORA and other remote anesthetizing locations must support the same essential rescue functions as the operating room, including appropriate monitoring, oxygenation/ventilation equipment, emergency drugs, and airway capability. Severe hypotension without an immediately available vasopressor demonstrates a system-level preparedness failure.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8451,7 +8451,7 @@
       "answer": [
         0
       ],
-      "explanation": "Ketamine often preserves spontaneous ventilation, but it does not guarantee airway protection. Laryngospasm and other airway complications remain possible, so monitoring and rescue capability are still required.",
+      "explanation": "Ketamine often preserves spontaneous respiratory drive, but preservation of breathing is not equivalent to guaranteed airway patency or intact protective reflexes. Secretions, vomiting, obstruction, apnea, and laryngospasm can still occur, so full airway monitoring and rescue capability remain necessary.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8499,7 +8499,7 @@
       "answer": [
         0
       ],
-      "explanation": "Prone positioning can make airway rescue difficult. Recurrent obstruction plus poor access should prompt reassessment of whether continued sedation is safe or whether a secured airway is preferable.",
+      "explanation": "Prone positioning restricts immediate access to the face and can delay basic or advanced airway rescue. Recurrent obstruction in that setting means the margin for continued deepening of sedation is small and should prompt consideration of a secured airway before further deterioration.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -8523,7 +8523,7 @@
       "answer": [
         0
       ],
-      "explanation": "An oxygen-enriched environment supports easier ignition and more vigorous combustion. Open oxygen near facial drapes and an ignition source therefore requires deliberate fire-risk mitigation.",
+      "explanation": "Higher local oxygen concentration increases the ease and intensity of combustion even though oxygen itself is not the fuel. When an ignition source such as electrocautery is close to drapes or other fuel, oxygen enrichment near the field materially increases fire risk.",
       "citation": "",
       "topic": "Complications during MAC",
       "sourceTitle": "Sedation, MAC & TIVA",
