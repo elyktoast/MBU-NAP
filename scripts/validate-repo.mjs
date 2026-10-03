@@ -1046,7 +1046,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
   for(const token of ['courseId,examId','questionId:meta.uid','courseId:meta.courseId','examId:meta.examId','bankId:meta.bank','topic:meta.topic'])if(!intelligence.includes(token))fail('Global CAT evidence metadata missing '+token);
   const bootstrap=read('equipment/assets/build-bootstrap.js'),home=read('index.html'),migration=read('supabase/migrations/20260927041827_add_anonymous_item_calibration.sql');
   for(const course of ['equipment','basic-principles'])if(!home.includes('href="'+course+'/" data-course-link'))fail('Home is missing published course '+course);
-  if(!bootstrap.includes("protectedCourse=['equipment','basic-principles'].includes(String(ctx.courseId||'equipment'))"))fail('Published courses are not uniformly account protected');
+  if(!bootstrap.includes("protectedCourse=['equipment/','basic-principles/'].some(course=>path.startsWith(root.pathname+course))"))fail('Published courses are not uniformly account protected');
   if(!migration.includes('primary key (user_id, question_id)'))fail('CAT first-attempt uniqueness must remain one contribution per user/question');
   if(!intelligence.includes('firstAttempt=attempts===0')||!intelligence.includes('if(firstAttempt)window.MBUSupabase?.submitItemContribution'))fail('CAT contribution must remain first-answer-only');
 
