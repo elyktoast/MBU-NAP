@@ -9852,17 +9852,17 @@
       "id": "PRE-404",
       "set": 1,
       "type": "single",
-      "stem": "A chronic steroid user is scheduled for colonoscopy. Which regimen best matches the table's minor-procedure recommendation?",
+      "stem": "A chronic glucocorticoid user is scheduled for colonoscopy. Which perioperative steroid approach is most appropriate?",
       "options": [
-        "Usual dose plus hydrocortisone 50 mg IV, then 25 mg every 8 hours",
-        "Usual daily dose only",
-        "Hydrocortisone 100 mg IV plus 200 mg over 24 hours",
-        "No steroid coverage"
+        "Continue the baseline glucocorticoid; supplemental parenteral steroid is individualized to HPA-axis suppression risk, oral intake, and procedural stress",
+        "Give hydrocortisone 50 mg IV plus 25 mg every 8 hours to every chronic steroid user",
+        "Stop the usual steroid before the procedure",
+        "Give hydrocortisone 100 mg IV plus 200 mg over 24 hours routinely"
       ],
       "answer": [
         0
       ],
-      "explanation": "Colonoscopy is listed as minor; the plan is usual dose plus 50 mg IV and 25 mg q8h for 24 h.",
+      "explanation": "Routine large stress-dose regimens are not required for every chronic glucocorticoid user undergoing a low-stress procedure. Continue baseline therapy when possible and individualize supplementation.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -9900,17 +9900,17 @@
       "id": "PRE-406",
       "set": 1,
       "type": "single",
-      "stem": "A healthy woman of childbearing potential is scheduled for diagnostic laparoscopy. Which routine preoperative test is specifically indicated?",
+      "stem": "A healthy woman of childbearing potential is scheduled for diagnostic laparoscopy. When is preoperative pregnancy testing appropriate?",
       "options": [
-        "Pregnancy testing",
-        "Full CBC and metabolic panel",
-        "Chest radiograph and ECG",
-        "ABG and pulmonary function testing"
+        "When pregnancy is possible and the result could change perioperative management, after informed discussion/consent according to local policy",
+        "It is mandatory for every woman of reproductive age",
+        "Only when routine CBC testing is also indicated",
+        "It is never relevant to anesthetic planning"
       ],
       "answer": [
         0
       ],
-      "explanation": "Labs are history based; a healthy woman of childbearing age needs pregnancy testing.",
+      "explanation": "Pregnancy testing may be offered when pregnancy is possible and the result would alter management; it should not be presented as a universal mandatory test.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -9972,17 +9972,17 @@
       "id": "PRE-409",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a drug-eluting stent 5 months ago and now takes aspirin alone. Which plan best follows the lecture timing and antiplatelet principles?",
+      "stem": "A patient had a drug-eluting coronary stent 5 months ago and now takes aspirin alone. Which information is essential before deciding whether elective surgery should proceed?",
       "options": [
-        "Proceed with elective surgery and continue aspirin",
-        "Delay until 12 months after PCI",
-        "Stop aspirin for 7 days",
-        "Restart clopidogrel before surgery"
+        "Why PCI was performed, current ischemic/stent risk, surgical urgency and bleeding risk, and the perioperative antiplatelet plan",
+        "Only whether 3 months have elapsed",
+        "Only whether aspirin can be stopped for 7 days",
+        "Only whether clopidogrel has already been discontinued"
       ],
       "answer": [
         0
       ],
-      "explanation": "DES timing is 3–6 months with aspirin continued.",
+      "explanation": "After DES placement, timing is not a universal 3–6 month rule. Elective surgery is generally delayed at least 6 months after PCI for chronic coronary disease and about 12 months after DES placed for acute coronary syndrome when feasible, with earlier time-sensitive surgery individualized. Aspirin is often continued when bleeding risk permits.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -10020,17 +10020,17 @@
       "id": "PRE-411",
       "set": 1,
       "type": "single",
-      "stem": "Two heart-failure patients face the same operation; one has EF 55% and the other EF 30%. Which statement is most accurate?",
+      "stem": "Two patients with heart failure face the same operation; one has LVEF 55% and the other 30%. Which statement is most accurate?",
       "options": [
-        "The patient with preserved EF generally has lower perioperative risk than the patient with HFrEF",
-        "The patient with preserved EF has higher perioperative risk",
-        "Both have identical risk",
-        "Preserved EF eliminates heart-failure-related risk"
+        "Reduced LVEF is associated with greater perioperative risk, but preserved EF does not eliminate heart-failure-related risk",
+        "Preserved EF eliminates perioperative heart-failure risk",
+        "The two patients necessarily have identical risk because EF never matters",
+        "HFpEF is always more dangerous than HFrEF"
       ],
       "answer": [
         0
       ],
-      "explanation": "HFpEF (EF above 50%) carries lower perioperative risk than HFrEF.",
+      "explanation": "Heart failure itself increases perioperative risk. Risk is generally higher with reduced ejection fraction and with symptoms, but HFpEF remains clinically important and cannot be considered low risk solely because EF is preserved.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -10740,7 +10740,7 @@
       "id": "PRE-441",
       "set": 1,
       "type": "single",
-      "stem": "A woman snores, has daytime fatigue and witnessed apnea, BMI 38, neck 38 cm, no hypertension, and age under 50. What STOP-BANG category results?",
+      "stem": "Using the traditional STOP-BANG thresholds, a woman snores, has daytime fatigue and witnessed apnea, BMI 38, neck 38 cm, no hypertension, and age under 50. What category results?",
       "options": [
         "Intermediate risk with score 4",
         "High risk with score 5",
@@ -10750,7 +10750,7 @@
       "answer": [
         0
       ],
-      "explanation": "S, T, O, B = 4. Age <50, female, neck ≤40 cm. 3–4 is intermediate.",
+      "explanation": "Using traditional STOP-BANG thresholds, snoring, tiredness, observed apnea, and BMI >35 score 4. Age <50, female sex, neck ≤40 cm, and no hypertension add no points; 3–4 is intermediate risk.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -10764,7 +10764,7 @@
       "id": "PRE-442",
       "set": 1,
       "type": "single",
-      "stem": "A 70-year-old man snores, has hypertension, BMI 36, neck 42 cm, and witnessed apnea. What STOP-BANG category results?",
+      "stem": "Using the traditional STOP-BANG thresholds, a 70-year-old man snores, has hypertension, BMI 36, neck 42 cm, and witnessed apnea. What category results?",
       "options": [
         "High risk with score 7",
         "High risk with score 6",
@@ -10774,7 +10774,7 @@
       "answer": [
         0
       ],
-      "explanation": "S, O, P, B, A, N, G = 7 (no tiredness). 5–8 is high.",
+      "explanation": "Using traditional STOP-BANG thresholds, snoring, observed apnea, hypertension, BMI >35, age >50, neck >40 cm, and male sex score 7. No tiredness is reported.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -10788,17 +10788,17 @@
       "id": "PRE-443",
       "set": 1,
       "type": "single",
-      "stem": "A patient has RCRI 2, functional capacity at least 4 METs, and no active cardiac symptoms before laparoscopic colectomy. Which estimate and plan best fit?",
+      "stem": "A patient has two RCRI risk factors, functional capacity at least 4 METs, and no active cardiac symptoms before laparoscopic colectomy. Which plan best reflects the role of the RCRI?",
       "options": [
-        "About 2.4% MACE risk; proceed without routine additional testing",
-        "About 5.4% risk; stress test first",
-        "About 1.0% risk; proceed",
-        "About 0.4% risk; cardiology consultation required"
+        "Use the RCRI as one component of risk estimation; good functional capacity and absence of active disease generally argue against routine stress testing unless results would change management",
+        "Assume an exact 2.4% contemporary MACE probability and obtain no other risk information",
+        "Order stress testing solely because the RCRI equals 2",
+        "Require cardiology consultation before every operation with RCRI 2"
       ],
       "answer": [
         0
       ],
-      "explanation": "RCRI 2 = 2.4%. With ≥4 METs and no active disease, testing is usually not needed.",
+      "explanation": "RCRI identifies clinical risk factors but historical event percentages vary by cohort and outcome definition. Testing should be selective and performed when it would change management, not triggered by a score alone.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -10836,17 +10836,17 @@
       "id": "PRE-445",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a bare-metal stent 20 days ago and now requests elective laparoscopic cholecystectomy. Which timing issue controls the decision?",
+      "stem": "A patient had a bare-metal coronary stent 20 days ago and now requests elective laparoscopic cholecystectomy that would require interruption of antiplatelet therapy. Which principle controls the decision?",
       "options": [
-        "The case should wait until more than 30 days after BMS placement",
-        "Aspirin continuation makes immediate surgery acceptable",
-        "Stopping aspirin makes immediate surgery acceptable",
-        "All stents require a 6-month delay"
+        "Defer elective surgery because interruption of antiplatelet therapy within 30 days of any coronary stent is particularly hazardous",
+        "Proceed because bare-metal stents never require a delay",
+        "Stop aspirin and proceed",
+        "All coronary stents require exactly 6 months before any surgery"
       ],
       "answer": [
         0
       ],
-      "explanation": "BMS requires >30 days before elective surgery.",
+      "explanation": "Elective surgery requiring interruption of antiplatelet therapy within 30 days of either bare-metal or drug-eluting stent placement is harmful because of stent-thrombosis and ischemic risk.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -10860,17 +10860,17 @@
       "id": "PRE-446",
       "set": 1,
       "type": "single",
-      "stem": "A patient is 4 months after CABG, has excellent functional capacity, and wants elective shoulder surgery. How should the reassuring functional status affect the lecture's CABG timing recommendation?",
+      "stem": "A patient is 4 months after CABG, has recovered well, has excellent functional capacity, and wants elective shoulder surgery. How should the prior CABG affect planning?",
       "options": [
-        "It should not override the recommendation to wait more than 6 months after CABG",
-        "It permits immediate surgery because functional capacity is adequate",
-        "It reduces the waiting interval to 60 days",
-        "It eliminates the timing concern if regional anesthesia is used"
+        "Assess recovery, symptoms, surgical risk, and whether further cardiac testing would change management rather than applying a universal 6-month prohibition",
+        "Good functional capacity makes the CABG history irrelevant",
+        "Every elective operation is prohibited until more than 6 months after CABG",
+        "Regional anesthesia automatically removes CABG-related risk"
       ],
       "answer": [
         0
       ],
-      "explanation": "Good functional capacity does not replace the lecture's timing recommendation to wait more than 6 months after CABG for elective surgery.",
+      "explanation": "There is no universal rule that all elective noncardiac surgery must wait more than 6 months after CABG. Timing is individualized based on recovery, symptoms, urgency, procedural risk, and overall cardiac status.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
@@ -10932,17 +10932,17 @@
       "id": "PRE-449",
       "set": 1,
       "type": "single",
-      "stem": "A patient had a medically managed MI 45 days ago and requests elective hip replacement. Which timing recommendation is most appropriate?",
+      "stem": "A patient had a medically managed myocardial infarction 45 days ago and requests elective hip replacement. Which approach is most appropriate?",
       "options": [
-        "Delay until at least 60 days after the MI",
-        "Proceed because more than 30 days have passed",
-        "Proceed if troponin is normal",
-        "Delay 6 months"
+        "Defer elective surgery and reassess ischemic risk; contemporary guidance does not use the older universal 60-day cutoff as a stand-alone clearance rule",
+        "Proceed automatically because more than 30 days have passed",
+        "Proceed if a single troponin value is normal",
+        "Delay every such patient exactly 6 months"
       ],
       "answer": [
         0
       ],
-      "explanation": "MI without intervention requires 60 days before elective surgery.",
+      "explanation": "Recent myocardial infarction substantially increases perioperative risk. Current decision-making considers symptoms, treatment/revascularization status, urgency, and overall cardiovascular risk rather than relying on the older universal 60-day threshold alone.",
       "citation": "",
       "topic": "Integrated preop cases",
       "sourceTitle": "Perioperative Assessment & Evaluation",
