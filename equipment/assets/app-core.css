@@ -95,3 +95,8 @@ html,body{max-width:100%;overflow-x:hidden}
 #generated-question-workbench .gen-draft{padding:14px}
 .gen-draft-actions{flex-wrap:wrap}.gen-draft-actions button{flex:1;min-width:120px;min-height:44px}
 }
+
+@media(max-width:640px){
+.gen-library{padding:12px}.gen-library .gen-review-head{align-items:flex-start}.gen-library-row>div:last-child{display:grid!important;grid-template-columns:1fr 1fr}.gen-library-row button{min-height:44px}
+.mbu-app-tools__actions{width:100%}.mbu-app-tools__actions button{min-height:44px}
+}
