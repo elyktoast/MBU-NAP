@@ -701,7 +701,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(generator.includes('ollama')||generator.includes('openai')||generator.includes('anthropic')||generator.includes('GEMINI_API_KEY'))fail('Provider-neutral generator framework contains provider credentials or implementation details');
  const gemini=read('equipment/assets/question-generator-gemini.js'),genUi=read('equipment/assets/question-generator-ui.js'),edge=read('supabase/functions/generate-questions/index.ts'),bpManifest=JSON.parse(read('basic-principles/exam-1/banks.json'));
  if(!gemini.includes("registerProvider('gemini'")||!gemini.includes('/functions/v1/generate-questions')||gemini.includes('GEMINI_API_KEY'))fail('Gemini browser provider is missing or exposes server credentials');
- if(!edge.includes('Deno.env.get("GEMINI_API_KEY")')||!edge.includes('Authorization')||!edge.includes('material.length>50000')||!edge.includes('Math.min(20'))fail('Gemini edge function security/input guards are incomplete');
+ if(!edge.includes('Deno.env.get("GEMINI_API_KEY")')||!edge.includes('allowed.has(origin)')||!edge.includes('material.length>50000')||!edge.includes('Math.min(20'))fail('Gemini edge function security/input guards are incomplete');
  if(!genUi.includes("api.generate('gemini'")||!genUi.includes('approveDraft')||!genUi.includes('rejectDraft'))fail('Gemini draft review workbench is incomplete');
  if(bpManifest.features?.questionGenerator?.enabled!==true||bpManifest.features?.questionGenerator?.provider!=='gemini')fail('Basic Principles Gemini question generator configuration is incomplete');
 }
