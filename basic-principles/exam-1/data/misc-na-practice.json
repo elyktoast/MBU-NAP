@@ -200,9 +200,9 @@
       "id": "MISC-009",
       "set": 1,
       "type": "single",
-      "stem": "A quality-improvement presentation contrasts the original IOM mortality estimate with later analyses suggesting a substantially larger burden of preventable hospital harm. Which range represents the later estimate cited in the course material?",
+      "stem": "A course review contrasts the original IOM mortality estimate with a later widely cited analysis that estimated a substantially larger burden of deaths associated with medical error. Which range represents that later estimate?",
       "options": [
-        "250,000–400,000 deaths annually",
+        "About 250,000–400,000 deaths annually",
         "44,000–98,000 deaths annually",
         "10,000–20,000 deaths annually",
         "More than 1 million deaths annually"
@@ -210,7 +210,7 @@
       "answer": [
         0
       ],
-      "explanation": "The original IOM estimate was 44,000–98,000; current data suggest 250,000–400,000 annually.",
+      "explanation": "The original IOM report estimated 44,000–98,000 deaths annually. Later analyses produced higher estimates, including figures in roughly the 250,000–400,000 range; these estimates depend heavily on definitions and methods and should not be presented as a single current definitive count.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -272,17 +272,17 @@
       "id": "MISC-012",
       "set": 1,
       "type": "single",
-      "stem": "When medication events are classified broadly, which contributor is expected to account for the largest share even though system conditions often shape the event?",
+      "stem": "A wrong-medication event occurs after look-alike labeling, interruptions, and a skipped independent check. Which interpretation best reflects modern patient-safety thinking?",
       "options": [
-        "Human error",
-        "Equipment failure",
-        "Patient noncompliance",
-        "Medication shortages"
+        "The active human error occurred within system conditions that helped make the error possible",
+        "The event should be attributed only to the individual who administered the drug",
+        "Equipment failure must be the sole cause",
+        "Patient behavior is the usual primary cause of medication errors"
       ],
       "answer": [
         0
       ],
-      "explanation": "The majority of medical errors are due to human error, often shaped by system factors.",
+      "explanation": "Human actions often contribute to adverse events, but modern safety analysis examines latent system conditions, workflow, design, communication, and defenses rather than stopping at individual blame.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -320,7 +320,7 @@
       "id": "MISC-014",
       "set": 1,
       "type": "single",
-      "stem": "The correct antibiotic is clindamycin because of a known allergy, but cefazolin is administered instead. Which error category best describes the event?",
+      "stem": "The intended medication is correctly selected in the plan, but a different medication is administered because two syringes were confused. Which error category best describes the event?",
       "options": [
         "Treatment error",
         "Diagnostic error",
@@ -330,7 +330,7 @@
       "answer": [
         0
       ],
-      "explanation": "Treatment errors include mistakes in care and medication errors.",
+      "explanation": "Medication administration mistakes are treatment errors. The classification describes where the failure occurred; a systems analysis should still examine why the syringe confusion was possible.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -402,7 +402,7 @@
       "answer": [
         0
       ],
-      "explanation": "Errors must be disclosed, whether or not lasting harm occurred.",
+      "explanation": "A clinically meaningful medication error should be addressed transparently according to professional disclosure standards and institutional policy even when permanent injury does not occur. Disclosure should focus on what happened, known consequences, and next steps.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -856,7 +856,7 @@
       "id": "MISC-036",
       "set": 1,
       "type": "single",
-      "stem": "The cited mortality data place unintentional injury, including overdose, at what rank among leading U.S. causes of death?",
+      "stem": "In the mortality data cited in the course material, where did unintentional injury, including overdose, rank among leading U.S. causes of death?",
       "options": [
         "Third",
         "First",
@@ -866,7 +866,7 @@
       "answer": [
         0
       ],
-      "explanation": "The order is heart disease, cancer, then unintentional injury, followed by stroke and chronic lung disease.",
+      "explanation": "In the cited course dataset, the order was heart disease, cancer, then unintentional injury. Cause-of-death rankings can change by year, so the item is explicitly tied to the cited dataset.",
       "citation": "",
       "topic": "Healthcare quality and medical error",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -1138,7 +1138,7 @@
       "answer": [
         0
       ],
-      "explanation": "GA for cesarean carries higher airway and aspiration risk and delays bonding, so epidural access matters.",
+      "explanation": "A functioning labor epidural can often be extended for urgent cesarean anesthesia. When neuraxial anesthesia is unavailable or unsuitable, general anesthesia may be required and introduces maternal airway, aspiration, awareness, and neonatal drug-exposure considerations.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
