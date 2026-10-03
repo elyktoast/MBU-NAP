@@ -1622,8 +1622,11 @@ test.describe('canonical quiz regression', () => {
     await page.locator('[data-cloud-signin]').click();
     await expect(page.locator('[data-cloud-signed-in]')).toBeVisible();
     await page.locator('[data-account-close]').click();
-    await page.goto(exam + '/quiz-bank-1.html');await page.evaluate(() => MBUPageReady);
-    await page.locator('#cards button').filter({hasText:/start|continue/i}).first().click();
+    await page.goto(exam + '/quiz-bank-1.html');
+    await page.evaluate(() => MBUQuizReady);
+    const start=page.locator('#cards button').filter({hasText:/start|continue/i}).first();
+    await expect(start).toBeVisible();
+    await start.click();
     await page.locator('#options .opt').first().click();
     await page.evaluate(() => MBUSupabase.syncNow());
     expect(writes.some(row=>row.p_store_key==='SRNA_COMBINED_EXAM_SET_1_2026_V1')).toBe(true);
@@ -1910,8 +1913,8 @@ test.describe('canonical quiz regression', () => {
     ]);
     await expect.poll(()=>deleted).toBe(1);
     await page.waitForURL(url=>url.pathname==='/');
-    await page.evaluate(() => MBUPageReady);
-    await expect.poll(()=>page.evaluate(()=>MBUSupabase.status().signedIn)).toBe(false);
+    await page.waitForLoadState('domcontentloaded');
+    await page.locator('[data-course-link]').first().waitFor();
     await page.evaluate(() => MBUAppCore.openAccount(document.querySelector('[data-course-link]')));
     await expect(page.locator('[data-cloud-signed-out]')).toBeVisible();
     expect(await page.evaluate(()=>localStorage.getItem('mbu_exam1_studio_v1'))).toBeNull();
