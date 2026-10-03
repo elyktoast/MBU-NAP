@@ -51,6 +51,14 @@ jobs:
         run: npm run test:review-queue
       - name: Simulate precalibration CAT behavior
         run: npm run test:cat
+      - name: Build clean question JSON export
+        run: node scripts/export-question-data.mjs
+      - name: Upload clean question JSON export
+        uses: actions/upload-artifact@v4
+        with:
+          name: srna-question-data-no-difficulty
+          path: exports/srna-question-data-no-difficulty.json
+          retention-days: 30
 
   browser:
     name: Browser regression (${{ matrix.shard }})
