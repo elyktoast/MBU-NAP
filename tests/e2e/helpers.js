@@ -61,6 +61,7 @@ function collectPageErrors(page) {
 }
 
 async function waitForStudio(page) {
+  await page.evaluate(async()=>{if(window.MBUStudioDataReady)await window.MBUStudioDataReady});
   await expect.poll(
     async () => {
       try {
