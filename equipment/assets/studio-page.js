@@ -141,3 +141,5 @@ function checkedValues(id){return [...document.querySelectorAll('#'+id+' input[t
 function setLabel(q){if(q.bank==='hh')return 'Challenge Set';if(q.bank==='h1'||q.bank==='h2'||q.bank==='h3')return q.bankLabel;return q.set===7?'Challenge Set':'Practice Set '+q.set}
 function sourceSetKey(q){return q.bank+':'+q.set}
 function initialStudioBuildMode(){if(unifiedStudioSource()){buildMode='topics';return}setBuildMode('sets')}
+
+window.MBUStudioCoreReady=loadBanks;
