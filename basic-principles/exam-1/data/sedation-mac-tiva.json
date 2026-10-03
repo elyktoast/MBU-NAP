@@ -4904,7 +4904,7 @@
       "answer": [
         0
       ],
-      "explanation": "MAC requires continuous presence of the anesthesia team, because depth can change at any time.",
+      "explanation": "Anesthesia care requires continuous qualified vigilance. The key violation is leaving an anesthetized/sedated patient without appropriate anesthesia observation and rescue capability; depth can change rapidly.",
       "citation": "",
       "topic": "MAC concept and ASA requirements",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -4958,7 +4958,7 @@
         3,
         4
       ],
-      "explanation": "ASA requires a documented plan, readiness to convert, a qualified provider present, airway equipment, and postanesthesia monitoring.",
+      "explanation": "Safe MAC includes an appropriate preanesthetic evaluation and plan, a qualified anesthesia professional, continuous monitoring/vigilance, immediate rescue capability including conversion when necessary, and appropriate postanesthesia care. Volatile maintenance is not inherently required.",
       "citation": "",
       "topic": "MAC concept and ASA requirements",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -5216,17 +5216,17 @@
       "id": "SED-214",
       "set": 1,
       "type": "single",
-      "stem": "During cataract MAC, a patient briefly becomes unresponsive to voice after propofol. Does that change alone mean the anesthesia service is no longer MAC?",
+      "stem": "During cataract MAC, a patient briefly stops responding to voice after propofol but still responds purposefully to repeated tactile stimulation and ventilates adequately. What is the best interpretation?",
       "options": [
-        "No; MAC describes the service, while the provider must recognize and manage the deeper anesthetic state",
-        "Yes; any loss of verbal response terminates MAC",
-        "Yes; it becomes nurse-administered moderate sedation",
-        "No; because MAC never requires airway intervention"
+        "The patient has deepened along the sedation continuum; the MAC service label does not replace assessment of the actual depth and physiology",
+        "Any loss of verbal response automatically means general anesthesia",
+        "The case becomes nurse-administered moderate sedation",
+        "Airway intervention can never be required during MAC"
       ],
       "answer": [
         0
       ],
-      "explanation": "MAC remains the service even when depth varies. The provider must manage the deeper state and be ready to convert.",
+      "explanation": "Loss of response to voice alone does not define general anesthesia. Responsiveness to repeated or painful stimulation, airway needs, ventilation, and cardiovascular function determine physiologic depth. MAC describes the anesthesia service, while the provider must recognize and manage the patient's actual state.",
       "citation": "",
       "topic": "MAC concept and ASA requirements",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -5616,7 +5616,7 @@
       "answer": [
         0
       ],
-      "explanation": "MAC standards and equipment must be the same in remote locations as in the OR.",
+      "explanation": "Anesthesia care in a remote location should provide monitoring, oxygenation/ventilation support, suction, emergency drugs, and rescue resources appropriate to the patient and anesthetic. Safety expectations do not become lower simply because the procedure is outside the main OR.",
       "citation": "",
       "topic": "MAC concept and ASA requirements",
       "sourceTitle": "Sedation, MAC & TIVA",
