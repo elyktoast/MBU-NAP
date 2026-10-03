@@ -2498,7 +2498,7 @@
         0,
         1
       ],
-      "explanation": "Analgesia planning considers onset, peak, duration, and when the procedure will end.",
+      "explanation": "Whether an analgesic will overlap emergence depends on when it begins to work, when maximal effect occurs, how long clinically important effect persists, and when surgery actually ends. Onset and peak are especially important when a case ends unexpectedly soon after dosing.",
       "citation": "",
       "topic": "Pharmacogenetics and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -2522,7 +2522,7 @@
       "answer": [
         0
       ],
-      "explanation": "Genetic polymorphisms alter drug metabolism, transport, and receptor response.",
+      "explanation": "Analgesic response varies because polymorphisms can alter drug-metabolizing enzymes, transport proteins, and receptor signaling. Identical weight-based doses can therefore produce different concentrations or pharmacodynamic effects even in otherwise similar patients.",
       "citation": "",
       "topic": "Pharmacogenetics and planning",
       "sourceTitle": "Perioperative Pain Management",
@@ -2647,7 +2647,7 @@
       "answer": [
         0
       ],
-      "explanation": "Surgical stress causes cytokine and neuroendocrine changes that persist even with good analgesia.",
+      "explanation": "Analgesia can attenuate nociceptive sympathetic activation, but tissue injury also initiates inflammatory cytokine and neuroendocrine responses that are not abolished by pain relief alone. Hyperglycemia and catabolism can therefore persist despite excellent regional analgesia.",
       "citation": "",
       "topic": "Surgical and setting considerations",
       "sourceTitle": "Perioperative Pain Management",
@@ -2727,7 +2727,7 @@
       "answer": [
         0
       ],
-      "explanation": "Over-reliance on opioids can cause emergence respiratory depression.",
+      "explanation": "Escalating opioids to normalize every stress-related vital-sign change can create excessive ventilatory depression without eliminating the broader surgical stress response. Near emergence, residual opioid effect may delay return of adequate spontaneous ventilation and safe airway protection.",
       "citation": "",
       "topic": "Surgical and setting considerations",
       "sourceTitle": "Perioperative Pain Management",
@@ -2751,7 +2751,7 @@
       "answer": [
         0
       ],
-      "explanation": "Beach chair positioning can cause hypotension and bradycardia, so short-acting or minimal opioids are preferred at induction.",
+      "explanation": "Beach-chair positioning can reduce venous return and create concern for cerebral perfusion when arterial pressure falls. Large induction opioid doses can add vasodilation, bradycardia, and respiratory depression, so a short-acting or minimal strategy avoids unnecessarily compounding that hemodynamic risk.",
       "citation": "",
       "topic": "Surgical and setting considerations",
       "sourceTitle": "Perioperative Pain Management",
@@ -2775,7 +2775,7 @@
       "answer": [
         0
       ],
-      "explanation": "Remifentanil suits high intraop stimulation with minimal postop pain.",
+      "explanation": "Remifentanil's rapid esterase metabolism permits intense analgesic/antinociceptive effect during brief stimulation such as laryngoscopy with very rapid offset afterward. This is advantageous when postoperative pain is expected to be limited, but another analgesic plan is needed when substantial pain will persist.",
       "citation": "",
       "topic": "Surgical and setting considerations",
       "sourceTitle": "Perioperative Pain Management",
@@ -2799,7 +2799,7 @@
       "answer": [
         0
       ],
-      "explanation": "Regional analgesia supports breathing and coughing to prevent pneumonia.",
+      "explanation": "Thoracic and upper-abdominal pain can cause splinting and inhibit deep breathing and effective cough. Strong regional analgesia can improve dynamic pain and pulmonary toilet while reducing systemic opioid respiratory depression, helping support postoperative respiratory function.",
       "citation": "",
       "topic": "Surgical and setting considerations",
       "sourceTitle": "Perioperative Pain Management",
@@ -2823,7 +2823,7 @@
       "answer": [
         0
       ],
-      "explanation": "Carotid surgery carries bradycardia risk, and alpha-2 agonists can deepen it.",
+      "explanation": "Carotid manipulation can provoke vagal/baroreceptor-mediated bradycardia. Dexmedetomidine and other alpha-2 agonists reduce sympathetic outflow and can further lower heart rate and blood pressure, so they warrant caution when the procedure already carries bradycardic risk.",
       "citation": "",
       "topic": "Surgical and setting considerations",
       "sourceTitle": "Perioperative Pain Management",
@@ -2876,7 +2876,7 @@
       "answer": [
         0
       ],
-      "explanation": "The problem list shapes analgesic choices; for this patient, NSAIDs and heavy opioid use are risky.",
+      "explanation": "This patient has competing medication risks: NSAIDs may worsen renal or gastrointestinal injury, while opioids can aggravate OSA-related hypoventilation and obstruction. A tailored multimodal/regional plan should therefore be built around the comorbidities rather than applying a standard drug bundle.",
       "citation": "",
       "topic": "Surgical and setting considerations",
       "sourceTitle": "Perioperative Pain Management",
@@ -2980,7 +2980,7 @@
       "answer": [
         0
       ],
-      "explanation": "Postoperative pain management begins preoperatively with assessment, education, and premedication.",
+      "explanation": "Effective postoperative pain management begins before incision with assessment of baseline pain, prior analgesic exposure, comorbidities, patient expectations, and procedure-specific needs. Education plus a planned multimodal/regional strategy reduces reactive rescue-only treatment after severe pain is established.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3004,7 +3004,7 @@
       "answer": [
         0
       ],
-      "explanation": "Starting oral analgesics before the block wears off prevents sudden severe rebound pain.",
+      "explanation": "A single-shot block can end abruptly while surgical nociception is still substantial. Starting the prescribed systemic analgesic before sensory block resolution allows time for oral drug onset and reduces the gap that produces severe rebound pain.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3055,7 +3055,7 @@
       "answer": [
         0
       ],
-      "explanation": "Medication exposure does not automatically eliminate decision-making capacity. Valid consent depends on the patient's ability to understand relevant information, appreciate consequences, reason about options, and communicate a choice; sedation, delirium, or other impairment may compromise that capacity.",
+      "explanation": "Opioid administration does not automatically remove capacity. The relevant question is whether the patient can understand the proposed intervention, appreciate consequences, reason about options, and communicate a stable choice at the time consent is obtained.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3107,7 +3107,7 @@
       "answer": [
         0
       ],
-      "explanation": "Know last dose and timing of any analgesics that may potentiate or interfere.",
+      "explanation": "Recent PCA or other analgesic exposure can interact additively or synergistically with induction agents, sedatives, and intraoperative opioids. Knowing the drug, dose, timing, and patient response helps prevent unintended oversedation, respiratory depression, or withdrawal/undertreatment.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3183,7 +3183,7 @@
       "answer": [
         0
       ],
-      "explanation": "Opioid timing must be balanced with preoxygenation, since oversedation impairs cooperation and ventilation.",
+      "explanation": "Effective preoxygenation requires adequate spontaneous ventilation and often active patient cooperation. A large early fentanyl dose can cause sedation and hypoventilation before denitrogenation is complete, limiting end-tidal oxygen concentration and reducing apnea reserve.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3207,7 +3207,7 @@
       "answer": [
         0
       ],
-      "explanation": "Plan opioid peak and duration around incision timing; fentanyl from induction may wane before the incision.",
+      "explanation": "Opioid dosing should be matched to the timing of noxious stimulation rather than the clock time of induction alone. A long positioning delay can separate fentanyl peak effect from incision, so analgesic effect should be reassessed and retitrated before stimulation.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3231,7 +3231,7 @@
       "answer": [
         0
       ],
-      "explanation": "Response to earlier doses guides subsequent dosing.",
+      "explanation": "Marked bradypnea and miosis after a modest dose demonstrate high opioid sensitivity in that individual. Subsequent dosing should be reduced and titrated to analgesic need, ventilation, arousability, and other clinical signs rather than repeated from a standard dose schedule.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3279,7 +3279,7 @@
       "answer": [
         0
       ],
-      "explanation": "Local infiltration before emergence provides early incisional analgesia and spares opioids.",
+      "explanation": "Local infiltration at closure targets incisional nociceptive input before emergence and can reduce early PACU opioid requirements. It is most effective when coordinated with the surgeon and included in the cumulative local-anesthetic dose calculation.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3303,7 +3303,7 @@
       "answer": [
         0
       ],
-      "explanation": "You track and total all local anesthetic dosing.",
+      "explanation": "Local-anesthetic systemic toxicity risk depends on the cumulative dose from all sources. The anesthesia professional should know and account for local anesthetic administered by the surgeon as well as regional, neuraxial, infiltration, or IV dosing when determining remaining safe exposure.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3327,7 +3327,7 @@
       "answer": [
         0
       ],
-      "explanation": "Assess pupils and respiratory rate with opioid dosing.",
+      "explanation": "Miosis and declining spontaneous respiratory rate are clinical signs of opioid effect. Additional opioid should be withheld or reduced until analgesic need is weighed against ventilation, arousability, gas exchange, and the anticipated timing of emergence.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3351,7 +3351,7 @@
       "answer": [
         0
       ],
-      "explanation": "IV lidocaine has analgesic, antihyperalgesic, and anti-inflammatory effects and may reduce ileus.",
+      "explanation": "Systemic lidocaine has analgesic, antihyperalgesic, and anti-inflammatory effects and can reduce perioperative opioid requirements in selected abdominal procedures. Lower opioid exposure may reduce ileus and nausea, although dosing and toxicity risk require protocol-based monitoring.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3433,7 +3433,7 @@
       "answer": [
         0
       ],
-      "explanation": "IV lidocaine works well in general and abdominal surgery, lowering opioid needs and side effects.",
+      "explanation": "IV lidocaine can provide opioid-sparing analgesia in selected abdominal surgery and may support earlier gastrointestinal recovery by reducing opioid exposure and through other anti-inflammatory/antihyperalgesic effects. It is an adjunct, not a substitute for toxicity-aware multimodal planning.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3505,7 +3505,7 @@
       "answer": [
         0
       ],
-      "explanation": "Magnesium infusion lowered pain scores and opioid use in the first 24 hours.",
+      "explanation": "Perioperative magnesium has been studied as an NMDA-modulating adjunct and in some trials reduced early postoperative pain scores and opioid consumption. The magnitude of benefit varies, so use should remain protocol- and patient-specific with attention to renal clearance and neuromuscular effects.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3553,7 +3553,7 @@
       "answer": [
         0
       ],
-      "explanation": "CSHT is the time for plasma concentration to fall 50% after stopping an infusion, and it lengthens with infusion duration.",
+      "explanation": "Context-sensitive half-time is the time for plasma concentration to fall by 50% after an infusion stops, with the 'context' being infusion duration. Drugs such as fentanyl accumulate in peripheral compartments during longer infusions, so recovery can become progressively slower as infusion duration increases.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3601,7 +3601,7 @@
       "answer": [
         0
       ],
-      "explanation": "With long infusions, tissue stores saturate and drug returns to plasma after stopping, slowing the fall in concentration.",
+      "explanation": "During a prolonged fentanyl infusion, peripheral tissues accumulate drug. After the infusion stops, fentanyl redistributes from those stores back into plasma, slowing the decline in effect-site concentration even though hepatic elimination itself has not suddenly changed.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3625,7 +3625,7 @@
       "answer": [
         0
       ],
-      "explanation": "Remifentanil is rapidly hydrolyzed by nonspecific blood and tissue esterases, producing a very short context-sensitive half-time with little increase as infusion duration lengthens.",
+      "explanation": "Remifentanil is rapidly hydrolyzed by nonspecific blood and tissue esterases and has minimal clinically important tissue accumulation. Its context-sensitive half-time therefore remains very short even after prolonged infusion, allowing rapid offset when delivery stops.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3678,7 +3678,7 @@
       "answer": [
         0
       ],
-      "explanation": "CSHT is the time for plasma concentration to fall 50% after stopping an infusion, and it lengthens as tissues saturate.",
+      "explanation": "Fentanyl accumulates in peripheral tissue during longer infusions and later redistributes into plasma, increasing its context-sensitive half-time. A six-hour infusion can therefore delay recovery much more than a one-hour infusion despite use of the same drug.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
@@ -3702,7 +3702,7 @@
       "answer": [
         0
       ],
-      "explanation": "Timing the stop of an infusion is crucial; long infusions need to stop well before the end.",
+      "explanation": "A prolonged sufentanil infusion can have residual effect after stopping because tissue accumulation and redistribution slow the decline in concentration. Anticipating the expected end of surgery and tapering/stopping sufficiently early reduces avoidable emergence delay while maintaining adequate analgesia.",
       "citation": "",
       "topic": "Perioperative phases and infusions",
       "sourceTitle": "Perioperative Pain Management",
