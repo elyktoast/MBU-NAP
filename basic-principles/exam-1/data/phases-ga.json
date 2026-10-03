@@ -9237,7 +9237,7 @@
       "id": "PHA-370",
       "set": 1,
       "type": "single",
-      "stem": "A child undergoing RSI develops marked bradycardia after succinylcholine. Which preplanned medication most directly addresses this known pediatric concern?",
+      "stem": "A child develops marked bradycardia immediately after succinylcholine during induction. Which medication most directly treats the bradycardia?",
       "options": [
         "Atropine",
         "Neostigmine",
@@ -9247,7 +9247,7 @@
       "answer": [
         0
       ],
-      "explanation": "The notes connect succinylcholine and bradycardia with atropine premedication.",
+      "explanation": "Succinylcholine can produce clinically important bradycardia, particularly in children and with repeated exposure. Atropine is appropriate treatment for significant vagally mediated bradycardia; routine prophylactic atropine is not required for every pediatric succinylcholine dose.",
       "citation": "",
       "topic": "Induction cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -9391,7 +9391,7 @@
       "answer": [
         0
       ],
-      "explanation": "Capnography must be sustained for six breaths; fading CO2 suggests esophageal placement.",
+      "explanation": "Persistent waveform capnography is the most reliable routine confirmation of tracheal ventilation. A few transient CO2 waveforms that rapidly disappear can occur after esophageal placement from residual gastric CO2 and should not be accepted as confirmation.",
       "citation": "",
       "topic": "Induction cases",
       "sourceTitle": "Phases of General Anesthesia",
@@ -9745,9 +9745,9 @@
       "id": "PHA-391",
       "set": 1,
       "type": "single",
-      "stem": "Cricoid pressure is needed for RSI, but the awake patient gags when excessive force is applied. Which traditional force sequence is appropriate before and after loss of consciousness?",
+      "stem": "If cricoid pressure is chosen during RSI, which traditional force sequence is commonly taught to limit discomfort before loss of consciousness while providing greater force afterward?",
       "options": [
-        "About 10 N awake, then about 30 N after loss of consciousness",
+        "About 10 N while awake, then about 30 N after loss of consciousness",
         "About 30 N awake, then about 50 N",
         "About 50 N awake and unconscious",
         "About 5 N throughout"
@@ -9755,7 +9755,7 @@
       "answer": [
         0
       ],
-      "explanation": "About 10 N is tolerated awake and increased to about 30 N once the patient loses consciousness.",
+      "explanation": "Traditional Sellick-maneuver teaching uses roughly 10 N while the patient is awake and about 30 N after loss of consciousness. The clinical benefit of routine cricoid pressure remains debated, and pressure should be reduced or released if it impairs ventilation or laryngoscopy.",
       "citation": "",
       "topic": "Induction cases",
       "sourceTitle": "Phases of General Anesthesia",
