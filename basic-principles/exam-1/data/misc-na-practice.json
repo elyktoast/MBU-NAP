@@ -9894,7 +9894,7 @@
       "id": "MISC-405",
       "set": 1,
       "type": "single",
-      "stem": "Which condition is not among the leading US causes of death listed in the cited material?",
+      "stem": "According to the historical leading-cause list used in the course material, which condition is not included?",
       "options": [
         "Appendicitis",
         "Kidney disease",
@@ -9904,7 +9904,7 @@
       "answer": [
         0
       ],
-      "explanation": "Leading causes include heart disease, cancer, injury, stroke, lung disease, Alzheimer's, diabetes, kidney disease, and influenza or pneumonia.",
+      "explanation": "This item tests the specific historical list used in the course material. Rankings and included causes vary by year, so the list should not be interpreted as a current mortality ranking.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -9990,17 +9990,17 @@
       "id": "MISC-409",
       "set": 1,
       "type": "single",
-      "stem": "A preop clinic serves a low-income, largely minority community. Which access pattern should the team be prepared to encounter?",
+      "stem": "A preoperative clinic serves a community with high poverty and documented barriers to primary and preventive care. Which access pattern should the team anticipate may be present?",
       "options": [
         "Reduced access to primary and preventive care",
-        "Greater access to preventive care",
-        "Lower chronic-disease burden",
-        "Higher specialty-care use"
+        "Uniformly greater access to preventive care",
+        "A necessarily lower chronic-disease burden",
+        "Uniformly higher specialty-care use"
       ],
       "answer": [
         0
       ],
-      "explanation": "Low-income and minority populations have less access to primary, preventive, and chronic care.",
+      "explanation": "Economic disadvantage and structural barriers can reduce access to primary and preventive services. Race or ethnicity alone should not be used to predict an individual patient's access or disease burden.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -10014,17 +10014,17 @@
       "id": "MISC-410",
       "set": 1,
       "type": "single",
-      "stem": "A laboring minority patient who desired neuraxial analgesia never receives it because access is delayed; emergency cesarean delivery later requires general anesthesia. Which documented disparity can contribute to this sequence?",
+      "stem": "A laboring patient who desired neuraxial analgesia does not receive it because timely anesthesia access is unavailable; emergency cesarean delivery later requires general anesthesia. Which access disparity is illustrated most directly?",
       "options": [
-        "Lower use or access to neuraxial labor analgesia",
-        "Higher preference for elective cesarean delivery",
-        "Prenatal care alone",
-        "Larger infant size alone"
+        "A barrier to timely neuraxial labor analgesia",
+        "A preference for elective cesarean delivery",
+        "Prenatal care as the sole cause",
+        "Infant size as the sole cause"
       ],
       "answer": [
         0
       ],
-      "explanation": "Disparities in labor care, including less epidural use, contribute to unscheduled cesareans and GA.",
+      "explanation": "The scenario directly demonstrates a barrier to timely neuraxial labor analgesia. Population studies can identify differences in neuraxial use, but an individual outcome should not be attributed to race or ethnicity without examining clinical factors, preferences, and access barriers.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -10038,20 +10038,20 @@
       "id": "MISC-411",
       "set": 1,
       "type": "multi",
-      "stem": "Which two factors contribute to higher maternal and infant mortality in low-income and minority populations? (Select 2)",
+      "stem": "Which two factors can contribute to increased maternal and infant morbidity or mortality in populations facing healthcare-access disparities? (Select 2)",
       "options": [
-        "Inadequate prenatal care",
-        "Chronic medical conditions",
-        "Lower cesarean rates",
-        "Higher epidural use",
-        "Better specialist access",
-        "Lower chronic-disease burden"
+        "Inadequate access to prenatal care",
+        "Higher burden of chronic medical conditions",
+        "Lower cesarean rates in every population",
+        "Higher epidural use in every population",
+        "Uniformly better specialist access",
+        "Uniformly lower chronic-disease burden"
       ],
       "answer": [
         0,
         1
       ],
-      "explanation": "Inadequate prenatal care and chronic conditions contribute, along with disparities in anesthetic and obstetric care.",
+      "explanation": "Limited prenatal-care access and chronic disease can contribute to adverse maternal and infant outcomes. Disparities are multifactorial and should not be reduced to race or income alone.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -10089,7 +10089,7 @@
       "id": "MISC-413",
       "set": 1,
       "type": "single",
-      "stem": "A young child with a recent URI is scheduled at a hospital without pediatric specialists. Which equity-related perioperative risk is emphasized?",
+      "stem": "A young child with a recent upper respiratory infection is scheduled at a hospital without pediatric specialists. Which perioperative concern is most directly increased by the child's current clinical condition?",
       "options": [
         "Adverse respiratory events",
         "Hepatic toxicity",
@@ -10099,7 +10099,7 @@
       "answer": [
         0
       ],
-      "explanation": "Children have higher risk of adverse respiratory events, an equity priority.",
+      "explanation": "A recent upper respiratory infection can increase perioperative respiratory adverse events in children. The lack of pediatric specialty resources is a separate access and systems consideration.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
