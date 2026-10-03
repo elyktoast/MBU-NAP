@@ -26,13 +26,15 @@ function normalizeQuestion(q={},meta={}){
 function validateQuestion(q){
   const errors=[];
   if(!q.stem)errors.push('Question stem is required.');
-  if(!Array.isArray(q.options)||q.options.length<2)errors.push('At least two answer choices are required.');
+  if(!Array.isArray(q.options)||q.options.length!==4)errors.push('Level 8.5 questions require exactly four answer choices.');
   if(q.options?.some(x=>!String(x).trim()))errors.push('Answer choices cannot be blank.');
   if(new Set((q.options||[]).map(x=>String(x).trim().toLowerCase())).size!==(q.options||[]).length)errors.push('Answer choices must be unique.');
   if(!Array.isArray(q.answer)||!q.answer.length||q.answer.some(i=>!Number.isInteger(i)||i<0||i>=q.options.length))errors.push('Correct answer indexes are invalid.');
   if(q.type==='single'&&q.answer.length!==1)errors.push('Single-answer questions must have one keyed answer.');
   if(q.type==='multi'&&q.answer.length<2)errors.push('Multi-answer questions must have at least two keyed answers.');
   if(!q.explanation)errors.push('An explanation is required before approval.');
+  for(const label of ['The Core Concept:','Why the Correct Answer Wins:','The Trap Identified:','Distractor Breakdown:'])if(!q.explanation.includes(label))errors.push('Explanation must include '+label);
+  const sentences=(q.stem.match(/[.!?](?:\\s|$)/g)||[]).length;if(sentences>3)errors.push('Level 8.5 stems must be no more than three sentences.');
   if(!q.sourceExcerpt&&!q.citation)errors.push('A source excerpt or citation is required before approval.');
   return errors
 }
