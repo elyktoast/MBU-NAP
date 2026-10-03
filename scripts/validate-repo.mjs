@@ -706,6 +706,8 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!studio.includes("loadStyle?.('question-generator-ui.css')")||studio.includes("loadCSS?.('question-generator-ui.css')"))fail('Gemini generator stylesheet is not wired through the shared style loader');
  if(!edge.includes('LEVEL 8.5 ITEM-WRITING RULES')||!edge.includes('Context-Elimination Test')||!edge.includes('Avoid crisis creep')||!edge.includes('Name the trap')||!edge.includes('minItems:4,maxItems:4'))fail('Gemini Level 8.5 item-writing directive/schema is incomplete');
  for(const token of ['Level 8.5 questions require exactly four answer choices.','The Core Concept:','Why the Correct Answer Wins:','The Trap Identified:','Distractor Breakdown:','no more than three sentences'])if(!generator.includes(token))fail('Generated-question Level 8.5 approval guard missing '+token);
+ for(const token of ['shuffleOptions','crypto.getRandomValues','numericOption','Correct answer is more than 15% longer','Lead-in must not end with an indefinite article','distractorTypes'])if(!generator.includes(token))fail('Generated-question structural quality guard missing '+token);
+ for(const token of ['Lead-in grammar:','Mutual exclusivity:','Numeric/directional ordering:','Single-flaw distractors:','Distractor typology:','Length-cue protection:','Key position is NOT part of item design','distractorTypes'])if(!edge.includes(token))fail('Gemini distractor-quality contract missing '+token);
  if(bpManifest.features?.questionGenerator?.enabled!==true||bpManifest.features?.questionGenerator?.provider!=='gemini')fail('Basic Principles Gemini question generator configuration is incomplete');
 }
 
