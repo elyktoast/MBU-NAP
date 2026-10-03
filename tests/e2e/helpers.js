@@ -7,9 +7,7 @@ async function clearAppState(page) {
   await page.route(cloud+'/rest/v1/rpc/snar_guest_heartbeat', route => route.fulfill({ status:200, contentType:'application/json', body:'true' }));
   await page.route(cloud+'/rest/v1/rpc/snar_has_current_legal_acceptance', route => route.fulfill({ status:200, contentType:'application/json', body:'true' }));
   await page.route(cloud+'/rest/v1/rpc/snar_account_access_status', route => route.fulfill({ status:200, contentType:'application/json', body:'"active"' }));
-  await page.goto('/');
-  await page.evaluate(() => window.MBUPageReady);
-  await page.evaluate(() => {
+  await page.addInitScript(() => {
     localStorage.clear();sessionStorage.clear();
     const now=Math.floor(Date.now()/1000);
     localStorage.setItem('snar_legal_acceptance_v6',JSON.stringify({version:'2026-09-27-v6',acceptedAt:new Date().toISOString()}));
