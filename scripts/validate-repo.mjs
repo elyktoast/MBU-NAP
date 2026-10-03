@@ -507,6 +507,12 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
  if(studio.includes("syncCanonical('combined'"))fail('Studio Phase 3 still applies the index-based sync path to Combined ID-keyed state');
 }
 
+// Build assets are single-execution dependencies. Concurrent requests must share the same load promise.
+{
+ const boot=read('equipment/assets/build-bootstrap.js');
+ for(const token of ['styleLoads=new Map()','scriptLoads=new Map()','scriptLoads.get(key)','scriptLoads.set(key,pending)'])if(!boot.includes(token))fail('Build asset loader idempotency contract missing: '+token);
+}
+
 // Modular Studio boundary: core owns data/orchestration, runtime owns UI/session behavior, and loader starts only after both exist.
 {
  const core=read('equipment/assets/studio-page.js'),runtime=read('equipment/assets/studio-runtime.js'),loader=read('equipment/assets/studio-loader.js');
