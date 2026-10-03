@@ -1,6 +1,6 @@
 /* Exam 1 dashboard: continue studying, recent activity, personal mastery, and manifest-driven bank cards. */
 (()=>{'use strict';
-const host=document.getElementById('examCards'),runtime=window.MBUBuild,ctx=window.MBU_CONTEXT||{},exam=ctx.examUrl?new URL(ctx.examUrl,location.href):new URL('../exam-1/',runtime.assetsBase);
+const runtime=window.MBUBuild,ctx=window.MBU_CONTEXT||{},exam=ctx.examUrl?new URL(ctx.examUrl,location.href):new URL('../exam-1/',runtime.assetsBase);
 const safe=key=>{try{return JSON.parse(localStorage.getItem(key)||'null')}catch{return null}};
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 function continueForBank(b){
@@ -45,8 +45,8 @@ function renderMastery(){
 async function render(){
  try{
   const m=await runtime.fetchJSON(new URL('banks.json',exam),{cache:'no-store'});renderContinue(m);renderActivity();renderMastery();
-  for(const b of m.banks||[]){const c=document.createElement('div');c.className='card';const n=document.createElement('div');n.className='number';n.textContent=b.id==='bank1'?'1':b.id==='bank2'?'2':b.id==='bank3'?'3':b.id==='combined'?'C':b.id==='hazards'?'H':'•';const h=document.createElement('h2');h.textContent=b.label;const credit=document.createElement('div');credit.className='builder-credit';credit.textContent='Built with '+(b.creator||'Claude');const p=document.createElement('p');p.textContent=b.description||'';const a=document.createElement('a');a.className='btn';a.href=b.page||((m.bankPage||'bank.html')+'?bank='+encodeURIComponent(b.id));a.textContent='Open '+b.label+' →';c.append(n,h,credit,p,a);host.append(c)}
- }catch(e){console.error('Exam bank manifest failed',e);const c=document.createElement('div');c.className='card';c.innerHTML='<h2>Quiz banks could not load</h2><p>Tap SRNA Study Tool to hard refresh this page.</p>';host.append(c)}
+
+ }catch(e){console.error('Exam bank manifest failed',e);document.getElementById('masteryPanel').innerHTML='<div class="dash-empty">Dashboard data could not load. Tap SRNA Study Tool to hard refresh this page.</div>'}
 }
 render()
 })();
