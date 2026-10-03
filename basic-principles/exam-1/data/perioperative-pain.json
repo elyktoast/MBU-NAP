@@ -6785,17 +6785,17 @@
       "id": "PAIN-275",
       "set": 1,
       "type": "single",
-      "stem": "A highly opioid-tolerant patient has diminishing analgesic benefit and increasing adverse effects despite escalating hydromorphone. Which strategy may improve response without simply increasing the same drug?",
+      "stem": "A patient with long-term high-dose opioid therapy reports worsening diffuse pain as opioid doses rise, without a new surgical complication. Which phenomenon should enter the differential?",
       "options": [
-        "Opioid rotation, often to methadone",
-        "Stop opioids and use NSAIDs alone",
-        "Switch to nalbuphine",
-        "Automatically add a basal hydromorphone infusion"
+        "Opioid-induced hyperalgesia",
+        "Complete loss of nociception",
+        "Local-anesthetic systemic toxicity",
+        "Acute serotonin deficiency"
       ],
       "answer": [
         0
       ],
-      "explanation": "Opioid rotation can exploit incomplete cross-tolerance when escalating one opioid produces more toxicity without proportional analgesia. Methadone may be useful in selected tolerant patients, but its long variable half-life and complex conversion require conservative dosing and expertise.",
+      "explanation": "Paradoxically increasing diffuse pain with escalating opioid exposure can suggest opioid-induced hyperalgesia, although tolerance and disease progression must also be considered. Management emphasizes reassessment and multimodal strategies rather than reflexive escalation of the same opioid.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -7270,17 +7270,17 @@
       "id": "PAIN-295",
       "set": 1,
       "type": "single",
-      "stem": "Two patients undergo the same laparoscopic procedure but report different pain intensity and opioid effects. Which principle should guide dosing?",
+      "stem": "Two patients undergo the same laparoscopic procedure. One has severe pain with minimal opioid sedation; the other has mild pain but marked opioid-related somnolence. What principle should guide dosing?",
       "options": [
-        "Individualize treatment to each patient's pain, function, prior opioid exposure, comorbidities, and response rather than using sex alone to predict dose",
-        "Women universally require more opioid than men",
-        "Men universally report more postoperative pain than women",
-        "Sex determines an exact opioid dose for a given procedure"
+        "Titrate analgesia to each patient's pain, function, and adverse effects rather than using identical doses",
+        "Give both patients the same opioid dose because the surgery is identical",
+        "Treat the somnolent patient more aggressively because pain scores are lower",
+        "Use age alone to determine analgesic dose"
       ],
       "answer": [
         0
       ],
-      "explanation": "Group-level sex differences in pain and analgesic response have been reported, but substantial individual variation prevents sex alone from reliably determining an individual patient's opioid requirement.",
+      "explanation": "Analgesic requirements and opioid sensitivity vary substantially among patients even after the same procedure. Dosing should integrate pain intensity, functional goals, sedation, ventilation, comorbidity, and prior opioid exposure rather than applying identical regimens.",
       "citation": "",
       "topic": "Planning and phase cases",
       "sourceTitle": "Perioperative Pain Management",
@@ -10239,17 +10239,17 @@
       "id": "PAIN-418",
       "set": 1,
       "type": "single",
-      "stem": "A protocol specifies a magnesium loading dose of 50 mg/kg. What loading dose does that protocol calculate for a 90 kg patient?",
+      "stem": "A magnesium infusion is being considered as an analgesic adjunct in a patient with significant renal impairment. Which issue is most important?",
       "options": [
-        "4.5 g",
-        "450 mg",
-        "9 g",
-        "2.25 g"
+        "Reduced renal clearance can increase magnesium accumulation and toxicity risk",
+        "Renal impairment causes magnesium to be eliminated faster",
+        "Magnesium has no neuromuscular effects",
+        "Kidney function matters only for oral magnesium"
       ],
       "answer": [
         0
       ],
-      "explanation": "50 mg/kg × 90 kg = 4,500 mg = 4.5 g. This is a calculation exercise; actual perioperative magnesium regimens are individualized.",
+      "explanation": "Magnesium is cleared primarily by the kidneys, so significant renal impairment can promote accumulation. If used, dosing and monitoring should account for renal function and potential hypotension, bradycardia, weakness, and potentiation of neuromuscular blockade.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10311,17 +10311,17 @@
       "id": "PAIN-421",
       "set": 1,
       "type": "single",
-      "stem": "A protocol specifies ketamine 0.15 mg/kg/hr. What infusion rate does that protocol calculate for a 50 kg patient?",
+      "stem": "A ketamine infusion provides useful analgesia but the patient develops distressing hallucinations and sympathetic stimulation. What is the best principle for continued use?",
       "options": [
-        "7.5 mg/hr",
-        "5 mg/hr",
-        "10 mg/hr",
-        "15 mg/hr"
+        "Reassess dose and risk-benefit rather than escalating automatically",
+        "Increase the infusion because adverse effects prove underdosing",
+        "Stop all multimodal analgesia permanently",
+        "Add a long-acting opioid solely to suppress hallucinations"
       ],
       "answer": [
         0
       ],
-      "explanation": "0.15 mg/kg/hr × 50 kg = 7.5 mg/hr. Clinical infusion rates should be individualized.",
+      "explanation": "Ketamine's analgesic benefit must be balanced against psychotomimetic and cardiovascular effects. Dose reduction, discontinuation, or selected adjunctive management may be appropriate depending on severity and clinical context; adverse effects should not trigger automatic escalation.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
