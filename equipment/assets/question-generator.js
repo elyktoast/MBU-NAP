@@ -70,6 +70,7 @@ async function generate(name,request){
   const raw=Array.isArray(out)?out:(out?.questions||[]);
   if(!Array.isArray(raw))throw Error('Generator returned an invalid question list.');
   const drafts=raw.map(q=>normalizeQuestion(q,{provider:name,sourceName:request?.sourceName,difficulty:request?.difficulty,citation:request?.citation}));
+  const invalid=drafts.map((q,i)=>({i,errors:validateQuestion(q)})).filter(x=>x.errors.length);if(invalid.length)throw Error('Generated questions failed quality validation: '+invalid.map(x=>'#'+(x.i+1)+' '+x.errors.join(' ')).join(' | '));
   const s=state();s.drafts.push(...drafts);save(s);return drafts
 }
 function addDraft(q,meta={}){const s=state(),draft=normalizeQuestion(q,meta);s.drafts.push(draft);save(s);return draft}
