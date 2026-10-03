@@ -10239,7 +10239,7 @@
       "id": "PAIN-418",
       "set": 1,
       "type": "single",
-      "stem": "Case N: A 90 kg patient receives magnesium infusion. What is the bolus?",
+      "stem": "A protocol specifies a magnesium loading dose of 50 mg/kg. What loading dose does that protocol calculate for a 90 kg patient?",
       "options": [
         "4.5 g",
         "450 mg",
@@ -10249,7 +10249,7 @@
       "answer": [
         0
       ],
-      "explanation": "50 mg/kg × 90 kg = 4,500 mg.",
+      "explanation": "50 mg/kg × 90 kg = 4,500 mg = 4.5 g. This is a calculation exercise; actual perioperative magnesium regimens are individualized.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10263,7 +10263,7 @@
       "id": "PAIN-419",
       "set": 1,
       "type": "single",
-      "stem": "Case N: A 90 kg patient receives a magnesium infusion at 8 mg/kg/hr. What is the hourly rate?",
+      "stem": "A protocol specifies a magnesium infusion of 8 mg/kg/hr. What rate does that protocol calculate for a 90 kg patient?",
       "options": [
         "720 mg/hr",
         "72 mg/hr",
@@ -10273,7 +10273,7 @@
       "answer": [
         0
       ],
-      "explanation": "8 mg/kg/hr × 90 kg = 720 mg/hr.",
+      "explanation": "8 mg/kg/hr × 90 kg = 720 mg/hr. The calculation does not imply that this rate is appropriate for every patient.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10287,7 +10287,7 @@
       "id": "PAIN-420",
       "set": 1,
       "type": "single",
-      "stem": "Case O: A 50 kg patient receives ketamine infusion. What is the bolus dose?",
+      "stem": "A protocol specifies a ketamine bolus of 0.2 mg/kg. What bolus does that protocol calculate for a 50 kg patient?",
       "options": [
         "10 mg",
         "5 mg",
@@ -10297,7 +10297,7 @@
       "answer": [
         0
       ],
-      "explanation": "0.2 mg/kg × 50 kg = 10 mg.",
+      "explanation": "0.2 mg/kg × 50 kg = 10 mg. Clinical subanesthetic ketamine dosing varies by indication and protocol.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10311,7 +10311,7 @@
       "id": "PAIN-421",
       "set": 1,
       "type": "single",
-      "stem": "Case O: A 50 kg patient receives a ketamine infusion at 0.15 mg/kg/hr. What is the hourly infusion rate?",
+      "stem": "A protocol specifies ketamine 0.15 mg/kg/hr. What infusion rate does that protocol calculate for a 50 kg patient?",
       "options": [
         "7.5 mg/hr",
         "5 mg/hr",
@@ -10321,7 +10321,7 @@
       "answer": [
         0
       ],
-      "explanation": "0.15 mg/kg/hr × 50 kg = 7.5 mg/hr.",
+      "explanation": "0.15 mg/kg/hr × 50 kg = 7.5 mg/hr. Clinical infusion rates should be individualized.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10719,17 +10719,17 @@
       "id": "PAIN-438",
       "set": 1,
       "type": "single",
-      "stem": "A patient maintained on methadone has an unexpectedly variable response to perioperative dosing despite adherence. Which property of methadone complicates prediction of dose and effect?",
+      "stem": "A patient maintained on methadone has an unexpectedly variable response to perioperative dosing despite adherence. Which property of methadone most complicates prediction of dose and effect?",
       "options": [
-        "Substantial interpatient pharmacokinetic and genetic variability",
+        "Wide interpatient variability in pharmacokinetics, pharmacodynamics, and elimination half-life",
         "A uniformly short elimination half-life",
-        "Exclusive UGT metabolism",
-        "Absence of NMDA-receptor activity"
+        "Exclusive renal elimination unchanged",
+        "Absence of clinically important drug interactions"
       ],
       "answer": [
         0
       ],
-      "explanation": "Methadone response varies with CYP2D6, OPRM1, and ABCB1.",
+      "explanation": "Methadone has substantial interpatient variability in metabolism, effect, and elimination half-life, with important drug interactions. Its behavior should not be reduced to a single CYP2D6 or genetic explanation.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10777,7 +10777,7 @@
       "answer": [
         0
       ],
-      "explanation": "Itching is an adverse effect, not true allergy.",
+      "explanation": "Isolated opioid-associated pruritus is commonly a pharmacologic adverse effect or non-IgE-mediated histamine-related reaction rather than IgE-mediated anaphylaxis. The exact historical features should be clarified and documented.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
@@ -10801,7 +10801,7 @@
       "answer": [
         0
       ],
-      "explanation": "Erythema and facial swelling suggest true allergy.",
+      "explanation": "Facial swelling/angioedema is more concerning than isolated pruritus and warrants careful evaluation of the original reaction and alternatives. It raises concern for serious hypersensitivity but does not by itself prove an IgE-mediated opioid allergy.",
       "citation": "",
       "topic": "Multi-step patient scenarios",
       "sourceTitle": "Perioperative Pain Management",
