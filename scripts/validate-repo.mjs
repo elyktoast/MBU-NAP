@@ -510,7 +510,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 // Build assets are single-execution dependencies. Concurrent requests must share the same load promise.
 {
  const boot=read('equipment/assets/build-bootstrap.js');
- for(const token of ['styleLoads=new Map()','scriptLoads=new Map()','scriptLoads.get(key)','scriptLoads.set(key,pending)'])if(!boot.includes(token))fail('Build asset loader idempotency contract missing: '+token);
+ for(const token of ['loads=new Map()','once=(key,make)=>loads.get(key)','once(\'c\'+href','once(\'j\'+url.href'])if(!boot.includes(token))fail('Build asset loader idempotency contract missing: '+token);
 }
 
 // Modular Studio boundary: core owns data/orchestration, runtime owns UI/session behavior, and loader starts only after both exist.
