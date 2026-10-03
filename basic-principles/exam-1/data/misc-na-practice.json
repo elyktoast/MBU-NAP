@@ -1224,21 +1224,21 @@
       "id": "MISC-051",
       "set": 1,
       "type": "multi",
-      "stem": "Repeated undertreatment of postoperative pain can produce which three long-term harms? (Select 3)",
+      "stem": "Poorly controlled acute postoperative pain can contribute to which THREE clinically important harms? (Select 3)",
       "options": [
-        "Disability",
-        "Drug dependence",
-        "Mortality",
+        "Impaired mobilization and functional recovery",
+        "Pulmonary complications from splinting and ineffective cough",
+        "Greater risk of persistent postsurgical pain in susceptible patients",
+        "Predictably causes substance-use disorder",
         "Faster recovery",
-        "Improved sleep",
-        "Lower costs"
+        "Lower physiologic stress"
       ],
       "answer": [
         0,
         1,
         2
       ],
-      "explanation": "Undertreated pain can lead to disability, drug dependence, and even mortality.",
+      "explanation": "Inadequately controlled postoperative pain can impair mobility and respiratory function and is associated with worse recovery and persistent postsurgical pain. It should not be taught as predictably causing drug dependence or mortality by itself.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -1300,17 +1300,17 @@
       "id": "MISC-054",
       "set": 1,
       "type": "single",
-      "stem": "A rural hospital lacks pediatric anesthesia specialists and is caring for a young child with a URI. Why are pediatric patients emphasized in equity discussions?",
+      "stem": "A rural hospital lacks pediatric anesthesia specialists and is caring for a young child with an active URI. Why can this create an equity concern?",
       "options": [
-        "They may have higher respiratory risk while also facing less access to pediatric specialists",
-        "Children have lower anesthesia risk than adults",
-        "Children mainly differ because of PONV",
-        "Children rarely need specialized perioperative care"
+        "Young children with respiratory risk factors may benefit from pediatric anesthesia expertise that is not equally accessible in all locations",
+        "Children uniformly have lower anesthesia risk than adults",
+        "Pediatric anesthesia differs only because of PONV",
+        "Specialized pediatric perioperative care is never clinically relevant"
       ],
       "answer": [
         0
       ],
-      "explanation": "Children have higher perioperative respiratory risk, and many lack access to pediatric anesthesia specialists.",
+      "explanation": "Age, active respiratory illness, procedure, and comorbidities can increase perioperative respiratory risk in children. Geographic differences in access to pediatric anesthesia expertise can therefore create an important care-access issue.",
       "citation": "",
       "topic": "Social determinants and health equity",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2372,9 +2372,9 @@
       "id": "MISC-097",
       "set": 1,
       "type": "multi",
-      "stem": "A study comparing two antiemetic regimens must uphold which three ethical principles? (Select 3)",
+      "stem": "Under the Belmont Report, which THREE ethical principles guide research involving human participants? (Select 3)",
       "options": [
-        "Autonomy",
+        "Respect for persons",
         "Beneficence",
         "Justice",
         "Paternalism",
@@ -2386,7 +2386,7 @@
         1,
         2
       ],
-      "explanation": "Research upholds autonomy, beneficence, and justice.",
+      "explanation": "The Belmont Report identifies respect for persons, beneficence, and justice as the three foundational ethical principles for human-subject research.",
       "citation": "",
       "topic": "Cultural competence and research ethics",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -2453,13 +2453,13 @@
       "id": "MISC-100",
       "set": 1,
       "type": "multi",
-      "stem": "Which four groups require added protections as vulnerable populations in human-subject research? (Select 4)",
+      "stem": "Which FOUR groups are covered by specific federal subparts or commonly require additional safeguards in human-subject research? (Select 4)",
       "options": [
-        "Pregnant women and fetuses",
-        "Minors",
+        "Pregnant women, human fetuses, and neonates",
+        "Children",
         "Prisoners",
-        "Adults unable to consent",
-        "Healthy adult volunteers",
+        "Adults with impaired decision-making capacity",
+        "Healthy competent adult volunteers solely because they are adults",
         "Retired physicians"
       ],
       "answer": [
@@ -2468,7 +2468,7 @@
         2,
         3
       ],
-      "explanation": "Vulnerable research populations include pregnant women and fetuses, minors, prisoners, and those unable to consent.",
+      "explanation": "Federal regulations contain additional protections for pregnant women/fetuses/neonates, prisoners, and children. Adults with impaired decision-making capacity may also require added safeguards, although they are not a separate HHS subpart in the same way.",
       "citation": "",
       "topic": "Cultural competence and research ethics",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
