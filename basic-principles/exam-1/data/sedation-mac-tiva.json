@@ -9718,7 +9718,7 @@
       "answer": [
         0
       ],
-      "explanation": "Closed-claims analyses have identified severe respiratory events and catastrophic outcomes in NORA claims. Because claims databases are selected medicolegal samples, they highlight recurring hazards and system vulnerabilities but do not directly measure the incidence of complications in all NORA anesthetics.",
+      "explanation": "Closed-claims analyses of NORA have repeatedly highlighted severe respiratory events and catastrophic outcomes in remote procedural environments. They are useful for identifying recurring failure patterns and system vulnerabilities, but because the database contains selected medicolegal claims rather than all anesthetics, it cannot provide a population complication rate.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9742,7 +9742,7 @@
       "answer": [
         0
       ],
-      "explanation": "A greater proportion of death among NORA claims describes the severity distribution within that selected claims dataset. It cannot be converted directly into a mortality rate or relative risk for all NORA versus OR anesthetics.",
+      "explanation": "A higher proportion of deaths among NORA claims describes the composition and severity of cases that entered that medicolegal dataset. Without a denominator of all NORA and OR anesthetics, the finding cannot establish mortality incidence or a population-level relative risk.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9766,7 +9766,7 @@
       "answer": [
         0
       ],
-      "explanation": "Closed-claims databases contain selected adverse medicolegal cases rather than a denominator of all anesthetics. Their percentages are useful for identifying patterns and hazards, but they cannot establish population incidence or be applied directly to an individual patient's absolute risk.",
+      "explanation": "Closed-claims databases preferentially contain adverse events that generated medicolegal claims and therefore lack the denominator of all anesthetics performed. Their percentages are valuable for identifying recurring hazards and severity patterns but should not be interpreted as complication incidence or direct comparative risk.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9790,7 +9790,7 @@
       "answer": [
         0
       ],
-      "explanation": "Historical claims analyses can appropriately flag aspiration as an important NORA hazard and justify strong prevention/rescue systems. Because claims lack a denominator of all anesthetics, a claims proportion should not be presented as the patient's population incidence or relative risk.",
+      "explanation": "Remote location does not reduce the physiologic consequences of anesthesia. NORA sites should provide monitoring, oxygen, suction, ventilation and airway equipment, emergency drugs, electrical safety, and a rescue plan appropriate to the anesthetic so deterioration can be managed without waiting for operating-room resources.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9814,7 +9814,7 @@
       "answer": [
         0
       ],
-      "explanation": "Many NORA deaths are tied to respiratory depression or inadequate ventilation during MAC.",
+      "explanation": "Sedation can progress unexpectedly to apnea, obstruction, hemodynamic instability, or a need for general anesthesia regardless of physical location. A NORA environment must therefore allow immediate rescue and conversion rather than relying on delayed transport to the operating room.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9838,7 +9838,7 @@
       "answer": [
         0
       ],
-      "explanation": "Cardiology and radiology suites have a high burden of hemodynamic instability in NORA claims.",
+      "explanation": "Limited access to the patient's head increases the consequences of airway obstruction because routine maneuvers and advanced airway placement may be delayed. The anesthetic plan should account for how rapidly the procedure can stop and how the anesthesia professional will physically reach the airway.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9862,7 +9862,7 @@
       "answer": [
         0
       ],
-      "explanation": "Closed claims are selected medicolegal cases and do not include the denominator of all procedures performed. They can reveal recurring failure patterns and severity but cannot, by themselves, establish a per-case complication incidence.",
+      "explanation": "Supplemental oxygen can preserve SpO2 while ventilation is deteriorating, especially during sedation. Capnography can identify apnea, obstruction, or hypoventilation earlier, while direct observation and clinical assessment remain essential because no single monitor replaces the others.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9891,7 +9891,7 @@
         2,
         3
       ],
-      "explanation": "NORA claims show more respiratory events, aspiration, deaths, catastrophic outcomes, and higher payouts.",
+      "explanation": "Transport after sedative or opioid administration remains part of the period of drug effect. Respiratory depression and obstruction can occur en route, so monitoring and personnel/equipment capable of immediate airway and ventilatory rescue should continue during transport.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9915,7 +9915,7 @@
       "answer": [
         0
       ],
-      "explanation": "The provider was conversing with the gastroenterologist and not attending to monitors.",
+      "explanation": "MRI creates both access and equipment constraints: the patient may be physically distant inside the bore and ferromagnetic equipment can become a projectile or malfunction. Monitoring and rescue devices must be MRI-compatible, and the team needs a plan to stop scanning and rapidly move the patient to a location where airway resuscitation can be performed safely.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9939,7 +9939,7 @@
       "answer": [
         0
       ],
-      "explanation": "Capnography would have shown apnea immediately; acting on it would have prevented progression to arrest.",
+      "explanation": "In the MRI environment, an airway emergency may require removing the patient from the bore before full resuscitation is possible. The team should therefore plan in advance how scanning stops, how the patient is extracted, where resuscitation occurs, and which MRI-safe equipment accompanies the patient.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9963,7 +9963,7 @@
       "answer": [
         0
       ],
-      "explanation": "Untreated apnea leads to hypoxemia and hypercarbia, then bradycardia, and finally asystole.",
+      "explanation": "Endoscopy combines shared-airway conditions, procedural stimulation, aspiration risk, and frequent deep sedation. The anesthetic plan should integrate patient comorbidity, airway difficulty, reflux/fasting status, procedural requirements, and the ability to rescue ventilation or secure the airway.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -9987,7 +9987,7 @@
       "answer": [
         0
       ],
-      "explanation": "Monitoring prevents harm only when the provider is watching and responds to alarms.",
+      "explanation": "Severe OSA increases susceptibility to pharyngeal collapse during sedation, and difficult airway anatomy increases the consequences if obstruction cannot be relieved. These factors do not automatically mandate one technique, but they lower the margin for deep sedation with an unsecured airway and strengthen the need for a robust rescue plan.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10011,7 +10011,7 @@
       "answer": [
         0
       ],
-      "explanation": "Sedation in holding without continuous monitoring during transport can lead to unrecognized respiratory depression.",
+      "explanation": "Active regurgitation indicates ongoing aspiration risk, while deep sedation depresses airway tone and protective responses. When aspiration risk and difficult airway rescue coexist, the decision between an unsecured and secured airway should be based on the combined patient and procedural risk rather than a routine preference for MAC.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10035,7 +10035,7 @@
       "answer": [
         0
       ],
-      "explanation": "Patients who receive sedation need continuous monitoring and airway readiness during transport.",
+      "explanation": "Facial drapes can restrict immediate airway access and trap supplemental oxygen near an ignition source. Even light sedation can deepen unexpectedly, so the team must preserve access for rescue while minimizing oxygen accumulation and coordinating cautery use.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10059,7 +10059,7 @@
       "answer": [
         0
       ],
-      "explanation": "Heart failure, recent pulmonary edema, and significant coronary disease reduce cardiopulmonary reserve, increasing the potential consequence of hypoxemia, hypercapnia, and delayed recognition of respiratory depression.",
+      "explanation": "Cataract surgery often needs immobility but usually causes limited pain when topical or regional anesthesia is effective. Excessive systemic sedation can create more risk through obstruction or movement than benefit, so small titrated doses and patient cooperation are often preferable.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10083,7 +10083,7 @@
       "answer": [
         0
       ],
-      "explanation": "Case 2 involved inadequate monitoring during transport in a patient with CHF and recent pulmonary edema.",
+      "explanation": "Beach-chair positioning creates a hydrostatic gradient between the arm and brain when the blood-pressure cuff is below head level. Cerebral arterial pressure can therefore be lower than the displayed arm pressure, so pressure targets and transducer/cuff reference level should be interpreted in relation to brain height.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10107,7 +10107,7 @@
       "answer": [
         0
       ],
-      "explanation": "Sedated patients need monitoring during transport because respiratory depression can occur quickly.",
+      "explanation": "Sedation during prone procedures is hazardous when airway access is limited because obstruction or apnea may be difficult to correct quickly. Recurrent obstruction or escalating sedative requirements should prompt reassessment of whether a secured airway is safer before rescue becomes emergent.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10131,7 +10131,7 @@
       "answer": [
         0
       ],
-      "explanation": "Her CHF and recent pulmonary edema left little reserve, so sedation caused rapid deterioration.",
+      "explanation": "Local anesthetic systemic toxicity can initially present with neurologic symptoms and progress to seizures, conduction abnormalities, arrhythmias, hypotension, or cardiovascular collapse. Recognition should trigger immediate airway/circulatory support, seizure management, and lipid-emulsion therapy according to current LAST protocols.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10155,7 +10155,7 @@
       "answer": [
         0
       ],
-      "explanation": "Both cases involved respiratory arrest from sedation that was not recognized in time.",
+      "explanation": "LAST risk is determined by total dose, injection site vascularity, inadvertent intravascular injection, absorption, and patient susceptibility. Combining multiple local-anesthetic sources can unintentionally raise cumulative exposure, so all administered local anesthetic should be tracked across the team.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10179,7 +10179,7 @@
       "answer": [
         0
       ],
-      "explanation": "Continuous attention to capnography and the patient would detect apnea early.",
+      "explanation": "A test dose or incremental injection can reduce but not eliminate the possibility of intravascular local-anesthetic administration. Continuous communication, aspiration/incremental dosing when appropriate, cumulative-dose tracking, and readiness to treat LAST remain necessary.",
       "citation": "",
       "topic": "NORA and closed claims",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10203,7 +10203,7 @@
       "answer": [
         0
       ],
-      "explanation": "Topical anesthesia and light anxiolysis allow cooperation and minimize airway risk under drapes.",
+      "explanation": "A remote location needs immediate access to the specific rescue resources required by the planned technique. If large-dose local anesthetic is used, that includes a LAST response plan and lipid emulsion in addition to standard airway, ventilation, monitoring, and resuscitation equipment.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10227,7 +10227,7 @@
       "answer": [
         0
       ],
-      "explanation": "Deep sedation risks obstruction in OSA, and drapes plus Mallampati III make rescue difficult.",
+      "explanation": "Oxygen delivery near the face can enrich the atmosphere under drapes, and electrocautery supplies an ignition source. The safest plan minimizes oxygen concentration and pooling while maintaining adequate oxygenation and coordinates any change in oxygen delivery with use of the ignition source.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10251,7 +10251,7 @@
       "answer": [
         0
       ],
-      "explanation": "Small titrated anxiolytic doses reduce anxiety while preserving cooperation and airway safety.",
+      "explanation": "If a fire occurs on or near the patient, the team must immediately stop the ignition source, stop oxidizer flow as appropriate, remove burning materials, extinguish the fire, and then manage the airway or injuries according to location and clinical condition. Prevention depends on team communication before ignition sources are activated.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10275,7 +10275,7 @@
       "answer": [
         0
       ],
-      "explanation": "Limiting oxygen under the drapes reduces oxygen enrichment and fire risk.",
+      "explanation": "Propofol's rapid titratability makes it useful for endoscopy, but deepening sedation can rapidly produce apnea and hypotension. The appropriate dose is therefore the minimum titrated to procedural conditions, with continuous ventilation assessment and immediate airway-rescue capability.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10299,7 +10299,7 @@
       "answer": [
         0
       ],
-      "explanation": "Prior poor tolerance suggests a need for deeper sedation and analgesia. MAC with propofol is appropriate for a low-risk airway.",
+      "explanation": "A proceduralist's request for deeper sedation does not override the anesthesia professional's responsibility to maintain a safe physiologic state. If deeper sedation would create unacceptable airway, aspiration, or hemodynamic risk, the technique should be modified or converted rather than simply escalating drug dose.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10323,7 +10323,7 @@
       "answer": [
         0
       ],
-      "explanation": "Deep sedation depresses protective airway responses. During colonoscopy, factors that increase regurgitation risk or gastric pressure should heighten attention to aspiration, particularly when the airway is unsecured; aspiration risk still depends on the patient's overall fasting and gastrointestinal risk profile.",
+      "explanation": "Repeated movement during MAC may reflect inadequate local anesthesia, pain, anxiety, positioning discomfort, hypoxemia/hypercapnia, or inability to tolerate the procedure. Treating every movement with more hypnotic can produce apnea without correcting the underlying problem.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10347,7 +10347,7 @@
       "answer": [
         0
       ],
-      "explanation": "Continuous capnography detects hypoventilation during propofol sedation.",
+      "explanation": "If local or regional anesthesia is inadequate, systemic sedation may need to be pushed to unsafe depth merely to suppress pain and movement. Correcting the analgesic/anesthetic deficit or converting to a technique that reliably provides surgical anesthesia is safer than using hypnosis as a substitute for analgesia.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10371,7 +10371,7 @@
       "answer": [
         0
       ],
-      "explanation": "High aspiration and airway risk with a shared airway favors a secured airway.",
+      "explanation": "A patient who repeatedly obstructs whenever jaw thrust is released is demonstrating persistent loss of upper-airway patency at the current depth. An airway adjunct, reduction in sedative depth, or escalation to a secured airway should be considered rather than relying indefinitely on manual rescue.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10395,7 +10395,7 @@
       "answer": [
         0
       ],
-      "explanation": "Active regurgitation plus delayed gastric emptying from semaglutide greatly increase aspiration risk.",
+      "explanation": "Rising ETCO2 with a falling respiratory rate is direct evidence of worsening alveolar ventilation. Supplemental oxygen may delay desaturation, so management should address ventilation by reducing depressant drugs, stimulating/repositioning, supporting ventilation, and escalating the airway plan when needed.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10422,7 +10422,7 @@
         0,
         1
       ],
-      "explanation": "Severe OSA on CPAP and a Mallampati IV airway with limited opening are high-risk factors. Controlled hypothyroidism and hypertension are not.",
+      "explanation": "The earliest sign of opioid or sedative respiratory depression may be a change in respiratory rate, capnography, or airway patency rather than SpO2. Oxygen saturation can remain deceptively normal when supplemental oxygen is being delivered.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10446,7 +10446,7 @@
       "answer": [
         0
       ],
-      "explanation": "WALANT allows the patient to remain awake. Minimal sedation can address mild anxiety.",
+      "explanation": "A flat capnogram can result from true apnea, complete obstruction, circuit/sampling disconnection, or technical failure. The first action is direct patient assessment of breathing and airway while the sampling system is checked, because assuming artifact can delay rescue of real apnea.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10470,7 +10470,7 @@
       "answer": [
         0
       ],
-      "explanation": "Patients under minimal sedation may hear and see the procedure, so expectations should be discussed.",
+      "explanation": "Severe hypotension during MAC can reflect drug effect, hypovolemia, hemorrhage, vagal stimulation, cardiac disease, or another acute process. Management should simultaneously reduce contributing anesthetic effect when appropriate, identify the cause, and restore perfusion rather than treating a monitor value in isolation.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10494,7 +10494,7 @@
       "answer": [
         0
       ],
-      "explanation": "TIVA reduces PONV and allows GA to prevent awareness.",
+      "explanation": "Bradycardia with hypotension after dexmedetomidine is consistent with excessive alpha-2-mediated sympatholysis. Reducing or stopping the infusion and treating clinically significant bradycardia/hypotension is appropriate while other causes are considered.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10518,7 +10518,7 @@
       "answer": [
         0
       ],
-      "explanation": "A regional block reduces opioid needs, which helps with PONV and comorbidities.",
+      "explanation": "Ketamine often supports blood pressure through sympathetic stimulation, but patients with depleted catecholamine stores or severe cardiac disease may not mount the expected response and can reveal ketamine's direct myocardial-depressant effect. Hemodynamic support must therefore be individualized.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10542,7 +10542,7 @@
       "answer": [
         0
       ],
-      "explanation": "Reduced EF and CAD increase propofol's hypotensive effect, so doses should be reduced.",
+      "explanation": "Remifentanil's very rapid offset allows precise intraoperative titration but leaves little residual analgesia after discontinuation. Longer-acting analgesia should be established before stopping the infusion to avoid abrupt severe pain during emergence.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10566,7 +10566,7 @@
       "answer": [
         0
       ],
-      "explanation": "Previous failed oral anxiolysis and need for immobility suggest deep sedation or GA.",
+      "explanation": "Because propofol has no specific antagonist, apnea after propofol is managed by stopping or reducing drug delivery and restoring airway patency and ventilation until the effect dissipates. Flumazenil and naloxone only reverse benzodiazepines and opioids, respectively.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10594,7 +10594,7 @@
         1,
         2
       ],
-      "explanation": "MRI suites are remote with limited airway access and prone positioning adds difficulty.",
+      "explanation": "Flumazenil reverses benzodiazepine receptor effects but does not reverse opioid-induced respiratory depression. When midazolam and fentanyl were both given, airway and ventilation support remains primary and naloxone may be needed for the opioid component.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10618,7 +10618,7 @@
       "answer": [
         0
       ],
-      "explanation": "Prone positioning makes direct airway access, mask ventilation, and rapid repositioning more difficult if respiratory deterioration occurs. Prone positioning does not itself guarantee airway edema.",
+      "explanation": "Naloxone can reverse opioid respiratory depression but does not reverse benzodiazepine sedation. Mixed-drug respiratory depression therefore requires ventilatory support and selective reversal based on the contributing agents rather than assuming one antagonist will normalize the entire anesthetic.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10648,7 +10648,7 @@
         3,
         4
       ],
-      "explanation": "A complete sedation plan addresses anesthetic selection, the procedure, patient selection, pharmacologic management, and monitoring and safety.",
+      "explanation": "Remimazolam is a benzodiazepine, so flumazenil can antagonize its sedative effect. Reversal does not replace immediate airway and ventilatory support, and patients should continue to be observed for recurrent sedation or effects from concurrently administered drugs.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10672,7 +10672,7 @@
       "answer": [
         0
       ],
-      "explanation": "Stop the drug and support ventilation. Flumazenil does not reverse propofol.",
+      "explanation": "Propofol and remifentanil can both depress ventilation, and propofol can cause hypotension while remifentanil may contribute bradycardia or hypotension. Their combination is highly titratable but requires close respiratory and hemodynamic monitoring because adverse effects can be synergistic.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10696,7 +10696,7 @@
       "answer": [
         0
       ],
-      "explanation": "Agitation may reflect hypoxia or hypercarbia. Check ventilation before giving more sedative.",
+      "explanation": "Ketamine plus propofol combines analgesia and sympathetic support from ketamine with titratable hypnosis from propofol. The mixture may balance some opposing adverse effects, but it does not eliminate apnea, obstruction, hemodynamic changes, secretions, or emergence phenomena.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10720,7 +10720,7 @@
       "answer": [
         0
       ],
-      "explanation": "Capnography and airway readiness are essential in high-risk deep sedation.",
+      "explanation": "Dexmedetomidine's relative preservation of respiratory drive can be useful for cooperative sedation, but upper-airway obstruction can still occur and clinically important bradycardia or hypotension may limit its use. It should not be treated as an airway-risk-free sedative.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10744,7 +10744,7 @@
       "answer": [
         0
       ],
-      "explanation": "Monitoring should be selected according to the anesthesia service, applicable standards, actual sedation depth, patient condition, and procedure. Conversational responsiveness does not make systemic sedation risk-free, and no single monitor substitutes for the rest of appropriate physiologic assessment.",
+      "explanation": "In severe OSA, sedatives reduce pharyngeal muscle tone and opioids depress ventilatory drive, so the combination can worsen both obstruction and hypoventilation. Dose reduction, careful titration, ventilation monitoring, and immediate airway rescue are especially important.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10768,7 +10768,7 @@
       "answer": [
         0
       ],
-      "explanation": "A request for no awareness is hard to guarantee under MAC, so GA may better meet her goals.",
+      "explanation": "A difficult airway matters during MAC because sedation can unexpectedly deepen to obstruction or apnea, forcing rescue under time pressure. The airway plan should therefore account for both the likelihood of deterioration and the feasibility of mask ventilation, adjunct placement, and advanced airway access.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
@@ -10792,7 +10792,7 @@
       "answer": [
         0
       ],
-      "explanation": "MRI requires compatible monitors and airway equipment to be safe in the magnetic field.",
+      "explanation": "MRI safety requires equipment that is safe or conditional for the magnetic environment and monitoring that remains visible despite physical separation from the patient. Airway and resuscitation planning must also account for the need to remove the patient from the bore before some interventions can be performed.",
       "citation": "",
       "topic": "Discussion scenarios",
       "sourceTitle": "Sedation, MAC & TIVA",
