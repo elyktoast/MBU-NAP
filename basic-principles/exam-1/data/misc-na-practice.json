@@ -11014,7 +11014,7 @@
       "answer": [
         0
       ],
-      "explanation": "Red zones require hand hygiene or glove change.",
+      "explanation": "Oral secretions contaminate the gloves, making airway work a dirty or red-zone task. Before touching a clean drug drawer, the clinician should remove or change contaminated gloves as appropriate and perform hand hygiene so organisms are not carried into the clean zone.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11038,7 +11038,7 @@
       "answer": [
         0
       ],
-      "explanation": "Hand hygiene is not required between green (clean) zone contacts.",
+      "explanation": "Both the drug drawer and clean syringe are within the clean or green workflow, so moving between them does not itself create a new hand-hygiene indication. Hygiene is still required whenever an established indication or suspected contamination occurs.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11062,7 +11062,7 @@
       "answer": [
         0
       ],
-      "explanation": "APSF recommends disinfecting medication vials and injection ports.",
+      "explanation": "Medication vial septa and IV injection ports can serve as routes for microbial inoculation if accessed without disinfection. Appropriate antiseptic scrubbing before access is therefore a core vascular-access and medication-preparation infection-control practice.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11086,7 +11086,7 @@
       "answer": [
         0
       ],
-      "explanation": "For surgeries without implants, an SSI is defined within 30 days; day 27 counts.",
+      "explanation": "Postoperative day 27 falls within the commonly used 30-day surveillance period for superficial incisional SSI after many procedures. Timing alone does not establish SSI, however; the infection must also satisfy the applicable surveillance definition and tissue-depth criteria.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11110,7 +11110,7 @@
       "answer": [
         0
       ],
-      "explanation": "The prosthetic implant extends the SSI surveillance window to 90 days, so an infection on day 78 is included.",
+      "explanation": "For total knee arthroplasty, NHSN surveillance uses a procedure-specific 90-day period for deep incisional and organ/space SSI categories. A deep infection diagnosed on day 78 can therefore fall within that window; the rationale is the procedure-specific surveillance rule, not simply the presence of any implant.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11134,7 +11134,7 @@
       "answer": [
         0
       ],
-      "explanation": "Some evidence supports FiO2 above 0.8 to reduce SSI.",
+      "explanation": "Some trials and guidelines have evaluated high perioperative inspired oxygen, often around 80%, for SSI reduction in selected intubated patients, but evidence and recommendations have varied. Supplemental oxygen should therefore follow current procedure-specific guidance and patient oxygenation needs rather than a universal FiO2-above-0.8 rule.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11158,7 +11158,7 @@
       "answer": [
         0
       ],
-      "explanation": "Normothermia, above 97 °F, reduces SSI risk.",
+      "explanation": "A temperature of 96.4°F is about 35.8°C, indicating perioperative hypothermia. Contemporary quality and recovery pathways commonly aim to maintain core temperature around or above 36°C rather than using 97°F as a universal physiologic cutoff.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11182,7 +11182,7 @@
       "answer": [
         0
       ],
-      "explanation": "Keeping glucose below 180 mg/dL reduces SSI risk.",
+      "explanation": "A glucose of 245 mg/dL exceeds the commonly used perioperative target of less than 180 mg/dL for many surgical patients. Treatment should reduce significant hyperglycemia while avoiding hypoglycemia and following patient- and institution-specific protocols.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11206,7 +11206,7 @@
       "answer": [
         0
       ],
-      "explanation": "Cefazolin should be given within 60 minutes before incision; 0615 is 105 minutes before.",
+      "explanation": "Cefazolin completed 105 minutes before incision is outside the usual 60-minute preincision window. The timing goal is to ensure adequate tissue concentrations when incision and contamination occur.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11230,7 +11230,7 @@
       "answer": [
         0
       ],
-      "explanation": "High-flow nasal oxygen is an AGP.",
+      "explanation": "High-flow nasal oxygen can disperse respiratory particles, but its designation and transmission risk have varied across guidance and evidence. For an actively infected patient, use current pathogen-specific precautions and institutional policy rather than assuming one universal AGP classification.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11254,7 +11254,7 @@
       "answer": [
         0
       ],
-      "explanation": "Upper GI endoscopy is an aerosol-generating procedure.",
+      "explanation": "Upper-GI endoscopy can provoke coughing, gagging, suctioning, and upper-airway manipulation, so respiratory-infection guidance may treat it as an aerosol-risk procedure. The required precautions depend on the pathogen and current policy.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11278,7 +11278,7 @@
       "answer": [
         0
       ],
-      "explanation": "Extubation is an AGP.",
+      "explanation": "Extubation involves airway manipulation and often coughing, which can disperse respiratory particles. It is commonly managed with aerosol precautions when the patient's respiratory infection requires them.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11302,7 +11302,7 @@
       "answer": [
         0
       ],
-      "explanation": "Eye protection is required for AGPs.",
+      "explanation": "Goggles or a face shield protect the conjunctival mucosa from droplets, splashes, and respiratory particles. Eye protection complements rather than replaces respiratory protection, gown, and gloves when those are indicated.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11326,7 +11326,7 @@
       "answer": [
         0
       ],
-      "explanation": "Surgical or N95 masks are acceptable for aerosol-generating procedures.",
+      "explanation": "For intubation under airborne or AGP precautions, respirator-level protection such as a fit-tested N95 or equivalent/higher protection is appropriate. A standard surgical mask should not be described as equivalent respiratory protection when respirator-level precautions are indicated.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11350,7 +11350,7 @@
       "answer": [
         0
       ],
-      "explanation": "Recognizing a developing crisis early relies on situational awareness.",
+      "explanation": "The clinician perceives two subtle trends, interprets their combined significance, and anticipates a developing MH crisis before alarm thresholds are crossed. That perception-comprehension-projection sequence is situational awareness.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11374,7 +11374,7 @@
       "answer": [
         0
       ],
-      "explanation": "Decision making is a key NTS.",
+      "explanation": "Decision-making converts an evolving clinical picture into timely choices among available actions. In crisis care it must remain dynamic, because new information or failure of the initial intervention may require the plan to change.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11398,7 +11398,7 @@
       "answer": [
         0
       ],
-      "explanation": "Calling for help falls under communication in the CRM wheel.",
+      "explanation": "Calling for help is a fundamental CRM communication behavior that mobilizes additional people, expertise, and equipment. Early escalation is particularly valuable in MH because treatment requires multiple simultaneous tasks.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11422,7 +11422,7 @@
       "answer": [
         0
       ],
-      "explanation": "Evaluation includes error wisdom and environment.",
+      "explanation": "Post-crisis review is evaluation: the team examines decisions, system conditions, successes, and failures to identify changes for future events. This creates error wisdom rather than reducing the debrief to individual blame.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11446,7 +11446,7 @@
       "answer": [
         0
       ],
-      "explanation": "Dynamic prioritization includes distribution of workload.",
+      "explanation": "Assigning blood, vascular access, and laboratory work to different people allows simultaneous completion of urgent priorities. This combines dynamic prioritization with workload distribution.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11470,7 +11470,7 @@
       "answer": [
         0
       ],
-      "explanation": "Awareness includes anticipation and planning.",
+      "explanation": "Anticipating massive blood loss and positioning resources before incision demonstrates awareness through projection, planning, and resource preparation. The team is acting on a foreseeable future state rather than waiting for collapse.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11494,7 +11494,7 @@
       "answer": [
         0
       ],
-      "explanation": "Behavioral flexibility includes building the team and filling the needed role.",
+      "explanation": "Behavioral flexibility means filling the role the team currently needs rather than remaining attached to a previous assignment. Moving into medication management during a code is adaptive when that role is uncovered.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11518,7 +11518,7 @@
       "answer": [
         0
       ],
-      "explanation": "Tunnel vision locks onto one diagnosis and ignores new information.",
+      "explanation": "The initial propofol hypothesis may be reasonable, but persistent treatment despite failed vasopressors and new unilateral breath sounds shows tunnel vision. New contradictory evidence should force the differential to reopen.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11542,7 +11542,7 @@
       "answer": [
         0
       ],
-      "explanation": "Artifact error dismisses real findings as artifact, assuming everything is fine.",
+      "explanation": "Artifact fixation assumes an alarming value is false before checking the patient and signal. An SpO2 of 82% requires immediate clinical assessment and verification rather than reassurance based on an untested probe hypothesis.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11566,7 +11566,7 @@
       "answer": [
         0
       ],
-      "explanation": "Avoidance error dismisses a rare diagnosis despite supporting signs.",
+      "explanation": "Avoidance fixation rejects a dangerous diagnosis because it seems rare despite compatible evidence. Progressive hypercarbia and tachycardia after a triggering anesthetic should keep MH in the differential even though its incidence is low.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11590,7 +11590,7 @@
       "answer": [
         0
       ],
-      "explanation": "Cognitive aids guide providers through high-stress events.",
+      "explanation": "A LAST card externalizes critical treatment steps when stress and cognitive load impair recall. Its main value is reducing omissions and sequencing errors while the team simultaneously supports airway, circulation, seizures, and lipid therapy.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11614,7 +11614,7 @@
       "answer": [
         0
       ],
-      "explanation": "The Stanford Emergency Manual is a crisis checklist collection.",
+      "explanation": "The Stanford Emergency Manual is one example of a collection of perioperative crisis cognitive aids covering events such as hemorrhage, MH, and LAST. Institutions may use other validated emergency manuals; familiarity and accessibility matter more than one specific brand.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11638,7 +11638,7 @@
       "answer": [
         0
       ],
-      "explanation": "The WHO Surgical Safety Checklist is used for time-outs.",
+      "explanation": "The WHO Surgical Safety Checklist structures team verification at key perioperative points, including confirmation of patient, procedure, and site before incision. It functions as both a cognitive and communication aid.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11662,7 +11662,7 @@
       "answer": [
         0
       ],
-      "explanation": "Well-designed, accessible cognitive aids can reduce omitted critical steps and support a more standardized crisis response, particularly when teams have trained in their use. They support rather than replace clinical judgment and communication.",
+      "explanation": "Well-designed cognitive aids can reduce omitted steps and make responses more consistent, especially when teams practice using them. They support but do not replace clinical judgment, communication, or leadership.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11686,7 +11686,7 @@
       "answer": [
         0
       ],
-      "explanation": "Using cognitive aids is part of communication.",
+      "explanation": "Having the circulator read the emergency manual aloud combines communication with a cognitive aid. This frees other clinicians to perform tasks while ensuring critical steps remain visible to the whole team.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11710,7 +11710,7 @@
       "answer": [
         0
       ],
-      "explanation": "Fixation risks missing new information.",
+      "explanation": "Fixation on blood pressure can narrow attention so abruptly falling ETCO2 and changes in the surgical field are not incorporated into the mental model. The danger is missing a second process or the true cause of deterioration while treating only one variable.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11734,7 +11734,7 @@
       "answer": [
         0
       ],
-      "explanation": "Communication after an adverse event should be timely, factual, compassionate, and consistent with institutional policy and applicable disclosure requirements.",
+      "explanation": "After an adverse event, communication should be timely, factual, compassionate, and consistent with institutional policy and applicable disclosure requirements. The explanation should distinguish known facts from uncertainty and describe the patient's current condition and next steps.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11761,7 +11761,7 @@
         0,
         1
       ],
-      "explanation": "Reducing infections improves safety and reducing costs improves affordability.",
+      "explanation": "Lower SSI rates reduce preventable healthcare-associated harm, improving patient safety. If the same intervention also reduces patient or system cost burden, it can improve affordability as measured in the cited quality framework.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11785,7 +11785,7 @@
       "answer": [
         0
       ],
-      "explanation": "The 2023 report found more Americans reporting higher healthcare cost burden.",
+      "explanation": "Unaffordable out-of-pocket cost can directly cause patients to defer follow-up, medications, or other necessary care. The scenario illustrates healthcare cost burden as an access problem; the cited NHQDR finding is population-level and should remain anchored to its reporting period.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11809,7 +11809,7 @@
       "answer": [
         0
       ],
-      "explanation": "Accidental drug poisonings are generally classified within unintentional injuries in mortality statistics. Intentional self-poisoning and deaths of undetermined intent are classified differently.",
+      "explanation": "Accidental fentanyl poisoning is generally coded within unintentional-injury mortality categories when intent is determined to be accidental. Suicide and deaths of undetermined intent are classified separately, so the toxicology finding alone does not determine the category.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11833,7 +11833,7 @@
       "answer": [
         0
       ],
-      "explanation": "Neighborhood and built environment includes access to healthy food and safe housing.",
+      "explanation": "Food availability, housing safety, and walkability are characteristics of the physical place in which a patient lives. They therefore fit the neighborhood and built-environment domain and can influence health through nutrition, exposure, mobility, and safety.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11857,7 +11857,7 @@
       "answer": [
         0
       ],
-      "explanation": "The ASA's first equity priority is high-quality perioperative care for all populations.",
+      "explanation": "Providing evidence-based perioperative care according to clinical need regardless of background supports the equity goal of high-quality care across populations. Achieving that goal also requires measuring whether access and outcomes remain unequal despite nominally identical policies.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11881,7 +11881,7 @@
       "answer": [
         0
       ],
-      "explanation": "A two- to threefold ratio applied to 20 per 100,000 yields 40–60 per 100,000. This is a ratio calculation and does not imply that all demographic groups share the same observed disparity.",
+      "explanation": "Two times 20 is 40 and three times 20 is 60, so a two- to threefold higher rate is 40–60 per 100,000 live births. This is a ratio calculation only and should not be mistaken for a current observed rate for any particular demographic group.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11905,7 +11905,7 @@
       "answer": [
         0
       ],
-      "explanation": "When clinically comparable patients receive different treatment solely because of race, the difference represents inequitable care. Population studies have also documented racial and ethnic disparities in pain assessment and treatment, but race does not determine an individual's analgesic requirement.",
+      "explanation": "When relevant clinical needs are comparable and treatment differs solely because of race, the difference is inequitable and constitutes a racial disparity in care. Race is not a valid biologic proxy for analgesic requirement; dosing should follow the individual patient's condition and response.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11929,7 +11929,7 @@
       "answer": [
         0
       ],
-      "explanation": "Systematic treatment differences associated with race or ethnicity after relevant clinical factors are comparable raise an equity concern. Such disparities should be investigated for access, structural, communication, and bias-related contributors rather than attributed to biology.",
+      "explanation": "A systematic treatment difference associated with race or ethnicity after relevant clinical factors are comparable raises an equity concern. Investigation should examine access, communication, institutional processes, and bias rather than treating demographic identity as the biologic cause.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11953,7 +11953,7 @@
       "answer": [
         0
       ],
-      "explanation": "Insurance status and income were associated with antiemetic receipt.",
+      "explanation": "The cited Andreae study reported associations between antiemetic receipt and socioeconomic measures including insurance status or area-level income. An observational association identifies a disparity worth investigating but does not by itself prove why an individual treatment decision occurred.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -11977,7 +11977,7 @@
       "answer": [
         0
       ],
-      "explanation": "Legislative advocacy is an APSF equity strategy.",
+      "explanation": "Testifying in support of funding uses the legislative process to address a structural access barrier. That is legislative advocacy for health equity rather than a bedside-only intervention.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -12001,7 +12001,7 @@
       "answer": [
         0
       ],
-      "explanation": "Developing anti-racist and anti-discrimination policies addresses facility policy.",
+      "explanation": "A written policy prohibiting racist and discriminatory conduct creates an explicit organizational standard and accountability mechanism. It implements the recommendation to maintain anti-racist and anti-discrimination policies rather than relying only on individual goodwill.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -12025,7 +12025,7 @@
       "answer": [
         0
       ],
-      "explanation": "Fair allocation reflects justice.",
+      "explanation": "Justice governs fair allocation of scarce resources using ethically relevant and consistently applied criteria. Transparent clinical criteria avoid giving preferential access based on wealth, status, or personal relationships.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -12049,7 +12049,7 @@
       "answer": [
         0
       ],
-      "explanation": "The Code includes responsibility to society.",
+      "explanation": "Professional ethical duties extend beyond individual patients and colleagues to the broader public and healthcare system. Those broader obligations are captured by responsibility to society.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -12073,7 +12073,7 @@
       "answer": [
         0
       ],
-      "explanation": "Access to care addresses reaching and receiving care.",
+      "explanation": "Transportation and physical ability to reach the facility determine whether a patient can actually obtain planned care. Addressing those barriers therefore most directly improves access to care.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -12097,7 +12097,7 @@
       "answer": [
         0
       ],
-      "explanation": "Emergencies are a consent topic.",
+      "explanation": "When urgent treatment is necessary and ordinary consent cannot be obtained, emergency consent principles and applicable law or institutional policy guide care. Emergency circumstances do not erase respect for known patient wishes or available surrogate input when these can be obtained without harmful delay.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -12121,7 +12121,7 @@
       "answer": [
         0
       ],
-      "explanation": "Cultural competence aims to reduce disparities.",
+      "explanation": "Culturally competent care aims to provide safe, effective care across differences by adapting communication and reasonable aspects of care to individual needs while reducing avoidable disparities. It should avoid stereotyping and should not lower evidence-based standards.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -12145,7 +12145,7 @@
       "answer": [
         0
       ],
-      "explanation": "Safeguards protect participants.",
+      "explanation": "Participant protection requires safeguards proportionate to risk, valid consent, privacy and confidentiality protections, appropriate boundaries, and independent oversight such as IRB review. These mechanisms reduce harm and undue influence rather than relying solely on researcher intent.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -12169,7 +12169,7 @@
       "answer": [
         0
       ],
-      "explanation": "Burnout is a workforce safety priority.",
+      "explanation": "Burnout and clinician well-being are recognized patient-safety concerns because severe occupational distress can affect workforce stability and performance. Effective prevention should include organizational contributors such as workload and work environment, not only individual resilience.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
@@ -12193,7 +12193,7 @@
       "answer": [
         0
       ],
-      "explanation": "Following alarm safety protocols prevents fatigue.",
+      "explanation": "Alarm safety should reduce nonactionable alarm burden while preserving clinically important alerts. Appropriately tailored limits, maintenance, escalation rules, and disciplined response reduce desensitization more safely than indiscriminately silencing alarms.",
       "citation": "",
       "topic": "Mixed application",
       "sourceTitle": "Miscellaneous Topics in Nurse Anesthesia Practice",
