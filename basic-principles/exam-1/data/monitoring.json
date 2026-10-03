@@ -5243,7 +5243,7 @@
     {
       "id": "MON-212",
       "set": 1,
-      "type": "multi",
+      "type": "single",
       "stem": "A patient with prior TIA undergoes carotid endarterectomy with expected clamp-related cerebral perfusion changes and tight beat-to-beat pressure goals. Which additional monitoring combination is most defensible beyond standard monitors?",
       "options": [
         "Arterial pressure monitoring plus cerebral monitoring such as cerebral oximetry and/or processed EEG as clinically appropriate",
@@ -5387,7 +5387,7 @@
     {
       "id": "MON-218",
       "set": 1,
-      "type": "multi",
+      "type": "single",
       "stem": "An arterial-line MAP suddenly falls from 75 to 45 mmHg, but the patient appears unchanged and NIBP is 74 mmHg. What should be done before giving a vasopressor?",
       "options": [
         "Verify transducer level/zero, tubing and catheter patency, and waveform fidelity",
@@ -5483,7 +5483,7 @@
     {
       "id": "MON-222",
       "set": 1,
-      "type": "multi",
+      "type": "single",
       "stem": "A patient undergoing major vascular surgery is expected to have abrupt pressure changes and requires continuous norepinephrine titration. Which monitoring choice best fits both needs?",
       "options": [
         "Place an arterial catheter for beat-to-beat pressure and titration",
@@ -9045,7 +9045,7 @@
     {
       "id": "MON-368",
       "set": 1,
-      "type": "multi",
+      "type": "single",
       "stem": "A patient reaches 34.5 °C after a long operation. Which pair of effects is most consistent with clinically significant perioperative hypothermia?",
       "options": [
         "Impaired coagulation and prolonged drug effects",
