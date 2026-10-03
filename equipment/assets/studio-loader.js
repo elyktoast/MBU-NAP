@@ -13,6 +13,7 @@ async function start(){
   await window.MBUSupabase?.refreshCalibration?.().catch(()=>{});
   await runtime.loadScript('studio-page.js');
   await runtime.loadScript('studio-runtime.js');
+  await window.MBUStudioCoreReady();
   await runtime.loadScript('auto-update.js');
   return true
 }
