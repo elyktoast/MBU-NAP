@@ -2636,7 +2636,7 @@
       "answer": [
         0
       ],
-      "explanation": "Inspired O2 confirms delivery; pair it with SpO2 or ABGs to confirm oxygenation.",
+      "explanation": "The inspired-oxygen analyzer verifies what concentration is being delivered by the breathing system, not how effectively oxygen crosses the lungs into arterial blood. Severe shunt or V/Q abnormality can therefore produce profound hypoxemia despite a correctly measured high FiO2.",
       "citation": "",
       "topic": "Inspired oxygen analysis",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -2804,7 +2804,7 @@
       "answer": [
         0
       ],
-      "explanation": "The gradient is typically around 5 mmHg, from anatomic dead space.",
+      "explanation": "ETCO2 samples alveolar gas at end expiration, whereas PaCO2 reflects arterial blood after mixing from lung units with varying ventilation and perfusion. In a healthy patient, physiologic dead space usually leaves PaCO2 modestly higher than ETCO2.",
       "citation": "",
       "topic": "Capnography and expired gases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -2996,7 +2996,7 @@
       "answer": [
         0
       ],
-      "explanation": "The more rounded the upstroke and plateau corner, the greater the obstruction.",
+      "explanation": "Obstructed lung units empty slowly and at different rates. This uneven exhalation prolongs the expiratory upstroke and slopes the alveolar plateau, so progressive rounding of the capnogram is consistent with worsening airflow obstruction.",
       "citation": "",
       "topic": "Capnography and expired gases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -3694,7 +3694,7 @@
       "answer": [
         0
       ],
-      "explanation": "A sudden fall with waveform present suggests reduced perfusion.",
+      "explanation": "With ventilation unchanged and a recognizable waveform still present, an abrupt ETCO2 decrease can reflect reduced delivery of CO2 to the lungs from decreased pulmonary blood flow. Acute hypotension, pulmonary embolism, or a major fall in cardiac output should therefore be considered.",
       "citation": "",
       "topic": "Capnography and expired gases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
@@ -3742,7 +3742,7 @@
       "answer": [
         0
       ],
-      "explanation": "OLV increases dead space and V/Q mismatch, lowering ETCO2 relative to PaCO2.",
+      "explanation": "One-lung ventilation creates substantial V/Q inequality and increases physiologic dead space. Exhaled gas therefore contains proportionally less CO2 than arterial blood, widening the PaCO2-ETCO2 gradient even when minute ventilation is unchanged.",
       "citation": "",
       "topic": "Capnography and expired gases",
       "sourceTitle": "Intraoperative Monitoring & Data Interpretation",
