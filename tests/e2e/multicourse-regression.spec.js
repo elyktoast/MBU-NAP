@@ -188,8 +188,8 @@ test.describe('multi-course foundation', () => {
       expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(360);
     }
     await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Basic Principles', exact: true })).toBeVisible();
-    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Study Studio', exact: true })).toBeVisible();
-    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: /Adaptive/, exact: false })).toBeVisible();
+    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: 'Study Studio', exact: true })).toHaveCount(0);
+    await expect(page.locator('.mbu-global-nav').getByRole('link', { name: /Adaptive/, exact: false })).toHaveCount(0);
   });
 
 
