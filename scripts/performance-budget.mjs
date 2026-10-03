@@ -69,7 +69,8 @@ for(const token of ['buildIndex','getIndex','Practice in Studio'])if(!search.inc
 
 const boot=read('equipment/assets/build-bootstrap.js');
 if(!boot.includes('jsonCache=new Map()')||!boot.includes('fetchJSON'))fail('Build runtime lost shared JSON request deduplication');
-for(const p of ['equipment/assets/site-nav.js','equipment/assets/canonical-bank-page.js','equipment/assets/hazards-page.js','equipment/assets/studio-page.js','equipment/assets/exam-dashboard.js'])if(!read(p).includes('fetchJSON'))fail(p+': bypasses central JSON request cache');
+const nav=read('equipment/assets/site-nav.js');if(nav.includes('fetchJSON')||nav.includes('manifestPages')||nav.includes('banks.json'))fail('equipment/assets/site-nav.js: navigation must remain manifest-independent');
+for(const p of ['equipment/assets/canonical-bank-page.js','equipment/assets/hazards-page.js','equipment/assets/studio-page.js','equipment/assets/exam-dashboard.js'])if(!read(p).includes('fetchJSON'))fail(p+': bypasses central JSON request cache');
 
 const core=read('equipment/assets/app-core.js');
 for(const token of ['exportSnapshot','importSnapshot','registerAdapter','syncWith','touchStore'])if(!core.includes(token))fail('App core sync contract missing '+token);
