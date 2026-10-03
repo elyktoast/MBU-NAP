@@ -472,7 +472,7 @@ for(const p of ['equipment/exam-1/hazards-bank-3.html','equipment/exam-1/hazards
 // Studio hydration should fetch independent bank sources concurrently to reduce startup latency.
 {
  const src=studioSource();
- if(!src.includes('await Promise.all(STUDIO_SOURCES.map(source=>hydrateStudioSource(source)))'))fail('Studio: bank sources are not hydrated concurrently');
+ if(!src.includes('await Promise.all(STUDIO_SOURCES.map(source=>hydrateStudioSource(source,generation)))'))fail('Studio: bank sources are not hydrated concurrently');
  if(!src.includes("addLoadedQuestions(qs);state.status='ready'"))fail('Studio: loaded banks are not published progressively to the selector');
  if(!src.includes('ALL_BY_UID.set(q.uid,q);'))fail('Studio: progressive hydration does not maintain the UID index incrementally');
  if(src.includes('ALL_BY_UID=new Map(ALL.map(q=>[q.uid,q]))'))fail('Studio: progressive hydration still rebuilds the full UID index');
@@ -662,7 +662,7 @@ if(/images\s*:\s*[A-Za-z_$][\w$]*\s*\|\|/.test(sharedHazardsEngine))fail('Shared
  if(!updater.includes('const CHECK_COOLDOWN = 120000'))fail('Updater: update polling cooldown regressed');
  for(const token of ['const REQUEST_TIMEOUT = 8000','new AbortController()','signal: controller.signal','clearTimeout(timer)'])if(!updater.includes(token))fail('Updater: bounded network request guard missing '+token);
  const studio=studioSource();
- if(!studio.includes('await Promise.all(STUDIO_SOURCES.map(source=>hydrateStudioSource(source)))'))fail('Studio: bank hydration is not parallelized');
+ if(!studio.includes('await Promise.all(STUDIO_SOURCES.map(source=>hydrateStudioSource(source,generation)))'))fail('Studio: bank hydration is not parallelized');
  if(studio.includes("localStorage.getItem('mbu_bank3_progress')")||studio.includes("localStorage.getItem('MBU_BANK3_PROGRESS')"))fail('Studio: obsolete Bank 3 storage-key fallbacks remain');
 }
 
