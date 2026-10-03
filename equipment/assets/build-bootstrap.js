@@ -28,11 +28,11 @@ async function start(){
   await loadScript('supabase-config.js');
   await loadScript('supabase-sync.js');
   if(window.MBUAuthReady&&typeof window.MBUAuthReady.then==='function')await window.MBUAuthReady;
-  const ctx=window.MBU_CONTEXT||{},root=new URL('../../',assetsBase),path=location.pathname,protectedCourse=['equipment/','basic-principles/'].some(course=>path.startsWith(root.pathname+course));
+  const ctx=window.MBU_CONTEXT||{},root=new URL('../../',assetsBase),path=location.pathname,protectedCourse=['equipment/','basic-principles/'].some(x=>path.startsWith(root.pathname+x));
   if(protectedCourse){
     const info=window.MBUSupabase?.status?.()||{};
     if(!(info.signedIn&&info.legalAccepted===true&&info.accessStatus==='active')&&!info.recoveryMode){
-      const home=new URL('../../',assetsBase).href;
+      const home=root.href;
       sessionStorage.setItem('mbu_post_auth_target',location.href);
       location.replace(home);
       return build;
